@@ -1,0 +1,256 @@
+{
+"nexml": {
+"@generator": "Phylografter nexml-json exporter", 
+"@id": "study", 
+"@nexml2json": "1.2.1", 
+"@nexmljson": "http://purl.org/opentree/nexson", 
+"@version": "0.9", 
+"@xmlns": {
+"$": "http://www.nexml.org/2009", 
+"nex": "http://www.nexml.org/2009", 
+"ot": "http://purl.org/opentree-terms#", 
+"xsd": "http://www.w3.org/2001/XMLSchema#", 
+"xsi": "http://www.w3.org/2001/XMLSchema-instance"
+}, 
+"^ot:agents": {
+"agent": [
+{
+"@description": "validator of NexSON constraints as well as constraints that would allow a study to be imported into the Open Tree of Life's phylogenetic synthesis tools", 
+"@id": "peyotl-validator", 
+"@name": "validate_ot_nexson.py", 
+"@url": "https://github.com/OpenTreeOfLife/peyotl", 
+"@version": "0.0.3a", 
+"invocation": {
+"checksPerformed": [
+"MISSING_MANDATORY_KEY", 
+"MISSING_OPTIONAL_KEY", 
+"UNRECOGNIZED_KEY", 
+"MISSING_LIST_EXPECTED", 
+"DUPLICATING_SINGLETON_KEY", 
+"REFERENCED_ID_NOT_FOUND", 
+"REPEATED_ID", 
+"REPEATED_OTU", 
+"MULTIPLE_ROOT_NODES", 
+"NO_ROOT_NODE", 
+"MULTIPLE_EDGES_FOR_NODES", 
+"CYCLE_DETECTED", 
+"DISCONNECTED_GRAPH_DETECTED", 
+"INCORRECT_ROOT_NODE_LABEL", 
+"TIP_WITHOUT_OTU", 
+"TIP_WITHOUT_OTT_ID", 
+"MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
+"NON_MONOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
+"INVALID_PROPERTY_VALUE", 
+"PROPERTY_VALUE_NOT_USEFUL", 
+"UNRECOGNIZED_PROPERTY_VALUE", 
+"MULTIPLE_TREES", 
+"UNRECOGNIZED_TAG", 
+"CONFLICTING_PROPERTY_VALUES", 
+"NO_TREES", 
+"DEPRECATED_PROPERTY", 
+"UNPARSEABLE_META", 
+"UNREACHABLE_NODE", 
+"INCORRECT_VALUE_TYPE", 
+"MISSING_CRUCIAL_CONTENT"
+], 
+"commandLine": [
+"--embed", 
+"--agent-only", 
+"-e", 
+"../mig-phyelesystem-scratch/925/validation.json", 
+"-o", 
+"../mig-phyelesystem-scratch/925/final.json", 
+"../mig-phyelesystem-scratch/925/v1.2.1-925.json"
+], 
+"otherProperty": [
+{
+"name": "pythonVersion", 
+"value": "2.7.5+"
+}, 
+{
+"name": "pythonImplementation", 
+"value": "CPython"
+}
+]
+}
+}
+]
+}, 
+"^ot:curatorName": "Jiabin Deng", 
+"^ot:focalClade": 135764, 
+"^ot:focalCladeOTTTaxonName": "Oryza", 
+"^ot:otusElementOrder": [
+"otus925"
+], 
+"^ot:studyId": "925", 
+"^ot:studyPublication": {
+"@href": "http://dx.doi.org/10.1186/gb-2008-9-3-r49"
+}, 
+"^ot:studyPublicationReference": "Zou, X.-H. [et al. 2008], Zhang, F.-M., Zhang, J.-G., Zang, L.-L., Tang, L., Wang, J., Sang, T., & Ge, S. 2008. Analysis of 142 genes resolves the rapid diversification of the rice genus.Genome Biol. 9:R49", 
+"^ot:studyYear": 2008, 
+"^ot:treesElementOrder": [
+"trees925"
+], 
+"otusById": {
+"otus925": {
+"otuById": {
+"otu206841": {
+"^ot:originalLabel": "Oryza rufipogon", 
+"^ot:ottId": 135756, 
+"^ot:ottTaxonName": "Oryza rufipogon"
+}, 
+"otu206842": {
+"^ot:originalLabel": "Oryza punctata", 
+"^ot:ottId": 709892, 
+"^ot:ottTaxonName": "Oryza punctata"
+}, 
+"otu206843": {
+"^ot:originalLabel": "Oryza officinalis", 
+"^ot:ottId": 709884, 
+"^ot:ottTaxonName": "Oryza officinalis"
+}, 
+"otu206844": {
+"^ot:originalLabel": "Oryza australiensis", 
+"^ot:ottId": 709898, 
+"^ot:ottTaxonName": "Oryza australiensis"
+}, 
+"otu206845": {
+"^ot:originalLabel": "Oryza brachyantha", 
+"^ot:ottId": 709900, 
+"^ot:ottTaxonName": "Oryza brachyantha"
+}, 
+"otu206846": {
+"^ot:originalLabel": "Oryza granulata", 
+"^ot:ottId": 858818, 
+"^ot:ottTaxonName": "Oryza granulata"
+}, 
+"otu206847": {
+"^ot:originalLabel": "Leersia tisserantti", 
+"^ot:ottId": 890604, 
+"^ot:ottTaxonName": "Leersia tisserantii"
+}
+}
+}
+}, 
+"treesById": {
+"trees925": {
+"@otus": "otus925", 
+"^ot:treeElementOrder": [
+"tree1824"
+], 
+"treeById": {
+"tree1824": {
+"@xsi:type": "nex:FloatTree", 
+"^ot:curatedType": "MP", 
+"^ot:inGroupClade": "node490011", 
+"^ot:rootNodeId": "node490010", 
+"edgeBySourceId": {
+"node490010": {
+"edge490011": {
+"@source": "node490010", 
+"@target": "node490011"
+}, 
+"edge490022": {
+"@length": 0.088897, 
+"@source": "node490010", 
+"@target": "node490022"
+}
+}, 
+"node490011": {
+"edge490012": {
+"@length": 0.00548, 
+"@source": "node490011", 
+"@target": "node490012"
+}, 
+"edge490021": {
+"@length": 0.041883, 
+"@source": "node490011", 
+"@target": "node490021"
+}
+}, 
+"node490012": {
+"edge490013": {
+"@length": 0.030809, 
+"@source": "node490012", 
+"@target": "node490013"
+}, 
+"edge490020": {
+"@length": 0.085284, 
+"@source": "node490012", 
+"@target": "node490020"
+}
+}, 
+"node490013": {
+"edge490014": {
+"@length": 0.006659, 
+"@source": "node490013", 
+"@target": "node490014"
+}, 
+"edge490019": {
+"@length": 0.027389, 
+"@source": "node490013", 
+"@target": "node490019"
+}
+}, 
+"node490014": {
+"edge490015": {
+"@length": 0.003042, 
+"@source": "node490014", 
+"@target": "node490015"
+}, 
+"edge490018": {
+"@length": 0.020372, 
+"@source": "node490014", 
+"@target": "node490018"
+}
+}, 
+"node490015": {
+"edge490016": {
+"@length": 0.028406, 
+"@source": "node490015", 
+"@target": "node490016"
+}, 
+"edge490017": {
+"@length": 0.023734, 
+"@source": "node490015", 
+"@target": "node490017"
+}
+}
+}, 
+"nodeById": {
+"node490010": {
+"@root": true
+}, 
+"node490011": {}, 
+"node490012": {}, 
+"node490013": {}, 
+"node490014": {}, 
+"node490015": {}, 
+"node490016": {
+"@otu": "otu206841"
+}, 
+"node490017": {
+"@otu": "otu206842"
+}, 
+"node490018": {
+"@otu": "otu206843"
+}, 
+"node490019": {
+"@otu": "otu206844"
+}, 
+"node490020": {
+"@otu": "otu206845"
+}, 
+"node490021": {
+"@otu": "otu206846"
+}, 
+"node490022": {
+"@otu": "otu206847"
+}
+}
+}
+}
+}
+}
+}
+}

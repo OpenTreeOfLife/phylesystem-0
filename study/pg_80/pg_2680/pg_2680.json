@@ -1,0 +1,238 @@
+{
+"nexml": {
+"@generator": "Phylografter nexml-json exporter", 
+"@id": "study", 
+"@nexml2json": "1.2.1", 
+"@nexmljson": "http://purl.org/opentree/nexson", 
+"@version": "0.9", 
+"@xmlns": {
+"$": "http://www.nexml.org/2009", 
+"nex": "http://www.nexml.org/2009", 
+"ot": "http://purl.org/opentree-terms#", 
+"xsd": "http://www.w3.org/2001/XMLSchema#", 
+"xsi": "http://www.w3.org/2001/XMLSchema-instance"
+}, 
+"^ot:agents": {
+"agent": [
+{
+"@description": "validator of NexSON constraints as well as constraints that would allow a study to be imported into the Open Tree of Life's phylogenetic synthesis tools", 
+"@id": "peyotl-validator", 
+"@name": "validate_ot_nexson.py", 
+"@url": "https://github.com/OpenTreeOfLife/peyotl", 
+"@version": "0.0.3a", 
+"invocation": {
+"checksPerformed": [
+"MISSING_MANDATORY_KEY", 
+"MISSING_OPTIONAL_KEY", 
+"UNRECOGNIZED_KEY", 
+"MISSING_LIST_EXPECTED", 
+"DUPLICATING_SINGLETON_KEY", 
+"REFERENCED_ID_NOT_FOUND", 
+"REPEATED_ID", 
+"REPEATED_OTU", 
+"MULTIPLE_ROOT_NODES", 
+"NO_ROOT_NODE", 
+"MULTIPLE_EDGES_FOR_NODES", 
+"CYCLE_DETECTED", 
+"DISCONNECTED_GRAPH_DETECTED", 
+"INCORRECT_ROOT_NODE_LABEL", 
+"TIP_WITHOUT_OTU", 
+"TIP_WITHOUT_OTT_ID", 
+"MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
+"NON_MONOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
+"INVALID_PROPERTY_VALUE", 
+"PROPERTY_VALUE_NOT_USEFUL", 
+"UNRECOGNIZED_PROPERTY_VALUE", 
+"MULTIPLE_TREES", 
+"UNRECOGNIZED_TAG", 
+"CONFLICTING_PROPERTY_VALUES", 
+"NO_TREES", 
+"DEPRECATED_PROPERTY", 
+"UNPARSEABLE_META", 
+"UNREACHABLE_NODE", 
+"INCORRECT_VALUE_TYPE", 
+"MISSING_CRUCIAL_CONTENT"
+], 
+"commandLine": [
+"--embed", 
+"--agent-only", 
+"-e", 
+"../mig-phyelesystem-scratch/2680/validation.json", 
+"-o", 
+"../mig-phyelesystem-scratch/2680/final.json", 
+"../mig-phyelesystem-scratch/2680/v1.2.1-2680.json"
+], 
+"otherProperty": [
+{
+"name": "pythonVersion", 
+"value": "2.7.5+"
+}, 
+{
+"name": "pythonImplementation", 
+"value": "CPython"
+}
+]
+}
+}
+]
+}, 
+"^ot:curatorName": "Cameah Wood", 
+"^ot:focalClade": 1094628, 
+"^ot:focalCladeOTTTaxonName": "Myxogastria", 
+"^ot:otusElementOrder": [
+"otus2680"
+], 
+"^ot:studyId": "2680", 
+"^ot:studyPublicationReference": "Uma Krishnan, Arpi Barsamian, Dennis L. Miller\r\nEvolution of RNA Editing Sites in the Mitochondrial Small Subunit rRNA of the Myxomycota\r\nMethods in Enzymology, Volume 424, 2007, Pages 197\u2013220\r\nhttp://dx.doi.org/10.1016/S0076-6879(07)24009-1", 
+"^ot:studyYear": 2007, 
+"^ot:treesElementOrder": [
+"trees2680"
+], 
+"otusById": {
+"otus2680": {
+"otuById": {
+"otu404691": {
+"^ot:originalLabel": "Didymium iridis", 
+"^ot:ottId": 422677, 
+"^ot:ottTaxonName": "Didymium iridis"
+}, 
+"otu404692": {
+"^ot:originalLabel": "Didymium nigripes", 
+"^ot:ottId": 840784, 
+"^ot:ottTaxonName": "Didymium nigripes"
+}, 
+"otu404693": {
+"^ot:originalLabel": "Stemonitis flavogenita", 
+"^ot:ottId": 1037476, 
+"^ot:ottTaxonName": "Stemonitis flavogenita"
+}, 
+"otu404694": {
+"^ot:originalLabel": "Physarum didermoides", 
+"^ot:ottId": 664088, 
+"^ot:ottTaxonName": "Physarum didermoides"
+}, 
+"otu404695": {
+"^ot:originalLabel": "Physarum polycephalum", 
+"^ot:ottId": 422679, 
+"^ot:ottTaxonName": "Physarum polycephalum"
+}, 
+"otu404696": {
+"^ot:originalLabel": "Echinostelium minutum"
+}, 
+"otu404697": {
+"^ot:originalLabel": "Lycogala epidendrum"
+}
+}
+}
+}, 
+"treesById": {
+"trees2680": {
+"@otus": "otus2680", 
+"^ot:treeElementOrder": [
+"tree6259"
+], 
+"treeById": {
+"tree6259": {
+"@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthMode": "ot:substitutionCount", 
+"^ot:curatedType": "MAXIMUM PARSIMONY", 
+"^ot:rootNodeId": "node1084234", 
+"edgeBySourceId": {
+"node1084234": {
+"edge1084235": {
+"@source": "node1084234", 
+"@target": "node1084235"
+}, 
+"edge1084246": {
+"@source": "node1084234", 
+"@target": "node1084246"
+}
+}, 
+"node1084235": {
+"edge1084236": {
+"@source": "node1084235", 
+"@target": "node1084236"
+}, 
+"edge1084245": {
+"@source": "node1084235", 
+"@target": "node1084245"
+}
+}, 
+"node1084236": {
+"edge1084237": {
+"@source": "node1084236", 
+"@target": "node1084237"
+}, 
+"edge1084242": {
+"@source": "node1084236", 
+"@target": "node1084242"
+}
+}, 
+"node1084237": {
+"edge1084238": {
+"@source": "node1084237", 
+"@target": "node1084238"
+}, 
+"edge1084241": {
+"@source": "node1084237", 
+"@target": "node1084241"
+}
+}, 
+"node1084238": {
+"edge1084239": {
+"@source": "node1084238", 
+"@target": "node1084239"
+}, 
+"edge1084240": {
+"@source": "node1084238", 
+"@target": "node1084240"
+}
+}, 
+"node1084242": {
+"edge1084243": {
+"@source": "node1084242", 
+"@target": "node1084243"
+}, 
+"edge1084244": {
+"@source": "node1084242", 
+"@target": "node1084244"
+}
+}
+}, 
+"nodeById": {
+"node1084234": {
+"@root": true
+}, 
+"node1084235": {}, 
+"node1084236": {}, 
+"node1084237": {}, 
+"node1084238": {}, 
+"node1084239": {
+"@otu": "otu404691"
+}, 
+"node1084240": {
+"@otu": "otu404692"
+}, 
+"node1084241": {
+"@otu": "otu404693"
+}, 
+"node1084242": {}, 
+"node1084243": {
+"@otu": "otu404694"
+}, 
+"node1084244": {
+"@otu": "otu404695"
+}, 
+"node1084245": {
+"@otu": "otu404696"
+}, 
+"node1084246": {
+"@otu": "otu404697"
+}
+}
+}
+}
+}
+}
+}
+}

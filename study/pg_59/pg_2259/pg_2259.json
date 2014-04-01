@@ -1,0 +1,275 @@
+{
+"nexml": {
+"@generator": "Phylografter nexml-json exporter", 
+"@id": "study", 
+"@nexml2json": "1.2.1", 
+"@nexmljson": "http://purl.org/opentree/nexson", 
+"@version": "0.9", 
+"@xmlns": {
+"$": "http://www.nexml.org/2009", 
+"nex": "http://www.nexml.org/2009", 
+"ot": "http://purl.org/opentree-terms#", 
+"xsd": "http://www.w3.org/2001/XMLSchema#", 
+"xsi": "http://www.w3.org/2001/XMLSchema-instance"
+}, 
+"^ot:agents": {
+"agent": [
+{
+"@description": "validator of NexSON constraints as well as constraints that would allow a study to be imported into the Open Tree of Life's phylogenetic synthesis tools", 
+"@id": "peyotl-validator", 
+"@name": "validate_ot_nexson.py", 
+"@url": "https://github.com/OpenTreeOfLife/peyotl", 
+"@version": "0.0.3a", 
+"invocation": {
+"checksPerformed": [
+"MISSING_MANDATORY_KEY", 
+"MISSING_OPTIONAL_KEY", 
+"UNRECOGNIZED_KEY", 
+"MISSING_LIST_EXPECTED", 
+"DUPLICATING_SINGLETON_KEY", 
+"REFERENCED_ID_NOT_FOUND", 
+"REPEATED_ID", 
+"REPEATED_OTU", 
+"MULTIPLE_ROOT_NODES", 
+"NO_ROOT_NODE", 
+"MULTIPLE_EDGES_FOR_NODES", 
+"CYCLE_DETECTED", 
+"DISCONNECTED_GRAPH_DETECTED", 
+"INCORRECT_ROOT_NODE_LABEL", 
+"TIP_WITHOUT_OTU", 
+"TIP_WITHOUT_OTT_ID", 
+"MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
+"NON_MONOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
+"INVALID_PROPERTY_VALUE", 
+"PROPERTY_VALUE_NOT_USEFUL", 
+"UNRECOGNIZED_PROPERTY_VALUE", 
+"MULTIPLE_TREES", 
+"UNRECOGNIZED_TAG", 
+"CONFLICTING_PROPERTY_VALUES", 
+"NO_TREES", 
+"DEPRECATED_PROPERTY", 
+"UNPARSEABLE_META", 
+"UNREACHABLE_NODE", 
+"INCORRECT_VALUE_TYPE", 
+"MISSING_CRUCIAL_CONTENT"
+], 
+"commandLine": [
+"--embed", 
+"--agent-only", 
+"-e", 
+"../mig-phyelesystem-scratch/2259/validation.json", 
+"-o", 
+"../mig-phyelesystem-scratch/2259/final.json", 
+"../mig-phyelesystem-scratch/2259/v1.2.1-2259.json"
+], 
+"otherProperty": [
+{
+"name": "pythonVersion", 
+"value": "2.7.5+"
+}, 
+{
+"name": "pythonImplementation", 
+"value": "CPython"
+}
+]
+}
+}
+]
+}, 
+"^ot:curatorName": "Romina Gazis", 
+"^ot:dataDeposit": {
+"@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S1192"
+}, 
+"^ot:focalClade": 93037, 
+"^ot:focalCladeOTTTaxonName": "Phanerochaete chrysosporium", 
+"^ot:otusElementOrder": [
+"otus2259"
+], 
+"^ot:studyId": "2259", 
+"^ot:studyPublication": {
+"@href": "http://dx.doi.org/10.1128/AEM.70.10.5794-5800.2004"
+}, 
+"^ot:studyPublicationReference": "de Koker, Theodorus H., Michael D. Mozuch, Daniel Cullen, Jill Gaskell, and Philip J. Kersten. \"Isolation and purification of pyranose 2-oxidase from Phanerochaete chrysosporium and characterization of gene structure and regulation.\" Applied and environmental microbiology 70, no. 10 (2004): 5794-5800.", 
+"^ot:studyYear": 2004, 
+"^ot:treesElementOrder": [
+"trees2259"
+], 
+"otusById": {
+"otus2259": {
+"otuById": {
+"otu325460": {
+"^ot:originalLabel": "Tricholoma matsutake", 
+"^ot:ottId": 831066, 
+"^ot:ottTaxonName": "Tricholoma matsutake", 
+"^ot:treebaseOTUId": "Tl148706"
+}, 
+"otu325461": {
+"^ot:originalLabel": "Phanerochaete chrysosporium", 
+"^ot:ottId": 633308, 
+"^ot:ottTaxonName": "Phanerochaete chrysosporium", 
+"^ot:treebaseOTUId": "Tl148707"
+}, 
+"otu325462": {
+"^ot:originalLabel": "Trametes hirsuta", 
+"^ot:ottId": 581130, 
+"^ot:ottTaxonName": "Trametes hirsuta", 
+"^ot:treebaseOTUId": "Tl148709"
+}, 
+"otu325463": {
+"^ot:originalLabel": "Peniophora gigantea", 
+"^ot:ottId": 421620, 
+"^ot:ottTaxonName": "Phlebiopsis gigantea", 
+"^ot:treebaseOTUId": "Tl60993"
+}, 
+"otu325464": {
+"^ot:originalLabel": "Trametes ochracea", 
+"^ot:ottId": 301277, 
+"^ot:ottTaxonName": "Trametes ochracea", 
+"^ot:treebaseOTUId": "Tl60994"
+}, 
+"otu325465": {
+"^ot:originalLabel": "Peniophora sp.", 
+"^ot:ottId": 468072, 
+"^ot:ottTaxonName": "Peniophora", 
+"^ot:treebaseOTUId": "Tl60995"
+}, 
+"otu325466": {
+"^ot:originalLabel": "Coriolus versicolor", 
+"^ot:ottId": 581141, 
+"^ot:ottTaxonName": "Trametes versicolor", 
+"^ot:treebaseOTUId": "Tl60996"
+}, 
+"otu325467": {
+"^ot:originalLabel": "Lyophyllum shimeji", 
+"^ot:ottId": 115213, 
+"^ot:ottTaxonName": "Lyophyllum shimeji", 
+"^ot:treebaseOTUId": "Tl60997"
+}
+}
+}
+}, 
+"treesById": {
+"trees2259": {
+"@otus": "otus2259", 
+"^ot:treeElementOrder": [
+"tree4786"
+], 
+"treeById": {
+"tree4786": {
+"@xsi:type": "nex:FloatTree", 
+"^ot:curatedType": "NJ, POX (Pyranose 2-Oxidase)", 
+"^ot:inGroupClade": "node842334", 
+"^ot:rootNodeId": "node842333", 
+"edgeBySourceId": {
+"node842333": {
+"edge842334": {
+"@source": "node842333", 
+"@target": "node842334"
+}, 
+"edge842347": {
+"@source": "node842333", 
+"@target": "node842347"
+}
+}, 
+"node842334": {
+"edge842335": {
+"@source": "node842334", 
+"@target": "node842335"
+}, 
+"edge842338": {
+"@source": "node842334", 
+"@target": "node842338"
+}
+}, 
+"node842335": {
+"edge842336": {
+"@source": "node842335", 
+"@target": "node842336"
+}, 
+"edge842337": {
+"@source": "node842335", 
+"@target": "node842337"
+}
+}, 
+"node842338": {
+"edge842339": {
+"@source": "node842338", 
+"@target": "node842339"
+}, 
+"edge842344": {
+"@source": "node842338", 
+"@target": "node842344"
+}
+}, 
+"node842339": {
+"edge842340": {
+"@source": "node842339", 
+"@target": "node842340"
+}, 
+"edge842341": {
+"@source": "node842339", 
+"@target": "node842341"
+}
+}, 
+"node842341": {
+"edge842342": {
+"@source": "node842341", 
+"@target": "node842342"
+}, 
+"edge842343": {
+"@source": "node842341", 
+"@target": "node842343"
+}
+}, 
+"node842344": {
+"edge842345": {
+"@source": "node842344", 
+"@target": "node842345"
+}, 
+"edge842346": {
+"@source": "node842344", 
+"@target": "node842346"
+}
+}
+}, 
+"nodeById": {
+"node842333": {
+"@root": true
+}, 
+"node842334": {}, 
+"node842335": {}, 
+"node842336": {
+"@otu": "otu325461"
+}, 
+"node842337": {
+"@otu": "otu325467"
+}, 
+"node842338": {}, 
+"node842339": {}, 
+"node842340": {
+"@otu": "otu325466"
+}, 
+"node842341": {}, 
+"node842342": {
+"@otu": "otu325465"
+}, 
+"node842343": {
+"@otu": "otu325464"
+}, 
+"node842344": {}, 
+"node842345": {
+"@otu": "otu325462"
+}, 
+"node842346": {
+"@otu": "otu325463"
+}, 
+"node842347": {
+"@otu": "otu325460"
+}
+}
+}
+}
+}
+}
+}
+}

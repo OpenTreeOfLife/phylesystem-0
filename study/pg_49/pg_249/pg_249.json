@@ -1,0 +1,186 @@
+{
+"nexml": {
+"@generator": "Phylografter nexml-json exporter", 
+"@id": "study", 
+"@nexml2json": "1.2.1", 
+"@nexmljson": "http://opentree.wikispaces.com/NexSON", 
+"@version": "0.9", 
+"@xmlns": {
+"$": "http://www.nexml.org/2009", 
+"nex": "http://www.nexml.org/2009", 
+"ot": "http://purl.org/opentree-terms#", 
+"xsd": "http://www.w3.org/2001/XMLSchema#", 
+"xsi": "http://www.w3.org/2001/XMLSchema-instance"
+}, 
+"^ot:agents": {
+"agent": [
+{
+"@description": "validator of NexSON constraints as well as constraints that would allow a study to be imported into the Open Tree of Life's phylogenetic synthesis tools", 
+"@id": "peyotl-validator", 
+"@name": "validate_ot_nexson.py", 
+"@url": "https://github.com/OpenTreeOfLife/peyotl", 
+"@version": "0.0.3a", 
+"invocation": {
+"checksPerformed": [
+"MISSING_MANDATORY_KEY", 
+"MISSING_OPTIONAL_KEY", 
+"UNRECOGNIZED_KEY", 
+"MISSING_LIST_EXPECTED", 
+"DUPLICATING_SINGLETON_KEY", 
+"REFERENCED_ID_NOT_FOUND", 
+"REPEATED_ID", 
+"REPEATED_OTU", 
+"MULTIPLE_ROOT_NODES", 
+"NO_ROOT_NODE", 
+"MULTIPLE_EDGES_FOR_NODES", 
+"CYCLE_DETECTED", 
+"DISCONNECTED_GRAPH_DETECTED", 
+"INCORRECT_ROOT_NODE_LABEL", 
+"TIP_WITHOUT_OTU", 
+"TIP_WITHOUT_OTT_ID", 
+"MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
+"NON_MONOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
+"INVALID_PROPERTY_VALUE", 
+"PROPERTY_VALUE_NOT_USEFUL", 
+"UNRECOGNIZED_PROPERTY_VALUE", 
+"MULTIPLE_TREES", 
+"UNRECOGNIZED_TAG", 
+"CONFLICTING_PROPERTY_VALUES", 
+"NO_TREES", 
+"DEPRECATED_PROPERTY", 
+"UNPARSEABLE_META", 
+"UNREACHABLE_NODE", 
+"INCORRECT_VALUE_TYPE", 
+"MISSING_CRUCIAL_CONTENT"
+], 
+"commandLine": [
+"--embed", 
+"--agent-only", 
+"-e", 
+"../mig-phyelesystem-scratch/249/validation.json", 
+"-o", 
+"../mig-phyelesystem-scratch/249/final.json", 
+"../mig-phyelesystem-scratch/249/v1.2.1-249.json"
+], 
+"otherProperty": [
+{
+"name": "pythonVersion", 
+"value": "2.7.5+"
+}, 
+{
+"name": "pythonImplementation", 
+"value": "CPython"
+}
+]
+}
+}
+]
+}, 
+"^ot:curatorName": "Evgeny Mavrodiev", 
+"^ot:focalClade": 34029, 
+"^ot:otusElementOrder": [
+"otus249"
+], 
+"^ot:studyId": "249", 
+"^ot:studyPublication": {
+"@href": "http://dx.doi.org/10.1016/j.ympev.2007.03.002"
+}, 
+"^ot:studyPublicationReference": "Zhang L.-B., Simmons M. P., Renner S. S. 2007. A phylogeny of Anisophylleaceae based on six nuclear and plastid loci: Ancient disjunctions and recent dispersal between South America, Africa, and Asia. Molecular Phylogenetics and Evolution. \u0412\u043e\u043b. 44. Pp. 1057\u20131067.", 
+"^ot:studyYear": 2007, 
+"^ot:treesElementOrder": [
+"trees249"
+], 
+"otusById": {
+"otus249": {
+"otuById": {
+"otu64857": {
+"^ot:originalLabel": "Datisca cannabina AJ235450"
+}, 
+"otu64858": {
+"^ot:originalLabel": "Datisca glomerata", 
+"^ot:ottId": 784108
+}, 
+"otu64859": {
+"^ot:originalLabel": "Octomeles sumatrana", 
+"^ot:ottId": 784121
+}, 
+"otu64860": {
+"^ot:originalLabel": "Tetrameles nudiflora AF209689"
+}
+}
+}
+}, 
+"treesById": {
+"trees249": {
+"@otus": "otus249", 
+"^ot:treeElementOrder": [
+"tree131"
+], 
+"treeById": {
+"tree131": {
+"@xsi:type": "nex:FloatTree", 
+"^ot:curatedType": "MP topology corresponded to BEAST chronogram", 
+"^ot:rootNodeId": "node165423", 
+"edgeBySourceId": {
+"node165423": {
+"edge165424": {
+"@length": 64.630293, 
+"@source": "node165423", 
+"@target": "node165424"
+}, 
+"edge165427": {
+"@length": 49.905779, 
+"@source": "node165423", 
+"@target": "node165427"
+}
+}, 
+"node165424": {
+"edge165425": {
+"@length": 29.588744, 
+"@source": "node165424", 
+"@target": "node165425"
+}, 
+"edge165426": {
+"@length": 29.588744, 
+"@source": "node165424", 
+"@target": "node165426"
+}
+}, 
+"node165427": {
+"edge165428": {
+"@length": 44.317139, 
+"@source": "node165427", 
+"@target": "node165428"
+}, 
+"edge165429": {
+"@length": 44.317139, 
+"@source": "node165427", 
+"@target": "node165429"
+}
+}
+}, 
+"nodeById": {
+"node165423": {
+"@root": true
+}, 
+"node165424": {}, 
+"node165425": {
+"@otu": "otu64857"
+}, 
+"node165426": {
+"@otu": "otu64858"
+}, 
+"node165427": {}, 
+"node165428": {
+"@otu": "otu64859"
+}, 
+"node165429": {
+"@otu": "otu64860"
+}
+}
+}
+}
+}
+}
+}
+}

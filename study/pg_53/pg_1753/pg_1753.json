@@ -1,0 +1,324 @@
+{
+"nexml": {
+"@generator": "Phylografter nexml-json exporter", 
+"@id": "study", 
+"@nexml2json": "1.2.1", 
+"@nexmljson": "http://purl.org/opentree/nexson", 
+"@version": "0.9", 
+"@xmlns": {
+"$": "http://www.nexml.org/2009", 
+"nex": "http://www.nexml.org/2009", 
+"ot": "http://purl.org/opentree-terms#", 
+"xsd": "http://www.w3.org/2001/XMLSchema#", 
+"xsi": "http://www.w3.org/2001/XMLSchema-instance"
+}, 
+"^ot:agents": {
+"agent": [
+{
+"@description": "validator of NexSON constraints as well as constraints that would allow a study to be imported into the Open Tree of Life's phylogenetic synthesis tools", 
+"@id": "peyotl-validator", 
+"@name": "validate_ot_nexson.py", 
+"@url": "https://github.com/OpenTreeOfLife/peyotl", 
+"@version": "0.0.3a", 
+"invocation": {
+"checksPerformed": [
+"MISSING_MANDATORY_KEY", 
+"MISSING_OPTIONAL_KEY", 
+"UNRECOGNIZED_KEY", 
+"MISSING_LIST_EXPECTED", 
+"DUPLICATING_SINGLETON_KEY", 
+"REFERENCED_ID_NOT_FOUND", 
+"REPEATED_ID", 
+"REPEATED_OTU", 
+"MULTIPLE_ROOT_NODES", 
+"NO_ROOT_NODE", 
+"MULTIPLE_EDGES_FOR_NODES", 
+"CYCLE_DETECTED", 
+"DISCONNECTED_GRAPH_DETECTED", 
+"INCORRECT_ROOT_NODE_LABEL", 
+"TIP_WITHOUT_OTU", 
+"TIP_WITHOUT_OTT_ID", 
+"MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
+"NON_MONOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
+"INVALID_PROPERTY_VALUE", 
+"PROPERTY_VALUE_NOT_USEFUL", 
+"UNRECOGNIZED_PROPERTY_VALUE", 
+"MULTIPLE_TREES", 
+"UNRECOGNIZED_TAG", 
+"CONFLICTING_PROPERTY_VALUES", 
+"NO_TREES", 
+"DEPRECATED_PROPERTY", 
+"UNPARSEABLE_META", 
+"UNREACHABLE_NODE", 
+"INCORRECT_VALUE_TYPE", 
+"MISSING_CRUCIAL_CONTENT"
+], 
+"commandLine": [
+"--embed", 
+"--agent-only", 
+"-e", 
+"../mig-phyelesystem-scratch/1753/validation.json", 
+"-o", 
+"../mig-phyelesystem-scratch/1753/final.json", 
+"../mig-phyelesystem-scratch/1753/v1.2.1-1753.json"
+], 
+"otherProperty": [
+{
+"name": "pythonVersion", 
+"value": "2.7.5+"
+}, 
+{
+"name": "pythonImplementation", 
+"value": "CPython"
+}
+]
+}
+}
+]
+}, 
+"^ot:curatorName": "Romina Gazis", 
+"^ot:dataDeposit": {
+"@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S857"
+}, 
+"^ot:focalClade": 359501, 
+"^ot:focalCladeOTTTaxonName": "Hypocrea", 
+"^ot:otusElementOrder": [
+"otus1753"
+], 
+"^ot:studyId": "1753", 
+"^ot:studyPublication": {
+"@href": "http://dx.doi.org/10.2307/3761672"
+}, 
+"^ot:studyPublicationReference": "Chaverri P., Samuels G., & Stewart E. 2000. Hypocrea virens sp. nov., the teleomorph of Trichoderma virens. Mycologia, 93(6): 1113-1124.", 
+"^ot:studyYear": 2000, 
+"^ot:treesElementOrder": [
+"trees1753"
+], 
+"otusById": {
+"otus1753": {
+"otuById": {
+"otu273774": {
+"^ot:originalLabel": "Hypocrea nigricans GJS98.183", 
+"^ot:treebaseOTUId": "Tl7787"
+}, 
+"otu273775": {
+"^ot:originalLabel": "Trichoderma virens GL39", 
+"^ot:treebaseOTUId": "Tl7788"
+}, 
+"otu273776": {
+"^ot:originalLabel": "Hypocrea virens GJS95.194", 
+"^ot:ottId": 409099, 
+"^ot:ottTaxonName": "Gliocladium flavofuscum", 
+"^ot:treebaseOTUId": "Tl7789"
+}, 
+"otu273777": {
+"^ot:originalLabel": "Hypocrea flavovirens PC4", 
+"^ot:ottId": 844024, 
+"^ot:ottTaxonName": "Hypocrea flavovirens", 
+"^ot:treebaseOTUId": "Tl7790"
+}, 
+"otu273778": {
+"^ot:originalLabel": "Trichoderma virens GL20", 
+"^ot:treebaseOTUId": "Tl7791"
+}, 
+"otu273779": {
+"^ot:originalLabel": "Trichoderma virens GL3", 
+"^ot:treebaseOTUId": "Tl7792"
+}, 
+"otu273780": {
+"^ot:originalLabel": "Trichoderma virens GL21", 
+"^ot:treebaseOTUId": "Tl7793"
+}
+}
+}
+}, 
+"treesById": {
+"trees1753": {
+"@otus": "otus1753", 
+"^ot:treeElementOrder": [
+"tree3530", 
+"tree3531"
+], 
+"treeById": {
+"tree3530": {
+"@xsi:type": "nex:FloatTree", 
+"^ot:curatedType": "MP, ITS", 
+"^ot:inGroupClade": "node680309", 
+"^ot:rootNodeId": "node680308", 
+"edgeBySourceId": {
+"node680308": {
+"edge680309": {
+"@source": "node680308", 
+"@target": "node680309"
+}, 
+"edge680317": {
+"@source": "node680308", 
+"@target": "node680317"
+}
+}, 
+"node680309": {
+"edge680310": {
+"@source": "node680309", 
+"@target": "node680310"
+}, 
+"edge680316": {
+"@source": "node680309", 
+"@target": "node680316"
+}
+}, 
+"node680310": {
+"edge680311": {
+"@source": "node680310", 
+"@target": "node680311"
+}, 
+"edge680312": {
+"@source": "node680310", 
+"@target": "node680312"
+}, 
+"edge680313": {
+"@source": "node680310", 
+"@target": "node680313"
+}, 
+"edge680314": {
+"@source": "node680310", 
+"@target": "node680314"
+}, 
+"edge680315": {
+"@source": "node680310", 
+"@target": "node680315"
+}
+}
+}, 
+"nodeById": {
+"node680308": {
+"@root": true
+}, 
+"node680309": {}, 
+"node680310": {}, 
+"node680311": {
+"@otu": "otu273776"
+}, 
+"node680312": {
+"@otu": "otu273779"
+}, 
+"node680313": {
+"@otu": "otu273778"
+}, 
+"node680314": {
+"@otu": "otu273780"
+}, 
+"node680315": {
+"@otu": "otu273775"
+}, 
+"node680316": {
+"@otu": "otu273774"
+}, 
+"node680317": {
+"@otu": "otu273777"
+}
+}
+}, 
+"tree3531": {
+"@xsi:type": "nex:FloatTree", 
+"^ot:curatedType": "MP, EF-1", 
+"^ot:inGroupClade": "node680319", 
+"^ot:rootNodeId": "node680318", 
+"edgeBySourceId": {
+"node680318": {
+"edge680319": {
+"@source": "node680318", 
+"@target": "node680319"
+}, 
+"edge680330": {
+"@source": "node680318", 
+"@target": "node680330"
+}
+}, 
+"node680319": {
+"edge680320": {
+"@source": "node680319", 
+"@target": "node680320"
+}, 
+"edge680329": {
+"@source": "node680319", 
+"@target": "node680329"
+}
+}, 
+"node680320": {
+"edge680321": {
+"@source": "node680320", 
+"@target": "node680321"
+}, 
+"edge680328": {
+"@source": "node680320", 
+"@target": "node680328"
+}
+}, 
+"node680321": {
+"edge680322": {
+"@source": "node680321", 
+"@target": "node680322"
+}, 
+"edge680327": {
+"@source": "node680321", 
+"@target": "node680327"
+}
+}, 
+"node680322": {
+"edge680323": {
+"@source": "node680322", 
+"@target": "node680323"
+}, 
+"edge680326": {
+"@source": "node680322", 
+"@target": "node680326"
+}
+}, 
+"node680323": {
+"edge680324": {
+"@source": "node680323", 
+"@target": "node680324"
+}, 
+"edge680325": {
+"@source": "node680323", 
+"@target": "node680325"
+}
+}
+}, 
+"nodeById": {
+"node680318": {
+"@root": true
+}, 
+"node680319": {}, 
+"node680320": {}, 
+"node680321": {}, 
+"node680322": {}, 
+"node680323": {}, 
+"node680324": {
+"@otu": "otu273776"
+}, 
+"node680325": {
+"@otu": "otu273775"
+}, 
+"node680326": {
+"@otu": "otu273780"
+}, 
+"node680327": {
+"@otu": "otu273778"
+}, 
+"node680328": {
+"@otu": "otu273779"
+}, 
+"node680329": {
+"@otu": "otu273774"
+}, 
+"node680330": {
+"@otu": "otu273777"
+}
+}
+}
+}
+}
+}
+}
+}

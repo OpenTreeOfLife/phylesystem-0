@@ -1,0 +1,350 @@
+{
+"nexml": {
+"@generator": "Phylografter nexml-json exporter", 
+"@id": "study", 
+"@nexml2json": "1.2.1", 
+"@nexmljson": "http://purl.org/opentree/nexson", 
+"@version": "0.9", 
+"@xmlns": {
+"$": "http://www.nexml.org/2009", 
+"nex": "http://www.nexml.org/2009", 
+"ot": "http://purl.org/opentree-terms#", 
+"xsd": "http://www.w3.org/2001/XMLSchema#", 
+"xsi": "http://www.w3.org/2001/XMLSchema-instance"
+}, 
+"^ot:agents": {
+"agent": [
+{
+"@description": "validator of NexSON constraints as well as constraints that would allow a study to be imported into the Open Tree of Life's phylogenetic synthesis tools", 
+"@id": "peyotl-validator", 
+"@name": "validate_ot_nexson.py", 
+"@url": "https://github.com/OpenTreeOfLife/peyotl", 
+"@version": "0.0.3a", 
+"invocation": {
+"checksPerformed": [
+"MISSING_MANDATORY_KEY", 
+"MISSING_OPTIONAL_KEY", 
+"UNRECOGNIZED_KEY", 
+"MISSING_LIST_EXPECTED", 
+"DUPLICATING_SINGLETON_KEY", 
+"REFERENCED_ID_NOT_FOUND", 
+"REPEATED_ID", 
+"REPEATED_OTU", 
+"MULTIPLE_ROOT_NODES", 
+"NO_ROOT_NODE", 
+"MULTIPLE_EDGES_FOR_NODES", 
+"CYCLE_DETECTED", 
+"DISCONNECTED_GRAPH_DETECTED", 
+"INCORRECT_ROOT_NODE_LABEL", 
+"TIP_WITHOUT_OTU", 
+"TIP_WITHOUT_OTT_ID", 
+"MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
+"NON_MONOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
+"INVALID_PROPERTY_VALUE", 
+"PROPERTY_VALUE_NOT_USEFUL", 
+"UNRECOGNIZED_PROPERTY_VALUE", 
+"MULTIPLE_TREES", 
+"UNRECOGNIZED_TAG", 
+"CONFLICTING_PROPERTY_VALUES", 
+"NO_TREES", 
+"DEPRECATED_PROPERTY", 
+"UNPARSEABLE_META", 
+"UNREACHABLE_NODE", 
+"INCORRECT_VALUE_TYPE", 
+"MISSING_CRUCIAL_CONTENT"
+], 
+"commandLine": [
+"--embed", 
+"--agent-only", 
+"-e", 
+"../mig-phyelesystem-scratch/2735/validation.json", 
+"-o", 
+"../mig-phyelesystem-scratch/2735/final.json", 
+"../mig-phyelesystem-scratch/2735/v1.2.1-2735.json"
+], 
+"otherProperty": [
+{
+"name": "pythonVersion", 
+"value": "2.7.5+"
+}, 
+{
+"name": "pythonImplementation", 
+"value": "CPython"
+}
+]
+}
+}
+]
+}, 
+"^ot:curatorName": "Joseph Brown", 
+"^ot:focalClade": 626917, 
+"^ot:focalCladeOTTTaxonName": "Pantherinae", 
+"^ot:otusElementOrder": [
+"otus2735"
+], 
+"^ot:studyId": "2735", 
+"^ot:studyPublication": {
+"@href": "http://dx.doi.org/10.1098/rspb.2013.2686"
+}, 
+"^ot:studyPublicationReference": "Z. J. Tseng, X. Wang, G. J. Slater, G. T. Takeuchi, Q. Li, J. Liu, G. Xie. 2013. Himalayan fossils of the oldest known pantherine establish ancient origin of big cats. Proceedings of the Royal Society B: Biological Sciences 281(1774): 20132686-20132686.", 
+"^ot:studyYear": 2013, 
+"^ot:tag": "ingroup added;", 
+"^ot:treesElementOrder": [
+"trees2735"
+], 
+"otusById": {
+"otus2735": {
+"otuById": {
+"otu408060": {
+"^ot:originalLabel": "Neofelis nebulosa", 
+"^ot:ottId": 763016, 
+"^ot:ottTaxonName": "Neofelis nebulosa"
+}, 
+"otu408061": {
+"^ot:originalLabel": "Panthera leo", 
+"^ot:ottId": 563151, 
+"^ot:ottTaxonName": "Panthera leo"
+}, 
+"otu408062": {
+"^ot:originalLabel": "Panthera atrox"
+}, 
+"otu408063": {
+"^ot:originalLabel": "Panthera spelaea"
+}, 
+"otu408064": {
+"^ot:originalLabel": "Panthera pardus", 
+"^ot:ottId": 42324, 
+"^ot:ottTaxonName": "Panthera pardus"
+}, 
+"otu408065": {
+"^ot:originalLabel": "Panthera onca", 
+"^ot:ottId": 42322, 
+"^ot:ottTaxonName": "Panthera onca"
+}, 
+"otu408066": {
+"^ot:originalLabel": "Panthera tigris", 
+"^ot:ottId": 42314, 
+"^ot:ottTaxonName": "Panthera tigris"
+}, 
+"otu408067": {
+"^ot:originalLabel": "Panthera uncia", 
+"^ot:ottId": 532117, 
+"^ot:ottTaxonName": "Uncia uncia"
+}, 
+"otu408068": {
+"^ot:originalLabel": "Panthera blytheae"
+}, 
+"otu408069": {
+"^ot:originalLabel": "Panthera palaeosinensis"
+}, 
+"otu408070": {
+"^ot:originalLabel": "Leopardus pardalis", 
+"^ot:ottId": 752746, 
+"^ot:ottTaxonName": "Leopardus pardalis"
+}, 
+"otu408071": {
+"^ot:originalLabel": "Puma concolor", 
+"^ot:ottId": 42307, 
+"^ot:ottTaxonName": "Puma concolor"
+}
+}
+}
+}, 
+"treesById": {
+"trees2735": {
+"@otus": "otus2735", 
+"^ot:treeElementOrder": [
+"tree6321"
+], 
+"treeById": {
+"tree6321": {
+"@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthMode": "ot:time", 
+"^ot:branchLengthTimeUnit": "Myr", 
+"^ot:curatedType": "Bayesian MCC time-calibrated", 
+"^ot:inGroupClade": "node1098382", 
+"^ot:rootNodeId": "node1098381", 
+"^ot:tag": "Choose me", 
+"edgeBySourceId": {
+"node1098381": {
+"edge1098382": {
+"@length": 2.34433371802, 
+"@source": "node1098381", 
+"@target": "node1098382"
+}, 
+"edge1098400": {
+"@length": 6.152151579394772, 
+"@source": "node1098381", 
+"@target": "node1098400"
+}
+}, 
+"node1098382": {
+"edge1098383": {
+"@length": 16.39629617518491, 
+"@source": "node1098382", 
+"@target": "node1098383"
+}, 
+"edge1098384": {
+"@length": 5.673429394363147, 
+"@source": "node1098382", 
+"@target": "node1098384"
+}
+}, 
+"node1098384": {
+"edge1098385": {
+"@length": 2.978803843876485, 
+"@source": "node1098384", 
+"@target": "node1098385"
+}, 
+"edge1098394": {
+"@length": 1.946529990440901, 
+"@source": "node1098384", 
+"@target": "node1098394"
+}, 
+"edge1098399": {
+"@length": 8.365253800231505, 
+"@source": "node1098384", 
+"@target": "node1098399"
+}
+}, 
+"node1098385": {
+"edge1098386": {
+"@length": 1.739233922133418, 
+"@source": "node1098385", 
+"@target": "node1098386"
+}, 
+"edge1098393": {
+"@length": 7.744062936945276, 
+"@source": "node1098385", 
+"@target": "node1098393"
+}
+}, 
+"node1098386": {
+"edge1098387": {
+"@length": 1.989908310350587, 
+"@source": "node1098386", 
+"@target": "node1098387"
+}, 
+"edge1098392": {
+"@length": 6.004829014811858, 
+"@source": "node1098386", 
+"@target": "node1098392"
+}
+}, 
+"node1098387": {
+"edge1098388": {
+"@length": 4.014920704461272, 
+"@source": "node1098387", 
+"@target": "node1098388"
+}, 
+"edge1098389": {
+"@length": 1.140318576952499, 
+"@source": "node1098387", 
+"@target": "node1098389"
+}
+}, 
+"node1098389": {
+"edge1098390": {
+"@length": 1.883915147461913, 
+"@source": "node1098389", 
+"@target": "node1098390"
+}, 
+"edge1098391": {
+"@length": 1.553356626855562, 
+"@source": "node1098389", 
+"@target": "node1098391"
+}
+}, 
+"node1098394": {
+"edge1098395": {
+"@length": 8.776336790380862, 
+"@source": "node1098394", 
+"@target": "node1098395"
+}, 
+"edge1098396": {
+"@length": 1.802048669101132, 
+"@source": "node1098394", 
+"@target": "node1098396"
+}
+}, 
+"node1098396": {
+"edge1098397": {
+"@length": 6.974288121279729, 
+"@source": "node1098396", 
+"@target": "node1098397"
+}, 
+"edge1098398": {
+"@length": 2.292992610587484, 
+"@source": "node1098396", 
+"@target": "node1098398"
+}
+}, 
+"node1098400": {
+"edge1098401": {
+"@length": 12.58847831381465, 
+"@source": "node1098400", 
+"@target": "node1098401"
+}, 
+"edge1098402": {
+"@length": 12.58847831381465, 
+"@source": "node1098400", 
+"@target": "node1098402"
+}
+}
+}, 
+"nodeById": {
+"node1098381": {
+"@root": true
+}, 
+"node1098382": {}, 
+"node1098383": {
+"@otu": "otu408060"
+}, 
+"node1098384": {}, 
+"node1098385": {}, 
+"node1098386": {}, 
+"node1098387": {}, 
+"node1098388": {
+"@otu": "otu408061"
+}, 
+"node1098389": {}, 
+"node1098390": {
+"@otu": "otu408062"
+}, 
+"node1098391": {
+"@otu": "otu408063"
+}, 
+"node1098392": {
+"@otu": "otu408064"
+}, 
+"node1098393": {
+"@otu": "otu408065"
+}, 
+"node1098394": {}, 
+"node1098395": {
+"@otu": "otu408066"
+}, 
+"node1098396": {}, 
+"node1098397": {
+"@otu": "otu408067"
+}, 
+"node1098398": {
+"@otu": "otu408068"
+}, 
+"node1098399": {
+"@otu": "otu408069"
+}, 
+"node1098400": {}, 
+"node1098401": {
+"@otu": "otu408070"
+}, 
+"node1098402": {
+"@otu": "otu408071"
+}
+}
+}
+}
+}
+}
+}
+}

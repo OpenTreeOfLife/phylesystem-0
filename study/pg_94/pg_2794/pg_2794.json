@@ -1,0 +1,272 @@
+{
+"nexml": {
+"@generator": "Phylografter nexml-json exporter", 
+"@id": "study", 
+"@nexml2json": "1.2.1", 
+"@nexmljson": "http://purl.org/opentree/nexson", 
+"@version": "0.9", 
+"@xmlns": {
+"$": "http://www.nexml.org/2009", 
+"nex": "http://www.nexml.org/2009", 
+"ot": "http://purl.org/opentree-terms#", 
+"xsd": "http://www.w3.org/2001/XMLSchema#", 
+"xsi": "http://www.w3.org/2001/XMLSchema-instance"
+}, 
+"^ot:agents": {
+"agent": [
+{
+"@description": "validator of NexSON constraints as well as constraints that would allow a study to be imported into the Open Tree of Life's phylogenetic synthesis tools", 
+"@id": "peyotl-validator", 
+"@name": "validate_ot_nexson.py", 
+"@url": "https://github.com/OpenTreeOfLife/peyotl", 
+"@version": "0.0.3a", 
+"invocation": {
+"checksPerformed": [
+"MISSING_MANDATORY_KEY", 
+"MISSING_OPTIONAL_KEY", 
+"UNRECOGNIZED_KEY", 
+"MISSING_LIST_EXPECTED", 
+"DUPLICATING_SINGLETON_KEY", 
+"REFERENCED_ID_NOT_FOUND", 
+"REPEATED_ID", 
+"REPEATED_OTU", 
+"MULTIPLE_ROOT_NODES", 
+"NO_ROOT_NODE", 
+"MULTIPLE_EDGES_FOR_NODES", 
+"CYCLE_DETECTED", 
+"DISCONNECTED_GRAPH_DETECTED", 
+"INCORRECT_ROOT_NODE_LABEL", 
+"TIP_WITHOUT_OTU", 
+"TIP_WITHOUT_OTT_ID", 
+"MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
+"NON_MONOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
+"INVALID_PROPERTY_VALUE", 
+"PROPERTY_VALUE_NOT_USEFUL", 
+"UNRECOGNIZED_PROPERTY_VALUE", 
+"MULTIPLE_TREES", 
+"UNRECOGNIZED_TAG", 
+"CONFLICTING_PROPERTY_VALUES", 
+"NO_TREES", 
+"DEPRECATED_PROPERTY", 
+"UNPARSEABLE_META", 
+"UNREACHABLE_NODE", 
+"INCORRECT_VALUE_TYPE", 
+"MISSING_CRUCIAL_CONTENT"
+], 
+"commandLine": [
+"--embed", 
+"--agent-only", 
+"-e", 
+"../mig-phyelesystem-scratch/2794/validation.json", 
+"-o", 
+"../mig-phyelesystem-scratch/2794/final.json", 
+"../mig-phyelesystem-scratch/2794/v1.2.1-2794.json"
+], 
+"otherProperty": [
+{
+"name": "pythonVersion", 
+"value": "2.7.5+"
+}, 
+{
+"name": "pythonImplementation", 
+"value": "CPython"
+}
+]
+}
+}
+]
+}, 
+"^ot:curatorName": "Dail Laughinghouse", 
+"^ot:dataDeposit": {
+"@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S15118"
+}, 
+"^ot:otusElementOrder": [
+"otus2794"
+], 
+"^ot:studyId": "2794", 
+"^ot:studyPublicationReference": "Geisen S., Bonkowski M., Zhang J., & De jonckheere J.F. 2014. Isolation of six new species of Allovahlkampfia and one new genus of the Vahlkampfiidae, Heterolobosea. Protist, .", 
+"^ot:studyYear": 2014, 
+"^ot:treesElementOrder": [
+"trees2794"
+], 
+"otusById": {
+"otus2794": {
+"otuById": {
+"otu414219": {
+"^ot:originalLabel": "Allovahlkampfia  nederlandensis Nl64", 
+"^ot:ottId": 364130, 
+"^ot:ottTaxonName": "Allovahlkampfia", 
+"^ot:treebaseOTUId": "Tl1345626"
+}, 
+"otu414220": {
+"^ot:originalLabel": "Allovahlkampfia  spelaea EU696949 ", 
+"^ot:ottId": 425076, 
+"^ot:ottTaxonName": "Allovahlkampfia spelaea", 
+"^ot:treebaseOTUId": "Tl1345627"
+}, 
+"otu414221": {
+"^ot:originalLabel": "Allovahlkampfia  neotibetensis Tib191", 
+"^ot:ottId": 364130, 
+"^ot:ottTaxonName": "Allovahlkampfia", 
+"^ot:treebaseOTUId": "Tl1345628"
+}, 
+"otu414222": {
+"^ot:originalLabel": "Solumitrus palustris JQ031196", 
+"^ot:treebaseOTUId": "Tl1345629"
+}, 
+"otu414223": {
+"^ot:originalLabel": "Allovahlkampfia  paratibetensis Tib50", 
+"^ot:ottId": 364130, 
+"^ot:ottTaxonName": "Allovahlkampfia", 
+"^ot:treebaseOTUId": "Tl1345630"
+}, 
+"otu414224": {
+"^ot:originalLabel": "Allovahlkampfia  sardiniensis Sar9", 
+"^ot:ottId": 364130, 
+"^ot:ottTaxonName": "Allovahlkampfia", 
+"^ot:treebaseOTUId": "Tl1345631"
+}, 
+"otu414225": {
+"^ot:originalLabel": "Allovahlkampfia parasardiniensis Sar37", 
+"^ot:ottId": 364130, 
+"^ot:ottTaxonName": "Allovahlkampfia", 
+"^ot:treebaseOTUId": "Tl1345632"
+}, 
+"otu414226": {
+"^ot:originalLabel": "Allovahlkampfia  tibetensis Tib32", 
+"^ot:ottId": 364130, 
+"^ot:ottTaxonName": "Allovahlkampfia", 
+"^ot:treebaseOTUId": "Tl1345633"
+}
+}
+}
+}, 
+"treesById": {
+"trees2794": {
+"@otus": "otus2794", 
+"^ot:treeElementOrder": [
+"tree6480"
+], 
+"treeById": {
+"tree6480": {
+"@xsi:type": "nex:FloatTree", 
+"^ot:curatedType": "Fig. S1", 
+"^ot:rootNodeId": "node1120537", 
+"edgeBySourceId": {
+"node1120537": {
+"edge1120538": {
+"@length": 0.03176, 
+"@source": "node1120537", 
+"@target": "node1120538"
+}, 
+"edge1120539": {
+"@length": 0.01642, 
+"@source": "node1120537", 
+"@target": "node1120539"
+}, 
+"edge1120540": {
+"@length": 0.10414, 
+"@source": "node1120537", 
+"@target": "node1120540"
+}
+}, 
+"node1120540": {
+"edge1120541": {
+"@length": 0.00714, 
+"@source": "node1120540", 
+"@target": "node1120541"
+}, 
+"edge1120546": {
+"@length": 0.03359, 
+"@source": "node1120540", 
+"@target": "node1120546"
+}
+}, 
+"node1120541": {
+"edge1120542": {
+"@length": 0.03589, 
+"@source": "node1120541", 
+"@target": "node1120542"
+}, 
+"edge1120543": {
+"@length": 0.00677, 
+"@source": "node1120541", 
+"@target": "node1120543"
+}
+}, 
+"node1120543": {
+"edge1120544": {
+"@length": 0.06967, 
+"@source": "node1120543", 
+"@target": "node1120544"
+}, 
+"edge1120545": {
+"@length": 0.02865, 
+"@source": "node1120543", 
+"@target": "node1120545"
+}
+}, 
+"node1120546": {
+"edge1120547": {
+"@length": 0.01039, 
+"@source": "node1120546", 
+"@target": "node1120547"
+}, 
+"edge1120550": {
+"@length": 0.00871, 
+"@source": "node1120546", 
+"@target": "node1120550"
+}
+}, 
+"node1120547": {
+"edge1120548": {
+"@length": 0.00296, 
+"@source": "node1120547", 
+"@target": "node1120548"
+}, 
+"edge1120549": {
+"@source": "node1120547", 
+"@target": "node1120549"
+}
+}
+}, 
+"nodeById": {
+"node1120537": {
+"@root": true
+}, 
+"node1120538": {
+"@otu": "otu414225"
+}, 
+"node1120539": {
+"@otu": "otu414221"
+}, 
+"node1120540": {}, 
+"node1120541": {}, 
+"node1120542": {
+"@otu": "otu414223"
+}, 
+"node1120543": {}, 
+"node1120544": {
+"@otu": "otu414222"
+}, 
+"node1120545": {
+"@otu": "otu414220"
+}, 
+"node1120546": {}, 
+"node1120547": {}, 
+"node1120548": {
+"@otu": "otu414219"
+}, 
+"node1120549": {
+"@otu": "otu414226"
+}, 
+"node1120550": {
+"@otu": "otu414224"
+}
+}
+}
+}
+}
+}
+}
+}

@@ -1,0 +1,188 @@
+{
+"nexml": {
+"@generator": "Phylografter nexml-json exporter", 
+"@id": "study", 
+"@nexml2json": "1.2.1", 
+"@nexmljson": "http://purl.org/opentree/nexson", 
+"@version": "0.9", 
+"@xmlns": {
+"$": "http://www.nexml.org/2009", 
+"nex": "http://www.nexml.org/2009", 
+"ot": "http://purl.org/opentree-terms#", 
+"xsd": "http://www.w3.org/2001/XMLSchema#", 
+"xsi": "http://www.w3.org/2001/XMLSchema-instance"
+}, 
+"^ot:agents": {
+"agent": [
+{
+"@description": "validator of NexSON constraints as well as constraints that would allow a study to be imported into the Open Tree of Life's phylogenetic synthesis tools", 
+"@id": "peyotl-validator", 
+"@name": "validate_ot_nexson.py", 
+"@url": "https://github.com/OpenTreeOfLife/peyotl", 
+"@version": "0.0.3a", 
+"invocation": {
+"checksPerformed": [
+"MISSING_MANDATORY_KEY", 
+"MISSING_OPTIONAL_KEY", 
+"UNRECOGNIZED_KEY", 
+"MISSING_LIST_EXPECTED", 
+"DUPLICATING_SINGLETON_KEY", 
+"REFERENCED_ID_NOT_FOUND", 
+"REPEATED_ID", 
+"REPEATED_OTU", 
+"MULTIPLE_ROOT_NODES", 
+"NO_ROOT_NODE", 
+"MULTIPLE_EDGES_FOR_NODES", 
+"CYCLE_DETECTED", 
+"DISCONNECTED_GRAPH_DETECTED", 
+"INCORRECT_ROOT_NODE_LABEL", 
+"TIP_WITHOUT_OTU", 
+"TIP_WITHOUT_OTT_ID", 
+"MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
+"NON_MONOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
+"INVALID_PROPERTY_VALUE", 
+"PROPERTY_VALUE_NOT_USEFUL", 
+"UNRECOGNIZED_PROPERTY_VALUE", 
+"MULTIPLE_TREES", 
+"UNRECOGNIZED_TAG", 
+"CONFLICTING_PROPERTY_VALUES", 
+"NO_TREES", 
+"DEPRECATED_PROPERTY", 
+"UNPARSEABLE_META", 
+"UNREACHABLE_NODE", 
+"INCORRECT_VALUE_TYPE", 
+"MISSING_CRUCIAL_CONTENT"
+], 
+"commandLine": [
+"--embed", 
+"--agent-only", 
+"-e", 
+"../mig-phyelesystem-scratch/1698/validation.json", 
+"-o", 
+"../mig-phyelesystem-scratch/1698/final.json", 
+"../mig-phyelesystem-scratch/1698/v1.2.1-1698.json"
+], 
+"otherProperty": [
+{
+"name": "pythonVersion", 
+"value": "2.7.5+"
+}, 
+{
+"name": "pythonImplementation", 
+"value": "CPython"
+}
+]
+}
+}
+]
+}, 
+"^ot:curatorName": "Romina Gazis", 
+"^ot:dataDeposit": {
+"@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S596"
+}, 
+"^ot:focalClade": 421620, 
+"^ot:focalCladeOTTTaxonName": "Phlebiopsis gigantea", 
+"^ot:otusElementOrder": [
+"otus1698"
+], 
+"^ot:studyId": "1698", 
+"^ot:studyPublication": {
+"@href": "http://dx.doi.org/10.2307/3761502"
+}, 
+"^ot:studyPublicationReference": "Vainio E., & Hantula J. 2000. Genetic differentiation between European and North American populations of Phlebiopsis gigantea. Mycologia, 92(3): 436-446.", 
+"^ot:studyYear": 2000, 
+"^ot:treesElementOrder": [
+"trees1698"
+], 
+"otusById": {
+"otus1698": {
+"otuById": {
+"otu271128": {
+"^ot:originalLabel": "Phlebiopsis gigantea A-P011", 
+"^ot:ottId": 421620, 
+"^ot:ottTaxonName": "Phlebiopsis gigantea", 
+"^ot:treebaseOTUId": "Tl54963"
+}, 
+"otu271129": {
+"^ot:originalLabel": "Phlebiopsis gigantea C-FP-105126-Sp", 
+"^ot:ottId": 421620, 
+"^ot:ottTaxonName": "Phlebiopsis gigantea", 
+"^ot:treebaseOTUId": "Tl54964"
+}, 
+"otu271130": {
+"^ot:originalLabel": "Phlebiopsis gigantea C-93318.1", 
+"^ot:ottId": 421620, 
+"^ot:ottTaxonName": "Phlebiopsis gigantea", 
+"^ot:treebaseOTUId": "Tl54965"
+}, 
+"otu271131": {
+"^ot:originalLabel": "Phlebiopsis gigantea B-P160", 
+"^ot:ottId": 421620, 
+"^ot:ottTaxonName": "Phlebiopsis gigantea", 
+"^ot:treebaseOTUId": "Tl54966"
+}
+}
+}
+}, 
+"treesById": {
+"trees1698": {
+"@otus": "otus1698", 
+"^ot:treeElementOrder": [
+"tree3426"
+], 
+"treeById": {
+"tree3426": {
+"@xsi:type": "nex:FloatTree", 
+"^ot:curatedType": "MP Tree / RAMS markers", 
+"^ot:inGroupClade": "node672315", 
+"^ot:rootNodeId": "node672314", 
+"edgeBySourceId": {
+"node672314": {
+"edge672315": {
+"@source": "node672314", 
+"@target": "node672315"
+}, 
+"edge672319": {
+"@source": "node672314", 
+"@target": "node672319"
+}
+}, 
+"node672315": {
+"edge672316": {
+"@source": "node672315", 
+"@target": "node672316"
+}, 
+"edge672317": {
+"@source": "node672315", 
+"@target": "node672317"
+}, 
+"edge672318": {
+"@source": "node672315", 
+"@target": "node672318"
+}
+}
+}, 
+"nodeById": {
+"node672314": {
+"@root": true
+}, 
+"node672315": {}, 
+"node672316": {
+"@otu": "otu271128"
+}, 
+"node672317": {
+"@otu": "otu271131"
+}, 
+"node672318": {
+"@otu": "otu271129"
+}, 
+"node672319": {
+"@otu": "otu271130"
+}
+}
+}
+}
+}
+}
+}
+}

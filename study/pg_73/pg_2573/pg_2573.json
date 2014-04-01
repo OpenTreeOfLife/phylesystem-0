@@ -1,0 +1,301 @@
+{
+"nexml": {
+"@generator": "Phylografter nexml-json exporter", 
+"@id": "study", 
+"@nexml2json": "1.2.1", 
+"@nexmljson": "http://purl.org/opentree/nexson", 
+"@version": "0.9", 
+"@xmlns": {
+"$": "http://www.nexml.org/2009", 
+"nex": "http://www.nexml.org/2009", 
+"ot": "http://purl.org/opentree-terms#", 
+"xsd": "http://www.w3.org/2001/XMLSchema#", 
+"xsi": "http://www.w3.org/2001/XMLSchema-instance"
+}, 
+"^ot:agents": {
+"agent": [
+{
+"@description": "validator of NexSON constraints as well as constraints that would allow a study to be imported into the Open Tree of Life's phylogenetic synthesis tools", 
+"@id": "peyotl-validator", 
+"@name": "validate_ot_nexson.py", 
+"@url": "https://github.com/OpenTreeOfLife/peyotl", 
+"@version": "0.0.3a", 
+"invocation": {
+"checksPerformed": [
+"MISSING_MANDATORY_KEY", 
+"MISSING_OPTIONAL_KEY", 
+"UNRECOGNIZED_KEY", 
+"MISSING_LIST_EXPECTED", 
+"DUPLICATING_SINGLETON_KEY", 
+"REFERENCED_ID_NOT_FOUND", 
+"REPEATED_ID", 
+"REPEATED_OTU", 
+"MULTIPLE_ROOT_NODES", 
+"NO_ROOT_NODE", 
+"MULTIPLE_EDGES_FOR_NODES", 
+"CYCLE_DETECTED", 
+"DISCONNECTED_GRAPH_DETECTED", 
+"INCORRECT_ROOT_NODE_LABEL", 
+"TIP_WITHOUT_OTU", 
+"TIP_WITHOUT_OTT_ID", 
+"MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
+"NON_MONOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
+"INVALID_PROPERTY_VALUE", 
+"PROPERTY_VALUE_NOT_USEFUL", 
+"UNRECOGNIZED_PROPERTY_VALUE", 
+"MULTIPLE_TREES", 
+"UNRECOGNIZED_TAG", 
+"CONFLICTING_PROPERTY_VALUES", 
+"NO_TREES", 
+"DEPRECATED_PROPERTY", 
+"UNPARSEABLE_META", 
+"UNREACHABLE_NODE", 
+"INCORRECT_VALUE_TYPE", 
+"MISSING_CRUCIAL_CONTENT"
+], 
+"commandLine": [
+"--embed", 
+"--agent-only", 
+"-e", 
+"../mig-phyelesystem-scratch/2573/validation.json", 
+"-o", 
+"../mig-phyelesystem-scratch/2573/final.json", 
+"../mig-phyelesystem-scratch/2573/v1.2.1-2573.json"
+], 
+"otherProperty": [
+{
+"name": "pythonVersion", 
+"value": "2.7.5+"
+}, 
+{
+"name": "pythonImplementation", 
+"value": "CPython"
+}
+]
+}
+}
+]
+}, 
+"^ot:curatorName": "Joseph Brown", 
+"^ot:focalClade": 335588, 
+"^ot:focalCladeOTTTaxonName": "Archosauria", 
+"^ot:otusElementOrder": [
+"otus2573"
+], 
+"^ot:studyId": "2573", 
+"^ot:studyPublication": {
+"@href": "http://dx.doi.org/10.1098/rsbl.2012.0331"
+}, 
+"^ot:studyPublicationReference": "Crawford, N. G., B. C. Faircloth, J. E. McCormack, R. T. Brumfield, K. Winker, T. C. Glenn. 2012. More than 1000 ultraconserved elements provide evidence that turtles are the sister group of archosaurs. Biology Letters 8 (5): 783-786.", 
+"^ot:studyYear": 2012, 
+"^ot:tag": "ingroup added;", 
+"^ot:treesElementOrder": [
+"trees2573"
+], 
+"otusById": {
+"otus2573": {
+"otuById": {
+"otu378588": {
+"^ot:originalLabel": "Chrysemys picta", 
+"^ot:ottId": 587300, 
+"^ot:ottTaxonName": "Chrysemys picta"
+}, 
+"otu378589": {
+"^ot:originalLabel": "Pelomedusa subrufa", 
+"^ot:ottId": 775044, 
+"^ot:ottTaxonName": "Pelomedusa subrufa"
+}, 
+"otu378590": {
+"^ot:originalLabel": "Crocodylus porosus", 
+"^ot:ottId": 35872, 
+"^ot:ottTaxonName": "Crocodylus porosus"
+}, 
+"otu378591": {
+"^ot:originalLabel": "Alligator mississippiensis", 
+"^ot:ottId": 335590, 
+"^ot:ottTaxonName": "Alligator mississippiensis"
+}, 
+"otu378592": {
+"^ot:originalLabel": "Gallus gallus", 
+"^ot:ottId": 153563, 
+"^ot:ottTaxonName": "Gallus gallus"
+}, 
+"otu378593": {
+"^ot:originalLabel": "Taeniopygia guttata", 
+"^ot:ottId": 708327, 
+"^ot:ottTaxonName": "Taeniopygia guttata"
+}, 
+"otu378594": {
+"^ot:originalLabel": "Sphenodon tuatara", 
+"^ot:ottId": 35890, 
+"^ot:ottTaxonName": "Sphenodon punctatus"
+}, 
+"otu378595": {
+"^ot:originalLabel": "Anolis carolinensis", 
+"^ot:ottId": 705356, 
+"^ot:ottTaxonName": "Anolis carolinensis"
+}, 
+"otu378596": {
+"^ot:originalLabel": "Pantherophis guttata", 
+"^ot:ottId": 456236, 
+"^ot:ottTaxonName": "Pantherophis guttatus"
+}
+}
+}
+}, 
+"treesById": {
+"trees2573": {
+"@otus": "otus2573", 
+"^ot:treeElementOrder": [
+"tree5959"
+], 
+"treeById": {
+"tree5959": {
+"@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthMode": "ot:substitutionCount", 
+"^ot:curatedType": "STEAC tree", 
+"^ot:inGroupClade": "node1011364", 
+"^ot:rootNodeId": "node1011364", 
+"edgeBySourceId": {
+"node1011364": {
+"edge1011365": {
+"@length": 0.001821131, 
+"@source": "node1011364", 
+"@target": "node1011365"
+}, 
+"edge1011376": {
+"@length": 0.002723439, 
+"@source": "node1011364", 
+"@target": "node1011376"
+}
+}, 
+"node1011365": {
+"edge1011366": {
+"@length": 0.007102483, 
+"@source": "node1011365", 
+"@target": "node1011366"
+}, 
+"edge1011369": {
+"@length": 0.001353186, 
+"@source": "node1011365", 
+"@target": "node1011369"
+}
+}, 
+"node1011366": {
+"edge1011367": {
+"@length": 0.0093634384685, 
+"@source": "node1011366", 
+"@target": "node1011367"
+}, 
+"edge1011368": {
+"@length": 0.0155847938115, 
+"@source": "node1011366", 
+"@target": "node1011368"
+}
+}, 
+"node1011369": {
+"edge1011370": {
+"@length": 0.009504655, 
+"@source": "node1011369", 
+"@target": "node1011370"
+}, 
+"edge1011373": {
+"@length": 0.011588226, 
+"@source": "node1011369", 
+"@target": "node1011373"
+}
+}, 
+"node1011370": {
+"edge1011371": {
+"@length": 0.00411294764626, 
+"@source": "node1011370", 
+"@target": "node1011371"
+}, 
+"edge1011372": {
+"@length": 0.00379089822374, 
+"@source": "node1011370", 
+"@target": "node1011372"
+}
+}, 
+"node1011373": {
+"edge1011374": {
+"@length": 0.0161053026804, 
+"@source": "node1011373", 
+"@target": "node1011374"
+}, 
+"edge1011375": {
+"@length": 0.0190521109696, 
+"@source": "node1011373", 
+"@target": "node1011375"
+}
+}, 
+"node1011376": {
+"edge1011377": {
+"@length": 0.0193665799114, 
+"@source": "node1011376", 
+"@target": "node1011377"
+}, 
+"edge1011378": {
+"@length": 0.035886378, 
+"@source": "node1011376", 
+"@target": "node1011378"
+}
+}, 
+"node1011378": {
+"edge1011379": {
+"@length": 0.0307995261157, 
+"@source": "node1011378", 
+"@target": "node1011379"
+}, 
+"edge1011380": {
+"@length": 0.0676387047944, 
+"@source": "node1011378", 
+"@target": "node1011380"
+}
+}
+}, 
+"nodeById": {
+"node1011364": {
+"@root": true
+}, 
+"node1011365": {}, 
+"node1011366": {}, 
+"node1011367": {
+"@otu": "otu378588"
+}, 
+"node1011368": {
+"@otu": "otu378589"
+}, 
+"node1011369": {}, 
+"node1011370": {}, 
+"node1011371": {
+"@otu": "otu378590"
+}, 
+"node1011372": {
+"@otu": "otu378591"
+}, 
+"node1011373": {}, 
+"node1011374": {
+"@otu": "otu378592"
+}, 
+"node1011375": {
+"@otu": "otu378593"
+}, 
+"node1011376": {}, 
+"node1011377": {
+"@otu": "otu378594"
+}, 
+"node1011378": {}, 
+"node1011379": {
+"@otu": "otu378595"
+}, 
+"node1011380": {
+"@otu": "otu378596"
+}
+}
+}
+}
+}
+}
+}
+}

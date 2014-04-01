@@ -1,0 +1,300 @@
+{
+"nexml": {
+"@generator": "Phylografter nexml-json exporter", 
+"@id": "study", 
+"@nexml2json": "1.2.1", 
+"@nexmljson": "http://purl.org/opentree/nexson", 
+"@version": "0.9", 
+"@xmlns": {
+"$": "http://www.nexml.org/2009", 
+"nex": "http://www.nexml.org/2009", 
+"ot": "http://purl.org/opentree-terms#", 
+"xsd": "http://www.w3.org/2001/XMLSchema#", 
+"xsi": "http://www.w3.org/2001/XMLSchema-instance"
+}, 
+"^ot:agents": {
+"agent": [
+{
+"@description": "validator of NexSON constraints as well as constraints that would allow a study to be imported into the Open Tree of Life's phylogenetic synthesis tools", 
+"@id": "peyotl-validator", 
+"@name": "validate_ot_nexson.py", 
+"@url": "https://github.com/OpenTreeOfLife/peyotl", 
+"@version": "0.0.3a", 
+"invocation": {
+"checksPerformed": [
+"MISSING_MANDATORY_KEY", 
+"MISSING_OPTIONAL_KEY", 
+"UNRECOGNIZED_KEY", 
+"MISSING_LIST_EXPECTED", 
+"DUPLICATING_SINGLETON_KEY", 
+"REFERENCED_ID_NOT_FOUND", 
+"REPEATED_ID", 
+"REPEATED_OTU", 
+"MULTIPLE_ROOT_NODES", 
+"NO_ROOT_NODE", 
+"MULTIPLE_EDGES_FOR_NODES", 
+"CYCLE_DETECTED", 
+"DISCONNECTED_GRAPH_DETECTED", 
+"INCORRECT_ROOT_NODE_LABEL", 
+"TIP_WITHOUT_OTU", 
+"TIP_WITHOUT_OTT_ID", 
+"MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
+"NON_MONOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
+"INVALID_PROPERTY_VALUE", 
+"PROPERTY_VALUE_NOT_USEFUL", 
+"UNRECOGNIZED_PROPERTY_VALUE", 
+"MULTIPLE_TREES", 
+"UNRECOGNIZED_TAG", 
+"CONFLICTING_PROPERTY_VALUES", 
+"NO_TREES", 
+"DEPRECATED_PROPERTY", 
+"UNPARSEABLE_META", 
+"UNREACHABLE_NODE", 
+"INCORRECT_VALUE_TYPE", 
+"MISSING_CRUCIAL_CONTENT"
+], 
+"commandLine": [
+"--embed", 
+"--agent-only", 
+"-e", 
+"../mig-phyelesystem-scratch/930/validation.json", 
+"-o", 
+"../mig-phyelesystem-scratch/930/final.json", 
+"../mig-phyelesystem-scratch/930/v1.2.1-930.json"
+], 
+"otherProperty": [
+{
+"name": "pythonVersion", 
+"value": "2.7.5+"
+}, 
+{
+"name": "pythonImplementation", 
+"value": "CPython"
+}
+]
+}
+}
+]
+}, 
+"^ot:curatorName": "bryan drew", 
+"^ot:focalClade": 870612, 
+"^ot:focalCladeOTTTaxonName": "Rehmannia", 
+"^ot:otusElementOrder": [
+"otus930"
+], 
+"^ot:studyId": "930", 
+"^ot:studyPublication": {
+"@href": "http://dx.doi.org/10.1016/j.bse.2006.11.003"
+}, 
+"^ot:studyPublicationReference": "Albach, D. C. [et al. 2007], Li, H.-Q., Zhao, N., & Jensen, S. R. 2007. Molecular systematics and phytochemistry of Rehmannia (Scrophulariaceae). Biochem. Syst. Ecol. 35: 293-300.", 
+"^ot:studyYear": 2007, 
+"^ot:treesElementOrder": [
+"trees930"
+], 
+"otusById": {
+"otus930": {
+"otuById": {
+"otu207213": {
+"^ot:originalLabel": "Paulownia tomentonsa", 
+"^ot:ottId": 305916, 
+"^ot:ottTaxonName": "Paulownia tomentosa"
+}, 
+"otu207214": {
+"^ot:originalLabel": "Oreosolen spec.", 
+"^ot:ottId": 878259, 
+"^ot:ottTaxonName": "Oreosolen"
+}, 
+"otu207215": {
+"^ot:originalLabel": "Mazus spec.", 
+"^ot:ottId": 12533, 
+"^ot:ottTaxonName": "Mazus"
+}, 
+"otu207216": {
+"^ot:originalLabel": "Lindenbergia philippensis"
+}, 
+"otu207217": {
+"^ot:originalLabel": "Rehmannia solanifolia 891", 
+"^ot:ottId": 110153, 
+"^ot:ottTaxonName": "Rehmannia solanifolia"
+}, 
+"otu207218": {
+"^ot:originalLabel": "Rehmannia glutinosa 892", 
+"^ot:ottId": 164453, 
+"^ot:ottTaxonName": "Rehmannia glutinosa"
+}, 
+"otu207219": {
+"^ot:originalLabel": "Rehmannia piasezkii 894", 
+"^ot:ottId": 110156, 
+"^ot:ottTaxonName": "Rehmannia piasezkii"
+}, 
+"otu207220": {
+"^ot:originalLabel": "Rehmannia elata 963", 
+"^ot:ottId": 562076, 
+"^ot:ottTaxonName": "Rehmannia elata"
+}, 
+"otu207221": {
+"^ot:originalLabel": "Rehmannia henryi 964", 
+"^ot:ottId": 605776, 
+"^ot:ottTaxonName": "Rehmannia henryi"
+}, 
+"otu207222": {
+"^ot:originalLabel": "Rehmannia chingii 893", 
+"^ot:ottId": 110151, 
+"^ot:ottTaxonName": "Rehmannia chingii"
+}
+}
+}
+}, 
+"treesById": {
+"trees930": {
+"@otus": "otus930", 
+"^ot:treeElementOrder": [
+"tree1829"
+], 
+"treeById": {
+"tree1829": {
+"@xsi:type": "nex:FloatTree", 
+"^ot:curatedType": "MP", 
+"^ot:inGroupClade": "node490730", 
+"^ot:rootNodeId": "node490722", 
+"edgeBySourceId": {
+"node490722": {
+"edge490723": {
+"@source": "node490722", 
+"@target": "node490723"
+}, 
+"edge490724": {
+"@source": "node490722", 
+"@target": "node490724"
+}
+}, 
+"node490724": {
+"edge490725": {
+"@source": "node490724", 
+"@target": "node490725"
+}, 
+"edge490728": {
+"@source": "node490724", 
+"@target": "node490728"
+}
+}, 
+"node490725": {
+"edge490726": {
+"@source": "node490725", 
+"@target": "node490726"
+}, 
+"edge490727": {
+"@source": "node490725", 
+"@target": "node490727"
+}
+}, 
+"node490728": {
+"edge490729": {
+"@source": "node490728", 
+"@target": "node490729"
+}, 
+"edge490730": {
+"@source": "node490728", 
+"@target": "node490730"
+}
+}, 
+"node490730": {
+"edge490731": {
+"@source": "node490730", 
+"@target": "node490731"
+}, 
+"edge490740": {
+"@source": "node490730", 
+"@target": "node490740"
+}
+}, 
+"node490731": {
+"edge490732": {
+"@source": "node490731", 
+"@target": "node490732"
+}, 
+"edge490739": {
+"@source": "node490731", 
+"@target": "node490739"
+}
+}, 
+"node490732": {
+"edge490733": {
+"@source": "node490732", 
+"@target": "node490733"
+}, 
+"edge490736": {
+"@source": "node490732", 
+"@target": "node490736"
+}
+}, 
+"node490733": {
+"edge490734": {
+"@source": "node490733", 
+"@target": "node490734"
+}, 
+"edge490735": {
+"@source": "node490733", 
+"@target": "node490735"
+}
+}, 
+"node490736": {
+"edge490737": {
+"@source": "node490736", 
+"@target": "node490737"
+}, 
+"edge490738": {
+"@source": "node490736", 
+"@target": "node490738"
+}
+}
+}, 
+"nodeById": {
+"node490722": {
+"@root": true
+}, 
+"node490723": {
+"@otu": "otu207213"
+}, 
+"node490724": {}, 
+"node490725": {}, 
+"node490726": {
+"@otu": "otu207214"
+}, 
+"node490727": {
+"@otu": "otu207215"
+}, 
+"node490728": {}, 
+"node490729": {
+"@otu": "otu207216"
+}, 
+"node490730": {}, 
+"node490731": {}, 
+"node490732": {}, 
+"node490733": {}, 
+"node490734": {
+"@otu": "otu207217"
+}, 
+"node490735": {
+"@otu": "otu207218"
+}, 
+"node490736": {}, 
+"node490737": {
+"@otu": "otu207219"
+}, 
+"node490738": {
+"@otu": "otu207220"
+}, 
+"node490739": {
+"@otu": "otu207221"
+}, 
+"node490740": {
+"@otu": "otu207222"
+}
+}
+}
+}
+}
+}
+}
+}

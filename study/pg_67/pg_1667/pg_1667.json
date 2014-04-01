@@ -1,0 +1,255 @@
+{
+"nexml": {
+"@generator": "Phylografter nexml-json exporter", 
+"@id": "study", 
+"@nexml2json": "1.2.1", 
+"@nexmljson": "http://purl.org/opentree/nexson", 
+"@version": "0.9", 
+"@xmlns": {
+"$": "http://www.nexml.org/2009", 
+"nex": "http://www.nexml.org/2009", 
+"ot": "http://purl.org/opentree-terms#", 
+"xsd": "http://www.w3.org/2001/XMLSchema#", 
+"xsi": "http://www.w3.org/2001/XMLSchema-instance"
+}, 
+"^ot:agents": {
+"agent": [
+{
+"@description": "validator of NexSON constraints as well as constraints that would allow a study to be imported into the Open Tree of Life's phylogenetic synthesis tools", 
+"@id": "peyotl-validator", 
+"@name": "validate_ot_nexson.py", 
+"@url": "https://github.com/OpenTreeOfLife/peyotl", 
+"@version": "0.0.3a", 
+"invocation": {
+"checksPerformed": [
+"MISSING_MANDATORY_KEY", 
+"MISSING_OPTIONAL_KEY", 
+"UNRECOGNIZED_KEY", 
+"MISSING_LIST_EXPECTED", 
+"DUPLICATING_SINGLETON_KEY", 
+"REFERENCED_ID_NOT_FOUND", 
+"REPEATED_ID", 
+"REPEATED_OTU", 
+"MULTIPLE_ROOT_NODES", 
+"NO_ROOT_NODE", 
+"MULTIPLE_EDGES_FOR_NODES", 
+"CYCLE_DETECTED", 
+"DISCONNECTED_GRAPH_DETECTED", 
+"INCORRECT_ROOT_NODE_LABEL", 
+"TIP_WITHOUT_OTU", 
+"TIP_WITHOUT_OTT_ID", 
+"MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
+"NON_MONOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
+"INVALID_PROPERTY_VALUE", 
+"PROPERTY_VALUE_NOT_USEFUL", 
+"UNRECOGNIZED_PROPERTY_VALUE", 
+"MULTIPLE_TREES", 
+"UNRECOGNIZED_TAG", 
+"CONFLICTING_PROPERTY_VALUES", 
+"NO_TREES", 
+"DEPRECATED_PROPERTY", 
+"UNPARSEABLE_META", 
+"UNREACHABLE_NODE", 
+"INCORRECT_VALUE_TYPE", 
+"MISSING_CRUCIAL_CONTENT"
+], 
+"commandLine": [
+"--embed", 
+"--agent-only", 
+"-e", 
+"../mig-phyelesystem-scratch/1667/validation.json", 
+"-o", 
+"../mig-phyelesystem-scratch/1667/final.json", 
+"../mig-phyelesystem-scratch/1667/v1.2.1-1667.json"
+], 
+"otherProperty": [
+{
+"name": "pythonVersion", 
+"value": "2.7.5+"
+}, 
+{
+"name": "pythonImplementation", 
+"value": "CPython"
+}
+]
+}
+}
+]
+}, 
+"^ot:curatorName": "Romina Gazis", 
+"^ot:dataDeposit": {
+"@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S320"
+}, 
+"^ot:focalClade": 939829, 
+"^ot:focalCladeOTTTaxonName": "Hypocrea lixii", 
+"^ot:otusElementOrder": [
+"otus1667"
+], 
+"^ot:studyId": "1667", 
+"^ot:studyPublication": {
+"@href": "http://dx.doi.org/10.2307/3761332"
+}, 
+"^ot:studyPublicationReference": "Gams W., & Meyer W. 1998. What exactly is Trichoderma harzianum?. Mycologia, 90(5): 904-915.", 
+"^ot:studyYear": 1998, 
+"^ot:treesElementOrder": [
+"trees1667"
+], 
+"otusById": {
+"otus1667": {
+"otuById": {
+"otu269914": {
+"^ot:originalLabel": "Trichoderma inhamatum CBS273.78", 
+"^ot:treebaseOTUId": "Tl111228"
+}, 
+"otu269915": {
+"^ot:originalLabel": "Trichoderma harzianum Th2 CBS689.94", 
+"^ot:ottId": 939829, 
+"^ot:ottTaxonName": "Hypocrea lixii", 
+"^ot:treebaseOTUId": "Tl33382"
+}, 
+"otu269916": {
+"^ot:originalLabel": "Trichoderma longibrachiatum CBS816.68", 
+"^ot:treebaseOTUId": "Tl33383"
+}, 
+"otu269917": {
+"^ot:originalLabel": "Trichoderma harzianum Th3 CBS693.94", 
+"^ot:ottId": 939829, 
+"^ot:ottTaxonName": "Hypocrea lixii", 
+"^ot:treebaseOTUId": "Tl33384"
+}, 
+"otu269918": {
+"^ot:originalLabel": "Trichoderma viride CBS240.63", 
+"^ot:treebaseOTUId": "Tl33385"
+}, 
+"otu269919": {
+"^ot:originalLabel": "Trichoderma harzianum CBS354.33", 
+"^ot:ottId": 939829, 
+"^ot:ottTaxonName": "Hypocrea lixii", 
+"^ot:treebaseOTUId": "Tl33386"
+}, 
+"otu269920": {
+"^ot:originalLabel": "Trichoderma harzianum Th1 CBS688.94", 
+"^ot:ottId": 939829, 
+"^ot:ottTaxonName": "Hypocrea lixii", 
+"^ot:treebaseOTUId": "Tl33387"
+}, 
+"otu269921": {
+"^ot:originalLabel": "Trichoderma harzianum CBS185.69", 
+"^ot:ottId": 939829, 
+"^ot:ottTaxonName": "Hypocrea lixii", 
+"^ot:treebaseOTUId": "Tl33388"
+}
+}
+}
+}, 
+"treesById": {
+"trees1667": {
+"@otus": "otus1667", 
+"^ot:treeElementOrder": [
+"tree3362"
+], 
+"treeById": {
+"tree3362": {
+"@xsi:type": "nex:FloatTree", 
+"^ot:curatedType": "MP, ITS1", 
+"^ot:inGroupClade": "node668749", 
+"^ot:rootNodeId": "node668747", 
+"edgeBySourceId": {
+"node668747": {
+"edge668748": {
+"@source": "node668747", 
+"@target": "node668748"
+}, 
+"edge668749": {
+"@source": "node668747", 
+"@target": "node668749"
+}
+}, 
+"node668749": {
+"edge668750": {
+"@source": "node668749", 
+"@target": "node668750"
+}, 
+"edge668756": {
+"@source": "node668749", 
+"@target": "node668756"
+}
+}, 
+"node668750": {
+"edge668751": {
+"@source": "node668750", 
+"@target": "node668751"
+}, 
+"edge668752": {
+"@source": "node668750", 
+"@target": "node668752"
+}
+}, 
+"node668752": {
+"edge668753": {
+"@source": "node668752", 
+"@target": "node668753"
+}, 
+"edge668754": {
+"@source": "node668752", 
+"@target": "node668754"
+}, 
+"edge668755": {
+"@source": "node668752", 
+"@target": "node668755"
+}
+}, 
+"node668756": {
+"edge668757": {
+"@source": "node668756", 
+"@target": "node668757"
+}, 
+"edge668758": {
+"@source": "node668756", 
+"@target": "node668758"
+}, 
+"edge668759": {
+"@source": "node668756", 
+"@target": "node668759"
+}
+}
+}, 
+"nodeById": {
+"node668747": {
+"@root": true
+}, 
+"node668748": {
+"@otu": "otu269916"
+}, 
+"node668749": {}, 
+"node668750": {}, 
+"node668751": {
+"@otu": "otu269915"
+}, 
+"node668752": {}, 
+"node668753": {
+"@otu": "otu269914"
+}, 
+"node668754": {
+"@otu": "otu269919"
+}, 
+"node668755": {
+"@otu": "otu269920"
+}, 
+"node668756": {}, 
+"node668757": {
+"@otu": "otu269918"
+}, 
+"node668758": {
+"@otu": "otu269921"
+}, 
+"node668759": {
+"@otu": "otu269917"
+}
+}
+}
+}
+}
+}
+}
+}

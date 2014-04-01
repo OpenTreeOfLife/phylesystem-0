@@ -1,0 +1,271 @@
+{
+"nexml": {
+"@generator": "Phylografter nexml-json exporter", 
+"@id": "study", 
+"@nexml2json": "1.2.1", 
+"@nexmljson": "http://purl.org/opentree/nexson", 
+"@version": "0.9", 
+"@xmlns": {
+"$": "http://www.nexml.org/2009", 
+"nex": "http://www.nexml.org/2009", 
+"ot": "http://purl.org/opentree-terms#", 
+"xsd": "http://www.w3.org/2001/XMLSchema#", 
+"xsi": "http://www.w3.org/2001/XMLSchema-instance"
+}, 
+"^ot:agents": {
+"agent": [
+{
+"@description": "validator of NexSON constraints as well as constraints that would allow a study to be imported into the Open Tree of Life's phylogenetic synthesis tools", 
+"@id": "peyotl-validator", 
+"@name": "validate_ot_nexson.py", 
+"@url": "https://github.com/OpenTreeOfLife/peyotl", 
+"@version": "0.0.3a", 
+"invocation": {
+"checksPerformed": [
+"MISSING_MANDATORY_KEY", 
+"MISSING_OPTIONAL_KEY", 
+"UNRECOGNIZED_KEY", 
+"MISSING_LIST_EXPECTED", 
+"DUPLICATING_SINGLETON_KEY", 
+"REFERENCED_ID_NOT_FOUND", 
+"REPEATED_ID", 
+"REPEATED_OTU", 
+"MULTIPLE_ROOT_NODES", 
+"NO_ROOT_NODE", 
+"MULTIPLE_EDGES_FOR_NODES", 
+"CYCLE_DETECTED", 
+"DISCONNECTED_GRAPH_DETECTED", 
+"INCORRECT_ROOT_NODE_LABEL", 
+"TIP_WITHOUT_OTU", 
+"TIP_WITHOUT_OTT_ID", 
+"MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
+"NON_MONOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
+"INVALID_PROPERTY_VALUE", 
+"PROPERTY_VALUE_NOT_USEFUL", 
+"UNRECOGNIZED_PROPERTY_VALUE", 
+"MULTIPLE_TREES", 
+"UNRECOGNIZED_TAG", 
+"CONFLICTING_PROPERTY_VALUES", 
+"NO_TREES", 
+"DEPRECATED_PROPERTY", 
+"UNPARSEABLE_META", 
+"UNREACHABLE_NODE", 
+"INCORRECT_VALUE_TYPE", 
+"MISSING_CRUCIAL_CONTENT"
+], 
+"commandLine": [
+"--embed", 
+"--agent-only", 
+"-e", 
+"../mig-phyelesystem-scratch/1145/validation.json", 
+"-o", 
+"../mig-phyelesystem-scratch/1145/final.json", 
+"../mig-phyelesystem-scratch/1145/v1.2.1-1145.json"
+], 
+"otherProperty": [
+{
+"name": "pythonVersion", 
+"value": "2.7.5+"
+}, 
+{
+"name": "pythonImplementation", 
+"value": "CPython"
+}
+]
+}
+}
+]
+}, 
+"^ot:curatorName": "Romina Gazis", 
+"^ot:focalClade": 697840, 
+"^ot:focalCladeOTTTaxonName": "Lignosus", 
+"^ot:otusElementOrder": [
+"otus1145"
+], 
+"^ot:studyId": "1145", 
+"^ot:studyPublication": {
+"@href": "http://dx.doi.org/10.1007/s11557-010-0697-y"
+}, 
+"^ot:studyPublicationReference": "Cui, Bao-Kai, Li-Ping Tang, and Yu-Cheng Dai. \"Morphological and molecular evidences for a new species of Lignosus (Polyporales, Basidiomycota) from tropical China.\" Mycological Progress 10.3 (2011): 267-271.", 
+"^ot:studyYear": 2011, 
+"^ot:treesElementOrder": [
+"trees1145"
+], 
+"otusById": {
+"otus1145": {
+"otuById": {
+"otu227311": {
+"^ot:originalLabel": "out FJ627256 Daedaleopsis sine", 
+"^ot:ottId": 802419, 
+"^ot:ottTaxonName": "Daedaleopsis sinensis"
+}, 
+"otu227312": {
+"^ot:originalLabel": "out FJ81017 Daedaleopsis confr", 
+"^ot:ottId": 1077893, 
+"^ot:ottTaxonName": "Daedaleopsis confragosa"
+}, 
+"otu227313": {
+"^ot:originalLabel": "Lignosus hainanensis fruitbody", 
+"^ot:ottId": 697840, 
+"^ot:ottTaxonName": "Lignosus"
+}, 
+"otu227314": {
+"^ot:originalLabel": "Lignosus hannanensis Sclerotiu", 
+"^ot:ottId": 697840, 
+"^ot:ottTaxonName": "Lignosus"
+}, 
+"otu227315": {
+"^ot:originalLabel": "FJ899143 Lignosus rhinocerus M", 
+"^ot:ottId": 1036932, 
+"^ot:ottTaxonName": "Lignosus rhinocerus"
+}, 
+"otu227316": {
+"^ot:originalLabel": "FJ380871 Lignosus rhinocerus J", 
+"^ot:ottId": 1036932, 
+"^ot:ottTaxonName": "Lignosus rhinocerus"
+}, 
+"otu227317": {
+"^ot:originalLabel": "GU001675 Lignosus sacer Kenya", 
+"^ot:ottId": 642300, 
+"^ot:ottTaxonName": "Lignosus sacer"
+}, 
+"otu227318": {
+"^ot:originalLabel": "GU001674 Lignosus sacer Zimbab", 
+"^ot:ottId": 642300, 
+"^ot:ottTaxonName": "Lignosus sacer"
+}
+}
+}
+}, 
+"treesById": {
+"trees1145": {
+"@otus": "otus1145", 
+"^ot:treeElementOrder": [
+"tree2325"
+], 
+"treeById": {
+"tree2325": {
+"@xsi:type": "nex:FloatTree", 
+"^ot:curatedType": "MP, ITS", 
+"^ot:inGroupClade": "node552158", 
+"^ot:rootNodeId": "node552155", 
+"^ot:tag": "ITS", 
+"edgeBySourceId": {
+"node552155": {
+"edge552156": {
+"@length": 0.030723, 
+"@source": "node552155", 
+"@target": "node552156"
+}, 
+"edge552157": {
+"@length": 0.00245, 
+"@source": "node552155", 
+"@target": "node552157"
+}, 
+"edge552158": {
+"@length": 0.122016, 
+"@source": "node552155", 
+"@target": "node552158"
+}
+}, 
+"node552158": {
+"edge552159": {
+"@length": 0.015342, 
+"@source": "node552158", 
+"@target": "node552159"
+}, 
+"edge552166": {
+"@length": 0.025376, 
+"@source": "node552158", 
+"@target": "node552166"
+}
+}, 
+"node552159": {
+"edge552160": {
+"@length": 0.034888, 
+"@source": "node552159", 
+"@target": "node552160"
+}, 
+"edge552163": {
+"@length": 0.033772, 
+"@source": "node552159", 
+"@target": "node552163"
+}
+}, 
+"node552160": {
+"edge552161": {
+"@length": 0.0018, 
+"@source": "node552160", 
+"@target": "node552161"
+}, 
+"edge552162": {
+"@length": 0.001551, 
+"@source": "node552160", 
+"@target": "node552162"
+}
+}, 
+"node552163": {
+"edge552164": {
+"@length": 0.001433, 
+"@source": "node552163", 
+"@target": "node552164"
+}, 
+"edge552165": {
+"@length": 0.001448, 
+"@source": "node552163", 
+"@target": "node552165"
+}
+}, 
+"node552166": {
+"edge552167": {
+"@length": 0.001897, 
+"@source": "node552166", 
+"@target": "node552167"
+}, 
+"edge552168": {
+"@length": 0.002891, 
+"@source": "node552166", 
+"@target": "node552168"
+}
+}
+}, 
+"nodeById": {
+"node552155": {
+"@root": true
+}, 
+"node552156": {
+"@otu": "otu227311"
+}, 
+"node552157": {
+"@otu": "otu227312"
+}, 
+"node552158": {}, 
+"node552159": {}, 
+"node552160": {}, 
+"node552161": {
+"@otu": "otu227313"
+}, 
+"node552162": {
+"@otu": "otu227314"
+}, 
+"node552163": {}, 
+"node552164": {
+"@otu": "otu227315"
+}, 
+"node552165": {
+"@otu": "otu227316"
+}, 
+"node552166": {}, 
+"node552167": {
+"@otu": "otu227317"
+}, 
+"node552168": {
+"@otu": "otu227318"
+}
+}
+}
+}
+}
+}
+}
+}

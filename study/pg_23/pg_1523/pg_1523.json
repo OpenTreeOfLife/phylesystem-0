@@ -1,0 +1,201 @@
+{
+"nexml": {
+"@generator": "Phylografter nexml-json exporter", 
+"@id": "study", 
+"@nexml2json": "1.2.1", 
+"@nexmljson": "http://purl.org/opentree/nexson", 
+"@version": "0.9", 
+"@xmlns": {
+"$": "http://www.nexml.org/2009", 
+"nex": "http://www.nexml.org/2009", 
+"ot": "http://purl.org/opentree-terms#", 
+"xsd": "http://www.w3.org/2001/XMLSchema#", 
+"xsi": "http://www.w3.org/2001/XMLSchema-instance"
+}, 
+"^ot:agents": {
+"agent": [
+{
+"@description": "validator of NexSON constraints as well as constraints that would allow a study to be imported into the Open Tree of Life's phylogenetic synthesis tools", 
+"@id": "peyotl-validator", 
+"@name": "validate_ot_nexson.py", 
+"@url": "https://github.com/OpenTreeOfLife/peyotl", 
+"@version": "0.0.3a", 
+"invocation": {
+"checksPerformed": [
+"MISSING_MANDATORY_KEY", 
+"MISSING_OPTIONAL_KEY", 
+"UNRECOGNIZED_KEY", 
+"MISSING_LIST_EXPECTED", 
+"DUPLICATING_SINGLETON_KEY", 
+"REFERENCED_ID_NOT_FOUND", 
+"REPEATED_ID", 
+"REPEATED_OTU", 
+"MULTIPLE_ROOT_NODES", 
+"NO_ROOT_NODE", 
+"MULTIPLE_EDGES_FOR_NODES", 
+"CYCLE_DETECTED", 
+"DISCONNECTED_GRAPH_DETECTED", 
+"INCORRECT_ROOT_NODE_LABEL", 
+"TIP_WITHOUT_OTU", 
+"TIP_WITHOUT_OTT_ID", 
+"MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
+"NON_MONOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
+"INVALID_PROPERTY_VALUE", 
+"PROPERTY_VALUE_NOT_USEFUL", 
+"UNRECOGNIZED_PROPERTY_VALUE", 
+"MULTIPLE_TREES", 
+"UNRECOGNIZED_TAG", 
+"CONFLICTING_PROPERTY_VALUES", 
+"NO_TREES", 
+"DEPRECATED_PROPERTY", 
+"UNPARSEABLE_META", 
+"UNREACHABLE_NODE", 
+"INCORRECT_VALUE_TYPE", 
+"MISSING_CRUCIAL_CONTENT"
+], 
+"commandLine": [
+"--embed", 
+"--agent-only", 
+"-e", 
+"../mig-phyelesystem-scratch/1523/validation.json", 
+"-o", 
+"../mig-phyelesystem-scratch/1523/final.json", 
+"../mig-phyelesystem-scratch/1523/v1.2.1-1523.json"
+], 
+"otherProperty": [
+{
+"name": "pythonVersion", 
+"value": "2.7.5+"
+}, 
+{
+"name": "pythonImplementation", 
+"value": "CPython"
+}
+]
+}
+}
+]
+}, 
+"^ot:curatorName": "Jiabin Deng", 
+"^ot:dataDeposit": {
+"@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S170"
+}, 
+"^ot:focalClade": 40969, 
+"^ot:focalCladeOTTTaxonName": "Heppiella", 
+"^ot:otusElementOrder": [
+"otus1523"
+], 
+"^ot:studyId": "1523", 
+"^ot:studyPublication": {
+"@href": "http://dx.doi.org/10.2307/2419166"
+}, 
+"^ot:studyPublicationReference": "Kvist L. 1990. Revision of Heppiella (Gesneriaceae). Systematic Botany, 15: 720-735", 
+"^ot:studyYear": 1990, 
+"^ot:treesElementOrder": [
+"trees1523"
+], 
+"otusById": {
+"otus1523": {
+"otuById": {
+"otu256874": {
+"^ot:originalLabel": "Heppiella ulmifolia", 
+"^ot:ottId": 40967, 
+"^ot:ottTaxonName": "Heppiella ulmifolia", 
+"^ot:treebaseOTUId": "Tl108100"
+}, 
+"otu256875": {
+"^ot:originalLabel": "Heppiella verticillata", 
+"^ot:ottId": 725253, 
+"^ot:ottTaxonName": "Heppiella verticillata", 
+"^ot:treebaseOTUId": "Tl108102"
+}, 
+"otu256876": {
+"^ot:originalLabel": "Heppiella viscida", 
+"^ot:ottId": 324015, 
+"^ot:ottTaxonName": "Heppiella viscida", 
+"^ot:treebaseOTUId": "Tl108104"
+}, 
+"otu256877": {
+"^ot:originalLabel": "Heppiella repens", 
+"^ot:ottId": 3885266, 
+"^ot:ottTaxonName": "Heppiella repens", 
+"^ot:treebaseOTUId": "Tl20987"
+}, 
+"otu256878": {
+"^ot:originalLabel": "Gloxinia", 
+"^ot:ottId": 477486, 
+"^ot:ottTaxonName": "Gloxinia", 
+"^ot:treebaseOTUId": "Tl20990"
+}
+}
+}
+}, 
+"treesById": {
+"trees1523": {
+"@otus": "otus1523", 
+"^ot:treeElementOrder": [
+"tree3045"
+], 
+"treeById": {
+"tree3045": {
+"@xsi:type": "nex:FloatTree", 
+"^ot:curatedType": "Fig. 5", 
+"^ot:inGroupClade": "node629294", 
+"^ot:rootNodeId": "node629292", 
+"edgeBySourceId": {
+"node629292": {
+"edge629293": {
+"@source": "node629292", 
+"@target": "node629293"
+}, 
+"edge629294": {
+"@source": "node629292", 
+"@target": "node629294"
+}
+}, 
+"node629294": {
+"edge629295": {
+"@source": "node629294", 
+"@target": "node629295"
+}, 
+"edge629296": {
+"@source": "node629294", 
+"@target": "node629296"
+}, 
+"edge629297": {
+"@source": "node629294", 
+"@target": "node629297"
+}, 
+"edge629298": {
+"@source": "node629294", 
+"@target": "node629298"
+}
+}
+}, 
+"nodeById": {
+"node629292": {
+"@root": true
+}, 
+"node629293": {
+"@otu": "otu256878"
+}, 
+"node629294": {}, 
+"node629295": {
+"@otu": "otu256877"
+}, 
+"node629296": {
+"@otu": "otu256875"
+}, 
+"node629297": {
+"@otu": "otu256876"
+}, 
+"node629298": {
+"@otu": "otu256874"
+}
+}
+}
+}
+}
+}
+}
+}

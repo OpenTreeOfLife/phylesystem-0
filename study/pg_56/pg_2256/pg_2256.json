@@ -1,0 +1,214 @@
+{
+"nexml": {
+"@generator": "Phylografter nexml-json exporter", 
+"@id": "study", 
+"@nexml2json": "1.2.1", 
+"@nexmljson": "http://purl.org/opentree/nexson", 
+"@version": "0.9", 
+"@xmlns": {
+"$": "http://www.nexml.org/2009", 
+"nex": "http://www.nexml.org/2009", 
+"ot": "http://purl.org/opentree-terms#", 
+"xsd": "http://www.w3.org/2001/XMLSchema#", 
+"xsi": "http://www.w3.org/2001/XMLSchema-instance"
+}, 
+"^ot:agents": {
+"agent": [
+{
+"@description": "validator of NexSON constraints as well as constraints that would allow a study to be imported into the Open Tree of Life's phylogenetic synthesis tools", 
+"@id": "peyotl-validator", 
+"@name": "validate_ot_nexson.py", 
+"@url": "https://github.com/OpenTreeOfLife/peyotl", 
+"@version": "0.0.3a", 
+"invocation": {
+"checksPerformed": [
+"MISSING_MANDATORY_KEY", 
+"MISSING_OPTIONAL_KEY", 
+"UNRECOGNIZED_KEY", 
+"MISSING_LIST_EXPECTED", 
+"DUPLICATING_SINGLETON_KEY", 
+"REFERENCED_ID_NOT_FOUND", 
+"REPEATED_ID", 
+"REPEATED_OTU", 
+"MULTIPLE_ROOT_NODES", 
+"NO_ROOT_NODE", 
+"MULTIPLE_EDGES_FOR_NODES", 
+"CYCLE_DETECTED", 
+"DISCONNECTED_GRAPH_DETECTED", 
+"INCORRECT_ROOT_NODE_LABEL", 
+"TIP_WITHOUT_OTU", 
+"TIP_WITHOUT_OTT_ID", 
+"MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
+"NON_MONOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
+"INVALID_PROPERTY_VALUE", 
+"PROPERTY_VALUE_NOT_USEFUL", 
+"UNRECOGNIZED_PROPERTY_VALUE", 
+"MULTIPLE_TREES", 
+"UNRECOGNIZED_TAG", 
+"CONFLICTING_PROPERTY_VALUES", 
+"NO_TREES", 
+"DEPRECATED_PROPERTY", 
+"UNPARSEABLE_META", 
+"UNREACHABLE_NODE", 
+"INCORRECT_VALUE_TYPE", 
+"MISSING_CRUCIAL_CONTENT"
+], 
+"commandLine": [
+"--embed", 
+"--agent-only", 
+"-e", 
+"../mig-phyelesystem-scratch/2256/validation.json", 
+"-o", 
+"../mig-phyelesystem-scratch/2256/final.json", 
+"../mig-phyelesystem-scratch/2256/v1.2.1-2256.json"
+], 
+"otherProperty": [
+{
+"name": "pythonVersion", 
+"value": "2.7.5+"
+}, 
+{
+"name": "pythonImplementation", 
+"value": "CPython"
+}
+]
+}
+}
+]
+}, 
+"^ot:curatorName": "Romina Gazis", 
+"^ot:dataDeposit": {
+"@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S282"
+}, 
+"^ot:focalClade": 349941, 
+"^ot:focalCladeOTTTaxonName": "Radiomycetaceae", 
+"^ot:otusElementOrder": [
+"otus2256"
+], 
+"^ot:studyId": "2256", 
+"^ot:studyPublication": {
+"@href": "http://dx.doi.org/10.2307/3760429"
+}, 
+"^ot:studyPublicationReference": "Benny G., & Benjamin R. 1991. The Radiomycetaceae (Mucorales; Zygomycetes).III.A new species of Radiomyces, and cladistic analysis and taxonomy of the family; with a discussion of the evolutionary ordinal relationships in Zygomycotina. Mycologia, 83: 713-735.", 
+"^ot:studyYear": 1991, 
+"^ot:treesElementOrder": [
+"trees2256"
+], 
+"otusById": {
+"otus2256": {
+"otuById": {
+"otu325409": {
+"^ot:originalLabel": "Ellisomyces anomalus", 
+"^ot:ottId": 28319, 
+"^ot:ottTaxonName": "Ellisomyces anomalus", 
+"^ot:treebaseOTUId": "Tl110282"
+}, 
+"otu325410": {
+"^ot:originalLabel": "Radiomyces spectabilis", 
+"^ot:ottId": 861304, 
+"^ot:ottTaxonName": "Radiomyces spectabilis", 
+"^ot:treebaseOTUId": "Tl110283"
+}, 
+"otu325411": {
+"^ot:originalLabel": "Hesseltinella vesiculosa", 
+"^ot:ottId": 549501, 
+"^ot:ottTaxonName": "Hesseltinella vesiculosa", 
+"^ot:treebaseOTUId": "Tl110284"
+}, 
+"otu325412": {
+"^ot:originalLabel": "Radiomyces mexicana", 
+"^ot:ottId": 3686050, 
+"^ot:ottTaxonName": "Radiomyces mexicanus", 
+"^ot:treebaseOTUId": "Tl61215"
+}, 
+"otu325413": {
+"^ot:originalLabel": "Radiomyces embreei", 
+"^ot:ottId": 861290, 
+"^ot:ottTaxonName": "Radiomyces embreei", 
+"^ot:treebaseOTUId": "Tl61216"
+}
+}
+}
+}, 
+"treesById": {
+"trees2256": {
+"@otus": "otus2256", 
+"^ot:treeElementOrder": [
+"tree4780"
+], 
+"treeById": {
+"tree4780": {
+"@xsi:type": "nex:FloatTree", 
+"^ot:curatedType": "morphology", 
+"^ot:rootNodeId": "node842085", 
+"edgeBySourceId": {
+"node842085": {
+"edge842086": {
+"@source": "node842085", 
+"@target": "node842086"
+}, 
+"edge842087": {
+"@source": "node842085", 
+"@target": "node842087"
+}
+}, 
+"node842087": {
+"edge842088": {
+"@source": "node842087", 
+"@target": "node842088"
+}, 
+"edge842089": {
+"@source": "node842087", 
+"@target": "node842089"
+}
+}, 
+"node842089": {
+"edge842090": {
+"@source": "node842089", 
+"@target": "node842090"
+}, 
+"edge842091": {
+"@source": "node842089", 
+"@target": "node842091"
+}
+}, 
+"node842091": {
+"edge842092": {
+"@source": "node842091", 
+"@target": "node842092"
+}, 
+"edge842093": {
+"@source": "node842091", 
+"@target": "node842093"
+}
+}
+}, 
+"nodeById": {
+"node842085": {
+"@root": true
+}, 
+"node842086": {
+"@otu": "otu325409"
+}, 
+"node842087": {}, 
+"node842088": {
+"@otu": "otu325411"
+}, 
+"node842089": {}, 
+"node842090": {
+"@otu": "otu325410"
+}, 
+"node842091": {}, 
+"node842092": {
+"@otu": "otu325412"
+}, 
+"node842093": {
+"@otu": "otu325413"
+}
+}
+}
+}
+}
+}
+}
+}

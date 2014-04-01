@@ -1,0 +1,256 @@
+{
+"nexml": {
+"@generator": "Phylografter nexml-json exporter", 
+"@id": "study", 
+"@nexml2json": "1.2.1", 
+"@nexmljson": "http://purl.org/opentree/nexson", 
+"@version": "0.9", 
+"@xmlns": {
+"$": "http://www.nexml.org/2009", 
+"nex": "http://www.nexml.org/2009", 
+"ot": "http://purl.org/opentree-terms#", 
+"xsd": "http://www.w3.org/2001/XMLSchema#", 
+"xsi": "http://www.w3.org/2001/XMLSchema-instance"
+}, 
+"^ot:agents": {
+"agent": [
+{
+"@description": "validator of NexSON constraints as well as constraints that would allow a study to be imported into the Open Tree of Life's phylogenetic synthesis tools", 
+"@id": "peyotl-validator", 
+"@name": "validate_ot_nexson.py", 
+"@url": "https://github.com/OpenTreeOfLife/peyotl", 
+"@version": "0.0.3a", 
+"invocation": {
+"checksPerformed": [
+"MISSING_MANDATORY_KEY", 
+"MISSING_OPTIONAL_KEY", 
+"UNRECOGNIZED_KEY", 
+"MISSING_LIST_EXPECTED", 
+"DUPLICATING_SINGLETON_KEY", 
+"REFERENCED_ID_NOT_FOUND", 
+"REPEATED_ID", 
+"REPEATED_OTU", 
+"MULTIPLE_ROOT_NODES", 
+"NO_ROOT_NODE", 
+"MULTIPLE_EDGES_FOR_NODES", 
+"CYCLE_DETECTED", 
+"DISCONNECTED_GRAPH_DETECTED", 
+"INCORRECT_ROOT_NODE_LABEL", 
+"TIP_WITHOUT_OTU", 
+"TIP_WITHOUT_OTT_ID", 
+"MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
+"NON_MONOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
+"INVALID_PROPERTY_VALUE", 
+"PROPERTY_VALUE_NOT_USEFUL", 
+"UNRECOGNIZED_PROPERTY_VALUE", 
+"MULTIPLE_TREES", 
+"UNRECOGNIZED_TAG", 
+"CONFLICTING_PROPERTY_VALUES", 
+"NO_TREES", 
+"DEPRECATED_PROPERTY", 
+"UNPARSEABLE_META", 
+"UNREACHABLE_NODE", 
+"INCORRECT_VALUE_TYPE", 
+"MISSING_CRUCIAL_CONTENT"
+], 
+"commandLine": [
+"--embed", 
+"--agent-only", 
+"-e", 
+"../mig-phyelesystem-scratch/2100/validation.json", 
+"-o", 
+"../mig-phyelesystem-scratch/2100/final.json", 
+"../mig-phyelesystem-scratch/2100/v1.2.1-2100.json"
+], 
+"otherProperty": [
+{
+"name": "pythonVersion", 
+"value": "2.7.5+"
+}, 
+{
+"name": "pythonImplementation", 
+"value": "CPython"
+}
+]
+}
+}
+]
+}, 
+"^ot:curatorName": "Chris Owen", 
+"^ot:dataDeposit": {
+"@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S1446"
+}, 
+"^ot:focalClade": 54936, 
+"^ot:focalCladeOTTTaxonName": "Bunodera", 
+"^ot:otusElementOrder": [
+"otus2100"
+], 
+"^ot:studyId": "2100", 
+"^ot:studyPublication": {
+"@href": "http://dx.doi.org/10.1139/Z05"
+}, 
+"^ot:studyPublicationReference": "Choudhury A., & Leon-regagnon V. 2005. Molecular phylogenetics and biogeography of Bunodera spp. (Trematoda: Allocreadiidae), parasites of percid and gasterosteid fishes. Canadian Journal of Zoology, null.", 
+"^ot:studyYear": 2005, 
+"^ot:treesElementOrder": [
+"trees2100"
+], 
+"otusById": {
+"otus2100": {
+"otuById": {
+"otu312177": {
+"^ot:originalLabel": "Crepidostomum cooperi", 
+"^ot:ottId": 54937, 
+"^ot:ottTaxonName": "Crepidostomum cooperi", 
+"^ot:treebaseOTUId": "Tl24807"
+}, 
+"otu312178": {
+"^ot:originalLabel": "Allocreadium lobatum", 
+"^ot:ottId": 54939, 
+"^ot:ottTaxonName": "Allocreadium lobatum", 
+"^ot:treebaseOTUId": "Tl24808"
+}, 
+"otu312179": {
+"^ot:originalLabel": "Bunodera eucaliae", 
+"^ot:ottId": 54935, 
+"^ot:ottTaxonName": "Bunodera eucaliae", 
+"^ot:treebaseOTUId": "Tl24809"
+}, 
+"otu312180": {
+"^ot:originalLabel": "Bunodera luciopercae", 
+"^ot:ottId": 54932, 
+"^ot:ottTaxonName": "Bunodera luciopercae", 
+"^ot:treebaseOTUId": "Tl24810"
+}, 
+"otu312181": {
+"^ot:originalLabel": "Bunodera sacculata", 
+"^ot:ottId": 54941, 
+"^ot:ottTaxonName": "Bunodera sacculata", 
+"^ot:treebaseOTUId": "Tl24811"
+}, 
+"otu312182": {
+"^ot:originalLabel": "Bunodera inconstans", 
+"^ot:ottId": 54934, 
+"^ot:ottTaxonName": "Bunodera inconstans", 
+"^ot:treebaseOTUId": "Tl24812"
+}, 
+"otu312183": {
+"^ot:originalLabel": "Bunodera mediovitellata", 
+"^ot:ottId": 54942, 
+"^ot:ottTaxonName": "Bunodera mediovitellata", 
+"^ot:treebaseOTUId": "Tl24813"
+}
+}
+}
+}, 
+"treesById": {
+"trees2100": {
+"@otus": "otus2100", 
+"^ot:treeElementOrder": [
+"tree4347"
+], 
+"treeById": {
+"tree4347": {
+"@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthMode": "ot:changesCount", 
+"^ot:curatedType": "Tree 1 MP", 
+"^ot:inGroupClade": "node794741", 
+"^ot:rootNodeId": "node794737", 
+"edgeBySourceId": {
+"node794737": {
+"edge794738": {
+"@source": "node794737", 
+"@target": "node794738"
+}, 
+"edge794739": {
+"@source": "node794737", 
+"@target": "node794739"
+}
+}, 
+"node794739": {
+"edge794740": {
+"@source": "node794739", 
+"@target": "node794740"
+}, 
+"edge794741": {
+"@source": "node794739", 
+"@target": "node794741"
+}
+}, 
+"node794741": {
+"edge794742": {
+"@source": "node794741", 
+"@target": "node794742"
+}, 
+"edge794749": {
+"@source": "node794741", 
+"@target": "node794749"
+}
+}, 
+"node794742": {
+"edge794743": {
+"@source": "node794742", 
+"@target": "node794743"
+}, 
+"edge794748": {
+"@source": "node794742", 
+"@target": "node794748"
+}
+}, 
+"node794743": {
+"edge794744": {
+"@source": "node794743", 
+"@target": "node794744"
+}, 
+"edge794747": {
+"@source": "node794743", 
+"@target": "node794747"
+}
+}, 
+"node794744": {
+"edge794745": {
+"@source": "node794744", 
+"@target": "node794745"
+}, 
+"edge794746": {
+"@source": "node794744", 
+"@target": "node794746"
+}
+}
+}, 
+"nodeById": {
+"node794737": {
+"@root": true
+}, 
+"node794738": {
+"@otu": "otu312178"
+}, 
+"node794739": {}, 
+"node794740": {
+"@otu": "otu312177"
+}, 
+"node794741": {}, 
+"node794742": {}, 
+"node794743": {}, 
+"node794744": {}, 
+"node794745": {
+"@otu": "otu312179"
+}, 
+"node794746": {
+"@otu": "otu312182"
+}, 
+"node794747": {
+"@otu": "otu312183"
+}, 
+"node794748": {
+"@otu": "otu312181"
+}, 
+"node794749": {
+"@otu": "otu312180"
+}
+}
+}
+}
+}
+}
+}
+}

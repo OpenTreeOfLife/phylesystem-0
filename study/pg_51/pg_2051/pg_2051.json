@@ -1,0 +1,263 @@
+{
+"nexml": {
+"@generator": "Phylografter nexml-json exporter", 
+"@id": "study", 
+"@nexml2json": "1.2.1", 
+"@nexmljson": "http://purl.org/opentree/nexson", 
+"@version": "0.9", 
+"@xmlns": {
+"$": "http://www.nexml.org/2009", 
+"nex": "http://www.nexml.org/2009", 
+"ot": "http://purl.org/opentree-terms#", 
+"xsd": "http://www.w3.org/2001/XMLSchema#", 
+"xsi": "http://www.w3.org/2001/XMLSchema-instance"
+}, 
+"^ot:agents": {
+"agent": [
+{
+"@description": "validator of NexSON constraints as well as constraints that would allow a study to be imported into the Open Tree of Life's phylogenetic synthesis tools", 
+"@id": "peyotl-validator", 
+"@name": "validate_ot_nexson.py", 
+"@url": "https://github.com/OpenTreeOfLife/peyotl", 
+"@version": "0.0.3a", 
+"invocation": {
+"checksPerformed": [
+"MISSING_MANDATORY_KEY", 
+"MISSING_OPTIONAL_KEY", 
+"UNRECOGNIZED_KEY", 
+"MISSING_LIST_EXPECTED", 
+"DUPLICATING_SINGLETON_KEY", 
+"REFERENCED_ID_NOT_FOUND", 
+"REPEATED_ID", 
+"REPEATED_OTU", 
+"MULTIPLE_ROOT_NODES", 
+"NO_ROOT_NODE", 
+"MULTIPLE_EDGES_FOR_NODES", 
+"CYCLE_DETECTED", 
+"DISCONNECTED_GRAPH_DETECTED", 
+"INCORRECT_ROOT_NODE_LABEL", 
+"TIP_WITHOUT_OTU", 
+"TIP_WITHOUT_OTT_ID", 
+"MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
+"NON_MONOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
+"INVALID_PROPERTY_VALUE", 
+"PROPERTY_VALUE_NOT_USEFUL", 
+"UNRECOGNIZED_PROPERTY_VALUE", 
+"MULTIPLE_TREES", 
+"UNRECOGNIZED_TAG", 
+"CONFLICTING_PROPERTY_VALUES", 
+"NO_TREES", 
+"DEPRECATED_PROPERTY", 
+"UNPARSEABLE_META", 
+"UNREACHABLE_NODE", 
+"INCORRECT_VALUE_TYPE", 
+"MISSING_CRUCIAL_CONTENT"
+], 
+"commandLine": [
+"--embed", 
+"--agent-only", 
+"-e", 
+"../mig-phyelesystem-scratch/2051/validation.json", 
+"-o", 
+"../mig-phyelesystem-scratch/2051/final.json", 
+"../mig-phyelesystem-scratch/2051/v1.2.1-2051.json"
+], 
+"otherProperty": [
+{
+"name": "pythonVersion", 
+"value": "2.7.5+"
+}, 
+{
+"name": "pythonImplementation", 
+"value": "CPython"
+}
+]
+}
+}
+]
+}, 
+"^ot:curatorName": "bryan drew", 
+"^ot:dataDeposit": {
+"@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S12676"
+}, 
+"^ot:otusElementOrder": [
+"otus2051"
+], 
+"^ot:studyId": "2051", 
+"^ot:studyPublicationReference": "le Roux, M. M., & van Wyk, B. E. (2013). A Taxonomic Revision of Amphitrichae, a New Section of Crotalaria (Fabaceae). Systematic Botany, 38(3), 638-652.", 
+"^ot:studyYear": 2013, 
+"^ot:treesElementOrder": [
+"trees2051"
+], 
+"otusById": {
+"otus2051": {
+"otuById": {
+"otu309015": {
+"^ot:originalLabel": "Crotalaria pearsonii", 
+"^ot:ottId": 3927732, 
+"^ot:ottTaxonName": "Crotalaria pearsonii", 
+"^ot:treebaseOTUId": "Tl921467"
+}, 
+"otu309016": {
+"^ot:originalLabel": "Crotalaria kolbergii", 
+"^ot:treebaseOTUId": "Tl921468"
+}, 
+"otu309017": {
+"^ot:originalLabel": "Crotalaria meyeriana", 
+"^ot:ottId": 425413, 
+"^ot:ottTaxonName": "Crotalaria meyerana", 
+"^ot:treebaseOTUId": "Tl921469"
+}, 
+"otu309018": {
+"^ot:originalLabel": "Crotalaria colorata", 
+"^ot:ottId": 697894, 
+"^ot:ottTaxonName": "Crotalaria colorata", 
+"^ot:treebaseOTUId": "Tl921470"
+}, 
+"otu309019": {
+"^ot:originalLabel": "Crotalaria monophylla", 
+"^ot:treebaseOTUId": "Tl921471"
+}, 
+"otu309020": {
+"^ot:originalLabel": "Crotalaria giessii", 
+"^ot:treebaseOTUId": "Tl921472"
+}, 
+"otu309021": {
+"^ot:originalLabel": "Crotalaria excisa", 
+"^ot:ottId": 1093704, 
+"^ot:ottTaxonName": "Crotalaria excisa", 
+"^ot:treebaseOTUId": "Tl921473"
+}, 
+"otu309022": {
+"^ot:originalLabel": "Crotalaria humilis", 
+"^ot:ottId": 605124, 
+"^ot:ottTaxonName": "Crotalaria humilis", 
+"^ot:treebaseOTUId": "Tl921474"
+}
+}
+}
+}, 
+"treesById": {
+"trees2051": {
+"@otus": "otus2051", 
+"^ot:treeElementOrder": [
+"tree4226"
+], 
+"treeById": {
+"tree4226": {
+"@xsi:type": "nex:FloatTree", 
+"^ot:curatedType": "Strict", 
+"^ot:rootNodeId": "node785267", 
+"edgeBySourceId": {
+"node785267": {
+"edge785268": {
+"@source": "node785267", 
+"@target": "node785268"
+}, 
+"edge785269": {
+"@source": "node785267", 
+"@target": "node785269"
+}
+}, 
+"node785269": {
+"edge785270": {
+"@source": "node785269", 
+"@target": "node785270"
+}, 
+"edge785279": {
+"@source": "node785269", 
+"@target": "node785279"
+}
+}, 
+"node785270": {
+"edge785271": {
+"@source": "node785270", 
+"@target": "node785271"
+}, 
+"edge785276": {
+"@source": "node785270", 
+"@target": "node785276"
+}
+}, 
+"node785271": {
+"edge785272": {
+"@source": "node785271", 
+"@target": "node785272"
+}, 
+"edge785275": {
+"@source": "node785271", 
+"@target": "node785275"
+}
+}, 
+"node785272": {
+"edge785273": {
+"@source": "node785272", 
+"@target": "node785273"
+}, 
+"edge785274": {
+"@source": "node785272", 
+"@target": "node785274"
+}
+}, 
+"node785276": {
+"edge785277": {
+"@source": "node785276", 
+"@target": "node785277"
+}, 
+"edge785278": {
+"@source": "node785276", 
+"@target": "node785278"
+}
+}, 
+"node785279": {
+"edge785280": {
+"@source": "node785279", 
+"@target": "node785280"
+}, 
+"edge785281": {
+"@source": "node785279", 
+"@target": "node785281"
+}
+}
+}, 
+"nodeById": {
+"node785267": {
+"@root": true
+}, 
+"node785268": {
+"@otu": "otu309019"
+}, 
+"node785269": {}, 
+"node785270": {}, 
+"node785271": {}, 
+"node785272": {}, 
+"node785273": {
+"@otu": "otu309018"
+}, 
+"node785274": {
+"@otu": "otu309017"
+}, 
+"node785275": {
+"@otu": "otu309020"
+}, 
+"node785276": {}, 
+"node785277": {
+"@otu": "otu309021"
+}, 
+"node785278": {
+"@otu": "otu309022"
+}, 
+"node785279": {}, 
+"node785280": {
+"@otu": "otu309016"
+}, 
+"node785281": {
+"@otu": "otu309015"
+}
+}
+}
+}
+}
+}
+}
+}

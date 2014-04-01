@@ -1,0 +1,191 @@
+{
+"nexml": {
+"@generator": "Phylografter nexml-json exporter", 
+"@id": "study", 
+"@nexml2json": "1.2.1", 
+"@nexmljson": "http://purl.org/opentree/nexson", 
+"@version": "0.9", 
+"@xmlns": {
+"$": "http://www.nexml.org/2009", 
+"nex": "http://www.nexml.org/2009", 
+"ot": "http://purl.org/opentree-terms#", 
+"xsd": "http://www.w3.org/2001/XMLSchema#", 
+"xsi": "http://www.w3.org/2001/XMLSchema-instance"
+}, 
+"^ot:agents": {
+"agent": [
+{
+"@description": "validator of NexSON constraints as well as constraints that would allow a study to be imported into the Open Tree of Life's phylogenetic synthesis tools", 
+"@id": "peyotl-validator", 
+"@name": "validate_ot_nexson.py", 
+"@url": "https://github.com/OpenTreeOfLife/peyotl", 
+"@version": "0.0.3a", 
+"invocation": {
+"checksPerformed": [
+"MISSING_MANDATORY_KEY", 
+"MISSING_OPTIONAL_KEY", 
+"UNRECOGNIZED_KEY", 
+"MISSING_LIST_EXPECTED", 
+"DUPLICATING_SINGLETON_KEY", 
+"REFERENCED_ID_NOT_FOUND", 
+"REPEATED_ID", 
+"REPEATED_OTU", 
+"MULTIPLE_ROOT_NODES", 
+"NO_ROOT_NODE", 
+"MULTIPLE_EDGES_FOR_NODES", 
+"CYCLE_DETECTED", 
+"DISCONNECTED_GRAPH_DETECTED", 
+"INCORRECT_ROOT_NODE_LABEL", 
+"TIP_WITHOUT_OTU", 
+"TIP_WITHOUT_OTT_ID", 
+"MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
+"NON_MONOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
+"INVALID_PROPERTY_VALUE", 
+"PROPERTY_VALUE_NOT_USEFUL", 
+"UNRECOGNIZED_PROPERTY_VALUE", 
+"MULTIPLE_TREES", 
+"UNRECOGNIZED_TAG", 
+"CONFLICTING_PROPERTY_VALUES", 
+"NO_TREES", 
+"DEPRECATED_PROPERTY", 
+"UNPARSEABLE_META", 
+"UNREACHABLE_NODE", 
+"INCORRECT_VALUE_TYPE", 
+"MISSING_CRUCIAL_CONTENT"
+], 
+"commandLine": [
+"--embed", 
+"--agent-only", 
+"-e", 
+"../mig-phyelesystem-scratch/1557/validation.json", 
+"-o", 
+"../mig-phyelesystem-scratch/1557/final.json", 
+"../mig-phyelesystem-scratch/1557/v1.2.1-1557.json"
+], 
+"otherProperty": [
+{
+"name": "pythonVersion", 
+"value": "2.7.5+"
+}, 
+{
+"name": "pythonImplementation", 
+"value": "CPython"
+}
+]
+}
+}
+]
+}, 
+"^ot:curatorName": "Jiabin Deng", 
+"^ot:dataDeposit": {
+"@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S630"
+}, 
+"^ot:focalClade": 928475, 
+"^ot:focalCladeOTTTaxonName": "Pandanaceae", 
+"^ot:otusElementOrder": [
+"otus1557"
+], 
+"^ot:studyId": "1557", 
+"^ot:studyPublicationReference": "Cox P., Huynh K., & Stone B. 1995. \"Evolution and systematics of the Pandanaceae.\" In: Rudall P., Cribb P., Cutler D., & Humphries C., eds. Monocotyledons: systematics and evolution. pp. 663-684. Kew, Royal Botanic Gardens.", 
+"^ot:studyYear": 1995, 
+"^ot:treesElementOrder": [
+"trees1557"
+], 
+"otusById": {
+"otus1557": {
+"otuById": {
+"otu258811": {
+"^ot:originalLabel": "Freycinetia", 
+"^ot:ottId": 573304, 
+"^ot:ottTaxonName": "Freycinetia", 
+"^ot:treebaseOTUId": "Tl106627"
+}, 
+"otu258812": {
+"^ot:originalLabel": "Pandanus", 
+"^ot:ottId": 928472, 
+"^ot:ottTaxonName": "Pandanus", 
+"^ot:treebaseOTUId": "Tl106629"
+}, 
+"otu258813": {
+"^ot:originalLabel": "Cyclanthus", 
+"^ot:ottId": 686304, 
+"^ot:ottTaxonName": "Cyclanthus", 
+"^ot:treebaseOTUId": "Tl106630"
+}, 
+"otu258814": {
+"^ot:originalLabel": "Saranga", 
+"^ot:ottId": 554309, 
+"^ot:ottTaxonName": "Cananga", 
+"^ot:treebaseOTUId": "Tl64586"
+}
+}
+}
+}, 
+"treesById": {
+"trees1557": {
+"@otus": "otus1557", 
+"^ot:treeElementOrder": [
+"tree3120"
+], 
+"treeById": {
+"tree3120": {
+"@xsi:type": "nex:FloatTree", 
+"^ot:curatedType": "Fig. 6", 
+"^ot:rootNodeId": "node636883", 
+"edgeBySourceId": {
+"node636883": {
+"edge636884": {
+"@source": "node636883", 
+"@target": "node636884"
+}, 
+"edge636885": {
+"@source": "node636883", 
+"@target": "node636885"
+}
+}, 
+"node636885": {
+"edge636886": {
+"@source": "node636885", 
+"@target": "node636886"
+}, 
+"edge636887": {
+"@source": "node636885", 
+"@target": "node636887"
+}
+}, 
+"node636887": {
+"edge636888": {
+"@source": "node636887", 
+"@target": "node636888"
+}, 
+"edge636889": {
+"@source": "node636887", 
+"@target": "node636889"
+}
+}
+}, 
+"nodeById": {
+"node636883": {
+"@root": true
+}, 
+"node636884": {
+"@otu": "otu258813"
+}, 
+"node636885": {}, 
+"node636886": {
+"@otu": "otu258811"
+}, 
+"node636887": {}, 
+"node636888": {
+"@otu": "otu258812"
+}, 
+"node636889": {
+"@otu": "otu258814"
+}
+}
+}
+}
+}
+}
+}
+}

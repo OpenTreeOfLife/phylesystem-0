@@ -1,0 +1,255 @@
+{
+"nexml": {
+"@generator": "Phylografter nexml-json exporter", 
+"@id": "study", 
+"@nexml2json": "1.2.1", 
+"@nexmljson": "http://purl.org/opentree/nexson", 
+"@version": "0.9", 
+"@xmlns": {
+"$": "http://www.nexml.org/2009", 
+"nex": "http://www.nexml.org/2009", 
+"ot": "http://purl.org/opentree-terms#", 
+"xsd": "http://www.w3.org/2001/XMLSchema#", 
+"xsi": "http://www.w3.org/2001/XMLSchema-instance"
+}, 
+"^ot:agents": {
+"agent": [
+{
+"@description": "validator of NexSON constraints as well as constraints that would allow a study to be imported into the Open Tree of Life's phylogenetic synthesis tools", 
+"@id": "peyotl-validator", 
+"@name": "validate_ot_nexson.py", 
+"@url": "https://github.com/OpenTreeOfLife/peyotl", 
+"@version": "0.0.3a", 
+"invocation": {
+"checksPerformed": [
+"MISSING_MANDATORY_KEY", 
+"MISSING_OPTIONAL_KEY", 
+"UNRECOGNIZED_KEY", 
+"MISSING_LIST_EXPECTED", 
+"DUPLICATING_SINGLETON_KEY", 
+"REFERENCED_ID_NOT_FOUND", 
+"REPEATED_ID", 
+"REPEATED_OTU", 
+"MULTIPLE_ROOT_NODES", 
+"NO_ROOT_NODE", 
+"MULTIPLE_EDGES_FOR_NODES", 
+"CYCLE_DETECTED", 
+"DISCONNECTED_GRAPH_DETECTED", 
+"INCORRECT_ROOT_NODE_LABEL", 
+"TIP_WITHOUT_OTU", 
+"TIP_WITHOUT_OTT_ID", 
+"MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
+"NON_MONOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
+"INVALID_PROPERTY_VALUE", 
+"PROPERTY_VALUE_NOT_USEFUL", 
+"UNRECOGNIZED_PROPERTY_VALUE", 
+"MULTIPLE_TREES", 
+"UNRECOGNIZED_TAG", 
+"CONFLICTING_PROPERTY_VALUES", 
+"NO_TREES", 
+"DEPRECATED_PROPERTY", 
+"UNPARSEABLE_META", 
+"UNREACHABLE_NODE", 
+"INCORRECT_VALUE_TYPE", 
+"MISSING_CRUCIAL_CONTENT"
+], 
+"commandLine": [
+"--embed", 
+"--agent-only", 
+"-e", 
+"../mig-phyelesystem-scratch/1728/validation.json", 
+"-o", 
+"../mig-phyelesystem-scratch/1728/final.json", 
+"../mig-phyelesystem-scratch/1728/v1.2.1-1728.json"
+], 
+"otherProperty": [
+{
+"name": "pythonVersion", 
+"value": "2.7.5+"
+}, 
+{
+"name": "pythonImplementation", 
+"value": "CPython"
+}
+]
+}
+}
+]
+}, 
+"^ot:curatorName": "Romina Gazis", 
+"^ot:dataDeposit": {
+"@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S722"
+}, 
+"^ot:focalClade": 376122, 
+"^ot:focalCladeOTTTaxonName": "Armillaria", 
+"^ot:otusElementOrder": [
+"otus1728"
+], 
+"^ot:studyId": "1728", 
+"^ot:studyPublication": {
+"@href": "http://dx.doi.org/10.2307/3761435"
+}, 
+"^ot:studyPublicationReference": "Coetzee M., Wingfield B., Coutinho T., & Wingfield M.J. 2000. Identification of the causal agent of Armillaria root rot of Pinus species in South Africa. Mycologia, 92(4): 777-785.", 
+"^ot:studyYear": 2000, 
+"^ot:treesElementOrder": [
+"trees1728"
+], 
+"otusById": {
+"otus1728": {
+"otuById": {
+"otu272189": {
+"^ot:originalLabel": "Armillaria heimii CMW3173", 
+"^ot:ottId": 409763, 
+"^ot:ottTaxonName": "Armillaria heimii", 
+"^ot:treebaseOTUId": "Tl121895"
+}, 
+"otu272190": {
+"^ot:originalLabel": "Armillaria fuscipes CMW2717", 
+"^ot:ottId": 409764, 
+"^ot:ottTaxonName": "Armillaria fuscipes", 
+"^ot:treebaseOTUId": "Tl121896"
+}, 
+"otu272191": {
+"^ot:originalLabel": "Armillaria heimii CMW3955", 
+"^ot:ottId": 409763, 
+"^ot:ottTaxonName": "Armillaria heimii", 
+"^ot:treebaseOTUId": "Tl121897"
+}, 
+"otu272192": {
+"^ot:originalLabel": "Armillaria fuscipes CMW3167", 
+"^ot:ottId": 409764, 
+"^ot:ottTaxonName": "Armillaria fuscipes", 
+"^ot:treebaseOTUId": "Tl121898"
+}, 
+"otu272193": {
+"^ot:originalLabel": "Armillaria fuscipes CMW3164", 
+"^ot:ottId": 409764, 
+"^ot:ottTaxonName": "Armillaria fuscipes", 
+"^ot:treebaseOTUId": "Tl121899"
+}, 
+"otu272194": {
+"^ot:originalLabel": "Armillaria heimii CMW3152", 
+"^ot:ottId": 409763, 
+"^ot:ottTaxonName": "Armillaria heimii", 
+"^ot:treebaseOTUId": "Tl121900"
+}, 
+"otu272195": {
+"^ot:originalLabel": "Armillaria fuscipes CMW2740", 
+"^ot:ottId": 409764, 
+"^ot:ottTaxonName": "Armillaria fuscipes", 
+"^ot:treebaseOTUId": "Tl121901"
+}
+}
+}
+}, 
+"treesById": {
+"trees1728": {
+"@otus": "otus1728", 
+"^ot:treeElementOrder": [
+"tree3477"
+], 
+"treeById": {
+"tree3477": {
+"@xsi:type": "nex:FloatTree", 
+"^ot:curatedType": "NJ, IGS-1", 
+"^ot:inGroupClade": "node675271", 
+"^ot:rootNodeId": "node675271", 
+"edgeBySourceId": {
+"node675271": {
+"edge675272": {
+"@source": "node675271", 
+"@target": "node675272"
+}, 
+"edge675279": {
+"@source": "node675271", 
+"@target": "node675279"
+}
+}, 
+"node675272": {
+"edge675273": {
+"@source": "node675272", 
+"@target": "node675273"
+}, 
+"edge675274": {
+"@source": "node675272", 
+"@target": "node675274"
+}
+}, 
+"node675274": {
+"edge675275": {
+"@source": "node675274", 
+"@target": "node675275"
+}, 
+"edge675278": {
+"@source": "node675274", 
+"@target": "node675278"
+}
+}, 
+"node675275": {
+"edge675276": {
+"@source": "node675275", 
+"@target": "node675276"
+}, 
+"edge675277": {
+"@source": "node675275", 
+"@target": "node675277"
+}
+}, 
+"node675279": {
+"edge675280": {
+"@source": "node675279", 
+"@target": "node675280"
+}, 
+"edge675283": {
+"@source": "node675279", 
+"@target": "node675283"
+}
+}, 
+"node675280": {
+"edge675281": {
+"@source": "node675280", 
+"@target": "node675281"
+}, 
+"edge675282": {
+"@source": "node675280", 
+"@target": "node675282"
+}
+}
+}, 
+"nodeById": {
+"node675271": {
+"@root": true
+}, 
+"node675272": {}, 
+"node675273": {
+"@otu": "otu272190"
+}, 
+"node675274": {}, 
+"node675275": {}, 
+"node675276": {
+"@otu": "otu272195"
+}, 
+"node675277": {
+"@otu": "otu272192"
+}, 
+"node675278": {
+"@otu": "otu272193"
+}, 
+"node675279": {}, 
+"node675280": {}, 
+"node675281": {
+"@otu": "otu272189"
+}, 
+"node675282": {
+"@otu": "otu272194"
+}, 
+"node675283": {
+"@otu": "otu272191"
+}
+}
+}
+}
+}
+}
+}
+}

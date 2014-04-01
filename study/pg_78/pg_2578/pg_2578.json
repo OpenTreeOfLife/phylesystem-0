@@ -1,0 +1,441 @@
+{
+"nexml": {
+"@generator": "Phylografter nexml-json exporter", 
+"@id": "study", 
+"@nexml2json": "1.2.1", 
+"@nexmljson": "http://purl.org/opentree/nexson", 
+"@version": "0.9", 
+"@xmlns": {
+"$": "http://www.nexml.org/2009", 
+"nex": "http://www.nexml.org/2009", 
+"ot": "http://purl.org/opentree-terms#", 
+"xsd": "http://www.w3.org/2001/XMLSchema#", 
+"xsi": "http://www.w3.org/2001/XMLSchema-instance"
+}, 
+"^ot:agents": {
+"agent": [
+{
+"@description": "validator of NexSON constraints as well as constraints that would allow a study to be imported into the Open Tree of Life's phylogenetic synthesis tools", 
+"@id": "peyotl-validator", 
+"@name": "validate_ot_nexson.py", 
+"@url": "https://github.com/OpenTreeOfLife/peyotl", 
+"@version": "0.0.3a", 
+"invocation": {
+"checksPerformed": [
+"MISSING_MANDATORY_KEY", 
+"MISSING_OPTIONAL_KEY", 
+"UNRECOGNIZED_KEY", 
+"MISSING_LIST_EXPECTED", 
+"DUPLICATING_SINGLETON_KEY", 
+"REFERENCED_ID_NOT_FOUND", 
+"REPEATED_ID", 
+"REPEATED_OTU", 
+"MULTIPLE_ROOT_NODES", 
+"NO_ROOT_NODE", 
+"MULTIPLE_EDGES_FOR_NODES", 
+"CYCLE_DETECTED", 
+"DISCONNECTED_GRAPH_DETECTED", 
+"INCORRECT_ROOT_NODE_LABEL", 
+"TIP_WITHOUT_OTU", 
+"TIP_WITHOUT_OTT_ID", 
+"MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
+"NON_MONOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
+"INVALID_PROPERTY_VALUE", 
+"PROPERTY_VALUE_NOT_USEFUL", 
+"UNRECOGNIZED_PROPERTY_VALUE", 
+"MULTIPLE_TREES", 
+"UNRECOGNIZED_TAG", 
+"CONFLICTING_PROPERTY_VALUES", 
+"NO_TREES", 
+"DEPRECATED_PROPERTY", 
+"UNPARSEABLE_META", 
+"UNREACHABLE_NODE", 
+"INCORRECT_VALUE_TYPE", 
+"MISSING_CRUCIAL_CONTENT"
+], 
+"commandLine": [
+"--embed", 
+"--agent-only", 
+"-e", 
+"../mig-phyelesystem-scratch/2578/validation.json", 
+"-o", 
+"../mig-phyelesystem-scratch/2578/final.json", 
+"../mig-phyelesystem-scratch/2578/v1.2.1-2578.json"
+], 
+"otherProperty": [
+{
+"name": "pythonVersion", 
+"value": "2.7.5+"
+}, 
+{
+"name": "pythonImplementation", 
+"value": "CPython"
+}
+]
+}
+}
+]
+}, 
+"^ot:curatorName": "Chris Owen", 
+"^ot:dataDeposit": {
+"@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S13990"
+}, 
+"^ot:focalClade": 564714, 
+"^ot:focalCladeOTTTaxonName": "Strongylocentrotus", 
+"^ot:otusElementOrder": [
+"otus2578"
+], 
+"^ot:studyId": "2578", 
+"^ot:studyPublication": {
+"@href": "http://dx.doi.org/10.1186/1471-2148-13-88"
+}, 
+"^ot:studyPublicationReference": "Kober K.M., & Bernardi G. 2013. Phylogenomics of Strongylocentrotid sea urchins. BMC Evolutionary Biology, 13:88", 
+"^ot:studyYear": 2013, 
+"^ot:treesElementOrder": [
+"trees2578"
+], 
+"otusById": {
+"otus2578": {
+"otuById": {
+"otu379785": {
+"^ot:originalLabel": "Strongylocentrotus pallidus", 
+"^ot:ottId": 43574, 
+"^ot:ottTaxonName": "Strongylocentrotus pallidus"
+}, 
+"otu379786": {
+"^ot:originalLabel": "Strongylocentrotus intermedius", 
+"^ot:ottId": 564715, 
+"^ot:ottTaxonName": "Strongylocentrotus intermedius"
+}, 
+"otu379787": {
+"^ot:originalLabel": "Strongylocentrotus droebachiensis", 
+"^ot:ottId": 43578, 
+"^ot:ottTaxonName": "Strongylocentrotus droebachiensis"
+}, 
+"otu379788": {
+"^ot:originalLabel": "Strongylocentrotus fragilis", 
+"^ot:ottId": 26831, 
+"^ot:ottTaxonName": "Allocentrotus fragilis"
+}, 
+"otu379789": {
+"^ot:originalLabel": "Strongylocentrotus purpuratus", 
+"^ot:ottId": 564702, 
+"^ot:ottTaxonName": "Strongylocentrotus purpuratus"
+}, 
+"otu379790": {
+"^ot:originalLabel": "Hemicentrotus pulcherimus", 
+"^ot:ottId": 561244, 
+"^ot:ottTaxonName": "Hemicentrotus pulcherrimus"
+}, 
+"otu379791": {
+"^ot:originalLabel": "Pseudocentrotus depressus", 
+"^ot:ottId": 43566, 
+"^ot:ottTaxonName": "Pseudocentrotus depressus"
+}, 
+"otu379792": {
+"^ot:originalLabel": "Mesocentrotus nudus", 
+"^ot:ottId": 3651083, 
+"^ot:ottTaxonName": "Mesocentrotus nudus"
+}, 
+"otu379793": {
+"^ot:originalLabel": "Mesocentrotus franciscanus", 
+"^ot:ottId": 3650976, 
+"^ot:ottTaxonName": "Mesocentrotus franciscanus"
+}
+}
+}
+}, 
+"treesById": {
+"trees2578": {
+"@otus": "otus2578", 
+"^ot:treeElementOrder": [
+"tree5981", 
+"tree5982"
+], 
+"treeById": {
+"tree5981": {
+"@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthMode": "ot:substitutionCount", 
+"^ot:curatedType": "50% maj-rule ML", 
+"^ot:inGroupClade": "node1016101", 
+"^ot:rootNodeId": "node1016100", 
+"edgeBySourceId": {
+"node1016100": {
+"edge1016101": {
+"@length": 0.00491892, 
+"@source": "node1016100", 
+"@target": "node1016101"
+}, 
+"edge1016114": {
+"@length": 0.02792614, 
+"@source": "node1016100", 
+"@target": "node1016114"
+}, 
+"edge1016115": {
+"@length": 0.01965253, 
+"@source": "node1016100", 
+"@target": "node1016115"
+}
+}, 
+"node1016101": {
+"edge1016102": {
+"@length": 0.04374656, 
+"@source": "node1016101", 
+"@target": "node1016102"
+}, 
+"edge1016113": {
+"@length": 0.03811055, 
+"@source": "node1016101", 
+"@target": "node1016113"
+}
+}, 
+"node1016102": {
+"edge1016103": {
+"@length": 0.01133914, 
+"@source": "node1016102", 
+"@target": "node1016103"
+}, 
+"edge1016112": {
+"@length": 0.05254165, 
+"@source": "node1016102", 
+"@target": "node1016112"
+}
+}, 
+"node1016103": {
+"edge1016104": {
+"@length": 0.00251569, 
+"@source": "node1016103", 
+"@target": "node1016104"
+}, 
+"edge1016111": {
+"@length": 0.02696423, 
+"@source": "node1016103", 
+"@target": "node1016111"
+}
+}, 
+"node1016104": {
+"edge1016105": {
+"@length": 0.00265236, 
+"@source": "node1016104", 
+"@target": "node1016105"
+}, 
+"edge1016110": {
+"@length": 0.03192428, 
+"@source": "node1016104", 
+"@target": "node1016110"
+}
+}, 
+"node1016105": {
+"edge1016106": {
+"@length": 0.01582269, 
+"@source": "node1016105", 
+"@target": "node1016106"
+}, 
+"edge1016107": {
+"@length": 0.00594594, 
+"@source": "node1016105", 
+"@target": "node1016107"
+}
+}, 
+"node1016107": {
+"edge1016108": {
+"@length": 0.02085392, 
+"@source": "node1016107", 
+"@target": "node1016108"
+}, 
+"edge1016109": {
+"@length": 0.02086284, 
+"@source": "node1016107", 
+"@target": "node1016109"
+}
+}
+}, 
+"nodeById": {
+"node1016100": {
+"@root": true
+}, 
+"node1016101": {}, 
+"node1016102": {}, 
+"node1016103": {}, 
+"node1016104": {}, 
+"node1016105": {}, 
+"node1016106": {
+"@otu": "otu379785"
+}, 
+"node1016107": {}, 
+"node1016108": {
+"@otu": "otu379786"
+}, 
+"node1016109": {
+"@otu": "otu379787"
+}, 
+"node1016110": {
+"@otu": "otu379788"
+}, 
+"node1016111": {
+"@otu": "otu379789"
+}, 
+"node1016112": {
+"@otu": "otu379790"
+}, 
+"node1016113": {
+"@otu": "otu379791"
+}, 
+"node1016114": {
+"@otu": "otu379792"
+}, 
+"node1016115": {
+"@otu": "otu379793"
+}
+}
+}, 
+"tree5982": {
+"@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthMode": "ot:substitutionCount", 
+"^ot:curatedType": "50% maj-rule BI", 
+"^ot:inGroupClade": "node1016117", 
+"^ot:rootNodeId": "node1016116", 
+"^ot:tag": "choose me", 
+"edgeBySourceId": {
+"node1016116": {
+"edge1016117": {
+"@length": 0.0155895753659, 
+"@source": "node1016116", 
+"@target": "node1016117"
+}, 
+"edge1016128": {
+"@length": 0.044846648767204546, 
+"@source": "node1016116", 
+"@target": "node1016128"
+}
+}, 
+"node1016117": {
+"edge1016118": {
+"@length": 0.011313325593765564, 
+"@source": "node1016117", 
+"@target": "node1016118"
+}, 
+"edge1016127": {
+"@length": 0.05239771425126219, 
+"@source": "node1016117", 
+"@target": "node1016127"
+}
+}, 
+"node1016118": {
+"edge1016119": {
+"@length": 0.002572008941748985, 
+"@source": "node1016118", 
+"@target": "node1016119"
+}, 
+"edge1016126": {
+"@length": 0.026877515794851065, 
+"@source": "node1016118", 
+"@target": "node1016126"
+}
+}, 
+"node1016119": {
+"edge1016120": {
+"@length": 0.002622718187346537, 
+"@source": "node1016119", 
+"@target": "node1016120"
+}, 
+"edge1016125": {
+"@length": 0.03193624715123482, 
+"@source": "node1016119", 
+"@target": "node1016125"
+}
+}, 
+"node1016120": {
+"edge1016121": {
+"@length": 0.005842228933866531, 
+"@source": "node1016120", 
+"@target": "node1016121"
+}, 
+"edge1016124": {
+"@length": 0.016197796712425452, 
+"@source": "node1016120", 
+"@target": "node1016124"
+}
+}, 
+"node1016121": {
+"edge1016122": {
+"@length": 0.021133600225542615, 
+"@source": "node1016121", 
+"@target": "node1016122"
+}, 
+"edge1016123": {
+"@length": 0.021086689850268445, 
+"@source": "node1016121", 
+"@target": "node1016123"
+}
+}, 
+"node1016128": {
+"edge1016129": {
+"@length": 0.005217431790553735, 
+"@source": "node1016128", 
+"@target": "node1016129"
+}, 
+"edge1016132": {
+"@length": 0.03873021621590746, 
+"@source": "node1016128", 
+"@target": "node1016132"
+}
+}, 
+"node1016129": {
+"edge1016130": {
+"@length": 0.020078854893464823, 
+"@source": "node1016129", 
+"@target": "node1016130"
+}, 
+"edge1016131": {
+"@length": 0.028155201698144117, 
+"@source": "node1016129", 
+"@target": "node1016131"
+}
+}
+}, 
+"nodeById": {
+"node1016116": {
+"@root": true
+}, 
+"node1016117": {}, 
+"node1016118": {}, 
+"node1016119": {}, 
+"node1016120": {}, 
+"node1016121": {}, 
+"node1016122": {
+"@otu": "otu379787"
+}, 
+"node1016123": {
+"@otu": "otu379786"
+}, 
+"node1016124": {
+"@otu": "otu379785"
+}, 
+"node1016125": {
+"@otu": "otu379788"
+}, 
+"node1016126": {
+"@otu": "otu379789"
+}, 
+"node1016127": {
+"@otu": "otu379790"
+}, 
+"node1016128": {}, 
+"node1016129": {}, 
+"node1016130": {
+"@otu": "otu379793"
+}, 
+"node1016131": {
+"@otu": "otu379792"
+}, 
+"node1016132": {
+"@otu": "otu379791"
+}
+}
+}
+}
+}
+}
+}
+}

@@ -1,0 +1,321 @@
+{
+"nexml": {
+"@generator": "Phylografter nexml-json exporter", 
+"@id": "study", 
+"@nexml2json": "1.2.1", 
+"@nexmljson": "http://purl.org/opentree/nexson", 
+"@version": "0.9", 
+"@xmlns": {
+"$": "http://www.nexml.org/2009", 
+"nex": "http://www.nexml.org/2009", 
+"ot": "http://purl.org/opentree-terms#", 
+"xsd": "http://www.w3.org/2001/XMLSchema#", 
+"xsi": "http://www.w3.org/2001/XMLSchema-instance"
+}, 
+"^ot:agents": {
+"agent": [
+{
+"@description": "validator of NexSON constraints as well as constraints that would allow a study to be imported into the Open Tree of Life's phylogenetic synthesis tools", 
+"@id": "peyotl-validator", 
+"@name": "validate_ot_nexson.py", 
+"@url": "https://github.com/OpenTreeOfLife/peyotl", 
+"@version": "0.0.3a", 
+"invocation": {
+"checksPerformed": [
+"MISSING_MANDATORY_KEY", 
+"MISSING_OPTIONAL_KEY", 
+"UNRECOGNIZED_KEY", 
+"MISSING_LIST_EXPECTED", 
+"DUPLICATING_SINGLETON_KEY", 
+"REFERENCED_ID_NOT_FOUND", 
+"REPEATED_ID", 
+"REPEATED_OTU", 
+"MULTIPLE_ROOT_NODES", 
+"NO_ROOT_NODE", 
+"MULTIPLE_EDGES_FOR_NODES", 
+"CYCLE_DETECTED", 
+"DISCONNECTED_GRAPH_DETECTED", 
+"INCORRECT_ROOT_NODE_LABEL", 
+"TIP_WITHOUT_OTU", 
+"TIP_WITHOUT_OTT_ID", 
+"MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
+"NON_MONOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
+"INVALID_PROPERTY_VALUE", 
+"PROPERTY_VALUE_NOT_USEFUL", 
+"UNRECOGNIZED_PROPERTY_VALUE", 
+"MULTIPLE_TREES", 
+"UNRECOGNIZED_TAG", 
+"CONFLICTING_PROPERTY_VALUES", 
+"NO_TREES", 
+"DEPRECATED_PROPERTY", 
+"UNPARSEABLE_META", 
+"UNREACHABLE_NODE", 
+"INCORRECT_VALUE_TYPE", 
+"MISSING_CRUCIAL_CONTENT"
+], 
+"commandLine": [
+"--embed", 
+"--agent-only", 
+"-e", 
+"../mig-phyelesystem-scratch/1663/validation.json", 
+"-o", 
+"../mig-phyelesystem-scratch/1663/final.json", 
+"../mig-phyelesystem-scratch/1663/v1.2.1-1663.json"
+], 
+"otherProperty": [
+{
+"name": "pythonVersion", 
+"value": "2.7.5+"
+}, 
+{
+"name": "pythonImplementation", 
+"value": "CPython"
+}
+]
+}
+}
+]
+}, 
+"^ot:curatorName": "Romina Gazis", 
+"^ot:dataDeposit": {
+"@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S296"
+}, 
+"^ot:focalClade": 1039487, 
+"^ot:focalCladeOTTTaxonName": "Scutellospora", 
+"^ot:otusElementOrder": [
+"otus1663"
+], 
+"^ot:studyId": "1663", 
+"^ot:studyPublication": {
+"@href": "http://dx.doi.org/10.2307/3760955"
+}, 
+"^ot:studyPublicationReference": "Morton J. 1995. Taxonomic and phylogenetic divergence among five Scutellospora species based on comparative developmental sequences. Mycologia, 87: 127-137.", 
+"^ot:studyYear": 1995, 
+"^ot:treesElementOrder": [
+"trees1663"
+], 
+"otusById": {
+"otus1663": {
+"otuById": {
+"otu269838": {
+"^ot:originalLabel": "Gigaspora rosea", 
+"^ot:ottId": 149958, 
+"^ot:ottTaxonName": "Gigaspora rosea", 
+"^ot:treebaseOTUId": "Tl106636"
+}, 
+"otu269839": {
+"^ot:originalLabel": "Scutellospora gregaria", 
+"^ot:ottId": 802577, 
+"^ot:ottTaxonName": "Scutellospora gregaria", 
+"^ot:treebaseOTUId": "Tl39986"
+}, 
+"otu269840": {
+"^ot:originalLabel": "Scutellospora persica", 
+"^ot:ottId": 923349, 
+"^ot:ottTaxonName": "Scutellospora persica", 
+"^ot:treebaseOTUId": "Tl65655"
+}, 
+"otu269841": {
+"^ot:originalLabel": "Scutellospora coralloidea", 
+"^ot:ottId": 350144, 
+"^ot:ottTaxonName": "Scutellospora coralloidea", 
+"^ot:treebaseOTUId": "Tl65656"
+}, 
+"otu269842": {
+"^ot:originalLabel": "Scutellospora fulgida", 
+"^ot:ottId": 340746, 
+"^ot:ottTaxonName": "Scutellospora fulgida", 
+"^ot:treebaseOTUId": "Tl65657"
+}, 
+"otu269843": {
+"^ot:originalLabel": "Scutellospora verrucosa", 
+"^ot:ottId": 672202, 
+"^ot:ottTaxonName": "Scutellospora verrucosa", 
+"^ot:treebaseOTUId": "Tl65658"
+}
+}
+}
+}, 
+"treesById": {
+"trees1663": {
+"@otus": "otus1663", 
+"^ot:treeElementOrder": [
+"tree3355", 
+"tree3356"
+], 
+"treeById": {
+"tree3355": {
+"@xsi:type": "nex:FloatTree", 
+"^ot:curatedType": "Cladogram_morphology", 
+"^ot:inGroupClade": "node668419", 
+"^ot:rootNodeId": "node668417", 
+"edgeBySourceId": {
+"node668417": {
+"edge668418": {
+"@source": "node668417", 
+"@target": "node668418"
+}, 
+"edge668419": {
+"@source": "node668417", 
+"@target": "node668419"
+}
+}, 
+"node668419": {
+"edge668420": {
+"@source": "node668419", 
+"@target": "node668420"
+}, 
+"edge668421": {
+"@source": "node668419", 
+"@target": "node668421"
+}
+}, 
+"node668421": {
+"edge668422": {
+"@source": "node668421", 
+"@target": "node668422"
+}, 
+"edge668423": {
+"@source": "node668421", 
+"@target": "node668423"
+}
+}, 
+"node668423": {
+"edge668424": {
+"@source": "node668423", 
+"@target": "node668424"
+}, 
+"edge668425": {
+"@source": "node668423", 
+"@target": "node668425"
+}
+}, 
+"node668425": {
+"edge668426": {
+"@source": "node668425", 
+"@target": "node668426"
+}, 
+"edge668427": {
+"@source": "node668425", 
+"@target": "node668427"
+}
+}
+}, 
+"nodeById": {
+"node668417": {
+"@root": true
+}, 
+"node668418": {
+"@otu": "otu269838"
+}, 
+"node668419": {}, 
+"node668420": {
+"@otu": "otu269842"
+}, 
+"node668421": {}, 
+"node668422": {
+"@otu": "otu269843"
+}, 
+"node668423": {}, 
+"node668424": {
+"@otu": "otu269840"
+}, 
+"node668425": {}, 
+"node668426": {
+"@otu": "otu269841"
+}, 
+"node668427": {
+"@otu": "otu269839"
+}
+}
+}, 
+"tree3356": {
+"@xsi:type": "nex:FloatTree", 
+"^ot:curatedType": "Cladogram_morphology", 
+"^ot:inGroupClade": "node668430", 
+"^ot:rootNodeId": "node668428", 
+"edgeBySourceId": {
+"node668428": {
+"edge668429": {
+"@source": "node668428", 
+"@target": "node668429"
+}, 
+"edge668430": {
+"@source": "node668428", 
+"@target": "node668430"
+}
+}, 
+"node668430": {
+"edge668431": {
+"@source": "node668430", 
+"@target": "node668431"
+}, 
+"edge668432": {
+"@source": "node668430", 
+"@target": "node668432"
+}
+}, 
+"node668432": {
+"edge668433": {
+"@source": "node668432", 
+"@target": "node668433"
+}, 
+"edge668434": {
+"@source": "node668432", 
+"@target": "node668434"
+}
+}, 
+"node668434": {
+"edge668435": {
+"@source": "node668434", 
+"@target": "node668435"
+}, 
+"edge668436": {
+"@source": "node668434", 
+"@target": "node668436"
+}
+}, 
+"node668436": {
+"edge668437": {
+"@source": "node668436", 
+"@target": "node668437"
+}, 
+"edge668438": {
+"@source": "node668436", 
+"@target": "node668438"
+}
+}
+}, 
+"nodeById": {
+"node668428": {
+"@root": true
+}, 
+"node668429": {
+"@otu": "otu269838"
+}, 
+"node668430": {}, 
+"node668431": {
+"@otu": "otu269842"
+}, 
+"node668432": {}, 
+"node668433": {
+"@otu": "otu269840"
+}, 
+"node668434": {}, 
+"node668435": {
+"@otu": "otu269843"
+}, 
+"node668436": {}, 
+"node668437": {
+"@otu": "otu269841"
+}, 
+"node668438": {
+"@otu": "otu269839"
+}
+}
+}
+}
+}
+}
+}
+}

@@ -1,0 +1,233 @@
+{
+"nexml": {
+"@generator": "Phylografter nexml-json exporter", 
+"@id": "study", 
+"@nexml2json": "1.2.1", 
+"@nexmljson": "http://purl.org/opentree/nexson", 
+"@version": "0.9", 
+"@xmlns": {
+"$": "http://www.nexml.org/2009", 
+"nex": "http://www.nexml.org/2009", 
+"ot": "http://purl.org/opentree-terms#", 
+"xsd": "http://www.w3.org/2001/XMLSchema#", 
+"xsi": "http://www.w3.org/2001/XMLSchema-instance"
+}, 
+"^ot:agents": {
+"agent": [
+{
+"@description": "validator of NexSON constraints as well as constraints that would allow a study to be imported into the Open Tree of Life's phylogenetic synthesis tools", 
+"@id": "peyotl-validator", 
+"@name": "validate_ot_nexson.py", 
+"@url": "https://github.com/OpenTreeOfLife/peyotl", 
+"@version": "0.0.3a", 
+"invocation": {
+"checksPerformed": [
+"MISSING_MANDATORY_KEY", 
+"MISSING_OPTIONAL_KEY", 
+"UNRECOGNIZED_KEY", 
+"MISSING_LIST_EXPECTED", 
+"DUPLICATING_SINGLETON_KEY", 
+"REFERENCED_ID_NOT_FOUND", 
+"REPEATED_ID", 
+"REPEATED_OTU", 
+"MULTIPLE_ROOT_NODES", 
+"NO_ROOT_NODE", 
+"MULTIPLE_EDGES_FOR_NODES", 
+"CYCLE_DETECTED", 
+"DISCONNECTED_GRAPH_DETECTED", 
+"INCORRECT_ROOT_NODE_LABEL", 
+"TIP_WITHOUT_OTU", 
+"TIP_WITHOUT_OTT_ID", 
+"MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
+"NON_MONOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
+"INVALID_PROPERTY_VALUE", 
+"PROPERTY_VALUE_NOT_USEFUL", 
+"UNRECOGNIZED_PROPERTY_VALUE", 
+"MULTIPLE_TREES", 
+"UNRECOGNIZED_TAG", 
+"CONFLICTING_PROPERTY_VALUES", 
+"NO_TREES", 
+"DEPRECATED_PROPERTY", 
+"UNPARSEABLE_META", 
+"UNREACHABLE_NODE", 
+"INCORRECT_VALUE_TYPE", 
+"MISSING_CRUCIAL_CONTENT"
+], 
+"commandLine": [
+"--embed", 
+"--agent-only", 
+"-e", 
+"../mig-phyelesystem-scratch/2075/validation.json", 
+"-o", 
+"../mig-phyelesystem-scratch/2075/final.json", 
+"../mig-phyelesystem-scratch/2075/v1.2.1-2075.json"
+], 
+"otherProperty": [
+{
+"name": "pythonVersion", 
+"value": "2.7.5+"
+}, 
+{
+"name": "pythonImplementation", 
+"value": "CPython"
+}
+]
+}
+}
+]
+}, 
+"^ot:curatorName": "bryan drew", 
+"^ot:dataDeposit": {
+"@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S11822"
+}, 
+"^ot:otusElementOrder": [
+"otus2075"
+], 
+"^ot:studyId": "2075", 
+"^ot:studyPublication": {
+"@href": "http://dx.doi.org/10.1111/j.1529-8817.2012.01142.x"
+}, 
+"^ot:studyPublicationReference": "Isaka N., Kawai-toyooka H., Matsuzaki R., Nakada T., & Nozaki H. 2011. Description of two new monoecious species of Volvox  sect. Volvox (Volvocaceae, Chlorophyceae), based on comparative morphology and molecular phylogeny of cultured material. Journal of Phycology. 48.3 (2012): 759-767.", 
+"^ot:studyYear": 2011, 
+"^ot:treesElementOrder": [
+"trees2075"
+], 
+"otusById": {
+"otus2075": {
+"otuById": {
+"otu310825": {
+"^ot:originalLabel": "Volvox capensis", 
+"^ot:ottId": 633709, 
+"^ot:ottTaxonName": "Volvox capensis", 
+"^ot:treebaseOTUId": "Tl594975"
+}, 
+"otu310826": {
+"^ot:originalLabel": "Volvox ferrisii", 
+"^ot:ottId": 162126, 
+"^ot:ottTaxonName": "Volvox ferrisii", 
+"^ot:treebaseOTUId": "Tl594976"
+}, 
+"otu310827": {
+"^ot:originalLabel": "Volvox rousseletii U1862", 
+"^ot:ottId": 381980, 
+"^ot:ottTaxonName": "Volvox rousseletii", 
+"^ot:treebaseOTUId": "Tl594977"
+}, 
+"otu310828": {
+"^ot:originalLabel": "Volvox barberi U804", 
+"^ot:ottId": 633710, 
+"^ot:ottTaxonName": "Volvox barberi", 
+"^ot:treebaseOTUId": "Tl594978"
+}, 
+"otu310829": {
+"^ot:originalLabel": "Volvox kirkiorum", 
+"^ot:ottId": 162121, 
+"^ot:ottTaxonName": "Volvox kirkiorum", 
+"^ot:treebaseOTUId": "Tl594979"
+}, 
+"otu310830": {
+"^ot:originalLabel": "Volvox globator S19980", 
+"^ot:ottId": 633719, 
+"^ot:ottTaxonName": "Volvox globator", 
+"^ot:treebaseOTUId": "Tl594980"
+}
+}
+}
+}, 
+"treesById": {
+"trees2075": {
+"@otus": "otus2075", 
+"^ot:treeElementOrder": [
+"tree4280"
+], 
+"treeById": {
+"tree4280": {
+"@xsi:type": "nex:FloatTree", 
+"^ot:curatedType": "Fig. 4", 
+"^ot:inGroupClade": "node790234", 
+"^ot:rootNodeId": "node790234", 
+"edgeBySourceId": {
+"node790234": {
+"edge790235": {
+"@source": "node790234", 
+"@target": "node790235"
+}, 
+"edge790236": {
+"@source": "node790234", 
+"@target": "node790236"
+}
+}, 
+"node790236": {
+"edge790237": {
+"@source": "node790236", 
+"@target": "node790237"
+}, 
+"edge790238": {
+"@source": "node790236", 
+"@target": "node790238"
+}
+}, 
+"node790238": {
+"edge790239": {
+"@source": "node790238", 
+"@target": "node790239"
+}, 
+"edge790240": {
+"@source": "node790238", 
+"@target": "node790240"
+}
+}, 
+"node790240": {
+"edge790241": {
+"@source": "node790240", 
+"@target": "node790241"
+}, 
+"edge790242": {
+"@source": "node790240", 
+"@target": "node790242"
+}
+}, 
+"node790242": {
+"edge790243": {
+"@source": "node790242", 
+"@target": "node790243"
+}, 
+"edge790244": {
+"@source": "node790242", 
+"@target": "node790244"
+}
+}
+}, 
+"nodeById": {
+"node790234": {
+"@root": true
+}, 
+"node790235": {
+"@otu": "otu310830"
+}, 
+"node790236": {}, 
+"node790237": {
+"@otu": "otu310825"
+}, 
+"node790238": {}, 
+"node790239": {
+"@otu": "otu310828"
+}, 
+"node790240": {}, 
+"node790241": {
+"@otu": "otu310829"
+}, 
+"node790242": {}, 
+"node790243": {
+"@otu": "otu310826"
+}, 
+"node790244": {
+"@otu": "otu310827"
+}
+}
+}
+}
+}
+}
+}
+}

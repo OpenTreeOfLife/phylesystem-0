@@ -1,0 +1,215 @@
+{
+"nexml": {
+"@generator": "Phylografter nexml-json exporter", 
+"@id": "study", 
+"@nexml2json": "1.2.1", 
+"@nexmljson": "http://purl.org/opentree/nexson", 
+"@version": "0.9", 
+"@xmlns": {
+"$": "http://www.nexml.org/2009", 
+"nex": "http://www.nexml.org/2009", 
+"ot": "http://purl.org/opentree-terms#", 
+"xsd": "http://www.w3.org/2001/XMLSchema#", 
+"xsi": "http://www.w3.org/2001/XMLSchema-instance"
+}, 
+"^ot:agents": {
+"agent": [
+{
+"@description": "validator of NexSON constraints as well as constraints that would allow a study to be imported into the Open Tree of Life's phylogenetic synthesis tools", 
+"@id": "peyotl-validator", 
+"@name": "validate_ot_nexson.py", 
+"@url": "https://github.com/OpenTreeOfLife/peyotl", 
+"@version": "0.0.3a", 
+"invocation": {
+"checksPerformed": [
+"MISSING_MANDATORY_KEY", 
+"MISSING_OPTIONAL_KEY", 
+"UNRECOGNIZED_KEY", 
+"MISSING_LIST_EXPECTED", 
+"DUPLICATING_SINGLETON_KEY", 
+"REFERENCED_ID_NOT_FOUND", 
+"REPEATED_ID", 
+"REPEATED_OTU", 
+"MULTIPLE_ROOT_NODES", 
+"NO_ROOT_NODE", 
+"MULTIPLE_EDGES_FOR_NODES", 
+"CYCLE_DETECTED", 
+"DISCONNECTED_GRAPH_DETECTED", 
+"INCORRECT_ROOT_NODE_LABEL", 
+"TIP_WITHOUT_OTU", 
+"TIP_WITHOUT_OTT_ID", 
+"MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
+"NON_MONOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
+"INVALID_PROPERTY_VALUE", 
+"PROPERTY_VALUE_NOT_USEFUL", 
+"UNRECOGNIZED_PROPERTY_VALUE", 
+"MULTIPLE_TREES", 
+"UNRECOGNIZED_TAG", 
+"CONFLICTING_PROPERTY_VALUES", 
+"NO_TREES", 
+"DEPRECATED_PROPERTY", 
+"UNPARSEABLE_META", 
+"UNREACHABLE_NODE", 
+"INCORRECT_VALUE_TYPE", 
+"MISSING_CRUCIAL_CONTENT"
+], 
+"commandLine": [
+"--embed", 
+"--agent-only", 
+"-e", 
+"../mig-phyelesystem-scratch/1651/validation.json", 
+"-o", 
+"../mig-phyelesystem-scratch/1651/final.json", 
+"../mig-phyelesystem-scratch/1651/v1.2.1-1651.json"
+], 
+"otherProperty": [
+{
+"name": "pythonVersion", 
+"value": "2.7.5+"
+}, 
+{
+"name": "pythonImplementation", 
+"value": "CPython"
+}
+]
+}
+}
+]
+}, 
+"^ot:curatorName": "Romina Gazis", 
+"^ot:dataDeposit": {
+"@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S276"
+}, 
+"^ot:focalClade": 2447970, 
+"^ot:focalCladeOTTTaxonName": "Gastrosuillus", 
+"^ot:otusElementOrder": [
+"otus1651"
+], 
+"^ot:studyId": "1651", 
+"^ot:studyPublication": {
+"@href": "http://dx.doi.org/10.2307/3760328"
+}, 
+"^ot:studyPublicationReference": "Baura G., Szaro T., & Bruns T. 1992. Gastrosuillus laricinus is a recent derivative of Suillus grevillei: molecular evidence. Mycologia, 84: 592-597.", 
+"^ot:studyYear": 1992, 
+"^ot:treesElementOrder": [
+"trees1651"
+], 
+"otusById": {
+"otus1651": {
+"otuById": {
+"otu268714": {
+"^ot:originalLabel": "Suillus grevillei", 
+"^ot:ottId": 428804, 
+"^ot:ottTaxonName": "Suillus grevillei", 
+"^ot:treebaseOTUId": "Tl110158"
+}, 
+"otu268715": {
+"^ot:originalLabel": "Rhizopogon subcaerulescens", 
+"^ot:ottId": 111538, 
+"^ot:ottTaxonName": "Rhizopogon subcaerulescens", 
+"^ot:treebaseOTUId": "Tl110159"
+}, 
+"otu268716": {
+"^ot:originalLabel": "Gastrosuillus laricinus", 
+"^ot:ottId": 4106074, 
+"^ot:ottTaxonName": "Gastrosuillus laricinus", 
+"^ot:treebaseOTUId": "Tl59445"
+}, 
+"otu268717": {
+"^ot:originalLabel": "Suillus grevillei BNYC", 
+"^ot:ottId": 428804, 
+"^ot:ottTaxonName": "Suillus grevillei", 
+"^ot:treebaseOTUId": "Tl59446"
+}, 
+"otu268718": {
+"^ot:originalLabel": "Suillus spraguei", 
+"^ot:ottId": 428805, 
+"^ot:ottTaxonName": "Suillus spraguei", 
+"^ot:treebaseOTUId": "Tl59447"
+}
+}
+}
+}, 
+"treesById": {
+"trees1651": {
+"@otus": "otus1651", 
+"^ot:treeElementOrder": [
+"tree3332"
+], 
+"treeById": {
+"tree3332": {
+"@xsi:type": "nex:FloatTree", 
+"^ot:curatedType": "MP, ITS", 
+"^ot:inGroupClade": "node664279", 
+"^ot:rootNodeId": "node664278", 
+"edgeBySourceId": {
+"node664278": {
+"edge664279": {
+"@source": "node664278", 
+"@target": "node664279"
+}, 
+"edge664286": {
+"@source": "node664278", 
+"@target": "node664286"
+}
+}, 
+"node664279": {
+"edge664280": {
+"@source": "node664279", 
+"@target": "node664280"
+}, 
+"edge664281": {
+"@source": "node664279", 
+"@target": "node664281"
+}
+}, 
+"node664281": {
+"edge664282": {
+"@source": "node664281", 
+"@target": "node664282"
+}, 
+"edge664285": {
+"@source": "node664281", 
+"@target": "node664285"
+}
+}, 
+"node664282": {
+"edge664283": {
+"@source": "node664282", 
+"@target": "node664283"
+}, 
+"edge664284": {
+"@source": "node664282", 
+"@target": "node664284"
+}
+}
+}, 
+"nodeById": {
+"node664278": {
+"@root": true
+}, 
+"node664279": {}, 
+"node664280": {
+"@otu": "otu268718"
+}, 
+"node664281": {}, 
+"node664282": {}, 
+"node664283": {
+"@otu": "otu268717"
+}, 
+"node664284": {
+"@otu": "otu268716"
+}, 
+"node664285": {
+"@otu": "otu268714"
+}, 
+"node664286": {
+"@otu": "otu268715"
+}
+}
+}
+}
+}
+}
+}
+}

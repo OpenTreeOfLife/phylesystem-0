@@ -1,0 +1,230 @@
+{
+"nexml": {
+"@generator": "Phylografter nexml-json exporter", 
+"@id": "study", 
+"@nexml2json": "1.2.1", 
+"@nexmljson": "http://purl.org/opentree/nexson", 
+"@version": "0.9", 
+"@xmlns": {
+"$": "http://www.nexml.org/2009", 
+"nex": "http://www.nexml.org/2009", 
+"ot": "http://purl.org/opentree-terms#", 
+"xsd": "http://www.w3.org/2001/XMLSchema#", 
+"xsi": "http://www.w3.org/2001/XMLSchema-instance"
+}, 
+"^ot:agents": {
+"agent": [
+{
+"@description": "validator of NexSON constraints as well as constraints that would allow a study to be imported into the Open Tree of Life's phylogenetic synthesis tools", 
+"@id": "peyotl-validator", 
+"@name": "validate_ot_nexson.py", 
+"@url": "https://github.com/OpenTreeOfLife/peyotl", 
+"@version": "0.0.3a", 
+"invocation": {
+"checksPerformed": [
+"MISSING_MANDATORY_KEY", 
+"MISSING_OPTIONAL_KEY", 
+"UNRECOGNIZED_KEY", 
+"MISSING_LIST_EXPECTED", 
+"DUPLICATING_SINGLETON_KEY", 
+"REFERENCED_ID_NOT_FOUND", 
+"REPEATED_ID", 
+"REPEATED_OTU", 
+"MULTIPLE_ROOT_NODES", 
+"NO_ROOT_NODE", 
+"MULTIPLE_EDGES_FOR_NODES", 
+"CYCLE_DETECTED", 
+"DISCONNECTED_GRAPH_DETECTED", 
+"INCORRECT_ROOT_NODE_LABEL", 
+"TIP_WITHOUT_OTU", 
+"TIP_WITHOUT_OTT_ID", 
+"MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
+"NON_MONOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
+"INVALID_PROPERTY_VALUE", 
+"PROPERTY_VALUE_NOT_USEFUL", 
+"UNRECOGNIZED_PROPERTY_VALUE", 
+"MULTIPLE_TREES", 
+"UNRECOGNIZED_TAG", 
+"CONFLICTING_PROPERTY_VALUES", 
+"NO_TREES", 
+"DEPRECATED_PROPERTY", 
+"UNPARSEABLE_META", 
+"UNREACHABLE_NODE", 
+"INCORRECT_VALUE_TYPE", 
+"MISSING_CRUCIAL_CONTENT"
+], 
+"commandLine": [
+"--embed", 
+"--agent-only", 
+"-e", 
+"../mig-phyelesystem-scratch/2719/validation.json", 
+"-o", 
+"../mig-phyelesystem-scratch/2719/final.json", 
+"../mig-phyelesystem-scratch/2719/v1.2.1-2719.json"
+], 
+"otherProperty": [
+{
+"name": "pythonVersion", 
+"value": "2.7.5+"
+}, 
+{
+"name": "pythonImplementation", 
+"value": "CPython"
+}
+]
+}
+}
+]
+}, 
+"^ot:curatorName": "Cameah Wood", 
+"^ot:dataDeposit": {
+"@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S1080"
+}, 
+"^ot:otusElementOrder": [
+"otus2719"
+], 
+"^ot:studyId": "2719", 
+"^ot:studyPublicationReference": "Usher K., Toze S., Fromont J., Kuo J., & Sutton D. 2004. A new species of cyanobacterial symbiont from the marine sponge Chondrilla nucula. Symbiosis, 36(2): 183-192.", 
+"^ot:studyYear": 2004, 
+"^ot:treesElementOrder": [
+"trees2719"
+], 
+"otusById": {
+"otus2719": {
+"otuById": {
+"otu408015": {
+"^ot:originalLabel": "Synechococcus from Petrosia ficiformis", 
+"^ot:ottId": 269054, 
+"^ot:ottTaxonName": "Synechococcus", 
+"^ot:treebaseOTUId": "Tl18354"
+}, 
+"otu408016": {
+"^ot:originalLabel": "Prochlorococcus NATL2", 
+"^ot:ottId": 771085, 
+"^ot:ottTaxonName": "Prochlorococcus", 
+"^ot:treebaseOTUId": "Tl18355"
+}, 
+"otu408017": {
+"^ot:originalLabel": "Oscillatoria rosea", 
+"^ot:ottId": 311103, 
+"^ot:ottTaxonName": "Limnothrix rosea", 
+"^ot:treebaseOTUId": "Tl18356"
+}, 
+"otu408018": {
+"^ot:originalLabel": "Synechococcus WH8103", 
+"^ot:ottId": 269054, 
+"^ot:ottTaxonName": "Synechococcus", 
+"^ot:treebaseOTUId": "Tl18357"
+}, 
+"otu408019": {
+"^ot:originalLabel": "Synechococcus NACL5", 
+"^ot:ottId": 269054, 
+"^ot:ottTaxonName": "Synechococcus", 
+"^ot:treebaseOTUId": "Tl18358"
+}, 
+"otu408020": {
+"^ot:originalLabel": "Synechococcus KU43Fr from Chondrilla nucula", 
+"^ot:ottId": 269054, 
+"^ot:ottTaxonName": "Synechococcus", 
+"^ot:treebaseOTUId": "Tl18359"
+}
+}
+}
+}, 
+"treesById": {
+"trees2719": {
+"@otus": "otus2719", 
+"^ot:treeElementOrder": [
+"tree6316"
+], 
+"treeById": {
+"tree6316": {
+"@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthMode": "ot:substitutionCount", 
+"^ot:curatedType": "Fig. 2", 
+"^ot:rootNodeId": "node1098228", 
+"edgeBySourceId": {
+"node1098228": {
+"edge1098229": {
+"@source": "node1098228", 
+"@target": "node1098229"
+}, 
+"edge1098238": {
+"@source": "node1098228", 
+"@target": "node1098238"
+}
+}, 
+"node1098229": {
+"edge1098230": {
+"@source": "node1098229", 
+"@target": "node1098230"
+}, 
+"edge1098237": {
+"@source": "node1098229", 
+"@target": "node1098237"
+}
+}, 
+"node1098230": {
+"edge1098231": {
+"@source": "node1098230", 
+"@target": "node1098231"
+}, 
+"edge1098236": {
+"@source": "node1098230", 
+"@target": "node1098236"
+}
+}, 
+"node1098231": {
+"edge1098232": {
+"@source": "node1098231", 
+"@target": "node1098232"
+}, 
+"edge1098235": {
+"@source": "node1098231", 
+"@target": "node1098235"
+}
+}, 
+"node1098232": {
+"edge1098233": {
+"@source": "node1098232", 
+"@target": "node1098233"
+}, 
+"edge1098234": {
+"@source": "node1098232", 
+"@target": "node1098234"
+}
+}
+}, 
+"nodeById": {
+"node1098228": {
+"@root": true
+}, 
+"node1098229": {}, 
+"node1098230": {}, 
+"node1098231": {}, 
+"node1098232": {}, 
+"node1098233": {
+"@otu": "otu408018"
+}, 
+"node1098234": {
+"@otu": "otu408019"
+}, 
+"node1098235": {
+"@otu": "otu408016"
+}, 
+"node1098236": {
+"@otu": "otu408015"
+}, 
+"node1098237": {
+"@otu": "otu408020"
+}, 
+"node1098238": {
+"@otu": "otu408017"
+}
+}
+}
+}
+}
+}
+}
+}

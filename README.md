@@ -1,4 +1,4 @@
-# hbf_phylesystem_test
+# phylesystem-0
 
 This is a temporary repo of NexSON 1.2.1 to be used for testing the 
 api.opentreeoflife.org. It will be removed when those tests complete

@@ -22,6 +22,11 @@ then you can create the content of this directory by:
     mkdir ../scratch
     python dev/migrate_testing_phylesystem.py ../phylesystem ../sharded-phylesystem-par/phylesystem-0 ../scratch
 
+We have not decided on the final naming scheme for shards in the 
+phylesystem repository (if we use a sharding strategy). So
+don't read anything into the name for this repo. We just needed
+a name for the repo for testing purposes.
+
 # More details
 
 See [phylesystem](https://github.com/OpenTreeOfLife/phylesystem) for more details.

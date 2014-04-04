@@ -73,12 +73,155 @@
 }
 ]
 }
+}, 
+{
+"@description": "Web-based interface for submitting, editing, and reviewing studies in the Open Tree of Life project.", 
+"@id": "opentree-curation-webapp", 
+"@name": "OpenTree curation webapp", 
+"@url": "https://github.com/OpenTreeOfLife/opentree", 
+"@version": "0.0.0"
 }
 ]
 }, 
-"^ot:curatorName": "Rick Ree", 
+"^ot:annotationEvents": {
+"annotation": [
+{
+"@description": "Open Tree NexSON validation", 
+"@id": "peyotl-validator-event", 
+"@passedChecks": true, 
+"@preserve": false, 
+"@wasAssociatedWithAgentId": "peyotl-validator", 
+"message": [
+{
+"@code": "MISSING_OPTIONAL_KEY", 
+"@severity": "WARNING", 
+"data": [
+"^ot:ottId"
+], 
+"refersTo": {
+"@idref": "otu144", 
+"@otuID": "otu144", 
+"@otusID": "otus10", 
+"@top": "otus"
+}
+}, 
+{
+"@code": "UNRECOGNIZED_KEY", 
+"@severity": "WARNING", 
+"data": [
+"^ot:agents"
+], 
+"refersTo": {
+"@idref": "study", 
+"@top": "nexml"
+}
+}, 
+{
+"@code": "MISSING_OPTIONAL_KEY", 
+"@severity": "WARNING", 
+"data": [
+"^ot:dataDeposit"
+], 
+"refersTo": {
+"@idref": "study", 
+"@top": "nexml"
+}
+}, 
+{
+"@code": "MISSING_OPTIONAL_KEY", 
+"@severity": "WARNING", 
+"data": [
+"^ot:branchLengthTimeUnit"
+], 
+"refersTo": {
+"@idref": "tree3", 
+"@top": "trees", 
+"@treeID": "tree3", 
+"@treesID": "tree3"
+}
+}
+]
+}, 
+{
+"@dateCreated": "2014-04-04T06:37:07.079Z", 
+"@description": "Aids for mapping study OTUs to OTT taxa", 
+"@id": "otu-mapping-hints", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "OTU_MAPPING_HINTS", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"searchContext": {
+"$": "All life"
+}, 
+"substitutions": {
+"substitution": [
+{
+"@active": false, 
+"@valid": true, 
+"new": {
+"$": ""
+}, 
+"old": {
+"$": ""
+}
+}
+]
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}, 
+{
+"@dateCreated": "2014-04-04T06:37:07.079Z", 
+"@description": "Describes supporting data files for this study", 
+"@id": "supporting-files-metadata", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "SUPPORTING_FILE_INFO", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"@movedToPermanentArchive": false, 
+"files": {
+"file": []
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}
+]
+}, 
+"^ot:candidateTreeForSynthesis": {
+"candidate": []
+}, 
+"^ot:curatorName": [
+"Rick Ree", 
+"Jim Allman"
+], 
 "^ot:focalClade": 99252, 
 "^ot:focalCladeOTTTaxonName": "Magnoliophyta", 
+"^ot:messages": {
+"message": []
+}, 
+"^ot:notIntendedForSynthesis": false, 
 "^ot:otusElementOrder": [
 "otus10"
 ], 
@@ -86,8 +229,9 @@
 "^ot:studyPublication": {
 "@href": "http://dx.doi.org/10.1073/pnas.0709121104"
 }, 
-"^ot:studyPublicationReference": "Jansen, Robert K., Zhengqiu Cai, Linda A. Raubeson, Henry Daniell, Claude W. dePamphilis, James Leebens-Mack, Kai F. M\u00fcller, et al. 2007. Analysis of 81 genes from 64 plastid genomes resolves relationships in angiosperms and identifies genome-scale evolutionary patterns. Proceedings of the National Academy of Sciences 104, no. 49 (December 4): 19369 -19374. doi:10.1073/pnas.0709121104.", 
-"^ot:studyYear": 2007, 
+"^ot:studyPublicationReference": "Jansen, Robert K., Zhengqiu Cai, Linda A. Raubeson, Henry Daniell, Claude W. dePamphilis, James Leebens-Mack, Kai F. M\u00fcller, J. Allman, et al. 2007. Analysis of 81 genes from 64 plastid genomes resolves relationships in angiosperms and identifies genome-scale evolutionary patterns. Proceedings of the National Academy of Sciences 104, no. 49 (December 4): 19369 -19374. doi:10.1073/pnas.0709121104.", 
+"^ot:studyYear": "2001", 
+"^ot:tag": [], 
 "^ot:treesElementOrder": [
 "trees10"
 ], 
@@ -423,11 +567,18 @@
 ], 
 "treeById": {
 "tree3": {
+"@label": "Untitled (tree3)", 
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
 "^ot:branchLengthMode": "ot:substitutionCount", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "ML bootstrap consensus", 
 "^ot:inGroupClade": "node510", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node505", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
+"^ot:unrootedTree": true, 
 "edgeBySourceId": {
 "node505": {
 "edge506": {

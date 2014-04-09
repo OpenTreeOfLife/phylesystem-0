@@ -67,14 +67,141 @@
 }
 ]
 }
+}, 
+{
+"@description": "Web-based interface for submitting, editing, and reviewing studies in the Open Tree of Life project.", 
+"@id": "opentree-curation-webapp", 
+"@name": "OpenTree curation webapp", 
+"@url": "https://github.com/OpenTreeOfLife/opentree", 
+"@version": "0.0.0"
 }
 ]
 }, 
-"^ot:curatorName": "Jim Allman", 
+"^ot:annotationEvents": {
+"annotation": [
+{
+"@description": "Open Tree NexSON validation", 
+"@id": "peyotl-validator-event", 
+"@passedChecks": true, 
+"@preserve": false, 
+"@wasAssociatedWithAgentId": "peyotl-validator", 
+"message": [
+{
+"@code": "UNRECOGNIZED_KEY", 
+"@severity": "WARNING", 
+"data": [
+"^ot:agents"
+], 
+"refersTo": {
+"@idref": "study", 
+"@top": "nexml"
+}
+}, 
+{
+"@code": "MISSING_OPTIONAL_KEY", 
+"@severity": "WARNING", 
+"data": [
+"^ot:dataDeposit", 
+"^ot:studyPublication", 
+"^ot:studyPublicationReference", 
+"^ot:studyYear"
+], 
+"refersTo": {
+"@idref": "study", 
+"@top": "nexml"
+}
+}
+]
+}, 
+{
+"@dateCreated": "2014-04-09T04:59:00.363Z", 
+"@description": "Aids for mapping study OTUs to OTT taxa", 
+"@id": "otu-mapping-hints", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "OTU_MAPPING_HINTS", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"searchContext": {
+"$": "All life"
+}, 
+"substitutions": {
+"substitution": [
+{
+"@active": false, 
+"@valid": true, 
+"new": {
+"$": ""
+}, 
+"old": {
+"$": ""
+}
+}
+]
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}, 
+{
+"@dateCreated": "2014-04-09T04:59:00.363Z", 
+"@description": "Describes supporting data files for this study", 
+"@id": "supporting-files-metadata", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "SUPPORTING_FILE_INFO", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"@movedToPermanentArchive": false, 
+"files": {
+"file": []
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}
+]
+}, 
+"^ot:candidateTreeForSynthesis": {
+"candidate": []
+}, 
+"^ot:curatorName": [
+"Jim Allman"
+], 
+"^ot:focalClade": null, 
+"^ot:focalCladeOTTTaxonName": "", 
+"^ot:messages": {
+"message": []
+}, 
+"^ot:notIntendedForSynthesis": false, 
 "^ot:otusElementOrder": [
 "otus1"
 ], 
 "^ot:studyId": "ot_7", 
+"^ot:studyPublication": {
+"@href": ""
+}, 
+"^ot:studyPublicationReference": "ANOTHER TEST, properly placed CC0", 
+"^ot:studyYear": "", 
+"^ot:tag": [], 
 "^ot:treesElementOrder": [
 "trees1"
 ], 

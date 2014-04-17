@@ -88,58 +88,28 @@
 {
 "@description": "Open Tree NexSON validation", 
 "@id": "peyotl-validator-event", 
-"@passedChecks": true, 
+"@passedChecks": false, 
 "@preserve": false, 
 "@wasAssociatedWithAgentId": "peyotl-validator", 
 "message": [
 {
-"@code": "MISSING_OPTIONAL_KEY", 
-"@severity": "WARNING", 
+"@code": "INCORRECT_VALUE_TYPE", 
+"@severity": "ERROR", 
 "data": [
-"^ot:ottId"
-], 
-"refersTo": {
-"@idref": "otu414222", 
-"@otuID": "otu414222", 
-"@otusID": "otus2794", 
-"@top": "otus"
-}
+{
+"expected": "string or string array", 
+"key": "^ot:candidateTreeForSynthesis", 
+"type": "dict"
 }, 
 {
-"@code": "UNRECOGNIZED_KEY", 
-"@severity": "WARNING", 
-"data": [
-"^ot:agents"
+"expected": "integer", 
+"key": "^ot:focalClade", 
+"type": "NoneType"
+}
 ], 
 "refersTo": {
 "@idref": "study", 
 "@top": "nexml"
-}
-}, 
-{
-"@code": "MISSING_OPTIONAL_KEY", 
-"@severity": "WARNING", 
-"data": [
-"^ot:studyPublication"
-], 
-"refersTo": {
-"@idref": "study", 
-"@top": "nexml"
-}
-}, 
-{
-"@code": "MISSING_OPTIONAL_KEY", 
-"@severity": "WARNING", 
-"data": [
-"^ot:branchLengthMode", 
-"^ot:branchLengthTimeUnit", 
-"^ot:inGroupClade"
-], 
-"refersTo": {
-"@idref": "tree6480", 
-"@top": "trees", 
-"@treeID": "tree6480", 
-"@treesID": "tree6480"
 }
 }
 ]
@@ -237,7 +207,7 @@
 "@href": ""
 }, 
 "^ot:studyPublicationReference": "Geisen S., Bonkowski M., Zhang J., & De jonckheere J.F. 2014. Isolation of six new species of Allovahlkampfia and one new genus of the Vahlkampfiidae, Heterolobosea. Protist, .", 
-"^ot:studyYear": 2014, 
+"^ot:studyYear": "2013", 
 "^ot:tag": [], 
 "^ot:treesElementOrder": [
 "trees2794"

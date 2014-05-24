@@ -15,57 +15,17 @@
 "^ot:agents": {
 "agent": [
 {
-"@description": "validator of NexSON constraints as well as constraints that would allow a study to be imported into the Open Tree of Life's phylogenetic synthesis tools", 
+"@description": "Open Tree NexSON validation", 
 "@id": "peyotl-validator", 
-"@name": "validate_ot_nexson.py", 
+"@name": "api.opentreeoflife.org/validate", 
 "@url": "https://github.com/OpenTreeOfLife/peyotl", 
-"@version": "0.0.3a", 
+"@version": "0.0.4a", 
 "invocation": {
-"checksPerformed": [
-"MISSING_MANDATORY_KEY", 
-"MISSING_OPTIONAL_KEY", 
-"UNRECOGNIZED_KEY", 
-"MISSING_LIST_EXPECTED", 
-"DUPLICATING_SINGLETON_KEY", 
-"REFERENCED_ID_NOT_FOUND", 
-"REPEATED_ID", 
-"REPEATED_OTU", 
-"MULTIPLE_ROOT_NODES", 
-"NO_ROOT_NODE", 
-"MULTIPLE_EDGES_FOR_NODES", 
-"CYCLE_DETECTED", 
-"DISCONNECTED_GRAPH_DETECTED", 
-"INCORRECT_ROOT_NODE_LABEL", 
-"TIP_WITHOUT_OTU", 
-"TIP_WITHOUT_OTT_ID", 
-"MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
-"NON_MONOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
-"INVALID_PROPERTY_VALUE", 
-"PROPERTY_VALUE_NOT_USEFUL", 
-"UNRECOGNIZED_PROPERTY_VALUE", 
-"MULTIPLE_TREES", 
-"UNRECOGNIZED_TAG", 
-"CONFLICTING_PROPERTY_VALUES", 
-"NO_TREES", 
-"DEPRECATED_PROPERTY", 
-"UNPARSEABLE_META", 
-"UNREACHABLE_NODE", 
-"INCORRECT_VALUE_TYPE", 
-"MISSING_CRUCIAL_CONTENT"
-], 
-"commandLine": [
-"--embed", 
-"--agent-only", 
-"-e", 
-"../mig-phyelesystem-scratch/1632/validation.json", 
-"-o", 
-"../mig-phyelesystem-scratch/1632/final.json", 
-"../mig-phyelesystem-scratch/1632/v1.2.1-1632.json"
-], 
+"commandLine": [], 
 "otherProperty": [
 {
 "name": "pythonVersion", 
-"value": "2.7.5+"
+"value": "2.7.3"
 }, 
 {
 "name": "pythonImplementation", 
@@ -76,12 +36,13 @@
 }
 ]
 }, 
+"^ot:annotationEvents": {
+"annotation": []
+}, 
 "^ot:curatorName": "Romina Gazis", 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S2093"
 }, 
-"^ot:focalClade": 2406255, 
-"^ot:focalCladeOTTTaxonName": "Ciliochorella", 
 "^ot:otusElementOrder": [
 "otus1632"
 ], 
@@ -95,222 +56,249 @@
 "otus1632": {
 "otuById": {
 "otu267042": {
+"@label": "Xylaria hypoxylon", 
 "^ot:originalLabel": "Xylaria hypoxylon U47841", 
 "^ot:ottId": 44255, 
 "^ot:ottTaxonName": "Xylaria hypoxylon", 
 "^ot:treebaseOTUId": "Tl216540"
 }, 
 "otu267043": {
+"@label": "Bartalinia robillardoides", 
 "^ot:originalLabel": "Bartalinia robillardoides AF382366", 
 "^ot:ottId": 442850, 
 "^ot:ottTaxonName": "Bartalinia robillardoides", 
 "^ot:treebaseOTUId": "Tl28921"
 }, 
 "otu267044": {
+"@label": "Pestalotiopsis bicilia AF382356", 
 "^ot:originalLabel": "Pestalotiopsis bicilia AF382356", 
-"^ot:ottId": 1019302, 
-"^ot:ottTaxonName": "Pestalotiopsis bicilia", 
 "^ot:treebaseOTUId": "Tl28925"
 }, 
 "otu267045": {
+"@label": "Monochaetia monochaeta", 
 "^ot:originalLabel": "Monochaetia monochaeta AF382370", 
 "^ot:ottId": 1019307, 
 "^ot:ottTaxonName": "Monochaetia monochaeta", 
 "^ot:treebaseOTUId": "Tl28930"
 }, 
 "otu267046": {
+"@label": "Pestalotiopsis maculans", 
 "^ot:originalLabel": "Pestalotiopsis maculans AF382354", 
 "^ot:ottId": 1019300, 
 "^ot:ottTaxonName": "Pestalotiopsis maculans", 
 "^ot:treebaseOTUId": "Tl28931"
 }, 
 "otu267047": {
+"@label": "Truncatella angustata", 
 "^ot:originalLabel": "Truncatella angustata AF382383", 
 "^ot:ottId": 1019271, 
 "^ot:ottTaxonName": "Truncatella angustata", 
 "^ot:treebaseOTUId": "Tl28932"
 }, 
 "otu267048": {
+"@label": "Discostroma leptospermi", 
 "^ot:originalLabel": "Seimatosporium leptospermi AF382373", 
-"^ot:ottId": 392377, 
-"^ot:ottTaxonName": "Seimatosporium leptospermi", 
+"^ot:ottId": 5317523, 
+"^ot:ottTaxonName": "Discostroma leptospermi", 
 "^ot:treebaseOTUId": "Tl28934"
 }, 
 "otu267049": {
+"@label": "Seimatosporium vaccinii", 
 "^ot:originalLabel": "Seimatosporium vaccinii AF382374", 
 "^ot:ottId": 392376, 
 "^ot:ottTaxonName": "Seimatosporium vaccinii", 
 "^ot:treebaseOTUId": "Tl28936"
 }, 
 "otu267050": {
+"@label": "Truncatella laurocerasi", 
 "^ot:originalLabel": "Truncatella laurocerasi AF382385", 
 "^ot:ottId": 392374, 
 "^ot:ottTaxonName": "Truncatella laurocerasi", 
 "^ot:treebaseOTUId": "Tl28938"
 }, 
 "otu267051": {
+"@label": "Seimatosporium grevilleae", 
 "^ot:originalLabel": "Seimatosporium grevilleae AF382372", 
 "^ot:ottId": 1019299, 
 "^ot:ottTaxonName": "Seimatosporium grevilleae", 
 "^ot:treebaseOTUId": "Tl28941"
 }, 
 "otu267052": {
+"@label": "Lepteutypa cupressi", 
 "^ot:originalLabel": "Seiridium cupressi AF382378", 
-"^ot:ottId": 530239, 
-"^ot:ottTaxonName": "Seiridium cupressi", 
+"^ot:ottId": 173690, 
+"^ot:ottTaxonName": "Lepteutypa cupressi", 
 "^ot:treebaseOTUId": "Tl28944"
 }, 
 "otu267053": {
+"@label": "Bartalinia lateripes", 
 "^ot:originalLabel": "Bartalinia lateripes AF382368", 
 "^ot:ottId": 442857, 
 "^ot:ottTaxonName": "Bartalinia lateripes", 
 "^ot:treebaseOTUId": "Tl28945"
 }, 
 "otu267054": {
+"@label": "Dothidea sambuci", 
 "^ot:originalLabel": "Dothidea sambuci AF382387", 
 "^ot:ottId": 95390, 
 "^ot:ottTaxonName": "Dothidea sambuci", 
 "^ot:treebaseOTUId": "Tl44790"
 }, 
 "otu267055": {
+"@label": "Pleospora herbarum", 
 "^ot:originalLabel": "Pleospora herbarum AF382386", 
 "^ot:ottId": 282723, 
 "^ot:ottTaxonName": "Pleospora herbarum", 
 "^ot:treebaseOTUId": "Tl83277"
 }, 
 "otu267056": {
+"@label": "Pestalotiopsis funerea", 
 "^ot:originalLabel": "Pestalotiopsis funerea AF382358", 
 "^ot:ottId": 1019303, 
 "^ot:ottTaxonName": "Pestalotiopsis funerea", 
 "^ot:treebaseOTUId": "Tl83784"
 }, 
 "otu267057": {
+"@label": "Truncatella sp. AF382382", 
 "^ot:originalLabel": "Truncatella sp. AF382382", 
-"^ot:ottId": 442861, 
-"^ot:ottTaxonName": "Truncatella sp. HKUCC 7987", 
 "^ot:treebaseOTUId": "Tl83785"
 }, 
 "otu267058": {
+"@label": "Monochaetia kansensis", 
 "^ot:originalLabel": "Monochaetia kansensis DQ534036", 
 "^ot:ottId": 294634, 
 "^ot:ottTaxonName": "Monochaetia kansensis", 
 "^ot:treebaseOTUId": "Tl83786"
 }, 
 "otu267059": {
+"@label": "Seimatosporium", 
 "^ot:originalLabel": "Seimatosporium sp. AF382375", 
-"^ot:ottId": 392373, 
-"^ot:ottTaxonName": "Seimatosporium sp. HKUCC 7986", 
+"^ot:ottId": 1019298, 
+"^ot:ottTaxonName": "Seimatosporium", 
 "^ot:treebaseOTUId": "Tl83787"
 }, 
 "otu267060": {
+"@label": "Pestalotia photiniae", 
 "^ot:originalLabel": "Pestalotiopsis photiniae AF382363", 
 "^ot:ottId": 324022, 
-"^ot:ottTaxonName": "Pestalotiopsis photiniae", 
+"^ot:ottTaxonName": "Pestalotia photiniae", 
 "^ot:treebaseOTUId": "Tl83788"
 }, 
 "otu267061": {
+"@label": "Seiridium cardinale", 
 "^ot:originalLabel": "Seiridium cardinale AF382377", 
 "^ot:ottId": 530238, 
 "^ot:ottTaxonName": "Seiridium cardinale", 
 "^ot:treebaseOTUId": "Tl83789"
 }, 
 "otu267062": {
+"@label": "Truncatella conorum-piceae", 
 "^ot:originalLabel": "Truncatella conorum-piceae AF382384", 
 "^ot:ottId": 392375, 
 "^ot:ottTaxonName": "Truncatella conorum-piceae", 
 "^ot:treebaseOTUId": "Tl83790"
 }, 
 "otu267063": {
+"@label": "Bartalinia bischofiae", 
 "^ot:originalLabel": "Bartalinia bischofiae AF382367", 
 "^ot:ottId": 442858, 
 "^ot:ottTaxonName": "Bartalinia bischofiae", 
 "^ot:treebaseOTUId": "Tl83791"
 }, 
 "otu267064": {
+"@label": "Lepteutypa cupressi", 
 "^ot:originalLabel": "Seiridium unicorne DQ414532", 
-"^ot:ottId": 530236, 
-"^ot:ottTaxonName": "Seiridium unicorne", 
+"^ot:ottId": 173690, 
+"^ot:ottTaxonName": "Lepteutypa cupressi", 
 "^ot:treebaseOTUId": "Tl83792"
 }, 
 "otu267065": {
+"@label": "Seiridium papillatum", 
 "^ot:originalLabel": "Seiridium papillatum DQ414531", 
 "^ot:ottId": 530241, 
 "^ot:ottTaxonName": "Seiridium papillatum", 
 "^ot:treebaseOTUId": "Tl83793"
 }, 
 "otu267066": {
+"@label": "Seiridium eucalypti", 
 "^ot:originalLabel": "Seiridium eucalypti DQ414533", 
 "^ot:ottId": 530240, 
 "^ot:ottTaxonName": "Seiridium eucalypti", 
 "^ot:treebaseOTUId": "Tl83794"
 }, 
 "otu267067": {
+"@label": "Seiridium ceratosporum", 
 "^ot:originalLabel": "Seiridium ceratosporum DQ534043", 
 "^ot:ottId": 357448, 
 "^ot:ottTaxonName": "Seiridium ceratosporum", 
 "^ot:treebaseOTUId": "Tl83795"
 }, 
 "otu267068": {
+"@label": "Diaporthe phaseolorum U47830", 
 "^ot:originalLabel": "Diaporthe phaseolorum U47830", 
-"^ot:ottId": 737678, 
-"^ot:ottTaxonName": "Diaporthe phaseolorum", 
 "^ot:treebaseOTUId": "Tl83796"
 }, 
 "otu267069": {
+"@label": "Ciliochorella castaneae AB433277", 
 "^ot:originalLabel": "Ciliochorella castaneae AB433277", 
-"^ot:ottId": 346553, 
-"^ot:ottTaxonName": "Ciliochorella castaneae", 
 "^ot:treebaseOTUId": "Tl83797"
 }, 
 "otu267070": {
+"@label": "Lepteutypa cupressi", 
 "^ot:originalLabel": "Lepteutypa cupressi AF382379", 
 "^ot:ottId": 173690, 
 "^ot:ottTaxonName": "Lepteutypa cupressi", 
 "^ot:treebaseOTUId": "Tl83798"
 }, 
 "otu267071": {
+"@label": "Ciliochorella castaneae AB433278", 
 "^ot:originalLabel": "Ciliochorella castaneae AB433278", 
-"^ot:ottId": 346553, 
-"^ot:ottTaxonName": "Ciliochorella castaneae", 
 "^ot:treebaseOTUId": "Tl83799"
 }, 
 "otu267072": {
+"@label": "Ceratocystis pilifera", 
 "^ot:originalLabel": "Ophiostoma piliferum U47837", 
-"^ot:ottId": 758754, 
-"^ot:ottTaxonName": "Ophiostoma piliferum", 
+"^ot:ottId": 5316941, 
+"^ot:ottTaxonName": "Ceratocystis pilifera", 
 "^ot:treebaseOTUId": "Tl83800"
 }, 
 "otu267073": {
+"@label": "Discosia", 
 "^ot:originalLabel": "Discosia sp. AF382381", 
-"^ot:ottId": 95393, 
-"^ot:ottTaxonName": "Discosia sp. HKUCC 6626", 
+"^ot:ottId": 95394, 
+"^ot:ottTaxonName": "Discosia", 
 "^ot:treebaseOTUId": "Tl83801"
 }, 
 "otu267074": {
+"@label": "Discostroma", 
 "^ot:originalLabel": "Discostroma sp. AF382380", 
-"^ot:ottId": 95389, 
-"^ot:ottTaxonName": "Discostroma sp. HKUCC 1004", 
+"^ot:ottId": 1037031, 
+"^ot:ottTaxonName": "Discostroma", 
 "^ot:treebaseOTUId": "Tl83802"
 }, 
 "otu267075": {
+"@label": "Hypocrea schweinitzii", 
 "^ot:originalLabel": "Hypocrea schweinitzii U47833", 
-"^ot:ottId": 237866, 
-"^ot:ottTaxonName": "Trichoderma citrinoviride", 
+"^ot:ottId": 5317031, 
+"^ot:ottTaxonName": "Hypocrea schweinitzii", 
 "^ot:treebaseOTUId": "Tl83803"
 }, 
 "otu267076": {
+"@label": "Bartalinia laurina", 
 "^ot:originalLabel": "Bartalinia laurina AF382369", 
 "^ot:ottId": 442854, 
 "^ot:ottTaxonName": "Bartalinia laurina", 
 "^ot:treebaseOTUId": "Tl83804"
 }, 
 "otu267077": {
+"@label": "Pestalotiopsis versicolor", 
 "^ot:originalLabel": "Pestalotiopsis versicolor AF382357", 
 "^ot:ottId": 1019301, 
 "^ot:ottTaxonName": "Pestalotiopsis versicolor", 
 "^ot:treebaseOTUId": "Tl83805"
 }, 
 "otu267078": {
+"@label": "Monochaetia kansensis", 
 "^ot:originalLabel": "Monochaetia kansensis DQ534037", 
 "^ot:ottId": 294634, 
 "^ot:ottTaxonName": "Monochaetia kansensis", 
@@ -331,7 +319,6 @@
 "^ot:curatedType": "LSU", 
 "^ot:inGroupClade": "node660009", 
 "^ot:rootNodeId": "node660004", 
-"^ot:tag": "LSU", 
 "edgeBySourceId": {
 "node660004": {
 "edge660005": {

@@ -15,57 +15,17 @@
 "^ot:agents": {
 "agent": [
 {
-"@description": "validator of NexSON constraints as well as constraints that would allow a study to be imported into the Open Tree of Life's phylogenetic synthesis tools", 
+"@description": "Open Tree NexSON validation", 
 "@id": "peyotl-validator", 
-"@name": "validate_ot_nexson.py", 
+"@name": "api.opentreeoflife.org/validate", 
 "@url": "https://github.com/OpenTreeOfLife/peyotl", 
-"@version": "0.0.3a", 
+"@version": "0.0.4a", 
 "invocation": {
-"checksPerformed": [
-"MISSING_MANDATORY_KEY", 
-"MISSING_OPTIONAL_KEY", 
-"UNRECOGNIZED_KEY", 
-"MISSING_LIST_EXPECTED", 
-"DUPLICATING_SINGLETON_KEY", 
-"REFERENCED_ID_NOT_FOUND", 
-"REPEATED_ID", 
-"REPEATED_OTU", 
-"MULTIPLE_ROOT_NODES", 
-"NO_ROOT_NODE", 
-"MULTIPLE_EDGES_FOR_NODES", 
-"CYCLE_DETECTED", 
-"DISCONNECTED_GRAPH_DETECTED", 
-"INCORRECT_ROOT_NODE_LABEL", 
-"TIP_WITHOUT_OTU", 
-"TIP_WITHOUT_OTT_ID", 
-"MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
-"NON_MONOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
-"INVALID_PROPERTY_VALUE", 
-"PROPERTY_VALUE_NOT_USEFUL", 
-"UNRECOGNIZED_PROPERTY_VALUE", 
-"MULTIPLE_TREES", 
-"UNRECOGNIZED_TAG", 
-"CONFLICTING_PROPERTY_VALUES", 
-"NO_TREES", 
-"DEPRECATED_PROPERTY", 
-"UNPARSEABLE_META", 
-"UNREACHABLE_NODE", 
-"INCORRECT_VALUE_TYPE", 
-"MISSING_CRUCIAL_CONTENT"
-], 
-"commandLine": [
-"--embed", 
-"--agent-only", 
-"-e", 
-"../mig-phyelesystem-scratch/1754/validation.json", 
-"-o", 
-"../mig-phyelesystem-scratch/1754/final.json", 
-"../mig-phyelesystem-scratch/1754/v1.2.1-1754.json"
-], 
+"commandLine": [], 
 "otherProperty": [
 {
 "name": "pythonVersion", 
-"value": "2.7.5+"
+"value": "2.7.3"
 }, 
 {
 "name": "pythonImplementation", 
@@ -75,6 +35,9 @@
 }
 }
 ]
+}, 
+"^ot:annotationEvents": {
+"annotation": []
 }, 
 "^ot:curatorName": "Romina Gazis", 
 "^ot:dataDeposit": {
@@ -98,134 +61,159 @@
 "otus1754": {
 "otuById": {
 "otu273781": {
+"@label": "Craterellus lutescens", 
 "^ot:originalLabel": "Cantharellus lutescens", 
 "^ot:ottId": 738473, 
 "^ot:ottTaxonName": "Craterellus lutescens", 
 "^ot:treebaseOTUId": "Tl11102"
 }, 
 "otu273782": {
+"@label": "Craterellus cornucopioides", 
 "^ot:originalLabel": "Craterellus cornucopioides", 
 "^ot:ottId": 194353, 
 "^ot:ottTaxonName": "Craterellus cornucopioides", 
 "^ot:treebaseOTUId": "Tl11103"
 }, 
 "otu273783": {
+"@label": "Multiclavula mucida", 
 "^ot:originalLabel": "Stichoclavaria mucida", 
 "^ot:ottId": 729019, 
 "^ot:ottTaxonName": "Multiclavula mucida", 
 "^ot:treebaseOTUId": "Tl11105"
 }, 
 "otu273784": {
+"@label": "Craterellus fallax", 
 "^ot:originalLabel": "Craterellus fallax", 
 "^ot:ottId": 505893, 
 "^ot:ottTaxonName": "Craterellus fallax", 
 "^ot:treebaseOTUId": "Tl11106"
 }, 
 "otu273785": {
+"@label": "Cantharellus", 
 "^ot:originalLabel": "Cantharellus sp.", 
 "^ot:ottId": 558122, 
 "^ot:ottTaxonName": "Cantharellus", 
 "^ot:treebaseOTUId": "Tl11107"
 }, 
 "otu273786": {
+"@label": "Clavulina ornatipes", 
 "^ot:originalLabel": "Clavulina ornatipes", 
 "^ot:ottId": 990575, 
 "^ot:ottTaxonName": "Clavulina ornatipes", 
 "^ot:treebaseOTUId": "Tl11108"
 }, 
 "otu273787": {
+"@label": "Lentaria byssiseda", 
 "^ot:originalLabel": "Lentaria byssiseda", 
 "^ot:ottId": 514458, 
 "^ot:ottTaxonName": "Lentaria byssiseda", 
 "^ot:treebaseOTUId": "Tl1306"
 }, 
 "otu273788": {
+"@label": "Clavariadelphus ligulus", 
 "^ot:originalLabel": "Clavariadelphus ligulus", 
 "^ot:treebaseOTUId": "Tl1308"
 }, 
 "otu273789": {
+"@label": "Ramaria stricta", 
 "^ot:originalLabel": "Ramaria stricta", 
 "^ot:ottId": 989767, 
 "^ot:ottTaxonName": "Ramaria stricta", 
 "^ot:treebaseOTUId": "Tl1309"
 }, 
 "otu273790": {
+"@label": "Sphaerobolus stellatus", 
 "^ot:originalLabel": "Sphaerobolus stellatus", 
 "^ot:ottId": 989764, 
 "^ot:ottTaxonName": "Sphaerobolus stellatus", 
 "^ot:treebaseOTUId": "Tl1310"
 }, 
 "otu273791": {
+"@label": "Gomphus bonarii", 
 "^ot:originalLabel": "Gomphus bonarii", 
 "^ot:ottId": 1040964, 
 "^ot:ottTaxonName": "Gomphus bonarii", 
 "^ot:treebaseOTUId": "Tl1312"
 }, 
 "otu273792": {
+"@label": "Clavariadelphus unicolor", 
 "^ot:originalLabel": "Clavariadelphus unicolor", 
 "^ot:ottId": 990577, 
 "^ot:ottTaxonName": "Clavariadelphus unicolor", 
 "^ot:treebaseOTUId": "Tl1313"
 }, 
 "otu273793": {
+"@label": "Gloeocantharellus purpurascens", 
 "^ot:originalLabel": "Gloeocantharellus purpurascens", 
 "^ot:ottId": 1040965, 
 "^ot:ottTaxonName": "Gloeocantharellus purpurascens", 
 "^ot:treebaseOTUId": "Tl1315"
 }, 
 "otu273794": {
+"@label": "Cantharellus cibarius", 
 "^ot:originalLabel": "Cantharellus cibarius", 
 "^ot:ottId": 558116, 
 "^ot:ottTaxonName": "Cantharellus cibarius", 
 "^ot:treebaseOTUId": "Tl134492"
 }, 
 "otu273795": {
+"@label": "Clavariadelphus pistillaris", 
 "^ot:originalLabel": "Clavariadelphus pistillaris", 
 "^ot:ottId": 160856, 
 "^ot:ottTaxonName": "Clavariadelphus pistillaris", 
 "^ot:treebaseOTUId": "Tl134493"
 }, 
 "otu273796": {
+"@label": "Ramaria formosa", 
 "^ot:originalLabel": "Ramaria formosa", 
 "^ot:ottId": 514463, 
 "^ot:ottTaxonName": "Ramaria formosa", 
 "^ot:treebaseOTUId": "Tl134495"
 }, 
 "otu273797": {
+"@label": "Craterellus tubaeformis", 
 "^ot:originalLabel": "Cantharellus tubaeformis", 
 "^ot:ottId": 183999, 
 "^ot:ottTaxonName": "Craterellus tubaeformis", 
 "^ot:treebaseOTUId": "Tl134499"
 }, 
 "otu273798": {
+"@label": "Clavulina coralloides", 
 "^ot:originalLabel": "Clavulina cristata", 
+"^ot:ottId": 3798782, 
+"^ot:ottTaxonName": "Clavulina coralloides", 
 "^ot:treebaseOTUId": "Tl134502"
 }, 
 "otu273799": {
+"@label": "Geastrum saccatum", 
 "^ot:originalLabel": "Geastrum saccatum", 
 "^ot:ottId": 735805, 
 "^ot:ottTaxonName": "Geastrum saccatum", 
 "^ot:treebaseOTUId": "Tl134504"
 }, 
 "otu273800": {
+"@label": "Pseudocolus fusiformis", 
 "^ot:originalLabel": "Pseudocolus fusiformis", 
 "^ot:ottId": 723276, 
 "^ot:ottTaxonName": "Pseudocolus fusiformis", 
 "^ot:treebaseOTUId": "Tl134510"
 }, 
 "otu273801": {
+"@label": "Turbinellus floccosus", 
 "^ot:originalLabel": "Gomphus floccosus", 
 "^ot:ottId": 283252, 
 "^ot:ottTaxonName": "Turbinellus floccosus", 
 "^ot:treebaseOTUId": "Tl134511"
 }, 
 "otu273802": {
+"@label": "Clavulina cinerea", 
 "^ot:originalLabel": "Clavulina cinerea", 
 "^ot:ottId": 990576, 
 "^ot:ottTaxonName": "Clavulina cinerea", 
 "^ot:treebaseOTUId": "Tl134512"
 }, 
 "otu273803": {
+"@label": "Hydnum repandum", 
 "^ot:originalLabel": "Hydnum repandum", 
 "^ot:ottId": 160851, 
 "^ot:ottTaxonName": "Hydnum repandum", 
@@ -572,7 +560,6 @@
 "^ot:curatedType": "MP, mtSSU + SSU (rooted)", 
 "^ot:inGroupClade": "node945081", 
 "^ot:rootNodeId": "node945081", 
-"^ot:tag": "SSU", 
 "edgeBySourceId": {
 "node945081": {
 "edge945082": {

@@ -15,57 +15,17 @@
 "^ot:agents": {
 "agent": [
 {
-"@description": "validator of NexSON constraints as well as constraints that would allow a study to be imported into the Open Tree of Life's phylogenetic synthesis tools", 
+"@description": "Open Tree NexSON validation", 
 "@id": "peyotl-validator", 
-"@name": "validate_ot_nexson.py", 
+"@name": "api.opentreeoflife.org/validate", 
 "@url": "https://github.com/OpenTreeOfLife/peyotl", 
-"@version": "0.0.3a", 
+"@version": "0.0.4a", 
 "invocation": {
-"checksPerformed": [
-"MISSING_MANDATORY_KEY", 
-"MISSING_OPTIONAL_KEY", 
-"UNRECOGNIZED_KEY", 
-"MISSING_LIST_EXPECTED", 
-"DUPLICATING_SINGLETON_KEY", 
-"REFERENCED_ID_NOT_FOUND", 
-"REPEATED_ID", 
-"REPEATED_OTU", 
-"MULTIPLE_ROOT_NODES", 
-"NO_ROOT_NODE", 
-"MULTIPLE_EDGES_FOR_NODES", 
-"CYCLE_DETECTED", 
-"DISCONNECTED_GRAPH_DETECTED", 
-"INCORRECT_ROOT_NODE_LABEL", 
-"TIP_WITHOUT_OTU", 
-"TIP_WITHOUT_OTT_ID", 
-"MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
-"NON_MONOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
-"INVALID_PROPERTY_VALUE", 
-"PROPERTY_VALUE_NOT_USEFUL", 
-"UNRECOGNIZED_PROPERTY_VALUE", 
-"MULTIPLE_TREES", 
-"UNRECOGNIZED_TAG", 
-"CONFLICTING_PROPERTY_VALUES", 
-"NO_TREES", 
-"DEPRECATED_PROPERTY", 
-"UNPARSEABLE_META", 
-"UNREACHABLE_NODE", 
-"INCORRECT_VALUE_TYPE", 
-"MISSING_CRUCIAL_CONTENT"
-], 
-"commandLine": [
-"--embed", 
-"--agent-only", 
-"-e", 
-"../mig-phyelesystem-scratch/2339/validation.json", 
-"-o", 
-"../mig-phyelesystem-scratch/2339/final.json", 
-"../mig-phyelesystem-scratch/2339/v1.2.1-2339.json"
-], 
+"commandLine": [], 
 "otherProperty": [
 {
 "name": "pythonVersion", 
-"value": "2.7.5+"
+"value": "2.7.3"
 }, 
 {
 "name": "pythonImplementation", 
@@ -75,6 +35,9 @@
 }
 }
 ]
+}, 
+"^ot:annotationEvents": {
+"annotation": []
 }, 
 "^ot:curatorName": "Romina Gazis", 
 "^ot:dataDeposit": {
@@ -89,7 +52,7 @@
 "^ot:studyPublication": {
 "@href": "http://dx.doi.org/10.3852/12-088"
 }, 
-"^ot:studyPublicationReference": "Pildain, Mar\u00eda Bel\u00e9n, and Mario Rajchenberg. \"The phylogenetic disposition of Postia sl (Polyporales, Basidiomycota) from Patagonia, Argentina.\" Mycologia 2013 105:357-367", 
+"^ot:studyPublicationReference": "Pildain, Mar\u00eda Bel\u00e9n, and Mario Rajchenberg. 2013. The phylogenetic position of Postia s.l. (Polyporales, Basidiomycota) from Patagonia, Argentina. Mycologia. 105 (2): 357-367", 
 "^ot:studyYear": 2013, 
 "^ot:treesElementOrder": [
 "trees2339"
@@ -98,380 +61,453 @@
 "otus2339": {
 "otuById": {
 "otu331647": {
+"@label": "Antrodia gossypium", 
 "^ot:originalLabel": "Fibroporia gossypium Arg 131", 
 "^ot:ottId": 69883, 
 "^ot:ottTaxonName": "Antrodia gossypium", 
 "^ot:treebaseOTUId": "Tl861070"
 }, 
 "otu331648": {
+"@label": "Postia dissecta", 
 "^ot:originalLabel": "Postia dissecta Arg328", 
 "^ot:ottId": 25507, 
 "^ot:ottTaxonName": "Postia dissecta", 
 "^ot:treebaseOTUId": "Tl861071"
 }, 
 "otu331649": {
+"@label": "Postia carbophila", 
 "^ot:originalLabel": "Postia carbophila 12281", 
 "^ot:ottId": 1059118, 
 "^ot:ottTaxonName": "Postia carbophila", 
 "^ot:treebaseOTUId": "Tl861072"
 }, 
 "otu331650": {
+"@label": "Amyloporia", 
 "^ot:originalLabel": "Amyloporia nothofaginea Arg 196", 
 "^ot:ottId": 532987, 
 "^ot:ottTaxonName": "Amyloporia", 
 "^ot:treebaseOTUId": "Tl861073"
 }, 
 "otu331651": {
+"@label": "Postia dissecta", 
 "^ot:originalLabel": "Postia dissecta Arg340", 
 "^ot:ottId": 25507, 
 "^ot:ottTaxonName": "Postia dissecta", 
 "^ot:treebaseOTUId": "Tl861074"
 }, 
 "otu331652": {
+"@label": "Polyporus xanthus", 
 "^ot:originalLabel": "Antrodia xantha AJ415569", 
+"^ot:ottId": 5300046, 
+"^ot:ottTaxonName": "Polyporus xanthus", 
 "^ot:treebaseOTUId": "Tl861075"
 }, 
 "otu331653": {
+"@label": "Ryvardenia campyla", 
 "^ot:originalLabel": "Ryvardenia campyla Arg197", 
 "^ot:ottId": 660161, 
 "^ot:ottTaxonName": "Ryvardenia campyla", 
 "^ot:treebaseOTUId": "Tl861076"
 }, 
 "otu331654": {
+"@label": "Fomitopsis pinicola", 
 "^ot:originalLabel": "Fomitopsis pinicola EF530947", 
 "^ot:ottId": 417422, 
 "^ot:ottTaxonName": "Fomitopsis pinicola", 
 "^ot:treebaseOTUId": "Tl861077"
 }, 
 "otu331655": {
+"@label": "Postia balsamea", 
 "^ot:originalLabel": "Oligoporus balsameus JF950570", 
 "^ot:ottId": 93750, 
 "^ot:ottTaxonName": "Postia balsamea", 
 "^ot:treebaseOTUId": "Tl861078"
 }, 
 "otu331656": {
+"@label": "Rhodonia placenta", 
 "^ot:originalLabel": "Postia placenta EF524035", 
 "^ot:ottId": 1069955, 
 "^ot:ottTaxonName": "Rhodonia placenta", 
 "^ot:treebaseOTUId": "Tl861079"
 }, 
 "otu331657": {
+"@label": "Postia dissecta", 
 "^ot:originalLabel": "Postia dissecta Arg12423", 
 "^ot:ottId": 25507, 
 "^ot:ottTaxonName": "Postia dissecta", 
 "^ot:treebaseOTUId": "Tl861080"
 }, 
 "otu331658": {
+"@label": "Antrodiella semisupina", 
 "^ot:originalLabel": "Antrodiella semisupina AF126904", 
 "^ot:ottId": 747624, 
 "^ot:ottTaxonName": "Antrodiella semisupina", 
 "^ot:treebaseOTUId": "Tl861081"
 }, 
 "otu331659": {
+"@label": "Polyporus udus", 
 "^ot:originalLabel": "Neolentiporus maculatissimus Arg92", 
+"^ot:ottId": 802578, 
+"^ot:ottTaxonName": "Polyporus udus", 
 "^ot:treebaseOTUId": "Tl861082"
 }, 
 "otu331660": {
+"@label": "Antrodia serialis", 
 "^ot:originalLabel": "Antrodia serialis DQ491417", 
 "^ot:ottId": 425784, 
 "^ot:ottTaxonName": "Antrodia serialis", 
 "^ot:treebaseOTUId": "Tl861083"
 }, 
 "otu331661": {
+"@label": "Postia leucomallella", 
 "^ot:originalLabel": "Postia leucomalella AY599565", 
 "^ot:ottId": 38318, 
 "^ot:ottTaxonName": "Postia leucomallella", 
 "^ot:treebaseOTUId": "Tl861084"
 }, 
 "otu331662": {
+"@label": "Postia balsamea", 
 "^ot:originalLabel": "Postia balsamea Arg11974", 
 "^ot:ottId": 93750, 
 "^ot:ottTaxonName": "Postia balsamea", 
 "^ot:treebaseOTUId": "Tl861085"
 }, 
 "otu331663": {
+"@label": "Rhodonia placenta", 
 "^ot:originalLabel": "Postia placenta JN592503", 
 "^ot:ottId": 1069955, 
 "^ot:ottTaxonName": "Rhodonia placenta", 
 "^ot:treebaseOTUId": "Tl861086"
 }, 
 "otu331664": {
+"@label": "Ryvardenia campyla", 
 "^ot:originalLabel": "Ryvardenia campyla Ch200", 
 "^ot:ottId": 660161, 
 "^ot:ottTaxonName": "Ryvardenia campyla", 
 "^ot:treebaseOTUId": "Tl861087"
 }, 
 "otu331665": {
+"@label": "Ryvardenia cretacea", 
 "^ot:originalLabel": "Ryvardenia cretacea Aus151", 
 "^ot:ottId": 599589, 
 "^ot:ottTaxonName": "Ryvardenia cretacea", 
 "^ot:treebaseOTUId": "Tl861088"
 }, 
 "otu331666": {
+"@label": "Fibroporia vaillantii", 
 "^ot:originalLabel": "Fibroporia vaillantii Arg 261", 
 "^ot:ottId": 69893, 
 "^ot:ottTaxonName": "Fibroporia vaillantii", 
 "^ot:treebaseOTUId": "Tl861089"
 }, 
 "otu331667": {
+"@label": "Postia caesia", 
 "^ot:originalLabel": "Postia caesia Arg12421", 
 "^ot:ottId": 197789, 
 "^ot:ottTaxonName": "Postia caesia", 
 "^ot:treebaseOTUId": "Tl861090"
 }, 
 "otu331668": {
+"@label": "Postia pelliculosa", 
 "^ot:originalLabel": "Postia pelliculosa Aus64", 
 "^ot:ottId": 626137, 
 "^ot:ottTaxonName": "Postia pelliculosa", 
 "^ot:treebaseOTUId": "Tl861091"
 }, 
 "otu331669": {
+"@label": "Postia pelliculosa", 
 "^ot:originalLabel": "Postia pelliculosa Arg221", 
 "^ot:ottId": 626137, 
 "^ot:ottTaxonName": "Postia pelliculosa", 
 "^ot:treebaseOTUId": "Tl861092"
 }, 
 "otu331670": {
+"@label": "Ryvardenia cretacea", 
 "^ot:originalLabel": "Ryvadenia cretacea Arg182", 
 "^ot:ottId": 599589, 
 "^ot:ottTaxonName": "Ryvardenia cretacea", 
 "^ot:treebaseOTUId": "Tl861093"
 }, 
 "otu331671": {
+"@label": "Postia pelliculosa", 
 "^ot:originalLabel": "Postia pelliculosa NZ75", 
 "^ot:ottId": 626137, 
 "^ot:ottTaxonName": "Postia pelliculosa", 
 "^ot:treebaseOTUId": "Tl861094"
 }, 
 "otu331672": {
+"@label": "Ryvardenia campyla", 
 "^ot:originalLabel": "Ryvardenia campyla JQ390051", 
 "^ot:ottId": 660161, 
 "^ot:ottTaxonName": "Ryvardenia campyla", 
 "^ot:treebaseOTUId": "Tl861095"
 }, 
 "otu331673": {
+"@label": "Polyporus udus", 
 "^ot:originalLabel": "Neolentiporus maculatissimus Arg93", 
+"^ot:ottId": 802578, 
+"^ot:ottTaxonName": "Polyporus udus", 
 "^ot:treebaseOTUId": "Tl861096"
 }, 
 "otu331674": {
+"@label": "Daedalea quercina", 
 "^ot:originalLabel": "Daedalea quercina FJ403214", 
 "^ot:ottId": 1095615, 
 "^ot:ottTaxonName": "Daedalea quercina", 
 "^ot:treebaseOTUId": "Tl861097"
 }, 
 "otu331675": {
+"@label": "Postia balsamea", 
 "^ot:originalLabel": "Oligoporus balsameus AY599566", 
 "^ot:ottId": 93750, 
 "^ot:ottTaxonName": "Postia balsamea", 
 "^ot:treebaseOTUId": "Tl861098"
 }, 
 "otu331676": {
+"@label": "Ryvardenia cretacea", 
 "^ot:originalLabel": "Ryvardenia cretacea CH200", 
 "^ot:ottId": 599589, 
 "^ot:ottTaxonName": "Ryvardenia cretacea", 
 "^ot:treebaseOTUId": "Tl861099"
 }, 
 "otu331677": {
+"@label": "Postia pelliculosa", 
 "^ot:originalLabel": "Postia pelliculosa Arg130", 
 "^ot:ottId": 626137, 
 "^ot:ottTaxonName": "Postia pelliculosa", 
 "^ot:treebaseOTUId": "Tl861100"
 }, 
 "otu331678": {
+"@label": "Amyloporia", 
 "^ot:originalLabel": "Amyloporia nothofaginea Arg 304", 
 "^ot:ottId": 532987, 
 "^ot:ottTaxonName": "Amyloporia", 
 "^ot:treebaseOTUId": "Tl861101"
 }, 
 "otu331679": {
+"@label": "Bjerkandera adusta", 
 "^ot:originalLabel": "Bjerkandera adusta AY618221", 
 "^ot:ottId": 8349, 
 "^ot:ottTaxonName": "Bjerkandera adusta", 
 "^ot:treebaseOTUId": "Tl861102"
 }, 
 "otu331680": {
+"@label": "Postia punctata", 
 "^ot:originalLabel": "Postia punctata CH344", 
 "^ot:ottId": 1030398, 
 "^ot:ottTaxonName": "Postia punctata", 
 "^ot:treebaseOTUId": "Tl861103"
 }, 
 "otu331681": {
+"@label": "Postia leucomallella", 
 "^ot:originalLabel": "Postia leucomalella AJ006663", 
 "^ot:ottId": 38318, 
 "^ot:ottTaxonName": "Postia leucomallella", 
 "^ot:treebaseOTUId": "Tl861104"
 }, 
 "otu331682": {
+"@label": "Postia caesia", 
 "^ot:originalLabel": "Postia caesia AY599567", 
 "^ot:ottId": 197789, 
 "^ot:ottTaxonName": "Postia caesia", 
 "^ot:treebaseOTUId": "Tl861105"
 }, 
 "otu331683": {
+"@label": "Antrodia albida", 
 "^ot:originalLabel": "Antrodia albida DQ491414", 
 "^ot:ottId": 151261, 
 "^ot:ottTaxonName": "Antrodia albida", 
 "^ot:treebaseOTUId": "Tl861106"
 }, 
 "otu331684": {
+"@label": "Postia rennyi", 
 "^ot:originalLabel": "Oligoporus renny AY218416", 
 "^ot:ottId": 1030427, 
 "^ot:ottTaxonName": "Postia rennyi", 
 "^ot:treebaseOTUId": "Tl861107"
 }, 
 "otu331685": {
+"@label": "Postia caesia", 
 "^ot:originalLabel": "Postia caesia Arg174", 
 "^ot:ottId": 197789, 
 "^ot:ottTaxonName": "Postia caesia", 
 "^ot:treebaseOTUId": "Tl861108"
 }, 
 "otu331686": {
+"@label": "Postia punctata", 
 "^ot:originalLabel": "Postia punctata Arg40", 
 "^ot:ottId": 1030398, 
 "^ot:ottTaxonName": "Postia punctata", 
 "^ot:treebaseOTUId": "Tl861109"
 }, 
 "otu331687": {
+"@label": "Postia rennyi", 
 "^ot:originalLabel": "Postia rennyi Arg91", 
 "^ot:ottId": 1030427, 
 "^ot:ottTaxonName": "Postia rennyi", 
 "^ot:treebaseOTUId": "Tl861110"
 }, 
 "otu331688": {
+"@label": "Postia carbophila", 
 "^ot:originalLabel": "Postia carbophila Arg162", 
 "^ot:ottId": 1059118, 
 "^ot:ottTaxonName": "Postia carbophila", 
 "^ot:treebaseOTUId": "Tl861111"
 }, 
 "otu331689": {
+"@label": "Fomitopsis rosea", 
 "^ot:originalLabel": "Fomitopsis rosea DQ491410", 
 "^ot:ottId": 383216, 
 "^ot:ottTaxonName": "Fomitopsis rosea", 
 "^ot:treebaseOTUId": "Tl861112"
 }, 
 "otu331690": {
+"@label": "Ryvardenia campyla", 
 "^ot:originalLabel": "Ryvardenia campyla JQ390052", 
 "^ot:ottId": 660161, 
 "^ot:ottTaxonName": "Ryvardenia campyla", 
 "^ot:treebaseOTUId": "Tl861113"
 }, 
 "otu331691": {
+"@label": "Postia balsamea", 
 "^ot:originalLabel": "Postia balsamea Arg12413", 
 "^ot:ottId": 93750, 
 "^ot:ottTaxonName": "Postia balsamea", 
 "^ot:treebaseOTUId": "Tl861114"
 }, 
 "otu331692": {
+"@label": "Ryvardenia cretacea", 
 "^ot:originalLabel": "Ryvardenia cretacea AUS97", 
 "^ot:ottId": 599589, 
 "^ot:ottTaxonName": "Ryvardenia cretacea", 
 "^ot:treebaseOTUId": "Tl861115"
 }, 
 "otu331693": {
+"@label": "Postia venata", 
 "^ot:originalLabel": "Postia venata Arg12368", 
 "^ot:ottId": 1030370, 
 "^ot:ottTaxonName": "Postia venata", 
 "^ot:treebaseOTUId": "Tl861116"
 }, 
 "otu331694": {
+"@label": "Postia balsamea", 
 "^ot:originalLabel": "Oligoporus balsameus AF518640", 
 "^ot:ottId": 93750, 
 "^ot:ottTaxonName": "Postia balsamea", 
 "^ot:treebaseOTUId": "Tl861117"
 }, 
 "otu331695": {
+"@label": "Fomitopsis pinicola", 
 "^ot:originalLabel": "Fomitopsis pinicola AF287858", 
 "^ot:ottId": 417422, 
 "^ot:ottTaxonName": "Fomitopsis pinicola", 
 "^ot:treebaseOTUId": "Tl861118"
 }, 
 "otu331696": {
+"@label": "Postia rennyi", 
 "^ot:originalLabel": "Oligoporus rennyi AF287876", 
 "^ot:ottId": 1030427, 
 "^ot:ottTaxonName": "Postia rennyi", 
 "^ot:treebaseOTUId": "Tl861119"
 }, 
 "otu331697": {
+"@label": "Antrodia gossypium", 
 "^ot:originalLabel": "Fibroporia gossypium Arg131", 
 "^ot:ottId": 69883, 
 "^ot:ottTaxonName": "Antrodia gossypium", 
 "^ot:treebaseOTUId": "Tl861120"
 }, 
 "otu331698": {
+"@label": "Antrodiella semisupina", 
 "^ot:originalLabel": "Antrodiella semisupina EU232266", 
 "^ot:ottId": 747624, 
 "^ot:ottTaxonName": "Antrodiella semisupina", 
 "^ot:treebaseOTUId": "Tl861121"
 }, 
 "otu331699": {
+"@label": "Polyporus udus", 
 "^ot:originalLabel": "Neolentiporus maculatissimus AF518632", 
+"^ot:ottId": 802578, 
+"^ot:ottTaxonName": "Polyporus udus", 
 "^ot:treebaseOTUId": "Tl861122"
 }, 
 "otu331700": {
+"@label": "Bjerkandera adusta", 
 "^ot:originalLabel": "Bjerkandera adusta AF287848", 
 "^ot:ottId": 8349, 
 "^ot:ottTaxonName": "Bjerkandera adusta", 
 "^ot:treebaseOTUId": "Tl861123"
 }, 
 "otu331701": {
+"@label": "Fibroporia vaillantii", 
 "^ot:originalLabel": "Fibroporia vaillantii AJ583429", 
 "^ot:ottId": 69893, 
 "^ot:ottTaxonName": "Fibroporia vaillantii", 
 "^ot:treebaseOTUId": "Tl861124"
 }, 
 "otu331702": {
+"@label": "Tyromyces lacteus", 
 "^ot:originalLabel": "Oligoporus lacteus |AY293205", 
 "^ot:ottId": 202375, 
 "^ot:ottTaxonName": "Tyromyces lacteus", 
 "^ot:treebaseOTUId": "Tl861125"
 }, 
 "otu331703": {
+"@label": "Antrodia serialis", 
 "^ot:originalLabel": "Antrodia serialis AJ406519", 
 "^ot:ottId": 425784, 
 "^ot:ottTaxonName": "Antrodia serialis", 
 "^ot:treebaseOTUId": "Tl861126"
 }, 
 "otu331704": {
+"@label": "Ryvardenia cretacea", 
 "^ot:originalLabel": "Ryvardenia cretacea Aus150", 
 "^ot:ottId": 599589, 
 "^ot:ottTaxonName": "Ryvardenia cretacea", 
 "^ot:treebaseOTUId": "Tl861127"
 }, 
 "otu331705": {
+"@label": "Daedalea quercina", 
 "^ot:originalLabel": "Daedalea quercina AF518613", 
 "^ot:ottId": 1095615, 
 "^ot:ottTaxonName": "Daedalea quercina", 
 "^ot:treebaseOTUId": "Tl861128"
 }, 
 "otu331706": {
+"@label": "Fomitopsis rosea", 
 "^ot:originalLabel": "Fomitopsis rosea AY333809", 
 "^ot:ottId": 383216, 
 "^ot:ottTaxonName": "Fomitopsis rosea", 
 "^ot:treebaseOTUId": "Tl861129"
 }, 
 "otu331707": {
+"@label": "Antrodia albida", 
 "^ot:originalLabel": "Antrodia albida AY333845", 
 "^ot:ottId": 151261, 
 "^ot:ottTaxonName": "Antrodia albida", 
 "^ot:treebaseOTUId": "Tl861130"
 }, 
 "otu331708": {
+"@label": "Postia caesia", 
 "^ot:originalLabel": "Postia caesia AB569119", 
 "^ot:ottId": 197789, 
 "^ot:ottTaxonName": "Postia caesia", 
 "^ot:treebaseOTUId": "Tl861131"
 }, 
 "otu331709": {
+"@label": "Postia caesia", 
 "^ot:originalLabel": "Postia caesia AB569120", 
 "^ot:ottId": 197789, 
 "^ot:ottTaxonName": "Postia caesia", 
 "^ot:treebaseOTUId": "Tl861132"
 }, 
 "otu331710": {
+"@label": "Antrodia xantha AJ583430", 
 "^ot:originalLabel": "Antrodia xantha AJ583430", 
 "^ot:treebaseOTUId": "Tl861133"
 }, 
 "otu331711": {
+"@label": "Postia leucomallella", 
 "^ot:originalLabel": "Postia leucomallela AF393072", 
 "^ot:ottId": 38318, 
 "^ot:ottTaxonName": "Postia leucomallella", 
@@ -492,7 +528,6 @@
 "@xsi:type": "nex:FloatTree", 
 "^ot:curatedType": "MP, ITS", 
 "^ot:rootNodeId": "node854214", 
-"^ot:tag": "ITS", 
 "edgeBySourceId": {
 "node854214": {
 "edge854215": {

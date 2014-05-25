@@ -15,57 +15,17 @@
 "^ot:agents": {
 "agent": [
 {
-"@description": "validator of NexSON constraints as well as constraints that would allow a study to be imported into the Open Tree of Life's phylogenetic synthesis tools", 
+"@description": "Open Tree NexSON validation", 
 "@id": "peyotl-validator", 
-"@name": "validate_ot_nexson.py", 
+"@name": "api.opentreeoflife.org/validate", 
 "@url": "https://github.com/OpenTreeOfLife/peyotl", 
-"@version": "0.0.3a", 
+"@version": "0.0.4a", 
 "invocation": {
-"checksPerformed": [
-"MISSING_MANDATORY_KEY", 
-"MISSING_OPTIONAL_KEY", 
-"UNRECOGNIZED_KEY", 
-"MISSING_LIST_EXPECTED", 
-"DUPLICATING_SINGLETON_KEY", 
-"REFERENCED_ID_NOT_FOUND", 
-"REPEATED_ID", 
-"REPEATED_OTU", 
-"MULTIPLE_ROOT_NODES", 
-"NO_ROOT_NODE", 
-"MULTIPLE_EDGES_FOR_NODES", 
-"CYCLE_DETECTED", 
-"DISCONNECTED_GRAPH_DETECTED", 
-"INCORRECT_ROOT_NODE_LABEL", 
-"TIP_WITHOUT_OTU", 
-"TIP_WITHOUT_OTT_ID", 
-"MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
-"NON_MONOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
-"INVALID_PROPERTY_VALUE", 
-"PROPERTY_VALUE_NOT_USEFUL", 
-"UNRECOGNIZED_PROPERTY_VALUE", 
-"MULTIPLE_TREES", 
-"UNRECOGNIZED_TAG", 
-"CONFLICTING_PROPERTY_VALUES", 
-"NO_TREES", 
-"DEPRECATED_PROPERTY", 
-"UNPARSEABLE_META", 
-"UNREACHABLE_NODE", 
-"INCORRECT_VALUE_TYPE", 
-"MISSING_CRUCIAL_CONTENT"
-], 
-"commandLine": [
-"--embed", 
-"--agent-only", 
-"-e", 
-"../mig-phyelesystem-scratch/300/validation.json", 
-"-o", 
-"../mig-phyelesystem-scratch/300/final.json", 
-"../mig-phyelesystem-scratch/300/v1.2.1-300.json"
-], 
+"commandLine": [], 
 "otherProperty": [
 {
 "name": "pythonVersion", 
-"value": "2.7.5+"
+"value": "2.7.3"
 }, 
 {
 "name": "pythonImplementation", 
@@ -76,12 +36,15 @@
 }
 ]
 }, 
+"^ot:annotationEvents": {
+"annotation": []
+}, 
 "^ot:curatorName": "Romina Gazis", 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S1011"
 }, 
 "^ot:focalClade": 359501, 
-"^ot:focalCladeOTTTaxonName": "Hypocrea", 
+"^ot:focalCladeOTTTaxonName": "Trichoderma", 
 "^ot:otusElementOrder": [
 "otus300"
 ], 
@@ -95,144 +58,196 @@
 "otus300": {
 "otuById": {
 "otu70443": {
+"@label": "Trichoderma hamatum", 
 "^ot:originalLabel": "Trichoderma hamatum", 
+"^ot:ottId": 499334, 
+"^ot:ottTaxonName": "Trichoderma hamatum", 
 "^ot:treebaseOTUId": "Tl138666"
 }, 
 "otu70444": {
+"@label": "Hypocrea lacuwombatensis", 
 "^ot:originalLabel": "Hypocrea lacuwombatensis", 
 "^ot:ottId": 469674, 
 "^ot:ottTaxonName": "Hypocrea lacuwombatensis", 
 "^ot:treebaseOTUId": "Tl138671"
 }, 
 "otu70445": {
+"@label": "Trichoderma tomentosum", 
 "^ot:originalLabel": "Trichoderma tomentosum", 
+"^ot:ottId": 626670, 
+"^ot:ottTaxonName": "Trichoderma tomentosum", 
 "^ot:treebaseOTUId": "Tl138678"
 }, 
 "otu70446": {
+"@label": "Trichoderma piluliferum", 
 "^ot:originalLabel": "Hypocrea pilulifera", 
+"^ot:ottId": 595323, 
+"^ot:ottTaxonName": "Trichoderma piluliferum", 
 "^ot:treebaseOTUId": "Tl138679"
 }, 
 "otu70447": {
+"@label": "Hypocrea stellata", 
 "^ot:originalLabel": "Hypocrea stellata", 
 "^ot:ottId": 89142, 
 "^ot:ottTaxonName": "Hypocrea stellata", 
 "^ot:treebaseOTUId": "Tl138686"
 }, 
 "otu70448": {
+"@label": "Hypocrea parapilulifera", 
 "^ot:originalLabel": "Hypocrea parapilulifera", 
 "^ot:ottId": 89139, 
 "^ot:ottTaxonName": "Hypocrea parapilulifera", 
 "^ot:treebaseOTUId": "Tl138688"
 }, 
 "otu70449": {
+"@label": "Trichoderma minutisporum", 
 "^ot:originalLabel": "Trichoderma minutisporum CBS 901 72", 
+"^ot:ottId": 314049, 
+"^ot:ottTaxonName": "Trichoderma minutisporum", 
 "^ot:treebaseOTUId": "Tl14516"
 }, 
 "otu70450": {
+"@label": "Trichoderma minutisporum", 
 "^ot:originalLabel": "Trichoderma minutisporum DAOM 178046", 
+"^ot:ottId": 314049, 
+"^ot:ottTaxonName": "Trichoderma minutisporum", 
 "^ot:treebaseOTUId": "Tl14517"
 }, 
 "otu70451": {
+"@label": "Trichoderma croceum", 
 "^ot:originalLabel": "Trichoderma croceum", 
+"^ot:ottId": 443170, 
+"^ot:ottTaxonName": "Trichoderma croceum", 
 "^ot:treebaseOTUId": "Tl14518"
 }, 
 "otu70452": {
+"@label": "Trichoderma minutisporum", 
 "^ot:originalLabel": "Trichoderma minutisporum DAOM 191102", 
+"^ot:ottId": 314049, 
+"^ot:ottTaxonName": "Trichoderma minutisporum", 
 "^ot:treebaseOTUId": "Tl14519"
 }, 
 "otu70453": {
+"@label": "Hypocrea pachybasioides", 
 "^ot:originalLabel": "Hypocrea pachybasioides G J S 99 221", 
 "^ot:ottId": 985390, 
 "^ot:ottTaxonName": "Hypocrea pachybasioides", 
 "^ot:treebaseOTUId": "Tl14520"
 }, 
 "otu70454": {
+"@label": "Hypocrea pachybasioides", 
 "^ot:originalLabel": "Hypocrea pachybasioides G J S 88 59", 
 "^ot:ottId": 985390, 
 "^ot:ottTaxonName": "Hypocrea pachybasioides", 
 "^ot:treebaseOTUId": "Tl14522"
 }, 
 "otu70455": {
+"@label": "Trichoderma minutisporum", 
 "^ot:originalLabel": "Trichoderma minutisporum CBS 341 93", 
+"^ot:ottId": 314049, 
+"^ot:ottTaxonName": "Trichoderma minutisporum", 
 "^ot:treebaseOTUId": "Tl14524"
 }, 
 "otu70456": {
+"@label": "Hypocrea pachybasioides", 
 "^ot:originalLabel": "Hypocrea pachybasioides G J S 90 126", 
 "^ot:ottId": 985390, 
 "^ot:ottTaxonName": "Hypocrea pachybasioides", 
 "^ot:treebaseOTUId": "Tl14525"
 }, 
 "otu70457": {
+"@label": "Hypocrea pachybasioides", 
 "^ot:originalLabel": "Hypocrea pachybasioides G J S 90 28", 
 "^ot:ottId": 985390, 
 "^ot:ottTaxonName": "Hypocrea pachybasioides", 
 "^ot:treebaseOTUId": "Tl14526"
 }, 
 "otu70458": {
+"@label": "Trichoderma minutisporum", 
 "^ot:originalLabel": "Hypocrea minutispora ATCC 28012", 
+"^ot:ottId": 314049, 
+"^ot:ottTaxonName": "Trichoderma minutisporum", 
 "^ot:treebaseOTUId": "Tl14528"
 }, 
 "otu70459": {
+"@label": "Trichoderma minutisporum", 
 "^ot:originalLabel": "Hypocrea minutispora G J S 90 112", 
+"^ot:ottId": 314049, 
+"^ot:ottTaxonName": "Trichoderma minutisporum", 
 "^ot:treebaseOTUId": "Tl14529"
 }, 
 "otu70460": {
+"@label": "Hypocrea pachybasioides", 
 "^ot:originalLabel": "Hypocrea pachybasioides G J S 86 540", 
 "^ot:ottId": 985390, 
 "^ot:ottTaxonName": "Hypocrea pachybasioides", 
 "^ot:treebaseOTUId": "Tl14530"
 }, 
 "otu70461": {
+"@label": "Hypocrea pachybasioides", 
 "^ot:originalLabel": "Hypocrea pachybasioides G J S 99 901", 
 "^ot:ottId": 985390, 
 "^ot:ottTaxonName": "Hypocrea pachybasioides", 
 "^ot:treebaseOTUId": "Tl14531"
 }, 
 "otu70462": {
+"@label": "Trichoderma minutisporum", 
 "^ot:originalLabel": "Hypocrea minutispora G J S 90 115", 
+"^ot:ottId": 314049, 
+"^ot:ottTaxonName": "Trichoderma minutisporum", 
 "^ot:treebaseOTUId": "Tl14532"
 }, 
 "otu70463": {
+"@label": "Hypocrea pachybasioides", 
 "^ot:originalLabel": "Hypocrea pachybasioides G J S 90 163", 
 "^ot:ottId": 985390, 
 "^ot:ottTaxonName": "Hypocrea pachybasioides", 
 "^ot:treebaseOTUId": "Tl14533"
 }, 
 "otu70464": {
+"@label": "Hypocrea pachybasioides", 
 "^ot:originalLabel": "Hypocrea pachybasioides G J S 90 116", 
 "^ot:ottId": 985390, 
 "^ot:ottTaxonName": "Hypocrea pachybasioides", 
 "^ot:treebaseOTUId": "Tl14534"
 }, 
 "otu70465": {
+"@label": "Trichoderma minutisporum", 
 "^ot:originalLabel": "Hypocrea minutispora G J S 90 82", 
+"^ot:ottId": 314049, 
+"^ot:ottTaxonName": "Trichoderma minutisporum", 
 "^ot:treebaseOTUId": "Tl14536"
 }, 
 "otu70466": {
+"@label": "Hypocrea pachybasioides", 
 "^ot:originalLabel": "Hypocrea pachybasioides G J S 89 135", 
 "^ot:ottId": 985390, 
 "^ot:ottTaxonName": "Hypocrea pachybasioides", 
 "^ot:treebaseOTUId": "Tl14537"
 }, 
 "otu70467": {
+"@label": "Hypocrea pachybasioides", 
 "^ot:originalLabel": "Hypocrea pachybasioides G J S 99 207", 
 "^ot:ottId": 985390, 
 "^ot:ottTaxonName": "Hypocrea pachybasioides", 
 "^ot:treebaseOTUId": "Tl14538"
 }, 
 "otu70468": {
+"@label": "Trichoderma harzianum", 
 "^ot:originalLabel": "Trichoderma harzianum", 
 "^ot:ottId": 939829, 
-"^ot:ottTaxonName": "Hypocrea lixii", 
+"^ot:ottTaxonName": "Trichoderma harzianum", 
 "^ot:treebaseOTUId": "Tl8558"
 }, 
 "otu70469": {
+"@label": "Trichoderma virens", 
 "^ot:originalLabel": "Trichoderma virens", 
 "^ot:ottId": 409099, 
-"^ot:ottTaxonName": "Gliocladium flavofuscum", 
+"^ot:ottTaxonName": "Trichoderma virens", 
 "^ot:treebaseOTUId": "Tl8577"
 }, 
 "otu70470": {
+"@label": "Hypocrea pachybasioides", 
 "^ot:originalLabel": "Trichoderma polysporum", 
 "^ot:ottId": 985390, 
 "^ot:ottTaxonName": "Hypocrea pachybasioides", 
@@ -254,7 +269,9 @@
 "tree217": {
 "@xsi:type": "nex:FloatTree", 
 "^ot:curatedType": "MP, ITS + EF-1 + ech42", 
+"^ot:inGroupClade": "node179690", 
 "^ot:rootNodeId": "node179682", 
+"^ot:tag": "Choose me", 
 "edgeBySourceId": {
 "node179682": {
 "edge179683": {

@@ -15,57 +15,17 @@
 "^ot:agents": {
 "agent": [
 {
-"@description": "validator of NexSON constraints as well as constraints that would allow a study to be imported into the Open Tree of Life's phylogenetic synthesis tools", 
+"@description": "Open Tree NexSON validation", 
 "@id": "peyotl-validator", 
-"@name": "validate_ot_nexson.py", 
+"@name": "api.opentreeoflife.org/validate", 
 "@url": "https://github.com/OpenTreeOfLife/peyotl", 
-"@version": "0.0.3a", 
+"@version": "0.0.4a", 
 "invocation": {
-"checksPerformed": [
-"MISSING_MANDATORY_KEY", 
-"MISSING_OPTIONAL_KEY", 
-"UNRECOGNIZED_KEY", 
-"MISSING_LIST_EXPECTED", 
-"DUPLICATING_SINGLETON_KEY", 
-"REFERENCED_ID_NOT_FOUND", 
-"REPEATED_ID", 
-"REPEATED_OTU", 
-"MULTIPLE_ROOT_NODES", 
-"NO_ROOT_NODE", 
-"MULTIPLE_EDGES_FOR_NODES", 
-"CYCLE_DETECTED", 
-"DISCONNECTED_GRAPH_DETECTED", 
-"INCORRECT_ROOT_NODE_LABEL", 
-"TIP_WITHOUT_OTU", 
-"TIP_WITHOUT_OTT_ID", 
-"MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
-"NON_MONOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
-"INVALID_PROPERTY_VALUE", 
-"PROPERTY_VALUE_NOT_USEFUL", 
-"UNRECOGNIZED_PROPERTY_VALUE", 
-"MULTIPLE_TREES", 
-"UNRECOGNIZED_TAG", 
-"CONFLICTING_PROPERTY_VALUES", 
-"NO_TREES", 
-"DEPRECATED_PROPERTY", 
-"UNPARSEABLE_META", 
-"UNREACHABLE_NODE", 
-"INCORRECT_VALUE_TYPE", 
-"MISSING_CRUCIAL_CONTENT"
-], 
-"commandLine": [
-"--embed", 
-"--agent-only", 
-"-e", 
-"../mig-phyelesystem-scratch/334/validation.json", 
-"-o", 
-"../mig-phyelesystem-scratch/334/final.json", 
-"../mig-phyelesystem-scratch/334/v1.2.1-334.json"
-], 
+"commandLine": [], 
 "otherProperty": [
 {
 "name": "pythonVersion", 
-"value": "2.7.5+"
+"value": "2.7.3"
 }, 
 {
 "name": "pythonImplementation", 
@@ -75,6 +35,9 @@
 }
 }
 ]
+}, 
+"^ot:annotationEvents": {
+"annotation": []
 }, 
 "^ot:curatorName": "Romina Gazis", 
 "^ot:dataDeposit": {
@@ -91,6 +54,11 @@
 }, 
 "^ot:studyPublicationReference": "Liew E., Hyde K., & Aptroot A. 2002. An evaluation of the monophyly of Massarina based on ribosomal DNA sequences. Mycologia, 94(5): 803?813.", 
 "^ot:studyYear": 2002, 
+"^ot:tag": [
+"ITS", 
+"MP", 
+"SSU"
+], 
 "^ot:treesElementOrder": [
 "trees334"
 ], 
@@ -98,114 +66,137 @@
 "otus334": {
 "otuById": {
 "otu74527": {
+"@label": "Pleospora herbarum", 
 "^ot:originalLabel": "Pleospora herbarum", 
 "^ot:ottId": 282723, 
 "^ot:ottTaxonName": "Pleospora herbarum", 
 "^ot:treebaseOTUId": "Tl124589"
 }, 
 "otu74528": {
+"@label": "Lophiostoma caulium", 
 "^ot:originalLabel": "Lophiostoma caulium", 
 "^ot:ottId": 200731, 
 "^ot:ottTaxonName": "Lophiostoma caulium", 
 "^ot:treebaseOTUId": "Tl124590"
 }, 
 "otu74529": {
+"@label": "Lophiostoma vagabundum", 
 "^ot:originalLabel": "Lophiostoma vagabundum", 
 "^ot:ottId": 513345, 
 "^ot:ottTaxonName": "Lophiostoma vagabundum", 
 "^ot:treebaseOTUId": "Tl124592"
 }, 
 "otu74530": {
+"@label": "Lophiostoma arundinis", 
 "^ot:originalLabel": "Lophiostoma arundinis", 
 "^ot:ottId": 513300, 
 "^ot:ottTaxonName": "Lophiostoma arundinis", 
 "^ot:treebaseOTUId": "Tl124593"
 }, 
 "otu74531": {
+"@label": "Botryosphaeria quercuum", 
 "^ot:originalLabel": "Botryosphaeria quercuum", 
 "^ot:ottId": 518725, 
 "^ot:ottTaxonName": "Botryosphaeria quercuum", 
 "^ot:treebaseOTUId": "Tl124598"
 }, 
 "otu74532": {
+"@label": "Massarina bipolaris", 
 "^ot:originalLabel": "Massarina bipolaris", 
 "^ot:ottId": 517149, 
 "^ot:ottTaxonName": "Massarina bipolaris", 
 "^ot:treebaseOTUId": "Tl124600"
 }, 
 "otu74533": {
+"@label": "Morosphaeria ramunculicola", 
 "^ot:originalLabel": "Massarina ramunculicola", 
 "^ot:ottId": 245399, 
 "^ot:ottTaxonName": "Morosphaeria ramunculicola", 
 "^ot:treebaseOTUId": "Tl124601"
 }, 
 "otu74534": {
+"@label": "Lophiotrema rubi", 
 "^ot:originalLabel": "Massarina rubi", 
+"^ot:ottId": 5318717, 
+"^ot:ottTaxonName": "Lophiotrema rubi", 
 "^ot:treebaseOTUId": "Tl124602"
 }, 
 "otu74535": {
+"@label": "Leptospora rubella", 
 "^ot:originalLabel": "Leptospora rubella", 
+"^ot:ottId": 139335, 
+"^ot:ottTaxonName": "Leptospora rubella", 
 "^ot:treebaseOTUId": "Tl124605"
 }, 
 "otu74536": {
+"@label": "Massarina fronisubmersa", 
 "^ot:originalLabel": "Massarina fronsisubmersa", 
+"^ot:ottId": 245388, 
+"^ot:ottTaxonName": "Massarina fronisubmersa", 
 "^ot:treebaseOTUId": "Tl124606"
 }, 
 "otu74537": {
+"@label": "Montagnula opulenta", 
 "^ot:originalLabel": "Montagnula opulenta", 
 "^ot:ottId": 87444, 
 "^ot:ottTaxonName": "Montagnula opulenta", 
 "^ot:treebaseOTUId": "Tl124608"
 }, 
 "otu74538": {
+"@label": "Massarina eburnea", 
 "^ot:originalLabel": "Massarina eburnea 2", 
 "^ot:ottId": 217893, 
 "^ot:ottTaxonName": "Massarina eburnea", 
 "^ot:treebaseOTUId": "Tl20355"
 }, 
 "otu74539": {
+"@label": "Massarina eburnea", 
 "^ot:originalLabel": "Massarina eburnea 1", 
 "^ot:ottId": 217893, 
 "^ot:ottTaxonName": "Massarina eburnea", 
 "^ot:treebaseOTUId": "Tl20356"
 }, 
 "otu74540": {
+"@label": "Botryosphaeria sp.", 
 "^ot:originalLabel": "Botryosphaeria sp.", 
-"^ot:ottId": 33893, 
-"^ot:ottTaxonName": "Botryosphaeria", 
 "^ot:treebaseOTUId": "Tl20357"
 }, 
 "otu74541": {
+"@label": "Massarina armatispora", 
 "^ot:originalLabel": "Massarina armatispora", 
 "^ot:treebaseOTUId": "Tl20358"
 }, 
 "otu74542": {
+"@label": "Massarina thalassiae", 
 "^ot:originalLabel": "Massarina thalassiae", 
 "^ot:ottId": 295645, 
 "^ot:ottTaxonName": "Massarina thalassiae", 
 "^ot:treebaseOTUId": "Tl20361"
 }, 
 "otu74543": {
+"@label": "Massarina papulosa", 
 "^ot:originalLabel": "Massarina papulosa", 
 "^ot:treebaseOTUId": "Tl20363"
 }, 
 "otu74544": {
+"@label": "Vaginatispora aquatica", 
 "^ot:originalLabel": "Vaginatispora aquatica", 
-"^ot:ottId": 362704, 
-"^ot:ottTaxonName": "Acrocalymma aquatica", 
+"^ot:ottId": 5318743, 
+"^ot:ottTaxonName": "Vaginatispora aquatica", 
 "^ot:treebaseOTUId": "Tl20364"
 }, 
 "otu74545": {
+"@label": "Massarina corticola", 
 "^ot:originalLabel": "Massarina corticola", 
 "^ot:treebaseOTUId": "Tl20366"
 }, 
 "otu74546": {
+"@label": "Wettsteinina lacrustis", 
 "^ot:originalLabel": "Wettsteinina lacrustis", 
-"^ot:ottId": 389197, 
-"^ot:ottTaxonName": "Wettsteinia", 
 "^ot:treebaseOTUId": "Tl20367"
 }, 
 "otu74547": {
+"@label": "Massarina walkeri", 
 "^ot:originalLabel": "Massarina walkeri", 
 "^ot:ottId": 362685, 
 "^ot:ottTaxonName": "Massarina walkeri", 
@@ -228,6 +219,11 @@
 "^ot:curatedType": "MP, ITS", 
 "^ot:inGroupClade": "node196720", 
 "^ot:rootNodeId": "node196717", 
+"^ot:tag": [
+"Choose me", 
+"MP", 
+"ITS"
+], 
 "edgeBySourceId": {
 "node196717": {
 "edge196718": {

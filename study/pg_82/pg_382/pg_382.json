@@ -15,57 +15,17 @@
 "^ot:agents": {
 "agent": [
 {
-"@description": "validator of NexSON constraints as well as constraints that would allow a study to be imported into the Open Tree of Life's phylogenetic synthesis tools", 
+"@description": "Open Tree NexSON validation", 
 "@id": "peyotl-validator", 
-"@name": "validate_ot_nexson.py", 
+"@name": "api.opentreeoflife.org/validate", 
 "@url": "https://github.com/OpenTreeOfLife/peyotl", 
-"@version": "0.0.3a", 
+"@version": "0.0.4a", 
 "invocation": {
-"checksPerformed": [
-"MISSING_MANDATORY_KEY", 
-"MISSING_OPTIONAL_KEY", 
-"UNRECOGNIZED_KEY", 
-"MISSING_LIST_EXPECTED", 
-"DUPLICATING_SINGLETON_KEY", 
-"REFERENCED_ID_NOT_FOUND", 
-"REPEATED_ID", 
-"REPEATED_OTU", 
-"MULTIPLE_ROOT_NODES", 
-"NO_ROOT_NODE", 
-"MULTIPLE_EDGES_FOR_NODES", 
-"CYCLE_DETECTED", 
-"DISCONNECTED_GRAPH_DETECTED", 
-"INCORRECT_ROOT_NODE_LABEL", 
-"TIP_WITHOUT_OTU", 
-"TIP_WITHOUT_OTT_ID", 
-"MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
-"NON_MONOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
-"INVALID_PROPERTY_VALUE", 
-"PROPERTY_VALUE_NOT_USEFUL", 
-"UNRECOGNIZED_PROPERTY_VALUE", 
-"MULTIPLE_TREES", 
-"UNRECOGNIZED_TAG", 
-"CONFLICTING_PROPERTY_VALUES", 
-"NO_TREES", 
-"DEPRECATED_PROPERTY", 
-"UNPARSEABLE_META", 
-"UNREACHABLE_NODE", 
-"INCORRECT_VALUE_TYPE", 
-"MISSING_CRUCIAL_CONTENT"
-], 
-"commandLine": [
-"--embed", 
-"--agent-only", 
-"-e", 
-"../mig-phyelesystem-scratch/382/validation.json", 
-"-o", 
-"../mig-phyelesystem-scratch/382/final.json", 
-"../mig-phyelesystem-scratch/382/v1.2.1-382.json"
-], 
+"commandLine": [], 
 "otherProperty": [
 {
 "name": "pythonVersion", 
-"value": "2.7.5+"
+"value": "2.7.3"
 }, 
 {
 "name": "pythonImplementation", 
@@ -75,6 +35,9 @@
 }
 }
 ]
+}, 
+"^ot:annotationEvents": {
+"annotation": []
 }, 
 "^ot:curatorName": "Romina Gazis", 
 "^ot:dataDeposit": {
@@ -91,6 +54,7 @@
 }, 
 "^ot:studyPublicationReference": "Myburg, Henrietta, Marieka Gryzenhout, Brenda D. Wingfield, R. Jay Stipes, and Michael J. Wingfield. \"Phylogenetic relationships of Cryphonectria and Endothia species, based on DNA sequence data and morphology.\" Mycologia 96, no. 5 (2004): 990-1001.", 
 "^ot:studyYear": 2004, 
+"^ot:tag": "terminals contain geographic info", 
 "^ot:treesElementOrder": [
 "trees382"
 ], 
@@ -98,160 +62,194 @@
 "otus382": {
 "otuById": {
 "otu76717": {
+"@label": "Valsaceae", 
 "^ot:originalLabel": "Valsaceae Unidentified NEW ZEALAND CMW 10470", 
 "^ot:ottId": 103004, 
 "^ot:ottTaxonName": "Valsaceae", 
 "^ot:treebaseOTUId": "Tl34091"
 }, 
 "otu76718": {
+"@label": "Chrysoporthe cubensis", 
 "^ot:originalLabel": "Cryphonectria cubensis SOUTH AFRICA CMW 2113", 
 "^ot:ottId": 1052899, 
 "^ot:ottTaxonName": "Chrysoporthe cubensis", 
 "^ot:treebaseOTUId": "Tl34092"
 }, 
 "otu76719": {
+"@label": "Chrysoporthe cubensis", 
 "^ot:originalLabel": "Cryphonectria cubensis AUSTRALIA CMW 2632", 
 "^ot:ottId": 1052899, 
 "^ot:ottTaxonName": "Chrysoporthe cubensis", 
 "^ot:treebaseOTUId": "Tl34093"
 }, 
 "otu76720": {
+"@label": "Chrysoporthe cubensis", 
 "^ot:originalLabel": "Cryphonectria cubensis VENEZUELA CMW 8757", 
 "^ot:ottId": 1052899, 
 "^ot:ottTaxonName": "Chrysoporthe cubensis", 
 "^ot:treebaseOTUId": "Tl34094"
 }, 
 "otu76721": {
+"@label": "Holocryphia eucalypti", 
 "^ot:originalLabel": "Cryphonectria eucalypti SOUTH AFRICA CMW 7036", 
 "^ot:ottId": 60066, 
 "^ot:ottTaxonName": "Holocryphia eucalypti", 
 "^ot:treebaseOTUId": "Tl34095"
 }, 
 "otu76722": {
+"@label": "Cryphonectria radicalis", 
 "^ot:originalLabel": "Cryphonectria radicalis ITALY CMW 10477", 
 "^ot:ottId": 412515, 
 "^ot:ottTaxonName": "Cryphonectria radicalis", 
 "^ot:treebaseOTUId": "Tl34096"
 }, 
 "otu76723": {
+"@label": "Chrysoporthe cubensis", 
 "^ot:originalLabel": "Cryphonectria cubensis SOUTH AFRICA CMW 8755", 
 "^ot:ottId": 1052899, 
 "^ot:ottTaxonName": "Chrysoporthe cubensis", 
 "^ot:treebaseOTUId": "Tl34097"
 }, 
 "otu76724": {
+"@label": "Chrysoporthe cubensis", 
 "^ot:originalLabel": "Cryphonectria cubensis CHINA CMW 1840", 
 "^ot:ottId": 1052899, 
 "^ot:ottTaxonName": "Chrysoporthe cubensis", 
 "^ot:treebaseOTUId": "Tl34098"
 }, 
 "otu76725": {
+"@label": "Diaporthe ambigua NETHERLANDS CMW 2498", 
 "^ot:originalLabel": "Diaporthe ambigua NETHERLANDS CMW 2498", 
 "^ot:treebaseOTUId": "Tl34099"
 }, 
 "otu76726": {
+"@label": "Chrysoporthe cubensis", 
 "^ot:originalLabel": "Cryphonectria cubensis CONGO CMW 10453", 
 "^ot:ottId": 1052899, 
 "^ot:ottTaxonName": "Chrysoporthe cubensis", 
 "^ot:treebaseOTUId": "Tl34100"
 }, 
 "otu76727": {
+"@label": "Cryphonectria parasitica", 
 "^ot:originalLabel": "Cryphonectria parasitica USA CMW 1651", 
 "^ot:ottId": 103005, 
 "^ot:ottTaxonName": "Cryphonectria parasitica", 
 "^ot:treebaseOTUId": "Tl34101"
 }, 
 "otu76728": {
+"@label": "Endothia radicalis", 
 "^ot:originalLabel": "Endothia gyrosa USA CMW 2091", 
+"^ot:ottId": 5316851, 
+"^ot:ottTaxonName": "Endothia radicalis", 
 "^ot:treebaseOTUId": "Tl34102"
 }, 
 "otu76729": {
+"@label": "Holocryphia eucalypti", 
 "^ot:originalLabel": "Cryphonectria eucalypti AUSTRALIA CMW 7037", 
 "^ot:ottId": 60066, 
 "^ot:ottTaxonName": "Holocryphia eucalypti", 
 "^ot:treebaseOTUId": "Tl34103"
 }, 
 "otu76730": {
+"@label": "Chrysoporthe cubensis", 
 "^ot:originalLabel": "Cryphonectria cubensis BRAZIL CMW 1853", 
 "^ot:ottId": 1052899, 
 "^ot:ottTaxonName": "Chrysoporthe cubensis", 
 "^ot:treebaseOTUId": "Tl34104"
 }, 
 "otu76731": {
+"@label": "Valsaceae", 
 "^ot:originalLabel": "Valsaceae Unidentified NEW ZEALAND CMW 10469", 
 "^ot:ottId": 103004, 
 "^ot:ottTaxonName": "Valsaceae", 
 "^ot:treebaseOTUId": "Tl34105"
 }, 
 "otu76732": {
+"@label": "Chrysoporthe cubensis", 
 "^ot:originalLabel": "Cryphonectria cubensis VENEZUELA CMW 8758", 
 "^ot:ottId": 1052899, 
 "^ot:ottTaxonName": "Chrysoporthe cubensis", 
 "^ot:treebaseOTUId": "Tl34106"
 }, 
 "otu76733": {
+"@label": "Cryphonectria radicalis", 
 "^ot:originalLabel": "Cryphonectria radicalis ITALY CMW 10484", 
 "^ot:ottId": 412515, 
 "^ot:ottTaxonName": "Cryphonectria radicalis", 
 "^ot:treebaseOTUId": "Tl34107"
 }, 
 "otu76734": {
+"@label": "Valsaceae", 
 "^ot:originalLabel": "Valsaceae Unidentified NEW ZEALAND CMW 10471", 
 "^ot:ottId": 103004, 
 "^ot:ottTaxonName": "Valsaceae", 
 "^ot:treebaseOTUId": "Tl34108"
 }, 
 "otu76735": {
+"@label": "Endothia viridistroma", 
 "^ot:originalLabel": "Endothia viridistroma USA CMW 10454", 
 "^ot:ottId": 48024, 
 "^ot:ottTaxonName": "Endothia viridistroma", 
 "^ot:treebaseOTUId": "Tl34109"
 }, 
 "otu76736": {
+"@label": "Endothia radicalis", 
 "^ot:originalLabel": "Endothia gyrosa USA CMW 10442", 
+"^ot:ottId": 5316851, 
+"^ot:ottTaxonName": "Endothia radicalis", 
 "^ot:treebaseOTUId": "Tl34110"
 }, 
 "otu76737": {
+"@label": "Chrysoporthe cubensis", 
 "^ot:originalLabel": "Cryphonectria cubensis SOUTH AFRICA CMW 62", 
 "^ot:ottId": 1052899, 
 "^ot:ottTaxonName": "Chrysoporthe cubensis", 
 "^ot:treebaseOTUId": "Tl34111"
 }, 
 "otu76738": {
+"@label": "Endothiella singularis", 
 "^ot:originalLabel": "Endothia singularis USA CMW 10465", 
+"^ot:ottId": 4927308, 
+"^ot:ottTaxonName": "Endothiella singularis", 
 "^ot:treebaseOTUId": "Tl34112"
 }, 
 "otu76739": {
+"@label": "Cryphonectria radicalis", 
 "^ot:originalLabel": "Cryphonectria radicalis PORTUGAL CMW 10436", 
 "^ot:ottId": 412515, 
 "^ot:ottTaxonName": "Cryphonectria radicalis", 
 "^ot:treebaseOTUId": "Tl34113"
 }, 
 "otu76740": {
+"@label": "Chrysoporthe cubensis", 
 "^ot:originalLabel": "Cryphonectria cubensis INDONESIA CMW 8756", 
 "^ot:ottId": 1052899, 
 "^ot:ottTaxonName": "Chrysoporthe cubensis", 
 "^ot:treebaseOTUId": "Tl34114"
 }, 
 "otu76741": {
+"@label": "Cryphonectria parasitica", 
 "^ot:originalLabel": "Cryphonectria parasitica USA CMW 1652", 
 "^ot:ottId": 103005, 
 "^ot:ottTaxonName": "Cryphonectria parasitica", 
 "^ot:treebaseOTUId": "Tl34115"
 }, 
 "otu76742": {
+"@label": "Cryphonectria radicalis", 
 "^ot:originalLabel": "Cryphonectria radicalis ITALY CMW 10455", 
 "^ot:ottId": 412515, 
 "^ot:ottTaxonName": "Cryphonectria radicalis", 
 "^ot:treebaseOTUId": "Tl34116"
 }, 
 "otu76743": {
+"@label": "Cryphonectria nitschkei", 
 "^ot:originalLabel": "Cryphonectria nitschkei JAPAN CMW 10518", 
 "^ot:ottId": 918891, 
 "^ot:ottTaxonName": "Cryphonectria nitschkei", 
 "^ot:treebaseOTUId": "Tl34117"
 }, 
 "otu76744": {
+"@label": "Cryphonectria macrospora", 
 "^ot:originalLabel": "Cryphonectria macrospora JAPAN CMW 10463", 
 "^ot:ottId": 60069, 
 "^ot:ottTaxonName": "Cryphonectria macrospora", 

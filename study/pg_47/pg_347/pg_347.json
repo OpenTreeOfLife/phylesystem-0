@@ -15,57 +15,17 @@
 "^ot:agents": {
 "agent": [
 {
-"@description": "validator of NexSON constraints as well as constraints that would allow a study to be imported into the Open Tree of Life's phylogenetic synthesis tools", 
+"@description": "Open Tree NexSON validation", 
 "@id": "peyotl-validator", 
-"@name": "validate_ot_nexson.py", 
+"@name": "api.opentreeoflife.org/validate", 
 "@url": "https://github.com/OpenTreeOfLife/peyotl", 
-"@version": "0.0.3a", 
+"@version": "0.0.4a", 
 "invocation": {
-"checksPerformed": [
-"MISSING_MANDATORY_KEY", 
-"MISSING_OPTIONAL_KEY", 
-"UNRECOGNIZED_KEY", 
-"MISSING_LIST_EXPECTED", 
-"DUPLICATING_SINGLETON_KEY", 
-"REFERENCED_ID_NOT_FOUND", 
-"REPEATED_ID", 
-"REPEATED_OTU", 
-"MULTIPLE_ROOT_NODES", 
-"NO_ROOT_NODE", 
-"MULTIPLE_EDGES_FOR_NODES", 
-"CYCLE_DETECTED", 
-"DISCONNECTED_GRAPH_DETECTED", 
-"INCORRECT_ROOT_NODE_LABEL", 
-"TIP_WITHOUT_OTU", 
-"TIP_WITHOUT_OTT_ID", 
-"MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
-"NON_MONOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
-"INVALID_PROPERTY_VALUE", 
-"PROPERTY_VALUE_NOT_USEFUL", 
-"UNRECOGNIZED_PROPERTY_VALUE", 
-"MULTIPLE_TREES", 
-"UNRECOGNIZED_TAG", 
-"CONFLICTING_PROPERTY_VALUES", 
-"NO_TREES", 
-"DEPRECATED_PROPERTY", 
-"UNPARSEABLE_META", 
-"UNREACHABLE_NODE", 
-"INCORRECT_VALUE_TYPE", 
-"MISSING_CRUCIAL_CONTENT"
-], 
-"commandLine": [
-"--embed", 
-"--agent-only", 
-"-e", 
-"../mig-phyelesystem-scratch/347/validation.json", 
-"-o", 
-"../mig-phyelesystem-scratch/347/final.json", 
-"../mig-phyelesystem-scratch/347/v1.2.1-347.json"
-], 
+"commandLine": [], 
 "otherProperty": [
 {
 "name": "pythonVersion", 
-"value": "2.7.5+"
+"value": "2.7.3"
 }, 
 {
 "name": "pythonImplementation", 
@@ -75,6 +35,9 @@
 }
 }
 ]
+}, 
+"^ot:annotationEvents": {
+"annotation": []
 }, 
 "^ot:curatorName": "Romina Gazis", 
 "^ot:dataDeposit": {
@@ -91,6 +54,7 @@
 }, 
 "^ot:studyPublicationReference": "Lickey E., Hughes K., & Petersen R. 2002. Biogeographical patterns in Artomyces pyxidatus. Mycologia, 94(3): 461-471.", 
 "^ot:studyYear": 2002, 
+"^ot:tag": "population study", 
 "^ot:treesElementOrder": [
 "trees347"
 ], 
@@ -98,84 +62,98 @@
 "otus347": {
 "otuById": {
 "otu75196": {
+"@label": "Artomyces microsporus", 
 "^ot:originalLabel": "Artomyces microsporus KY5352", 
 "^ot:ottId": 1029136, 
 "^ot:ottTaxonName": "Artomyces microsporus", 
 "^ot:treebaseOTUId": "Tl4588"
 }, 
 "otu75197": {
+"@label": "Artomyces pyxidatus", 
 "^ot:originalLabel": "Artomyces pyxidatus 8723", 
 "^ot:ottId": 1074887, 
 "^ot:ottTaxonName": "Artomyces pyxidatus", 
 "^ot:treebaseOTUId": "Tl4589"
 }, 
 "otu75198": {
+"@label": "Artomyces pyxidatus", 
 "^ot:originalLabel": "Artomyces pyxidatus 7263", 
 "^ot:ottId": 1074887, 
 "^ot:ottTaxonName": "Artomyces pyxidatus", 
 "^ot:treebaseOTUId": "Tl4590"
 }, 
 "otu75199": {
+"@label": "Artomyces pyxidatus", 
 "^ot:originalLabel": "Artomyces pyxidatus 9709", 
 "^ot:ottId": 1074887, 
 "^ot:ottTaxonName": "Artomyces pyxidatus", 
 "^ot:treebaseOTUId": "Tl4591"
 }, 
 "otu75200": {
+"@label": "Artomyces pyxidatus", 
 "^ot:originalLabel": "Artomyces pyxidatus 9932", 
 "^ot:ottId": 1074887, 
 "^ot:ottTaxonName": "Artomyces pyxidatus", 
 "^ot:treebaseOTUId": "Tl4592"
 }, 
 "otu75201": {
+"@label": "Artomyces microsporus", 
 "^ot:originalLabel": "Artomyces microsporus 2349", 
 "^ot:ottId": 1029136, 
 "^ot:ottTaxonName": "Artomyces microsporus", 
 "^ot:treebaseOTUId": "Tl4593"
 }, 
 "otu75202": {
+"@label": "Artomyces pyxidatus", 
 "^ot:originalLabel": "Artomyces pyxidatus H7524", 
 "^ot:ottId": 1074887, 
 "^ot:ottTaxonName": "Artomyces pyxidatus", 
 "^ot:treebaseOTUId": "Tl4594"
 }, 
 "otu75203": {
+"@label": "Artomyces pyxidatus", 
 "^ot:originalLabel": "Artomyces pyxidatus 56667", 
 "^ot:ottId": 1074887, 
 "^ot:ottTaxonName": "Artomyces pyxidatus", 
 "^ot:treebaseOTUId": "Tl4595"
 }, 
 "otu75204": {
+"@label": "Artomyces pyxidatus", 
 "^ot:originalLabel": "Artomyces pyxidatus 4938", 
 "^ot:ottId": 1074887, 
 "^ot:ottTaxonName": "Artomyces pyxidatus", 
 "^ot:treebaseOTUId": "Tl4596"
 }, 
 "otu75205": {
+"@label": "Artomyces pyxidatus", 
 "^ot:originalLabel": "Artomyces pyxidatus 5484", 
 "^ot:ottId": 1074887, 
 "^ot:ottTaxonName": "Artomyces pyxidatus", 
 "^ot:treebaseOTUId": "Tl4597"
 }, 
 "otu75206": {
+"@label": "Artomyces pyxidatus", 
 "^ot:originalLabel": "Artomyces pyxidatus 8903", 
 "^ot:ottId": 1074887, 
 "^ot:ottTaxonName": "Artomyces pyxidatus", 
 "^ot:treebaseOTUId": "Tl4598"
 }, 
 "otu75207": {
+"@label": "Artomyces pyxidatus", 
 "^ot:originalLabel": "Artomyces pyxidatus 8927", 
 "^ot:ottId": 1074887, 
 "^ot:ottTaxonName": "Artomyces pyxidatus", 
 "^ot:treebaseOTUId": "Tl4599"
 }, 
 "otu75208": {
+"@label": "Artomyces pyxidatus", 
 "^ot:originalLabel": "Artomyces pyxidatus 1513", 
 "^ot:ottId": 1074887, 
 "^ot:ottTaxonName": "Artomyces pyxidatus", 
 "^ot:treebaseOTUId": "Tl4600"
 }, 
 "otu75209": {
+"@label": "Artomyces pyxidatus", 
 "^ot:originalLabel": "Artomyces pyxidatus 1541", 
 "^ot:ottId": 1074887, 
 "^ot:ottTaxonName": "Artomyces pyxidatus", 

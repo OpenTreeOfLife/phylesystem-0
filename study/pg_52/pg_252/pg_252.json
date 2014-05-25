@@ -15,57 +15,17 @@
 "^ot:agents": {
 "agent": [
 {
-"@description": "validator of NexSON constraints as well as constraints that would allow a study to be imported into the Open Tree of Life's phylogenetic synthesis tools", 
+"@description": "Open Tree NexSON validation", 
 "@id": "peyotl-validator", 
-"@name": "validate_ot_nexson.py", 
+"@name": "api.opentreeoflife.org/validate", 
 "@url": "https://github.com/OpenTreeOfLife/peyotl", 
-"@version": "0.0.3a", 
+"@version": "0.0.4a", 
 "invocation": {
-"checksPerformed": [
-"MISSING_MANDATORY_KEY", 
-"MISSING_OPTIONAL_KEY", 
-"UNRECOGNIZED_KEY", 
-"MISSING_LIST_EXPECTED", 
-"DUPLICATING_SINGLETON_KEY", 
-"REFERENCED_ID_NOT_FOUND", 
-"REPEATED_ID", 
-"REPEATED_OTU", 
-"MULTIPLE_ROOT_NODES", 
-"NO_ROOT_NODE", 
-"MULTIPLE_EDGES_FOR_NODES", 
-"CYCLE_DETECTED", 
-"DISCONNECTED_GRAPH_DETECTED", 
-"INCORRECT_ROOT_NODE_LABEL", 
-"TIP_WITHOUT_OTU", 
-"TIP_WITHOUT_OTT_ID", 
-"MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
-"NON_MONOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
-"INVALID_PROPERTY_VALUE", 
-"PROPERTY_VALUE_NOT_USEFUL", 
-"UNRECOGNIZED_PROPERTY_VALUE", 
-"MULTIPLE_TREES", 
-"UNRECOGNIZED_TAG", 
-"CONFLICTING_PROPERTY_VALUES", 
-"NO_TREES", 
-"DEPRECATED_PROPERTY", 
-"UNPARSEABLE_META", 
-"UNREACHABLE_NODE", 
-"INCORRECT_VALUE_TYPE", 
-"MISSING_CRUCIAL_CONTENT"
-], 
-"commandLine": [
-"--embed", 
-"--agent-only", 
-"-e", 
-"../mig-phyelesystem-scratch/252/validation.json", 
-"-o", 
-"../mig-phyelesystem-scratch/252/final.json", 
-"../mig-phyelesystem-scratch/252/v1.2.1-252.json"
-], 
+"commandLine": [], 
 "otherProperty": [
 {
 "name": "pythonVersion", 
-"value": "2.7.5+"
+"value": "2.7.3"
 }, 
 {
 "name": "pythonImplementation", 
@@ -76,12 +36,15 @@
 }
 ]
 }, 
+"^ot:annotationEvents": {
+"annotation": []
+}, 
 "^ot:curatorName": "Romina Gazis", 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S914"
 }, 
-"^ot:focalClade": 838968, 
-"^ot:focalCladeOTTTaxonName": "Fusarium", 
+"^ot:focalClade": 5317102, 
+"^ot:focalCladeOTTTaxonName": "Gibberella fujikuroi", 
 "^ot:otusElementOrder": [
 "otus252"
 ], 
@@ -91,6 +54,10 @@
 }, 
 "^ot:studyPublicationReference": "Steenkamp E., Wingfield B., Desjardins A., Marasas W., & Wingfield M.J. 2002. Cryptic speciation in Fusarium subglutinans. Mycologia, 94(6): 1032-1043.", 
 "^ot:studyYear": 2002, 
+"^ot:tag": [
+"population study", 
+"Terminals contain strain codes"
+], 
 "^ot:treesElementOrder": [
 "trees252"
 ], 
@@ -98,101 +65,139 @@
 "otus252": {
 "otuById": {
 "otu70138": {
+"@label": "Fusarium subglutinans grp 1 M3869", 
 "^ot:originalLabel": "Fusarium subglutinans grp 1 M3869"
 }, 
 "otu70139": {
+"@label": "Fusarium subglutinans grp 1 M3935", 
 "^ot:originalLabel": "Fusarium subglutinans grp 1 M3935"
 }, 
 "otu70140": {
+"@label": "Fusarium subglutinans grp 1 Fst58", 
 "^ot:originalLabel": "Fusarium subglutinans grp 1 Fst58"
 }, 
 "otu70141": {
+"@label": "Fusarium subglutinans grp 1 Fst69", 
 "^ot:originalLabel": "Fusarium subglutinans grp 1 Fst69"
 }, 
 "otu70142": {
+"@label": "Fusarium subglutinans grp 1 MRC756", 
 "^ot:originalLabel": "Fusarium subglutinans grp 1 MRC756"
 }, 
 "otu70143": {
+"@label": "Fusarium subglutinans grp 1 Fst9", 
 "^ot:originalLabel": "Fusarium subglutinans grp 1 Fst9"
 }, 
 "otu70144": {
-"^ot:originalLabel": "Fusarium subglutinans grp 1 Fst26"
+"@label": "Gibberella fujikuroi", 
+"^ot:originalLabel": "Fusarium subglutinans grp 1 Fst26", 
+"^ot:ottId": 5317102, 
+"^ot:ottTaxonName": "Gibberella fujikuroi"
 }, 
 "otu70145": {
-"^ot:originalLabel": "Fusarium subglutinans grp 1 Fst51"
+"@label": "Gibberella fujikuroi", 
+"^ot:originalLabel": "Fusarium subglutinans grp 1 Fst51", 
+"^ot:ottId": 5317102, 
+"^ot:ottTaxonName": "Gibberella fujikuroi"
 }, 
 "otu70146": {
-"^ot:originalLabel": "Fusarium subglutinans grp 1 Fst54"
+"@label": "Gibberella fujikuroi", 
+"^ot:originalLabel": "Fusarium subglutinans grp 1 Fst54", 
+"^ot:ottId": 5317102, 
+"^ot:ottTaxonName": "Gibberella fujikuroi"
 }, 
 "otu70147": {
+"@label": "Fusarium subglutinans grp 1 MRC837", 
 "^ot:originalLabel": "Fusarium subglutinans grp 1 MRC837"
 }, 
 "otu70148": {
+"@label": "Fusarium subglutinans grp 1 MRC1077", 
 "^ot:originalLabel": "Fusarium subglutinans grp 1 MRC1077"
 }, 
 "otu70149": {
+"@label": "Fusarium subglutinans grp 1 MRC1084", 
 "^ot:originalLabel": "Fusarium subglutinans grp 1 MRC1084"
 }, 
 "otu70150": {
+"@label": "Fusarium subglutinans grp 2 Fst10", 
 "^ot:originalLabel": "Fusarium subglutinans grp 2 Fst10"
 }, 
 "otu70151": {
+"@label": "Fusarium subglutinans grp 2 Fst13", 
 "^ot:originalLabel": "Fusarium subglutinans grp 2 Fst13"
 }, 
 "otu70152": {
+"@label": "Fusarium subglutinans grp 2 Fst17", 
 "^ot:originalLabel": "Fusarium subglutinans grp 2 Fst17"
 }, 
 "otu70153": {
+"@label": "Fusarium subglutinans grp 2 Fst22", 
 "^ot:originalLabel": "Fusarium subglutinans grp 2 Fst22"
 }, 
 "otu70154": {
+"@label": "Fusarium subglutinans grp 2 Fst40", 
 "^ot:originalLabel": "Fusarium subglutinans grp 2 Fst40"
 }, 
 "otu70155": {
+"@label": "Fusarium subglutinans grp 2 MRC714", 
 "^ot:originalLabel": "Fusarium subglutinans grp 2 MRC714"
 }, 
 "otu70156": {
+"@label": "Fusarium subglutinans grp 2 KSU434", 
 "^ot:originalLabel": "Fusarium subglutinans grp 2 KSU434"
 }, 
 "otu70157": {
+"@label": "Fusarium subglutinans grp 2 KSU731", 
 "^ot:originalLabel": "Fusarium subglutinans grp 2 KSU731"
 }, 
 "otu70158": {
+"@label": "Fusarium subglutinans grp 2 KSU507", 
 "^ot:originalLabel": "Fusarium subglutinans grp 2 KSU507"
 }, 
 "otu70159": {
+"@label": "Fusarium subglutinans grp 2 KSU993", 
 "^ot:originalLabel": "Fusarium subglutinans grp 2 KSU993"
 }, 
 "otu70160": {
+"@label": "Fusarium subglutinans grp 2 KSU2129", 
 "^ot:originalLabel": "Fusarium subglutinans grp 2 KSU2129"
 }, 
 "otu70161": {
+"@label": "Fusarium subglutinans grp 2 KSU2921", 
 "^ot:originalLabel": "Fusarium subglutinans grp 2 KSU2921"
 }, 
 "otu70162": {
+"@label": "Fusarium subglutinans grp 2 MRC6512", 
 "^ot:originalLabel": "Fusarium subglutinans grp 2 MRC6512"
 }, 
 "otu70163": {
+"@label": "Fusarium subglutinans grp 2 MRC6483", 
 "^ot:originalLabel": "Fusarium subglutinans grp 2 MRC6483"
 }, 
 "otu70164": {
+"@label": "Fusarium subglutinans grp 2 MRC115", 
 "^ot:originalLabel": "Fusarium subglutinans grp 2 MRC115"
 }, 
 "otu70165": {
+"@label": "Fusarium subglutinans grp 2 KSU1257", 
 "^ot:originalLabel": "Fusarium subglutinans grp 2 KSU1257"
 }, 
 "otu70166": {
+"@label": "Fusarium subglutinans grp 2 KSU1417", 
 "^ot:originalLabel": "Fusarium subglutinans grp 2 KSU1417"
 }, 
 "otu70167": {
+"@label": "Fusarium subglutinans grp 2 KSU3851", 
 "^ot:originalLabel": "Fusarium subglutinans grp 2 KSU3851"
 }, 
 "otu70168": {
+"@label": "Gibberella circinata", 
 "^ot:originalLabel": "Fusarium circinatum FSP34", 
 "^ot:ottId": 955281, 
 "^ot:ottTaxonName": "Gibberella circinata"
 }, 
 "otu70169": {
+"@label": "Gibberella circinata", 
 "^ot:originalLabel": "Fusarium circinatum MRC6213", 
 "^ot:ottId": 955281, 
 "^ot:ottTaxonName": "Gibberella circinata"

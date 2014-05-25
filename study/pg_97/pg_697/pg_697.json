@@ -15,57 +15,17 @@
 "^ot:agents": {
 "agent": [
 {
-"@description": "validator of NexSON constraints as well as constraints that would allow a study to be imported into the Open Tree of Life's phylogenetic synthesis tools", 
+"@description": "Open Tree NexSON validation", 
 "@id": "peyotl-validator", 
-"@name": "validate_ot_nexson.py", 
+"@name": "api.opentreeoflife.org/validate", 
 "@url": "https://github.com/OpenTreeOfLife/peyotl", 
-"@version": "0.0.3a", 
+"@version": "0.0.4a", 
 "invocation": {
-"checksPerformed": [
-"MISSING_MANDATORY_KEY", 
-"MISSING_OPTIONAL_KEY", 
-"UNRECOGNIZED_KEY", 
-"MISSING_LIST_EXPECTED", 
-"DUPLICATING_SINGLETON_KEY", 
-"REFERENCED_ID_NOT_FOUND", 
-"REPEATED_ID", 
-"REPEATED_OTU", 
-"MULTIPLE_ROOT_NODES", 
-"NO_ROOT_NODE", 
-"MULTIPLE_EDGES_FOR_NODES", 
-"CYCLE_DETECTED", 
-"DISCONNECTED_GRAPH_DETECTED", 
-"INCORRECT_ROOT_NODE_LABEL", 
-"TIP_WITHOUT_OTU", 
-"TIP_WITHOUT_OTT_ID", 
-"MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
-"NON_MONOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
-"INVALID_PROPERTY_VALUE", 
-"PROPERTY_VALUE_NOT_USEFUL", 
-"UNRECOGNIZED_PROPERTY_VALUE", 
-"MULTIPLE_TREES", 
-"UNRECOGNIZED_TAG", 
-"CONFLICTING_PROPERTY_VALUES", 
-"NO_TREES", 
-"DEPRECATED_PROPERTY", 
-"UNPARSEABLE_META", 
-"UNREACHABLE_NODE", 
-"INCORRECT_VALUE_TYPE", 
-"MISSING_CRUCIAL_CONTENT"
-], 
-"commandLine": [
-"--embed", 
-"--agent-only", 
-"-e", 
-"../mig-phyelesystem-scratch/697/validation.json", 
-"-o", 
-"../mig-phyelesystem-scratch/697/final.json", 
-"../mig-phyelesystem-scratch/697/v1.2.1-697.json"
-], 
+"commandLine": [], 
 "otherProperty": [
 {
 "name": "pythonVersion", 
-"value": "2.7.5+"
+"value": "2.7.3"
 }, 
 {
 "name": "pythonImplementation", 
@@ -75,6 +35,9 @@
 }
 }
 ]
+}, 
+"^ot:annotationEvents": {
+"annotation": []
 }, 
 "^ot:curatorName": "Romina Gazis", 
 "^ot:dataDeposit": {
@@ -89,7 +52,7 @@
 "^ot:studyPublication": {
 "@href": "http://dx.doi.org/10.3114/sim.2009.64.10"
 }, 
-"^ot:studyPublicationReference": "Tanaka K., Hirayama K., Yonezawa H., Hatakeyama S., Harada Y., Sano T., Shirouzu T., & Hosoya T. 2009. Molecular taxonomy of bambusicolous fungi: Tetraplosphaeriaceae, a new pleosporalean family with Tetraploa-like anamorphs. Studies in Mycology, 64: 175-209.", 
+"^ot:studyPublicationReference": "Tanaka, K., Hirayama K., Yonezawa H., Hatakeyama S., Harada Y., Sano T., Shirouzu T., & Hosoya T. 2009. Molecular taxonomy of bambusicolous fungi: Tetraplosphaeriaceae, a new pleosporalean family with Tetraploa-like anamorphs. Studies in Mycology 64: 175-209.", 
 "^ot:studyYear": 2009, 
 "^ot:treesElementOrder": [
 "trees697"
@@ -98,536 +61,632 @@
 "otus697": {
 "otuById": {
 "otu187050": {
+"@label": "Dothidea insculpta", 
 "^ot:originalLabel": "Dothidea insculpta", 
 "^ot:ottId": 666122, 
 "^ot:ottTaxonName": "Dothidea insculpta", 
 "^ot:treebaseOTUId": "Tl240752"
 }, 
 "otu187051": {
+"@label": "Lophiostoma macrostomum", 
 "^ot:originalLabel": "Lophiostoma macrostomum KT635", 
 "^ot:ottId": 842110, 
 "^ot:ottTaxonName": "Lophiostoma macrostomum", 
 "^ot:treebaseOTUId": "Tl248356"
 }, 
 "otu187052": {
+"@label": "Didymella cucurbitacearum", 
 "^ot:originalLabel": "Didymella cucurbitacearum", 
 "^ot:ottId": 668620, 
 "^ot:ottTaxonName": "Didymella cucurbitacearum", 
 "^ot:treebaseOTUId": "Tl248357"
 }, 
 "otu187053": {
+"@label": "Preussia terricola", 
 "^ot:originalLabel": "Preussia terricola", 
 "^ot:ottId": 227033, 
 "^ot:ottTaxonName": "Preussia terricola", 
 "^ot:treebaseOTUId": "Tl248358"
 }, 
 "otu187054": {
+"@label": "Curreya pityophila", 
 "^ot:originalLabel": "Curreya pityophila", 
 "^ot:ottId": 659813, 
 "^ot:ottTaxonName": "Curreya pityophila", 
 "^ot:treebaseOTUId": "Tl248361"
 }, 
 "otu187055": {
+"@label": "Delitschia didyma", 
 "^ot:originalLabel": "Delitschia didyma", 
 "^ot:ottId": 645066, 
 "^ot:ottTaxonName": "Delitschia didyma", 
 "^ot:treebaseOTUId": "Tl248362"
 }, 
 "otu187056": {
+"@label": "Didymella exigua", 
 "^ot:originalLabel": "Didymella exigua", 
 "^ot:ottId": 139339, 
 "^ot:ottTaxonName": "Didymella exigua", 
 "^ot:treebaseOTUId": "Tl248363"
 }, 
 "otu187057": {
+"@label": "Leptosphaeria maculans", 
 "^ot:originalLabel": "Leptosphaeria maculans", 
 "^ot:ottId": 581438, 
 "^ot:ottTaxonName": "Leptosphaeria maculans", 
 "^ot:treebaseOTUId": "Tl248366"
 }, 
 "otu187058": {
+"@label": "Byssothecium circinans", 
 "^ot:originalLabel": "Byssothecium circinans", 
 "^ot:ottId": 921290, 
 "^ot:ottTaxonName": "Byssothecium circinans", 
 "^ot:treebaseOTUId": "Tl248370"
 }, 
 "otu187059": {
+"@label": "Leptosphaeria avenaria", 
 "^ot:originalLabel": "Phaeosphaeria avenaria", 
 "^ot:ottId": 736914, 
 "^ot:ottTaxonName": "Leptosphaeria avenaria", 
 "^ot:treebaseOTUId": "Tl248373"
 }, 
 "otu187060": {
+"@label": "Ophiosphaerella herpotricha", 
 "^ot:originalLabel": "Ophiosphaerella herpotricha", 
 "^ot:ottId": 282728, 
 "^ot:ottTaxonName": "Ophiosphaerella herpotricha", 
 "^ot:treebaseOTUId": "Tl248374"
 }, 
 "otu187061": {
+"@label": "Lophiostoma macrostomum", 
 "^ot:originalLabel": "Lophiostoma macrostomum KT709", 
 "^ot:ottId": 842110, 
 "^ot:ottTaxonName": "Lophiostoma macrostomum", 
 "^ot:treebaseOTUId": "Tl248375"
 }, 
 "otu187062": {
+"@label": "Trematosphaeria pertusa", 
 "^ot:originalLabel": "Trematosphaeria pertusa", 
 "^ot:ottId": 1027800, 
 "^ot:ottTaxonName": "Trematosphaeria pertusa", 
 "^ot:treebaseOTUId": "Tl248377"
 }, 
 "otu187063": {
+"@label": "Montagnula opulenta", 
 "^ot:originalLabel": "Montagnula opulenta", 
 "^ot:ottId": 87444, 
 "^ot:ottTaxonName": "Montagnula opulenta", 
 "^ot:treebaseOTUId": "Tl248379"
 }, 
 "otu187064": {
+"@label": "Bipolaris maydis", 
 "^ot:originalLabel": "Cochliobolus heterostrophus", 
 "^ot:ottId": 1042273, 
-"^ot:ottTaxonName": "Cochliobolus heterostrophus", 
+"^ot:ottTaxonName": "Bipolaris maydis", 
 "^ot:treebaseOTUId": "Tl248380"
 }, 
 "otu187065": {
+"@label": "Splanchnonema platani", 
 "^ot:originalLabel": "Massaria platani", 
 "^ot:ottId": 87437, 
 "^ot:ottTaxonName": "Splanchnonema platani", 
 "^ot:treebaseOTUId": "Tl248383"
 }, 
 "otu187066": {
+"@label": "Lepidosphaeria nicotiae", 
 "^ot:originalLabel": "Lepidosphaeria nicotiae", 
 "^ot:ottId": 267587, 
 "^ot:ottTaxonName": "Lepidosphaeria nicotiae", 
 "^ot:treebaseOTUId": "Tl248384"
 }, 
 "otu187067": {
+"@label": "Neotestudina rosatii", 
 "^ot:originalLabel": "Neotestudina rosatii", 
 "^ot:ottId": 454657, 
 "^ot:ottTaxonName": "Neotestudina rosatii", 
 "^ot:treebaseOTUId": "Tl248386"
 }, 
 "otu187068": {
+"@label": "Herpotrichia juniperi", 
 "^ot:originalLabel": "Herpotrichia juniperi", 
 "^ot:treebaseOTUId": "Tl248388"
 }, 
 "otu187069": {
+"@label": "Phaeodothis winteri", 
 "^ot:originalLabel": "Phaeodothis winteri", 
 "^ot:ottId": 61788, 
 "^ot:ottTaxonName": "Phaeodothis winteri", 
 "^ot:treebaseOTUId": "Tl248389"
 }, 
 "otu187070": {
+"@label": "Verruculina enalia", 
 "^ot:originalLabel": "Verruculina enalia", 
 "^ot:ottId": 81512, 
 "^ot:ottTaxonName": "Verruculina enalia", 
 "^ot:treebaseOTUId": "Tl248390"
 }, 
 "otu187071": {
+"@label": "Arthopyrenia salicis", 
 "^ot:originalLabel": "Arthopyrenia salicis", 
 "^ot:ottId": 642423, 
 "^ot:ottTaxonName": "Arthopyrenia salicis", 
 "^ot:treebaseOTUId": "Tl248391"
 }, 
 "otu187072": {
+"@label": "Ulospora bilgramii", 
 "^ot:originalLabel": "Ulospora bilgramii", 
 "^ot:ottId": 267588, 
 "^ot:ottTaxonName": "Ulospora bilgramii", 
 "^ot:treebaseOTUId": "Tl248393"
 }, 
 "otu187073": {
+"@label": "Neottiosporina paspali", 
 "^ot:originalLabel": "Neottiosporina paspali", 
 "^ot:treebaseOTUId": "Tl248395"
 }, 
 "otu187074": {
+"@label": "Pleospora herbarum", 
 "^ot:originalLabel": "Pleospora herbarum", 
 "^ot:ottId": 282723, 
 "^ot:ottTaxonName": "Pleospora herbarum", 
 "^ot:treebaseOTUId": "Tl248397"
 }, 
 "otu187075": {
+"@label": "Letendraea helminthicola", 
 "^ot:originalLabel": "Letendraea helminthicola", 
 "^ot:ottId": 295796, 
 "^ot:ottTaxonName": "Letendraea helminthicola", 
 "^ot:treebaseOTUId": "Tl248398"
 }, 
 "otu187076": {
+"@label": "Botryosphaeria dothidea", 
 "^ot:originalLabel": "Botryosphaeria dothidea", 
 "^ot:ottId": 859795, 
 "^ot:ottTaxonName": "Botryosphaeria dothidea", 
 "^ot:treebaseOTUId": "Tl248399"
 }, 
 "otu187077": {
+"@label": "Delitschia winteri", 
 "^ot:originalLabel": "Delitschia winteri", 
 "^ot:ottId": 518703, 
 "^ot:ottTaxonName": "Delitschia winteri", 
 "^ot:treebaseOTUId": "Tl248400"
 }, 
 "otu187078": {
+"@label": "Pleomassaria siparia", 
 "^ot:originalLabel": "Pleomassaria siparia", 
 "^ot:ottId": 61792, 
 "^ot:ottTaxonName": "Pleomassaria siparia", 
 "^ot:treebaseOTUId": "Tl248402"
 }, 
 "otu187079": {
+"@label": "Setosphaeria monoceras", 
 "^ot:originalLabel": "Setosphaeria monoceras", 
 "^ot:ottId": 692980, 
 "^ot:ottTaxonName": "Setosphaeria monoceras", 
 "^ot:treebaseOTUId": "Tl248403"
 }, 
 "otu187080": {
+"@label": "Spencermartinsia viticola", 
 "^ot:originalLabel": "Spencermartinsia viticola", 
 "^ot:ottId": 1019773, 
 "^ot:ottTaxonName": "Spencermartinsia viticola", 
 "^ot:treebaseOTUId": "Tl248404"
 }, 
 "otu187081": {
+"@label": "Cucurbitaria elongata", 
 "^ot:originalLabel": "Cucurbitaria elongata", 
 "^ot:ottId": 659810, 
 "^ot:ottTaxonName": "Cucurbitaria elongata", 
 "^ot:treebaseOTUId": "Tl248405"
 }, 
 "otu187082": {
+"@label": "Setomelanomma holmii", 
 "^ot:originalLabel": "Setomelanomma holmii", 
 "^ot:ottId": 143881, 
 "^ot:ottTaxonName": "Setomelanomma holmii", 
 "^ot:treebaseOTUId": "Tl248406"
 }, 
 "otu187083": {
+"@label": "Zopfia rhizophila", 
 "^ot:originalLabel": "Zopfia rhizophila", 
 "^ot:ottId": 454664, 
 "^ot:ottTaxonName": "Zopfia rhizophila", 
 "^ot:treebaseOTUId": "Tl248407"
 }, 
 "otu187084": {
+"@label": "Phoma herbarum", 
 "^ot:originalLabel": "Phoma herbarum", 
 "^ot:ottId": 437937, 
 "^ot:ottTaxonName": "Phoma herbarum", 
 "^ot:treebaseOTUId": "Tl248408"
 }, 
 "otu187085": {
+"@label": "Tetraplosphaeria tetraploa", 
 "^ot:originalLabel": "Tetraploa aristata CBS996 70", 
+"^ot:ottId": 249106, 
+"^ot:ottTaxonName": "Tetraplosphaeria tetraploa", 
 "^ot:treebaseOTUId": "Tl248777"
 }, 
 "otu187086": {
+"@label": "Polyplosphaeria fusca", 
 "^ot:originalLabel": "Polyplosphaeria fusca KT1640", 
 "^ot:ottId": 724849, 
 "^ot:ottTaxonName": "Polyplosphaeria fusca", 
 "^ot:treebaseOTUId": "Tl248778"
 }, 
 "otu187087": {
+"@label": "Roussoella", 
 "^ot:originalLabel": "Roussoella sp KT2303", 
 "^ot:ottId": 1037038, 
 "^ot:ottTaxonName": "Roussoella", 
 "^ot:treebaseOTUId": "Tl248779"
 }, 
 "otu187088": {
+"@label": "Massarina eburnea", 
 "^ot:originalLabel": "Massarina eburnea HC3953", 
 "^ot:ottId": 217893, 
 "^ot:ottTaxonName": "Massarina eburnea", 
 "^ot:treebaseOTUId": "Tl248780"
 }, 
 "otu187089": {
+"@label": "Versicolorisporium triseptatum", 
 "^ot:originalLabel": "Versicolorisporium trisept SH130", 
 "^ot:ottId": 873117, 
 "^ot:ottTaxonName": "Versicolorisporium triseptatum", 
 "^ot:treebaseOTUId": "Tl248781"
 }, 
 "otu187090": {
+"@label": "Roussoellopsis tosaensis KT1659", 
 "^ot:originalLabel": "Roussoellopsis tosaensis KT1659", 
 "^ot:treebaseOTUId": "Tl248782"
 }, 
 "otu187091": {
+"@label": "Triplosphaeria yezoensis", 
 "^ot:originalLabel": "Triplosphaeria yezoensis KT1715", 
 "^ot:ottId": 538242, 
 "^ot:ottTaxonName": "Triplosphaeria yezoensis", 
 "^ot:treebaseOTUId": "Tl248783"
 }, 
 "otu187092": {
+"@label": "Quadricrura bicornis", 
 "^ot:originalLabel": "Quadricrura bicornis yone153", 
 "^ot:ottId": 150416, 
 "^ot:ottTaxonName": "Quadricrura bicornis", 
 "^ot:treebaseOTUId": "Tl248784"
 }, 
 "otu187093": {
+"@label": "Quadricrura septentrionalis", 
 "^ot:originalLabel": "Quadricrura septentrio yone176", 
 "^ot:ottId": 150419, 
 "^ot:ottTaxonName": "Quadricrura septentrionalis", 
 "^ot:treebaseOTUId": "Tl248785"
 }, 
 "otu187094": {
+"@label": "Sporormia lignicola", 
 "^ot:originalLabel": "Sporornia lignicola", 
 "^ot:ottId": 204749, 
 "^ot:ottTaxonName": "Sporormia lignicola", 
 "^ot:treebaseOTUId": "Tl248786"
 }, 
 "otu187095": {
+"@label": "Lophiotrema neoarundinaria", 
 "^ot:originalLabel": "Massarina arundinariae KT2200", 
+"^ot:ottId": 5318716, 
+"^ot:ottTaxonName": "Lophiotrema neoarundinaria", 
 "^ot:treebaseOTUId": "Tl248787"
 }, 
 "otu187096": {
+"@label": "Triplosphaeria cylindrica", 
 "^ot:originalLabel": "Triplosphaeria cylindrica KT1800", 
 "^ot:ottId": 538230, 
 "^ot:ottTaxonName": "Triplosphaeria cylindrica", 
 "^ot:treebaseOTUId": "Tl248788"
 }, 
 "otu187097": {
+"@label": "Pseudotetraploa curviappendiculata", 
 "^ot:originalLabel": "Pseudotetraploa curvi KT2558", 
 "^ot:ottId": 724858, 
 "^ot:ottTaxonName": "Pseudotetraploa curviappendiculata", 
 "^ot:treebaseOTUId": "Tl248789"
 }, 
 "otu187098": {
+"@label": "Polyplosphaeria fusca", 
 "^ot:originalLabel": "Polyplosphaeria fusca KT1686", 
 "^ot:ottId": 724849, 
 "^ot:ottTaxonName": "Polyplosphaeria fusca", 
 "^ot:treebaseOTUId": "Tl248790"
 }, 
 "otu187099": {
+"@label": "Tetraplosphaeria sasicola", 
 "^ot:originalLabel": "Tetraplosphaeria sasicola KT563", 
 "^ot:ottId": 150407, 
 "^ot:ottTaxonName": "Tetraplosphaeria sasicola", 
 "^ot:treebaseOTUId": "Tl248791"
 }, 
 "otu187100": {
+"@label": "Tetraploa", 
 "^ot:originalLabel": "Tetraploa sp KT1684", 
 "^ot:ottId": 1095103, 
 "^ot:ottTaxonName": "Tetraploa", 
 "^ot:treebaseOTUId": "Tl248792"
 }, 
 "otu187101": {
+"@label": "Roussoella hysterioides", 
 "^ot:originalLabel": "Roussoella hysterioides KT1651", 
 "^ot:ottId": 83925, 
 "^ot:ottTaxonName": "Roussoella hysterioides", 
 "^ot:treebaseOTUId": "Tl248793"
 }, 
 "otu187102": {
+"@label": "Pseudotetraploa curviappendiculata", 
 "^ot:originalLabel": "Pseudotetraploa curvi HC4930", 
 "^ot:ottId": 724858, 
 "^ot:ottTaxonName": "Pseudotetraploa curviappendiculata", 
 "^ot:treebaseOTUId": "Tl248794"
 }, 
 "otu187103": {
+"@label": "Quadricrura septentrionalis", 
 "^ot:originalLabel": "Quadricrura septentrio yone44", 
 "^ot:ottId": 150419, 
 "^ot:ottTaxonName": "Quadricrura septentrionalis", 
 "^ot:treebaseOTUId": "Tl248795"
 }, 
 "otu187104": {
+"@label": "Triplosphaeria cylindrica", 
 "^ot:originalLabel": "Triplosphaeria cylindrica KT2550", 
 "^ot:ottId": 538230, 
 "^ot:ottTaxonName": "Triplosphaeria cylindrica", 
 "^ot:treebaseOTUId": "Tl248796"
 }, 
 "otu187105": {
+"@label": "Triplosphaeria", 
 "^ot:originalLabel": "Triplosphaeria sp KT2546", 
 "^ot:ottId": 274704, 
 "^ot:ottTaxonName": "Triplosphaeria", 
 "^ot:treebaseOTUId": "Tl248797"
 }, 
 "otu187106": {
+"@label": "Roussoella hysterioides", 
 "^ot:originalLabel": "Roussoella hysterioides HH26988", 
 "^ot:ottId": 83925, 
 "^ot:ottTaxonName": "Roussoella hysterioides", 
 "^ot:treebaseOTUId": "Tl248798"
 }, 
 "otu187107": {
+"@label": "Astrosphaeriella stellata", 
 "^ot:originalLabel": "Astrosphaeriella stellata KT998", 
 "^ot:ottId": 568527, 
 "^ot:ottTaxonName": "Astrosphaeriella stellata", 
 "^ot:treebaseOTUId": "Tl248799"
 }, 
 "otu187108": {
+"@label": "Pseudotetraploa longissima", 
 "^ot:originalLabel": "Pseudotetraploa longi HC4933", 
 "^ot:ottId": 724844, 
 "^ot:ottTaxonName": "Pseudotetraploa longissima", 
 "^ot:treebaseOTUId": "Tl248800"
 }, 
 "otu187109": {
+"@label": "Pseudotetraploa curviappendiculata", 
 "^ot:originalLabel": "Pseudotetraploa curvi HC4932", 
 "^ot:ottId": 724858, 
 "^ot:ottTaxonName": "Pseudotetraploa curviappendiculata", 
 "^ot:treebaseOTUId": "Tl248801"
 }, 
 "otu187110": {
+"@label": "Tetraploa", 
 "^ot:originalLabel": "Tetraploa sp KT2578", 
 "^ot:ottId": 1095103, 
 "^ot:ottTaxonName": "Tetraploa", 
 "^ot:treebaseOTUId": "Tl248802"
 }, 
 "otu187111": {
+"@label": "Lophiotrema neoarundinaria", 
 "^ot:originalLabel": "Massarina arundinariae KT856", 
+"^ot:ottId": 5318716, 
+"^ot:ottTaxonName": "Lophiotrema neoarundinaria", 
 "^ot:treebaseOTUId": "Tl248803"
 }, 
 "otu187112": {
+"@label": "Ophiosphaerella sasicola", 
 "^ot:originalLabel": "Ophiosphaerella sasicola KT1706", 
 "^ot:ottId": 568522, 
 "^ot:ottTaxonName": "Ophiosphaerella sasicola", 
 "^ot:treebaseOTUId": "Tl248804"
 }, 
 "otu187113": {
+"@label": "Polyplosphaeria fusca", 
 "^ot:originalLabel": "Polyplosphaeria fusca KT1616", 
 "^ot:ottId": 724849, 
 "^ot:ottTaxonName": "Polyplosphaeria fusca", 
 "^ot:treebaseOTUId": "Tl248805"
 }, 
 "otu187114": {
+"@label": "Lophiotrema neoarundinaria", 
 "^ot:originalLabel": "Massarina arundinariae KT1034", 
+"^ot:ottId": 5318716, 
+"^ot:ottTaxonName": "Lophiotrema neoarundinaria", 
 "^ot:treebaseOTUId": "Tl248806"
 }, 
 "otu187115": {
+"@label": "Quadricrura septentrionalis", 
 "^ot:originalLabel": "Quadricrura septentrio HC4983", 
 "^ot:ottId": 150419, 
 "^ot:ottTaxonName": "Quadricrura septentrionalis", 
 "^ot:treebaseOTUId": "Tl248807"
 }, 
 "otu187116": {
+"@label": "Triplosphaeria maxima", 
 "^ot:originalLabel": "Triplosphaeria maxima KT870", 
 "^ot:ottId": 538247, 
 "^ot:ottTaxonName": "Triplosphaeria maxima", 
 "^ot:treebaseOTUId": "Tl248808"
 }, 
 "otu187117": {
+"@label": "Katumotoa bambusicola", 
 "^ot:originalLabel": "Katumotoa bambisicola KT1517", 
 "^ot:ottId": 568531, 
 "^ot:ottTaxonName": "Katumotoa bambusicola", 
 "^ot:treebaseOTUId": "Tl248809"
 }, 
 "otu187118": {
+"@label": "Phaeosphaeria sp KT2564", 
 "^ot:originalLabel": "Phaeosphaeria sp KT2564", 
-"^ot:ottId": 736911, 
-"^ot:ottTaxonName": "Phaeosphaeria", 
 "^ot:treebaseOTUId": "Tl248810"
 }, 
 "otu187119": {
+"@label": "Kalmusia scabrispora", 
 "^ot:originalLabel": "Kalmusia scabrispora KT2202", 
 "^ot:ottId": 568529, 
 "^ot:ottTaxonName": "Kalmusia scabrispora", 
 "^ot:treebaseOTUId": "Tl248811"
 }, 
 "otu187120": {
+"@label": "Triplosphaeria yezoensis", 
 "^ot:originalLabel": "Triplosphaeria yezoensis KT1732", 
 "^ot:ottId": 538242, 
 "^ot:ottTaxonName": "Triplosphaeria yezoensis", 
 "^ot:treebaseOTUId": "Tl248812"
 }, 
 "otu187121": {
+"@label": "Triplosphaeria cylindrica", 
 "^ot:originalLabel": "Triplosphaeria cylindrica KT1256", 
 "^ot:ottId": 538230, 
 "^ot:ottTaxonName": "Triplosphaeria cylindrica", 
 "^ot:treebaseOTUId": "Tl248813"
 }, 
 "otu187122": {
+"@label": "Quadricrura meridionalis", 
 "^ot:originalLabel": "Quadricrura meridionalis KT2607", 
 "^ot:ottId": 150413, 
 "^ot:ottTaxonName": "Quadricrura meridionalis", 
 "^ot:treebaseOTUId": "Tl248814"
 }, 
 "otu187123": {
+"@label": "Tetraplosphaeria yakushimensis", 
 "^ot:originalLabel": "Tetraplosphaeria yakushi KT1906", 
 "^ot:ottId": 538239, 
 "^ot:ottTaxonName": "Tetraplosphaeria yakushimensis", 
 "^ot:treebaseOTUId": "Tl248815"
 }, 
 "otu187124": {
+"@label": "Polyplosphaeria fusca", 
 "^ot:originalLabel": "Polyplosphaeria fusca KT2124", 
 "^ot:ottId": 724849, 
 "^ot:ottTaxonName": "Polyplosphaeria fusca", 
 "^ot:treebaseOTUId": "Tl248816"
 }, 
 "otu187125": {
+"@label": "Bimuria novae-zelandiae", 
 "^ot:originalLabel": "Bimuria novae zelandiae", 
 "^ot:ottId": 84213, 
 "^ot:ottTaxonName": "Bimuria novae-zelandiae", 
 "^ot:treebaseOTUId": "Tl248817"
 }, 
 "otu187126": {
+"@label": "Lophostoma heterosporum", 
 "^ot:originalLabel": "Lophostoma heterosporum", 
-"^ot:ottId": 951264, 
-"^ot:ottTaxonName": "Lophostoma", 
 "^ot:treebaseOTUId": "Tl248818"
 }, 
 "otu187127": {
+"@label": "Triplosphaeria acuta", 
 "^ot:originalLabel": "Triplosphaeria acuta KT1170", 
 "^ot:ottId": 538234, 
 "^ot:ottTaxonName": "Triplosphaeria acuta", 
 "^ot:treebaseOTUId": "Tl248819"
 }, 
 "otu187128": {
+"@label": "Kalmusia brevispora", 
 "^ot:originalLabel": "Phaeosphaeria brevispora KT1466", 
 "^ot:ottId": 568523, 
 "^ot:ottTaxonName": "Kalmusia brevispora", 
 "^ot:treebaseOTUId": "Tl248820"
 }, 
 "otu187129": {
+"@label": "Kalmusia brevispora", 
 "^ot:originalLabel": "Phaeosphaeria brevispora KT2313", 
 "^ot:ottId": 568523, 
 "^ot:ottTaxonName": "Kalmusia brevispora", 
 "^ot:treebaseOTUId": "Tl248821"
 }, 
 "otu187130": {
+"@label": "Triplosphaeria", 
 "^ot:originalLabel": "Triplosphaeria sp HC4665", 
 "^ot:ottId": 274704, 
 "^ot:ottTaxonName": "Triplosphaeria", 
 "^ot:treebaseOTUId": "Tl248822"
 }, 
 "otu187131": {
+"@label": "Kalmusia scabrispora", 
 "^ot:originalLabel": "Kalmusia scabrispora KT1023", 
 "^ot:ottId": 568529, 
 "^ot:ottTaxonName": "Kalmusia scabrispora", 
 "^ot:treebaseOTUId": "Tl248823"
 }, 
 "otu187132": {
+"@label": "Roussoellopsis sp KT1710", 
 "^ot:originalLabel": "Roussoellopsis sp KT1710", 
 "^ot:treebaseOTUId": "Tl248824"
 }, 
 "otu187133": {
+"@label": "Quadricrura septentrionalis", 
 "^ot:originalLabel": "Quadricrura septentrio KT920", 
 "^ot:ottId": 150419, 
 "^ot:ottTaxonName": "Quadricrura septentrionalis", 
 "^ot:treebaseOTUId": "Tl248825"
 }, 
 "otu187134": {
+"@label": "Pseudotetraploa javanica", 
 "^ot:originalLabel": "Pseudotetraploa javanica HC4934", 
 "^ot:ottId": 724840, 
 "^ot:ottTaxonName": "Pseudotetraploa javanica", 
 "^ot:treebaseOTUId": "Tl248826"
 }, 
 "otu187135": {
+"@label": "Roussoella pustulans", 
 "^ot:originalLabel": "Roussoella pustulans KT1709", 
 "^ot:ottId": 1095108, 
 "^ot:ottTaxonName": "Roussoella pustulans", 
 "^ot:treebaseOTUId": "Tl248827"
 }, 
 "otu187136": {
+"@label": "Quadricrura septentrionalis", 
 "^ot:originalLabel": "Quadricrura septentrio HC4984", 
 "^ot:ottId": 150419, 
 "^ot:ottTaxonName": "Quadricrura septentrionalis", 
 "^ot:treebaseOTUId": "Tl248828"
 }, 
 "otu187137": {
+"@label": "Quadricrura septentrionalis", 
 "^ot:originalLabel": "Quadricrura septentrio yone179", 
 "^ot:ottId": 150419, 
 "^ot:ottTaxonName": "Quadricrura septentrionalis", 
 "^ot:treebaseOTUId": "Tl248829"
 }, 
 "otu187138": {
+"@label": "Fissuroma aggregata", 
 "^ot:originalLabel": "Astrosphaeriella aggregata KT984", 
 "^ot:ottId": 865147, 
 "^ot:ottTaxonName": "Fissuroma aggregata", 
 "^ot:treebaseOTUId": "Tl248830"
 }, 
 "otu187139": {
+"@label": "Tetraplosphaeria nagasakiensis", 
 "^ot:originalLabel": "Tetraplosphaeria nagasaki KT1682", 
 "^ot:ottId": 150410, 
 "^ot:ottTaxonName": "Tetraplosphaeria nagasakiensis", 
 "^ot:treebaseOTUId": "Tl248831"
 }, 
 "otu187140": {
+"@label": "Polyplosphaeria fusca", 
 "^ot:originalLabel": "Polyplosphaeria fusca KT1043", 
 "^ot:ottId": 724849, 
 "^ot:ottTaxonName": "Polyplosphaeria fusca", 
 "^ot:treebaseOTUId": "Tl248832"
 }, 
 "otu187141": {
+"@label": "Fissuroma aggregata", 
 "^ot:originalLabel": "Astrosphaeriella aggregata KT767", 
 "^ot:ottId": 865147, 
 "^ot:ottTaxonName": "Fissuroma aggregata", 
@@ -1063,7 +1122,6 @@
 "^ot:curatedType": "MP, LSU + SSU (strict)", 
 "^ot:inGroupClade": "node431116", 
 "^ot:rootNodeId": "node431113", 
-"^ot:tag": "LSU", 
 "edgeBySourceId": {
 "node431113": {
 "edge431114": {

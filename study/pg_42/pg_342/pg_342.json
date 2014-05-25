@@ -15,57 +15,17 @@
 "^ot:agents": {
 "agent": [
 {
-"@description": "validator of NexSON constraints as well as constraints that would allow a study to be imported into the Open Tree of Life's phylogenetic synthesis tools", 
+"@description": "Open Tree NexSON validation", 
 "@id": "peyotl-validator", 
-"@name": "validate_ot_nexson.py", 
+"@name": "api.opentreeoflife.org/validate", 
 "@url": "https://github.com/OpenTreeOfLife/peyotl", 
-"@version": "0.0.3a", 
+"@version": "0.0.4a", 
 "invocation": {
-"checksPerformed": [
-"MISSING_MANDATORY_KEY", 
-"MISSING_OPTIONAL_KEY", 
-"UNRECOGNIZED_KEY", 
-"MISSING_LIST_EXPECTED", 
-"DUPLICATING_SINGLETON_KEY", 
-"REFERENCED_ID_NOT_FOUND", 
-"REPEATED_ID", 
-"REPEATED_OTU", 
-"MULTIPLE_ROOT_NODES", 
-"NO_ROOT_NODE", 
-"MULTIPLE_EDGES_FOR_NODES", 
-"CYCLE_DETECTED", 
-"DISCONNECTED_GRAPH_DETECTED", 
-"INCORRECT_ROOT_NODE_LABEL", 
-"TIP_WITHOUT_OTU", 
-"TIP_WITHOUT_OTT_ID", 
-"MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
-"NON_MONOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
-"INVALID_PROPERTY_VALUE", 
-"PROPERTY_VALUE_NOT_USEFUL", 
-"UNRECOGNIZED_PROPERTY_VALUE", 
-"MULTIPLE_TREES", 
-"UNRECOGNIZED_TAG", 
-"CONFLICTING_PROPERTY_VALUES", 
-"NO_TREES", 
-"DEPRECATED_PROPERTY", 
-"UNPARSEABLE_META", 
-"UNREACHABLE_NODE", 
-"INCORRECT_VALUE_TYPE", 
-"MISSING_CRUCIAL_CONTENT"
-], 
-"commandLine": [
-"--embed", 
-"--agent-only", 
-"-e", 
-"../mig-phyelesystem-scratch/342/validation.json", 
-"-o", 
-"../mig-phyelesystem-scratch/342/final.json", 
-"../mig-phyelesystem-scratch/342/v1.2.1-342.json"
-], 
+"commandLine": [], 
 "otherProperty": [
 {
 "name": "pythonVersion", 
-"value": "2.7.5+"
+"value": "2.7.3"
 }, 
 {
 "name": "pythonImplementation", 
@@ -76,12 +36,15 @@
 }
 ]
 }, 
+"^ot:annotationEvents": {
+"annotation": []
+}, 
 "^ot:curatorName": "Romina Gazis", 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S815"
 }, 
-"^ot:focalClade": 57684, 
-"^ot:focalCladeOTTTaxonName": "Phomopsis vaccinii", 
+"^ot:focalClade": 737681, 
+"^ot:focalCladeOTTTaxonName": "Diaporthe", 
 "^ot:otusElementOrder": [
 "otus342"
 ], 
@@ -91,6 +54,10 @@
 }, 
 "^ot:studyPublicationReference": "Farr D., Castlebury L., & Rossman A. 2002. Morphological and molecular characterization of Phomopsis vaccinii and additional isolates from blueberry and cranberry in the eastern United States. Mycologia, 94(3): 494-504.", 
 "^ot:studyYear": 2002, 
+"^ot:tag": [
+"names not in OTT", 
+"Terminals contain strain codes"
+], 
 "^ot:treesElementOrder": [
 "trees342"
 ], 
@@ -98,435 +65,387 @@
 "otus342": {
 "otuById": {
 "otu74813": {
+"@label": "Diaporthe perjuncta", 
 "^ot:originalLabel": "Diaporthe perjuncta AF230765", 
 "^ot:ottId": 932025, 
 "^ot:ottTaxonName": "Diaporthe perjuncta", 
 "^ot:treebaseOTUId": "Tl127285"
 }, 
 "otu74814": {
+"@label": "Diaporthe ambigua AF230767", 
 "^ot:originalLabel": "Diaporthe ambigua AF230767", 
-"^ot:ottId": 263710, 
-"^ot:ottTaxonName": "Diaporthe ambigua", 
 "^ot:treebaseOTUId": "Tl127308"
 }, 
 "otu74815": {
+"@label": "Diaporthe perjuncta", 
 "^ot:originalLabel": "Diaporthe perjuncta AF230760", 
 "^ot:ottId": 932025, 
 "^ot:ottTaxonName": "Diaporthe perjuncta", 
 "^ot:treebaseOTUId": "Tl127312"
 }, 
 "otu74816": {
+"@label": "Phomopsis ampelina", 
 "^ot:originalLabel": "Phomopsis viticola AF230751", 
 "^ot:ottId": 3731365, 
-"^ot:ottTaxonName": "Diaporthe ampelina", 
+"^ot:ottTaxonName": "Phomopsis ampelina", 
 "^ot:treebaseOTUId": "Tl127322"
 }, 
 "otu74817": {
+"@label": "Diaporthe ambigua AF230768", 
 "^ot:originalLabel": "Diaporthe ambigua AF230768", 
-"^ot:ottId": 263710, 
-"^ot:ottTaxonName": "Diaporthe ambigua", 
 "^ot:treebaseOTUId": "Tl127327"
 }, 
 "otu74818": {
+"@label": "Phomopsis longicolla AF000211", 
 "^ot:originalLabel": "Phomopsis longicolla AF000211", 
-"^ot:ottId": 931953, 
-"^ot:ottTaxonName": "Diaporthe longicolla", 
 "^ot:treebaseOTUId": "Tl127333"
 }, 
 "otu74819": {
+"@label": "Phomopsis ampelina", 
 "^ot:originalLabel": "Phomopsis viticola AF230763", 
 "^ot:ottId": 3731365, 
-"^ot:ottTaxonName": "Diaporthe ampelina", 
+"^ot:ottTaxonName": "Phomopsis ampelina", 
 "^ot:treebaseOTUId": "Tl127344"
 }, 
 "otu74820": {
+"@label": "Phomopsis sp. FAU537", 
 "^ot:originalLabel": "Phomopsis sp. FAU537", 
-"^ot:ottId": 712313, 
-"^ot:ottTaxonName": "Phomopsis", 
 "^ot:treebaseOTUId": "Tl5097"
 }, 
 "otu74821": {
+"@label": "Phomopsis sp. FAU526", 
 "^ot:originalLabel": "Phomopsis sp. FAU526", 
-"^ot:ottId": 712313, 
-"^ot:ottTaxonName": "Phomopsis", 
 "^ot:treebaseOTUId": "Tl5098"
 }, 
 "otu74822": {
+"@label": "Phomopsis sp. FAU540", 
 "^ot:originalLabel": "Phomopsis sp. FAU540", 
-"^ot:ottId": 712313, 
-"^ot:ottTaxonName": "Phomopsis", 
 "^ot:treebaseOTUId": "Tl5099"
 }, 
 "otu74823": {
+"@label": "Phomopsis vaccinii FAU473", 
 "^ot:originalLabel": "Phomopsis vaccinii FAU473", 
-"^ot:ottId": 571488, 
-"^ot:ottTaxonName": "Phomopsis vaccinii", 
 "^ot:treebaseOTUId": "Tl5100"
 }, 
 "otu74824": {
+"@label": "Phomopsis vaccinii FAU474", 
 "^ot:originalLabel": "Phomopsis vaccinii FAU474", 
-"^ot:ottId": 571488, 
-"^ot:ottTaxonName": "Phomopsis vaccinii", 
 "^ot:treebaseOTUId": "Tl5101"
 }, 
 "otu74825": {
+"@label": "Phomopsis sp. ATCC56789", 
 "^ot:originalLabel": "Phomopsis sp. ATCC56789", 
-"^ot:ottId": 712313, 
-"^ot:ottTaxonName": "Phomopsis", 
 "^ot:treebaseOTUId": "Tl5102"
 }, 
 "otu74826": {
+"@label": "Phomopsis sp. FAU533", 
 "^ot:originalLabel": "Phomopsis sp. FAU533", 
-"^ot:ottId": 712313, 
-"^ot:ottTaxonName": "Phomopsis", 
 "^ot:treebaseOTUId": "Tl5103"
 }, 
 "otu74827": {
+"@label": "Phomopsis vaccinii ATCC32306", 
 "^ot:originalLabel": "Phomopsis vaccinii ATCC32306", 
-"^ot:ottId": 571488, 
-"^ot:ottTaxonName": "Phomopsis vaccinii", 
 "^ot:treebaseOTUId": "Tl5104"
 }, 
 "otu74828": {
+"@label": "Diaporthe ambigua AF046906", 
 "^ot:originalLabel": "Diaporthe ambigua AF046906", 
-"^ot:ottId": 263710, 
-"^ot:ottTaxonName": "Diaporthe ambigua", 
 "^ot:treebaseOTUId": "Tl5105"
 }, 
 "otu74829": {
+"@label": "Phomopsis sp. FAU510", 
 "^ot:originalLabel": "Phomopsis sp. FAU510", 
-"^ot:ottId": 712313, 
-"^ot:ottTaxonName": "Phomopsis", 
 "^ot:treebaseOTUId": "Tl5106"
 }, 
 "otu74830": {
+"@label": "Phomopsis vaccinii FAU471", 
 "^ot:originalLabel": "Phomopsis vaccinii FAU471", 
-"^ot:ottId": 571488, 
-"^ot:ottTaxonName": "Phomopsis vaccinii", 
 "^ot:treebaseOTUId": "Tl5107"
 }, 
 "otu74831": {
+"@label": "Phomopsis sp. FAU514", 
 "^ot:originalLabel": "Phomopsis sp. FAU514", 
-"^ot:ottId": 712313, 
-"^ot:ottTaxonName": "Phomopsis", 
 "^ot:treebaseOTUId": "Tl5108"
 }, 
 "otu74832": {
+"@label": "Phomopsis vaccinii DF5022", 
 "^ot:originalLabel": "Phomopsis vaccinii DF5022", 
-"^ot:ottId": 571488, 
-"^ot:ottTaxonName": "Phomopsis vaccinii", 
 "^ot:treebaseOTUId": "Tl5109"
 }, 
 "otu74833": {
+"@label": "Diaporthe phaseolorum FAU459", 
 "^ot:originalLabel": "Diaporthe phaseolorum FAU459", 
-"^ot:ottId": 737678, 
-"^ot:ottTaxonName": "Diaporthe phaseolorum", 
 "^ot:treebaseOTUId": "Tl5110"
 }, 
 "otu74834": {
+"@label": "Diaporthe phaseolorum AF001021", 
 "^ot:originalLabel": "Diaporthe phaseolorum AF001021", 
-"^ot:ottId": 737678, 
-"^ot:ottTaxonName": "Diaporthe phaseolorum", 
 "^ot:treebaseOTUId": "Tl5111"
 }, 
 "otu74835": {
+"@label": "Diaporthe phaseolorum FAU458", 
 "^ot:originalLabel": "Diaporthe phaseolorum FAU458", 
-"^ot:ottId": 737678, 
-"^ot:ottTaxonName": "Diaporthe phaseolorum", 
 "^ot:treebaseOTUId": "Tl5112"
 }, 
 "otu74836": {
+"@label": "Phomopsis sp. FAU483", 
 "^ot:originalLabel": "Phomopsis sp. FAU483", 
-"^ot:ottId": 712313, 
-"^ot:ottTaxonName": "Phomopsis", 
 "^ot:treebaseOTUId": "Tl5113"
 }, 
 "otu74837": {
+"@label": "Phomopsis vaccinii CBS160.32", 
 "^ot:originalLabel": "Phomopsis vaccinii CBS160.32", 
-"^ot:ottId": 571488, 
-"^ot:ottTaxonName": "Phomopsis vaccinii", 
 "^ot:treebaseOTUId": "Tl5114"
 }, 
 "otu74838": {
+"@label": "Phomopsis vaccinii DF5034", 
 "^ot:originalLabel": "Phomopsis vaccinii DF5034", 
-"^ot:ottId": 571488, 
-"^ot:ottTaxonName": "Phomopsis vaccinii", 
 "^ot:treebaseOTUId": "Tl5115"
 }, 
 "otu74839": {
+"@label": "Diaporthe phaseolorum FAU456", 
 "^ot:originalLabel": "Diaporthe phaseolorum FAU456", 
-"^ot:ottId": 737678, 
-"^ot:ottTaxonName": "Diaporthe phaseolorum", 
 "^ot:treebaseOTUId": "Tl5116"
 }, 
 "otu74840": {
+"@label": "Phomopsis vaccinii ATCC18451", 
 "^ot:originalLabel": "Phomopsis vaccinii ATCC18451", 
-"^ot:ottId": 571488, 
-"^ot:ottTaxonName": "Phomopsis vaccinii", 
 "^ot:treebaseOTUId": "Tl5117"
 }, 
 "otu74841": {
+"@label": "Phomopsis sp. FAU445", 
 "^ot:originalLabel": "Phomopsis sp. FAU445", 
-"^ot:ottId": 712313, 
-"^ot:ottTaxonName": "Phomopsis", 
 "^ot:treebaseOTUId": "Tl5118"
 }, 
 "otu74842": {
+"@label": "Phomopsis vaccinii ATCC56788", 
 "^ot:originalLabel": "Phomopsis vaccinii ATCC56788", 
-"^ot:ottId": 571488, 
-"^ot:ottTaxonName": "Phomopsis vaccinii", 
 "^ot:treebaseOTUId": "Tl5119"
 }, 
 "otu74843": {
+"@label": "Phomopsis sp. FAU494", 
 "^ot:originalLabel": "Phomopsis sp. FAU494", 
-"^ot:ottId": 712313, 
-"^ot:ottTaxonName": "Phomopsis", 
 "^ot:treebaseOTUId": "Tl5120"
 }, 
 "otu74844": {
+"@label": "Phomopsis sp. FAU441", 
 "^ot:originalLabel": "Phomopsis sp. FAU441", 
-"^ot:ottId": 712313, 
-"^ot:ottTaxonName": "Phomopsis", 
 "^ot:treebaseOTUId": "Tl5121"
 }, 
 "otu74845": {
+"@label": "Phomopsis sp. FAU487", 
 "^ot:originalLabel": "Phomopsis sp. FAU487", 
-"^ot:ottId": 712313, 
-"^ot:ottTaxonName": "Phomopsis", 
 "^ot:treebaseOTUId": "Tl5122"
 }, 
 "otu74846": {
+"@label": "Phomopsis vaccinii FAU446", 
 "^ot:originalLabel": "Phomopsis vaccinii FAU446", 
-"^ot:ottId": 571488, 
-"^ot:ottTaxonName": "Phomopsis vaccinii", 
 "^ot:treebaseOTUId": "Tl5123"
 }, 
 "otu74847": {
+"@label": "Phomopsis sp. FAU506", 
 "^ot:originalLabel": "Phomopsis sp. FAU506", 
-"^ot:ottId": 712313, 
-"^ot:ottTaxonName": "Phomopsis", 
 "^ot:treebaseOTUId": "Tl5124"
 }, 
 "otu74848": {
+"@label": "Phomopsis sp. FAU570", 
 "^ot:originalLabel": "Phomopsis sp. FAU570", 
-"^ot:ottId": 712313, 
-"^ot:ottTaxonName": "Phomopsis", 
 "^ot:treebaseOTUId": "Tl5125"
 }, 
 "otu74849": {
+"@label": "Phomopsis sp. FAU522", 
 "^ot:originalLabel": "Phomopsis sp. FAU522", 
-"^ot:ottId": 712313, 
-"^ot:ottTaxonName": "Phomopsis", 
 "^ot:treebaseOTUId": "Tl5126"
 }, 
 "otu74850": {
+"@label": "Phomopsis vaccinii FAU633", 
 "^ot:originalLabel": "Phomopsis vaccinii FAU633", 
-"^ot:ottId": 571488, 
-"^ot:ottTaxonName": "Phomopsis vaccinii", 
 "^ot:treebaseOTUId": "Tl5127"
 }, 
 "otu74851": {
+"@label": "Phomopsis vaccinii FAU468", 
 "^ot:originalLabel": "Phomopsis vaccinii FAU468", 
-"^ot:ottId": 571488, 
-"^ot:ottTaxonName": "Phomopsis vaccinii", 
 "^ot:treebaseOTUId": "Tl5128"
 }, 
 "otu74852": {
+"@label": "Diaporthe phaseolorum FAU457", 
 "^ot:originalLabel": "Diaporthe phaseolorum FAU457", 
-"^ot:ottId": 737678, 
-"^ot:ottTaxonName": "Diaporthe phaseolorum", 
 "^ot:treebaseOTUId": "Tl5129"
 }, 
 "otu74853": {
+"@label": "Phomopsis vaccinii DF5044", 
 "^ot:originalLabel": "Phomopsis vaccinii DF5044", 
-"^ot:ottId": 571488, 
-"^ot:ottTaxonName": "Phomopsis vaccinii", 
 "^ot:treebaseOTUId": "Tl5130"
 }, 
 "otu74854": {
+"@label": "Valsaria insitiva", 
 "^ot:originalLabel": "Leucostoma cincta AF191169", 
-"^ot:ottId": 570278, 
-"^ot:ottTaxonName": "Leucostoma cinctum", 
+"^ot:ottId": 313690, 
+"^ot:ottTaxonName": "Valsaria insitiva", 
 "^ot:treebaseOTUId": "Tl5132"
 }, 
 "otu74855": {
+"@label": "Phomopsis asparagi FAU477", 
 "^ot:originalLabel": "Phomopsis asparagi FAU477", 
-"^ot:ottId": 855280, 
-"^ot:ottTaxonName": "Phomopsis asparagi", 
 "^ot:treebaseOTUId": "Tl5133"
 }, 
 "otu74856": {
+"@label": "Phomopsis sp. DF5025", 
 "^ot:originalLabel": "Phomopsis sp. DF5025", 
-"^ot:ottId": 712313, 
-"^ot:ottTaxonName": "Phomopsis", 
 "^ot:treebaseOTUId": "Tl5134"
 }, 
 "otu74857": {
+"@label": "Diaporthe caulivora", 
 "^ot:originalLabel": "D phaseolorum v caulivora AF000563", 
 "^ot:ottId": 123321, 
 "^ot:ottTaxonName": "Diaporthe caulivora", 
 "^ot:treebaseOTUId": "Tl5135"
 }, 
 "otu74858": {
+"@label": "Valsa japonica AF191185", 
 "^ot:originalLabel": "Valsa japonica AF191185", 
-"^ot:ottId": 625262, 
-"^ot:ottTaxonName": "Valsa japonica", 
 "^ot:treebaseOTUId": "Tl5136"
 }, 
 "otu74859": {
+"@label": "Diaporthe perjuncta", 
 "^ot:originalLabel": "Diaporthe perjuncta AF230744", 
 "^ot:ottId": 932025, 
 "^ot:ottTaxonName": "Diaporthe perjuncta", 
 "^ot:treebaseOTUId": "Tl5137"
 }, 
 "otu74860": {
+"@label": "Phomopsis sp. DF5041", 
 "^ot:originalLabel": "Phomopsis sp. DF5041", 
-"^ot:ottId": 712313, 
-"^ot:ottTaxonName": "Phomopsis", 
 "^ot:treebaseOTUId": "Tl5138"
 }, 
 "otu74861": {
+"@label": "Phomopsis sp. DF5028", 
 "^ot:originalLabel": "Phomopsis sp. DF5028", 
-"^ot:ottId": 712313, 
-"^ot:ottTaxonName": "Phomopsis", 
 "^ot:treebaseOTUId": "Tl5139"
 }, 
 "otu74862": {
+"@label": "Leucostoma curreyi", 
 "^ot:originalLabel": "Leucostoma curreyi AF191172", 
 "^ot:ottId": 570275, 
 "^ot:ottTaxonName": "Leucostoma curreyi", 
 "^ot:treebaseOTUId": "Tl5140"
 }, 
 "otu74863": {
+"@label": "Diaporthe ambigua Malus AF046906", 
 "^ot:originalLabel": "Diaporthe ambigua Malus AF046906", 
-"^ot:ottId": 263710, 
-"^ot:ottTaxonName": "Diaporthe ambigua", 
 "^ot:treebaseOTUId": "Tl5142"
 }, 
 "otu74864": {
+"@label": "Phomopsis asparagi AB017734", 
 "^ot:originalLabel": "Phomopsis asparagi AB017734", 
-"^ot:ottId": 855280, 
-"^ot:ottTaxonName": "Phomopsis asparagi", 
 "^ot:treebaseOTUId": "Tl5143"
 }, 
 "otu74865": {
+"@label": "Phomopsis sp. DF5026", 
 "^ot:originalLabel": "Phomopsis sp. DF5026", 
-"^ot:ottId": 712313, 
-"^ot:ottTaxonName": "Phomopsis", 
 "^ot:treebaseOTUId": "Tl5144"
 }, 
 "otu74866": {
+"@label": "Phomopsis sp.  U91617", 
 "^ot:originalLabel": "Phomopsis sp.  U91617", 
-"^ot:ottId": 712313, 
-"^ot:ottTaxonName": "Phomopsis", 
 "^ot:treebaseOTUId": "Tl5147"
 }, 
 "otu74867": {
+"@label": "Phomopsis longicolla FAU600", 
 "^ot:originalLabel": "Phomopsis longicolla FAU600", 
-"^ot:ottId": 931953, 
-"^ot:ottTaxonName": "Diaporthe longicolla", 
 "^ot:treebaseOTUId": "Tl5148"
 }, 
 "otu74868": {
+"@label": "Phomopsis sp. 1069", 
 "^ot:originalLabel": "Phomopsis sp. 1069", 
-"^ot:ottId": 712313, 
-"^ot:ottTaxonName": "Phomopsis", 
 "^ot:treebaseOTUId": "Tl5149"
 }, 
 "otu74869": {
+"@label": "Phomopsis ampelina", 
 "^ot:originalLabel": "Phomopsis viticola AF230758", 
 "^ot:ottId": 3731365, 
-"^ot:ottTaxonName": "Diaporthe ampelina", 
+"^ot:ottTaxonName": "Phomopsis ampelina", 
 "^ot:treebaseOTUId": "Tl5151"
 }, 
 "otu74870": {
+"@label": "Phomopsis amygdali 1070", 
 "^ot:originalLabel": "Phomopsis amygdali 1070", 
-"^ot:ottId": 720670, 
-"^ot:ottTaxonName": "Diaporthe amygdali", 
 "^ot:treebaseOTUId": "Tl5153"
 }, 
 "otu74871": {
+"@label": "D phaseolorum v meridionalis AF000566", 
 "^ot:originalLabel": "D phaseolorum v meridionalis AF000566", 
-"^ot:ottId": 823218, 
-"^ot:ottTaxonName": "Diaporthe phaseolorum var. meridionalis", 
 "^ot:treebaseOTUId": "Tl5154"
 }, 
 "otu74872": {
+"@label": "Phomopsis sp. DF5036", 
 "^ot:originalLabel": "Phomopsis sp. DF5036", 
-"^ot:ottId": 712313, 
-"^ot:ottTaxonName": "Phomopsis", 
 "^ot:treebaseOTUId": "Tl5156"
 }, 
 "otu74873": {
+"@label": "Diaporthe caulivora", 
 "^ot:originalLabel": "D phaseolorum v meridionalis AF000564", 
-"^ot:ottId": 823218, 
-"^ot:ottTaxonName": "Diaporthe phaseolorum var. meridionalis", 
+"^ot:ottId": 123321, 
+"^ot:ottTaxonName": "Diaporthe caulivora", 
 "^ot:treebaseOTUId": "Tl5157"
 }, 
 "otu74874": {
+"@label": "Diaporthe caulivora", 
 "^ot:originalLabel": "D phaseolorum v caulivora AF000567", 
 "^ot:ottId": 123321, 
 "^ot:ottTaxonName": "Diaporthe caulivora", 
 "^ot:treebaseOTUId": "Tl5158"
 }, 
 "otu74875": {
+"@label": "Phomopsis sp. FAU453", 
 "^ot:originalLabel": "Phomopsis sp. FAU453", 
-"^ot:ottId": 712313, 
-"^ot:ottTaxonName": "Phomopsis", 
 "^ot:treebaseOTUId": "Tl5159"
 }, 
 "otu74876": {
+"@label": "Phomopsis asparagi FAU578", 
 "^ot:originalLabel": "Phomopsis asparagi FAU578", 
-"^ot:ottId": 855280, 
-"^ot:ottTaxonName": "Phomopsis asparagi", 
 "^ot:treebaseOTUId": "Tl5160"
 }, 
 "otu74877": {
+"@label": "Phomopsis amygdali 1056", 
 "^ot:originalLabel": "Phomopsis amygdali 1056", 
-"^ot:ottId": 720670, 
-"^ot:ottTaxonName": "Diaporthe amygdali", 
 "^ot:treebaseOTUId": "Tl5161"
 }, 
 "otu74878": {
+"@label": "Valsaria insitiva", 
 "^ot:originalLabel": "Leucostoma cincta AF191170", 
-"^ot:ottId": 570278, 
-"^ot:ottTaxonName": "Leucostoma cinctum", 
+"^ot:ottId": 313690, 
+"^ot:ottTaxonName": "Valsaria insitiva", 
 "^ot:treebaseOTUId": "Tl5162"
 }, 
 "otu74879": {
+"@label": "Phomopsis sp. 1068", 
 "^ot:originalLabel": "Phomopsis sp. 1068", 
-"^ot:ottId": 712313, 
-"^ot:ottTaxonName": "Phomopsis", 
 "^ot:treebaseOTUId": "Tl5163"
 }, 
 "otu74880": {
+"@label": "Phomopsis sp. FAU484", 
 "^ot:originalLabel": "Phomopsis sp. FAU484", 
-"^ot:ottId": 712313, 
-"^ot:ottTaxonName": "Phomopsis", 
 "^ot:treebaseOTUId": "Tl5164"
 }, 
 "otu74881": {
+"@label": "Phomopsis longicolla FAU642", 
 "^ot:originalLabel": "Phomopsis longicolla FAU642", 
-"^ot:ottId": 931953, 
-"^ot:ottTaxonName": "Diaporthe longicolla", 
 "^ot:treebaseOTUId": "Tl5165"
 }, 
 "otu74882": {
+"@label": "Phomopsis sp. FAU624", 
 "^ot:originalLabel": "Phomopsis sp. FAU624", 
-"^ot:ottId": 712313, 
-"^ot:ottTaxonName": "Phomopsis", 
 "^ot:treebaseOTUId": "Tl5166"
 }, 
 "otu74883": {
+"@label": "Phomopsis sp. DF5040", 
 "^ot:originalLabel": "Phomopsis sp. DF5040", 
-"^ot:ottId": 712313, 
-"^ot:ottTaxonName": "Phomopsis", 
 "^ot:treebaseOTUId": "Tl5167"
 }, 
 "otu74884": {
+"@label": "Phomopsis longicolla AF000210", 
 "^ot:originalLabel": "Phomopsis longicolla AF000210", 
-"^ot:ottId": 931953, 
-"^ot:ottTaxonName": "Diaporthe longicolla", 
 "^ot:treebaseOTUId": "Tl5168"
 }
 }

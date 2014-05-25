@@ -15,57 +15,17 @@
 "^ot:agents": {
 "agent": [
 {
-"@description": "validator of NexSON constraints as well as constraints that would allow a study to be imported into the Open Tree of Life's phylogenetic synthesis tools", 
+"@description": "Open Tree NexSON validation", 
 "@id": "peyotl-validator", 
-"@name": "validate_ot_nexson.py", 
+"@name": "api.opentreeoflife.org/validate", 
 "@url": "https://github.com/OpenTreeOfLife/peyotl", 
-"@version": "0.0.3a", 
+"@version": "0.0.4a", 
 "invocation": {
-"checksPerformed": [
-"MISSING_MANDATORY_KEY", 
-"MISSING_OPTIONAL_KEY", 
-"UNRECOGNIZED_KEY", 
-"MISSING_LIST_EXPECTED", 
-"DUPLICATING_SINGLETON_KEY", 
-"REFERENCED_ID_NOT_FOUND", 
-"REPEATED_ID", 
-"REPEATED_OTU", 
-"MULTIPLE_ROOT_NODES", 
-"NO_ROOT_NODE", 
-"MULTIPLE_EDGES_FOR_NODES", 
-"CYCLE_DETECTED", 
-"DISCONNECTED_GRAPH_DETECTED", 
-"INCORRECT_ROOT_NODE_LABEL", 
-"TIP_WITHOUT_OTU", 
-"TIP_WITHOUT_OTT_ID", 
-"MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
-"NON_MONOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
-"INVALID_PROPERTY_VALUE", 
-"PROPERTY_VALUE_NOT_USEFUL", 
-"UNRECOGNIZED_PROPERTY_VALUE", 
-"MULTIPLE_TREES", 
-"UNRECOGNIZED_TAG", 
-"CONFLICTING_PROPERTY_VALUES", 
-"NO_TREES", 
-"DEPRECATED_PROPERTY", 
-"UNPARSEABLE_META", 
-"UNREACHABLE_NODE", 
-"INCORRECT_VALUE_TYPE", 
-"MISSING_CRUCIAL_CONTENT"
-], 
-"commandLine": [
-"--embed", 
-"--agent-only", 
-"-e", 
-"../mig-phyelesystem-scratch/414/validation.json", 
-"-o", 
-"../mig-phyelesystem-scratch/414/final.json", 
-"../mig-phyelesystem-scratch/414/v1.2.1-414.json"
-], 
+"commandLine": [], 
 "otherProperty": [
 {
 "name": "pythonVersion", 
-"value": "2.7.5+"
+"value": "2.7.3"
 }, 
 {
 "name": "pythonImplementation", 
@@ -76,12 +36,15 @@
 }
 ]
 }, 
+"^ot:annotationEvents": {
+"annotation": []
+}, 
 "^ot:curatorName": "Romina Gazis", 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S1426"
 }, 
 "^ot:focalClade": 359501, 
-"^ot:focalCladeOTTTaxonName": "Hypocrea", 
+"^ot:focalCladeOTTTaxonName": "Trichoderma", 
 "^ot:otusElementOrder": [
 "otus414"
 ], 
@@ -95,146 +58,183 @@
 "otus414": {
 "otuById": {
 "otu78919": {
+"@label": "Trichoderma helicum", 
 "^ot:originalLabel": "Trichoderma helicum", 
 "^ot:treebaseOTUId": "Tl163406"
 }, 
 "otu78920": {
+"@label": "Hypocrea catoptron", 
 "^ot:originalLabel": "Hypocrea catoptron", 
 "^ot:ottId": 800108, 
 "^ot:ottTaxonName": "Hypocrea catoptron", 
 "^ot:treebaseOTUId": "Tl163407"
 }, 
 "otu78921": {
+"@label": "Trichoderma hamatum", 
 "^ot:originalLabel": "Trichoderma hamatum", 
 "^ot:treebaseOTUId": "Tl163408"
 }, 
 "otu78922": {
+"@label": "Trichoderma aggressivum", 
 "^ot:originalLabel": "Trichoderma aggressivum", 
 "^ot:treebaseOTUId": "Tl163409"
 }, 
 "otu78923": {
+"@label": "Hypocrea rufa", 
 "^ot:originalLabel": "Hypocrea rufa", 
 "^ot:treebaseOTUId": "Tl163410"
 }, 
 "otu78924": {
+"@label": "Trichoderma longipile", 
 "^ot:originalLabel": "Trichoderma longipile", 
 "^ot:treebaseOTUId": "Tl163411"
 }, 
 "otu78925": {
+"@label": "Hypocrea schweinitzii", 
 "^ot:originalLabel": "Hypocrea schweinitzii", 
+"^ot:ottId": 5317031, 
+"^ot:ottTaxonName": "Hypocrea schweinitzii", 
 "^ot:treebaseOTUId": "Tl163412"
 }, 
 "otu78926": {
+"@label": "Hypocrea pachybasioides", 
 "^ot:originalLabel": "Hypocrea pachybasioides", 
 "^ot:ottId": 985390, 
 "^ot:ottTaxonName": "Hypocrea pachybasioides", 
 "^ot:treebaseOTUId": "Tl163413"
 }, 
 "otu78927": {
+"@label": "Trichoderma rossicum", 
 "^ot:originalLabel": "Trichoderma rossicum", 
 "^ot:treebaseOTUId": "Tl163414"
 }, 
 "otu78928": {
+"@label": "Hypocrea gelatinosa", 
 "^ot:originalLabel": "Hypocrea gelatinosa", 
 "^ot:ottId": 935192, 
 "^ot:ottTaxonName": "Hypocrea gelatinosa", 
 "^ot:treebaseOTUId": "Tl163415"
 }, 
 "otu78929": {
+"@label": "Trichoderma tomentosum", 
 "^ot:originalLabel": "Trichoderma tomentosum", 
 "^ot:treebaseOTUId": "Tl163416"
 }, 
 "otu78930": {
+"@label": "Trichoderma longibrachiatum", 
 "^ot:originalLabel": "Trichoderma longibrachiatum", 
 "^ot:treebaseOTUId": "Tl163417"
 }, 
 "otu78931": {
+"@label": "Trichoderma saturnisporum", 
 "^ot:originalLabel": "Trichoderma saturnisporum", 
 "^ot:treebaseOTUId": "Tl163418"
 }, 
 "otu78932": {
+"@label": "Trichoderma oblongisporum", 
 "^ot:originalLabel": "Trichoderma oblongisporum", 
 "^ot:treebaseOTUId": "Tl163419"
 }, 
 "otu78933": {
+"@label": "Hypocrea strictipilosa", 
 "^ot:originalLabel": "Hypocrea strictipilosa", 
 "^ot:treebaseOTUId": "Tl163420"
 }, 
 "otu78934": {
+"@label": "Hypocrea pilulifera", 
 "^ot:originalLabel": "Hypocrea pilulifera", 
 "^ot:treebaseOTUId": "Tl163421"
 }, 
 "otu78935": {
+"@label": "Hypocrea melanomagna", 
 "^ot:originalLabel": "Hypocrea melanomagna", 
 "^ot:treebaseOTUId": "Tl163422"
 }, 
 "otu78936": {
+"@label": "Hypocrea aureoviridis", 
 "^ot:originalLabel": "Hypocrea aureoviridis", 
 "^ot:treebaseOTUId": "Tl163423"
 }, 
 "otu78937": {
+"@label": "Hypocrea chlorospora", 
 "^ot:originalLabel": "Hypocrea chlorospora", 
 "^ot:treebaseOTUId": "Tl163424"
 }, 
 "otu78938": {
+"@label": "Trichoderma fertile", 
 "^ot:originalLabel": "Trichoderma fertile", 
 "^ot:treebaseOTUId": "Tl163425"
 }, 
 "otu78939": {
+"@label": "Hypocrea sinuosa", 
 "^ot:originalLabel": "Hypocrea sinuosa", 
 "^ot:treebaseOTUId": "Tl163426"
 }, 
 "otu78940": {
+"@label": "Trichoderma strigosum", 
 "^ot:originalLabel": "Trichoderma strigosum", 
 "^ot:treebaseOTUId": "Tl163427"
 }, 
 "otu78941": {
+"@label": "Trichoderma spirale", 
 "^ot:originalLabel": "Trichoderma spirale", 
 "^ot:treebaseOTUId": "Tl163428"
 }, 
 "otu78942": {
+"@label": "Hypocrea pulvinata", 
 "^ot:originalLabel": "Hypocrea pulvinata", 
 "^ot:ottId": 225427, 
 "^ot:ottTaxonName": "Hypocrea pulvinata", 
 "^ot:treebaseOTUId": "Tl163429"
 }, 
 "otu78943": {
+"@label": "Hypocrea minutispora", 
 "^ot:originalLabel": "Hypocrea minutispora", 
 "^ot:treebaseOTUId": "Tl163430"
 }, 
 "otu78944": {
+"@label": "Hypocrea jecorina", 
 "^ot:originalLabel": "Hypocrea jecorina", 
+"^ot:ottId": 5317030, 
+"^ot:ottTaxonName": "Hypocrea jecorina", 
 "^ot:treebaseOTUId": "Tl163431"
 }, 
 "otu78945": {
+"@label": "Hypocrea citrina", 
 "^ot:originalLabel": "Hypocrea citrina", 
 "^ot:ottId": 1072674, 
 "^ot:ottTaxonName": "Hypocrea citrina", 
 "^ot:treebaseOTUId": "Tl163432"
 }, 
 "otu78946": {
+"@label": "Trichoderma harzianum", 
 "^ot:originalLabel": "Hypocrea lixii", 
 "^ot:ottId": 939829, 
-"^ot:ottTaxonName": "Hypocrea lixii", 
+"^ot:ottTaxonName": "Trichoderma harzianum", 
 "^ot:treebaseOTUId": "Tl163434"
 }, 
 "otu78947": {
+"@label": "Hypocrea voglmayri CBS117710", 
 "^ot:originalLabel": "Hypocrea voglmayri CBS117710", 
 "^ot:treebaseOTUId": "Tl163435"
 }, 
 "otu78948": {
+"@label": "Trichoderma pubescens", 
 "^ot:originalLabel": "Trichoderma pubescens", 
 "^ot:treebaseOTUId": "Tl163436"
 }, 
 "otu78949": {
+"@label": "Hypocrea lutea", 
 "^ot:originalLabel": "Hypocrea lutea", 
 "^ot:treebaseOTUId": "Tl163437"
 }, 
 "otu78950": {
+"@label": "Hypocrea tawa", 
 "^ot:originalLabel": "Hypocrea tawa", 
 "^ot:treebaseOTUId": "Tl163438"
 }, 
 "otu78951": {
+"@label": "Hypocrea voglmayri CBS117711", 
 "^ot:originalLabel": "Hypocrea voglmayri CBS117711", 
 "^ot:treebaseOTUId": "Tl40615"
 }
@@ -252,6 +252,7 @@
 "tree519": {
 "@xsi:type": "nex:FloatTree", 
 "^ot:curatedType": "BI, RPB2", 
+"^ot:inGroupClade": "node208292", 
 "^ot:rootNodeId": "node208291", 
 "edgeBySourceId": {
 "node208291": {

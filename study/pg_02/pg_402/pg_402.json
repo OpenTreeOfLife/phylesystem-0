@@ -15,57 +15,17 @@
 "^ot:agents": {
 "agent": [
 {
-"@description": "validator of NexSON constraints as well as constraints that would allow a study to be imported into the Open Tree of Life's phylogenetic synthesis tools", 
+"@description": "Open Tree NexSON validation", 
 "@id": "peyotl-validator", 
-"@name": "validate_ot_nexson.py", 
+"@name": "api.opentreeoflife.org/validate", 
 "@url": "https://github.com/OpenTreeOfLife/peyotl", 
-"@version": "0.0.3a", 
+"@version": "0.0.4a", 
 "invocation": {
-"checksPerformed": [
-"MISSING_MANDATORY_KEY", 
-"MISSING_OPTIONAL_KEY", 
-"UNRECOGNIZED_KEY", 
-"MISSING_LIST_EXPECTED", 
-"DUPLICATING_SINGLETON_KEY", 
-"REFERENCED_ID_NOT_FOUND", 
-"REPEATED_ID", 
-"REPEATED_OTU", 
-"MULTIPLE_ROOT_NODES", 
-"NO_ROOT_NODE", 
-"MULTIPLE_EDGES_FOR_NODES", 
-"CYCLE_DETECTED", 
-"DISCONNECTED_GRAPH_DETECTED", 
-"INCORRECT_ROOT_NODE_LABEL", 
-"TIP_WITHOUT_OTU", 
-"TIP_WITHOUT_OTT_ID", 
-"MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
-"NON_MONOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
-"INVALID_PROPERTY_VALUE", 
-"PROPERTY_VALUE_NOT_USEFUL", 
-"UNRECOGNIZED_PROPERTY_VALUE", 
-"MULTIPLE_TREES", 
-"UNRECOGNIZED_TAG", 
-"CONFLICTING_PROPERTY_VALUES", 
-"NO_TREES", 
-"DEPRECATED_PROPERTY", 
-"UNPARSEABLE_META", 
-"UNREACHABLE_NODE", 
-"INCORRECT_VALUE_TYPE", 
-"MISSING_CRUCIAL_CONTENT"
-], 
-"commandLine": [
-"--embed", 
-"--agent-only", 
-"-e", 
-"../mig-phyelesystem-scratch/402/validation.json", 
-"-o", 
-"../mig-phyelesystem-scratch/402/final.json", 
-"../mig-phyelesystem-scratch/402/v1.2.1-402.json"
-], 
+"commandLine": [], 
 "otherProperty": [
 {
 "name": "pythonVersion", 
-"value": "2.7.5+"
+"value": "2.7.3"
 }, 
 {
 "name": "pythonImplementation", 
@@ -75,6 +35,9 @@
 }
 }
 ]
+}, 
+"^ot:annotationEvents": {
+"annotation": []
 }, 
 "^ot:curatorName": "Romina Gazis", 
 "^ot:dataDeposit": {
@@ -98,53 +61,71 @@
 "otus402": {
 "otuById": {
 "otu78350": {
+"@label": "Aspergillus ochraceoroseus", 
 "^ot:originalLabel": "Aspergillus ochraceoroseus", 
 "^ot:ottId": 306740, 
 "^ot:ottTaxonName": "Aspergillus ochraceoroseus", 
 "^ot:treebaseOTUId": "Tl13728"
 }, 
 "otu78351": {
+"@label": "Aspergillus parasiticus", 
 "^ot:originalLabel": "Aspergillus parasiticus", 
 "^ot:ottId": 749900, 
 "^ot:ottTaxonName": "Aspergillus parasiticus", 
 "^ot:treebaseOTUId": "Tl13737"
 }, 
 "otu78352": {
+"@label": "Aspergillus nidulans", 
 "^ot:originalLabel": "Emericella nidulans", 
 "^ot:ottId": 392368, 
 "^ot:ottTaxonName": "Aspergillus nidulans", 
 "^ot:treebaseOTUId": "Tl156407"
 }, 
 "otu78353": {
+"@label": "Emericella species SRRC2520", 
 "^ot:originalLabel": "Emericella species SRRC2520", 
-"^ot:ottId": 226484, 
-"^ot:ottTaxonName": "Emericella", 
 "^ot:treebaseOTUId": "Tl35161"
 }, 
 "otu78354": {
+"@label": "Aspergillus stellatus", 
 "^ot:originalLabel": "Emericella astellata SRRC1470", 
+"^ot:ottId": 5310610, 
+"^ot:ottTaxonName": "Aspergillus stellatus", 
 "^ot:treebaseOTUId": "Tl35162"
 }, 
 "otu78355": {
+"@label": "Aspergillus stellatus", 
 "^ot:originalLabel": "Emericella astellata SRRC512", 
+"^ot:ottId": 5310610, 
+"^ot:ottTaxonName": "Aspergillus stellatus", 
 "^ot:treebaseOTUId": "Tl35163"
 }, 
 "otu78356": {
+"@label": "Aspergillus", 
 "^ot:originalLabel": "Aspergillus species SRRC1468", 
 "^ot:ottId": 550772, 
 "^ot:ottTaxonName": "Aspergillus", 
 "^ot:treebaseOTUId": "Tl35164"
 }, 
 "otu78357": {
+"@label": "Aspergillus stellatus", 
 "^ot:originalLabel": "Emericella astellata SRRC1471", 
+"^ot:ottId": 5310610, 
+"^ot:ottTaxonName": "Aspergillus stellatus", 
 "^ot:treebaseOTUId": "Tl35165"
 }, 
 "otu78358": {
+"@label": "Aspergillus stellatus", 
 "^ot:originalLabel": "Emericella astellata SRRC503", 
+"^ot:ottId": 5310610, 
+"^ot:ottTaxonName": "Aspergillus stellatus", 
 "^ot:treebaseOTUId": "Tl35166"
 }, 
 "otu78359": {
+"@label": "Aspergillus stellatus", 
 "^ot:originalLabel": "Emericella astellata  SRRC1471", 
+"^ot:ottId": 5310610, 
+"^ot:ottTaxonName": "Aspergillus stellatus", 
 "^ot:treebaseOTUId": "Tl35167"
 }
 }

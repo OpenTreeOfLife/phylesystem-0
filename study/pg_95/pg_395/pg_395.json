@@ -15,57 +15,17 @@
 "^ot:agents": {
 "agent": [
 {
-"@description": "validator of NexSON constraints as well as constraints that would allow a study to be imported into the Open Tree of Life's phylogenetic synthesis tools", 
+"@description": "Open Tree NexSON validation", 
 "@id": "peyotl-validator", 
-"@name": "validate_ot_nexson.py", 
+"@name": "api.opentreeoflife.org/validate", 
 "@url": "https://github.com/OpenTreeOfLife/peyotl", 
-"@version": "0.0.3a", 
+"@version": "0.0.4a", 
 "invocation": {
-"checksPerformed": [
-"MISSING_MANDATORY_KEY", 
-"MISSING_OPTIONAL_KEY", 
-"UNRECOGNIZED_KEY", 
-"MISSING_LIST_EXPECTED", 
-"DUPLICATING_SINGLETON_KEY", 
-"REFERENCED_ID_NOT_FOUND", 
-"REPEATED_ID", 
-"REPEATED_OTU", 
-"MULTIPLE_ROOT_NODES", 
-"NO_ROOT_NODE", 
-"MULTIPLE_EDGES_FOR_NODES", 
-"CYCLE_DETECTED", 
-"DISCONNECTED_GRAPH_DETECTED", 
-"INCORRECT_ROOT_NODE_LABEL", 
-"TIP_WITHOUT_OTU", 
-"TIP_WITHOUT_OTT_ID", 
-"MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
-"NON_MONOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
-"INVALID_PROPERTY_VALUE", 
-"PROPERTY_VALUE_NOT_USEFUL", 
-"UNRECOGNIZED_PROPERTY_VALUE", 
-"MULTIPLE_TREES", 
-"UNRECOGNIZED_TAG", 
-"CONFLICTING_PROPERTY_VALUES", 
-"NO_TREES", 
-"DEPRECATED_PROPERTY", 
-"UNPARSEABLE_META", 
-"UNREACHABLE_NODE", 
-"INCORRECT_VALUE_TYPE", 
-"MISSING_CRUCIAL_CONTENT"
-], 
-"commandLine": [
-"--embed", 
-"--agent-only", 
-"-e", 
-"../mig-phyelesystem-scratch/395/validation.json", 
-"-o", 
-"../mig-phyelesystem-scratch/395/final.json", 
-"../mig-phyelesystem-scratch/395/v1.2.1-395.json"
-], 
+"commandLine": [], 
 "otherProperty": [
 {
 "name": "pythonVersion", 
-"value": "2.7.5+"
+"value": "2.7.3"
 }, 
 {
 "name": "pythonImplementation", 
@@ -76,12 +36,15 @@
 }
 ]
 }, 
+"^ot:annotationEvents": {
+"annotation": []
+}, 
 "^ot:curatorName": "Romina Gazis", 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S1184"
 }, 
-"^ot:focalClade": 809209, 
-"^ot:focalCladeOTTTaxonName": "Melampsora", 
+"^ot:focalClade": 1071786, 
+"^ot:focalCladeOTTTaxonName": "Melampsora epitea", 
 "^ot:otusElementOrder": [
 "otus395"
 ], 
@@ -91,6 +54,7 @@
 }, 
 "^ot:studyPublicationReference": "Smith, Jason A., Robert A. Blanchette, and George Newcombe. \"Molecular and morphological characterization of the willow rust fungus, Melampsora epitea, from arctic and temperate hosts in North America.\" Mycologia 96, no. 6 (2004): 1330-1338.", 
 "^ot:studyYear": 2004, 
+"^ot:tag": "population study", 
 "^ot:treesElementOrder": [
 "trees395"
 ], 
@@ -98,189 +62,220 @@
 "otus395": {
 "otuById": {
 "otu77961": {
+"@label": "Melampsora occidentalis", 
 "^ot:originalLabel": "Melampsora occidentalis", 
 "^ot:ottId": 681629, 
 "^ot:ottTaxonName": "Melampsora occidentalis", 
 "^ot:treebaseOTUId": "Tl148405"
 }, 
 "otu77962": {
+"@label": "Melampsora medusae", 
 "^ot:originalLabel": "Melampsora medusae", 
 "^ot:ottId": 681631, 
 "^ot:ottTaxonName": "Melampsora medusae", 
 "^ot:treebaseOTUId": "Tl53803"
 }, 
 "otu77963": {
-"^ot:altLabel": "Melampsora epitea", 
+"@label": "Melampsora epitea", 
 "^ot:originalLabel": "Melampsora epitea FC 2002 8", 
 "^ot:ottId": 1071786, 
+"^ot:ottTaxonName": "Melampsora epitea", 
 "^ot:treebaseOTUId": "Tl60729"
 }, 
 "otu77964": {
+"@label": "Melampsora epitea", 
 "^ot:originalLabel": "Melampsora epitea LH 2001 4", 
 "^ot:ottId": 1071786, 
 "^ot:ottTaxonName": "Melampsora epitea", 
 "^ot:treebaseOTUId": "Tl60730"
 }, 
 "otu77965": {
+"@label": "Melampsora epitea", 
 "^ot:originalLabel": "Melampsora epitea SB 2002 1", 
 "^ot:ottId": 1071786, 
 "^ot:ottTaxonName": "Melampsora epitea", 
 "^ot:treebaseOTUId": "Tl60731"
 }, 
 "otu77966": {
+"@label": "Melampsora epitea", 
 "^ot:originalLabel": "Melampsora epitea SN 2002 1", 
 "^ot:ottId": 1071786, 
 "^ot:ottTaxonName": "Melampsora epitea", 
 "^ot:treebaseOTUId": "Tl60732"
 }, 
 "otu77967": {
+"@label": "Melampsora epitea", 
 "^ot:originalLabel": "Melampsora epitea SI 2002 1", 
 "^ot:ottId": 1071786, 
 "^ot:ottTaxonName": "Melampsora epitea", 
 "^ot:treebaseOTUId": "Tl60733"
 }, 
 "otu77968": {
+"@label": "Melampsora epitea", 
 "^ot:originalLabel": "Melampsora epitea TF 2002 1", 
 "^ot:ottId": 1071786, 
 "^ot:ottTaxonName": "Melampsora epitea", 
 "^ot:treebaseOTUId": "Tl60734"
 }, 
 "otu77969": {
+"@label": "Melampsora epitea", 
 "^ot:originalLabel": "Melampsora epitea SN 2002 3", 
 "^ot:ottId": 1071786, 
 "^ot:ottTaxonName": "Melampsora epitea", 
 "^ot:treebaseOTUId": "Tl60735"
 }, 
 "otu77970": {
-"^ot:altLabel": "Melampsora epitea", 
+"@label": "Melampsora epitea", 
 "^ot:originalLabel": "Melampsora epitea TF 2002 2", 
 "^ot:ottId": 1071786, 
+"^ot:ottTaxonName": "Melampsora epitea", 
 "^ot:treebaseOTUId": "Tl60736"
 }, 
 "otu77971": {
+"@label": "Melampsora epitea", 
 "^ot:originalLabel": "Melampsora epitea AFG 2001 2e", 
 "^ot:ottId": 1071786, 
 "^ot:ottTaxonName": "Melampsora epitea", 
 "^ot:treebaseOTUId": "Tl60737"
 }, 
 "otu77972": {
-"^ot:altLabel": "Melampsora epitea", 
+"@label": "Melampsora epitea", 
 "^ot:originalLabel": "Melampsora epitea LH 2001 2", 
 "^ot:ottId": 1071786, 
+"^ot:ottTaxonName": "Melampsora epitea", 
 "^ot:treebaseOTUId": "Tl60738"
 }, 
 "otu77973": {
+"@label": "Melampsora epitea", 
 "^ot:originalLabel": "Melampsora epitea TF 2002 3", 
 "^ot:ottId": 1071786, 
 "^ot:ottTaxonName": "Melampsora epitea", 
 "^ot:treebaseOTUId": "Tl60739"
 }, 
 "otu77974": {
+"@label": "Melampsora epitea", 
 "^ot:originalLabel": "Melampsora epitea FC 2002 2", 
 "^ot:ottId": 1071786, 
 "^ot:ottTaxonName": "Melampsora epitea", 
 "^ot:treebaseOTUId": "Tl60740"
 }, 
 "otu77975": {
+"@label": "Melampsora epitea", 
 "^ot:originalLabel": "Melampsora epitea AFG 2001 3e", 
 "^ot:ottId": 1071786, 
 "^ot:ottTaxonName": "Melampsora epitea", 
 "^ot:treebaseOTUId": "Tl60741"
 }, 
 "otu77976": {
+"@label": "Melampsora epitea", 
 "^ot:originalLabel": "Melampsora epitea SI 2002 2", 
 "^ot:ottId": 1071786, 
 "^ot:ottTaxonName": "Melampsora epitea", 
 "^ot:treebaseOTUId": "Tl60742"
 }, 
 "otu77977": {
-"^ot:altLabel": "Melampsora epitea", 
+"@label": "Melampsora epitea", 
 "^ot:originalLabel": "Melampsora epitea SB 2002 4", 
 "^ot:ottId": 1071786, 
+"^ot:ottTaxonName": "Melampsora epitea", 
 "^ot:treebaseOTUId": "Tl60743"
 }, 
 "otu77978": {
+"@label": "Melampsora epitea", 
 "^ot:originalLabel": "Melampsora epitea SWEDEN 1950", 
 "^ot:ottId": 1071786, 
 "^ot:ottTaxonName": "Melampsora epitea", 
 "^ot:treebaseOTUId": "Tl60744"
 }, 
 "otu77979": {
+"@label": "Melampsora epitea", 
 "^ot:originalLabel": "Melampsora epitea LH 2001 3", 
 "^ot:ottId": 1071786, 
 "^ot:ottTaxonName": "Melampsora epitea", 
 "^ot:treebaseOTUId": "Tl60745"
 }, 
 "otu77980": {
+"@label": "Melampsora epitea", 
 "^ot:originalLabel": "Melampsora epitea SI 2002 3", 
 "^ot:ottId": 1071786, 
 "^ot:ottTaxonName": "Melampsora epitea", 
 "^ot:treebaseOTUId": "Tl60746"
 }, 
 "otu77981": {
-"^ot:altLabel": "Melampsora epitea", 
+"@label": "Melampsora epitea", 
 "^ot:originalLabel": "Melampsora epitea SN 2002 4", 
 "^ot:ottId": 1071786, 
+"^ot:ottTaxonName": "Melampsora epitea", 
 "^ot:treebaseOTUId": "Tl60747"
 }, 
 "otu77982": {
+"@label": "Melampsora epitea", 
 "^ot:originalLabel": "Melampsora epitea LH 2001 5c", 
 "^ot:ottId": 1071786, 
 "^ot:ottTaxonName": "Melampsora epitea", 
 "^ot:treebaseOTUId": "Tl60748"
 }, 
 "otu77983": {
+"@label": "Melampsora epitea", 
 "^ot:originalLabel": "Melampsora epitea TF 2002 4", 
 "^ot:ottId": 1071786, 
 "^ot:ottTaxonName": "Melampsora epitea", 
 "^ot:treebaseOTUId": "Tl60749"
 }, 
 "otu77984": {
+"@label": "Melampsora epitea", 
 "^ot:originalLabel": "Melampsora epitea SB 2002 3", 
 "^ot:ottId": 1071786, 
 "^ot:ottTaxonName": "Melampsora epitea", 
 "^ot:treebaseOTUId": "Tl60750"
 }, 
 "otu77985": {
+"@label": "Melampsora epitea", 
 "^ot:originalLabel": "Melampsora epitea AFG 200 4", 
 "^ot:ottId": 1071786, 
 "^ot:ottTaxonName": "Melampsora epitea", 
 "^ot:treebaseOTUId": "Tl60751"
 }, 
 "otu77986": {
+"@label": "Melampsora epitea", 
 "^ot:originalLabel": "Melampsora epitea SN 2002 2", 
 "^ot:ottId": 1071786, 
 "^ot:ottTaxonName": "Melampsora epitea", 
 "^ot:treebaseOTUId": "Tl60752"
 }, 
 "otu77987": {
+"@label": "Melampsora epitea", 
 "^ot:originalLabel": "Melampsora epitea FC 2002 4", 
 "^ot:ottId": 1071786, 
 "^ot:ottTaxonName": "Melampsora epitea", 
 "^ot:treebaseOTUId": "Tl60753"
 }, 
 "otu77988": {
-"^ot:altLabel": "Melampsora epitea", 
+"@label": "Melampsora epitea", 
 "^ot:originalLabel": "Melampsora epitea AFG 2001 1d", 
 "^ot:ottId": 1071786, 
+"^ot:ottTaxonName": "Melampsora epitea", 
 "^ot:treebaseOTUId": "Tl60754"
 }, 
 "otu77989": {
+"@label": "Melampsora epitea", 
 "^ot:originalLabel": "Melampsora epitea SB 2002 2", 
 "^ot:ottId": 1071786, 
 "^ot:ottTaxonName": "Melampsora epitea", 
 "^ot:treebaseOTUId": "Tl60755"
 }, 
 "otu77990": {
+"@label": "Melampsora epitea", 
 "^ot:originalLabel": "Melampsora epitea FC 2002 1", 
 "^ot:ottId": 1071786, 
 "^ot:ottTaxonName": "Melampsora epitea", 
 "^ot:treebaseOTUId": "Tl60756"
 }, 
 "otu77991": {
-"^ot:altLabel": "Melampsora epitea", 
+"@label": "Melampsora epitea", 
 "^ot:originalLabel": "Melampsora epitea SI 2002 4", 
 "^ot:ottId": 1071786, 
+"^ot:ottTaxonName": "Melampsora epitea", 
 "^ot:treebaseOTUId": "Tl60757"
 }
 }

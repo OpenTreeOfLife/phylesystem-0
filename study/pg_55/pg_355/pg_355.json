@@ -15,57 +15,17 @@
 "^ot:agents": {
 "agent": [
 {
-"@description": "validator of NexSON constraints as well as constraints that would allow a study to be imported into the Open Tree of Life's phylogenetic synthesis tools", 
+"@description": "Open Tree NexSON validation", 
 "@id": "peyotl-validator", 
-"@name": "validate_ot_nexson.py", 
+"@name": "api.opentreeoflife.org/validate", 
 "@url": "https://github.com/OpenTreeOfLife/peyotl", 
-"@version": "0.0.3a", 
+"@version": "0.0.4a", 
 "invocation": {
-"checksPerformed": [
-"MISSING_MANDATORY_KEY", 
-"MISSING_OPTIONAL_KEY", 
-"UNRECOGNIZED_KEY", 
-"MISSING_LIST_EXPECTED", 
-"DUPLICATING_SINGLETON_KEY", 
-"REFERENCED_ID_NOT_FOUND", 
-"REPEATED_ID", 
-"REPEATED_OTU", 
-"MULTIPLE_ROOT_NODES", 
-"NO_ROOT_NODE", 
-"MULTIPLE_EDGES_FOR_NODES", 
-"CYCLE_DETECTED", 
-"DISCONNECTED_GRAPH_DETECTED", 
-"INCORRECT_ROOT_NODE_LABEL", 
-"TIP_WITHOUT_OTU", 
-"TIP_WITHOUT_OTT_ID", 
-"MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
-"NON_MONOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
-"INVALID_PROPERTY_VALUE", 
-"PROPERTY_VALUE_NOT_USEFUL", 
-"UNRECOGNIZED_PROPERTY_VALUE", 
-"MULTIPLE_TREES", 
-"UNRECOGNIZED_TAG", 
-"CONFLICTING_PROPERTY_VALUES", 
-"NO_TREES", 
-"DEPRECATED_PROPERTY", 
-"UNPARSEABLE_META", 
-"UNREACHABLE_NODE", 
-"INCORRECT_VALUE_TYPE", 
-"MISSING_CRUCIAL_CONTENT"
-], 
-"commandLine": [
-"--embed", 
-"--agent-only", 
-"-e", 
-"../mig-phyelesystem-scratch/355/validation.json", 
-"-o", 
-"../mig-phyelesystem-scratch/355/final.json", 
-"../mig-phyelesystem-scratch/355/v1.2.1-355.json"
-], 
+"commandLine": [], 
 "otherProperty": [
 {
 "name": "pythonVersion", 
-"value": "2.7.5+"
+"value": "2.7.3"
 }, 
 {
 "name": "pythonImplementation", 
@@ -76,12 +36,13 @@
 }
 ]
 }, 
+"^ot:annotationEvents": {
+"annotation": []
+}, 
 "^ot:curatorName": "Romina Gazis", 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S999"
 }, 
-"^ot:focalClade": 2151128, 
-"^ot:focalCladeOTTTaxonName": "Termitaria", 
 "^ot:otusElementOrder": [
 "otus355"
 ], 
@@ -91,6 +52,7 @@
 }, 
 "^ot:studyPublicationReference": "Blackwell M., Henk D., & Jones K. 2003. Extreme morphological divergence: phylogenetic position of a termite ectoparasite. Mycologia, 95(6): 987-992.", 
 "^ot:studyYear": 2003, 
+"^ot:tag": "names not in OTT", 
 "^ot:treesElementOrder": [
 "trees355"
 ], 
@@ -98,261 +60,288 @@
 "otus355": {
 "otuById": {
 "otu75536": {
+"@label": "Ambrosiozyma platypodis", 
 "^ot:originalLabel": "Ambrosiozyma platypodis", 
 "^ot:ottId": 213952, 
 "^ot:ottTaxonName": "Ambrosiozyma platypodis", 
 "^ot:treebaseOTUId": "Tl12997"
 }, 
 "otu75537": {
+"@label": "Kathistes calyculata", 
 "^ot:originalLabel": "Kathistes calyculata", 
-"^ot:ottId": 437870, 
-"^ot:ottTaxonName": "Kathistes calyculata", 
 "^ot:treebaseOTUId": "Tl13012"
 }, 
 "otu75538": {
+"@label": "Pyxidiophora", 
 "^ot:originalLabel": "Pyxidiophora sp1", 
 "^ot:ottId": 58290, 
 "^ot:ottTaxonName": "Pyxidiophora", 
 "^ot:treebaseOTUId": "Tl13015"
 }, 
 "otu75539": {
+"@label": "Kathistes analemmoides", 
 "^ot:originalLabel": "Kathistes analemmoides", 
-"^ot:ottId": 437876, 
-"^ot:ottTaxonName": "Kathistes analemmoides", 
 "^ot:treebaseOTUId": "Tl13017"
 }, 
 "otu75540": {
+"@label": "Capronia mansonii", 
 "^ot:originalLabel": "Capronia mansonii", 
 "^ot:ottId": 425085, 
 "^ot:ottTaxonName": "Capronia mansonii", 
 "^ot:treebaseOTUId": "Tl138082"
 }, 
 "otu75541": {
+"@label": "Candida albicans", 
 "^ot:originalLabel": "Candida albicans", 
 "^ot:ottId": 1034966, 
 "^ot:ottTaxonName": "Candida albicans", 
 "^ot:treebaseOTUId": "Tl138084"
 }, 
 "otu75542": {
+"@label": "Leucostoma persoonii", 
 "^ot:originalLabel": "Leucostoma persoonii", 
 "^ot:ottId": 829405, 
-"^ot:ottTaxonName": "Valsa leucostoma", 
+"^ot:ottTaxonName": "Leucostoma persoonii", 
 "^ot:treebaseOTUId": "Tl138085"
 }, 
 "otu75543": {
+"@label": "Claviceps paspali", 
 "^ot:originalLabel": "Claviceps paspali", 
 "^ot:ottId": 664936, 
 "^ot:ottTaxonName": "Claviceps paspali", 
 "^ot:treebaseOTUId": "Tl138086"
 }, 
 "otu75544": {
+"@label": "Nigrocornus scleroticus", 
 "^ot:originalLabel": "Balansia sclerotica", 
 "^ot:ottId": 301031, 
-"^ot:ottTaxonName": "Balansia sclerotica", 
+"^ot:ottTaxonName": "Nigrocornus scleroticus", 
 "^ot:treebaseOTUId": "Tl138087"
 }, 
 "otu75545": {
+"@label": "Pleospora herbarum", 
 "^ot:originalLabel": "Pleospora herbarum", 
 "^ot:ottId": 282723, 
 "^ot:ottTaxonName": "Pleospora herbarum", 
 "^ot:treebaseOTUId": "Tl138088"
 }, 
 "otu75546": {
+"@label": "Protomyces inouyei", 
 "^ot:originalLabel": "Protomyces inouyei", 
 "^ot:ottId": 615479, 
 "^ot:ottTaxonName": "Protomyces inouyei", 
 "^ot:treebaseOTUId": "Tl138089"
 }, 
 "otu75547": {
+"@label": "Leptosphaeria maculans", 
 "^ot:originalLabel": "Leptosphaeria maculans", 
 "^ot:ottId": 581438, 
 "^ot:ottTaxonName": "Leptosphaeria maculans", 
 "^ot:treebaseOTUId": "Tl138090"
 }, 
 "otu75548": {
+"@label": "Microascus trigonosporus", 
 "^ot:originalLabel": "Microascus trigonosporus", 
 "^ot:ottId": 737682, 
 "^ot:ottTaxonName": "Microascus trigonosporus", 
 "^ot:treebaseOTUId": "Tl138091"
 }, 
 "otu75549": {
+"@label": "Xylaria curta", 
 "^ot:originalLabel": "Xylaria curta", 
 "^ot:ottId": 620715, 
 "^ot:ottTaxonName": "Xylaria curta", 
 "^ot:treebaseOTUId": "Tl138092"
 }, 
 "otu75550": {
+"@label": "Ceratocystis pilifera", 
 "^ot:originalLabel": "Ophiostoma piliferum", 
-"^ot:ottId": 758754, 
-"^ot:ottTaxonName": "Ophiostoma piliferum", 
+"^ot:ottId": 5316941, 
+"^ot:ottTaxonName": "Ceratocystis pilifera", 
 "^ot:treebaseOTUId": "Tl138096"
 }, 
 "otu75551": {
+"@label": "Ceratocystis fimbriata", 
 "^ot:originalLabel": "Ceratocystis fimbriata", 
 "^ot:ottId": 1097914, 
 "^ot:ottTaxonName": "Ceratocystis fimbriata", 
 "^ot:treebaseOTUId": "Tl138098"
 }, 
 "otu75552": {
+"@label": "Ceratocystis virescens", 
 "^ot:originalLabel": "Ceratocystis virescens", 
 "^ot:ottId": 148772, 
 "^ot:ottTaxonName": "Ceratocystis virescens", 
 "^ot:treebaseOTUId": "Tl138101"
 }, 
 "otu75553": {
+"@label": "Peziza badia", 
 "^ot:originalLabel": "Peziza badia", 
 "^ot:ottId": 1014723, 
 "^ot:ottTaxonName": "Peziza badia", 
 "^ot:treebaseOTUId": "Tl138102"
 }, 
 "otu75554": {
+"@label": "Halosphaeriopsis mediosetigera", 
 "^ot:originalLabel": "Halosphaeriopsis mediosetigera", 
-"^ot:ottId": 809125, 
-"^ot:ottTaxonName": "Halosphaeriopsis mediosetigera", 
 "^ot:treebaseOTUId": "Tl138103"
 }, 
 "otu75555": {
+"@label": "Neurospora crassa", 
 "^ot:originalLabel": "Neurospora crassa", 
 "^ot:ottId": 572462, 
 "^ot:ottTaxonName": "Neurospora crassa", 
 "^ot:treebaseOTUId": "Tl138104"
 }, 
 "otu75556": {
+"@label": "Cryphonectria parasitica", 
 "^ot:originalLabel": "Cryphonectria parasitica", 
 "^ot:ottId": 103005, 
 "^ot:ottTaxonName": "Cryphonectria parasitica", 
 "^ot:treebaseOTUId": "Tl138105"
 }, 
 "otu75557": {
+"@label": "Xylaria hypoxylon", 
 "^ot:originalLabel": "Xylaria hypoxylon", 
 "^ot:ottId": 44255, 
 "^ot:ottTaxonName": "Xylaria hypoxylon", 
 "^ot:treebaseOTUId": "Tl138106"
 }, 
 "otu75558": {
+"@label": "Taphrina deformans", 
 "^ot:originalLabel": "Taphrina deformans", 
 "^ot:ottId": 406032, 
 "^ot:ottTaxonName": "Taphrina deformans", 
 "^ot:treebaseOTUId": "Tl138107"
 }, 
 "otu75559": {
+"@label": "Daldinia concentrica", 
 "^ot:originalLabel": "Daldinia concentrica", 
 "^ot:ottId": 183726, 
 "^ot:ottTaxonName": "Daldinia concentrica", 
 "^ot:treebaseOTUId": "Tl138108"
 }, 
 "otu75560": {
+"@label": "Morchella esculenta", 
 "^ot:originalLabel": "Morchella esculenta", 
-"^ot:ottId": 952133, 
-"^ot:ottTaxonName": "Morchella esculenta", 
 "^ot:treebaseOTUId": "Tl138109"
 }, 
 "otu75561": {
+"@label": "Candida tropicalis", 
 "^ot:originalLabel": "Candida tropicalis", 
 "^ot:ottId": 408236, 
 "^ot:ottTaxonName": "Candida tropicalis", 
 "^ot:treebaseOTUId": "Tl138110"
 }, 
 "otu75562": {
+"@label": "Sphaerostilbella aureonitens", 
 "^ot:originalLabel": "Sphaerostilbella aureonitens", 
 "^ot:ottId": 409107, 
 "^ot:ottTaxonName": "Sphaerostilbella aureonitens", 
 "^ot:treebaseOTUId": "Tl138112"
 }, 
 "otu75563": {
+"@label": "Hypomyces polyporinus", 
 "^ot:originalLabel": "Hypomyces polyporinus", 
 "^ot:ottId": 234765, 
 "^ot:ottTaxonName": "Hypomyces polyporinus", 
 "^ot:treebaseOTUId": "Tl138113"
 }, 
 "otu75564": {
+"@label": "Petriella setifera", 
 "^ot:originalLabel": "Petriella setifera", 
 "^ot:ottId": 809132, 
 "^ot:ottTaxonName": "Petriella setifera", 
 "^ot:treebaseOTUId": "Tl138114"
 }, 
 "otu75565": {
+"@label": "Talaromyces flavus", 
 "^ot:originalLabel": "Talaromyces flavus", 
 "^ot:ottId": 376372, 
 "^ot:ottTaxonName": "Talaromyces flavus", 
 "^ot:treebaseOTUId": "Tl138115"
 }, 
 "otu75566": {
+"@label": "Ophiostoma ulmi", 
 "^ot:originalLabel": "Ophiostoma ulmi", 
 "^ot:ottId": 51645, 
 "^ot:ottTaxonName": "Ophiostoma ulmi", 
 "^ot:treebaseOTUId": "Tl138118"
 }, 
 "otu75567": {
+"@label": "Chaetomium globosum", 
 "^ot:originalLabel": "Chaetomium globosum", 
 "^ot:ottId": 758745, 
 "^ot:ottTaxonName": "Chaetomium globosum", 
 "^ot:treebaseOTUId": "Tl138120"
 }, 
 "otu75568": {
+"@label": "Haematonectria haematococca", 
 "^ot:originalLabel": "Haematonectria haematococca", 
 "^ot:ottId": 743045, 
-"^ot:ottTaxonName": "Nectria haematococca", 
+"^ot:ottTaxonName": "Haematonectria haematococca", 
 "^ot:treebaseOTUId": "Tl138122"
 }, 
 "otu75569": {
+"@label": "Aspergillus fumigatus", 
 "^ot:originalLabel": "Aspergillus fumigatus", 
 "^ot:ottId": 278828, 
 "^ot:ottTaxonName": "Aspergillus fumigatus", 
 "^ot:treebaseOTUId": "Tl138123"
 }, 
 "otu75570": {
+"@label": "Subbaromyces splendens", 
 "^ot:originalLabel": "Subbaromyces splendens", 
 "^ot:ottId": 87638, 
 "^ot:ottTaxonName": "Subbaromyces splendens", 
 "^ot:treebaseOTUId": "Tl14008"
 }, 
 "otu75571": {
+"@label": "Blastomyces dermititidis", 
 "^ot:originalLabel": "Blastomyces dermititidis", 
-"^ot:ottId": 646416, 
-"^ot:ottTaxonName": "Blastomyces", 
 "^ot:treebaseOTUId": "Tl14010"
 }, 
 "otu75572": {
+"@label": "Termitaria snyderi H1", 
 "^ot:originalLabel": "Termitaria snyderi H1", 
-"^ot:ottId": 240215, 
-"^ot:ottTaxonName": "Termitaria snyderi", 
 "^ot:treebaseOTUId": "Tl14012"
 }, 
 "otu75573": {
+"@label": "Saccharomyces cerevisiae", 
 "^ot:originalLabel": "Saccharomyces cereviseae", 
 "^ot:ottId": 908549, 
 "^ot:ottTaxonName": "Saccharomyces cerevisiae", 
 "^ot:treebaseOTUId": "Tl14013"
 }, 
 "otu75574": {
+"@label": "Alternaria alternata", 
 "^ot:originalLabel": "Alternaria alterna", 
 "^ot:ottId": 464784, 
 "^ot:ottTaxonName": "Alternaria alternata", 
 "^ot:treebaseOTUId": "Tl14014"
 }, 
 "otu75575": {
+"@label": "Diaporthe phaseolarum", 
 "^ot:originalLabel": "Diaporthe phaseolarum", 
-"^ot:ottId": 737678, 
-"^ot:ottTaxonName": "Diaporthe phaseolorum", 
 "^ot:treebaseOTUId": "Tl14015"
 }, 
 "otu75576": {
+"@label": "Annulohypoxylon atroroseum", 
 "^ot:originalLabel": "Hypoxylon atroroseum", 
 "^ot:ottId": 234785, 
 "^ot:ottTaxonName": "Annulohypoxylon atroroseum", 
 "^ot:treebaseOTUId": "Tl14016"
 }, 
 "otu75577": {
+"@label": "Pyxidiophora", 
 "^ot:originalLabel": "Pyxidiophora sp3", 
 "^ot:ottId": 58290, 
 "^ot:ottTaxonName": "Pyxidiophora", 
 "^ot:treebaseOTUId": "Tl14017"
 }, 
 "otu75578": {
+"@label": "Termitaria snyderi T1", 
 "^ot:originalLabel": "Termitaria snyderi T1", 
-"^ot:ottId": 240215, 
-"^ot:ottTaxonName": "Termitaria snyderi", 
 "^ot:treebaseOTUId": "Tl14018"
 }
 }
@@ -369,7 +358,7 @@
 "tree400": {
 "@xsi:type": "nex:FloatTree", 
 "^ot:curatedType": "MP, SSU + b-tubulin", 
-"^ot:inGroupClade": "node199579", 
+"^ot:inGroupClade": "node199590", 
 "^ot:rootNodeId": "node199574", 
 "^ot:tag": "MP", 
 "edgeBySourceId": {

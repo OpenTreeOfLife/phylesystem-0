@@ -15,57 +15,17 @@
 "^ot:agents": {
 "agent": [
 {
-"@description": "validator of NexSON constraints as well as constraints that would allow a study to be imported into the Open Tree of Life's phylogenetic synthesis tools", 
+"@description": "Open Tree NexSON validation", 
 "@id": "peyotl-validator", 
-"@name": "validate_ot_nexson.py", 
+"@name": "api.opentreeoflife.org/validate", 
 "@url": "https://github.com/OpenTreeOfLife/peyotl", 
-"@version": "0.0.3a", 
+"@version": "0.0.4a", 
 "invocation": {
-"checksPerformed": [
-"MISSING_MANDATORY_KEY", 
-"MISSING_OPTIONAL_KEY", 
-"UNRECOGNIZED_KEY", 
-"MISSING_LIST_EXPECTED", 
-"DUPLICATING_SINGLETON_KEY", 
-"REFERENCED_ID_NOT_FOUND", 
-"REPEATED_ID", 
-"REPEATED_OTU", 
-"MULTIPLE_ROOT_NODES", 
-"NO_ROOT_NODE", 
-"MULTIPLE_EDGES_FOR_NODES", 
-"CYCLE_DETECTED", 
-"DISCONNECTED_GRAPH_DETECTED", 
-"INCORRECT_ROOT_NODE_LABEL", 
-"TIP_WITHOUT_OTU", 
-"TIP_WITHOUT_OTT_ID", 
-"MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
-"NON_MONOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
-"INVALID_PROPERTY_VALUE", 
-"PROPERTY_VALUE_NOT_USEFUL", 
-"UNRECOGNIZED_PROPERTY_VALUE", 
-"MULTIPLE_TREES", 
-"UNRECOGNIZED_TAG", 
-"CONFLICTING_PROPERTY_VALUES", 
-"NO_TREES", 
-"DEPRECATED_PROPERTY", 
-"UNPARSEABLE_META", 
-"UNREACHABLE_NODE", 
-"INCORRECT_VALUE_TYPE", 
-"MISSING_CRUCIAL_CONTENT"
-], 
-"commandLine": [
-"--embed", 
-"--agent-only", 
-"-e", 
-"../mig-phyelesystem-scratch/337/validation.json", 
-"-o", 
-"../mig-phyelesystem-scratch/337/final.json", 
-"../mig-phyelesystem-scratch/337/v1.2.1-337.json"
-], 
+"commandLine": [], 
 "otherProperty": [
 {
 "name": "pythonVersion", 
-"value": "2.7.5+"
+"value": "2.7.3"
 }, 
 {
 "name": "pythonImplementation", 
@@ -75,6 +35,9 @@
 }
 }
 ]
+}, 
+"^ot:annotationEvents": {
+"annotation": []
 }, 
 "^ot:curatorName": "Romina Gazis", 
 "^ot:dataDeposit": {
@@ -91,6 +54,10 @@
 }, 
 "^ot:studyPublicationReference": "Inderbitzin P., Kohlmeyer J., Vokmann-kohlmeyer B., & Berbee M. 2002. Decorospora, a new genus for the marine ascomycete Pleospora gaudefroyi. Mycologia, 94(4): 651-659.", 
 "^ot:studyYear": 2002, 
+"^ot:tag": [
+"MP", 
+"SSU"
+], 
 "^ot:treesElementOrder": [
 "trees337"
 ], 
@@ -98,164 +65,196 @@
 "otus337": {
 "otuById": {
 "otu74623": {
+"@label": "Phaeosphaeria nodorum", 
 "^ot:originalLabel": "Phaeosphaeria nodorum", 
-"^ot:ottId": 562295, 
+"^ot:ottId": 5346507, 
 "^ot:ottTaxonName": "Phaeosphaeria nodorum", 
 "^ot:treebaseOTUId": "Tl130749"
 }, 
 "otu74624": {
+"@label": "Didymella exigua", 
 "^ot:originalLabel": "Didymella exigua", 
 "^ot:ottId": 139339, 
 "^ot:ottTaxonName": "Didymella exigua", 
 "^ot:treebaseOTUId": "Tl130750"
 }, 
 "otu74625": {
+"@label": "Sporormiella australis", 
 "^ot:originalLabel": "Sporormiella australis", 
 "^ot:ottId": 334999, 
 "^ot:ottTaxonName": "Sporormiella australis", 
 "^ot:treebaseOTUId": "Tl130752"
 }, 
 "otu74626": {
+"@label": "Montagnula opulenta", 
 "^ot:originalLabel": "Montagnula opulenta", 
 "^ot:ottId": 87444, 
 "^ot:ottTaxonName": "Montagnula opulenta", 
 "^ot:treebaseOTUId": "Tl130754"
 }, 
 "otu74627": {
+"@label": "Pleospora herbarum", 
 "^ot:originalLabel": "Pleospora herbarum", 
 "^ot:ottId": 282723, 
 "^ot:ottTaxonName": "Pleospora herbarum", 
 "^ot:treebaseOTUId": "Tl130755"
 }, 
 "otu74628": {
+"@label": "Morosphaeria elaterascus", 
 "^ot:originalLabel": "Kirschsteiniothelia elaterascus", 
 "^ot:ottId": 708140, 
 "^ot:ottTaxonName": "Morosphaeria elaterascus", 
 "^ot:treebaseOTUId": "Tl130756"
 }, 
 "otu74629": {
+"@label": "Alternaria alternata", 
 "^ot:originalLabel": "Alternaria alternata", 
 "^ot:ottId": 464784, 
 "^ot:ottTaxonName": "Alternaria alternata", 
 "^ot:treebaseOTUId": "Tl130757"
 }, 
 "otu74630": {
+"@label": "Pleomassaria siparia", 
 "^ot:originalLabel": "Pleomassaria siparia", 
 "^ot:ottId": 61792, 
 "^ot:ottTaxonName": "Pleomassaria siparia", 
 "^ot:treebaseOTUId": "Tl130758"
 }, 
 "otu74631": {
+"@label": "Herpotrichia diffusa", 
 "^ot:originalLabel": "Herpotrichia diffusa", 
 "^ot:ottId": 659816, 
 "^ot:ottTaxonName": "Herpotrichia diffusa", 
 "^ot:treebaseOTUId": "Tl130759"
 }, 
 "otu74632": {
+"@label": "Delitschia winteri", 
 "^ot:originalLabel": "Delitschia winteri", 
 "^ot:ottId": 518703, 
 "^ot:ottTaxonName": "Delitschia winteri", 
 "^ot:treebaseOTUId": "Tl130760"
 }, 
 "otu74633": {
+"@label": "Phaeodothis winteri", 
 "^ot:originalLabel": "Phaeodothis winteri", 
 "^ot:ottId": 61788, 
 "^ot:ottTaxonName": "Phaeodothis winteri", 
 "^ot:treebaseOTUId": "Tl130761"
 }, 
 "otu74634": {
+"@label": "Massarina australiensis", 
 "^ot:originalLabel": "Massarina australiensis", 
 "^ot:ottId": 87431, 
 "^ot:ottTaxonName": "Massarina australiensis", 
 "^ot:treebaseOTUId": "Tl130762"
 }, 
 "otu74635": {
+"@label": "Rhytidhysteron rufulum", 
 "^ot:originalLabel": "Rhytidhysteron rufulum", 
 "^ot:ottId": 614432, 
 "^ot:ottTaxonName": "Rhytidhysteron rufulum", 
 "^ot:treebaseOTUId": "Tl130763"
 }, 
 "otu74636": {
+"@label": "Melanomma pulvis-pyrius", 
 "^ot:originalLabel": "Melanomma pulvispyrius", 
 "^ot:ottId": 556568, 
 "^ot:ottTaxonName": "Melanomma pulvis-pyrius", 
 "^ot:treebaseOTUId": "Tl130764"
 }, 
 "otu74637": {
+"@label": "Pyrenophora tritici-repentis", 
 "^ot:originalLabel": "Pyrenophora tritici repentis", 
 "^ot:ottId": 85506, 
 "^ot:ottTaxonName": "Pyrenophora tritici-repentis", 
 "^ot:treebaseOTUId": "Tl130765"
 }, 
 "otu74638": {
+"@label": "Bipolaris sorokiniana", 
 "^ot:originalLabel": "Cochliobolus sativus", 
 "^ot:ottId": 204741, 
-"^ot:ottTaxonName": "Cochliobolus sativus", 
+"^ot:ottTaxonName": "Bipolaris sorokiniana", 
 "^ot:treebaseOTUId": "Tl130766"
 }, 
 "otu74639": {
+"@label": "Lophiostoma angustilabrum", 
 "^ot:originalLabel": "Lophiostoma crenatum", 
+"^ot:ottId": 3728479, 
+"^ot:ottTaxonName": "Lophiostoma angustilabrum", 
 "^ot:treebaseOTUId": "Tl130767"
 }, 
 "otu74640": {
+"@label": "Splanchnonema platani", 
 "^ot:originalLabel": "Massaria platani", 
 "^ot:ottId": 87437, 
 "^ot:ottTaxonName": "Splanchnonema platani", 
 "^ot:treebaseOTUId": "Tl130768"
 }, 
 "otu74641": {
+"@label": "Leptosphaeria maculans", 
 "^ot:originalLabel": "Leptosphaeria maculans", 
 "^ot:ottId": 581438, 
 "^ot:ottTaxonName": "Leptosphaeria maculans", 
 "^ot:treebaseOTUId": "Tl130769"
 }, 
 "otu74642": {
+"@label": "Chaetomastia phaeospora", 
 "^ot:originalLabel": "Massariosphaeria phaeospora", 
 "^ot:ottId": 917237, 
-"^ot:ottTaxonName": "Massariosphaeria phaeospora", 
+"^ot:ottTaxonName": "Chaetomastia phaeospora", 
 "^ot:treebaseOTUId": "Tl130771"
 }, 
 "otu74643": {
+"@label": "Westerdykella dispersa", 
 "^ot:originalLabel": "Westerdykella dispersa", 
 "^ot:ottId": 85501, 
 "^ot:ottTaxonName": "Westerdykella dispersa", 
 "^ot:treebaseOTUId": "Tl130772"
 }, 
 "otu74644": {
+"@label": "Setosphaeria rostrata", 
 "^ot:originalLabel": "Setosphaeria rostrata", 
 "^ot:ottId": 85504, 
 "^ot:ottTaxonName": "Setosphaeria rostrata", 
 "^ot:treebaseOTUId": "Tl130774"
 }, 
 "otu74645": {
+"@label": "Pseudotrichia aurata", 
 "^ot:originalLabel": "Pseudotrichia aurata", 
 "^ot:ottId": 67509, 
 "^ot:ottTaxonName": "Pseudotrichia aurata", 
 "^ot:treebaseOTUId": "Tl130775"
 }, 
 "otu74646": {
+"@label": "Leptospora rubella", 
 "^ot:originalLabel": "Leptospora rubella", 
+"^ot:ottId": 139335, 
+"^ot:ottTaxonName": "Leptospora rubella", 
 "^ot:treebaseOTUId": "Tl130776"
 }, 
 "otu74647": {
+"@label": "Decorospora gaudefroyi", 
 "^ot:originalLabel": "Decorospora gaudefroyi", 
 "^ot:ottId": 240398, 
 "^ot:ottTaxonName": "Decorospora gaudefroyi", 
 "^ot:treebaseOTUId": "Tl7967"
 }, 
 "otu74648": {
+"@label": "Trematosphaeria hydrela", 
 "^ot:originalLabel": "Trematosphaeria hydrela", 
 "^ot:ottId": 556558, 
 "^ot:ottTaxonName": "Trematosphaeria hydrela", 
 "^ot:treebaseOTUId": "Tl7968"
 }, 
 "otu74649": {
+"@label": "Sporormia lignicola", 
 "^ot:originalLabel": "Sporomia lignicola", 
 "^ot:ottId": 204749, 
 "^ot:ottTaxonName": "Sporormia lignicola", 
 "^ot:treebaseOTUId": "Tl7971"
 }, 
 "otu74650": {
+"@label": "Didymella bryoniae", 
 "^ot:originalLabel": "Mycosphaerella citrullina", 
 "^ot:ottId": 425014, 
 "^ot:ottTaxonName": "Didymella bryoniae", 

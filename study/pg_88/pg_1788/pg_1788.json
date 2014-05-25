@@ -15,57 +15,17 @@
 "^ot:agents": {
 "agent": [
 {
-"@description": "validator of NexSON constraints as well as constraints that would allow a study to be imported into the Open Tree of Life's phylogenetic synthesis tools", 
+"@description": "Open Tree NexSON validation", 
 "@id": "peyotl-validator", 
-"@name": "validate_ot_nexson.py", 
+"@name": "api.opentreeoflife.org/validate", 
 "@url": "https://github.com/OpenTreeOfLife/peyotl", 
-"@version": "0.0.3a", 
+"@version": "0.0.4a", 
 "invocation": {
-"checksPerformed": [
-"MISSING_MANDATORY_KEY", 
-"MISSING_OPTIONAL_KEY", 
-"UNRECOGNIZED_KEY", 
-"MISSING_LIST_EXPECTED", 
-"DUPLICATING_SINGLETON_KEY", 
-"REFERENCED_ID_NOT_FOUND", 
-"REPEATED_ID", 
-"REPEATED_OTU", 
-"MULTIPLE_ROOT_NODES", 
-"NO_ROOT_NODE", 
-"MULTIPLE_EDGES_FOR_NODES", 
-"CYCLE_DETECTED", 
-"DISCONNECTED_GRAPH_DETECTED", 
-"INCORRECT_ROOT_NODE_LABEL", 
-"TIP_WITHOUT_OTU", 
-"TIP_WITHOUT_OTT_ID", 
-"MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
-"NON_MONOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
-"INVALID_PROPERTY_VALUE", 
-"PROPERTY_VALUE_NOT_USEFUL", 
-"UNRECOGNIZED_PROPERTY_VALUE", 
-"MULTIPLE_TREES", 
-"UNRECOGNIZED_TAG", 
-"CONFLICTING_PROPERTY_VALUES", 
-"NO_TREES", 
-"DEPRECATED_PROPERTY", 
-"UNPARSEABLE_META", 
-"UNREACHABLE_NODE", 
-"INCORRECT_VALUE_TYPE", 
-"MISSING_CRUCIAL_CONTENT"
-], 
-"commandLine": [
-"--embed", 
-"--agent-only", 
-"-e", 
-"../mig-phyelesystem-scratch/1788/validation.json", 
-"-o", 
-"../mig-phyelesystem-scratch/1788/final.json", 
-"../mig-phyelesystem-scratch/1788/v1.2.1-1788.json"
-], 
+"commandLine": [], 
 "otherProperty": [
 {
 "name": "pythonVersion", 
-"value": "2.7.5+"
+"value": "2.7.3"
 }, 
 {
 "name": "pythonImplementation", 
@@ -75,6 +35,9 @@
 }
 }
 ]
+}, 
+"^ot:annotationEvents": {
+"annotation": []
 }, 
 "^ot:curatorName": "Chris Owen", 
 "^ot:dataDeposit": {
@@ -89,7 +52,7 @@
 "^ot:studyPublication": {
 "@href": "http://dx.doi.org/10.1080/10635150500354837"
 }, 
-"^ot:studyPublicationReference": "Dunn C., Pugh P., & Haddock S. 2005. Molecular phylogenetics of the Siphonophora (Cnidaria), with implications for the evolution of functional specialization. Systematic Biology 54 (6): 916-935.", 
+"^ot:studyPublicationReference": "Dunn, C., Pugh P., & Haddock S. 2005. Molecular phylogenetics of the Siphonophora (Cnidaria), with implications for the evolution of functional specialization. Systematic Biology 54 (6): 916-935.", 
 "^ot:studyYear": 2005, 
 "^ot:treesElementOrder": [
 "trees1788"
@@ -98,330 +61,390 @@
 "otus1788": {
 "otuById": {
 "otu278447": {
+"@label": "Physalia physalis", 
 "^ot:originalLabel": "Physalia physalis", 
 "^ot:ottId": 702294, 
 "^ot:ottTaxonName": "Physalia physalis", 
 "^ot:treebaseOTUId": "Tl241807"
 }, 
 "otu278448": {
+"@label": "Staurocladia wellingtoni", 
 "^ot:originalLabel": "Staurocladia wellingtoni", 
 "^ot:ottId": 54563, 
 "^ot:ottTaxonName": "Staurocladia wellingtoni", 
 "^ot:treebaseOTUId": "Tl241913"
 }, 
 "otu278449": {
+"@label": "Athorybia rosacea", 
 "^ot:originalLabel": "Athorybia rosacea Atlantic", 
 "^ot:ottId": 15314, 
 "^ot:ottTaxonName": "Athorybia rosacea", 
 "^ot:treebaseOTUId": "Tl267070"
 }, 
 "otu278450": {
+"@label": "Forskalia edwardsi", 
 "^ot:originalLabel": "Forskalia edwardsi Pacific 1", 
 "^ot:ottId": 986301, 
 "^ot:ottTaxonName": "Forskalia edwardsi", 
 "^ot:treebaseOTUId": "Tl267071"
 }, 
 "otu278451": {
+"@label": "Lensia conoidea", 
 "^ot:originalLabel": "Lensia conoidea", 
 "^ot:ottId": 863148, 
 "^ot:ottTaxonName": "Lensia conoidea", 
 "^ot:treebaseOTUId": "Tl267072"
 }, 
 "otu278452": {
+"@label": "Vogtia pentacantha", 
 "^ot:originalLabel": "Vogtia pentacantha", 
 "^ot:ottId": 288604, 
 "^ot:ottTaxonName": "Vogtia pentacantha", 
 "^ot:treebaseOTUId": "Tl267073"
 }, 
 "otu278453": {
+"@label": "Porpita porpita", 
 "^ot:originalLabel": "Porpita porpita", 
 "^ot:ottId": 288598, 
 "^ot:ottTaxonName": "Porpita porpita", 
 "^ot:treebaseOTUId": "Tl267074"
 }, 
 "otu278454": {
+"@label": "Craseoa lathetica", 
 "^ot:originalLabel": "Craseoa lathetica", 
 "^ot:ottId": 3680671, 
 "^ot:ottTaxonName": "Craseoa lathetica", 
 "^ot:treebaseOTUId": "Tl267075"
 }, 
 "otu278455": {
+"@label": "Rhizophysa filiformis", 
 "^ot:originalLabel": "Rhizophysa filiformis", 
 "^ot:ottId": 486579, 
 "^ot:ottTaxonName": "Rhizophysa filiformis", 
 "^ot:treebaseOTUId": "Tl267076"
 }, 
 "otu278456": {
+"@label": "Sulculeolaria quadrivalvis", 
 "^ot:originalLabel": "Sulculeolaria quadrivalvis Pacific", 
 "^ot:ottId": 1062858, 
 "^ot:ottTaxonName": "Sulculeolaria quadrivalvis", 
 "^ot:treebaseOTUId": "Tl267077"
 }, 
 "otu278457": {
+"@label": "Agalma elegans", 
 "^ot:originalLabel": "Agalma elegans Atlantic", 
 "^ot:ottId": 536352, 
 "^ot:ottTaxonName": "Agalma elegans", 
 "^ot:treebaseOTUId": "Tl267078"
 }, 
 "otu278458": {
+"@label": "Sulculeolaria quadrivalvis", 
 "^ot:originalLabel": "Sulculeolaria quadrivalvis Atlantic", 
 "^ot:ottId": 1062858, 
 "^ot:ottTaxonName": "Sulculeolaria quadrivalvis", 
 "^ot:treebaseOTUId": "Tl267079"
 }, 
 "otu278459": {
+"@label": "Bargmannia elongata", 
 "^ot:originalLabel": "Bargmannia elongata", 
 "^ot:ottId": 288603, 
 "^ot:ottTaxonName": "Bargmannia elongata", 
 "^ot:treebaseOTUId": "Tl267080"
 }, 
 "otu278460": {
+"@label": "Nectopyramis natans", 
 "^ot:originalLabel": "Nectopyramis natans", 
 "^ot:ottId": 338563, 
 "^ot:ottTaxonName": "Nectopyramis natans", 
 "^ot:treebaseOTUId": "Tl267081"
 }, 
 "otu278461": {
+"@label": "Rosacea flaccida", 
 "^ot:originalLabel": "Rosacea flaccida", 
 "^ot:ottId": 486575, 
 "^ot:ottTaxonName": "Rosacea flaccida", 
 "^ot:treebaseOTUId": "Tl267082"
 }, 
 "otu278462": {
+"@label": "Vogtia glabra", 
 "^ot:originalLabel": "Vogtia glabra", 
 "^ot:ottId": 338558, 
 "^ot:ottTaxonName": "Vogtia glabra", 
 "^ot:treebaseOTUId": "Tl267083"
 }, 
 "otu278463": {
+"@label": "Forskalia formosa", 
 "^ot:originalLabel": "Forskalia formosa", 
 "^ot:ottId": 913320, 
 "^ot:ottTaxonName": "Forskalia formosa", 
 "^ot:treebaseOTUId": "Tl267084"
 }, 
 "otu278464": {
+"@label": "Chelophyes appendiculata", 
 "^ot:originalLabel": "Chelophyes appendiculata", 
 "^ot:ottId": 338564, 
 "^ot:ottTaxonName": "Chelophyes appendiculata", 
 "^ot:treebaseOTUId": "Tl267085"
 }, 
 "otu278465": {
+"@label": "Diphyes dispar", 
 "^ot:originalLabel": "Diphyes dispar", 
 "^ot:ottId": 15310, 
 "^ot:ottTaxonName": "Diphyes dispar", 
 "^ot:treebaseOTUId": "Tl267086"
 }, 
 "otu278466": {
+"@label": "Praya dubia", 
 "^ot:originalLabel": "Praya dubia", 
 "^ot:ottId": 486578, 
 "^ot:ottTaxonName": "Praya dubia", 
 "^ot:treebaseOTUId": "Tl267087"
 }, 
 "otu278467": {
+"@label": "Chuniphyes multidentata", 
 "^ot:originalLabel": "Chuniphyes multidentata", 
 "^ot:ottId": 913324, 
 "^ot:ottTaxonName": "Chuniphyes multidentata", 
 "^ot:treebaseOTUId": "Tl267088"
 }, 
 "otu278468": {
+"@label": "Forskalia edwardsi", 
 "^ot:originalLabel": "Forskalia edwardsi Atlantic", 
 "^ot:ottId": 986301, 
 "^ot:ottTaxonName": "Forskalia edwardsi", 
 "^ot:treebaseOTUId": "Tl267089"
 }, 
 "otu278469": {
+"@label": "Apolemia sp. 4 CWD-2005", 
 "^ot:originalLabel": "Apolemia sp 4", 
 "^ot:ottId": 1062853, 
 "^ot:ottTaxonName": "Apolemia sp. 4 CWD-2005", 
 "^ot:treebaseOTUId": "Tl267090"
 }, 
 "otu278470": {
+"@label": "Apolemia sp. 2 CWD-2005", 
 "^ot:originalLabel": "Apolemia sp 2", 
 "^ot:ottId": 1062855, 
 "^ot:ottTaxonName": "Apolemia sp. 2 CWD-2005", 
 "^ot:treebaseOTUId": "Tl267091"
 }, 
 "otu278471": {
+"@label": "Clausophyid sp 1", 
 "^ot:originalLabel": "Clausophyid sp 1", 
 "^ot:treebaseOTUId": "Tl267092"
 }, 
 "otu278472": {
+"@label": "Apolemia sp. 1 CWD-2005", 
 "^ot:originalLabel": "Apolemia sp 1", 
 "^ot:ottId": 15311, 
 "^ot:ottTaxonName": "Apolemia sp. 1 CWD-2005", 
 "^ot:treebaseOTUId": "Tl267093"
 }, 
 "otu278473": {
+"@label": "Velella velella", 
 "^ot:originalLabel": "Velella velella", 
 "^ot:ottId": 707202, 
 "^ot:ottTaxonName": "Velella velella", 
 "^ot:treebaseOTUId": "Tl267094"
 }, 
 "otu278474": {
+"@label": "Nanomia bijuga", 
 "^ot:originalLabel": "Nanomia bijuga Atlantic", 
 "^ot:ottId": 358889, 
 "^ot:ottTaxonName": "Nanomia bijuga", 
 "^ot:treebaseOTUId": "Tl267095"
 }, 
 "otu278475": {
+"@label": "Nectadamas diomedeae", 
 "^ot:originalLabel": "Nectadamas diomedeae", 
 "^ot:ottId": 338560, 
 "^ot:ottTaxonName": "Nectadamas diomedeae", 
 "^ot:treebaseOTUId": "Tl267096"
 }, 
 "otu278476": {
+"@label": "Hippopodius hippopus", 
 "^ot:originalLabel": "Hippopodius hippopus Atlantic", 
 "^ot:ottId": 934506, 
 "^ot:ottTaxonName": "Hippopodius hippopus", 
 "^ot:treebaseOTUId": "Tl267097"
 }, 
 "otu278477": {
+"@label": "Hippopodius hippopus", 
 "^ot:originalLabel": "Hippopodius hippopus Pacific", 
 "^ot:ottId": 934506, 
 "^ot:ottTaxonName": "Hippopodius hippopus", 
 "^ot:treebaseOTUId": "Tl267098"
 }, 
 "otu278478": {
+"@label": "Stephalia dilata", 
 "^ot:originalLabel": "Stephalia dilata", 
 "^ot:ottId": 863143, 
 "^ot:ottTaxonName": "Stephalia dilata", 
 "^ot:treebaseOTUId": "Tl267099"
 }, 
 "otu278479": {
+"@label": "Halistemma rubrum", 
 "^ot:originalLabel": "Halistemma rubrum Med", 
 "^ot:ottId": 486585, 
 "^ot:ottTaxonName": "Halistemma rubrum", 
 "^ot:treebaseOTUId": "Tl267100"
 }, 
 "otu278480": {
+"@label": "Apolemia sp. 3 CWD-2005", 
 "^ot:originalLabel": "Apolemia sp 3", 
 "^ot:ottId": 1062856, 
 "^ot:ottTaxonName": "Apolemia sp. 3 CWD-2005", 
 "^ot:treebaseOTUId": "Tl267101"
 }, 
 "otu278481": {
+"@label": "Agalma elegans", 
 "^ot:originalLabel": "Agalma elegans Pacific", 
 "^ot:ottId": 536352, 
 "^ot:ottTaxonName": "Agalma elegans", 
 "^ot:treebaseOTUId": "Tl267102"
 }, 
 "otu278482": {
+"@label": "Abylopsis tetragona", 
 "^ot:originalLabel": "Abylopsis tetragona", 
 "^ot:ottId": 913319, 
 "^ot:ottTaxonName": "Abylopsis tetragona", 
 "^ot:treebaseOTUId": "Tl267103"
 }, 
 "otu278483": {
+"@label": "Halistemma amphytridis", 
 "^ot:originalLabel": "Stephanomia amphytridis", 
+"^ot:ottId": 320482, 
+"^ot:ottTaxonName": "Halistemma amphytridis", 
 "^ot:treebaseOTUId": "Tl267104"
 }, 
 "otu278484": {
+"@label": "Agalma clausi", 
 "^ot:originalLabel": "Agalma clausi", 
 "^ot:ottId": 536353, 
 "^ot:ottTaxonName": "Agalma clausi", 
 "^ot:treebaseOTUId": "Tl267105"
 }, 
 "otu278485": {
+"@label": "Hydra", 
 "^ot:originalLabel": "Hydra", 
 "^ot:ottId": 767784, 
 "^ot:ottTaxonName": "Hydra", 
 "^ot:treebaseOTUId": "Tl267106"
 }, 
 "otu278486": {
+"@label": "Agalma okeni", 
 "^ot:originalLabel": "Agalma okeni", 
 "^ot:ottId": 536351, 
 "^ot:ottTaxonName": "Agalma okeni", 
 "^ot:treebaseOTUId": "Tl267107"
 }, 
 "otu278487": {
+"@label": "Halistemma rubrum", 
 "^ot:originalLabel": "Halistemma rubrum Atlantic", 
 "^ot:ottId": 486585, 
 "^ot:ottTaxonName": "Halistemma rubrum", 
 "^ot:treebaseOTUId": "Tl267108"
 }, 
 "otu278488": {
+"@label": "Gymnopraia lapislazula", 
 "^ot:originalLabel": "Gymnopraia lapislazula", 
 "^ot:ottId": 863145, 
 "^ot:ottTaxonName": "Gymnopraia lapislazula", 
 "^ot:treebaseOTUId": "Tl267109"
 }, 
 "otu278489": {
+"@label": "Halistemma rubrum", 
 "^ot:originalLabel": "Halistemma rubrum Pacific", 
 "^ot:ottId": 486585, 
 "^ot:ottTaxonName": "Halistemma rubrum", 
 "^ot:treebaseOTUId": "Tl267110"
 }, 
 "otu278490": {
+"@label": "Athorybia rosacea", 
 "^ot:originalLabel": "Athorybia rosacea Pacific", 
 "^ot:ottId": 15314, 
 "^ot:ottTaxonName": "Athorybia rosacea", 
 "^ot:treebaseOTUId": "Tl267111"
 }, 
 "otu278491": {
+"@label": "Bargmannia amoena", 
 "^ot:originalLabel": "Bargmannia amoena", 
 "^ot:ottId": 1062852, 
 "^ot:ottTaxonName": "Bargmannia amoena", 
 "^ot:treebaseOTUId": "Tl267112"
 }, 
 "otu278492": {
+"@label": "Kephyes ovata", 
 "^ot:originalLabel": "Clausophyes ovata", 
+"^ot:ottId": 219163, 
+"^ot:ottTaxonName": "Kephyes ovata", 
 "^ot:treebaseOTUId": "Tl267113"
 }, 
 "otu278493": {
+"@label": "Erenna sp. CWD-2005", 
 "^ot:originalLabel": "Erenna sp", 
 "^ot:ottId": 863134, 
 "^ot:ottTaxonName": "Erenna sp. CWD-2005", 
 "^ot:treebaseOTUId": "Tl267114"
 }, 
 "otu278494": {
+"@label": "Forskalia tholoides", 
 "^ot:originalLabel": "Forskalia tholoides", 
 "^ot:ottId": 15317, 
 "^ot:ottTaxonName": "Forskalia tholoides", 
 "^ot:treebaseOTUId": "Tl267115"
 }, 
 "otu278495": {
+"@label": "Forskalia edwardsi", 
 "^ot:originalLabel": "Forskalia edwardsi Pacific 2", 
 "^ot:ottId": 986301, 
 "^ot:ottTaxonName": "Forskalia edwardsi", 
 "^ot:treebaseOTUId": "Tl267116"
 }, 
 "otu278496": {
+"@label": "Sphaeronectes gracilis", 
 "^ot:originalLabel": "Sphaeronectes gracilis", 
 "^ot:ottId": 54559, 
 "^ot:ottTaxonName": "Sphaeronectes gracilis", 
 "^ot:treebaseOTUId": "Tl267117"
 }, 
 "otu278497": {
+"@label": "Forskalia asymmetrica", 
 "^ot:originalLabel": "Forskalia asymmetrica", 
 "^ot:ottId": 15316, 
 "^ot:ottTaxonName": "Forskalia asymmetrica", 
 "^ot:treebaseOTUId": "Tl267118"
 }, 
 "otu278498": {
+"@label": "Muggiaea atlantica", 
 "^ot:originalLabel": "Muggiaea atlantica", 
 "^ot:ottId": 913323, 
 "^ot:ottTaxonName": "Muggiaea atlantica", 
 "^ot:treebaseOTUId": "Tl267119"
 }, 
 "otu278499": {
+"@label": "Rhizophysa eysenhardti", 
 "^ot:originalLabel": "Rhizophysa eysenhardti", 
 "^ot:ottId": 338557, 
 "^ot:ottTaxonName": "Rhizophysa eysenhardti", 
 "^ot:treebaseOTUId": "Tl267120"
 }, 
 "otu278500": {
+"@label": "Physophora hydrostatica", 
 "^ot:originalLabel": "Physophora hydrostatica", 
 "^ot:ottId": 408506, 
 "^ot:ottTaxonName": "Physophora hydrostatica", 
 "^ot:treebaseOTUId": "Tl267121"
 }, 
 "otu278501": {
+"@label": "Nanomia bijuga", 
 "^ot:originalLabel": "Nanomia bijuga Pacific", 
 "^ot:ottId": 358889, 
 "^ot:ottTaxonName": "Nanomia bijuga", 
 "^ot:treebaseOTUId": "Tl267122"
 }, 
 "otu278502": {
+"@label": "Cordagalma cordiforme", 
 "^ot:originalLabel": "Cordagalma cordiforme", 
 "^ot:ottId": 15308, 
 "^ot:ottTaxonName": "Cordagalma cordiforme", 
@@ -1218,7 +1241,6 @@
 "^ot:branchLengthMode": "ot:substitutionCount", 
 "^ot:curatedType": "Fig. 5b ML 18S", 
 "^ot:rootNodeId": "node693004", 
-"^ot:tag": "delete", 
 "edgeBySourceId": {
 "node693004": {
 "edge693005": {
@@ -5456,5 +5478,7 @@
 }
 }
 }
-}
+}, 
+"to_download_from_pg": [], 
+"to_upload_to_phylesystem": []
 }

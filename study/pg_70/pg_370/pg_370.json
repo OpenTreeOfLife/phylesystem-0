@@ -15,57 +15,17 @@
 "^ot:agents": {
 "agent": [
 {
-"@description": "validator of NexSON constraints as well as constraints that would allow a study to be imported into the Open Tree of Life's phylogenetic synthesis tools", 
+"@description": "Open Tree NexSON validation", 
 "@id": "peyotl-validator", 
-"@name": "validate_ot_nexson.py", 
+"@name": "api.opentreeoflife.org/validate", 
 "@url": "https://github.com/OpenTreeOfLife/peyotl", 
-"@version": "0.0.3a", 
+"@version": "0.0.4a", 
 "invocation": {
-"checksPerformed": [
-"MISSING_MANDATORY_KEY", 
-"MISSING_OPTIONAL_KEY", 
-"UNRECOGNIZED_KEY", 
-"MISSING_LIST_EXPECTED", 
-"DUPLICATING_SINGLETON_KEY", 
-"REFERENCED_ID_NOT_FOUND", 
-"REPEATED_ID", 
-"REPEATED_OTU", 
-"MULTIPLE_ROOT_NODES", 
-"NO_ROOT_NODE", 
-"MULTIPLE_EDGES_FOR_NODES", 
-"CYCLE_DETECTED", 
-"DISCONNECTED_GRAPH_DETECTED", 
-"INCORRECT_ROOT_NODE_LABEL", 
-"TIP_WITHOUT_OTU", 
-"TIP_WITHOUT_OTT_ID", 
-"MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
-"NON_MONOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
-"INVALID_PROPERTY_VALUE", 
-"PROPERTY_VALUE_NOT_USEFUL", 
-"UNRECOGNIZED_PROPERTY_VALUE", 
-"MULTIPLE_TREES", 
-"UNRECOGNIZED_TAG", 
-"CONFLICTING_PROPERTY_VALUES", 
-"NO_TREES", 
-"DEPRECATED_PROPERTY", 
-"UNPARSEABLE_META", 
-"UNREACHABLE_NODE", 
-"INCORRECT_VALUE_TYPE", 
-"MISSING_CRUCIAL_CONTENT"
-], 
-"commandLine": [
-"--embed", 
-"--agent-only", 
-"-e", 
-"../mig-phyelesystem-scratch/370/validation.json", 
-"-o", 
-"../mig-phyelesystem-scratch/370/final.json", 
-"../mig-phyelesystem-scratch/370/v1.2.1-370.json"
-], 
+"commandLine": [], 
 "otherProperty": [
 {
 "name": "pythonVersion", 
-"value": "2.7.5+"
+"value": "2.7.3"
 }, 
 {
 "name": "pythonImplementation", 
@@ -76,12 +36,14 @@
 }
 ]
 }, 
+"^ot:annotationEvents": {
+"annotation": []
+}, 
 "^ot:curatorName": "Romina Gazis", 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S922"
 }, 
 "^ot:focalClade": 412999, 
-"^ot:focalCladeOTTTaxonName": "Cortinarius", 
 "^ot:otusElementOrder": [
 "otus370"
 ], 
@@ -98,254 +60,311 @@
 "otus370": {
 "otuById": {
 "otu76205": {
+"@label": "Cortinarius mucifluus", 
 "^ot:originalLabel": "Cortinarius mucifluus S", 
 "^ot:ottId": 426802, 
 "^ot:ottTaxonName": "Cortinarius mucifluus", 
 "^ot:treebaseOTUId": "Tl11221"
 }, 
 "otu76206": {
+"@label": "Cortinarius keralensis", 
 "^ot:originalLabel": "Cortinarius keralensis", 
 "^ot:ottId": 979669, 
 "^ot:ottTaxonName": "Cortinarius keralensis", 
 "^ot:treebaseOTUId": "Tl11222"
 }, 
 "otu76207": {
+"@label": "Cortinarius alnetorum", 
 "^ot:originalLabel": "Cortinarius alnetorum IB19970382", 
 "^ot:ottId": 979677, 
 "^ot:ottTaxonName": "Cortinarius alnetorum", 
 "^ot:treebaseOTUId": "Tl11225"
 }, 
 "otu76208": {
+"@label": "Cortinarius urbicus", 
 "^ot:originalLabel": "Cortinarius urbicus", 
 "^ot:ottId": 825108, 
 "^ot:ottTaxonName": "Cortinarius urbicus", 
 "^ot:treebaseOTUId": "Tl11226"
 }, 
 "otu76209": {
+"@label": "Cortinarius livido-ochraceus", 
 "^ot:originalLabel": "Cortinarius lividoochrascens", 
+"^ot:ottId": 98833, 
+"^ot:ottTaxonName": "Cortinarius livido-ochraceus", 
 "^ot:treebaseOTUId": "Tl11227"
 }, 
 "otu76210": {
+"@label": "Cortinarius paleaceus", 
 "^ot:originalLabel": "Cortinarius paleaceus AJ236078", 
 "^ot:ottId": 949868, 
 "^ot:ottTaxonName": "Cortinarius paleaceus", 
 "^ot:treebaseOTUId": "Tl11228"
 }, 
 "otu76211": {
+"@label": "Cortinarius acutovelatus", 
 "^ot:originalLabel": "Cortinarius acutovelatus IB19980108", 
 "^ot:ottId": 979676, 
 "^ot:ottTaxonName": "Cortinarius acutovelatus", 
 "^ot:treebaseOTUId": "Tl11229"
 }, 
 "otu76212": {
+"@label": "Cortinarius conopileus", 
 "^ot:originalLabel": "Cortinarius conopilus", 
+"^ot:ottId": 3811676, 
+"^ot:ottTaxonName": "Cortinarius conopileus", 
 "^ot:treebaseOTUId": "Tl11232"
 }, 
 "otu76213": {
+"@label": "Cortinarius porphyroideus", 
 "^ot:originalLabel": "Cortinarius porphyroides", 
 "^ot:ottId": 364062, 
 "^ot:ottTaxonName": "Cortinarius porphyroideus", 
 "^ot:treebaseOTUId": "Tl11233"
 }, 
 "otu76214": {
+"@label": "Cortinarius acutovelatus", 
 "^ot:originalLabel": "Cortinarius acutovelatus IB19930722", 
 "^ot:ottId": 979676, 
 "^ot:ottTaxonName": "Cortinarius acutovelatus", 
 "^ot:treebaseOTUId": "Tl11234"
 }, 
 "otu76215": {
+"@label": "Cortinarius atrocoeruleus", 
 "^ot:originalLabel": "Cortinarius atrocoeruleus", 
 "^ot:treebaseOTUId": "Tl11235"
 }, 
 "otu76216": {
+"@label": "Cortinarius phlegmophorus", 
 "^ot:originalLabel": "Cortinarius phlegmophorus", 
 "^ot:ottId": 979681, 
 "^ot:ottTaxonName": "Cortinarius phlegmophorus", 
 "^ot:treebaseOTUId": "Tl11236"
 }, 
 "otu76217": {
+"@label": "Cortinarius bibulus", 
 "^ot:originalLabel": "Cortinarius pulchellus IB19960086", 
+"^ot:ottId": 51992, 
+"^ot:ottTaxonName": "Cortinarius bibulus", 
 "^ot:treebaseOTUId": "Tl11238"
 }, 
 "otu76218": {
+"@label": "Cortinarius bibulus", 
 "^ot:originalLabel": "Cortinarius pulchellus IB20000025", 
+"^ot:ottId": 51992, 
+"^ot:ottTaxonName": "Cortinarius bibulus", 
 "^ot:treebaseOTUId": "Tl11240"
 }, 
 "otu76219": {
+"@label": "Cortinarius porphyroideus", 
 "^ot:originalLabel": "Cortinarius  porphyroides", 
 "^ot:ottId": 364062, 
 "^ot:ottTaxonName": "Cortinarius porphyroideus", 
 "^ot:treebaseOTUId": "Tl11242"
 }, 
 "otu76220": {
+"@label": "Cortinarius parvannulatus", 
 "^ot:originalLabel": "Cortinarius cedriolens", 
+"^ot:ottId": 174131, 
+"^ot:ottTaxonName": "Cortinarius parvannulatus", 
 "^ot:treebaseOTUId": "Tl11244"
 }, 
 "otu76221": {
+"@label": "Cortinarius alnetorum", 
 "^ot:originalLabel": "Cortinarius alnetorum IB19920217", 
 "^ot:ottId": 979677, 
 "^ot:ottTaxonName": "Cortinarius alnetorum", 
 "^ot:treebaseOTUId": "Tl11245"
 }, 
 "otu76222": {
+"@label": "Cortinarius helvelloides", 
 "^ot:originalLabel": "Cortinarius helvelloides", 
 "^ot:ottId": 475379, 
 "^ot:ottTaxonName": "Cortinarius helvelloides", 
 "^ot:treebaseOTUId": "Tl11247"
 }, 
 "otu76223": {
+"@label": "Cortinarius pavelekii", 
 "^ot:originalLabel": "Cortinarius paveleckii", 
 "^ot:ottId": 3812447, 
 "^ot:ottTaxonName": "Cortinarius pavelekii", 
 "^ot:treebaseOTUId": "Tl11248"
 }, 
 "otu76224": {
+"@label": "Cortinarius lucorum", 
 "^ot:originalLabel": "Cortinarius umidicola", 
 "^ot:ottId": 604476, 
 "^ot:ottTaxonName": "Cortinarius lucorum", 
 "^ot:treebaseOTUId": "Tl11251"
 }, 
 "otu76225": {
+"@label": "Cortinarius hinnuleus", 
 "^ot:originalLabel": "Cortinarius hinnuleus IB19960139", 
 "^ot:ottId": 870838, 
 "^ot:ottTaxonName": "Cortinarius hinnuleus", 
 "^ot:treebaseOTUId": "Tl11252"
 }, 
 "otu76226": {
+"@label": "Cortinarius hinnuleus", 
 "^ot:originalLabel": "Cortinarius hinnuleus IB19930113", 
 "^ot:ottId": 870838, 
 "^ot:ottTaxonName": "Cortinarius hinnuleus", 
 "^ot:treebaseOTUId": "Tl11253"
 }, 
 "otu76227": {
+"@label": "Cortinarius pseudosalor", 
 "^ot:originalLabel": "Cortinarius pseudosalor S", 
 "^ot:ottId": 718454, 
 "^ot:ottTaxonName": "Cortinarius pseudosalor", 
 "^ot:treebaseOTUId": "Tl11254"
 }, 
 "otu76228": {
+"@label": "Cortinarius leucopus", 
 "^ot:originalLabel": "Cortinarius leucopus", 
 "^ot:ottId": 350622, 
 "^ot:ottTaxonName": "Cortinarius leucopus", 
 "^ot:treebaseOTUId": "Tl11255"
 }, 
 "otu76229": {
+"@label": "Cortinarius miniatopus", 
 "^ot:originalLabel": "Cortinarius miniatopus", 
 "^ot:ottId": 314630, 
 "^ot:ottTaxonName": "Cortinarius miniatopus", 
 "^ot:treebaseOTUId": "Tl11256"
 }, 
 "otu76230": {
+"@label": "Cortinarius sarcinochrous", 
 "^ot:originalLabel": "Cortinarius albocanus", 
+"^ot:ottId": 5305521, 
+"^ot:ottTaxonName": "Cortinarius sarcinochrous", 
 "^ot:treebaseOTUId": "Tl11260"
 }, 
 "otu76231": {
+"@label": "Cortinarius paleaceus", 
 "^ot:originalLabel": "Cortinarius paleaceus IB19980139", 
 "^ot:ottId": 949868, 
 "^ot:ottTaxonName": "Cortinarius paleaceus", 
 "^ot:treebaseOTUId": "Tl11262"
 }, 
 "otu76232": {
+"@label": "Cortinarius collinitus", 
 "^ot:originalLabel": "Cortinarius muscigenus", 
+"^ot:ottId": 351450, 
+"^ot:ottTaxonName": "Cortinarius collinitus", 
 "^ot:treebaseOTUId": "Tl134626"
 }, 
 "otu76233": {
+"@label": "Cortinarius heterosporus", 
 "^ot:originalLabel": "Cortinarius heterosporus", 
 "^ot:ottId": 328809, 
 "^ot:ottTaxonName": "Cortinarius heterosporus", 
 "^ot:treebaseOTUId": "Tl134629"
 }, 
 "otu76234": {
+"@label": "Cortinarius laniger", 
 "^ot:originalLabel": "Cortinarius laniger IB19740251", 
 "^ot:ottId": 350619, 
 "^ot:ottTaxonName": "Cortinarius laniger", 
 "^ot:treebaseOTUId": "Tl134630"
 }, 
 "otu76235": {
+"@label": "Hebeloma mesophaeum", 
 "^ot:originalLabel": "Hebeloma mesophaeum", 
-"^ot:ottId": 558124, 
-"^ot:ottTaxonName": "Hebeloma mesophaeum", 
 "^ot:treebaseOTUId": "Tl134633"
 }, 
 "otu76236": {
+"@label": "Hebeloma fastibile", 
 "^ot:originalLabel": "Hebeloma fastibile", 
 "^ot:ottId": 197162, 
 "^ot:ottTaxonName": "Hebeloma fastibile", 
 "^ot:treebaseOTUId": "Tl134643"
 }, 
 "otu76237": {
+"@label": "Cortinarius cinereobrunneus", 
 "^ot:originalLabel": "Cortinarius cinereobrunneus", 
 "^ot:ottId": 974140, 
 "^ot:ottTaxonName": "Cortinarius cinereobrunneus", 
 "^ot:treebaseOTUId": "Tl134645"
 }, 
 "otu76238": {
+"@label": "Cortinarius vanduzerensis", 
 "^ot:originalLabel": "Cortinarius vanduzerensis", 
 "^ot:ottId": 1083465, 
 "^ot:ottTaxonName": "Cortinarius vanduzerensis", 
 "^ot:treebaseOTUId": "Tl134648"
 }, 
 "otu76239": {
+"@label": "Cortinarius trivialis", 
 "^ot:originalLabel": "Cortinarius trivialis", 
 "^ot:ottId": 324704, 
 "^ot:ottTaxonName": "Cortinarius trivialis", 
 "^ot:treebaseOTUId": "Tl134649"
 }, 
 "otu76240": {
+"@label": "Cortinarius obtusus", 
 "^ot:originalLabel": "Cortinarius obtusus", 
 "^ot:ottId": 893281, 
 "^ot:ottTaxonName": "Cortinarius obtusus", 
 "^ot:treebaseOTUId": "Tl134650"
 }, 
 "otu76241": {
+"@label": "Cortinarius mucosus", 
 "^ot:originalLabel": "Cortinarius mucosus", 
 "^ot:ottId": 653454, 
 "^ot:ottTaxonName": "Cortinarius mucosus", 
 "^ot:treebaseOTUId": "Tl134651"
 }, 
 "otu76242": {
+"@label": "Cortinarius collinitus", 
 "^ot:originalLabel": "Cortinarius collinitus", 
 "^ot:ottId": 351450, 
 "^ot:ottTaxonName": "Cortinarius collinitus", 
 "^ot:treebaseOTUId": "Tl134652"
 }, 
 "otu76243": {
+"@label": "Cortinarius umbilicatus", 
 "^ot:originalLabel": "Cortinarius umbilicatus", 
 "^ot:ottId": 839003, 
 "^ot:ottTaxonName": "Cortinarius umbilicatus", 
 "^ot:treebaseOTUId": "Tl134656"
 }, 
 "otu76244": {
+"@label": "Cortinarius saturninus", 
 "^ot:originalLabel": "Cortinarius saturninus", 
 "^ot:ottId": 453653, 
 "^ot:ottTaxonName": "Cortinarius saturninus", 
 "^ot:treebaseOTUId": "Tl134657"
 }, 
 "otu76245": {
+"@label": "Cortinarius decipiens", 
 "^ot:originalLabel": "Cortinarius decipiens", 
 "^ot:ottId": 979680, 
 "^ot:ottTaxonName": "Cortinarius decipiens", 
 "^ot:treebaseOTUId": "Tl134659"
 }, 
 "otu76246": {
+"@label": "Cortinarius evernius", 
 "^ot:originalLabel": "Cortinarius evernius", 
 "^ot:ottId": 949869, 
 "^ot:ottTaxonName": "Cortinarius evernius", 
 "^ot:treebaseOTUId": "Tl134661"
 }, 
 "otu76247": {
+"@label": "Cortinarius laniger", 
 "^ot:originalLabel": "Cortinarius laniger IB19990511", 
 "^ot:ottId": 350619, 
 "^ot:ottTaxonName": "Cortinarius laniger", 
 "^ot:treebaseOTUId": "Tl134663"
 }, 
 "otu76248": {
+"@label": "Cortinarius acutus", 
 "^ot:originalLabel": "Cortinarius acutus", 
 "^ot:ottId": 764684, 
 "^ot:ottTaxonName": "Cortinarius acutus", 
 "^ot:treebaseOTUId": "Tl134665"
 }, 
 "otu76249": {
+"@label": "Hebeloma circinans", 
 "^ot:originalLabel": "Hebeloma circinans", 
 "^ot:ottId": 309572, 
 "^ot:ottTaxonName": "Hebeloma circinans", 
@@ -366,10 +385,6 @@
 "^ot:curatedType": "MP, ITS", 
 "^ot:inGroupClade": "node201207", 
 "^ot:rootNodeId": "node201206", 
-"^ot:tag": [
-"MP", 
-"ITS"
-], 
 "edgeBySourceId": {
 "node201206": {
 "edge201207": {

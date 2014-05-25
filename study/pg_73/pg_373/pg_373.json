@@ -15,57 +15,17 @@
 "^ot:agents": {
 "agent": [
 {
-"@description": "validator of NexSON constraints as well as constraints that would allow a study to be imported into the Open Tree of Life's phylogenetic synthesis tools", 
+"@description": "Open Tree NexSON validation", 
 "@id": "peyotl-validator", 
-"@name": "validate_ot_nexson.py", 
+"@name": "api.opentreeoflife.org/validate", 
 "@url": "https://github.com/OpenTreeOfLife/peyotl", 
-"@version": "0.0.3a", 
+"@version": "0.0.4a", 
 "invocation": {
-"checksPerformed": [
-"MISSING_MANDATORY_KEY", 
-"MISSING_OPTIONAL_KEY", 
-"UNRECOGNIZED_KEY", 
-"MISSING_LIST_EXPECTED", 
-"DUPLICATING_SINGLETON_KEY", 
-"REFERENCED_ID_NOT_FOUND", 
-"REPEATED_ID", 
-"REPEATED_OTU", 
-"MULTIPLE_ROOT_NODES", 
-"NO_ROOT_NODE", 
-"MULTIPLE_EDGES_FOR_NODES", 
-"CYCLE_DETECTED", 
-"DISCONNECTED_GRAPH_DETECTED", 
-"INCORRECT_ROOT_NODE_LABEL", 
-"TIP_WITHOUT_OTU", 
-"TIP_WITHOUT_OTT_ID", 
-"MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
-"NON_MONOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
-"INVALID_PROPERTY_VALUE", 
-"PROPERTY_VALUE_NOT_USEFUL", 
-"UNRECOGNIZED_PROPERTY_VALUE", 
-"MULTIPLE_TREES", 
-"UNRECOGNIZED_TAG", 
-"CONFLICTING_PROPERTY_VALUES", 
-"NO_TREES", 
-"DEPRECATED_PROPERTY", 
-"UNPARSEABLE_META", 
-"UNREACHABLE_NODE", 
-"INCORRECT_VALUE_TYPE", 
-"MISSING_CRUCIAL_CONTENT"
-], 
-"commandLine": [
-"--embed", 
-"--agent-only", 
-"-e", 
-"../mig-phyelesystem-scratch/373/validation.json", 
-"-o", 
-"../mig-phyelesystem-scratch/373/final.json", 
-"../mig-phyelesystem-scratch/373/v1.2.1-373.json"
-], 
+"commandLine": [], 
 "otherProperty": [
 {
 "name": "pythonVersion", 
-"value": "2.7.5+"
+"value": "2.7.3"
 }, 
 {
 "name": "pythonImplementation", 
@@ -75,6 +35,9 @@
 }
 }
 ]
+}, 
+"^ot:annotationEvents": {
+"annotation": []
 }, 
 "^ot:curatorName": "Romina Gazis", 
 "^ot:dataDeposit": {
@@ -98,286 +61,357 @@
 "otus373": {
 "otuById": {
 "otu76321": {
+"@label": "Penicillium melinii", 
 "^ot:originalLabel": "Penicillium melinii", 
 "^ot:ottId": 974822, 
 "^ot:ottTaxonName": "Penicillium melinii", 
 "^ot:treebaseOTUId": "Tl11650"
 }, 
 "otu76322": {
+"@label": "Penicillium donkii", 
 "^ot:originalLabel": "Penicillium donkii", 
 "^ot:ottId": 181160, 
 "^ot:ottTaxonName": "Penicillium donkii", 
 "^ot:treebaseOTUId": "Tl11654"
 }, 
 "otu76323": {
+"@label": "Penicillium solitum", 
 "^ot:originalLabel": "Penicillium crustosum", 
+"^ot:ottId": 465230, 
+"^ot:ottTaxonName": "Penicillium solitum", 
 "^ot:treebaseOTUId": "Tl11655"
 }, 
 "otu76324": {
+"@label": "Penicillium atrovenetum", 
 "^ot:originalLabel": "Penicillium atrovenetum", 
 "^ot:ottId": 448567, 
 "^ot:ottTaxonName": "Penicillium atrovenetum", 
 "^ot:treebaseOTUId": "Tl11656"
 }, 
 "otu76325": {
+"@label": "Penicillium griseofulvum", 
 "^ot:originalLabel": "Penicillium griseofulvum", 
 "^ot:ottId": 226475, 
 "^ot:ottTaxonName": "Penicillium griseofulvum", 
 "^ot:treebaseOTUId": "Tl11658"
 }, 
 "otu76326": {
+"@label": "Penicillium corylophilum", 
 "^ot:originalLabel": "Penicillium corylophilum", 
 "^ot:ottId": 724251, 
 "^ot:ottTaxonName": "Penicillium corylophilum", 
 "^ot:treebaseOTUId": "Tl11659"
 }, 
 "otu76327": {
+"@label": "Penicillium glabrum", 
 "^ot:originalLabel": "Penicillium glabrum", 
 "^ot:ottId": 600253, 
 "^ot:ottTaxonName": "Penicillium glabrum", 
 "^ot:treebaseOTUId": "Tl11661"
 }, 
 "otu76328": {
+"@label": "Penicillium dimorphosporum", 
 "^ot:originalLabel": "Penicillium dimorphosporum", 
 "^ot:ottId": 980458, 
 "^ot:ottTaxonName": "Penicillium dimorphosporum", 
 "^ot:treebaseOTUId": "Tl11662"
 }, 
 "otu76329": {
+"@label": "Penicillium chermesinum", 
 "^ot:originalLabel": "Penicillium chermissimum", 
 "^ot:ottId": 288454, 
 "^ot:ottTaxonName": "Penicillium chermesinum", 
 "^ot:treebaseOTUId": "Tl11665"
 }, 
 "otu76330": {
+"@label": "Penicillium implicatum", 
 "^ot:originalLabel": "Penicillium implicatum", 
 "^ot:ottId": 181336, 
 "^ot:ottTaxonName": "Penicillium implicatum", 
 "^ot:treebaseOTUId": "Tl11666"
 }, 
 "otu76331": {
+"@label": "Penicillium oxalicum", 
 "^ot:originalLabel": "Penicillium oxalicum", 
 "^ot:ottId": 298795, 
 "^ot:ottTaxonName": "Penicillium oxalicum", 
 "^ot:treebaseOTUId": "Tl11670"
 }, 
 "otu76332": {
+"@label": "Penicillium miczynskii", 
 "^ot:originalLabel": "Penicillium soppii", 
+"^ot:ottId": 486252, 
+"^ot:ottTaxonName": "Penicillium miczynskii", 
 "^ot:treebaseOTUId": "Tl11671"
 }, 
 "otu76333": {
+"@label": "Penicillium vitale", 
 "^ot:originalLabel": "Penicillium janthinellum", 
 "^ot:ottId": 226477, 
 "^ot:ottTaxonName": "Penicillium vitale", 
 "^ot:treebaseOTUId": "Tl11678"
 }, 
 "otu76334": {
+"@label": "Penicillium velutinum", 
 "^ot:originalLabel": "Penicillium velutinum", 
 "^ot:ottId": 937354, 
 "^ot:ottTaxonName": "Penicillium velutinum", 
 "^ot:treebaseOTUId": "Tl11679"
 }, 
 "otu76335": {
+"@label": "Penicillium olsonii", 
 "^ot:originalLabel": "Penicillium olsonii", 
 "^ot:ottId": 493807, 
 "^ot:ottTaxonName": "Penicillium olsonii", 
 "^ot:treebaseOTUId": "Tl11682"
 }, 
 "otu76336": {
+"@label": "Penicillium citreonigrum", 
 "^ot:originalLabel": "Eupenicillium hirayamae", 
+"^ot:ottId": 927515, 
+"^ot:ottTaxonName": "Penicillium citreonigrum", 
 "^ot:treebaseOTUId": "Tl11685"
 }, 
 "otu76337": {
+"@label": "Penicillium simplicissimum", 
 "^ot:originalLabel": "Penicillium simplicissimum", 
 "^ot:ottId": 968742, 
 "^ot:ottTaxonName": "Penicillium simplicissimum", 
 "^ot:treebaseOTUId": "Tl11686"
 }, 
 "otu76338": {
+"@label": "Penicillium adametzii", 
 "^ot:originalLabel": "Penicillium adametzii", 
 "^ot:ottId": 503140, 
 "^ot:ottTaxonName": "Penicillium adametzii", 
 "^ot:treebaseOTUId": "Tl11690"
 }, 
 "otu76339": {
+"@label": "Penicillium citreonigrum", 
 "^ot:originalLabel": "Penicillium citreonigrum", 
 "^ot:ottId": 927515, 
 "^ot:ottTaxonName": "Penicillium citreonigrum", 
 "^ot:treebaseOTUId": "Tl11691"
 }, 
 "otu76340": {
+"@label": "Penicillium madriti", 
 "^ot:originalLabel": "Penicillium madriti", 
 "^ot:ottId": 352843, 
 "^ot:ottTaxonName": "Penicillium madriti", 
 "^ot:treebaseOTUId": "Tl11693"
 }, 
 "otu76341": {
+"@label": "Penicillium chrysogenum", 
 "^ot:originalLabel": "Penicillium chrysogenum", 
 "^ot:ottId": 226485, 
 "^ot:ottTaxonName": "Penicillium chrysogenum", 
 "^ot:treebaseOTUId": "Tl1336"
 }, 
 "otu76342": {
+"@label": "Penicillium adametzioides", 
 "^ot:originalLabel": "Penicillium adametzioides", 
 "^ot:ottId": 526139, 
 "^ot:ottTaxonName": "Penicillium adametzioides", 
 "^ot:treebaseOTUId": "Tl135096"
 }, 
 "otu76343": {
+"@label": "Penicillium bilaiae", 
 "^ot:originalLabel": "Penicillium bilaiae", 
 "^ot:ottId": 448566, 
 "^ot:ottTaxonName": "Penicillium bilaiae", 
 "^ot:treebaseOTUId": "Tl135097"
 }, 
 "otu76344": {
+"@label": "Penicillium lapidosum", 
 "^ot:originalLabel": "Eupenicillium lapidosum", 
+"^ot:ottId": 3755570, 
+"^ot:ottTaxonName": "Penicillium lapidosum", 
 "^ot:treebaseOTUId": "Tl135105"
 }, 
 "otu76345": {
+"@label": "Penicillium waksmanii", 
 "^ot:originalLabel": "Penicillium waksmanii", 
 "^ot:ottId": 823308, 
 "^ot:ottTaxonName": "Penicillium waksmanii", 
 "^ot:treebaseOTUId": "Tl135106"
 }, 
 "otu76346": {
+"@label": "Penicillium spinulosum", 
 "^ot:originalLabel": "Penicillium spinulosum", 
 "^ot:ottId": 288458, 
 "^ot:ottTaxonName": "Penicillium spinulosum", 
 "^ot:treebaseOTUId": "Tl135108"
 }, 
 "otu76347": {
+"@label": "Penicillium canescens", 
 "^ot:originalLabel": "Penicillium canescens", 
 "^ot:ottId": 901426, 
 "^ot:ottTaxonName": "Penicillium canescens", 
 "^ot:treebaseOTUId": "Tl135109"
 }, 
 "otu76348": {
+"@label": "Penicillium restrictum", 
 "^ot:originalLabel": "Penicillium restrictum", 
 "^ot:ottId": 298803, 
 "^ot:ottTaxonName": "Penicillium restrictum", 
 "^ot:treebaseOTUId": "Tl135111"
 }, 
 "otu76349": {
+"@label": "Penicillium dodgei", 
 "^ot:originalLabel": "Eupenicillium brefeldianum", 
+"^ot:ottId": 5310733, 
+"^ot:ottTaxonName": "Penicillium dodgei", 
 "^ot:treebaseOTUId": "Tl135112"
 }, 
 "otu76350": {
+"@label": "Penicillium brocae", 
 "^ot:originalLabel": "Penicillium brocae", 
 "^ot:ottId": 1084807, 
 "^ot:ottTaxonName": "Penicillium brocae", 
 "^ot:treebaseOTUId": "Tl135114"
 }, 
 "otu76351": {
+"@label": "Penicillium decumbens", 
 "^ot:originalLabel": "Penicillium decumbens", 
 "^ot:ottId": 181234, 
 "^ot:ottTaxonName": "Penicillium decumbens", 
 "^ot:treebaseOTUId": "Tl135117"
 }, 
 "otu76352": {
+"@label": "Penicillium lanosum", 
 "^ot:originalLabel": "Penicillium kojigenum", 
+"^ot:ottId": 504245, 
+"^ot:ottTaxonName": "Penicillium lanosum", 
 "^ot:treebaseOTUId": "Tl135118"
 }, 
 "otu76353": {
+"@label": "Penicillium aculeatum", 
 "^ot:originalLabel": "Penicillium aculeatum", 
 "^ot:ottId": 266166, 
 "^ot:ottTaxonName": "Penicillium aculeatum", 
 "^ot:treebaseOTUId": "Tl135120"
 }, 
 "otu76354": {
+"@label": "Penicillium miczynskii", 
 "^ot:originalLabel": "Eupenicillium shearii", 
+"^ot:ottId": 486252, 
+"^ot:ottTaxonName": "Penicillium miczynskii", 
 "^ot:treebaseOTUId": "Tl135123"
 }, 
 "otu76355": {
+"@label": "Penicillium velutinum", 
 "^ot:originalLabel": "Eupenicillium pinetorum", 
+"^ot:ottId": 937354, 
+"^ot:ottTaxonName": "Penicillium velutinum", 
 "^ot:treebaseOTUId": "Tl135124"
 }, 
 "otu76356": {
+"@label": "Penicillium miczynskii", 
 "^ot:originalLabel": "Penicillium miczynskii", 
 "^ot:ottId": 486252, 
 "^ot:ottTaxonName": "Penicillium miczynskii", 
 "^ot:treebaseOTUId": "Tl135126"
 }, 
 "otu76357": {
+"@label": "Penicillium stolkiae", 
 "^ot:originalLabel": "Eupenicillium stolkiae", 
 "^ot:ottId": 562104, 
 "^ot:ottTaxonName": "Penicillium stolkiae", 
 "^ot:treebaseOTUId": "Tl135128"
 }, 
 "otu76358": {
+"@label": "Penicillium cyaneum", 
 "^ot:originalLabel": "Penicillium cyaneum", 
 "^ot:ottId": 181194, 
 "^ot:ottTaxonName": "Penicillium cyaneum", 
 "^ot:treebaseOTUId": "Tl135129"
 }, 
 "otu76359": {
+"@label": "Penicillium dierckxii", 
 "^ot:originalLabel": "Penicillium charlesii", 
+"^ot:ottId": 424442, 
+"^ot:ottTaxonName": "Penicillium dierckxii", 
 "^ot:treebaseOTUId": "Tl135130"
 }, 
 "otu76360": {
+"@label": "Talaromyces helicus", 
 "^ot:originalLabel": "Talaromyces helicus", 
 "^ot:ottId": 316534, 
 "^ot:ottTaxonName": "Talaromyces helicus", 
 "^ot:treebaseOTUId": "Tl135132"
 }, 
 "otu76361": {
+"@label": "Penicillium vinaceum", 
 "^ot:originalLabel": "Penicillium vinaceum", 
 "^ot:ottId": 823307, 
 "^ot:ottTaxonName": "Penicillium vinaceum", 
 "^ot:treebaseOTUId": "Tl135133"
 }, 
 "otu76362": {
+"@label": "Penicillium levitum", 
 "^ot:originalLabel": "Eupenicillium levitum", 
 "^ot:ottId": 135145, 
 "^ot:ottTaxonName": "Penicillium levitum", 
 "^ot:treebaseOTUId": "Tl135135"
 }, 
 "otu76363": {
+"@label": "Penicillium cinnamopurpureum", 
 "^ot:originalLabel": "Eupenicillium cinnamopurpureum", 
 "^ot:ottId": 891238, 
 "^ot:ottTaxonName": "Penicillium cinnamopurpureum", 
 "^ot:treebaseOTUId": "Tl135136"
 }, 
 "otu76364": {
+"@label": "Penicillium rolfsii", 
 "^ot:originalLabel": "Penicillium rolfsii", 
 "^ot:ottId": 298802, 
 "^ot:ottTaxonName": "Penicillium rolfsii", 
 "^ot:treebaseOTUId": "Tl135137"
 }, 
 "otu76365": {
+"@label": "Penicillium lividum", 
 "^ot:originalLabel": "Penicillium lividum", 
 "^ot:ottId": 636779, 
 "^ot:ottTaxonName": "Penicillium lividum", 
 "^ot:treebaseOTUId": "Tl135138"
 }, 
 "otu76366": {
+"@label": "Penicillium herquei", 
 "^ot:originalLabel": "Penicillium herquei", 
 "^ot:ottId": 357940, 
 "^ot:ottTaxonName": "Penicillium herquei", 
 "^ot:treebaseOTUId": "Tl135139"
 }, 
 "otu76367": {
+"@label": "Penicillium citrinum", 
 "^ot:originalLabel": "Penicillium citrinum", 
 "^ot:ottId": 226488, 
 "^ot:ottTaxonName": "Penicillium citrinum", 
 "^ot:treebaseOTUId": "Tl135140"
 }, 
 "otu76368": {
+"@label": "Penicillium atramentosum", 
 "^ot:originalLabel": "Penicillium atramentosum", 
 "^ot:ottId": 840879, 
 "^ot:ottTaxonName": "Penicillium atramentosum", 
 "^ot:treebaseOTUId": "Tl135141"
 }, 
 "otu76369": {
+"@label": "Penicillium parvum", 
 "^ot:originalLabel": "Eupenicillium parvum", 
 "^ot:ottId": 361813, 
 "^ot:ottTaxonName": "Penicillium parvum", 
 "^ot:treebaseOTUId": "Tl135142"
 }, 
 "otu76370": {
+"@label": "Penicillium dierckxii", 
 "^ot:originalLabel": "Penicillium fellutanum", 
+"^ot:ottId": 424442, 
+"^ot:ottTaxonName": "Penicillium dierckxii", 
 "^ot:treebaseOTUId": "Tl135145"
 }, 
 "otu76371": {
+"@label": "Penicillium westlingii", 
 "^ot:originalLabel": "Penicillium westlingii", 
 "^ot:ottId": 823311, 
 "^ot:ottTaxonName": "Penicillium westlingii", 

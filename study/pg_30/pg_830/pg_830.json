@@ -15,57 +15,17 @@
 "^ot:agents": {
 "agent": [
 {
-"@description": "validator of NexSON constraints as well as constraints that would allow a study to be imported into the Open Tree of Life's phylogenetic synthesis tools", 
+"@description": "Open Tree NexSON validation", 
 "@id": "peyotl-validator", 
-"@name": "validate_ot_nexson.py", 
+"@name": "api.opentreeoflife.org/validate", 
 "@url": "https://github.com/OpenTreeOfLife/peyotl", 
-"@version": "0.0.3a", 
+"@version": "0.0.4a", 
 "invocation": {
-"checksPerformed": [
-"MISSING_MANDATORY_KEY", 
-"MISSING_OPTIONAL_KEY", 
-"UNRECOGNIZED_KEY", 
-"MISSING_LIST_EXPECTED", 
-"DUPLICATING_SINGLETON_KEY", 
-"REFERENCED_ID_NOT_FOUND", 
-"REPEATED_ID", 
-"REPEATED_OTU", 
-"MULTIPLE_ROOT_NODES", 
-"NO_ROOT_NODE", 
-"MULTIPLE_EDGES_FOR_NODES", 
-"CYCLE_DETECTED", 
-"DISCONNECTED_GRAPH_DETECTED", 
-"INCORRECT_ROOT_NODE_LABEL", 
-"TIP_WITHOUT_OTU", 
-"TIP_WITHOUT_OTT_ID", 
-"MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
-"NON_MONOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
-"INVALID_PROPERTY_VALUE", 
-"PROPERTY_VALUE_NOT_USEFUL", 
-"UNRECOGNIZED_PROPERTY_VALUE", 
-"MULTIPLE_TREES", 
-"UNRECOGNIZED_TAG", 
-"CONFLICTING_PROPERTY_VALUES", 
-"NO_TREES", 
-"DEPRECATED_PROPERTY", 
-"UNPARSEABLE_META", 
-"UNREACHABLE_NODE", 
-"INCORRECT_VALUE_TYPE", 
-"MISSING_CRUCIAL_CONTENT"
-], 
-"commandLine": [
-"--embed", 
-"--agent-only", 
-"-e", 
-"../mig-phyelesystem-scratch/830/validation.json", 
-"-o", 
-"../mig-phyelesystem-scratch/830/final.json", 
-"../mig-phyelesystem-scratch/830/v1.2.1-830.json"
-], 
+"commandLine": [], 
 "otherProperty": [
 {
 "name": "pythonVersion", 
-"value": "2.7.5+"
+"value": "2.7.3"
 }, 
 {
 "name": "pythonImplementation", 
@@ -75,6 +35,9 @@
 }
 }
 ]
+}, 
+"^ot:annotationEvents": {
+"annotation": []
 }, 
 "^ot:curatorName": "Romina Gazis", 
 "^ot:dataDeposit": {
@@ -89,7 +52,7 @@
 "^ot:studyPublication": {
 "@href": "http://dx.doi.org/10.1016/j.funbio.2012.01.010"
 }, 
-"^ot:studyPublicationReference": "Morgenstern I., Powlowski J., Ishmael N., Darmond C., Marqueteau S., Moisan M., Quenneville G., & Tsang A. 2012. A molecular phylogeny of thermophilic fungi. Fungal Biology, 116(4): 489-502.", 
+"^ot:studyPublicationReference": "Morgenstern, I., Powlowski J., Ishmael N., Darmond C., Marqueteau S., Moisan M., Quenneville G., & Tsang A. 2012. A molecular phylogeny of thermophilic fungi. Fungal Biology 116 (4): 489-502.", 
 "^ot:studyYear": 2012, 
 "^ot:treesElementOrder": [
 "trees830"
@@ -98,1166 +61,1418 @@
 "otus830": {
 "otuById": {
 "otu198823": {
+"@label": "Drosophila melanogaster", 
 "^ot:originalLabel": "Drosophila melanogaster", 
 "^ot:ottId": 505714, 
 "^ot:ottTaxonName": "Drosophila melanogaster", 
 "^ot:treebaseOTUId": "Tl666038"
 }, 
 "otu198824": {
+"@label": "Neurospora tetrasperma", 
 "^ot:originalLabel": "Neurospora tetrasperma", 
 "^ot:ottId": 779623, 
 "^ot:ottTaxonName": "Neurospora tetrasperma", 
 "^ot:treebaseOTUId": "Tl666039"
 }, 
 "otu198825": {
+"@label": "Aureobasidium pullulans", 
 "^ot:originalLabel": "Aureobasidium pullulans", 
 "^ot:ottId": 1041477, 
 "^ot:ottTaxonName": "Aureobasidium pullulans", 
 "^ot:treebaseOTUId": "Tl666040"
 }, 
 "otu198826": {
+"@label": "Trichophyton verrucosum", 
 "^ot:originalLabel": "Trichophyton verrucosum", 
 "^ot:ottId": 13972, 
 "^ot:ottTaxonName": "Trichophyton verrucosum", 
 "^ot:treebaseOTUId": "Tl666041"
 }, 
 "otu198827": {
+"@label": "Tremella mesenterica", 
 "^ot:originalLabel": "Tremella mesenterica", 
 "^ot:ottId": 133073, 
 "^ot:ottTaxonName": "Tremella mesenterica", 
 "^ot:treebaseOTUId": "Tl666042"
 }, 
 "otu198828": {
+"@label": "Podospora pauciseta", 
 "^ot:originalLabel": "Podospora anserina", 
+"^ot:ottId": 155361, 
+"^ot:ottTaxonName": "Podospora pauciseta", 
 "^ot:treebaseOTUId": "Tl666043"
 }, 
 "otu198829": {
+"@label": "Aspergillus oryzae", 
 "^ot:originalLabel": "Aspergillus oryzae", 
 "^ot:treebaseOTUId": "Tl666044"
 }, 
 "otu198830": {
+"@label": "Aspergillus clavatus", 
 "^ot:originalLabel": "Aspergillus clavatus", 
 "^ot:ottId": 550765, 
 "^ot:ottTaxonName": "Aspergillus clavatus", 
 "^ot:treebaseOTUId": "Tl666045"
 }, 
 "otu198831": {
+"@label": "Rhodotorula graminis", 
 "^ot:originalLabel": "Rhodotorula graminis", 
 "^ot:ottId": 4095323, 
 "^ot:ottTaxonName": "Rhodotorula graminis", 
 "^ot:treebaseOTUId": "Tl666046"
 }, 
 "otu198832": {
+"@label": "Allomyces macrogynus", 
 "^ot:originalLabel": "Allomyces macrogynus", 
 "^ot:ottId": 227743, 
 "^ot:ottTaxonName": "Allomyces macrogynus", 
 "^ot:treebaseOTUId": "Tl666047"
 }, 
 "otu198833": {
+"@label": "Aspergillus nidulans", 
 "^ot:originalLabel": "Aspergillus nidulans", 
 "^ot:ottId": 392368, 
 "^ot:ottTaxonName": "Aspergillus nidulans", 
 "^ot:treebaseOTUId": "Tl666048"
 }, 
 "otu198834": {
+"@label": "Neurospora discreta", 
 "^ot:originalLabel": "Neurospora discreta", 
 "^ot:ottId": 409098, 
 "^ot:ottTaxonName": "Neurospora discreta", 
 "^ot:treebaseOTUId": "Tl666049"
 }, 
 "otu198835": {
+"@label": "Rhizopus liquefaciens", 
 "^ot:originalLabel": "Rhizopus oryzae", 
 "^ot:ottId": 530834, 
 "^ot:ottTaxonName": "Rhizopus liquefaciens", 
 "^ot:treebaseOTUId": "Tl666050"
 }, 
 "otu198836": {
+"@label": "Parastagonospora nodorum", 
 "^ot:originalLabel": "Phaeosphaeria nodorum", 
 "^ot:ottId": 562295, 
-"^ot:ottTaxonName": "Phaeosphaeria nodorum", 
+"^ot:ottTaxonName": "Parastagonospora nodorum", 
 "^ot:treebaseOTUId": "Tl666051"
 }, 
 "otu198837": {
+"@label": "Rhizomucor pusillus", 
 "^ot:originalLabel": "Rhizomucor pusillus", 
 "^ot:ottId": 363296, 
 "^ot:ottTaxonName": "Rhizomucor pusillus", 
 "^ot:treebaseOTUId": "Tl666052"
 }, 
 "otu198838": {
+"@label": "Rhizomucor miehei", 
 "^ot:originalLabel": "Rhizomucor miehei", 
 "^ot:ottId": 735964, 
 "^ot:ottTaxonName": "Rhizomucor miehei", 
 "^ot:treebaseOTUId": "Tl666053"
 }, 
 "otu198839": {
+"@label": "Ajellomyces capsulatus", 
 "^ot:originalLabel": "Ajellomyces capsulatus", 
 "^ot:ottId": 124563, 
 "^ot:ottTaxonName": "Ajellomyces capsulatus", 
 "^ot:treebaseOTUId": "Tl666054"
 }, 
 "otu198840": {
+"@label": "Thermoascus aurantiacus", 
 "^ot:originalLabel": "Thermoascus aurantiacus", 
 "^ot:ottId": 901430, 
 "^ot:ottTaxonName": "Thermoascus aurantiacus", 
 "^ot:treebaseOTUId": "Tl666055"
 }, 
 "otu198841": {
+"@label": "Neosartorya fischeri", 
 "^ot:originalLabel": "Neosartorya fischeri", 
 "^ot:ottId": 890962, 
-"^ot:ottTaxonName": "Aspergillus fischerianus", 
+"^ot:ottTaxonName": "Neosartorya fischeri", 
 "^ot:treebaseOTUId": "Tl666056"
 }, 
 "otu198842": {
+"@label": "Uncinocarpus reesii", 
 "^ot:originalLabel": "Uncinocarpus reesii", 
 "^ot:ottId": 958128, 
 "^ot:ottTaxonName": "Uncinocarpus reesii", 
 "^ot:treebaseOTUId": "Tl666057"
 }, 
 "otu198843": {
+"@label": "Aspergillus fumigatus", 
 "^ot:originalLabel": "Aspergillus fumigatus", 
 "^ot:ottId": 278828, 
 "^ot:ottTaxonName": "Aspergillus fumigatus", 
 "^ot:treebaseOTUId": "Tl666058"
 }, 
 "otu198844": {
+"@label": "Myceliophthora thermophila", 
 "^ot:originalLabel": "Myceliophthora thermophila", 
 "^ot:ottId": 10631, 
 "^ot:ottTaxonName": "Myceliophthora thermophila", 
 "^ot:treebaseOTUId": "Tl666059"
 }, 
 "otu198845": {
+"@label": "Calcarisporiella thermophila", 
 "^ot:originalLabel": "Calcarisporiella thermophila", 
 "^ot:treebaseOTUId": "Tl666060"
 }, 
 "otu198846": {
+"@label": "Talaromyces marneffei", 
 "^ot:originalLabel": "Penicillium marneffei", 
 "^ot:ottId": 58525, 
 "^ot:ottTaxonName": "Talaromyces marneffei", 
 "^ot:treebaseOTUId": "Tl666061"
 }, 
 "otu198847": {
+"@label": "Scytalidium thermophilum", 
 "^ot:originalLabel": "Scytalidium thermophilum", 
 "^ot:ottId": 910746, 
 "^ot:ottTaxonName": "Scytalidium thermophilum", 
 "^ot:treebaseOTUId": "Tl666062"
 }, 
 "otu198848": {
+"@label": "Puccinia graminis", 
 "^ot:originalLabel": "Puccinia graminis", 
 "^ot:ottId": 665704, 
 "^ot:ottTaxonName": "Puccinia graminis", 
 "^ot:treebaseOTUId": "Tl666063"
 }, 
 "otu198849": {
+"@label": "Coccidioides posadasii", 
 "^ot:originalLabel": "Coccidioides posadasii", 
 "^ot:ottId": 310187, 
 "^ot:ottTaxonName": "Coccidioides posadasii", 
 "^ot:treebaseOTUId": "Tl666064"
 }, 
 "otu198850": {
+"@label": "Neurospora crassa", 
 "^ot:originalLabel": "Neurospora crassa", 
 "^ot:ottId": 572462, 
 "^ot:ottTaxonName": "Neurospora crassa", 
 "^ot:treebaseOTUId": "Tl666065"
 }, 
 "otu198851": {
+"@label": "Myriococcum thermophilum", 
 "^ot:originalLabel": "Myriococcum thermophilum", 
 "^ot:treebaseOTUId": "Tl666066"
 }, 
 "otu198852": {
+"@label": "Coprinopsis cinerea", 
 "^ot:originalLabel": "Coprinopsis cinerea", 
 "^ot:ottId": 737441, 
 "^ot:ottTaxonName": "Coprinopsis cinerea", 
 "^ot:treebaseOTUId": "Tl666067"
 }, 
 "otu198853": {
+"@label": "Saccharomyces cerevisiae", 
 "^ot:originalLabel": "Saccharomyces cerevisiae", 
 "^ot:ottId": 908549, 
 "^ot:ottTaxonName": "Saccharomyces cerevisiae", 
 "^ot:treebaseOTUId": "Tl666068"
 }, 
 "otu198854": {
+"@label": "Trichoderma virens", 
 "^ot:originalLabel": "Trichoderma virens", 
 "^ot:ottId": 409099, 
-"^ot:ottTaxonName": "Gliocladium flavofuscum", 
+"^ot:ottTaxonName": "Trichoderma virens", 
 "^ot:treebaseOTUId": "Tl666069"
 }, 
 "otu198855": {
+"@label": "Thermomyces ibadanensis", 
 "^ot:originalLabel": "Thermomyces ibadanensis", 
 "^ot:ottId": 589788, 
 "^ot:ottTaxonName": "Thermomyces ibadanensis", 
 "^ot:treebaseOTUId": "Tl666070"
 }, 
 "otu198856": {
+"@label": "Scheffersomyces stipitis", 
 "^ot:originalLabel": "Pichia stipitis", 
 "^ot:ottId": 334015, 
 "^ot:ottTaxonName": "Scheffersomyces stipitis", 
 "^ot:treebaseOTUId": "Tl666071"
 }, 
 "otu198857": {
+"@label": "Verticillium dahliae", 
 "^ot:originalLabel": "Verticillium dahliae", 
 "^ot:ottId": 615475, 
 "^ot:ottTaxonName": "Verticillium dahliae", 
 "^ot:treebaseOTUId": "Tl666072"
 }, 
 "otu198858": {
+"@label": "Sclerotinia sclerotiorum", 
 "^ot:originalLabel": "Sclerotinia sclerotiorum", 
 "^ot:ottId": 880963, 
 "^ot:ottTaxonName": "Sclerotinia sclerotiorum", 
 "^ot:treebaseOTUId": "Tl666073"
 }, 
 "otu198859": {
+"@label": "Chaetomium globosum", 
 "^ot:originalLabel": "Chaetomium globosum", 
 "^ot:ottId": 758745, 
 "^ot:ottTaxonName": "Chaetomium globosum", 
 "^ot:treebaseOTUId": "Tl666074"
 }, 
 "otu198860": {
+"@label": "Pyrenophora tritici-repentis", 
 "^ot:originalLabel": "Pyrenophora tritici-repentis", 
 "^ot:ottId": 85506, 
 "^ot:ottTaxonName": "Pyrenophora tritici-repentis", 
 "^ot:treebaseOTUId": "Tl666075"
 }, 
 "otu198861": {
+"@label": "Cryphonectria parasitica", 
 "^ot:originalLabel": "Cryphonectria parasitica", 
 "^ot:ottId": 103005, 
 "^ot:ottTaxonName": "Cryphonectria parasitica", 
 "^ot:treebaseOTUId": "Tl666076"
 }, 
 "otu198862": {
+"@label": "Malassezia globosa", 
 "^ot:originalLabel": "Malassezia globosa", 
 "^ot:ottId": 604323, 
 "^ot:ottTaxonName": "Malassezia globosa", 
 "^ot:treebaseOTUId": "Tl666077"
 }, 
 "otu198863": {
+"@label": "Myceliophthora fergusii", 
 "^ot:originalLabel": "Corynascus thermophilus", 
 "^ot:ottId": 809952, 
 "^ot:ottTaxonName": "Myceliophthora fergusii", 
 "^ot:treebaseOTUId": "Tl666078"
 }, 
 "otu198864": {
+"@label": "Verticillium albo-atrum", 
 "^ot:originalLabel": "Verticillium albo-atrum", 
 "^ot:ottId": 615472, 
 "^ot:ottTaxonName": "Verticillium albo-atrum", 
 "^ot:treebaseOTUId": "Tl666079"
 }, 
 "otu198865": {
+"@label": "Phycomyces blakesleeanus", 
 "^ot:originalLabel": "Phycomyces blakesleeanus", 
 "^ot:ottId": 735973, 
 "^ot:ottTaxonName": "Phycomyces blakesleeanus", 
 "^ot:treebaseOTUId": "Tl666080"
 }, 
 "otu198866": {
+"@label": "Aspergillus carbonarius", 
 "^ot:originalLabel": "Aspergillus carbonarius", 
 "^ot:ottId": 700624, 
 "^ot:ottTaxonName": "Aspergillus carbonarius", 
 "^ot:treebaseOTUId": "Tl666081"
 }, 
 "otu198867": {
+"@label": "Lachancea thermotolerans", 
 "^ot:originalLabel": "Lachancea thermotolerans", 
 "^ot:ottId": 768642, 
 "^ot:ottTaxonName": "Lachancea thermotolerans", 
 "^ot:treebaseOTUId": "Tl666082"
 }, 
 "otu198868": {
+"@label": "Bipolaris maydis", 
 "^ot:originalLabel": "Cochliobolus heterostrophus", 
 "^ot:ottId": 1042273, 
-"^ot:ottTaxonName": "Cochliobolus heterostrophus", 
+"^ot:ottTaxonName": "Bipolaris maydis", 
 "^ot:treebaseOTUId": "Tl666083"
 }, 
 "otu198869": {
+"@label": "Ceriporiopsis subvermispora", 
 "^ot:originalLabel": "Ceriporiopsis subvermispora", 
 "^ot:ottId": 137093, 
 "^ot:ottTaxonName": "Ceriporiopsis subvermispora", 
 "^ot:treebaseOTUId": "Tl666084"
 }, 
 "otu198870": {
+"@label": "Haematonectria haematococca", 
 "^ot:originalLabel": "Nectria haematococca", 
 "^ot:ottId": 743045, 
 "^ot:ottTaxonName": "Haematonectria haematococca", 
 "^ot:treebaseOTUId": "Tl666085"
 }, 
 "otu198871": {
+"@label": "Schizosaccharomyces pombe", 
 "^ot:originalLabel": "Schizosaccharomyces pombe", 
 "^ot:ottId": 990004, 
 "^ot:ottTaxonName": "Schizosaccharomyces pombe", 
 "^ot:treebaseOTUId": "Tl666086"
 }, 
 "otu198872": {
+"@label": "Gloeophyllum trabeum", 
 "^ot:originalLabel": "Gloeophyllum trabeum", 
 "^ot:ottId": 493749, 
 "^ot:ottTaxonName": "Gloeophyllum trabeum", 
 "^ot:treebaseOTUId": "Tl666087"
 }, 
 "otu198873": {
+"@label": "Sporobolomyces roseus", 
 "^ot:originalLabel": "Sporobolomyces roseus", 
 "^ot:ottId": 590457, 
 "^ot:ottTaxonName": "Sporobolomyces roseus", 
 "^ot:treebaseOTUId": "Tl666088"
 }, 
 "otu198874": {
+"@label": "Pleurotus ostreatus", 
 "^ot:originalLabel": "Pleurotus ostreatus", 
 "^ot:ottId": 581149, 
 "^ot:ottTaxonName": "Pleurotus ostreatus", 
 "^ot:treebaseOTUId": "Tl666089"
 }, 
 "otu198875": {
+"@label": "Arabidopsis thaliana", 
 "^ot:originalLabel": "Arabidopsis thaliana", 
 "^ot:ottId": 309263, 
 "^ot:ottTaxonName": "Arabidopsis thaliana", 
 "^ot:treebaseOTUId": "Tl666090"
 }, 
 "otu198876": {
+"@label": "Magnaporthe oryzae", 
 "^ot:originalLabel": "Magnaporthe oryzae", 
 "^ot:ottId": 625710, 
 "^ot:ottTaxonName": "Magnaporthe oryzae", 
 "^ot:treebaseOTUId": "Tl666091"
 }, 
 "otu198877": {
+"@label": "Heterobasidion annosum", 
 "^ot:originalLabel": "Heterobasidion annosum", 
 "^ot:ottId": 1072058, 
 "^ot:ottTaxonName": "Heterobasidion annosum", 
 "^ot:treebaseOTUId": "Tl666092"
 }, 
 "otu198878": {
+"@label": "Coccidioides immitis", 
 "^ot:originalLabel": "Coccidioides immitis", 
 "^ot:ottId": 838981, 
 "^ot:ottTaxonName": "Coccidioides immitis", 
 "^ot:treebaseOTUId": "Tl666093"
 }, 
 "otu198879": {
+"@label": "Thielavia terrestris", 
 "^ot:originalLabel": "Thielavia terrestris", 
 "^ot:ottId": 606635, 
 "^ot:ottTaxonName": "Thielavia terrestris", 
 "^ot:treebaseOTUId": "Tl666094"
 }, 
 "otu198880": {
+"@label": "Sordaria macrospora", 
 "^ot:originalLabel": "Sordaria macrospora", 
 "^ot:ottId": 572456, 
 "^ot:ottTaxonName": "Sordaria macrospora", 
 "^ot:treebaseOTUId": "Tl666095"
 }, 
 "otu198881": {
+"@label": "Melampsora laricis-populina", 
 "^ot:originalLabel": "Melampsora larici-populina", 
 "^ot:ottId": 175519, 
 "^ot:ottTaxonName": "Melampsora laricis-populina", 
 "^ot:treebaseOTUId": "Tl666096"
 }, 
 "otu198882": {
+"@label": "Tuber melanosporum", 
 "^ot:originalLabel": "Tuber melanosporum", 
 "^ot:ottId": 376066, 
 "^ot:ottTaxonName": "Tuber melanosporum", 
 "^ot:treebaseOTUId": "Tl666097"
 }, 
 "otu198883": {
+"@label": "Talaromyces stipitatus", 
 "^ot:originalLabel": "Talaromyces stipitatus", 
 "^ot:ottId": 73766, 
 "^ot:ottTaxonName": "Talaromyces stipitatus", 
 "^ot:treebaseOTUId": "Tl666098"
 }, 
 "otu198884": {
+"@label": "Acremonium alcalophilum", 
 "^ot:originalLabel": "Acremonium alcalophilum", 
 "^ot:ottId": 495682, 
 "^ot:ottTaxonName": "Acremonium alcalophilum", 
 "^ot:treebaseOTUId": "Tl666099"
 }, 
 "otu198885": {
+"@label": "Penicillium chrysogenum", 
 "^ot:originalLabel": "Penicillium chrysogenum", 
 "^ot:ottId": 226485, 
 "^ot:ottTaxonName": "Penicillium chrysogenum", 
 "^ot:treebaseOTUId": "Tl666100"
 }, 
 "otu198886": {
+"@label": "Laccaria bicolor", 
 "^ot:originalLabel": "Laccaria bicolor", 
 "^ot:ottId": 985685, 
 "^ot:ottTaxonName": "Laccaria bicolor", 
 "^ot:treebaseOTUId": "Tl666101"
 }, 
 "otu198887": {
+"@label": "Trichoderma reesei", 
 "^ot:originalLabel": "Trichoderma reesei", 
 "^ot:treebaseOTUId": "Tl666102"
 }, 
 "otu198888": {
+"@label": "Spizellomyces punctatus", 
 "^ot:originalLabel": "Spizellomyces punctatus", 
 "^ot:ottId": 708156, 
 "^ot:ottTaxonName": "Spizellomyces punctatus", 
 "^ot:treebaseOTUId": "Tl666103"
 }, 
 "otu198889": {
+"@label": "Alternaria brassicicola", 
 "^ot:originalLabel": "Alternaria brassicicola", 
 "^ot:ottId": 380927, 
 "^ot:ottTaxonName": "Alternaria brassicicola", 
 "^ot:treebaseOTUId": "Tl666104"
 }, 
 "otu198890": {
+"@label": "Trichoderma atroviride", 
 "^ot:originalLabel": "Trichoderma atroviride", 
 "^ot:treebaseOTUId": "Tl666105"
 }, 
 "otu198891": {
+"@label": "Trametes versicolor", 
 "^ot:originalLabel": "Trametes versicolor", 
 "^ot:ottId": 581141, 
 "^ot:ottTaxonName": "Trametes versicolor", 
 "^ot:treebaseOTUId": "Tl666106"
 }, 
 "otu198892": {
+"@label": "Mucor circinelloides", 
 "^ot:originalLabel": "Mucor circinelloides", 
 "^ot:ottId": 206549, 
 "^ot:ottTaxonName": "Mucor circinelloides", 
 "^ot:treebaseOTUId": "Tl666107"
 }, 
 "otu198893": {
+"@label": "Rhodonia placenta", 
 "^ot:originalLabel": "Postia placenta", 
 "^ot:ottId": 1069955, 
 "^ot:ottTaxonName": "Rhodonia placenta", 
 "^ot:treebaseOTUId": "Tl666108"
 }, 
 "otu198894": {
+"@label": "Fusarium graminearum", 
 "^ot:originalLabel": "Fusarium graminearum", 
 "^ot:treebaseOTUId": "Tl666109"
 }, 
 "otu198895": {
+"@label": "Phanerodontia chrysosporium", 
 "^ot:originalLabel": "Phanerochaete chrysosporium", 
+"^ot:ottId": 5299626, 
+"^ot:ottTaxonName": "Phanerodontia chrysosporium", 
 "^ot:treebaseOTUId": "Tl666110"
 }, 
 "otu198896": {
+"@label": "Schizophyllum commune", 
 "^ot:originalLabel": "Schizophyllum commune", 
 "^ot:ottId": 8357, 
 "^ot:ottTaxonName": "Schizophyllum commune", 
 "^ot:treebaseOTUId": "Tl666111"
 }, 
 "otu198897": {
+"@label": "Mycosphaerella fijiensis", 
 "^ot:originalLabel": "Mycosphaerella fijiensis", 
 "^ot:ottId": 857565, 
 "^ot:ottTaxonName": "Mycosphaerella fijiensis", 
 "^ot:treebaseOTUId": "Tl666112"
 }, 
 "otu198898": {
+"@label": "Ustilago maydis", 
 "^ot:originalLabel": "Ustilago maydis", 
 "^ot:ottId": 285447, 
 "^ot:ottTaxonName": "Ustilago maydis", 
 "^ot:treebaseOTUId": "Tl666113"
 }, 
 "otu198899": {
+"@label": "Agaricus bisporus", 
 "^ot:originalLabel": "Agaricus bisporus", 
 "^ot:ottId": 737449, 
 "^ot:ottTaxonName": "Agaricus bisporus", 
 "^ot:treebaseOTUId": "Tl666114"
 }, 
 "otu198900": {
+"@label": "Serpula lacrymans", 
 "^ot:originalLabel": "Serpula lacrymans", 
 "^ot:ottId": 385505, 
 "^ot:ottTaxonName": "Serpula lacrymans", 
 "^ot:treebaseOTUId": "Tl666115"
 }, 
 "otu198901": {
+"@label": "Paracoccidioides brasiliensis", 
 "^ot:originalLabel": "Paracoccidioides brasiliensis", 
 "^ot:ottId": 395090, 
 "^ot:ottTaxonName": "Paracoccidioides brasiliensis", 
 "^ot:treebaseOTUId": "Tl666116"
 }, 
 "otu198902": {
+"@label": "Amorphotheca resinae", 
 "^ot:originalLabel": "Amorphotheca resinae", 
 "^ot:ottId": 677024, 
 "^ot:ottTaxonName": "Amorphotheca resinae", 
 "^ot:treebaseOTUId": "Tl666117"
 }, 
 "otu198903": {
+"@label": "Oculimacula yallundae", 
 "^ot:originalLabel": "Pseudocercosporella herpotrichoides", 
 "^ot:ottId": 798180, 
 "^ot:ottTaxonName": "Oculimacula yallundae", 
 "^ot:treebaseOTUId": "Tl666118"
 }, 
 "otu198904": {
+"@label": "Botryotinia fuckeliana", 
 "^ot:originalLabel": "Botryotinia fuckeliana", 
 "^ot:ottId": 17713, 
 "^ot:ottTaxonName": "Botryotinia fuckeliana", 
 "^ot:treebaseOTUId": "Tl666119"
 }, 
 "otu198905": {
+"@label": "Penicillium dupontii", 
 "^ot:originalLabel": "Talaromyces thermophilus", 
+"^ot:ottId": 5310753, 
+"^ot:ottTaxonName": "Penicillium dupontii", 
 "^ot:treebaseOTUId": "Tl666120"
 }, 
 "otu198906": {
+"@label": "Malbranchea cinnamomea", 
 "^ot:originalLabel": "Malbranchea cinnamomea", 
 "^ot:treebaseOTUId": "Tl666121"
 }, 
 "otu198907": {
+"@label": "Cryptococcus neoformans", 
 "^ot:originalLabel": "Cryptococcus neoformans", 
 "^ot:ottId": 634633, 
 "^ot:ottTaxonName": "Cryptococcus neoformans", 
 "^ot:treebaseOTUId": "Tl666122"
 }, 
 "otu198908": {
+"@label": "Mycosphaerella graminicola", 
 "^ot:originalLabel": "Mycosphaerella graminicola", 
+"^ot:ottId": 5319573, 
+"^ot:ottTaxonName": "Mycosphaerella graminicola", 
 "^ot:treebaseOTUId": "Tl666123"
 }, 
 "otu198909": {
+"@label": "Aspergillus niger", 
 "^ot:originalLabel": "Aspergillus niger", 
 "^ot:ottId": 300201, 
 "^ot:ottTaxonName": "Aspergillus niger", 
 "^ot:treebaseOTUId": "Tl666124"
 }, 
 "otu198910": {
+"@label": "Batrachochytrium dendrobatidis", 
 "^ot:originalLabel": "Batrachochytrium dendrobatidis", 
 "^ot:ottId": 858873, 
 "^ot:ottTaxonName": "Batrachochytrium dendrobatidis", 
 "^ot:treebaseOTUId": "Tl666125"
 }, 
 "otu198911": {
+"@label": "Malbranchea cinnamomea IFM 41309", 
 "^ot:originalLabel": "Malbranchea cinnamomea IFM 41309", 
 "^ot:treebaseOTUId": "Tl666188"
 }, 
 "otu198912": {
+"@label": "Aspergillus alliaceus", 
 "^ot:originalLabel": "Petromyces alliaceus NRRL 4181", 
 "^ot:ottId": 433009, 
 "^ot:ottTaxonName": "Aspergillus alliaceus", 
 "^ot:treebaseOTUId": "Tl666189"
 }, 
 "otu198913": {
+"@label": "Dichotomomyces cejpii NRRL 26980", 
 "^ot:originalLabel": "Dichotomomyces cejpii NRRL 26980", 
 "^ot:treebaseOTUId": "Tl666190"
 }, 
 "otu198914": {
+"@label": "Malbranchea cinnamomea CBS 343.55", 
 "^ot:originalLabel": "Malbranchea cinnamomea CBS 343.55", 
 "^ot:treebaseOTUId": "Tl666191"
 }, 
 "otu198915": {
+"@label": "Byssochlamys fulva CBS 132.33", 
 "^ot:originalLabel": "Byssochlamys fulva CBS 132.33", 
 "^ot:treebaseOTUId": "Tl666192"
 }, 
 "otu198916": {
+"@label": "Penicillium roqueforti", 
 "^ot:originalLabel": "Penicillium roqueforti ATCC 10110", 
 "^ot:ottId": 901427, 
 "^ot:ottTaxonName": "Penicillium roqueforti", 
 "^ot:treebaseOTUId": "Tl666193"
 }, 
 "otu198917": {
+"@label": "Monascus pilosus", 
 "^ot:originalLabel": "Monascus pilosus ATCC 16363", 
 "^ot:ottId": 386504, 
 "^ot:ottTaxonName": "Monascus pilosus", 
 "^ot:treebaseOTUId": "Tl666194"
 }, 
 "otu198918": {
+"@label": "Aspergillus aureolus", 
 "^ot:originalLabel": "Neosartorya aureola NRRL 2391", 
+"^ot:ottId": 5310646, 
+"^ot:ottTaxonName": "Aspergillus aureolus", 
 "^ot:treebaseOTUId": "Tl666195"
 }, 
 "otu198919": {
+"@label": "Penicillium camemberti", 
 "^ot:originalLabel": "Penicillium camemberti CBS 299.48", 
 "^ot:ottId": 226495, 
 "^ot:ottTaxonName": "Penicillium camemberti", 
 "^ot:treebaseOTUId": "Tl666196"
 }, 
 "otu198920": {
+"@label": "Byssochlamys zollerniae", 
 "^ot:originalLabel": "Byssochlamys zollerniae CBS 374.70", 
 "^ot:ottId": 247838, 
 "^ot:ottTaxonName": "Byssochlamys zollerniae", 
 "^ot:treebaseOTUId": "Tl666197"
 }, 
 "otu198921": {
+"@label": "Penicillium dupontii", 
 "^ot:originalLabel": "Talaromyces thermophilus NBRC 30541", 
+"^ot:ottId": 5310753, 
+"^ot:ottTaxonName": "Penicillium dupontii", 
 "^ot:treebaseOTUId": "Tl666198"
 }, 
 "otu198922": {
+"@label": "Aspergillus spinulosus", 
 "^ot:originalLabel": "Warcupiella spinulosa IFO 31800", 
+"^ot:ottId": 5310629, 
+"^ot:ottTaxonName": "Aspergillus spinulosus", 
 "^ot:treebaseOTUId": "Tl666199"
 }, 
 "otu198923": {
+"@label": "Malbranchea dendritica UAMH 2731", 
 "^ot:originalLabel": "Malbranchea dendritica UAMH 2731", 
 "^ot:treebaseOTUId": "Tl666200"
 }, 
 "otu198924": {
+"@label": "Rasamsonia emersonii", 
 "^ot:originalLabel": "Talaromyces emersonii CBS 393.64", 
 "^ot:ottId": 773841, 
 "^ot:ottTaxonName": "Rasamsonia emersonii", 
 "^ot:treebaseOTUId": "Tl666201"
 }, 
 "otu198925": {
+"@label": "Rasamsonia byssochlamydoides", 
 "^ot:originalLabel": "Talaromyces byssochlamydoides IAM 13445", 
 "^ot:ottId": 844101, 
 "^ot:ottTaxonName": "Rasamsonia byssochlamydoides", 
 "^ot:treebaseOTUId": "Tl666202"
 }, 
 "otu198926": {
+"@label": "Talaromyces ocotl CBS 102855", 
 "^ot:originalLabel": "Talaromyces ocotl CBS 102855", 
 "^ot:treebaseOTUId": "Tl666203"
 }, 
 "otu198927": {
+"@label": "Spiromastigoides warcupii", 
 "^ot:originalLabel": "Spiromastix warcupii AFTOL ID 430", 
 "^ot:ottId": 658627, 
-"^ot:ottTaxonName": "Spiromastix warcupii", 
+"^ot:ottTaxonName": "Spiromastigoides warcupii", 
 "^ot:treebaseOTUId": "Tl666204"
 }, 
 "otu198928": {
+"@label": "Thermoascus crustaceus", 
 "^ot:originalLabel": "Thermoascus crustaceus 2  CBS 181.67", 
 "^ot:ottId": 901425, 
 "^ot:ottTaxonName": "Thermoascus crustaceus", 
 "^ot:treebaseOTUId": "Tl666205"
 }, 
 "otu198929": {
+"@label": "Aspergillus stromatoides", 
 "^ot:originalLabel": "Chaetosartorya stromatoides CBS 500.65", 
 "^ot:ottId": 890966, 
 "^ot:ottTaxonName": "Aspergillus stromatoides", 
 "^ot:treebaseOTUId": "Tl666206"
 }, 
 "otu198930": {
+"@label": "Monascus purpureus", 
 "^ot:originalLabel": "Monascus purpureus CBS 109.07", 
 "^ot:ottId": 376359, 
 "^ot:ottTaxonName": "Monascus purpureus", 
 "^ot:treebaseOTUId": "Tl666207"
 }, 
 "otu198931": {
+"@label": "Malbranchea cinnamomea CBS 960.72", 
 "^ot:originalLabel": "Malbranchea cinnamomea CBS 960.72", 
 "^ot:treebaseOTUId": "Tl666208"
 }, 
 "otu198932": {
+"@label": "Penicillium chrysogenum", 
 "^ot:originalLabel": "Penicillium chrysogenum NRRL 807", 
 "^ot:ottId": 226485, 
 "^ot:ottTaxonName": "Penicillium chrysogenum", 
 "^ot:treebaseOTUId": "Tl666209"
 }, 
 "otu198933": {
+"@label": "Malbranchea pulchella CBS 202.38", 
 "^ot:originalLabel": "Malbranchea pulchella CBS 202.38", 
 "^ot:treebaseOTUId": "Tl666210"
 }, 
 "otu198934": {
+"@label": "Aspergillus fumigatus", 
 "^ot:originalLabel": "Aspergillus fumigatus NRRL 163", 
 "^ot:ottId": 278828, 
 "^ot:ottTaxonName": "Aspergillus fumigatus", 
 "^ot:treebaseOTUId": "Tl666211"
 }, 
 "otu198935": {
+"@label": "Penicillium malachiteum", 
 "^ot:originalLabel": "Chromocleista malachitea CBS 647.95", 
 "^ot:ottId": 4061468, 
 "^ot:ottTaxonName": "Penicillium malachiteum", 
 "^ot:treebaseOTUId": "Tl666212"
 }, 
 "otu198936": {
+"@label": "Paecilomyces niveus", 
 "^ot:originalLabel": "Byssochlamys nivea CBS 100.11", 
 "^ot:ottId": 376368, 
 "^ot:ottTaxonName": "Paecilomyces niveus", 
 "^ot:treebaseOTUId": "Tl666213"
 }, 
 "otu198937": {
+"@label": "Aspergillus cristatus", 
 "^ot:originalLabel": "Eurotium cristatum NRRL 4222", 
 "^ot:ottId": 994596, 
 "^ot:ottTaxonName": "Aspergillus cristatus", 
 "^ot:treebaseOTUId": "Tl666214"
 }, 
 "otu198938": {
+"@label": "Monascus ruber", 
 "^ot:originalLabel": "Monascus ruber ATCC 16366", 
 "^ot:ottId": 386505, 
 "^ot:ottTaxonName": "Monascus ruber", 
 "^ot:treebaseOTUId": "Tl666215"
 }, 
 "otu198939": {
+"@label": "Hamigera fusca", 
 "^ot:originalLabel": "Hamigera fusca NRRL 35601", 
 "^ot:ottId": 1000912, 
 "^ot:ottTaxonName": "Hamigera fusca", 
 "^ot:treebaseOTUId": "Tl666216"
 }, 
 "otu198940": {
+"@label": "Aspergillus chrysellus", 
 "^ot:originalLabel": "Chaetosartorya chrysella NRRL 5085", 
+"^ot:ottId": 5310649, 
+"^ot:ottTaxonName": "Aspergillus chrysellus", 
 "^ot:treebaseOTUId": "Tl666217"
 }, 
 "otu198941": {
+"@label": "Thermoascus crustaceus", 
 "^ot:originalLabel": "Thermoascus crustaceus CBS 374.62", 
 "^ot:ottId": 901425, 
 "^ot:ottTaxonName": "Thermoascus crustaceus", 
 "^ot:treebaseOTUId": "Tl666218"
 }, 
 "otu198942": {
+"@label": "Penicilliopsis clavariiformis", 
 "^ot:originalLabel": "Penicilliopsis clavariiformis NRRL 13757", 
 "^ot:ottId": 361811, 
 "^ot:ottTaxonName": "Penicilliopsis clavariiformis", 
 "^ot:treebaseOTUId": "Tl666219"
 }, 
 "otu198943": {
+"@label": "Pseudotulostoma japonicum", 
 "^ot:originalLabel": "Pseudotulostoma japonica TNS F11152", 
+"^ot:ottId": 5310537, 
+"^ot:ottTaxonName": "Pseudotulostoma japonicum", 
 "^ot:treebaseOTUId": "Tl666220"
 }, 
 "otu198944": {
+"@label": "Thermoascus crustaceus", 
 "^ot:originalLabel": "Thermoascus crustaceus 1  CBS 181.67", 
 "^ot:ottId": 901425, 
 "^ot:ottTaxonName": "Thermoascus crustaceus", 
 "^ot:treebaseOTUId": "Tl666221"
 }, 
 "otu198945": {
+"@label": "Paecilomyces variotii", 
 "^ot:originalLabel": "Paecilomyces variotii CBS 102.74", 
+"^ot:ottId": 653422, 
+"^ot:ottTaxonName": "Paecilomyces variotii", 
 "^ot:treebaseOTUId": "Tl666222"
 }, 
 "otu198946": {
+"@label": "Trichocoma paradoxa", 
 "^ot:originalLabel": "Trichocoma paradoxa NRRL 28276", 
 "^ot:ottId": 604325, 
 "^ot:ottTaxonName": "Trichocoma paradoxa", 
 "^ot:treebaseOTUId": "Tl666223"
 }, 
 "otu198947": {
+"@label": "Aspergillus muricatus", 
 "^ot:originalLabel": "Neopetromyces muricatus NRRL 35674", 
 "^ot:ottId": 427765, 
 "^ot:ottTaxonName": "Aspergillus muricatus", 
 "^ot:treebaseOTUId": "Tl666224"
 }, 
 "otu198948": {
+"@label": "Neosartorya fischeri", 
 "^ot:originalLabel": "Neosartorya fischeri NRRL 181", 
 "^ot:ottId": 890962, 
-"^ot:ottTaxonName": "Aspergillus fischerianus", 
+"^ot:ottTaxonName": "Neosartorya fischeri", 
 "^ot:treebaseOTUId": "Tl666225"
 }, 
 "otu198949": {
+"@label": "Talaromyces leycettanus", 
 "^ot:originalLabel": "Talaromyces leycettanus NRRL 5178", 
 "^ot:ottId": 890591, 
 "^ot:ottTaxonName": "Talaromyces leycettanus", 
 "^ot:treebaseOTUId": "Tl666226"
 }, 
 "otu198950": {
+"@label": "Eurotium intermedium NRRL 82", 
 "^ot:originalLabel": "Eurotium intermedium NRRL 82", 
 "^ot:treebaseOTUId": "Tl666227"
 }, 
 "otu198951": {
+"@label": "Penicillium nilense", 
 "^ot:originalLabel": "Eupenicillium egyptiacum CBS 244.32", 
+"^ot:ottId": 5310735, 
+"^ot:ottTaxonName": "Penicillium nilense", 
 "^ot:treebaseOTUId": "Tl666228"
 }, 
 "otu198952": {
+"@label": "Sclerocleista ornata", 
 "^ot:originalLabel": "Hemicarpenteles ornatus NRRL 2256", 
 "^ot:ottId": 973737, 
 "^ot:ottTaxonName": "Sclerocleista ornata", 
 "^ot:treebaseOTUId": "Tl666229"
 }, 
 "otu198953": {
+"@label": "Xeromyces bisporus", 
 "^ot:originalLabel": "Xeromyces bisporus CBS 236.71", 
 "^ot:ottId": 962635, 
 "^ot:ottTaxonName": "Xeromyces bisporus", 
 "^ot:treebaseOTUId": "Tl666230"
 }, 
 "otu198954": {
+"@label": "Thermoascus aurantiacus", 
 "^ot:originalLabel": "Thermoascus aurantiacus NRRL 5861", 
 "^ot:ottId": 901430, 
 "^ot:ottTaxonName": "Thermoascus aurantiacus", 
 "^ot:treebaseOTUId": "Tl666231"
 }, 
 "otu198955": {
+"@label": "Thermomyces lanuginosus", 
 "^ot:originalLabel": "Thermomyces lanuginosus ATCC 200065", 
 "^ot:ottId": 939819, 
 "^ot:ottTaxonName": "Thermomyces lanuginosus", 
 "^ot:treebaseOTUId": "Tl666232"
 }, 
 "otu198956": {
+"@label": "Talaromyces rotundus", 
 "^ot:originalLabel": "Talaromyces rotundus GB 6317", 
 "^ot:ottId": 234327, 
 "^ot:ottTaxonName": "Talaromyces rotundus", 
 "^ot:treebaseOTUId": "Tl666233"
 }, 
 "otu198957": {
+"@label": "Aspergillus terreus", 
 "^ot:originalLabel": "Aspergillus terreus NIH 2624", 
 "^ot:ottId": 208372, 
 "^ot:ottTaxonName": "Aspergillus terreus", 
 "^ot:treebaseOTUId": "Tl666234"
 }, 
 "otu198958": {
+"@label": "Talaromyces flavus", 
 "^ot:originalLabel": "Talaromyces flavus NRRL 2098", 
 "^ot:ottId": 376372, 
 "^ot:ottTaxonName": "Talaromyces flavus", 
 "^ot:treebaseOTUId": "Tl666235"
 }, 
 "otu198959": {
+"@label": "Aspergillus cremeus", 
 "^ot:originalLabel": "Chaetosartorya cremea NRRL 5081", 
+"^ot:ottId": 5310622, 
+"^ot:ottTaxonName": "Aspergillus cremeus", 
 "^ot:treebaseOTUId": "Tl666236"
 }, 
 "otu198960": {
+"@label": "Aspergillus ruber", 
 "^ot:originalLabel": "Eurotium rubrum CBS 530.65", 
+"^ot:ottId": 118490, 
+"^ot:ottTaxonName": "Aspergillus ruber", 
 "^ot:treebaseOTUId": "Tl666237"
 }, 
 "otu198961": {
+"@label": "Renispora flavissima", 
 "^ot:originalLabel": "Renispora flavissima CBS 708.79", 
 "^ot:ottId": 236224, 
 "^ot:ottTaxonName": "Renispora flavissima", 
 "^ot:treebaseOTUId": "Tl666238"
 }, 
 "otu198962": {
+"@label": "Talaromyces leycettanus", 
 "^ot:originalLabel": "Talaromyces leycettanus CBS 398.68", 
 "^ot:ottId": 890591, 
 "^ot:ottTaxonName": "Talaromyces leycettanus", 
 "^ot:treebaseOTUId": "Tl666239"
 }, 
 "otu198963": {
+"@label": "Malbranchea aurantiaca CBS 127.77", 
 "^ot:originalLabel": "Malbranchea aurantiaca CBS 127.77", 
 "^ot:treebaseOTUId": "Tl666240"
 }, 
 "otu198964": {
+"@label": "Hemicarpenteles paradoxum", 
 "^ot:originalLabel": "Hemicarpenteles paradoxus IFO 8172", 
+"^ot:ottId": 5310787, 
+"^ot:ottTaxonName": "Hemicarpenteles paradoxum", 
 "^ot:treebaseOTUId": "Tl666241"
 }, 
 "otu198965": {
+"@label": "Talaromyces stipitatus", 
 "^ot:originalLabel": "Talaromyces stipitatus ATCC 10500", 
 "^ot:ottId": 73766, 
 "^ot:ottTaxonName": "Talaromyces stipitatus", 
 "^ot:treebaseOTUId": "Tl666242"
 }, 
 "otu198966": {
+"@label": "Rasamsonia eburnea", 
 "^ot:originalLabel": "Talaromyces eburneus PF 1151", 
 "^ot:ottId": 773851, 
 "^ot:ottTaxonName": "Rasamsonia eburnea", 
 "^ot:treebaseOTUId": "Tl666243"
 }, 
 "otu198967": {
+"@label": "Neocarpenteles acanthosporum", 
 "^ot:originalLabel": "Hemicarpenteles acanthosporus NRRL 5293", 
+"^ot:ottId": 1042301, 
+"^ot:ottTaxonName": "Neocarpenteles acanthosporum", 
 "^ot:treebaseOTUId": "Tl666244"
 }, 
 "otu198968": {
+"@label": "Talaromyces bacillisporus", 
 "^ot:originalLabel": "Talaromyces bacillisporus IFO 31150", 
 "^ot:ottId": 1032848, 
 "^ot:ottTaxonName": "Talaromyces bacillisporus", 
 "^ot:treebaseOTUId": "Tl666245"
 }, 
 "otu198969": {
+"@label": "Hamigera avellanea", 
 "^ot:originalLabel": "Hamigera avellanea NRRL 1938", 
 "^ot:ottId": 405612, 
 "^ot:ottTaxonName": "Hamigera avellanea", 
 "^ot:treebaseOTUId": "Tl666246"
 }, 
 "otu198970": {
+"@label": "Paecilomyces aerugineus", 
 "^ot:originalLabel": "Paecilomyces aerugineus CBS 350.66", 
 "^ot:ottId": 873116, 
 "^ot:ottTaxonName": "Paecilomyces aerugineus", 
 "^ot:treebaseOTUId": "Tl666247"
 }, 
 "otu198971": {
+"@label": "Aspergillus clavatus", 
 "^ot:originalLabel": "Aspergillus clavatus NRRL 1", 
 "^ot:ottId": 550765, 
 "^ot:ottTaxonName": "Aspergillus clavatus", 
 "^ot:treebaseOTUId": "Tl666248"
 }, 
 "otu198972": {
+"@label": "Talaromyces marneffei", 
 "^ot:originalLabel": "Penicillium marneffei ATCC 18224", 
 "^ot:ottId": 58525, 
 "^ot:ottTaxonName": "Talaromyces marneffei", 
 "^ot:treebaseOTUId": "Tl666249"
 }, 
 "otu198973": {
+"@label": "Gelasinospora tetrasperma", 
 "^ot:originalLabel": "Gelasinospora tetrasperma CBS 178 33", 
 "^ot:ottId": 424728, 
 "^ot:ottTaxonName": "Gelasinospora tetrasperma", 
 "^ot:treebaseOTUId": "Tl718919"
 }, 
 "otu198974": {
+"@label": "Chaetomium strumarium", 
 "^ot:originalLabel": "Achaetomium strumarium CBS 333 67", 
+"^ot:ottId": 1094024, 
+"^ot:ottTaxonName": "Chaetomium strumarium", 
 "^ot:treebaseOTUId": "Tl718920"
 }, 
 "otu198975": {
+"@label": "Myriococcum thermophilum CBS 389 93", 
 "^ot:originalLabel": "Myriococcum thermophilum CBS 389 93", 
 "^ot:treebaseOTUId": "Tl718921"
 }, 
 "otu198976": {
+"@label": "Diaporthe eres CBS 109767", 
 "^ot:originalLabel": "Diaporthe eres CBS 109767", 
 "^ot:treebaseOTUId": "Tl718922"
 }, 
 "otu198977": {
+"@label": "Thielavia australiensis", 
 "^ot:originalLabel": "Thielavia australiensis ATCC 28236", 
 "^ot:ottId": 264986, 
 "^ot:ottTaxonName": "Thielavia australiensis", 
 "^ot:treebaseOTUId": "Tl718923"
 }, 
 "otu198978": {
+"@label": "Zopfiella tabulata", 
 "^ot:originalLabel": "Zopfiella tabulata CBS 230 78", 
 "^ot:ottId": 224385, 
 "^ot:ottTaxonName": "Zopfiella tabulata", 
 "^ot:treebaseOTUId": "Tl718924"
 }, 
 "otu198979": {
+"@label": "Apodus deciduus", 
 "^ot:originalLabel": "Apodus deciduus CBS 506 70", 
 "^ot:ottId": 199756, 
 "^ot:ottTaxonName": "Apodus deciduus", 
 "^ot:treebaseOTUId": "Tl718925"
 }, 
 "otu198980": {
+"@label": "Schizothecium fimbriatum", 
 "^ot:originalLabel": "Schizothecium fimbriatum CBS 144 54", 
 "^ot:ottId": 744531, 
 "^ot:ottTaxonName": "Schizothecium fimbriatum", 
 "^ot:treebaseOTUId": "Tl718926"
 }, 
 "otu198981": {
+"@label": "Zopfiella tetraspora", 
 "^ot:originalLabel": "Zopfiella tetraspora IFO 32904", 
 "^ot:ottId": 798728, 
 "^ot:ottTaxonName": "Zopfiella tetraspora", 
 "^ot:treebaseOTUId": "Tl718927"
 }, 
 "otu198982": {
+"@label": "Neurospora tetrasperma", 
 "^ot:originalLabel": "Neurospora tetrasperma FGSC 2509 matA", 
 "^ot:ottId": 779623, 
 "^ot:ottTaxonName": "Neurospora tetrasperma", 
 "^ot:treebaseOTUId": "Tl718928"
 }, 
 "otu198983": {
+"@label": "Schizothecium aloides", 
 "^ot:originalLabel": "Schizothecium aloides CBS 879 72", 
 "^ot:ottId": 224399, 
 "^ot:ottTaxonName": "Schizothecium aloides", 
 "^ot:treebaseOTUId": "Tl718929"
 }, 
 "otu198984": {
+"@label": "Melanocarpus albomyces", 
 "^ot:originalLabel": "Melanocarpus albomyces ATCC 16460", 
 "^ot:ottId": 331698, 
 "^ot:ottTaxonName": "Melanocarpus albomyces", 
 "^ot:treebaseOTUId": "Tl718930"
 }, 
 "otu198985": {
+"@label": "Thielavia subthermophila", 
 "^ot:originalLabel": "Thielavia subthermophila CBS 125981", 
 "^ot:ottId": 3695237, 
 "^ot:ottTaxonName": "Thielavia subthermophila", 
 "^ot:treebaseOTUId": "Tl718931"
 }, 
 "otu198986": {
+"@label": "Sordaria arctica", 
 "^ot:originalLabel": "Asordaria arctica CBS 143 68", 
+"^ot:ottId": 5316578, 
+"^ot:ottTaxonName": "Sordaria arctica", 
 "^ot:treebaseOTUId": "Tl718932"
 }, 
 "otu198987": {
+"@label": "Sordaria tenerifae", 
 "^ot:originalLabel": "Asordaria tenerifae CBS 264 86", 
+"^ot:ottId": 894443, 
+"^ot:ottTaxonName": "Sordaria tenerifae", 
 "^ot:treebaseOTUId": "Tl718933"
 }, 
 "otu198988": {
+"@label": "Humicola insolens", 
 "^ot:originalLabel": "Humicola insolens IMI 126330", 
 "^ot:ottId": 534466, 
 "^ot:ottTaxonName": "Humicola insolens", 
 "^ot:treebaseOTUId": "Tl718934"
 }, 
 "otu198989": {
+"@label": "Neurospora discreta", 
 "^ot:originalLabel": "Neurospora discreta FGSC 8579 matA", 
 "^ot:ottId": 409098, 
 "^ot:ottTaxonName": "Neurospora discreta", 
 "^ot:treebaseOTUId": "Tl718935"
 }, 
 "otu198990": {
+"@label": "Thielavia terrestris", 
 "^ot:originalLabel": "Thielavia terrestris NRRL 8126", 
 "^ot:ottId": 606635, 
 "^ot:ottTaxonName": "Thielavia terrestris", 
 "^ot:treebaseOTUId": "Tl718936"
 }, 
 "otu198991": {
+"@label": "Remersonia thermophila ATCC 22073", 
 "^ot:originalLabel": "Remersonia thermophila ATCC 22073", 
 "^ot:treebaseOTUId": "Tl718937"
 }, 
 "otu198992": {
+"@label": "Zopfiella longicaudata", 
 "^ot:originalLabel": "Zopfiella longicaudata IFO 30296", 
 "^ot:ottId": 798729, 
 "^ot:ottTaxonName": "Zopfiella longicaudata", 
 "^ot:treebaseOTUId": "Tl718938"
 }, 
 "otu198993": {
+"@label": "Triangularia backusii", 
 "^ot:originalLabel": "Apiosordaria backusii ATCC 34568", 
+"^ot:ottId": 5316562, 
+"^ot:ottTaxonName": "Triangularia backusii", 
 "^ot:treebaseOTUId": "Tl718939"
 }, 
 "otu198994": {
+"@label": "Neurospora crassa", 
 "^ot:originalLabel": "Neurospora crassa OR74A", 
 "^ot:ottId": 572462, 
 "^ot:ottTaxonName": "Neurospora crassa", 
 "^ot:treebaseOTUId": "Tl718940"
 }, 
 "otu198995": {
+"@label": "Chaetomium thermophilum var thermophilum CBS 143 50", 
 "^ot:originalLabel": "Chaetomium thermophilum var thermophilum CBS 143 50", 
 "^ot:treebaseOTUId": "Tl718941"
 }, 
 "otu198996": {
+"@label": "Lasiosphaeria lanuginosa", 
 "^ot:originalLabel": "Lasiosphaeria lanuginosa AR2148", 
 "^ot:ottId": 254787, 
 "^ot:ottTaxonName": "Lasiosphaeria lanuginosa", 
 "^ot:treebaseOTUId": "Tl718942"
 }, 
 "otu198997": {
+"@label": "Humicola grisea var grisea DAOM 232586", 
 "^ot:originalLabel": "Humicola grisea var grisea DAOM 232586", 
 "^ot:treebaseOTUId": "Tl718943"
 }, 
 "otu198998": {
+"@label": "Thielavia terrestris", 
 "^ot:originalLabel": "Thielavia terrestris IFO 9732", 
 "^ot:ottId": 606635, 
 "^ot:ottTaxonName": "Thielavia terrestris", 
 "^ot:treebaseOTUId": "Tl718944"
 }, 
 "otu198999": {
+"@label": "Chaetomium globosum", 
 "^ot:originalLabel": "Chaetomium globosum CBS 148 51", 
 "^ot:ottId": 758745, 
 "^ot:ottTaxonName": "Chaetomium globosum", 
 "^ot:treebaseOTUId": "Tl718945"
 }, 
 "otu199000": {
+"@label": "Chaetomium thermophilum", 
 "^ot:originalLabel": "Chaetomium thermophilum var coprophilum ATCC 16451", 
 "^ot:ottId": 1089943, 
 "^ot:ottTaxonName": "Chaetomium thermophilum", 
 "^ot:treebaseOTUId": "Tl718946"
 }, 
 "otu199001": {
+"@label": "Lasiosphaeria rugulosa", 
 "^ot:originalLabel": "Lasiosphaeria rugulosa SMH1518", 
 "^ot:ottId": 254788, 
 "^ot:ottTaxonName": "Lasiosphaeria rugulosa", 
 "^ot:treebaseOTUId": "Tl718947"
 }, 
 "otu199002": {
+"@label": "Melanocarpus thermophilus", 
 "^ot:originalLabel": "Melanocarpus thermophilus FMR 6190", 
 "^ot:ottId": 839594, 
 "^ot:ottTaxonName": "Melanocarpus thermophilus", 
 "^ot:treebaseOTUId": "Tl718948"
 }, 
 "otu199003": {
+"@label": "Remersonia thermophila", 
 "^ot:originalLabel": "Remersonia thermophila", 
 "^ot:treebaseOTUId": "Tl718949"
 }, 
 "otu199004": {
+"@label": "Humicola fuscoatra", 
 "^ot:originalLabel": "Humicola fuscoatra NRRL 22980", 
 "^ot:ottId": 338533, 
 "^ot:ottTaxonName": "Humicola fuscoatra", 
 "^ot:treebaseOTUId": "Tl718950"
 }, 
 "otu199005": {
+"@label": "Lasiosphaeria glabrata", 
 "^ot:originalLabel": "Lasiosphaeria glabrata TL4529", 
 "^ot:ottId": 254790, 
 "^ot:ottTaxonName": "Lasiosphaeria glabrata", 
 "^ot:treebaseOTUId": "Tl718951"
 }, 
 "otu199006": {
+"@label": "Cercophora coprophila", 
 "^ot:originalLabel": "Cercophora coprophila IFO 32091", 
 "^ot:ottId": 220967, 
 "^ot:ottTaxonName": "Cercophora coprophila", 
 "^ot:treebaseOTUId": "Tl718952"
 }, 
 "otu199007": {
+"@label": "Thielavia terrestris", 
 "^ot:originalLabel": "Thielavia terrestris ATCC 26796", 
 "^ot:ottId": 606635, 
 "^ot:ottTaxonName": "Thielavia terrestris", 
 "^ot:treebaseOTUId": "Tl718953"
 }, 
 "otu199008": {
+"@label": "Humicola fuscoatra var fuscoatra DAOM 35882", 
 "^ot:originalLabel": "Humicola fuscoatra var fuscoatra DAOM 35882", 
 "^ot:treebaseOTUId": "Tl718954"
 }, 
 "otu199009": {
+"@label": "Myceliophthora hinnulea", 
 "^ot:originalLabel": "Myceliophthora hinnulea ATCC 52474", 
 "^ot:ottId": 68181, 
 "^ot:ottTaxonName": "Myceliophthora hinnulea", 
 "^ot:treebaseOTUId": "Tl718955"
 }, 
 "otu199010": {
+"@label": "Humicola insolens", 
 "^ot:originalLabel": "Humicola insolens MTCC 4617", 
 "^ot:ottId": 534466, 
 "^ot:ottTaxonName": "Humicola insolens", 
 "^ot:treebaseOTUId": "Tl718956"
 }, 
 "otu199011": {
+"@label": "Schizothecium glutinans", 
 "^ot:originalLabel": "Schizothecium glutinans CBS 134 83", 
 "^ot:ottId": 237984, 
 "^ot:ottTaxonName": "Schizothecium glutinans", 
 "^ot:treebaseOTUId": "Tl718957"
 }, 
 "otu199012": {
+"@label": "Thielavia australiensis", 
 "^ot:originalLabel": "Thielavia australiensis CBS 493 74", 
 "^ot:ottId": 264986, 
 "^ot:ottTaxonName": "Thielavia australiensis", 
 "^ot:treebaseOTUId": "Tl718958"
 }, 
 "otu199013": {
+"@label": "Chaetomium thermophilum", 
 "^ot:originalLabel": "Chaetomium thermophilum MTCC 6350", 
 "^ot:ottId": 1089943, 
 "^ot:ottTaxonName": "Chaetomium thermophilum", 
 "^ot:treebaseOTUId": "Tl718959"
 }, 
 "otu199014": {
+"@label": "Myceliophthora thermophila", 
 "^ot:originalLabel": "Myceliophthora thermophila ATCC 42464", 
 "^ot:ottId": 10631, 
 "^ot:ottTaxonName": "Myceliophthora thermophila", 
 "^ot:treebaseOTUId": "Tl718960"
 }, 
 "otu199015": {
+"@label": "Scytalidium thermophilum", 
 "^ot:originalLabel": "Scytalidium thermophilum CBS 625 91", 
 "^ot:ottId": 910746, 
 "^ot:ottTaxonName": "Scytalidium thermophilum", 
 "^ot:treebaseOTUId": "Tl718961"
 }, 
 "otu199016": {
+"@label": "Sordaria macrospora", 
 "^ot:originalLabel": "Sordaria macrospora K hell", 
 "^ot:ottId": 572456, 
 "^ot:ottTaxonName": "Sordaria macrospora", 
 "^ot:treebaseOTUId": "Tl718962"
 }, 
 "otu199017": {
+"@label": "Chaetomidium leptoderma", 
 "^ot:originalLabel": "Aporothielavia leptoderma CBS 538 74", 
+"^ot:ottId": 525271, 
+"^ot:ottTaxonName": "Chaetomidium leptoderma", 
 "^ot:treebaseOTUId": "Tl718963"
 }, 
 "otu199018": {
+"@label": "Myceliophthora fergusii", 
 "^ot:originalLabel": "Corynascus thermophilus MTCC 7671", 
 "^ot:ottId": 809952, 
 "^ot:ottTaxonName": "Myceliophthora fergusii", 
 "^ot:treebaseOTUId": "Tl718964"
 }, 
 "otu199019": {
+"@label": "Myceliophthora fergusii", 
 "^ot:originalLabel": "Corynascus thermophilus CBS 405 69", 
 "^ot:ottId": 809952, 
 "^ot:ottTaxonName": "Myceliophthora fergusii", 
 "^ot:treebaseOTUId": "Tl718965"
 }, 
 "otu199020": {
+"@label": "Diplogelasinospora inaequalis", 
 "^ot:originalLabel": "Diplogelasinospora inaequalis CBS 436 74", 
 "^ot:ottId": 199758, 
 "^ot:ottTaxonName": "Diplogelasinospora inaequalis", 
 "^ot:treebaseOTUId": "Tl718966"
 }, 
 "otu199021": {
+"@label": "Corynascus kuwaitiensis Kw140", 
 "^ot:originalLabel": "Corynascus kuwaitiensis Kw140", 
 "^ot:treebaseOTUId": "Tl718967"
 }, 
 "otu199022": {
+"@label": "Myceliophthora thermophila", 
 "^ot:originalLabel": "Myceliophthora thermophila UAMH 2474", 
 "^ot:ottId": 10631, 
 "^ot:ottTaxonName": "Myceliophthora thermophila", 
 "^ot:treebaseOTUId": "Tl718968"
 }, 
 "otu199023": {
+"@label": "Thielavia minuta", 
 "^ot:originalLabel": "Thielavia minuta CBS 541 76", 
 "^ot:ottId": 839596, 
 "^ot:ottTaxonName": "Thielavia minuta", 
 "^ot:treebaseOTUId": "Tl718969"
 }, 
 "otu199024": {
+"@label": "Diplogelasinospora grovesii", 
 "^ot:originalLabel": "Diplogelasinospora grovesii CBS 340 73", 
 "^ot:ottId": 199757, 
 "^ot:ottTaxonName": "Diplogelasinospora grovesii", 
 "^ot:treebaseOTUId": "Tl718970"
 }, 
 "otu199025": {
+"@label": "Humicola grisea var thermoidea IMI 126329", 
 "^ot:originalLabel": "Humicola grisea var thermoidea IMI 126329", 
 "^ot:treebaseOTUId": "Tl718971"
 }, 
 "otu199026": {
+"@label": "Lasiosphaeria ovina", 
 "^ot:originalLabel": "Lasiosphaeria ovina CBS 958 72", 
 "^ot:ottId": 597716, 
 "^ot:ottTaxonName": "Lasiosphaeria ovina", 
 "^ot:treebaseOTUId": "Tl718972"
 }, 
 "otu199027": {
+"@label": "Immersiella caudata", 
 "^ot:originalLabel": "Cercophora caudata CBS 606 72", 
+"^ot:ottId": 254784, 
+"^ot:ottTaxonName": "Immersiella caudata", 
 "^ot:treebaseOTUId": "Tl718973"
 }, 
 "otu199028": {
+"@label": "Cryphonectria parasitica", 
 "^ot:originalLabel": "Cryphonectria parasitica EP155", 
 "^ot:ottId": 103005, 
 "^ot:ottTaxonName": "Cryphonectria parasitica", 
 "^ot:treebaseOTUId": "Tl718974"
 }, 
 "otu199029": {
+"@label": "Cercophora samala", 
 "^ot:originalLabel": "Cercophora samala CBS 109 93", 
 "^ot:ottId": 798724, 
 "^ot:ottTaxonName": "Cercophora samala", 
 "^ot:treebaseOTUId": "Tl718975"
 }, 
 "otu199030": {
+"@label": "Cercophora sulphurella", 
 "^ot:originalLabel": "Cercophora sulphurella SMH2531", 
 "^ot:ottId": 873211, 
 "^ot:ottTaxonName": "Cercophora sulphurella", 
 "^ot:treebaseOTUId": "Tl718976"
 }, 
 "otu199031": {
+"@label": "Zopfiella erostrata", 
 "^ot:originalLabel": "Zopfiella erostrata CBS 255 71", 
 "^ot:ottId": 798723, 
 "^ot:ottTaxonName": "Zopfiella erostrata", 
 "^ot:treebaseOTUId": "Tl718977"
 }, 
 "otu199032": {
+"@label": "Thielavia basicola", 
 "^ot:originalLabel": "Thielavia basicola CBS 229 82", 
 "^ot:ottId": 264985, 
 "^ot:ottTaxonName": "Thielavia basicola", 
@@ -1278,7 +1493,7 @@
 "treeById": {
 "tree1594": {
 "@xsi:type": "nex:FloatTree", 
-"^ot:curatedType": "ML, Mcm7 + RPB1 + RPB2", 
+"^ot:curatedType": "Fig. 1 ML, Mcm7 + RPB1 + RPB2", 
 "^ot:rootNodeId": "node467294", 
 "edgeBySourceId": {
 "node467294": {
@@ -2683,7 +2898,7 @@
 }, 
 "tree1595": {
 "@xsi:type": "nex:FloatTree", 
-"^ot:curatedType": "ML, SSU + 5.8S + LSU", 
+"^ot:curatedType": "Fig. 2 ML, SSU + 5.8S + LSU", 
 "^ot:inGroupClade": "node467470", 
 "^ot:rootNodeId": "node467469", 
 "edgeBySourceId": {
@@ -3642,7 +3857,7 @@
 }, 
 "tree1596": {
 "@xsi:type": "nex:FloatTree", 
-"^ot:curatedType": "ML, SSU + 5.8S + LSU", 
+"^ot:curatedType": "Fig. 3 ML, SSU + 5.8S + LSU", 
 "^ot:inGroupClade": "node467589", 
 "^ot:rootNodeId": "node467588", 
 "edgeBySourceId": {
@@ -4649,10 +4864,9 @@
 }, 
 "tree5681": {
 "@xsi:type": "nex:FloatTree", 
-"^ot:curatedType": "ML, Mcm7 + RPB1 + RPB2 (rooted)", 
+"^ot:curatedType": "Fig. 1 ML, Mcm7 + RPB1 + RPB2 (rooted)", 
 "^ot:inGroupClade": "node979259", 
 "^ot:rootNodeId": "node979258", 
-"^ot:tag": "RPB1", 
 "edgeBySourceId": {
 "node979258": {
 "edge979259": {

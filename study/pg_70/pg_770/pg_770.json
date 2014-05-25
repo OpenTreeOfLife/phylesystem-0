@@ -15,57 +15,17 @@
 "^ot:agents": {
 "agent": [
 {
-"@description": "validator of NexSON constraints as well as constraints that would allow a study to be imported into the Open Tree of Life's phylogenetic synthesis tools", 
+"@description": "Open Tree NexSON validation", 
 "@id": "peyotl-validator", 
-"@name": "validate_ot_nexson.py", 
+"@name": "api.opentreeoflife.org/validate", 
 "@url": "https://github.com/OpenTreeOfLife/peyotl", 
-"@version": "0.0.3a", 
+"@version": "0.0.4a", 
 "invocation": {
-"checksPerformed": [
-"MISSING_MANDATORY_KEY", 
-"MISSING_OPTIONAL_KEY", 
-"UNRECOGNIZED_KEY", 
-"MISSING_LIST_EXPECTED", 
-"DUPLICATING_SINGLETON_KEY", 
-"REFERENCED_ID_NOT_FOUND", 
-"REPEATED_ID", 
-"REPEATED_OTU", 
-"MULTIPLE_ROOT_NODES", 
-"NO_ROOT_NODE", 
-"MULTIPLE_EDGES_FOR_NODES", 
-"CYCLE_DETECTED", 
-"DISCONNECTED_GRAPH_DETECTED", 
-"INCORRECT_ROOT_NODE_LABEL", 
-"TIP_WITHOUT_OTU", 
-"TIP_WITHOUT_OTT_ID", 
-"MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
-"NON_MONOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
-"INVALID_PROPERTY_VALUE", 
-"PROPERTY_VALUE_NOT_USEFUL", 
-"UNRECOGNIZED_PROPERTY_VALUE", 
-"MULTIPLE_TREES", 
-"UNRECOGNIZED_TAG", 
-"CONFLICTING_PROPERTY_VALUES", 
-"NO_TREES", 
-"DEPRECATED_PROPERTY", 
-"UNPARSEABLE_META", 
-"UNREACHABLE_NODE", 
-"INCORRECT_VALUE_TYPE", 
-"MISSING_CRUCIAL_CONTENT"
-], 
-"commandLine": [
-"--embed", 
-"--agent-only", 
-"-e", 
-"../mig-phyelesystem-scratch/770/validation.json", 
-"-o", 
-"../mig-phyelesystem-scratch/770/final.json", 
-"../mig-phyelesystem-scratch/770/v1.2.1-770.json"
-], 
+"commandLine": [], 
 "otherProperty": [
 {
 "name": "pythonVersion", 
-"value": "2.7.5+"
+"value": "2.7.3"
 }, 
 {
 "name": "pythonImplementation", 
@@ -76,12 +36,13 @@
 }
 ]
 }, 
+"^ot:annotationEvents": {
+"annotation": []
+}, 
 "^ot:curatorName": "Romina Gazis", 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S1400"
 }, 
-"^ot:focalClade": 868020, 
-"^ot:focalCladeOTTTaxonName": "Phomopsis", 
 "^ot:otusElementOrder": [
 "otus770"
 ], 
@@ -98,1101 +59,982 @@
 "otus770": {
 "otuById": {
 "otu193733": {
+"@label": "Phomopsis ampelina", 
 "^ot:originalLabel": "Phomopsis viticola", 
 "^ot:ottId": 3731365, 
-"^ot:ottTaxonName": "Diaporthe ampelina", 
+"^ot:ottTaxonName": "Phomopsis ampelina", 
 "^ot:treebaseOTUId": "Tl13167"
 }, 
 "otu193734": {
+"@label": "Diaporthe eres", 
 "^ot:originalLabel": "Diaporthe eres", 
-"^ot:ottId": 855272, 
-"^ot:ottTaxonName": "Diaporthe eres", 
 "^ot:treebaseOTUId": "Tl161767"
 }, 
 "otu193735": {
+"@label": "Diaporthe rudis", 
 "^ot:originalLabel": "Diaporthe medusaea", 
-"^ot:ottId": 855271, 
-"^ot:ottTaxonName": "Diaporthe medusaea", 
+"^ot:ottId": 5316658, 
+"^ot:ottTaxonName": "Diaporthe rudis", 
 "^ot:treebaseOTUId": "Tl161891"
 }, 
 "otu193736": {
+"@label": "Diaporthe ambigua", 
 "^ot:originalLabel": "Diaporthe ambigua", 
-"^ot:ottId": 263710, 
-"^ot:ottTaxonName": "Diaporthe ambigua", 
 "^ot:treebaseOTUId": "Tl161894"
 }, 
 "otu193737": {
+"@label": "Phomopsis longicolla", 
 "^ot:originalLabel": "Phomopsis longicolla", 
-"^ot:ottId": 931953, 
-"^ot:ottTaxonName": "Diaporthe longicolla", 
 "^ot:treebaseOTUId": "Tl395"
 }, 
 "otu193738": {
+"@label": "Diaporthe helianthi F1", 
 "^ot:originalLabel": "Diaporthe helianthi F1", 
-"^ot:ottId": 365526, 
-"^ot:ottTaxonName": "Diaporthe helianthi", 
 "^ot:treebaseOTUId": "Tl67339"
 }, 
 "otu193739": {
+"@label": "Diaporthe helianthi N1", 
 "^ot:originalLabel": "Diaporthe helianthi N1", 
-"^ot:ottId": 365526, 
-"^ot:ottTaxonName": "Diaporthe helianthi", 
 "^ot:treebaseOTUId": "Tl67340"
 }, 
 "otu193740": {
+"@label": "Diaporthe helianthi F2", 
 "^ot:originalLabel": "Diaporthe helianthi F2", 
-"^ot:ottId": 365526, 
-"^ot:ottTaxonName": "Diaporthe helianthi", 
 "^ot:treebaseOTUId": "Tl67341"
 }, 
 "otu193741": {
+"@label": "Diaporthe helianthi I1", 
 "^ot:originalLabel": "Diaporthe helianthi I1", 
-"^ot:ottId": 365526, 
-"^ot:ottTaxonName": "Diaporthe helianthi", 
 "^ot:treebaseOTUId": "Tl67342"
 }, 
 "otu193742": {
+"@label": "Diaporthe helianthi 187-87", 
 "^ot:originalLabel": "Diaporthe helianthi 187-87", 
-"^ot:ottId": 365526, 
-"^ot:ottTaxonName": "Diaporthe helianthi", 
 "^ot:treebaseOTUId": "Tl67343"
 }, 
 "otu193743": {
+"@label": "Diaporthe helianthi R1", 
 "^ot:originalLabel": "Diaporthe helianthi R1", 
-"^ot:ottId": 365526, 
-"^ot:ottTaxonName": "Diaporthe helianthi", 
 "^ot:treebaseOTUId": "Tl67344"
 }, 
 "otu193744": {
+"@label": "Diaporthe helianthi A3", 
 "^ot:originalLabel": "Diaporthe helianthi A3", 
-"^ot:ottId": 365526, 
-"^ot:ottTaxonName": "Diaporthe helianthi", 
 "^ot:treebaseOTUId": "Tl67345"
 }, 
 "otu193745": {
+"@label": "Diaporthe helianthi A2", 
 "^ot:originalLabel": "Diaporthe helianthi A2", 
-"^ot:ottId": 365526, 
-"^ot:ottTaxonName": "Diaporthe helianthi", 
 "^ot:treebaseOTUId": "Tl67346"
 }, 
 "otu193746": {
+"@label": "Diaporthe helianthi I2", 
 "^ot:originalLabel": "Diaporthe helianthi I2", 
-"^ot:ottId": 365526, 
-"^ot:ottTaxonName": "Diaporthe helianthi", 
 "^ot:treebaseOTUId": "Tl67347"
 }, 
 "otu193747": {
+"@label": "Diapothe phaseolorum", 
 "^ot:originalLabel": "Diapothe phaseolorum", 
-"^ot:ottId": 737678, 
-"^ot:ottTaxonName": "Diaporthe phaseolorum", 
 "^ot:treebaseOTUId": "Tl67348"
 }, 
 "otu193748": {
+"@label": "Diaporthe helianthi A1", 
 "^ot:originalLabel": "Diaporthe helianthi A1", 
-"^ot:ottId": 365526, 
-"^ot:ottTaxonName": "Diaporthe helianthi", 
 "^ot:treebaseOTUId": "Tl67349"
 }, 
 "otu193749": {
+"@label": "Diaporthe helianthi I4", 
 "^ot:originalLabel": "Diaporthe helianthi I4", 
-"^ot:ottId": 365526, 
-"^ot:ottTaxonName": "Diaporthe helianthi", 
 "^ot:treebaseOTUId": "Tl67350"
 }, 
 "otu193750": {
+"@label": "Diaporthe phaseolorum FAO126", 
 "^ot:originalLabel": "Diaporthe phaseolorum FAO126", 
-"^ot:ottId": 737678, 
-"^ot:ottTaxonName": "Diaporthe phaseolorum", 
 "^ot:treebaseOTUId": "Tl6962"
 }, 
 "otu193751": {
+"@label": "Phomopsis sp FAU522", 
 "^ot:originalLabel": "Phomopsis sp FAU522", 
-"^ot:ottId": 712313, 
-"^ot:ottTaxonName": "Phomopsis", 
 "^ot:treebaseOTUId": "Tl6963"
 }, 
 "otu193752": {
+"@label": "Phomopsis sp FAU452", 
 "^ot:originalLabel": "Phomopsis sp FAU452", 
-"^ot:ottId": 712313, 
-"^ot:ottTaxonName": "Phomopsis", 
 "^ot:treebaseOTUId": "Tl6964"
 }, 
 "otu193753": {
+"@label": "Diaporthe phaseolorum 973-B", 
 "^ot:originalLabel": "Diaporthe phaseolorum 973-B", 
-"^ot:ottId": 737678, 
-"^ot:ottTaxonName": "Diaporthe phaseolorum", 
 "^ot:treebaseOTUId": "Tl6965"
 }, 
 "otu193754": {
+"@label": "Phomopsis sp FAU600", 
 "^ot:originalLabel": "Phomopsis sp FAU600", 
-"^ot:ottId": 712313, 
-"^ot:ottTaxonName": "Phomopsis", 
 "^ot:treebaseOTUId": "Tl6966"
 }, 
 "otu193755": {
+"@label": "Phomopsis sp FAU1068", 
 "^ot:originalLabel": "Phomopsis sp FAU1068", 
-"^ot:ottId": 712313, 
-"^ot:ottTaxonName": "Phomopsis", 
 "^ot:treebaseOTUId": "Tl6967"
 }, 
 "otu193756": {
+"@label": "Phomopsis sp FAU453", 
 "^ot:originalLabel": "Phomopsis sp FAU453", 
-"^ot:ottId": 712313, 
-"^ot:ottTaxonName": "Phomopsis", 
 "^ot:treebaseOTUId": "Tl6968"
 }, 
 "otu193757": {
+"@label": "Phomopsis sp FAU572", 
 "^ot:originalLabel": "Phomopsis sp FAU572", 
-"^ot:ottId": 712313, 
-"^ot:ottTaxonName": "Phomopsis", 
 "^ot:treebaseOTUId": "Tl6969"
 }, 
 "otu193758": {
+"@label": "Phomopsis sp FAU532", 
 "^ot:originalLabel": "Phomopsis sp FAU532", 
-"^ot:ottId": 712313, 
-"^ot:ottTaxonName": "Phomopsis", 
 "^ot:treebaseOTUId": "Tl6970"
 }, 
 "otu193759": {
+"@label": "Diaporthe phaseolorum ST-2", 
 "^ot:originalLabel": "Diaporthe phaseolorum ST-2", 
-"^ot:ottId": 737678, 
-"^ot:ottTaxonName": "Diaporthe phaseolorum", 
 "^ot:treebaseOTUId": "Tl6971"
 }, 
 "otu193760": {
+"@label": "Diaporthe", 
 "^ot:originalLabel": "Diaporthe sp FAU458", 
 "^ot:ottId": 737681, 
 "^ot:ottTaxonName": "Diaporthe", 
 "^ot:treebaseOTUId": "Tl6972"
 }, 
 "otu193761": {
+"@label": "Phomopsis sp FAU578", 
 "^ot:originalLabel": "Phomopsis sp FAU578", 
-"^ot:ottId": 712313, 
-"^ot:ottTaxonName": "Phomopsis", 
 "^ot:treebaseOTUId": "Tl6973"
 }, 
 "otu193762": {
+"@label": "Phomopsis sp FAU445", 
 "^ot:originalLabel": "Phomopsis sp FAU445", 
-"^ot:ottId": 712313, 
-"^ot:ottTaxonName": "Phomopsis", 
 "^ot:treebaseOTUId": "Tl6974"
 }, 
 "otu193763": {
+"@label": "Phomopsis sp FAU1053", 
 "^ot:originalLabel": "Phomopsis sp FAU1053", 
-"^ot:ottId": 712313, 
-"^ot:ottTaxonName": "Phomopsis", 
 "^ot:treebaseOTUId": "Tl6975"
 }, 
 "otu193764": {
+"@label": "Phomopsis sp FAU446", 
 "^ot:originalLabel": "Phomopsis sp FAU446", 
-"^ot:ottId": 712313, 
-"^ot:ottTaxonName": "Phomopsis", 
 "^ot:treebaseOTUId": "Tl6976"
 }, 
 "otu193765": {
+"@label": "Diaporthe", 
 "^ot:originalLabel": "Diaporthe sp 83-377-2", 
 "^ot:ottId": 737681, 
 "^ot:ottTaxonName": "Diaporthe", 
 "^ot:treebaseOTUId": "Tl6977"
 }, 
 "otu193766": {
+"@label": "Diaporthe phaseolorum ST-3", 
 "^ot:originalLabel": "Diaporthe phaseolorum ST-3", 
-"^ot:ottId": 737678, 
-"^ot:ottTaxonName": "Diaporthe phaseolorum", 
 "^ot:treebaseOTUId": "Tl6979"
 }, 
 "otu193767": {
+"@label": "Phomopsis amygdali FAU1052", 
 "^ot:originalLabel": "Phomopsis amygdali FAU1052", 
-"^ot:ottId": 720670, 
-"^ot:ottTaxonName": "Diaporthe amygdali", 
 "^ot:treebaseOTUId": "Tl6980"
 }, 
 "otu193768": {
+"@label": "Diaporthe phaseolorum SW93-13", 
 "^ot:originalLabel": "Diaporthe phaseolorum SW93-13", 
-"^ot:ottId": 737678, 
-"^ot:ottTaxonName": "Diaporthe phaseolorum", 
 "^ot:treebaseOTUId": "Tl6981"
 }, 
 "otu193769": {
+"@label": "Phomopsis sp FAU537", 
 "^ot:originalLabel": "Phomopsis sp FAU537", 
-"^ot:ottId": 712313, 
-"^ot:ottTaxonName": "Phomopsis", 
 "^ot:treebaseOTUId": "Tl6982"
 }, 
 "otu193770": {
+"@label": "Phomopsis sp FAU624", 
 "^ot:originalLabel": "Phomopsis sp FAU624", 
-"^ot:ottId": 712313, 
-"^ot:ottTaxonName": "Phomopsis", 
 "^ot:treebaseOTUId": "Tl6983"
 }, 
 "otu193771": {
+"@label": "Phomopsis sp FAU500", 
 "^ot:originalLabel": "Phomopsis sp FAU500", 
-"^ot:ottId": 712313, 
-"^ot:ottTaxonName": "Phomopsis", 
 "^ot:treebaseOTUId": "Tl6984"
 }, 
 "otu193772": {
+"@label": "Phomopsis sp FAU529", 
 "^ot:originalLabel": "Phomopsis sp FAU529", 
-"^ot:ottId": 712313, 
-"^ot:ottTaxonName": "Phomopsis", 
 "^ot:treebaseOTUId": "Tl6985"
 }, 
 "otu193773": {
+"@label": "Phomopsis amygdali FAU1005", 
 "^ot:originalLabel": "Phomopsis amygdali FAU1005", 
-"^ot:ottId": 720670, 
-"^ot:ottTaxonName": "Diaporthe amygdali", 
 "^ot:treebaseOTUId": "Tl6986"
 }, 
 "otu193774": {
+"@label": "Phomopsis sp FAU649", 
 "^ot:originalLabel": "Phomopsis sp FAU649", 
-"^ot:ottId": 712313, 
-"^ot:ottTaxonName": "Phomopsis", 
 "^ot:treebaseOTUId": "Tl6987"
 }, 
 "otu193775": {
+"@label": "Phomopsis sp. PS11324 2", 
 "^ot:originalLabel": "Phomopsis sp. PS11324 2", 
-"^ot:ottId": 712313, 
-"^ot:ottTaxonName": "Phomopsis", 
 "^ot:treebaseOTUId": "Tl89918"
 }, 
 "otu193776": {
+"@label": "Phomopsis sp. PS11329 2", 
 "^ot:originalLabel": "Phomopsis sp. PS11329 2", 
-"^ot:ottId": 712313, 
-"^ot:ottTaxonName": "Phomopsis", 
 "^ot:treebaseOTUId": "Tl89919"
 }, 
 "otu193777": {
+"@label": "Phomopsis sp. A1", 
 "^ot:originalLabel": "Phomopsis sp. A1", 
-"^ot:ottId": 712313, 
-"^ot:ottTaxonName": "Phomopsis", 
 "^ot:treebaseOTUId": "Tl89920"
 }, 
 "otu193778": {
+"@label": "Diaporthe nomurai", 
 "^ot:originalLabel": "Diaporthe nomurai", 
 "^ot:ottId": 506380, 
 "^ot:ottTaxonName": "Diaporthe nomurai", 
 "^ot:treebaseOTUId": "Tl89921"
 }, 
 "otu193779": {
+"@label": "Phomopsis sp. 980811-14 AB017717", 
 "^ot:originalLabel": "Phomopsis sp. 980811-14 AB017717", 
-"^ot:ottId": 712313, 
-"^ot:ottTaxonName": "Phomopsis", 
 "^ot:treebaseOTUId": "Tl89922"
 }, 
 "otu193780": {
+"@label": "Phomopsis sp. PS11347 2", 
 "^ot:originalLabel": "Phomopsis sp. PS11347 2", 
-"^ot:ottId": 712313, 
-"^ot:ottTaxonName": "Phomopsis", 
 "^ot:treebaseOTUId": "Tl89923"
 }, 
 "otu193781": {
+"@label": "Phomopsis ampelina", 
 "^ot:originalLabel": "Phomopsis sp. taxon 2 strain STE-U2646 AF230752", 
-"^ot:ottId": 712313, 
-"^ot:ottTaxonName": "Phomopsis", 
+"^ot:ottId": 3731365, 
+"^ot:ottTaxonName": "Phomopsis ampelina", 
 "^ot:treebaseOTUId": "Tl89924"
 }, 
 "otu193782": {
+"@label": "Phomopsis sp. 227-98", 
 "^ot:originalLabel": "Phomopsis sp. 227-98", 
-"^ot:ottId": 712313, 
-"^ot:ottTaxonName": "Phomopsis", 
 "^ot:treebaseOTUId": "Tl89925"
 }, 
 "otu193783": {
+"@label": "Phomopsis sp. strain FAU 1053 AF103000", 
 "^ot:originalLabel": "Phomopsis sp. strain FAU 1053 AF103000", 
-"^ot:ottId": 712313, 
-"^ot:ottTaxonName": "Phomopsis", 
 "^ot:treebaseOTUId": "Tl89926"
 }, 
 "otu193784": {
+"@label": "Phomopsis ampelina", 
 "^ot:originalLabel": "Phomopsis sp. taxon 2 strain STE-U2648 AF230753", 
-"^ot:ottId": 712313, 
-"^ot:ottTaxonName": "Phomopsis", 
+"^ot:ottId": 3731365, 
+"^ot:ottTaxonName": "Phomopsis ampelina", 
 "^ot:treebaseOTUId": "Tl89927"
 }, 
 "otu193785": {
+"@label": "Diaporthe citri AB017732", 
 "^ot:originalLabel": "Diaporthe citri AB017732", 
-"^ot:ottId": 855276, 
-"^ot:ottTaxonName": "Diaporthe citri", 
 "^ot:treebaseOTUId": "Tl89928"
 }, 
 "otu193786": {
+"@label": "Phomopsis sp. No.2-1 AB017721", 
 "^ot:originalLabel": "Phomopsis sp. No.2-1 AB017721", 
-"^ot:ottId": 712313, 
-"^ot:ottTaxonName": "Phomopsis", 
 "^ot:treebaseOTUId": "Tl89929"
 }, 
 "otu193787": {
+"@label": "Phomopsis amygdali AB017738", 
 "^ot:originalLabel": "Phomopsis amygdali AB017738", 
-"^ot:ottId": 720670, 
-"^ot:ottTaxonName": "Diaporthe amygdali", 
 "^ot:treebaseOTUId": "Tl89930"
 }, 
 "otu193788": {
+"@label": "Diaporthe tanakae", 
 "^ot:originalLabel": "Diaporthe tanakae", 
 "^ot:ottId": 855275, 
 "^ot:ottTaxonName": "Diaporthe tanakae", 
 "^ot:treebaseOTUId": "Tl89931"
 }, 
 "otu193789": {
+"@label": "Phomopsis longicolla strain Ak76 AF000206", 
 "^ot:originalLabel": "Phomopsis longicolla strain Ak76 AF000206", 
-"^ot:ottId": 931953, 
-"^ot:ottTaxonName": "Diaporthe longicolla", 
 "^ot:treebaseOTUId": "Tl89932"
 }, 
 "otu193790": {
+"@label": "Phomopsis sp. PS11335 2", 
 "^ot:originalLabel": "Phomopsis sp. PS11335 2", 
-"^ot:ottId": 712313, 
-"^ot:ottTaxonName": "Phomopsis", 
 "^ot:treebaseOTUId": "Tl89933"
 }, 
 "otu193791": {
+"@label": "Phomopsis asparagi", 
 "^ot:originalLabel": "Phomopsis asparagi", 
-"^ot:ottId": 855280, 
-"^ot:ottTaxonName": "Phomopsis asparagi", 
 "^ot:treebaseOTUId": "Tl89934"
 }, 
 "otu193792": {
+"@label": "Phomopsis sp. I3", 
 "^ot:originalLabel": "Phomopsis sp. I3", 
-"^ot:ottId": 712313, 
-"^ot:ottTaxonName": "Phomopsis", 
 "^ot:treebaseOTUId": "Tl89935"
 }, 
 "otu193793": {
+"@label": "Phomopsis sp. PS11353 2", 
 "^ot:originalLabel": "Phomopsis sp. PS11353 2", 
-"^ot:ottId": 712313, 
-"^ot:ottTaxonName": "Phomopsis", 
 "^ot:treebaseOTUId": "Tl89936"
 }, 
 "otu193794": {
+"@label": "Phomopsis sp. PS11322 2", 
 "^ot:originalLabel": "Phomopsis sp. PS11322 2", 
-"^ot:ottId": 712313, 
-"^ot:ottTaxonName": "Phomopsis", 
 "^ot:treebaseOTUId": "Tl89937"
 }, 
 "otu193795": {
+"@label": "Phomopsis sp. PS11356 2", 
 "^ot:originalLabel": "Phomopsis sp. PS11356 2", 
-"^ot:ottId": 712313, 
-"^ot:ottTaxonName": "Phomopsis", 
 "^ot:treebaseOTUId": "Tl89938"
 }, 
 "otu193796": {
+"@label": "Diaporthe caulivora", 
 "^ot:originalLabel": "Diaporthe caulivola strain 720 AF000563", 
 "^ot:ottId": 123321, 
 "^ot:ottTaxonName": "Diaporthe caulivora", 
 "^ot:treebaseOTUId": "Tl89939"
 }, 
 "otu193797": {
+"@label": "Diaporthe phaseolorum strain 473-4 AF001021", 
 "^ot:originalLabel": "Diaporthe phaseolorum strain 473-4 AF001021", 
-"^ot:ottId": 737678, 
-"^ot:ottTaxonName": "Diaporthe phaseolorum", 
 "^ot:treebaseOTUId": "Tl89940"
 }, 
 "otu193798": {
+"@label": "Phomopsis longicolla strain 628 AF000208", 
 "^ot:originalLabel": "Phomopsis longicolla strain 628 AF000208", 
-"^ot:ottId": 931953, 
-"^ot:ottTaxonName": "Diaporthe longicolla", 
 "^ot:treebaseOTUId": "Tl89941"
 }, 
 "otu193799": {
+"@label": "Phomopsis sp. PS11317 2", 
 "^ot:originalLabel": "Phomopsis sp. PS11317 2", 
-"^ot:ottId": 712313, 
-"^ot:ottTaxonName": "Phomopsis", 
 "^ot:treebaseOTUId": "Tl89942"
 }, 
 "otu193800": {
+"@label": "Diaporthe australafricana", 
 "^ot:originalLabel": "Phomopsis sp. taxon 1 strain STE-U2676 AF230760", 
-"^ot:ottId": 712313, 
-"^ot:ottTaxonName": "Phomopsis", 
+"^ot:ottId": 292312, 
+"^ot:ottTaxonName": "Diaporthe australafricana", 
 "^ot:treebaseOTUId": "Tl89943"
 }, 
 "otu193801": {
+"@label": "Phomopsis sp. MCK5 strain STE-U2674 AF230761", 
 "^ot:originalLabel": "Phomopsis sp. MCK5 strain STE-U2674 AF230761", 
-"^ot:ottId": 712313, 
-"^ot:ottTaxonName": "Phomopsis", 
 "^ot:treebaseOTUId": "Tl89944"
 }, 
 "otu193802": {
+"@label": "Phomopsis sp. PS11337 2", 
 "^ot:originalLabel": "Phomopsis sp. PS11337 2", 
-"^ot:ottId": 712313, 
-"^ot:ottTaxonName": "Phomopsis", 
 "^ot:treebaseOTUId": "Tl89945"
 }, 
 "otu193803": {
+"@label": "Phomopsis sp. GAP08 PSU91617", 
 "^ot:originalLabel": "Phomopsis sp. GAP08 PSU91617", 
-"^ot:ottId": 712313, 
-"^ot:ottTaxonName": "Phomopsis", 
 "^ot:treebaseOTUId": "Tl89946"
 }, 
 "otu193804": {
+"@label": "Phomopsis amygdali strain FAU 1070 AF102997", 
 "^ot:originalLabel": "Phomopsis amygdali strain FAU 1070 AF102997", 
-"^ot:ottId": 720670, 
-"^ot:ottTaxonName": "Diaporthe amygdali", 
 "^ot:treebaseOTUId": "Tl89947"
 }, 
 "otu193805": {
+"@label": "Phomopsis sp. PS11328 2", 
 "^ot:originalLabel": "Phomopsis sp. PS11328 2", 
-"^ot:ottId": 712313, 
-"^ot:ottTaxonName": "Phomopsis", 
 "^ot:treebaseOTUId": "Tl89948"
 }, 
 "otu193806": {
+"@label": "Diaporthe phaseolorum strain stc-3 AF001016", 
 "^ot:originalLabel": "Diaporthe phaseolorum strain stc-3 AF001016", 
-"^ot:ottId": 737678, 
-"^ot:ottTaxonName": "Diaporthe phaseolorum", 
 "^ot:treebaseOTUId": "Tl89949"
 }, 
 "otu193807": {
+"@label": "Phomopsis longicolla 113-1AF000207", 
 "^ot:originalLabel": "Phomopsis longicolla 113-1AF000207", 
-"^ot:ottId": 931953, 
-"^ot:ottTaxonName": "Diaporthe longicolla", 
 "^ot:treebaseOTUId": "Tl89950"
 }, 
 "otu193808": {
+"@label": "Phomopsis sp. PS11346 2", 
 "^ot:originalLabel": "Phomopsis sp. PS11346 2", 
-"^ot:ottId": 712313, 
-"^ot:ottTaxonName": "Phomopsis", 
 "^ot:treebaseOTUId": "Tl89951"
 }, 
 "otu193809": {
+"@label": "Phomopsis sp. PS11351 2", 
 "^ot:originalLabel": "Phomopsis sp. PS11351 2", 
-"^ot:ottId": 712313, 
-"^ot:ottTaxonName": "Phomopsis", 
 "^ot:treebaseOTUId": "Tl89952"
 }, 
 "otu193810": {
+"@label": "Phomopsis sp. PS11359 2", 
 "^ot:originalLabel": "Phomopsis sp. PS11359 2", 
-"^ot:ottId": 712313, 
-"^ot:ottTaxonName": "Phomopsis", 
 "^ot:treebaseOTUId": "Tl89953"
 }, 
 "otu193811": {
+"@label": "Phomopsis sp. taxon 3 strain STE-U2668 AF230762", 
 "^ot:originalLabel": "Phomopsis sp. taxon 3 strain STE-U2668 AF230762", 
-"^ot:ottId": 712313, 
-"^ot:ottTaxonName": "Phomopsis", 
 "^ot:treebaseOTUId": "Tl89954"
 }, 
 "otu193812": {
+"@label": "Phomopsis longicolla strain Ho101 AF000211", 
 "^ot:originalLabel": "Phomopsis longicolla strain Ho101 AF000211", 
-"^ot:ottId": 931953, 
-"^ot:ottTaxonName": "Diaporthe longicolla", 
 "^ot:treebaseOTUId": "Tl89955"
 }, 
 "otu193813": {
+"@label": "Phomopsis oblonga AB017729", 
 "^ot:originalLabel": "Phomopsis oblonga AB017729", 
-"^ot:ottId": 1006926, 
-"^ot:ottTaxonName": "Phomopsis oblonga", 
 "^ot:treebaseOTUId": "Tl89956"
 }, 
 "otu193814": {
+"@label": "Phomopsis amygdali strain FAU 1052 AF102998", 
 "^ot:originalLabel": "Phomopsis amygdali strain FAU 1052 AF102998", 
-"^ot:ottId": 720670, 
-"^ot:ottTaxonName": "Diaporthe amygdali", 
 "^ot:treebaseOTUId": "Tl89957"
 }, 
 "otu193815": {
+"@label": "Phomopsis amygdali strain FAU 1072 AF102994", 
 "^ot:originalLabel": "Phomopsis amygdali strain FAU 1072 AF102994", 
-"^ot:ottId": 720670, 
-"^ot:ottTaxonName": "Diaporthe amygdali", 
 "^ot:treebaseOTUId": "Tl89958"
 }, 
 "otu193816": {
+"@label": "Phomopsis sp. PS11338 2", 
 "^ot:originalLabel": "Phomopsis sp. PS11338 2", 
-"^ot:ottId": 712313, 
-"^ot:ottTaxonName": "Phomopsis", 
 "^ot:treebaseOTUId": "Tl89959"
 }, 
 "otu193817": {
+"@label": "Phomopsis sp. PS11333 2", 
 "^ot:originalLabel": "Phomopsis sp. PS11333 2", 
-"^ot:ottId": 712313, 
-"^ot:ottTaxonName": "Phomopsis", 
 "^ot:treebaseOTUId": "Tl89960"
 }, 
 "otu193818": {
+"@label": "Phomopsis ampelina", 
 "^ot:originalLabel": "Phomopsis sp. taxon 2 strain STE-U2662 AF230763", 
-"^ot:ottId": 712313, 
-"^ot:ottTaxonName": "Phomopsis", 
+"^ot:ottId": 3731365, 
+"^ot:ottTaxonName": "Phomopsis ampelina", 
 "^ot:treebaseOTUId": "Tl89961"
 }, 
 "otu193819": {
+"@label": "Phomopsis amygdali strain STE-U2632 AF230755", 
 "^ot:originalLabel": "Phomopsis amygdali strain STE-U2632 AF230755", 
-"^ot:ottId": 720670, 
-"^ot:ottTaxonName": "Diaporthe amygdali", 
 "^ot:treebaseOTUId": "Tl89962"
 }, 
 "otu193820": {
+"@label": "Phomopsis sp. PS11327 2", 
 "^ot:originalLabel": "Phomopsis sp. PS11327 2", 
-"^ot:ottId": 712313, 
-"^ot:ottTaxonName": "Phomopsis", 
 "^ot:treebaseOTUId": "Tl89963"
 }, 
 "otu193821": {
+"@label": "Phomopsis sp. PS11330 2", 
 "^ot:originalLabel": "Phomopsis sp. PS11330 2", 
-"^ot:ottId": 712313, 
-"^ot:ottTaxonName": "Phomopsis", 
 "^ot:treebaseOTUId": "Tl89964"
 }, 
 "otu193822": {
+"@label": "Phomopsis sp. PS11350 2", 
 "^ot:originalLabel": "Phomopsis sp. PS11350 2", 
-"^ot:ottId": 712313, 
-"^ot:ottTaxonName": "Phomopsis", 
 "^ot:treebaseOTUId": "Tl89965"
 }, 
 "otu193823": {
+"@label": "Phomopsis longicolla AF132796", 
 "^ot:originalLabel": "Phomopsis longicolla AF132796", 
-"^ot:ottId": 931953, 
-"^ot:ottTaxonName": "Diaporthe longicolla", 
 "^ot:treebaseOTUId": "Tl89966"
 }, 
 "otu193824": {
+"@label": "Phomopsis sp. taxon 3 strain STE-U2654 AF230743", 
 "^ot:originalLabel": "Phomopsis sp. taxon 3 strain STE-U2654 AF230743", 
-"^ot:ottId": 712313, 
-"^ot:ottTaxonName": "Phomopsis", 
 "^ot:treebaseOTUId": "Tl89967"
 }, 
 "otu193825": {
+"@label": "Phomopsis ampelina", 
 "^ot:originalLabel": "Phomopsis sp. taxon 2 strain STE-U2641 AF230754", 
-"^ot:ottId": 712313, 
-"^ot:ottTaxonName": "Phomopsis", 
+"^ot:ottId": 3731365, 
+"^ot:ottTaxonName": "Phomopsis ampelina", 
 "^ot:treebaseOTUId": "Tl89968"
 }, 
 "otu193826": {
+"@label": "Phomopsis ampelina", 
 "^ot:originalLabel": "Phomopsis sp. taxon 2 strain STE-U2671 AF230747", 
-"^ot:ottId": 712313, 
-"^ot:ottTaxonName": "Phomopsis", 
+"^ot:ottId": 3731365, 
+"^ot:ottTaxonName": "Phomopsis ampelina", 
 "^ot:treebaseOTUId": "Tl89969"
 }, 
 "otu193827": {
+"@label": "Phomopsis sp. PS11320 2", 
 "^ot:originalLabel": "Phomopsis sp. PS11320 2", 
-"^ot:ottId": 712313, 
-"^ot:ottTaxonName": "Phomopsis", 
 "^ot:treebaseOTUId": "Tl89970"
 }, 
 "otu193828": {
+"@label": "Diaporthe phaseolorum strain ID102 AF001024", 
 "^ot:originalLabel": "Diaporthe phaseolorum strain ID102 AF001024", 
-"^ot:ottId": 737678, 
-"^ot:ottTaxonName": "Diaporthe phaseolorum", 
 "^ot:treebaseOTUId": "Tl89971"
 }, 
 "otu193829": {
+"@label": "Phomopsis sp. taxon 3 strain STE-U2664 AF230750", 
 "^ot:originalLabel": "Phomopsis sp. taxon 3 strain STE-U2664 AF230750", 
-"^ot:ottId": 712313, 
-"^ot:ottTaxonName": "Phomopsis", 
 "^ot:treebaseOTUId": "Tl89972"
 }, 
 "otu193830": {
+"@label": "Phomopsis sp. PS11344 2", 
 "^ot:originalLabel": "Phomopsis sp. PS11344 2", 
-"^ot:ottId": 712313, 
-"^ot:ottTaxonName": "Phomopsis", 
 "^ot:treebaseOTUId": "Tl89973"
 }, 
 "otu193831": {
+"@label": "Diaporthe kyushuensis", 
 "^ot:originalLabel": "Phomopsis vitimegaspora strain STE-U2675 AF230749", 
 "^ot:ottId": 855584, 
 "^ot:ottTaxonName": "Diaporthe kyushuensis", 
 "^ot:treebaseOTUId": "Tl89974"
 }, 
 "otu193832": {
+"@label": "Phomopsis sp. taxon 3 strain STE-U2656 AF230769", 
 "^ot:originalLabel": "Phomopsis sp. taxon 3 strain STE-U2656 AF230769", 
-"^ot:ottId": 712313, 
-"^ot:ottTaxonName": "Phomopsis", 
 "^ot:treebaseOTUId": "Tl89975"
 }, 
 "otu193833": {
+"@label": "Phomopsis sp. 10-99", 
 "^ot:originalLabel": "Phomopsis sp. 10-99", 
-"^ot:ottId": 712313, 
-"^ot:ottTaxonName": "Phomopsis", 
 "^ot:treebaseOTUId": "Tl89976"
 }, 
 "otu193834": {
+"@label": "Phomopsis sp. 21-99", 
 "^ot:originalLabel": "Phomopsis sp. 21-99", 
-"^ot:ottId": 712313, 
-"^ot:ottTaxonName": "Phomopsis", 
 "^ot:treebaseOTUId": "Tl89977"
 }, 
 "otu193835": {
+"@label": "Phomopsis ampelina", 
 "^ot:originalLabel": "Phomopsis sp. taxon 2 strain STE-U2666 AF230758", 
-"^ot:ottId": 712313, 
-"^ot:ottTaxonName": "Phomopsis", 
+"^ot:ottId": 3731365, 
+"^ot:ottTaxonName": "Phomopsis ampelina", 
 "^ot:treebaseOTUId": "Tl89978"
 }, 
 "otu193836": {
+"@label": "Phomopsis sp. PS11343 2", 
 "^ot:originalLabel": "Phomopsis sp. PS11343 2", 
-"^ot:ottId": 712313, 
-"^ot:ottTaxonName": "Phomopsis", 
 "^ot:treebaseOTUId": "Tl89979"
 }, 
 "otu193837": {
+"@label": "Phomopsis sp. PS11354 2", 
 "^ot:originalLabel": "Phomopsis sp. PS11354 2", 
-"^ot:ottId": 712313, 
-"^ot:ottTaxonName": "Phomopsis", 
 "^ot:treebaseOTUId": "Tl89980"
 }, 
 "otu193838": {
+"@label": "Diaporthe meridionalis", 
 "^ot:originalLabel": "Diaporthe meridionalis strain Pmsp1 AF000565", 
 "^ot:ottId": 730425, 
 "^ot:ottTaxonName": "Diaporthe meridionalis", 
 "^ot:treebaseOTUId": "Tl89981"
 }, 
 "otu193839": {
+"@label": "Phomopsis sp. P-JP-18 AB017715", 
 "^ot:originalLabel": "Phomopsis sp. P-JP-18 AB017715", 
-"^ot:ottId": 712313, 
-"^ot:ottTaxonName": "Phomopsis", 
 "^ot:treebaseOTUId": "Tl89982"
 }, 
 "otu193840": {
+"@label": "Phomopsis amygdali AF103001", 
 "^ot:originalLabel": "Phomopsis amygdali AF103001", 
-"^ot:ottId": 720670, 
-"^ot:ottTaxonName": "Diaporthe amygdali", 
 "^ot:treebaseOTUId": "Tl89983"
 }, 
 "otu193841": {
+"@label": "Diaporthe meridionalis", 
 "^ot:originalLabel": "Diaporthe meridionalis strain 90-48 AF000564", 
 "^ot:ottId": 730425, 
 "^ot:ottTaxonName": "Diaporthe meridionalis", 
 "^ot:treebaseOTUId": "Tl89984"
 }, 
 "otu193842": {
+"@label": "Diaporthe australafricana", 
 "^ot:originalLabel": "Phomopsis sp. taxon 1 strain STE-U2655 AF230744", 
-"^ot:ottId": 712313, 
-"^ot:ottTaxonName": "Phomopsis", 
+"^ot:ottId": 292312, 
+"^ot:ottTaxonName": "Diaporthe australafricana", 
 "^ot:treebaseOTUId": "Tl89985"
 }, 
 "otu193843": {
+"@label": "Phomopsis ampelina", 
 "^ot:originalLabel": "Phomopsis sp. taxon 2 strain STE-U2672 AF230748", 
-"^ot:ottId": 712313, 
-"^ot:ottTaxonName": "Phomopsis", 
+"^ot:ottId": 3731365, 
+"^ot:ottTaxonName": "Phomopsis ampelina", 
 "^ot:treebaseOTUId": "Tl89986"
 }, 
 "otu193844": {
+"@label": "Phomopsis sp. PS11362 2", 
 "^ot:originalLabel": "Phomopsis sp. PS11362 2", 
-"^ot:ottId": 712313, 
-"^ot:ottTaxonName": "Phomopsis", 
 "^ot:treebaseOTUId": "Tl89987"
 }, 
 "otu193845": {
+"@label": "Diaporthe phaseolorum strain AK25A AF001025", 
 "^ot:originalLabel": "Diaporthe phaseolorum strain AK25A AF001025", 
-"^ot:ottId": 737678, 
-"^ot:ottTaxonName": "Diaporthe phaseolorum", 
 "^ot:treebaseOTUId": "Tl89988"
 }, 
 "otu193846": {
+"@label": "Phomopsis ampelina", 
 "^ot:originalLabel": "Phomopsis sp. taxon 2 strain STE-U2638 AF230764", 
-"^ot:ottId": 712313, 
-"^ot:ottTaxonName": "Phomopsis", 
+"^ot:ottId": 3731365, 
+"^ot:ottTaxonName": "Phomopsis ampelina", 
 "^ot:treebaseOTUId": "Tl89989"
 }, 
 "otu193847": {
+"@label": "Phomopsis sp. PS11325 2", 
 "^ot:originalLabel": "Phomopsis sp. PS11325 2", 
-"^ot:ottId": 712313, 
-"^ot:ottTaxonName": "Phomopsis", 
 "^ot:treebaseOTUId": "Tl89990"
 }, 
 "otu193848": {
+"@label": "Diaporthe phaseolorum strain sw-93-11 AF001027", 
 "^ot:originalLabel": "Diaporthe phaseolorum strain sw-93-11 AF001027", 
-"^ot:ottId": 737678, 
-"^ot:ottTaxonName": "Diaporthe phaseolorum", 
 "^ot:treebaseOTUId": "Tl89991"
 }, 
 "otu193849": {
+"@label": "Diaporthe caulivora", 
 "^ot:originalLabel": "Diaporthe phaseolorum var. caulivora strain 95-vs-43 AF000212", 
-"^ot:ottId": 737678, 
-"^ot:ottTaxonName": "Diaporthe phaseolorum", 
+"^ot:ottId": 123321, 
+"^ot:ottTaxonName": "Diaporthe caulivora", 
 "^ot:treebaseOTUId": "Tl89992"
 }, 
 "otu193850": {
+"@label": "Diaporthe perniciosa", 
 "^ot:originalLabel": "Diaporthe perniciosa", 
 "^ot:ottId": 855283, 
 "^ot:ottTaxonName": "Diaporthe perniciosa", 
 "^ot:treebaseOTUId": "Tl89993"
 }, 
 "otu193851": {
+"@label": "Diaporthe phaseolorum strain 793-a AF001014", 
 "^ot:originalLabel": "Diaporthe phaseolorum strain 793-a AF001014", 
-"^ot:ottId": 737678, 
-"^ot:ottTaxonName": "Diaporthe phaseolorum", 
 "^ot:treebaseOTUId": "Tl89994"
 }, 
 "otu193852": {
+"@label": "Diaporthe phaseolorum strain PR Dps AF001023", 
 "^ot:originalLabel": "Diaporthe phaseolorum strain PR Dps AF001023", 
-"^ot:ottId": 737678, 
-"^ot:ottTaxonName": "Diaporthe phaseolorum", 
 "^ot:treebaseOTUId": "Tl89995"
 }, 
 "otu193853": {
+"@label": "Phomopsis sp. taxon 3 strain STE-U2661 AF230759", 
 "^ot:originalLabel": "Phomopsis sp. taxon 3 strain STE-U2661 AF230759", 
-"^ot:ottId": 712313, 
-"^ot:ottTaxonName": "Phomopsis", 
 "^ot:treebaseOTUId": "Tl89996"
 }, 
 "otu193854": {
+"@label": "Phomopsis sp. 318865", 
 "^ot:originalLabel": "Phomopsis sp. 318865", 
-"^ot:ottId": 712313, 
-"^ot:ottTaxonName": "Phomopsis", 
 "^ot:treebaseOTUId": "Tl89997"
 }, 
 "otu193855": {
+"@label": "Diaporthe kyushuensis", 
 "^ot:originalLabel": "Diaporthe kyushuensis", 
 "^ot:ottId": 855584, 
 "^ot:ottTaxonName": "Diaporthe kyushuensis", 
 "^ot:treebaseOTUId": "Tl89998"
 }, 
 "otu193856": {
+"@label": "Phomopsis sp. PS11339 2", 
 "^ot:originalLabel": "Phomopsis sp. PS11339 2", 
-"^ot:ottId": 712313, 
-"^ot:ottTaxonName": "Phomopsis", 
 "^ot:treebaseOTUId": "Tl89999"
 }, 
 "otu193857": {
+"@label": "Phomopsis sp. PS11315 2", 
 "^ot:originalLabel": "Phomopsis sp. PS11315 2", 
-"^ot:ottId": 712313, 
-"^ot:ottTaxonName": "Phomopsis", 
 "^ot:treebaseOTUId": "Tl90000"
 }, 
 "otu193858": {
+"@label": "Phomopsis sp. No.1-1 AB017718", 
 "^ot:originalLabel": "Phomopsis sp. No.1-1 AB017718", 
-"^ot:ottId": 712313, 
-"^ot:ottTaxonName": "Phomopsis", 
 "^ot:treebaseOTUId": "Tl90001"
 }, 
 "otu193859": {
+"@label": "Phomopsis sp. PS11321 2", 
 "^ot:originalLabel": "Phomopsis sp. PS11321 2", 
-"^ot:ottId": 712313, 
-"^ot:ottTaxonName": "Phomopsis", 
 "^ot:treebaseOTUId": "Tl90002"
 }, 
 "otu193860": {
+"@label": "Diaporthe meridionalis", 
 "^ot:originalLabel": "Diaporthe meridionalis strain stc-2 AF000566", 
 "^ot:ottId": 730425, 
 "^ot:ottTaxonName": "Diaporthe meridionalis", 
 "^ot:treebaseOTUId": "Tl90003"
 }, 
 "otu193861": {
+"@label": "Phomopsis sp. PS11355 2", 
 "^ot:originalLabel": "Phomopsis sp. PS11355 2", 
-"^ot:ottId": 712313, 
-"^ot:ottTaxonName": "Phomopsis", 
 "^ot:treebaseOTUId": "Tl90004"
 }, 
 "otu193862": {
+"@label": "Phomopsis ampelina", 
 "^ot:originalLabel": "Phomopsis viticola taxon 1 strain STE-U2677 AF230765", 
 "^ot:ottId": 3731365, 
-"^ot:ottTaxonName": "Diaporthe ampelina", 
+"^ot:ottTaxonName": "Phomopsis ampelina", 
 "^ot:treebaseOTUId": "Tl90005"
 }, 
 "otu193863": {
+"@label": "Phomopsis sp. P-Pt-36 AB017719", 
 "^ot:originalLabel": "Phomopsis sp. P-Pt-36 AB017719", 
-"^ot:ottId": 712313, 
-"^ot:ottTaxonName": "Phomopsis", 
 "^ot:treebaseOTUId": "Tl90006"
 }, 
 "otu193864": {
+"@label": "Phomopsis sp. GLB06 PSU86406", 
 "^ot:originalLabel": "Phomopsis sp. GLB06 PSU86406", 
-"^ot:ottId": 712313, 
-"^ot:ottTaxonName": "Phomopsis", 
 "^ot:treebaseOTUId": "Tl90007"
 }, 
 "otu193865": {
+"@label": "Phomopsis sp. taxon 3 strain STE-U2659 AF230757", 
 "^ot:originalLabel": "Phomopsis sp. taxon 3 strain STE-U2659 AF230757", 
-"^ot:ottId": 712313, 
-"^ot:ottTaxonName": "Phomopsis", 
 "^ot:treebaseOTUId": "Tl90008"
 }, 
 "otu193866": {
+"@label": "Phomopsis sp. P-JP-24 AB017716", 
 "^ot:originalLabel": "Phomopsis sp. P-JP-24 AB017716", 
-"^ot:ottId": 712313, 
-"^ot:ottTaxonName": "Phomopsis", 
 "^ot:treebaseOTUId": "Tl90009"
 }, 
 "otu193867": {
+"@label": "Phomopsis sp. 318861", 
 "^ot:originalLabel": "Phomopsis sp. 318861", 
-"^ot:ottId": 712313, 
-"^ot:ottTaxonName": "Phomopsis", 
 "^ot:treebaseOTUId": "Tl90010"
 }, 
 "otu193868": {
+"@label": "Diaporthe caulivora", 
 "^ot:originalLabel": "Diaporthe caulivola strain 713 AF000567", 
 "^ot:ottId": 123321, 
 "^ot:ottTaxonName": "Diaporthe caulivora", 
 "^ot:treebaseOTUId": "Tl90011"
 }, 
 "otu193869": {
+"@label": "Phomopsis sp. MCK6 strain STE-U2680 AF230766", 
 "^ot:originalLabel": "Phomopsis sp. MCK6 strain STE-U2680 AF230766", 
-"^ot:ottId": 712313, 
-"^ot:ottTaxonName": "Phomopsis", 
 "^ot:treebaseOTUId": "Tl90012"
 }, 
 "otu193870": {
+"@label": "Phomopsis longicolla strain 628II AF000210", 
 "^ot:originalLabel": "Phomopsis longicolla strain 628II AF000210", 
-"^ot:ottId": 931953, 
-"^ot:ottTaxonName": "Diaporthe longicolla", 
 "^ot:treebaseOTUId": "Tl90013"
 }, 
 "otu193871": {
+"@label": "Phomopsis sp. PS11323 2", 
 "^ot:originalLabel": "Phomopsis sp. PS11323 2", 
-"^ot:ottId": 712313, 
-"^ot:ottTaxonName": "Phomopsis", 
 "^ot:treebaseOTUId": "Tl90014"
 }, 
 "otu193872": {
+"@label": "Phomopsis longicolla strain 3114-3 AF000209", 
 "^ot:originalLabel": "Phomopsis longicolla strain 3114-3 AF000209", 
-"^ot:ottId": 931953, 
-"^ot:ottTaxonName": "Diaporthe longicolla", 
 "^ot:treebaseOTUId": "Tl90015"
 }, 
 "otu193873": {
+"@label": "Diaporthe phaseolorum strain 714-4 AF001028", 
 "^ot:originalLabel": "Diaporthe phaseolorum strain 714-4 AF001028", 
-"^ot:ottId": 737678, 
-"^ot:ottTaxonName": "Diaporthe phaseolorum", 
 "^ot:treebaseOTUId": "Tl90016"
 }, 
 "otu193874": {
+"@label": "Phomopsis sp. P-A-19 AB017728", 
 "^ot:originalLabel": "Phomopsis sp. P-A-19 AB017728", 
-"^ot:ottId": 712313, 
-"^ot:ottTaxonName": "Phomopsis", 
 "^ot:treebaseOTUId": "Tl90017"
 }, 
 "otu193875": {
+"@label": "Phomopsis sp. PS11336 2", 
 "^ot:originalLabel": "Phomopsis sp. PS11336 2", 
-"^ot:ottId": 712313, 
-"^ot:ottTaxonName": "Phomopsis", 
 "^ot:treebaseOTUId": "Tl90018"
 }, 
 "otu193876": {
+"@label": "Phomopsis sp. PS11363 2", 
 "^ot:originalLabel": "Phomopsis sp. PS11363 2", 
-"^ot:ottId": 712313, 
-"^ot:ottTaxonName": "Phomopsis", 
 "^ot:treebaseOTUId": "Tl90019"
 }, 
 "otu193877": {
+"@label": "Phomopsis sp. PS11640 2", 
 "^ot:originalLabel": "Phomopsis sp. PS11640 2", 
-"^ot:ottId": 712313, 
-"^ot:ottTaxonName": "Phomopsis", 
 "^ot:treebaseOTUId": "Tl90020"
 }, 
 "otu193878": {
+"@label": "Phomopsis sp. A2", 
 "^ot:originalLabel": "Phomopsis sp. A2", 
-"^ot:ottId": 712313, 
-"^ot:ottTaxonName": "Phomopsis", 
 "^ot:treebaseOTUId": "Tl90021"
 }, 
 "otu193879": {
+"@label": "Phomopsis sp. PS11340 2", 
 "^ot:originalLabel": "Phomopsis sp. PS11340 2", 
-"^ot:ottId": 712313, 
-"^ot:ottTaxonName": "Phomopsis", 
 "^ot:treebaseOTUId": "Tl90022"
 }, 
 "otu193880": {
+"@label": "Phomopsis ampelina", 
 "^ot:originalLabel": "Phomopsis sp. taxon 2 strain STE-U2642 AF230756", 
-"^ot:ottId": 712313, 
-"^ot:ottTaxonName": "Phomopsis", 
+"^ot:ottId": 3731365, 
+"^ot:ottTaxonName": "Phomopsis ampelina", 
 "^ot:treebaseOTUId": "Tl90023"
 }, 
 "otu193881": {
+"@label": "Phomopsis sp. PS11319 2", 
 "^ot:originalLabel": "Phomopsis sp. PS11319 2", 
-"^ot:ottId": 712313, 
-"^ot:ottTaxonName": "Phomopsis", 
 "^ot:treebaseOTUId": "Tl90024"
 }, 
 "otu193882": {
+"@label": "Phomopsis sp. PS11348 2", 
 "^ot:originalLabel": "Phomopsis sp. PS11348 2", 
-"^ot:ottId": 712313, 
-"^ot:ottTaxonName": "Phomopsis", 
 "^ot:treebaseOTUId": "Tl90025"
 }, 
 "otu193883": {
+"@label": "Phomopsis sp. strain GJS 83-377 AF102999", 
 "^ot:originalLabel": "Phomopsis sp. strain GJS 83-377 AF102999", 
-"^ot:ottId": 712313, 
-"^ot:ottTaxonName": "Phomopsis", 
 "^ot:treebaseOTUId": "Tl90026"
 }, 
 "otu193884": {
+"@label": "Phomopsis oblonga AB017720", 
 "^ot:originalLabel": "Phomopsis oblonga AB017720", 
-"^ot:ottId": 1006926, 
-"^ot:ottTaxonName": "Phomopsis oblonga", 
 "^ot:treebaseOTUId": "Tl90027"
 }, 
 "otu193885": {
+"@label": "Phomopsis sp. PS11357 2", 
 "^ot:originalLabel": "Phomopsis sp. PS11357 2", 
-"^ot:ottId": 712313, 
-"^ot:ottTaxonName": "Phomopsis", 
 "^ot:treebaseOTUId": "Tl90028"
 }, 
 "otu193886": {
+"@label": "Phomopsis sp. PS11361 2", 
 "^ot:originalLabel": "Phomopsis sp. PS11361 2", 
-"^ot:ottId": 712313, 
-"^ot:ottTaxonName": "Phomopsis", 
 "^ot:treebaseOTUId": "Tl90029"
 }, 
 "otu193887": {
+"@label": "Phomopsis sp. PS11314 2", 
 "^ot:originalLabel": "Phomopsis sp. PS11314 2", 
-"^ot:ottId": 712313, 
-"^ot:ottTaxonName": "Phomopsis", 
 "^ot:treebaseOTUId": "Tl90030"
 }, 
 "otu193888": {
+"@label": "Phomopsis sp. PS11349 2", 
 "^ot:originalLabel": "Phomopsis sp. PS11349 2", 
-"^ot:ottId": 712313, 
-"^ot:ottTaxonName": "Phomopsis", 
 "^ot:treebaseOTUId": "Tl90031"
 }, 
 "otu193889": {
+"@label": "Phomopsis sp. PS11326 2", 
 "^ot:originalLabel": "Phomopsis sp. PS11326 2", 
-"^ot:ottId": 712313, 
-"^ot:ottTaxonName": "Phomopsis", 
 "^ot:treebaseOTUId": "Tl90032"
 }, 
 "otu193890": {
+"@label": "Phomopsis ampelina", 
 "^ot:originalLabel": "Phomopsis sp. taxon 2 strain STE-U2660 AF230751", 
-"^ot:ottId": 712313, 
-"^ot:ottTaxonName": "Phomopsis", 
+"^ot:ottId": 3731365, 
+"^ot:ottTaxonName": "Phomopsis ampelina", 
 "^ot:treebaseOTUId": "Tl90033"
 }, 
 "otu193891": {
+"@label": "Phomopsis sp. PS11332 2", 
 "^ot:originalLabel": "Phomopsis sp. PS11332 2", 
-"^ot:ottId": 712313, 
-"^ot:ottTaxonName": "Phomopsis", 
 "^ot:treebaseOTUId": "Tl90034"
 }, 
 "otu193892": {
+"@label": "Phomopsis sp. PS11334 2", 
 "^ot:originalLabel": "Phomopsis sp. PS11334 2", 
-"^ot:ottId": 712313, 
-"^ot:ottTaxonName": "Phomopsis", 
 "^ot:treebaseOTUId": "Tl90035"
 }, 
 "otu193893": {
+"@label": "Phomopsis ampelina", 
 "^ot:originalLabel": "Phomopsis sp. taxon 2 strain STE-U2679 AF230745", 
-"^ot:ottId": 712313, 
-"^ot:ottTaxonName": "Phomopsis", 
+"^ot:ottId": 3731365, 
+"^ot:ottTaxonName": "Phomopsis ampelina", 
 "^ot:treebaseOTUId": "Tl90036"
 }, 
 "otu193894": {
+"@label": "Phomopsis sp. 313-866", 
 "^ot:originalLabel": "Phomopsis sp. 313-866", 
-"^ot:ottId": 712313, 
-"^ot:ottTaxonName": "Phomopsis", 
 "^ot:treebaseOTUId": "Tl90037"
 }, 
 "otu193895": {
+"@label": "Diaporthe meridionalis", 
 "^ot:originalLabel": "Diaporthe meridionalis strain stc-2 AF001015", 
 "^ot:ottId": 730425, 
 "^ot:ottTaxonName": "Diaporthe meridionalis", 
 "^ot:treebaseOTUId": "Tl90038"
 }, 
 "otu193896": {
+"@label": "Phomopsis sp. PS11360 2", 
 "^ot:originalLabel": "Phomopsis sp. PS11360 2", 
-"^ot:ottId": 712313, 
-"^ot:ottTaxonName": "Phomopsis", 
 "^ot:treebaseOTUId": "Tl90039"
 }, 
 "otu193897": {
+"@label": "Phomopsis sp. A3", 
 "^ot:originalLabel": "Phomopsis sp. A3", 
-"^ot:ottId": 712313, 
-"^ot:ottTaxonName": "Phomopsis", 
 "^ot:treebaseOTUId": "Tl90040"
 }, 
 "otu193898": {
+"@label": "Phomopsis ampelina", 
 "^ot:originalLabel": "Phomopsis sp. taxon 2 strain STE-U2669 AF230770", 
-"^ot:ottId": 712313, 
-"^ot:ottTaxonName": "Phomopsis", 
+"^ot:ottId": 3731365, 
+"^ot:ottTaxonName": "Phomopsis ampelina", 
 "^ot:treebaseOTUId": "Tl90041"
 }, 
 "otu193899": {
+"@label": "Phomopsis sp. GM12 PSU94898", 
 "^ot:originalLabel": "Phomopsis sp. GM12 PSU94898", 
-"^ot:ottId": 712313, 
-"^ot:ottTaxonName": "Phomopsis", 
 "^ot:treebaseOTUId": "Tl90042"
 }, 
 "otu193900": {
+"@label": "Diaporthe phaseolorum strain sw-93-10 AF001026", 
 "^ot:originalLabel": "Diaporthe phaseolorum strain sw-93-10 AF001026", 
-"^ot:ottId": 737678, 
-"^ot:ottTaxonName": "Diaporthe phaseolorum", 
 "^ot:treebaseOTUId": "Tl90043"
 }, 
 "otu193901": {
+"@label": "Phomopsis sp. 592-81", 
 "^ot:originalLabel": "Phomopsis sp. 592-81", 
-"^ot:ottId": 712313, 
-"^ot:ottTaxonName": "Phomopsis", 
 "^ot:treebaseOTUId": "Tl90044"
 }, 
 "otu193902": {
+"@label": "Diaporthe phaseolorum strain sw-93-13 AF001018", 
 "^ot:originalLabel": "Diaporthe phaseolorum strain sw-93-13 AF001018", 
-"^ot:ottId": 737678, 
-"^ot:ottTaxonName": "Diaporthe phaseolorum", 
 "^ot:treebaseOTUId": "Tl90045"
 }, 
 "otu193903": {
+"@label": "Phomopsis amygdali AF102995", 
 "^ot:originalLabel": "Phomopsis amygdali AF102995", 
-"^ot:ottId": 720670, 
-"^ot:ottTaxonName": "Diaporthe amygdali", 
 "^ot:treebaseOTUId": "Tl90046"
 }, 
 "otu193904": {
+"@label": "Phomopsis sp. PS11341 2", 
 "^ot:originalLabel": "Phomopsis sp. PS11341 2", 
-"^ot:ottId": 712313, 
-"^ot:ottTaxonName": "Phomopsis", 
 "^ot:treebaseOTUId": "Tl90047"
 }, 
 "otu193905": {
+"@label": "Phomopsis oblonga AB017737", 
 "^ot:originalLabel": "Phomopsis oblonga AB017737", 
-"^ot:ottId": 1006926, 
-"^ot:ottTaxonName": "Phomopsis oblonga", 
 "^ot:treebaseOTUId": "Tl90048"
 }, 
 "otu193906": {
+"@label": "Phomopsis ampelina", 
 "^ot:originalLabel": "Phomopsis sp. taxon 2 strain STE-U2673 AF230746", 
-"^ot:ottId": 712313, 
-"^ot:ottTaxonName": "Phomopsis", 
+"^ot:ottId": 3731365, 
+"^ot:ottTaxonName": "Phomopsis ampelina", 
 "^ot:treebaseOTUId": "Tl90049"
 }, 
 "otu193907": {
+"@label": "Phomopsis sp. PS11342 2", 
 "^ot:originalLabel": "Phomopsis sp. PS11342 2", 
-"^ot:ottId": 712313, 
-"^ot:ottTaxonName": "Phomopsis", 
 "^ot:treebaseOTUId": "Tl90050"
 }, 
 "otu193908": {
+"@label": "Diaporthe phaseolorum strain FAO125 AF001017", 
 "^ot:originalLabel": "Diaporthe phaseolorum strain FAO125 AF001017", 
-"^ot:ottId": 737678, 
-"^ot:ottTaxonName": "Diaporthe phaseolorum", 
 "^ot:treebaseOTUId": "Tl90051"
 }, 
 "otu193909": {
+"@label": "Phomopsis sp. PS11318 2", 
 "^ot:originalLabel": "Phomopsis sp. PS11318 2", 
-"^ot:ottId": 712313, 
-"^ot:ottTaxonName": "Phomopsis", 
 "^ot:treebaseOTUId": "Tl90052"
 }, 
 "otu193910": {
+"@label": "Diaporthe citri AB017735", 
 "^ot:originalLabel": "Diaporthe citri AB017735", 
-"^ot:ottId": 855276, 
-"^ot:ottTaxonName": "Diaporthe citri", 
 "^ot:treebaseOTUId": "Tl90053"
 }, 
 "otu193911": {
+"@label": "Phomopsis amygdali strain FAU 1058 AF102996", 
 "^ot:originalLabel": "Phomopsis amygdali strain FAU 1058 AF102996", 
-"^ot:ottId": 720670, 
-"^ot:ottTaxonName": "Diaporthe amygdali", 
 "^ot:treebaseOTUId": "Tl90054"
 }, 
 "otu193912": {
+"@label": "Phomopsis sp. PS11316 2", 
 "^ot:originalLabel": "Phomopsis sp. PS11316 2", 
-"^ot:ottId": 712313, 
-"^ot:ottTaxonName": "Phomopsis", 
 "^ot:treebaseOTUId": "Tl90055"
 }, 
 "otu193913": {
+"@label": "Phomopsis sp. PS11352 2", 
 "^ot:originalLabel": "Phomopsis sp. PS11352 2", 
-"^ot:ottId": 712313, 
-"^ot:ottTaxonName": "Phomopsis", 
 "^ot:treebaseOTUId": "Tl90056"
 }, 
 "otu193914": {
+"@label": "Phomopsis sp. PS11331 2", 
 "^ot:originalLabel": "Phomopsis sp. PS11331 2", 
-"^ot:ottId": 712313, 
-"^ot:ottTaxonName": "Phomopsis", 
 "^ot:treebaseOTUId": "Tl90057"
 }, 
 "otu193915": {
+"@label": "Diaporthe phaseolorum strain pssp5 AF001020", 
 "^ot:originalLabel": "Diaporthe phaseolorum strain pssp5 AF001020", 
-"^ot:ottId": 737678, 
-"^ot:ottTaxonName": "Diaporthe phaseolorum", 
 "^ot:treebaseOTUId": "Tl90058"
 }
 }
@@ -1211,7 +1053,6 @@
 "^ot:curatedType": "ITS, bootstrap tree", 
 "^ot:inGroupClade": "node453044", 
 "^ot:rootNodeId": "node453044", 
-"^ot:tag": "ITS", 
 "edgeBySourceId": {
 "node453044": {
 "edge453045": {

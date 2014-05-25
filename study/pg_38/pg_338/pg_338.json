@@ -15,57 +15,17 @@
 "^ot:agents": {
 "agent": [
 {
-"@description": "validator of NexSON constraints as well as constraints that would allow a study to be imported into the Open Tree of Life's phylogenetic synthesis tools", 
+"@description": "Open Tree NexSON validation", 
 "@id": "peyotl-validator", 
-"@name": "validate_ot_nexson.py", 
+"@name": "api.opentreeoflife.org/validate", 
 "@url": "https://github.com/OpenTreeOfLife/peyotl", 
-"@version": "0.0.3a", 
+"@version": "0.0.4a", 
 "invocation": {
-"checksPerformed": [
-"MISSING_MANDATORY_KEY", 
-"MISSING_OPTIONAL_KEY", 
-"UNRECOGNIZED_KEY", 
-"MISSING_LIST_EXPECTED", 
-"DUPLICATING_SINGLETON_KEY", 
-"REFERENCED_ID_NOT_FOUND", 
-"REPEATED_ID", 
-"REPEATED_OTU", 
-"MULTIPLE_ROOT_NODES", 
-"NO_ROOT_NODE", 
-"MULTIPLE_EDGES_FOR_NODES", 
-"CYCLE_DETECTED", 
-"DISCONNECTED_GRAPH_DETECTED", 
-"INCORRECT_ROOT_NODE_LABEL", 
-"TIP_WITHOUT_OTU", 
-"TIP_WITHOUT_OTT_ID", 
-"MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
-"NON_MONOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
-"INVALID_PROPERTY_VALUE", 
-"PROPERTY_VALUE_NOT_USEFUL", 
-"UNRECOGNIZED_PROPERTY_VALUE", 
-"MULTIPLE_TREES", 
-"UNRECOGNIZED_TAG", 
-"CONFLICTING_PROPERTY_VALUES", 
-"NO_TREES", 
-"DEPRECATED_PROPERTY", 
-"UNPARSEABLE_META", 
-"UNREACHABLE_NODE", 
-"INCORRECT_VALUE_TYPE", 
-"MISSING_CRUCIAL_CONTENT"
-], 
-"commandLine": [
-"--embed", 
-"--agent-only", 
-"-e", 
-"../mig-phyelesystem-scratch/338/validation.json", 
-"-o", 
-"../mig-phyelesystem-scratch/338/final.json", 
-"../mig-phyelesystem-scratch/338/v1.2.1-338.json"
-], 
+"commandLine": [], 
 "otherProperty": [
 {
 "name": "pythonVersion", 
-"value": "2.7.5+"
+"value": "2.7.3"
 }, 
 {
 "name": "pythonImplementation", 
@@ -75,6 +35,9 @@
 }
 }
 ]
+}, 
+"^ot:annotationEvents": {
+"annotation": []
 }, 
 "^ot:curatorName": "Romina Gazis", 
 "^ot:dataDeposit": {
@@ -91,6 +54,11 @@
 }, 
 "^ot:studyPublicationReference": "Wang Z., Binder M., & Hibbett D. 2002. A new species of Cudonia based on mophological and molecular data. Mycologia, 94(4): 641-650.", 
 "^ot:studyYear": 2002, 
+"^ot:tag": [
+"ITS", 
+"LSU", 
+"MP"
+], 
 "^ot:treesElementOrder": [
 "trees338"
 ], 
@@ -98,123 +66,164 @@
 "otus338": {
 "otuById": {
 "otu74651": {
+"@label": "Leotia lubrica", 
 "^ot:originalLabel": "Leotia viscosa", 
+"^ot:ottId": 339442, 
+"^ot:ottTaxonName": "Leotia lubrica", 
 "^ot:treebaseOTUId": "Tl129598"
 }, 
 "otu74652": {
+"@label": "Lophodermium pinastri", 
 "^ot:originalLabel": "Lophodermium pinastri", 
 "^ot:ottId": 866316, 
 "^ot:ottTaxonName": "Lophodermium pinastri", 
 "^ot:treebaseOTUId": "Tl129599"
 }, 
 "otu74653": {
+"@label": "Sclerotinia veratri", 
 "^ot:originalLabel": "Sclerotinia veratri", 
 "^ot:ottId": 845885, 
 "^ot:ottTaxonName": "Sclerotinia veratri", 
 "^ot:treebaseOTUId": "Tl129601"
 }, 
 "otu74654": {
+"@label": "Stictis radiata", 
 "^ot:originalLabel": "Stictis radiata", 
 "^ot:ottId": 655795, 
 "^ot:ottTaxonName": "Stictis radiata", 
 "^ot:treebaseOTUId": "Tl129603"
 }, 
 "otu74655": {
+"@label": "Geoglossum glabrum", 
 "^ot:originalLabel": "Geoglossum glabrum", 
 "^ot:ottId": 845887, 
 "^ot:ottTaxonName": "Geoglossum glabrum", 
 "^ot:treebaseOTUId": "Tl129605"
 }, 
 "otu74656": {
+"@label": "Spathularia flavida", 
 "^ot:originalLabel": "Spathularia cf flavida 138", 
 "^ot:ottId": 332571, 
 "^ot:ottTaxonName": "Spathularia flavida", 
 "^ot:treebaseOTUId": "Tl7213"
 }, 
 "otu74657": {
+"@label": "Spathularia flavida", 
 "^ot:originalLabel": "Spathularia flavida 95", 
 "^ot:ottId": 332571, 
 "^ot:ottTaxonName": "Spathularia flavida", 
 "^ot:treebaseOTUId": "Tl7214"
 }, 
 "otu74658": {
+"@label": "Vibrissea lutea", 
 "^ot:originalLabel": "Cudonia lutea 139", 
+"^ot:ottId": 3714955, 
+"^ot:ottTaxonName": "Vibrissea lutea", 
 "^ot:treebaseOTUId": "Tl7215"
 }, 
 "otu74659": {
+"@label": "Vibrissea lutea", 
 "^ot:originalLabel": "Cudonia lutea 225", 
+"^ot:ottId": 3714955, 
+"^ot:ottTaxonName": "Vibrissea lutea", 
 "^ot:treebaseOTUId": "Tl7216"
 }, 
 "otu74660": {
+"@label": "Spathularia flavida", 
 "^ot:originalLabel": "Spathularia cf flavida 214", 
 "^ot:ottId": 332571, 
 "^ot:ottTaxonName": "Spathularia flavida", 
 "^ot:treebaseOTUId": "Tl7217"
 }, 
 "otu74661": {
+"@label": "Cudonia sichuanensis", 
 "^ot:originalLabel": "Cudonia sichuanensis 187", 
 "^ot:ottId": 859709, 
 "^ot:ottTaxonName": "Cudonia sichuanensis", 
 "^ot:treebaseOTUId": "Tl7218"
 }, 
 "otu74662": {
+"@label": "Cudonia sichuanensis", 
 "^ot:originalLabel": "Cudonia sichuanensis 96", 
 "^ot:ottId": 859709, 
 "^ot:ottTaxonName": "Cudonia sichuanensis", 
 "^ot:treebaseOTUId": "Tl7219"
 }, 
 "otu74663": {
+"@label": "Spathularia flavida", 
 "^ot:originalLabel": "Spathularia flavida 137", 
 "^ot:ottId": 332571, 
 "^ot:ottTaxonName": "Spathularia flavida", 
 "^ot:treebaseOTUId": "Tl7220"
 }, 
 "otu74664": {
+"@label": "Vibrissea lutea", 
 "^ot:originalLabel": "Cudonia lutea 164", 
+"^ot:ottId": 3714955, 
+"^ot:ottTaxonName": "Vibrissea lutea", 
 "^ot:treebaseOTUId": "Tl7221"
 }, 
 "otu74665": {
+"@label": "Spathularia flavida", 
 "^ot:originalLabel": "Spathularia flavida 135", 
 "^ot:ottId": 332571, 
 "^ot:ottTaxonName": "Spathularia flavida", 
 "^ot:treebaseOTUId": "Tl7223"
 }, 
 "otu74666": {
+"@label": "Spathulariopsis velutipes", 
 "^ot:originalLabel": "Spathularia velutipes AF279411", 
+"^ot:ottId": 5309175, 
+"^ot:ottTaxonName": "Spathulariopsis velutipes", 
 "^ot:treebaseOTUId": "Tl7225"
 }, 
 "otu74667": {
+"@label": "Spathulariopsis velutipes", 
 "^ot:originalLabel": "Spathularia velutipes AF113734", 
+"^ot:ottId": 5309175, 
+"^ot:ottTaxonName": "Spathulariopsis velutipes", 
 "^ot:treebaseOTUId": "Tl7226"
 }, 
 "otu74668": {
+"@label": "Spathulariopsis velutipes", 
 "^ot:originalLabel": "Spathularia velutipes AF113735", 
+"^ot:ottId": 5309175, 
+"^ot:ottTaxonName": "Spathulariopsis velutipes", 
 "^ot:treebaseOTUId": "Tl7227"
 }, 
 "otu74669": {
+"@label": "Cudonia circinans", 
 "^ot:originalLabel": "Cudonia circinans JP232", 
 "^ot:ottId": 1069343, 
 "^ot:ottTaxonName": "Cudonia circinans", 
 "^ot:treebaseOTUId": "Tl7228"
 }, 
 "otu74670": {
+"@label": "Spathularia flavida", 
 "^ot:originalLabel": "Spathularia flavida 93", 
 "^ot:ottId": 332571, 
 "^ot:ottTaxonName": "Spathularia flavida", 
 "^ot:treebaseOTUId": "Tl7230"
 }, 
 "otu74671": {
+"@label": "Spathulariopsis velutipes", 
 "^ot:originalLabel": "Spathularia velutipes AF113736", 
+"^ot:ottId": 5309175, 
+"^ot:ottTaxonName": "Spathulariopsis velutipes", 
 "^ot:treebaseOTUId": "Tl7231"
 }, 
 "otu74672": {
+"@label": "Cudonia circinans", 
 "^ot:originalLabel": "Cudonia circinans AF107553", 
 "^ot:ottId": 1069343, 
 "^ot:ottTaxonName": "Cudonia circinans", 
 "^ot:treebaseOTUId": "Tl7232"
 }, 
 "otu74673": {
+"@label": "Spathulariopsis velutipes", 
 "^ot:originalLabel": "Spathularia velutipes AF107554", 
+"^ot:ottId": 5309175, 
+"^ot:ottTaxonName": "Spathulariopsis velutipes", 
 "^ot:treebaseOTUId": "Tl7233"
 }
 }
@@ -224,465 +233,21 @@
 "trees338": {
 "@otus": "otus338", 
 "^ot:treeElementOrder": [
-"tree363", 
-"tree364", 
 "tree5527", 
 "tree5528"
 ], 
 "treeById": {
-"tree363": {
-"@xsi:type": "nex:FloatTree", 
-"^ot:curatedType": "MP, ITS + LSU", 
-"^ot:rootNodeId": "node197296", 
-"edgeBySourceId": {
-"node197296": {
-"edge197297": {
-"@source": "node197296", 
-"@target": "node197297"
-}, 
-"edge197298": {
-"@source": "node197296", 
-"@target": "node197298"
-}
-}, 
-"node197298": {
-"edge197299": {
-"@source": "node197298", 
-"@target": "node197299"
-}, 
-"edge197300": {
-"@source": "node197298", 
-"@target": "node197300"
-}
-}, 
-"node197300": {
-"edge197301": {
-"@source": "node197300", 
-"@target": "node197301"
-}, 
-"edge197306": {
-"@source": "node197300", 
-"@target": "node197306"
-}
-}, 
-"node197301": {
-"edge197302": {
-"@source": "node197301", 
-"@target": "node197302"
-}, 
-"edge197303": {
-"@source": "node197301", 
-"@target": "node197303"
-}
-}, 
-"node197303": {
-"edge197304": {
-"@source": "node197303", 
-"@target": "node197304"
-}, 
-"edge197305": {
-"@source": "node197303", 
-"@target": "node197305"
-}
-}, 
-"node197306": {
-"edge197307": {
-"@source": "node197306", 
-"@target": "node197307"
-}, 
-"edge197314": {
-"@source": "node197306", 
-"@target": "node197314"
-}
-}, 
-"node197307": {
-"edge197308": {
-"@source": "node197307", 
-"@target": "node197308"
-}, 
-"edge197311": {
-"@source": "node197307", 
-"@target": "node197311"
-}
-}, 
-"node197308": {
-"edge197309": {
-"@source": "node197308", 
-"@target": "node197309"
-}, 
-"edge197310": {
-"@source": "node197308", 
-"@target": "node197310"
-}
-}, 
-"node197311": {
-"edge197312": {
-"@source": "node197311", 
-"@target": "node197312"
-}, 
-"edge197313": {
-"@source": "node197311", 
-"@target": "node197313"
-}
-}
-}, 
-"nodeById": {
-"node197296": {
-"@root": true
-}, 
-"node197297": {
-"@otu": "otu74661"
-}, 
-"node197298": {}, 
-"node197299": {
-"@otu": "otu74662"
-}, 
-"node197300": {}, 
-"node197301": {}, 
-"node197302": {
-"@otu": "otu74658"
-}, 
-"node197303": {}, 
-"node197304": {
-"@otu": "otu74664"
-}, 
-"node197305": {
-"@otu": "otu74659"
-}, 
-"node197306": {}, 
-"node197307": {}, 
-"node197308": {}, 
-"node197309": {
-"@otu": "otu74656"
-}, 
-"node197310": {
-"@otu": "otu74660"
-}, 
-"node197311": {}, 
-"node197312": {
-"@otu": "otu74657"
-}, 
-"node197313": {
-"@otu": "otu74663"
-}, 
-"node197314": {
-"@otu": "otu74652"
-}
-}
-}, 
-"tree364": {
-"@xsi:type": "nex:FloatTree", 
-"^ot:curatedType": "MP, LSU", 
-"^ot:rootNodeId": "node197315", 
-"edgeBySourceId": {
-"node197315": {
-"edge197316": {
-"@source": "node197315", 
-"@target": "node197316"
-}, 
-"edge197317": {
-"@source": "node197315", 
-"@target": "node197317"
-}
-}, 
-"node197317": {
-"edge197318": {
-"@source": "node197317", 
-"@target": "node197318"
-}, 
-"edge197319": {
-"@source": "node197317", 
-"@target": "node197319"
-}
-}, 
-"node197319": {
-"edge197320": {
-"@source": "node197319", 
-"@target": "node197320"
-}, 
-"edge197323": {
-"@source": "node197319", 
-"@target": "node197323"
-}
-}, 
-"node197320": {
-"edge197321": {
-"@source": "node197320", 
-"@target": "node197321"
-}, 
-"edge197322": {
-"@source": "node197320", 
-"@target": "node197322"
-}
-}, 
-"node197323": {
-"edge197324": {
-"@source": "node197323", 
-"@target": "node197324"
-}, 
-"edge197333": {
-"@source": "node197323", 
-"@target": "node197333"
-}
-}, 
-"node197324": {
-"edge197325": {
-"@source": "node197324", 
-"@target": "node197325"
-}, 
-"edge197326": {
-"@source": "node197324", 
-"@target": "node197326"
-}
-}, 
-"node197326": {
-"edge197327": {
-"@source": "node197326", 
-"@target": "node197327"
-}, 
-"edge197328": {
-"@source": "node197326", 
-"@target": "node197328"
-}
-}, 
-"node197328": {
-"edge197329": {
-"@source": "node197328", 
-"@target": "node197329"
-}, 
-"edge197330": {
-"@source": "node197328", 
-"@target": "node197330"
-}
-}, 
-"node197330": {
-"edge197331": {
-"@source": "node197330", 
-"@target": "node197331"
-}, 
-"edge197332": {
-"@source": "node197330", 
-"@target": "node197332"
-}
-}, 
-"node197333": {
-"edge197334": {
-"@source": "node197333", 
-"@target": "node197334"
-}, 
-"edge197337": {
-"@source": "node197333", 
-"@target": "node197337"
-}
-}, 
-"node197334": {
-"edge197335": {
-"@source": "node197334", 
-"@target": "node197335"
-}, 
-"edge197336": {
-"@source": "node197334", 
-"@target": "node197336"
-}
-}, 
-"node197337": {
-"edge197338": {
-"@source": "node197337", 
-"@target": "node197338"
-}, 
-"edge197349": {
-"@source": "node197337", 
-"@target": "node197349"
-}
-}, 
-"node197338": {
-"edge197339": {
-"@source": "node197338", 
-"@target": "node197339"
-}, 
-"edge197340": {
-"@source": "node197338", 
-"@target": "node197340"
-}, 
-"edge197348": {
-"@source": "node197338", 
-"@target": "node197348"
-}
-}, 
-"node197340": {
-"edge197341": {
-"@source": "node197340", 
-"@target": "node197341"
-}, 
-"edge197347": {
-"@source": "node197340", 
-"@target": "node197347"
-}
-}, 
-"node197341": {
-"edge197342": {
-"@source": "node197341", 
-"@target": "node197342"
-}, 
-"edge197343": {
-"@source": "node197341", 
-"@target": "node197343"
-}, 
-"edge197344": {
-"@source": "node197341", 
-"@target": "node197344"
-}
-}, 
-"node197344": {
-"edge197345": {
-"@source": "node197344", 
-"@target": "node197345"
-}, 
-"edge197346": {
-"@source": "node197344", 
-"@target": "node197346"
-}
-}, 
-"node197349": {
-"edge197350": {
-"@source": "node197349", 
-"@target": "node197350"
-}, 
-"edge197351": {
-"@source": "node197349", 
-"@target": "node197351"
-}
-}, 
-"node197351": {
-"edge197352": {
-"@source": "node197351", 
-"@target": "node197352"
-}, 
-"edge197357": {
-"@source": "node197351", 
-"@target": "node197357"
-}
-}, 
-"node197352": {
-"edge197353": {
-"@source": "node197352", 
-"@target": "node197353"
-}, 
-"edge197354": {
-"@source": "node197352", 
-"@target": "node197354"
-}
-}, 
-"node197354": {
-"edge197355": {
-"@source": "node197354", 
-"@target": "node197355"
-}, 
-"edge197356": {
-"@source": "node197354", 
-"@target": "node197356"
-}
-}
-}, 
-"nodeById": {
-"node197315": {
-"@root": true
-}, 
-"node197316": {
-"@otu": "otu74662"
-}, 
-"node197317": {}, 
-"node197318": {
-"@otu": "otu74661"
-}, 
-"node197319": {}, 
-"node197320": {}, 
-"node197321": {
-"@otu": "otu74664"
-}, 
-"node197322": {
-"@otu": "otu74659"
-}, 
-"node197323": {}, 
-"node197324": {}, 
-"node197325": {
-"@otu": "otu74658"
-}, 
-"node197326": {}, 
-"node197327": {
-"@otu": "otu74670"
-}, 
-"node197328": {}, 
-"node197329": {
-"@otu": "otu74657"
-}, 
-"node197330": {}, 
-"node197331": {
-"@otu": "otu74663"
-}, 
-"node197332": {
-"@otu": "otu74665"
-}, 
-"node197333": {}, 
-"node197334": {}, 
-"node197335": {
-"@otu": "otu74672"
-}, 
-"node197336": {
-"@otu": "otu74669"
-}, 
-"node197337": {}, 
-"node197338": {}, 
-"node197339": {
-"@otu": "otu74666"
-}, 
-"node197340": {}, 
-"node197341": {}, 
-"node197342": {
-"@otu": "otu74673"
-}, 
-"node197343": {
-"@otu": "otu74671"
-}, 
-"node197344": {}, 
-"node197345": {
-"@otu": "otu74660"
-}, 
-"node197346": {
-"@otu": "otu74656"
-}, 
-"node197347": {
-"@otu": "otu74668"
-}, 
-"node197348": {
-"@otu": "otu74667"
-}, 
-"node197349": {}, 
-"node197350": {
-"@otu": "otu74652"
-}, 
-"node197351": {}, 
-"node197352": {}, 
-"node197353": {
-"@otu": "otu74655"
-}, 
-"node197354": {}, 
-"node197355": {
-"@otu": "otu74654"
-}, 
-"node197356": {
-"@otu": "otu74651"
-}, 
-"node197357": {
-"@otu": "otu74653"
-}
-}
-}, 
 "tree5527": {
 "@xsi:type": "nex:FloatTree", 
 "^ot:curatedType": "MP, ITS + LSU (rooted)", 
 "^ot:inGroupClade": "node952533", 
 "^ot:rootNodeId": "node952532", 
+"^ot:tag": [
+"MP", 
+"ITS", 
+"LSU", 
+"Choose me"
+], 
 "edgeBySourceId": {
 "node952532": {
 "edge952533": {

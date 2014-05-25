@@ -15,57 +15,17 @@
 "^ot:agents": {
 "agent": [
 {
-"@description": "validator of NexSON constraints as well as constraints that would allow a study to be imported into the Open Tree of Life's phylogenetic synthesis tools", 
+"@description": "Open Tree NexSON validation", 
 "@id": "peyotl-validator", 
-"@name": "validate_ot_nexson.py", 
+"@name": "api.opentreeoflife.org/validate", 
 "@url": "https://github.com/OpenTreeOfLife/peyotl", 
-"@version": "0.0.3a", 
+"@version": "0.0.4a", 
 "invocation": {
-"checksPerformed": [
-"MISSING_MANDATORY_KEY", 
-"MISSING_OPTIONAL_KEY", 
-"UNRECOGNIZED_KEY", 
-"MISSING_LIST_EXPECTED", 
-"DUPLICATING_SINGLETON_KEY", 
-"REFERENCED_ID_NOT_FOUND", 
-"REPEATED_ID", 
-"REPEATED_OTU", 
-"MULTIPLE_ROOT_NODES", 
-"NO_ROOT_NODE", 
-"MULTIPLE_EDGES_FOR_NODES", 
-"CYCLE_DETECTED", 
-"DISCONNECTED_GRAPH_DETECTED", 
-"INCORRECT_ROOT_NODE_LABEL", 
-"TIP_WITHOUT_OTU", 
-"TIP_WITHOUT_OTT_ID", 
-"MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
-"NON_MONOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
-"INVALID_PROPERTY_VALUE", 
-"PROPERTY_VALUE_NOT_USEFUL", 
-"UNRECOGNIZED_PROPERTY_VALUE", 
-"MULTIPLE_TREES", 
-"UNRECOGNIZED_TAG", 
-"CONFLICTING_PROPERTY_VALUES", 
-"NO_TREES", 
-"DEPRECATED_PROPERTY", 
-"UNPARSEABLE_META", 
-"UNREACHABLE_NODE", 
-"INCORRECT_VALUE_TYPE", 
-"MISSING_CRUCIAL_CONTENT"
-], 
-"commandLine": [
-"--embed", 
-"--agent-only", 
-"-e", 
-"../mig-phyelesystem-scratch/403/validation.json", 
-"-o", 
-"../mig-phyelesystem-scratch/403/final.json", 
-"../mig-phyelesystem-scratch/403/v1.2.1-403.json"
-], 
+"commandLine": [], 
 "otherProperty": [
 {
 "name": "pythonVersion", 
-"value": "2.7.5+"
+"value": "2.7.3"
 }, 
 {
 "name": "pythonImplementation", 
@@ -76,12 +36,15 @@
 }
 ]
 }, 
+"^ot:annotationEvents": {
+"annotation": []
+}, 
 "^ot:curatorName": "Romina Gazis", 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S1237"
 }, 
-"^ot:focalClade": 1154377, 
-"^ot:focalCladeOTTTaxonName": "Monacrosporium", 
+"^ot:focalClade": 535927, 
+"^ot:focalCladeOTTTaxonName": "Monacrosporium drechsleri", 
 "^ot:otusElementOrder": [
 "otus403"
 ], 
@@ -98,87 +61,101 @@
 "otus403": {
 "otuById": {
 "otu78360": {
+"@label": "Arthrobotrys oligospora", 
 "^ot:originalLabel": "Arthrobotrys oligospora", 
 "^ot:ottId": 776710, 
 "^ot:ottTaxonName": "Arthrobotrys oligospora", 
 "^ot:treebaseOTUId": "Tl151124"
 }, 
 "otu78361": {
+"@label": "Duddingtonia flagrans", 
 "^ot:originalLabel": "Duddingtonia flagrans", 
 "^ot:ottId": 791070, 
 "^ot:ottTaxonName": "Duddingtonia flagrans", 
 "^ot:treebaseOTUId": "Tl4691"
 }, 
 "otu78362": {
+"@label": "Dactylellina ellipsospora", 
 "^ot:originalLabel": "Monacrosporium ellipsosporum", 
 "^ot:ottId": 342904, 
 "^ot:ottTaxonName": "Dactylellina ellipsospora", 
 "^ot:treebaseOTUId": "Tl53899"
 }, 
 "otu78363": {
+"@label": "Dactylella lysipaga", 
 "^ot:originalLabel": "Monacrosporium lysipagum", 
 "^ot:ottId": 293793, 
 "^ot:ottTaxonName": "Dactylella lysipaga", 
 "^ot:treebaseOTUId": "Tl61699"
 }, 
 "otu78364": {
+"@label": "Dactylellina haptospora", 
 "^ot:originalLabel": "Arthrobotrys haptospora", 
 "^ot:ottId": 808922, 
 "^ot:ottTaxonName": "Dactylellina haptospora", 
 "^ot:treebaseOTUId": "Tl61700"
 }, 
 "otu78365": {
+"@label": "Dactylella leptospora", 
 "^ot:originalLabel": "Monacrosporium leptosporum", 
 "^ot:ottId": 427683, 
-"^ot:ottTaxonName": "Monacrosporium leptosporum", 
+"^ot:ottTaxonName": "Dactylella leptospora", 
 "^ot:treebaseOTUId": "Tl61701"
 }, 
 "otu78366": {
+"@label": "Dactylellina formosana", 
 "^ot:originalLabel": "Dactylella formosana", 
-"^ot:ottId": 293774, 
-"^ot:ottTaxonName": "Dactylella formosana", 
+"^ot:ottId": 3789325, 
+"^ot:ottTaxonName": "Dactylellina formosana", 
 "^ot:treebaseOTUId": "Tl61702"
 }, 
 "otu78367": {
+"@label": "Gamsylella phymatopaga", 
 "^ot:originalLabel": "Monacrosporium phymatopagum", 
-"^ot:ottId": 132805, 
-"^ot:ottTaxonName": "Dactylellina phymatopaga", 
+"^ot:ottId": 5302838, 
+"^ot:ottTaxonName": "Gamsylella phymatopaga", 
 "^ot:treebaseOTUId": "Tl61703"
 }, 
 "otu78368": {
+"@label": "Dactylellina parvicolle", 
 "^ot:originalLabel": "Monacrosporium parvicolle", 
 "^ot:ottId": 863508, 
-"^ot:ottTaxonName": "Dactylellina parvicollis", 
+"^ot:ottTaxonName": "Dactylellina parvicolle", 
 "^ot:treebaseOTUId": "Tl61704"
 }, 
 "otu78369": {
+"@label": "Dactylellina ellipsospora", 
 "^ot:originalLabel": "Monacrosporium ellipsosporum CBS", 
 "^ot:ottId": 342904, 
 "^ot:ottTaxonName": "Dactylellina ellipsospora", 
 "^ot:treebaseOTUId": "Tl61705"
 }, 
 "otu78370": {
+"@label": "Dactylellina ellipsospora", 
 "^ot:originalLabel": "Monacrosporium ellipsosporum ATCC", 
 "^ot:ottId": 342904, 
 "^ot:ottTaxonName": "Dactylellina ellipsospora", 
 "^ot:treebaseOTUId": "Tl61706"
 }, 
 "otu78371": {
+"@label": "Dactylella mammillata", 
 "^ot:originalLabel": "Monacrosporium mammillatum", 
-"^ot:ottId": 374966, 
-"^ot:ottTaxonName": "Monacrosporium mammillatum", 
+"^ot:ottId": 1077087, 
+"^ot:ottTaxonName": "Dactylella mammillata", 
 "^ot:treebaseOTUId": "Tl61707"
 }, 
 "otu78372": {
+"@label": "Monacrosporium drechsleri", 
 "^ot:originalLabel": "Monacrosporium drechsleri", 
 "^ot:ottId": 535927, 
-"^ot:ottTaxonName": "Dactylellina drechsleri", 
+"^ot:ottTaxonName": "Monacrosporium drechsleri", 
 "^ot:treebaseOTUId": "Tl61708"
 }, 
 "otu78373": {
+"@label": "Monacrosporium tentaculatum", 
 "^ot:originalLabel": "Monacrosporium tentaculatum", 
 "^ot:ottId": 427692, 
-"^ot:ottTaxonName": "Dactylellina appendiculata", 
+"^ot:ottTaxonName": "Monacrosporium tentaculatum", 
 "^ot:treebaseOTUId": "Tl61709"
 }
 }

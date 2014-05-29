@@ -19,48 +19,11 @@
 "@id": "peyotl-validator", 
 "@name": "validate_ot_nexson.py", 
 "@url": "https://github.com/OpenTreeOfLife/peyotl", 
-"@version": "0.0.3a", 
+"@version": "0.0.4a", 
 "invocation": {
-"checksPerformed": [
-"MISSING_MANDATORY_KEY", 
-"MISSING_OPTIONAL_KEY", 
-"UNRECOGNIZED_KEY", 
-"MISSING_LIST_EXPECTED", 
-"DUPLICATING_SINGLETON_KEY", 
-"REFERENCED_ID_NOT_FOUND", 
-"REPEATED_ID", 
-"REPEATED_OTU", 
-"MULTIPLE_ROOT_NODES", 
-"NO_ROOT_NODE", 
-"MULTIPLE_EDGES_FOR_NODES", 
-"CYCLE_DETECTED", 
-"DISCONNECTED_GRAPH_DETECTED", 
-"INCORRECT_ROOT_NODE_LABEL", 
-"TIP_WITHOUT_OTU", 
-"TIP_WITHOUT_OTT_ID", 
-"MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
-"NON_MONOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
-"INVALID_PROPERTY_VALUE", 
-"PROPERTY_VALUE_NOT_USEFUL", 
-"UNRECOGNIZED_PROPERTY_VALUE", 
-"MULTIPLE_TREES", 
-"UNRECOGNIZED_TAG", 
-"CONFLICTING_PROPERTY_VALUES", 
-"NO_TREES", 
-"DEPRECATED_PROPERTY", 
-"UNPARSEABLE_META", 
-"UNREACHABLE_NODE", 
-"INCORRECT_VALUE_TYPE", 
-"MISSING_CRUCIAL_CONTENT"
-], 
 "commandLine": [
 "--embed", 
-"--agent-only", 
-"-e", 
-"../mig-phyelesystem-scratch/2377/validation.json", 
-"-o", 
-"../mig-phyelesystem-scratch/2377/final.json", 
-"../mig-phyelesystem-scratch/2377/v1.2.1-2377.json"
+"--agent-only"
 ], 
 "otherProperty": [
 {
@@ -76,12 +39,19 @@
 }
 ]
 }, 
+"^ot:annotationEvents": {
+"annotation": []
+}, 
+"^ot:candidateTreeForSynthesis": [], 
 "^ot:curatorName": "Romina Gazis", 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S13254"
 }, 
 "^ot:focalClade": 936977, 
 "^ot:focalCladeOTTTaxonName": "Boliniales", 
+"^ot:messages": {
+"message": []
+}, 
 "^ot:otusElementOrder": [
 "otus2377"
 ], 
@@ -92,9 +62,9 @@
 "^ot:studyPublicationReference": "Untereiner W., Platt W.H., Laessoe T., Stepanek V., & Reblova M. 2013. Molecular phylogeny of the Boliniales (Sordariomycetes) with an assessment of the systematics of the Apiorhychostoma, Endoxyla, and Pseudovalsaria. Mycologia, 105(3): 564-588.", 
 "^ot:studyYear": 2013, 
 "^ot:tag": [
-"ML", 
 "ITS", 
-"LSU"
+"LSU", 
+"ML"
 ], 
 "^ot:treesElementOrder": [
 "trees2377"
@@ -216,6 +186,8 @@
 }, 
 "otu335840": {
 "^ot:originalLabel": "Ophiostoma piliferum AY281094", 
+"^ot:ottId": 5316941, 
+"^ot:ottTaxonName": "Ceratocystis pilifera", 
 "^ot:treebaseOTUId": "Tl868479"
 }, 
 "otu335841": {
@@ -266,6 +238,8 @@
 }, 
 "otu335849": {
 "^ot:originalLabel": "Togniniella microspora AY761076", 
+"^ot:ottId": 5316647, 
+"^ot:ottTaxonName": "Togniniella microspora", 
 "^ot:treebaseOTUId": "Tl868488"
 }, 
 "otu335850": {
@@ -390,6 +364,8 @@
 }, 
 "otu335870": {
 "^ot:originalLabel": "Colletotrichum gloeosporioides AY705727", 
+"^ot:ottId": 570883, 
+"^ot:ottTaxonName": "Colletotrichum gloeosporioides", 
 "^ot:treebaseOTUId": "Tl868509"
 }, 
 "otu335871": {
@@ -418,10 +394,14 @@
 }, 
 "otu335875": {
 "^ot:originalLabel": "Togninia fraxinopennsylvanica HQ878595", 
+"^ot:ottId": 519058, 
+"^ot:ottTaxonName": "Phaeoacremonium mortoniae", 
 "^ot:treebaseOTUId": "Tl868514"
 }, 
 "otu335876": {
 "^ot:originalLabel": "Coniochaetidium savoryi AY346276", 
+"^ot:ottId": 103601, 
+"^ot:ottTaxonName": "Coniochaeta savoryi", 
 "^ot:treebaseOTUId": "Tl868515"
 }, 
 "otu335877": {
@@ -612,6 +592,8 @@
 }, 
 "otu335909": {
 "^ot:originalLabel": "Bionectria aureofulva DQ862027", 
+"^ot:ottId": 359511, 
+"^ot:ottTaxonName": "Clonostachys rosea", 
 "^ot:treebaseOTUId": "Tl868548"
 }, 
 "otu335910": {
@@ -633,9 +615,14 @@
 "treeById": {
 "tree4995": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "ML, LSU", 
 "^ot:inGroupClade": "node865892", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node865891", 
+"^ot:specifiedRoot": "", 
 "^ot:tag": [
 "ML", 
 "LSU"
@@ -1900,9 +1887,14 @@
 }, 
 "tree4996": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "ML, ITS + LSU", 
 "^ot:inGroupClade": "node866050", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node866048", 
+"^ot:specifiedRoot": "", 
 "^ot:tag": [
 "ML", 
 "ITS", 

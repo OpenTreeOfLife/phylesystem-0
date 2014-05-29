@@ -19,48 +19,11 @@
 "@id": "peyotl-validator", 
 "@name": "validate_ot_nexson.py", 
 "@url": "https://github.com/OpenTreeOfLife/peyotl", 
-"@version": "0.0.3a", 
+"@version": "0.0.4a", 
 "invocation": {
-"checksPerformed": [
-"MISSING_MANDATORY_KEY", 
-"MISSING_OPTIONAL_KEY", 
-"UNRECOGNIZED_KEY", 
-"MISSING_LIST_EXPECTED", 
-"DUPLICATING_SINGLETON_KEY", 
-"REFERENCED_ID_NOT_FOUND", 
-"REPEATED_ID", 
-"REPEATED_OTU", 
-"MULTIPLE_ROOT_NODES", 
-"NO_ROOT_NODE", 
-"MULTIPLE_EDGES_FOR_NODES", 
-"CYCLE_DETECTED", 
-"DISCONNECTED_GRAPH_DETECTED", 
-"INCORRECT_ROOT_NODE_LABEL", 
-"TIP_WITHOUT_OTU", 
-"TIP_WITHOUT_OTT_ID", 
-"MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
-"NON_MONOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
-"INVALID_PROPERTY_VALUE", 
-"PROPERTY_VALUE_NOT_USEFUL", 
-"UNRECOGNIZED_PROPERTY_VALUE", 
-"MULTIPLE_TREES", 
-"UNRECOGNIZED_TAG", 
-"CONFLICTING_PROPERTY_VALUES", 
-"NO_TREES", 
-"DEPRECATED_PROPERTY", 
-"UNPARSEABLE_META", 
-"UNREACHABLE_NODE", 
-"INCORRECT_VALUE_TYPE", 
-"MISSING_CRUCIAL_CONTENT"
-], 
 "commandLine": [
 "--embed", 
-"--agent-only", 
-"-e", 
-"../mig-phyelesystem-scratch/1641/validation.json", 
-"-o", 
-"../mig-phyelesystem-scratch/1641/final.json", 
-"../mig-phyelesystem-scratch/1641/v1.2.1-1641.json"
+"--agent-only"
 ], 
 "otherProperty": [
 {
@@ -76,12 +39,19 @@
 }
 ]
 }, 
+"^ot:annotationEvents": {
+"annotation": []
+}, 
+"^ot:candidateTreeForSynthesis": [], 
 "^ot:curatorName": "Romina Gazis", 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S735"
 }, 
 "^ot:focalClade": 162650, 
 "^ot:focalCladeOTTTaxonName": "Lentinula", 
+"^ot:messages": {
+"message": []
+}, 
 "^ot:otusElementOrder": [
 "otus1641"
 ], 
@@ -91,6 +61,7 @@
 }, 
 "^ot:studyPublicationReference": "Hibbett D. 2002. Shiitake mushrooms and molecular clocks: historical biogeography of Lentinula. Journal of Biogeography, 28(2): 231-241.", 
 "^ot:studyYear": 2002, 
+"^ot:tag": [], 
 "^ot:treesElementOrder": [
 "trees1641"
 ], 
@@ -192,9 +163,9 @@
 "^ot:treebaseOTUId": "Tl56493"
 }, 
 "otu268069": {
-"^ot:altLabel": "Lentinula", 
 "^ot:originalLabel": "Lentinula sp WC802", 
 "^ot:ottId": 162650, 
+"^ot:ottTaxonName": "Lentinula", 
 "^ot:treebaseOTUId": "Tl56494"
 }, 
 "otu268070": {
@@ -234,9 +205,9 @@
 "^ot:treebaseOTUId": "Tl56500"
 }, 
 "otu268076": {
-"^ot:altLabel": "Lentinula", 
 "^ot:originalLabel": "Lentinula sp WC795", 
 "^ot:ottId": 162650, 
+"^ot:ottTaxonName": "Lentinula", 
 "^ot:treebaseOTUId": "Tl56501"
 }, 
 "otu268077": {
@@ -270,9 +241,9 @@
 "^ot:treebaseOTUId": "Tl56506"
 }, 
 "otu268082": {
-"^ot:altLabel": "Lentinula", 
 "^ot:originalLabel": "Lentinula sp WC800", 
 "^ot:ottId": 162650, 
+"^ot:ottTaxonName": "Lentinula", 
 "^ot:treebaseOTUId": "Tl56507"
 }, 
 "otu268083": {
@@ -307,6 +278,8 @@
 }, 
 "otu268088": {
 "^ot:originalLabel": "Collybia dryophila RV83 180", 
+"^ot:ottId": 677117, 
+"^ot:ottTaxonName": "Gymnopus dryophilus", 
 "^ot:treebaseOTUId": "Tl56513"
 }, 
 "otu268089": {
@@ -340,13 +313,15 @@
 "^ot:treebaseOTUId": "Tl56518"
 }, 
 "otu268094": {
-"^ot:altLabel": "Lentinula", 
 "^ot:originalLabel": "Lentinula sp WC794", 
 "^ot:ottId": 162650, 
+"^ot:ottTaxonName": "Lentinula", 
 "^ot:treebaseOTUId": "Tl56519"
 }, 
 "otu268095": {
 "^ot:originalLabel": "Micromphale perforans RV83 89", 
+"^ot:ottId": 5305810, 
+"^ot:ottTaxonName": "Gymnopus perforans", 
 "^ot:treebaseOTUId": "Tl56520"
 }, 
 "otu268096": {
@@ -411,6 +386,8 @@
 }, 
 "otu268106": {
 "^ot:originalLabel": "Campanella subdendrophora DAOM", 
+"^ot:ottId": 1008430, 
+"^ot:ottTaxonName": "Tetrapyrgos subdendrophora", 
 "^ot:treebaseOTUId": "Tl56531"
 }, 
 "otu268107": {
@@ -480,15 +457,15 @@
 "^ot:treebaseOTUId": "Tl56542"
 }, 
 "otu268118": {
-"^ot:altLabel": "Lentinula", 
 "^ot:originalLabel": "Lentinula sp WC793", 
 "^ot:ottId": 162650, 
+"^ot:ottTaxonName": "Lentinula", 
 "^ot:treebaseOTUId": "Tl56543"
 }, 
 "otu268119": {
-"^ot:altLabel": "Lentinula", 
 "^ot:originalLabel": "Lentinula sp WC394", 
 "^ot:ottId": 162650, 
+"^ot:ottTaxonName": "Lentinula", 
 "^ot:treebaseOTUId": "Tl56544"
 }, 
 "otu268120": {
@@ -510,9 +487,9 @@
 "^ot:treebaseOTUId": "Tl56547"
 }, 
 "otu268123": {
-"^ot:altLabel": "Lentinula raphanica", 
 "^ot:originalLabel": "Lentinula raphanica 9156", 
 "^ot:ottId": 136941, 
+"^ot:ottTaxonName": "Lentinula raphanica", 
 "^ot:treebaseOTUId": "Tl56548"
 }, 
 "otu268124": {
@@ -560,8 +537,14 @@
 "treeById": {
 "tree3315": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "MP, LSU", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node662455", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node662455": {
 "edge662456": {
@@ -882,9 +865,15 @@
 }, 
 "tree3316": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "MP, ITS", 
 "^ot:inGroupClade": "node662500", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node662500", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node662500": {
 "edge662501": {
@@ -1457,9 +1446,15 @@
 }, 
 "tree3317": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "MP, mtSSU", 
 "^ot:inGroupClade": "node662583", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node662581", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node662581": {
 "edge662582": {
@@ -1598,9 +1593,15 @@
 }, 
 "tree5899": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "MP, LSU (rooted)", 
 "^ot:inGroupClade": "node1003154", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node1003147", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node1003147": {
 "edge1003148": {

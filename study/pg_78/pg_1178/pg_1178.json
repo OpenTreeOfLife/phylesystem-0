@@ -19,48 +19,11 @@
 "@id": "peyotl-validator", 
 "@name": "validate_ot_nexson.py", 
 "@url": "https://github.com/OpenTreeOfLife/peyotl", 
-"@version": "0.0.3a", 
+"@version": "0.0.4a", 
 "invocation": {
-"checksPerformed": [
-"MISSING_MANDATORY_KEY", 
-"MISSING_OPTIONAL_KEY", 
-"UNRECOGNIZED_KEY", 
-"MISSING_LIST_EXPECTED", 
-"DUPLICATING_SINGLETON_KEY", 
-"REFERENCED_ID_NOT_FOUND", 
-"REPEATED_ID", 
-"REPEATED_OTU", 
-"MULTIPLE_ROOT_NODES", 
-"NO_ROOT_NODE", 
-"MULTIPLE_EDGES_FOR_NODES", 
-"CYCLE_DETECTED", 
-"DISCONNECTED_GRAPH_DETECTED", 
-"INCORRECT_ROOT_NODE_LABEL", 
-"TIP_WITHOUT_OTU", 
-"TIP_WITHOUT_OTT_ID", 
-"MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
-"NON_MONOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
-"INVALID_PROPERTY_VALUE", 
-"PROPERTY_VALUE_NOT_USEFUL", 
-"UNRECOGNIZED_PROPERTY_VALUE", 
-"MULTIPLE_TREES", 
-"UNRECOGNIZED_TAG", 
-"CONFLICTING_PROPERTY_VALUES", 
-"NO_TREES", 
-"DEPRECATED_PROPERTY", 
-"UNPARSEABLE_META", 
-"UNREACHABLE_NODE", 
-"INCORRECT_VALUE_TYPE", 
-"MISSING_CRUCIAL_CONTENT"
-], 
 "commandLine": [
 "--embed", 
-"--agent-only", 
-"-e", 
-"../mig-phyelesystem-scratch/1178/validation.json", 
-"-o", 
-"../mig-phyelesystem-scratch/1178/final.json", 
-"../mig-phyelesystem-scratch/1178/v1.2.1-1178.json"
+"--agent-only"
 ], 
 "otherProperty": [
 {
@@ -76,9 +39,16 @@
 }
 ]
 }, 
+"^ot:annotationEvents": {
+"annotation": []
+}, 
+"^ot:candidateTreeForSynthesis": [], 
 "^ot:curatorName": "Romina Gazis", 
 "^ot:focalClade": 327168, 
 "^ot:focalCladeOTTTaxonName": "Monosporascus", 
+"^ot:messages": {
+"message": []
+}, 
 "^ot:otusElementOrder": [
 "otus1178"
 ], 
@@ -88,6 +58,7 @@
 }, 
 "^ot:studyPublicationReference": "Collado, Javier, Antonio Gonzalez, Gonzalo Platas, Alberto M. Stchigel, Josep Guarro, and Fernando Pelaez. \"< i> Monosporascus ibericus</i> sp. nov., an endophytic ascomycete from plants on saline soils, with observations on the position of the genus based on sequence analysis of the 18S rDNA.\" Mycological Research 106, no. 1 (2002): 118-127.", 
 "^ot:studyYear": 2002, 
+"^ot:tag": [], 
 "^ot:treesElementOrder": [
 "trees1178"
 ], 
@@ -143,7 +114,9 @@
 "^ot:ottTaxonName": "Hyponectria buxi"
 }, 
 "otu229743": {
-"^ot:originalLabel": "Pestalosphaeria sp. AF104356"
+"^ot:originalLabel": "Pestalosphaeria sp. AF104356", 
+"^ot:ottId": 550726, 
+"^ot:ottTaxonName": "Pestalosphaeria"
 }, 
 "otu229744": {
 "^ot:originalLabel": "Pestalosphaeria hansenii", 
@@ -189,10 +162,14 @@
 "^ot:originalLabel": "Diaporthe phaseolorum"
 }, 
 "otu229753": {
-"^ot:originalLabel": "Ophiostoma piliferum"
+"^ot:originalLabel": "Ophiostoma piliferum", 
+"^ot:ottId": 5316941, 
+"^ot:ottTaxonName": "Ceratocystis pilifera"
 }, 
 "otu229754": {
-"^ot:originalLabel": "Ophiostoma stenoceras"
+"^ot:originalLabel": "Ophiostoma stenoceras", 
+"^ot:ottId": 5316943, 
+"^ot:ottTaxonName": "Ceratocystis stenoceras"
 }, 
 "otu229755": {
 "^ot:originalLabel": "Sporothrix schenckii", 
@@ -237,8 +214,14 @@
 "treeById": {
 "tree2381": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "MP, SSU", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node557529", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node557529": {
 "edge557530": {
@@ -559,10 +542,17 @@
 }, 
 "tree5812": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "MP, SSU (rooted)", 
 "^ot:inGroupClade": "node992733", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node992732", 
-"^ot:tag": "SSU", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [
+"SSU"
+], 
 "edgeBySourceId": {
 "node992732": {
 "edge992733": {

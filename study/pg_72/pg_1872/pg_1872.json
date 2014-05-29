@@ -19,48 +19,11 @@
 "@id": "peyotl-validator", 
 "@name": "validate_ot_nexson.py", 
 "@url": "https://github.com/OpenTreeOfLife/peyotl", 
-"@version": "0.0.3a", 
+"@version": "0.0.4a", 
 "invocation": {
-"checksPerformed": [
-"MISSING_MANDATORY_KEY", 
-"MISSING_OPTIONAL_KEY", 
-"UNRECOGNIZED_KEY", 
-"MISSING_LIST_EXPECTED", 
-"DUPLICATING_SINGLETON_KEY", 
-"REFERENCED_ID_NOT_FOUND", 
-"REPEATED_ID", 
-"REPEATED_OTU", 
-"MULTIPLE_ROOT_NODES", 
-"NO_ROOT_NODE", 
-"MULTIPLE_EDGES_FOR_NODES", 
-"CYCLE_DETECTED", 
-"DISCONNECTED_GRAPH_DETECTED", 
-"INCORRECT_ROOT_NODE_LABEL", 
-"TIP_WITHOUT_OTU", 
-"TIP_WITHOUT_OTT_ID", 
-"MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
-"NON_MONOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
-"INVALID_PROPERTY_VALUE", 
-"PROPERTY_VALUE_NOT_USEFUL", 
-"UNRECOGNIZED_PROPERTY_VALUE", 
-"MULTIPLE_TREES", 
-"UNRECOGNIZED_TAG", 
-"CONFLICTING_PROPERTY_VALUES", 
-"NO_TREES", 
-"DEPRECATED_PROPERTY", 
-"UNPARSEABLE_META", 
-"UNREACHABLE_NODE", 
-"INCORRECT_VALUE_TYPE", 
-"MISSING_CRUCIAL_CONTENT"
-], 
 "commandLine": [
 "--embed", 
-"--agent-only", 
-"-e", 
-"../mig-phyelesystem-scratch/1872/validation.json", 
-"-o", 
-"../mig-phyelesystem-scratch/1872/final.json", 
-"../mig-phyelesystem-scratch/1872/v1.2.1-1872.json"
+"--agent-only"
 ], 
 "otherProperty": [
 {
@@ -76,12 +39,19 @@
 }
 ]
 }, 
+"^ot:annotationEvents": {
+"annotation": []
+}, 
+"^ot:candidateTreeForSynthesis": [], 
 "^ot:curatorName": "Chris Owen", 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S1728"
 }, 
 "^ot:focalClade": 967304, 
 "^ot:focalCladeOTTTaxonName": "Gruiformes", 
+"^ot:messages": {
+"message": []
+}, 
 "^ot:otusElementOrder": [
 "otus1872"
 ], 
@@ -89,8 +59,9 @@
 "^ot:studyPublication": {
 "@href": "http://dx.doi.org/10.1016/j.ympev.2007.02.015"
 }, 
-"^ot:studyPublicationReference": "Fain M., Krajewski C., & Houde P. 2007. Phylogeny of \"core Gruiformes\" (Aves: Grues) and resolution of the Limpkin-Sungrebe problem. Molecular Phylogenetics and Evolution 43 (2): 515-529.", 
+"^ot:studyPublicationReference": "Fain, M., Krajewski C., & Houde P. 2007. Phylogeny of \"core Gruiformes\" (Aves: Grues) and resolution of the Limpkin-Sungrebe problem. Molecular Phylogenetics and Evolution 43 (2): 515-529.", 
 "^ot:studyYear": 2007, 
+"^ot:tag": [], 
 "^ot:treesElementOrder": [
 "trees1872"
 ], 
@@ -289,11 +260,6 @@
 "^ot:ottTaxonName": "Anthropoides paradiseus", 
 "^ot:treebaseOTUId": "Tl43811"
 }, 
-"otu286260": {
-"^ot:originalLabel": "Himantopus mexicanus", 
-"^ot:ottId": 427701, 
-"^ot:treebaseOTUId": "Tl43812"
-}, 
 "otu286261": {
 "^ot:originalLabel": "Porzana carolina", 
 "^ot:ottId": 885182, 
@@ -344,15 +310,20 @@
 "@otus": "otus1872", 
 "^ot:treeElementOrder": [
 "tree3780", 
-"tree3781"
+"tree6664"
 ], 
 "treeById": {
 "tree3780": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
 "^ot:branchLengthMode": "ot:substitutionCount", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "Fig. 2 ML", 
 "^ot:inGroupClade": "node715349", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node715336", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node715336": {
 "edge715337": {
@@ -895,306 +866,318 @@
 }
 }
 }, 
-"tree3781": {
+"tree6664": {
 "@xsi:type": "nex:FloatTree", 
-"^ot:branchLengthMode": "ot:substitutionCount", 
-"^ot:curatedType": "Fig. 3 ML", 
-"^ot:inGroupClade": "node715426", 
-"^ot:rootNodeId": "node715413", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
+"^ot:curatedType": "Fig. 3 Bayesian (topology)", 
+"^ot:inGroupClade": "node1161932", 
+"^ot:outGroupEdge": "", 
+"^ot:rootNodeId": "node1161930", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
-"node715413": {
-"edge715414": {
-"@source": "node715413", 
-"@target": "node715414"
+"node1161930": {
+"edge1161931": {
+"@source": "node1161930", 
+"@target": "node1161931"
 }, 
-"edge715415": {
-"@source": "node715413", 
-"@target": "node715415"
-}, 
-"edge715416": {
-"@source": "node715413", 
-"@target": "node715416"
+"edge1161970": {
+"@source": "node1161930", 
+"@target": "node1161970"
 }
 }, 
-"node715416": {
-"edge715417": {
-"@source": "node715416", 
-"@target": "node715417"
+"node1161931": {
+"edge1161932": {
+"@source": "node1161931", 
+"@target": "node1161932"
 }, 
-"edge715426": {
-"@source": "node715416", 
-"@target": "node715426"
+"edge1161961": {
+"@source": "node1161931", 
+"@target": "node1161961"
 }
 }, 
-"node715417": {
-"edge715418": {
-"@source": "node715417", 
-"@target": "node715418"
+"node1161932": {
+"edge1161933": {
+"@source": "node1161932", 
+"@target": "node1161933"
 }, 
-"edge715421": {
-"@source": "node715417", 
-"@target": "node715421"
+"edge1161956": {
+"@source": "node1161932", 
+"@target": "node1161956"
 }
 }, 
-"node715418": {
-"edge715419": {
-"@source": "node715418", 
-"@target": "node715419"
+"node1161933": {
+"edge1161934": {
+"@source": "node1161933", 
+"@target": "node1161934"
 }, 
-"edge715420": {
-"@source": "node715418", 
-"@target": "node715420"
+"edge1161945": {
+"@source": "node1161933", 
+"@target": "node1161945"
 }
 }, 
-"node715421": {
-"edge715422": {
-"@source": "node715421", 
-"@target": "node715422"
+"node1161934": {
+"edge1161935": {
+"@source": "node1161934", 
+"@target": "node1161935"
 }, 
-"edge715423": {
-"@source": "node715421", 
-"@target": "node715423"
+"edge1161944": {
+"@source": "node1161934", 
+"@target": "node1161944"
 }
 }, 
-"node715423": {
-"edge715424": {
-"@source": "node715423", 
-"@target": "node715424"
+"node1161935": {
+"edge1161936": {
+"@source": "node1161935", 
+"@target": "node1161936"
 }, 
-"edge715425": {
-"@source": "node715423", 
-"@target": "node715425"
+"edge1161943": {
+"@source": "node1161935", 
+"@target": "node1161943"
 }
 }, 
-"node715426": {
-"edge715427": {
-"@source": "node715426", 
-"@target": "node715427"
+"node1161936": {
+"edge1161937": {
+"@source": "node1161936", 
+"@target": "node1161937"
 }, 
-"edge715432": {
-"@source": "node715426", 
-"@target": "node715432"
+"edge1161942": {
+"@source": "node1161936", 
+"@target": "node1161942"
 }
 }, 
-"node715427": {
-"edge715428": {
-"@source": "node715427", 
-"@target": "node715428"
+"node1161937": {
+"edge1161938": {
+"@source": "node1161937", 
+"@target": "node1161938"
 }, 
-"edge715429": {
-"@source": "node715427", 
-"@target": "node715429"
+"edge1161941": {
+"@source": "node1161937", 
+"@target": "node1161941"
 }
 }, 
-"node715429": {
-"edge715430": {
-"@source": "node715429", 
-"@target": "node715430"
+"node1161938": {
+"edge1161939": {
+"@source": "node1161938", 
+"@target": "node1161939"
 }, 
-"edge715431": {
-"@source": "node715429", 
-"@target": "node715431"
+"edge1161940": {
+"@source": "node1161938", 
+"@target": "node1161940"
 }
 }, 
-"node715432": {
-"edge715433": {
-"@source": "node715432", 
-"@target": "node715433"
+"node1161945": {
+"edge1161946": {
+"@source": "node1161945", 
+"@target": "node1161946"
 }, 
-"edge715444": {
-"@source": "node715432", 
-"@target": "node715444"
+"edge1161955": {
+"@source": "node1161945", 
+"@target": "node1161955"
 }
 }, 
-"node715433": {
-"edge715434": {
-"@source": "node715433", 
-"@target": "node715434"
+"node1161946": {
+"edge1161947": {
+"@source": "node1161946", 
+"@target": "node1161947"
 }, 
-"edge715435": {
-"@source": "node715433", 
-"@target": "node715435"
+"edge1161952": {
+"@source": "node1161946", 
+"@target": "node1161952"
 }
 }, 
-"node715435": {
-"edge715436": {
-"@source": "node715435", 
-"@target": "node715436"
+"node1161947": {
+"edge1161948": {
+"@source": "node1161947", 
+"@target": "node1161948"
 }, 
-"edge715437": {
-"@source": "node715435", 
-"@target": "node715437"
+"edge1161951": {
+"@source": "node1161947", 
+"@target": "node1161951"
 }
 }, 
-"node715437": {
-"edge715438": {
-"@source": "node715437", 
-"@target": "node715438"
+"node1161948": {
+"edge1161949": {
+"@source": "node1161948", 
+"@target": "node1161949"
 }, 
-"edge715439": {
-"@source": "node715437", 
-"@target": "node715439"
+"edge1161950": {
+"@source": "node1161948", 
+"@target": "node1161950"
 }
 }, 
-"node715439": {
-"edge715440": {
-"@source": "node715439", 
-"@target": "node715440"
+"node1161952": {
+"edge1161953": {
+"@source": "node1161952", 
+"@target": "node1161953"
 }, 
-"edge715441": {
-"@source": "node715439", 
-"@target": "node715441"
+"edge1161954": {
+"@source": "node1161952", 
+"@target": "node1161954"
 }
 }, 
-"node715441": {
-"edge715442": {
-"@source": "node715441", 
-"@target": "node715442"
+"node1161956": {
+"edge1161957": {
+"@source": "node1161956", 
+"@target": "node1161957"
 }, 
-"edge715443": {
-"@source": "node715441", 
-"@target": "node715443"
+"edge1161960": {
+"@source": "node1161956", 
+"@target": "node1161960"
 }
 }, 
-"node715444": {
-"edge715445": {
-"@source": "node715444", 
-"@target": "node715445"
+"node1161957": {
+"edge1161958": {
+"@source": "node1161957", 
+"@target": "node1161958"
 }, 
-"edge715446": {
-"@source": "node715444", 
-"@target": "node715446"
+"edge1161959": {
+"@source": "node1161957", 
+"@target": "node1161959"
 }
 }, 
-"node715446": {
-"edge715447": {
-"@source": "node715446", 
-"@target": "node715447"
+"node1161961": {
+"edge1161962": {
+"@source": "node1161961", 
+"@target": "node1161962"
 }, 
-"edge715450": {
-"@source": "node715446", 
-"@target": "node715450"
+"edge1161965": {
+"@source": "node1161961", 
+"@target": "node1161965"
 }
 }, 
-"node715447": {
-"edge715448": {
-"@source": "node715447", 
-"@target": "node715448"
+"node1161962": {
+"edge1161963": {
+"@source": "node1161962", 
+"@target": "node1161963"
 }, 
-"edge715449": {
-"@source": "node715447", 
-"@target": "node715449"
+"edge1161964": {
+"@source": "node1161962", 
+"@target": "node1161964"
 }
 }, 
-"node715450": {
-"edge715451": {
-"@source": "node715450", 
-"@target": "node715451"
+"node1161965": {
+"edge1161966": {
+"@source": "node1161965", 
+"@target": "node1161966"
 }, 
-"edge715452": {
-"@source": "node715450", 
-"@target": "node715452"
+"edge1161969": {
+"@source": "node1161965", 
+"@target": "node1161969"
 }
 }, 
-"node715452": {
-"edge715453": {
-"@source": "node715452", 
-"@target": "node715453"
+"node1161966": {
+"edge1161967": {
+"@source": "node1161966", 
+"@target": "node1161967"
 }, 
-"edge715454": {
-"@source": "node715452", 
-"@target": "node715454"
+"edge1161968": {
+"@source": "node1161966", 
+"@target": "node1161968"
+}
+}, 
+"node1161970": {
+"edge1161971": {
+"@source": "node1161970", 
+"@target": "node1161971"
+}, 
+"edge1161972": {
+"@source": "node1161970", 
+"@target": "node1161972"
 }
 }
 }, 
 "nodeById": {
-"node715413": {
+"node1161930": {
 "@root": true
 }, 
-"node715414": {
-"@otu": "otu286228"
-}, 
-"node715415": {
-"@otu": "otu286229"
-}, 
-"node715416": {}, 
-"node715417": {}, 
-"node715418": {}, 
-"node715419": {
-"@otu": "otu286231"
-}, 
-"node715420": {
-"@otu": "otu286236"
-}, 
-"node715421": {}, 
-"node715422": {
-"@otu": "otu286241"
-}, 
-"node715423": {}, 
-"node715424": {
-"@otu": "otu286257"
-}, 
-"node715425": {
-"@otu": "otu286235"
-}, 
-"node715426": {}, 
-"node715427": {}, 
-"node715428": {
-"@otu": "otu286264"
-}, 
-"node715429": {}, 
-"node715430": {
-"@otu": "otu286239"
-}, 
-"node715431": {
-"@otu": "otu286258"
-}, 
-"node715432": {}, 
-"node715433": {}, 
-"node715434": {
-"@otu": "otu286233"
-}, 
-"node715435": {}, 
-"node715436": {
-"@otu": "otu286234"
-}, 
-"node715437": {}, 
-"node715438": {
-"@otu": "otu286243"
-}, 
-"node715439": {}, 
-"node715440": {
-"@otu": "otu286232"
-}, 
-"node715441": {}, 
-"node715442": {
+"node1161931": {}, 
+"node1161932": {}, 
+"node1161933": {}, 
+"node1161934": {}, 
+"node1161935": {}, 
+"node1161936": {}, 
+"node1161937": {}, 
+"node1161938": {}, 
+"node1161939": {
 "@otu": "otu286254"
 }, 
-"node715443": {
+"node1161940": {
 "@otu": "otu286259"
 }, 
-"node715444": {}, 
-"node715445": {
-"@otu": "otu286230"
+"node1161941": {
+"@otu": "otu286232"
 }, 
-"node715446": {}, 
-"node715447": {}, 
-"node715448": {
-"@otu": "otu286245"
+"node1161942": {
+"@otu": "otu286243"
 }, 
-"node715449": {
-"@otu": "otu286249"
+"node1161943": {
+"@otu": "otu286234"
 }, 
-"node715450": {}, 
-"node715451": {
-"@otu": "otu286251"
+"node1161944": {
+"@otu": "otu286233"
 }, 
-"node715452": {}, 
-"node715453": {
+"node1161945": {}, 
+"node1161946": {}, 
+"node1161947": {}, 
+"node1161948": {}, 
+"node1161949": {
 "@otu": "otu286261"
 }, 
-"node715454": {
+"node1161950": {
 "@otu": "otu286244"
+}, 
+"node1161951": {
+"@otu": "otu286251"
+}, 
+"node1161952": {}, 
+"node1161953": {
+"@otu": "otu286245"
+}, 
+"node1161954": {
+"@otu": "otu286249"
+}, 
+"node1161955": {
+"@otu": "otu286230"
+}, 
+"node1161956": {}, 
+"node1161957": {}, 
+"node1161958": {
+"@otu": "otu286239"
+}, 
+"node1161959": {
+"@otu": "otu286258"
+}, 
+"node1161960": {
+"@otu": "otu286264"
+}, 
+"node1161961": {}, 
+"node1161962": {}, 
+"node1161963": {
+"@otu": "otu286236"
+}, 
+"node1161964": {
+"@otu": "otu286231"
+}, 
+"node1161965": {}, 
+"node1161966": {}, 
+"node1161967": {
+"@otu": "otu286257"
+}, 
+"node1161968": {
+"@otu": "otu286235"
+}, 
+"node1161969": {
+"@otu": "otu286241"
+}, 
+"node1161970": {}, 
+"node1161971": {
+"@otu": "otu286228"
+}, 
+"node1161972": {
+"@otu": "otu286229"
 }
 }
 }

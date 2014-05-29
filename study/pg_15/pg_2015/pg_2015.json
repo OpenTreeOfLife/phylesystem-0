@@ -19,48 +19,11 @@
 "@id": "peyotl-validator", 
 "@name": "validate_ot_nexson.py", 
 "@url": "https://github.com/OpenTreeOfLife/peyotl", 
-"@version": "0.0.3a", 
+"@version": "0.0.4a", 
 "invocation": {
-"checksPerformed": [
-"MISSING_MANDATORY_KEY", 
-"MISSING_OPTIONAL_KEY", 
-"UNRECOGNIZED_KEY", 
-"MISSING_LIST_EXPECTED", 
-"DUPLICATING_SINGLETON_KEY", 
-"REFERENCED_ID_NOT_FOUND", 
-"REPEATED_ID", 
-"REPEATED_OTU", 
-"MULTIPLE_ROOT_NODES", 
-"NO_ROOT_NODE", 
-"MULTIPLE_EDGES_FOR_NODES", 
-"CYCLE_DETECTED", 
-"DISCONNECTED_GRAPH_DETECTED", 
-"INCORRECT_ROOT_NODE_LABEL", 
-"TIP_WITHOUT_OTU", 
-"TIP_WITHOUT_OTT_ID", 
-"MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
-"NON_MONOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
-"INVALID_PROPERTY_VALUE", 
-"PROPERTY_VALUE_NOT_USEFUL", 
-"UNRECOGNIZED_PROPERTY_VALUE", 
-"MULTIPLE_TREES", 
-"UNRECOGNIZED_TAG", 
-"CONFLICTING_PROPERTY_VALUES", 
-"NO_TREES", 
-"DEPRECATED_PROPERTY", 
-"UNPARSEABLE_META", 
-"UNREACHABLE_NODE", 
-"INCORRECT_VALUE_TYPE", 
-"MISSING_CRUCIAL_CONTENT"
-], 
 "commandLine": [
 "--embed", 
-"--agent-only", 
-"-e", 
-"../mig-phyelesystem-scratch/2015/validation.json", 
-"-o", 
-"../mig-phyelesystem-scratch/2015/final.json", 
-"../mig-phyelesystem-scratch/2015/v1.2.1-2015.json"
+"--agent-only"
 ], 
 "otherProperty": [
 {
@@ -76,12 +39,19 @@
 }
 ]
 }, 
+"^ot:annotationEvents": {
+"annotation": []
+}, 
+"^ot:candidateTreeForSynthesis": [], 
 "^ot:curatorName": "Chris Owen", 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S12179"
 }, 
 "^ot:focalClade": 1041547, 
 "^ot:focalCladeOTTTaxonName": "Passeriformes", 
+"^ot:messages": {
+"message": []
+}, 
 "^ot:otusElementOrder": [
 "otus2015"
 ], 
@@ -89,8 +59,9 @@
 "^ot:studyPublication": {
 "@href": "http://dx.doi.org/10.1186/1471-2148-11-313"
 }, 
-"^ot:studyPublicationReference": "Odeen A., Hastad O., & Alstrom P. 2011. Evolution of ultraviolet vision in the largest avian radiation - the passerines. BMC Evolutionary Biology 11 (313): 1-8.", 
+"^ot:studyPublicationReference": "Odeen, A., Hastad O., & Alstrom P. 2011. Evolution of ultraviolet vision in the largest avian radiation - the passerines. BMC Evolutionary Biology 11 (313): 1-8.", 
 "^ot:studyYear": 2011, 
+"^ot:tag": [], 
 "^ot:treesElementOrder": [
 "trees2015"
 ], 
@@ -146,14 +117,15 @@
 "^ot:treebaseOTUId": "Tl677464"
 }, 
 "otu304240": {
-"^ot:altLabel": "Philesturnus carunculatus", 
 "^ot:originalLabel": "Creadion carunculatus", 
 "^ot:ottId": 61981, 
+"^ot:ottTaxonName": "Philesturnus carunculatus", 
 "^ot:treebaseOTUId": "Tl677465"
 }, 
 "otu304241": {
 "^ot:originalLabel": "Nestor notabilis", 
 "^ot:ottId": 749203, 
+"^ot:ottTaxonName": "Nestor notabilis", 
 "^ot:treebaseOTUId": "Tl677466"
 }, 
 "otu304242": {
@@ -182,6 +154,8 @@
 }, 
 "otu304246": {
 "^ot:originalLabel": "Dendroica", 
+"^ot:ottId": 666104, 
+"^ot:ottTaxonName": "Dendroica", 
 "^ot:treebaseOTUId": "Tl677471"
 }, 
 "otu304247": {
@@ -261,9 +235,9 @@
 "^ot:treebaseOTUId": "Tl677484"
 }, 
 "otu304260": {
-"^ot:altLabel": "Caracara plancus", 
 "^ot:originalLabel": "Polyborus plancus", 
 "^ot:ottId": 786444, 
+"^ot:ottTaxonName": "Caracara plancus", 
 "^ot:treebaseOTUId": "Tl677485"
 }, 
 "otu304261": {
@@ -275,6 +249,7 @@
 "otu304262": {
 "^ot:originalLabel": "Falco", 
 "^ot:ottId": 786441, 
+"^ot:ottTaxonName": "Falco", 
 "^ot:treebaseOTUId": "Tl677487"
 }, 
 "otu304263": {
@@ -286,6 +261,7 @@
 "otu304264": {
 "^ot:originalLabel": "Psittacus erithacus", 
 "^ot:ottId": 285641, 
+"^ot:ottTaxonName": "Psittacus erithacus", 
 "^ot:treebaseOTUId": "Tl677489"
 }, 
 "otu304265": {
@@ -474,10 +450,15 @@
 "treeById": {
 "tree4152": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
 "^ot:branchLengthMode": "ot:substitutionCount", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "Fig. 2 BI", 
 "^ot:inGroupClade": "node772024", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node772024", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node772024": {
 "edge772025": {

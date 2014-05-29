@@ -19,48 +19,11 @@
 "@id": "peyotl-validator", 
 "@name": "validate_ot_nexson.py", 
 "@url": "https://github.com/OpenTreeOfLife/peyotl", 
-"@version": "0.0.3a", 
+"@version": "0.0.4a", 
 "invocation": {
-"checksPerformed": [
-"MISSING_MANDATORY_KEY", 
-"MISSING_OPTIONAL_KEY", 
-"UNRECOGNIZED_KEY", 
-"MISSING_LIST_EXPECTED", 
-"DUPLICATING_SINGLETON_KEY", 
-"REFERENCED_ID_NOT_FOUND", 
-"REPEATED_ID", 
-"REPEATED_OTU", 
-"MULTIPLE_ROOT_NODES", 
-"NO_ROOT_NODE", 
-"MULTIPLE_EDGES_FOR_NODES", 
-"CYCLE_DETECTED", 
-"DISCONNECTED_GRAPH_DETECTED", 
-"INCORRECT_ROOT_NODE_LABEL", 
-"TIP_WITHOUT_OTU", 
-"TIP_WITHOUT_OTT_ID", 
-"MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
-"NON_MONOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
-"INVALID_PROPERTY_VALUE", 
-"PROPERTY_VALUE_NOT_USEFUL", 
-"UNRECOGNIZED_PROPERTY_VALUE", 
-"MULTIPLE_TREES", 
-"UNRECOGNIZED_TAG", 
-"CONFLICTING_PROPERTY_VALUES", 
-"NO_TREES", 
-"DEPRECATED_PROPERTY", 
-"UNPARSEABLE_META", 
-"UNREACHABLE_NODE", 
-"INCORRECT_VALUE_TYPE", 
-"MISSING_CRUCIAL_CONTENT"
-], 
 "commandLine": [
 "--embed", 
-"--agent-only", 
-"-e", 
-"../mig-phyelesystem-scratch/1628/validation.json", 
-"-o", 
-"../mig-phyelesystem-scratch/1628/final.json", 
-"../mig-phyelesystem-scratch/1628/v1.2.1-1628.json"
+"--agent-only"
 ], 
 "otherProperty": [
 {
@@ -76,12 +39,19 @@
 }
 ]
 }, 
+"^ot:annotationEvents": {
+"annotation": []
+}, 
+"^ot:candidateTreeForSynthesis": [], 
 "^ot:curatorName": "Romina Gazis", 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S1401"
 }, 
 "^ot:focalClade": 646175, 
 "^ot:focalCladeOTTTaxonName": "Leptosphaeria", 
+"^ot:messages": {
+"message": []
+}, 
 "^ot:otusElementOrder": [
 "otus1628"
 ], 
@@ -91,6 +61,7 @@
 }, 
 "^ot:studyPublicationReference": "Voigt K., Cozijnsen A., Kroymann J., P\u00f6ggeler S., & Howlett B. 2005. Phylogenetic relationships between members of the crucifer pathogenic Leptosphaeria maculans species complex as shown by mating type (MAT1-2), actin and beta tubulin sequences. Molecular Phylogenetics and Evolution, 37(2): 541-557.", 
 "^ot:studyYear": 2005, 
+"^ot:tag": [], 
 "^ot:treesElementOrder": [
 "trees1628"
 ], 
@@ -117,6 +88,8 @@
 }, 
 "otu266761": {
 "^ot:originalLabel": "Cochliobolus heterostrophus", 
+"^ot:ottId": 1042273, 
+"^ot:ottTaxonName": "Cochliobolus heterostrophus", 
 "^ot:treebaseOTUId": "Tl161934"
 }, 
 "otu266762": {
@@ -425,10 +398,14 @@
 }, 
 "otu266817": {
 "^ot:originalLabel": "Cochliobolus heterostrophus MAT1", 
+"^ot:ottId": 1042273, 
+"^ot:ottTaxonName": "Cochliobolus heterostrophus", 
 "^ot:treebaseOTUId": "Tl90078"
 }, 
 "otu266818": {
 "^ot:originalLabel": "Cochliobolus heterostrophus MAT2", 
+"^ot:ottId": 1042273, 
+"^ot:ottTaxonName": "Cochliobolus heterostrophus", 
 "^ot:treebaseOTUId": "Tl90079"
 }, 
 "otu266819": {
@@ -457,6 +434,8 @@
 }, 
 "otu266823": {
 "^ot:originalLabel": "Phoma betae", 
+"^ot:ottId": 5318830, 
+"^ot:ottTaxonName": "Pleospora betae", 
 "^ot:treebaseOTUId": "Tl90084"
 }, 
 "otu266824": {
@@ -493,9 +472,15 @@
 "treeById": {
 "tree3282": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "MP, MAT1-2 (aa)", 
 "^ot:inGroupClade": "node658434", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node658430", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node658430": {
 "edge658431": {
@@ -592,9 +577,15 @@
 }, 
 "tree3283": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "ML, MAT1-2 (aa)", 
 "^ot:inGroupClade": "node658444", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node658443", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node658443": {
 "edge658444": {
@@ -691,8 +682,14 @@
 }, 
 "tree3284": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "NJ, MAT1-2", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node658456", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node658456": {
 "edge658457": {
@@ -1265,9 +1262,14 @@
 }, 
 "tree3285": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "MP, actin + b-tub", 
 "^ot:inGroupClade": "node658538", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node658537", 
+"^ot:specifiedRoot": "", 
 "^ot:tag": [
 "MP", 
 "ACT", 
@@ -1642,8 +1644,14 @@
 }, 
 "tree3286": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "MP, actin + b-tub + MAT1-2", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node658589", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node658589": {
 "edge658590": {

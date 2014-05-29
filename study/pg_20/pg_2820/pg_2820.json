@@ -19,48 +19,11 @@
 "@id": "peyotl-validator", 
 "@name": "validate_ot_nexson.py", 
 "@url": "https://github.com/OpenTreeOfLife/peyotl", 
-"@version": "0.0.3a", 
+"@version": "0.0.4a", 
 "invocation": {
-"checksPerformed": [
-"MISSING_MANDATORY_KEY", 
-"MISSING_OPTIONAL_KEY", 
-"UNRECOGNIZED_KEY", 
-"MISSING_LIST_EXPECTED", 
-"DUPLICATING_SINGLETON_KEY", 
-"REFERENCED_ID_NOT_FOUND", 
-"REPEATED_ID", 
-"REPEATED_OTU", 
-"MULTIPLE_ROOT_NODES", 
-"NO_ROOT_NODE", 
-"MULTIPLE_EDGES_FOR_NODES", 
-"CYCLE_DETECTED", 
-"DISCONNECTED_GRAPH_DETECTED", 
-"INCORRECT_ROOT_NODE_LABEL", 
-"TIP_WITHOUT_OTU", 
-"TIP_WITHOUT_OTT_ID", 
-"MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
-"NON_MONOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
-"INVALID_PROPERTY_VALUE", 
-"PROPERTY_VALUE_NOT_USEFUL", 
-"UNRECOGNIZED_PROPERTY_VALUE", 
-"MULTIPLE_TREES", 
-"UNRECOGNIZED_TAG", 
-"CONFLICTING_PROPERTY_VALUES", 
-"NO_TREES", 
-"DEPRECATED_PROPERTY", 
-"UNPARSEABLE_META", 
-"UNREACHABLE_NODE", 
-"INCORRECT_VALUE_TYPE", 
-"MISSING_CRUCIAL_CONTENT"
-], 
 "commandLine": [
 "--embed", 
-"--agent-only", 
-"-e", 
-"../mig-phyelesystem-scratch/2820/validation.json", 
-"-o", 
-"../mig-phyelesystem-scratch/2820/final.json", 
-"../mig-phyelesystem-scratch/2820/v1.2.1-2820.json"
+"--agent-only"
 ], 
 "otherProperty": [
 {
@@ -76,9 +39,16 @@
 }
 ]
 }, 
+"^ot:annotationEvents": {
+"annotation": []
+}, 
+"^ot:candidateTreeForSynthesis": [], 
 "^ot:curatorName": "bryan drew", 
 "^ot:focalClade": 916750, 
 "^ot:focalCladeOTTTaxonName": "Streptophyta", 
+"^ot:messages": {
+"message": []
+}, 
 "^ot:otusElementOrder": [
 "otus2820"
 ], 
@@ -88,6 +58,7 @@
 }, 
 "^ot:studyPublicationReference": "Brad R Ruhfel, Matthew A Gitzendanner, Pamela S Soltis, Douglas E Soltis, J Burleigh. 2014. From algae to angiosperms\u2013inferring the phylogeny of green plants (Viridiplantae) from 360 plastid genomes. BMC Evol Biol 14(1):23.", 
 "^ot:studyYear": 2014, 
+"^ot:tag": [], 
 "^ot:treesElementOrder": [
 "trees2820"
 ], 
@@ -965,7 +936,9 @@
 "^ot:ottTaxonName": "Heuchera sanguinea"
 }, 
 "otu418791": {
-"^ot:originalLabel": "Vitis vinifera"
+"^ot:originalLabel": "Vitis vinifera", 
+"^ot:ottId": 756728, 
+"^ot:ottTaxonName": "Vitis vinifera"
 }, 
 "otu418792": {
 "^ot:originalLabel": "Dillenia indica", 
@@ -1433,10 +1406,14 @@
 "^ot:ottTaxonName": "Renealmia alpinia"
 }, 
 "otu418885": {
-"^ot:originalLabel": "Dasypogon bromeliifolius"
+"^ot:originalLabel": "Dasypogon bromeliifolius", 
+"^ot:ottId": 1050331, 
+"^ot:ottTaxonName": "Dasypogon bromeliifolius"
 }, 
 "otu418886": {
-"^ot:originalLabel": "Kingia australis"
+"^ot:originalLabel": "Kingia australis", 
+"^ot:ottId": 221917, 
+"^ot:ottTaxonName": "Kingia australis"
 }, 
 "otu418887": {
 "^ot:originalLabel": "Phoenix dactylifera", 
@@ -1774,13 +1751,19 @@
 "^ot:ottTaxonName": "Leptosira terrestris"
 }, 
 "otu418954": {
-"^ot:originalLabel": "Coccomyxa sp"
+"^ot:originalLabel": "Coccomyxa sp", 
+"^ot:ottId": 450225, 
+"^ot:ottTaxonName": "Coccomyxa"
 }, 
 "otu418955": {
-"^ot:originalLabel": "Helicosporidium sp"
+"^ot:originalLabel": "Helicosporidium sp", 
+"^ot:ottId": 338341, 
+"^ot:ottTaxonName": "Helicosporidium"
 }, 
 "otu418956": {
-"^ot:originalLabel": "Parachlorella kessleri"
+"^ot:originalLabel": "Parachlorella kessleri", 
+"^ot:ottId": 339020, 
+"^ot:ottTaxonName": "Parachlorella kessleri"
 }, 
 "otu418957": {
 "^ot:originalLabel": "Chlorella variabilis", 
@@ -1808,7 +1791,9 @@
 "^ot:ottTaxonName": "Oedogonium cardiacum"
 }, 
 "otu418962": {
-"^ot:originalLabel": "Stigeoclonium helveticum"
+"^ot:originalLabel": "Stigeoclonium helveticum", 
+"^ot:ottId": 197187, 
+"^ot:ottTaxonName": "Stigeoclonium helveticum"
 }, 
 "otu418963": {
 "^ot:originalLabel": "Schizomeris leibleinii", 
@@ -1841,10 +1826,14 @@
 "^ot:ottTaxonName": "Chlamydomonas reinhardtii"
 }, 
 "otu418969": {
-"^ot:originalLabel": "Pseudendoclonium akinetum"
+"^ot:originalLabel": "Pseudendoclonium akinetum", 
+"^ot:ottId": 555337, 
+"^ot:ottTaxonName": "Pseudendoclonium akinetum"
 }, 
 "otu418970": {
-"^ot:originalLabel": "Oltmannsiellopsis viridis"
+"^ot:originalLabel": "Oltmannsiellopsis viridis", 
+"^ot:ottId": 311485, 
+"^ot:ottTaxonName": "Oltmannsiellopsis viridis"
 }, 
 "otu418971": {
 "^ot:originalLabel": "Pyramimonas parkeae", 
@@ -1865,7 +1854,9 @@
 "^ot:originalLabel": "Micromonas sp"
 }, 
 "otu418975": {
-"^ot:originalLabel": "Monomastix sp"
+"^ot:originalLabel": "Monomastix sp", 
+"^ot:ottId": 327966, 
+"^ot:ottTaxonName": "Monomastix"
 }, 
 "otu418976": {
 "^ot:originalLabel": "Pycnococcus provasolii", 
@@ -1885,9 +1876,14 @@
 "treeById": {
 "tree6565": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
 "^ot:branchLengthMode": "ot:substitutionCount", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "ML best tree", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node1139460", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node1139460": {
 "edge1139461": {
@@ -7644,8 +7640,14 @@
 }, 
 "tree6566": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "bootstrap consensus tree", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node1140179", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node1140179": {
 "edge1140180": {

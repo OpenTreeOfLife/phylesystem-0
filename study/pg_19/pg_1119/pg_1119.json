@@ -19,48 +19,11 @@
 "@id": "peyotl-validator", 
 "@name": "validate_ot_nexson.py", 
 "@url": "https://github.com/OpenTreeOfLife/peyotl", 
-"@version": "0.0.3a", 
+"@version": "0.0.4a", 
 "invocation": {
-"checksPerformed": [
-"MISSING_MANDATORY_KEY", 
-"MISSING_OPTIONAL_KEY", 
-"UNRECOGNIZED_KEY", 
-"MISSING_LIST_EXPECTED", 
-"DUPLICATING_SINGLETON_KEY", 
-"REFERENCED_ID_NOT_FOUND", 
-"REPEATED_ID", 
-"REPEATED_OTU", 
-"MULTIPLE_ROOT_NODES", 
-"NO_ROOT_NODE", 
-"MULTIPLE_EDGES_FOR_NODES", 
-"CYCLE_DETECTED", 
-"DISCONNECTED_GRAPH_DETECTED", 
-"INCORRECT_ROOT_NODE_LABEL", 
-"TIP_WITHOUT_OTU", 
-"TIP_WITHOUT_OTT_ID", 
-"MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
-"NON_MONOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
-"INVALID_PROPERTY_VALUE", 
-"PROPERTY_VALUE_NOT_USEFUL", 
-"UNRECOGNIZED_PROPERTY_VALUE", 
-"MULTIPLE_TREES", 
-"UNRECOGNIZED_TAG", 
-"CONFLICTING_PROPERTY_VALUES", 
-"NO_TREES", 
-"DEPRECATED_PROPERTY", 
-"UNPARSEABLE_META", 
-"UNREACHABLE_NODE", 
-"INCORRECT_VALUE_TYPE", 
-"MISSING_CRUCIAL_CONTENT"
-], 
 "commandLine": [
 "--embed", 
-"--agent-only", 
-"-e", 
-"../mig-phyelesystem-scratch/1119/validation.json", 
-"-o", 
-"../mig-phyelesystem-scratch/1119/final.json", 
-"../mig-phyelesystem-scratch/1119/v1.2.1-1119.json"
+"--agent-only"
 ], 
 "otherProperty": [
 {
@@ -76,15 +39,23 @@
 }
 ]
 }, 
+"^ot:annotationEvents": {
+"annotation": []
+}, 
+"^ot:candidateTreeForSynthesis": [], 
 "^ot:curatorName": "bryan drew", 
 "^ot:focalClade": 544477, 
 "^ot:focalCladeOTTTaxonName": "Hyptis", 
+"^ot:messages": {
+"message": []
+}, 
 "^ot:otusElementOrder": [
 "otus1119"
 ], 
 "^ot:studyId": "1119", 
 "^ot:studyPublicationReference": "Pastore, J. F. B., Harley, R. M., Forest, F., Paton, A., & van den Berg, C. (2011). Phylogeny of the subtribe Hyptidinae (Lamiaceae tribe Ocimeae) as inferred from nuclear and plastid DNA. Taxon, 60(5), 1317-1329.", 
 "^ot:studyYear": 2011, 
+"^ot:tag": [], 
 "^ot:treesElementOrder": [
 "trees1119"
 ], 
@@ -640,7 +611,9 @@
 "^ot:ottTaxonName": "Hypenia reticulata"
 }, 
 "otu224942": {
-"^ot:originalLabel": "Hypenia macrosiphon"
+"^ot:originalLabel": "Hypenia macrosiphon", 
+"^ot:ottId": 4724695, 
+"^ot:ottTaxonName": "Hypenia macrosiphon"
 }, 
 "otu224943": {
 "^ot:originalLabel": "Hypenia densiflora", 
@@ -648,7 +621,9 @@
 "^ot:ottTaxonName": "Hypenia densiflora"
 }, 
 "otu224944": {
-"^ot:originalLabel": "Hypenia marifolia"
+"^ot:originalLabel": "Hypenia marifolia", 
+"^ot:ottId": 4724692, 
+"^ot:ottTaxonName": "Hypenia marifolia"
 }, 
 "otu224945": {
 "^ot:originalLabel": "Hypenia salzmannii", 
@@ -1167,7 +1142,9 @@
 "^ot:ottTaxonName": "Hyptis rugosa"
 }, 
 "otu225049": {
-"^ot:originalLabel": "Callicarpa giraldii"
+"^ot:originalLabel": "Callicarpa giraldii", 
+"^ot:ottId": 270515, 
+"^ot:ottTaxonName": "Callicarpa giraldii"
 }, 
 "otu225050": {
 "^ot:originalLabel": "Plectranthus thyrsoideus", 
@@ -1229,9 +1206,14 @@
 "treeById": {
 "tree2227": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
 "^ot:branchLengthMode": "ot:substitutionCount", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "ML", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node540518", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node540518": {
 "edge540519": {
@@ -4508,9 +4490,14 @@
 }, 
 "tree2228": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
 "^ot:branchLengthMode": "ot:substitutionCount", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "ML best tree", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node540927", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node540927": {
 "edge540928": {
@@ -5763,9 +5750,14 @@
 }, 
 "tree2229": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
 "^ot:branchLengthMode": "ot:substitutionCount", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "ML best tree", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node541083", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node541083": {
 "edge541084": {
@@ -6786,8 +6778,14 @@
 }, 
 "tree2230": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "ML best tree", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node541210", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node541210": {
 "edge541211": {

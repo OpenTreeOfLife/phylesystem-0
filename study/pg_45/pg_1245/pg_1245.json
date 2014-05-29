@@ -19,48 +19,11 @@
 "@id": "peyotl-validator", 
 "@name": "validate_ot_nexson.py", 
 "@url": "https://github.com/OpenTreeOfLife/peyotl", 
-"@version": "0.0.3a", 
+"@version": "0.0.4a", 
 "invocation": {
-"checksPerformed": [
-"MISSING_MANDATORY_KEY", 
-"MISSING_OPTIONAL_KEY", 
-"UNRECOGNIZED_KEY", 
-"MISSING_LIST_EXPECTED", 
-"DUPLICATING_SINGLETON_KEY", 
-"REFERENCED_ID_NOT_FOUND", 
-"REPEATED_ID", 
-"REPEATED_OTU", 
-"MULTIPLE_ROOT_NODES", 
-"NO_ROOT_NODE", 
-"MULTIPLE_EDGES_FOR_NODES", 
-"CYCLE_DETECTED", 
-"DISCONNECTED_GRAPH_DETECTED", 
-"INCORRECT_ROOT_NODE_LABEL", 
-"TIP_WITHOUT_OTU", 
-"TIP_WITHOUT_OTT_ID", 
-"MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
-"NON_MONOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
-"INVALID_PROPERTY_VALUE", 
-"PROPERTY_VALUE_NOT_USEFUL", 
-"UNRECOGNIZED_PROPERTY_VALUE", 
-"MULTIPLE_TREES", 
-"UNRECOGNIZED_TAG", 
-"CONFLICTING_PROPERTY_VALUES", 
-"NO_TREES", 
-"DEPRECATED_PROPERTY", 
-"UNPARSEABLE_META", 
-"UNREACHABLE_NODE", 
-"INCORRECT_VALUE_TYPE", 
-"MISSING_CRUCIAL_CONTENT"
-], 
 "commandLine": [
 "--embed", 
-"--agent-only", 
-"-e", 
-"../mig-phyelesystem-scratch/1245/validation.json", 
-"-o", 
-"../mig-phyelesystem-scratch/1245/final.json", 
-"../mig-phyelesystem-scratch/1245/v1.2.1-1245.json"
+"--agent-only"
 ], 
 "otherProperty": [
 {
@@ -76,9 +39,16 @@
 }
 ]
 }, 
+"^ot:annotationEvents": {
+"annotation": []
+}, 
+"^ot:candidateTreeForSynthesis": [], 
 "^ot:curatorName": "bryan drew", 
 "^ot:focalClade": 979501, 
 "^ot:focalCladeOTTTaxonName": "Chlorophyta", 
+"^ot:messages": {
+"message": []
+}, 
 "^ot:otusElementOrder": [
 "otus1245"
 ], 
@@ -88,6 +58,7 @@
 }, 
 "^ot:studyPublicationReference": "Zuccarello, G. C., Price, N., Verbruggen, H., & Leliaert, F. (2009). ANALYSIS OF A PLASTID MULTIGENE DATA SET AND THE PHYLOGENETIC POSITION OF THE MARINE MACROALGA CAULERPA FILIFORMIS (CHLOROPHYTA) 1. Journal of Phycology, 45(5), 1206-1212.", 
 "^ot:studyYear": 2009, 
+"^ot:tag": [], 
 "^ot:treesElementOrder": [
 "trees1245"
 ], 
@@ -95,7 +66,9 @@
 "otus1245": {
 "otuById": {
 "otu236892": {
-"^ot:originalLabel": "Cyanidium caldarium"
+"^ot:originalLabel": "Cyanidium caldarium", 
+"^ot:ottId": 5155129, 
+"^ot:ottTaxonName": "Cyanidium caldarium"
 }, 
 "otu236893": {
 "^ot:originalLabel": "Porphyra purpurea", 
@@ -123,7 +96,9 @@
 "^ot:ottTaxonName": "Acutodesmus obliquus"
 }, 
 "otu236898": {
-"^ot:originalLabel": "Stigeoclonium helveticum"
+"^ot:originalLabel": "Stigeoclonium helveticum", 
+"^ot:ottId": 197187, 
+"^ot:ottTaxonName": "Stigeoclonium helveticum"
 }, 
 "otu236899": {
 "^ot:originalLabel": "Leptosira terrestris", 
@@ -141,10 +116,14 @@
 "^ot:ottTaxonName": "Caulerpa filiformis"
 }, 
 "otu236902": {
-"^ot:originalLabel": "Oltmannsiellopsis viridis"
+"^ot:originalLabel": "Oltmannsiellopsis viridis", 
+"^ot:ottId": 311485, 
+"^ot:ottTaxonName": "Oltmannsiellopsis viridis"
 }, 
 "otu236903": {
-"^ot:originalLabel": "Pseudendoclonium akinetum"
+"^ot:originalLabel": "Pseudendoclonium akinetum", 
+"^ot:ottId": 555337, 
+"^ot:ottTaxonName": "Pseudendoclonium akinetum"
 }, 
 "otu236904": {
 "^ot:originalLabel": "Mesostigma viride", 
@@ -203,10 +182,15 @@
 "treeById": {
 "tree2510": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
 "^ot:branchLengthMode": "ot:substitutionCount", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "BI majority rule consensus tree", 
 "^ot:inGroupClade": "node574100", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node574097", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node574097": {
 "edge574098": {

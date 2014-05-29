@@ -19,48 +19,11 @@
 "@id": "peyotl-validator", 
 "@name": "validate_ot_nexson.py", 
 "@url": "https://github.com/OpenTreeOfLife/peyotl", 
-"@version": "0.0.3a", 
+"@version": "0.0.4a", 
 "invocation": {
-"checksPerformed": [
-"MISSING_MANDATORY_KEY", 
-"MISSING_OPTIONAL_KEY", 
-"UNRECOGNIZED_KEY", 
-"MISSING_LIST_EXPECTED", 
-"DUPLICATING_SINGLETON_KEY", 
-"REFERENCED_ID_NOT_FOUND", 
-"REPEATED_ID", 
-"REPEATED_OTU", 
-"MULTIPLE_ROOT_NODES", 
-"NO_ROOT_NODE", 
-"MULTIPLE_EDGES_FOR_NODES", 
-"CYCLE_DETECTED", 
-"DISCONNECTED_GRAPH_DETECTED", 
-"INCORRECT_ROOT_NODE_LABEL", 
-"TIP_WITHOUT_OTU", 
-"TIP_WITHOUT_OTT_ID", 
-"MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
-"NON_MONOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
-"INVALID_PROPERTY_VALUE", 
-"PROPERTY_VALUE_NOT_USEFUL", 
-"UNRECOGNIZED_PROPERTY_VALUE", 
-"MULTIPLE_TREES", 
-"UNRECOGNIZED_TAG", 
-"CONFLICTING_PROPERTY_VALUES", 
-"NO_TREES", 
-"DEPRECATED_PROPERTY", 
-"UNPARSEABLE_META", 
-"UNREACHABLE_NODE", 
-"INCORRECT_VALUE_TYPE", 
-"MISSING_CRUCIAL_CONTENT"
-], 
 "commandLine": [
 "--embed", 
-"--agent-only", 
-"-e", 
-"../mig-phyelesystem-scratch/1854/validation.json", 
-"-o", 
-"../mig-phyelesystem-scratch/1854/final.json", 
-"../mig-phyelesystem-scratch/1854/v1.2.1-1854.json"
+"--agent-only"
 ], 
 "otherProperty": [
 {
@@ -76,12 +39,19 @@
 }
 ]
 }, 
+"^ot:annotationEvents": {
+"annotation": []
+}, 
+"^ot:candidateTreeForSynthesis": [], 
 "^ot:curatorName": "Chris Owen", 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S11932"
 }, 
 "^ot:focalClade": 1063179, 
 "^ot:focalCladeOTTTaxonName": "Thryothorus", 
+"^ot:messages": {
+"message": []
+}, 
 "^ot:otusElementOrder": [
 "otus1854"
 ], 
@@ -89,8 +59,9 @@
 "^ot:studyPublication": {
 "@href": "http://dx.doi.org/10.1016/j.ympev.2006.04.014"
 }, 
-"^ot:studyPublicationReference": "Mann N.I., Barker F., Graves J.A., Dingess K.A., and Slater P.J. 2006. Molecular data delineate four genera of \"Thryothorus\" wrens. Molecular Phylogenetics and Evolution 40 (3): 750-759.", 
+"^ot:studyPublicationReference": "Mann, N.I., Barker F., Graves J.A., Dingess K.A., and Slater P.J. 2006. Molecular data delineate four genera of \"Thryothorus\" wrens. Molecular Phylogenetics and Evolution 40 (3): 750-759.", 
 "^ot:studyYear": 2006, 
+"^ot:tag": [], 
 "^ot:treesElementOrder": [
 "trees1854"
 ], 
@@ -100,6 +71,7 @@
 "otu283581": {
 "^ot:originalLabel": "Meliphaga gracilis", 
 "^ot:ottId": 196942, 
+"^ot:ottTaxonName": "Meliphaga gracilis", 
 "^ot:treebaseOTUId": "Tl625971"
 }, 
 "otu283582": {
@@ -153,6 +125,7 @@
 "otu283590": {
 "^ot:originalLabel": "Dasyornis broadbenti", 
 "^ot:ottId": 196938, 
+"^ot:ottTaxonName": "Dasyornis broadbenti", 
 "^ot:treebaseOTUId": "Tl625980"
 }, 
 "otu283591": {
@@ -182,6 +155,7 @@
 "otu283595": {
 "^ot:originalLabel": "Certhia familiaris", 
 "^ot:ottId": 1007196, 
+"^ot:ottTaxonName": "Certhia familiaris", 
 "^ot:treebaseOTUId": "Tl625985"
 }, 
 "otu283596": {
@@ -205,6 +179,7 @@
 "otu283599": {
 "^ot:originalLabel": "Sitta pygmaea", 
 "^ot:ottId": 82240, 
+"^ot:ottTaxonName": "Sitta pygmaea", 
 "^ot:treebaseOTUId": "Tl625989"
 }, 
 "otu283600": {
@@ -228,6 +203,7 @@
 "otu283603": {
 "^ot:originalLabel": "Zeledonia coronata", 
 "^ot:ottId": 449580, 
+"^ot:ottTaxonName": "Zeledonia coronata", 
 "^ot:treebaseOTUId": "Tl625993"
 }, 
 "otu283604": {
@@ -251,6 +227,7 @@
 "otu283607": {
 "^ot:originalLabel": "Dumetella carolinensis", 
 "^ot:ottId": 658838, 
+"^ot:ottTaxonName": "Dumetella carolinensis", 
 "^ot:treebaseOTUId": "Tl625997"
 }, 
 "otu283608": {
@@ -302,9 +279,9 @@
 "^ot:treebaseOTUId": "Tl626005"
 }, 
 "otu283616": {
-"^ot:altLabel": "Donacobius atricapilla", 
 "^ot:originalLabel": "Donacobius atricapillus", 
 "^ot:ottId": 636360, 
+"^ot:ottTaxonName": "Donacobius atricapilla", 
 "^ot:treebaseOTUId": "Tl626006"
 }, 
 "otu283617": {
@@ -316,6 +293,7 @@
 "otu283618": {
 "^ot:originalLabel": "Zosterops senegalensis", 
 "^ot:ottId": 446677, 
+"^ot:ottTaxonName": "Zosterops senegalensis", 
 "^ot:treebaseOTUId": "Tl626008"
 }, 
 "otu283619": {
@@ -333,6 +311,7 @@
 "otu283621": {
 "^ot:originalLabel": "Sturnus vulgaris", 
 "^ot:ottId": 565813, 
+"^ot:ottTaxonName": "Sturnus vulgaris", 
 "^ot:treebaseOTUId": "Tl626011"
 }, 
 "otu283622": {
@@ -390,11 +369,13 @@
 "otu283631": {
 "^ot:originalLabel": "Sialia sialis", 
 "^ot:ottId": 775715, 
+"^ot:ottTaxonName": "Sialia sialis", 
 "^ot:treebaseOTUId": "Tl626021"
 }, 
 "otu283632": {
 "^ot:originalLabel": "Acanthidops bairdii", 
 "^ot:ottId": 559735, 
+"^ot:ottTaxonName": "Acanthidops bairdii", 
 "^ot:treebaseOTUId": "Tl626022"
 }, 
 "otu283633": {
@@ -448,6 +429,7 @@
 "otu283641": {
 "^ot:originalLabel": "Pipra pipra", 
 "^ot:ottId": 872123, 
+"^ot:ottTaxonName": "Pipra pipra", 
 "^ot:treebaseOTUId": "Tl626031"
 }, 
 "otu283642": {
@@ -483,6 +465,7 @@
 "otu283647": {
 "^ot:originalLabel": "Prinia bairdii", 
 "^ot:ottId": 174109, 
+"^ot:ottTaxonName": "Prinia bairdii", 
 "^ot:treebaseOTUId": "Tl626037"
 }
 }
@@ -497,10 +480,15 @@
 "treeById": {
 "tree3743": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
 "^ot:branchLengthMode": "ot:substitutionCount", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "Fig. 2", 
 "^ot:inGroupClade": "node708612", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node708610", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node708610": {
 "edge708611": {

@@ -19,48 +19,11 @@
 "@id": "peyotl-validator", 
 "@name": "validate_ot_nexson.py", 
 "@url": "https://github.com/OpenTreeOfLife/peyotl", 
-"@version": "0.0.3a", 
+"@version": "0.0.4a", 
 "invocation": {
-"checksPerformed": [
-"MISSING_MANDATORY_KEY", 
-"MISSING_OPTIONAL_KEY", 
-"UNRECOGNIZED_KEY", 
-"MISSING_LIST_EXPECTED", 
-"DUPLICATING_SINGLETON_KEY", 
-"REFERENCED_ID_NOT_FOUND", 
-"REPEATED_ID", 
-"REPEATED_OTU", 
-"MULTIPLE_ROOT_NODES", 
-"NO_ROOT_NODE", 
-"MULTIPLE_EDGES_FOR_NODES", 
-"CYCLE_DETECTED", 
-"DISCONNECTED_GRAPH_DETECTED", 
-"INCORRECT_ROOT_NODE_LABEL", 
-"TIP_WITHOUT_OTU", 
-"TIP_WITHOUT_OTT_ID", 
-"MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
-"NON_MONOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
-"INVALID_PROPERTY_VALUE", 
-"PROPERTY_VALUE_NOT_USEFUL", 
-"UNRECOGNIZED_PROPERTY_VALUE", 
-"MULTIPLE_TREES", 
-"UNRECOGNIZED_TAG", 
-"CONFLICTING_PROPERTY_VALUES", 
-"NO_TREES", 
-"DEPRECATED_PROPERTY", 
-"UNPARSEABLE_META", 
-"UNREACHABLE_NODE", 
-"INCORRECT_VALUE_TYPE", 
-"MISSING_CRUCIAL_CONTENT"
-], 
 "commandLine": [
 "--embed", 
-"--agent-only", 
-"-e", 
-"../mig-phyelesystem-scratch/2228/validation.json", 
-"-o", 
-"../mig-phyelesystem-scratch/2228/final.json", 
-"../mig-phyelesystem-scratch/2228/v1.2.1-2228.json"
+"--agent-only"
 ], 
 "otherProperty": [
 {
@@ -76,18 +39,26 @@
 }
 ]
 }, 
+"^ot:annotationEvents": {
+"annotation": []
+}, 
+"^ot:candidateTreeForSynthesis": [], 
 "^ot:curatorName": "Romina Gazis", 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S1241"
 }, 
 "^ot:focalClade": 250591, 
 "^ot:focalCladeOTTTaxonName": "Penicillium", 
+"^ot:messages": {
+"message": []
+}, 
 "^ot:otusElementOrder": [
 "otus2228"
 ], 
 "^ot:studyId": "2228", 
 "^ot:studyPublicationReference": "Sholberg, P. L., C. Harlton, P. Haag, C. A. L\u00e9vesque, D. O\u2019Gorman, and K. Seifert. \"Benzimidazole and diphenylamine sensitivity and identity of< i> Penicillium</i> spp. that cause postharvest blue mold of apples using \u03b2-tubulin gene sequences.\" Postharvest biology and technology 36, no. 1 (2005): 41-49.", 
 "^ot:studyYear": 2004, 
+"^ot:tag": [], 
 "^ot:treesElementOrder": [
 "trees2228"
 ], 
@@ -192,6 +163,8 @@
 }, 
 "otu322915": {
 "^ot:originalLabel": "Penicillium cyclopium", 
+"^ot:ottId": 840880, 
+"^ot:ottTaxonName": "Penicillium aurantiogriseum", 
 "^ot:treebaseOTUId": "Tl64998"
 }, 
 "otu322916": {
@@ -290,9 +263,15 @@
 "treeById": {
 "tree4709": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "MP, b-tubulin", 
 "^ot:inGroupClade": "node830386", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node830385", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node830385": {
 "edge830386": {

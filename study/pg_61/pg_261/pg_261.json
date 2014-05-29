@@ -19,48 +19,11 @@
 "@id": "peyotl-validator", 
 "@name": "validate_ot_nexson.py", 
 "@url": "https://github.com/OpenTreeOfLife/peyotl", 
-"@version": "0.0.3a", 
+"@version": "0.0.4a", 
 "invocation": {
-"checksPerformed": [
-"MISSING_MANDATORY_KEY", 
-"MISSING_OPTIONAL_KEY", 
-"UNRECOGNIZED_KEY", 
-"MISSING_LIST_EXPECTED", 
-"DUPLICATING_SINGLETON_KEY", 
-"REFERENCED_ID_NOT_FOUND", 
-"REPEATED_ID", 
-"REPEATED_OTU", 
-"MULTIPLE_ROOT_NODES", 
-"NO_ROOT_NODE", 
-"MULTIPLE_EDGES_FOR_NODES", 
-"CYCLE_DETECTED", 
-"DISCONNECTED_GRAPH_DETECTED", 
-"INCORRECT_ROOT_NODE_LABEL", 
-"TIP_WITHOUT_OTU", 
-"TIP_WITHOUT_OTT_ID", 
-"MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
-"NON_MONOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
-"INVALID_PROPERTY_VALUE", 
-"PROPERTY_VALUE_NOT_USEFUL", 
-"UNRECOGNIZED_PROPERTY_VALUE", 
-"MULTIPLE_TREES", 
-"UNRECOGNIZED_TAG", 
-"CONFLICTING_PROPERTY_VALUES", 
-"NO_TREES", 
-"DEPRECATED_PROPERTY", 
-"UNPARSEABLE_META", 
-"UNREACHABLE_NODE", 
-"INCORRECT_VALUE_TYPE", 
-"MISSING_CRUCIAL_CONTENT"
-], 
 "commandLine": [
 "--embed", 
-"--agent-only", 
-"-e", 
-"../mig-phyelesystem-scratch/261/validation.json", 
-"-o", 
-"../mig-phyelesystem-scratch/261/final.json", 
-"../mig-phyelesystem-scratch/261/v1.2.1-261.json"
+"--agent-only"
 ], 
 "otherProperty": [
 {
@@ -76,12 +39,19 @@
 }
 ]
 }, 
+"^ot:annotationEvents": {
+"annotation": []
+}, 
+"^ot:candidateTreeForSynthesis": [], 
 "^ot:curatorName": "bryan drew", 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S12746"
 }, 
 "^ot:focalClade": 792363, 
 "^ot:focalCladeOTTTaxonName": "Caesalpinieae", 
+"^ot:messages": {
+"message": []
+}, 
 "^ot:otusElementOrder": [
 "otus261"
 ], 
@@ -91,6 +61,7 @@
 }, 
 "^ot:studyPublicationReference": "Manzanilla V., & Bruneau A. 2012. Phylogeny reconstruction in the Caesalpinieae grade\r\n(Leguminosae) based on duplicated copies of the sucrose synthase gene and plastid\r\nmarkers. Molecular Phylogenetics and Evolution. 65: 149\u2013162.", 
 "^ot:studyYear": 2012, 
+"^ot:tag": [], 
 "^ot:treesElementOrder": [
 "trees261"
 ], 
@@ -303,7 +274,9 @@
 "^ot:ottTaxonName": "Moullava spicata"
 }, 
 "otu66009": {
-"^ot:originalLabel": "Caesalpinia crista"
+"^ot:originalLabel": "Caesalpinia crista", 
+"^ot:ottId": 656774, 
+"^ot:ottTaxonName": "Guilandina crista"
 }, 
 "otu66010": {
 "^ot:originalLabel": "Pterolobium stellatum 17XII979", 
@@ -346,7 +319,9 @@
 "^ot:ottTaxonName": "Jacqueshuberia brevipes"
 }, 
 "otu66018": {
-"^ot:originalLabel": "Sclerolobium sp"
+"^ot:originalLabel": "Sclerolobium sp", 
+"^ot:ottId": 3929252, 
+"^ot:ottTaxonName": "Sclerolobium"
 }, 
 "otu66019": {
 "^ot:originalLabel": "Tachigali", 
@@ -506,10 +481,15 @@
 "treeById": {
 "tree145": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
 "^ot:branchLengthMode": "ot:substitutionCount", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "ML", 
 "^ot:inGroupClade": "node167899", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node167875", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node167875": {
 "edge167876": {
@@ -1786,10 +1766,15 @@
 }, 
 "tree6331": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
 "^ot:branchLengthMode": "ot:substitutionCount", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "ML", 
 "^ot:inGroupClade": "node1103348", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node1103324", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node1103324": {
 "edge1103325": {

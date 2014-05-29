@@ -19,48 +19,11 @@
 "@id": "peyotl-validator", 
 "@name": "validate_ot_nexson.py", 
 "@url": "https://github.com/OpenTreeOfLife/peyotl", 
-"@version": "0.0.3a", 
+"@version": "0.0.4a", 
 "invocation": {
-"checksPerformed": [
-"MISSING_MANDATORY_KEY", 
-"MISSING_OPTIONAL_KEY", 
-"UNRECOGNIZED_KEY", 
-"MISSING_LIST_EXPECTED", 
-"DUPLICATING_SINGLETON_KEY", 
-"REFERENCED_ID_NOT_FOUND", 
-"REPEATED_ID", 
-"REPEATED_OTU", 
-"MULTIPLE_ROOT_NODES", 
-"NO_ROOT_NODE", 
-"MULTIPLE_EDGES_FOR_NODES", 
-"CYCLE_DETECTED", 
-"DISCONNECTED_GRAPH_DETECTED", 
-"INCORRECT_ROOT_NODE_LABEL", 
-"TIP_WITHOUT_OTU", 
-"TIP_WITHOUT_OTT_ID", 
-"MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
-"NON_MONOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
-"INVALID_PROPERTY_VALUE", 
-"PROPERTY_VALUE_NOT_USEFUL", 
-"UNRECOGNIZED_PROPERTY_VALUE", 
-"MULTIPLE_TREES", 
-"UNRECOGNIZED_TAG", 
-"CONFLICTING_PROPERTY_VALUES", 
-"NO_TREES", 
-"DEPRECATED_PROPERTY", 
-"UNPARSEABLE_META", 
-"UNREACHABLE_NODE", 
-"INCORRECT_VALUE_TYPE", 
-"MISSING_CRUCIAL_CONTENT"
-], 
 "commandLine": [
 "--embed", 
-"--agent-only", 
-"-e", 
-"../mig-phyelesystem-scratch/38/validation.json", 
-"-o", 
-"../mig-phyelesystem-scratch/38/final.json", 
-"../mig-phyelesystem-scratch/38/v1.2.1-38.json"
+"--agent-only"
 ], 
 "otherProperty": [
 {
@@ -76,12 +39,19 @@
 }
 ]
 }, 
+"^ot:annotationEvents": {
+"annotation": []
+}, 
+"^ot:candidateTreeForSynthesis": [], 
 "^ot:curatorName": "William Wysocki", 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S1878"
 }, 
 "^ot:focalClade": 885838, 
 "^ot:focalCladeOTTTaxonName": "Heliotropium", 
+"^ot:messages": {
+"message": []
+}, 
 "^ot:otusElementOrder": [
 "otus38"
 ], 
@@ -91,6 +61,7 @@
 }, 
 "^ot:studyPublicationReference": "Luebert, F., & Wen, J. (2008). Phylogenetic analysis and evolutionary diversification of Heliotropium sect. Cochranea (Heliotropiaceae) in the Atacama Desert. Systematic Botany, 33(2), 390-402.", 
 "^ot:studyYear": 2007, 
+"^ot:tag": [], 
 "^ot:treesElementOrder": [
 "trees38"
 ], 
@@ -147,6 +118,8 @@
 }, 
 "otu204605": {
 "^ot:originalLabel": "Romanzoffia californica", 
+"^ot:ottId": 1030400, 
+"^ot:ottTaxonName": "Romanzoffia californica", 
 "^ot:treebaseOTUId": "Tl27581"
 }, 
 "otu204606": {
@@ -163,6 +136,8 @@
 }, 
 "otu204608": {
 "^ot:originalLabel": "Wigandia urens", 
+"^ot:ottId": 1086814, 
+"^ot:ottTaxonName": "Wigandia urens", 
 "^ot:treebaseOTUId": "Tl27587"
 }, 
 "otu204609": {
@@ -185,18 +160,26 @@
 }, 
 "otu204612": {
 "^ot:originalLabel": "Hydrophyllum virginianum", 
+"^ot:ottId": 544712, 
+"^ot:ottTaxonName": "Hydrophyllum virginianum", 
 "^ot:treebaseOTUId": "Tl27601"
 }, 
 "otu204613": {
 "^ot:originalLabel": "Eriodictyon californicum", 
+"^ot:ottId": 544709, 
+"^ot:ottTaxonName": "Eriodictyon californicum", 
 "^ot:treebaseOTUId": "Tl27602"
 }, 
 "otu204614": {
 "^ot:originalLabel": "Luculia gratissima", 
+"^ot:ottId": 184630, 
+"^ot:ottTaxonName": "Luculia gratissima", 
 "^ot:treebaseOTUId": "Tl27604"
 }, 
 "otu204615": {
 "^ot:originalLabel": "Phacelia congesta", 
+"^ot:ottId": 748705, 
+"^ot:ottTaxonName": "Phacelia congesta", 
 "^ot:treebaseOTUId": "Tl27610"
 }, 
 "otu204616": {
@@ -225,8 +208,6 @@
 }, 
 "otu204620": {
 "^ot:originalLabel": "Heliotropium pilosum 8819", 
-"^ot:ottId": 877881, 
-"^ot:ottTaxonName": "Euploca pilosa", 
 "^ot:treebaseOTUId": "Tl87850"
 }, 
 "otu204621": {
@@ -363,8 +344,6 @@
 }, 
 "otu204643": {
 "^ot:originalLabel": "Heliotropium gnaphalodes", 
-"^ot:ottId": 579122, 
-"^ot:ottTaxonName": "Tournefortia gnaphalodes", 
 "^ot:treebaseOTUId": "Tl87873"
 }, 
 "otu204644": {
@@ -567,8 +546,6 @@
 }, 
 "otu204677": {
 "^ot:originalLabel": "Heliotropium foertherianum", 
-"^ot:ottId": 579125, 
-"^ot:ottTaxonName": "Tournefortia argentea", 
 "^ot:treebaseOTUId": "Tl87907"
 }, 
 "otu204678": {
@@ -711,8 +688,6 @@
 }, 
 "otu204701": {
 "^ot:originalLabel": "Heliotropium luzonicum", 
-"^ot:ottId": 579115, 
-"^ot:ottTaxonName": "Tournefortia luzonica", 
 "^ot:treebaseOTUId": "Tl87931"
 }, 
 "otu204702": {
@@ -765,10 +740,14 @@
 }, 
 "otu204710": {
 "^ot:originalLabel": "Codon schenkii", 
+"^ot:ottId": 375209, 
+"^ot:ottTaxonName": "Codon schenckii", 
 "^ot:treebaseOTUId": "Tl97696"
 }, 
 "otu204711": {
 "^ot:originalLabel": "Nama demissum", 
+"^ot:ottId": 1002398, 
+"^ot:ottTaxonName": "Nama demissa", 
 "^ot:treebaseOTUId": "Tl97697"
 }, 
 "otu204712": {
@@ -798,8 +777,14 @@
 "treeById": {
 "tree1747": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "Strict", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node482065", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node482065": {
 "edge482066": {
@@ -1743,8 +1728,14 @@
 }, 
 "tree1748": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "Fig. 2", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node482199", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node482199": {
 "edge482200": {
@@ -2653,8 +2644,14 @@
 }, 
 "tree1749": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "Fig. 3", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node482328", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node482328": {
 "edge482329": {
@@ -3213,9 +3210,15 @@
 }, 
 "tree1750": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "Fig. 4", 
 "^ot:inGroupClade": "node482423", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node482407", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node482407": {
 "edge482408": {

@@ -19,48 +19,11 @@
 "@id": "peyotl-validator", 
 "@name": "validate_ot_nexson.py", 
 "@url": "https://github.com/OpenTreeOfLife/peyotl", 
-"@version": "0.0.3a", 
+"@version": "0.0.4a", 
 "invocation": {
-"checksPerformed": [
-"MISSING_MANDATORY_KEY", 
-"MISSING_OPTIONAL_KEY", 
-"UNRECOGNIZED_KEY", 
-"MISSING_LIST_EXPECTED", 
-"DUPLICATING_SINGLETON_KEY", 
-"REFERENCED_ID_NOT_FOUND", 
-"REPEATED_ID", 
-"REPEATED_OTU", 
-"MULTIPLE_ROOT_NODES", 
-"NO_ROOT_NODE", 
-"MULTIPLE_EDGES_FOR_NODES", 
-"CYCLE_DETECTED", 
-"DISCONNECTED_GRAPH_DETECTED", 
-"INCORRECT_ROOT_NODE_LABEL", 
-"TIP_WITHOUT_OTU", 
-"TIP_WITHOUT_OTT_ID", 
-"MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
-"NON_MONOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
-"INVALID_PROPERTY_VALUE", 
-"PROPERTY_VALUE_NOT_USEFUL", 
-"UNRECOGNIZED_PROPERTY_VALUE", 
-"MULTIPLE_TREES", 
-"UNRECOGNIZED_TAG", 
-"CONFLICTING_PROPERTY_VALUES", 
-"NO_TREES", 
-"DEPRECATED_PROPERTY", 
-"UNPARSEABLE_META", 
-"UNREACHABLE_NODE", 
-"INCORRECT_VALUE_TYPE", 
-"MISSING_CRUCIAL_CONTENT"
-], 
 "commandLine": [
 "--embed", 
-"--agent-only", 
-"-e", 
-"../mig-phyelesystem-scratch/2710/validation.json", 
-"-o", 
-"../mig-phyelesystem-scratch/2710/final.json", 
-"../mig-phyelesystem-scratch/2710/v1.2.1-2710.json"
+"--agent-only"
 ], 
 "otherProperty": [
 {
@@ -76,9 +39,16 @@
 }
 ]
 }, 
+"^ot:annotationEvents": {
+"annotation": []
+}, 
+"^ot:candidateTreeForSynthesis": [], 
 "^ot:curatorName": "Joseph Brown", 
 "^ot:focalClade": 691846, 
 "^ot:focalCladeOTTTaxonName": "Metazoa", 
+"^ot:messages": {
+"message": []
+}, 
 "^ot:otusElementOrder": [
 "otus2710"
 ], 
@@ -86,9 +56,11 @@
 "^ot:studyPublication": {
 "@href": "http://dx.doi.org/10.1126/science.1242592"
 }, 
-"^ot:studyPublicationReference": "J. F. Ryan, K. Pang, C. E. Schnitzler, A.-D. Nguyen, R. T. Moreland, D. K. Simmons, B. J. Koch, W. R. Francis, P. Havlak, S. A. Smith, N. H. Putnam, S. H. D. Haddock, C. W. Dunn, T. G. Wolfsberg, J. C. Mullikin, M. Q. Martindale, A. D. Baxevanis. 2013. The genome of the ctenophore Mnemiopsis leidyi and its implications for cell type evolution. Science 342 (6164): 1242592-1242592.", 
+"^ot:studyPublicationReference": "Ryan, J. F., K. Pang, C. E. Schnitzler, A.-D. Nguyen, R. T. Moreland, D. K. Simmons, B. J. Koch, W. R. Francis, P. Havlak, S. A. Smith, N. H. Putnam, S. H. D. Haddock, C. W. Dunn, T. G. Wolfsberg, J. C. Mullikin, M. Q. Martindale, A. D. Baxevanis. 2013. The genome of the ctenophore Mnemiopsis leidyi and its implications for cell type evolution. Science 342 (6164): 1242592-1242592.", 
 "^ot:studyYear": 2013, 
-"^ot:tag": "ingroup added;", 
+"^ot:tag": [
+"ingroup added;"
+], 
 "^ot:treesElementOrder": [
 "trees2710"
 ], 
@@ -96,22 +68,34 @@
 "otus2710": {
 "otuById": {
 "otu406575": {
-"^ot:originalLabel": "Spizellomyces punctatus"
+"^ot:originalLabel": "Spizellomyces punctatus", 
+"^ot:ottId": 708156, 
+"^ot:ottTaxonName": "Spizellomyces punctatus"
 }, 
 "otu406576": {
-"^ot:originalLabel": "Batrachochytrium dendrobatidis"
+"^ot:originalLabel": "Batrachochytrium dendrobatidis", 
+"^ot:ottId": 858873, 
+"^ot:ottTaxonName": "Batrachochytrium dendrobatidis"
 }, 
 "otu406577": {
-"^ot:originalLabel": "Cryptococcus neoformans"
+"^ot:originalLabel": "Cryptococcus neoformans", 
+"^ot:ottId": 634633, 
+"^ot:ottTaxonName": "Cryptococcus neoformans"
 }, 
 "otu406578": {
-"^ot:originalLabel": "Saccharomyces cerevisiae"
+"^ot:originalLabel": "Saccharomyces cerevisiae", 
+"^ot:ottId": 908549, 
+"^ot:ottTaxonName": "Saccharomyces cerevisiae"
 }, 
 "otu406579": {
-"^ot:originalLabel": "Phycomyces blakesleeanus"
+"^ot:originalLabel": "Phycomyces blakesleeanus", 
+"^ot:ottId": 735973, 
+"^ot:ottTaxonName": "Phycomyces blakesleeanus"
 }, 
 "otu406580": {
-"^ot:originalLabel": "Rhizopus orizae"
+"^ot:originalLabel": "Rhizopus orizae", 
+"^ot:ottId": 530834, 
+"^ot:ottTaxonName": "Rhizopus liquefaciens"
 }, 
 "otu406581": {
 "^ot:originalLabel": "Amoebidium parasiticum", 
@@ -134,7 +118,9 @@
 "^ot:ottTaxonName": "Monosiga ovata"
 }, 
 "otu406585": {
-"^ot:originalLabel": "Salpingoeca rosetta"
+"^ot:originalLabel": "Salpingoeca rosetta", 
+"^ot:ottId": 1002450, 
+"^ot:ottTaxonName": "Salpingoeca sp. ATCC 50818"
 }, 
 "otu406586": {
 "^ot:originalLabel": "Monosiga brevicollis", 
@@ -220,7 +206,9 @@
 "^ot:ottTaxonName": "Clytia hemisphaerica"
 }, 
 "otu406603": {
-"^ot:originalLabel": "Hydra magnipapillata"
+"^ot:originalLabel": "Hydra magnipapillata", 
+"^ot:ottId": 861536, 
+"^ot:ottTaxonName": "Hydra vulgaris"
 }, 
 "otu406604": {
 "^ot:originalLabel": "Podocoryna carnea", 
@@ -433,10 +421,15 @@
 "treeById": {
 "tree6291": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
 "^ot:branchLengthMode": "ot:substitutionCount", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "ML bootstrap, EST (Figure 3)", 
 "^ot:inGroupClade": "node1093975", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node1093951", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node1093951": {
 "edge1093952": {

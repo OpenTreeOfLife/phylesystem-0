@@ -19,48 +19,11 @@
 "@id": "peyotl-validator", 
 "@name": "validate_ot_nexson.py", 
 "@url": "https://github.com/OpenTreeOfLife/peyotl", 
-"@version": "0.0.3a", 
+"@version": "0.0.4a", 
 "invocation": {
-"checksPerformed": [
-"MISSING_MANDATORY_KEY", 
-"MISSING_OPTIONAL_KEY", 
-"UNRECOGNIZED_KEY", 
-"MISSING_LIST_EXPECTED", 
-"DUPLICATING_SINGLETON_KEY", 
-"REFERENCED_ID_NOT_FOUND", 
-"REPEATED_ID", 
-"REPEATED_OTU", 
-"MULTIPLE_ROOT_NODES", 
-"NO_ROOT_NODE", 
-"MULTIPLE_EDGES_FOR_NODES", 
-"CYCLE_DETECTED", 
-"DISCONNECTED_GRAPH_DETECTED", 
-"INCORRECT_ROOT_NODE_LABEL", 
-"TIP_WITHOUT_OTU", 
-"TIP_WITHOUT_OTT_ID", 
-"MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
-"NON_MONOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
-"INVALID_PROPERTY_VALUE", 
-"PROPERTY_VALUE_NOT_USEFUL", 
-"UNRECOGNIZED_PROPERTY_VALUE", 
-"MULTIPLE_TREES", 
-"UNRECOGNIZED_TAG", 
-"CONFLICTING_PROPERTY_VALUES", 
-"NO_TREES", 
-"DEPRECATED_PROPERTY", 
-"UNPARSEABLE_META", 
-"UNREACHABLE_NODE", 
-"INCORRECT_VALUE_TYPE", 
-"MISSING_CRUCIAL_CONTENT"
-], 
 "commandLine": [
 "--embed", 
-"--agent-only", 
-"-e", 
-"../mig-phyelesystem-scratch/2333/validation.json", 
-"-o", 
-"../mig-phyelesystem-scratch/2333/final.json", 
-"../mig-phyelesystem-scratch/2333/v1.2.1-2333.json"
+"--agent-only"
 ], 
 "otherProperty": [
 {
@@ -76,18 +39,26 @@
 }
 ]
 }, 
+"^ot:annotationEvents": {
+"annotation": []
+}, 
+"^ot:candidateTreeForSynthesis": [], 
 "^ot:curatorName": "Chris Owen", 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S12443"
 }, 
-"^ot:focalClade": 4135679, 
-"^ot:focalCladeOTTTaxonName": "Elsiella", 
+"^ot:focalClade": 493994, 
+"^ot:focalCladeOTTTaxonName": "Pentatominae", 
+"^ot:messages": {
+"message": []
+}, 
 "^ot:otusElementOrder": [
 "otus2333"
 ], 
 "^ot:studyId": "2333", 
-"^ot:studyPublicationReference": "Simoes F.L., Ferrari A., & Grazia J. 2012. Is Elsiella Froeschner, 1981 a valid genus? (Hemiptera: Heteroptera: Pentatomidae: Pentatominae). Zootaxa 3238: 39-48.", 
+"^ot:studyPublicationReference": "Simoes, F.L., Ferrari A., & Grazia J. 2012. Is Elsiella Froeschner, 1981 a valid genus? (Hemiptera: Heteroptera: Pentatomidae: Pentatominae). Zootaxa 3238: 39-48.", 
 "^ot:studyYear": 2012, 
+"^ot:tag": [], 
 "^ot:treesElementOrder": [
 "trees2333"
 ], 
@@ -100,8 +71,6 @@
 }, 
 "otu330968": {
 "^ot:originalLabel": "Similliserdia", 
-"^ot:ottId": 4225282, 
-"^ot:ottTaxonName": "Similliserdia", 
 "^ot:treebaseOTUId": "Tl728628"
 }, 
 "otu330969": {
@@ -122,8 +91,6 @@
 }, 
 "otu330973": {
 "^ot:originalLabel": "Neotibilis", 
-"^ot:ottId": 4193788, 
-"^ot:ottTaxonName": "Neotibilis", 
 "^ot:treebaseOTUId": "Tl728633"
 }, 
 "otu330974": {
@@ -172,8 +139,6 @@
 }, 
 "otu330985": {
 "^ot:originalLabel": "Tibilis", 
-"^ot:ottId": 4225448, 
-"^ot:ottTaxonName": "Tibilis", 
 "^ot:treebaseOTUId": "Tl728645"
 }, 
 "otu330986": {
@@ -207,9 +172,15 @@
 "treeById": {
 "tree4913": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "MPT 2", 
 "^ot:inGroupClade": "node852593", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node852591", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node852591": {
 "edge852592": {
@@ -516,9 +487,15 @@
 }, 
 "tree4914": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "MPT 1", 
 "^ot:inGroupClade": "node852636", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node852634", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node852634": {
 "edge852635": {
@@ -825,10 +802,17 @@
 }, 
 "tree4915": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "Consensus", 
 "^ot:inGroupClade": "node852679", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node852677", 
-"^ot:tag": "choose me", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [
+"choose me"
+], 
 "edgeBySourceId": {
 "node852677": {
 "edge852678": {
@@ -1107,9 +1091,15 @@
 }, 
 "tree4916": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "MPT 7", 
 "^ot:inGroupClade": "node852718", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node852716", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node852716": {
 "edge852717": {
@@ -1416,9 +1406,15 @@
 }, 
 "tree4917": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "MPT 6", 
 "^ot:inGroupClade": "node852761", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node852759", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node852759": {
 "edge852760": {
@@ -1725,9 +1721,15 @@
 }, 
 "tree4918": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "MPT 5", 
 "^ot:inGroupClade": "node852804", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node852802", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node852802": {
 "edge852803": {
@@ -2034,9 +2036,15 @@
 }, 
 "tree4919": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "MPT 4", 
 "^ot:inGroupClade": "node852847", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node852845", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node852845": {
 "edge852846": {
@@ -2343,9 +2351,15 @@
 }, 
 "tree4920": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "MPT 3", 
 "^ot:inGroupClade": "node852890", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node852888", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node852888": {
 "edge852889": {

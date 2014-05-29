@@ -19,48 +19,11 @@
 "@id": "peyotl-validator", 
 "@name": "validate_ot_nexson.py", 
 "@url": "https://github.com/OpenTreeOfLife/peyotl", 
-"@version": "0.0.3a", 
+"@version": "0.0.4a", 
 "invocation": {
-"checksPerformed": [
-"MISSING_MANDATORY_KEY", 
-"MISSING_OPTIONAL_KEY", 
-"UNRECOGNIZED_KEY", 
-"MISSING_LIST_EXPECTED", 
-"DUPLICATING_SINGLETON_KEY", 
-"REFERENCED_ID_NOT_FOUND", 
-"REPEATED_ID", 
-"REPEATED_OTU", 
-"MULTIPLE_ROOT_NODES", 
-"NO_ROOT_NODE", 
-"MULTIPLE_EDGES_FOR_NODES", 
-"CYCLE_DETECTED", 
-"DISCONNECTED_GRAPH_DETECTED", 
-"INCORRECT_ROOT_NODE_LABEL", 
-"TIP_WITHOUT_OTU", 
-"TIP_WITHOUT_OTT_ID", 
-"MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
-"NON_MONOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
-"INVALID_PROPERTY_VALUE", 
-"PROPERTY_VALUE_NOT_USEFUL", 
-"UNRECOGNIZED_PROPERTY_VALUE", 
-"MULTIPLE_TREES", 
-"UNRECOGNIZED_TAG", 
-"CONFLICTING_PROPERTY_VALUES", 
-"NO_TREES", 
-"DEPRECATED_PROPERTY", 
-"UNPARSEABLE_META", 
-"UNREACHABLE_NODE", 
-"INCORRECT_VALUE_TYPE", 
-"MISSING_CRUCIAL_CONTENT"
-], 
 "commandLine": [
 "--embed", 
-"--agent-only", 
-"-e", 
-"../mig-phyelesystem-scratch/2593/validation.json", 
-"-o", 
-"../mig-phyelesystem-scratch/2593/final.json", 
-"../mig-phyelesystem-scratch/2593/v1.2.1-2593.json"
+"--agent-only"
 ], 
 "otherProperty": [
 {
@@ -76,12 +39,19 @@
 }
 ]
 }, 
+"^ot:annotationEvents": {
+"annotation": []
+}, 
+"^ot:candidateTreeForSynthesis": [], 
 "^ot:curatorName": "Chris Owen", 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S14160"
 }, 
 "^ot:focalClade": 567692, 
 "^ot:focalCladeOTTTaxonName": "Dermaptera", 
+"^ot:messages": {
+"message": []
+}, 
 "^ot:otusElementOrder": [
 "otus2593"
 ], 
@@ -89,8 +59,9 @@
 "^ot:studyPublication": {
 "@href": "http://dx.doi.org/10.1371/journal.pone.0066900"
 }, 
-"^ot:studyPublicationReference": "Kocarek P., John V., & Hulva P. 2013. When the body hides the ancestry: phylogeny of morphologically modified epizoic earwigs based on molecular evidence. PLoS One, 8(6).", 
+"^ot:studyPublicationReference": "Kocarek, P., John V., & Hulva P. 2013. When the body hides the ancestry: phylogeny of morphologically modified epizoic earwigs based on molecular evidence. PLoS ONE 8 (6): e66900.", 
 "^ot:studyYear": 2013, 
+"^ot:tag": [], 
 "^ot:treesElementOrder": [
 "trees2593"
 ], 
@@ -133,6 +104,8 @@
 }, 
 "otu381704": {
 "^ot:originalLabel": "Paraphasma rufipes", 
+"^ot:ottId": 1027876, 
+"^ot:ottTaxonName": "Paraphasma rufipes", 
 "^ot:treebaseOTUId": "Tl1078226"
 }, 
 "otu381705": {
@@ -377,11 +350,17 @@
 "treeById": {
 "tree6012": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
 "^ot:branchLengthMode": "ot:substitutionCount", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "Longer alignment tree", 
 "^ot:inGroupClade": "node1021575", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node1021569", 
-"^ot:tag": "delete me", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [
+"delete me"
+], 
 "edgeBySourceId": {
 "node1021569": {
 "edge1021570": {
@@ -1082,10 +1061,16 @@
 }, 
 "tree6013": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
 "^ot:branchLengthMode": "ot:substitutionCount", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "Shorter alignment tree", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node1021656", 
-"^ot:tag": "delete", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [
+"delete"
+], 
 "edgeBySourceId": {
 "node1021656": {
 "edge1021657": {
@@ -1738,11 +1723,17 @@
 }, 
 "tree6247": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
 "^ot:branchLengthMode": "ot:substitutionCount", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "BI 50% maj-rule", 
 "^ot:inGroupClade": "node1083113", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node1083112", 
-"^ot:tag": "choose me", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [
+"choose me"
+], 
 "edgeBySourceId": {
 "node1083112": {
 "edge1083113": {

@@ -19,48 +19,11 @@
 "@id": "peyotl-validator", 
 "@name": "validate_ot_nexson.py", 
 "@url": "https://github.com/OpenTreeOfLife/peyotl", 
-"@version": "0.0.3a", 
+"@version": "0.0.4a", 
 "invocation": {
-"checksPerformed": [
-"MISSING_MANDATORY_KEY", 
-"MISSING_OPTIONAL_KEY", 
-"UNRECOGNIZED_KEY", 
-"MISSING_LIST_EXPECTED", 
-"DUPLICATING_SINGLETON_KEY", 
-"REFERENCED_ID_NOT_FOUND", 
-"REPEATED_ID", 
-"REPEATED_OTU", 
-"MULTIPLE_ROOT_NODES", 
-"NO_ROOT_NODE", 
-"MULTIPLE_EDGES_FOR_NODES", 
-"CYCLE_DETECTED", 
-"DISCONNECTED_GRAPH_DETECTED", 
-"INCORRECT_ROOT_NODE_LABEL", 
-"TIP_WITHOUT_OTU", 
-"TIP_WITHOUT_OTT_ID", 
-"MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
-"NON_MONOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
-"INVALID_PROPERTY_VALUE", 
-"PROPERTY_VALUE_NOT_USEFUL", 
-"UNRECOGNIZED_PROPERTY_VALUE", 
-"MULTIPLE_TREES", 
-"UNRECOGNIZED_TAG", 
-"CONFLICTING_PROPERTY_VALUES", 
-"NO_TREES", 
-"DEPRECATED_PROPERTY", 
-"UNPARSEABLE_META", 
-"UNREACHABLE_NODE", 
-"INCORRECT_VALUE_TYPE", 
-"MISSING_CRUCIAL_CONTENT"
-], 
 "commandLine": [
 "--embed", 
-"--agent-only", 
-"-e", 
-"../mig-phyelesystem-scratch/1681/validation.json", 
-"-o", 
-"../mig-phyelesystem-scratch/1681/final.json", 
-"../mig-phyelesystem-scratch/1681/v1.2.1-1681.json"
+"--agent-only"
 ], 
 "otherProperty": [
 {
@@ -76,12 +39,19 @@
 }
 ]
 }, 
+"^ot:annotationEvents": {
+"annotation": []
+}, 
+"^ot:candidateTreeForSynthesis": [], 
 "^ot:curatorName": "Romina Gazis", 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S421"
 }, 
 "^ot:focalClade": 294447, 
 "^ot:focalCladeOTTTaxonName": "Lepiota", 
+"^ot:messages": {
+"message": []
+}, 
 "^ot:otusElementOrder": [
 "otus1681"
 ], 
@@ -91,6 +61,7 @@
 }, 
 "^ot:studyPublicationReference": "Johnson J. 1999. Phylogenetic relationships within Lepiota sensu lato based on morphological and molecular data. Mycologia, 91: 443-458.", 
 "^ot:studyYear": 1999, 
+"^ot:tag": [], 
 "^ot:treesElementOrder": [
 "trees1681"
 ], 
@@ -114,13 +85,15 @@
 "^ot:treebaseOTUId": "Tl114236"
 }, 
 "otu270359": {
-"^ot:altLabel": "Coprinopsis atramentaria", 
 "^ot:originalLabel": "Coprinus atramentarius", 
 "^ot:ottId": 363316, 
+"^ot:ottTaxonName": "Coprinopsis atramentaria", 
 "^ot:treebaseOTUId": "Tl114237"
 }, 
 "otu270360": {
 "^ot:originalLabel": "Leucoagaricus naucinus", 
+"^ot:ottId": 191811, 
+"^ot:ottTaxonName": "Leucoagaricus leucothites", 
 "^ot:treebaseOTUId": "Tl114238"
 }, 
 "otu270361": {
@@ -178,10 +151,13 @@
 "otu270370": {
 "^ot:originalLabel": "Amanita citrina", 
 "^ot:ottId": 1067404, 
+"^ot:ottTaxonName": "Amanita citrina", 
 "^ot:treebaseOTUId": "Tl114254"
 }, 
 "otu270371": {
 "^ot:originalLabel": "Lepiota acutesquamosa", 
+"^ot:ottId": 536468, 
+"^ot:ottTaxonName": "Agaricus asper", 
 "^ot:treebaseOTUId": "Tl114256"
 }, 
 "otu270372": {
@@ -199,6 +175,7 @@
 "otu270374": {
 "^ot:originalLabel": "Russula virescens", 
 "^ot:ottId": 874949, 
+"^ot:ottTaxonName": "Russula virescens", 
 "^ot:treebaseOTUId": "Tl114264"
 }, 
 "otu270375": {
@@ -226,9 +203,9 @@
 "^ot:treebaseOTUId": "Tl114269"
 }, 
 "otu270379": {
-"^ot:altLabel": "Coprinellus flocculosus", 
 "^ot:originalLabel": "Coprinus flocculosus", 
 "^ot:ottId": 469854, 
+"^ot:ottTaxonName": "Coprinellus flocculosus", 
 "^ot:treebaseOTUId": "Tl114271"
 }, 
 "otu270380": {
@@ -252,6 +229,7 @@
 "otu270383": {
 "^ot:originalLabel": "Ripartitella brasiliensis", 
 "^ot:ottId": 789175, 
+"^ot:ottTaxonName": "Ripartitella brasiliensis", 
 "^ot:treebaseOTUId": "Tl53586"
 }, 
 "otu270384": {
@@ -280,6 +258,8 @@
 }, 
 "otu270388": {
 "^ot:originalLabel": "Cystolepiota cystidiosa", 
+"^ot:ottId": 865637, 
+"^ot:ottTaxonName": "Cystolepiota fumosifolia", 
 "^ot:treebaseOTUId": "Tl53595"
 }, 
 "otu270389": {
@@ -291,6 +271,7 @@
 "otu270390": {
 "^ot:originalLabel": "Limacella glischra", 
 "^ot:ottId": 163795, 
+"^ot:ottTaxonName": "Limacella glischra", 
 "^ot:treebaseOTUId": "Tl53597"
 }, 
 "otu270391": {
@@ -307,6 +288,8 @@
 }, 
 "otu270393": {
 "^ot:originalLabel": "Lepiota humei", 
+"^ot:ottId": 5304337, 
+"^ot:ottTaxonName": "Chlorophyllum humei", 
 "^ot:treebaseOTUId": "Tl53601"
 }
 }
@@ -322,8 +305,14 @@
 "treeById": {
 "tree3386": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "MP, LSU + ITS + mtSSU", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node669940", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node669940": {
 "edge669941": {
@@ -742,9 +731,15 @@
 }, 
 "tree5914": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "MP, LSU + ITS + mtSSU (rooted)", 
 "^ot:inGroupClade": "node1003876", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node1003870", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node1003870": {
 "edge1003871": {

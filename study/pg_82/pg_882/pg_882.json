@@ -19,48 +19,11 @@
 "@id": "peyotl-validator", 
 "@name": "validate_ot_nexson.py", 
 "@url": "https://github.com/OpenTreeOfLife/peyotl", 
-"@version": "0.0.3a", 
+"@version": "0.0.4a", 
 "invocation": {
-"checksPerformed": [
-"MISSING_MANDATORY_KEY", 
-"MISSING_OPTIONAL_KEY", 
-"UNRECOGNIZED_KEY", 
-"MISSING_LIST_EXPECTED", 
-"DUPLICATING_SINGLETON_KEY", 
-"REFERENCED_ID_NOT_FOUND", 
-"REPEATED_ID", 
-"REPEATED_OTU", 
-"MULTIPLE_ROOT_NODES", 
-"NO_ROOT_NODE", 
-"MULTIPLE_EDGES_FOR_NODES", 
-"CYCLE_DETECTED", 
-"DISCONNECTED_GRAPH_DETECTED", 
-"INCORRECT_ROOT_NODE_LABEL", 
-"TIP_WITHOUT_OTU", 
-"TIP_WITHOUT_OTT_ID", 
-"MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
-"NON_MONOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
-"INVALID_PROPERTY_VALUE", 
-"PROPERTY_VALUE_NOT_USEFUL", 
-"UNRECOGNIZED_PROPERTY_VALUE", 
-"MULTIPLE_TREES", 
-"UNRECOGNIZED_TAG", 
-"CONFLICTING_PROPERTY_VALUES", 
-"NO_TREES", 
-"DEPRECATED_PROPERTY", 
-"UNPARSEABLE_META", 
-"UNREACHABLE_NODE", 
-"INCORRECT_VALUE_TYPE", 
-"MISSING_CRUCIAL_CONTENT"
-], 
 "commandLine": [
 "--embed", 
-"--agent-only", 
-"-e", 
-"../mig-phyelesystem-scratch/882/validation.json", 
-"-o", 
-"../mig-phyelesystem-scratch/882/final.json", 
-"../mig-phyelesystem-scratch/882/v1.2.1-882.json"
+"--agent-only"
 ], 
 "otherProperty": [
 {
@@ -76,12 +39,19 @@
 }
 ]
 }, 
+"^ot:annotationEvents": {
+"annotation": []
+}, 
+"^ot:candidateTreeForSynthesis": [], 
 "^ot:curatorName": "Romina Gazis", 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S1062"
 }, 
 "^ot:focalClade": 346124, 
 "^ot:focalCladeOTTTaxonName": "Eurotiomycetes", 
+"^ot:messages": {
+"message": []
+}, 
 "^ot:otusElementOrder": [
 "otus882"
 ], 
@@ -91,6 +61,7 @@
 }, 
 "^ot:studyPublicationReference": "Tuthill D. 2003. Genetic variation and recombination in Penicillium miczynskii and Eupenicillium species. Mycological Progress, 3(1), 3-12.", 
 "^ot:studyYear": 2003, 
+"^ot:tag": [], 
 "^ot:treesElementOrder": [
 "trees882"
 ], 
@@ -99,6 +70,8 @@
 "otuById": {
 "otu203317": {
 "^ot:originalLabel": "Penicillium manginii", 
+"^ot:ottId": 533471, 
+"^ot:ottTaxonName": "Penicillium atrosanguineum", 
 "^ot:treebaseOTUId": "Tl140604"
 }, 
 "otu203318": {
@@ -171,6 +144,8 @@
 }, 
 "otu203330": {
 "^ot:originalLabel": "Eupenicillium anatolicum", 
+"^ot:ottId": 10579, 
+"^ot:ottTaxonName": "Penicillium anatolicum", 
 "^ot:treebaseOTUId": "Tl2349"
 }, 
 "otu203331": {
@@ -187,10 +162,14 @@
 }, 
 "otu203333": {
 "^ot:originalLabel": "Penicillium sartoryi", 
+"^ot:ottId": 226488, 
+"^ot:ottTaxonName": "Penicillium citrinum", 
 "^ot:treebaseOTUId": "Tl2352"
 }, 
 "otu203334": {
 "^ot:originalLabel": "Eupenicillium shearii", 
+"^ot:ottId": 486252, 
+"^ot:ottTaxonName": "Penicillium miczynskii", 
 "^ot:treebaseOTUId": "Tl2353"
 }
 }
@@ -205,9 +184,15 @@
 "treeById": {
 "tree1702": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "MP, ITS + LSU", 
 "^ot:inGroupClade": "node478098", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node478097", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node478097": {
 "edge478098": {

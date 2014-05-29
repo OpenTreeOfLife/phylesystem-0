@@ -19,48 +19,11 @@
 "@id": "peyotl-validator", 
 "@name": "validate_ot_nexson.py", 
 "@url": "https://github.com/OpenTreeOfLife/peyotl", 
-"@version": "0.0.3a", 
+"@version": "0.0.4a", 
 "invocation": {
-"checksPerformed": [
-"MISSING_MANDATORY_KEY", 
-"MISSING_OPTIONAL_KEY", 
-"UNRECOGNIZED_KEY", 
-"MISSING_LIST_EXPECTED", 
-"DUPLICATING_SINGLETON_KEY", 
-"REFERENCED_ID_NOT_FOUND", 
-"REPEATED_ID", 
-"REPEATED_OTU", 
-"MULTIPLE_ROOT_NODES", 
-"NO_ROOT_NODE", 
-"MULTIPLE_EDGES_FOR_NODES", 
-"CYCLE_DETECTED", 
-"DISCONNECTED_GRAPH_DETECTED", 
-"INCORRECT_ROOT_NODE_LABEL", 
-"TIP_WITHOUT_OTU", 
-"TIP_WITHOUT_OTT_ID", 
-"MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
-"NON_MONOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
-"INVALID_PROPERTY_VALUE", 
-"PROPERTY_VALUE_NOT_USEFUL", 
-"UNRECOGNIZED_PROPERTY_VALUE", 
-"MULTIPLE_TREES", 
-"UNRECOGNIZED_TAG", 
-"CONFLICTING_PROPERTY_VALUES", 
-"NO_TREES", 
-"DEPRECATED_PROPERTY", 
-"UNPARSEABLE_META", 
-"UNREACHABLE_NODE", 
-"INCORRECT_VALUE_TYPE", 
-"MISSING_CRUCIAL_CONTENT"
-], 
 "commandLine": [
 "--embed", 
-"--agent-only", 
-"-e", 
-"../mig-phyelesystem-scratch/1238/validation.json", 
-"-o", 
-"../mig-phyelesystem-scratch/1238/final.json", 
-"../mig-phyelesystem-scratch/1238/v1.2.1-1238.json"
+"--agent-only"
 ], 
 "otherProperty": [
 {
@@ -76,9 +39,16 @@
 }
 ]
 }, 
+"^ot:annotationEvents": {
+"annotation": []
+}, 
+"^ot:candidateTreeForSynthesis": [], 
 "^ot:curatorName": "Romina Gazis", 
 "^ot:focalClade": 489298, 
 "^ot:focalCladeOTTTaxonName": "Inocybe", 
+"^ot:messages": {
+"message": []
+}, 
 "^ot:otusElementOrder": [
 "otus1238"
 ], 
@@ -88,6 +58,7 @@
 }, 
 "^ot:studyPublicationReference": "Ryberg, Martin, R. Henrik Nilsson, Erik Kristiansson, Mats T\u00f6pel, Stig Jacobsson, and Ellen Larsson. \"Mining metadata from unidentified ITS sequences in GenBank: a case study in Inocybe (Basidiomycota).\" BMC Evolutionary Biology 8, no. 1 (2008): 50.", 
 "^ot:studyYear": 2008, 
+"^ot:tag": [], 
 "^ot:treesElementOrder": [
 "trees1238"
 ], 
@@ -100,10 +71,14 @@
 "^ot:ottTaxonName": "Inocybe dulcamara"
 }, 
 "otu234754": {
-"^ot:originalLabel": "Inocybe boltonii AM882753"
+"^ot:originalLabel": "Inocybe boltonii AM882753", 
+"^ot:ottId": 1041224, 
+"^ot:ottTaxonName": "Inocybe godeyi"
 }, 
 "otu234755": {
-"^ot:originalLabel": "Inocybe boltonii AM882754"
+"^ot:originalLabel": "Inocybe boltonii AM882754", 
+"^ot:ottId": 1041224, 
+"^ot:ottTaxonName": "Inocybe godeyi"
 }, 
 "otu234756": {
 "^ot:originalLabel": "Inocybe sp. AJ633578", 
@@ -397,7 +372,9 @@
 "^ot:ottTaxonName": "Inocybe subporospora"
 }, 
 "otu234815": {
-"^ot:originalLabel": "Inocybe sp. AB096872"
+"^ot:originalLabel": "Inocybe sp. AB096872", 
+"^ot:ottId": 489298, 
+"^ot:ottTaxonName": "Inocybe"
 }, 
 "otu234816": {
 "^ot:originalLabel": "Inocybe cf. pseudored AM882970"
@@ -550,10 +527,14 @@
 "^ot:ottTaxonName": "Inocybe geophylla"
 }, 
 "otu234848": {
-"^ot:originalLabel": "Inocybe pudica AM882872"
+"^ot:originalLabel": "Inocybe pudica AM882872", 
+"^ot:ottId": 642160, 
+"^ot:ottTaxonName": "Inocybe whitei"
 }, 
 "otu234849": {
-"^ot:originalLabel": "Inocybe pudica AY228341"
+"^ot:originalLabel": "Inocybe pudica AY228341", 
+"^ot:ottId": 642160, 
+"^ot:ottTaxonName": "Inocybe whitei"
 }, 
 "otu234850": {
 "^ot:originalLabel": "Inocybe sp. DQ974741", 
@@ -561,7 +542,9 @@
 "^ot:ottTaxonName": "Inocybe"
 }, 
 "otu234851": {
-"^ot:originalLabel": "Inocybe pudica AM882871"
+"^ot:originalLabel": "Inocybe pudica AM882871", 
+"^ot:ottId": 642160, 
+"^ot:ottTaxonName": "Inocybe whitei"
 }, 
 "otu234852": {
 "^ot:originalLabel": "Inocybe armeniaca DQ974803", 
@@ -590,7 +573,9 @@
 "^ot:originalLabel": "Inocybe phaeocomis AM882849"
 }, 
 "otu234858": {
-"^ot:originalLabel": "Inocybe phaeocomis AM882850"
+"^ot:originalLabel": "Inocybe phaeocomis AM882850", 
+"^ot:ottId": 710408, 
+"^ot:ottTaxonName": "Inocybe cincinnata"
 }, 
 "otu234859": {
 "^ot:originalLabel": "Inocybe sp. AY310828", 
@@ -866,8 +851,14 @@
 "treeById": {
 "tree2492": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "MP, ITS + LSU", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node569952", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node569952": {
 "edge569953": {
@@ -1769,8 +1760,14 @@
 }, 
 "tree2493": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "MP, ITS + LSU", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node570080", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node570080": {
 "edge570081": {
@@ -2378,9 +2375,15 @@
 }, 
 "tree2494": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "MP, ITS + LSU", 
 "^ot:inGroupClade": "node570168", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node570166", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node570166": {
 "edge570167": {
@@ -2890,8 +2893,14 @@
 }, 
 "tree5837": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "MP, ITS + LSU (rooted)", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node996420", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node996420": {
 "edge996421": {
@@ -3793,9 +3802,15 @@
 }, 
 "tree5838": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "MP, ITS + LSU (rooted)", 
 "^ot:inGroupClade": "node996549", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node996548", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node996548": {
 "edge996549": {
@@ -4705,9 +4720,14 @@
 }, 
 "tree5839": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "MP, ITS + LSU (rooted)", 
 "^ot:inGroupClade": "node996682", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node996677", 
+"^ot:specifiedRoot": "", 
 "^ot:tag": [
 "topology differs from figure", 
 "Suppl."

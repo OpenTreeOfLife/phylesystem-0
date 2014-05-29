@@ -19,48 +19,11 @@
 "@id": "peyotl-validator", 
 "@name": "validate_ot_nexson.py", 
 "@url": "https://github.com/OpenTreeOfLife/peyotl", 
-"@version": "0.0.3a", 
+"@version": "0.0.4a", 
 "invocation": {
-"checksPerformed": [
-"MISSING_MANDATORY_KEY", 
-"MISSING_OPTIONAL_KEY", 
-"UNRECOGNIZED_KEY", 
-"MISSING_LIST_EXPECTED", 
-"DUPLICATING_SINGLETON_KEY", 
-"REFERENCED_ID_NOT_FOUND", 
-"REPEATED_ID", 
-"REPEATED_OTU", 
-"MULTIPLE_ROOT_NODES", 
-"NO_ROOT_NODE", 
-"MULTIPLE_EDGES_FOR_NODES", 
-"CYCLE_DETECTED", 
-"DISCONNECTED_GRAPH_DETECTED", 
-"INCORRECT_ROOT_NODE_LABEL", 
-"TIP_WITHOUT_OTU", 
-"TIP_WITHOUT_OTT_ID", 
-"MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
-"NON_MONOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
-"INVALID_PROPERTY_VALUE", 
-"PROPERTY_VALUE_NOT_USEFUL", 
-"UNRECOGNIZED_PROPERTY_VALUE", 
-"MULTIPLE_TREES", 
-"UNRECOGNIZED_TAG", 
-"CONFLICTING_PROPERTY_VALUES", 
-"NO_TREES", 
-"DEPRECATED_PROPERTY", 
-"UNPARSEABLE_META", 
-"UNREACHABLE_NODE", 
-"INCORRECT_VALUE_TYPE", 
-"MISSING_CRUCIAL_CONTENT"
-], 
 "commandLine": [
 "--embed", 
-"--agent-only", 
-"-e", 
-"../mig-phyelesystem-scratch/1775/validation.json", 
-"-o", 
-"../mig-phyelesystem-scratch/1775/final.json", 
-"../mig-phyelesystem-scratch/1775/v1.2.1-1775.json"
+"--agent-only"
 ], 
 "otherProperty": [
 {
@@ -76,12 +39,19 @@
 }
 ]
 }, 
+"^ot:annotationEvents": {
+"annotation": []
+}, 
+"^ot:candidateTreeForSynthesis": [], 
 "^ot:curatorName": "Chris Owen", 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S11037"
 }, 
 "^ot:focalClade": 607861, 
 "^ot:focalCladeOTTTaxonName": "Choreutidae", 
+"^ot:messages": {
+"message": []
+}, 
 "^ot:otusElementOrder": [
 "otus1775"
 ], 
@@ -91,6 +61,7 @@
 }, 
 "^ot:studyPublicationReference": "Rota J. 2011. Data Partitioning in Bayesian Analysis: Molecular Phylogenetics of Metalmark Moths (Lepidoptera: Choreutidae). Systematic Entomology, .", 
 "^ot:studyYear": 2011, 
+"^ot:tag": [], 
 "^ot:treesElementOrder": [
 "trees1775"
 ], 
@@ -280,9 +251,9 @@
 "^ot:treebaseOTUId": "Tl439649"
 }, 
 "otu277169": {
-"^ot:altLabel": "Hemerophila felis", 
 "^ot:originalLabel": "Hemerophila felis 2", 
 "^ot:ottId": 220389, 
+"^ot:ottTaxonName": "Hemerophila felis", 
 "^ot:treebaseOTUId": "Tl439650"
 }, 
 "otu277170": {
@@ -597,9 +568,15 @@
 "treeById": {
 "tree3580": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "con 50 majrule", 
 "^ot:inGroupClade": "node689014", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node689007", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node689007": {
 "edge689008": {

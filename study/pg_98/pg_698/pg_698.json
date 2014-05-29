@@ -19,48 +19,11 @@
 "@id": "peyotl-validator", 
 "@name": "validate_ot_nexson.py", 
 "@url": "https://github.com/OpenTreeOfLife/peyotl", 
-"@version": "0.0.3a", 
+"@version": "0.0.4a", 
 "invocation": {
-"checksPerformed": [
-"MISSING_MANDATORY_KEY", 
-"MISSING_OPTIONAL_KEY", 
-"UNRECOGNIZED_KEY", 
-"MISSING_LIST_EXPECTED", 
-"DUPLICATING_SINGLETON_KEY", 
-"REFERENCED_ID_NOT_FOUND", 
-"REPEATED_ID", 
-"REPEATED_OTU", 
-"MULTIPLE_ROOT_NODES", 
-"NO_ROOT_NODE", 
-"MULTIPLE_EDGES_FOR_NODES", 
-"CYCLE_DETECTED", 
-"DISCONNECTED_GRAPH_DETECTED", 
-"INCORRECT_ROOT_NODE_LABEL", 
-"TIP_WITHOUT_OTU", 
-"TIP_WITHOUT_OTT_ID", 
-"MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
-"NON_MONOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
-"INVALID_PROPERTY_VALUE", 
-"PROPERTY_VALUE_NOT_USEFUL", 
-"UNRECOGNIZED_PROPERTY_VALUE", 
-"MULTIPLE_TREES", 
-"UNRECOGNIZED_TAG", 
-"CONFLICTING_PROPERTY_VALUES", 
-"NO_TREES", 
-"DEPRECATED_PROPERTY", 
-"UNPARSEABLE_META", 
-"UNREACHABLE_NODE", 
-"INCORRECT_VALUE_TYPE", 
-"MISSING_CRUCIAL_CONTENT"
-], 
 "commandLine": [
 "--embed", 
-"--agent-only", 
-"-e", 
-"../mig-phyelesystem-scratch/698/validation.json", 
-"-o", 
-"../mig-phyelesystem-scratch/698/final.json", 
-"../mig-phyelesystem-scratch/698/v1.2.1-698.json"
+"--agent-only"
 ], 
 "otherProperty": [
 {
@@ -76,12 +39,19 @@
 }
 ]
 }, 
+"^ot:annotationEvents": {
+"annotation": []
+}, 
+"^ot:candidateTreeForSynthesis": [], 
 "^ot:curatorName": "Romina Gazis", 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S10085"
 }, 
 "^ot:focalClade": 359501, 
 "^ot:focalCladeOTTTaxonName": "Hypocrea", 
+"^ot:messages": {
+"message": []
+}, 
 "^ot:otusElementOrder": [
 "otus698"
 ], 
@@ -91,6 +61,7 @@
 }, 
 "^ot:studyPublicationReference": "Jaklitsch W.M. 2009. European species of Hypocrea Part I. Studies in Mycology, 63(1): 1-91.", 
 "^ot:studyYear": 2009, 
+"^ot:tag": [], 
 "^ot:treesElementOrder": [
 "trees698"
 ], 
@@ -113,6 +84,8 @@
 }, 
 "otu187145": {
 "^ot:originalLabel": "Hypocrea jecorina", 
+"^ot:ottId": 5317030, 
+"^ot:ottTaxonName": "Hypocrea jecorina", 
 "^ot:treebaseOTUId": "Tl255793"
 }, 
 "otu187146": {
@@ -139,6 +112,8 @@
 }, 
 "otu187151": {
 "^ot:originalLabel": "Hypocrea dacrymycella WU29044", 
+"^ot:ottId": 5317027, 
+"^ot:ottTaxonName": "Hypocrea cupularis", 
 "^ot:treebaseOTUId": "Tl262727"
 }, 
 "otu187152": {
@@ -501,6 +476,8 @@
 }, 
 "otu187226": {
 "^ot:originalLabel": "Hypocrea delicatula", 
+"^ot:ottId": 5317059, 
+"^ot:ottTaxonName": "Protocrea delicatula", 
 "^ot:treebaseOTUId": "Tl265690"
 }, 
 "otu187227": {
@@ -553,6 +530,8 @@
 }, 
 "otu187236": {
 "^ot:originalLabel": "Hypocrea alutacea", 
+"^ot:ottId": 5317934, 
+"^ot:ottTaxonName": "Sphaeria clavata", 
 "^ot:treebaseOTUId": "Tl265700"
 }, 
 "otu187237": {
@@ -623,6 +602,8 @@
 }, 
 "otu187251": {
 "^ot:originalLabel": "Hypocrea leucopus", 
+"^ot:ottId": 5317048, 
+"^ot:ottTaxonName": "Podostroma leucopus", 
 "^ot:treebaseOTUId": "Tl265715"
 }, 
 "otu187252": {
@@ -709,6 +690,8 @@
 }, 
 "otu187269": {
 "^ot:originalLabel": "Hypocrea dacrymycella", 
+"^ot:ottId": 5317027, 
+"^ot:ottTaxonName": "Hypocrea cupularis", 
 "^ot:treebaseOTUId": "Tl265733"
 }, 
 "otu187270": {
@@ -835,6 +818,8 @@
 }, 
 "otu187295": {
 "^ot:originalLabel": "Hypocrea tremelloides", 
+"^ot:ottId": 5317809, 
+"^ot:ottTaxonName": "Sphaeria tremelloides", 
 "^ot:treebaseOTUId": "Tl265759"
 }, 
 "otu187296": {
@@ -891,6 +876,8 @@
 }, 
 "otu187306": {
 "^ot:originalLabel": "Hypocrea schweinitzii", 
+"^ot:ottId": 5317031, 
+"^ot:ottTaxonName": "Hypocrea schweinitzii", 
 "^ot:treebaseOTUId": "Tl265770"
 }, 
 "otu187307": {
@@ -962,8 +949,14 @@
 "treeById": {
 "tree1255": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "MP, EF-1 + RPB2", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node431295", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node431295": {
 "edge431296": {
@@ -2698,9 +2691,15 @@
 }, 
 "tree1256": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "MP, EF-1", 
 "^ot:inGroupClade": "node431542", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node431542", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node431542": {
 "edge431543": {
@@ -3224,9 +3223,15 @@
 }, 
 "tree1257": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "BI, EF-1", 
 "^ot:inGroupClade": "node431616", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node431616", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node431616": {
 "edge431617": {
@@ -3750,9 +3755,15 @@
 }, 
 "tree5648": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "MP, EF-1 + RPB2 (rooted)", 
 "^ot:inGroupClade": "node974063", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node974059", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node974059": {
 "edge974060": {

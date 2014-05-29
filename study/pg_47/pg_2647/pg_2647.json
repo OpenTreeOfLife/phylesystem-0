@@ -19,48 +19,11 @@
 "@id": "peyotl-validator", 
 "@name": "validate_ot_nexson.py", 
 "@url": "https://github.com/OpenTreeOfLife/peyotl", 
-"@version": "0.0.3a", 
+"@version": "0.0.4a", 
 "invocation": {
-"checksPerformed": [
-"MISSING_MANDATORY_KEY", 
-"MISSING_OPTIONAL_KEY", 
-"UNRECOGNIZED_KEY", 
-"MISSING_LIST_EXPECTED", 
-"DUPLICATING_SINGLETON_KEY", 
-"REFERENCED_ID_NOT_FOUND", 
-"REPEATED_ID", 
-"REPEATED_OTU", 
-"MULTIPLE_ROOT_NODES", 
-"NO_ROOT_NODE", 
-"MULTIPLE_EDGES_FOR_NODES", 
-"CYCLE_DETECTED", 
-"DISCONNECTED_GRAPH_DETECTED", 
-"INCORRECT_ROOT_NODE_LABEL", 
-"TIP_WITHOUT_OTU", 
-"TIP_WITHOUT_OTT_ID", 
-"MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
-"NON_MONOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
-"INVALID_PROPERTY_VALUE", 
-"PROPERTY_VALUE_NOT_USEFUL", 
-"UNRECOGNIZED_PROPERTY_VALUE", 
-"MULTIPLE_TREES", 
-"UNRECOGNIZED_TAG", 
-"CONFLICTING_PROPERTY_VALUES", 
-"NO_TREES", 
-"DEPRECATED_PROPERTY", 
-"UNPARSEABLE_META", 
-"UNREACHABLE_NODE", 
-"INCORRECT_VALUE_TYPE", 
-"MISSING_CRUCIAL_CONTENT"
-], 
 "commandLine": [
 "--embed", 
-"--agent-only", 
-"-e", 
-"../mig-phyelesystem-scratch/2647/validation.json", 
-"-o", 
-"../mig-phyelesystem-scratch/2647/final.json", 
-"../mig-phyelesystem-scratch/2647/v1.2.1-2647.json"
+"--agent-only"
 ], 
 "otherProperty": [
 {
@@ -76,9 +39,16 @@
 }
 ]
 }, 
+"^ot:annotationEvents": {
+"annotation": []
+}, 
+"^ot:candidateTreeForSynthesis": [], 
 "^ot:curatorName": "Joseph Brown", 
 "^ot:focalClade": 244265, 
 "^ot:focalCladeOTTTaxonName": "Mammalia", 
+"^ot:messages": {
+"message": []
+}, 
 "^ot:otusElementOrder": [
 "otus2647"
 ], 
@@ -86,8 +56,9 @@
 "^ot:studyPublication": {
 "@href": "http://dx.doi.org/10.1126/science.1229237"
 }, 
-"^ot:studyPublicationReference": "M. A. O'Leary, J. I. Bloch, J. J. Flynn, T. J. Gaudin, A. Giallombardo, N. P. Giannini, S. L. Goldberg, B. P. Kraatz, Z.-X. Luo, J. Meng, X. Ni, M. J. Novacek, F. A. Perini, Z. S. Randall, G. W. Rougier, E. J. Sargis, M. T. Silcox, N. B. Simmons, M. Spaulding, P. M. Velazco, M. Weksler, J. R. Wible, A. L. Cirranello. 2013. The Placental Mammal Ancestor and the Post-K-Pg Radiation of Placentals. Science 339(6120): 662-667.", 
+"^ot:studyPublicationReference": "O'Leary, M. A., J. I. Bloch, J. J. Flynn, T. J. Gaudin, A. Giallombardo, N. P. Giannini, S. L. Goldberg, B. P. Kraatz, Z.-X. Luo, J. Meng, X. Ni, M. J. Novacek, F. A. Perini, Z. S. Randall, G. W. Rougier, E. J. Sargis, M. T. Silcox, N. B. Simmons, M. Spaulding, P. M. Velazco, M. Weksler, J. R. Wible, A. L. Cirranello. 2013. The placental mammal ancestor and the post-K-Pg radiation of placentals. Science 339 (6120): 662-667.", 
 "^ot:studyYear": 2013, 
+"^ot:tag": [], 
 "^ot:treesElementOrder": [
 "trees2647"
 ], 
@@ -384,7 +355,9 @@
 "^ot:originalLabel": "Tarsius syrichta"
 }, 
 "otu394338": {
-"^ot:originalLabel": "Homo sapiens"
+"^ot:originalLabel": "Homo sapiens", 
+"^ot:ottId": 770315, 
+"^ot:ottTaxonName": "Homo sapiens"
 }, 
 "otu394339": {
 "^ot:originalLabel": "Saimiri sciureus", 
@@ -454,10 +427,17 @@
 "treeById": {
 "tree6169": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "Parsimony", 
 "^ot:inGroupClade": "node1053534", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node1053522", 
-"^ot:tag": "ingroup added;", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [
+"ingroup added;"
+], 
 "edgeBySourceId": {
 "node1053522": {
 "edge1053523": {

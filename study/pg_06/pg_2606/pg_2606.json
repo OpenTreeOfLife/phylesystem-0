@@ -19,48 +19,11 @@
 "@id": "peyotl-validator", 
 "@name": "validate_ot_nexson.py", 
 "@url": "https://github.com/OpenTreeOfLife/peyotl", 
-"@version": "0.0.3a", 
+"@version": "0.0.4a", 
 "invocation": {
-"checksPerformed": [
-"MISSING_MANDATORY_KEY", 
-"MISSING_OPTIONAL_KEY", 
-"UNRECOGNIZED_KEY", 
-"MISSING_LIST_EXPECTED", 
-"DUPLICATING_SINGLETON_KEY", 
-"REFERENCED_ID_NOT_FOUND", 
-"REPEATED_ID", 
-"REPEATED_OTU", 
-"MULTIPLE_ROOT_NODES", 
-"NO_ROOT_NODE", 
-"MULTIPLE_EDGES_FOR_NODES", 
-"CYCLE_DETECTED", 
-"DISCONNECTED_GRAPH_DETECTED", 
-"INCORRECT_ROOT_NODE_LABEL", 
-"TIP_WITHOUT_OTU", 
-"TIP_WITHOUT_OTT_ID", 
-"MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
-"NON_MONOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
-"INVALID_PROPERTY_VALUE", 
-"PROPERTY_VALUE_NOT_USEFUL", 
-"UNRECOGNIZED_PROPERTY_VALUE", 
-"MULTIPLE_TREES", 
-"UNRECOGNIZED_TAG", 
-"CONFLICTING_PROPERTY_VALUES", 
-"NO_TREES", 
-"DEPRECATED_PROPERTY", 
-"UNPARSEABLE_META", 
-"UNREACHABLE_NODE", 
-"INCORRECT_VALUE_TYPE", 
-"MISSING_CRUCIAL_CONTENT"
-], 
 "commandLine": [
 "--embed", 
-"--agent-only", 
-"-e", 
-"../mig-phyelesystem-scratch/2606/validation.json", 
-"-o", 
-"../mig-phyelesystem-scratch/2606/final.json", 
-"../mig-phyelesystem-scratch/2606/v1.2.1-2606.json"
+"--agent-only"
 ], 
 "otherProperty": [
 {
@@ -76,19 +39,31 @@
 }
 ]
 }, 
+"^ot:annotationEvents": {
+"annotation": []
+}, 
+"^ot:candidateTreeForSynthesis": [], 
 "^ot:curatorName": "Romina Gazis", 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S14595"
 }, 
 "^ot:focalClade": 775740, 
 "^ot:focalCladeOTTTaxonName": "Phytophthora", 
+"^ot:messages": {
+"message": []
+}, 
 "^ot:otusElementOrder": [
 "otus2606"
 ], 
 "^ot:studyId": "2606", 
-"^ot:studyPublicationReference": "Martin F.N., Blair J.E., & Coffey M.D. 2013. A combined mitochondrial and nuclear multilocus phylogeny of the genus Phytophthora. Fungal Genetics and Biology, .", 
-"^ot:studyYear": 2013, 
-"^ot:tag": "New species", 
+"^ot:studyPublication": {
+"@href": "http://dx.doi.org/10.1016/j.fgb.2014.02.006"
+}, 
+"^ot:studyPublicationReference": "Martin F.N., Blair J.E., & Coffey M.D. 2014. A combined mitochondrial and nuclear multilocus phylogeny of the genus Phytophthora. Fungal Genetics and Biology 66: 19-22.", 
+"^ot:studyYear": 2014, 
+"^ot:tag": [
+"New species"
+], 
 "^ot:treesElementOrder": [
 "trees2606"
 ], 
@@ -97,6 +72,8 @@
 "otuById": {
 "otu388662": {
 "^ot:originalLabel": "Phytophthora plurivora P10627", 
+"^ot:ottId": 1089387, 
+"^ot:ottTaxonName": "Phytophthora plurivora", 
 "^ot:treebaseOTUId": "Tl1197566"
 }, 
 "otu388663": {
@@ -117,6 +94,8 @@
 }, 
 "otu388666": {
 "^ot:originalLabel": "Phytophthora multivora P10458", 
+"^ot:ottId": 648173, 
+"^ot:ottTaxonName": "Phytophthora multivora", 
 "^ot:treebaseOTUId": "Tl1197570"
 }, 
 "otu388667": {
@@ -179,6 +158,8 @@
 }, 
 "otu388677": {
 "^ot:originalLabel": "Phytophthora capensis P1819", 
+"^ot:ottId": 917834, 
+"^ot:ottTaxonName": "Phytophthora capensis", 
 "^ot:treebaseOTUId": "Tl1197581"
 }, 
 "otu388678": {
@@ -199,6 +180,8 @@
 }, 
 "otu388681": {
 "^ot:originalLabel": "Phytophthora capensis P1823", 
+"^ot:ottId": 917834, 
+"^ot:ottTaxonName": "Phytophthora capensis", 
 "^ot:treebaseOTUId": "Tl1197585"
 }, 
 "otu388682": {
@@ -207,6 +190,8 @@
 }, 
 "otu388683": {
 "^ot:originalLabel": "Phytophthora plurivora P10623", 
+"^ot:ottId": 1089387, 
+"^ot:ottTaxonName": "Phytophthora plurivora", 
 "^ot:treebaseOTUId": "Tl1197587"
 }, 
 "otu388684": {
@@ -223,10 +208,14 @@
 }, 
 "otu388687": {
 "^ot:originalLabel": "Phytophthora multivora P7902", 
+"^ot:ottId": 648173, 
+"^ot:ottTaxonName": "Phytophthora multivora", 
 "^ot:treebaseOTUId": "Tl1197591"
 }, 
 "otu388688": {
 "^ot:originalLabel": "Phytophthora mengei P1273", 
+"^ot:ottId": 1054669, 
+"^ot:ottTaxonName": "Phytophthora mengei", 
 "^ot:treebaseOTUId": "Tl1197592"
 }, 
 "otu388689": {
@@ -237,10 +226,14 @@
 }, 
 "otu388690": {
 "^ot:originalLabel": "Phytophthora capensis P1822", 
+"^ot:ottId": 917834, 
+"^ot:ottTaxonName": "Phytophthora capensis", 
 "^ot:treebaseOTUId": "Tl1197594"
 }, 
 "otu388691": {
 "^ot:originalLabel": "Phytophthora plurivora P7491", 
+"^ot:ottId": 1089387, 
+"^ot:ottTaxonName": "Phytophthora plurivora", 
 "^ot:treebaseOTUId": "Tl1197595"
 }, 
 "otu388692": {
@@ -257,6 +250,8 @@
 }, 
 "otu388694": {
 "^ot:originalLabel": "Phytophthora multivora P1817", 
+"^ot:ottId": 648173, 
+"^ot:ottTaxonName": "Phytophthora multivora", 
 "^ot:treebaseOTUId": "Tl1197598"
 }, 
 "otu388695": {
@@ -267,10 +262,14 @@
 }, 
 "otu388696": {
 "^ot:originalLabel": "Phytophthora plurivora P10679", 
+"^ot:ottId": 1089387, 
+"^ot:ottTaxonName": "Phytophthora plurivora", 
 "^ot:treebaseOTUId": "Tl1197600"
 }, 
 "otu388697": {
 "^ot:originalLabel": "Phytophthora mengei P1165", 
+"^ot:ottId": 1054669, 
+"^ot:ottTaxonName": "Phytophthora mengei", 
 "^ot:treebaseOTUId": "Tl1197601"
 }, 
 "otu388698": {
@@ -293,6 +292,8 @@
 }, 
 "otu388701": {
 "^ot:originalLabel": "Phytophthora mengei P1825", 
+"^ot:ottId": 1054669, 
+"^ot:ottTaxonName": "Phytophthora mengei", 
 "^ot:treebaseOTUId": "Tl1197605"
 }, 
 "otu388702": {
@@ -303,6 +304,8 @@
 }, 
 "otu388703": {
 "^ot:originalLabel": "Phytophthora plurivora P1805", 
+"^ot:ottId": 1089387, 
+"^ot:ottTaxonName": "Phytophthora plurivora", 
 "^ot:treebaseOTUId": "Tl1197607"
 }, 
 "otu388704": {
@@ -631,10 +634,14 @@
 }, 
 "otu388761": {
 "^ot:originalLabel": "Phytophthora sulawesiensis P6306", 
+"^ot:ottId": 787168, 
+"^ot:ottTaxonName": "Phytophthora sulawesiensis", 
 "^ot:treebaseOTUId": "Tl1197665"
 }, 
 "otu388762": {
 "^ot:originalLabel": "Phytophthora cuyabensis P8213", 
+"^ot:ottId": 787225, 
+"^ot:ottTaxonName": "Phytophthora cuyabensis", 
 "^ot:treebaseOTUId": "Tl1197666"
 }, 
 "otu388763": {
@@ -645,6 +652,8 @@
 }, 
 "otu388764": {
 "^ot:originalLabel": "Phytophthora lagoariana P8223", 
+"^ot:ottId": 864861, 
+"^ot:ottTaxonName": "Phytophthora lagoariana", 
 "^ot:treebaseOTUId": "Tl1197668"
 }, 
 "otu388765": {
@@ -685,6 +694,8 @@
 }, 
 "otu388771": {
 "^ot:originalLabel": "Phytophthora ohioensis P16050", 
+"^ot:ottId": 5279504, 
+"^ot:ottTaxonName": "Phytophthora ohioensis", 
 "^ot:treebaseOTUId": "Tl1197675"
 }, 
 "otu388772": {
@@ -761,6 +772,8 @@
 }, 
 "otu388785": {
 "^ot:originalLabel": "Phytophthora quercetorum P15555", 
+"^ot:ottId": 399695, 
+"^ot:ottTaxonName": "Phytophthora quercetorum", 
 "^ot:treebaseOTUId": "Tl1197689"
 }, 
 "otu388786": {
@@ -913,10 +926,14 @@
 }, 
 "otu388811": {
 "^ot:originalLabel": "Phytophthora parsiana P15164", 
+"^ot:ottId": 1084178, 
+"^ot:ottTaxonName": "Phytophthora parsiana", 
 "^ot:treebaseOTUId": "Tl1197746"
 }, 
 "otu388812": {
 "^ot:originalLabel": "Phytophthora P6625", 
+"^ot:ottId": 775740, 
+"^ot:ottTaxonName": "Phytophthora", 
 "^ot:treebaseOTUId": "Tl1197747"
 }, 
 "otu388813": {
@@ -935,6 +952,8 @@
 }, 
 "otu388816": {
 "^ot:originalLabel": "Phytophthora irrigata P16861", 
+"^ot:ottId": 342762, 
+"^ot:ottTaxonName": "Phytophthora irrigata", 
 "^ot:treebaseOTUId": "Tl1197751"
 }, 
 "otu388817": {
@@ -973,6 +992,8 @@
 }, 
 "otu388823": {
 "^ot:originalLabel": "Phytophthora pinifolia P16100", 
+"^ot:ottId": 920999, 
+"^ot:ottTaxonName": "Phytophthora pinifolia", 
 "^ot:treebaseOTUId": "Tl1197758"
 }, 
 "otu388824": {
@@ -997,6 +1018,8 @@
 }, 
 "otu388828": {
 "^ot:originalLabel": "Phytophthora hydropathica P16857", 
+"^ot:ottId": 342767, 
+"^ot:ottTaxonName": "Phytophthora hydropathica", 
 "^ot:treebaseOTUId": "Tl1197763"
 }, 
 "otu388829": {
@@ -1005,6 +1028,8 @@
 }, 
 "otu388830": {
 "^ot:originalLabel": "Phytophthora rosacearum P3315", 
+"^ot:ottId": 677241, 
+"^ot:ottTaxonName": "Phytophthora rosacearum", 
 "^ot:treebaseOTUId": "Tl1197765"
 }, 
 "otu388831": {
@@ -1079,6 +1104,8 @@
 }, 
 "otu388845": {
 "^ot:originalLabel": "Phytophthora sulawesiensis P6303", 
+"^ot:ottId": 787168, 
+"^ot:ottTaxonName": "Phytophthora sulawesiensis", 
 "^ot:treebaseOTUId": "Tl1197780"
 }, 
 "otu388846": {
@@ -1103,8 +1130,14 @@
 "treeById": {
 "tree6049": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "MrBayes Consensus", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node1038643", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node1038643": {
 "edge1038644": {
@@ -1717,8 +1750,14 @@
 }, 
 "tree6050": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "Nuclear MrBayes", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node1038719", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node1038719": {
 "edge1038720": {
@@ -3131,8 +3170,14 @@
 }, 
 "tree6051": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "MrBayes Consensus", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node1038895", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node1038895": {
 "edge1038896": {
@@ -3785,8 +3830,14 @@
 }, 
 "tree6052": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "Combined MrBayes", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node1038976", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node1038976": {
 "edge1038977": {
@@ -5199,8 +5250,14 @@
 }, 
 "tree6053": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "Mitochondrial MrBayes", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node1039152", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node1039152": {
 "edge1039153": {

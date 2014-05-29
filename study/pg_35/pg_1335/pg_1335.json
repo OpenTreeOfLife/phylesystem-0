@@ -19,48 +19,11 @@
 "@id": "peyotl-validator", 
 "@name": "validate_ot_nexson.py", 
 "@url": "https://github.com/OpenTreeOfLife/peyotl", 
-"@version": "0.0.3a", 
+"@version": "0.0.4a", 
 "invocation": {
-"checksPerformed": [
-"MISSING_MANDATORY_KEY", 
-"MISSING_OPTIONAL_KEY", 
-"UNRECOGNIZED_KEY", 
-"MISSING_LIST_EXPECTED", 
-"DUPLICATING_SINGLETON_KEY", 
-"REFERENCED_ID_NOT_FOUND", 
-"REPEATED_ID", 
-"REPEATED_OTU", 
-"MULTIPLE_ROOT_NODES", 
-"NO_ROOT_NODE", 
-"MULTIPLE_EDGES_FOR_NODES", 
-"CYCLE_DETECTED", 
-"DISCONNECTED_GRAPH_DETECTED", 
-"INCORRECT_ROOT_NODE_LABEL", 
-"TIP_WITHOUT_OTU", 
-"TIP_WITHOUT_OTT_ID", 
-"MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
-"NON_MONOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
-"INVALID_PROPERTY_VALUE", 
-"PROPERTY_VALUE_NOT_USEFUL", 
-"UNRECOGNIZED_PROPERTY_VALUE", 
-"MULTIPLE_TREES", 
-"UNRECOGNIZED_TAG", 
-"CONFLICTING_PROPERTY_VALUES", 
-"NO_TREES", 
-"DEPRECATED_PROPERTY", 
-"UNPARSEABLE_META", 
-"UNREACHABLE_NODE", 
-"INCORRECT_VALUE_TYPE", 
-"MISSING_CRUCIAL_CONTENT"
-], 
 "commandLine": [
 "--embed", 
-"--agent-only", 
-"-e", 
-"../mig-phyelesystem-scratch/1335/validation.json", 
-"-o", 
-"../mig-phyelesystem-scratch/1335/final.json", 
-"../mig-phyelesystem-scratch/1335/v1.2.1-1335.json"
+"--agent-only"
 ], 
 "otherProperty": [
 {
@@ -76,9 +39,16 @@
 }
 ]
 }, 
+"^ot:annotationEvents": {
+"annotation": []
+}, 
+"^ot:candidateTreeForSynthesis": [], 
 "^ot:curatorName": "Romina Gazis", 
 "^ot:focalClade": 1050391, 
 "^ot:focalCladeOTTTaxonName": "Clavaria", 
+"^ot:messages": {
+"message": []
+}, 
 "^ot:otusElementOrder": [
 "otus1335"
 ], 
@@ -88,6 +58,7 @@
 }, 
 "^ot:studyPublicationReference": "Kautmanov\u00e1, I., M. Tomsovsky, M. Due\u00f1as, and M. P. Martin. \"European species of Clavaria (Agaricales, Agaricomycetes) with dark basidiomata a morphological and molecular study.\" Persoonia-Molecular Phylogeny and Evolution of Fungi 29, no. 1 (2012): 133-145.", 
 "^ot:studyYear": 2012, 
+"^ot:tag": [], 
 "^ot:treesElementOrder": [
 "trees1335"
 ], 
@@ -95,7 +66,9 @@
 "otus1335": {
 "otuById": {
 "otu243342": {
-"^ot:originalLabel": "Ramariopsis sp. HQ877722"
+"^ot:originalLabel": "Ramariopsis sp. HQ877722", 
+"^ot:ottId": 69646, 
+"^ot:ottTaxonName": "Ramariopsis"
 }, 
 "otu243343": {
 "^ot:originalLabel": "Ramariopsis kunzei EF561638", 
@@ -138,7 +111,9 @@
 "^ot:ottTaxonName": "Clavulinopsis fusiformis"
 }, 
 "otu243351": {
-"^ot:originalLabel": "Clavulinopsis sp. JX112903"
+"^ot:originalLabel": "Clavulinopsis sp. JX112903", 
+"^ot:ottId": 464138, 
+"^ot:ottTaxonName": "Clavulinopsis"
 }, 
 "otu243352": {
 "^ot:originalLabel": "Clavulinopsis luteoalba JQ415959", 
@@ -171,7 +146,9 @@
 "^ot:ottTaxonName": "Ramariopsis junquillea"
 }, 
 "otu243358": {
-"^ot:originalLabel": "Ramariopsis sp. DQ284903"
+"^ot:originalLabel": "Ramariopsis sp. DQ284903", 
+"^ot:ottId": 69646, 
+"^ot:ottTaxonName": "Ramariopsis"
 }, 
 "otu243359": {
 "^ot:originalLabel": "Ramariopsis cremicolor HQ877714", 
@@ -203,7 +180,9 @@
 "^ot:originalLabel": "Ramariopsis aff. kunzei HQ877719"
 }, 
 "otu243366": {
-"^ot:originalLabel": "Ramariopsis sp. JX112902"
+"^ot:originalLabel": "Ramariopsis sp. JX112902", 
+"^ot:ottId": 69646, 
+"^ot:ottTaxonName": "Ramariopsis"
 }, 
 "otu243367": {
 "^ot:originalLabel": "Ramariopsis pseudosubtilis HQ877723", 
@@ -236,10 +215,14 @@
 "^ot:ottTaxonName": "Clavulinopsis corniculata"
 }, 
 "otu243373": {
-"^ot:originalLabel": "Clavulinopsis gracillima HQ877708"
+"^ot:originalLabel": "Clavulinopsis gracillima HQ877708", 
+"^ot:ottId": 817936, 
+"^ot:ottTaxonName": "Clavaria flavipes"
 }, 
 "otu243374": {
-"^ot:originalLabel": "Ramariopsis antillarum HQ877710"
+"^ot:originalLabel": "Ramariopsis antillarum HQ877710", 
+"^ot:ottId": 5305467, 
+"^ot:ottTaxonName": "Clavulinopsis antillarum"
 }, 
 "otu243375": {
 "^ot:originalLabel": "Ramariopsis helvola GU299510", 
@@ -294,7 +277,9 @@
 "^ot:originalLabel": "Clavulinopsis aff. aurantiocinnabarina HQ877704"
 }, 
 "otu243387": {
-"^ot:originalLabel": "Clavulinopsis sp. JQ415957"
+"^ot:originalLabel": "Clavulinopsis sp. JQ415957", 
+"^ot:ottId": 464138, 
+"^ot:ottTaxonName": "Clavulinopsis"
 }, 
 "otu243388": {
 "^ot:originalLabel": "Mucronella calva AY586689", 
@@ -430,10 +415,14 @@
 "^ot:ottTaxonName": "Clavaria fragilis"
 }, 
 "otu243417": {
-"^ot:originalLabel": "Clavaria sp. HQ877692"
+"^ot:originalLabel": "Clavaria sp. HQ877692", 
+"^ot:ottId": 1050391, 
+"^ot:ottTaxonName": "Clavaria"
 }, 
 "otu243418": {
-"^ot:originalLabel": "Clavaria sp. JQ415956"
+"^ot:originalLabel": "Clavaria sp. JQ415956", 
+"^ot:ottId": 1050391, 
+"^ot:ottTaxonName": "Clavaria"
 }, 
 "otu243419": {
 "^ot:originalLabel": "Clavaria fragilis GU299500", 
@@ -494,7 +483,9 @@
 "^ot:ottTaxonName": "Clavaria greletii"
 }, 
 "otu243431": {
-"^ot:originalLabel": "Clavaria sp. JX069825"
+"^ot:originalLabel": "Clavaria sp. JX069825", 
+"^ot:ottId": 1050391, 
+"^ot:ottTaxonName": "Clavaria"
 }, 
 "otu243432": {
 "^ot:originalLabel": "Clavaria incarnata JQ415948", 
@@ -527,16 +518,24 @@
 "^ot:ottTaxonName": "Ramaria australiana"
 }, 
 "otu243438": {
-"^ot:originalLabel": "Clavaria sp. HQ877684"
+"^ot:originalLabel": "Clavaria sp. HQ877684", 
+"^ot:ottId": 1050391, 
+"^ot:ottTaxonName": "Clavaria"
 }, 
 "otu243439": {
-"^ot:originalLabel": "Clavaria sp. JX069827"
+"^ot:originalLabel": "Clavaria sp. JX069827", 
+"^ot:ottId": 1050391, 
+"^ot:ottTaxonName": "Clavaria"
 }, 
 "otu243440": {
-"^ot:originalLabel": "Clavaria sp. JX069828"
+"^ot:originalLabel": "Clavaria sp. JX069828", 
+"^ot:ottId": 1050391, 
+"^ot:ottTaxonName": "Clavaria"
 }, 
 "otu243441": {
-"^ot:originalLabel": "Clavaria sp. JX069826"
+"^ot:originalLabel": "Clavaria sp. JX069826", 
+"^ot:ottId": 1050391, 
+"^ot:ottTaxonName": "Clavaria"
 }, 
 "otu243442": {
 "^ot:originalLabel": "Clavaria guilleminii JQ415939", 
@@ -604,7 +603,9 @@
 "^ot:ottTaxonName": "Clavaria atroumbrina"
 }, 
 "otu243455": {
-"^ot:originalLabel": "Clavaria sp. JQ415960"
+"^ot:originalLabel": "Clavaria sp. JQ415960", 
+"^ot:ottId": 1050391, 
+"^ot:ottTaxonName": "Clavaria"
 }, 
 "otu243456": {
 "^ot:originalLabel": "Clavaria argillacea HQ877683", 
@@ -690,7 +691,9 @@
 "^ot:ottTaxonName": "Clavaria acuta"
 }, 
 "otu243473": {
-"^ot:originalLabel": "Clavaria sp. JQ415963"
+"^ot:originalLabel": "Clavaria sp. JQ415963", 
+"^ot:ottId": 1050391, 
+"^ot:ottTaxonName": "Clavaria"
 }, 
 "otu243474": {
 "^ot:originalLabel": "Clavaria falcata JQ415940", 
@@ -756,8 +759,14 @@
 "treeById": {
 "tree2659": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "MP, LSU", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node590518", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node590518": {
 "edge590519": {
@@ -3029,9 +3038,15 @@
 }, 
 "tree5867": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "MP, LSU (rooted)", 
 "^ot:inGroupClade": "node999237", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node999234", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node999234": {
 "edge999235": {

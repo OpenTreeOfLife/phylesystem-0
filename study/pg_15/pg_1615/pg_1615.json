@@ -19,48 +19,11 @@
 "@id": "peyotl-validator", 
 "@name": "validate_ot_nexson.py", 
 "@url": "https://github.com/OpenTreeOfLife/peyotl", 
-"@version": "0.0.3a", 
+"@version": "0.0.4a", 
 "invocation": {
-"checksPerformed": [
-"MISSING_MANDATORY_KEY", 
-"MISSING_OPTIONAL_KEY", 
-"UNRECOGNIZED_KEY", 
-"MISSING_LIST_EXPECTED", 
-"DUPLICATING_SINGLETON_KEY", 
-"REFERENCED_ID_NOT_FOUND", 
-"REPEATED_ID", 
-"REPEATED_OTU", 
-"MULTIPLE_ROOT_NODES", 
-"NO_ROOT_NODE", 
-"MULTIPLE_EDGES_FOR_NODES", 
-"CYCLE_DETECTED", 
-"DISCONNECTED_GRAPH_DETECTED", 
-"INCORRECT_ROOT_NODE_LABEL", 
-"TIP_WITHOUT_OTU", 
-"TIP_WITHOUT_OTT_ID", 
-"MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
-"NON_MONOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
-"INVALID_PROPERTY_VALUE", 
-"PROPERTY_VALUE_NOT_USEFUL", 
-"UNRECOGNIZED_PROPERTY_VALUE", 
-"MULTIPLE_TREES", 
-"UNRECOGNIZED_TAG", 
-"CONFLICTING_PROPERTY_VALUES", 
-"NO_TREES", 
-"DEPRECATED_PROPERTY", 
-"UNPARSEABLE_META", 
-"UNREACHABLE_NODE", 
-"INCORRECT_VALUE_TYPE", 
-"MISSING_CRUCIAL_CONTENT"
-], 
 "commandLine": [
 "--embed", 
-"--agent-only", 
-"-e", 
-"../mig-phyelesystem-scratch/1615/validation.json", 
-"-o", 
-"../mig-phyelesystem-scratch/1615/final.json", 
-"../mig-phyelesystem-scratch/1615/v1.2.1-1615.json"
+"--agent-only"
 ], 
 "otherProperty": [
 {
@@ -76,12 +39,19 @@
 }
 ]
 }, 
+"^ot:annotationEvents": {
+"annotation": []
+}, 
+"^ot:candidateTreeForSynthesis": [], 
 "^ot:curatorName": "Romina Gazis", 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S11805"
 }, 
 "^ot:focalClade": 660754, 
 "^ot:focalCladeOTTTaxonName": "Diaporthaceae", 
+"^ot:messages": {
+"message": []
+}, 
 "^ot:otusElementOrder": [
 "otus1615"
 ], 
@@ -91,6 +61,7 @@
 }, 
 "^ot:studyPublicationReference": "Lamprecht S., Crous P., Groenewald J.Z., Tewoldemedhin Y.T., & Marasas W. 2011. Diaporthaceae associated with root and crown rot of maize. IMA Fungus, 2(1): 13-24.", 
 "^ot:studyYear": 2011, 
+"^ot:tag": [], 
 "^ot:treesElementOrder": [
 "trees1615"
 ], 
@@ -137,6 +108,8 @@
 }, 
 "otu265835": {
 "^ot:originalLabel": "Coniochaeta sp. AY346275", 
+"^ot:ottId": 812329, 
+"^ot:ottTaxonName": "Coniochaeta", 
 "^ot:treebaseOTUId": "Tl589286"
 }, 
 "otu265836": {
@@ -171,10 +144,14 @@
 }, 
 "otu265842": {
 "^ot:originalLabel": "Diaporthe decedens AF408348", 
+"^ot:ottId": 5316669, 
+"^ot:ottTaxonName": "Allantoporthe decedens", 
 "^ot:treebaseOTUId": "Tl589293"
 }, 
 "otu265843": {
 "^ot:originalLabel": "Pilidiella granati AF408379", 
+"^ot:ottId": 228448, 
+"^ot:ottTaxonName": "Coniella granati", 
 "^ot:treebaseOTUId": "Tl589294"
 }, 
 "otu265844": {
@@ -239,6 +216,8 @@
 }, 
 "otu265855": {
 "^ot:originalLabel": "Greeneria uvicola AF362570", 
+"^ot:ottId": 396956, 
+"^ot:ottTaxonName": "Phoma uvicola", 
 "^ot:treebaseOTUId": "Tl589306"
 }, 
 "otu265856": {
@@ -297,6 +276,8 @@
 }, 
 "otu265866": {
 "^ot:originalLabel": "Ophiovalsa betulae AF408375", 
+"^ot:ottId": 830759, 
+"^ot:ottTaxonName": "Cryptosporella betulae", 
 "^ot:treebaseOTUId": "Tl589317"
 }, 
 "otu265867": {
@@ -359,6 +340,8 @@
 }, 
 "otu265877": {
 "^ot:originalLabel": "Diaporthe medusaea AF362560", 
+"^ot:ottId": 5316658, 
+"^ot:ottTaxonName": "Diaporthe rudis", 
 "^ot:treebaseOTUId": "Tl589328"
 }, 
 "otu265878": {
@@ -419,6 +402,8 @@
 }, 
 "otu265889": {
 "^ot:originalLabel": "Diaporthe padi AF408354", 
+"^ot:ottId": 5316662, 
+"^ot:ottTaxonName": "Diaporthe decorticans", 
 "^ot:treebaseOTUId": "Tl589340"
 }, 
 "otu265890": {
@@ -429,6 +414,8 @@
 }, 
 "otu265891": {
 "^ot:originalLabel": "Coniochaetidium savoryi AY346276", 
+"^ot:ottId": 103601, 
+"^ot:ottTaxonName": "Coniochaeta savoryi", 
 "^ot:treebaseOTUId": "Tl589342"
 }, 
 "otu265892": {
@@ -651,9 +638,15 @@
 "treeById": {
 "tree3251": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "MP, LSU", 
 "^ot:inGroupClade": "node655712", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node655708", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node655708": {
 "edge655709": {
@@ -1485,9 +1478,15 @@
 }, 
 "tree3252": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "MP, ITS", 
 "^ot:inGroupClade": "node655828", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node655826", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node655826": {
 "edge655827": {
@@ -1927,9 +1926,15 @@
 }, 
 "tree3253": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "MP, EF-1", 
 "^ot:inGroupClade": "node655890", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node655888", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node655888": {
 "edge655889": {

@@ -19,48 +19,11 @@
 "@id": "peyotl-validator", 
 "@name": "validate_ot_nexson.py", 
 "@url": "https://github.com/OpenTreeOfLife/peyotl", 
-"@version": "0.0.3a", 
+"@version": "0.0.4a", 
 "invocation": {
-"checksPerformed": [
-"MISSING_MANDATORY_KEY", 
-"MISSING_OPTIONAL_KEY", 
-"UNRECOGNIZED_KEY", 
-"MISSING_LIST_EXPECTED", 
-"DUPLICATING_SINGLETON_KEY", 
-"REFERENCED_ID_NOT_FOUND", 
-"REPEATED_ID", 
-"REPEATED_OTU", 
-"MULTIPLE_ROOT_NODES", 
-"NO_ROOT_NODE", 
-"MULTIPLE_EDGES_FOR_NODES", 
-"CYCLE_DETECTED", 
-"DISCONNECTED_GRAPH_DETECTED", 
-"INCORRECT_ROOT_NODE_LABEL", 
-"TIP_WITHOUT_OTU", 
-"TIP_WITHOUT_OTT_ID", 
-"MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
-"NON_MONOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
-"INVALID_PROPERTY_VALUE", 
-"PROPERTY_VALUE_NOT_USEFUL", 
-"UNRECOGNIZED_PROPERTY_VALUE", 
-"MULTIPLE_TREES", 
-"UNRECOGNIZED_TAG", 
-"CONFLICTING_PROPERTY_VALUES", 
-"NO_TREES", 
-"DEPRECATED_PROPERTY", 
-"UNPARSEABLE_META", 
-"UNREACHABLE_NODE", 
-"INCORRECT_VALUE_TYPE", 
-"MISSING_CRUCIAL_CONTENT"
-], 
 "commandLine": [
 "--embed", 
-"--agent-only", 
-"-e", 
-"../mig-phyelesystem-scratch/1846/validation.json", 
-"-o", 
-"../mig-phyelesystem-scratch/1846/final.json", 
-"../mig-phyelesystem-scratch/1846/v1.2.1-1846.json"
+"--agent-only"
 ], 
 "otherProperty": [
 {
@@ -76,12 +39,19 @@
 }
 ]
 }, 
+"^ot:annotationEvents": {
+"annotation": []
+}, 
+"^ot:candidateTreeForSynthesis": [], 
 "^ot:curatorName": "Chris Owen", 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S1634"
 }, 
 "^ot:focalClade": 941620, 
 "^ot:focalCladeOTTTaxonName": "Annelida", 
+"^ot:messages": {
+"message": []
+}, 
 "^ot:otusElementOrder": [
 "otus1846"
 ], 
@@ -91,6 +61,7 @@
 }, 
 "^ot:studyPublicationReference": "Rousset V., Pleijel F., Rouse G., Erseus C., & Siddall M. 2006. A molecular phylogeny of annelids. Cladistics, null.", 
 "^ot:studyYear": 2006, 
+"^ot:tag": [], 
 "^ot:treesElementOrder": [
 "trees1846"
 ], 
@@ -123,6 +94,8 @@
 }, 
 "otu282886": {
 "^ot:originalLabel": "Protodrilus purpureus", 
+"^ot:ottId": 116801, 
+"^ot:ottTaxonName": "Protodrilus purpureus", 
 "^ot:treebaseOTUId": "Tl178871"
 }, 
 "otu282887": {
@@ -145,6 +118,8 @@
 }, 
 "otu282890": {
 "^ot:originalLabel": "Hrabeiella periglandulata", 
+"^ot:ottId": 514184, 
+"^ot:ottTaxonName": "Hrabeiella periglandulata", 
 "^ot:treebaseOTUId": "Tl178883"
 }, 
 "otu282891": {
@@ -969,6 +944,8 @@
 }, 
 "otu283028": {
 "^ot:originalLabel": "Grubeosyllis limbata", 
+"^ot:ottId": 305744, 
+"^ot:ottTaxonName": "Salvatoria limbata", 
 "^ot:treebaseOTUId": "Tl91325"
 }, 
 "otu283029": {
@@ -1081,6 +1058,8 @@
 }, 
 "otu283047": {
 "^ot:originalLabel": "Polygordius lacteus", 
+"^ot:ottId": 517722, 
+"^ot:ottTaxonName": "Polygordius lacteus", 
 "^ot:treebaseOTUId": "Tl91344"
 }, 
 "otu283048": {
@@ -1181,6 +1160,8 @@
 }, 
 "otu283064": {
 "^ot:originalLabel": "Pionosyllis pulligera", 
+"^ot:ottId": 567350, 
+"^ot:ottTaxonName": "Nudisyllis pulligera", 
 "^ot:treebaseOTUId": "Tl91361"
 }, 
 "otu283065": {
@@ -1221,6 +1202,8 @@
 }, 
 "otu283071": {
 "^ot:originalLabel": "Saccocirrus sp.", 
+"^ot:ottId": 921159, 
+"^ot:ottTaxonName": "Saccocirrus", 
 "^ot:treebaseOTUId": "Tl91368"
 }, 
 "otu283072": {
@@ -1395,9 +1378,15 @@
 "treeById": {
 "tree3727": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "Strict Consensus Tree", 
 "^ot:inGroupClade": "node706456", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node706450", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node706450": {
 "edge706451": {

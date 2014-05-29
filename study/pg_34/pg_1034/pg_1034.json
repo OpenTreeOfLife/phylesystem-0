@@ -19,48 +19,11 @@
 "@id": "peyotl-validator", 
 "@name": "validate_ot_nexson.py", 
 "@url": "https://github.com/OpenTreeOfLife/peyotl", 
-"@version": "0.0.3a", 
+"@version": "0.0.4a", 
 "invocation": {
-"checksPerformed": [
-"MISSING_MANDATORY_KEY", 
-"MISSING_OPTIONAL_KEY", 
-"UNRECOGNIZED_KEY", 
-"MISSING_LIST_EXPECTED", 
-"DUPLICATING_SINGLETON_KEY", 
-"REFERENCED_ID_NOT_FOUND", 
-"REPEATED_ID", 
-"REPEATED_OTU", 
-"MULTIPLE_ROOT_NODES", 
-"NO_ROOT_NODE", 
-"MULTIPLE_EDGES_FOR_NODES", 
-"CYCLE_DETECTED", 
-"DISCONNECTED_GRAPH_DETECTED", 
-"INCORRECT_ROOT_NODE_LABEL", 
-"TIP_WITHOUT_OTU", 
-"TIP_WITHOUT_OTT_ID", 
-"MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
-"NON_MONOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
-"INVALID_PROPERTY_VALUE", 
-"PROPERTY_VALUE_NOT_USEFUL", 
-"UNRECOGNIZED_PROPERTY_VALUE", 
-"MULTIPLE_TREES", 
-"UNRECOGNIZED_TAG", 
-"CONFLICTING_PROPERTY_VALUES", 
-"NO_TREES", 
-"DEPRECATED_PROPERTY", 
-"UNPARSEABLE_META", 
-"UNREACHABLE_NODE", 
-"INCORRECT_VALUE_TYPE", 
-"MISSING_CRUCIAL_CONTENT"
-], 
 "commandLine": [
 "--embed", 
-"--agent-only", 
-"-e", 
-"../mig-phyelesystem-scratch/1034/validation.json", 
-"-o", 
-"../mig-phyelesystem-scratch/1034/final.json", 
-"../mig-phyelesystem-scratch/1034/v1.2.1-1034.json"
+"--agent-only"
 ], 
 "otherProperty": [
 {
@@ -76,12 +39,19 @@
 }
 ]
 }, 
+"^ot:annotationEvents": {
+"annotation": []
+}, 
+"^ot:candidateTreeForSynthesis": [], 
 "^ot:curatorName": "Romina Gazis", 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S10214"
 }, 
 "^ot:focalClade": 524635, 
 "^ot:focalCladeOTTTaxonName": "Pythium", 
+"^ot:messages": {
+"message": []
+}, 
 "^ot:otusElementOrder": [
 "otus1034"
 ], 
@@ -89,8 +59,9 @@
 "^ot:studyPublication": {
 "@href": "http://dx.doi.org/10.1007/s10267-009-0486-0"
 }, 
-"^ot:studyPublicationReference": "Uzuhashi S., Tojo M., Kakishima M., & Kobayashi S. 2009. Pythium apinafurcum sp. nov.: its morphology, molecular phylogeny, and infectivity for plants. Mycoscience, 50(4): 281-290.", 
+"^ot:studyPublicationReference": "Uzuhashi, S., Tojo M., Kakishima M., & Kobayashi S. 2009. Pythium apinafurcum sp. nov.: its morphology, molecular phylogeny, and infectivity for plants. Mycoscience 50 (4): 281-290.", 
 "^ot:studyYear": 2009, 
+"^ot:tag": [], 
 "^ot:treesElementOrder": [
 "trees1034"
 ], 
@@ -189,10 +160,14 @@
 }, 
 "otu215658": {
 "^ot:originalLabel": "Pythium cucurbitacearum", 
+"^ot:ottId": 527511, 
+"^ot:ottTaxonName": "Phytopythium cucurbitacearum", 
 "^ot:treebaseOTUId": "Tl246477"
 }, 
 "otu215659": {
 "^ot:originalLabel": "Pythium iwayamae", 
+"^ot:ottId": 883079, 
+"^ot:ottTaxonName": "Pythium iwayamai", 
 "^ot:treebaseOTUId": "Tl246478"
 }, 
 "otu215660": {
@@ -269,6 +244,8 @@
 }, 
 "otu215672": {
 "^ot:originalLabel": "Pythium oedichilum", 
+"^ot:ottId": 425733, 
+"^ot:ottTaxonName": "Phytopythium oedochilum", 
 "^ot:treebaseOTUId": "Tl246491"
 }, 
 "otu215673": {
@@ -460,8 +437,14 @@
 "treeById": {
 "tree1986": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "ML, ITS", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node508606", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node508606": {
 "edge508607": {
@@ -1272,8 +1255,14 @@
 }, 
 "tree1987": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "ML, LSU", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node508721", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node508721": {
 "edge508722": {
@@ -1853,9 +1842,15 @@
 }, 
 "tree5765": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "ML, ITS (rooted)", 
 "^ot:inGroupClade": "node985971", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node985970", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node985970": {
 "edge985971": {
@@ -2666,9 +2661,15 @@
 }, 
 "tree5766": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "ML, LSU (rooted)", 
 "^ot:inGroupClade": "node986086", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node986085", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node986085": {
 "edge986086": {

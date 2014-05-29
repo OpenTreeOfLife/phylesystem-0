@@ -19,48 +19,11 @@
 "@id": "peyotl-validator", 
 "@name": "validate_ot_nexson.py", 
 "@url": "https://github.com/OpenTreeOfLife/peyotl", 
-"@version": "0.0.3a", 
+"@version": "0.0.4a", 
 "invocation": {
-"checksPerformed": [
-"MISSING_MANDATORY_KEY", 
-"MISSING_OPTIONAL_KEY", 
-"UNRECOGNIZED_KEY", 
-"MISSING_LIST_EXPECTED", 
-"DUPLICATING_SINGLETON_KEY", 
-"REFERENCED_ID_NOT_FOUND", 
-"REPEATED_ID", 
-"REPEATED_OTU", 
-"MULTIPLE_ROOT_NODES", 
-"NO_ROOT_NODE", 
-"MULTIPLE_EDGES_FOR_NODES", 
-"CYCLE_DETECTED", 
-"DISCONNECTED_GRAPH_DETECTED", 
-"INCORRECT_ROOT_NODE_LABEL", 
-"TIP_WITHOUT_OTU", 
-"TIP_WITHOUT_OTT_ID", 
-"MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
-"NON_MONOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
-"INVALID_PROPERTY_VALUE", 
-"PROPERTY_VALUE_NOT_USEFUL", 
-"UNRECOGNIZED_PROPERTY_VALUE", 
-"MULTIPLE_TREES", 
-"UNRECOGNIZED_TAG", 
-"CONFLICTING_PROPERTY_VALUES", 
-"NO_TREES", 
-"DEPRECATED_PROPERTY", 
-"UNPARSEABLE_META", 
-"UNREACHABLE_NODE", 
-"INCORRECT_VALUE_TYPE", 
-"MISSING_CRUCIAL_CONTENT"
-], 
 "commandLine": [
 "--embed", 
-"--agent-only", 
-"-e", 
-"../mig-phyelesystem-scratch/993/validation.json", 
-"-o", 
-"../mig-phyelesystem-scratch/993/final.json", 
-"../mig-phyelesystem-scratch/993/v1.2.1-993.json"
+"--agent-only"
 ], 
 "otherProperty": [
 {
@@ -76,12 +39,17 @@
 }
 ]
 }, 
+"^ot:annotationEvents": {
+"annotation": []
+}, 
+"^ot:candidateTreeForSynthesis": [], 
 "^ot:curatorName": "Romina Gazis", 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S9946"
 }, 
-"^ot:focalClade": 1804371, 
-"^ot:focalCladeOTTTaxonName": "Halioticida", 
+"^ot:messages": {
+"message": []
+}, 
 "^ot:otusElementOrder": [
 "otus993"
 ], 
@@ -91,6 +59,7 @@
 }, 
 "^ot:studyPublicationReference": "Muraosa Y., Morimoto K., Sano A., Nishimura K., & Hatai K. 2009. A new peronosporomycete, Halioticida noduliformans gen. et sp. nov., isolated from white nodules in the abalone Haliotis spp. from Japan. Mycoscience, 50(2): 106-115.", 
 "^ot:studyYear": 2009, 
+"^ot:tag": [], 
 "^ot:treesElementOrder": [
 "trees993"
 ], 
@@ -225,8 +194,6 @@
 }, 
 "otu210358": {
 "^ot:originalLabel": "Halioticida noduliformans NJM0447", 
-"^ot:ottId": 420909, 
-"^ot:ottTaxonName": "Halioticida noduliformans", 
 "^ot:treebaseOTUId": "Tl260995"
 }, 
 "otu210359": {
@@ -256,7 +223,7 @@
 "otu210363": {
 "^ot:originalLabel": "Halocrusticida panulirata", 
 "^ot:ottId": 983815, 
-"^ot:ottTaxonName": "Halodaphnea panulirata", 
+"^ot:ottTaxonName": "Halocrusticida panuliri", 
 "^ot:treebaseOTUId": "Tl261000"
 }, 
 "otu210364": {
@@ -267,8 +234,6 @@
 }, 
 "otu210365": {
 "^ot:originalLabel": "Halioticida noduliformans NJM0451", 
-"^ot:ottId": 420909, 
-"^ot:ottTaxonName": "Halioticida noduliformans", 
 "^ot:treebaseOTUId": "Tl261002"
 }, 
 "otu210366": {
@@ -279,8 +244,6 @@
 }, 
 "otu210367": {
 "^ot:originalLabel": "Halioticida noduliformans NJM0631", 
-"^ot:ottId": 420909, 
-"^ot:ottTaxonName": "Halioticida noduliformans", 
 "^ot:treebaseOTUId": "Tl261004"
 }, 
 "otu210368": {
@@ -297,8 +260,6 @@
 }, 
 "otu210370": {
 "^ot:originalLabel": "Halioticida noduliformans NJM0462", 
-"^ot:ottId": 420909, 
-"^ot:ottTaxonName": "Halioticida noduliformans", 
 "^ot:treebaseOTUId": "Tl261007"
 }, 
 "otu210371": {
@@ -325,9 +286,15 @@
 "treeById": {
 "tree1936": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "ML, SSU", 
 "^ot:inGroupClade": "node498819", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node498818", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node498818": {
 "edge498819": {

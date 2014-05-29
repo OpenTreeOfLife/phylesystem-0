@@ -19,48 +19,11 @@
 "@id": "peyotl-validator", 
 "@name": "validate_ot_nexson.py", 
 "@url": "https://github.com/OpenTreeOfLife/peyotl", 
-"@version": "0.0.3a", 
+"@version": "0.0.4a", 
 "invocation": {
-"checksPerformed": [
-"MISSING_MANDATORY_KEY", 
-"MISSING_OPTIONAL_KEY", 
-"UNRECOGNIZED_KEY", 
-"MISSING_LIST_EXPECTED", 
-"DUPLICATING_SINGLETON_KEY", 
-"REFERENCED_ID_NOT_FOUND", 
-"REPEATED_ID", 
-"REPEATED_OTU", 
-"MULTIPLE_ROOT_NODES", 
-"NO_ROOT_NODE", 
-"MULTIPLE_EDGES_FOR_NODES", 
-"CYCLE_DETECTED", 
-"DISCONNECTED_GRAPH_DETECTED", 
-"INCORRECT_ROOT_NODE_LABEL", 
-"TIP_WITHOUT_OTU", 
-"TIP_WITHOUT_OTT_ID", 
-"MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
-"NON_MONOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
-"INVALID_PROPERTY_VALUE", 
-"PROPERTY_VALUE_NOT_USEFUL", 
-"UNRECOGNIZED_PROPERTY_VALUE", 
-"MULTIPLE_TREES", 
-"UNRECOGNIZED_TAG", 
-"CONFLICTING_PROPERTY_VALUES", 
-"NO_TREES", 
-"DEPRECATED_PROPERTY", 
-"UNPARSEABLE_META", 
-"UNREACHABLE_NODE", 
-"INCORRECT_VALUE_TYPE", 
-"MISSING_CRUCIAL_CONTENT"
-], 
 "commandLine": [
 "--embed", 
-"--agent-only", 
-"-e", 
-"../mig-phyelesystem-scratch/654/validation.json", 
-"-o", 
-"../mig-phyelesystem-scratch/654/final.json", 
-"../mig-phyelesystem-scratch/654/v1.2.1-654.json"
+"--agent-only"
 ], 
 "otherProperty": [
 {
@@ -76,12 +39,19 @@
 }
 ]
 }, 
+"^ot:annotationEvents": {
+"annotation": []
+}, 
+"^ot:candidateTreeForSynthesis": [], 
 "^ot:curatorName": "Romina Gazis", 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S12009"
 }, 
 "^ot:focalClade": 991242, 
 "^ot:focalCladeOTTTaxonName": "Cenococcum", 
+"^ot:messages": {
+"message": []
+}, 
 "^ot:otusElementOrder": [
 "otus654"
 ], 
@@ -91,6 +61,7 @@
 }, 
 "^ot:studyPublicationReference": "Spatafora J.W., Owensby C.A., Douhan G.W., Boehm E., & Schoch C.L. 2011. Phylogenetic placement of the ectomycorrhizal genus Cenococcum in Gloniaceae (Dothideomycetes). Mycologia, 104(3): 758-765.", 
 "^ot:studyYear": 2011, 
+"^ot:tag": [], 
 "^ot:treesElementOrder": [
 "trees654"
 ], 
@@ -157,6 +128,8 @@
 }, 
 "otu181664": {
 "^ot:originalLabel": "Rhytidhysteron hysterinum EB 0351", 
+"^ot:ottId": 5310986, 
+"^ot:ottTaxonName": "Eutryblidiella hysterina", 
 "^ot:treebaseOTUId": "Tl648275"
 }, 
 "otu181665": {
@@ -631,10 +604,17 @@
 "treeById": {
 "tree1158": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "ML, SSU + LSU + EF-1 + RPB1 + RPB2", 
 "^ot:inGroupClade": "node417443", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node417435", 
-"^ot:tag": "EF-1", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [
+"EF-1"
+], 
 "edgeBySourceId": {
 "node417435": {
 "edge417436": {

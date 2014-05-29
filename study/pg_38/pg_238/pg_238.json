@@ -19,48 +19,11 @@
 "@id": "peyotl-validator", 
 "@name": "validate_ot_nexson.py", 
 "@url": "https://github.com/OpenTreeOfLife/peyotl", 
-"@version": "0.0.3a", 
+"@version": "0.0.4a", 
 "invocation": {
-"checksPerformed": [
-"MISSING_MANDATORY_KEY", 
-"MISSING_OPTIONAL_KEY", 
-"UNRECOGNIZED_KEY", 
-"MISSING_LIST_EXPECTED", 
-"DUPLICATING_SINGLETON_KEY", 
-"REFERENCED_ID_NOT_FOUND", 
-"REPEATED_ID", 
-"REPEATED_OTU", 
-"MULTIPLE_ROOT_NODES", 
-"NO_ROOT_NODE", 
-"MULTIPLE_EDGES_FOR_NODES", 
-"CYCLE_DETECTED", 
-"DISCONNECTED_GRAPH_DETECTED", 
-"INCORRECT_ROOT_NODE_LABEL", 
-"TIP_WITHOUT_OTU", 
-"TIP_WITHOUT_OTT_ID", 
-"MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
-"NON_MONOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
-"INVALID_PROPERTY_VALUE", 
-"PROPERTY_VALUE_NOT_USEFUL", 
-"UNRECOGNIZED_PROPERTY_VALUE", 
-"MULTIPLE_TREES", 
-"UNRECOGNIZED_TAG", 
-"CONFLICTING_PROPERTY_VALUES", 
-"NO_TREES", 
-"DEPRECATED_PROPERTY", 
-"UNPARSEABLE_META", 
-"UNREACHABLE_NODE", 
-"INCORRECT_VALUE_TYPE", 
-"MISSING_CRUCIAL_CONTENT"
-], 
 "commandLine": [
 "--embed", 
-"--agent-only", 
-"-e", 
-"../mig-phyelesystem-scratch/238/validation.json", 
-"-o", 
-"../mig-phyelesystem-scratch/238/final.json", 
-"../mig-phyelesystem-scratch/238/v1.2.1-238.json"
+"--agent-only"
 ], 
 "otherProperty": [
 {
@@ -76,12 +39,19 @@
 }
 ]
 }, 
+"^ot:annotationEvents": {
+"annotation": []
+}, 
+"^ot:candidateTreeForSynthesis": [], 
 "^ot:curatorName": "Romina Gazis", 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S2137"
 }, 
 "^ot:focalClade": 439373, 
 "^ot:focalCladeOTTTaxonName": "Ascomycota", 
+"^ot:messages": {
+"message": []
+}, 
 "^ot:otusElementOrder": [
 "otus238"
 ], 
@@ -91,6 +61,7 @@
 }, 
 "^ot:studyPublicationReference": "Schoch, C. L., Sung, G.-H., L\u00f3pez-Gir\u00e1ldez, F., Townsend, J. P., Miadlikowska, J., Hofstetter, V., Robbertse, B., et al. (2009). The Ascomycota tree of life: a phylum-wide phylogeny clarifies the origin and evolution of fundamental reproductive and ecological traits. Systematic biology, 58(2), 224-39. doi:10.1093/sysbio/syp020", 
 "^ot:studyYear": 2009, 
+"^ot:tag": [], 
 "^ot:treesElementOrder": [
 "trees238"
 ], 
@@ -131,7 +102,9 @@
 "^ot:originalLabel": "Cotylidia sp"
 }, 
 "otu63095": {
-"^ot:originalLabel": "Phanerochaete chrysosporium"
+"^ot:originalLabel": "Phanerochaete chrysosporium", 
+"^ot:ottId": 5299626, 
+"^ot:ottTaxonName": "Phanerodontia chrysosporium"
 }, 
 "otu63096": {
 "^ot:originalLabel": "Fomitopsis pinicola", 
@@ -159,7 +132,9 @@
 "^ot:ottTaxonName": "Calostoma cinnabarinum"
 }, 
 "otu63101": {
-"^ot:originalLabel": "Strobilomyces floccopus"
+"^ot:originalLabel": "Strobilomyces floccopus", 
+"^ot:ottId": 551334, 
+"^ot:ottTaxonName": "Strobilomyces strobilaceus"
 }, 
 "otu63102": {
 "^ot:originalLabel": "Lipomyces oligophaga", 
@@ -288,7 +263,9 @@
 "^ot:ottTaxonName": "Khuskia oryzae"
 }, 
 "otu63128": {
-"^ot:originalLabel": "Apiospora montagnei"
+"^ot:originalLabel": "Apiospora montagnei", 
+"^ot:ottId": 798498, 
+"^ot:ottTaxonName": "Apiospora montagnei"
 }, 
 "otu63129": {
 "^ot:originalLabel": "Eutypa lata", 
@@ -329,7 +306,9 @@
 "^ot:ottTaxonName": "Bombardia bombarda"
 }, 
 "otu63137": {
-"^ot:originalLabel": "Podospora anserina"
+"^ot:originalLabel": "Podospora anserina", 
+"^ot:ottId": 155361, 
+"^ot:ottTaxonName": "Podospora pauciseta"
 }, 
 "otu63138": {
 "^ot:originalLabel": "Sordaria fimicola", 
@@ -414,7 +393,9 @@
 "^ot:originalLabel": "Diaporthe phaseolorum"
 }, 
 "otu63156": {
-"^ot:originalLabel": "Cryptosporella hypodermia"
+"^ot:originalLabel": "Cryptosporella hypodermia", 
+"^ot:ottId": 5319203, 
+"^ot:ottTaxonName": "Winterella hypodermia"
 }, 
 "otu63157": {
 "^ot:originalLabel": "Gnomonia gnomon", 
@@ -450,7 +431,9 @@
 "^ot:ottTaxonName": "Amphilogia gyrosa"
 }, 
 "otu63164": {
-"^ot:originalLabel": "Endothia gyrosa"
+"^ot:originalLabel": "Endothia gyrosa", 
+"^ot:ottId": 5316851, 
+"^ot:ottTaxonName": "Endothia radicalis"
 }, 
 "otu63165": {
 "^ot:originalLabel": "Chrysoporthe cubensis", 
@@ -483,13 +466,19 @@
 "^ot:ottTaxonName": "Phomatospora bellaminuta"
 }, 
 "otu63171": {
-"^ot:originalLabel": "Ophiostoma piliferum"
+"^ot:originalLabel": "Ophiostoma piliferum", 
+"^ot:ottId": 5316941, 
+"^ot:ottTaxonName": "Ceratocystis pilifera"
 }, 
 "otu63172": {
-"^ot:originalLabel": "Ophiostoma stenoceras 1"
+"^ot:originalLabel": "Ophiostoma stenoceras 1", 
+"^ot:ottId": 5316943, 
+"^ot:ottTaxonName": "Ceratocystis stenoceras"
 }, 
 "otu63173": {
-"^ot:originalLabel": "Ophiostoma stenoceras 2"
+"^ot:originalLabel": "Ophiostoma stenoceras 2", 
+"^ot:ottId": 5316943, 
+"^ot:ottTaxonName": "Ceratocystis stenoceras"
 }, 
 "otu63174": {
 "^ot:originalLabel": "Thyridium vestitum"
@@ -510,7 +499,9 @@
 "^ot:ottTaxonName": "Magnaporthe grisea"
 }, 
 "otu63178": {
-"^ot:originalLabel": "Lulworthia lignoarenaria"
+"^ot:originalLabel": "Lulworthia lignoarenaria", 
+"^ot:ottId": 5318228, 
+"^ot:ottTaxonName": "Lulwoidea lignoarenaria"
 }, 
 "otu63179": {
 "^ot:originalLabel": "Lulworthia uniseptata", 
@@ -745,7 +736,9 @@
 "^ot:ottTaxonName": "Corollospora angusta"
 }, 
 "otu63227": {
-"^ot:originalLabel": "Sigmoidea marina"
+"^ot:originalLabel": "Sigmoidea marina", 
+"^ot:ottId": 5316888, 
+"^ot:ottTaxonName": "Halosigmoidea marina"
 }, 
 "otu63228": {
 "^ot:originalLabel": "Aniptodera chesapeakensis", 
@@ -904,7 +897,9 @@
 "^ot:originalLabel": "Connersia rilstonii"
 }, 
 "otu63260": {
-"^ot:originalLabel": "Erysiphe glycines"
+"^ot:originalLabel": "Erysiphe glycines", 
+"^ot:ottId": 129269, 
+"^ot:ottTaxonName": "Erysiphe diffusa"
 }, 
 "otu63261": {
 "^ot:originalLabel": "Blumeria graminis", 
@@ -1044,7 +1039,9 @@
 "^ot:ottTaxonName": "Stylodothis puccinioides"
 }, 
 "otu63292": {
-"^ot:originalLabel": "Dothidea hippophaes"
+"^ot:originalLabel": "Dothidea hippophaes", 
+"^ot:ottId": 3717635, 
+"^ot:ottTaxonName": "Dothidea hippophaes"
 }, 
 "otu63293": {
 "^ot:originalLabel": "Trimmatostroma abietis", 
@@ -1062,7 +1059,9 @@
 "^ot:ottTaxonName": "Cladosporium cladosporioides"
 }, 
 "otu63296": {
-"^ot:originalLabel": "Mycosphaerella graminicola"
+"^ot:originalLabel": "Mycosphaerella graminicola", 
+"^ot:ottId": 5319573, 
+"^ot:ottTaxonName": "Mycosphaerella graminicola"
 }, 
 "otu63297": {
 "^ot:originalLabel": "Mycosphaerella punctiformis", 
@@ -1130,7 +1129,9 @@
 "^ot:ottTaxonName": "Lepidosphaeria nicotiae"
 }, 
 "otu63310": {
-"^ot:originalLabel": "Trematosphaeria heterospora"
+"^ot:originalLabel": "Trematosphaeria heterospora", 
+"^ot:ottId": 5319110, 
+"^ot:ottTaxonName": "Leptosphaeria heterospora"
 }, 
 "otu63311": {
 "^ot:originalLabel": "Lophiostoma arundinis", 
@@ -1246,7 +1247,9 @@
 "^ot:ottTaxonName": "Pleospora herbarum"
 }, 
 "otu63334": {
-"^ot:originalLabel": "Dendryphiella arenaria"
+"^ot:originalLabel": "Dendryphiella arenaria", 
+"^ot:ottId": 3796670, 
+"^ot:ottTaxonName": "Paradendryphiella arenariae"
 }, 
 "otu63335": {
 "^ot:originalLabel": "Pleospora herbarum var herbarum 2", 
@@ -1910,7 +1913,9 @@
 "^ot:ottTaxonName": "Penicillium javanicum"
 }, 
 "otu63470": {
-"^ot:originalLabel": "Eupenicillium limosum"
+"^ot:originalLabel": "Eupenicillium limosum", 
+"^ot:ottId": 3755665, 
+"^ot:ottTaxonName": "Penicillium limosum"
 }, 
 "otu63471": {
 "^ot:originalLabel": "Hamigera avellanea", 
@@ -1928,7 +1933,9 @@
 "^ot:ottTaxonName": "Sphinctrina turbinata"
 }, 
 "otu63474": {
-"^ot:originalLabel": "Mycocalicium polyporaeum"
+"^ot:originalLabel": "Mycocalicium polyporaeum", 
+"^ot:ottId": 5310912, 
+"^ot:ottTaxonName": "Phaeocalicium polyporaeum"
 }, 
 "otu63475": {
 "^ot:originalLabel": "Lichinella iodopulchra", 
@@ -1971,7 +1978,9 @@
 "^ot:ottTaxonName": "Peziza vesiculosa"
 }, 
 "otu63483": {
-"^ot:originalLabel": "Sarcosphaera crassa"
+"^ot:originalLabel": "Sarcosphaera crassa", 
+"^ot:ottId": 1059771, 
+"^ot:ottTaxonName": "Sarcosphaera coronaria"
 }, 
 "otu63484": {
 "^ot:originalLabel": "Pachyella babingtonii"
@@ -2095,7 +2104,9 @@
 "^ot:ottTaxonName": "Aleuria aurantia"
 }, 
 "otu63509": {
-"^ot:originalLabel": "Sarcosoma latahense"
+"^ot:originalLabel": "Sarcosoma latahense", 
+"^ot:ottId": 523442, 
+"^ot:ottTaxonName": "Pseudosarcosoma latahense"
 }, 
 "otu63510": {
 "^ot:originalLabel": "Galiella rufa", 
@@ -2170,9 +2181,15 @@
 "treeById": {
 "tree109": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "ML, SSU + LSU + EF-1 + RPB1 + RPB2 +mtSSU", 
 "^ot:inGroupClade": "node158467", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node158439", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node158439": {
 "edge158440": {
@@ -8247,9 +8264,15 @@
 }, 
 "tree110": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "ML, SSU + LSU + EF-1 + RPB1 + RPB2 +mtSSU", 
 "^ot:inGroupClade": "node159334", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node159306", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node159306": {
 "edge159307": {

@@ -19,48 +19,11 @@
 "@id": "peyotl-validator", 
 "@name": "validate_ot_nexson.py", 
 "@url": "https://github.com/OpenTreeOfLife/peyotl", 
-"@version": "0.0.3a", 
+"@version": "0.0.4a", 
 "invocation": {
-"checksPerformed": [
-"MISSING_MANDATORY_KEY", 
-"MISSING_OPTIONAL_KEY", 
-"UNRECOGNIZED_KEY", 
-"MISSING_LIST_EXPECTED", 
-"DUPLICATING_SINGLETON_KEY", 
-"REFERENCED_ID_NOT_FOUND", 
-"REPEATED_ID", 
-"REPEATED_OTU", 
-"MULTIPLE_ROOT_NODES", 
-"NO_ROOT_NODE", 
-"MULTIPLE_EDGES_FOR_NODES", 
-"CYCLE_DETECTED", 
-"DISCONNECTED_GRAPH_DETECTED", 
-"INCORRECT_ROOT_NODE_LABEL", 
-"TIP_WITHOUT_OTU", 
-"TIP_WITHOUT_OTT_ID", 
-"MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
-"NON_MONOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
-"INVALID_PROPERTY_VALUE", 
-"PROPERTY_VALUE_NOT_USEFUL", 
-"UNRECOGNIZED_PROPERTY_VALUE", 
-"MULTIPLE_TREES", 
-"UNRECOGNIZED_TAG", 
-"CONFLICTING_PROPERTY_VALUES", 
-"NO_TREES", 
-"DEPRECATED_PROPERTY", 
-"UNPARSEABLE_META", 
-"UNREACHABLE_NODE", 
-"INCORRECT_VALUE_TYPE", 
-"MISSING_CRUCIAL_CONTENT"
-], 
 "commandLine": [
 "--embed", 
-"--agent-only", 
-"-e", 
-"../mig-phyelesystem-scratch/748/validation.json", 
-"-o", 
-"../mig-phyelesystem-scratch/748/final.json", 
-"../mig-phyelesystem-scratch/748/v1.2.1-748.json"
+"--agent-only"
 ], 
 "otherProperty": [
 {
@@ -76,12 +39,19 @@
 }
 ]
 }, 
+"^ot:annotationEvents": {
+"annotation": []
+}, 
+"^ot:candidateTreeForSynthesis": [], 
 "^ot:curatorName": "Romina Gazis", 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S1307"
 }, 
 "^ot:focalClade": 880965, 
 "^ot:focalCladeOTTTaxonName": "Pezizaceae", 
+"^ot:messages": {
+"message": []
+}, 
 "^ot:otusElementOrder": [
 "otus748"
 ], 
@@ -91,6 +61,7 @@
 }, 
 "^ot:studyPublicationReference": "Hansen K., Lobuglio K., & Pfister D. 2005. Evolutionary relationships of the cup-fungus genus Peziza and Pezizaceae inferred from multiple nuclear genes: RPB2, Beta-tubulin, and LSU rDNA. Molecular Phylogenetics and Evolution, Volume 36, Issue 1, July 2005, Pages 1\u201323", 
 "^ot:studyYear": 2005, 
+"^ot:tag": [], 
 "^ot:treesElementOrder": [
 "trees748"
 ], 
@@ -169,6 +140,8 @@
 }, 
 "otu191475": {
 "^ot:originalLabel": "Peziza subcitrina", 
+"^ot:ottId": 5303249, 
+"^ot:ottTaxonName": "Peziza aurata", 
 "^ot:treebaseOTUId": "Tl156433"
 }, 
 "otu191476": {
@@ -431,6 +404,8 @@
 }, 
 "otu191520": {
 "^ot:originalLabel": "Otidea umbrina", 
+"^ot:ottId": 5303243, 
+"^ot:ottTaxonName": "Peziza cochleata", 
 "^ot:treebaseOTUId": "Tl156498"
 }, 
 "otu191521": {
@@ -604,9 +579,15 @@
 "treeById": {
 "tree1368": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "MP, LSU", 
 "^ot:inGroupClade": "node445216", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node445200", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node445200": {
 "edge445201": {
@@ -1697,9 +1678,15 @@
 }, 
 "tree1369": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "MP, RPB2", 
 "^ot:inGroupClade": "node445370", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node445355", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node445355": {
 "edge445356": {
@@ -2650,9 +2637,15 @@
 }, 
 "tree1370": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "MP, b-tubulin", 
 "^ot:inGroupClade": "node445492", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node445490", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node445490": {
 "edge445491": {
@@ -3631,10 +3624,17 @@
 }, 
 "tree1371": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "MP, LSU + RPB2 + b-tubulin", 
 "^ot:inGroupClade": "node445632", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node445629", 
-"^ot:tag": "MP", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [
+"MP"
+], 
 "edgeBySourceId": {
 "node445629": {
 "edge445630": {

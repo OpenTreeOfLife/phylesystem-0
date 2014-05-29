@@ -19,48 +19,11 @@
 "@id": "peyotl-validator", 
 "@name": "validate_ot_nexson.py", 
 "@url": "https://github.com/OpenTreeOfLife/peyotl", 
-"@version": "0.0.3a", 
+"@version": "0.0.4a", 
 "invocation": {
-"checksPerformed": [
-"MISSING_MANDATORY_KEY", 
-"MISSING_OPTIONAL_KEY", 
-"UNRECOGNIZED_KEY", 
-"MISSING_LIST_EXPECTED", 
-"DUPLICATING_SINGLETON_KEY", 
-"REFERENCED_ID_NOT_FOUND", 
-"REPEATED_ID", 
-"REPEATED_OTU", 
-"MULTIPLE_ROOT_NODES", 
-"NO_ROOT_NODE", 
-"MULTIPLE_EDGES_FOR_NODES", 
-"CYCLE_DETECTED", 
-"DISCONNECTED_GRAPH_DETECTED", 
-"INCORRECT_ROOT_NODE_LABEL", 
-"TIP_WITHOUT_OTU", 
-"TIP_WITHOUT_OTT_ID", 
-"MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
-"NON_MONOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
-"INVALID_PROPERTY_VALUE", 
-"PROPERTY_VALUE_NOT_USEFUL", 
-"UNRECOGNIZED_PROPERTY_VALUE", 
-"MULTIPLE_TREES", 
-"UNRECOGNIZED_TAG", 
-"CONFLICTING_PROPERTY_VALUES", 
-"NO_TREES", 
-"DEPRECATED_PROPERTY", 
-"UNPARSEABLE_META", 
-"UNREACHABLE_NODE", 
-"INCORRECT_VALUE_TYPE", 
-"MISSING_CRUCIAL_CONTENT"
-], 
 "commandLine": [
 "--embed", 
-"--agent-only", 
-"-e", 
-"../mig-phyelesystem-scratch/795/validation.json", 
-"-o", 
-"../mig-phyelesystem-scratch/795/final.json", 
-"../mig-phyelesystem-scratch/795/v1.2.1-795.json"
+"--agent-only"
 ], 
 "otherProperty": [
 {
@@ -76,12 +39,19 @@
 }
 ]
 }, 
+"^ot:annotationEvents": {
+"annotation": []
+}, 
+"^ot:candidateTreeForSynthesis": [], 
 "^ot:curatorName": "Romina Gazis", 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S1637"
 }, 
 "^ot:focalClade": 1075136, 
 "^ot:focalCladeOTTTaxonName": "Nemania", 
+"^ot:messages": {
+"message": []
+}, 
 "^ot:otusElementOrder": [
 "otus795"
 ], 
@@ -91,6 +61,7 @@
 }, 
 "^ot:studyPublicationReference": "Tang A., Fournier J., Jeewon R., & Hyde K. 2006. Phylogenetic relationships of Nemania plumbea sp. nov. and related taxa based on ribosomal ITS and RPB2 sequences. Mycological Research, 111 (4) 392-402.", 
 "^ot:studyYear": 2006, 
+"^ot:tag": [], 
 "^ot:treesElementOrder": [
 "trees795"
 ], 
@@ -175,6 +146,8 @@
 }, 
 "otu196117": {
 "^ot:originalLabel": "Amphiporthe castanea", 
+"^ot:ottId": 5316717, 
+"^ot:ottTaxonName": "Cryptodiaporthe castanea", 
 "^ot:treebaseOTUId": "Tl179258"
 }, 
 "otu196118": {
@@ -363,6 +336,8 @@
 }, 
 "otu196149": {
 "^ot:originalLabel": "Cercophora caudata", 
+"^ot:ottId": 254784, 
+"^ot:ottTaxonName": "Immersiella caudata", 
 "^ot:treebaseOTUId": "Tl179308"
 }, 
 "otu196150": {
@@ -383,6 +358,8 @@
 }, 
 "otu196153": {
 "^ot:originalLabel": "Apiospora tintinnabula", 
+"^ot:ottId": 742068, 
+"^ot:ottTaxonName": "Apiospora bambusae", 
 "^ot:treebaseOTUId": "Tl179315"
 }, 
 "otu196154": {
@@ -447,6 +424,8 @@
 }, 
 "otu196164": {
 "^ot:originalLabel": "Coniochaetidium savoryi", 
+"^ot:ottId": 103601, 
+"^ot:ottTaxonName": "Coniochaeta savoryi", 
 "^ot:treebaseOTUId": "Tl179334"
 }, 
 "otu196165": {
@@ -746,9 +725,15 @@
 "treeById": {
 "tree1497": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "MP, ITS", 
 "^ot:inGroupClade": "node459302", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node459301", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node459301": {
 "edge459302": {
@@ -1363,8 +1348,14 @@
 }, 
 "tree1498": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "MP, RPB2", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node459388", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node459388": {
 "edge459389": {
@@ -2210,9 +2201,15 @@
 }, 
 "tree1499": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "MP, ITS + RPB2", 
 "^ot:inGroupClade": "node459509", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node459508", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node459508": {
 "edge459509": {
@@ -2491,9 +2488,15 @@
 }, 
 "tree5669": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "MP, RPB2 (rooted)", 
 "^ot:inGroupClade": "node977682", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node977681", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node977681": {
 "edge977682": {

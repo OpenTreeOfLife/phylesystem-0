@@ -19,48 +19,11 @@
 "@id": "peyotl-validator", 
 "@name": "validate_ot_nexson.py", 
 "@url": "https://github.com/OpenTreeOfLife/peyotl", 
-"@version": "0.0.3a", 
+"@version": "0.0.4a", 
 "invocation": {
-"checksPerformed": [
-"MISSING_MANDATORY_KEY", 
-"MISSING_OPTIONAL_KEY", 
-"UNRECOGNIZED_KEY", 
-"MISSING_LIST_EXPECTED", 
-"DUPLICATING_SINGLETON_KEY", 
-"REFERENCED_ID_NOT_FOUND", 
-"REPEATED_ID", 
-"REPEATED_OTU", 
-"MULTIPLE_ROOT_NODES", 
-"NO_ROOT_NODE", 
-"MULTIPLE_EDGES_FOR_NODES", 
-"CYCLE_DETECTED", 
-"DISCONNECTED_GRAPH_DETECTED", 
-"INCORRECT_ROOT_NODE_LABEL", 
-"TIP_WITHOUT_OTU", 
-"TIP_WITHOUT_OTT_ID", 
-"MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
-"NON_MONOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
-"INVALID_PROPERTY_VALUE", 
-"PROPERTY_VALUE_NOT_USEFUL", 
-"UNRECOGNIZED_PROPERTY_VALUE", 
-"MULTIPLE_TREES", 
-"UNRECOGNIZED_TAG", 
-"CONFLICTING_PROPERTY_VALUES", 
-"NO_TREES", 
-"DEPRECATED_PROPERTY", 
-"UNPARSEABLE_META", 
-"UNREACHABLE_NODE", 
-"INCORRECT_VALUE_TYPE", 
-"MISSING_CRUCIAL_CONTENT"
-], 
 "commandLine": [
 "--embed", 
-"--agent-only", 
-"-e", 
-"../mig-phyelesystem-scratch/1142/validation.json", 
-"-o", 
-"../mig-phyelesystem-scratch/1142/final.json", 
-"../mig-phyelesystem-scratch/1142/v1.2.1-1142.json"
+"--agent-only"
 ], 
 "otherProperty": [
 {
@@ -76,9 +39,16 @@
 }
 ]
 }, 
+"^ot:annotationEvents": {
+"annotation": []
+}, 
+"^ot:candidateTreeForSynthesis": [], 
 "^ot:curatorName": "Romina Gazis", 
 "^ot:focalClade": 634628, 
 "^ot:focalCladeOTTTaxonName": "Basidiomycota", 
+"^ot:messages": {
+"message": []
+}, 
 "^ot:otusElementOrder": [
 "otus1142"
 ], 
@@ -88,6 +58,7 @@
 }, 
 "^ot:studyPublicationReference": "Brandon Matheny, P., et al. Contributions of rpb2 and tef1 to the phylogeny of mushrooms and allies (Basidiomycota, Fungi). Molecular phylogenetics and evolution 43.2 (2007): 430-451.", 
 "^ot:studyYear": 2007, 
+"^ot:tag": [], 
 "^ot:treesElementOrder": [
 "trees1142"
 ], 
@@ -145,7 +116,9 @@
 "^ot:ottTaxonName": "Leucosporidium scottii"
 }, 
 "otu226930": {
-"^ot:originalLabel": "Rhodotorula hordea"
+"^ot:originalLabel": "Rhodotorula hordea", 
+"^ot:ottId": 4095323, 
+"^ot:ottTaxonName": "Rhodotorula graminis"
 }, 
 "otu226931": {
 "^ot:originalLabel": "Agaricostilbum hyphaenes", 
@@ -178,7 +151,9 @@
 "^ot:ottTaxonName": "Ustilago maydis"
 }, 
 "otu226937": {
-"^ot:originalLabel": "Cintractia sorghivulgaris"
+"^ot:originalLabel": "Cintractia sorghivulgaris", 
+"^ot:ottId": 469132, 
+"^ot:ottTaxonName": "Sporisorium sorghi"
 }, 
 "otu226938": {
 "^ot:originalLabel": "Pseudozyma flocculosa", 
@@ -605,7 +580,9 @@
 "^ot:ottTaxonName": "Clavulinopsis laeticolor"
 }, 
 "otu227026": {
-"^ot:originalLabel": "Fibulorhizoctonia sp"
+"^ot:originalLabel": "Fibulorhizoctonia sp", 
+"^ot:ottId": 5300658, 
+"^ot:ottTaxonName": "Fibularhizoctonia"
 }, 
 "otu227027": {
 "^ot:originalLabel": "Suillus pictus", 
@@ -628,7 +605,9 @@
 "^ot:ottTaxonName": "Paxillus vernalis"
 }, 
 "otu227031": {
-"^ot:originalLabel": "Strobilomyces floccopus"
+"^ot:originalLabel": "Strobilomyces floccopus", 
+"^ot:ottId": 551334, 
+"^ot:ottTaxonName": "Strobilomyces strobilaceus"
 }, 
 "otu227032": {
 "^ot:originalLabel": "Aureoboletus thibetanus", 
@@ -689,7 +668,9 @@
 "^ot:ottTaxonName": "Stereum hirsutum"
 }, 
 "otu227044": {
-"^ot:originalLabel": "Bondarzewia montana"
+"^ot:originalLabel": "Bondarzewia montana", 
+"^ot:ottId": 842317, 
+"^ot:ottTaxonName": "Bondarzewia mesenterica"
 }, 
 "otu227045": {
 "^ot:originalLabel": "Heterobasidion annosum", 
@@ -700,10 +681,14 @@
 "^ot:originalLabel": "Albatrellus higanensis"
 }, 
 "otu227047": {
-"^ot:originalLabel": "Spongipellis pachyodon"
+"^ot:originalLabel": "Spongipellis pachyodon", 
+"^ot:ottId": 5299677, 
+"^ot:ottTaxonName": "Sarcodontia pachyodon"
 }, 
 "otu227048": {
-"^ot:originalLabel": "Phanerochaete chrysosporium"
+"^ot:originalLabel": "Phanerochaete chrysosporium", 
+"^ot:ottId": 5299626, 
+"^ot:ottTaxonName": "Phanerodontia chrysosporium"
 }, 
 "otu227049": {
 "^ot:originalLabel": "Climacodon septentrionalis", 
@@ -1242,8 +1227,14 @@
 "treeById": {
 "tree2317": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "BI, LSU + SSU + 5.8S + RPB2 + EF-1", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node550790", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node550790": {
 "edge550791": {
@@ -3552,9 +3543,16 @@
 }, 
 "tree2318": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "MP, LSU + SSU + 5.8S + RPB2 + EF-1", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node551078", 
-"^ot:tag": "delete me", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [
+"delete me"
+], 
 "edgeBySourceId": {
 "node551078": {
 "edge551079": {
@@ -5597,8 +5595,14 @@
 }, 
 "tree2319": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "MP_aminoacid, LSU + SSU + 5.8S + RPB2 + EF-1", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node551369", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node551369": {
 "edge551370": {
@@ -7923,8 +7927,14 @@
 }, 
 "tree2320": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "MP_aminoacid, LSU + SSU + 5.8S + RPB2 + EF-1", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node551659", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node551659": {
 "edge551660": {
@@ -9967,9 +9977,15 @@
 }, 
 "tree5799": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "BI, LSU + 5.8S + SSU + EF-1 + RPB2 (rooted)", 
 "^ot:inGroupClade": "node990735", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node990729", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node990729": {
 "edge990730": {

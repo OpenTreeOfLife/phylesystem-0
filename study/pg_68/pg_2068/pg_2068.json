@@ -19,48 +19,11 @@
 "@id": "peyotl-validator", 
 "@name": "validate_ot_nexson.py", 
 "@url": "https://github.com/OpenTreeOfLife/peyotl", 
-"@version": "0.0.3a", 
+"@version": "0.0.4a", 
 "invocation": {
-"checksPerformed": [
-"MISSING_MANDATORY_KEY", 
-"MISSING_OPTIONAL_KEY", 
-"UNRECOGNIZED_KEY", 
-"MISSING_LIST_EXPECTED", 
-"DUPLICATING_SINGLETON_KEY", 
-"REFERENCED_ID_NOT_FOUND", 
-"REPEATED_ID", 
-"REPEATED_OTU", 
-"MULTIPLE_ROOT_NODES", 
-"NO_ROOT_NODE", 
-"MULTIPLE_EDGES_FOR_NODES", 
-"CYCLE_DETECTED", 
-"DISCONNECTED_GRAPH_DETECTED", 
-"INCORRECT_ROOT_NODE_LABEL", 
-"TIP_WITHOUT_OTU", 
-"TIP_WITHOUT_OTT_ID", 
-"MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
-"NON_MONOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
-"INVALID_PROPERTY_VALUE", 
-"PROPERTY_VALUE_NOT_USEFUL", 
-"UNRECOGNIZED_PROPERTY_VALUE", 
-"MULTIPLE_TREES", 
-"UNRECOGNIZED_TAG", 
-"CONFLICTING_PROPERTY_VALUES", 
-"NO_TREES", 
-"DEPRECATED_PROPERTY", 
-"UNPARSEABLE_META", 
-"UNREACHABLE_NODE", 
-"INCORRECT_VALUE_TYPE", 
-"MISSING_CRUCIAL_CONTENT"
-], 
 "commandLine": [
 "--embed", 
-"--agent-only", 
-"-e", 
-"../mig-phyelesystem-scratch/2068/validation.json", 
-"-o", 
-"../mig-phyelesystem-scratch/2068/final.json", 
-"../mig-phyelesystem-scratch/2068/v1.2.1-2068.json"
+"--agent-only"
 ], 
 "otherProperty": [
 {
@@ -76,12 +39,19 @@
 }
 ]
 }, 
+"^ot:annotationEvents": {
+"annotation": []
+}, 
+"^ot:candidateTreeForSynthesis": [], 
 "^ot:curatorName": "Chris Owen", 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S1222"
 }, 
 "^ot:focalClade": 631829, 
 "^ot:focalCladeOTTTaxonName": "Osedax", 
+"^ot:messages": {
+"message": []
+}, 
 "^ot:otusElementOrder": [
 "otus2068"
 ], 
@@ -89,8 +59,9 @@
 "^ot:studyPublication": {
 "@href": "http://dx.doi.org/10.1126/science.1098650"
 }, 
-"^ot:studyPublicationReference": "Rouse G., Goffredi S., & Vrijenhoek R. 2004. Osedax: Bone-eating marine worms with dwarf males. Science, 305: 668-671.", 
+"^ot:studyPublicationReference": "Rouse, G., Goffredi S., & Vrijenhoek R. 2004. Osedax: bone-eating marine worms with dwarf males. Science 305 (5684): 668-671.", 
 "^ot:studyYear": 2004, 
+"^ot:tag": [], 
 "^ot:treesElementOrder": [
 "trees2068"
 ], 
@@ -250,358 +221,20 @@
 "trees2068": {
 "@otus": "otus2068", 
 "^ot:treeElementOrder": [
-"tree4261", 
 "tree6488"
 ], 
 "treeById": {
-"tree4261": {
-"@xsi:type": "nex:FloatTree", 
-"^ot:curatedType": "Fig. 3", 
-"^ot:rootNodeId": "node788851", 
-"edgeBySourceId": {
-"node788851": {
-"edge788852": {
-"@source": "node788851", 
-"@target": "node788852"
-}, 
-"edge788853": {
-"@source": "node788851", 
-"@target": "node788853"
-}, 
-"edge788880": {
-"@source": "node788851", 
-"@target": "node788880"
-}
-}, 
-"node788853": {
-"edge788854": {
-"@source": "node788853", 
-"@target": "node788854"
-}, 
-"edge788863": {
-"@source": "node788853", 
-"@target": "node788863"
-}
-}, 
-"node788854": {
-"edge788855": {
-"@source": "node788854", 
-"@target": "node788855"
-}, 
-"edge788856": {
-"@source": "node788854", 
-"@target": "node788856"
-}
-}, 
-"node788856": {
-"edge788857": {
-"@source": "node788856", 
-"@target": "node788857"
-}, 
-"edge788858": {
-"@source": "node788856", 
-"@target": "node788858"
-}
-}, 
-"node788858": {
-"edge788859": {
-"@source": "node788858", 
-"@target": "node788859"
-}, 
-"edge788860": {
-"@source": "node788858", 
-"@target": "node788860"
-}
-}, 
-"node788860": {
-"edge788861": {
-"@source": "node788860", 
-"@target": "node788861"
-}, 
-"edge788862": {
-"@source": "node788860", 
-"@target": "node788862"
-}
-}, 
-"node788863": {
-"edge788864": {
-"@source": "node788863", 
-"@target": "node788864"
-}, 
-"edge788867": {
-"@source": "node788863", 
-"@target": "node788867"
-}
-}, 
-"node788864": {
-"edge788865": {
-"@source": "node788864", 
-"@target": "node788865"
-}, 
-"edge788866": {
-"@source": "node788864", 
-"@target": "node788866"
-}
-}, 
-"node788867": {
-"edge788868": {
-"@source": "node788867", 
-"@target": "node788868"
-}, 
-"edge788869": {
-"@source": "node788867", 
-"@target": "node788869"
-}
-}, 
-"node788869": {
-"edge788870": {
-"@source": "node788869", 
-"@target": "node788870"
-}, 
-"edge788871": {
-"@source": "node788869", 
-"@target": "node788871"
-}
-}, 
-"node788871": {
-"edge788872": {
-"@source": "node788871", 
-"@target": "node788872"
-}, 
-"edge788873": {
-"@source": "node788871", 
-"@target": "node788873"
-}
-}, 
-"node788873": {
-"edge788874": {
-"@source": "node788873", 
-"@target": "node788874"
-}, 
-"edge788875": {
-"@source": "node788873", 
-"@target": "node788875"
-}
-}, 
-"node788875": {
-"edge788876": {
-"@source": "node788875", 
-"@target": "node788876"
-}, 
-"edge788877": {
-"@source": "node788875", 
-"@target": "node788877"
-}
-}, 
-"node788877": {
-"edge788878": {
-"@source": "node788877", 
-"@target": "node788878"
-}, 
-"edge788879": {
-"@source": "node788877", 
-"@target": "node788879"
-}
-}, 
-"node788880": {
-"edge788881": {
-"@source": "node788880", 
-"@target": "node788881"
-}, 
-"edge788890": {
-"@source": "node788880", 
-"@target": "node788890"
-}
-}, 
-"node788881": {
-"edge788882": {
-"@source": "node788881", 
-"@target": "node788882"
-}, 
-"edge788883": {
-"@source": "node788881", 
-"@target": "node788883"
-}
-}, 
-"node788883": {
-"edge788884": {
-"@source": "node788883", 
-"@target": "node788884"
-}, 
-"edge788887": {
-"@source": "node788883", 
-"@target": "node788887"
-}
-}, 
-"node788884": {
-"edge788885": {
-"@source": "node788884", 
-"@target": "node788885"
-}, 
-"edge788886": {
-"@source": "node788884", 
-"@target": "node788886"
-}
-}, 
-"node788887": {
-"edge788888": {
-"@source": "node788887", 
-"@target": "node788888"
-}, 
-"edge788889": {
-"@source": "node788887", 
-"@target": "node788889"
-}
-}, 
-"node788890": {
-"edge788891": {
-"@source": "node788890", 
-"@target": "node788891"
-}, 
-"edge788892": {
-"@source": "node788890", 
-"@target": "node788892"
-}
-}, 
-"node788892": {
-"edge788893": {
-"@source": "node788892", 
-"@target": "node788893"
-}, 
-"edge788894": {
-"@source": "node788892", 
-"@target": "node788894"
-}
-}, 
-"node788894": {
-"edge788895": {
-"@source": "node788894", 
-"@target": "node788895"
-}, 
-"edge788896": {
-"@source": "node788894", 
-"@target": "node788896"
-}
-}, 
-"node788896": {
-"edge788897": {
-"@source": "node788896", 
-"@target": "node788897"
-}, 
-"edge788898": {
-"@source": "node788896", 
-"@target": "node788898"
-}
-}
-}, 
-"nodeById": {
-"node788851": {
-"@root": true
-}, 
-"node788852": {
-"@otu": "otu310368"
-}, 
-"node788853": {}, 
-"node788854": {}, 
-"node788855": {
-"@otu": "otu310355"
-}, 
-"node788856": {}, 
-"node788857": {
-"@otu": "otu310360"
-}, 
-"node788858": {}, 
-"node788859": {
-"@otu": "otu310374"
-}, 
-"node788860": {}, 
-"node788861": {
-"@otu": "otu310352"
-}, 
-"node788862": {
-"@otu": "otu310372"
-}, 
-"node788863": {}, 
-"node788864": {}, 
-"node788865": {
-"@otu": "otu310351"
-}, 
-"node788866": {
-"@otu": "otu310365"
-}, 
-"node788867": {}, 
-"node788868": {
-"@otu": "otu310359"
-}, 
-"node788869": {}, 
-"node788870": {
-"@otu": "otu310357"
-}, 
-"node788871": {}, 
-"node788872": {
-"@otu": "otu310369"
-}, 
-"node788873": {}, 
-"node788874": {
-"@otu": "otu310354"
-}, 
-"node788875": {}, 
-"node788876": {
-"@otu": "otu310362"
-}, 
-"node788877": {}, 
-"node788878": {
-"@otu": "otu310367"
-}, 
-"node788879": {
-"@otu": "otu310361"
-}, 
-"node788880": {}, 
-"node788881": {}, 
-"node788882": {
-"@otu": "otu310366"
-}, 
-"node788883": {}, 
-"node788884": {}, 
-"node788885": {
-"@otu": "otu310353"
-}, 
-"node788886": {
-"@otu": "otu310364"
-}, 
-"node788887": {}, 
-"node788888": {
-"@otu": "otu310363"
-}, 
-"node788889": {
-"@otu": "otu310371"
-}, 
-"node788890": {}, 
-"node788891": {
-"@otu": "otu310358"
-}, 
-"node788892": {}, 
-"node788893": {
-"@otu": "otu310350"
-}, 
-"node788894": {}, 
-"node788895": {
-"@otu": "otu310373"
-}, 
-"node788896": {}, 
-"node788897": {
-"@otu": "otu310370"
-}, 
-"node788898": {
-"@otu": "otu310356"
-}
-}
-}, 
 "tree6488": {
 "@xsi:type": "nex:FloatTree", 
-"^ot:curatedType": "Fig 3", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
+"^ot:curatedType": "Fig. 3", 
 "^ot:inGroupClade": "node1121123", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node1121121", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node1121121": {
 "edge1121122": {

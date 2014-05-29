@@ -19,48 +19,11 @@
 "@id": "peyotl-validator", 
 "@name": "validate_ot_nexson.py", 
 "@url": "https://github.com/OpenTreeOfLife/peyotl", 
-"@version": "0.0.3a", 
+"@version": "0.0.4a", 
 "invocation": {
-"checksPerformed": [
-"MISSING_MANDATORY_KEY", 
-"MISSING_OPTIONAL_KEY", 
-"UNRECOGNIZED_KEY", 
-"MISSING_LIST_EXPECTED", 
-"DUPLICATING_SINGLETON_KEY", 
-"REFERENCED_ID_NOT_FOUND", 
-"REPEATED_ID", 
-"REPEATED_OTU", 
-"MULTIPLE_ROOT_NODES", 
-"NO_ROOT_NODE", 
-"MULTIPLE_EDGES_FOR_NODES", 
-"CYCLE_DETECTED", 
-"DISCONNECTED_GRAPH_DETECTED", 
-"INCORRECT_ROOT_NODE_LABEL", 
-"TIP_WITHOUT_OTU", 
-"TIP_WITHOUT_OTT_ID", 
-"MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
-"NON_MONOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
-"INVALID_PROPERTY_VALUE", 
-"PROPERTY_VALUE_NOT_USEFUL", 
-"UNRECOGNIZED_PROPERTY_VALUE", 
-"MULTIPLE_TREES", 
-"UNRECOGNIZED_TAG", 
-"CONFLICTING_PROPERTY_VALUES", 
-"NO_TREES", 
-"DEPRECATED_PROPERTY", 
-"UNPARSEABLE_META", 
-"UNREACHABLE_NODE", 
-"INCORRECT_VALUE_TYPE", 
-"MISSING_CRUCIAL_CONTENT"
-], 
 "commandLine": [
 "--embed", 
-"--agent-only", 
-"-e", 
-"../mig-phyelesystem-scratch/1739/validation.json", 
-"-o", 
-"../mig-phyelesystem-scratch/1739/final.json", 
-"../mig-phyelesystem-scratch/1739/v1.2.1-1739.json"
+"--agent-only"
 ], 
 "otherProperty": [
 {
@@ -76,12 +39,19 @@
 }
 ]
 }, 
+"^ot:annotationEvents": {
+"annotation": []
+}, 
+"^ot:candidateTreeForSynthesis": [], 
 "^ot:curatorName": "Romina Gazis", 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S757"
 }, 
 "^ot:focalClade": 770743, 
 "^ot:focalCladeOTTTaxonName": "Septoria", 
+"^ot:messages": {
+"message": []
+}, 
 "^ot:otusElementOrder": [
 "otus1739"
 ], 
@@ -91,6 +61,7 @@
 }, 
 "^ot:studyPublicationReference": "Goodwin S., & Zismann V. 2001. Phylogenetic analyses of the ITS region of ribosomal DNA reveal that Septoria passerinii from barley is closely related to the wheat pathogen Mycosphaerella graminicola. Mycologia, 93(5): 934-946.", 
 "^ot:studyYear": 2001, 
+"^ot:tag": [], 
 "^ot:treesElementOrder": [
 "trees1739"
 ], 
@@ -111,6 +82,8 @@
 }, 
 "otu272634": {
 "^ot:originalLabel": "Septoria tritici", 
+"^ot:ottId": 5319978, 
+"^ot:ottTaxonName": "Septoria tritici", 
 "^ot:treebaseOTUId": "Tl124143"
 }, 
 "otu272635": {
@@ -161,6 +134,8 @@
 }, 
 "otu272643": {
 "^ot:originalLabel": "Dothidea hippophaeos", 
+"^ot:ottId": 3717635, 
+"^ot:ottTaxonName": "Dothidea hippophaes", 
 "^ot:treebaseOTUId": "Tl124180"
 }, 
 "otu272644": {
@@ -205,10 +180,14 @@
 }, 
 "otu272651": {
 "^ot:originalLabel": "Septoria passerinii P70", 
+"^ot:ottId": 5319983, 
+"^ot:ottTaxonName": "Septoria murina", 
 "^ot:treebaseOTUId": "Tl57383"
 }, 
 "otu272652": {
 "^ot:originalLabel": "Septoria passerinii P83", 
+"^ot:ottId": 5319983, 
+"^ot:ottTaxonName": "Septoria murina", 
 "^ot:treebaseOTUId": "Tl57384"
 }, 
 "otu272653": {
@@ -251,6 +230,8 @@
 }, 
 "otu272660": {
 "^ot:originalLabel": "Septoria passerinii P22585", 
+"^ot:ottId": 5319983, 
+"^ot:ottTaxonName": "Septoria murina", 
 "^ot:treebaseOTUId": "Tl57392"
 }, 
 "otu272661": {
@@ -281,6 +262,8 @@
 }, 
 "otu272666": {
 "^ot:originalLabel": "Septoria passerinii P26515", 
+"^ot:ottId": 5319983, 
+"^ot:ottTaxonName": "Septoria murina", 
 "^ot:treebaseOTUId": "Tl57398"
 }, 
 "otu272667": {
@@ -335,6 +318,8 @@
 }, 
 "otu272676": {
 "^ot:originalLabel": "Septoria passerinii P78", 
+"^ot:ottId": 5319983, 
+"^ot:ottTaxonName": "Septoria murina", 
 "^ot:treebaseOTUId": "Tl57410"
 }, 
 "otu272677": {
@@ -349,6 +334,8 @@
 }, 
 "otu272679": {
 "^ot:originalLabel": "Septoria passerinii P26516", 
+"^ot:ottId": 5319983, 
+"^ot:ottTaxonName": "Septoria murina", 
 "^ot:treebaseOTUId": "Tl57414"
 }, 
 "otu272680": {
@@ -371,9 +358,15 @@
 "treeById": {
 "tree3499": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "NJ, ITS1 (unrooted)", 
 "^ot:inGroupClade": "node676354", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node676354", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node676354": {
 "edge676355": {
@@ -960,10 +953,17 @@
 }, 
 "tree3500": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "NJ, ITS2 (unrooted)", 
 "^ot:inGroupClade": "node676437", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node676437", 
-"^ot:tag": "ITS2", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [
+"ITS2"
+], 
 "edgeBySourceId": {
 "node676437": {
 "edge676438": {
@@ -1550,9 +1550,15 @@
 }, 
 "tree3501": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "NJ, ITS (unrooted)", 
 "^ot:inGroupClade": "node676520", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node676520", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node676520": {
 "edge676521": {

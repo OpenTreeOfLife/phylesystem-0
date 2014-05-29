@@ -19,48 +19,11 @@
 "@id": "peyotl-validator", 
 "@name": "validate_ot_nexson.py", 
 "@url": "https://github.com/OpenTreeOfLife/peyotl", 
-"@version": "0.0.3a", 
+"@version": "0.0.4a", 
 "invocation": {
-"checksPerformed": [
-"MISSING_MANDATORY_KEY", 
-"MISSING_OPTIONAL_KEY", 
-"UNRECOGNIZED_KEY", 
-"MISSING_LIST_EXPECTED", 
-"DUPLICATING_SINGLETON_KEY", 
-"REFERENCED_ID_NOT_FOUND", 
-"REPEATED_ID", 
-"REPEATED_OTU", 
-"MULTIPLE_ROOT_NODES", 
-"NO_ROOT_NODE", 
-"MULTIPLE_EDGES_FOR_NODES", 
-"CYCLE_DETECTED", 
-"DISCONNECTED_GRAPH_DETECTED", 
-"INCORRECT_ROOT_NODE_LABEL", 
-"TIP_WITHOUT_OTU", 
-"TIP_WITHOUT_OTT_ID", 
-"MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
-"NON_MONOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
-"INVALID_PROPERTY_VALUE", 
-"PROPERTY_VALUE_NOT_USEFUL", 
-"UNRECOGNIZED_PROPERTY_VALUE", 
-"MULTIPLE_TREES", 
-"UNRECOGNIZED_TAG", 
-"CONFLICTING_PROPERTY_VALUES", 
-"NO_TREES", 
-"DEPRECATED_PROPERTY", 
-"UNPARSEABLE_META", 
-"UNREACHABLE_NODE", 
-"INCORRECT_VALUE_TYPE", 
-"MISSING_CRUCIAL_CONTENT"
-], 
 "commandLine": [
 "--embed", 
-"--agent-only", 
-"-e", 
-"../mig-phyelesystem-scratch/515/validation.json", 
-"-o", 
-"../mig-phyelesystem-scratch/515/final.json", 
-"../mig-phyelesystem-scratch/515/v1.2.1-515.json"
+"--agent-only"
 ], 
 "otherProperty": [
 {
@@ -76,12 +39,19 @@
 }
 ]
 }, 
+"^ot:annotationEvents": {
+"annotation": []
+}, 
+"^ot:candidateTreeForSynthesis": [], 
 "^ot:curatorName": "Romina Gazis", 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S10550"
 }, 
 "^ot:focalClade": 525427, 
 "^ot:focalCladeOTTTaxonName": "Octaviania", 
+"^ot:messages": {
+"message": []
+}, 
 "^ot:otusElementOrder": [
 "otus515"
 ], 
@@ -91,6 +61,7 @@
 }, 
 "^ot:studyPublicationReference": "Vizzini A., Zotti M., Ryman S., & Ghignone S. 2010. Typification of Octaviania rubescens (Paxillineae, Boletales) and phylogenetic hypotheses for genus Alpova. Mycologia, 102(4): 967-975.", 
 "^ot:studyYear": 2010, 
+"^ot:tag": [], 
 "^ot:treesElementOrder": [
 "trees515"
 ], 
@@ -145,6 +116,8 @@
 }, 
 "otu166682": {
 "^ot:originalLabel": "Xerocomus chrysenteron AF071537", 
+"^ot:ottId": 4936163, 
+"^ot:ottTaxonName": "Xerocomellus chrysenteron", 
 "^ot:treebaseOTUId": "Tl305944"
 }, 
 "otu166683": {
@@ -189,6 +162,8 @@
 }, 
 "otu166690": {
 "^ot:originalLabel": "Gyrodon rompelii AY177257", 
+"^ot:ottId": 808304, 
+"^ot:ottTaxonName": "Boletinellus rompelii", 
 "^ot:treebaseOTUId": "Tl305952"
 }, 
 "otu166691": {
@@ -199,6 +174,8 @@
 }, 
 "otu166692": {
 "^ot:originalLabel": "Xerocomus subtomentosus AF139716", 
+"^ot:ottId": 500350, 
+"^ot:ottTaxonName": "Boletus subtomentosus", 
 "^ot:treebaseOTUId": "Tl305954"
 }, 
 "otu166693": {
@@ -301,6 +278,8 @@
 }, 
 "otu166710": {
 "^ot:originalLabel": "Dendrocorticium roseocarneum AF393053", 
+"^ot:ottId": 5300427, 
+"^ot:ottTaxonName": "Corticium roseocarneum", 
 "^ot:treebaseOTUId": "Tl305972"
 }, 
 "otu166711": {
@@ -317,6 +296,8 @@
 }, 
 "otu166713": {
 "^ot:originalLabel": "Xerocomus ripariellus AF514818", 
+"^ot:ottId": 5304107, 
+"^ot:ottTaxonName": "Xerocomellus ripariellus", 
 "^ot:treebaseOTUId": "Tl305975"
 }, 
 "otu166714": {
@@ -357,6 +338,8 @@
 }, 
 "otu166720": {
 "^ot:originalLabel": "Scleroderma geaster AF336269", 
+"^ot:ottId": 508899, 
+"^ot:ottTaxonName": "Scleroderma polyrhizum", 
 "^ot:treebaseOTUId": "Tl305982"
 }, 
 "otu166721": {
@@ -367,6 +350,8 @@
 }, 
 "otu166722": {
 "^ot:originalLabel": "Retiboletus flavoniger AF456829", 
+"^ot:ottId": 5304085, 
+"^ot:ottTaxonName": "Retiboletus flavoniger", 
 "^ot:treebaseOTUId": "Tl305984"
 }, 
 "otu166723": {
@@ -387,6 +372,8 @@
 }, 
 "otu166726": {
 "^ot:originalLabel": "Retiboletus retipes U11914", 
+"^ot:ottId": 5304086, 
+"^ot:ottTaxonName": "Retiboletus retipes", 
 "^ot:treebaseOTUId": "Tl305988"
 }, 
 "otu166727": {
@@ -403,10 +390,14 @@
 }, 
 "otu166729": {
 "^ot:originalLabel": "Austroboletus novae-zelandiae DQ534623", 
+"^ot:ottId": 3836057, 
+"^ot:ottTaxonName": "Porphyrellus novae-zelandiae", 
 "^ot:treebaseOTUId": "Tl305991"
 }, 
 "otu166730": {
 "^ot:originalLabel": "Porphyrellus porphyrosporus DQ534642", 
+"^ot:ottId": 3835488, 
+"^ot:ottTaxonName": "Tylopilus porphyrosporus", 
 "^ot:treebaseOTUId": "Tl305992"
 }, 
 "otu166731": {
@@ -435,6 +426,8 @@
 }, 
 "otu166735": {
 "^ot:originalLabel": "Strobilomyces floccopus AY612824", 
+"^ot:ottId": 551334, 
+"^ot:ottTaxonName": "Strobilomyces strobilaceus", 
 "^ot:treebaseOTUId": "Tl305997"
 }, 
 "otu166736": {
@@ -487,6 +480,8 @@
 }, 
 "otu166744": {
 "^ot:originalLabel": "Durianella echinulatum", 
+"^ot:ottId": 5300673, 
+"^ot:ottTaxonName": "Durianella", 
 "^ot:treebaseOTUId": "Tl306006"
 }, 
 "otu166745": {
@@ -521,6 +516,8 @@
 }, 
 "otu166750": {
 "^ot:originalLabel": "Boletellus projectellus AY684258", 
+"^ot:ottId": 1008449, 
+"^ot:ottTaxonName": "Cromileptes altivelis", 
 "^ot:treebaseOTUId": "Tl306012"
 }, 
 "otu166751": {
@@ -549,6 +546,8 @@
 }, 
 "otu166755": {
 "^ot:originalLabel": "Botryobasidium isabellinum AF393047", 
+"^ot:ottId": 5300654, 
+"^ot:ottTaxonName": "Botryohypochnus isabellinus", 
 "^ot:treebaseOTUId": "Tl306017"
 }, 
 "otu166756": {
@@ -619,6 +618,8 @@
 }, 
 "otu166767": {
 "^ot:originalLabel": "Melanogaster broomeianus AF09838", 
+"^ot:ottId": 5304122, 
+"^ot:ottTaxonName": "Melanogaster broomeanus", 
 "^ot:treebaseOTUId": "Tl306029"
 }, 
 "otu166768": {
@@ -658,10 +659,17 @@
 "treeById": {
 "tree726": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "BI, LSU", 
 "^ot:inGroupClade": "node330688", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node330681", 
-"^ot:tag": "Choose me", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [
+"Choose me"
+], 
 "edgeBySourceId": {
 "node330681": {
 "edge330682": {
@@ -1794,9 +1802,15 @@
 }, 
 "tree727": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "NJ, LSU", 
 "^ot:inGroupClade": "node330844", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node330842", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node330842": {
 "edge330843": {

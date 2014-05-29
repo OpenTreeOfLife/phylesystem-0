@@ -19,48 +19,11 @@
 "@id": "peyotl-validator", 
 "@name": "validate_ot_nexson.py", 
 "@url": "https://github.com/OpenTreeOfLife/peyotl", 
-"@version": "0.0.3a", 
+"@version": "0.0.4a", 
 "invocation": {
-"checksPerformed": [
-"MISSING_MANDATORY_KEY", 
-"MISSING_OPTIONAL_KEY", 
-"UNRECOGNIZED_KEY", 
-"MISSING_LIST_EXPECTED", 
-"DUPLICATING_SINGLETON_KEY", 
-"REFERENCED_ID_NOT_FOUND", 
-"REPEATED_ID", 
-"REPEATED_OTU", 
-"MULTIPLE_ROOT_NODES", 
-"NO_ROOT_NODE", 
-"MULTIPLE_EDGES_FOR_NODES", 
-"CYCLE_DETECTED", 
-"DISCONNECTED_GRAPH_DETECTED", 
-"INCORRECT_ROOT_NODE_LABEL", 
-"TIP_WITHOUT_OTU", 
-"TIP_WITHOUT_OTT_ID", 
-"MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
-"NON_MONOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
-"INVALID_PROPERTY_VALUE", 
-"PROPERTY_VALUE_NOT_USEFUL", 
-"UNRECOGNIZED_PROPERTY_VALUE", 
-"MULTIPLE_TREES", 
-"UNRECOGNIZED_TAG", 
-"CONFLICTING_PROPERTY_VALUES", 
-"NO_TREES", 
-"DEPRECATED_PROPERTY", 
-"UNPARSEABLE_META", 
-"UNREACHABLE_NODE", 
-"INCORRECT_VALUE_TYPE", 
-"MISSING_CRUCIAL_CONTENT"
-], 
 "commandLine": [
 "--embed", 
-"--agent-only", 
-"-e", 
-"../mig-phyelesystem-scratch/582/validation.json", 
-"-o", 
-"../mig-phyelesystem-scratch/582/final.json", 
-"../mig-phyelesystem-scratch/582/v1.2.1-582.json"
+"--agent-only"
 ], 
 "otherProperty": [
 {
@@ -76,12 +39,19 @@
 }
 ]
 }, 
+"^ot:annotationEvents": {
+"annotation": []
+}, 
+"^ot:candidateTreeForSynthesis": [], 
 "^ot:curatorName": "Jiabin Deng", 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S10427"
 }, 
 "^ot:focalClade": 124526, 
 "^ot:focalCladeOTTTaxonName": "Danthonioideae", 
+"^ot:messages": {
+"message": []
+}, 
 "^ot:otusElementOrder": [
 "otus582"
 ], 
@@ -91,6 +61,7 @@
 }, 
 "^ot:studyPublicationReference": "Pirie, M. D., Humphreys, A. M., Galley, C., Barker, N. P., Verboom, G. A., Orlovich, D., Draffin, S. J., Lloyd, K., Baeza, C. M., Negritto, M., Ruiz, E., Cota-S\u00e1nchez, J. H., Reimer, E., & Linder, H. P. 2008. A novel supermatrix approach improves resolution of phylogenetic relationships in a comprehenesive sample of danthonioid grasses. Molec. Phyl. Evol. 48: 48: 1106-1119.", 
 "^ot:studyYear": 2008, 
+"^ot:tag": [], 
 "^ot:treesElementOrder": [
 "trees582"
 ], 
@@ -238,6 +209,7 @@
 "otu172412": {
 "^ot:originalLabel": "Arundo", 
 "^ot:ottId": 659311, 
+"^ot:ottTaxonName": "Arundo", 
 "^ot:treebaseOTUId": "Tl289272"
 }, 
 "otu172413": {
@@ -609,6 +581,7 @@
 "otu172474": {
 "^ot:originalLabel": "Andropogon", 
 "^ot:ottId": 1040674, 
+"^ot:ottTaxonName": "Andropogon", 
 "^ot:treebaseOTUId": "Tl289334"
 }, 
 "otu172475": {
@@ -740,6 +713,7 @@
 "otu172496": {
 "^ot:originalLabel": "Amphipogon", 
 "^ot:ottId": 38545, 
+"^ot:ottTaxonName": "Amphipogon", 
 "^ot:treebaseOTUId": "Tl289356"
 }, 
 "otu172497": {
@@ -1195,11 +1169,13 @@
 "otu172572": {
 "^ot:originalLabel": "Micraira", 
 "^ot:ottId": 779604, 
+"^ot:ottTaxonName": "Micraira", 
 "^ot:treebaseOTUId": "Tl289432"
 }, 
 "otu172573": {
 "^ot:originalLabel": "Setaria", 
 "^ot:ottId": 553003, 
+"^ot:ottTaxonName": "Setaria", 
 "^ot:treebaseOTUId": "Tl289433"
 }, 
 "otu172574": {
@@ -1481,6 +1457,7 @@
 "otu172620": {
 "^ot:originalLabel": "Hordeum", 
 "^ot:ottId": 649371, 
+"^ot:ottTaxonName": "Hordeum", 
 "^ot:treebaseOTUId": "Tl289480"
 }, 
 "otu172621": {
@@ -1606,6 +1583,7 @@
 "otu172641": {
 "^ot:originalLabel": "Stipagrostis", 
 "^ot:ottId": 931580, 
+"^ot:ottTaxonName": "Stipagrostis", 
 "^ot:treebaseOTUId": "Tl289501"
 }, 
 "otu172642": {
@@ -1677,6 +1655,7 @@
 "otu172653": {
 "^ot:originalLabel": "Aristida", 
 "^ot:ottId": 256659, 
+"^ot:ottTaxonName": "Aristida", 
 "^ot:treebaseOTUId": "Tl289513"
 }, 
 "otu172654": {
@@ -1891,9 +1870,15 @@
 "treeById": {
 "tree860": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "cpDNA MrBayes", 
 "^ot:inGroupClade": "node347929", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node347922", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node347922": {
 "edge347923": {
@@ -6026,9 +6011,15 @@
 }, 
 "tree861": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "nrDNA MrBayes", 
 "^ot:inGroupClade": "node348442", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node348438", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node348438": {
 "edge348439": {
@@ -8761,9 +8752,15 @@
 }, 
 "tree862": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "tree", 
 "^ot:inGroupClade": "node348783", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node348779", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node348779": {
 "edge348780": {

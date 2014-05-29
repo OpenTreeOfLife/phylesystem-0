@@ -19,48 +19,11 @@
 "@id": "peyotl-validator", 
 "@name": "validate_ot_nexson.py", 
 "@url": "https://github.com/OpenTreeOfLife/peyotl", 
-"@version": "0.0.3a", 
+"@version": "0.0.4a", 
 "invocation": {
-"checksPerformed": [
-"MISSING_MANDATORY_KEY", 
-"MISSING_OPTIONAL_KEY", 
-"UNRECOGNIZED_KEY", 
-"MISSING_LIST_EXPECTED", 
-"DUPLICATING_SINGLETON_KEY", 
-"REFERENCED_ID_NOT_FOUND", 
-"REPEATED_ID", 
-"REPEATED_OTU", 
-"MULTIPLE_ROOT_NODES", 
-"NO_ROOT_NODE", 
-"MULTIPLE_EDGES_FOR_NODES", 
-"CYCLE_DETECTED", 
-"DISCONNECTED_GRAPH_DETECTED", 
-"INCORRECT_ROOT_NODE_LABEL", 
-"TIP_WITHOUT_OTU", 
-"TIP_WITHOUT_OTT_ID", 
-"MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
-"NON_MONOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
-"INVALID_PROPERTY_VALUE", 
-"PROPERTY_VALUE_NOT_USEFUL", 
-"UNRECOGNIZED_PROPERTY_VALUE", 
-"MULTIPLE_TREES", 
-"UNRECOGNIZED_TAG", 
-"CONFLICTING_PROPERTY_VALUES", 
-"NO_TREES", 
-"DEPRECATED_PROPERTY", 
-"UNPARSEABLE_META", 
-"UNREACHABLE_NODE", 
-"INCORRECT_VALUE_TYPE", 
-"MISSING_CRUCIAL_CONTENT"
-], 
 "commandLine": [
 "--embed", 
-"--agent-only", 
-"-e", 
-"../mig-phyelesystem-scratch/950/validation.json", 
-"-o", 
-"../mig-phyelesystem-scratch/950/final.json", 
-"../mig-phyelesystem-scratch/950/v1.2.1-950.json"
+"--agent-only"
 ], 
 "otherProperty": [
 {
@@ -76,12 +39,19 @@
 }
 ]
 }, 
+"^ot:annotationEvents": {
+"annotation": []
+}, 
+"^ot:candidateTreeForSynthesis": [], 
 "^ot:curatorName": "Romina Gazis", 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S11665"
 }, 
 "^ot:focalClade": 466678, 
 "^ot:focalCladeOTTTaxonName": "Pleosporales", 
+"^ot:messages": {
+"message": []
+}, 
 "^ot:otusElementOrder": [
 "otus950"
 ], 
@@ -91,6 +61,7 @@
 }, 
 "^ot:studyPublicationReference": "Lawrence D.P., Park M., & Pryor B. 2012. Nimbya and Embellisia revisited, with nov. comb for Alternaria celosiae and A. perpunctulata. Mycological Progress, 11:799\u2013815.", 
 "^ot:studyYear": 2012, 
+"^ot:tag": [], 
 "^ot:treesElementOrder": [
 "trees950"
 ], 
@@ -140,9 +111,9 @@
 "^ot:treebaseOTUId": "Tl559059"
 }, 
 "otu208390": {
-"^ot:altLabel": "Alternaria botryospora", 
 "^ot:originalLabel": "Embellisia novae zelandiae 0394", 
 "^ot:ottId": 968627, 
+"^ot:ottTaxonName": "Alternaria botryospora", 
 "^ot:treebaseOTUId": "Tl559060"
 }, 
 "otu208391": {
@@ -152,9 +123,9 @@
 "^ot:treebaseOTUId": "Tl559061"
 }, 
 "otu208392": {
-"^ot:altLabel": "Chalastospora cetera", 
 "^ot:originalLabel": "Alternaria cetera ", 
 "^ot:ottId": 999544, 
+"^ot:ottTaxonName": "Chalastospora cetera", 
 "^ot:treebaseOTUId": "Tl559062"
 }, 
 "otu208393": {
@@ -188,9 +159,9 @@
 "^ot:treebaseOTUId": "Tl559067"
 }, 
 "otu208398": {
-"^ot:altLabel": "Pleospora herbarum", 
 "^ot:originalLabel": "Pleospora herbarum ", 
 "^ot:ottId": 282723, 
+"^ot:ottTaxonName": "Pleospora herbarum", 
 "^ot:treebaseOTUId": "Tl559068"
 }, 
 "otu208399": {
@@ -360,9 +331,9 @@
 "^ot:treebaseOTUId": "Tl559096"
 }, 
 "otu208427": {
-"^ot:altLabel": "Alternaria lolii", 
 "^ot:originalLabel": "Embellisia lolii BMP1987", 
 "^ot:ottId": 688396, 
+"^ot:ottTaxonName": "Alternaria lolii", 
 "^ot:treebaseOTUId": "Tl559097"
 }, 
 "otu208428": {
@@ -378,9 +349,9 @@
 "^ot:treebaseOTUId": "Tl559099"
 }, 
 "otu208430": {
-"^ot:altLabel": "Embellisia dennisii", 
 "^ot:originalLabel": "Embellisia dennisii ", 
 "^ot:ottId": 514317, 
+"^ot:ottTaxonName": "Embellisia dennisii", 
 "^ot:treebaseOTUId": "Tl559100"
 }, 
 "otu208431": {
@@ -394,9 +365,9 @@
 "^ot:treebaseOTUId": "Tl559102"
 }, 
 "otu208433": {
-"^ot:altLabel": "Undifilum oxytropis", 
 "^ot:originalLabel": "Undifilum oxytropis ", 
 "^ot:ottId": 688408, 
+"^ot:ottTaxonName": "Undifilum oxytropis", 
 "^ot:treebaseOTUId": "Tl559103"
 }, 
 "otu208434": {
@@ -442,9 +413,9 @@
 "^ot:treebaseOTUId": "Tl559110"
 }, 
 "otu208441": {
-"^ot:altLabel": "Embellisia abundans", 
 "^ot:originalLabel": "Embellisia abundans ", 
 "^ot:ottId": 948091, 
+"^ot:ottTaxonName": "Embellisia abundans", 
 "^ot:treebaseOTUId": "Tl559111"
 }, 
 "otu208442": {
@@ -477,6 +448,8 @@
 }, 
 "otu208447": {
 "^ot:originalLabel": "Alternaria conjuncta", 
+"^ot:ottId": 5318800, 
+"^ot:ottTaxonName": "Lewia scrophulariae", 
 "^ot:treebaseOTUId": "Tl559117"
 }, 
 "otu208448": {
@@ -523,6 +496,8 @@
 }, 
 "otu208455": {
 "^ot:originalLabel": "Embellisia annulata", 
+"^ot:ottId": 5318906, 
+"^ot:ottTaxonName": "Embellisia annulata", 
 "^ot:treebaseOTUId": "Tl559125"
 }, 
 "otu208456": {
@@ -563,17 +538,20 @@
 }, 
 "otu208462": {
 "^ot:originalLabel": "Embellisia eureka", 
+"^ot:ottId": 13657, 
+"^ot:ottTaxonName": "Allewia eureka", 
 "^ot:treebaseOTUId": "Tl559132"
 }, 
 "otu208463": {
 "^ot:originalLabel": "Nimbya perpunctulata", 
 "^ot:ottId": 514319, 
+"^ot:ottTaxonName": "Nimbya perpunctulata", 
 "^ot:treebaseOTUId": "Tl559133"
 }, 
 "otu208464": {
-"^ot:altLabel": "Undifilum oxytropis", 
 "^ot:originalLabel": "Undifilum oxytropis L12", 
 "^ot:ottId": 688408, 
+"^ot:ottTaxonName": "Undifilum oxytropis", 
 "^ot:treebaseOTUId": "Tl559134"
 }, 
 "otu374428": {
@@ -610,8 +588,14 @@
 "treeById": {
 "tree1864": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "PAUP 18", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node493440", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node493440": {
 "edge493441": {
@@ -1682,8 +1666,14 @@
 }, 
 "tree1865": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "PAUP 17", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node493576", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node493576": {
 "edge493577": {
@@ -2754,8 +2744,14 @@
 }, 
 "tree1866": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "PAUP 16", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node493712", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node493712": {
 "edge493713": {
@@ -3826,8 +3822,14 @@
 }, 
 "tree1867": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "PAUP 7", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node493848", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node493848": {
 "edge493849": {
@@ -4891,8 +4893,14 @@
 }, 
 "tree1868": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "PAUP 15", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node493983", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node493983": {
 "edge493984": {
@@ -5963,8 +5971,14 @@
 }, 
 "tree1869": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "PAUP 14", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node494119", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node494119": {
 "edge494120": {
@@ -7043,8 +7057,14 @@
 }, 
 "tree1870": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "PAUP 13", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node494256", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node494256": {
 "edge494257": {
@@ -8123,9 +8143,15 @@
 }, 
 "tree5748": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "MP, ITS + gpd + alt1a (rooted)", 
 "^ot:inGroupClade": "node984643", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node984631", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node984631": {
 "edge984632": {

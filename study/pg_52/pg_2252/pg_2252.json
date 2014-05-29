@@ -19,48 +19,11 @@
 "@id": "peyotl-validator", 
 "@name": "validate_ot_nexson.py", 
 "@url": "https://github.com/OpenTreeOfLife/peyotl", 
-"@version": "0.0.3a", 
+"@version": "0.0.4a", 
 "invocation": {
-"checksPerformed": [
-"MISSING_MANDATORY_KEY", 
-"MISSING_OPTIONAL_KEY", 
-"UNRECOGNIZED_KEY", 
-"MISSING_LIST_EXPECTED", 
-"DUPLICATING_SINGLETON_KEY", 
-"REFERENCED_ID_NOT_FOUND", 
-"REPEATED_ID", 
-"REPEATED_OTU", 
-"MULTIPLE_ROOT_NODES", 
-"NO_ROOT_NODE", 
-"MULTIPLE_EDGES_FOR_NODES", 
-"CYCLE_DETECTED", 
-"DISCONNECTED_GRAPH_DETECTED", 
-"INCORRECT_ROOT_NODE_LABEL", 
-"TIP_WITHOUT_OTU", 
-"TIP_WITHOUT_OTT_ID", 
-"MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
-"NON_MONOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
-"INVALID_PROPERTY_VALUE", 
-"PROPERTY_VALUE_NOT_USEFUL", 
-"UNRECOGNIZED_PROPERTY_VALUE", 
-"MULTIPLE_TREES", 
-"UNRECOGNIZED_TAG", 
-"CONFLICTING_PROPERTY_VALUES", 
-"NO_TREES", 
-"DEPRECATED_PROPERTY", 
-"UNPARSEABLE_META", 
-"UNREACHABLE_NODE", 
-"INCORRECT_VALUE_TYPE", 
-"MISSING_CRUCIAL_CONTENT"
-], 
 "commandLine": [
 "--embed", 
-"--agent-only", 
-"-e", 
-"../mig-phyelesystem-scratch/2252/validation.json", 
-"-o", 
-"../mig-phyelesystem-scratch/2252/final.json", 
-"../mig-phyelesystem-scratch/2252/v1.2.1-2252.json"
+"--agent-only"
 ], 
 "otherProperty": [
 {
@@ -76,12 +39,19 @@
 }
 ]
 }, 
+"^ot:annotationEvents": {
+"annotation": []
+}, 
+"^ot:candidateTreeForSynthesis": [], 
 "^ot:curatorName": "Romina Gazis", 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S1075"
 }, 
 "^ot:focalClade": 451296, 
 "^ot:focalCladeOTTTaxonName": "Ustilaginales", 
+"^ot:messages": {
+"message": []
+}, 
 "^ot:otusElementOrder": [
 "otus2252"
 ], 
@@ -91,6 +61,7 @@
 }, 
 "^ot:studyPublicationReference": "Stoll M., Piepenbring M., Begerow D., & Oberwinkler F. 2003. Molecular phylogeny of Ustilago and Sporisorium species (Basidiomycota, Ustilaginales) based on internal transcribed spacer (ITS) sequences. Canadian Journal of Botany, 81: 976-984.", 
 "^ot:studyYear": 2003, 
+"^ot:tag": [], 
 "^ot:treesElementOrder": [
 "trees2252"
 ], 
@@ -329,6 +300,8 @@
 }, 
 "otu325091": {
 "^ot:originalLabel": "Sporisorium reilianum GB", 
+"^ot:ottId": 5300833, 
+"^ot:ottTaxonName": "Sphacelotheca reiliana", 
 "^ot:treebaseOTUId": "Tl18120"
 }, 
 "otu325092": {
@@ -363,6 +336,8 @@
 }, 
 "otu325097": {
 "^ot:originalLabel": "Ustilago maydis GB", 
+"^ot:ottId": 285447, 
+"^ot:ottTaxonName": "Ustilago maydis", 
 "^ot:treebaseOTUId": "Tl18138"
 }, 
 "otu325098": {
@@ -422,10 +397,17 @@
 "treeById": {
 "tree4767": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "BI, ITS", 
 "^ot:inGroupClade": "node839981", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node839976", 
-"^ot:tag": "BI", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [
+"BI"
+], 
 "edgeBySourceId": {
 "node839976": {
 "edge839977": {
@@ -1110,9 +1092,15 @@
 }, 
 "tree4768": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "NJ, ITS", 
 "^ot:inGroupClade": "node840079", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node840073", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node840073": {
 "edge840074": {

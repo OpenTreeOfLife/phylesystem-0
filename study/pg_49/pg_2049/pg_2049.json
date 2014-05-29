@@ -19,48 +19,11 @@
 "@id": "peyotl-validator", 
 "@name": "validate_ot_nexson.py", 
 "@url": "https://github.com/OpenTreeOfLife/peyotl", 
-"@version": "0.0.3a", 
+"@version": "0.0.4a", 
 "invocation": {
-"checksPerformed": [
-"MISSING_MANDATORY_KEY", 
-"MISSING_OPTIONAL_KEY", 
-"UNRECOGNIZED_KEY", 
-"MISSING_LIST_EXPECTED", 
-"DUPLICATING_SINGLETON_KEY", 
-"REFERENCED_ID_NOT_FOUND", 
-"REPEATED_ID", 
-"REPEATED_OTU", 
-"MULTIPLE_ROOT_NODES", 
-"NO_ROOT_NODE", 
-"MULTIPLE_EDGES_FOR_NODES", 
-"CYCLE_DETECTED", 
-"DISCONNECTED_GRAPH_DETECTED", 
-"INCORRECT_ROOT_NODE_LABEL", 
-"TIP_WITHOUT_OTU", 
-"TIP_WITHOUT_OTT_ID", 
-"MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
-"NON_MONOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
-"INVALID_PROPERTY_VALUE", 
-"PROPERTY_VALUE_NOT_USEFUL", 
-"UNRECOGNIZED_PROPERTY_VALUE", 
-"MULTIPLE_TREES", 
-"UNRECOGNIZED_TAG", 
-"CONFLICTING_PROPERTY_VALUES", 
-"NO_TREES", 
-"DEPRECATED_PROPERTY", 
-"UNPARSEABLE_META", 
-"UNREACHABLE_NODE", 
-"INCORRECT_VALUE_TYPE", 
-"MISSING_CRUCIAL_CONTENT"
-], 
 "commandLine": [
 "--embed", 
-"--agent-only", 
-"-e", 
-"../mig-phyelesystem-scratch/2049/validation.json", 
-"-o", 
-"../mig-phyelesystem-scratch/2049/final.json", 
-"../mig-phyelesystem-scratch/2049/v1.2.1-2049.json"
+"--agent-only"
 ], 
 "otherProperty": [
 {
@@ -76,12 +39,19 @@
 }
 ]
 }, 
+"^ot:annotationEvents": {
+"annotation": []
+}, 
+"^ot:candidateTreeForSynthesis": [], 
 "^ot:curatorName": "bryan drew", 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S11950"
 }, 
 "^ot:focalClade": 868423, 
 "^ot:focalCladeOTTTaxonName": "Geonoma", 
+"^ot:messages": {
+"message": []
+}, 
 "^ot:otusElementOrder": [
 "otus2049"
 ], 
@@ -91,6 +61,7 @@
 }, 
 "^ot:studyPublicationReference": "Roncal, J., Henderson, A., Borchsenius, F., Cardoso, S. R. S., & Balslev, H. (2012). Can phylogenetic signal, character displacement, or random phenotypic drift explain the morphological variation in the genus Geonoma (Arecaceae)?. Biological Journal of the Linnean Society, 106(3), 528-539.", 
 "^ot:studyYear": 2012, 
+"^ot:tag": [], 
 "^ot:treesElementOrder": [
 "trees2049"
 ], 
@@ -110,9 +81,9 @@
 "^ot:treebaseOTUId": "Tl638761"
 }, 
 "otu308636": {
-"^ot:altLabel": "Calyptrogyne fortunensis", 
 "^ot:originalLabel": "Calyptrogyne fortunensis clon1", 
 "^ot:ottId": 864636, 
+"^ot:ottTaxonName": "Calyptrogyne fortunensis", 
 "^ot:treebaseOTUId": "Tl638762"
 }, 
 "otu308637": {
@@ -140,9 +111,9 @@
 "^ot:treebaseOTUId": "Tl638766"
 }, 
 "otu308641": {
-"^ot:altLabel": "Geonoma orbignyana subsp. hoffmanniana", 
 "^ot:originalLabel": "Geonoma orbignyana subsp. hoffmanniana clon1", 
 "^ot:ottId": 228893, 
+"^ot:ottTaxonName": "Geonoma orbignyana subsp. hoffmanniana", 
 "^ot:treebaseOTUId": "Tl638767"
 }, 
 "otu308642": {
@@ -164,9 +135,9 @@
 "^ot:treebaseOTUId": "Tl638770"
 }, 
 "otu308645": {
-"^ot:altLabel": "Calyptrogyne costatifrons", 
 "^ot:originalLabel": "Calyptrogyne costatifrons clon6", 
 "^ot:ottId": 868433, 
+"^ot:ottTaxonName": "Calyptrogyne costatifrons", 
 "^ot:treebaseOTUId": "Tl638771"
 }, 
 "otu308646": {
@@ -176,9 +147,9 @@
 "^ot:treebaseOTUId": "Tl638772"
 }, 
 "otu308647": {
-"^ot:altLabel": "Geonoma triandra", 
 "^ot:originalLabel": "Geonoma triandra clon4", 
 "^ot:ottId": 914678, 
+"^ot:ottTaxonName": "Geonoma triandra", 
 "^ot:treebaseOTUId": "Tl638773"
 }, 
 "otu308648": {
@@ -212,9 +183,9 @@
 "^ot:treebaseOTUId": "Tl638778"
 }, 
 "otu308653": {
-"^ot:altLabel": "Calyptrogyne panamensis", 
 "^ot:originalLabel": "Calyptrogyne panamensis clon3", 
 "^ot:ottId": 864640, 
+"^ot:ottTaxonName": "Calyptrogyne panamensis", 
 "^ot:treebaseOTUId": "Tl638779"
 }, 
 "otu308654": {
@@ -242,9 +213,9 @@
 "^ot:treebaseOTUId": "Tl638783"
 }, 
 "otu308658": {
-"^ot:altLabel": "Geonoma maxima", 
 "^ot:originalLabel": "Geonoma maxima clon4", 
 "^ot:ottId": 1018211, 
+"^ot:ottTaxonName": "Geonoma maxima", 
 "^ot:treebaseOTUId": "Tl638784"
 }, 
 "otu308659": {
@@ -320,21 +291,21 @@
 "^ot:treebaseOTUId": "Tl638796"
 }, 
 "otu308671": {
-"^ot:altLabel": "Geonoma orbignyana subsp. hoffmanniana", 
 "^ot:originalLabel": "Geonoma orbignyana subsp. hoffmanniana clon2", 
 "^ot:ottId": 228893, 
+"^ot:ottTaxonName": "Geonoma orbignyana subsp. hoffmanniana", 
 "^ot:treebaseOTUId": "Tl638797"
 }, 
 "otu308672": {
-"^ot:altLabel": "Geonoma pohliana", 
 "^ot:originalLabel": "Geonoma pohliana I", 
 "^ot:ottId": 52333, 
+"^ot:ottTaxonName": "Geonoma pohliana", 
 "^ot:treebaseOTUId": "Tl638798"
 }, 
 "otu308673": {
-"^ot:altLabel": "Geonoma macrostachys var. macrostachys", 
 "^ot:originalLabel": "Geonoma macrostachys morph macrostachys ", 
 "^ot:ottId": 1018207, 
+"^ot:ottTaxonName": "Geonoma macrostachys var. macrostachys", 
 "^ot:treebaseOTUId": "Tl638799"
 }, 
 "otu308674": {
@@ -386,21 +357,21 @@
 "^ot:treebaseOTUId": "Tl638807"
 }, 
 "otu308682": {
-"^ot:altLabel": "Geonoma brongniartii", 
 "^ot:originalLabel": "Geonoma brongniartii x deversa ", 
 "^ot:ottId": 1018221, 
+"^ot:ottTaxonName": "Geonoma brongniartii", 
 "^ot:treebaseOTUId": "Tl638808"
 }, 
 "otu308683": {
-"^ot:altLabel": "Geonoma laxiflora", 
 "^ot:originalLabel": "Geonoma laxiflora clon3", 
 "^ot:ottId": 289945, 
+"^ot:ottTaxonName": "Geonoma laxiflora", 
 "^ot:treebaseOTUId": "Tl638809"
 }, 
 "otu308684": {
-"^ot:altLabel": "Geonoma maxima", 
 "^ot:originalLabel": "Geonoma maxima clon3", 
 "^ot:ottId": 1018211, 
+"^ot:ottTaxonName": "Geonoma maxima", 
 "^ot:treebaseOTUId": "Tl638810"
 }, 
 "otu308685": {
@@ -440,9 +411,9 @@
 "^ot:treebaseOTUId": "Tl638816"
 }, 
 "otu308691": {
-"^ot:altLabel": "Calyptrogyne fortunensis", 
 "^ot:originalLabel": "Calyptrogyne fortunensis clon3", 
 "^ot:ottId": 864636, 
+"^ot:ottTaxonName": "Calyptrogyne fortunensis", 
 "^ot:treebaseOTUId": "Tl638817"
 }, 
 "otu308692": {
@@ -482,20 +453,21 @@
 "^ot:treebaseOTUId": "Tl638823"
 }, 
 "otu308698": {
-"^ot:altLabel": "Geonoma undata", 
 "^ot:originalLabel": "Geonoma undata II clon2", 
 "^ot:ottId": 343747, 
+"^ot:ottTaxonName": "Geonoma undata", 
 "^ot:treebaseOTUId": "Tl638824"
 }, 
 "otu308699": {
 "^ot:originalLabel": "Geonoma cuneata subsp. irena", 
 "^ot:ottId": 802847, 
+"^ot:ottTaxonName": "Geonoma cuneata subsp. irena", 
 "^ot:treebaseOTUId": "Tl638825"
 }, 
 "otu308700": {
-"^ot:altLabel": "Geonoma leptospadix", 
 "^ot:originalLabel": "Geonoma leptospadix clon1", 
 "^ot:ottId": 1018219, 
+"^ot:ottTaxonName": "Geonoma leptospadix", 
 "^ot:treebaseOTUId": "Tl638826"
 }, 
 "otu308701": {
@@ -505,21 +477,21 @@
 "^ot:treebaseOTUId": "Tl638827"
 }, 
 "otu308702": {
-"^ot:altLabel": "Geonoma multisecta", 
 "^ot:originalLabel": "Geonoma multisecta clon3", 
 "^ot:ottId": 343751, 
+"^ot:ottTaxonName": "Geonoma multisecta", 
 "^ot:treebaseOTUId": "Tl638828"
 }, 
 "otu308703": {
-"^ot:altLabel": "Geonoma congesta subsp. congesta", 
 "^ot:originalLabel": "Geonoma congesta subsp. congesta clon3", 
 "^ot:ottId": 802855, 
+"^ot:ottTaxonName": "Geonoma congesta subsp. congesta", 
 "^ot:treebaseOTUId": "Tl638829"
 }, 
 "otu308704": {
-"^ot:altLabel": "Geonoma longivaginata", 
 "^ot:originalLabel": "Geonoma longivaginata subsp. longivaginata", 
 "^ot:ottId": 441805, 
+"^ot:ottTaxonName": "Geonoma longivaginata", 
 "^ot:treebaseOTUId": "Tl638830"
 }, 
 "otu308705": {
@@ -535,9 +507,9 @@
 "^ot:treebaseOTUId": "Tl638832"
 }, 
 "otu308707": {
-"^ot:altLabel": "Geonoma orbignyana subsp. hoffmanniana", 
 "^ot:originalLabel": "Geonoma orbignyana subsp. hoffmanniana clon3", 
 "^ot:ottId": 228893, 
+"^ot:ottTaxonName": "Geonoma orbignyana subsp. hoffmanniana", 
 "^ot:treebaseOTUId": "Tl638833"
 }, 
 "otu308708": {
@@ -547,27 +519,27 @@
 "^ot:treebaseOTUId": "Tl638834"
 }, 
 "otu308709": {
-"^ot:altLabel": "Calyptrogyne costatifrons", 
 "^ot:originalLabel": "Calyptrogyne costatifrons clon1", 
 "^ot:ottId": 868433, 
+"^ot:ottTaxonName": "Calyptrogyne costatifrons", 
 "^ot:treebaseOTUId": "Tl638835"
 }, 
 "otu308710": {
-"^ot:altLabel": "Geonoma triandra", 
 "^ot:originalLabel": "Geonoma triandra clon3", 
 "^ot:ottId": 914678, 
+"^ot:ottTaxonName": "Geonoma triandra", 
 "^ot:treebaseOTUId": "Tl638836"
 }, 
 "otu308711": {
-"^ot:altLabel": "Geonoma ferruginea", 
 "^ot:originalLabel": "Geonoma ferruginea ", 
 "^ot:ottId": 309121, 
+"^ot:ottTaxonName": "Geonoma ferruginea", 
 "^ot:treebaseOTUId": "Tl638837"
 }, 
 "otu308712": {
-"^ot:altLabel": "Geonoma cuneata subsp. cuneata", 
 "^ot:originalLabel": "Geonoma cuneata subsp. cuneata I clon3", 
 "^ot:ottId": 802846, 
+"^ot:ottTaxonName": "Geonoma cuneata subsp. cuneata", 
 "^ot:treebaseOTUId": "Tl638838"
 }, 
 "otu308713": {
@@ -583,9 +555,9 @@
 "^ot:treebaseOTUId": "Tl638840"
 }, 
 "otu308715": {
-"^ot:altLabel": "Geonoma laxiflora", 
 "^ot:originalLabel": "Geonoma laxiflora clon6", 
 "^ot:ottId": 289945, 
+"^ot:ottTaxonName": "Geonoma laxiflora", 
 "^ot:treebaseOTUId": "Tl638841"
 }, 
 "otu308716": {
@@ -601,21 +573,21 @@
 "^ot:treebaseOTUId": "Tl638843"
 }, 
 "otu308718": {
-"^ot:altLabel": "Geonoma cuneata subsp. cuneata", 
 "^ot:originalLabel": "Geonoma cuneata subsp. cuneata I clon1", 
 "^ot:ottId": 802846, 
+"^ot:ottTaxonName": "Geonoma cuneata subsp. cuneata", 
 "^ot:treebaseOTUId": "Tl638844"
 }, 
 "otu308719": {
-"^ot:altLabel": "Geonoma pinnatifrons subsp. binervia", 
 "^ot:originalLabel": "Geonoma pinnatifrons subsp. binervia clon4", 
 "^ot:ottId": 228899, 
+"^ot:ottTaxonName": "Geonoma pinnatifrons subsp. binervia", 
 "^ot:treebaseOTUId": "Tl638845"
 }, 
 "otu308720": {
-"^ot:altLabel": "Geonoma umbraculiformis", 
 "^ot:originalLabel": "Geonoma umbraculiformis clon3", 
 "^ot:ottId": 421099, 
+"^ot:ottTaxonName": "Geonoma umbraculiformis", 
 "^ot:treebaseOTUId": "Tl638846"
 }, 
 "otu308721": {
@@ -655,9 +627,9 @@
 "^ot:treebaseOTUId": "Tl638852"
 }, 
 "otu308727": {
-"^ot:altLabel": "Geonoma pinnatifrons subsp. binervia", 
 "^ot:originalLabel": "Geonoma pinnatifrons subsp. binervia clon2", 
 "^ot:ottId": 228899, 
+"^ot:ottTaxonName": "Geonoma pinnatifrons subsp. binervia", 
 "^ot:treebaseOTUId": "Tl638853"
 }, 
 "otu308728": {
@@ -697,9 +669,9 @@
 "^ot:treebaseOTUId": "Tl638859"
 }, 
 "otu308734": {
-"^ot:altLabel": "Chelyocarpus dianeurus", 
 "^ot:originalLabel": "Chelyocarpus dianeurus clon3", 
 "^ot:ottId": 864628, 
+"^ot:ottTaxonName": "Chelyocarpus dianeurus", 
 "^ot:treebaseOTUId": "Tl638860"
 }, 
 "otu308735": {
@@ -727,9 +699,9 @@
 "^ot:treebaseOTUId": "Tl638864"
 }, 
 "otu308739": {
-"^ot:altLabel": "Chelyocarpus dianeurus", 
 "^ot:originalLabel": "Chelyocarpus dianeurus clon2", 
 "^ot:ottId": 864628, 
+"^ot:ottTaxonName": "Chelyocarpus dianeurus", 
 "^ot:treebaseOTUId": "Tl638865"
 }, 
 "otu308740": {
@@ -745,9 +717,9 @@
 "^ot:treebaseOTUId": "Tl638867"
 }, 
 "otu308742": {
-"^ot:altLabel": "Geonoma multisecta", 
 "^ot:originalLabel": "Geonoma multisecta clon2", 
 "^ot:ottId": 343751, 
+"^ot:ottTaxonName": "Geonoma multisecta", 
 "^ot:treebaseOTUId": "Tl638868"
 }, 
 "otu308743": {
@@ -757,15 +729,15 @@
 "^ot:treebaseOTUId": "Tl638869"
 }, 
 "otu308744": {
-"^ot:altLabel": "Geonoma multisecta", 
 "^ot:originalLabel": "Geonoma multisecta clon6", 
 "^ot:ottId": 343751, 
+"^ot:ottTaxonName": "Geonoma multisecta", 
 "^ot:treebaseOTUId": "Tl638870"
 }, 
 "otu308745": {
-"^ot:altLabel": "Geonoma congesta", 
 "^ot:originalLabel": "Geonoma congesta clon6", 
 "^ot:ottId": 458111, 
+"^ot:ottTaxonName": "Geonoma congesta", 
 "^ot:treebaseOTUId": "Tl638871"
 }, 
 "otu308746": {
@@ -811,9 +783,9 @@
 "^ot:treebaseOTUId": "Tl638878"
 }, 
 "otu308753": {
-"^ot:altLabel": "Geonoma congesta subsp. congesta", 
 "^ot:originalLabel": "Geonoma congesta subsp. congesta clon1", 
 "^ot:ottId": 802855, 
+"^ot:ottTaxonName": "Geonoma congesta subsp. congesta", 
 "^ot:treebaseOTUId": "Tl638879"
 }, 
 "otu308754": {
@@ -919,9 +891,9 @@
 "^ot:treebaseOTUId": "Tl638896"
 }, 
 "otu308771": {
-"^ot:altLabel": "Geonoma congesta subsp. congesta", 
 "^ot:originalLabel": "Geonoma congesta subsp. congesta clon2", 
 "^ot:ottId": 802855, 
+"^ot:ottTaxonName": "Geonoma congesta subsp. congesta", 
 "^ot:treebaseOTUId": "Tl638897"
 }, 
 "otu308772": {
@@ -949,9 +921,9 @@
 "^ot:treebaseOTUId": "Tl638901"
 }, 
 "otu308776": {
-"^ot:altLabel": "Calyptrogyne costatifrons", 
 "^ot:originalLabel": "Calyptrogyne costatifrons clon2", 
 "^ot:ottId": 868433, 
+"^ot:ottTaxonName": "Calyptrogyne costatifrons", 
 "^ot:treebaseOTUId": "Tl638902"
 }, 
 "otu308777": {
@@ -961,9 +933,9 @@
 "^ot:treebaseOTUId": "Tl638903"
 }, 
 "otu308778": {
-"^ot:altLabel": "Geonoma macrostachys", 
 "^ot:originalLabel": "Geonoma macrostachys morph atrovirus", 
 "^ot:ottId": 343738, 
+"^ot:ottTaxonName": "Geonoma macrostachys", 
 "^ot:treebaseOTUId": "Tl638904"
 }, 
 "otu308779": {
@@ -2073,9 +2045,15 @@
 "treeById": {
 "tree4221": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "3gene parsimony strict consensus+", 
 "^ot:inGroupClade": "node784257", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node784252", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node784252": {
 "edge784253": {
@@ -3530,9 +3508,15 @@
 }, 
 "tree4222": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "ORSC2 bayesian maj rule cons", 
 "^ot:inGroupClade": "node784464", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node784459", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node784459": {
 "edge784460": {
@@ -5345,9 +5329,15 @@
 }, 
 "tree4223": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "3gene bayesian maj rule consensus+", 
 "^ot:inGroupClade": "node784701", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node784685", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node784685": {
 "edge784686": {
@@ -7192,9 +7182,15 @@
 }, 
 "tree4224": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "RPB2 strict consensus", 
 "^ot:inGroupClade": "node784922", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node784915", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node784915": {
 "edge784916": {

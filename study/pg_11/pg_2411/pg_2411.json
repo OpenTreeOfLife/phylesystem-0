@@ -19,48 +19,11 @@
 "@id": "peyotl-validator", 
 "@name": "validate_ot_nexson.py", 
 "@url": "https://github.com/OpenTreeOfLife/peyotl", 
-"@version": "0.0.3a", 
+"@version": "0.0.4a", 
 "invocation": {
-"checksPerformed": [
-"MISSING_MANDATORY_KEY", 
-"MISSING_OPTIONAL_KEY", 
-"UNRECOGNIZED_KEY", 
-"MISSING_LIST_EXPECTED", 
-"DUPLICATING_SINGLETON_KEY", 
-"REFERENCED_ID_NOT_FOUND", 
-"REPEATED_ID", 
-"REPEATED_OTU", 
-"MULTIPLE_ROOT_NODES", 
-"NO_ROOT_NODE", 
-"MULTIPLE_EDGES_FOR_NODES", 
-"CYCLE_DETECTED", 
-"DISCONNECTED_GRAPH_DETECTED", 
-"INCORRECT_ROOT_NODE_LABEL", 
-"TIP_WITHOUT_OTU", 
-"TIP_WITHOUT_OTT_ID", 
-"MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
-"NON_MONOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
-"INVALID_PROPERTY_VALUE", 
-"PROPERTY_VALUE_NOT_USEFUL", 
-"UNRECOGNIZED_PROPERTY_VALUE", 
-"MULTIPLE_TREES", 
-"UNRECOGNIZED_TAG", 
-"CONFLICTING_PROPERTY_VALUES", 
-"NO_TREES", 
-"DEPRECATED_PROPERTY", 
-"UNPARSEABLE_META", 
-"UNREACHABLE_NODE", 
-"INCORRECT_VALUE_TYPE", 
-"MISSING_CRUCIAL_CONTENT"
-], 
 "commandLine": [
 "--embed", 
-"--agent-only", 
-"-e", 
-"../mig-phyelesystem-scratch/2411/validation.json", 
-"-o", 
-"../mig-phyelesystem-scratch/2411/final.json", 
-"../mig-phyelesystem-scratch/2411/v1.2.1-2411.json"
+"--agent-only"
 ], 
 "otherProperty": [
 {
@@ -76,12 +39,19 @@
 }
 ]
 }, 
+"^ot:annotationEvents": {
+"annotation": []
+}, 
+"^ot:candidateTreeForSynthesis": [], 
 "^ot:curatorName": "Chris Owen", 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S10160"
 }, 
 "^ot:focalClade": 639666, 
 "^ot:focalCladeOTTTaxonName": "Testudines", 
+"^ot:messages": {
+"message": []
+}, 
 "^ot:otusElementOrder": [
 "otus2411"
 ], 
@@ -91,6 +61,7 @@
 }, 
 "^ot:studyPublicationReference": "Thomson R., & Shaffer H. 2010. Sparse Supermatrices for Phylogenetic Inference: Taxonomy, Alignment, Rogue Taxa, and the Phylogeny of Living Turtles. Systematic Biology, 59(1): 42-58.", 
 "^ot:studyYear": 2010, 
+"^ot:tag": [], 
 "^ot:treesElementOrder": [
 "trees2411"
 ], 
@@ -885,6 +856,8 @@
 }, 
 "otu342286": {
 "^ot:originalLabel": "Homopus solus", 
+"^ot:ottId": 4948082, 
+"^ot:ottTaxonName": "Homopus solus", 
 "^ot:treebaseOTUId": "Tl242304"
 }, 
 "otu342287": {
@@ -895,6 +868,8 @@
 }, 
 "otu342288": {
 "^ot:originalLabel": "Natator depressus", 
+"^ot:ottId": 895624, 
+"^ot:ottTaxonName": "Natator depressus", 
 "^ot:treebaseOTUId": "Tl242306"
 }, 
 "otu342289": {
@@ -1169,6 +1144,8 @@
 }, 
 "otu342334": {
 "^ot:originalLabel": "Mesoclemmys hogei", 
+"^ot:ottId": 620267, 
+"^ot:ottTaxonName": "Phrynops hogei", 
 "^ot:treebaseOTUId": "Tl242352"
 }, 
 "otu342335": {
@@ -1317,6 +1294,8 @@
 }, 
 "otu342359": {
 "^ot:originalLabel": "Homopus areolatus", 
+"^ot:ottId": 4948081, 
+"^ot:ottTaxonName": "Homopus areolatus", 
 "^ot:treebaseOTUId": "Tl242377"
 }, 
 "otu342360": {
@@ -1357,6 +1336,8 @@
 }, 
 "otu342366": {
 "^ot:originalLabel": "Dipsochelys grandidieri", 
+"^ot:ottId": 302066, 
+"^ot:ottTaxonName": "Aldabrachelys grandidieri", 
 "^ot:treebaseOTUId": "Tl242384"
 }, 
 "otu342367": {
@@ -1380,9 +1361,15 @@
 "treeById": {
 "tree5086": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "Fig. 4b MP", 
 "^ot:inGroupClade": "node880586", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node880586", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node880586": {
 "edge880587": {
@@ -3831,9 +3818,15 @@
 }, 
 "tree5087": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "Fig. 4c MP", 
 "^ot:inGroupClade": "node880935", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node880935", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node880935": {
 "edge880936": {
@@ -5330,10 +5323,17 @@
 }, 
 "tree5088": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "Fig. 5", 
 "^ot:inGroupClade": "node881148", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node881148", 
-"^ot:tag": "delete me", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [
+"delete me"
+], 
 "edgeBySourceId": {
 "node881148": {
 "edge881149": {
@@ -8048,9 +8048,15 @@
 }, 
 "tree6402": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "Fig 5 supermatrix", 
 "^ot:inGroupClade": "node1113621", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node1113621", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node1113621": {
 "edge1113622": {

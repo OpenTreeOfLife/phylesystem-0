@@ -19,48 +19,11 @@
 "@id": "peyotl-validator", 
 "@name": "validate_ot_nexson.py", 
 "@url": "https://github.com/OpenTreeOfLife/peyotl", 
-"@version": "0.0.3a", 
+"@version": "0.0.4a", 
 "invocation": {
-"checksPerformed": [
-"MISSING_MANDATORY_KEY", 
-"MISSING_OPTIONAL_KEY", 
-"UNRECOGNIZED_KEY", 
-"MISSING_LIST_EXPECTED", 
-"DUPLICATING_SINGLETON_KEY", 
-"REFERENCED_ID_NOT_FOUND", 
-"REPEATED_ID", 
-"REPEATED_OTU", 
-"MULTIPLE_ROOT_NODES", 
-"NO_ROOT_NODE", 
-"MULTIPLE_EDGES_FOR_NODES", 
-"CYCLE_DETECTED", 
-"DISCONNECTED_GRAPH_DETECTED", 
-"INCORRECT_ROOT_NODE_LABEL", 
-"TIP_WITHOUT_OTU", 
-"TIP_WITHOUT_OTT_ID", 
-"MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
-"NON_MONOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
-"INVALID_PROPERTY_VALUE", 
-"PROPERTY_VALUE_NOT_USEFUL", 
-"UNRECOGNIZED_PROPERTY_VALUE", 
-"MULTIPLE_TREES", 
-"UNRECOGNIZED_TAG", 
-"CONFLICTING_PROPERTY_VALUES", 
-"NO_TREES", 
-"DEPRECATED_PROPERTY", 
-"UNPARSEABLE_META", 
-"UNREACHABLE_NODE", 
-"INCORRECT_VALUE_TYPE", 
-"MISSING_CRUCIAL_CONTENT"
-], 
 "commandLine": [
 "--embed", 
-"--agent-only", 
-"-e", 
-"../mig-phyelesystem-scratch/359/validation.json", 
-"-o", 
-"../mig-phyelesystem-scratch/359/final.json", 
-"../mig-phyelesystem-scratch/359/v1.2.1-359.json"
+"--agent-only"
 ], 
 "otherProperty": [
 {
@@ -76,12 +39,19 @@
 }
 ]
 }, 
+"^ot:annotationEvents": {
+"annotation": []
+}, 
+"^ot:candidateTreeForSynthesis": [], 
 "^ot:curatorName": "Romina Gazis", 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S961"
 }, 
 "^ot:focalClade": 866304, 
 "^ot:focalCladeOTTTaxonName": "Lophodermium", 
+"^ot:messages": {
+"message": []
+}, 
 "^ot:otusElementOrder": [
 "otus359"
 ], 
@@ -91,6 +61,7 @@
 }, 
 "^ot:studyPublicationReference": "Ortiz-Garc\u00eda, Sol, David S. Gernandt, Jeffrey K. Stone, Peter R. Johnston, Ignacio H. Chapela, Rodolfo Salas-Lizana, and Elena R. Alvarez-Buylla. \"Phylogenetics of Lophodermium from pine.\" Mycologia 95, no. 5 (2003): 846-859.", 
 "^ot:studyYear": 2003, 
+"^ot:tag": [], 
 "^ot:treesElementOrder": [
 "trees359"
 ], 
@@ -189,6 +160,8 @@
 }, 
 "otu75772": {
 "^ot:originalLabel": "Leptostroma decipiens 2", 
+"^ot:ottId": 297508, 
+"^ot:ottTaxonName": "Lophodermium baculiferum", 
 "^ot:treebaseOTUId": "Tl1517"
 }, 
 "otu75773": {
@@ -259,6 +232,8 @@
 }, 
 "otu75784": {
 "^ot:originalLabel": "Leptostroma decipiens", 
+"^ot:ottId": 297508, 
+"^ot:ottTaxonName": "Lophodermium baculiferum", 
 "^ot:treebaseOTUId": "Tl1533"
 }, 
 "otu75785": {
@@ -327,9 +302,14 @@
 "treeById": {
 "tree407": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "MP, ITS", 
 "^ot:inGroupClade": "node200134", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node200132", 
+"^ot:specifiedRoot": "", 
 "^ot:tag": [
 "MP", 
 "ITS"

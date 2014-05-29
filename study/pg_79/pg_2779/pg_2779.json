@@ -19,48 +19,11 @@
 "@id": "peyotl-validator", 
 "@name": "validate_ot_nexson.py", 
 "@url": "https://github.com/OpenTreeOfLife/peyotl", 
-"@version": "0.0.3a", 
+"@version": "0.0.4a", 
 "invocation": {
-"checksPerformed": [
-"MISSING_MANDATORY_KEY", 
-"MISSING_OPTIONAL_KEY", 
-"UNRECOGNIZED_KEY", 
-"MISSING_LIST_EXPECTED", 
-"DUPLICATING_SINGLETON_KEY", 
-"REFERENCED_ID_NOT_FOUND", 
-"REPEATED_ID", 
-"REPEATED_OTU", 
-"MULTIPLE_ROOT_NODES", 
-"NO_ROOT_NODE", 
-"MULTIPLE_EDGES_FOR_NODES", 
-"CYCLE_DETECTED", 
-"DISCONNECTED_GRAPH_DETECTED", 
-"INCORRECT_ROOT_NODE_LABEL", 
-"TIP_WITHOUT_OTU", 
-"TIP_WITHOUT_OTT_ID", 
-"MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
-"NON_MONOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
-"INVALID_PROPERTY_VALUE", 
-"PROPERTY_VALUE_NOT_USEFUL", 
-"UNRECOGNIZED_PROPERTY_VALUE", 
-"MULTIPLE_TREES", 
-"UNRECOGNIZED_TAG", 
-"CONFLICTING_PROPERTY_VALUES", 
-"NO_TREES", 
-"DEPRECATED_PROPERTY", 
-"UNPARSEABLE_META", 
-"UNREACHABLE_NODE", 
-"INCORRECT_VALUE_TYPE", 
-"MISSING_CRUCIAL_CONTENT"
-], 
 "commandLine": [
 "--embed", 
-"--agent-only", 
-"-e", 
-"../mig-phyelesystem-scratch/2779/validation.json", 
-"-o", 
-"../mig-phyelesystem-scratch/2779/final.json", 
-"../mig-phyelesystem-scratch/2779/v1.2.1-2779.json"
+"--agent-only"
 ], 
 "otherProperty": [
 {
@@ -76,9 +39,18 @@
 }
 ]
 }, 
+"^ot:annotationEvents": {
+"annotation": []
+}, 
+"^ot:candidateTreeForSynthesis": [], 
 "^ot:curatorName": "Dail Laughinghouse", 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S11918"
+}, 
+"^ot:focalClade": 844192, 
+"^ot:focalCladeOTTTaxonName": "Bacteria", 
+"^ot:messages": {
+"message": []
 }, 
 "^ot:otusElementOrder": [
 "otus2779"
@@ -86,6 +58,7 @@
 "^ot:studyId": "2779", 
 "^ot:studyPublicationReference": "Rahi P., Kapoor R., Young J.W., & Gulati A. 2011. A genetic discontinuity in root-nodulating bacteria of cultivated pea in the Indian trans-Himalayas. Molecular Ecology , .", 
 "^ot:studyYear": 2011, 
+"^ot:tag": [], 
 "^ot:treesElementOrder": [
 "trees2779"
 ], 
@@ -193,7 +166,7 @@
 "otu412923": {
 "^ot:originalLabel": "Rhizobium tropici CIAT899 U89832", 
 "^ot:ottId": 616964, 
-"^ot:ottTaxonName": "USDA 9030", 
+"^ot:ottTaxonName": "Rhizobium tropici", 
 "^ot:treebaseOTUId": "Tl634697"
 }, 
 "otu412924": {
@@ -251,7 +224,7 @@
 "otu412933": {
 "^ot:originalLabel": "Rhizobium vitis LMG8750T X67225", 
 "^ot:ottId": 263879, 
-"^ot:ottTaxonName": "Agrobacterium vitis", 
+"^ot:ottTaxonName": "Rhizobium vitis", 
 "^ot:treebaseOTUId": "Tl634707"
 }, 
 "otu412934": {
@@ -334,8 +307,6 @@
 }, 
 "otu412947": {
 "^ot:originalLabel": "Rhizobium sp. CCBAU83268 ex. Vicia faba China EF549382", 
-"^ot:ottId": 616933, 
-"^ot:ottTaxonName": "Rhizobium sp.", 
 "^ot:treebaseOTUId": "Tl634721"
 }, 
 "otu412948": {
@@ -512,8 +483,6 @@
 }, 
 "otu412977": {
 "^ot:originalLabel": "Rhizobium sp. PEVF03 ex. Vicia faba Peru FJ596027", 
-"^ot:ottId": 616933, 
-"^ot:ottTaxonName": "Rhizobium sp.", 
 "^ot:treebaseOTUId": "Tl634817"
 }, 
 "otu412978": {
@@ -590,8 +559,6 @@
 }, 
 "otu412990": {
 "^ot:originalLabel": "Rhizobium sp. MVP07 ex. Vicia sativa Spain FJ596024", 
-"^ot:ottId": 616933, 
-"^ot:ottTaxonName": "Rhizobium sp.", 
 "^ot:treebaseOTUId": "Tl634831"
 }, 
 "otu412991": {
@@ -680,8 +647,6 @@
 }, 
 "otu413005": {
 "^ot:originalLabel": "Rhizobium sp. MVP01 ex. Vicia sativa Spain FJ596022", 
-"^ot:ottId": 616933, 
-"^ot:ottTaxonName": "Rhizobium sp.", 
 "^ot:treebaseOTUId": "Tl634846"
 }, 
 "otu413006": {
@@ -704,8 +669,6 @@
 }, 
 "otu413009": {
 "^ot:originalLabel": "Rhizobium sp. PEVF10 ex. Vicia faba Peru FJ596030", 
-"^ot:ottId": 616933, 
-"^ot:ottTaxonName": "Rhizobium sp.", 
 "^ot:treebaseOTUId": "Tl634850"
 }, 
 "otu413010": {
@@ -906,8 +869,6 @@
 }, 
 "otu413043": {
 "^ot:originalLabel": "Rhizobium sp. MVP05 ex. Vicia sativa Spain FJ596023", 
-"^ot:ottId": 616933, 
-"^ot:ottTaxonName": "Rhizobium sp.", 
 "^ot:treebaseOTUId": "Tl634885"
 }, 
 "otu413044": {
@@ -1245,7 +1206,7 @@
 "otu413100": {
 "^ot:originalLabel": "Rhizobium tropici USDA9030 AJ294397 AJ294373", 
 "^ot:ottId": 616964, 
-"^ot:ottTaxonName": "USDA 9030", 
+"^ot:ottTaxonName": "Rhizobium tropici", 
 "^ot:treebaseOTUId": "Tl635348"
 }, 
 "otu413101": {
@@ -1309,15 +1270,15 @@
 "^ot:treebaseOTUId": "Tl635358"
 }, 
 "otu413111": {
-"^ot:altLabel": "Rhizobium leguminosarum", 
 "^ot:originalLabel": "Rhizobium leguminosarum VT608 ex. Vicia tetrasperma South Korea FJ715819", 
 "^ot:ottId": 43976, 
+"^ot:ottTaxonName": "Rhizobium leguminosarum", 
 "^ot:treebaseOTUId": "Tl635359"
 }, 
 "otu413112": {
-"^ot:altLabel": "Rhizobium leguminosarum", 
 "^ot:originalLabel": "Rhizobium leguminosarum CCBAU5086 ex. Astragalus melilotoides China EU753427", 
 "^ot:ottId": 43976, 
+"^ot:ottTaxonName": "Rhizobium leguminosarum", 
 "^ot:treebaseOTUId": "Tl635360"
 }, 
 "otu413113": {
@@ -1564,8 +1525,6 @@
 }, 
 "otu413154": {
 "^ot:originalLabel": "Rhizobium sp. CCBAU83268 ex. Vicia faba China EU252583", 
-"^ot:ottId": 616933, 
-"^ot:ottTaxonName": "Rhizobium sp.", 
 "^ot:treebaseOTUId": "Tl635402"
 }, 
 "otu413155": {
@@ -1576,8 +1535,6 @@
 }, 
 "otu413156": {
 "^ot:originalLabel": "Rhizobium sp. CCBAU83491 China EU252587", 
-"^ot:ottId": 616933, 
-"^ot:ottTaxonName": "Rhizobium sp.", 
 "^ot:treebaseOTUId": "Tl635404"
 }, 
 "otu413157": {
@@ -1612,8 +1569,6 @@
 }, 
 "otu413162": {
 "^ot:originalLabel": "Rhizobium sp. CCBAU83457 China EU252598", 
-"^ot:ottId": 616933, 
-"^ot:ottTaxonName": "Rhizobium sp.", 
 "^ot:treebaseOTUId": "Tl635410"
 }, 
 "otu413163": {
@@ -1630,8 +1585,6 @@
 }, 
 "otu413165": {
 "^ot:originalLabel": "Rhizobium sp. BR6001 Z95230", 
-"^ot:ottId": 616933, 
-"^ot:ottTaxonName": "Rhizobium sp.", 
 "^ot:treebaseOTUId": "Tl635413"
 }, 
 "otu413166": {
@@ -1684,8 +1637,6 @@
 }, 
 "otu413174": {
 "^ot:originalLabel": "Rhizobium sp. CCBAU83485 China EU252584", 
-"^ot:ottId": 616933, 
-"^ot:ottTaxonName": "Rhizobium sp.", 
 "^ot:treebaseOTUId": "Tl635422"
 }
 }
@@ -1703,8 +1654,14 @@
 "treeById": {
 "tree6442": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "nodC gene", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node1117764", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node1117764": {
 "edge1117765": {
@@ -2844,8 +2801,14 @@
 }, 
 "tree6443": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "atpD and recA genes", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node1117914", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node1117914": {
 "edge1117915": {
@@ -3844,8 +3807,14 @@
 }, 
 "tree6444": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "PHYLIP 1+", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node1118044", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node1118044": {
 "edge1118045": {
@@ -4773,8 +4742,14 @@
 }, 
 "tree6445": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "nifH gene", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node1118168", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node1118168": {
 "edge1118169": {

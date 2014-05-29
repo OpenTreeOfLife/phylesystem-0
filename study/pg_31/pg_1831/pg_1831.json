@@ -19,48 +19,11 @@
 "@id": "peyotl-validator", 
 "@name": "validate_ot_nexson.py", 
 "@url": "https://github.com/OpenTreeOfLife/peyotl", 
-"@version": "0.0.3a", 
+"@version": "0.0.4a", 
 "invocation": {
-"checksPerformed": [
-"MISSING_MANDATORY_KEY", 
-"MISSING_OPTIONAL_KEY", 
-"UNRECOGNIZED_KEY", 
-"MISSING_LIST_EXPECTED", 
-"DUPLICATING_SINGLETON_KEY", 
-"REFERENCED_ID_NOT_FOUND", 
-"REPEATED_ID", 
-"REPEATED_OTU", 
-"MULTIPLE_ROOT_NODES", 
-"NO_ROOT_NODE", 
-"MULTIPLE_EDGES_FOR_NODES", 
-"CYCLE_DETECTED", 
-"DISCONNECTED_GRAPH_DETECTED", 
-"INCORRECT_ROOT_NODE_LABEL", 
-"TIP_WITHOUT_OTU", 
-"TIP_WITHOUT_OTT_ID", 
-"MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
-"NON_MONOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
-"INVALID_PROPERTY_VALUE", 
-"PROPERTY_VALUE_NOT_USEFUL", 
-"UNRECOGNIZED_PROPERTY_VALUE", 
-"MULTIPLE_TREES", 
-"UNRECOGNIZED_TAG", 
-"CONFLICTING_PROPERTY_VALUES", 
-"NO_TREES", 
-"DEPRECATED_PROPERTY", 
-"UNPARSEABLE_META", 
-"UNREACHABLE_NODE", 
-"INCORRECT_VALUE_TYPE", 
-"MISSING_CRUCIAL_CONTENT"
-], 
 "commandLine": [
 "--embed", 
-"--agent-only", 
-"-e", 
-"../mig-phyelesystem-scratch/1831/validation.json", 
-"-o", 
-"../mig-phyelesystem-scratch/1831/final.json", 
-"../mig-phyelesystem-scratch/1831/v1.2.1-1831.json"
+"--agent-only"
 ], 
 "otherProperty": [
 {
@@ -76,12 +39,19 @@
 }
 ]
 }, 
+"^ot:annotationEvents": {
+"annotation": []
+}, 
+"^ot:candidateTreeForSynthesis": [], 
 "^ot:curatorName": "Chris Owen", 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S12957"
 }, 
 "^ot:focalClade": 831414, 
 "^ot:focalCladeOTTTaxonName": "Alestidae", 
+"^ot:messages": {
+"message": []
+}, 
 "^ot:otusElementOrder": [
 "otus1831"
 ], 
@@ -91,6 +61,7 @@
 }, 
 "^ot:studyPublicationReference": "Zanata A.M., & Vari R.P. 2005. The family Alestidae (Ostariophysi, Characiformes): a phylogenetic analysis of a trans-Atlantic clade. Zoological Journal of the Linnean Society, 145(1): 1-144.", 
 "^ot:studyYear": 2005, 
+"^ot:tag": [], 
 "^ot:treesElementOrder": [
 "trees1831"
 ], 
@@ -99,6 +70,8 @@
 "otuById": {
 "otu282168": {
 "^ot:originalLabel": "Astyanax parahybae", 
+"^ot:ottId": 872702, 
+"^ot:ottTaxonName": "Astyanax parahybae", 
 "^ot:treebaseOTUId": "Tl837986"
 }, 
 "otu282169": {
@@ -122,6 +95,7 @@
 "otu282172": {
 "^ot:originalLabel": "Crenuchus spilurus", 
 "^ot:ottId": 278618, 
+"^ot:ottTaxonName": "Crenuchus spilurus", 
 "^ot:treebaseOTUId": "Tl837990"
 }, 
 "otu282173": {
@@ -139,6 +113,7 @@
 "otu282175": {
 "^ot:originalLabel": "Ctenolucius beani", 
 "^ot:ottId": 3625787, 
+"^ot:ottTaxonName": "Ctenolucius beani", 
 "^ot:treebaseOTUId": "Tl837993"
 }, 
 "otu282176": {
@@ -148,9 +123,9 @@
 "^ot:treebaseOTUId": "Tl837994"
 }, 
 "otu282177": {
-"^ot:altLabel": "Micralestes elongatus", 
 "^ot:originalLabel": "Micralestes cf. elongatus", 
 "^ot:ottId": 3625732, 
+"^ot:ottTaxonName": "Micralestes elongatus", 
 "^ot:treebaseOTUId": "Tl837995"
 }, 
 "otu282178": {
@@ -206,14 +181,15 @@
 "^ot:treebaseOTUId": "Tl838004"
 }, 
 "otu282187": {
-"^ot:altLabel": "Phenacogrammus interruptus", 
 "^ot:originalLabel": "Phenacogrammus cf. interruptus", 
 "^ot:ottId": 259776, 
+"^ot:ottTaxonName": "Phenacogrammus interruptus", 
 "^ot:treebaseOTUId": "Tl838005"
 }, 
 "otu282188": {
 "^ot:originalLabel": "Brycon dentex", 
 "^ot:ottId": 3624877, 
+"^ot:ottTaxonName": "Brycon dentex", 
 "^ot:treebaseOTUId": "Tl838006"
 }, 
 "otu282189": {
@@ -225,6 +201,7 @@
 "otu282190": {
 "^ot:originalLabel": "Piaractus mesopotamicus", 
 "^ot:ottId": 24652, 
+"^ot:ottTaxonName": "Piaractus mesopotamicus", 
 "^ot:treebaseOTUId": "Tl838008"
 }, 
 "otu282191": {
@@ -236,6 +213,7 @@
 "otu282192": {
 "^ot:originalLabel": "Brycon melanopterus", 
 "^ot:ottId": 1055159, 
+"^ot:ottTaxonName": "Brycon melanopterus", 
 "^ot:treebaseOTUId": "Tl838010"
 }, 
 "otu282193": {
@@ -246,6 +224,8 @@
 }, 
 "otu282194": {
 "^ot:originalLabel": "Pseudochalceus Sp.", 
+"^ot:ottId": 503397, 
+"^ot:ottTaxonName": "Pseudochalceus", 
 "^ot:treebaseOTUId": "Tl838012"
 }, 
 "otu282195": {
@@ -257,6 +237,7 @@
 "otu282196": {
 "^ot:originalLabel": "Boulengerella lateristriga", 
 "^ot:ottId": 773580, 
+"^ot:ottTaxonName": "Boulengerella lateristriga", 
 "^ot:treebaseOTUId": "Tl838014"
 }, 
 "otu282197": {
@@ -268,11 +249,13 @@
 "otu282198": {
 "^ot:originalLabel": "Acestrorhynchus microlepis", 
 "^ot:ottId": 1035041, 
+"^ot:ottTaxonName": "Acestrorhynchus microlepis", 
 "^ot:treebaseOTUId": "Tl838016"
 }, 
 "otu282199": {
 "^ot:originalLabel": "Hemiodus unimaculatus", 
 "^ot:ottId": 3624377, 
+"^ot:ottTaxonName": "Hemiodus unimaculatus", 
 "^ot:treebaseOTUId": "Tl838017"
 }, 
 "otu282200": {
@@ -289,11 +272,14 @@
 }, 
 "otu282202": {
 "^ot:originalLabel": "Hollandichthys multifasciatus", 
+"^ot:ottId": 491066, 
+"^ot:ottTaxonName": "Hollandichthys multifasciatus", 
 "^ot:treebaseOTUId": "Tl838020"
 }, 
 "otu282203": {
 "^ot:originalLabel": "Brycon opalinus", 
 "^ot:ottId": 778219, 
+"^ot:ottTaxonName": "Brycon opalinus", 
 "^ot:treebaseOTUId": "Tl838021"
 }, 
 "otu282204": {
@@ -303,9 +289,9 @@
 "^ot:treebaseOTUId": "Tl838022"
 }, 
 "otu282205": {
-"^ot:altLabel": "Rhabdalestes septentrionalis", 
 "^ot:originalLabel": "Rhabdalestes cf. loenbergi", 
 "^ot:ottId": 704865, 
+"^ot:ottTaxonName": "Rhabdalestes septentrionalis", 
 "^ot:treebaseOTUId": "Tl838023"
 }, 
 "otu282206": {
@@ -317,6 +303,7 @@
 "otu282207": {
 "^ot:originalLabel": "Alestes liebrechtsii", 
 "^ot:ottId": 443794, 
+"^ot:ottTaxonName": "Alestes liebrechtsii", 
 "^ot:treebaseOTUId": "Tl838025"
 }, 
 "otu282208": {
@@ -346,16 +333,19 @@
 "otu282212": {
 "^ot:originalLabel": "Ladigesia roloffi", 
 "^ot:ottId": 1012134, 
+"^ot:ottTaxonName": "Ladigesia roloffi", 
 "^ot:treebaseOTUId": "Tl838030"
 }, 
 "otu282213": {
 "^ot:originalLabel": "Brycon alburnus", 
 "^ot:ottId": 3624875, 
+"^ot:ottTaxonName": "Brycon alburnus", 
 "^ot:treebaseOTUId": "Tl838031"
 }, 
 "otu282214": {
 "^ot:originalLabel": "Catoprion mento", 
 "^ot:ottId": 597343, 
+"^ot:ottTaxonName": "Catoprion mento", 
 "^ot:treebaseOTUId": "Tl838032"
 }, 
 "otu282215": {
@@ -367,22 +357,25 @@
 "otu282216": {
 "^ot:originalLabel": "Agoniates anchovia", 
 "^ot:ottId": 744026, 
+"^ot:ottTaxonName": "Agoniates anchovia", 
 "^ot:treebaseOTUId": "Tl838034"
 }, 
 "otu282217": {
 "^ot:originalLabel": "Cheirodon interruptus", 
 "^ot:ottId": 328352, 
+"^ot:ottTaxonName": "Cheirodon interruptus", 
 "^ot:treebaseOTUId": "Tl838035"
 }, 
 "otu282218": {
-"^ot:altLabel": "Brycinus opisthotaenia", 
 "^ot:originalLabel": "Brycinus aff. opisthotaenia", 
 "^ot:ottId": 660647, 
+"^ot:ottTaxonName": "Brycinus opisthotaenia", 
 "^ot:treebaseOTUId": "Tl838036"
 }, 
 "otu282219": {
 "^ot:originalLabel": "Charax pauciradiatus", 
 "^ot:ottId": 3624843, 
+"^ot:ottTaxonName": "Charax pauciradiatus", 
 "^ot:treebaseOTUId": "Tl838037"
 }, 
 "otu282220": {
@@ -394,21 +387,25 @@
 "otu282221": {
 "^ot:originalLabel": "Salminus hilarii", 
 "^ot:ottId": 180301, 
+"^ot:ottTaxonName": "Salminus hilarii", 
 "^ot:treebaseOTUId": "Tl838039"
 }, 
 "otu282222": {
 "^ot:originalLabel": "Alestopetersius leopoldianus", 
 "^ot:ottId": 3625722, 
+"^ot:ottTaxonName": "Alestopetersius leopoldianus", 
 "^ot:treebaseOTUId": "Tl838040"
 }, 
 "otu282223": {
 "^ot:originalLabel": "Tetragonopterus argenteus", 
 "^ot:ottId": 282555, 
+"^ot:ottTaxonName": "Tetragonopterus argenteus", 
 "^ot:treebaseOTUId": "Tl838041"
 }, 
 "otu282224": {
 "^ot:originalLabel": "Alestopetersius hilgendorfi", 
 "^ot:ottId": 133260, 
+"^ot:ottTaxonName": "Alestopetersius hilgendorfi", 
 "^ot:treebaseOTUId": "Tl838042"
 }, 
 "otu282225": {
@@ -444,6 +441,7 @@
 "otu282230": {
 "^ot:originalLabel": "Brycon striatulus", 
 "^ot:ottId": 573664, 
+"^ot:ottTaxonName": "Brycon striatulus", 
 "^ot:treebaseOTUId": "Tl838048"
 }, 
 "otu282231": {
@@ -459,9 +457,9 @@
 "^ot:treebaseOTUId": "Tl838050"
 }, 
 "otu282233": {
-"^ot:altLabel": "Micralestes", 
 "^ot:originalLabel": "Micralestes Sp.", 
 "^ot:ottId": 763332, 
+"^ot:ottTaxonName": "Micralestes", 
 "^ot:treebaseOTUId": "Tl838051"
 }, 
 "otu282234": {
@@ -473,11 +471,13 @@
 "otu282235": {
 "^ot:originalLabel": "Brycon guatemalensis", 
 "^ot:ottId": 573662, 
+"^ot:ottTaxonName": "Brycon guatemalensis", 
 "^ot:treebaseOTUId": "Tl838053"
 }, 
 "otu282236": {
 "^ot:originalLabel": "Serrasalmus rhombeus", 
 "^ot:ottId": 382210, 
+"^ot:ottTaxonName": "Serrasalmus rhombeus", 
 "^ot:treebaseOTUId": "Tl838054"
 }, 
 "otu282237": {
@@ -489,6 +489,7 @@
 "otu282238": {
 "^ot:originalLabel": "Bryconops alburnoides", 
 "^ot:ottId": 3624898, 
+"^ot:ottTaxonName": "Bryconops alburnoides", 
 "^ot:treebaseOTUId": "Tl838056"
 }, 
 "otu282239": {
@@ -498,14 +499,15 @@
 "^ot:treebaseOTUId": "Tl838057"
 }, 
 "otu282240": {
-"^ot:altLabel": "Hydrocynus brevis", 
 "^ot:originalLabel": "Hydrocynus cf. brevis", 
 "^ot:ottId": 912307, 
+"^ot:ottTaxonName": "Hydrocynus brevis", 
 "^ot:treebaseOTUId": "Tl838058"
 }, 
 "otu282241": {
 "^ot:originalLabel": "Brycon oligolepis", 
 "^ot:ottId": 573674, 
+"^ot:ottTaxonName": "Brycon oligolepis", 
 "^ot:treebaseOTUId": "Tl838059"
 }, 
 "otu282242": {
@@ -523,21 +525,25 @@
 "otu282244": {
 "^ot:originalLabel": "Hoplias microlepis", 
 "^ot:ottId": 944930, 
+"^ot:ottTaxonName": "Hoplias microlepis", 
 "^ot:treebaseOTUId": "Tl838062"
 }, 
 "otu282245": {
 "^ot:originalLabel": "Attonitus bounites", 
 "^ot:ottId": 3625893, 
+"^ot:ottTaxonName": "Attonitus bounites", 
 "^ot:treebaseOTUId": "Tl838063"
 }, 
 "otu282246": {
 "^ot:originalLabel": "Brycinus intermedius", 
 "^ot:ottId": 3625752, 
+"^ot:ottTaxonName": "Brycinus intermedius", 
 "^ot:treebaseOTUId": "Tl838064"
 }, 
 "otu282247": {
 "^ot:originalLabel": "Lignobrycon myersi", 
 "^ot:ottId": 679928, 
+"^ot:ottTaxonName": "Lignobrycon myersi", 
 "^ot:treebaseOTUId": "Tl838065"
 }, 
 "otu282248": {
@@ -549,6 +555,7 @@
 "otu282249": {
 "^ot:originalLabel": "Hepsetus odoe", 
 "^ot:ottId": 128234, 
+"^ot:ottTaxonName": "Hepsetus odoe", 
 "^ot:treebaseOTUId": "Tl838067"
 }, 
 "otu282250": {
@@ -560,29 +567,31 @@
 "otu282251": {
 "^ot:originalLabel": "Micralestes humilis", 
 "^ot:ottId": 927222, 
+"^ot:ottTaxonName": "Micralestes humilis", 
 "^ot:treebaseOTUId": "Tl838069"
 }, 
 "otu282252": {
-"^ot:altLabel": "Bryconaethiops", 
 "^ot:originalLabel": "Bryconaethiops Sp.", 
 "^ot:ottId": 138425, 
+"^ot:ottTaxonName": "Bryconaethiops", 
 "^ot:treebaseOTUId": "Tl838070"
 }, 
 "otu282253": {
-"^ot:altLabel": "Triportheus", 
 "^ot:originalLabel": "Triportheus Sp.", 
 "^ot:ottId": 753363, 
+"^ot:ottTaxonName": "Triportheus", 
 "^ot:treebaseOTUId": "Tl838071"
 }, 
 "otu282254": {
 "^ot:originalLabel": "Brycon coxeyi", 
 "^ot:ottId": 3624864, 
+"^ot:ottTaxonName": "Brycon coxeyi", 
 "^ot:treebaseOTUId": "Tl838072"
 }, 
 "otu282255": {
-"^ot:altLabel": "Hoplias malabaricus", 
 "^ot:originalLabel": "Hoplias cf. malabaricus", 
 "^ot:ottId": 179348, 
+"^ot:ottTaxonName": "Hoplias malabaricus", 
 "^ot:treebaseOTUId": "Tl838073"
 }, 
 "otu282256": {
@@ -592,9 +601,9 @@
 "^ot:treebaseOTUId": "Tl838074"
 }, 
 "otu282257": {
-"^ot:altLabel": "Phenacogrammus", 
 "^ot:originalLabel": "Phenacogrammus Sp.", 
 "^ot:ottId": 259778, 
+"^ot:ottTaxonName": "Phenacogrammus", 
 "^ot:treebaseOTUId": "Tl838075"
 }, 
 "otu282258": {
@@ -616,14 +625,15 @@
 "^ot:treebaseOTUId": "Tl838078"
 }, 
 "otu282261": {
-"^ot:altLabel": "Brycinus nurse", 
 "^ot:originalLabel": "Brycinus aff. nurse", 
 "^ot:ottId": 413716, 
+"^ot:ottTaxonName": "Brycinus nurse", 
 "^ot:treebaseOTUId": "Tl838079"
 }, 
 "otu282262": {
 "^ot:originalLabel": "Creagrutus magoi", 
 "^ot:ottId": 3625020, 
+"^ot:ottTaxonName": "Creagrutus magoi", 
 "^ot:treebaseOTUId": "Tl838080"
 }, 
 "otu282263": {
@@ -635,6 +645,7 @@
 "otu282264": {
 "^ot:originalLabel": "Triportheus albus", 
 "^ot:ottId": 282553, 
+"^ot:ottTaxonName": "Triportheus albus", 
 "^ot:treebaseOTUId": "Tl838082"
 }, 
 "otu282265": {
@@ -648,10 +659,13 @@
 "otu282267": {
 "^ot:originalLabel": "Brycon insignis", 
 "^ot:ottId": 219092, 
+"^ot:ottTaxonName": "Brycon insignis", 
 "^ot:treebaseOTUId": "Tl838085"
 }, 
 "otu282268": {
 "^ot:originalLabel": "Chilobrycon deuterodon", 
+"^ot:ottId": 3625813, 
+"^ot:ottTaxonName": "Chilobrycon deuterodon", 
 "^ot:treebaseOTUId": "Tl838086"
 }, 
 "otu282269": {
@@ -665,9 +679,9 @@
 "^ot:treebaseOTUId": "Tl838088"
 }, 
 "otu282271": {
-"^ot:altLabel": "Brycon meeki", 
 "^ot:originalLabel": "Brycon aff. meeki", 
 "^ot:ottId": 1071, 
+"^ot:ottTaxonName": "Brycon meeki", 
 "^ot:treebaseOTUId": "Tl838089"
 }, 
 "otu282272": {
@@ -679,6 +693,7 @@
 "otu282273": {
 "^ot:originalLabel": "Xenocharax spilurus", 
 "^ot:ottId": 133249, 
+"^ot:ottTaxonName": "Xenocharax spilurus", 
 "^ot:treebaseOTUId": "Tl838091"
 }, 
 "otu282274": {
@@ -694,6 +709,7 @@
 "otu282276": {
 "^ot:originalLabel": "Brycon chagrensis", 
 "^ot:ottId": 573677, 
+"^ot:ottTaxonName": "Brycon chagrensis", 
 "^ot:treebaseOTUId": "Tl838094"
 }, 
 "otu282277": {
@@ -715,6 +731,7 @@
 "otu282280": {
 "^ot:originalLabel": "Cyphocharax abramoides", 
 "^ot:ottId": 3624545, 
+"^ot:ottTaxonName": "Cyphocharax abramoides", 
 "^ot:treebaseOTUId": "Tl838098"
 }, 
 "otu282281": {
@@ -732,17 +749,19 @@
 "otu282283": {
 "^ot:originalLabel": "Brycon pesu", 
 "^ot:ottId": 988778, 
+"^ot:ottTaxonName": "Brycon pesu", 
 "^ot:treebaseOTUId": "Tl838101"
 }, 
 "otu282284": {
 "^ot:originalLabel": "Agoniates halecinus", 
 "^ot:ottId": 673669, 
+"^ot:ottTaxonName": "Agoniates halecinus", 
 "^ot:treebaseOTUId": "Tl838102"
 }, 
 "otu282285": {
-"^ot:altLabel": "Micralestes acutidens", 
 "^ot:originalLabel": "Micralestes cf. acutidens", 
 "^ot:ottId": 763331, 
+"^ot:ottTaxonName": "Micralestes acutidens", 
 "^ot:treebaseOTUId": "Tl838103"
 }, 
 "otu282286": {
@@ -754,6 +773,7 @@
 "otu282287": {
 "^ot:originalLabel": "Hoplerythrinus unitaeniatus", 
 "^ot:ottId": 719840, 
+"^ot:ottTaxonName": "Hoplerythrinus unitaeniatus", 
 "^ot:treebaseOTUId": "Tl838105"
 }
 }
@@ -768,10 +788,15 @@
 "treeById": {
 "tree3701": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
 "^ot:branchLengthMode": "ot:changesCount", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "Fig. 43+ MP", 
 "^ot:inGroupClade": "node704640", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node704638", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node704638": {
 "edge704639": {

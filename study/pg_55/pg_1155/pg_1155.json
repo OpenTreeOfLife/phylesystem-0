@@ -19,48 +19,11 @@
 "@id": "peyotl-validator", 
 "@name": "validate_ot_nexson.py", 
 "@url": "https://github.com/OpenTreeOfLife/peyotl", 
-"@version": "0.0.3a", 
+"@version": "0.0.4a", 
 "invocation": {
-"checksPerformed": [
-"MISSING_MANDATORY_KEY", 
-"MISSING_OPTIONAL_KEY", 
-"UNRECOGNIZED_KEY", 
-"MISSING_LIST_EXPECTED", 
-"DUPLICATING_SINGLETON_KEY", 
-"REFERENCED_ID_NOT_FOUND", 
-"REPEATED_ID", 
-"REPEATED_OTU", 
-"MULTIPLE_ROOT_NODES", 
-"NO_ROOT_NODE", 
-"MULTIPLE_EDGES_FOR_NODES", 
-"CYCLE_DETECTED", 
-"DISCONNECTED_GRAPH_DETECTED", 
-"INCORRECT_ROOT_NODE_LABEL", 
-"TIP_WITHOUT_OTU", 
-"TIP_WITHOUT_OTT_ID", 
-"MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
-"NON_MONOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
-"INVALID_PROPERTY_VALUE", 
-"PROPERTY_VALUE_NOT_USEFUL", 
-"UNRECOGNIZED_PROPERTY_VALUE", 
-"MULTIPLE_TREES", 
-"UNRECOGNIZED_TAG", 
-"CONFLICTING_PROPERTY_VALUES", 
-"NO_TREES", 
-"DEPRECATED_PROPERTY", 
-"UNPARSEABLE_META", 
-"UNREACHABLE_NODE", 
-"INCORRECT_VALUE_TYPE", 
-"MISSING_CRUCIAL_CONTENT"
-], 
 "commandLine": [
 "--embed", 
-"--agent-only", 
-"-e", 
-"../mig-phyelesystem-scratch/1155/validation.json", 
-"-o", 
-"../mig-phyelesystem-scratch/1155/final.json", 
-"../mig-phyelesystem-scratch/1155/v1.2.1-1155.json"
+"--agent-only"
 ], 
 "otherProperty": [
 {
@@ -76,9 +39,16 @@
 }
 ]
 }, 
+"^ot:annotationEvents": {
+"annotation": []
+}, 
+"^ot:candidateTreeForSynthesis": [], 
 "^ot:curatorName": "Romina Gazis", 
 "^ot:focalClade": 8364, 
 "^ot:focalCladeOTTTaxonName": "Agaricales", 
+"^ot:messages": {
+"message": []
+}, 
 "^ot:otusElementOrder": [
 "otus1155"
 ], 
@@ -89,9 +59,9 @@
 "^ot:studyPublicationReference": "Saar, Irja, Kadri P\u00f5ldmaa, and Urmas K\u00f5ljalg. \"The phylogeny and taxonomy of genera Cystoderma and Cystodermella (Agaricales) based on nuclear ITS and LSU sequences.\" Mycological Progress 8.1 (2009): 59-73.", 
 "^ot:studyYear": 2009, 
 "^ot:tag": [
-"MP", 
+"ITS", 
 "LSU", 
-"ITS"
+"MP"
 ], 
 "^ot:treesElementOrder": [
 "trees1155"
@@ -121,7 +91,9 @@
 "^ot:originalLabel": "Cystoderma clastotrichum AM946434"
 }, 
 "otu227837": {
-"^ot:originalLabel": "Cystoderma japonicum AM946435t"
+"^ot:originalLabel": "Cystoderma japonicum AM946435t", 
+"^ot:ottId": 5305313, 
+"^ot:ottTaxonName": "Cystodermella japonica"
 }, 
 "otu227838": {
 "^ot:originalLabel": "Cystoderma tuomikoskii AM946444"
@@ -170,7 +142,9 @@
 "^ot:ottTaxonName": "Galerina marginata"
 }, 
 "otu227850": {
-"^ot:originalLabel": "Hebeloma velutipes AY745703"
+"^ot:originalLabel": "Hebeloma velutipes AY745703", 
+"^ot:ottId": 117989, 
+"^ot:ottTaxonName": "Hebeloma leucosarx"
 }, 
 "otu227851": {
 "^ot:originalLabel": "Delicatula integrella AM946446", 
@@ -268,7 +242,9 @@
 "^ot:originalLabel": "Cystoderma superbum AM946503"
 }, 
 "otu227872": {
-"^ot:originalLabel": "AM946516"
+"^ot:originalLabel": "AM946516", 
+"^ot:ottId": 5305312, 
+"^ot:ottTaxonName": "Cystodermella granulosa"
 }, 
 "otu227873": {
 "^ot:originalLabel": "AM946517", 
@@ -276,13 +252,19 @@
 "^ot:ottTaxonName": "Cystodermella ambrosii"
 }, 
 "otu227874": {
-"^ot:originalLabel": "Cystodermella granulosa AM946519"
+"^ot:originalLabel": "Cystodermella granulosa AM946519", 
+"^ot:ottId": 5305312, 
+"^ot:ottTaxonName": "Cystodermella granulosa"
 }, 
 "otu227875": {
-"^ot:originalLabel": "Cystodermella granulosa AM946518"
+"^ot:originalLabel": "Cystodermella granulosa AM946518", 
+"^ot:ottId": 5305312, 
+"^ot:ottTaxonName": "Cystodermella granulosa"
 }, 
 "otu227876": {
-"^ot:originalLabel": "Cystodermella granulosa AM946520"
+"^ot:originalLabel": "Cystodermella granulosa AM946520", 
+"^ot:ottId": 5305312, 
+"^ot:ottTaxonName": "Cystodermella granulosa"
 }, 
 "otu227877": {
 "^ot:originalLabel": "Cystodermella adnatifolia AM946510", 
@@ -333,9 +315,14 @@
 "treeById": {
 "tree2337": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "MP, LSU", 
 "^ot:inGroupClade": "node553210", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node553207", 
+"^ot:specifiedRoot": "", 
 "^ot:tag": [
 "MP", 
 "LSU", 
@@ -836,9 +823,16 @@
 }, 
 "tree2338": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "MP, ITS", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node553277", 
-"^ot:tag": "delete me", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [
+"delete me"
+], 
 "edgeBySourceId": {
 "node553277": {
 "edge553278": {
@@ -949,9 +943,14 @@
 }, 
 "tree2339": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "MP, ITS", 
 "^ot:inGroupClade": "node553295", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node553292", 
+"^ot:specifiedRoot": "", 
 "^ot:tag": [
 "MP", 
 "ITS"

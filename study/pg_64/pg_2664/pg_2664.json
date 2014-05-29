@@ -19,48 +19,11 @@
 "@id": "peyotl-validator", 
 "@name": "validate_ot_nexson.py", 
 "@url": "https://github.com/OpenTreeOfLife/peyotl", 
-"@version": "0.0.3a", 
+"@version": "0.0.4a", 
 "invocation": {
-"checksPerformed": [
-"MISSING_MANDATORY_KEY", 
-"MISSING_OPTIONAL_KEY", 
-"UNRECOGNIZED_KEY", 
-"MISSING_LIST_EXPECTED", 
-"DUPLICATING_SINGLETON_KEY", 
-"REFERENCED_ID_NOT_FOUND", 
-"REPEATED_ID", 
-"REPEATED_OTU", 
-"MULTIPLE_ROOT_NODES", 
-"NO_ROOT_NODE", 
-"MULTIPLE_EDGES_FOR_NODES", 
-"CYCLE_DETECTED", 
-"DISCONNECTED_GRAPH_DETECTED", 
-"INCORRECT_ROOT_NODE_LABEL", 
-"TIP_WITHOUT_OTU", 
-"TIP_WITHOUT_OTT_ID", 
-"MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
-"NON_MONOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
-"INVALID_PROPERTY_VALUE", 
-"PROPERTY_VALUE_NOT_USEFUL", 
-"UNRECOGNIZED_PROPERTY_VALUE", 
-"MULTIPLE_TREES", 
-"UNRECOGNIZED_TAG", 
-"CONFLICTING_PROPERTY_VALUES", 
-"NO_TREES", 
-"DEPRECATED_PROPERTY", 
-"UNPARSEABLE_META", 
-"UNREACHABLE_NODE", 
-"INCORRECT_VALUE_TYPE", 
-"MISSING_CRUCIAL_CONTENT"
-], 
 "commandLine": [
 "--embed", 
-"--agent-only", 
-"-e", 
-"../mig-phyelesystem-scratch/2664/validation.json", 
-"-o", 
-"../mig-phyelesystem-scratch/2664/final.json", 
-"../mig-phyelesystem-scratch/2664/v1.2.1-2664.json"
+"--agent-only"
 ], 
 "otherProperty": [
 {
@@ -76,9 +39,16 @@
 }
 ]
 }, 
+"^ot:annotationEvents": {
+"annotation": []
+}, 
+"^ot:candidateTreeForSynthesis": [], 
 "^ot:curatorName": "Joseph Brown", 
 "^ot:focalClade": 596629, 
 "^ot:focalCladeOTTTaxonName": "Ditrysia", 
+"^ot:messages": {
+"message": []
+}, 
 "^ot:otusElementOrder": [
 "otus2664"
 ], 
@@ -86,9 +56,11 @@
 "^ot:studyPublication": {
 "@href": "http://dx.doi.org/10.1371/journal.pone.0058568"
 }, 
-"^ot:studyPublicationReference": "Regier JC, Mitter C, Zwick A, Bazinet AL, Cummings MP, et al. (2013) A large-scale, higher-level, molecular phylogenetic study of the insect order Lepidoptera (moths and butterflies). PLoS ONE 8(3): e58568", 
+"^ot:studyPublicationReference": "Regier, JC, Mitter C, Zwick A, Bazinet AL, Cummings MP, et al. (2013) A large-scale, higher-level, molecular phylogenetic study of the insect order Lepidoptera (moths and butterflies). PLoS ONE 8 (3): e58568", 
 "^ot:studyYear": 2013, 
-"^ot:tag": "ingroup added;", 
+"^ot:tag": [
+"ingroup added;"
+], 
 "^ot:treesElementOrder": [
 "trees2664"
 ], 
@@ -131,7 +103,9 @@
 "^ot:ottTaxonName": "Limnephilini"
 }, 
 "otu398293": {
-"^ot:originalLabel": "Brachycentrus nigrisoma"
+"^ot:originalLabel": "Brachycentrus nigrisoma", 
+"^ot:ottId": 313711, 
+"^ot:ottTaxonName": "Brachycentrus nigrosoma"
 }, 
 "otu398294": {
 "^ot:originalLabel": "Agathiphaga queenslandensis", 
@@ -435,7 +409,9 @@
 "^ot:ottTaxonName": "Thyridopteryx ephemeraeformis"
 }, 
 "otu398355": {
-"^ot:originalLabel": "Kearfottia albifasciella"
+"^ot:originalLabel": "Kearfottia albifasciella", 
+"^ot:ottId": 575835, 
+"^ot:ottTaxonName": "Kearfottia albifasciella"
 }, 
 "otu398356": {
 "^ot:originalLabel": "Narycia duplicella", 
@@ -448,7 +424,9 @@
 "^ot:ottTaxonName": "Scoriodyta suttonensis"
 }, 
 "otu398358": {
-"^ot:originalLabel": "Pseudarbela sp."
+"^ot:originalLabel": "Pseudarbela sp.", 
+"^ot:ottId": 114143, 
+"^ot:ottTaxonName": "Pseudarbela"
 }, 
 "otu398359": {
 "^ot:originalLabel": "Arrhenophanes sp.", 
@@ -491,7 +469,9 @@
 "^ot:ottTaxonName": "Myrmecozela ochraceella"
 }, 
 "otu398367": {
-"^ot:originalLabel": "Amydria tenuivalva"
+"^ot:originalLabel": "Amydria tenuivalva", 
+"^ot:ottId": 46987, 
+"^ot:ottTaxonName": "Amydria sp. Ayte"
 }, 
 "otu398368": {
 "^ot:originalLabel": "Cephimallota chasanica", 
@@ -499,7 +479,9 @@
 "^ot:ottTaxonName": "Cephimallota chasanica"
 }, 
 "otu398369": {
-"^ot:originalLabel": "Amydria brevipennella"
+"^ot:originalLabel": "Amydria brevipennella", 
+"^ot:ottId": 732012, 
+"^ot:ottTaxonName": "Amydria brevipennella"
 }, 
 "otu398370": {
 "^ot:originalLabel": "Exoncotis umbraticella", 
@@ -677,7 +659,9 @@
 "^ot:ottTaxonName": "Eucalantica costaricae"
 }, 
 "otu398405": {
-"^ot:originalLabel": "Yponomeuta multipunctella"
+"^ot:originalLabel": "Yponomeuta multipunctella", 
+"^ot:ottId": 483577, 
+"^ot:ottTaxonName": "Yponomeuta multipunctellus"
 }, 
 "otu398406": {
 "^ot:originalLabel": "Cedestis subfasciella", 
@@ -938,10 +922,14 @@
 "^ot:ottTaxonName": "Grapholita delineana"
 }, 
 "otu398458": {
-"^ot:originalLabel": "Phricanthes asperana"
+"^ot:originalLabel": "Phricanthes asperana", 
+"^ot:ottId": 687195, 
+"^ot:ottTaxonName": "Phricanthes asperana"
 }, 
 "otu398459": {
-"^ot:originalLabel": "Anacrusis piriferana"
+"^ot:originalLabel": "Anacrusis piriferana", 
+"^ot:ottId": 146771, 
+"^ot:ottTaxonName": "Anacrusis piriferana"
 }, 
 "otu398460": {
 "^ot:originalLabel": "Platynota ideausalis", 
@@ -1069,7 +1057,9 @@
 "^ot:ottTaxonName": "Megalopyge contigua"
 }, 
 "otu398485": {
-"^ot:originalLabel": "Lagoa crispata"
+"^ot:originalLabel": "Lagoa crispata", 
+"^ot:ottId": 3041122, 
+"^ot:ottTaxonName": "Megalopyge crispata"
 }, 
 "otu398486": {
 "^ot:originalLabel": "Megalopyge lapena", 
@@ -1457,7 +1447,9 @@
 "^ot:ottTaxonName": "Scythris immaculatella"
 }, 
 "otu398563": {
-"^ot:originalLabel": "Stathmopodidae sp."
+"^ot:originalLabel": "Stathmopodidae sp.", 
+"^ot:ottId": 1064952, 
+"^ot:ottTaxonName": "Stathmopodinae"
 }, 
 "otu398564": {
 "^ot:originalLabel": "Stathmopoda melanochra", 
@@ -1555,7 +1547,9 @@
 "^ot:ottTaxonName": "Caryocolum pullatella"
 }, 
 "otu398583": {
-"^ot:originalLabel": "Pseudurgis sp."
+"^ot:originalLabel": "Pseudurgis sp.", 
+"^ot:ottId": 688312, 
+"^ot:ottTaxonName": "Pseudurgis"
 }, 
 "otu398584": {
 "^ot:originalLabel": "Striglina suzukii", 
@@ -1563,10 +1557,14 @@
 "^ot:ottTaxonName": "Striglina suzukii"
 }, 
 "otu398585": {
-"^ot:originalLabel": "Rhodoneura terminalis"
+"^ot:originalLabel": "Rhodoneura terminalis", 
+"^ot:ottId": 744074, 
+"^ot:ottTaxonName": "Rhodoneura terminalis"
 }, 
 "otu398586": {
-"^ot:originalLabel": "Microsca paullula"
+"^ot:originalLabel": "Microsca paullula", 
+"^ot:ottId": 412575, 
+"^ot:ottTaxonName": "Microsca"
 }, 
 "otu398587": {
 "^ot:originalLabel": "Glanychus insolitus", 
@@ -1574,7 +1572,9 @@
 "^ot:ottTaxonName": "Glanycus insolitus"
 }, 
 "otu398588": {
-"^ot:originalLabel": "Pentina flammans"
+"^ot:originalLabel": "Pentina flammans", 
+"^ot:ottId": 744076, 
+"^ot:ottTaxonName": "Pentina flammans"
 }, 
 "otu398589": {
 "^ot:originalLabel": "Dysodia sp.", 
@@ -2370,7 +2370,9 @@
 "^ot:ottTaxonName": "Jana palliatella"
 }, 
 "otu398748": {
-"^ot:originalLabel": "Apha aequalis"
+"^ot:originalLabel": "Apha aequalis", 
+"^ot:ottId": 464261, 
+"^ot:ottTaxonName": "Apha aequalis"
 }, 
 "otu398749": {
 "^ot:originalLabel": "Cotana serranotata", 
@@ -2485,11 +2487,17 @@
 "treeById": {
 "tree6201": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
 "^ot:branchLengthMode": "ot:substitutionCount", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "ML nt123_degen1 dataset", 
 "^ot:inGroupClade": "node1068994", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node1068866", 
-"^ot:tag": "Choose me", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [
+"Choose me"
+], 
 "edgeBySourceId": {
 "node1068866": {
 "edge1068867": {
@@ -10214,10 +10222,15 @@
 }, 
 "tree6202": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
 "^ot:branchLengthMode": "ot:substitutionCount", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "ML nt123 dataset", 
 "^ot:inGroupClade": "node1069959", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node1069831", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node1069831": {
 "edge1069832": {

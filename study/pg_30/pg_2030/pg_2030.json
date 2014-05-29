@@ -19,48 +19,11 @@
 "@id": "peyotl-validator", 
 "@name": "validate_ot_nexson.py", 
 "@url": "https://github.com/OpenTreeOfLife/peyotl", 
-"@version": "0.0.3a", 
+"@version": "0.0.4a", 
 "invocation": {
-"checksPerformed": [
-"MISSING_MANDATORY_KEY", 
-"MISSING_OPTIONAL_KEY", 
-"UNRECOGNIZED_KEY", 
-"MISSING_LIST_EXPECTED", 
-"DUPLICATING_SINGLETON_KEY", 
-"REFERENCED_ID_NOT_FOUND", 
-"REPEATED_ID", 
-"REPEATED_OTU", 
-"MULTIPLE_ROOT_NODES", 
-"NO_ROOT_NODE", 
-"MULTIPLE_EDGES_FOR_NODES", 
-"CYCLE_DETECTED", 
-"DISCONNECTED_GRAPH_DETECTED", 
-"INCORRECT_ROOT_NODE_LABEL", 
-"TIP_WITHOUT_OTU", 
-"TIP_WITHOUT_OTT_ID", 
-"MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
-"NON_MONOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
-"INVALID_PROPERTY_VALUE", 
-"PROPERTY_VALUE_NOT_USEFUL", 
-"UNRECOGNIZED_PROPERTY_VALUE", 
-"MULTIPLE_TREES", 
-"UNRECOGNIZED_TAG", 
-"CONFLICTING_PROPERTY_VALUES", 
-"NO_TREES", 
-"DEPRECATED_PROPERTY", 
-"UNPARSEABLE_META", 
-"UNREACHABLE_NODE", 
-"INCORRECT_VALUE_TYPE", 
-"MISSING_CRUCIAL_CONTENT"
-], 
 "commandLine": [
 "--embed", 
-"--agent-only", 
-"-e", 
-"../mig-phyelesystem-scratch/2030/validation.json", 
-"-o", 
-"../mig-phyelesystem-scratch/2030/final.json", 
-"../mig-phyelesystem-scratch/2030/v1.2.1-2030.json"
+"--agent-only"
 ], 
 "otherProperty": [
 {
@@ -76,12 +39,19 @@
 }
 ]
 }, 
+"^ot:annotationEvents": {
+"annotation": []
+}, 
+"^ot:candidateTreeForSynthesis": [], 
 "^ot:curatorName": "bryan drew", 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S1066"
 }, 
 "^ot:focalClade": 913162, 
 "^ot:focalCladeOTTTaxonName": "Gesneriaceae", 
+"^ot:messages": {
+"message": []
+}, 
 "^ot:otusElementOrder": [
 "otus2030"
 ], 
@@ -91,6 +61,7 @@
 }, 
 "^ot:studyPublicationReference": "Wang, C. N., M\u00f6ller, M., & Cronk, Q. C. (2004). Phylogenetic position of Titanotrichum oldhamii (Gesneriaceae) inferred from four different gene regions. Systematic Botany, 29(2), 407-418.", 
 "^ot:studyYear": 2003, 
+"^ot:tag": [], 
 "^ot:treesElementOrder": [
 "trees2030"
 ], 
@@ -333,6 +304,8 @@
 }, 
 "otu306731": {
 "^ot:originalLabel": "Titanotrichum oldhamii Gcyc1", 
+"^ot:ottId": 520383, 
+"^ot:ottTaxonName": "Titanotrichum oldhamii", 
 "^ot:treebaseOTUId": "Tl17600"
 }, 
 "otu306732": {
@@ -415,6 +388,8 @@
 }, 
 "otu306745": {
 "^ot:originalLabel": "Titanotrichum oldhamii", 
+"^ot:ottId": 520383, 
+"^ot:ottTaxonName": "Titanotrichum oldhamii", 
 "^ot:treebaseOTUId": "Tl2363"
 }, 
 "otu306746": {
@@ -431,6 +406,8 @@
 }, 
 "otu306748": {
 "^ot:originalLabel": "Rhynchoglossum hologlossum", 
+"^ot:ottId": 548529, 
+"^ot:ottTaxonName": "Rhynchoglossum obliquum", 
 "^ot:treebaseOTUId": "Tl2366"
 }, 
 "otu306749": {
@@ -471,6 +448,8 @@
 }, 
 "otu306755": {
 "^ot:originalLabel": "Peltanthera floribunda", 
+"^ot:ottId": 628262, 
+"^ot:ottTaxonName": "Peltanthera floribunda", 
 "^ot:treebaseOTUId": "Tl2377"
 }
 }
@@ -489,9 +468,15 @@
 "treeById": {
 "tree4183": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "CYC ML", 
 "^ot:inGroupClade": "node777455", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node777431", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node777431": {
 "edge777432": {
@@ -980,9 +965,15 @@
 }, 
 "tree4184": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "TITACYC MP", 
 "^ot:inGroupClade": "node777527", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node777500", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node777500": {
 "edge777501": {
@@ -1485,9 +1476,15 @@
 }, 
 "tree4185": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "combined ML", 
 "^ot:inGroupClade": "node777586", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node777571", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node777571": {
 "edge777572": {
@@ -1871,9 +1868,15 @@
 }, 
 "tree4186": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "3gene combined", 
 "^ot:inGroupClade": "node777640", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node777625", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node777625": {
 "edge777626": {
@@ -2264,9 +2267,15 @@
 }, 
 "tree4187": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "TITACYC PROT", 
 "^ot:inGroupClade": "node777712", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node777680", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node777680": {
 "edge777681": {

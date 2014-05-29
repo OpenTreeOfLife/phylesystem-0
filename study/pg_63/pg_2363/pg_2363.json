@@ -19,48 +19,11 @@
 "@id": "peyotl-validator", 
 "@name": "validate_ot_nexson.py", 
 "@url": "https://github.com/OpenTreeOfLife/peyotl", 
-"@version": "0.0.3a", 
+"@version": "0.0.4a", 
 "invocation": {
-"checksPerformed": [
-"MISSING_MANDATORY_KEY", 
-"MISSING_OPTIONAL_KEY", 
-"UNRECOGNIZED_KEY", 
-"MISSING_LIST_EXPECTED", 
-"DUPLICATING_SINGLETON_KEY", 
-"REFERENCED_ID_NOT_FOUND", 
-"REPEATED_ID", 
-"REPEATED_OTU", 
-"MULTIPLE_ROOT_NODES", 
-"NO_ROOT_NODE", 
-"MULTIPLE_EDGES_FOR_NODES", 
-"CYCLE_DETECTED", 
-"DISCONNECTED_GRAPH_DETECTED", 
-"INCORRECT_ROOT_NODE_LABEL", 
-"TIP_WITHOUT_OTU", 
-"TIP_WITHOUT_OTT_ID", 
-"MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
-"NON_MONOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
-"INVALID_PROPERTY_VALUE", 
-"PROPERTY_VALUE_NOT_USEFUL", 
-"UNRECOGNIZED_PROPERTY_VALUE", 
-"MULTIPLE_TREES", 
-"UNRECOGNIZED_TAG", 
-"CONFLICTING_PROPERTY_VALUES", 
-"NO_TREES", 
-"DEPRECATED_PROPERTY", 
-"UNPARSEABLE_META", 
-"UNREACHABLE_NODE", 
-"INCORRECT_VALUE_TYPE", 
-"MISSING_CRUCIAL_CONTENT"
-], 
 "commandLine": [
 "--embed", 
-"--agent-only", 
-"-e", 
-"../mig-phyelesystem-scratch/2363/validation.json", 
-"-o", 
-"../mig-phyelesystem-scratch/2363/final.json", 
-"../mig-phyelesystem-scratch/2363/v1.2.1-2363.json"
+"--agent-only"
 ], 
 "otherProperty": [
 {
@@ -76,9 +39,16 @@
 }
 ]
 }, 
+"^ot:annotationEvents": {
+"annotation": []
+}, 
+"^ot:candidateTreeForSynthesis": [], 
 "^ot:curatorName": "Romina Gazis", 
 "^ot:focalClade": 489298, 
 "^ot:focalCladeOTTTaxonName": "Inocybe", 
+"^ot:messages": {
+"message": []
+}, 
 "^ot:otusElementOrder": [
 "otus2363"
 ], 
@@ -86,8 +56,8 @@
 "^ot:studyPublicationReference": "Kropp, Matheny & Hutchison (2013) Inocybe section Rimosae in Utah: phylogenetic affinities and new species. Mycologia 105: 728-747.", 
 "^ot:studyYear": 2013, 
 "^ot:tag": [
-"ML", 
 "LSU", 
+"ML", 
 "RPB2"
 ], 
 "^ot:treesElementOrder": [
@@ -236,13 +206,19 @@
 "^ot:ottTaxonName": "Inocybe adaequata"
 }, 
 "otu333320": {
-"^ot:originalLabel": "juranassH PBM2951"
+"^ot:originalLabel": "juranassH PBM2951", 
+"^ot:ottId": 963173, 
+"^ot:ottTaxonName": "Inocybe adaequata"
 }, 
 "otu333321": {
-"^ot:originalLabel": "rhodFJ904175 FR"
+"^ot:originalLabel": "rhodFJ904175 FR", 
+"^ot:ottId": 963173, 
+"^ot:ottTaxonName": "Inocybe adaequata"
 }, 
 "otu333322": {
-"^ot:originalLabel": "rhodFJ904176"
+"^ot:originalLabel": "rhodFJ904176", 
+"^ot:ottId": 963173, 
+"^ot:ottTaxonName": "Inocybe adaequata"
 }, 
 "otu333323": {
 "^ot:originalLabel": "erubJV9070F", 
@@ -648,7 +624,9 @@
 "^ot:ottTaxonName": "Inocybe misakaensis"
 }, 
 "otu333412": {
-"^ot:originalLabel": "In juranaPBM2951 TN"
+"^ot:originalLabel": "In juranaPBM2951 TN", 
+"^ot:ottId": 963173, 
+"^ot:ottTaxonName": "Inocybe adaequata"
 }, 
 "otu333413": {
 "^ot:originalLabel": "In adaequata JV16501F", 
@@ -897,19 +875,29 @@
 "^ot:ottTaxonName": "Inocybe renispora"
 }, 
 "otu333473": {
-"^ot:originalLabel": "Ps umbrinella FJ904165"
+"^ot:originalLabel": "Ps umbrinella FJ904165", 
+"^ot:ottId": 745153, 
+"^ot:ottTaxonName": "Inocybe rimosa"
 }, 
 "otu333474": {
-"^ot:originalLabel": "Ps umbrinella FJ904166"
+"^ot:originalLabel": "Ps umbrinella FJ904166", 
+"^ot:ottId": 745153, 
+"^ot:ottTaxonName": "Inocybe rimosa"
 }, 
 "otu333475": {
-"^ot:originalLabel": "Ps umbrinella FJ904163"
+"^ot:originalLabel": "Ps umbrinella FJ904163", 
+"^ot:ottId": 745153, 
+"^ot:ottTaxonName": "Inocybe rimosa"
 }, 
 "otu333476": {
-"^ot:originalLabel": "Ps umbrinella FJ904162"
+"^ot:originalLabel": "Ps umbrinella FJ904162", 
+"^ot:ottId": 745153, 
+"^ot:ottTaxonName": "Inocybe rimosa"
 }, 
 "otu333477": {
-"^ot:originalLabel": "Ps umbrinella PBM3024 PA"
+"^ot:originalLabel": "Ps umbrinella PBM3024 PA", 
+"^ot:ottId": 745153, 
+"^ot:ottTaxonName": "Inocybe rimosa"
 }, 
 "otu333478": {
 "^ot:originalLabel": "Ps rimosa PBM2958 TN", 
@@ -1248,7 +1236,9 @@
 "^ot:originalLabel": "Ps sp EU522733 ONT"
 }, 
 "otu333554": {
-"^ot:originalLabel": "Ps xanthocephala FJ904130"
+"^ot:originalLabel": "Ps xanthocephala FJ904130", 
+"^ot:ottId": 723775, 
+"^ot:ottTaxonName": "Inocybe flavella"
 }, 
 "otu333555": {
 "^ot:originalLabel": "Ps flavella AM882776 SWE", 
@@ -1444,7 +1434,9 @@
 "^ot:originalLabel": "spTR49 05 PNG"
 }, 
 "otu333602": {
-"^ot:originalLabel": "umbrinellaPBM3024PA"
+"^ot:originalLabel": "umbrinellaPBM3024PA", 
+"^ot:ottId": 745153, 
+"^ot:ottTaxonName": "Inocybe rimosa"
 }, 
 "otu333603": {
 "^ot:originalLabel": "renisporaaffPBM2195"
@@ -1477,9 +1469,14 @@
 "treeById": {
 "tree4968": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "ML, LSU", 
 "^ot:inGroupClade": "node858419", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node858416", 
+"^ot:specifiedRoot": "", 
 "^ot:tag": [
 "ML", 
 "LSU"
@@ -3384,9 +3381,16 @@
 }, 
 "tree4969": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "ML, RPB2", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node858653", 
-"^ot:tag": "delete me", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [
+"delete me"
+], 
 "edgeBySourceId": {
 "node858653": {
 "edge858654": {
@@ -4183,9 +4187,14 @@
 }, 
 "tree4970": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "ML, LSU + RPB2", 
 "^ot:inGroupClade": "node858754", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node858752", 
+"^ot:specifiedRoot": "", 
 "^ot:tag": [
 "ML", 
 "LSU", 
@@ -6011,8 +6020,14 @@
 }, 
 "tree4971": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "ML, RPB2", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node858979", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node858979": {
 "edge858980": {
@@ -6585,8 +6600,13 @@
 }, 
 "tree5962": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "ML, RPB2 (rooted)", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node1011615", 
+"^ot:specifiedRoot": "", 
 "^ot:tag": [
 "ML", 
 "RPB2"
@@ -7387,9 +7407,14 @@
 }, 
 "tree5963": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "ML, LSU (rooted)", 
 "^ot:inGroupClade": "node1011715", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node1011714", 
+"^ot:specifiedRoot": "", 
 "^ot:tag": [
 "ML", 
 "ITS", 

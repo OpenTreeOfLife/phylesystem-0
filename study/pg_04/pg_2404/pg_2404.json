@@ -19,48 +19,11 @@
 "@id": "peyotl-validator", 
 "@name": "validate_ot_nexson.py", 
 "@url": "https://github.com/OpenTreeOfLife/peyotl", 
-"@version": "0.0.3a", 
+"@version": "0.0.4a", 
 "invocation": {
-"checksPerformed": [
-"MISSING_MANDATORY_KEY", 
-"MISSING_OPTIONAL_KEY", 
-"UNRECOGNIZED_KEY", 
-"MISSING_LIST_EXPECTED", 
-"DUPLICATING_SINGLETON_KEY", 
-"REFERENCED_ID_NOT_FOUND", 
-"REPEATED_ID", 
-"REPEATED_OTU", 
-"MULTIPLE_ROOT_NODES", 
-"NO_ROOT_NODE", 
-"MULTIPLE_EDGES_FOR_NODES", 
-"CYCLE_DETECTED", 
-"DISCONNECTED_GRAPH_DETECTED", 
-"INCORRECT_ROOT_NODE_LABEL", 
-"TIP_WITHOUT_OTU", 
-"TIP_WITHOUT_OTT_ID", 
-"MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
-"NON_MONOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
-"INVALID_PROPERTY_VALUE", 
-"PROPERTY_VALUE_NOT_USEFUL", 
-"UNRECOGNIZED_PROPERTY_VALUE", 
-"MULTIPLE_TREES", 
-"UNRECOGNIZED_TAG", 
-"CONFLICTING_PROPERTY_VALUES", 
-"NO_TREES", 
-"DEPRECATED_PROPERTY", 
-"UNPARSEABLE_META", 
-"UNREACHABLE_NODE", 
-"INCORRECT_VALUE_TYPE", 
-"MISSING_CRUCIAL_CONTENT"
-], 
 "commandLine": [
 "--embed", 
-"--agent-only", 
-"-e", 
-"../mig-phyelesystem-scratch/2404/validation.json", 
-"-o", 
-"../mig-phyelesystem-scratch/2404/final.json", 
-"../mig-phyelesystem-scratch/2404/v1.2.1-2404.json"
+"--agent-only"
 ], 
 "otherProperty": [
 {
@@ -76,12 +39,19 @@
 }
 ]
 }, 
+"^ot:annotationEvents": {
+"annotation": []
+}, 
+"^ot:candidateTreeForSynthesis": [], 
 "^ot:curatorName": "Chris Owen", 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S11939"
 }, 
 "^ot:focalClade": 1041547, 
 "^ot:focalCladeOTTTaxonName": "Passeriformes", 
+"^ot:messages": {
+"message": []
+}, 
 "^ot:otusElementOrder": [
 "otus2404"
 ], 
@@ -91,6 +61,7 @@
 }, 
 "^ot:studyPublicationReference": "Barker F., Cibois A., Schikler P., Feinstein J., and Cracraft J. 2004. Phylogeny and diversification of the largest avian radiation. Proceedings of the National Academy of Sciences of the United States of America 101 (30): 11040-11045.", 
 "^ot:studyYear": 2004, 
+"^ot:tag": [], 
 "^ot:treesElementOrder": [
 "trees2404"
 ], 
@@ -123,6 +94,8 @@
 }, 
 "otu341552": {
 "^ot:originalLabel": "Parula americana", 
+"^ot:ottId": 3597189, 
+"^ot:ottTaxonName": "Setophaga americana", 
 "^ot:treebaseOTUId": "Tl633351"
 }, 
 "otu341553": {
@@ -235,6 +208,8 @@
 }, 
 "otu341571": {
 "^ot:originalLabel": "Hirundo pyrrhonota", 
+"^ot:ottId": 302798, 
+"^ot:ottTaxonName": "Petrochelidon pyrrhonota", 
 "^ot:treebaseOTUId": "Tl633370"
 }, 
 "otu341572": {
@@ -589,6 +564,8 @@
 }, 
 "otu341631": {
 "^ot:originalLabel": "Irena cyanogaster", 
+"^ot:ottId": 176452, 
+"^ot:ottTaxonName": "Irena cyanogastra", 
 "^ot:treebaseOTUId": "Tl633430"
 }, 
 "otu341632": {
@@ -599,6 +576,8 @@
 }, 
 "otu341633": {
 "^ot:originalLabel": "Cormobates leucophaea", 
+"^ot:ottId": 884906, 
+"^ot:ottTaxonName": "Cormobates leucophaeus", 
 "^ot:treebaseOTUId": "Tl633432"
 }, 
 "otu341634": {
@@ -974,10 +953,15 @@
 "treeById": {
 "tree5068": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
 "^ot:branchLengthMode": "ot:substitutionCount", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "Fig. 1-BI", 
 "^ot:inGroupClade": "node878384", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node878380", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node878380": {
 "edge878381": {
@@ -3302,9 +3286,15 @@
 }, 
 "tree6388": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "ML", 
 "^ot:inGroupClade": "node1112318", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node1112316", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node1112316": {
 "edge1112317": {

@@ -19,48 +19,11 @@
 "@id": "peyotl-validator", 
 "@name": "validate_ot_nexson.py", 
 "@url": "https://github.com/OpenTreeOfLife/peyotl", 
-"@version": "0.0.3a", 
+"@version": "0.0.4a", 
 "invocation": {
-"checksPerformed": [
-"MISSING_MANDATORY_KEY", 
-"MISSING_OPTIONAL_KEY", 
-"UNRECOGNIZED_KEY", 
-"MISSING_LIST_EXPECTED", 
-"DUPLICATING_SINGLETON_KEY", 
-"REFERENCED_ID_NOT_FOUND", 
-"REPEATED_ID", 
-"REPEATED_OTU", 
-"MULTIPLE_ROOT_NODES", 
-"NO_ROOT_NODE", 
-"MULTIPLE_EDGES_FOR_NODES", 
-"CYCLE_DETECTED", 
-"DISCONNECTED_GRAPH_DETECTED", 
-"INCORRECT_ROOT_NODE_LABEL", 
-"TIP_WITHOUT_OTU", 
-"TIP_WITHOUT_OTT_ID", 
-"MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
-"NON_MONOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
-"INVALID_PROPERTY_VALUE", 
-"PROPERTY_VALUE_NOT_USEFUL", 
-"UNRECOGNIZED_PROPERTY_VALUE", 
-"MULTIPLE_TREES", 
-"UNRECOGNIZED_TAG", 
-"CONFLICTING_PROPERTY_VALUES", 
-"NO_TREES", 
-"DEPRECATED_PROPERTY", 
-"UNPARSEABLE_META", 
-"UNREACHABLE_NODE", 
-"INCORRECT_VALUE_TYPE", 
-"MISSING_CRUCIAL_CONTENT"
-], 
 "commandLine": [
 "--embed", 
-"--agent-only", 
-"-e", 
-"../mig-phyelesystem-scratch/529/validation.json", 
-"-o", 
-"../mig-phyelesystem-scratch/529/final.json", 
-"../mig-phyelesystem-scratch/529/v1.2.1-529.json"
+"--agent-only"
 ], 
 "otherProperty": [
 {
@@ -76,12 +39,17 @@
 }
 ]
 }, 
+"^ot:annotationEvents": {
+"annotation": []
+}, 
+"^ot:candidateTreeForSynthesis": [], 
 "^ot:curatorName": "Romina Gazis", 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S11183"
 }, 
-"^ot:focalClade": 971645, 
-"^ot:focalCladeOTTTaxonName": "Periglandula", 
+"^ot:messages": {
+"message": []
+}, 
 "^ot:otusElementOrder": [
 "otus529"
 ], 
@@ -91,6 +59,7 @@
 }, 
 "^ot:studyPublicationReference": "Steiner U., Leibner S., Schardl C.L., Leuchtmann A., & Leistner E. 2011. Periglandula, a new fungal genus within the family Clavicipitaceae and its association with Convolvulaceae. Mycologia, 103(5): 1133-1145.", 
 "^ot:studyYear": 2011, 
+"^ot:tag": [], 
 "^ot:treesElementOrder": [
 "trees529"
 ], 
@@ -135,14 +104,14 @@
 }, 
 "otu167855": {
 "^ot:originalLabel": "Balansia epichloe EF468851", 
-"^ot:ottId": 3700557, 
-"^ot:ottTaxonName": "Balansia epichlo\u00eb", 
+"^ot:ottId": 4059003, 
+"^ot:ottTaxonName": "Balansia epichloe", 
 "^ot:treebaseOTUId": "Tl462560"
 }, 
 "otu167856": {
 "^ot:originalLabel": "Lecanicillium lecanii AY555913", 
 "^ot:ottId": 212411, 
-"^ot:ottTaxonName": "Cordyceps confragosa", 
+"^ot:ottTaxonName": "Lecanicillium lecanii", 
 "^ot:treebaseOTUId": "Tl462561"
 }, 
 "otu167857": {
@@ -153,8 +122,6 @@
 }, 
 "otu167858": {
 "^ot:originalLabel": "Periglandula ipomoeae IasaredF01 HQ702612", 
-"^ot:ottId": 747979, 
-"^ot:ottTaxonName": "Periglandula ipomoeae", 
 "^ot:treebaseOTUId": "Tl462563"
 }, 
 "otu167859": {
@@ -243,8 +210,6 @@
 }, 
 "otu167873": {
 "^ot:originalLabel": "Verticillium catenulatum AY555910", 
-"^ot:ottId": 735031, 
-"^ot:ottTaxonName": "Verticillium catenulatum", 
 "^ot:treebaseOTUId": "Tl462578"
 }, 
 "otu167874": {
@@ -267,20 +232,16 @@
 }, 
 "otu167877": {
 "^ot:originalLabel": "Balansia pilulaeformis DQ522365", 
-"^ot:ottId": 306621, 
-"^ot:ottTaxonName": "Balansia pilulaeformis", 
+"^ot:ottId": 4058948, 
+"^ot:ottTaxonName": "Balansiopsis piluliformis", 
 "^ot:treebaseOTUId": "Tl462582"
 }, 
 "otu167878": {
 "^ot:originalLabel": "Periglandula turbinae TcorF01 HQ702610", 
-"^ot:ottId": 224444, 
-"^ot:ottTaxonName": "Periglandula", 
 "^ot:treebaseOTUId": "Tl462583"
 }, 
 "otu167879": {
 "^ot:originalLabel": "Periglandula ipomoeae IasaF13 HQ702611", 
-"^ot:ottId": 747979, 
-"^ot:ottTaxonName": "Periglandula ipomoeae", 
 "^ot:treebaseOTUId": "Tl462584"
 }, 
 "otu167880": {
@@ -303,8 +264,8 @@
 }, 
 "otu167883": {
 "^ot:originalLabel": "Annulohypoxylon elevatidiscus AY951656", 
-"^ot:ottId": 937190, 
-"^ot:ottTaxonName": "Annulohypoxylon elevatidiscus", 
+"^ot:ottId": 5318220, 
+"^ot:ottTaxonName": "Annulohypoxylon elevatidiscum", 
 "^ot:treebaseOTUId": "Tl462588"
 }, 
 "otu167884": {
@@ -333,20 +294,14 @@
 }, 
 "otu167888": {
 "^ot:originalLabel": "Periglandula turbinae TcorF01 HQ702604", 
-"^ot:ottId": 224444, 
-"^ot:ottTaxonName": "Periglandula", 
 "^ot:treebaseOTUId": "Tl462593"
 }, 
 "otu167889": {
 "^ot:originalLabel": "Periglandula ipomoeae IasaF13 HQ702605", 
-"^ot:ottId": 747979, 
-"^ot:ottTaxonName": "Periglandula ipomoeae", 
 "^ot:treebaseOTUId": "Tl462594"
 }, 
 "otu167890": {
 "^ot:originalLabel": "Periglandula ipomoeae IasaredF01 HQ702606", 
-"^ot:ottId": 747979, 
-"^ot:ottTaxonName": "Periglandula ipomoeae", 
 "^ot:treebaseOTUId": "Tl462595"
 }, 
 "otu167891": {
@@ -405,8 +360,6 @@
 }, 
 "otu167900": {
 "^ot:originalLabel": "Periglandula ipomoeae IasaredF01 HQ702615", 
-"^ot:ottId": 747979, 
-"^ot:ottTaxonName": "Periglandula ipomoeae", 
 "^ot:treebaseOTUId": "Tl467758"
 }, 
 "otu167901": {
@@ -429,8 +382,6 @@
 }, 
 "otu167904": {
 "^ot:originalLabel": "Periglandula ipomoeae IasaF13 HQ702614", 
-"^ot:ottId": 747979, 
-"^ot:ottTaxonName": "Periglandula ipomoeae", 
 "^ot:treebaseOTUId": "Tl467762"
 }, 
 "otu167905": {
@@ -442,7 +393,7 @@
 "otu167906": {
 "^ot:originalLabel": "Stachybotrys echinata AY489599", 
 "^ot:ottId": 688532, 
-"^ot:ottTaxonName": "Stachybotrys echinata", 
+"^ot:ottTaxonName": "Memnoniella echinata", 
 "^ot:treebaseOTUId": "Tl467764"
 }, 
 "otu167907": {
@@ -453,8 +404,6 @@
 }, 
 "otu167908": {
 "^ot:originalLabel": "Pseudonectria rousseliana AY489598", 
-"^ot:ottId": 716765, 
-"^ot:ottTaxonName": "Pseudonectria rousseliana", 
 "^ot:treebaseOTUId": "Tl467766"
 }, 
 "otu167909": {
@@ -466,13 +415,13 @@
 "otu167910": {
 "^ot:originalLabel": "Ochronectria calami AY489577", 
 "^ot:ottId": 254681, 
-"^ot:ottTaxonName": "Ochronectria calami", 
+"^ot:ottTaxonName": "Nectria calami", 
 "^ot:treebaseOTUId": "Tl467768"
 }, 
 "otu167911": {
 "^ot:originalLabel": "Torrubiella confragosa EF469051", 
 "^ot:ottId": 212411, 
-"^ot:ottTaxonName": "Cordyceps confragosa", 
+"^ot:ottTaxonName": "Lecanicillium lecanii", 
 "^ot:treebaseOTUId": "Tl467769"
 }, 
 "otu167912": {
@@ -501,14 +450,10 @@
 }, 
 "otu167916": {
 "^ot:originalLabel": "Hypocrea lutea AY489592", 
-"^ot:ottId": 935193, 
-"^ot:ottTaxonName": "Hypocrea lutea", 
 "^ot:treebaseOTUId": "Tl467774"
 }, 
 "otu167917": {
 "^ot:originalLabel": "Periglandula turbinae TcorF01 HQ702613", 
-"^ot:ottId": 224444, 
-"^ot:ottTaxonName": "Periglandula", 
 "^ot:treebaseOTUId": "Tl467775"
 }
 }
@@ -525,8 +470,14 @@
 "treeById": {
 "tree759": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "ML, atp6", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node333556", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node333556": {
 "edge333557": {
@@ -857,9 +808,15 @@
 }, 
 "tree760": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "ML, b-tubulin", 
 "^ot:inGroupClade": "node333607", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node333597", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node333597": {
 "edge333598": {
@@ -1092,9 +1049,15 @@
 }, 
 "tree761": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "ML, RPBA", 
 "^ot:inGroupClade": "node333627", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node333626", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node333626": {
 "edge333627": {

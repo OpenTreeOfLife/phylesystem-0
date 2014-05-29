@@ -19,48 +19,11 @@
 "@id": "peyotl-validator", 
 "@name": "validate_ot_nexson.py", 
 "@url": "https://github.com/OpenTreeOfLife/peyotl", 
-"@version": "0.0.3a", 
+"@version": "0.0.4a", 
 "invocation": {
-"checksPerformed": [
-"MISSING_MANDATORY_KEY", 
-"MISSING_OPTIONAL_KEY", 
-"UNRECOGNIZED_KEY", 
-"MISSING_LIST_EXPECTED", 
-"DUPLICATING_SINGLETON_KEY", 
-"REFERENCED_ID_NOT_FOUND", 
-"REPEATED_ID", 
-"REPEATED_OTU", 
-"MULTIPLE_ROOT_NODES", 
-"NO_ROOT_NODE", 
-"MULTIPLE_EDGES_FOR_NODES", 
-"CYCLE_DETECTED", 
-"DISCONNECTED_GRAPH_DETECTED", 
-"INCORRECT_ROOT_NODE_LABEL", 
-"TIP_WITHOUT_OTU", 
-"TIP_WITHOUT_OTT_ID", 
-"MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
-"NON_MONOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
-"INVALID_PROPERTY_VALUE", 
-"PROPERTY_VALUE_NOT_USEFUL", 
-"UNRECOGNIZED_PROPERTY_VALUE", 
-"MULTIPLE_TREES", 
-"UNRECOGNIZED_TAG", 
-"CONFLICTING_PROPERTY_VALUES", 
-"NO_TREES", 
-"DEPRECATED_PROPERTY", 
-"UNPARSEABLE_META", 
-"UNREACHABLE_NODE", 
-"INCORRECT_VALUE_TYPE", 
-"MISSING_CRUCIAL_CONTENT"
-], 
 "commandLine": [
 "--embed", 
-"--agent-only", 
-"-e", 
-"../mig-phyelesystem-scratch/2602/validation.json", 
-"-o", 
-"../mig-phyelesystem-scratch/2602/final.json", 
-"../mig-phyelesystem-scratch/2602/v1.2.1-2602.json"
+"--agent-only"
 ], 
 "otherProperty": [
 {
@@ -76,12 +39,19 @@
 }
 ]
 }, 
+"^ot:annotationEvents": {
+"annotation": []
+}, 
+"^ot:candidateTreeForSynthesis": [], 
 "^ot:curatorName": "Romina Gazis", 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S14349"
 }, 
 "^ot:focalClade": 338531, 
 "^ot:focalCladeOTTTaxonName": "Arthrinium", 
+"^ot:messages": {
+"message": []
+}, 
 "^ot:otusElementOrder": [
 "otus2602"
 ], 
@@ -89,11 +59,11 @@
 "^ot:studyPublicationReference": "Crous P.W., & Groenewald J.Z. 2013. A phylogenetic re-evaluation of Arthrinium. IMA Fungus, 4(1): 133-154.", 
 "^ot:studyYear": 2013, 
 "^ot:tag": [
-"MP", 
-"LSU", 
+"b-tub", 
 "BI", 
 "EF-1", 
-"b-tub"
+"LSU", 
+"MP"
 ], 
 "^ot:treesElementOrder": [
 "trees2602"
@@ -121,6 +91,8 @@
 }, 
 "otu386664": {
 "^ot:originalLabel": "Arthrinium rasikravindrii HM008625", 
+"^ot:ottId": 338541, 
+"^ot:ottTaxonName": "Arthrinium phaeospermum", 
 "^ot:treebaseOTUId": "Tl1159820"
 }, 
 "otu386665": {
@@ -175,6 +147,8 @@
 }, 
 "otu386674": {
 "^ot:originalLabel": "Arthrinium rasikravindrii HM008624", 
+"^ot:ottId": 338541, 
+"^ot:ottTaxonName": "Arthrinium phaeospermum", 
 "^ot:treebaseOTUId": "Tl1159830"
 }, 
 "otu386675": {
@@ -243,6 +217,8 @@
 }, 
 "otu386686": {
 "^ot:originalLabel": "Arthrinium rasikravindrii AB220272", 
+"^ot:ottId": 338541, 
+"^ot:ottTaxonName": "Arthrinium phaeospermum", 
 "^ot:treebaseOTUId": "Tl1159842"
 }, 
 "otu386687": {
@@ -423,6 +399,8 @@
 }, 
 "otu386717": {
 "^ot:originalLabel": "Arthrinium rasikravindrii GU266274", 
+"^ot:ottId": 338541, 
+"^ot:ottTaxonName": "Arthrinium phaeospermum", 
 "^ot:treebaseOTUId": "Tl1159873"
 }, 
 "otu386718": {
@@ -475,6 +453,8 @@
 }, 
 "otu386726": {
 "^ot:originalLabel": "Arthrinium rasikravindrii JN198505", 
+"^ot:ottId": 338541, 
+"^ot:ottTaxonName": "Arthrinium phaeospermum", 
 "^ot:treebaseOTUId": "Tl1159882"
 }, 
 "otu386727": {
@@ -515,6 +495,8 @@
 }, 
 "otu386733": {
 "^ot:originalLabel": "Apiospora montagnei DQ414530", 
+"^ot:ottId": 798498, 
+"^ot:ottTaxonName": "Apiospora montagnei", 
 "^ot:treebaseOTUId": "Tl1159889"
 }, 
 "otu386734": {
@@ -525,10 +507,14 @@
 }, 
 "otu386735": {
 "^ot:originalLabel": "Apiospora tintinnabula DQ810217 ", 
+"^ot:ottId": 742068, 
+"^ot:ottTaxonName": "Apiospora bambusae", 
 "^ot:treebaseOTUId": "Tl1159891"
 }, 
 "otu386736": {
 "^ot:originalLabel": "Astrocystis cocoes AY083823", 
+"^ot:ottId": 3694385, 
+"^ot:ottTaxonName": "Astrocystis cocoes", 
 "^ot:treebaseOTUId": "Tl1159892"
 }, 
 "otu386737": {
@@ -599,6 +585,8 @@
 }, 
 "otu386748": {
 "^ot:originalLabel": "Seimatosporium elegans AB593733", 
+"^ot:ottId": 5317524, 
+"^ot:ottTaxonName": "Discostroma elegans", 
 "^ot:treebaseOTUId": "Tl1159904"
 }, 
 "otu386749": {
@@ -643,6 +631,8 @@
 }, 
 "otu386756": {
 "^ot:originalLabel": "Apiospora montagnei DQ471018", 
+"^ot:ottId": 798498, 
+"^ot:ottTaxonName": "Apiospora montagnei", 
 "^ot:treebaseOTUId": "Tl1159912"
 }, 
 "otu386757": {
@@ -667,6 +657,8 @@
 }, 
 "otu386761": {
 "^ot:originalLabel": "Xylaria frustulosa JN673055", 
+"^ot:ottId": 5317060, 
+"^ot:ottTaxonName": "Sarawakus frustulosus", 
 "^ot:treebaseOTUId": "Tl1159917"
 }, 
 "otu386762": {
@@ -687,6 +679,8 @@
 }, 
 "otu386765": {
 "^ot:originalLabel": "Eutypa sp. AY083825", 
+"^ot:ottId": 855124, 
+"^ot:ottTaxonName": "Eutypa", 
 "^ot:treebaseOTUId": "Tl1159921"
 }, 
 "otu386766": {
@@ -727,9 +721,14 @@
 "treeById": {
 "tree6039": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "BI, LSU", 
 "^ot:inGroupClade": "node1034217", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node1034208", 
+"^ot:specifiedRoot": "", 
 "^ot:tag": [
 "BI", 
 "LSU"
@@ -1706,9 +1705,14 @@
 }, 
 "tree6040": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "MP, ITS", 
 "^ot:inGroupClade": "node1034331", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node1034329", 
+"^ot:specifiedRoot": "", 
 "^ot:tag": [
 "MP", 
 "ITS"
@@ -2503,9 +2507,14 @@
 }, 
 "tree6041": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "MP, EF-1 + b-tubulin", 
 "^ot:inGroupClade": "node1034437", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node1034435", 
+"^ot:specifiedRoot": "", 
 "^ot:tag": [
 "MP", 
 "b-tub", 

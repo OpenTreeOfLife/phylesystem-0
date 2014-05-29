@@ -19,48 +19,11 @@
 "@id": "peyotl-validator", 
 "@name": "validate_ot_nexson.py", 
 "@url": "https://github.com/OpenTreeOfLife/peyotl", 
-"@version": "0.0.3a", 
+"@version": "0.0.4a", 
 "invocation": {
-"checksPerformed": [
-"MISSING_MANDATORY_KEY", 
-"MISSING_OPTIONAL_KEY", 
-"UNRECOGNIZED_KEY", 
-"MISSING_LIST_EXPECTED", 
-"DUPLICATING_SINGLETON_KEY", 
-"REFERENCED_ID_NOT_FOUND", 
-"REPEATED_ID", 
-"REPEATED_OTU", 
-"MULTIPLE_ROOT_NODES", 
-"NO_ROOT_NODE", 
-"MULTIPLE_EDGES_FOR_NODES", 
-"CYCLE_DETECTED", 
-"DISCONNECTED_GRAPH_DETECTED", 
-"INCORRECT_ROOT_NODE_LABEL", 
-"TIP_WITHOUT_OTU", 
-"TIP_WITHOUT_OTT_ID", 
-"MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
-"NON_MONOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
-"INVALID_PROPERTY_VALUE", 
-"PROPERTY_VALUE_NOT_USEFUL", 
-"UNRECOGNIZED_PROPERTY_VALUE", 
-"MULTIPLE_TREES", 
-"UNRECOGNIZED_TAG", 
-"CONFLICTING_PROPERTY_VALUES", 
-"NO_TREES", 
-"DEPRECATED_PROPERTY", 
-"UNPARSEABLE_META", 
-"UNREACHABLE_NODE", 
-"INCORRECT_VALUE_TYPE", 
-"MISSING_CRUCIAL_CONTENT"
-], 
 "commandLine": [
 "--embed", 
-"--agent-only", 
-"-e", 
-"../mig-phyelesystem-scratch/1254/validation.json", 
-"-o", 
-"../mig-phyelesystem-scratch/1254/final.json", 
-"../mig-phyelesystem-scratch/1254/v1.2.1-1254.json"
+"--agent-only"
 ], 
 "otherProperty": [
 {
@@ -76,12 +39,19 @@
 }
 ]
 }, 
+"^ot:annotationEvents": {
+"annotation": []
+}, 
+"^ot:candidateTreeForSynthesis": [], 
 "^ot:curatorName": "bryan drew", 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S11663"
 }, 
 "^ot:focalClade": 916753, 
 "^ot:focalCladeOTTTaxonName": "Sphaeropleales", 
+"^ot:messages": {
+"message": []
+}, 
 "^ot:otusElementOrder": [
 "otus1254"
 ], 
@@ -91,6 +61,7 @@
 }, 
 "^ot:studyPublicationReference": "Tippery N.P., Fucikova K., Lewis P., & Lewis L.A. 2012. Probing the Monophyly of the Sphaeropleales (Chlorophyceae) Using Data From Five Genes. Journal of Phycology, 48(6): 1482-1493.", 
 "^ot:studyYear": 2012, 
+"^ot:tag": [], 
 "^ot:treesElementOrder": [
 "trees1254"
 ], 
@@ -98,7 +69,9 @@
 "otus1254": {
 "otuById": {
 "otu409433": {
-"^ot:originalLabel": "Neochloris aquatica"
+"^ot:originalLabel": "Neochloris aquatica", 
+"^ot:ottId": 129610, 
+"^ot:ottTaxonName": "Neochloris aquatica"
 }, 
 "otu409434": {
 "^ot:originalLabel": "Characiopodium hindakii", 
@@ -131,22 +104,34 @@
 "^ot:ottTaxonName": "Ourococcus multisporus"
 }, 
 "otu409440": {
-"^ot:originalLabel": "Bracteacoccus aerius"
+"^ot:originalLabel": "Bracteacoccus aerius", 
+"^ot:ottId": 560360, 
+"^ot:ottTaxonName": "Bracteacoccus aerius"
 }, 
 "otu409441": {
-"^ot:originalLabel": "Bracteacoccus minor"
+"^ot:originalLabel": "Bracteacoccus minor", 
+"^ot:ottId": 1086851, 
+"^ot:ottTaxonName": "Bracteacoccus minor"
 }, 
 "otu409442": {
-"^ot:originalLabel": "Chromochloris cinnabarina"
+"^ot:originalLabel": "Chromochloris cinnabarina", 
+"^ot:ottId": 763872, 
+"^ot:ottTaxonName": "Chromochloris zofingiensis"
 }, 
 "otu409443": {
-"^ot:originalLabel": "Pseudomuriella"
+"^ot:originalLabel": "Pseudomuriella", 
+"^ot:ottId": 332826, 
+"^ot:ottTaxonName": "Pseudomuriella"
 }, 
 "otu409444": {
-"^ot:originalLabel": "Planktosphaeria gelatinosa"
+"^ot:originalLabel": "Planktosphaeria gelatinosa", 
+"^ot:ottId": 1014753, 
+"^ot:ottTaxonName": "Planktosphaeria gelatinosa"
 }, 
 "otu409445": {
-"^ot:originalLabel": "Planktosphaeria texensis"
+"^ot:originalLabel": "Planktosphaeria texensis", 
+"^ot:ottId": 910505, 
+"^ot:ottTaxonName": "Follicularia texensis"
 }, 
 "otu409446": {
 "^ot:originalLabel": "Schroederia setigera", 
@@ -164,7 +149,9 @@
 "^ot:ottTaxonName": "Atractomorpha echinata"
 }, 
 "otu409449": {
-"^ot:originalLabel": "Protosiphon botryoides"
+"^ot:originalLabel": "Protosiphon botryoides", 
+"^ot:ottId": 377205, 
+"^ot:ottTaxonName": "Protosiphon botryoides"
 }, 
 "otu409450": {
 "^ot:originalLabel": "Chlorosarcinopsis arenicola", 
@@ -192,7 +179,9 @@
 "^ot:ottTaxonName": "Chlamydomonas reinhardtii"
 }, 
 "otu409455": {
-"^ot:originalLabel": "Stigeoclonium helveticum"
+"^ot:originalLabel": "Stigeoclonium helveticum", 
+"^ot:ottId": 197187, 
+"^ot:ottTaxonName": "Stigeoclonium helveticum"
 }, 
 "otu409456": {
 "^ot:originalLabel": "Chaetophora incrassata", 
@@ -215,7 +204,9 @@
 "^ot:ottTaxonName": "Oedogonium cardiacum"
 }, 
 "otu409460": {
-"^ot:originalLabel": "Hormotilopsis gelatinosa"
+"^ot:originalLabel": "Hormotilopsis gelatinosa", 
+"^ot:ottId": 828965, 
+"^ot:ottTaxonName": "Hormotilopsis gelatinosa"
 }, 
 "otu409461": {
 "^ot:originalLabel": "Floydiella terrestris", 
@@ -228,7 +219,9 @@
 "^ot:ottTaxonName": "Chlorella vulgaris"
 }, 
 "otu409463": {
-"^ot:originalLabel": "Parachlorella kessleri"
+"^ot:originalLabel": "Parachlorella kessleri", 
+"^ot:ottId": 339020, 
+"^ot:ottTaxonName": "Parachlorella kessleri"
 }, 
 "otu409464": {
 "^ot:originalLabel": "Oocystis solitaria", 
@@ -241,10 +234,14 @@
 "^ot:ottTaxonName": "Leptosira terrestris"
 }, 
 "otu409466": {
-"^ot:originalLabel": "Pseudendoclonium akinetum"
+"^ot:originalLabel": "Pseudendoclonium akinetum", 
+"^ot:ottId": 555337, 
+"^ot:ottTaxonName": "Pseudendoclonium akinetum"
 }, 
 "otu409467": {
-"^ot:originalLabel": "Oltmannsiellopsis viridis"
+"^ot:originalLabel": "Oltmannsiellopsis viridis", 
+"^ot:ottId": 311485, 
+"^ot:ottTaxonName": "Oltmannsiellopsis viridis"
 }
 }
 }
@@ -258,9 +255,15 @@
 "treeById": {
 "tree6335": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "combined", 
 "^ot:inGroupClade": "node1103972", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node1103971", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node1103971": {
 "edge1103972": {

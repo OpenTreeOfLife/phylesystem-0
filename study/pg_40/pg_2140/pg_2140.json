@@ -19,48 +19,11 @@
 "@id": "peyotl-validator", 
 "@name": "validate_ot_nexson.py", 
 "@url": "https://github.com/OpenTreeOfLife/peyotl", 
-"@version": "0.0.3a", 
+"@version": "0.0.4a", 
 "invocation": {
-"checksPerformed": [
-"MISSING_MANDATORY_KEY", 
-"MISSING_OPTIONAL_KEY", 
-"UNRECOGNIZED_KEY", 
-"MISSING_LIST_EXPECTED", 
-"DUPLICATING_SINGLETON_KEY", 
-"REFERENCED_ID_NOT_FOUND", 
-"REPEATED_ID", 
-"REPEATED_OTU", 
-"MULTIPLE_ROOT_NODES", 
-"NO_ROOT_NODE", 
-"MULTIPLE_EDGES_FOR_NODES", 
-"CYCLE_DETECTED", 
-"DISCONNECTED_GRAPH_DETECTED", 
-"INCORRECT_ROOT_NODE_LABEL", 
-"TIP_WITHOUT_OTU", 
-"TIP_WITHOUT_OTT_ID", 
-"MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
-"NON_MONOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
-"INVALID_PROPERTY_VALUE", 
-"PROPERTY_VALUE_NOT_USEFUL", 
-"UNRECOGNIZED_PROPERTY_VALUE", 
-"MULTIPLE_TREES", 
-"UNRECOGNIZED_TAG", 
-"CONFLICTING_PROPERTY_VALUES", 
-"NO_TREES", 
-"DEPRECATED_PROPERTY", 
-"UNPARSEABLE_META", 
-"UNREACHABLE_NODE", 
-"INCORRECT_VALUE_TYPE", 
-"MISSING_CRUCIAL_CONTENT"
-], 
 "commandLine": [
 "--embed", 
-"--agent-only", 
-"-e", 
-"../mig-phyelesystem-scratch/2140/validation.json", 
-"-o", 
-"../mig-phyelesystem-scratch/2140/final.json", 
-"../mig-phyelesystem-scratch/2140/v1.2.1-2140.json"
+"--agent-only"
 ], 
 "otherProperty": [
 {
@@ -76,12 +39,19 @@
 }
 ]
 }, 
+"^ot:annotationEvents": {
+"annotation": []
+}, 
+"^ot:candidateTreeForSynthesis": [], 
 "^ot:curatorName": "bryan drew", 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S1127"
 }, 
 "^ot:focalClade": 98426, 
 "^ot:focalCladeOTTTaxonName": "Annonaceae", 
+"^ot:messages": {
+"message": []
+}, 
 "^ot:otusElementOrder": [
 "otus2140"
 ], 
@@ -91,6 +61,7 @@
 }, 
 "^ot:studyPublicationReference": "Mols, J. B., Gravendeel, B., Chatrou, L. W., Pirie, M. D., Bygrave, P. C., Chase, M. W., & Ke\u00dfler, P. J. (2004). Identifying clades in Asian Annonaceae: monophyletic genera in the polyphyletic Miliuseae. American Journal of Botany, 91(4), 590-600.", 
 "^ot:studyYear": 2004, 
+"^ot:tag": [], 
 "^ot:treesElementOrder": [
 "trees2140"
 ], 
@@ -243,6 +214,8 @@
 }, 
 "otu315551": {
 "^ot:originalLabel": "Craibella phuyensis", 
+"^ot:ottId": 3867309, 
+"^ot:ottTaxonName": "Pseuduvaria phuyensis", 
 "^ot:treebaseOTUId": "Tl144505"
 }, 
 "otu315552": {
@@ -791,9 +764,15 @@
 "treeById": {
 "tree4483": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "Fig. 3", 
 "^ot:inGroupClade": "node808010", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node808008", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node808008": {
 "edge808009": {

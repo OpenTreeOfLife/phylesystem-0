@@ -19,48 +19,11 @@
 "@id": "peyotl-validator", 
 "@name": "validate_ot_nexson.py", 
 "@url": "https://github.com/OpenTreeOfLife/peyotl", 
-"@version": "0.0.3a", 
+"@version": "0.0.4a", 
 "invocation": {
-"checksPerformed": [
-"MISSING_MANDATORY_KEY", 
-"MISSING_OPTIONAL_KEY", 
-"UNRECOGNIZED_KEY", 
-"MISSING_LIST_EXPECTED", 
-"DUPLICATING_SINGLETON_KEY", 
-"REFERENCED_ID_NOT_FOUND", 
-"REPEATED_ID", 
-"REPEATED_OTU", 
-"MULTIPLE_ROOT_NODES", 
-"NO_ROOT_NODE", 
-"MULTIPLE_EDGES_FOR_NODES", 
-"CYCLE_DETECTED", 
-"DISCONNECTED_GRAPH_DETECTED", 
-"INCORRECT_ROOT_NODE_LABEL", 
-"TIP_WITHOUT_OTU", 
-"TIP_WITHOUT_OTT_ID", 
-"MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
-"NON_MONOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
-"INVALID_PROPERTY_VALUE", 
-"PROPERTY_VALUE_NOT_USEFUL", 
-"UNRECOGNIZED_PROPERTY_VALUE", 
-"MULTIPLE_TREES", 
-"UNRECOGNIZED_TAG", 
-"CONFLICTING_PROPERTY_VALUES", 
-"NO_TREES", 
-"DEPRECATED_PROPERTY", 
-"UNPARSEABLE_META", 
-"UNREACHABLE_NODE", 
-"INCORRECT_VALUE_TYPE", 
-"MISSING_CRUCIAL_CONTENT"
-], 
 "commandLine": [
 "--embed", 
-"--agent-only", 
-"-e", 
-"../mig-phyelesystem-scratch/1179/validation.json", 
-"-o", 
-"../mig-phyelesystem-scratch/1179/final.json", 
-"../mig-phyelesystem-scratch/1179/v1.2.1-1179.json"
+"--agent-only"
 ], 
 "otherProperty": [
 {
@@ -76,9 +39,16 @@
 }
 ]
 }, 
+"^ot:annotationEvents": {
+"annotation": []
+}, 
+"^ot:candidateTreeForSynthesis": [], 
 "^ot:curatorName": "Romina Gazis", 
 "^ot:focalClade": 346133, 
 "^ot:focalCladeOTTTaxonName": "Pezizomycetes", 
+"^ot:messages": {
+"message": []
+}, 
 "^ot:otusElementOrder": [
 "otus1179"
 ], 
@@ -88,6 +58,7 @@
 }, 
 "^ot:studyPublicationReference": "L\u00e6ss\u00f8e, Thomas, and Karen Hansen. \"Truffle trouble: what happened to the< i> Tuberales</i>?.\" Mycological research 111.9 (2007): 1075-1099.", 
 "^ot:studyYear": 2007, 
+"^ot:tag": [], 
 "^ot:treesElementOrder": [
 "trees1179"
 ], 
@@ -115,7 +86,9 @@
 "^ot:ottTaxonName": "Otidea onotica"
 }, 
 "otu229765": {
-"^ot:originalLabel": "Otidea umbrina"
+"^ot:originalLabel": "Otidea umbrina", 
+"^ot:ottId": 5303243, 
+"^ot:ottTaxonName": "Peziza cochleata"
 }, 
 "otu229766": {
 "^ot:originalLabel": "Smardaea amethystina", 
@@ -338,7 +311,9 @@
 "^ot:ottTaxonName": "Peziza ampelina"
 }, 
 "otu229812": {
-"^ot:originalLabel": "Peziza subcitrina"
+"^ot:originalLabel": "Peziza subcitrina", 
+"^ot:ottId": 5303249, 
+"^ot:ottTaxonName": "Peziza aurata"
 }, 
 "otu229813": {
 "^ot:originalLabel": "Peziza echinispora", 
@@ -517,10 +492,14 @@
 "^ot:ottTaxonName": "Plicaria endocarpoides"
 }, 
 "otu229849": {
-"^ot:originalLabel": "Peziza vacinii"
+"^ot:originalLabel": "Peziza vacinii", 
+"^ot:ottId": 5303221, 
+"^ot:ottTaxonName": "Peziza vacini"
 }, 
 "otu229850": {
-"^ot:originalLabel": "Eremiomyces echinulatus"
+"^ot:originalLabel": "Eremiomyces echinulatus", 
+"^ot:ottId": 5303053, 
+"^ot:ottTaxonName": "Eremiomyces echinulatus"
 }, 
 "otu229851": {
 "^ot:originalLabel": "Peziza bananicola", 
@@ -715,7 +694,9 @@
 "^ot:ottTaxonName": "Reddellomyces donkii"
 }, 
 "otu229891": {
-"^ot:originalLabel": "Labyrinthomyces varius"
+"^ot:originalLabel": "Labyrinthomyces varius", 
+"^ot:ottId": 5303536, 
+"^ot:ottTaxonName": "Stephensia varia"
 }, 
 "otu229892": {
 "^ot:originalLabel": "Choiromyces venosus", 
@@ -738,7 +719,9 @@
 "^ot:ottTaxonName": "Caloscypha fulgens"
 }, 
 "otu229896": {
-"^ot:originalLabel": "Otidea concinna"
+"^ot:originalLabel": "Otidea concinna", 
+"^ot:ottId": 5303477, 
+"^ot:ottTaxonName": "Flavoscypha cantharella"
 }, 
 "otu229897": {
 "^ot:originalLabel": "Otidea alutacea", 
@@ -944,7 +927,9 @@
 "^ot:ottTaxonName": "Eleutherascus lectardii"
 }, 
 "otu229938": {
-"^ot:originalLabel": "Pulvinula constellatio"
+"^ot:originalLabel": "Pulvinula constellatio", 
+"^ot:ottId": 920415, 
+"^ot:ottTaxonName": "Pulvinula convexella"
 }, 
 "otu229939": {
 "^ot:originalLabel": "Pulvinula convexella", 
@@ -996,10 +981,17 @@
 "treeById": {
 "tree2382": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "MP, LSU", 
 "^ot:inGroupClade": "node557576", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node557574", 
-"^ot:tag": "MP", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [
+"MP"
+], 
 "edgeBySourceId": {
 "node557574": {
 "edge557575": {
@@ -2300,8 +2292,14 @@
 }, 
 "tree2383": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "MP, LSU", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node557759", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node557759": {
 "edge557760": {
@@ -2930,10 +2928,17 @@
 }, 
 "tree2384": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "MP, LSU", 
 "^ot:inGroupClade": "node557852", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node557848", 
-"^ot:tag": "LSU", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [
+"LSU"
+], 
 "edgeBySourceId": {
 "node557848": {
 "edge557849": {
@@ -3716,9 +3721,15 @@
 }, 
 "tree5813": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "MP, LSU (rooted)", 
 "^ot:inGroupClade": "node992784", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node992778", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node992778": {
 "edge992779": {

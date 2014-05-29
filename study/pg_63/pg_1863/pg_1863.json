@@ -19,48 +19,11 @@
 "@id": "peyotl-validator", 
 "@name": "validate_ot_nexson.py", 
 "@url": "https://github.com/OpenTreeOfLife/peyotl", 
-"@version": "0.0.3a", 
+"@version": "0.0.4a", 
 "invocation": {
-"checksPerformed": [
-"MISSING_MANDATORY_KEY", 
-"MISSING_OPTIONAL_KEY", 
-"UNRECOGNIZED_KEY", 
-"MISSING_LIST_EXPECTED", 
-"DUPLICATING_SINGLETON_KEY", 
-"REFERENCED_ID_NOT_FOUND", 
-"REPEATED_ID", 
-"REPEATED_OTU", 
-"MULTIPLE_ROOT_NODES", 
-"NO_ROOT_NODE", 
-"MULTIPLE_EDGES_FOR_NODES", 
-"CYCLE_DETECTED", 
-"DISCONNECTED_GRAPH_DETECTED", 
-"INCORRECT_ROOT_NODE_LABEL", 
-"TIP_WITHOUT_OTU", 
-"TIP_WITHOUT_OTT_ID", 
-"MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
-"NON_MONOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
-"INVALID_PROPERTY_VALUE", 
-"PROPERTY_VALUE_NOT_USEFUL", 
-"UNRECOGNIZED_PROPERTY_VALUE", 
-"MULTIPLE_TREES", 
-"UNRECOGNIZED_TAG", 
-"CONFLICTING_PROPERTY_VALUES", 
-"NO_TREES", 
-"DEPRECATED_PROPERTY", 
-"UNPARSEABLE_META", 
-"UNREACHABLE_NODE", 
-"INCORRECT_VALUE_TYPE", 
-"MISSING_CRUCIAL_CONTENT"
-], 
 "commandLine": [
 "--embed", 
-"--agent-only", 
-"-e", 
-"../mig-phyelesystem-scratch/1863/validation.json", 
-"-o", 
-"../mig-phyelesystem-scratch/1863/final.json", 
-"../mig-phyelesystem-scratch/1863/v1.2.1-1863.json"
+"--agent-only"
 ], 
 "otherProperty": [
 {
@@ -76,12 +39,19 @@
 }
 ]
 }, 
+"^ot:annotationEvents": {
+"annotation": []
+}, 
+"^ot:candidateTreeForSynthesis": [], 
 "^ot:curatorName": "bryan drew", 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S2030"
 }, 
 "^ot:focalClade": 259066, 
 "^ot:focalCladeOTTTaxonName": "Rosa", 
+"^ot:messages": {
+"message": []
+}, 
 "^ot:otusElementOrder": [
 "otus1863"
 ], 
@@ -91,6 +61,7 @@
 }, 
 "^ot:studyPublicationReference": "Koopman W., Wissemann V., Cock K., Huylenbroeck J., Riek J., Sabatino G., Visser D., Vosman B., Ritz C., Maes B., Werlemark G., Nybom H., Debener T., Linde M., & Smulders M. 2008. AFLP Markers as a Tool to Reconstruct Complex Relationships: A Case Study in Rosa (Rosaceae). American Journal of Botany, 95(3): 353-366.", 
 "^ot:studyYear": 2008, 
+"^ot:tag": [], 
 "^ot:treesElementOrder": [
 "trees1863"
 ], 
@@ -604,9 +575,9 @@
 "^ot:treebaseOTUId": "Tl78499"
 }, 
 "otu285236": {
-"^ot:altLabel": "Rosa spinosissima", 
 "^ot:originalLabel": "Rosa spinosissima Kakwa 29", 
 "^ot:ottId": 333873, 
+"^ot:ottTaxonName": "Rosa spinosissima", 
 "^ot:treebaseOTUId": "Tl78500"
 }, 
 "otu285237": {
@@ -618,9 +589,9 @@
 "^ot:treebaseOTUId": "Tl78502"
 }, 
 "otu285239": {
-"^ot:altLabel": "Rosa canina", 
 "^ot:originalLabel": "Rosa canina Pfander 71", 
 "^ot:ottId": 333885, 
+"^ot:ottTaxonName": "Rosa canina", 
 "^ot:treebaseOTUId": "Tl78503"
 }, 
 "otu285240": {
@@ -656,9 +627,9 @@
 "^ot:treebaseOTUId": "Tl78511"
 }, 
 "otu285248": {
-"^ot:altLabel": "Rosa corymbifera", 
 "^ot:originalLabel": "Rosa corymbifera Laxa 36", 
 "^ot:ottId": 252369, 
+"^ot:ottTaxonName": "Rosa corymbifera", 
 "^ot:treebaseOTUId": "Tl78512"
 }, 
 "otu285249": {
@@ -674,15 +645,15 @@
 "^ot:treebaseOTUId": "Tl78515"
 }, 
 "otu285252": {
-"^ot:altLabel": "Rosa willmottiae", 
 "^ot:originalLabel": "Rosa willmottiae Wisley Farm 43", 
 "^ot:ottId": 599967, 
+"^ot:ottTaxonName": "Rosa willmottiae", 
 "^ot:treebaseOTUId": "Tl78516"
 }, 
 "otu285253": {
-"^ot:altLabel": "Rosa canina", 
 "^ot:originalLabel": "Rosa canina Superbe 70", 
 "^ot:ottId": 333885, 
+"^ot:ottTaxonName": "Rosa canina", 
 "^ot:treebaseOTUId": "Tl78517"
 }, 
 "otu285254": {
@@ -690,9 +661,9 @@
 "^ot:treebaseOTUId": "Tl78518"
 }, 
 "otu285255": {
-"^ot:altLabel": "Rosa majalis", 
 "^ot:originalLabel": "Rosa majalis Fulgens 39", 
 "^ot:ottId": 902621, 
+"^ot:ottTaxonName": "Rosa majalis", 
 "^ot:treebaseOTUId": "Tl78519"
 }, 
 "otu285256": {
@@ -720,9 +691,9 @@
 "^ot:treebaseOTUId": "Tl78525"
 }, 
 "otu285262": {
-"^ot:altLabel": "Rosa multiflora", 
 "^ot:originalLabel": "Rosa multiflora Inermis 53", 
 "^ot:ottId": 908464, 
+"^ot:ottTaxonName": "Rosa multiflora", 
 "^ot:treebaseOTUId": "Tl78526"
 }, 
 "otu285263": {
@@ -742,9 +713,9 @@
 "^ot:treebaseOTUId": "Tl78530"
 }, 
 "otu285267": {
-"^ot:altLabel": "Rosa gallica", 
 "^ot:originalLabel": "Rosa gallica Boule de Nanteuil 7", 
 "^ot:ottId": 333878, 
+"^ot:ottTaxonName": "Rosa gallica", 
 "^ot:treebaseOTUId": "Tl78531"
 }, 
 "otu285268": {
@@ -760,9 +731,9 @@
 "^ot:treebaseOTUId": "Tl78534"
 }, 
 "otu285271": {
-"^ot:altLabel": "Rosa corymbifera", 
 "^ot:originalLabel": "Rosa corymbifera Laxa 76", 
 "^ot:ottId": 252369, 
+"^ot:ottTaxonName": "Rosa corymbifera", 
 "^ot:treebaseOTUId": "Tl78535"
 }, 
 "otu285272": {
@@ -778,9 +749,9 @@
 "^ot:treebaseOTUId": "Tl78538"
 }, 
 "otu285275": {
-"^ot:altLabel": "Rosa canina", 
 "^ot:originalLabel": "Rosa canina Schmids Ideal 72", 
 "^ot:ottId": 333885, 
+"^ot:ottTaxonName": "Rosa canina", 
 "^ot:treebaseOTUId": "Tl78539"
 }, 
 "otu285276": {
@@ -808,8 +779,14 @@
 "treeById": {
 "tree3762": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "Fig. 2", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node712628", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node712628": {
 "edge712629": {
@@ -1963,9 +1940,15 @@
 }, 
 "tree5536": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "AFLP", 
 "^ot:inGroupClade": "node953082", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node953080", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node953080": {
 "edge953081": {

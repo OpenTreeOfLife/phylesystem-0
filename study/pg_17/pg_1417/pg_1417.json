@@ -19,48 +19,11 @@
 "@id": "peyotl-validator", 
 "@name": "validate_ot_nexson.py", 
 "@url": "https://github.com/OpenTreeOfLife/peyotl", 
-"@version": "0.0.3a", 
+"@version": "0.0.4a", 
 "invocation": {
-"checksPerformed": [
-"MISSING_MANDATORY_KEY", 
-"MISSING_OPTIONAL_KEY", 
-"UNRECOGNIZED_KEY", 
-"MISSING_LIST_EXPECTED", 
-"DUPLICATING_SINGLETON_KEY", 
-"REFERENCED_ID_NOT_FOUND", 
-"REPEATED_ID", 
-"REPEATED_OTU", 
-"MULTIPLE_ROOT_NODES", 
-"NO_ROOT_NODE", 
-"MULTIPLE_EDGES_FOR_NODES", 
-"CYCLE_DETECTED", 
-"DISCONNECTED_GRAPH_DETECTED", 
-"INCORRECT_ROOT_NODE_LABEL", 
-"TIP_WITHOUT_OTU", 
-"TIP_WITHOUT_OTT_ID", 
-"MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
-"NON_MONOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
-"INVALID_PROPERTY_VALUE", 
-"PROPERTY_VALUE_NOT_USEFUL", 
-"UNRECOGNIZED_PROPERTY_VALUE", 
-"MULTIPLE_TREES", 
-"UNRECOGNIZED_TAG", 
-"CONFLICTING_PROPERTY_VALUES", 
-"NO_TREES", 
-"DEPRECATED_PROPERTY", 
-"UNPARSEABLE_META", 
-"UNREACHABLE_NODE", 
-"INCORRECT_VALUE_TYPE", 
-"MISSING_CRUCIAL_CONTENT"
-], 
 "commandLine": [
 "--embed", 
-"--agent-only", 
-"-e", 
-"../mig-phyelesystem-scratch/1417/validation.json", 
-"-o", 
-"../mig-phyelesystem-scratch/1417/final.json", 
-"../mig-phyelesystem-scratch/1417/v1.2.1-1417.json"
+"--agent-only"
 ], 
 "otherProperty": [
 {
@@ -76,12 +39,17 @@
 }
 ]
 }, 
+"^ot:annotationEvents": {
+"annotation": []
+}, 
+"^ot:candidateTreeForSynthesis": [], 
 "^ot:curatorName": "Jiabin Deng", 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S617"
 }, 
-"^ot:focalClade": 824549, 
-"^ot:focalCladeOTTTaxonName": "Agavaceae", 
+"^ot:messages": {
+"message": []
+}, 
 "^ot:otusElementOrder": [
 "otus1417"
 ], 
@@ -91,6 +59,7 @@
 }, 
 "^ot:studyPublicationReference": "Bogler D., & Simpson B. 1996. Phylogeny of Agavaceae based on ITS rDNA sequence variation. American Journal of Botany, 83: 1225-1235.", 
 "^ot:studyYear": 1996, 
+"^ot:tag": [], 
 "^ot:treesElementOrder": [
 "trees1417"
 ], 
@@ -106,16 +75,19 @@
 "otu248893": {
 "^ot:originalLabel": "Convallaria majalis", 
 "^ot:ottId": 1088891, 
+"^ot:ottTaxonName": "Convallaria majalis", 
 "^ot:treebaseOTUId": "Tl117277"
 }, 
 "otu248894": {
 "^ot:originalLabel": "Hemerocallis fulva", 
 "^ot:ottId": 62294, 
+"^ot:ottTaxonName": "Hemerocallis fulva", 
 "^ot:treebaseOTUId": "Tl117294"
 }, 
 "otu248895": {
 "^ot:originalLabel": "Hypoxis hirsuta", 
 "^ot:ottId": 1093464, 
+"^ot:ottTaxonName": "Hypoxis hirsuta", 
 "^ot:treebaseOTUId": "Tl117298"
 }, 
 "otu248896": {
@@ -133,7 +105,7 @@
 "otu248898": {
 "^ot:originalLabel": "Beaucarnea purpusii", 
 "^ot:ottId": 494864, 
-"^ot:ottTaxonName": "Beaucarnea purpusi", 
+"^ot:ottTaxonName": "Beaucarnea purpusii", 
 "^ot:treebaseOTUId": "Tl95028"
 }, 
 "otu248899": {
@@ -199,7 +171,7 @@
 "otu248909": {
 "^ot:originalLabel": "Calibanus hookeri", 
 "^ot:ottId": 1023675, 
-"^ot:ottTaxonName": "Calibanus hookerii", 
+"^ot:ottTaxonName": "Calibanus hookeri", 
 "^ot:treebaseOTUId": "Tl95039"
 }, 
 "otu248910": {
@@ -221,9 +193,9 @@
 "^ot:treebaseOTUId": "Tl95042"
 }, 
 "otu248913": {
-"^ot:altLabel": "Furcraea quicheensis", 
 "^ot:originalLabel": "Furcraea quichensis", 
 "^ot:ottId": 3996020, 
+"^ot:ottTaxonName": "Furcraea quicheensis", 
 "^ot:treebaseOTUId": "Tl95043"
 }, 
 "otu248914": {
@@ -283,6 +255,7 @@
 "otu248923": {
 "^ot:originalLabel": "Nolina microcarpa", 
 "^ot:ottId": 273514, 
+"^ot:ottTaxonName": "Nolina microcarpa", 
 "^ot:treebaseOTUId": "Tl95053"
 }, 
 "otu248924": {
@@ -306,6 +279,7 @@
 "otu248927": {
 "^ot:originalLabel": "Nolina texana", 
 "^ot:ottId": 3995554, 
+"^ot:ottTaxonName": "Nolina texana", 
 "^ot:treebaseOTUId": "Tl95057"
 }, 
 "otu248928": {
@@ -380,9 +354,15 @@
 "treeById": {
 "tree2838": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "Fig. 3", 
 "^ot:inGroupClade": "node608930", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node608927", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node608927": {
 "edge608928": {

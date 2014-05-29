@@ -19,48 +19,11 @@
 "@id": "peyotl-validator", 
 "@name": "validate_ot_nexson.py", 
 "@url": "https://github.com/OpenTreeOfLife/peyotl", 
-"@version": "0.0.3a", 
+"@version": "0.0.4a", 
 "invocation": {
-"checksPerformed": [
-"MISSING_MANDATORY_KEY", 
-"MISSING_OPTIONAL_KEY", 
-"UNRECOGNIZED_KEY", 
-"MISSING_LIST_EXPECTED", 
-"DUPLICATING_SINGLETON_KEY", 
-"REFERENCED_ID_NOT_FOUND", 
-"REPEATED_ID", 
-"REPEATED_OTU", 
-"MULTIPLE_ROOT_NODES", 
-"NO_ROOT_NODE", 
-"MULTIPLE_EDGES_FOR_NODES", 
-"CYCLE_DETECTED", 
-"DISCONNECTED_GRAPH_DETECTED", 
-"INCORRECT_ROOT_NODE_LABEL", 
-"TIP_WITHOUT_OTU", 
-"TIP_WITHOUT_OTT_ID", 
-"MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
-"NON_MONOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
-"INVALID_PROPERTY_VALUE", 
-"PROPERTY_VALUE_NOT_USEFUL", 
-"UNRECOGNIZED_PROPERTY_VALUE", 
-"MULTIPLE_TREES", 
-"UNRECOGNIZED_TAG", 
-"CONFLICTING_PROPERTY_VALUES", 
-"NO_TREES", 
-"DEPRECATED_PROPERTY", 
-"UNPARSEABLE_META", 
-"UNREACHABLE_NODE", 
-"INCORRECT_VALUE_TYPE", 
-"MISSING_CRUCIAL_CONTENT"
-], 
 "commandLine": [
 "--embed", 
-"--agent-only", 
-"-e", 
-"../mig-phyelesystem-scratch/1975/validation.json", 
-"-o", 
-"../mig-phyelesystem-scratch/1975/final.json", 
-"../mig-phyelesystem-scratch/1975/v1.2.1-1975.json"
+"--agent-only"
 ], 
 "otherProperty": [
 {
@@ -76,9 +39,16 @@
 }
 ]
 }, 
+"^ot:annotationEvents": {
+"annotation": []
+}, 
+"^ot:candidateTreeForSynthesis": [], 
 "^ot:curatorName": "bryan drew", 
 "^ot:focalClade": 143408, 
 "^ot:focalCladeOTTTaxonName": "Tragopogon", 
+"^ot:messages": {
+"message": []
+}, 
 "^ot:otusElementOrder": [
 "otus1975"
 ], 
@@ -88,7 +58,9 @@
 }, 
 "^ot:studyPublicationReference": "Evgeny V. Mavrodiev, Matthew A. Gitzendanner, Andre K. Calaminus, Riccardo M. Baldini, Pamela S. Soltis, Douglas E. Soltis. 2012. Molecular phylogeny of Tragopogon L. (Asteraceae) based on seven nuclear loci (Adh, GapC, LFY, AP3, PI, ITS, and ETS). Webbia 67(2): 111-137. 2012.", 
 "^ot:studyYear": 2012, 
-"^ot:tag": "ingroup added;", 
+"^ot:tag": [
+"ingroup added;"
+], 
 "^ot:treesElementOrder": [
 "trees1975"
 ], 
@@ -101,7 +73,9 @@
 "^ot:ottTaxonName": "Podospermum jacquinianum"
 }, 
 "otu296942": {
-"^ot:originalLabel": "Podospermum canum"
+"^ot:originalLabel": "Podospermum canum", 
+"^ot:ottId": 443537, 
+"^ot:ottTaxonName": "Scorzonera cana"
 }, 
 "otu296943": {
 "^ot:originalLabel": "Podospermum meyeri", 
@@ -926,7 +900,9 @@
 "^ot:originalLabel": "Tragopogon sabulosus 1"
 }, 
 "otu297197": {
-"^ot:originalLabel": "Tragopogon nachitschevanicus"
+"^ot:originalLabel": "Tragopogon nachitschevanicus", 
+"^ot:ottId": 5336763, 
+"^ot:ottTaxonName": "Tragopogon nachitschevanicus"
 }, 
 "otu297198": {
 "^ot:originalLabel": "Tragopogon agrostiphyllus", 
@@ -934,10 +910,14 @@
 "^ot:ottTaxonName": "Tragopogon agrostiphyllus"
 }, 
 "otu297199": {
-"^ot:originalLabel": "Tragopogon vvedenskyi"
+"^ot:originalLabel": "Tragopogon vvedenskyi", 
+"^ot:ottId": 5336750, 
+"^ot:ottTaxonName": "Tragopogon vvedenskyi"
 }, 
 "otu297200": {
-"^ot:originalLabel": "Tragopogon angustissimus"
+"^ot:originalLabel": "Tragopogon angustissimus", 
+"^ot:ottId": 5336752, 
+"^ot:ottTaxonName": "Tragopogon angustissimus"
 }, 
 "otu297201": {
 "^ot:originalLabel": "Tragopogon crocifolius 2", 
@@ -1021,7 +1001,9 @@
 "^ot:ottTaxonName": "Tragopogon samaritani"
 }, 
 "otu297218": {
-"^ot:originalLabel": "Tragopogon badali"
+"^ot:originalLabel": "Tragopogon badali", 
+"^ot:ottId": 5336749, 
+"^ot:ottTaxonName": "Tragopogon badali"
 }, 
 "otu297219": {
 "^ot:originalLabel": "Tragopogon balcanicus 2", 
@@ -1079,7 +1061,9 @@
 "^ot:ottTaxonName": "Tragopogon capitatus"
 }, 
 "otu297230": {
-"^ot:originalLabel": "Tragopogon macrocephalum"
+"^ot:originalLabel": "Tragopogon macrocephalum", 
+"^ot:ottId": 5336768, 
+"^ot:ottTaxonName": "Tragopogon sp. 'macrocephalum'"
 }, 
 "otu297231": {
 "^ot:originalLabel": "Tragopogon capitatus 5", 
@@ -1112,7 +1096,9 @@
 "^ot:ottTaxonName": "Tragopogon krascheninnikovii"
 }, 
 "otu297237": {
-"^ot:originalLabel": "Tragopogon turkestanicus"
+"^ot:originalLabel": "Tragopogon turkestanicus", 
+"^ot:ottId": 5336776, 
+"^ot:ottTaxonName": "Tragopogon turkestanicus"
 }, 
 "otu297238": {
 "^ot:originalLabel": "Tragopogon dubius 5", 
@@ -1188,7 +1174,9 @@
 "^ot:originalLabel": "Tragopogon gaudanicus 3"
 }, 
 "otu297255": {
-"^ot:originalLabel": "Tragopogon kultiassovii"
+"^ot:originalLabel": "Tragopogon kultiassovii", 
+"^ot:ottId": 5336772, 
+"^ot:ottTaxonName": "Tragopogon kultiassovii"
 }, 
 "otu297256": {
 "^ot:originalLabel": "Tragopogon montanus 2", 
@@ -1227,7 +1215,9 @@
 "^ot:originalLabel": "Tragopogon kasahstanicus 3"
 }, 
 "otu297266": {
-"^ot:originalLabel": "Tragopogon kopetdaghensis"
+"^ot:originalLabel": "Tragopogon kopetdaghensis", 
+"^ot:ottId": 5336755, 
+"^ot:ottTaxonName": "Tragopogon kopetdaghensis"
 }, 
 "otu297267": {
 "^ot:originalLabel": "Tragopogon marginifolius 2", 
@@ -1370,7 +1360,9 @@
 "^ot:ottTaxonName": "Tragopogon undulatus"
 }, 
 "otu297297": {
-"^ot:originalLabel": "Tragopogon donetzicus"
+"^ot:originalLabel": "Tragopogon donetzicus", 
+"^ot:ottId": 5336769, 
+"^ot:ottTaxonName": "Tragopogon donetzicus"
 }, 
 "otu297298": {
 "^ot:originalLabel": "Tragopogon reticulatus 4", 
@@ -1499,7 +1491,9 @@
 "^ot:ottTaxonName": "Tragopogon sibiricus"
 }, 
 "otu297326": {
-"^ot:originalLabel": "Tragopogon daghestanicus"
+"^ot:originalLabel": "Tragopogon daghestanicus", 
+"^ot:ottId": 5336771, 
+"^ot:ottTaxonName": "Tragopogon daghestanicus"
 }, 
 "otu297327": {
 "^ot:originalLabel": "Tragopogon ucrainicus", 
@@ -1583,7 +1577,9 @@
 "^ot:ottTaxonName": "Tragopogon orientalis"
 }, 
 "otu297344": {
-"^ot:originalLabel": "Tragopogon altaicus"
+"^ot:originalLabel": "Tragopogon altaicus", 
+"^ot:ottId": 5336753, 
+"^ot:ottTaxonName": "Tragopogon altaicus"
 }, 
 "otu297345": {
 "^ot:originalLabel": "Tragopogon hayekii", 
@@ -1888,7 +1884,9 @@
 "^ot:ottTaxonName": "Tragopogon pusillus"
 }, 
 "otu297409": {
-"^ot:originalLabel": "Tragopogon maturatus"
+"^ot:originalLabel": "Tragopogon maturatus", 
+"^ot:ottId": 5336757, 
+"^ot:ottTaxonName": "Tragopogon maturatus"
 }, 
 "otu297410": {
 "^ot:originalLabel": "Tragopogon gongylorrhizus", 
@@ -1913,9 +1911,16 @@
 "treeById": {
 "tree4040": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "ml", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node752927", 
-"^ot:tag": "delete", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [
+"delete"
+], 
 "edgeBySourceId": {
 "node752927": {
 "edge752928": {
@@ -5928,9 +5933,15 @@
 }, 
 "tree4041": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "ml", 
-"^ot:inGroupClade": "node753429", 
+"^ot:inGroupClade": "node753489", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node753428", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node753428": {
 "edge753429": {

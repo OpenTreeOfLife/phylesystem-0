@@ -19,48 +19,11 @@
 "@id": "peyotl-validator", 
 "@name": "validate_ot_nexson.py", 
 "@url": "https://github.com/OpenTreeOfLife/peyotl", 
-"@version": "0.0.3a", 
+"@version": "0.0.4a", 
 "invocation": {
-"checksPerformed": [
-"MISSING_MANDATORY_KEY", 
-"MISSING_OPTIONAL_KEY", 
-"UNRECOGNIZED_KEY", 
-"MISSING_LIST_EXPECTED", 
-"DUPLICATING_SINGLETON_KEY", 
-"REFERENCED_ID_NOT_FOUND", 
-"REPEATED_ID", 
-"REPEATED_OTU", 
-"MULTIPLE_ROOT_NODES", 
-"NO_ROOT_NODE", 
-"MULTIPLE_EDGES_FOR_NODES", 
-"CYCLE_DETECTED", 
-"DISCONNECTED_GRAPH_DETECTED", 
-"INCORRECT_ROOT_NODE_LABEL", 
-"TIP_WITHOUT_OTU", 
-"TIP_WITHOUT_OTT_ID", 
-"MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
-"NON_MONOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
-"INVALID_PROPERTY_VALUE", 
-"PROPERTY_VALUE_NOT_USEFUL", 
-"UNRECOGNIZED_PROPERTY_VALUE", 
-"MULTIPLE_TREES", 
-"UNRECOGNIZED_TAG", 
-"CONFLICTING_PROPERTY_VALUES", 
-"NO_TREES", 
-"DEPRECATED_PROPERTY", 
-"UNPARSEABLE_META", 
-"UNREACHABLE_NODE", 
-"INCORRECT_VALUE_TYPE", 
-"MISSING_CRUCIAL_CONTENT"
-], 
 "commandLine": [
 "--embed", 
-"--agent-only", 
-"-e", 
-"../mig-phyelesystem-scratch/656/validation.json", 
-"-o", 
-"../mig-phyelesystem-scratch/656/final.json", 
-"../mig-phyelesystem-scratch/656/v1.2.1-656.json"
+"--agent-only"
 ], 
 "otherProperty": [
 {
@@ -76,9 +39,16 @@
 }
 ]
 }, 
+"^ot:annotationEvents": {
+"annotation": []
+}, 
+"^ot:candidateTreeForSynthesis": [], 
 "^ot:curatorName": "bryan drew", 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S10582"
+}, 
+"^ot:messages": {
+"message": []
 }, 
 "^ot:otusElementOrder": [
 "otus656"
@@ -89,6 +59,7 @@
 }, 
 "^ot:studyPublicationReference": "Weeks A., Baird K.E., & Mcmullen C.K. 2010. Origin and evolution of endemic Gal\u00e1pagos Varronia species (Cordiaceae). Molecular Phylogenetics and Evolution 57.2 (2010): 948-954.", 
 "^ot:studyYear": 2010, 
+"^ot:tag": [], 
 "^ot:treesElementOrder": [
 "trees656"
 ], 
@@ -367,7 +338,6 @@
 }, 
 "otu181831": {
 "^ot:originalLabel": "Cordia longipedunculata AY321625", 
-"^ot:ottTaxonName": "Cordia longipedunculata", 
 "^ot:treebaseOTUId": "Tl310693"
 }, 
 "otu181832": {
@@ -378,7 +348,6 @@
 }, 
 "otu181833": {
 "^ot:originalLabel": "Cordia leucocephala AY321623", 
-"^ot:ottTaxonName": "Cordia leucocephala", 
 "^ot:treebaseOTUId": "Tl310695"
 }, 
 "otu181834": {
@@ -551,7 +520,8 @@
 }, 
 "otu181862": {
 "^ot:originalLabel": "Cordia bullata AY176084", 
-"^ot:ottTaxonName": "Cordia bullata", 
+"^ot:ottId": 601309, 
+"^ot:ottTaxonName": "Varronia bullata", 
 "^ot:treebaseOTUId": "Tl310724"
 }, 
 "otu181863": {
@@ -562,8 +532,8 @@
 }, 
 "otu181864": {
 "^ot:originalLabel": "Cordia angustifolia AY321619", 
-"^ot:ottId": 3869426, 
-"^ot:ottTaxonName": "Cordia angustifolia", 
+"^ot:ottId": 996833, 
+"^ot:ottTaxonName": "Cordia curassavica", 
 "^ot:treebaseOTUId": "Tl310726"
 }, 
 "otu181865": {
@@ -772,8 +742,8 @@
 }, 
 "otu181899": {
 "^ot:originalLabel": "Cordia lima AY321624", 
-"^ot:ottId": 3869432, 
-"^ot:ottTaxonName": "Cordia lima", 
+"^ot:ottId": 167803, 
+"^ot:ottTaxonName": "Varronia lima", 
 "^ot:treebaseOTUId": "Tl310761"
 }, 
 "otu181900": {
@@ -916,7 +886,6 @@
 }, 
 "otu181923": {
 "^ot:originalLabel": "Cordia longipedunculata AY326125", 
-"^ot:ottTaxonName": "Cordia longipedunculata", 
 "^ot:treebaseOTUId": "Tl310785"
 }, 
 "otu181924": {
@@ -1138,8 +1107,14 @@
 "treeById": {
 "tree1159": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "ITS MP C", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node417610", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node417610": {
 "edge417611": {
@@ -2342,9 +2317,15 @@
 }, 
 "tree1160": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "ndhF MB", 
 "^ot:inGroupClade": "node417785", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node417781", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node417781": {
 "edge417782": {
@@ -2875,9 +2856,15 @@
 }, 
 "tree1161": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "ITS B MB", 
 "^ot:inGroupClade": "node417857", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node417856", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node417856": {
 "edge417857": {
@@ -3422,9 +3409,15 @@
 }, 
 "tree5469": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "ITS MP 1", 
 "^ot:inGroupClade": "node939888", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node939887", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node939887": {
 "edge939888": {

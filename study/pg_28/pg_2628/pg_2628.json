@@ -19,48 +19,11 @@
 "@id": "peyotl-validator", 
 "@name": "validate_ot_nexson.py", 
 "@url": "https://github.com/OpenTreeOfLife/peyotl", 
-"@version": "0.0.3a", 
+"@version": "0.0.4a", 
 "invocation": {
-"checksPerformed": [
-"MISSING_MANDATORY_KEY", 
-"MISSING_OPTIONAL_KEY", 
-"UNRECOGNIZED_KEY", 
-"MISSING_LIST_EXPECTED", 
-"DUPLICATING_SINGLETON_KEY", 
-"REFERENCED_ID_NOT_FOUND", 
-"REPEATED_ID", 
-"REPEATED_OTU", 
-"MULTIPLE_ROOT_NODES", 
-"NO_ROOT_NODE", 
-"MULTIPLE_EDGES_FOR_NODES", 
-"CYCLE_DETECTED", 
-"DISCONNECTED_GRAPH_DETECTED", 
-"INCORRECT_ROOT_NODE_LABEL", 
-"TIP_WITHOUT_OTU", 
-"TIP_WITHOUT_OTT_ID", 
-"MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
-"NON_MONOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
-"INVALID_PROPERTY_VALUE", 
-"PROPERTY_VALUE_NOT_USEFUL", 
-"UNRECOGNIZED_PROPERTY_VALUE", 
-"MULTIPLE_TREES", 
-"UNRECOGNIZED_TAG", 
-"CONFLICTING_PROPERTY_VALUES", 
-"NO_TREES", 
-"DEPRECATED_PROPERTY", 
-"UNPARSEABLE_META", 
-"UNREACHABLE_NODE", 
-"INCORRECT_VALUE_TYPE", 
-"MISSING_CRUCIAL_CONTENT"
-], 
 "commandLine": [
 "--embed", 
-"--agent-only", 
-"-e", 
-"../mig-phyelesystem-scratch/2628/validation.json", 
-"-o", 
-"../mig-phyelesystem-scratch/2628/final.json", 
-"../mig-phyelesystem-scratch/2628/v1.2.1-2628.json"
+"--agent-only"
 ], 
 "otherProperty": [
 {
@@ -76,18 +39,26 @@
 }
 ]
 }, 
+"^ot:annotationEvents": {
+"annotation": []
+}, 
+"^ot:candidateTreeForSynthesis": [], 
 "^ot:curatorName": "Chris Owen", 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S14253"
 }, 
 "^ot:focalClade": 436548, 
 "^ot:focalCladeOTTTaxonName": "Heteronychia", 
+"^ot:messages": {
+"message": []
+}, 
 "^ot:otusElementOrder": [
 "otus2628"
 ], 
 "^ot:studyId": "2628", 
-"^ot:studyPublicationReference": "Whitmore D., Pape T., & Cerretti P. 2013. Phylogeny of Heteronychia: the largest lineage of Sarcophaga (Diptera: Sarcophagidae). Zoological Journal of the Linnean Society, .", 
+"^ot:studyPublicationReference": "Whitmore, D., Pape T., & Cerretti P. 2013. Phylogeny of Heteronychia: the largest lineage of Sarcophaga (Diptera: Sarcophagidae). Zoological Journal of the Linnean Society 169 (3): 604-639.", 
 "^ot:studyYear": 2013, 
+"^ot:tag": [], 
 "^ot:treesElementOrder": [
 "trees2628"
 ], 
@@ -100,6 +71,8 @@
 }, 
 "otu392844": {
 "^ot:originalLabel": "Sarcophaga bezziana", 
+"^ot:ottId": 1005087, 
+"^ot:ottTaxonName": "Sarcophaga infantilis", 
 "^ot:treebaseOTUId": "Tl1097596"
 }, 
 "otu392845": {
@@ -366,6 +339,8 @@
 }, 
 "otu392892": {
 "^ot:originalLabel": "Sarcophaga infantilis", 
+"^ot:ottId": 1005087, 
+"^ot:ottTaxonName": "Sarcophaga infantilis", 
 "^ot:treebaseOTUId": "Tl1097644"
 }, 
 "otu392893": {
@@ -599,10 +574,17 @@
 "treeById": {
 "tree6143": {
 "@xsi:type": "nex:FloatTree", 
-"^ot:curatedType": "Imported tree 1", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
+"^ot:curatedType": "Fig 17. MP strict consensus", 
 "^ot:inGroupClade": "node1048608", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node1048608", 
-"^ot:tag": "choose me", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [
+"choose me"
+], 
 "edgeBySourceId": {
 "node1048608": {
 "edge1048609": {
@@ -1616,9 +1598,15 @@
 }, 
 "tree6144": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "Imported tree 2", 
 "^ot:inGroupClade": "node1048752", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node1048752", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node1048752": {
 "edge1048753": {
@@ -2842,9 +2830,15 @@
 }, 
 "tree6145": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "Imported tree 3", 
 "^ot:inGroupClade": "node1048926", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node1048926", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node1048926": {
 "edge1048927": {
@@ -4068,9 +4062,15 @@
 }, 
 "tree6146": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "Imported tree 4", 
 "^ot:inGroupClade": "node1049100", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node1049100", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node1049100": {
 "edge1049101": {

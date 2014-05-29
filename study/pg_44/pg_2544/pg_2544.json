@@ -19,48 +19,11 @@
 "@id": "peyotl-validator", 
 "@name": "validate_ot_nexson.py", 
 "@url": "https://github.com/OpenTreeOfLife/peyotl", 
-"@version": "0.0.3a", 
+"@version": "0.0.4a", 
 "invocation": {
-"checksPerformed": [
-"MISSING_MANDATORY_KEY", 
-"MISSING_OPTIONAL_KEY", 
-"UNRECOGNIZED_KEY", 
-"MISSING_LIST_EXPECTED", 
-"DUPLICATING_SINGLETON_KEY", 
-"REFERENCED_ID_NOT_FOUND", 
-"REPEATED_ID", 
-"REPEATED_OTU", 
-"MULTIPLE_ROOT_NODES", 
-"NO_ROOT_NODE", 
-"MULTIPLE_EDGES_FOR_NODES", 
-"CYCLE_DETECTED", 
-"DISCONNECTED_GRAPH_DETECTED", 
-"INCORRECT_ROOT_NODE_LABEL", 
-"TIP_WITHOUT_OTU", 
-"TIP_WITHOUT_OTT_ID", 
-"MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
-"NON_MONOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
-"INVALID_PROPERTY_VALUE", 
-"PROPERTY_VALUE_NOT_USEFUL", 
-"UNRECOGNIZED_PROPERTY_VALUE", 
-"MULTIPLE_TREES", 
-"UNRECOGNIZED_TAG", 
-"CONFLICTING_PROPERTY_VALUES", 
-"NO_TREES", 
-"DEPRECATED_PROPERTY", 
-"UNPARSEABLE_META", 
-"UNREACHABLE_NODE", 
-"INCORRECT_VALUE_TYPE", 
-"MISSING_CRUCIAL_CONTENT"
-], 
 "commandLine": [
 "--embed", 
-"--agent-only", 
-"-e", 
-"../mig-phyelesystem-scratch/2544/validation.json", 
-"-o", 
-"../mig-phyelesystem-scratch/2544/final.json", 
-"../mig-phyelesystem-scratch/2544/v1.2.1-2544.json"
+"--agent-only"
 ], 
 "otherProperty": [
 {
@@ -76,12 +39,19 @@
 }
 ]
 }, 
+"^ot:annotationEvents": {
+"annotation": []
+}, 
+"^ot:candidateTreeForSynthesis": [], 
 "^ot:curatorName": "Chris Owen", 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S2073"
 }, 
 "^ot:focalClade": 1007159, 
 "^ot:focalCladeOTTTaxonName": "Hexactinellida", 
+"^ot:messages": {
+"message": []
+}, 
 "^ot:otusElementOrder": [
 "otus2544"
 ], 
@@ -89,8 +59,9 @@
 "^ot:studyPublication": {
 "@href": "http://dx.doi.org/10.1080/10635150802161088"
 }, 
-"^ot:studyPublicationReference": "Dohrmann M., Janussen D., Reitner J., Collins A., & Woerheide G. 2008. Phylogeny and evolution of glass sponges (Porifera, Hexactinellida). Systematic Biology, 57(3): 388-405.", 
+"^ot:studyPublicationReference": "Dohrmann, M., Janussen D., Reitner J., Collins A., & Woerheide G. 2008. Phylogeny and evolution of glass sponges (Porifera, Hexactinellida). Systematic Biology 57 (3): 388-405.", 
 "^ot:studyYear": 2008, 
+"^ot:tag": [], 
 "^ot:treesElementOrder": [
 "trees2544"
 ], 
@@ -201,6 +172,8 @@
 }, 
 "otu365926": {
 "^ot:originalLabel": "Clathrochone clathroclada", 
+"^ot:ottId": 459555, 
+"^ot:ottTaxonName": "Clathrochone clathroclada", 
 "^ot:treebaseOTUId": "Tl215137"
 }, 
 "otu365927": {
@@ -455,6 +428,8 @@
 }, 
 "otu365969": {
 "^ot:originalLabel": "Choanoflagellata", 
+"^ot:ottId": 202765, 
+"^ot:ottTaxonName": "Choanoflagellida", 
 "^ot:treebaseOTUId": "Tl82389"
 }, 
 "otu365970": {
@@ -487,6 +462,8 @@
 }, 
 "otu365975": {
 "^ot:originalLabel": "Clathrochone", 
+"^ot:ottId": 184199, 
+"^ot:ottTaxonName": "Clathrochone", 
 "^ot:treebaseOTUId": "Tl82395"
 }, 
 "otu365976": {
@@ -592,733 +569,22 @@
 "trees2544": {
 "@otus": "otus2544", 
 "^ot:treeElementOrder": [
-"tree5484", 
 "tree5485", 
 "tree5486", 
 "tree6482"
 ], 
 "treeById": {
-"tree5484": {
-"@xsi:type": "nex:FloatTree", 
-"^ot:curatedType": "Fig. 2- BI", 
-"^ot:inGroupClade": "node944527", 
-"^ot:rootNodeId": "node944494", 
-"^ot:tag": "delete me", 
-"edgeBySourceId": {
-"node944494": {
-"edge944495": {
-"@source": "node944494", 
-"@target": "node944495"
-}, 
-"edge944594": {
-"@source": "node944494", 
-"@target": "node944594"
-}
-}, 
-"node944495": {
-"edge944496": {
-"@source": "node944495", 
-"@target": "node944496"
-}, 
-"edge944505": {
-"@source": "node944495", 
-"@target": "node944505"
-}
-}, 
-"node944496": {
-"edge944497": {
-"@source": "node944496", 
-"@target": "node944497"
-}, 
-"edge944498": {
-"@source": "node944496", 
-"@target": "node944498"
-}
-}, 
-"node944498": {
-"edge944499": {
-"@source": "node944498", 
-"@target": "node944499"
-}, 
-"edge944502": {
-"@source": "node944498", 
-"@target": "node944502"
-}
-}, 
-"node944499": {
-"edge944500": {
-"@source": "node944499", 
-"@target": "node944500"
-}, 
-"edge944501": {
-"@source": "node944499", 
-"@target": "node944501"
-}
-}, 
-"node944502": {
-"edge944503": {
-"@source": "node944502", 
-"@target": "node944503"
-}, 
-"edge944504": {
-"@source": "node944502", 
-"@target": "node944504"
-}
-}, 
-"node944505": {
-"edge944506": {
-"@source": "node944505", 
-"@target": "node944506"
-}, 
-"edge944517": {
-"@source": "node944505", 
-"@target": "node944517"
-}
-}, 
-"node944506": {
-"edge944507": {
-"@source": "node944506", 
-"@target": "node944507"
-}, 
-"edge944510": {
-"@source": "node944506", 
-"@target": "node944510"
-}
-}, 
-"node944507": {
-"edge944508": {
-"@source": "node944507", 
-"@target": "node944508"
-}, 
-"edge944509": {
-"@source": "node944507", 
-"@target": "node944509"
-}
-}, 
-"node944510": {
-"edge944511": {
-"@source": "node944510", 
-"@target": "node944511"
-}, 
-"edge944514": {
-"@source": "node944510", 
-"@target": "node944514"
-}
-}, 
-"node944511": {
-"edge944512": {
-"@source": "node944511", 
-"@target": "node944512"
-}, 
-"edge944513": {
-"@source": "node944511", 
-"@target": "node944513"
-}
-}, 
-"node944514": {
-"edge944515": {
-"@source": "node944514", 
-"@target": "node944515"
-}, 
-"edge944516": {
-"@source": "node944514", 
-"@target": "node944516"
-}
-}, 
-"node944517": {
-"edge944518": {
-"@source": "node944517", 
-"@target": "node944518"
-}, 
-"edge944521": {
-"@source": "node944517", 
-"@target": "node944521"
-}
-}, 
-"node944518": {
-"edge944519": {
-"@source": "node944518", 
-"@target": "node944519"
-}, 
-"edge944520": {
-"@source": "node944518", 
-"@target": "node944520"
-}
-}, 
-"node944521": {
-"edge944522": {
-"@source": "node944521", 
-"@target": "node944522"
-}, 
-"edge944527": {
-"@source": "node944521", 
-"@target": "node944527"
-}
-}, 
-"node944522": {
-"edge944523": {
-"@source": "node944522", 
-"@target": "node944523"
-}, 
-"edge944524": {
-"@source": "node944522", 
-"@target": "node944524"
-}
-}, 
-"node944524": {
-"edge944525": {
-"@source": "node944524", 
-"@target": "node944525"
-}, 
-"edge944526": {
-"@source": "node944524", 
-"@target": "node944526"
-}
-}, 
-"node944527": {
-"edge944528": {
-"@source": "node944527", 
-"@target": "node944528"
-}, 
-"edge944537": {
-"@source": "node944527", 
-"@target": "node944537"
-}
-}, 
-"node944528": {
-"edge944529": {
-"@source": "node944528", 
-"@target": "node944529"
-}, 
-"edge944532": {
-"@source": "node944528", 
-"@target": "node944532"
-}
-}, 
-"node944529": {
-"edge944530": {
-"@source": "node944529", 
-"@target": "node944530"
-}, 
-"edge944531": {
-"@source": "node944529", 
-"@target": "node944531"
-}
-}, 
-"node944532": {
-"edge944533": {
-"@source": "node944532", 
-"@target": "node944533"
-}, 
-"edge944534": {
-"@source": "node944532", 
-"@target": "node944534"
-}
-}, 
-"node944534": {
-"edge944535": {
-"@source": "node944534", 
-"@target": "node944535"
-}, 
-"edge944536": {
-"@source": "node944534", 
-"@target": "node944536"
-}
-}, 
-"node944537": {
-"edge944538": {
-"@source": "node944537", 
-"@target": "node944538"
-}, 
-"edge944549": {
-"@source": "node944537", 
-"@target": "node944549"
-}
-}, 
-"node944538": {
-"edge944539": {
-"@source": "node944538", 
-"@target": "node944539"
-}, 
-"edge944542": {
-"@source": "node944538", 
-"@target": "node944542"
-}
-}, 
-"node944539": {
-"edge944540": {
-"@source": "node944539", 
-"@target": "node944540"
-}, 
-"edge944541": {
-"@source": "node944539", 
-"@target": "node944541"
-}
-}, 
-"node944542": {
-"edge944543": {
-"@source": "node944542", 
-"@target": "node944543"
-}, 
-"edge944544": {
-"@source": "node944542", 
-"@target": "node944544"
-}
-}, 
-"node944544": {
-"edge944545": {
-"@source": "node944544", 
-"@target": "node944545"
-}, 
-"edge944546": {
-"@source": "node944544", 
-"@target": "node944546"
-}
-}, 
-"node944546": {
-"edge944547": {
-"@source": "node944546", 
-"@target": "node944547"
-}, 
-"edge944548": {
-"@source": "node944546", 
-"@target": "node944548"
-}
-}, 
-"node944549": {
-"edge944550": {
-"@source": "node944549", 
-"@target": "node944550"
-}, 
-"edge944563": {
-"@source": "node944549", 
-"@target": "node944563"
-}
-}, 
-"node944550": {
-"edge944551": {
-"@source": "node944550", 
-"@target": "node944551"
-}, 
-"edge944552": {
-"@source": "node944550", 
-"@target": "node944552"
-}
-}, 
-"node944552": {
-"edge944553": {
-"@source": "node944552", 
-"@target": "node944553"
-}, 
-"edge944554": {
-"@source": "node944552", 
-"@target": "node944554"
-}
-}, 
-"node944554": {
-"edge944555": {
-"@source": "node944554", 
-"@target": "node944555"
-}, 
-"edge944558": {
-"@source": "node944554", 
-"@target": "node944558"
-}
-}, 
-"node944555": {
-"edge944556": {
-"@source": "node944555", 
-"@target": "node944556"
-}, 
-"edge944557": {
-"@source": "node944555", 
-"@target": "node944557"
-}
-}, 
-"node944558": {
-"edge944559": {
-"@source": "node944558", 
-"@target": "node944559"
-}, 
-"edge944560": {
-"@source": "node944558", 
-"@target": "node944560"
-}
-}, 
-"node944560": {
-"edge944561": {
-"@source": "node944560", 
-"@target": "node944561"
-}, 
-"edge944562": {
-"@source": "node944560", 
-"@target": "node944562"
-}
-}, 
-"node944563": {
-"edge944564": {
-"@source": "node944563", 
-"@target": "node944564"
-}, 
-"edge944569": {
-"@source": "node944563", 
-"@target": "node944569"
-}
-}, 
-"node944564": {
-"edge944565": {
-"@source": "node944564", 
-"@target": "node944565"
-}, 
-"edge944566": {
-"@source": "node944564", 
-"@target": "node944566"
-}
-}, 
-"node944566": {
-"edge944567": {
-"@source": "node944566", 
-"@target": "node944567"
-}, 
-"edge944568": {
-"@source": "node944566", 
-"@target": "node944568"
-}
-}, 
-"node944569": {
-"edge944570": {
-"@source": "node944569", 
-"@target": "node944570"
-}, 
-"edge944579": {
-"@source": "node944569", 
-"@target": "node944579"
-}
-}, 
-"node944570": {
-"edge944571": {
-"@source": "node944570", 
-"@target": "node944571"
-}, 
-"edge944574": {
-"@source": "node944570", 
-"@target": "node944574"
-}
-}, 
-"node944571": {
-"edge944572": {
-"@source": "node944571", 
-"@target": "node944572"
-}, 
-"edge944573": {
-"@source": "node944571", 
-"@target": "node944573"
-}
-}, 
-"node944574": {
-"edge944575": {
-"@source": "node944574", 
-"@target": "node944575"
-}, 
-"edge944576": {
-"@source": "node944574", 
-"@target": "node944576"
-}
-}, 
-"node944576": {
-"edge944577": {
-"@source": "node944576", 
-"@target": "node944577"
-}, 
-"edge944578": {
-"@source": "node944576", 
-"@target": "node944578"
-}
-}, 
-"node944579": {
-"edge944580": {
-"@source": "node944579", 
-"@target": "node944580"
-}, 
-"edge944581": {
-"@source": "node944579", 
-"@target": "node944581"
-}
-}, 
-"node944581": {
-"edge944582": {
-"@source": "node944581", 
-"@target": "node944582"
-}, 
-"edge944587": {
-"@source": "node944581", 
-"@target": "node944587"
-}
-}, 
-"node944582": {
-"edge944583": {
-"@source": "node944582", 
-"@target": "node944583"
-}, 
-"edge944584": {
-"@source": "node944582", 
-"@target": "node944584"
-}
-}, 
-"node944584": {
-"edge944585": {
-"@source": "node944584", 
-"@target": "node944585"
-}, 
-"edge944586": {
-"@source": "node944584", 
-"@target": "node944586"
-}
-}, 
-"node944587": {
-"edge944588": {
-"@source": "node944587", 
-"@target": "node944588"
-}, 
-"edge944589": {
-"@source": "node944587", 
-"@target": "node944589"
-}
-}, 
-"node944589": {
-"edge944590": {
-"@source": "node944589", 
-"@target": "node944590"
-}, 
-"edge944591": {
-"@source": "node944589", 
-"@target": "node944591"
-}
-}, 
-"node944591": {
-"edge944592": {
-"@source": "node944591", 
-"@target": "node944592"
-}, 
-"edge944593": {
-"@source": "node944591", 
-"@target": "node944593"
-}
-}
-}, 
-"nodeById": {
-"node944494": {
-"@root": true
-}, 
-"node944495": {}, 
-"node944496": {}, 
-"node944497": {
-"@otu": "otu365935"
-}, 
-"node944498": {}, 
-"node944499": {}, 
-"node944500": {
-"@otu": "otu365953"
-}, 
-"node944501": {
-"@otu": "otu365920"
-}, 
-"node944502": {}, 
-"node944503": {
-"@otu": "otu365914"
-}, 
-"node944504": {
-"@otu": "otu365915"
-}, 
-"node944505": {}, 
-"node944506": {}, 
-"node944507": {}, 
-"node944508": {
-"@otu": "otu365916"
-}, 
-"node944509": {
-"@otu": "otu365913"
-}, 
-"node944510": {}, 
-"node944511": {}, 
-"node944512": {
-"@otu": "otu365952"
-}, 
-"node944513": {
-"@otu": "otu365941"
-}, 
-"node944514": {}, 
-"node944515": {
-"@otu": "otu365911"
-}, 
-"node944516": {
-"@otu": "otu365960"
-}, 
-"node944517": {}, 
-"node944518": {}, 
-"node944519": {
-"@otu": "otu365940"
-}, 
-"node944520": {
-"@otu": "otu365946"
-}, 
-"node944521": {}, 
-"node944522": {}, 
-"node944523": {
-"@otu": "otu365937"
-}, 
-"node944524": {}, 
-"node944525": {
-"@otu": "otu365917"
-}, 
-"node944526": {
-"@otu": "otu365943"
-}, 
-"node944527": {}, 
-"node944528": {}, 
-"node944529": {}, 
-"node944530": {
-"@otu": "otu365928"
-}, 
-"node944531": {
-"@otu": "otu365957"
-}, 
-"node944532": {}, 
-"node944533": {
-"@otu": "otu365936"
-}, 
-"node944534": {}, 
-"node944535": {
-"@otu": "otu365954"
-}, 
-"node944536": {
-"@otu": "otu365923"
-}, 
-"node944537": {}, 
-"node944538": {}, 
-"node944539": {}, 
-"node944540": {
-"@otu": "otu365947"
-}, 
-"node944541": {
-"@otu": "otu365925"
-}, 
-"node944542": {}, 
-"node944543": {
-"@otu": "otu365959"
-}, 
-"node944544": {}, 
-"node944545": {
-"@otu": "otu365922"
-}, 
-"node944546": {}, 
-"node944547": {
-"@otu": "otu365938"
-}, 
-"node944548": {
-"@otu": "otu365948"
-}, 
-"node944549": {}, 
-"node944550": {}, 
-"node944551": {
-"@otu": "otu365912"
-}, 
-"node944552": {}, 
-"node944553": {
-"@otu": "otu365910"
-}, 
-"node944554": {}, 
-"node944555": {}, 
-"node944556": {
-"@otu": "otu365934"
-}, 
-"node944557": {
-"@otu": "otu365932"
-}, 
-"node944558": {}, 
-"node944559": {
-"@otu": "otu365918"
-}, 
-"node944560": {}, 
-"node944561": {
-"@otu": "otu365942"
-}, 
-"node944562": {
-"@otu": "otu365949"
-}, 
-"node944563": {}, 
-"node944564": {}, 
-"node944565": {
-"@otu": "otu365926"
-}, 
-"node944566": {}, 
-"node944567": {
-"@otu": "otu365945"
-}, 
-"node944568": {
-"@otu": "otu365958"
-}, 
-"node944569": {}, 
-"node944570": {}, 
-"node944571": {}, 
-"node944572": {
-"@otu": "otu365931"
-}, 
-"node944573": {
-"@otu": "otu365955"
-}, 
-"node944574": {}, 
-"node944575": {
-"@otu": "otu365933"
-}, 
-"node944576": {}, 
-"node944577": {
-"@otu": "otu365950"
-}, 
-"node944578": {
-"@otu": "otu365927"
-}, 
-"node944579": {}, 
-"node944580": {
-"@otu": "otu365930"
-}, 
-"node944581": {}, 
-"node944582": {}, 
-"node944583": {
-"@otu": "otu365924"
-}, 
-"node944584": {}, 
-"node944585": {
-"@otu": "otu365921"
-}, 
-"node944586": {
-"@otu": "otu365951"
-}, 
-"node944587": {}, 
-"node944588": {
-"@otu": "otu365939"
-}, 
-"node944589": {}, 
-"node944590": {
-"@otu": "otu365956"
-}, 
-"node944591": {}, 
-"node944592": {
-"@otu": "otu365919"
-}, 
-"node944593": {
-"@otu": "otu365929"
-}, 
-"node944594": {
-"@otu": "otu365944"
-}
-}
-}, 
 "tree5485": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "Fig. 3a- MP", 
 "^ot:inGroupClade": "node944598", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node944595", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node944595": {
 "edge944596": {
@@ -1632,9 +898,15 @@
 }, 
 "tree5486": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "Fig. 3b- MP", 
 "^ot:inGroupClade": "node944641", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node944639", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node944639": {
 "edge944640": {
@@ -1962,9 +1234,15 @@
 }, 
 "tree6482": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "Fig 2. BI", 
 "^ot:inGroupClade": "node1120655", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node1120650", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node1120650": {
 "edge1120651": {

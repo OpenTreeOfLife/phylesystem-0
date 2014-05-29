@@ -19,48 +19,11 @@
 "@id": "peyotl-validator", 
 "@name": "validate_ot_nexson.py", 
 "@url": "https://github.com/OpenTreeOfLife/peyotl", 
-"@version": "0.0.3a", 
+"@version": "0.0.4a", 
 "invocation": {
-"checksPerformed": [
-"MISSING_MANDATORY_KEY", 
-"MISSING_OPTIONAL_KEY", 
-"UNRECOGNIZED_KEY", 
-"MISSING_LIST_EXPECTED", 
-"DUPLICATING_SINGLETON_KEY", 
-"REFERENCED_ID_NOT_FOUND", 
-"REPEATED_ID", 
-"REPEATED_OTU", 
-"MULTIPLE_ROOT_NODES", 
-"NO_ROOT_NODE", 
-"MULTIPLE_EDGES_FOR_NODES", 
-"CYCLE_DETECTED", 
-"DISCONNECTED_GRAPH_DETECTED", 
-"INCORRECT_ROOT_NODE_LABEL", 
-"TIP_WITHOUT_OTU", 
-"TIP_WITHOUT_OTT_ID", 
-"MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
-"NON_MONOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
-"INVALID_PROPERTY_VALUE", 
-"PROPERTY_VALUE_NOT_USEFUL", 
-"UNRECOGNIZED_PROPERTY_VALUE", 
-"MULTIPLE_TREES", 
-"UNRECOGNIZED_TAG", 
-"CONFLICTING_PROPERTY_VALUES", 
-"NO_TREES", 
-"DEPRECATED_PROPERTY", 
-"UNPARSEABLE_META", 
-"UNREACHABLE_NODE", 
-"INCORRECT_VALUE_TYPE", 
-"MISSING_CRUCIAL_CONTENT"
-], 
 "commandLine": [
 "--embed", 
-"--agent-only", 
-"-e", 
-"../mig-phyelesystem-scratch/2379/validation.json", 
-"-o", 
-"../mig-phyelesystem-scratch/2379/final.json", 
-"../mig-phyelesystem-scratch/2379/v1.2.1-2379.json"
+"--agent-only"
 ], 
 "otherProperty": [
 {
@@ -76,12 +39,19 @@
 }
 ]
 }, 
+"^ot:annotationEvents": {
+"annotation": []
+}, 
+"^ot:candidateTreeForSynthesis": [], 
 "^ot:curatorName": "Romina Gazis", 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S12760"
 }, 
 "^ot:focalClade": 985691, 
 "^ot:focalCladeOTTTaxonName": "Calocera", 
+"^ot:messages": {
+"message": []
+}, 
 "^ot:otusElementOrder": [
 "otus2379"
 ], 
@@ -92,8 +62,8 @@
 "^ot:studyPublicationReference": "Shirouzu T., Ishikawa N.K., Hirose D., & Maekawa N. 2013. A new Amazonian species of Calocera with dendroid and multi-headed basidiocarp. Mycoscience, 54: 252-256.", 
 "^ot:studyYear": 2013, 
 "^ot:tag": [
-"ML", 
-"LSU"
+"LSU", 
+"ML"
 ], 
 "^ot:treesElementOrder": [
 "trees2379"
@@ -173,6 +143,8 @@
 }, 
 "otu336663": {
 "^ot:originalLabel": "Femsjonia peziziformis AB299080", 
+"^ot:ottId": 5299020, 
+"^ot:ottTaxonName": "Ditiola peziziformis", 
 "^ot:treebaseOTUId": "Tl884229"
 }, 
 "otu336664": {
@@ -249,6 +221,8 @@
 }, 
 "otu336676": {
 "^ot:originalLabel": "Dacryomitra pusilla AJ406406", 
+"^ot:ottId": 5299014, 
+"^ot:ottTaxonName": "Calocera glossoides", 
 "^ot:treebaseOTUId": "Tl884242"
 }, 
 "otu336677": {
@@ -367,10 +341,14 @@
 }, 
 "otu336696": {
 "^ot:originalLabel": "Femsjonia peziziformis AF291330", 
+"^ot:ottId": 5299020, 
+"^ot:ottTaxonName": "Ditiola peziziformis", 
 "^ot:treebaseOTUId": "Tl884262"
 }, 
 "otu336697": {
 "^ot:originalLabel": "Exidia uvapsassa AY645056", 
+"^ot:ottId": 3799701, 
+"^ot:ottTaxonName": "Exidia uvapassa", 
 "^ot:treebaseOTUId": "Tl884263"
 }, 
 "otu336698": {
@@ -712,8 +690,13 @@
 "treeById": {
 "tree4998": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "ML, LSU", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node866882", 
+"^ot:specifiedRoot": "", 
 "^ot:tag": [
 "ML", 
 "LSU", 
@@ -2332,9 +2315,14 @@
 }, 
 "tree6003": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "ML, LSU (rooted)", 
 "^ot:inGroupClade": "node1020180", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node1020179", 
+"^ot:specifiedRoot": "", 
 "^ot:tag": [
 "ML", 
 "LSU"

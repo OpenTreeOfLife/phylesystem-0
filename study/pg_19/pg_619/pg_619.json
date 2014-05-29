@@ -19,48 +19,11 @@
 "@id": "peyotl-validator", 
 "@name": "validate_ot_nexson.py", 
 "@url": "https://github.com/OpenTreeOfLife/peyotl", 
-"@version": "0.0.3a", 
+"@version": "0.0.4a", 
 "invocation": {
-"checksPerformed": [
-"MISSING_MANDATORY_KEY", 
-"MISSING_OPTIONAL_KEY", 
-"UNRECOGNIZED_KEY", 
-"MISSING_LIST_EXPECTED", 
-"DUPLICATING_SINGLETON_KEY", 
-"REFERENCED_ID_NOT_FOUND", 
-"REPEATED_ID", 
-"REPEATED_OTU", 
-"MULTIPLE_ROOT_NODES", 
-"NO_ROOT_NODE", 
-"MULTIPLE_EDGES_FOR_NODES", 
-"CYCLE_DETECTED", 
-"DISCONNECTED_GRAPH_DETECTED", 
-"INCORRECT_ROOT_NODE_LABEL", 
-"TIP_WITHOUT_OTU", 
-"TIP_WITHOUT_OTT_ID", 
-"MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
-"NON_MONOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
-"INVALID_PROPERTY_VALUE", 
-"PROPERTY_VALUE_NOT_USEFUL", 
-"UNRECOGNIZED_PROPERTY_VALUE", 
-"MULTIPLE_TREES", 
-"UNRECOGNIZED_TAG", 
-"CONFLICTING_PROPERTY_VALUES", 
-"NO_TREES", 
-"DEPRECATED_PROPERTY", 
-"UNPARSEABLE_META", 
-"UNREACHABLE_NODE", 
-"INCORRECT_VALUE_TYPE", 
-"MISSING_CRUCIAL_CONTENT"
-], 
 "commandLine": [
 "--embed", 
-"--agent-only", 
-"-e", 
-"../mig-phyelesystem-scratch/619/validation.json", 
-"-o", 
-"../mig-phyelesystem-scratch/619/final.json", 
-"../mig-phyelesystem-scratch/619/v1.2.1-619.json"
+"--agent-only"
 ], 
 "otherProperty": [
 {
@@ -76,12 +39,19 @@
 }
 ]
 }, 
+"^ot:annotationEvents": {
+"annotation": []
+}, 
+"^ot:candidateTreeForSynthesis": [], 
 "^ot:curatorName": "bryan drew", 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S925"
 }, 
 "^ot:focalClade": 524906, 
 "^ot:focalCladeOTTTaxonName": "Clusia", 
+"^ot:messages": {
+"message": []
+}, 
 "^ot:otusElementOrder": [
 "otus619"
 ], 
@@ -91,6 +61,7 @@
 }, 
 "^ot:studyPublicationReference": "Gustafsson M., & Bittrich V. 2003. Evolution of morphological diversity and resin secretion in flowers of Clusia (Clusiaceae): insights from ITS sequence variation. Nordic Journal of Botany, 22: 183-203.", 
 "^ot:studyYear": 2003, 
+"^ot:tag": [], 
 "^ot:treesElementOrder": [
 "trees619"
 ], 
@@ -255,6 +226,8 @@
 }, 
 "otu177690": {
 "^ot:originalLabel": "Quapoya peruviana", 
+"^ot:ottId": 265900, 
+"^ot:ottTaxonName": "Quapoya peruviana", 
 "^ot:treebaseOTUId": "Tl11359"
 }, 
 "otu177691": {
@@ -265,6 +238,8 @@
 }, 
 "otu177692": {
 "^ot:originalLabel": "Havetia laurifolia", 
+"^ot:ottId": 265903, 
+"^ot:ottTaxonName": "Havetia laurifolia", 
 "^ot:treebaseOTUId": "Tl11361"
 }, 
 "otu177693": {
@@ -275,6 +250,8 @@
 }, 
 "otu177694": {
 "^ot:originalLabel": "Tripetalum", 
+"^ot:ottId": 201949, 
+"^ot:ottTaxonName": "Tripetalum cymosum", 
 "^ot:treebaseOTUId": "Tl11363"
 }, 
 "otu177695": {
@@ -297,6 +274,8 @@
 }, 
 "otu177698": {
 "^ot:originalLabel": "Quapoya sp. MG386", 
+"^ot:ottId": 840608, 
+"^ot:ottTaxonName": "Quapoya sp. MG386", 
 "^ot:treebaseOTUId": "Tl11367"
 }, 
 "otu177699": {
@@ -397,6 +376,8 @@
 }, 
 "otu177715": {
 "^ot:originalLabel": "Havetiopsis sp. BS13076", 
+"^ot:ottId": 840606, 
+"^ot:ottTaxonName": "Havetiopsis sp. BS13076", 
 "^ot:treebaseOTUId": "Tl11384"
 }, 
 "otu177716": {
@@ -451,6 +432,8 @@
 }, 
 "otu177725": {
 "^ot:originalLabel": "Oedematopus octandrus", 
+"^ot:ottId": 265902, 
+"^ot:ottTaxonName": "Oedematopus octandrus", 
 "^ot:treebaseOTUId": "Tl11395"
 }, 
 "otu177726": {
@@ -485,6 +468,8 @@
 }, 
 "otu177731": {
 "^ot:originalLabel": "Oedematopus sp. MG394", 
+"^ot:ottId": 840607, 
+"^ot:ottTaxonName": "Oedematopus sp. MG394", 
 "^ot:treebaseOTUId": "Tl11401"
 }, 
 "otu177732": {
@@ -553,9 +538,15 @@
 "treeById": {
 "tree985": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "Fig. 1", 
 "^ot:inGroupClade": "node387362", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node387354", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node387354": {
 "edge387355": {

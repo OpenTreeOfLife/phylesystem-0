@@ -19,48 +19,11 @@
 "@id": "peyotl-validator", 
 "@name": "validate_ot_nexson.py", 
 "@url": "https://github.com/OpenTreeOfLife/peyotl", 
-"@version": "0.0.3a", 
+"@version": "0.0.4a", 
 "invocation": {
-"checksPerformed": [
-"MISSING_MANDATORY_KEY", 
-"MISSING_OPTIONAL_KEY", 
-"UNRECOGNIZED_KEY", 
-"MISSING_LIST_EXPECTED", 
-"DUPLICATING_SINGLETON_KEY", 
-"REFERENCED_ID_NOT_FOUND", 
-"REPEATED_ID", 
-"REPEATED_OTU", 
-"MULTIPLE_ROOT_NODES", 
-"NO_ROOT_NODE", 
-"MULTIPLE_EDGES_FOR_NODES", 
-"CYCLE_DETECTED", 
-"DISCONNECTED_GRAPH_DETECTED", 
-"INCORRECT_ROOT_NODE_LABEL", 
-"TIP_WITHOUT_OTU", 
-"TIP_WITHOUT_OTT_ID", 
-"MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
-"NON_MONOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
-"INVALID_PROPERTY_VALUE", 
-"PROPERTY_VALUE_NOT_USEFUL", 
-"UNRECOGNIZED_PROPERTY_VALUE", 
-"MULTIPLE_TREES", 
-"UNRECOGNIZED_TAG", 
-"CONFLICTING_PROPERTY_VALUES", 
-"NO_TREES", 
-"DEPRECATED_PROPERTY", 
-"UNPARSEABLE_META", 
-"UNREACHABLE_NODE", 
-"INCORRECT_VALUE_TYPE", 
-"MISSING_CRUCIAL_CONTENT"
-], 
 "commandLine": [
 "--embed", 
-"--agent-only", 
-"-e", 
-"../mig-phyelesystem-scratch/2777/validation.json", 
-"-o", 
-"../mig-phyelesystem-scratch/2777/final.json", 
-"../mig-phyelesystem-scratch/2777/v1.2.1-2777.json"
+"--agent-only"
 ], 
 "otherProperty": [
 {
@@ -76,18 +39,24 @@
 }
 ]
 }, 
+"^ot:annotationEvents": {
+"annotation": []
+}, 
+"^ot:candidateTreeForSynthesis": [], 
 "^ot:curatorName": "Dail Laughinghouse", 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S10600"
 }, 
-"^ot:focalClade": 4629127, 
-"^ot:focalCladeOTTTaxonName": "Dinophyta", 
+"^ot:messages": {
+"message": []
+}, 
 "^ot:otusElementOrder": [
 "otus2777"
 ], 
 "^ot:studyId": "2777", 
 "^ot:studyPublicationReference": "Annenkova N.V., Lavrov D.V., & Belikov S.I. 2010. Dinoflagellates associated with freshwater sponges from the ancient Lake Baikal. Protist, .", 
 "^ot:studyYear": 2010, 
+"^ot:tag": [], 
 "^ot:treesElementOrder": [
 "trees2777"
 ], 
@@ -96,32 +65,22 @@
 "otuById": {
 "otu412736": {
 "^ot:originalLabel": "Uncultured dinoflagellate clone M5-2BR FJ823467", 
-"^ot:ottId": 4925382, 
-"^ot:ottTaxonName": "uncultured dinoflagellate", 
 "^ot:treebaseOTUId": "Tl375627"
 }, 
 "otu412737": {
 "^ot:originalLabel": "Uncultured dinoflagellate clone M5-11BR FJ823475", 
-"^ot:ottId": 4925382, 
-"^ot:ottTaxonName": "uncultured dinoflagellate", 
 "^ot:treebaseOTUId": "Tl375641"
 }, 
 "otu412738": {
 "^ot:originalLabel": "Uncultured dinoflagellate  clone M5-90LI FJ823485", 
-"^ot:ottId": 4925382, 
-"^ot:ottTaxonName": "uncultured dinoflagellate", 
 "^ot:treebaseOTUId": "Tl375671"
 }, 
 "otu412739": {
 "^ot:originalLabel": "Uncultured dinoflagellate clone M5-46LI FJ823499", 
-"^ot:ottId": 4925382, 
-"^ot:ottTaxonName": "uncultured dinoflagellate", 
 "^ot:treebaseOTUId": "Tl375684"
 }, 
 "otu412740": {
 "^ot:originalLabel": "Dinophyceae sp clone M5-24BI GQ423576", 
-"^ot:ottId": 4925382, 
-"^ot:ottTaxonName": "uncultured dinoflagellate", 
 "^ot:treebaseOTUId": "Tl375689"
 }, 
 "otu412741": {
@@ -130,14 +89,10 @@
 }, 
 "otu412742": {
 "^ot:originalLabel": "Uncultured dinoflagellate clone M5-3BR FJ823468", 
-"^ot:ottId": 4925382, 
-"^ot:ottTaxonName": "uncultured dinoflagellate", 
 "^ot:treebaseOTUId": "Tl375698"
 }, 
 "otu412743": {
 "^ot:originalLabel": "Dinophyceae sp clone M5-20BI GQ423583", 
-"^ot:ottId": 4925382, 
-"^ot:ottTaxonName": "uncultured dinoflagellate", 
 "^ot:treebaseOTUId": "Tl378166"
 }, 
 "otu412744": {
@@ -148,14 +103,10 @@
 }, 
 "otu412745": {
 "^ot:originalLabel": "Symbiodinium sp. clade D AB294667", 
-"^ot:ottId": 4037112, 
-"^ot:ottTaxonName": "Symbiodinium sp. clade D", 
 "^ot:treebaseOTUId": "Tl378168"
 }, 
 "otu412746": {
 "^ot:originalLabel": "Dinophyceae sp clone M5-88BI GQ423586", 
-"^ot:ottId": 4925382, 
-"^ot:ottTaxonName": "uncultured dinoflagellate", 
 "^ot:treebaseOTUId": "Tl378169"
 }, 
 "otu412747": {
@@ -176,26 +127,18 @@
 }, 
 "otu412750": {
 "^ot:originalLabel": "Dinophyceae sp clone M5-20LI GQ423588", 
-"^ot:ottId": 4925382, 
-"^ot:ottTaxonName": "uncultured dinoflagellate", 
 "^ot:treebaseOTUId": "Tl378173"
 }, 
 "otu412751": {
 "^ot:originalLabel": "Dinophyceae sp clone M5-41LI GQ423589", 
-"^ot:ottId": 4925382, 
-"^ot:ottTaxonName": "uncultured dinoflagellate", 
 "^ot:treebaseOTUId": "Tl378174"
 }, 
 "otu412752": {
 "^ot:originalLabel": "Dinophyceae sp clone M5-2LI GQ423587", 
-"^ot:ottId": 4925382, 
-"^ot:ottTaxonName": "uncultured dinoflagellate", 
 "^ot:treebaseOTUId": "Tl378175"
 }, 
 "otu412753": {
 "^ot:originalLabel": "Dinophyceae sp clone M5-21BI GQ423582", 
-"^ot:ottId": 4925382, 
-"^ot:ottTaxonName": "uncultured dinoflagellate", 
 "^ot:treebaseOTUId": "Tl378176"
 }, 
 "otu412754": {
@@ -206,8 +149,6 @@
 }, 
 "otu412755": {
 "^ot:originalLabel": "Dinophyceae sp clone M5-1BR GQ423592", 
-"^ot:ottId": 4925382, 
-"^ot:ottTaxonName": "uncultured dinoflagellate", 
 "^ot:treebaseOTUId": "Tl378178"
 }, 
 "otu412756": {
@@ -216,14 +157,10 @@
 }, 
 "otu412757": {
 "^ot:originalLabel": "Dinophyceae sp clone M5-6Br GQ423596", 
-"^ot:ottId": 4925382, 
-"^ot:ottTaxonName": "uncultured dinoflagellate", 
 "^ot:treebaseOTUId": "Tl378180"
 }, 
 "otu412758": {
 "^ot:originalLabel": "Dinophyceae sp clone M5-27BI GQ423581", 
-"^ot:ottId": 4925382, 
-"^ot:ottTaxonName": "uncultured dinoflagellate", 
 "^ot:treebaseOTUId": "Tl378181"
 }, 
 "otu412759": {
@@ -242,14 +179,10 @@
 }, 
 "otu412762": {
 "^ot:originalLabel": "Symbiodinium sp clade C AB294594", 
-"^ot:ottId": 4036919, 
-"^ot:ottTaxonName": "Symbiodinium sp. clade C", 
 "^ot:treebaseOTUId": "Tl378185"
 }, 
 "otu412763": {
 "^ot:originalLabel": "Piscinoodinium sp EF016922", 
-"^ot:ottId": 2831441, 
-"^ot:ottTaxonName": "Piscinoodinium", 
 "^ot:treebaseOTUId": "Tl378186"
 }, 
 "otu412764": {
@@ -288,14 +221,10 @@
 }, 
 "otu412770": {
 "^ot:originalLabel": "Uncultured dinoflagellate clone M5-5BR FJ823487", 
-"^ot:ottId": 4925382, 
-"^ot:ottTaxonName": "uncultured dinoflagellate", 
 "^ot:treebaseOTUId": "Tl378384"
 }, 
 "otu412771": {
 "^ot:originalLabel": "Uncultured dinoflagellate clone M5-10BI FJ823490", 
-"^ot:ottId": 4925382, 
-"^ot:ottTaxonName": "uncultured dinoflagellate", 
 "^ot:treebaseOTUId": "Tl378385"
 }, 
 "otu412772": {
@@ -306,8 +235,6 @@
 }, 
 "otu412773": {
 "^ot:originalLabel": "Uncultured Peridinium AY827955", 
-"^ot:ottId": 4925374, 
-"^ot:ottTaxonName": "uncultured Peridinium", 
 "^ot:treebaseOTUId": "Tl378387"
 }, 
 "otu412774": {
@@ -322,14 +249,10 @@
 }, 
 "otu412776": {
 "^ot:originalLabel": "Dinophyceae sp. Shepherd's Crook AY590479", 
-"^ot:ottId": 4038305, 
-"^ot:ottTaxonName": "Dinophyceae sp. Shepherd's Crook", 
 "^ot:treebaseOTUId": "Tl378390"
 }, 
 "otu412777": {
 "^ot:originalLabel": "Dinophyceae sp clone M5-31BR GQ423580", 
-"^ot:ottId": 4925382, 
-"^ot:ottTaxonName": "uncultured dinoflagellate", 
 "^ot:treebaseOTUId": "Tl378391"
 }, 
 "otu412778": {
@@ -346,20 +269,14 @@
 }, 
 "otu412780": {
 "^ot:originalLabel": "Uncultured dinoflagellate clone M5-34BI FJ823495", 
-"^ot:ottId": 4925382, 
-"^ot:ottTaxonName": "uncultured dinoflagellate", 
 "^ot:treebaseOTUId": "Tl378394"
 }, 
 "otu412781": {
 "^ot:originalLabel": "Uncultured dinoflagellate clone M5-130BI FJ823472", 
-"^ot:ottId": 4925382, 
-"^ot:ottTaxonName": "uncultured dinoflagellate", 
 "^ot:treebaseOTUId": "Tl378395"
 }, 
 "otu412782": {
 "^ot:originalLabel": "Uncultured dinoflagellate clone M5-29BI FJ823474", 
-"^ot:ottId": 4925382, 
-"^ot:ottTaxonName": "uncultured dinoflagellate", 
 "^ot:treebaseOTUId": "Tl378396"
 }, 
 "otu412783": {
@@ -370,14 +287,10 @@
 }, 
 "otu412784": {
 "^ot:originalLabel": "Uncultured dinoflagellate clone M5-13BI FJ823466", 
-"^ot:ottId": 4925382, 
-"^ot:ottTaxonName": "uncultured dinoflagellate", 
 "^ot:treebaseOTUId": "Tl378398"
 }, 
 "otu412785": {
 "^ot:originalLabel": "Uncultured dinoflagellate clone M5-40LI FJ823502", 
-"^ot:ottId": 4925382, 
-"^ot:ottTaxonName": "uncultured dinoflagellate", 
 "^ot:treebaseOTUId": "Tl378399"
 }, 
 "otu412786": {
@@ -394,8 +307,6 @@
 }, 
 "otu412788": {
 "^ot:originalLabel": "Uncultured dinoflagellate clone M5-9LI FJ823462", 
-"^ot:ottId": 4925382, 
-"^ot:ottTaxonName": "uncultured dinoflagellate", 
 "^ot:treebaseOTUId": "Tl378402"
 }, 
 "otu412789": {
@@ -412,32 +323,22 @@
 }, 
 "otu412791": {
 "^ot:originalLabel": "Dinophyceae sp clone M5-P28BI GQ423578", 
-"^ot:ottId": 4925382, 
-"^ot:ottTaxonName": "uncultured dinoflagellate", 
 "^ot:treebaseOTUId": "Tl378405"
 }, 
 "otu412792": {
 "^ot:originalLabel": "Uncultured dinoflagellate clone M5-33LI FJ823481", 
-"^ot:ottId": 4925382, 
-"^ot:ottTaxonName": "uncultured dinoflagellate", 
 "^ot:treebaseOTUId": "Tl378406"
 }, 
 "otu412793": {
 "^ot:originalLabel": "Uncultured dinoflagellate clone M5-P3BI FJ823494", 
-"^ot:ottId": 4925382, 
-"^ot:ottTaxonName": "uncultured dinoflagellate", 
 "^ot:treebaseOTUId": "Tl378407"
 }, 
 "otu412794": {
 "^ot:originalLabel": "Uncultured dinoflagellate clone M5-48LI FJ823500", 
-"^ot:ottId": 4925382, 
-"^ot:ottTaxonName": "uncultured dinoflagellate", 
 "^ot:treebaseOTUId": "Tl378408"
 }, 
 "otu412795": {
 "^ot:originalLabel": "Uncultured dinoflagellate clone M5-9BI FJ823463", 
-"^ot:ottId": 4925382, 
-"^ot:ottTaxonName": "uncultured dinoflagellate", 
 "^ot:treebaseOTUId": "Tl378409"
 }, 
 "otu412796": {
@@ -460,14 +361,10 @@
 }, 
 "otu412799": {
 "^ot:originalLabel": "Uncultured dinoflagellate clone M5-10BR FJ823496", 
-"^ot:ottId": 4925382, 
-"^ot:ottTaxonName": "uncultured dinoflagellate", 
 "^ot:treebaseOTUId": "Tl378413"
 }, 
 "otu412800": {
 "^ot:originalLabel": "Uncultured dinoflagellate clone M5-13BR FJ823497", 
-"^ot:ottId": 4925382, 
-"^ot:ottTaxonName": "uncultured dinoflagellate", 
 "^ot:treebaseOTUId": "Tl378414"
 }, 
 "otu412801": {
@@ -482,8 +379,6 @@
 }, 
 "otu412803": {
 "^ot:originalLabel": "Uncultured dinoflagellate clone M5-30LI FJ823483", 
-"^ot:ottId": 4925382, 
-"^ot:ottTaxonName": "uncultured dinoflagellate", 
 "^ot:treebaseOTUId": "Tl378417"
 }, 
 "otu412804": {
@@ -492,32 +387,22 @@
 }, 
 "otu412805": {
 "^ot:originalLabel": "Uncultured dinoflagellate clone M5-7LI FJ823484", 
-"^ot:ottId": 4925382, 
-"^ot:ottTaxonName": "uncultured dinoflagellate", 
 "^ot:treebaseOTUId": "Tl378419"
 }, 
 "otu412806": {
 "^ot:originalLabel": "uncultured zooxantellae AB126930", 
-"^ot:ottId": 4924853, 
-"^ot:ottTaxonName": "uncultured zooxanthellae Symbiodinium", 
 "^ot:treebaseOTUId": "Tl378420"
 }, 
 "otu412807": {
 "^ot:originalLabel": "Uncultured dinoflagellate clone M5-12BR FJ823470", 
-"^ot:ottId": 4925382, 
-"^ot:ottTaxonName": "uncultured dinoflagellate", 
 "^ot:treebaseOTUId": "Tl378421"
 }, 
 "otu412808": {
 "^ot:originalLabel": "Dinophyceae sp clone M5-39LI GQ423577", 
-"^ot:ottId": 4925382, 
-"^ot:ottTaxonName": "uncultured dinoflagellate", 
 "^ot:treebaseOTUId": "Tl378422"
 }, 
 "otu412809": {
 "^ot:originalLabel": "Uncultured dinoflagellate clone M5-35LI FJ823476", 
-"^ot:ottId": 4925382, 
-"^ot:ottTaxonName": "uncultured dinoflagellate", 
 "^ot:treebaseOTUId": "Tl378423"
 }, 
 "otu412810": {
@@ -528,8 +413,6 @@
 }, 
 "otu412811": {
 "^ot:originalLabel": "Uncultured dinoflagellate clone M5-37LI FJ823477", 
-"^ot:ottId": 4925382, 
-"^ot:ottTaxonName": "uncultured dinoflagellate", 
 "^ot:treebaseOTUId": "Tl378425"
 }, 
 "otu412812": {
@@ -562,8 +445,6 @@
 }, 
 "otu412817": {
 "^ot:originalLabel": "Uncultured dinoflagellate clone M5-47BI FJ823501", 
-"^ot:ottId": 4925382, 
-"^ot:ottTaxonName": "uncultured dinoflagellate", 
 "^ot:treebaseOTUId": "Tl378431"
 }, 
 "otu412818": {
@@ -580,20 +461,14 @@
 }, 
 "otu412820": {
 "^ot:originalLabel": "Uncultured dinoflagellate  clone M5-32LI FJ823480", 
-"^ot:ottId": 4925382, 
-"^ot:ottTaxonName": "uncultured dinoflagellate", 
 "^ot:treebaseOTUId": "Tl378434"
 }, 
 "otu412821": {
 "^ot:originalLabel": "Uncultured dinoflagellate clone M5-P29BI FJ82346", 
-"^ot:ottId": 4925382, 
-"^ot:ottTaxonName": "uncultured dinoflagellate", 
 "^ot:treebaseOTUId": "Tl378435"
 }, 
 "otu412822": {
 "^ot:originalLabel": "Uncultured dinoflagellate  clone M5-18BR FJ823465", 
-"^ot:ottId": 4925382, 
-"^ot:ottTaxonName": "uncultured dinoflagellate", 
 "^ot:treebaseOTUId": "Tl378436"
 }, 
 "otu412823": {
@@ -604,8 +479,6 @@
 }, 
 "otu412824": {
 "^ot:originalLabel": "Symbiodinium sp clade C EF419289", 
-"^ot:ottId": 4036919, 
-"^ot:ottTaxonName": "Symbiodinium sp. clade C", 
 "^ot:treebaseOTUId": "Tl378438"
 }, 
 "otu412825": {
@@ -626,14 +499,10 @@
 }, 
 "otu412828": {
 "^ot:originalLabel": "Uncultured Gyrodinium clone M5-12BI FJ823479", 
-"^ot:ottId": 4925399, 
-"^ot:ottTaxonName": "uncultured Gyrodinium", 
 "^ot:treebaseOTUId": "Tl378442"
 }, 
 "otu412829": {
 "^ot:originalLabel": "Uncultured freshwater eukaryote AY919716", 
-"^ot:ottId": 4920866, 
-"^ot:ottTaxonName": "uncultured freshwater eukaryote", 
 "^ot:treebaseOTUId": "Tl378443"
 }, 
 "otu412830": {
@@ -652,8 +521,6 @@
 }, 
 "otu412833": {
 "^ot:originalLabel": "Uncultured dinoflagellate clone M5-8BI FJ823489", 
-"^ot:ottId": 4925382, 
-"^ot:ottTaxonName": "uncultured dinoflagellate", 
 "^ot:treebaseOTUId": "Tl378447"
 }, 
 "otu412834": {
@@ -662,26 +529,18 @@
 }, 
 "otu412835": {
 "^ot:originalLabel": "Uncultured dinoflagellate  clone M5-101BI FJ823491", 
-"^ot:ottId": 4925382, 
-"^ot:ottTaxonName": "uncultured dinoflagellate", 
 "^ot:treebaseOTUId": "Tl378449"
 }, 
 "otu412836": {
 "^ot:originalLabel": "Uncultured eukaryote EU371356", 
-"^ot:ottId": 4920599, 
-"^ot:ottTaxonName": "uncultured eukaryote", 
 "^ot:treebaseOTUId": "Tl378450"
 }, 
 "otu412837": {
 "^ot:originalLabel": "Uncultured dinoflagellate clone M5-19BR FJ823498", 
-"^ot:ottId": 4925382, 
-"^ot:ottTaxonName": "uncultured dinoflagellate", 
 "^ot:treebaseOTUId": "Tl378451"
 }, 
 "otu412838": {
 "^ot:originalLabel": "Uncultured dinoflagellate clone M5-P8BI FJ823488", 
-"^ot:ottId": 4925382, 
-"^ot:ottTaxonName": "uncultured dinoflagellate", 
 "^ot:treebaseOTUId": "Tl378452"
 }, 
 "otu412839": {
@@ -690,8 +549,6 @@
 }, 
 "otu412840": {
 "^ot:originalLabel": "Uncultured dinoflagellate clone M5-22BI FJ823492", 
-"^ot:ottId": 4925382, 
-"^ot:ottTaxonName": "uncultured dinoflagellate", 
 "^ot:treebaseOTUId": "Tl378454"
 }, 
 "otu412841": {
@@ -720,14 +577,10 @@
 }, 
 "otu412845": {
 "^ot:originalLabel": "Uncultured dinoflagellate clone M5-17BR FJ823473", 
-"^ot:ottId": 4925382, 
-"^ot:ottTaxonName": "uncultured dinoflagellate", 
 "^ot:treebaseOTUId": "Tl378459"
 }, 
 "otu412846": {
 "^ot:originalLabel": "Uncultured dinoflagellate clone M5-4BI FJ823471", 
-"^ot:ottId": 4925382, 
-"^ot:ottTaxonName": "uncultured dinoflagellate", 
 "^ot:treebaseOTUId": "Tl378460"
 }, 
 "otu412847": {
@@ -736,8 +589,6 @@
 }, 
 "otu412848": {
 "^ot:originalLabel": "Uncultured Gymnodinium AY840208", 
-"^ot:ottId": 4925375, 
-"^ot:ottTaxonName": "uncultured Gymnodinium", 
 "^ot:treebaseOTUId": "Tl378462"
 }, 
 "otu412849": {
@@ -752,38 +603,26 @@
 }, 
 "otu412851": {
 "^ot:originalLabel": "Galeidinium rugatum AB195668", 
-"^ot:ottId": 4036331, 
-"^ot:ottTaxonName": "Galeidinium rugatum", 
 "^ot:treebaseOTUId": "Tl378465"
 }, 
 "otu412852": {
 "^ot:originalLabel": "Uncultured dinoflagellate clone M5-32BI FJ823486", 
-"^ot:ottId": 4925382, 
-"^ot:ottTaxonName": "uncultured dinoflagellate", 
 "^ot:treebaseOTUId": "Tl378466"
 }, 
 "otu412853": {
 "^ot:originalLabel": "Uncultured Gyrodinium clone M5-3BI FJ823478", 
-"^ot:ottId": 4925399, 
-"^ot:ottTaxonName": "uncultured Gyrodinium", 
 "^ot:treebaseOTUId": "Tl378467"
 }, 
 "otu412854": {
 "^ot:originalLabel": "Uncultured dinoflagellate clone M5-9BR FJ823469", 
-"^ot:ottId": 4925382, 
-"^ot:ottTaxonName": "uncultured dinoflagellate", 
 "^ot:treebaseOTUId": "Tl378468"
 }, 
 "otu412855": {
 "^ot:originalLabel": "Uncultured dinoflagellate clone M5-31BI FJ823493", 
-"^ot:ottId": 4925382, 
-"^ot:ottTaxonName": "uncultured dinoflagellate", 
 "^ot:treebaseOTUId": "Tl378469"
 }, 
 "otu412856": {
 "^ot:originalLabel": "Dinophyceae sp clone M5-23BR GQ423579", 
-"^ot:ottId": 4925382, 
-"^ot:ottTaxonName": "uncultured dinoflagellate", 
 "^ot:treebaseOTUId": "Tl378470"
 }
 }
@@ -799,8 +638,14 @@
 "treeById": {
 "tree6434": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "Fig. 3", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node1116851", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node1116851": {
 "edge1116852": {
@@ -2413,8 +2258,14 @@
 }, 
 "tree6435": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "Fig. 4", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node1117052", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node1117052": {
 "edge1117053": {

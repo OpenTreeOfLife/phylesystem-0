@@ -19,48 +19,11 @@
 "@id": "peyotl-validator", 
 "@name": "validate_ot_nexson.py", 
 "@url": "https://github.com/OpenTreeOfLife/peyotl", 
-"@version": "0.0.3a", 
+"@version": "0.0.4a", 
 "invocation": {
-"checksPerformed": [
-"MISSING_MANDATORY_KEY", 
-"MISSING_OPTIONAL_KEY", 
-"UNRECOGNIZED_KEY", 
-"MISSING_LIST_EXPECTED", 
-"DUPLICATING_SINGLETON_KEY", 
-"REFERENCED_ID_NOT_FOUND", 
-"REPEATED_ID", 
-"REPEATED_OTU", 
-"MULTIPLE_ROOT_NODES", 
-"NO_ROOT_NODE", 
-"MULTIPLE_EDGES_FOR_NODES", 
-"CYCLE_DETECTED", 
-"DISCONNECTED_GRAPH_DETECTED", 
-"INCORRECT_ROOT_NODE_LABEL", 
-"TIP_WITHOUT_OTU", 
-"TIP_WITHOUT_OTT_ID", 
-"MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
-"NON_MONOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
-"INVALID_PROPERTY_VALUE", 
-"PROPERTY_VALUE_NOT_USEFUL", 
-"UNRECOGNIZED_PROPERTY_VALUE", 
-"MULTIPLE_TREES", 
-"UNRECOGNIZED_TAG", 
-"CONFLICTING_PROPERTY_VALUES", 
-"NO_TREES", 
-"DEPRECATED_PROPERTY", 
-"UNPARSEABLE_META", 
-"UNREACHABLE_NODE", 
-"INCORRECT_VALUE_TYPE", 
-"MISSING_CRUCIAL_CONTENT"
-], 
 "commandLine": [
 "--embed", 
-"--agent-only", 
-"-e", 
-"../mig-phyelesystem-scratch/2562/validation.json", 
-"-o", 
-"../mig-phyelesystem-scratch/2562/final.json", 
-"../mig-phyelesystem-scratch/2562/v1.2.1-2562.json"
+"--agent-only"
 ], 
 "otherProperty": [
 {
@@ -76,18 +39,29 @@
 }
 ]
 }, 
+"^ot:annotationEvents": {
+"annotation": []
+}, 
+"^ot:candidateTreeForSynthesis": [], 
 "^ot:curatorName": "Laura Katz", 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S1578"
 }, 
 "^ot:focalClade": 48611, 
 "^ot:focalCladeOTTTaxonName": "Dictyotales", 
+"^ot:messages": {
+"message": []
+}, 
 "^ot:otusElementOrder": [
 "otus2562"
 ], 
 "^ot:studyId": "2562", 
-"^ot:studyPublicationReference": "De clerck O., Leliaert F., Verbruggen H., Lane C., Paula J., Payo D., & Coppejans E. 2006. A revised classification of the Dictyoteae (Dictyotales, Phaeophyceae) based on rbcL and 26S ribosomal DNA sequence analyses. Journal of Phycology, null.", 
+"^ot:studyPublication": {
+"@href": "http://dx.doi.org/10.1111/j.1529-8817.2006.00279.x"
+}, 
+"^ot:studyPublicationReference": "De Clerck, O., Leliaert F., Verbruggen H., Lane C., Paula J., Payo D., & Coppejans E. 2006. A revised classification of the Dictyoteae (Dictyotales, Phaeophyceae) based on rbcL and 26S ribosomal DNA sequence analyses. Journal of Phycology 42 (6): 1271-1288.", 
 "^ot:studyYear": 2006, 
+"^ot:tag": [], 
 "^ot:treesElementOrder": [
 "trees2562"
 ], 
@@ -246,6 +220,8 @@
 }, 
 "otu373199": {
 "^ot:originalLabel": "Dictyota crispata", 
+"^ot:ottId": 484665, 
+"^ot:ottTaxonName": "Canistrocarpus crispatus", 
 "^ot:treebaseOTUId": "Tl33064"
 }, 
 "otu373200": {
@@ -333,9 +309,9 @@
 "^ot:treebaseOTUId": "Tl33080"
 }, 
 "otu373215": {
-"^ot:altLabel": "Dictyota dichotoma", 
 "^ot:originalLabel": "Dictyota dichotoma ODC1027", 
 "^ot:ottId": 48622, 
+"^ot:ottTaxonName": "Dictyota dichotoma", 
 "^ot:treebaseOTUId": "Tl33081"
 }, 
 "otu373216": {
@@ -357,6 +333,7 @@
 "otu373220": {
 "^ot:originalLabel": "Pachydictyon paniculatum", 
 "^ot:ottId": 250723, 
+"^ot:ottTaxonName": "Pachydictyon paniculatum", 
 "^ot:treebaseOTUId": "Tl33086"
 }, 
 "otu373221": {
@@ -364,9 +341,9 @@
 "^ot:treebaseOTUId": "Tl33087"
 }, 
 "otu373222": {
-"^ot:altLabel": "Dictyota dichotoma", 
 "^ot:originalLabel": "Dictyota dichotoma AB096882", 
 "^ot:ottId": 48622, 
+"^ot:ottTaxonName": "Dictyota dichotoma", 
 "^ot:treebaseOTUId": "Tl33088"
 }, 
 "otu373223": {
@@ -388,11 +365,13 @@
 "otu373227": {
 "^ot:originalLabel": "Padina crassa", 
 "^ot:ottId": 746049, 
+"^ot:ottTaxonName": "Padina crassa", 
 "^ot:treebaseOTUId": "Tl33093"
 }, 
 "otu373228": {
 "^ot:originalLabel": "Dictyota koreana", 
 "^ot:ottId": 1014852, 
+"^ot:ottTaxonName": "Dictyota koreana", 
 "^ot:treebaseOTUId": "Tl33094"
 }, 
 "otu373229": {
@@ -400,26 +379,27 @@
 "^ot:treebaseOTUId": "Tl33095"
 }, 
 "otu373230": {
-"^ot:altLabel": "Dictyota dichotoma", 
 "^ot:originalLabel": "Dictyota dichotoma ODC1055", 
 "^ot:ottId": 48622, 
+"^ot:ottTaxonName": "Dictyota dichotoma", 
 "^ot:treebaseOTUId": "Tl33096"
 }, 
 "otu373231": {
 "^ot:originalLabel": "Dictyota alternifida", 
 "^ot:ottId": 1004857, 
+"^ot:ottTaxonName": "Dictyota alternifida", 
 "^ot:treebaseOTUId": "Tl33097"
 }, 
 "otu373232": {
-"^ot:altLabel": "Dictyota stolonifera", 
 "^ot:originalLabel": "Dilophus stoloniferus", 
 "^ot:ottId": 280866, 
+"^ot:ottTaxonName": "Dictyota stolonifera", 
 "^ot:treebaseOTUId": "Tl33098"
 }, 
 "otu373233": {
-"^ot:altLabel": "Dictyota intermedia", 
 "^ot:originalLabel": "Dilophus intermedius GWS1020", 
 "^ot:ottId": 749736, 
+"^ot:ottTaxonName": "Dictyota intermedia", 
 "^ot:treebaseOTUId": "Tl33099"
 }, 
 "otu373234": {
@@ -427,9 +407,9 @@
 "^ot:treebaseOTUId": "Tl33100"
 }, 
 "otu373235": {
-"^ot:altLabel": "Dictyota intermedia", 
 "^ot:originalLabel": "Dilophus intermedius D173Cowling", 
 "^ot:ottId": 749736, 
+"^ot:ottTaxonName": "Dictyota intermedia", 
 "^ot:treebaseOTUId": "Tl33101"
 }, 
 "otu373236": {
@@ -459,8 +439,14 @@
 "treeById": {
 "tree5692": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "combined ML 41", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node980093", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node980093": {
 "edge980094": {
@@ -1033,8 +1019,14 @@
 }, 
 "tree5693": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "combined MP 41", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node980174", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node980174": {
 "edge980175": {

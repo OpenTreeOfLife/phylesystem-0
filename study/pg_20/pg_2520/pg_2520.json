@@ -19,48 +19,11 @@
 "@id": "peyotl-validator", 
 "@name": "validate_ot_nexson.py", 
 "@url": "https://github.com/OpenTreeOfLife/peyotl", 
-"@version": "0.0.3a", 
+"@version": "0.0.4a", 
 "invocation": {
-"checksPerformed": [
-"MISSING_MANDATORY_KEY", 
-"MISSING_OPTIONAL_KEY", 
-"UNRECOGNIZED_KEY", 
-"MISSING_LIST_EXPECTED", 
-"DUPLICATING_SINGLETON_KEY", 
-"REFERENCED_ID_NOT_FOUND", 
-"REPEATED_ID", 
-"REPEATED_OTU", 
-"MULTIPLE_ROOT_NODES", 
-"NO_ROOT_NODE", 
-"MULTIPLE_EDGES_FOR_NODES", 
-"CYCLE_DETECTED", 
-"DISCONNECTED_GRAPH_DETECTED", 
-"INCORRECT_ROOT_NODE_LABEL", 
-"TIP_WITHOUT_OTU", 
-"TIP_WITHOUT_OTT_ID", 
-"MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
-"NON_MONOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
-"INVALID_PROPERTY_VALUE", 
-"PROPERTY_VALUE_NOT_USEFUL", 
-"UNRECOGNIZED_PROPERTY_VALUE", 
-"MULTIPLE_TREES", 
-"UNRECOGNIZED_TAG", 
-"CONFLICTING_PROPERTY_VALUES", 
-"NO_TREES", 
-"DEPRECATED_PROPERTY", 
-"UNPARSEABLE_META", 
-"UNREACHABLE_NODE", 
-"INCORRECT_VALUE_TYPE", 
-"MISSING_CRUCIAL_CONTENT"
-], 
 "commandLine": [
 "--embed", 
-"--agent-only", 
-"-e", 
-"../mig-phyelesystem-scratch/2520/validation.json", 
-"-o", 
-"../mig-phyelesystem-scratch/2520/final.json", 
-"../mig-phyelesystem-scratch/2520/v1.2.1-2520.json"
+"--agent-only"
 ], 
 "otherProperty": [
 {
@@ -76,12 +39,17 @@
 }
 ]
 }, 
+"^ot:annotationEvents": {
+"annotation": []
+}, 
+"^ot:candidateTreeForSynthesis": [], 
 "^ot:curatorName": "Romina Gazis", 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S1365"
 }, 
-"^ot:focalClade": 2061681, 
-"^ot:focalCladeOTTTaxonName": "Rhizoctonia", 
+"^ot:messages": {
+"message": []
+}, 
 "^ot:otusElementOrder": [
 "otus2520"
 ], 
@@ -218,8 +186,6 @@
 }, 
 "otu362851": {
 "^ot:originalLabel": "Ceratobasidium sp. AGA C-538 AB196640", 
-"^ot:ottId": 104755, 
-"^ot:ottTaxonName": "Ceratobasidium sp. AG-A", 
 "^ot:treebaseOTUId": "Tl38552"
 }, 
 "otu362852": {
@@ -236,8 +202,6 @@
 }, 
 "otu362854": {
 "^ot:originalLabel": "Ceratobasidium sp. AGI AJ242898", 
-"^ot:ottId": 301805, 
-"^ot:ottTaxonName": "Rhizoctonia sp. AV-2", 
 "^ot:treebaseOTUId": "Tl38555"
 }, 
 "otu362855": {
@@ -249,7 +213,7 @@
 "otu362856": {
 "^ot:originalLabel": "Ceratobasidium sp. AGBb AB122144", 
 "^ot:ottId": 510546, 
-"^ot:ottTaxonName": "Ceratorhiza oryzae-sativae", 
+"^ot:ottTaxonName": "Rhizoctonia oryzae-sativae", 
 "^ot:treebaseOTUId": "Tl38557"
 }, 
 "otu362857": {
@@ -296,8 +260,6 @@
 }, 
 "otu362864": {
 "^ot:originalLabel": "Ceratobasidium sp. AGA AH-1 AB196639", 
-"^ot:ottId": 104755, 
-"^ot:ottTaxonName": "Ceratobasidium sp. AG-A", 
 "^ot:treebaseOTUId": "Tl38565"
 }, 
 "otu362865": {
@@ -320,8 +282,6 @@
 }, 
 "otu362868": {
 "^ot:originalLabel": "Ceratobasidium sp. AGA AF354092", 
-"^ot:ottId": 104755, 
-"^ot:ottTaxonName": "Ceratobasidium sp. AG-A", 
 "^ot:treebaseOTUId": "Tl38569"
 }, 
 "otu362869": {
@@ -366,9 +326,14 @@
 "treeById": {
 "tree5430": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "Distance, ITS", 
 "^ot:inGroupClade": "node933247", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node933245", 
+"^ot:specifiedRoot": "", 
 "^ot:tag": [
 "Distance", 
 "ITS"

@@ -19,48 +19,11 @@
 "@id": "peyotl-validator", 
 "@name": "validate_ot_nexson.py", 
 "@url": "https://github.com/OpenTreeOfLife/peyotl", 
-"@version": "0.0.3a", 
+"@version": "0.0.4a", 
 "invocation": {
-"checksPerformed": [
-"MISSING_MANDATORY_KEY", 
-"MISSING_OPTIONAL_KEY", 
-"UNRECOGNIZED_KEY", 
-"MISSING_LIST_EXPECTED", 
-"DUPLICATING_SINGLETON_KEY", 
-"REFERENCED_ID_NOT_FOUND", 
-"REPEATED_ID", 
-"REPEATED_OTU", 
-"MULTIPLE_ROOT_NODES", 
-"NO_ROOT_NODE", 
-"MULTIPLE_EDGES_FOR_NODES", 
-"CYCLE_DETECTED", 
-"DISCONNECTED_GRAPH_DETECTED", 
-"INCORRECT_ROOT_NODE_LABEL", 
-"TIP_WITHOUT_OTU", 
-"TIP_WITHOUT_OTT_ID", 
-"MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
-"NON_MONOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
-"INVALID_PROPERTY_VALUE", 
-"PROPERTY_VALUE_NOT_USEFUL", 
-"UNRECOGNIZED_PROPERTY_VALUE", 
-"MULTIPLE_TREES", 
-"UNRECOGNIZED_TAG", 
-"CONFLICTING_PROPERTY_VALUES", 
-"NO_TREES", 
-"DEPRECATED_PROPERTY", 
-"UNPARSEABLE_META", 
-"UNREACHABLE_NODE", 
-"INCORRECT_VALUE_TYPE", 
-"MISSING_CRUCIAL_CONTENT"
-], 
 "commandLine": [
 "--embed", 
-"--agent-only", 
-"-e", 
-"../mig-phyelesystem-scratch/926/validation.json", 
-"-o", 
-"../mig-phyelesystem-scratch/926/final.json", 
-"../mig-phyelesystem-scratch/926/v1.2.1-926.json"
+"--agent-only"
 ], 
 "otherProperty": [
 {
@@ -76,9 +39,16 @@
 }
 ]
 }, 
+"^ot:annotationEvents": {
+"annotation": []
+}, 
+"^ot:candidateTreeForSynthesis": [], 
 "^ot:curatorName": "bryan drew", 
 "^ot:focalClade": 208036, 
 "^ot:focalCladeOTTTaxonName": "Rosaceae", 
+"^ot:messages": {
+"message": []
+}, 
 "^ot:otusElementOrder": [
 "otus926"
 ], 
@@ -88,6 +58,7 @@
 }, 
 "^ot:studyPublicationReference": "Potter, D. [et al. 2007a], Eriksson, T., Evans, R. C., Oh, S., Smedmark, J. E. E., Morgan, D. R., Kerr, M., Robertson, K. R., Arsenault, M., Dickinson, T. A., & Campbell, C. S. 2007. Phylogeny and classification of Rosaceae. Plant Syst. Evol. 266: 5-43.", 
 "^ot:studyYear": 2007, 
+"^ot:tag": [], 
 "^ot:treesElementOrder": [
 "trees926"
 ], 
@@ -105,7 +76,9 @@
 "^ot:ottTaxonName": "Margyricarpus"
 }, 
 "otu206850": {
-"^ot:originalLabel": "Polylepis"
+"^ot:originalLabel": "Polylepis", 
+"^ot:ottId": 813419, 
+"^ot:ottTaxonName": "Polylepis"
 }, 
 "otu206851": {
 "^ot:originalLabel": "Cliffortia", 
@@ -404,7 +377,9 @@
 "^ot:ottTaxonName": "Lindleya"
 }, 
 "otu206911": {
-"^ot:originalLabel": "Gillenia"
+"^ot:originalLabel": "Gillenia", 
+"^ot:ottId": 840675, 
+"^ot:ottTaxonName": "Gillenia"
 }, 
 "otu206912": {
 "^ot:originalLabel": "Aruncus", 
@@ -472,7 +447,9 @@
 "^ot:ottTaxonName": "Prinsepia"
 }, 
 "otu206925": {
-"^ot:originalLabel": "Maddenia"
+"^ot:originalLabel": "Maddenia", 
+"^ot:ottId": 4729766, 
+"^ot:ottTaxonName": "Maddenia"
 }, 
 "otu206926": {
 "^ot:originalLabel": "Prunus l", 
@@ -500,7 +477,9 @@
 "^ot:ottTaxonName": "Physocarpus"
 }, 
 "otu206931": {
-"^ot:originalLabel": "Lyonothamnus"
+"^ot:originalLabel": "Lyonothamnus", 
+"^ot:ottId": 620830, 
+"^ot:ottTaxonName": "Lyonothamnus"
 }, 
 "otu206932": {
 "^ot:originalLabel": "Cercocarpus", 
@@ -513,10 +492,14 @@
 "^ot:ottTaxonName": "Chamaebatia"
 }, 
 "otu206934": {
-"^ot:originalLabel": "Cowania"
+"^ot:originalLabel": "Cowania", 
+"^ot:ottId": 653074, 
+"^ot:ottTaxonName": "Chamaebatia"
 }, 
 "otu206935": {
-"^ot:originalLabel": "Purshia"
+"^ot:originalLabel": "Purshia", 
+"^ot:ottId": 5334588, 
+"^ot:ottTaxonName": "Purshia"
 }, 
 "otu206936": {
 "^ot:originalLabel": "Dryas", 
@@ -524,7 +507,9 @@
 "^ot:ottTaxonName": "Dryas"
 }, 
 "otu206937": {
-"^ot:originalLabel": "Ceanothus"
+"^ot:originalLabel": "Ceanothus", 
+"^ot:ottId": 371201, 
+"^ot:ottTaxonName": "Ceanothus"
 }, 
 "otu206938": {
 "^ot:originalLabel": "Rhamnus", 
@@ -543,9 +528,15 @@
 "treeById": {
 "tree1825": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "strict consensus parsimony tree", 
 "^ot:inGroupClade": "node490024", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node490023", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node490023": {
 "edge490024": {

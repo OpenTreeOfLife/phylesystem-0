@@ -19,48 +19,11 @@
 "@id": "peyotl-validator", 
 "@name": "validate_ot_nexson.py", 
 "@url": "https://github.com/OpenTreeOfLife/peyotl", 
-"@version": "0.0.3a", 
+"@version": "0.0.4a", 
 "invocation": {
-"checksPerformed": [
-"MISSING_MANDATORY_KEY", 
-"MISSING_OPTIONAL_KEY", 
-"UNRECOGNIZED_KEY", 
-"MISSING_LIST_EXPECTED", 
-"DUPLICATING_SINGLETON_KEY", 
-"REFERENCED_ID_NOT_FOUND", 
-"REPEATED_ID", 
-"REPEATED_OTU", 
-"MULTIPLE_ROOT_NODES", 
-"NO_ROOT_NODE", 
-"MULTIPLE_EDGES_FOR_NODES", 
-"CYCLE_DETECTED", 
-"DISCONNECTED_GRAPH_DETECTED", 
-"INCORRECT_ROOT_NODE_LABEL", 
-"TIP_WITHOUT_OTU", 
-"TIP_WITHOUT_OTT_ID", 
-"MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
-"NON_MONOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
-"INVALID_PROPERTY_VALUE", 
-"PROPERTY_VALUE_NOT_USEFUL", 
-"UNRECOGNIZED_PROPERTY_VALUE", 
-"MULTIPLE_TREES", 
-"UNRECOGNIZED_TAG", 
-"CONFLICTING_PROPERTY_VALUES", 
-"NO_TREES", 
-"DEPRECATED_PROPERTY", 
-"UNPARSEABLE_META", 
-"UNREACHABLE_NODE", 
-"INCORRECT_VALUE_TYPE", 
-"MISSING_CRUCIAL_CONTENT"
-], 
 "commandLine": [
 "--embed", 
-"--agent-only", 
-"-e", 
-"../mig-phyelesystem-scratch/1196/validation.json", 
-"-o", 
-"../mig-phyelesystem-scratch/1196/final.json", 
-"../mig-phyelesystem-scratch/1196/v1.2.1-1196.json"
+"--agent-only"
 ], 
 "otherProperty": [
 {
@@ -76,9 +39,16 @@
 }
 ]
 }, 
+"^ot:annotationEvents": {
+"annotation": []
+}, 
+"^ot:candidateTreeForSynthesis": [], 
 "^ot:curatorName": "Romina Gazis", 
 "^ot:focalClade": 439373, 
 "^ot:focalCladeOTTTaxonName": "Ascomycota", 
+"^ot:messages": {
+"message": []
+}, 
 "^ot:otusElementOrder": [
 "otus1196"
 ], 
@@ -88,6 +58,7 @@
 }, 
 "^ot:studyPublicationReference": "Crous, P. W., and J. Z. Groenewald. \"Why everlastings don\u2019t last.\" Persoonia: Molecular Phylogeny and Evolution of Fungi 26 (2011): 70-84.", 
 "^ot:studyYear": 2011, 
+"^ot:tag": [], 
 "^ot:treesElementOrder": [
 "trees1196"
 ], 
@@ -105,7 +76,9 @@
 "^ot:ottTaxonName": "Exophiala capensis"
 }, 
 "otu231248": {
-"^ot:originalLabel": "Chaetothyriales sp. FJ358263"
+"^ot:originalLabel": "Chaetothyriales sp. FJ358263", 
+"^ot:ottId": 537959, 
+"^ot:ottTaxonName": "Chaetothyriales"
 }, 
 "otu231249": {
 "^ot:originalLabel": "Exophiala bergeri FJ358240", 
@@ -118,7 +91,9 @@
 "^ot:ottTaxonName": "Exophiala xenobiotica"
 }, 
 "otu231251": {
-"^ot:originalLabel": "Chaetothyriales sp. FJ358264"
+"^ot:originalLabel": "Chaetothyriales sp. FJ358264", 
+"^ot:ottId": 537959, 
+"^ot:ottTaxonName": "Chaetothyriales"
 }, 
 "otu231252": {
 "^ot:originalLabel": "Exophiala nigra FJ358244", 
@@ -171,7 +146,9 @@
 "^ot:ottTaxonName": "Cladosporium bruhnei"
 }, 
 "otu231262": {
-"^ot:originalLabel": "Toxicocladosporium veloxum FJ790306"
+"^ot:originalLabel": "Toxicocladosporium veloxum FJ790306", 
+"^ot:ottId": 5311257, 
+"^ot:ottTaxonName": "Toxicocladosporium velox"
 }, 
 "otu231263": {
 "^ot:originalLabel": "Toxicocladosporium pseudoveloxum CPC 18257", 
@@ -297,13 +274,17 @@
 "^ot:originalLabel": "Teratosphaeria cf. bellula CPC 18281"
 }, 
 "otu231288": {
-"^ot:originalLabel": "Teratosphaeria sp. EU707888"
+"^ot:originalLabel": "Teratosphaeria sp. EU707888", 
+"^ot:ottId": 159026, 
+"^ot:ottTaxonName": "Teratosphaeria"
 }, 
 "otu231289": {
 "^ot:originalLabel": "Teratosphaeria cf. bellula CPC 18280"
 }, 
 "otu231290": {
-"^ot:originalLabel": "Teratosphaeria sp. GQ852713"
+"^ot:originalLabel": "Teratosphaeria sp. GQ852713", 
+"^ot:ottId": 159026, 
+"^ot:ottTaxonName": "Teratosphaeria"
 }, 
 "otu231291": {
 "^ot:originalLabel": "Teratosphaeria miniata GQ852711", 
@@ -316,7 +297,9 @@
 "^ot:ottTaxonName": "Teratosphaeria hortaea"
 }, 
 "otu231293": {
-"^ot:originalLabel": "Readeriella brunneotingens EU019286"
+"^ot:originalLabel": "Readeriella brunneotingens EU019286", 
+"^ot:ottId": 241871, 
+"^ot:ottTaxonName": "Teratosphaeria brunneotingens"
 }, 
 "otu231294": {
 "^ot:originalLabel": "Teratosphaeria profusa FJ493220", 
@@ -329,7 +312,9 @@
 "^ot:ottTaxonName": "Teratosphaeria dimorpha"
 }, 
 "otu231296": {
-"^ot:originalLabel": "Colletogloeopsis dimorpha DQ923528"
+"^ot:originalLabel": "Colletogloeopsis dimorpha DQ923528", 
+"^ot:ottId": 763736, 
+"^ot:ottTaxonName": "Teratosphaeria dimorpha"
 }, 
 "otu231297": {
 "^ot:originalLabel": "Teratosphaeria maxii DQ885898", 
@@ -555,9 +540,15 @@
 "treeById": {
 "tree2414": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "MP, LSU", 
 "^ot:inGroupClade": "node561464", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node561462", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node561462": {
 "edge561463": {
@@ -1298,10 +1289,17 @@
 }, 
 "tree2415": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "MP, ITS", 
 "^ot:inGroupClade": "node561569", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node561567", 
-"^ot:tag": "MP", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [
+"MP"
+], 
 "edgeBySourceId": {
 "node561567": {
 "edge561568": {
@@ -1706,9 +1704,15 @@
 }, 
 "tree2416": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "MP, ITS + ACT + EF-1", 
 "^ot:inGroupClade": "node561626", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node561624", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node561624": {
 "edge561625": {

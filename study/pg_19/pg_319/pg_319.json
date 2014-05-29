@@ -19,48 +19,11 @@
 "@id": "peyotl-validator", 
 "@name": "validate_ot_nexson.py", 
 "@url": "https://github.com/OpenTreeOfLife/peyotl", 
-"@version": "0.0.3a", 
+"@version": "0.0.4a", 
 "invocation": {
-"checksPerformed": [
-"MISSING_MANDATORY_KEY", 
-"MISSING_OPTIONAL_KEY", 
-"UNRECOGNIZED_KEY", 
-"MISSING_LIST_EXPECTED", 
-"DUPLICATING_SINGLETON_KEY", 
-"REFERENCED_ID_NOT_FOUND", 
-"REPEATED_ID", 
-"REPEATED_OTU", 
-"MULTIPLE_ROOT_NODES", 
-"NO_ROOT_NODE", 
-"MULTIPLE_EDGES_FOR_NODES", 
-"CYCLE_DETECTED", 
-"DISCONNECTED_GRAPH_DETECTED", 
-"INCORRECT_ROOT_NODE_LABEL", 
-"TIP_WITHOUT_OTU", 
-"TIP_WITHOUT_OTT_ID", 
-"MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
-"NON_MONOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
-"INVALID_PROPERTY_VALUE", 
-"PROPERTY_VALUE_NOT_USEFUL", 
-"UNRECOGNIZED_PROPERTY_VALUE", 
-"MULTIPLE_TREES", 
-"UNRECOGNIZED_TAG", 
-"CONFLICTING_PROPERTY_VALUES", 
-"NO_TREES", 
-"DEPRECATED_PROPERTY", 
-"UNPARSEABLE_META", 
-"UNREACHABLE_NODE", 
-"INCORRECT_VALUE_TYPE", 
-"MISSING_CRUCIAL_CONTENT"
-], 
 "commandLine": [
 "--embed", 
-"--agent-only", 
-"-e", 
-"../mig-phyelesystem-scratch/319/validation.json", 
-"-o", 
-"../mig-phyelesystem-scratch/319/final.json", 
-"../mig-phyelesystem-scratch/319/v1.2.1-319.json"
+"--agent-only"
 ], 
 "otherProperty": [
 {
@@ -76,9 +39,16 @@
 }
 ]
 }, 
+"^ot:annotationEvents": {
+"annotation": []
+}, 
+"^ot:candidateTreeForSynthesis": [], 
 "^ot:curatorName": "bryan drew", 
 "^ot:focalClade": 309271, 
 "^ot:focalCladeOTTTaxonName": "Brassicaceae", 
+"^ot:messages": {
+"message": []
+}, 
 "^ot:otusElementOrder": [
 "otus319"
 ], 
@@ -88,6 +58,7 @@
 }, 
 "^ot:studyPublicationReference": "Bailey, C. Donovan, Marcus A. Koch, Michael Mayer, Klaus Mummenhoff, Steve L. O'Kane, Suzanne I. Warwick, Michael D. Windham, and Ihsan A. Al-Shehbaz. \"Toward a global phylogeny of the Brassicaceae.\" Molecular Biology and Evolution 23, no. 11 (2006): 2142-2160.", 
 "^ot:studyYear": 2006, 
+"^ot:tag": [], 
 "^ot:treesElementOrder": [
 "trees319"
 ], 
@@ -246,7 +217,9 @@
 "^ot:ottTaxonName": "Turritis glabra"
 }, 
 "otu72483": {
-"^ot:originalLabel": "Halimolobos montana"
+"^ot:originalLabel": "Halimolobos montana", 
+"^ot:ottId": 23514, 
+"^ot:ottTaxonName": "Exhalimolobos weddellii"
 }, 
 "otu72484": {
 "^ot:originalLabel": "Pennellia longifolia", 
@@ -272,7 +245,9 @@
 "^ot:ottTaxonName": "Boechera laevigata"
 }, 
 "otu72489": {
-"^ot:originalLabel": "Boechera drummondii"
+"^ot:originalLabel": "Boechera drummondii", 
+"^ot:ottId": 238618, 
+"^ot:ottTaxonName": "Boechera stricta"
 }, 
 "otu72490": {
 "^ot:originalLabel": "Boechera platysperma", 
@@ -1907,7 +1882,9 @@
 "^ot:originalLabel": "AJ863600 AJ864811 HELIOPHILEAE Heliophila arenaria"
 }, 
 "otu73016": {
-"^ot:originalLabel": " Chamira circaeoides 1164"
+"^ot:originalLabel": " Chamira circaeoides 1164", 
+"^ot:ottId": 1023207, 
+"^ot:ottTaxonName": "Chamira circaeoides"
 }, 
 "otu73017": {
 "^ot:originalLabel": "AF336208 COCHLEARIEAE Cochlearia megalosperma"
@@ -2654,8 +2631,14 @@
 "treeById": {
 "tree273": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "ML", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node190615", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node190615": {
 "edge190616": {
@@ -3508,8 +3491,14 @@
 }, 
 "tree274": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "ML", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node190736", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node190736": {
 "edge190737": {

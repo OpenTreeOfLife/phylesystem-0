@@ -19,48 +19,11 @@
 "@id": "peyotl-validator", 
 "@name": "validate_ot_nexson.py", 
 "@url": "https://github.com/OpenTreeOfLife/peyotl", 
-"@version": "0.0.3a", 
+"@version": "0.0.4a", 
 "invocation": {
-"checksPerformed": [
-"MISSING_MANDATORY_KEY", 
-"MISSING_OPTIONAL_KEY", 
-"UNRECOGNIZED_KEY", 
-"MISSING_LIST_EXPECTED", 
-"DUPLICATING_SINGLETON_KEY", 
-"REFERENCED_ID_NOT_FOUND", 
-"REPEATED_ID", 
-"REPEATED_OTU", 
-"MULTIPLE_ROOT_NODES", 
-"NO_ROOT_NODE", 
-"MULTIPLE_EDGES_FOR_NODES", 
-"CYCLE_DETECTED", 
-"DISCONNECTED_GRAPH_DETECTED", 
-"INCORRECT_ROOT_NODE_LABEL", 
-"TIP_WITHOUT_OTU", 
-"TIP_WITHOUT_OTT_ID", 
-"MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
-"NON_MONOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
-"INVALID_PROPERTY_VALUE", 
-"PROPERTY_VALUE_NOT_USEFUL", 
-"UNRECOGNIZED_PROPERTY_VALUE", 
-"MULTIPLE_TREES", 
-"UNRECOGNIZED_TAG", 
-"CONFLICTING_PROPERTY_VALUES", 
-"NO_TREES", 
-"DEPRECATED_PROPERTY", 
-"UNPARSEABLE_META", 
-"UNREACHABLE_NODE", 
-"INCORRECT_VALUE_TYPE", 
-"MISSING_CRUCIAL_CONTENT"
-], 
 "commandLine": [
 "--embed", 
-"--agent-only", 
-"-e", 
-"../mig-phyelesystem-scratch/305/validation.json", 
-"-o", 
-"../mig-phyelesystem-scratch/305/final.json", 
-"../mig-phyelesystem-scratch/305/v1.2.1-305.json"
+"--agent-only"
 ], 
 "otherProperty": [
 {
@@ -76,12 +39,19 @@
 }
 ]
 }, 
+"^ot:annotationEvents": {
+"annotation": []
+}, 
+"^ot:candidateTreeForSynthesis": [], 
 "^ot:curatorName": "Kristen Swithers", 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S10562"
 }, 
 "^ot:focalClade": 304358, 
 "^ot:focalCladeOTTTaxonName": "Eukaryota", 
+"^ot:messages": {
+"message": []
+}, 
 "^ot:otusElementOrder": [
 "otus305"
 ], 
@@ -89,8 +59,9 @@
 "^ot:studyPublication": {
 "@href": "http://dx.doi.org/10.1093/sysbio/syq037"
 }, 
-"^ot:studyPublicationReference": "Parfrey L.W., Grant J.R., Tekle Y.I., Lasek-nesselquist E., Patterson D.J., Morrison H.G., Sogin M., and Katz L.A. 2010. Broadly sampled multigene analyses yield a well-resolved eukaryotic tree of life. Systematic Biology 59 (5): 518-33.", 
+"^ot:studyPublicationReference": "Parfrey, L.W., Grant J.R., Tekle Y.I., Lasek-nesselquist E., Patterson D.J., Morrison H.G., Sogin M., and Katz L.A. 2010. Broadly sampled multigene analyses yield a well-resolved eukaryotic tree of life. Systematic Biology 59 (5): 518-33.", 
 "^ot:studyYear": 2010, 
+"^ot:tag": [], 
 "^ot:treesElementOrder": [
 "trees305"
 ], 
@@ -118,7 +89,9 @@
 "^ot:ottTaxonName": "Entamoeba histolytica"
 }, 
 "otu378750": {
-"^ot:originalLabel": "Phreatamoeba balamuthi"
+"^ot:originalLabel": "Phreatamoeba balamuthi", 
+"^ot:ottId": 202902, 
+"^ot:ottTaxonName": "Mastigamoeba balamuthi"
 }, 
 "otu378751": {
 "^ot:originalLabel": "Streblomastix strix", 
@@ -211,7 +184,9 @@
 "^ot:ottTaxonName": "Glaucocystis nostochinearum"
 }, 
 "otu378769": {
-"^ot:originalLabel": "Cyanophora paradoxa"
+"^ot:originalLabel": "Cyanophora paradoxa", 
+"^ot:ottId": 878960, 
+"^ot:ottTaxonName": "Cyanophora paradoxa"
 }, 
 "otu378770": {
 "^ot:originalLabel": "Chondrus crispus", 
@@ -289,7 +264,9 @@
 "^ot:ottTaxonName": "Prymnesium parvum"
 }, 
 "otu378785": {
-"^ot:originalLabel": "Guillardia theta"
+"^ot:originalLabel": "Guillardia theta", 
+"^ot:ottId": 5247740, 
+"^ot:ottTaxonName": "Guillardia theta"
 }, 
 "otu378786": {
 "^ot:originalLabel": "Heteromita globosa", 
@@ -300,7 +277,9 @@
 "^ot:originalLabel": "Reticulomyxa filosa"
 }, 
 "otu378788": {
-"^ot:originalLabel": "Bigelowiella natans"
+"^ot:originalLabel": "Bigelowiella natans", 
+"^ot:ottId": 5260606, 
+"^ot:ottTaxonName": "Bigelowiella natans"
 }, 
 "otu378789": {
 "^ot:originalLabel": "Blastocystis hominis", 
@@ -393,31 +372,47 @@
 "^ot:ottTaxonName": "Alexandrium tamarense"
 }, 
 "otu378807": {
-"^ot:originalLabel": "Breviata anathema"
+"^ot:originalLabel": "Breviata anathema", 
+"^ot:ottId": 4739001, 
+"^ot:ottTaxonName": "Breviata anathema"
 }, 
 "otu378808": {
-"^ot:originalLabel": "Spizellomyces punctatus isolate AFTOL ID 182"
+"^ot:originalLabel": "Spizellomyces punctatus isolate AFTOL ID 182", 
+"^ot:ottId": 708156, 
+"^ot:ottTaxonName": "Spizellomyces punctatus"
 }, 
 "otu378809": {
-"^ot:originalLabel": "Schizosaccharomyces pombe"
+"^ot:originalLabel": "Schizosaccharomyces pombe", 
+"^ot:ottId": 990004, 
+"^ot:ottTaxonName": "Schizosaccharomyces pombe"
 }, 
 "otu378810": {
-"^ot:originalLabel": "Candida albicans"
+"^ot:originalLabel": "Candida albicans", 
+"^ot:ottId": 1034966, 
+"^ot:ottTaxonName": "Candida albicans"
 }, 
 "otu378811": {
-"^ot:originalLabel": "Saccharomyces cerevisiae"
+"^ot:originalLabel": "Saccharomyces cerevisiae", 
+"^ot:ottId": 908549, 
+"^ot:ottTaxonName": "Saccharomyces cerevisiae"
 }, 
 "otu378812": {
-"^ot:originalLabel": "Ustilago maydis"
+"^ot:originalLabel": "Ustilago maydis", 
+"^ot:ottId": 285447, 
+"^ot:ottTaxonName": "Ustilago maydis"
 }, 
 "otu378813": {
-"^ot:originalLabel": "Phanerochaete chrysosporium"
+"^ot:originalLabel": "Phanerochaete chrysosporium", 
+"^ot:ottId": 5299626, 
+"^ot:ottTaxonName": "Phanerodontia chrysosporium"
 }, 
 "otu378814": {
 "^ot:originalLabel": "Allomyces macrogynus ATCC 38327"
 }, 
 "otu378815": {
-"^ot:originalLabel": "Encephalitozoon cuniculi"
+"^ot:originalLabel": "Encephalitozoon cuniculi", 
+"^ot:ottId": 537032, 
+"^ot:ottTaxonName": "Encephalitozoon cuniculi"
 }, 
 "otu378816": {
 "^ot:originalLabel": "Strongylocentrotus purpuratus", 
@@ -435,7 +430,9 @@
 "^ot:ottTaxonName": "Branchiostoma floridae"
 }, 
 "otu378819": {
-"^ot:originalLabel": "Homo sapiens"
+"^ot:originalLabel": "Homo sapiens", 
+"^ot:ottId": 770315, 
+"^ot:ottTaxonName": "Homo sapiens"
 }, 
 "otu378820": {
 "^ot:originalLabel": "Gallus gallus", 
@@ -508,10 +505,14 @@
 "^ot:ottTaxonName": "Vermamoeba vermiformis"
 }, 
 "otu378834": {
-"^ot:originalLabel": "Apusomonas proboscidea CCAP 1905"
+"^ot:originalLabel": "Apusomonas proboscidea CCAP 1905", 
+"^ot:ottId": 918390, 
+"^ot:ottTaxonName": "Apusomonas proboscidea"
 }, 
 "otu378835": {
-"^ot:originalLabel": "Glomus intraradices"
+"^ot:originalLabel": "Glomus intraradices", 
+"^ot:ottId": 837854, 
+"^ot:ottTaxonName": "Rhizophagus intraradices"
 }, 
 "otu378836": {
 "^ot:originalLabel": "Corallochytrium limacisporum", 
@@ -629,7 +630,9 @@
 "^ot:ottTaxonName": "Arachnula sp. ATCC 50593"
 }, 
 "otu378859": {
-"^ot:originalLabel": "Trichosphaerium sp. ATCC 40318"
+"^ot:originalLabel": "Trichosphaerium sp. ATCC 40318", 
+"^ot:ottId": 271393, 
+"^ot:ottTaxonName": "Trichosphaerium sp. ATCC 40318"
 }, 
 "otu378860": {
 "^ot:originalLabel": "Rhizamoeba sp.", 
@@ -683,7 +686,9 @@
 "^ot:ottTaxonName": "Thaumatomonas seravini"
 }, 
 "otu378871": {
-"^ot:originalLabel": "Gymnophrys 50923"
+"^ot:originalLabel": "Gymnophrys 50923", 
+"^ot:ottId": 4019225, 
+"^ot:ottTaxonName": "Gymnophrys"
 }, 
 "otu378872": {
 "^ot:originalLabel": "Ovammina opaca", 
@@ -721,7 +726,9 @@
 "^ot:ottTaxonName": "Leukarachnion sp. ATCC PRA-24"
 }, 
 "otu378879": {
-"^ot:originalLabel": "Blepharisma japonicum"
+"^ot:originalLabel": "Blepharisma japonicum", 
+"^ot:ottId": 703497, 
+"^ot:ottTaxonName": "Blepharisma japonicum"
 }, 
 "otu378880": {
 "^ot:originalLabel": "Stylonychia lemnae", 
@@ -769,10 +776,14 @@
 "^ot:ottTaxonName": "Coleochaete scutata"
 }, 
 "otu378889": {
-"^ot:originalLabel": "Telonema antarcticum"
+"^ot:originalLabel": "Telonema antarcticum", 
+"^ot:ottId": 4738976, 
+"^ot:ottTaxonName": "Telonema antarcticum"
 }, 
 "otu378890": {
-"^ot:originalLabel": "Telonema subtile"
+"^ot:originalLabel": "Telonema subtile", 
+"^ot:ottId": 4738975, 
+"^ot:ottTaxonName": "Telonema subtile"
 }, 
 "otu378891": {
 "^ot:originalLabel": "Carpediemonas membranifera", 
@@ -824,7 +835,9 @@
 "^ot:originalLabel": "Stephanopogon apogon"
 }, 
 "otu378902": {
-"^ot:originalLabel": "Planomonas micra"
+"^ot:originalLabel": "Planomonas micra", 
+"^ot:ottId": 80833, 
+"^ot:ottTaxonName": "Planomonas micra"
 }, 
 "otu378903": {
 "^ot:originalLabel": "Aphrocallistes vastus", 
@@ -837,13 +850,19 @@
 "^ot:ottTaxonName": "Diaphanoeca grandis"
 }, 
 "otu378905": {
-"^ot:originalLabel": "Nuclearia simplex strain CCAP1552"
+"^ot:originalLabel": "Nuclearia simplex strain CCAP1552", 
+"^ot:ottId": 98036, 
+"^ot:ottTaxonName": "Nuclearia simplex"
 }, 
 "otu378906": {
-"^ot:originalLabel": "Rhizopus microsporus"
+"^ot:originalLabel": "Rhizopus microsporus", 
+"^ot:ottId": 89468, 
+"^ot:ottTaxonName": "Rhizopus microsporus"
 }, 
 "otu378907": {
-"^ot:originalLabel": "Thecamoeba sp. ATCC PRA 35"
+"^ot:originalLabel": "Thecamoeba sp. ATCC PRA 35", 
+"^ot:ottId": 575787, 
+"^ot:ottTaxonName": "Thecamoeba sp. ATCC PRA-35"
 }
 }
 }
@@ -862,9 +881,14 @@
 "treeById": {
 "tree5968": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
 "^ot:branchLengthMode": "ot:substitutionCount", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "Maximum likelihood tree, tree 16_10", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node1012387", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node1012387": {
 "edge1012388": {
@@ -2261,9 +2285,14 @@
 }, 
 "tree5969": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
 "^ot:branchLengthMode": "ot:substitutionCount", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "Maximum likelihood tree, tree 16_6", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node1012561", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node1012561": {
 "edge1012562": {
@@ -4028,9 +4057,14 @@
 }, 
 "tree5970": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
 "^ot:branchLengthMode": "ot:substitutionCount", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "Maximum likelihood tree, tree 16_4", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node1012781", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node1012781": {
 "edge1012782": {
@@ -6579,9 +6613,14 @@
 }, 
 "tree5971": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
 "^ot:branchLengthMode": "ot:substitutionCount", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "Maximum likelihood tree, tree 15_9", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node1013099", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node1013099": {
 "edge1013100": {
@@ -7994,9 +8033,14 @@
 }, 
 "tree5972": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
 "^ot:branchLengthMode": "ot:substitutionCount", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "Maximum likelihood tree, tree 15_5", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node1013275", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node1013275": {
 "edge1013276": {
@@ -9761,9 +9805,14 @@
 }, 
 "tree5973": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
 "^ot:branchLengthMode": "ot:substitutionCount", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "Maximum likelihood tree, tree 15_3", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node1013495", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node1013495": {
 "edge1013496": {

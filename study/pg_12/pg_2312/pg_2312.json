@@ -19,48 +19,11 @@
 "@id": "peyotl-validator", 
 "@name": "validate_ot_nexson.py", 
 "@url": "https://github.com/OpenTreeOfLife/peyotl", 
-"@version": "0.0.3a", 
+"@version": "0.0.4a", 
 "invocation": {
-"checksPerformed": [
-"MISSING_MANDATORY_KEY", 
-"MISSING_OPTIONAL_KEY", 
-"UNRECOGNIZED_KEY", 
-"MISSING_LIST_EXPECTED", 
-"DUPLICATING_SINGLETON_KEY", 
-"REFERENCED_ID_NOT_FOUND", 
-"REPEATED_ID", 
-"REPEATED_OTU", 
-"MULTIPLE_ROOT_NODES", 
-"NO_ROOT_NODE", 
-"MULTIPLE_EDGES_FOR_NODES", 
-"CYCLE_DETECTED", 
-"DISCONNECTED_GRAPH_DETECTED", 
-"INCORRECT_ROOT_NODE_LABEL", 
-"TIP_WITHOUT_OTU", 
-"TIP_WITHOUT_OTT_ID", 
-"MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
-"NON_MONOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
-"INVALID_PROPERTY_VALUE", 
-"PROPERTY_VALUE_NOT_USEFUL", 
-"UNRECOGNIZED_PROPERTY_VALUE", 
-"MULTIPLE_TREES", 
-"UNRECOGNIZED_TAG", 
-"CONFLICTING_PROPERTY_VALUES", 
-"NO_TREES", 
-"DEPRECATED_PROPERTY", 
-"UNPARSEABLE_META", 
-"UNREACHABLE_NODE", 
-"INCORRECT_VALUE_TYPE", 
-"MISSING_CRUCIAL_CONTENT"
-], 
 "commandLine": [
 "--embed", 
-"--agent-only", 
-"-e", 
-"../mig-phyelesystem-scratch/2312/validation.json", 
-"-o", 
-"../mig-phyelesystem-scratch/2312/final.json", 
-"../mig-phyelesystem-scratch/2312/v1.2.1-2312.json"
+"--agent-only"
 ], 
 "otherProperty": [
 {
@@ -76,18 +39,26 @@
 }
 ]
 }, 
+"^ot:annotationEvents": {
+"annotation": []
+}, 
+"^ot:candidateTreeForSynthesis": [], 
 "^ot:curatorName": "Romina Gazis", 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S1887"
 }, 
 "^ot:focalClade": 554418, 
 "^ot:focalCladeOTTTaxonName": "Phaeophleospora", 
+"^ot:messages": {
+"message": []
+}, 
 "^ot:otusElementOrder": [
 "otus2312"
 ], 
 "^ot:studyId": "2312", 
 "^ot:studyPublicationReference": "Andjic V., Cortinas M., Hardy G., Wingfield M.J., & Burgess T. 2007. Multiple gene genealogies reveal important relationships between species of Phaeophleospora infecting Eucalyptus leaves. FEMS Microbiology Letters, 268: 22-33.", 
 "^ot:studyYear": 2007, 
+"^ot:tag": [], 
 "^ot:treesElementOrder": [
 "trees2312"
 ], 
@@ -102,6 +73,8 @@
 }, 
 "otu329092": {
 "^ot:originalLabel": "Phaeophleospora epicoccoides MUCC426", 
+"^ot:ottId": 5320037, 
+"^ot:ottTaxonName": "Kirramyces epicoccoides", 
 "^ot:treebaseOTUId": "Tl195531"
 }, 
 "otu329093": {
@@ -112,6 +85,8 @@
 }, 
 "otu329094": {
 "^ot:originalLabel": "Mycosphaerella africana", 
+"^ot:ottId": 721730, 
+"^ot:ottTaxonName": "Mycosphaerella africana", 
 "^ot:treebaseOTUId": "Tl195539"
 }, 
 "otu329095": {
@@ -128,6 +103,8 @@
 }, 
 "otu329097": {
 "^ot:originalLabel": "Phaeophleospora epicoccoides CMW22484", 
+"^ot:ottId": 5320037, 
+"^ot:ottTaxonName": "Kirramyces epicoccoides", 
 "^ot:treebaseOTUId": "Tl195551"
 }, 
 "otu329098": {
@@ -198,6 +175,8 @@
 }, 
 "otu329109": {
 "^ot:originalLabel": "Phaeophleospora epicoccoides CMW5348", 
+"^ot:ottId": 5320037, 
+"^ot:ottTaxonName": "Kirramyces epicoccoides", 
 "^ot:treebaseOTUId": "Tl195581"
 }, 
 "otu329110": {
@@ -256,6 +235,8 @@
 }, 
 "otu329119": {
 "^ot:originalLabel": "Mycosphaerella suttoniae", 
+"^ot:ottId": 316161, 
+"^ot:ottTaxonName": "Mycosphaerella suttonii", 
 "^ot:treebaseOTUId": "Tl34031"
 }, 
 "otu329120": {
@@ -272,10 +253,14 @@
 }, 
 "otu329122": {
 "^ot:originalLabel": "Phaeophleospora epicoccoides CMW22483", 
+"^ot:ottId": 5320037, 
+"^ot:ottTaxonName": "Kirramyces epicoccoides", 
 "^ot:treebaseOTUId": "Tl98126"
 }, 
 "otu329123": {
 "^ot:originalLabel": "Phaeophleospora epicoccoides CMW22486", 
+"^ot:ottId": 5320037, 
+"^ot:ottTaxonName": "Kirramyces epicoccoides", 
 "^ot:treebaseOTUId": "Tl98127"
 }, 
 "otu329124": {
@@ -286,6 +271,8 @@
 }, 
 "otu329125": {
 "^ot:originalLabel": "Phaeophleospora epicoccoides MUCC431", 
+"^ot:ottId": 5320037, 
+"^ot:ottTaxonName": "Kirramyces epicoccoides", 
 "^ot:treebaseOTUId": "Tl98131"
 }, 
 "otu329126": {
@@ -308,14 +295,20 @@
 }, 
 "otu329129": {
 "^ot:originalLabel": "Mycosphaerella vespa CMMW6210", 
+"^ot:ottId": 514694, 
+"^ot:ottTaxonName": "Mycosphaerella molleriana", 
 "^ot:treebaseOTUId": "Tl98137"
 }, 
 "otu329130": {
 "^ot:originalLabel": "Phaeophleospora epicoccoides MUCC430", 
+"^ot:ottId": 5320037, 
+"^ot:ottTaxonName": "Kirramyces epicoccoides", 
 "^ot:treebaseOTUId": "Tl98139"
 }, 
 "otu329131": {
 "^ot:originalLabel": "Mycosphaerella vespa CMW11588", 
+"^ot:ottId": 514694, 
+"^ot:ottTaxonName": "Mycosphaerella molleriana", 
 "^ot:treebaseOTUId": "Tl98141"
 }, 
 "otu329132": {
@@ -326,6 +319,8 @@
 }, 
 "otu329133": {
 "^ot:originalLabel": "Phaeophleospora epicoccoides MUCC429", 
+"^ot:ottId": 5320037, 
+"^ot:ottTaxonName": "Kirramyces epicoccoides", 
 "^ot:treebaseOTUId": "Tl98143"
 }, 
 "otu329134": {
@@ -342,6 +337,8 @@
 }, 
 "otu329136": {
 "^ot:originalLabel": "Phaeophleospora epicoccoides MUCC424", 
+"^ot:ottId": 5320037, 
+"^ot:ottTaxonName": "Kirramyces epicoccoides", 
 "^ot:treebaseOTUId": "Tl98146"
 }, 
 "otu329137": {
@@ -370,6 +367,8 @@
 }, 
 "otu329141": {
 "^ot:originalLabel": "Phaeophleospora epicoccoides MUCC428", 
+"^ot:ottId": 5320037, 
+"^ot:ottTaxonName": "Kirramyces epicoccoides", 
 "^ot:treebaseOTUId": "Tl98152"
 }, 
 "otu329142": {
@@ -380,6 +379,8 @@
 }, 
 "otu329143": {
 "^ot:originalLabel": "Phaeophleospora epicoccoides MURU327", 
+"^ot:ottId": 5320037, 
+"^ot:ottTaxonName": "Kirramyces epicoccoides", 
 "^ot:treebaseOTUId": "Tl98154"
 }, 
 "otu329144": {
@@ -390,6 +391,8 @@
 }, 
 "otu329145": {
 "^ot:originalLabel": "Mycosphaerella vespa A18", 
+"^ot:ottId": 514694, 
+"^ot:ottTaxonName": "Mycosphaerella molleriana", 
 "^ot:treebaseOTUId": "Tl98157"
 }, 
 "otu329146": {
@@ -424,6 +427,8 @@
 }, 
 "otu329151": {
 "^ot:originalLabel": "Mycosphaerella ambiphylla", 
+"^ot:ottId": 514694, 
+"^ot:ottTaxonName": "Mycosphaerella molleriana", 
 "^ot:treebaseOTUId": "Tl98167"
 }, 
 "otu329152": {
@@ -470,6 +475,8 @@
 }, 
 "otu329159": {
 "^ot:originalLabel": "Phaeophleospora epicoccoides CMW17920", 
+"^ot:ottId": 5320037, 
+"^ot:ottTaxonName": "Kirramyces epicoccoides", 
 "^ot:treebaseOTUId": "Tl98175"
 }, 
 "otu329160": {
@@ -480,6 +487,8 @@
 }, 
 "otu329161": {
 "^ot:originalLabel": "Phaeophleospora epicoccoides SA12", 
+"^ot:ottId": 5320037, 
+"^ot:ottTaxonName": "Kirramyces epicoccoides", 
 "^ot:treebaseOTUId": "Tl98177"
 }, 
 "otu329162": {
@@ -502,6 +511,8 @@
 }, 
 "otu329165": {
 "^ot:originalLabel": "Mycosphaerella vespa", 
+"^ot:ottId": 514694, 
+"^ot:ottTaxonName": "Mycosphaerella molleriana", 
 "^ot:treebaseOTUId": "Tl98182"
 }, 
 "otu329166": {
@@ -512,14 +523,20 @@
 }, 
 "otu329167": {
 "^ot:originalLabel": "Phaeophleospora epicoccoides MUCC422", 
+"^ot:ottId": 5320037, 
+"^ot:ottTaxonName": "Kirramyces epicoccoides", 
 "^ot:treebaseOTUId": "Tl98184"
 }, 
 "otu329168": {
 "^ot:originalLabel": "Phaeophleospora epicoccoides MUCC425", 
+"^ot:ottId": 5320037, 
+"^ot:ottTaxonName": "Kirramyces epicoccoides", 
 "^ot:treebaseOTUId": "Tl98185"
 }, 
 "otu329169": {
 "^ot:originalLabel": "Phaeophleospora epicoccoides CMW22482", 
+"^ot:ottId": 5320037, 
+"^ot:ottTaxonName": "Kirramyces epicoccoides", 
 "^ot:treebaseOTUId": "Tl98186"
 }, 
 "otu329170": {
@@ -541,9 +558,15 @@
 "treeById": {
 "tree4879": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "MP, ITS", 
 "^ot:inGroupClade": "node848904", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node848900", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node848900": {
 "edge848901": {
@@ -1298,9 +1321,15 @@
 }, 
 "tree4880": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "BI, b-tubulin + ITS + EF-1 + CHS", 
 "^ot:inGroupClade": "node849009", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node849007", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node849007": {
 "edge849008": {

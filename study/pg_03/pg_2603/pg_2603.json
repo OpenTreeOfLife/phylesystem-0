@@ -19,48 +19,11 @@
 "@id": "peyotl-validator", 
 "@name": "validate_ot_nexson.py", 
 "@url": "https://github.com/OpenTreeOfLife/peyotl", 
-"@version": "0.0.3a", 
+"@version": "0.0.4a", 
 "invocation": {
-"checksPerformed": [
-"MISSING_MANDATORY_KEY", 
-"MISSING_OPTIONAL_KEY", 
-"UNRECOGNIZED_KEY", 
-"MISSING_LIST_EXPECTED", 
-"DUPLICATING_SINGLETON_KEY", 
-"REFERENCED_ID_NOT_FOUND", 
-"REPEATED_ID", 
-"REPEATED_OTU", 
-"MULTIPLE_ROOT_NODES", 
-"NO_ROOT_NODE", 
-"MULTIPLE_EDGES_FOR_NODES", 
-"CYCLE_DETECTED", 
-"DISCONNECTED_GRAPH_DETECTED", 
-"INCORRECT_ROOT_NODE_LABEL", 
-"TIP_WITHOUT_OTU", 
-"TIP_WITHOUT_OTT_ID", 
-"MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
-"NON_MONOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
-"INVALID_PROPERTY_VALUE", 
-"PROPERTY_VALUE_NOT_USEFUL", 
-"UNRECOGNIZED_PROPERTY_VALUE", 
-"MULTIPLE_TREES", 
-"UNRECOGNIZED_TAG", 
-"CONFLICTING_PROPERTY_VALUES", 
-"NO_TREES", 
-"DEPRECATED_PROPERTY", 
-"UNPARSEABLE_META", 
-"UNREACHABLE_NODE", 
-"INCORRECT_VALUE_TYPE", 
-"MISSING_CRUCIAL_CONTENT"
-], 
 "commandLine": [
 "--embed", 
-"--agent-only", 
-"-e", 
-"../mig-phyelesystem-scratch/2603/validation.json", 
-"-o", 
-"../mig-phyelesystem-scratch/2603/final.json", 
-"../mig-phyelesystem-scratch/2603/v1.2.1-2603.json"
+"--agent-only"
 ], 
 "otherProperty": [
 {
@@ -76,12 +39,19 @@
 }
 ]
 }, 
+"^ot:annotationEvents": {
+"annotation": []
+}, 
+"^ot:candidateTreeForSynthesis": [], 
 "^ot:curatorName": "Romina Gazis", 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S14543"
 }, 
 "^ot:focalClade": 346120, 
 "^ot:focalCladeOTTTaxonName": "Dothideomycetes", 
+"^ot:messages": {
+"message": []
+}, 
 "^ot:otusElementOrder": [
 "otus2603"
 ], 
@@ -89,8 +59,8 @@
 "^ot:studyPublicationReference": "Crous P.W., Shivas R.G., Wingfield M.J., Summerell B., Rossman A., Alves J.L., Adams G., Barreto R., Bell A., Coutinho M.L., Flory S.L., Gates G., Grice K.R., Hardy G.E., Kleczewski N.M., Lombard L., Longa C.M., Louis-seize G., Macedo F., Mahoney D.P., Maresi G., Martin-sanchez P.M., Marvanov? L., Minnis A.M., Morgado L.N., Noordeloos M.E., Phillips A.J., Quaedvlieg W., Ryan P.G., Saiz-jimenez C., Seifert K., Swart W.J., Tan Y., Tanney J.B., Thu P.Q., Videira S.I., Walker D.M., & Groenewald J.Z. 2012. Fungal Planet description sheets: 128-153. Persoonia: Molecular Phylogeny and Evolution of Fungi, 29: 146-201.", 
 "^ot:studyYear": 2012, 
 "^ot:tag": [
-"NJ", 
-"LSU"
+"LSU", 
+"NJ"
 ], 
 "^ot:treesElementOrder": [
 "trees2603"
@@ -158,6 +128,8 @@
 }, 
 "otu386780": {
 "^ot:originalLabel": "Dothideomycetes sp GU323986", 
+"^ot:ottId": 346120, 
+"^ot:ottTaxonName": "Dothideomycetes", 
 "^ot:treebaseOTUId": "Tl1160324"
 }, 
 "otu386781": {
@@ -240,6 +212,8 @@
 }, 
 "otu386795": {
 "^ot:originalLabel": "Cochliobolus sativus DQ678045", 
+"^ot:ottId": 204741, 
+"^ot:ottTaxonName": "Cochliobolus sativus", 
 "^ot:treebaseOTUId": "Tl1160339"
 }, 
 "otu386796": {
@@ -462,6 +436,8 @@
 }, 
 "otu386834": {
 "^ot:originalLabel": "Vonarxia vagans FJ839673", 
+"^ot:ottId": 5310485, 
+"^ot:ottTaxonName": "Kazulia vagans", 
 "^ot:treebaseOTUId": "Tl1160378"
 }, 
 "otu386835": {
@@ -484,6 +460,8 @@
 }, 
 "otu386838": {
 "^ot:originalLabel": "Seiridium unicorne DQ414532", 
+"^ot:ottId": 173690, 
+"^ot:ottTaxonName": "Lepteutypa cupressi", 
 "^ot:treebaseOTUId": "Tl1160382"
 }, 
 "otu386839": {
@@ -494,6 +472,8 @@
 }, 
 "otu386840": {
 "^ot:originalLabel": "Dothideomycetes sp GU323985", 
+"^ot:ottId": 346120, 
+"^ot:ottTaxonName": "Dothideomycetes", 
 "^ot:treebaseOTUId": "Tl1160384"
 }, 
 "otu386841": {
@@ -578,9 +558,14 @@
 "treeById": {
 "tree6042": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "NJ, LSU", 
 "^ot:inGroupClade": "node1034507", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node1034506", 
+"^ot:specifiedRoot": "", 
 "^ot:tag": [
 "NJ", 
 "LSU"

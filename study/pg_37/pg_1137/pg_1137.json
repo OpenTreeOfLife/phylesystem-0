@@ -19,48 +19,11 @@
 "@id": "peyotl-validator", 
 "@name": "validate_ot_nexson.py", 
 "@url": "https://github.com/OpenTreeOfLife/peyotl", 
-"@version": "0.0.3a", 
+"@version": "0.0.4a", 
 "invocation": {
-"checksPerformed": [
-"MISSING_MANDATORY_KEY", 
-"MISSING_OPTIONAL_KEY", 
-"UNRECOGNIZED_KEY", 
-"MISSING_LIST_EXPECTED", 
-"DUPLICATING_SINGLETON_KEY", 
-"REFERENCED_ID_NOT_FOUND", 
-"REPEATED_ID", 
-"REPEATED_OTU", 
-"MULTIPLE_ROOT_NODES", 
-"NO_ROOT_NODE", 
-"MULTIPLE_EDGES_FOR_NODES", 
-"CYCLE_DETECTED", 
-"DISCONNECTED_GRAPH_DETECTED", 
-"INCORRECT_ROOT_NODE_LABEL", 
-"TIP_WITHOUT_OTU", 
-"TIP_WITHOUT_OTT_ID", 
-"MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
-"NON_MONOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
-"INVALID_PROPERTY_VALUE", 
-"PROPERTY_VALUE_NOT_USEFUL", 
-"UNRECOGNIZED_PROPERTY_VALUE", 
-"MULTIPLE_TREES", 
-"UNRECOGNIZED_TAG", 
-"CONFLICTING_PROPERTY_VALUES", 
-"NO_TREES", 
-"DEPRECATED_PROPERTY", 
-"UNPARSEABLE_META", 
-"UNREACHABLE_NODE", 
-"INCORRECT_VALUE_TYPE", 
-"MISSING_CRUCIAL_CONTENT"
-], 
 "commandLine": [
 "--embed", 
-"--agent-only", 
-"-e", 
-"../mig-phyelesystem-scratch/1137/validation.json", 
-"-o", 
-"../mig-phyelesystem-scratch/1137/final.json", 
-"../mig-phyelesystem-scratch/1137/v1.2.1-1137.json"
+"--agent-only"
 ], 
 "otherProperty": [
 {
@@ -76,12 +39,19 @@
 }
 ]
 }, 
+"^ot:annotationEvents": {
+"annotation": []
+}, 
+"^ot:candidateTreeForSynthesis": [], 
 "^ot:curatorName": "bryan drew", 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S1007"
 }, 
 "^ot:focalClade": 545823, 
 "^ot:focalCladeOTTTaxonName": "Erythronium", 
+"^ot:messages": {
+"message": []
+}, 
 "^ot:otusElementOrder": [
 "otus1137"
 ], 
@@ -91,6 +61,7 @@
 }, 
 "^ot:studyPublicationReference": "Allen G., Soltis D., & Soltis P. 2003. Phylogeny and biogeography of Erythronium (Liliaceae) inferred from chloroplast matK and nuclear rDNA ITS sequences. Systematic Botany, 28(3): 512-523.", 
 "^ot:studyYear": 2003, 
+"^ot:tag": [], 
 "^ot:treesElementOrder": [
 "trees1137"
 ], 
@@ -106,6 +77,7 @@
 "otu226459": {
 "^ot:originalLabel": "Clintonia borealis", 
 "^ot:ottId": 520109, 
+"^ot:ottTaxonName": "Clintonia borealis", 
 "^ot:treebaseOTUId": "Tl138556"
 }, 
 "otu226460": {
@@ -123,11 +95,13 @@
 "otu226462": {
 "^ot:originalLabel": "Lilium superbum", 
 "^ot:ottId": 592254, 
+"^ot:ottTaxonName": "Lilium superbum", 
 "^ot:treebaseOTUId": "Tl138564"
 }, 
 "otu226463": {
 "^ot:originalLabel": "Medeola virginiana", 
 "^ot:ottId": 833033, 
+"^ot:ottTaxonName": "Medeola virginiana", 
 "^ot:treebaseOTUId": "Tl138572"
 }, 
 "otu226464": {
@@ -283,27 +257,31 @@
 "otu226489": {
 "^ot:originalLabel": "Cardiocrinum cordatum", 
 "^ot:ottId": 962648, 
+"^ot:ottTaxonName": "Cardiocrinum cordatum", 
 "^ot:treebaseOTUId": "Tl14451"
 }, 
 "otu226490": {
 "^ot:originalLabel": "Lilium candidum", 
 "^ot:ottId": 616511, 
+"^ot:ottTaxonName": "Lilium candidum", 
 "^ot:treebaseOTUId": "Tl14452"
 }, 
 "otu226491": {
 "^ot:originalLabel": "Notholirion thomsonianum", 
 "^ot:ottId": 535089, 
+"^ot:ottTaxonName": "Notholirion thomsonianum", 
 "^ot:treebaseOTUId": "Tl14456"
 }, 
 "otu226492": {
 "^ot:originalLabel": "Gagea lutea", 
 "^ot:ottId": 616130, 
+"^ot:ottTaxonName": "Gagea lutea", 
 "^ot:treebaseOTUId": "Tl14457"
 }, 
 "otu226493": {
-"^ot:altLabel": "Tulipa edulis", 
 "^ot:originalLabel": "Amana edulis", 
 "^ot:ottId": 962637, 
+"^ot:ottTaxonName": "Tulipa edulis", 
 "^ot:treebaseOTUId": "Tl14458"
 }
 }
@@ -318,9 +296,15 @@
 "treeById": {
 "tree2295": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "Fig. 3", 
 "^ot:inGroupClade": "node547671", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node547670", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node547670": {
 "edge547671": {

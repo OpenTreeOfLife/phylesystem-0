@@ -19,48 +19,11 @@
 "@id": "peyotl-validator", 
 "@name": "validate_ot_nexson.py", 
 "@url": "https://github.com/OpenTreeOfLife/peyotl", 
-"@version": "0.0.3a", 
+"@version": "0.0.4a", 
 "invocation": {
-"checksPerformed": [
-"MISSING_MANDATORY_KEY", 
-"MISSING_OPTIONAL_KEY", 
-"UNRECOGNIZED_KEY", 
-"MISSING_LIST_EXPECTED", 
-"DUPLICATING_SINGLETON_KEY", 
-"REFERENCED_ID_NOT_FOUND", 
-"REPEATED_ID", 
-"REPEATED_OTU", 
-"MULTIPLE_ROOT_NODES", 
-"NO_ROOT_NODE", 
-"MULTIPLE_EDGES_FOR_NODES", 
-"CYCLE_DETECTED", 
-"DISCONNECTED_GRAPH_DETECTED", 
-"INCORRECT_ROOT_NODE_LABEL", 
-"TIP_WITHOUT_OTU", 
-"TIP_WITHOUT_OTT_ID", 
-"MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
-"NON_MONOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
-"INVALID_PROPERTY_VALUE", 
-"PROPERTY_VALUE_NOT_USEFUL", 
-"UNRECOGNIZED_PROPERTY_VALUE", 
-"MULTIPLE_TREES", 
-"UNRECOGNIZED_TAG", 
-"CONFLICTING_PROPERTY_VALUES", 
-"NO_TREES", 
-"DEPRECATED_PROPERTY", 
-"UNPARSEABLE_META", 
-"UNREACHABLE_NODE", 
-"INCORRECT_VALUE_TYPE", 
-"MISSING_CRUCIAL_CONTENT"
-], 
 "commandLine": [
 "--embed", 
-"--agent-only", 
-"-e", 
-"../mig-phyelesystem-scratch/454/validation.json", 
-"-o", 
-"../mig-phyelesystem-scratch/454/final.json", 
-"../mig-phyelesystem-scratch/454/v1.2.1-454.json"
+"--agent-only"
 ], 
 "otherProperty": [
 {
@@ -76,18 +39,26 @@
 }
 ]
 }, 
+"^ot:annotationEvents": {
+"annotation": []
+}, 
+"^ot:candidateTreeForSynthesis": [], 
 "^ot:curatorName": "Romina Gazis", 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S1786"
 }, 
 "^ot:focalClade": 219945, 
 "^ot:focalCladeOTTTaxonName": "Rhexocercosporidium", 
+"^ot:messages": {
+"message": []
+}, 
 "^ot:otusElementOrder": [
 "otus454"
 ], 
 "^ot:studyId": "454", 
 "^ot:studyPublicationReference": "Reeleder R. 2007. Rhexocercosporidium panacis sp. nov., a new anamorphic species causing rusted root of ginseng (Panax quinquefolius). Mycologia, null.", 
 "^ot:studyYear": 2007, 
+"^ot:tag": [], 
 "^ot:treesElementOrder": [
 "trees454"
 ], 
@@ -96,26 +67,38 @@
 "otuById": {
 "otu160775": {
 "^ot:originalLabel": "Rhexocercosporidium panacis RRD3", 
+"^ot:ottId": 629683, 
+"^ot:ottTaxonName": "Rhexocercosporidium panacis", 
 "^ot:treebaseOTUId": "Tl47871"
 }, 
 "otu160776": {
 "^ot:originalLabel": "Rhexocercosporidium panacis DAOM235603", 
+"^ot:ottId": 629683, 
+"^ot:ottTaxonName": "Rhexocercosporidium panacis", 
 "^ot:treebaseOTUId": "Tl47872"
 }, 
 "otu160777": {
 "^ot:originalLabel": "Phialophora gregata 98G13", 
+"^ot:ottId": 488616, 
+"^ot:ottTaxonName": "Cadophora gregata", 
 "^ot:treebaseOTUId": "Tl47873"
 }, 
 "otu160778": {
 "^ot:originalLabel": "Rhexocercosporidium carotae PRI787", 
+"^ot:ottId": 750568, 
+"^ot:ottTaxonName": "Pseudocercosporidium carotae", 
 "^ot:treebaseOTUId": "Tl47874"
 }, 
 "otu160779": {
 "^ot:originalLabel": "Rhexocercosporidium carotae DAOM226960", 
+"^ot:ottId": 750568, 
+"^ot:ottTaxonName": "Pseudocercosporidium carotae", 
 "^ot:treebaseOTUId": "Tl47875"
 }, 
 "otu160780": {
 "^ot:originalLabel": "Rhexocercosporidium panacis DAOM235604", 
+"^ot:ottId": 629683, 
+"^ot:ottTaxonName": "Rhexocercosporidium panacis", 
 "^ot:treebaseOTUId": "Tl47876"
 }, 
 "otu160781": {
@@ -124,10 +107,14 @@
 }, 
 "otu160782": {
 "^ot:originalLabel": "Rhexocercosporidium panacis DAOM235605", 
+"^ot:ottId": 629683, 
+"^ot:ottTaxonName": "Rhexocercosporidium panacis", 
 "^ot:treebaseOTUId": "Tl47878"
 }, 
 "otu160783": {
 "^ot:originalLabel": "Rhexocercosporidium carotae PRI784", 
+"^ot:ottId": 750568, 
+"^ot:ottTaxonName": "Pseudocercosporidium carotae", 
 "^ot:treebaseOTUId": "Tl47879"
 }, 
 "otu160784": {
@@ -136,6 +123,8 @@
 }, 
 "otu160785": {
 "^ot:originalLabel": "Rhexocercosporidium carotae DAOM229433", 
+"^ot:ottId": 750568, 
+"^ot:ottTaxonName": "Pseudocercosporidium carotae", 
 "^ot:treebaseOTUId": "Tl47881"
 }, 
 "otu160786": {
@@ -161,8 +150,14 @@
 "treeById": {
 "tree583": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "MP, ITS", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node315270", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node315270": {
 "edge315271": {
@@ -294,8 +289,14 @@
 }, 
 "tree584": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "MP, ITS + b-tubulin", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node315288", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node315288": {
 "edge315289": {
@@ -413,8 +414,14 @@
 }, 
 "tree585": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "Pars F 3", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node315304", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node315304": {
 "edge315305": {
@@ -546,8 +553,14 @@
 }, 
 "tree586": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "Pars F 2", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node315322", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node315322": {
 "edge315323": {
@@ -679,8 +692,14 @@
 }, 
 "tree587": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "Pars F 1", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node315340", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node315340": {
 "edge315341": {
@@ -840,8 +859,14 @@
 }, 
 "tree588": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "Pars Tub 1", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node315362", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node315362": {
 "edge315363": {
@@ -980,8 +1005,14 @@
 }, 
 "tree589": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "Pars Tub 2", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node315381", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node315381": {
 "edge315382": {
@@ -1099,8 +1130,14 @@
 }, 
 "tree590": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "ITS Tub 1", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node315397", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node315397": {
 "edge315398": {

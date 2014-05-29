@@ -19,48 +19,11 @@
 "@id": "peyotl-validator", 
 "@name": "validate_ot_nexson.py", 
 "@url": "https://github.com/OpenTreeOfLife/peyotl", 
-"@version": "0.0.3a", 
+"@version": "0.0.4a", 
 "invocation": {
-"checksPerformed": [
-"MISSING_MANDATORY_KEY", 
-"MISSING_OPTIONAL_KEY", 
-"UNRECOGNIZED_KEY", 
-"MISSING_LIST_EXPECTED", 
-"DUPLICATING_SINGLETON_KEY", 
-"REFERENCED_ID_NOT_FOUND", 
-"REPEATED_ID", 
-"REPEATED_OTU", 
-"MULTIPLE_ROOT_NODES", 
-"NO_ROOT_NODE", 
-"MULTIPLE_EDGES_FOR_NODES", 
-"CYCLE_DETECTED", 
-"DISCONNECTED_GRAPH_DETECTED", 
-"INCORRECT_ROOT_NODE_LABEL", 
-"TIP_WITHOUT_OTU", 
-"TIP_WITHOUT_OTT_ID", 
-"MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
-"NON_MONOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
-"INVALID_PROPERTY_VALUE", 
-"PROPERTY_VALUE_NOT_USEFUL", 
-"UNRECOGNIZED_PROPERTY_VALUE", 
-"MULTIPLE_TREES", 
-"UNRECOGNIZED_TAG", 
-"CONFLICTING_PROPERTY_VALUES", 
-"NO_TREES", 
-"DEPRECATED_PROPERTY", 
-"UNPARSEABLE_META", 
-"UNREACHABLE_NODE", 
-"INCORRECT_VALUE_TYPE", 
-"MISSING_CRUCIAL_CONTENT"
-], 
 "commandLine": [
 "--embed", 
-"--agent-only", 
-"-e", 
-"../mig-phyelesystem-scratch/1299/validation.json", 
-"-o", 
-"../mig-phyelesystem-scratch/1299/final.json", 
-"../mig-phyelesystem-scratch/1299/v1.2.1-1299.json"
+"--agent-only"
 ], 
 "otherProperty": [
 {
@@ -76,12 +39,19 @@
 }
 ]
 }, 
+"^ot:annotationEvents": {
+"annotation": []
+}, 
+"^ot:candidateTreeForSynthesis": [], 
 "^ot:curatorName": "Jiabin Deng", 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S1275"
 }, 
 "^ot:focalClade": 719032, 
 "^ot:focalCladeOTTTaxonName": "Equisetaceae", 
+"^ot:messages": {
+"message": []
+}, 
 "^ot:otusElementOrder": [
 "otus1299"
 ], 
@@ -91,6 +61,7 @@
 }, 
 "^ot:studyPublicationReference": "Guillon, J. M. (2004). Phylogeny of horsetails (Equisetum) based on the chloroplast rps4 gene and adjacent noncoding sequences. Systematic Botany, 29(2), 251-259.", 
 "^ot:studyYear": 2004, 
+"^ot:tag": [], 
 "^ot:treesElementOrder": [
 "trees1299"
 ], 
@@ -183,7 +154,9 @@
 "^ot:ottTaxonName": "Salvinia molesta"
 }, 
 "otu241111": {
-"^ot:originalLabel": "Pteris plumula"
+"^ot:originalLabel": "Pteris plumula", 
+"^ot:ottId": 320702, 
+"^ot:ottTaxonName": "Pteris quadriaurita"
 }, 
 "otu241112": {
 "^ot:originalLabel": "Danaea elliptica", 
@@ -211,8 +184,14 @@
 "treeById": {
 "tree2608": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "parsimony", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node584864", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node584864": {
 "edge584865": {
@@ -351,8 +330,14 @@
 }, 
 "tree2609": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "50% majority-rule consensus tree", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node584883", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node584883": {
 "edge584884": {
@@ -533,10 +518,15 @@
 }, 
 "tree2610": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
 "^ot:branchLengthMode": "ot:bootstrapValues", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "maximum likelihood", 
 "^ot:inGroupClade": "node584918", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node584908", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node584908": {
 "edge584909": {
@@ -801,9 +791,15 @@
 }, 
 "tree2611": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "parsimony", 
 "^ot:inGroupClade": "node584955", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node584945", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node584945": {
 "edge584946": {
@@ -1068,9 +1064,15 @@
 }, 
 "tree2612": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "parsimony", 
 "^ot:inGroupClade": "node584989", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node584982", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node584982": {
 "edge584983": {

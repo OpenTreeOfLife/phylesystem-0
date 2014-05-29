@@ -19,48 +19,11 @@
 "@id": "peyotl-validator", 
 "@name": "validate_ot_nexson.py", 
 "@url": "https://github.com/OpenTreeOfLife/peyotl", 
-"@version": "0.0.3a", 
+"@version": "0.0.4a", 
 "invocation": {
-"checksPerformed": [
-"MISSING_MANDATORY_KEY", 
-"MISSING_OPTIONAL_KEY", 
-"UNRECOGNIZED_KEY", 
-"MISSING_LIST_EXPECTED", 
-"DUPLICATING_SINGLETON_KEY", 
-"REFERENCED_ID_NOT_FOUND", 
-"REPEATED_ID", 
-"REPEATED_OTU", 
-"MULTIPLE_ROOT_NODES", 
-"NO_ROOT_NODE", 
-"MULTIPLE_EDGES_FOR_NODES", 
-"CYCLE_DETECTED", 
-"DISCONNECTED_GRAPH_DETECTED", 
-"INCORRECT_ROOT_NODE_LABEL", 
-"TIP_WITHOUT_OTU", 
-"TIP_WITHOUT_OTT_ID", 
-"MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
-"NON_MONOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
-"INVALID_PROPERTY_VALUE", 
-"PROPERTY_VALUE_NOT_USEFUL", 
-"UNRECOGNIZED_PROPERTY_VALUE", 
-"MULTIPLE_TREES", 
-"UNRECOGNIZED_TAG", 
-"CONFLICTING_PROPERTY_VALUES", 
-"NO_TREES", 
-"DEPRECATED_PROPERTY", 
-"UNPARSEABLE_META", 
-"UNREACHABLE_NODE", 
-"INCORRECT_VALUE_TYPE", 
-"MISSING_CRUCIAL_CONTENT"
-], 
 "commandLine": [
 "--embed", 
-"--agent-only", 
-"-e", 
-"../mig-phyelesystem-scratch/905/validation.json", 
-"-o", 
-"../mig-phyelesystem-scratch/905/final.json", 
-"../mig-phyelesystem-scratch/905/v1.2.1-905.json"
+"--agent-only"
 ], 
 "otherProperty": [
 {
@@ -76,12 +39,19 @@
 }
 ]
 }, 
+"^ot:annotationEvents": {
+"annotation": []
+}, 
+"^ot:candidateTreeForSynthesis": [], 
 "^ot:curatorName": "bryan drew", 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S1662"
 }, 
 "^ot:focalClade": 147029, 
 "^ot:focalCladeOTTTaxonName": "Boraginaceae", 
+"^ot:messages": {
+"message": []
+}, 
 "^ot:otusElementOrder": [
 "otus905"
 ], 
@@ -91,6 +61,7 @@
 }, 
 "^ot:studyPublicationReference": "Moore, M. J., & Jansen, R. K. (2007). Origins and biogeography of gypsophily in the Chihuahuan Desert plant group Tiquilia Subg. Eddya (Boraginaceae). Systematic botany, 32(2), 392-414.", 
 "^ot:studyYear": 2006, 
+"^ot:tag": [], 
 "^ot:treesElementOrder": [
 "trees905"
 ], 
@@ -112,6 +83,7 @@
 "otu205344": {
 "^ot:originalLabel": "Pholisma arenarium", 
 "^ot:ottId": 824968, 
+"^ot:ottTaxonName": "Pholisma arenarium", 
 "^ot:treebaseOTUId": "Tl180809"
 }, 
 "otu205345": {
@@ -331,9 +303,9 @@
 "^ot:treebaseOTUId": "Tl27629"
 }, 
 "otu205381": {
-"^ot:altLabel": "Tiquilia mexicana", 
 "^ot:originalLabel": "Tiquilia mexicana.275.C32", 
 "^ot:ottId": 693309, 
+"^ot:ottTaxonName": "Tiquilia mexicana", 
 "^ot:treebaseOTUId": "Tl27630"
 }, 
 "otu205382": {
@@ -421,9 +393,9 @@
 "^ot:treebaseOTUId": "Tl27651"
 }, 
 "otu205396": {
-"^ot:altLabel": "Tiquilia latior", 
 "^ot:originalLabel": "Tiquilia latior.214.C30", 
 "^ot:ottId": 693313, 
+"^ot:ottTaxonName": "Tiquilia latior", 
 "^ot:treebaseOTUId": "Tl27652"
 }, 
 "otu205397": {
@@ -451,9 +423,9 @@
 "^ot:treebaseOTUId": "Tl27660"
 }, 
 "otu205401": {
-"^ot:altLabel": "Tiquilia hispidissima", 
 "^ot:originalLabel": "Tiquilia hispidissima.164.C18", 
 "^ot:ottId": 693303, 
+"^ot:ottTaxonName": "Tiquilia hispidissima", 
 "^ot:treebaseOTUId": "Tl27661"
 }, 
 "otu205402": {
@@ -463,9 +435,9 @@
 "^ot:treebaseOTUId": "Tl27663"
 }, 
 "otu205403": {
-"^ot:altLabel": "Tiquilia hispidissima", 
 "^ot:originalLabel": "Tiquilia hispidissima.164.C32", 
 "^ot:ottId": 693303, 
+"^ot:ottTaxonName": "Tiquilia hispidissima", 
 "^ot:treebaseOTUId": "Tl27664"
 }, 
 "otu205404": {
@@ -487,15 +459,15 @@
 "^ot:treebaseOTUId": "Tl27670"
 }, 
 "otu205407": {
-"^ot:altLabel": "Tiquilia latior", 
 "^ot:originalLabel": "Tiquilia latior.214.C29", 
 "^ot:ottId": 693313, 
+"^ot:ottTaxonName": "Tiquilia latior", 
 "^ot:treebaseOTUId": "Tl27672"
 }, 
 "otu205408": {
-"^ot:altLabel": "Tiquilia latior", 
 "^ot:originalLabel": "Tiquilia latior.236", 
 "^ot:ottId": 693313, 
+"^ot:ottTaxonName": "Tiquilia latior", 
 "^ot:treebaseOTUId": "Tl27673"
 }, 
 "otu205409": {
@@ -511,9 +483,9 @@
 "^ot:treebaseOTUId": "Tl27676"
 }, 
 "otu205411": {
-"^ot:altLabel": "Tiquilia hispidissima", 
 "^ot:originalLabel": "Tiquilia hispidissima.164.C33", 
 "^ot:ottId": 693303, 
+"^ot:ottTaxonName": "Tiquilia hispidissima", 
 "^ot:treebaseOTUId": "Tl27677"
 }, 
 "otu205412": {
@@ -613,9 +585,9 @@
 "^ot:treebaseOTUId": "Tl27710"
 }, 
 "otu205428": {
-"^ot:altLabel": "Tiquilia mexicana", 
 "^ot:originalLabel": "Tiquilia mexicana.245.C8", 
 "^ot:ottId": 693309, 
+"^ot:ottTaxonName": "Tiquilia mexicana", 
 "^ot:treebaseOTUId": "Tl27711"
 }, 
 "otu205429": {
@@ -679,9 +651,9 @@
 "^ot:treebaseOTUId": "Tl27728"
 }, 
 "otu205439": {
-"^ot:altLabel": "Tiquilia mexicana", 
 "^ot:originalLabel": "Tiquilia mexicana.245.C4", 
 "^ot:ottId": 693309, 
+"^ot:ottTaxonName": "Tiquilia mexicana", 
 "^ot:treebaseOTUId": "Tl27729"
 }, 
 "otu205440": {
@@ -853,9 +825,9 @@
 "^ot:treebaseOTUId": "Tl27799"
 }, 
 "otu205468": {
-"^ot:altLabel": "Tiquilia latior", 
 "^ot:originalLabel": "Tiquilia latior.214.C28", 
 "^ot:ottId": 693313, 
+"^ot:ottTaxonName": "Tiquilia latior", 
 "^ot:treebaseOTUId": "Tl27801"
 }, 
 "otu205469": {
@@ -889,9 +861,9 @@
 "^ot:treebaseOTUId": "Tl27809"
 }, 
 "otu205474": {
-"^ot:altLabel": "Tiquilia latior", 
 "^ot:originalLabel": "Tiquilia latior.214.C36", 
 "^ot:ottId": 693313, 
+"^ot:ottTaxonName": "Tiquilia latior", 
 "^ot:treebaseOTUId": "Tl27810"
 }, 
 "otu205475": {
@@ -967,9 +939,9 @@
 "^ot:treebaseOTUId": "Tl27831"
 }, 
 "otu205487": {
-"^ot:altLabel": "Tiquilia tuberculata", 
 "^ot:originalLabel": "Tiquilia tuberculata.98.C19", 
 "^ot:ottId": 119194, 
+"^ot:ottTaxonName": "Tiquilia tuberculata", 
 "^ot:treebaseOTUId": "Tl27834"
 }, 
 "otu205488": {
@@ -979,9 +951,9 @@
 "^ot:treebaseOTUId": "Tl27835"
 }, 
 "otu205489": {
-"^ot:altLabel": "Tiquilia mexicana", 
 "^ot:originalLabel": "Tiquilia mexicana.245.C10", 
 "^ot:ottId": 693309, 
+"^ot:ottTaxonName": "Tiquilia mexicana", 
 "^ot:treebaseOTUId": "Tl27838"
 }, 
 "otu205490": {
@@ -1027,15 +999,15 @@
 "^ot:treebaseOTUId": "Tl27850"
 }, 
 "otu205497": {
-"^ot:altLabel": "Tiquilia hispidissima", 
 "^ot:originalLabel": "Tiquilia hispidissima.164.C16", 
 "^ot:ottId": 693303, 
+"^ot:ottTaxonName": "Tiquilia hispidissima", 
 "^ot:treebaseOTUId": "Tl27851"
 }, 
 "otu205498": {
-"^ot:altLabel": "Tiquilia latior", 
 "^ot:originalLabel": "Tiquilia latior.214.C34", 
 "^ot:ottId": 693313, 
+"^ot:ottTaxonName": "Tiquilia latior", 
 "^ot:treebaseOTUId": "Tl27855"
 }, 
 "otu205499": {
@@ -1363,15 +1335,15 @@
 "^ot:treebaseOTUId": "Tl27932"
 }, 
 "otu205553": {
-"^ot:altLabel": "Tiquilia mexicana", 
 "^ot:originalLabel": "Tiquilia mexicana.274.C8", 
 "^ot:ottId": 693309, 
+"^ot:ottTaxonName": "Tiquilia mexicana", 
 "^ot:treebaseOTUId": "Tl27933"
 }, 
 "otu205554": {
-"^ot:altLabel": "Tiquilia hispidissima", 
 "^ot:originalLabel": "Tiquilia hispidissima.155.C11", 
 "^ot:ottId": 693303, 
+"^ot:ottTaxonName": "Tiquilia hispidissima", 
 "^ot:treebaseOTUId": "Tl27935"
 }, 
 "otu205555": {
@@ -1405,9 +1377,9 @@
 "^ot:treebaseOTUId": "Tl27942"
 }, 
 "otu205560": {
-"^ot:altLabel": "Tiquilia hispidissima", 
 "^ot:originalLabel": "Tiquilia hispidissima.248.C21", 
 "^ot:ottId": 693303, 
+"^ot:ottTaxonName": "Tiquilia hispidissima", 
 "^ot:treebaseOTUId": "Tl27944"
 }, 
 "otu205561": {
@@ -1489,9 +1461,9 @@
 "^ot:treebaseOTUId": "Tl27962"
 }, 
 "otu205574": {
-"^ot:altLabel": "Tiquilia hispidissima", 
 "^ot:originalLabel": "Tiquilia hispidissima.119.C4", 
 "^ot:ottId": 693303, 
+"^ot:ottTaxonName": "Tiquilia hispidissima", 
 "^ot:treebaseOTUId": "Tl27963"
 }, 
 "otu205575": {
@@ -1507,9 +1479,9 @@
 "^ot:treebaseOTUId": "Tl27965"
 }, 
 "otu205577": {
-"^ot:altLabel": "Tiquilia hispidissima", 
 "^ot:originalLabel": "Tiquilia hispidissima.164.C11", 
 "^ot:ottId": 693303, 
+"^ot:ottTaxonName": "Tiquilia hispidissima", 
 "^ot:treebaseOTUId": "Tl27966"
 }, 
 "otu205578": {
@@ -1543,9 +1515,9 @@
 "^ot:treebaseOTUId": "Tl27971"
 }, 
 "otu205583": {
-"^ot:altLabel": "Tiquilia gossypina", 
 "^ot:originalLabel": "Tiquilia gossypina.273.C6", 
 "^ot:ottId": 693305, 
+"^ot:ottTaxonName": "Tiquilia gossypina", 
 "^ot:treebaseOTUId": "Tl27972"
 }, 
 "otu205584": {
@@ -1567,9 +1539,9 @@
 "^ot:treebaseOTUId": "Tl27975"
 }, 
 "otu205587": {
-"^ot:altLabel": "Tiquilia hispidissima", 
 "^ot:originalLabel": "Tiquilia hispidissima.149.C9", 
 "^ot:ottId": 693303, 
+"^ot:ottTaxonName": "Tiquilia hispidissima", 
 "^ot:treebaseOTUId": "Tl27976"
 }, 
 "otu205588": {
@@ -1585,9 +1557,9 @@
 "^ot:treebaseOTUId": "Tl27978"
 }, 
 "otu205590": {
-"^ot:altLabel": "Tiquilia mexicana", 
 "^ot:originalLabel": "Tiquilia mexicana.274.C11", 
 "^ot:ottId": 693309, 
+"^ot:ottTaxonName": "Tiquilia mexicana", 
 "^ot:treebaseOTUId": "Tl27979"
 }, 
 "otu205591": {
@@ -1621,9 +1593,9 @@
 "^ot:treebaseOTUId": "Tl27984"
 }, 
 "otu205596": {
-"^ot:altLabel": "Tiquilia hispidissima", 
 "^ot:originalLabel": "Tiquilia hispidissima.155.C8", 
 "^ot:ottId": 693303, 
+"^ot:ottTaxonName": "Tiquilia hispidissima", 
 "^ot:treebaseOTUId": "Tl27985"
 }, 
 "otu205597": {
@@ -1669,9 +1641,9 @@
 "^ot:treebaseOTUId": "Tl27996"
 }, 
 "otu205604": {
-"^ot:altLabel": "Tiquilia hispidissima", 
 "^ot:originalLabel": "Tiquilia hispidissima.248.C13", 
 "^ot:ottId": 693303, 
+"^ot:ottTaxonName": "Tiquilia hispidissima", 
 "^ot:treebaseOTUId": "Tl27997"
 }, 
 "otu205605": {
@@ -1717,9 +1689,9 @@
 "^ot:treebaseOTUId": "Tl28006"
 }, 
 "otu205612": {
-"^ot:altLabel": "Tiquilia hispidissima", 
 "^ot:originalLabel": "Tiquilia hispidissima.248.C17", 
 "^ot:ottId": 693303, 
+"^ot:ottTaxonName": "Tiquilia hispidissima", 
 "^ot:treebaseOTUId": "Tl28007"
 }, 
 "otu205613": {
@@ -1735,9 +1707,9 @@
 "^ot:treebaseOTUId": "Tl28009"
 }, 
 "otu205615": {
-"^ot:altLabel": "Tiquilia hispidissima", 
 "^ot:originalLabel": "Tiquilia hispidissima.155.C10", 
 "^ot:ottId": 693303, 
+"^ot:ottTaxonName": "Tiquilia hispidissima", 
 "^ot:treebaseOTUId": "Tl28010"
 }, 
 "otu205616": {
@@ -1783,9 +1755,9 @@
 "^ot:treebaseOTUId": "Tl28019"
 }, 
 "otu205623": {
-"^ot:altLabel": "Tiquilia hispidissima", 
 "^ot:originalLabel": "Tiquilia hispidissima.248.C15", 
 "^ot:ottId": 693303, 
+"^ot:ottTaxonName": "Tiquilia hispidissima", 
 "^ot:treebaseOTUId": "Tl28020"
 }, 
 "otu205624": {
@@ -1825,9 +1797,9 @@
 "^ot:treebaseOTUId": "Tl28029"
 }, 
 "otu205630": {
-"^ot:altLabel": "Tiquilia hispidissima", 
 "^ot:originalLabel": "Tiquilia hispidissima.188.C10", 
 "^ot:ottId": 693303, 
+"^ot:ottTaxonName": "Tiquilia hispidissima", 
 "^ot:treebaseOTUId": "Tl28030"
 }, 
 "otu205631": {
@@ -1837,9 +1809,9 @@
 "^ot:treebaseOTUId": "Tl28031"
 }, 
 "otu205632": {
-"^ot:altLabel": "Tiquilia hispidissima", 
 "^ot:originalLabel": "Tiquilia hispidissima.248.C16", 
 "^ot:ottId": 693303, 
+"^ot:ottTaxonName": "Tiquilia hispidissima", 
 "^ot:treebaseOTUId": "Tl28032"
 }, 
 "otu205633": {
@@ -1903,9 +1875,9 @@
 "^ot:treebaseOTUId": "Tl28044"
 }, 
 "otu205643": {
-"^ot:altLabel": "Tiquilia hispidissima", 
 "^ot:originalLabel": "Tiquilia hispidissima.187.C3", 
 "^ot:ottId": 693303, 
+"^ot:ottTaxonName": "Tiquilia hispidissima", 
 "^ot:treebaseOTUId": "Tl28045"
 }, 
 "otu205644": {
@@ -1939,15 +1911,15 @@
 "^ot:treebaseOTUId": "Tl28050"
 }, 
 "otu205649": {
-"^ot:altLabel": "Tiquilia hispidissima", 
 "^ot:originalLabel": "Tiquilia hispidissima.164.C3", 
 "^ot:ottId": 693303, 
+"^ot:ottTaxonName": "Tiquilia hispidissima", 
 "^ot:treebaseOTUId": "Tl28051"
 }, 
 "otu205650": {
-"^ot:altLabel": "Tiquilia latior", 
 "^ot:originalLabel": "Tiquilia latior.206B", 
 "^ot:ottId": 693313, 
+"^ot:ottTaxonName": "Tiquilia latior", 
 "^ot:treebaseOTUId": "Tl28052"
 }, 
 "otu205651": {
@@ -1999,9 +1971,9 @@
 "^ot:treebaseOTUId": "Tl28061"
 }, 
 "otu205659": {
-"^ot:altLabel": "Tiquilia hispidissima", 
 "^ot:originalLabel": "Tiquilia hispidissima.119.C7", 
 "^ot:ottId": 693303, 
+"^ot:ottTaxonName": "Tiquilia hispidissima", 
 "^ot:treebaseOTUId": "Tl28062"
 }, 
 "otu205660": {
@@ -2083,9 +2055,15 @@
 "treeById": {
 "tree1763": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "Fig. 5", 
 "^ot:inGroupClade": "node484187", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node484185", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node484185": {
 "edge484186": {
@@ -2476,8 +2454,14 @@
 }, 
 "tree1764": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "Fig. 12", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node484240", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node484240": {
 "edge484241": {
@@ -2623,8 +2607,14 @@
 }, 
 "tree1765": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "Fig. 10", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node484260", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node484260": {
 "edge484261": {
@@ -4156,9 +4146,15 @@
 }, 
 "tree1766": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "Fig. 7", 
 "^ot:inGroupClade": "node484480", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node484478", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node484478": {
 "edge484479": {
@@ -4997,9 +4993,15 @@
 }, 
 "tree1767": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "Fig. 6", 
 "^ot:inGroupClade": "node484598", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node484597", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node484597": {
 "edge484598": {
@@ -5985,9 +5987,15 @@
 }, 
 "tree1768": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "Fig. 4", 
 "^ot:inGroupClade": "node484743", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node484737", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node484737": {
 "edge484738": {
@@ -6378,8 +6386,14 @@
 }, 
 "tree1769": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "Fig. 11", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node484792", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node484792": {
 "edge484793": {
@@ -7162,9 +7176,15 @@
 }, 
 "tree1770": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "Fig. 9", 
 "^ot:inGroupClade": "node484905", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node484903", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node484903": {
 "edge484904": {

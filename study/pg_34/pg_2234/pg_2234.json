@@ -19,48 +19,11 @@
 "@id": "peyotl-validator", 
 "@name": "validate_ot_nexson.py", 
 "@url": "https://github.com/OpenTreeOfLife/peyotl", 
-"@version": "0.0.3a", 
+"@version": "0.0.4a", 
 "invocation": {
-"checksPerformed": [
-"MISSING_MANDATORY_KEY", 
-"MISSING_OPTIONAL_KEY", 
-"UNRECOGNIZED_KEY", 
-"MISSING_LIST_EXPECTED", 
-"DUPLICATING_SINGLETON_KEY", 
-"REFERENCED_ID_NOT_FOUND", 
-"REPEATED_ID", 
-"REPEATED_OTU", 
-"MULTIPLE_ROOT_NODES", 
-"NO_ROOT_NODE", 
-"MULTIPLE_EDGES_FOR_NODES", 
-"CYCLE_DETECTED", 
-"DISCONNECTED_GRAPH_DETECTED", 
-"INCORRECT_ROOT_NODE_LABEL", 
-"TIP_WITHOUT_OTU", 
-"TIP_WITHOUT_OTT_ID", 
-"MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
-"NON_MONOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
-"INVALID_PROPERTY_VALUE", 
-"PROPERTY_VALUE_NOT_USEFUL", 
-"UNRECOGNIZED_PROPERTY_VALUE", 
-"MULTIPLE_TREES", 
-"UNRECOGNIZED_TAG", 
-"CONFLICTING_PROPERTY_VALUES", 
-"NO_TREES", 
-"DEPRECATED_PROPERTY", 
-"UNPARSEABLE_META", 
-"UNREACHABLE_NODE", 
-"INCORRECT_VALUE_TYPE", 
-"MISSING_CRUCIAL_CONTENT"
-], 
 "commandLine": [
 "--embed", 
-"--agent-only", 
-"-e", 
-"../mig-phyelesystem-scratch/2234/validation.json", 
-"-o", 
-"../mig-phyelesystem-scratch/2234/final.json", 
-"../mig-phyelesystem-scratch/2234/v1.2.1-2234.json"
+"--agent-only"
 ], 
 "otherProperty": [
 {
@@ -76,18 +39,24 @@
 }
 ]
 }, 
+"^ot:annotationEvents": {
+"annotation": []
+}, 
+"^ot:candidateTreeForSynthesis": [], 
 "^ot:curatorName": "Romina Gazis", 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S12585"
 }, 
-"^ot:focalClade": 2647364, 
-"^ot:focalCladeOTTTaxonName": "Immersiporthe", 
+"^ot:messages": {
+"message": []
+}, 
 "^ot:otusElementOrder": [
 "otus2234"
 ], 
 "^ot:studyId": "2234", 
 "^ot:studyPublicationReference": "Chen, S. F., M. J. Wingfield, F. Roets, and J. Roux. \"A serious canker disease caused by Immersiporthe knoxdaviesiana gen. et sp. nov.(Cryphonectriaceae) on native Rapanea melanophloeos in South Africa.\" Plant Pathology (2012).", 
 "^ot:studyYear": 2012, 
+"^ot:tag": [], 
 "^ot:treesElementOrder": [
 "trees2234"
 ], 
@@ -96,8 +65,8 @@
 "otuById": {
 "otu323751": {
 "^ot:originalLabel": "Endothia gyrosa CMW10442", 
-"^ot:ottId": 412514, 
-"^ot:ottTaxonName": "Endothia gyrosa", 
+"^ot:ottId": 5316851, 
+"^ot:ottTaxonName": "Endothia radicalis", 
 "^ot:treebaseOTUId": "Tl741624"
 }, 
 "otu323752": {
@@ -114,8 +83,8 @@
 }, 
 "otu323754": {
 "^ot:originalLabel": "Cryphonectria japonica CMW10528", 
-"^ot:ottId": 3699233, 
-"^ot:ottTaxonName": "Endothia japonica", 
+"^ot:ottId": 5316850, 
+"^ot:ottTaxonName": "Cryphonectria japonica", 
 "^ot:treebaseOTUId": "Tl741627"
 }, 
 "otu323755": {
@@ -180,20 +149,14 @@
 }, 
 "otu323765": {
 "^ot:originalLabel": "Cryptodiaporthe corni CMW10526", 
-"^ot:ottId": 298085, 
-"^ot:ottTaxonName": "Cryptodiaporthe corni", 
 "^ot:treebaseOTUId": "Tl741638"
 }, 
 "otu323766": {
 "^ot:originalLabel": "Immersiporthe knoxdaviesiana CMW37315", 
-"^ot:ottId": 831031, 
-"^ot:ottTaxonName": "Immersiporthe knoxdaviesiana", 
 "^ot:treebaseOTUId": "Tl741639"
 }, 
 "otu323767": {
 "^ot:originalLabel": "Melanconis marginalis AF408373", 
-"^ot:ottId": 873170, 
-"^ot:ottTaxonName": "Melanconis marginalis", 
 "^ot:treebaseOTUId": "Tl741640"
 }, 
 "otu323768": {
@@ -216,8 +179,6 @@
 }, 
 "otu323771": {
 "^ot:originalLabel": "Immersiporthe knoxdaviesiana CMW37318", 
-"^ot:ottId": 831031, 
-"^ot:ottTaxonName": "Immersiporthe knoxdaviesiana", 
 "^ot:treebaseOTUId": "Tl741644"
 }, 
 "otu323772": {
@@ -229,7 +190,7 @@
 "otu323773": {
 "^ot:originalLabel": "Pilidiella castaneicola AF408378", 
 "^ot:ottId": 293511, 
-"^ot:ottTaxonName": "Pilidiella castaneicola", 
+"^ot:ottTaxonName": "Coniella castaneicola", 
 "^ot:treebaseOTUId": "Tl741646"
 }, 
 "otu323774": {
@@ -247,13 +208,13 @@
 "otu323776": {
 "^ot:originalLabel": "Phaeoacremonium aleophilum AY249088", 
 "^ot:ottId": 393534, 
-"^ot:ottTaxonName": "Togninia minima", 
+"^ot:ottTaxonName": "Phaeoacremonium aleophilum", 
 "^ot:treebaseOTUId": "Tl741649"
 }, 
 "otu323777": {
 "^ot:originalLabel": "Cryptodiaporthe aesculi AF408342", 
 "^ot:ottId": 725104, 
-"^ot:ottTaxonName": "Plagiostoma aesculi", 
+"^ot:ottTaxonName": "Diaporthe aesculi", 
 "^ot:treebaseOTUId": "Tl741650"
 }, 
 "otu323778": {
@@ -282,8 +243,8 @@
 }, 
 "otu323782": {
 "^ot:originalLabel": "Endothia gyrosa AF362555", 
-"^ot:ottId": 412514, 
-"^ot:ottTaxonName": "Endothia gyrosa", 
+"^ot:ottId": 5316851, 
+"^ot:ottTaxonName": "Endothia radicalis", 
 "^ot:treebaseOTUId": "Tl741655"
 }, 
 "otu323783": {
@@ -294,8 +255,6 @@
 }, 
 "otu323784": {
 "^ot:originalLabel": "Cryptodiaporthe corni AF277133", 
-"^ot:ottId": 298085, 
-"^ot:ottTaxonName": "Cryptodiaporthe corni", 
 "^ot:treebaseOTUId": "Tl741657"
 }, 
 "otu323785": {
@@ -306,8 +265,8 @@
 }, 
 "otu323786": {
 "^ot:originalLabel": "Leucostoma cincta AF408366", 
-"^ot:ottId": 570278, 
-"^ot:ottTaxonName": "Leucostoma cinctum", 
+"^ot:ottId": 313690, 
+"^ot:ottTaxonName": "Valsaria insitiva", 
 "^ot:treebaseOTUId": "Tl741659"
 }, 
 "otu323787": {
@@ -324,14 +283,12 @@
 }, 
 "otu323789": {
 "^ot:originalLabel": "Endothia gyrosa CMW2091", 
-"^ot:ottId": 412514, 
-"^ot:ottTaxonName": "Endothia gyrosa", 
+"^ot:ottId": 5316851, 
+"^ot:ottTaxonName": "Endothia radicalis", 
 "^ot:treebaseOTUId": "Tl741662"
 }, 
 "otu323790": {
 "^ot:originalLabel": "Immersiporthe knoxdaviesiana CMW37314 LSU", 
-"^ot:ottId": 831031, 
-"^ot:ottTaxonName": "Immersiporthe knoxdaviesiana", 
 "^ot:treebaseOTUId": "Tl741663"
 }, 
 "otu323791": {
@@ -348,14 +305,12 @@
 }, 
 "otu323793": {
 "^ot:originalLabel": "Immersiporthe knoxdaviesiana CMW37317", 
-"^ot:ottId": 831031, 
-"^ot:ottTaxonName": "Immersiporthe knoxdaviesiana", 
 "^ot:treebaseOTUId": "Tl741666"
 }, 
 "otu323794": {
 "^ot:originalLabel": "Cryphonectria japonica CMW10527", 
-"^ot:ottId": 3699233, 
-"^ot:ottTaxonName": "Endothia japonica", 
+"^ot:ottId": 5316850, 
+"^ot:ottTaxonName": "Cryphonectria japonica", 
 "^ot:treebaseOTUId": "Tl741667"
 }, 
 "otu323795": {
@@ -378,8 +333,6 @@
 }, 
 "otu323798": {
 "^ot:originalLabel": "Immersiporthe knoxdaviesiana CMW37319", 
-"^ot:ottId": 831031, 
-"^ot:ottTaxonName": "Immersiporthe knoxdaviesiana", 
 "^ot:treebaseOTUId": "Tl741671"
 }, 
 "otu323799": {
@@ -408,8 +361,6 @@
 }, 
 "otu323803": {
 "^ot:originalLabel": "Diaporthe eres AF408350", 
-"^ot:ottId": 855272, 
-"^ot:ottTaxonName": "Diaporthe eres", 
 "^ot:treebaseOTUId": "Tl741676"
 }, 
 "otu323804": {
@@ -426,8 +377,8 @@
 }, 
 "otu323806": {
 "^ot:originalLabel": "Togninia fraxinopennsylvanica AY761083", 
-"^ot:ottId": 680184, 
-"^ot:ottTaxonName": "Togninia fraxinopennsylvanica", 
+"^ot:ottId": 519058, 
+"^ot:ottTaxonName": "Phaeoacremonium mortoniae", 
 "^ot:treebaseOTUId": "Tl741679"
 }, 
 "otu323807": {
@@ -468,14 +419,12 @@
 }, 
 "otu323813": {
 "^ot:originalLabel": "Immersiporthe knoxdaviesiana CMW37316", 
-"^ot:ottId": 831031, 
-"^ot:ottTaxonName": "Immersiporthe knoxdaviesiana", 
 "^ot:treebaseOTUId": "Tl741686"
 }, 
 "otu323814": {
 "^ot:originalLabel": "Togninia minima AY761082", 
 "^ot:ottId": 393534, 
-"^ot:ottTaxonName": "Togninia minima", 
+"^ot:ottTaxonName": "Phaeoacremonium aleophilum", 
 "^ot:treebaseOTUId": "Tl741687"
 }, 
 "otu323815": {
@@ -606,8 +555,8 @@
 }, 
 "otu323836": {
 "^ot:originalLabel": "Cryphonectria japonica CMW13742", 
-"^ot:ottId": 3699233, 
-"^ot:ottTaxonName": "Endothia japonica", 
+"^ot:ottId": 5316850, 
+"^ot:ottTaxonName": "Cryphonectria japonica", 
 "^ot:treebaseOTUId": "Tl741715"
 }, 
 "otu323837": {
@@ -654,32 +603,24 @@
 }, 
 "otu323844": {
 "^ot:originalLabel": "Cryphonectria japonica CMW13747", 
-"^ot:ottId": 3699233, 
-"^ot:ottTaxonName": "Endothia japonica", 
+"^ot:ottId": 5316850, 
+"^ot:ottTaxonName": "Cryphonectria japonica", 
 "^ot:treebaseOTUId": "Tl741724"
 }, 
 "otu323845": {
 "^ot:originalLabel": "Immersiporthe knoxdaviesiana CMW37314 5.8sBTexon", 
-"^ot:ottId": 831031, 
-"^ot:ottTaxonName": "Immersiporthe knoxdaviesiana", 
 "^ot:treebaseOTUId": "Tl741725"
 }, 
 "otu323846": {
 "^ot:originalLabel": "Diaporthe ambigua CMW5288", 
-"^ot:ottId": 263710, 
-"^ot:ottTaxonName": "Diaporthe ambigua", 
 "^ot:treebaseOTUId": "Tl741726"
 }, 
 "otu323847": {
 "^ot:originalLabel": "Cryptodiaporthe corni AR2814", 
-"^ot:ottId": 298085, 
-"^ot:ottTaxonName": "Cryptodiaporthe corni", 
 "^ot:treebaseOTUId": "Tl741727"
 }, 
 "otu323848": {
 "^ot:originalLabel": "Diaporthe ambigua CMW5587", 
-"^ot:ottId": 263710, 
-"^ot:ottTaxonName": "Diaporthe ambigua", 
 "^ot:treebaseOTUId": "Tl741728"
 }, 
 "otu323849": {
@@ -703,8 +644,14 @@
 "treeById": {
 "tree4719": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "MP, 5.8S + b-tub", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node833602", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node833602": {
 "edge833603": {
@@ -1487,8 +1434,14 @@
 }, 
 "tree4720": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "MP, LSU", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node833713", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node833713": {
 "edge833714": {
@@ -2229,9 +2182,15 @@
 }, 
 "tree5954": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "MP, LSU (rooted)", 
 "^ot:inGroupClade": "node1010740", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node1010739", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node1010739": {
 "edge1010740": {
@@ -2972,9 +2931,15 @@
 }, 
 "tree5955": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "MP, 5.8S + b-tub (rooted)", 
 "^ot:inGroupClade": "node1010845", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node1010844", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node1010844": {
 "edge1010845": {

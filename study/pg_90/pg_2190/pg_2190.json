@@ -19,48 +19,11 @@
 "@id": "peyotl-validator", 
 "@name": "validate_ot_nexson.py", 
 "@url": "https://github.com/OpenTreeOfLife/peyotl", 
-"@version": "0.0.3a", 
+"@version": "0.0.4a", 
 "invocation": {
-"checksPerformed": [
-"MISSING_MANDATORY_KEY", 
-"MISSING_OPTIONAL_KEY", 
-"UNRECOGNIZED_KEY", 
-"MISSING_LIST_EXPECTED", 
-"DUPLICATING_SINGLETON_KEY", 
-"REFERENCED_ID_NOT_FOUND", 
-"REPEATED_ID", 
-"REPEATED_OTU", 
-"MULTIPLE_ROOT_NODES", 
-"NO_ROOT_NODE", 
-"MULTIPLE_EDGES_FOR_NODES", 
-"CYCLE_DETECTED", 
-"DISCONNECTED_GRAPH_DETECTED", 
-"INCORRECT_ROOT_NODE_LABEL", 
-"TIP_WITHOUT_OTU", 
-"TIP_WITHOUT_OTT_ID", 
-"MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
-"NON_MONOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
-"INVALID_PROPERTY_VALUE", 
-"PROPERTY_VALUE_NOT_USEFUL", 
-"UNRECOGNIZED_PROPERTY_VALUE", 
-"MULTIPLE_TREES", 
-"UNRECOGNIZED_TAG", 
-"CONFLICTING_PROPERTY_VALUES", 
-"NO_TREES", 
-"DEPRECATED_PROPERTY", 
-"UNPARSEABLE_META", 
-"UNREACHABLE_NODE", 
-"INCORRECT_VALUE_TYPE", 
-"MISSING_CRUCIAL_CONTENT"
-], 
 "commandLine": [
 "--embed", 
-"--agent-only", 
-"-e", 
-"../mig-phyelesystem-scratch/2190/validation.json", 
-"-o", 
-"../mig-phyelesystem-scratch/2190/final.json", 
-"../mig-phyelesystem-scratch/2190/v1.2.1-2190.json"
+"--agent-only"
 ], 
 "otherProperty": [
 {
@@ -76,12 +39,19 @@
 }
 ]
 }, 
+"^ot:annotationEvents": {
+"annotation": []
+}, 
+"^ot:candidateTreeForSynthesis": [], 
 "^ot:curatorName": "Romina Gazis", 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S12359"
 }, 
 "^ot:focalClade": 352914, 
 "^ot:focalCladeOTTTaxonName": "Fungi", 
+"^ot:messages": {
+"message": []
+}, 
 "^ot:otusElementOrder": [
 "otus2190"
 ], 
@@ -91,6 +61,7 @@
 }, 
 "^ot:studyPublicationReference": "Srivastava P.K., & Shenoy B.D. 2012. Stimulatory effects of fungi on plant growth promotion and soil properties. Microbes and Environments, .", 
 "^ot:studyYear": 2012, 
+"^ot:tag": [], 
 "^ot:treesElementOrder": [
 "trees2190"
 ], 
@@ -393,6 +364,8 @@
 }, 
 "otu319539": {
 "^ot:originalLabel": "Westerdykella globosa AY943046", 
+"^ot:ottId": 5318980, 
+"^ot:ottTaxonName": "Preussia globosa", 
 "^ot:treebaseOTUId": "Tl713334"
 }, 
 "otu319540": {
@@ -433,6 +406,8 @@
 }, 
 "otu319546": {
 "^ot:originalLabel": "Pycnidiophora sp FJ903343", 
+"^ot:ottId": 269663, 
+"^ot:ottTaxonName": "Pycnidiophora", 
 "^ot:treebaseOTUId": "Tl713341"
 }, 
 "otu319547": {
@@ -473,10 +448,14 @@
 }, 
 "otu319553": {
 "^ot:originalLabel": "Pycnidiophora sp GU595028", 
+"^ot:ottId": 269663, 
+"^ot:ottTaxonName": "Pycnidiophora", 
 "^ot:treebaseOTUId": "Tl713348"
 }, 
 "otu319554": {
 "^ot:originalLabel": "Westerdykella sp AB563198", 
+"^ot:ottId": 85513, 
+"^ot:ottTaxonName": "Westerdykella", 
 "^ot:treebaseOTUId": "Tl713349"
 }, 
 "otu319555": {
@@ -503,6 +482,8 @@
 }, 
 "otu319559": {
 "^ot:originalLabel": "Pycnidiophora dispersa AY943055", 
+"^ot:ottId": 85501, 
+"^ot:ottTaxonName": "Westerdykella dispersa", 
 "^ot:treebaseOTUId": "Tl713354"
 }, 
 "otu319560": {
@@ -525,6 +506,8 @@
 }, 
 "otu319563": {
 "^ot:originalLabel": "Westerdykella sp DQ468029", 
+"^ot:ottId": 85513, 
+"^ot:ottTaxonName": "Westerdykella", 
 "^ot:treebaseOTUId": "Tl713358"
 }, 
 "otu319564": {
@@ -727,6 +710,8 @@
 }, 
 "otu319597": {
 "^ot:originalLabel": "Lasiodiplodia sp. FNBR13", 
+"^ot:ottId": 969419, 
+"^ot:ottTaxonName": "Lasiodiplodia", 
 "^ot:treebaseOTUId": "Tl713392"
 }, 
 "otu319598": {
@@ -963,6 +948,8 @@
 }, 
 "otu319643": {
 "^ot:originalLabel": "Hypocrea jecorina AF414296", 
+"^ot:ottId": 5317030, 
+"^ot:ottTaxonName": "Hypocrea jecorina", 
 "^ot:treebaseOTUId": "Tl713438"
 }, 
 "otu319644": {
@@ -1026,9 +1013,15 @@
 "treeById": {
 "tree4631": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "NJ, ITS", 
 "^ot:inGroupClade": "node822270", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node822264", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node822264": {
 "edge822265": {
@@ -1451,8 +1444,14 @@
 }, 
 "tree4632": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "NJ, ITS", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node822319", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node822319": {
 "edge822320": {
@@ -1956,8 +1955,14 @@
 }, 
 "tree4633": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "NJ, ITS", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node822384", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node822384": {
 "edge822385": {
@@ -2750,8 +2755,14 @@
 }, 
 "tree4634": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "NJ, ITS", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node822494", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node822494": {
 "edge822495": {

@@ -19,48 +19,11 @@
 "@id": "peyotl-validator", 
 "@name": "validate_ot_nexson.py", 
 "@url": "https://github.com/OpenTreeOfLife/peyotl", 
-"@version": "0.0.3a", 
+"@version": "0.0.4a", 
 "invocation": {
-"checksPerformed": [
-"MISSING_MANDATORY_KEY", 
-"MISSING_OPTIONAL_KEY", 
-"UNRECOGNIZED_KEY", 
-"MISSING_LIST_EXPECTED", 
-"DUPLICATING_SINGLETON_KEY", 
-"REFERENCED_ID_NOT_FOUND", 
-"REPEATED_ID", 
-"REPEATED_OTU", 
-"MULTIPLE_ROOT_NODES", 
-"NO_ROOT_NODE", 
-"MULTIPLE_EDGES_FOR_NODES", 
-"CYCLE_DETECTED", 
-"DISCONNECTED_GRAPH_DETECTED", 
-"INCORRECT_ROOT_NODE_LABEL", 
-"TIP_WITHOUT_OTU", 
-"TIP_WITHOUT_OTT_ID", 
-"MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
-"NON_MONOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
-"INVALID_PROPERTY_VALUE", 
-"PROPERTY_VALUE_NOT_USEFUL", 
-"UNRECOGNIZED_PROPERTY_VALUE", 
-"MULTIPLE_TREES", 
-"UNRECOGNIZED_TAG", 
-"CONFLICTING_PROPERTY_VALUES", 
-"NO_TREES", 
-"DEPRECATED_PROPERTY", 
-"UNPARSEABLE_META", 
-"UNREACHABLE_NODE", 
-"INCORRECT_VALUE_TYPE", 
-"MISSING_CRUCIAL_CONTENT"
-], 
 "commandLine": [
 "--embed", 
-"--agent-only", 
-"-e", 
-"../mig-phyelesystem-scratch/2556/validation.json", 
-"-o", 
-"../mig-phyelesystem-scratch/2556/final.json", 
-"../mig-phyelesystem-scratch/2556/v1.2.1-2556.json"
+"--agent-only"
 ], 
 "otherProperty": [
 {
@@ -76,12 +39,19 @@
 }
 ]
 }, 
+"^ot:annotationEvents": {
+"annotation": []
+}, 
+"^ot:candidateTreeForSynthesis": [], 
 "^ot:curatorName": "Laura Katz", 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S10169"
 }, 
 "^ot:focalClade": 1094628, 
 "^ot:focalCladeOTTTaxonName": "Myxogastria", 
+"^ot:messages": {
+"message": []
+}, 
 "^ot:otusElementOrder": [
 "otus2556"
 ], 
@@ -91,6 +61,7 @@
 }, 
 "^ot:studyPublicationReference": "Fiore-donno A., Kamono A., Chao E., Fukui M., & Cavalier-smith T. 2010. Invalidation of Hyperamoeba by transferring its species to other genera of Myxogastria. Journal of Eukaryotic Microbiology, 57(2): 189-196.", 
 "^ot:studyYear": 2010, 
+"^ot:tag": [], 
 "^ot:treesElementOrder": [
 "trees2556"
 ], 
@@ -111,6 +82,8 @@
 }, 
 "otu369124": {
 "^ot:originalLabel": "Didymium sp ECH1", 
+"^ot:ottId": 154163, 
+"^ot:ottTaxonName": "Didymium sp. ECH1/I", 
 "^ot:treebaseOTUId": "Tl251575"
 }, 
 "otu369125": {
@@ -157,6 +130,8 @@
 }, 
 "otu369132": {
 "^ot:originalLabel": "Hyperamoeba sp Hpl", 
+"^ot:ottId": 325663, 
+"^ot:ottTaxonName": "Didymium sp. Hpl", 
 "^ot:treebaseOTUId": "Tl251583"
 }, 
 "otu369133": {
@@ -251,6 +226,8 @@
 }, 
 "otu369148": {
 "^ot:originalLabel": "Pseudodidymium cryptomastigophorum", 
+"^ot:ottId": 790916, 
+"^ot:ottTaxonName": "Pseudodidymium cryptomastigophorum", 
 "^ot:treebaseOTUId": "Tl251599"
 }, 
 "otu369149": {
@@ -309,6 +286,8 @@
 }, 
 "otu369158": {
 "^ot:originalLabel": "Didymium sp ECH49", 
+"^ot:ottId": 154166, 
+"^ot:ottTaxonName": "Didymium sp. ECH49/I", 
 "^ot:treebaseOTUId": "Tl251609"
 }, 
 "otu369159": {
@@ -343,6 +322,8 @@
 }, 
 "otu369164": {
 "^ot:originalLabel": "Diderma globosum var europaeum", 
+"^ot:ottId": 420170, 
+"^ot:ottTaxonName": "Diderma globosum var. europaeum", 
 "^ot:treebaseOTUId": "Tl251615"
 }, 
 "otu369165": {
@@ -365,6 +346,8 @@
 }, 
 "otu369168": {
 "^ot:originalLabel": "Diderma floriforme var subfloriforme", 
+"^ot:ottId": 946460, 
+"^ot:ottTaxonName": "Diderma floriforme var. subfloriforme", 
 "^ot:treebaseOTUId": "Tl251619"
 }, 
 "otu369169": {
@@ -375,6 +358,8 @@
 }, 
 "otu369170": {
 "^ot:originalLabel": "Hyperamoeba sp E3P", 
+"^ot:ottId": 900040, 
+"^ot:ottTaxonName": "Didymium sp. E3P", 
 "^ot:treebaseOTUId": "Tl251621"
 }, 
 "otu369171": {
@@ -455,6 +440,8 @@
 }, 
 "otu369184": {
 "^ot:originalLabel": "Didymium sp OX13PS", 
+"^ot:ottId": 1028921, 
+"^ot:ottTaxonName": "Didymium sp. OX13PS", 
 "^ot:treebaseOTUId": "Tl251635"
 }, 
 "otu369185": {
@@ -519,10 +506,14 @@
 }, 
 "otu369195": {
 "^ot:originalLabel": "Craterium reticulatum AB259476", 
+"^ot:ottId": 640555, 
+"^ot:ottTaxonName": "Craterium reticulatum", 
 "^ot:treebaseOTUId": "Tl254595"
 }, 
 "otu369196": {
 "^ot:originalLabel": "Craterium leucocephalum var cylindricum", 
+"^ot:ottId": 640552, 
+"^ot:ottTaxonName": "Craterium leucocephalum var. cylindricum", 
 "^ot:treebaseOTUId": "Tl254596"
 }, 
 "otu369197": {
@@ -539,6 +530,8 @@
 }, 
 "otu369199": {
 "^ot:originalLabel": "Badhamia panicea var nivalis", 
+"^ot:ottId": 1075604, 
+"^ot:ottTaxonName": "Physarum nivale", 
 "^ot:treebaseOTUId": "Tl254599"
 }, 
 "otu369200": {
@@ -651,6 +644,8 @@
 }, 
 "otu369218": {
 "^ot:originalLabel": "Hyperamoeba sp G1a", 
+"^ot:ottId": 4744173, 
+"^ot:ottTaxonName": "Physaridae sp. G1a", 
 "^ot:treebaseOTUId": "Tl254618"
 }, 
 "otu369219": {
@@ -667,6 +662,8 @@
 }, 
 "otu369221": {
 "^ot:originalLabel": "Diachea leucopodia AB259360", 
+"^ot:ottId": 523445, 
+"^ot:ottTaxonName": "Diachea leucopodia", 
 "^ot:treebaseOTUId": "Tl254621"
 }, 
 "otu369222": {
@@ -695,6 +692,8 @@
 }, 
 "otu369226": {
 "^ot:originalLabel": "Craterium dictyosporum AB259463", 
+"^ot:ottId": 118907, 
+"^ot:ottTaxonName": "Craterium dictyosporum", 
 "^ot:treebaseOTUId": "Tl254626"
 }, 
 "otu369227": {
@@ -729,6 +728,8 @@
 }, 
 "otu369232": {
 "^ot:originalLabel": "Hyperamoeba sp W2i", 
+"^ot:ottId": 4744172, 
+"^ot:ottTaxonName": "Physaridae sp. W2i", 
 "^ot:treebaseOTUId": "Tl254632"
 }, 
 "otu369233": {
@@ -751,10 +752,14 @@
 }, 
 "otu369236": {
 "^ot:originalLabel": "Craterium leucocephalum var scyphoides", 
+"^ot:ottId": 740216, 
+"^ot:ottTaxonName": "Craterium leucocephalum var. scyphoides", 
 "^ot:treebaseOTUId": "Tl254636"
 }, 
 "otu369237": {
 "^ot:originalLabel": "Physarum nigropodum AB259527", 
+"^ot:ottId": 248200, 
+"^ot:ottTaxonName": "Physarum nigripodum", 
 "^ot:treebaseOTUId": "Tl254637"
 }, 
 "otu369238": {
@@ -807,6 +812,8 @@
 }, 
 "otu369246": {
 "^ot:originalLabel": "Craterium dictyosporum AB259462", 
+"^ot:ottId": 118907, 
+"^ot:ottTaxonName": "Craterium dictyosporum", 
 "^ot:treebaseOTUId": "Tl254646"
 }, 
 "otu369247": {
@@ -841,10 +848,14 @@
 }, 
 "otu369252": {
 "^ot:originalLabel": "Leocarpus fragilis var bisporus", 
+"^ot:ottId": 740215, 
+"^ot:ottTaxonName": "Leocarpus fragilis var. bisporus", 
 "^ot:treebaseOTUId": "Tl254652"
 }, 
 "otu369253": {
 "^ot:originalLabel": "Craterium minutum AB25947373", 
+"^ot:ottId": 640550, 
+"^ot:ottTaxonName": "Craterium minutum", 
 "^ot:treebaseOTUId": "Tl254653"
 }, 
 "otu369254": {
@@ -885,10 +896,14 @@
 }, 
 "otu369260": {
 "^ot:originalLabel": "Diachea radiata AB259362", 
+"^ot:ottId": 1063104, 
+"^ot:ottTaxonName": "Diachea radiata", 
 "^ot:treebaseOTUId": "Tl254660"
 }, 
 "otu369261": {
 "^ot:originalLabel": "Craterium aureum AB259459", 
+"^ot:ottId": 584010, 
+"^ot:ottTaxonName": "Craterium aureum", 
 "^ot:treebaseOTUId": "Tl254661"
 }, 
 "otu369262": {
@@ -941,10 +956,14 @@
 }, 
 "otu369270": {
 "^ot:originalLabel": "Hyperamoeba sp B12", 
+"^ot:ottId": 900034, 
+"^ot:ottTaxonName": "Stemonitis aff. flavogenita B1/2", 
 "^ot:treebaseOTUId": "Tl259441"
 }, 
 "otu369271": {
 "^ot:originalLabel": "Echinostelium minutum", 
+"^ot:ottId": 669622, 
+"^ot:ottTaxonName": "Echinostelium minutum", 
 "^ot:treebaseOTUId": "Tl259442"
 }, 
 "otu369272": {
@@ -973,10 +992,14 @@
 }, 
 "otu369276": {
 "^ot:originalLabel": "Enerthenema papillatum", 
+"^ot:ottId": 233633, 
+"^ot:ottTaxonName": "Enerthenema papillatum", 
 "^ot:treebaseOTUId": "Tl259447"
 }, 
 "otu369277": {
 "^ot:originalLabel": "Hyperamoeba sp A1K", 
+"^ot:ottId": 900030, 
+"^ot:ottTaxonName": "Stemonitis sp. A1K", 
 "^ot:treebaseOTUId": "Tl259448"
 }, 
 "otu369278": {
@@ -1021,6 +1044,8 @@
 }, 
 "otu369285": {
 "^ot:originalLabel": "Hyperamoeba sp BuP", 
+"^ot:ottId": 900036, 
+"^ot:ottTaxonName": "Stemonitis sp. BuP", 
 "^ot:treebaseOTUId": "Tl259456"
 }, 
 "otu369286": {
@@ -1031,6 +1056,8 @@
 }, 
 "otu369287": {
 "^ot:originalLabel": "Lamproderma atrosporum var retisporum", 
+"^ot:ottId": 997252, 
+"^ot:ottTaxonName": "Meriderma carestiae var. retisporum", 
 "^ot:treebaseOTUId": "Tl259458"
 }, 
 "otu369288": {
@@ -1047,10 +1074,14 @@
 }, 
 "otu369290": {
 "^ot:originalLabel": "Hyperamoeba sp ATCC50750", 
+"^ot:ottId": 727358, 
+"^ot:ottTaxonName": "Hyperamoeba sp. ATCC50750", 
 "^ot:treebaseOTUId": "Tl259461"
 }, 
 "otu369291": {
 "^ot:originalLabel": "Hyperamoeba sp AH1", 
+"^ot:ottId": 900032, 
+"^ot:ottTaxonName": "Stemonitis sp. AH1", 
 "^ot:treebaseOTUId": "Tl259462"
 }, 
 "otu369292": {
@@ -1079,10 +1110,14 @@
 }, 
 "otu369296": {
 "^ot:originalLabel": "Echinostelium arboreum", 
+"^ot:ottId": 277368, 
+"^ot:ottTaxonName": "Echinostelium arboreum", 
 "^ot:treebaseOTUId": "Tl259467"
 }, 
 "otu369297": {
 "^ot:originalLabel": "Echinostelium coelocephalum", 
+"^ot:ottId": 669621, 
+"^ot:ottTaxonName": "Echinostelium coelocephalum", 
 "^ot:treebaseOTUId": "Tl259468"
 }, 
 "otu369298": {
@@ -1135,8 +1170,14 @@
 "treeById": {
 "tree5585": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "Fig. 2", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node956783", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node956783": {
 "edge956784": {
@@ -1870,8 +1911,15 @@
 }, 
 "tree5586": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "Fig. 3", 
+"^ot:inGroupClade": "node956890", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node956887", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node956887": {
 "edge956888": {
@@ -2871,8 +2919,14 @@
 }, 
 "tree5587": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "Fig. 4", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node957029", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node957029": {
 "edge957030": {

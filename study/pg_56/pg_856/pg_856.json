@@ -19,48 +19,11 @@
 "@id": "peyotl-validator", 
 "@name": "validate_ot_nexson.py", 
 "@url": "https://github.com/OpenTreeOfLife/peyotl", 
-"@version": "0.0.3a", 
+"@version": "0.0.4a", 
 "invocation": {
-"checksPerformed": [
-"MISSING_MANDATORY_KEY", 
-"MISSING_OPTIONAL_KEY", 
-"UNRECOGNIZED_KEY", 
-"MISSING_LIST_EXPECTED", 
-"DUPLICATING_SINGLETON_KEY", 
-"REFERENCED_ID_NOT_FOUND", 
-"REPEATED_ID", 
-"REPEATED_OTU", 
-"MULTIPLE_ROOT_NODES", 
-"NO_ROOT_NODE", 
-"MULTIPLE_EDGES_FOR_NODES", 
-"CYCLE_DETECTED", 
-"DISCONNECTED_GRAPH_DETECTED", 
-"INCORRECT_ROOT_NODE_LABEL", 
-"TIP_WITHOUT_OTU", 
-"TIP_WITHOUT_OTT_ID", 
-"MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
-"NON_MONOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
-"INVALID_PROPERTY_VALUE", 
-"PROPERTY_VALUE_NOT_USEFUL", 
-"UNRECOGNIZED_PROPERTY_VALUE", 
-"MULTIPLE_TREES", 
-"UNRECOGNIZED_TAG", 
-"CONFLICTING_PROPERTY_VALUES", 
-"NO_TREES", 
-"DEPRECATED_PROPERTY", 
-"UNPARSEABLE_META", 
-"UNREACHABLE_NODE", 
-"INCORRECT_VALUE_TYPE", 
-"MISSING_CRUCIAL_CONTENT"
-], 
 "commandLine": [
 "--embed", 
-"--agent-only", 
-"-e", 
-"../mig-phyelesystem-scratch/856/validation.json", 
-"-o", 
-"../mig-phyelesystem-scratch/856/final.json", 
-"../mig-phyelesystem-scratch/856/v1.2.1-856.json"
+"--agent-only"
 ], 
 "otherProperty": [
 {
@@ -76,12 +39,17 @@
 }
 ]
 }, 
+"^ot:annotationEvents": {
+"annotation": []
+}, 
+"^ot:candidateTreeForSynthesis": [], 
 "^ot:curatorName": "Romina Gazis", 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S10105"
 }, 
-"^ot:focalClade": 829238, 
-"^ot:focalCladeOTTTaxonName": "Dacrymycetes", 
+"^ot:messages": {
+"message": []
+}, 
 "^ot:otusElementOrder": [
 "otus856"
 ], 
@@ -91,6 +59,7 @@
 }, 
 "^ot:studyPublicationReference": "Shirouzu T., Hirose D., & Tokumasu S. 2009. Taxonomic study of the Japanese Dacrymycetes. Persoonia, 23(16-34): 16-34.", 
 "^ot:studyYear": 2009, 
+"^ot:tag": [], 
 "^ot:treesElementOrder": [
 "trees856"
 ], 
@@ -105,8 +74,8 @@
 }, 
 "otu201095": {
 "^ot:originalLabel": "Femsjonia peziziformis AF291330", 
-"^ot:ottId": 345001, 
-"^ot:ottTaxonName": "Femsjonia peziziformis", 
+"^ot:ottId": 5299020, 
+"^ot:ottTaxonName": "Ditiola peziziformis", 
 "^ot:treebaseOTUId": "Tl263813"
 }, 
 "otu201096": {
@@ -129,8 +98,6 @@
 }, 
 "otu201099": {
 "^ot:originalLabel": "Dacrymyces subarcticus 544D", 
-"^ot:ottId": 572978, 
-"^ot:ottTaxonName": "Dacrymyces subarcticus", 
 "^ot:treebaseOTUId": "Tl263817"
 }, 
 "otu201100": {
@@ -147,8 +114,8 @@
 }, 
 "otu201102": {
 "^ot:originalLabel": "Femsjonia peziziformis 439D", 
-"^ot:ottId": 345001, 
-"^ot:ottTaxonName": "Femsjonia peziziformis", 
+"^ot:ottId": 5299020, 
+"^ot:ottTaxonName": "Ditiola peziziformis", 
 "^ot:treebaseOTUId": "Tl263820"
 }, 
 "otu201103": {
@@ -309,14 +276,12 @@
 }, 
 "otu201129": {
 "^ot:originalLabel": "Dacryomitra pussila AJ406406", 
-"^ot:ottId": 531312, 
-"^ot:ottTaxonName": "Dacryomitra pusilla", 
+"^ot:ottId": 5299014, 
+"^ot:ottTaxonName": "Calocera glossoides", 
 "^ot:treebaseOTUId": "Tl263847"
 }, 
 "otu201130": {
 "^ot:originalLabel": "Dacrymyces subarcticus 722D", 
-"^ot:ottId": 572978, 
-"^ot:ottTaxonName": "Dacrymyces subarcticus", 
 "^ot:treebaseOTUId": "Tl263848"
 }, 
 "otu201131": {
@@ -345,8 +310,6 @@
 }, 
 "otu201135": {
 "^ot:originalLabel": "Dacrymyces pinacea 418D", 
-"^ot:ottId": 572976, 
-"^ot:ottTaxonName": "Dacrymyces pinacearum", 
 "^ot:treebaseOTUId": "Tl263853"
 }, 
 "otu201136": {
@@ -703,9 +666,15 @@
 "treeById": {
 "tree1650": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "MP, LSU", 
 "^ot:inGroupClade": "node472969", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node472966", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node472966": {
 "edge472967": {

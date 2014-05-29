@@ -19,48 +19,11 @@
 "@id": "peyotl-validator", 
 "@name": "validate_ot_nexson.py", 
 "@url": "https://github.com/OpenTreeOfLife/peyotl", 
-"@version": "0.0.3a", 
+"@version": "0.0.4a", 
 "invocation": {
-"checksPerformed": [
-"MISSING_MANDATORY_KEY", 
-"MISSING_OPTIONAL_KEY", 
-"UNRECOGNIZED_KEY", 
-"MISSING_LIST_EXPECTED", 
-"DUPLICATING_SINGLETON_KEY", 
-"REFERENCED_ID_NOT_FOUND", 
-"REPEATED_ID", 
-"REPEATED_OTU", 
-"MULTIPLE_ROOT_NODES", 
-"NO_ROOT_NODE", 
-"MULTIPLE_EDGES_FOR_NODES", 
-"CYCLE_DETECTED", 
-"DISCONNECTED_GRAPH_DETECTED", 
-"INCORRECT_ROOT_NODE_LABEL", 
-"TIP_WITHOUT_OTU", 
-"TIP_WITHOUT_OTT_ID", 
-"MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
-"NON_MONOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
-"INVALID_PROPERTY_VALUE", 
-"PROPERTY_VALUE_NOT_USEFUL", 
-"UNRECOGNIZED_PROPERTY_VALUE", 
-"MULTIPLE_TREES", 
-"UNRECOGNIZED_TAG", 
-"CONFLICTING_PROPERTY_VALUES", 
-"NO_TREES", 
-"DEPRECATED_PROPERTY", 
-"UNPARSEABLE_META", 
-"UNREACHABLE_NODE", 
-"INCORRECT_VALUE_TYPE", 
-"MISSING_CRUCIAL_CONTENT"
-], 
 "commandLine": [
 "--embed", 
-"--agent-only", 
-"-e", 
-"../mig-phyelesystem-scratch/990/validation.json", 
-"-o", 
-"../mig-phyelesystem-scratch/990/final.json", 
-"../mig-phyelesystem-scratch/990/v1.2.1-990.json"
+"--agent-only"
 ], 
 "otherProperty": [
 {
@@ -76,12 +39,19 @@
 }
 ]
 }, 
+"^ot:annotationEvents": {
+"annotation": []
+}, 
+"^ot:candidateTreeForSynthesis": [], 
 "^ot:curatorName": "Romina Gazis", 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S2082"
 }, 
 "^ot:focalClade": 563752, 
 "^ot:focalCladeOTTTaxonName": "Shiraia", 
+"^ot:messages": {
+"message": []
+}, 
 "^ot:otusElementOrder": [
 "otus990"
 ], 
@@ -91,6 +61,7 @@
 }, 
 "^ot:studyPublicationReference": "Morakotkarn, Doungporn, Hiroko Kawasaki, Kazuaki Tanaka, Izumi Okane, and Tatsuji Seki. \"Taxonomic characterization of Shiraia-like fungi isolated from bamboos in Japan.\" Mycoscience 49, no. 4 (2008): 258-265.", 
 "^ot:studyYear": 2008, 
+"^ot:tag": [], 
 "^ot:treesElementOrder": [
 "trees990"
 ], 
@@ -165,6 +136,8 @@
 }, 
 "otu210157": {
 "^ot:originalLabel": "Mycosphaerella graminicola AF181692", 
+"^ot:ottId": 5319573, 
+"^ot:ottTaxonName": "Mycosphaerella graminicola", 
 "^ot:treebaseOTUId": "Tl83226"
 }, 
 "otu210158": {
@@ -187,6 +160,8 @@
 }, 
 "otu210161": {
 "^ot:originalLabel": "Neophaeosphaeria barrii AF466301", 
+"^ot:ottId": 5319180, 
+"^ot:ottTaxonName": "Paraphaeosphaeria barriae", 
 "^ot:treebaseOTUId": "Tl83230"
 }, 
 "otu210162": {
@@ -297,6 +272,8 @@
 }, 
 "otu210180": {
 "^ot:originalLabel": "Septoria passerinii AF181695", 
+"^ot:ottId": 5319983, 
+"^ot:ottTaxonName": "Septoria murina", 
 "^ot:treebaseOTUId": "Tl83249"
 }, 
 "otu210181": {
@@ -349,6 +326,8 @@
 }, 
 "otu210189": {
 "^ot:originalLabel": "Ophiosphaerella agrostis AF191548", 
+"^ot:ottId": 5319046, 
+"^ot:ottTaxonName": "Ophiosphaerella agrostidis", 
 "^ot:treebaseOTUId": "Tl83258"
 }, 
 "otu210190": {
@@ -517,9 +496,15 @@
 "treeById": {
 "tree1931": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "MP, LSU", 
 "^ot:inGroupClade": "node498371", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node498369", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node498369": {
 "edge498370": {
@@ -1050,10 +1035,17 @@
 }, 
 "tree1932": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "MP, ITS", 
 "^ot:inGroupClade": "node498445", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node498444", 
-"^ot:tag": "Choose me", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [
+"Choose me"
+], 
 "edgeBySourceId": {
 "node498444": {
 "edge498445": {
@@ -1654,9 +1646,15 @@
 }, 
 "tree1933": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "MP, b-tubulin", 
 "^ot:inGroupClade": "node498530", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node498529", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node498529": {
 "edge498530": {

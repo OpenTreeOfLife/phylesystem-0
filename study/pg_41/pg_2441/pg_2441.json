@@ -19,48 +19,11 @@
 "@id": "peyotl-validator", 
 "@name": "validate_ot_nexson.py", 
 "@url": "https://github.com/OpenTreeOfLife/peyotl", 
-"@version": "0.0.3a", 
+"@version": "0.0.4a", 
 "invocation": {
-"checksPerformed": [
-"MISSING_MANDATORY_KEY", 
-"MISSING_OPTIONAL_KEY", 
-"UNRECOGNIZED_KEY", 
-"MISSING_LIST_EXPECTED", 
-"DUPLICATING_SINGLETON_KEY", 
-"REFERENCED_ID_NOT_FOUND", 
-"REPEATED_ID", 
-"REPEATED_OTU", 
-"MULTIPLE_ROOT_NODES", 
-"NO_ROOT_NODE", 
-"MULTIPLE_EDGES_FOR_NODES", 
-"CYCLE_DETECTED", 
-"DISCONNECTED_GRAPH_DETECTED", 
-"INCORRECT_ROOT_NODE_LABEL", 
-"TIP_WITHOUT_OTU", 
-"TIP_WITHOUT_OTT_ID", 
-"MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
-"NON_MONOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
-"INVALID_PROPERTY_VALUE", 
-"PROPERTY_VALUE_NOT_USEFUL", 
-"UNRECOGNIZED_PROPERTY_VALUE", 
-"MULTIPLE_TREES", 
-"UNRECOGNIZED_TAG", 
-"CONFLICTING_PROPERTY_VALUES", 
-"NO_TREES", 
-"DEPRECATED_PROPERTY", 
-"UNPARSEABLE_META", 
-"UNREACHABLE_NODE", 
-"INCORRECT_VALUE_TYPE", 
-"MISSING_CRUCIAL_CONTENT"
-], 
 "commandLine": [
 "--embed", 
-"--agent-only", 
-"-e", 
-"../mig-phyelesystem-scratch/2441/validation.json", 
-"-o", 
-"../mig-phyelesystem-scratch/2441/final.json", 
-"../mig-phyelesystem-scratch/2441/v1.2.1-2441.json"
+"--agent-only"
 ], 
 "otherProperty": [
 {
@@ -76,12 +39,19 @@
 }
 ]
 }, 
+"^ot:annotationEvents": {
+"annotation": []
+}, 
+"^ot:candidateTreeForSynthesis": [], 
 "^ot:curatorName": "Romina Gazis", 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S10076"
 }, 
 "^ot:focalClade": 48329, 
 "^ot:focalCladeOTTTaxonName": "Antrodia", 
+"^ot:messages": {
+"message": []
+}, 
 "^ot:otusElementOrder": [
 "otus2441"
 ], 
@@ -89,10 +59,10 @@
 "^ot:studyPublicationReference": "Yu Z., Wu S., Wang D., & Chen C. 2010. Phylogenetic relationships of Antrodia species and related taxa based on analyses of nuclear large subunit ribosomal DNA sequences. Botanical Studies, 51: 53-60.", 
 "^ot:studyYear": 2010, 
 "^ot:tag": [
-"MP", 
-"ML", 
 "BI", 
-"LSU"
+"LSU", 
+"ML", 
+"MP"
 ], 
 "^ot:treesElementOrder": [
 "trees2441"
@@ -168,6 +138,8 @@
 }, 
 "otu347606": {
 "^ot:originalLabel": "Fomitopsis dochmia AY515326", 
+"^ot:ottId": 5300172, 
+"^ot:ottTaxonName": "Daedalea dochmia", 
 "^ot:treebaseOTUId": "Tl262677"
 }, 
 "otu347607": {
@@ -178,6 +150,8 @@
 }, 
 "otu347608": {
 "^ot:originalLabel": "Osmoporus odoratus Wu0309 92", 
+"^ot:ottId": 900586, 
+"^ot:ottTaxonName": "Gloeophyllum odoratum", 
 "^ot:treebaseOTUId": "Tl262679"
 }, 
 "otu347609": {
@@ -230,6 +204,8 @@
 }, 
 "otu347617": {
 "^ot:originalLabel": "Neolentiporus maculatissimus AF518632", 
+"^ot:ottId": 802578, 
+"^ot:ottTaxonName": "Polyporus udus", 
 "^ot:treebaseOTUId": "Tl262688"
 }, 
 "otu347618": {
@@ -264,6 +240,8 @@
 }, 
 "otu347623": {
 "^ot:originalLabel": "Antrodia xantha AJ583430", 
+"^ot:ottId": 5300046, 
+"^ot:ottTaxonName": "Polyporus xanthus", 
 "^ot:treebaseOTUId": "Tl262694"
 }, 
 "otu347624": {
@@ -322,6 +300,8 @@
 }, 
 "otu347633": {
 "^ot:originalLabel": "Climacocystis sp. AF518609", 
+"^ot:ottId": 7504, 
+"^ot:ottTaxonName": "Climacocystis", 
 "^ot:treebaseOTUId": "Tl262704"
 }, 
 "otu347634": {
@@ -372,6 +352,8 @@
 }, 
 "otu347642": {
 "^ot:originalLabel": "Parmastomyces transmutans AF518635", 
+"^ot:ottId": 802425, 
+"^ot:ottTaxonName": "Parmastomyces mollissimus", 
 "^ot:treebaseOTUId": "Tl262713"
 }, 
 "otu347643": {
@@ -436,9 +418,14 @@
 "treeById": {
 "tree5179": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "MP, LSU", 
 "^ot:inGroupClade": "node893969", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node893968", 
+"^ot:specifiedRoot": "", 
 "^ot:tag": [
 "MP", 
 "LSU"
@@ -1211,9 +1198,14 @@
 }, 
 "tree5180": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "ML, LSU", 
 "^ot:inGroupClade": "node894078", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node894077", 
+"^ot:specifiedRoot": "", 
 "^ot:tag": [
 "ML", 
 "LSU", 
@@ -1973,9 +1965,14 @@
 }, 
 "tree5181": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "BI, LSU", 
 "^ot:inGroupClade": "node894187", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node894184", 
+"^ot:specifiedRoot": "", 
 "^ot:tag": [
 "BI", 
 "LSU"

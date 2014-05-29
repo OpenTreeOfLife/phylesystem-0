@@ -19,48 +19,11 @@
 "@id": "peyotl-validator", 
 "@name": "validate_ot_nexson.py", 
 "@url": "https://github.com/OpenTreeOfLife/peyotl", 
-"@version": "0.0.3a", 
+"@version": "0.0.4a", 
 "invocation": {
-"checksPerformed": [
-"MISSING_MANDATORY_KEY", 
-"MISSING_OPTIONAL_KEY", 
-"UNRECOGNIZED_KEY", 
-"MISSING_LIST_EXPECTED", 
-"DUPLICATING_SINGLETON_KEY", 
-"REFERENCED_ID_NOT_FOUND", 
-"REPEATED_ID", 
-"REPEATED_OTU", 
-"MULTIPLE_ROOT_NODES", 
-"NO_ROOT_NODE", 
-"MULTIPLE_EDGES_FOR_NODES", 
-"CYCLE_DETECTED", 
-"DISCONNECTED_GRAPH_DETECTED", 
-"INCORRECT_ROOT_NODE_LABEL", 
-"TIP_WITHOUT_OTU", 
-"TIP_WITHOUT_OTT_ID", 
-"MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
-"NON_MONOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
-"INVALID_PROPERTY_VALUE", 
-"PROPERTY_VALUE_NOT_USEFUL", 
-"UNRECOGNIZED_PROPERTY_VALUE", 
-"MULTIPLE_TREES", 
-"UNRECOGNIZED_TAG", 
-"CONFLICTING_PROPERTY_VALUES", 
-"NO_TREES", 
-"DEPRECATED_PROPERTY", 
-"UNPARSEABLE_META", 
-"UNREACHABLE_NODE", 
-"INCORRECT_VALUE_TYPE", 
-"MISSING_CRUCIAL_CONTENT"
-], 
 "commandLine": [
 "--embed", 
-"--agent-only", 
-"-e", 
-"../mig-phyelesystem-scratch/1889/validation.json", 
-"-o", 
-"../mig-phyelesystem-scratch/1889/final.json", 
-"../mig-phyelesystem-scratch/1889/v1.2.1-1889.json"
+"--agent-only"
 ], 
 "otherProperty": [
 {
@@ -76,12 +39,19 @@
 }
 ]
 }, 
+"^ot:annotationEvents": {
+"annotation": []
+}, 
+"^ot:candidateTreeForSynthesis": [], 
 "^ot:curatorName": "Chris Owen", 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S2218"
 }, 
 "^ot:focalClade": 541948, 
 "^ot:focalCladeOTTTaxonName": "Perissodactyla", 
+"^ot:messages": {
+"message": []
+}, 
 "^ot:otusElementOrder": [
 "otus1889"
 ], 
@@ -91,6 +61,7 @@
 }, 
 "^ot:studyPublicationReference": "Samantha A. Price,\r\nOlaf R. P. Bininda-Emonds. 2009. A comprehensive phylogeny of extant horses, rhinos and tapirs (Perissodactyla) through data combination. Zoosystematics and Evolution 85 (2): 277-292.", 
 "^ot:studyYear": 2008, 
+"^ot:tag": [], 
 "^ot:treesElementOrder": [
 "trees1889"
 ], 
@@ -188,6 +159,7 @@
 "otu287857": {
 "^ot:originalLabel": "Bos taurus", 
 "^ot:ottId": 490099, 
+"^ot:ottTaxonName": "Bos taurus", 
 "^ot:treebaseOTUId": "Tl3203"
 }, 
 "otu287858": {
@@ -234,9 +206,15 @@
 "treeById": {
 "tree3841": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "Fig. 1a Supertree", 
 "^ot:inGroupClade": "node723809", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node723809", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node723809": {
 "edge723810": {
@@ -466,9 +444,15 @@
 }, 
 "tree3842": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "Fig. 1b Supertree", 
 "^ot:inGroupClade": "node723841", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node723841", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node723841": {
 "edge723842": {
@@ -705,10 +689,15 @@
 }, 
 "tree3843": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
 "^ot:branchLengthMode": "ot:changesCount", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "Fig. 2a MP", 
 "^ot:inGroupClade": "node723874", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node723874", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node723874": {
 "edge723875": {
@@ -959,10 +948,15 @@
 }, 
 "tree3844": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
 "^ot:branchLengthMode": "ot:substitutionCount", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "Fig. 2b ML", 
 "^ot:inGroupClade": "node723909", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node723909", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node723909": {
 "edge723910": {
@@ -1213,10 +1207,15 @@
 }, 
 "tree3845": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
 "^ot:branchLengthMode": "ot:substitutionCount", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "Fig. 2c BI", 
 "^ot:inGroupClade": "node723944", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node723944", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node723944": {
 "edge723945": {
@@ -1467,10 +1466,15 @@
 }, 
 "tree3846": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
 "^ot:branchLengthMode": "ot:substitutionCount", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "Fig. 2d NJ", 
 "^ot:inGroupClade": "node723979", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node723979", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node723979": {
 "edge723980": {
@@ -1721,10 +1725,15 @@
 }, 
 "tree3847": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
 "^ot:branchLengthMode": "ot:substitutionCount", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "Fig. 2e ME", 
 "^ot:inGroupClade": "node724014", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node724014", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node724014": {
 "edge724015": {
@@ -1975,9 +1984,15 @@
 }, 
 "tree3848": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "Fig. 3a Supertree", 
 "^ot:inGroupClade": "node724049", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node724049", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node724049": {
 "edge724050": {
@@ -2228,9 +2243,15 @@
 }, 
 "tree3849": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "Fig. 3b Supertree", 
 "^ot:inGroupClade": "node724084", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node724084", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node724084": {
 "edge724085": {

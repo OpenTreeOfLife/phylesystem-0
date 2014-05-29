@@ -19,48 +19,11 @@
 "@id": "peyotl-validator", 
 "@name": "validate_ot_nexson.py", 
 "@url": "https://github.com/OpenTreeOfLife/peyotl", 
-"@version": "0.0.3a", 
+"@version": "0.0.4a", 
 "invocation": {
-"checksPerformed": [
-"MISSING_MANDATORY_KEY", 
-"MISSING_OPTIONAL_KEY", 
-"UNRECOGNIZED_KEY", 
-"MISSING_LIST_EXPECTED", 
-"DUPLICATING_SINGLETON_KEY", 
-"REFERENCED_ID_NOT_FOUND", 
-"REPEATED_ID", 
-"REPEATED_OTU", 
-"MULTIPLE_ROOT_NODES", 
-"NO_ROOT_NODE", 
-"MULTIPLE_EDGES_FOR_NODES", 
-"CYCLE_DETECTED", 
-"DISCONNECTED_GRAPH_DETECTED", 
-"INCORRECT_ROOT_NODE_LABEL", 
-"TIP_WITHOUT_OTU", 
-"TIP_WITHOUT_OTT_ID", 
-"MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
-"NON_MONOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
-"INVALID_PROPERTY_VALUE", 
-"PROPERTY_VALUE_NOT_USEFUL", 
-"UNRECOGNIZED_PROPERTY_VALUE", 
-"MULTIPLE_TREES", 
-"UNRECOGNIZED_TAG", 
-"CONFLICTING_PROPERTY_VALUES", 
-"NO_TREES", 
-"DEPRECATED_PROPERTY", 
-"UNPARSEABLE_META", 
-"UNREACHABLE_NODE", 
-"INCORRECT_VALUE_TYPE", 
-"MISSING_CRUCIAL_CONTENT"
-], 
 "commandLine": [
 "--embed", 
-"--agent-only", 
-"-e", 
-"../mig-phyelesystem-scratch/2599/validation.json", 
-"-o", 
-"../mig-phyelesystem-scratch/2599/final.json", 
-"../mig-phyelesystem-scratch/2599/v1.2.1-2599.json"
+"--agent-only"
 ], 
 "otherProperty": [
 {
@@ -76,9 +39,16 @@
 }
 ]
 }, 
+"^ot:annotationEvents": {
+"annotation": []
+}, 
+"^ot:candidateTreeForSynthesis": [], 
 "^ot:curatorName": "Joseph Brown", 
 "^ot:focalClade": 662954, 
 "^ot:focalCladeOTTTaxonName": "Alaudidae", 
+"^ot:messages": {
+"message": []
+}, 
 "^ot:otusElementOrder": [
 "otus2599"
 ], 
@@ -86,9 +56,11 @@
 "^ot:studyPublication": {
 "@href": "http://dx.doi.org/10.1016/j.ympev.2013.06.005"
 }, 
-"^ot:studyPublicationReference": "Per Alstr\u00f6m, Keith N. Barnes, Urban Olsson, F. Keith Barker, Paulette Bloomer, Aleem Ahmed Khan, Masood Ahmed Qureshi, Alban Guillaumet, Pierre-Andr\u00e9 Crochet, Peter G. Ryan. 2013. Multilocus phylogeny of the avian family Alaudidae (larks) reveals complex morphological evolution, non-monophyletic genera and hidden species diversity. Molecular Phylogenetics and Evolution 69 (3): 1043-1056.", 
+"^ot:studyPublicationReference": "Alstr\u00f6m, Per, Keith N. Barnes, Urban Olsson, F. Keith Barker, Paulette Bloomer, Aleem Ahmed Khan, Masood Ahmed Qureshi, Alban Guillaumet, Pierre-Andr\u00e9 Crochet, Peter G. Ryan. 2013. Multilocus phylogeny of the avian family Alaudidae (larks) reveals complex morphological evolution, non-monophyletic genera and hidden species diversity. Molecular Phylogenetics and Evolution 69 (3): 1043-1056.", 
 "^ot:studyYear": 2013, 
-"^ot:tag": "ingroup added;", 
+"^ot:tag": [
+"ingroup added;"
+], 
 "^ot:treesElementOrder": [
 "trees2599"
 ], 
@@ -154,7 +126,9 @@
 "^ot:ottTaxonName": "Chersomanes beesleyi"
 }, 
 "otu386387": {
-"^ot:originalLabel": "Ammomanes cincturus"
+"^ot:originalLabel": "Ammomanes cincturus", 
+"^ot:ottId": 3597505, 
+"^ot:ottTaxonName": "Ammomanes cinctura"
 }, 
 "otu386388": {
 "^ot:originalLabel": "Ammomanes deserti", 
@@ -182,7 +156,9 @@
 "^ot:ottTaxonName": "Eremopterix australis"
 }, 
 "otu386393": {
-"^ot:originalLabel": "Eremopterix grisea"
+"^ot:originalLabel": "Eremopterix grisea", 
+"^ot:ottId": 3597555, 
+"^ot:ottTaxonName": "Eremopterix griseus"
 }, 
 "otu386394": {
 "^ot:originalLabel": "Eremopterix leucopareia", 
@@ -195,7 +171,9 @@
 "^ot:ottTaxonName": "Eremopterix verticalis"
 }, 
 "otu386396": {
-"^ot:originalLabel": "Eremopterix signata"
+"^ot:originalLabel": "Eremopterix signata", 
+"^ot:ottId": 3597554, 
+"^ot:ottTaxonName": "Eremopterix signatus"
 }, 
 "otu386397": {
 "^ot:originalLabel": "Eremopterix nigriceps", 
@@ -293,7 +271,9 @@
 "^ot:ottTaxonName": "Lullula arborea"
 }, 
 "otu386416": {
-"^ot:originalLabel": "Ammomanes dunni"
+"^ot:originalLabel": "Ammomanes dunni", 
+"^ot:ottId": 3597547, 
+"^ot:ottTaxonName": "Eremalauda dunni"
 }, 
 "otu386417": {
 "^ot:originalLabel": "Chersophilus duponti", 
@@ -376,10 +356,14 @@
 "^ot:ottTaxonName": "Eremophila bilopha"
 }, 
 "otu386433": {
-"^ot:originalLabel": "Certhilauda albescens"
+"^ot:originalLabel": "Certhilauda albescens", 
+"^ot:ottId": 3597574, 
+"^ot:ottTaxonName": "Calendulauda albescens"
 }, 
 "otu386434": {
-"^ot:originalLabel": "Certhilauda barlowi1.0"
+"^ot:originalLabel": "Certhilauda barlowi1.0", 
+"^ot:ottId": 3597575, 
+"^ot:ottTaxonName": "Calendulauda barlowi"
 }, 
 "otu386435": {
 "^ot:originalLabel": "Certhilauda erythroclamys", 
@@ -387,19 +371,29 @@
 "^ot:ottTaxonName": "Calendulauda erythroclamys"
 }, 
 "otu386436": {
-"^ot:originalLabel": "Certhilauda burra"
+"^ot:originalLabel": "Certhilauda burra", 
+"^ot:ottId": 3597561, 
+"^ot:ottTaxonName": "Calendulauda burra"
 }, 
 "otu386437": {
-"^ot:originalLabel": "Mirafra africanoides"
+"^ot:originalLabel": "Mirafra africanoides", 
+"^ot:ottId": 3597578, 
+"^ot:ottTaxonName": "Calendulauda africanoides"
 }, 
 "otu386438": {
-"^ot:originalLabel": "Mirafra alopex intercedens1.0"
+"^ot:originalLabel": "Mirafra alopex intercedens1.0", 
+"^ot:ottId": 3597559, 
+"^ot:ottTaxonName": "Calendulauda alopex"
 }, 
 "otu386439": {
-"^ot:originalLabel": "Mirafra poicilosterna"
+"^ot:originalLabel": "Mirafra poicilosterna", 
+"^ot:ottId": 3597565, 
+"^ot:ottTaxonName": "Calendulauda poecilosterna"
 }, 
 "otu386440": {
-"^ot:originalLabel": "Mirafra sabota"
+"^ot:originalLabel": "Mirafra sabota", 
+"^ot:ottId": 3597569, 
+"^ot:ottTaxonName": "Calendulauda sabota"
 }, 
 "otu386441": {
 "^ot:originalLabel": "Heteromirafra ruddi", 
@@ -503,10 +497,15 @@
 "treeById": {
 "tree6021": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
 "^ot:branchLengthMode": "ot:substitutionCount", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "MrBayes consensus", 
 "^ot:inGroupClade": "node1030935", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node1030931", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node1030931": {
 "edge1030932": {

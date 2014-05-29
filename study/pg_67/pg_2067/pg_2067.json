@@ -19,48 +19,11 @@
 "@id": "peyotl-validator", 
 "@name": "validate_ot_nexson.py", 
 "@url": "https://github.com/OpenTreeOfLife/peyotl", 
-"@version": "0.0.3a", 
+"@version": "0.0.4a", 
 "invocation": {
-"checksPerformed": [
-"MISSING_MANDATORY_KEY", 
-"MISSING_OPTIONAL_KEY", 
-"UNRECOGNIZED_KEY", 
-"MISSING_LIST_EXPECTED", 
-"DUPLICATING_SINGLETON_KEY", 
-"REFERENCED_ID_NOT_FOUND", 
-"REPEATED_ID", 
-"REPEATED_OTU", 
-"MULTIPLE_ROOT_NODES", 
-"NO_ROOT_NODE", 
-"MULTIPLE_EDGES_FOR_NODES", 
-"CYCLE_DETECTED", 
-"DISCONNECTED_GRAPH_DETECTED", 
-"INCORRECT_ROOT_NODE_LABEL", 
-"TIP_WITHOUT_OTU", 
-"TIP_WITHOUT_OTT_ID", 
-"MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
-"NON_MONOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
-"INVALID_PROPERTY_VALUE", 
-"PROPERTY_VALUE_NOT_USEFUL", 
-"UNRECOGNIZED_PROPERTY_VALUE", 
-"MULTIPLE_TREES", 
-"UNRECOGNIZED_TAG", 
-"CONFLICTING_PROPERTY_VALUES", 
-"NO_TREES", 
-"DEPRECATED_PROPERTY", 
-"UNPARSEABLE_META", 
-"UNREACHABLE_NODE", 
-"INCORRECT_VALUE_TYPE", 
-"MISSING_CRUCIAL_CONTENT"
-], 
 "commandLine": [
 "--embed", 
-"--agent-only", 
-"-e", 
-"../mig-phyelesystem-scratch/2067/validation.json", 
-"-o", 
-"../mig-phyelesystem-scratch/2067/final.json", 
-"../mig-phyelesystem-scratch/2067/v1.2.1-2067.json"
+"--agent-only"
 ], 
 "otherProperty": [
 {
@@ -76,12 +39,19 @@
 }
 ]
 }, 
+"^ot:annotationEvents": {
+"annotation": []
+}, 
+"^ot:candidateTreeForSynthesis": [], 
 "^ot:curatorName": "Chris Owen", 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S1153"
 }, 
 "^ot:focalClade": 702142, 
 "^ot:focalCladeOTTTaxonName": "Lemuriformes", 
+"^ot:messages": {
+"message": []
+}, 
 "^ot:otusElementOrder": [
 "otus2067"
 ], 
@@ -89,8 +59,9 @@
 "^ot:studyPublication": {
 "@href": "http://dx.doi.org/10.1046/j.1365-294X.2004.02106.x"
 }, 
-"^ot:studyPublicationReference": "Yoder A.D., & Yang Z. 2004. Divergence dates for Malagasy lemurs estimated from multiple gene loci: geological and evolutionary context. Molecular Ecology, 13: 757-773.", 
+"^ot:studyPublicationReference": "Yoder A.D., & Yang Z. 2004. Divergence dates for Malagasy lemurs estimated from multiple gene loci: geological and evolutionary context. Molecular Ecology 13 (4): 757-773.", 
 "^ot:studyYear": 2004, 
+"^ot:tag": [], 
 "^ot:treesElementOrder": [
 "trees2067"
 ], 
@@ -201,6 +172,8 @@
 }, 
 "otu310286": {
 "^ot:originalLabel": "Homo sapiens", 
+"^ot:ottId": 770315, 
+"^ot:ottTaxonName": "Homo sapiens", 
 "^ot:treebaseOTUId": "Tl146412"
 }, 
 "otu310287": {
@@ -594,9 +567,15 @@
 "treeById": {
 "tree4257": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "IRBP usertree", 
 "^ot:inGroupClade": "node788556", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node788555", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node788555": {
 "edge788556": {
@@ -1141,10 +1120,17 @@
 }, 
 "tree4258": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "mtDNA usertree", 
 "^ot:inGroupClade": "node788633", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node788632", 
-"^ot:tag": "choose me", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [
+"choose me"
+], 
 "edgeBySourceId": {
 "node788632": {
 "edge788633": {
@@ -1969,9 +1955,15 @@
 }, 
 "tree4259": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "TR usertree", 
 "^ot:inGroupClade": "node788750", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node788749", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node788749": {
 "edge788750": {
@@ -2264,9 +2256,15 @@
 }, 
 "tree4260": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "vWF usertree", 
 "^ot:inGroupClade": "node788791", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node788790", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node788790": {
 "edge788791": {

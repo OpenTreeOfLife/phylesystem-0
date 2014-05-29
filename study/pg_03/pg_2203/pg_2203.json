@@ -19,48 +19,11 @@
 "@id": "peyotl-validator", 
 "@name": "validate_ot_nexson.py", 
 "@url": "https://github.com/OpenTreeOfLife/peyotl", 
-"@version": "0.0.3a", 
+"@version": "0.0.4a", 
 "invocation": {
-"checksPerformed": [
-"MISSING_MANDATORY_KEY", 
-"MISSING_OPTIONAL_KEY", 
-"UNRECOGNIZED_KEY", 
-"MISSING_LIST_EXPECTED", 
-"DUPLICATING_SINGLETON_KEY", 
-"REFERENCED_ID_NOT_FOUND", 
-"REPEATED_ID", 
-"REPEATED_OTU", 
-"MULTIPLE_ROOT_NODES", 
-"NO_ROOT_NODE", 
-"MULTIPLE_EDGES_FOR_NODES", 
-"CYCLE_DETECTED", 
-"DISCONNECTED_GRAPH_DETECTED", 
-"INCORRECT_ROOT_NODE_LABEL", 
-"TIP_WITHOUT_OTU", 
-"TIP_WITHOUT_OTT_ID", 
-"MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
-"NON_MONOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
-"INVALID_PROPERTY_VALUE", 
-"PROPERTY_VALUE_NOT_USEFUL", 
-"UNRECOGNIZED_PROPERTY_VALUE", 
-"MULTIPLE_TREES", 
-"UNRECOGNIZED_TAG", 
-"CONFLICTING_PROPERTY_VALUES", 
-"NO_TREES", 
-"DEPRECATED_PROPERTY", 
-"UNPARSEABLE_META", 
-"UNREACHABLE_NODE", 
-"INCORRECT_VALUE_TYPE", 
-"MISSING_CRUCIAL_CONTENT"
-], 
 "commandLine": [
 "--embed", 
-"--agent-only", 
-"-e", 
-"../mig-phyelesystem-scratch/2203/validation.json", 
-"-o", 
-"../mig-phyelesystem-scratch/2203/final.json", 
-"../mig-phyelesystem-scratch/2203/v1.2.1-2203.json"
+"--agent-only"
 ], 
 "otherProperty": [
 {
@@ -76,12 +39,17 @@
 }
 ]
 }, 
+"^ot:annotationEvents": {
+"annotation": []
+}, 
+"^ot:candidateTreeForSynthesis": [], 
 "^ot:curatorName": "Romina Gazis", 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S1064"
 }, 
-"^ot:focalClade": 2421073, 
-"^ot:focalCladeOTTTaxonName": "Cryptovalsa", 
+"^ot:messages": {
+"message": []
+}, 
 "^ot:otusElementOrder": [
 "otus2203"
 ], 
@@ -91,6 +59,7 @@
 }, 
 "^ot:studyPublicationReference": "Mostert L., Halleen F., Creaser M., & Crous P. 2003. Cryptovalsa ampelina, a forgotten shoot and cane pathogen of grapevines. Australasian Plant Pathology, 33(2): 295-299.", 
 "^ot:studyYear": 2003, 
+"^ot:tag": [], 
 "^ot:treesElementOrder": [
 "trees2203"
 ], 
@@ -100,7 +69,7 @@
 "otu320411": {
 "^ot:originalLabel": "Phaeoacremonium aleophilum", 
 "^ot:ottId": 393534, 
-"^ot:ottTaxonName": "Togninia minima", 
+"^ot:ottTaxonName": "Phaeoacremonium aleophilum", 
 "^ot:treebaseOTUId": "Tl140699"
 }, 
 "otu320412": {
@@ -153,8 +122,6 @@
 }, 
 "otu320420": {
 "^ot:originalLabel": "Cryptovalsa ampelina AY307106", 
-"^ot:ottId": 900155, 
-"^ot:ottTaxonName": "Cryptovalsa ampelina", 
 "^ot:treebaseOTUId": "Tl17517"
 }, 
 "otu320421": {
@@ -165,20 +132,16 @@
 }, 
 "otu320422": {
 "^ot:originalLabel": "Cryptovalsa ampelina AY307108", 
-"^ot:ottId": 900155, 
-"^ot:ottTaxonName": "Cryptovalsa ampelina", 
 "^ot:treebaseOTUId": "Tl17519"
 }, 
 "otu320423": {
 "^ot:originalLabel": "Cryptovalsa ampelina AY307109", 
-"^ot:ottId": 900155, 
-"^ot:ottTaxonName": "Cryptovalsa ampelina", 
 "^ot:treebaseOTUId": "Tl17521"
 }, 
 "otu320424": {
 "^ot:originalLabel": "Eutypa petrakii", 
-"^ot:ottId": 420110, 
-"^ot:ottTaxonName": "Eutypa petrakii", 
+"^ot:ottId": 5317611, 
+"^ot:ottTaxonName": "Cryptosphaeria moravica", 
 "^ot:treebaseOTUId": "Tl17523"
 }, 
 "otu320425": {
@@ -213,14 +176,10 @@
 }, 
 "otu320430": {
 "^ot:originalLabel": "Cryptovalsa ampelina AY307107", 
-"^ot:ottId": 900155, 
-"^ot:ottTaxonName": "Cryptovalsa ampelina", 
 "^ot:treebaseOTUId": "Tl17531"
 }, 
 "otu320431": {
 "^ot:originalLabel": "Diatrype undulata", 
-"^ot:ottId": 691654, 
-"^ot:ottTaxonName": "Diatrype undulata", 
 "^ot:treebaseOTUId": "Tl17534"
 }
 }
@@ -235,9 +194,15 @@
 "treeById": {
 "tree4664": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "MP, ITS", 
 "^ot:inGroupClade": "node824743", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node824742", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node824742": {
 "edge824743": {

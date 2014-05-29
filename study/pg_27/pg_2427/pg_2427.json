@@ -19,48 +19,11 @@
 "@id": "peyotl-validator", 
 "@name": "validate_ot_nexson.py", 
 "@url": "https://github.com/OpenTreeOfLife/peyotl", 
-"@version": "0.0.3a", 
+"@version": "0.0.4a", 
 "invocation": {
-"checksPerformed": [
-"MISSING_MANDATORY_KEY", 
-"MISSING_OPTIONAL_KEY", 
-"UNRECOGNIZED_KEY", 
-"MISSING_LIST_EXPECTED", 
-"DUPLICATING_SINGLETON_KEY", 
-"REFERENCED_ID_NOT_FOUND", 
-"REPEATED_ID", 
-"REPEATED_OTU", 
-"MULTIPLE_ROOT_NODES", 
-"NO_ROOT_NODE", 
-"MULTIPLE_EDGES_FOR_NODES", 
-"CYCLE_DETECTED", 
-"DISCONNECTED_GRAPH_DETECTED", 
-"INCORRECT_ROOT_NODE_LABEL", 
-"TIP_WITHOUT_OTU", 
-"TIP_WITHOUT_OTT_ID", 
-"MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
-"NON_MONOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
-"INVALID_PROPERTY_VALUE", 
-"PROPERTY_VALUE_NOT_USEFUL", 
-"UNRECOGNIZED_PROPERTY_VALUE", 
-"MULTIPLE_TREES", 
-"UNRECOGNIZED_TAG", 
-"CONFLICTING_PROPERTY_VALUES", 
-"NO_TREES", 
-"DEPRECATED_PROPERTY", 
-"UNPARSEABLE_META", 
-"UNREACHABLE_NODE", 
-"INCORRECT_VALUE_TYPE", 
-"MISSING_CRUCIAL_CONTENT"
-], 
 "commandLine": [
 "--embed", 
-"--agent-only", 
-"-e", 
-"../mig-phyelesystem-scratch/2427/validation.json", 
-"-o", 
-"../mig-phyelesystem-scratch/2427/final.json", 
-"../mig-phyelesystem-scratch/2427/v1.2.1-2427.json"
+"--agent-only"
 ], 
 "otherProperty": [
 {
@@ -76,12 +39,19 @@
 }
 ]
 }, 
+"^ot:annotationEvents": {
+"annotation": []
+}, 
+"^ot:candidateTreeForSynthesis": [], 
 "^ot:curatorName": "Romina Gazis", 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S12165"
 }, 
 "^ot:focalClade": 550772, 
 "^ot:focalCladeOTTTaxonName": "Aspergillus", 
+"^ot:messages": {
+"message": []
+}, 
 "^ot:otusElementOrder": [
 "otus2427"
 ], 
@@ -92,13 +62,13 @@
 "^ot:studyPublicationReference": "Krimitzas A., Pyrri I., Kouvelis V.N., Kapsanaki-gotsi E., & Typas M.A. 2013. A Phylogenetic Analysis of Greek Isolates of Aspergillus Species Based on Morphology and Nuclear and Mitochondrial Gene Sequences.  BioMed Research International, 2013(260395): 18.", 
 "^ot:studyYear": 2013, 
 "^ot:tag": [
-"NJ", 
-"ITS", 
-"IGS", 
-"RPB2", 
 "benA", 
 "COX-1", 
-"mitochondrial rns gene"
+"IGS", 
+"ITS", 
+"mitochondrial rns gene", 
+"NJ", 
+"RPB2"
 ], 
 "^ot:treesElementOrder": [
 "trees2427"
@@ -144,6 +114,8 @@
 }, 
 "otu345824": {
 "^ot:originalLabel": "Eurotium tonophilum EF652081", 
+"^ot:ottId": 5310653, 
+"^ot:ottTaxonName": "Aspergillus tonophilus", 
 "^ot:treebaseOTUId": "Tl1043219"
 }, 
 "otu345825": {
@@ -188,6 +160,8 @@
 }, 
 "otu345832": {
 "^ot:originalLabel": "Neosartorya quadricincta AF459730", 
+"^ot:ottId": 5310647, 
+"^ot:ottTaxonName": "Aspergillus quadricinctus", 
 "^ot:treebaseOTUId": "Tl1043227"
 }, 
 "otu345833": {
@@ -218,6 +192,8 @@
 }, 
 "otu345838": {
 "^ot:originalLabel": "Eurotium pseudoglaucum EF652050", 
+"^ot:ottId": 3755814, 
+"^ot:ottTaxonName": "Aspergillus pseudoglaucus", 
 "^ot:treebaseOTUId": "Tl1043233"
 }, 
 "otu345839": {
@@ -244,6 +220,8 @@
 }, 
 "otu345843": {
 "^ot:originalLabel": "Aspergillus rubrum EF652080", 
+"^ot:ottId": 118490, 
+"^ot:ottTaxonName": "Aspergillus ruber", 
 "^ot:treebaseOTUId": "Tl1043238"
 }, 
 "otu345844": {
@@ -428,6 +406,8 @@
 }, 
 "otu345876": {
 "^ot:originalLabel": "Neosartorya stramenia AF459733", 
+"^ot:ottId": 5310630, 
+"^ot:ottTaxonName": "Aspergillus stramenius", 
 "^ot:treebaseOTUId": "Tl1043271"
 }, 
 "otu345877": {
@@ -690,10 +670,14 @@
 }, 
 "otu345922": {
 "^ot:originalLabel": "Eurotium heterocaryoticum EU021619", 
+"^ot:ottId": 5310651, 
+"^ot:ottTaxonName": "Aspergillus heterocaryoticus", 
 "^ot:treebaseOTUId": "Tl1043317"
 }, 
 "otu345923": {
 "^ot:originalLabel": "Aspergillus vitricola EF652046", 
+"^ot:ottId": 75252, 
+"^ot:ottTaxonName": "Aspergillus penicillioides", 
 "^ot:treebaseOTUId": "Tl1043318"
 }, 
 "otu345924": {
@@ -728,6 +712,8 @@
 }, 
 "otu345929": {
 "^ot:originalLabel": "Eurotium halophilicum EF652088", 
+"^ot:ottId": 5310650, 
+"^ot:ottTaxonName": "Aspergillus halophilicus", 
 "^ot:treebaseOTUId": "Tl1043324"
 }, 
 "otu345930": {
@@ -744,6 +730,8 @@
 }, 
 "otu345932": {
 "^ot:originalLabel": "Eurotium costiformae FR837960", 
+"^ot:ottId": 125816, 
+"^ot:ottTaxonName": "Aspergillus costiformis", 
 "^ot:treebaseOTUId": "Tl1043327"
 }, 
 "otu345933": {
@@ -896,6 +884,8 @@
 }, 
 "otu345958": {
 "^ot:originalLabel": "Eurotium intermedium EF652074", 
+"^ot:ottId": 3756059, 
+"^ot:ottTaxonName": "Aspergillus intermedius", 
 "^ot:treebaseOTUId": "Tl1043353"
 }, 
 "otu345959": {
@@ -922,6 +912,8 @@
 }, 
 "otu345963": {
 "^ot:originalLabel": "Eurotium carnoyi EF652057", 
+"^ot:ottId": 5310645, 
+"^ot:ottTaxonName": "Aspergillus carnoyi", 
 "^ot:treebaseOTUId": "Tl1043358"
 }, 
 "otu345964": {
@@ -960,6 +952,8 @@
 }, 
 "otu345970": {
 "^ot:originalLabel": "Eurotium xerophilum EF652086", 
+"^ot:ottId": 872968, 
+"^ot:ottTaxonName": "Aspergillus xerophilus", 
 "^ot:treebaseOTUId": "Tl1043365"
 }, 
 "otu345971": {
@@ -1054,6 +1048,8 @@
 }, 
 "otu345987": {
 "^ot:originalLabel": "Eurotium chevalieri AY373886", 
+"^ot:ottId": 1069554, 
+"^ot:ottTaxonName": "Aspergillus chevalieri", 
 "^ot:treebaseOTUId": "Tl1043382"
 }, 
 "otu345988": {
@@ -1106,10 +1102,14 @@
 }, 
 "otu345996": {
 "^ot:originalLabel": "Aspergillus toxicarius AJ874127", 
+"^ot:ottId": 749900, 
+"^ot:ottTaxonName": "Aspergillus parasiticus", 
 "^ot:treebaseOTUId": "Tl1043391"
 }, 
 "otu345997": {
 "^ot:originalLabel": "Eurotium echinulatum EF652061", 
+"^ot:ottId": 5310644, 
+"^ot:ottTaxonName": "Aspergillus echinulatus", 
 "^ot:treebaseOTUId": "Tl1043392"
 }, 
 "otu345998": {
@@ -1142,6 +1142,8 @@
 }, 
 "otu346003": {
 "^ot:originalLabel": "Eurotium umbrosum EF652055", 
+"^ot:ottId": 5310661, 
+"^ot:ottTaxonName": "Aspergillus umbrosus", 
 "^ot:treebaseOTUId": "Tl1043398"
 }, 
 "otu346004": {
@@ -1272,6 +1274,8 @@
 }, 
 "otu346026": {
 "^ot:originalLabel": "Eurotium xerophilum EF651971", 
+"^ot:ottId": 872968, 
+"^ot:ottTaxonName": "Aspergillus xerophilus", 
 "^ot:treebaseOTUId": "Tl1043658"
 }, 
 "otu346027": {
@@ -1286,6 +1290,8 @@
 }, 
 "otu346029": {
 "^ot:originalLabel": "Neosartorya quadricincta EF669763", 
+"^ot:ottId": 5310647, 
+"^ot:ottTaxonName": "Aspergillus quadricinctus", 
 "^ot:treebaseOTUId": "Tl1043661"
 }, 
 "otu346030": {
@@ -1312,6 +1318,8 @@
 }, 
 "otu346034": {
 "^ot:originalLabel": "Eurotium heterocaryoticum EU021659", 
+"^ot:ottId": 5310651, 
+"^ot:ottTaxonName": "Aspergillus heterocaryoticus", 
 "^ot:treebaseOTUId": "Tl1043666"
 }, 
 "otu346035": {
@@ -1386,6 +1394,8 @@
 }, 
 "otu346047": {
 "^ot:originalLabel": "Eurotium pseudoglaucum EF651952", 
+"^ot:ottId": 3755814, 
+"^ot:ottTaxonName": "Aspergillus pseudoglaucus", 
 "^ot:treebaseOTUId": "Tl1043679"
 }, 
 "otu346048": {
@@ -1450,6 +1460,8 @@
 }, 
 "otu346058": {
 "^ot:originalLabel": "Eurotium carnoyi EF651942", 
+"^ot:ottId": 5310645, 
+"^ot:ottTaxonName": "Aspergillus carnoyi", 
 "^ot:treebaseOTUId": "Tl1043690"
 }, 
 "otu346059": {
@@ -1506,6 +1518,8 @@
 }, 
 "otu346068": {
 "^ot:originalLabel": "Eurotium umbrosum EF651937", 
+"^ot:ottId": 5310661, 
+"^ot:ottTaxonName": "Aspergillus umbrosus", 
 "^ot:treebaseOTUId": "Tl1043700"
 }, 
 "otu346069": {
@@ -1516,6 +1530,8 @@
 }, 
 "otu346070": {
 "^ot:originalLabel": "Neosartorya stramenia EF669771", 
+"^ot:ottId": 5310630, 
+"^ot:ottTaxonName": "Aspergillus stramenius", 
 "^ot:treebaseOTUId": "Tl1043702"
 }, 
 "otu346071": {
@@ -1586,6 +1602,8 @@
 }, 
 "otu346082": {
 "^ot:originalLabel": "Eurotium tonophilum EF651969", 
+"^ot:ottId": 5310653, 
+"^ot:ottTaxonName": "Aspergillus tonophilus", 
 "^ot:treebaseOTUId": "Tl1043714"
 }, 
 "otu346083": {
@@ -1650,6 +1668,8 @@
 }, 
 "otu346093": {
 "^ot:originalLabel": "Eurotium echinulatum EF651940", 
+"^ot:ottId": 5310644, 
+"^ot:ottTaxonName": "Aspergillus echinulatus", 
 "^ot:treebaseOTUId": "Tl1043725"
 }, 
 "otu346094": {
@@ -1684,6 +1704,8 @@
 }, 
 "otu346099": {
 "^ot:originalLabel": "Eurotium costiforme FR837978", 
+"^ot:ottId": 125816, 
+"^ot:ottTaxonName": "Aspergillus costiformis", 
 "^ot:treebaseOTUId": "Tl1043731"
 }, 
 "otu346100": {
@@ -1712,6 +1734,8 @@
 }, 
 "otu346104": {
 "^ot:originalLabel": "Eurotium chevalieri EF651956", 
+"^ot:ottId": 1069554, 
+"^ot:ottTaxonName": "Aspergillus chevalieri", 
 "^ot:treebaseOTUId": "Tl1043736"
 }, 
 "otu346105": {
@@ -1740,6 +1764,8 @@
 }, 
 "otu346109": {
 "^ot:originalLabel": "Eurotium intermedium EF651958", 
+"^ot:ottId": 3756059, 
+"^ot:ottTaxonName": "Aspergillus intermedius", 
 "^ot:treebaseOTUId": "Tl1043741"
 }, 
 "otu346110": {
@@ -1796,6 +1822,8 @@
 }, 
 "otu346119": {
 "^ot:originalLabel": "Eurotium rubrum EF651949", 
+"^ot:ottId": 118490, 
+"^ot:ottTaxonName": "Aspergillus ruber", 
 "^ot:treebaseOTUId": "Tl1043751"
 }, 
 "otu346120": {
@@ -1892,10 +1920,14 @@
 }, 
 "otu346136": {
 "^ot:originalLabel": "Emericella heterothallica EF652236", 
+"^ot:ottId": 392368, 
+"^ot:ottTaxonName": "Aspergillus nidulans", 
 "^ot:treebaseOTUId": "Tl1043768"
 }, 
 "otu346137": {
 "^ot:originalLabel": "Neosartorya aurata EF669767", 
+"^ot:ottId": 5310648, 
+"^ot:ottTaxonName": "Aspergillus auratus", 
 "^ot:treebaseOTUId": "Tl1043769"
 }, 
 "otu346138": {
@@ -1906,6 +1938,8 @@
 }, 
 "otu346139": {
 "^ot:originalLabel": "Aspergillus vitricola EF651973", 
+"^ot:ottId": 75252, 
+"^ot:ottTaxonName": "Aspergillus penicillioides", 
 "^ot:treebaseOTUId": "Tl1043771"
 }, 
 "otu346140": {
@@ -1964,6 +1998,8 @@
 }, 
 "otu346149": {
 "^ot:originalLabel": "Eurotium halophilicum EF651982", 
+"^ot:ottId": 5310650, 
+"^ot:ottTaxonName": "Aspergillus halophilicus", 
 "^ot:treebaseOTUId": "Tl1043781"
 }, 
 "otu346150": {
@@ -1980,6 +2016,8 @@
 }, 
 "otu346152": {
 "^ot:originalLabel": "Neosartorya aureola EF669740", 
+"^ot:ottId": 5310646, 
+"^ot:ottTaxonName": "Aspergillus aureolus", 
 "^ot:treebaseOTUId": "Tl1043784"
 }, 
 "otu346153": {
@@ -2084,6 +2122,8 @@
 }, 
 "otu346170": {
 "^ot:originalLabel": "Emericella heterothallica EF652324", 
+"^ot:ottId": 392368, 
+"^ot:ottTaxonName": "Aspergillus nidulans", 
 "^ot:treebaseOTUId": "Tl1043802"
 }, 
 "otu346171": {
@@ -2104,6 +2144,8 @@
 }, 
 "otu346174": {
 "^ot:originalLabel": "Aspergillus halophilicum EF651926", 
+"^ot:ottId": 5310650, 
+"^ot:ottTaxonName": "Aspergillus halophilicus", 
 "^ot:treebaseOTUId": "Tl1043806"
 }, 
 "otu346175": {
@@ -2144,6 +2186,8 @@
 }, 
 "otu346181": {
 "^ot:originalLabel": "Aspergillus costaricaensis AY820014", 
+"^ot:ottId": 3755915, 
+"^ot:ottTaxonName": "Aspergillus costaricensis", 
 "^ot:treebaseOTUId": "Tl1043813"
 }, 
 "otu346182": {
@@ -2282,6 +2326,8 @@
 }, 
 "otu346205": {
 "^ot:originalLabel": "Eurotium umbrosum EF651890", 
+"^ot:ottId": 5310661, 
+"^ot:ottTaxonName": "Aspergillus umbrosus", 
 "^ot:treebaseOTUId": "Tl1043837"
 }, 
 "otu346206": {
@@ -2338,6 +2384,8 @@
 }, 
 "otu346215": {
 "^ot:originalLabel": "Aspergillus vitricola EF651927", 
+"^ot:ottId": 75252, 
+"^ot:ottTaxonName": "Aspergillus penicillioides", 
 "^ot:treebaseOTUId": "Tl1043847"
 }, 
 "otu346216": {
@@ -2382,6 +2430,8 @@
 }, 
 "otu346223": {
 "^ot:originalLabel": "Eurotium carnoyi EF651903", 
+"^ot:ottId": 5310645, 
+"^ot:ottTaxonName": "Aspergillus carnoyi", 
 "^ot:treebaseOTUId": "Tl1043855"
 }, 
 "otu346224": {
@@ -2582,6 +2632,8 @@
 }, 
 "otu346258": {
 "^ot:originalLabel": "Aspergillus toxicarius EF203163", 
+"^ot:ottId": 749900, 
+"^ot:ottTaxonName": "Aspergillus parasiticus", 
 "^ot:treebaseOTUId": "Tl1043890"
 }, 
 "otu346259": {
@@ -2738,6 +2790,8 @@
 }, 
 "otu346286": {
 "^ot:originalLabel": "Eurotium chevalieri EF651913", 
+"^ot:ottId": 1069554, 
+"^ot:ottTaxonName": "Aspergillus chevalieri", 
 "^ot:treebaseOTUId": "Tl1043918"
 }, 
 "otu346287": {
@@ -2814,6 +2868,8 @@
 }, 
 "otu346299": {
 "^ot:originalLabel": "Eurotium echinulatum EF651908", 
+"^ot:ottId": 5310644, 
+"^ot:ottTaxonName": "Aspergillus echinulatus", 
 "^ot:treebaseOTUId": "Tl1043931"
 }, 
 "otu346300": {
@@ -2900,6 +2956,8 @@
 }, 
 "otu346314": {
 "^ot:originalLabel": "Eurotium pseudoglaucum EF651917", 
+"^ot:ottId": 3755814, 
+"^ot:ottTaxonName": "Aspergillus pseudoglaucus", 
 "^ot:treebaseOTUId": "Tl1043946"
 }, 
 "otu346315": {
@@ -2928,6 +2986,8 @@
 }, 
 "otu346319": {
 "^ot:originalLabel": "Eurotium tonophilum EF651919", 
+"^ot:ottId": 5310653, 
+"^ot:ottTaxonName": "Aspergillus tonophilus", 
 "^ot:treebaseOTUId": "Tl1043951"
 }, 
 "otu346320": {
@@ -3160,6 +3220,8 @@
 }, 
 "otu346360": {
 "^ot:originalLabel": "Eurotium costiforma FR837970", 
+"^ot:ottId": 125816, 
+"^ot:ottTaxonName": "Aspergillus costiformis", 
 "^ot:treebaseOTUId": "Tl1043992"
 }, 
 "otu346361": {
@@ -3206,6 +3268,8 @@
 }, 
 "otu346368": {
 "^ot:originalLabel": "Eurotium heterocaryoticum EU021670", 
+"^ot:ottId": 5310651, 
+"^ot:ottTaxonName": "Aspergillus heterocaryoticus", 
 "^ot:treebaseOTUId": "Tl1044000"
 }, 
 "otu346369": {
@@ -3350,6 +3414,8 @@
 }, 
 "otu346393": {
 "^ot:originalLabel": "Eurotium rubrum ATHUM5183", 
+"^ot:ottId": 118490, 
+"^ot:ottTaxonName": "Aspergillus ruber", 
 "^ot:treebaseOTUId": "Tl673633"
 }, 
 "otu346394": {
@@ -3576,9 +3642,14 @@
 "treeById": {
 "tree5126": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "NJ, ITS", 
 "^ot:inGroupClade": "node888704", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node888700", 
+"^ot:specifiedRoot": "", 
 "^ot:tag": [
 "NJ", 
 "ITS"
@@ -7171,9 +7242,14 @@
 }, 
 "tree5127": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "NJ, benA", 
 "^ot:inGroupClade": "node889153", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node889149", 
+"^ot:specifiedRoot": "", 
 "^ot:tag": [
 "NJ", 
 "benA"
@@ -11264,9 +11340,14 @@
 }, 
 "tree5128": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "NJ, RPB2", 
 "^ot:inGroupClade": "node889664", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node889662", 
+"^ot:specifiedRoot": "", 
 "^ot:tag": [
 "NJ", 
 "RPB2"
@@ -14203,9 +14284,14 @@
 }, 
 "tree5129": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "NJ, mitochondrial rns gene", 
 "^ot:inGroupClade": "node890033", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node890031", 
+"^ot:specifiedRoot": "", 
 "^ot:tag": [
 "NJ", 
 "mit rns gene"
@@ -14888,9 +14974,14 @@
 }, 
 "tree5130": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "NJ, ITS + IGS + benA + RPB2 + COX1", 
 "^ot:inGroupClade": "node890120", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node890118", 
+"^ot:specifiedRoot": "", 
 "^ot:tag": [
 "NJ", 
 "ITS", 
@@ -15494,9 +15585,15 @@
 }, 
 "tree5131": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "NJ, IGS-1", 
 "^ot:inGroupClade": "node890195", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node890193", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node890193": {
 "edge890194": {
@@ -16043,9 +16140,15 @@
 }, 
 "tree5132": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "NJ, COX-1", 
 "^ot:inGroupClade": "node890264", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node890262", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node890262": {
 "edge890263": {

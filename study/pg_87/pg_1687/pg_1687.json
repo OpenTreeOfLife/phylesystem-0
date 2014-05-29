@@ -19,48 +19,11 @@
 "@id": "peyotl-validator", 
 "@name": "validate_ot_nexson.py", 
 "@url": "https://github.com/OpenTreeOfLife/peyotl", 
-"@version": "0.0.3a", 
+"@version": "0.0.4a", 
 "invocation": {
-"checksPerformed": [
-"MISSING_MANDATORY_KEY", 
-"MISSING_OPTIONAL_KEY", 
-"UNRECOGNIZED_KEY", 
-"MISSING_LIST_EXPECTED", 
-"DUPLICATING_SINGLETON_KEY", 
-"REFERENCED_ID_NOT_FOUND", 
-"REPEATED_ID", 
-"REPEATED_OTU", 
-"MULTIPLE_ROOT_NODES", 
-"NO_ROOT_NODE", 
-"MULTIPLE_EDGES_FOR_NODES", 
-"CYCLE_DETECTED", 
-"DISCONNECTED_GRAPH_DETECTED", 
-"INCORRECT_ROOT_NODE_LABEL", 
-"TIP_WITHOUT_OTU", 
-"TIP_WITHOUT_OTT_ID", 
-"MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
-"NON_MONOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
-"INVALID_PROPERTY_VALUE", 
-"PROPERTY_VALUE_NOT_USEFUL", 
-"UNRECOGNIZED_PROPERTY_VALUE", 
-"MULTIPLE_TREES", 
-"UNRECOGNIZED_TAG", 
-"CONFLICTING_PROPERTY_VALUES", 
-"NO_TREES", 
-"DEPRECATED_PROPERTY", 
-"UNPARSEABLE_META", 
-"UNREACHABLE_NODE", 
-"INCORRECT_VALUE_TYPE", 
-"MISSING_CRUCIAL_CONTENT"
-], 
 "commandLine": [
 "--embed", 
-"--agent-only", 
-"-e", 
-"../mig-phyelesystem-scratch/1687/validation.json", 
-"-o", 
-"../mig-phyelesystem-scratch/1687/final.json", 
-"../mig-phyelesystem-scratch/1687/v1.2.1-1687.json"
+"--agent-only"
 ], 
 "otherProperty": [
 {
@@ -76,12 +39,19 @@
 }
 ]
 }, 
+"^ot:annotationEvents": {
+"annotation": []
+}, 
+"^ot:candidateTreeForSynthesis": [], 
 "^ot:curatorName": "Romina Gazis", 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S556"
 }, 
 "^ot:focalClade": 880965, 
 "^ot:focalCladeOTTTaxonName": "Pezizaceae", 
+"^ot:messages": {
+"message": []
+}, 
 "^ot:otusElementOrder": [
 "otus1687"
 ], 
@@ -91,6 +61,7 @@
 }, 
 "^ot:studyPublicationReference": "Norman J., & Egger K. 1999. Molecular phylogenetic analysis of Peziza and related genera. Mycologia, 91(5): 820-829.", 
 "^ot:studyYear": 1999, 
+"^ot:tag": [], 
 "^ot:treesElementOrder": [
 "trees1687"
 ], 
@@ -227,6 +198,8 @@
 }, 
 "otu270689": {
 "^ot:originalLabel": "Peziza vacinii", 
+"^ot:ottId": 5303221, 
+"^ot:ottTaxonName": "Peziza vacini", 
 "^ot:treebaseOTUId": "Tl114531"
 }, 
 "otu270690": {
@@ -293,6 +266,8 @@
 }, 
 "otu270701": {
 "^ot:originalLabel": "Peziza violacea", 
+"^ot:ottId": 5303241, 
+"^ot:ottTaxonName": "Peziza violacea", 
 "^ot:treebaseOTUId": "Tl53799"
 }, 
 "otu270702": {
@@ -320,9 +295,15 @@
 "treeById": {
 "tree3400": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "ML, ITS", 
 "^ot:inGroupClade": "node670999", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node670997", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node670997": {
 "edge670998": {
@@ -671,10 +652,17 @@
 }, 
 "tree3401": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "ML, SSU", 
 "^ot:inGroupClade": "node671050", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node671046", 
-"^ot:tag": "SSU", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [
+"SSU"
+], 
 "edgeBySourceId": {
 "node671046": {
 "edge671047": {

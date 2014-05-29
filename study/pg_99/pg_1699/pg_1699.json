@@ -19,48 +19,11 @@
 "@id": "peyotl-validator", 
 "@name": "validate_ot_nexson.py", 
 "@url": "https://github.com/OpenTreeOfLife/peyotl", 
-"@version": "0.0.3a", 
+"@version": "0.0.4a", 
 "invocation": {
-"checksPerformed": [
-"MISSING_MANDATORY_KEY", 
-"MISSING_OPTIONAL_KEY", 
-"UNRECOGNIZED_KEY", 
-"MISSING_LIST_EXPECTED", 
-"DUPLICATING_SINGLETON_KEY", 
-"REFERENCED_ID_NOT_FOUND", 
-"REPEATED_ID", 
-"REPEATED_OTU", 
-"MULTIPLE_ROOT_NODES", 
-"NO_ROOT_NODE", 
-"MULTIPLE_EDGES_FOR_NODES", 
-"CYCLE_DETECTED", 
-"DISCONNECTED_GRAPH_DETECTED", 
-"INCORRECT_ROOT_NODE_LABEL", 
-"TIP_WITHOUT_OTU", 
-"TIP_WITHOUT_OTT_ID", 
-"MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
-"NON_MONOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
-"INVALID_PROPERTY_VALUE", 
-"PROPERTY_VALUE_NOT_USEFUL", 
-"UNRECOGNIZED_PROPERTY_VALUE", 
-"MULTIPLE_TREES", 
-"UNRECOGNIZED_TAG", 
-"CONFLICTING_PROPERTY_VALUES", 
-"NO_TREES", 
-"DEPRECATED_PROPERTY", 
-"UNPARSEABLE_META", 
-"UNREACHABLE_NODE", 
-"INCORRECT_VALUE_TYPE", 
-"MISSING_CRUCIAL_CONTENT"
-], 
 "commandLine": [
 "--embed", 
-"--agent-only", 
-"-e", 
-"../mig-phyelesystem-scratch/1699/validation.json", 
-"-o", 
-"../mig-phyelesystem-scratch/1699/final.json", 
-"../mig-phyelesystem-scratch/1699/v1.2.1-1699.json"
+"--agent-only"
 ], 
 "otherProperty": [
 {
@@ -76,12 +39,19 @@
 }
 ]
 }, 
+"^ot:annotationEvents": {
+"annotation": []
+}, 
+"^ot:candidateTreeForSynthesis": [], 
 "^ot:curatorName": "Romina Gazis", 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S605"
 }, 
 "^ot:focalClade": 444949, 
 "^ot:focalCladeOTTTaxonName": "Icmadophilaceae", 
+"^ot:messages": {
+"message": []
+}, 
 "^ot:otusElementOrder": [
 "otus1699"
 ], 
@@ -91,6 +61,7 @@
 }, 
 "^ot:studyPublicationReference": "Platt J., & Spatafora J. 2000. Evolutionary relationships of nonsexual lichenized fungi: molecular phylogenetic hypotheses for the genera Siphula and Thamnolia from SSU and LSU rDNA. Mycologia, 92(3): 475-487.", 
 "^ot:studyYear": 2000, 
+"^ot:tag": [], 
 "^ot:treesElementOrder": [
 "trees1699"
 ], 
@@ -161,6 +132,8 @@
 }, 
 "otu271143": {
 "^ot:originalLabel": "Dothidea hippophaeos", 
+"^ot:ottId": 3717635, 
+"^ot:ottTaxonName": "Dothidea hippophaes", 
 "^ot:treebaseOTUId": "Tl116879"
 }, 
 "otu271144": {
@@ -333,6 +306,8 @@
 }, 
 "otu271173": {
 "^ot:originalLabel": "Ophiostoma piliferum", 
+"^ot:ottId": 5316941, 
+"^ot:ottTaxonName": "Ceratocystis pilifera", 
 "^ot:treebaseOTUId": "Tl116932"
 }, 
 "otu271174": {
@@ -423,6 +398,8 @@
 }, 
 "otu271189": {
 "^ot:originalLabel": "Spathularia velutipes 2", 
+"^ot:ottId": 5309175, 
+"^ot:ottTaxonName": "Spathulariopsis velutipes", 
 "^ot:treebaseOTUId": "Tl67662"
 }, 
 "otu271190": {
@@ -463,10 +440,14 @@
 }, 
 "otu271196": {
 "^ot:originalLabel": "Spathularia velutipes 1", 
+"^ot:ottId": 5309175, 
+"^ot:ottTaxonName": "Spathulariopsis velutipes", 
 "^ot:treebaseOTUId": "Tl67670"
 }, 
 "otu271197": {
 "^ot:originalLabel": "Spathularia velutipes 3", 
+"^ot:ottId": 5309175, 
+"^ot:ottTaxonName": "Spathulariopsis velutipes", 
 "^ot:treebaseOTUId": "Tl67671"
 }, 
 "otu271198": {
@@ -524,9 +505,15 @@
 "treeById": {
 "tree3427": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "MP, SSU", 
 "^ot:inGroupClade": "node672322", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node672320", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node672320": {
 "edge672321": {
@@ -1197,9 +1184,14 @@
 }, 
 "tree3428": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "MP, LSU", 
 "^ot:inGroupClade": "node672417", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node672415", 
+"^ot:specifiedRoot": "", 
 "^ot:tag": [
 "MP", 
 "LSU"

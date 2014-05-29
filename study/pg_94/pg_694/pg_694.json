@@ -19,48 +19,11 @@
 "@id": "peyotl-validator", 
 "@name": "validate_ot_nexson.py", 
 "@url": "https://github.com/OpenTreeOfLife/peyotl", 
-"@version": "0.0.3a", 
+"@version": "0.0.4a", 
 "invocation": {
-"checksPerformed": [
-"MISSING_MANDATORY_KEY", 
-"MISSING_OPTIONAL_KEY", 
-"UNRECOGNIZED_KEY", 
-"MISSING_LIST_EXPECTED", 
-"DUPLICATING_SINGLETON_KEY", 
-"REFERENCED_ID_NOT_FOUND", 
-"REPEATED_ID", 
-"REPEATED_OTU", 
-"MULTIPLE_ROOT_NODES", 
-"NO_ROOT_NODE", 
-"MULTIPLE_EDGES_FOR_NODES", 
-"CYCLE_DETECTED", 
-"DISCONNECTED_GRAPH_DETECTED", 
-"INCORRECT_ROOT_NODE_LABEL", 
-"TIP_WITHOUT_OTU", 
-"TIP_WITHOUT_OTT_ID", 
-"MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
-"NON_MONOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
-"INVALID_PROPERTY_VALUE", 
-"PROPERTY_VALUE_NOT_USEFUL", 
-"UNRECOGNIZED_PROPERTY_VALUE", 
-"MULTIPLE_TREES", 
-"UNRECOGNIZED_TAG", 
-"CONFLICTING_PROPERTY_VALUES", 
-"NO_TREES", 
-"DEPRECATED_PROPERTY", 
-"UNPARSEABLE_META", 
-"UNREACHABLE_NODE", 
-"INCORRECT_VALUE_TYPE", 
-"MISSING_CRUCIAL_CONTENT"
-], 
 "commandLine": [
 "--embed", 
-"--agent-only", 
-"-e", 
-"../mig-phyelesystem-scratch/694/validation.json", 
-"-o", 
-"../mig-phyelesystem-scratch/694/final.json", 
-"../mig-phyelesystem-scratch/694/v1.2.1-694.json"
+"--agent-only"
 ], 
 "otherProperty": [
 {
@@ -76,12 +39,19 @@
 }
 ]
 }, 
+"^ot:annotationEvents": {
+"annotation": []
+}, 
+"^ot:candidateTreeForSynthesis": [], 
 "^ot:curatorName": "Romina Gazis", 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S10262"
 }, 
 "^ot:focalClade": 466678, 
 "^ot:focalCladeOTTTaxonName": "Pleosporales", 
+"^ot:messages": {
+"message": []
+}, 
 "^ot:otusElementOrder": [
 "otus694"
 ], 
@@ -91,6 +61,7 @@
 }, 
 "^ot:studyPublicationReference": "Zhang Y., Schoch C.L., Fournier J., Crous P., De gruyter J., Woudenberg J., Hirayama K., Tanaka K., Pointing S., Spatafora J., & Hyde K. 2009. Multi-locus phylogeny of Pleosporales: a taxonomic, ecological and evolutionary re-evaluation. Studies in Mycology, 64(1): 85-1025.", 
 "^ot:studyYear": 2009, 
+"^ot:tag": [], 
 "^ot:treesElementOrder": [
 "trees694"
 ], 
@@ -661,6 +632,8 @@
 }, 
 "otu186523": {
 "^ot:originalLabel": "Phoma betae CBS 109410", 
+"^ot:ottId": 5318830, 
+"^ot:ottTaxonName": "Pleospora betae", 
 "^ot:treebaseOTUId": "Tl268522"
 }, 
 "otu186524": {
@@ -801,6 +774,8 @@
 }, 
 "otu186548": {
 "^ot:originalLabel": "Lophiotrema neoarundinariae MAFF 239461", 
+"^ot:ottId": 5318716, 
+"^ot:ottTaxonName": "Lophiotrema neoarundinaria", 
 "^ot:treebaseOTUId": "Tl274360"
 }, 
 "otu186549": {
@@ -833,6 +808,8 @@
 }, 
 "otu186554": {
 "^ot:originalLabel": "Lophiotrema neoarundinariae NBRC 106238", 
+"^ot:ottId": 5318716, 
+"^ot:ottTaxonName": "Lophiotrema neoarundinaria", 
 "^ot:treebaseOTUId": "Tl274366"
 }, 
 "otu186555": {
@@ -1027,6 +1004,8 @@
 }, 
 "otu186587": {
 "^ot:originalLabel": "Dendryphiella arenaria CBS 181 58", 
+"^ot:ottId": 3796670, 
+"^ot:ottTaxonName": "Paradendryphiella arenariae", 
 "^ot:treebaseOTUId": "Tl274399"
 }, 
 "otu186588": {
@@ -1041,6 +1020,8 @@
 }, 
 "otu186590": {
 "^ot:originalLabel": "Lophiotrema rubi CBS 691 95", 
+"^ot:ottId": 5318717, 
+"^ot:ottTaxonName": "Lophiotrema rubi", 
 "^ot:treebaseOTUId": "Tl274402"
 }, 
 "otu186591": {
@@ -1091,9 +1072,15 @@
 "treeById": {
 "tree1247": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "ML, SSU + LSU + RPB1 + RPB2 + EF-1", 
 "^ot:inGroupClade": "node429464", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node429449", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node429449": {
 "edge429450": {

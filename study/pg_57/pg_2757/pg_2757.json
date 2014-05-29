@@ -19,48 +19,11 @@
 "@id": "peyotl-validator", 
 "@name": "validate_ot_nexson.py", 
 "@url": "https://github.com/OpenTreeOfLife/peyotl", 
-"@version": "0.0.3a", 
+"@version": "0.0.4a", 
 "invocation": {
-"checksPerformed": [
-"MISSING_MANDATORY_KEY", 
-"MISSING_OPTIONAL_KEY", 
-"UNRECOGNIZED_KEY", 
-"MISSING_LIST_EXPECTED", 
-"DUPLICATING_SINGLETON_KEY", 
-"REFERENCED_ID_NOT_FOUND", 
-"REPEATED_ID", 
-"REPEATED_OTU", 
-"MULTIPLE_ROOT_NODES", 
-"NO_ROOT_NODE", 
-"MULTIPLE_EDGES_FOR_NODES", 
-"CYCLE_DETECTED", 
-"DISCONNECTED_GRAPH_DETECTED", 
-"INCORRECT_ROOT_NODE_LABEL", 
-"TIP_WITHOUT_OTU", 
-"TIP_WITHOUT_OTT_ID", 
-"MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
-"NON_MONOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
-"INVALID_PROPERTY_VALUE", 
-"PROPERTY_VALUE_NOT_USEFUL", 
-"UNRECOGNIZED_PROPERTY_VALUE", 
-"MULTIPLE_TREES", 
-"UNRECOGNIZED_TAG", 
-"CONFLICTING_PROPERTY_VALUES", 
-"NO_TREES", 
-"DEPRECATED_PROPERTY", 
-"UNPARSEABLE_META", 
-"UNREACHABLE_NODE", 
-"INCORRECT_VALUE_TYPE", 
-"MISSING_CRUCIAL_CONTENT"
-], 
 "commandLine": [
 "--embed", 
-"--agent-only", 
-"-e", 
-"../mig-phyelesystem-scratch/2757/validation.json", 
-"-o", 
-"../mig-phyelesystem-scratch/2757/final.json", 
-"../mig-phyelesystem-scratch/2757/v1.2.1-2757.json"
+"--agent-only"
 ], 
 "otherProperty": [
 {
@@ -76,9 +39,18 @@
 }
 ]
 }, 
+"^ot:annotationEvents": {
+"annotation": []
+}, 
+"^ot:candidateTreeForSynthesis": [], 
 "^ot:curatorName": "Dail Laughinghouse", 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S14910"
+}, 
+"^ot:focalClade": 248067, 
+"^ot:focalCladeOTTTaxonName": "Proteobacteria", 
+"^ot:messages": {
+"message": []
 }, 
 "^ot:otusElementOrder": [
 "otus2757"
@@ -86,6 +58,7 @@
 "^ot:studyId": "2757", 
 "^ot:studyPublicationReference": "Sachs J.L., Skophammer R.G., Bansal N., & Stajich J.E. 2013. Evolutionary origins and diversification of proteobacterial mutualists. Proceedings of the Royal Society B: Biological Sciences, .", 
 "^ot:studyYear": 2013, 
+"^ot:tag": [], 
 "^ot:treesElementOrder": [
 "trees2757"
 ], 
@@ -100,8 +73,8 @@
 }, 
 "otu410724": {
 "^ot:originalLabel": "Parvibaculum lavamentivorans DS 1", 
-"^ot:ottId": 330771, 
-"^ot:ottTaxonName": "Parvibaculum lavamentivorans", 
+"^ot:ottId": 927547, 
+"^ot:ottTaxonName": "Parvibaculum lavamentivorans DS-1", 
 "^ot:treebaseOTUId": "Tl1274104"
 }, 
 "otu410725": {
@@ -136,8 +109,8 @@
 }, 
 "otu410730": {
 "^ot:originalLabel": "Nitrosococcus halophilus Nc4", 
-"^ot:ottId": 165312, 
-"^ot:ottTaxonName": "Nitrosococcus halophilus", 
+"^ot:ottId": 64875, 
+"^ot:ottTaxonName": "Nitrosococcus halophilus Nc 4", 
 "^ot:treebaseOTUId": "Tl1274110"
 }, 
 "otu410731": {
@@ -148,6 +121,8 @@
 }, 
 "otu410732": {
 "^ot:originalLabel": "Caldicellulosiruptor saccharolyticus DSM 8903", 
+"^ot:ottId": 371049, 
+"^ot:ottTaxonName": "Caldicellulosiruptor saccharolyticus DSM 8903", 
 "^ot:treebaseOTUId": "Tl1274112"
 }, 
 "otu410733": {
@@ -206,14 +181,14 @@
 }, 
 "otu410742": {
 "^ot:originalLabel": "Pseudomonas fluorescens Pf0 1", 
-"^ot:ottId": 1017443, 
-"^ot:ottTaxonName": "Pseudomonas fluorescens", 
+"^ot:ottId": 607803, 
+"^ot:ottTaxonName": "Pseudomonas fluorescens Pf0-1", 
 "^ot:treebaseOTUId": "Tl1274122"
 }, 
 "otu410743": {
 "^ot:originalLabel": "Psychrobacter arcticus 273 4", 
-"^ot:ottId": 107663, 
-"^ot:ottTaxonName": "Psychrobacter arcticus", 
+"^ot:ottId": 988603, 
+"^ot:ottTaxonName": "Psychrobacter arcticus 273-4", 
 "^ot:treebaseOTUId": "Tl1274123"
 }, 
 "otu410744": {
@@ -236,8 +211,8 @@
 }, 
 "otu410747": {
 "^ot:originalLabel": "Acetobacter pasteurianus IFO 3283 01", 
-"^ot:ottId": 551833, 
-"^ot:ottTaxonName": "Acetobacter pasteurianus", 
+"^ot:ottId": 610661, 
+"^ot:ottTaxonName": "Acetobacter pasteurianus IFO 3283-01", 
 "^ot:treebaseOTUId": "Tl1274127"
 }, 
 "otu410748": {
@@ -276,12 +251,14 @@
 }, 
 "otu410754": {
 "^ot:originalLabel": "Rhizobium leguminosarum bv. trifolii WSM1325 WSM1325", 
+"^ot:ottId": 43996, 
+"^ot:ottTaxonName": "Rhizobium leguminosarum bv. trifolii", 
 "^ot:treebaseOTUId": "Tl1274134"
 }, 
 "otu410755": {
 "^ot:originalLabel": "Methylovorus sp. SIP3-4", 
-"^ot:ottId": 600170, 
-"^ot:ottTaxonName": "Methylovorus glucosotrophus", 
+"^ot:ottId": 870371, 
+"^ot:ottTaxonName": "Methylovorus glucosetrophus SIP3-4", 
 "^ot:treebaseOTUId": "Tl1274135"
 }, 
 "otu410756": {
@@ -454,14 +431,14 @@
 }, 
 "otu410784": {
 "^ot:originalLabel": "Haemophilus influenzae 86 028NP", 
-"^ot:ottId": 682806, 
-"^ot:ottTaxonName": "Haemophilus influenzae", 
+"^ot:ottId": 22009, 
+"^ot:ottTaxonName": "Haemophilus influenzae 86-028NP", 
 "^ot:treebaseOTUId": "Tl1274164"
 }, 
 "otu410785": {
 "^ot:originalLabel": "Cronobacter sakazakii ATCC BAA 894", 
-"^ot:ottId": 935497, 
-"^ot:ottTaxonName": "Cronobacter sakazakii", 
+"^ot:ottId": 97517, 
+"^ot:ottTaxonName": "Cronobacter sakazakii ATCC BAA-894", 
 "^ot:treebaseOTUId": "Tl1274165"
 }, 
 "otu410786": {
@@ -478,14 +455,14 @@
 }, 
 "otu410788": {
 "^ot:originalLabel": "Sulfurimonas denitrificans str. DSM 1251", 
-"^ot:ottId": 822351, 
-"^ot:ottTaxonName": "Sulfurimonas denitrificans", 
+"^ot:ottId": 569599, 
+"^ot:ottTaxonName": "Sulfurimonas denitrificans DSM 1251", 
 "^ot:treebaseOTUId": "Tl1274168"
 }, 
 "otu410789": {
 "^ot:originalLabel": "Actinobacillus pleuropneumoniae L20", 
-"^ot:ottId": 1092792, 
-"^ot:ottTaxonName": "Actinobacillus pleuropneumoniae", 
+"^ot:ottId": 738287, 
+"^ot:ottTaxonName": "Actinobacillus pleuropneumoniae serovar 5b str. L20", 
 "^ot:treebaseOTUId": "Tl1274169"
 }, 
 "otu410790": {
@@ -586,6 +563,8 @@
 }, 
 "otu410806": {
 "^ot:originalLabel": "Candidatus Liberibacter asiaticus str. psy62", 
+"^ot:ottId": 694067, 
+"^ot:ottTaxonName": "Candidatus Liberibacter asiaticus str. psy62", 
 "^ot:treebaseOTUId": "Tl1274186"
 }, 
 "otu410807": {
@@ -614,8 +593,8 @@
 }, 
 "otu410811": {
 "^ot:originalLabel": "Opitutus terrae PB90 1", 
-"^ot:ottId": 1030401, 
-"^ot:ottTaxonName": "Opitutus terrae", 
+"^ot:ottId": 604141, 
+"^ot:ottTaxonName": "Opitutus terrae PB90-1", 
 "^ot:treebaseOTUId": "Tl1274191"
 }, 
 "otu410812": {
@@ -626,14 +605,14 @@
 }, 
 "otu410813": {
 "^ot:originalLabel": "Alteromonas macleodii Deep ecotype", 
-"^ot:ottId": 726602, 
-"^ot:ottTaxonName": "Alteromonas macleodii", 
+"^ot:ottId": 536970, 
+"^ot:ottTaxonName": "Alteromonas macleodii str. 'Deep ecotype'", 
 "^ot:treebaseOTUId": "Tl1274193"
 }, 
 "otu410814": {
 "^ot:originalLabel": "Thiomicrospira crunogena XCL 2", 
-"^ot:ottId": 822345, 
-"^ot:ottTaxonName": "Thiomicrospira crunogena", 
+"^ot:ottId": 89144, 
+"^ot:ottTaxonName": "Thiomicrospira crunogena XCL-2", 
 "^ot:treebaseOTUId": "Tl1274194"
 }, 
 "otu410815": {
@@ -728,14 +707,14 @@
 }, 
 "otu410830": {
 "^ot:originalLabel": "Sodalis glossinidius str. morsitans", 
-"^ot:ottId": 257752, 
-"^ot:ottTaxonName": "Sodalis glossinidius", 
+"^ot:ottId": 218480, 
+"^ot:ottTaxonName": "Sodalis glossinidius str. 'morsitans'", 
 "^ot:treebaseOTUId": "Tl1274210"
 }, 
 "otu410831": {
 "^ot:originalLabel": "Sorangium cellulosum str. So ce56", 
-"^ot:ottId": 804727, 
-"^ot:ottTaxonName": "Sorangium cellulosum", 
+"^ot:ottId": 275853, 
+"^ot:ottTaxonName": "Sorangium cellulosum So ce56", 
 "^ot:treebaseOTUId": "Tl1274211"
 }, 
 "otu410832": {
@@ -758,8 +737,8 @@
 }, 
 "otu410835": {
 "^ot:originalLabel": "Verminephrobacter eiseniae EF01 2", 
-"^ot:ottId": 540748, 
-"^ot:ottTaxonName": "Verminephrobacter eiseniae", 
+"^ot:ottId": 885550, 
+"^ot:ottTaxonName": "Verminephrobacter eiseniae EF01-2", 
 "^ot:treebaseOTUId": "Tl1274215"
 }, 
 "otu410836": {
@@ -878,8 +857,8 @@
 }, 
 "otu410855": {
 "^ot:originalLabel": "Burkholderia cenocepacia MC0 3", 
-"^ot:ottId": 816631, 
-"^ot:ottTaxonName": "Burkholderia cenocepacia", 
+"^ot:ottId": 290934, 
+"^ot:ottTaxonName": "Burkholderia cenocepacia MC0-3", 
 "^ot:treebaseOTUId": "Tl1274235"
 }, 
 "otu410856": {
@@ -932,6 +911,8 @@
 }, 
 "otu410864": {
 "^ot:originalLabel": "Escherichia coli SMS 3 5", 
+"^ot:ottId": 992225, 
+"^ot:ottTaxonName": "Escherichia coli SMS-3-5", 
 "^ot:treebaseOTUId": "Tl1274244"
 }, 
 "otu410865": {
@@ -1056,8 +1037,8 @@
 }, 
 "otu410885": {
 "^ot:originalLabel": "Bacillus clausii KSM K16", 
-"^ot:ottId": 605720, 
-"^ot:ottTaxonName": "Bacillus clausii", 
+"^ot:ottId": 337359, 
+"^ot:ottTaxonName": "Bacillus clausii KSM-K16", 
 "^ot:treebaseOTUId": "Tl1274265"
 }, 
 "otu410886": {
@@ -1080,8 +1061,8 @@
 }, 
 "otu410889": {
 "^ot:originalLabel": "Erwinia tasmaniensis Et1 99", 
-"^ot:ottId": 5858, 
-"^ot:ottTaxonName": "Erwinia tasmaniensis", 
+"^ot:ottId": 362721, 
+"^ot:ottTaxonName": "Erwinia tasmaniensis Et1/99", 
 "^ot:treebaseOTUId": "Tl1274269"
 }, 
 "otu410890": {
@@ -1116,8 +1097,8 @@
 }, 
 "otu410895": {
 "^ot:originalLabel": "Shewanella halifaxensis HAW EB4", 
-"^ot:ottId": 626247, 
-"^ot:ottTaxonName": "Shewanella halifaxensis", 
+"^ot:ottId": 368716, 
+"^ot:ottTaxonName": "Shewanella halifaxensis HAW-EB4", 
 "^ot:treebaseOTUId": "Tl1274275"
 }, 
 "otu410896": {
@@ -1158,8 +1139,8 @@
 }, 
 "otu410902": {
 "^ot:originalLabel": "Leptothrix cholodnii SP 6", 
-"^ot:ottId": 4018165, 
-"^ot:ottTaxonName": "Leptothrix cholodnii", 
+"^ot:ottId": 4775686, 
+"^ot:ottTaxonName": "Leptothrix cholodnii SP-6", 
 "^ot:treebaseOTUId": "Tl1274282"
 }, 
 "otu410903": {
@@ -1224,8 +1205,8 @@
 }, 
 "otu410913": {
 "^ot:originalLabel": "Delftia acidovorans SPH 1", 
-"^ot:ottId": 1074494, 
-"^ot:ottTaxonName": "Delftia acidovorans", 
+"^ot:ottId": 163788, 
+"^ot:ottTaxonName": "Delftia acidovorans SPH-1", 
 "^ot:treebaseOTUId": "Tl1274293"
 }, 
 "otu410914": {
@@ -1236,8 +1217,8 @@
 }, 
 "otu410915": {
 "^ot:originalLabel": "Campylobacter curvus 52592", 
-"^ot:ottId": 697971, 
-"^ot:ottTaxonName": "Campylobacter curvus", 
+"^ot:ottId": 962616, 
+"^ot:ottTaxonName": "Campylobacter curvus 525.92", 
 "^ot:treebaseOTUId": "Tl1274295"
 }, 
 "otu410916": {
@@ -1254,14 +1235,14 @@
 }, 
 "otu410918": {
 "^ot:originalLabel": "Klebsiella pneumoniae NTUH K2044", 
-"^ot:ottId": 206931, 
-"^ot:ottTaxonName": "Klebsiella pneumoniae", 
+"^ot:ottId": 219533, 
+"^ot:ottTaxonName": "Klebsiella pneumoniae subsp. pneumoniae NTUH-K2044", 
 "^ot:treebaseOTUId": "Tl1274298"
 }, 
 "otu410919": {
 "^ot:originalLabel": "Magnetospirillum magneticum AMB 1", 
-"^ot:ottId": 798936, 
-"^ot:ottTaxonName": "Magnetospirillum magneticum", 
+"^ot:ottId": 476728, 
+"^ot:ottTaxonName": "Magnetospirillum magneticum AMB-1", 
 "^ot:treebaseOTUId": "Tl1274299"
 }, 
 "otu410920": {
@@ -1284,6 +1265,8 @@
 }, 
 "otu410923": {
 "^ot:originalLabel": "Shigella flexneri 2a str 2457T", 
+"^ot:ottId": 586765, 
+"^ot:ottTaxonName": "Shigella flexneri 2a str. 2457T", 
 "^ot:treebaseOTUId": "Tl1274303"
 }, 
 "otu410924": {
@@ -1300,8 +1283,8 @@
 }, 
 "otu410926": {
 "^ot:originalLabel": "Xenorhabdus bovienii SS 2004", 
-"^ot:ottId": 69553, 
-"^ot:ottTaxonName": "Xenorhabdus bovienii", 
+"^ot:ottId": 62489, 
+"^ot:ottTaxonName": "Xenorhabdus bovienii SS-2004", 
 "^ot:treebaseOTUId": "Tl1274306"
 }, 
 "otu410927": {
@@ -1336,8 +1319,6 @@
 }, 
 "otu410932": {
 "^ot:originalLabel": "Candidatus Ruthia magnifica str. Cm (Calyptogena magnifica)", 
-"^ot:ottId": 198196, 
-"^ot:ottTaxonName": "Calyptogena magnifica", 
 "^ot:treebaseOTUId": "Tl1274312"
 }, 
 "otu410933": {
@@ -1462,8 +1443,8 @@
 }, 
 "otu410953": {
 "^ot:originalLabel": "Chlamydia trachomatis D UW 3 CX", 
-"^ot:ottId": 41358, 
-"^ot:ottTaxonName": "Chlamydia trachomatis", 
+"^ot:ottId": 953200, 
+"^ot:ottTaxonName": "Chlamydia trachomatis D/UW-3/CX", 
 "^ot:treebaseOTUId": "Tl1274333"
 }, 
 "otu410954": {
@@ -1492,8 +1473,8 @@
 }, 
 "otu410958": {
 "^ot:originalLabel": "Desulfovibrio magneticus RS 1", 
-"^ot:ottId": 455336, 
-"^ot:ottTaxonName": "Desulfovibrio magneticus", 
+"^ot:ottId": 526809, 
+"^ot:ottTaxonName": "Desulfovibrio magneticus RS-1", 
 "^ot:treebaseOTUId": "Tl1274338"
 }, 
 "otu410959": {
@@ -1504,8 +1485,8 @@
 }, 
 "otu410960": {
 "^ot:originalLabel": "Geobacter metallireducens GS 15", 
-"^ot:ottId": 630848, 
-"^ot:ottTaxonName": "Geobacter metallireducens", 
+"^ot:ottId": 672392, 
+"^ot:ottTaxonName": "Geobacter metallireducens GS-15", 
 "^ot:treebaseOTUId": "Tl1274340"
 }, 
 "otu410961": {
@@ -1546,8 +1527,8 @@
 }, 
 "otu410967": {
 "^ot:originalLabel": "Nitrobacter winogradskyi Nb 255", 
-"^ot:ottId": 831090, 
-"^ot:ottTaxonName": "Nitrobacter winogradskyi", 
+"^ot:ottId": 174852, 
+"^ot:ottTaxonName": "Nitrobacter winogradskyi Nb-255", 
 "^ot:treebaseOTUId": "Tl1274347"
 }, 
 "otu410968": {
@@ -1558,8 +1539,8 @@
 }, 
 "otu410969": {
 "^ot:originalLabel": "Klebsiella variicola At 22", 
-"^ot:ottId": 1020707, 
-"^ot:ottTaxonName": "Klebsiella variicola", 
+"^ot:ottId": 116681, 
+"^ot:ottTaxonName": "Klebsiella variicola At-22", 
 "^ot:treebaseOTUId": "Tl1274349"
 }, 
 "otu410970": {
@@ -1594,8 +1575,8 @@
 }, 
 "otu410975": {
 "^ot:originalLabel": "Rickettsia rickettsii str. Sheila Smith", 
-"^ot:ottId": 320603, 
-"^ot:ottTaxonName": "Rickettsia rickettsii", 
+"^ot:ottId": 621256, 
+"^ot:ottTaxonName": "Rickettsia rickettsii str. 'Sheila Smith'", 
 "^ot:treebaseOTUId": "Tl1274355"
 }, 
 "otu410976": {
@@ -1612,8 +1593,8 @@
 }, 
 "otu410978": {
 "^ot:originalLabel": "Pseudomonas fluorescens Pf 5", 
-"^ot:ottId": 1017443, 
-"^ot:ottTaxonName": "Pseudomonas fluorescens", 
+"^ot:ottId": 437023, 
+"^ot:ottTaxonName": "Pseudomonas protegens Pf-5", 
 "^ot:treebaseOTUId": "Tl1274358"
 }, 
 "otu410979": {
@@ -1654,8 +1635,8 @@
 }, 
 "otu410985": {
 "^ot:originalLabel": "Acidiphilium cryptum JF 5", 
-"^ot:ottId": 373591, 
-"^ot:ottTaxonName": "Acidiphilium cryptum", 
+"^ot:ottId": 435499, 
+"^ot:ottTaxonName": "Acidiphilium cryptum JF-5", 
 "^ot:treebaseOTUId": "Tl1274365"
 }, 
 "otu410986": {
@@ -1666,12 +1647,14 @@
 }, 
 "otu410987": {
 "^ot:originalLabel": "Stenotrophomonas maltophilia R551 3", 
-"^ot:ottId": 433504, 
-"^ot:ottTaxonName": "Stenotrophomonas maltophilia", 
+"^ot:ottId": 389587, 
+"^ot:ottTaxonName": "Stenotrophomonas maltophilia R551-3", 
 "^ot:treebaseOTUId": "Tl1274367"
 }, 
 "otu410988": {
 "^ot:originalLabel": "Clostridium difficile 630", 
+"^ot:ottId": 953193, 
+"^ot:ottTaxonName": "Clostridium difficile 630", 
 "^ot:treebaseOTUId": "Tl1274368"
 }, 
 "otu410989": {
@@ -1718,8 +1701,8 @@
 }, 
 "otu410996": {
 "^ot:originalLabel": "Citrobacter koseri ATCC BAA 895", 
-"^ot:ottId": 424070, 
-"^ot:ottTaxonName": "Citrobacter koseri", 
+"^ot:ottId": 16131, 
+"^ot:ottTaxonName": "Citrobacter koseri ATCC BAA-895", 
 "^ot:treebaseOTUId": "Tl1274376"
 }, 
 "otu410997": {
@@ -1730,14 +1713,14 @@
 }, 
 "otu410998": {
 "^ot:originalLabel": "Paracoccus denitrificans str. PD1222", 
-"^ot:ottId": 850956, 
-"^ot:ottTaxonName": "Paracoccus denitrificans", 
+"^ot:ottId": 215157, 
+"^ot:ottTaxonName": "Paracoccus denitrificans PD1222", 
 "^ot:treebaseOTUId": "Tl1274378"
 }, 
 "otu410999": {
 "^ot:originalLabel": "Flavobacterium psychrophilum JIP02 86", 
-"^ot:ottId": 629224, 
-"^ot:ottTaxonName": "Flavobacterium psychrophilum", 
+"^ot:ottId": 268513, 
+"^ot:ottTaxonName": "Flavobacterium psychrophilum JIP02/86", 
 "^ot:treebaseOTUId": "Tl1274379"
 }, 
 "otu411000": {
@@ -1766,8 +1749,8 @@
 }, 
 "otu411004": {
 "^ot:originalLabel": "Rickettsia africae ESF 5", 
-"^ot:ottId": 863997, 
-"^ot:ottTaxonName": "Rickettsia africae", 
+"^ot:ottId": 468613, 
+"^ot:ottTaxonName": "Rickettsia africae ESF-5", 
 "^ot:treebaseOTUId": "Tl1274384"
 }, 
 "otu411005": {
@@ -1784,6 +1767,8 @@
 }, 
 "otu411007": {
 "^ot:originalLabel": "Photobacterium profundum SS9", 
+"^ot:ottId": 267673, 
+"^ot:ottTaxonName": "Photobacterium profundum SS9", 
 "^ot:treebaseOTUId": "Tl1274387"
 }, 
 "otu411008": {
@@ -1932,8 +1917,8 @@
 }, 
 "otu411032": {
 "^ot:originalLabel": "Comamonas testosteroni CNB 2", 
-"^ot:ottId": 491256, 
-"^ot:ottTaxonName": "Comamonas testosteroni", 
+"^ot:ottId": 705173, 
+"^ot:ottTaxonName": "Comamonas testosteroni CNB-2", 
 "^ot:treebaseOTUId": "Tl1274412"
 }, 
 "otu411033": {
@@ -1992,8 +1977,6 @@
 }, 
 "otu411042": {
 "^ot:originalLabel": "Burkholderia sp. 383", 
-"^ot:ottId": 509263, 
-"^ot:ottTaxonName": "Burkholderia lata", 
 "^ot:treebaseOTUId": "Tl1274422"
 }, 
 "otu411043": {
@@ -2046,6 +2029,8 @@
 }, 
 "otu411051": {
 "^ot:originalLabel": "Escherichia coli str. IAI39", 
+"^ot:ottId": 56097, 
+"^ot:ottTaxonName": "Escherichia coli IAI39", 
 "^ot:treebaseOTUId": "Tl1274431"
 }, 
 "otu411052": {
@@ -2056,8 +2041,8 @@
 }, 
 "otu411053": {
 "^ot:originalLabel": "Shewanella putrefaciens CN 32", 
-"^ot:ottId": 1007085, 
-"^ot:ottTaxonName": "Shewanella putrefaciens", 
+"^ot:ottId": 377327, 
+"^ot:ottTaxonName": "Shewanella putrefaciens CN-32", 
 "^ot:treebaseOTUId": "Tl1274433"
 }, 
 "otu411054": {
@@ -2104,8 +2089,8 @@
 }, 
 "otu411061": {
 "^ot:originalLabel": "Desulfatibacillum alkenivorans AK 01", 
-"^ot:ottId": 794321, 
-"^ot:ottTaxonName": "Desulfatibacillum alkenivorans", 
+"^ot:ottId": 712705, 
+"^ot:ottTaxonName": "Desulfatibacillum alkenivorans AK-01", 
 "^ot:treebaseOTUId": "Tl1274441"
 }, 
 "otu411062": {
@@ -2128,8 +2113,8 @@
 }, 
 "otu411065": {
 "^ot:originalLabel": "Erwinia pyrifoliae Ep1 96", 
-"^ot:ottId": 985234, 
-"^ot:ottTaxonName": "Erwinia pyrifoliae", 
+"^ot:ottId": 508173, 
+"^ot:ottTaxonName": "Erwinia pyrifoliae Ep1/96", 
 "^ot:treebaseOTUId": "Tl1274445"
 }, 
 "otu411066": {
@@ -2140,8 +2125,8 @@
 }, 
 "otu411067": {
 "^ot:originalLabel": "Zymomonas mobilis subsp. mobilis NCIB-11163", 
-"^ot:ottId": 424000, 
-"^ot:ottTaxonName": "Zymomonas mobilis", 
+"^ot:ottId": 26197, 
+"^ot:ottTaxonName": "Zymomonas mobilis subsp. mobilis NCIMB 11163", 
 "^ot:treebaseOTUId": "Tl1274447"
 }, 
 "otu411068": {
@@ -2212,8 +2197,8 @@
 }, 
 "otu411079": {
 "^ot:originalLabel": "Rickettsia bellii RML369 C", 
-"^ot:ottId": 143929, 
-"^ot:ottTaxonName": "Rickettsia bellii", 
+"^ot:ottId": 415258, 
+"^ot:ottTaxonName": "Rickettsia bellii RML369-C", 
 "^ot:treebaseOTUId": "Tl1274459"
 }, 
 "otu411080": {
@@ -2248,6 +2233,8 @@
 }, 
 "otu411085": {
 "^ot:originalLabel": "Candidatus Vesicomyosocius okutanii HA", 
+"^ot:ottId": 4790546, 
+"^ot:ottTaxonName": "Candidatus Vesicomyosocius okutanii HA", 
 "^ot:treebaseOTUId": "Tl1274465"
 }, 
 "otu411086": {
@@ -2270,6 +2257,8 @@
 }, 
 "otu411089": {
 "^ot:originalLabel": "Escherichia coli O111 H  str 11128", 
+"^ot:ottId": 997143, 
+"^ot:ottTaxonName": "Escherichia coli O111", 
 "^ot:treebaseOTUId": "Tl1274469"
 }, 
 "otu411090": {
@@ -2286,6 +2275,8 @@
 }, 
 "otu411092": {
 "^ot:originalLabel": "Thiomonas intermedia K12", 
+"^ot:ottId": 4775969, 
+"^ot:ottTaxonName": "Thiomonas intermedia K12", 
 "^ot:treebaseOTUId": "Tl1274472"
 }, 
 "otu411093": {
@@ -2314,8 +2305,8 @@
 }, 
 "otu411097": {
 "^ot:originalLabel": "Francisella tularensis subsp. novicida U112", 
-"^ot:ottId": 850936, 
-"^ot:ottTaxonName": "Francisella tularensis", 
+"^ot:ottId": 359436, 
+"^ot:ottTaxonName": "Francisella novicida U112", 
 "^ot:treebaseOTUId": "Tl1274477"
 }, 
 "otu411098": {
@@ -2348,14 +2339,14 @@
 }, 
 "otu411103": {
 "^ot:originalLabel": "Shewanella oneidensis MR 1", 
-"^ot:ottId": 25377, 
-"^ot:ottTaxonName": "Shewanella oneidensis", 
+"^ot:ottId": 761824, 
+"^ot:ottTaxonName": "Shewanella oneidensis MR-1", 
 "^ot:treebaseOTUId": "Tl1274483"
 }, 
 "otu411104": {
 "^ot:originalLabel": "Edwardsiella ictaluri 93 146", 
-"^ot:ottId": 174517, 
-"^ot:ottTaxonName": "Edwardsiella ictaluri", 
+"^ot:ottId": 1098499, 
+"^ot:ottTaxonName": "Edwardsiella ictaluri 93-146", 
 "^ot:treebaseOTUId": "Tl1274484"
 }, 
 "otu411105": {
@@ -2414,8 +2405,8 @@
 }, 
 "otu411114": {
 "^ot:originalLabel": "Lawsonia intracellularis PHE MN1 00", 
-"^ot:ottId": 457126, 
-"^ot:ottTaxonName": "Lawsonia intracellularis", 
+"^ot:ottId": 731046, 
+"^ot:ottTaxonName": "Lawsonia intracellularis PHE/MN1-00", 
 "^ot:treebaseOTUId": "Tl1274494"
 }, 
 "otu411115": {
@@ -2450,8 +2441,8 @@
 }, 
 "otu411120": {
 "^ot:originalLabel": "Vibrio harveyi ATCC BAA 1116", 
-"^ot:ottId": 79549, 
-"^ot:ottTaxonName": "Vibrio harveyi", 
+"^ot:ottId": 358284, 
+"^ot:ottTaxonName": "Vibrio campbellii ATCC BAA-1116", 
 "^ot:treebaseOTUId": "Tl1274500"
 }, 
 "otu411121": {
@@ -2468,8 +2459,8 @@
 }, 
 "otu411123": {
 "^ot:originalLabel": "Streptomyces coelicolor A3 2", 
-"^ot:ottId": 102276, 
-"^ot:ottTaxonName": "Streptomyces coelicolor", 
+"^ot:ottId": 954695, 
+"^ot:ottTaxonName": "Streptomyces coelicolor A3(2)", 
 "^ot:treebaseOTUId": "Tl1274503"
 }, 
 "otu411124": {
@@ -2508,10 +2499,15 @@
 "treeById": {
 "tree6369": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
 "^ot:branchLengthMode": "ot:substitutionCount", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "con 50 majrule", 
-"^ot:inGroupClade": "node1108037", 
+"^ot:inGroupClade": "node1108043", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node1108033", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node1108033": {
 "edge1108034": {

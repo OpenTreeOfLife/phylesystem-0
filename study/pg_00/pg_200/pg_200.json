@@ -19,48 +19,11 @@
 "@id": "peyotl-validator", 
 "@name": "validate_ot_nexson.py", 
 "@url": "https://github.com/OpenTreeOfLife/peyotl", 
-"@version": "0.0.3a", 
+"@version": "0.0.4a", 
 "invocation": {
-"checksPerformed": [
-"MISSING_MANDATORY_KEY", 
-"MISSING_OPTIONAL_KEY", 
-"UNRECOGNIZED_KEY", 
-"MISSING_LIST_EXPECTED", 
-"DUPLICATING_SINGLETON_KEY", 
-"REFERENCED_ID_NOT_FOUND", 
-"REPEATED_ID", 
-"REPEATED_OTU", 
-"MULTIPLE_ROOT_NODES", 
-"NO_ROOT_NODE", 
-"MULTIPLE_EDGES_FOR_NODES", 
-"CYCLE_DETECTED", 
-"DISCONNECTED_GRAPH_DETECTED", 
-"INCORRECT_ROOT_NODE_LABEL", 
-"TIP_WITHOUT_OTU", 
-"TIP_WITHOUT_OTT_ID", 
-"MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
-"NON_MONOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
-"INVALID_PROPERTY_VALUE", 
-"PROPERTY_VALUE_NOT_USEFUL", 
-"UNRECOGNIZED_PROPERTY_VALUE", 
-"MULTIPLE_TREES", 
-"UNRECOGNIZED_TAG", 
-"CONFLICTING_PROPERTY_VALUES", 
-"NO_TREES", 
-"DEPRECATED_PROPERTY", 
-"UNPARSEABLE_META", 
-"UNREACHABLE_NODE", 
-"INCORRECT_VALUE_TYPE", 
-"MISSING_CRUCIAL_CONTENT"
-], 
 "commandLine": [
 "--embed", 
-"--agent-only", 
-"-e", 
-"../mig-phyelesystem-scratch/200/validation.json", 
-"-o", 
-"../mig-phyelesystem-scratch/200/final.json", 
-"../mig-phyelesystem-scratch/200/v1.2.1-200.json"
+"--agent-only"
 ], 
 "otherProperty": [
 {
@@ -76,12 +39,19 @@
 }
 ]
 }, 
+"^ot:annotationEvents": {
+"annotation": []
+}, 
+"^ot:candidateTreeForSynthesis": [], 
 "^ot:curatorName": "William Wysocki", 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S1722"
 }, 
 "^ot:focalClade": 976278, 
 "^ot:focalCladeOTTTaxonName": "Encelia", 
+"^ot:messages": {
+"message": []
+}, 
 "^ot:otusElementOrder": [
 "otus200"
 ], 
@@ -91,6 +61,7 @@
 }, 
 "^ot:studyPublicationReference": "Fehlberg, S. D., & Ranker, T. A. (2007). Phylogeny and biogeography of Encelia (Asteraceae) in the sonoran and peninsular deserts based on multiple DNA sequences. Systematic Botany, 32(3), 692-699.", 
 "^ot:studyYear": 2007, 
+"^ot:tag": [], 
 "^ot:treesElementOrder": [
 "trees200"
 ], 
@@ -128,15 +99,15 @@
 "^ot:treebaseOTUId": "Tl43557"
 }, 
 "otu376279": {
-"^ot:altLabel": "Enceliopsis nutans", 
 "^ot:originalLabel": "Enceliopsis nutans 2", 
 "^ot:ottId": 169654, 
+"^ot:ottTaxonName": "Enceliopsis nutans", 
 "^ot:treebaseOTUId": "Tl43558"
 }, 
 "otu376280": {
-"^ot:altLabel": "Encelia virginensis", 
 "^ot:originalLabel": "Encelia virginensis 1", 
 "^ot:ottId": 743958, 
+"^ot:ottTaxonName": "Encelia virginensis", 
 "^ot:treebaseOTUId": "Tl43559"
 }, 
 "otu376281": {
@@ -152,9 +123,9 @@
 "^ot:treebaseOTUId": "Tl43561"
 }, 
 "otu376283": {
-"^ot:altLabel": "Encelia frutescens", 
 "^ot:originalLabel": "Encelia frutescens 1", 
 "^ot:ottId": 380841, 
+"^ot:ottTaxonName": "Encelia frutescens", 
 "^ot:treebaseOTUId": "Tl43562"
 }, 
 "otu376284": {
@@ -164,9 +135,9 @@
 "^ot:treebaseOTUId": "Tl43563"
 }, 
 "otu376285": {
-"^ot:altLabel": "Encelia asperifolia", 
 "^ot:originalLabel": "Encelia asperifolia 2", 
 "^ot:ottId": 743964, 
+"^ot:ottTaxonName": "Encelia asperifolia", 
 "^ot:treebaseOTUId": "Tl43564"
 }, 
 "otu376286": {
@@ -236,9 +207,9 @@
 "^ot:treebaseOTUId": "Tl43575"
 }, 
 "otu376297": {
-"^ot:altLabel": "Encelia ventorum", 
 "^ot:originalLabel": "Encelia ventorum 2", 
 "^ot:ottId": 380851, 
+"^ot:ottTaxonName": "Encelia ventorum", 
 "^ot:treebaseOTUId": "Tl43576"
 }, 
 "otu376298": {
@@ -336,14 +307,21 @@
 "trees200": {
 "@otus": "otus200", 
 "^ot:treeElementOrder": [
-"tree5862"
+"tree5862", 
+"tree6585"
 ], 
 "treeById": {
 "tree5862": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "Fig. 1", 
 "^ot:inGroupClade": "node998852", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node998850", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node998850": {
 "edge998851": {
@@ -777,6 +755,454 @@
 "@otu": "otu376305"
 }, 
 "node998911": {
+"@otu": "otu376312"
+}
+}
+}, 
+"tree6585": {
+"@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
+"^ot:curatedType": "no internal names", 
+"^ot:inGroupClade": "node1145007", 
+"^ot:outGroupEdge": "", 
+"^ot:rootNodeId": "node1145004", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
+"edgeBySourceId": {
+"node1145004": {
+"edge1145005": {
+"@source": "node1145004", 
+"@target": "node1145005"
+}, 
+"edge1145063": {
+"@source": "node1145004", 
+"@target": "node1145063"
+}
+}, 
+"node1145005": {
+"edge1145006": {
+"@source": "node1145005", 
+"@target": "node1145006"
+}, 
+"edge1145062": {
+"@source": "node1145005", 
+"@target": "node1145062"
+}
+}, 
+"node1145006": {
+"edge1145007": {
+"@source": "node1145006", 
+"@target": "node1145007"
+}, 
+"edge1145049": {
+"@source": "node1145006", 
+"@target": "node1145049"
+}
+}, 
+"node1145007": {
+"edge1145008": {
+"@source": "node1145007", 
+"@target": "node1145008"
+}, 
+"edge1145018": {
+"@source": "node1145007", 
+"@target": "node1145018"
+}
+}, 
+"node1145008": {
+"edge1145009": {
+"@source": "node1145008", 
+"@target": "node1145009"
+}, 
+"edge1145017": {
+"@source": "node1145008", 
+"@target": "node1145017"
+}
+}, 
+"node1145009": {
+"edge1145010": {
+"@source": "node1145009", 
+"@target": "node1145010"
+}, 
+"edge1145011": {
+"@source": "node1145009", 
+"@target": "node1145011"
+}, 
+"edge1145012": {
+"@source": "node1145009", 
+"@target": "node1145012"
+}, 
+"edge1145013": {
+"@source": "node1145009", 
+"@target": "node1145013"
+}, 
+"edge1145014": {
+"@source": "node1145009", 
+"@target": "node1145014"
+}
+}, 
+"node1145014": {
+"edge1145015": {
+"@source": "node1145014", 
+"@target": "node1145015"
+}, 
+"edge1145016": {
+"@source": "node1145014", 
+"@target": "node1145016"
+}
+}, 
+"node1145018": {
+"edge1145019": {
+"@source": "node1145018", 
+"@target": "node1145019"
+}, 
+"edge1145048": {
+"@source": "node1145018", 
+"@target": "node1145048"
+}
+}, 
+"node1145019": {
+"edge1145020": {
+"@source": "node1145019", 
+"@target": "node1145020"
+}, 
+"edge1145047": {
+"@source": "node1145019", 
+"@target": "node1145047"
+}
+}, 
+"node1145020": {
+"edge1145021": {
+"@source": "node1145020", 
+"@target": "node1145021"
+}, 
+"edge1145040": {
+"@source": "node1145020", 
+"@target": "node1145040"
+}
+}, 
+"node1145021": {
+"edge1145022": {
+"@source": "node1145021", 
+"@target": "node1145022"
+}, 
+"edge1145029": {
+"@source": "node1145021", 
+"@target": "node1145029"
+}, 
+"edge1145038": {
+"@source": "node1145021", 
+"@target": "node1145038"
+}, 
+"edge1145039": {
+"@source": "node1145021", 
+"@target": "node1145039"
+}
+}, 
+"node1145022": {
+"edge1145023": {
+"@source": "node1145022", 
+"@target": "node1145023"
+}, 
+"edge1145026": {
+"@source": "node1145022", 
+"@target": "node1145026"
+}
+}, 
+"node1145023": {
+"edge1145024": {
+"@source": "node1145023", 
+"@target": "node1145024"
+}, 
+"edge1145025": {
+"@source": "node1145023", 
+"@target": "node1145025"
+}
+}, 
+"node1145026": {
+"edge1145027": {
+"@source": "node1145026", 
+"@target": "node1145027"
+}, 
+"edge1145028": {
+"@source": "node1145026", 
+"@target": "node1145028"
+}
+}, 
+"node1145029": {
+"edge1145030": {
+"@source": "node1145029", 
+"@target": "node1145030"
+}, 
+"edge1145033": {
+"@source": "node1145029", 
+"@target": "node1145033"
+}
+}, 
+"node1145030": {
+"edge1145031": {
+"@source": "node1145030", 
+"@target": "node1145031"
+}, 
+"edge1145032": {
+"@source": "node1145030", 
+"@target": "node1145032"
+}
+}, 
+"node1145033": {
+"edge1145034": {
+"@source": "node1145033", 
+"@target": "node1145034"
+}, 
+"edge1145037": {
+"@source": "node1145033", 
+"@target": "node1145037"
+}
+}, 
+"node1145034": {
+"edge1145035": {
+"@source": "node1145034", 
+"@target": "node1145035"
+}, 
+"edge1145036": {
+"@source": "node1145034", 
+"@target": "node1145036"
+}
+}, 
+"node1145040": {
+"edge1145041": {
+"@source": "node1145040", 
+"@target": "node1145041"
+}, 
+"edge1145042": {
+"@source": "node1145040", 
+"@target": "node1145042"
+}
+}, 
+"node1145042": {
+"edge1145043": {
+"@source": "node1145042", 
+"@target": "node1145043"
+}, 
+"edge1145044": {
+"@source": "node1145042", 
+"@target": "node1145044"
+}
+}, 
+"node1145044": {
+"edge1145045": {
+"@source": "node1145044", 
+"@target": "node1145045"
+}, 
+"edge1145046": {
+"@source": "node1145044", 
+"@target": "node1145046"
+}
+}, 
+"node1145049": {
+"edge1145050": {
+"@source": "node1145049", 
+"@target": "node1145050"
+}, 
+"edge1145059": {
+"@source": "node1145049", 
+"@target": "node1145059"
+}
+}, 
+"node1145050": {
+"edge1145051": {
+"@source": "node1145050", 
+"@target": "node1145051"
+}, 
+"edge1145058": {
+"@source": "node1145050", 
+"@target": "node1145058"
+}
+}, 
+"node1145051": {
+"edge1145052": {
+"@source": "node1145051", 
+"@target": "node1145052"
+}, 
+"edge1145055": {
+"@source": "node1145051", 
+"@target": "node1145055"
+}
+}, 
+"node1145052": {
+"edge1145053": {
+"@source": "node1145052", 
+"@target": "node1145053"
+}, 
+"edge1145054": {
+"@source": "node1145052", 
+"@target": "node1145054"
+}
+}, 
+"node1145055": {
+"edge1145056": {
+"@source": "node1145055", 
+"@target": "node1145056"
+}, 
+"edge1145057": {
+"@source": "node1145055", 
+"@target": "node1145057"
+}
+}, 
+"node1145059": {
+"edge1145060": {
+"@source": "node1145059", 
+"@target": "node1145060"
+}, 
+"edge1145061": {
+"@source": "node1145059", 
+"@target": "node1145061"
+}
+}, 
+"node1145063": {
+"edge1145064": {
+"@source": "node1145063", 
+"@target": "node1145064"
+}, 
+"edge1145065": {
+"@source": "node1145063", 
+"@target": "node1145065"
+}
+}
+}, 
+"nodeById": {
+"node1145004": {
+"@root": true
+}, 
+"node1145005": {}, 
+"node1145006": {}, 
+"node1145007": {}, 
+"node1145008": {}, 
+"node1145009": {}, 
+"node1145010": {
+"@otu": "otu376286"
+}, 
+"node1145011": {
+"@otu": "otu376306"
+}, 
+"node1145012": {
+"@otu": "otu376293"
+}, 
+"node1145013": {
+"@otu": "otu376302"
+}, 
+"node1145014": {}, 
+"node1145015": {
+"@otu": "otu376308"
+}, 
+"node1145016": {
+"@otu": "otu376304"
+}, 
+"node1145017": {
+"@otu": "otu376309"
+}, 
+"node1145018": {}, 
+"node1145019": {}, 
+"node1145020": {}, 
+"node1145021": {}, 
+"node1145022": {}, 
+"node1145023": {}, 
+"node1145024": {
+"@otu": "otu376296"
+}, 
+"node1145025": {
+"@otu": "otu376292"
+}, 
+"node1145026": {}, 
+"node1145027": {
+"@otu": "otu376303"
+}, 
+"node1145028": {
+"@otu": "otu376295"
+}, 
+"node1145029": {}, 
+"node1145030": {}, 
+"node1145031": {
+"@otu": "otu376289"
+}, 
+"node1145032": {
+"@otu": "otu376277"
+}, 
+"node1145033": {}, 
+"node1145034": {}, 
+"node1145035": {
+"@otu": "otu376276"
+}, 
+"node1145036": {
+"@otu": "otu376288"
+}, 
+"node1145037": {
+"@otu": "otu376278"
+}, 
+"node1145038": {
+"@otu": "otu376298"
+}, 
+"node1145039": {
+"@otu": "otu376290"
+}, 
+"node1145040": {}, 
+"node1145041": {
+"@otu": "otu376287"
+}, 
+"node1145042": {}, 
+"node1145043": {
+"@otu": "otu376307"
+}, 
+"node1145044": {}, 
+"node1145045": {
+"@otu": "otu376294"
+}, 
+"node1145046": {
+"@otu": "otu376284"
+}, 
+"node1145047": {
+"@otu": "otu376300"
+}, 
+"node1145048": {
+"@otu": "otu376274"
+}, 
+"node1145049": {}, 
+"node1145050": {}, 
+"node1145051": {}, 
+"node1145052": {}, 
+"node1145053": {
+"@otu": "otu376299"
+}, 
+"node1145054": {
+"@otu": "otu376275"
+}, 
+"node1145055": {}, 
+"node1145056": {
+"@otu": "otu376291"
+}, 
+"node1145057": {
+"@otu": "otu376281"
+}, 
+"node1145058": {
+"@otu": "otu376311"
+}, 
+"node1145059": {}, 
+"node1145060": {
+"@otu": "otu376282"
+}, 
+"node1145061": {
+"@otu": "otu376301"
+}, 
+"node1145062": {
+"@otu": "otu376310"
+}, 
+"node1145063": {}, 
+"node1145064": {
+"@otu": "otu376305"
+}, 
+"node1145065": {
 "@otu": "otu376312"
 }
 }

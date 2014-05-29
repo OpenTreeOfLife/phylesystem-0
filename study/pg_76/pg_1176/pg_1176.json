@@ -19,48 +19,11 @@
 "@id": "peyotl-validator", 
 "@name": "validate_ot_nexson.py", 
 "@url": "https://github.com/OpenTreeOfLife/peyotl", 
-"@version": "0.0.3a", 
+"@version": "0.0.4a", 
 "invocation": {
-"checksPerformed": [
-"MISSING_MANDATORY_KEY", 
-"MISSING_OPTIONAL_KEY", 
-"UNRECOGNIZED_KEY", 
-"MISSING_LIST_EXPECTED", 
-"DUPLICATING_SINGLETON_KEY", 
-"REFERENCED_ID_NOT_FOUND", 
-"REPEATED_ID", 
-"REPEATED_OTU", 
-"MULTIPLE_ROOT_NODES", 
-"NO_ROOT_NODE", 
-"MULTIPLE_EDGES_FOR_NODES", 
-"CYCLE_DETECTED", 
-"DISCONNECTED_GRAPH_DETECTED", 
-"INCORRECT_ROOT_NODE_LABEL", 
-"TIP_WITHOUT_OTU", 
-"TIP_WITHOUT_OTT_ID", 
-"MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
-"NON_MONOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
-"INVALID_PROPERTY_VALUE", 
-"PROPERTY_VALUE_NOT_USEFUL", 
-"UNRECOGNIZED_PROPERTY_VALUE", 
-"MULTIPLE_TREES", 
-"UNRECOGNIZED_TAG", 
-"CONFLICTING_PROPERTY_VALUES", 
-"NO_TREES", 
-"DEPRECATED_PROPERTY", 
-"UNPARSEABLE_META", 
-"UNREACHABLE_NODE", 
-"INCORRECT_VALUE_TYPE", 
-"MISSING_CRUCIAL_CONTENT"
-], 
 "commandLine": [
 "--embed", 
-"--agent-only", 
-"-e", 
-"../mig-phyelesystem-scratch/1176/validation.json", 
-"-o", 
-"../mig-phyelesystem-scratch/1176/final.json", 
-"../mig-phyelesystem-scratch/1176/v1.2.1-1176.json"
+"--agent-only"
 ], 
 "otherProperty": [
 {
@@ -76,9 +39,16 @@
 }
 ]
 }, 
+"^ot:annotationEvents": {
+"annotation": []
+}, 
+"^ot:candidateTreeForSynthesis": [], 
 "^ot:curatorName": "Romina Gazis", 
 "^ot:focalClade": 464790, 
 "^ot:focalCladeOTTTaxonName": "Alternaria", 
+"^ot:messages": {
+"message": []
+}, 
 "^ot:otusElementOrder": [
 "otus1176"
 ], 
@@ -88,6 +58,7 @@
 }, 
 "^ot:studyPublicationReference": "Pryor, Barry M., and Robert L. Gilbertson. \"Molecular phylogenetic relationships amongst< i> Alternaria</i> species and related fungi based upon analysis of nuclear ITS and mt SSU rDNA sequences.\" Mycological Research 104.11 (2000): 1312-1321.", 
 "^ot:studyYear": 2000, 
+"^ot:tag": [], 
 "^ot:treesElementOrder": [
 "trees1176"
 ], 
@@ -100,7 +71,9 @@
 "^ot:ottTaxonName": "Setosphaeria pedicellata"
 }, 
 "otu229628": {
-"^ot:originalLabel": "Bipolaris tetramera"
+"^ot:originalLabel": "Bipolaris tetramera", 
+"^ot:ottId": 5318815, 
+"^ot:ottTaxonName": "Cochliobolus spicifer"
 }, 
 "otu229629": {
 "^ot:originalLabel": "Pleospora herbarum GB4", 
@@ -363,7 +336,9 @@
 "^ot:ottTaxonName": "Lasiodiplodia theobromae"
 }, 
 "otu229681": {
-"^ot:originalLabel": "Dothidea hippophaeos"
+"^ot:originalLabel": "Dothidea hippophaeos", 
+"^ot:ottId": 3717635, 
+"^ot:ottTaxonName": "Dothidea hippophaes"
 }, 
 "otu229682": {
 "^ot:originalLabel": "Sporomia lignicola", 
@@ -384,7 +359,9 @@
 "^ot:ottTaxonName": "Cucurbitaria berberidis"
 }, 
 "otu229686": {
-"^ot:originalLabel": "Alternaria longissima"
+"^ot:originalLabel": "Alternaria longissima", 
+"^ot:ottId": 5318861, 
+"^ot:ottTaxonName": "Prathoda longissima"
 }, 
 "otu229687": {
 "^ot:originalLabel": "Leptosphaeria maculans", 
@@ -412,7 +389,9 @@
 "^ot:ottTaxonName": "Setosphaeria rostrata"
 }, 
 "otu229692": {
-"^ot:originalLabel": "Pyrenophora tricostoma"
+"^ot:originalLabel": "Pyrenophora tricostoma", 
+"^ot:ottId": 85506, 
+"^ot:ottTaxonName": "Pyrenophora tritici-repentis"
 }, 
 "otu229693": {
 "^ot:originalLabel": "Pyrenophora tritici-repentis", 
@@ -438,9 +417,15 @@
 "treeById": {
 "tree2377": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "NJ, ITS", 
 "^ot:inGroupClade": "node557256", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node557252", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node557252": {
 "edge557253": {
@@ -1083,9 +1068,15 @@
 }, 
 "tree2378": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "NJ, SSU", 
 "^ot:inGroupClade": "node557345", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node557343", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node557343": {
 "edge557344": {
@@ -1490,9 +1481,15 @@
 }, 
 "tree2379": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "MP, SSU", 
 "^ot:inGroupClade": "node557402", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node557400", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node557400": {
 "edge557401": {

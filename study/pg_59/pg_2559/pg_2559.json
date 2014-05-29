@@ -19,48 +19,11 @@
 "@id": "peyotl-validator", 
 "@name": "validate_ot_nexson.py", 
 "@url": "https://github.com/OpenTreeOfLife/peyotl", 
-"@version": "0.0.3a", 
+"@version": "0.0.4a", 
 "invocation": {
-"checksPerformed": [
-"MISSING_MANDATORY_KEY", 
-"MISSING_OPTIONAL_KEY", 
-"UNRECOGNIZED_KEY", 
-"MISSING_LIST_EXPECTED", 
-"DUPLICATING_SINGLETON_KEY", 
-"REFERENCED_ID_NOT_FOUND", 
-"REPEATED_ID", 
-"REPEATED_OTU", 
-"MULTIPLE_ROOT_NODES", 
-"NO_ROOT_NODE", 
-"MULTIPLE_EDGES_FOR_NODES", 
-"CYCLE_DETECTED", 
-"DISCONNECTED_GRAPH_DETECTED", 
-"INCORRECT_ROOT_NODE_LABEL", 
-"TIP_WITHOUT_OTU", 
-"TIP_WITHOUT_OTT_ID", 
-"MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
-"NON_MONOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
-"INVALID_PROPERTY_VALUE", 
-"PROPERTY_VALUE_NOT_USEFUL", 
-"UNRECOGNIZED_PROPERTY_VALUE", 
-"MULTIPLE_TREES", 
-"UNRECOGNIZED_TAG", 
-"CONFLICTING_PROPERTY_VALUES", 
-"NO_TREES", 
-"DEPRECATED_PROPERTY", 
-"UNPARSEABLE_META", 
-"UNREACHABLE_NODE", 
-"INCORRECT_VALUE_TYPE", 
-"MISSING_CRUCIAL_CONTENT"
-], 
 "commandLine": [
 "--embed", 
-"--agent-only", 
-"-e", 
-"../mig-phyelesystem-scratch/2559/validation.json", 
-"-o", 
-"../mig-phyelesystem-scratch/2559/final.json", 
-"../mig-phyelesystem-scratch/2559/v1.2.1-2559.json"
+"--agent-only"
 ], 
 "otherProperty": [
 {
@@ -76,18 +39,26 @@
 }
 ]
 }, 
+"^ot:annotationEvents": {
+"annotation": []
+}, 
+"^ot:candidateTreeForSynthesis": [], 
 "^ot:curatorName": "Romina Gazis", 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S13396"
 }, 
 "^ot:focalClade": 1051895, 
 "^ot:focalCladeOTTTaxonName": "Wallemiomycetes", 
+"^ot:messages": {
+"message": []
+}, 
 "^ot:otusElementOrder": [
 "otus2559"
 ], 
 "^ot:studyId": "2559", 
 "^ot:studyPublicationReference": "Nguyen H., Nickerson N., & Seifert K. 2013. Basidioascus and Geminibasidium: a new lineage of heat resistant and xerotolerant basidiomycetes. Mycologia, .", 
 "^ot:studyYear": 2013, 
+"^ot:tag": [], 
 "^ot:treesElementOrder": [
 "trees2559"
 ], 
@@ -114,6 +85,8 @@
 }, 
 "otu372942": {
 "^ot:originalLabel": "Exidia uvapsassa", 
+"^ot:ottId": 3799701, 
+"^ot:ottTaxonName": "Exidia uvapassa", 
 "^ot:treebaseOTUId": "Tl1116791"
 }, 
 "otu372943": {
@@ -566,6 +539,8 @@
 }, 
 "otu373023": {
 "^ot:originalLabel": "Geminibasidium donsium KIKOKU", 
+"^ot:ottId": 4094765, 
+"^ot:ottTaxonName": "Geminibasidium donsium", 
 "^ot:treebaseOTUId": "Tl1116872"
 }, 
 "otu373024": {
@@ -709,8 +684,14 @@
 "treeById": {
 "tree5660": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "BI, SSU + 5.8S + LSU", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node976790", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node976790": {
 "edge976791": {
@@ -1859,8 +1840,14 @@
 }, 
 "tree5661": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "BI, ITS", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node976933", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node976933": {
 "edge976934": {
@@ -2473,10 +2460,17 @@
 }, 
 "tree5662": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "BI, SSU + 5.8S + LSU", 
 "^ot:inGroupClade": "node977017", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node977009", 
-"^ot:tag": "5.8S", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [
+"5.8S"
+], 
 "edgeBySourceId": {
 "node977009": {
 "edge977010": {
@@ -3625,9 +3619,15 @@
 }, 
 "tree5663": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "BI, ITS", 
 "^ot:inGroupClade": "node977156", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node977152", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node977152": {
 "edge977153": {

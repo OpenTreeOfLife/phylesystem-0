@@ -19,48 +19,11 @@
 "@id": "peyotl-validator", 
 "@name": "validate_ot_nexson.py", 
 "@url": "https://github.com/OpenTreeOfLife/peyotl", 
-"@version": "0.0.3a", 
+"@version": "0.0.4a", 
 "invocation": {
-"checksPerformed": [
-"MISSING_MANDATORY_KEY", 
-"MISSING_OPTIONAL_KEY", 
-"UNRECOGNIZED_KEY", 
-"MISSING_LIST_EXPECTED", 
-"DUPLICATING_SINGLETON_KEY", 
-"REFERENCED_ID_NOT_FOUND", 
-"REPEATED_ID", 
-"REPEATED_OTU", 
-"MULTIPLE_ROOT_NODES", 
-"NO_ROOT_NODE", 
-"MULTIPLE_EDGES_FOR_NODES", 
-"CYCLE_DETECTED", 
-"DISCONNECTED_GRAPH_DETECTED", 
-"INCORRECT_ROOT_NODE_LABEL", 
-"TIP_WITHOUT_OTU", 
-"TIP_WITHOUT_OTT_ID", 
-"MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
-"NON_MONOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
-"INVALID_PROPERTY_VALUE", 
-"PROPERTY_VALUE_NOT_USEFUL", 
-"UNRECOGNIZED_PROPERTY_VALUE", 
-"MULTIPLE_TREES", 
-"UNRECOGNIZED_TAG", 
-"CONFLICTING_PROPERTY_VALUES", 
-"NO_TREES", 
-"DEPRECATED_PROPERTY", 
-"UNPARSEABLE_META", 
-"UNREACHABLE_NODE", 
-"INCORRECT_VALUE_TYPE", 
-"MISSING_CRUCIAL_CONTENT"
-], 
 "commandLine": [
 "--embed", 
-"--agent-only", 
-"-e", 
-"../mig-phyelesystem-scratch/2405/validation.json", 
-"-o", 
-"../mig-phyelesystem-scratch/2405/final.json", 
-"../mig-phyelesystem-scratch/2405/v1.2.1-2405.json"
+"--agent-only"
 ], 
 "otherProperty": [
 {
@@ -76,12 +39,19 @@
 }
 ]
 }, 
+"^ot:annotationEvents": {
+"annotation": []
+}, 
+"^ot:candidateTreeForSynthesis": [], 
 "^ot:curatorName": "Chris Owen", 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S1828"
 }, 
 "^ot:focalClade": 890240, 
 "^ot:focalCladeOTTTaxonName": "Phyllodocidae", 
+"^ot:messages": {
+"message": []
+}, 
 "^ot:otusElementOrder": [
 "otus2405"
 ], 
@@ -89,8 +59,9 @@
 "^ot:studyPublication": {
 "@href": "http://dx.doi.org/10.1016/j.ympev.2007.04.015"
 }, 
-"^ot:studyPublicationReference": "Eklof J., Pleijel F., & Sundberg P. 2007. Phylogeny of benthic Phyllodocidae (Polychaeta) based on morphological and molecular data. Molecular Phylogenetics and Evolution, null.", 
+"^ot:studyPublicationReference": "Eklof, J., Pleijel F., & Sundberg P. 2007. Phylogeny of benthic Phyllodocidae (Polychaeta) based on morphological and molecular data. Molecular Phylogenetics and Evolution 45 (1): 261-271.", 
 "^ot:studyYear": 2007, 
+"^ot:tag": [], 
 "^ot:treesElementOrder": [
 "trees2405"
 ], 
@@ -117,8 +88,8 @@
 }, 
 "otu341697": {
 "^ot:originalLabel": "Lacydonia eliassoni", 
-"^ot:ottId": 1049551, 
-"^ot:ottTaxonName": "Lacydonia", 
+"^ot:ottId": 4983763, 
+"^ot:ottTaxonName": "Lacydonia eliasoni", 
 "^ot:treebaseOTUId": "Tl50232"
 }, 
 "otu341698": {
@@ -231,15 +202,23 @@
 "@otus": "otus2405", 
 "^ot:treeElementOrder": [
 "tree5070", 
-"tree5071"
+"tree5071", 
+"tree6669"
 ], 
 "treeById": {
 "tree5070": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "TotEv PA 1", 
 "^ot:inGroupClade": "node878964", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node878960", 
-"^ot:tag": "choose me", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [
+"choose me"
+], 
 "edgeBySourceId": {
 "node878960": {
 "edge878961": {
@@ -532,9 +511,15 @@
 }, 
 "tree5071": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "TotEv PA 2", 
 "^ot:inGroupClade": "node879005", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node879001", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node879001": {
 "edge879002": {
@@ -822,6 +807,307 @@
 }, 
 "node879041": {
 "@otu": "otu341706"
+}
+}
+}, 
+"tree6669": {
+"@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
+"^ot:curatedType": "Fig. 1B ML (topology)", 
+"^ot:inGroupClade": "node1162277", 
+"^ot:outGroupEdge": "", 
+"^ot:rootNodeId": "node1162275", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
+"edgeBySourceId": {
+"node1162275": {
+"edge1162276": {
+"@source": "node1162275", 
+"@target": "node1162276"
+}, 
+"edge1162315": {
+"@source": "node1162275", 
+"@target": "node1162315"
+}
+}, 
+"node1162276": {
+"edge1162277": {
+"@source": "node1162276", 
+"@target": "node1162277"
+}, 
+"edge1162314": {
+"@source": "node1162276", 
+"@target": "node1162314"
+}
+}, 
+"node1162277": {
+"edge1162278": {
+"@source": "node1162277", 
+"@target": "node1162278"
+}, 
+"edge1162309": {
+"@source": "node1162277", 
+"@target": "node1162309"
+}
+}, 
+"node1162278": {
+"edge1162279": {
+"@source": "node1162278", 
+"@target": "node1162279"
+}, 
+"edge1162306": {
+"@source": "node1162278", 
+"@target": "node1162306"
+}
+}, 
+"node1162279": {
+"edge1162280": {
+"@source": "node1162279", 
+"@target": "node1162280"
+}, 
+"edge1162303": {
+"@source": "node1162279", 
+"@target": "node1162303"
+}
+}, 
+"node1162280": {
+"edge1162281": {
+"@source": "node1162280", 
+"@target": "node1162281"
+}, 
+"edge1162300": {
+"@source": "node1162280", 
+"@target": "node1162300"
+}
+}, 
+"node1162281": {
+"edge1162282": {
+"@source": "node1162281", 
+"@target": "node1162282"
+}, 
+"edge1162295": {
+"@source": "node1162281", 
+"@target": "node1162295"
+}
+}, 
+"node1162282": {
+"edge1162283": {
+"@source": "node1162282", 
+"@target": "node1162283"
+}, 
+"edge1162292": {
+"@source": "node1162282", 
+"@target": "node1162292"
+}
+}, 
+"node1162283": {
+"edge1162284": {
+"@source": "node1162283", 
+"@target": "node1162284"
+}, 
+"edge1162291": {
+"@source": "node1162283", 
+"@target": "node1162291"
+}
+}, 
+"node1162284": {
+"edge1162285": {
+"@source": "node1162284", 
+"@target": "node1162285"
+}, 
+"edge1162290": {
+"@source": "node1162284", 
+"@target": "node1162290"
+}
+}, 
+"node1162285": {
+"edge1162286": {
+"@source": "node1162285", 
+"@target": "node1162286"
+}, 
+"edge1162289": {
+"@source": "node1162285", 
+"@target": "node1162289"
+}
+}, 
+"node1162286": {
+"edge1162287": {
+"@source": "node1162286", 
+"@target": "node1162287"
+}, 
+"edge1162288": {
+"@source": "node1162286", 
+"@target": "node1162288"
+}
+}, 
+"node1162292": {
+"edge1162293": {
+"@source": "node1162292", 
+"@target": "node1162293"
+}, 
+"edge1162294": {
+"@source": "node1162292", 
+"@target": "node1162294"
+}
+}, 
+"node1162295": {
+"edge1162296": {
+"@source": "node1162295", 
+"@target": "node1162296"
+}, 
+"edge1162297": {
+"@source": "node1162295", 
+"@target": "node1162297"
+}
+}, 
+"node1162297": {
+"edge1162298": {
+"@source": "node1162297", 
+"@target": "node1162298"
+}, 
+"edge1162299": {
+"@source": "node1162297", 
+"@target": "node1162299"
+}
+}, 
+"node1162300": {
+"edge1162301": {
+"@source": "node1162300", 
+"@target": "node1162301"
+}, 
+"edge1162302": {
+"@source": "node1162300", 
+"@target": "node1162302"
+}
+}, 
+"node1162303": {
+"edge1162304": {
+"@source": "node1162303", 
+"@target": "node1162304"
+}, 
+"edge1162305": {
+"@source": "node1162303", 
+"@target": "node1162305"
+}
+}, 
+"node1162306": {
+"edge1162307": {
+"@source": "node1162306", 
+"@target": "node1162307"
+}, 
+"edge1162308": {
+"@source": "node1162306", 
+"@target": "node1162308"
+}
+}, 
+"node1162309": {
+"edge1162310": {
+"@source": "node1162309", 
+"@target": "node1162310"
+}, 
+"edge1162313": {
+"@source": "node1162309", 
+"@target": "node1162313"
+}
+}, 
+"node1162310": {
+"edge1162311": {
+"@source": "node1162310", 
+"@target": "node1162311"
+}, 
+"edge1162312": {
+"@source": "node1162310", 
+"@target": "node1162312"
+}
+}
+}, 
+"nodeById": {
+"node1162275": {
+"@root": true
+}, 
+"node1162276": {}, 
+"node1162277": {}, 
+"node1162278": {}, 
+"node1162279": {}, 
+"node1162280": {}, 
+"node1162281": {}, 
+"node1162282": {}, 
+"node1162283": {}, 
+"node1162284": {}, 
+"node1162285": {}, 
+"node1162286": {}, 
+"node1162287": {
+"@otu": "otu341707"
+}, 
+"node1162288": {
+"@otu": "otu341712"
+}, 
+"node1162289": {
+"@otu": "otu341701"
+}, 
+"node1162290": {
+"@otu": "otu341713"
+}, 
+"node1162291": {
+"@otu": "otu341703"
+}, 
+"node1162292": {}, 
+"node1162293": {
+"@otu": "otu341695"
+}, 
+"node1162294": {
+"@otu": "otu341710"
+}, 
+"node1162295": {}, 
+"node1162296": {
+"@otu": "otu341699"
+}, 
+"node1162297": {}, 
+"node1162298": {
+"@otu": "otu341709"
+}, 
+"node1162299": {
+"@otu": "otu341705"
+}, 
+"node1162300": {}, 
+"node1162301": {
+"@otu": "otu341702"
+}, 
+"node1162302": {
+"@otu": "otu341708"
+}, 
+"node1162303": {}, 
+"node1162304": {
+"@otu": "otu341694"
+}, 
+"node1162305": {
+"@otu": "otu341704"
+}, 
+"node1162306": {}, 
+"node1162307": {
+"@otu": "otu341698"
+}, 
+"node1162308": {
+"@otu": "otu341711"
+}, 
+"node1162309": {}, 
+"node1162310": {}, 
+"node1162311": {
+"@otu": "otu341696"
+}, 
+"node1162312": {
+"@otu": "otu341714"
+}, 
+"node1162313": {
+"@otu": "otu341706"
+}, 
+"node1162314": {
+"@otu": "otu341697"
+}, 
+"node1162315": {
+"@otu": "otu341700"
 }
 }
 }

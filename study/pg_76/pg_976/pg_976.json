@@ -19,48 +19,11 @@
 "@id": "peyotl-validator", 
 "@name": "validate_ot_nexson.py", 
 "@url": "https://github.com/OpenTreeOfLife/peyotl", 
-"@version": "0.0.3a", 
+"@version": "0.0.4a", 
 "invocation": {
-"checksPerformed": [
-"MISSING_MANDATORY_KEY", 
-"MISSING_OPTIONAL_KEY", 
-"UNRECOGNIZED_KEY", 
-"MISSING_LIST_EXPECTED", 
-"DUPLICATING_SINGLETON_KEY", 
-"REFERENCED_ID_NOT_FOUND", 
-"REPEATED_ID", 
-"REPEATED_OTU", 
-"MULTIPLE_ROOT_NODES", 
-"NO_ROOT_NODE", 
-"MULTIPLE_EDGES_FOR_NODES", 
-"CYCLE_DETECTED", 
-"DISCONNECTED_GRAPH_DETECTED", 
-"INCORRECT_ROOT_NODE_LABEL", 
-"TIP_WITHOUT_OTU", 
-"TIP_WITHOUT_OTT_ID", 
-"MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
-"NON_MONOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
-"INVALID_PROPERTY_VALUE", 
-"PROPERTY_VALUE_NOT_USEFUL", 
-"UNRECOGNIZED_PROPERTY_VALUE", 
-"MULTIPLE_TREES", 
-"UNRECOGNIZED_TAG", 
-"CONFLICTING_PROPERTY_VALUES", 
-"NO_TREES", 
-"DEPRECATED_PROPERTY", 
-"UNPARSEABLE_META", 
-"UNREACHABLE_NODE", 
-"INCORRECT_VALUE_TYPE", 
-"MISSING_CRUCIAL_CONTENT"
-], 
 "commandLine": [
 "--embed", 
-"--agent-only", 
-"-e", 
-"../mig-phyelesystem-scratch/976/validation.json", 
-"-o", 
-"../mig-phyelesystem-scratch/976/final.json", 
-"../mig-phyelesystem-scratch/976/v1.2.1-976.json"
+"--agent-only"
 ], 
 "otherProperty": [
 {
@@ -76,12 +39,17 @@
 }
 ]
 }, 
+"^ot:annotationEvents": {
+"annotation": []
+}, 
+"^ot:candidateTreeForSynthesis": [], 
 "^ot:curatorName": "Romina Gazis", 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S1774"
 }, 
-"^ot:focalClade": 1201742, 
-"^ot:focalCladeOTTTaxonName": "Cleistocybe", 
+"^ot:messages": {
+"message": []
+}, 
 "^ot:otusElementOrder": [
 "otus976"
 ], 
@@ -91,6 +59,7 @@
 }, 
 "^ot:studyPublicationReference": "Ammirati J., Parker A.D., & Matheny P. 2007. Cleistocybe, a new genus of Agaricales. Mycoscience, 48: 282-289.", 
 "^ot:studyYear": 2007, 
+"^ot:tag": [], 
 "^ot:treesElementOrder": [
 "trees976"
 ], 
@@ -105,8 +74,8 @@
 }, 
 "otu209486": {
 "^ot:originalLabel": "Callistosporium xanthophyllum", 
-"^ot:ottId": 127164, 
-"^ot:ottTaxonName": "Callistosporium xanthophyllum", 
+"^ot:ottId": 5306418, 
+"^ot:ottTaxonName": "Callistosporium luteo-olivaceum", 
 "^ot:treebaseOTUId": "Tl37203"
 }, 
 "otu209487": {
@@ -159,8 +128,8 @@
 }, 
 "otu209495": {
 "^ot:originalLabel": "Callistosporium graminicolor", 
-"^ot:ottId": 1036225, 
-"^ot:ottTaxonName": "Callistosporium graminicolor", 
+"^ot:ottId": 5306418, 
+"^ot:ottTaxonName": "Callistosporium luteo-olivaceum", 
 "^ot:treebaseOTUId": "Tl46988"
 }, 
 "otu209496": {
@@ -177,26 +146,22 @@
 }, 
 "otu209498": {
 "^ot:originalLabel": "Pleurocollybia brunnescens", 
-"^ot:ottId": 135577, 
-"^ot:ottTaxonName": "Pleurocollybia brunnescens", 
+"^ot:ottId": 5306501, 
+"^ot:ottTaxonName": "Pleurocollybia brunescens", 
 "^ot:treebaseOTUId": "Tl46991"
 }, 
 "otu209499": {
 "^ot:originalLabel": "Callistosporium luteoolivaceum AF261405", 
-"^ot:ottId": 824268, 
-"^ot:ottTaxonName": "Callistosporium luteoolivaceum", 
 "^ot:treebaseOTUId": "Tl46992"
 }, 
 "otu209500": {
 "^ot:originalLabel": "Macrocybe gigantea", 
-"^ot:ottId": 3828696, 
+"^ot:ottId": 5306508, 
 "^ot:ottTaxonName": "Macrocybe gigantea", 
 "^ot:treebaseOTUId": "Tl46993"
 }, 
 "otu209501": {
 "^ot:originalLabel": "Callistosporium luteoolivaceum AY639406", 
-"^ot:ottId": 824268, 
-"^ot:ottTaxonName": "Callistosporium luteoolivaceum", 
 "^ot:treebaseOTUId": "Tl46994"
 }
 }
@@ -216,8 +181,14 @@
 "treeById": {
 "tree1913": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "PAUP 1", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node496793", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node496793": {
 "edge496794": {
@@ -454,8 +425,14 @@
 }, 
 "tree1914": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "PAUP 2", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node496826", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node496826": {
 "edge496827": {
@@ -692,8 +669,14 @@
 }, 
 "tree1915": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "PAUP 3", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node496859", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node496859": {
 "edge496860": {
@@ -930,8 +913,14 @@
 }, 
 "tree1916": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "PAUP 4", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node496892", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node496892": {
 "edge496893": {
@@ -1161,8 +1150,14 @@
 }, 
 "tree1917": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "PAUP 5", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node496924", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node496924": {
 "edge496925": {
@@ -1399,9 +1394,15 @@
 }, 
 "tree5757": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "MP, SSU (rooted)", 
 "^ot:inGroupClade": "node985247", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node985246", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node985246": {
 "edge985247": {

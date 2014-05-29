@@ -19,48 +19,11 @@
 "@id": "peyotl-validator", 
 "@name": "validate_ot_nexson.py", 
 "@url": "https://github.com/OpenTreeOfLife/peyotl", 
-"@version": "0.0.3a", 
+"@version": "0.0.4a", 
 "invocation": {
-"checksPerformed": [
-"MISSING_MANDATORY_KEY", 
-"MISSING_OPTIONAL_KEY", 
-"UNRECOGNIZED_KEY", 
-"MISSING_LIST_EXPECTED", 
-"DUPLICATING_SINGLETON_KEY", 
-"REFERENCED_ID_NOT_FOUND", 
-"REPEATED_ID", 
-"REPEATED_OTU", 
-"MULTIPLE_ROOT_NODES", 
-"NO_ROOT_NODE", 
-"MULTIPLE_EDGES_FOR_NODES", 
-"CYCLE_DETECTED", 
-"DISCONNECTED_GRAPH_DETECTED", 
-"INCORRECT_ROOT_NODE_LABEL", 
-"TIP_WITHOUT_OTU", 
-"TIP_WITHOUT_OTT_ID", 
-"MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
-"NON_MONOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
-"INVALID_PROPERTY_VALUE", 
-"PROPERTY_VALUE_NOT_USEFUL", 
-"UNRECOGNIZED_PROPERTY_VALUE", 
-"MULTIPLE_TREES", 
-"UNRECOGNIZED_TAG", 
-"CONFLICTING_PROPERTY_VALUES", 
-"NO_TREES", 
-"DEPRECATED_PROPERTY", 
-"UNPARSEABLE_META", 
-"UNREACHABLE_NODE", 
-"INCORRECT_VALUE_TYPE", 
-"MISSING_CRUCIAL_CONTENT"
-], 
 "commandLine": [
 "--embed", 
-"--agent-only", 
-"-e", 
-"../mig-phyelesystem-scratch/781/validation.json", 
-"-o", 
-"../mig-phyelesystem-scratch/781/final.json", 
-"../mig-phyelesystem-scratch/781/v1.2.1-781.json"
+"--agent-only"
 ], 
 "otherProperty": [
 {
@@ -76,12 +39,19 @@
 }
 ]
 }, 
+"^ot:annotationEvents": {
+"annotation": []
+}, 
+"^ot:candidateTreeForSynthesis": [], 
 "^ot:curatorName": "Romina Gazis", 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S1641"
 }, 
 "^ot:focalClade": 622625, 
 "^ot:focalCladeOTTTaxonName": "Glomus", 
+"^ot:messages": {
+"message": []
+}, 
 "^ot:otusElementOrder": [
 "otus781"
 ], 
@@ -91,6 +61,7 @@
 }, 
 "^ot:studyPublicationReference": "B\u0141aszkowski J., Renker C., & Buscot F. 2006. Glomus drummondii and G. walkeri, two new species of arbuscular mycorrhizal fungi (Glomeromycota). Mycological Research, 110(5): 555-566.", 
 "^ot:studyYear": 2006, 
+"^ot:tag": [], 
 "^ot:treesElementOrder": [
 "trees781"
 ], 
@@ -111,6 +82,8 @@
 }, 
 "otu194653": {
 "^ot:originalLabel": "Glomus  etunicatum AJ623309", 
+"^ot:ottId": 464858, 
+"^ot:ottTaxonName": "Claroideoglomus etunicatum", 
 "^ot:treebaseOTUId": "Tl41520"
 }, 
 "otu194654": {
@@ -391,6 +364,8 @@
 }, 
 "otu194700": {
 "^ot:originalLabel": "Glomus etunicatum AY330582", 
+"^ot:ottId": 464858, 
+"^ot:ottTaxonName": "Claroideoglomus etunicatum", 
 "^ot:treebaseOTUId": "Tl41568"
 }, 
 "otu194701": {
@@ -449,6 +424,8 @@
 }, 
 "otu194710": {
 "^ot:originalLabel": "Glomus etunicatum AY236329", 
+"^ot:ottId": 464858, 
+"^ot:ottTaxonName": "Claroideoglomus etunicatum", 
 "^ot:treebaseOTUId": "Tl41578"
 }
 }
@@ -464,9 +441,15 @@
 "treeById": {
 "tree1457": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "MP, LSU (strict)", 
 "^ot:inGroupClade": "node455347", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node455345", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node455345": {
 "edge455346": {
@@ -990,8 +973,14 @@
 }, 
 "tree1458": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "Network, ITS", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node455419", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node455419": {
 "edge455420": {

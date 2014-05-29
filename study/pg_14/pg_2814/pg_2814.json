@@ -19,48 +19,11 @@
 "@id": "peyotl-validator", 
 "@name": "validate_ot_nexson.py", 
 "@url": "https://github.com/OpenTreeOfLife/peyotl", 
-"@version": "0.0.3a", 
+"@version": "0.0.4a", 
 "invocation": {
-"checksPerformed": [
-"MISSING_MANDATORY_KEY", 
-"MISSING_OPTIONAL_KEY", 
-"UNRECOGNIZED_KEY", 
-"MISSING_LIST_EXPECTED", 
-"DUPLICATING_SINGLETON_KEY", 
-"REFERENCED_ID_NOT_FOUND", 
-"REPEATED_ID", 
-"REPEATED_OTU", 
-"MULTIPLE_ROOT_NODES", 
-"NO_ROOT_NODE", 
-"MULTIPLE_EDGES_FOR_NODES", 
-"CYCLE_DETECTED", 
-"DISCONNECTED_GRAPH_DETECTED", 
-"INCORRECT_ROOT_NODE_LABEL", 
-"TIP_WITHOUT_OTU", 
-"TIP_WITHOUT_OTT_ID", 
-"MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
-"NON_MONOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
-"INVALID_PROPERTY_VALUE", 
-"PROPERTY_VALUE_NOT_USEFUL", 
-"UNRECOGNIZED_PROPERTY_VALUE", 
-"MULTIPLE_TREES", 
-"UNRECOGNIZED_TAG", 
-"CONFLICTING_PROPERTY_VALUES", 
-"NO_TREES", 
-"DEPRECATED_PROPERTY", 
-"UNPARSEABLE_META", 
-"UNREACHABLE_NODE", 
-"INCORRECT_VALUE_TYPE", 
-"MISSING_CRUCIAL_CONTENT"
-], 
 "commandLine": [
 "--embed", 
-"--agent-only", 
-"-e", 
-"../mig-phyelesystem-scratch/2814/validation.json", 
-"-o", 
-"../mig-phyelesystem-scratch/2814/final.json", 
-"../mig-phyelesystem-scratch/2814/v1.2.1-2814.json"
+"--agent-only"
 ], 
 "otherProperty": [
 {
@@ -76,9 +39,16 @@
 }
 ]
 }, 
+"^ot:annotationEvents": {
+"annotation": []
+}, 
+"^ot:candidateTreeForSynthesis": [], 
 "^ot:curatorName": "Joseph Brown", 
 "^ot:focalClade": 985906, 
 "^ot:focalCladeOTTTaxonName": "Pancrustacea", 
+"^ot:messages": {
+"message": []
+}, 
 "^ot:otusElementOrder": [
 "otus2814"
 ], 
@@ -88,6 +58,7 @@
 }, 
 "^ot:studyPublicationReference": "Rota-Stabelli, O., Lartillot, N., Philippe, H., and Pisani, D. 2013. Serine codon-usage bias in deep phylogenomics: Pancrustacean relationships as a case study. Systematic Biology 62 (1): 121-133.", 
 "^ot:studyYear": 2013, 
+"^ot:tag": [], 
 "^ot:treesElementOrder": [
 "trees2814"
 ], 
@@ -105,7 +76,9 @@
 "^ot:ottTaxonName": "Antheraea paukstadtorum"
 }, 
 "otu417746": {
-"^ot:originalLabel": "Prodoxus quinquepunctella"
+"^ot:originalLabel": "Prodoxus quinquepunctella", 
+"^ot:ottId": 531248, 
+"^ot:ottTaxonName": "Prodoxus quinquepunctellus"
 }, 
 "otu417747": {
 "^ot:originalLabel": "Periplaneta americana", 
@@ -123,7 +96,9 @@
 "^ot:ottTaxonName": "Forficula auricularia"
 }, 
 "otu417750": {
-"^ot:originalLabel": "Libellula lydia"
+"^ot:originalLabel": "Libellula lydia", 
+"^ot:ottId": 874624, 
+"^ot:ottTaxonName": "Plathemis lydia"
 }, 
 "otu417751": {
 "^ot:originalLabel": "Ischnura verticalis", 
@@ -141,7 +116,9 @@
 "^ot:ottTaxonName": "Ephemerella inconstans"
 }, 
 "otu417754": {
-"^ot:originalLabel": "Nicoletia meinerti"
+"^ot:originalLabel": "Nicoletia meinerti", 
+"^ot:ottId": 5012464, 
+"^ot:ottTaxonName": "Nicoletia phytophila"
 }, 
 "otu417755": {
 "^ot:originalLabel": "Ctenolepisma lineata", 
@@ -245,7 +222,9 @@
 "^ot:ottTaxonName": "Lepas anserifera"
 }, 
 "otu417776": {
-"^ot:originalLabel": "Loxothylacus texanus"
+"^ot:originalLabel": "Loxothylacus texanus", 
+"^ot:ottId": 579399, 
+"^ot:ottTaxonName": "Loxothylacus texanus"
 }, 
 "otu417777": {
 "^ot:originalLabel": "Libinia emarginata", 
@@ -387,7 +366,9 @@
 "^ot:ottTaxonName": "Idiogaryops pumilis"
 }, 
 "otu417806": {
-"^ot:originalLabel": "Leiobunum nigripes"
+"^ot:originalLabel": "Leiobunum nigripes", 
+"^ot:ottId": 900552, 
+"^ot:ottTaxonName": "Leiobunum verrucosum"
 }, 
 "otu417807": {
 "^ot:originalLabel": "Amblyomma sp."
@@ -480,11 +461,17 @@
 "treeById": {
 "tree6551": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
 "^ot:branchLengthMode": "ot:substitutionCount", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "Fig. S1 aaCAT tree", 
 "^ot:inGroupClade": "node1136868", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node1136867", 
-"^ot:tag": "ingroup added;", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [
+"ingroup added;"
+], 
 "edgeBySourceId": {
 "node1136867": {
 "edge1136868": {

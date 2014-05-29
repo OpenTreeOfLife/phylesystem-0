@@ -19,48 +19,11 @@
 "@id": "peyotl-validator", 
 "@name": "validate_ot_nexson.py", 
 "@url": "https://github.com/OpenTreeOfLife/peyotl", 
-"@version": "0.0.3a", 
+"@version": "0.0.4a", 
 "invocation": {
-"checksPerformed": [
-"MISSING_MANDATORY_KEY", 
-"MISSING_OPTIONAL_KEY", 
-"UNRECOGNIZED_KEY", 
-"MISSING_LIST_EXPECTED", 
-"DUPLICATING_SINGLETON_KEY", 
-"REFERENCED_ID_NOT_FOUND", 
-"REPEATED_ID", 
-"REPEATED_OTU", 
-"MULTIPLE_ROOT_NODES", 
-"NO_ROOT_NODE", 
-"MULTIPLE_EDGES_FOR_NODES", 
-"CYCLE_DETECTED", 
-"DISCONNECTED_GRAPH_DETECTED", 
-"INCORRECT_ROOT_NODE_LABEL", 
-"TIP_WITHOUT_OTU", 
-"TIP_WITHOUT_OTT_ID", 
-"MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
-"NON_MONOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
-"INVALID_PROPERTY_VALUE", 
-"PROPERTY_VALUE_NOT_USEFUL", 
-"UNRECOGNIZED_PROPERTY_VALUE", 
-"MULTIPLE_TREES", 
-"UNRECOGNIZED_TAG", 
-"CONFLICTING_PROPERTY_VALUES", 
-"NO_TREES", 
-"DEPRECATED_PROPERTY", 
-"UNPARSEABLE_META", 
-"UNREACHABLE_NODE", 
-"INCORRECT_VALUE_TYPE", 
-"MISSING_CRUCIAL_CONTENT"
-], 
 "commandLine": [
 "--embed", 
-"--agent-only", 
-"-e", 
-"../mig-phyelesystem-scratch/2805/validation.json", 
-"-o", 
-"../mig-phyelesystem-scratch/2805/final.json", 
-"../mig-phyelesystem-scratch/2805/v1.2.1-2805.json"
+"--agent-only"
 ], 
 "otherProperty": [
 {
@@ -76,9 +39,16 @@
 }
 ]
 }, 
+"^ot:annotationEvents": {
+"annotation": []
+}, 
+"^ot:candidateTreeForSynthesis": [], 
 "^ot:curatorName": "Joseph Brown", 
 "^ot:focalClade": 1020133, 
 "^ot:focalCladeOTTTaxonName": "Psittaciformes", 
+"^ot:messages": {
+"message": []
+}, 
 "^ot:otusElementOrder": [
 "otus2805"
 ], 
@@ -86,8 +56,9 @@
 "^ot:studyPublication": {
 "@href": "http://dx.doi.org/10.1093/molbev/msn160"
 }, 
-"^ot:studyPublicationReference": "T. F. Wright, E. E. Schirtzinger, T. Matsumoto, J. R. Eberhard, G. R. Graves, J. J. Sanchez, S. Capelli, H. Muller, J. Scharpegge, G. K. Chambers, R. C. Fleischer. 2008. A multilocus molecular phylogeny of the parrots (Psittaciformes): support for a Gondwanan origin during the Cretaceous. Molecular Biology and Evolution 25 (10): 2141-2156.", 
+"^ot:studyPublicationReference": "Wright, T. F., E. E. Schirtzinger, T. Matsumoto, J. R. Eberhard, G. R. Graves, J. J. Sanchez, S. Capelli, H. Muller, J. Scharpegge, G. K. Chambers, R. C. Fleischer. 2008. A multilocus molecular phylogeny of the parrots (Psittaciformes): support for a Gondwanan origin during the Cretaceous. Molecular Biology and Evolution 25 (10): 2141-2156.", 
 "^ot:studyYear": 2008, 
+"^ot:tag": [], 
 "^ot:treesElementOrder": [
 "trees2805"
 ], 
@@ -130,7 +101,9 @@
 "^ot:ottTaxonName": "Falco peregrinus"
 }, 
 "otu415158": {
-"^ot:originalLabel": "Serinus canarius"
+"^ot:originalLabel": "Serinus canarius", 
+"^ot:ottId": 464865, 
+"^ot:ottTaxonName": "Serinus canaria"
 }, 
 "otu415159": {
 "^ot:originalLabel": "Nestor notabilis", 
@@ -203,7 +176,9 @@
 "^ot:ottTaxonName": "Nannopsittaca panychlora"
 }, 
 "otu415173": {
-"^ot:originalLabel": "Touit batavica"
+"^ot:originalLabel": "Touit batavica", 
+"^ot:ottId": 721567, 
+"^ot:ottTaxonName": "Touit batavicus"
 }, 
 "otu415174": {
 "^ot:originalLabel": "Forpus passerinus", 
@@ -261,7 +236,9 @@
 "^ot:ottTaxonName": "Deroptyus accipitrinus"
 }, 
 "otu415185": {
-"^ot:originalLabel": "Pionites melanocephala"
+"^ot:originalLabel": "Pionites melanocephala", 
+"^ot:ottId": 682876, 
+"^ot:ottTaxonName": "Pionites melanocephalus"
 }, 
 "otu415186": {
 "^ot:originalLabel": "Aratinga pertinax", 
@@ -384,7 +361,9 @@
 "^ot:ottTaxonName": "Glossopsitta porphyrocephala"
 }, 
 "otu415210": {
-"^ot:originalLabel": "Lorius albidinuchus"
+"^ot:originalLabel": "Lorius albidinuchus", 
+"^ot:ottId": 771942, 
+"^ot:ottTaxonName": "Lorius albidinucha"
 }, 
 "otu415211": {
 "^ot:originalLabel": "Chalcopsitta duivenbodei", 
@@ -392,7 +371,9 @@
 "^ot:ottTaxonName": "Chalcopsitta duivenbodei"
 }, 
 "otu415212": {
-"^ot:originalLabel": "Pseudoeos fuscata"
+"^ot:originalLabel": "Pseudoeos fuscata", 
+"^ot:ottId": 396440, 
+"^ot:ottTaxonName": "Pseudeos fuscata"
 }, 
 "otu415213": {
 "^ot:originalLabel": "Eos reticulata", 
@@ -481,10 +462,15 @@
 "treeById": {
 "tree6512": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
 "^ot:branchLengthMode": "ot:substitutionCount", 
-"^ot:curatedType": "Bayesian consensus.", 
+"^ot:branchLengthTimeUnit": "", 
+"^ot:curatedType": "Bayesian consensus", 
 "^ot:inGroupClade": "node1123577", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node1123563", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node1123563": {
 "edge1123564": {

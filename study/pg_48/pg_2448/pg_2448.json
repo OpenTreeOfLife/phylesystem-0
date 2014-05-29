@@ -19,48 +19,11 @@
 "@id": "peyotl-validator", 
 "@name": "validate_ot_nexson.py", 
 "@url": "https://github.com/OpenTreeOfLife/peyotl", 
-"@version": "0.0.3a", 
+"@version": "0.0.4a", 
 "invocation": {
-"checksPerformed": [
-"MISSING_MANDATORY_KEY", 
-"MISSING_OPTIONAL_KEY", 
-"UNRECOGNIZED_KEY", 
-"MISSING_LIST_EXPECTED", 
-"DUPLICATING_SINGLETON_KEY", 
-"REFERENCED_ID_NOT_FOUND", 
-"REPEATED_ID", 
-"REPEATED_OTU", 
-"MULTIPLE_ROOT_NODES", 
-"NO_ROOT_NODE", 
-"MULTIPLE_EDGES_FOR_NODES", 
-"CYCLE_DETECTED", 
-"DISCONNECTED_GRAPH_DETECTED", 
-"INCORRECT_ROOT_NODE_LABEL", 
-"TIP_WITHOUT_OTU", 
-"TIP_WITHOUT_OTT_ID", 
-"MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
-"NON_MONOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
-"INVALID_PROPERTY_VALUE", 
-"PROPERTY_VALUE_NOT_USEFUL", 
-"UNRECOGNIZED_PROPERTY_VALUE", 
-"MULTIPLE_TREES", 
-"UNRECOGNIZED_TAG", 
-"CONFLICTING_PROPERTY_VALUES", 
-"NO_TREES", 
-"DEPRECATED_PROPERTY", 
-"UNPARSEABLE_META", 
-"UNREACHABLE_NODE", 
-"INCORRECT_VALUE_TYPE", 
-"MISSING_CRUCIAL_CONTENT"
-], 
 "commandLine": [
 "--embed", 
-"--agent-only", 
-"-e", 
-"../mig-phyelesystem-scratch/2448/validation.json", 
-"-o", 
-"../mig-phyelesystem-scratch/2448/final.json", 
-"../mig-phyelesystem-scratch/2448/v1.2.1-2448.json"
+"--agent-only"
 ], 
 "otherProperty": [
 {
@@ -76,9 +39,16 @@
 }
 ]
 }, 
+"^ot:annotationEvents": {
+"annotation": []
+}, 
+"^ot:candidateTreeForSynthesis": [], 
 "^ot:curatorName": "Jessica Grant", 
 "^ot:focalClade": 5021155, 
 "^ot:focalCladeOTTTaxonName": "Bacteria", 
+"^ot:messages": {
+"message": []
+}, 
 "^ot:otusElementOrder": [
 "otus2448"
 ], 
@@ -88,6 +58,7 @@
 }, 
 "^ot:studyPublicationReference": "Nicola Segata, Daniela B\u00f6rnigen, Xochitl C. Morgan, and Curtis Huttenhower.\r\n\r\nPhyloPhlAn is a new method for improved phylogenetic and taxonomic placement of microbes", 
 "^ot:studyYear": 2013, 
+"^ot:tag": [], 
 "^ot:treesElementOrder": [
 "trees2448"
 ], 
@@ -123,13 +94,19 @@
 "^ot:originalLabel": "Aciduliprofundum boonei"
 }, 
 "otu348100": {
-"^ot:originalLabel": "Nitrosopumilus sp"
+"^ot:originalLabel": "Nitrosopumilus sp", 
+"^ot:ottId": 933987, 
+"^ot:ottTaxonName": "Candidatus Nitrosopumilus"
 }, 
 "otu348101": {
-"^ot:originalLabel": "Candidatus Nitrosoarchaeum"
+"^ot:originalLabel": "Candidatus Nitrosoarchaeum", 
+"^ot:ottId": 1018283, 
+"^ot:ottTaxonName": "Candidatus Nitrosoarchaeum"
 }, 
 "otu348102": {
-"^ot:originalLabel": "Nitrosopumilus maritimus"
+"^ot:originalLabel": "Nitrosopumilus maritimus", 
+"^ot:ottId": 933975, 
+"^ot:ottTaxonName": "Nitrosopumilus maritimus"
 }, 
 "otu348103": {
 "^ot:originalLabel": "Cenarchaeum symbiosum", 
@@ -684,7 +661,9 @@
 "^ot:ottTaxonName": "Methanocella"
 }, 
 "otu348215": {
-"^ot:originalLabel": "t2503283010 OP11 OP11"
+"^ot:originalLabel": "t2503283010 OP11 OP11", 
+"^ot:ottId": 5246067, 
+"^ot:ottTaxonName": "Candidate division OP11"
 }, 
 "otu348216": {
 "^ot:originalLabel": "t3500000001"
@@ -1045,7 +1024,9 @@
 "^ot:ottTaxonName": "Thermincola potens"
 }, 
 "otu348288": {
-"^ot:originalLabel": "Candidatus Desulforudis"
+"^ot:originalLabel": "Candidatus Desulforudis", 
+"^ot:ottId": 703047, 
+"^ot:ottTaxonName": "Candidatus Desulforudis"
 }, 
 "otu348289": {
 "^ot:originalLabel": "Ammonifex degensii", 
@@ -1193,7 +1174,9 @@
 "^ot:ottTaxonName": "Heliobacterium modesticaldum"
 }, 
 "otu348318": {
-"^ot:originalLabel": "Mahella australiensis"
+"^ot:originalLabel": "Mahella australiensis", 
+"^ot:ottId": 373935, 
+"^ot:ottTaxonName": "Mahella australiensis"
 }, 
 "otu348319": {
 "^ot:originalLabel": "Caldanaerobius polysaccharolyticum", 
@@ -1266,13 +1249,19 @@
 "^ot:ottTaxonName": "Thermoanaerobacter mathranii"
 }, 
 "otu348333": {
-"^ot:originalLabel": "Thermoanaerobacterium xylanolyticum"
+"^ot:originalLabel": "Thermoanaerobacterium xylanolyticum", 
+"^ot:ottId": 452142, 
+"^ot:ottTaxonName": "Thermoanaerobacterium xylanolyticum"
 }, 
 "otu348334": {
-"^ot:originalLabel": "Thermoanaerobacterium thermosaccharolyticum"
+"^ot:originalLabel": "Thermoanaerobacterium thermosaccharolyticum", 
+"^ot:ottId": 537448, 
+"^ot:ottTaxonName": "Thermoanaerobacterium thermosaccharolyticum"
 }, 
 "otu348335": {
-"^ot:originalLabel": "Thermoanaerobacterium thermosaccharolyticum"
+"^ot:originalLabel": "Thermoanaerobacterium thermosaccharolyticum", 
+"^ot:ottId": 537448, 
+"^ot:ottTaxonName": "Thermoanaerobacterium thermosaccharolyticum"
 }, 
 "otu348336": {
 "^ot:originalLabel": "Candidatus Arthromitus", 
@@ -1523,64 +1512,104 @@
 "^ot:originalLabel": "Eubacterium saphenum"
 }, 
 "otu348386": {
-"^ot:originalLabel": "Peptoniphilus duerdenii"
+"^ot:originalLabel": "Peptoniphilus duerdenii", 
+"^ot:ottId": 942563, 
+"^ot:ottTaxonName": "Peptoniphilus duerdenii"
 }, 
 "otu348387": {
-"^ot:originalLabel": "Peptoniphilus harei"
+"^ot:originalLabel": "Peptoniphilus harei", 
+"^ot:ottId": 269986, 
+"^ot:ottTaxonName": "Peptoniphilus harei"
 }, 
 "otu348388": {
-"^ot:originalLabel": "Peptoniphilus sp"
+"^ot:originalLabel": "Peptoniphilus sp", 
+"^ot:ottId": 691205, 
+"^ot:ottTaxonName": "Peptoniphilus"
 }, 
 "otu348389": {
-"^ot:originalLabel": "Peptoniphilus lacrimalis"
+"^ot:originalLabel": "Peptoniphilus lacrimalis", 
+"^ot:ottId": 211035, 
+"^ot:ottTaxonName": "Peptoniphilus lacrimalis"
 }, 
 "otu348390": {
-"^ot:originalLabel": "Peptoniphilus sp"
+"^ot:originalLabel": "Peptoniphilus sp", 
+"^ot:ottId": 691205, 
+"^ot:ottTaxonName": "Peptoniphilus"
 }, 
 "otu348391": {
-"^ot:originalLabel": "Peptoniphilus asaccharolyticus"
+"^ot:originalLabel": "Peptoniphilus asaccharolyticus", 
+"^ot:ottId": 668970, 
+"^ot:ottTaxonName": "Peptoniphilus asaccharolyticus"
 }, 
 "otu348392": {
-"^ot:originalLabel": "Peptoniphilus sp"
+"^ot:originalLabel": "Peptoniphilus sp", 
+"^ot:ottId": 691205, 
+"^ot:ottTaxonName": "Peptoniphilus"
 }, 
 "otu348393": {
-"^ot:originalLabel": "Anaerococcus tetradius"
+"^ot:originalLabel": "Anaerococcus tetradius", 
+"^ot:ottId": 210943, 
+"^ot:ottTaxonName": "Anaerococcus tetradius"
 }, 
 "otu348394": {
-"^ot:originalLabel": "Anaerococcus prevotii"
+"^ot:originalLabel": "Anaerococcus prevotii", 
+"^ot:ottId": 210969, 
+"^ot:ottTaxonName": "Anaerococcus prevotii"
 }, 
 "otu348395": {
-"^ot:originalLabel": "Anaerococcus lactolyticus"
+"^ot:originalLabel": "Anaerococcus lactolyticus", 
+"^ot:ottId": 210996, 
+"^ot:ottTaxonName": "Anaerococcus lactolyticus"
 }, 
 "otu348396": {
-"^ot:originalLabel": "Anaerococcus hydrogenalis"
+"^ot:originalLabel": "Anaerococcus hydrogenalis", 
+"^ot:ottId": 785133, 
+"^ot:ottTaxonName": "Anaerococcus hydrogenalis"
 }, 
 "otu348397": {
-"^ot:originalLabel": "Anaerococcus hydrogenalis"
+"^ot:originalLabel": "Anaerococcus hydrogenalis", 
+"^ot:ottId": 785133, 
+"^ot:ottTaxonName": "Anaerococcus hydrogenalis"
 }, 
 "otu348398": {
-"^ot:originalLabel": "Anaerococcus vaginalis"
+"^ot:originalLabel": "Anaerococcus vaginalis", 
+"^ot:ottId": 210959, 
+"^ot:ottTaxonName": "Anaerococcus vaginalis"
 }, 
 "otu348399": {
-"^ot:originalLabel": "Finegoldia magna"
+"^ot:originalLabel": "Finegoldia magna", 
+"^ot:ottId": 146237, 
+"^ot:ottTaxonName": "Finegoldia magna"
 }, 
 "otu348400": {
-"^ot:originalLabel": "Finegoldia magna"
+"^ot:originalLabel": "Finegoldia magna", 
+"^ot:ottId": 146237, 
+"^ot:ottTaxonName": "Finegoldia magna"
 }, 
 "otu348401": {
-"^ot:originalLabel": "Finegoldia magna"
+"^ot:originalLabel": "Finegoldia magna", 
+"^ot:ottId": 146237, 
+"^ot:ottTaxonName": "Finegoldia magna"
 }, 
 "otu348402": {
-"^ot:originalLabel": "Finegoldia magna"
+"^ot:originalLabel": "Finegoldia magna", 
+"^ot:ottId": 146237, 
+"^ot:ottTaxonName": "Finegoldia magna"
 }, 
 "otu348403": {
-"^ot:originalLabel": "Parvimonas micra"
+"^ot:originalLabel": "Parvimonas micra", 
+"^ot:ottId": 211006, 
+"^ot:ottTaxonName": "Parvimonas micra"
 }, 
 "otu348404": {
-"^ot:originalLabel": "Parvimonas sp"
+"^ot:originalLabel": "Parvimonas sp", 
+"^ot:ottId": 718366, 
+"^ot:ottTaxonName": "Parvimonas"
 }, 
 "otu348405": {
-"^ot:originalLabel": "Parvimonas sp"
+"^ot:originalLabel": "Parvimonas sp", 
+"^ot:ottId": 718366, 
+"^ot:ottTaxonName": "Parvimonas"
 }, 
 "otu348406": {
 "^ot:originalLabel": "Filifactor alocis", 
@@ -1591,7 +1620,9 @@
 "^ot:originalLabel": "Eubacterium yurii"
 }, 
 "otu348408": {
-"^ot:originalLabel": "Clostridium sticklandii"
+"^ot:originalLabel": "Clostridium sticklandii", 
+"^ot:ottId": 537483, 
+"^ot:ottTaxonName": "[Clostridium] sticklandii"
 }, 
 "otu348409": {
 "^ot:originalLabel": "Peptostreptococcus anaerobius", 
@@ -1604,7 +1635,9 @@
 "^ot:ottTaxonName": "Peptostreptococcus stomatis"
 }, 
 "otu348411": {
-"^ot:originalLabel": "Clostridium hiranonis"
+"^ot:originalLabel": "Clostridium hiranonis", 
+"^ot:ottId": 429939, 
+"^ot:ottTaxonName": "[Clostridium] hiranonis"
 }, 
 "otu348412": {
 "^ot:originalLabel": "Clostridium bartlettii"
@@ -2772,16 +2805,24 @@
 "^ot:ottTaxonName": "Streptococcus gallolyticus subsp. pasteurianus"
 }, 
 "otu348651": {
-"^ot:originalLabel": "Streptococcus gallolyticus"
+"^ot:originalLabel": "Streptococcus gallolyticus", 
+"^ot:ottId": 650529, 
+"^ot:ottTaxonName": "Streptococcus gallolyticus"
 }, 
 "otu348652": {
-"^ot:originalLabel": "Streptococcus gallolyticus"
+"^ot:originalLabel": "Streptococcus gallolyticus", 
+"^ot:ottId": 650529, 
+"^ot:ottTaxonName": "Streptococcus gallolyticus"
 }, 
 "otu348653": {
-"^ot:originalLabel": "Streptococcus gallolyticus"
+"^ot:originalLabel": "Streptococcus gallolyticus", 
+"^ot:ottId": 650529, 
+"^ot:ottTaxonName": "Streptococcus gallolyticus"
 }, 
 "otu348654": {
-"^ot:originalLabel": "Streptococcus gallolyticus"
+"^ot:originalLabel": "Streptococcus gallolyticus", 
+"^ot:ottId": 650529, 
+"^ot:ottTaxonName": "Streptococcus gallolyticus"
 }, 
 "otu348655": {
 "^ot:originalLabel": "Streptococcus parauberis", 
@@ -3899,10 +3940,14 @@
 "^ot:ottTaxonName": "Oceanobacillus iheyensis"
 }, 
 "otu348878": {
-"^ot:originalLabel": "Exiguobacterium sp"
+"^ot:originalLabel": "Exiguobacterium sp", 
+"^ot:ottId": 701419, 
+"^ot:ottTaxonName": "Exiguobacterium"
 }, 
 "otu348879": {
-"^ot:originalLabel": "Exiguobacterium sibiricum"
+"^ot:originalLabel": "Exiguobacterium sibiricum", 
+"^ot:ottId": 208269, 
+"^ot:ottTaxonName": "Exiguobacterium sibiricum"
 }, 
 "otu348880": {
 "^ot:originalLabel": "Bacillus cellulosilyticus", 
@@ -4045,7 +4090,9 @@
 "^ot:ottTaxonName": "Desmospora"
 }, 
 "otu348908": {
-"^ot:originalLabel": "Bacillus tusciae"
+"^ot:originalLabel": "Bacillus tusciae", 
+"^ot:ottId": 972103, 
+"^ot:ottTaxonName": "Kyrpidia tusciae"
 }, 
 "otu348909": {
 "^ot:originalLabel": "Alicyclobacillus acidocaldarius", 
@@ -4748,16 +4795,24 @@
 "^ot:ottTaxonName": "Bacillus coagulans"
 }, 
 "otu349049": {
-"^ot:originalLabel": "Gemella moribillum"
+"^ot:originalLabel": "Gemella moribillum", 
+"^ot:ottId": 31813, 
+"^ot:ottTaxonName": "Gemella morbillorum"
 }, 
 "otu349050": {
-"^ot:originalLabel": "Gemella sanguinis"
+"^ot:originalLabel": "Gemella sanguinis", 
+"^ot:ottId": 85477, 
+"^ot:ottTaxonName": "Gemella sanguinis"
 }, 
 "otu349051": {
-"^ot:originalLabel": "Gemella haemolysans"
+"^ot:originalLabel": "Gemella haemolysans", 
+"^ot:ottId": 542747, 
+"^ot:ottTaxonName": "Gemella haemolysans"
 }, 
 "otu349052": {
-"^ot:originalLabel": "Gemella haemolysans"
+"^ot:originalLabel": "Gemella haemolysans", 
+"^ot:ottId": 542747, 
+"^ot:ottTaxonName": "Gemella haemolysans"
 }, 
 "otu349053": {
 "^ot:originalLabel": "Macrococcus caseolyticus", 
@@ -5250,10 +5305,14 @@
 "^ot:ottTaxonName": "Staphylococcus aureus"
 }, 
 "otu349151": {
-"^ot:originalLabel": "Clostridium spiroforme"
+"^ot:originalLabel": "Clostridium spiroforme", 
+"^ot:ottId": 4018462, 
+"^ot:ottTaxonName": "Clostridium spiroforme"
 }, 
 "otu349152": {
-"^ot:originalLabel": "Clostridium ramosum"
+"^ot:originalLabel": "Clostridium ramosum", 
+"^ot:ottId": 4018918, 
+"^ot:ottTaxonName": "Clostridium ramosum"
 }, 
 "otu349153": {
 "^ot:originalLabel": "Coprobacillus sp", 
@@ -5307,13 +5366,19 @@
 "^ot:originalLabel": "Erysipelotrichaceae bacterium"
 }, 
 "otu349164": {
-"^ot:originalLabel": "Eubacterium dolichum"
+"^ot:originalLabel": "Eubacterium dolichum", 
+"^ot:ottId": 4018837, 
+"^ot:ottTaxonName": "Eubacterium dolichum"
 }, 
 "otu349165": {
-"^ot:originalLabel": "Eubacterium biforme"
+"^ot:originalLabel": "Eubacterium biforme", 
+"^ot:ottId": 4018954, 
+"^ot:ottTaxonName": "Eubacterium biforme"
 }, 
 "otu349166": {
-"^ot:originalLabel": "Eubacterium cylindroides"
+"^ot:originalLabel": "Eubacterium cylindroides", 
+"^ot:ottId": 4018838, 
+"^ot:ottTaxonName": "Eubacterium cylindroides"
 }, 
 "otu349167": {
 "^ot:originalLabel": "Acholeplasma laidlawii", 
@@ -5321,16 +5386,24 @@
 "^ot:ottTaxonName": "Acholeplasma laidlawii"
 }, 
 "otu349168": {
-"^ot:originalLabel": "Candidatus Phytoplasma"
+"^ot:originalLabel": "Candidatus Phytoplasma", 
+"^ot:ottId": 820498, 
+"^ot:ottTaxonName": "Candidatus Phytoplasma"
 }, 
 "otu349169": {
-"^ot:originalLabel": "Candidatus Phytoplasma"
+"^ot:originalLabel": "Candidatus Phytoplasma", 
+"^ot:ottId": 820498, 
+"^ot:ottTaxonName": "Candidatus Phytoplasma"
 }, 
 "otu349170": {
-"^ot:originalLabel": "Candidatus Phytoplasma"
+"^ot:originalLabel": "Candidatus Phytoplasma", 
+"^ot:ottId": 820498, 
+"^ot:ottTaxonName": "Candidatus Phytoplasma"
 }, 
 "otu349171": {
-"^ot:originalLabel": "Candidatus Phytoplasma"
+"^ot:originalLabel": "Candidatus Phytoplasma", 
+"^ot:ottId": 820498, 
+"^ot:ottTaxonName": "Candidatus Phytoplasma"
 }, 
 "otu349172": {
 "^ot:originalLabel": "Mesoplasma florum", 
@@ -5366,13 +5439,19 @@
 "^ot:originalLabel": "Mycoplasma capricolum"
 }, 
 "otu349179": {
-"^ot:originalLabel": "Mycoplasma leachii"
+"^ot:originalLabel": "Mycoplasma leachii", 
+"^ot:ottId": 772086, 
+"^ot:ottTaxonName": "Mycoplasma leachii"
 }, 
 "otu349180": {
-"^ot:originalLabel": "Mycoplasma leachii"
+"^ot:originalLabel": "Mycoplasma leachii", 
+"^ot:ottId": 772086, 
+"^ot:ottTaxonName": "Mycoplasma leachii"
 }, 
 "otu349181": {
-"^ot:originalLabel": "Mycoplasma putrefaciens"
+"^ot:originalLabel": "Mycoplasma putrefaciens", 
+"^ot:ottId": 721664, 
+"^ot:ottTaxonName": "Mycoplasma putrefaciens"
 }, 
 "otu349182": {
 "^ot:originalLabel": "Mycoplasma haemofelis", 
@@ -5690,7 +5769,9 @@
 "^ot:ottTaxonName": "Faecalibacterium prausnitzii"
 }, 
 "otu349245": {
-"^ot:originalLabel": "Clostridium methylpentosum"
+"^ot:originalLabel": "Clostridium methylpentosum", 
+"^ot:ottId": 49936, 
+"^ot:ottTaxonName": "Clostridium methylpentosum"
 }, 
 "otu349246": {
 "^ot:originalLabel": "Ruminococcus albus", 
@@ -5740,7 +5821,9 @@
 "^ot:ottTaxonName": "Ethanoligenens harbinense"
 }, 
 "otu349257": {
-"^ot:originalLabel": "Clostridium lentocellum"
+"^ot:originalLabel": "Clostridium lentocellum", 
+"^ot:ottId": 352421, 
+"^ot:ottTaxonName": "Cellulosilyticum lentocellum"
 }, 
 "otu349258": {
 "^ot:originalLabel": "Epulopiscium sp", 
@@ -5753,7 +5836,9 @@
 "^ot:ottTaxonName": "Coprococcus catus"
 }, 
 "otu349260": {
-"^ot:originalLabel": "Eubacterium hallii"
+"^ot:originalLabel": "Eubacterium hallii", 
+"^ot:ottId": 5256446, 
+"^ot:ottTaxonName": "Eubacterium hallii"
 }, 
 "otu349261": {
 "^ot:originalLabel": "Anaerostipes caccae", 
@@ -5796,7 +5881,9 @@
 "^ot:ottTaxonName": "Clostridium"
 }, 
 "otu349269": {
-"^ot:originalLabel": "Eubacterium ventriosum"
+"^ot:originalLabel": "Eubacterium ventriosum", 
+"^ot:ottId": 578523, 
+"^ot:ottTaxonName": "Eubacterium ventriosum"
 }, 
 "otu349270": {
 "^ot:originalLabel": "Butyrivibrio crossotus", 
@@ -5807,7 +5894,9 @@
 "^ot:originalLabel": "Bacteroides pectinophilus"
 }, 
 "otu349272": {
-"^ot:originalLabel": "Eubacterium eligens"
+"^ot:originalLabel": "Eubacterium eligens", 
+"^ot:ottId": 5256447, 
+"^ot:ottTaxonName": "Eubacterium eligens"
 }, 
 "otu349273": {
 "^ot:originalLabel": "Lachnospiraceae bacterium", 
@@ -5820,10 +5909,14 @@
 "^ot:ottTaxonName": "Butyrivibrio proteoclasticus"
 }, 
 "otu349275": {
-"^ot:originalLabel": "Eubacterium cellulosolvens"
+"^ot:originalLabel": "Eubacterium cellulosolvens", 
+"^ot:ottId": 452176, 
+"^ot:ottTaxonName": "Eubacterium cellulosolvens"
 }, 
 "otu349276": {
-"^ot:originalLabel": "t649989949"
+"^ot:originalLabel": "t649989949", 
+"^ot:ottId": 568097, 
+"^ot:ottTaxonName": "Eubacterium cellulosolvens 6"
 }, 
 "otu349277": {
 "^ot:originalLabel": "Shuttleworthia satelles", 
@@ -5916,7 +6009,9 @@
 "^ot:ottTaxonName": "Blautia hydrogenotrophica"
 }, 
 "otu349295": {
-"^ot:originalLabel": "Bryantella formatexigens"
+"^ot:originalLabel": "Bryantella formatexigens", 
+"^ot:ottId": 427104, 
+"^ot:ottTaxonName": "Marvinbryantia formatexigens"
 }, 
 "otu349296": {
 "^ot:originalLabel": "Clostridium nexile", 
@@ -5939,10 +6034,14 @@
 "^ot:ottTaxonName": "Lachnospiraceae"
 }, 
 "otu349300": {
-"^ot:originalLabel": "Ruminococcus torques"
+"^ot:originalLabel": "Ruminococcus torques", 
+"^ot:ottId": 210938, 
+"^ot:ottTaxonName": "[Ruminococcus] torques"
 }, 
 "otu349301": {
-"^ot:originalLabel": "Ruminococcus lactaris"
+"^ot:originalLabel": "Ruminococcus lactaris", 
+"^ot:ottId": 667268, 
+"^ot:ottTaxonName": "Ruminococcus lactaris"
 }, 
 "otu349302": {
 "^ot:originalLabel": "Lachnospiraceae bacterium", 
@@ -5960,7 +6059,9 @@
 "^ot:ottTaxonName": "Lachnospiraceae"
 }, 
 "otu349305": {
-"^ot:originalLabel": "Ruminococcus torques"
+"^ot:originalLabel": "Ruminococcus torques", 
+"^ot:ottId": 210938, 
+"^ot:ottTaxonName": "[Ruminococcus] torques"
 }, 
 "otu349306": {
 "^ot:originalLabel": "Lachnospiraceae bacterium", 
@@ -5968,7 +6069,9 @@
 "^ot:ottTaxonName": "Lachnospiraceae"
 }, 
 "otu349307": {
-"^ot:originalLabel": "Ruminococcus gnavus"
+"^ot:originalLabel": "Ruminococcus gnavus", 
+"^ot:ottId": 210933, 
+"^ot:ottTaxonName": "[Ruminococcus] gnavus"
 }, 
 "otu349308": {
 "^ot:originalLabel": "Clostridium sp", 
@@ -5996,10 +6099,14 @@
 "^ot:ottTaxonName": "Dorea longicatena"
 }, 
 "otu349313": {
-"^ot:originalLabel": "Clostridium hylemonae"
+"^ot:originalLabel": "Clostridium hylemonae", 
+"^ot:ottId": 429948, 
+"^ot:ottTaxonName": "Clostridium hylemonae"
 }, 
 "otu349314": {
-"^ot:originalLabel": "Clostridium scindens"
+"^ot:originalLabel": "Clostridium scindens", 
+"^ot:ottId": 302518, 
+"^ot:ottTaxonName": "Clostridium scindens"
 }, 
 "otu349315": {
 "^ot:originalLabel": "Lachnospiraceae bacterium", 
@@ -6027,13 +6134,17 @@
 "^ot:ottTaxonName": "Lachnospiraceae"
 }, 
 "otu349320": {
-"^ot:originalLabel": "Eubacterium saburreum"
+"^ot:originalLabel": "Eubacterium saburreum", 
+"^ot:ottId": 922634, 
+"^ot:ottTaxonName": "Lachnoanaerobaculum saburreum"
 }, 
 "otu349321": {
 "^ot:originalLabel": "Clostridium hathewayi"
 }, 
 "otu349322": {
-"^ot:originalLabel": "Clostridium saccharolyticum"
+"^ot:originalLabel": "Clostridium saccharolyticum", 
+"^ot:ottId": 570671, 
+"^ot:ottTaxonName": "Clostridium saccharolyticum"
 }, 
 "otu349323": {
 "^ot:originalLabel": "Clostridiales sp", 
@@ -6041,7 +6152,9 @@
 "^ot:ottTaxonName": "Clostridiales"
 }, 
 "otu349324": {
-"^ot:originalLabel": "Clostridium bolteae"
+"^ot:originalLabel": "Clostridium bolteae", 
+"^ot:ottId": 545599, 
+"^ot:ottTaxonName": "Clostridium bolteae"
 }, 
 "otu349325": {
 "^ot:originalLabel": "Clostridium asparagiforme"
@@ -6111,28 +6224,44 @@
 "^ot:ottTaxonName": "Clostridium"
 }, 
 "otu349340": {
-"^ot:originalLabel": "Clostridium cellulolyticum"
+"^ot:originalLabel": "Clostridium cellulolyticum", 
+"^ot:ottId": 68292, 
+"^ot:ottTaxonName": "Clostridium cellulolyticum"
 }, 
 "otu349341": {
-"^ot:originalLabel": "Clostridium papyrosolvens"
+"^ot:originalLabel": "Clostridium papyrosolvens", 
+"^ot:ottId": 352440, 
+"^ot:ottTaxonName": "Clostridium papyrosolvens"
 }, 
 "otu349342": {
-"^ot:originalLabel": "Clostridium thermocellum"
+"^ot:originalLabel": "Clostridium thermocellum", 
+"^ot:ottId": 537439, 
+"^ot:ottTaxonName": "Clostridium thermocellum"
 }, 
 "otu349343": {
-"^ot:originalLabel": "Clostridium thermocellum"
+"^ot:originalLabel": "Clostridium thermocellum", 
+"^ot:ottId": 537439, 
+"^ot:ottTaxonName": "Clostridium thermocellum"
 }, 
 "otu349344": {
-"^ot:originalLabel": "Clostridium thermocellum"
+"^ot:originalLabel": "Clostridium thermocellum", 
+"^ot:ottId": 537439, 
+"^ot:ottTaxonName": "Clostridium thermocellum"
 }, 
 "otu349345": {
-"^ot:originalLabel": "Clostridium thermocellum"
+"^ot:originalLabel": "Clostridium thermocellum", 
+"^ot:ottId": 537439, 
+"^ot:ottTaxonName": "Clostridium thermocellum"
 }, 
 "otu349346": {
-"^ot:originalLabel": "Clostridium alkalicellulosi"
+"^ot:originalLabel": "Clostridium alkalicellulosi", 
+"^ot:ottId": 546830, 
+"^ot:ottTaxonName": "Clostridium alkalicellulosi"
 }, 
 "otu349347": {
-"^ot:originalLabel": "Clostridium clariflavum"
+"^ot:originalLabel": "Clostridium clariflavum", 
+"^ot:ottId": 180938, 
+"^ot:ottTaxonName": "Clostridium clariflavum"
 }, 
 "otu349348": {
 "^ot:originalLabel": "t648276600", 
@@ -6145,34 +6274,54 @@
 "^ot:ottTaxonName": "Acetivibrio cellulolyticus"
 }, 
 "otu349350": {
-"^ot:originalLabel": "Caldicellulosiruptor saccharolyticus"
+"^ot:originalLabel": "Caldicellulosiruptor saccharolyticus", 
+"^ot:ottId": 115113, 
+"^ot:ottTaxonName": "Caldicellulosiruptor saccharolyticus"
 }, 
 "otu349351": {
-"^ot:originalLabel": "Caldicellulosiruptor hydrothermalis"
+"^ot:originalLabel": "Caldicellulosiruptor hydrothermalis", 
+"^ot:ottId": 63786, 
+"^ot:ottTaxonName": "Caldicellulosiruptor hydrothermalis"
 }, 
 "otu349352": {
-"^ot:originalLabel": "Caldicellulosiruptor kronotskyensis"
+"^ot:originalLabel": "Caldicellulosiruptor kronotskyensis", 
+"^ot:ottId": 63791, 
+"^ot:ottTaxonName": "Caldicellulosiruptor kronotskyensis"
 }, 
 "otu349353": {
-"^ot:originalLabel": "Caldicellulosiruptor bescii"
+"^ot:originalLabel": "Caldicellulosiruptor bescii", 
+"^ot:ottId": 520613, 
+"^ot:ottTaxonName": "Caldicellulosiruptor bescii"
 }, 
 "otu349354": {
-"^ot:originalLabel": "Caldicellulosiruptor kristjanssonii"
+"^ot:originalLabel": "Caldicellulosiruptor kristjanssonii", 
+"^ot:ottId": 994383, 
+"^ot:ottTaxonName": "Caldicellulosiruptor kristjanssonii"
 }, 
 "otu349355": {
-"^ot:originalLabel": "Caldicellulosiruptor lactoaceticus"
+"^ot:originalLabel": "Caldicellulosiruptor lactoaceticus", 
+"^ot:ottId": 898462, 
+"^ot:ottTaxonName": "Caldicellulosiruptor lactoaceticus"
 }, 
 "otu349356": {
-"^ot:originalLabel": "Caldicellulosiruptor owensensis"
+"^ot:originalLabel": "Caldicellulosiruptor owensensis", 
+"^ot:ottId": 745531, 
+"^ot:ottTaxonName": "Caldicellulosiruptor owensensis"
 }, 
 "otu349357": {
-"^ot:originalLabel": "Caldicellulosiruptor obsidiansis"
+"^ot:originalLabel": "Caldicellulosiruptor obsidiansis", 
+"^ot:ottId": 265804, 
+"^ot:ottTaxonName": "Caldicellulosiruptor obsidiansis"
 }, 
 "otu349358": {
-"^ot:originalLabel": "Tepidanaerobacter sp"
+"^ot:originalLabel": "Tepidanaerobacter sp", 
+"^ot:ottId": 927159, 
+"^ot:ottTaxonName": "Tepidanaerobacter"
 }, 
 "otu349359": {
-"^ot:originalLabel": "Thermosediminibacter oceani"
+"^ot:originalLabel": "Thermosediminibacter oceani", 
+"^ot:ottId": 234257, 
+"^ot:ottTaxonName": "Thermosediminibacter oceani"
 }, 
 "otu349360": {
 "^ot:originalLabel": "Halanaerobium hydrogenoformans", 
@@ -6215,25 +6364,39 @@
 "^ot:ottTaxonName": "Natranaerobius thermophilus"
 }, 
 "otu349368": {
-"^ot:originalLabel": "Sulfobacillus thermosulfidooxidans"
+"^ot:originalLabel": "Sulfobacillus thermosulfidooxidans", 
+"^ot:ottId": 776835, 
+"^ot:ottTaxonName": "Sulfobacillus thermosulfidooxidans"
 }, 
 "otu349369": {
-"^ot:originalLabel": "Sulfobacillus acidophilus"
+"^ot:originalLabel": "Sulfobacillus acidophilus", 
+"^ot:ottId": 169126, 
+"^ot:ottTaxonName": "Sulfobacillus acidophilus"
 }, 
 "otu349370": {
-"^ot:originalLabel": "Sulfobacillus acidophilus"
+"^ot:originalLabel": "Sulfobacillus acidophilus", 
+"^ot:ottId": 169126, 
+"^ot:ottTaxonName": "Sulfobacillus acidophilus"
 }, 
 "otu349371": {
-"^ot:originalLabel": "Thermaerobacter marianensis"
+"^ot:originalLabel": "Thermaerobacter marianensis", 
+"^ot:ottId": 634967, 
+"^ot:ottTaxonName": "Thermaerobacter marianensis"
 }, 
 "otu349372": {
-"^ot:originalLabel": "Thermaerobacter subterraneus"
+"^ot:originalLabel": "Thermaerobacter subterraneus", 
+"^ot:ottId": 275701, 
+"^ot:ottTaxonName": "Thermaerobacter subterraneus"
 }, 
 "otu349373": {
-"^ot:originalLabel": "t649990024"
+"^ot:originalLabel": "t649990024", 
+"^ot:ottId": 488956, 
+"^ot:ottTaxonName": "Thermaerobacter subterraneus DSM 13965"
 }, 
 "otu349374": {
-"^ot:originalLabel": "Symbiobacterium thermophilum"
+"^ot:originalLabel": "Symbiobacterium thermophilum", 
+"^ot:ottId": 453925, 
+"^ot:ottTaxonName": "Symbiobacterium thermophilum"
 }, 
 "otu349375": {
 "^ot:originalLabel": "Marinithermus hydrothermalis", 
@@ -6581,7 +6744,9 @@
 "^ot:ottTaxonName": "Oscillatoria"
 }, 
 "otu349444": {
-"^ot:originalLabel": "Oscillatoriales sp"
+"^ot:originalLabel": "Oscillatoriales sp", 
+"^ot:ottId": 843528, 
+"^ot:ottTaxonName": "Oscillatoriales"
 }, 
 "otu349445": {
 "^ot:originalLabel": "Fischerella sp", 
@@ -6589,7 +6754,9 @@
 "^ot:ottTaxonName": "Fischerella"
 }, 
 "otu349446": {
-"^ot:originalLabel": "Nostoc punctiforme"
+"^ot:originalLabel": "Nostoc punctiforme", 
+"^ot:ottId": 782567, 
+"^ot:ottTaxonName": "Nostoc punctiforme"
 }, 
 "otu349447": {
 "^ot:originalLabel": "Nostoc sp", 
@@ -6645,7 +6812,9 @@
 "^ot:ottTaxonName": "Cyanothece"
 }, 
 "otu349458": {
-"^ot:originalLabel": "Crocosphaera watsonii"
+"^ot:originalLabel": "Crocosphaera watsonii", 
+"^ot:ottId": 777927, 
+"^ot:ottTaxonName": "Crocosphaera watsonii"
 }, 
 "otu349459": {
 "^ot:originalLabel": "t646311970 cyanobacterium UCYN-A", 
@@ -6673,13 +6842,19 @@
 "^ot:ottTaxonName": "Synechococcus"
 }, 
 "otu349464": {
-"^ot:originalLabel": "Synechocystis sp"
+"^ot:originalLabel": "Synechocystis sp", 
+"^ot:ottId": 319255, 
+"^ot:ottTaxonName": "Synechocystis"
 }, 
 "otu349465": {
-"^ot:originalLabel": "Synechocystis sp"
+"^ot:originalLabel": "Synechocystis sp", 
+"^ot:ottId": 319255, 
+"^ot:ottTaxonName": "Synechocystis"
 }, 
 "otu349466": {
-"^ot:originalLabel": "Microcoleus chthonoplastes"
+"^ot:originalLabel": "Microcoleus chthonoplastes", 
+"^ot:ottId": 478476, 
+"^ot:ottTaxonName": "Coleofasciculus chthonoplastes"
 }, 
 "otu349467": {
 "^ot:originalLabel": "Dehalogenimonas lykanthroporepellens", 
@@ -6732,7 +6907,9 @@
 "^ot:ottTaxonName": "Sphaerobacter thermophilus"
 }, 
 "otu349477": {
-"^ot:originalLabel": "Thermobaculum terrenum"
+"^ot:originalLabel": "Thermobaculum terrenum", 
+"^ot:ottId": 4745145, 
+"^ot:ottTaxonName": "Thermobaculum terrenum"
 }, 
 "otu349478": {
 "^ot:originalLabel": "t641228494", 
@@ -7675,10 +7852,14 @@
 "^ot:ottTaxonName": "Streptomyces griseus"
 }, 
 "otu349666": {
-"^ot:originalLabel": "Streptomyces roseosporus"
+"^ot:originalLabel": "Streptomyces roseosporus", 
+"^ot:ottId": 163080, 
+"^ot:ottTaxonName": "Streptomyces filamentosus"
 }, 
 "otu349667": {
-"^ot:originalLabel": "Streptomyces roseosporus"
+"^ot:originalLabel": "Streptomyces roseosporus", 
+"^ot:ottId": 163080, 
+"^ot:ottTaxonName": "Streptomyces filamentosus"
 }, 
 "otu349668": {
 "^ot:originalLabel": "Streptomyces clavuligerus", 
@@ -8044,7 +8225,9 @@
 "^ot:ottTaxonName": "Corynebacterium amycolatum"
 }, 
 "otu349741": {
-"^ot:originalLabel": "Amycolicicoccus subflavus"
+"^ot:originalLabel": "Amycolicicoccus subflavus", 
+"^ot:ottId": 541768, 
+"^ot:ottTaxonName": "Amycolicicoccus subflavus"
 }, 
 "otu349742": {
 "^ot:originalLabel": "Nocardia farcinica", 
@@ -9063,7 +9246,9 @@
 "^ot:ottTaxonName": "Verrucomicrobium spinosum"
 }, 
 "otu349950": {
-"^ot:originalLabel": "Pedosphaera parvula"
+"^ot:originalLabel": "Pedosphaera parvula", 
+"^ot:ottId": 1131, 
+"^ot:ottTaxonName": "Pedosphaera parvula"
 }, 
 "otu349951": {
 "^ot:originalLabel": "Lentisphaera araneosa", 
@@ -9326,7 +9511,9 @@
 "^ot:ottTaxonName": "Treponema pallidum"
 }, 
 "otu350003": {
-"^ot:originalLabel": "t2511231191"
+"^ot:originalLabel": "t2511231191", 
+"^ot:ottId": 403125, 
+"^ot:ottTaxonName": "Treponema pallidum subsp. pallidum"
 }, 
 "otu350004": {
 "^ot:originalLabel": "Treponema pallidum", 
@@ -9344,7 +9531,9 @@
 "^ot:ottTaxonName": "Treponema pallidum"
 }, 
 "otu350007": {
-"^ot:originalLabel": "Spirochaeta coccoides"
+"^ot:originalLabel": "Spirochaeta coccoides", 
+"^ot:ottId": 147904, 
+"^ot:ottTaxonName": "Sphaerochaeta coccoides"
 }, 
 "otu350008": {
 "^ot:originalLabel": "Spirochaeta sp", 
@@ -9422,7 +9611,9 @@
 "^ot:ottTaxonName": "Gemmatimonas aurantiaca"
 }, 
 "otu350023": {
-"^ot:originalLabel": "Candidatus Cloacamonas"
+"^ot:originalLabel": "Candidatus Cloacamonas", 
+"^ot:ottId": 4745116, 
+"^ot:ottTaxonName": "Candidatus Cloacamonas"
 }, 
 "otu350024": {
 "^ot:originalLabel": "Chloroherpeton thalassium", 
@@ -9465,7 +9656,9 @@
 "^ot:ottTaxonName": "Chlorobium phaeovibrioides"
 }, 
 "otu350032": {
-"^ot:originalLabel": "Pelodictyon luteolum"
+"^ot:originalLabel": "Pelodictyon luteolum", 
+"^ot:ottId": 5260452, 
+"^ot:ottTaxonName": "Chlorobium luteolum"
 }, 
 "otu350033": {
 "^ot:originalLabel": "Chlorobium ferrooxidans", 
@@ -9966,7 +10159,9 @@
 "^ot:ottTaxonName": "Paraprevotella xylaniphila"
 }, 
 "otu350133": {
-"^ot:originalLabel": "Prevotella tannerae"
+"^ot:originalLabel": "Prevotella tannerae", 
+"^ot:ottId": 241106, 
+"^ot:ottTaxonName": "Alloprevotella tannerae"
 }, 
 "otu350134": {
 "^ot:originalLabel": "Prevotella ruminicola", 
@@ -10204,7 +10399,9 @@
 "^ot:ottTaxonName": "Alistipes"
 }, 
 "otu350181": {
-"^ot:originalLabel": "Flavobacteria sp"
+"^ot:originalLabel": "Flavobacteria sp", 
+"^ot:ottId": 1082463, 
+"^ot:ottTaxonName": "Flavobacteria"
 }, 
 "otu350182": {
 "^ot:originalLabel": "Fluviicola taffensis", 
@@ -10270,7 +10467,9 @@
 "^ot:ottTaxonName": "Weeksella virosa"
 }, 
 "otu350195": {
-"^ot:originalLabel": "Flavobacteria sp"
+"^ot:originalLabel": "Flavobacteria sp", 
+"^ot:ottId": 1082463, 
+"^ot:ottTaxonName": "Flavobacteria"
 }, 
 "otu350196": {
 "^ot:originalLabel": "Flavobacterium johnsoniae"
@@ -10316,7 +10515,9 @@
 "^ot:ottTaxonName": "Capnocytophaga sputigena"
 }, 
 "otu350205": {
-"^ot:originalLabel": "t643886118 Flavobacteria MS024-2A"
+"^ot:originalLabel": "t643886118 Flavobacteria MS024-2A", 
+"^ot:ottId": 1082463, 
+"^ot:ottTaxonName": "Flavobacteria"
 }, 
 "otu350206": {
 "^ot:originalLabel": "Robiginitalea biformata", 
@@ -10324,7 +10525,9 @@
 "^ot:ottTaxonName": "Robiginitalea biformata"
 }, 
 "otu350207": {
-"^ot:originalLabel": "t643886079 Flavobacteria MS024-3C"
+"^ot:originalLabel": "t643886079 Flavobacteria MS024-3C", 
+"^ot:ottId": 1082463, 
+"^ot:ottTaxonName": "Flavobacteria"
 }, 
 "otu350208": {
 "^ot:originalLabel": "Maribacter sp", 
@@ -10372,7 +10575,9 @@
 "^ot:ottTaxonName": "Ulvibacter"
 }, 
 "otu350217": {
-"^ot:originalLabel": "Flavobacteria sp"
+"^ot:originalLabel": "Flavobacteria sp", 
+"^ot:ottId": 1082463, 
+"^ot:ottTaxonName": "Flavobacteria"
 }, 
 "otu350218": {
 "^ot:originalLabel": "Dokdonia donghaensis", 
@@ -10380,7 +10585,9 @@
 "^ot:ottTaxonName": "Dokdonia donghaensis"
 }, 
 "otu350219": {
-"^ot:originalLabel": "Krokinobacter sp"
+"^ot:originalLabel": "Krokinobacter sp", 
+"^ot:ottId": 718912, 
+"^ot:ottTaxonName": "Krokinobacter"
 }, 
 "otu350220": {
 "^ot:originalLabel": "Leeuwenhoekiella blandensis", 
@@ -10468,7 +10675,9 @@
 "^ot:ottTaxonName": "Haliscomenobacter hydrossis"
 }, 
 "otu350237": {
-"^ot:originalLabel": "Flavobacteria sp"
+"^ot:originalLabel": "Flavobacteria sp", 
+"^ot:ottId": 1082463, 
+"^ot:ottTaxonName": "Flavobacteria"
 }, 
 "otu350238": {
 "^ot:originalLabel": "Saprospira grandis", 
@@ -10481,19 +10690,29 @@
 "^ot:ottTaxonName": "Saprospira grandis"
 }, 
 "otu350240": {
-"^ot:originalLabel": "Rhodothermus marinus"
+"^ot:originalLabel": "Rhodothermus marinus", 
+"^ot:ottId": 457134, 
+"^ot:ottTaxonName": "Rhodothermus marinus"
 }, 
 "otu350241": {
-"^ot:originalLabel": "Rhodothermus marinus"
+"^ot:originalLabel": "Rhodothermus marinus", 
+"^ot:ottId": 457134, 
+"^ot:ottTaxonName": "Rhodothermus marinus"
 }, 
 "otu350242": {
-"^ot:originalLabel": "Rhodothermus marinus"
+"^ot:originalLabel": "Rhodothermus marinus", 
+"^ot:ottId": 457134, 
+"^ot:ottTaxonName": "Rhodothermus marinus"
 }, 
 "otu350243": {
-"^ot:originalLabel": "Salinibacter ruber"
+"^ot:originalLabel": "Salinibacter ruber", 
+"^ot:ottId": 212516, 
+"^ot:ottTaxonName": "Salinibacter ruber"
 }, 
 "otu350244": {
-"^ot:originalLabel": "Caldithrix abyssi"
+"^ot:originalLabel": "Caldithrix abyssi", 
+"^ot:ottId": 4019027, 
+"^ot:ottTaxonName": "Caldithrix abyssi"
 }, 
 "otu350245": {
 "^ot:originalLabel": "Candidatus Endomicrobium", 
@@ -11131,10 +11350,14 @@
 "^ot:ottTaxonName": "Holophaga foetida"
 }, 
 "otu350372": {
-"^ot:originalLabel": "Candidatus Chloracidobacterium"
+"^ot:originalLabel": "Candidatus Chloracidobacterium", 
+"^ot:ottId": 4790911, 
+"^ot:ottTaxonName": "Candidatus Chloracidobacterium"
 }, 
 "otu350373": {
-"^ot:originalLabel": "Solibacter usitatus"
+"^ot:originalLabel": "Solibacter usitatus", 
+"^ot:ottId": 746305, 
+"^ot:ottTaxonName": "Candidatus Solibacter usitatus"
 }, 
 "otu350374": {
 "^ot:originalLabel": "Korebacter versatilis", 
@@ -11387,7 +11610,9 @@
 "^ot:ottTaxonName": "Syntrophus aciditrophicus"
 }, 
 "otu350424": {
-"^ot:originalLabel": "Syntrophorhabdus aromaticivorans"
+"^ot:originalLabel": "Syntrophorhabdus aromaticivorans", 
+"^ot:ottId": 660220, 
+"^ot:ottTaxonName": "Syntrophorhabdus aromaticivorans"
 }, 
 "otu350425": {
 "^ot:originalLabel": "Desulfomonile tiedjei", 
@@ -11440,7 +11665,9 @@
 "^ot:ottTaxonName": "Corallococcus coralloides"
 }, 
 "otu350435": {
-"^ot:originalLabel": "Myxococcus xanthus"
+"^ot:originalLabel": "Myxococcus xanthus", 
+"^ot:ottId": 939454, 
+"^ot:ottTaxonName": "Myxococcus xanthus"
 }, 
 "otu350436": {
 "^ot:originalLabel": "Myxococcus fulvus", 
@@ -11528,7 +11755,9 @@
 "^ot:ottTaxonName": "Ruthia"
 }, 
 "otu350453": {
-"^ot:originalLabel": "Candidatus Vesicomyosocius"
+"^ot:originalLabel": "Candidatus Vesicomyosocius", 
+"^ot:ottId": 4790546, 
+"^ot:ottTaxonName": "Candidatus Vesicomyosocius okutanii HA"
 }, 
 "otu350454": {
 "^ot:originalLabel": "Thiomicrospira crunogena", 
@@ -11752,10 +11981,14 @@
 "^ot:ottTaxonName": "Aliivibrio salmonicida"
 }, 
 "otu350499": {
-"^ot:originalLabel": "Vibrio fischeri"
+"^ot:originalLabel": "Vibrio fischeri", 
+"^ot:ottId": 79581, 
+"^ot:ottTaxonName": "Aliivibrio fischeri"
 }, 
 "otu350500": {
-"^ot:originalLabel": "Vibrio fischeri"
+"^ot:originalLabel": "Vibrio fischeri", 
+"^ot:ottId": 79581, 
+"^ot:ottTaxonName": "Aliivibrio fischeri"
 }, 
 "otu350501": {
 "^ot:originalLabel": "Vibrio shilonii", 
@@ -11968,100 +12201,164 @@
 "^ot:ottTaxonName": "Vibrio"
 }, 
 "otu350543": {
-"^ot:originalLabel": "Vibrio cholerae"
+"^ot:originalLabel": "Vibrio cholerae", 
+"^ot:ottId": 232135, 
+"^ot:ottTaxonName": "Vibrio cholerae"
 }, 
 "otu350544": {
-"^ot:originalLabel": "Vibrio cholerae"
+"^ot:originalLabel": "Vibrio cholerae", 
+"^ot:ottId": 232135, 
+"^ot:ottTaxonName": "Vibrio cholerae"
 }, 
 "otu350545": {
-"^ot:originalLabel": "Vibrio cholerae"
+"^ot:originalLabel": "Vibrio cholerae", 
+"^ot:ottId": 232135, 
+"^ot:ottTaxonName": "Vibrio cholerae"
 }, 
 "otu350546": {
-"^ot:originalLabel": "Vibrio cholerae"
+"^ot:originalLabel": "Vibrio cholerae", 
+"^ot:ottId": 232135, 
+"^ot:ottTaxonName": "Vibrio cholerae"
 }, 
 "otu350547": {
-"^ot:originalLabel": "Vibrio cholerae"
+"^ot:originalLabel": "Vibrio cholerae", 
+"^ot:ottId": 232135, 
+"^ot:ottTaxonName": "Vibrio cholerae"
 }, 
 "otu350548": {
-"^ot:originalLabel": "Vibrio cholerae"
+"^ot:originalLabel": "Vibrio cholerae", 
+"^ot:ottId": 232135, 
+"^ot:ottTaxonName": "Vibrio cholerae"
 }, 
 "otu350549": {
-"^ot:originalLabel": "Vibrio cholerae"
+"^ot:originalLabel": "Vibrio cholerae", 
+"^ot:ottId": 232135, 
+"^ot:ottTaxonName": "Vibrio cholerae"
 }, 
 "otu350550": {
-"^ot:originalLabel": "Vibrio cholerae"
+"^ot:originalLabel": "Vibrio cholerae", 
+"^ot:ottId": 232135, 
+"^ot:ottTaxonName": "Vibrio cholerae"
 }, 
 "otu350551": {
-"^ot:originalLabel": "Vibrio cholerae"
+"^ot:originalLabel": "Vibrio cholerae", 
+"^ot:ottId": 232135, 
+"^ot:ottTaxonName": "Vibrio cholerae"
 }, 
 "otu350552": {
-"^ot:originalLabel": "Vibrio cholerae"
+"^ot:originalLabel": "Vibrio cholerae", 
+"^ot:ottId": 232135, 
+"^ot:ottTaxonName": "Vibrio cholerae"
 }, 
 "otu350553": {
-"^ot:originalLabel": "Vibrio cholerae"
+"^ot:originalLabel": "Vibrio cholerae", 
+"^ot:ottId": 232135, 
+"^ot:ottTaxonName": "Vibrio cholerae"
 }, 
 "otu350554": {
-"^ot:originalLabel": "Vibrio cholerae"
+"^ot:originalLabel": "Vibrio cholerae", 
+"^ot:ottId": 232135, 
+"^ot:ottTaxonName": "Vibrio cholerae"
 }, 
 "otu350555": {
-"^ot:originalLabel": "Vibrio cholerae"
+"^ot:originalLabel": "Vibrio cholerae", 
+"^ot:ottId": 232135, 
+"^ot:ottTaxonName": "Vibrio cholerae"
 }, 
 "otu350556": {
-"^ot:originalLabel": "Vibrio cholerae"
+"^ot:originalLabel": "Vibrio cholerae", 
+"^ot:ottId": 232135, 
+"^ot:ottTaxonName": "Vibrio cholerae"
 }, 
 "otu350557": {
-"^ot:originalLabel": "Vibrio cholerae"
+"^ot:originalLabel": "Vibrio cholerae", 
+"^ot:ottId": 232135, 
+"^ot:ottTaxonName": "Vibrio cholerae"
 }, 
 "otu350558": {
-"^ot:originalLabel": "Vibrio cholerae"
+"^ot:originalLabel": "Vibrio cholerae", 
+"^ot:ottId": 232135, 
+"^ot:ottTaxonName": "Vibrio cholerae"
 }, 
 "otu350559": {
-"^ot:originalLabel": "Vibrio cholerae"
+"^ot:originalLabel": "Vibrio cholerae", 
+"^ot:ottId": 232135, 
+"^ot:ottTaxonName": "Vibrio cholerae"
 }, 
 "otu350560": {
-"^ot:originalLabel": "Vibrio cholerae"
+"^ot:originalLabel": "Vibrio cholerae", 
+"^ot:ottId": 232135, 
+"^ot:ottTaxonName": "Vibrio cholerae"
 }, 
 "otu350561": {
-"^ot:originalLabel": "Vibrio cholerae"
+"^ot:originalLabel": "Vibrio cholerae", 
+"^ot:ottId": 232135, 
+"^ot:ottTaxonName": "Vibrio cholerae"
 }, 
 "otu350562": {
-"^ot:originalLabel": "Vibrio cholerae"
+"^ot:originalLabel": "Vibrio cholerae", 
+"^ot:ottId": 232135, 
+"^ot:ottTaxonName": "Vibrio cholerae"
 }, 
 "otu350563": {
-"^ot:originalLabel": "Vibrio cholerae"
+"^ot:originalLabel": "Vibrio cholerae", 
+"^ot:ottId": 232135, 
+"^ot:ottTaxonName": "Vibrio cholerae"
 }, 
 "otu350564": {
-"^ot:originalLabel": "Vibrio cholerae"
+"^ot:originalLabel": "Vibrio cholerae", 
+"^ot:ottId": 232135, 
+"^ot:ottTaxonName": "Vibrio cholerae"
 }, 
 "otu350565": {
-"^ot:originalLabel": "Vibrio cholerae"
+"^ot:originalLabel": "Vibrio cholerae", 
+"^ot:ottId": 232135, 
+"^ot:ottTaxonName": "Vibrio cholerae"
 }, 
 "otu350566": {
-"^ot:originalLabel": "Vibrio cholerae"
+"^ot:originalLabel": "Vibrio cholerae", 
+"^ot:ottId": 232135, 
+"^ot:ottTaxonName": "Vibrio cholerae"
 }, 
 "otu350567": {
-"^ot:originalLabel": "Vibrio cholerae"
+"^ot:originalLabel": "Vibrio cholerae", 
+"^ot:ottId": 232135, 
+"^ot:ottTaxonName": "Vibrio cholerae"
 }, 
 "otu350568": {
-"^ot:originalLabel": "Vibrio cholerae"
+"^ot:originalLabel": "Vibrio cholerae", 
+"^ot:ottId": 232135, 
+"^ot:ottTaxonName": "Vibrio cholerae"
 }, 
 "otu350569": {
-"^ot:originalLabel": "Vibrio cholerae"
+"^ot:originalLabel": "Vibrio cholerae", 
+"^ot:ottId": 232135, 
+"^ot:ottTaxonName": "Vibrio cholerae"
 }, 
 "otu350570": {
-"^ot:originalLabel": "Vibrio cholerae"
+"^ot:originalLabel": "Vibrio cholerae", 
+"^ot:ottId": 232135, 
+"^ot:ottTaxonName": "Vibrio cholerae"
 }, 
 "otu350571": {
-"^ot:originalLabel": "Vibrio cholerae"
+"^ot:originalLabel": "Vibrio cholerae", 
+"^ot:ottId": 232135, 
+"^ot:ottTaxonName": "Vibrio cholerae"
 }, 
 "otu350572": {
-"^ot:originalLabel": "Vibrio cholerae"
+"^ot:originalLabel": "Vibrio cholerae", 
+"^ot:ottId": 232135, 
+"^ot:ottTaxonName": "Vibrio cholerae"
 }, 
 "otu350573": {
-"^ot:originalLabel": "Vibrio cholerae"
+"^ot:originalLabel": "Vibrio cholerae", 
+"^ot:ottId": 232135, 
+"^ot:ottTaxonName": "Vibrio cholerae"
 }, 
 "otu350574": {
-"^ot:originalLabel": "Vibrio cholerae"
+"^ot:originalLabel": "Vibrio cholerae", 
+"^ot:ottId": 232135, 
+"^ot:ottTaxonName": "Vibrio cholerae"
 }, 
 "otu350575": {
 "^ot:originalLabel": "Vibrio mimicus", 
@@ -12879,13 +13176,19 @@
 "^ot:ottTaxonName": "Enterobacter"
 }, 
 "otu350738": {
-"^ot:originalLabel": "Enterobacter cloacae"
+"^ot:originalLabel": "Enterobacter cloacae", 
+"^ot:ottId": 1000834, 
+"^ot:ottTaxonName": "Enterobacter cloacae"
 }, 
 "otu350739": {
-"^ot:originalLabel": "Enterobacter cloacae"
+"^ot:originalLabel": "Enterobacter cloacae", 
+"^ot:ottId": 1000834, 
+"^ot:ottTaxonName": "Enterobacter cloacae"
 }, 
 "otu350740": {
-"^ot:originalLabel": "Enterobacter hormaechei"
+"^ot:originalLabel": "Enterobacter hormaechei", 
+"^ot:ottId": 898593, 
+"^ot:ottTaxonName": "Enterobacter hormaechei"
 }, 
 "otu350741": {
 "^ot:originalLabel": "Enterobacter cancerogenus", 
@@ -12893,7 +13196,9 @@
 "^ot:ottTaxonName": "Enterobacter cancerogenus"
 }, 
 "otu350742": {
-"^ot:originalLabel": "Enterobacter cloacae"
+"^ot:originalLabel": "Enterobacter cloacae", 
+"^ot:ottId": 1000834, 
+"^ot:ottTaxonName": "Enterobacter cloacae"
 }, 
 "otu350743": {
 "^ot:originalLabel": "Enterobacter aerogenes", 
@@ -13058,7 +13363,9 @@
 "^ot:originalLabel": "Escherichia coli"
 }, 
 "otu350789": {
-"^ot:originalLabel": "Shigella sp"
+"^ot:originalLabel": "Shigella sp", 
+"^ot:ottId": 332310, 
+"^ot:ottTaxonName": "Shigella"
 }, 
 "otu350790": {
 "^ot:originalLabel": "Escherichia coli"
@@ -13076,7 +13383,9 @@
 "^ot:originalLabel": "Escherichia coli"
 }, 
 "otu350795": {
-"^ot:originalLabel": "Escherichia sp"
+"^ot:originalLabel": "Escherichia sp", 
+"^ot:ottId": 5341798, 
+"^ot:ottTaxonName": "Escherichia"
 }, 
 "otu350796": {
 "^ot:originalLabel": "Escherichia coli"
@@ -13112,7 +13421,9 @@
 "^ot:originalLabel": "Escherichia coli"
 }, 
 "otu350807": {
-"^ot:originalLabel": "Escherichia sp"
+"^ot:originalLabel": "Escherichia sp", 
+"^ot:ottId": 5341798, 
+"^ot:ottTaxonName": "Escherichia"
 }, 
 "otu350808": {
 "^ot:originalLabel": "Escherichia coli"
@@ -13253,7 +13564,9 @@
 "^ot:originalLabel": "Escherichia coli"
 }, 
 "otu350850": {
-"^ot:originalLabel": "Escherichia sp"
+"^ot:originalLabel": "Escherichia sp", 
+"^ot:ottId": 5341798, 
+"^ot:ottTaxonName": "Escherichia"
 }, 
 "otu350851": {
 "^ot:originalLabel": "Escherichia coli"
@@ -13283,25 +13596,39 @@
 "^ot:ottTaxonName": "Salmonella enterica"
 }, 
 "otu350858": {
-"^ot:originalLabel": "t2512564045"
+"^ot:originalLabel": "t2512564045", 
+"^ot:ottId": 358826, 
+"^ot:ottTaxonName": "Salmonella enterica subsp. enterica serovar Typhimurium"
 }, 
 "otu350859": {
-"^ot:originalLabel": "t2512564046"
+"^ot:originalLabel": "t2512564046", 
+"^ot:ottId": 358826, 
+"^ot:ottTaxonName": "Salmonella enterica subsp. enterica serovar Typhimurium"
 }, 
 "otu350860": {
-"^ot:originalLabel": "t2512564027"
+"^ot:originalLabel": "t2512564027", 
+"^ot:ottId": 358826, 
+"^ot:ottTaxonName": "Salmonella enterica subsp. enterica serovar Typhimurium"
 }, 
 "otu350861": {
-"^ot:originalLabel": "t2512564052"
+"^ot:originalLabel": "t2512564052", 
+"^ot:ottId": 358826, 
+"^ot:ottTaxonName": "Salmonella enterica subsp. enterica serovar Typhimurium"
 }, 
 "otu350862": {
-"^ot:originalLabel": "t2512564051"
+"^ot:originalLabel": "t2512564051", 
+"^ot:ottId": 358826, 
+"^ot:ottTaxonName": "Salmonella enterica subsp. enterica serovar Typhimurium"
 }, 
 "otu350863": {
-"^ot:originalLabel": "t2512564037"
+"^ot:originalLabel": "t2512564037", 
+"^ot:ottId": 358826, 
+"^ot:ottTaxonName": "Salmonella enterica subsp. enterica serovar Typhimurium"
 }, 
 "otu350864": {
-"^ot:originalLabel": "Enterobacter cloacae"
+"^ot:originalLabel": "Enterobacter cloacae", 
+"^ot:ottId": 1000834, 
+"^ot:ottTaxonName": "Enterobacter cloacae"
 }, 
 "otu350865": {
 "^ot:originalLabel": "Klebsiella oxytoca", 
@@ -13320,10 +13647,14 @@
 "^ot:originalLabel": "Escherichia coli"
 }, 
 "otu350869": {
-"^ot:originalLabel": "t2512047089"
+"^ot:originalLabel": "t2512047089", 
+"^ot:ottId": 613687, 
+"^ot:ottTaxonName": "Escherichia coli DSM 30083 = JCM 1649"
 }, 
 "otu350870": {
-"^ot:originalLabel": "t2505679034"
+"^ot:originalLabel": "t2505679034", 
+"^ot:ottId": 613687, 
+"^ot:ottTaxonName": "Escherichia coli DSM 30083 = JCM 1649"
 }, 
 "otu350871": {
 "^ot:originalLabel": "Escherichia coli"
@@ -13380,16 +13711,24 @@
 "^ot:originalLabel": "Escherichia coli"
 }, 
 "otu350889": {
-"^ot:originalLabel": "Shigella flexneri"
+"^ot:originalLabel": "Shigella flexneri", 
+"^ot:ottId": 332280, 
+"^ot:ottTaxonName": "Shigella flexneri"
 }, 
 "otu350890": {
-"^ot:originalLabel": "Shigella flexneri"
+"^ot:originalLabel": "Shigella flexneri", 
+"^ot:ottId": 332280, 
+"^ot:ottTaxonName": "Shigella flexneri"
 }, 
 "otu350891": {
-"^ot:originalLabel": "Shigella flexneri"
+"^ot:originalLabel": "Shigella flexneri", 
+"^ot:ottId": 332280, 
+"^ot:ottTaxonName": "Shigella flexneri"
 }, 
 "otu350892": {
-"^ot:originalLabel": "Shigella flexneri"
+"^ot:originalLabel": "Shigella flexneri", 
+"^ot:ottId": 332280, 
+"^ot:ottTaxonName": "Shigella flexneri"
 }, 
 "otu350893": {
 "^ot:originalLabel": "Escherichia coli"
@@ -14122,7 +14461,9 @@
 "^ot:ottTaxonName": "Marinobacter"
 }, 
 "otu351041": {
-"^ot:originalLabel": "Marinobacter aquaeolei"
+"^ot:originalLabel": "Marinobacter aquaeolei", 
+"^ot:ottId": 564407, 
+"^ot:ottTaxonName": "Marinobacter hydrocarbonoclasticus"
 }, 
 "otu351042": {
 "^ot:originalLabel": "Marinobacter adhaerens", 
@@ -14815,7 +15156,9 @@
 "^ot:ottTaxonName": "Beggiatoa"
 }, 
 "otu351186": {
-"^ot:originalLabel": "Beggiatoa alba"
+"^ot:originalLabel": "Beggiatoa alba", 
+"^ot:ottId": 5249389, 
+"^ot:ottTaxonName": "Beggiatoa alba"
 }, 
 "otu351187": {
 "^ot:originalLabel": "Frateuria aurantia", 
@@ -15364,7 +15707,9 @@
 "^ot:originalLabel": "Candidatus Accumulibacter"
 }, 
 "otu351297": {
-"^ot:originalLabel": "Dechlorosoma suillum"
+"^ot:originalLabel": "Dechlorosoma suillum", 
+"^ot:ottId": 161268, 
+"^ot:ottTaxonName": "Azospira oryzae"
 }, 
 "otu351298": {
 "^ot:originalLabel": "Dechloromonas aromatica"
@@ -15386,10 +15731,14 @@
 "^ot:ottTaxonName": "Azoarcus"
 }, 
 "otu351303": {
-"^ot:originalLabel": "Thiomonas sp"
+"^ot:originalLabel": "Thiomonas sp", 
+"^ot:ottId": 4018143, 
+"^ot:ottTaxonName": "Thiomonas"
 }, 
 "otu351304": {
-"^ot:originalLabel": "Thiomonas intermedia"
+"^ot:originalLabel": "Thiomonas intermedia", 
+"^ot:ottId": 4018142, 
+"^ot:ottTaxonName": "Thiomonas intermedia"
 }, 
 "otu351305": {
 "^ot:originalLabel": "Rubrivivax benzoatilyticus", 
@@ -15412,7 +15761,9 @@
 "^ot:ottTaxonName": "Leptothrix cholodnii"
 }, 
 "otu351309": {
-"^ot:originalLabel": "Rhodoferax ferrireducens"
+"^ot:originalLabel": "Rhodoferax ferrireducens", 
+"^ot:ottId": 578226, 
+"^ot:ottTaxonName": "Albidiferax ferrireducens"
 }, 
 "otu351310": {
 "^ot:originalLabel": "Polaromonas sp", 
@@ -16386,7 +16737,9 @@
 "^ot:ottTaxonName": "Rickettsia"
 }, 
 "otu351505": {
-"^ot:originalLabel": "Rickettsia heilongjiangensis"
+"^ot:originalLabel": "Rickettsia heilongjiangensis", 
+"^ot:ottId": 334950, 
+"^ot:ottTaxonName": "Rickettsia heilongjiangii"
 }, 
 "otu351506": {
 "^ot:originalLabel": "Rickettsia africae", 
@@ -16424,7 +16777,9 @@
 "^ot:ottTaxonName": "Rickettsia massiliae"
 }, 
 "otu351513": {
-"^ot:originalLabel": "Candidatus Midichloria"
+"^ot:originalLabel": "Candidatus Midichloria", 
+"^ot:ottId": 1008537, 
+"^ot:ottTaxonName": "Candidatus Midichloria"
 }, 
 "otu351514": {
 "^ot:originalLabel": "Neorickettsia sennetsu", 
@@ -16590,7 +16945,9 @@
 "^ot:originalLabel": "Citromicrobium bathyomarinum"
 }, 
 "otu351547": {
-"^ot:originalLabel": "Citromicrobium sp"
+"^ot:originalLabel": "Citromicrobium sp", 
+"^ot:ottId": 359804, 
+"^ot:ottTaxonName": "Citromicrobium"
 }, 
 "otu351548": {
 "^ot:originalLabel": "Novosphingobium sp", 
@@ -16656,7 +17013,9 @@
 "^ot:originalLabel": "Micavibrio aeruginosavorus"
 }, 
 "otu351561": {
-"^ot:originalLabel": "Rhodocista centenaria"
+"^ot:originalLabel": "Rhodocista centenaria", 
+"^ot:ottId": 337629, 
+"^ot:ottTaxonName": "Rhodospirillum centenum"
 }, 
 "otu351562": {
 "^ot:originalLabel": "Azospirillum sp", 
@@ -16952,7 +17311,9 @@
 "^ot:ottTaxonName": "Ruegeria pomeroyi"
 }, 
 "otu351621": {
-"^ot:originalLabel": "Silicibacter lacuscaerulensis"
+"^ot:originalLabel": "Silicibacter lacuscaerulensis", 
+"^ot:ottId": 171168, 
+"^ot:ottTaxonName": "Ruegeria lacuscaerulensis"
 }, 
 "otu351622": {
 "^ot:originalLabel": "Ruegeria sp", 
@@ -17010,7 +17371,9 @@
 "^ot:ottTaxonName": "Leisingera methylohalidivorans DSM 14336"
 }, 
 "otu351633": {
-"^ot:originalLabel": "Silicibacter sp"
+"^ot:originalLabel": "Silicibacter sp", 
+"^ot:ottId": 753375, 
+"^ot:ottTaxonName": "Ruegeria"
 }, 
 "otu351634": {
 "^ot:originalLabel": "Ruegeria sp", 
@@ -17586,7 +17949,9 @@
 "^ot:ottTaxonName": "Ensifer meliloti"
 }, 
 "otu351749": {
-"^ot:originalLabel": "t2510065031"
+"^ot:originalLabel": "t2510065031", 
+"^ot:ottId": 43952, 
+"^ot:ottTaxonName": "Ensifer meliloti"
 }, 
 "otu351750": {
 "^ot:originalLabel": "Ensifer meliloti", 
@@ -17624,7 +17989,9 @@
 "^ot:ottTaxonName": "Ensifer terangae"
 }, 
 "otu351757": {
-"^ot:originalLabel": "Sinorhizobium sp"
+"^ot:originalLabel": "Sinorhizobium sp", 
+"^ot:ottId": 726538, 
+"^ot:ottTaxonName": "Sinorhizobium"
 }, 
 "otu351758": {
 "^ot:originalLabel": "Sinorhizobium meliloti", 
@@ -17657,10 +18024,14 @@
 "^ot:ottTaxonName": "Agrobacterium"
 }, 
 "otu351764": {
-"^ot:originalLabel": "Agrobacterium tumefaciens"
+"^ot:originalLabel": "Agrobacterium tumefaciens", 
+"^ot:ottId": 313954, 
+"^ot:ottTaxonName": "Agrobacterium tumefaciens"
 }, 
 "otu351765": {
-"^ot:originalLabel": "Agrobacterium tumefaciens"
+"^ot:originalLabel": "Agrobacterium tumefaciens", 
+"^ot:ottId": 313954, 
+"^ot:ottTaxonName": "Agrobacterium tumefaciens"
 }, 
 "otu351766": {
 "^ot:originalLabel": "Rhizobium leguminosarum", 
@@ -17778,10 +18149,14 @@
 "^ot:ottTaxonName": "Parametaria islahispaniolae"
 }, 
 "otu351789": {
-"^ot:originalLabel": "Candidatus Liberibacter"
+"^ot:originalLabel": "Candidatus Liberibacter", 
+"^ot:ottId": 337623, 
+"^ot:ottTaxonName": "Candidatus Liberibacter"
 }, 
 "otu351790": {
-"^ot:originalLabel": "Candidatus Liberibacter"
+"^ot:originalLabel": "Candidatus Liberibacter", 
+"^ot:ottId": 337623, 
+"^ot:ottTaxonName": "Candidatus Liberibacter"
 }, 
 "otu351791": {
 "^ot:originalLabel": "Microvirga sp", 
@@ -17824,7 +18199,9 @@
 "^ot:ottTaxonName": "Methylobacterium extorquens"
 }, 
 "otu351799": {
-"^ot:originalLabel": "Methylobacterium chloromethanicum"
+"^ot:originalLabel": "Methylobacterium chloromethanicum", 
+"^ot:ottId": 489046, 
+"^ot:ottTaxonName": "Methylobacterium extorquens"
 }, 
 "otu351800": {
 "^ot:originalLabel": "Methylobacterium extorquens", 
@@ -18003,9 +18380,14 @@
 "treeById": {
 "tree5223": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
 "^ot:branchLengthMode": "ot:substitutionCount", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "Fast Tree, ML tree", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node897821", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node897821": {
 "edge897822": {

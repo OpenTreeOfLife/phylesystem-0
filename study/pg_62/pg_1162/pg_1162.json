@@ -19,48 +19,11 @@
 "@id": "peyotl-validator", 
 "@name": "validate_ot_nexson.py", 
 "@url": "https://github.com/OpenTreeOfLife/peyotl", 
-"@version": "0.0.3a", 
+"@version": "0.0.4a", 
 "invocation": {
-"checksPerformed": [
-"MISSING_MANDATORY_KEY", 
-"MISSING_OPTIONAL_KEY", 
-"UNRECOGNIZED_KEY", 
-"MISSING_LIST_EXPECTED", 
-"DUPLICATING_SINGLETON_KEY", 
-"REFERENCED_ID_NOT_FOUND", 
-"REPEATED_ID", 
-"REPEATED_OTU", 
-"MULTIPLE_ROOT_NODES", 
-"NO_ROOT_NODE", 
-"MULTIPLE_EDGES_FOR_NODES", 
-"CYCLE_DETECTED", 
-"DISCONNECTED_GRAPH_DETECTED", 
-"INCORRECT_ROOT_NODE_LABEL", 
-"TIP_WITHOUT_OTU", 
-"TIP_WITHOUT_OTT_ID", 
-"MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
-"NON_MONOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
-"INVALID_PROPERTY_VALUE", 
-"PROPERTY_VALUE_NOT_USEFUL", 
-"UNRECOGNIZED_PROPERTY_VALUE", 
-"MULTIPLE_TREES", 
-"UNRECOGNIZED_TAG", 
-"CONFLICTING_PROPERTY_VALUES", 
-"NO_TREES", 
-"DEPRECATED_PROPERTY", 
-"UNPARSEABLE_META", 
-"UNREACHABLE_NODE", 
-"INCORRECT_VALUE_TYPE", 
-"MISSING_CRUCIAL_CONTENT"
-], 
 "commandLine": [
 "--embed", 
-"--agent-only", 
-"-e", 
-"../mig-phyelesystem-scratch/1162/validation.json", 
-"-o", 
-"../mig-phyelesystem-scratch/1162/final.json", 
-"../mig-phyelesystem-scratch/1162/v1.2.1-1162.json"
+"--agent-only"
 ], 
 "otherProperty": [
 {
@@ -76,9 +39,16 @@
 }
 ]
 }, 
+"^ot:annotationEvents": {
+"annotation": []
+}, 
+"^ot:candidateTreeForSynthesis": [], 
 "^ot:curatorName": "Romina Gazis", 
 "^ot:focalClade": 352914, 
 "^ot:focalCladeOTTTaxonName": "Fungi", 
+"^ot:messages": {
+"message": []
+}, 
 "^ot:otusElementOrder": [
 "otus1162"
 ], 
@@ -86,9 +56,11 @@
 "^ot:studyPublication": {
 "@href": "http://dx.doi.org/10.1038/nature05110"
 }, 
-"^ot:studyPublicationReference": "James, Timothy Y., Frank Kauff, Conrad L. Schoch, P. Brandon Matheny, Val\u00e9rie Hofstetter, Cymon J. Cox, Gail Celio et al. \"Reconstructing the early evolution of Fungi using a six-gene phylogeny.\" Nature 443, no. 7113 (2006): 818-822.", 
+"^ot:studyPublicationReference": "James, Timothy Y., Frank Kauff, Conrad L. Schoch, P. Brandon Matheny, Val\u00e9rie Hofstetter, Cymon J. Cox, Gail Celio et al. 2006. Reconstructing the early evolution of Fungi using a six-gene phylogeny. Nature 443 (7113): 818-822.", 
 "^ot:studyYear": 2006, 
-"^ot:tag": "BI", 
+"^ot:tag": [
+"BI"
+], 
 "^ot:treesElementOrder": [
 "trees1162"
 ], 
@@ -249,7 +221,9 @@
 "^ot:ottTaxonName": "Rhopalomyces elegans"
 }, 
 "otu228600": {
-"^ot:originalLabel": "145 Piptocephalis corymbifera"
+"^ot:originalLabel": "145 Piptocephalis corymbifera", 
+"^ot:ottId": 346211, 
+"^ot:ottTaxonName": "Piptocephalis freseniana"
 }, 
 "otu228601": {
 "^ot:originalLabel": "136 Dimargaris bacillispora", 
@@ -370,7 +344,9 @@
 "^ot:ottTaxonName": "Colacogloea peniophorae"
 }, 
 "otu228625": {
-"^ot:originalLabel": "674 Rhodotorula hordea"
+"^ot:originalLabel": "674 Rhodotorula hordea", 
+"^ot:ottId": 4095323, 
+"^ot:ottTaxonName": "Rhodotorula graminis"
 }, 
 "otu228626": {
 "^ot:originalLabel": "865 Tilletiaria anomala", 
@@ -388,7 +364,9 @@
 "^ot:ottTaxonName": "Ustilago maydis"
 }, 
 "otu228629": {
-"^ot:originalLabel": "867 Cintractia sorghi vulgaris"
+"^ot:originalLabel": "867 Cintractia sorghi vulgaris", 
+"^ot:ottId": 469132, 
+"^ot:ottTaxonName": "Sporisorium sorghi"
 }, 
 "otu228630": {
 "^ot:originalLabel": "1088 Cryptococcus neoformans", 
@@ -420,7 +398,9 @@
 "^ot:ottTaxonName": "Stereum hirsutum"
 }, 
 "otu228637": {
-"^ot:originalLabel": "452 Bondarzewia montana"
+"^ot:originalLabel": "452 Bondarzewia montana", 
+"^ot:ottId": 842317, 
+"^ot:ottTaxonName": "Bondarzewia mesenterica"
 }, 
 "otu228638": {
 "^ot:originalLabel": "455 Echinodontium tinctorium", 
@@ -433,7 +413,9 @@
 "^ot:ottTaxonName": "Lactarius deceptivus"
 }, 
 "otu228640": {
-"^ot:originalLabel": "576 Fibulorhizoctonia sp"
+"^ot:originalLabel": "576 Fibulorhizoctonia sp", 
+"^ot:ottId": 5300658, 
+"^ot:ottTaxonName": "Fibularhizoctonia"
 }, 
 "otu228641": {
 "^ot:originalLabel": "717 Suillus pictus", 
@@ -537,7 +519,9 @@
 "^ot:ottTaxonName": "Fomitiporia mediterranea"
 }, 
 "otu228662": {
-"^ot:originalLabel": "776 Phanerochaete chrysosporium"
+"^ot:originalLabel": "776 Phanerochaete chrysosporium", 
+"^ot:ottId": 5299626, 
+"^ot:ottTaxonName": "Phanerodontia chrysosporium"
 }, 
 "otu228663": {
 "^ot:originalLabel": "484 Phlebia radiata", 
@@ -755,7 +739,9 @@
 "^ot:ottTaxonName": "Pleospora herbarum"
 }, 
 "otu228706": {
-"^ot:originalLabel": "1036 Trematosphaeria heterospora"
+"^ot:originalLabel": "1036 Trematosphaeria heterospora", 
+"^ot:ottId": 5319110, 
+"^ot:ottTaxonName": "Leptosphaeria heterospora"
 }, 
 "otu228707": {
 "^ot:originalLabel": "1037 Westerdykella cylindrica", 
@@ -863,7 +849,9 @@
 "^ot:ottTaxonName": "Stictis radiata"
 }, 
 "otu228728": {
-"^ot:originalLabel": "106 Echinoplaca strigulacea"
+"^ot:originalLabel": "106 Echinoplaca strigulacea", 
+"^ot:ottId": 5315602, 
+"^ot:ottTaxonName": "Actinoplaca strigulacea"
 }, 
 "otu228729": {
 "^ot:originalLabel": "958 Diploschistes ocellatus", 
@@ -1034,7 +1022,9 @@
 "^ot:ottTaxonName": "Coccomyces dentatus"
 }, 
 "otu228763": {
-"^ot:originalLabel": "744 Phacidiopycnis pyri"
+"^ot:originalLabel": "744 Phacidiopycnis pyri", 
+"^ot:ottId": 5316772, 
+"^ot:ottTaxonName": "Discula pyri"
 }, 
 "otu228764": {
 "^ot:originalLabel": "1 Leotia lubrica", 
@@ -1075,7 +1065,9 @@
 "^ot:ottTaxonName": "Sordaria fimicola"
 }, 
 "otu228772": {
-"^ot:originalLabel": "1085 Podospora anserina"
+"^ot:originalLabel": "1085 Podospora anserina", 
+"^ot:ottId": 155361, 
+"^ot:ottTaxonName": "Podospora pauciseta"
 }, 
 "otu228773": {
 "^ot:originalLabel": "217 Chaetomium globosum", 
@@ -1137,9 +1129,15 @@
 "treeById": {
 "tree5805": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "BI, 5.8S + SSU + LSU + RPB1 + RPB2 + EF-1 (rooted)", 
 "^ot:inGroupClade": "node991979", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node991955", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node991955": {
 "edge991956": {

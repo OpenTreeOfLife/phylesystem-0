@@ -19,48 +19,11 @@
 "@id": "peyotl-validator", 
 "@name": "validate_ot_nexson.py", 
 "@url": "https://github.com/OpenTreeOfLife/peyotl", 
-"@version": "0.0.3a", 
+"@version": "0.0.4a", 
 "invocation": {
-"checksPerformed": [
-"MISSING_MANDATORY_KEY", 
-"MISSING_OPTIONAL_KEY", 
-"UNRECOGNIZED_KEY", 
-"MISSING_LIST_EXPECTED", 
-"DUPLICATING_SINGLETON_KEY", 
-"REFERENCED_ID_NOT_FOUND", 
-"REPEATED_ID", 
-"REPEATED_OTU", 
-"MULTIPLE_ROOT_NODES", 
-"NO_ROOT_NODE", 
-"MULTIPLE_EDGES_FOR_NODES", 
-"CYCLE_DETECTED", 
-"DISCONNECTED_GRAPH_DETECTED", 
-"INCORRECT_ROOT_NODE_LABEL", 
-"TIP_WITHOUT_OTU", 
-"TIP_WITHOUT_OTT_ID", 
-"MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
-"NON_MONOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
-"INVALID_PROPERTY_VALUE", 
-"PROPERTY_VALUE_NOT_USEFUL", 
-"UNRECOGNIZED_PROPERTY_VALUE", 
-"MULTIPLE_TREES", 
-"UNRECOGNIZED_TAG", 
-"CONFLICTING_PROPERTY_VALUES", 
-"NO_TREES", 
-"DEPRECATED_PROPERTY", 
-"UNPARSEABLE_META", 
-"UNREACHABLE_NODE", 
-"INCORRECT_VALUE_TYPE", 
-"MISSING_CRUCIAL_CONTENT"
-], 
 "commandLine": [
 "--embed", 
-"--agent-only", 
-"-e", 
-"../mig-phyelesystem-scratch/2707/validation.json", 
-"-o", 
-"../mig-phyelesystem-scratch/2707/final.json", 
-"../mig-phyelesystem-scratch/2707/v1.2.1-2707.json"
+"--agent-only"
 ], 
 "otherProperty": [
 {
@@ -76,9 +39,16 @@
 }
 ]
 }, 
+"^ot:annotationEvents": {
+"annotation": []
+}, 
+"^ot:candidateTreeForSynthesis": [], 
 "^ot:curatorName": "Joseph Brown", 
 "^ot:focalClade": 640561, 
 "^ot:focalCladeOTTTaxonName": "Icteridae", 
+"^ot:messages": {
+"message": []
+}, 
 "^ot:otusElementOrder": [
 "otus2707"
 ], 
@@ -86,9 +56,11 @@
 "^ot:studyPublication": {
 "@href": "http://dx.doi.org/10.1016/j.ympev.2013.11.009"
 }, 
-"^ot:studyPublicationReference": "Alexis F.L.A. Powell, F. Keith Barker, Scott M. Lanyon, Kevin J. Burns, John Klicka, Irby J. Lovette. 2014. A comprehensive species-level molecular phylogeny of the New World blackbirds (Icteridae). Molecular Phylogenetics and Evolution 71: 94-112.", 
+"^ot:studyPublicationReference": "Powell, Alexis F.L.A., F. Keith Barker, Scott M. Lanyon, Kevin J. Burns, John Klicka, Irby J. Lovette. 2014. A comprehensive species-level molecular phylogeny of the New World blackbirds (Icteridae). Molecular Phylogenetics and Evolution 71: 94-112.", 
 "^ot:studyYear": 2014, 
-"^ot:tag": "ingroup added;", 
+"^ot:tag": [
+"ingroup added;"
+], 
 "^ot:treesElementOrder": [
 "trees2707"
 ], 
@@ -124,10 +96,14 @@
 "^ot:originalLabel": "Agelasticus xanthophthalmus"
 }, 
 "otu405493": {
-"^ot:originalLabel": "Agelasticus cyanopus"
+"^ot:originalLabel": "Agelasticus cyanopus", 
+"^ot:ottId": 305322, 
+"^ot:ottTaxonName": "Chrysomus cyanopus"
 }, 
 "otu405494": {
-"^ot:originalLabel": "Agelasticus thilius"
+"^ot:originalLabel": "Agelasticus thilius", 
+"^ot:ottId": 305330, 
+"^ot:ottTaxonName": "Chrysomus thilius"
 }, 
 "otu405495": {
 "^ot:originalLabel": "Oreopsar bolivianus", 
@@ -135,7 +111,9 @@
 "^ot:ottTaxonName": "Oreopsar bolivianus"
 }, 
 "otu405496": {
-"^ot:originalLabel": "Agelaioides badius"
+"^ot:originalLabel": "Agelaioides badius", 
+"^ot:ottId": 992776, 
+"^ot:ottTaxonName": "Molothrus badius"
 }, 
 "otu405497": {
 "^ot:originalLabel": "Gnorimopsar chopi", 
@@ -312,7 +290,9 @@
 "^ot:ottTaxonName": "Icterus cayanensis"
 }, 
 "otu405533": {
-"^ot:originalLabel": "Icterus pyrrhopterus"
+"^ot:originalLabel": "Icterus pyrrhopterus", 
+"^ot:ottId": 550988, 
+"^ot:ottTaxonName": "Icterus cayanensis pyrrhopterus"
 }, 
 "otu405534": {
 "^ot:originalLabel": "Icterus auricapillus", 
@@ -495,7 +475,9 @@
 "^ot:ottTaxonName": "Cacicus cela cela"
 }, 
 "otu405570": {
-"^ot:originalLabel": "Clypicterus oseryi"
+"^ot:originalLabel": "Clypicterus oseryi", 
+"^ot:ottId": 1069145, 
+"^ot:ottTaxonName": "Psarocolius oseryi"
 }, 
 "otu405571": {
 "^ot:originalLabel": "Cacicus haemorrhous", 
@@ -508,7 +490,9 @@
 "^ot:ottTaxonName": "Ocyalus latirostris"
 }, 
 "otu405573": {
-"^ot:originalLabel": "Cacicus chrysonotus leucoramphus"
+"^ot:originalLabel": "Cacicus chrysonotus leucoramphus", 
+"^ot:ottId": 264489, 
+"^ot:ottTaxonName": "Cacicus leucoramphus"
 }, 
 "otu405574": {
 "^ot:originalLabel": "Cacicus chrysonotus chrysonotus", 
@@ -551,7 +535,9 @@
 "^ot:ottTaxonName": "Psarocolius montezuma"
 }, 
 "otu405582": {
-"^ot:originalLabel": "Psarocolius bifasciatus yuracares"
+"^ot:originalLabel": "Psarocolius bifasciatus yuracares", 
+"^ot:ottId": 699294, 
+"^ot:ottTaxonName": "Psarocolius yuracares"
 }, 
 "otu405583": {
 "^ot:originalLabel": "Psarocolius viridis", 
@@ -620,7 +606,9 @@
 "^ot:ottTaxonName": "Sturnella magna"
 }, 
 "otu405597": {
-"^ot:originalLabel": "Sturnella lilianae"
+"^ot:originalLabel": "Sturnella lilianae", 
+"^ot:ottId": 489144, 
+"^ot:ottTaxonName": "Sturnella magna"
 }, 
 "otu405598": {
 "^ot:originalLabel": "Sturnella neglecta", 
@@ -638,7 +626,9 @@
 "^ot:ottTaxonName": "Xanthocephalus xanthocephalus"
 }, 
 "otu405601": {
-"^ot:originalLabel": "Oreothlypis gutturalis"
+"^ot:originalLabel": "Oreothlypis gutturalis", 
+"^ot:ottId": 956238, 
+"^ot:ottTaxonName": "Oreothlypis gutturalis"
 }, 
 "otu405602": {
 "^ot:originalLabel": "Seiurus aurocapillus", 
@@ -667,11 +657,17 @@
 "treeById": {
 "tree6281": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
 "^ot:branchLengthMode": "ot:substitutionCount", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "ML majority-rule bootstrap consensus", 
 "^ot:inGroupClade": "node1086380", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node1086379", 
-"^ot:tag": "Choose me", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [
+"Choose me"
+], 
 "edgeBySourceId": {
 "node1086379": {
 "edge1086380": {

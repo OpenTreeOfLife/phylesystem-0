@@ -19,48 +19,11 @@
 "@id": "peyotl-validator", 
 "@name": "validate_ot_nexson.py", 
 "@url": "https://github.com/OpenTreeOfLife/peyotl", 
-"@version": "0.0.3a", 
+"@version": "0.0.4a", 
 "invocation": {
-"checksPerformed": [
-"MISSING_MANDATORY_KEY", 
-"MISSING_OPTIONAL_KEY", 
-"UNRECOGNIZED_KEY", 
-"MISSING_LIST_EXPECTED", 
-"DUPLICATING_SINGLETON_KEY", 
-"REFERENCED_ID_NOT_FOUND", 
-"REPEATED_ID", 
-"REPEATED_OTU", 
-"MULTIPLE_ROOT_NODES", 
-"NO_ROOT_NODE", 
-"MULTIPLE_EDGES_FOR_NODES", 
-"CYCLE_DETECTED", 
-"DISCONNECTED_GRAPH_DETECTED", 
-"INCORRECT_ROOT_NODE_LABEL", 
-"TIP_WITHOUT_OTU", 
-"TIP_WITHOUT_OTT_ID", 
-"MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
-"NON_MONOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
-"INVALID_PROPERTY_VALUE", 
-"PROPERTY_VALUE_NOT_USEFUL", 
-"UNRECOGNIZED_PROPERTY_VALUE", 
-"MULTIPLE_TREES", 
-"UNRECOGNIZED_TAG", 
-"CONFLICTING_PROPERTY_VALUES", 
-"NO_TREES", 
-"DEPRECATED_PROPERTY", 
-"UNPARSEABLE_META", 
-"UNREACHABLE_NODE", 
-"INCORRECT_VALUE_TYPE", 
-"MISSING_CRUCIAL_CONTENT"
-], 
 "commandLine": [
 "--embed", 
-"--agent-only", 
-"-e", 
-"../mig-phyelesystem-scratch/877/validation.json", 
-"-o", 
-"../mig-phyelesystem-scratch/877/final.json", 
-"../mig-phyelesystem-scratch/877/v1.2.1-877.json"
+"--agent-only"
 ], 
 "otherProperty": [
 {
@@ -76,12 +39,19 @@
 }
 ]
 }, 
+"^ot:annotationEvents": {
+"annotation": []
+}, 
+"^ot:candidateTreeForSynthesis": [], 
 "^ot:curatorName": "Romina Gazis", 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S840"
 }, 
 "^ot:focalClade": 611411, 
 "^ot:focalCladeOTTTaxonName": "Russula", 
+"^ot:messages": {
+"message": []
+}, 
 "^ot:otusElementOrder": [
 "otus877"
 ], 
@@ -91,6 +61,7 @@
 }, 
 "^ot:studyPublicationReference": "Eberhardt U. 2002. Molecular kinship analyses of the agaricoid Russulaceae: correspondence with mycorrhizal anatomy and sporocarp features in the genus Russula. Mycological Progress, 1(2): 201-223.", 
 "^ot:studyYear": 2002, 
+"^ot:tag": [], 
 "^ot:treesElementOrder": [
 "trees877"
 ], 
@@ -129,6 +100,8 @@
 }, 
 "otu203018": {
 "^ot:originalLabel": "Russula laurocerasi", 
+"^ot:ottId": 5299304, 
+"^ot:ottTaxonName": "Russula grata", 
 "^ot:treebaseOTUId": "Tl129497"
 }, 
 "otu203019": {
@@ -271,6 +244,8 @@
 }, 
 "otu203042": {
 "^ot:originalLabel": "Russula mairei", 
+"^ot:ottId": 5299312, 
+"^ot:ottTaxonName": "Russula nobilis", 
 "^ot:treebaseOTUId": "Tl129525"
 }, 
 "otu203043": {
@@ -365,6 +340,8 @@
 }, 
 "otu203058": {
 "^ot:originalLabel": "Russula lepida", 
+"^ot:ottId": 489992, 
+"^ot:ottTaxonName": "Russula rosea", 
 "^ot:treebaseOTUId": "Tl129544"
 }, 
 "otu203059": {
@@ -548,8 +525,14 @@
 "treeById": {
 "tree1690": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "ML, LSU", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node477218", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node477218": {
 "edge477219": {
@@ -1416,9 +1399,15 @@
 }, 
 "tree1691": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "MP, LSU", 
 "^ot:inGroupClade": "node477342", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node477341", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node477341": {
 "edge477342": {
@@ -2222,9 +2211,15 @@
 }, 
 "tree1692": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "NJ, LSU", 
 "^ot:inGroupClade": "node477456", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node477455", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node477455": {
 "edge477456": {
@@ -3021,9 +3016,16 @@
 }, 
 "tree1693": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "ML, ITS (unrooted)", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node477568", 
-"^ot:tag": "delete me", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [
+"delete me"
+], 
 "edgeBySourceId": {
 "node477568": {
 "edge477569": {
@@ -3190,8 +3192,14 @@
 }, 
 "tree1694": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "ML, ITS (unrooted)", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node477591", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node477591": {
 "edge477592": {
@@ -3554,10 +3562,17 @@
 }, 
 "tree5506": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "ML, LSU (rooted)", 
 "^ot:inGroupClade": "node950022", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node950021", 
-"^ot:tag": "Choose me", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [
+"Choose me"
+], 
 "edgeBySourceId": {
 "node950021": {
 "edge950022": {
@@ -4426,9 +4441,15 @@
 }, 
 "tree5719": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "ML, ITS (mid-rooted)", 
 "^ot:inGroupClade": "node982209", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node982209", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node982209": {
 "edge982210": {
@@ -4595,9 +4616,15 @@
 }, 
 "tree5720": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "ML, ITS (mid-rooted)", 
 "^ot:inGroupClade": "node982232", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node982232", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node982232": {
 "edge982233": {

@@ -19,48 +19,11 @@
 "@id": "peyotl-validator", 
 "@name": "validate_ot_nexson.py", 
 "@url": "https://github.com/OpenTreeOfLife/peyotl", 
-"@version": "0.0.3a", 
+"@version": "0.0.4a", 
 "invocation": {
-"checksPerformed": [
-"MISSING_MANDATORY_KEY", 
-"MISSING_OPTIONAL_KEY", 
-"UNRECOGNIZED_KEY", 
-"MISSING_LIST_EXPECTED", 
-"DUPLICATING_SINGLETON_KEY", 
-"REFERENCED_ID_NOT_FOUND", 
-"REPEATED_ID", 
-"REPEATED_OTU", 
-"MULTIPLE_ROOT_NODES", 
-"NO_ROOT_NODE", 
-"MULTIPLE_EDGES_FOR_NODES", 
-"CYCLE_DETECTED", 
-"DISCONNECTED_GRAPH_DETECTED", 
-"INCORRECT_ROOT_NODE_LABEL", 
-"TIP_WITHOUT_OTU", 
-"TIP_WITHOUT_OTT_ID", 
-"MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
-"NON_MONOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
-"INVALID_PROPERTY_VALUE", 
-"PROPERTY_VALUE_NOT_USEFUL", 
-"UNRECOGNIZED_PROPERTY_VALUE", 
-"MULTIPLE_TREES", 
-"UNRECOGNIZED_TAG", 
-"CONFLICTING_PROPERTY_VALUES", 
-"NO_TREES", 
-"DEPRECATED_PROPERTY", 
-"UNPARSEABLE_META", 
-"UNREACHABLE_NODE", 
-"INCORRECT_VALUE_TYPE", 
-"MISSING_CRUCIAL_CONTENT"
-], 
 "commandLine": [
 "--embed", 
-"--agent-only", 
-"-e", 
-"../mig-phyelesystem-scratch/2244/validation.json", 
-"-o", 
-"../mig-phyelesystem-scratch/2244/final.json", 
-"../mig-phyelesystem-scratch/2244/v1.2.1-2244.json"
+"--agent-only"
 ], 
 "otherProperty": [
 {
@@ -76,12 +39,19 @@
 }
 ]
 }, 
+"^ot:annotationEvents": {
+"annotation": []
+}, 
+"^ot:candidateTreeForSynthesis": [], 
 "^ot:curatorName": "Romina Gazis", 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S12768"
 }, 
 "^ot:focalClade": 981640, 
 "^ot:focalCladeOTTTaxonName": "Meliolales", 
+"^ot:messages": {
+"message": []
+}, 
 "^ot:otusElementOrder": [
 "otus2244"
 ], 
@@ -91,6 +61,7 @@
 }, 
 "^ot:studyPublicationReference": "Pinho, Danilo B.; Firmino, Andre L.; Ferreira-Junior, Walnir G.; et al. \"An efficient protocol for DNA extraction from Meliolales and the description of Meliola centellae sp. nov.\" Mycotaxon 122.1 (2012): 333-345.", 
 "^ot:studyYear": 2013, 
+"^ot:tag": [], 
 "^ot:treesElementOrder": [
 "trees2244"
 ], 
@@ -105,6 +76,8 @@
 }, 
 "otu324647": {
 "^ot:originalLabel": "Coniochaetidium savoryi", 
+"^ot:ottId": 103601, 
+"^ot:ottTaxonName": "Coniochaeta savoryi", 
 "^ot:treebaseOTUId": "Tl800905"
 }, 
 "otu324648": {
@@ -249,10 +222,14 @@
 }, 
 "otu324672": {
 "^ot:originalLabel": "Ophiostoma piliferum", 
+"^ot:ottId": 5316941, 
+"^ot:ottTaxonName": "Ceratocystis pilifera", 
 "^ot:treebaseOTUId": "Tl800930"
 }, 
 "otu324673": {
 "^ot:originalLabel": "Hypocrea schweinitzii", 
+"^ot:ottId": 5317031, 
+"^ot:ottTaxonName": "Hypocrea schweinitzii", 
 "^ot:treebaseOTUId": "Tl800931"
 }, 
 "otu324674": {
@@ -440,10 +417,17 @@
 "treeById": {
 "tree4757": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "BI, LSU", 
 "^ot:inGroupClade": "node839068", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node839067", 
-"^ot:tag": "BI", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [
+"BI"
+], 
 "edgeBySourceId": {
 "node839067": {
 "edge839068": {
@@ -1288,9 +1272,15 @@
 }, 
 "tree4758": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "BI, LSU", 
 "^ot:inGroupClade": "node839173", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node839172", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node839172": {
 "edge839173": {

@@ -19,48 +19,11 @@
 "@id": "peyotl-validator", 
 "@name": "validate_ot_nexson.py", 
 "@url": "https://github.com/OpenTreeOfLife/peyotl", 
-"@version": "0.0.3a", 
+"@version": "0.0.4a", 
 "invocation": {
-"checksPerformed": [
-"MISSING_MANDATORY_KEY", 
-"MISSING_OPTIONAL_KEY", 
-"UNRECOGNIZED_KEY", 
-"MISSING_LIST_EXPECTED", 
-"DUPLICATING_SINGLETON_KEY", 
-"REFERENCED_ID_NOT_FOUND", 
-"REPEATED_ID", 
-"REPEATED_OTU", 
-"MULTIPLE_ROOT_NODES", 
-"NO_ROOT_NODE", 
-"MULTIPLE_EDGES_FOR_NODES", 
-"CYCLE_DETECTED", 
-"DISCONNECTED_GRAPH_DETECTED", 
-"INCORRECT_ROOT_NODE_LABEL", 
-"TIP_WITHOUT_OTU", 
-"TIP_WITHOUT_OTT_ID", 
-"MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
-"NON_MONOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
-"INVALID_PROPERTY_VALUE", 
-"PROPERTY_VALUE_NOT_USEFUL", 
-"UNRECOGNIZED_PROPERTY_VALUE", 
-"MULTIPLE_TREES", 
-"UNRECOGNIZED_TAG", 
-"CONFLICTING_PROPERTY_VALUES", 
-"NO_TREES", 
-"DEPRECATED_PROPERTY", 
-"UNPARSEABLE_META", 
-"UNREACHABLE_NODE", 
-"INCORRECT_VALUE_TYPE", 
-"MISSING_CRUCIAL_CONTENT"
-], 
 "commandLine": [
 "--embed", 
-"--agent-only", 
-"-e", 
-"../mig-phyelesystem-scratch/2604/validation.json", 
-"-o", 
-"../mig-phyelesystem-scratch/2604/final.json", 
-"../mig-phyelesystem-scratch/2604/v1.2.1-2604.json"
+"--agent-only"
 ], 
 "otherProperty": [
 {
@@ -76,12 +39,19 @@
 }
 ]
 }, 
+"^ot:annotationEvents": {
+"annotation": []
+}, 
+"^ot:candidateTreeForSynthesis": [], 
 "^ot:curatorName": "Chris Owen", 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S14049"
 }, 
 "^ot:focalClade": 419526, 
 "^ot:focalCladeOTTTaxonName": "Apoidea", 
+"^ot:messages": {
+"message": []
+}, 
 "^ot:otusElementOrder": [
 "otus2604"
 ], 
@@ -89,8 +59,9 @@
 "^ot:studyPublication": {
 "@href": "http://dx.doi.org/10.1186/1471-2148-13-138"
 }, 
-"^ot:studyPublicationReference": "Hedtke S.M., Patiny S., & Danforth B. 2013. The bee tree of life: a supermatrix approach to apoid phylogeny and biogeography. BMC Evolutionary Biology, 13: 138.", 
+"^ot:studyPublicationReference": "Hedtke, S.M., Patiny S., & Danforth B. 2013. The bee tree of life: a supermatrix approach to apoid phylogeny and biogeography. BMC Evolutionary Biology 13: 138.", 
 "^ot:studyYear": 2013, 
+"^ot:tag": [], 
 "^ot:treesElementOrder": [
 "trees2604"
 ], 
@@ -1023,7 +994,9 @@
 "^ot:ottTaxonName": "Tetragonula laeviceps"
 }, 
 "otu387039": {
-"^ot:originalLabel": "Tetragonula zucchi"
+"^ot:originalLabel": "Tetragonula zucchi", 
+"^ot:ottId": 501029, 
+"^ot:ottTaxonName": "Tetragonula zucchii"
 }, 
 "otu387040": {
 "^ot:originalLabel": "Tetragonula cf pagdeni CR 2006", 
@@ -1106,7 +1079,9 @@
 "^ot:ottTaxonName": "Heterotrigona bakeri"
 }, 
 "otu387056": {
-"^ot:originalLabel": "Heterotrigona erythrogaster"
+"^ot:originalLabel": "Heterotrigona erythrogaster", 
+"^ot:ottId": 4528831, 
+"^ot:ottTaxonName": "Heterotrigona erythrogastra"
 }, 
 "otu387057": {
 "^ot:originalLabel": "Heterotrigona itama", 
@@ -1822,7 +1797,9 @@
 "^ot:ottTaxonName": "Bombus sonorus"
 }, 
 "otu387200": {
-"^ot:originalLabel": "Bombus pennsylvanicus"
+"^ot:originalLabel": "Bombus pennsylvanicus", 
+"^ot:ottId": 3266800, 
+"^ot:ottTaxonName": "Bombus pensylvanicus"
 }, 
 "otu387201": {
 "^ot:originalLabel": "Bombus opifex", 
@@ -3789,7 +3766,9 @@
 "^ot:ottTaxonName": "Haetosmia brachyura"
 }, 
 "otu387599": {
-"^ot:originalLabel": "Heriades crucifera"
+"^ot:originalLabel": "Heriades crucifera", 
+"^ot:ottId": 495671, 
+"^ot:ottTaxonName": "Heriades crucifer"
 }, 
 "otu387600": {
 "^ot:originalLabel": "Heriades crucifer", 
@@ -8790,10 +8769,17 @@
 "treeById": {
 "tree6043": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "ML", 
 "^ot:inGroupClade": "node1034674", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node1034673", 
-"^ot:tag": "choose me", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [
+"choose me"
+], 
 "edgeBySourceId": {
 "node1034673": {
 "edge1034674": {
@@ -28056,9 +28042,15 @@
 }, 
 "tree6044": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "ML supermatrix", 
 "^ot:inGroupClade": "node1037425", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node1037424", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node1037424": {
 "edge1037425": {

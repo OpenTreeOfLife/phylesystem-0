@@ -19,48 +19,11 @@
 "@id": "peyotl-validator", 
 "@name": "validate_ot_nexson.py", 
 "@url": "https://github.com/OpenTreeOfLife/peyotl", 
-"@version": "0.0.3a", 
+"@version": "0.0.4a", 
 "invocation": {
-"checksPerformed": [
-"MISSING_MANDATORY_KEY", 
-"MISSING_OPTIONAL_KEY", 
-"UNRECOGNIZED_KEY", 
-"MISSING_LIST_EXPECTED", 
-"DUPLICATING_SINGLETON_KEY", 
-"REFERENCED_ID_NOT_FOUND", 
-"REPEATED_ID", 
-"REPEATED_OTU", 
-"MULTIPLE_ROOT_NODES", 
-"NO_ROOT_NODE", 
-"MULTIPLE_EDGES_FOR_NODES", 
-"CYCLE_DETECTED", 
-"DISCONNECTED_GRAPH_DETECTED", 
-"INCORRECT_ROOT_NODE_LABEL", 
-"TIP_WITHOUT_OTU", 
-"TIP_WITHOUT_OTT_ID", 
-"MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
-"NON_MONOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
-"INVALID_PROPERTY_VALUE", 
-"PROPERTY_VALUE_NOT_USEFUL", 
-"UNRECOGNIZED_PROPERTY_VALUE", 
-"MULTIPLE_TREES", 
-"UNRECOGNIZED_TAG", 
-"CONFLICTING_PROPERTY_VALUES", 
-"NO_TREES", 
-"DEPRECATED_PROPERTY", 
-"UNPARSEABLE_META", 
-"UNREACHABLE_NODE", 
-"INCORRECT_VALUE_TYPE", 
-"MISSING_CRUCIAL_CONTENT"
-], 
 "commandLine": [
 "--embed", 
-"--agent-only", 
-"-e", 
-"../mig-phyelesystem-scratch/2816/validation.json", 
-"-o", 
-"../mig-phyelesystem-scratch/2816/final.json", 
-"../mig-phyelesystem-scratch/2816/v1.2.1-2816.json"
+"--agent-only"
 ], 
 "otherProperty": [
 {
@@ -76,9 +39,16 @@
 }
 ]
 }, 
+"^ot:annotationEvents": {
+"annotation": []
+}, 
+"^ot:candidateTreeForSynthesis": [], 
 "^ot:curatorName": "Joseph Brown", 
 "^ot:focalClade": 913935, 
 "^ot:focalCladeOTTTaxonName": "Primates", 
+"^ot:messages": {
+"message": []
+}, 
 "^ot:otusElementOrder": [
 "otus2816"
 ], 
@@ -86,9 +56,11 @@
 "^ot:studyPublication": {
 "@href": "http://dx.doi.org/10.1016/j.ympev.2014.02.023"
 }, 
-"^ot:studyPublicationReference": "Luca Pozzi, Jason A. Hodgson, Andrew S. Burrell, Kirstin N. Sterner, Ryan L. Raaum, Todd R. Disotell. 2014. Primate phylogenetic relationships and divergence dates inferred from complete mitochondrial genomes. Molecular Phylogenetics and Evolution", 
+"^ot:studyPublicationReference": "Pozzi, Luca, Jason A. Hodgson, Andrew S. Burrell, Kirstin N. Sterner, Ryan L. Raaum, Todd R. Disotell. 2014. Primate phylogenetic relationships and divergence dates inferred from complete mitochondrial genomes. Molecular Phylogenetics and Evolution 75: 165-183.", 
 "^ot:studyYear": 2014, 
-"^ot:tag": "ingroup added;", 
+"^ot:tag": [
+"ingroup added;"
+], 
 "^ot:treesElementOrder": [
 "trees2816"
 ], 
@@ -136,7 +108,9 @@
 "^ot:ottTaxonName": "Ovis aries"
 }, 
 "otu417927": {
-"^ot:originalLabel": "Lama pacos"
+"^ot:originalLabel": "Lama pacos", 
+"^ot:ottId": 906301, 
+"^ot:ottTaxonName": "Vicugna pacos"
 }, 
 "otu417928": {
 "^ot:originalLabel": "Sus scrofa", 
@@ -144,7 +118,9 @@
 "^ot:ottTaxonName": "Sus scrofa"
 }, 
 "otu417929": {
-"^ot:originalLabel": "Canis familiaris"
+"^ot:originalLabel": "Canis familiaris", 
+"^ot:ottId": 247333, 
+"^ot:ottTaxonName": "Canis lupus familiaris"
 }, 
 "otu417930": {
 "^ot:originalLabel": "Felis catus", 
@@ -434,7 +410,9 @@
 "^ot:originalLabel": "Homo neanderthalensis"
 }, 
 "otu417989": {
-"^ot:originalLabel": "Homo sapiens"
+"^ot:originalLabel": "Homo sapiens", 
+"^ot:ottId": 770315, 
+"^ot:ottTaxonName": "Homo sapiens"
 }, 
 "otu417990": {
 "^ot:originalLabel": "Pan paniscus", 
@@ -529,11 +507,17 @@
 "treeById": {
 "tree6556": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
 "^ot:branchLengthMode": "ot:substitutionCount", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "Bayesian", 
 "^ot:inGroupClade": "node1137693", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node1137643", 
-"^ot:tag": "Choose me", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [
+"Choose me"
+], 
 "edgeBySourceId": {
 "node1137643": {
 "edge1137644": {
@@ -1922,10 +1906,15 @@
 }, 
 "tree6557": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
 "^ot:branchLengthMode": "ot:substitutionCount", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "ML", 
 "^ot:inGroupClade": "node1137860", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node1137816", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node1137816": {
 "edge1137817": {

@@ -19,48 +19,11 @@
 "@id": "peyotl-validator", 
 "@name": "validate_ot_nexson.py", 
 "@url": "https://github.com/OpenTreeOfLife/peyotl", 
-"@version": "0.0.3a", 
+"@version": "0.0.4a", 
 "invocation": {
-"checksPerformed": [
-"MISSING_MANDATORY_KEY", 
-"MISSING_OPTIONAL_KEY", 
-"UNRECOGNIZED_KEY", 
-"MISSING_LIST_EXPECTED", 
-"DUPLICATING_SINGLETON_KEY", 
-"REFERENCED_ID_NOT_FOUND", 
-"REPEATED_ID", 
-"REPEATED_OTU", 
-"MULTIPLE_ROOT_NODES", 
-"NO_ROOT_NODE", 
-"MULTIPLE_EDGES_FOR_NODES", 
-"CYCLE_DETECTED", 
-"DISCONNECTED_GRAPH_DETECTED", 
-"INCORRECT_ROOT_NODE_LABEL", 
-"TIP_WITHOUT_OTU", 
-"TIP_WITHOUT_OTT_ID", 
-"MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
-"NON_MONOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
-"INVALID_PROPERTY_VALUE", 
-"PROPERTY_VALUE_NOT_USEFUL", 
-"UNRECOGNIZED_PROPERTY_VALUE", 
-"MULTIPLE_TREES", 
-"UNRECOGNIZED_TAG", 
-"CONFLICTING_PROPERTY_VALUES", 
-"NO_TREES", 
-"DEPRECATED_PROPERTY", 
-"UNPARSEABLE_META", 
-"UNREACHABLE_NODE", 
-"INCORRECT_VALUE_TYPE", 
-"MISSING_CRUCIAL_CONTENT"
-], 
 "commandLine": [
 "--embed", 
-"--agent-only", 
-"-e", 
-"../mig-phyelesystem-scratch/1157/validation.json", 
-"-o", 
-"../mig-phyelesystem-scratch/1157/final.json", 
-"../mig-phyelesystem-scratch/1157/v1.2.1-1157.json"
+"--agent-only"
 ], 
 "otherProperty": [
 {
@@ -76,9 +39,16 @@
 }
 ]
 }, 
+"^ot:annotationEvents": {
+"annotation": []
+}, 
+"^ot:candidateTreeForSynthesis": [], 
 "^ot:curatorName": "Romina Gazis", 
 "^ot:focalClade": 318011, 
 "^ot:focalCladeOTTTaxonName": "Coprinellus", 
+"^ot:messages": {
+"message": []
+}, 
 "^ot:otusElementOrder": [
 "otus1157"
 ], 
@@ -86,8 +56,9 @@
 "^ot:studyPublication": {
 "@href": "http://dx.doi.org/10.1093/sysbio/sys002"
 }, 
-"^ot:studyPublicationReference": "Nagy, L. G., H\u00e1zi, J., Szappanos, B., Kocsub\u00e9, S., B\u00e1lint, B., R\u00e1khely, G., ... & Papp, T. (2012). The Evolution of Defense Mechanisms Correlate with the Explosive Diversification of Autodigesting Coprinellus Mushrooms (Agaricales, Fungi). Systematic biology, 61(4), 595-607.", 
+"^ot:studyPublicationReference": "Nagy, L. G., H\u00e1zi, J., Szappanos, B., Kocsub\u00e9, S., B\u00e1lint, B., R\u00e1khely, G., ... & Papp, T. 2012. The evolution of defense mechanisms correlate with the explosive diversification of autodigesting Coprinellus mushrooms (Agaricales, Fungi). Systematic Biology 61 (4): 595-607.", 
 "^ot:studyYear": 2012, 
+"^ot:tag": [], 
 "^ot:treesElementOrder": [
 "trees1157"
 ], 
@@ -766,7 +737,9 @@
 "^ot:ottTaxonName": "Psathyrella bipellis"
 }, 
 "otu228060": {
-"^ot:originalLabel": "DQ986237Ps squamifera"
+"^ot:originalLabel": "DQ986237Ps squamifera", 
+"^ot:ottId": 1069234, 
+"^ot:ottTaxonName": "Psathyrella microrhiza"
 }, 
 "otu228061": {
 "^ot:originalLabel": "DQ389685Ps lutensis", 
@@ -1215,7 +1188,9 @@
 "^ot:ottTaxonName": "Parasola megasperma"
 }, 
 "otu228151": {
-"^ot:originalLabel": "374Ischroeteri"
+"^ot:originalLabel": "374Ischroeteri", 
+"^ot:ottId": 111326, 
+"^ot:ottTaxonName": "Parasola schroeteri"
 }, 
 "otu228152": {
 "^ot:originalLabel": "16Parasola lilatincta", 
@@ -1281,7 +1256,9 @@
 "^ot:ottTaxonName": "Psathyrella conissans"
 }, 
 "otu228165": {
-"^ot:originalLabel": "AF261489Ps camptopoda"
+"^ot:originalLabel": "AF261489Ps camptopoda", 
+"^ot:ottId": 5307240, 
+"^ot:ottTaxonName": "Psathyrella camptopus"
 }, 
 "otu228166": {
 "^ot:originalLabel": "10035Psathyrella hypertropicaulis"
@@ -1290,10 +1267,14 @@
 "^ot:originalLabel": "10065Psathyrella subcinnamomeaS"
 }, 
 "otu228168": {
-"^ot:originalLabel": "Lacrymaria pyrotricha"
+"^ot:originalLabel": "Lacrymaria pyrotricha", 
+"^ot:ottId": 5298488, 
+"^ot:ottTaxonName": "Lacrymaria pyrotricha"
 }, 
 "otu228169": {
-"^ot:originalLabel": "108lacrymaria vellutina"
+"^ot:originalLabel": "108lacrymaria vellutina", 
+"^ot:ottId": 5304637, 
+"^ot:ottTaxonName": "Agaricus areolatus"
 }
 }
 }
@@ -1308,8 +1289,14 @@
 "treeById": {
 "tree2344": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "BI, ITS + LSU + EF-1 + b-tubulin", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node553457", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node553457": {
 "edge553458": {
@@ -2405,8 +2392,14 @@
 }, 
 "tree2345": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "BI, ITS + LSU + EF-1 + b-tubulin", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node553594", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node553594": {
 "edge553595": {

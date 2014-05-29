@@ -19,48 +19,11 @@
 "@id": "peyotl-validator", 
 "@name": "validate_ot_nexson.py", 
 "@url": "https://github.com/OpenTreeOfLife/peyotl", 
-"@version": "0.0.3a", 
+"@version": "0.0.4a", 
 "invocation": {
-"checksPerformed": [
-"MISSING_MANDATORY_KEY", 
-"MISSING_OPTIONAL_KEY", 
-"UNRECOGNIZED_KEY", 
-"MISSING_LIST_EXPECTED", 
-"DUPLICATING_SINGLETON_KEY", 
-"REFERENCED_ID_NOT_FOUND", 
-"REPEATED_ID", 
-"REPEATED_OTU", 
-"MULTIPLE_ROOT_NODES", 
-"NO_ROOT_NODE", 
-"MULTIPLE_EDGES_FOR_NODES", 
-"CYCLE_DETECTED", 
-"DISCONNECTED_GRAPH_DETECTED", 
-"INCORRECT_ROOT_NODE_LABEL", 
-"TIP_WITHOUT_OTU", 
-"TIP_WITHOUT_OTT_ID", 
-"MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
-"NON_MONOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
-"INVALID_PROPERTY_VALUE", 
-"PROPERTY_VALUE_NOT_USEFUL", 
-"UNRECOGNIZED_PROPERTY_VALUE", 
-"MULTIPLE_TREES", 
-"UNRECOGNIZED_TAG", 
-"CONFLICTING_PROPERTY_VALUES", 
-"NO_TREES", 
-"DEPRECATED_PROPERTY", 
-"UNPARSEABLE_META", 
-"UNREACHABLE_NODE", 
-"INCORRECT_VALUE_TYPE", 
-"MISSING_CRUCIAL_CONTENT"
-], 
 "commandLine": [
 "--embed", 
-"--agent-only", 
-"-e", 
-"../mig-phyelesystem-scratch/2114/validation.json", 
-"-o", 
-"../mig-phyelesystem-scratch/2114/final.json", 
-"../mig-phyelesystem-scratch/2114/v1.2.1-2114.json"
+"--agent-only"
 ], 
 "otherProperty": [
 {
@@ -76,12 +39,19 @@
 }
 ]
 }, 
+"^ot:annotationEvents": {
+"annotation": []
+}, 
+"^ot:candidateTreeForSynthesis": [], 
 "^ot:curatorName": "Chris Owen", 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S12936"
 }, 
 "^ot:focalClade": 702468, 
 "^ot:focalCladeOTTTaxonName": "Acestrorhynchus", 
+"^ot:messages": {
+"message": []
+}, 
 "^ot:otusElementOrder": [
 "otus2114"
 ], 
@@ -91,6 +61,7 @@
 }, 
 "^ot:studyPublicationReference": "Toledo-Piza M. 2007. Phylogenetic relationships among Acestrorhynchus species (Ostariophysi: Characiformes: Acestrorhynchidae). Zoological Journal of the Linnean Society, (151): 691-757.", 
 "^ot:studyYear": 2007, 
+"^ot:tag": [], 
 "^ot:treesElementOrder": [
 "trees2114"
 ], 
@@ -118,6 +89,7 @@
 "otu313111": {
 "^ot:originalLabel": "Acanthocharax microlepis", 
 "^ot:ottId": 3625832, 
+"^ot:ottTaxonName": "Acanthocharax microlepis", 
 "^ot:treebaseOTUId": "Tl833245"
 }, 
 "otu313112": {
@@ -133,9 +105,9 @@
 "^ot:treebaseOTUId": "Tl833247"
 }, 
 "otu313114": {
-"^ot:altLabel": "Acestrorhynchus", 
 "^ot:originalLabel": "Acestrorhynchus apurensis", 
 "^ot:ottId": 702468, 
+"^ot:ottTaxonName": "Acestrorhynchus", 
 "^ot:treebaseOTUId": "Tl833248"
 }, 
 "otu313115": {
@@ -153,6 +125,7 @@
 "otu313117": {
 "^ot:originalLabel": "Lonchogenys ilisha", 
 "^ot:ottId": 3625930, 
+"^ot:ottTaxonName": "Lonchogenys ilisha", 
 "^ot:treebaseOTUId": "Tl833251"
 }, 
 "otu313118": {
@@ -164,6 +137,7 @@
 "otu313119": {
 "^ot:originalLabel": "Charax pauciradiatus", 
 "^ot:ottId": 3624843, 
+"^ot:ottTaxonName": "Charax pauciradiatus", 
 "^ot:treebaseOTUId": "Tl833253"
 }, 
 "otu313120": {
@@ -181,11 +155,13 @@
 "otu313122": {
 "^ot:originalLabel": "Brycon pesu", 
 "^ot:ottId": 988778, 
+"^ot:ottTaxonName": "Brycon pesu", 
 "^ot:treebaseOTUId": "Tl833256"
 }, 
 "otu313123": {
 "^ot:originalLabel": "Agoniates halecinus", 
 "^ot:ottId": 673669, 
+"^ot:ottTaxonName": "Agoniates halecinus", 
 "^ot:treebaseOTUId": "Tl833257"
 }, 
 "otu313124": {
@@ -197,6 +173,7 @@
 "otu313125": {
 "^ot:originalLabel": "Salminus hilarii", 
 "^ot:ottId": 180301, 
+"^ot:ottTaxonName": "Salminus hilarii", 
 "^ot:treebaseOTUId": "Tl833259"
 }, 
 "otu313126": {
@@ -207,6 +184,8 @@
 }, 
 "otu313127": {
 "^ot:originalLabel": "Astyanax scabripinnis", 
+"^ot:ottId": 117266, 
+"^ot:ottTaxonName": "Astyanax scabripinnis", 
 "^ot:treebaseOTUId": "Tl833261"
 }, 
 "otu313128": {
@@ -248,11 +227,13 @@
 "otu313134": {
 "^ot:originalLabel": "Heterocharax virgulatus", 
 "^ot:ottId": 3624836, 
+"^ot:ottTaxonName": "Heterocharax virgulatus", 
 "^ot:treebaseOTUId": "Tl833268"
 }, 
 "otu313135": {
 "^ot:originalLabel": "Galeocharax knerii", 
 "^ot:ottId": 53079, 
+"^ot:ottTaxonName": "Galeocharax knerii", 
 "^ot:treebaseOTUId": "Tl833269"
 }, 
 "otu313136": {
@@ -270,6 +251,7 @@
 "otu313138": {
 "^ot:originalLabel": "Hoplocharax goethei", 
 "^ot:ottId": 106049, 
+"^ot:ottTaxonName": "Hoplocharax goethei", 
 "^ot:treebaseOTUId": "Tl833272"
 }, 
 "otu313139": {
@@ -293,6 +275,7 @@
 "otu313142": {
 "^ot:originalLabel": "Acestrocephalus sardina", 
 "^ot:ottId": 48215, 
+"^ot:ottTaxonName": "Acestrocephalus sardina", 
 "^ot:treebaseOTUId": "Tl833276"
 }, 
 "otu313143": {
@@ -322,11 +305,13 @@
 "otu313147": {
 "^ot:originalLabel": "Acestrorhynchus maculipinna", 
 "^ot:ottId": 3624732, 
+"^ot:ottTaxonName": "Acestrorhynchus maculipinna", 
 "^ot:treebaseOTUId": "Tl833281"
 }, 
 "otu313148": {
 "^ot:originalLabel": "Gnathocharax steindachneri", 
 "^ot:ottId": 597351, 
+"^ot:ottTaxonName": "Gnathocharax steindachneri", 
 "^ot:treebaseOTUId": "Tl833282"
 }, 
 "otu313149": {
@@ -344,6 +329,7 @@
 "otu313151": {
 "^ot:originalLabel": "Bryconops", 
 "^ot:ottId": 413722, 
+"^ot:ottTaxonName": "Bryconops", 
 "^ot:treebaseOTUId": "Tl833285"
 }, 
 "otu313152": {
@@ -390,9 +376,15 @@
 "treeById": {
 "tree4378": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "Fig. 25A", 
 "^ot:inGroupClade": "node797971", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node797971", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node797971": {
 "edge797972": {
@@ -552,10 +544,17 @@
 }, 
 "tree4379": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "Fig. 26 Strict consensus", 
 "^ot:inGroupClade": "node798033", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node797993", 
-"^ot:tag": "choose me", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [
+"choose me"
+], 
 "edgeBySourceId": {
 "node797993": {
 "edge797994": {
@@ -988,9 +987,15 @@
 }, 
 "tree4380": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "Fig. 25B", 
 "^ot:inGroupClade": "node798054", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node798054", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node798054": {
 "edge798055": {

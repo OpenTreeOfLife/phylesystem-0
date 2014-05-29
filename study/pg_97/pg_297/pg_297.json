@@ -19,48 +19,11 @@
 "@id": "peyotl-validator", 
 "@name": "validate_ot_nexson.py", 
 "@url": "https://github.com/OpenTreeOfLife/peyotl", 
-"@version": "0.0.3a", 
+"@version": "0.0.4a", 
 "invocation": {
-"checksPerformed": [
-"MISSING_MANDATORY_KEY", 
-"MISSING_OPTIONAL_KEY", 
-"UNRECOGNIZED_KEY", 
-"MISSING_LIST_EXPECTED", 
-"DUPLICATING_SINGLETON_KEY", 
-"REFERENCED_ID_NOT_FOUND", 
-"REPEATED_ID", 
-"REPEATED_OTU", 
-"MULTIPLE_ROOT_NODES", 
-"NO_ROOT_NODE", 
-"MULTIPLE_EDGES_FOR_NODES", 
-"CYCLE_DETECTED", 
-"DISCONNECTED_GRAPH_DETECTED", 
-"INCORRECT_ROOT_NODE_LABEL", 
-"TIP_WITHOUT_OTU", 
-"TIP_WITHOUT_OTT_ID", 
-"MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
-"NON_MONOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
-"INVALID_PROPERTY_VALUE", 
-"PROPERTY_VALUE_NOT_USEFUL", 
-"UNRECOGNIZED_PROPERTY_VALUE", 
-"MULTIPLE_TREES", 
-"UNRECOGNIZED_TAG", 
-"CONFLICTING_PROPERTY_VALUES", 
-"NO_TREES", 
-"DEPRECATED_PROPERTY", 
-"UNPARSEABLE_META", 
-"UNREACHABLE_NODE", 
-"INCORRECT_VALUE_TYPE", 
-"MISSING_CRUCIAL_CONTENT"
-], 
 "commandLine": [
 "--embed", 
-"--agent-only", 
-"-e", 
-"../mig-phyelesystem-scratch/297/validation.json", 
-"-o", 
-"../mig-phyelesystem-scratch/297/final.json", 
-"../mig-phyelesystem-scratch/297/v1.2.1-297.json"
+"--agent-only"
 ], 
 "otherProperty": [
 {
@@ -76,12 +39,19 @@
 }
 ]
 }, 
+"^ot:annotationEvents": {
+"annotation": []
+}, 
+"^ot:candidateTreeForSynthesis": [], 
 "^ot:curatorName": "Romina Gazis", 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S936"
 }, 
 "^ot:focalClade": 103002, 
 "^ot:focalCladeOTTTaxonName": "Diaporthales", 
+"^ot:messages": {
+"message": []
+}, 
 "^ot:otusElementOrder": [
 "otus297"
 ], 
@@ -91,6 +61,7 @@
 }, 
 "^ot:studyPublicationReference": "Castlebury L., Rossman A., Jaklitsch W.M., & Vasilyeva L. 2002. A preliminary overview of the Diaporthales based on large subunit nuclear ribosomal DNA. Mycologia, 94: 1017-1031.", 
 "^ot:studyYear": 2002, 
+"^ot:tag": [], 
 "^ot:treesElementOrder": [
 "trees297"
 ], 
@@ -196,7 +167,9 @@
 "^ot:ottTaxonName": "Ophiognomonia setacea"
 }, 
 "otu70068": {
-"^ot:originalLabel": "Linospora capreae"
+"^ot:originalLabel": "Linospora capreae", 
+"^ot:ottId": 5308634, 
+"^ot:ottTaxonName": "Linospora saligna"
 }, 
 "otu70069": {
 "^ot:originalLabel": "Pleuroceras pleurostylum", 
@@ -204,16 +177,24 @@
 "^ot:ottTaxonName": "Pleuroceras pleurostylum"
 }, 
 "otu70070": {
-"^ot:originalLabel": "Cryptosporella hypodermia AR3552"
+"^ot:originalLabel": "Cryptosporella hypodermia AR3552", 
+"^ot:ottId": 5319203, 
+"^ot:ottTaxonName": "Winterella hypodermia"
 }, 
 "otu70071": {
-"^ot:originalLabel": "Cryptosporella hypodermia AR3566"
+"^ot:originalLabel": "Cryptosporella hypodermia AR3566", 
+"^ot:ottId": 5319203, 
+"^ot:ottTaxonName": "Winterella hypodermia"
 }, 
 "otu70072": {
-"^ot:originalLabel": "Ophiovalsa betulae"
+"^ot:originalLabel": "Ophiovalsa betulae", 
+"^ot:ottId": 830759, 
+"^ot:ottTaxonName": "Cryptosporella betulae"
 }, 
 "otu70073": {
-"^ot:originalLabel": "Ophiovalsa suffusa"
+"^ot:originalLabel": "Ophiovalsa suffusa", 
+"^ot:ottId": 982558, 
+"^ot:ottTaxonName": "Cryptosporella suffusa"
 }, 
 "otu70074": {
 "^ot:originalLabel": "Plagiostoma conradii", 
@@ -323,10 +304,14 @@
 "^ot:ottTaxonName": "Coniella castaneicola"
 }, 
 "otu70097": {
-"^ot:originalLabel": "Pilidiella granati CBS152.33"
+"^ot:originalLabel": "Pilidiella granati CBS152.33", 
+"^ot:ottId": 228448, 
+"^ot:ottTaxonName": "Coniella granati"
 }, 
 "otu70098": {
-"^ot:originalLabel": "Pilidiella granati CBS814.71"
+"^ot:originalLabel": "Pilidiella granati CBS814.71", 
+"^ot:ottId": 228448, 
+"^ot:ottTaxonName": "Coniella granati"
 }, 
 "otu70099": {
 "^ot:originalLabel": "Schizoparme straminea", 
@@ -359,7 +344,9 @@
 "^ot:ottTaxonName": "Coniella fragariae"
 }, 
 "otu70105": {
-"^ot:originalLabel": "Greeneria uvicola"
+"^ot:originalLabel": "Greeneria uvicola", 
+"^ot:ottId": 396956, 
+"^ot:ottTaxonName": "Phoma uvicola"
 }, 
 "otu70106": {
 "^ot:originalLabel": "Leucostoma auerswaldii", 
@@ -367,7 +354,9 @@
 "^ot:ottTaxonName": "Leucostoma auerswaldii"
 }, 
 "otu70107": {
-"^ot:originalLabel": "Leucostoma cincta"
+"^ot:originalLabel": "Leucostoma cincta", 
+"^ot:ottId": 313690, 
+"^ot:ottTaxonName": "Valsaria insitiva"
 }, 
 "otu70108": {
 "^ot:originalLabel": "Valsella adherens", 
@@ -410,7 +399,9 @@
 "^ot:originalLabel": "Diaporthe arctii"
 }, 
 "otu70120": {
-"^ot:originalLabel": "Diaporthe decedens"
+"^ot:originalLabel": "Diaporthe decedens", 
+"^ot:ottId": 5316669, 
+"^ot:ottTaxonName": "Allantoporthe decedens"
 }, 
 "otu70121": {
 "^ot:originalLabel": "Diaporthe detrusa", 
@@ -429,7 +420,9 @@
 "^ot:ottTaxonName": "Diaporthe oncostoma"
 }, 
 "otu70125": {
-"^ot:originalLabel": "Diaporthe medusaea"
+"^ot:originalLabel": "Diaporthe medusaea", 
+"^ot:ottId": 5316658, 
+"^ot:ottTaxonName": "Diaporthe rudis"
 }, 
 "otu70126": {
 "^ot:originalLabel": "Diaporthe pardalota", 
@@ -442,7 +435,9 @@
 "^ot:ottTaxonName": "Diaporthe fibrosa"
 }, 
 "otu70128": {
-"^ot:originalLabel": "Diaporthe padi"
+"^ot:originalLabel": "Diaporthe padi", 
+"^ot:ottId": 5316662, 
+"^ot:ottTaxonName": "Diaporthe decorticans"
 }, 
 "otu70129": {
 "^ot:originalLabel": "Diaporthe pustulata AR3430"
@@ -497,9 +492,15 @@
 "treeById": {
 "tree207": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "MP, LSU", 
 "^ot:inGroupClade": "node178554", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node178547", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node178547": {
 "edge178548": {
@@ -1639,9 +1640,15 @@
 }, 
 "tree208": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "MP, LSU", 
 "^ot:inGroupClade": "node178717", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node178709", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node178709": {
 "edge178710": {
@@ -2669,9 +2676,14 @@
 }, 
 "tree209": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "BI, LSU", 
 "^ot:inGroupClade": "node178863", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node178855", 
+"^ot:specifiedRoot": "", 
 "^ot:tag": [
 "Choose me", 
 "LSU"

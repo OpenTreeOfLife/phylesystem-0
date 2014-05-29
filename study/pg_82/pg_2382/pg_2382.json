@@ -19,48 +19,11 @@
 "@id": "peyotl-validator", 
 "@name": "validate_ot_nexson.py", 
 "@url": "https://github.com/OpenTreeOfLife/peyotl", 
-"@version": "0.0.3a", 
+"@version": "0.0.4a", 
 "invocation": {
-"checksPerformed": [
-"MISSING_MANDATORY_KEY", 
-"MISSING_OPTIONAL_KEY", 
-"UNRECOGNIZED_KEY", 
-"MISSING_LIST_EXPECTED", 
-"DUPLICATING_SINGLETON_KEY", 
-"REFERENCED_ID_NOT_FOUND", 
-"REPEATED_ID", 
-"REPEATED_OTU", 
-"MULTIPLE_ROOT_NODES", 
-"NO_ROOT_NODE", 
-"MULTIPLE_EDGES_FOR_NODES", 
-"CYCLE_DETECTED", 
-"DISCONNECTED_GRAPH_DETECTED", 
-"INCORRECT_ROOT_NODE_LABEL", 
-"TIP_WITHOUT_OTU", 
-"TIP_WITHOUT_OTT_ID", 
-"MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
-"NON_MONOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
-"INVALID_PROPERTY_VALUE", 
-"PROPERTY_VALUE_NOT_USEFUL", 
-"UNRECOGNIZED_PROPERTY_VALUE", 
-"MULTIPLE_TREES", 
-"UNRECOGNIZED_TAG", 
-"CONFLICTING_PROPERTY_VALUES", 
-"NO_TREES", 
-"DEPRECATED_PROPERTY", 
-"UNPARSEABLE_META", 
-"UNREACHABLE_NODE", 
-"INCORRECT_VALUE_TYPE", 
-"MISSING_CRUCIAL_CONTENT"
-], 
 "commandLine": [
 "--embed", 
-"--agent-only", 
-"-e", 
-"../mig-phyelesystem-scratch/2382/validation.json", 
-"-o", 
-"../mig-phyelesystem-scratch/2382/final.json", 
-"../mig-phyelesystem-scratch/2382/v1.2.1-2382.json"
+"--agent-only"
 ], 
 "otherProperty": [
 {
@@ -76,12 +39,17 @@
 }
 ]
 }, 
+"^ot:annotationEvents": {
+"annotation": []
+}, 
+"^ot:candidateTreeForSynthesis": [], 
 "^ot:curatorName": "Romina Gazis", 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S13647"
 }, 
-"^ot:focalClade": 2605196, 
-"^ot:focalCladeOTTTaxonName": "Minutisphaera", 
+"^ot:messages": {
+"message": []
+}, 
 "^ot:otusElementOrder": [
 "otus2382"
 ], 
@@ -89,9 +57,9 @@
 "^ot:studyPublicationReference": "Raja H.A., Tanaka K., Hirayama K., Hashimoto A., Oberlies N., Figueroa M., Miller A.N., Zelski S.E., & Shearer C. 2013. Freshwater Ascomycetes: Minutisphaera (Dothideomycetes) revisited, including one new species from Japan. Mycologia, .", 
 "^ot:studyYear": 2013, 
 "^ot:tag": [
+"LSU", 
 "ML", 
-"SSU", 
-"LSU"
+"SSU"
 ], 
 "^ot:treesElementOrder": [
 "trees2382"
@@ -101,62 +69,42 @@
 "otuById": {
 "otu336812": {
 "^ot:originalLabel": "Minutisphaera japonica JCM18562", 
-"^ot:ottId": 745380, 
-"^ot:ottTaxonName": "Minutisphaera", 
 "^ot:treebaseOTUId": "Tl940137"
 }, 
 "otu336813": {
 "^ot:originalLabel": "Minutisphaera fimbriatispora G155 a ITS5 4", 
-"^ot:ottId": 745382, 
-"^ot:ottTaxonName": "Minutisphaera fimbriatispora", 
 "^ot:treebaseOTUId": "Tl940214"
 }, 
 "otu336814": {
 "^ot:originalLabel": "Minutisphaera fimbriatispora G155 b ITS5 4", 
-"^ot:ottId": 745382, 
-"^ot:ottTaxonName": "Minutisphaera fimbriatispora", 
 "^ot:treebaseOTUId": "Tl940215"
 }, 
 "otu336815": {
 "^ot:originalLabel": "Minutisphaera sp G156 2b", 
-"^ot:ottId": 20471, 
-"^ot:ottTaxonName": "Minutisphaera sp. G156-2", 
 "^ot:treebaseOTUId": "Tl940216"
 }, 
 "otu336816": {
 "^ot:originalLabel": "Minutisphaera fimbriatispora A242 7d", 
-"^ot:ottId": 745382, 
-"^ot:ottTaxonName": "Minutisphaera fimbriatispora", 
 "^ot:treebaseOTUId": "Tl940217"
 }, 
 "otu336817": {
 "^ot:originalLabel": "Minutisphaera japonica JCM 18560", 
-"^ot:ottId": 745380, 
-"^ot:ottTaxonName": "Minutisphaera", 
 "^ot:treebaseOTUId": "Tl940218"
 }, 
 "otu336818": {
 "^ot:originalLabel": "Minutisphaera japonica JCM 18561", 
-"^ot:ottId": 745380, 
-"^ot:ottTaxonName": "Minutisphaera", 
 "^ot:treebaseOTUId": "Tl940219"
 }, 
 "otu336819": {
 "^ot:originalLabel": "Minutisphaera sp G156 2a", 
-"^ot:ottId": 20471, 
-"^ot:ottTaxonName": "Minutisphaera sp. G156-2", 
 "^ot:treebaseOTUId": "Tl940220"
 }, 
 "otu336820": {
 "^ot:originalLabel": "Minutisphaera fimbriatispora A242 7c", 
-"^ot:ottId": 745382, 
-"^ot:ottTaxonName": "Minutisphaera fimbriatispora", 
 "^ot:treebaseOTUId": "Tl940221"
 }, 
 "otu336821": {
 "^ot:originalLabel": "Minutisphaera sp G156 1", 
-"^ot:ottId": 20470, 
-"^ot:ottTaxonName": "Minutisphaera sp. G156-1", 
 "^ot:treebaseOTUId": "Tl940222"
 }, 
 "otu336822": {
@@ -167,8 +115,6 @@
 }, 
 "otu336823": {
 "^ot:originalLabel": "Natipusilla limonensis PE3 2b", 
-"^ot:ottId": 745390, 
-"^ot:ottTaxonName": "Natipusilla limonensis", 
 "^ot:treebaseOTUId": "Tl946772"
 }, 
 "otu336824": {
@@ -203,8 +149,6 @@
 }, 
 "otu336829": {
 "^ot:originalLabel": "Natipusilla limonensis PE3 2a", 
-"^ot:ottId": 745390, 
-"^ot:ottTaxonName": "Natipusilla limonensis", 
 "^ot:treebaseOTUId": "Tl946778"
 }, 
 "otu336830": {
@@ -233,8 +177,6 @@
 }, 
 "otu336834": {
 "^ot:originalLabel": "Minutisphaera japonica JCM18560", 
-"^ot:ottId": 745380, 
-"^ot:ottTaxonName": "Minutisphaera", 
 "^ot:treebaseOTUId": "Tl946783"
 }, 
 "otu336835": {
@@ -245,14 +187,10 @@
 }, 
 "otu336836": {
 "^ot:originalLabel": "Minutisphaera fimbriatispora G155", 
-"^ot:ottId": 745382, 
-"^ot:ottTaxonName": "Minutisphaera fimbriatispora", 
 "^ot:treebaseOTUId": "Tl946785"
 }, 
 "otu336837": {
 "^ot:originalLabel": "Natipusilla bellaspora PE91 1b", 
-"^ot:ottId": 20472, 
-"^ot:ottTaxonName": "Natipusilla bellaspora", 
 "^ot:treebaseOTUId": "Tl946786"
 }, 
 "otu336838": {
@@ -263,8 +201,6 @@
 }, 
 "otu336839": {
 "^ot:originalLabel": "Natipusilla bellaspora PE91 1a", 
-"^ot:ottId": 20472, 
-"^ot:ottTaxonName": "Natipusilla bellaspora", 
 "^ot:treebaseOTUId": "Tl946788"
 }, 
 "otu336840": {
@@ -275,8 +211,6 @@
 }, 
 "otu336841": {
 "^ot:originalLabel": "Natipusilla limonensis S AF286 A239", 
-"^ot:ottId": 745390, 
-"^ot:ottTaxonName": "Natipusilla limonensis", 
 "^ot:treebaseOTUId": "Tl946790"
 }, 
 "otu336842": {
@@ -293,14 +227,10 @@
 }, 
 "otu336844": {
 "^ot:originalLabel": "Natipusilla naponensis S AF217 A49", 
-"^ot:ottId": 69716, 
-"^ot:ottTaxonName": "Natipusilla naponensis", 
 "^ot:treebaseOTUId": "Tl946793"
 }, 
 "otu336845": {
 "^ot:originalLabel": "Muyocopron sp. MFLU CC 10-0042", 
-"^ot:ottId": 605949, 
-"^ot:ottTaxonName": "Muyocopron sp. MFLU (CC) 10-0042", 
 "^ot:treebaseOTUId": "Tl946794"
 }, 
 "otu336846": {
@@ -341,8 +271,6 @@
 }, 
 "otu336852": {
 "^ot:originalLabel": "Natipusilla naponensis S AF217 A39", 
-"^ot:ottId": 69716, 
-"^ot:ottTaxonName": "Natipusilla naponensis", 
 "^ot:treebaseOTUId": "Tl946801"
 }, 
 "otu336853": {
@@ -353,14 +281,12 @@
 }, 
 "otu336854": {
 "^ot:originalLabel": "Minutisphaera fimbriatispora A242 8A", 
-"^ot:ottId": 745382, 
-"^ot:ottTaxonName": "Minutisphaera fimbriatispora", 
 "^ot:treebaseOTUId": "Tl946803"
 }, 
 "otu336855": {
 "^ot:originalLabel": "Mycosphaerella fijiensis OSC 100622", 
 "^ot:ottId": 857565, 
-"^ot:ottTaxonName": "Pseudocercospora fijiensis", 
+"^ot:ottTaxonName": "Mycosphaerella fijiensis", 
 "^ot:treebaseOTUId": "Tl946804"
 }, 
 "otu336856": {
@@ -371,8 +297,6 @@
 }, 
 "otu336857": {
 "^ot:originalLabel": "Micropeltis zingiberacicola IFRDCC 2264", 
-"^ot:ottId": 643695, 
-"^ot:ottTaxonName": "Micropeltis zingiberacicola", 
 "^ot:treebaseOTUId": "Tl946806"
 }, 
 "otu336858": {
@@ -419,8 +343,6 @@
 }, 
 "otu336865": {
 "^ot:originalLabel": "Natipusilla decrospora S AF236 A54", 
-"^ot:ottId": 745393, 
-"^ot:ottTaxonName": "Natipusilla decorospora", 
 "^ot:treebaseOTUId": "Tl946814"
 }, 
 "otu336866": {
@@ -431,26 +353,20 @@
 }, 
 "otu336867": {
 "^ot:originalLabel": "Dendryphiella arenaria CBS 181.85", 
-"^ot:ottId": 373409, 
-"^ot:ottTaxonName": "Dendryphiella arenariae", 
+"^ot:ottId": 3796670, 
+"^ot:ottTaxonName": "Paradendryphiella arenariae", 
 "^ot:treebaseOTUId": "Tl946816"
 }, 
 "otu336868": {
 "^ot:originalLabel": "Trypethelium nitidiusculum AFTOL 2099", 
-"^ot:ottId": 1042619, 
-"^ot:ottTaxonName": "Trypethelium nitidiusculum", 
 "^ot:treebaseOTUId": "Tl946817"
 }, 
 "otu336869": {
 "^ot:originalLabel": "Minutisphaera japonica JCM18561", 
-"^ot:ottId": 745380, 
-"^ot:ottTaxonName": "Minutisphaera", 
 "^ot:treebaseOTUId": "Tl946818"
 }, 
 "otu336870": {
 "^ot:originalLabel": "Mycosphaerella graminicola CBS 292.38", 
-"^ot:ottId": 906425, 
-"^ot:ottTaxonName": "Zymoseptoria tritici", 
 "^ot:treebaseOTUId": "Tl946819"
 }, 
 "otu336871": {
@@ -461,8 +377,6 @@
 }, 
 "otu336872": {
 "^ot:originalLabel": "Minutisphaera sp. G156", 
-"^ot:ottId": 20470, 
-"^ot:ottTaxonName": "Minutisphaera sp. G156-1", 
 "^ot:treebaseOTUId": "Tl946821"
 }, 
 "otu336873": {
@@ -485,20 +399,16 @@
 }, 
 "otu336876": {
 "^ot:originalLabel": "Minutisphaera fimbriatispora A242 7D", 
-"^ot:ottId": 745382, 
-"^ot:ottTaxonName": "Minutisphaera fimbriatispora", 
 "^ot:treebaseOTUId": "Tl946825"
 }, 
 "otu336877": {
 "^ot:originalLabel": "Capnodium salicinum CBS 131.34", 
 "^ot:ottId": 736945, 
-"^ot:ottTaxonName": "Capnodium salicinum", 
+"^ot:ottTaxonName": "Capnodium citri", 
 "^ot:treebaseOTUId": "Tl946826"
 }, 
 "otu336878": {
 "^ot:originalLabel": "Elsinoe phaseoli CBS 165.31", 
-"^ot:ottId": 663857, 
-"^ot:ottTaxonName": "Elsinoe phaseoli", 
 "^ot:treebaseOTUId": "Tl946827"
 }, 
 "otu336879": {
@@ -522,7 +432,7 @@
 "otu336882": {
 "^ot:originalLabel": "Lindgomyces cinctospora R56 1", 
 "^ot:ottId": 1025918, 
-"^ot:ottTaxonName": "Lindgomyces cinctospora", 
+"^ot:ottTaxonName": "Lindgomyces cinctosporae", 
 "^ot:treebaseOTUId": "Tl946831"
 }, 
 "otu336883": {
@@ -545,7 +455,7 @@
 }, 
 "otu336886": {
 "^ot:originalLabel": "Cochliobolus sativus DAOM 216378", 
-"^ot:ottId": 4930749, 
+"^ot:ottId": 204741, 
 "^ot:ottTaxonName": "Cochliobolus sativus", 
 "^ot:treebaseOTUId": "Tl946835"
 }, 
@@ -593,14 +503,10 @@
 }, 
 "otu336894": {
 "^ot:originalLabel": "Alternaria sp CBS 174.51", 
-"^ot:ottId": 13675, 
-"^ot:ottTaxonName": "Alternaria sp. CBS 174.52", 
 "^ot:treebaseOTUId": "Tl946843"
 }, 
 "otu336895": {
 "^ot:originalLabel": "Lophiostoma crenatum CBS 629.86", 
-"^ot:ottId": 659808, 
-"^ot:ottTaxonName": "Lophiostoma crenatum", 
 "^ot:treebaseOTUId": "Tl946844"
 }, 
 "otu336896": {
@@ -612,13 +518,11 @@
 "otu336897": {
 "^ot:originalLabel": "Guignardia bidwellii CBS 237.48", 
 "^ot:ottId": 396956, 
-"^ot:ottTaxonName": "Guignardia bidwellii", 
+"^ot:ottTaxonName": "Phoma uvicola", 
 "^ot:treebaseOTUId": "Tl946846"
 }, 
 "otu336898": {
 "^ot:originalLabel": "Catinella olivacea UAMH 10679", 
-"^ot:ottId": 430975, 
-"^ot:ottTaxonName": "Catinella olivacea", 
 "^ot:treebaseOTUId": "Tl946847"
 }, 
 "otu336899": {
@@ -629,20 +533,14 @@
 }, 
 "otu336900": {
 "^ot:originalLabel": "Minutisphaera fimbriatispora A242 8C", 
-"^ot:ottId": 745382, 
-"^ot:ottTaxonName": "Minutisphaera fimbriatispora", 
 "^ot:treebaseOTUId": "Tl946849"
 }, 
 "otu336901": {
 "^ot:originalLabel": "Elsinoe veneta CBS 164.29", 
-"^ot:ottId": 405881, 
-"^ot:ottTaxonName": "Elsinoe veneta", 
 "^ot:treebaseOTUId": "Tl946850"
 }, 
 "otu336902": {
 "^ot:originalLabel": "Muyocopron sp. MFLU CC 10-0041", 
-"^ot:ottId": 605952, 
-"^ot:ottTaxonName": "Muyocopron sp. MFLU (CC) 10-0041", 
 "^ot:treebaseOTUId": "Tl946851"
 }, 
 "otu336903": {
@@ -665,8 +563,13 @@
 "treeById": {
 "tree5001": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "ML, SSU + LSU", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node867185", 
+"^ot:specifiedRoot": "", 
 "^ot:tag": [
 "NJ", 
 "LSU", 
@@ -1989,9 +1892,14 @@
 }, 
 "tree5002": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "ML, ITS", 
 "^ot:inGroupClade": "node867350", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node867350", 
+"^ot:specifiedRoot": "", 
 "^ot:tag": [
 "ITS", 
 "ML"
@@ -2138,9 +2046,14 @@
 }, 
 "tree6004": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "ML, SSU + LSU (rooted)", 
 "^ot:inGroupClade": "node1020383", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node1020382", 
+"^ot:specifiedRoot": "", 
 "^ot:tag": [
 "ML", 
 "SSU", 

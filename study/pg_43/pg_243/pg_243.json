@@ -19,48 +19,11 @@
 "@id": "peyotl-validator", 
 "@name": "validate_ot_nexson.py", 
 "@url": "https://github.com/OpenTreeOfLife/peyotl", 
-"@version": "0.0.3a", 
+"@version": "0.0.4a", 
 "invocation": {
-"checksPerformed": [
-"MISSING_MANDATORY_KEY", 
-"MISSING_OPTIONAL_KEY", 
-"UNRECOGNIZED_KEY", 
-"MISSING_LIST_EXPECTED", 
-"DUPLICATING_SINGLETON_KEY", 
-"REFERENCED_ID_NOT_FOUND", 
-"REPEATED_ID", 
-"REPEATED_OTU", 
-"MULTIPLE_ROOT_NODES", 
-"NO_ROOT_NODE", 
-"MULTIPLE_EDGES_FOR_NODES", 
-"CYCLE_DETECTED", 
-"DISCONNECTED_GRAPH_DETECTED", 
-"INCORRECT_ROOT_NODE_LABEL", 
-"TIP_WITHOUT_OTU", 
-"TIP_WITHOUT_OTT_ID", 
-"MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
-"NON_MONOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
-"INVALID_PROPERTY_VALUE", 
-"PROPERTY_VALUE_NOT_USEFUL", 
-"UNRECOGNIZED_PROPERTY_VALUE", 
-"MULTIPLE_TREES", 
-"UNRECOGNIZED_TAG", 
-"CONFLICTING_PROPERTY_VALUES", 
-"NO_TREES", 
-"DEPRECATED_PROPERTY", 
-"UNPARSEABLE_META", 
-"UNREACHABLE_NODE", 
-"INCORRECT_VALUE_TYPE", 
-"MISSING_CRUCIAL_CONTENT"
-], 
 "commandLine": [
 "--embed", 
-"--agent-only", 
-"-e", 
-"../mig-phyelesystem-scratch/243/validation.json", 
-"-o", 
-"../mig-phyelesystem-scratch/243/final.json", 
-"../mig-phyelesystem-scratch/243/v1.2.1-243.json"
+"--agent-only"
 ], 
 "otherProperty": [
 {
@@ -76,12 +39,19 @@
 }
 ]
 }, 
+"^ot:annotationEvents": {
+"annotation": []
+}, 
+"^ot:candidateTreeForSynthesis": [], 
 "^ot:curatorName": "Romina Gazis", 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S10711"
 }, 
 "^ot:focalClade": 1012685, 
 "^ot:focalCladeOTTTaxonName": "Agaricomycetes", 
+"^ot:messages": {
+"message": []
+}, 
 "^ot:otusElementOrder": [
 "otus243"
 ], 
@@ -91,6 +61,7 @@
 }, 
 "^ot:studyPublicationReference": "Garcia-Sandoval, R., Wang, Z., Binder, M., & Hibbett, D. S. (2011). Molecular phylogenetics of the Gloeophyllales and relative ages of clades of Agaricomycotina producing a brown rot. Mycologia, 103(3), 510-24. doi:10.3852/10-209", 
 "^ot:studyYear": 2011, 
+"^ot:tag": [], 
 "^ot:treesElementOrder": [
 "trees243"
 ], 
@@ -177,7 +148,9 @@
 "^ot:ottTaxonName": "Stereum hirsutum"
 }, 
 "otu64490": {
-"^ot:originalLabel": "Bondarzewia montana"
+"^ot:originalLabel": "Bondarzewia montana", 
+"^ot:ottId": 842317, 
+"^ot:ottTaxonName": "Bondarzewia mesenterica"
 }, 
 "otu64491": {
 "^ot:originalLabel": "Heterobasidion annosum", 
@@ -340,7 +313,9 @@
 "^ot:ottTaxonName": "Gloeophyllum mexicanum"
 }, 
 "otu64523": {
-"^ot:originalLabel": "Osmoporus odoratus"
+"^ot:originalLabel": "Osmoporus odoratus", 
+"^ot:ottId": 900586, 
+"^ot:ottTaxonName": "Gloeophyllum odoratum"
 }, 
 "otu64524": {
 "^ot:originalLabel": "Gloeophyllum odoratum", 
@@ -441,10 +416,14 @@
 "^ot:ottTaxonName": "Ceriporia purpurea"
 }, 
 "otu64544": {
-"^ot:originalLabel": "Phanerochaete chrysosporium"
+"^ot:originalLabel": "Phanerochaete chrysosporium", 
+"^ot:ottId": 5299626, 
+"^ot:ottTaxonName": "Phanerodontia chrysosporium"
 }, 
 "otu64545": {
-"^ot:originalLabel": "Spongipellis pachyodon"
+"^ot:originalLabel": "Spongipellis pachyodon", 
+"^ot:ottId": 5299677, 
+"^ot:ottTaxonName": "Sarcodontia pachyodon"
 }, 
 "otu64546": {
 "^ot:originalLabel": "Climacodon septentrionalis", 
@@ -467,7 +446,9 @@
 "^ot:ottTaxonName": "Rhodonia placenta"
 }, 
 "otu64550": {
-"^ot:originalLabel": "Neolentiporus maculatissimus"
+"^ot:originalLabel": "Neolentiporus maculatissimus", 
+"^ot:ottId": 802578, 
+"^ot:ottTaxonName": "Polyporus udus"
 }, 
 "otu64551": {
 "^ot:originalLabel": "Fomitopsis pinicola", 
@@ -617,10 +598,15 @@
 "treeById": {
 "tree119": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
 "^ot:branchLengthMode": "ot:substitutionCount", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "ML, RPB2 + ATP6 + EF-1 + LSU + SSU + 5.8S", 
 "^ot:inGroupClade": "node163226", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node163222", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node163222": {
 "edge163223": {
@@ -2281,9 +2267,15 @@
 }, 
 "tree120": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "Suppl_Gloeophyllales_MrBayes_AA_and_rDNA", 
 "^ot:inGroupClade": "node163433", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node163429", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node163429": {
 "edge163430": {
@@ -3928,10 +3920,15 @@
 }, 
 "tree121": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
 "^ot:branchLengthMode": "ot:substitutionCount", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "Fig 4. Gloeophyllales_BEAST_AA_and_rDNA", 
 "^ot:inGroupClade": "node163638", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node163634", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node163634": {
 "edge163635": {
@@ -5576,9 +5573,15 @@
 }, 
 "tree122": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "Suppl_Gloeophyllales_MrBayes_nrDNA", 
 "^ot:inGroupClade": "node163843", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node163839", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node163839": {
 "edge163840": {

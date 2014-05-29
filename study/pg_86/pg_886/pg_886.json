@@ -19,48 +19,11 @@
 "@id": "peyotl-validator", 
 "@name": "validate_ot_nexson.py", 
 "@url": "https://github.com/OpenTreeOfLife/peyotl", 
-"@version": "0.0.3a", 
+"@version": "0.0.4a", 
 "invocation": {
-"checksPerformed": [
-"MISSING_MANDATORY_KEY", 
-"MISSING_OPTIONAL_KEY", 
-"UNRECOGNIZED_KEY", 
-"MISSING_LIST_EXPECTED", 
-"DUPLICATING_SINGLETON_KEY", 
-"REFERENCED_ID_NOT_FOUND", 
-"REPEATED_ID", 
-"REPEATED_OTU", 
-"MULTIPLE_ROOT_NODES", 
-"NO_ROOT_NODE", 
-"MULTIPLE_EDGES_FOR_NODES", 
-"CYCLE_DETECTED", 
-"DISCONNECTED_GRAPH_DETECTED", 
-"INCORRECT_ROOT_NODE_LABEL", 
-"TIP_WITHOUT_OTU", 
-"TIP_WITHOUT_OTT_ID", 
-"MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
-"NON_MONOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
-"INVALID_PROPERTY_VALUE", 
-"PROPERTY_VALUE_NOT_USEFUL", 
-"UNRECOGNIZED_PROPERTY_VALUE", 
-"MULTIPLE_TREES", 
-"UNRECOGNIZED_TAG", 
-"CONFLICTING_PROPERTY_VALUES", 
-"NO_TREES", 
-"DEPRECATED_PROPERTY", 
-"UNPARSEABLE_META", 
-"UNREACHABLE_NODE", 
-"INCORRECT_VALUE_TYPE", 
-"MISSING_CRUCIAL_CONTENT"
-], 
 "commandLine": [
 "--embed", 
-"--agent-only", 
-"-e", 
-"../mig-phyelesystem-scratch/886/validation.json", 
-"-o", 
-"../mig-phyelesystem-scratch/886/final.json", 
-"../mig-phyelesystem-scratch/886/v1.2.1-886.json"
+"--agent-only"
 ], 
 "otherProperty": [
 {
@@ -76,12 +39,19 @@
 }
 ]
 }, 
+"^ot:annotationEvents": {
+"annotation": []
+}, 
+"^ot:candidateTreeForSynthesis": [], 
 "^ot:curatorName": "Romina Gazis", 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S10979"
 }, 
 "^ot:focalClade": 346120, 
 "^ot:focalCladeOTTTaxonName": "Dothideomycetes", 
+"^ot:messages": {
+"message": []
+}, 
 "^ot:otusElementOrder": [
 "otus886"
 ], 
@@ -91,6 +61,7 @@
 }, 
 "^ot:studyPublicationReference": "Li H.Y., Sun G., Batzer J., Crous P., Groenewald J.Z., Karakaya A., & Gleason M. 2011. Scleroramularia gen. nov. associated with sooty blotch and flyspeck of apple and pawpaw from the Northern Hemisphere. Fungal Diversity, 46: 53-66.", 
 "^ot:studyYear": 2011, 
+"^ot:tag": [], 
 "^ot:treesElementOrder": [
 "trees886"
 ], 
@@ -245,6 +216,8 @@
 }, 
 "otu203473": {
 "^ot:originalLabel": "Mycosphaerella acaciigena", 
+"^ot:ottId": 5319594, 
+"^ot:ottTaxonName": "Mycosphaerella acaciigena", 
 "^ot:treebaseOTUId": "Tl430139"
 }, 
 "otu203474": {
@@ -297,10 +270,14 @@
 }, 
 "otu203482": {
 "^ot:originalLabel": "Dichomera saubinetii", 
+"^ot:ottId": 264388, 
+"^ot:ottTaxonName": "Gibberella zeae", 
 "^ot:treebaseOTUId": "Tl430148"
 }, 
 "otu203483": {
 "^ot:originalLabel": "Botryosphaeria melanops", 
+"^ot:ottId": 518725, 
+"^ot:ottTaxonName": "Botryosphaeria quercuum", 
 "^ot:treebaseOTUId": "Tl430149"
 }, 
 "otu203484": {
@@ -444,10 +421,17 @@
 "treeById": {
 "tree1707": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "MP, LSU", 
 "^ot:inGroupClade": "node478336", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node478334", 
-"^ot:tag": "LSU", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [
+"LSU"
+], 
 "edgeBySourceId": {
 "node478334": {
 "edge478335": {
@@ -1167,9 +1151,15 @@
 }, 
 "tree1708": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "MP, ITS + EF-1", 
 "^ot:inGroupClade": "node478437", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node478436", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node478436": {
 "edge478437": {
@@ -1308,9 +1298,15 @@
 }, 
 "tree1709": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "MP, ITS", 
 "^ot:inGroupClade": "node478456", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node478455", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node478455": {
 "edge478456": {
@@ -1449,9 +1445,15 @@
 }, 
 "tree1710": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "MP, EF-1", 
 "^ot:inGroupClade": "node478475", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node478474", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node478474": {
 "edge478475": {

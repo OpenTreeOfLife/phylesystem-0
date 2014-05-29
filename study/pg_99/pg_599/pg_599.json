@@ -19,48 +19,11 @@
 "@id": "peyotl-validator", 
 "@name": "validate_ot_nexson.py", 
 "@url": "https://github.com/OpenTreeOfLife/peyotl", 
-"@version": "0.0.3a", 
+"@version": "0.0.4a", 
 "invocation": {
-"checksPerformed": [
-"MISSING_MANDATORY_KEY", 
-"MISSING_OPTIONAL_KEY", 
-"UNRECOGNIZED_KEY", 
-"MISSING_LIST_EXPECTED", 
-"DUPLICATING_SINGLETON_KEY", 
-"REFERENCED_ID_NOT_FOUND", 
-"REPEATED_ID", 
-"REPEATED_OTU", 
-"MULTIPLE_ROOT_NODES", 
-"NO_ROOT_NODE", 
-"MULTIPLE_EDGES_FOR_NODES", 
-"CYCLE_DETECTED", 
-"DISCONNECTED_GRAPH_DETECTED", 
-"INCORRECT_ROOT_NODE_LABEL", 
-"TIP_WITHOUT_OTU", 
-"TIP_WITHOUT_OTT_ID", 
-"MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
-"NON_MONOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
-"INVALID_PROPERTY_VALUE", 
-"PROPERTY_VALUE_NOT_USEFUL", 
-"UNRECOGNIZED_PROPERTY_VALUE", 
-"MULTIPLE_TREES", 
-"UNRECOGNIZED_TAG", 
-"CONFLICTING_PROPERTY_VALUES", 
-"NO_TREES", 
-"DEPRECATED_PROPERTY", 
-"UNPARSEABLE_META", 
-"UNREACHABLE_NODE", 
-"INCORRECT_VALUE_TYPE", 
-"MISSING_CRUCIAL_CONTENT"
-], 
 "commandLine": [
 "--embed", 
-"--agent-only", 
-"-e", 
-"../mig-phyelesystem-scratch/599/validation.json", 
-"-o", 
-"../mig-phyelesystem-scratch/599/final.json", 
-"../mig-phyelesystem-scratch/599/v1.2.1-599.json"
+"--agent-only"
 ], 
 "otherProperty": [
 {
@@ -76,12 +39,19 @@
 }
 ]
 }, 
+"^ot:annotationEvents": {
+"annotation": []
+}, 
+"^ot:candidateTreeForSynthesis": [], 
 "^ot:curatorName": "Jiabin Deng", 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S1460"
 }, 
 "^ot:focalClade": 679527, 
 "^ot:focalCladeOTTTaxonName": "Costaceae", 
+"^ot:messages": {
+"message": []
+}, 
 "^ot:otusElementOrder": [
 "otus599"
 ], 
@@ -91,6 +61,7 @@
 }, 
 "^ot:studyPublicationReference": "Specht, C. D. 2006. Systematics and evolution  the tropical monocot family Costaceae (Zingiberales): A multiple dataset approach. Syst. Bot. 31: 89-106.", 
 "^ot:studyYear": 2006, 
+"^ot:tag": [], 
 "^ot:treesElementOrder": [
 "trees599"
 ], 
@@ -188,9 +159,9 @@
 "^ot:treebaseOTUId": "Tl25840"
 }, 
 "otu175139": {
-"^ot:altLabel": "Cheilocostus speciosus", 
 "^ot:originalLabel": "Costus speciosus b", 
 "^ot:ottId": 251296, 
+"^ot:ottTaxonName": "Cheilocostus speciosus", 
 "^ot:treebaseOTUId": "Tl25841"
 }, 
 "otu175140": {
@@ -362,15 +333,15 @@
 "^ot:treebaseOTUId": "Tl25869"
 }, 
 "otu175168": {
-"^ot:altLabel": "Dimerocostus strobilaceus", 
 "^ot:originalLabel": "Dimerocostus strobilaceus a", 
 "^ot:ottId": 686299, 
+"^ot:ottTaxonName": "Dimerocostus strobilaceus", 
 "^ot:treebaseOTUId": "Tl25870"
 }, 
 "otu175169": {
-"^ot:altLabel": "Costus aff. globosus Mood 1714", 
 "^ot:originalLabel": "Costus aff globosus a", 
 "^ot:ottId": 127281, 
+"^ot:ottTaxonName": "Costus aff. globosus Mood 1714", 
 "^ot:treebaseOTUId": "Tl25871"
 }, 
 "otu175170": {
@@ -503,9 +474,15 @@
 "treeById": {
 "tree927": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "Fig. 1", 
 "^ot:inGroupClade": "node379676", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node379671", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node379671": {
 "edge379672": {

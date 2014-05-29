@@ -19,48 +19,11 @@
 "@id": "peyotl-validator", 
 "@name": "validate_ot_nexson.py", 
 "@url": "https://github.com/OpenTreeOfLife/peyotl", 
-"@version": "0.0.3a", 
+"@version": "0.0.4a", 
 "invocation": {
-"checksPerformed": [
-"MISSING_MANDATORY_KEY", 
-"MISSING_OPTIONAL_KEY", 
-"UNRECOGNIZED_KEY", 
-"MISSING_LIST_EXPECTED", 
-"DUPLICATING_SINGLETON_KEY", 
-"REFERENCED_ID_NOT_FOUND", 
-"REPEATED_ID", 
-"REPEATED_OTU", 
-"MULTIPLE_ROOT_NODES", 
-"NO_ROOT_NODE", 
-"MULTIPLE_EDGES_FOR_NODES", 
-"CYCLE_DETECTED", 
-"DISCONNECTED_GRAPH_DETECTED", 
-"INCORRECT_ROOT_NODE_LABEL", 
-"TIP_WITHOUT_OTU", 
-"TIP_WITHOUT_OTT_ID", 
-"MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
-"NON_MONOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
-"INVALID_PROPERTY_VALUE", 
-"PROPERTY_VALUE_NOT_USEFUL", 
-"UNRECOGNIZED_PROPERTY_VALUE", 
-"MULTIPLE_TREES", 
-"UNRECOGNIZED_TAG", 
-"CONFLICTING_PROPERTY_VALUES", 
-"NO_TREES", 
-"DEPRECATED_PROPERTY", 
-"UNPARSEABLE_META", 
-"UNREACHABLE_NODE", 
-"INCORRECT_VALUE_TYPE", 
-"MISSING_CRUCIAL_CONTENT"
-], 
 "commandLine": [
 "--embed", 
-"--agent-only", 
-"-e", 
-"../mig-phyelesystem-scratch/1653/validation.json", 
-"-o", 
-"../mig-phyelesystem-scratch/1653/final.json", 
-"../mig-phyelesystem-scratch/1653/v1.2.1-1653.json"
+"--agent-only"
 ], 
 "otherProperty": [
 {
@@ -76,18 +39,26 @@
 }
 ]
 }, 
+"^ot:annotationEvents": {
+"annotation": []
+}, 
+"^ot:candidateTreeForSynthesis": [], 
 "^ot:curatorName": "Chris Owen", 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S10982"
 }, 
 "^ot:focalClade": 929128, 
 "^ot:focalCladeOTTTaxonName": "Colubroidea", 
+"^ot:messages": {
+"message": []
+}, 
 "^ot:otusElementOrder": [
 "otus1653"
 ], 
 "^ot:studyId": "1653", 
 "^ot:studyPublicationReference": "Pyron R.A., Burbrink F., Colli G., Montes de oca A.N., Vitt L.J., Kuczynski C.A., & Wiens J.J. 2010. The phylogeny of advanced snakes (Colubroidea), with discovery of a new subfamily and comparison of support methods for likelihood trees. Molecular Phylogenetics and Evolution 58 (2): 329-342.", 
 "^ot:studyYear": 2010, 
+"^ot:tag": [], 
 "^ot:treesElementOrder": [
 "trees1653"
 ], 
@@ -1342,6 +1313,8 @@
 }, 
 "otu268956": {
 "^ot:originalLabel": "Xenodon neuwiedii", 
+"^ot:ottId": 67885, 
+"^ot:ottTaxonName": "Fusicladium betulae", 
 "^ot:treebaseOTUId": "Tl431223"
 }, 
 "otu268957": {
@@ -1742,6 +1715,8 @@
 }, 
 "otu269023": {
 "^ot:originalLabel": "Dinodon semicarinatum", 
+"^ot:ottId": 4121296, 
+"^ot:ottTaxonName": "Dinodon semicarinatum", 
 "^ot:treebaseOTUId": "Tl431290"
 }, 
 "otu269024": {
@@ -2004,6 +1979,8 @@
 }, 
 "otu269067": {
 "^ot:originalLabel": "Lycodonomorphus laevissimus", 
+"^ot:ottId": 4121663, 
+"^ot:ottTaxonName": "Lycodonomorphus laevissimus", 
 "^ot:treebaseOTUId": "Tl431334"
 }, 
 "otu269068": {
@@ -2242,6 +2219,8 @@
 }, 
 "otu269107": {
 "^ot:originalLabel": "Antillophis andreae", 
+"^ot:ottId": 4126069, 
+"^ot:ottTaxonName": "Caraiba andreae", 
 "^ot:treebaseOTUId": "Tl431374"
 }, 
 "otu269108": {
@@ -2618,6 +2597,8 @@
 }, 
 "otu269170": {
 "^ot:originalLabel": "Simoselaps semifasciatus", 
+"^ot:ottId": 403992, 
+"^ot:ottTaxonName": "Brachyurophis semifasciatus", 
 "^ot:treebaseOTUId": "Tl431437"
 }, 
 "otu269171": {
@@ -3276,6 +3257,8 @@
 }, 
 "otu269280": {
 "^ot:originalLabel": "Bothriopsis pulchra", 
+"^ot:ottId": 746943, 
+"^ot:ottTaxonName": "Bothrops pulchra", 
 "^ot:treebaseOTUId": "Tl431547"
 }, 
 "otu269281": {
@@ -3514,6 +3497,8 @@
 }, 
 "otu269320": {
 "^ot:originalLabel": "Eirenis rothii", 
+"^ot:ottId": 4121361, 
+"^ot:ottTaxonName": "Eirenis rothii", 
 "^ot:treebaseOTUId": "Tl431587"
 }, 
 "otu269321": {
@@ -3992,6 +3977,8 @@
 }, 
 "otu269400": {
 "^ot:originalLabel": "Bothriopsis taeniata", 
+"^ot:ottId": 103815, 
+"^ot:ottTaxonName": "Bothrops taeniata", 
 "^ot:treebaseOTUId": "Tl431667"
 }, 
 "otu269401": {
@@ -4690,10 +4677,14 @@
 "treeById": {
 "tree6541": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
 "^ot:branchLengthMode": "ot:substitutionCount", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "Fig. 2 ML", 
 "^ot:inGroupClade": "node1133822", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node1133810", 
+"^ot:specifiedRoot": "", 
 "^ot:tag": [
 "ingroup added;", 
 "Choose me"

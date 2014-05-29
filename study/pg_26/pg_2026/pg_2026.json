@@ -19,48 +19,11 @@
 "@id": "peyotl-validator", 
 "@name": "validate_ot_nexson.py", 
 "@url": "https://github.com/OpenTreeOfLife/peyotl", 
-"@version": "0.0.3a", 
+"@version": "0.0.4a", 
 "invocation": {
-"checksPerformed": [
-"MISSING_MANDATORY_KEY", 
-"MISSING_OPTIONAL_KEY", 
-"UNRECOGNIZED_KEY", 
-"MISSING_LIST_EXPECTED", 
-"DUPLICATING_SINGLETON_KEY", 
-"REFERENCED_ID_NOT_FOUND", 
-"REPEATED_ID", 
-"REPEATED_OTU", 
-"MULTIPLE_ROOT_NODES", 
-"NO_ROOT_NODE", 
-"MULTIPLE_EDGES_FOR_NODES", 
-"CYCLE_DETECTED", 
-"DISCONNECTED_GRAPH_DETECTED", 
-"INCORRECT_ROOT_NODE_LABEL", 
-"TIP_WITHOUT_OTU", 
-"TIP_WITHOUT_OTT_ID", 
-"MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
-"NON_MONOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
-"INVALID_PROPERTY_VALUE", 
-"PROPERTY_VALUE_NOT_USEFUL", 
-"UNRECOGNIZED_PROPERTY_VALUE", 
-"MULTIPLE_TREES", 
-"UNRECOGNIZED_TAG", 
-"CONFLICTING_PROPERTY_VALUES", 
-"NO_TREES", 
-"DEPRECATED_PROPERTY", 
-"UNPARSEABLE_META", 
-"UNREACHABLE_NODE", 
-"INCORRECT_VALUE_TYPE", 
-"MISSING_CRUCIAL_CONTENT"
-], 
 "commandLine": [
 "--embed", 
-"--agent-only", 
-"-e", 
-"../mig-phyelesystem-scratch/2026/validation.json", 
-"-o", 
-"../mig-phyelesystem-scratch/2026/final.json", 
-"../mig-phyelesystem-scratch/2026/v1.2.1-2026.json"
+"--agent-only"
 ], 
 "otherProperty": [
 {
@@ -76,9 +39,16 @@
 }
 ]
 }, 
+"^ot:annotationEvents": {
+"annotation": []
+}, 
+"^ot:candidateTreeForSynthesis": [], 
 "^ot:curatorName": "bryan drew", 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S13859"
+}, 
+"^ot:messages": {
+"message": []
 }, 
 "^ot:otusElementOrder": [
 "otus2026"
@@ -89,7 +59,9 @@
 }, 
 "^ot:studyPublicationReference": "Arakaki M., Christin P., Nyffeler R., Lendel A., Eggli U., Ogburn R., Spriggs E.,\r\nMoore M.J., & Edwards E.J. 2011. Contemporaneous and recent radiations of the world?s\r\nmajor succulent plant lineages. PNAS, 108(20): 8379-8384.", 
 "^ot:studyYear": 2011, 
-"^ot:tag": "ingroup added;", 
+"^ot:tag": [
+"ingroup added;"
+], 
 "^ot:treesElementOrder": [
 "trees2026"
 ], 
@@ -849,7 +821,7 @@
 "otu306252": {
 "^ot:originalLabel": "Phemeranthus punae", 
 "^ot:ottId": 979044, 
-"^ot:ottTaxonName": "Talinum punae"
+"^ot:ottTaxonName": "Phemeranthus punae"
 }, 
 "otu306253": {
 "^ot:originalLabel": "Phemeranthus napiformis", 
@@ -1299,17 +1271,17 @@
 "otu306342": {
 "^ot:originalLabel": "Avonia papyracea", 
 "^ot:ottId": 760092, 
-"^ot:ottTaxonName": "Avonia papyracea"
+"^ot:ottTaxonName": "Anacampseros papyracea"
 }, 
 "otu306343": {
 "^ot:originalLabel": "Avonia albissima", 
-"^ot:ottId": 1006596, 
-"^ot:ottTaxonName": "Avonia albissima"
+"^ot:ottId": 5143718, 
+"^ot:ottTaxonName": "Anacampseros albissima"
 }, 
 "otu306344": {
 "^ot:originalLabel": "Avonia recurvata", 
 "^ot:ottId": 505175, 
-"^ot:ottTaxonName": "Avonia recurvata"
+"^ot:ottTaxonName": "Anacampseros recurvata"
 }, 
 "otu306345": {
 "^ot:originalLabel": "Anacampseros australiana", 
@@ -1584,7 +1556,7 @@
 "otu306399": {
 "^ot:originalLabel": "Nopalea cochenillifera", 
 "^ot:ottId": 358278, 
-"^ot:ottTaxonName": "Nopalea cochenillifera"
+"^ot:ottTaxonName": "Opuntia cochenillifera"
 }, 
 "otu306400": {
 "^ot:originalLabel": "Opuntia quimilo", 
@@ -1689,7 +1661,7 @@
 "otu306420": {
 "^ot:originalLabel": "Escobaria duncanii", 
 "^ot:ottId": 652873, 
-"^ot:ottTaxonName": "Escobaria duncanii"
+"^ot:ottTaxonName": "Coryphantha duncanii"
 }, 
 "otu306421": {
 "^ot:originalLabel": "Coryphantha palmeri", 
@@ -2032,10 +2004,15 @@
 "treeById": {
 "tree4171": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
 "^ot:branchLengthMode": "ot:substitutionCount", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "chronogram", 
 "^ot:inGroupClade": "node775312", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node775312", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node775312": {
 "edge775313": {
@@ -3616,10 +3593,16 @@
 }, 
 "tree4172": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
 "^ot:branchLengthMode": "ot:substitutionCount", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "bayesian 50% majority rule", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node775509", 
-"^ot:tag": "delete", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [
+"delete"
+], 
 "edgeBySourceId": {
 "node775509": {
 "edge775510": {
@@ -5240,9 +5223,15 @@
 }, 
 "tree4173": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "ml bootstrap tree", 
 "^ot:inGroupClade": "node775723", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node775711", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node775711": {
 "edge775712": {
@@ -9959,11 +9948,15 @@
 }, 
 "tree4174": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
 "^ot:branchLengthMode": "ot:time", 
 "^ot:branchLengthTimeUnit": "Myr", 
 "^ot:curatedType": "BEAST chronogram", 
 "^ot:inGroupClade": "node776328", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node776300", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node776300": {
 "edge776301": {
@@ -14152,10 +14145,15 @@
 }, 
 "tree5919": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
 "^ot:branchLengthMode": "ot:substitutionCount", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "Bayesian 50% majority rule", 
 "^ot:inGroupClade": "node1005139", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node1005138", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node1005138": {
 "edge1005139": {

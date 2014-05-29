@@ -19,48 +19,11 @@
 "@id": "peyotl-validator", 
 "@name": "validate_ot_nexson.py", 
 "@url": "https://github.com/OpenTreeOfLife/peyotl", 
-"@version": "0.0.3a", 
+"@version": "0.0.4a", 
 "invocation": {
-"checksPerformed": [
-"MISSING_MANDATORY_KEY", 
-"MISSING_OPTIONAL_KEY", 
-"UNRECOGNIZED_KEY", 
-"MISSING_LIST_EXPECTED", 
-"DUPLICATING_SINGLETON_KEY", 
-"REFERENCED_ID_NOT_FOUND", 
-"REPEATED_ID", 
-"REPEATED_OTU", 
-"MULTIPLE_ROOT_NODES", 
-"NO_ROOT_NODE", 
-"MULTIPLE_EDGES_FOR_NODES", 
-"CYCLE_DETECTED", 
-"DISCONNECTED_GRAPH_DETECTED", 
-"INCORRECT_ROOT_NODE_LABEL", 
-"TIP_WITHOUT_OTU", 
-"TIP_WITHOUT_OTT_ID", 
-"MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
-"NON_MONOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
-"INVALID_PROPERTY_VALUE", 
-"PROPERTY_VALUE_NOT_USEFUL", 
-"UNRECOGNIZED_PROPERTY_VALUE", 
-"MULTIPLE_TREES", 
-"UNRECOGNIZED_TAG", 
-"CONFLICTING_PROPERTY_VALUES", 
-"NO_TREES", 
-"DEPRECATED_PROPERTY", 
-"UNPARSEABLE_META", 
-"UNREACHABLE_NODE", 
-"INCORRECT_VALUE_TYPE", 
-"MISSING_CRUCIAL_CONTENT"
-], 
 "commandLine": [
 "--embed", 
-"--agent-only", 
-"-e", 
-"../mig-phyelesystem-scratch/2745/validation.json", 
-"-o", 
-"../mig-phyelesystem-scratch/2745/final.json", 
-"../mig-phyelesystem-scratch/2745/v1.2.1-2745.json"
+"--agent-only"
 ], 
 "otherProperty": [
 {
@@ -76,18 +39,29 @@
 }
 ]
 }, 
+"^ot:annotationEvents": {
+"annotation": []
+}, 
+"^ot:candidateTreeForSynthesis": [], 
 "^ot:curatorName": "Dail Laughinghouse", 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S963"
 }, 
 "^ot:focalClade": 575949, 
 "^ot:focalCladeOTTTaxonName": "Dinophysis", 
+"^ot:messages": {
+"message": []
+}, 
 "^ot:otusElementOrder": [
 "otus2745"
 ], 
 "^ot:studyId": "2745", 
-"^ot:studyPublicationReference": "Hackett J., Maranda L., Yoon H., & Bhattacharya D. 2003. Phylogenetic evidence for the cryptophyte origin of the plastid of Dinophysis (Dinophysiales, Dinophyceae. Journal of Phycology, null.", 
+"^ot:studyPublication": {
+"@href": "http://dx.doi.org/10.1046/j.1529-8817.2003.02100.x"
+}, 
+"^ot:studyPublicationReference": "Hackett, J., Maranda L., Yoon H., & Bhattacharya D. 2003. Phylogenetic evidence for the cryptophyte origin of the plastid of Dinophysis (Dinophysiales, Dinophyceae. Journal of Phycology 39 (2): 440-448.", 
 "^ot:studyYear": 2003, 
+"^ot:tag": [], 
 "^ot:treesElementOrder": [
 "trees2745"
 ], 
@@ -182,6 +156,8 @@
 }, 
 "otu409758": {
 "^ot:originalLabel": "Pyrenomonas helgolandii", 
+"^ot:ottId": 375993, 
+"^ot:ottTaxonName": "Pyrenomonas helgolandii", 
 "^ot:treebaseOTUId": "Tl12896"
 }, 
 "otu409759": {
@@ -272,6 +248,8 @@
 }, 
 "otu409774": {
 "^ot:originalLabel": "Erythrotrichia carnea", 
+"^ot:ottId": 280885, 
+"^ot:ottTaxonName": "Erythrotrichia carnea", 
 "^ot:treebaseOTUId": "Tl12913"
 }, 
 "otu409775": {
@@ -336,8 +314,8 @@
 }, 
 "otu409787": {
 "^ot:originalLabel": "Dinophysis acuminata-acuta", 
-"^ot:ottId": 575949, 
-"^ot:ottTaxonName": "Dinophysis", 
+"^ot:ottId": 575941, 
+"^ot:ottTaxonName": "Dinophysis acuminata", 
 "^ot:treebaseOTUId": "Tl12927"
 }, 
 "otu409788": {
@@ -358,6 +336,8 @@
 }, 
 "otu409791": {
 "^ot:originalLabel": "Cyanophora paradoxa", 
+"^ot:ottId": 878960, 
+"^ot:ottTaxonName": "Cyanophora paradoxa", 
 "^ot:treebaseOTUId": "Tl136610"
 }, 
 "otu409792": {
@@ -386,6 +366,8 @@
 }, 
 "otu409796": {
 "^ot:originalLabel": "Guillardia theta", 
+"^ot:ottId": 5247740, 
+"^ot:ottTaxonName": "Guillardia theta", 
 "^ot:treebaseOTUId": "Tl136648"
 }, 
 "otu409797": {
@@ -396,6 +378,8 @@
 }, 
 "otu409798": {
 "^ot:originalLabel": "Palmaria palmata", 
+"^ot:ottId": 725574, 
+"^ot:ottTaxonName": "Palmaria palmata", 
 "^ot:treebaseOTUId": "Tl136655"
 }, 
 "otu409799": {
@@ -417,10 +401,15 @@
 "treeById": {
 "tree6344": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
 "^ot:branchLengthMode": "ot:substitutionCount", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "Fig. 2", 
 "^ot:inGroupClade": "node1105103", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node1105074", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node1105074": {
 "edge1105075": {
@@ -895,10 +884,15 @@
 }, 
 "tree6345": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
 "^ot:branchLengthMode": "ot:substitutionCount", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "Fig. 1", 
-"^ot:inGroupClade": "node1105158", 
+"^ot:inGroupClade": "node1105147", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node1105141", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node1105141": {
 "edge1105142": {

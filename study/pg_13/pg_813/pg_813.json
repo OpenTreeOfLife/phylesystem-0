@@ -19,48 +19,11 @@
 "@id": "peyotl-validator", 
 "@name": "validate_ot_nexson.py", 
 "@url": "https://github.com/OpenTreeOfLife/peyotl", 
-"@version": "0.0.3a", 
+"@version": "0.0.4a", 
 "invocation": {
-"checksPerformed": [
-"MISSING_MANDATORY_KEY", 
-"MISSING_OPTIONAL_KEY", 
-"UNRECOGNIZED_KEY", 
-"MISSING_LIST_EXPECTED", 
-"DUPLICATING_SINGLETON_KEY", 
-"REFERENCED_ID_NOT_FOUND", 
-"REPEATED_ID", 
-"REPEATED_OTU", 
-"MULTIPLE_ROOT_NODES", 
-"NO_ROOT_NODE", 
-"MULTIPLE_EDGES_FOR_NODES", 
-"CYCLE_DETECTED", 
-"DISCONNECTED_GRAPH_DETECTED", 
-"INCORRECT_ROOT_NODE_LABEL", 
-"TIP_WITHOUT_OTU", 
-"TIP_WITHOUT_OTT_ID", 
-"MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
-"NON_MONOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
-"INVALID_PROPERTY_VALUE", 
-"PROPERTY_VALUE_NOT_USEFUL", 
-"UNRECOGNIZED_PROPERTY_VALUE", 
-"MULTIPLE_TREES", 
-"UNRECOGNIZED_TAG", 
-"CONFLICTING_PROPERTY_VALUES", 
-"NO_TREES", 
-"DEPRECATED_PROPERTY", 
-"UNPARSEABLE_META", 
-"UNREACHABLE_NODE", 
-"INCORRECT_VALUE_TYPE", 
-"MISSING_CRUCIAL_CONTENT"
-], 
 "commandLine": [
 "--embed", 
-"--agent-only", 
-"-e", 
-"../mig-phyelesystem-scratch/813/validation.json", 
-"-o", 
-"../mig-phyelesystem-scratch/813/final.json", 
-"../mig-phyelesystem-scratch/813/v1.2.1-813.json"
+"--agent-only"
 ], 
 "otherProperty": [
 {
@@ -76,12 +39,19 @@
 }
 ]
 }, 
+"^ot:annotationEvents": {
+"annotation": []
+}, 
+"^ot:candidateTreeForSynthesis": [], 
 "^ot:curatorName": "Romina Gazis", 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S1569"
 }, 
 "^ot:focalClade": 443192, 
 "^ot:focalCladeOTTTaxonName": "Pestalotiopsis", 
+"^ot:messages": {
+"message": []
+}, 
 "^ot:otusElementOrder": [
 "otus813"
 ], 
@@ -92,9 +62,9 @@
 "^ot:studyPublicationReference": "Liu A., Xu T., & Guo L. 2006. Molecular and morphological description of Pestalotiopsis hainanensis sp. nov., a new endophyte from the tropical region of China. Fungal Diversity, 24: 23-36", 
 "^ot:studyYear": 2006, 
 "^ot:tag": [
-"MP", 
+"b-tub", 
 "ITS", 
-"b-tub"
+"MP"
 ], 
 "^ot:treesElementOrder": [
 "trees813"
@@ -110,6 +80,8 @@
 }, 
 "otu197310": {
 "^ot:originalLabel": "Pestalotiopsis westerdijkii", 
+"^ot:ottId": 5317555, 
+"^ot:ottTaxonName": "Pestalotiopsis westerdykiae", 
 "^ot:treebaseOTUId": "Tl173712"
 }, 
 "otu197311": {
@@ -198,6 +170,8 @@
 }, 
 "otu197325": {
 "^ot:originalLabel": "Pestalotiopsis subcuticularis", 
+"^ot:ottId": 5317553, 
+"^ot:ottTaxonName": "Pestalotiopsis subcuticularis", 
 "^ot:treebaseOTUId": "Tl32465"
 }, 
 "otu197326": {
@@ -224,10 +198,14 @@
 }, 
 "otu197330": {
 "^ot:originalLabel": "Pestalotiopsis karstenii 1", 
+"^ot:ottId": 1019306, 
+"^ot:ottTaxonName": "Monochaetia karstenii", 
 "^ot:treebaseOTUId": "Tl32470"
 }, 
 "otu197331": {
 "^ot:originalLabel": "Pestalotiopsis olivacea", 
+"^ot:ottId": 5317547, 
+"^ot:ottTaxonName": "Pestalotia olivacea", 
 "^ot:treebaseOTUId": "Tl32471"
 }, 
 "otu197332": {
@@ -238,6 +216,8 @@
 }, 
 "otu197333": {
 "^ot:originalLabel": "Pestalotiopsis karstenii 2", 
+"^ot:ottId": 1019306, 
+"^ot:ottTaxonName": "Monochaetia karstenii", 
 "^ot:treebaseOTUId": "Tl32473"
 }, 
 "otu197334": {
@@ -260,6 +240,8 @@
 }, 
 "otu197337": {
 "^ot:originalLabel": "Pestalotiopsis karstenii 3", 
+"^ot:ottId": 1019306, 
+"^ot:ottTaxonName": "Monochaetia karstenii", 
 "^ot:treebaseOTUId": "Tl32477"
 }, 
 "otu197338": {
@@ -270,6 +252,8 @@
 }, 
 "otu197339": {
 "^ot:originalLabel": "Pestalotiopsis westerdikii", 
+"^ot:ottId": 5317555, 
+"^ot:ottTaxonName": "Pestalotiopsis westerdykiae", 
 "^ot:treebaseOTUId": "Tl32491"
 }
 }
@@ -285,9 +269,15 @@
 "treeById": {
 "tree1547": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "MP, ITS", 
 "^ot:inGroupClade": "node463516", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node463515", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node463515": {
 "edge463516": {
@@ -615,9 +605,14 @@
 }, 
 "tree1548": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "MP, b-tubulin", 
 "^ot:inGroupClade": "node463562", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node463561", 
+"^ot:specifiedRoot": "", 
 "^ot:tag": [
 "MP", 
 "b-tub", 

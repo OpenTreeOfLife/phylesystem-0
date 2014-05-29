@@ -3,7 +3,7 @@
 "@generator": "Phylografter nexml-json exporter", 
 "@id": "study", 
 "@nexml2json": "1.2.1", 
-"@nexmljson": "http://opentree.wikispaces.com/NexSON", 
+"@nexmljson": "http://purl.org/opentree/nexson", 
 "@version": "0.9", 
 "@xmlns": {
 "$": "http://www.nexml.org/2009", 
@@ -12,53 +12,23 @@
 "xsd": "http://www.w3.org/2001/XMLSchema#", 
 "xsi": "http://www.w3.org/2001/XMLSchema-instance"
 }, 
-"^bogus_timestamp": "2014-04-01T11:39:05.057031", 
 "^ot:agents": {
 "agent": [
 {
-"@description": "Open Tree NexSON validation", 
+"@description": "validator of NexSON constraints as well as constraints that would allow a study to be imported into the Open Tree of Life's phylogenetic synthesis tools", 
 "@id": "peyotl-validator", 
-"@name": "api.opentreeoflife.org/validate", 
+"@name": "validate_ot_nexson.py", 
 "@url": "https://github.com/OpenTreeOfLife/peyotl", 
-"@version": "0.0.3a", 
+"@version": "0.0.4a", 
 "invocation": {
-"checksPerformed": [
-"MISSING_MANDATORY_KEY", 
-"MISSING_OPTIONAL_KEY", 
-"UNRECOGNIZED_KEY", 
-"MISSING_LIST_EXPECTED", 
-"DUPLICATING_SINGLETON_KEY", 
-"REFERENCED_ID_NOT_FOUND", 
-"REPEATED_ID", 
-"REPEATED_OTU", 
-"MULTIPLE_ROOT_NODES", 
-"NO_ROOT_NODE", 
-"MULTIPLE_EDGES_FOR_NODES", 
-"CYCLE_DETECTED", 
-"DISCONNECTED_GRAPH_DETECTED", 
-"INCORRECT_ROOT_NODE_LABEL", 
-"TIP_WITHOUT_OTU", 
-"TIP_WITHOUT_OTT_ID", 
-"MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
-"NON_MONOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
-"INVALID_PROPERTY_VALUE", 
-"PROPERTY_VALUE_NOT_USEFUL", 
-"UNRECOGNIZED_PROPERTY_VALUE", 
-"MULTIPLE_TREES", 
-"UNRECOGNIZED_TAG", 
-"CONFLICTING_PROPERTY_VALUES", 
-"NO_TREES", 
-"DEPRECATED_PROPERTY", 
-"UNPARSEABLE_META", 
-"UNREACHABLE_NODE", 
-"INCORRECT_VALUE_TYPE", 
-"MISSING_CRUCIAL_CONTENT"
+"commandLine": [
+"--embed", 
+"--agent-only"
 ], 
-"commandLine": [], 
 "otherProperty": [
 {
 "name": "pythonVersion", 
-"value": "2.7.3"
+"value": "2.7.5+"
 }, 
 {
 "name": "pythonImplementation", 
@@ -69,8 +39,16 @@
 }
 ]
 }, 
+"^ot:annotationEvents": {
+"annotation": []
+}, 
+"^ot:candidateTreeForSynthesis": [], 
 "^ot:curatorName": "Rick Ree", 
-"^ot:focalClade": 177637, 
+"^ot:focalClade": 99252, 
+"^ot:focalCladeOTTTaxonName": "Magnoliophyta", 
+"^ot:messages": {
+"message": []
+}, 
 "^ot:otusElementOrder": [
 "otus12"
 ], 
@@ -80,6 +58,7 @@
 }, 
 "^ot:studyPublicationReference": "Moore, Michael J., Charles D. Bell, Pamela S. Soltis, and Douglas E. Soltis. 2007. Using plastid genome-scale data to resolve enigmatic relationships among basal angiosperms. Proceedings of the National Academy of Sciences 104, no. 49 (December 4): 19363 -19368. doi:10.1073/pnas.0708072104.", 
 "^ot:studyYear": 2007, 
+"^ot:tag": [], 
 "^ot:treesElementOrder": [
 "trees12"
 ], 
@@ -87,229 +66,229 @@
 "otus12": {
 "otuById": {
 "otu1393": {
-"@label": "Ginkgo", 
 "^ot:originalLabel": "Ginkgo", 
-"^ot:ottId": 950165
+"^ot:ottId": 950165, 
+"^ot:ottTaxonName": "Ginkgo"
 }, 
 "otu1394": {
-"@label": "Pinus", 
 "^ot:originalLabel": "Pinus", 
-"^ot:ottId": 771683
+"^ot:ottId": 771683, 
+"^ot:ottTaxonName": "Pinus"
 }, 
 "otu1395": {
-"@label": "Amborella", 
 "^ot:originalLabel": "Amborella", 
-"^ot:ottId": 303952
+"^ot:ottId": 303952, 
+"^ot:ottTaxonName": "Amborella"
 }, 
 "otu1396": {
-"@label": "Nuphar", 
 "^ot:originalLabel": "Nuphar", 
-"^ot:ottId": 583532
+"^ot:ottId": 583532, 
+"^ot:ottTaxonName": "Nuphar"
 }, 
 "otu1397": {
-"@label": "Nymphaea", 
 "^ot:originalLabel": "Nymphaea", 
-"^ot:ottId": 583523
+"^ot:ottId": 583523, 
+"^ot:ottTaxonName": "Nymphaea"
 }, 
 "otu1398": {
-"@label": "Illicium", 
 "^ot:originalLabel": "Illicium", 
-"^ot:ottId": 35784
+"^ot:ottId": 35784, 
+"^ot:ottTaxonName": "Illicium"
 }, 
 "otu1399": {
-"@label": "Chloranthus", 
 "^ot:originalLabel": "Chloranthus", 
-"^ot:ottId": 815629
+"^ot:ottId": 815629, 
+"^ot:ottTaxonName": "Chloranthus"
 }, 
 "otu1400": {
-"@label": "Drimys", 
 "^ot:originalLabel": "Drimys", 
-"^ot:ottId": 777323
+"^ot:ottId": 777323, 
+"^ot:ottTaxonName": "Drimys"
 }, 
 "otu1401": {
-"@label": "Piper", 
 "^ot:originalLabel": "Piper", 
-"^ot:ottId": 283089
+"^ot:ottId": 283089, 
+"^ot:ottTaxonName": "Piper"
 }, 
 "otu1402": {
-"@label": "Calycanthus", 
 "^ot:originalLabel": "Calycanthus", 
-"^ot:ottId": 930002
+"^ot:ottId": 930002, 
+"^ot:ottTaxonName": "Calycanthus"
 }, 
 "otu1403": {
-"@label": "Liriodendron", 
 "^ot:originalLabel": "Liriodendron", 
-"^ot:ottId": 863069
+"^ot:ottId": 863069, 
+"^ot:ottTaxonName": "Liriodendron"
 }, 
 "otu1404": {
-"@label": "Acorus", 
 "^ot:originalLabel": "Acorus", 
-"^ot:ottId": 1008191
+"^ot:ottId": 1008191, 
+"^ot:ottTaxonName": "Acorus"
 }, 
 "otu1405": {
-"@label": "Dioscorea", 
 "^ot:originalLabel": "Dioscorea", 
-"^ot:ottId": 781622
+"^ot:ottId": 781622, 
+"^ot:ottTaxonName": "Dioscorea"
 }, 
 "otu1406": {
-"@label": "Phalaenopsis", 
 "^ot:originalLabel": "Phalaenopsis", 
-"^ot:ottId": 995670
+"^ot:ottId": 995670, 
+"^ot:ottTaxonName": "Phalaenopsis"
 }, 
 "otu1407": {
-"@label": "Yucca", 
 "^ot:originalLabel": "Yucca", 
-"^ot:ottId": 548110
+"^ot:ottId": 548110, 
+"^ot:ottTaxonName": "Yucca"
 }, 
 "otu1408": {
-"@label": "Typha", 
 "^ot:originalLabel": "Typha", 
-"^ot:ottId": 613197
+"^ot:ottId": 613197, 
+"^ot:ottTaxonName": "Typha"
 }, 
 "otu1409": {
-"@label": "Zea", 
 "^ot:originalLabel": "Zea", 
-"^ot:ottId": 605186
+"^ot:ottId": 605186, 
+"^ot:ottTaxonName": "Zea"
 }, 
 "otu1410": {
-"@label": "Oryza", 
 "^ot:originalLabel": "Oryza", 
-"^ot:ottId": 135764
+"^ot:ottId": 135764, 
+"^ot:ottTaxonName": "Oryza"
 }, 
 "otu1411": {
-"@label": "Triticum", 
 "^ot:originalLabel": "Triticum", 
-"^ot:ottId": 31937
+"^ot:ottId": 31937, 
+"^ot:ottTaxonName": "Triticum"
 }, 
 "otu1412": {
-"@label": "Ceratophyllum", 
 "^ot:originalLabel": "Ceratophyllum", 
-"^ot:ottId": 10945
+"^ot:ottId": 10945, 
+"^ot:ottTaxonName": "Ceratophyllum"
 }, 
 "otu1413": {
-"@label": "Nandina", 
 "^ot:originalLabel": "Nandina", 
-"^ot:ottId": 681927
+"^ot:ottId": 681927, 
+"^ot:ottTaxonName": "Nandina"
 }, 
 "otu1414": {
-"@label": "Ranunculus", 
 "^ot:originalLabel": "Ranunculus", 
-"^ot:ottId": 387812
+"^ot:ottId": 387812, 
+"^ot:ottTaxonName": "Ranunculus"
 }, 
 "otu1415": {
-"@label": "Platanus", 
 "^ot:originalLabel": "Platanus", 
-"^ot:ottId": 62539
+"^ot:ottId": 62539, 
+"^ot:ottTaxonName": "Platanus"
 }, 
 "otu1416": {
-"@label": "Buxus", 
 "^ot:originalLabel": "Buxus", 
-"^ot:ottId": 1000250
+"^ot:ottId": 1000250, 
+"^ot:ottTaxonName": "Buxus"
 }, 
 "otu1417": {
-"@label": "Spinacia", 
 "^ot:originalLabel": "Spinacia", 
-"^ot:ottId": 317799
+"^ot:ottId": 317799, 
+"^ot:ottTaxonName": "Spinacia"
 }, 
 "otu1418": {
-"@label": "Coffea", 
 "^ot:originalLabel": "Coffea", 
-"^ot:ottId": 1001054
+"^ot:ottId": 1001054, 
+"^ot:ottTaxonName": "Coffea"
 }, 
 "otu1419": {
-"@label": "Jasminum", 
 "^ot:originalLabel": "Jasminum", 
-"^ot:ottId": 23725
+"^ot:ottId": 23725, 
+"^ot:ottTaxonName": "Jasminum"
 }, 
 "otu1420": {
-"@label": "Atropa", 
 "^ot:originalLabel": "Atropa", 
-"^ot:ottId": 543092
+"^ot:ottId": 543092, 
+"^ot:ottTaxonName": "Atropa"
 }, 
 "otu1421": {
-"@label": "Nicotiana", 
 "^ot:originalLabel": "Nicotiana", 
-"^ot:ottId": 797191
+"^ot:ottId": 797191, 
+"^ot:ottTaxonName": "Nicotiana"
 }, 
 "otu1422": {
-"@label": "Daucus", 
 "^ot:originalLabel": "Daucus", 
-"^ot:ottId": 372841
+"^ot:ottId": 372841, 
+"^ot:ottTaxonName": "Daucus"
 }, 
 "otu1423": {
-"@label": "Panax", 
 "^ot:originalLabel": "Panax", 
-"^ot:ottId": 524072
+"^ot:ottId": 524072, 
+"^ot:ottTaxonName": "Panax"
 }, 
 "otu1424": {
-"@label": "Helianthus", 
 "^ot:originalLabel": "Helianthus", 
-"^ot:ottId": 515718
+"^ot:ottId": 515718, 
+"^ot:ottTaxonName": "Helianthus"
 }, 
 "otu1425": {
-"@label": "Lactuca", 
 "^ot:originalLabel": "Lactuca", 
-"^ot:ottId": 515705
+"^ot:ottId": 515705, 
+"^ot:ottTaxonName": "Lactuca"
 }, 
 "otu1426": {
-"@label": "Vitis", 
 "^ot:originalLabel": "Vitis", 
-"^ot:ottId": 329893
+"^ot:ottId": 329893, 
+"^ot:ottTaxonName": "Vitis"
 }, 
 "otu1427": {
-"@label": "Populus", 
 "^ot:originalLabel": "Populus", 
-"^ot:ottId": 530178
+"^ot:ottId": 530178, 
+"^ot:ottTaxonName": "Populus"
 }, 
 "otu1428": {
-"@label": "Cucumis", 
 "^ot:originalLabel": "Cucumis", 
-"^ot:ottId": 1006254
+"^ot:ottId": 1006254, 
+"^ot:ottTaxonName": "Cucumis"
 }, 
 "otu1429": {
-"@label": "Morus", 
 "^ot:originalLabel": "Morus", 
-"^ot:ottId": 658501
+"^ot:ottId": 658501, 
+"^ot:ottTaxonName": "Morus"
 }, 
 "otu1430": {
-"@label": "Glycine", 
 "^ot:originalLabel": "Glycine", 
-"^ot:ottId": 459704
+"^ot:ottId": 459704, 
+"^ot:ottTaxonName": "Glycine"
 }, 
 "otu1431": {
-"@label": "Lotus", 
 "^ot:originalLabel": "Lotus", 
-"^ot:ottId": 879017
+"^ot:ottId": 879017, 
+"^ot:ottTaxonName": "Lotus"
 }, 
 "otu1432": {
-"@label": "Pelargonium", 
 "^ot:originalLabel": "Pelargonium", 
-"^ot:ottId": 372825
+"^ot:ottId": 372825, 
+"^ot:ottTaxonName": "Pelargonium"
 }, 
 "otu1433": {
-"@label": "Eucalyptus", 
 "^ot:originalLabel": "Eucalyptus", 
-"^ot:ottId": 1015498
+"^ot:ottId": 1015498, 
+"^ot:ottTaxonName": "Eucalyptus"
 }, 
 "otu1434": {
-"@label": "Oenothera", 
 "^ot:originalLabel": "Oenothera", 
-"^ot:ottId": 1015472
+"^ot:ottId": 1015472, 
+"^ot:ottTaxonName": "Oenothera"
 }, 
 "otu1435": {
-"@label": "Citrus", 
 "^ot:originalLabel": "Citrus", 
-"^ot:ottId": 929678
+"^ot:ottId": 929678, 
+"^ot:ottTaxonName": "Citrus"
 }, 
 "otu1436": {
-"@label": "Arabidopsis", 
 "^ot:originalLabel": "Arabidopsis", 
-"^ot:ottId": 309275
+"^ot:ottId": 309275, 
+"^ot:ottTaxonName": "Arabidopsis"
 }, 
 "otu1437": {
-"@label": "Gossypium", 
 "^ot:originalLabel": "Gossypium", 
-"^ot:ottId": 800239
+"^ot:ottId": 800239, 
+"^ot:ottTaxonName": "Gossypium"
 }
 }
 }
@@ -323,9 +302,15 @@
 "treeById": {
 "tree10": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
 "^ot:branchLengthMode": "ot:substitutionCount", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "ML bootstrap consensus", 
+"^ot:inGroupClade": "node3024", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node3021", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node3021": {
 "edge3022": {

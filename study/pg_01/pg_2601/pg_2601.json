@@ -19,48 +19,11 @@
 "@id": "peyotl-validator", 
 "@name": "validate_ot_nexson.py", 
 "@url": "https://github.com/OpenTreeOfLife/peyotl", 
-"@version": "0.0.3a", 
+"@version": "0.0.4a", 
 "invocation": {
-"checksPerformed": [
-"MISSING_MANDATORY_KEY", 
-"MISSING_OPTIONAL_KEY", 
-"UNRECOGNIZED_KEY", 
-"MISSING_LIST_EXPECTED", 
-"DUPLICATING_SINGLETON_KEY", 
-"REFERENCED_ID_NOT_FOUND", 
-"REPEATED_ID", 
-"REPEATED_OTU", 
-"MULTIPLE_ROOT_NODES", 
-"NO_ROOT_NODE", 
-"MULTIPLE_EDGES_FOR_NODES", 
-"CYCLE_DETECTED", 
-"DISCONNECTED_GRAPH_DETECTED", 
-"INCORRECT_ROOT_NODE_LABEL", 
-"TIP_WITHOUT_OTU", 
-"TIP_WITHOUT_OTT_ID", 
-"MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
-"NON_MONOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
-"INVALID_PROPERTY_VALUE", 
-"PROPERTY_VALUE_NOT_USEFUL", 
-"UNRECOGNIZED_PROPERTY_VALUE", 
-"MULTIPLE_TREES", 
-"UNRECOGNIZED_TAG", 
-"CONFLICTING_PROPERTY_VALUES", 
-"NO_TREES", 
-"DEPRECATED_PROPERTY", 
-"UNPARSEABLE_META", 
-"UNREACHABLE_NODE", 
-"INCORRECT_VALUE_TYPE", 
-"MISSING_CRUCIAL_CONTENT"
-], 
 "commandLine": [
 "--embed", 
-"--agent-only", 
-"-e", 
-"../mig-phyelesystem-scratch/2601/validation.json", 
-"-o", 
-"../mig-phyelesystem-scratch/2601/final.json", 
-"../mig-phyelesystem-scratch/2601/v1.2.1-2601.json"
+"--agent-only"
 ], 
 "otherProperty": [
 {
@@ -76,12 +39,19 @@
 }
 ]
 }, 
+"^ot:annotationEvents": {
+"annotation": []
+}, 
+"^ot:candidateTreeForSynthesis": [], 
 "^ot:curatorName": "Romina Gazis", 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S14545"
 }, 
 "^ot:focalClade": 510337, 
 "^ot:focalCladeOTTTaxonName": "Cryptosporiopsis", 
+"^ot:messages": {
+"message": []
+}, 
 "^ot:otusElementOrder": [
 "otus2601"
 ], 
@@ -89,10 +59,10 @@
 "^ot:studyPublicationReference": "Cheewangkoon R., Groenewald J.Z., Verkley G., Hyde K.D., Wingfield M.J., Gryzenhout M., Summerell B., Denman S., To-anun C., & Crous P.W. 2010. Re-evaluation of Cryptosporiopsis eucalypti and Cryptosporiopsis-like species occurring on Eucalyptus leaves. Fungal Diversity, 44: 89-105.", 
 "^ot:studyYear": 2010, 
 "^ot:tag": [
-"MP", 
-"LSU", 
+"b-tub", 
 "ITS", 
-"b-tub"
+"LSU", 
+"MP"
 ], 
 "^ot:treesElementOrder": [
 "trees2601"
@@ -216,6 +186,8 @@
 }, 
 "otu386583": {
 "^ot:originalLabel": "Prosthecium innesii EU683071", 
+"^ot:ottId": 5308663, 
+"^ot:ottTaxonName": "Prosthecium platanoidis", 
 "^ot:treebaseOTUId": "Tl1160650"
 }, 
 "otu386584": {
@@ -238,6 +210,8 @@
 }, 
 "otu386587": {
 "^ot:originalLabel": "Togninia fraxinopennsylvanica AY761083", 
+"^ot:ottId": 519058, 
+"^ot:ottTaxonName": "Phaeoacremonium mortoniae", 
 "^ot:treebaseOTUId": "Tl1160654"
 }, 
 "otu386588": {
@@ -274,6 +248,8 @@
 }, 
 "otu386594": {
 "^ot:originalLabel": "Diaporthe medusaea AF362560", 
+"^ot:ottId": 5316658, 
+"^ot:ottTaxonName": "Diaporthe rudis", 
 "^ot:treebaseOTUId": "Tl1160661"
 }, 
 "otu386595": {
@@ -304,6 +280,8 @@
 }, 
 "otu386600": {
 "^ot:originalLabel": "Pilidiella granati AF408379", 
+"^ot:ottId": 228448, 
+"^ot:ottTaxonName": "Coniella granati", 
 "^ot:treebaseOTUId": "Tl1160667"
 }, 
 "otu386601": {
@@ -484,6 +462,8 @@
 }, 
 "otu386632": {
 "^ot:originalLabel": "Diaporthe decedens AF408348", 
+"^ot:ottId": 5316669, 
+"^ot:ottTaxonName": "Allantoporthe decedens", 
 "^ot:treebaseOTUId": "Tl1160699"
 }, 
 "otu386633": {
@@ -510,6 +490,8 @@
 }, 
 "otu386637": {
 "^ot:originalLabel": "Cryptosporella hypodermia DQ862028", 
+"^ot:ottId": 5319203, 
+"^ot:ottTaxonName": "Winterella hypodermia", 
 "^ot:treebaseOTUId": "Tl1160704"
 }, 
 "otu386638": {
@@ -663,9 +645,14 @@
 "treeById": {
 "tree6037": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "MP, LSU", 
 "^ot:inGroupClade": "node1034025", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node1034023", 
+"^ot:specifiedRoot": "", 
 "^ot:tag": [
 "MP", 
 "LSU", 
@@ -1789,9 +1776,14 @@
 }, 
 "tree6038": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "MP, ITS + b-tubulin", 
 "^ot:inGroupClade": "node1034169", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node1034166", 
+"^ot:specifiedRoot": "", 
 "^ot:tag": [
 "ITS", 
 "MP", 

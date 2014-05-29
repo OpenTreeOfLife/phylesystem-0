@@ -19,48 +19,11 @@
 "@id": "peyotl-validator", 
 "@name": "validate_ot_nexson.py", 
 "@url": "https://github.com/OpenTreeOfLife/peyotl", 
-"@version": "0.0.3a", 
+"@version": "0.0.4a", 
 "invocation": {
-"checksPerformed": [
-"MISSING_MANDATORY_KEY", 
-"MISSING_OPTIONAL_KEY", 
-"UNRECOGNIZED_KEY", 
-"MISSING_LIST_EXPECTED", 
-"DUPLICATING_SINGLETON_KEY", 
-"REFERENCED_ID_NOT_FOUND", 
-"REPEATED_ID", 
-"REPEATED_OTU", 
-"MULTIPLE_ROOT_NODES", 
-"NO_ROOT_NODE", 
-"MULTIPLE_EDGES_FOR_NODES", 
-"CYCLE_DETECTED", 
-"DISCONNECTED_GRAPH_DETECTED", 
-"INCORRECT_ROOT_NODE_LABEL", 
-"TIP_WITHOUT_OTU", 
-"TIP_WITHOUT_OTT_ID", 
-"MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
-"NON_MONOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
-"INVALID_PROPERTY_VALUE", 
-"PROPERTY_VALUE_NOT_USEFUL", 
-"UNRECOGNIZED_PROPERTY_VALUE", 
-"MULTIPLE_TREES", 
-"UNRECOGNIZED_TAG", 
-"CONFLICTING_PROPERTY_VALUES", 
-"NO_TREES", 
-"DEPRECATED_PROPERTY", 
-"UNPARSEABLE_META", 
-"UNREACHABLE_NODE", 
-"INCORRECT_VALUE_TYPE", 
-"MISSING_CRUCIAL_CONTENT"
-], 
 "commandLine": [
 "--embed", 
-"--agent-only", 
-"-e", 
-"../mig-phyelesystem-scratch/232/validation.json", 
-"-o", 
-"../mig-phyelesystem-scratch/232/final.json", 
-"../mig-phyelesystem-scratch/232/v1.2.1-232.json"
+"--agent-only"
 ], 
 "otherProperty": [
 {
@@ -76,12 +39,19 @@
 }
 ]
 }, 
+"^ot:annotationEvents": {
+"annotation": []
+}, 
+"^ot:candidateTreeForSynthesis": [], 
 "^ot:curatorName": "Evgeny Mavrodiev", 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S11267"
 }, 
 "^ot:focalClade": 99252, 
 "^ot:focalCladeOTTTaxonName": "Magnoliophyta", 
+"^ot:messages": {
+"message": []
+}, 
 "^ot:otusElementOrder": [
 "otus232"
 ], 
@@ -91,6 +61,7 @@
 }, 
 "^ot:studyPublicationReference": "Soltis, D. E., Smith, S. A., Cellinese, N., Wurdack, K. J., Tank, D. C., Brockington, S. F., Refulio-Rodriguez, N. F., Walker, J. B., Moore, M. J., Carlsward, B. S., Bell, C. D., Latvis, M., Crawley, S., Black, C., Diouf, D., Xi, Z., Rushworth, C. A., Gitzendanner, M. A., Sytsma, K. J., Qiu, Y. L., Hilu, K. W., Davis, C. C., Sanderson, M. J., Beaman, R. S., Olmstead, R. G., Judd, W. S., Donoghue, M. J., & Soltis, P. S. 2011. Angisoperm phylogeny: 17 genes, 640 taxa. American J. Bot. 98: 704-730.", 
 "^ot:studyYear": 2011, 
+"^ot:tag": [], 
 "^ot:treesElementOrder": [
 "trees232"
 ], 
@@ -633,7 +604,9 @@
 "^ot:ottTaxonName": "Escallonia"
 }, 
 "otu61886": {
-"^ot:originalLabel": "Forgesia"
+"^ot:originalLabel": "Forgesia", 
+"^ot:ottId": 4738254, 
+"^ot:ottTaxonName": "Forgesia"
 }, 
 "otu61887": {
 "^ot:originalLabel": "Valdivia", 
@@ -756,7 +729,9 @@
 "^ot:ottTaxonName": "Solanum"
 }, 
 "otu61911": {
-"^ot:originalLabel": "Hydrophyllum"
+"^ot:originalLabel": "Hydrophyllum", 
+"^ot:ottId": 544711, 
+"^ot:ottTaxonName": "Hydrophyllum"
 }, 
 "otu61912": {
 "^ot:originalLabel": "Ehretia", 
@@ -854,7 +829,9 @@
 "^ot:ottTaxonName": "Saintpaulia"
 }, 
 "otu61931": {
-"^ot:originalLabel": "Peltanthera"
+"^ot:originalLabel": "Peltanthera", 
+"^ot:ottId": 55268, 
+"^ot:ottTaxonName": "Peltanthera"
 }, 
 "otu61932": {
 "^ot:originalLabel": "Polypremum", 
@@ -912,7 +889,9 @@
 "^ot:ottTaxonName": "Galium"
 }, 
 "otu61943": {
-"^ot:originalLabel": "Luculia"
+"^ot:originalLabel": "Luculia", 
+"^ot:ottId": 611952, 
+"^ot:ottTaxonName": "Luculia"
 }, 
 "otu61944": {
 "^ot:originalLabel": "Vahlia", 
@@ -920,7 +899,9 @@
 "^ot:ottTaxonName": "Vahlia"
 }, 
 "otu61945": {
-"^ot:originalLabel": "Oncotheca"
+"^ot:originalLabel": "Oncotheca", 
+"^ot:ottId": 979305, 
+"^ot:ottTaxonName": "Oncotheca"
 }, 
 "otu61946": {
 "^ot:originalLabel": "Eucommia", 
@@ -933,7 +914,9 @@
 "^ot:ottTaxonName": "Garrya"
 }, 
 "otu61948": {
-"^ot:originalLabel": "Icacina"
+"^ot:originalLabel": "Icacina", 
+"^ot:ottId": 1012289, 
+"^ot:ottTaxonName": "Icacina"
 }, 
 "otu61949": {
 "^ot:originalLabel": "Galax", 
@@ -2106,10 +2089,14 @@
 "^ot:ottTaxonName": "Hamamelis"
 }, 
 "otu62183": {
-"^ot:originalLabel": "Leea"
+"^ot:originalLabel": "Leea", 
+"^ot:ottId": 909812, 
+"^ot:ottTaxonName": "Leea"
 }, 
 "otu62184": {
-"^ot:originalLabel": "Vitis"
+"^ot:originalLabel": "Vitis", 
+"^ot:ottId": 329893, 
+"^ot:ottTaxonName": "Vitis"
 }, 
 "otu62185": {
 "^ot:originalLabel": "Ixerba", 
@@ -2402,7 +2389,9 @@
 "^ot:ottTaxonName": "Coriaria"
 }, 
 "otu62243": {
-"^ot:originalLabel": "Ceanothus"
+"^ot:originalLabel": "Ceanothus", 
+"^ot:ottId": 371201, 
+"^ot:ottTaxonName": "Ceanothus"
 }, 
 "otu62244": {
 "^ot:originalLabel": "Rhamnus", 
@@ -2615,7 +2604,9 @@
 "^ot:ottTaxonName": "Croizatia"
 }, 
 "otu62286": {
-"^ot:originalLabel": "Phyllanthus"
+"^ot:originalLabel": "Phyllanthus", 
+"^ot:ottId": 11415, 
+"^ot:ottTaxonName": "Phyllanthus"
 }, 
 "otu62287": {
 "^ot:originalLabel": "Mesua", 
@@ -3312,8 +3303,14 @@
 "treeById": {
 "tree48": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "MP_500BS_con", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node123511", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node123511": {
 "edge123512": {
@@ -11705,9 +11702,14 @@
 }, 
 "tree49": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
 "^ot:branchLengthMode": "ot:substitutionCount", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "ML_rps16", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node124709", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node124709": {
 "edge124710": {
@@ -15248,8 +15250,14 @@
 }, 
 "tree50": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "ML_rps4", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node125151", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node125151": {
 "edge125152": {
@@ -21182,8 +21190,14 @@
 }, 
 "tree51": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "ML_rps3", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node125892", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node125892": {
 "edge125893": {
@@ -27500,8 +27514,14 @@
 }, 
 "tree52": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "ML_CP", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node126681", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node126681": {
 "edge126682": {
@@ -37722,8 +37742,14 @@
 }, 
 "tree53": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "ML_MT", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node127958", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node127958": {
 "edge127959": {
@@ -45992,8 +46018,14 @@
 }, 
 "tree54": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "MajRule_18S_26S_BS100", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node128991", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node128991": {
 "edge128992": {
@@ -51686,8 +51718,14 @@
 }, 
 "tree55": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "MajRule_CP_BS100", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node129769", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node129769": {
 "edge129770": {
@@ -60813,8 +60851,14 @@
 }, 
 "tree56": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "MajRule_MT_BS100", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node130989", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node130989": {
 "edge130990": {
@@ -67606,8 +67650,14 @@
 }, 
 "tree57": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "ML_18S", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node131902", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node131902": {
 "edge131903": {
@@ -75556,8 +75606,14 @@
 }, 
 "tree58": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "ML_26S", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node132895", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node132895": {
 "edge132896": {
@@ -81378,8 +81434,14 @@
 }, 
 "tree59": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "ML_atp1", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node133622", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node133622": {
 "edge133623": {
@@ -87424,8 +87486,14 @@
 }, 
 "tree60": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "ML_atpB", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node134377", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node134377": {
 "edge134378": {
@@ -96478,8 +96546,14 @@
 }, 
 "tree61": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "ML_matK", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node135508", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node135508": {
 "edge135509": {
@@ -105932,9 +106006,14 @@
 }, 
 "tree62": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
 "^ot:branchLengthMode": "ot:substitutionCount", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "ML_matR", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node136689", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node136689": {
 "edge136690": {
@@ -113707,8 +113786,14 @@
 }, 
 "tree63": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "ML_nad5", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node137660", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node137660": {
 "edge137661": {
@@ -119753,8 +119838,14 @@
 }, 
 "tree64": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "ML_ndhF", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node138415", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node138415": {
 "edge138416": {
@@ -127927,8 +128018,14 @@
 }, 
 "tree65": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "ML_psbBTNH", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node139436", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node139436": {
 "edge139437": {
@@ -133493,8 +133590,14 @@
 }, 
 "tree66": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "ML_rbcL", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node140131", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node140131": {
 "edge140132": {
@@ -143523,8 +143626,14 @@
 }, 
 "tree67": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "ML_rpoC2", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node141384", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node141384": {
 "edge141385": {
@@ -150001,8 +150110,14 @@
 }, 
 "tree68": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "ML_18S_26S", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node142193", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node142193": {
 "edge142194": {
@@ -158575,8 +158690,14 @@
 }, 
 "tree69": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "ML_NO_MT", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node143264", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node143264": {
 "edge143265": {
@@ -168797,8 +168918,14 @@
 }, 
 "tree70": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "ML_MT_POLYSOMA", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node144541", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node144541": {
 "edge144542": {
@@ -179035,9 +179162,15 @@
 }, 
 "tree71": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "ML_MT", 
 "^ot:inGroupClade": "node145836", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node145820", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node145820": {
 "edge145821": {

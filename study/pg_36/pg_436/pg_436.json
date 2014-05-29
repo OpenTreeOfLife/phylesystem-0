@@ -19,48 +19,11 @@
 "@id": "peyotl-validator", 
 "@name": "validate_ot_nexson.py", 
 "@url": "https://github.com/OpenTreeOfLife/peyotl", 
-"@version": "0.0.3a", 
+"@version": "0.0.4a", 
 "invocation": {
-"checksPerformed": [
-"MISSING_MANDATORY_KEY", 
-"MISSING_OPTIONAL_KEY", 
-"UNRECOGNIZED_KEY", 
-"MISSING_LIST_EXPECTED", 
-"DUPLICATING_SINGLETON_KEY", 
-"REFERENCED_ID_NOT_FOUND", 
-"REPEATED_ID", 
-"REPEATED_OTU", 
-"MULTIPLE_ROOT_NODES", 
-"NO_ROOT_NODE", 
-"MULTIPLE_EDGES_FOR_NODES", 
-"CYCLE_DETECTED", 
-"DISCONNECTED_GRAPH_DETECTED", 
-"INCORRECT_ROOT_NODE_LABEL", 
-"TIP_WITHOUT_OTU", 
-"TIP_WITHOUT_OTT_ID", 
-"MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
-"NON_MONOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
-"INVALID_PROPERTY_VALUE", 
-"PROPERTY_VALUE_NOT_USEFUL", 
-"UNRECOGNIZED_PROPERTY_VALUE", 
-"MULTIPLE_TREES", 
-"UNRECOGNIZED_TAG", 
-"CONFLICTING_PROPERTY_VALUES", 
-"NO_TREES", 
-"DEPRECATED_PROPERTY", 
-"UNPARSEABLE_META", 
-"UNREACHABLE_NODE", 
-"INCORRECT_VALUE_TYPE", 
-"MISSING_CRUCIAL_CONTENT"
-], 
 "commandLine": [
 "--embed", 
-"--agent-only", 
-"-e", 
-"../mig-phyelesystem-scratch/436/validation.json", 
-"-o", 
-"../mig-phyelesystem-scratch/436/final.json", 
-"../mig-phyelesystem-scratch/436/v1.2.1-436.json"
+"--agent-only"
 ], 
 "otherProperty": [
 {
@@ -76,12 +39,19 @@
 }
 ]
 }, 
+"^ot:annotationEvents": {
+"annotation": []
+}, 
+"^ot:candidateTreeForSynthesis": [], 
 "^ot:curatorName": "Jiabin Deng", 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S1290"
 }, 
 "^ot:focalClade": 1050254, 
 "^ot:focalCladeOTTTaxonName": "Monocotyle", 
+"^ot:messages": {
+"message": []
+}, 
 "^ot:otusElementOrder": [
 "otus436"
 ], 
@@ -91,6 +61,7 @@
 }, 
 "^ot:studyPublicationReference": "Davis J., Stevenson D., Petersen G., Seberg O., Campbell L., Freudenstein J., Goldman D., Hardy C., Michelangeli F., Simmons M., Specht C., & Silva F. 2004. A Phylogeny of the Monocots, as Inferred from rbcL and atpA Sequence Variation. Systematic Botany, 29: 467-510.", 
 "^ot:studyYear": 2004, 
+"^ot:tag": [], 
 "^ot:treesElementOrder": [
 "trees436"
 ], 
@@ -285,6 +256,8 @@
 }, 
 "otu88401": {
 "^ot:originalLabel": "Dasypogon", 
+"^ot:ottId": 1050333, 
+"^ot:ottTaxonName": "Dasypogon", 
 "^ot:treebaseOTUId": "Tl154772"
 }, 
 "otu88402": {
@@ -296,6 +269,7 @@
 "otu88403": {
 "^ot:originalLabel": "Triuris", 
 "^ot:ottId": 848229, 
+"^ot:ottTaxonName": "Triuris", 
 "^ot:treebaseOTUId": "Tl154774"
 }, 
 "otu88404": {
@@ -307,6 +281,7 @@
 "otu88405": {
 "^ot:originalLabel": "Lacandonia", 
 "^ot:ottId": 29449, 
+"^ot:ottTaxonName": "Lacandonia", 
 "^ot:treebaseOTUId": "Tl154777"
 }, 
 "otu88406": {
@@ -383,6 +358,8 @@
 }, 
 "otu88418": {
 "^ot:originalLabel": "Baxteria", 
+"^ot:ottId": 330992, 
+"^ot:ottTaxonName": "Baxteria", 
 "^ot:treebaseOTUId": "Tl154798"
 }, 
 "otu88419": {
@@ -609,6 +586,8 @@
 }, 
 "otu88456": {
 "^ot:originalLabel": "Calectasia", 
+"^ot:ottId": 213151, 
+"^ot:ottTaxonName": "Calectasia", 
 "^ot:treebaseOTUId": "Tl154856"
 }, 
 "otu88457": {
@@ -938,6 +917,7 @@
 "otu88511": {
 "^ot:originalLabel": "Sciaphila", 
 "^ot:ottId": 29450, 
+"^ot:ottTaxonName": "Sciaphila", 
 "^ot:treebaseOTUId": "Tl154935"
 }, 
 "otu88512": {
@@ -1020,6 +1000,8 @@
 }, 
 "otu88525": {
 "^ot:originalLabel": "Kingia", 
+"^ot:ottId": 221918, 
+"^ot:ottTaxonName": "Kingia", 
 "^ot:treebaseOTUId": "Tl17090"
 }, 
 "otu88526": {
@@ -1404,9 +1386,15 @@
 "treeById": {
 "tree552": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "Fig. 1", 
 "^ot:inGroupClade": "node228908", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node228903", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node228903": {
 "edge228904": {

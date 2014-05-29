@@ -19,48 +19,11 @@
 "@id": "peyotl-validator", 
 "@name": "validate_ot_nexson.py", 
 "@url": "https://github.com/OpenTreeOfLife/peyotl", 
-"@version": "0.0.3a", 
+"@version": "0.0.4a", 
 "invocation": {
-"checksPerformed": [
-"MISSING_MANDATORY_KEY", 
-"MISSING_OPTIONAL_KEY", 
-"UNRECOGNIZED_KEY", 
-"MISSING_LIST_EXPECTED", 
-"DUPLICATING_SINGLETON_KEY", 
-"REFERENCED_ID_NOT_FOUND", 
-"REPEATED_ID", 
-"REPEATED_OTU", 
-"MULTIPLE_ROOT_NODES", 
-"NO_ROOT_NODE", 
-"MULTIPLE_EDGES_FOR_NODES", 
-"CYCLE_DETECTED", 
-"DISCONNECTED_GRAPH_DETECTED", 
-"INCORRECT_ROOT_NODE_LABEL", 
-"TIP_WITHOUT_OTU", 
-"TIP_WITHOUT_OTT_ID", 
-"MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
-"NON_MONOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
-"INVALID_PROPERTY_VALUE", 
-"PROPERTY_VALUE_NOT_USEFUL", 
-"UNRECOGNIZED_PROPERTY_VALUE", 
-"MULTIPLE_TREES", 
-"UNRECOGNIZED_TAG", 
-"CONFLICTING_PROPERTY_VALUES", 
-"NO_TREES", 
-"DEPRECATED_PROPERTY", 
-"UNPARSEABLE_META", 
-"UNREACHABLE_NODE", 
-"INCORRECT_VALUE_TYPE", 
-"MISSING_CRUCIAL_CONTENT"
-], 
 "commandLine": [
 "--embed", 
-"--agent-only", 
-"-e", 
-"../mig-phyelesystem-scratch/1215/validation.json", 
-"-o", 
-"../mig-phyelesystem-scratch/1215/final.json", 
-"../mig-phyelesystem-scratch/1215/v1.2.1-1215.json"
+"--agent-only"
 ], 
 "otherProperty": [
 {
@@ -76,15 +39,23 @@
 }
 ]
 }, 
+"^ot:annotationEvents": {
+"annotation": []
+}, 
+"^ot:candidateTreeForSynthesis": [], 
 "^ot:curatorName": "Romina Gazis", 
 "^ot:focalClade": 163526, 
 "^ot:focalCladeOTTTaxonName": "Graphis", 
+"^ot:messages": {
+"message": []
+}, 
 "^ot:otusElementOrder": [
 "otus1215"
 ], 
 "^ot:studyId": "1215", 
 "^ot:studyPublicationReference": "Plata, Eimy Rivas, M. Hernandez, E. Jes\u00fas, Robert Lucking, Bettina Staiger, Klaus Kalb, and Marcela ES Caceres. \"Graphis is two genera: A remarkable case of parallel evolution in lichenized Ascomycota.\" Taxon 60, no. 1 (2011): 99-107.", 
 "^ot:studyYear": 2011, 
+"^ot:tag": [], 
 "^ot:treesElementOrder": [
 "trees1215"
 ], 
@@ -253,7 +224,9 @@
 "^ot:ottTaxonName": "Hemithecium chlorocarpum"
 }, 
 "otu232984": {
-"^ot:originalLabel": "Graphis ruiziana DQ431985"
+"^ot:originalLabel": "Graphis ruiziana DQ431985", 
+"^ot:ottId": 5315121, 
+"^ot:ottTaxonName": "Graphina ruiziana"
 }, 
 "otu232985": {
 "^ot:originalLabel": "Hemithecium rufopallidum HQ639588", 
@@ -271,7 +244,9 @@
 "^ot:ottTaxonName": "Hemithecium rufopallidum"
 }, 
 "otu232988": {
-"^ot:originalLabel": "Hemithecium plicosum HQ639590"
+"^ot:originalLabel": "Hemithecium plicosum HQ639590", 
+"^ot:ottId": 3785523, 
+"^ot:ottTaxonName": "Hemithecium plicosum"
 }, 
 "otu232989": {
 "^ot:originalLabel": "Sarcographa ramificans DQ431981", 
@@ -457,7 +432,9 @@
 "^ot:ottTaxonName": "Myriotrema olivaceum"
 }, 
 "otu233028": {
-"^ot:originalLabel": "Melanotrema meiospermum DQ384890"
+"^ot:originalLabel": "Melanotrema meiospermum DQ384890", 
+"^ot:ottId": 5315410, 
+"^ot:ottTaxonName": "Melanotrema meiospermum"
 }, 
 "otu233029": {
 "^ot:originalLabel": "Redingeria glaucoglyphica HQ639601", 
@@ -496,7 +473,9 @@
 "^ot:originalLabel": "Fissurina marginata HQ639613"
 }, 
 "otu233037": {
-"^ot:originalLabel": "Ocellularia stylothecium HQ639597"
+"^ot:originalLabel": "Ocellularia stylothecium HQ639597", 
+"^ot:ottId": 392837, 
+"^ot:ottTaxonName": "Clandestinotrema stylothecium"
 }, 
 "otu233038": {
 "^ot:originalLabel": "Myriotrema pycnoporellum HQ639584", 
@@ -581,7 +560,9 @@
 "^ot:originalLabel": "Graphis rhizocola HQ639644"
 }, 
 "otu233056": {
-"^ot:originalLabel": "Graphis ruiziana DQ431945"
+"^ot:originalLabel": "Graphis ruiziana DQ431945", 
+"^ot:ottId": 5315121, 
+"^ot:ottTaxonName": "Graphina ruiziana"
 }, 
 "otu233057": {
 "^ot:originalLabel": "Ampliotrema oculatum EU075612", 
@@ -812,7 +793,9 @@
 "^ot:ottTaxonName": "Graphis pseudoserpens"
 }, 
 "otu233105": {
-"^ot:originalLabel": "Graphis streblocarpa HQ639646"
+"^ot:originalLabel": "Graphis streblocarpa HQ639646", 
+"^ot:ottId": 5315123, 
+"^ot:ottTaxonName": "Graphina streblocarpa"
 }, 
 "otu233106": {
 "^ot:originalLabel": "Graphis hiascens AY640031", 
@@ -903,8 +886,14 @@
 "treeById": {
 "tree2449": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "ML, mtSSU", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node565431", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node565431": {
 "edge565432": {
@@ -2313,8 +2302,14 @@
 }, 
 "tree2450": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "ML, LSU", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node565608", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node565608": {
 "edge565609": {
@@ -3615,9 +3610,15 @@
 }, 
 "tree5831": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "ML, mtSSU (rooted)", 
 "^ot:inGroupClade": "node995048", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node995047", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node995047": {
 "edge995048": {
@@ -5027,10 +5028,17 @@
 }, 
 "tree5832": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "ML, LSU (rooted)", 
 "^ot:inGroupClade": "node995239", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node995224", 
-"^ot:tag": "topology differs from figure", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [
+"topology differs from figure"
+], 
 "edgeBySourceId": {
 "node995224": {
 "edge995225": {

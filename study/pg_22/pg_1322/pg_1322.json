@@ -19,48 +19,11 @@
 "@id": "peyotl-validator", 
 "@name": "validate_ot_nexson.py", 
 "@url": "https://github.com/OpenTreeOfLife/peyotl", 
-"@version": "0.0.3a", 
+"@version": "0.0.4a", 
 "invocation": {
-"checksPerformed": [
-"MISSING_MANDATORY_KEY", 
-"MISSING_OPTIONAL_KEY", 
-"UNRECOGNIZED_KEY", 
-"MISSING_LIST_EXPECTED", 
-"DUPLICATING_SINGLETON_KEY", 
-"REFERENCED_ID_NOT_FOUND", 
-"REPEATED_ID", 
-"REPEATED_OTU", 
-"MULTIPLE_ROOT_NODES", 
-"NO_ROOT_NODE", 
-"MULTIPLE_EDGES_FOR_NODES", 
-"CYCLE_DETECTED", 
-"DISCONNECTED_GRAPH_DETECTED", 
-"INCORRECT_ROOT_NODE_LABEL", 
-"TIP_WITHOUT_OTU", 
-"TIP_WITHOUT_OTT_ID", 
-"MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
-"NON_MONOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
-"INVALID_PROPERTY_VALUE", 
-"PROPERTY_VALUE_NOT_USEFUL", 
-"UNRECOGNIZED_PROPERTY_VALUE", 
-"MULTIPLE_TREES", 
-"UNRECOGNIZED_TAG", 
-"CONFLICTING_PROPERTY_VALUES", 
-"NO_TREES", 
-"DEPRECATED_PROPERTY", 
-"UNPARSEABLE_META", 
-"UNREACHABLE_NODE", 
-"INCORRECT_VALUE_TYPE", 
-"MISSING_CRUCIAL_CONTENT"
-], 
 "commandLine": [
 "--embed", 
-"--agent-only", 
-"-e", 
-"../mig-phyelesystem-scratch/1322/validation.json", 
-"-o", 
-"../mig-phyelesystem-scratch/1322/final.json", 
-"../mig-phyelesystem-scratch/1322/v1.2.1-1322.json"
+"--agent-only"
 ], 
 "otherProperty": [
 {
@@ -76,18 +39,26 @@
 }
 ]
 }, 
+"^ot:annotationEvents": {
+"annotation": []
+}, 
+"^ot:candidateTreeForSynthesis": [], 
 "^ot:curatorName": "Romina Gazis", 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S13234"
 }, 
 "^ot:focalClade": 641496, 
 "^ot:focalCladeOTTTaxonName": "Botryosphaeriales", 
+"^ot:messages": {
+"message": []
+}, 
 "^ot:otusElementOrder": [
 "otus1322"
 ], 
 "^ot:studyId": "1322", 
 "^ot:studyPublicationReference": "Minnis A.M., Kennedy A.H., Grenier D.B., Palm M., & Rossman A. 2012. Phylogeny and taxonomic revision of the Plainistromellaceae including its coelomycetous anamorphs: contributions towards a monograph of the genus Kellermania. Persoonia: Molecular Phylogeny and Evolution of Fungi, 29: 11-28.", 
 "^ot:studyYear": 2012, 
+"^ot:tag": [], 
 "^ot:treesElementOrder": [
 "trees1322"
 ], 
@@ -187,9 +158,9 @@
 "^ot:treebaseOTUId": "Tl864412"
 }, 
 "otu242550": {
-"^ot:altLabel": "Kellermania unilocularis", 
 "^ot:originalLabel": "Kellermania unilocularis AR3466", 
 "^ot:ottId": 263389, 
+"^ot:ottTaxonName": "Kellermania unilocularis", 
 "^ot:treebaseOTUId": "Tl864413"
 }, 
 "otu242551": {
@@ -336,6 +307,8 @@
 }, 
 "otu242575": {
 "^ot:originalLabel": "Melanops tulasnei CBS116805", 
+"^ot:ottId": 518725, 
+"^ot:ottTaxonName": "Botryosphaeria quercuum", 
 "^ot:treebaseOTUId": "Tl864527"
 }, 
 "otu242576": {
@@ -439,8 +412,14 @@
 "treeById": {
 "tree2637": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "BI, ITS + SSU + LSU", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node588264", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node588264": {
 "edge588265": {
@@ -1045,8 +1024,14 @@
 }, 
 "tree2638": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "BI, ITS + SSU + LSU + RPB1", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node588339", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node588339": {
 "edge588340": {

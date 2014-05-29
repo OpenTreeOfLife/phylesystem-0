@@ -19,48 +19,11 @@
 "@id": "peyotl-validator", 
 "@name": "validate_ot_nexson.py", 
 "@url": "https://github.com/OpenTreeOfLife/peyotl", 
-"@version": "0.0.3a", 
+"@version": "0.0.4a", 
 "invocation": {
-"checksPerformed": [
-"MISSING_MANDATORY_KEY", 
-"MISSING_OPTIONAL_KEY", 
-"UNRECOGNIZED_KEY", 
-"MISSING_LIST_EXPECTED", 
-"DUPLICATING_SINGLETON_KEY", 
-"REFERENCED_ID_NOT_FOUND", 
-"REPEATED_ID", 
-"REPEATED_OTU", 
-"MULTIPLE_ROOT_NODES", 
-"NO_ROOT_NODE", 
-"MULTIPLE_EDGES_FOR_NODES", 
-"CYCLE_DETECTED", 
-"DISCONNECTED_GRAPH_DETECTED", 
-"INCORRECT_ROOT_NODE_LABEL", 
-"TIP_WITHOUT_OTU", 
-"TIP_WITHOUT_OTT_ID", 
-"MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
-"NON_MONOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
-"INVALID_PROPERTY_VALUE", 
-"PROPERTY_VALUE_NOT_USEFUL", 
-"UNRECOGNIZED_PROPERTY_VALUE", 
-"MULTIPLE_TREES", 
-"UNRECOGNIZED_TAG", 
-"CONFLICTING_PROPERTY_VALUES", 
-"NO_TREES", 
-"DEPRECATED_PROPERTY", 
-"UNPARSEABLE_META", 
-"UNREACHABLE_NODE", 
-"INCORRECT_VALUE_TYPE", 
-"MISSING_CRUCIAL_CONTENT"
-], 
 "commandLine": [
 "--embed", 
-"--agent-only", 
-"-e", 
-"../mig-phyelesystem-scratch/2156/validation.json", 
-"-o", 
-"../mig-phyelesystem-scratch/2156/final.json", 
-"../mig-phyelesystem-scratch/2156/v1.2.1-2156.json"
+"--agent-only"
 ], 
 "otherProperty": [
 {
@@ -76,18 +39,26 @@
 }
 ]
 }, 
+"^ot:annotationEvents": {
+"annotation": []
+}, 
+"^ot:candidateTreeForSynthesis": [], 
 "^ot:curatorName": "Chris Owen", 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S10120"
 }, 
 "^ot:focalClade": 449186, 
 "^ot:focalCladeOTTTaxonName": "Ophryotrocha", 
+"^ot:messages": {
+"message": []
+}, 
 "^ot:otusElementOrder": [
 "otus2156"
 ], 
 "^ot:studyId": "2156", 
-"^ot:studyPublicationReference": "Wiklund H., Glover A., & Dahlgren T. 2009. Three new species of Ophryotrocha (Annelida; Dorvilleidae) from a whale-fall in the North East Atlantic. Zootaxa, 2228: 43-56.", 
+"^ot:studyPublicationReference": "Wiklund, H., Glover A., & Dahlgren T. 2009. Three new species of Ophryotrocha (Annelida; Dorvilleidae) from a whale-fall in the North East Atlantic. Zootaxa 2228: 43-56.", 
 "^ot:studyYear": 2009, 
+"^ot:tag": [], 
 "^ot:treesElementOrder": [
 "trees2156"
 ], 
@@ -275,394 +246,22 @@
 "trees2156": {
 "@otus": "otus2156", 
 "^ot:treeElementOrder": [
-"tree4549", 
 "tree5953"
 ], 
 "treeById": {
-"tree4549": {
-"@xsi:type": "nex:FloatTree", 
-"^ot:curatedType": "Fig. 5", 
-"^ot:rootNodeId": "node813390", 
-"edgeBySourceId": {
-"node813390": {
-"edge813391": {
-"@source": "node813390", 
-"@target": "node813391"
-}, 
-"edge813392": {
-"@source": "node813390", 
-"@target": "node813392"
-}, 
-"edge813399": {
-"@source": "node813390", 
-"@target": "node813399"
-}
-}, 
-"node813392": {
-"edge813393": {
-"@source": "node813392", 
-"@target": "node813393"
-}, 
-"edge813398": {
-"@source": "node813392", 
-"@target": "node813398"
-}
-}, 
-"node813393": {
-"edge813394": {
-"@source": "node813393", 
-"@target": "node813394"
-}, 
-"edge813397": {
-"@source": "node813393", 
-"@target": "node813397"
-}
-}, 
-"node813394": {
-"edge813395": {
-"@source": "node813394", 
-"@target": "node813395"
-}, 
-"edge813396": {
-"@source": "node813394", 
-"@target": "node813396"
-}
-}, 
-"node813399": {
-"edge813400": {
-"@source": "node813399", 
-"@target": "node813400"
-}, 
-"edge813403": {
-"@source": "node813399", 
-"@target": "node813403"
-}
-}, 
-"node813400": {
-"edge813401": {
-"@source": "node813400", 
-"@target": "node813401"
-}, 
-"edge813402": {
-"@source": "node813400", 
-"@target": "node813402"
-}
-}, 
-"node813403": {
-"edge813404": {
-"@source": "node813403", 
-"@target": "node813404"
-}, 
-"edge813440": {
-"@source": "node813403", 
-"@target": "node813440"
-}
-}, 
-"node813404": {
-"edge813405": {
-"@source": "node813404", 
-"@target": "node813405"
-}, 
-"edge813418": {
-"@source": "node813404", 
-"@target": "node813418"
-}, 
-"edge813423": {
-"@source": "node813404", 
-"@target": "node813423"
-}, 
-"edge813428": {
-"@source": "node813404", 
-"@target": "node813428"
-}, 
-"edge813429": {
-"@source": "node813404", 
-"@target": "node813429"
-}
-}, 
-"node813405": {
-"edge813406": {
-"@source": "node813405", 
-"@target": "node813406"
-}, 
-"edge813413": {
-"@source": "node813405", 
-"@target": "node813413"
-}
-}, 
-"node813406": {
-"edge813407": {
-"@source": "node813406", 
-"@target": "node813407"
-}, 
-"edge813408": {
-"@source": "node813406", 
-"@target": "node813408"
-}
-}, 
-"node813408": {
-"edge813409": {
-"@source": "node813408", 
-"@target": "node813409"
-}, 
-"edge813410": {
-"@source": "node813408", 
-"@target": "node813410"
-}
-}, 
-"node813410": {
-"edge813411": {
-"@source": "node813410", 
-"@target": "node813411"
-}, 
-"edge813412": {
-"@source": "node813410", 
-"@target": "node813412"
-}
-}, 
-"node813413": {
-"edge813414": {
-"@source": "node813413", 
-"@target": "node813414"
-}, 
-"edge813417": {
-"@source": "node813413", 
-"@target": "node813417"
-}
-}, 
-"node813414": {
-"edge813415": {
-"@source": "node813414", 
-"@target": "node813415"
-}, 
-"edge813416": {
-"@source": "node813414", 
-"@target": "node813416"
-}
-}, 
-"node813418": {
-"edge813419": {
-"@source": "node813418", 
-"@target": "node813419"
-}, 
-"edge813422": {
-"@source": "node813418", 
-"@target": "node813422"
-}
-}, 
-"node813419": {
-"edge813420": {
-"@source": "node813419", 
-"@target": "node813420"
-}, 
-"edge813421": {
-"@source": "node813419", 
-"@target": "node813421"
-}
-}, 
-"node813423": {
-"edge813424": {
-"@source": "node813423", 
-"@target": "node813424"
-}, 
-"edge813425": {
-"@source": "node813423", 
-"@target": "node813425"
-}
-}, 
-"node813425": {
-"edge813426": {
-"@source": "node813425", 
-"@target": "node813426"
-}, 
-"edge813427": {
-"@source": "node813425", 
-"@target": "node813427"
-}
-}, 
-"node813429": {
-"edge813430": {
-"@source": "node813429", 
-"@target": "node813430"
-}, 
-"edge813439": {
-"@source": "node813429", 
-"@target": "node813439"
-}
-}, 
-"node813430": {
-"edge813431": {
-"@source": "node813430", 
-"@target": "node813431"
-}, 
-"edge813438": {
-"@source": "node813430", 
-"@target": "node813438"
-}
-}, 
-"node813431": {
-"edge813432": {
-"@source": "node813431", 
-"@target": "node813432"
-}, 
-"edge813435": {
-"@source": "node813431", 
-"@target": "node813435"
-}
-}, 
-"node813432": {
-"edge813433": {
-"@source": "node813432", 
-"@target": "node813433"
-}, 
-"edge813434": {
-"@source": "node813432", 
-"@target": "node813434"
-}
-}, 
-"node813435": {
-"edge813436": {
-"@source": "node813435", 
-"@target": "node813436"
-}, 
-"edge813437": {
-"@source": "node813435", 
-"@target": "node813437"
-}
-}, 
-"node813440": {
-"edge813441": {
-"@source": "node813440", 
-"@target": "node813441"
-}, 
-"edge813442": {
-"@source": "node813440", 
-"@target": "node813442"
-}
-}
-}, 
-"nodeById": {
-"node813390": {
-"@root": true
-}, 
-"node813391": {
-"@otu": "otu316611"
-}, 
-"node813392": {}, 
-"node813393": {}, 
-"node813394": {}, 
-"node813395": {
-"@otu": "otu316620"
-}, 
-"node813396": {
-"@otu": "otu316614"
-}, 
-"node813397": {
-"@otu": "otu316610"
-}, 
-"node813398": {
-"@otu": "otu316599"
-}, 
-"node813399": {}, 
-"node813400": {}, 
-"node813401": {
-"@otu": "otu316618"
-}, 
-"node813402": {
-"@otu": "otu316603"
-}, 
-"node813403": {}, 
-"node813404": {}, 
-"node813405": {}, 
-"node813406": {}, 
-"node813407": {
-"@otu": "otu316609"
-}, 
-"node813408": {}, 
-"node813409": {
-"@otu": "otu316619"
-}, 
-"node813410": {}, 
-"node813411": {
-"@otu": "otu316621"
-}, 
-"node813412": {
-"@otu": "otu316604"
-}, 
-"node813413": {}, 
-"node813414": {}, 
-"node813415": {
-"@otu": "otu316605"
-}, 
-"node813416": {
-"@otu": "otu316595"
-}, 
-"node813417": {
-"@otu": "otu316607"
-}, 
-"node813418": {}, 
-"node813419": {}, 
-"node813420": {
-"@otu": "otu316594"
-}, 
-"node813421": {
-"@otu": "otu316596"
-}, 
-"node813422": {
-"@otu": "otu316606"
-}, 
-"node813423": {}, 
-"node813424": {
-"@otu": "otu316616"
-}, 
-"node813425": {}, 
-"node813426": {
-"@otu": "otu316617"
-}, 
-"node813427": {
-"@otu": "otu316597"
-}, 
-"node813428": {
-"@otu": "otu316615"
-}, 
-"node813429": {}, 
-"node813430": {}, 
-"node813431": {}, 
-"node813432": {}, 
-"node813433": {
-"@otu": "otu316608"
-}, 
-"node813434": {
-"@otu": "otu316613"
-}, 
-"node813435": {}, 
-"node813436": {
-"@otu": "otu316622"
-}, 
-"node813437": {
-"@otu": "otu316600"
-}, 
-"node813438": {
-"@otu": "otu316602"
-}, 
-"node813439": {
-"@otu": "otu316598"
-}, 
-"node813440": {}, 
-"node813441": {
-"@otu": "otu316601"
-}, 
-"node813442": {
-"@otu": "otu316612"
-}
-}
-}, 
 "tree5953": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "Fig. 5", 
 "^ot:inGroupClade": "node1010686", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node1010685", 
-"^ot:tag": "choose me", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [
+"choose me"
+], 
 "edgeBySourceId": {
 "node1010685": {
 "edge1010686": {

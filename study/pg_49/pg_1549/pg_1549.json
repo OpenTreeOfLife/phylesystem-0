@@ -19,48 +19,11 @@
 "@id": "peyotl-validator", 
 "@name": "validate_ot_nexson.py", 
 "@url": "https://github.com/OpenTreeOfLife/peyotl", 
-"@version": "0.0.3a", 
+"@version": "0.0.4a", 
 "invocation": {
-"checksPerformed": [
-"MISSING_MANDATORY_KEY", 
-"MISSING_OPTIONAL_KEY", 
-"UNRECOGNIZED_KEY", 
-"MISSING_LIST_EXPECTED", 
-"DUPLICATING_SINGLETON_KEY", 
-"REFERENCED_ID_NOT_FOUND", 
-"REPEATED_ID", 
-"REPEATED_OTU", 
-"MULTIPLE_ROOT_NODES", 
-"NO_ROOT_NODE", 
-"MULTIPLE_EDGES_FOR_NODES", 
-"CYCLE_DETECTED", 
-"DISCONNECTED_GRAPH_DETECTED", 
-"INCORRECT_ROOT_NODE_LABEL", 
-"TIP_WITHOUT_OTU", 
-"TIP_WITHOUT_OTT_ID", 
-"MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
-"NON_MONOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
-"INVALID_PROPERTY_VALUE", 
-"PROPERTY_VALUE_NOT_USEFUL", 
-"UNRECOGNIZED_PROPERTY_VALUE", 
-"MULTIPLE_TREES", 
-"UNRECOGNIZED_TAG", 
-"CONFLICTING_PROPERTY_VALUES", 
-"NO_TREES", 
-"DEPRECATED_PROPERTY", 
-"UNPARSEABLE_META", 
-"UNREACHABLE_NODE", 
-"INCORRECT_VALUE_TYPE", 
-"MISSING_CRUCIAL_CONTENT"
-], 
 "commandLine": [
 "--embed", 
-"--agent-only", 
-"-e", 
-"../mig-phyelesystem-scratch/1549/validation.json", 
-"-o", 
-"../mig-phyelesystem-scratch/1549/final.json", 
-"../mig-phyelesystem-scratch/1549/v1.2.1-1549.json"
+"--agent-only"
 ], 
 "otherProperty": [
 {
@@ -76,12 +39,19 @@
 }
 ]
 }, 
+"^ot:annotationEvents": {
+"annotation": []
+}, 
+"^ot:candidateTreeForSynthesis": [], 
 "^ot:curatorName": "Jiabin Deng", 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S13073"
 }, 
 "^ot:focalClade": 1094628, 
 "^ot:focalCladeOTTTaxonName": "Myxogastria", 
+"^ot:messages": {
+"message": []
+}, 
 "^ot:otusElementOrder": [
 "otus1549"
 ], 
@@ -91,6 +61,7 @@
 }, 
 "^ot:studyPublicationReference": "Erastova, D. A., Okun, M. V., Fiore-Donno, A. M., Novozhilov, Y. K., & Schnittler, M. (2013). Phylogenetic position of the enigmatic myxomycete genus Kelleromyxa revealed by SSU rDNA sequences. Mycological Progress, 1-10.", 
 "^ot:studyYear": 2013, 
+"^ot:tag": [], 
 "^ot:treesElementOrder": [
 "trees1549"
 ], 
@@ -123,7 +94,9 @@
 "^ot:ottTaxonName": "Didymium iridis"
 }, 
 "otu258186": {
-"^ot:originalLabel": "Hyperamoeba sp. AY321114"
+"^ot:originalLabel": "Hyperamoeba sp. AY321114", 
+"^ot:ottId": 671625, 
+"^ot:ottTaxonName": "Hyperamoeba"
 }, 
 "otu258187": {
 "^ot:originalLabel": "Didymium sp. GQ249857", 
@@ -171,10 +144,14 @@
 "^ot:ottTaxonName": "Didymium nigripes"
 }, 
 "otu258196": {
-"^ot:originalLabel": "Hyperamoeba sp. AY321111"
+"^ot:originalLabel": "Hyperamoeba sp. AY321111", 
+"^ot:ottId": 671625, 
+"^ot:ottTaxonName": "Hyperamoeba"
 }, 
 "otu258197": {
-"^ot:originalLabel": "Hyperamoeba sp. EF455771"
+"^ot:originalLabel": "Hyperamoeba sp. EF455771", 
+"^ot:ottId": 671625, 
+"^ot:ottTaxonName": "Hyperamoeba"
 }, 
 "otu258198": {
 "^ot:originalLabel": "Didymium dubium AM231295", 
@@ -270,7 +247,9 @@
 "^ot:ottTaxonName": "Physarum nivale"
 }, 
 "otu258217": {
-"^ot:originalLabel": "Hyperamoeba sp. AY321115"
+"^ot:originalLabel": "Hyperamoeba sp. AY321115", 
+"^ot:ottId": 671625, 
+"^ot:ottTaxonName": "Hyperamoeba"
 }, 
 "otu258218": {
 "^ot:originalLabel": "Physarum pusillum HE614603", 
@@ -298,7 +277,9 @@
 "^ot:ottTaxonName": "Physarum roseum"
 }, 
 "otu258223": {
-"^ot:originalLabel": "Hyperamoeba sp. AY321113"
+"^ot:originalLabel": "Hyperamoeba sp. AY321113", 
+"^ot:ottId": 671625, 
+"^ot:ottTaxonName": "Hyperamoeba"
 }, 
 "otu258224": {
 "^ot:originalLabel": "Fuligo septica AJ584697", 
@@ -431,7 +412,9 @@
 "^ot:ottTaxonName": "Comatricha nigricapillitia"
 }, 
 "otu258250": {
-"^ot:originalLabel": "Enerthenema melanospermum DQ903689"
+"^ot:originalLabel": "Enerthenema melanospermum DQ903689", 
+"^ot:ottId": 997256, 
+"^ot:ottTaxonName": "Enerthenema melanospermum"
 }, 
 "otu258251": {
 "^ot:originalLabel": "Lamproderma cacographicum JQ031976", 
@@ -629,7 +612,9 @@
 "^ot:ottTaxonName": "Diderma meyerae"
 }, 
 "otu258290": {
-"^ot:originalLabel": "Diderma nivale HE614617"
+"^ot:originalLabel": "Diderma nivale HE614617", 
+"^ot:ottId": 5276308, 
+"^ot:ottTaxonName": "Diderma peyerimhoffii"
 }, 
 "otu258291": {
 "^ot:originalLabel": "Fuligo septica AJ584469", 
@@ -642,7 +627,9 @@
 "^ot:ottTaxonName": "Physarella oblonga"
 }, 
 "otu258293": {
-"^ot:originalLabel": "Undetermined Physaridae AY321113"
+"^ot:originalLabel": "Undetermined Physaridae AY321113", 
+"^ot:ottId": 627081, 
+"^ot:ottTaxonName": "Physaraceae"
 }, 
 "otu258294": {
 "^ot:originalLabel": "Physarum polycephalum X13160.1", 
@@ -667,8 +654,14 @@
 "treeById": {
 "tree3103": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "SSU", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node635097", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node635097": {
 "edge635098": {
@@ -1417,8 +1410,14 @@
 }, 
 "tree3104": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "S13073ssu", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node635190", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node635190": {
 "edge635191": {

@@ -19,48 +19,11 @@
 "@id": "peyotl-validator", 
 "@name": "validate_ot_nexson.py", 
 "@url": "https://github.com/OpenTreeOfLife/peyotl", 
-"@version": "0.0.3a", 
+"@version": "0.0.4a", 
 "invocation": {
-"checksPerformed": [
-"MISSING_MANDATORY_KEY", 
-"MISSING_OPTIONAL_KEY", 
-"UNRECOGNIZED_KEY", 
-"MISSING_LIST_EXPECTED", 
-"DUPLICATING_SINGLETON_KEY", 
-"REFERENCED_ID_NOT_FOUND", 
-"REPEATED_ID", 
-"REPEATED_OTU", 
-"MULTIPLE_ROOT_NODES", 
-"NO_ROOT_NODE", 
-"MULTIPLE_EDGES_FOR_NODES", 
-"CYCLE_DETECTED", 
-"DISCONNECTED_GRAPH_DETECTED", 
-"INCORRECT_ROOT_NODE_LABEL", 
-"TIP_WITHOUT_OTU", 
-"TIP_WITHOUT_OTT_ID", 
-"MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
-"NON_MONOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
-"INVALID_PROPERTY_VALUE", 
-"PROPERTY_VALUE_NOT_USEFUL", 
-"UNRECOGNIZED_PROPERTY_VALUE", 
-"MULTIPLE_TREES", 
-"UNRECOGNIZED_TAG", 
-"CONFLICTING_PROPERTY_VALUES", 
-"NO_TREES", 
-"DEPRECATED_PROPERTY", 
-"UNPARSEABLE_META", 
-"UNREACHABLE_NODE", 
-"INCORRECT_VALUE_TYPE", 
-"MISSING_CRUCIAL_CONTENT"
-], 
 "commandLine": [
 "--embed", 
-"--agent-only", 
-"-e", 
-"../mig-phyelesystem-scratch/131/validation.json", 
-"-o", 
-"../mig-phyelesystem-scratch/131/final.json", 
-"../mig-phyelesystem-scratch/131/v1.2.1-131.json"
+"--agent-only"
 ], 
 "otherProperty": [
 {
@@ -76,12 +39,19 @@
 }
 ]
 }, 
+"^ot:annotationEvents": {
+"annotation": []
+}, 
+"^ot:candidateTreeForSynthesis": [], 
 "^ot:curatorName": "William Wysocki", 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S1451"
 }, 
 "^ot:focalClade": 935477, 
 "^ot:focalCladeOTTTaxonName": "Trifolium", 
+"^ot:messages": {
+"message": []
+}, 
 "^ot:otusElementOrder": [
 "otus131"
 ], 
@@ -91,6 +61,7 @@
 }, 
 "^ot:studyPublicationReference": "Ellison N., Liston A., Steiner J., Williams W., & Taylor N. 2006. Molecular phylogenetics of the clover genus (Trifolium--Leguminosae). Molecular Phylogenetics and Evolution, 39(3): 688-705.", 
 "^ot:studyYear": 2006, 
+"^ot:tag": [], 
 "^ot:treesElementOrder": [
 "trees131"
 ], 
@@ -310,6 +281,7 @@
 "otu377848": {
 "^ot:originalLabel": "Trifolium velenovskyi", 
 "^ot:ottId": 528305, 
+"^ot:ottTaxonName": "Trifolium velenovskyi", 
 "^ot:treebaseOTUId": "Tl25084"
 }, 
 "otu377849": {
@@ -404,6 +376,8 @@
 }, 
 "otu377864": {
 "^ot:originalLabel": "Lotus glaber", 
+"^ot:ottId": 484504, 
+"^ot:ottTaxonName": "Lotus tenuis", 
 "^ot:treebaseOTUId": "Tl25103"
 }, 
 "otu377865": {
@@ -607,6 +581,7 @@
 "otu377898": {
 "^ot:originalLabel": "Trifolium angulatum", 
 "^ot:ottId": 540590, 
+"^ot:ottTaxonName": "Trifolium angulatum", 
 "^ot:treebaseOTUId": "Tl25142"
 }, 
 "otu377899": {
@@ -1660,9 +1635,15 @@
 "treeById": {
 "tree5890": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "model tree", 
 "^ot:inGroupClade": "node1001962", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node1001941", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node1001941": {
 "edge1001942": {
@@ -4888,9 +4869,15 @@
 }, 
 "tree6236": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "MP", 
 "^ot:inGroupClade": "node1077138", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node1077094", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node1077094": {
 "edge1077095": {

@@ -19,48 +19,11 @@
 "@id": "peyotl-validator", 
 "@name": "validate_ot_nexson.py", 
 "@url": "https://github.com/OpenTreeOfLife/peyotl", 
-"@version": "0.0.3a", 
+"@version": "0.0.4a", 
 "invocation": {
-"checksPerformed": [
-"MISSING_MANDATORY_KEY", 
-"MISSING_OPTIONAL_KEY", 
-"UNRECOGNIZED_KEY", 
-"MISSING_LIST_EXPECTED", 
-"DUPLICATING_SINGLETON_KEY", 
-"REFERENCED_ID_NOT_FOUND", 
-"REPEATED_ID", 
-"REPEATED_OTU", 
-"MULTIPLE_ROOT_NODES", 
-"NO_ROOT_NODE", 
-"MULTIPLE_EDGES_FOR_NODES", 
-"CYCLE_DETECTED", 
-"DISCONNECTED_GRAPH_DETECTED", 
-"INCORRECT_ROOT_NODE_LABEL", 
-"TIP_WITHOUT_OTU", 
-"TIP_WITHOUT_OTT_ID", 
-"MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
-"NON_MONOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
-"INVALID_PROPERTY_VALUE", 
-"PROPERTY_VALUE_NOT_USEFUL", 
-"UNRECOGNIZED_PROPERTY_VALUE", 
-"MULTIPLE_TREES", 
-"UNRECOGNIZED_TAG", 
-"CONFLICTING_PROPERTY_VALUES", 
-"NO_TREES", 
-"DEPRECATED_PROPERTY", 
-"UNPARSEABLE_META", 
-"UNREACHABLE_NODE", 
-"INCORRECT_VALUE_TYPE", 
-"MISSING_CRUCIAL_CONTENT"
-], 
 "commandLine": [
 "--embed", 
-"--agent-only", 
-"-e", 
-"../mig-phyelesystem-scratch/2734/validation.json", 
-"-o", 
-"../mig-phyelesystem-scratch/2734/final.json", 
-"../mig-phyelesystem-scratch/2734/v1.2.1-2734.json"
+"--agent-only"
 ], 
 "otherProperty": [
 {
@@ -76,12 +39,17 @@
 }
 ]
 }, 
+"^ot:annotationEvents": {
+"annotation": []
+}, 
+"^ot:candidateTreeForSynthesis": [], 
 "^ot:curatorName": "Romina Gazis", 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S12636"
 }, 
-"^ot:focalClade": 1420239, 
-"^ot:focalCladeOTTTaxonName": "Geastrum", 
+"^ot:messages": {
+"message": []
+}, 
 "^ot:otusElementOrder": [
 "otus2734"
 ], 
@@ -89,11 +57,11 @@
 "^ot:studyPublicationReference": "Silva B.D., Cabral T.S., Marinho P.S., & Baseia I.G. 2013. Two new species of Geastrum found in Brazil. Nova Hedwigia 96(3-4): 445-456.", 
 "^ot:studyYear": 2013, 
 "^ot:tag": [
-"unmapped terminals", 
-"New species", 
-"LSU", 
+"ATP6", 
 "BI", 
-"ATP6"
+"LSU", 
+"New species", 
+"unmapped terminals"
 ], 
 "^ot:treesElementOrder": [
 "trees2734"
@@ -133,8 +101,8 @@
 }, 
 "otu408041": {
 "^ot:originalLabel": "Geastrum aculeatum", 
-"^ot:ottId": 735804, 
-"^ot:ottTaxonName": "Geastrum", 
+"^ot:ottId": 5307461, 
+"^ot:ottTaxonName": "Geastrum aculeatum", 
 "^ot:treebaseOTUId": "Tl748956"
 }, 
 "otu408042": {
@@ -163,7 +131,7 @@
 }, 
 "otu408046": {
 "^ot:originalLabel": "Geastrum sp. INPA240005", 
-"^ot:ottId": 735804, 
+"^ot:ottId": 148807, 
 "^ot:ottTaxonName": "Geastrum", 
 "^ot:treebaseOTUId": "Tl748961"
 }, 
@@ -175,7 +143,7 @@
 }, 
 "otu408048": {
 "^ot:originalLabel": "Geastrum echinulatum INPA240001", 
-"^ot:ottId": 735804, 
+"^ot:ottId": 148807, 
 "^ot:ottTaxonName": "Geastrum", 
 "^ot:treebaseOTUId": "Tl748963"
 }, 
@@ -211,7 +179,7 @@
 }, 
 "otu408054": {
 "^ot:originalLabel": "Geastrum echinulatum 1682", 
-"^ot:ottId": 735804, 
+"^ot:ottId": 148807, 
 "^ot:ottTaxonName": "Geastrum", 
 "^ot:treebaseOTUId": "Tl748969"
 }, 
@@ -229,14 +197,14 @@
 }, 
 "otu408057": {
 "^ot:originalLabel": "Geastrum sp", 
-"^ot:ottId": 735804, 
+"^ot:ottId": 148807, 
 "^ot:ottTaxonName": "Geastrum", 
 "^ot:treebaseOTUId": "Tl748972"
 }, 
 "otu408058": {
 "^ot:originalLabel": "Geastrum recolligens", 
-"^ot:ottId": 401825, 
-"^ot:ottTaxonName": "Geastrum recolligens", 
+"^ot:ottId": 223493, 
+"^ot:ottTaxonName": "Geastrum corollinum", 
 "^ot:treebaseOTUId": "Tl748973"
 }, 
 "otu408059": {
@@ -258,9 +226,14 @@
 "treeById": {
 "tree6319": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "BI, LSU + ATP6", 
 "^ot:inGroupClade": "node1098301", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node1098297", 
+"^ot:specifiedRoot": "", 
 "^ot:tag": [
 "BI", 
 "LSU", 
@@ -631,8 +604,14 @@
 }, 
 "tree6320": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "PAUP 1", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node1098342", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node1098342": {
 "edge1098343": {

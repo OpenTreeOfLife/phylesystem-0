@@ -19,48 +19,11 @@
 "@id": "peyotl-validator", 
 "@name": "validate_ot_nexson.py", 
 "@url": "https://github.com/OpenTreeOfLife/peyotl", 
-"@version": "0.0.3a", 
+"@version": "0.0.4a", 
 "invocation": {
-"checksPerformed": [
-"MISSING_MANDATORY_KEY", 
-"MISSING_OPTIONAL_KEY", 
-"UNRECOGNIZED_KEY", 
-"MISSING_LIST_EXPECTED", 
-"DUPLICATING_SINGLETON_KEY", 
-"REFERENCED_ID_NOT_FOUND", 
-"REPEATED_ID", 
-"REPEATED_OTU", 
-"MULTIPLE_ROOT_NODES", 
-"NO_ROOT_NODE", 
-"MULTIPLE_EDGES_FOR_NODES", 
-"CYCLE_DETECTED", 
-"DISCONNECTED_GRAPH_DETECTED", 
-"INCORRECT_ROOT_NODE_LABEL", 
-"TIP_WITHOUT_OTU", 
-"TIP_WITHOUT_OTT_ID", 
-"MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
-"NON_MONOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
-"INVALID_PROPERTY_VALUE", 
-"PROPERTY_VALUE_NOT_USEFUL", 
-"UNRECOGNIZED_PROPERTY_VALUE", 
-"MULTIPLE_TREES", 
-"UNRECOGNIZED_TAG", 
-"CONFLICTING_PROPERTY_VALUES", 
-"NO_TREES", 
-"DEPRECATED_PROPERTY", 
-"UNPARSEABLE_META", 
-"UNREACHABLE_NODE", 
-"INCORRECT_VALUE_TYPE", 
-"MISSING_CRUCIAL_CONTENT"
-], 
 "commandLine": [
 "--embed", 
-"--agent-only", 
-"-e", 
-"../mig-phyelesystem-scratch/1235/validation.json", 
-"-o", 
-"../mig-phyelesystem-scratch/1235/final.json", 
-"../mig-phyelesystem-scratch/1235/v1.2.1-1235.json"
+"--agent-only"
 ], 
 "otherProperty": [
 {
@@ -76,9 +39,16 @@
 }
 ]
 }, 
+"^ot:annotationEvents": {
+"annotation": []
+}, 
+"^ot:candidateTreeForSynthesis": [], 
 "^ot:curatorName": "Romina Gazis", 
 "^ot:focalClade": 1001393, 
 "^ot:focalCladeOTTTaxonName": "Teloschistales", 
+"^ot:messages": {
+"message": []
+}, 
 "^ot:otusElementOrder": [
 "otus1235"
 ], 
@@ -88,6 +58,7 @@
 }, 
 "^ot:studyPublicationReference": "Gaya, Ester, Filip H\u00f6gnabba, \u00c1ngela Holguin, Katalin Molnar, Samantha Fern\u00e1ndez-Brime, Soili Stenroos, Ulf Arup et al. \"Implementing a cumulative supermatrix approach for a comprehensive phylogenetic study of the Teloschistales (Pezizomycotina, Ascomycota).\" Molecular phylogenetics and evolution 63 (2012):374\u2013387", 
 "^ot:studyYear": 2012, 
+"^ot:tag": [], 
 "^ot:treesElementOrder": [
 "trees1235"
 ], 
@@ -213,7 +184,9 @@
 "^ot:ottTaxonName": "Myelochroa aurulenta"
 }, 
 "otu234425": {
-"^ot:originalLabel": "Hypotrachyna degelii"
+"^ot:originalLabel": "Hypotrachyna degelii", 
+"^ot:ottId": 5312555, 
+"^ot:ottTaxonName": "Myelochroa degelii"
 }, 
 "otu234426": {
 "^ot:originalLabel": "Melanelixia fuliginosa", 
@@ -679,7 +652,9 @@
 "^ot:ottTaxonName": "Caloplaca chlorina"
 }, 
 "otu234519": {
-"^ot:originalLabel": "Caloplaca isidiigera"
+"^ot:originalLabel": "Caloplaca isidiigera", 
+"^ot:ottId": 565707, 
+"^ot:ottTaxonName": "Caloplaca chlorina"
 }, 
 "otu234520": {
 "^ot:originalLabel": "Caloplaca cerina", 
@@ -928,8 +903,14 @@
 "treeById": {
 "tree2490": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "ML,  5.8S + SSU + LSU + mitSSU + RPB1 + RPB2", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node569407", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node569407": {
 "edge569408": {
@@ -3590,9 +3571,15 @@
 }, 
 "tree5835": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "ML,  5.8S + SSU + LSU + mtSSU + RPB1 + RPB2 (rooted)", 
 "^ot:inGroupClade": "node995998", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node995997", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node995997": {
 "edge995998": {

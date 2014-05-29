@@ -19,48 +19,11 @@
 "@id": "peyotl-validator", 
 "@name": "validate_ot_nexson.py", 
 "@url": "https://github.com/OpenTreeOfLife/peyotl", 
-"@version": "0.0.3a", 
+"@version": "0.0.4a", 
 "invocation": {
-"checksPerformed": [
-"MISSING_MANDATORY_KEY", 
-"MISSING_OPTIONAL_KEY", 
-"UNRECOGNIZED_KEY", 
-"MISSING_LIST_EXPECTED", 
-"DUPLICATING_SINGLETON_KEY", 
-"REFERENCED_ID_NOT_FOUND", 
-"REPEATED_ID", 
-"REPEATED_OTU", 
-"MULTIPLE_ROOT_NODES", 
-"NO_ROOT_NODE", 
-"MULTIPLE_EDGES_FOR_NODES", 
-"CYCLE_DETECTED", 
-"DISCONNECTED_GRAPH_DETECTED", 
-"INCORRECT_ROOT_NODE_LABEL", 
-"TIP_WITHOUT_OTU", 
-"TIP_WITHOUT_OTT_ID", 
-"MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
-"NON_MONOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
-"INVALID_PROPERTY_VALUE", 
-"PROPERTY_VALUE_NOT_USEFUL", 
-"UNRECOGNIZED_PROPERTY_VALUE", 
-"MULTIPLE_TREES", 
-"UNRECOGNIZED_TAG", 
-"CONFLICTING_PROPERTY_VALUES", 
-"NO_TREES", 
-"DEPRECATED_PROPERTY", 
-"UNPARSEABLE_META", 
-"UNREACHABLE_NODE", 
-"INCORRECT_VALUE_TYPE", 
-"MISSING_CRUCIAL_CONTENT"
-], 
 "commandLine": [
 "--embed", 
-"--agent-only", 
-"-e", 
-"../mig-phyelesystem-scratch/1565/validation.json", 
-"-o", 
-"../mig-phyelesystem-scratch/1565/final.json", 
-"../mig-phyelesystem-scratch/1565/v1.2.1-1565.json"
+"--agent-only"
 ], 
 "otherProperty": [
 {
@@ -76,9 +39,16 @@
 }
 ]
 }, 
+"^ot:annotationEvents": {
+"annotation": []
+}, 
+"^ot:candidateTreeForSynthesis": [], 
 "^ot:curatorName": "Jiabin Deng", 
 "^ot:focalClade": 878953, 
 "^ot:focalCladeOTTTaxonName": "Rhodophyceae", 
+"^ot:messages": {
+"message": []
+}, 
 "^ot:otusElementOrder": [
 "otus1565"
 ], 
@@ -88,6 +58,7 @@
 }, 
 "^ot:studyPublicationReference": "Zuccarello, G. C., West, J. A., & Kikuchi, N. (2008). PHYLOGENETIC RELATIONSHIPS WITHIN THE STYLONEMATALES (STYLONEMATOPHYCEAE, RHODOPHYTA): BIOGEOGRAPHIC PATTERNS DO NOT APPLY TO STYLONEMA ALSIDII1. Journal of Phycology, 44(2), 384-393.", 
 "^ot:studyYear": 2008, 
+"^ot:tag": [], 
 "^ot:treesElementOrder": [
 "trees1565"
 ], 
@@ -95,13 +66,19 @@
 "otus1565": {
 "otuById": {
 "otu259502": {
-"^ot:originalLabel": "Etrichia"
+"^ot:originalLabel": "Etrichia", 
+"^ot:ottId": 280885, 
+"^ot:ottTaxonName": "Erythrotrichia carnea"
 }, 
 "otu259503": {
-"^ot:originalLabel": "EtrichiaF371"
+"^ot:originalLabel": "EtrichiaF371", 
+"^ot:ottId": 280885, 
+"^ot:ottTaxonName": "Erythrotrichia carnea"
 }, 
 "otu259504": {
-"^ot:originalLabel": "Ecladia"
+"^ot:originalLabel": "Ecladia", 
+"^ot:ottId": 280885, 
+"^ot:ottTaxonName": "Erythrotrichia carnea"
 }, 
 "otu259505": {
 "^ot:originalLabel": "Rhodochaete", 
@@ -374,10 +351,14 @@
 "^ot:ottTaxonName": "Stylonema alsidii"
 }, 
 "otu259559": {
-"^ot:originalLabel": "Etrichia4247"
+"^ot:originalLabel": "Etrichia4247", 
+"^ot:ottId": 280885, 
+"^ot:ottTaxonName": "Erythrotrichia carnea"
 }, 
 "otu259560": {
-"^ot:originalLabel": "Ecladia3422"
+"^ot:originalLabel": "Ecladia3422", 
+"^ot:ottId": 280885, 
+"^ot:ottTaxonName": "Erythrotrichia carnea"
 }
 }
 }
@@ -392,9 +373,15 @@
 "treeById": {
 "tree3135": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "ML", 
 "^ot:inGroupClade": "node638378", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node638312", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node638312": {
 "edge638313": {
@@ -1289,9 +1276,15 @@
 }, 
 "tree5235": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "ML-root", 
 "^ot:inGroupClade": "node907871", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node907870", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node907870": {
 "edge907871": {

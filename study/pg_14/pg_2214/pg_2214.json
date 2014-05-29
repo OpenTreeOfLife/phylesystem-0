@@ -19,48 +19,11 @@
 "@id": "peyotl-validator", 
 "@name": "validate_ot_nexson.py", 
 "@url": "https://github.com/OpenTreeOfLife/peyotl", 
-"@version": "0.0.3a", 
+"@version": "0.0.4a", 
 "invocation": {
-"checksPerformed": [
-"MISSING_MANDATORY_KEY", 
-"MISSING_OPTIONAL_KEY", 
-"UNRECOGNIZED_KEY", 
-"MISSING_LIST_EXPECTED", 
-"DUPLICATING_SINGLETON_KEY", 
-"REFERENCED_ID_NOT_FOUND", 
-"REPEATED_ID", 
-"REPEATED_OTU", 
-"MULTIPLE_ROOT_NODES", 
-"NO_ROOT_NODE", 
-"MULTIPLE_EDGES_FOR_NODES", 
-"CYCLE_DETECTED", 
-"DISCONNECTED_GRAPH_DETECTED", 
-"INCORRECT_ROOT_NODE_LABEL", 
-"TIP_WITHOUT_OTU", 
-"TIP_WITHOUT_OTT_ID", 
-"MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
-"NON_MONOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
-"INVALID_PROPERTY_VALUE", 
-"PROPERTY_VALUE_NOT_USEFUL", 
-"UNRECOGNIZED_PROPERTY_VALUE", 
-"MULTIPLE_TREES", 
-"UNRECOGNIZED_TAG", 
-"CONFLICTING_PROPERTY_VALUES", 
-"NO_TREES", 
-"DEPRECATED_PROPERTY", 
-"UNPARSEABLE_META", 
-"UNREACHABLE_NODE", 
-"INCORRECT_VALUE_TYPE", 
-"MISSING_CRUCIAL_CONTENT"
-], 
 "commandLine": [
 "--embed", 
-"--agent-only", 
-"-e", 
-"../mig-phyelesystem-scratch/2214/validation.json", 
-"-o", 
-"../mig-phyelesystem-scratch/2214/final.json", 
-"../mig-phyelesystem-scratch/2214/v1.2.1-2214.json"
+"--agent-only"
 ], 
 "otherProperty": [
 {
@@ -76,12 +39,19 @@
 }
 ]
 }, 
+"^ot:annotationEvents": {
+"annotation": []
+}, 
+"^ot:candidateTreeForSynthesis": [], 
 "^ot:curatorName": "Romina Gazis", 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S719"
 }, 
 "^ot:focalClade": 466008, 
 "^ot:focalCladeOTTTaxonName": "Coccotremataceae", 
+"^ot:messages": {
+"message": []
+}, 
 "^ot:otusElementOrder": [
 "otus2214"
 ], 
@@ -91,6 +61,7 @@
 }, 
 "^ot:studyPublicationReference": "Lumbsch H., Schmitt I., & Messuti M. 2001. Utility of nuclear SSU and LSU rDNA data sets to discover the ordinal placement of the Coccotremataceae (Ascomycota). Organisms Diversity and Evolution, 1(2): 99-112.", 
 "^ot:studyYear": 2001, 
+"^ot:tag": [], 
 "^ot:treesElementOrder": [
 "trees2214"
 ], 
@@ -98,9 +69,9 @@
 "otus2214": {
 "otuById": {
 "otu320999": {
-"^ot:altLabel": "Splanchnonema platani", 
 "^ot:originalLabel": "Massaria platani", 
 "^ot:ottId": 87437, 
+"^ot:ottTaxonName": "Splanchnonema platani", 
 "^ot:treebaseOTUId": "Tl121776"
 }, 
 "otu321000": {
@@ -116,14 +87,15 @@
 "^ot:treebaseOTUId": "Tl121778"
 }, 
 "otu321002": {
-"^ot:altLabel": "Coccotrema pocillarium", 
 "^ot:originalLabel": "Coccotrema pocilliarum", 
 "^ot:ottId": 606006, 
+"^ot:ottTaxonName": "Coccotrema pocillarium", 
 "^ot:treebaseOTUId": "Tl121779"
 }, 
 "otu321003": {
 "^ot:originalLabel": "Placopsis argillacea", 
 "^ot:ottId": 890455, 
+"^ot:ottTaxonName": "Placopsis argillacea", 
 "^ot:treebaseOTUId": "Tl121780"
 }, 
 "otu321004": {
@@ -135,6 +107,7 @@
 "otu321005": {
 "^ot:originalLabel": "Leucostoma persoonii", 
 "^ot:ottId": 829405, 
+"^ot:ottTaxonName": "Leucostoma persoonii", 
 "^ot:treebaseOTUId": "Tl121783"
 }, 
 "otu321006": {
@@ -170,6 +143,7 @@
 "otu321011": {
 "^ot:originalLabel": "Ochrolechia parella", 
 "^ot:ottId": 466005, 
+"^ot:ottTaxonName": "Ochrolechia parella", 
 "^ot:treebaseOTUId": "Tl121789"
 }, 
 "otu321012": {
@@ -196,6 +170,8 @@
 }, 
 "otu321016": {
 "^ot:originalLabel": "Eurotium rubrum", 
+"^ot:ottId": 118490, 
+"^ot:ottTaxonName": "Aspergillus ruber", 
 "^ot:treebaseOTUId": "Tl121794"
 }, 
 "otu321017": {
@@ -219,6 +195,7 @@
 "otu321020": {
 "^ot:originalLabel": "Rhytisma acerinum", 
 "^ot:ottId": 422197, 
+"^ot:ottTaxonName": "Rhytisma acerinum", 
 "^ot:treebaseOTUId": "Tl121798"
 }, 
 "otu321021": {
@@ -284,6 +261,7 @@
 "otu321031": {
 "^ot:originalLabel": "Pertusaria amara", 
 "^ot:ottId": 466003, 
+"^ot:ottTaxonName": "Pertusaria amara", 
 "^ot:treebaseOTUId": "Tl121812"
 }, 
 "otu321032": {
@@ -340,9 +318,15 @@
 "treeById": {
 "tree4683": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "NJ, SSU", 
 "^ot:inGroupClade": "node826167", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node826166", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node826166": {
 "edge826167": {

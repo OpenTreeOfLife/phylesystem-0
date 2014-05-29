@@ -19,48 +19,11 @@
 "@id": "peyotl-validator", 
 "@name": "validate_ot_nexson.py", 
 "@url": "https://github.com/OpenTreeOfLife/peyotl", 
-"@version": "0.0.3a", 
+"@version": "0.0.4a", 
 "invocation": {
-"checksPerformed": [
-"MISSING_MANDATORY_KEY", 
-"MISSING_OPTIONAL_KEY", 
-"UNRECOGNIZED_KEY", 
-"MISSING_LIST_EXPECTED", 
-"DUPLICATING_SINGLETON_KEY", 
-"REFERENCED_ID_NOT_FOUND", 
-"REPEATED_ID", 
-"REPEATED_OTU", 
-"MULTIPLE_ROOT_NODES", 
-"NO_ROOT_NODE", 
-"MULTIPLE_EDGES_FOR_NODES", 
-"CYCLE_DETECTED", 
-"DISCONNECTED_GRAPH_DETECTED", 
-"INCORRECT_ROOT_NODE_LABEL", 
-"TIP_WITHOUT_OTU", 
-"TIP_WITHOUT_OTT_ID", 
-"MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
-"NON_MONOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
-"INVALID_PROPERTY_VALUE", 
-"PROPERTY_VALUE_NOT_USEFUL", 
-"UNRECOGNIZED_PROPERTY_VALUE", 
-"MULTIPLE_TREES", 
-"UNRECOGNIZED_TAG", 
-"CONFLICTING_PROPERTY_VALUES", 
-"NO_TREES", 
-"DEPRECATED_PROPERTY", 
-"UNPARSEABLE_META", 
-"UNREACHABLE_NODE", 
-"INCORRECT_VALUE_TYPE", 
-"MISSING_CRUCIAL_CONTENT"
-], 
 "commandLine": [
 "--embed", 
-"--agent-only", 
-"-e", 
-"../mig-phyelesystem-scratch/2595/validation.json", 
-"-o", 
-"../mig-phyelesystem-scratch/2595/final.json", 
-"../mig-phyelesystem-scratch/2595/v1.2.1-2595.json"
+"--agent-only"
 ], 
 "otherProperty": [
 {
@@ -76,18 +39,26 @@
 }
 ]
 }, 
+"^ot:annotationEvents": {
+"annotation": []
+}, 
+"^ot:candidateTreeForSynthesis": [], 
 "^ot:curatorName": "Chris Owen", 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S14287"
 }, 
 "^ot:focalClade": 392220, 
 "^ot:focalCladeOTTTaxonName": "Glires", 
+"^ot:messages": {
+"message": []
+}, 
 "^ot:otusElementOrder": [
 "otus2595"
 ], 
 "^ot:studyId": "2595", 
 "^ot:studyPublicationReference": "Yin Y. 2013. DNA Barcodes Analysis for Species Identifications and Divergence Estimates of the Glires distributed in Xinjiang, China. Molecular Ecology Resources, .", 
 "^ot:studyYear": 2013, 
+"^ot:tag": [], 
 "^ot:treesElementOrder": [
 "trees2595"
 ], 
@@ -95,27 +66,27 @@
 "otus2595": {
 "otuById": {
 "otu381789": {
-"^ot:altLabel": "Lepus timidus", 
 "^ot:originalLabel": "Lepus timidus T2", 
 "^ot:ottId": 167565, 
+"^ot:ottTaxonName": "Lepus timidus", 
 "^ot:treebaseOTUId": "Tl1120718"
 }, 
 "otu381790": {
-"^ot:altLabel": "Lepus yarkandensis", 
 "^ot:originalLabel": "Lepus yarkandensis Y5", 
 "^ot:ottId": 192736, 
+"^ot:ottTaxonName": "Lepus yarkandensis", 
 "^ot:treebaseOTUId": "Tl1120719"
 }, 
 "otu381791": {
-"^ot:altLabel": "Lepus yarkandensis", 
 "^ot:originalLabel": "Lepus yarkandensis Y14", 
 "^ot:ottId": 192736, 
+"^ot:ottTaxonName": "Lepus yarkandensis", 
 "^ot:treebaseOTUId": "Tl1120720"
 }, 
 "otu381792": {
-"^ot:altLabel": "Lepus yarkandensis", 
 "^ot:originalLabel": "Lepus yarkandensis Y6", 
 "^ot:ottId": 192736, 
+"^ot:ottTaxonName": "Lepus yarkandensis", 
 "^ot:treebaseOTUId": "Tl1120721"
 }, 
 "otu381793": {
@@ -125,15 +96,15 @@
 "^ot:treebaseOTUId": "Tl1120722"
 }, 
 "otu381794": {
-"^ot:altLabel": "Lepus oiostolus", 
 "^ot:originalLabel": "Lepus oiostolus 04", 
 "^ot:ottId": 114754, 
+"^ot:ottTaxonName": "Lepus oiostolus", 
 "^ot:treebaseOTUId": "Tl1120723"
 }, 
 "otu381795": {
-"^ot:altLabel": "Lepus timidus", 
 "^ot:originalLabel": "Lepus timidus T10", 
 "^ot:ottId": 167565, 
+"^ot:ottTaxonName": "Lepus timidus", 
 "^ot:treebaseOTUId": "Tl1120724"
 }, 
 "otu381796": {
@@ -143,9 +114,9 @@
 "^ot:treebaseOTUId": "Tl1120725"
 }, 
 "otu381797": {
-"^ot:altLabel": "Lepus yarkandensis", 
 "^ot:originalLabel": "Lepus yarkandensis Y12", 
 "^ot:ottId": 192736, 
+"^ot:ottTaxonName": "Lepus yarkandensis", 
 "^ot:treebaseOTUId": "Tl1120726"
 }, 
 "otu381798": {
@@ -155,51 +126,51 @@
 "^ot:treebaseOTUId": "Tl1120727"
 }, 
 "otu381799": {
-"^ot:altLabel": "Lepus timidus", 
 "^ot:originalLabel": "Lepus timidus T7", 
 "^ot:ottId": 167565, 
+"^ot:ottTaxonName": "Lepus timidus", 
 "^ot:treebaseOTUId": "Tl1120728"
 }, 
 "otu381800": {
-"^ot:altLabel": "Ochotona pallasi", 
 "^ot:originalLabel": "Ochotona pallasi ZMMU619", 
 "^ot:ottId": 258390, 
+"^ot:ottTaxonName": "Ochotona pallasi", 
 "^ot:treebaseOTUId": "Tl1120729"
 }, 
 "otu381801": {
-"^ot:altLabel": "Ochotona alpina", 
 "^ot:originalLabel": "Ochotona alpina ZMMU357", 
 "^ot:ottId": 747635, 
+"^ot:ottTaxonName": "Ochotona alpina", 
 "^ot:treebaseOTUId": "Tl1120730"
 }, 
 "otu381802": {
-"^ot:altLabel": "Ochotona pallasi", 
 "^ot:originalLabel": "Ochotona pallasi ZMMU424", 
 "^ot:ottId": 258390, 
+"^ot:ottTaxonName": "Ochotona pallasi", 
 "^ot:treebaseOTUId": "Tl1120731"
 }, 
 "otu381803": {
-"^ot:altLabel": "Ochotona pallasi", 
 "^ot:originalLabel": "Ochotona pallasi ZMMU623", 
 "^ot:ottId": 258390, 
+"^ot:ottTaxonName": "Ochotona pallasi", 
 "^ot:treebaseOTUId": "Tl1120732"
 }, 
 "otu381804": {
-"^ot:altLabel": "Lepus yarkandensis", 
 "^ot:originalLabel": "Lepus yarkandensis Y15", 
 "^ot:ottId": 192736, 
+"^ot:ottTaxonName": "Lepus yarkandensis", 
 "^ot:treebaseOTUId": "Tl1120733"
 }, 
 "otu381805": {
-"^ot:altLabel": "Lepus oiostolus", 
 "^ot:originalLabel": "Lepus oiostolus 02", 
 "^ot:ottId": 114754, 
+"^ot:ottTaxonName": "Lepus oiostolus", 
 "^ot:treebaseOTUId": "Tl1120734"
 }, 
 "otu381806": {
-"^ot:altLabel": "Ochotona alpina", 
 "^ot:originalLabel": "Ochotona alpina ZMMU355", 
 "^ot:ottId": 747635, 
+"^ot:ottTaxonName": "Ochotona alpina", 
 "^ot:treebaseOTUId": "Tl1120735"
 }, 
 "otu381807": {
@@ -209,9 +180,9 @@
 "^ot:treebaseOTUId": "Tl1120736"
 }, 
 "otu381808": {
-"^ot:altLabel": "Lepus timidus", 
 "^ot:originalLabel": "Lepus timidus T3", 
 "^ot:ottId": 167565, 
+"^ot:ottTaxonName": "Lepus timidus", 
 "^ot:treebaseOTUId": "Tl1120737"
 }, 
 "otu381809": {
@@ -221,15 +192,15 @@
 "^ot:treebaseOTUId": "Tl1120738"
 }, 
 "otu381810": {
-"^ot:altLabel": "Lepus yarkandensis", 
 "^ot:originalLabel": "Lepus yarkandensis JW87", 
 "^ot:ottId": 192736, 
+"^ot:ottTaxonName": "Lepus yarkandensis", 
 "^ot:treebaseOTUId": "Tl1120739"
 }, 
 "otu381811": {
-"^ot:altLabel": "Lepus yarkandensis", 
 "^ot:originalLabel": "Lepus yarkandensis Y4", 
 "^ot:ottId": 192736, 
+"^ot:ottTaxonName": "Lepus yarkandensis", 
 "^ot:treebaseOTUId": "Tl1120740"
 }, 
 "otu381812": {
@@ -245,9 +216,9 @@
 "^ot:treebaseOTUId": "Tl1120742"
 }, 
 "otu381814": {
-"^ot:altLabel": "Ochotona pallasi", 
 "^ot:originalLabel": "Ochotona pallasi ZMMU426", 
 "^ot:ottId": 258390, 
+"^ot:ottTaxonName": "Ochotona pallasi", 
 "^ot:treebaseOTUId": "Tl1120743"
 }, 
 "otu381815": {
@@ -257,27 +228,27 @@
 "^ot:treebaseOTUId": "Tl1120744"
 }, 
 "otu381816": {
-"^ot:altLabel": "Lepus timidus", 
 "^ot:originalLabel": "Lepus timidus T9", 
 "^ot:ottId": 167565, 
+"^ot:ottTaxonName": "Lepus timidus", 
 "^ot:treebaseOTUId": "Tl1120745"
 }, 
 "otu381817": {
-"^ot:altLabel": "Lepus yarkandensis", 
 "^ot:originalLabel": "Lepus yarkandensis Y11", 
 "^ot:ottId": 192736, 
+"^ot:ottTaxonName": "Lepus yarkandensis", 
 "^ot:treebaseOTUId": "Tl1120746"
 }, 
 "otu381818": {
-"^ot:altLabel": "Lepus timidus", 
 "^ot:originalLabel": "Lepus timidus T11", 
 "^ot:ottId": 167565, 
+"^ot:ottTaxonName": "Lepus timidus", 
 "^ot:treebaseOTUId": "Tl1120747"
 }, 
 "otu381819": {
-"^ot:altLabel": "Lepus timidus", 
 "^ot:originalLabel": "Lepus timidus T6", 
 "^ot:ottId": 167565, 
+"^ot:ottTaxonName": "Lepus timidus", 
 "^ot:treebaseOTUId": "Tl1120748"
 }, 
 "otu381820": {
@@ -299,27 +270,27 @@
 "^ot:treebaseOTUId": "Tl1120751"
 }, 
 "otu381823": {
-"^ot:altLabel": "Ochotona pallasi", 
 "^ot:originalLabel": "Ochotona pallasi ZMMU288", 
 "^ot:ottId": 258390, 
+"^ot:ottTaxonName": "Ochotona pallasi", 
 "^ot:treebaseOTUId": "Tl1120752"
 }, 
 "otu381824": {
-"^ot:altLabel": "Ochotona alpina", 
 "^ot:originalLabel": "Ochotona alpina ZMMU358", 
 "^ot:ottId": 747635, 
+"^ot:ottTaxonName": "Ochotona alpina", 
 "^ot:treebaseOTUId": "Tl1120753"
 }, 
 "otu381825": {
-"^ot:altLabel": "Lepus yarkandensis", 
 "^ot:originalLabel": "Lepus yarkandensis Y13", 
 "^ot:ottId": 192736, 
+"^ot:ottTaxonName": "Lepus yarkandensis", 
 "^ot:treebaseOTUId": "Tl1120754"
 }, 
 "otu381826": {
-"^ot:altLabel": "Ochotona alpina", 
 "^ot:originalLabel": "Ochotona alpina ZMMU836", 
 "^ot:ottId": 747635, 
+"^ot:ottTaxonName": "Ochotona alpina", 
 "^ot:treebaseOTUId": "Tl1120755"
 }, 
 "otu381827": {
@@ -341,9 +312,9 @@
 "^ot:treebaseOTUId": "Tl1120758"
 }, 
 "otu381830": {
-"^ot:altLabel": "Ochotona alpina", 
 "^ot:originalLabel": "Ochotona alpina ZMMU354", 
 "^ot:ottId": 747635, 
+"^ot:ottTaxonName": "Ochotona alpina", 
 "^ot:treebaseOTUId": "Tl1120759"
 }, 
 "otu381831": {
@@ -353,33 +324,33 @@
 "^ot:treebaseOTUId": "Tl1120760"
 }, 
 "otu381832": {
-"^ot:altLabel": "Lepus yarkandensis", 
 "^ot:originalLabel": "Lepus yarkandensis Y9", 
 "^ot:ottId": 192736, 
+"^ot:ottTaxonName": "Lepus yarkandensis", 
 "^ot:treebaseOTUId": "Tl1120761"
 }, 
 "otu381833": {
-"^ot:altLabel": "Lepus oiostolus", 
 "^ot:originalLabel": "Lepus oiostolus 06", 
 "^ot:ottId": 114754, 
+"^ot:ottTaxonName": "Lepus oiostolus", 
 "^ot:treebaseOTUId": "Tl1120762"
 }, 
 "otu381834": {
-"^ot:altLabel": "Ochotona pallasi", 
 "^ot:originalLabel": "Ochotona pallasi ZMMU423", 
 "^ot:ottId": 258390, 
+"^ot:ottTaxonName": "Ochotona pallasi", 
 "^ot:treebaseOTUId": "Tl1120763"
 }, 
 "otu381835": {
-"^ot:altLabel": "Ochotona pallasi", 
 "^ot:originalLabel": "Ochotona pallasi ZMMU12", 
 "^ot:ottId": 258390, 
+"^ot:ottTaxonName": "Ochotona pallasi", 
 "^ot:treebaseOTUId": "Tl1120764"
 }, 
 "otu381836": {
-"^ot:altLabel": "Ochotona pallasi", 
 "^ot:originalLabel": "Ochotona pallasi ZMMU615", 
 "^ot:ottId": 258390, 
+"^ot:ottTaxonName": "Ochotona pallasi", 
 "^ot:treebaseOTUId": "Tl1120765"
 }, 
 "otu381837": {
@@ -389,39 +360,39 @@
 "^ot:treebaseOTUId": "Tl1120766"
 }, 
 "otu381838": {
-"^ot:altLabel": "Lepus oiostolus", 
 "^ot:originalLabel": "Lepus oiostolus 01", 
 "^ot:ottId": 114754, 
+"^ot:ottTaxonName": "Lepus oiostolus", 
 "^ot:treebaseOTUId": "Tl1120767"
 }, 
 "otu381839": {
-"^ot:altLabel": "Ochotona alpina", 
 "^ot:originalLabel": "Ochotona alpina ZMMU351", 
 "^ot:ottId": 747635, 
+"^ot:ottTaxonName": "Ochotona alpina", 
 "^ot:treebaseOTUId": "Tl1120768"
 }, 
 "otu381840": {
-"^ot:altLabel": "Lepus oiostolus", 
 "^ot:originalLabel": "Lepus oiostolus 05", 
 "^ot:ottId": 114754, 
+"^ot:ottTaxonName": "Lepus oiostolus", 
 "^ot:treebaseOTUId": "Tl1120769"
 }, 
 "otu381841": {
-"^ot:altLabel": "Ochotona alpina", 
 "^ot:originalLabel": "Ochotona alpina ZMMU356", 
 "^ot:ottId": 747635, 
+"^ot:ottTaxonName": "Ochotona alpina", 
 "^ot:treebaseOTUId": "Tl1120770"
 }, 
 "otu381842": {
-"^ot:altLabel": "Lepus yarkandensis", 
 "^ot:originalLabel": "Lepus yarkandensis Y10", 
 "^ot:ottId": 192736, 
+"^ot:ottTaxonName": "Lepus yarkandensis", 
 "^ot:treebaseOTUId": "Tl1120771"
 }, 
 "otu381843": {
-"^ot:altLabel": "Lepus timidus", 
 "^ot:originalLabel": "Lepus timidus T13", 
 "^ot:ottId": 167565, 
+"^ot:ottTaxonName": "Lepus timidus", 
 "^ot:treebaseOTUId": "Tl1120772"
 }, 
 "otu381844": {
@@ -431,31 +402,33 @@
 "^ot:treebaseOTUId": "Tl1120773"
 }, 
 "otu381845": {
-"^ot:altLabel": "Lepus yarkandensis", 
 "^ot:originalLabel": "Lepus yarkandensis Y8", 
 "^ot:ottId": 192736, 
+"^ot:ottTaxonName": "Lepus yarkandensis", 
 "^ot:treebaseOTUId": "Tl1120774"
 }, 
 "otu381846": {
-"^ot:altLabel": "Ochotona alpina", 
 "^ot:originalLabel": "Ochotona alpina ZMMU352", 
 "^ot:ottId": 747635, 
+"^ot:ottTaxonName": "Ochotona alpina", 
 "^ot:treebaseOTUId": "Tl1120775"
 }, 
 "otu381847": {
-"^ot:altLabel": "Lepus capensis", 
 "^ot:originalLabel": "Lepus capensis JW86", 
 "^ot:ottId": 864613, 
+"^ot:ottTaxonName": "Lepus capensis", 
 "^ot:treebaseOTUId": "Tl1120776"
 }, 
 "otu381848": {
 "^ot:originalLabel": "Homo sapiens", 
+"^ot:ottId": 770315, 
+"^ot:ottTaxonName": "Homo sapiens", 
 "^ot:treebaseOTUId": "Tl1120777"
 }, 
 "otu381849": {
-"^ot:altLabel": "Ochotona alpina", 
 "^ot:originalLabel": "Ochotona alpina ZMMU837", 
 "^ot:ottId": 747635, 
+"^ot:ottTaxonName": "Ochotona alpina", 
 "^ot:treebaseOTUId": "Tl1120778"
 }, 
 "otu381850": {
@@ -465,9 +438,9 @@
 "^ot:treebaseOTUId": "Tl1120779"
 }, 
 "otu381851": {
-"^ot:altLabel": "Lepus timidus", 
 "^ot:originalLabel": "Lepus timidus T12", 
 "^ot:ottId": 167565, 
+"^ot:ottTaxonName": "Lepus timidus", 
 "^ot:treebaseOTUId": "Tl1120780"
 }, 
 "otu381852": {
@@ -477,33 +450,33 @@
 "^ot:treebaseOTUId": "Tl1120781"
 }, 
 "otu381853": {
-"^ot:altLabel": "Lepus timidus", 
 "^ot:originalLabel": "Lepus timidus T15", 
 "^ot:ottId": 167565, 
+"^ot:ottTaxonName": "Lepus timidus", 
 "^ot:treebaseOTUId": "Tl1120782"
 }, 
 "otu381854": {
-"^ot:altLabel": "Lepus timidus", 
 "^ot:originalLabel": "Lepus timidus T21", 
 "^ot:ottId": 167565, 
+"^ot:ottTaxonName": "Lepus timidus", 
 "^ot:treebaseOTUId": "Tl1120783"
 }, 
 "otu381855": {
-"^ot:altLabel": "Ochotona pallasi", 
 "^ot:originalLabel": "Ochotona pallasi ZMMU289", 
 "^ot:ottId": 258390, 
+"^ot:ottTaxonName": "Ochotona pallasi", 
 "^ot:treebaseOTUId": "Tl1120784"
 }, 
 "otu381856": {
-"^ot:altLabel": "Lepus timidus", 
 "^ot:originalLabel": "Lepus timidus T8", 
 "^ot:ottId": 167565, 
+"^ot:ottTaxonName": "Lepus timidus", 
 "^ot:treebaseOTUId": "Tl1120785"
 }, 
 "otu381857": {
-"^ot:altLabel": "Ochotona alpina", 
 "^ot:originalLabel": "Ochotona alpina ZMMU510", 
 "^ot:ottId": 747635, 
+"^ot:ottTaxonName": "Ochotona alpina", 
 "^ot:treebaseOTUId": "Tl1120786"
 }, 
 "otu381858": {
@@ -513,9 +486,9 @@
 "^ot:treebaseOTUId": "Tl1120787"
 }, 
 "otu381859": {
-"^ot:altLabel": "Lepus yarkandensis", 
 "^ot:originalLabel": "Lepus yarkandensis Y7", 
 "^ot:ottId": 192736, 
+"^ot:ottTaxonName": "Lepus yarkandensis", 
 "^ot:treebaseOTUId": "Tl1120788"
 }, 
 "otu381860": {
@@ -525,21 +498,21 @@
 "^ot:treebaseOTUId": "Tl1120789"
 }, 
 "otu381861": {
-"^ot:altLabel": "Ochotona pallasi", 
 "^ot:originalLabel": "Ochotona pallasi ZMMU612", 
 "^ot:ottId": 258390, 
+"^ot:ottTaxonName": "Ochotona pallasi", 
 "^ot:treebaseOTUId": "Tl1120790"
 }, 
 "otu381862": {
-"^ot:altLabel": "Lepus oiostolus", 
 "^ot:originalLabel": "Lepus oiostolus 03", 
 "^ot:ottId": 114754, 
+"^ot:ottTaxonName": "Lepus oiostolus", 
 "^ot:treebaseOTUId": "Tl1120791"
 }, 
 "otu381863": {
-"^ot:altLabel": "Lepus timidus", 
 "^ot:originalLabel": "Lepus timidus T20", 
 "^ot:ottId": 167565, 
+"^ot:ottTaxonName": "Lepus timidus", 
 "^ot:treebaseOTUId": "Tl1120792"
 }, 
 "otu381864": {
@@ -4095,11 +4068,17 @@
 "treeById": {
 "tree6015": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
 "^ot:branchLengthMode": "ot:substitutionCount", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "Fig. 2 Cytb 425 STATE 100", 
 "^ot:inGroupClade": "node1021829", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node1021828", 
-"^ot:tag": "choose me", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [
+"choose me"
+], 
 "edgeBySourceId": {
 "node1021828": {
 "edge1021829": {
@@ -9888,10 +9867,15 @@
 }, 
 "tree6016": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
 "^ot:branchLengthMode": "ot:substitutionCount", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "Fig. 2 COI 197 STATE 50", 
 "^ot:inGroupClade": "node1022557", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node1022551", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node1022551": {
 "edge1022552": {

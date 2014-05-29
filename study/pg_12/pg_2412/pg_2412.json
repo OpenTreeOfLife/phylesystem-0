@@ -19,48 +19,11 @@
 "@id": "peyotl-validator", 
 "@name": "validate_ot_nexson.py", 
 "@url": "https://github.com/OpenTreeOfLife/peyotl", 
-"@version": "0.0.3a", 
+"@version": "0.0.4a", 
 "invocation": {
-"checksPerformed": [
-"MISSING_MANDATORY_KEY", 
-"MISSING_OPTIONAL_KEY", 
-"UNRECOGNIZED_KEY", 
-"MISSING_LIST_EXPECTED", 
-"DUPLICATING_SINGLETON_KEY", 
-"REFERENCED_ID_NOT_FOUND", 
-"REPEATED_ID", 
-"REPEATED_OTU", 
-"MULTIPLE_ROOT_NODES", 
-"NO_ROOT_NODE", 
-"MULTIPLE_EDGES_FOR_NODES", 
-"CYCLE_DETECTED", 
-"DISCONNECTED_GRAPH_DETECTED", 
-"INCORRECT_ROOT_NODE_LABEL", 
-"TIP_WITHOUT_OTU", 
-"TIP_WITHOUT_OTT_ID", 
-"MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
-"NON_MONOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
-"INVALID_PROPERTY_VALUE", 
-"PROPERTY_VALUE_NOT_USEFUL", 
-"UNRECOGNIZED_PROPERTY_VALUE", 
-"MULTIPLE_TREES", 
-"UNRECOGNIZED_TAG", 
-"CONFLICTING_PROPERTY_VALUES", 
-"NO_TREES", 
-"DEPRECATED_PROPERTY", 
-"UNPARSEABLE_META", 
-"UNREACHABLE_NODE", 
-"INCORRECT_VALUE_TYPE", 
-"MISSING_CRUCIAL_CONTENT"
-], 
 "commandLine": [
 "--embed", 
-"--agent-only", 
-"-e", 
-"../mig-phyelesystem-scratch/2412/validation.json", 
-"-o", 
-"../mig-phyelesystem-scratch/2412/final.json", 
-"../mig-phyelesystem-scratch/2412/v1.2.1-2412.json"
+"--agent-only"
 ], 
 "otherProperty": [
 {
@@ -76,12 +39,17 @@
 }
 ]
 }, 
+"^ot:annotationEvents": {
+"annotation": []
+}, 
+"^ot:candidateTreeForSynthesis": [], 
 "^ot:curatorName": "Chris Owen", 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S411"
 }, 
-"^ot:focalClade": 3726029, 
-"^ot:focalCladeOTTTaxonName": "Spiralia", 
+"^ot:messages": {
+"message": []
+}, 
 "^ot:otusElementOrder": [
 "otus2412"
 ], 
@@ -91,6 +59,7 @@
 }, 
 "^ot:studyPublicationReference": "Rouse G. 1999. Trochophore concepts: Evolution of larvae in polychaetes and other spiralians. Biological Journal of the Linnean Society, 66(4): 411-464.", 
 "^ot:studyYear": 1999, 
+"^ot:tag": [], 
 "^ot:treesElementOrder": [
 "trees2412"
 ], 
@@ -100,6 +69,7 @@
 "otu342368": {
 "^ot:originalLabel": "Histriobdellidae", 
 "^ot:ottId": 618830, 
+"^ot:ottTaxonName": "Histriobdellidae", 
 "^ot:treebaseOTUId": "Tl113865"
 }, 
 "otu342369": {
@@ -111,6 +81,7 @@
 "otu342370": {
 "^ot:originalLabel": "Uncispionidae", 
 "^ot:ottId": 4977066, 
+"^ot:ottTaxonName": "Uncispionidae", 
 "^ot:treebaseOTUId": "Tl113867"
 }, 
 "otu342371": {
@@ -158,6 +129,7 @@
 "otu342378": {
 "^ot:originalLabel": "Spintheridae", 
 "^ot:ottId": 4988054, 
+"^ot:ottTaxonName": "Spintheridae", 
 "^ot:treebaseOTUId": "Tl113875"
 }, 
 "otu342379": {
@@ -175,6 +147,7 @@
 "otu342381": {
 "^ot:originalLabel": "Sternaspidae", 
 "^ot:ottId": 932709, 
+"^ot:ottTaxonName": "Sternaspidae", 
 "^ot:treebaseOTUId": "Tl113878"
 }, 
 "otu342382": {
@@ -198,6 +171,7 @@
 "otu342385": {
 "^ot:originalLabel": "Aberrantidae", 
 "^ot:ottId": 376191, 
+"^ot:ottTaxonName": "Aberrantidae", 
 "^ot:treebaseOTUId": "Tl113882"
 }, 
 "otu342386": {
@@ -207,14 +181,15 @@
 "^ot:treebaseOTUId": "Tl113883"
 }, 
 "otu342387": {
-"^ot:altLabel": "Lopadorrhynchidae", 
 "^ot:originalLabel": "Lopadorhynchidae", 
 "^ot:ottId": 305691, 
+"^ot:ottTaxonName": "Lopadorrhynchidae", 
 "^ot:treebaseOTUId": "Tl113884"
 }, 
 "otu342388": {
 "^ot:originalLabel": "Nautiliniellidae", 
 "^ot:ottId": 318070, 
+"^ot:ottTaxonName": "Nautiliniellidae", 
 "^ot:treebaseOTUId": "Tl113885"
 }, 
 "otu342389": {
@@ -226,11 +201,13 @@
 "otu342390": {
 "^ot:originalLabel": "Alciopidae", 
 "^ot:ottId": 19220, 
+"^ot:ottTaxonName": "Alciopidae", 
 "^ot:treebaseOTUId": "Tl113887"
 }, 
 "otu342391": {
 "^ot:originalLabel": "Aeolosomatidae", 
 "^ot:ottId": 327543, 
+"^ot:ottTaxonName": "Aeolosomatidae", 
 "^ot:treebaseOTUId": "Tl113888"
 }, 
 "otu342392": {
@@ -254,11 +231,13 @@
 "otu342395": {
 "^ot:originalLabel": "Pontodoridae", 
 "^ot:ottId": 4985232, 
+"^ot:ottTaxonName": "Pontodoridae", 
 "^ot:treebaseOTUId": "Tl113892"
 }, 
 "otu342396": {
 "^ot:originalLabel": "Ichthyotomidae", 
 "^ot:ottId": 4980033, 
+"^ot:ottTaxonName": "Ichthyotomidae", 
 "^ot:treebaseOTUId": "Tl113893"
 }, 
 "otu342397": {
@@ -288,6 +267,7 @@
 "otu342401": {
 "^ot:originalLabel": "Nerillidae", 
 "^ot:ottId": 911577, 
+"^ot:ottTaxonName": "Nerillidae", 
 "^ot:treebaseOTUId": "Tl113898"
 }, 
 "otu342402": {
@@ -305,11 +285,13 @@
 "otu342404": {
 "^ot:originalLabel": "Typhloscolecidae", 
 "^ot:ottId": 1026240, 
+"^ot:ottTaxonName": "Typhloscolecidae", 
 "^ot:treebaseOTUId": "Tl113901"
 }, 
 "otu342405": {
 "^ot:originalLabel": "Poeobiidae", 
 "^ot:ottId": 523515, 
+"^ot:ottTaxonName": "Poeobiidae", 
 "^ot:treebaseOTUId": "Tl113902"
 }, 
 "otu342406": {
@@ -321,6 +303,7 @@
 "otu342407": {
 "^ot:originalLabel": "Ctenodrilidae", 
 "^ot:ottId": 871441, 
+"^ot:ottTaxonName": "Ctenodrilidae", 
 "^ot:treebaseOTUId": "Tl113904"
 }, 
 "otu342408": {
@@ -354,6 +337,7 @@
 "otu342413": {
 "^ot:originalLabel": "Hartmaniellidae", 
 "^ot:ottId": 4980028, 
+"^ot:ottTaxonName": "Hartmaniellidae", 
 "^ot:treebaseOTUId": "Tl113910"
 }, 
 "otu342414": {
@@ -407,12 +391,11 @@
 "otu342422": {
 "^ot:originalLabel": "Psammodrilidae", 
 "^ot:ottId": 4988234, 
+"^ot:ottTaxonName": "Psammodrilidae", 
 "^ot:treebaseOTUId": "Tl113919"
 }, 
 "otu342423": {
 "^ot:originalLabel": "Lacydoniidae", 
-"^ot:ottId": 4983755, 
-"^ot:ottTaxonName": "Lacydoniidae", 
 "^ot:treebaseOTUId": "Tl113920"
 }, 
 "otu342424": {
@@ -436,6 +419,7 @@
 "otu342427": {
 "^ot:originalLabel": "Fauveliopsidae", 
 "^ot:ottId": 310146, 
+"^ot:ottTaxonName": "Fauveliopsidae", 
 "^ot:treebaseOTUId": "Tl113924"
 }, 
 "otu342428": {
@@ -459,6 +443,7 @@
 "otu342431": {
 "^ot:originalLabel": "Potamodrilidae", 
 "^ot:ottId": 618826, 
+"^ot:ottTaxonName": "Potamodrilidae", 
 "^ot:treebaseOTUId": "Tl113928"
 }, 
 "otu342432": {
@@ -470,6 +455,7 @@
 "otu342433": {
 "^ot:originalLabel": "Oenonidae", 
 "^ot:ottId": 67118, 
+"^ot:ottTaxonName": "Oenonidae", 
 "^ot:treebaseOTUId": "Tl113930"
 }, 
 "otu342434": {
@@ -529,6 +515,7 @@
 "otu342443": {
 "^ot:originalLabel": "Iospilidae", 
 "^ot:ottId": 4985223, 
+"^ot:ottTaxonName": "Iospilidae", 
 "^ot:treebaseOTUId": "Tl113940"
 }, 
 "otu342444": {
@@ -540,6 +527,7 @@
 "otu342445": {
 "^ot:originalLabel": "Parergodrilidae", 
 "^ot:ottId": 638598, 
+"^ot:ottTaxonName": "Parergodrilidae", 
 "^ot:treebaseOTUId": "Tl113942"
 }, 
 "otu342446": {
@@ -561,19 +549,21 @@
 "^ot:treebaseOTUId": "Tl113945"
 }, 
 "otu342449": {
-"^ot:altLabel": "Myzostomida", 
 "^ot:originalLabel": "Myzostomidae", 
 "^ot:ottId": 260040, 
+"^ot:ottTaxonName": "Myzostomida", 
 "^ot:treebaseOTUId": "Tl113946"
 }, 
 "otu342450": {
 "^ot:originalLabel": "Tomopteridae", 
 "^ot:ottId": 798210, 
+"^ot:ottTaxonName": "Tomopteridae", 
 "^ot:treebaseOTUId": "Tl113947"
 }, 
 "otu342451": {
 "^ot:originalLabel": "Diurodrilidae", 
 "^ot:ottId": 301584, 
+"^ot:ottTaxonName": "Diurodrilidae", 
 "^ot:treebaseOTUId": "Tl113948"
 }, 
 "otu342452": {
@@ -596,8 +586,6 @@
 }, 
 "otu342455": {
 "^ot:originalLabel": "Protodriloididae", 
-"^ot:ottId": 4985547, 
-"^ot:ottTaxonName": "Protodriloididae", 
 "^ot:treebaseOTUId": "Tl113952"
 }, 
 "otu342456": {
@@ -633,9 +621,15 @@
 "treeById": {
 "tree5089": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "Fig. 3B", 
 "^ot:inGroupClade": "node881537", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node881535", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node881535": {
 "edge881536": {
@@ -1537,10 +1531,17 @@
 }, 
 "tree5090": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "Fig. 3A", 
 "^ot:inGroupClade": "node881665", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node881663", 
-"^ot:tag": "delete me", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [
+"delete me"
+], 
 "edgeBySourceId": {
 "node881663": {
 "edge881664": {
@@ -2358,9 +2359,15 @@
 }, 
 "tree5091": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "Figs. 4,5,7,8", 
 "^ot:inGroupClade": "node881783", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node881779", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node881779": {
 "edge881780": {
@@ -3283,10 +3290,15 @@
 }, 
 "tree6403": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "Fig 3 MP", 
 "^ot:inGroupClade": "node1114009", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node1114008", 
-"^ot:tag": "choose me", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node1114008": {
 "edge1114009": {

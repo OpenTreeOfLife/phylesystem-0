@@ -19,48 +19,11 @@
 "@id": "peyotl-validator", 
 "@name": "validate_ot_nexson.py", 
 "@url": "https://github.com/OpenTreeOfLife/peyotl", 
-"@version": "0.0.3a", 
+"@version": "0.0.4a", 
 "invocation": {
-"checksPerformed": [
-"MISSING_MANDATORY_KEY", 
-"MISSING_OPTIONAL_KEY", 
-"UNRECOGNIZED_KEY", 
-"MISSING_LIST_EXPECTED", 
-"DUPLICATING_SINGLETON_KEY", 
-"REFERENCED_ID_NOT_FOUND", 
-"REPEATED_ID", 
-"REPEATED_OTU", 
-"MULTIPLE_ROOT_NODES", 
-"NO_ROOT_NODE", 
-"MULTIPLE_EDGES_FOR_NODES", 
-"CYCLE_DETECTED", 
-"DISCONNECTED_GRAPH_DETECTED", 
-"INCORRECT_ROOT_NODE_LABEL", 
-"TIP_WITHOUT_OTU", 
-"TIP_WITHOUT_OTT_ID", 
-"MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
-"NON_MONOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
-"INVALID_PROPERTY_VALUE", 
-"PROPERTY_VALUE_NOT_USEFUL", 
-"UNRECOGNIZED_PROPERTY_VALUE", 
-"MULTIPLE_TREES", 
-"UNRECOGNIZED_TAG", 
-"CONFLICTING_PROPERTY_VALUES", 
-"NO_TREES", 
-"DEPRECATED_PROPERTY", 
-"UNPARSEABLE_META", 
-"UNREACHABLE_NODE", 
-"INCORRECT_VALUE_TYPE", 
-"MISSING_CRUCIAL_CONTENT"
-], 
 "commandLine": [
 "--embed", 
-"--agent-only", 
-"-e", 
-"../mig-phyelesystem-scratch/2469/validation.json", 
-"-o", 
-"../mig-phyelesystem-scratch/2469/final.json", 
-"../mig-phyelesystem-scratch/2469/v1.2.1-2469.json"
+"--agent-only"
 ], 
 "otherProperty": [
 {
@@ -76,12 +39,19 @@
 }
 ]
 }, 
+"^ot:annotationEvents": {
+"annotation": []
+}, 
+"^ot:candidateTreeForSynthesis": [], 
 "^ot:curatorName": "Romina Gazis", 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S10023"
 }, 
 "^ot:focalClade": 708974, 
 "^ot:focalCladeOTTTaxonName": "Mycosphaerella", 
+"^ot:messages": {
+"message": []
+}, 
 "^ot:otusElementOrder": [
 "otus2469"
 ], 
@@ -91,6 +61,7 @@
 }, 
 "^ot:studyPublicationReference": "Jackson S., Maxwell A., Burgess T., Dell B., & Hardy G. 2006. Mycosphaerella species from Eucalyptus in Western Australia. Forest Ecology and Management, 255: 3931-3937.", 
 "^ot:studyYear": 2006, 
+"^ot:tag": [], 
 "^ot:treesElementOrder": [
 "trees2469"
 ], 
@@ -105,6 +76,8 @@
 }, 
 "otu358405": {
 "^ot:originalLabel": "Mycosphaerella suttoniae AF045519", 
+"^ot:ottId": 316161, 
+"^ot:ottTaxonName": "Mycosphaerella suttonii", 
 "^ot:treebaseOTUId": "Tl254186"
 }, 
 "otu358406": {
@@ -151,6 +124,8 @@
 }, 
 "otu358413": {
 "^ot:originalLabel": "Mycosphaerella suttoniae AF309621", 
+"^ot:ottId": 316161, 
+"^ot:ottTaxonName": "Mycosphaerella suttonii", 
 "^ot:treebaseOTUId": "Tl254194"
 }, 
 "otu358414": {
@@ -197,6 +172,8 @@
 }, 
 "otu358421": {
 "^ot:originalLabel": "Mycosphaerella suttoniae DQ632703", 
+"^ot:ottId": 316161, 
+"^ot:ottTaxonName": "Mycosphaerella suttonii", 
 "^ot:treebaseOTUId": "Tl254202"
 }, 
 "otu358422": {
@@ -235,14 +212,20 @@
 }, 
 "otu358428": {
 "^ot:originalLabel": "Mycosphaerella africana AF173314", 
+"^ot:ottId": 721730, 
+"^ot:ottTaxonName": "Mycosphaerella africana", 
 "^ot:treebaseOTUId": "Tl254209"
 }, 
 "otu358429": {
 "^ot:originalLabel": "Mycosphaerella suttoniae AF173306", 
+"^ot:ottId": 316161, 
+"^ot:ottTaxonName": "Mycosphaerella suttonii", 
 "^ot:treebaseOTUId": "Tl254210"
 }, 
 "otu358430": {
 "^ot:originalLabel": "Mycosphaerella suttoniae DQ632704", 
+"^ot:ottId": 316161, 
+"^ot:ottTaxonName": "Mycosphaerella suttonii", 
 "^ot:treebaseOTUId": "Tl254211"
 }, 
 "otu358431": {
@@ -263,6 +246,8 @@
 }, 
 "otu358434": {
 "^ot:originalLabel": "Mycosphaerella suttoniae DQ787326", 
+"^ot:ottId": 316161, 
+"^ot:ottTaxonName": "Mycosphaerella suttonii", 
 "^ot:treebaseOTUId": "Tl254215"
 }, 
 "otu358435": {
@@ -349,6 +334,8 @@
 }, 
 "otu358449": {
 "^ot:originalLabel": "Mycosphaerella suttoniae DQ632707", 
+"^ot:ottId": 316161, 
+"^ot:ottTaxonName": "Mycosphaerella suttonii", 
 "^ot:treebaseOTUId": "Tl254230"
 }, 
 "otu358450": {
@@ -388,9 +375,15 @@
 "treeById": {
 "tree5311": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "MP, ITS", 
 "^ot:inGroupClade": "node922354", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node922352", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node922352": {
 "edge922353": {
@@ -1026,9 +1019,15 @@
 }, 
 "tree5312": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "ITS BS", 
 "^ot:inGroupClade": "node922444", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node922442", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node922442": {
 "edge922443": {

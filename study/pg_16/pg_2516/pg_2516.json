@@ -19,48 +19,11 @@
 "@id": "peyotl-validator", 
 "@name": "validate_ot_nexson.py", 
 "@url": "https://github.com/OpenTreeOfLife/peyotl", 
-"@version": "0.0.3a", 
+"@version": "0.0.4a", 
 "invocation": {
-"checksPerformed": [
-"MISSING_MANDATORY_KEY", 
-"MISSING_OPTIONAL_KEY", 
-"UNRECOGNIZED_KEY", 
-"MISSING_LIST_EXPECTED", 
-"DUPLICATING_SINGLETON_KEY", 
-"REFERENCED_ID_NOT_FOUND", 
-"REPEATED_ID", 
-"REPEATED_OTU", 
-"MULTIPLE_ROOT_NODES", 
-"NO_ROOT_NODE", 
-"MULTIPLE_EDGES_FOR_NODES", 
-"CYCLE_DETECTED", 
-"DISCONNECTED_GRAPH_DETECTED", 
-"INCORRECT_ROOT_NODE_LABEL", 
-"TIP_WITHOUT_OTU", 
-"TIP_WITHOUT_OTT_ID", 
-"MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
-"NON_MONOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
-"INVALID_PROPERTY_VALUE", 
-"PROPERTY_VALUE_NOT_USEFUL", 
-"UNRECOGNIZED_PROPERTY_VALUE", 
-"MULTIPLE_TREES", 
-"UNRECOGNIZED_TAG", 
-"CONFLICTING_PROPERTY_VALUES", 
-"NO_TREES", 
-"DEPRECATED_PROPERTY", 
-"UNPARSEABLE_META", 
-"UNREACHABLE_NODE", 
-"INCORRECT_VALUE_TYPE", 
-"MISSING_CRUCIAL_CONTENT"
-], 
 "commandLine": [
 "--embed", 
-"--agent-only", 
-"-e", 
-"../mig-phyelesystem-scratch/2516/validation.json", 
-"-o", 
-"../mig-phyelesystem-scratch/2516/final.json", 
-"../mig-phyelesystem-scratch/2516/v1.2.1-2516.json"
+"--agent-only"
 ], 
 "otherProperty": [
 {
@@ -76,12 +39,19 @@
 }
 ]
 }, 
+"^ot:annotationEvents": {
+"annotation": []
+}, 
+"^ot:candidateTreeForSynthesis": [], 
 "^ot:curatorName": "Chris Owen", 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S1287"
 }, 
 "^ot:focalClade": 632179, 
 "^ot:focalCladeOTTTaxonName": "Arthropoda", 
+"^ot:messages": {
+"message": []
+}, 
 "^ot:otusElementOrder": [
 "otus2516"
 ], 
@@ -89,8 +59,9 @@
 "^ot:studyPublication": {
 "@href": "http://dx.doi.org/10.1080/10635150490888877"
 }, 
-"^ot:studyPublicationReference": "Pisani D. 2004. Identifying and Removing Fast Evolving Sites Using Compatibility Analysis: An Example from the Arthropoda. Systematic Biology, 53: 983-994.", 
+"^ot:studyPublicationReference": "Pisani D. 2004. Identifying and removing fast evolving sites using compatibility analysis: an example from the Arthropoda. Systematic Biology 53 (6): 983-994.", 
 "^ot:studyYear": 2004, 
+"^ot:tag": [], 
 "^ot:treesElementOrder": [
 "trees2516"
 ], 
@@ -111,6 +82,8 @@
 }, 
 "otu362538": {
 "^ot:originalLabel": "Homo sapiens", 
+"^ot:ottId": 770315, 
+"^ot:ottTaxonName": "Homo sapiens", 
 "^ot:treebaseOTUId": "Tl154466"
 }, 
 "otu362539": {
@@ -384,7 +357,6 @@
 "trees2516": {
 "@otus": "otus2516", 
 "^ot:treeElementOrder": [
-"tree5422", 
 "tree5423", 
 "tree5424", 
 "tree5425", 
@@ -392,622 +364,17 @@
 "tree6440"
 ], 
 "treeById": {
-"tree5422": {
-"@xsi:type": "nex:FloatTree", 
-"^ot:curatedType": "Fig. 1- ML", 
-"^ot:inGroupClade": "node932597", 
-"^ot:rootNodeId": "node932591", 
-"^ot:tag": "delete me", 
-"edgeBySourceId": {
-"node932591": {
-"edge932592": {
-"@source": "node932591", 
-"@target": "node932592"
-}, 
-"edge932597": {
-"@source": "node932591", 
-"@target": "node932597"
-}
-}, 
-"node932592": {
-"edge932593": {
-"@source": "node932592", 
-"@target": "node932593"
-}, 
-"edge932594": {
-"@source": "node932592", 
-"@target": "node932594"
-}
-}, 
-"node932594": {
-"edge932595": {
-"@source": "node932594", 
-"@target": "node932595"
-}, 
-"edge932596": {
-"@source": "node932594", 
-"@target": "node932596"
-}
-}, 
-"node932597": {
-"edge932598": {
-"@source": "node932597", 
-"@target": "node932598"
-}, 
-"edge932657": {
-"@source": "node932597", 
-"@target": "node932657"
-}
-}, 
-"node932598": {
-"edge932599": {
-"@source": "node932598", 
-"@target": "node932599"
-}, 
-"edge932644": {
-"@source": "node932598", 
-"@target": "node932644"
-}
-}, 
-"node932599": {
-"edge932600": {
-"@source": "node932599", 
-"@target": "node932600"
-}, 
-"edge932641": {
-"@source": "node932599", 
-"@target": "node932641"
-}
-}, 
-"node932600": {
-"edge932601": {
-"@source": "node932600", 
-"@target": "node932601"
-}, 
-"edge932636": {
-"@source": "node932600", 
-"@target": "node932636"
-}
-}, 
-"node932601": {
-"edge932602": {
-"@source": "node932601", 
-"@target": "node932602"
-}, 
-"edge932623": {
-"@source": "node932601", 
-"@target": "node932623"
-}
-}, 
-"node932602": {
-"edge932603": {
-"@source": "node932602", 
-"@target": "node932603"
-}, 
-"edge932616": {
-"@source": "node932602", 
-"@target": "node932616"
-}
-}, 
-"node932603": {
-"edge932604": {
-"@source": "node932603", 
-"@target": "node932604"
-}, 
-"edge932613": {
-"@source": "node932603", 
-"@target": "node932613"
-}
-}, 
-"node932604": {
-"edge932605": {
-"@source": "node932604", 
-"@target": "node932605"
-}, 
-"edge932612": {
-"@source": "node932604", 
-"@target": "node932612"
-}
-}, 
-"node932605": {
-"edge932606": {
-"@source": "node932605", 
-"@target": "node932606"
-}, 
-"edge932607": {
-"@source": "node932605", 
-"@target": "node932607"
-}, 
-"edge932610": {
-"@source": "node932605", 
-"@target": "node932610"
-}, 
-"edge932611": {
-"@source": "node932605", 
-"@target": "node932611"
-}
-}, 
-"node932607": {
-"edge932608": {
-"@source": "node932607", 
-"@target": "node932608"
-}, 
-"edge932609": {
-"@source": "node932607", 
-"@target": "node932609"
-}
-}, 
-"node932613": {
-"edge932614": {
-"@source": "node932613", 
-"@target": "node932614"
-}, 
-"edge932615": {
-"@source": "node932613", 
-"@target": "node932615"
-}
-}, 
-"node932616": {
-"edge932617": {
-"@source": "node932616", 
-"@target": "node932617"
-}, 
-"edge932622": {
-"@source": "node932616", 
-"@target": "node932622"
-}
-}, 
-"node932617": {
-"edge932618": {
-"@source": "node932617", 
-"@target": "node932618"
-}, 
-"edge932621": {
-"@source": "node932617", 
-"@target": "node932621"
-}
-}, 
-"node932618": {
-"edge932619": {
-"@source": "node932618", 
-"@target": "node932619"
-}, 
-"edge932620": {
-"@source": "node932618", 
-"@target": "node932620"
-}
-}, 
-"node932623": {
-"edge932624": {
-"@source": "node932623", 
-"@target": "node932624"
-}, 
-"edge932635": {
-"@source": "node932623", 
-"@target": "node932635"
-}
-}, 
-"node932624": {
-"edge932625": {
-"@source": "node932624", 
-"@target": "node932625"
-}, 
-"edge932634": {
-"@source": "node932624", 
-"@target": "node932634"
-}
-}, 
-"node932625": {
-"edge932626": {
-"@source": "node932625", 
-"@target": "node932626"
-}, 
-"edge932631": {
-"@source": "node932625", 
-"@target": "node932631"
-}, 
-"edge932632": {
-"@source": "node932625", 
-"@target": "node932632"
-}, 
-"edge932633": {
-"@source": "node932625", 
-"@target": "node932633"
-}
-}, 
-"node932626": {
-"edge932627": {
-"@source": "node932626", 
-"@target": "node932627"
-}, 
-"edge932628": {
-"@source": "node932626", 
-"@target": "node932628"
-}
-}, 
-"node932628": {
-"edge932629": {
-"@source": "node932628", 
-"@target": "node932629"
-}, 
-"edge932630": {
-"@source": "node932628", 
-"@target": "node932630"
-}
-}, 
-"node932636": {
-"edge932637": {
-"@source": "node932636", 
-"@target": "node932637"
-}, 
-"edge932638": {
-"@source": "node932636", 
-"@target": "node932638"
-}
-}, 
-"node932638": {
-"edge932639": {
-"@source": "node932638", 
-"@target": "node932639"
-}, 
-"edge932640": {
-"@source": "node932638", 
-"@target": "node932640"
-}
-}, 
-"node932641": {
-"edge932642": {
-"@source": "node932641", 
-"@target": "node932642"
-}, 
-"edge932643": {
-"@source": "node932641", 
-"@target": "node932643"
-}
-}, 
-"node932644": {
-"edge932645": {
-"@source": "node932644", 
-"@target": "node932645"
-}, 
-"edge932654": {
-"@source": "node932644", 
-"@target": "node932654"
-}, 
-"edge932655": {
-"@source": "node932644", 
-"@target": "node932655"
-}, 
-"edge932656": {
-"@source": "node932644", 
-"@target": "node932656"
-}
-}, 
-"node932645": {
-"edge932646": {
-"@source": "node932645", 
-"@target": "node932646"
-}, 
-"edge932651": {
-"@source": "node932645", 
-"@target": "node932651"
-}
-}, 
-"node932646": {
-"edge932647": {
-"@source": "node932646", 
-"@target": "node932647"
-}, 
-"edge932648": {
-"@source": "node932646", 
-"@target": "node932648"
-}
-}, 
-"node932648": {
-"edge932649": {
-"@source": "node932648", 
-"@target": "node932649"
-}, 
-"edge932650": {
-"@source": "node932648", 
-"@target": "node932650"
-}
-}, 
-"node932651": {
-"edge932652": {
-"@source": "node932651", 
-"@target": "node932652"
-}, 
-"edge932653": {
-"@source": "node932651", 
-"@target": "node932653"
-}
-}, 
-"node932657": {
-"edge932658": {
-"@source": "node932657", 
-"@target": "node932658"
-}, 
-"edge932674": {
-"@source": "node932657", 
-"@target": "node932674"
-}
-}, 
-"node932658": {
-"edge932659": {
-"@source": "node932658", 
-"@target": "node932659"
-}, 
-"edge932673": {
-"@source": "node932658", 
-"@target": "node932673"
-}
-}, 
-"node932659": {
-"edge932660": {
-"@source": "node932659", 
-"@target": "node932660"
-}, 
-"edge932670": {
-"@source": "node932659", 
-"@target": "node932670"
-}
-}, 
-"node932660": {
-"edge932661": {
-"@source": "node932660", 
-"@target": "node932661"
-}, 
-"edge932669": {
-"@source": "node932660", 
-"@target": "node932669"
-}
-}, 
-"node932661": {
-"edge932662": {
-"@source": "node932661", 
-"@target": "node932662"
-}, 
-"edge932667": {
-"@source": "node932661", 
-"@target": "node932667"
-}, 
-"edge932668": {
-"@source": "node932661", 
-"@target": "node932668"
-}
-}, 
-"node932662": {
-"edge932663": {
-"@source": "node932662", 
-"@target": "node932663"
-}, 
-"edge932666": {
-"@source": "node932662", 
-"@target": "node932666"
-}
-}, 
-"node932663": {
-"edge932664": {
-"@source": "node932663", 
-"@target": "node932664"
-}, 
-"edge932665": {
-"@source": "node932663", 
-"@target": "node932665"
-}
-}, 
-"node932670": {
-"edge932671": {
-"@source": "node932670", 
-"@target": "node932671"
-}, 
-"edge932672": {
-"@source": "node932670", 
-"@target": "node932672"
-}
-}, 
-"node932674": {
-"edge932675": {
-"@source": "node932674", 
-"@target": "node932675"
-}, 
-"edge932676": {
-"@source": "node932674", 
-"@target": "node932676"
-}
-}
-}, 
-"nodeById": {
-"node932591": {
-"@root": true
-}, 
-"node932592": {}, 
-"node932593": {
-"@otu": "otu362538"
-}, 
-"node932594": {}, 
-"node932595": {
-"@otu": "otu362540"
-}, 
-"node932596": {
-"@otu": "otu362580"
-}, 
-"node932597": {}, 
-"node932598": {}, 
-"node932599": {}, 
-"node932600": {}, 
-"node932601": {}, 
-"node932602": {}, 
-"node932603": {}, 
-"node932604": {}, 
-"node932605": {}, 
-"node932606": {
-"@otu": "otu362581"
-}, 
-"node932607": {}, 
-"node932608": {
-"@otu": "otu362571"
-}, 
-"node932609": {
-"@otu": "otu362543"
-}, 
-"node932610": {
-"@otu": "otu362582"
-}, 
-"node932611": {
-"@otu": "otu362557"
-}, 
-"node932612": {
-"@otu": "otu362544"
-}, 
-"node932613": {}, 
-"node932614": {
-"@otu": "otu362537"
-}, 
-"node932615": {
-"@otu": "otu362579"
-}, 
-"node932616": {}, 
-"node932617": {}, 
-"node932618": {}, 
-"node932619": {
-"@otu": "otu362575"
-}, 
-"node932620": {
-"@otu": "otu362552"
-}, 
-"node932621": {
-"@otu": "otu362556"
-}, 
-"node932622": {
-"@otu": "otu362567"
-}, 
-"node932623": {}, 
-"node932624": {}, 
-"node932625": {}, 
-"node932626": {}, 
-"node932627": {
-"@otu": "otu362576"
-}, 
-"node932628": {}, 
-"node932629": {
-"@otu": "otu362553"
-}, 
-"node932630": {
-"@otu": "otu362560"
-}, 
-"node932631": {
-"@otu": "otu362536"
-}, 
-"node932632": {
-"@otu": "otu362569"
-}, 
-"node932633": {
-"@otu": "otu362558"
-}, 
-"node932634": {
-"@otu": "otu362551"
-}, 
-"node932635": {
-"@otu": "otu362573"
-}, 
-"node932636": {}, 
-"node932637": {
-"@otu": "otu362559"
-}, 
-"node932638": {}, 
-"node932639": {
-"@otu": "otu362548"
-}, 
-"node932640": {
-"@otu": "otu362577"
-}, 
-"node932641": {}, 
-"node932642": {
-"@otu": "otu362574"
-}, 
-"node932643": {
-"@otu": "otu362554"
-}, 
-"node932644": {}, 
-"node932645": {}, 
-"node932646": {}, 
-"node932647": {
-"@otu": "otu362568"
-}, 
-"node932648": {}, 
-"node932649": {
-"@otu": "otu362578"
-}, 
-"node932650": {
-"@otu": "otu362566"
-}, 
-"node932651": {}, 
-"node932652": {
-"@otu": "otu362562"
-}, 
-"node932653": {
-"@otu": "otu362539"
-}, 
-"node932654": {
-"@otu": "otu362563"
-}, 
-"node932655": {
-"@otu": "otu362555"
-}, 
-"node932656": {
-"@otu": "otu362547"
-}, 
-"node932657": {}, 
-"node932658": {}, 
-"node932659": {}, 
-"node932660": {}, 
-"node932661": {}, 
-"node932662": {}, 
-"node932663": {}, 
-"node932664": {
-"@otu": "otu362546"
-}, 
-"node932665": {
-"@otu": "otu362565"
-}, 
-"node932666": {
-"@otu": "otu362550"
-}, 
-"node932667": {
-"@otu": "otu362549"
-}, 
-"node932668": {
-"@otu": "otu362572"
-}, 
-"node932669": {
-"@otu": "otu362564"
-}, 
-"node932670": {}, 
-"node932671": {
-"@otu": "otu362545"
-}, 
-"node932672": {
-"@otu": "otu362570"
-}, 
-"node932673": {
-"@otu": "otu362561"
-}, 
-"node932674": {}, 
-"node932675": {
-"@otu": "otu362542"
-}, 
-"node932676": {
-"@otu": "otu362541"
-}
-}
-}, 
 "tree5423": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "Fig. 2- NJ", 
 "^ot:inGroupClade": "node932683", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node932677", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node932677": {
 "edge932678": {
@@ -1664,9 +1031,15 @@
 }, 
 "tree5424": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "Fig. 3- NJ", 
 "^ot:inGroupClade": "node932776", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node932770", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node932770": {
 "edge932771": {
@@ -2323,9 +1696,15 @@
 }, 
 "tree5425": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "Fig. 4- NJ", 
 "^ot:inGroupClade": "node932869", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node932863", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node932863": {
 "edge932864": {
@@ -2982,9 +2361,15 @@
 }, 
 "tree5426": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "Fig. 5- NJ", 
 "^ot:inGroupClade": "node932962", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node932956", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node932956": {
 "edge932957": {
@@ -3641,10 +3026,17 @@
 }, 
 "tree6440": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "Fig. 1 ML", 
 "^ot:inGroupClade": "node1117617", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node1117611", 
-"^ot:tag": "choose me", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [
+"choose me"
+], 
 "edgeBySourceId": {
 "node1117611": {
 "edge1117612": {

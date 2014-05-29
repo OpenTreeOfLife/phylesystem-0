@@ -19,48 +19,11 @@
 "@id": "peyotl-validator", 
 "@name": "validate_ot_nexson.py", 
 "@url": "https://github.com/OpenTreeOfLife/peyotl", 
-"@version": "0.0.3a", 
+"@version": "0.0.4a", 
 "invocation": {
-"checksPerformed": [
-"MISSING_MANDATORY_KEY", 
-"MISSING_OPTIONAL_KEY", 
-"UNRECOGNIZED_KEY", 
-"MISSING_LIST_EXPECTED", 
-"DUPLICATING_SINGLETON_KEY", 
-"REFERENCED_ID_NOT_FOUND", 
-"REPEATED_ID", 
-"REPEATED_OTU", 
-"MULTIPLE_ROOT_NODES", 
-"NO_ROOT_NODE", 
-"MULTIPLE_EDGES_FOR_NODES", 
-"CYCLE_DETECTED", 
-"DISCONNECTED_GRAPH_DETECTED", 
-"INCORRECT_ROOT_NODE_LABEL", 
-"TIP_WITHOUT_OTU", 
-"TIP_WITHOUT_OTT_ID", 
-"MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
-"NON_MONOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
-"INVALID_PROPERTY_VALUE", 
-"PROPERTY_VALUE_NOT_USEFUL", 
-"UNRECOGNIZED_PROPERTY_VALUE", 
-"MULTIPLE_TREES", 
-"UNRECOGNIZED_TAG", 
-"CONFLICTING_PROPERTY_VALUES", 
-"NO_TREES", 
-"DEPRECATED_PROPERTY", 
-"UNPARSEABLE_META", 
-"UNREACHABLE_NODE", 
-"INCORRECT_VALUE_TYPE", 
-"MISSING_CRUCIAL_CONTENT"
-], 
 "commandLine": [
 "--embed", 
-"--agent-only", 
-"-e", 
-"../mig-phyelesystem-scratch/1751/validation.json", 
-"-o", 
-"../mig-phyelesystem-scratch/1751/final.json", 
-"../mig-phyelesystem-scratch/1751/v1.2.1-1751.json"
+"--agent-only"
 ], 
 "otherProperty": [
 {
@@ -76,12 +39,17 @@
 }
 ]
 }, 
+"^ot:annotationEvents": {
+"annotation": []
+}, 
+"^ot:candidateTreeForSynthesis": [], 
 "^ot:curatorName": "Romina Gazis", 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S836"
 }, 
-"^ot:focalClade": 868020, 
-"^ot:focalCladeOTTTaxonName": "Phomopsis", 
+"^ot:messages": {
+"message": []
+}, 
 "^ot:otusElementOrder": [
 "otus1751"
 ], 
@@ -91,6 +59,7 @@
 }, 
 "^ot:studyPublicationReference": "Farr D., Castlebury L., & Pardo-schultheiss R. 1999. Phomopsis amygdali causes peach shoot blight of cultivated peach trees in the southeastern United States. Mycologia, 91(6): 1008-1015.", 
 "^ot:studyYear": 1999, 
+"^ot:tag": [], 
 "^ot:treesElementOrder": [
 "trees1751"
 ], 
@@ -99,32 +68,22 @@
 "otuById": {
 "otu273648": {
 "^ot:originalLabel": "Phomopsis sp FAU500", 
-"^ot:ottId": 712313, 
-"^ot:ottTaxonName": "Phomopsis", 
 "^ot:treebaseOTUId": "Tl129318"
 }, 
 "otu273649": {
 "^ot:originalLabel": "Diaporthe phaseolorum ST-3", 
-"^ot:ottId": 737678, 
-"^ot:ottTaxonName": "Diaporthe phaseolorum", 
 "^ot:treebaseOTUId": "Tl129320"
 }, 
 "otu273650": {
 "^ot:originalLabel": "Diaporthe phaseolorum ST-2", 
-"^ot:ottId": 737678, 
-"^ot:ottTaxonName": "Diaporthe phaseolorum", 
 "^ot:treebaseOTUId": "Tl129321"
 }, 
 "otu273651": {
 "^ot:originalLabel": "Phomopsis sp FAU532", 
-"^ot:ottId": 712313, 
-"^ot:ottTaxonName": "Phomopsis", 
 "^ot:treebaseOTUId": "Tl129322"
 }, 
 "otu273652": {
 "^ot:originalLabel": "Phomopsis sp FAU1053", 
-"^ot:ottId": 712313, 
-"^ot:ottTaxonName": "Phomopsis", 
 "^ot:treebaseOTUId": "Tl129323"
 }, 
 "otu273653": {
@@ -135,80 +94,54 @@
 }, 
 "otu273654": {
 "^ot:originalLabel": "Phomopsis sp FAU445", 
-"^ot:ottId": 712313, 
-"^ot:ottTaxonName": "Phomopsis", 
 "^ot:treebaseOTUId": "Tl129326"
 }, 
 "otu273655": {
 "^ot:originalLabel": "Phomopsis sp FAU1068", 
-"^ot:ottId": 712313, 
-"^ot:ottTaxonName": "Phomopsis", 
 "^ot:treebaseOTUId": "Tl129328"
 }, 
 "otu273656": {
 "^ot:originalLabel": "Phomopsis sp FAU600", 
-"^ot:ottId": 712313, 
-"^ot:ottTaxonName": "Phomopsis", 
 "^ot:treebaseOTUId": "Tl129329"
 }, 
 "otu273657": {
 "^ot:originalLabel": "Phomopsis sp FAU453", 
-"^ot:ottId": 712313, 
-"^ot:ottTaxonName": "Phomopsis", 
 "^ot:treebaseOTUId": "Tl129331"
 }, 
 "otu273658": {
 "^ot:originalLabel": "Diaporthe phaseolorum SW93-13", 
-"^ot:ottId": 737678, 
-"^ot:ottTaxonName": "Diaporthe phaseolorum", 
 "^ot:treebaseOTUId": "Tl129332"
 }, 
 "otu273659": {
 "^ot:originalLabel": "Diaporthe phaseolorum FAO126", 
-"^ot:ottId": 737678, 
-"^ot:ottTaxonName": "Diaporthe phaseolorum", 
 "^ot:treebaseOTUId": "Tl129333"
 }, 
 "otu273660": {
 "^ot:originalLabel": "Phomopsis sp FAU624", 
-"^ot:ottId": 712313, 
-"^ot:ottTaxonName": "Phomopsis", 
 "^ot:treebaseOTUId": "Tl129335"
 }, 
 "otu273661": {
 "^ot:originalLabel": "Phomopsis sp FAU452", 
-"^ot:ottId": 712313, 
-"^ot:ottTaxonName": "Phomopsis", 
 "^ot:treebaseOTUId": "Tl129336"
 }, 
 "otu273662": {
 "^ot:originalLabel": "Phomopsis sp FAU649", 
-"^ot:ottId": 712313, 
-"^ot:ottTaxonName": "Phomopsis", 
 "^ot:treebaseOTUId": "Tl129338"
 }, 
 "otu273663": {
 "^ot:originalLabel": "Phomopsis sp FAU578", 
-"^ot:ottId": 712313, 
-"^ot:ottTaxonName": "Phomopsis", 
 "^ot:treebaseOTUId": "Tl129339"
 }, 
 "otu273664": {
 "^ot:originalLabel": "Phomopsis sp FAU529", 
-"^ot:ottId": 712313, 
-"^ot:ottTaxonName": "Phomopsis", 
 "^ot:treebaseOTUId": "Tl129342"
 }, 
 "otu273665": {
 "^ot:originalLabel": "Phomopsis sp FAU537", 
-"^ot:ottId": 712313, 
-"^ot:ottTaxonName": "Phomopsis", 
 "^ot:treebaseOTUId": "Tl129344"
 }, 
 "otu273666": {
 "^ot:originalLabel": "Phomopsis sp FAU446", 
-"^ot:ottId": 712313, 
-"^ot:ottTaxonName": "Phomopsis", 
 "^ot:treebaseOTUId": "Tl129345"
 }, 
 "otu273667": {
@@ -219,140 +152,94 @@
 }, 
 "otu273668": {
 "^ot:originalLabel": "Phomopsis sp FAU522", 
-"^ot:ottId": 712313, 
-"^ot:ottTaxonName": "Phomopsis", 
 "^ot:treebaseOTUId": "Tl129352"
 }, 
 "otu273669": {
 "^ot:originalLabel": "Phomopsis amygdali FAU1005", 
-"^ot:ottId": 720670, 
-"^ot:ottTaxonName": "Diaporthe amygdali", 
 "^ot:treebaseOTUId": "Tl129353"
 }, 
 "otu273670": {
 "^ot:originalLabel": "Diaporthe phaseolorum 973-B", 
-"^ot:ottId": 737678, 
-"^ot:ottTaxonName": "Diaporthe phaseolorum", 
 "^ot:treebaseOTUId": "Tl129355"
 }, 
 "otu273671": {
 "^ot:originalLabel": "Phomopsis sp FAU572", 
-"^ot:ottId": 712313, 
-"^ot:ottTaxonName": "Phomopsis", 
 "^ot:treebaseOTUId": "Tl129356"
 }, 
 "otu273672": {
 "^ot:originalLabel": "Phomopsis amygdali FAU1052", 
-"^ot:ottId": 720670, 
-"^ot:ottTaxonName": "Diaporthe amygdali", 
 "^ot:treebaseOTUId": "Tl129357"
 }, 
 "otu273673": {
 "^ot:originalLabel": "Diapothe phaseolorum FAO125", 
-"^ot:ottId": 737678, 
-"^ot:ottTaxonName": "Diaporthe phaseolorum", 
 "^ot:treebaseOTUId": "Tl6961"
 }, 
 "otu273674": {
 "^ot:originalLabel": "Phomopsis longicolla 3113", 
-"^ot:ottId": 931953, 
-"^ot:ottTaxonName": "Diaporthe longicolla", 
 "^ot:treebaseOTUId": "Tl6978"
 }, 
 "otu273675": {
 "^ot:originalLabel": "Diaporthe ambigua CMW2489", 
-"^ot:ottId": 263710, 
-"^ot:ottTaxonName": "Diaporthe ambigua", 
 "^ot:treebaseOTUId": "Tl6988"
 }, 
 "otu273676": {
 "^ot:originalLabel": "Phomopsis sp FAU1054", 
-"^ot:ottId": 712313, 
-"^ot:ottTaxonName": "Phomopsis", 
 "^ot:treebaseOTUId": "Tl6989"
 }, 
 "otu273677": {
 "^ot:originalLabel": "Phomopsis sp FAU1056", 
-"^ot:ottId": 712313, 
-"^ot:ottTaxonName": "Phomopsis", 
 "^ot:treebaseOTUId": "Tl6990"
 }, 
 "otu273678": {
 "^ot:originalLabel": "Phomopsis sp FAU1065", 
-"^ot:ottId": 712313, 
-"^ot:ottTaxonName": "Phomopsis", 
 "^ot:treebaseOTUId": "Tl6991"
 }, 
 "otu273679": {
 "^ot:originalLabel": "Phomopsis sp FAU1058", 
-"^ot:ottId": 712313, 
-"^ot:ottTaxonName": "Phomopsis", 
 "^ot:treebaseOTUId": "Tl6992"
 }, 
 "otu273680": {
 "^ot:originalLabel": "Phomopsis sp FAU1005", 
-"^ot:ottId": 712313, 
-"^ot:ottTaxonName": "Phomopsis", 
 "^ot:treebaseOTUId": "Tl6993"
 }, 
 "otu273681": {
 "^ot:originalLabel": "Phomopsis sp FAU1069", 
-"^ot:ottId": 712313, 
-"^ot:ottTaxonName": "Phomopsis", 
 "^ot:treebaseOTUId": "Tl6994"
 }, 
 "otu273682": {
 "^ot:originalLabel": "Phomopsis sp FAU1072", 
-"^ot:ottId": 712313, 
-"^ot:ottTaxonName": "Phomopsis", 
 "^ot:treebaseOTUId": "Tl6995"
 }, 
 "otu273683": {
 "^ot:originalLabel": "Phomopsis sp FAU1057", 
-"^ot:ottId": 712313, 
-"^ot:ottTaxonName": "Phomopsis", 
 "^ot:treebaseOTUId": "Tl6996"
 }, 
 "otu273684": {
 "^ot:originalLabel": "Phomopsis sp FAU1038", 
-"^ot:ottId": 712313, 
-"^ot:ottTaxonName": "Phomopsis", 
 "^ot:treebaseOTUId": "Tl6997"
 }, 
 "otu273685": {
 "^ot:originalLabel": "Phomopsis sp FAU1052", 
-"^ot:ottId": 712313, 
-"^ot:ottTaxonName": "Phomopsis", 
 "^ot:treebaseOTUId": "Tl6998"
 }, 
 "otu273686": {
 "^ot:originalLabel": "Phomopsis sp FAU1036", 
-"^ot:ottId": 712313, 
-"^ot:ottTaxonName": "Phomopsis", 
 "^ot:treebaseOTUId": "Tl6999"
 }, 
 "otu273687": {
 "^ot:originalLabel": "Phomopsis sp FAU1042", 
-"^ot:ottId": 712313, 
-"^ot:ottTaxonName": "Phomopsis", 
 "^ot:treebaseOTUId": "Tl7000"
 }, 
 "otu273688": {
 "^ot:originalLabel": "Phomopsis amygdali FAU1070", 
-"^ot:ottId": 720670, 
-"^ot:ottTaxonName": "Diaporthe amygdali", 
 "^ot:treebaseOTUId": "Tl7001"
 }, 
 "otu273689": {
 "^ot:originalLabel": "Phomopsis sp FAU1037", 
-"^ot:ottId": 712313, 
-"^ot:ottTaxonName": "Phomopsis", 
 "^ot:treebaseOTUId": "Tl7002"
 }, 
 "otu273690": {
 "^ot:originalLabel": "Phomopsis sp FAU1039", 
-"^ot:ottId": 712313, 
-"^ot:ottTaxonName": "Phomopsis", 
 "^ot:treebaseOTUId": "Tl7003"
 }
 }
@@ -368,9 +255,15 @@
 "treeById": {
 "tree3527": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "MP, ITS", 
 "^ot:inGroupClade": "node680067", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node680065", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node680065": {
 "edge680066": {
@@ -572,9 +465,15 @@
 }, 
 "tree3528": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "Cladogram, ITS", 
 "^ot:inGroupClade": "node680093", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node680093", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node680093": {
 "edge680094": {

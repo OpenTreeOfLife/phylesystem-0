@@ -19,48 +19,11 @@
 "@id": "peyotl-validator", 
 "@name": "validate_ot_nexson.py", 
 "@url": "https://github.com/OpenTreeOfLife/peyotl", 
-"@version": "0.0.3a", 
+"@version": "0.0.4a", 
 "invocation": {
-"checksPerformed": [
-"MISSING_MANDATORY_KEY", 
-"MISSING_OPTIONAL_KEY", 
-"UNRECOGNIZED_KEY", 
-"MISSING_LIST_EXPECTED", 
-"DUPLICATING_SINGLETON_KEY", 
-"REFERENCED_ID_NOT_FOUND", 
-"REPEATED_ID", 
-"REPEATED_OTU", 
-"MULTIPLE_ROOT_NODES", 
-"NO_ROOT_NODE", 
-"MULTIPLE_EDGES_FOR_NODES", 
-"CYCLE_DETECTED", 
-"DISCONNECTED_GRAPH_DETECTED", 
-"INCORRECT_ROOT_NODE_LABEL", 
-"TIP_WITHOUT_OTU", 
-"TIP_WITHOUT_OTT_ID", 
-"MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
-"NON_MONOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
-"INVALID_PROPERTY_VALUE", 
-"PROPERTY_VALUE_NOT_USEFUL", 
-"UNRECOGNIZED_PROPERTY_VALUE", 
-"MULTIPLE_TREES", 
-"UNRECOGNIZED_TAG", 
-"CONFLICTING_PROPERTY_VALUES", 
-"NO_TREES", 
-"DEPRECATED_PROPERTY", 
-"UNPARSEABLE_META", 
-"UNREACHABLE_NODE", 
-"INCORRECT_VALUE_TYPE", 
-"MISSING_CRUCIAL_CONTENT"
-], 
 "commandLine": [
 "--embed", 
-"--agent-only", 
-"-e", 
-"../mig-phyelesystem-scratch/1059/validation.json", 
-"-o", 
-"../mig-phyelesystem-scratch/1059/final.json", 
-"../mig-phyelesystem-scratch/1059/v1.2.1-1059.json"
+"--agent-only"
 ], 
 "otherProperty": [
 {
@@ -76,12 +39,19 @@
 }
 ]
 }, 
+"^ot:annotationEvents": {
+"annotation": []
+}, 
+"^ot:candidateTreeForSynthesis": [], 
 "^ot:curatorName": "Romina Gazis", 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S10895"
 }, 
 "^ot:focalClade": 439373, 
 "^ot:focalCladeOTTTaxonName": "Ascomycota", 
+"^ot:messages": {
+"message": []
+}, 
 "^ot:otusElementOrder": [
 "otus1059"
 ], 
@@ -91,6 +61,7 @@
 }, 
 "^ot:studyPublicationReference": "Unterseher M., & Schnittler M. 2010. Species richness analysis and ITS rDNA phylogeny revealed the majority of cultivable foliar endophytes from beech (Fagus sylvatica L.). Fungal Ecology, 3: 366-378.", 
 "^ot:studyYear": 2010, 
+"^ot:tag": [], 
 "^ot:treesElementOrder": [
 "trees1059"
 ], 
@@ -149,6 +120,8 @@
 }, 
 "otu217617": {
 "^ot:originalLabel": "Fusarium lateritium DQ655720", 
+"^ot:ottId": 5317100, 
+"^ot:ottTaxonName": "Gibberella baccata", 
 "^ot:treebaseOTUId": "Tl416206"
 }, 
 "otu217618": {
@@ -193,6 +166,8 @@
 }, 
 "otu217625": {
 "^ot:originalLabel": "Podospora anserina AY525772", 
+"^ot:ottId": 155361, 
+"^ot:ottTaxonName": "Podospora pauciseta", 
 "^ot:treebaseOTUId": "Tl416214"
 }, 
 "otu217626": {
@@ -215,6 +190,8 @@
 }, 
 "otu217629": {
 "^ot:originalLabel": "Rhodotorula EU627018", 
+"^ot:ottId": 5222029, 
+"^ot:ottTaxonName": "Rhodotorula", 
 "^ot:treebaseOTUId": "Tl416218"
 }, 
 "otu217630": {
@@ -471,6 +448,8 @@
 }, 
 "otu217673": {
 "^ot:originalLabel": "Nigrospora oryzae FJ496318", 
+"^ot:ottId": 171771, 
+"^ot:ottTaxonName": "Khuskia oryzae", 
 "^ot:treebaseOTUId": "Tl416262"
 }, 
 "otu217674": {
@@ -512,8 +491,14 @@
 "treeById": {
 "tree2038": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "BI, ITS", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node513808", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node513808": {
 "edge513809": {
@@ -1415,9 +1400,15 @@
 }, 
 "tree5775": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "BI, ITS (rooted)", 
 "^ot:inGroupClade": "node987340", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node987334", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node987334": {
 "edge987335": {

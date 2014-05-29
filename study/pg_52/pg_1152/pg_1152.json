@@ -19,48 +19,11 @@
 "@id": "peyotl-validator", 
 "@name": "validate_ot_nexson.py", 
 "@url": "https://github.com/OpenTreeOfLife/peyotl", 
-"@version": "0.0.3a", 
+"@version": "0.0.4a", 
 "invocation": {
-"checksPerformed": [
-"MISSING_MANDATORY_KEY", 
-"MISSING_OPTIONAL_KEY", 
-"UNRECOGNIZED_KEY", 
-"MISSING_LIST_EXPECTED", 
-"DUPLICATING_SINGLETON_KEY", 
-"REFERENCED_ID_NOT_FOUND", 
-"REPEATED_ID", 
-"REPEATED_OTU", 
-"MULTIPLE_ROOT_NODES", 
-"NO_ROOT_NODE", 
-"MULTIPLE_EDGES_FOR_NODES", 
-"CYCLE_DETECTED", 
-"DISCONNECTED_GRAPH_DETECTED", 
-"INCORRECT_ROOT_NODE_LABEL", 
-"TIP_WITHOUT_OTU", 
-"TIP_WITHOUT_OTT_ID", 
-"MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
-"NON_MONOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
-"INVALID_PROPERTY_VALUE", 
-"PROPERTY_VALUE_NOT_USEFUL", 
-"UNRECOGNIZED_PROPERTY_VALUE", 
-"MULTIPLE_TREES", 
-"UNRECOGNIZED_TAG", 
-"CONFLICTING_PROPERTY_VALUES", 
-"NO_TREES", 
-"DEPRECATED_PROPERTY", 
-"UNPARSEABLE_META", 
-"UNREACHABLE_NODE", 
-"INCORRECT_VALUE_TYPE", 
-"MISSING_CRUCIAL_CONTENT"
-], 
 "commandLine": [
 "--embed", 
-"--agent-only", 
-"-e", 
-"../mig-phyelesystem-scratch/1152/validation.json", 
-"-o", 
-"../mig-phyelesystem-scratch/1152/final.json", 
-"../mig-phyelesystem-scratch/1152/v1.2.1-1152.json"
+"--agent-only"
 ], 
 "otherProperty": [
 {
@@ -76,9 +39,14 @@
 }
 ]
 }, 
+"^ot:annotationEvents": {
+"annotation": []
+}, 
+"^ot:candidateTreeForSynthesis": [], 
 "^ot:curatorName": "Romina Gazis", 
-"^ot:focalClade": 1389142, 
-"^ot:focalCladeOTTTaxonName": "Lecanoromyces", 
+"^ot:messages": {
+"message": []
+}, 
 "^ot:otusElementOrder": [
 "otus1152"
 ], 
@@ -88,6 +56,7 @@
 }, 
 "^ot:studyPublicationReference": "Hofstetter, Val\u00e9rie, Jolanta Miadlikowska, Frank Kauff, and Fran\u00e7ois Lutzoni. \"Phylogenetic comparison of protein-coding versus ribosomal RNA-coding sequence data: a case study of the Lecanoromycetes (Ascomycota).\" Molecular phylogenetics and evolution 44, no. 1 (2007): 412-426.", 
 "^ot:studyYear": 2007, 
+"^ot:tag": [], 
 "^ot:treesElementOrder": [
 "trees1152"
 ], 
@@ -110,9 +79,7 @@
 "^ot:ottTaxonName": "Mollisia cinerea"
 }, 
 "otu227596": {
-"^ot:originalLabel": "151 Chlorociboria aeruginosa", 
-"^ot:ottId": 694200, 
-"^ot:ottTaxonName": "Chlorociboria aeruginosa"
+"^ot:originalLabel": "151 Chlorociboria aeruginosa"
 }, 
 "otu227597": {
 "^ot:originalLabel": "59 Botryotinia fuckeliana", 
@@ -175,9 +142,7 @@
 "^ot:ottTaxonName": "Lasallia pustulata"
 }, 
 "otu227609": {
-"^ot:originalLabel": "404 Umbilicaria muelhenbergii", 
-"^ot:ottId": 114063, 
-"^ot:ottTaxonName": "Umbilicaria muehlenbergii"
+"^ot:originalLabel": "404 Umbilicaria muelhenbergii"
 }, 
 "otu227610": {
 "^ot:originalLabel": "329 Phyllobaeis unknown", 
@@ -280,9 +245,7 @@
 "^ot:ottTaxonName": "Cetraria islandica"
 }, 
 "otu227630": {
-"^ot:originalLabel": "225 Dactylina arctica", 
-"^ot:ottId": 787527, 
-"^ot:ottTaxonName": "Dactylina arctica"
+"^ot:originalLabel": "225 Dactylina arctica"
 }, 
 "otu227631": {
 "^ot:originalLabel": "2 Flavoparmelia caperata", 
@@ -326,8 +289,8 @@
 }, 
 "otu227639": {
 "^ot:originalLabel": "324 Hypotrachyna degelii", 
-"^ot:ottId": 754748, 
-"^ot:ottTaxonName": "Hypotrachyna degelii"
+"^ot:ottId": 5312555, 
+"^ot:ottTaxonName": "Myelochroa degelii"
 }, 
 "otu227640": {
 "^ot:originalLabel": "312 Hypotrachyna caracensis", 
@@ -417,7 +380,7 @@
 "otu227657": {
 "^ot:originalLabel": "648 Anaptychia palmulata", 
 "^ot:ottId": 867791, 
-"^ot:ottTaxonName": "Anaptychia palmatula"
+"^ot:ottTaxonName": "Anaptychia palmulata"
 }, 
 "otu227658": {
 "^ot:originalLabel": "84 Physcia aipolia", 
@@ -566,10 +529,17 @@
 "treeById": {
 "tree2334": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "ML, SSU + LSU + mtSSU + RPB1 + RPB2", 
 "^ot:inGroupClade": "node552766", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node552748", 
-"^ot:tag": "mtSSU", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [
+"mtSSU"
+], 
 "edgeBySourceId": {
 "node552748": {
 "edge552749": {

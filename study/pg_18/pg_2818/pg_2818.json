@@ -19,48 +19,11 @@
 "@id": "peyotl-validator", 
 "@name": "validate_ot_nexson.py", 
 "@url": "https://github.com/OpenTreeOfLife/peyotl", 
-"@version": "0.0.3a", 
+"@version": "0.0.4a", 
 "invocation": {
-"checksPerformed": [
-"MISSING_MANDATORY_KEY", 
-"MISSING_OPTIONAL_KEY", 
-"UNRECOGNIZED_KEY", 
-"MISSING_LIST_EXPECTED", 
-"DUPLICATING_SINGLETON_KEY", 
-"REFERENCED_ID_NOT_FOUND", 
-"REPEATED_ID", 
-"REPEATED_OTU", 
-"MULTIPLE_ROOT_NODES", 
-"NO_ROOT_NODE", 
-"MULTIPLE_EDGES_FOR_NODES", 
-"CYCLE_DETECTED", 
-"DISCONNECTED_GRAPH_DETECTED", 
-"INCORRECT_ROOT_NODE_LABEL", 
-"TIP_WITHOUT_OTU", 
-"TIP_WITHOUT_OTT_ID", 
-"MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
-"NON_MONOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
-"INVALID_PROPERTY_VALUE", 
-"PROPERTY_VALUE_NOT_USEFUL", 
-"UNRECOGNIZED_PROPERTY_VALUE", 
-"MULTIPLE_TREES", 
-"UNRECOGNIZED_TAG", 
-"CONFLICTING_PROPERTY_VALUES", 
-"NO_TREES", 
-"DEPRECATED_PROPERTY", 
-"UNPARSEABLE_META", 
-"UNREACHABLE_NODE", 
-"INCORRECT_VALUE_TYPE", 
-"MISSING_CRUCIAL_CONTENT"
-], 
 "commandLine": [
 "--embed", 
-"--agent-only", 
-"-e", 
-"../mig-phyelesystem-scratch/2818/validation.json", 
-"-o", 
-"../mig-phyelesystem-scratch/2818/final.json", 
-"../mig-phyelesystem-scratch/2818/v1.2.1-2818.json"
+"--agent-only"
 ], 
 "otherProperty": [
 {
@@ -76,9 +39,16 @@
 }
 ]
 }, 
+"^ot:annotationEvents": {
+"annotation": []
+}, 
+"^ot:candidateTreeForSynthesis": [], 
 "^ot:curatorName": "Romina Gazis", 
 "^ot:focalClade": 352914, 
 "^ot:focalCladeOTTTaxonName": "Fungi", 
+"^ot:messages": {
+"message": []
+}, 
 "^ot:otusElementOrder": [
 "otus2818"
 ], 
@@ -86,9 +56,9 @@
 "^ot:studyPublicationReference": "Gazis, Romina; Hibbett, David (2014): Fungi Classification Update 2014. figshare. \r\nhttp://dx.doi.org/10.6084/m9.figshare.915439", 
 "^ot:studyYear": 2014, 
 "^ot:tag": [
+"Can't map all terminals", 
 "Summary of phylogenetic studies", 
-"This tree was constructed manually", 
-"Can't map all terminals"
+"This tree was constructed manually"
 ], 
 "^ot:treesElementOrder": [
 "trees2818"
@@ -378,7 +348,9 @@
 "^ot:ottTaxonName": "Acarosporales"
 }, 
 "otu418330": {
-"^ot:originalLabel": "Umbilicariales"
+"^ot:originalLabel": "Umbilicariales", 
+"^ot:ottId": 5296863, 
+"^ot:ottTaxonName": "Umbilicariales"
 }, 
 "otu418331": {
 "^ot:originalLabel": "Rhizocarpales", 
@@ -409,7 +381,9 @@
 "^ot:ottTaxonName": "Lecideales"
 }, 
 "otu418337": {
-"^ot:originalLabel": "Sarrameanales"
+"^ot:originalLabel": "Sarrameanales", 
+"^ot:ottId": 5296866, 
+"^ot:ottTaxonName": "Sarrameanales"
 }, 
 "otu418338": {
 "^ot:originalLabel": "Loxosporales", 
@@ -926,8 +900,14 @@
 "treeById": {
 "tree6563": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "manually created", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node1139218", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node1139218": {
 "edge1139219": {

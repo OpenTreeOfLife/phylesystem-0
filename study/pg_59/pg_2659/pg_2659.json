@@ -19,48 +19,11 @@
 "@id": "peyotl-validator", 
 "@name": "validate_ot_nexson.py", 
 "@url": "https://github.com/OpenTreeOfLife/peyotl", 
-"@version": "0.0.3a", 
+"@version": "0.0.4a", 
 "invocation": {
-"checksPerformed": [
-"MISSING_MANDATORY_KEY", 
-"MISSING_OPTIONAL_KEY", 
-"UNRECOGNIZED_KEY", 
-"MISSING_LIST_EXPECTED", 
-"DUPLICATING_SINGLETON_KEY", 
-"REFERENCED_ID_NOT_FOUND", 
-"REPEATED_ID", 
-"REPEATED_OTU", 
-"MULTIPLE_ROOT_NODES", 
-"NO_ROOT_NODE", 
-"MULTIPLE_EDGES_FOR_NODES", 
-"CYCLE_DETECTED", 
-"DISCONNECTED_GRAPH_DETECTED", 
-"INCORRECT_ROOT_NODE_LABEL", 
-"TIP_WITHOUT_OTU", 
-"TIP_WITHOUT_OTT_ID", 
-"MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
-"NON_MONOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
-"INVALID_PROPERTY_VALUE", 
-"PROPERTY_VALUE_NOT_USEFUL", 
-"UNRECOGNIZED_PROPERTY_VALUE", 
-"MULTIPLE_TREES", 
-"UNRECOGNIZED_TAG", 
-"CONFLICTING_PROPERTY_VALUES", 
-"NO_TREES", 
-"DEPRECATED_PROPERTY", 
-"UNPARSEABLE_META", 
-"UNREACHABLE_NODE", 
-"INCORRECT_VALUE_TYPE", 
-"MISSING_CRUCIAL_CONTENT"
-], 
 "commandLine": [
 "--embed", 
-"--agent-only", 
-"-e", 
-"../mig-phyelesystem-scratch/2659/validation.json", 
-"-o", 
-"../mig-phyelesystem-scratch/2659/final.json", 
-"../mig-phyelesystem-scratch/2659/v1.2.1-2659.json"
+"--agent-only"
 ], 
 "otherProperty": [
 {
@@ -76,16 +39,25 @@
 }
 ]
 }, 
+"^ot:annotationEvents": {
+"annotation": []
+}, 
+"^ot:candidateTreeForSynthesis": [], 
 "^ot:curatorName": "Joseph Brown", 
 "^ot:focalClade": 285818, 
 "^ot:focalCladeOTTTaxonName": "Otophysi", 
+"^ot:messages": {
+"message": []
+}, 
 "^ot:otusElementOrder": [
 "otus2659"
 ], 
 "^ot:studyId": "2659", 
 "^ot:studyPublicationReference": "Chen, Wei-Jen, S\u00e9bastien Lavou\u00e9, and Richard L. Mayden. 2013. Evolutionary origin and early biogeography of otophysan fishes (Ostariophysi: Teleostei). Evolution 67 (8): 2218\u20132239.", 
 "^ot:studyYear": 2013, 
-"^ot:tag": "ingroup added;", 
+"^ot:tag": [
+"ingroup added;"
+], 
 "^ot:treesElementOrder": [
 "trees2659"
 ], 
@@ -221,7 +193,9 @@
 "^ot:ottTaxonName": "Sagamichthys abei"
 }, 
 "otu397157": {
-"^ot:originalLabel": "Alepocephalus sp"
+"^ot:originalLabel": "Alepocephalus sp", 
+"^ot:ottId": 993269, 
+"^ot:ottTaxonName": "Alepocephalus"
 }, 
 "otu397158": {
 "^ot:originalLabel": "Denticeps clupeoides", 
@@ -434,7 +408,9 @@
 "^ot:ottTaxonName": "Chalceus macrolepidotus"
 }, 
 "otu397200": {
-"^ot:originalLabel": "Astyanax mexicanus"
+"^ot:originalLabel": "Astyanax mexicanus", 
+"^ot:ottId": 701518, 
+"^ot:ottTaxonName": "Astyanax mexicanus"
 }, 
 "otu397201": {
 "^ot:originalLabel": "Hydrolycus armatus WJC611", 
@@ -573,10 +549,15 @@
 "treeById": {
 "tree6193": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
 "^ot:branchLengthMode": "ot:substitutionCount", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "RAxML MLE", 
 "^ot:inGroupClade": "node1065293", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node1065225", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node1065225": {
 "edge1065226": {
@@ -2093,10 +2074,15 @@
 }, 
 "tree6194": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
 "^ot:branchLengthMode": "ot:substitutionCount", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "ML bootstrap consensus", 
 "^ot:inGroupClade": "node1065482", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node1065414", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node1065414": {
 "edge1065415": {
@@ -3613,12 +3599,17 @@
 }, 
 "tree6195": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
 "^ot:branchLengthMode": "ot:time", 
 "^ot:branchLengthTimeUnit": "Myr", 
 "^ot:curatedType": "BEAST MCC tree", 
 "^ot:inGroupClade": "node1065671", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node1065603", 
-"^ot:tag": "choose me", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [
+"choose me"
+], 
 "edgeBySourceId": {
 "node1065603": {
 "edge1065604": {

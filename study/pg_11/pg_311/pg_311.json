@@ -19,48 +19,11 @@
 "@id": "peyotl-validator", 
 "@name": "validate_ot_nexson.py", 
 "@url": "https://github.com/OpenTreeOfLife/peyotl", 
-"@version": "0.0.3a", 
+"@version": "0.0.4a", 
 "invocation": {
-"checksPerformed": [
-"MISSING_MANDATORY_KEY", 
-"MISSING_OPTIONAL_KEY", 
-"UNRECOGNIZED_KEY", 
-"MISSING_LIST_EXPECTED", 
-"DUPLICATING_SINGLETON_KEY", 
-"REFERENCED_ID_NOT_FOUND", 
-"REPEATED_ID", 
-"REPEATED_OTU", 
-"MULTIPLE_ROOT_NODES", 
-"NO_ROOT_NODE", 
-"MULTIPLE_EDGES_FOR_NODES", 
-"CYCLE_DETECTED", 
-"DISCONNECTED_GRAPH_DETECTED", 
-"INCORRECT_ROOT_NODE_LABEL", 
-"TIP_WITHOUT_OTU", 
-"TIP_WITHOUT_OTT_ID", 
-"MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
-"NON_MONOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
-"INVALID_PROPERTY_VALUE", 
-"PROPERTY_VALUE_NOT_USEFUL", 
-"UNRECOGNIZED_PROPERTY_VALUE", 
-"MULTIPLE_TREES", 
-"UNRECOGNIZED_TAG", 
-"CONFLICTING_PROPERTY_VALUES", 
-"NO_TREES", 
-"DEPRECATED_PROPERTY", 
-"UNPARSEABLE_META", 
-"UNREACHABLE_NODE", 
-"INCORRECT_VALUE_TYPE", 
-"MISSING_CRUCIAL_CONTENT"
-], 
 "commandLine": [
 "--embed", 
-"--agent-only", 
-"-e", 
-"../mig-phyelesystem-scratch/311/validation.json", 
-"-o", 
-"../mig-phyelesystem-scratch/311/final.json", 
-"../mig-phyelesystem-scratch/311/v1.2.1-311.json"
+"--agent-only"
 ], 
 "otherProperty": [
 {
@@ -76,9 +39,16 @@
 }
 ]
 }, 
+"^ot:annotationEvents": {
+"annotation": []
+}, 
+"^ot:candidateTreeForSynthesis": [], 
 "^ot:curatorName": "Rick Ree", 
 "^ot:focalClade": 93302, 
 "^ot:focalCladeOTTTaxonName": "cellular organisms", 
+"^ot:messages": {
+"message": []
+}, 
 "^ot:otusElementOrder": [
 "otus311"
 ], 
@@ -86,8 +56,9 @@
 "^ot:studyPublication": {
 "@href": "http://dx.doi.org/10.1126/science.1123061"
 }, 
-"^ot:studyPublicationReference": "Francesca D. Ciccarelli, Tobias Doerks, Christian von Mering, Christopher J. Creevey, Berend Snel, and Peer Bork. 2006. Toward automatic reconstruction of a highly resolved tree of life. Science 311 (5765): 1283-1287.", 
+"^ot:studyPublicationReference": "Ciccarelli, Francesca D., Tobias Doerks, Christian von Mering, Christopher J. Creevey, Berend Snel, and Peer Bork. 2006. Toward automatic reconstruction of a highly resolved tree of life. Science 311 (5765): 1283-1287.", 
 "^ot:studyYear": 2006, 
+"^ot:tag": [], 
 "^ot:treesElementOrder": [
 "trees311"
 ], 
@@ -320,7 +291,9 @@
 "^ot:ottTaxonName": "Mycoplasma mycoides"
 }, 
 "otu71870": {
-"^ot:originalLabel": "Phytoplasma Onion yellows"
+"^ot:originalLabel": "Phytoplasma Onion yellows", 
+"^ot:ottId": 820498, 
+"^ot:ottTaxonName": "Candidatus Phytoplasma"
 }, 
 "otu71871": {
 "^ot:originalLabel": "Listeria monocytogenes F2365", 
@@ -398,7 +371,9 @@
 "^ot:ottTaxonName": "Streptococcus agalactiae"
 }, 
 "otu71886": {
-"^ot:originalLabel": "Streptococcus pyogenes M1"
+"^ot:originalLabel": "Streptococcus pyogenes M1", 
+"^ot:ottId": 771186, 
+"^ot:ottTaxonName": "Streptococcus pyogenes M1 GAS"
 }, 
 "otu71887": {
 "^ot:originalLabel": "Streptococcus pyogenes MGAS8232", 
@@ -486,13 +461,19 @@
 "^ot:ottTaxonName": "Dictyostelium discoideum"
 }, 
 "otu71904": {
-"^ot:originalLabel": "Eremothecium gossypii"
+"^ot:originalLabel": "Eremothecium gossypii", 
+"^ot:ottId": 806602, 
+"^ot:ottTaxonName": "Eremothecium gossypii"
 }, 
 "otu71905": {
-"^ot:originalLabel": "Saccharomyces cerevisiae"
+"^ot:originalLabel": "Saccharomyces cerevisiae", 
+"^ot:ottId": 908549, 
+"^ot:ottTaxonName": "Saccharomyces cerevisiae"
 }, 
 "otu71906": {
-"^ot:originalLabel": "Schizosaccharomyces pombe"
+"^ot:originalLabel": "Schizosaccharomyces pombe", 
+"^ot:ottId": 990004, 
+"^ot:ottTaxonName": "Schizosaccharomyces pombe"
 }, 
 "otu71907": {
 "^ot:originalLabel": "Anopheles gambiae", 
@@ -525,7 +506,9 @@
 "^ot:ottTaxonName": "Mus musculus"
 }, 
 "otu71913": {
-"^ot:originalLabel": "Homo sapiens"
+"^ot:originalLabel": "Homo sapiens", 
+"^ot:ottId": 770315, 
+"^ot:ottTaxonName": "Homo sapiens"
 }, 
 "otu71914": {
 "^ot:originalLabel": "Pan troglodytes", 
@@ -659,9 +642,14 @@
 "treeById": {
 "tree262": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
 "^ot:branchLengthMode": "ot:substitutionCount", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "Maximum likelihood multigene concatenation of core genes between three domains of life", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node188996", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node188996": {
 "edge188997": {

@@ -19,48 +19,11 @@
 "@id": "peyotl-validator", 
 "@name": "validate_ot_nexson.py", 
 "@url": "https://github.com/OpenTreeOfLife/peyotl", 
-"@version": "0.0.3a", 
+"@version": "0.0.4a", 
 "invocation": {
-"checksPerformed": [
-"MISSING_MANDATORY_KEY", 
-"MISSING_OPTIONAL_KEY", 
-"UNRECOGNIZED_KEY", 
-"MISSING_LIST_EXPECTED", 
-"DUPLICATING_SINGLETON_KEY", 
-"REFERENCED_ID_NOT_FOUND", 
-"REPEATED_ID", 
-"REPEATED_OTU", 
-"MULTIPLE_ROOT_NODES", 
-"NO_ROOT_NODE", 
-"MULTIPLE_EDGES_FOR_NODES", 
-"CYCLE_DETECTED", 
-"DISCONNECTED_GRAPH_DETECTED", 
-"INCORRECT_ROOT_NODE_LABEL", 
-"TIP_WITHOUT_OTU", 
-"TIP_WITHOUT_OTT_ID", 
-"MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
-"NON_MONOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
-"INVALID_PROPERTY_VALUE", 
-"PROPERTY_VALUE_NOT_USEFUL", 
-"UNRECOGNIZED_PROPERTY_VALUE", 
-"MULTIPLE_TREES", 
-"UNRECOGNIZED_TAG", 
-"CONFLICTING_PROPERTY_VALUES", 
-"NO_TREES", 
-"DEPRECATED_PROPERTY", 
-"UNPARSEABLE_META", 
-"UNREACHABLE_NODE", 
-"INCORRECT_VALUE_TYPE", 
-"MISSING_CRUCIAL_CONTENT"
-], 
 "commandLine": [
 "--embed", 
-"--agent-only", 
-"-e", 
-"../mig-phyelesystem-scratch/1916/validation.json", 
-"-o", 
-"../mig-phyelesystem-scratch/1916/final.json", 
-"../mig-phyelesystem-scratch/1916/v1.2.1-1916.json"
+"--agent-only"
 ], 
 "otherProperty": [
 {
@@ -76,15 +39,23 @@
 }
 ]
 }, 
+"^ot:annotationEvents": {
+"annotation": []
+}, 
+"^ot:candidateTreeForSynthesis": [], 
 "^ot:curatorName": "bryan drew", 
 "^ot:focalClade": 309271, 
 "^ot:focalCladeOTTTaxonName": "Brassicaceae", 
+"^ot:messages": {
+"message": []
+}, 
 "^ot:otusElementOrder": [
 "otus1916"
 ], 
 "^ot:studyId": "1916", 
 "^ot:studyPublicationReference": "German, D. A. [et al. 2009], Friesen, N., Neuffer, B., Al-Shehbaz, I. A., & Hurka, H. 2009. Contribution to ITS phylogeny of the Brassicaceae, with special reference to some Asian taxa. Plant Syst. Evol. 283: 33-56.", 
 "^ot:studyYear": 2012, 
+"^ot:tag": [], 
 "^ot:treesElementOrder": [
 "trees1916"
 ], 
@@ -167,7 +138,9 @@
 "^ot:ottTaxonName": "Orychophragmus violaceus"
 }, 
 "otu291472": {
-"^ot:originalLabel": "Fourraea alpina AJ232890"
+"^ot:originalLabel": "Fourraea alpina AJ232890", 
+"^ot:ottId": 798537, 
+"^ot:ottTaxonName": "Fourraea alpina"
 }, 
 "otu291473": {
 "^ot:originalLabel": "Werdermannia anethifolia AF531645", 
@@ -235,7 +208,9 @@
 "^ot:ottTaxonName": "Isatis quadrialata"
 }, 
 "otu291486": {
-"^ot:originalLabel": "Pseudosempervivum aucheri AF336202 AF336203"
+"^ot:originalLabel": "Pseudosempervivum aucheri AF336202 AF336203", 
+"^ot:ottId": 182234, 
+"^ot:ottTaxonName": "Cochlearia aucheri"
 }, 
 "otu291487": {
 "^ot:originalLabel": "Noccaea caerulescens FM164568 FM164569", 
@@ -323,7 +298,9 @@
 "^ot:ottTaxonName": "Aphragmus eschscholtzianus"
 }, 
 "otu291504": {
-"^ot:originalLabel": "Andrzeiowskia cardamine AJ628337 AJ628338"
+"^ot:originalLabel": "Andrzeiowskia cardamine AJ628337 AJ628338", 
+"^ot:ottId": 3933360, 
+"^ot:ottTaxonName": "Andrzeiowskia cardamine"
 }, 
 "otu291505": {
 "^ot:originalLabel": "Rorippa sylvestris AF078023 AF078024", 
@@ -651,7 +628,9 @@
 "^ot:ottTaxonName": "Arabis alaschanica"
 }, 
 "otu291570": {
-"^ot:originalLabel": "Draba hystrix AY134194"
+"^ot:originalLabel": "Draba hystrix AY134194", 
+"^ot:ottId": 5145795, 
+"^ot:ottTaxonName": "Pseudodraba hystrix"
 }, 
 "otu291571": {
 "^ot:originalLabel": "Arabis kamelinii FM164645", 
@@ -1014,7 +993,9 @@
 "^ot:ottTaxonName": "Leiospora pamirica"
 }, 
 "otu291643": {
-"^ot:originalLabel": "Asperuginoides axillaris FM164516 FM164517"
+"^ot:originalLabel": "Asperuginoides axillaris FM164516 FM164517", 
+"^ot:ottId": 431360, 
+"^ot:ottTaxonName": "Asperuginoides axillaris"
 }, 
 "otu291644": {
 "^ot:originalLabel": "Biscutella laevigata DQ452056", 
@@ -1027,7 +1008,9 @@
 "^ot:ottTaxonName": "Megadenia pygmaea"
 }, 
 "otu291646": {
-"^ot:originalLabel": "Cleome lutea AF137588"
+"^ot:originalLabel": "Cleome lutea AF137588", 
+"^ot:ottId": 5145828, 
+"^ot:ottTaxonName": "Peritoma lutea"
 }
 }
 }
@@ -1041,10 +1024,15 @@
 "treeById": {
 "tree3902": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
 "^ot:branchLengthMode": "ot:substitutionCount", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "ml best tree", 
 "^ot:inGroupClade": "node733337", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node733332", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node733332": {
 "edge733333": {

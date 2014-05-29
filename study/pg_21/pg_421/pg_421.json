@@ -19,48 +19,11 @@
 "@id": "peyotl-validator", 
 "@name": "validate_ot_nexson.py", 
 "@url": "https://github.com/OpenTreeOfLife/peyotl", 
-"@version": "0.0.3a", 
+"@version": "0.0.4a", 
 "invocation": {
-"checksPerformed": [
-"MISSING_MANDATORY_KEY", 
-"MISSING_OPTIONAL_KEY", 
-"UNRECOGNIZED_KEY", 
-"MISSING_LIST_EXPECTED", 
-"DUPLICATING_SINGLETON_KEY", 
-"REFERENCED_ID_NOT_FOUND", 
-"REPEATED_ID", 
-"REPEATED_OTU", 
-"MULTIPLE_ROOT_NODES", 
-"NO_ROOT_NODE", 
-"MULTIPLE_EDGES_FOR_NODES", 
-"CYCLE_DETECTED", 
-"DISCONNECTED_GRAPH_DETECTED", 
-"INCORRECT_ROOT_NODE_LABEL", 
-"TIP_WITHOUT_OTU", 
-"TIP_WITHOUT_OTT_ID", 
-"MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
-"NON_MONOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
-"INVALID_PROPERTY_VALUE", 
-"PROPERTY_VALUE_NOT_USEFUL", 
-"UNRECOGNIZED_PROPERTY_VALUE", 
-"MULTIPLE_TREES", 
-"UNRECOGNIZED_TAG", 
-"CONFLICTING_PROPERTY_VALUES", 
-"NO_TREES", 
-"DEPRECATED_PROPERTY", 
-"UNPARSEABLE_META", 
-"UNREACHABLE_NODE", 
-"INCORRECT_VALUE_TYPE", 
-"MISSING_CRUCIAL_CONTENT"
-], 
 "commandLine": [
 "--embed", 
-"--agent-only", 
-"-e", 
-"../mig-phyelesystem-scratch/421/validation.json", 
-"-o", 
-"../mig-phyelesystem-scratch/421/final.json", 
-"../mig-phyelesystem-scratch/421/v1.2.1-421.json"
+"--agent-only"
 ], 
 "otherProperty": [
 {
@@ -76,9 +39,16 @@
 }
 ]
 }, 
+"^ot:annotationEvents": {
+"annotation": []
+}, 
+"^ot:candidateTreeForSynthesis": [], 
 "^ot:curatorName": "Stephen Smith", 
 "^ot:focalClade": 802117, 
 "^ot:focalCladeOTTTaxonName": "Mollusca", 
+"^ot:messages": {
+"message": []
+}, 
 "^ot:otusElementOrder": [
 "otus421"
 ], 
@@ -86,8 +56,9 @@
 "^ot:studyPublication": {
 "@href": "http://dx.doi.org/10.1038/nature10526"
 }, 
-"^ot:studyPublicationReference": "Stephen A. Smith, Nerida G. Wilson, Freya E. Goetz, Caitlin Feehery, S\u00f3nia C. S. Andrade, Greg W. Rouse, Gonzalo Giribet and Casey W. Dunn. 2011. Resolving the evolutionary relationships of molluscs with phylogenomic tools. Nature 480, 364\u2013367. doi:10.1038/nature10526", 
+"^ot:studyPublicationReference": "Smith, Stephen A., Nerida G. Wilson, Freya E. Goetz, Caitlin Feehery, S\u00f3nia C. S. Andrade, Greg W. Rouse, Gonzalo Giribet and Casey W. Dunn. 2011. Resolving the evolutionary relationships of molluscs with phylogenomic tools. Nature 480, 364\u2013367.", 
 "^ot:studyYear": 2011, 
+"^ot:tag": [], 
 "^ot:treesElementOrder": [
 "trees421"
 ], 
@@ -186,7 +157,9 @@
 "^ot:ottTaxonName": "Argopecten irradians"
 }, 
 "otu79259": {
-"^ot:originalLabel": "Chlamys farreri"
+"^ot:originalLabel": "Chlamys farreri", 
+"^ot:ottId": 56422, 
+"^ot:ottTaxonName": "Azumapecten farreri"
 }, 
 "otu79260": {
 "^ot:originalLabel": "Mizuhopecten yessoensis", 
@@ -330,10 +303,15 @@
 "treeById": {
 "tree523": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
 "^ot:branchLengthMode": "ot:substitutionCount", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "Bipartition RAxML", 
 "^ot:inGroupClade": "node208841", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node208819", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node208819": {
 "edge208820": {

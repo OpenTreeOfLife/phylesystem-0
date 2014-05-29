@@ -19,48 +19,11 @@
 "@id": "peyotl-validator", 
 "@name": "validate_ot_nexson.py", 
 "@url": "https://github.com/OpenTreeOfLife/peyotl", 
-"@version": "0.0.3a", 
+"@version": "0.0.4a", 
 "invocation": {
-"checksPerformed": [
-"MISSING_MANDATORY_KEY", 
-"MISSING_OPTIONAL_KEY", 
-"UNRECOGNIZED_KEY", 
-"MISSING_LIST_EXPECTED", 
-"DUPLICATING_SINGLETON_KEY", 
-"REFERENCED_ID_NOT_FOUND", 
-"REPEATED_ID", 
-"REPEATED_OTU", 
-"MULTIPLE_ROOT_NODES", 
-"NO_ROOT_NODE", 
-"MULTIPLE_EDGES_FOR_NODES", 
-"CYCLE_DETECTED", 
-"DISCONNECTED_GRAPH_DETECTED", 
-"INCORRECT_ROOT_NODE_LABEL", 
-"TIP_WITHOUT_OTU", 
-"TIP_WITHOUT_OTT_ID", 
-"MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
-"NON_MONOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
-"INVALID_PROPERTY_VALUE", 
-"PROPERTY_VALUE_NOT_USEFUL", 
-"UNRECOGNIZED_PROPERTY_VALUE", 
-"MULTIPLE_TREES", 
-"UNRECOGNIZED_TAG", 
-"CONFLICTING_PROPERTY_VALUES", 
-"NO_TREES", 
-"DEPRECATED_PROPERTY", 
-"UNPARSEABLE_META", 
-"UNREACHABLE_NODE", 
-"INCORRECT_VALUE_TYPE", 
-"MISSING_CRUCIAL_CONTENT"
-], 
 "commandLine": [
 "--embed", 
-"--agent-only", 
-"-e", 
-"../mig-phyelesystem-scratch/2314/validation.json", 
-"-o", 
-"../mig-phyelesystem-scratch/2314/final.json", 
-"../mig-phyelesystem-scratch/2314/v1.2.1-2314.json"
+"--agent-only"
 ], 
 "otherProperty": [
 {
@@ -76,12 +39,19 @@
 }
 ]
 }, 
+"^ot:annotationEvents": {
+"annotation": []
+}, 
+"^ot:candidateTreeForSynthesis": [], 
 "^ot:curatorName": "Romina Gazis", 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S2076"
 }, 
 "^ot:focalClade": 728373, 
 "^ot:focalCladeOTTTaxonName": "Gibberella", 
+"^ot:messages": {
+"message": []
+}, 
 "^ot:otusElementOrder": [
 "otus2314"
 ], 
@@ -91,6 +61,7 @@
 }, 
 "^ot:studyPublicationReference": "Burlakoti, R. R., S. Ali, G. A. Secor, S. M. Neate, M. P. McMullen, and T. B. Adhikari. \"Genetic relationships among populations of Gibberella zeae from barley, wheat, potato, and sugar beet in the Upper Midwest of the United States.\" Phytopathology 98, no. 9 (2008): 969-976.", 
 "^ot:studyYear": 2008, 
+"^ot:tag": [], 
 "^ot:treesElementOrder": [
 "trees2314"
 ], 
@@ -163,6 +134,8 @@
 }, 
 "otu329242": {
 "^ot:originalLabel": "Fusarium graminearum NRRL28063", 
+"^ot:ottId": 264388, 
+"^ot:ottTaxonName": "Gibberella zeae", 
 "^ot:treebaseOTUId": "Tl82671"
 }, 
 "otu329243": {
@@ -207,6 +180,8 @@
 }, 
 "otu329251": {
 "^ot:originalLabel": "Fusarium graminearum NRRL6394", 
+"^ot:ottId": 264388, 
+"^ot:ottTaxonName": "Gibberella zeae", 
 "^ot:treebaseOTUId": "Tl82680"
 }, 
 "otu329252": {
@@ -269,6 +244,8 @@
 }, 
 "otu329264": {
 "^ot:originalLabel": "Fusarium graminearum NRRL34079", 
+"^ot:ottId": 264388, 
+"^ot:ottTaxonName": "Gibberella zeae", 
 "^ot:treebaseOTUId": "Tl82693"
 }, 
 "otu329265": {
@@ -283,6 +260,8 @@
 }, 
 "otu329267": {
 "^ot:originalLabel": "Fusarium graminearum NRRL13383", 
+"^ot:ottId": 264388, 
+"^ot:ottTaxonName": "Gibberella zeae", 
 "^ot:treebaseOTUId": "Tl82696"
 }, 
 "otu329268": {
@@ -301,6 +280,8 @@
 }, 
 "otu329271": {
 "^ot:originalLabel": "Fusarium graminearum NRRL5883", 
+"^ot:ottId": 264388, 
+"^ot:ottTaxonName": "Gibberella zeae", 
 "^ot:treebaseOTUId": "Tl82700"
 }, 
 "otu329272": {
@@ -349,6 +330,8 @@
 }, 
 "otu329281": {
 "^ot:originalLabel": "Fusarium graminearum NRRL28336", 
+"^ot:ottId": 264388, 
+"^ot:ottTaxonName": "Gibberella zeae", 
 "^ot:treebaseOTUId": "Tl82710"
 }, 
 "otu329282": {
@@ -371,6 +354,8 @@
 }, 
 "otu329286": {
 "^ot:originalLabel": "Fusarium graminearum NRRL31084", 
+"^ot:ottId": 264388, 
+"^ot:ottTaxonName": "Gibberella zeae", 
 "^ot:treebaseOTUId": "Tl82715"
 }, 
 "otu329287": {
@@ -406,10 +391,17 @@
 "treeById": {
 "tree4882": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "MP, phosphate permease gene + EF-1", 
 "^ot:inGroupClade": "node849148", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node849145", 
-"^ot:tag": "MP", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [
+"MP"
+], 
 "edgeBySourceId": {
 "node849145": {
 "edge849146": {
@@ -975,9 +967,15 @@
 }, 
 "tree4883": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "MP, EF-1", 
 "^ot:inGroupClade": "node849232", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node849225", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node849225": {
 "edge849226": {

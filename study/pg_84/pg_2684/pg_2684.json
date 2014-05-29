@@ -19,48 +19,11 @@
 "@id": "peyotl-validator", 
 "@name": "validate_ot_nexson.py", 
 "@url": "https://github.com/OpenTreeOfLife/peyotl", 
-"@version": "0.0.3a", 
+"@version": "0.0.4a", 
 "invocation": {
-"checksPerformed": [
-"MISSING_MANDATORY_KEY", 
-"MISSING_OPTIONAL_KEY", 
-"UNRECOGNIZED_KEY", 
-"MISSING_LIST_EXPECTED", 
-"DUPLICATING_SINGLETON_KEY", 
-"REFERENCED_ID_NOT_FOUND", 
-"REPEATED_ID", 
-"REPEATED_OTU", 
-"MULTIPLE_ROOT_NODES", 
-"NO_ROOT_NODE", 
-"MULTIPLE_EDGES_FOR_NODES", 
-"CYCLE_DETECTED", 
-"DISCONNECTED_GRAPH_DETECTED", 
-"INCORRECT_ROOT_NODE_LABEL", 
-"TIP_WITHOUT_OTU", 
-"TIP_WITHOUT_OTT_ID", 
-"MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
-"NON_MONOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
-"INVALID_PROPERTY_VALUE", 
-"PROPERTY_VALUE_NOT_USEFUL", 
-"UNRECOGNIZED_PROPERTY_VALUE", 
-"MULTIPLE_TREES", 
-"UNRECOGNIZED_TAG", 
-"CONFLICTING_PROPERTY_VALUES", 
-"NO_TREES", 
-"DEPRECATED_PROPERTY", 
-"UNPARSEABLE_META", 
-"UNREACHABLE_NODE", 
-"INCORRECT_VALUE_TYPE", 
-"MISSING_CRUCIAL_CONTENT"
-], 
 "commandLine": [
 "--embed", 
-"--agent-only", 
-"-e", 
-"../mig-phyelesystem-scratch/2684/validation.json", 
-"-o", 
-"../mig-phyelesystem-scratch/2684/final.json", 
-"../mig-phyelesystem-scratch/2684/v1.2.1-2684.json"
+"--agent-only"
 ], 
 "otherProperty": [
 {
@@ -76,9 +39,16 @@
 }
 ]
 }, 
+"^ot:annotationEvents": {
+"annotation": []
+}, 
+"^ot:candidateTreeForSynthesis": [], 
 "^ot:curatorName": "Joseph Brown", 
 "^ot:focalClade": 397138, 
 "^ot:focalCladeOTTTaxonName": "Hyaenidae", 
+"^ot:messages": {
+"message": []
+}, 
 "^ot:otusElementOrder": [
 "otus2684"
 ], 
@@ -86,8 +56,9 @@
 "^ot:studyPublication": {
 "@href": "http://dx.doi.org/10.1016/j.ympev.2005.10.017"
 }, 
-"^ot:studyPublicationReference": "Klaus-Peter Koepfli, Susan M. Jenks, Eduardo Eizirik, Tannaz Zahirpour, Blaire Van Valkenburgh, Robert K. Wayne. 2006. Molecular systematics of the Hyaenidae: Relationships of a relictual lineage resolved by a molecular supermatrix. Molecular Phylogenetics and Evolution 38(3):603-620.", 
+"^ot:studyPublicationReference": "Koepfli, Klaus-Peter, Susan M. Jenks, Eduardo Eizirik, Tannaz Zahirpour, Blaire Van Valkenburgh, Robert K. Wayne. 2006. Molecular systematics of the Hyaenidae: Relationships of a relictual lineage resolved by a molecular supermatrix. Molecular Phylogenetics and Evolution 38 (3): 603-620.", 
 "^ot:studyYear": 2006, 
+"^ot:tag": [], 
 "^ot:treesElementOrder": [
 "trees2684"
 ], 
@@ -171,203 +142,235 @@
 "trees2684": {
 "@otus": "otus2684", 
 "^ot:treeElementOrder": [
-"tree6229"
+"tree6644"
 ], 
 "treeById": {
-"tree6229": {
+"tree6644": {
 "@xsi:type": "nex:FloatTree", 
-"^ot:curatedType": "ML topology Figure 2", 
-"^ot:inGroupClade": "node1076440", 
-"^ot:rootNodeId": "node1076420", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "ot:substitutionCount", 
+"^ot:branchLengthTimeUnit": "", 
+"^ot:curatedType": "Fig. 2 ML", 
+"^ot:inGroupClade": "node1159641", 
+"^ot:outGroupEdge": "", 
+"^ot:rootNodeId": "node1159622", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
-"node1076420": {
-"edge1076421": {
-"@source": "node1076420", 
-"@target": "node1076421"
+"node1159622": {
+"edge1159623": {
+"@length": 0.0645, 
+"@source": "node1159622", 
+"@target": "node1159623"
 }, 
-"edge1076424": {
-"@source": "node1076420", 
-"@target": "node1076424"
+"edge1159626": {
+"@length": 0.129, 
+"@source": "node1159622", 
+"@target": "node1159626"
 }
 }, 
-"node1076421": {
-"edge1076422": {
-"@source": "node1076421", 
-"@target": "node1076422"
+"node1159623": {
+"edge1159624": {
+"@length": 0.026999999999999996, 
+"@source": "node1159623", 
+"@target": "node1159624"
 }, 
-"edge1076423": {
-"@source": "node1076421", 
-"@target": "node1076423"
+"edge1159625": {
+"@length": 0.027999999999999997, 
+"@source": "node1159623", 
+"@target": "node1159625"
 }
 }, 
-"node1076424": {
-"edge1076425": {
-"@source": "node1076424", 
-"@target": "node1076425"
+"node1159626": {
+"edge1159627": {
+"@length": 0.015000000000000013, 
+"@source": "node1159626", 
+"@target": "node1159627"
 }, 
-"edge1076426": {
-"@source": "node1076424", 
-"@target": "node1076426"
+"edge1159648": {
+"@length": 0.05199999999999999, 
+"@source": "node1159626", 
+"@target": "node1159648"
 }
 }, 
-"node1076426": {
-"edge1076427": {
-"@source": "node1076426", 
-"@target": "node1076427"
+"node1159627": {
+"edge1159628": {
+"@length": 0.035, 
+"@source": "node1159627", 
+"@target": "node1159628"
 }, 
-"edge1076430": {
-"@source": "node1076426", 
-"@target": "node1076430"
+"edge1159631": {
+"@length": 0.0020000000000000018, 
+"@source": "node1159627", 
+"@target": "node1159631"
 }
 }, 
-"node1076427": {
-"edge1076428": {
-"@source": "node1076427", 
-"@target": "node1076428"
+"node1159628": {
+"edge1159629": {
+"@length": 0.024999999999999994, 
+"@source": "node1159628", 
+"@target": "node1159629"
 }, 
-"edge1076429": {
-"@source": "node1076427", 
-"@target": "node1076429"
+"edge1159630": {
+"@length": 0.016999999999999987, 
+"@source": "node1159628", 
+"@target": "node1159630"
 }
 }, 
-"node1076430": {
-"edge1076431": {
-"@source": "node1076430", 
-"@target": "node1076431"
+"node1159631": {
+"edge1159632": {
+"@length": 0.017000000000000015, 
+"@source": "node1159631", 
+"@target": "node1159632"
 }, 
-"edge1076434": {
-"@source": "node1076430", 
-"@target": "node1076434"
+"edge1159635": {
+"@length": 0.01100000000000001, 
+"@source": "node1159631", 
+"@target": "node1159635"
 }
 }, 
-"node1076431": {
-"edge1076432": {
-"@source": "node1076431", 
-"@target": "node1076432"
+"node1159632": {
+"edge1159633": {
+"@length": 0.04000000000000001, 
+"@source": "node1159632", 
+"@target": "node1159633"
 }, 
-"edge1076433": {
-"@source": "node1076431", 
-"@target": "node1076433"
+"edge1159634": {
+"@length": 0.05299999999999999, 
+"@source": "node1159632", 
+"@target": "node1159634"
 }
 }, 
-"node1076434": {
-"edge1076435": {
-"@source": "node1076434", 
-"@target": "node1076435"
+"node1159635": {
+"edge1159636": {
+"@length": 0.009000000000000008, 
+"@source": "node1159635", 
+"@target": "node1159636"
 }, 
-"edge1076440": {
-"@source": "node1076434", 
-"@target": "node1076440"
+"edge1159641": {
+"@length": 0.037000000000000005, 
+"@source": "node1159635", 
+"@target": "node1159641"
 }
 }, 
-"node1076435": {
-"edge1076436": {
-"@source": "node1076435", 
-"@target": "node1076436"
+"node1159636": {
+"edge1159637": {
+"@length": 0.025999999999999995, 
+"@source": "node1159636", 
+"@target": "node1159637"
 }, 
-"edge1076437": {
-"@source": "node1076435", 
-"@target": "node1076437"
+"edge1159640": {
+"@length": 0.037000000000000005, 
+"@source": "node1159636", 
+"@target": "node1159640"
 }
 }, 
-"node1076437": {
-"edge1076438": {
-"@source": "node1076437", 
-"@target": "node1076438"
+"node1159637": {
+"edge1159638": {
+"@length": 0.026999999999999996, 
+"@source": "node1159637", 
+"@target": "node1159638"
 }, 
-"edge1076439": {
-"@source": "node1076437", 
-"@target": "node1076439"
+"edge1159639": {
+"@length": 0.023999999999999994, 
+"@source": "node1159637", 
+"@target": "node1159639"
 }
 }, 
-"node1076440": {
-"edge1076441": {
-"@source": "node1076440", 
-"@target": "node1076441"
+"node1159641": {
+"edge1159642": {
+"@length": 0.0040000000000000036, 
+"@source": "node1159641", 
+"@target": "node1159642"
 }, 
-"edge1076442": {
-"@source": "node1076440", 
-"@target": "node1076442"
+"edge1159647": {
+"@length": 0.02099999999999999, 
+"@source": "node1159641", 
+"@target": "node1159647"
 }
 }, 
-"node1076442": {
-"edge1076443": {
-"@source": "node1076442", 
-"@target": "node1076443"
+"node1159642": {
+"edge1159643": {
+"@length": 0.014000000000000012, 
+"@source": "node1159642", 
+"@target": "node1159643"
 }, 
-"edge1076444": {
-"@source": "node1076442", 
-"@target": "node1076444"
+"edge1159644": {
+"@length": 0.010000000000000009, 
+"@source": "node1159642", 
+"@target": "node1159644"
 }
 }, 
-"node1076444": {
-"edge1076445": {
-"@source": "node1076444", 
-"@target": "node1076445"
+"node1159644": {
+"edge1159645": {
+"@length": 0.009000000000000008, 
+"@source": "node1159644", 
+"@target": "node1159645"
 }, 
-"edge1076446": {
-"@source": "node1076444", 
-"@target": "node1076446"
+"edge1159646": {
+"@length": 0.010000000000000009, 
+"@source": "node1159644", 
+"@target": "node1159646"
 }
 }
 }, 
 "nodeById": {
-"node1076420": {
+"node1159622": {
 "@root": true
 }, 
-"node1076421": {}, 
-"node1076422": {
+"node1159623": {}, 
+"node1159624": {
 "@otu": "otu401571"
 }, 
-"node1076423": {
+"node1159625": {
 "@otu": "otu401572"
 }, 
-"node1076424": {}, 
-"node1076425": {
-"@otu": "otu401573"
-}, 
-"node1076426": {}, 
-"node1076427": {}, 
-"node1076428": {
+"node1159626": {}, 
+"node1159627": {}, 
+"node1159628": {}, 
+"node1159629": {
 "@otu": "otu401574"
 }, 
-"node1076429": {
+"node1159630": {
 "@otu": "otu401575"
 }, 
-"node1076430": {}, 
-"node1076431": {}, 
-"node1076432": {
+"node1159631": {}, 
+"node1159632": {}, 
+"node1159633": {
 "@otu": "otu401576"
 }, 
-"node1076433": {
+"node1159634": {
 "@otu": "otu401577"
 }, 
-"node1076434": {}, 
-"node1076435": {}, 
-"node1076436": {
-"@otu": "otu401578"
-}, 
-"node1076437": {}, 
-"node1076438": {
+"node1159635": {}, 
+"node1159636": {}, 
+"node1159637": {}, 
+"node1159638": {
 "@otu": "otu401579"
 }, 
-"node1076439": {
+"node1159639": {
 "@otu": "otu401580"
 }, 
-"node1076440": {}, 
-"node1076441": {
-"@otu": "otu401581"
+"node1159640": {
+"@otu": "otu401578"
 }, 
-"node1076442": {}, 
-"node1076443": {
+"node1159641": {}, 
+"node1159642": {}, 
+"node1159643": {
 "@otu": "otu401582"
 }, 
-"node1076444": {}, 
-"node1076445": {
+"node1159644": {}, 
+"node1159645": {
 "@otu": "otu401583"
 }, 
-"node1076446": {
+"node1159646": {
 "@otu": "otu401584"
+}, 
+"node1159647": {
+"@otu": "otu401581"
+}, 
+"node1159648": {
+"@otu": "otu401573"
 }
 }
 }

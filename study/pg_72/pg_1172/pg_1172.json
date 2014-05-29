@@ -19,48 +19,11 @@
 "@id": "peyotl-validator", 
 "@name": "validate_ot_nexson.py", 
 "@url": "https://github.com/OpenTreeOfLife/peyotl", 
-"@version": "0.0.3a", 
+"@version": "0.0.4a", 
 "invocation": {
-"checksPerformed": [
-"MISSING_MANDATORY_KEY", 
-"MISSING_OPTIONAL_KEY", 
-"UNRECOGNIZED_KEY", 
-"MISSING_LIST_EXPECTED", 
-"DUPLICATING_SINGLETON_KEY", 
-"REFERENCED_ID_NOT_FOUND", 
-"REPEATED_ID", 
-"REPEATED_OTU", 
-"MULTIPLE_ROOT_NODES", 
-"NO_ROOT_NODE", 
-"MULTIPLE_EDGES_FOR_NODES", 
-"CYCLE_DETECTED", 
-"DISCONNECTED_GRAPH_DETECTED", 
-"INCORRECT_ROOT_NODE_LABEL", 
-"TIP_WITHOUT_OTU", 
-"TIP_WITHOUT_OTT_ID", 
-"MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
-"NON_MONOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
-"INVALID_PROPERTY_VALUE", 
-"PROPERTY_VALUE_NOT_USEFUL", 
-"UNRECOGNIZED_PROPERTY_VALUE", 
-"MULTIPLE_TREES", 
-"UNRECOGNIZED_TAG", 
-"CONFLICTING_PROPERTY_VALUES", 
-"NO_TREES", 
-"DEPRECATED_PROPERTY", 
-"UNPARSEABLE_META", 
-"UNREACHABLE_NODE", 
-"INCORRECT_VALUE_TYPE", 
-"MISSING_CRUCIAL_CONTENT"
-], 
 "commandLine": [
 "--embed", 
-"--agent-only", 
-"-e", 
-"../mig-phyelesystem-scratch/1172/validation.json", 
-"-o", 
-"../mig-phyelesystem-scratch/1172/final.json", 
-"../mig-phyelesystem-scratch/1172/v1.2.1-1172.json"
+"--agent-only"
 ], 
 "otherProperty": [
 {
@@ -76,9 +39,16 @@
 }
 ]
 }, 
+"^ot:annotationEvents": {
+"annotation": []
+}, 
+"^ot:candidateTreeForSynthesis": [], 
 "^ot:curatorName": "Romina Gazis", 
 "^ot:focalClade": 940665, 
 "^ot:focalCladeOTTTaxonName": "Sydowiellaceae", 
+"^ot:messages": {
+"message": []
+}, 
 "^ot:otusElementOrder": [
 "otus1172"
 ], 
@@ -86,8 +56,9 @@
 "^ot:studyPublication": {
 "@href": "http://dx.doi.org/10.3852/11-163"
 }, 
-"^ot:studyPublicationReference": "Kruys, \u00c5sa, and Lisa A. Castlebury. \"Molecular phylogeny of Sydowiellaceae\u2014resolving the position of Cainiella.\" Mycologia 104, no. 2 (2012): 419-426.", 
+"^ot:studyPublicationReference": "Kruys, \u00c5sa, and Lisa A. Castlebury. 2012. Molecular phylogeny of Sydowiellaceae\u2014resolving the position of Cainiella. Mycologia 104 (2): 419-426.", 
 "^ot:studyYear": 2012, 
+"^ot:tag": [], 
 "^ot:treesElementOrder": [
 "trees1172"
 ], 
@@ -130,13 +101,19 @@
 "^ot:ottTaxonName": "Gnomonia rubi"
 }, 
 "otu229369": {
-"^ot:originalLabel": "Gnomonia fragariae CBS146.65 EF212844"
+"^ot:originalLabel": "Gnomonia fragariae CBS146.65 EF212844", 
+"^ot:ottId": 5316726, 
+"^ot:ottTaxonName": "Gnomonia comari"
 }, 
 "otu229370": {
-"^ot:originalLabel": "Gnomonia fragariae EF212843"
+"^ot:originalLabel": "Gnomonia fragariae EF212843", 
+"^ot:ottId": 5316726, 
+"^ot:ottTaxonName": "Gnomonia comari"
 }, 
 "otu229371": {
-"^ot:originalLabel": "Gnomonia fragariae EF212842"
+"^ot:originalLabel": "Gnomonia fragariae EF212842", 
+"^ot:ottId": 5316726, 
+"^ot:ottTaxonName": "Gnomonia comari"
 }, 
 "otu229372": {
 "^ot:originalLabel": "Hapalocystis berkeleyi AR3870its", 
@@ -154,13 +131,19 @@
 "^ot:ottTaxonName": "Winterella aurantiaca"
 }, 
 "otu229375": {
-"^ot:originalLabel": "Prosthecium innesii ar3831its"
+"^ot:originalLabel": "Prosthecium innesii ar3831its", 
+"^ot:ottId": 5308663, 
+"^ot:ottTaxonName": "Prosthecium platanoidis"
 }, 
 "otu229376": {
-"^ot:originalLabel": "Prosthecium innesii ar3639its"
+"^ot:originalLabel": "Prosthecium innesii ar3639its", 
+"^ot:ottId": 5308663, 
+"^ot:ottTaxonName": "Prosthecium platanoidis"
 }, 
 "otu229377": {
-"^ot:originalLabel": "Prosthecium innesii ar3925its"
+"^ot:originalLabel": "Prosthecium innesii ar3925its", 
+"^ot:ottId": 5308663, 
+"^ot:ottTaxonName": "Prosthecium platanoidis"
 }, 
 "otu229378": {
 "^ot:originalLabel": "Cainiella johansonii Kruys727ITS", 
@@ -229,8 +212,14 @@
 "treeById": {
 "tree2370": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "MP, ITS", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node556751", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node556751": {
 "edge556752": {
@@ -586,9 +575,15 @@
 }, 
 "tree5809": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "BI, ITS (rooted)", 
 "^ot:inGroupClade": "node992574", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node992573", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node992573": {
 "edge992574": {

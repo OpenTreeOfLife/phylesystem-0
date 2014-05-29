@@ -19,48 +19,11 @@
 "@id": "peyotl-validator", 
 "@name": "validate_ot_nexson.py", 
 "@url": "https://github.com/OpenTreeOfLife/peyotl", 
-"@version": "0.0.3a", 
+"@version": "0.0.4a", 
 "invocation": {
-"checksPerformed": [
-"MISSING_MANDATORY_KEY", 
-"MISSING_OPTIONAL_KEY", 
-"UNRECOGNIZED_KEY", 
-"MISSING_LIST_EXPECTED", 
-"DUPLICATING_SINGLETON_KEY", 
-"REFERENCED_ID_NOT_FOUND", 
-"REPEATED_ID", 
-"REPEATED_OTU", 
-"MULTIPLE_ROOT_NODES", 
-"NO_ROOT_NODE", 
-"MULTIPLE_EDGES_FOR_NODES", 
-"CYCLE_DETECTED", 
-"DISCONNECTED_GRAPH_DETECTED", 
-"INCORRECT_ROOT_NODE_LABEL", 
-"TIP_WITHOUT_OTU", 
-"TIP_WITHOUT_OTT_ID", 
-"MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
-"NON_MONOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
-"INVALID_PROPERTY_VALUE", 
-"PROPERTY_VALUE_NOT_USEFUL", 
-"UNRECOGNIZED_PROPERTY_VALUE", 
-"MULTIPLE_TREES", 
-"UNRECOGNIZED_TAG", 
-"CONFLICTING_PROPERTY_VALUES", 
-"NO_TREES", 
-"DEPRECATED_PROPERTY", 
-"UNPARSEABLE_META", 
-"UNREACHABLE_NODE", 
-"INCORRECT_VALUE_TYPE", 
-"MISSING_CRUCIAL_CONTENT"
-], 
 "commandLine": [
 "--embed", 
-"--agent-only", 
-"-e", 
-"../mig-phyelesystem-scratch/1028/validation.json", 
-"-o", 
-"../mig-phyelesystem-scratch/1028/final.json", 
-"../mig-phyelesystem-scratch/1028/v1.2.1-1028.json"
+"--agent-only"
 ], 
 "otherProperty": [
 {
@@ -76,12 +39,19 @@
 }
 ]
 }, 
+"^ot:annotationEvents": {
+"annotation": []
+}, 
+"^ot:candidateTreeForSynthesis": [], 
 "^ot:curatorName": "Romina Gazis", 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S2209"
 }, 
 "^ot:focalClade": 829585, 
 "^ot:focalCladeOTTTaxonName": "Peyronelina", 
+"^ot:messages": {
+"message": []
+}, 
 "^ot:otusElementOrder": [
 "otus1028"
 ], 
@@ -92,8 +62,8 @@
 "^ot:studyPublicationReference": "Degawa Y., Nakagiri A., & Yamaguchi K. 2008. An aero-aquatic fungus, Peyronelina glomerulata, is shown to have teleomorphic affinities with cyphelloid basidiomycetes. Mycoscience, 50:156\u2013164", 
 "^ot:studyYear": 2008, 
 "^ot:tag": [
-"NJ", 
-"LSU"
+"LSU", 
+"NJ"
 ], 
 "^ot:treesElementOrder": [
 "trees1028"
@@ -283,6 +253,8 @@
 }, 
 "otu215150": {
 "^ot:originalLabel": "Entoloma eulividum AF261295", 
+"^ot:ottId": 174906, 
+"^ot:ottTaxonName": "Entoloma sinuatum", 
 "^ot:treebaseOTUId": "Tl103058"
 }, 
 "otu215151": {
@@ -335,6 +307,8 @@
 }, 
 "otu215159": {
 "^ot:originalLabel": "Woldmaria crocea AY571026", 
+"^ot:ottId": 5304327, 
+"^ot:ottTaxonName": "Woldmaria filicina", 
 "^ot:treebaseOTUId": "Tl103067"
 }, 
 "otu215160": {
@@ -483,9 +457,16 @@
 "treeById": {
 "tree1975": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "NJ, LSU", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node507656", 
-"^ot:tag": "delete me", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [
+"delete me"
+], 
 "edgeBySourceId": {
 "node507656": {
 "edge507657": {
@@ -1345,9 +1326,16 @@
 }, 
 "tree5762": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "NJ, LSU (rooted)", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node985683", 
-"^ot:tag": "delete me", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [
+"delete me"
+], 
 "edgeBySourceId": {
 "node985683": {
 "edge985684": {
@@ -2207,9 +2195,14 @@
 }, 
 "tree5763": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "NJ, LSU (rooted)", 
 "^ot:inGroupClade": "node985806", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node985805", 
+"^ot:specifiedRoot": "", 
 "^ot:tag": [
 "NJ", 
 "LSU"

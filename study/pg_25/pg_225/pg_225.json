@@ -19,48 +19,11 @@
 "@id": "peyotl-validator", 
 "@name": "validate_ot_nexson.py", 
 "@url": "https://github.com/OpenTreeOfLife/peyotl", 
-"@version": "0.0.3a", 
+"@version": "0.0.4a", 
 "invocation": {
-"checksPerformed": [
-"MISSING_MANDATORY_KEY", 
-"MISSING_OPTIONAL_KEY", 
-"UNRECOGNIZED_KEY", 
-"MISSING_LIST_EXPECTED", 
-"DUPLICATING_SINGLETON_KEY", 
-"REFERENCED_ID_NOT_FOUND", 
-"REPEATED_ID", 
-"REPEATED_OTU", 
-"MULTIPLE_ROOT_NODES", 
-"NO_ROOT_NODE", 
-"MULTIPLE_EDGES_FOR_NODES", 
-"CYCLE_DETECTED", 
-"DISCONNECTED_GRAPH_DETECTED", 
-"INCORRECT_ROOT_NODE_LABEL", 
-"TIP_WITHOUT_OTU", 
-"TIP_WITHOUT_OTT_ID", 
-"MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
-"NON_MONOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
-"INVALID_PROPERTY_VALUE", 
-"PROPERTY_VALUE_NOT_USEFUL", 
-"UNRECOGNIZED_PROPERTY_VALUE", 
-"MULTIPLE_TREES", 
-"UNRECOGNIZED_TAG", 
-"CONFLICTING_PROPERTY_VALUES", 
-"NO_TREES", 
-"DEPRECATED_PROPERTY", 
-"UNPARSEABLE_META", 
-"UNREACHABLE_NODE", 
-"INCORRECT_VALUE_TYPE", 
-"MISSING_CRUCIAL_CONTENT"
-], 
 "commandLine": [
 "--embed", 
-"--agent-only", 
-"-e", 
-"../mig-phyelesystem-scratch/225/validation.json", 
-"-o", 
-"../mig-phyelesystem-scratch/225/final.json", 
-"../mig-phyelesystem-scratch/225/v1.2.1-225.json"
+"--agent-only"
 ], 
 "otherProperty": [
 {
@@ -76,9 +39,16 @@
 }
 ]
 }, 
+"^ot:annotationEvents": {
+"annotation": []
+}, 
+"^ot:candidateTreeForSynthesis": [], 
 "^ot:curatorName": "Evgeny Mavrodiev", 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S1673"
+}, 
+"^ot:messages": {
+"message": []
 }, 
 "^ot:otusElementOrder": [
 "otus225"
@@ -89,7 +59,9 @@
 }, 
 "^ot:studyPublicationReference": "Qiu, Y.-L., Li, L., Wang, B., Chen, Z., Knoop, V., Groth-Malonek, M., Dombrovska, O., Lee, J., Kent, L., Rest, J. S., Estabrook, G. F., Hendry, T. A., Taylor, D. W., Testa, C. M., Ambros, M., Crandall-Stotler, B., Duff, R. J., Stech, M., Frey, W., Quandt, D., & Davis, C. C. 2006. The deepest divergences in land plants inferred from phylogenomic evidence. Proc. National Acad. Sci. U.S.A. 103: 15511-15516.", 
 "^ot:studyYear": 2006, 
-"^ot:tag": "ingroup added;", 
+"^ot:tag": [
+"ingroup added;"
+], 
 "^ot:treesElementOrder": [
 "trees225"
 ], 
@@ -105,11 +77,13 @@
 "otu366477": {
 "^ot:originalLabel": "Lotus japonicus", 
 "^ot:ottId": 1081728, 
+"^ot:ottTaxonName": "Lotus japonicus", 
 "^ot:treebaseOTUId": "Tl11749"
 }, 
 "otu366478": {
 "^ot:originalLabel": "Mesostigma viride", 
 "^ot:ottId": 976425, 
+"^ot:ottTaxonName": "Mesostigma viride", 
 "^ot:treebaseOTUId": "Tl12904"
 }, 
 "otu366479": {
@@ -145,11 +119,13 @@
 "otu366484": {
 "^ot:originalLabel": "Eucalyptus globulus", 
 "^ot:ottId": 847929, 
+"^ot:ottTaxonName": "Eucalyptus globulus", 
 "^ot:treebaseOTUId": "Tl21398"
 }, 
 "otu366485": {
 "^ot:originalLabel": "Oenothera elata", 
 "^ot:ottId": 536540, 
+"^ot:ottTaxonName": "Oenothera elata", 
 "^ot:treebaseOTUId": "Tl2143"
 }, 
 "otu366486": {
@@ -173,6 +149,7 @@
 "otu366489": {
 "^ot:originalLabel": "Takakia", 
 "^ot:ottId": 79113, 
+"^ot:ottTaxonName": "Takakia", 
 "^ot:treebaseOTUId": "Tl232769"
 }, 
 "otu366490": {
@@ -190,12 +167,13 @@
 "otu366492": {
 "^ot:originalLabel": "Nicotiana tabacum", 
 "^ot:ottId": 222787, 
+"^ot:ottTaxonName": "Nicotiana tabacum", 
 "^ot:treebaseOTUId": "Tl232775"
 }, 
 "otu366493": {
-"^ot:altLabel": "Adiantum capillus-veneris", 
 "^ot:originalLabel": "Adiantum capillus veneris", 
 "^ot:ottId": 164357, 
+"^ot:ottTaxonName": "Adiantum capillus-veneris", 
 "^ot:treebaseOTUId": "Tl232776"
 }, 
 "otu366494": {
@@ -231,6 +209,7 @@
 "otu366499": {
 "^ot:originalLabel": "Acorus calamus", 
 "^ot:ottId": 1008193, 
+"^ot:ottTaxonName": "Acorus calamus", 
 "^ot:treebaseOTUId": "Tl232801"
 }, 
 "otu366500": {
@@ -254,6 +233,7 @@
 "otu366503": {
 "^ot:originalLabel": "Amborella trichopoda", 
 "^ot:ottId": 303950, 
+"^ot:ottTaxonName": "Amborella trichopoda", 
 "^ot:treebaseOTUId": "Tl232811"
 }, 
 "otu366504": {
@@ -283,6 +263,7 @@
 "otu366508": {
 "^ot:originalLabel": "Pinus koraiensis", 
 "^ot:ottId": 830806, 
+"^ot:ottTaxonName": "Pinus koraiensis", 
 "^ot:treebaseOTUId": "Tl232831"
 }, 
 "otu366509": {
@@ -300,11 +281,13 @@
 "otu366511": {
 "^ot:originalLabel": "Gossypium hirsutum", 
 "^ot:ottId": 854480, 
+"^ot:ottTaxonName": "Gossypium hirsutum", 
 "^ot:treebaseOTUId": "Tl232838"
 }, 
 "otu366512": {
 "^ot:originalLabel": "Atropa belladonna", 
 "^ot:ottId": 232448, 
+"^ot:ottTaxonName": "Atropa belladonna", 
 "^ot:treebaseOTUId": "Tl232847"
 }, 
 "otu366513": {
@@ -328,11 +311,13 @@
 "otu366516": {
 "^ot:originalLabel": "Physcomitrella patens", 
 "^ot:ottId": 821359, 
+"^ot:ottTaxonName": "Physcomitrella patens", 
 "^ot:treebaseOTUId": "Tl232855"
 }, 
 "otu366517": {
 "^ot:originalLabel": "Cucumis sativus", 
 "^ot:ottId": 1006246, 
+"^ot:ottTaxonName": "Cucumis sativus", 
 "^ot:treebaseOTUId": "Tl232856"
 }, 
 "otu366518": {
@@ -350,6 +335,7 @@
 "otu366520": {
 "^ot:originalLabel": "Pinus thunbergii", 
 "^ot:ottId": 1075728, 
+"^ot:ottTaxonName": "Pinus thunbergii", 
 "^ot:treebaseOTUId": "Tl232863"
 }, 
 "otu366521": {
@@ -367,6 +353,7 @@
 "otu366523": {
 "^ot:originalLabel": "Nicotiana", 
 "^ot:ottId": 797191, 
+"^ot:ottTaxonName": "Nicotiana", 
 "^ot:treebaseOTUId": "Tl232869"
 }, 
 "otu366524": {
@@ -384,6 +371,7 @@
 "otu366526": {
 "^ot:originalLabel": "Sphagnum", 
 "^ot:ottId": 738989, 
+"^ot:ottTaxonName": "Sphagnum", 
 "^ot:treebaseOTUId": "Tl232879"
 }, 
 "otu366527": {
@@ -395,6 +383,7 @@
 "otu366528": {
 "^ot:originalLabel": "Helianthus annuus", 
 "^ot:ottId": 515712, 
+"^ot:ottTaxonName": "Helianthus annuus", 
 "^ot:treebaseOTUId": "Tl232885"
 }, 
 "otu366529": {
@@ -436,6 +425,7 @@
 "otu366535": {
 "^ot:originalLabel": "Psilotum nudum", 
 "^ot:ottId": 144810, 
+"^ot:ottTaxonName": "Psilotum nudum", 
 "^ot:treebaseOTUId": "Tl232921"
 }, 
 "otu366536": {
@@ -453,6 +443,7 @@
 "otu366538": {
 "^ot:originalLabel": "Arabidopsis", 
 "^ot:ottId": 309275, 
+"^ot:ottTaxonName": "Arabidopsis", 
 "^ot:treebaseOTUId": "Tl232937"
 }, 
 "otu366539": {
@@ -464,6 +455,7 @@
 "otu366540": {
 "^ot:originalLabel": "Spinacia oleracea", 
 "^ot:ottId": 317784, 
+"^ot:ottTaxonName": "Spinacia oleracea", 
 "^ot:treebaseOTUId": "Tl232942"
 }, 
 "otu366541": {
@@ -517,11 +509,13 @@
 "otu366549": {
 "^ot:originalLabel": "Triticum aestivum", 
 "^ot:ottId": 31926, 
+"^ot:ottTaxonName": "Triticum aestivum", 
 "^ot:treebaseOTUId": "Tl232975"
 }, 
 "otu366550": {
 "^ot:originalLabel": "Zea mays", 
 "^ot:ottId": 605194, 
+"^ot:ottTaxonName": "Zea mays", 
 "^ot:treebaseOTUId": "Tl232979"
 }, 
 "otu366551": {
@@ -533,16 +527,19 @@
 "otu366552": {
 "^ot:originalLabel": "Arabidopsis thaliana", 
 "^ot:ottId": 309263, 
+"^ot:ottTaxonName": "Arabidopsis thaliana", 
 "^ot:treebaseOTUId": "Tl232991"
 }, 
 "otu366553": {
 "^ot:originalLabel": "Nymphaea alba", 
 "^ot:ottId": 1081719, 
+"^ot:ottTaxonName": "Nymphaea alba", 
 "^ot:treebaseOTUId": "Tl26155"
 }, 
 "otu366554": {
 "^ot:originalLabel": "Vitis vinifera", 
 "^ot:ottId": 756728, 
+"^ot:ottTaxonName": "Vitis vinifera", 
 "^ot:treebaseOTUId": "Tl26169"
 }, 
 "otu366555": {
@@ -710,6 +707,7 @@
 "otu366582": {
 "^ot:originalLabel": "Marchantia polymorpha", 
 "^ot:ottId": 56596, 
+"^ot:ottTaxonName": "Marchantia polymorpha", 
 "^ot:treebaseOTUId": "Tl32877"
 }, 
 "otu366583": {
@@ -1297,67 +1295,79 @@
 "otu366680": {
 "^ot:originalLabel": "Staurastrum punctulatum", 
 "^ot:ottId": 36847, 
+"^ot:ottTaxonName": "Staurastrum punctulatum", 
 "^ot:treebaseOTUId": "Tl43526"
 }, 
 "otu366681": {
 "^ot:originalLabel": "Zygnema circumcarinatum", 
 "^ot:ottId": 331827, 
+"^ot:ottTaxonName": "Zygnema circumcarinatum", 
 "^ot:treebaseOTUId": "Tl43527"
 }, 
 "otu366682": {
 "^ot:originalLabel": "Phalaenopsis aphrodite", 
 "^ot:ottId": 376677, 
+"^ot:ottTaxonName": "Phalaenopsis aphrodite", 
 "^ot:treebaseOTUId": "Tl43528"
 }, 
 "otu366683": {
 "^ot:originalLabel": "Panax ginseng", 
 "^ot:ottId": 524063, 
+"^ot:ottTaxonName": "Panax ginseng", 
 "^ot:treebaseOTUId": "Tl43529"
 }, 
 "otu366684": {
 "^ot:originalLabel": "Anthoceros formosae", 
 "^ot:ottId": 295683, 
+"^ot:ottTaxonName": "Anthoceros formosae", 
 "^ot:treebaseOTUId": "Tl43530"
 }, 
 "otu366685": {
 "^ot:originalLabel": "Chaetosphaeridium globosum", 
 "^ot:ottId": 930072, 
+"^ot:ottTaxonName": "Chaetosphaeridium globosum", 
 "^ot:treebaseOTUId": "Tl43531"
 }, 
 "otu366686": {
-"^ot:altLabel": "Oryza sativa Japonica Group", 
 "^ot:originalLabel": "Oryza sativa japonica", 
 "^ot:ottId": 964630, 
+"^ot:ottTaxonName": "Oryza sativa Japonica Group", 
 "^ot:treebaseOTUId": "Tl43534"
 }, 
 "otu366687": {
 "^ot:originalLabel": "Chara vulgaris", 
 "^ot:ottId": 567853, 
+"^ot:ottTaxonName": "Chara vulgaris", 
 "^ot:treebaseOTUId": "Tl43535"
 }, 
 "otu366688": {
 "^ot:originalLabel": "Selaginella uncinata", 
 "^ot:ottId": 743291, 
+"^ot:ottTaxonName": "Selaginella uncinata", 
 "^ot:treebaseOTUId": "Tl43536"
 }, 
 "otu366689": {
 "^ot:originalLabel": "Huperzia lucidula", 
 "^ot:ottId": 79108, 
+"^ot:ottTaxonName": "Huperzia lucidula", 
 "^ot:treebaseOTUId": "Tl43537"
 }, 
 "otu366690": {
 "^ot:originalLabel": "Calycanthus floridus", 
 "^ot:ottId": 890686, 
+"^ot:ottTaxonName": "Calycanthus floridus", 
 "^ot:treebaseOTUId": "Tl4847"
 }, 
 "otu366691": {
 "^ot:originalLabel": "Nephroselmis olivacea", 
 "^ot:ottId": 439268, 
+"^ot:ottTaxonName": "Nephroselmis olivacea", 
 "^ot:treebaseOTUId": "Tl4890"
 }, 
 "otu366692": {
 "^ot:originalLabel": "Lactuca sativa", 
 "^ot:ottId": 515700, 
+"^ot:ottTaxonName": "Lactuca sativa", 
 "^ot:treebaseOTUId": "Tl5270"
 }, 
 "otu366693": {
@@ -1469,10 +1479,17 @@
 "treeById": {
 "tree5499": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "Fig. 1A", 
 "^ot:inGroupClade": "node947111", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node947110", 
-"^ot:tag": "delete me", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [
+"delete me"
+], 
 "edgeBySourceId": {
 "node947110": {
 "edge947111": {
@@ -3879,9 +3896,15 @@
 }, 
 "tree5991": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "ML bootstrap consensus topology", 
 "^ot:inGroupClade": "node1018067", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node1018062", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node1018062": {
 "edge1018063": {

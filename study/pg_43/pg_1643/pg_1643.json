@@ -19,48 +19,11 @@
 "@id": "peyotl-validator", 
 "@name": "validate_ot_nexson.py", 
 "@url": "https://github.com/OpenTreeOfLife/peyotl", 
-"@version": "0.0.3a", 
+"@version": "0.0.4a", 
 "invocation": {
-"checksPerformed": [
-"MISSING_MANDATORY_KEY", 
-"MISSING_OPTIONAL_KEY", 
-"UNRECOGNIZED_KEY", 
-"MISSING_LIST_EXPECTED", 
-"DUPLICATING_SINGLETON_KEY", 
-"REFERENCED_ID_NOT_FOUND", 
-"REPEATED_ID", 
-"REPEATED_OTU", 
-"MULTIPLE_ROOT_NODES", 
-"NO_ROOT_NODE", 
-"MULTIPLE_EDGES_FOR_NODES", 
-"CYCLE_DETECTED", 
-"DISCONNECTED_GRAPH_DETECTED", 
-"INCORRECT_ROOT_NODE_LABEL", 
-"TIP_WITHOUT_OTU", 
-"TIP_WITHOUT_OTT_ID", 
-"MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
-"NON_MONOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
-"INVALID_PROPERTY_VALUE", 
-"PROPERTY_VALUE_NOT_USEFUL", 
-"UNRECOGNIZED_PROPERTY_VALUE", 
-"MULTIPLE_TREES", 
-"UNRECOGNIZED_TAG", 
-"CONFLICTING_PROPERTY_VALUES", 
-"NO_TREES", 
-"DEPRECATED_PROPERTY", 
-"UNPARSEABLE_META", 
-"UNREACHABLE_NODE", 
-"INCORRECT_VALUE_TYPE", 
-"MISSING_CRUCIAL_CONTENT"
-], 
 "commandLine": [
 "--embed", 
-"--agent-only", 
-"-e", 
-"../mig-phyelesystem-scratch/1643/validation.json", 
-"-o", 
-"../mig-phyelesystem-scratch/1643/final.json", 
-"../mig-phyelesystem-scratch/1643/v1.2.1-1643.json"
+"--agent-only"
 ], 
 "otherProperty": [
 {
@@ -76,12 +39,19 @@
 }
 ]
 }, 
+"^ot:annotationEvents": {
+"annotation": []
+}, 
+"^ot:candidateTreeForSynthesis": [], 
 "^ot:curatorName": "Romina Gazis", 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S10005"
 }, 
 "^ot:focalClade": 880965, 
 "^ot:focalCladeOTTTaxonName": "Pezizaceae", 
+"^ot:messages": {
+"message": []
+}, 
 "^ot:otusElementOrder": [
 "otus1643"
 ], 
@@ -91,6 +61,7 @@
 }, 
 "^ot:studyPublicationReference": "Hansen K., L\u00e6ss\u00f8e T., & Pfister D. 2001. Phylogenetics of the Pezizaceae, with an emphasis on Peziza. Mycologia, 93(5): 958-990.", 
 "^ot:studyYear": 2001, 
+"^ot:tag": [], 
 "^ot:treesElementOrder": [
 "trees1643"
 ], 
@@ -141,6 +112,8 @@
 }, 
 "otu268193": {
 "^ot:originalLabel": "Peziza vacinii", 
+"^ot:ottId": 5303221, 
+"^ot:ottTaxonName": "Peziza vacini", 
 "^ot:treebaseOTUId": "Tl256992"
 }, 
 "otu268194": {
@@ -181,6 +154,8 @@
 }, 
 "otu268200": {
 "^ot:originalLabel": "Peziza subcitrina 2", 
+"^ot:ottId": 5303249, 
+"^ot:ottTaxonName": "Peziza aurata", 
 "^ot:treebaseOTUId": "Tl256999"
 }, 
 "otu268201": {
@@ -413,6 +388,8 @@
 }, 
 "otu268240": {
 "^ot:originalLabel": "Peziza subcitrina 1", 
+"^ot:ottId": 5303249, 
+"^ot:ottTaxonName": "Peziza aurata", 
 "^ot:treebaseOTUId": "Tl257039"
 }, 
 "otu268241": {
@@ -628,10 +605,17 @@
 "treeById": {
 "tree3319": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "MP, LSU", 
 "^ot:inGroupClade": "node662715", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node662713", 
-"^ot:tag": "LSU", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [
+"LSU"
+], 
 "edgeBySourceId": {
 "node662713": {
 "edge662714": {
@@ -1890,9 +1874,15 @@
 }, 
 "tree3320": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "ML, LSU", 
 "^ot:inGroupClade": "node662894", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node662892", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node662892": {
 "edge662893": {

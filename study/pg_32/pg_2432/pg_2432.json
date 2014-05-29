@@ -19,48 +19,11 @@
 "@id": "peyotl-validator", 
 "@name": "validate_ot_nexson.py", 
 "@url": "https://github.com/OpenTreeOfLife/peyotl", 
-"@version": "0.0.3a", 
+"@version": "0.0.4a", 
 "invocation": {
-"checksPerformed": [
-"MISSING_MANDATORY_KEY", 
-"MISSING_OPTIONAL_KEY", 
-"UNRECOGNIZED_KEY", 
-"MISSING_LIST_EXPECTED", 
-"DUPLICATING_SINGLETON_KEY", 
-"REFERENCED_ID_NOT_FOUND", 
-"REPEATED_ID", 
-"REPEATED_OTU", 
-"MULTIPLE_ROOT_NODES", 
-"NO_ROOT_NODE", 
-"MULTIPLE_EDGES_FOR_NODES", 
-"CYCLE_DETECTED", 
-"DISCONNECTED_GRAPH_DETECTED", 
-"INCORRECT_ROOT_NODE_LABEL", 
-"TIP_WITHOUT_OTU", 
-"TIP_WITHOUT_OTT_ID", 
-"MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
-"NON_MONOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
-"INVALID_PROPERTY_VALUE", 
-"PROPERTY_VALUE_NOT_USEFUL", 
-"UNRECOGNIZED_PROPERTY_VALUE", 
-"MULTIPLE_TREES", 
-"UNRECOGNIZED_TAG", 
-"CONFLICTING_PROPERTY_VALUES", 
-"NO_TREES", 
-"DEPRECATED_PROPERTY", 
-"UNPARSEABLE_META", 
-"UNREACHABLE_NODE", 
-"INCORRECT_VALUE_TYPE", 
-"MISSING_CRUCIAL_CONTENT"
-], 
 "commandLine": [
 "--embed", 
-"--agent-only", 
-"-e", 
-"../mig-phyelesystem-scratch/2432/validation.json", 
-"-o", 
-"../mig-phyelesystem-scratch/2432/final.json", 
-"../mig-phyelesystem-scratch/2432/v1.2.1-2432.json"
+"--agent-only"
 ], 
 "otherProperty": [
 {
@@ -76,12 +39,19 @@
 }
 ]
 }, 
+"^ot:annotationEvents": {
+"annotation": []
+}, 
+"^ot:candidateTreeForSynthesis": [], 
 "^ot:curatorName": "Romina Gazis", 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S13387"
 }, 
 "^ot:focalClade": 598523, 
 "^ot:focalCladeOTTTaxonName": "Sarcosomataceae", 
+"^ot:messages": {
+"message": []
+}, 
 "^ot:otusElementOrder": [
 "otus2432"
 ], 
@@ -89,9 +59,9 @@
 "^ot:studyPublicationReference": "Carbone M., Agnello C., & Alvarado P. 2012. Phylogenenetic studies in the family Sarcosomataceae. Ascomycete.org, .", 
 "^ot:studyYear": 2012, 
 "^ot:tag": [
-"NJ", 
 "ITS", 
-"LSU"
+"LSU", 
+"NJ"
 ], 
 "^ot:treesElementOrder": [
 "trees2432"
@@ -125,6 +95,8 @@
 }, 
 "otu346766": {
 "^ot:originalLabel": "Galiella celebica JX669839 JX669876", 
+"^ot:ottId": 888647, 
+"^ot:ottTaxonName": "Trichaleurina celebica", 
 "^ot:treebaseOTUId": "Tl905977"
 }, 
 "otu346767": {
@@ -181,6 +153,8 @@
 }, 
 "otu346776": {
 "^ot:originalLabel": "Pseudoplectania melaena JX669806 JX669842", 
+"^ot:ottId": 5303142, 
+"^ot:ottTaxonName": "Plectania melaena", 
 "^ot:treebaseOTUId": "Tl905987"
 }, 
 "otu346777": {
@@ -191,6 +165,8 @@
 }, 
 "otu346778": {
 "^ot:originalLabel": "Sarcosoma latahense EU652357 EU652392", 
+"^ot:ottId": 523442, 
+"^ot:ottTaxonName": "Pseudosarcosoma latahense", 
 "^ot:treebaseOTUId": "Tl905989"
 }, 
 "otu346779": {
@@ -241,6 +217,8 @@
 }, 
 "otu346787": {
 "^ot:originalLabel": "Galiella javanica JX669838 JX669861", 
+"^ot:ottId": 888655, 
+"^ot:ottTaxonName": "Trichaleurina javanica", 
 "^ot:treebaseOTUId": "Tl905998"
 }, 
 "otu346788": {
@@ -323,9 +301,14 @@
 "treeById": {
 "tree5144": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "NJ, ITS + LSU", 
 "^ot:inGroupClade": "node891335", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node891321", 
+"^ot:specifiedRoot": "", 
 "^ot:tag": [
 "NJ", 
 "ITS", 

@@ -19,48 +19,11 @@
 "@id": "peyotl-validator", 
 "@name": "validate_ot_nexson.py", 
 "@url": "https://github.com/OpenTreeOfLife/peyotl", 
-"@version": "0.0.3a", 
+"@version": "0.0.4a", 
 "invocation": {
-"checksPerformed": [
-"MISSING_MANDATORY_KEY", 
-"MISSING_OPTIONAL_KEY", 
-"UNRECOGNIZED_KEY", 
-"MISSING_LIST_EXPECTED", 
-"DUPLICATING_SINGLETON_KEY", 
-"REFERENCED_ID_NOT_FOUND", 
-"REPEATED_ID", 
-"REPEATED_OTU", 
-"MULTIPLE_ROOT_NODES", 
-"NO_ROOT_NODE", 
-"MULTIPLE_EDGES_FOR_NODES", 
-"CYCLE_DETECTED", 
-"DISCONNECTED_GRAPH_DETECTED", 
-"INCORRECT_ROOT_NODE_LABEL", 
-"TIP_WITHOUT_OTU", 
-"TIP_WITHOUT_OTT_ID", 
-"MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
-"NON_MONOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
-"INVALID_PROPERTY_VALUE", 
-"PROPERTY_VALUE_NOT_USEFUL", 
-"UNRECOGNIZED_PROPERTY_VALUE", 
-"MULTIPLE_TREES", 
-"UNRECOGNIZED_TAG", 
-"CONFLICTING_PROPERTY_VALUES", 
-"NO_TREES", 
-"DEPRECATED_PROPERTY", 
-"UNPARSEABLE_META", 
-"UNREACHABLE_NODE", 
-"INCORRECT_VALUE_TYPE", 
-"MISSING_CRUCIAL_CONTENT"
-], 
 "commandLine": [
 "--embed", 
-"--agent-only", 
-"-e", 
-"../mig-phyelesystem-scratch/688/validation.json", 
-"-o", 
-"../mig-phyelesystem-scratch/688/final.json", 
-"../mig-phyelesystem-scratch/688/v1.2.1-688.json"
+"--agent-only"
 ], 
 "otherProperty": [
 {
@@ -76,12 +39,19 @@
 }
 ]
 }, 
+"^ot:annotationEvents": {
+"annotation": []
+}, 
+"^ot:candidateTreeForSynthesis": [], 
 "^ot:curatorName": "Romina Gazis", 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S1895"
 }, 
 "^ot:focalClade": 708974, 
 "^ot:focalCladeOTTTaxonName": "Mycosphaerella", 
+"^ot:messages": {
+"message": []
+}, 
 "^ot:otusElementOrder": [
 "otus688"
 ], 
@@ -91,6 +61,7 @@
 }, 
 "^ot:studyPublicationReference": "Crous P., Braun U., & Groenewald J. 2007. Mycosphaerella is polyphyletic. Studies in Mycology, 58: 1-32.", 
 "^ot:studyYear": 2007, 
+"^ot:tag": [], 
 "^ot:treesElementOrder": [
 "trees688"
 ], 
@@ -117,6 +88,8 @@
 }, 
 "otu185443": {
 "^ot:originalLabel": "Septoria tritici", 
+"^ot:ottId": 5319978, 
+"^ot:ottTaxonName": "Septoria tritici", 
 "^ot:treebaseOTUId": "Tl196041"
 }, 
 "otu185444": {
@@ -175,6 +148,8 @@
 }, 
 "otu185453": {
 "^ot:originalLabel": "Teratosphaeria readeriellophora", 
+"^ot:ottId": 5319616, 
+"^ot:ottTaxonName": "Mycosphaerella readeriellophora", 
 "^ot:treebaseOTUId": "Tl196057"
 }, 
 "otu185454": {
@@ -227,6 +202,8 @@
 }, 
 "otu185462": {
 "^ot:originalLabel": "Teratosphaeria cryptica", 
+"^ot:ottId": 33433, 
+"^ot:ottTaxonName": "Mycosphaerella cryptica", 
 "^ot:treebaseOTUId": "Tl196078"
 }, 
 "otu185463": {
@@ -237,6 +214,8 @@
 }, 
 "otu185464": {
 "^ot:originalLabel": "Mycosphaerella graminicola", 
+"^ot:ottId": 5319573, 
+"^ot:ottTaxonName": "Mycosphaerella graminicola", 
 "^ot:treebaseOTUId": "Tl196081"
 }, 
 "otu185465": {
@@ -409,6 +388,8 @@
 }, 
 "otu185493": {
 "^ot:originalLabel": "Readeriella novaezelandiae", 
+"^ot:ottId": 5320105, 
+"^ot:ottTaxonName": "Readeriella novae-zelandiae", 
 "^ot:treebaseOTUId": "Tl196130"
 }, 
 "otu185494": {
@@ -455,6 +436,8 @@
 }, 
 "otu185501": {
 "^ot:originalLabel": "Readeriella brunneotingens", 
+"^ot:ottId": 241871, 
+"^ot:ottTaxonName": "Teratosphaeria brunneotingens", 
 "^ot:treebaseOTUId": "Tl98380"
 }, 
 "otu185502": {
@@ -621,6 +604,8 @@
 }, 
 "otu185529": {
 "^ot:originalLabel": "Readeriella blakelyi", 
+"^ot:ottId": 430571, 
+"^ot:ottTaxonName": "Teratosphaeria blakelyi", 
 "^ot:treebaseOTUId": "Tl98413"
 }, 
 "otu185530": {
@@ -678,9 +663,15 @@
 "treeById": {
 "tree1235": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "MP, LSU", 
 "^ot:inGroupClade": "node426428", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node426424", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node426424": {
 "edge426425": {
@@ -2002,9 +1993,15 @@
 }, 
 "tree1236": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "BI, LSU", 
 "^ot:inGroupClade": "node426615", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node426612", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node426612": {
 "edge426613": {

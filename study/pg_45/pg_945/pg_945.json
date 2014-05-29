@@ -19,48 +19,11 @@
 "@id": "peyotl-validator", 
 "@name": "validate_ot_nexson.py", 
 "@url": "https://github.com/OpenTreeOfLife/peyotl", 
-"@version": "0.0.3a", 
+"@version": "0.0.4a", 
 "invocation": {
-"checksPerformed": [
-"MISSING_MANDATORY_KEY", 
-"MISSING_OPTIONAL_KEY", 
-"UNRECOGNIZED_KEY", 
-"MISSING_LIST_EXPECTED", 
-"DUPLICATING_SINGLETON_KEY", 
-"REFERENCED_ID_NOT_FOUND", 
-"REPEATED_ID", 
-"REPEATED_OTU", 
-"MULTIPLE_ROOT_NODES", 
-"NO_ROOT_NODE", 
-"MULTIPLE_EDGES_FOR_NODES", 
-"CYCLE_DETECTED", 
-"DISCONNECTED_GRAPH_DETECTED", 
-"INCORRECT_ROOT_NODE_LABEL", 
-"TIP_WITHOUT_OTU", 
-"TIP_WITHOUT_OTT_ID", 
-"MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
-"NON_MONOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
-"INVALID_PROPERTY_VALUE", 
-"PROPERTY_VALUE_NOT_USEFUL", 
-"UNRECOGNIZED_PROPERTY_VALUE", 
-"MULTIPLE_TREES", 
-"UNRECOGNIZED_TAG", 
-"CONFLICTING_PROPERTY_VALUES", 
-"NO_TREES", 
-"DEPRECATED_PROPERTY", 
-"UNPARSEABLE_META", 
-"UNREACHABLE_NODE", 
-"INCORRECT_VALUE_TYPE", 
-"MISSING_CRUCIAL_CONTENT"
-], 
 "commandLine": [
 "--embed", 
-"--agent-only", 
-"-e", 
-"../mig-phyelesystem-scratch/945/validation.json", 
-"-o", 
-"../mig-phyelesystem-scratch/945/final.json", 
-"../mig-phyelesystem-scratch/945/v1.2.1-945.json"
+"--agent-only"
 ], 
 "otherProperty": [
 {
@@ -76,12 +39,17 @@
 }
 ]
 }, 
+"^ot:annotationEvents": {
+"annotation": []
+}, 
+"^ot:candidateTreeForSynthesis": [], 
 "^ot:curatorName": "Romina Gazis", 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S12206"
 }, 
-"^ot:focalClade": 197005, 
-"^ot:focalCladeOTTTaxonName": "Pyrigemmula", 
+"^ot:messages": {
+"message": []
+}, 
 "^ot:otusElementOrder": [
 "otus945"
 ], 
@@ -91,6 +59,7 @@
 }, 
 "^ot:studyPublicationReference": "Magyar D., Shoemaker R., Bobvos J., Crous P., & Groenewald J.Z. 2011. Pyrigemmula, a novel hyphomycete genus on grapevine and tree bark. Mycological Progress, 10: 307-314.", 
 "^ot:studyYear": 2011, 
+"^ot:tag": [], 
 "^ot:treesElementOrder": [
 "trees945"
 ], 
@@ -99,8 +68,6 @@
 "otuById": {
 "otu207904": {
 "^ot:originalLabel": "Ellisembia brachypus DQ408563 ", 
-"^ot:ottId": 1008023, 
-"^ot:ottTaxonName": "Ellisembia brachypus", 
 "^ot:treebaseOTUId": "Tl679928"
 }, 
 "otu207905": {
@@ -111,26 +78,22 @@
 }, 
 "otu207906": {
 "^ot:originalLabel": "Pyrigemmula aurantiaca CBS 126744 ", 
-"^ot:ottId": 910985, 
-"^ot:ottTaxonName": "Pyrigemmula aurantiaca", 
 "^ot:treebaseOTUId": "Tl679930"
 }, 
 "otu207907": {
-"^ot:altLabel": "Chaetosphaeria fennica", 
 "^ot:originalLabel": "Chaetosphaeria fennica AF178562 ", 
 "^ot:ottId": 250262, 
+"^ot:ottTaxonName": "Chaetosphaeria fennica", 
 "^ot:treebaseOTUId": "Tl679931"
 }, 
 "otu207908": {
 "^ot:originalLabel": "Pyrigemmula aurantiaca CBS 126743 ", 
-"^ot:ottId": 910985, 
-"^ot:ottTaxonName": "Pyrigemmula aurantiaca", 
 "^ot:treebaseOTUId": "Tl679932"
 }, 
 "otu207909": {
-"^ot:altLabel": "Chaetosphaeria acutata", 
 "^ot:originalLabel": "Chaetosphaeria acutata AF178553 ", 
 "^ot:ottId": 250258, 
+"^ot:ottTaxonName": "Chaetosphaeria acutata", 
 "^ot:treebaseOTUId": "Tl679933"
 }, 
 "otu207910": {
@@ -140,15 +103,13 @@
 "^ot:treebaseOTUId": "Tl679934"
 }, 
 "otu207911": {
-"^ot:altLabel": "Retroconis fusiformis", 
 "^ot:originalLabel": "Retroconis fusiformis EU040239 ", 
-"^ot:ottId": 1037001, 
 "^ot:treebaseOTUId": "Tl679935"
 }, 
 "otu207912": {
-"^ot:altLabel": "Chaetosphaeria cubensis", 
 "^ot:originalLabel": "Chaetosphaeria cubensis AF466067 ", 
 "^ot:ottId": 943810, 
+"^ot:ottTaxonName": "Chaetosphaeria cubensis", 
 "^ot:treebaseOTUId": "Tl679936"
 }, 
 "otu207913": {
@@ -158,9 +119,9 @@
 "^ot:treebaseOTUId": "Tl679937"
 }, 
 "otu207914": {
-"^ot:altLabel": "Podospora pauciseta", 
 "^ot:originalLabel": "Podospora pauciseta EU999216 ", 
 "^ot:ottId": 155361, 
+"^ot:ottTaxonName": "Podospora pauciseta", 
 "^ot:treebaseOTUId": "Tl679938"
 }, 
 "otu207915": {
@@ -170,15 +131,15 @@
 "^ot:treebaseOTUId": "Tl679939"
 }, 
 "otu207916": {
-"^ot:altLabel": "Chaetomium funicola", 
 "^ot:originalLabel": "Chaetomium funicola EU552109 ", 
 "^ot:ottId": 237836, 
+"^ot:ottTaxonName": "Chaetomium funicola", 
 "^ot:treebaseOTUId": "Tl679940"
 }, 
 "otu207917": {
-"^ot:altLabel": "Chaetosphaeria chalaroides", 
 "^ot:originalLabel": "Chaetosphaeria chalaroides AF466063 ", 
 "^ot:ottId": 352348, 
+"^ot:ottTaxonName": "Chaetosphaeria chalaroides", 
 "^ot:treebaseOTUId": "Tl679941"
 }, 
 "otu207918": {
@@ -194,39 +155,39 @@
 "^ot:treebaseOTUId": "Tl679943"
 }, 
 "otu207920": {
-"^ot:altLabel": "Chaetosphaeria preussii", 
 "^ot:originalLabel": "Chaetosphaeria preussii AF178561 ", 
 "^ot:ottId": 773202, 
+"^ot:ottTaxonName": "Chaetosphaeria preussii", 
 "^ot:treebaseOTUId": "Tl679944"
 }, 
 "otu207921": {
-"^ot:altLabel": "Thozetella", 
 "^ot:originalLabel": "Thozetella sp. EU825195 ", 
 "^ot:ottId": 517520, 
+"^ot:ottTaxonName": "Thozetella", 
 "^ot:treebaseOTUId": "Tl679945"
 }, 
 "otu207922": {
-"^ot:altLabel": "Chaetosphaeria raciborskii", 
 "^ot:originalLabel": "Chaetosphaeria raciborskii AY436402 ", 
 "^ot:ottId": 167287, 
+"^ot:ottTaxonName": "Chaetosphaeria raciborskii", 
 "^ot:treebaseOTUId": "Tl679946"
 }, 
 "otu207923": {
-"^ot:altLabel": "Chaetosphaeria vermicularioides", 
 "^ot:originalLabel": "Chaetosphaeria vermicularioides AF178550 ", 
 "^ot:ottId": 597718, 
+"^ot:ottTaxonName": "Chaetosphaeria vermicularioides", 
 "^ot:treebaseOTUId": "Tl679947"
 }, 
 "otu207924": {
-"^ot:altLabel": "Umbrinosphaeria caesariata", 
 "^ot:originalLabel": "Umbrinosphaeria caesariata AF261069 ", 
 "^ot:ottId": 1026125, 
+"^ot:ottTaxonName": "Umbrinosphaeria caesariata", 
 "^ot:treebaseOTUId": "Tl679948"
 }, 
 "otu207925": {
-"^ot:altLabel": "Schizothecium fimbriatum", 
 "^ot:originalLabel": "Podospora fimbriata AY780075 ", 
 "^ot:ottId": 744531, 
+"^ot:ottTaxonName": "Schizothecium fimbriatum", 
 "^ot:treebaseOTUId": "Tl679949"
 }, 
 "otu207926": {
@@ -260,9 +221,9 @@
 "^ot:treebaseOTUId": "Tl679954"
 }, 
 "otu207931": {
-"^ot:altLabel": "Chaetosphaeria decastyla", 
 "^ot:originalLabel": "Chaetosphaeria decastyla AY017374 ", 
 "^ot:ottId": 352345, 
+"^ot:ottTaxonName": "Chaetosphaeria decastyla", 
 "^ot:treebaseOTUId": "Tl679955"
 }, 
 "otu207932": {
@@ -272,39 +233,35 @@
 "^ot:treebaseOTUId": "Tl679956"
 }, 
 "otu207933": {
-"^ot:altLabel": "Chaetosphaeria capitata", 
 "^ot:originalLabel": "Chaetosphaeria capitata AF466061 ", 
 "^ot:ottId": 418010, 
+"^ot:ottTaxonName": "Chaetosphaeria capitata", 
 "^ot:treebaseOTUId": "Tl679957"
 }, 
 "otu207934": {
-"^ot:altLabel": "Chaetosphaeria conirostris", 
 "^ot:originalLabel": "Chaetosphaeria conirostris AF466066 ", 
 "^ot:ottId": 943809, 
+"^ot:ottTaxonName": "Chaetosphaeria conirostris", 
 "^ot:treebaseOTUId": "Tl679958"
 }, 
 "otu207935": {
-"^ot:altLabel": "Chaetosphaeria dilabens", 
 "^ot:originalLabel": "Chaetosphaeria dilabens AF178557 ", 
 "^ot:ottId": 722573, 
+"^ot:ottTaxonName": "Chaetosphaeria dilabens", 
 "^ot:treebaseOTUId": "Tl679959"
 }, 
 "otu207936": {
 "^ot:originalLabel": "Ellisembia sp. DQ408568 ", 
-"^ot:ottId": 545584, 
-"^ot:ottTaxonName": "Ellisembia", 
 "^ot:treebaseOTUId": "Tl679960"
 }, 
 "otu207937": {
-"^ot:altLabel": "Chaetosphaeria caesariata", 
 "^ot:originalLabel": "Chaetosphaeria caesariata AF466060 ", 
-"^ot:ottId": 418029, 
 "^ot:treebaseOTUId": "Tl679961"
 }, 
 "otu207938": {
-"^ot:altLabel": "Chaetomidium fimeti", 
 "^ot:originalLabel": "Chaetomidium fimeti FJ666351 ", 
 "^ot:ottId": 55530, 
+"^ot:ottTaxonName": "Chaetomidium fimeti", 
 "^ot:treebaseOTUId": "Tl679962"
 }, 
 "otu207939": {
@@ -314,9 +271,9 @@
 "^ot:treebaseOTUId": "Tl679963"
 }, 
 "otu207940": {
-"^ot:altLabel": "Chaetosphaeria cylindrospora", 
 "^ot:originalLabel": "Chaetosphaeria cylindrospora AY017373 ", 
 "^ot:ottId": 1013774, 
+"^ot:ottTaxonName": "Chaetosphaeria cylindrospora", 
 "^ot:treebaseOTUId": "Tl679964"
 }, 
 "otu207941": {
@@ -332,15 +289,13 @@
 "^ot:treebaseOTUId": "Tl679966"
 }, 
 "otu207943": {
-"^ot:altLabel": "Chaetosphaeria callimorpha", 
 "^ot:originalLabel": "Chaetosphaeria callimorpha AF466062 ", 
 "^ot:ottId": 250260, 
+"^ot:ottTaxonName": "Chaetosphaeria callimorpha", 
 "^ot:treebaseOTUId": "Tl679967"
 }, 
 "otu207944": {
-"^ot:altLabel": "Stanjehughesia vermiculata", 
 "^ot:originalLabel": "Stanjehughesia vermiculata DQ408570 ", 
-"^ot:ottId": 1008027, 
 "^ot:treebaseOTUId": "Tl679968"
 }, 
 "otu207945": {
@@ -350,21 +305,19 @@
 "^ot:treebaseOTUId": "Tl679969"
 }, 
 "otu207946": {
-"^ot:altLabel": "Chaetomium longicolleum", 
 "^ot:originalLabel": "Chaetomium longicolleum FJ666365 ", 
 "^ot:ottId": 525274, 
+"^ot:ottTaxonName": "Chaetomium longicolleum", 
 "^ot:treebaseOTUId": "Tl679970"
 }, 
 "otu207947": {
-"^ot:altLabel": "Chaetosphaeria spinosa", 
 "^ot:originalLabel": "Chaetosphaeria spinosa AF466079 ", 
-"^ot:ottId": 943820, 
 "^ot:treebaseOTUId": "Tl679971"
 }, 
 "otu207948": {
-"^ot:altLabel": "Myceliophthora sepedonium", 
 "^ot:originalLabel": "Corynascus sepedonium FJ666364 ", 
 "^ot:ottId": 524991, 
+"^ot:ottTaxonName": "Myceliophthora sepedonium", 
 "^ot:treebaseOTUId": "Tl679972"
 }, 
 "otu207949": {
@@ -374,33 +327,31 @@
 "^ot:treebaseOTUId": "Tl679973"
 }, 
 "otu207950": {
-"^ot:altLabel": "Chaetosphaeria luquillensis", 
 "^ot:originalLabel": "Chaetosphaeria luquillensis AF466074 ", 
 "^ot:ottId": 943806, 
+"^ot:ottTaxonName": "Chaetosphaeria luquillensis", 
 "^ot:treebaseOTUId": "Tl679974"
 }, 
 "otu207951": {
-"^ot:altLabel": "Chaetomidium pilosum", 
 "^ot:originalLabel": "Chaetomidium pilosum FJ666355 ", 
 "^ot:ottId": 525270, 
+"^ot:ottTaxonName": "Chaetomidium pilosum", 
 "^ot:treebaseOTUId": "Tl679975"
 }, 
 "otu207952": {
-"^ot:altLabel": "Chaetosphaeria inaequalis", 
 "^ot:originalLabel": "Chaetosphaeria inaequalis AF178564 ", 
 "^ot:ottId": 250264, 
+"^ot:ottTaxonName": "Chaetosphaeria inaequalis", 
 "^ot:treebaseOTUId": "Tl679976"
 }, 
 "otu207953": {
-"^ot:altLabel": "Chaetosphaeria lentomita", 
 "^ot:originalLabel": "Chaetosphaeria lentomita AF178548 ", 
 "^ot:ottId": 773204, 
+"^ot:ottTaxonName": "Chaetosphaeria lentomita", 
 "^ot:treebaseOTUId": "Tl679977"
 }, 
 "otu207954": {
 "^ot:originalLabel": "Codinaeopsis gonytrichoides AF178556 ", 
-"^ot:ottId": 300280, 
-"^ot:ottTaxonName": "Codinaeopsis gonytrichoides", 
 "^ot:treebaseOTUId": "Tl679978"
 }, 
 "otu207955": {
@@ -416,15 +367,15 @@
 "^ot:treebaseOTUId": "Tl679980"
 }, 
 "otu207957": {
-"^ot:altLabel": "Zignoella ovoidea", 
 "^ot:originalLabel": "Chaetosphaeria ovoidea AF064641 ", 
 "^ot:ottId": 301828, 
+"^ot:ottTaxonName": "Chaetosphaeria ovoidea", 
 "^ot:treebaseOTUId": "Tl679981"
 }, 
 "otu207958": {
-"^ot:altLabel": "Chaetosphaeria pygmaea", 
 "^ot:originalLabel": "Chaetosphaeria pygmaea AF466077 ", 
 "^ot:ottId": 773199, 
+"^ot:ottTaxonName": "Chaetosphaeria pygmaea", 
 "^ot:treebaseOTUId": "Tl679982"
 }, 
 "otu207959": {
@@ -442,7 +393,7 @@
 "otu207961": {
 "^ot:originalLabel": "Striatosphaeria codinaeophora AF466088 ", 
 "^ot:ottId": 773196, 
-"^ot:ottTaxonName": "Striatosphaeria codinaeophora", 
+"^ot:ottTaxonName": "Striatosphaeria codinaeaphora", 
 "^ot:treebaseOTUId": "Tl679985"
 }, 
 "otu207962": {
@@ -452,21 +403,19 @@
 "^ot:treebaseOTUId": "Tl679986"
 }, 
 "otu207963": {
-"^ot:altLabel": "Chloridium lignicola", 
 "^ot:originalLabel": "Chloridium lignicola AF178544 ", 
 "^ot:ottId": 300282, 
+"^ot:ottTaxonName": "Chloridium lignicola", 
 "^ot:treebaseOTUId": "Tl679987"
 }, 
 "otu207964": {
-"^ot:altLabel": "Chaetomidium leptoderma", 
 "^ot:originalLabel": "Chaetomidium leptoderma FJ666353 ", 
 "^ot:ottId": 525271, 
+"^ot:ottTaxonName": "Chaetomidium leptoderma", 
 "^ot:treebaseOTUId": "Tl679988"
 }, 
 "otu207965": {
-"^ot:altLabel": "Chaetosphaeria biapiculata", 
 "^ot:originalLabel": "Chaetosphaeria biapiculata AF466065 ", 
-"^ot:ottId": 418031, 
 "^ot:treebaseOTUId": "Tl679989"
 }, 
 "otu207966": {
@@ -477,8 +426,6 @@
 }, 
 "otu207967": {
 "^ot:originalLabel": "Leptosporella gregaria AY346290 ", 
-"^ot:ottId": 707565, 
-"^ot:ottTaxonName": "Leptosporella gregaria", 
 "^ot:treebaseOTUId": "Tl679991"
 }, 
 "otu207968": {
@@ -488,9 +435,9 @@
 "^ot:treebaseOTUId": "Tl679992"
 }, 
 "otu207969": {
-"^ot:altLabel": "Chaetosphaeria fusiformis", 
 "^ot:originalLabel": "Chaetosphaeria fusiformis AF178554 ", 
 "^ot:ottId": 250263, 
+"^ot:ottTaxonName": "Chaetosphaeria fusiformis", 
 "^ot:treebaseOTUId": "Tl679993"
 }, 
 "otu207970": {
@@ -500,21 +447,21 @@
 "^ot:treebaseOTUId": "Tl679994"
 }, 
 "otu207971": {
-"^ot:altLabel": "Chaetosphaeria chlorotunicata", 
 "^ot:originalLabel": "Chaetosphaeria chlorotunicata AF466064 ", 
 "^ot:ottId": 418009, 
+"^ot:ottTaxonName": "Chaetosphaeria chlorotunicata", 
 "^ot:treebaseOTUId": "Tl679995"
 }, 
 "otu207972": {
 "^ot:originalLabel": "Melanopsammella vermicularioides AF466087 ", 
-"^ot:ottId": 368154, 
-"^ot:ottTaxonName": "Melanopsammella vermicularioides", 
+"^ot:ottId": 597718, 
+"^ot:ottTaxonName": "Chaetosphaeria vermicularioides", 
 "^ot:treebaseOTUId": "Tl679996"
 }, 
 "otu207973": {
-"^ot:altLabel": "Chaetosphaeria lignomollis", 
 "^ot:originalLabel": "Chaetosphaeria lignomollis AF466073 ", 
 "^ot:ottId": 943812, 
+"^ot:ottTaxonName": "Chaetosphaeria lignomollis", 
 "^ot:treebaseOTUId": "Tl679997"
 }, 
 "otu207974": {
@@ -524,9 +471,9 @@
 "^ot:treebaseOTUId": "Tl679998"
 }, 
 "otu207975": {
-"^ot:altLabel": "Chaetosphaeria myriocarpa", 
 "^ot:originalLabel": "Chaetosphaeria myriocarpa AF178552 ", 
 "^ot:ottId": 773203, 
+"^ot:ottTaxonName": "Chaetosphaeria myriocarpa", 
 "^ot:treebaseOTUId": "Tl679999"
 }, 
 "otu207976": {
@@ -538,19 +485,17 @@
 "otu207977": {
 "^ot:originalLabel": "Zignoella pulviscula AF466091 ", 
 "^ot:ottId": 773200, 
-"^ot:ottTaxonName": "Zignoella pulviscula", 
+"^ot:ottTaxonName": "Chaetosphaeria pulviscula", 
 "^ot:treebaseOTUId": "Tl680001"
 }, 
 "otu207978": {
-"^ot:altLabel": "Chaetosphaeria chalaroides", 
 "^ot:originalLabel": "Chaetosphaeria chalaroides AY017372 ", 
 "^ot:ottId": 352348, 
+"^ot:ottTaxonName": "Chaetosphaeria chalaroides", 
 "^ot:treebaseOTUId": "Tl680002"
 }, 
 "otu207979": {
 "^ot:originalLabel": "Furcaspora eucalypti EF110613 ", 
-"^ot:ottId": 217074, 
-"^ot:ottTaxonName": "Furcaspora eucalypti", 
 "^ot:treebaseOTUId": "Tl680003"
 }, 
 "otu207980": {
@@ -561,20 +506,18 @@
 }, 
 "otu207981": {
 "^ot:originalLabel": "Eucasphaeria capensis EF110619 ", 
-"^ot:ottId": 217076, 
-"^ot:ottTaxonName": "Eucasphaeria capensis", 
 "^ot:treebaseOTUId": "Tl680005"
 }, 
 "otu207982": {
-"^ot:altLabel": "Chaetosphaeria hebetiseta", 
 "^ot:originalLabel": "Chaetosphaeria hebetiseta AF466069 ", 
 "^ot:ottId": 250255, 
+"^ot:ottTaxonName": "Chaetosphaeria hebetiseta", 
 "^ot:treebaseOTUId": "Tl680006"
 }, 
 "otu207983": {
-"^ot:altLabel": "Chaetosphaeria myriocarpa", 
 "^ot:originalLabel": "Chaetosphaeria myriocarpa AF466076 ", 
 "^ot:ottId": 773203, 
+"^ot:ottTaxonName": "Chaetosphaeria myriocarpa", 
 "^ot:treebaseOTUId": "Tl680007"
 }, 
 "otu207984": {
@@ -601,9 +544,15 @@
 "treeById": {
 "tree1850": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "MP, LSU", 
 "^ot:inGroupClade": "node492288", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node492283", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node492283": {
 "edge492284": {

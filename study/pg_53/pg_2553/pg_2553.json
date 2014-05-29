@@ -19,48 +19,11 @@
 "@id": "peyotl-validator", 
 "@name": "validate_ot_nexson.py", 
 "@url": "https://github.com/OpenTreeOfLife/peyotl", 
-"@version": "0.0.3a", 
+"@version": "0.0.4a", 
 "invocation": {
-"checksPerformed": [
-"MISSING_MANDATORY_KEY", 
-"MISSING_OPTIONAL_KEY", 
-"UNRECOGNIZED_KEY", 
-"MISSING_LIST_EXPECTED", 
-"DUPLICATING_SINGLETON_KEY", 
-"REFERENCED_ID_NOT_FOUND", 
-"REPEATED_ID", 
-"REPEATED_OTU", 
-"MULTIPLE_ROOT_NODES", 
-"NO_ROOT_NODE", 
-"MULTIPLE_EDGES_FOR_NODES", 
-"CYCLE_DETECTED", 
-"DISCONNECTED_GRAPH_DETECTED", 
-"INCORRECT_ROOT_NODE_LABEL", 
-"TIP_WITHOUT_OTU", 
-"TIP_WITHOUT_OTT_ID", 
-"MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
-"NON_MONOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
-"INVALID_PROPERTY_VALUE", 
-"PROPERTY_VALUE_NOT_USEFUL", 
-"UNRECOGNIZED_PROPERTY_VALUE", 
-"MULTIPLE_TREES", 
-"UNRECOGNIZED_TAG", 
-"CONFLICTING_PROPERTY_VALUES", 
-"NO_TREES", 
-"DEPRECATED_PROPERTY", 
-"UNPARSEABLE_META", 
-"UNREACHABLE_NODE", 
-"INCORRECT_VALUE_TYPE", 
-"MISSING_CRUCIAL_CONTENT"
-], 
 "commandLine": [
 "--embed", 
-"--agent-only", 
-"-e", 
-"../mig-phyelesystem-scratch/2553/validation.json", 
-"-o", 
-"../mig-phyelesystem-scratch/2553/final.json", 
-"../mig-phyelesystem-scratch/2553/v1.2.1-2553.json"
+"--agent-only"
 ], 
 "otherProperty": [
 {
@@ -76,12 +39,19 @@
 }
 ]
 }, 
+"^ot:annotationEvents": {
+"annotation": []
+}, 
+"^ot:candidateTreeForSynthesis": [], 
 "^ot:curatorName": "Laura Katz", 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S923"
 }, 
-"^ot:focalClade": 1094634, 
-"^ot:focalCladeOTTTaxonName": "Euglenozoa", 
+"^ot:focalClade": 5251339, 
+"^ot:focalCladeOTTTaxonName": "Euglenophyceae", 
+"^ot:messages": {
+"message": []
+}, 
 "^ot:otusElementOrder": [
 "otus2553"
 ], 
@@ -91,6 +61,7 @@
 }, 
 "^ot:studyPublicationReference": "Nudelman M., Rossi M., Conforti V., & Triemer R. 2003. Phylogeny of Euglenophyceae based on SSU rDNA sequences: taxonomic implications. Journal of Phycology, 39(1): 226-235.", 
 "^ot:studyYear": 2003, 
+"^ot:tag": [], 
 "^ot:treesElementOrder": [
 "trees2553"
 ], 
@@ -105,6 +76,8 @@
 }, 
 "otu368803": {
 "^ot:originalLabel": "Phacus aenigmaticus", 
+"^ot:ottId": 850148, 
+"^ot:ottTaxonName": "Monomorphina aenigmatica", 
 "^ot:treebaseOTUId": "Tl11264"
 }, 
 "otu368804": {
@@ -127,6 +100,8 @@
 }, 
 "otu368807": {
 "^ot:originalLabel": "Phacus agilis", 
+"^ot:ottId": 402235, 
+"^ot:ottTaxonName": "Cryptoglena skujae", 
 "^ot:treebaseOTUId": "Tl11269"
 }, 
 "otu368808": {
@@ -183,6 +158,8 @@
 }, 
 "otu368817": {
 "^ot:originalLabel": "Euglena oxyuris", 
+"^ot:ottId": 150267, 
+"^ot:ottTaxonName": "Lepocinclis oxyuris", 
 "^ot:treebaseOTUId": "Tl11281"
 }, 
 "otu368818": {
@@ -233,14 +210,20 @@
 }, 
 "otu368826": {
 "^ot:originalLabel": "Astasia longa", 
+"^ot:ottId": 1073341, 
+"^ot:ottTaxonName": "Euglena longa", 
 "^ot:treebaseOTUId": "Tl11292"
 }, 
 "otu368827": {
 "^ot:originalLabel": "Lepocinclis ovata", 
+"^ot:ottId": 863026, 
+"^ot:ottTaxonName": "Monomorphina ovata", 
 "^ot:treebaseOTUId": "Tl11294"
 }, 
 "otu368828": {
 "^ot:originalLabel": "Euglena spirogyra", 
+"^ot:ottId": 467984, 
+"^ot:ottTaxonName": "Lepocinclis spirogyroides", 
 "^ot:treebaseOTUId": "Tl11296"
 }, 
 "otu368829": {
@@ -345,8 +328,15 @@
 "treeById": {
 "tree5579": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "Fig. 2", 
+"^ot:inGroupClade": "node956210", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node956209", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node956209": {
 "edge956210": {

@@ -19,48 +19,11 @@
 "@id": "peyotl-validator", 
 "@name": "validate_ot_nexson.py", 
 "@url": "https://github.com/OpenTreeOfLife/peyotl", 
-"@version": "0.0.3a", 
+"@version": "0.0.4a", 
 "invocation": {
-"checksPerformed": [
-"MISSING_MANDATORY_KEY", 
-"MISSING_OPTIONAL_KEY", 
-"UNRECOGNIZED_KEY", 
-"MISSING_LIST_EXPECTED", 
-"DUPLICATING_SINGLETON_KEY", 
-"REFERENCED_ID_NOT_FOUND", 
-"REPEATED_ID", 
-"REPEATED_OTU", 
-"MULTIPLE_ROOT_NODES", 
-"NO_ROOT_NODE", 
-"MULTIPLE_EDGES_FOR_NODES", 
-"CYCLE_DETECTED", 
-"DISCONNECTED_GRAPH_DETECTED", 
-"INCORRECT_ROOT_NODE_LABEL", 
-"TIP_WITHOUT_OTU", 
-"TIP_WITHOUT_OTT_ID", 
-"MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
-"NON_MONOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
-"INVALID_PROPERTY_VALUE", 
-"PROPERTY_VALUE_NOT_USEFUL", 
-"UNRECOGNIZED_PROPERTY_VALUE", 
-"MULTIPLE_TREES", 
-"UNRECOGNIZED_TAG", 
-"CONFLICTING_PROPERTY_VALUES", 
-"NO_TREES", 
-"DEPRECATED_PROPERTY", 
-"UNPARSEABLE_META", 
-"UNREACHABLE_NODE", 
-"INCORRECT_VALUE_TYPE", 
-"MISSING_CRUCIAL_CONTENT"
-], 
 "commandLine": [
 "--embed", 
-"--agent-only", 
-"-e", 
-"../mig-phyelesystem-scratch/870/validation.json", 
-"-o", 
-"../mig-phyelesystem-scratch/870/final.json", 
-"../mig-phyelesystem-scratch/870/v1.2.1-870.json"
+"--agent-only"
 ], 
 "otherProperty": [
 {
@@ -76,12 +39,19 @@
 }
 ]
 }, 
+"^ot:annotationEvents": {
+"annotation": []
+}, 
+"^ot:candidateTreeForSynthesis": [], 
 "^ot:curatorName": "Romina Gazis", 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S12598"
 }, 
 "^ot:focalClade": 103002, 
 "^ot:focalCladeOTTTaxonName": "Diaporthales", 
+"^ot:messages": {
+"message": []
+}, 
 "^ot:otusElementOrder": [
 "otus870"
 ], 
@@ -91,6 +61,7 @@
 }, 
 "^ot:studyPublicationReference": "Crous P.W., Summerell B., Shivas R.G., Carnegie A., & Groenewald J.Z. 2012. A re-appraisal of Harknessia (Diaporthales), and the introduction of Harknessiaceae fam. nov. Persoonia , 28: 49-65.", 
 "^ot:studyYear": 2012, 
+"^ot:tag": [], 
 "^ot:treesElementOrder": [
 "trees870"
 ], 
@@ -535,6 +506,8 @@
 }, 
 "otu202597": {
 "^ot:originalLabel": "Pilidiella granati AF408379", 
+"^ot:ottId": 228448, 
+"^ot:ottTaxonName": "Coniella granati", 
 "^ot:treebaseOTUId": "Tl742724"
 }, 
 "otu202598": {
@@ -593,6 +566,8 @@
 }, 
 "otu202607": {
 "^ot:originalLabel": "Gnomoniopsis aff chamaemori EU255109", 
+"^ot:ottId": 5316727, 
+"^ot:ottTaxonName": "Gnomonia chamaemori", 
 "^ot:treebaseOTUId": "Tl742734"
 }, 
 "otu202608": {
@@ -665,6 +640,8 @@
 }, 
 "otu202620": {
 "^ot:originalLabel": "Greeneria uvicola AF362570", 
+"^ot:ottId": 396956, 
+"^ot:ottTaxonName": "Phoma uvicola", 
 "^ot:treebaseOTUId": "Tl742747"
 }, 
 "otu202621": {
@@ -801,6 +778,8 @@
 }, 
 "otu202645": {
 "^ot:originalLabel": "Ophiovalsa betulae AF408375", 
+"^ot:ottId": 830759, 
+"^ot:ottTaxonName": "Cryptosporella betulae", 
 "^ot:treebaseOTUId": "Tl742772"
 }, 
 "otu202646": {
@@ -811,6 +790,8 @@
 }, 
 "otu202647": {
 "^ot:originalLabel": "Ophiovalsa suffusa AF408376", 
+"^ot:ottId": 982558, 
+"^ot:ottTaxonName": "Cryptosporella suffusa", 
 "^ot:treebaseOTUId": "Tl742774"
 }, 
 "otu202648": {
@@ -839,6 +820,8 @@
 }, 
 "otu202652": {
 "^ot:originalLabel": "Diaporthe padi AF408354", 
+"^ot:ottId": 5316662, 
+"^ot:ottTaxonName": "Diaporthe decorticans", 
 "^ot:treebaseOTUId": "Tl742779"
 }, 
 "otu202653": {
@@ -951,6 +934,8 @@
 }, 
 "otu202672": {
 "^ot:originalLabel": "Melanconiella chrysostroma AF408369", 
+"^ot:ottId": 5316780, 
+"^ot:ottTaxonName": "Melanconis chrysostroma", 
 "^ot:treebaseOTUId": "Tl742799"
 }, 
 "otu202673": {
@@ -1050,9 +1035,15 @@
 "treeById": {
 "tree1672": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "MP, LSU", 
 "^ot:inGroupClade": "node475870", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node475868", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node475868": {
 "edge475869": {
@@ -2346,10 +2337,17 @@
 }, 
 "tree1673": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "MP, ITS + b-tubulin + calmodulin", 
 "^ot:inGroupClade": "node476053", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node476052", 
-"^ot:tag": "CAL", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [
+"CAL"
+], 
 "edgeBySourceId": {
 "node476052": {
 "edge476053": {

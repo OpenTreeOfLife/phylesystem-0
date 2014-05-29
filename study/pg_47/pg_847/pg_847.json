@@ -19,48 +19,11 @@
 "@id": "peyotl-validator", 
 "@name": "validate_ot_nexson.py", 
 "@url": "https://github.com/OpenTreeOfLife/peyotl", 
-"@version": "0.0.3a", 
+"@version": "0.0.4a", 
 "invocation": {
-"checksPerformed": [
-"MISSING_MANDATORY_KEY", 
-"MISSING_OPTIONAL_KEY", 
-"UNRECOGNIZED_KEY", 
-"MISSING_LIST_EXPECTED", 
-"DUPLICATING_SINGLETON_KEY", 
-"REFERENCED_ID_NOT_FOUND", 
-"REPEATED_ID", 
-"REPEATED_OTU", 
-"MULTIPLE_ROOT_NODES", 
-"NO_ROOT_NODE", 
-"MULTIPLE_EDGES_FOR_NODES", 
-"CYCLE_DETECTED", 
-"DISCONNECTED_GRAPH_DETECTED", 
-"INCORRECT_ROOT_NODE_LABEL", 
-"TIP_WITHOUT_OTU", 
-"TIP_WITHOUT_OTT_ID", 
-"MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
-"NON_MONOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
-"INVALID_PROPERTY_VALUE", 
-"PROPERTY_VALUE_NOT_USEFUL", 
-"UNRECOGNIZED_PROPERTY_VALUE", 
-"MULTIPLE_TREES", 
-"UNRECOGNIZED_TAG", 
-"CONFLICTING_PROPERTY_VALUES", 
-"NO_TREES", 
-"DEPRECATED_PROPERTY", 
-"UNPARSEABLE_META", 
-"UNREACHABLE_NODE", 
-"INCORRECT_VALUE_TYPE", 
-"MISSING_CRUCIAL_CONTENT"
-], 
 "commandLine": [
 "--embed", 
-"--agent-only", 
-"-e", 
-"../mig-phyelesystem-scratch/847/validation.json", 
-"-o", 
-"../mig-phyelesystem-scratch/847/final.json", 
-"../mig-phyelesystem-scratch/847/v1.2.1-847.json"
+"--agent-only"
 ], 
 "otherProperty": [
 {
@@ -76,12 +39,19 @@
 }
 ]
 }, 
+"^ot:annotationEvents": {
+"annotation": []
+}, 
+"^ot:candidateTreeForSynthesis": [], 
 "^ot:curatorName": "Romina Gazis", 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S2191"
 }, 
 "^ot:focalClade": 346124, 
 "^ot:focalCladeOTTTaxonName": "Eurotiomycetes", 
+"^ot:messages": {
+"message": []
+}, 
 "^ot:otusElementOrder": [
 "otus847"
 ], 
@@ -91,6 +61,7 @@
 }, 
 "^ot:studyPublicationReference": "Samson, R. A., Houbraken, J., Varga, J., & Frisvad, J. C. (2009). Polyphasic taxonomy of the heat resistant ascomycete genus Byssochlamys and its Paecilomyces anamorphs. Persoonia, 22, 14-27", 
 "^ot:studyYear": 2008, 
+"^ot:tag": [], 
 "^ot:treesElementOrder": [
 "trees847"
 ], 
@@ -111,6 +82,8 @@
 }, 
 "otu200391": {
 "^ot:originalLabel": "Paecilomyces formosus CBS 628.66", 
+"^ot:ottId": 653422, 
+"^ot:ottTaxonName": "Paecilomyces variotii", 
 "^ot:treebaseOTUId": "Tl85494"
 }, 
 "otu200392": {
@@ -165,10 +138,14 @@
 }, 
 "otu200401": {
 "^ot:originalLabel": "Paecilomyces formosus CBS 990.73B", 
+"^ot:ottId": 653422, 
+"^ot:ottTaxonName": "Paecilomyces variotii", 
 "^ot:treebaseOTUId": "Tl85504"
 }, 
 "otu200402": {
 "^ot:originalLabel": "Paecilomyces divaricatus CBS 284.48", 
+"^ot:ottId": 653422, 
+"^ot:ottTaxonName": "Paecilomyces variotii", 
 "^ot:treebaseOTUId": "Tl85505"
 }, 
 "otu200403": {
@@ -203,10 +180,14 @@
 }, 
 "otu200409": {
 "^ot:originalLabel": "Paecilomyces formosus CBS 371.70", 
+"^ot:ottId": 653422, 
+"^ot:ottTaxonName": "Paecilomyces variotii", 
 "^ot:treebaseOTUId": "Tl85512"
 }, 
 "otu200410": {
 "^ot:originalLabel": "Paecilomyces formosus CBS 296.93", 
+"^ot:ottId": 653422, 
+"^ot:ottTaxonName": "Paecilomyces variotii", 
 "^ot:treebaseOTUId": "Tl85513"
 }, 
 "otu200411": {
@@ -235,6 +216,8 @@
 }, 
 "otu200415": {
 "^ot:originalLabel": "Paecilomyces formosus CBS 372.70", 
+"^ot:ottId": 653422, 
+"^ot:ottTaxonName": "Paecilomyces variotii", 
 "^ot:treebaseOTUId": "Tl85518"
 }, 
 "otu200416": {
@@ -243,6 +226,8 @@
 }, 
 "otu200417": {
 "^ot:originalLabel": "Paecilomyces divaricatus CBS 110429", 
+"^ot:ottId": 653422, 
+"^ot:ottTaxonName": "Paecilomyces variotii", 
 "^ot:treebaseOTUId": "Tl85520"
 }, 
 "otu200418": {
@@ -263,6 +248,8 @@
 }, 
 "otu200421": {
 "^ot:originalLabel": "Paecilomyces formosus CBS 113247", 
+"^ot:ottId": 653422, 
+"^ot:ottTaxonName": "Paecilomyces variotii", 
 "^ot:treebaseOTUId": "Tl85524"
 }, 
 "otu200422": {
@@ -315,9 +302,15 @@
 "treeById": {
 "tree1627": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "MP, ITS", 
 "^ot:inGroupClade": "node470768", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node470767", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node470767": {
 "edge470768": {
@@ -764,9 +757,15 @@
 }, 
 "tree1628": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "MP, calmodulin", 
 "^ot:inGroupClade": "node470832", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node470830", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node470830": {
 "edge470831": {
@@ -1171,9 +1170,15 @@
 }, 
 "tree1629": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "MP, b-tubulin", 
 "^ot:inGroupClade": "node470889", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node470887", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node470887": {
 "edge470888": {

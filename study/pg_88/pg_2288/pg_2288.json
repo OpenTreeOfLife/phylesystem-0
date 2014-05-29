@@ -19,48 +19,11 @@
 "@id": "peyotl-validator", 
 "@name": "validate_ot_nexson.py", 
 "@url": "https://github.com/OpenTreeOfLife/peyotl", 
-"@version": "0.0.3a", 
+"@version": "0.0.4a", 
 "invocation": {
-"checksPerformed": [
-"MISSING_MANDATORY_KEY", 
-"MISSING_OPTIONAL_KEY", 
-"UNRECOGNIZED_KEY", 
-"MISSING_LIST_EXPECTED", 
-"DUPLICATING_SINGLETON_KEY", 
-"REFERENCED_ID_NOT_FOUND", 
-"REPEATED_ID", 
-"REPEATED_OTU", 
-"MULTIPLE_ROOT_NODES", 
-"NO_ROOT_NODE", 
-"MULTIPLE_EDGES_FOR_NODES", 
-"CYCLE_DETECTED", 
-"DISCONNECTED_GRAPH_DETECTED", 
-"INCORRECT_ROOT_NODE_LABEL", 
-"TIP_WITHOUT_OTU", 
-"TIP_WITHOUT_OTT_ID", 
-"MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
-"NON_MONOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
-"INVALID_PROPERTY_VALUE", 
-"PROPERTY_VALUE_NOT_USEFUL", 
-"UNRECOGNIZED_PROPERTY_VALUE", 
-"MULTIPLE_TREES", 
-"UNRECOGNIZED_TAG", 
-"CONFLICTING_PROPERTY_VALUES", 
-"NO_TREES", 
-"DEPRECATED_PROPERTY", 
-"UNPARSEABLE_META", 
-"UNREACHABLE_NODE", 
-"INCORRECT_VALUE_TYPE", 
-"MISSING_CRUCIAL_CONTENT"
-], 
 "commandLine": [
 "--embed", 
-"--agent-only", 
-"-e", 
-"../mig-phyelesystem-scratch/2288/validation.json", 
-"-o", 
-"../mig-phyelesystem-scratch/2288/final.json", 
-"../mig-phyelesystem-scratch/2288/v1.2.1-2288.json"
+"--agent-only"
 ], 
 "otherProperty": [
 {
@@ -76,12 +39,19 @@
 }
 ]
 }, 
+"^ot:annotationEvents": {
+"annotation": []
+}, 
+"^ot:candidateTreeForSynthesis": [], 
 "^ot:curatorName": "Romina Gazis", 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S11269"
 }, 
 "^ot:focalClade": 1072057, 
 "^ot:focalCladeOTTTaxonName": "Heterobasidion", 
+"^ot:messages": {
+"message": []
+}, 
 "^ot:otusElementOrder": [
 "otus2288"
 ], 
@@ -91,6 +61,7 @@
 }, 
 "^ot:studyPublicationReference": "Gonthier P., & Garbelotto M. 2011. Amplified fragment length polymorphism and sequence analyses reveal massive gene introgression from the European fungal pathogen Heterobasidion annosum into its introduced congener H. irregulare. Molecular Ecology, 20: 2756?2770.", 
 "^ot:studyYear": 2011, 
+"^ot:tag": [], 
 "^ot:treesElementOrder": [
 "trees2288"
 ], 
@@ -145,18 +116,26 @@
 }, 
 "otu327106": {
 "^ot:originalLabel": "Heterobasidion irregulare 3OA", 
+"^ot:ottId": 607526, 
+"^ot:ottTaxonName": "Heterobasidion irregulare", 
 "^ot:treebaseOTUId": "Tl478199"
 }, 
 "otu327107": {
 "^ot:originalLabel": "Heterobasidion irregulare 8OB", 
+"^ot:ottId": 607526, 
+"^ot:ottTaxonName": "Heterobasidion irregulare", 
 "^ot:treebaseOTUId": "Tl478200"
 }, 
 "otu327108": {
 "^ot:originalLabel": "Heterobasidion irregulare 56EC", 
+"^ot:ottId": 607526, 
+"^ot:ottTaxonName": "Heterobasidion irregulare", 
 "^ot:treebaseOTUId": "Tl478201"
 }, 
 "otu327109": {
 "^ot:originalLabel": "Heterobasidion irregulare 38NA", 
+"^ot:ottId": 607526, 
+"^ot:ottTaxonName": "Heterobasidion irregulare", 
 "^ot:treebaseOTUId": "Tl478202"
 }, 
 "otu327110": {
@@ -165,6 +144,8 @@
 }, 
 "otu327111": {
 "^ot:originalLabel": "Heterobasidion irregulare 127NA", 
+"^ot:ottId": 607526, 
+"^ot:ottTaxonName": "Heterobasidion irregulare", 
 "^ot:treebaseOTUId": "Tl478204"
 }, 
 "otu327112": {
@@ -177,6 +158,8 @@
 }, 
 "otu327114": {
 "^ot:originalLabel": "Heterobasidion irregulare 29NA", 
+"^ot:ottId": 607526, 
+"^ot:ottTaxonName": "Heterobasidion irregulare", 
 "^ot:treebaseOTUId": "Tl478207"
 }, 
 "otu327115": {
@@ -201,6 +184,8 @@
 }, 
 "otu327120": {
 "^ot:originalLabel": "Heterobasidion irregulare 59SA", 
+"^ot:ottId": 607526, 
+"^ot:ottTaxonName": "Heterobasidion irregulare", 
 "^ot:treebaseOTUId": "Tl478213"
 }, 
 "otu327121": {
@@ -224,9 +209,9 @@
 "^ot:treebaseOTUId": "Tl478219"
 }, 
 "otu327126": {
-"^ot:altLabel": "Heterobasidion abietinum", 
 "^ot:originalLabel": "Heterobasidion abietinum J47r", 
 "^ot:ottId": 44720, 
+"^ot:ottTaxonName": "Heterobasidion abietinum", 
 "^ot:treebaseOTUId": "Tl478224"
 }
 }
@@ -248,8 +233,14 @@
 "treeById": {
 "tree4841": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "PAUP 1", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node845706", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node845706": {
 "edge845707": {
@@ -479,8 +470,14 @@
 }, 
 "tree4842": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "PAUP 1", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node845738", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node845738": {
 "edge845739": {
@@ -717,8 +714,14 @@
 }, 
 "tree4843": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "PAUP 1", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node845771", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node845771": {
 "edge845772": {
@@ -969,8 +972,14 @@
 }, 
 "tree4844": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "PAUP 1", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node845806", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node845806": {
 "edge845807": {
@@ -1228,8 +1237,14 @@
 }, 
 "tree4845": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "PAUP 1", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node845842", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node845842": {
 "edge845843": {
@@ -1487,8 +1502,14 @@
 }, 
 "tree4846": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "PAUP 1", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node845878", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node845878": {
 "edge845879": {
@@ -1781,8 +1802,14 @@
 }, 
 "tree4847": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "PAUP 1", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node845919", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node845919": {
 "edge845920": {
@@ -2019,8 +2046,14 @@
 }, 
 "tree4848": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "PAUP 1", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node845952", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node845952": {
 "edge845953": {

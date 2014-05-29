@@ -19,48 +19,11 @@
 "@id": "peyotl-validator", 
 "@name": "validate_ot_nexson.py", 
 "@url": "https://github.com/OpenTreeOfLife/peyotl", 
-"@version": "0.0.3a", 
+"@version": "0.0.4a", 
 "invocation": {
-"checksPerformed": [
-"MISSING_MANDATORY_KEY", 
-"MISSING_OPTIONAL_KEY", 
-"UNRECOGNIZED_KEY", 
-"MISSING_LIST_EXPECTED", 
-"DUPLICATING_SINGLETON_KEY", 
-"REFERENCED_ID_NOT_FOUND", 
-"REPEATED_ID", 
-"REPEATED_OTU", 
-"MULTIPLE_ROOT_NODES", 
-"NO_ROOT_NODE", 
-"MULTIPLE_EDGES_FOR_NODES", 
-"CYCLE_DETECTED", 
-"DISCONNECTED_GRAPH_DETECTED", 
-"INCORRECT_ROOT_NODE_LABEL", 
-"TIP_WITHOUT_OTU", 
-"TIP_WITHOUT_OTT_ID", 
-"MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
-"NON_MONOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
-"INVALID_PROPERTY_VALUE", 
-"PROPERTY_VALUE_NOT_USEFUL", 
-"UNRECOGNIZED_PROPERTY_VALUE", 
-"MULTIPLE_TREES", 
-"UNRECOGNIZED_TAG", 
-"CONFLICTING_PROPERTY_VALUES", 
-"NO_TREES", 
-"DEPRECATED_PROPERTY", 
-"UNPARSEABLE_META", 
-"UNREACHABLE_NODE", 
-"INCORRECT_VALUE_TYPE", 
-"MISSING_CRUCIAL_CONTENT"
-], 
 "commandLine": [
 "--embed", 
-"--agent-only", 
-"-e", 
-"../mig-phyelesystem-scratch/412/validation.json", 
-"-o", 
-"../mig-phyelesystem-scratch/412/final.json", 
-"../mig-phyelesystem-scratch/412/v1.2.1-412.json"
+"--agent-only"
 ], 
 "otherProperty": [
 {
@@ -76,9 +39,16 @@
 }
 ]
 }, 
+"^ot:annotationEvents": {
+"annotation": []
+}, 
+"^ot:candidateTreeForSynthesis": [], 
 "^ot:curatorName": "Rick Ree", 
 "^ot:focalClade": 994093, 
 "^ot:focalCladeOTTTaxonName": "Coniferophyta", 
+"^ot:messages": {
+"message": []
+}, 
 "^ot:otusElementOrder": [
 "otus412"
 ], 
@@ -86,8 +56,9 @@
 "^ot:studyPublication": {
 "@href": "http://dx.doi.org/10.1073/pnas.1213621109"
 }, 
-"^ot:studyPublicationReference": "A. B. Leslie, J. M. Beaulieu, H. S. Rai, P. R. Crane, M. J. Donoghue, S. Mathews. 2012. \"Hemisphere-scale differences in conifer evolutionary dynamics\" Proceedings of the National Academy of Sciences. 109(40). 16217-16221.", 
+"^ot:studyPublicationReference": "Leslie, A. B., J. M. Beaulieu, H. S. Rai, P. R. Crane, M. J. Donoghue, S. Mathews. 2012. Hemisphere-scale differences in conifer evolutionary dynamics. Proceedings of the National Academy of Sciences. 109 (40): 16217-16221.", 
 "^ot:studyYear": 2012, 
+"^ot:tag": [], 
 "^ot:treesElementOrder": [
 "trees412"
 ], 
@@ -2140,7 +2111,9 @@
 "^ot:ottTaxonName": "Podocarpus brevifolius"
 }, 
 "otu222896": {
-"^ot:originalLabel": "Podocarpus salomoniensis"
+"^ot:originalLabel": "Podocarpus salomoniensis", 
+"^ot:ottId": 615998, 
+"^ot:ottTaxonName": "Podocarpus salomonensis"
 }, 
 "otu222897": {
 "^ot:originalLabel": "Podocarpus spathoides", 
@@ -2446,7 +2419,9 @@
 "^ot:ottTaxonName": "Araucaria heterophylla"
 }, 
 "otu222958": {
-"^ot:originalLabel": "Araucaria muelleri"
+"^ot:originalLabel": "Araucaria muelleri", 
+"^ot:ottId": 4732774, 
+"^ot:ottTaxonName": "Araucaria muelleri"
 }, 
 "otu222959": {
 "^ot:originalLabel": "Araucaria montana", 
@@ -2560,11 +2535,15 @@
 "treeById": {
 "tree2166": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
 "^ot:branchLengthMode": "ot:time", 
 "^ot:branchLengthTimeUnit": "Myr", 
 "^ot:curatedType": "consensus of Bayesian analysis (BEAST MCC tree)", 
 "^ot:inGroupClade": "node531428", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node531427", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node531427": {
 "edge531428": {

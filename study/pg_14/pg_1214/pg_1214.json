@@ -19,48 +19,11 @@
 "@id": "peyotl-validator", 
 "@name": "validate_ot_nexson.py", 
 "@url": "https://github.com/OpenTreeOfLife/peyotl", 
-"@version": "0.0.3a", 
+"@version": "0.0.4a", 
 "invocation": {
-"checksPerformed": [
-"MISSING_MANDATORY_KEY", 
-"MISSING_OPTIONAL_KEY", 
-"UNRECOGNIZED_KEY", 
-"MISSING_LIST_EXPECTED", 
-"DUPLICATING_SINGLETON_KEY", 
-"REFERENCED_ID_NOT_FOUND", 
-"REPEATED_ID", 
-"REPEATED_OTU", 
-"MULTIPLE_ROOT_NODES", 
-"NO_ROOT_NODE", 
-"MULTIPLE_EDGES_FOR_NODES", 
-"CYCLE_DETECTED", 
-"DISCONNECTED_GRAPH_DETECTED", 
-"INCORRECT_ROOT_NODE_LABEL", 
-"TIP_WITHOUT_OTU", 
-"TIP_WITHOUT_OTT_ID", 
-"MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
-"NON_MONOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
-"INVALID_PROPERTY_VALUE", 
-"PROPERTY_VALUE_NOT_USEFUL", 
-"UNRECOGNIZED_PROPERTY_VALUE", 
-"MULTIPLE_TREES", 
-"UNRECOGNIZED_TAG", 
-"CONFLICTING_PROPERTY_VALUES", 
-"NO_TREES", 
-"DEPRECATED_PROPERTY", 
-"UNPARSEABLE_META", 
-"UNREACHABLE_NODE", 
-"INCORRECT_VALUE_TYPE", 
-"MISSING_CRUCIAL_CONTENT"
-], 
 "commandLine": [
 "--embed", 
-"--agent-only", 
-"-e", 
-"../mig-phyelesystem-scratch/1214/validation.json", 
-"-o", 
-"../mig-phyelesystem-scratch/1214/final.json", 
-"../mig-phyelesystem-scratch/1214/v1.2.1-1214.json"
+"--agent-only"
 ], 
 "otherProperty": [
 {
@@ -76,15 +39,23 @@
 }
 ]
 }, 
+"^ot:annotationEvents": {
+"annotation": []
+}, 
+"^ot:candidateTreeForSynthesis": [], 
 "^ot:curatorName": "Romina Gazis", 
 "^ot:focalClade": 205112, 
 "^ot:focalCladeOTTTaxonName": "Trametes", 
+"^ot:messages": {
+"message": []
+}, 
 "^ot:otusElementOrder": [
 "otus1214"
 ], 
 "^ot:studyId": "1214", 
 "^ot:studyPublicationReference": "Justo, Alfredo, and David S. Hibbett. \"Phylogenetic classification of Trametes (Basidiomycota, Polyporales) based on a five-marker dataset.\" Taxon 60, no. 6 (2011): 1567-1583.", 
 "^ot:studyYear": 2011, 
+"^ot:tag": [], 
 "^ot:treesElementOrder": [
 "trees1214"
 ], 
@@ -112,7 +83,9 @@
 "^ot:ottTaxonName": "Climacodon septentrionalis"
 }, 
 "otu232653": {
-"^ot:originalLabel": "Phanerochaete chrysosporium"
+"^ot:originalLabel": "Phanerochaete chrysosporium", 
+"^ot:ottId": 5299626, 
+"^ot:ottTaxonName": "Phanerodontia chrysosporium"
 }, 
 "otu232654": {
 "^ot:originalLabel": "Grifola sordulenta", 
@@ -150,7 +123,9 @@
 "^ot:ottTaxonName": "Trametes ochracea"
 }, 
 "otu232661": {
-"^ot:originalLabel": "Trametes conchifer"
+"^ot:originalLabel": "Trametes conchifer", 
+"^ot:ottId": 5299865, 
+"^ot:ottTaxonName": "Poronidulus conchifer"
 }, 
 "otu232662": {
 "^ot:originalLabel": "Trametes villosa", 
@@ -379,7 +354,9 @@
 "^ot:ottTaxonName": "Microporus vernicipes"
 }, 
 "otu232708": {
-"^ot:originalLabel": "Coriolopsis sanguinaria"
+"^ot:originalLabel": "Coriolopsis sanguinaria", 
+"^ot:ottId": 5299961, 
+"^ot:ottTaxonName": "Polyporus rugulosus"
 }, 
 "otu232709": {
 "^ot:originalLabel": "Coriolopsis aspera", 
@@ -488,7 +465,9 @@
 "^ot:ottTaxonName": "Trametes suaveolens"
 }, 
 "otu232731": {
-"^ot:originalLabel": "Trametes conchifer FP106793sp"
+"^ot:originalLabel": "Trametes conchifer FP106793sp", 
+"^ot:ottId": 5299865, 
+"^ot:ottTaxonName": "Poronidulus conchifer"
 }, 
 "otu232732": {
 "^ot:originalLabel": "Trametes pubescens FP101414sp", 
@@ -579,7 +558,9 @@
 "^ot:ottTaxonName": "Phlebia radiata"
 }, 
 "otu232750": {
-"^ot:originalLabel": "Phanerochaete chrysosporium AFTOL776 AY864880"
+"^ot:originalLabel": "Phanerochaete chrysosporium AFTOL776 AY864880", 
+"^ot:ottId": 5299626, 
+"^ot:ottTaxonName": "Phanerodontia chrysosporium"
 }, 
 "otu232751": {
 "^ot:originalLabel": "Trametopsis cervina TJV 93 216sp", 
@@ -959,22 +940,34 @@
 "^ot:ottTaxonName": "Trametes ectypa"
 }, 
 "otu232828": {
-"^ot:originalLabel": "Trametes conchifer FP15064sp NY"
+"^ot:originalLabel": "Trametes conchifer FP15064sp NY", 
+"^ot:ottId": 5299865, 
+"^ot:ottTaxonName": "Poronidulus conchifer"
 }, 
 "otu232829": {
-"^ot:originalLabel": "Trametes conchifer FP103312sp SC"
+"^ot:originalLabel": "Trametes conchifer FP103312sp SC", 
+"^ot:ottId": 5299865, 
+"^ot:ottTaxonName": "Poronidulus conchifer"
 }, 
 "otu232830": {
-"^ot:originalLabel": "Trametes conchifer FP106793sp MS"
+"^ot:originalLabel": "Trametes conchifer FP106793sp MS", 
+"^ot:ottId": 5299865, 
+"^ot:ottTaxonName": "Poronidulus conchifer"
 }, 
 "otu232831": {
-"^ot:originalLabel": "Trametes conchifer FP86583R VA"
+"^ot:originalLabel": "Trametes conchifer FP86583R VA", 
+"^ot:ottId": 5299865, 
+"^ot:ottTaxonName": "Poronidulus conchifer"
 }, 
 "otu232832": {
-"^ot:originalLabel": "Trametes conchifer HHB4940sp NY"
+"^ot:originalLabel": "Trametes conchifer HHB4940sp NY", 
+"^ot:ottId": 5299865, 
+"^ot:ottTaxonName": "Poronidulus conchifer"
 }, 
 "otu232833": {
-"^ot:originalLabel": "Trametes conchifer FP102251sp WI"
+"^ot:originalLabel": "Trametes conchifer FP102251sp WI", 
+"^ot:ottId": 5299865, 
+"^ot:ottTaxonName": "Poronidulus conchifer"
 }, 
 "otu232834": {
 "^ot:originalLabel": "Trametes junipericola AY684171", 
@@ -1482,7 +1475,9 @@
 "^ot:ottTaxonName": "Grifola sordulenta"
 }, 
 "otu232937": {
-"^ot:originalLabel": "Phanerochaete chrysosporium AFTOL776 AY885155"
+"^ot:originalLabel": "Phanerochaete chrysosporium AFTOL776 AY885155", 
+"^ot:ottId": 5299626, 
+"^ot:ottTaxonName": "Phanerodontia chrysosporium"
 }, 
 "otu232938": {
 "^ot:originalLabel": "Phlebia radiata AFTOL484 AY885156", 
@@ -1564,9 +1559,15 @@
 "treeById": {
 "tree2443": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "BI, LSU + ITS + RPB1 + RPB2 + EF-1", 
 "^ot:inGroupClade": "node564638", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node564637", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node564637": {
 "edge564638": {
@@ -2379,9 +2380,15 @@
 }, 
 "tree2444": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "ML, LSU + ITS", 
 "^ot:inGroupClade": "node564739", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node564738", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node564738": {
 "edge564739": {
@@ -3450,8 +3457,14 @@
 }, 
 "tree2445": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "ML, RPB1", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node564871", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node564871": {
 "edge564872": {
@@ -4056,9 +4069,15 @@
 }, 
 "tree2446": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "ML, ITS", 
 "^ot:inGroupClade": "node564947", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node564946", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node564946": {
 "edge564947": {
@@ -6567,9 +6586,16 @@
 }, 
 "tree2447": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "ML, RPB2", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node565259", 
-"^ot:tag": "ML", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [
+"ML"
+], 
 "edgeBySourceId": {
 "node565259": {
 "edge565260": {
@@ -7350,8 +7376,14 @@
 }, 
 "tree2448": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "ML, EF-1", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node565356", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node565356": {
 "edge565357": {

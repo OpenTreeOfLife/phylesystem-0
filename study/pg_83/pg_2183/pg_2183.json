@@ -19,48 +19,11 @@
 "@id": "peyotl-validator", 
 "@name": "validate_ot_nexson.py", 
 "@url": "https://github.com/OpenTreeOfLife/peyotl", 
-"@version": "0.0.3a", 
+"@version": "0.0.4a", 
 "invocation": {
-"checksPerformed": [
-"MISSING_MANDATORY_KEY", 
-"MISSING_OPTIONAL_KEY", 
-"UNRECOGNIZED_KEY", 
-"MISSING_LIST_EXPECTED", 
-"DUPLICATING_SINGLETON_KEY", 
-"REFERENCED_ID_NOT_FOUND", 
-"REPEATED_ID", 
-"REPEATED_OTU", 
-"MULTIPLE_ROOT_NODES", 
-"NO_ROOT_NODE", 
-"MULTIPLE_EDGES_FOR_NODES", 
-"CYCLE_DETECTED", 
-"DISCONNECTED_GRAPH_DETECTED", 
-"INCORRECT_ROOT_NODE_LABEL", 
-"TIP_WITHOUT_OTU", 
-"TIP_WITHOUT_OTT_ID", 
-"MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
-"NON_MONOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
-"INVALID_PROPERTY_VALUE", 
-"PROPERTY_VALUE_NOT_USEFUL", 
-"UNRECOGNIZED_PROPERTY_VALUE", 
-"MULTIPLE_TREES", 
-"UNRECOGNIZED_TAG", 
-"CONFLICTING_PROPERTY_VALUES", 
-"NO_TREES", 
-"DEPRECATED_PROPERTY", 
-"UNPARSEABLE_META", 
-"UNREACHABLE_NODE", 
-"INCORRECT_VALUE_TYPE", 
-"MISSING_CRUCIAL_CONTENT"
-], 
 "commandLine": [
 "--embed", 
-"--agent-only", 
-"-e", 
-"../mig-phyelesystem-scratch/2183/validation.json", 
-"-o", 
-"../mig-phyelesystem-scratch/2183/final.json", 
-"../mig-phyelesystem-scratch/2183/v1.2.1-2183.json"
+"--agent-only"
 ], 
 "otherProperty": [
 {
@@ -76,18 +39,24 @@
 }
 ]
 }, 
+"^ot:annotationEvents": {
+"annotation": []
+}, 
+"^ot:candidateTreeForSynthesis": [], 
 "^ot:curatorName": "Romina Gazis", 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S12709"
 }, 
-"^ot:focalClade": 2772848, 
-"^ot:focalCladeOTTTaxonName": "Afrocantharellus", 
+"^ot:messages": {
+"message": []
+}, 
 "^ot:otusElementOrder": [
 "otus2183"
 ], 
 "^ot:studyId": "2183", 
 "^ot:studyPublicationReference": "Tibuhwa, Donatha D., Sanja Savi\u00e6, Leif Tibell, and Amelia K. Kivaisi. \"Afrocantharellus gen. stat. nov. is part of a rich diversity of African Cantharellaceae.\" IMA Fungus: The Global Mycological Journal 3, no. 1 (2012): 25.", 
 "^ot:studyYear": 2012, 
+"^ot:tag": [], 
 "^ot:treesElementOrder": [
 "trees2183"
 ], 
@@ -96,8 +65,6 @@
 "otuById": {
 "otu318821": {
 "^ot:originalLabel": "Cantharellus sp. HM750930", 
-"^ot:ottId": 604898, 
-"^ot:ottTaxonName": "Cantharellus sp. DK-2010g", 
 "^ot:treebaseOTUId": "Tl787073"
 }, 
 "otu318822": {
@@ -121,7 +88,7 @@
 "otu318825": {
 "^ot:originalLabel": "Craterellus lutescens EU522746", 
 "^ot:ottId": 738473, 
-"^ot:ottTaxonName": "Cantharellus lutescens", 
+"^ot:ottTaxonName": "Craterellus lutescens", 
 "^ot:treebaseOTUId": "Tl787077"
 }, 
 "otu318826": {
@@ -150,8 +117,6 @@
 }, 
 "otu318830": {
 "^ot:originalLabel": "Afrocantharellus splendens DDT17", 
-"^ot:ottId": 555201, 
-"^ot:ottTaxonName": "Afrocantharellus splendens", 
 "^ot:treebaseOTUId": "Tl787082"
 }, 
 "otu318831": {
@@ -163,13 +128,11 @@
 "otu318832": {
 "^ot:originalLabel": "Afrocantharellus fistulosus DDT43", 
 "^ot:ottId": 450784, 
-"^ot:ottTaxonName": "Afrocantharellus fistulosus", 
+"^ot:ottTaxonName": "Cantharellus fistulinus", 
 "^ot:treebaseOTUId": "Tl787084"
 }, 
 "otu318833": {
 "^ot:originalLabel": "Cantharellus cibarius var. cibarius AY041155", 
-"^ot:ottId": 400275, 
-"^ot:ottTaxonName": "Cantharellus cibarius var. cibarius", 
 "^ot:treebaseOTUId": "Tl787085"
 }, 
 "otu318834": {
@@ -186,8 +149,6 @@
 }, 
 "otu318836": {
 "^ot:originalLabel": "Cantharellus sp. AJ271192", 
-"^ot:ottId": 264051, 
-"^ot:ottTaxonName": "Cantharellus sp. 'Tibet'", 
 "^ot:treebaseOTUId": "Tl787088"
 }, 
 "otu318837": {
@@ -199,7 +160,7 @@
 "otu318838": {
 "^ot:originalLabel": "Afrocantharellus platyphyllus f. cyanescens DDT63", 
 "^ot:ottId": 555205, 
-"^ot:ottTaxonName": "Afrocantharellus platyphyllus f. cyanescens", 
+"^ot:ottTaxonName": "Cantharellus cyanescens", 
 "^ot:treebaseOTUId": "Tl787090"
 }, 
 "otu318839": {
@@ -210,14 +171,10 @@
 }, 
 "otu318840": {
 "^ot:originalLabel": "Cantharellus sp. HM750928", 
-"^ot:ottId": 604893, 
-"^ot:ottTaxonName": "Cantharellus sp. DK-2010c", 
 "^ot:treebaseOTUId": "Tl787092"
 }, 
 "otu318841": {
 "^ot:originalLabel": "Cantharellus isabellinus var. parvisporus DDT22", 
-"^ot:ottId": 731161, 
-"^ot:ottTaxonName": "Cantharellus isabellinus var. parvisporus", 
 "^ot:treebaseOTUId": "Tl787093"
 }, 
 "otu318842": {
@@ -228,8 +185,6 @@
 }, 
 "otu318843": {
 "^ot:originalLabel": "Craterellus cantharellus var. intermedius HM750919", 
-"^ot:ottId": 413296, 
-"^ot:ottTaxonName": "Craterellus cantharellus var. intermedius", 
 "^ot:treebaseOTUId": "Tl787095"
 }, 
 "otu318844": {
@@ -240,8 +195,6 @@
 }, 
 "otu318845": {
 "^ot:originalLabel": "Afrocantharellus symoensii DDT66", 
-"^ot:ottId": 53056, 
-"^ot:ottTaxonName": "Afrocantharellus symoensii", 
 "^ot:treebaseOTUId": "Tl787097"
 }, 
 "otu318846": {
@@ -264,14 +217,10 @@
 }, 
 "otu318849": {
 "^ot:originalLabel": "Cantharellus cibarius var. cibarius AY041156", 
-"^ot:ottId": 400275, 
-"^ot:ottTaxonName": "Cantharellus cibarius var. cibarius", 
 "^ot:treebaseOTUId": "Tl787101"
 }, 
 "otu318850": {
 "^ot:originalLabel": "Cantharellus cibarius var. longipes HM750924", 
-"^ot:ottId": 999741, 
-"^ot:ottTaxonName": "Cantharellus cibarius var. longipes", 
 "^ot:treebaseOTUId": "Tl787102"
 }, 
 "otu318851": {
@@ -282,14 +231,14 @@
 }, 
 "otu318852": {
 "^ot:originalLabel": "Craterellus melanoxeros SS576", 
-"^ot:ottId": 693495, 
-"^ot:ottTaxonName": "Craterellus melanoxeros", 
+"^ot:ottId": 5300474, 
+"^ot:ottTaxonName": "Cantharellus melanoxeros", 
 "^ot:treebaseOTUId": "Tl787104"
 }, 
 "otu318853": {
 "^ot:originalLabel": "Cantharellus pallens SS577", 
-"^ot:ottId": 321275, 
-"^ot:ottTaxonName": "Cantharellus pallens", 
+"^ot:ottId": 2361, 
+"^ot:ottTaxonName": "Cantharellus ferruginascens", 
 "^ot:treebaseOTUId": "Tl787105"
 }, 
 "otu318854": {
@@ -336,14 +285,10 @@
 }, 
 "otu318861": {
 "^ot:originalLabel": "Afrocantharellus symoensii DDT11", 
-"^ot:ottId": 53056, 
-"^ot:ottTaxonName": "Afrocantharellus symoensii", 
 "^ot:treebaseOTUId": "Tl787113"
 }, 
 "otu318862": {
 "^ot:originalLabel": "Cantharellus sp. HM750918", 
-"^ot:ottId": 999740, 
-"^ot:ottTaxonName": "Cantharellus sp. DK-2010a", 
 "^ot:treebaseOTUId": "Tl787114"
 }, 
 "otu318863": {
@@ -354,8 +299,6 @@
 }, 
 "otu318864": {
 "^ot:originalLabel": "Cantharellus sp. AY041167", 
-"^ot:ottId": 400280, 
-"^ot:ottTaxonName": "Cantharellus sp. OSC 76057", 
 "^ot:treebaseOTUId": "Tl787116"
 }, 
 "otu318865": {
@@ -366,8 +309,6 @@
 }, 
 "otu318866": {
 "^ot:originalLabel": "Afrocantharellus platyphyllus f. platyphyllus DDT03", 
-"^ot:ottId": 1081589, 
-"^ot:ottTaxonName": "Afrocantharellus platyphyllus f. platyphyllus", 
 "^ot:treebaseOTUId": "Tl787118"
 }, 
 "otu318867": {
@@ -391,7 +332,7 @@
 "otu318870": {
 "^ot:originalLabel": "Afrocantharellus fistulosus DDT31", 
 "^ot:ottId": 450784, 
-"^ot:ottTaxonName": "Afrocantharellus fistulosus", 
+"^ot:ottTaxonName": "Cantharellus fistulinus", 
 "^ot:treebaseOTUId": "Tl787122"
 }, 
 "otu318871": {
@@ -409,7 +350,7 @@
 "otu318873": {
 "^ot:originalLabel": "Craterellus lutescens SS575", 
 "^ot:ottId": 738473, 
-"^ot:ottTaxonName": "Cantharellus lutescens", 
+"^ot:ottTaxonName": "Craterellus lutescens", 
 "^ot:treebaseOTUId": "Tl787125"
 }, 
 "otu318874": {
@@ -427,7 +368,7 @@
 "otu318876": {
 "^ot:originalLabel": "Craterellus sp. HM113529", 
 "^ot:ottId": 1029502, 
-"^ot:ottTaxonName": "Craterellus sp. SR-2010", 
+"^ot:ottTaxonName": "Craterellus indicus", 
 "^ot:treebaseOTUId": "Tl787128"
 }, 
 "otu318877": {
@@ -444,8 +385,6 @@
 }, 
 "otu318879": {
 "^ot:originalLabel": "Afrocantharellus symoensii DDT36", 
-"^ot:ottId": 53056, 
-"^ot:ottTaxonName": "Afrocantharellus symoensii", 
 "^ot:treebaseOTUId": "Tl787131"
 }, 
 "otu318880": {
@@ -462,8 +401,6 @@
 }, 
 "otu318882": {
 "^ot:originalLabel": "Cantharellus sp. HM750926", 
-"^ot:ottId": 599126, 
-"^ot:ottTaxonName": "Cantharellus sp. DK-2010f", 
 "^ot:treebaseOTUId": "Tl787134"
 }, 
 "otu318883": {
@@ -474,8 +411,6 @@
 }, 
 "otu318884": {
 "^ot:originalLabel": "Afrocantharellus platyphyllus f. platyphyllus DDT78", 
-"^ot:ottId": 1081589, 
-"^ot:ottTaxonName": "Afrocantharellus platyphyllus f. platyphyllus", 
 "^ot:treebaseOTUId": "Tl787136"
 }, 
 "otu318885": {
@@ -504,8 +439,6 @@
 }, 
 "otu318889": {
 "^ot:originalLabel": "Cantharellus cibarius var. multiramis HM750920", 
-"^ot:ottId": 999743, 
-"^ot:ottTaxonName": "Cantharellus cibarius var. multiramis", 
 "^ot:treebaseOTUId": "Tl787141"
 }, 
 "otu318890": {
@@ -522,20 +455,14 @@
 }, 
 "otu318892": {
 "^ot:originalLabel": "Afrocantharellus symoensii DDT04", 
-"^ot:ottId": 53056, 
-"^ot:ottTaxonName": "Afrocantharellus symoensii", 
 "^ot:treebaseOTUId": "Tl787144"
 }, 
 "otu318893": {
 "^ot:originalLabel": "Afrocantharellus symoensii DDT14", 
-"^ot:ottId": 53056, 
-"^ot:ottTaxonName": "Afrocantharellus symoensii", 
 "^ot:treebaseOTUId": "Tl787145"
 }, 
 "otu318894": {
 "^ot:originalLabel": "Cantharellus sp. HM750917", 
-"^ot:ottId": 999739, 
-"^ot:ottTaxonName": "Cantharellus sp. DK-2010b", 
 "^ot:treebaseOTUId": "Tl787146"
 }, 
 "otu318895": {
@@ -606,14 +533,10 @@
 }, 
 "otu318906": {
 "^ot:originalLabel": "Cantharellus sp. HM750921", 
-"^ot:ottId": 604894, 
-"^ot:ottTaxonName": "Cantharellus sp. DK-2010d", 
 "^ot:treebaseOTUId": "Tl787158"
 }, 
 "otu318907": {
 "^ot:originalLabel": "Afrocantharellus symoensii DDT67", 
-"^ot:ottId": 53056, 
-"^ot:ottTaxonName": "Afrocantharellus symoensii", 
 "^ot:treebaseOTUId": "Tl787159"
 }, 
 "otu318908": {
@@ -624,14 +547,10 @@
 }, 
 "otu318909": {
 "^ot:originalLabel": "Afrocantharellus platyphyllus f. platyphyllus DDT41", 
-"^ot:ottId": 1081589, 
-"^ot:ottTaxonName": "Afrocantharellus platyphyllus f. platyphyllus", 
 "^ot:treebaseOTUId": "Tl787161"
 }, 
 "otu318910": {
 "^ot:originalLabel": "Afrocantharellus splendens DDT57", 
-"^ot:ottId": 555201, 
-"^ot:ottTaxonName": "Afrocantharellus splendens", 
 "^ot:treebaseOTUId": "Tl787162"
 }, 
 "otu318911": {
@@ -642,20 +561,16 @@
 }, 
 "otu318912": {
 "^ot:originalLabel": "Cantharellus cibarius var. cibarius AY041157", 
-"^ot:ottId": 400275, 
-"^ot:ottTaxonName": "Cantharellus cibarius var. cibarius", 
 "^ot:treebaseOTUId": "Tl787164"
 }, 
 "otu318913": {
 "^ot:originalLabel": "Cantharellus sp. DDT70", 
-"^ot:ottId": 483602, 
-"^ot:ottTaxonName": "Cantharellus sp. Tibuhwa 1079.2009", 
 "^ot:treebaseOTUId": "Tl787165"
 }, 
 "otu318914": {
 "^ot:originalLabel": "Botryobasidium isabellinum AF393047", 
-"^ot:ottId": 463255, 
-"^ot:ottTaxonName": "Botryobasidium isabellinum", 
+"^ot:ottId": 5300654, 
+"^ot:ottTaxonName": "Botryohypochnus isabellinus", 
 "^ot:treebaseOTUId": "Tl787166"
 }, 
 "otu318915": {
@@ -684,8 +599,6 @@
 }, 
 "otu318919": {
 "^ot:originalLabel": "Cantharellus sp. DDT79", 
-"^ot:ottId": 483603, 
-"^ot:ottTaxonName": "Cantharellus sp. Tibuhwa 1079.2007", 
 "^ot:treebaseOTUId": "Tl787171"
 }
 }
@@ -701,9 +614,15 @@
 "treeById": {
 "tree4620": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "BI, LSU", 
 "^ot:inGroupClade": "node820760", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node820757", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node820757": {
 "edge820758": {
@@ -2164,9 +2083,15 @@
 }, 
 "tree4621": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "BI, LSU + 5.8S + ITS2 + ATP6", 
 "^ot:inGroupClade": "node820944", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node820939", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node820939": {
 "edge820940": {

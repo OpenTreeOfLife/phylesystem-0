@@ -19,48 +19,11 @@
 "@id": "peyotl-validator", 
 "@name": "validate_ot_nexson.py", 
 "@url": "https://github.com/OpenTreeOfLife/peyotl", 
-"@version": "0.0.3a", 
+"@version": "0.0.4a", 
 "invocation": {
-"checksPerformed": [
-"MISSING_MANDATORY_KEY", 
-"MISSING_OPTIONAL_KEY", 
-"UNRECOGNIZED_KEY", 
-"MISSING_LIST_EXPECTED", 
-"DUPLICATING_SINGLETON_KEY", 
-"REFERENCED_ID_NOT_FOUND", 
-"REPEATED_ID", 
-"REPEATED_OTU", 
-"MULTIPLE_ROOT_NODES", 
-"NO_ROOT_NODE", 
-"MULTIPLE_EDGES_FOR_NODES", 
-"CYCLE_DETECTED", 
-"DISCONNECTED_GRAPH_DETECTED", 
-"INCORRECT_ROOT_NODE_LABEL", 
-"TIP_WITHOUT_OTU", 
-"TIP_WITHOUT_OTT_ID", 
-"MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
-"NON_MONOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
-"INVALID_PROPERTY_VALUE", 
-"PROPERTY_VALUE_NOT_USEFUL", 
-"UNRECOGNIZED_PROPERTY_VALUE", 
-"MULTIPLE_TREES", 
-"UNRECOGNIZED_TAG", 
-"CONFLICTING_PROPERTY_VALUES", 
-"NO_TREES", 
-"DEPRECATED_PROPERTY", 
-"UNPARSEABLE_META", 
-"UNREACHABLE_NODE", 
-"INCORRECT_VALUE_TYPE", 
-"MISSING_CRUCIAL_CONTENT"
-], 
 "commandLine": [
 "--embed", 
-"--agent-only", 
-"-e", 
-"../mig-phyelesystem-scratch/2819/validation.json", 
-"-o", 
-"../mig-phyelesystem-scratch/2819/final.json", 
-"../mig-phyelesystem-scratch/2819/v1.2.1-2819.json"
+"--agent-only"
 ], 
 "otherProperty": [
 {
@@ -73,859 +36,14 @@
 }
 ]
 }
-}, 
-{
-"@description": "Web-based interface for submitting, editing, and reviewing studies in the Open Tree of Life project.", 
-"@id": "opentree-curation-webapp", 
-"@name": "OpenTree curation webapp", 
-"@url": "https://github.com/OpenTreeOfLife/opentree", 
-"@version": "0.0.0"
 }
 ]
 }, 
 "^ot:annotationEvents": {
-"annotation": [
-{
-"@description": "Open Tree NexSON validation", 
-"@id": "peyotl-validator-event", 
-"@passedChecks": true, 
-"@preserve": false, 
-"@wasAssociatedWithAgentId": "peyotl-validator", 
-"message": [
-{
-"@code": "MISSING_OPTIONAL_KEY", 
-"@severity": "WARNING", 
-"data": [
-"^ot:ottId"
-], 
-"refersTo": {
-"@idref": [
-"otu418473", 
-"otu418475", 
-"otu418476", 
-"otu418477", 
-"otu418478", 
-"otu418479", 
-"otu418480", 
-"otu418481", 
-"otu418482", 
-"otu418483", 
-"otu418484", 
-"otu418486", 
-"otu418487", 
-"otu418489", 
-"otu418490", 
-"otu418492", 
-"otu418493", 
-"otu418494", 
-"otu418495", 
-"otu418496", 
-"otu418497", 
-"otu418499", 
-"otu418500", 
-"otu418502", 
-"otu418504", 
-"otu418505", 
-"otu418506", 
-"otu418508", 
-"otu418509", 
-"otu418510", 
-"otu418511", 
-"otu418512", 
-"otu418514", 
-"otu418515", 
-"otu418518", 
-"otu418520", 
-"otu418521", 
-"otu418522", 
-"otu418523", 
-"otu418524", 
-"otu418525", 
-"otu418526", 
-"otu418527", 
-"otu418529", 
-"otu418531", 
-"otu418534", 
-"otu418535", 
-"otu418536", 
-"otu418539", 
-"otu418542", 
-"otu418544", 
-"otu418545", 
-"otu418546", 
-"otu418547", 
-"otu418548", 
-"otu418549", 
-"otu418550", 
-"otu418551", 
-"otu418552", 
-"otu418555", 
-"otu418556", 
-"otu418557", 
-"otu418558", 
-"otu418559", 
-"otu418560", 
-"otu418561", 
-"otu418562", 
-"otu418563", 
-"otu418565", 
-"otu418567", 
-"otu418569", 
-"otu418571", 
-"otu418572", 
-"otu418574", 
-"otu418576", 
-"otu418578", 
-"otu418579", 
-"otu418581", 
-"otu418582", 
-"otu418583", 
-"otu418588", 
-"otu418589", 
-"otu418590", 
-"otu418591", 
-"otu418592", 
-"otu418593", 
-"otu418595", 
-"otu418596", 
-"otu418600", 
-"otu418601", 
-"otu418602", 
-"otu418603", 
-"otu418605", 
-"otu418606", 
-"otu418608", 
-"otu418609", 
-"otu418610", 
-"otu418613", 
-"otu418614", 
-"otu418615"
-], 
-"@otuID": [
-"otu418473", 
-"otu418475", 
-"otu418476", 
-"otu418477", 
-"otu418478", 
-"otu418479", 
-"otu418480", 
-"otu418481", 
-"otu418482", 
-"otu418483", 
-"otu418484", 
-"otu418486", 
-"otu418487", 
-"otu418489", 
-"otu418490", 
-"otu418492", 
-"otu418493", 
-"otu418494", 
-"otu418495", 
-"otu418496", 
-"otu418497", 
-"otu418499", 
-"otu418500", 
-"otu418502", 
-"otu418504", 
-"otu418505", 
-"otu418506", 
-"otu418508", 
-"otu418509", 
-"otu418510", 
-"otu418511", 
-"otu418512", 
-"otu418514", 
-"otu418515", 
-"otu418518", 
-"otu418520", 
-"otu418521", 
-"otu418522", 
-"otu418523", 
-"otu418524", 
-"otu418525", 
-"otu418526", 
-"otu418527", 
-"otu418529", 
-"otu418531", 
-"otu418534", 
-"otu418535", 
-"otu418536", 
-"otu418539", 
-"otu418542", 
-"otu418544", 
-"otu418545", 
-"otu418546", 
-"otu418547", 
-"otu418548", 
-"otu418549", 
-"otu418550", 
-"otu418551", 
-"otu418552", 
-"otu418555", 
-"otu418556", 
-"otu418557", 
-"otu418558", 
-"otu418559", 
-"otu418560", 
-"otu418561", 
-"otu418562", 
-"otu418563", 
-"otu418565", 
-"otu418567", 
-"otu418569", 
-"otu418571", 
-"otu418572", 
-"otu418574", 
-"otu418576", 
-"otu418578", 
-"otu418579", 
-"otu418581", 
-"otu418582", 
-"otu418583", 
-"otu418588", 
-"otu418589", 
-"otu418590", 
-"otu418591", 
-"otu418592", 
-"otu418593", 
-"otu418595", 
-"otu418596", 
-"otu418600", 
-"otu418601", 
-"otu418602", 
-"otu418603", 
-"otu418605", 
-"otu418606", 
-"otu418608", 
-"otu418609", 
-"otu418610", 
-"otu418613", 
-"otu418614", 
-"otu418615"
-], 
-"@otusID": "otus2819", 
-"@top": "otus"
-}
+"annotation": []
 }, 
-{
-"@code": "UNRECOGNIZED_KEY", 
-"@severity": "WARNING", 
-"data": [
-"^ot:altLabel"
-], 
-"refersTo": {
-"@idref": "otu418474", 
-"@otuID": "otu418474", 
-"@otusID": "otus2819", 
-"@top": "otus"
-}
-}, 
-{
-"@code": "UNRECOGNIZED_KEY", 
-"@severity": "WARNING", 
-"data": [
-"^ot:altLabel"
-], 
-"refersTo": {
-"@idref": "otu418485", 
-"@otuID": "otu418485", 
-"@otusID": "otus2819", 
-"@top": "otus"
-}
-}, 
-{
-"@code": "UNRECOGNIZED_KEY", 
-"@severity": "WARNING", 
-"data": [
-"^ot:altLabel"
-], 
-"refersTo": {
-"@idref": "otu418488", 
-"@otuID": "otu418488", 
-"@otusID": "otus2819", 
-"@top": "otus"
-}
-}, 
-{
-"@code": "UNRECOGNIZED_KEY", 
-"@severity": "WARNING", 
-"data": [
-"^ot:altLabel"
-], 
-"refersTo": {
-"@idref": "otu418491", 
-"@otuID": "otu418491", 
-"@otusID": "otus2819", 
-"@top": "otus"
-}
-}, 
-{
-"@code": "UNRECOGNIZED_KEY", 
-"@severity": "WARNING", 
-"data": [
-"^ot:altLabel"
-], 
-"refersTo": {
-"@idref": "otu418498", 
-"@otuID": "otu418498", 
-"@otusID": "otus2819", 
-"@top": "otus"
-}
-}, 
-{
-"@code": "UNRECOGNIZED_KEY", 
-"@severity": "WARNING", 
-"data": [
-"^ot:altLabel"
-], 
-"refersTo": {
-"@idref": "otu418501", 
-"@otuID": "otu418501", 
-"@otusID": "otus2819", 
-"@top": "otus"
-}
-}, 
-{
-"@code": "UNRECOGNIZED_KEY", 
-"@severity": "WARNING", 
-"data": [
-"^ot:altLabel"
-], 
-"refersTo": {
-"@idref": "otu418503", 
-"@otuID": "otu418503", 
-"@otusID": "otus2819", 
-"@top": "otus"
-}
-}, 
-{
-"@code": "UNRECOGNIZED_KEY", 
-"@severity": "WARNING", 
-"data": [
-"^ot:altLabel"
-], 
-"refersTo": {
-"@idref": "otu418507", 
-"@otuID": "otu418507", 
-"@otusID": "otus2819", 
-"@top": "otus"
-}
-}, 
-{
-"@code": "UNRECOGNIZED_KEY", 
-"@severity": "WARNING", 
-"data": [
-"^ot:altLabel"
-], 
-"refersTo": {
-"@idref": "otu418513", 
-"@otuID": "otu418513", 
-"@otusID": "otus2819", 
-"@top": "otus"
-}
-}, 
-{
-"@code": "UNRECOGNIZED_KEY", 
-"@severity": "WARNING", 
-"data": [
-"^ot:altLabel"
-], 
-"refersTo": {
-"@idref": "otu418516", 
-"@otuID": "otu418516", 
-"@otusID": "otus2819", 
-"@top": "otus"
-}
-}, 
-{
-"@code": "UNRECOGNIZED_KEY", 
-"@severity": "WARNING", 
-"data": [
-"^ot:altLabel"
-], 
-"refersTo": {
-"@idref": "otu418517", 
-"@otuID": "otu418517", 
-"@otusID": "otus2819", 
-"@top": "otus"
-}
-}, 
-{
-"@code": "UNRECOGNIZED_KEY", 
-"@severity": "WARNING", 
-"data": [
-"^ot:altLabel"
-], 
-"refersTo": {
-"@idref": "otu418519", 
-"@otuID": "otu418519", 
-"@otusID": "otus2819", 
-"@top": "otus"
-}
-}, 
-{
-"@code": "UNRECOGNIZED_KEY", 
-"@severity": "WARNING", 
-"data": [
-"^ot:altLabel"
-], 
-"refersTo": {
-"@idref": "otu418530", 
-"@otuID": "otu418530", 
-"@otusID": "otus2819", 
-"@top": "otus"
-}
-}, 
-{
-"@code": "UNRECOGNIZED_KEY", 
-"@severity": "WARNING", 
-"data": [
-"^ot:altLabel"
-], 
-"refersTo": {
-"@idref": "otu418532", 
-"@otuID": "otu418532", 
-"@otusID": "otus2819", 
-"@top": "otus"
-}
-}, 
-{
-"@code": "UNRECOGNIZED_KEY", 
-"@severity": "WARNING", 
-"data": [
-"^ot:altLabel"
-], 
-"refersTo": {
-"@idref": "otu418533", 
-"@otuID": "otu418533", 
-"@otusID": "otus2819", 
-"@top": "otus"
-}
-}, 
-{
-"@code": "UNRECOGNIZED_KEY", 
-"@severity": "WARNING", 
-"data": [
-"^ot:altLabel"
-], 
-"refersTo": {
-"@idref": "otu418537", 
-"@otuID": "otu418537", 
-"@otusID": "otus2819", 
-"@top": "otus"
-}
-}, 
-{
-"@code": "UNRECOGNIZED_KEY", 
-"@severity": "WARNING", 
-"data": [
-"^ot:altLabel"
-], 
-"refersTo": {
-"@idref": "otu418538", 
-"@otuID": "otu418538", 
-"@otusID": "otus2819", 
-"@top": "otus"
-}
-}, 
-{
-"@code": "UNRECOGNIZED_KEY", 
-"@severity": "WARNING", 
-"data": [
-"^ot:altLabel"
-], 
-"refersTo": {
-"@idref": "otu418540", 
-"@otuID": "otu418540", 
-"@otusID": "otus2819", 
-"@top": "otus"
-}
-}, 
-{
-"@code": "UNRECOGNIZED_KEY", 
-"@severity": "WARNING", 
-"data": [
-"^ot:altLabel"
-], 
-"refersTo": {
-"@idref": "otu418541", 
-"@otuID": "otu418541", 
-"@otusID": "otus2819", 
-"@top": "otus"
-}
-}, 
-{
-"@code": "UNRECOGNIZED_KEY", 
-"@severity": "WARNING", 
-"data": [
-"^ot:altLabel"
-], 
-"refersTo": {
-"@idref": "otu418543", 
-"@otuID": "otu418543", 
-"@otusID": "otus2819", 
-"@top": "otus"
-}
-}, 
-{
-"@code": "UNRECOGNIZED_KEY", 
-"@severity": "WARNING", 
-"data": [
-"^ot:altLabel"
-], 
-"refersTo": {
-"@idref": "otu418553", 
-"@otuID": "otu418553", 
-"@otusID": "otus2819", 
-"@top": "otus"
-}
-}, 
-{
-"@code": "UNRECOGNIZED_KEY", 
-"@severity": "WARNING", 
-"data": [
-"^ot:altLabel"
-], 
-"refersTo": {
-"@idref": "otu418554", 
-"@otuID": "otu418554", 
-"@otusID": "otus2819", 
-"@top": "otus"
-}
-}, 
-{
-"@code": "UNRECOGNIZED_KEY", 
-"@severity": "WARNING", 
-"data": [
-"^ot:altLabel"
-], 
-"refersTo": {
-"@idref": "otu418568", 
-"@otuID": "otu418568", 
-"@otusID": "otus2819", 
-"@top": "otus"
-}
-}, 
-{
-"@code": "UNRECOGNIZED_KEY", 
-"@severity": "WARNING", 
-"data": [
-"^ot:altLabel"
-], 
-"refersTo": {
-"@idref": "otu418570", 
-"@otuID": "otu418570", 
-"@otusID": "otus2819", 
-"@top": "otus"
-}
-}, 
-{
-"@code": "UNRECOGNIZED_KEY", 
-"@severity": "WARNING", 
-"data": [
-"^ot:altLabel"
-], 
-"refersTo": {
-"@idref": "otu418575", 
-"@otuID": "otu418575", 
-"@otusID": "otus2819", 
-"@top": "otus"
-}
-}, 
-{
-"@code": "UNRECOGNIZED_KEY", 
-"@severity": "WARNING", 
-"data": [
-"^ot:altLabel"
-], 
-"refersTo": {
-"@idref": "otu418580", 
-"@otuID": "otu418580", 
-"@otusID": "otus2819", 
-"@top": "otus"
-}
-}, 
-{
-"@code": "UNRECOGNIZED_KEY", 
-"@severity": "WARNING", 
-"data": [
-"^ot:altLabel"
-], 
-"refersTo": {
-"@idref": "otu418584", 
-"@otuID": "otu418584", 
-"@otusID": "otus2819", 
-"@top": "otus"
-}
-}, 
-{
-"@code": "UNRECOGNIZED_KEY", 
-"@severity": "WARNING", 
-"data": [
-"^ot:altLabel"
-], 
-"refersTo": {
-"@idref": "otu418585", 
-"@otuID": "otu418585", 
-"@otusID": "otus2819", 
-"@top": "otus"
-}
-}, 
-{
-"@code": "UNRECOGNIZED_KEY", 
-"@severity": "WARNING", 
-"data": [
-"^ot:altLabel"
-], 
-"refersTo": {
-"@idref": "otu418586", 
-"@otuID": "otu418586", 
-"@otusID": "otus2819", 
-"@top": "otus"
-}
-}, 
-{
-"@code": "UNRECOGNIZED_KEY", 
-"@severity": "WARNING", 
-"data": [
-"^ot:altLabel"
-], 
-"refersTo": {
-"@idref": "otu418587", 
-"@otuID": "otu418587", 
-"@otusID": "otus2819", 
-"@top": "otus"
-}
-}, 
-{
-"@code": "UNRECOGNIZED_KEY", 
-"@severity": "WARNING", 
-"data": [
-"^ot:altLabel"
-], 
-"refersTo": {
-"@idref": "otu418594", 
-"@otuID": "otu418594", 
-"@otusID": "otus2819", 
-"@top": "otus"
-}
-}, 
-{
-"@code": "UNRECOGNIZED_KEY", 
-"@severity": "WARNING", 
-"data": [
-"^ot:altLabel"
-], 
-"refersTo": {
-"@idref": "otu418597", 
-"@otuID": "otu418597", 
-"@otusID": "otus2819", 
-"@top": "otus"
-}
-}, 
-{
-"@code": "UNRECOGNIZED_KEY", 
-"@severity": "WARNING", 
-"data": [
-"^ot:altLabel"
-], 
-"refersTo": {
-"@idref": "otu418598", 
-"@otuID": "otu418598", 
-"@otusID": "otus2819", 
-"@top": "otus"
-}
-}, 
-{
-"@code": "UNRECOGNIZED_KEY", 
-"@severity": "WARNING", 
-"data": [
-"^ot:altLabel"
-], 
-"refersTo": {
-"@idref": "otu418599", 
-"@otuID": "otu418599", 
-"@otusID": "otus2819", 
-"@top": "otus"
-}
-}, 
-{
-"@code": "UNRECOGNIZED_KEY", 
-"@severity": "WARNING", 
-"data": [
-"^ot:altLabel"
-], 
-"refersTo": {
-"@idref": "otu418604", 
-"@otuID": "otu418604", 
-"@otusID": "otus2819", 
-"@top": "otus"
-}
-}, 
-{
-"@code": "UNRECOGNIZED_KEY", 
-"@severity": "WARNING", 
-"data": [
-"^ot:altLabel"
-], 
-"refersTo": {
-"@idref": "otu418607", 
-"@otuID": "otu418607", 
-"@otusID": "otus2819", 
-"@top": "otus"
-}
-}, 
-{
-"@code": "UNRECOGNIZED_KEY", 
-"@severity": "WARNING", 
-"data": [
-"^ot:altLabel"
-], 
-"refersTo": {
-"@idref": "otu418611", 
-"@otuID": "otu418611", 
-"@otusID": "otus2819", 
-"@top": "otus"
-}
-}, 
-{
-"@code": "UNRECOGNIZED_KEY", 
-"@severity": "WARNING", 
-"data": [
-"^ot:altLabel"
-], 
-"refersTo": {
-"@idref": "otu418612", 
-"@otuID": "otu418612", 
-"@otusID": "otus2819", 
-"@top": "otus"
-}
-}, 
-{
-"@code": "UNRECOGNIZED_KEY", 
-"@severity": "WARNING", 
-"data": [
-"^ot:altLabel"
-], 
-"refersTo": {
-"@idref": "otu418616", 
-"@otuID": "otu418616", 
-"@otusID": "otus2819", 
-"@top": "otus"
-}
-}, 
-{
-"@code": "UNRECOGNIZED_KEY", 
-"@severity": "WARNING", 
-"data": [
-"^ot:agents"
-], 
-"refersTo": {
-"@idref": "study", 
-"@top": "nexml"
-}
-}, 
-{
-"@code": "MISSING_OPTIONAL_KEY", 
-"@severity": "WARNING", 
-"data": [
-"^ot:studyPublication"
-], 
-"refersTo": {
-"@idref": "study", 
-"@top": "nexml"
-}
-}, 
-{
-"@code": "MISSING_OPTIONAL_KEY", 
-"@severity": "WARNING", 
-"data": [
-"^ot:branchLengthMode", 
-"^ot:branchLengthTimeUnit"
-], 
-"refersTo": {
-"@idref": "tree6564", 
-"@top": "trees", 
-"@treeID": "tree6564", 
-"@treesID": "tree6564"
-}
-}
-]
-}, 
-{
-"@dateCreated": "2014-04-08T20:48:12.925Z", 
-"@description": "Aids for mapping study OTUs to OTT taxa", 
-"@id": "otu-mapping-hints", 
-"@passedChecks": true, 
-"@preserve": true, 
-"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
-"message": [
-{
-"@code": "OTU_MAPPING_HINTS", 
-"@humanMessageType": "NONE", 
-"@severity": "INFO", 
-"data": {
-"searchContext": {
-"$": "All life"
-}, 
-"substitutions": {
-"substitution": [
-{
-"@active": false, 
-"@valid": true, 
-"new": {
-"$": ""
-}, 
-"old": {
-"$": ""
-}
-}
-]
-}
-}, 
-"refersTo": {
-"@top": {
-"$": "meta"
-}
-}
-}
-]
-}, 
-{
-"@dateCreated": "2014-04-08T20:48:12.925Z", 
-"@description": "Describes supporting data files for this study", 
-"@id": "supporting-files-metadata", 
-"@passedChecks": true, 
-"@preserve": true, 
-"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
-"message": [
-{
-"@code": "SUPPORTING_FILE_INFO", 
-"@humanMessageType": "NONE", 
-"@severity": "INFO", 
-"data": {
-"@movedToPermanentArchive": false, 
-"files": {
-"file": []
-}
-}, 
-"refersTo": {
-"@top": {
-"$": "meta"
-}
-}
-}
-]
-}
-]
-}, 
-"^ot:candidateTreeForSynthesis": {
-"candidate": []
-}, 
-"^ot:curatorName": [
-"Romina Gazis", 
-"Jonathan A Rees"
-], 
+"^ot:candidateTreeForSynthesis": [], 
+"^ot:curatorName": "Romina Gazis", 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S14151"
 }, 
@@ -934,21 +52,17 @@
 "^ot:messages": {
 "message": []
 }, 
-"^ot:notIntendedForSynthesis": false, 
 "^ot:otusElementOrder": [
 "otus2819"
 ], 
 "^ot:studyId": "2819", 
-"^ot:studyPublication": {
-"@href": "http://dx.doi.org/10.1007/s11557-013-0907-5"
-}, 
 "^ot:studyPublicationReference": "Mbenoun M., Wingfield M.J., Begoude boyogueno A., Wingfield B.D., & Roux J. 2014. Molecular phylogenetic analyses reveal three new Ceratocystis species and provide evidence for geographic differentiation of the genus in Africa. Mycological Progress, .", 
 "^ot:studyYear": 2014, 
 "^ot:tag": [
-"MP", 
-"ITS", 
+"B-tub", 
 "EF-1", 
-"B-tub"
+"ITS", 
+"MP"
 ], 
 "^ot:treesElementOrder": [
 "trees2819"
@@ -961,9 +75,9 @@
 "^ot:treebaseOTUId": "Tl1076330"
 }, 
 "otu418474": {
-"^ot:altLabel": "Ceratocystis tribiliformis", 
 "^ot:originalLabel": "Ceratocystis tribiliformis CMW13011", 
 "^ot:ottId": 671498, 
+"^ot:ottTaxonName": "Ceratocystis tribiliformis", 
 "^ot:treebaseOTUId": "Tl1076331"
 }, 
 "otu418475": {
@@ -1007,9 +121,9 @@
 "^ot:treebaseOTUId": "Tl1076341"
 }, 
 "otu418485": {
-"^ot:altLabel": "Ceratocystis moniliformis", 
 "^ot:originalLabel": "Ceratocystis moniliformis CMW4114", 
 "^ot:ottId": 430261, 
+"^ot:ottTaxonName": "Ceratocystis moniliformis", 
 "^ot:treebaseOTUId": "Tl1076342"
 }, 
 "otu418486": {
@@ -1021,9 +135,9 @@
 "^ot:treebaseOTUId": "Tl1076344"
 }, 
 "otu418488": {
-"^ot:altLabel": "Ceratocystis moniliformopsis", 
 "^ot:originalLabel": "Ceratocystis moniliformopsis CMW10214", 
 "^ot:ottId": 671494, 
+"^ot:ottTaxonName": "Ceratocystis moniliformopsis", 
 "^ot:treebaseOTUId": "Tl1076345"
 }, 
 "otu418489": {
@@ -1035,9 +149,9 @@
 "^ot:treebaseOTUId": "Tl1076347"
 }, 
 "otu418491": {
-"^ot:altLabel": "Ceratocystis tribiliformis", 
 "^ot:originalLabel": "Ceratocystis tribiliformis CMW13012", 
 "^ot:ottId": 671498, 
+"^ot:ottTaxonName": "Ceratocystis tribiliformis", 
 "^ot:treebaseOTUId": "Tl1076348"
 }, 
 "otu418492": {
@@ -1065,9 +179,9 @@
 "^ot:treebaseOTUId": "Tl1076354"
 }, 
 "otu418498": {
-"^ot:altLabel": "Ceratocystis bhutanensis", 
 "^ot:originalLabel": "Ceratocystis bhutanensis CMW8217", 
 "^ot:ottId": 671490, 
+"^ot:ottTaxonName": "Ceratocystis bhutanensis", 
 "^ot:treebaseOTUId": "Tl1076355"
 }, 
 "otu418499": {
@@ -1079,9 +193,9 @@
 "^ot:treebaseOTUId": "Tl1076357"
 }, 
 "otu418501": {
-"^ot:altLabel": "Ceratocystis moniliformis", 
 "^ot:originalLabel": "Ceratocystis moniliformis CMW9590", 
 "^ot:ottId": 430261, 
+"^ot:ottTaxonName": "Ceratocystis moniliformis", 
 "^ot:treebaseOTUId": "Tl1076358"
 }, 
 "otu418502": {
@@ -1089,9 +203,9 @@
 "^ot:treebaseOTUId": "Tl1076359"
 }, 
 "otu418503": {
-"^ot:altLabel": "Ceratocystis bhutanensis", 
 "^ot:originalLabel": "Ceratocystis bhutanensis CMW8242", 
 "^ot:ottId": 671490, 
+"^ot:ottTaxonName": "Ceratocystis bhutanensis", 
 "^ot:treebaseOTUId": "Tl1076360"
 }, 
 "otu418504": {
@@ -1107,9 +221,9 @@
 "^ot:treebaseOTUId": "Tl1076363"
 }, 
 "otu418507": {
-"^ot:altLabel": "Ceratocystis moniliformopsis", 
 "^ot:originalLabel": "Ceratocystis moniliformopsis CMW9986", 
 "^ot:ottId": 671494, 
+"^ot:ottTaxonName": "Ceratocystis moniliformopsis", 
 "^ot:treebaseOTUId": "Tl1076364"
 }, 
 "otu418508": {
@@ -1133,9 +247,9 @@
 "^ot:treebaseOTUId": "Tl1076369"
 }, 
 "otu418513": {
-"^ot:altLabel": "Ceratocystis oblonga", 
 "^ot:originalLabel": "Ceratocystis  oblonga CMW30835", 
 "^ot:ottId": 637268, 
+"^ot:ottTaxonName": "Ceratocystis oblonga", 
 "^ot:treebaseOTUId": "Tl1076370"
 }, 
 "otu418514": {
@@ -1147,15 +261,15 @@
 "^ot:treebaseOTUId": "Tl1076372"
 }, 
 "otu418516": {
-"^ot:altLabel": "Ceratocystis moniliformopsis", 
 "^ot:originalLabel": "Ceratocystis  moniliformopsis CMW10214", 
 "^ot:ottId": 671494, 
+"^ot:ottTaxonName": "Ceratocystis moniliformopsis", 
 "^ot:treebaseOTUId": "Tl1076373"
 }, 
 "otu418517": {
-"^ot:altLabel": "Ceratocystis oblonga", 
 "^ot:originalLabel": "Ceratocystis  oblonga CMW23803", 
 "^ot:ottId": 637268, 
+"^ot:ottTaxonName": "Ceratocystis oblonga", 
 "^ot:treebaseOTUId": "Tl1076374"
 }, 
 "otu418518": {
@@ -1163,9 +277,9 @@
 "^ot:treebaseOTUId": "Tl1076375"
 }, 
 "otu418519": {
-"^ot:altLabel": "Ceratocystis moniliformopsis", 
 "^ot:originalLabel": "Ceratocystis  moniliformopsis CMW9986", 
 "^ot:ottId": 671494, 
+"^ot:ottTaxonName": "Ceratocystis moniliformopsis", 
 "^ot:treebaseOTUId": "Tl1076376"
 }, 
 "otu418520": {
@@ -1208,12 +322,14 @@
 }, 
 "otu418529": {
 "^ot:originalLabel": "Ceratocystis tsitsikammensis CMW14276", 
+"^ot:ottId": 128687, 
+"^ot:ottTaxonName": "Ceratocystis tsitsikammensis", 
 "^ot:treebaseOTUId": "Tl1076386"
 }, 
 "otu418530": {
-"^ot:altLabel": "Ceratocystis caryae", 
 "^ot:originalLabel": "Ceratocystis caryae CMW14793", 
 "^ot:ottId": 950114, 
+"^ot:ottTaxonName": "Ceratocystis caryae", 
 "^ot:treebaseOTUId": "Tl1076387"
 }, 
 "otu418531": {
@@ -1221,15 +337,15 @@
 "^ot:treebaseOTUId": "Tl1076388"
 }, 
 "otu418532": {
-"^ot:altLabel": "Ceratocystis caryae", 
 "^ot:originalLabel": "Ceratocystis caryae CMW14808", 
 "^ot:ottId": 950114, 
+"^ot:ottTaxonName": "Ceratocystis caryae", 
 "^ot:treebaseOTUId": "Tl1076389"
 }, 
 "otu418533": {
-"^ot:altLabel": "Ceratocystis populicola", 
 "^ot:originalLabel": "Ceratocystis populicola CMW14819", 
 "^ot:ottId": 950117, 
+"^ot:ottTaxonName": "Ceratocystis populicola", 
 "^ot:treebaseOTUId": "Tl1076390"
 }, 
 "otu418534": {
@@ -1245,15 +361,15 @@
 "^ot:treebaseOTUId": "Tl1076393"
 }, 
 "otu418537": {
-"^ot:altLabel": "Ceratocystis smalleyi", 
 "^ot:originalLabel": "Ceratocystis smalleyi CMW26383", 
 "^ot:ottId": 950115, 
+"^ot:ottTaxonName": "Ceratocystis smalleyi", 
 "^ot:treebaseOTUId": "Tl1076394"
 }, 
 "otu418538": {
-"^ot:altLabel": "Ceratocystis polychroma", 
 "^ot:originalLabel": "Ceratocystis polychroma CMW11424", 
 "^ot:ottId": 730714, 
+"^ot:ottTaxonName": "Ceratocystis polychroma", 
 "^ot:treebaseOTUId": "Tl1076395"
 }, 
 "otu418539": {
@@ -1261,15 +377,15 @@
 "^ot:treebaseOTUId": "Tl1076396"
 }, 
 "otu418540": {
-"^ot:altLabel": "Ceratocystis platani", 
 "^ot:originalLabel": "Ceratocystis platani CMW23918", 
 "^ot:ottId": 816440, 
+"^ot:ottTaxonName": "Ceratocystis platani", 
 "^ot:treebaseOTUId": "Tl1076397"
 }, 
 "otu418541": {
-"^ot:altLabel": "Ceratocystis populicola", 
 "^ot:originalLabel": "Ceratocystis populicola CMW14789", 
 "^ot:ottId": 950117, 
+"^ot:ottTaxonName": "Ceratocystis populicola", 
 "^ot:treebaseOTUId": "Tl1076398"
 }, 
 "otu418542": {
@@ -1277,9 +393,9 @@
 "^ot:treebaseOTUId": "Tl1076399"
 }, 
 "otu418543": {
-"^ot:altLabel": "Ceratocystis cacaofunesta", 
 "^ot:originalLabel": "Ceratocystis cacaofunesta CMW14809", 
 "^ot:ottId": 173865, 
+"^ot:ottTaxonName": "Ceratocystis cacaofunesta", 
 "^ot:treebaseOTUId": "Tl1076400"
 }, 
 "otu418544": {
@@ -1319,15 +435,15 @@
 "^ot:treebaseOTUId": "Tl1076409"
 }, 
 "otu418553": {
-"^ot:altLabel": "Ceratocystis fimbriata", 
 "^ot:originalLabel": "Ceratocystis fimbriata CMW15049", 
 "^ot:ottId": 1097914, 
+"^ot:ottTaxonName": "Ceratocystis fimbriata", 
 "^ot:treebaseOTUId": "Tl1076410"
 }, 
 "otu418554": {
-"^ot:altLabel": "Ceratocystis fimbriata", 
 "^ot:originalLabel": "Ceratocystis fimbriata CMW1547", 
 "^ot:ottId": 1097914, 
+"^ot:ottTaxonName": "Ceratocystis fimbriata", 
 "^ot:treebaseOTUId": "Tl1076411"
 }, 
 "otu418555": {
@@ -1360,6 +476,8 @@
 }, 
 "otu418562": {
 "^ot:originalLabel": "Ceratocystis tanganyicensis CMW15991", 
+"^ot:ottId": 63834, 
+"^ot:ottTaxonName": "Ceratocystis tanganyicensis", 
 "^ot:treebaseOTUId": "Tl1076419"
 }, 
 "otu418563": {
@@ -1387,9 +505,9 @@
 "^ot:treebaseOTUId": "Tl1076424"
 }, 
 "otu418568": {
-"^ot:altLabel": "Ceratocystis smalleyi", 
 "^ot:originalLabel": "Ceratocystis smalleyi CMW14800", 
 "^ot:ottId": 950115, 
+"^ot:ottTaxonName": "Ceratocystis smalleyi", 
 "^ot:treebaseOTUId": "Tl1076425"
 }, 
 "otu418569": {
@@ -1397,9 +515,9 @@
 "^ot:treebaseOTUId": "Tl1076426"
 }, 
 "otu418570": {
-"^ot:altLabel": "Ceratocystis pirilliformis", 
 "^ot:originalLabel": "Ceratocystis pirilliformis CMW6569", 
 "^ot:ottId": 941287, 
+"^ot:ottTaxonName": "Ceratocystis pirilliformis", 
 "^ot:treebaseOTUId": "Tl1076427"
 }, 
 "otu418571": {
@@ -1421,9 +539,9 @@
 "^ot:treebaseOTUId": "Tl1076431"
 }, 
 "otu418575": {
-"^ot:altLabel": "Ceratocystis cacaofunesta", 
 "^ot:originalLabel": "Ceratocystis cacaofunesta CMW15051", 
 "^ot:ottId": 173865, 
+"^ot:ottTaxonName": "Ceratocystis cacaofunesta", 
 "^ot:treebaseOTUId": "Tl1076432"
 }, 
 "otu418576": {
@@ -1438,6 +556,8 @@
 }, 
 "otu418578": {
 "^ot:originalLabel": "Ceratocystis tsitsikammensis CMW14278", 
+"^ot:ottId": 128687, 
+"^ot:ottTaxonName": "Ceratocystis tsitsikammensis", 
 "^ot:treebaseOTUId": "Tl1076435"
 }, 
 "otu418579": {
@@ -1445,9 +565,9 @@
 "^ot:treebaseOTUId": "Tl1076436"
 }, 
 "otu418580": {
-"^ot:altLabel": "Ceratocystis pirilliformis", 
 "^ot:originalLabel": "Ceratocystis pirilliformis CMW6579", 
 "^ot:ottId": 941287, 
+"^ot:ottTaxonName": "Ceratocystis pirilliformis", 
 "^ot:treebaseOTUId": "Tl1076437"
 }, 
 "otu418581": {
@@ -1463,27 +583,27 @@
 "^ot:treebaseOTUId": "Tl1076440"
 }, 
 "otu418584": {
-"^ot:altLabel": "Ceratocystis variospora", 
 "^ot:originalLabel": "Ceratocystis variospora CMW20935", 
 "^ot:ottId": 950116, 
+"^ot:ottTaxonName": "Ceratocystis variospora", 
 "^ot:treebaseOTUId": "Tl1076441"
 }, 
 "otu418585": {
-"^ot:altLabel": "Ceratocystis polychroma", 
 "^ot:originalLabel": "Ceratocystis polychroma CMW11436", 
 "^ot:ottId": 730714, 
+"^ot:ottTaxonName": "Ceratocystis polychroma", 
 "^ot:treebaseOTUId": "Tl1076442"
 }, 
 "otu418586": {
-"^ot:altLabel": "Ceratocystis variospora", 
 "^ot:originalLabel": "Ceratocystis variospora CMW20936", 
 "^ot:ottId": 950116, 
+"^ot:ottTaxonName": "Ceratocystis variospora", 
 "^ot:treebaseOTUId": "Tl1076443"
 }, 
 "otu418587": {
-"^ot:altLabel": "Ceratocystis platani", 
 "^ot:originalLabel": "Ceratocystis platani CMW14802", 
 "^ot:ottId": 816440, 
+"^ot:ottTaxonName": "Ceratocystis platani", 
 "^ot:treebaseOTUId": "Tl1076444"
 }, 
 "otu418588": {
@@ -1492,6 +612,8 @@
 }, 
 "otu418589": {
 "^ot:originalLabel": "Ceratocystis tanganyicensis CMW15999", 
+"^ot:ottId": 63834, 
+"^ot:ottTaxonName": "Ceratocystis tanganyicensis", 
 "^ot:treebaseOTUId": "Tl1076446"
 }, 
 "otu418590": {
@@ -1511,9 +633,9 @@
 "^ot:treebaseOTUId": "Tl1076450"
 }, 
 "otu418594": {
-"^ot:altLabel": "Ceratocystis albofundus", 
 "^ot:originalLabel": "Ceratocystis  albifundus CMW37312", 
 "^ot:ottId": 553579, 
+"^ot:ottTaxonName": "Ceratocystis albofundus", 
 "^ot:treebaseOTUId": "Tl1076451"
 }, 
 "otu418595": {
@@ -1525,21 +647,21 @@
 "^ot:treebaseOTUId": "Tl1076453"
 }, 
 "otu418597": {
-"^ot:altLabel": "Ceratocystis albofundus", 
 "^ot:originalLabel": "Ceratocystis  albifundus CMW37313", 
 "^ot:ottId": 553579, 
+"^ot:ottTaxonName": "Ceratocystis albofundus", 
 "^ot:treebaseOTUId": "Tl1076454"
 }, 
 "otu418598": {
-"^ot:altLabel": "Ceratocystis albofundus", 
 "^ot:originalLabel": "Ceratocystis  albifundus CMW4068", 
 "^ot:ottId": 553579, 
+"^ot:ottTaxonName": "Ceratocystis albofundus", 
 "^ot:treebaseOTUId": "Tl1076455"
 }, 
 "otu418599": {
-"^ot:altLabel": "Ceratocystis albofundus", 
 "^ot:originalLabel": "Ceratocystis  albifundus CMW23825", 
 "^ot:ottId": 553579, 
+"^ot:ottTaxonName": "Ceratocystis albofundus", 
 "^ot:treebaseOTUId": "Tl1076456"
 }, 
 "otu418600": {
@@ -1559,9 +681,9 @@
 "^ot:treebaseOTUId": "Tl1076460"
 }, 
 "otu418604": {
-"^ot:altLabel": "Thielaviopsis basicola", 
 "^ot:originalLabel": "Thielaviopsis basicola CMW25439", 
 "^ot:ottId": 330257, 
+"^ot:ottTaxonName": "Thielaviopsis basicola", 
 "^ot:treebaseOTUId": "Tl1076461"
 }, 
 "otu418605": {
@@ -1573,9 +695,9 @@
 "^ot:treebaseOTUId": "Tl1076463"
 }, 
 "otu418607": {
-"^ot:altLabel": "Thielaviopsis basicola", 
 "^ot:originalLabel": "Thielaviopsis basicola CMW35974", 
 "^ot:ottId": 330257, 
+"^ot:ottTaxonName": "Thielaviopsis basicola", 
 "^ot:treebaseOTUId": "Tl1076464"
 }, 
 "otu418608": {
@@ -1591,15 +713,15 @@
 "^ot:treebaseOTUId": "Tl1076467"
 }, 
 "otu418611": {
-"^ot:altLabel": "Thielaviopsis basicola", 
 "^ot:originalLabel": "Thielaviopsis basicola CMW35968", 
 "^ot:ottId": 330257, 
+"^ot:ottTaxonName": "Thielaviopsis basicola", 
 "^ot:treebaseOTUId": "Tl1076468"
 }, 
 "otu418612": {
-"^ot:altLabel": "Thielaviopsis basicola", 
 "^ot:originalLabel": "Thielaviopsis basicola CMW6714", 
 "^ot:ottId": 330257, 
+"^ot:ottTaxonName": "Thielaviopsis basicola", 
 "^ot:treebaseOTUId": "Tl1076469"
 }, 
 "otu418613": {
@@ -1615,9 +737,9 @@
 "^ot:treebaseOTUId": "Tl1076472"
 }, 
 "otu418616": {
-"^ot:altLabel": "Thielaviopsis basicola", 
 "^ot:originalLabel": "Thielaviopsis basicola CMW35969", 
 "^ot:ottId": 330257, 
+"^ot:ottTaxonName": "Thielaviopsis basicola", 
 "^ot:treebaseOTUId": "Tl1076473"
 }
 }
@@ -1631,7 +753,6 @@
 ], 
 "treeById": {
 "tree6564": {
-"@label": "Untitled (tree6564)", 
 "@xsi:type": "nex:FloatTree", 
 "^ot:branchLengthDescription": "", 
 "^ot:branchLengthMode": "", 
@@ -1642,64 +763,63 @@
 "^ot:rootNodeId": "node1139431", 
 "^ot:specifiedRoot": "", 
 "^ot:tag": [], 
-"^ot:unrootedTree": true, 
 "edgeBySourceId": {
 "node1139431": {
 "edge1139432": {
-"@length": 3, 
+"@length": 3.0, 
 "@source": "node1139431", 
 "@target": "node1139432"
 }, 
 "edge1139459": {
-"@length": 14, 
+"@length": 14.0, 
 "@source": "node1139431", 
 "@target": "node1139459"
 }
 }, 
 "node1139432": {
 "edge1139433": {
-"@length": 11, 
+"@length": 11.0, 
 "@source": "node1139432", 
 "@target": "node1139433"
 }, 
 "edge1139452": {
-"@length": 8, 
+"@length": 8.0, 
 "@source": "node1139432", 
 "@target": "node1139452"
 }
 }, 
 "node1139433": {
 "edge1139434": {
-"@length": 2, 
+"@length": 2.0, 
 "@source": "node1139433", 
 "@target": "node1139434"
 }, 
 "edge1139447": {
-"@length": 2, 
+"@length": 2.0, 
 "@source": "node1139433", 
 "@target": "node1139447"
 }
 }, 
 "node1139434": {
 "edge1139435": {
-"@length": 1, 
+"@length": 1.0, 
 "@source": "node1139434", 
 "@target": "node1139435"
 }, 
 "edge1139444": {
-"@length": 7, 
+"@length": 7.0, 
 "@source": "node1139434", 
 "@target": "node1139444"
 }
 }, 
 "node1139435": {
 "edge1139436": {
-"@length": 3, 
+"@length": 3.0, 
 "@source": "node1139435", 
 "@target": "node1139436"
 }, 
 "edge1139441": {
-"@length": 8, 
+"@length": 8.0, 
 "@source": "node1139435", 
 "@target": "node1139441"
 }
@@ -1762,12 +882,12 @@
 }, 
 "node1139452": {
 "edge1139453": {
-"@length": 4, 
+"@length": 4.0, 
 "@source": "node1139452", 
 "@target": "node1139453"
 }, 
 "edge1139456": {
-"@length": 2, 
+"@length": 2.0, 
 "@source": "node1139452", 
 "@target": "node1139456"
 }

@@ -19,48 +19,11 @@
 "@id": "peyotl-validator", 
 "@name": "validate_ot_nexson.py", 
 "@url": "https://github.com/OpenTreeOfLife/peyotl", 
-"@version": "0.0.3a", 
+"@version": "0.0.4a", 
 "invocation": {
-"checksPerformed": [
-"MISSING_MANDATORY_KEY", 
-"MISSING_OPTIONAL_KEY", 
-"UNRECOGNIZED_KEY", 
-"MISSING_LIST_EXPECTED", 
-"DUPLICATING_SINGLETON_KEY", 
-"REFERENCED_ID_NOT_FOUND", 
-"REPEATED_ID", 
-"REPEATED_OTU", 
-"MULTIPLE_ROOT_NODES", 
-"NO_ROOT_NODE", 
-"MULTIPLE_EDGES_FOR_NODES", 
-"CYCLE_DETECTED", 
-"DISCONNECTED_GRAPH_DETECTED", 
-"INCORRECT_ROOT_NODE_LABEL", 
-"TIP_WITHOUT_OTU", 
-"TIP_WITHOUT_OTT_ID", 
-"MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
-"NON_MONOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
-"INVALID_PROPERTY_VALUE", 
-"PROPERTY_VALUE_NOT_USEFUL", 
-"UNRECOGNIZED_PROPERTY_VALUE", 
-"MULTIPLE_TREES", 
-"UNRECOGNIZED_TAG", 
-"CONFLICTING_PROPERTY_VALUES", 
-"NO_TREES", 
-"DEPRECATED_PROPERTY", 
-"UNPARSEABLE_META", 
-"UNREACHABLE_NODE", 
-"INCORRECT_VALUE_TYPE", 
-"MISSING_CRUCIAL_CONTENT"
-], 
 "commandLine": [
 "--embed", 
-"--agent-only", 
-"-e", 
-"../mig-phyelesystem-scratch/1666/validation.json", 
-"-o", 
-"../mig-phyelesystem-scratch/1666/final.json", 
-"../mig-phyelesystem-scratch/1666/v1.2.1-1666.json"
+"--agent-only"
 ], 
 "otherProperty": [
 {
@@ -76,12 +39,19 @@
 }
 ]
 }, 
+"^ot:annotationEvents": {
+"annotation": []
+}, 
+"^ot:candidateTreeForSynthesis": [], 
 "^ot:curatorName": "Romina Gazis", 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S307"
 }, 
 "^ot:focalClade": 838968, 
 "^ot:focalCladeOTTTaxonName": "Fusarium", 
+"^ot:messages": {
+"message": []
+}, 
 "^ot:otusElementOrder": [
 "otus1666"
 ], 
@@ -91,6 +61,7 @@
 }, 
 "^ot:studyPublicationReference": "Gams W., Klamer M., & O'donnell K. 1999. Fusarium miscanthi sp. nov. from Miscanthus Litter. Mycologia, 91(2): 263-268.", 
 "^ot:studyYear": 1999, 
+"^ot:tag": [], 
 "^ot:treesElementOrder": [
 "trees1666"
 ], 
@@ -165,6 +136,8 @@
 }, 
 "otu269908": {
 "^ot:originalLabel": "Fusarium sp. 22903", 
+"^ot:ottId": 838968, 
+"^ot:ottTaxonName": "Fusarium", 
 "^ot:treebaseOTUId": "Tl25404"
 }, 
 "otu269909": {
@@ -187,6 +160,8 @@
 }, 
 "otu269912": {
 "^ot:originalLabel": "Fusarium sp. 25184", 
+"^ot:ottId": 838968, 
+"^ot:ottTaxonName": "Fusarium", 
 "^ot:treebaseOTUId": "Tl25408"
 }, 
 "otu269913": {
@@ -208,9 +183,16 @@
 "treeById": {
 "tree3361": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "MP, LSU + mtSSU + b-tubulin", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node668717", 
-"^ot:tag": "delete me", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [
+"delete me"
+], 
 "edgeBySourceId": {
 "node668717": {
 "edge668718": {
@@ -426,9 +408,15 @@
 }, 
 "tree5901": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "MP, LSU + mtSSU + b-tubulin (rooted)", 
 "^ot:inGroupClade": "node1003243", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node1003242", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node1003242": {
 "edge1003243": {

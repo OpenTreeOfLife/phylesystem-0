@@ -19,48 +19,11 @@
 "@id": "peyotl-validator", 
 "@name": "validate_ot_nexson.py", 
 "@url": "https://github.com/OpenTreeOfLife/peyotl", 
-"@version": "0.0.3a", 
+"@version": "0.0.4a", 
 "invocation": {
-"checksPerformed": [
-"MISSING_MANDATORY_KEY", 
-"MISSING_OPTIONAL_KEY", 
-"UNRECOGNIZED_KEY", 
-"MISSING_LIST_EXPECTED", 
-"DUPLICATING_SINGLETON_KEY", 
-"REFERENCED_ID_NOT_FOUND", 
-"REPEATED_ID", 
-"REPEATED_OTU", 
-"MULTIPLE_ROOT_NODES", 
-"NO_ROOT_NODE", 
-"MULTIPLE_EDGES_FOR_NODES", 
-"CYCLE_DETECTED", 
-"DISCONNECTED_GRAPH_DETECTED", 
-"INCORRECT_ROOT_NODE_LABEL", 
-"TIP_WITHOUT_OTU", 
-"TIP_WITHOUT_OTT_ID", 
-"MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
-"NON_MONOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
-"INVALID_PROPERTY_VALUE", 
-"PROPERTY_VALUE_NOT_USEFUL", 
-"UNRECOGNIZED_PROPERTY_VALUE", 
-"MULTIPLE_TREES", 
-"UNRECOGNIZED_TAG", 
-"CONFLICTING_PROPERTY_VALUES", 
-"NO_TREES", 
-"DEPRECATED_PROPERTY", 
-"UNPARSEABLE_META", 
-"UNREACHABLE_NODE", 
-"INCORRECT_VALUE_TYPE", 
-"MISSING_CRUCIAL_CONTENT"
-], 
 "commandLine": [
 "--embed", 
-"--agent-only", 
-"-e", 
-"../mig-phyelesystem-scratch/2179/validation.json", 
-"-o", 
-"../mig-phyelesystem-scratch/2179/final.json", 
-"../mig-phyelesystem-scratch/2179/v1.2.1-2179.json"
+"--agent-only"
 ], 
 "otherProperty": [
 {
@@ -76,18 +39,26 @@
 }
 ]
 }, 
+"^ot:annotationEvents": {
+"annotation": []
+}, 
+"^ot:candidateTreeForSynthesis": [], 
 "^ot:curatorName": "Romina Gazis", 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S12813"
 }, 
 "^ot:focalClade": 838968, 
 "^ot:focalCladeOTTTaxonName": "Fusarium", 
+"^ot:messages": {
+"message": []
+}, 
 "^ot:otusElementOrder": [
 "otus2179"
 ], 
 "^ot:studyId": "2179", 
 "^ot:studyPublicationReference": "O\u2019Donnell, Kerry, Alejandro P. Rooney, Robert H. Proctor, Daren W. Brown, Susan P. McCormick, Todd J. Ward, Rasmus J. N Frandsen et al. \"Phylogenetic analyses of< i> RPB1</i> and< i> RPB2</i> support a middle Cretaceous origin for a clade comprising all agriculturally and medically important fusaria.\" Fungal Genetics and Biology (2013).", 
 "^ot:studyYear": 2012, 
+"^ot:tag": [], 
 "^ot:treesElementOrder": [
 "trees2179"
 ], 
@@ -290,6 +261,8 @@
 }, 
 "otu318575": {
 "^ot:originalLabel": "Fusarium lateritium NRRL 13622", 
+"^ot:ottId": 5317100, 
+"^ot:ottTaxonName": "Gibberella baccata", 
 "^ot:treebaseOTUId": "Tl880209"
 }, 
 "otu318576": {
@@ -538,6 +511,8 @@
 }, 
 "otu318621": {
 "^ot:originalLabel": "Cylindrocarpon cylindroides NRRL 22505", 
+"^ot:ottId": 56893, 
+"^ot:ottTaxonName": "Neonectria fuckeliana", 
 "^ot:treebaseOTUId": "Tl880255"
 }, 
 "otu318622": {
@@ -728,9 +703,15 @@
 "treeById": {
 "tree4612": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "MP, RPB1 + RPB2", 
 "^ot:inGroupClade": "node819880", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node819879", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node819879": {
 "edge819880": {

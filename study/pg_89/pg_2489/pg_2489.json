@@ -19,48 +19,11 @@
 "@id": "peyotl-validator", 
 "@name": "validate_ot_nexson.py", 
 "@url": "https://github.com/OpenTreeOfLife/peyotl", 
-"@version": "0.0.3a", 
+"@version": "0.0.4a", 
 "invocation": {
-"checksPerformed": [
-"MISSING_MANDATORY_KEY", 
-"MISSING_OPTIONAL_KEY", 
-"UNRECOGNIZED_KEY", 
-"MISSING_LIST_EXPECTED", 
-"DUPLICATING_SINGLETON_KEY", 
-"REFERENCED_ID_NOT_FOUND", 
-"REPEATED_ID", 
-"REPEATED_OTU", 
-"MULTIPLE_ROOT_NODES", 
-"NO_ROOT_NODE", 
-"MULTIPLE_EDGES_FOR_NODES", 
-"CYCLE_DETECTED", 
-"DISCONNECTED_GRAPH_DETECTED", 
-"INCORRECT_ROOT_NODE_LABEL", 
-"TIP_WITHOUT_OTU", 
-"TIP_WITHOUT_OTT_ID", 
-"MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
-"NON_MONOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
-"INVALID_PROPERTY_VALUE", 
-"PROPERTY_VALUE_NOT_USEFUL", 
-"UNRECOGNIZED_PROPERTY_VALUE", 
-"MULTIPLE_TREES", 
-"UNRECOGNIZED_TAG", 
-"CONFLICTING_PROPERTY_VALUES", 
-"NO_TREES", 
-"DEPRECATED_PROPERTY", 
-"UNPARSEABLE_META", 
-"UNREACHABLE_NODE", 
-"INCORRECT_VALUE_TYPE", 
-"MISSING_CRUCIAL_CONTENT"
-], 
 "commandLine": [
 "--embed", 
-"--agent-only", 
-"-e", 
-"../mig-phyelesystem-scratch/2489/validation.json", 
-"-o", 
-"../mig-phyelesystem-scratch/2489/final.json", 
-"../mig-phyelesystem-scratch/2489/v1.2.1-2489.json"
+"--agent-only"
 ], 
 "otherProperty": [
 {
@@ -76,18 +39,26 @@
 }
 ]
 }, 
+"^ot:annotationEvents": {
+"annotation": []
+}, 
+"^ot:candidateTreeForSynthesis": [], 
 "^ot:curatorName": "Romina Gazis", 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S1175"
 }, 
 "^ot:focalClade": 959445, 
 "^ot:focalCladeOTTTaxonName": "Lactarius", 
+"^ot:messages": {
+"message": []
+}, 
 "^ot:otusElementOrder": [
 "otus2489"
 ], 
 "^ot:studyId": "2489", 
 "^ot:studyPublicationReference": "Eberhardt, Ursula, and Annemieke Verbeken. \"Sequestrate Lactarius species from tropical Africa:< i> L. angiocarpus</i> sp. nov. and< i> L. dolichocaulis</i> comb. nov.\" Mycological research 108, no. 9 (2004): 1042-1052.", 
 "^ot:studyYear": 2004, 
+"^ot:tag": [], 
 "^ot:treesElementOrder": [
 "trees2489"
 ], 
@@ -256,6 +227,8 @@
 }, 
 "otu359702": {
 "^ot:originalLabel": "Gloeocystidiellum aculeatum", 
+"^ot:ottId": 5299257, 
+"^ot:ottTaxonName": "Boidinia aculeata", 
 "^ot:treebaseOTUId": "Tl147878"
 }, 
 "otu359703": {
@@ -266,6 +239,8 @@
 }, 
 "otu359704": {
 "^ot:originalLabel": "Gymnomyces redolens", 
+"^ot:ottId": 5299529, 
+"^ot:ottTaxonName": "Stephanospora redolens", 
 "^ot:treebaseOTUId": "Tl147885"
 }, 
 "otu359705": {
@@ -324,6 +299,8 @@
 }, 
 "otu359714": {
 "^ot:originalLabel": "Bondarzewia montana", 
+"^ot:ottId": 842317, 
+"^ot:ottTaxonName": "Bondarzewia mesenterica", 
 "^ot:treebaseOTUId": "Tl147902"
 }, 
 "otu359715": {
@@ -388,6 +365,8 @@
 }, 
 "otu359725": {
 "^ot:originalLabel": "Lactarius speciosus", 
+"^ot:ottId": 783967, 
+"^ot:ottTaxonName": "Lactarius romagnesii", 
 "^ot:treebaseOTUId": "Tl147924"
 }, 
 "otu359726": {
@@ -438,6 +417,8 @@
 }, 
 "otu359734": {
 "^ot:originalLabel": "Russula lepida", 
+"^ot:ottId": 489992, 
+"^ot:ottTaxonName": "Russula rosea", 
 "^ot:treebaseOTUId": "Tl147939"
 }, 
 "otu359735": {
@@ -490,6 +471,8 @@
 }, 
 "otu359743": {
 "^ot:originalLabel": "Cystangium megaspermum", 
+"^ot:ottId": 5299357, 
+"^ot:ottTaxonName": "Cystangium megasporum", 
 "^ot:treebaseOTUId": "Tl60505"
 }, 
 "otu359744": {
@@ -546,6 +529,8 @@
 }, 
 "otu359753": {
 "^ot:originalLabel": "Zelleromyces daucinus", 
+"^ot:ottId": 5299354, 
+"^ot:ottTaxonName": "Arcangeliella daucina", 
 "^ot:treebaseOTUId": "Tl60515"
 }, 
 "otu359754": {
@@ -592,6 +577,8 @@
 }, 
 "otu359761": {
 "^ot:originalLabel": "Russula mairei", 
+"^ot:ottId": 5299312, 
+"^ot:ottTaxonName": "Russula nobilis", 
 "^ot:treebaseOTUId": "Tl7120"
 }, 
 "otu359762": {
@@ -733,9 +720,15 @@
 "treeById": {
 "tree5350": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "BI, LSU", 
 "^ot:inGroupClade": "node925049", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node925048", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node925048": {
 "edge925049": {
@@ -2183,10 +2176,17 @@
 }, 
 "tree5351": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "BI, ITS + LSU", 
 "^ot:inGroupClade": "node925255", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node925254", 
-"^ot:tag": "LSU", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [
+"LSU"
+], 
 "edgeBySourceId": {
 "node925254": {
 "edge925255": {

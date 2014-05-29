@@ -19,48 +19,11 @@
 "@id": "peyotl-validator", 
 "@name": "validate_ot_nexson.py", 
 "@url": "https://github.com/OpenTreeOfLife/peyotl", 
-"@version": "0.0.3a", 
+"@version": "0.0.4a", 
 "invocation": {
-"checksPerformed": [
-"MISSING_MANDATORY_KEY", 
-"MISSING_OPTIONAL_KEY", 
-"UNRECOGNIZED_KEY", 
-"MISSING_LIST_EXPECTED", 
-"DUPLICATING_SINGLETON_KEY", 
-"REFERENCED_ID_NOT_FOUND", 
-"REPEATED_ID", 
-"REPEATED_OTU", 
-"MULTIPLE_ROOT_NODES", 
-"NO_ROOT_NODE", 
-"MULTIPLE_EDGES_FOR_NODES", 
-"CYCLE_DETECTED", 
-"DISCONNECTED_GRAPH_DETECTED", 
-"INCORRECT_ROOT_NODE_LABEL", 
-"TIP_WITHOUT_OTU", 
-"TIP_WITHOUT_OTT_ID", 
-"MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
-"NON_MONOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
-"INVALID_PROPERTY_VALUE", 
-"PROPERTY_VALUE_NOT_USEFUL", 
-"UNRECOGNIZED_PROPERTY_VALUE", 
-"MULTIPLE_TREES", 
-"UNRECOGNIZED_TAG", 
-"CONFLICTING_PROPERTY_VALUES", 
-"NO_TREES", 
-"DEPRECATED_PROPERTY", 
-"UNPARSEABLE_META", 
-"UNREACHABLE_NODE", 
-"INCORRECT_VALUE_TYPE", 
-"MISSING_CRUCIAL_CONTENT"
-], 
 "commandLine": [
 "--embed", 
-"--agent-only", 
-"-e", 
-"../mig-phyelesystem-scratch/1821/validation.json", 
-"-o", 
-"../mig-phyelesystem-scratch/1821/final.json", 
-"../mig-phyelesystem-scratch/1821/v1.2.1-1821.json"
+"--agent-only"
 ], 
 "otherProperty": [
 {
@@ -76,15 +39,23 @@
 }
 ]
 }, 
+"^ot:annotationEvents": {
+"annotation": []
+}, 
+"^ot:candidateTreeForSynthesis": [], 
 "^ot:curatorName": "bryan drew", 
 "^ot:focalClade": 968337, 
 "^ot:focalCladeOTTTaxonName": "Helichrysum", 
+"^ot:messages": {
+"message": []
+}, 
 "^ot:otusElementOrder": [
 "otus1821"
 ], 
 "^ot:studyId": "1821", 
 "^ot:studyPublicationReference": "Galbany-Casals, M. [et al. 2009], Garcia-Jacas, N, S\u00e1ez, L., Bened\u00ed, C., & Susanna, A. 2009. Phylogeny, biogeography, and character evolution in Mediterranean, Asiatic and Macaronesian Helichrysum (Asteraceae, Gnaphalieae) inferred from nuclear phylogenetic analyses. Internat. J. Plant Sci. 170: 365-380.", 
 "^ot:studyYear": 2009, 
+"^ot:tag": [], 
 "^ot:treesElementOrder": [
 "trees1821"
 ], 
@@ -192,7 +163,9 @@
 "^ot:ottTaxonName": "Helichrysum orientale"
 }, 
 "otu281294": {
-"^ot:originalLabel": "HELICHRYSUM noeanum"
+"^ot:originalLabel": "HELICHRYSUM noeanum", 
+"^ot:ottId": 3899013, 
+"^ot:ottTaxonName": "Helichrysum noeanum"
 }, 
 "otu281295": {
 "^ot:originalLabel": "HELICHRYSUM compactum", 
@@ -330,7 +303,9 @@
 "^ot:ottTaxonName": "Syncarpha mucronata"
 }, 
 "otu281322": {
-"^ot:originalLabel": "Castroviejoa frigida"
+"^ot:originalLabel": "Castroviejoa frigida", 
+"^ot:ottId": 54019, 
+"^ot:ottTaxonName": "Helichrysum frigidum"
 }, 
 "otu281323": {
 "^ot:originalLabel": "Castroviejoa montelinasana", 
@@ -615,10 +590,15 @@
 "treeById": {
 "tree3677": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
 "^ot:branchLengthMode": "ot:substitutionCount", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "Bayesian con all compat w/pp", 
 "^ot:inGroupClade": "node702371", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node702368", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node702368": {
 "edge702369": {
@@ -1247,10 +1227,15 @@
 }, 
 "tree3678": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
 "^ot:branchLengthMode": "ot:substitutionCount", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "bayesian con all compat w/pp", 
 "^ot:inGroupClade": "node702452", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node702446", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node702446": {
 "edge702447": {

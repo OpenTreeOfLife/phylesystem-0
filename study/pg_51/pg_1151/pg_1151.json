@@ -19,48 +19,11 @@
 "@id": "peyotl-validator", 
 "@name": "validate_ot_nexson.py", 
 "@url": "https://github.com/OpenTreeOfLife/peyotl", 
-"@version": "0.0.3a", 
+"@version": "0.0.4a", 
 "invocation": {
-"checksPerformed": [
-"MISSING_MANDATORY_KEY", 
-"MISSING_OPTIONAL_KEY", 
-"UNRECOGNIZED_KEY", 
-"MISSING_LIST_EXPECTED", 
-"DUPLICATING_SINGLETON_KEY", 
-"REFERENCED_ID_NOT_FOUND", 
-"REPEATED_ID", 
-"REPEATED_OTU", 
-"MULTIPLE_ROOT_NODES", 
-"NO_ROOT_NODE", 
-"MULTIPLE_EDGES_FOR_NODES", 
-"CYCLE_DETECTED", 
-"DISCONNECTED_GRAPH_DETECTED", 
-"INCORRECT_ROOT_NODE_LABEL", 
-"TIP_WITHOUT_OTU", 
-"TIP_WITHOUT_OTT_ID", 
-"MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
-"NON_MONOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
-"INVALID_PROPERTY_VALUE", 
-"PROPERTY_VALUE_NOT_USEFUL", 
-"UNRECOGNIZED_PROPERTY_VALUE", 
-"MULTIPLE_TREES", 
-"UNRECOGNIZED_TAG", 
-"CONFLICTING_PROPERTY_VALUES", 
-"NO_TREES", 
-"DEPRECATED_PROPERTY", 
-"UNPARSEABLE_META", 
-"UNREACHABLE_NODE", 
-"INCORRECT_VALUE_TYPE", 
-"MISSING_CRUCIAL_CONTENT"
-], 
 "commandLine": [
 "--embed", 
-"--agent-only", 
-"-e", 
-"../mig-phyelesystem-scratch/1151/validation.json", 
-"-o", 
-"../mig-phyelesystem-scratch/1151/final.json", 
-"../mig-phyelesystem-scratch/1151/v1.2.1-1151.json"
+"--agent-only"
 ], 
 "otherProperty": [
 {
@@ -76,9 +39,16 @@
 }
 ]
 }, 
+"^ot:annotationEvents": {
+"annotation": []
+}, 
+"^ot:candidateTreeForSynthesis": [], 
 "^ot:curatorName": "Romina Gazis", 
 "^ot:focalClade": 921280, 
 "^ot:focalCladeOTTTaxonName": "Sordariomycetes", 
+"^ot:messages": {
+"message": []
+}, 
 "^ot:otusElementOrder": [
 "otus1151"
 ], 
@@ -88,6 +58,7 @@
 }, 
 "^ot:studyPublicationReference": "Walker, Donald M., et al. \"New molecular markers for fungal phylogenetics: Two genes for species-level systematics in the Sordariomycetes (Ascomycota).\" Molecular Phylogenetics and Evolution (2012). Volume 64, Issue 3, Pages 500\u2013512", 
 "^ot:studyYear": 2012, 
+"^ot:tag": [], 
 "^ot:treesElementOrder": [
 "trees1151"
 ], 
@@ -120,10 +91,14 @@
 "^ot:ottTaxonName": "Gnomoniopsis macounii"
 }, 
 "otu227570": {
-"^ot:originalLabel": "CBS208.34 Gnomoniopsis fructicola"
+"^ot:originalLabel": "CBS208.34 Gnomoniopsis fructicola", 
+"^ot:ottId": 5316726, 
+"^ot:ottTaxonName": "Gnomonia comari"
 }, 
 "otu227571": {
-"^ot:originalLabel": "CBS804.79 Gnomoniopsis chamaemori"
+"^ot:originalLabel": "CBS804.79 Gnomoniopsis chamaemori", 
+"^ot:ottId": 5316727, 
+"^ot:ottTaxonName": "Gnomonia chamaemori"
 }, 
 "otu227572": {
 "^ot:originalLabel": "DMW206.1 Gnomoniopsis occulta", 
@@ -141,7 +116,9 @@
 "^ot:ottTaxonName": "Gnomoniopsis sanguisorbae"
 }, 
 "otu227575": {
-"^ot:originalLabel": "CBS806.79 Gnomoniopsis comari"
+"^ot:originalLabel": "CBS806.79 Gnomoniopsis comari", 
+"^ot:ottId": 5316726, 
+"^ot:ottTaxonName": "Gnomonia comari"
 }, 
 "otu227576": {
 "^ot:originalLabel": "CBS904.79 Gnomoniopsis tormentillae", 
@@ -239,9 +216,15 @@
 "treeById": {
 "tree2332": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "ML, b-tubulin", 
 "^ot:inGroupClade": "node552693", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node552691", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node552691": {
 "edge552692": {
@@ -470,10 +453,17 @@
 }, 
 "tree2333": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "ML, ITS + EF-1 + b-tubulin + FG1093/MS204", 
 "^ot:inGroupClade": "node552723", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node552719", 
-"^ot:tag": "FG1093", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [
+"FG1093"
+], 
 "edgeBySourceId": {
 "node552719": {
 "edge552720": {

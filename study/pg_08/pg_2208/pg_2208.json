@@ -19,48 +19,11 @@
 "@id": "peyotl-validator", 
 "@name": "validate_ot_nexson.py", 
 "@url": "https://github.com/OpenTreeOfLife/peyotl", 
-"@version": "0.0.3a", 
+"@version": "0.0.4a", 
 "invocation": {
-"checksPerformed": [
-"MISSING_MANDATORY_KEY", 
-"MISSING_OPTIONAL_KEY", 
-"UNRECOGNIZED_KEY", 
-"MISSING_LIST_EXPECTED", 
-"DUPLICATING_SINGLETON_KEY", 
-"REFERENCED_ID_NOT_FOUND", 
-"REPEATED_ID", 
-"REPEATED_OTU", 
-"MULTIPLE_ROOT_NODES", 
-"NO_ROOT_NODE", 
-"MULTIPLE_EDGES_FOR_NODES", 
-"CYCLE_DETECTED", 
-"DISCONNECTED_GRAPH_DETECTED", 
-"INCORRECT_ROOT_NODE_LABEL", 
-"TIP_WITHOUT_OTU", 
-"TIP_WITHOUT_OTT_ID", 
-"MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
-"NON_MONOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
-"INVALID_PROPERTY_VALUE", 
-"PROPERTY_VALUE_NOT_USEFUL", 
-"UNRECOGNIZED_PROPERTY_VALUE", 
-"MULTIPLE_TREES", 
-"UNRECOGNIZED_TAG", 
-"CONFLICTING_PROPERTY_VALUES", 
-"NO_TREES", 
-"DEPRECATED_PROPERTY", 
-"UNPARSEABLE_META", 
-"UNREACHABLE_NODE", 
-"INCORRECT_VALUE_TYPE", 
-"MISSING_CRUCIAL_CONTENT"
-], 
 "commandLine": [
 "--embed", 
-"--agent-only", 
-"-e", 
-"../mig-phyelesystem-scratch/2208/validation.json", 
-"-o", 
-"../mig-phyelesystem-scratch/2208/final.json", 
-"../mig-phyelesystem-scratch/2208/v1.2.1-2208.json"
+"--agent-only"
 ], 
 "otherProperty": [
 {
@@ -76,18 +39,26 @@
 }
 ]
 }, 
+"^ot:annotationEvents": {
+"annotation": []
+}, 
+"^ot:candidateTreeForSynthesis": [], 
 "^ot:curatorName": "Romina Gazis", 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S1473"
 }, 
 "^ot:focalClade": 33893, 
 "^ot:focalCladeOTTTaxonName": "Botryosphaeria", 
+"^ot:messages": {
+"message": []
+}, 
 "^ot:otusElementOrder": [
 "otus2208"
 ], 
 "^ot:studyId": "2208", 
 "^ot:studyPublicationReference": "Burgess T., Barber P., & Hardy G. 2005. Botryosphaeria spp. associated with eucalypts in Western Australia, including the description of Fusicoccum macroclavatum sp. nov. Australasian Plant Pathology, 34(4): 557-567.", 
 "^ot:studyYear": 2005, 
+"^ot:tag": [], 
 "^ot:treesElementOrder": [
 "trees2208"
 ], 
@@ -216,10 +187,14 @@
 }, 
 "otu320741": {
 "^ot:originalLabel": "Fusicoccum mangiferum CMW 7801", 
+"^ot:ottId": 463039, 
+"^ot:ottTaxonName": "Neofusicoccum mangiferae", 
 "^ot:treebaseOTUId": "Tl26827"
 }, 
 "otu320742": {
 "^ot:originalLabel": "Fusicoccum mangiferum CMW 7024", 
+"^ot:ottId": 463039, 
+"^ot:ottTaxonName": "Neofusicoccum mangiferae", 
 "^ot:treebaseOTUId": "Tl26828"
 }, 
 "otu320743": {
@@ -338,6 +313,8 @@
 }, 
 "otu320763": {
 "^ot:originalLabel": "Fusicoccum mangiferum CMW 7797", 
+"^ot:ottId": 463039, 
+"^ot:ottTaxonName": "Neofusicoccum mangiferae", 
 "^ot:treebaseOTUId": "Tl26849"
 }, 
 "otu320764": {
@@ -359,9 +336,15 @@
 "treeById": {
 "tree4669": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "MP, ITS + b-tubulin + EF-1", 
 "^ot:inGroupClade": "node825313", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node825311", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node825311": {
 "edge825312": {
@@ -745,9 +728,15 @@
 }, 
 "tree4670": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "MP, ITS", 
 "^ot:inGroupClade": "node825370", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node825365", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node825365": {
 "edge825366": {

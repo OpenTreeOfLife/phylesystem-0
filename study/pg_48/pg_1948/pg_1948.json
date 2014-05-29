@@ -19,48 +19,11 @@
 "@id": "peyotl-validator", 
 "@name": "validate_ot_nexson.py", 
 "@url": "https://github.com/OpenTreeOfLife/peyotl", 
-"@version": "0.0.3a", 
+"@version": "0.0.4a", 
 "invocation": {
-"checksPerformed": [
-"MISSING_MANDATORY_KEY", 
-"MISSING_OPTIONAL_KEY", 
-"UNRECOGNIZED_KEY", 
-"MISSING_LIST_EXPECTED", 
-"DUPLICATING_SINGLETON_KEY", 
-"REFERENCED_ID_NOT_FOUND", 
-"REPEATED_ID", 
-"REPEATED_OTU", 
-"MULTIPLE_ROOT_NODES", 
-"NO_ROOT_NODE", 
-"MULTIPLE_EDGES_FOR_NODES", 
-"CYCLE_DETECTED", 
-"DISCONNECTED_GRAPH_DETECTED", 
-"INCORRECT_ROOT_NODE_LABEL", 
-"TIP_WITHOUT_OTU", 
-"TIP_WITHOUT_OTT_ID", 
-"MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
-"NON_MONOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
-"INVALID_PROPERTY_VALUE", 
-"PROPERTY_VALUE_NOT_USEFUL", 
-"UNRECOGNIZED_PROPERTY_VALUE", 
-"MULTIPLE_TREES", 
-"UNRECOGNIZED_TAG", 
-"CONFLICTING_PROPERTY_VALUES", 
-"NO_TREES", 
-"DEPRECATED_PROPERTY", 
-"UNPARSEABLE_META", 
-"UNREACHABLE_NODE", 
-"INCORRECT_VALUE_TYPE", 
-"MISSING_CRUCIAL_CONTENT"
-], 
 "commandLine": [
 "--embed", 
-"--agent-only", 
-"-e", 
-"../mig-phyelesystem-scratch/1948/validation.json", 
-"-o", 
-"../mig-phyelesystem-scratch/1948/final.json", 
-"../mig-phyelesystem-scratch/1948/v1.2.1-1948.json"
+"--agent-only"
 ], 
 "otherProperty": [
 {
@@ -76,12 +39,19 @@
 }
 ]
 }, 
+"^ot:annotationEvents": {
+"annotation": []
+}, 
+"^ot:candidateTreeForSynthesis": [], 
 "^ot:curatorName": "Chris Owen", 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S10917"
 }, 
 "^ot:focalClade": 494458, 
 "^ot:focalCladeOTTTaxonName": "Galatheoidea", 
+"^ot:messages": {
+"message": []
+}, 
 "^ot:otusElementOrder": [
 "otus1948"
 ], 
@@ -89,8 +59,9 @@
 "^ot:studyPublication": {
 "@href": "http://dx.doi.org/10.1016/j.ympev.2010.11.011"
 }, 
-"^ot:studyPublicationReference": "Schnabel K. 2010. Galatheoidea is not monophyletic - molecular and morphological phylogeny of the squat lobsters (Decapoda: Anomura) with recognition of a new superfamily. Molecular Phylogenetics and Evolution, .", 
+"^ot:studyPublicationReference": "Schnabel, K.E., S.T. Ahyong, E.W. Maas. 20101. Galatheoidea are not monophyletic \u2013 Molecular and morphological phylogeny of the squat lobsters (Decapoda: Anomura) with recognition of a new superfamily. Molecular Phylogenetics and Evolution 58 (2): 157-168.", 
 "^ot:studyYear": 2010, 
+"^ot:tag": [], 
 "^ot:treesElementOrder": [
 "trees1948"
 ], 
@@ -405,6 +376,8 @@
 }, 
 "otu294022": {
 "^ot:originalLabel": "Agononida longipes ", 
+"^ot:ottId": 636369, 
+"^ot:ottTaxonName": "Munida longipes", 
 "^ot:treebaseOTUId": "Tl420461"
 }, 
 "otu294023": {
@@ -494,10 +467,15 @@
 "treeById": {
 "tree3968": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
 "^ot:branchLengthMode": "ot:substitutionCount", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "Fig. 1 BI", 
 "^ot:inGroupClade": "node741203", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node741200", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node741200": {
 "edge741201": {
@@ -1486,11 +1464,17 @@
 }, 
 "tree3969": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
 "^ot:branchLengthMode": "ot:substitutionCount", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "Fig. 2 DNA only BI", 
 "^ot:inGroupClade": "node741326", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node741323", 
-"^ot:tag": "Delete me", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [
+"Delete me"
+], 
 "edgeBySourceId": {
 "node741323": {
 "edge741324": {
@@ -2463,10 +2447,15 @@
 }, 
 "tree3970": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
 "^ot:branchLengthMode": "ot:changesCount", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "Fig. 2 morph BI", 
 "^ot:inGroupClade": "node741447", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node741444", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node741444": {
 "edge741445": {
@@ -3271,10 +3260,15 @@
 }, 
 "tree6513": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
 "^ot:branchLengthMode": "ot:substitutionCount", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "Fig 2 DNA only BI", 
 "^ot:inGroupClade": "node1123713", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node1123712", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node1123712": {
 "edge1123713": {

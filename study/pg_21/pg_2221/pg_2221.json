@@ -19,48 +19,11 @@
 "@id": "peyotl-validator", 
 "@name": "validate_ot_nexson.py", 
 "@url": "https://github.com/OpenTreeOfLife/peyotl", 
-"@version": "0.0.3a", 
+"@version": "0.0.4a", 
 "invocation": {
-"checksPerformed": [
-"MISSING_MANDATORY_KEY", 
-"MISSING_OPTIONAL_KEY", 
-"UNRECOGNIZED_KEY", 
-"MISSING_LIST_EXPECTED", 
-"DUPLICATING_SINGLETON_KEY", 
-"REFERENCED_ID_NOT_FOUND", 
-"REPEATED_ID", 
-"REPEATED_OTU", 
-"MULTIPLE_ROOT_NODES", 
-"NO_ROOT_NODE", 
-"MULTIPLE_EDGES_FOR_NODES", 
-"CYCLE_DETECTED", 
-"DISCONNECTED_GRAPH_DETECTED", 
-"INCORRECT_ROOT_NODE_LABEL", 
-"TIP_WITHOUT_OTU", 
-"TIP_WITHOUT_OTT_ID", 
-"MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
-"NON_MONOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
-"INVALID_PROPERTY_VALUE", 
-"PROPERTY_VALUE_NOT_USEFUL", 
-"UNRECOGNIZED_PROPERTY_VALUE", 
-"MULTIPLE_TREES", 
-"UNRECOGNIZED_TAG", 
-"CONFLICTING_PROPERTY_VALUES", 
-"NO_TREES", 
-"DEPRECATED_PROPERTY", 
-"UNPARSEABLE_META", 
-"UNREACHABLE_NODE", 
-"INCORRECT_VALUE_TYPE", 
-"MISSING_CRUCIAL_CONTENT"
-], 
 "commandLine": [
 "--embed", 
-"--agent-only", 
-"-e", 
-"../mig-phyelesystem-scratch/2221/validation.json", 
-"-o", 
-"../mig-phyelesystem-scratch/2221/final.json", 
-"../mig-phyelesystem-scratch/2221/v1.2.1-2221.json"
+"--agent-only"
 ], 
 "otherProperty": [
 {
@@ -76,12 +39,19 @@
 }
 ]
 }, 
+"^ot:annotationEvents": {
+"annotation": []
+}, 
+"^ot:candidateTreeForSynthesis": [], 
 "^ot:curatorName": "Romina Gazis", 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S271"
 }, 
 "^ot:focalClade": 634628, 
 "^ot:focalCladeOTTTaxonName": "Basidiomycota", 
+"^ot:messages": {
+"message": []
+}, 
 "^ot:otusElementOrder": [
 "otus2221"
 ], 
@@ -93,8 +63,8 @@
 "^ot:studyYear": 1997, 
 "^ot:tag": [
 "MP", 
-"SSU", 
-"mtSSU"
+"mtSSU", 
+"SSU"
 ], 
 "^ot:treesElementOrder": [
 "trees2221"
@@ -260,6 +230,8 @@
 }, 
 "otu322332": {
 "^ot:originalLabel": "Lentinellus omphalodes", 
+"^ot:ottId": 625340, 
+"^ot:ottTaxonName": "Lentinellus micheneri", 
 "^ot:treebaseOTUId": "Tl109919"
 }, 
 "otu322333": {
@@ -296,6 +268,8 @@
 }, 
 "otu322339": {
 "^ot:originalLabel": "Botryobasidium isabellinum", 
+"^ot:ottId": 5300654, 
+"^ot:ottTaxonName": "Botryohypochnus isabellinus", 
 "^ot:treebaseOTUId": "Tl109927"
 }, 
 "otu322340": {
@@ -313,6 +287,7 @@
 "otu322342": {
 "^ot:originalLabel": "Clavaria zollingeri", 
 "^ot:ottId": 1050361, 
+"^ot:ottTaxonName": "Clavaria zollingeri", 
 "^ot:treebaseOTUId": "Tl109930"
 }, 
 "otu322343": {
@@ -359,10 +334,14 @@
 }, 
 "otu322350": {
 "^ot:originalLabel": "Clavulina cristata", 
+"^ot:ottId": 3798782, 
+"^ot:ottTaxonName": "Clavulina coralloides", 
 "^ot:treebaseOTUId": "Tl109939"
 }, 
 "otu322351": {
 "^ot:originalLabel": "Panus rudis", 
+"^ot:ottId": 685632, 
+"^ot:ottTaxonName": "Lentinus strigosus", 
 "^ot:treebaseOTUId": "Tl109940"
 }, 
 "otu322352": {
@@ -379,6 +358,8 @@
 }, 
 "otu322354": {
 "^ot:originalLabel": "Phanerochaete chrysosporium", 
+"^ot:ottId": 5299626, 
+"^ot:ottTaxonName": "Phanerodontia chrysosporium", 
 "^ot:treebaseOTUId": "Tl109943"
 }, 
 "otu322355": {
@@ -605,9 +586,14 @@
 "treeById": {
 "tree4696": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "MP, SSU + mtSSU", 
 "^ot:inGroupClade": "node828928", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node828922", 
+"^ot:specifiedRoot": "", 
 "^ot:tag": [
 "MP", 
 "SSU", 

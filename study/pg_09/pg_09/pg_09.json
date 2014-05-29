@@ -12,7 +12,6 @@
 "xsd": "http://www.w3.org/2001/XMLSchema#", 
 "xsi": "http://www.w3.org/2001/XMLSchema-instance"
 }, 
-"^bogus_timestamp": "2014-05-02T02:46:26.910797", 
 "^ot:agents": {
 "agent": [
 {
@@ -20,48 +19,11 @@
 "@id": "peyotl-validator", 
 "@name": "validate_ot_nexson.py", 
 "@url": "https://github.com/OpenTreeOfLife/peyotl", 
-"@version": "0.0.3a", 
+"@version": "0.0.4a", 
 "invocation": {
-"checksPerformed": [
-"MISSING_MANDATORY_KEY", 
-"MISSING_OPTIONAL_KEY", 
-"UNRECOGNIZED_KEY", 
-"MISSING_LIST_EXPECTED", 
-"DUPLICATING_SINGLETON_KEY", 
-"REFERENCED_ID_NOT_FOUND", 
-"REPEATED_ID", 
-"REPEATED_OTU", 
-"MULTIPLE_ROOT_NODES", 
-"NO_ROOT_NODE", 
-"MULTIPLE_EDGES_FOR_NODES", 
-"CYCLE_DETECTED", 
-"DISCONNECTED_GRAPH_DETECTED", 
-"INCORRECT_ROOT_NODE_LABEL", 
-"TIP_WITHOUT_OTU", 
-"TIP_WITHOUT_OTT_ID", 
-"MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
-"NON_MONOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
-"INVALID_PROPERTY_VALUE", 
-"PROPERTY_VALUE_NOT_USEFUL", 
-"UNRECOGNIZED_PROPERTY_VALUE", 
-"MULTIPLE_TREES", 
-"UNRECOGNIZED_TAG", 
-"CONFLICTING_PROPERTY_VALUES", 
-"NO_TREES", 
-"DEPRECATED_PROPERTY", 
-"UNPARSEABLE_META", 
-"UNREACHABLE_NODE", 
-"INCORRECT_VALUE_TYPE", 
-"MISSING_CRUCIAL_CONTENT"
-], 
 "commandLine": [
 "--embed", 
-"--agent-only", 
-"-e", 
-"../mig-phyelesystem-scratch/9/validation.json", 
-"-o", 
-"../mig-phyelesystem-scratch/9/final.json", 
-"../mig-phyelesystem-scratch/9/v1.2.1-9.json"
+"--agent-only"
 ], 
 "otherProperty": [
 {
@@ -78,65 +40,18 @@
 ]
 }, 
 "^ot:annotationEvents": {
-"annotation": [
-{
-"@description": "Open Tree NexSON validation", 
-"@id": "peyotl-validator-event", 
-"@passedChecks": true, 
-"@preserve": false, 
-"@wasAssociatedWithAgentId": "peyotl-validator", 
-"message": [
-{
-"@code": "MISSING_OPTIONAL_KEY", 
-"@severity": "WARNING", 
-"data": [
-"^ot:ottId"
-], 
-"refersTo": {
-"@idref": "otu67", 
-"@otuID": "otu67", 
-"@otusID": "otus9", 
-"@top": "otus"
-}
+"annotation": []
 }, 
-{
-"@code": "UNRECOGNIZED_KEY", 
-"@severity": "WARNING", 
-"data": [
-"^bogus_timestamp", 
-"^ot:agents", 
-"^ot:testCount"
-], 
-"refersTo": {
-"@idref": "study", 
-"@top": "nexml"
-}
-}, 
-{
-"@code": "MISSING_OPTIONAL_KEY", 
-"@severity": "WARNING", 
-"data": [
-"^ot:branchLengthDescription", 
-"^ot:branchLengthTimeUnit", 
-"^ot:outGroupEdge"
-], 
-"refersTo": {
-"@idref": "tree1", 
-"@top": "trees", 
-"@treeID": "tree1", 
-"@treesID": "tree1"
-}
-}
-]
-}
-]
-}, 
+"^ot:candidateTreeForSynthesis": [], 
 "^ot:curatorName": "Rick Ree", 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S10149"
 }, 
 "^ot:focalClade": 596121, 
 "^ot:focalCladeOTTTaxonName": "campanulids", 
+"^ot:messages": {
+"message": []
+}, 
 "^ot:otusElementOrder": [
 "otus9"
 ], 
@@ -146,7 +61,7 @@
 }, 
 "^ot:studyPublicationReference": "Tank, David C., and Michael J. Donoghue. 2010. Phylogeny and Phylogenetic Nomenclature of the Campanulidae based on an Expanded Sample of Genes and Taxa. Systematic Botany 35, no. 2 (6): 425-441. doi:10.1600/036364410791638306.", 
 "^ot:studyYear": 2010, 
-"^ot:testCount": 3, 
+"^ot:tag": [], 
 "^ot:treesElementOrder": [
 "trees9"
 ], 
@@ -609,7 +524,9 @@
 "^ot:ottTaxonName": "Berzelia"
 }, 
 "otu67": {
-"^ot:originalLabel": "Forgesia"
+"^ot:originalLabel": "Forgesia", 
+"^ot:ottId": 4738254, 
+"^ot:ottTaxonName": "Forgesia"
 }, 
 "otu68": {
 "^ot:originalLabel": "Valdivia", 
@@ -799,10 +716,15 @@
 "treeById": {
 "tree1": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
 "^ot:branchLengthMode": "ot:substitutionCount", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "Bayesian 50% majority-rule consensus", 
 "^ot:inGroupClade": "node3", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node1", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node1": {
 "edge2": {
@@ -2815,9 +2737,14 @@
 }, 
 "tree2": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
 "^ot:branchLengthMode": "ot:substitutionCount", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "ML bootstrap consensus", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node252", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node252": {
 "edge253": {

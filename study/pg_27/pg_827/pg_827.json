@@ -19,48 +19,11 @@
 "@id": "peyotl-validator", 
 "@name": "validate_ot_nexson.py", 
 "@url": "https://github.com/OpenTreeOfLife/peyotl", 
-"@version": "0.0.3a", 
+"@version": "0.0.4a", 
 "invocation": {
-"checksPerformed": [
-"MISSING_MANDATORY_KEY", 
-"MISSING_OPTIONAL_KEY", 
-"UNRECOGNIZED_KEY", 
-"MISSING_LIST_EXPECTED", 
-"DUPLICATING_SINGLETON_KEY", 
-"REFERENCED_ID_NOT_FOUND", 
-"REPEATED_ID", 
-"REPEATED_OTU", 
-"MULTIPLE_ROOT_NODES", 
-"NO_ROOT_NODE", 
-"MULTIPLE_EDGES_FOR_NODES", 
-"CYCLE_DETECTED", 
-"DISCONNECTED_GRAPH_DETECTED", 
-"INCORRECT_ROOT_NODE_LABEL", 
-"TIP_WITHOUT_OTU", 
-"TIP_WITHOUT_OTT_ID", 
-"MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
-"NON_MONOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
-"INVALID_PROPERTY_VALUE", 
-"PROPERTY_VALUE_NOT_USEFUL", 
-"UNRECOGNIZED_PROPERTY_VALUE", 
-"MULTIPLE_TREES", 
-"UNRECOGNIZED_TAG", 
-"CONFLICTING_PROPERTY_VALUES", 
-"NO_TREES", 
-"DEPRECATED_PROPERTY", 
-"UNPARSEABLE_META", 
-"UNREACHABLE_NODE", 
-"INCORRECT_VALUE_TYPE", 
-"MISSING_CRUCIAL_CONTENT"
-], 
 "commandLine": [
 "--embed", 
-"--agent-only", 
-"-e", 
-"../mig-phyelesystem-scratch/827/validation.json", 
-"-o", 
-"../mig-phyelesystem-scratch/827/final.json", 
-"../mig-phyelesystem-scratch/827/v1.2.1-827.json"
+"--agent-only"
 ], 
 "otherProperty": [
 {
@@ -76,12 +39,19 @@
 }
 ]
 }, 
+"^ot:annotationEvents": {
+"annotation": []
+}, 
+"^ot:candidateTreeForSynthesis": [], 
 "^ot:curatorName": "Romina Gazis", 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S11216"
 }, 
 "^ot:focalClade": 989769, 
 "^ot:focalCladeOTTTaxonName": "Blastocladiomycota", 
+"^ot:messages": {
+"message": []
+}, 
 "^ot:otusElementOrder": [
 "otus827"
 ], 
@@ -91,6 +61,7 @@
 }, 
 "^ot:studyPublicationReference": "Porter T.M., Martin W., James T.Y., Longcore J.E., Gleason F.H., Adler P.H., Letcher P.M., & Vilgalys R. 2011. Molecular phylogeny of the Blastocladiomycota (Fungi) based on nuclear ribosomal DNA. Fungal Biology, 115 (4-5): 381-392.", 
 "^ot:studyYear": 2011, 
+"^ot:tag": [], 
 "^ot:treesElementOrder": [
 "trees827"
 ], 
@@ -140,9 +111,9 @@
 "^ot:treebaseOTUId": "Tl467533"
 }, 
 "otu198286": {
-"^ot:altLabel": "Dimargaris bacillispora", 
 "^ot:originalLabel": "Dimargaris bacillispora NRRL2808", 
 "^ot:ottId": 208921, 
+"^ot:ottTaxonName": "Dimargaris bacillispora", 
 "^ot:treebaseOTUId": "Tl467534"
 }, 
 "otu198287": {
@@ -153,8 +124,6 @@
 }, 
 "otu198288": {
 "^ot:originalLabel": "Catenaria Poly Ad", 
-"^ot:ottId": 1048542, 
-"^ot:ottTaxonName": "Catenaria", 
 "^ot:treebaseOTUId": "Tl467536"
 }, 
 "otu198289": {
@@ -189,8 +158,6 @@
 }, 
 "otu198294": {
 "^ot:originalLabel": "Catenaria sp WM099 from ostracod", 
-"^ot:ottId": 1048542, 
-"^ot:ottTaxonName": "Catenaria", 
 "^ot:treebaseOTUId": "Tl467542"
 }, 
 "otu198295": {
@@ -231,8 +198,6 @@
 }, 
 "otu198301": {
 "^ot:originalLabel": "Urophlyctis trifolii", 
-"^ot:ottId": 173313, 
-"^ot:ottTaxonName": "Physoderma trifolii", 
 "^ot:treebaseOTUId": "Tl467549"
 }, 
 "otu198302": {
@@ -255,8 +220,6 @@
 }, 
 "otu198305": {
 "^ot:originalLabel": "Catenaria JEL589", 
-"^ot:ottId": 1048542, 
-"^ot:ottTaxonName": "Catenaria", 
 "^ot:treebaseOTUId": "Tl467553"
 }, 
 "otu198306": {
@@ -266,9 +229,9 @@
 "^ot:treebaseOTUId": "Tl467554"
 }, 
 "otu198307": {
-"^ot:altLabel": "Rhizopus liquefaciens", 
 "^ot:originalLabel": "Rhizopus oryzae", 
 "^ot:ottId": 530834, 
+"^ot:ottTaxonName": "Rhizopus liquefaciens", 
 "^ot:treebaseOTUId": "Tl467555"
 }, 
 "otu198308": {
@@ -315,8 +278,6 @@
 }, 
 "otu198315": {
 "^ot:originalLabel": "Catenaria JEL339 from pollen", 
-"^ot:ottId": 1048542, 
-"^ot:ottTaxonName": "Catenaria", 
 "^ot:treebaseOTUId": "Tl467563"
 }, 
 "otu198316": {
@@ -326,15 +287,13 @@
 "^ot:treebaseOTUId": "Tl467564"
 }, 
 "otu198317": {
-"^ot:altLabel": "Conidiobolus coronatus", 
 "^ot:originalLabel": "Conidiobolus coronatus NRRL28638", 
 "^ot:ottId": 167675, 
+"^ot:ottTaxonName": "Conidiobolus coronatus", 
 "^ot:treebaseOTUId": "Tl467565"
 }, 
 "otu198318": {
 "^ot:originalLabel": "Allomyces sp. MARCW16", 
-"^ot:ottId": 227745, 
-"^ot:ottTaxonName": "Allomyces", 
 "^ot:treebaseOTUId": "Tl467566"
 }, 
 "otu198319": {
@@ -387,8 +346,6 @@
 }, 
 "otu198327": {
 "^ot:originalLabel": "Blastocladiella sp JEL440", 
-"^ot:ottId": 469428, 
-"^ot:ottTaxonName": "Blastocladiella", 
 "^ot:treebaseOTUId": "Tl467575"
 }, 
 "otu198328": {
@@ -419,8 +376,6 @@
 }, 
 "otu198333": {
 "^ot:originalLabel": "Blastocladiella sp JEL363", 
-"^ot:ottId": 469428, 
-"^ot:ottTaxonName": "Blastocladiella", 
 "^ot:treebaseOTUId": "Tl467581"
 }, 
 "otu198334": {
@@ -509,8 +464,6 @@
 }, 
 "otu198348": {
 "^ot:originalLabel": "Catenaria APO4", 
-"^ot:ottId": 1048542, 
-"^ot:ottTaxonName": "Catenaria", 
 "^ot:treebaseOTUId": "Tl467596"
 }, 
 "otu198349": {
@@ -549,8 +502,6 @@
 }, 
 "otu198355": {
 "^ot:originalLabel": "Allomyces MARCW16", 
-"^ot:ottId": 227745, 
-"^ot:ottTaxonName": "Allomyces", 
 "^ot:treebaseOTUId": "Tl467603"
 }
 }
@@ -567,9 +518,15 @@
 "treeById": {
 "tree1585": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "BI, SSU + 5.8S + LSU", 
 "^ot:inGroupClade": "node466219", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node466215", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node466215": {
 "edge466216": {
@@ -1548,9 +1505,15 @@
 }, 
 "tree1586": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "BI, SSU + 5.8S + LSU", 
 "^ot:inGroupClade": "node466356", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node466354", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node466354": {
 "edge466355": {
@@ -1815,9 +1778,15 @@
 }, 
 "tree1587": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "BI, SSU", 
 "^ot:inGroupClade": "node466392", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node466391", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node466391": {
 "edge466392": {

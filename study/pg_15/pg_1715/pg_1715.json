@@ -19,48 +19,11 @@
 "@id": "peyotl-validator", 
 "@name": "validate_ot_nexson.py", 
 "@url": "https://github.com/OpenTreeOfLife/peyotl", 
-"@version": "0.0.3a", 
+"@version": "0.0.4a", 
 "invocation": {
-"checksPerformed": [
-"MISSING_MANDATORY_KEY", 
-"MISSING_OPTIONAL_KEY", 
-"UNRECOGNIZED_KEY", 
-"MISSING_LIST_EXPECTED", 
-"DUPLICATING_SINGLETON_KEY", 
-"REFERENCED_ID_NOT_FOUND", 
-"REPEATED_ID", 
-"REPEATED_OTU", 
-"MULTIPLE_ROOT_NODES", 
-"NO_ROOT_NODE", 
-"MULTIPLE_EDGES_FOR_NODES", 
-"CYCLE_DETECTED", 
-"DISCONNECTED_GRAPH_DETECTED", 
-"INCORRECT_ROOT_NODE_LABEL", 
-"TIP_WITHOUT_OTU", 
-"TIP_WITHOUT_OTT_ID", 
-"MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
-"NON_MONOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
-"INVALID_PROPERTY_VALUE", 
-"PROPERTY_VALUE_NOT_USEFUL", 
-"UNRECOGNIZED_PROPERTY_VALUE", 
-"MULTIPLE_TREES", 
-"UNRECOGNIZED_TAG", 
-"CONFLICTING_PROPERTY_VALUES", 
-"NO_TREES", 
-"DEPRECATED_PROPERTY", 
-"UNPARSEABLE_META", 
-"UNREACHABLE_NODE", 
-"INCORRECT_VALUE_TYPE", 
-"MISSING_CRUCIAL_CONTENT"
-], 
 "commandLine": [
 "--embed", 
-"--agent-only", 
-"-e", 
-"../mig-phyelesystem-scratch/1715/validation.json", 
-"-o", 
-"../mig-phyelesystem-scratch/1715/final.json", 
-"../mig-phyelesystem-scratch/1715/v1.2.1-1715.json"
+"--agent-only"
 ], 
 "otherProperty": [
 {
@@ -76,12 +39,17 @@
 }
 ]
 }, 
+"^ot:annotationEvents": {
+"annotation": []
+}, 
+"^ot:candidateTreeForSynthesis": [], 
 "^ot:curatorName": "Romina Gazis", 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S678"
 }, 
-"^ot:focalClade": 868020, 
-"^ot:focalCladeOTTTaxonName": "Phomopsis", 
+"^ot:messages": {
+"message": []
+}, 
 "^ot:otusElementOrder": [
 "otus1715"
 ], 
@@ -91,6 +59,7 @@
 }, 
 "^ot:studyPublicationReference": "Mostert L., Crous P., Kang J., & Phillips A. 2001. Species of Phomopsis and a Libertella sp. occurring on grapevines with specific reference to South Africa: morphological, cultural, molecular and pathological characterization. Mycologia, 93(1): 146-167.", 
 "^ot:studyYear": 2001, 
+"^ot:tag": [], 
 "^ot:treesElementOrder": [
 "trees1715"
 ], 
@@ -105,14 +74,10 @@
 }, 
 "otu271734": {
 "^ot:originalLabel": "Phomopsis sp. U91617", 
-"^ot:ottId": 986683, 
-"^ot:ottTaxonName": "Phomopsis sp. 'GAP08'", 
 "^ot:treebaseOTUId": "Tl119946"
 }, 
 "otu271735": {
 "^ot:originalLabel": "Phomopsis sp. U94898", 
-"^ot:ottId": 409975, 
-"^ot:ottTaxonName": "Phomopsis sp. 'GM12'", 
 "^ot:treebaseOTUId": "Tl119952"
 }, 
 "otu271736": {
@@ -123,14 +88,10 @@
 }, 
 "otu271737": {
 "^ot:originalLabel": "Phomopsis sp.1 STE-U2659", 
-"^ot:ottId": 324792, 
-"^ot:ottTaxonName": "Phomopsis sp. STE-U2659", 
 "^ot:treebaseOTUId": "Tl55081"
 }, 
 "otu271738": {
 "^ot:originalLabel": "Diaporthe ambigua STE-U2657", 
-"^ot:ottId": 263710, 
-"^ot:ottTaxonName": "Diaporthe ambigua", 
 "^ot:treebaseOTUId": "Tl55082"
 }, 
 "otu271739": {
@@ -153,8 +114,6 @@
 }, 
 "otu271742": {
 "^ot:originalLabel": "Diaporthe ambigua STE-U3390", 
-"^ot:ottId": 263710, 
-"^ot:ottTaxonName": "Diaporthe ambigua", 
 "^ot:treebaseOTUId": "Tl55086"
 }, 
 "otu271743": {
@@ -171,14 +130,10 @@
 }, 
 "otu271745": {
 "^ot:originalLabel": "Phomopsis sp. STE-U2680", 
-"^ot:ottId": 324791, 
-"^ot:ottTaxonName": "Phomopsis sp. STE-U2680", 
 "^ot:treebaseOTUId": "Tl55089"
 }, 
 "otu271746": {
 "^ot:originalLabel": "Phomopsis sp.1 STE-U2656", 
-"^ot:ottId": 798228, 
-"^ot:ottTaxonName": "Phomopsis sp. STE-U2656", 
 "^ot:treebaseOTUId": "Tl55090"
 }, 
 "otu271747": {
@@ -225,8 +180,6 @@
 }, 
 "otu271754": {
 "^ot:originalLabel": "Phomopsis sp.2 STE-U2674", 
-"^ot:ottId": 292311, 
-"^ot:ottTaxonName": "Phomopsis sp. MCK5", 
 "^ot:treebaseOTUId": "Tl55098"
 }, 
 "otu271755": {
@@ -237,8 +190,6 @@
 }, 
 "otu271756": {
 "^ot:originalLabel": "Phomopsis amygdali STE-U2632", 
-"^ot:ottId": 720670, 
-"^ot:ottTaxonName": "Diaporthe amygdali", 
 "^ot:treebaseOTUId": "Tl55100"
 }, 
 "otu271757": {
@@ -273,8 +224,6 @@
 }, 
 "otu271762": {
 "^ot:originalLabel": "Phomopsis amygdali U86406", 
-"^ot:ottId": 1046837, 
-"^ot:ottTaxonName": "Phomopsis sp. GLB06", 
 "^ot:treebaseOTUId": "Tl55106"
 }, 
 "otu271763": {
@@ -303,8 +252,14 @@
 "treeById": {
 "tree3454": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "MP, ITS", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node674040", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node674040": {
 "edge674041": {
@@ -597,9 +552,15 @@
 }, 
 "tree3455": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "MP, ITS + mtSSU", 
 "^ot:inGroupClade": "node674082", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node674081", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node674081": {
 "edge674082": {
@@ -801,9 +762,15 @@
 }, 
 "tree5927": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "MP, ITS (rooted)", 
 "^ot:inGroupClade": "node1006038", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node1006037", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node1006037": {
 "edge1006038": {

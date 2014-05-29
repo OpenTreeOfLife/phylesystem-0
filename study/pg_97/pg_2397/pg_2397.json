@@ -19,48 +19,11 @@
 "@id": "peyotl-validator", 
 "@name": "validate_ot_nexson.py", 
 "@url": "https://github.com/OpenTreeOfLife/peyotl", 
-"@version": "0.0.3a", 
+"@version": "0.0.4a", 
 "invocation": {
-"checksPerformed": [
-"MISSING_MANDATORY_KEY", 
-"MISSING_OPTIONAL_KEY", 
-"UNRECOGNIZED_KEY", 
-"MISSING_LIST_EXPECTED", 
-"DUPLICATING_SINGLETON_KEY", 
-"REFERENCED_ID_NOT_FOUND", 
-"REPEATED_ID", 
-"REPEATED_OTU", 
-"MULTIPLE_ROOT_NODES", 
-"NO_ROOT_NODE", 
-"MULTIPLE_EDGES_FOR_NODES", 
-"CYCLE_DETECTED", 
-"DISCONNECTED_GRAPH_DETECTED", 
-"INCORRECT_ROOT_NODE_LABEL", 
-"TIP_WITHOUT_OTU", 
-"TIP_WITHOUT_OTT_ID", 
-"MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
-"NON_MONOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
-"INVALID_PROPERTY_VALUE", 
-"PROPERTY_VALUE_NOT_USEFUL", 
-"UNRECOGNIZED_PROPERTY_VALUE", 
-"MULTIPLE_TREES", 
-"UNRECOGNIZED_TAG", 
-"CONFLICTING_PROPERTY_VALUES", 
-"NO_TREES", 
-"DEPRECATED_PROPERTY", 
-"UNPARSEABLE_META", 
-"UNREACHABLE_NODE", 
-"INCORRECT_VALUE_TYPE", 
-"MISSING_CRUCIAL_CONTENT"
-], 
 "commandLine": [
 "--embed", 
-"--agent-only", 
-"-e", 
-"../mig-phyelesystem-scratch/2397/validation.json", 
-"-o", 
-"../mig-phyelesystem-scratch/2397/final.json", 
-"../mig-phyelesystem-scratch/2397/v1.2.1-2397.json"
+"--agent-only"
 ], 
 "otherProperty": [
 {
@@ -76,9 +39,16 @@
 }
 ]
 }, 
+"^ot:annotationEvents": {
+"annotation": []
+}, 
+"^ot:candidateTreeForSynthesis": [], 
 "^ot:curatorName": "Laura Katz", 
 "^ot:focalClade": 93302, 
 "^ot:focalCladeOTTTaxonName": "cellular organisms", 
+"^ot:messages": {
+"message": []
+}, 
 "^ot:otusElementOrder": [
 "otus2397"
 ], 
@@ -86,8 +56,9 @@
 "^ot:studyPublication": {
 "@href": "http://dx.doi.org/10.1098/rspb.2012.1795"
 }, 
-"^ot:studyPublicationReference": "T. A. Williams, P. G. Foster, T. M. W. Nye, C. J. Cox, T. M. Embley. 2012. A congruent phylogenomic signal places eukaryotes within the Archaea. Proceedings of the Royal Society B: Biological Sciences 279(1749):4870-4879.", 
+"^ot:studyPublicationReference": "Williams, T. A., P. G. Foster, T. M. W. Nye, C. J. Cox, T. M. Embley. 2012. A congruent phylogenomic signal places eukaryotes within the Archaea. Proceedings of the Royal Society B: Biological Sciences 279 (1749): 4870-4879.", 
 "^ot:studyYear": 2012, 
+"^ot:tag": [], 
 "^ot:treesElementOrder": [
 "trees2397"
 ], 
@@ -100,10 +71,14 @@
 "^ot:ottTaxonName": "Arabidopsis thaliana"
 }, 
 "otu339304": {
-"^ot:originalLabel": "Homo sapiens"
+"^ot:originalLabel": "Homo sapiens", 
+"^ot:ottId": 770315, 
+"^ot:ottTaxonName": "Homo sapiens"
 }, 
 "otu339305": {
-"^ot:originalLabel": "Saccharomyces cerevisiae"
+"^ot:originalLabel": "Saccharomyces cerevisiae", 
+"^ot:ottId": 908549, 
+"^ot:ottTaxonName": "Saccharomyces cerevisiae"
 }, 
 "otu339306": {
 "^ot:originalLabel": "Thalassiosira pseudonana", 
@@ -212,7 +187,9 @@
 "^ot:ottTaxonName": "Cenarchaeum symbiosum"
 }, 
 "otu339328": {
-"^ot:originalLabel": "Nitrosopumilus maritimus"
+"^ot:originalLabel": "Nitrosopumilus maritimus", 
+"^ot:ottId": 933975, 
+"^ot:ottTaxonName": "Nitrosopumilus maritimus"
 }, 
 "otu339329": {
 "^ot:originalLabel": "Korarchaeum cryptofilum", 
@@ -220,7 +197,9 @@
 "^ot:ottTaxonName": "Candidatus Korarchaeum cryptofilum"
 }, 
 "otu339330": {
-"^ot:originalLabel": "Caldiarchaeum subterraneum"
+"^ot:originalLabel": "Caldiarchaeum subterraneum", 
+"^ot:ottId": 4795961, 
+"^ot:ottTaxonName": "Candidatus Caldiarchaeum"
 }, 
 "otu339331": {
 "^ot:originalLabel": "Caldivirga maquilingensis", 
@@ -263,7 +242,9 @@
 "^ot:ottTaxonName": "Aeropyrum pernix"
 }, 
 "otu339339": {
-"^ot:originalLabel": "Nitrosoarchaeum limnia"
+"^ot:originalLabel": "Nitrosoarchaeum limnia", 
+"^ot:ottId": 1018291, 
+"^ot:ottTaxonName": "Candidatus Nitrosoarchaeum limnia"
 }, 
 "otu339340": {
 "^ot:originalLabel": "Phytophthora ramorum", 
@@ -312,9 +293,15 @@
 "treeById": {
 "tree5034": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "Fig 1a", 
 "^ot:inGroupClade": "node874439", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node874439", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node874439": {
 "edge874440": {
@@ -879,9 +866,15 @@
 }, 
 "tree5035": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "Fig 1b", 
 "^ot:inGroupClade": "node874509", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node874509", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node874509": {
 "edge874510": {
@@ -1382,9 +1375,15 @@
 }, 
 "tree5036": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "Fig 1c: NDRH_NDCH tree", 
 "^ot:inGroupClade": "node874571", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node874571", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node874571": {
 "edge874572": {
@@ -1949,9 +1948,15 @@
 }, 
 "tree5037": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "Fig 1d Cat tree", 
 "^ot:inGroupClade": "node874641", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node874641", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node874641": {
 "edge874642": {
@@ -2500,9 +2505,15 @@
 }, 
 "tree5038": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "Fig 2a Cat tree", 
 "^ot:inGroupClade": "node874709", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node874709", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node874709": {
 "edge874710": {
@@ -3075,9 +3086,15 @@
 }, 
 "tree5039": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "Fig 2b 63 cat tree", 
 "^ot:inGroupClade": "node874780", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node874780", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node874780": {
 "edge874781": {

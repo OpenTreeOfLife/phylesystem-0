@@ -19,48 +19,11 @@
 "@id": "peyotl-validator", 
 "@name": "validate_ot_nexson.py", 
 "@url": "https://github.com/OpenTreeOfLife/peyotl", 
-"@version": "0.0.3a", 
+"@version": "0.0.4a", 
 "invocation": {
-"checksPerformed": [
-"MISSING_MANDATORY_KEY", 
-"MISSING_OPTIONAL_KEY", 
-"UNRECOGNIZED_KEY", 
-"MISSING_LIST_EXPECTED", 
-"DUPLICATING_SINGLETON_KEY", 
-"REFERENCED_ID_NOT_FOUND", 
-"REPEATED_ID", 
-"REPEATED_OTU", 
-"MULTIPLE_ROOT_NODES", 
-"NO_ROOT_NODE", 
-"MULTIPLE_EDGES_FOR_NODES", 
-"CYCLE_DETECTED", 
-"DISCONNECTED_GRAPH_DETECTED", 
-"INCORRECT_ROOT_NODE_LABEL", 
-"TIP_WITHOUT_OTU", 
-"TIP_WITHOUT_OTT_ID", 
-"MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
-"NON_MONOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
-"INVALID_PROPERTY_VALUE", 
-"PROPERTY_VALUE_NOT_USEFUL", 
-"UNRECOGNIZED_PROPERTY_VALUE", 
-"MULTIPLE_TREES", 
-"UNRECOGNIZED_TAG", 
-"CONFLICTING_PROPERTY_VALUES", 
-"NO_TREES", 
-"DEPRECATED_PROPERTY", 
-"UNPARSEABLE_META", 
-"UNREACHABLE_NODE", 
-"INCORRECT_VALUE_TYPE", 
-"MISSING_CRUCIAL_CONTENT"
-], 
 "commandLine": [
 "--embed", 
-"--agent-only", 
-"-e", 
-"../mig-phyelesystem-scratch/489/validation.json", 
-"-o", 
-"../mig-phyelesystem-scratch/489/final.json", 
-"../mig-phyelesystem-scratch/489/v1.2.1-489.json"
+"--agent-only"
 ], 
 "otherProperty": [
 {
@@ -76,12 +39,17 @@
 }
 ]
 }, 
+"^ot:annotationEvents": {
+"annotation": []
+}, 
+"^ot:candidateTreeForSynthesis": [], 
 "^ot:curatorName": "Romina Gazis", 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S10074"
 }, 
-"^ot:focalClade": 1023439, 
-"^ot:focalCladeOTTTaxonName": "Neoaleurodiscus", 
+"^ot:messages": {
+"message": []
+}, 
 "^ot:otusElementOrder": [
 "otus489"
 ], 
@@ -91,6 +59,7 @@
 }, 
 "^ot:studyPublicationReference": "Wu S., Wang D., & Yu S. 2009. Neoaleurodiscus fujii, a new genus and new species found at the timberline in Japan. Mycologia, 102(1): 217-223.", 
 "^ot:studyYear": 2009, 
+"^ot:tag": [], 
 "^ot:treesElementOrder": [
 "trees489"
 ], 
@@ -112,7 +81,7 @@
 "otu163656": {
 "^ot:originalLabel": "Megalocystidium leucoxanthum AF506420", 
 "^ot:ottId": 735807, 
-"^ot:ottTaxonName": "Megalocystidium leucoxanthum", 
+"^ot:ottTaxonName": "Gloeocystidiellum leucoxanthum", 
 "^ot:treebaseOTUId": "Tl261069"
 }, 
 "otu163657": {
@@ -153,8 +122,6 @@
 }, 
 "otu163663": {
 "^ot:originalLabel": "Acanthobasidium penicillatum Aleurodiscus penicillatus AY039315", 
-"^ot:ottId": 869960, 
-"^ot:ottTaxonName": "Aleurodiscus penicillatus", 
 "^ot:treebaseOTUId": "Tl261076"
 }, 
 "otu163664": {
@@ -165,14 +132,10 @@
 }, 
 "otu163665": {
 "^ot:originalLabel": "Neoaleurodiscus fujii FJ799923", 
-"^ot:ottId": 872062, 
-"^ot:ottTaxonName": "Neoaleurodiscus fujii", 
 "^ot:treebaseOTUId": "Tl261078"
 }, 
 "otu163666": {
 "^ot:originalLabel": "Neoaleurodiscus fujii FJ799924", 
-"^ot:ottId": 872062, 
-"^ot:ottTaxonName": "Neoaleurodiscus fujii", 
 "^ot:treebaseOTUId": "Tl261079"
 }, 
 "otu163667": {
@@ -202,7 +165,7 @@
 "otu163671": {
 "^ot:originalLabel": "Aleurobotrys botryosus AY039331", 
 "^ot:ottId": 989760, 
-"^ot:ottTaxonName": "Aleurobotrys botryosus", 
+"^ot:ottTaxonName": "Aleurodiscus botryosus", 
 "^ot:treebaseOTUId": "Tl261084"
 }, 
 "otu163672": {
@@ -223,10 +186,17 @@
 "treeById": {
 "tree662": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "MP, LSU", 
 "^ot:inGroupClade": "node321922", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node321918", 
-"^ot:tag": "MP", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [
+"MP"
+], 
 "edgeBySourceId": {
 "node321918": {
 "edge321919": {

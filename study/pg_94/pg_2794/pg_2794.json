@@ -19,48 +19,11 @@
 "@id": "peyotl-validator", 
 "@name": "validate_ot_nexson.py", 
 "@url": "https://github.com/OpenTreeOfLife/peyotl", 
-"@version": "0.0.3a", 
+"@version": "0.0.4a", 
 "invocation": {
-"checksPerformed": [
-"MISSING_MANDATORY_KEY", 
-"MISSING_OPTIONAL_KEY", 
-"UNRECOGNIZED_KEY", 
-"MISSING_LIST_EXPECTED", 
-"DUPLICATING_SINGLETON_KEY", 
-"REFERENCED_ID_NOT_FOUND", 
-"REPEATED_ID", 
-"REPEATED_OTU", 
-"MULTIPLE_ROOT_NODES", 
-"NO_ROOT_NODE", 
-"MULTIPLE_EDGES_FOR_NODES", 
-"CYCLE_DETECTED", 
-"DISCONNECTED_GRAPH_DETECTED", 
-"INCORRECT_ROOT_NODE_LABEL", 
-"TIP_WITHOUT_OTU", 
-"TIP_WITHOUT_OTT_ID", 
-"MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
-"NON_MONOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
-"INVALID_PROPERTY_VALUE", 
-"PROPERTY_VALUE_NOT_USEFUL", 
-"UNRECOGNIZED_PROPERTY_VALUE", 
-"MULTIPLE_TREES", 
-"UNRECOGNIZED_TAG", 
-"CONFLICTING_PROPERTY_VALUES", 
-"NO_TREES", 
-"DEPRECATED_PROPERTY", 
-"UNPARSEABLE_META", 
-"UNREACHABLE_NODE", 
-"INCORRECT_VALUE_TYPE", 
-"MISSING_CRUCIAL_CONTENT"
-], 
 "commandLine": [
 "--embed", 
-"--agent-only", 
-"-e", 
-"../mig-phyelesystem-scratch/2794/validation.json", 
-"-o", 
-"../mig-phyelesystem-scratch/2794/final.json", 
-"../mig-phyelesystem-scratch/2794/v1.2.1-2794.json"
+"--agent-only"
 ], 
 "otherProperty": [
 {
@@ -73,157 +36,37 @@
 }
 ]
 }
-}, 
-{
-"@description": "Web-based interface for submitting, editing, and reviewing studies in the Open Tree of Life project.", 
-"@id": "opentree-curation-webapp", 
-"@name": "OpenTree curation webapp", 
-"@url": "https://github.com/OpenTreeOfLife/opentree", 
-"@version": "0.0.0"
 }
 ]
 }, 
 "^ot:annotationEvents": {
-"annotation": [
-{
-"@description": "Open Tree NexSON validation", 
-"@id": "peyotl-validator-event", 
-"@passedChecks": false, 
-"@preserve": false, 
-"@wasAssociatedWithAgentId": "peyotl-validator", 
-"message": [
-{
-"@code": "INCORRECT_VALUE_TYPE", 
-"@severity": "ERROR", 
-"data": [
-{
-"expected": "string or string array", 
-"key": "^ot:candidateTreeForSynthesis", 
-"type": "dict"
+"annotation": []
 }, 
-{
-"expected": "integer", 
-"key": "^ot:studyYear", 
-"type": "unicode"
-}, 
-{
-"expected": "integer", 
-"key": "^ot:focalClade", 
-"type": "NoneType"
-}
-], 
-"refersTo": {
-"@idref": "study", 
-"@top": "nexml"
-}
-}
-]
-}, 
-{
-"@dateCreated": "2014-04-17T18:14:11.468Z", 
-"@description": "Aids for mapping study OTUs to OTT taxa", 
-"@id": "otu-mapping-hints", 
-"@passedChecks": true, 
-"@preserve": true, 
-"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
-"message": [
-{
-"@code": "OTU_MAPPING_HINTS", 
-"@humanMessageType": "NONE", 
-"@severity": "INFO", 
-"data": {
-"searchContext": {
-"$": "All life"
-}, 
-"substitutions": {
-"substitution": [
-{
-"@active": false, 
-"@valid": true, 
-"new": {
-"$": ""
-}, 
-"old": {
-"$": ""
-}
-}
-]
-}
-}, 
-"refersTo": {
-"@top": {
-"$": "meta"
-}
-}
-}
-]
-}, 
-{
-"@dateCreated": "2014-04-17T18:14:11.468Z", 
-"@description": "Describes supporting data files for this study", 
-"@id": "supporting-files-metadata", 
-"@passedChecks": true, 
-"@preserve": true, 
-"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
-"message": [
-{
-"@code": "SUPPORTING_FILE_INFO", 
-"@humanMessageType": "NONE", 
-"@severity": "INFO", 
-"data": {
-"@movedToPermanentArchive": false, 
-"files": {
-"file": []
-}
-}, 
-"refersTo": {
-"@top": {
-"$": "meta"
-}
-}
-}
-]
-}
-]
-}, 
-"^ot:candidateTreeForSynthesis": {
-"candidate": [
-"tree6480"
-]
-}, 
-"^ot:curatorName": [
-"Dail Laughinghouse", 
-"Jim Allman"
-], 
+"^ot:candidateTreeForSynthesis": [], 
+"^ot:curatorName": "Dail Laughinghouse", 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S15118"
 }, 
-"^ot:focalClade": null, 
-"^ot:focalCladeOTTTaxonName": "", 
+"^ot:focalClade": 120239, 
+"^ot:focalCladeOTTTaxonName": "Heterolobosea", 
 "^ot:messages": {
 "message": []
 }, 
-"^ot:notIntendedForSynthesis": false, 
 "^ot:otusElementOrder": [
-"FOOFOO"
+"otus2794"
 ], 
 "^ot:studyId": "2794", 
-"^ot:studyPublication": {
-"@href": "http://dx.doi.org/10.1016/j.ejop.2006.08.001"
-}, 
 "^ot:studyPublicationReference": "Geisen S., Bonkowski M., Zhang J., & De jonckheere J.F. 2014. Isolation of six new species of Allovahlkampfia and one new genus of the Vahlkampfiidae, Heterolobosea. Protist, .", 
-"^ot:studyYear": "2014", 
+"^ot:studyYear": 2014, 
 "^ot:tag": [], 
 "^ot:treesElementOrder": [
-"FOOFOO"
+"trees2794"
 ], 
 "otusById": {
-"FOOFOO": {
+"otus2794": {
 "otuById": {
 "otu414219": {
 "^ot:originalLabel": "Allovahlkampfia  nederlandensis Nl64", 
-"^ot:ottId": 364130, 
-"^ot:ottTaxonName": "Allovahlkampfia", 
 "^ot:treebaseOTUId": "Tl1345626"
 }, 
 "otu414220": {
@@ -234,8 +77,6 @@
 }, 
 "otu414221": {
 "^ot:originalLabel": "Allovahlkampfia  neotibetensis Tib191", 
-"^ot:ottId": 364130, 
-"^ot:ottTaxonName": "Allovahlkampfia", 
 "^ot:treebaseOTUId": "Tl1345628"
 }, 
 "otu414222": {
@@ -244,51 +85,40 @@
 }, 
 "otu414223": {
 "^ot:originalLabel": "Allovahlkampfia  paratibetensis Tib50", 
-"^ot:ottId": 364130, 
-"^ot:ottTaxonName": "Allovahlkampfia", 
 "^ot:treebaseOTUId": "Tl1345630"
 }, 
 "otu414224": {
 "^ot:originalLabel": "Allovahlkampfia  sardiniensis Sar9", 
-"^ot:ottId": 364130, 
-"^ot:ottTaxonName": "Allovahlkampfia", 
 "^ot:treebaseOTUId": "Tl1345631"
 }, 
 "otu414225": {
 "^ot:originalLabel": "Allovahlkampfia parasardiniensis Sar37", 
-"^ot:ottId": 364130, 
-"^ot:ottTaxonName": "Allovahlkampfia", 
 "^ot:treebaseOTUId": "Tl1345632"
 }, 
 "otu414226": {
 "^ot:originalLabel": "Allovahlkampfia  tibetensis Tib32", 
-"^ot:ottId": 364130, 
-"^ot:ottTaxonName": "Allovahlkampfia", 
 "^ot:treebaseOTUId": "Tl1345633"
 }
 }
 }
 }, 
 "treesById": {
-"FOOFOO": {
+"trees2794": {
 "@otus": "otus2794", 
 "^ot:treeElementOrder": [
 "tree6480"
 ], 
 "treeById": {
 "tree6480": {
-"@label": "Untitled (tree6480)", 
 "@xsi:type": "nex:FloatTree", 
 "^ot:branchLengthDescription": "", 
 "^ot:branchLengthMode": "", 
 "^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "Fig. S1", 
-"^ot:inGroupClade": "", 
 "^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node1120537", 
 "^ot:specifiedRoot": "", 
 "^ot:tag": [], 
-"^ot:unrootedTree": true, 
 "edgeBySourceId": {
 "node1120537": {
 "edge1120538": {

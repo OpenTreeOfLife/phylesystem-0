@@ -19,48 +19,11 @@
 "@id": "peyotl-validator", 
 "@name": "validate_ot_nexson.py", 
 "@url": "https://github.com/OpenTreeOfLife/peyotl", 
-"@version": "0.0.3a", 
+"@version": "0.0.4a", 
 "invocation": {
-"checksPerformed": [
-"MISSING_MANDATORY_KEY", 
-"MISSING_OPTIONAL_KEY", 
-"UNRECOGNIZED_KEY", 
-"MISSING_LIST_EXPECTED", 
-"DUPLICATING_SINGLETON_KEY", 
-"REFERENCED_ID_NOT_FOUND", 
-"REPEATED_ID", 
-"REPEATED_OTU", 
-"MULTIPLE_ROOT_NODES", 
-"NO_ROOT_NODE", 
-"MULTIPLE_EDGES_FOR_NODES", 
-"CYCLE_DETECTED", 
-"DISCONNECTED_GRAPH_DETECTED", 
-"INCORRECT_ROOT_NODE_LABEL", 
-"TIP_WITHOUT_OTU", 
-"TIP_WITHOUT_OTT_ID", 
-"MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
-"NON_MONOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
-"INVALID_PROPERTY_VALUE", 
-"PROPERTY_VALUE_NOT_USEFUL", 
-"UNRECOGNIZED_PROPERTY_VALUE", 
-"MULTIPLE_TREES", 
-"UNRECOGNIZED_TAG", 
-"CONFLICTING_PROPERTY_VALUES", 
-"NO_TREES", 
-"DEPRECATED_PROPERTY", 
-"UNPARSEABLE_META", 
-"UNREACHABLE_NODE", 
-"INCORRECT_VALUE_TYPE", 
-"MISSING_CRUCIAL_CONTENT"
-], 
 "commandLine": [
 "--embed", 
-"--agent-only", 
-"-e", 
-"../mig-phyelesystem-scratch/2804/validation.json", 
-"-o", 
-"../mig-phyelesystem-scratch/2804/final.json", 
-"../mig-phyelesystem-scratch/2804/v1.2.1-2804.json"
+"--agent-only"
 ], 
 "otherProperty": [
 {
@@ -76,9 +39,16 @@
 }
 ]
 }, 
+"^ot:annotationEvents": {
+"annotation": []
+}, 
+"^ot:candidateTreeForSynthesis": [], 
 "^ot:curatorName": "Joseph Brown", 
 "^ot:focalClade": 837585, 
 "^ot:focalCladeOTTTaxonName": "Galliformes", 
+"^ot:messages": {
+"message": []
+}, 
 "^ot:otusElementOrder": [
 "otus2804"
 ], 
@@ -88,6 +58,7 @@
 }, 
 "^ot:studyPublicationReference": "Rebecca T. Kimball, Colette M. St. Mary, Edward L. Braun. 2011. A macroevolutionary perspective on multiple sexual traits in the Phasianidae (Galliformes). International Journal of Evolutionary Biology 2011: 1-16.", 
 "^ot:studyYear": 2011, 
+"^ot:tag": [], 
 "^ot:treesElementOrder": [
 "trees2804"
 ], 
@@ -265,7 +236,9 @@
 "^ot:ottTaxonName": "Mitu salvini"
 }, 
 "otu415015": {
-"^ot:originalLabel": "Mitu tuberosa"
+"^ot:originalLabel": "Mitu tuberosa", 
+"^ot:ottId": 488151, 
+"^ot:ottTaxonName": "Mitu tuberosum"
 }, 
 "otu415016": {
 "^ot:originalLabel": "Pauxi unicornis", 
@@ -273,7 +246,9 @@
 "^ot:ottTaxonName": "Pauxi unicornis"
 }, 
 "otu415017": {
-"^ot:originalLabel": "Mitu tomentosa"
+"^ot:originalLabel": "Mitu tomentosa", 
+"^ot:ottId": 571014, 
+"^ot:ottTaxonName": "Mitu tomentosum"
 }, 
 "otu415018": {
 "^ot:originalLabel": "Mitu mitu", 
@@ -306,7 +281,9 @@
 "^ot:ottTaxonName": "Guttera plumifera"
 }, 
 "otu415024": {
-"^ot:originalLabel": "Ptilopachus nahani"
+"^ot:originalLabel": "Ptilopachus nahani", 
+"^ot:ottId": 554512, 
+"^ot:ottTaxonName": "Francolinus nahani"
 }, 
 "otu415025": {
 "^ot:originalLabel": "Ptilopachus petrosus", 
@@ -354,7 +331,9 @@
 "^ot:ottTaxonName": "Xenoperdix udzungwensis"
 }, 
 "otu415034": {
-"^ot:originalLabel": "Rollulus roulroul"
+"^ot:originalLabel": "Rollulus roulroul", 
+"^ot:ottId": 352755, 
+"^ot:ottTaxonName": "Rollulus rouloul"
 }, 
 "otu415035": {
 "^ot:originalLabel": "Arborophila javanica", 
@@ -437,10 +416,14 @@
 "^ot:ottTaxonName": "Bonasa umbellus"
 }, 
 "otu415051": {
-"^ot:originalLabel": "Bonasa sewerzowi"
+"^ot:originalLabel": "Bonasa sewerzowi", 
+"^ot:ottId": 3596073, 
+"^ot:ottTaxonName": "Tetrastes sewerzowi"
 }, 
 "otu415052": {
-"^ot:originalLabel": "Bonasa bonasia"
+"^ot:originalLabel": "Bonasa bonasia", 
+"^ot:ottId": 259105, 
+"^ot:ottTaxonName": "Tetrastes bonasia"
 }, 
 "otu415053": {
 "^ot:originalLabel": "Centrocercus urophasianus", 
@@ -463,7 +446,9 @@
 "^ot:ottTaxonName": "Tympanuchus cupido"
 }, 
 "otu415057": {
-"^ot:originalLabel": "Tympanchus phasianellus"
+"^ot:originalLabel": "Tympanchus phasianellus", 
+"^ot:ottId": 979422, 
+"^ot:ottTaxonName": "Tympanuchus phasianellus"
 }, 
 "otu415058": {
 "^ot:originalLabel": "Falcipennis canadensis", 
@@ -471,10 +456,14 @@
 "^ot:ottTaxonName": "Falcipennis canadensis"
 }, 
 "otu415059": {
-"^ot:originalLabel": "Tetrao mlokosiewiczi"
+"^ot:originalLabel": "Tetrao mlokosiewiczi", 
+"^ot:ottId": 168727, 
+"^ot:ottTaxonName": "Lyrurus mlokosiewiczi"
 }, 
 "otu415060": {
-"^ot:originalLabel": "Tetrao tetrix"
+"^ot:originalLabel": "Tetrao tetrix", 
+"^ot:ottId": 725154, 
+"^ot:ottTaxonName": "Lyrurus tetrix"
 }, 
 "otu415061": {
 "^ot:originalLabel": "Tetrao parvirostris", 
@@ -487,7 +476,9 @@
 "^ot:ottTaxonName": "Tetrao urogallus"
 }, 
 "otu415063": {
-"^ot:originalLabel": "Dendragapus falcipennis"
+"^ot:originalLabel": "Dendragapus falcipennis", 
+"^ot:ottId": 55929, 
+"^ot:ottTaxonName": "Falcipennis falcipennis"
 }, 
 "otu415064": {
 "^ot:originalLabel": "Lagopus lagopus", 
@@ -495,10 +486,14 @@
 "^ot:ottTaxonName": "Lagopus lagopus"
 }, 
 "otu415065": {
-"^ot:originalLabel": "Lagopus mutus"
+"^ot:originalLabel": "Lagopus mutus", 
+"^ot:ottId": 504006, 
+"^ot:ottTaxonName": "Lagopus muta"
 }, 
 "otu415066": {
-"^ot:originalLabel": "Lagopus leucurus"
+"^ot:originalLabel": "Lagopus leucurus", 
+"^ot:ottId": 928346, 
+"^ot:ottTaxonName": "Lagopus leucura"
 }, 
 "otu415067": {
 "^ot:originalLabel": "Pucrasia macrolopha", 
@@ -571,7 +566,9 @@
 "^ot:ottTaxonName": "Catreus wallichii"
 }, 
 "otu415081": {
-"^ot:originalLabel": "Lophura leucomelana"
+"^ot:originalLabel": "Lophura leucomelana", 
+"^ot:ottId": 53700, 
+"^ot:ottTaxonName": "Lophura leucomelanos"
 }, 
 "otu415082": {
 "^ot:originalLabel": "Lophura nycthemera", 
@@ -584,7 +581,9 @@
 "^ot:ottTaxonName": "Lophura bulweri"
 }, 
 "otu415084": {
-"^ot:originalLabel": "Lophura swinhoei"
+"^ot:originalLabel": "Lophura swinhoei", 
+"^ot:ottId": 53709, 
+"^ot:ottTaxonName": "Lophura swinhoii"
 }, 
 "otu415085": {
 "^ot:originalLabel": "Lophura edwardsi", 
@@ -597,7 +596,9 @@
 "^ot:ottTaxonName": "Lophura hatinhensis"
 }, 
 "otu415087": {
-"^ot:originalLabel": "Lophura erythropthalma"
+"^ot:originalLabel": "Lophura erythropthalma", 
+"^ot:ottId": 53692, 
+"^ot:ottTaxonName": "Lophura erythrophthalma"
 }, 
 "otu415088": {
 "^ot:originalLabel": "Lophura diardi", 
@@ -660,7 +661,9 @@
 "^ot:ottTaxonName": "Pavo cristatus"
 }, 
 "otu415100": {
-"^ot:originalLabel": "Polyplectron emphanum"
+"^ot:originalLabel": "Polyplectron emphanum", 
+"^ot:ottId": 352746, 
+"^ot:ottTaxonName": "Polyplectron napoleonis"
 }, 
 "otu415101": {
 "^ot:originalLabel": "Polyplectron schleiermacheri", 
@@ -716,7 +719,9 @@
 "^ot:originalLabel": "Gallus sonnerati"
 }, 
 "otu415112": {
-"^ot:originalLabel": "Gallus lafayetti"
+"^ot:originalLabel": "Gallus lafayetti", 
+"^ot:ottId": 153554, 
+"^ot:ottTaxonName": "Gallus lafayetii"
 }, 
 "otu415113": {
 "^ot:originalLabel": "Gallus varius", 
@@ -729,22 +734,34 @@
 "^ot:ottTaxonName": "Gallus gallus"
 }, 
 "otu415115": {
-"^ot:originalLabel": "Peliperdix coqui"
+"^ot:originalLabel": "Peliperdix coqui", 
+"^ot:ottId": 676785, 
+"^ot:ottTaxonName": "Francolinus coqui"
 }, 
 "otu415116": {
-"^ot:originalLabel": "Scleroptila finschi"
+"^ot:originalLabel": "Scleroptila finschi", 
+"^ot:ottId": 681149, 
+"^ot:ottTaxonName": "Francolinus finschi"
 }, 
 "otu415117": {
-"^ot:originalLabel": "Scleroptila levalliantoides"
+"^ot:originalLabel": "Scleroptila levalliantoides", 
+"^ot:ottId": 55587, 
+"^ot:ottTaxonName": "Francolinus levaillantoides"
 }, 
 "otu415118": {
-"^ot:originalLabel": "Scleroptila africanus"
+"^ot:originalLabel": "Scleroptila africanus", 
+"^ot:ottId": 681156, 
+"^ot:ottTaxonName": "Francolinus africanus"
 }, 
 "otu415119": {
-"^ot:originalLabel": "Scleroptila levaillantii"
+"^ot:originalLabel": "Scleroptila levaillantii", 
+"^ot:ottId": 55582, 
+"^ot:ottTaxonName": "Francolinus levaillantii"
 }, 
 "otu415120": {
-"^ot:originalLabel": "Scleroptila shelleyi"
+"^ot:originalLabel": "Scleroptila shelleyi", 
+"^ot:ottId": 55570, 
+"^ot:ottTaxonName": "Francolinus shelleyi"
 }, 
 "otu415121": {
 "^ot:originalLabel": "Francolinus francolinus", 
@@ -757,7 +774,9 @@
 "^ot:ottTaxonName": "Francolinus pondicerianus"
 }, 
 "otu415123": {
-"^ot:originalLabel": "Dendroperdix sephaena"
+"^ot:originalLabel": "Dendroperdix sephaena", 
+"^ot:ottId": 55595, 
+"^ot:ottTaxonName": "Francolinus sephaena"
 }, 
 "otu415124": {
 "^ot:originalLabel": "Francolinus lathami", 
@@ -840,31 +859,49 @@
 "^ot:ottTaxonName": "Perdicula asiatica"
 }, 
 "otu415140": {
-"^ot:originalLabel": "Pternistis castaneicollis"
+"^ot:originalLabel": "Pternistis castaneicollis", 
+"^ot:ottId": 1080982, 
+"^ot:ottTaxonName": "Francolinus castaneicollis"
 }, 
 "otu415141": {
-"^ot:originalLabel": "Pternistis squamatus"
+"^ot:originalLabel": "Pternistis squamatus", 
+"^ot:ottId": 55574, 
+"^ot:ottTaxonName": "Francolinus squamatus"
 }, 
 "otu415142": {
-"^ot:originalLabel": "Pternistis griseostriatus"
+"^ot:originalLabel": "Pternistis griseostriatus", 
+"^ot:ottId": 554509, 
+"^ot:ottTaxonName": "Francolinus griseostriatus"
 }, 
 "otu415143": {
-"^ot:originalLabel": "Pternistis adspersus"
+"^ot:originalLabel": "Pternistis adspersus", 
+"^ot:ottId": 681160, 
+"^ot:ottTaxonName": "Francolinus adspersus"
 }, 
 "otu415144": {
-"^ot:originalLabel": "Pternistis capensis"
+"^ot:originalLabel": "Pternistis capensis", 
+"^ot:ottId": 681142, 
+"^ot:ottTaxonName": "Francolinus capensis"
 }, 
 "otu415145": {
-"^ot:originalLabel": "Pternistis natalensis"
+"^ot:originalLabel": "Pternistis natalensis", 
+"^ot:ottId": 55592, 
+"^ot:ottTaxonName": "Francolinus natalensis"
 }, 
 "otu415146": {
-"^ot:originalLabel": "Pternistis afer"
+"^ot:originalLabel": "Pternistis afer", 
+"^ot:ottId": 676791, 
+"^ot:ottTaxonName": "Francolinus afer"
 }, 
 "otu415147": {
-"^ot:originalLabel": "Pternistis leucoscepus"
+"^ot:originalLabel": "Pternistis leucoscepus", 
+"^ot:ottId": 914709, 
+"^ot:ottTaxonName": "Francolinus leucoscepus"
 }, 
 "otu415148": {
-"^ot:originalLabel": "Pternistis swainsonii"
+"^ot:originalLabel": "Pternistis swainsonii", 
+"^ot:ottId": 55577, 
+"^ot:ottTaxonName": "Francolinus swainsonii"
 }, 
 "otu415149": {
 "^ot:originalLabel": "Argusianus argus", 
@@ -889,10 +926,15 @@
 "treeById": {
 "tree6510": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
 "^ot:branchLengthMode": "ot:substitutionCount", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "ML (unpartitioned)", 
 "^ot:inGroupClade": "node1122885", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node1122885", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node1122885": {
 "edge1122886": {
@@ -3609,10 +3651,15 @@
 }, 
 "tree6511": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
 "^ot:branchLengthMode": "ot:substitutionCount", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "ML (partitioned)", 
 "^ot:inGroupClade": "node1123224", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node1123224", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node1123224": {
 "edge1123225": {

@@ -19,48 +19,11 @@
 "@id": "peyotl-validator", 
 "@name": "validate_ot_nexson.py", 
 "@url": "https://github.com/OpenTreeOfLife/peyotl", 
-"@version": "0.0.3a", 
+"@version": "0.0.4a", 
 "invocation": {
-"checksPerformed": [
-"MISSING_MANDATORY_KEY", 
-"MISSING_OPTIONAL_KEY", 
-"UNRECOGNIZED_KEY", 
-"MISSING_LIST_EXPECTED", 
-"DUPLICATING_SINGLETON_KEY", 
-"REFERENCED_ID_NOT_FOUND", 
-"REPEATED_ID", 
-"REPEATED_OTU", 
-"MULTIPLE_ROOT_NODES", 
-"NO_ROOT_NODE", 
-"MULTIPLE_EDGES_FOR_NODES", 
-"CYCLE_DETECTED", 
-"DISCONNECTED_GRAPH_DETECTED", 
-"INCORRECT_ROOT_NODE_LABEL", 
-"TIP_WITHOUT_OTU", 
-"TIP_WITHOUT_OTT_ID", 
-"MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
-"NON_MONOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
-"INVALID_PROPERTY_VALUE", 
-"PROPERTY_VALUE_NOT_USEFUL", 
-"UNRECOGNIZED_PROPERTY_VALUE", 
-"MULTIPLE_TREES", 
-"UNRECOGNIZED_TAG", 
-"CONFLICTING_PROPERTY_VALUES", 
-"NO_TREES", 
-"DEPRECATED_PROPERTY", 
-"UNPARSEABLE_META", 
-"UNREACHABLE_NODE", 
-"INCORRECT_VALUE_TYPE", 
-"MISSING_CRUCIAL_CONTENT"
-], 
 "commandLine": [
 "--embed", 
-"--agent-only", 
-"-e", 
-"../mig-phyelesystem-scratch/435/validation.json", 
-"-o", 
-"../mig-phyelesystem-scratch/435/final.json", 
-"../mig-phyelesystem-scratch/435/v1.2.1-435.json"
+"--agent-only"
 ], 
 "otherProperty": [
 {
@@ -76,9 +39,16 @@
 }
 ]
 }, 
+"^ot:annotationEvents": {
+"annotation": []
+}, 
+"^ot:candidateTreeForSynthesis": [], 
 "^ot:curatorName": "Joseph Brown", 
 "^ot:focalClade": 81461, 
 "^ot:focalCladeOTTTaxonName": "Aves", 
+"^ot:messages": {
+"message": []
+}, 
 "^ot:otusElementOrder": [
 "otus435"
 ], 
@@ -88,6 +58,7 @@
 }, 
 "^ot:studyPublicationReference": "Brown, Joseph W., Joshua S. Rest, Jaime Garc\u00eda-Moreno, Michael D. Sorenson, and David P. Mindell. 2008. Strong mitochondrial DNA support for a Cretaceous origin of modern avian lineages. BMC Biology 6: 6", 
 "^ot:studyYear": 2008, 
+"^ot:tag": [], 
 "^ot:treesElementOrder": [
 "trees435"
 ], 
@@ -286,7 +257,9 @@
 "^ot:ottTaxonName": "Phoebastria nigripes"
 }, 
 "otu380844": {
-"^ot:originalLabel": "Diomedea melanophrys"
+"^ot:originalLabel": "Diomedea melanophrys", 
+"^ot:ottId": 320271, 
+"^ot:ottTaxonName": "Thalassarche melanophrys"
 }, 
 "otu380845": {
 "^ot:originalLabel": "Grus canadensis", 
@@ -485,8 +458,8 @@
 }, 
 "otu380884": {
 "^ot:originalLabel": "Stercorarius skua", 
-"^ot:ottId": 81644, 
-"^ot:ottTaxonName": "Aphyosemion campomaanense"
+"^ot:ottId": 742633, 
+"^ot:ottTaxonName": "Stercorarius skua"
 }, 
 "otu380885": {
 "^ot:originalLabel": "Cepphus columba", 
@@ -775,12 +748,17 @@
 "treeById": {
 "tree5995": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
 "^ot:branchLengthMode": "ot:time", 
 "^ot:branchLengthTimeUnit": "Myr", 
 "^ot:curatedType": "BEAST MCC tree", 
 "^ot:inGroupClade": "node1018661", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node1018661", 
-"^ot:tag": "ingroup added;", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [
+"ingroup added;"
+], 
 "edgeBySourceId": {
 "node1018661": {
 "edge1018662": {

@@ -19,48 +19,11 @@
 "@id": "peyotl-validator", 
 "@name": "validate_ot_nexson.py", 
 "@url": "https://github.com/OpenTreeOfLife/peyotl", 
-"@version": "0.0.3a", 
+"@version": "0.0.4a", 
 "invocation": {
-"checksPerformed": [
-"MISSING_MANDATORY_KEY", 
-"MISSING_OPTIONAL_KEY", 
-"UNRECOGNIZED_KEY", 
-"MISSING_LIST_EXPECTED", 
-"DUPLICATING_SINGLETON_KEY", 
-"REFERENCED_ID_NOT_FOUND", 
-"REPEATED_ID", 
-"REPEATED_OTU", 
-"MULTIPLE_ROOT_NODES", 
-"NO_ROOT_NODE", 
-"MULTIPLE_EDGES_FOR_NODES", 
-"CYCLE_DETECTED", 
-"DISCONNECTED_GRAPH_DETECTED", 
-"INCORRECT_ROOT_NODE_LABEL", 
-"TIP_WITHOUT_OTU", 
-"TIP_WITHOUT_OTT_ID", 
-"MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
-"NON_MONOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
-"INVALID_PROPERTY_VALUE", 
-"PROPERTY_VALUE_NOT_USEFUL", 
-"UNRECOGNIZED_PROPERTY_VALUE", 
-"MULTIPLE_TREES", 
-"UNRECOGNIZED_TAG", 
-"CONFLICTING_PROPERTY_VALUES", 
-"NO_TREES", 
-"DEPRECATED_PROPERTY", 
-"UNPARSEABLE_META", 
-"UNREACHABLE_NODE", 
-"INCORRECT_VALUE_TYPE", 
-"MISSING_CRUCIAL_CONTENT"
-], 
 "commandLine": [
 "--embed", 
-"--agent-only", 
-"-e", 
-"../mig-phyelesystem-scratch/973/validation.json", 
-"-o", 
-"../mig-phyelesystem-scratch/973/final.json", 
-"../mig-phyelesystem-scratch/973/v1.2.1-973.json"
+"--agent-only"
 ], 
 "otherProperty": [
 {
@@ -76,12 +39,19 @@
 }
 ]
 }, 
+"^ot:annotationEvents": {
+"annotation": []
+}, 
+"^ot:candidateTreeForSynthesis": [], 
 "^ot:curatorName": "Romina Gazis", 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S1834"
 }, 
 "^ot:focalClade": 164906, 
 "^ot:focalCladeOTTTaxonName": "Thraustochytriaceae", 
+"^ot:messages": {
+"message": []
+}, 
 "^ot:otusElementOrder": [
 "otus973"
 ], 
@@ -89,8 +59,9 @@
 "^ot:studyPublication": {
 "@href": "http://dx.doi.org/10.1007/s10267-006-0362-0"
 }, 
-"^ot:studyPublicationReference": "Yokoyama R., & Honda D. 2007. Taxonomic rearrangement of the genus Schizochytrium sensu lato based on morphology, chemotaxonomic characteristics, and 18S rRNA gene phylogeny (Thraustochytriaceae, Labyrinthulomycetes): emendation for Schizochytrium and erection of Aurantiochytrium and Oblongichytrium gen. nov. Mycoscience, 48(4): 199-211.", 
+"^ot:studyPublicationReference": "Yokoyama, R., & Honda D. 2007. Taxonomic rearrangement of the genus Schizochytrium sensu lato based on morphology, chemotaxonomic characteristics, and 18S rRNA gene phylogeny (Thraustochytriaceae, Labyrinthulomycetes): emendation for Schizochytrium and erection of Aurantiochytrium and Oblongichytrium gen. nov. Mycoscience 48 (4): 199-211.", 
 "^ot:studyYear": 2007, 
+"^ot:tag": [], 
 "^ot:treesElementOrder": [
 "trees973"
 ], 
@@ -285,6 +256,8 @@
 }, 
 "otu209375": {
 "^ot:originalLabel": "Oblongichytrium minutum", 
+"^ot:ottId": 5282372, 
+"^ot:ottTaxonName": "Oblongichytrium minutum", 
 "^ot:treebaseOTUId": "Tl50604"
 }, 
 "otu209376": {
@@ -307,10 +280,14 @@
 }, 
 "otu209379": {
 "^ot:originalLabel": "Oblongichytrium multirudimentale", 
+"^ot:ottId": 5282373, 
+"^ot:ottTaxonName": "Oblongichytrium multirudimentale", 
 "^ot:treebaseOTUId": "Tl50612"
 }, 
 "otu209380": {
 "^ot:originalLabel": "Aplanochytrium minutum", 
+"^ot:ottId": 5282362, 
+"^ot:ottTaxonName": "Aplanochytrium minuta", 
 "^ot:treebaseOTUId": "Tl50614"
 }, 
 "otu209381": {
@@ -409,9 +386,15 @@
 "treeById": {
 "tree1907": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "ML?, SSU", 
 "^ot:inGroupClade": "node496392", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node496391", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node496391": {
 "edge496392": {

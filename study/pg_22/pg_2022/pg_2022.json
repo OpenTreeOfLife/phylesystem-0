@@ -19,48 +19,11 @@
 "@id": "peyotl-validator", 
 "@name": "validate_ot_nexson.py", 
 "@url": "https://github.com/OpenTreeOfLife/peyotl", 
-"@version": "0.0.3a", 
+"@version": "0.0.4a", 
 "invocation": {
-"checksPerformed": [
-"MISSING_MANDATORY_KEY", 
-"MISSING_OPTIONAL_KEY", 
-"UNRECOGNIZED_KEY", 
-"MISSING_LIST_EXPECTED", 
-"DUPLICATING_SINGLETON_KEY", 
-"REFERENCED_ID_NOT_FOUND", 
-"REPEATED_ID", 
-"REPEATED_OTU", 
-"MULTIPLE_ROOT_NODES", 
-"NO_ROOT_NODE", 
-"MULTIPLE_EDGES_FOR_NODES", 
-"CYCLE_DETECTED", 
-"DISCONNECTED_GRAPH_DETECTED", 
-"INCORRECT_ROOT_NODE_LABEL", 
-"TIP_WITHOUT_OTU", 
-"TIP_WITHOUT_OTT_ID", 
-"MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
-"NON_MONOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
-"INVALID_PROPERTY_VALUE", 
-"PROPERTY_VALUE_NOT_USEFUL", 
-"UNRECOGNIZED_PROPERTY_VALUE", 
-"MULTIPLE_TREES", 
-"UNRECOGNIZED_TAG", 
-"CONFLICTING_PROPERTY_VALUES", 
-"NO_TREES", 
-"DEPRECATED_PROPERTY", 
-"UNPARSEABLE_META", 
-"UNREACHABLE_NODE", 
-"INCORRECT_VALUE_TYPE", 
-"MISSING_CRUCIAL_CONTENT"
-], 
 "commandLine": [
 "--embed", 
-"--agent-only", 
-"-e", 
-"../mig-phyelesystem-scratch/2022/validation.json", 
-"-o", 
-"../mig-phyelesystem-scratch/2022/final.json", 
-"../mig-phyelesystem-scratch/2022/v1.2.1-2022.json"
+"--agent-only"
 ], 
 "otherProperty": [
 {
@@ -76,12 +39,19 @@
 }
 ]
 }, 
+"^ot:annotationEvents": {
+"annotation": []
+}, 
+"^ot:candidateTreeForSynthesis": [], 
 "^ot:curatorName": "Chris Owen", 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S1004"
 }, 
 "^ot:focalClade": 577087, 
 "^ot:focalCladeOTTTaxonName": "Megalagrion", 
+"^ot:messages": {
+"message": []
+}, 
 "^ot:otusElementOrder": [
 "otus2022"
 ], 
@@ -91,6 +61,7 @@
 }, 
 "^ot:studyPublicationReference": "Jordan S., Simon C., & Polhemus D. 2003. Molecular systematics and adaptive radiation of Hawaii's endemic damselfly genus Megalagrion (Odonata: Coenagrionidae). Systematic Biology, 52(1): 89-109.", 
 "^ot:studyYear": 2003, 
+"^ot:tag": [], 
 "^ot:treesElementOrder": [
 "trees2022"
 ], 
@@ -106,17 +77,19 @@
 "otu305307": {
 "^ot:originalLabel": "Pseudagrion palauense", 
 "^ot:ottId": 385388, 
+"^ot:ottTaxonName": "Pseudagrion palauense", 
 "^ot:treebaseOTUId": "Tl14307"
 }, 
 "otu305308": {
-"^ot:altLabel": "Megalagrion adytum", 
 "^ot:originalLabel": "Megalagrion adytum A2", 
 "^ot:ottId": 1012509, 
+"^ot:ottTaxonName": "Megalagrion adytum", 
 "^ot:treebaseOTUId": "Tl14308"
 }, 
 "otu305309": {
 "^ot:originalLabel": "Ischnura aurora", 
 "^ot:ottId": 961660, 
+"^ot:ottTaxonName": "Ischnura aurora", 
 "^ot:treebaseOTUId": "Tl14309"
 }, 
 "otu305310": {
@@ -126,9 +99,9 @@
 "^ot:treebaseOTUId": "Tl14310"
 }, 
 "otu305311": {
-"^ot:altLabel": "Argia johannella", 
 "^ot:originalLabel": "Argia johanella", 
 "^ot:ottId": 3007370, 
+"^ot:ottTaxonName": "Argia johannella", 
 "^ot:treebaseOTUId": "Tl14311"
 }, 
 "otu305312": {
@@ -140,18 +113,19 @@
 "otu305313": {
 "^ot:originalLabel": "Argia sedula", 
 "^ot:ottId": 961657, 
+"^ot:ottTaxonName": "Argia sedula", 
 "^ot:treebaseOTUId": "Tl14313"
 }, 
 "otu305314": {
-"^ot:altLabel": "Megalagrion blackburni", 
 "^ot:originalLabel": "Megalagrion blackburni B33", 
 "^ot:ottId": 1012510, 
+"^ot:ottTaxonName": "Megalagrion blackburni", 
 "^ot:treebaseOTUId": "Tl14314"
 }, 
 "otu305315": {
-"^ot:altLabel": "Megalagrion xanthomelas", 
 "^ot:originalLabel": "Megalagrion xanthomelas X54", 
 "^ot:ottId": 961653, 
+"^ot:ottTaxonName": "Megalagrion xanthomelas", 
 "^ot:treebaseOTUId": "Tl14315"
 }, 
 "otu305316": {
@@ -167,21 +141,21 @@
 "^ot:treebaseOTUId": "Tl14317"
 }, 
 "otu305318": {
-"^ot:altLabel": "Megalagrion koelense", 
 "^ot:originalLabel": "Megalagrion koelense Kl6", 
 "^ot:ottId": 435826, 
+"^ot:ottTaxonName": "Megalagrion koelense", 
 "^ot:treebaseOTUId": "Tl14318"
 }, 
 "otu305319": {
-"^ot:altLabel": "Megalagrion kauaiense", 
 "^ot:originalLabel": "Megalagrion kauaiense Ka2", 
 "^ot:ottId": 1012501, 
+"^ot:ottTaxonName": "Megalagrion kauaiense", 
 "^ot:treebaseOTUId": "Tl14319"
 }, 
 "otu305320": {
-"^ot:altLabel": "Megalagrion oceanicum", 
 "^ot:originalLabel": "Megalagrion oceanicum Oc2", 
 "^ot:ottId": 435824, 
+"^ot:ottTaxonName": "Megalagrion oceanicum", 
 "^ot:treebaseOTUId": "Tl14320"
 }, 
 "otu305321": {
@@ -199,12 +173,13 @@
 "otu305323": {
 "^ot:originalLabel": "Pseudagrion pacificum", 
 "^ot:ottId": 961648, 
+"^ot:ottTaxonName": "Pseudagrion pacificum", 
 "^ot:treebaseOTUId": "Tl14323"
 }, 
 "otu305324": {
-"^ot:altLabel": "Megalagrion calliphya", 
 "^ot:originalLabel": "Megalagrion calliphya c30", 
 "^ot:ottId": 1012507, 
+"^ot:ottTaxonName": "Megalagrion calliphya", 
 "^ot:treebaseOTUId": "Tl14324"
 }, 
 "otu305325": {
@@ -226,9 +201,9 @@
 "^ot:treebaseOTUId": "Tl14327"
 }, 
 "otu305328": {
-"^ot:altLabel": "Megalagrion xanthomelas", 
 "^ot:originalLabel": "Megalagrion xanthomelas X74", 
 "^ot:ottId": 961653, 
+"^ot:ottTaxonName": "Megalagrion xanthomelas", 
 "^ot:treebaseOTUId": "Tl14328"
 }, 
 "otu305329": {
@@ -238,9 +213,9 @@
 "^ot:treebaseOTUId": "Tl14329"
 }, 
 "otu305330": {
-"^ot:altLabel": "Megalagrion koelense", 
 "^ot:originalLabel": "Megalagrion koelense Kl5", 
 "^ot:ottId": 435826, 
+"^ot:ottTaxonName": "Megalagrion koelense", 
 "^ot:treebaseOTUId": "Tl14330"
 }, 
 "otu305331": {
@@ -250,9 +225,9 @@
 "^ot:treebaseOTUId": "Tl14331"
 }, 
 "otu305332": {
-"^ot:altLabel": "Megalagrion heterogamias", 
 "^ot:originalLabel": "Megalagrion heterogamias Ht22", 
 "^ot:ottId": 1012506, 
+"^ot:ottTaxonName": "Megalagrion heterogamias", 
 "^ot:treebaseOTUId": "Tl14332"
 }, 
 "otu305333": {
@@ -264,12 +239,13 @@
 "otu305334": {
 "^ot:originalLabel": "Drosophila yakuba", 
 "^ot:ottId": 660820, 
+"^ot:ottTaxonName": "Drosophila yakuba", 
 "^ot:treebaseOTUId": "Tl14334"
 }, 
 "otu305335": {
-"^ot:altLabel": "Megalagrion calliphya", 
 "^ot:originalLabel": "Megalagrion calliphya C14", 
 "^ot:ottId": 1012507, 
+"^ot:ottTaxonName": "Megalagrion calliphya", 
 "^ot:treebaseOTUId": "Tl14335"
 }, 
 "otu305336": {
@@ -297,15 +273,15 @@
 "^ot:treebaseOTUId": "Tl14339"
 }, 
 "otu305340": {
-"^ot:altLabel": "Megalagrion paludicola", 
 "^ot:originalLabel": "Megalagrion paludicola Pa2", 
 "^ot:ottId": 961651, 
+"^ot:ottTaxonName": "Megalagrion paludicola", 
 "^ot:treebaseOTUId": "Tl14340"
 }, 
 "otu305341": {
-"^ot:altLabel": "Megalagrion nigrohamatum nigrohamatum", 
 "^ot:originalLabel": "Megalagrion nigrohamatum nigrohamatum Nh4", 
 "^ot:ottId": 925435, 
+"^ot:ottTaxonName": "Megalagrion nigrohamatum nigrohamatum", 
 "^ot:treebaseOTUId": "Tl14341"
 }, 
 "otu305342": {
@@ -357,15 +333,15 @@
 "^ot:treebaseOTUId": "Tl14349"
 }, 
 "otu305350": {
-"^ot:altLabel": "Megalagrion xanthomelas", 
 "^ot:originalLabel": "Megalagrion xanthomelas X111", 
 "^ot:ottId": 961653, 
+"^ot:ottTaxonName": "Megalagrion xanthomelas", 
 "^ot:treebaseOTUId": "Tl14350"
 }, 
 "otu305351": {
-"^ot:altLabel": "Megalagrion oahuense", 
 "^ot:originalLabel": "Megalagrion oahuense Oa7", 
 "^ot:ottId": 435821, 
+"^ot:ottTaxonName": "Megalagrion oahuense", 
 "^ot:treebaseOTUId": "Tl14351"
 }, 
 "otu305352": {
@@ -383,6 +359,7 @@
 "otu305354": {
 "^ot:originalLabel": "Ischnura heterosticta", 
 "^ot:ottId": 961661, 
+"^ot:ottTaxonName": "Ischnura heterosticta", 
 "^ot:treebaseOTUId": "Tl14354"
 }, 
 "otu305355": {
@@ -404,14 +381,15 @@
 "^ot:treebaseOTUId": "Tl14357"
 }, 
 "otu305358": {
-"^ot:altLabel": "Megalagrion orobates", 
 "^ot:originalLabel": "Megalagrion orobates OB3", 
 "^ot:ottId": 435820, 
+"^ot:ottTaxonName": "Megalagrion orobates", 
 "^ot:treebaseOTUId": "Tl14358"
 }, 
 "otu305359": {
 "^ot:originalLabel": "Agriocnemis exsudans", 
 "^ot:ottId": 961655, 
+"^ot:ottTaxonName": "Agriocnemis exsudans", 
 "^ot:treebaseOTUId": "Tl14359"
 }, 
 "otu305360": {
@@ -427,15 +405,15 @@
 "^ot:treebaseOTUId": "Tl14361"
 }, 
 "otu305362": {
-"^ot:altLabel": "Megalagrion leptodemas", 
 "^ot:originalLabel": "Megalagrion leptodemas L2", 
 "^ot:ottId": 435825, 
+"^ot:ottTaxonName": "Megalagrion leptodemas", 
 "^ot:treebaseOTUId": "Tl14362"
 }, 
 "otu305363": {
-"^ot:altLabel": "Megalagrion nesiotes", 
 "^ot:originalLabel": "Megalagrion nesiotes Ns4", 
 "^ot:ottId": 435827, 
+"^ot:ottTaxonName": "Megalagrion nesiotes", 
 "^ot:treebaseOTUId": "Tl14363"
 }, 
 "otu305364": {
@@ -445,26 +423,27 @@
 "^ot:treebaseOTUId": "Tl14364"
 }, 
 "otu305365": {
-"^ot:altLabel": "Megalagrion oresitrophum", 
 "^ot:originalLabel": "Megalagrion oresitrophum Op3", 
 "^ot:ottId": 435823, 
+"^ot:ottTaxonName": "Megalagrion oresitrophum", 
 "^ot:treebaseOTUId": "Tl14365"
 }, 
 "otu305366": {
-"^ot:altLabel": "Megalagrion xanthomelas", 
 "^ot:originalLabel": "Megalagrion xanthomelas X108", 
 "^ot:ottId": 961653, 
+"^ot:ottTaxonName": "Megalagrion xanthomelas", 
 "^ot:treebaseOTUId": "Tl14366"
 }, 
 "otu305367": {
-"^ot:altLabel": "Megalagrion blackburni", 
 "^ot:originalLabel": "Megalagrion blackburni B28", 
 "^ot:ottId": 1012510, 
+"^ot:ottTaxonName": "Megalagrion blackburni", 
 "^ot:treebaseOTUId": "Tl14367"
 }, 
 "otu305368": {
 "^ot:originalLabel": "Enallagma geminatum", 
 "^ot:ottId": 359918, 
+"^ot:ottTaxonName": "Enallagma geminatum", 
 "^ot:treebaseOTUId": "Tl14368"
 }, 
 "otu305369": {
@@ -482,6 +461,7 @@
 "otu305371": {
 "^ot:originalLabel": "Pseudagrion civicum", 
 "^ot:ottId": 961646, 
+"^ot:ottTaxonName": "Pseudagrion civicum", 
 "^ot:treebaseOTUId": "Tl14371"
 }, 
 "otu305372": {
@@ -491,9 +471,9 @@
 "^ot:treebaseOTUId": "Tl14372"
 }, 
 "otu305373": {
-"^ot:altLabel": "Megalagrion vagabundum", 
 "^ot:originalLabel": "Megalagrion vagabundum V3", 
 "^ot:ottId": 961652, 
+"^ot:ottTaxonName": "Megalagrion vagabundum", 
 "^ot:treebaseOTUId": "Tl14373"
 }
 }
@@ -510,10 +490,15 @@
 "treeById": {
 "tree4161": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
 "^ot:branchLengthMode": "ot:substitutionCount", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "Fig. 3", 
 "^ot:inGroupClade": "node774147", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node774147", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node774147": {
 "edge774148": {
@@ -988,10 +973,15 @@
 }, 
 "tree4162": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
 "^ot:branchLengthMode": "ot:substitutionCount", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "Figs. 4 5", 
 "^ot:inGroupClade": "node774214", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node774214", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node774214": {
 "edge774215": {
@@ -1494,10 +1484,15 @@
 }, 
 "tree4163": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
 "^ot:branchLengthMode": "ot:substitutionCount", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "Fig. 5", 
 "^ot:inGroupClade": "node774285", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node774285", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node774285": {
 "edge774286": {

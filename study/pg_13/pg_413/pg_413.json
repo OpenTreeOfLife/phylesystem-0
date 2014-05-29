@@ -19,48 +19,11 @@
 "@id": "peyotl-validator", 
 "@name": "validate_ot_nexson.py", 
 "@url": "https://github.com/OpenTreeOfLife/peyotl", 
-"@version": "0.0.3a", 
+"@version": "0.0.4a", 
 "invocation": {
-"checksPerformed": [
-"MISSING_MANDATORY_KEY", 
-"MISSING_OPTIONAL_KEY", 
-"UNRECOGNIZED_KEY", 
-"MISSING_LIST_EXPECTED", 
-"DUPLICATING_SINGLETON_KEY", 
-"REFERENCED_ID_NOT_FOUND", 
-"REPEATED_ID", 
-"REPEATED_OTU", 
-"MULTIPLE_ROOT_NODES", 
-"NO_ROOT_NODE", 
-"MULTIPLE_EDGES_FOR_NODES", 
-"CYCLE_DETECTED", 
-"DISCONNECTED_GRAPH_DETECTED", 
-"INCORRECT_ROOT_NODE_LABEL", 
-"TIP_WITHOUT_OTU", 
-"TIP_WITHOUT_OTT_ID", 
-"MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
-"NON_MONOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
-"INVALID_PROPERTY_VALUE", 
-"PROPERTY_VALUE_NOT_USEFUL", 
-"UNRECOGNIZED_PROPERTY_VALUE", 
-"MULTIPLE_TREES", 
-"UNRECOGNIZED_TAG", 
-"CONFLICTING_PROPERTY_VALUES", 
-"NO_TREES", 
-"DEPRECATED_PROPERTY", 
-"UNPARSEABLE_META", 
-"UNREACHABLE_NODE", 
-"INCORRECT_VALUE_TYPE", 
-"MISSING_CRUCIAL_CONTENT"
-], 
 "commandLine": [
 "--embed", 
-"--agent-only", 
-"-e", 
-"../mig-phyelesystem-scratch/413/validation.json", 
-"-o", 
-"../mig-phyelesystem-scratch/413/final.json", 
-"../mig-phyelesystem-scratch/413/v1.2.1-413.json"
+"--agent-only"
 ], 
 "otherProperty": [
 {
@@ -76,12 +39,19 @@
 }
 ]
 }, 
+"^ot:annotationEvents": {
+"annotation": []
+}, 
+"^ot:candidateTreeForSynthesis": [], 
 "^ot:curatorName": "Patricia Cabezas", 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S2020"
 }, 
 "^ot:focalClade": 691846, 
 "^ot:focalCladeOTTTaxonName": "Metazoa", 
+"^ot:messages": {
+"message": []
+}, 
 "^ot:otusElementOrder": [
 "otus413"
 ], 
@@ -89,8 +59,9 @@
 "^ot:studyPublication": {
 "@href": "http://dx.doi.org/10.1038/nature06614"
 }, 
-"^ot:studyPublicationReference": "Dunn C., Hejnol A., Matus D., Pang K., Browne W., Smith S., Seaver E., Rouse G., Obst M., Edgecombe G., S\u00f8rensen M., Haddock S., Schmidt-rhaesa A., Okusu A., Kristensen R., Wheeler W., Martindale M., and Giribet G. 2008. Broad phylogenomic sampling improves resolution of the animal tree of life. Nature 452 (7188): 745-749.", 
+"^ot:studyPublicationReference": "Dunn, C., Hejnol A., Matus D., Pang K., Browne W., Smith S., Seaver E., Rouse G., Obst M., Edgecombe G., S\u00f8rensen M., Haddock S., Schmidt-rhaesa A., Okusu A., Kristensen R., Wheeler W., Martindale M., and Giribet G. 2008. Broad phylogenomic sampling improves resolution of the animal tree of life. Nature 452 (7188): 745-749.", 
 "^ot:studyYear": 2008, 
+"^ot:tag": [], 
 "^ot:treesElementOrder": [
 "trees413"
 ], 
@@ -141,6 +112,8 @@
 }, 
 "otu78999": {
 "^ot:originalLabel": "Homo sapiens", 
+"^ot:ottId": 770315, 
+"^ot:ottTaxonName": "Homo sapiens", 
 "^ot:treebaseOTUId": "Tl210117"
 }, 
 "otu79000": {
@@ -169,6 +142,8 @@
 }, 
 "otu79004": {
 "^ot:originalLabel": "Saccharomyces cerevisiae", 
+"^ot:ottId": 908549, 
+"^ot:ottTaxonName": "Saccharomyces cerevisiae", 
 "^ot:treebaseOTUId": "Tl210127"
 }, 
 "otu79005": {
@@ -185,10 +160,14 @@
 }, 
 "otu79007": {
 "^ot:originalLabel": "Hydra magnipapillata", 
+"^ot:ottId": 861536, 
+"^ot:ottTaxonName": "Hydra vulgaris", 
 "^ot:treebaseOTUId": "Tl210132"
 }, 
 "otu79008": {
 "^ot:originalLabel": "Cryptococcus neoformans", 
+"^ot:ottId": 634633, 
+"^ot:ottTaxonName": "Cryptococcus neoformans", 
 "^ot:treebaseOTUId": "Tl210134"
 }, 
 "otu79009": {
@@ -559,9 +538,15 @@
 "treeById": {
 "tree524": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "Fig. 1 RAXML under the WAG model", 
 "^ot:inGroupClade": "node208916", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node208910", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node208910": {
 "edge208911": {

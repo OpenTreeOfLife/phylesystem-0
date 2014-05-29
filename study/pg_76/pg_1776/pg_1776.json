@@ -19,48 +19,11 @@
 "@id": "peyotl-validator", 
 "@name": "validate_ot_nexson.py", 
 "@url": "https://github.com/OpenTreeOfLife/peyotl", 
-"@version": "0.0.3a", 
+"@version": "0.0.4a", 
 "invocation": {
-"checksPerformed": [
-"MISSING_MANDATORY_KEY", 
-"MISSING_OPTIONAL_KEY", 
-"UNRECOGNIZED_KEY", 
-"MISSING_LIST_EXPECTED", 
-"DUPLICATING_SINGLETON_KEY", 
-"REFERENCED_ID_NOT_FOUND", 
-"REPEATED_ID", 
-"REPEATED_OTU", 
-"MULTIPLE_ROOT_NODES", 
-"NO_ROOT_NODE", 
-"MULTIPLE_EDGES_FOR_NODES", 
-"CYCLE_DETECTED", 
-"DISCONNECTED_GRAPH_DETECTED", 
-"INCORRECT_ROOT_NODE_LABEL", 
-"TIP_WITHOUT_OTU", 
-"TIP_WITHOUT_OTT_ID", 
-"MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
-"NON_MONOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
-"INVALID_PROPERTY_VALUE", 
-"PROPERTY_VALUE_NOT_USEFUL", 
-"UNRECOGNIZED_PROPERTY_VALUE", 
-"MULTIPLE_TREES", 
-"UNRECOGNIZED_TAG", 
-"CONFLICTING_PROPERTY_VALUES", 
-"NO_TREES", 
-"DEPRECATED_PROPERTY", 
-"UNPARSEABLE_META", 
-"UNREACHABLE_NODE", 
-"INCORRECT_VALUE_TYPE", 
-"MISSING_CRUCIAL_CONTENT"
-], 
 "commandLine": [
 "--embed", 
-"--agent-only", 
-"-e", 
-"../mig-phyelesystem-scratch/1776/validation.json", 
-"-o", 
-"../mig-phyelesystem-scratch/1776/final.json", 
-"../mig-phyelesystem-scratch/1776/v1.2.1-1776.json"
+"--agent-only"
 ], 
 "otherProperty": [
 {
@@ -76,12 +39,19 @@
 }
 ]
 }, 
+"^ot:annotationEvents": {
+"annotation": []
+}, 
+"^ot:candidateTreeForSynthesis": [], 
 "^ot:curatorName": "Chris Owen", 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S11299"
 }, 
 "^ot:focalClade": 965954, 
 "^ot:focalCladeOTTTaxonName": "Lepidoptera", 
+"^ot:messages": {
+"message": []
+}, 
 "^ot:otusElementOrder": [
 "otus1776"
 ], 
@@ -89,8 +59,9 @@
 "^ot:studyPublication": {
 "@href": "http://dx.doi.org/10.1093/sysbio/syr079"
 }, 
-"^ot:studyPublicationReference": "Cho S., Zwick A., Regier J., Mitter C., Cummings M.P., Yao J., Du Z., Zhao H., Kawahara A.Y., Weller S.J., Davis D.R., Baixeras J., Brown J.W., & Parr C. 2011. Can deliberately incomplete gene sample augmentation improve a phylogeny estimate for the advanced moths and butterflies (Hexapoda: Lepidoptera)?. Systematic Biology 60(6): 782-796.", 
+"^ot:studyPublicationReference": "Cho, S., Zwick A., Regier J., Mitter C., Cummings M.P., Yao J., Du Z., Zhao H., Kawahara A.Y., Weller S.J., Davis D.R., Baixeras J., Brown J.W., & Parr C. 2011. Can deliberately incomplete gene sample augmentation improve a phylogeny estimate for the advanced moths and butterflies (Hexapoda: Lepidoptera)?. Systematic Biology 60 (6): 782-796.", 
 "^ot:studyYear": 2011, 
+"^ot:tag": [], 
 "^ot:treesElementOrder": [
 "trees1776"
 ], 
@@ -141,6 +112,8 @@
 }, 
 "otu277229": {
 "^ot:originalLabel": "Lagoa crispata LCR2", 
+"^ot:ottId": 3041122, 
+"^ot:ottTaxonName": "Megalopyge crispata", 
 "^ot:treebaseOTUId": "Tl692115"
 }, 
 "otu277230": {
@@ -157,6 +130,8 @@
 }, 
 "otu277232": {
 "^ot:originalLabel": "Rhodoneura terminalis LTE", 
+"^ot:ottId": 744074, 
+"^ot:ottTaxonName": "Rhodoneura terminalis", 
 "^ot:treebaseOTUId": "Tl692118"
 }, 
 "otu277233": {
@@ -203,6 +178,8 @@
 }, 
 "otu277240": {
 "^ot:originalLabel": "Pentina flammans PFLA", 
+"^ot:ottId": 744076, 
+"^ot:ottTaxonName": "Pentina flammans", 
 "^ot:treebaseOTUId": "Tl692126"
 }, 
 "otu277241": {
@@ -291,6 +268,8 @@
 }, 
 "otu277255": {
 "^ot:originalLabel": "Apha aequalis AAEQ", 
+"^ot:ottId": 464261, 
+"^ot:ottTaxonName": "Apha aequalis", 
 "^ot:treebaseOTUId": "Tl692141"
 }, 
 "otu277256": {
@@ -463,6 +442,8 @@
 }, 
 "otu277284": {
 "^ot:originalLabel": "Anacrusis nephrodes ANNE", 
+"^ot:ottId": 816359, 
+"^ot:ottTaxonName": "Anacrusis nephrodes", 
 "^ot:treebaseOTUId": "Tl692170"
 }, 
 "otu277285": {
@@ -837,10 +818,15 @@
 "treeById": {
 "tree3581": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
 "^ot:branchLengthMode": "ot:substitutionCount", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "ML GARLi; Fig. 3a", 
 "^ot:inGroupClade": "node689170", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node689166", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node689166": {
 "edge689167": {
@@ -2805,10 +2791,15 @@
 }, 
 "tree3582": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
 "^ot:branchLengthMode": "ot:changesCount", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "Cladogram", 
 "^ot:inGroupClade": "node689415", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node689411", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node689411": {
 "edge689412": {
@@ -4773,10 +4764,15 @@
 }, 
 "tree3583": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
 "^ot:branchLengthMode": "ot:substitutionCount", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "Fig. 3c", 
 "^ot:inGroupClade": "node689660", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node689656", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node689656": {
 "edge689657": {

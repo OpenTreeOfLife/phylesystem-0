@@ -19,48 +19,11 @@
 "@id": "peyotl-validator", 
 "@name": "validate_ot_nexson.py", 
 "@url": "https://github.com/OpenTreeOfLife/peyotl", 
-"@version": "0.0.3a", 
+"@version": "0.0.4a", 
 "invocation": {
-"checksPerformed": [
-"MISSING_MANDATORY_KEY", 
-"MISSING_OPTIONAL_KEY", 
-"UNRECOGNIZED_KEY", 
-"MISSING_LIST_EXPECTED", 
-"DUPLICATING_SINGLETON_KEY", 
-"REFERENCED_ID_NOT_FOUND", 
-"REPEATED_ID", 
-"REPEATED_OTU", 
-"MULTIPLE_ROOT_NODES", 
-"NO_ROOT_NODE", 
-"MULTIPLE_EDGES_FOR_NODES", 
-"CYCLE_DETECTED", 
-"DISCONNECTED_GRAPH_DETECTED", 
-"INCORRECT_ROOT_NODE_LABEL", 
-"TIP_WITHOUT_OTU", 
-"TIP_WITHOUT_OTT_ID", 
-"MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
-"NON_MONOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
-"INVALID_PROPERTY_VALUE", 
-"PROPERTY_VALUE_NOT_USEFUL", 
-"UNRECOGNIZED_PROPERTY_VALUE", 
-"MULTIPLE_TREES", 
-"UNRECOGNIZED_TAG", 
-"CONFLICTING_PROPERTY_VALUES", 
-"NO_TREES", 
-"DEPRECATED_PROPERTY", 
-"UNPARSEABLE_META", 
-"UNREACHABLE_NODE", 
-"INCORRECT_VALUE_TYPE", 
-"MISSING_CRUCIAL_CONTENT"
-], 
 "commandLine": [
 "--embed", 
-"--agent-only", 
-"-e", 
-"../mig-phyelesystem-scratch/1756/validation.json", 
-"-o", 
-"../mig-phyelesystem-scratch/1756/final.json", 
-"../mig-phyelesystem-scratch/1756/v1.2.1-1756.json"
+"--agent-only"
 ], 
 "otherProperty": [
 {
@@ -76,12 +39,19 @@
 }
 ]
 }, 
+"^ot:annotationEvents": {
+"annotation": []
+}, 
+"^ot:candidateTreeForSynthesis": [], 
 "^ot:curatorName": "Romina Gazis", 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S937"
 }, 
 "^ot:focalClade": 247825, 
 "^ot:focalCladeOTTTaxonName": "Russulales", 
+"^ot:messages": {
+"message": []
+}, 
 "^ot:otusElementOrder": [
 "otus1756"
 ], 
@@ -91,6 +61,7 @@
 }, 
 "^ot:studyPublicationReference": "Miller S., Mcclean T., Walker J., & Buyck B. 2001. A molecular phylogeny of the Russulales including agaricoid, gasteroid and pleurotoid taxa. Mycologia, 93(2): 344-354.", 
 "^ot:studyYear": 2001, 
+"^ot:tag": [], 
 "^ot:treesElementOrder": [
 "trees1756"
 ], 
@@ -99,6 +70,8 @@
 "otuById": {
 "otu273856": {
 "^ot:originalLabel": "Zelleromyces duricinus", 
+"^ot:ottId": 5299354, 
+"^ot:ottTaxonName": "Arcangeliella daucina", 
 "^ot:treebaseOTUId": "Tl12026"
 }, 
 "otu273857": {
@@ -129,10 +102,14 @@
 }, 
 "otu273862": {
 "^ot:originalLabel": "Gymnomyces redolens", 
+"^ot:ottId": 5299529, 
+"^ot:ottTaxonName": "Stephanospora redolens", 
 "^ot:treebaseOTUId": "Tl135583"
 }, 
 "otu273863": {
 "^ot:originalLabel": "Gloeocystidiellum aculeatum", 
+"^ot:ottId": 5299257, 
+"^ot:ottTaxonName": "Boidinia aculeata", 
 "^ot:treebaseOTUId": "Tl135584"
 }, 
 "otu273864": {
@@ -143,6 +120,8 @@
 }, 
 "otu273865": {
 "^ot:originalLabel": "Martellia californicum", 
+"^ot:ottId": 587701, 
+"^ot:ottTaxonName": "Gymnomyces californicus", 
 "^ot:treebaseOTUId": "Tl135586"
 }, 
 "otu273866": {
@@ -247,10 +226,14 @@
 }, 
 "otu273884": {
 "^ot:originalLabel": "Russula mairei", 
+"^ot:ottId": 5299312, 
+"^ot:ottTaxonName": "Russula nobilis", 
 "^ot:treebaseOTUId": "Tl135608"
 }, 
 "otu273885": {
 "^ot:originalLabel": "Martellia fallax", 
+"^ot:ottId": 587681, 
+"^ot:ottTaxonName": "Gymnomyces fallax", 
 "^ot:treebaseOTUId": "Tl135609"
 }, 
 "otu273886": {
@@ -279,6 +262,8 @@
 }, 
 "otu273890": {
 "^ot:originalLabel": "Gymnomyces megasporus", 
+"^ot:ottId": 5299357, 
+"^ot:ottTaxonName": "Cystangium megasporum", 
 "^ot:treebaseOTUId": "Tl135614"
 }, 
 "otu273891": {
@@ -305,6 +290,8 @@
 }, 
 "otu273895": {
 "^ot:originalLabel": "Lactarius speciosus", 
+"^ot:ottId": 783967, 
+"^ot:ottTaxonName": "Lactarius romagnesii", 
 "^ot:treebaseOTUId": "Tl135619"
 }
 }
@@ -319,9 +306,15 @@
 "treeById": {
 "tree3538": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "MP, LSU", 
 "^ot:inGroupClade": "node680594", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node680593", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node680593": {
 "edge680594": {

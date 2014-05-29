@@ -19,48 +19,11 @@
 "@id": "peyotl-validator", 
 "@name": "validate_ot_nexson.py", 
 "@url": "https://github.com/OpenTreeOfLife/peyotl", 
-"@version": "0.0.3a", 
+"@version": "0.0.4a", 
 "invocation": {
-"checksPerformed": [
-"MISSING_MANDATORY_KEY", 
-"MISSING_OPTIONAL_KEY", 
-"UNRECOGNIZED_KEY", 
-"MISSING_LIST_EXPECTED", 
-"DUPLICATING_SINGLETON_KEY", 
-"REFERENCED_ID_NOT_FOUND", 
-"REPEATED_ID", 
-"REPEATED_OTU", 
-"MULTIPLE_ROOT_NODES", 
-"NO_ROOT_NODE", 
-"MULTIPLE_EDGES_FOR_NODES", 
-"CYCLE_DETECTED", 
-"DISCONNECTED_GRAPH_DETECTED", 
-"INCORRECT_ROOT_NODE_LABEL", 
-"TIP_WITHOUT_OTU", 
-"TIP_WITHOUT_OTT_ID", 
-"MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
-"NON_MONOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
-"INVALID_PROPERTY_VALUE", 
-"PROPERTY_VALUE_NOT_USEFUL", 
-"UNRECOGNIZED_PROPERTY_VALUE", 
-"MULTIPLE_TREES", 
-"UNRECOGNIZED_TAG", 
-"CONFLICTING_PROPERTY_VALUES", 
-"NO_TREES", 
-"DEPRECATED_PROPERTY", 
-"UNPARSEABLE_META", 
-"UNREACHABLE_NODE", 
-"INCORRECT_VALUE_TYPE", 
-"MISSING_CRUCIAL_CONTENT"
-], 
 "commandLine": [
 "--embed", 
-"--agent-only", 
-"-e", 
-"../mig-phyelesystem-scratch/896/validation.json", 
-"-o", 
-"../mig-phyelesystem-scratch/896/final.json", 
-"../mig-phyelesystem-scratch/896/v1.2.1-896.json"
+"--agent-only"
 ], 
 "otherProperty": [
 {
@@ -76,18 +39,29 @@
 }
 ]
 }, 
+"^ot:annotationEvents": {
+"annotation": []
+}, 
+"^ot:candidateTreeForSynthesis": [], 
 "^ot:curatorName": "bryan drew", 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S10867"
 }, 
 "^ot:focalClade": 825758, 
 "^ot:focalCladeOTTTaxonName": "Peucedanum", 
+"^ot:messages": {
+"message": []
+}, 
 "^ot:otusElementOrder": [
 "otus896"
 ], 
 "^ot:studyId": "896", 
-"^ot:studyPublicationReference": "Brullo C., Brullo S., downie S. R., danderson C. a. & Galdo G. G. del [in press?]: a systematic study of Peucedanum nebrodense: a new monotypic genus of Apiaceae. Ann. Missouri Bot. Gard.", 
+"^ot:studyPublication": {
+"@href": "http://dx.doi.org/10.3417/2011009"
+}, 
+"^ot:studyPublicationReference": "Brullo, C., Brullo, S., Downie, S. R., Danderson, C. A., & del Galdo, G. G. (2013). Siculosciadium, A New Monotypic Genus of Apiaceae from Sicily. Annals of the Missouri Botanical Garden, 99(1), 1-18.", 
 "^ot:studyYear": 2013, 
+"^ot:tag": [], 
 "^ot:treesElementOrder": [
 "trees896"
 ], 
@@ -96,6 +70,8 @@
 "otuById": {
 "otu238308": {
 "^ot:originalLabel": "Dichoropetalum scoparium", 
+"^ot:ottId": 734884, 
+"^ot:ottTaxonName": "Dichoropetalum scoparium", 
 "^ot:treebaseOTUId": "Tl412033"
 }, 
 "otu238309": {
@@ -118,6 +94,8 @@
 }, 
 "otu238312": {
 "^ot:originalLabel": "Dichoropetalum pschawicum", 
+"^ot:ottId": 687453, 
+"^ot:ottTaxonName": "Peucedanum pschavicum", 
 "^ot:treebaseOTUId": "Tl412037"
 }, 
 "otu238313": {
@@ -128,30 +106,44 @@
 }, 
 "otu238314": {
 "^ot:originalLabel": "Dichoropetalum aromaticum", 
+"^ot:ottId": 973000, 
+"^ot:ottTaxonName": "Dichoropetalum aromaticum", 
 "^ot:treebaseOTUId": "Tl412039"
 }, 
 "otu238315": {
 "^ot:originalLabel": "Dichoropetalum paucijugum", 
+"^ot:ottId": 131925, 
+"^ot:ottTaxonName": "Dichoropetalum paucijugum", 
 "^ot:treebaseOTUId": "Tl412040"
 }, 
 "otu238316": {
 "^ot:originalLabel": "Dichoropetalum golestanicum", 
+"^ot:ottId": 973002, 
+"^ot:ottTaxonName": "Dichoropetalum golestanicum", 
 "^ot:treebaseOTUId": "Tl412041"
 }, 
 "otu238317": {
 "^ot:originalLabel": "Dichoropetalum seseloides", 
+"^ot:ottId": 396735, 
+"^ot:ottTaxonName": "Dichoropetalum seseloides", 
 "^ot:treebaseOTUId": "Tl412042"
 }, 
 "otu238318": {
 "^ot:originalLabel": "Dichoropetalum schottii", 
+"^ot:ottId": 553050, 
+"^ot:ottTaxonName": "Dichoropetalum schottii", 
 "^ot:treebaseOTUId": "Tl412043"
 }, 
 "otu238319": {
 "^ot:originalLabel": "Dichoropetalum carvifolia", 
+"^ot:ottId": 31975, 
+"^ot:ottTaxonName": "Dichoropetalum carvifolium", 
 "^ot:treebaseOTUId": "Tl412044"
 }, 
 "otu238320": {
 "^ot:originalLabel": "Dichoropetalum achaicum", 
+"^ot:ottId": 696562, 
+"^ot:ottTaxonName": "Dichoropetalum achaicum", 
 "^ot:treebaseOTUId": "Tl412045"
 }
 }
@@ -166,8 +158,15 @@
 "treeById": {
 "tree2540": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "PAUP 1", 
+"^ot:inGroupClade": "node577379", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node577377", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node577377": {
 "edge577378": {

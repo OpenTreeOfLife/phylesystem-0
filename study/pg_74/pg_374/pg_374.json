@@ -19,48 +19,11 @@
 "@id": "peyotl-validator", 
 "@name": "validate_ot_nexson.py", 
 "@url": "https://github.com/OpenTreeOfLife/peyotl", 
-"@version": "0.0.3a", 
+"@version": "0.0.4a", 
 "invocation": {
-"checksPerformed": [
-"MISSING_MANDATORY_KEY", 
-"MISSING_OPTIONAL_KEY", 
-"UNRECOGNIZED_KEY", 
-"MISSING_LIST_EXPECTED", 
-"DUPLICATING_SINGLETON_KEY", 
-"REFERENCED_ID_NOT_FOUND", 
-"REPEATED_ID", 
-"REPEATED_OTU", 
-"MULTIPLE_ROOT_NODES", 
-"NO_ROOT_NODE", 
-"MULTIPLE_EDGES_FOR_NODES", 
-"CYCLE_DETECTED", 
-"DISCONNECTED_GRAPH_DETECTED", 
-"INCORRECT_ROOT_NODE_LABEL", 
-"TIP_WITHOUT_OTU", 
-"TIP_WITHOUT_OTT_ID", 
-"MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
-"NON_MONOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
-"INVALID_PROPERTY_VALUE", 
-"PROPERTY_VALUE_NOT_USEFUL", 
-"UNRECOGNIZED_PROPERTY_VALUE", 
-"MULTIPLE_TREES", 
-"UNRECOGNIZED_TAG", 
-"CONFLICTING_PROPERTY_VALUES", 
-"NO_TREES", 
-"DEPRECATED_PROPERTY", 
-"UNPARSEABLE_META", 
-"UNREACHABLE_NODE", 
-"INCORRECT_VALUE_TYPE", 
-"MISSING_CRUCIAL_CONTENT"
-], 
 "commandLine": [
 "--embed", 
-"--agent-only", 
-"-e", 
-"../mig-phyelesystem-scratch/374/validation.json", 
-"-o", 
-"../mig-phyelesystem-scratch/374/final.json", 
-"../mig-phyelesystem-scratch/374/v1.2.1-374.json"
+"--agent-only"
 ], 
 "otherProperty": [
 {
@@ -76,12 +39,19 @@
 }
 ]
 }, 
+"^ot:annotationEvents": {
+"annotation": []
+}, 
+"^ot:candidateTreeForSynthesis": [], 
 "^ot:curatorName": "Romina Gazis", 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S1286"
 }, 
 "^ot:focalClade": 250591, 
 "^ot:focalCladeOTTTaxonName": "Penicillium", 
+"^ot:messages": {
+"message": []
+}, 
 "^ot:otusElementOrder": [
 "otus374"
 ], 
@@ -91,6 +61,7 @@
 }, 
 "^ot:studyPublicationReference": "Peterson S., Bayer E., & Wicklow D. 2004. Penicillium thiersii, Penicillium angulare and Penicillium decaturense, new species isolated from wood-decay fungi in North America and their phylogenetic placement from multilocus DNA sequence analysis. Mycologia, 96 (6): 1280-1293.", 
 "^ot:studyYear": 2004, 
+"^ot:tag": [], 
 "^ot:treesElementOrder": [
 "trees374"
 ], 
@@ -117,6 +88,8 @@
 }, 
 "otu76375": {
 "^ot:originalLabel": "Penicillium kojigenum", 
+"^ot:ottId": 504245, 
+"^ot:ottTaxonName": "Penicillium lanosum", 
 "^ot:treebaseOTUId": "Tl11668"
 }, 
 "otu76376": {
@@ -199,6 +172,8 @@
 }, 
 "otu76389": {
 "^ot:originalLabel": "Penicillium manginii", 
+"^ot:ottId": 533471, 
+"^ot:ottTaxonName": "Penicillium atrosanguineum", 
 "^ot:treebaseOTUId": "Tl2341"
 }, 
 "otu76390": {
@@ -221,6 +196,8 @@
 }, 
 "otu76393": {
 "^ot:originalLabel": "Penicillium riojabaense NRRL 29736", 
+"^ot:ottId": 533471, 
+"^ot:ottTaxonName": "Penicillium atrosanguineum", 
 "^ot:treebaseOTUId": "Tl66801"
 }, 
 "otu76394": {
@@ -273,10 +250,14 @@
 }, 
 "otu76402": {
 "^ot:originalLabel": "Penicillium riojabaense NRRL 29685", 
+"^ot:ottId": 533471, 
+"^ot:ottTaxonName": "Penicillium atrosanguineum", 
 "^ot:treebaseOTUId": "Tl66810"
 }, 
 "otu76403": {
 "^ot:originalLabel": "Penicillium mangini", 
+"^ot:ottId": 533471, 
+"^ot:ottTaxonName": "Penicillium atrosanguineum", 
 "^ot:treebaseOTUId": "Tl66811"
 }, 
 "otu76404": {
@@ -317,6 +298,8 @@
 }, 
 "otu76410": {
 "^ot:originalLabel": "Penicillium soppii NRRL 2023", 
+"^ot:ottId": 486252, 
+"^ot:ottTaxonName": "Penicillium miczynskii", 
 "^ot:treebaseOTUId": "Tl67205"
 }, 
 "otu76411": {
@@ -405,10 +388,14 @@
 }, 
 "otu76425": {
 "^ot:originalLabel": "Penicillium riobajaense NRRL 29685", 
+"^ot:ottId": 533471, 
+"^ot:ottTaxonName": "Penicillium atrosanguineum", 
 "^ot:treebaseOTUId": "Tl68420"
 }, 
 "otu76426": {
 "^ot:originalLabel": "Penicillium riobajaense NRRL 29736", 
+"^ot:ottId": 533471, 
+"^ot:ottTaxonName": "Penicillium atrosanguineum", 
 "^ot:treebaseOTUId": "Tl68421"
 }
 }
@@ -425,9 +412,15 @@
 "treeById": {
 "tree433": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "MP, ITS + LSU", 
 "^ot:inGroupClade": "node201703", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node201701", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node201701": {
 "edge201702": {
@@ -1028,9 +1021,15 @@
 }, 
 "tree434": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "MP, calmodulin", 
 "^ot:inGroupClade": "node201789", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node201786", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node201786": {
 "edge201787": {
@@ -1288,9 +1287,15 @@
 }, 
 "tree435": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "MP, EF-1", 
 "^ot:inGroupClade": "node201825", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node201822", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node201822": {
 "edge201823": {

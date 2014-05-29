@@ -19,48 +19,11 @@
 "@id": "peyotl-validator", 
 "@name": "validate_ot_nexson.py", 
 "@url": "https://github.com/OpenTreeOfLife/peyotl", 
-"@version": "0.0.3a", 
+"@version": "0.0.4a", 
 "invocation": {
-"checksPerformed": [
-"MISSING_MANDATORY_KEY", 
-"MISSING_OPTIONAL_KEY", 
-"UNRECOGNIZED_KEY", 
-"MISSING_LIST_EXPECTED", 
-"DUPLICATING_SINGLETON_KEY", 
-"REFERENCED_ID_NOT_FOUND", 
-"REPEATED_ID", 
-"REPEATED_OTU", 
-"MULTIPLE_ROOT_NODES", 
-"NO_ROOT_NODE", 
-"MULTIPLE_EDGES_FOR_NODES", 
-"CYCLE_DETECTED", 
-"DISCONNECTED_GRAPH_DETECTED", 
-"INCORRECT_ROOT_NODE_LABEL", 
-"TIP_WITHOUT_OTU", 
-"TIP_WITHOUT_OTT_ID", 
-"MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
-"NON_MONOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
-"INVALID_PROPERTY_VALUE", 
-"PROPERTY_VALUE_NOT_USEFUL", 
-"UNRECOGNIZED_PROPERTY_VALUE", 
-"MULTIPLE_TREES", 
-"UNRECOGNIZED_TAG", 
-"CONFLICTING_PROPERTY_VALUES", 
-"NO_TREES", 
-"DEPRECATED_PROPERTY", 
-"UNPARSEABLE_META", 
-"UNREACHABLE_NODE", 
-"INCORRECT_VALUE_TYPE", 
-"MISSING_CRUCIAL_CONTENT"
-], 
 "commandLine": [
 "--embed", 
-"--agent-only", 
-"-e", 
-"../mig-phyelesystem-scratch/1332/validation.json", 
-"-o", 
-"../mig-phyelesystem-scratch/1332/final.json", 
-"../mig-phyelesystem-scratch/1332/v1.2.1-1332.json"
+"--agent-only"
 ], 
 "otherProperty": [
 {
@@ -76,9 +39,16 @@
 }
 ]
 }, 
+"^ot:annotationEvents": {
+"annotation": []
+}, 
+"^ot:candidateTreeForSynthesis": [], 
 "^ot:curatorName": "Romina Gazis", 
 "^ot:focalClade": 463503, 
 "^ot:focalCladeOTTTaxonName": "Smittium", 
+"^ot:messages": {
+"message": []
+}, 
 "^ot:otusElementOrder": [
 "otus1332"
 ], 
@@ -86,8 +56,8 @@
 "^ot:studyPublicationReference": "Wang, Yan, Eric Tretter, Robert W. Lichtwardt, and Merlin M. White. \"Overview of 75 years Smittium research, establishing a new genus for Smittium culisetae and prospects for future revisions of the\" Smittium\" clade.\" Mycologia 105.1 (2013): 90-111.", 
 "^ot:studyYear": 2012, 
 "^ot:tag": [
-"ML", 
 "LSU", 
+"ML", 
 "SSU"
 ], 
 "^ot:treesElementOrder": [
@@ -575,7 +545,9 @@
 "^ot:originalLabel": "Smittium sp. CR-141-17"
 }, 
 "otu243138": {
-"^ot:originalLabel": "Smittium gravimetallum KS-F1-3"
+"^ot:originalLabel": "Smittium gravimetallum KS-F1-3", 
+"^ot:ottId": 660519, 
+"^ot:ottTaxonName": "Smittium gravimetallum"
 }, 
 "otu243139": {
 "^ot:originalLabel": "Smittium megazygosporum SC-DP-2", 
@@ -650,8 +622,13 @@
 "treeById": {
 "tree2651": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "ML, LSU + SSU", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node589398", 
+"^ot:specifiedRoot": "", 
 "^ot:tag": [
 "ML", 
 "LSU", 

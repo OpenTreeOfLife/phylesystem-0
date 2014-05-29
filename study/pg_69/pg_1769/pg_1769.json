@@ -19,48 +19,11 @@
 "@id": "peyotl-validator", 
 "@name": "validate_ot_nexson.py", 
 "@url": "https://github.com/OpenTreeOfLife/peyotl", 
-"@version": "0.0.3a", 
+"@version": "0.0.4a", 
 "invocation": {
-"checksPerformed": [
-"MISSING_MANDATORY_KEY", 
-"MISSING_OPTIONAL_KEY", 
-"UNRECOGNIZED_KEY", 
-"MISSING_LIST_EXPECTED", 
-"DUPLICATING_SINGLETON_KEY", 
-"REFERENCED_ID_NOT_FOUND", 
-"REPEATED_ID", 
-"REPEATED_OTU", 
-"MULTIPLE_ROOT_NODES", 
-"NO_ROOT_NODE", 
-"MULTIPLE_EDGES_FOR_NODES", 
-"CYCLE_DETECTED", 
-"DISCONNECTED_GRAPH_DETECTED", 
-"INCORRECT_ROOT_NODE_LABEL", 
-"TIP_WITHOUT_OTU", 
-"TIP_WITHOUT_OTT_ID", 
-"MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
-"NON_MONOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
-"INVALID_PROPERTY_VALUE", 
-"PROPERTY_VALUE_NOT_USEFUL", 
-"UNRECOGNIZED_PROPERTY_VALUE", 
-"MULTIPLE_TREES", 
-"UNRECOGNIZED_TAG", 
-"CONFLICTING_PROPERTY_VALUES", 
-"NO_TREES", 
-"DEPRECATED_PROPERTY", 
-"UNPARSEABLE_META", 
-"UNREACHABLE_NODE", 
-"INCORRECT_VALUE_TYPE", 
-"MISSING_CRUCIAL_CONTENT"
-], 
 "commandLine": [
 "--embed", 
-"--agent-only", 
-"-e", 
-"../mig-phyelesystem-scratch/1769/validation.json", 
-"-o", 
-"../mig-phyelesystem-scratch/1769/final.json", 
-"../mig-phyelesystem-scratch/1769/v1.2.1-1769.json"
+"--agent-only"
 ], 
 "otherProperty": [
 {
@@ -76,12 +39,19 @@
 }
 ]
 }, 
+"^ot:annotationEvents": {
+"annotation": []
+}, 
+"^ot:candidateTreeForSynthesis": [], 
 "^ot:curatorName": "Chris Owen", 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S13478"
 }, 
 "^ot:focalClade": 1062202, 
 "^ot:focalCladeOTTTaxonName": "Microhylidae", 
+"^ot:messages": {
+"message": []
+}, 
 "^ot:otusElementOrder": [
 "otus1769"
 ], 
@@ -91,6 +61,7 @@
 }, 
 "^ot:studyPublicationReference": "de S\u00e1 R.O., Streicher J.W., Selenkoyela R., Forlani M.C., Loader S.P., Greenbaum E., Richards S., & Haddad C. 2012. Molecular phylogeny of microhylid frogs (Anura: Microhylidae) with emphasis on relationships among New World genera. BMC Evolutionary Biology 12: 241 .", 
 "^ot:studyYear": 2012, 
+"^ot:tag": [], 
 "^ot:treesElementOrder": [
 "trees1769"
 ], 
@@ -529,6 +500,8 @@
 }, 
 "otu276285": {
 "^ot:originalLabel": "Synapturanus mirandaribeiroi SMNS 12078", 
+"^ot:ottId": 1039939, 
+"^ot:ottTaxonName": "Synapturanus mirandaribeiroi", 
 "^ot:treebaseOTUId": "Tl915574"
 }, 
 "otu276286": {
@@ -659,6 +632,8 @@
 }, 
 "otu276307": {
 "^ot:originalLabel": "Synapturanus salseri 55", 
+"^ot:ottId": 656196, 
+"^ot:ottTaxonName": "Synapturanus salseri", 
 "^ot:treebaseOTUId": "Tl915596"
 }, 
 "otu276308": {
@@ -1131,6 +1106,8 @@
 }, 
 "otu276386": {
 "^ot:originalLabel": "Melanophryne_barbatula_T4", 
+"^ot:ottId": 222127, 
+"^ot:ottTaxonName": "Melanophryne sp. T4", 
 "^ot:treebaseOTUId": "Tl915675"
 }, 
 "otu276387": {
@@ -1303,6 +1280,8 @@
 }, 
 "otu276415": {
 "^ot:originalLabel": "Synapturanus MW 1004", 
+"^ot:ottId": 1039919, 
+"^ot:ottTaxonName": "Synapturanus", 
 "^ot:treebaseOTUId": "Tl915704"
 }, 
 "otu276416": {
@@ -1481,10 +1460,14 @@
 }, 
 "otu276445": {
 "^ot:originalLabel": "Synapturanus mirandaribeiroi SMNS", 
+"^ot:ottId": 1039939, 
+"^ot:ottTaxonName": "Synapturanus mirandaribeiroi", 
 "^ot:treebaseOTUId": "Tl915738"
 }, 
 "otu372936": {
-"^ot:originalLabel": "Melanophryne barbatula T4"
+"^ot:originalLabel": "Melanophryne barbatula T4", 
+"^ot:ottId": 4133675, 
+"^ot:ottTaxonName": "Melanophryne barbatula"
 }, 
 "otu372937": {
 "^ot:originalLabel": "Scaphiophryne 2002b24", 
@@ -1510,11 +1493,15 @@
 "treeById": {
 "tree3567": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
 "^ot:branchLengthMode": "ot:time", 
 "^ot:branchLengthTimeUnit": "Myr", 
 "^ot:curatedType": "Fig. 5", 
 "^ot:inGroupClade": "node685476", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node685476", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node685476": {
 "edge685477": {
@@ -2103,9 +2090,14 @@
 }, 
 "tree3568": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
 "^ot:branchLengthMode": "ot:bootstrapValues", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "Figs. 2-4", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node685549", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node685549": {
 "edge685550": {
@@ -5694,10 +5686,15 @@
 }, 
 "tree5618": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
 "^ot:branchLengthMode": "ot:substitutionCount", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "Figs. 2-4", 
 "^ot:inGroupClade": "node969410", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node969409", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node969409": {
 "edge969410": {

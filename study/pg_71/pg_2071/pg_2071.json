@@ -19,48 +19,11 @@
 "@id": "peyotl-validator", 
 "@name": "validate_ot_nexson.py", 
 "@url": "https://github.com/OpenTreeOfLife/peyotl", 
-"@version": "0.0.3a", 
+"@version": "0.0.4a", 
 "invocation": {
-"checksPerformed": [
-"MISSING_MANDATORY_KEY", 
-"MISSING_OPTIONAL_KEY", 
-"UNRECOGNIZED_KEY", 
-"MISSING_LIST_EXPECTED", 
-"DUPLICATING_SINGLETON_KEY", 
-"REFERENCED_ID_NOT_FOUND", 
-"REPEATED_ID", 
-"REPEATED_OTU", 
-"MULTIPLE_ROOT_NODES", 
-"NO_ROOT_NODE", 
-"MULTIPLE_EDGES_FOR_NODES", 
-"CYCLE_DETECTED", 
-"DISCONNECTED_GRAPH_DETECTED", 
-"INCORRECT_ROOT_NODE_LABEL", 
-"TIP_WITHOUT_OTU", 
-"TIP_WITHOUT_OTT_ID", 
-"MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
-"NON_MONOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
-"INVALID_PROPERTY_VALUE", 
-"PROPERTY_VALUE_NOT_USEFUL", 
-"UNRECOGNIZED_PROPERTY_VALUE", 
-"MULTIPLE_TREES", 
-"UNRECOGNIZED_TAG", 
-"CONFLICTING_PROPERTY_VALUES", 
-"NO_TREES", 
-"DEPRECATED_PROPERTY", 
-"UNPARSEABLE_META", 
-"UNREACHABLE_NODE", 
-"INCORRECT_VALUE_TYPE", 
-"MISSING_CRUCIAL_CONTENT"
-], 
 "commandLine": [
 "--embed", 
-"--agent-only", 
-"-e", 
-"../mig-phyelesystem-scratch/2071/validation.json", 
-"-o", 
-"../mig-phyelesystem-scratch/2071/final.json", 
-"../mig-phyelesystem-scratch/2071/v1.2.1-2071.json"
+"--agent-only"
 ], 
 "otherProperty": [
 {
@@ -76,12 +39,19 @@
 }
 ]
 }, 
+"^ot:annotationEvents": {
+"annotation": []
+}, 
+"^ot:candidateTreeForSynthesis": [], 
 "^ot:curatorName": "Chris Owen", 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S12851"
 }, 
 "^ot:focalClade": 87895, 
 "^ot:focalCladeOTTTaxonName": "Loricariidae", 
+"^ot:messages": {
+"message": []
+}, 
 "^ot:otusElementOrder": [
 "otus2071"
 ], 
@@ -91,6 +61,7 @@
 }, 
 "^ot:studyPublicationReference": "Armbruster J.W. 2004. Phylogenetic relationships of the suckermouth armoured catfishes (Loricariidae) with emphasis on the Hypostominae and the Ancistrinae. Zoological Journal of the Linnean Society, 141(1): 1-80.", 
 "^ot:studyYear": 2004, 
+"^ot:tag": [], 
 "^ot:treesElementOrder": [
 "trees2071"
 ], 
@@ -357,6 +328,8 @@
 }, 
 "otu310495": {
 "^ot:originalLabel": "Hemipsilichthys cameroni", 
+"^ot:ottId": 108989, 
+"^ot:ottTaxonName": "Pareiorhaphis calmoni", 
 "^ot:treebaseOTUId": "Tl816315"
 }, 
 "otu310496": {
@@ -457,6 +430,8 @@
 }, 
 "otu310512": {
 "^ot:originalLabel": "Rineloricaria rupestris", 
+"^ot:ottId": 3623061, 
+"^ot:ottTaxonName": "Fonchiiichthys rupestris", 
 "^ot:treebaseOTUId": "Tl816332"
 }, 
 "otu310513": {
@@ -711,6 +686,8 @@
 }, 
 "otu310555": {
 "^ot:originalLabel": "Panaque albomaculatus", 
+"^ot:ottId": 3623047, 
+"^ot:ottTaxonName": "Panaqolus albomaculatus", 
 "^ot:treebaseOTUId": "Tl816375"
 }, 
 "otu310556": {
@@ -828,9 +805,9 @@
 "^ot:treebaseOTUId": "Tl816394"
 }, 
 "otu310575": {
-"^ot:altLabel": "Microlepidogaster", 
 "^ot:originalLabel": "Microlepidogaster sp.", 
 "^ot:ottId": 949994, 
+"^ot:ottTaxonName": "Microlepidogaster", 
 "^ot:treebaseOTUId": "Tl816395"
 }, 
 "otu310576": {
@@ -869,9 +846,15 @@
 "treeById": {
 "tree4264": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "Figs. 36-38", 
 "^ot:inGroupClade": "node789050", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node789044", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node789044": {
 "edge789045": {

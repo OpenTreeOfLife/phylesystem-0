@@ -19,48 +19,11 @@
 "@id": "peyotl-validator", 
 "@name": "validate_ot_nexson.py", 
 "@url": "https://github.com/OpenTreeOfLife/peyotl", 
-"@version": "0.0.3a", 
+"@version": "0.0.4a", 
 "invocation": {
-"checksPerformed": [
-"MISSING_MANDATORY_KEY", 
-"MISSING_OPTIONAL_KEY", 
-"UNRECOGNIZED_KEY", 
-"MISSING_LIST_EXPECTED", 
-"DUPLICATING_SINGLETON_KEY", 
-"REFERENCED_ID_NOT_FOUND", 
-"REPEATED_ID", 
-"REPEATED_OTU", 
-"MULTIPLE_ROOT_NODES", 
-"NO_ROOT_NODE", 
-"MULTIPLE_EDGES_FOR_NODES", 
-"CYCLE_DETECTED", 
-"DISCONNECTED_GRAPH_DETECTED", 
-"INCORRECT_ROOT_NODE_LABEL", 
-"TIP_WITHOUT_OTU", 
-"TIP_WITHOUT_OTT_ID", 
-"MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
-"NON_MONOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
-"INVALID_PROPERTY_VALUE", 
-"PROPERTY_VALUE_NOT_USEFUL", 
-"UNRECOGNIZED_PROPERTY_VALUE", 
-"MULTIPLE_TREES", 
-"UNRECOGNIZED_TAG", 
-"CONFLICTING_PROPERTY_VALUES", 
-"NO_TREES", 
-"DEPRECATED_PROPERTY", 
-"UNPARSEABLE_META", 
-"UNREACHABLE_NODE", 
-"INCORRECT_VALUE_TYPE", 
-"MISSING_CRUCIAL_CONTENT"
-], 
 "commandLine": [
 "--embed", 
-"--agent-only", 
-"-e", 
-"../mig-phyelesystem-scratch/2540/validation.json", 
-"-o", 
-"../mig-phyelesystem-scratch/2540/final.json", 
-"../mig-phyelesystem-scratch/2540/v1.2.1-2540.json"
+"--agent-only"
 ], 
 "otherProperty": [
 {
@@ -76,18 +39,26 @@
 }
 ]
 }, 
+"^ot:annotationEvents": {
+"annotation": []
+}, 
+"^ot:candidateTreeForSynthesis": [], 
 "^ot:curatorName": "Romina Gazis", 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S2011"
 }, 
 "^ot:focalClade": 109689, 
 "^ot:focalCladeOTTTaxonName": "Cryphonectriaceae", 
+"^ot:messages": {
+"message": []
+}, 
 "^ot:otusElementOrder": [
 "otus2540"
 ], 
 "^ot:studyId": "2540", 
 "^ot:studyPublicationReference": "Gryzenhout, M., B. D. Wingfield, and M. J. Wingfield. \"Taxonomy, phylogeny, and ecology of bark-infecting and tree killing fungi in the Cryphonectriaceae.,(APS Press: St Paul, MN).\" (2009).", 
 "^ot:studyYear": 2009, 
+"^ot:tag": [], 
 "^ot:treesElementOrder": [
 "trees2540"
 ], 
@@ -96,6 +67,8 @@
 "otuById": {
 "otu364955": {
 "^ot:originalLabel": "Greeneria uvicola", 
+"^ot:ottId": 396956, 
+"^ot:ottTaxonName": "Phoma uvicola", 
 "^ot:treebaseOTUId": "Tl11960"
 }, 
 "otu364956": {
@@ -124,6 +97,8 @@
 }, 
 "otu364960": {
 "^ot:originalLabel": "Leucostoma cincta", 
+"^ot:ottId": 313690, 
+"^ot:ottTaxonName": "Valsaria insitiva", 
 "^ot:treebaseOTUId": "Tl11978"
 }, 
 "otu364961": {
@@ -150,6 +125,8 @@
 }, 
 "otu364965": {
 "^ot:originalLabel": "Ophiovalsa suffusa", 
+"^ot:ottId": 982558, 
+"^ot:ottTaxonName": "Cryptosporella suffusa", 
 "^ot:treebaseOTUId": "Tl11993"
 }, 
 "otu364966": {
@@ -182,6 +159,8 @@
 }, 
 "otu364971": {
 "^ot:originalLabel": "Diaporthe decedens", 
+"^ot:ottId": 5316669, 
+"^ot:ottTaxonName": "Allantoporthe decedens", 
 "^ot:treebaseOTUId": "Tl12013"
 }, 
 "otu364972": {
@@ -338,6 +317,8 @@
 }, 
 "otu365000": {
 "^ot:originalLabel": "Togninia fraxinopennsylvanica", 
+"^ot:ottId": 519058, 
+"^ot:ottTaxonName": "Phaeoacremonium mortoniae", 
 "^ot:treebaseOTUId": "Tl30832"
 }, 
 "otu365001": {
@@ -364,6 +345,8 @@
 }, 
 "otu365005": {
 "^ot:originalLabel": "Endothia gyrosa CMW10442 USA", 
+"^ot:ottId": 5316851, 
+"^ot:ottTaxonName": "Endothia radicalis", 
 "^ot:treebaseOTUId": "Tl31140"
 }, 
 "otu365006": {
@@ -470,6 +453,8 @@
 }, 
 "otu365023": {
 "^ot:originalLabel": "Endothia gyrosa CMW2091 USA", 
+"^ot:ottId": 5316851, 
+"^ot:ottTaxonName": "Endothia radicalis", 
 "^ot:treebaseOTUId": "Tl31169"
 }, 
 "otu365024": {
@@ -546,10 +531,14 @@
 }, 
 "otu365036": {
 "^ot:originalLabel": "Endothia gyrosa CMW10442", 
+"^ot:ottId": 5316851, 
+"^ot:ottTaxonName": "Endothia radicalis", 
 "^ot:treebaseOTUId": "Tl76917"
 }, 
 "otu365037": {
 "^ot:originalLabel": "Cryphonectria japonica CMW10786", 
+"^ot:ottId": 5316850, 
+"^ot:ottTaxonName": "Cryphonectria japonica", 
 "^ot:treebaseOTUId": "Tl76918"
 }, 
 "otu365038": {
@@ -662,6 +651,8 @@
 }, 
 "otu365056": {
 "^ot:originalLabel": "Endothia gyrosa CMW2091", 
+"^ot:ottId": 5316851, 
+"^ot:ottTaxonName": "Endothia radicalis", 
 "^ot:treebaseOTUId": "Tl76937"
 }, 
 "otu365057": {
@@ -672,6 +663,8 @@
 }, 
 "otu365058": {
 "^ot:originalLabel": "Celoporthe sp. CMW10781", 
+"^ot:ottId": 378625, 
+"^ot:ottTaxonName": "Celoporthe", 
 "^ot:treebaseOTUId": "Tl76939"
 }, 
 "otu365059": {
@@ -807,9 +800,15 @@
 "treeById": {
 "tree5467": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "NJ, LSU", 
 "^ot:inGroupClade": "node939640", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node939639", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node939639": {
 "edge939640": {
@@ -1942,9 +1941,15 @@
 }, 
 "tree5468": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "NJ, ITS + b-tub", 
 "^ot:inGroupClade": "node939804", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node939800", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node939800": {
 "edge939801": {

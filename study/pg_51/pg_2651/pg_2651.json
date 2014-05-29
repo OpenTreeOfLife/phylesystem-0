@@ -19,48 +19,11 @@
 "@id": "peyotl-validator", 
 "@name": "validate_ot_nexson.py", 
 "@url": "https://github.com/OpenTreeOfLife/peyotl", 
-"@version": "0.0.3a", 
+"@version": "0.0.4a", 
 "invocation": {
-"checksPerformed": [
-"MISSING_MANDATORY_KEY", 
-"MISSING_OPTIONAL_KEY", 
-"UNRECOGNIZED_KEY", 
-"MISSING_LIST_EXPECTED", 
-"DUPLICATING_SINGLETON_KEY", 
-"REFERENCED_ID_NOT_FOUND", 
-"REPEATED_ID", 
-"REPEATED_OTU", 
-"MULTIPLE_ROOT_NODES", 
-"NO_ROOT_NODE", 
-"MULTIPLE_EDGES_FOR_NODES", 
-"CYCLE_DETECTED", 
-"DISCONNECTED_GRAPH_DETECTED", 
-"INCORRECT_ROOT_NODE_LABEL", 
-"TIP_WITHOUT_OTU", 
-"TIP_WITHOUT_OTT_ID", 
-"MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
-"NON_MONOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
-"INVALID_PROPERTY_VALUE", 
-"PROPERTY_VALUE_NOT_USEFUL", 
-"UNRECOGNIZED_PROPERTY_VALUE", 
-"MULTIPLE_TREES", 
-"UNRECOGNIZED_TAG", 
-"CONFLICTING_PROPERTY_VALUES", 
-"NO_TREES", 
-"DEPRECATED_PROPERTY", 
-"UNPARSEABLE_META", 
-"UNREACHABLE_NODE", 
-"INCORRECT_VALUE_TYPE", 
-"MISSING_CRUCIAL_CONTENT"
-], 
 "commandLine": [
 "--embed", 
-"--agent-only", 
-"-e", 
-"../mig-phyelesystem-scratch/2651/validation.json", 
-"-o", 
-"../mig-phyelesystem-scratch/2651/final.json", 
-"../mig-phyelesystem-scratch/2651/v1.2.1-2651.json"
+"--agent-only"
 ], 
 "otherProperty": [
 {
@@ -76,9 +39,16 @@
 }
 ]
 }, 
+"^ot:annotationEvents": {
+"annotation": []
+}, 
+"^ot:candidateTreeForSynthesis": [], 
 "^ot:curatorName": "Joseph Brown", 
 "^ot:focalClade": 773483, 
 "^ot:focalCladeOTTTaxonName": "Actinopterygii", 
+"^ot:messages": {
+"message": []
+}, 
 "^ot:otusElementOrder": [
 "otus2651"
 ], 
@@ -88,6 +58,7 @@
 }, 
 "^ot:studyPublicationReference": "Ricardo Betancur-R., Richard E. Broughton, Edward O. Wiley, Kent Carpenter, J. Andr\u00e9s L\u00f3pez, Chenhong Li, Nancy I. Holcroft, Dahiana Arcila, Millicent Sanciangco, James C Cureton II, Feifei Zhang, Thaddaeus Buser, Matthew A. Campbell, Jesus A Ballesteros, Adela Roa-Varon, Stuart Willis, W. Calvin Borden, Thaine Rowley, Paulette C. Reneau, Daniel J. Hough, Guoqing Lu, Terry Grande, Gloria Arratia, Guillermo Ort\u00ed. 2013. The Tree of Life and a New Classification of Bony Fishes. PLoS Currents", 
 "^ot:studyYear": 2013, 
+"^ot:tag": [], 
 "^ot:treesElementOrder": [
 "trees2651"
 ], 
@@ -130,7 +101,9 @@
 "^ot:ottTaxonName": "Mus musculus"
 }, 
 "otu394789": {
-"^ot:originalLabel": "Homo sapiens"
+"^ot:originalLabel": "Homo sapiens", 
+"^ot:ottId": 770315, 
+"^ot:ottTaxonName": "Homo sapiens"
 }, 
 "otu394790": {
 "^ot:originalLabel": "Erpetoichthys calabaricus", 
@@ -373,22 +346,34 @@
 "^ot:ottTaxonName": "Ilisha elongata"
 }, 
 "otu394840": {
-"^ot:originalLabel": "Talismania bifurcata"
+"^ot:originalLabel": "Talismania bifurcata", 
+"^ot:ottId": 936132, 
+"^ot:ottTaxonName": "Talismania bifurcata"
 }, 
 "otu394841": {
-"^ot:originalLabel": "Bathylaco nigricans"
+"^ot:originalLabel": "Bathylaco nigricans", 
+"^ot:ottId": 329761, 
+"^ot:ottTaxonName": "Bathylaco nigricans"
 }, 
 "otu394842": {
-"^ot:originalLabel": "Alepocephalus tenebrosus"
+"^ot:originalLabel": "Alepocephalus tenebrosus", 
+"^ot:ottId": 1089079, 
+"^ot:ottTaxonName": "Alepocephalus tenebrosus"
 }, 
 "otu394843": {
-"^ot:originalLabel": "Alepocephalus agassizii"
+"^ot:originalLabel": "Alepocephalus agassizii", 
+"^ot:ottId": 783887, 
+"^ot:ottTaxonName": "Alepocephalus agassizii"
 }, 
 "otu394844": {
-"^ot:originalLabel": "Xenodermichthys copei"
+"^ot:originalLabel": "Xenodermichthys copei", 
+"^ot:ottId": 410272, 
+"^ot:ottTaxonName": "Xenodermichthys copei"
 }, 
 "otu394845": {
-"^ot:originalLabel": "Rouleina attrita"
+"^ot:originalLabel": "Rouleina attrita", 
+"^ot:ottId": 719321, 
+"^ot:ottTaxonName": "Rouleina attrita"
 }, 
 "otu394846": {
 "^ot:originalLabel": "Normichthys operosus", 
@@ -706,7 +691,9 @@
 "^ot:ottTaxonName": "Spintherobolus ankoseion"
 }, 
 "otu394911": {
-"^ot:originalLabel": "Astyanax mexicanus"
+"^ot:originalLabel": "Astyanax mexicanus", 
+"^ot:ottId": 701518, 
+"^ot:ottTaxonName": "Astyanax mexicanus"
 }, 
 "otu394912": {
 "^ot:originalLabel": "Nematobrycon palmeri", 
@@ -719,7 +706,9 @@
 "^ot:ottTaxonName": "Bryconamericus emperador"
 }, 
 "otu394914": {
-"^ot:originalLabel": "Markiana nigripinnis"
+"^ot:originalLabel": "Markiana nigripinnis", 
+"^ot:ottId": 679923, 
+"^ot:ottTaxonName": "Markiana nigripinnis"
 }, 
 "otu394915": {
 "^ot:originalLabel": "Nematogenys inermis", 
@@ -2118,7 +2107,9 @@
 "^ot:ottTaxonName": "Ostorhinchus cookii"
 }, 
 "otu395195": {
-"^ot:originalLabel": "Apogon lateralis"
+"^ot:originalLabel": "Apogon lateralis", 
+"^ot:ottId": 3635103, 
+"^ot:ottTaxonName": "Ostorhinchus lateralis"
 }, 
 "otu395196": {
 "^ot:originalLabel": "Archamia biguttata", 
@@ -2291,7 +2282,9 @@
 "^ot:ottTaxonName": "Valenciennea puellaris"
 }, 
 "otu395230": {
-"^ot:originalLabel": "Valenciennea strigata"
+"^ot:originalLabel": "Valenciennea strigata", 
+"^ot:ottId": 819087, 
+"^ot:ottTaxonName": "Valenciennea strigata"
 }, 
 "otu395231": {
 "^ot:originalLabel": "Priolepis cincta", 
@@ -3984,7 +3977,9 @@
 "^ot:ottTaxonName": "Valamugil buchanani"
 }, 
 "otu395571": {
-"^ot:originalLabel": "Congrogadus subducens"
+"^ot:originalLabel": "Congrogadus subducens", 
+"^ot:ottId": 1049970, 
+"^ot:ottTaxonName": "Congogradus subducens"
 }, 
 "otu395572": {
 "^ot:originalLabel": "Halidesmus scapularis", 
@@ -6120,7 +6115,9 @@
 "^ot:ottTaxonName": "Amblycirrhitus pinos"
 }, 
 "otu395999": {
-"^ot:originalLabel": "Neocirrhites armatus"
+"^ot:originalLabel": "Neocirrhites armatus", 
+"^ot:ottId": 702696, 
+"^ot:ottTaxonName": "Neocirrhites armatus"
 }, 
 "otu396000": {
 "^ot:originalLabel": "Cirrhitichthys oxycephalus", 
@@ -6148,13 +6145,19 @@
 "^ot:ottTaxonName": "Siniperca chuatsi"
 }, 
 "otu396005": {
-"^ot:originalLabel": "Elassoma okefenokee"
+"^ot:originalLabel": "Elassoma okefenokee", 
+"^ot:ottId": 777466, 
+"^ot:ottTaxonName": "Elassoma okefenokee"
 }, 
 "otu396006": {
-"^ot:originalLabel": "Elassoma zonatum"
+"^ot:originalLabel": "Elassoma zonatum", 
+"^ot:ottId": 777473, 
+"^ot:ottTaxonName": "Elassoma zonatum"
 }, 
 "otu396007": {
-"^ot:originalLabel": "Elassoma evergladei"
+"^ot:originalLabel": "Elassoma evergladei", 
+"^ot:ottId": 313433, 
+"^ot:ottTaxonName": "Elassoma evergladei"
 }, 
 "otu396008": {
 "^ot:originalLabel": "Acantharchus pomotis", 
@@ -6282,7 +6285,9 @@
 "^ot:ottTaxonName": "Aporops bilinearis"
 }, 
 "otu396033": {
-"^ot:originalLabel": "Pseudogramma polyacantha"
+"^ot:originalLabel": "Pseudogramma polyacantha", 
+"^ot:ottId": 207395, 
+"^ot:ottTaxonName": "Pseudogramma polyacantha"
 }, 
 "otu396034": {
 "^ot:originalLabel": "Rypticus subbifrenatus", 
@@ -7114,11 +7119,17 @@
 "treeById": {
 "tree6177": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
 "^ot:branchLengthMode": "ot:substitutionCount", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "ML majority-rule consensus", 
 "^ot:inGroupClade": "node1054907", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node1054890", 
-"^ot:tag": "ingroup added;", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [
+"ingroup added;"
+], 
 "edgeBySourceId": {
 "node1054890": {
 "edge1054891": {

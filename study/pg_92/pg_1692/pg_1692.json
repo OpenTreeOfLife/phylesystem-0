@@ -19,48 +19,11 @@
 "@id": "peyotl-validator", 
 "@name": "validate_ot_nexson.py", 
 "@url": "https://github.com/OpenTreeOfLife/peyotl", 
-"@version": "0.0.3a", 
+"@version": "0.0.4a", 
 "invocation": {
-"checksPerformed": [
-"MISSING_MANDATORY_KEY", 
-"MISSING_OPTIONAL_KEY", 
-"UNRECOGNIZED_KEY", 
-"MISSING_LIST_EXPECTED", 
-"DUPLICATING_SINGLETON_KEY", 
-"REFERENCED_ID_NOT_FOUND", 
-"REPEATED_ID", 
-"REPEATED_OTU", 
-"MULTIPLE_ROOT_NODES", 
-"NO_ROOT_NODE", 
-"MULTIPLE_EDGES_FOR_NODES", 
-"CYCLE_DETECTED", 
-"DISCONNECTED_GRAPH_DETECTED", 
-"INCORRECT_ROOT_NODE_LABEL", 
-"TIP_WITHOUT_OTU", 
-"TIP_WITHOUT_OTT_ID", 
-"MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
-"NON_MONOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
-"INVALID_PROPERTY_VALUE", 
-"PROPERTY_VALUE_NOT_USEFUL", 
-"UNRECOGNIZED_PROPERTY_VALUE", 
-"MULTIPLE_TREES", 
-"UNRECOGNIZED_TAG", 
-"CONFLICTING_PROPERTY_VALUES", 
-"NO_TREES", 
-"DEPRECATED_PROPERTY", 
-"UNPARSEABLE_META", 
-"UNREACHABLE_NODE", 
-"INCORRECT_VALUE_TYPE", 
-"MISSING_CRUCIAL_CONTENT"
-], 
 "commandLine": [
 "--embed", 
-"--agent-only", 
-"-e", 
-"../mig-phyelesystem-scratch/1692/validation.json", 
-"-o", 
-"../mig-phyelesystem-scratch/1692/final.json", 
-"../mig-phyelesystem-scratch/1692/v1.2.1-1692.json"
+"--agent-only"
 ], 
 "otherProperty": [
 {
@@ -76,12 +39,19 @@
 }
 ]
 }, 
+"^ot:annotationEvents": {
+"annotation": []
+}, 
+"^ot:candidateTreeForSynthesis": [], 
 "^ot:curatorName": "Romina Gazis", 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S577"
 }, 
 "^ot:focalClade": 728374, 
 "^ot:focalCladeOTTTaxonName": "Erysiphales", 
+"^ot:messages": {
+"message": []
+}, 
 "^ot:otusElementOrder": [
 "otus1692"
 ], 
@@ -91,6 +61,7 @@
 }, 
 "^ot:studyPublicationReference": "Mori Y., Sato Y., & Takamatsu S. 2000. Evolutionary analysis of the powdery mildew fungi using nucleotide sequences of the nuclear ribosomal DNA. Mycologia, 92(1): 74-93.", 
 "^ot:studyYear": 2000, 
+"^ot:tag": [], 
 "^ot:treesElementOrder": [
 "trees1692"
 ], 
@@ -177,6 +148,8 @@
 }, 
 "otu270919": {
 "^ot:originalLabel": "Erysiphe galeopsidis", 
+"^ot:ottId": 773763, 
+"^ot:ottTaxonName": "Neoerysiphe galeopsidis", 
 "^ot:treebaseOTUId": "Tl115363"
 }, 
 "otu270920": {
@@ -308,9 +281,15 @@
 "treeById": {
 "tree3409": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "NJ, LSU", 
 "^ot:inGroupClade": "node671525", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node671524", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node671524": {
 "edge671525": {
@@ -841,9 +820,15 @@
 }, 
 "tree3410": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "NJ, SSU", 
 "^ot:inGroupClade": "node671600", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node671599", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node671599": {
 "edge671600": {
@@ -1374,9 +1359,15 @@
 }, 
 "tree3411": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "NJ, SSU + LSU + 5.8S", 
 "^ot:inGroupClade": "node671675", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node671674", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node671674": {
 "edge671675": {
@@ -1907,10 +1898,17 @@
 }, 
 "tree3412": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "MP, SSU + 5.8S + LSU", 
 "^ot:inGroupClade": "node671750", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node671749", 
-"^ot:tag": "MP", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [
+"MP"
+], 
 "edgeBySourceId": {
 "node671749": {
 "edge671750": {
@@ -2441,9 +2439,15 @@
 }, 
 "tree3413": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "NJ, SSU + LSU + 5.8S", 
 "^ot:inGroupClade": "node671825", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node671824", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node671824": {
 "edge671825": {
@@ -2631,10 +2635,17 @@
 }, 
 "tree3414": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "NJ, SSU + LSU + 5.8S", 
 "^ot:inGroupClade": "node671851", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node671850", 
-"^ot:tag": "5.8S", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [
+"5.8S"
+], 
 "edgeBySourceId": {
 "node671850": {
 "edge671851": {

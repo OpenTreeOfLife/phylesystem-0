@@ -19,48 +19,11 @@
 "@id": "peyotl-validator", 
 "@name": "validate_ot_nexson.py", 
 "@url": "https://github.com/OpenTreeOfLife/peyotl", 
-"@version": "0.0.3a", 
+"@version": "0.0.4a", 
 "invocation": {
-"checksPerformed": [
-"MISSING_MANDATORY_KEY", 
-"MISSING_OPTIONAL_KEY", 
-"UNRECOGNIZED_KEY", 
-"MISSING_LIST_EXPECTED", 
-"DUPLICATING_SINGLETON_KEY", 
-"REFERENCED_ID_NOT_FOUND", 
-"REPEATED_ID", 
-"REPEATED_OTU", 
-"MULTIPLE_ROOT_NODES", 
-"NO_ROOT_NODE", 
-"MULTIPLE_EDGES_FOR_NODES", 
-"CYCLE_DETECTED", 
-"DISCONNECTED_GRAPH_DETECTED", 
-"INCORRECT_ROOT_NODE_LABEL", 
-"TIP_WITHOUT_OTU", 
-"TIP_WITHOUT_OTT_ID", 
-"MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
-"NON_MONOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
-"INVALID_PROPERTY_VALUE", 
-"PROPERTY_VALUE_NOT_USEFUL", 
-"UNRECOGNIZED_PROPERTY_VALUE", 
-"MULTIPLE_TREES", 
-"UNRECOGNIZED_TAG", 
-"CONFLICTING_PROPERTY_VALUES", 
-"NO_TREES", 
-"DEPRECATED_PROPERTY", 
-"UNPARSEABLE_META", 
-"UNREACHABLE_NODE", 
-"INCORRECT_VALUE_TYPE", 
-"MISSING_CRUCIAL_CONTENT"
-], 
 "commandLine": [
 "--embed", 
-"--agent-only", 
-"-e", 
-"../mig-phyelesystem-scratch/614/validation.json", 
-"-o", 
-"../mig-phyelesystem-scratch/614/final.json", 
-"../mig-phyelesystem-scratch/614/v1.2.1-614.json"
+"--agent-only"
 ], 
 "otherProperty": [
 {
@@ -76,12 +39,19 @@
 }
 ]
 }, 
+"^ot:annotationEvents": {
+"annotation": []
+}, 
+"^ot:candidateTreeForSynthesis": [], 
 "^ot:curatorName": "bryan drew", 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S956"
 }, 
 "^ot:focalClade": 216643, 
 "^ot:focalCladeOTTTaxonName": "Casuarinaceae", 
+"^ot:messages": {
+"message": []
+}, 
 "^ot:otusElementOrder": [
 "otus614"
 ], 
@@ -91,6 +61,7 @@
 }, 
 "^ot:studyPublicationReference": "Steane, D. A. [et al. 2003], Wilson, K. L., & Hill, R. S. 2003. Using matK sequence data to unravel the phylogeny of Casuarinaceae. Mol. Phyl. Evol. 28: 47-59.", 
 "^ot:studyYear": 2003, 
+"^ot:tag": [], 
 "^ot:treesElementOrder": [
 "trees614"
 ], 
@@ -98,25 +69,27 @@
 "otus614": {
 "otuById": {
 "otu177042": {
-"^ot:altLabel": "Allocasuarina acutivalvis", 
 "^ot:originalLabel": "Allocasuarina acutivalvis ac", 
 "^ot:ottId": 769753, 
+"^ot:ottTaxonName": "Allocasuarina acutivalvis", 
 "^ot:treebaseOTUId": "Tl12659"
 }, 
 "otu177043": {
 "^ot:originalLabel": "Allocasuarina eriochlamys", 
 "^ot:ottId": 246722, 
+"^ot:ottTaxonName": "Allocasuarina eriochlamys", 
 "^ot:treebaseOTUId": "Tl12660"
 }, 
 "otu177044": {
 "^ot:originalLabel": "Ceuthostoma terminale", 
 "^ot:ottId": 671340, 
+"^ot:ottTaxonName": "Ceuthostoma terminale", 
 "^ot:treebaseOTUId": "Tl12661"
 }, 
 "otu177045": {
-"^ot:altLabel": "Allocasuarina grevilleoides", 
 "^ot:originalLabel": "Allocasuarina grevilliodes", 
 "^ot:ottId": 821445, 
+"^ot:ottTaxonName": "Allocasuarina grevilleoides", 
 "^ot:treebaseOTUId": "Tl12662"
 }, 
 "otu177046": {
@@ -140,6 +113,7 @@
 "otu177049": {
 "^ot:originalLabel": "Allocasuarina fraseriana", 
 "^ot:ottId": 246740, 
+"^ot:ottTaxonName": "Allocasuarina fraseriana", 
 "^ot:treebaseOTUId": "Tl12666"
 }, 
 "otu177050": {
@@ -161,9 +135,9 @@
 "^ot:treebaseOTUId": "Tl12669"
 }, 
 "otu177053": {
-"^ot:altLabel": "Casuarina equisetifolia subsp. incana", 
 "^ot:originalLabel": "Casuarina equisetifolia incana", 
 "^ot:ottId": 396657, 
+"^ot:ottTaxonName": "Casuarina equisetifolia subsp. incana", 
 "^ot:treebaseOTUId": "Tl12670"
 }, 
 "otu177054": {
@@ -187,6 +161,7 @@
 "otu177057": {
 "^ot:originalLabel": "Gymnostoma australianum", 
 "^ot:ottId": 922608, 
+"^ot:ottTaxonName": "Gymnostoma australianum", 
 "^ot:treebaseOTUId": "Tl12674"
 }, 
 "otu177058": {
@@ -210,16 +185,19 @@
 "otu177061": {
 "^ot:originalLabel": "Allocasuarina gymnanthera", 
 "^ot:ottId": 821451, 
+"^ot:ottTaxonName": "Allocasuarina gymnanthera", 
 "^ot:treebaseOTUId": "Tl12678"
 }, 
 "otu177062": {
 "^ot:originalLabel": "Allocasuarina decaisneana", 
 "^ot:ottId": 370501, 
+"^ot:ottTaxonName": "Allocasuarina decaisneana", 
 "^ot:treebaseOTUId": "Tl12680"
 }, 
 "otu177063": {
 "^ot:originalLabel": "Allocasuarina verticillata", 
 "^ot:ottId": 79349, 
+"^ot:ottTaxonName": "Allocasuarina verticillata", 
 "^ot:treebaseOTUId": "Tl12681"
 }, 
 "otu177064": {
@@ -249,6 +227,7 @@
 "otu177068": {
 "^ot:originalLabel": "Allocasuarina decussata", 
 "^ot:ottId": 738934, 
+"^ot:ottTaxonName": "Allocasuarina decussata", 
 "^ot:treebaseOTUId": "Tl12686"
 }, 
 "otu177069": {
@@ -264,9 +243,9 @@
 "^ot:treebaseOTUId": "Tl12688"
 }, 
 "otu177071": {
-"^ot:altLabel": "Allocasuarina microstachya", 
 "^ot:originalLabel": "Allocasuarina microstachya 7b", 
 "^ot:ottId": 296910, 
+"^ot:ottTaxonName": "Allocasuarina microstachya", 
 "^ot:treebaseOTUId": "Tl12689"
 }, 
 "otu177072": {
@@ -276,9 +255,9 @@
 "^ot:treebaseOTUId": "Tl12690"
 }, 
 "otu177073": {
-"^ot:altLabel": "Allocasuarina acutivalvis", 
 "^ot:originalLabel": "Allocasuarina acutivalvis pr", 
 "^ot:ottId": 769753, 
+"^ot:ottTaxonName": "Allocasuarina acutivalvis", 
 "^ot:treebaseOTUId": "Tl12691"
 }, 
 "otu177074": {
@@ -314,6 +293,7 @@
 "otu177079": {
 "^ot:originalLabel": "Allocasuarina lehmanniana", 
 "^ot:ottId": 738928, 
+"^ot:ottTaxonName": "Allocasuarina lehmanniana", 
 "^ot:treebaseOTUId": "Tl12697"
 }, 
 "otu177080": {
@@ -323,9 +303,9 @@
 "^ot:treebaseOTUId": "Tl12698"
 }, 
 "otu177081": {
-"^ot:altLabel": "Gymnostoma sp. 'mesostrobilum'", 
 "^ot:originalLabel": "Gymnostoma mesostrobilum PhilCa", 
 "^ot:ottId": 922606, 
+"^ot:ottTaxonName": "Gymnostoma sp. 'mesostrobilum'", 
 "^ot:treebaseOTUId": "Tl12699"
 }, 
 "otu177082": {
@@ -349,11 +329,13 @@
 "otu177085": {
 "^ot:originalLabel": "Allocasuarina luehmannii", 
 "^ot:ottId": 821436, 
+"^ot:ottTaxonName": "Allocasuarina luehmannii", 
 "^ot:treebaseOTUId": "Tl12703"
 }, 
 "otu177086": {
 "^ot:originalLabel": "Allocasuarina tortiramula", 
 "^ot:ottId": 347521, 
+"^ot:ottTaxonName": "Allocasuarina tortiramula", 
 "^ot:treebaseOTUId": "Tl12704"
 }, 
 "otu177087": {
@@ -363,14 +345,15 @@
 "^ot:treebaseOTUId": "Tl12705"
 }, 
 "otu177088": {
-"^ot:altLabel": "Allocasuarina diminuta", 
 "^ot:originalLabel": "Allocasuarina diminuta diminuta", 
 "^ot:ottId": 246732, 
+"^ot:ottTaxonName": "Allocasuarina diminuta", 
 "^ot:treebaseOTUId": "Tl12706"
 }, 
 "otu177089": {
 "^ot:originalLabel": "Allocasuarina scleroclada", 
 "^ot:ottId": 872038, 
+"^ot:ottTaxonName": "Allocasuarina scleroclada", 
 "^ot:treebaseOTUId": "Tl12707"
 }, 
 "otu177090": {
@@ -382,6 +365,7 @@
 "otu177091": {
 "^ot:originalLabel": "Allocasuarina spinosissima", 
 "^ot:ottId": 872034, 
+"^ot:ottTaxonName": "Allocasuarina spinosissima", 
 "^ot:treebaseOTUId": "Tl12710"
 }, 
 "otu177092": {
@@ -393,6 +377,7 @@
 "otu177093": {
 "^ot:originalLabel": "Allocasuarina tessellata", 
 "^ot:ottId": 872032, 
+"^ot:ottTaxonName": "Allocasuarina tessellata", 
 "^ot:treebaseOTUId": "Tl12712"
 }, 
 "otu177094": {
@@ -410,6 +395,7 @@
 "otu177096": {
 "^ot:originalLabel": "Allocasuarina muelleriana", 
 "^ot:ottId": 79355, 
+"^ot:ottTaxonName": "Allocasuarina muelleriana", 
 "^ot:treebaseOTUId": "Tl12715"
 }, 
 "otu177097": {
@@ -439,6 +425,7 @@
 "otu177101": {
 "^ot:originalLabel": "Allocasuarina huegeliana", 
 "^ot:ottId": 821455, 
+"^ot:ottTaxonName": "Allocasuarina huegeliana", 
 "^ot:treebaseOTUId": "Tl12720"
 }, 
 "otu177102": {
@@ -456,22 +443,25 @@
 "otu177104": {
 "^ot:originalLabel": "Allocasuarina brachystachya", 
 "^ot:ottId": 769751, 
+"^ot:ottTaxonName": "Allocasuarina brachystachya", 
 "^ot:treebaseOTUId": "Tl12723"
 }, 
 "otu177105": {
 "^ot:originalLabel": "Allocasuarina inophloia", 
 "^ot:ottId": 821438, 
+"^ot:ottTaxonName": "Allocasuarina inophloia", 
 "^ot:treebaseOTUId": "Tl12724"
 }, 
 "otu177106": {
-"^ot:altLabel": "Allocasuarina thalassoscopica", 
 "^ot:originalLabel": "Allocasuarina thalassoscopic", 
 "^ot:ottId": 872030, 
+"^ot:ottTaxonName": "Allocasuarina thalassoscopica", 
 "^ot:treebaseOTUId": "Tl12725"
 }, 
 "otu177107": {
 "^ot:originalLabel": "Allocasuarina glareicola", 
 "^ot:ottId": 821443, 
+"^ot:ottTaxonName": "Allocasuarina glareicola", 
 "^ot:treebaseOTUId": "Tl12726"
 }, 
 "otu177108": {
@@ -483,6 +473,7 @@
 "otu177109": {
 "^ot:originalLabel": "Allocasuarina portuensis", 
 "^ot:ottId": 872046, 
+"^ot:ottTaxonName": "Allocasuarina portuensis", 
 "^ot:treebaseOTUId": "Tl12729"
 }, 
 "otu177110": {
@@ -534,9 +525,9 @@
 "^ot:treebaseOTUId": "Tl12737"
 }, 
 "otu177118": {
-"^ot:altLabel": "Allocasuarina microstachya", 
 "^ot:originalLabel": "Allocasuarina microstachya 7a", 
 "^ot:ottId": 296910, 
+"^ot:ottTaxonName": "Allocasuarina microstachya", 
 "^ot:treebaseOTUId": "Tl12738"
 }, 
 "otu177119": {
@@ -548,6 +539,7 @@
 "otu177120": {
 "^ot:originalLabel": "Allocasuarina corniculata", 
 "^ot:ottId": 769757, 
+"^ot:ottTaxonName": "Allocasuarina corniculata", 
 "^ot:treebaseOTUId": "Tl12740"
 }, 
 "otu177121": {
@@ -559,6 +551,7 @@
 "otu177122": {
 "^ot:originalLabel": "Nothofagus cunninghamii", 
 "^ot:ottId": 862659, 
+"^ot:ottTaxonName": "Nothofagus cunninghamii", 
 "^ot:treebaseOTUId": "Tl12742"
 }, 
 "otu177123": {
@@ -603,9 +596,15 @@
 "treeById": {
 "tree967": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "Fig. 2", 
 "^ot:inGroupClade": "node385882", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node385879", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node385879": {
 "edge385880": {

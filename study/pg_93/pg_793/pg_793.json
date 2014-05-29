@@ -19,48 +19,11 @@
 "@id": "peyotl-validator", 
 "@name": "validate_ot_nexson.py", 
 "@url": "https://github.com/OpenTreeOfLife/peyotl", 
-"@version": "0.0.3a", 
+"@version": "0.0.4a", 
 "invocation": {
-"checksPerformed": [
-"MISSING_MANDATORY_KEY", 
-"MISSING_OPTIONAL_KEY", 
-"UNRECOGNIZED_KEY", 
-"MISSING_LIST_EXPECTED", 
-"DUPLICATING_SINGLETON_KEY", 
-"REFERENCED_ID_NOT_FOUND", 
-"REPEATED_ID", 
-"REPEATED_OTU", 
-"MULTIPLE_ROOT_NODES", 
-"NO_ROOT_NODE", 
-"MULTIPLE_EDGES_FOR_NODES", 
-"CYCLE_DETECTED", 
-"DISCONNECTED_GRAPH_DETECTED", 
-"INCORRECT_ROOT_NODE_LABEL", 
-"TIP_WITHOUT_OTU", 
-"TIP_WITHOUT_OTT_ID", 
-"MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
-"NON_MONOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
-"INVALID_PROPERTY_VALUE", 
-"PROPERTY_VALUE_NOT_USEFUL", 
-"UNRECOGNIZED_PROPERTY_VALUE", 
-"MULTIPLE_TREES", 
-"UNRECOGNIZED_TAG", 
-"CONFLICTING_PROPERTY_VALUES", 
-"NO_TREES", 
-"DEPRECATED_PROPERTY", 
-"UNPARSEABLE_META", 
-"UNREACHABLE_NODE", 
-"INCORRECT_VALUE_TYPE", 
-"MISSING_CRUCIAL_CONTENT"
-], 
 "commandLine": [
 "--embed", 
-"--agent-only", 
-"-e", 
-"../mig-phyelesystem-scratch/793/validation.json", 
-"-o", 
-"../mig-phyelesystem-scratch/793/final.json", 
-"../mig-phyelesystem-scratch/793/v1.2.1-793.json"
+"--agent-only"
 ], 
 "otherProperty": [
 {
@@ -76,12 +39,19 @@
 }
 ]
 }, 
+"^ot:annotationEvents": {
+"annotation": []
+}, 
+"^ot:candidateTreeForSynthesis": [], 
 "^ot:curatorName": "Romina Gazis", 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S2050"
 }, 
 "^ot:focalClade": 439373, 
 "^ot:focalCladeOTTTaxonName": "Ascomycota", 
+"^ot:messages": {
+"message": []
+}, 
 "^ot:otusElementOrder": [
 "otus793"
 ], 
@@ -91,6 +61,7 @@
 }, 
 "^ot:studyPublicationReference": "Sung G., Jr G., & Spatafora J. 2008. The oldest fossil evidence of animal parasitism by fungi supports a Cretaceous radiation of fungal-arthropod symbioses. Molecular Phylogenetics and Evolution, 49(2): 495-502.", 
 "^ot:studyYear": 2008, 
+"^ot:tag": [], 
 "^ot:treesElementOrder": [
 "trees793"
 ], 
@@ -123,6 +94,8 @@
 }, 
 "otu195814": {
 "^ot:originalLabel": "Balansia pilulaeformis AEG 94-2", 
+"^ot:ottId": 4058948, 
+"^ot:ottTaxonName": "Balansiopsis piluliformis", 
 "^ot:treebaseOTUId": "Tl80022"
 }, 
 "otu195815": {
@@ -157,6 +130,8 @@
 }, 
 "otu195820": {
 "^ot:originalLabel": "Metarhizium album ARSEF 2082", 
+"^ot:ottId": 314588, 
+"^ot:ottTaxonName": "Metarhizium anisopliae", 
 "^ot:treebaseOTUId": "Tl80028"
 }, 
 "otu195821": {
@@ -335,6 +310,8 @@
 }, 
 "otu195850": {
 "^ot:originalLabel": "Pochonia gonioides CBS 891.72", 
+"^ot:ottId": 5317019, 
+"^ot:ottTaxonName": "Pochonia goniodes", 
 "^ot:treebaseOTUId": "Tl80058"
 }, 
 "otu195851": {
@@ -531,6 +508,8 @@
 }, 
 "otu195884": {
 "^ot:originalLabel": "Verticillium sp. CBS 102184", 
+"^ot:ottId": 365693, 
+"^ot:ottTaxonName": "Verticillium", 
 "^ot:treebaseOTUId": "Tl80092"
 }, 
 "otu195885": {
@@ -713,6 +692,8 @@
 }, 
 "otu195915": {
 "^ot:originalLabel": "Stilbocrea macrostoma CBS 114375", 
+"^ot:ottId": 5317047, 
+"^ot:ottTaxonName": "Hypocreopsis macrostoma", 
 "^ot:treebaseOTUId": "Tl80123"
 }, 
 "otu195916": {
@@ -978,8 +959,14 @@
 "treeById": {
 "tree1493": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "ML, SSU + LSU + EF-1 + RPB1 + RPB2", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node458676", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node458676": {
 "edge458677": {
@@ -3050,9 +3037,16 @@
 }, 
 "tree5659": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "ML, SSU + LSU + EF-1 + RPB1 + RPB2 (rooted)", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node976495", 
-"^ot:tag": "EF-1", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [
+"EF-1"
+], 
 "edgeBySourceId": {
 "node976495": {
 "edge976496": {

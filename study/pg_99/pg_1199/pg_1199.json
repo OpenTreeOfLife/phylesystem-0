@@ -19,48 +19,11 @@
 "@id": "peyotl-validator", 
 "@name": "validate_ot_nexson.py", 
 "@url": "https://github.com/OpenTreeOfLife/peyotl", 
-"@version": "0.0.3a", 
+"@version": "0.0.4a", 
 "invocation": {
-"checksPerformed": [
-"MISSING_MANDATORY_KEY", 
-"MISSING_OPTIONAL_KEY", 
-"UNRECOGNIZED_KEY", 
-"MISSING_LIST_EXPECTED", 
-"DUPLICATING_SINGLETON_KEY", 
-"REFERENCED_ID_NOT_FOUND", 
-"REPEATED_ID", 
-"REPEATED_OTU", 
-"MULTIPLE_ROOT_NODES", 
-"NO_ROOT_NODE", 
-"MULTIPLE_EDGES_FOR_NODES", 
-"CYCLE_DETECTED", 
-"DISCONNECTED_GRAPH_DETECTED", 
-"INCORRECT_ROOT_NODE_LABEL", 
-"TIP_WITHOUT_OTU", 
-"TIP_WITHOUT_OTT_ID", 
-"MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
-"NON_MONOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
-"INVALID_PROPERTY_VALUE", 
-"PROPERTY_VALUE_NOT_USEFUL", 
-"UNRECOGNIZED_PROPERTY_VALUE", 
-"MULTIPLE_TREES", 
-"UNRECOGNIZED_TAG", 
-"CONFLICTING_PROPERTY_VALUES", 
-"NO_TREES", 
-"DEPRECATED_PROPERTY", 
-"UNPARSEABLE_META", 
-"UNREACHABLE_NODE", 
-"INCORRECT_VALUE_TYPE", 
-"MISSING_CRUCIAL_CONTENT"
-], 
 "commandLine": [
 "--embed", 
-"--agent-only", 
-"-e", 
-"../mig-phyelesystem-scratch/1199/validation.json", 
-"-o", 
-"../mig-phyelesystem-scratch/1199/final.json", 
-"../mig-phyelesystem-scratch/1199/v1.2.1-1199.json"
+"--agent-only"
 ], 
 "otherProperty": [
 {
@@ -76,9 +39,16 @@
 }
 ]
 }, 
+"^ot:annotationEvents": {
+"annotation": []
+}, 
+"^ot:candidateTreeForSynthesis": [], 
 "^ot:curatorName": "Romina Gazis", 
 "^ot:focalClade": 971709, 
 "^ot:focalCladeOTTTaxonName": "Pezizomycotina", 
+"^ot:messages": {
+"message": []
+}, 
 "^ot:otusElementOrder": [
 "otus1199"
 ], 
@@ -88,6 +58,7 @@
 }, 
 "^ot:studyPublicationReference": "Crous, P. W., B. A. Summerell, R. G. Shivas, M. Romberg, V. A. Mel\u2019nik, G. J. M. Verkley, and J. Z. Groenewald. \"Fungal Planet description sheets: 92\u2013106.\" Persoonia: Molecular Phylogeny and Evolution of Fungi 27 (2011): 130.", 
 "^ot:studyYear": 2011, 
+"^ot:tag": [], 
 "^ot:treesElementOrder": [
 "trees1199"
 ], 
@@ -148,7 +119,9 @@
 "^ot:ottTaxonName": "Cercosporella virgaureae"
 }, 
 "otu231509": {
-"^ot:originalLabel": "Passalora graminis GU214666"
+"^ot:originalLabel": "Passalora graminis GU214666", 
+"^ot:ottId": 1059819, 
+"^ot:ottTaxonName": "Mycosphaerella recutita"
 }, 
 "otu231510": {
 "^ot:originalLabel": "Scorias spongiosa GU214696", 
@@ -161,7 +134,9 @@
 "^ot:ottTaxonName": "Scorias leucadendri"
 }, 
 "otu231512": {
-"^ot:originalLabel": "Cladophialophora hachijoensis AF050263"
+"^ot:originalLabel": "Cladophialophora hachijoensis AF050263", 
+"^ot:ottId": 274721, 
+"^ot:ottTaxonName": "Venturia hystrioides"
 }, 
 "otu231513": {
 "^ot:originalLabel": "Phaeomoniella niveniae CPC 18231", 
@@ -231,7 +206,9 @@
 "^ot:ottTaxonName": "Pleospora iqbalii"
 }, 
 "otu231528": {
-"^ot:originalLabel": "Massarina corticola FJ795448"
+"^ot:originalLabel": "Massarina corticola FJ795448", 
+"^ot:ottId": 781340, 
+"^ot:ottTaxonName": "Lophiostoma corticola"
 }, 
 "otu231529": {
 "^ot:originalLabel": "Exosporium stylobatum CBS 160.30"
@@ -253,7 +230,9 @@
 "^ot:ottTaxonName": "Corynespora olivacea"
 }, 
 "otu231534": {
-"^ot:originalLabel": "Marssonia populi FJ755256"
+"^ot:originalLabel": "Marssonia populi FJ755256", 
+"^ot:ottId": 5309209, 
+"^ot:ottTaxonName": "Drepanopeziza populorum"
 }, 
 "otu231535": {
 "^ot:originalLabel": "Phoma brasiliensis GU238049", 
@@ -408,9 +387,15 @@
 "treeById": {
 "tree2420": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "NJ, LSU", 
 "^ot:inGroupClade": "node562099", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node562097", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node562097": {
 "edge562098": {

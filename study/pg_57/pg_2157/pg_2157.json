@@ -19,48 +19,11 @@
 "@id": "peyotl-validator", 
 "@name": "validate_ot_nexson.py", 
 "@url": "https://github.com/OpenTreeOfLife/peyotl", 
-"@version": "0.0.3a", 
+"@version": "0.0.4a", 
 "invocation": {
-"checksPerformed": [
-"MISSING_MANDATORY_KEY", 
-"MISSING_OPTIONAL_KEY", 
-"UNRECOGNIZED_KEY", 
-"MISSING_LIST_EXPECTED", 
-"DUPLICATING_SINGLETON_KEY", 
-"REFERENCED_ID_NOT_FOUND", 
-"REPEATED_ID", 
-"REPEATED_OTU", 
-"MULTIPLE_ROOT_NODES", 
-"NO_ROOT_NODE", 
-"MULTIPLE_EDGES_FOR_NODES", 
-"CYCLE_DETECTED", 
-"DISCONNECTED_GRAPH_DETECTED", 
-"INCORRECT_ROOT_NODE_LABEL", 
-"TIP_WITHOUT_OTU", 
-"TIP_WITHOUT_OTT_ID", 
-"MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
-"NON_MONOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
-"INVALID_PROPERTY_VALUE", 
-"PROPERTY_VALUE_NOT_USEFUL", 
-"UNRECOGNIZED_PROPERTY_VALUE", 
-"MULTIPLE_TREES", 
-"UNRECOGNIZED_TAG", 
-"CONFLICTING_PROPERTY_VALUES", 
-"NO_TREES", 
-"DEPRECATED_PROPERTY", 
-"UNPARSEABLE_META", 
-"UNREACHABLE_NODE", 
-"INCORRECT_VALUE_TYPE", 
-"MISSING_CRUCIAL_CONTENT"
-], 
 "commandLine": [
 "--embed", 
-"--agent-only", 
-"-e", 
-"../mig-phyelesystem-scratch/2157/validation.json", 
-"-o", 
-"../mig-phyelesystem-scratch/2157/final.json", 
-"../mig-phyelesystem-scratch/2157/v1.2.1-2157.json"
+"--agent-only"
 ], 
 "otherProperty": [
 {
@@ -76,12 +39,19 @@
 }
 ]
 }, 
+"^ot:annotationEvents": {
+"annotation": []
+}, 
+"^ot:candidateTreeForSynthesis": [], 
 "^ot:curatorName": "Chris Owen", 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S10064"
 }, 
 "^ot:focalClade": 1042378, 
 "^ot:focalCladeOTTTaxonName": "Diopatra", 
+"^ot:messages": {
+"message": []
+}, 
 "^ot:otusElementOrder": [
 "otus2157"
 ], 
@@ -91,6 +61,7 @@
 }, 
 "^ot:studyPublicationReference": "Berke S., Mahon A., Lima F., Halanych K., Wethey D., & Woodin S. 2010. Range shifts and species diversity in marine ecosystem engineers: patterns and predictions for European sedimentary habitats. Global Ecology and Biogeography, 19(2): 223-232.", 
 "^ot:studyYear": 2010, 
+"^ot:tag": [], 
 "^ot:treesElementOrder": [
 "trees2157"
 ], 
@@ -236,9 +207,9 @@
 "^ot:treebaseOTUId": "Tl244434"
 }, 
 "otu316646": {
-"^ot:altLabel": "Diopatra neapolitana", 
 "^ot:originalLabel": "Diopatra neapolitana MED4", 
 "^ot:ottId": 356114, 
+"^ot:ottTaxonName": "Diopatra neapolitana", 
 "^ot:treebaseOTUId": "Tl244435"
 }, 
 "otu316647": {
@@ -248,9 +219,9 @@
 "^ot:treebaseOTUId": "Tl244436"
 }, 
 "otu316648": {
-"^ot:altLabel": "Diopatra neapolitana", 
 "^ot:originalLabel": "Diopatra neapolitana MED2", 
 "^ot:ottId": 356114, 
+"^ot:ottTaxonName": "Diopatra neapolitana", 
 "^ot:treebaseOTUId": "Tl244437"
 }, 
 "otu316649": {
@@ -704,9 +675,9 @@
 "^ot:treebaseOTUId": "Tl244512"
 }, 
 "otu316724": {
-"^ot:altLabel": "Diopatra neapolitana", 
 "^ot:originalLabel": "Diopatra neapolitana MED3", 
 "^ot:ottId": 356114, 
+"^ot:ottTaxonName": "Diopatra neapolitana", 
 "^ot:treebaseOTUId": "Tl244513"
 }, 
 "otu316725": {
@@ -788,9 +759,9 @@
 "^ot:treebaseOTUId": "Tl244526"
 }, 
 "otu316738": {
-"^ot:altLabel": "Diopatra neapolitana", 
 "^ot:originalLabel": "Diopatra neapolitana MED1", 
 "^ot:ottId": 356114, 
+"^ot:ottTaxonName": "Diopatra neapolitana", 
 "^ot:treebaseOTUId": "Tl244527"
 }, 
 "otu316739": {
@@ -889,10 +860,15 @@
 "treeById": {
 "tree4550": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
 "^ot:branchLengthMode": "ot:substitutionCount", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "Fig. 2 BI", 
 "^ot:inGroupClade": "node813443", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node813443", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node813443": {
 "edge813444": {

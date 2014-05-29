@@ -19,48 +19,11 @@
 "@id": "peyotl-validator", 
 "@name": "validate_ot_nexson.py", 
 "@url": "https://github.com/OpenTreeOfLife/peyotl", 
-"@version": "0.0.3a", 
+"@version": "0.0.4a", 
 "invocation": {
-"checksPerformed": [
-"MISSING_MANDATORY_KEY", 
-"MISSING_OPTIONAL_KEY", 
-"UNRECOGNIZED_KEY", 
-"MISSING_LIST_EXPECTED", 
-"DUPLICATING_SINGLETON_KEY", 
-"REFERENCED_ID_NOT_FOUND", 
-"REPEATED_ID", 
-"REPEATED_OTU", 
-"MULTIPLE_ROOT_NODES", 
-"NO_ROOT_NODE", 
-"MULTIPLE_EDGES_FOR_NODES", 
-"CYCLE_DETECTED", 
-"DISCONNECTED_GRAPH_DETECTED", 
-"INCORRECT_ROOT_NODE_LABEL", 
-"TIP_WITHOUT_OTU", 
-"TIP_WITHOUT_OTT_ID", 
-"MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
-"NON_MONOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
-"INVALID_PROPERTY_VALUE", 
-"PROPERTY_VALUE_NOT_USEFUL", 
-"UNRECOGNIZED_PROPERTY_VALUE", 
-"MULTIPLE_TREES", 
-"UNRECOGNIZED_TAG", 
-"CONFLICTING_PROPERTY_VALUES", 
-"NO_TREES", 
-"DEPRECATED_PROPERTY", 
-"UNPARSEABLE_META", 
-"UNREACHABLE_NODE", 
-"INCORRECT_VALUE_TYPE", 
-"MISSING_CRUCIAL_CONTENT"
-], 
 "commandLine": [
 "--embed", 
-"--agent-only", 
-"-e", 
-"../mig-phyelesystem-scratch/1161/validation.json", 
-"-o", 
-"../mig-phyelesystem-scratch/1161/final.json", 
-"../mig-phyelesystem-scratch/1161/v1.2.1-1161.json"
+"--agent-only"
 ], 
 "otherProperty": [
 {
@@ -76,9 +39,16 @@
 }
 ]
 }, 
+"^ot:annotationEvents": {
+"annotation": []
+}, 
+"^ot:candidateTreeForSynthesis": [], 
 "^ot:curatorName": "Romina Gazis", 
 "^ot:focalClade": 676162, 
 "^ot:focalCladeOTTTaxonName": "Geotrichum", 
+"^ot:messages": {
+"message": []
+}, 
 "^ot:otusElementOrder": [
 "otus1161"
 ], 
@@ -88,6 +58,7 @@
 }, 
 "^ot:studyPublicationReference": "Suh, Sung-Oui, and Meredith Blackwell. \"Three new asexual arthroconidial yeasts,< i> Geotrichum carabidarum</i> sp. nov.,< i> Geotrichum histeridarum</i> sp. nov., and< i> Geotrichum cucujoidarum</i> sp. nov., isolated from the gut of insects.\" Mycological research 110.2 (2006): 220-228.", 
 "^ot:studyYear": 2006, 
+"^ot:tag": [], 
 "^ot:treesElementOrder": [
 "trees1161"
 ], 
@@ -95,7 +66,9 @@
 "otus1161": {
 "otuById": {
 "otu228532": {
-"^ot:originalLabel": "Pichia membranafaciens"
+"^ot:originalLabel": "Pichia membranafaciens", 
+"^ot:ottId": 334010, 
+"^ot:ottTaxonName": "Pichia membranifaciens"
 }, 
 "otu228533": {
 "^ot:originalLabel": "Candida picachoensis", 
@@ -123,7 +96,9 @@
 "^ot:ottTaxonName": "Magnusiomyces ovetensis"
 }, 
 "otu228538": {
-"^ot:originalLabel": "Magnusiomyces starmeri"
+"^ot:originalLabel": "Magnusiomyces starmeri", 
+"^ot:ottId": 5303636, 
+"^ot:ottTaxonName": "Magnusiomyces starmeri"
 }, 
 "otu228539": {
 "^ot:originalLabel": "Magnusiomyces ingens Y 10929", 
@@ -141,7 +116,9 @@
 "^ot:ottTaxonName": "Magnusiomyces magnusii"
 }, 
 "otu228542": {
-"^ot:originalLabel": "Saprochaete suaveolens"
+"^ot:originalLabel": "Saprochaete suaveolens", 
+"^ot:ottId": 5303648, 
+"^ot:ottTaxonName": "Saprochaete suaveolens"
 }, 
 "otu228543": {
 "^ot:originalLabel": "Dipodascus tetrasperma", 
@@ -154,7 +131,9 @@
 "^ot:ottTaxonName": "Magnusiomyces spicifer"
 }, 
 "otu228545": {
-"^ot:originalLabel": "Saprochaete clavata"
+"^ot:originalLabel": "Saprochaete clavata", 
+"^ot:ottId": 5303651, 
+"^ot:ottTaxonName": "Saprochaete clavata"
 }, 
 "otu228546": {
 "^ot:originalLabel": "Magnusiomyces capitatus", 
@@ -177,7 +156,9 @@
 "^ot:ottTaxonName": "Dipodascus geniculatus"
 }, 
 "otu228550": {
-"^ot:originalLabel": "Galactomyces geotrichum"
+"^ot:originalLabel": "Galactomyces geotrichum", 
+"^ot:ottId": 60018, 
+"^ot:ottTaxonName": "Geotrichum candidum"
 }, 
 "otu228551": {
 "^ot:originalLabel": "Galactomyces reessii", 
@@ -185,7 +166,9 @@
 "^ot:ottTaxonName": "Galactomyces reessii"
 }, 
 "otu228552": {
-"^ot:originalLabel": "Galactomyces citri aurantii"
+"^ot:originalLabel": "Galactomyces citri aurantii", 
+"^ot:ottId": 60018, 
+"^ot:ottTaxonName": "Geotrichum candidum"
 }, 
 "otu228553": {
 "^ot:originalLabel": "Geotrichum silvicola", 
@@ -279,9 +262,15 @@
 "treeById": {
 "tree2351": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "MP, LSU", 
 "^ot:inGroupClade": "node555061", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node555059", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node555059": {
 "edge555060": {

@@ -19,48 +19,11 @@
 "@id": "peyotl-validator", 
 "@name": "validate_ot_nexson.py", 
 "@url": "https://github.com/OpenTreeOfLife/peyotl", 
-"@version": "0.0.3a", 
+"@version": "0.0.4a", 
 "invocation": {
-"checksPerformed": [
-"MISSING_MANDATORY_KEY", 
-"MISSING_OPTIONAL_KEY", 
-"UNRECOGNIZED_KEY", 
-"MISSING_LIST_EXPECTED", 
-"DUPLICATING_SINGLETON_KEY", 
-"REFERENCED_ID_NOT_FOUND", 
-"REPEATED_ID", 
-"REPEATED_OTU", 
-"MULTIPLE_ROOT_NODES", 
-"NO_ROOT_NODE", 
-"MULTIPLE_EDGES_FOR_NODES", 
-"CYCLE_DETECTED", 
-"DISCONNECTED_GRAPH_DETECTED", 
-"INCORRECT_ROOT_NODE_LABEL", 
-"TIP_WITHOUT_OTU", 
-"TIP_WITHOUT_OTT_ID", 
-"MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
-"NON_MONOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
-"INVALID_PROPERTY_VALUE", 
-"PROPERTY_VALUE_NOT_USEFUL", 
-"UNRECOGNIZED_PROPERTY_VALUE", 
-"MULTIPLE_TREES", 
-"UNRECOGNIZED_TAG", 
-"CONFLICTING_PROPERTY_VALUES", 
-"NO_TREES", 
-"DEPRECATED_PROPERTY", 
-"UNPARSEABLE_META", 
-"UNREACHABLE_NODE", 
-"INCORRECT_VALUE_TYPE", 
-"MISSING_CRUCIAL_CONTENT"
-], 
 "commandLine": [
 "--embed", 
-"--agent-only", 
-"-e", 
-"../mig-phyelesystem-scratch/2461/validation.json", 
-"-o", 
-"../mig-phyelesystem-scratch/2461/final.json", 
-"../mig-phyelesystem-scratch/2461/v1.2.1-2461.json"
+"--agent-only"
 ], 
 "otherProperty": [
 {
@@ -76,12 +39,19 @@
 }
 ]
 }, 
+"^ot:annotationEvents": {
+"annotation": []
+}, 
+"^ot:candidateTreeForSynthesis": [], 
 "^ot:curatorName": "Chris Owen", 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S378"
 }, 
 "^ot:focalClade": 34905, 
 "^ot:focalCladeOTTTaxonName": "Drosophilidae", 
+"^ot:messages": {
+"message": []
+}, 
 "^ot:otusElementOrder": [
 "otus2461"
 ], 
@@ -89,8 +59,9 @@
 "^ot:studyPublication": {
 "@href": "http://dx.doi.org/10.1093/sysbio/46.4.654"
 }, 
-"^ot:studyPublicationReference": "Baker R., & Desalle R. 1997. Multiple sources of character information and the phylogeny of Hawaiian Drosophilids. Systematic Biology, 46(4): 654-673.", 
+"^ot:studyPublicationReference": "Baker, R., & Desalle R. 1997. Multiple sources of character information and the phylogeny of Hawaiian Drosophilids. Systematic Biology 46 (4): 654-673.", 
 "^ot:studyYear": 1997, 
+"^ot:tag": [], 
 "^ot:treesElementOrder": [
 "trees2461"
 ], 
@@ -189,6 +160,8 @@
 }, 
 "otu357833": {
 "^ot:originalLabel": "Drosophila soonae", 
+"^ot:ottId": 221734, 
+"^ot:ottTaxonName": "Drosophila soonae", 
 "^ot:treebaseOTUId": "Tl63253"
 }, 
 "otu357834": {
@@ -204,248 +177,22 @@
 "trees2461": {
 "@otus": "otus2461", 
 "^ot:treeElementOrder": [
-"tree5286", 
 "tree5287", 
 "tree5288", 
-"tree5289"
+"tree5289", 
+"tree6655"
 ], 
 "treeById": {
-"tree5286": {
-"@xsi:type": "nex:FloatTree", 
-"^ot:curatedType": "Fig. 2- MP", 
-"^ot:inGroupClade": "node920376", 
-"^ot:rootNodeId": "node920376", 
-"edgeBySourceId": {
-"node920376": {
-"edge920377": {
-"@source": "node920376", 
-"@target": "node920377"
-}, 
-"edge920402": {
-"@source": "node920376", 
-"@target": "node920402"
-}, 
-"edge920405": {
-"@source": "node920376", 
-"@target": "node920405"
-}
-}, 
-"node920377": {
-"edge920378": {
-"@source": "node920377", 
-"@target": "node920378"
-}, 
-"edge920399": {
-"@source": "node920377", 
-"@target": "node920399"
-}
-}, 
-"node920378": {
-"edge920379": {
-"@source": "node920378", 
-"@target": "node920379"
-}, 
-"edge920392": {
-"@source": "node920378", 
-"@target": "node920392"
-}
-}, 
-"node920379": {
-"edge920380": {
-"@source": "node920379", 
-"@target": "node920380"
-}, 
-"edge920389": {
-"@source": "node920379", 
-"@target": "node920389"
-}
-}, 
-"node920380": {
-"edge920381": {
-"@source": "node920380", 
-"@target": "node920381"
-}, 
-"edge920382": {
-"@source": "node920380", 
-"@target": "node920382"
-}
-}, 
-"node920382": {
-"edge920383": {
-"@source": "node920382", 
-"@target": "node920383"
-}, 
-"edge920386": {
-"@source": "node920382", 
-"@target": "node920386"
-}
-}, 
-"node920383": {
-"edge920384": {
-"@source": "node920383", 
-"@target": "node920384"
-}, 
-"edge920385": {
-"@source": "node920383", 
-"@target": "node920385"
-}
-}, 
-"node920386": {
-"edge920387": {
-"@source": "node920386", 
-"@target": "node920387"
-}, 
-"edge920388": {
-"@source": "node920386", 
-"@target": "node920388"
-}
-}, 
-"node920389": {
-"edge920390": {
-"@source": "node920389", 
-"@target": "node920390"
-}, 
-"edge920391": {
-"@source": "node920389", 
-"@target": "node920391"
-}
-}, 
-"node920392": {
-"edge920393": {
-"@source": "node920392", 
-"@target": "node920393"
-}, 
-"edge920396": {
-"@source": "node920392", 
-"@target": "node920396"
-}
-}, 
-"node920393": {
-"edge920394": {
-"@source": "node920393", 
-"@target": "node920394"
-}, 
-"edge920395": {
-"@source": "node920393", 
-"@target": "node920395"
-}
-}, 
-"node920396": {
-"edge920397": {
-"@source": "node920396", 
-"@target": "node920397"
-}, 
-"edge920398": {
-"@source": "node920396", 
-"@target": "node920398"
-}
-}, 
-"node920399": {
-"edge920400": {
-"@source": "node920399", 
-"@target": "node920400"
-}, 
-"edge920401": {
-"@source": "node920399", 
-"@target": "node920401"
-}
-}, 
-"node920402": {
-"edge920403": {
-"@source": "node920402", 
-"@target": "node920403"
-}, 
-"edge920404": {
-"@source": "node920402", 
-"@target": "node920404"
-}
-}, 
-"node920405": {
-"edge920406": {
-"@source": "node920405", 
-"@target": "node920406"
-}, 
-"edge920407": {
-"@source": "node920405", 
-"@target": "node920407"
-}
-}
-}, 
-"nodeById": {
-"node920376": {
-"@root": true
-}, 
-"node920377": {}, 
-"node920378": {}, 
-"node920379": {}, 
-"node920380": {}, 
-"node920381": {
-"@otu": "otu357829"
-}, 
-"node920382": {}, 
-"node920383": {}, 
-"node920384": {
-"@otu": "otu357832"
-}, 
-"node920385": {
-"@otu": "otu357821"
-}, 
-"node920386": {}, 
-"node920387": {
-"@otu": "otu357825"
-}, 
-"node920388": {
-"@otu": "otu357824"
-}, 
-"node920389": {}, 
-"node920390": {
-"@otu": "otu357828"
-}, 
-"node920391": {
-"@otu": "otu357833"
-}, 
-"node920392": {}, 
-"node920393": {}, 
-"node920394": {
-"@otu": "otu357819"
-}, 
-"node920395": {
-"@otu": "otu357823"
-}, 
-"node920396": {}, 
-"node920397": {
-"@otu": "otu357820"
-}, 
-"node920398": {
-"@otu": "otu357827"
-}, 
-"node920399": {}, 
-"node920400": {
-"@otu": "otu357831"
-}, 
-"node920401": {
-"@otu": "otu357826"
-}, 
-"node920402": {}, 
-"node920403": {
-"@otu": "otu357822"
-}, 
-"node920404": {
-"@otu": "otu357834"
-}, 
-"node920405": {}, 
-"node920406": {
-"@otu": "otu357830"
-}, 
-"node920407": {
-"@otu": "otu357818"
-}
-}
-}, 
 "tree5287": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "Fig. 4a- MP", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node920408", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node920408": {
 "edge920409": {
@@ -661,8 +408,14 @@
 }, 
 "tree5288": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "Fig. 4b- MP", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node920438", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node920438": {
 "edge920439": {
@@ -878,8 +631,14 @@
 }, 
 "tree5289": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "Fig. 8- MP", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node920468", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node920468": {
 "edge920469": {
@@ -1097,6 +856,251 @@
 }, 
 "node920498": {
 "@otu": "otu357830"
+}
+}
+}, 
+"tree6655": {
+"@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
+"^ot:curatedType": "Fig. 2 MP", 
+"^ot:inGroupClade": "node1160913", 
+"^ot:outGroupEdge": "", 
+"^ot:rootNodeId": "node1160911", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
+"edgeBySourceId": {
+"node1160911": {
+"edge1160912": {
+"@source": "node1160911", 
+"@target": "node1160912"
+}, 
+"edge1160941": {
+"@source": "node1160911", 
+"@target": "node1160941"
+}
+}, 
+"node1160912": {
+"edge1160913": {
+"@source": "node1160912", 
+"@target": "node1160913"
+}, 
+"edge1160938": {
+"@source": "node1160912", 
+"@target": "node1160938"
+}
+}, 
+"node1160913": {
+"edge1160914": {
+"@source": "node1160913", 
+"@target": "node1160914"
+}, 
+"edge1160935": {
+"@source": "node1160913", 
+"@target": "node1160935"
+}
+}, 
+"node1160914": {
+"edge1160915": {
+"@source": "node1160914", 
+"@target": "node1160915"
+}, 
+"edge1160928": {
+"@source": "node1160914", 
+"@target": "node1160928"
+}
+}, 
+"node1160915": {
+"edge1160916": {
+"@source": "node1160915", 
+"@target": "node1160916"
+}, 
+"edge1160925": {
+"@source": "node1160915", 
+"@target": "node1160925"
+}
+}, 
+"node1160916": {
+"edge1160917": {
+"@source": "node1160916", 
+"@target": "node1160917"
+}, 
+"edge1160918": {
+"@source": "node1160916", 
+"@target": "node1160918"
+}
+}, 
+"node1160918": {
+"edge1160919": {
+"@source": "node1160918", 
+"@target": "node1160919"
+}, 
+"edge1160922": {
+"@source": "node1160918", 
+"@target": "node1160922"
+}
+}, 
+"node1160919": {
+"edge1160920": {
+"@source": "node1160919", 
+"@target": "node1160920"
+}, 
+"edge1160921": {
+"@source": "node1160919", 
+"@target": "node1160921"
+}
+}, 
+"node1160922": {
+"edge1160923": {
+"@source": "node1160922", 
+"@target": "node1160923"
+}, 
+"edge1160924": {
+"@source": "node1160922", 
+"@target": "node1160924"
+}
+}, 
+"node1160925": {
+"edge1160926": {
+"@source": "node1160925", 
+"@target": "node1160926"
+}, 
+"edge1160927": {
+"@source": "node1160925", 
+"@target": "node1160927"
+}
+}, 
+"node1160928": {
+"edge1160929": {
+"@source": "node1160928", 
+"@target": "node1160929"
+}, 
+"edge1160932": {
+"@source": "node1160928", 
+"@target": "node1160932"
+}
+}, 
+"node1160929": {
+"edge1160930": {
+"@source": "node1160929", 
+"@target": "node1160930"
+}, 
+"edge1160931": {
+"@source": "node1160929", 
+"@target": "node1160931"
+}
+}, 
+"node1160932": {
+"edge1160933": {
+"@source": "node1160932", 
+"@target": "node1160933"
+}, 
+"edge1160934": {
+"@source": "node1160932", 
+"@target": "node1160934"
+}
+}, 
+"node1160935": {
+"edge1160936": {
+"@source": "node1160935", 
+"@target": "node1160936"
+}, 
+"edge1160937": {
+"@source": "node1160935", 
+"@target": "node1160937"
+}
+}, 
+"node1160938": {
+"edge1160939": {
+"@source": "node1160938", 
+"@target": "node1160939"
+}, 
+"edge1160940": {
+"@source": "node1160938", 
+"@target": "node1160940"
+}
+}, 
+"node1160941": {
+"edge1160942": {
+"@source": "node1160941", 
+"@target": "node1160942"
+}, 
+"edge1160943": {
+"@source": "node1160941", 
+"@target": "node1160943"
+}
+}
+}, 
+"nodeById": {
+"node1160911": {
+"@root": true
+}, 
+"node1160912": {}, 
+"node1160913": {}, 
+"node1160914": {}, 
+"node1160915": {}, 
+"node1160916": {}, 
+"node1160917": {
+"@otu": "otu357829"
+}, 
+"node1160918": {}, 
+"node1160919": {}, 
+"node1160920": {
+"@otu": "otu357832"
+}, 
+"node1160921": {
+"@otu": "otu357821"
+}, 
+"node1160922": {}, 
+"node1160923": {
+"@otu": "otu357825"
+}, 
+"node1160924": {
+"@otu": "otu357824"
+}, 
+"node1160925": {}, 
+"node1160926": {
+"@otu": "otu357828"
+}, 
+"node1160927": {
+"@otu": "otu357833"
+}, 
+"node1160928": {}, 
+"node1160929": {}, 
+"node1160930": {
+"@otu": "otu357819"
+}, 
+"node1160931": {
+"@otu": "otu357823"
+}, 
+"node1160932": {}, 
+"node1160933": {
+"@otu": "otu357820"
+}, 
+"node1160934": {
+"@otu": "otu357827"
+}, 
+"node1160935": {}, 
+"node1160936": {
+"@otu": "otu357831"
+}, 
+"node1160937": {
+"@otu": "otu357826"
+}, 
+"node1160938": {}, 
+"node1160939": {
+"@otu": "otu357822"
+}, 
+"node1160940": {
+"@otu": "otu357834"
+}, 
+"node1160941": {}, 
+"node1160942": {
+"@otu": "otu357830"
+}, 
+"node1160943": {
+"@otu": "otu357818"
 }
 }
 }

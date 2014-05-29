@@ -19,48 +19,11 @@
 "@id": "peyotl-validator", 
 "@name": "validate_ot_nexson.py", 
 "@url": "https://github.com/OpenTreeOfLife/peyotl", 
-"@version": "0.0.3a", 
+"@version": "0.0.4a", 
 "invocation": {
-"checksPerformed": [
-"MISSING_MANDATORY_KEY", 
-"MISSING_OPTIONAL_KEY", 
-"UNRECOGNIZED_KEY", 
-"MISSING_LIST_EXPECTED", 
-"DUPLICATING_SINGLETON_KEY", 
-"REFERENCED_ID_NOT_FOUND", 
-"REPEATED_ID", 
-"REPEATED_OTU", 
-"MULTIPLE_ROOT_NODES", 
-"NO_ROOT_NODE", 
-"MULTIPLE_EDGES_FOR_NODES", 
-"CYCLE_DETECTED", 
-"DISCONNECTED_GRAPH_DETECTED", 
-"INCORRECT_ROOT_NODE_LABEL", 
-"TIP_WITHOUT_OTU", 
-"TIP_WITHOUT_OTT_ID", 
-"MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
-"NON_MONOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
-"INVALID_PROPERTY_VALUE", 
-"PROPERTY_VALUE_NOT_USEFUL", 
-"UNRECOGNIZED_PROPERTY_VALUE", 
-"MULTIPLE_TREES", 
-"UNRECOGNIZED_TAG", 
-"CONFLICTING_PROPERTY_VALUES", 
-"NO_TREES", 
-"DEPRECATED_PROPERTY", 
-"UNPARSEABLE_META", 
-"UNREACHABLE_NODE", 
-"INCORRECT_VALUE_TYPE", 
-"MISSING_CRUCIAL_CONTENT"
-], 
 "commandLine": [
 "--embed", 
-"--agent-only", 
-"-e", 
-"../mig-phyelesystem-scratch/2551/validation.json", 
-"-o", 
-"../mig-phyelesystem-scratch/2551/final.json", 
-"../mig-phyelesystem-scratch/2551/v1.2.1-2551.json"
+"--agent-only"
 ], 
 "otherProperty": [
 {
@@ -76,12 +39,19 @@
 }
 ]
 }, 
+"^ot:annotationEvents": {
+"annotation": []
+}, 
+"^ot:candidateTreeForSynthesis": [], 
 "^ot:curatorName": "Chris Owen", 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S12889"
 }, 
 "^ot:focalClade": 501484, 
 "^ot:focalCladeOTTTaxonName": "Labroidei", 
+"^ot:messages": {
+"message": []
+}, 
 "^ot:otusElementOrder": [
 "otus2551"
 ], 
@@ -89,8 +59,9 @@
 "^ot:studyPublication": {
 "@href": "http://dx.doi.org/10.1093/sysbio/sys060"
 }, 
-"^ot:studyPublicationReference": "Wainwright P.C., Smith W.L., Price S.A., Tang K.L., Sparks J.S., Ferry L.A., Kuhn K.L., Eytan R.I., & Near T.J. 2012. The evolution of pharyngognathy: a phylogenetic and functional appraisal of the pharyngeal jaw key innovation in labroid fishes and beyond. Systematic Biology, 61 (6): 1001-1027.", 
+"^ot:studyPublicationReference": "Wainwright, P.C., Smith W.L., Price S.A., Tang K.L., Sparks J.S., Ferry L.A., Kuhn K.L., Eytan R.I., & Near T.J. 2012. The evolution of pharyngognathy: a phylogenetic and functional appraisal of the pharyngeal jaw key innovation in labroid fishes and beyond. Systematic Biology 61 (6): 1001-1027.", 
 "^ot:studyYear": 2012, 
+"^ot:tag": [], 
 "^ot:treesElementOrder": [
 "trees2551"
 ], 
@@ -295,6 +266,8 @@
 }, 
 "otu367304": {
 "^ot:originalLabel": "Congrogadus subducens", 
+"^ot:ottId": 1049970, 
+"^ot:ottTaxonName": "Congogradus subducens", 
 "^ot:treebaseOTUId": "Tl826524"
 }, 
 "otu367305": {
@@ -407,6 +380,8 @@
 }, 
 "otu367323": {
 "^ot:originalLabel": "Etheostoma atripinne", 
+"^ot:ottId": 618529, 
+"^ot:ottTaxonName": "Etheostoma simoterum atripinne", 
 "^ot:treebaseOTUId": "Tl826543"
 }, 
 "otu367324": {
@@ -459,6 +434,8 @@
 }, 
 "otu367332": {
 "^ot:originalLabel": "Eucinostomus lefroyi", 
+"^ot:ottId": 224084, 
+"^ot:ottTaxonName": "Ulaema lefroyi", 
 "^ot:treebaseOTUId": "Tl826552"
 }, 
 "otu367333": {
@@ -655,6 +632,8 @@
 }, 
 "otu367365": {
 "^ot:originalLabel": "Hemanthias aureorubens", 
+"^ot:ottId": 934383, 
+"^ot:ottTaxonName": "Baldwinella aureorubens", 
 "^ot:treebaseOTUId": "Tl826585"
 }, 
 "otu367366": {
@@ -719,6 +698,8 @@
 }, 
 "otu367376": {
 "^ot:originalLabel": "Apogon lateralis", 
+"^ot:ottId": 3635103, 
+"^ot:ottTaxonName": "Ostorhinchus lateralis", 
 "^ot:treebaseOTUId": "Tl826596"
 }, 
 "otu367377": {
@@ -1011,6 +992,8 @@
 }, 
 "otu367425": {
 "^ot:originalLabel": "Heros appendictulatus", 
+"^ot:ottId": 207341, 
+"^ot:ottTaxonName": "Heros efasciatus", 
 "^ot:treebaseOTUId": "Tl826645"
 }, 
 "otu367426": {
@@ -1224,9 +1207,14 @@
 "treeById": {
 "tree5541": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
 "^ot:branchLengthMode": "ot:substitutionCount", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "deleted tree", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node953558", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node953558": {
 "edge953559": {
@@ -4223,10 +4211,15 @@
 }, 
 "tree6180": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
 "^ot:branchLengthMode": "ot:substitutionCount", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "RAxML 10 genes", 
 "^ot:inGroupClade": "node1058061", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node1058055", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node1058055": {
 "edge1058056": {

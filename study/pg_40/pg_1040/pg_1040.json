@@ -19,48 +19,11 @@
 "@id": "peyotl-validator", 
 "@name": "validate_ot_nexson.py", 
 "@url": "https://github.com/OpenTreeOfLife/peyotl", 
-"@version": "0.0.3a", 
+"@version": "0.0.4a", 
 "invocation": {
-"checksPerformed": [
-"MISSING_MANDATORY_KEY", 
-"MISSING_OPTIONAL_KEY", 
-"UNRECOGNIZED_KEY", 
-"MISSING_LIST_EXPECTED", 
-"DUPLICATING_SINGLETON_KEY", 
-"REFERENCED_ID_NOT_FOUND", 
-"REPEATED_ID", 
-"REPEATED_OTU", 
-"MULTIPLE_ROOT_NODES", 
-"NO_ROOT_NODE", 
-"MULTIPLE_EDGES_FOR_NODES", 
-"CYCLE_DETECTED", 
-"DISCONNECTED_GRAPH_DETECTED", 
-"INCORRECT_ROOT_NODE_LABEL", 
-"TIP_WITHOUT_OTU", 
-"TIP_WITHOUT_OTT_ID", 
-"MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
-"NON_MONOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
-"INVALID_PROPERTY_VALUE", 
-"PROPERTY_VALUE_NOT_USEFUL", 
-"UNRECOGNIZED_PROPERTY_VALUE", 
-"MULTIPLE_TREES", 
-"UNRECOGNIZED_TAG", 
-"CONFLICTING_PROPERTY_VALUES", 
-"NO_TREES", 
-"DEPRECATED_PROPERTY", 
-"UNPARSEABLE_META", 
-"UNREACHABLE_NODE", 
-"INCORRECT_VALUE_TYPE", 
-"MISSING_CRUCIAL_CONTENT"
-], 
 "commandLine": [
 "--embed", 
-"--agent-only", 
-"-e", 
-"../mig-phyelesystem-scratch/1040/validation.json", 
-"-o", 
-"../mig-phyelesystem-scratch/1040/final.json", 
-"../mig-phyelesystem-scratch/1040/v1.2.1-1040.json"
+"--agent-only"
 ], 
 "otherProperty": [
 {
@@ -76,12 +39,17 @@
 }
 ]
 }, 
+"^ot:annotationEvents": {
+"annotation": []
+}, 
+"^ot:candidateTreeForSynthesis": [], 
 "^ot:curatorName": "Romina Gazis", 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S10142"
 }, 
-"^ot:focalClade": 2124171, 
-"^ot:focalCladeOTTTaxonName": "Mycochaetophora", 
+"^ot:messages": {
+"message": []
+}, 
 "^ot:otusElementOrder": [
 "otus1040"
 ], 
@@ -91,6 +59,7 @@
 }, 
 "^ot:studyPublicationReference": "Nekoduka S., Tanaka K., Harada Y., & Sano T. 2010. Phylogenetic affinity of Mycochaetophora gentianae, the causal fungus of brown leaf spot on gentian (Gentiana triflora), to Pseudocercosporella-like hyphomycetes in Helotiales. Mycoscience, 51(2): 123-133.", 
 "^ot:studyYear": 2010, 
+"^ot:tag": [], 
 "^ot:treesElementOrder": [
 "trees1040"
 ], 
@@ -117,8 +86,6 @@
 }, 
 "otu216030": {
 "^ot:originalLabel": "Mycochaetophora gentianae MAFF 239231", 
-"^ot:ottId": 130928, 
-"^ot:ottTaxonName": "Mycochaetophora gentianae", 
 "^ot:treebaseOTUId": "Tl245775"
 }, 
 "otu216031": {
@@ -129,8 +96,8 @@
 }, 
 "otu216032": {
 "^ot:originalLabel": "Hemiphacidium longisporum", 
-"^ot:ottId": 555942, 
-"^ot:ottTaxonName": "Hemiphacidium longisporum", 
+"^ot:ottId": 5309539, 
+"^ot:ottTaxonName": "Sarcotrochila longispora", 
 "^ot:treebaseOTUId": "Tl245777"
 }, 
 "otu216033": {
@@ -219,8 +186,6 @@
 }, 
 "otu216047": {
 "^ot:originalLabel": "Lachnum bicolor", 
-"^ot:ottId": 178977, 
-"^ot:ottTaxonName": "Lachnum bicolor", 
 "^ot:treebaseOTUId": "Tl245792"
 }, 
 "otu216048": {
@@ -255,8 +220,6 @@
 }, 
 "otu216053": {
 "^ot:originalLabel": "Microglossum sp. NZG100", 
-"^ot:ottId": 1022742, 
-"^ot:ottTaxonName": "Microglossum", 
 "^ot:treebaseOTUId": "Tl245798"
 }, 
 "otu216054": {
@@ -357,14 +320,10 @@
 }, 
 "otu216070": {
 "^ot:originalLabel": "Mycochaetophora gentianae K18", 
-"^ot:ottId": 130928, 
-"^ot:ottTaxonName": "Mycochaetophora gentianae", 
 "^ot:treebaseOTUId": "Tl245815"
 }, 
 "otu216071": {
 "^ot:originalLabel": "Ombrophila violacea", 
-"^ot:ottId": 710780, 
-"^ot:ottTaxonName": "Ombrophila violacea", 
 "^ot:treebaseOTUId": "Tl245816"
 }, 
 "otu216072": {
@@ -418,7 +377,7 @@
 "otu216080": {
 "^ot:originalLabel": "Rhexocercosporidium carotae.AF487897", 
 "^ot:ottId": 750568, 
-"^ot:ottTaxonName": "Rhexocercosporidium carotae", 
+"^ot:ottTaxonName": "Pseudocercosporidium carotae", 
 "^ot:treebaseOTUId": "Tl245825"
 }, 
 "otu216081": {
@@ -447,14 +406,12 @@
 }, 
 "otu216085": {
 "^ot:originalLabel": "Thedgonia ligustrina EU040242", 
-"^ot:ottId": 184999, 
-"^ot:ottTaxonName": "Thedgonia ligustrina", 
+"^ot:ottId": 5319738, 
+"^ot:ottTaxonName": "Cercospora ligustrina", 
 "^ot:treebaseOTUId": "Tl254735"
 }, 
 "otu216086": {
 "^ot:originalLabel": "Mycochaetophora sp. MAFF 239231", 
-"^ot:ottId": 346587, 
-"^ot:ottTaxonName": "Mycochaetophora", 
 "^ot:treebaseOTUId": "Tl264671"
 }, 
 "otu216087": {
@@ -513,8 +470,6 @@
 }, 
 "otu216096": {
 "^ot:originalLabel": "Mycochaetophora sp. MAFF 239284", 
-"^ot:ottId": 346587, 
-"^ot:ottTaxonName": "Mycochaetophora", 
 "^ot:treebaseOTUId": "Tl264681"
 }, 
 "otu216097": {
@@ -526,7 +481,7 @@
 "otu216098": {
 "^ot:originalLabel": "Rhexo carotae AF487895", 
 "^ot:ottId": 750568, 
-"^ot:ottTaxonName": "Rhexocercosporidium carotae", 
+"^ot:ottTaxonName": "Pseudocercosporidium carotae", 
 "^ot:treebaseOTUId": "Tl264683"
 }, 
 "otu216099": {
@@ -543,14 +498,12 @@
 }, 
 "otu216101": {
 "^ot:originalLabel": "Mycochaetophora sp. MAFF 241068 K18", 
-"^ot:ottId": 346587, 
-"^ot:ottTaxonName": "Mycochaetophora", 
 "^ot:treebaseOTUId": "Tl264686"
 }, 
 "otu216102": {
 "^ot:originalLabel": "Rhexo carotae AF487894", 
 "^ot:ottId": 750568, 
-"^ot:ottTaxonName": "Rhexocercosporidium carotae", 
+"^ot:ottTaxonName": "Pseudocercosporidium carotae", 
 "^ot:treebaseOTUId": "Tl264687"
 }, 
 "otu216103": {
@@ -562,13 +515,13 @@
 "otu216104": {
 "^ot:originalLabel": "Rhexo carotae DQ526378", 
 "^ot:ottId": 750568, 
-"^ot:ottTaxonName": "Rhexocercosporidium carotae", 
+"^ot:ottTaxonName": "Pseudocercosporidium carotae", 
 "^ot:treebaseOTUId": "Tl264689"
 }, 
 "otu216105": {
 "^ot:originalLabel": "Rhexo carotae DQ526377", 
 "^ot:ottId": 750568, 
-"^ot:ottTaxonName": "Rhexocercosporidium carotae", 
+"^ot:ottTaxonName": "Pseudocercosporidium carotae", 
 "^ot:treebaseOTUId": "Tl264690"
 }, 
 "otu216106": {
@@ -579,8 +532,6 @@
 }, 
 "otu216107": {
 "^ot:originalLabel": "Mycochaetophora sp. MAFF 239285", 
-"^ot:ottId": 346587, 
-"^ot:ottTaxonName": "Mycochaetophora", 
 "^ot:treebaseOTUId": "Tl264692"
 }, 
 "otu216108": {
@@ -621,8 +572,6 @@
 }, 
 "otu216114": {
 "^ot:originalLabel": "Mycochaetophora sp. MAFF 241067 J4", 
-"^ot:ottId": 346587, 
-"^ot:ottTaxonName": "Mycochaetophora", 
 "^ot:treebaseOTUId": "Tl264699"
 }, 
 "otu216115": {
@@ -646,8 +595,14 @@
 "treeById": {
 "tree1994": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "MP, LSU + SSU + 5.8S", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node509272", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node509272": {
 "edge509273": {
@@ -1451,8 +1406,14 @@
 }, 
 "tree1995": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "MP, ITS", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node509386", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node509386": {
 "edge509387": {
@@ -1878,10 +1839,17 @@
 }, 
 "tree5767": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "MP, LSU + SSU + 5.8S (rooted)", 
 "^ot:inGroupClade": "node986171", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node986168", 
-"^ot:tag": "LSU", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [
+"LSU"
+], 
 "edgeBySourceId": {
 "node986168": {
 "edge986169": {
@@ -2692,9 +2660,15 @@
 }, 
 "tree5768": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "MP, ITS (rooted)", 
 "^ot:inGroupClade": "node986288", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node986283", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node986283": {
 "edge986284": {

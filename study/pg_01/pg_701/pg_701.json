@@ -19,48 +19,11 @@
 "@id": "peyotl-validator", 
 "@name": "validate_ot_nexson.py", 
 "@url": "https://github.com/OpenTreeOfLife/peyotl", 
-"@version": "0.0.3a", 
+"@version": "0.0.4a", 
 "invocation": {
-"checksPerformed": [
-"MISSING_MANDATORY_KEY", 
-"MISSING_OPTIONAL_KEY", 
-"UNRECOGNIZED_KEY", 
-"MISSING_LIST_EXPECTED", 
-"DUPLICATING_SINGLETON_KEY", 
-"REFERENCED_ID_NOT_FOUND", 
-"REPEATED_ID", 
-"REPEATED_OTU", 
-"MULTIPLE_ROOT_NODES", 
-"NO_ROOT_NODE", 
-"MULTIPLE_EDGES_FOR_NODES", 
-"CYCLE_DETECTED", 
-"DISCONNECTED_GRAPH_DETECTED", 
-"INCORRECT_ROOT_NODE_LABEL", 
-"TIP_WITHOUT_OTU", 
-"TIP_WITHOUT_OTT_ID", 
-"MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
-"NON_MONOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
-"INVALID_PROPERTY_VALUE", 
-"PROPERTY_VALUE_NOT_USEFUL", 
-"UNRECOGNIZED_PROPERTY_VALUE", 
-"MULTIPLE_TREES", 
-"UNRECOGNIZED_TAG", 
-"CONFLICTING_PROPERTY_VALUES", 
-"NO_TREES", 
-"DEPRECATED_PROPERTY", 
-"UNPARSEABLE_META", 
-"UNREACHABLE_NODE", 
-"INCORRECT_VALUE_TYPE", 
-"MISSING_CRUCIAL_CONTENT"
-], 
 "commandLine": [
 "--embed", 
-"--agent-only", 
-"-e", 
-"../mig-phyelesystem-scratch/701/validation.json", 
-"-o", 
-"../mig-phyelesystem-scratch/701/final.json", 
-"../mig-phyelesystem-scratch/701/v1.2.1-701.json"
+"--agent-only"
 ], 
 "otherProperty": [
 {
@@ -76,12 +39,19 @@
 }
 ]
 }, 
+"^ot:annotationEvents": {
+"annotation": []
+}, 
+"^ot:candidateTreeForSynthesis": [], 
 "^ot:curatorName": "Romina Gazis", 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S12805"
 }, 
 "^ot:focalClade": 251928, 
 "^ot:focalCladeOTTTaxonName": "Pseudocercospora", 
+"^ot:messages": {
+"message": []
+}, 
 "^ot:otusElementOrder": [
 "otus701"
 ], 
@@ -91,6 +61,7 @@
 }, 
 "^ot:studyPublicationReference": "Crous P.W., Braun U., Hunter G., Wingfield M.J., Verkley G., Shin H., Nakashima C., & Groenewald J.Z. 2012. Phylogenetic lineages in Pseudocercospora. Studies in Mycology, 75: 37-114.", 
 "^ot:studyYear": 2012, 
+"^ot:tag": [], 
 "^ot:treesElementOrder": [
 "trees701"
 ], 
@@ -147,6 +118,8 @@
 }, 
 "otu187568": {
 "^ot:originalLabel": "Pallidocercospora irregulariramosa DQ204754", 
+"^ot:ottId": 5319847, 
+"^ot:ottTaxonName": "Pseudocercospora irregulariramosa", 
 "^ot:treebaseOTUId": "Tl804438"
 }, 
 "otu187569": {
@@ -309,6 +282,8 @@
 }, 
 "otu187596": {
 "^ot:originalLabel": "Thedgonia ligustrina EU040242", 
+"^ot:ottId": 5319738, 
+"^ot:ottTaxonName": "Cercospora ligustrina", 
 "^ot:treebaseOTUId": "Tl804466"
 }, 
 "otu187597": {
@@ -413,6 +388,8 @@
 }, 
 "otu187614": {
 "^ot:originalLabel": "Readeriella novaezelandiae DQ246239", 
+"^ot:ottId": 5320105, 
+"^ot:ottTaxonName": "Readeriella novae-zelandiae", 
 "^ot:treebaseOTUId": "Tl804484"
 }, 
 "otu187615": {
@@ -469,6 +446,8 @@
 }, 
 "otu187624": {
 "^ot:originalLabel": "Mycosphaerella africana DQ246257", 
+"^ot:ottId": 721730, 
+"^ot:ottTaxonName": "Mycosphaerella africana", 
 "^ot:treebaseOTUId": "Tl804494"
 }, 
 "otu187625": {
@@ -557,6 +536,8 @@
 }, 
 "otu187639": {
 "^ot:originalLabel": "Xenostigmina zilleri FJ839676", 
+"^ot:ottId": 5311062, 
+"^ot:ottTaxonName": "Didymella mycopappi", 
 "^ot:treebaseOTUId": "Tl804509"
 }, 
 "otu187640": {
@@ -647,6 +628,8 @@
 }, 
 "otu187655": {
 "^ot:originalLabel": "Thedgonia ligustrina CPC 10861", 
+"^ot:ottId": 5319738, 
+"^ot:ottTaxonName": "Cercospora ligustrina", 
 "^ot:treebaseOTUId": "Tl804525"
 }, 
 "otu187656": {
@@ -761,6 +744,8 @@
 }, 
 "otu187675": {
 "^ot:originalLabel": "Xenostigmina zilleri GU253857", 
+"^ot:ottId": 5311062, 
+"^ot:ottTaxonName": "Didymella mycopappi", 
 "^ot:treebaseOTUId": "Tl804545"
 }, 
 "otu187676": {
@@ -791,10 +776,14 @@
 }, 
 "otu187681": {
 "^ot:originalLabel": "Miuraea persicae CPC 10069", 
+"^ot:ottId": 5319574, 
+"^ot:ottTaxonName": "Mycosphaerella pruni-persicae", 
 "^ot:treebaseOTUId": "Tl804551"
 }, 
 "otu187682": {
 "^ot:originalLabel": "Thedgonia ligustrina CPC 10019", 
+"^ot:ottId": 5319738, 
+"^ot:ottTaxonName": "Cercospora ligustrina", 
 "^ot:treebaseOTUId": "Tl804552"
 }, 
 "otu187683": {
@@ -821,6 +810,8 @@
 }, 
 "otu187687": {
 "^ot:originalLabel": "Pseudocercospora circumscissa CPC 14511", 
+"^ot:ottId": 5319611, 
+"^ot:ottTaxonName": "Mycosphaerella cerasella", 
 "^ot:treebaseOTUId": "Tl804557"
 }, 
 "otu187688": {
@@ -1085,6 +1076,8 @@
 }, 
 "otu187733": {
 "^ot:originalLabel": "Pallidocercospora heimioides DQ204753", 
+"^ot:ottId": 5319848, 
+"^ot:ottTaxonName": "Pseudocercospora heimioides", 
 "^ot:treebaseOTUId": "Tl804603"
 }, 
 "otu187734": {
@@ -1161,6 +1154,8 @@
 }, 
 "otu187746": {
 "^ot:originalLabel": "Miuraea persicae CPC 10828", 
+"^ot:ottId": 5319574, 
+"^ot:ottTaxonName": "Mycosphaerella pruni-persicae", 
 "^ot:treebaseOTUId": "Tl804616"
 }, 
 "otu187747": {
@@ -1177,6 +1172,8 @@
 }, 
 "otu187749": {
 "^ot:originalLabel": "Capronia peltigerae HQ613813", 
+"^ot:ottId": 5310503, 
+"^ot:ottTaxonName": "Capronia peltigerae", 
 "^ot:treebaseOTUId": "Tl804619"
 }, 
 "otu187750": {
@@ -1211,6 +1208,8 @@
 }, 
 "otu187755": {
 "^ot:originalLabel": "Pseudocercospora cruenta CPC 10846", 
+"^ot:ottId": 5319569, 
+"^ot:ottTaxonName": "Mycosphaerella cruenta", 
 "^ot:treebaseOTUId": "Tl804625"
 }, 
 "otu187756": {
@@ -1239,6 +1238,8 @@
 }, 
 "otu187760": {
 "^ot:originalLabel": "Thedgonia ligustrina CPC 10530", 
+"^ot:ottId": 5319738, 
+"^ot:ottTaxonName": "Cercospora ligustrina", 
 "^ot:treebaseOTUId": "Tl804630"
 }, 
 "otu187761": {
@@ -1267,6 +1268,8 @@
 }, 
 "otu187765": {
 "^ot:originalLabel": "Pleurophoma pleurospora EU754200", 
+"^ot:ottId": 5308899, 
+"^ot:ottTaxonName": "Dinemasporium pleurospora", 
 "^ot:treebaseOTUId": "Tl804635"
 }, 
 "otu187766": {
@@ -1633,6 +1636,8 @@
 }, 
 "otu187828": {
 "^ot:originalLabel": "Coniosporium perforans FJ358237", 
+"^ot:ottId": 5302593, 
+"^ot:ottTaxonName": "Coniosporium perforans", 
 "^ot:treebaseOTUId": "Tl804698"
 }, 
 "otu187829": {
@@ -1697,6 +1702,8 @@
 }, 
 "otu187839": {
 "^ot:originalLabel": "Pallidocercospora heimii DQ204751", 
+"^ot:ottId": 5319845, 
+"^ot:ottTaxonName": "Pseudocercospora heimii", 
 "^ot:treebaseOTUId": "Tl804709"
 }, 
 "otu187840": {
@@ -1747,6 +1754,8 @@
 }, 
 "otu187848": {
 "^ot:originalLabel": "Pallidocercospora crystallina DQ204747", 
+"^ot:ottId": 5319844, 
+"^ot:ottTaxonName": "Pseudocercospora crystallina", 
 "^ot:treebaseOTUId": "Tl804718"
 }, 
 "otu187849": {
@@ -2047,8 +2056,14 @@
 "treeById": {
 "tree1261": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "BI, LSU", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node432126", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node432126": {
 "edge432127": {
@@ -5057,9 +5072,15 @@
 }, 
 "tree1262": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "MP, ITS + EF-1 + actin", 
 "^ot:inGroupClade": "node432557", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node432555", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node432555": {
 "edge432556": {
@@ -7655,9 +7676,15 @@
 }, 
 "tree5649": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "BI, LSU (rooted)", 
 "^ot:inGroupClade": "node974308", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node974307", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node974307": {
 "edge974308": {

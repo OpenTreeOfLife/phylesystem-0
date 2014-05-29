@@ -19,48 +19,11 @@
 "@id": "peyotl-validator", 
 "@name": "validate_ot_nexson.py", 
 "@url": "https://github.com/OpenTreeOfLife/peyotl", 
-"@version": "0.0.3a", 
+"@version": "0.0.4a", 
 "invocation": {
-"checksPerformed": [
-"MISSING_MANDATORY_KEY", 
-"MISSING_OPTIONAL_KEY", 
-"UNRECOGNIZED_KEY", 
-"MISSING_LIST_EXPECTED", 
-"DUPLICATING_SINGLETON_KEY", 
-"REFERENCED_ID_NOT_FOUND", 
-"REPEATED_ID", 
-"REPEATED_OTU", 
-"MULTIPLE_ROOT_NODES", 
-"NO_ROOT_NODE", 
-"MULTIPLE_EDGES_FOR_NODES", 
-"CYCLE_DETECTED", 
-"DISCONNECTED_GRAPH_DETECTED", 
-"INCORRECT_ROOT_NODE_LABEL", 
-"TIP_WITHOUT_OTU", 
-"TIP_WITHOUT_OTT_ID", 
-"MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
-"NON_MONOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
-"INVALID_PROPERTY_VALUE", 
-"PROPERTY_VALUE_NOT_USEFUL", 
-"UNRECOGNIZED_PROPERTY_VALUE", 
-"MULTIPLE_TREES", 
-"UNRECOGNIZED_TAG", 
-"CONFLICTING_PROPERTY_VALUES", 
-"NO_TREES", 
-"DEPRECATED_PROPERTY", 
-"UNPARSEABLE_META", 
-"UNREACHABLE_NODE", 
-"INCORRECT_VALUE_TYPE", 
-"MISSING_CRUCIAL_CONTENT"
-], 
 "commandLine": [
 "--embed", 
-"--agent-only", 
-"-e", 
-"../mig-phyelesystem-scratch/880/validation.json", 
-"-o", 
-"../mig-phyelesystem-scratch/880/final.json", 
-"../mig-phyelesystem-scratch/880/v1.2.1-880.json"
+"--agent-only"
 ], 
 "otherProperty": [
 {
@@ -76,12 +39,17 @@
 }
 ]
 }, 
+"^ot:annotationEvents": {
+"annotation": []
+}, 
+"^ot:candidateTreeForSynthesis": [], 
 "^ot:curatorName": "Romina Gazis", 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S986"
 }, 
-"^ot:focalClade": 2086845, 
-"^ot:focalCladeOTTTaxonName": "Cladosporidium", 
+"^ot:messages": {
+"message": []
+}, 
 "^ot:otusElementOrder": [
 "otus880"
 ], 
@@ -91,6 +59,7 @@
 }, 
 "^ot:studyPublicationReference": "Braun U., Crous P., Dugan F., Groenewald J., & De hoog G. 2003. Phylogeny and taxonomy of Cladosporium-like hyphomycetes, including Davidiella gen. nov., the teleomorph of Cladosporium s. str. Mycological Progress, 2(1), 3-18.", 
 "^ot:studyYear": 2003, 
+"^ot:tag": [], 
 "^ot:treesElementOrder": [
 "trees880"
 ], 
@@ -105,8 +74,6 @@
 }, 
 "otu203147": {
 "^ot:originalLabel": "Fusarium oxysporum f. sp. fragariae E17083", 
-"^ot:ottId": 1040398, 
-"^ot:ottTaxonName": "Fusarium oxysporum f. sp. fragariae", 
 "^ot:treebaseOTUId": "Tl13598"
 }, 
 "otu203148": {
@@ -148,7 +115,7 @@
 "otu203154": {
 "^ot:originalLabel": "Guignardia endophyllicola AB041249", 
 "^ot:ottId": 950086, 
-"^ot:ottTaxonName": "Guignardia mangiferae", 
+"^ot:ottTaxonName": "Phyllosticta capitalensis", 
 "^ot:treebaseOTUId": "Tl13606"
 }, 
 "otu203155": {
@@ -184,19 +151,17 @@
 "otu203160": {
 "^ot:originalLabel": "Alternaria malorum STE-U 3685 AY251128", 
 "^ot:ottId": 468769, 
-"^ot:ottTaxonName": "Alternaria malorum", 
+"^ot:ottTaxonName": "Chalastospora gossypii", 
 "^ot:treebaseOTUId": "Tl13612"
 }, 
 "otu203161": {
 "^ot:originalLabel": "Mycosphaerella juvenis STE-U 1004 AY251119", 
 "^ot:ottId": 554407, 
-"^ot:ottTaxonName": "Teratosphaeria nubilosa", 
+"^ot:ottTaxonName": "Uwebraunia juvenis", 
 "^ot:treebaseOTUId": "Tl13613"
 }, 
 "otu203162": {
 "^ot:originalLabel": "Passalora dodonaea STE-U 1223 AY251108", 
-"^ot:ottId": 390091, 
-"^ot:ottTaxonName": "Passalora dodonaea", 
 "^ot:treebaseOTUId": "Tl13614"
 }, 
 "otu203163": {
@@ -249,14 +214,12 @@
 }, 
 "otu203171": {
 "^ot:originalLabel": "Pseudocercospora protearum var. leucadendri STE-U 1869 AY251107", 
-"^ot:ottId": 326406, 
-"^ot:ottTaxonName": "Pseudocercospora protearum var. leucadendri", 
 "^ot:treebaseOTUId": "Tl13624"
 }, 
 "otu203172": {
 "^ot:originalLabel": "Cercospora cruenta CBS 462.75 AY251105", 
-"^ot:ottId": 689760, 
-"^ot:ottTaxonName": "Pseudocercospora cruenta", 
+"^ot:ottId": 5319569, 
+"^ot:ottTaxonName": "Mycosphaerella cruenta", 
 "^ot:treebaseOTUId": "Tl13625"
 }, 
 "otu203173": {
@@ -274,13 +237,13 @@
 "otu203175": {
 "^ot:originalLabel": "Mycosphaerella populorum AF271130", 
 "^ot:ottId": 235469, 
-"^ot:ottTaxonName": "Mycosphaerella populorum", 
+"^ot:ottTaxonName": "Davidiella populorum", 
 "^ot:treebaseOTUId": "Tl13628"
 }, 
 "otu203176": {
 "^ot:originalLabel": "Septoria rosae STE-U 4302 AY251113", 
-"^ot:ottId": 390090, 
-"^ot:ottTaxonName": "Septoria rosae", 
+"^ot:ottId": 5319626, 
+"^ot:ottTaxonName": "Sphaerulina rehmiana", 
 "^ot:treebaseOTUId": "Tl13629"
 }, 
 "otu203177": {
@@ -304,7 +267,7 @@
 "otu203180": {
 "^ot:originalLabel": "Alternaria malorum STE-U 4571 AY251130", 
 "^ot:ottId": 468769, 
-"^ot:ottTaxonName": "Alternaria malorum", 
+"^ot:ottTaxonName": "Chalastospora gossypii", 
 "^ot:treebaseOTUId": "Tl13633"
 }, 
 "otu203181": {
@@ -334,7 +297,7 @@
 "otu203185": {
 "^ot:originalLabel": "Alternaria malorum STE-U 4572 AY251131", 
 "^ot:ottId": 468769, 
-"^ot:ottTaxonName": "Alternaria malorum", 
+"^ot:ottTaxonName": "Chalastospora gossypii", 
 "^ot:treebaseOTUId": "Tl13639"
 }, 
 "otu203186": {
@@ -358,13 +321,13 @@
 "otu203189": {
 "^ot:originalLabel": "Alternaria malorum STE-U 3680 AY251127", 
 "^ot:ottId": 468769, 
-"^ot:ottTaxonName": "Alternaria malorum", 
+"^ot:ottTaxonName": "Chalastospora gossypii", 
 "^ot:treebaseOTUId": "Tl13643"
 }, 
 "otu203190": {
 "^ot:originalLabel": "Mycosphaerella nubilosa STE-U 4661 AY251120", 
 "^ot:ottId": 554407, 
-"^ot:ottTaxonName": "Teratosphaeria nubilosa", 
+"^ot:ottTaxonName": "Uwebraunia juvenis", 
 "^ot:treebaseOTUId": "Tl13644"
 }, 
 "otu203191": {
@@ -375,8 +338,6 @@
 }, 
 "otu203192": {
 "^ot:originalLabel": "Septoria tritici STE-U 658 AY251117", 
-"^ot:ottId": 906425, 
-"^ot:ottTaxonName": "Zymoseptoria tritici", 
 "^ot:treebaseOTUId": "Tl13647"
 }, 
 "otu203193": {
@@ -393,8 +354,6 @@
 }, 
 "otu203195": {
 "^ot:originalLabel": "Alternaria malorum var. polymorpha STE-U 4570 AY251129", 
-"^ot:ottId": 1038266, 
-"^ot:ottTaxonName": "Alternaria malorum var. polymorpha", 
 "^ot:treebaseOTUId": "Tl13650"
 }, 
 "otu203196": {
@@ -405,14 +364,14 @@
 }, 
 "otu203197": {
 "^ot:originalLabel": "Pseudocladosporium hachijoense STE-U 5391 AY251123", 
-"^ot:ottId": 404670, 
-"^ot:ottTaxonName": "Pseudocladosporium hachijoense", 
+"^ot:ottId": 274721, 
+"^ot:ottTaxonName": "Venturia hystrioides", 
 "^ot:treebaseOTUId": "Tl13652"
 }, 
 "otu203198": {
 "^ot:originalLabel": "Dothidea ribesia AY016343", 
-"^ot:ottId": 295793, 
-"^ot:ottTaxonName": "Dothidea ribesia", 
+"^ot:ottId": 5320161, 
+"^ot:ottTaxonName": "Dothiora ribesia", 
 "^ot:treebaseOTUId": "Tl13653"
 }, 
 "otu203199": {
@@ -477,14 +436,12 @@
 }, 
 "otu203209": {
 "^ot:originalLabel": "Phomopsis vaccinii CBS 160.32 AF317578", 
-"^ot:ottId": 571488, 
-"^ot:ottTaxonName": "Phomopsis vaccinii", 
 "^ot:treebaseOTUId": "Tl13664"
 }, 
 "otu203210": {
 "^ot:originalLabel": "Pseudocladosporium hachijoensis STE-U 5391 AY251083", 
-"^ot:ottId": 404670, 
-"^ot:ottTaxonName": "Pseudocladosporium hachijoense", 
+"^ot:ottId": 274721, 
+"^ot:ottTaxonName": "Venturia hystrioides", 
 "^ot:treebaseOTUId": "Tl13665"
 }, 
 "otu203211": {
@@ -519,8 +476,8 @@
 }, 
 "otu203216": {
 "^ot:originalLabel": "Alternaria conjuncta AF392988", 
-"^ot:ottId": 419856, 
-"^ot:ottTaxonName": "Alternaria conjuncta", 
+"^ot:ottId": 5318800, 
+"^ot:ottTaxonName": "Lewia scrophulariae", 
 "^ot:treebaseOTUId": "Tl13671"
 }, 
 "otu203217": {
@@ -543,14 +500,12 @@
 }, 
 "otu203220": {
 "^ot:originalLabel": "Cladosporium sp. STE-U 5371 AY251072", 
-"^ot:ottId": 4114637, 
-"^ot:ottTaxonName": "Cladosporidium", 
 "^ot:treebaseOTUId": "Tl13675"
 }, 
 "otu203221": {
 "^ot:originalLabel": "Passalora bellynckii AF222831", 
 "^ot:ottId": 479696, 
-"^ot:ottTaxonName": "Passalora bellynckii", 
+"^ot:ottTaxonName": "Mycovellosiella bellynckii", 
 "^ot:treebaseOTUId": "Tl13676"
 }, 
 "otu203222": {
@@ -568,19 +523,19 @@
 "otu203224": {
 "^ot:originalLabel": "Cladosporium echinulatum AF393698", 
 "^ot:ottId": 827839, 
-"^ot:ottTaxonName": "Cladosporium echinulatum", 
+"^ot:ottTaxonName": "Mycosphaerella dianthi", 
 "^ot:treebaseOTUId": "Tl13679"
 }, 
 "otu203225": {
 "^ot:originalLabel": "Cladosporium macrocarpum AJ244229", 
-"^ot:ottId": 736947, 
-"^ot:ottTaxonName": "Cladosporium macrocarpum", 
+"^ot:ottId": 5320052, 
+"^ot:ottTaxonName": "Davidiella macrocarpa", 
 "^ot:treebaseOTUId": "Tl13680"
 }, 
 "otu203226": {
 "^ot:originalLabel": "Alternaria malorum STE-U 4572 AY251079", 
 "^ot:ottId": 468769, 
-"^ot:ottTaxonName": "Alternaria malorum", 
+"^ot:ottTaxonName": "Chalastospora gossypii", 
 "^ot:treebaseOTUId": "Tl13681"
 }, 
 "otu203227": {
@@ -591,8 +546,8 @@
 }, 
 "otu203228": {
 "^ot:originalLabel": "Capronia semiimmersa AF050260", 
-"^ot:ottId": 818009, 
-"^ot:ottTaxonName": "Capronia semiimmersa", 
+"^ot:ottId": 5310508, 
+"^ot:ottTaxonName": "Capronia semi-immersa", 
 "^ot:treebaseOTUId": "Tl13683"
 }, 
 "otu203229": {
@@ -646,13 +601,13 @@
 "otu203237": {
 "^ot:originalLabel": "Cladosporium iridis AF297231", 
 "^ot:ottId": 33420, 
-"^ot:ottTaxonName": "Cladosporium iridis", 
+"^ot:ottTaxonName": "Davidiella macrospora", 
 "^ot:treebaseOTUId": "Tl13693"
 }, 
 "otu203238": {
 "^ot:originalLabel": "Cladophialophora minourae CBS 556.83 AY251087", 
 "^ot:ottId": 303644, 
-"^ot:ottTaxonName": "Cladophialophora minourae", 
+"^ot:ottTaxonName": "Cladosporium minourae", 
 "^ot:treebaseOTUId": "Tl13694"
 }, 
 "otu203239": {
@@ -688,7 +643,7 @@
 "otu203244": {
 "^ot:originalLabel": "Alternaria malorum AF393680", 
 "^ot:ottId": 468769, 
-"^ot:ottTaxonName": "Alternaria malorum", 
+"^ot:ottTaxonName": "Chalastospora gossypii", 
 "^ot:treebaseOTUId": "Tl13700"
 }, 
 "otu203245": {
@@ -711,14 +666,14 @@
 }, 
 "otu203248": {
 "^ot:originalLabel": "Passalora henningsii AF284389", 
-"^ot:ottId": 224509, 
-"^ot:ottTaxonName": "Passalora henningsii", 
+"^ot:ottId": 5319532, 
+"^ot:ottTaxonName": "Mycosphaerella henningsii", 
 "^ot:treebaseOTUId": "Tl13704"
 }, 
 "otu203249": {
 "^ot:originalLabel": "Alternaria malorum AF393722", 
 "^ot:ottId": 468769, 
-"^ot:ottTaxonName": "Alternaria malorum", 
+"^ot:ottTaxonName": "Chalastospora gossypii", 
 "^ot:treebaseOTUId": "Tl13705"
 }, 
 "otu203250": {
@@ -753,8 +708,8 @@
 }, 
 "otu203255": {
 "^ot:originalLabel": "Passalora arachidicola AF297224", 
-"^ot:ottId": 260942, 
-"^ot:ottTaxonName": "Passalora arachidicola", 
+"^ot:ottId": 532102, 
+"^ot:ottTaxonName": "Cercospora arachidicola", 
 "^ot:treebaseOTUId": "Tl13713"
 }, 
 "otu203256": {
@@ -772,7 +727,7 @@
 "otu203258": {
 "^ot:originalLabel": "Alternaria malorum STE-U 4571 AY251081", 
 "^ot:ottId": 468769, 
-"^ot:ottTaxonName": "Alternaria malorum", 
+"^ot:ottTaxonName": "Chalastospora gossypii", 
 "^ot:treebaseOTUId": "Tl13716"
 }, 
 "otu203259": {
@@ -796,7 +751,7 @@
 "otu203262": {
 "^ot:originalLabel": "Alternaria malorum AF393715", 
 "^ot:ottId": 468769, 
-"^ot:ottTaxonName": "Alternaria malorum", 
+"^ot:ottTaxonName": "Chalastospora gossypii", 
 "^ot:treebaseOTUId": "Tl13721"
 }, 
 "otu203263": {
@@ -807,8 +762,6 @@
 }, 
 "otu203264": {
 "^ot:originalLabel": "Alternaria malorum var. polymorpha STE-U 4570 AY251080", 
-"^ot:ottId": 1038266, 
-"^ot:ottTaxonName": "Alternaria malorum var. polymorpha", 
 "^ot:treebaseOTUId": "Tl13723"
 }, 
 "otu203265": {
@@ -855,8 +808,8 @@
 }, 
 "otu203272": {
 "^ot:originalLabel": "Pleospora betae U43466", 
-"^ot:ottId": 348855, 
-"^ot:ottTaxonName": "Phoma betae", 
+"^ot:ottId": 5318830, 
+"^ot:ottTaxonName": "Pleospora betae", 
 "^ot:treebaseOTUId": "Tl137613"
 }, 
 "otu203273": {
@@ -896,9 +849,15 @@
 "treeById": {
 "tree1699": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "NJ, ITS", 
 "^ot:inGroupClade": "node477766", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node477764", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node477764": {
 "edge477765": {
@@ -1905,9 +1864,15 @@
 }, 
 "tree1700": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "NJ, SSU", 
 "^ot:inGroupClade": "node477909", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node477907", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node477907": {
 "edge477908": {

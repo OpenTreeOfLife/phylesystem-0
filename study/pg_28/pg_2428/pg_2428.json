@@ -19,48 +19,11 @@
 "@id": "peyotl-validator", 
 "@name": "validate_ot_nexson.py", 
 "@url": "https://github.com/OpenTreeOfLife/peyotl", 
-"@version": "0.0.3a", 
+"@version": "0.0.4a", 
 "invocation": {
-"checksPerformed": [
-"MISSING_MANDATORY_KEY", 
-"MISSING_OPTIONAL_KEY", 
-"UNRECOGNIZED_KEY", 
-"MISSING_LIST_EXPECTED", 
-"DUPLICATING_SINGLETON_KEY", 
-"REFERENCED_ID_NOT_FOUND", 
-"REPEATED_ID", 
-"REPEATED_OTU", 
-"MULTIPLE_ROOT_NODES", 
-"NO_ROOT_NODE", 
-"MULTIPLE_EDGES_FOR_NODES", 
-"CYCLE_DETECTED", 
-"DISCONNECTED_GRAPH_DETECTED", 
-"INCORRECT_ROOT_NODE_LABEL", 
-"TIP_WITHOUT_OTU", 
-"TIP_WITHOUT_OTT_ID", 
-"MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
-"NON_MONOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
-"INVALID_PROPERTY_VALUE", 
-"PROPERTY_VALUE_NOT_USEFUL", 
-"UNRECOGNIZED_PROPERTY_VALUE", 
-"MULTIPLE_TREES", 
-"UNRECOGNIZED_TAG", 
-"CONFLICTING_PROPERTY_VALUES", 
-"NO_TREES", 
-"DEPRECATED_PROPERTY", 
-"UNPARSEABLE_META", 
-"UNREACHABLE_NODE", 
-"INCORRECT_VALUE_TYPE", 
-"MISSING_CRUCIAL_CONTENT"
-], 
 "commandLine": [
 "--embed", 
-"--agent-only", 
-"-e", 
-"../mig-phyelesystem-scratch/2428/validation.json", 
-"-o", 
-"../mig-phyelesystem-scratch/2428/final.json", 
-"../mig-phyelesystem-scratch/2428/v1.2.1-2428.json"
+"--agent-only"
 ], 
 "otherProperty": [
 {
@@ -76,9 +39,16 @@
 }
 ]
 }, 
+"^ot:annotationEvents": {
+"annotation": []
+}, 
+"^ot:candidateTreeForSynthesis": [], 
 "^ot:curatorName": "Chris Owen", 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S1416"
+}, 
+"^ot:messages": {
+"message": []
 }, 
 "^ot:otusElementOrder": [
 "otus2428"
@@ -89,6 +59,7 @@
 }, 
 "^ot:studyPublicationReference": "Struck T., & Purschke G. 2005. The Sister Group Relationship of Aeolosomatidae and Potamodrilidae (Annelida: \"Polychaeta\") A Molecular Phylogenetic Approach Based on 18S rDNA and Cytochrome Oxidase I. Zoologischer Anzeiger, 243: 281-293.", 
 "^ot:studyYear": 2005, 
+"^ot:tag": [], 
 "^ot:treesElementOrder": [
 "trees2428"
 ], 
@@ -181,14 +152,12 @@
 }, 
 "otu346443": {
 "^ot:originalLabel": "Protodorvillea kefersteinii", 
-"^ot:ottId": 914165, 
-"^ot:ottTaxonName": "Protodorvillea kefersteinii", 
+"^ot:ottId": 517723, 
+"^ot:ottTaxonName": "Protodorvillea kefersteini", 
 "^ot:treebaseOTUId": "Tl162834"
 }, 
 "otu346444": {
 "^ot:originalLabel": "Spirobrachia sp", 
-"^ot:ottId": 461707, 
-"^ot:ottTaxonName": "Spirobrachia sp.", 
 "^ot:treebaseOTUId": "Tl162835"
 }, 
 "otu346445": {
@@ -235,8 +204,6 @@
 }, 
 "otu346452": {
 "^ot:originalLabel": "Polybrachia sp", 
-"^ot:ottId": 581643, 
-"^ot:ottTaxonName": "Polybrachia sp.", 
 "^ot:treebaseOTUId": "Tl162847"
 }, 
 "otu346453": {
@@ -470,6 +437,7 @@
 "otu346491": {
 "^ot:originalLabel": "Limulus polyphemus", 
 "^ot:ottId": 511973, 
+"^ot:ottTaxonName": "Limulus polyphemus", 
 "^ot:treebaseOTUId": "Tl162914"
 }, 
 "otu346492": {
@@ -696,8 +664,6 @@
 }, 
 "otu346529": {
 "^ot:originalLabel": "Anthosiphonaria sirius", 
-"^ot:ottId": 672621, 
-"^ot:ottTaxonName": "Anthosiphonaria sirius", 
 "^ot:treebaseOTUId": "Tl40009"
 }, 
 "otu346530": {
@@ -921,9 +887,15 @@
 "treeById": {
 "tree5133": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "Fig. 1-MP", 
 "^ot:inGroupClade": "node890333", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node890331", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node890331": {
 "edge890332": {
@@ -2707,8 +2679,14 @@
 }, 
 "tree5134": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "Fig. 2-BI", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node890585", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node890585": {
 "edge890586": {
@@ -4373,9 +4351,15 @@
 }, 
 "tree5135": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "Fig. 3-MP", 
 "^ot:inGroupClade": "node890824", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node890822", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node890822": {
 "edge890823": {
@@ -4647,8 +4631,14 @@
 }, 
 "tree5136": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "Fig. 4-BI", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node890860", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node890860": {
 "edge890861": {
@@ -4927,9 +4917,15 @@
 }, 
 "tree5137": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "Fig. 5-MP", 
 "^ot:inGroupClade": "node890901", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node890899", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node890899": {
 "edge890900": {
@@ -5292,8 +5288,14 @@
 }, 
 "tree5138": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "Fig. 6-BI", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node890950", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node890950": {
 "edge890951": {

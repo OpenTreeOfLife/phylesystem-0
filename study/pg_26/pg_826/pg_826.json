@@ -19,48 +19,11 @@
 "@id": "peyotl-validator", 
 "@name": "validate_ot_nexson.py", 
 "@url": "https://github.com/OpenTreeOfLife/peyotl", 
-"@version": "0.0.3a", 
+"@version": "0.0.4a", 
 "invocation": {
-"checksPerformed": [
-"MISSING_MANDATORY_KEY", 
-"MISSING_OPTIONAL_KEY", 
-"UNRECOGNIZED_KEY", 
-"MISSING_LIST_EXPECTED", 
-"DUPLICATING_SINGLETON_KEY", 
-"REFERENCED_ID_NOT_FOUND", 
-"REPEATED_ID", 
-"REPEATED_OTU", 
-"MULTIPLE_ROOT_NODES", 
-"NO_ROOT_NODE", 
-"MULTIPLE_EDGES_FOR_NODES", 
-"CYCLE_DETECTED", 
-"DISCONNECTED_GRAPH_DETECTED", 
-"INCORRECT_ROOT_NODE_LABEL", 
-"TIP_WITHOUT_OTU", 
-"TIP_WITHOUT_OTT_ID", 
-"MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
-"NON_MONOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
-"INVALID_PROPERTY_VALUE", 
-"PROPERTY_VALUE_NOT_USEFUL", 
-"UNRECOGNIZED_PROPERTY_VALUE", 
-"MULTIPLE_TREES", 
-"UNRECOGNIZED_TAG", 
-"CONFLICTING_PROPERTY_VALUES", 
-"NO_TREES", 
-"DEPRECATED_PROPERTY", 
-"UNPARSEABLE_META", 
-"UNREACHABLE_NODE", 
-"INCORRECT_VALUE_TYPE", 
-"MISSING_CRUCIAL_CONTENT"
-], 
 "commandLine": [
 "--embed", 
-"--agent-only", 
-"-e", 
-"../mig-phyelesystem-scratch/826/validation.json", 
-"-o", 
-"../mig-phyelesystem-scratch/826/final.json", 
-"../mig-phyelesystem-scratch/826/v1.2.1-826.json"
+"--agent-only"
 ], 
 "otherProperty": [
 {
@@ -76,12 +39,17 @@
 }
 ]
 }, 
+"^ot:annotationEvents": {
+"annotation": []
+}, 
+"^ot:candidateTreeForSynthesis": [], 
 "^ot:curatorName": "Romina Gazis", 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S10803"
 }, 
-"^ot:focalClade": 1009227, 
-"^ot:focalCladeOTTTaxonName": "Lichenoconium", 
+"^ot:messages": {
+"message": []
+}, 
 "^ot:otusElementOrder": [
 "otus826"
 ], 
@@ -91,6 +59,7 @@
 }, 
 "^ot:studyPublicationReference": "Lawrey J., Diederich P., Nelsen M., Sikaroodi M., Gillevet P., Brand M., & Van den boom P. 2011. The obligately lichenicolous genus Lichenoconium represents a novel lineage in the Dothideomycetes. Fungal Biology, 115: 176-187.", 
 "^ot:studyYear": 2011, 
+"^ot:tag": [], 
 "^ot:treesElementOrder": [
 "trees826"
 ], 
@@ -148,25 +117,19 @@
 "otu198157": {
 "^ot:originalLabel": "Mycosphaerella fijiensis", 
 "^ot:ottId": 857565, 
-"^ot:ottTaxonName": "Pseudocercospora fijiensis", 
+"^ot:ottTaxonName": "Mycosphaerella fijiensis", 
 "^ot:treebaseOTUId": "Tl403644"
 }, 
 "otu198158": {
 "^ot:originalLabel": "Chlorociboria aeruginosa", 
-"^ot:ottId": 694200, 
-"^ot:ottTaxonName": "Chlorociboria aeruginosa", 
 "^ot:treebaseOTUId": "Tl403645"
 }, 
 "otu198159": {
 "^ot:originalLabel": "Lichenoconium erodens", 
-"^ot:ottId": 89341, 
-"^ot:ottTaxonName": "Lichenoconium erodens", 
 "^ot:treebaseOTUId": "Tl403646"
 }, 
 "otu198160": {
 "^ot:originalLabel": "Lichenoconium lecanorae", 
-"^ot:ottId": 663407, 
-"^ot:ottTaxonName": "Lichenoconium lecanorae", 
 "^ot:treebaseOTUId": "Tl403647"
 }, 
 "otu198161": {
@@ -231,8 +194,6 @@
 }, 
 "otu198171": {
 "^ot:originalLabel": "Lichenoconium aeruginosum", 
-"^ot:ottId": 89338, 
-"^ot:ottTaxonName": "Lichenoconium aeruginosum", 
 "^ot:treebaseOTUId": "Tl403658"
 }, 
 "otu198172": {
@@ -297,8 +258,6 @@
 }, 
 "otu198182": {
 "^ot:originalLabel": "Lichenoconium usneae", 
-"^ot:ottId": 663411, 
-"^ot:ottTaxonName": "Lichenoconium usneae", 
 "^ot:treebaseOTUId": "Tl403669"
 }, 
 "otu198183": {
@@ -321,8 +280,6 @@
 }, 
 "otu198186": {
 "^ot:originalLabel": "Diaporthe eres", 
-"^ot:ottId": 855272, 
-"^ot:ottTaxonName": "Diaporthe eres", 
 "^ot:treebaseOTUId": "Tl403673"
 }, 
 "otu198187": {
@@ -333,8 +290,6 @@
 }, 
 "otu198188": {
 "^ot:originalLabel": "Pleospora herbarum var herbarum", 
-"^ot:ottId": 442856, 
-"^ot:ottTaxonName": "Pleospora herbarum var. herbarum", 
 "^ot:treebaseOTUId": "Tl403675"
 }, 
 "otu198189": {
@@ -352,13 +307,13 @@
 "otu198191": {
 "^ot:originalLabel": "Glomerella cingulata", 
 "^ot:ottId": 1085557, 
-"^ot:ottTaxonName": "Glomerella cingulata", 
+"^ot:ottTaxonName": "Glomerella rufomaculans-vaccinii", 
 "^ot:treebaseOTUId": "Tl403678"
 }, 
 "otu198192": {
 "^ot:originalLabel": "Dendrographa leucophaea minor", 
 "^ot:ottId": 693387, 
-"^ot:ottTaxonName": "Dendrographa leucophaea f. minor", 
+"^ot:ottTaxonName": "Dendrographa minor", 
 "^ot:treebaseOTUId": "Tl403679"
 }, 
 "otu198193": {
@@ -388,7 +343,7 @@
 "otu198197": {
 "^ot:originalLabel": "Rhizopus oryzae", 
 "^ot:ottId": 530834, 
-"^ot:ottTaxonName": "Rhizopus oryzae", 
+"^ot:ottTaxonName": "Rhizopus liquefaciens", 
 "^ot:treebaseOTUId": "Tl403684"
 }, 
 "otu198198": {
@@ -429,8 +384,6 @@
 }, 
 "otu198204": {
 "^ot:originalLabel": "Kirschsteiniothelia aethiops", 
-"^ot:ottId": 295798, 
-"^ot:ottTaxonName": "Kirschsteiniothelia aethiops", 
 "^ot:treebaseOTUId": "Tl458140"
 }, 
 "otu198205": {
@@ -472,7 +425,7 @@
 "otu198211": {
 "^ot:originalLabel": "Cochliobolus sativus", 
 "^ot:ottId": 204741, 
-"^ot:ottTaxonName": "Bipolaris sorokiniana", 
+"^ot:ottTaxonName": "Cochliobolus sativus", 
 "^ot:treebaseOTUId": "Tl458147"
 }, 
 "otu198212": {
@@ -483,14 +436,12 @@
 }, 
 "otu198213": {
 "^ot:originalLabel": "Dendryphiella arenaria", 
-"^ot:ottId": 373409, 
-"^ot:ottTaxonName": "Dendryphiella arenaria", 
+"^ot:ottId": 3796670, 
+"^ot:ottTaxonName": "Paradendryphiella arenariae", 
 "^ot:treebaseOTUId": "Tl458149"
 }, 
 "otu198214": {
 "^ot:originalLabel": "Phyllobathelium anomalum", 
-"^ot:ottId": 695211, 
-"^ot:ottTaxonName": "Phyllobathelium anomalum", 
 "^ot:treebaseOTUId": "Tl458150"
 }, 
 "otu198215": {
@@ -531,7 +482,7 @@
 }, 
 "otu198221": {
 "^ot:originalLabel": "Elsinoe phaseoli", 
-"^ot:ottId": 663857, 
+"^ot:ottId": 3717454, 
 "^ot:ottTaxonName": "Elsinoe phaseoli", 
 "^ot:treebaseOTUId": "Tl458157"
 }, 
@@ -591,8 +542,6 @@
 }, 
 "otu198231": {
 "^ot:originalLabel": "Catinella olivacea", 
-"^ot:ottId": 430975, 
-"^ot:ottTaxonName": "Catinella olivacea", 
 "^ot:treebaseOTUId": "Tl458167"
 }, 
 "otu198232": {
@@ -603,8 +552,6 @@
 }, 
 "otu198233": {
 "^ot:originalLabel": "Tyrannosorus pinicola", 
-"^ot:ottId": 580431, 
-"^ot:ottTaxonName": "Tyrannosorus pinicola", 
 "^ot:treebaseOTUId": "Tl458169"
 }, 
 "otu198234": {
@@ -627,8 +574,6 @@
 }, 
 "otu198237": {
 "^ot:originalLabel": "Trypethelium nitidiusculum", 
-"^ot:ottId": 1042619, 
-"^ot:ottTaxonName": "Trypethelium nitidiusculum", 
 "^ot:treebaseOTUId": "Tl458173"
 }, 
 "otu198238": {
@@ -741,8 +686,6 @@
 }, 
 "otu198256": {
 "^ot:originalLabel": "Dendryphiopsis atra", 
-"^ot:ottId": 157492, 
-"^ot:ottTaxonName": "Dendryphiopsis atra", 
 "^ot:treebaseOTUId": "Tl458192"
 }, 
 "otu198257": {
@@ -753,8 +696,6 @@
 }, 
 "otu198258": {
 "^ot:originalLabel": "Flavobathelium epiphyllum", 
-"^ot:ottId": 314583, 
-"^ot:ottTaxonName": "Flavobathelium epiphyllum", 
 "^ot:treebaseOTUId": "Tl458194"
 }, 
 "otu198259": {
@@ -790,13 +731,13 @@
 "otu198264": {
 "^ot:originalLabel": "Sporormiella minima", 
 "^ot:ottId": 1071356, 
-"^ot:ottTaxonName": "Preussia minima", 
+"^ot:ottTaxonName": "Sporormiella minima", 
 "^ot:treebaseOTUId": "Tl458200"
 }, 
 "otu198265": {
 "^ot:originalLabel": "Dendrographa leucophaea minor 2", 
 "^ot:ottId": 693387, 
-"^ot:ottTaxonName": "Dendrographa leucophaea f. minor", 
+"^ot:ottTaxonName": "Dendrographa minor", 
 "^ot:treebaseOTUId": "Tl458201"
 }, 
 "otu198266": {
@@ -825,8 +766,6 @@
 }, 
 "otu198270": {
 "^ot:originalLabel": "Elsinoe centrolobi", 
-"^ot:ottId": 1027807, 
-"^ot:ottTaxonName": "Elsinoe centrolobi", 
 "^ot:treebaseOTUId": "Tl458206"
 }, 
 "otu198271": {
@@ -855,7 +794,7 @@
 }, 
 "otu198275": {
 "^ot:originalLabel": "Elsinoe veneta", 
-"^ot:ottId": 405881, 
+"^ot:ottId": 3717469, 
 "^ot:ottTaxonName": "Elsinoe veneta", 
 "^ot:treebaseOTUId": "Tl458211"
 }, 
@@ -890,10 +829,17 @@
 "treeById": {
 "tree1583": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "ML, LSU + mtSSU", 
 "^ot:inGroupClade": "node465940", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node465929", 
-"^ot:tag": "LSU", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [
+"LSU"
+], 
 "edgeBySourceId": {
 "node465929": {
 "edge465930": {
@@ -1722,10 +1668,17 @@
 }, 
 "tree1584": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "ML, LSU + mtSSU", 
 "^ot:inGroupClade": "node466033", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node466032", 
-"^ot:tag": "ML", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [
+"ML"
+], 
 "edgeBySourceId": {
 "node466032": {
 "edge466033": {

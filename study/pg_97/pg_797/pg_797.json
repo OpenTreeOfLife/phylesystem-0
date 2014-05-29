@@ -19,48 +19,11 @@
 "@id": "peyotl-validator", 
 "@name": "validate_ot_nexson.py", 
 "@url": "https://github.com/OpenTreeOfLife/peyotl", 
-"@version": "0.0.3a", 
+"@version": "0.0.4a", 
 "invocation": {
-"checksPerformed": [
-"MISSING_MANDATORY_KEY", 
-"MISSING_OPTIONAL_KEY", 
-"UNRECOGNIZED_KEY", 
-"MISSING_LIST_EXPECTED", 
-"DUPLICATING_SINGLETON_KEY", 
-"REFERENCED_ID_NOT_FOUND", 
-"REPEATED_ID", 
-"REPEATED_OTU", 
-"MULTIPLE_ROOT_NODES", 
-"NO_ROOT_NODE", 
-"MULTIPLE_EDGES_FOR_NODES", 
-"CYCLE_DETECTED", 
-"DISCONNECTED_GRAPH_DETECTED", 
-"INCORRECT_ROOT_NODE_LABEL", 
-"TIP_WITHOUT_OTU", 
-"TIP_WITHOUT_OTT_ID", 
-"MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
-"NON_MONOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
-"INVALID_PROPERTY_VALUE", 
-"PROPERTY_VALUE_NOT_USEFUL", 
-"UNRECOGNIZED_PROPERTY_VALUE", 
-"MULTIPLE_TREES", 
-"UNRECOGNIZED_TAG", 
-"CONFLICTING_PROPERTY_VALUES", 
-"NO_TREES", 
-"DEPRECATED_PROPERTY", 
-"UNPARSEABLE_META", 
-"UNREACHABLE_NODE", 
-"INCORRECT_VALUE_TYPE", 
-"MISSING_CRUCIAL_CONTENT"
-], 
 "commandLine": [
 "--embed", 
-"--agent-only", 
-"-e", 
-"../mig-phyelesystem-scratch/797/validation.json", 
-"-o", 
-"../mig-phyelesystem-scratch/797/final.json", 
-"../mig-phyelesystem-scratch/797/v1.2.1-797.json"
+"--agent-only"
 ], 
 "otherProperty": [
 {
@@ -76,12 +39,17 @@
 }
 ]
 }, 
+"^ot:annotationEvents": {
+"annotation": []
+}, 
+"^ot:candidateTreeForSynthesis": [], 
 "^ot:curatorName": "Romina Gazis", 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S1938"
 }, 
-"^ot:focalClade": 1883078, 
-"^ot:focalCladeOTTTaxonName": "Stegonsporium", 
+"^ot:messages": {
+"message": []
+}, 
 "^ot:otusElementOrder": [
 "otus797"
 ], 
@@ -91,6 +59,7 @@
 }, 
 "^ot:studyPublicationReference": "Voglmayr H., & Jaklitsch W.M. 2008. Prosthecium species with Stegonsporium anamorphs on Acer. Mycological Research, 111 (2): 154-162.", 
 "^ot:studyYear": 2008, 
+"^ot:tag": [], 
 "^ot:treesElementOrder": [
 "trees797"
 ], 
@@ -99,8 +68,6 @@
 "otuById": {
 "otu196309": {
 "^ot:originalLabel": "Valsa ambiens", 
-"^ot:ottId": 822584, 
-"^ot:ottTaxonName": "Valsa ambiens", 
 "^ot:treebaseOTUId": "Tl200278"
 }, 
 "otu196310": {
@@ -117,8 +84,8 @@
 }, 
 "otu196312": {
 "^ot:originalLabel": "Ophiovalsa suffusa", 
-"^ot:ottId": 868400, 
-"^ot:ottTaxonName": "Ophiovalsa suffusa", 
+"^ot:ottId": 982558, 
+"^ot:ottTaxonName": "Cryptosporella suffusa", 
 "^ot:treebaseOTUId": "Tl200284"
 }, 
 "otu196313": {
@@ -159,8 +126,6 @@
 }, 
 "otu196319": {
 "^ot:originalLabel": "Leucostoma niveum", 
-"^ot:ottId": 305248, 
-"^ot:ottTaxonName": "Valsa nivea", 
 "^ot:treebaseOTUId": "Tl200301"
 }, 
 "otu196320": {
@@ -172,7 +137,7 @@
 "otu196321": {
 "^ot:originalLabel": "Cryptodiaporthe aesculi", 
 "^ot:ottId": 725104, 
-"^ot:ottTaxonName": "Plagiostoma aesculi", 
+"^ot:ottTaxonName": "Diaporthe aesculi", 
 "^ot:treebaseOTUId": "Tl200311"
 }, 
 "otu196322": {
@@ -183,8 +148,6 @@
 }, 
 "otu196323": {
 "^ot:originalLabel": "Diaporthe eres", 
-"^ot:ottId": 855272, 
-"^ot:ottTaxonName": "Diaporthe eres", 
 "^ot:treebaseOTUId": "Tl200313"
 }, 
 "otu196324": {
@@ -213,8 +176,8 @@
 }, 
 "otu196328": {
 "^ot:originalLabel": "Linospora capreae", 
-"^ot:ottId": 822573, 
-"^ot:ottTaxonName": "Linospora capreae", 
+"^ot:ottId": 5308634, 
+"^ot:ottTaxonName": "Linospora saligna", 
 "^ot:treebaseOTUId": "Tl4935"
 }, 
 "otu196329": {
@@ -437,8 +400,14 @@
 "treeById": {
 "tree1502": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "MP, LSU", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node459751", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node459751": {
 "edge459752": {
@@ -843,8 +812,14 @@
 }, 
 "tree1503": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "MP, EF-1", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node459808", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node459808": {
 "edge459809": {
@@ -1235,9 +1210,15 @@
 }, 
 "tree1504": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "MP, ITS (strict)", 
 "^ot:inGroupClade": "node459865", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node459863", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node459863": {
 "edge459864": {
@@ -1467,9 +1448,15 @@
 }, 
 "tree5670": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "MP, LSU (rooted)", 
 "^ot:inGroupClade": "node977805", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node977801", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node977801": {
 "edge977802": {
@@ -1881,9 +1868,15 @@
 }, 
 "tree5671": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "MP, EF-1 (rooted)", 
 "^ot:inGroupClade": "node977865", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node977859", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node977859": {
 "edge977860": {

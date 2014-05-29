@@ -19,48 +19,11 @@
 "@id": "peyotl-validator", 
 "@name": "validate_ot_nexson.py", 
 "@url": "https://github.com/OpenTreeOfLife/peyotl", 
-"@version": "0.0.3a", 
+"@version": "0.0.4a", 
 "invocation": {
-"checksPerformed": [
-"MISSING_MANDATORY_KEY", 
-"MISSING_OPTIONAL_KEY", 
-"UNRECOGNIZED_KEY", 
-"MISSING_LIST_EXPECTED", 
-"DUPLICATING_SINGLETON_KEY", 
-"REFERENCED_ID_NOT_FOUND", 
-"REPEATED_ID", 
-"REPEATED_OTU", 
-"MULTIPLE_ROOT_NODES", 
-"NO_ROOT_NODE", 
-"MULTIPLE_EDGES_FOR_NODES", 
-"CYCLE_DETECTED", 
-"DISCONNECTED_GRAPH_DETECTED", 
-"INCORRECT_ROOT_NODE_LABEL", 
-"TIP_WITHOUT_OTU", 
-"TIP_WITHOUT_OTT_ID", 
-"MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
-"NON_MONOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
-"INVALID_PROPERTY_VALUE", 
-"PROPERTY_VALUE_NOT_USEFUL", 
-"UNRECOGNIZED_PROPERTY_VALUE", 
-"MULTIPLE_TREES", 
-"UNRECOGNIZED_TAG", 
-"CONFLICTING_PROPERTY_VALUES", 
-"NO_TREES", 
-"DEPRECATED_PROPERTY", 
-"UNPARSEABLE_META", 
-"UNREACHABLE_NODE", 
-"INCORRECT_VALUE_TYPE", 
-"MISSING_CRUCIAL_CONTENT"
-], 
 "commandLine": [
 "--embed", 
-"--agent-only", 
-"-e", 
-"../mig-phyelesystem-scratch/474/validation.json", 
-"-o", 
-"../mig-phyelesystem-scratch/474/final.json", 
-"../mig-phyelesystem-scratch/474/v1.2.1-474.json"
+"--agent-only"
 ], 
 "otherProperty": [
 {
@@ -76,12 +39,19 @@
 }
 ]
 }, 
+"^ot:annotationEvents": {
+"annotation": []
+}, 
+"^ot:candidateTreeForSynthesis": [], 
 "^ot:curatorName": "Romina Gazis", 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S1998"
 }, 
 "^ot:focalClade": 868675, 
 "^ot:focalCladeOTTTaxonName": "Laetiporus", 
+"^ot:messages": {
+"message": []
+}, 
 "^ot:otusElementOrder": [
 "otus474"
 ], 
@@ -91,6 +61,7 @@
 }, 
 "^ot:studyPublicationReference": "Lindner D., & Banik M. 2008. Molecular phylogeny of Laetiporus and other brown-rot polypore genera in North America. Mycologia, 100(3): 417-430.", 
 "^ot:studyYear": 2008, 
+"^ot:tag": [], 
 "^ot:treesElementOrder": [
 "trees474"
 ], 
@@ -157,6 +128,8 @@
 }, 
 "otu162453": {
 "^ot:originalLabel": "Laetiporus cincinnatus 46-1104", 
+"^ot:ottId": 343979, 
+"^ot:ottTaxonName": "Laetiporus sulphureus", 
 "^ot:treebaseOTUId": "Tl88507"
 }, 
 "otu162454": {
@@ -203,14 +176,20 @@
 }, 
 "otu162461": {
 "^ot:originalLabel": "Laetiporus cincinnatus WS-1", 
+"^ot:ottId": 343979, 
+"^ot:ottTaxonName": "Laetiporus sulphureus", 
 "^ot:treebaseOTUId": "Tl88515"
 }, 
 "otu162462": {
 "^ot:originalLabel": "Laetiporus cincinnatus MAS-1", 
+"^ot:ottId": 343979, 
+"^ot:ottTaxonName": "Laetiporus sulphureus", 
 "^ot:treebaseOTUId": "Tl88516"
 }, 
 "otu162463": {
 "^ot:originalLabel": "Laetiporus cincinnatus DA-37", 
+"^ot:ottId": 343979, 
+"^ot:ottTaxonName": "Laetiporus sulphureus", 
 "^ot:treebaseOTUId": "Tl88517"
 }, 
 "otu162464": {
@@ -361,6 +340,8 @@
 }, 
 "otu162489": {
 "^ot:originalLabel": "Wolfiporia cocos MD-106", 
+"^ot:ottId": 5299874, 
+"^ot:ottTaxonName": "Wolfiporia extensa", 
 "^ot:treebaseOTUId": "Tl91636"
 }, 
 "otu162490": {
@@ -449,14 +430,20 @@
 }, 
 "otu162504": {
 "^ot:originalLabel": "Wolfiporia cocos MD-275", 
+"^ot:ottId": 5299874, 
+"^ot:ottTaxonName": "Wolfiporia extensa", 
 "^ot:treebaseOTUId": "Tl91651"
 }, 
 "otu162505": {
 "^ot:originalLabel": "Parmastomyces transmutans AF518635", 
+"^ot:ottId": 802425, 
+"^ot:ottTaxonName": "Parmastomyces mollissimus", 
 "^ot:treebaseOTUId": "Tl91652"
 }, 
 "otu162506": {
 "^ot:originalLabel": "Wolfiporia cocos AF393081", 
+"^ot:ottId": 5299874, 
+"^ot:ottTaxonName": "Wolfiporia extensa", 
 "^ot:treebaseOTUId": "Tl91653"
 }, 
 "otu162507": {
@@ -528,9 +515,15 @@
 "treeById": {
 "tree5593": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "MP, LSU (rooted)", 
 "^ot:inGroupClade": "node966598", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node966595", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node966595": {
 "edge966596": {
@@ -1187,8 +1180,14 @@
 }, 
 "tree625": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "MP, LSU", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node318466", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node318466": {
 "edge318467": {
@@ -1845,9 +1844,15 @@
 }, 
 "tree626": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "MP, ITS", 
 "^ot:inGroupClade": "node318560", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node318559", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node318559": {
 "edge318560": {
@@ -2364,9 +2369,14 @@
 }, 
 "tree627": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "MP, ITS + mtSSU + LSU", 
 "^ot:inGroupClade": "node318633", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node318632", 
+"^ot:specifiedRoot": "", 
 "^ot:tag": [
 "MP", 
 "LSU", 

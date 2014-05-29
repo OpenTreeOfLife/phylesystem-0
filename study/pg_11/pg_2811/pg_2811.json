@@ -19,48 +19,11 @@
 "@id": "peyotl-validator", 
 "@name": "validate_ot_nexson.py", 
 "@url": "https://github.com/OpenTreeOfLife/peyotl", 
-"@version": "0.0.3a", 
+"@version": "0.0.4a", 
 "invocation": {
-"checksPerformed": [
-"MISSING_MANDATORY_KEY", 
-"MISSING_OPTIONAL_KEY", 
-"UNRECOGNIZED_KEY", 
-"MISSING_LIST_EXPECTED", 
-"DUPLICATING_SINGLETON_KEY", 
-"REFERENCED_ID_NOT_FOUND", 
-"REPEATED_ID", 
-"REPEATED_OTU", 
-"MULTIPLE_ROOT_NODES", 
-"NO_ROOT_NODE", 
-"MULTIPLE_EDGES_FOR_NODES", 
-"CYCLE_DETECTED", 
-"DISCONNECTED_GRAPH_DETECTED", 
-"INCORRECT_ROOT_NODE_LABEL", 
-"TIP_WITHOUT_OTU", 
-"TIP_WITHOUT_OTT_ID", 
-"MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
-"NON_MONOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
-"INVALID_PROPERTY_VALUE", 
-"PROPERTY_VALUE_NOT_USEFUL", 
-"UNRECOGNIZED_PROPERTY_VALUE", 
-"MULTIPLE_TREES", 
-"UNRECOGNIZED_TAG", 
-"CONFLICTING_PROPERTY_VALUES", 
-"NO_TREES", 
-"DEPRECATED_PROPERTY", 
-"UNPARSEABLE_META", 
-"UNREACHABLE_NODE", 
-"INCORRECT_VALUE_TYPE", 
-"MISSING_CRUCIAL_CONTENT"
-], 
 "commandLine": [
 "--embed", 
-"--agent-only", 
-"-e", 
-"../mig-phyelesystem-scratch/2811/validation.json", 
-"-o", 
-"../mig-phyelesystem-scratch/2811/final.json", 
-"../mig-phyelesystem-scratch/2811/v1.2.1-2811.json"
+"--agent-only"
 ], 
 "otherProperty": [
 {
@@ -73,98 +36,19 @@
 }
 ]
 }
-}, 
-{
-"@description": "Web-based interface for submitting, editing, and reviewing studies in the Open Tree of Life project.", 
-"@id": "opentree-curation-webapp", 
-"@name": "OpenTree curation webapp", 
-"@url": "https://github.com/OpenTreeOfLife/opentree", 
-"@version": "0.0.0"
 }
 ]
 }, 
 "^ot:annotationEvents": {
-"annotation": [
-{
-"@dateCreated": "2014-05-21T02:06:38.273Z", 
-"@description": "Aids for mapping study OTUs to OTT taxa", 
-"@id": "otu-mapping-hints", 
-"@passedChecks": true, 
-"@preserve": true, 
-"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
-"message": [
-{
-"@code": "OTU_MAPPING_HINTS", 
-"@humanMessageType": "NONE", 
-"@severity": "INFO", 
-"data": {
-"searchContext": {
-"$": "All life"
+"annotation": []
 }, 
-"substitutions": {
-"substitution": [
-{
-"@active": false, 
-"@valid": true, 
-"new": {
-"$": ""
-}, 
-"old": {
-"$": ""
-}
-}
-]
-}
-}, 
-"refersTo": {
-"@top": {
-"$": "meta"
-}
-}
-}
-]
-}, 
-{
-"@dateCreated": "2014-05-21T02:06:38.273Z", 
-"@description": "Describes supporting data files for this study", 
-"@id": "supporting-files-metadata", 
-"@passedChecks": true, 
-"@preserve": true, 
-"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
-"message": [
-{
-"@code": "SUPPORTING_FILE_INFO", 
-"@humanMessageType": "NONE", 
-"@severity": "INFO", 
-"data": {
-"@movedToPermanentArchive": false, 
-"files": {
-"file": []
-}
-}, 
-"refersTo": {
-"@top": {
-"$": "meta"
-}
-}
-}
-]
-}
-]
-}, 
-"^ot:candidateTreeForSynthesis": {
-"candidate": []
-}, 
-"^ot:curatorName": [
-"Joseph Brown", 
-"Jim Allman"
-], 
+"^ot:candidateTreeForSynthesis": [], 
+"^ot:curatorName": "Joseph Brown", 
 "^ot:focalClade": 130014, 
 "^ot:focalCladeOTTTaxonName": "Vespidae", 
 "^ot:messages": {
 "message": []
 }, 
-"^ot:notIntendedForSynthesis": false, 
 "^ot:otusElementOrder": [
 "otus2811"
 ], 
@@ -172,7 +56,7 @@
 "^ot:studyPublication": {
 "@href": "http://dx.doi.org/10.1016/j.ympev.2014.01.007"
 }, 
-"^ot:studyPublicationReference": "Federico Lopez-Osorio, Kurt M. Pickett, James M. Carpenter, Bryan A. Ballif, Ingi Agnarsson. 2014. Phylogenetic relationships of yellowjackets inferred from nine loci (Hymenoptera: Vespidae, Vespinae, Vespula and Dolichovespula). Molecular Phylogenetics and Evolution", 
+"^ot:studyPublicationReference": "Lopez-Osorio, Federico, Kurt M. Pickett, James M. Carpenter, Bryan A. Ballif, Ingi Agnarsson. 2014. Phylogenetic relationships of yellowjackets inferred from nine loci (Hymenoptera: Vespidae, Vespinae, Vespula and Dolichovespula). Molecular Phylogenetics and Evolution 73: 190-201.", 
 "^ot:studyYear": 2014, 
 "^ot:tag": [], 
 "^ot:treesElementOrder": [
@@ -182,103 +66,103 @@
 "otus2811": {
 "otuById": {
 "otu417523": {
-"@label": "", 
 "^ot:originalLabel": "Polistes metricus", 
+"^ot:ottId": 937652, 
 "^ot:ottTaxonName": "Polistes metricus"
 }, 
 "otu417524": {
-"@label": "", 
 "^ot:originalLabel": "Polistes dorsalis californicus", 
+"^ot:ottId": 379222, 
 "^ot:ottTaxonName": "Polistes dorsalis californicus"
 }, 
 "otu417525": {
-"@label": "", 
 "^ot:originalLabel": "Polistes fuscatus", 
+"^ot:ottId": 550432, 
 "^ot:ottTaxonName": "Polistes fuscatus"
 }, 
 "otu417526": {
-"@label": "", 
 "^ot:originalLabel": "Polistes dominula", 
+"^ot:ottId": 75080, 
 "^ot:ottTaxonName": "Polistes dominula"
 }, 
 "otu417527": {
-"@label": "", 
 "^ot:originalLabel": "Vespula squamosa", 
+"^ot:ottId": 1084249, 
 "^ot:ottTaxonName": "Vespula squamosa"
 }, 
 "otu417528": {
-"@label": "", 
 "^ot:originalLabel": "Vespula vidua", 
+"^ot:ottId": 1084248, 
 "^ot:ottTaxonName": "Vespula vidua"
 }, 
 "otu417529": {
-"@label": "", 
 "^ot:originalLabel": "Vespula acadica", 
+"^ot:ottId": 892787, 
 "^ot:ottTaxonName": "Vespula acadica"
 }, 
 "otu417530": {
-"@label": "", 
 "^ot:originalLabel": "Vespula consobrina", 
+"^ot:ottId": 3251184, 
 "^ot:ottTaxonName": "Vespula consobrina"
 }, 
 "otu417531": {
-"@label": "", 
 "^ot:originalLabel": "Vespula intermedia", 
+"^ot:ottId": 892793, 
 "^ot:ottTaxonName": "Vespula intermedia"
 }, 
 "otu417532": {
-"@label": "", 
 "^ot:originalLabel": "Vespula flaviceps", 
+"^ot:ottId": 3251175, 
 "^ot:ottTaxonName": "Vespula flaviceps"
 }, 
 "otu417533": {
-"@label": "", 
 "^ot:originalLabel": "Vespula germanica", 
+"^ot:ottId": 1084243, 
 "^ot:ottTaxonName": "Vespula germanica"
 }, 
 "otu417534": {
-"@label": "", 
 "^ot:originalLabel": "Vespula pensylvanica", 
+"^ot:ottId": 1084241, 
 "^ot:ottTaxonName": "Vespula pensylvanica"
 }, 
 "otu417535": {
-"@label": "", 
 "^ot:originalLabel": "Vespula maculifrons", 
+"^ot:ottId": 52844, 
 "^ot:ottTaxonName": "Vespula maculifrons"
 }, 
 "otu417536": {
-"@label": "", 
 "^ot:originalLabel": "Vespula alascensis", 
+"^ot:ottId": 3251182, 
 "^ot:ottTaxonName": "Vespula alascensis"
 }, 
 "otu417537": {
-"@label": "", 
 "^ot:originalLabel": "Vespula flavopilosa", 
+"^ot:ottId": 1084244, 
 "^ot:ottTaxonName": "Vespula flavopilosa"
 }, 
 "otu417538": {
-"@label": "", 
 "^ot:originalLabel": "Provespa anomala", 
+"^ot:ottId": 377684, 
 "^ot:ottTaxonName": "Provespa anomala"
 }, 
 "otu417539": {
-"@label": "", 
 "^ot:originalLabel": "Provespa barthelemyi", 
+"^ot:ottId": 954896, 
 "^ot:ottTaxonName": "Provespa barthelemyi"
 }, 
 "otu417540": {
-"@label": "", 
 "^ot:originalLabel": "Vespa affinis", 
+"^ot:ottId": 3251022, 
 "^ot:ottTaxonName": "Vespa affinis"
 }, 
 "otu417541": {
-"@label": "", 
 "^ot:originalLabel": "Vespa basalis", 
+"^ot:ottId": 573515, 
 "^ot:ottTaxonName": "Vespa basalis"
 }, 
 "otu417542": {
-"@label": "", 
 "^ot:originalLabel": "Vespa crabro", 
+"^ot:ottId": 573512, 
 "^ot:ottTaxonName": "Vespa crabro"
 }, 
 "otu417543": {
@@ -332,7 +216,6 @@
 ], 
 "treeById": {
 "tree6533": {
-"@label": "Untitled (tree6533)", 
 "@xsi:type": "nex:FloatTree", 
 "^ot:branchLengthDescription": "", 
 "^ot:branchLengthMode": "ot:substitutionCount", 
@@ -343,7 +226,6 @@
 "^ot:rootNodeId": "node1133234", 
 "^ot:specifiedRoot": "", 
 "^ot:tag": [], 
-"^ot:unrootedTree": true, 
 "edgeBySourceId": {
 "node1133234": {
 "edge1133235": {

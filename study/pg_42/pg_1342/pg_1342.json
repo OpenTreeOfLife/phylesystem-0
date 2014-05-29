@@ -19,48 +19,11 @@
 "@id": "peyotl-validator", 
 "@name": "validate_ot_nexson.py", 
 "@url": "https://github.com/OpenTreeOfLife/peyotl", 
-"@version": "0.0.3a", 
+"@version": "0.0.4a", 
 "invocation": {
-"checksPerformed": [
-"MISSING_MANDATORY_KEY", 
-"MISSING_OPTIONAL_KEY", 
-"UNRECOGNIZED_KEY", 
-"MISSING_LIST_EXPECTED", 
-"DUPLICATING_SINGLETON_KEY", 
-"REFERENCED_ID_NOT_FOUND", 
-"REPEATED_ID", 
-"REPEATED_OTU", 
-"MULTIPLE_ROOT_NODES", 
-"NO_ROOT_NODE", 
-"MULTIPLE_EDGES_FOR_NODES", 
-"CYCLE_DETECTED", 
-"DISCONNECTED_GRAPH_DETECTED", 
-"INCORRECT_ROOT_NODE_LABEL", 
-"TIP_WITHOUT_OTU", 
-"TIP_WITHOUT_OTT_ID", 
-"MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
-"NON_MONOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
-"INVALID_PROPERTY_VALUE", 
-"PROPERTY_VALUE_NOT_USEFUL", 
-"UNRECOGNIZED_PROPERTY_VALUE", 
-"MULTIPLE_TREES", 
-"UNRECOGNIZED_TAG", 
-"CONFLICTING_PROPERTY_VALUES", 
-"NO_TREES", 
-"DEPRECATED_PROPERTY", 
-"UNPARSEABLE_META", 
-"UNREACHABLE_NODE", 
-"INCORRECT_VALUE_TYPE", 
-"MISSING_CRUCIAL_CONTENT"
-], 
 "commandLine": [
 "--embed", 
-"--agent-only", 
-"-e", 
-"../mig-phyelesystem-scratch/1342/validation.json", 
-"-o", 
-"../mig-phyelesystem-scratch/1342/final.json", 
-"../mig-phyelesystem-scratch/1342/v1.2.1-1342.json"
+"--agent-only"
 ], 
 "otherProperty": [
 {
@@ -76,12 +39,19 @@
 }
 ]
 }, 
+"^ot:annotationEvents": {
+"annotation": []
+}, 
+"^ot:candidateTreeForSynthesis": [], 
 "^ot:curatorName": "Chris Owen", 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S1880"
 }, 
 "^ot:focalClade": 155737, 
 "^ot:focalCladeOTTTaxonName": "Lophotrochozoa", 
+"^ot:messages": {
+"message": []
+}, 
 "^ot:otusElementOrder": [
 "otus1342"
 ], 
@@ -89,8 +59,9 @@
 "^ot:studyPublication": {
 "@href": "http://dx.doi.org/10.1016/j.ympev.2007.09.004"
 }, 
-"^ot:studyPublicationReference": "Helmkampf M., Bruchhaus I., & Hausdorf B. 2008. Multigene analysis of lophophorate and chaetognath phylogenetic relationships. Molecular Phylogenetics and Evolution 46 (1): 206-214.", 
+"^ot:studyPublicationReference": "Helmkampf, M., Bruchhaus I., & Hausdorf B. 2008. Multigene analysis of lophophorate and chaetognath phylogenetic relationships. Molecular Phylogenetics and Evolution 46 (1): 206-214.", 
 "^ot:studyYear": 2008, 
+"^ot:tag": [], 
 "^ot:treesElementOrder": [
 "trees1342"
 ], 
@@ -171,6 +142,8 @@
 }, 
 "otu243693": {
 "^ot:originalLabel": "Saccharomyces cerevisiae", 
+"^ot:ottId": 908549, 
+"^ot:ottTaxonName": "Saccharomyces cerevisiae", 
 "^ot:treebaseOTUId": "Tl195047"
 }, 
 "otu243694": {
@@ -217,6 +190,8 @@
 }, 
 "otu243701": {
 "^ot:originalLabel": "Microciona prolifera", 
+"^ot:ottId": 2836842, 
+"^ot:ottTaxonName": "Clathria prolifera", 
 "^ot:treebaseOTUId": "Tl38979"
 }, 
 "otu243702": {
@@ -332,9 +307,14 @@
 "treeById": {
 "tree2672": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
 "^ot:branchLengthMode": "ot:posteriorSupport", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "Fig. 3", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node591507", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node591507": {
 "edge591508": {
@@ -865,10 +845,15 @@
 }, 
 "tree2673": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
 "^ot:branchLengthMode": "ot:bootstrapValues", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "Fig. 2", 
 "^ot:inGroupClade": "node591584", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node591582", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node591582": {
 "edge591583": {

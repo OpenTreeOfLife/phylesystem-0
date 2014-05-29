@@ -19,48 +19,11 @@
 "@id": "peyotl-validator", 
 "@name": "validate_ot_nexson.py", 
 "@url": "https://github.com/OpenTreeOfLife/peyotl", 
-"@version": "0.0.3a", 
+"@version": "0.0.4a", 
 "invocation": {
-"checksPerformed": [
-"MISSING_MANDATORY_KEY", 
-"MISSING_OPTIONAL_KEY", 
-"UNRECOGNIZED_KEY", 
-"MISSING_LIST_EXPECTED", 
-"DUPLICATING_SINGLETON_KEY", 
-"REFERENCED_ID_NOT_FOUND", 
-"REPEATED_ID", 
-"REPEATED_OTU", 
-"MULTIPLE_ROOT_NODES", 
-"NO_ROOT_NODE", 
-"MULTIPLE_EDGES_FOR_NODES", 
-"CYCLE_DETECTED", 
-"DISCONNECTED_GRAPH_DETECTED", 
-"INCORRECT_ROOT_NODE_LABEL", 
-"TIP_WITHOUT_OTU", 
-"TIP_WITHOUT_OTT_ID", 
-"MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
-"NON_MONOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
-"INVALID_PROPERTY_VALUE", 
-"PROPERTY_VALUE_NOT_USEFUL", 
-"UNRECOGNIZED_PROPERTY_VALUE", 
-"MULTIPLE_TREES", 
-"UNRECOGNIZED_TAG", 
-"CONFLICTING_PROPERTY_VALUES", 
-"NO_TREES", 
-"DEPRECATED_PROPERTY", 
-"UNPARSEABLE_META", 
-"UNREACHABLE_NODE", 
-"INCORRECT_VALUE_TYPE", 
-"MISSING_CRUCIAL_CONTENT"
-], 
 "commandLine": [
 "--embed", 
-"--agent-only", 
-"-e", 
-"../mig-phyelesystem-scratch/1750/validation.json", 
-"-o", 
-"../mig-phyelesystem-scratch/1750/final.json", 
-"../mig-phyelesystem-scratch/1750/v1.2.1-1750.json"
+"--agent-only"
 ], 
 "otherProperty": [
 {
@@ -76,12 +39,19 @@
 }
 ]
 }, 
+"^ot:annotationEvents": {
+"annotation": []
+}, 
+"^ot:candidateTreeForSynthesis": [], 
 "^ot:curatorName": "Romina Gazis", 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S808"
 }, 
 "^ot:focalClade": 103002, 
 "^ot:focalCladeOTTTaxonName": "Diaporthales", 
+"^ot:messages": {
+"message": []
+}, 
 "^ot:otusElementOrder": [
 "otus1750"
 ], 
@@ -89,8 +59,9 @@
 "^ot:studyPublication": {
 "@href": "http://dx.doi.org/10.2307/3761657"
 }, 
-"^ot:studyPublicationReference": "Zhang N., & Blackwell M. 2001. Molecular phylogeny of dogwood anthracnose fungus (Discula destructiva) and the Diaporthales. Mycologia, 93: 355-365.", 
+"^ot:studyPublicationReference": "Zhang, N., & Blackwell M. 2001. Molecular phylogeny of dogwood anthracnose fungus (Discula destructiva) and the Diaporthales. Mycologia 93: 355-365.", 
 "^ot:studyYear": 2001, 
+"^ot:tag": [], 
 "^ot:treesElementOrder": [
 "trees1750"
 ], 
@@ -145,6 +116,8 @@
 }, 
 "otu273590": {
 "^ot:originalLabel": "Ophiostoma piliferum", 
+"^ot:ottId": 5316941, 
+"^ot:ottTaxonName": "Ceratocystis pilifera", 
 "^ot:treebaseOTUId": "Tl127048"
 }, 
 "otu273591": {
@@ -189,6 +162,8 @@
 }, 
 "otu273598": {
 "^ot:originalLabel": "Endothia gyrosa L42443", 
+"^ot:ottId": 5316851, 
+"^ot:ottTaxonName": "Endothia radicalis", 
 "^ot:treebaseOTUId": "Tl127068"
 }, 
 "otu273599": {
@@ -203,6 +178,8 @@
 }, 
 "otu273601": {
 "^ot:originalLabel": "Amphiporthe castanea", 
+"^ot:ottId": 5316717, 
+"^ot:ottTaxonName": "Cryptodiaporthe castanea", 
 "^ot:treebaseOTUId": "Tl127075"
 }, 
 "otu273602": {
@@ -237,10 +214,14 @@
 }, 
 "otu273607": {
 "^ot:originalLabel": "Podospora anserina", 
+"^ot:ottId": 155361, 
+"^ot:ottTaxonName": "Podospora pauciseta", 
 "^ot:treebaseOTUId": "Tl127089"
 }, 
 "otu273608": {
 "^ot:originalLabel": "Linospora capreae", 
+"^ot:ottId": 5308634, 
+"^ot:ottTaxonName": "Linospora saligna", 
 "^ot:treebaseOTUId": "Tl127090"
 }, 
 "otu273609": {
@@ -353,6 +334,8 @@
 }, 
 "otu273628": {
 "^ot:originalLabel": "Ophiostoma piliferum U20377", 
+"^ot:ottId": 5316941, 
+"^ot:ottTaxonName": "Ceratocystis pilifera", 
 "^ot:treebaseOTUId": "Tl4955"
 }, 
 "otu273629": {
@@ -480,9 +463,15 @@
 "treeById": {
 "tree3523": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "MP, SSU (strict)", 
 "^ot:inGroupClade": "node679873", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node679868", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node679868": {
 "edge679869": {
@@ -1104,9 +1093,15 @@
 }, 
 "tree3524": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "MP, LSU", 
 "^ot:inGroupClade": "node679961", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node679956", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node679956": {
 "edge679957": {
@@ -1427,10 +1422,17 @@
 }, 
 "tree3525": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "MP, LSU + SSU", 
 "^ot:inGroupClade": "node680006", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node680001", 
-"^ot:tag": "Choose me", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [
+"Choose me"
+], 
 "edgeBySourceId": {
 "node680001": {
 "edge680002": {
@@ -1758,9 +1760,15 @@
 }, 
 "tree3526": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "MP, RPB2", 
 "^ot:inGroupClade": "node680052", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node680047", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node680047": {
 "edge680048": {

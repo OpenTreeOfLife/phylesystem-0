@@ -19,48 +19,11 @@
 "@id": "peyotl-validator", 
 "@name": "validate_ot_nexson.py", 
 "@url": "https://github.com/OpenTreeOfLife/peyotl", 
-"@version": "0.0.3a", 
+"@version": "0.0.4a", 
 "invocation": {
-"checksPerformed": [
-"MISSING_MANDATORY_KEY", 
-"MISSING_OPTIONAL_KEY", 
-"UNRECOGNIZED_KEY", 
-"MISSING_LIST_EXPECTED", 
-"DUPLICATING_SINGLETON_KEY", 
-"REFERENCED_ID_NOT_FOUND", 
-"REPEATED_ID", 
-"REPEATED_OTU", 
-"MULTIPLE_ROOT_NODES", 
-"NO_ROOT_NODE", 
-"MULTIPLE_EDGES_FOR_NODES", 
-"CYCLE_DETECTED", 
-"DISCONNECTED_GRAPH_DETECTED", 
-"INCORRECT_ROOT_NODE_LABEL", 
-"TIP_WITHOUT_OTU", 
-"TIP_WITHOUT_OTT_ID", 
-"MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
-"NON_MONOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
-"INVALID_PROPERTY_VALUE", 
-"PROPERTY_VALUE_NOT_USEFUL", 
-"UNRECOGNIZED_PROPERTY_VALUE", 
-"MULTIPLE_TREES", 
-"UNRECOGNIZED_TAG", 
-"CONFLICTING_PROPERTY_VALUES", 
-"NO_TREES", 
-"DEPRECATED_PROPERTY", 
-"UNPARSEABLE_META", 
-"UNREACHABLE_NODE", 
-"INCORRECT_VALUE_TYPE", 
-"MISSING_CRUCIAL_CONTENT"
-], 
 "commandLine": [
 "--embed", 
-"--agent-only", 
-"-e", 
-"../mig-phyelesystem-scratch/1198/validation.json", 
-"-o", 
-"../mig-phyelesystem-scratch/1198/final.json", 
-"../mig-phyelesystem-scratch/1198/v1.2.1-1198.json"
+"--agent-only"
 ], 
 "otherProperty": [
 {
@@ -76,9 +39,16 @@
 }
 ]
 }, 
+"^ot:annotationEvents": {
+"annotation": []
+}, 
+"^ot:candidateTreeForSynthesis": [], 
 "^ot:curatorName": "Romina Gazis", 
 "^ot:focalClade": 439373, 
 "^ot:focalCladeOTTTaxonName": "Ascomycota", 
+"^ot:messages": {
+"message": []
+}, 
 "^ot:otusElementOrder": [
 "otus1198"
 ], 
@@ -86,8 +56,9 @@
 "^ot:studyPublication": {
 "@href": "http://dx.doi.org/10.3767/003158511X581723"
 }, 
-"^ot:studyPublicationReference": "Crous, P. W., J. Z. Groenewald, R. G. Shivas, J. Edwards, K. A. Seifert, A. C. Alfenas, R. F. Alfenas et al. \"Fungal Planet description sheets: 69\u201391.\" Persoonia: Molecular Phylogeny and Evolution of Fungi 26 (2011): 108.", 
+"^ot:studyPublicationReference": "Crous, P. W., J. Z. Groenewald, R. G. Shivas, J. Edwards, K. A. Seifert, A. C. Alfenas, R. F. Alfenas et al. 2011. Fungal Planet description sheets: 69\u201391. Persoonia: Molecular Phylogeny and Evolution of Fungi 26: 108.", 
 "^ot:studyYear": 2011, 
+"^ot:tag": [], 
 "^ot:treesElementOrder": [
 "trees1198"
 ], 
@@ -160,7 +131,9 @@
 "^ot:ottTaxonName": "Pestalotiopsis versicolor"
 }, 
 "otu231414": {
-"^ot:originalLabel": "Diaporthe decedens AF408348 "
+"^ot:originalLabel": "Diaporthe decedens AF408348 ", 
+"^ot:ottId": 5316669, 
+"^ot:ottTaxonName": "Allantoporthe decedens"
 }, 
 "otu231415": {
 "^ot:originalLabel": "Diaporthe eres AF362565 "
@@ -181,7 +154,9 @@
 "^ot:ottTaxonName": "Diaporthe acaciigena"
 }, 
 "otu231419": {
-"^ot:originalLabel": "Diaporthe padi AF408354 "
+"^ot:originalLabel": "Diaporthe padi AF408354 ", 
+"^ot:ottId": 5316662, 
+"^ot:ottTaxonName": "Diaporthe decorticans"
 }, 
 "otu231420": {
 "^ot:originalLabel": "Diaporthe perjuncta AF408356 ", 
@@ -254,7 +229,9 @@
 "^ot:ottTaxonName": "Teratosphaeria majorizuluensis"
 }, 
 "otu231434": {
-"^ot:originalLabel": "Readeriella brunneotingens EU019286 "
+"^ot:originalLabel": "Readeriella brunneotingens EU019286 ", 
+"^ot:ottId": 241871, 
+"^ot:ottTaxonName": "Teratosphaeria brunneotingens"
 }, 
 "otu231435": {
 "^ot:originalLabel": "Teratosphaeria complicata GQ852714 ", 
@@ -340,7 +317,9 @@
 "^ot:ottTaxonName": "Dothistroma pini"
 }, 
 "otu231452": {
-"^ot:originalLabel": "Mycosphaerella africana DQ246258 "
+"^ot:originalLabel": "Mycosphaerella africana DQ246258 ", 
+"^ot:ottId": 721730, 
+"^ot:ottTaxonName": "Mycosphaerella africana"
 }, 
 "otu231453": {
 "^ot:originalLabel": "Passalora brachycarpa GU214664 ", 
@@ -477,7 +456,9 @@
 "^ot:ottTaxonName": "Dictyosporium stellatum"
 }, 
 "otu231481": {
-"^ot:originalLabel": "Sclerostagonospora cycadis FJ372410"
+"^ot:originalLabel": "Sclerostagonospora cycadis FJ372410", 
+"^ot:ottId": 4930187, 
+"^ot:ottTaxonName": "Sclerostagonospora cycadis"
 }, 
 "otu231482": {
 "^ot:originalLabel": "Sclerostagonospora opuntiae DQ286772 ", 
@@ -567,9 +548,15 @@
 "treeById": {
 "tree2419": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "NJ, LSU", 
 "^ot:inGroupClade": "node561926", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node561913", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node561913": {
 "edge561914": {

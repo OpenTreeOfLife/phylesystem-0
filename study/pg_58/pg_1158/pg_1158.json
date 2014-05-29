@@ -19,48 +19,11 @@
 "@id": "peyotl-validator", 
 "@name": "validate_ot_nexson.py", 
 "@url": "https://github.com/OpenTreeOfLife/peyotl", 
-"@version": "0.0.3a", 
+"@version": "0.0.4a", 
 "invocation": {
-"checksPerformed": [
-"MISSING_MANDATORY_KEY", 
-"MISSING_OPTIONAL_KEY", 
-"UNRECOGNIZED_KEY", 
-"MISSING_LIST_EXPECTED", 
-"DUPLICATING_SINGLETON_KEY", 
-"REFERENCED_ID_NOT_FOUND", 
-"REPEATED_ID", 
-"REPEATED_OTU", 
-"MULTIPLE_ROOT_NODES", 
-"NO_ROOT_NODE", 
-"MULTIPLE_EDGES_FOR_NODES", 
-"CYCLE_DETECTED", 
-"DISCONNECTED_GRAPH_DETECTED", 
-"INCORRECT_ROOT_NODE_LABEL", 
-"TIP_WITHOUT_OTU", 
-"TIP_WITHOUT_OTT_ID", 
-"MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
-"NON_MONOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
-"INVALID_PROPERTY_VALUE", 
-"PROPERTY_VALUE_NOT_USEFUL", 
-"UNRECOGNIZED_PROPERTY_VALUE", 
-"MULTIPLE_TREES", 
-"UNRECOGNIZED_TAG", 
-"CONFLICTING_PROPERTY_VALUES", 
-"NO_TREES", 
-"DEPRECATED_PROPERTY", 
-"UNPARSEABLE_META", 
-"UNREACHABLE_NODE", 
-"INCORRECT_VALUE_TYPE", 
-"MISSING_CRUCIAL_CONTENT"
-], 
 "commandLine": [
 "--embed", 
-"--agent-only", 
-"-e", 
-"../mig-phyelesystem-scratch/1158/validation.json", 
-"-o", 
-"../mig-phyelesystem-scratch/1158/final.json", 
-"../mig-phyelesystem-scratch/1158/v1.2.1-1158.json"
+"--agent-only"
 ], 
 "otherProperty": [
 {
@@ -76,9 +39,16 @@
 }
 ]
 }, 
+"^ot:annotationEvents": {
+"annotation": []
+}, 
+"^ot:candidateTreeForSynthesis": [], 
 "^ot:curatorName": "Romina Gazis", 
 "^ot:focalClade": 934913, 
 "^ot:focalCladeOTTTaxonName": "Psathyrellaceae", 
+"^ot:messages": {
+"message": []
+}, 
 "^ot:otusElementOrder": [
 "otus1158"
 ], 
@@ -88,6 +58,7 @@
 }, 
 "^ot:studyPublicationReference": "Padamsee, M., Matheny, P. B., Dentinger, B., & McLaughlin, D. J. (2008). The mushroom family Psathyrellaceae: Evidence for large-scale polyphyly of the genus< i> Psathyrella</i>. Molecular phylogenetics and evolution, 46(2), 415-429.", 
 "^ot:studyYear": 2008, 
+"^ot:tag": [], 
 "^ot:treesElementOrder": [
 "trees1158"
 ], 
@@ -100,7 +71,9 @@
 "^ot:ottTaxonName": "Coprinopsis nivea"
 }, 
 "otu228171": {
-"^ot:originalLabel": "Psathyrella subatrata"
+"^ot:originalLabel": "Psathyrella subatrata", 
+"^ot:ottId": 5304974, 
+"^ot:ottTaxonName": "Agaricus aratus"
 }, 
 "otu228172": {
 "^ot:originalLabel": "Psathyrella marcescibilis", 
@@ -494,7 +467,9 @@
 "^ot:ottTaxonName": "Psathyrella hirta"
 }, 
 "otu228251": {
-"^ot:originalLabel": "Psathyrella carbonicola"
+"^ot:originalLabel": "Psathyrella carbonicola", 
+"^ot:ottId": 145533, 
+"^ot:ottTaxonName": "Psathyrella pennata"
 }, 
 "otu228252": {
 "^ot:originalLabel": "Psathyrella ellenae var yubaensis"
@@ -583,7 +558,9 @@
 "^ot:ottTaxonName": "Psathyrella rhizophorae"
 }, 
 "otu228272": {
-"^ot:originalLabel": "Psathyrella squamifera"
+"^ot:originalLabel": "Psathyrella squamifera", 
+"^ot:ottId": 1069234, 
+"^ot:ottTaxonName": "Psathyrella microrhiza"
 }, 
 "otu228273": {
 "^ot:originalLabel": "Psathyrella ramicola", 
@@ -626,13 +603,19 @@
 "^ot:ottTaxonName": "Psathyrella subtruncatispora"
 }, 
 "otu228281": {
-"^ot:originalLabel": "Lacrymaria velutina NA"
+"^ot:originalLabel": "Lacrymaria velutina NA", 
+"^ot:ottId": 5304637, 
+"^ot:ottTaxonName": "Agaricus areolatus"
 }, 
 "otu228282": {
-"^ot:originalLabel": "Lacrymaria velutina MN"
+"^ot:originalLabel": "Lacrymaria velutina MN", 
+"^ot:ottId": 5304637, 
+"^ot:ottTaxonName": "Agaricus areolatus"
 }, 
 "otu228283": {
-"^ot:originalLabel": "Lacrymaria velutina WI"
+"^ot:originalLabel": "Lacrymaria velutina WI", 
+"^ot:ottId": 5304637, 
+"^ot:ottTaxonName": "Agaricus areolatus"
 }, 
 "otu228284": {
 "^ot:originalLabel": "Psathyrella echiniceps", 
@@ -643,7 +626,9 @@
 "^ot:originalLabel": "Lacrymaria lacrymabunda"
 }, 
 "otu228286": {
-"^ot:originalLabel": "Psathyrella camptopoda"
+"^ot:originalLabel": "Psathyrella camptopoda", 
+"^ot:ottId": 5307240, 
+"^ot:ottTaxonName": "Psathyrella camptopus"
 }, 
 "otu228287": {
 "^ot:originalLabel": "Psathyrella conissans", 
@@ -733,8 +718,14 @@
 "treeById": {
 "tree2346": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "ML, LSU", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node554087", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node554087": {
 "edge554088": {
@@ -2835,9 +2826,15 @@
 }, 
 "tree5803": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "ML, LSU (rooted)", 
 "^ot:inGroupClade": "node991526", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node991525", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node991525": {
 "edge991526": {

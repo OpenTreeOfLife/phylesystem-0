@@ -19,48 +19,11 @@
 "@id": "peyotl-validator", 
 "@name": "validate_ot_nexson.py", 
 "@url": "https://github.com/OpenTreeOfLife/peyotl", 
-"@version": "0.0.3a", 
+"@version": "0.0.4a", 
 "invocation": {
-"checksPerformed": [
-"MISSING_MANDATORY_KEY", 
-"MISSING_OPTIONAL_KEY", 
-"UNRECOGNIZED_KEY", 
-"MISSING_LIST_EXPECTED", 
-"DUPLICATING_SINGLETON_KEY", 
-"REFERENCED_ID_NOT_FOUND", 
-"REPEATED_ID", 
-"REPEATED_OTU", 
-"MULTIPLE_ROOT_NODES", 
-"NO_ROOT_NODE", 
-"MULTIPLE_EDGES_FOR_NODES", 
-"CYCLE_DETECTED", 
-"DISCONNECTED_GRAPH_DETECTED", 
-"INCORRECT_ROOT_NODE_LABEL", 
-"TIP_WITHOUT_OTU", 
-"TIP_WITHOUT_OTT_ID", 
-"MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
-"NON_MONOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
-"INVALID_PROPERTY_VALUE", 
-"PROPERTY_VALUE_NOT_USEFUL", 
-"UNRECOGNIZED_PROPERTY_VALUE", 
-"MULTIPLE_TREES", 
-"UNRECOGNIZED_TAG", 
-"CONFLICTING_PROPERTY_VALUES", 
-"NO_TREES", 
-"DEPRECATED_PROPERTY", 
-"UNPARSEABLE_META", 
-"UNREACHABLE_NODE", 
-"INCORRECT_VALUE_TYPE", 
-"MISSING_CRUCIAL_CONTENT"
-], 
 "commandLine": [
 "--embed", 
-"--agent-only", 
-"-e", 
-"../mig-phyelesystem-scratch/1231/validation.json", 
-"-o", 
-"../mig-phyelesystem-scratch/1231/final.json", 
-"../mig-phyelesystem-scratch/1231/v1.2.1-1231.json"
+"--agent-only"
 ], 
 "otherProperty": [
 {
@@ -76,12 +39,19 @@
 }
 ]
 }, 
+"^ot:annotationEvents": {
+"annotation": []
+}, 
+"^ot:candidateTreeForSynthesis": [], 
 "^ot:curatorName": "bryan drew", 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S1150"
 }, 
 "^ot:focalClade": 755481, 
 "^ot:focalCladeOTTTaxonName": "Ulvophyceae", 
+"^ot:messages": {
+"message": []
+}, 
 "^ot:otusElementOrder": [
 "otus1231"
 ], 
@@ -91,6 +61,7 @@
 }, 
 "^ot:studyPublicationReference": "O'kelly C., Wysor B., & Bellows W. 2004. Gene sequence diversity and the phylogenetic position of algae assigned to the genera Phaeophila and Ochlochaete (Ulvophyceae, Chlorophyta). Journal of phycology, 40(4), 789-799", 
 "^ot:studyYear": 2004, 
+"^ot:tag": [], 
 "^ot:treesElementOrder": [
 "trees1231"
 ], 
@@ -99,6 +70,8 @@
 "otuById": {
 "otu234052": {
 "^ot:originalLabel": "Gloeotilopsis planctonica", 
+"^ot:ottId": 165058, 
+"^ot:ottTaxonName": "Gloeotilopsis planctonica", 
 "^ot:treebaseOTUId": "Tl146202"
 }, 
 "otu234053": {
@@ -121,6 +94,8 @@
 }, 
 "otu234056": {
 "^ot:originalLabel": "Oltmannsiellopsis viridis", 
+"^ot:ottId": 311485, 
+"^ot:ottTaxonName": "Oltmannsiellopsis viridis", 
 "^ot:treebaseOTUId": "Tl146249"
 }, 
 "otu234057": {
@@ -131,6 +106,8 @@
 }, 
 "otu234058": {
 "^ot:originalLabel": "Bolbocoleon piliferum WAz1", 
+"^ot:ottId": 862055, 
+"^ot:ottTaxonName": "Bolbocoleon piliferum", 
 "^ot:treebaseOTUId": "Tl19358"
 }, 
 "otu234059": {
@@ -141,6 +118,8 @@
 }, 
 "otu234060": {
 "^ot:originalLabel": "Gomontia polyrhiza", 
+"^ot:ottId": 718217, 
+"^ot:ottTaxonName": "Gomontia polyrhiza", 
 "^ot:treebaseOTUId": "Tl19360"
 }, 
 "otu234061": {
@@ -181,6 +160,8 @@
 }, 
 "otu234067": {
 "^ot:originalLabel": "Collinsiella tuberculata", 
+"^ot:ottId": 379615, 
+"^ot:ottTaxonName": "Collinsiella tuberculata", 
 "^ot:treebaseOTUId": "Tl19370"
 }, 
 "otu234068": {
@@ -209,18 +190,26 @@
 }, 
 "otu234072": {
 "^ot:originalLabel": "Gloeotilopsis sarcinoidea", 
+"^ot:ottId": 525839, 
+"^ot:ottTaxonName": "Gloeotilopsis sarcinoidea", 
 "^ot:treebaseOTUId": "Tl19378"
 }, 
 "otu234073": {
 "^ot:originalLabel": "Pseudendoclonium basilense", 
+"^ot:ottId": 189731, 
+"^ot:ottTaxonName": "Hazenia basiliensis", 
 "^ot:treebaseOTUId": "Tl19380"
 }, 
 "otu234074": {
 "^ot:originalLabel": "Gloeotilopsis paucicellularis", 
+"^ot:ottId": 525832, 
+"^ot:ottTaxonName": "Gloeotilopsis paucicellularis", 
 "^ot:treebaseOTUId": "Tl19381"
 }, 
 "otu234075": {
 "^ot:originalLabel": "Eugomontia sacculata", 
+"^ot:ottId": 239821, 
+"^ot:ottTaxonName": "Eugomontia sacculata", 
 "^ot:treebaseOTUId": "Tl19382"
 }, 
 "otu234076": {
@@ -238,6 +227,7 @@
 "otu234078": {
 "^ot:originalLabel": "Ulva curvata", 
 "^ot:ottId": 615769, 
+"^ot:ottTaxonName": "Ulva curvata", 
 "^ot:treebaseOTUId": "Tl4909"
 }, 
 "otu234079": {
@@ -272,10 +262,14 @@
 }, 
 "otu234084": {
 "^ot:originalLabel": "Bolbocoleon piliferum WA1.7b", 
+"^ot:ottId": 862055, 
+"^ot:ottTaxonName": "Bolbocoleon piliferum", 
 "^ot:treebaseOTUId": "Tl59353"
 }, 
 "otu234085": {
 "^ot:originalLabel": "Entocladia tenuis Ma2.6a1", 
+"^ot:ottId": 231900, 
+"^ot:ottTaxonName": "Ruthnielsenia tenuis", 
 "^ot:treebaseOTUId": "Tl59354"
 }, 
 "otu234086": {
@@ -292,14 +286,20 @@
 }, 
 "otu234088": {
 "^ot:originalLabel": "Bolbocoleon piliferum WAz.1", 
+"^ot:ottId": 862055, 
+"^ot:ottTaxonName": "Bolbocoleon piliferum", 
 "^ot:treebaseOTUId": "Tl59357"
 }, 
 "otu234089": {
 "^ot:originalLabel": "Bolbocoleon piliferum WA2.9b2a", 
+"^ot:ottId": 862055, 
+"^ot:ottTaxonName": "Bolbocoleon piliferum", 
 "^ot:treebaseOTUId": "Tl59358"
 }, 
 "otu234090": {
 "^ot:originalLabel": "Bolbocoleon piliferum WA1.6a", 
+"^ot:ottId": 862055, 
+"^ot:ottTaxonName": "Bolbocoleon piliferum", 
 "^ot:treebaseOTUId": "Tl59359"
 }, 
 "otu234091": {
@@ -316,16 +316,20 @@
 }, 
 "otu234093": {
 "^ot:originalLabel": "Entocladia tenuis WA2.22b3", 
+"^ot:ottId": 231900, 
+"^ot:ottTaxonName": "Ruthnielsenia tenuis", 
 "^ot:treebaseOTUId": "Tl59362"
 }, 
 "otu234094": {
-"^ot:altLabel": "Phaeophila dendroides", 
 "^ot:originalLabel": "Phaeophila dendroides WA1.15D", 
 "^ot:ottId": 231897, 
+"^ot:ottTaxonName": "Phaeophila dendroides", 
 "^ot:treebaseOTUId": "Tl59363"
 }, 
 "otu234095": {
 "^ot:originalLabel": "Bolbocoleon piliferum MA3.1b1", 
+"^ot:ottId": 862055, 
+"^ot:ottTaxonName": "Bolbocoleon piliferum", 
 "^ot:treebaseOTUId": "Tl59364"
 }, 
 "otu234096": {
@@ -335,21 +339,21 @@
 "^ot:treebaseOTUId": "Tl59365"
 }, 
 "otu234097": {
-"^ot:altLabel": "Ulvella viridis", 
 "^ot:originalLabel": "Acrochaete viridis MA1.2d2", 
 "^ot:ottId": 166702, 
+"^ot:ottTaxonName": "Ulvella viridis", 
 "^ot:treebaseOTUId": "Tl59366"
 }, 
 "otu234098": {
-"^ot:altLabel": "Ulva sp. WA1-3b", 
 "^ot:originalLabel": "Ulva WA1.3b", 
 "^ot:ottId": 962673, 
+"^ot:ottTaxonName": "Ulva sp. WA1-3b", 
 "^ot:treebaseOTUId": "Tl59367"
 }, 
 "otu234099": {
-"^ot:altLabel": "Ochlochaete hystrix", 
 "^ot:originalLabel": "Ochlochaete hystrix MA1.8d1", 
 "^ot:ottId": 431998, 
+"^ot:ottTaxonName": "Ochlochaete hystrix", 
 "^ot:treebaseOTUId": "Tl59368"
 }, 
 "otu234100": {
@@ -371,9 +375,9 @@
 "^ot:treebaseOTUId": "Tl59371"
 }, 
 "otu234103": {
-"^ot:altLabel": "Ulvella repens", 
 "^ot:originalLabel": "Acrochaete repens MA1.1c2a", 
 "^ot:ottId": 962674, 
+"^ot:ottTaxonName": "Ulvella repens", 
 "^ot:treebaseOTUId": "Tl59372"
 }, 
 "otu234104": {
@@ -390,6 +394,8 @@
 }, 
 "otu234106": {
 "^ot:originalLabel": "Enteromorpha sp. WA4.20b", 
+"^ot:ottId": 4003163, 
+"^ot:ottTaxonName": "Enteromorpha", 
 "^ot:treebaseOTUId": "Tl59375"
 }, 
 "otu234107": {
@@ -400,6 +406,8 @@
 }, 
 "otu234108": {
 "^ot:originalLabel": "Pseudendocloniopsis botryoides", 
+"^ot:ottId": 470736, 
+"^ot:ottTaxonName": "Pseudendocloniopsis botryoides", 
 "^ot:treebaseOTUId": "Tl7489"
 }, 
 "otu234109": {
@@ -410,10 +418,14 @@
 }, 
 "otu234110": {
 "^ot:originalLabel": "Pseudoneochloris marina", 
+"^ot:ottId": 662640, 
+"^ot:ottTaxonName": "Pseudoneochloris marina", 
 "^ot:treebaseOTUId": "Tl7499"
 }, 
 "otu234111": {
 "^ot:originalLabel": "Planophila laetevirens", 
+"^ot:ottId": 470723, 
+"^ot:ottTaxonName": "Planophila laetevirens", 
 "^ot:treebaseOTUId": "Tl7500"
 }
 }
@@ -430,9 +442,15 @@
 "treeById": {
 "tree2480": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "Fig. 2", 
 "^ot:inGroupClade": "node568658", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node568654", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node568654": {
 "edge568655": {
@@ -725,9 +743,15 @@
 }, 
 "tree2481": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "Fig. 1", 
 "^ot:inGroupClade": "node568697", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node568695", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node568695": {
 "edge568696": {
@@ -1202,9 +1226,15 @@
 }, 
 "tree2482": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "Fig. 3", 
 "^ot:inGroupClade": "node568766", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node568762", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node568762": {
 "edge568763": {

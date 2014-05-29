@@ -19,48 +19,11 @@
 "@id": "peyotl-validator", 
 "@name": "validate_ot_nexson.py", 
 "@url": "https://github.com/OpenTreeOfLife/peyotl", 
-"@version": "0.0.3a", 
+"@version": "0.0.4a", 
 "invocation": {
-"checksPerformed": [
-"MISSING_MANDATORY_KEY", 
-"MISSING_OPTIONAL_KEY", 
-"UNRECOGNIZED_KEY", 
-"MISSING_LIST_EXPECTED", 
-"DUPLICATING_SINGLETON_KEY", 
-"REFERENCED_ID_NOT_FOUND", 
-"REPEATED_ID", 
-"REPEATED_OTU", 
-"MULTIPLE_ROOT_NODES", 
-"NO_ROOT_NODE", 
-"MULTIPLE_EDGES_FOR_NODES", 
-"CYCLE_DETECTED", 
-"DISCONNECTED_GRAPH_DETECTED", 
-"INCORRECT_ROOT_NODE_LABEL", 
-"TIP_WITHOUT_OTU", 
-"TIP_WITHOUT_OTT_ID", 
-"MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
-"NON_MONOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
-"INVALID_PROPERTY_VALUE", 
-"PROPERTY_VALUE_NOT_USEFUL", 
-"UNRECOGNIZED_PROPERTY_VALUE", 
-"MULTIPLE_TREES", 
-"UNRECOGNIZED_TAG", 
-"CONFLICTING_PROPERTY_VALUES", 
-"NO_TREES", 
-"DEPRECATED_PROPERTY", 
-"UNPARSEABLE_META", 
-"UNREACHABLE_NODE", 
-"INCORRECT_VALUE_TYPE", 
-"MISSING_CRUCIAL_CONTENT"
-], 
 "commandLine": [
 "--embed", 
-"--agent-only", 
-"-e", 
-"../mig-phyelesystem-scratch/426/validation.json", 
-"-o", 
-"../mig-phyelesystem-scratch/426/final.json", 
-"../mig-phyelesystem-scratch/426/v1.2.1-426.json"
+"--agent-only"
 ], 
 "otherProperty": [
 {
@@ -76,12 +39,19 @@
 }
 ]
 }, 
+"^ot:annotationEvents": {
+"annotation": []
+}, 
+"^ot:candidateTreeForSynthesis": [], 
 "^ot:curatorName": "Romina Gazis", 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S1344"
 }, 
 "^ot:focalClade": 634628, 
 "^ot:focalCladeOTTTaxonName": "Basidiomycota", 
+"^ot:messages": {
+"message": []
+}, 
 "^ot:otusElementOrder": [
 "otus426"
 ], 
@@ -91,6 +61,7 @@
 }, 
 "^ot:studyPublicationReference": "Wilson A., & Desjardin D. 2005. Phylogenetic relationships in the gymnopoid and marasmioid fungi (Basidiomycetes, euagarics clade) Mycologia,97(3): 667-679.", 
 "^ot:studyYear": 2005, 
+"^ot:tag": [], 
 "^ot:treesElementOrder": [
 "trees426"
 ], 
@@ -99,6 +70,8 @@
 "otuById": {
 "otu86904": {
 "^ot:originalLabel": "Callistosporium xanthophyllum", 
+"^ot:ottId": 5306418, 
+"^ot:ottTaxonName": "Callistosporium luteo-olivaceum", 
 "^ot:treebaseOTUId": "Tl158688"
 }, 
 "otu86905": {
@@ -131,6 +104,8 @@
 }, 
 "otu86910": {
 "^ot:originalLabel": "Marasmius scorodonius DAOM1753", 
+"^ot:ottId": 5305956, 
+"^ot:ottTaxonName": "Mycetinis scorodonius", 
 "^ot:treebaseOTUId": "Tl37124"
 }, 
 "otu86911": {
@@ -215,6 +190,8 @@
 }, 
 "otu86925": {
 "^ot:originalLabel": "Marasmius scorodonius JEJ.586", 
+"^ot:ottId": 5305956, 
+"^ot:ottTaxonName": "Mycetinis scorodonius", 
 "^ot:treebaseOTUId": "Tl37139"
 }, 
 "otu86926": {
@@ -307,6 +284,8 @@
 }, 
 "otu86941": {
 "^ot:originalLabel": "Micromphale perforans RV8389", 
+"^ot:ottId": 5305810, 
+"^ot:ottTaxonName": "Gymnopus perforans", 
 "^ot:treebaseOTUId": "Tl37155"
 }, 
 "otu86942": {
@@ -427,6 +406,8 @@
 }, 
 "otu86962": {
 "^ot:originalLabel": "Campanella eberhardtii DEH465", 
+"^ot:ottId": 5298453, 
+"^ot:ottTaxonName": "Campanella eberhardtii", 
 "^ot:treebaseOTUId": "Tl37177"
 }, 
 "otu86963": {
@@ -441,6 +422,8 @@
 }, 
 "otu86965": {
 "^ot:originalLabel": "Micromphale perforans RV836", 
+"^ot:ottId": 5305810, 
+"^ot:ottTaxonName": "Gymnopus perforans", 
 "^ot:treebaseOTUId": "Tl37180"
 }, 
 "otu86966": {
@@ -581,9 +564,16 @@
 "treeById": {
 "tree533": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "BI, LSU", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node224772", 
-"^ot:tag": "delete me", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [
+"delete me"
+], 
 "edgeBySourceId": {
 "node224772": {
 "edge224773": {
@@ -1751,8 +1741,14 @@
 }, 
 "tree534": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "BI, LSU, strict", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node224938", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node224938": {
 "edge224939": {
@@ -2710,9 +2706,15 @@
 }, 
 "tree5573": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "BI, LSU (rooted)", 
 "^ot:inGroupClade": "node955776", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node955775", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node955775": {
 "edge955776": {

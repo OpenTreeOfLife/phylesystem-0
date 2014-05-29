@@ -19,48 +19,11 @@
 "@id": "peyotl-validator", 
 "@name": "validate_ot_nexson.py", 
 "@url": "https://github.com/OpenTreeOfLife/peyotl", 
-"@version": "0.0.3a", 
+"@version": "0.0.4a", 
 "invocation": {
-"checksPerformed": [
-"MISSING_MANDATORY_KEY", 
-"MISSING_OPTIONAL_KEY", 
-"UNRECOGNIZED_KEY", 
-"MISSING_LIST_EXPECTED", 
-"DUPLICATING_SINGLETON_KEY", 
-"REFERENCED_ID_NOT_FOUND", 
-"REPEATED_ID", 
-"REPEATED_OTU", 
-"MULTIPLE_ROOT_NODES", 
-"NO_ROOT_NODE", 
-"MULTIPLE_EDGES_FOR_NODES", 
-"CYCLE_DETECTED", 
-"DISCONNECTED_GRAPH_DETECTED", 
-"INCORRECT_ROOT_NODE_LABEL", 
-"TIP_WITHOUT_OTU", 
-"TIP_WITHOUT_OTT_ID", 
-"MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
-"NON_MONOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
-"INVALID_PROPERTY_VALUE", 
-"PROPERTY_VALUE_NOT_USEFUL", 
-"UNRECOGNIZED_PROPERTY_VALUE", 
-"MULTIPLE_TREES", 
-"UNRECOGNIZED_TAG", 
-"CONFLICTING_PROPERTY_VALUES", 
-"NO_TREES", 
-"DEPRECATED_PROPERTY", 
-"UNPARSEABLE_META", 
-"UNREACHABLE_NODE", 
-"INCORRECT_VALUE_TYPE", 
-"MISSING_CRUCIAL_CONTENT"
-], 
 "commandLine": [
 "--embed", 
-"--agent-only", 
-"-e", 
-"../mig-phyelesystem-scratch/1127/validation.json", 
-"-o", 
-"../mig-phyelesystem-scratch/1127/final.json", 
-"../mig-phyelesystem-scratch/1127/v1.2.1-1127.json"
+"--agent-only"
 ], 
 "otherProperty": [
 {
@@ -76,18 +39,26 @@
 }
 ]
 }, 
+"^ot:annotationEvents": {
+"annotation": []
+}, 
+"^ot:candidateTreeForSynthesis": [], 
 "^ot:curatorName": "bryan drew", 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S10213"
 }, 
 "^ot:focalClade": 473827, 
 "^ot:focalCladeOTTTaxonName": "Solanaceae", 
+"^ot:messages": {
+"message": []
+}, 
 "^ot:otusElementOrder": [
 "otus1127"
 ], 
 "^ot:studyId": "1127", 
 "^ot:studyPublicationReference": "Olmstead R., Bohs L., Abdel-migid H., Santiago-velent\u00edn E., Garcia V., & Collier\r\nS. 2008. A molecular phylogeny of the Solanaceae. Taxon, 57(4): 1159-1181.", 
 "^ot:studyYear": 2008, 
+"^ot:tag": [], 
 "^ot:treesElementOrder": [
 "trees1127"
 ], 
@@ -385,7 +356,9 @@
 "^ot:ottTaxonName": "Withania somnifera"
 }, 
 "otu225526": {
-"^ot:originalLabel": "Mellissia begonifolia"
+"^ot:originalLabel": "Mellissia begonifolia", 
+"^ot:ottId": 1011315, 
+"^ot:ottTaxonName": "Mellissia begoniifolia"
 }, 
 "otu225527": {
 "^ot:originalLabel": "Aureliana fasciculata", 
@@ -403,10 +376,14 @@
 "^ot:ottTaxonName": "Tubocapsicum anomalum"
 }, 
 "otu225530": {
-"^ot:originalLabel": "Nothocestrum latifolium"
+"^ot:originalLabel": "Nothocestrum latifolium", 
+"^ot:ottId": 383971, 
+"^ot:ottTaxonName": "Nothocestrum latifolium"
 }, 
 "otu225531": {
-"^ot:originalLabel": "Nothocestrum longifolium"
+"^ot:originalLabel": "Nothocestrum longifolium", 
+"^ot:ottId": 383969, 
+"^ot:ottTaxonName": "Nothocestrum longifolium"
 }, 
 "otu225532": {
 "^ot:originalLabel": "Discopodium penninervum", 
@@ -659,10 +636,14 @@
 "^ot:ottTaxonName": "Nolana paradoxa"
 }, 
 "otu225582": {
-"^ot:originalLabel": "Sclerophylax adnatifolia"
+"^ot:originalLabel": "Sclerophylax adnatifolia", 
+"^ot:ottId": 745689, 
+"^ot:ottTaxonName": "Sclerophylax adnatifolia"
 }, 
 "otu225583": {
-"^ot:originalLabel": "Sclerophylax gilliesii"
+"^ot:originalLabel": "Sclerophylax gilliesii", 
+"^ot:ottId": 960295, 
+"^ot:ottTaxonName": "Sclerophylax gilliesii"
 }, 
 "otu225584": {
 "^ot:originalLabel": "Jabarosa integrifolia", 
@@ -680,7 +661,9 @@
 "^ot:ottTaxonName": "Jaborosa sativa"
 }, 
 "otu225587": {
-"^ot:originalLabel": "Latua pubiflora"
+"^ot:originalLabel": "Latua pubiflora", 
+"^ot:ottId": 1011310, 
+"^ot:ottTaxonName": "Latua pubiflora"
 }, 
 "otu225588": {
 "^ot:originalLabel": "Cyphanthera albicans", 
@@ -993,7 +976,9 @@
 "^ot:ottTaxonName": "Cestrum nocturnum"
 }, 
 "otu225650": {
-"^ot:originalLabel": "Duckeodendron cestroides"
+"^ot:originalLabel": "Duckeodendron cestroides", 
+"^ot:ottId": 947604, 
+"^ot:ottTaxonName": "Duckeodendron cestroides"
 }, 
 "otu225651": {
 "^ot:originalLabel": "Goetzea elegans", 
@@ -1077,9 +1062,15 @@
 "treeById": {
 "tree2249": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "mp", 
 "^ot:inGroupClade": "node542822", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node542820", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node542820": {
 "edge542821": {

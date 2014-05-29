@@ -19,48 +19,11 @@
 "@id": "peyotl-validator", 
 "@name": "validate_ot_nexson.py", 
 "@url": "https://github.com/OpenTreeOfLife/peyotl", 
-"@version": "0.0.3a", 
+"@version": "0.0.4a", 
 "invocation": {
-"checksPerformed": [
-"MISSING_MANDATORY_KEY", 
-"MISSING_OPTIONAL_KEY", 
-"UNRECOGNIZED_KEY", 
-"MISSING_LIST_EXPECTED", 
-"DUPLICATING_SINGLETON_KEY", 
-"REFERENCED_ID_NOT_FOUND", 
-"REPEATED_ID", 
-"REPEATED_OTU", 
-"MULTIPLE_ROOT_NODES", 
-"NO_ROOT_NODE", 
-"MULTIPLE_EDGES_FOR_NODES", 
-"CYCLE_DETECTED", 
-"DISCONNECTED_GRAPH_DETECTED", 
-"INCORRECT_ROOT_NODE_LABEL", 
-"TIP_WITHOUT_OTU", 
-"TIP_WITHOUT_OTT_ID", 
-"MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
-"NON_MONOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
-"INVALID_PROPERTY_VALUE", 
-"PROPERTY_VALUE_NOT_USEFUL", 
-"UNRECOGNIZED_PROPERTY_VALUE", 
-"MULTIPLE_TREES", 
-"UNRECOGNIZED_TAG", 
-"CONFLICTING_PROPERTY_VALUES", 
-"NO_TREES", 
-"DEPRECATED_PROPERTY", 
-"UNPARSEABLE_META", 
-"UNREACHABLE_NODE", 
-"INCORRECT_VALUE_TYPE", 
-"MISSING_CRUCIAL_CONTENT"
-], 
 "commandLine": [
 "--embed", 
-"--agent-only", 
-"-e", 
-"../mig-phyelesystem-scratch/1041/validation.json", 
-"-o", 
-"../mig-phyelesystem-scratch/1041/final.json", 
-"../mig-phyelesystem-scratch/1041/v1.2.1-1041.json"
+"--agent-only"
 ], 
 "otherProperty": [
 {
@@ -76,12 +39,19 @@
 }
 ]
 }, 
+"^ot:annotationEvents": {
+"annotation": []
+}, 
+"^ot:candidateTreeForSynthesis": [], 
 "^ot:curatorName": "Romina Gazis", 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S10239"
 }, 
 "^ot:focalClade": 443192, 
 "^ot:focalCladeOTTTaxonName": "Pestalotiopsis", 
+"^ot:messages": {
+"message": []
+}, 
 "^ot:otusElementOrder": [
 "otus1041"
 ], 
@@ -91,6 +61,7 @@
 }, 
 "^ot:studyPublicationReference": "Watanabe K., Motohasi K., & Ono Y. 2010. Description of Pestalotiopsis pallidotheae: a new species from Japan. Mycoscience, 51(3): 182-188.", 
 "^ot:studyYear": 2010, 
+"^ot:tag": [], 
 "^ot:treesElementOrder": [
 "trees1041"
 ], 
@@ -177,10 +148,14 @@
 }, 
 "otu216129": {
 "^ot:originalLabel": "Pestalotiopsis karstenii", 
+"^ot:ottId": 1019306, 
+"^ot:ottTaxonName": "Monochaetia karstenii", 
 "^ot:treebaseOTUId": "Tl272269"
 }, 
 "otu216130": {
 "^ot:originalLabel": "Pestalotiopsis acaciae", 
+"^ot:ottId": 5317536, 
+"^ot:ottTaxonName": "Pestalotia acaciae", 
 "^ot:treebaseOTUId": "Tl272270"
 }, 
 "otu216131": {
@@ -287,6 +262,8 @@
 }, 
 "otu216148": {
 "^ot:originalLabel": "Pestalotiopsis olivacea", 
+"^ot:ottId": 5317547, 
+"^ot:ottTaxonName": "Pestalotia olivacea", 
 "^ot:treebaseOTUId": "Tl272288"
 }
 }
@@ -301,9 +278,15 @@
 "treeById": {
 "tree1996": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "MP, ITS", 
 "^ot:inGroupClade": "node509447", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node509446", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node509446": {
 "edge509447": {

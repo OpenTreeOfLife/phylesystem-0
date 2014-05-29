@@ -19,48 +19,11 @@
 "@id": "peyotl-validator", 
 "@name": "validate_ot_nexson.py", 
 "@url": "https://github.com/OpenTreeOfLife/peyotl", 
-"@version": "0.0.3a", 
+"@version": "0.0.4a", 
 "invocation": {
-"checksPerformed": [
-"MISSING_MANDATORY_KEY", 
-"MISSING_OPTIONAL_KEY", 
-"UNRECOGNIZED_KEY", 
-"MISSING_LIST_EXPECTED", 
-"DUPLICATING_SINGLETON_KEY", 
-"REFERENCED_ID_NOT_FOUND", 
-"REPEATED_ID", 
-"REPEATED_OTU", 
-"MULTIPLE_ROOT_NODES", 
-"NO_ROOT_NODE", 
-"MULTIPLE_EDGES_FOR_NODES", 
-"CYCLE_DETECTED", 
-"DISCONNECTED_GRAPH_DETECTED", 
-"INCORRECT_ROOT_NODE_LABEL", 
-"TIP_WITHOUT_OTU", 
-"TIP_WITHOUT_OTT_ID", 
-"MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
-"NON_MONOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
-"INVALID_PROPERTY_VALUE", 
-"PROPERTY_VALUE_NOT_USEFUL", 
-"UNRECOGNIZED_PROPERTY_VALUE", 
-"MULTIPLE_TREES", 
-"UNRECOGNIZED_TAG", 
-"CONFLICTING_PROPERTY_VALUES", 
-"NO_TREES", 
-"DEPRECATED_PROPERTY", 
-"UNPARSEABLE_META", 
-"UNREACHABLE_NODE", 
-"INCORRECT_VALUE_TYPE", 
-"MISSING_CRUCIAL_CONTENT"
-], 
 "commandLine": [
 "--embed", 
-"--agent-only", 
-"-e", 
-"../mig-phyelesystem-scratch/2358/validation.json", 
-"-o", 
-"../mig-phyelesystem-scratch/2358/final.json", 
-"../mig-phyelesystem-scratch/2358/v1.2.1-2358.json"
+"--agent-only"
 ], 
 "otherProperty": [
 {
@@ -76,12 +39,19 @@
 }
 ]
 }, 
+"^ot:annotationEvents": {
+"annotation": []
+}, 
+"^ot:candidateTreeForSynthesis": [], 
 "^ot:curatorName": "Chris Owen", 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S12759"
 }, 
 "^ot:focalClade": 726789, 
 "^ot:focalCladeOTTTaxonName": "Nylanderia", 
+"^ot:messages": {
+"message": []
+}, 
 "^ot:otusElementOrder": [
 "otus2358"
 ], 
@@ -91,6 +61,7 @@
 }, 
 "^ot:studyPublicationReference": "Gotzek D., Brady S.G., Kallal R.J., & Lapolla J.S. 2012. The importance of using multiple approaches for identifying emerging invasive species: the case of the Rasberry Crazy Ant in the United States. PLoS ONE 7 (9): e45314.", 
 "^ot:studyYear": 2012, 
+"^ot:tag": [], 
 "^ot:treesElementOrder": [
 "trees2358"
 ], 
@@ -151,6 +122,8 @@
 }, 
 "otu333053": {
 "^ot:originalLabel": "Nylanderia n. sp. DR6", 
+"^ot:ottId": 4538401, 
+"^ot:ottTaxonName": "Nylanderia sp. n. DR6", 
 "^ot:treebaseOTUId": "Tl799216"
 }, 
 "otu333054": {
@@ -185,6 +158,8 @@
 }, 
 "otu333059": {
 "^ot:originalLabel": "Nylanderia n. sp. DR1", 
+"^ot:ottId": 4538407, 
+"^ot:ottTaxonName": "Nylanderia sp. n. DR1", 
 "^ot:treebaseOTUId": "Tl799222"
 }, 
 "otu333060": {
@@ -215,6 +190,8 @@
 }, 
 "otu333065": {
 "^ot:originalLabel": "Nylanderia n. sp. DR5", 
+"^ot:ottId": 4538406, 
+"^ot:ottTaxonName": "Nylanderia sp. n. DR5", 
 "^ot:treebaseOTUId": "Tl799228"
 }, 
 "otu333066": {
@@ -267,6 +244,8 @@
 }, 
 "otu333074": {
 "^ot:originalLabel": "Nylanderia n. sp. PR1", 
+"^ot:ottId": 4538400, 
+"^ot:ottTaxonName": "Nylanderia sp. n. PR1", 
 "^ot:treebaseOTUId": "Tl799237"
 }, 
 "otu333075": {
@@ -289,6 +268,8 @@
 }, 
 "otu333078": {
 "^ot:originalLabel": "Nylanderia n. sp. 83", 
+"^ot:ottId": 4538408, 
+"^ot:ottTaxonName": "Nylanderia sp. n. 83", 
 "^ot:treebaseOTUId": "Tl799241"
 }, 
 "otu333079": {
@@ -310,11 +291,17 @@
 "treeById": {
 "tree4960": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
 "^ot:branchLengthMode": "ot:substitutionCount", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "Fig. 3 ML", 
 "^ot:inGroupClade": "node857819", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node857815", 
-"^ot:tag": "choose me", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [
+"choose me"
+], 
 "edgeBySourceId": {
 "node857815": {
 "edge857816": {
@@ -887,10 +874,15 @@
 }, 
 "tree4961": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
 "^ot:branchLengthMode": "ot:substitutionCount", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "Fig. 3 BI", 
 "^ot:inGroupClade": "node857890", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node857886", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node857886": {
 "edge857887": {

@@ -19,48 +19,11 @@
 "@id": "peyotl-validator", 
 "@name": "validate_ot_nexson.py", 
 "@url": "https://github.com/OpenTreeOfLife/peyotl", 
-"@version": "0.0.3a", 
+"@version": "0.0.4a", 
 "invocation": {
-"checksPerformed": [
-"MISSING_MANDATORY_KEY", 
-"MISSING_OPTIONAL_KEY", 
-"UNRECOGNIZED_KEY", 
-"MISSING_LIST_EXPECTED", 
-"DUPLICATING_SINGLETON_KEY", 
-"REFERENCED_ID_NOT_FOUND", 
-"REPEATED_ID", 
-"REPEATED_OTU", 
-"MULTIPLE_ROOT_NODES", 
-"NO_ROOT_NODE", 
-"MULTIPLE_EDGES_FOR_NODES", 
-"CYCLE_DETECTED", 
-"DISCONNECTED_GRAPH_DETECTED", 
-"INCORRECT_ROOT_NODE_LABEL", 
-"TIP_WITHOUT_OTU", 
-"TIP_WITHOUT_OTT_ID", 
-"MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
-"NON_MONOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
-"INVALID_PROPERTY_VALUE", 
-"PROPERTY_VALUE_NOT_USEFUL", 
-"UNRECOGNIZED_PROPERTY_VALUE", 
-"MULTIPLE_TREES", 
-"UNRECOGNIZED_TAG", 
-"CONFLICTING_PROPERTY_VALUES", 
-"NO_TREES", 
-"DEPRECATED_PROPERTY", 
-"UNPARSEABLE_META", 
-"UNREACHABLE_NODE", 
-"INCORRECT_VALUE_TYPE", 
-"MISSING_CRUCIAL_CONTENT"
-], 
 "commandLine": [
 "--embed", 
-"--agent-only", 
-"-e", 
-"../mig-phyelesystem-scratch/1682/validation.json", 
-"-o", 
-"../mig-phyelesystem-scratch/1682/final.json", 
-"../mig-phyelesystem-scratch/1682/v1.2.1-1682.json"
+"--agent-only"
 ], 
 "otherProperty": [
 {
@@ -76,12 +39,19 @@
 }
 ]
 }, 
+"^ot:annotationEvents": {
+"annotation": []
+}, 
+"^ot:candidateTreeForSynthesis": [], 
 "^ot:curatorName": "Romina Gazis", 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S553"
 }, 
 "^ot:focalClade": 439373, 
 "^ot:focalCladeOTTTaxonName": "Ascomycota", 
+"^ot:messages": {
+"message": []
+}, 
 "^ot:otusElementOrder": [
 "otus1682"
 ], 
@@ -91,6 +61,7 @@
 }, 
 "^ot:studyPublicationReference": "Suh S., & Blackwell M. 1999. Molecular phylogeny of the cleistothecial fungi placed in Cephalothecaceae and Pseudeurotiaceae. Mycologia, 91(5): 836-848.", 
 "^ot:studyYear": 1999, 
+"^ot:tag": [], 
 "^ot:treesElementOrder": [
 "trees1682"
 ], 
@@ -209,6 +180,8 @@
 }, 
 "otu270413": {
 "^ot:originalLabel": "Aporothielavia leptoderma", 
+"^ot:ottId": 525271, 
+"^ot:ottTaxonName": "Chaetomidium leptoderma", 
 "^ot:treebaseOTUId": "Tl114326"
 }, 
 "otu270414": {
@@ -249,6 +222,8 @@
 }, 
 "otu270420": {
 "^ot:originalLabel": "Hypocrea schweinitzii", 
+"^ot:ottId": 5317031, 
+"^ot:ottTaxonName": "Hypocrea schweinitzii", 
 "^ot:treebaseOTUId": "Tl114333"
 }, 
 "otu270421": {
@@ -265,10 +240,14 @@
 }, 
 "otu270423": {
 "^ot:originalLabel": "Ophiostoma piliferum", 
+"^ot:ottId": 5316941, 
+"^ot:ottTaxonName": "Ceratocystis pilifera", 
 "^ot:treebaseOTUId": "Tl114336"
 }, 
 "otu270424": {
 "^ot:originalLabel": "Fragosphaeria purpurea", 
+"^ot:ottId": 5316482, 
+"^ot:ottTaxonName": "Cephalotheca purpurea", 
 "^ot:treebaseOTUId": "Tl114337"
 }, 
 "otu270425": {
@@ -307,6 +286,8 @@
 }, 
 "otu270431": {
 "^ot:originalLabel": "Eurotium rubrum", 
+"^ot:ottId": 118490, 
+"^ot:ottTaxonName": "Aspergillus ruber", 
 "^ot:treebaseOTUId": "Tl114344"
 }, 
 "otu270432": {
@@ -329,6 +310,8 @@
 }, 
 "otu270435": {
 "^ot:originalLabel": "Podospora anserina", 
+"^ot:ottId": 155361, 
+"^ot:ottTaxonName": "Podospora pauciseta", 
 "^ot:treebaseOTUId": "Tl114349"
 }, 
 "otu270436": {
@@ -579,6 +562,8 @@
 }, 
 "otu270478": {
 "^ot:originalLabel": "Mycosphaerella mycopappi", 
+"^ot:ottId": 5311062, 
+"^ot:ottTaxonName": "Didymella mycopappi", 
 "^ot:treebaseOTUId": "Tl114395"
 }, 
 "otu270479": {
@@ -605,6 +590,8 @@
 }, 
 "otu270483": {
 "^ot:originalLabel": "Ophiostoma stenoceras", 
+"^ot:ottId": 5316943, 
+"^ot:ottTaxonName": "Ceratocystis stenoceras", 
 "^ot:treebaseOTUId": "Tl114400"
 }, 
 "otu270484": {
@@ -657,8 +644,14 @@
 "treeById": {
 "tree3387": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "NJ, SSU", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node669999", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node669999": {
 "edge670000": {
@@ -1588,9 +1581,15 @@
 }, 
 "tree3388": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "MP, SSU", 
 "^ot:inGroupClade": "node670135", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node670131", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node670131": {
 "edge670132": {
@@ -2072,9 +2071,15 @@
 }, 
 "tree3389": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "MP, LSU", 
 "^ot:inGroupClade": "node670202", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node670199", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node670199": {
 "edge670200": {
@@ -2717,9 +2722,15 @@
 }, 
 "tree3390": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "MP, LSU", 
 "^ot:inGroupClade": "node670293", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node670290", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node670290": {
 "edge670291": {
@@ -3152,9 +3163,15 @@
 }, 
 "tree3391": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "ML, LSU", 
 "^ot:inGroupClade": "node670353", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node670351", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node670351": {
 "edge670352": {
@@ -3594,9 +3611,15 @@
 }, 
 "tree3392": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "MP, LSU + SSU", 
 "^ot:inGroupClade": "node670417", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node670413", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node670413": {
 "edge670414": {
@@ -4043,9 +4066,15 @@
 }, 
 "tree5491": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "NJ, SSU (rooted)", 
 "^ot:inGroupClade": "node944949", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node944948", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node944948": {
 "edge944949": {

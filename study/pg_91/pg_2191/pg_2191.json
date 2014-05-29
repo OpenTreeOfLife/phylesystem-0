@@ -19,48 +19,11 @@
 "@id": "peyotl-validator", 
 "@name": "validate_ot_nexson.py", 
 "@url": "https://github.com/OpenTreeOfLife/peyotl", 
-"@version": "0.0.3a", 
+"@version": "0.0.4a", 
 "invocation": {
-"checksPerformed": [
-"MISSING_MANDATORY_KEY", 
-"MISSING_OPTIONAL_KEY", 
-"UNRECOGNIZED_KEY", 
-"MISSING_LIST_EXPECTED", 
-"DUPLICATING_SINGLETON_KEY", 
-"REFERENCED_ID_NOT_FOUND", 
-"REPEATED_ID", 
-"REPEATED_OTU", 
-"MULTIPLE_ROOT_NODES", 
-"NO_ROOT_NODE", 
-"MULTIPLE_EDGES_FOR_NODES", 
-"CYCLE_DETECTED", 
-"DISCONNECTED_GRAPH_DETECTED", 
-"INCORRECT_ROOT_NODE_LABEL", 
-"TIP_WITHOUT_OTU", 
-"TIP_WITHOUT_OTT_ID", 
-"MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
-"NON_MONOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
-"INVALID_PROPERTY_VALUE", 
-"PROPERTY_VALUE_NOT_USEFUL", 
-"UNRECOGNIZED_PROPERTY_VALUE", 
-"MULTIPLE_TREES", 
-"UNRECOGNIZED_TAG", 
-"CONFLICTING_PROPERTY_VALUES", 
-"NO_TREES", 
-"DEPRECATED_PROPERTY", 
-"UNPARSEABLE_META", 
-"UNREACHABLE_NODE", 
-"INCORRECT_VALUE_TYPE", 
-"MISSING_CRUCIAL_CONTENT"
-], 
 "commandLine": [
 "--embed", 
-"--agent-only", 
-"-e", 
-"../mig-phyelesystem-scratch/2191/validation.json", 
-"-o", 
-"../mig-phyelesystem-scratch/2191/final.json", 
-"../mig-phyelesystem-scratch/2191/v1.2.1-2191.json"
+"--agent-only"
 ], 
 "otherProperty": [
 {
@@ -76,18 +39,26 @@
 }
 ]
 }, 
+"^ot:annotationEvents": {
+"annotation": []
+}, 
+"^ot:candidateTreeForSynthesis": [], 
 "^ot:curatorName": "Romina Gazis", 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S1268"
 }, 
 "^ot:focalClade": 157076, 
 "^ot:focalCladeOTTTaxonName": "Calosphaeriales", 
+"^ot:messages": {
+"message": []
+}, 
 "^ot:otusElementOrder": [
 "otus2191"
 ], 
 "^ot:studyId": "2191", 
 "^ot:studyPublicationReference": "R\u00e9blov\u00e1, Martina, Lizel Mostert, Walter Gams, and Pedro W. Crous. \"New genera in the Calosphaeriales: Togniniella and its anamorph Phaeocrella, and Calosphaeriophora as anamorph of Calosphaeria.\" Studies in Mycology 50 (2004): 533-550.", 
 "^ot:studyYear": 2004, 
+"^ot:tag": [], 
 "^ot:treesElementOrder": [
 "trees2191"
 ], 
@@ -136,6 +107,8 @@
 }, 
 "otu319662": {
 "^ot:originalLabel": "Ophiostoma piliferum", 
+"^ot:ottId": 5316941, 
+"^ot:ottTaxonName": "Ceratocystis pilifera", 
 "^ot:treebaseOTUId": "Tl153189"
 }, 
 "otu319663": {
@@ -174,6 +147,8 @@
 }, 
 "otu319669": {
 "^ot:originalLabel": "Cochliobolus sativus", 
+"^ot:ottId": 204741, 
+"^ot:ottTaxonName": "Cochliobolus sativus", 
 "^ot:treebaseOTUId": "Tl153196"
 }, 
 "otu319670": {
@@ -214,6 +189,8 @@
 }, 
 "otu319676": {
 "^ot:originalLabel": "Ophiostoma stenoceras", 
+"^ot:ottId": 5316943, 
+"^ot:ottTaxonName": "Ceratocystis stenoceras", 
 "^ot:treebaseOTUId": "Tl153204"
 }, 
 "otu319677": {
@@ -224,6 +201,8 @@
 }, 
 "otu319678": {
 "^ot:originalLabel": "Pleospora betae", 
+"^ot:ottId": 5318830, 
+"^ot:ottTaxonName": "Pleospora betae", 
 "^ot:treebaseOTUId": "Tl153206"
 }, 
 "otu319679": {
@@ -232,6 +211,8 @@
 }, 
 "otu319680": {
 "^ot:originalLabel": "Fragosphaeria purpurea", 
+"^ot:ottId": 5316482, 
+"^ot:ottTaxonName": "Cephalotheca purpurea", 
 "^ot:treebaseOTUId": "Tl153208"
 }, 
 "otu319681": {
@@ -386,6 +367,8 @@
 }, 
 "otu319707": {
 "^ot:originalLabel": "Togninia fraxinopennsylvanica", 
+"^ot:ottId": 519058, 
+"^ot:ottTaxonName": "Phaeoacremonium mortoniae", 
 "^ot:treebaseOTUId": "Tl153236"
 }, 
 "otu319708": {
@@ -436,6 +419,8 @@
 }, 
 "otu319717": {
 "^ot:originalLabel": "Sphaerodothis acrocomiae", 
+"^ot:ottId": 5309070, 
+"^ot:ottTaxonName": "Camarotella costaricensis", 
 "^ot:treebaseOTUId": "Tl153246"
 }, 
 "otu319718": {
@@ -492,10 +477,14 @@
 }, 
 "otu319727": {
 "^ot:originalLabel": "Endothia gyrosa", 
+"^ot:ottId": 5316851, 
+"^ot:ottTaxonName": "Endothia radicalis", 
 "^ot:treebaseOTUId": "Tl153256"
 }, 
 "otu319728": {
 "^ot:originalLabel": "Hypocrea schweinitzii", 
+"^ot:ottId": 5317031, 
+"^ot:ottTaxonName": "Hypocrea schweinitzii", 
 "^ot:treebaseOTUId": "Tl153257"
 }, 
 "otu319729": {
@@ -524,6 +513,8 @@
 }, 
 "otu319733": {
 "^ot:originalLabel": "Ascolacicola austriaca", 
+"^ot:ottId": 163926, 
+"^ot:ottTaxonName": "Ascitendus austriacus", 
 "^ot:treebaseOTUId": "Tl153262"
 }, 
 "otu319734": {
@@ -639,9 +630,15 @@
 "treeById": {
 "tree4635": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "MP, LSU", 
 "^ot:inGroupClade": "node822606", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node822602", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node822602": {
 "edge822603": {
@@ -1445,9 +1442,15 @@
 }, 
 "tree4636": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "MP, SSU", 
 "^ot:inGroupClade": "node822724", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node822716", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node822716": {
 "edge822717": {

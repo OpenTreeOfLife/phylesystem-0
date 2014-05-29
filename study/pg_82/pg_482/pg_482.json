@@ -19,48 +19,11 @@
 "@id": "peyotl-validator", 
 "@name": "validate_ot_nexson.py", 
 "@url": "https://github.com/OpenTreeOfLife/peyotl", 
-"@version": "0.0.3a", 
+"@version": "0.0.4a", 
 "invocation": {
-"checksPerformed": [
-"MISSING_MANDATORY_KEY", 
-"MISSING_OPTIONAL_KEY", 
-"UNRECOGNIZED_KEY", 
-"MISSING_LIST_EXPECTED", 
-"DUPLICATING_SINGLETON_KEY", 
-"REFERENCED_ID_NOT_FOUND", 
-"REPEATED_ID", 
-"REPEATED_OTU", 
-"MULTIPLE_ROOT_NODES", 
-"NO_ROOT_NODE", 
-"MULTIPLE_EDGES_FOR_NODES", 
-"CYCLE_DETECTED", 
-"DISCONNECTED_GRAPH_DETECTED", 
-"INCORRECT_ROOT_NODE_LABEL", 
-"TIP_WITHOUT_OTU", 
-"TIP_WITHOUT_OTT_ID", 
-"MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
-"NON_MONOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
-"INVALID_PROPERTY_VALUE", 
-"PROPERTY_VALUE_NOT_USEFUL", 
-"UNRECOGNIZED_PROPERTY_VALUE", 
-"MULTIPLE_TREES", 
-"UNRECOGNIZED_TAG", 
-"CONFLICTING_PROPERTY_VALUES", 
-"NO_TREES", 
-"DEPRECATED_PROPERTY", 
-"UNPARSEABLE_META", 
-"UNREACHABLE_NODE", 
-"INCORRECT_VALUE_TYPE", 
-"MISSING_CRUCIAL_CONTENT"
-], 
 "commandLine": [
 "--embed", 
-"--agent-only", 
-"-e", 
-"../mig-phyelesystem-scratch/482/validation.json", 
-"-o", 
-"../mig-phyelesystem-scratch/482/final.json", 
-"../mig-phyelesystem-scratch/482/v1.2.1-482.json"
+"--agent-only"
 ], 
 "otherProperty": [
 {
@@ -76,12 +39,19 @@
 }
 ]
 }, 
+"^ot:annotationEvents": {
+"annotation": []
+}, 
+"^ot:candidateTreeForSynthesis": [], 
 "^ot:curatorName": "Romina Gazis", 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S10243"
 }, 
 "^ot:focalClade": 250591, 
 "^ot:focalCladeOTTTaxonName": "Penicillium", 
+"^ot:messages": {
+"message": []
+}, 
 "^ot:otusElementOrder": [
 "otus482"
 ], 
@@ -91,6 +61,7 @@
 }, 
 "^ot:studyPublicationReference": "Visagie C., Roets F., & Jacobs K. 2009. A new species of Penicillium, P. ramulosum sp. nov., from the natural environment. Mycologia, 101(6): 888-895.", 
 "^ot:studyYear": 2009, 
+"^ot:tag": [], 
 "^ot:treesElementOrder": [
 "trees482"
 ], 
@@ -213,6 +184,8 @@
 }, 
 "otu163059": {
 "^ot:originalLabel": "Talaromyces panasenkoi AB176636", 
+"^ot:ottId": 961112, 
+"^ot:ottTaxonName": "Talaromyces ucrainicus", 
 "^ot:treebaseOTUId": "Tl275715"
 }, 
 "otu163060": {
@@ -295,6 +268,8 @@
 }, 
 "otu163073": {
 "^ot:originalLabel": "Talaromyces thermophilus L14515", 
+"^ot:ottId": 5310753, 
+"^ot:ottTaxonName": "Penicillium dupontii", 
 "^ot:treebaseOTUId": "Tl275729"
 }, 
 "otu163074": {
@@ -341,9 +316,15 @@
 "treeById": {
 "tree5595": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "NJ, b-tubulin (rooted)", 
 "^ot:inGroupClade": "node966734", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node966733", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node966733": {
 "edge966734": {
@@ -468,9 +449,16 @@
 }, 
 "tree645": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "NJ, ITS", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node320543", 
-"^ot:tag": "ITS", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [
+"ITS"
+], 
 "edgeBySourceId": {
 "node320543": {
 "edge320544": {
@@ -903,8 +891,14 @@
 }, 
 "tree646": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "Beta Tubulin", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node320604", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node320604": {
 "edge320605": {

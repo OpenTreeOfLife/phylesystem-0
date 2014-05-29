@@ -19,48 +19,11 @@
 "@id": "peyotl-validator", 
 "@name": "validate_ot_nexson.py", 
 "@url": "https://github.com/OpenTreeOfLife/peyotl", 
-"@version": "0.0.3a", 
+"@version": "0.0.4a", 
 "invocation": {
-"checksPerformed": [
-"MISSING_MANDATORY_KEY", 
-"MISSING_OPTIONAL_KEY", 
-"UNRECOGNIZED_KEY", 
-"MISSING_LIST_EXPECTED", 
-"DUPLICATING_SINGLETON_KEY", 
-"REFERENCED_ID_NOT_FOUND", 
-"REPEATED_ID", 
-"REPEATED_OTU", 
-"MULTIPLE_ROOT_NODES", 
-"NO_ROOT_NODE", 
-"MULTIPLE_EDGES_FOR_NODES", 
-"CYCLE_DETECTED", 
-"DISCONNECTED_GRAPH_DETECTED", 
-"INCORRECT_ROOT_NODE_LABEL", 
-"TIP_WITHOUT_OTU", 
-"TIP_WITHOUT_OTT_ID", 
-"MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
-"NON_MONOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
-"INVALID_PROPERTY_VALUE", 
-"PROPERTY_VALUE_NOT_USEFUL", 
-"UNRECOGNIZED_PROPERTY_VALUE", 
-"MULTIPLE_TREES", 
-"UNRECOGNIZED_TAG", 
-"CONFLICTING_PROPERTY_VALUES", 
-"NO_TREES", 
-"DEPRECATED_PROPERTY", 
-"UNPARSEABLE_META", 
-"UNREACHABLE_NODE", 
-"INCORRECT_VALUE_TYPE", 
-"MISSING_CRUCIAL_CONTENT"
-], 
 "commandLine": [
 "--embed", 
-"--agent-only", 
-"-e", 
-"../mig-phyelesystem-scratch/2554/validation.json", 
-"-o", 
-"../mig-phyelesystem-scratch/2554/final.json", 
-"../mig-phyelesystem-scratch/2554/v1.2.1-2554.json"
+"--agent-only"
 ], 
 "otherProperty": [
 {
@@ -76,18 +39,26 @@
 }
 ]
 }, 
+"^ot:annotationEvents": {
+"annotation": []
+}, 
+"^ot:candidateTreeForSynthesis": [], 
 "^ot:curatorName": "Laura Katz", 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S14246"
 }, 
 "^ot:focalClade": 843528, 
 "^ot:focalCladeOTTTaxonName": "Oscillatoriales", 
+"^ot:messages": {
+"message": []
+}, 
 "^ot:otusElementOrder": [
 "otus2554"
 ], 
 "^ot:studyId": "2554", 
 "^ot:studyPublicationReference": "Engene N., & Paul V.J. 2013. Five Chemically Rich Species of Tropical Marine Cyanobacteria of the Genus Tropicimarinus Gen. Nov. (Oscillatoriales, Cyanobacteria). Journal of Phycology, .", 
 "^ot:studyYear": 2013, 
+"^ot:tag": [], 
 "^ot:treesElementOrder": [
 "trees2554"
 ], 
@@ -96,6 +67,8 @@
 "otuById": {
 "otu368844": {
 "^ot:originalLabel": "Arthrospira sp PCC 8005 X70769", 
+"^ot:ottId": 787785, 
+"^ot:ottTaxonName": "Arthrospira sp. PCC 8005", 
 "^ot:treebaseOTUId": "Tl1098770"
 }, 
 "otu368845": {
@@ -148,12 +121,14 @@
 }, 
 "otu368855": {
 "^ot:originalLabel": "Leptolyngbya sp HBC2 EU249128", 
+"^ot:ottId": 604330, 
+"^ot:ottTaxonName": "Leptolyngbya sp. HBC2", 
 "^ot:treebaseOTUId": "Tl1098781"
 }, 
 "otu368856": {
 "^ot:originalLabel": "Lyngbya hieronymusii CN4 3 AB045906", 
-"^ot:ottId": 704075, 
-"^ot:ottTaxonName": "Limnoraphis hieronymusii", 
+"^ot:ottId": 169909, 
+"^ot:ottTaxonName": "Lyngbya hieronymusii var. hieronymusii CN4-3", 
 "^ot:treebaseOTUId": "Tl1098782"
 }, 
 "otu368857": {
@@ -162,14 +137,12 @@
 }, 
 "otu368858": {
 "^ot:originalLabel": "Crinalium epipsammum SAG 2289 AB115964", 
-"^ot:ottId": 528222, 
-"^ot:ottTaxonName": "Crinalium epipsammum", 
+"^ot:ottId": 528227, 
+"^ot:ottTaxonName": "Crinalium epipsammum SAG 22.89", 
 "^ot:treebaseOTUId": "Tl1098784"
 }, 
 "otu368859": {
 "^ot:originalLabel": "Lyngbya hieronymusii AB045906", 
-"^ot:ottId": 704075, 
-"^ot:ottTaxonName": "Limnoraphis hieronymusii", 
 "^ot:treebaseOTUId": "Tl1098785"
 }, 
 "otu368860": {
@@ -180,14 +153,12 @@
 }, 
 "otu368861": {
 "^ot:originalLabel": "Lyngbya aestuarii PCC 7419 AJ000714", 
-"^ot:ottId": 945417, 
-"^ot:ottTaxonName": "Lyngbya aestuarii", 
+"^ot:ottId": 555087, 
+"^ot:ottTaxonName": "Lyngbya aestuarii PCC 7419", 
 "^ot:treebaseOTUId": "Tl1098787"
 }, 
 "otu368862": {
 "^ot:originalLabel": "Moorea producta JHB FJ151521", 
-"^ot:ottId": 659831, 
-"^ot:ottTaxonName": "Moorea producens", 
 "^ot:treebaseOTUId": "Tl1098788"
 }, 
 "otu368863": {
@@ -214,8 +185,6 @@
 }, 
 "otu368867": {
 "^ot:originalLabel": "Gloeobacter violaceus PCC 7421 NC005125", 
-"^ot:ottId": 108690, 
-"^ot:ottTaxonName": "Gloeobacter violaceus", 
 "^ot:treebaseOTUId": "Tl1098793"
 }, 
 "otu368868": {
@@ -258,8 +227,8 @@
 }, 
 "otu368876": {
 "^ot:originalLabel": "Arthrospira platensis PCC 7345 X75044", 
-"^ot:ottId": 827405, 
-"^ot:ottTaxonName": "Arthrospira platensis", 
+"^ot:ottId": 196101, 
+"^ot:ottTaxonName": "Arthrospira platensis PCC 7345", 
 "^ot:treebaseOTUId": "Tl1098802"
 }, 
 "otu368877": {
@@ -278,8 +247,8 @@
 }, 
 "otu368880": {
 "^ot:originalLabel": "Anabaena variabilis ATCC29413 NC007413", 
-"^ot:ottId": 893794, 
-"^ot:ottTaxonName": "Anabaena variabilis", 
+"^ot:ottId": 376279, 
+"^ot:ottTaxonName": "Anabaena variabilis ATCC 29413", 
 "^ot:treebaseOTUId": "Tl1098806"
 }, 
 "otu368881": {
@@ -306,12 +275,12 @@
 }, 
 "otu368885": {
 "^ot:originalLabel": "Lyngbya martensiana H3b 7 JN854142", 
+"^ot:ottId": 340821, 
+"^ot:ottTaxonName": "Lyngbya martensiana H3b/7", 
 "^ot:treebaseOTUId": "Tl1098811"
 }, 
 "otu368886": {
 "^ot:originalLabel": "Synechococcus elongatus PCC 6301 NC006576", 
-"^ot:ottId": 114641, 
-"^ot:ottTaxonName": "Synechococcus elongatus", 
 "^ot:treebaseOTUId": "Tl1098812"
 }, 
 "otu368887": {
@@ -326,6 +295,8 @@
 }, 
 "otu368889": {
 "^ot:originalLabel": "Leptolyngbya sp PCC 7375 AB039011", 
+"^ot:ottId": 177625, 
+"^ot:ottTaxonName": "Leptolyngbya sp. PCC 7375", 
 "^ot:treebaseOTUId": "Tl1098815"
 }, 
 "otu368890": {
@@ -366,8 +337,6 @@
 }, 
 "otu368897": {
 "^ot:originalLabel": "Synechococcus elongatus PCC 7942 NC007604", 
-"^ot:ottId": 114641, 
-"^ot:ottTaxonName": "Synechococcus elongatus", 
 "^ot:treebaseOTUId": "Tl1098823"
 }, 
 "otu368898": {
@@ -388,8 +357,6 @@
 }, 
 "otu368901": {
 "^ot:originalLabel": "Lyngbya hieronymusii N 929 JN854140", 
-"^ot:ottId": 704075, 
-"^ot:ottTaxonName": "Limnoraphis hieronymusii", 
 "^ot:treebaseOTUId": "Tl1098827"
 }, 
 "otu368902": {
@@ -406,6 +373,8 @@
 }, 
 "otu368904": {
 "^ot:originalLabel": "Crinalium magnum SAG 3487 AB115965", 
+"^ot:ottId": 528249, 
+"^ot:ottTaxonName": "Crinalium magnum SAG 34.87", 
 "^ot:treebaseOTUId": "Tl1098830"
 }, 
 "otu368905": {
@@ -638,8 +607,15 @@
 "treeById": {
 "tree5580": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "Like Fig. 3", 
+"^ot:inGroupClade": "node956297", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node956291", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node956291": {
 "edge956292": {
@@ -1707,8 +1683,14 @@
 }, 
 "tree5581": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "PAUP 1", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node956424", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node956424": {
 "edge956425": {
@@ -2008,8 +1990,14 @@
 }, 
 "tree5582": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "PAUP 1", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node956461", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node956461": {
 "edge956462": {

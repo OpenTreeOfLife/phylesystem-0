@@ -19,48 +19,11 @@
 "@id": "peyotl-validator", 
 "@name": "validate_ot_nexson.py", 
 "@url": "https://github.com/OpenTreeOfLife/peyotl", 
-"@version": "0.0.3a", 
+"@version": "0.0.4a", 
 "invocation": {
-"checksPerformed": [
-"MISSING_MANDATORY_KEY", 
-"MISSING_OPTIONAL_KEY", 
-"UNRECOGNIZED_KEY", 
-"MISSING_LIST_EXPECTED", 
-"DUPLICATING_SINGLETON_KEY", 
-"REFERENCED_ID_NOT_FOUND", 
-"REPEATED_ID", 
-"REPEATED_OTU", 
-"MULTIPLE_ROOT_NODES", 
-"NO_ROOT_NODE", 
-"MULTIPLE_EDGES_FOR_NODES", 
-"CYCLE_DETECTED", 
-"DISCONNECTED_GRAPH_DETECTED", 
-"INCORRECT_ROOT_NODE_LABEL", 
-"TIP_WITHOUT_OTU", 
-"TIP_WITHOUT_OTT_ID", 
-"MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
-"NON_MONOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
-"INVALID_PROPERTY_VALUE", 
-"PROPERTY_VALUE_NOT_USEFUL", 
-"UNRECOGNIZED_PROPERTY_VALUE", 
-"MULTIPLE_TREES", 
-"UNRECOGNIZED_TAG", 
-"CONFLICTING_PROPERTY_VALUES", 
-"NO_TREES", 
-"DEPRECATED_PROPERTY", 
-"UNPARSEABLE_META", 
-"UNREACHABLE_NODE", 
-"INCORRECT_VALUE_TYPE", 
-"MISSING_CRUCIAL_CONTENT"
-], 
 "commandLine": [
 "--embed", 
-"--agent-only", 
-"-e", 
-"../mig-phyelesystem-scratch/1150/validation.json", 
-"-o", 
-"../mig-phyelesystem-scratch/1150/final.json", 
-"../mig-phyelesystem-scratch/1150/v1.2.1-1150.json"
+"--agent-only"
 ], 
 "otherProperty": [
 {
@@ -76,9 +39,16 @@
 }
 ]
 }, 
+"^ot:annotationEvents": {
+"annotation": []
+}, 
+"^ot:candidateTreeForSynthesis": [], 
 "^ot:curatorName": "Romina Gazis", 
 "^ot:focalClade": 611406, 
 "^ot:focalCladeOTTTaxonName": "Exobasidiales", 
+"^ot:messages": {
+"message": []
+}, 
 "^ot:otusElementOrder": [
 "otus1150"
 ], 
@@ -89,9 +59,9 @@
 "^ot:studyPublicationReference": "Begerow, Dominik, Robert Bauer, and Franz Oberwinkler. \"The Exobasidiales: an evolutionary hypothesis.\" Mycological Progress 1.2 (2002): 187-199.", 
 "^ot:studyYear": 2002, 
 "^ot:tag": [
+"LSU", 
 "MP", 
-"NJ", 
-"LSU"
+"NJ"
 ], 
 "^ot:treesElementOrder": [
 "trees1150"
@@ -278,7 +248,9 @@
 "^ot:ottTaxonName": "Ustilago hordei"
 }, 
 "otu227563": {
-"^ot:originalLabel": "Exo.yoshinagai.1636.590"
+"^ot:originalLabel": "Exo.yoshinagai.1636.590", 
+"^ot:ottId": 55274, 
+"^ot:ottTaxonName": "Exobasidium yoshinagai"
 }, 
 "otu227564": {
 "^ot:originalLabel": "0T.caries160.85CBS", 
@@ -298,9 +270,14 @@
 "treeById": {
 "tree2330": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "MP, LSU", 
 "^ot:inGroupClade": "node552576", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node552574", 
+"^ot:specifiedRoot": "", 
 "^ot:tag": [
 "MP", 
 "LSU", 
@@ -731,9 +708,14 @@
 }, 
 "tree2331": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "NJ, LSU", 
 "^ot:inGroupClade": "node552636", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node552634", 
+"^ot:specifiedRoot": "", 
 "^ot:tag": [
 "NJ", 
 "LSU"

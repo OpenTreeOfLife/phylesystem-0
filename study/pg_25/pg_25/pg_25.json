@@ -19,48 +19,11 @@
 "@id": "peyotl-validator", 
 "@name": "validate_ot_nexson.py", 
 "@url": "https://github.com/OpenTreeOfLife/peyotl", 
-"@version": "0.0.3a", 
+"@version": "0.0.4a", 
 "invocation": {
-"checksPerformed": [
-"MISSING_MANDATORY_KEY", 
-"MISSING_OPTIONAL_KEY", 
-"UNRECOGNIZED_KEY", 
-"MISSING_LIST_EXPECTED", 
-"DUPLICATING_SINGLETON_KEY", 
-"REFERENCED_ID_NOT_FOUND", 
-"REPEATED_ID", 
-"REPEATED_OTU", 
-"MULTIPLE_ROOT_NODES", 
-"NO_ROOT_NODE", 
-"MULTIPLE_EDGES_FOR_NODES", 
-"CYCLE_DETECTED", 
-"DISCONNECTED_GRAPH_DETECTED", 
-"INCORRECT_ROOT_NODE_LABEL", 
-"TIP_WITHOUT_OTU", 
-"TIP_WITHOUT_OTT_ID", 
-"MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
-"NON_MONOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
-"INVALID_PROPERTY_VALUE", 
-"PROPERTY_VALUE_NOT_USEFUL", 
-"UNRECOGNIZED_PROPERTY_VALUE", 
-"MULTIPLE_TREES", 
-"UNRECOGNIZED_TAG", 
-"CONFLICTING_PROPERTY_VALUES", 
-"NO_TREES", 
-"DEPRECATED_PROPERTY", 
-"UNPARSEABLE_META", 
-"UNREACHABLE_NODE", 
-"INCORRECT_VALUE_TYPE", 
-"MISSING_CRUCIAL_CONTENT"
-], 
 "commandLine": [
 "--embed", 
-"--agent-only", 
-"-e", 
-"../mig-phyelesystem-scratch/25/validation.json", 
-"-o", 
-"../mig-phyelesystem-scratch/25/final.json", 
-"../mig-phyelesystem-scratch/25/v1.2.1-25.json"
+"--agent-only"
 ], 
 "otherProperty": [
 {
@@ -76,9 +39,16 @@
 }
 ]
 }, 
+"^ot:annotationEvents": {
+"annotation": []
+}, 
+"^ot:candidateTreeForSynthesis": [], 
 "^ot:curatorName": "Rick Ree", 
 "^ot:focalClade": 99252, 
 "^ot:focalCladeOTTTaxonName": "Magnoliophyta", 
+"^ot:messages": {
+"message": []
+}, 
 "^ot:otusElementOrder": [
 "otus25"
 ], 
@@ -88,6 +58,7 @@
 }, 
 "^ot:studyPublicationReference": "Qiu, Yin-Long, Libo Li, Bin Wang, Jia-Yu Xue, Tory A. Hendry, Rui-Qi Li, Joseph W. Brown, Yang Liu, Geordan T. Hudson, and Zhi-Duan Chen. 2010. Angiosperm phylogeny inferred from sequences of four mitochondrial genes. Journal of Systematics and Evolution 48, no. 6 (11): 391-425.", 
 "^ot:studyYear": 2010, 
+"^ot:tag": [], 
 "^ot:treesElementOrder": [
 "trees25"
 ], 
@@ -705,10 +676,14 @@
 "^ot:ottTaxonName": "Myrothamnus"
 }, 
 "otu1825": {
-"^ot:originalLabel": "Leea"
+"^ot:originalLabel": "Leea", 
+"^ot:ottId": 909812, 
+"^ot:ottTaxonName": "Leea"
 }, 
 "otu1826": {
-"^ot:originalLabel": "Vitis"
+"^ot:originalLabel": "Vitis", 
+"^ot:ottId": 329893, 
+"^ot:ottTaxonName": "Vitis"
 }, 
 "otu1827": {
 "^ot:originalLabel": "Geranium", 
@@ -846,7 +821,9 @@
 "^ot:ottTaxonName": "Spiraea"
 }, 
 "otu1854": {
-"^ot:originalLabel": "Ceanothus"
+"^ot:originalLabel": "Ceanothus", 
+"^ot:ottId": 371201, 
+"^ot:ottTaxonName": "Ceanothus"
 }, 
 "otu1855": {
 "^ot:originalLabel": "Elaeagnus", 
@@ -1119,7 +1096,9 @@
 "^ot:ottTaxonName": "Drypetes"
 }, 
 "otu1909": {
-"^ot:originalLabel": "Phyllanthus"
+"^ot:originalLabel": "Phyllanthus", 
+"^ot:ottId": 11415, 
+"^ot:ottTaxonName": "Phyllanthus"
 }, 
 "otu1910": {
 "^ot:originalLabel": "Reinwardtia", 
@@ -1562,7 +1541,9 @@
 "^ot:ottTaxonName": "Mentzelia"
 }, 
 "otu1998": {
-"^ot:originalLabel": "Icacina"
+"^ot:originalLabel": "Icacina", 
+"^ot:ottId": 1012289, 
+"^ot:ottTaxonName": "Icacina"
 }, 
 "otu1999": {
 "^ot:originalLabel": "Ilex", 
@@ -1745,7 +1726,9 @@
 "^ot:ottTaxonName": "Scaevola"
 }, 
 "otu2035": {
-"^ot:originalLabel": "Oncotheca"
+"^ot:originalLabel": "Oncotheca", 
+"^ot:ottId": 979305, 
+"^ot:ottTaxonName": "Oncotheca"
 }, 
 "otu2036": {
 "^ot:originalLabel": "Tetramerista", 
@@ -1883,7 +1866,9 @@
 "^ot:ottTaxonName": "Ehretia"
 }, 
 "otu2063": {
-"^ot:originalLabel": "Hydrophyllum"
+"^ot:originalLabel": "Hydrophyllum", 
+"^ot:ottId": 544711, 
+"^ot:ottTaxonName": "Hydrophyllum"
 }, 
 "otu2064": {
 "^ot:originalLabel": "Gelsemium", 
@@ -1896,7 +1881,9 @@
 "^ot:ottTaxonName": "Galium"
 }, 
 "otu2066": {
-"^ot:originalLabel": "Luculia"
+"^ot:originalLabel": "Luculia", 
+"^ot:ottId": 611952, 
+"^ot:ottTaxonName": "Luculia"
 }, 
 "otu2067": {
 "^ot:originalLabel": "Gentiana", 
@@ -1919,7 +1906,9 @@
 "^ot:ottTaxonName": "Syringa"
 }, 
 "otu2071": {
-"^ot:originalLabel": "Peltanthera"
+"^ot:originalLabel": "Peltanthera", 
+"^ot:ottId": 55268, 
+"^ot:ottTaxonName": "Peltanthera"
 }, 
 "otu2072": {
 "^ot:originalLabel": "Calceolaria", 
@@ -1989,9 +1978,14 @@
 "treeById": {
 "tree15": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
 "^ot:branchLengthMode": "ot:substitutionCount", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "ML bootstrap consensus (356 taxa)", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node4392", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node4392": {
 "edge4393": {
@@ -7684,10 +7678,15 @@
 }, 
 "tree16": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
 "^ot:branchLengthMode": "ot:substitutionCount", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "ML bootstrap consensus (380 taxa)", 
 "^ot:inGroupClade": "node5119", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node5103", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node5103": {
 "edge5104": {

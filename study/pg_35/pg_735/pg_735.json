@@ -19,48 +19,11 @@
 "@id": "peyotl-validator", 
 "@name": "validate_ot_nexson.py", 
 "@url": "https://github.com/OpenTreeOfLife/peyotl", 
-"@version": "0.0.3a", 
+"@version": "0.0.4a", 
 "invocation": {
-"checksPerformed": [
-"MISSING_MANDATORY_KEY", 
-"MISSING_OPTIONAL_KEY", 
-"UNRECOGNIZED_KEY", 
-"MISSING_LIST_EXPECTED", 
-"DUPLICATING_SINGLETON_KEY", 
-"REFERENCED_ID_NOT_FOUND", 
-"REPEATED_ID", 
-"REPEATED_OTU", 
-"MULTIPLE_ROOT_NODES", 
-"NO_ROOT_NODE", 
-"MULTIPLE_EDGES_FOR_NODES", 
-"CYCLE_DETECTED", 
-"DISCONNECTED_GRAPH_DETECTED", 
-"INCORRECT_ROOT_NODE_LABEL", 
-"TIP_WITHOUT_OTU", 
-"TIP_WITHOUT_OTT_ID", 
-"MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
-"NON_MONOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
-"INVALID_PROPERTY_VALUE", 
-"PROPERTY_VALUE_NOT_USEFUL", 
-"UNRECOGNIZED_PROPERTY_VALUE", 
-"MULTIPLE_TREES", 
-"UNRECOGNIZED_TAG", 
-"CONFLICTING_PROPERTY_VALUES", 
-"NO_TREES", 
-"DEPRECATED_PROPERTY", 
-"UNPARSEABLE_META", 
-"UNREACHABLE_NODE", 
-"INCORRECT_VALUE_TYPE", 
-"MISSING_CRUCIAL_CONTENT"
-], 
 "commandLine": [
 "--embed", 
-"--agent-only", 
-"-e", 
-"../mig-phyelesystem-scratch/735/validation.json", 
-"-o", 
-"../mig-phyelesystem-scratch/735/final.json", 
-"../mig-phyelesystem-scratch/735/v1.2.1-735.json"
+"--agent-only"
 ], 
 "otherProperty": [
 {
@@ -76,12 +39,19 @@
 }
 ]
 }, 
+"^ot:annotationEvents": {
+"annotation": []
+}, 
+"^ot:candidateTreeForSynthesis": [], 
 "^ot:curatorName": "Romina Gazis", 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S817"
 }, 
 "^ot:focalClade": 346120, 
 "^ot:focalCladeOTTTaxonName": "Dothideomycetes", 
+"^ot:messages": {
+"message": []
+}, 
 "^ot:otusElementOrder": [
 "otus735"
 ], 
@@ -91,6 +61,7 @@
 }, 
 "^ot:studyPublicationReference": "Lumbsch H., & Lindemuth R. 2001. Major lineages of Dothideomycetes (Ascomycota) inferred from SSU and LSU rDNA sequences. Mycological Research, 105(8): 901-908.", 
 "^ot:studyYear": 2001, 
+"^ot:tag": [], 
 "^ot:treesElementOrder": [
 "trees735"
 ], 
@@ -135,6 +106,8 @@
 }, 
 "otu190328": {
 "^ot:originalLabel": "Trematosphaeria heterospora", 
+"^ot:ottId": 5319110, 
+"^ot:ottTaxonName": "Leptosphaeria heterospora", 
 "^ot:treebaseOTUId": "Tl127393"
 }, 
 "otu190329": {
@@ -155,6 +128,8 @@
 }, 
 "otu190332": {
 "^ot:originalLabel": "Capnodium citri", 
+"^ot:ottId": 736945, 
+"^ot:ottTaxonName": "Capnodium citri", 
 "^ot:treebaseOTUId": "Tl127397"
 }, 
 "otu190333": {
@@ -177,6 +152,8 @@
 }, 
 "otu190336": {
 "^ot:originalLabel": "Lojkania enalia", 
+"^ot:ottId": 81512, 
+"^ot:ottTaxonName": "Verruculina enalia", 
 "^ot:treebaseOTUId": "Tl127402"
 }, 
 "otu190337": {
@@ -193,6 +170,8 @@
 }, 
 "otu190339": {
 "^ot:originalLabel": "Dothidea ribesia", 
+"^ot:ottId": 5320161, 
+"^ot:ottTaxonName": "Dothiora ribesia", 
 "^ot:treebaseOTUId": "Tl127406"
 }, 
 "otu190340": {
@@ -226,9 +205,15 @@
 "treeById": {
 "tree1328": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "ML, SSU + LSU", 
 "^ot:inGroupClade": "node439865", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node439864", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node439864": {
 "edge439865": {
@@ -514,10 +499,17 @@
 }, 
 "tree1329": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "NJ, SSU + LSU", 
 "^ot:inGroupClade": "node439905", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node439904", 
-"^ot:tag": "SSU", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [
+"SSU"
+], 
 "edgeBySourceId": {
 "node439904": {
 "edge439905": {

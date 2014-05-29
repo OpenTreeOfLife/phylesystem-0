@@ -19,48 +19,11 @@
 "@id": "peyotl-validator", 
 "@name": "validate_ot_nexson.py", 
 "@url": "https://github.com/OpenTreeOfLife/peyotl", 
-"@version": "0.0.3a", 
+"@version": "0.0.4a", 
 "invocation": {
-"checksPerformed": [
-"MISSING_MANDATORY_KEY", 
-"MISSING_OPTIONAL_KEY", 
-"UNRECOGNIZED_KEY", 
-"MISSING_LIST_EXPECTED", 
-"DUPLICATING_SINGLETON_KEY", 
-"REFERENCED_ID_NOT_FOUND", 
-"REPEATED_ID", 
-"REPEATED_OTU", 
-"MULTIPLE_ROOT_NODES", 
-"NO_ROOT_NODE", 
-"MULTIPLE_EDGES_FOR_NODES", 
-"CYCLE_DETECTED", 
-"DISCONNECTED_GRAPH_DETECTED", 
-"INCORRECT_ROOT_NODE_LABEL", 
-"TIP_WITHOUT_OTU", 
-"TIP_WITHOUT_OTT_ID", 
-"MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
-"NON_MONOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
-"INVALID_PROPERTY_VALUE", 
-"PROPERTY_VALUE_NOT_USEFUL", 
-"UNRECOGNIZED_PROPERTY_VALUE", 
-"MULTIPLE_TREES", 
-"UNRECOGNIZED_TAG", 
-"CONFLICTING_PROPERTY_VALUES", 
-"NO_TREES", 
-"DEPRECATED_PROPERTY", 
-"UNPARSEABLE_META", 
-"UNREACHABLE_NODE", 
-"INCORRECT_VALUE_TYPE", 
-"MISSING_CRUCIAL_CONTENT"
-], 
 "commandLine": [
 "--embed", 
-"--agent-only", 
-"-e", 
-"../mig-phyelesystem-scratch/1144/validation.json", 
-"-o", 
-"../mig-phyelesystem-scratch/1144/final.json", 
-"../mig-phyelesystem-scratch/1144/v1.2.1-1144.json"
+"--agent-only"
 ], 
 "otherProperty": [
 {
@@ -76,9 +39,16 @@
 }
 ]
 }, 
+"^ot:annotationEvents": {
+"annotation": []
+}, 
+"^ot:candidateTreeForSynthesis": [], 
 "^ot:curatorName": "Romina Gazis", 
 "^ot:focalClade": 97730, 
 "^ot:focalCladeOTTTaxonName": "Entomophthoromycota", 
+"^ot:messages": {
+"message": []
+}, 
 "^ot:otusElementOrder": [
 "otus1144"
 ], 
@@ -89,8 +59,8 @@
 "^ot:studyPublicationReference": "Gryganskyi, Andrii P., Richard A. Humber, Matthew E. Smith, Jolanta Miadlikovska, Steven Wu, Kerstin Voigt, Grit Walther, Iryna M. Anishchenko, and Rytas Vilgalys. \"Molecular Phylogeny of the< i> Entomophthoromycota</i>.\" Molecular Phylogenetics and Evolution: Volume 65, Issue 2, November 2012, Pages 682\u2013694", 
 "^ot:studyYear": 2012, 
 "^ot:tag": [
-"ML", 
 "LSU", 
+"ML", 
 "SSU"
 ], 
 "^ot:treesElementOrder": [
@@ -153,7 +123,9 @@
 "^ot:ottTaxonName": "Dimargaris bacillispora"
 }, 
 "otu227258": {
-"^ot:originalLabel": "Piptocephalis corymbifera 145 Z4"
+"^ot:originalLabel": "Piptocephalis corymbifera 145 Z4", 
+"^ot:ottId": 346211, 
+"^ot:ottTaxonName": "Piptocephalis freseniana"
 }, 
 "otu227259": {
 "^ot:originalLabel": "Smittium culisetae 29 Z9"
@@ -239,7 +211,9 @@
 "^ot:ottTaxonName": "Zoophthora anglica"
 }, 
 "otu227276": {
-"^ot:originalLabel": "Zoophthora phalloides 2281 E42"
+"^ot:originalLabel": "Zoophthora phalloides 2281 E42", 
+"^ot:ottId": 5294340, 
+"^ot:ottTaxonName": "Erynia phalloides"
 }, 
 "otu227277": {
 "^ot:originalLabel": "Zoophthora occidentalis 3073 E40", 
@@ -292,7 +266,9 @@
 "^ot:ottTaxonName": "Pandora delphacis"
 }, 
 "otu227287": {
-"^ot:originalLabel": "Erynia sciarae 1870 E43"
+"^ot:originalLabel": "Erynia sciarae 1870 E43", 
+"^ot:ottId": 5294345, 
+"^ot:ottTaxonName": "Furia sciarae"
 }, 
 "otu227288": {
 "^ot:originalLabel": "Erynia conica 1439 E46", 
@@ -422,9 +398,16 @@
 "treeById": {
 "tree2324": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "ML", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node552029", 
-"^ot:tag": "delete me", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [
+"delete me"
+], 
 "edgeBySourceId": {
 "node552029": {
 "edge552030": {
@@ -1437,9 +1420,14 @@
 }, 
 "tree5800": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "ML, LSU + SSU (rooted)", 
 "^ot:inGroupClade": "node991044", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node991018", 
+"^ot:specifiedRoot": "", 
 "^ot:tag": [
 "ML", 
 "LSU", 

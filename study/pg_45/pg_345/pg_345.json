@@ -19,48 +19,11 @@
 "@id": "peyotl-validator", 
 "@name": "validate_ot_nexson.py", 
 "@url": "https://github.com/OpenTreeOfLife/peyotl", 
-"@version": "0.0.3a", 
+"@version": "0.0.4a", 
 "invocation": {
-"checksPerformed": [
-"MISSING_MANDATORY_KEY", 
-"MISSING_OPTIONAL_KEY", 
-"UNRECOGNIZED_KEY", 
-"MISSING_LIST_EXPECTED", 
-"DUPLICATING_SINGLETON_KEY", 
-"REFERENCED_ID_NOT_FOUND", 
-"REPEATED_ID", 
-"REPEATED_OTU", 
-"MULTIPLE_ROOT_NODES", 
-"NO_ROOT_NODE", 
-"MULTIPLE_EDGES_FOR_NODES", 
-"CYCLE_DETECTED", 
-"DISCONNECTED_GRAPH_DETECTED", 
-"INCORRECT_ROOT_NODE_LABEL", 
-"TIP_WITHOUT_OTU", 
-"TIP_WITHOUT_OTT_ID", 
-"MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
-"NON_MONOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
-"INVALID_PROPERTY_VALUE", 
-"PROPERTY_VALUE_NOT_USEFUL", 
-"UNRECOGNIZED_PROPERTY_VALUE", 
-"MULTIPLE_TREES", 
-"UNRECOGNIZED_TAG", 
-"CONFLICTING_PROPERTY_VALUES", 
-"NO_TREES", 
-"DEPRECATED_PROPERTY", 
-"UNPARSEABLE_META", 
-"UNREACHABLE_NODE", 
-"INCORRECT_VALUE_TYPE", 
-"MISSING_CRUCIAL_CONTENT"
-], 
 "commandLine": [
 "--embed", 
-"--agent-only", 
-"-e", 
-"../mig-phyelesystem-scratch/345/validation.json", 
-"-o", 
-"../mig-phyelesystem-scratch/345/final.json", 
-"../mig-phyelesystem-scratch/345/v1.2.1-345.json"
+"--agent-only"
 ], 
 "otherProperty": [
 {
@@ -76,12 +39,19 @@
 }
 ]
 }, 
+"^ot:annotationEvents": {
+"annotation": []
+}, 
+"^ot:candidateTreeForSynthesis": [], 
 "^ot:curatorName": "Romina Gazis", 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S783"
 }, 
 "^ot:focalClade": 207725, 
 "^ot:focalCladeOTTTaxonName": "Boletales", 
+"^ot:messages": {
+"message": []
+}, 
 "^ot:otusElementOrder": [
 "otus345"
 ], 
@@ -91,6 +61,7 @@
 }, 
 "^ot:studyPublicationReference": "Binder M., & Bresinsky A. 2002. Derivation of a polymorphic lineage of Gasteromycetes from boletoid ancestors. Mycologia, 94(1): 85-98.", 
 "^ot:studyYear": 2002, 
+"^ot:tag": [], 
 "^ot:treesElementOrder": [
 "trees345"
 ], 
@@ -141,6 +112,8 @@
 }, 
 "otu75088": {
 "^ot:originalLabel": "Hymenogaster decorus", 
+"^ot:ottId": 1002812, 
+"^ot:ottTaxonName": "Hymenogaster olivaceus", 
 "^ot:treebaseOTUId": "Tl125632"
 }, 
 "otu75089": {
@@ -279,6 +252,8 @@
 }, 
 "otu75112": {
 "^ot:originalLabel": "Xerocomus subtomentosus", 
+"^ot:ottId": 500350, 
+"^ot:ottTaxonName": "Boletus subtomentosus", 
 "^ot:treebaseOTUId": "Tl125663"
 }, 
 "otu75113": {
@@ -299,6 +274,8 @@
 }, 
 "otu75116": {
 "^ot:originalLabel": "Scleroderma geaster", 
+"^ot:ottId": 508899, 
+"^ot:ottTaxonName": "Scleroderma polyrhizum", 
 "^ot:treebaseOTUId": "Tl125669"
 }, 
 "otu75117": {
@@ -339,10 +316,14 @@
 }, 
 "otu75123": {
 "^ot:originalLabel": "Russula mairei", 
+"^ot:ottId": 5299312, 
+"^ot:ottTaxonName": "Russula nobilis", 
 "^ot:treebaseOTUId": "Tl125676"
 }, 
 "otu75124": {
 "^ot:originalLabel": "Geastrum nanum", 
+"^ot:ottId": 608974, 
+"^ot:ottTaxonName": "Geastrum schmidelii", 
 "^ot:treebaseOTUId": "Tl125680"
 }, 
 "otu75125": {
@@ -413,6 +394,8 @@
 }, 
 "otu75136": {
 "^ot:originalLabel": "Zelleromyces stephensii", 
+"^ot:ottId": 56881, 
+"^ot:ottTaxonName": "Lactarius stephensii", 
 "^ot:treebaseOTUId": "Tl21350"
 }, 
 "otu75137": {
@@ -423,6 +406,8 @@
 }, 
 "otu75138": {
 "^ot:originalLabel": "Gyroporus castaneus US", 
+"^ot:ottId": 856478, 
+"^ot:ottTaxonName": "Gyroporus castaneus", 
 "^ot:treebaseOTUId": "Tl21353"
 }, 
 "otu75139": {
@@ -433,6 +418,8 @@
 }, 
 "otu75140": {
 "^ot:originalLabel": "Gyroporus castaneus EU", 
+"^ot:ottId": 856478, 
+"^ot:ottTaxonName": "Gyroporus castaneus", 
 "^ot:treebaseOTUId": "Tl21361"
 }, 
 "otu75141": {
@@ -470,8 +457,14 @@
 "treeById": {
 "tree375": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "ML, LSU", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node198239", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node198239": {
 "edge198240": {
@@ -1352,9 +1345,16 @@
 }, 
 "tree376": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "MP, LSU", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node198364", 
-"^ot:tag": "delete me", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [
+"delete me"
+], 
 "edgeBySourceId": {
 "node198364": {
 "edge198365": {
@@ -1577,9 +1577,16 @@
 }, 
 "tree377": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "MP, LSU", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node198395", 
-"^ot:tag": "delete me", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [
+"delete me"
+], 
 "edgeBySourceId": {
 "node198395": {
 "edge198396": {
@@ -2460,9 +2467,15 @@
 }, 
 "tree5535": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "ML, LSU (rooted)", 
 "^ot:inGroupClade": "node952963", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node952955", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node952955": {
 "edge952956": {
@@ -3344,9 +3357,15 @@
 }, 
 "tree5537": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "MP, LSU (rooted)", 
 "^ot:inGroupClade": "node953246", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node953245", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node953245": {
 "edge953246": {
@@ -3570,9 +3589,15 @@
 }, 
 "tree5538": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "MP, LSU (rooted)", 
 "^ot:inGroupClade": "node953284", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node953276", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node953276": {
 "edge953277": {

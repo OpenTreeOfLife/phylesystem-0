@@ -19,48 +19,11 @@
 "@id": "peyotl-validator", 
 "@name": "validate_ot_nexson.py", 
 "@url": "https://github.com/OpenTreeOfLife/peyotl", 
-"@version": "0.0.3a", 
+"@version": "0.0.4a", 
 "invocation": {
-"checksPerformed": [
-"MISSING_MANDATORY_KEY", 
-"MISSING_OPTIONAL_KEY", 
-"UNRECOGNIZED_KEY", 
-"MISSING_LIST_EXPECTED", 
-"DUPLICATING_SINGLETON_KEY", 
-"REFERENCED_ID_NOT_FOUND", 
-"REPEATED_ID", 
-"REPEATED_OTU", 
-"MULTIPLE_ROOT_NODES", 
-"NO_ROOT_NODE", 
-"MULTIPLE_EDGES_FOR_NODES", 
-"CYCLE_DETECTED", 
-"DISCONNECTED_GRAPH_DETECTED", 
-"INCORRECT_ROOT_NODE_LABEL", 
-"TIP_WITHOUT_OTU", 
-"TIP_WITHOUT_OTT_ID", 
-"MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
-"NON_MONOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
-"INVALID_PROPERTY_VALUE", 
-"PROPERTY_VALUE_NOT_USEFUL", 
-"UNRECOGNIZED_PROPERTY_VALUE", 
-"MULTIPLE_TREES", 
-"UNRECOGNIZED_TAG", 
-"CONFLICTING_PROPERTY_VALUES", 
-"NO_TREES", 
-"DEPRECATED_PROPERTY", 
-"UNPARSEABLE_META", 
-"UNREACHABLE_NODE", 
-"INCORRECT_VALUE_TYPE", 
-"MISSING_CRUCIAL_CONTENT"
-], 
 "commandLine": [
 "--embed", 
-"--agent-only", 
-"-e", 
-"../mig-phyelesystem-scratch/810/validation.json", 
-"-o", 
-"../mig-phyelesystem-scratch/810/final.json", 
-"../mig-phyelesystem-scratch/810/v1.2.1-810.json"
+"--agent-only"
 ], 
 "otherProperty": [
 {
@@ -76,12 +39,19 @@
 }
 ]
 }, 
+"^ot:annotationEvents": {
+"annotation": []
+}, 
+"^ot:candidateTreeForSynthesis": [], 
 "^ot:curatorName": "Romina Gazis", 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S1571"
 }, 
 "^ot:focalClade": 183729, 
 "^ot:focalCladeOTTTaxonName": "Diatrypaceae", 
+"^ot:messages": {
+"message": []
+}, 
 "^ot:otusElementOrder": [
 "otus810"
 ], 
@@ -92,8 +62,8 @@
 "^ot:studyPublicationReference": "Carmaran C., Romero A., & Giussani L. 2006. An approach towards a new phylogenetic classification in Diatrypaceae. Fungal Diversity, 23: 67-87", 
 "^ot:studyYear": 2006, 
 "^ot:tag": [
-"MP", 
-"morphology"
+"morphology", 
+"MP"
 ], 
 "^ot:treesElementOrder": [
 "trees810"
@@ -121,6 +91,8 @@
 }, 
 "otu197185": {
 "^ot:originalLabel": "Diatrype flavovirens", 
+"^ot:ottId": 788370, 
+"^ot:ottTaxonName": "Eutypa flavovirens", 
 "^ot:treebaseOTUId": "Tl25023"
 }, 
 "otu197186": {
@@ -131,6 +103,8 @@
 }, 
 "otu197187": {
 "^ot:originalLabel": "Eutypella comosa", 
+"^ot:ottId": 4051167, 
+"^ot:ottTaxonName": "Peroneutypa comosa", 
 "^ot:treebaseOTUId": "Tl32499"
 }, 
 "otu197188": {
@@ -147,6 +121,8 @@
 }, 
 "otu197190": {
 "^ot:originalLabel": "Eutypella scoparia", 
+"^ot:ottId": 5317691, 
+"^ot:ottTaxonName": "Peroneutypa scoparia", 
 "^ot:treebaseOTUId": "Tl32502"
 }, 
 "otu197191": {
@@ -235,6 +211,8 @@
 }, 
 "otu197205": {
 "^ot:originalLabel": "Eutypella aulacostroma", 
+"^ot:ottId": 945945, 
+"^ot:ottTaxonName": "Eutypella", 
 "^ot:treebaseOTUId": "Tl32517"
 }, 
 "otu197206": {
@@ -269,12 +247,18 @@
 "treeById": {
 "tree1531": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "MP, morphology", 
 "^ot:inGroupClade": "node462517", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node462513", 
+"^ot:specifiedRoot": "", 
 "^ot:tag": [
 "MP", 
-"morphology"
+"morphology", 
+"Choose me"
 ], 
 "edgeBySourceId": {
 "node462513": {
@@ -652,10 +636,17 @@
 }, 
 "tree1532": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "Fig. 21A, morphology", 
 "^ot:inGroupClade": "node462570", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node462566", 
-"^ot:tag": "morphology", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [
+"morphology"
+], 
 "edgeBySourceId": {
 "node462566": {
 "edge462567": {
@@ -899,10 +890,17 @@
 }, 
 "tree1533": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "Fig. 21B, morphology", 
 "^ot:inGroupClade": "node462604", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node462600", 
-"^ot:tag": "morphology", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [
+"morphology"
+], 
 "edgeBySourceId": {
 "node462600": {
 "edge462601": {

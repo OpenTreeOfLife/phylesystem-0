@@ -19,48 +19,11 @@
 "@id": "peyotl-validator", 
 "@name": "validate_ot_nexson.py", 
 "@url": "https://github.com/OpenTreeOfLife/peyotl", 
-"@version": "0.0.3a", 
+"@version": "0.0.4a", 
 "invocation": {
-"checksPerformed": [
-"MISSING_MANDATORY_KEY", 
-"MISSING_OPTIONAL_KEY", 
-"UNRECOGNIZED_KEY", 
-"MISSING_LIST_EXPECTED", 
-"DUPLICATING_SINGLETON_KEY", 
-"REFERENCED_ID_NOT_FOUND", 
-"REPEATED_ID", 
-"REPEATED_OTU", 
-"MULTIPLE_ROOT_NODES", 
-"NO_ROOT_NODE", 
-"MULTIPLE_EDGES_FOR_NODES", 
-"CYCLE_DETECTED", 
-"DISCONNECTED_GRAPH_DETECTED", 
-"INCORRECT_ROOT_NODE_LABEL", 
-"TIP_WITHOUT_OTU", 
-"TIP_WITHOUT_OTT_ID", 
-"MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
-"NON_MONOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
-"INVALID_PROPERTY_VALUE", 
-"PROPERTY_VALUE_NOT_USEFUL", 
-"UNRECOGNIZED_PROPERTY_VALUE", 
-"MULTIPLE_TREES", 
-"UNRECOGNIZED_TAG", 
-"CONFLICTING_PROPERTY_VALUES", 
-"NO_TREES", 
-"DEPRECATED_PROPERTY", 
-"UNPARSEABLE_META", 
-"UNREACHABLE_NODE", 
-"INCORRECT_VALUE_TYPE", 
-"MISSING_CRUCIAL_CONTENT"
-], 
 "commandLine": [
 "--embed", 
-"--agent-only", 
-"-e", 
-"../mig-phyelesystem-scratch/1186/validation.json", 
-"-o", 
-"../mig-phyelesystem-scratch/1186/final.json", 
-"../mig-phyelesystem-scratch/1186/v1.2.1-1186.json"
+"--agent-only"
 ], 
 "otherProperty": [
 {
@@ -76,15 +39,21 @@
 }
 ]
 }, 
+"^ot:annotationEvents": {
+"annotation": []
+}, 
+"^ot:candidateTreeForSynthesis": [], 
 "^ot:curatorName": "Romina Gazis", 
-"^ot:focalClade": 2073392, 
-"^ot:focalCladeOTTTaxonName": "Melanops", 
+"^ot:messages": {
+"message": []
+}, 
 "^ot:otusElementOrder": [
 "otus1186"
 ], 
 "^ot:studyId": "1186", 
 "^ot:studyPublicationReference": "Phillips, A. J. L., and A. Alves. \"Taxonomy, phylogeny, and epitypification of Melanops tulasnei, the type species of Melanops.\" Fungal Diversity 38 (2009): 155-166.", 
 "^ot:studyYear": 2009, 
+"^ot:tag": [], 
 "^ot:treesElementOrder": [
 "trees1186"
 ], 
@@ -99,12 +68,12 @@
 "otu230479": {
 "^ot:originalLabel": "Guignardia bidwellii CBS111645", 
 "^ot:ottId": 396956, 
-"^ot:ottTaxonName": "Guignardia bidwellii"
+"^ot:ottTaxonName": "Phoma uvicola"
 }, 
 "otu230480": {
 "^ot:originalLabel": "Guignardia citricarpa CBS102374", 
 "^ot:ottId": 1011458, 
-"^ot:ottTaxonName": "Guignardia citricarpa"
+"^ot:ottTaxonName": "Phyllosticta citricarpa"
 }, 
 "otu230481": {
 "^ot:originalLabel": "Pseudofusicoccum stromaticum CBS117449", 
@@ -219,12 +188,12 @@
 "otu230503": {
 "^ot:originalLabel": "Diplodia mutila CBS112553", 
 "^ot:ottId": 305447, 
-"^ot:ottTaxonName": "Diplodia mutila"
+"^ot:ottTaxonName": "Botryosphaeria stevensii"
 }, 
 "otu230504": {
 "^ot:originalLabel": "Diplodia mutila CBS230.30", 
 "^ot:ottId": 305447, 
-"^ot:ottTaxonName": "Diplodia mutila"
+"^ot:ottTaxonName": "Botryosphaeria stevensii"
 }, 
 "otu230505": {
 "^ot:originalLabel": "Diplodia rosulata CBS116470", 
@@ -247,9 +216,7 @@
 "^ot:ottTaxonName": "Diplodia cupressi"
 }, 
 "otu230509": {
-"^ot:originalLabel": "Botryosphaeria tsugae CBS418.64", 
-"^ot:ottId": 958336, 
-"^ot:ottTaxonName": "Botryosphaeria tsugae"
+"^ot:originalLabel": "Botryosphaeria tsugae CBS418.64"
 }, 
 "otu230510": {
 "^ot:originalLabel": "Diplodia corticola CBS112549", 
@@ -428,18 +395,16 @@
 }, 
 "otu230545": {
 "^ot:originalLabel": "Melanops tulasnei CBS116805", 
-"^ot:ottId": 539377, 
-"^ot:ottTaxonName": "Melanops tulasnei"
+"^ot:ottId": 518725, 
+"^ot:ottTaxonName": "Botryosphaeria quercuum"
 }, 
 "otu230546": {
 "^ot:originalLabel": "Melanops tulasnei CBS116806", 
-"^ot:ottId": 539377, 
-"^ot:ottTaxonName": "Melanops tulasnei"
+"^ot:ottId": 518725, 
+"^ot:ottTaxonName": "Botryosphaeria quercuum"
 }, 
 "otu230547": {
-"^ot:originalLabel": "Melanops CBS118.39", 
-"^ot:ottId": 875740, 
-"^ot:ottTaxonName": "Melanops"
+"^ot:originalLabel": "Melanops CBS118.39"
 }
 }
 }
@@ -454,9 +419,14 @@
 "treeById": {
 "tree2398": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "MP, SSU + ITS + LSU + EF-1 + btub", 
 "^ot:inGroupClade": "node559497", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node559491", 
+"^ot:specifiedRoot": "", 
 "^ot:tag": [
 "SSU", 
 "ITS", 
@@ -1398,10 +1368,17 @@
 }, 
 "tree2399": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "BI, SSU + ITS + LSU + EF-1 + btub", 
 "^ot:inGroupClade": "node559630", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node559624", 
-"^ot:tag": "LSU", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [
+"LSU"
+], 
 "edgeBySourceId": {
 "node559624": {
 "edge559625": {

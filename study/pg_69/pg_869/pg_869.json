@@ -19,48 +19,11 @@
 "@id": "peyotl-validator", 
 "@name": "validate_ot_nexson.py", 
 "@url": "https://github.com/OpenTreeOfLife/peyotl", 
-"@version": "0.0.3a", 
+"@version": "0.0.4a", 
 "invocation": {
-"checksPerformed": [
-"MISSING_MANDATORY_KEY", 
-"MISSING_OPTIONAL_KEY", 
-"UNRECOGNIZED_KEY", 
-"MISSING_LIST_EXPECTED", 
-"DUPLICATING_SINGLETON_KEY", 
-"REFERENCED_ID_NOT_FOUND", 
-"REPEATED_ID", 
-"REPEATED_OTU", 
-"MULTIPLE_ROOT_NODES", 
-"NO_ROOT_NODE", 
-"MULTIPLE_EDGES_FOR_NODES", 
-"CYCLE_DETECTED", 
-"DISCONNECTED_GRAPH_DETECTED", 
-"INCORRECT_ROOT_NODE_LABEL", 
-"TIP_WITHOUT_OTU", 
-"TIP_WITHOUT_OTT_ID", 
-"MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
-"NON_MONOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
-"INVALID_PROPERTY_VALUE", 
-"PROPERTY_VALUE_NOT_USEFUL", 
-"UNRECOGNIZED_PROPERTY_VALUE", 
-"MULTIPLE_TREES", 
-"UNRECOGNIZED_TAG", 
-"CONFLICTING_PROPERTY_VALUES", 
-"NO_TREES", 
-"DEPRECATED_PROPERTY", 
-"UNPARSEABLE_META", 
-"UNREACHABLE_NODE", 
-"INCORRECT_VALUE_TYPE", 
-"MISSING_CRUCIAL_CONTENT"
-], 
 "commandLine": [
 "--embed", 
-"--agent-only", 
-"-e", 
-"../mig-phyelesystem-scratch/869/validation.json", 
-"-o", 
-"../mig-phyelesystem-scratch/869/final.json", 
-"../mig-phyelesystem-scratch/869/v1.2.1-869.json"
+"--agent-only"
 ], 
 "otherProperty": [
 {
@@ -76,12 +39,19 @@
 }
 ]
 }, 
+"^ot:annotationEvents": {
+"annotation": []
+}, 
+"^ot:candidateTreeForSynthesis": [], 
 "^ot:curatorName": "Romina Gazis", 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S12518"
 }, 
 "^ot:focalClade": 193224, 
 "^ot:focalCladeOTTTaxonName": "Plectosphaerella", 
+"^ot:messages": {
+"message": []
+}, 
 "^ot:otusElementOrder": [
 "otus869"
 ], 
@@ -91,6 +61,7 @@
 }, 
 "^ot:studyPublicationReference": "Carlucci A., Raimondo M., Santos J., & Phillips A.J. 2012. Plectosphaerella species associated with root and collar rots of horticultural crops in southern Italy. Persoonia:28: 34-48.", 
 "^ot:studyYear": 2012, 
+"^ot:tag": [], 
 "^ot:treesElementOrder": [
 "trees869"
 ], 
@@ -165,6 +136,8 @@
 }, 
 "otu202377": {
 "^ot:originalLabel": "Colletotrichum agaves DQ286222", 
+"^ot:ottId": 563413, 
+"^ot:ottTaxonName": "Colletotrichum coccodes", 
 "^ot:treebaseOTUId": "Tl733015"
 }, 
 "otu202378": {
@@ -631,6 +604,8 @@
 }, 
 "otu202455": {
 "^ot:originalLabel": "Fusarium solani AY097316", 
+"^ot:ottId": 743045, 
+"^ot:ottTaxonName": "Haematonectria haematococca", 
 "^ot:treebaseOTUId": "Tl733093"
 }, 
 "otu202456": {
@@ -767,6 +742,8 @@
 }, 
 "otu202478": {
 "^ot:originalLabel": "Cephalosporium serrae fuscum EF543844", 
+"^ot:ottId": 420571, 
+"^ot:ottTaxonName": "Gibellulopsis nigrescens", 
 "^ot:treebaseOTUId": "Tl733116"
 }, 
 "otu202479": {
@@ -897,6 +874,8 @@
 }, 
 "otu202500": {
 "^ot:originalLabel": "Cephalosporium serrae fuscum EF543845", 
+"^ot:ottId": 420571, 
+"^ot:ottTaxonName": "Gibellulopsis nigrescens", 
 "^ot:treebaseOTUId": "Tl733138"
 }, 
 "otu202501": {
@@ -1052,9 +1031,15 @@
 "treeById": {
 "tree1668": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "ML, LSU", 
 "^ot:inGroupClade": "node475272", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node475269", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node475269": {
 "edge475270": {
@@ -2683,10 +2668,17 @@
 }, 
 "tree1669": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "ML, ITS", 
 "^ot:inGroupClade": "node475475", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node475472", 
-"^ot:tag": "ITS", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [
+"ITS"
+], 
 "edgeBySourceId": {
 "node475472": {
 "edge475473": {
@@ -3643,9 +3635,15 @@
 }, 
 "tree1670": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "BI, LSU", 
 "^ot:inGroupClade": "node475592", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node475591", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node475591": {
 "edge475592": {
@@ -4882,9 +4880,15 @@
 }, 
 "tree1671": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "MP, ITS", 
 "^ot:inGroupClade": "node475746", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node475745", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node475745": {
 "edge475746": {

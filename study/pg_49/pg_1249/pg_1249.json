@@ -19,48 +19,11 @@
 "@id": "peyotl-validator", 
 "@name": "validate_ot_nexson.py", 
 "@url": "https://github.com/OpenTreeOfLife/peyotl", 
-"@version": "0.0.3a", 
+"@version": "0.0.4a", 
 "invocation": {
-"checksPerformed": [
-"MISSING_MANDATORY_KEY", 
-"MISSING_OPTIONAL_KEY", 
-"UNRECOGNIZED_KEY", 
-"MISSING_LIST_EXPECTED", 
-"DUPLICATING_SINGLETON_KEY", 
-"REFERENCED_ID_NOT_FOUND", 
-"REPEATED_ID", 
-"REPEATED_OTU", 
-"MULTIPLE_ROOT_NODES", 
-"NO_ROOT_NODE", 
-"MULTIPLE_EDGES_FOR_NODES", 
-"CYCLE_DETECTED", 
-"DISCONNECTED_GRAPH_DETECTED", 
-"INCORRECT_ROOT_NODE_LABEL", 
-"TIP_WITHOUT_OTU", 
-"TIP_WITHOUT_OTT_ID", 
-"MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
-"NON_MONOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
-"INVALID_PROPERTY_VALUE", 
-"PROPERTY_VALUE_NOT_USEFUL", 
-"UNRECOGNIZED_PROPERTY_VALUE", 
-"MULTIPLE_TREES", 
-"UNRECOGNIZED_TAG", 
-"CONFLICTING_PROPERTY_VALUES", 
-"NO_TREES", 
-"DEPRECATED_PROPERTY", 
-"UNPARSEABLE_META", 
-"UNREACHABLE_NODE", 
-"INCORRECT_VALUE_TYPE", 
-"MISSING_CRUCIAL_CONTENT"
-], 
 "commandLine": [
 "--embed", 
-"--agent-only", 
-"-e", 
-"../mig-phyelesystem-scratch/1249/validation.json", 
-"-o", 
-"../mig-phyelesystem-scratch/1249/final.json", 
-"../mig-phyelesystem-scratch/1249/v1.2.1-1249.json"
+"--agent-only"
 ], 
 "otherProperty": [
 {
@@ -76,12 +39,19 @@
 }
 ]
 }, 
+"^ot:annotationEvents": {
+"annotation": []
+}, 
+"^ot:candidateTreeForSynthesis": [], 
 "^ot:curatorName": "bryan drew", 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S10228"
 }, 
 "^ot:focalClade": 275989, 
 "^ot:focalCladeOTTTaxonName": "Chlorophyceae", 
+"^ot:messages": {
+"message": []
+}, 
 "^ot:otusElementOrder": [
 "otus1249"
 ], 
@@ -91,6 +61,7 @@
 }, 
 "^ot:studyPublicationReference": "Fuc\u00edkov\u00e1, K., Rada, J. C., & Lewis, L. A. (2011). The tangled taxonomic history of Dictyococcus, Bracteacoccus and Pseudomuriella (Chlorophyceae, Chlorophyta) and their distinction based on a phylogenetic perspective. Phycologia, 50(4), 422-429.", 
 "^ot:studyYear": 2011, 
+"^ot:tag": [], 
 "^ot:treesElementOrder": [
 "trees1249"
 ], 
@@ -98,31 +69,49 @@
 "otus1249": {
 "otuById": {
 "otu237172": {
-"^ot:originalLabel": "Bracteacoccus grandis"
+"^ot:originalLabel": "Bracteacoccus grandis", 
+"^ot:ottId": 560357, 
+"^ot:ottTaxonName": "Bracteacoccus grandis"
 }, 
 "otu237173": {
-"^ot:originalLabel": "Bracteacoccus medionucleatus"
+"^ot:originalLabel": "Bracteacoccus medionucleatus", 
+"^ot:ottId": 1086840, 
+"^ot:ottTaxonName": "Bracteacoccus medionucleatus"
 }, 
 "otu237174": {
-"^ot:originalLabel": "Bracteacoccus minor"
+"^ot:originalLabel": "Bracteacoccus minor", 
+"^ot:ottId": 1086851, 
+"^ot:ottTaxonName": "Bracteacoccus minor"
 }, 
 "otu237175": {
-"^ot:originalLabel": "Bracteacoccus sp"
+"^ot:originalLabel": "Bracteacoccus sp", 
+"^ot:ottId": 1067106, 
+"^ot:ottTaxonName": "Bracteacoccus"
 }, 
 "otu237176": {
-"^ot:originalLabel": "Dictyococcus schumacherensis"
+"^ot:originalLabel": "Dictyococcus schumacherensis", 
+"^ot:ottId": 15345, 
+"^ot:ottTaxonName": "Pseudomuriella schumacherensis"
 }, 
 "otu237177": {
-"^ot:originalLabel": "Bracteacoccus cohaerens"
+"^ot:originalLabel": "Bracteacoccus cohaerens", 
+"^ot:ottId": 15347, 
+"^ot:ottTaxonName": "Bracteacoccus cohaerens"
 }, 
 "otu237178": {
-"^ot:originalLabel": "Bracteacoccus pseudominor"
+"^ot:originalLabel": "Bracteacoccus pseudominor", 
+"^ot:ottId": 15349, 
+"^ot:ottTaxonName": "Bracteacoccus pseudominor"
 }, 
 "otu237179": {
-"^ot:originalLabel": "Bracteacoccus aerius"
+"^ot:originalLabel": "Bracteacoccus aerius", 
+"^ot:ottId": 560360, 
+"^ot:ottTaxonName": "Bracteacoccus aerius"
 }, 
 "otu237180": {
-"^ot:originalLabel": "Bracteacoccus giganteus"
+"^ot:originalLabel": "Bracteacoccus giganteus", 
+"^ot:ottId": 1086837, 
+"^ot:ottTaxonName": "Bracteacoccus giganteus"
 }, 
 "otu237181": {
 "^ot:originalLabel": "Pediastrum duplex", 
@@ -135,7 +124,9 @@
 "^ot:ottTaxonName": "Hydrodictyon africanum"
 }, 
 "otu237183": {
-"^ot:originalLabel": "Neochloris aquatica"
+"^ot:originalLabel": "Neochloris aquatica", 
+"^ot:ottId": 129610, 
+"^ot:ottTaxonName": "Neochloris aquatica"
 }, 
 "otu237184": {
 "^ot:originalLabel": "Scenedesmus obliquus", 
@@ -143,7 +134,9 @@
 "^ot:ottTaxonName": "Acutodesmus obliquus"
 }, 
 "otu237185": {
-"^ot:originalLabel": "Dictyococcus varians"
+"^ot:originalLabel": "Dictyococcus varians", 
+"^ot:ottId": 15353, 
+"^ot:ottTaxonName": "Dictyococcus varians"
 }, 
 "otu237186": {
 "^ot:originalLabel": "Schroederia setigera", 
@@ -171,7 +164,9 @@
 "^ot:ottTaxonName": "Chlamydomonas reinhardtii"
 }, 
 "otu237191": {
-"^ot:originalLabel": "Myrmecia biatorellae"
+"^ot:originalLabel": "Myrmecia biatorellae", 
+"^ot:ottId": 980637, 
+"^ot:ottTaxonName": "Myrmecia biatorellae"
 }
 }
 }
@@ -185,9 +180,15 @@
 "treeById": {
 "tree2520": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "MP", 
 "^ot:inGroupClade": "node574507", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node574506", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node574506": {
 "edge574507": {

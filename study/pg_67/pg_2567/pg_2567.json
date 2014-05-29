@@ -19,48 +19,11 @@
 "@id": "peyotl-validator", 
 "@name": "validate_ot_nexson.py", 
 "@url": "https://github.com/OpenTreeOfLife/peyotl", 
-"@version": "0.0.3a", 
+"@version": "0.0.4a", 
 "invocation": {
-"checksPerformed": [
-"MISSING_MANDATORY_KEY", 
-"MISSING_OPTIONAL_KEY", 
-"UNRECOGNIZED_KEY", 
-"MISSING_LIST_EXPECTED", 
-"DUPLICATING_SINGLETON_KEY", 
-"REFERENCED_ID_NOT_FOUND", 
-"REPEATED_ID", 
-"REPEATED_OTU", 
-"MULTIPLE_ROOT_NODES", 
-"NO_ROOT_NODE", 
-"MULTIPLE_EDGES_FOR_NODES", 
-"CYCLE_DETECTED", 
-"DISCONNECTED_GRAPH_DETECTED", 
-"INCORRECT_ROOT_NODE_LABEL", 
-"TIP_WITHOUT_OTU", 
-"TIP_WITHOUT_OTT_ID", 
-"MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
-"NON_MONOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
-"INVALID_PROPERTY_VALUE", 
-"PROPERTY_VALUE_NOT_USEFUL", 
-"UNRECOGNIZED_PROPERTY_VALUE", 
-"MULTIPLE_TREES", 
-"UNRECOGNIZED_TAG", 
-"CONFLICTING_PROPERTY_VALUES", 
-"NO_TREES", 
-"DEPRECATED_PROPERTY", 
-"UNPARSEABLE_META", 
-"UNREACHABLE_NODE", 
-"INCORRECT_VALUE_TYPE", 
-"MISSING_CRUCIAL_CONTENT"
-], 
 "commandLine": [
 "--embed", 
-"--agent-only", 
-"-e", 
-"../mig-phyelesystem-scratch/2567/validation.json", 
-"-o", 
-"../mig-phyelesystem-scratch/2567/final.json", 
-"../mig-phyelesystem-scratch/2567/v1.2.1-2567.json"
+"--agent-only"
 ], 
 "otherProperty": [
 {
@@ -76,12 +39,19 @@
 }
 ]
 }, 
+"^ot:annotationEvents": {
+"annotation": []
+}, 
+"^ot:candidateTreeForSynthesis": [], 
 "^ot:curatorName": "Romina Gazis", 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S14387"
 }, 
 "^ot:focalClade": 33903, 
 "^ot:focalCladeOTTTaxonName": "Botryosphaeriaceae", 
+"^ot:messages": {
+"message": []
+}, 
 "^ot:otusElementOrder": [
 "otus2567"
 ], 
@@ -91,6 +61,7 @@
 }, 
 "^ot:studyPublicationReference": "Marques, Mar\u00edlia W., Nelson B. Lima, Marcos A. de Morais Jr, Sami J. Michereff, Alan JL Phillips, and Marcos PS C\u00e2mara. \"Botryosphaeria, Neofusicoccum, Neoscytalidium and Pseudofusicoccum species associated with mango in Brazil.\" Fungal Diversity: 1-14..", 
 "^ot:studyYear": 2013, 
+"^ot:tag": [], 
 "^ot:treesElementOrder": [
 "trees2567"
 ], 
@@ -141,6 +112,8 @@
 }, 
 "otu378104": {
 "^ot:originalLabel": "Neofusicoccum sp. CMM1269", 
+"^ot:ottId": 594104, 
+"^ot:ottTaxonName": "Neofusicoccum", 
 "^ot:treebaseOTUId": "Tl1146240"
 }, 
 "otu378105": {
@@ -193,6 +166,8 @@
 }, 
 "otu378113": {
 "^ot:originalLabel": "Neofusicoccum sp. CMM1285", 
+"^ot:ottId": 594104, 
+"^ot:ottTaxonName": "Neofusicoccum", 
 "^ot:treebaseOTUId": "Tl1146249"
 }, 
 "otu378114": {
@@ -221,6 +196,8 @@
 }, 
 "otu378118": {
 "^ot:originalLabel": "Neofusicoccum sp. CMM1338", 
+"^ot:ottId": 594104, 
+"^ot:ottTaxonName": "Neofusicoccum", 
 "^ot:treebaseOTUId": "Tl1146254"
 }, 
 "otu378119": {
@@ -429,8 +406,14 @@
 "treeById": {
 "tree5907": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "PAUP 1", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node1003428", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node1003428": {
 "edge1003429": {
@@ -1211,8 +1194,14 @@
 }, 
 "tree5908": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "PAUP 1", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node1003525", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node1003525": {
 "edge1003526": {
@@ -1559,10 +1548,17 @@
 }, 
 "tree6035": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "ML, ITS", 
 "^ot:inGroupClade": "node1033887", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node1033883", 
-"^ot:tag": "Choose me", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [
+"Choose me"
+], 
 "edgeBySourceId": {
 "node1033883": {
 "edge1033884": {
@@ -2343,9 +2339,15 @@
 }, 
 "tree6036": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "ML, ITS + EF-1", 
 "^ot:inGroupClade": "node1033984", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node1033980", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node1033980": {
 "edge1033981": {

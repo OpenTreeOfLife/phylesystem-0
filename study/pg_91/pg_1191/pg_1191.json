@@ -19,48 +19,11 @@
 "@id": "peyotl-validator", 
 "@name": "validate_ot_nexson.py", 
 "@url": "https://github.com/OpenTreeOfLife/peyotl", 
-"@version": "0.0.3a", 
+"@version": "0.0.4a", 
 "invocation": {
-"checksPerformed": [
-"MISSING_MANDATORY_KEY", 
-"MISSING_OPTIONAL_KEY", 
-"UNRECOGNIZED_KEY", 
-"MISSING_LIST_EXPECTED", 
-"DUPLICATING_SINGLETON_KEY", 
-"REFERENCED_ID_NOT_FOUND", 
-"REPEATED_ID", 
-"REPEATED_OTU", 
-"MULTIPLE_ROOT_NODES", 
-"NO_ROOT_NODE", 
-"MULTIPLE_EDGES_FOR_NODES", 
-"CYCLE_DETECTED", 
-"DISCONNECTED_GRAPH_DETECTED", 
-"INCORRECT_ROOT_NODE_LABEL", 
-"TIP_WITHOUT_OTU", 
-"TIP_WITHOUT_OTT_ID", 
-"MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
-"NON_MONOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
-"INVALID_PROPERTY_VALUE", 
-"PROPERTY_VALUE_NOT_USEFUL", 
-"UNRECOGNIZED_PROPERTY_VALUE", 
-"MULTIPLE_TREES", 
-"UNRECOGNIZED_TAG", 
-"CONFLICTING_PROPERTY_VALUES", 
-"NO_TREES", 
-"DEPRECATED_PROPERTY", 
-"UNPARSEABLE_META", 
-"UNREACHABLE_NODE", 
-"INCORRECT_VALUE_TYPE", 
-"MISSING_CRUCIAL_CONTENT"
-], 
 "commandLine": [
 "--embed", 
-"--agent-only", 
-"-e", 
-"../mig-phyelesystem-scratch/1191/validation.json", 
-"-o", 
-"../mig-phyelesystem-scratch/1191/final.json", 
-"../mig-phyelesystem-scratch/1191/v1.2.1-1191.json"
+"--agent-only"
 ], 
 "otherProperty": [
 {
@@ -76,15 +39,23 @@
 }
 ]
 }, 
+"^ot:annotationEvents": {
+"annotation": []
+}, 
+"^ot:candidateTreeForSynthesis": [], 
 "^ot:curatorName": "Romina Gazis", 
 "^ot:focalClade": 193965, 
 "^ot:focalCladeOTTTaxonName": "Hymenochaetales", 
+"^ot:messages": {
+"message": []
+}, 
 "^ot:otusElementOrder": [
 "otus1191"
 ], 
 "^ot:studyId": "1191", 
 "^ot:studyPublicationReference": "Goes-Neto, Aristoteles, Clarice Loguercio-Leite, and Rosa T. Guerrero. \"Molecular phylogeny of tropical Hymenochaetales (Basidiomycota).\" Mycotaxon 84 (2002): 337-354.", 
 "^ot:studyYear": 2002, 
+"^ot:tag": [], 
 "^ot:treesElementOrder": [
 "trees1191"
 ], 
@@ -95,7 +66,9 @@
 "^ot:originalLabel": "Auricularia polytricha"
 }, 
 "otu230821": {
-"^ot:originalLabel": "Aurificaria luteoumbrina"
+"^ot:originalLabel": "Aurificaria luteoumbrina", 
+"^ot:ottId": 5300282, 
+"^ot:ottTaxonName": "Inonotus luteoumbrinus"
 }, 
 "otu230822": {
 "^ot:originalLabel": "Phellinus rimosus", 
@@ -123,10 +96,14 @@
 "^ot:ottTaxonName": "Phellinus palmicola"
 }, 
 "otu230827": {
-"^ot:originalLabel": "Phellinus extensus"
+"^ot:originalLabel": "Phellinus extensus", 
+"^ot:ottId": 5299775, 
+"^ot:ottTaxonName": "Fomes extensus"
 }, 
 "otu230828": {
-"^ot:originalLabel": "Hymenochaete sallei"
+"^ot:originalLabel": "Hymenochaete sallei", 
+"^ot:ottId": 110345, 
+"^ot:ottTaxonName": "Hymenochaete rheicolor"
 }, 
 "otu230829": {
 "^ot:originalLabel": "Phellinus melleoporus"
@@ -164,8 +141,14 @@
 "treeById": {
 "tree2406": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "MP, LSU", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node560681", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node560681": {
 "edge560682": {
@@ -318,9 +301,15 @@
 }, 
 "tree5507": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "MP, LSU (rooted)", 
 "^ot:inGroupClade": "node950145", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node950144", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node950144": {
 "edge950145": {

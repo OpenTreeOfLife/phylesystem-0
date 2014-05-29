@@ -19,48 +19,11 @@
 "@id": "peyotl-validator", 
 "@name": "validate_ot_nexson.py", 
 "@url": "https://github.com/OpenTreeOfLife/peyotl", 
-"@version": "0.0.3a", 
+"@version": "0.0.4a", 
 "invocation": {
-"checksPerformed": [
-"MISSING_MANDATORY_KEY", 
-"MISSING_OPTIONAL_KEY", 
-"UNRECOGNIZED_KEY", 
-"MISSING_LIST_EXPECTED", 
-"DUPLICATING_SINGLETON_KEY", 
-"REFERENCED_ID_NOT_FOUND", 
-"REPEATED_ID", 
-"REPEATED_OTU", 
-"MULTIPLE_ROOT_NODES", 
-"NO_ROOT_NODE", 
-"MULTIPLE_EDGES_FOR_NODES", 
-"CYCLE_DETECTED", 
-"DISCONNECTED_GRAPH_DETECTED", 
-"INCORRECT_ROOT_NODE_LABEL", 
-"TIP_WITHOUT_OTU", 
-"TIP_WITHOUT_OTT_ID", 
-"MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
-"NON_MONOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
-"INVALID_PROPERTY_VALUE", 
-"PROPERTY_VALUE_NOT_USEFUL", 
-"UNRECOGNIZED_PROPERTY_VALUE", 
-"MULTIPLE_TREES", 
-"UNRECOGNIZED_TAG", 
-"CONFLICTING_PROPERTY_VALUES", 
-"NO_TREES", 
-"DEPRECATED_PROPERTY", 
-"UNPARSEABLE_META", 
-"UNREACHABLE_NODE", 
-"INCORRECT_VALUE_TYPE", 
-"MISSING_CRUCIAL_CONTENT"
-], 
 "commandLine": [
 "--embed", 
-"--agent-only", 
-"-e", 
-"../mig-phyelesystem-scratch/1160/validation.json", 
-"-o", 
-"../mig-phyelesystem-scratch/1160/final.json", 
-"../mig-phyelesystem-scratch/1160/v1.2.1-1160.json"
+"--agent-only"
 ], 
 "otherProperty": [
 {
@@ -76,9 +39,16 @@
 }
 ]
 }, 
+"^ot:annotationEvents": {
+"annotation": []
+}, 
+"^ot:candidateTreeForSynthesis": [], 
 "^ot:curatorName": "Romina Gazis", 
 "^ot:focalClade": 506763, 
 "^ot:focalCladeOTTTaxonName": "Phanerochaete", 
+"^ot:messages": {
+"message": []
+}, 
 "^ot:otusElementOrder": [
 "otus1160"
 ], 
@@ -88,6 +58,7 @@
 }, 
 "^ot:studyPublicationReference": "Wu, S. H., Nilsson, H. R., Chen, C. T., Yu, S. Y., & Hallenberg, N. (2010). The white-rotting genus Phanerochaete is polyphyletic and distributed throughout the phleboid clade of the Polyporales (Basidiomycota). Fungal Diversity, 42(1), 107-118.", 
 "^ot:studyYear": 2010, 
+"^ot:tag": [], 
 "^ot:treesElementOrder": [
 "trees1160"
 ], 
@@ -95,7 +66,9 @@
 "otus1160": {
 "otuById": {
 "otu228404": {
-"^ot:originalLabel": "AF347092Porpomyces"
+"^ot:originalLabel": "AF347092Porpomyces", 
+"^ot:ottId": 137092, 
+"^ot:ottTaxonName": "Ceriporiopsis"
 }, 
 "otu228405": {
 "^ot:originalLabel": "AF347089Trechispora farinacea", 
@@ -106,13 +79,19 @@
 "^ot:originalLabel": "EU118621 Cyphellostereum laeve"
 }, 
 "otu228407": {
-"^ot:originalLabel": "a3001"
+"^ot:originalLabel": "a3001", 
+"^ot:ottId": 623412, 
+"^ot:ottTaxonName": "Ginnsia viticola"
 }, 
 "otu228408": {
-"^ot:originalLabel": "PhaViW029A"
+"^ot:originalLabel": "PhaViW029A", 
+"^ot:ottId": 623412, 
+"^ot:ottTaxonName": "Ginnsia viticola"
 }, 
 "otu228409": {
-"^ot:originalLabel": "PhaViW029B"
+"^ot:originalLabel": "PhaViW029B", 
+"^ot:ottId": 623412, 
+"^ot:ottTaxonName": "Ginnsia viticola"
 }, 
 "otu228410": {
 "^ot:originalLabel": "RMU66438 Rickenella mellea", 
@@ -138,7 +117,9 @@
 "^ot:originalLabel": "DQ327650 Aphyllophorales sp"
 }, 
 "otu228415": {
-"^ot:originalLabel": "PhanFlav1b"
+"^ot:originalLabel": "PhanFlav1b", 
+"^ot:ottId": 242821, 
+"^ot:ottTaxonName": "Phlebiopsis flavidoalba"
 }, 
 "otu228416": {
 "^ot:originalLabel": "EU118662 Phlebiopsis flavidoal", 
@@ -226,13 +207,19 @@
 "^ot:ottTaxonName": "Phlebiopsis himalayensis"
 }, 
 "otu228435": {
-"^ot:originalLabel": "PhanRoum1a"
+"^ot:originalLabel": "PhanRoum1a", 
+"^ot:ottId": 5299611, 
+"^ot:ottTaxonName": "Phlebiopsis ravenelii"
 }, 
 "otu228436": {
-"^ot:originalLabel": "PhanRoum1b"
+"^ot:originalLabel": "PhanRoum1b", 
+"^ot:ottId": 5299611, 
+"^ot:ottTaxonName": "Phlebiopsis ravenelii"
 }, 
 "otu228437": {
-"^ot:originalLabel": "PulcCaerWu"
+"^ot:originalLabel": "PulcCaerWu", 
+"^ot:ottId": 5293089, 
+"^ot:ottTaxonName": "Byssus phosphorea"
 }, 
 "otu228438": {
 "^ot:originalLabel": "PhaAcuW012", 
@@ -250,10 +237,14 @@
 "^ot:ottTaxonName": "Polyporales"
 }, 
 "otu228441": {
-"^ot:originalLabel": "PhanChryAF"
+"^ot:originalLabel": "PhanChryAF", 
+"^ot:ottId": 5299626, 
+"^ot:ottTaxonName": "Phanerodontia chrysosporium"
 }, 
 "otu228442": {
-"^ot:originalLabel": "PhanChry1a"
+"^ot:originalLabel": "PhanChry1a", 
+"^ot:ottId": 5299626, 
+"^ot:ottTaxonName": "Phanerodontia chrysosporium"
 }, 
 "otu228443": {
 "^ot:originalLabel": "PhanSord1b", 
@@ -359,10 +350,14 @@
 "^ot:ottTaxonName": "Hyphodermella corrugata"
 }, 
 "otu228464": {
-"^ot:originalLabel": "PhleCentA8"
+"^ot:originalLabel": "PhleCentA8", 
+"^ot:ottId": 5299673, 
+"^ot:ottTaxonName": "Phlebia mellea"
 }, 
 "otu228465": {
-"^ot:originalLabel": "MerutaxiFP"
+"^ot:originalLabel": "MerutaxiFP", 
+"^ot:ottId": 42236, 
+"^ot:ottTaxonName": "Gloeoporus taxicola"
 }, 
 "otu228466": {
 "^ot:originalLabel": "PhaGinW022"
@@ -479,10 +474,14 @@
 "^ot:originalLabel": "PhaSubC6c2"
 }, 
 "otu228490": {
-"^ot:originalLabel": "PhleChryA9"
+"^ot:originalLabel": "PhleChryA9", 
+"^ot:ottId": 4099848, 
+"^ot:ottTaxonName": "Crustodontia chrysocreas"
 }, 
 "otu228491": {
-"^ot:originalLabel": "PhleUdaA14"
+"^ot:originalLabel": "PhleUdaA14", 
+"^ot:ottId": 82390, 
+"^ot:ottTaxonName": "Mycoacia uda"
 }, 
 "otu228492": {
 "^ot:originalLabel": "PhaSubW918", 
@@ -490,7 +489,9 @@
 "^ot:ottTaxonName": "Phanerochaete subglobosa"
 }, 
 "otu228493": {
-"^ot:originalLabel": "PhanChryA7"
+"^ot:originalLabel": "PhanChryA7", 
+"^ot:ottId": 5299687, 
+"^ot:ottTaxonName": "Hydnophlebia chrysorhiza"
 }, 
 "otu228494": {
 "^ot:originalLabel": "EU118656 Phlebia subochracea", 
@@ -518,13 +519,19 @@
 "^ot:ottTaxonName": "Hyphoderma setigerum"
 }, 
 "otu228499": {
-"^ot:originalLabel": "PanuRudiAF"
+"^ot:originalLabel": "PanuRudiAF", 
+"^ot:ottId": 685632, 
+"^ot:ottTaxonName": "Lentinus strigosus"
 }, 
 "otu228500": {
-"^ot:originalLabel": "PhlBreA617"
+"^ot:originalLabel": "PhlBreA617", 
+"^ot:ottId": 5299725, 
+"^ot:ottTaxonName": "Cabalodontia bresadolae"
 }, 
 "otu228501": {
-"^ot:originalLabel": "PhlQueA626"
+"^ot:originalLabel": "PhlQueA626", 
+"^ot:ottId": 5299726, 
+"^ot:ottTaxonName": "Cabalodontia queletii"
 }, 
 "otu228502": {
 "^ot:originalLabel": "CandAfricanaFP102987", 
@@ -552,7 +559,9 @@
 "^ot:ottTaxonName": "Phanerochaete angustocystidiata"
 }, 
 "otu228507": {
-"^ot:originalLabel": "PhleAlboA8"
+"^ot:originalLabel": "PhleAlboA8", 
+"^ot:ottId": 5306209, 
+"^ot:ottTaxonName": "Auriculariopsis albomellea"
 }, 
 "otu228508": {
 "^ot:originalLabel": "PhleNitiA5", 
@@ -682,9 +691,15 @@
 "treeById": {
 "tree2350": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "BI, LSU", 
 "^ot:inGroupClade": "node554832", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node554829", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node554829": {
 "edge554830": {

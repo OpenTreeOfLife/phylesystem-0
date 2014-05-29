@@ -19,48 +19,11 @@
 "@id": "peyotl-validator", 
 "@name": "validate_ot_nexson.py", 
 "@url": "https://github.com/OpenTreeOfLife/peyotl", 
-"@version": "0.0.3a", 
+"@version": "0.0.4a", 
 "invocation": {
-"checksPerformed": [
-"MISSING_MANDATORY_KEY", 
-"MISSING_OPTIONAL_KEY", 
-"UNRECOGNIZED_KEY", 
-"MISSING_LIST_EXPECTED", 
-"DUPLICATING_SINGLETON_KEY", 
-"REFERENCED_ID_NOT_FOUND", 
-"REPEATED_ID", 
-"REPEATED_OTU", 
-"MULTIPLE_ROOT_NODES", 
-"NO_ROOT_NODE", 
-"MULTIPLE_EDGES_FOR_NODES", 
-"CYCLE_DETECTED", 
-"DISCONNECTED_GRAPH_DETECTED", 
-"INCORRECT_ROOT_NODE_LABEL", 
-"TIP_WITHOUT_OTU", 
-"TIP_WITHOUT_OTT_ID", 
-"MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
-"NON_MONOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
-"INVALID_PROPERTY_VALUE", 
-"PROPERTY_VALUE_NOT_USEFUL", 
-"UNRECOGNIZED_PROPERTY_VALUE", 
-"MULTIPLE_TREES", 
-"UNRECOGNIZED_TAG", 
-"CONFLICTING_PROPERTY_VALUES", 
-"NO_TREES", 
-"DEPRECATED_PROPERTY", 
-"UNPARSEABLE_META", 
-"UNREACHABLE_NODE", 
-"INCORRECT_VALUE_TYPE", 
-"MISSING_CRUCIAL_CONTENT"
-], 
 "commandLine": [
 "--embed", 
-"--agent-only", 
-"-e", 
-"../mig-phyelesystem-scratch/777/validation.json", 
-"-o", 
-"../mig-phyelesystem-scratch/777/final.json", 
-"../mig-phyelesystem-scratch/777/v1.2.1-777.json"
+"--agent-only"
 ], 
 "otherProperty": [
 {
@@ -76,12 +39,19 @@
 }
 ]
 }, 
+"^ot:annotationEvents": {
+"annotation": []
+}, 
+"^ot:candidateTreeForSynthesis": [], 
 "^ot:curatorName": "Romina Gazis", 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S1338"
 }, 
 "^ot:focalClade": 90655, 
 "^ot:focalCladeOTTTaxonName": "Lulworthiales", 
+"^ot:messages": {
+"message": []
+}, 
 "^ot:otusElementOrder": [
 "otus777"
 ], 
@@ -91,6 +61,7 @@
 }, 
 "^ot:studyPublicationReference": "Campbell, Jinx, Brigitte Volkmann-Kohlmeyer, Tom Grafenhan, Joseph W. Spatafora, and Jan Kohlmeyer. \"A re-evaluation of Lulworthiales: relationships based on 18S and 28S rDNA.\" Mycological research 109, no. 5 (2005): 556-568.", 
 "^ot:studyYear": 2005, 
+"^ot:tag": [], 
 "^ot:treesElementOrder": [
 "trees777"
 ], 
@@ -147,6 +118,8 @@
 }, 
 "otu194396": {
 "^ot:originalLabel": "Trematosphaeria heterospora", 
+"^ot:ottId": 5319110, 
+"^ot:ottTaxonName": "Leptosphaeria heterospora", 
 "^ot:treebaseOTUId": "Tl158454"
 }, 
 "otu194397": {
@@ -199,10 +172,14 @@
 }, 
 "otu194405": {
 "^ot:originalLabel": "Lulworthia crassa IFO32133", 
+"^ot:ottId": 5318227, 
+"^ot:ottTaxonName": "Kohlmeyeriella crassa", 
 "^ot:treebaseOTUId": "Tl36895"
 }, 
 "otu194406": {
 "^ot:originalLabel": "Lindra marinera JK4743", 
+"^ot:ottId": 172400, 
+"^ot:ottTaxonName": "Lindra thalassiae", 
 "^ot:treebaseOTUId": "Tl36896"
 }, 
 "otu194407": {
@@ -267,6 +244,8 @@
 }, 
 "otu194417": {
 "^ot:originalLabel": "Lulworthia lignoarenaria ATCC 64644", 
+"^ot:ottId": 5318228, 
+"^ot:ottTaxonName": "Lulwoidea lignoarenaria", 
 "^ot:treebaseOTUId": "Tl36907"
 }, 
 "otu194418": {
@@ -385,6 +364,8 @@
 }, 
 "otu194437": {
 "^ot:originalLabel": "Lindra marinera JK5091A", 
+"^ot:ottId": 172400, 
+"^ot:ottTaxonName": "Lindra thalassiae", 
 "^ot:treebaseOTUId": "Tl36927"
 }, 
 "otu194438": {
@@ -401,6 +382,8 @@
 }, 
 "otu194440": {
 "^ot:originalLabel": "Lulworthia crassa IFO32134", 
+"^ot:ottId": 5318227, 
+"^ot:ottTaxonName": "Kohlmeyeriella crassa", 
 "^ot:treebaseOTUId": "Tl36930"
 }, 
 "otu194441": {
@@ -483,6 +466,8 @@
 }, 
 "otu194454": {
 "^ot:originalLabel": "Lulworthia lignoarenaria IFO 32135", 
+"^ot:ottId": 5318228, 
+"^ot:ottTaxonName": "Lulwoidea lignoarenaria", 
 "^ot:treebaseOTUId": "Tl36944"
 }, 
 "otu194455": {
@@ -534,10 +519,17 @@
 "treeById": {
 "tree1448": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "BI, LSU + SSU", 
 "^ot:inGroupClade": "node454643", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node454639", 
-"^ot:tag": "LSU", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [
+"LSU"
+], 
 "edgeBySourceId": {
 "node454639": {
 "edge454640": {
@@ -1460,9 +1452,15 @@
 }, 
 "tree1449": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "MP, LSU + SSU", 
 "^ot:inGroupClade": "node454774", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node454770", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node454770": {
 "edge454771": {

@@ -19,48 +19,11 @@
 "@id": "peyotl-validator", 
 "@name": "validate_ot_nexson.py", 
 "@url": "https://github.com/OpenTreeOfLife/peyotl", 
-"@version": "0.0.3a", 
+"@version": "0.0.4a", 
 "invocation": {
-"checksPerformed": [
-"MISSING_MANDATORY_KEY", 
-"MISSING_OPTIONAL_KEY", 
-"UNRECOGNIZED_KEY", 
-"MISSING_LIST_EXPECTED", 
-"DUPLICATING_SINGLETON_KEY", 
-"REFERENCED_ID_NOT_FOUND", 
-"REPEATED_ID", 
-"REPEATED_OTU", 
-"MULTIPLE_ROOT_NODES", 
-"NO_ROOT_NODE", 
-"MULTIPLE_EDGES_FOR_NODES", 
-"CYCLE_DETECTED", 
-"DISCONNECTED_GRAPH_DETECTED", 
-"INCORRECT_ROOT_NODE_LABEL", 
-"TIP_WITHOUT_OTU", 
-"TIP_WITHOUT_OTT_ID", 
-"MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
-"NON_MONOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
-"INVALID_PROPERTY_VALUE", 
-"PROPERTY_VALUE_NOT_USEFUL", 
-"UNRECOGNIZED_PROPERTY_VALUE", 
-"MULTIPLE_TREES", 
-"UNRECOGNIZED_TAG", 
-"CONFLICTING_PROPERTY_VALUES", 
-"NO_TREES", 
-"DEPRECATED_PROPERTY", 
-"UNPARSEABLE_META", 
-"UNREACHABLE_NODE", 
-"INCORRECT_VALUE_TYPE", 
-"MISSING_CRUCIAL_CONTENT"
-], 
 "commandLine": [
 "--embed", 
-"--agent-only", 
-"-e", 
-"../mig-phyelesystem-scratch/423/validation.json", 
-"-o", 
-"../mig-phyelesystem-scratch/423/final.json", 
-"../mig-phyelesystem-scratch/423/v1.2.1-423.json"
+"--agent-only"
 ], 
 "otherProperty": [
 {
@@ -76,12 +39,19 @@
 }
 ]
 }, 
+"^ot:annotationEvents": {
+"annotation": []
+}, 
+"^ot:candidateTreeForSynthesis": [], 
 "^ot:curatorName": "Jonathan Rees", 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S11742"
 }, 
 "^ot:focalClade": 544595, 
 "^ot:focalCladeOTTTaxonName": "Amphibia", 
+"^ot:messages": {
+"message": []
+}, 
 "^ot:otusElementOrder": [
 "otus423"
 ], 
@@ -89,8 +59,9 @@
 "^ot:studyPublication": {
 "@href": "http://dx.doi.org/10.1016/j.ympev.2011.06.012"
 }, 
-"^ot:studyPublicationReference": "Pyron R.A., & Wiens J.J. 2011. A large-scale phylogeny of Amphibia including over 2800 species, and a revised classification of extant frogs, salamanders, and caecilians. Molecular Phylogenetics Evolution 61(2): 543-583.", 
+"^ot:studyPublicationReference": "Pyron, R.A., & Wiens J.J. 2011. A large-scale phylogeny of Amphibia including over 2800 species, and a revised classification of extant frogs, salamanders, and caecilians. Molecular Phylogenetics Evolution 61 (2): 543-583.", 
 "^ot:studyYear": 2011, 
+"^ot:tag": [], 
 "^ot:treesElementOrder": [
 "trees423"
 ], 
@@ -333,7 +304,9 @@
 "^ot:ottTaxonName": "Ingerophrynus biporcatus"
 }, 
 "otu249570": {
-"^ot:originalLabel": "Sabahphrynus maculatus"
+"^ot:originalLabel": "Sabahphrynus maculatus", 
+"^ot:ottId": 869491, 
+"^ot:ottTaxonName": "Ansonia anotis"
 }, 
 "otu249571": {
 "^ot:originalLabel": "Pedostibes hosii", 
@@ -391,7 +364,9 @@
 "^ot:ottTaxonName": "Bufo gargarizans"
 }, 
 "otu249582": {
-"^ot:originalLabel": "Bufo aspinius"
+"^ot:originalLabel": "Bufo aspinius", 
+"^ot:ottId": 187217, 
+"^ot:ottTaxonName": "Torrentophryne aspinia"
 }, 
 "otu249583": {
 "^ot:originalLabel": "Bufo cryptotympanicus", 
@@ -1959,7 +1934,9 @@
 "^ot:ottTaxonName": "Vitreorana castroviejoi"
 }, 
 "otu249896": {
-"^ot:originalLabel": "Vitreorana antisthenesi"
+"^ot:originalLabel": "Vitreorana antisthenesi", 
+"^ot:ottId": 493454, 
+"^ot:ottTaxonName": "Vitreorana antisthenesi"
 }, 
 "otu249897": {
 "^ot:originalLabel": "Vitreorana eurygnatha", 
@@ -1967,7 +1944,9 @@
 "^ot:ottTaxonName": "Hyalinobatrachium eurygnathum"
 }, 
 "otu249898": {
-"^ot:originalLabel": "Ikakogi tayrona"
+"^ot:originalLabel": "Ikakogi tayrona", 
+"^ot:ottId": 525530, 
+"^ot:ottTaxonName": "Ikakogi tayrona"
 }, 
 "otu249899": {
 "^ot:originalLabel": "Hyalinobatrachium ibama", 
@@ -2985,7 +2964,9 @@
 "^ot:ottTaxonName": "Triprion petasatus"
 }, 
 "otu250102": {
-"^ot:originalLabel": "Triprion spatulatus"
+"^ot:originalLabel": "Triprion spatulatus", 
+"^ot:ottId": 3620135, 
+"^ot:ottTaxonName": "Diaglena spatulata"
 }, 
 "otu250103": {
 "^ot:originalLabel": "Isthmohyla rivularis", 
@@ -7033,7 +7014,9 @@
 "^ot:ottTaxonName": "Limnodynastes convexiusculus"
 }, 
 "otu250912": {
-"^ot:originalLabel": "Limnodynastes lignarius"
+"^ot:originalLabel": "Limnodynastes lignarius", 
+"^ot:ottId": 276284, 
+"^ot:ottTaxonName": "Megistolotis lignarius"
 }, 
 "otu250913": {
 "^ot:originalLabel": "Limnodynastes salmini", 
@@ -7540,7 +7523,9 @@
 "^ot:ottTaxonName": "Odorrana tiannanensis"
 }, 
 "otu251015": {
-"^ot:originalLabel": "Rana megatympanum"
+"^ot:originalLabel": "Rana megatympanum", 
+"^ot:ottId": 1062722, 
+"^ot:ottTaxonName": "Odorrana tiannanensis"
 }, 
 "otu251016": {
 "^ot:originalLabel": "Rana narina", 
@@ -9641,7 +9626,9 @@
 "^ot:ottTaxonName": "Nannophrys ceylonensis"
 }, 
 "otu251436": {
-"^ot:originalLabel": "Occidozyga magnapustulosa"
+"^ot:originalLabel": "Occidozyga magnapustulosa", 
+"^ot:ottId": 1085127, 
+"^ot:ottTaxonName": "Occidozyga magnapustulosus"
 }, 
 "otu251437": {
 "^ot:originalLabel": "Occidozyga martensii", 
@@ -9709,7 +9696,9 @@
 "^ot:ottTaxonName": "Platymantis wuenscheorum"
 }, 
 "otu251450": {
-"^ot:originalLabel": "Platymantis bimaculatus"
+"^ot:originalLabel": "Platymantis bimaculatus", 
+"^ot:ottId": 901776, 
+"^ot:ottTaxonName": "Platymantis bimaculata"
 }, 
 "otu251451": {
 "^ot:originalLabel": "Platymantis vitiensis", 
@@ -9722,7 +9711,9 @@
 "^ot:ottTaxonName": "Discodeles guppyi"
 }, 
 "otu251453": {
-"^ot:originalLabel": "Platymantis punctatus"
+"^ot:originalLabel": "Platymantis punctatus", 
+"^ot:ottId": 1014855, 
+"^ot:ottTaxonName": "Platymantis punctata"
 }, 
 "otu251454": {
 "^ot:originalLabel": "Ceratobatrachus guentheri", 
@@ -9740,7 +9731,9 @@
 "^ot:ottTaxonName": "Platymantis naomii"
 }, 
 "otu251457": {
-"^ot:originalLabel": "Platymantis mimulus"
+"^ot:originalLabel": "Platymantis mimulus", 
+"^ot:ottId": 1014853, 
+"^ot:ottTaxonName": "Platymantis mimula"
 }, 
 "otu251458": {
 "^ot:originalLabel": "Platymantis dorsalis", 
@@ -10088,7 +10081,9 @@
 "^ot:ottTaxonName": "Ptychadena oxyrhynchus"
 }, 
 "otu251527": {
-"^ot:originalLabel": "Ptychadena tellinii"
+"^ot:originalLabel": "Ptychadena tellinii", 
+"^ot:ottId": 595812, 
+"^ot:ottTaxonName": "Ptychadena schubotzi"
 }, 
 "otu251528": {
 "^ot:originalLabel": "Ptychadena anchietae", 
@@ -10786,7 +10781,9 @@
 "^ot:ottTaxonName": "Chiasmocleis hudsoni"
 }, 
 "otu251667": {
-"^ot:originalLabel": "Synapturanus mirandaribeiroi"
+"^ot:originalLabel": "Synapturanus mirandaribeiroi", 
+"^ot:ottId": 1039939, 
+"^ot:ottTaxonName": "Synapturanus mirandaribeiroi"
 }, 
 "otu251668": {
 "^ot:originalLabel": "Otophryne pyburni", 
@@ -11659,7 +11656,9 @@
 "^ot:ottTaxonName": "Brachytarsophrys feae"
 }, 
 "otu251842": {
-"^ot:originalLabel": "Xenophrys shapingensis"
+"^ot:originalLabel": "Xenophrys shapingensis", 
+"^ot:ottId": 542886, 
+"^ot:ottTaxonName": "Atympanophrys shapingensis"
 }, 
 "otu251843": {
 "^ot:originalLabel": "Xenophrys nankiangensis", 
@@ -14417,7 +14416,9 @@
 "^ot:ottTaxonName": "Epicrionops marmoratus"
 }, 
 "otu252394": {
-"^ot:originalLabel": "Homo sapiens"
+"^ot:originalLabel": "Homo sapiens", 
+"^ot:ottId": 770315, 
+"^ot:ottTaxonName": "Homo sapiens"
 }
 }
 }
@@ -14431,10 +14432,15 @@
 "treeById": {
 "tree2857": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
 "^ot:branchLengthMode": "ot:substitutionCount", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "ML Tree", 
 "^ot:inGroupClade": "node610699", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node610698", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node610698": {
 "edge610699": {

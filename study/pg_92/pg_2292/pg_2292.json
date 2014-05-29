@@ -19,48 +19,11 @@
 "@id": "peyotl-validator", 
 "@name": "validate_ot_nexson.py", 
 "@url": "https://github.com/OpenTreeOfLife/peyotl", 
-"@version": "0.0.3a", 
+"@version": "0.0.4a", 
 "invocation": {
-"checksPerformed": [
-"MISSING_MANDATORY_KEY", 
-"MISSING_OPTIONAL_KEY", 
-"UNRECOGNIZED_KEY", 
-"MISSING_LIST_EXPECTED", 
-"DUPLICATING_SINGLETON_KEY", 
-"REFERENCED_ID_NOT_FOUND", 
-"REPEATED_ID", 
-"REPEATED_OTU", 
-"MULTIPLE_ROOT_NODES", 
-"NO_ROOT_NODE", 
-"MULTIPLE_EDGES_FOR_NODES", 
-"CYCLE_DETECTED", 
-"DISCONNECTED_GRAPH_DETECTED", 
-"INCORRECT_ROOT_NODE_LABEL", 
-"TIP_WITHOUT_OTU", 
-"TIP_WITHOUT_OTT_ID", 
-"MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
-"NON_MONOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
-"INVALID_PROPERTY_VALUE", 
-"PROPERTY_VALUE_NOT_USEFUL", 
-"UNRECOGNIZED_PROPERTY_VALUE", 
-"MULTIPLE_TREES", 
-"UNRECOGNIZED_TAG", 
-"CONFLICTING_PROPERTY_VALUES", 
-"NO_TREES", 
-"DEPRECATED_PROPERTY", 
-"UNPARSEABLE_META", 
-"UNREACHABLE_NODE", 
-"INCORRECT_VALUE_TYPE", 
-"MISSING_CRUCIAL_CONTENT"
-], 
 "commandLine": [
 "--embed", 
-"--agent-only", 
-"-e", 
-"../mig-phyelesystem-scratch/2292/validation.json", 
-"-o", 
-"../mig-phyelesystem-scratch/2292/final.json", 
-"../mig-phyelesystem-scratch/2292/v1.2.1-2292.json"
+"--agent-only"
 ], 
 "otherProperty": [
 {
@@ -76,18 +39,29 @@
 }
 ]
 }, 
+"^ot:annotationEvents": {
+"annotation": []
+}, 
+"^ot:candidateTreeForSynthesis": [], 
 "^ot:curatorName": "Romina Gazis", 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S1052"
 }, 
 "^ot:focalClade": 993569, 
 "^ot:focalCladeOTTTaxonName": "Peronospora", 
+"^ot:messages": {
+"message": []
+}, 
 "^ot:otusElementOrder": [
 "otus2292"
 ], 
 "^ot:studyId": "2292", 
-"^ot:studyPublicationReference": "Voglmayr H. 2003. Phylogenetic relationships of Peronospora and related genera based on nuclear ribosomal ITS sequences. Molecular Ecology, 107.", 
+"^ot:studyPublication": {
+"@href": "http://dx.doi.org/10.1017/S0953756203008438"
+}, 
+"^ot:studyPublicationReference": "Voglmayr, H. 2003. Phylogenetic relationships of Peronospora and related genera based on nuclear ribosomal ITS sequences. Molecular Ecology 107 (10): 1132-1142.", 
 "^ot:studyYear": 2003, 
+"^ot:tag": [], 
 "^ot:treesElementOrder": [
 "trees2292"
 ], 
@@ -97,16 +71,19 @@
 "otu327290": {
 "^ot:originalLabel": "Phytophthora megakarya", 
 "^ot:ottId": 252692, 
+"^ot:ottTaxonName": "Phytophthora megakarya", 
 "^ot:treebaseOTUId": "Tl140021"
 }, 
 "otu327291": {
 "^ot:originalLabel": "Peronospora alpicola", 
 "^ot:ottId": 603324, 
+"^ot:ottTaxonName": "Peronospora alpicola", 
 "^ot:treebaseOTUId": "Tl140022"
 }, 
 "otu327292": {
 "^ot:originalLabel": "Peronospora pulveracea", 
 "^ot:ottId": 396830, 
+"^ot:ottTaxonName": "Peronospora pulveracea", 
 "^ot:treebaseOTUId": "Tl140027"
 }, 
 "otu327293": {
@@ -124,21 +101,25 @@
 "otu327295": {
 "^ot:originalLabel": "Phytophthora iranica", 
 "^ot:ottId": 740155, 
+"^ot:ottTaxonName": "Phytophthora iranica", 
 "^ot:treebaseOTUId": "Tl140035"
 }, 
 "otu327296": {
 "^ot:originalLabel": "Phytophthora phaseoli", 
 "^ot:ottId": 88502, 
+"^ot:ottTaxonName": "Phytophthora phaseoli", 
 "^ot:treebaseOTUId": "Tl140037"
 }, 
 "otu327297": {
 "^ot:originalLabel": "Peronospora astragalina", 
 "^ot:ottId": 888032, 
+"^ot:ottTaxonName": "Peronospora astragalina", 
 "^ot:treebaseOTUId": "Tl140038"
 }, 
 "otu327298": {
 "^ot:originalLabel": "Peronospora stigmaticola", 
 "^ot:ottId": 539150, 
+"^ot:ottTaxonName": "Peronospora stigmaticola", 
 "^ot:treebaseOTUId": "Tl140040"
 }, 
 "otu327299": {
@@ -156,6 +137,7 @@
 "otu327301": {
 "^ot:originalLabel": "Hyaloperonospora lunariae", 
 "^ot:ottId": 1027149, 
+"^ot:ottTaxonName": "Hyaloperonospora lunariae", 
 "^ot:treebaseOTUId": "Tl140046"
 }, 
 "otu327302": {
@@ -173,6 +155,7 @@
 "otu327304": {
 "^ot:originalLabel": "Peronospora trivialis", 
 "^ot:ottId": 461359, 
+"^ot:ottTaxonName": "Peronospora trivialis", 
 "^ot:treebaseOTUId": "Tl140052"
 }, 
 "otu327305": {
@@ -184,6 +167,7 @@
 "otu327306": {
 "^ot:originalLabel": "Peronospora alta", 
 "^ot:ottId": 89642, 
+"^ot:ottTaxonName": "Peronospora alta", 
 "^ot:treebaseOTUId": "Tl140054"
 }, 
 "otu327307": {
@@ -195,21 +179,25 @@
 "otu327308": {
 "^ot:originalLabel": "Phytophthora idaei", 
 "^ot:ottId": 152484, 
+"^ot:ottTaxonName": "Phytophthora idaei", 
 "^ot:treebaseOTUId": "Tl140057"
 }, 
 "otu327309": {
 "^ot:originalLabel": "Phytophthora quercina", 
 "^ot:ottId": 23194, 
+"^ot:ottTaxonName": "Phytophthora quercina", 
 "^ot:treebaseOTUId": "Tl140060"
 }, 
 "otu327310": {
 "^ot:originalLabel": "Peronospora sordida", 
 "^ot:ottId": 930220, 
+"^ot:ottTaxonName": "Peronospora sordida", 
 "^ot:treebaseOTUId": "Tl140061"
 }, 
 "otu327311": {
 "^ot:originalLabel": "Peronospora aestivalis", 
 "^ot:ottId": 225093, 
+"^ot:ottTaxonName": "Peronospora aestivalis", 
 "^ot:treebaseOTUId": "Tl140062"
 }, 
 "otu327312": {
@@ -221,6 +209,7 @@
 "otu327313": {
 "^ot:originalLabel": "Phytophthora mirabilis", 
 "^ot:ottId": 88500, 
+"^ot:ottTaxonName": "Phytophthora mirabilis", 
 "^ot:treebaseOTUId": "Tl140066"
 }, 
 "otu327314": {
@@ -244,6 +233,7 @@
 "otu327317": {
 "^ot:originalLabel": "Peronospora arvensis", 
 "^ot:ottId": 89645, 
+"^ot:ottTaxonName": "Peronospora arvensis", 
 "^ot:treebaseOTUId": "Tl140071"
 }, 
 "otu327318": {
@@ -255,16 +245,19 @@
 "otu327319": {
 "^ot:originalLabel": "Phytophthora arecae", 
 "^ot:ottId": 609884, 
+"^ot:ottTaxonName": "Phytophthora arecae", 
 "^ot:treebaseOTUId": "Tl140075"
 }, 
 "otu327320": {
 "^ot:originalLabel": "Phytophthora ilicis", 
 "^ot:ottId": 103294, 
+"^ot:ottTaxonName": "Phytophthora ilicis", 
 "^ot:treebaseOTUId": "Tl140076"
 }, 
 "otu327321": {
 "^ot:originalLabel": "Peronospora lamii", 
 "^ot:ottId": 748677, 
+"^ot:ottTaxonName": "Peronospora lamii", 
 "^ot:treebaseOTUId": "Tl140077"
 }, 
 "otu327322": {
@@ -276,11 +269,13 @@
 "otu327323": {
 "^ot:originalLabel": "Peronospora chenopodii", 
 "^ot:ottId": 1084326, 
+"^ot:ottTaxonName": "Peronospora chenopodii", 
 "^ot:treebaseOTUId": "Tl140085"
 }, 
 "otu327324": {
 "^ot:originalLabel": "Peronospora calotheca", 
 "^ot:ottId": 225094, 
+"^ot:ottTaxonName": "Peronospora calotheca", 
 "^ot:treebaseOTUId": "Tl140087"
 }, 
 "otu327325": {
@@ -292,16 +287,19 @@
 "otu327326": {
 "^ot:originalLabel": "Peronospora tabacina", 
 "^ot:ottId": 486004, 
+"^ot:ottTaxonName": "Peronospora tabacina", 
 "^ot:treebaseOTUId": "Tl140091"
 }, 
 "otu327327": {
 "^ot:originalLabel": "Phytophthora nicotianae", 
 "^ot:ottId": 524651, 
+"^ot:ottTaxonName": "Phytophthora nicotianae", 
 "^ot:treebaseOTUId": "Tl140092"
 }, 
 "otu327328": {
 "^ot:originalLabel": "Hyaloperonospora parasitica", 
 "^ot:ottId": 734461, 
+"^ot:ottTaxonName": "Hyaloperonospora parasitica", 
 "^ot:treebaseOTUId": "Tl140100"
 }, 
 "otu327329": {
@@ -313,6 +311,7 @@
 "otu327330": {
 "^ot:originalLabel": "Peronospora destructor", 
 "^ot:ottId": 253622, 
+"^ot:ottTaxonName": "Peronospora destructor", 
 "^ot:treebaseOTUId": "Tl140102"
 }, 
 "otu327331": {
@@ -324,6 +323,7 @@
 "otu327332": {
 "^ot:originalLabel": "Phytophthora clandestina", 
 "^ot:ottId": 103293, 
+"^ot:ottTaxonName": "Phytophthora clandestina", 
 "^ot:treebaseOTUId": "Tl140109"
 }, 
 "otu327333": {
@@ -335,6 +335,7 @@
 "otu327334": {
 "^ot:originalLabel": "Phytophthora pseudotsugae", 
 "^ot:ottId": 152485, 
+"^ot:ottTaxonName": "Phytophthora pseudotsugae", 
 "^ot:treebaseOTUId": "Tl140114"
 }, 
 "otu327335": {
@@ -346,11 +347,13 @@
 "otu327336": {
 "^ot:originalLabel": "Phytophthora tentaculata", 
 "^ot:ottId": 662695, 
+"^ot:ottTaxonName": "Phytophthora tentaculata", 
 "^ot:treebaseOTUId": "Tl140117"
 }, 
 "otu327337": {
 "^ot:originalLabel": "Peronospora manshurica", 
 "^ot:ottId": 253623, 
+"^ot:ottTaxonName": "Peronospora manshurica", 
 "^ot:treebaseOTUId": "Tl140118"
 }, 
 "otu327338": {
@@ -368,21 +371,25 @@
 "otu327340": {
 "^ot:originalLabel": "Pseudoperonospora urticae", 
 "^ot:ottId": 748676, 
+"^ot:ottTaxonName": "Pseudoperonospora urticae", 
 "^ot:treebaseOTUId": "Tl140129"
 }, 
 "otu327341": {
 "^ot:originalLabel": "Peronospora arborescens", 
 "^ot:ottId": 740584, 
+"^ot:ottTaxonName": "Peronospora arborescens", 
 "^ot:treebaseOTUId": "Tl140131"
 }, 
 "otu327342": {
 "^ot:originalLabel": "Peronospora obovata", 
 "^ot:ottId": 486003, 
+"^ot:ottTaxonName": "Peronospora obovata", 
 "^ot:treebaseOTUId": "Tl140132"
 }, 
 "otu327343": {
 "^ot:originalLabel": "Peronospora aparines", 
 "^ot:ottId": 225095, 
+"^ot:ottTaxonName": "Peronospora aparines", 
 "^ot:treebaseOTUId": "Tl140133"
 }, 
 "otu327344": {
@@ -406,37 +413,43 @@
 "otu327347": {
 "^ot:originalLabel": "Peronospora paula", 
 "^ot:ottId": 81703, 
+"^ot:ottTaxonName": "Peronospora paula", 
 "^ot:treebaseOTUId": "Tl16822"
 }, 
 "otu327348": {
 "^ot:originalLabel": "Peronospora meliloti", 
 "^ot:ottId": 363345, 
+"^ot:ottTaxonName": "Peronospora meliloti", 
 "^ot:treebaseOTUId": "Tl16823"
 }, 
 "otu327349": {
 "^ot:originalLabel": "Peronospora alchemillae", 
 "^ot:ottId": 450765, 
+"^ot:ottTaxonName": "Peronospora alchemillae", 
 "^ot:treebaseOTUId": "Tl16824"
 }, 
 "otu327350": {
 "^ot:originalLabel": "Peronospora sherardiae", 
 "^ot:ottId": 515503, 
+"^ot:ottTaxonName": "Peronospora sherardiae", 
 "^ot:treebaseOTUId": "Tl16825"
 }, 
 "otu327351": {
-"^ot:altLabel": "Veronica beccabunga", 
 "^ot:originalLabel": "Peronospora grisea on Veronica beccabunga", 
 "^ot:ottId": 653021, 
+"^ot:ottTaxonName": "Veronica beccabunga", 
 "^ot:treebaseOTUId": "Tl16828"
 }, 
 "otu327352": {
 "^ot:originalLabel": "Peronospora flava", 
 "^ot:ottId": 888024, 
+"^ot:ottTaxonName": "Peronospora flava", 
 "^ot:treebaseOTUId": "Tl16829"
 }, 
 "otu327353": {
 "^ot:originalLabel": "Peronospora silvatica", 
 "^ot:ottId": 450771, 
+"^ot:ottTaxonName": "Peronospora silvatica", 
 "^ot:treebaseOTUId": "Tl16830"
 }, 
 "otu327354": {
@@ -446,61 +459,69 @@
 "^ot:treebaseOTUId": "Tl16831"
 }, 
 "otu327355": {
-"^ot:altLabel": "Hyaloperonospora nesliae", 
 "^ot:originalLabel": "Peronospora nesliae", 
 "^ot:ottId": 888026, 
+"^ot:ottTaxonName": "Hyaloperonospora nesliae", 
 "^ot:treebaseOTUId": "Tl16833"
 }, 
 "otu327356": {
 "^ot:originalLabel": "Peronospora tranzscheliana", 
 "^ot:ottId": 539059, 
+"^ot:ottTaxonName": "Peronospora tranzscheliana", 
 "^ot:treebaseOTUId": "Tl16834"
 }, 
 "otu327357": {
-"^ot:altLabel": "Peronospora trifoliorum f. trifolii-pratensis", 
 "^ot:originalLabel": "Peronospora trifolii-pratensis", 
 "^ot:ottId": 363353, 
+"^ot:ottTaxonName": "Peronospora trifoliorum f. trifolii-pratensis", 
 "^ot:treebaseOTUId": "Tl16836"
 }, 
 "otu327358": {
 "^ot:originalLabel": "Peronospora violae", 
 "^ot:ottId": 888022, 
+"^ot:ottTaxonName": "Peronospora violae", 
 "^ot:treebaseOTUId": "Tl16837"
 }, 
 "otu327359": {
 "^ot:originalLabel": "Hyaloperonospora aff. parasitica", 
 "^ot:ottId": 1027145, 
+"^ot:ottTaxonName": "Hyaloperonospora aff. parasitica", 
 "^ot:treebaseOTUId": "Tl16839"
 }, 
 "otu327360": {
 "^ot:originalLabel": "Peronospora dicentrae", 
 "^ot:ottId": 335618, 
+"^ot:ottTaxonName": "Peronospora dicentrae", 
 "^ot:treebaseOTUId": "Tl16840"
 }, 
 "otu327361": {
 "^ot:originalLabel": "Peronospora knautiae", 
 "^ot:ottId": 538993, 
+"^ot:ottTaxonName": "Peronospora knautiae", 
 "^ot:treebaseOTUId": "Tl16841"
 }, 
 "otu327362": {
 "^ot:originalLabel": "Peronospora ervi", 
 "^ot:ottId": 363358, 
+"^ot:ottTaxonName": "Peronospora ervi", 
 "^ot:treebaseOTUId": "Tl16843"
 }, 
 "otu327363": {
 "^ot:originalLabel": "Peronospora mayorii", 
 "^ot:ottId": 363357, 
+"^ot:ottTaxonName": "Peronospora mayorii", 
 "^ot:treebaseOTUId": "Tl16844"
 }, 
 "otu327364": {
-"^ot:altLabel": "Hyaloperonospora sisymbrii-sophiae", 
 "^ot:originalLabel": "Peronospora sisymbrii-sophiae", 
 "^ot:ottId": 100139, 
+"^ot:ottTaxonName": "Hyaloperonospora sisymbrii-sophiae", 
 "^ot:treebaseOTUId": "Tl16845"
 }, 
 "otu327365": {
 "^ot:originalLabel": "Peronospora aff. ranunculi", 
 "^ot:ottId": 603322, 
+"^ot:ottTaxonName": "Peronospora aff. ranunculi", 
 "^ot:treebaseOTUId": "Tl16847"
 }, 
 "otu327366": {
@@ -512,79 +533,91 @@
 "otu327367": {
 "^ot:originalLabel": "Peronospora claytoniae", 
 "^ot:ottId": 81702, 
+"^ot:ottTaxonName": "Peronospora claytoniae", 
 "^ot:treebaseOTUId": "Tl16850"
 }, 
 "otu327368": {
 "^ot:originalLabel": "Peronospora trifolii-repentis", 
 "^ot:ottId": 363359, 
+"^ot:ottTaxonName": "Peronospora trifolii-repentis", 
 "^ot:treebaseOTUId": "Tl16853"
 }, 
 "otu327369": {
 "^ot:originalLabel": "Peronospora aff. potentillae", 
 "^ot:ottId": 888023, 
+"^ot:ottTaxonName": "Peronospora aff. potentillae", 
 "^ot:treebaseOTUId": "Tl16854"
 }, 
 "otu327370": {
-"^ot:altLabel": "Pseudoperonospora humuli", 
 "^ot:originalLabel": "Pseudoperonospora humuli 2", 
 "^ot:ottId": 275959, 
+"^ot:ottTaxonName": "Pseudoperonospora humuli", 
 "^ot:treebaseOTUId": "Tl16855"
 }, 
 "otu327371": {
 "^ot:originalLabel": "Peronospora holostei", 
 "^ot:ottId": 81700, 
+"^ot:ottTaxonName": "Peronospora holostei", 
 "^ot:treebaseOTUId": "Tl16856"
 }, 
 "otu327372": {
 "^ot:originalLabel": "Peronospora arenariae", 
 "^ot:ottId": 81701, 
+"^ot:ottTaxonName": "Peronospora arenariae", 
 "^ot:treebaseOTUId": "Tl16858"
 }, 
 "otu327373": {
 "^ot:originalLabel": "Peronospora esulae", 
 "^ot:ottId": 603320, 
+"^ot:ottTaxonName": "Peronospora esulae", 
 "^ot:treebaseOTUId": "Tl16860"
 }, 
 "otu327374": {
 "^ot:originalLabel": "Peronospora lotorum", 
 "^ot:ottId": 603328, 
+"^ot:ottTaxonName": "Peronospora lotorum", 
 "^ot:treebaseOTUId": "Tl16862"
 }, 
 "otu327375": {
 "^ot:originalLabel": "Peronospora agrestis", 
 "^ot:ottId": 888025, 
+"^ot:ottTaxonName": "Peronospora agrestis", 
 "^ot:treebaseOTUId": "Tl16863"
 }, 
 "otu327376": {
-"^ot:altLabel": "Veronica serpyllifolia", 
 "^ot:originalLabel": "Peronospora grisea on Veronica serpyllifolia", 
 "^ot:ottId": 115123, 
+"^ot:ottTaxonName": "Veronica serpyllifolia", 
 "^ot:treebaseOTUId": "Tl16864"
 }, 
 "otu327377": {
 "^ot:originalLabel": "Peronospora romanica", 
 "^ot:ottId": 363344, 
+"^ot:ottTaxonName": "Peronospora romanica", 
 "^ot:treebaseOTUId": "Tl16865"
 }, 
 "otu327378": {
 "^ot:originalLabel": "Peronospora potentillae", 
 "^ot:ottId": 363360, 
+"^ot:ottTaxonName": "Peronospora potentillae", 
 "^ot:treebaseOTUId": "Tl16866"
 }, 
 "otu327379": {
 "^ot:originalLabel": "Peronospora polygoni", 
 "^ot:ottId": 81699, 
+"^ot:ottTaxonName": "Peronospora polygoni", 
 "^ot:treebaseOTUId": "Tl16867"
 }, 
 "otu327380": {
 "^ot:originalLabel": "Peronospora parva", 
 "^ot:ottId": 81704, 
+"^ot:ottTaxonName": "Peronospora parva", 
 "^ot:treebaseOTUId": "Tl16870"
 }, 
 "otu327381": {
-"^ot:altLabel": "Hyaloperonospora arabidis-alpinae", 
 "^ot:originalLabel": "Peronospora arabis-alpinae", 
 "^ot:ottId": 888033, 
+"^ot:ottTaxonName": "Hyaloperonospora arabidis-alpinae", 
 "^ot:treebaseOTUId": "Tl16871"
 }, 
 "otu327382": {
@@ -596,104 +629,121 @@
 "otu327383": {
 "^ot:originalLabel": "Peronospora valerianellae", 
 "^ot:ottId": 515497, 
+"^ot:ottTaxonName": "Peronospora valerianellae", 
 "^ot:treebaseOTUId": "Tl16873"
 }, 
 "otu327384": {
-"^ot:altLabel": "Pseudoperonospora humuli", 
 "^ot:originalLabel": "Pseudoperonospora humuli 1", 
 "^ot:ottId": 275959, 
+"^ot:ottTaxonName": "Pseudoperonospora humuli", 
 "^ot:treebaseOTUId": "Tl16874"
 }, 
 "otu327385": {
 "^ot:originalLabel": "Peronospora chenopodii-polyspermi", 
 "^ot:ottId": 515501, 
+"^ot:ottTaxonName": "Peronospora chenopodii-polyspermi", 
 "^ot:treebaseOTUId": "Tl16875"
 }, 
 "otu327386": {
 "^ot:originalLabel": "Peronospora kochiae-scopariae", 
 "^ot:ottId": 515502, 
+"^ot:ottTaxonName": "Peronospora kochiae-scopariae", 
 "^ot:treebaseOTUId": "Tl16876"
 }, 
 "otu327387": {
 "^ot:originalLabel": "Peronospora chrysosplenii", 
 "^ot:ottId": 603321, 
+"^ot:ottTaxonName": "Peronospora chrysosplenii", 
 "^ot:treebaseOTUId": "Tl16878"
 }, 
 "otu327388": {
 "^ot:originalLabel": "Peronospora arthurii", 
 "^ot:ottId": 486006, 
+"^ot:ottTaxonName": "Peronospora arthurii", 
 "^ot:treebaseOTUId": "Tl16879"
 }, 
 "otu327389": {
 "^ot:originalLabel": "Peronospora illyrica", 
 "^ot:ottId": 603323, 
+"^ot:ottTaxonName": "Peronospora illyrica", 
 "^ot:treebaseOTUId": "Tl16880"
 }, 
 "otu327390": {
 "^ot:originalLabel": "Peronospora radii", 
 "^ot:ottId": 539127, 
+"^ot:ottTaxonName": "Peronospora radii", 
 "^ot:treebaseOTUId": "Tl16881"
 }, 
 "otu327391": {
-"^ot:altLabel": "Hyaloperonospora dentariae", 
 "^ot:originalLabel": "Peronospora dentariae", 
 "^ot:ottId": 275958, 
+"^ot:ottTaxonName": "Hyaloperonospora dentariae", 
 "^ot:treebaseOTUId": "Tl16882"
 }, 
 "otu327392": {
 "^ot:originalLabel": "Peronospora lepidii-sativi", 
 "^ot:ottId": 888031, 
+"^ot:ottTaxonName": "Peronospora lepidii-sativi", 
 "^ot:treebaseOTUId": "Tl16885"
 }, 
 "otu327393": {
 "^ot:originalLabel": "Peronospora asperuginis", 
 "^ot:ottId": 603325, 
+"^ot:ottTaxonName": "Peronospora asperuginis", 
 "^ot:treebaseOTUId": "Tl16887"
 }, 
 "otu327394": {
 "^ot:originalLabel": "Peronospora boni-henrici", 
 "^ot:ottId": 225086, 
+"^ot:ottTaxonName": "Peronospora boni-henrici", 
 "^ot:treebaseOTUId": "Tl9721"
 }, 
 "otu327395": {
 "^ot:originalLabel": "Peronospora coronillae", 
 "^ot:ottId": 614169, 
+"^ot:ottTaxonName": "Peronospora coronillae", 
 "^ot:treebaseOTUId": "Tl9725"
 }, 
 "otu327396": {
 "^ot:originalLabel": "Peronospora alsinearum", 
 "^ot:ottId": 614163, 
+"^ot:ottTaxonName": "Peronospora alsinearum", 
 "^ot:treebaseOTUId": "Tl9733"
 }, 
 "otu327397": {
 "^ot:originalLabel": "Peronospora trifolii-hybridi", 
 "^ot:ottId": 225091, 
+"^ot:ottTaxonName": "Peronospora trifolii-hybridi", 
 "^ot:treebaseOTUId": "Tl9735"
 }, 
 "otu327398": {
-"^ot:altLabel": "Hyaloperonospora camelinae", 
 "^ot:originalLabel": "Peronospora camelinae", 
 "^ot:ottId": 1027146, 
+"^ot:ottTaxonName": "Hyaloperonospora camelinae", 
 "^ot:treebaseOTUId": "Tl9738"
 }, 
 "otu327399": {
 "^ot:originalLabel": "Peronospora trifolii-minoris", 
 "^ot:ottId": 225090, 
+"^ot:ottTaxonName": "Peronospora trifolii-minoris", 
 "^ot:treebaseOTUId": "Tl9740"
 }, 
 "otu327400": {
 "^ot:originalLabel": "Peronospora bulbocapni", 
 "^ot:ottId": 560005, 
+"^ot:ottTaxonName": "Peronospora bulbocapni", 
 "^ot:treebaseOTUId": "Tl9746"
 }, 
 "otu327401": {
 "^ot:originalLabel": "Peronospora myosotidis", 
 "^ot:ottId": 396835, 
+"^ot:ottTaxonName": "Peronospora myosotidis", 
 "^ot:treebaseOTUId": "Tl9750"
 }, 
 "otu327402": {
 "^ot:originalLabel": "Peronospora trifolii-alpestris", 
 "^ot:ottId": 225092, 
+"^ot:ottTaxonName": "Peronospora trifolii-alpestris", 
 "^ot:treebaseOTUId": "Tl9756"
 }, 
 "otu327403": {
@@ -703,9 +753,9 @@
 "^ot:treebaseOTUId": "Tl9775"
 }, 
 "otu327404": {
-"^ot:altLabel": "Hyaloperonospora thlaspeos-arvensis", 
 "^ot:originalLabel": "Peronospora thlaspeos-arvensis", 
 "^ot:ottId": 275949, 
+"^ot:ottTaxonName": "Hyaloperonospora thlaspeos-arvensis", 
 "^ot:treebaseOTUId": "Tl9779"
 }, 
 "otu327405": {
@@ -726,9 +776,15 @@
 "treeById": {
 "tree4852": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "BI, ITS", 
 "^ot:inGroupClade": "node846285", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node846281", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node846281": {
 "edge846282": {

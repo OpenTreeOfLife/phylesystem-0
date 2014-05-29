@@ -19,48 +19,11 @@
 "@id": "peyotl-validator", 
 "@name": "validate_ot_nexson.py", 
 "@url": "https://github.com/OpenTreeOfLife/peyotl", 
-"@version": "0.0.3a", 
+"@version": "0.0.4a", 
 "invocation": {
-"checksPerformed": [
-"MISSING_MANDATORY_KEY", 
-"MISSING_OPTIONAL_KEY", 
-"UNRECOGNIZED_KEY", 
-"MISSING_LIST_EXPECTED", 
-"DUPLICATING_SINGLETON_KEY", 
-"REFERENCED_ID_NOT_FOUND", 
-"REPEATED_ID", 
-"REPEATED_OTU", 
-"MULTIPLE_ROOT_NODES", 
-"NO_ROOT_NODE", 
-"MULTIPLE_EDGES_FOR_NODES", 
-"CYCLE_DETECTED", 
-"DISCONNECTED_GRAPH_DETECTED", 
-"INCORRECT_ROOT_NODE_LABEL", 
-"TIP_WITHOUT_OTU", 
-"TIP_WITHOUT_OTT_ID", 
-"MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
-"NON_MONOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
-"INVALID_PROPERTY_VALUE", 
-"PROPERTY_VALUE_NOT_USEFUL", 
-"UNRECOGNIZED_PROPERTY_VALUE", 
-"MULTIPLE_TREES", 
-"UNRECOGNIZED_TAG", 
-"CONFLICTING_PROPERTY_VALUES", 
-"NO_TREES", 
-"DEPRECATED_PROPERTY", 
-"UNPARSEABLE_META", 
-"UNREACHABLE_NODE", 
-"INCORRECT_VALUE_TYPE", 
-"MISSING_CRUCIAL_CONTENT"
-], 
 "commandLine": [
 "--embed", 
-"--agent-only", 
-"-e", 
-"../mig-phyelesystem-scratch/2355/validation.json", 
-"-o", 
-"../mig-phyelesystem-scratch/2355/final.json", 
-"../mig-phyelesystem-scratch/2355/v1.2.1-2355.json"
+"--agent-only"
 ], 
 "otherProperty": [
 {
@@ -76,12 +39,19 @@
 }
 ]
 }, 
+"^ot:annotationEvents": {
+"annotation": []
+}, 
+"^ot:candidateTreeForSynthesis": [], 
 "^ot:curatorName": "Chris Owen", 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S12410"
 }, 
 "^ot:focalClade": 413468, 
 "^ot:focalCladeOTTTaxonName": "Carabus", 
+"^ot:messages": {
+"message": []
+}, 
 "^ot:otusElementOrder": [
 "otus2355"
 ], 
@@ -89,8 +59,9 @@
 "^ot:studyPublication": {
 "@href": "http://dx.doi.org/10.1186/1471-2148-12-40"
 }, 
-"^ot:studyPublicationReference": "Andujar C., Serrano J., & Gomez-zurita J. 2012. Winding up the molecular clock in the genus Carabus (Coleoptera: Carabidae): assessment of methodological decisions on rate and node age estimation. BMC Evolutionary Biology, 12: 40.", 
+"^ot:studyPublicationReference": "Andujar, C., Serrano J., & Gomez-zurita J. 2012. Winding up the molecular clock in the genus Carabus (Coleoptera: Carabidae): assessment of methodological decisions on rate and node age estimation. BMC Evolutionary Biology 12: 40.", 
 "^ot:studyYear": 2012, 
+"^ot:tag": [], 
 "^ot:treesElementOrder": [
 "trees2355"
 ], 
@@ -302,15 +273,15 @@
 "^ot:treebaseOTUId": "Tl717940"
 }, 
 "otu332958": {
-"^ot:altLabel": "Calosoma auropunctatum", 
 "^ot:originalLabel": "Calosoma auropunctatum TURQ52001b", 
 "^ot:ottId": 1085852, 
+"^ot:ottTaxonName": "Calosoma auropunctatum", 
 "^ot:treebaseOTUId": "Tl717941"
 }, 
 "otu332959": {
-"^ot:altLabel": "Calosoma auropunctatum", 
 "^ot:originalLabel": "Calosoma auropunctatum TURQ52001c", 
 "^ot:ottId": 1085852, 
+"^ot:ottTaxonName": "Calosoma auropunctatum", 
 "^ot:treebaseOTUId": "Tl717942"
 }
 }
@@ -325,11 +296,15 @@
 "treeById": {
 "tree4955": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
 "^ot:branchLengthMode": "ot:time", 
 "^ot:branchLengthTimeUnit": "Myr", 
 "^ot:curatedType": "BEAST- MIT NUC all AllGaps Bygene ULN 2P", 
 "^ot:inGroupClade": "node857556", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node857550", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node857550": {
 "edge857551": {

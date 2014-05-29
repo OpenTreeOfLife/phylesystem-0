@@ -19,48 +19,11 @@
 "@id": "peyotl-validator", 
 "@name": "validate_ot_nexson.py", 
 "@url": "https://github.com/OpenTreeOfLife/peyotl", 
-"@version": "0.0.3a", 
+"@version": "0.0.4a", 
 "invocation": {
-"checksPerformed": [
-"MISSING_MANDATORY_KEY", 
-"MISSING_OPTIONAL_KEY", 
-"UNRECOGNIZED_KEY", 
-"MISSING_LIST_EXPECTED", 
-"DUPLICATING_SINGLETON_KEY", 
-"REFERENCED_ID_NOT_FOUND", 
-"REPEATED_ID", 
-"REPEATED_OTU", 
-"MULTIPLE_ROOT_NODES", 
-"NO_ROOT_NODE", 
-"MULTIPLE_EDGES_FOR_NODES", 
-"CYCLE_DETECTED", 
-"DISCONNECTED_GRAPH_DETECTED", 
-"INCORRECT_ROOT_NODE_LABEL", 
-"TIP_WITHOUT_OTU", 
-"TIP_WITHOUT_OTT_ID", 
-"MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
-"NON_MONOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
-"INVALID_PROPERTY_VALUE", 
-"PROPERTY_VALUE_NOT_USEFUL", 
-"UNRECOGNIZED_PROPERTY_VALUE", 
-"MULTIPLE_TREES", 
-"UNRECOGNIZED_TAG", 
-"CONFLICTING_PROPERTY_VALUES", 
-"NO_TREES", 
-"DEPRECATED_PROPERTY", 
-"UNPARSEABLE_META", 
-"UNREACHABLE_NODE", 
-"INCORRECT_VALUE_TYPE", 
-"MISSING_CRUCIAL_CONTENT"
-], 
 "commandLine": [
 "--embed", 
-"--agent-only", 
-"-e", 
-"../mig-phyelesystem-scratch/968/validation.json", 
-"-o", 
-"../mig-phyelesystem-scratch/968/final.json", 
-"../mig-phyelesystem-scratch/968/v1.2.1-968.json"
+"--agent-only"
 ], 
 "otherProperty": [
 {
@@ -76,12 +39,19 @@
 }
 ]
 }, 
+"^ot:annotationEvents": {
+"annotation": []
+}, 
+"^ot:candidateTreeForSynthesis": [], 
 "^ot:curatorName": "Romina Gazis", 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S1350"
 }, 
 "^ot:focalClade": 138044, 
 "^ot:focalCladeOTTTaxonName": "Oidium", 
+"^ot:messages": {
+"message": []
+}, 
 "^ot:otusElementOrder": [
 "otus968"
 ], 
@@ -91,6 +61,7 @@
 }, 
 "^ot:studyPublicationReference": "Limkaisang S., Kom-un S., Furtado E., Liew K., Salleh B., Sato Y., & Takamatsu S. 2005. Molecular phylogenetic and morphological analyses of Oidium heveae, a powdery mildew of rubber tree. Mycoscience, 46(4), 220-226.", 
 "^ot:studyYear": 2005, 
+"^ot:tag": [], 
 "^ot:treesElementOrder": [
 "trees968"
 ], 
@@ -277,6 +248,8 @@
 }, 
 "otu209057": {
 "^ot:originalLabel": "Erysiphe glycines AB015927", 
+"^ot:ottId": 129269, 
+"^ot:ottTaxonName": "Erysiphe diffusa", 
 "^ot:treebaseOTUId": "Tl159095"
 }, 
 "otu209058": {
@@ -321,6 +294,8 @@
 }, 
 "otu209065": {
 "^ot:originalLabel": "Erysiphe glycines AB015934", 
+"^ot:ottId": 129269, 
+"^ot:ottTaxonName": "Erysiphe diffusa", 
 "^ot:treebaseOTUId": "Tl159106"
 }, 
 "otu209066": {
@@ -349,6 +324,8 @@
 }, 
 "otu209070": {
 "^ot:originalLabel": "Erysiphe glycines", 
+"^ot:ottId": 129269, 
+"^ot:ottTaxonName": "Erysiphe diffusa", 
 "^ot:treebaseOTUId": "Tl159111"
 }, 
 "otu209071": {
@@ -407,6 +384,8 @@
 }, 
 "otu209081": {
 "^ot:originalLabel": "Erysiphe sparsa", 
+"^ot:ottId": 5309792, 
+"^ot:ottTaxonName": "Golovinomyces sparsus", 
 "^ot:treebaseOTUId": "Tl37490"
 }, 
 "otu209082": {
@@ -442,9 +421,15 @@
 "treeById": {
 "tree1898": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "MP, ITS", 
 "^ot:inGroupClade": "node495793", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node495791", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node495791": {
 "edge495792": {
@@ -1101,10 +1086,17 @@
 }, 
 "tree1899": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "MP, LSU", 
 "^ot:inGroupClade": "node495885", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node495884", 
-"^ot:tag": "MP", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [
+"MP"
+], 
 "edgeBySourceId": {
 "node495884": {
 "edge495885": {

@@ -19,48 +19,11 @@
 "@id": "peyotl-validator", 
 "@name": "validate_ot_nexson.py", 
 "@url": "https://github.com/OpenTreeOfLife/peyotl", 
-"@version": "0.0.3a", 
+"@version": "0.0.4a", 
 "invocation": {
-"checksPerformed": [
-"MISSING_MANDATORY_KEY", 
-"MISSING_OPTIONAL_KEY", 
-"UNRECOGNIZED_KEY", 
-"MISSING_LIST_EXPECTED", 
-"DUPLICATING_SINGLETON_KEY", 
-"REFERENCED_ID_NOT_FOUND", 
-"REPEATED_ID", 
-"REPEATED_OTU", 
-"MULTIPLE_ROOT_NODES", 
-"NO_ROOT_NODE", 
-"MULTIPLE_EDGES_FOR_NODES", 
-"CYCLE_DETECTED", 
-"DISCONNECTED_GRAPH_DETECTED", 
-"INCORRECT_ROOT_NODE_LABEL", 
-"TIP_WITHOUT_OTU", 
-"TIP_WITHOUT_OTT_ID", 
-"MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
-"NON_MONOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
-"INVALID_PROPERTY_VALUE", 
-"PROPERTY_VALUE_NOT_USEFUL", 
-"UNRECOGNIZED_PROPERTY_VALUE", 
-"MULTIPLE_TREES", 
-"UNRECOGNIZED_TAG", 
-"CONFLICTING_PROPERTY_VALUES", 
-"NO_TREES", 
-"DEPRECATED_PROPERTY", 
-"UNPARSEABLE_META", 
-"UNREACHABLE_NODE", 
-"INCORRECT_VALUE_TYPE", 
-"MISSING_CRUCIAL_CONTENT"
-], 
 "commandLine": [
 "--embed", 
-"--agent-only", 
-"-e", 
-"../mig-phyelesystem-scratch/1118/validation.json", 
-"-o", 
-"../mig-phyelesystem-scratch/1118/final.json", 
-"../mig-phyelesystem-scratch/1118/v1.2.1-1118.json"
+"--agent-only"
 ], 
 "otherProperty": [
 {
@@ -76,12 +39,19 @@
 }
 ]
 }, 
+"^ot:annotationEvents": {
+"annotation": []
+}, 
+"^ot:candidateTreeForSynthesis": [], 
 "^ot:curatorName": "bryan drew", 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S12395"
 }, 
 "^ot:focalClade": 394658, 
 "^ot:focalCladeOTTTaxonName": "Nepetoideae", 
+"^ot:messages": {
+"message": []
+}, 
 "^ot:otusElementOrder": [
 "otus1118"
 ], 
@@ -91,6 +61,7 @@
 }, 
 "^ot:studyPublicationReference": "Drew, B. T., & Sytsma, K. J. (2012). Phylogenetics, biogeography, and staminal evolution in the tribe Mentheae (Lamiaceae). American Journal of Botany, 99(5), 933-953.", 
 "^ot:studyYear": 2012, 
+"^ot:tag": [], 
 "^ot:treesElementOrder": [
 "trees1118"
 ], 
@@ -345,6 +316,8 @@
 }, 
 "otu224749": {
 "^ot:originalLabel": "Callicarpa japonica", 
+"^ot:ottId": 523665, 
+"^ot:ottTaxonName": "Callicarpa japonica", 
 "^ot:treebaseOTUId": "Tl715861"
 }, 
 "otu224750": {
@@ -451,6 +424,8 @@
 }, 
 "otu224767": {
 "^ot:originalLabel": "Gmelina arborea", 
+"^ot:ottId": 736674, 
+"^ot:ottTaxonName": "Gmelina arborea", 
 "^ot:treebaseOTUId": "Tl715881"
 }, 
 "otu224768": {
@@ -545,6 +520,8 @@
 }, 
 "otu224783": {
 "^ot:originalLabel": "Callicarpa pedunculata", 
+"^ot:ottId": 358374, 
+"^ot:ottTaxonName": "Callicarpa pedunculata", 
 "^ot:treebaseOTUId": "Tl715901"
 }, 
 "otu224784": {
@@ -849,11 +826,17 @@
 "treeById": {
 "tree2224": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
 "^ot:branchLengthMode": "ot:substitutionCount", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "TREE1", 
 "^ot:inGroupClade": "node539946", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node539945", 
-"^ot:tag": "nrDNA", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [
+"nrDNA"
+], 
 "edgeBySourceId": {
 "node539945": {
 "edge539946": {
@@ -1890,10 +1873,17 @@
 }, 
 "tree2225": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "TREE1", 
 "^ot:inGroupClade": "node540078", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node540074", 
-"^ot:tag": "cpDNA", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [
+"cpDNA"
+], 
 "edgeBySourceId": {
 "node540074": {
 "edge540075": {
@@ -3730,10 +3720,17 @@
 }, 
 "tree2226": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "TREE1", 
 "^ot:inGroupClade": "node540307", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node540303", 
-"^ot:tag": "nrDNA", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [
+"nrDNA"
+], 
 "edgeBySourceId": {
 "node540303": {
 "edge540304": {

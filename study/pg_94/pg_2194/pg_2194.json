@@ -19,48 +19,11 @@
 "@id": "peyotl-validator", 
 "@name": "validate_ot_nexson.py", 
 "@url": "https://github.com/OpenTreeOfLife/peyotl", 
-"@version": "0.0.3a", 
+"@version": "0.0.4a", 
 "invocation": {
-"checksPerformed": [
-"MISSING_MANDATORY_KEY", 
-"MISSING_OPTIONAL_KEY", 
-"UNRECOGNIZED_KEY", 
-"MISSING_LIST_EXPECTED", 
-"DUPLICATING_SINGLETON_KEY", 
-"REFERENCED_ID_NOT_FOUND", 
-"REPEATED_ID", 
-"REPEATED_OTU", 
-"MULTIPLE_ROOT_NODES", 
-"NO_ROOT_NODE", 
-"MULTIPLE_EDGES_FOR_NODES", 
-"CYCLE_DETECTED", 
-"DISCONNECTED_GRAPH_DETECTED", 
-"INCORRECT_ROOT_NODE_LABEL", 
-"TIP_WITHOUT_OTU", 
-"TIP_WITHOUT_OTT_ID", 
-"MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
-"NON_MONOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
-"INVALID_PROPERTY_VALUE", 
-"PROPERTY_VALUE_NOT_USEFUL", 
-"UNRECOGNIZED_PROPERTY_VALUE", 
-"MULTIPLE_TREES", 
-"UNRECOGNIZED_TAG", 
-"CONFLICTING_PROPERTY_VALUES", 
-"NO_TREES", 
-"DEPRECATED_PROPERTY", 
-"UNPARSEABLE_META", 
-"UNREACHABLE_NODE", 
-"INCORRECT_VALUE_TYPE", 
-"MISSING_CRUCIAL_CONTENT"
-], 
 "commandLine": [
 "--embed", 
-"--agent-only", 
-"-e", 
-"../mig-phyelesystem-scratch/2194/validation.json", 
-"-o", 
-"../mig-phyelesystem-scratch/2194/final.json", 
-"../mig-phyelesystem-scratch/2194/v1.2.1-2194.json"
+"--agent-only"
 ], 
 "otherProperty": [
 {
@@ -76,12 +39,19 @@
 }
 ]
 }, 
+"^ot:annotationEvents": {
+"annotation": []
+}, 
+"^ot:candidateTreeForSynthesis": [], 
 "^ot:curatorName": "Romina Gazis", 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S1447"
 }, 
 "^ot:focalClade": 855124, 
 "^ot:focalCladeOTTTaxonName": "Eutypa", 
+"^ot:messages": {
+"message": []
+}, 
 "^ot:otusElementOrder": [
 "otus2194"
 ], 
@@ -91,6 +61,7 @@
 }, 
 "^ot:studyPublicationReference": "Rolshausen P., Mahoney N., Molyneux R., & Gubler W. 2005. A re-assessment of the species concept in Eutypa lata, the causal agent of Eutypa dieback of grapevine. Phytopathology. 2006 Apr;96(4):369-77.", 
 "^ot:studyYear": 2005, 
+"^ot:tag": [], 
 "^ot:treesElementOrder": [
 "trees2194"
 ], 
@@ -105,6 +76,8 @@
 }, 
 "otu319794": {
 "^ot:originalLabel": "Diatrype flavovirens", 
+"^ot:ottId": 788370, 
+"^ot:ottTaxonName": "Eutypa flavovirens", 
 "^ot:treebaseOTUId": "Tl164717"
 }, 
 "otu319795": {
@@ -179,6 +152,8 @@
 }, 
 "otu319807": {
 "^ot:originalLabel": "Diatrypella sp. DHb500", 
+"^ot:ottId": 691653, 
+"^ot:ottTaxonName": "Diatrypella favacea", 
 "^ot:treebaseOTUId": "Tl24980"
 }, 
 "otu319808": {
@@ -195,6 +170,8 @@
 }, 
 "otu319810": {
 "^ot:originalLabel": "Diatrype flavovirens F093582", 
+"^ot:ottId": 788370, 
+"^ot:ottTaxonName": "Eutypa flavovirens", 
 "^ot:treebaseOTUId": "Tl24983"
 }, 
 "otu319811": {
@@ -211,10 +188,14 @@
 }, 
 "otu319813": {
 "^ot:originalLabel": "Eutypa petrakii 244.87", 
+"^ot:ottId": 5317611, 
+"^ot:ottTaxonName": "Cryptosphaeria moravica", 
 "^ot:treebaseOTUId": "Tl24986"
 }, 
 "otu319814": {
 "^ot:originalLabel": "Diatrype flavovirens 272.87", 
+"^ot:ottId": 788370, 
+"^ot:ottTaxonName": "Eutypa flavovirens", 
 "^ot:treebaseOTUId": "Tl24987"
 }, 
 "otu319815": {
@@ -225,6 +206,8 @@
 }, 
 "otu319816": {
 "^ot:originalLabel": "Eutypa petrakii 245.87", 
+"^ot:ottId": 5317611, 
+"^ot:ottTaxonName": "Cryptosphaeria moravica", 
 "^ot:treebaseOTUId": "Tl24989"
 }, 
 "otu319817": {
@@ -421,6 +404,8 @@
 }, 
 "otu319850": {
 "^ot:originalLabel": "Eutypa sp. E117NY", 
+"^ot:ottId": 855124, 
+"^ot:ottTaxonName": "Eutypa", 
 "^ot:treebaseOTUId": "Tl25026"
 }, 
 "otu319851": {
@@ -441,10 +426,17 @@
 "treeById": {
 "tree4639": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "MP, ITS", 
 "^ot:inGroupClade": "node822895", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node822891", 
-"^ot:tag": "MP", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [
+"MP"
+], 
 "edgeBySourceId": {
 "node822891": {
 "edge822892": {
@@ -975,9 +967,15 @@
 }, 
 "tree4640": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "MP, b-tubulin", 
 "^ot:inGroupClade": "node822969", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node822966", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node822966": {
 "edge822967": {
@@ -1445,8 +1443,14 @@
 }, 
 "tree4641": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "MP, ITS (full)", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node823032", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node823032": {
 "edge823033": {

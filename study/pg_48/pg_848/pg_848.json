@@ -19,48 +19,11 @@
 "@id": "peyotl-validator", 
 "@name": "validate_ot_nexson.py", 
 "@url": "https://github.com/OpenTreeOfLife/peyotl", 
-"@version": "0.0.3a", 
+"@version": "0.0.4a", 
 "invocation": {
-"checksPerformed": [
-"MISSING_MANDATORY_KEY", 
-"MISSING_OPTIONAL_KEY", 
-"UNRECOGNIZED_KEY", 
-"MISSING_LIST_EXPECTED", 
-"DUPLICATING_SINGLETON_KEY", 
-"REFERENCED_ID_NOT_FOUND", 
-"REPEATED_ID", 
-"REPEATED_OTU", 
-"MULTIPLE_ROOT_NODES", 
-"NO_ROOT_NODE", 
-"MULTIPLE_EDGES_FOR_NODES", 
-"CYCLE_DETECTED", 
-"DISCONNECTED_GRAPH_DETECTED", 
-"INCORRECT_ROOT_NODE_LABEL", 
-"TIP_WITHOUT_OTU", 
-"TIP_WITHOUT_OTT_ID", 
-"MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
-"NON_MONOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
-"INVALID_PROPERTY_VALUE", 
-"PROPERTY_VALUE_NOT_USEFUL", 
-"UNRECOGNIZED_PROPERTY_VALUE", 
-"MULTIPLE_TREES", 
-"UNRECOGNIZED_TAG", 
-"CONFLICTING_PROPERTY_VALUES", 
-"NO_TREES", 
-"DEPRECATED_PROPERTY", 
-"UNPARSEABLE_META", 
-"UNREACHABLE_NODE", 
-"INCORRECT_VALUE_TYPE", 
-"MISSING_CRUCIAL_CONTENT"
-], 
 "commandLine": [
 "--embed", 
-"--agent-only", 
-"-e", 
-"../mig-phyelesystem-scratch/848/validation.json", 
-"-o", 
-"../mig-phyelesystem-scratch/848/final.json", 
-"../mig-phyelesystem-scratch/848/v1.2.1-848.json"
+"--agent-only"
 ], 
 "otherProperty": [
 {
@@ -76,12 +39,19 @@
 }
 ]
 }, 
+"^ot:annotationEvents": {
+"annotation": []
+}, 
+"^ot:candidateTreeForSynthesis": [], 
 "^ot:curatorName": "Romina Gazis", 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S9972"
 }, 
 "^ot:focalClade": 159026, 
 "^ot:focalCladeOTTTaxonName": "Teratosphaeria", 
+"^ot:messages": {
+"message": []
+}, 
 "^ot:otusElementOrder": [
 "otus848"
 ], 
@@ -91,6 +61,7 @@
 }, 
 "^ot:studyPublicationReference": "Crous P., Groenewald J., Summerell B., Wingfield B., & Wingfield M.J. 2009. Co-occurring species of Teratosphaeria on Eucalyptus. Persoonia, 22: 38-48.", 
 "^ot:studyYear": 2009, 
+"^ot:tag": [], 
 "^ot:treesElementOrder": [
 "trees848"
 ], 
@@ -129,6 +100,8 @@
 }, 
 "otu200435": {
 "^ot:originalLabel": "Colletogloeopsis dimorpha DQ923529", 
+"^ot:ottId": 763736, 
+"^ot:ottTaxonName": "Teratosphaeria dimorpha", 
 "^ot:treebaseOTUId": "Tl244224"
 }, 
 "otu200436": {
@@ -267,6 +240,8 @@
 }, 
 "otu200459": {
 "^ot:originalLabel": "Teratosphaeria cryptica AF309623", 
+"^ot:ottId": 33433, 
+"^ot:ottTaxonName": "Mycosphaerella cryptica", 
 "^ot:treebaseOTUId": "Tl259980"
 }, 
 "otu200460": {
@@ -437,6 +412,8 @@
 }, 
 "otu200488": {
 "^ot:originalLabel": "Teratosphaeria cryptica DQ302951", 
+"^ot:ottId": 33433, 
+"^ot:ottTaxonName": "Mycosphaerella cryptica", 
 "^ot:treebaseOTUId": "Tl260009"
 }, 
 "otu200489": {
@@ -537,10 +514,14 @@
 }, 
 "otu200505": {
 "^ot:originalLabel": "Teratosphaeria readeriellophora CPC 12920", 
+"^ot:ottId": 5319616, 
+"^ot:ottTaxonName": "Mycosphaerella readeriellophora", 
 "^ot:treebaseOTUId": "Tl266518"
 }, 
 "otu200506": {
 "^ot:originalLabel": "Readeriella novaezelandiae DQ246239", 
+"^ot:ottId": 5320105, 
+"^ot:ottTaxonName": "Readeriella novae-zelandiae", 
 "^ot:treebaseOTUId": "Tl266519"
 }, 
 "otu200507": {
@@ -597,6 +578,8 @@
 }, 
 "otu200516": {
 "^ot:originalLabel": "Readeriella novaezelandiae CPC 10895", 
+"^ot:ottId": 5320105, 
+"^ot:ottTaxonName": "Readeriella novae-zelandiae", 
 "^ot:treebaseOTUId": "Tl266529"
 }, 
 "otu200517": {
@@ -625,6 +608,8 @@
 }, 
 "otu200521": {
 "^ot:originalLabel": "Colletogloeopsis dimorpha DQ923528", 
+"^ot:ottId": 763736, 
+"^ot:ottTaxonName": "Teratosphaeria dimorpha", 
 "^ot:treebaseOTUId": "Tl266534"
 }, 
 "otu200522": {
@@ -683,6 +668,8 @@
 }, 
 "otu200531": {
 "^ot:originalLabel": "Teratosphaeria readeriellophora DQ246238", 
+"^ot:ottId": 5319616, 
+"^ot:ottTaxonName": "Mycosphaerella readeriellophora", 
 "^ot:treebaseOTUId": "Tl266544"
 }, 
 "otu200532": {
@@ -783,8 +770,14 @@
 "treeById": {
 "tree1630": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "MP, ITS", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node470943", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node470943": {
 "edge470944": {
@@ -1182,9 +1175,15 @@
 }, 
 "tree1631": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "MP, LSU", 
 "^ot:inGroupClade": "node471001", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node470999", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node470999": {
 "edge471000": {
@@ -2324,9 +2323,15 @@
 }, 
 "tree5701": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "MP, ITS (rooted)", 
 "^ot:inGroupClade": "node980772", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node980771", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node980771": {
 "edge980772": {

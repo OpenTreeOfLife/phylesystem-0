@@ -19,48 +19,11 @@
 "@id": "peyotl-validator", 
 "@name": "validate_ot_nexson.py", 
 "@url": "https://github.com/OpenTreeOfLife/peyotl", 
-"@version": "0.0.3a", 
+"@version": "0.0.4a", 
 "invocation": {
-"checksPerformed": [
-"MISSING_MANDATORY_KEY", 
-"MISSING_OPTIONAL_KEY", 
-"UNRECOGNIZED_KEY", 
-"MISSING_LIST_EXPECTED", 
-"DUPLICATING_SINGLETON_KEY", 
-"REFERENCED_ID_NOT_FOUND", 
-"REPEATED_ID", 
-"REPEATED_OTU", 
-"MULTIPLE_ROOT_NODES", 
-"NO_ROOT_NODE", 
-"MULTIPLE_EDGES_FOR_NODES", 
-"CYCLE_DETECTED", 
-"DISCONNECTED_GRAPH_DETECTED", 
-"INCORRECT_ROOT_NODE_LABEL", 
-"TIP_WITHOUT_OTU", 
-"TIP_WITHOUT_OTT_ID", 
-"MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
-"NON_MONOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
-"INVALID_PROPERTY_VALUE", 
-"PROPERTY_VALUE_NOT_USEFUL", 
-"UNRECOGNIZED_PROPERTY_VALUE", 
-"MULTIPLE_TREES", 
-"UNRECOGNIZED_TAG", 
-"CONFLICTING_PROPERTY_VALUES", 
-"NO_TREES", 
-"DEPRECATED_PROPERTY", 
-"UNPARSEABLE_META", 
-"UNREACHABLE_NODE", 
-"INCORRECT_VALUE_TYPE", 
-"MISSING_CRUCIAL_CONTENT"
-], 
 "commandLine": [
 "--embed", 
-"--agent-only", 
-"-e", 
-"../mig-phyelesystem-scratch/19/validation.json", 
-"-o", 
-"../mig-phyelesystem-scratch/19/final.json", 
-"../mig-phyelesystem-scratch/19/v1.2.1-19.json"
+"--agent-only"
 ], 
 "otherProperty": [
 {
@@ -76,12 +39,19 @@
 }
 ]
 }, 
+"^ot:annotationEvents": {
+"annotation": []
+}, 
+"^ot:candidateTreeForSynthesis": [], 
 "^ot:curatorName": "Rick Ree", 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S10736"
 }, 
 "^ot:focalClade": 1081077, 
 "^ot:focalCladeOTTTaxonName": "Verbenaceae", 
+"^ot:messages": {
+"message": []
+}, 
 "^ot:otusElementOrder": [
 "otus19"
 ], 
@@ -91,6 +61,7 @@
 }, 
 "^ot:studyPublicationReference": "Marx, H. E., O\u2019Leary, N., Yuan, Y. W., Lu-Irving, P., Tank, D. C., M\u00falgura, M. E., & Olmstead, R. G. (2010). A molecular phylogeny and classification of Verbenaceae. American Journal of Botany, 97(10), 1647-1663.", 
 "^ot:studyYear": 2010, 
+"^ot:tag": [], 
 "^ot:treesElementOrder": [
 "trees19"
 ], 
@@ -163,7 +134,9 @@
 "^ot:ottTaxonName": "Pitraea cuneato-ovata"
 }, 
 "otu2793": {
-"^ot:originalLabel": "Rhaphithamnus venustus"
+"^ot:originalLabel": "Rhaphithamnus venustus", 
+"^ot:ottId": 718176, 
+"^ot:ottTaxonName": "Rhaphithamnus venustus"
 }, 
 "otu2794": {
 "^ot:originalLabel": "Lampaya castellani", 
@@ -181,7 +154,9 @@
 "^ot:ottTaxonName": "Diostea juncea"
 }, 
 "otu2797": {
-"^ot:originalLabel": "Dipyrena glaberrima"
+"^ot:originalLabel": "Dipyrena glaberrima", 
+"^ot:ottId": 95198, 
+"^ot:ottTaxonName": "Dipyrena glaberrima"
 }, 
 "otu2798": {
 "^ot:originalLabel": "Mulguraea aspera", 
@@ -324,7 +299,9 @@
 "^ot:ottTaxonName": "Paulownia tomentosa"
 }, 
 "otu394682": {
-"^ot:originalLabel": "Callicarpa dichotoma"
+"^ot:originalLabel": "Callicarpa dichotoma", 
+"^ot:ottId": 595177, 
+"^ot:ottTaxonName": "Callicarpa dichotoma"
 }, 
 "otu394683": {
 "^ot:originalLabel": "Lamium purpureum", 
@@ -502,7 +479,9 @@
 "^ot:ottTaxonName": "Pitraea cuneato-ovata"
 }, 
 "otu394718": {
-"^ot:originalLabel": "Rhaphithamnus spinosus"
+"^ot:originalLabel": "Rhaphithamnus spinosus", 
+"^ot:ottId": 778820, 
+"^ot:ottTaxonName": "Rhaphithamnus spinosus"
 }, 
 "otu394719": {
 "^ot:originalLabel": "Diostea juncea 9324", 
@@ -832,9 +811,14 @@
 "treeById": {
 "tree19": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
 "^ot:branchLengthMode": "ot:substitutionCount", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "ML", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node7208", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node7208": {
 "edge7209": {
@@ -1359,8 +1343,14 @@
 }, 
 "tree2179": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "Verb 2-gene 139tax MLbs", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node534284", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node534284": {
 "edge534285": {
@@ -3305,8 +3295,14 @@
 }, 
 "tree2180": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "Verb 2-gene 139tax ML", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node534561", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node534561": {
 "edge534562": {
@@ -5527,8 +5523,14 @@
 }, 
 "tree2181": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "Verb 7gene 139taxa ML", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node534838", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node534838": {
 "edge534839": {
@@ -7749,8 +7751,14 @@
 }, 
 "tree2182": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "Verb 7gene 139taxa bayes", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node535115", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node535115": {
 "edge535116": {
@@ -9811,8 +9819,14 @@
 }, 
 "tree2183": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "Verb 2-gene 139tax bayes", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node535372", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node535372": {
 "edge535373": {
@@ -11841,8 +11855,14 @@
 }, 
 "tree2184": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "Verb 7-gene 33tax bayes", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node535625", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node535625": {
 "edge535626": {
@@ -12359,8 +12379,14 @@
 }, 
 "tree2185": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "Verb 7gene 139taxa MLbs", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node535689", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node535689": {
 "edge535690": {
@@ -14298,8 +14324,14 @@
 }, 
 "tree2186": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "Verb 7-gene 33tax MLbs", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node535965", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node535965": {
 "edge535966": {
@@ -14760,8 +14792,14 @@
 }, 
 "tree2187": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "Verb 7-gene 33tax ML", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node536030", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node536030": {
 "edge536031": {
@@ -15286,8 +15324,14 @@
 }, 
 "tree2188": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "Verb 7gene 139taxa MPbs", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node536095", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node536095": {
 "edge536096": {
@@ -17467,9 +17511,15 @@
 }, 
 "tree6175": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "ML", 
 "^ot:inGroupClade": "node1054614", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node1054579", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node1054579": {
 "edge1054580": {

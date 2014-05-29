@@ -19,48 +19,11 @@
 "@id": "peyotl-validator", 
 "@name": "validate_ot_nexson.py", 
 "@url": "https://github.com/OpenTreeOfLife/peyotl", 
-"@version": "0.0.3a", 
+"@version": "0.0.4a", 
 "invocation": {
-"checksPerformed": [
-"MISSING_MANDATORY_KEY", 
-"MISSING_OPTIONAL_KEY", 
-"UNRECOGNIZED_KEY", 
-"MISSING_LIST_EXPECTED", 
-"DUPLICATING_SINGLETON_KEY", 
-"REFERENCED_ID_NOT_FOUND", 
-"REPEATED_ID", 
-"REPEATED_OTU", 
-"MULTIPLE_ROOT_NODES", 
-"NO_ROOT_NODE", 
-"MULTIPLE_EDGES_FOR_NODES", 
-"CYCLE_DETECTED", 
-"DISCONNECTED_GRAPH_DETECTED", 
-"INCORRECT_ROOT_NODE_LABEL", 
-"TIP_WITHOUT_OTU", 
-"TIP_WITHOUT_OTT_ID", 
-"MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
-"NON_MONOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
-"INVALID_PROPERTY_VALUE", 
-"PROPERTY_VALUE_NOT_USEFUL", 
-"UNRECOGNIZED_PROPERTY_VALUE", 
-"MULTIPLE_TREES", 
-"UNRECOGNIZED_TAG", 
-"CONFLICTING_PROPERTY_VALUES", 
-"NO_TREES", 
-"DEPRECATED_PROPERTY", 
-"UNPARSEABLE_META", 
-"UNREACHABLE_NODE", 
-"INCORRECT_VALUE_TYPE", 
-"MISSING_CRUCIAL_CONTENT"
-], 
 "commandLine": [
 "--embed", 
-"--agent-only", 
-"-e", 
-"../mig-phyelesystem-scratch/812/validation.json", 
-"-o", 
-"../mig-phyelesystem-scratch/812/final.json", 
-"../mig-phyelesystem-scratch/812/v1.2.1-812.json"
+"--agent-only"
 ], 
 "otherProperty": [
 {
@@ -76,12 +39,19 @@
 }
 ]
 }, 
+"^ot:annotationEvents": {
+"annotation": []
+}, 
+"^ot:candidateTreeForSynthesis": [], 
 "^ot:curatorName": "Romina Gazis", 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S1522"
 }, 
 "^ot:focalClade": 537736, 
 "^ot:focalCladeOTTTaxonName": "Otidea", 
+"^ot:messages": {
+"message": []
+}, 
 "^ot:otusElementOrder": [
 "otus812"
 ], 
@@ -93,9 +63,9 @@
 "^ot:studyYear": 2006, 
 "^ot:tag": [
 "BI", 
+"LSU", 
 "MP", 
-"NJ", 
-"LSU"
+"NJ"
 ], 
 "^ot:treesElementOrder": [
 "trees812"
@@ -123,10 +93,14 @@
 }, 
 "otu197268": {
 "^ot:originalLabel": "Otideaopsis yunnanensis", 
+"^ot:ottId": 5303480, 
+"^ot:ottTaxonName": "Otidea yunnanensis", 
 "^ot:treebaseOTUId": "Tl42540"
 }, 
 "otu197269": {
 "^ot:originalLabel": "Flavoscypha concinna 1", 
+"^ot:ottId": 5303477, 
+"^ot:ottTaxonName": "Flavoscypha cantharella", 
 "^ot:treebaseOTUId": "Tl42541"
 }, 
 "otu197270": {
@@ -209,6 +183,8 @@
 }, 
 "otu197283": {
 "^ot:originalLabel": "Flavoscypha concinna 4", 
+"^ot:ottId": 5303477, 
+"^ot:ottTaxonName": "Flavoscypha cantharella", 
 "^ot:treebaseOTUId": "Tl42555"
 }, 
 "otu197284": {
@@ -315,10 +291,14 @@
 }, 
 "otu197301": {
 "^ot:originalLabel": "Flavoscypha concinna 2", 
+"^ot:ottId": 5303477, 
+"^ot:ottTaxonName": "Flavoscypha cantharella", 
 "^ot:treebaseOTUId": "Tl42573"
 }, 
 "otu197302": {
 "^ot:originalLabel": "Flavoscypha concinna 3", 
+"^ot:ottId": 5303477, 
+"^ot:ottTaxonName": "Flavoscypha cantharella", 
 "^ot:treebaseOTUId": "Tl42574"
 }, 
 "otu197303": {
@@ -371,9 +351,15 @@
 "treeById": {
 "tree1544": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "NJ, LSU", 
 "^ot:inGroupClade": "node463274", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node463271", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node463271": {
 "edge463272": {
@@ -932,9 +918,15 @@
 }, 
 "tree1545": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "MP, LSU", 
 "^ot:inGroupClade": "node463353", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node463350", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node463350": {
 "edge463351": {
@@ -1542,9 +1534,14 @@
 }, 
 "tree1546": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "BI, LSU", 
 "^ot:inGroupClade": "node463439", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node463436", 
+"^ot:specifiedRoot": "", 
 "^ot:tag": [
 "BI", 
 "LSU", 

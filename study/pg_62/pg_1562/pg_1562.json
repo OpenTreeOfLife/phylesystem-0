@@ -19,48 +19,11 @@
 "@id": "peyotl-validator", 
 "@name": "validate_ot_nexson.py", 
 "@url": "https://github.com/OpenTreeOfLife/peyotl", 
-"@version": "0.0.3a", 
+"@version": "0.0.4a", 
 "invocation": {
-"checksPerformed": [
-"MISSING_MANDATORY_KEY", 
-"MISSING_OPTIONAL_KEY", 
-"UNRECOGNIZED_KEY", 
-"MISSING_LIST_EXPECTED", 
-"DUPLICATING_SINGLETON_KEY", 
-"REFERENCED_ID_NOT_FOUND", 
-"REPEATED_ID", 
-"REPEATED_OTU", 
-"MULTIPLE_ROOT_NODES", 
-"NO_ROOT_NODE", 
-"MULTIPLE_EDGES_FOR_NODES", 
-"CYCLE_DETECTED", 
-"DISCONNECTED_GRAPH_DETECTED", 
-"INCORRECT_ROOT_NODE_LABEL", 
-"TIP_WITHOUT_OTU", 
-"TIP_WITHOUT_OTT_ID", 
-"MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
-"NON_MONOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
-"INVALID_PROPERTY_VALUE", 
-"PROPERTY_VALUE_NOT_USEFUL", 
-"UNRECOGNIZED_PROPERTY_VALUE", 
-"MULTIPLE_TREES", 
-"UNRECOGNIZED_TAG", 
-"CONFLICTING_PROPERTY_VALUES", 
-"NO_TREES", 
-"DEPRECATED_PROPERTY", 
-"UNPARSEABLE_META", 
-"UNREACHABLE_NODE", 
-"INCORRECT_VALUE_TYPE", 
-"MISSING_CRUCIAL_CONTENT"
-], 
 "commandLine": [
 "--embed", 
-"--agent-only", 
-"-e", 
-"../mig-phyelesystem-scratch/1562/validation.json", 
-"-o", 
-"../mig-phyelesystem-scratch/1562/final.json", 
-"../mig-phyelesystem-scratch/1562/v1.2.1-1562.json"
+"--agent-only"
 ], 
 "otherProperty": [
 {
@@ -76,12 +39,19 @@
 }
 ]
 }, 
+"^ot:annotationEvents": {
+"annotation": []
+}, 
+"^ot:candidateTreeForSynthesis": [], 
 "^ot:curatorName": "Chris Owen", 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S12943"
 }, 
 "^ot:focalClade": 741137, 
 "^ot:focalCladeOTTTaxonName": "Mantophasmatodea", 
+"^ot:messages": {
+"message": []
+}, 
 "^ot:otusElementOrder": [
 "otus1562"
 ], 
@@ -91,6 +61,7 @@
 }, 
 "^ot:studyPublicationReference": "Damgaard J., Klass K., Picker M.D., & Buder G. 2008. Phylogeny of the Heelwalkers (Insecta: Mantophasmatodea) based on mtDNA sequences, with evidence for additional taxa in South Africa. Molecular Phylogenetics and Evolution, 47: 443-462.", 
 "^ot:studyYear": 2008, 
+"^ot:tag": [], 
 "^ot:treesElementOrder": [
 "trees1562"
 ], 
@@ -231,6 +202,8 @@
 }, 
 "otu258924": {
 "^ot:originalLabel": "Praedatophasma maraisi 1040m", 
+"^ot:ottId": 5612, 
+"^ot:ottTaxonName": "Praedatophasma maraisi", 
 "^ot:treebaseOTUId": "Tl834146"
 }, 
 "otu258925": {
@@ -295,6 +268,8 @@
 }, 
 "otu258935": {
 "^ot:originalLabel": "Tyrannophasma gladiator", 
+"^ot:ottId": 837958, 
+"^ot:ottTaxonName": "Tyrannophasma gladiator", 
 "^ot:treebaseOTUId": "Tl834157"
 }, 
 "otu258936": {
@@ -477,6 +452,8 @@
 }, 
 "otu258966": {
 "^ot:originalLabel": "Praedatophasma maraisi 1041f", 
+"^ot:ottId": 5612, 
+"^ot:ottTaxonName": "Praedatophasma maraisi", 
 "^ot:treebaseOTUId": "Tl834188"
 }, 
 "otu258967": {
@@ -735,10 +712,15 @@
 "treeById": {
 "tree3124": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
 "^ot:branchLengthMode": "ot:substitutionCount", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "Fig. 5", 
 "^ot:inGroupClade": "node637052", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node637047", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node637047": {
 "edge637048": {

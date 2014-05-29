@@ -19,48 +19,11 @@
 "@id": "peyotl-validator", 
 "@name": "validate_ot_nexson.py", 
 "@url": "https://github.com/OpenTreeOfLife/peyotl", 
-"@version": "0.0.3a", 
+"@version": "0.0.4a", 
 "invocation": {
-"checksPerformed": [
-"MISSING_MANDATORY_KEY", 
-"MISSING_OPTIONAL_KEY", 
-"UNRECOGNIZED_KEY", 
-"MISSING_LIST_EXPECTED", 
-"DUPLICATING_SINGLETON_KEY", 
-"REFERENCED_ID_NOT_FOUND", 
-"REPEATED_ID", 
-"REPEATED_OTU", 
-"MULTIPLE_ROOT_NODES", 
-"NO_ROOT_NODE", 
-"MULTIPLE_EDGES_FOR_NODES", 
-"CYCLE_DETECTED", 
-"DISCONNECTED_GRAPH_DETECTED", 
-"INCORRECT_ROOT_NODE_LABEL", 
-"TIP_WITHOUT_OTU", 
-"TIP_WITHOUT_OTT_ID", 
-"MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
-"NON_MONOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
-"INVALID_PROPERTY_VALUE", 
-"PROPERTY_VALUE_NOT_USEFUL", 
-"UNRECOGNIZED_PROPERTY_VALUE", 
-"MULTIPLE_TREES", 
-"UNRECOGNIZED_TAG", 
-"CONFLICTING_PROPERTY_VALUES", 
-"NO_TREES", 
-"DEPRECATED_PROPERTY", 
-"UNPARSEABLE_META", 
-"UNREACHABLE_NODE", 
-"INCORRECT_VALUE_TYPE", 
-"MISSING_CRUCIAL_CONTENT"
-], 
 "commandLine": [
 "--embed", 
-"--agent-only", 
-"-e", 
-"../mig-phyelesystem-scratch/2098/validation.json", 
-"-o", 
-"../mig-phyelesystem-scratch/2098/final.json", 
-"../mig-phyelesystem-scratch/2098/v1.2.1-2098.json"
+"--agent-only"
 ], 
 "otherProperty": [
 {
@@ -76,12 +39,19 @@
 }
 ]
 }, 
+"^ot:annotationEvents": {
+"annotation": []
+}, 
+"^ot:candidateTreeForSynthesis": [], 
 "^ot:curatorName": "Chris Owen", 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S1442"
 }, 
 "^ot:focalClade": 647079, 
 "^ot:focalCladeOTTTaxonName": "Stenocercus", 
+"^ot:messages": {
+"message": []
+}, 
 "^ot:otusElementOrder": [
 "otus2098"
 ], 
@@ -89,8 +59,9 @@
 "^ot:studyPublication": {
 "@href": "http://dx.doi.org/10.1016/j.ympev.2005.09.007"
 }, 
-"^ot:studyPublicationReference": "Torres-carvajal O., Ii J., & Cadle J. 2005. Phylogenetic relationships of South American lizards of the genus Stenocercus (Squamata: Iguania): a new approach using a general mixture model for gene sequence data. Molecular Phylogenetics and Evolution, null.", 
+"^ot:studyPublicationReference": "Torres-Carvajal, O., Ii J., & Cadle J. 2005. Phylogenetic relationships of South American lizards of the genus Stenocercus (Squamata: Iguania): a new approach using a general mixture model for gene sequence data. Molecular Phylogenetics and Evolution 39 (1): 171-185.", 
 "^ot:studyYear": 2005, 
+"^ot:tag": [], 
 "^ot:treesElementOrder": [
 "trees2098"
 ], 
@@ -370,16 +341,20 @@
 "^ot:treeElementOrder": [
 "tree4343", 
 "tree4344", 
-"tree4345", 
 "tree6487"
 ], 
 "treeById": {
 "tree4343": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
 "^ot:branchLengthMode": "ot:changesCount", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "Fig. 1.1 MP", 
 "^ot:inGroupClade": "node794411", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node794390", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node794390": {
 "edge794391": {
@@ -994,10 +969,15 @@
 }, 
 "tree4344": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
 "^ot:branchLengthMode": "ot:substitutionCount", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "Fig. 1.2 ML", 
 "^ot:inGroupClade": "node794495", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node794477", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node794477": {
 "edge794478": {
@@ -1610,476 +1590,17 @@
 }
 }
 }, 
-"tree4345": {
-"@xsi:type": "nex:FloatTree", 
-"^ot:branchLengthMode": "ot:substitutionCount", 
-"^ot:curatedType": "Fig. 3a ML", 
-"^ot:inGroupClade": "node794566", 
-"^ot:rootNodeId": "node794564", 
-"^ot:tag": "delete me", 
-"edgeBySourceId": {
-"node794564": {
-"edge794565": {
-"@source": "node794564", 
-"@target": "node794565"
-}, 
-"edge794566": {
-"@source": "node794564", 
-"@target": "node794566"
-}
-}, 
-"node794566": {
-"edge794567": {
-"@source": "node794566", 
-"@target": "node794567"
-}, 
-"edge794602": {
-"@source": "node794566", 
-"@target": "node794602"
-}
-}, 
-"node794567": {
-"edge794568": {
-"@source": "node794567", 
-"@target": "node794568"
-}, 
-"edge794587": {
-"@source": "node794567", 
-"@target": "node794587"
-}
-}, 
-"node794568": {
-"edge794569": {
-"@source": "node794568", 
-"@target": "node794569"
-}, 
-"edge794582": {
-"@source": "node794568", 
-"@target": "node794582"
-}
-}, 
-"node794569": {
-"edge794570": {
-"@source": "node794569", 
-"@target": "node794570"
-}, 
-"edge794579": {
-"@source": "node794569", 
-"@target": "node794579"
-}
-}, 
-"node794570": {
-"edge794571": {
-"@source": "node794570", 
-"@target": "node794571"
-}, 
-"edge794578": {
-"@source": "node794570", 
-"@target": "node794578"
-}
-}, 
-"node794571": {
-"edge794572": {
-"@source": "node794571", 
-"@target": "node794572"
-}, 
-"edge794577": {
-"@source": "node794571", 
-"@target": "node794577"
-}
-}, 
-"node794572": {
-"edge794573": {
-"@source": "node794572", 
-"@target": "node794573"
-}, 
-"edge794576": {
-"@source": "node794572", 
-"@target": "node794576"
-}
-}, 
-"node794573": {
-"edge794574": {
-"@source": "node794573", 
-"@target": "node794574"
-}, 
-"edge794575": {
-"@source": "node794573", 
-"@target": "node794575"
-}
-}, 
-"node794579": {
-"edge794580": {
-"@source": "node794579", 
-"@target": "node794580"
-}, 
-"edge794581": {
-"@source": "node794579", 
-"@target": "node794581"
-}
-}, 
-"node794582": {
-"edge794583": {
-"@source": "node794582", 
-"@target": "node794583"
-}, 
-"edge794584": {
-"@source": "node794582", 
-"@target": "node794584"
-}
-}, 
-"node794584": {
-"edge794585": {
-"@source": "node794584", 
-"@target": "node794585"
-}, 
-"edge794586": {
-"@source": "node794584", 
-"@target": "node794586"
-}
-}, 
-"node794587": {
-"edge794588": {
-"@source": "node794587", 
-"@target": "node794588"
-}, 
-"edge794599": {
-"@source": "node794587", 
-"@target": "node794599"
-}
-}, 
-"node794588": {
-"edge794589": {
-"@source": "node794588", 
-"@target": "node794589"
-}, 
-"edge794596": {
-"@source": "node794588", 
-"@target": "node794596"
-}
-}, 
-"node794589": {
-"edge794590": {
-"@source": "node794589", 
-"@target": "node794590"
-}, 
-"edge794593": {
-"@source": "node794589", 
-"@target": "node794593"
-}
-}, 
-"node794590": {
-"edge794591": {
-"@source": "node794590", 
-"@target": "node794591"
-}, 
-"edge794592": {
-"@source": "node794590", 
-"@target": "node794592"
-}
-}, 
-"node794593": {
-"edge794594": {
-"@source": "node794593", 
-"@target": "node794594"
-}, 
-"edge794595": {
-"@source": "node794593", 
-"@target": "node794595"
-}
-}, 
-"node794596": {
-"edge794597": {
-"@source": "node794596", 
-"@target": "node794597"
-}, 
-"edge794598": {
-"@source": "node794596", 
-"@target": "node794598"
-}
-}, 
-"node794599": {
-"edge794600": {
-"@source": "node794599", 
-"@target": "node794600"
-}, 
-"edge794601": {
-"@source": "node794599", 
-"@target": "node794601"
-}
-}, 
-"node794602": {
-"edge794603": {
-"@source": "node794602", 
-"@target": "node794603"
-}, 
-"edge794620": {
-"@source": "node794602", 
-"@target": "node794620"
-}
-}, 
-"node794603": {
-"edge794604": {
-"@source": "node794603", 
-"@target": "node794604"
-}, 
-"edge794607": {
-"@source": "node794603", 
-"@target": "node794607"
-}
-}, 
-"node794604": {
-"edge794605": {
-"@source": "node794604", 
-"@target": "node794605"
-}, 
-"edge794606": {
-"@source": "node794604", 
-"@target": "node794606"
-}
-}, 
-"node794607": {
-"edge794608": {
-"@source": "node794607", 
-"@target": "node794608"
-}, 
-"edge794615": {
-"@source": "node794607", 
-"@target": "node794615"
-}
-}, 
-"node794608": {
-"edge794609": {
-"@source": "node794608", 
-"@target": "node794609"
-}, 
-"edge794612": {
-"@source": "node794608", 
-"@target": "node794612"
-}
-}, 
-"node794609": {
-"edge794610": {
-"@source": "node794609", 
-"@target": "node794610"
-}, 
-"edge794611": {
-"@source": "node794609", 
-"@target": "node794611"
-}
-}, 
-"node794612": {
-"edge794613": {
-"@source": "node794612", 
-"@target": "node794613"
-}, 
-"edge794614": {
-"@source": "node794612", 
-"@target": "node794614"
-}
-}, 
-"node794615": {
-"edge794616": {
-"@source": "node794615", 
-"@target": "node794616"
-}, 
-"edge794619": {
-"@source": "node794615", 
-"@target": "node794619"
-}
-}, 
-"node794616": {
-"edge794617": {
-"@source": "node794616", 
-"@target": "node794617"
-}, 
-"edge794618": {
-"@source": "node794616", 
-"@target": "node794618"
-}
-}, 
-"node794620": {
-"edge794621": {
-"@source": "node794620", 
-"@target": "node794621"
-}, 
-"edge794628": {
-"@source": "node794620", 
-"@target": "node794628"
-}
-}, 
-"node794621": {
-"edge794622": {
-"@source": "node794621", 
-"@target": "node794622"
-}, 
-"edge794627": {
-"@source": "node794621", 
-"@target": "node794627"
-}
-}, 
-"node794622": {
-"edge794623": {
-"@source": "node794622", 
-"@target": "node794623"
-}, 
-"edge794626": {
-"@source": "node794622", 
-"@target": "node794626"
-}
-}, 
-"node794623": {
-"edge794624": {
-"@source": "node794623", 
-"@target": "node794624"
-}, 
-"edge794625": {
-"@source": "node794623", 
-"@target": "node794625"
-}
-}
-}, 
-"nodeById": {
-"node794564": {
-"@root": true
-}, 
-"node794565": {
-"@otu": "otu312080"
-}, 
-"node794566": {}, 
-"node794567": {}, 
-"node794568": {}, 
-"node794569": {}, 
-"node794570": {}, 
-"node794571": {}, 
-"node794572": {}, 
-"node794573": {}, 
-"node794574": {
-"@otu": "otu312095"
-}, 
-"node794575": {
-"@otu": "otu312111"
-}, 
-"node794576": {
-"@otu": "otu312098"
-}, 
-"node794577": {
-"@otu": "otu312108"
-}, 
-"node794578": {
-"@otu": "otu312106"
-}, 
-"node794579": {}, 
-"node794580": {
-"@otu": "otu312115"
-}, 
-"node794581": {
-"@otu": "otu312101"
-}, 
-"node794582": {}, 
-"node794583": {
-"@otu": "otu312099"
-}, 
-"node794584": {}, 
-"node794585": {
-"@otu": "otu312103"
-}, 
-"node794586": {
-"@otu": "otu312104"
-}, 
-"node794587": {}, 
-"node794588": {}, 
-"node794589": {}, 
-"node794590": {}, 
-"node794591": {
-"@otu": "otu312105"
-}, 
-"node794592": {
-"@otu": "otu312113"
-}, 
-"node794593": {}, 
-"node794594": {
-"@otu": "otu312096"
-}, 
-"node794595": {
-"@otu": "otu312082"
-}, 
-"node794596": {}, 
-"node794597": {
-"@otu": "otu312102"
-}, 
-"node794598": {
-"@otu": "otu312081"
-}, 
-"node794599": {}, 
-"node794600": {
-"@otu": "otu312119"
-}, 
-"node794601": {
-"@otu": "otu312085"
-}, 
-"node794602": {}, 
-"node794603": {}, 
-"node794604": {}, 
-"node794605": {
-"@otu": "otu312109"
-}, 
-"node794606": {
-"@otu": "otu312112"
-}, 
-"node794607": {}, 
-"node794608": {}, 
-"node794609": {}, 
-"node794610": {
-"@otu": "otu312078"
-}, 
-"node794611": {
-"@otu": "otu312110"
-}, 
-"node794612": {}, 
-"node794613": {
-"@otu": "otu312116"
-}, 
-"node794614": {
-"@otu": "otu312120"
-}, 
-"node794615": {}, 
-"node794616": {}, 
-"node794617": {
-"@otu": "otu312083"
-}, 
-"node794618": {
-"@otu": "otu312118"
-}, 
-"node794619": {
-"@otu": "otu312121"
-}, 
-"node794620": {}, 
-"node794621": {}, 
-"node794622": {}, 
-"node794623": {}, 
-"node794624": {
-"@otu": "otu312100"
-}, 
-"node794625": {
-"@otu": "otu312107"
-}, 
-"node794626": {
-"@otu": "otu312097"
-}, 
-"node794627": {
-"@otu": "otu312114"
-}, 
-"node794628": {
-"@otu": "otu312117"
-}
-}
-}, 
 "tree6487": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "Fig 3A ML", 
 "^ot:inGroupClade": "node1121057", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node1121056", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node1121056": {
 "edge1121057": {

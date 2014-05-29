@@ -19,48 +19,11 @@
 "@id": "peyotl-validator", 
 "@name": "validate_ot_nexson.py", 
 "@url": "https://github.com/OpenTreeOfLife/peyotl", 
-"@version": "0.0.3a", 
+"@version": "0.0.4a", 
 "invocation": {
-"checksPerformed": [
-"MISSING_MANDATORY_KEY", 
-"MISSING_OPTIONAL_KEY", 
-"UNRECOGNIZED_KEY", 
-"MISSING_LIST_EXPECTED", 
-"DUPLICATING_SINGLETON_KEY", 
-"REFERENCED_ID_NOT_FOUND", 
-"REPEATED_ID", 
-"REPEATED_OTU", 
-"MULTIPLE_ROOT_NODES", 
-"NO_ROOT_NODE", 
-"MULTIPLE_EDGES_FOR_NODES", 
-"CYCLE_DETECTED", 
-"DISCONNECTED_GRAPH_DETECTED", 
-"INCORRECT_ROOT_NODE_LABEL", 
-"TIP_WITHOUT_OTU", 
-"TIP_WITHOUT_OTT_ID", 
-"MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
-"NON_MONOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
-"INVALID_PROPERTY_VALUE", 
-"PROPERTY_VALUE_NOT_USEFUL", 
-"UNRECOGNIZED_PROPERTY_VALUE", 
-"MULTIPLE_TREES", 
-"UNRECOGNIZED_TAG", 
-"CONFLICTING_PROPERTY_VALUES", 
-"NO_TREES", 
-"DEPRECATED_PROPERTY", 
-"UNPARSEABLE_META", 
-"UNREACHABLE_NODE", 
-"INCORRECT_VALUE_TYPE", 
-"MISSING_CRUCIAL_CONTENT"
-], 
 "commandLine": [
 "--embed", 
-"--agent-only", 
-"-e", 
-"../mig-phyelesystem-scratch/444/validation.json", 
-"-o", 
-"../mig-phyelesystem-scratch/444/final.json", 
-"../mig-phyelesystem-scratch/444/v1.2.1-444.json"
+"--agent-only"
 ], 
 "otherProperty": [
 {
@@ -76,12 +39,19 @@
 }
 ]
 }, 
+"^ot:annotationEvents": {
+"annotation": []
+}, 
+"^ot:candidateTreeForSynthesis": [], 
 "^ot:curatorName": "Romina Gazis", 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S1542"
 }, 
 "^ot:focalClade": 109689, 
 "^ot:focalCladeOTTTaxonName": "Cryphonectriaceae", 
+"^ot:messages": {
+"message": []
+}, 
 "^ot:otusElementOrder": [
 "otus444"
 ], 
@@ -89,8 +59,11 @@
 "^ot:studyPublication": {
 "@href": "http://dx.doi.org/10.3852/mycologia.98.2.239"
 }, 
-"^ot:studyPublicationReference": "Gryzenhout M., Myburg H., Wingfield B., & Wingfield M.J. 2006. Cryphonectriaceae (Diaporthales), a new family including Cryphonectria, Endothia, Chrysoporthe and allied genera. Mycologia, 98: 239-249.", 
+"^ot:studyPublicationReference": "Gryzenhout, M., Myburg H., Wingfield B., & Wingfield M.J. 2006. Cryphonectriaceae (Diaporthales), a new family including Cryphonectria, Endothia, Chrysoporthe and allied genera. Mycologia 98: 239-249.", 
 "^ot:studyYear": 2006, 
+"^ot:tag": [
+"species not in OTT"
+], 
 "^ot:treesElementOrder": [
 "trees444"
 ], 
@@ -149,6 +122,8 @@
 }, 
 "otu160216": {
 "^ot:originalLabel": "Melanconis marginalis AF408373", 
+"^ot:ottId": 1082189, 
+"^ot:ottTaxonName": "Melanconis alni", 
 "^ot:treebaseOTUId": "Tl172186"
 }, 
 "otu160217": {
@@ -163,6 +138,8 @@
 }, 
 "otu160219": {
 "^ot:originalLabel": "Togninia fraxinopennsylvanica AY761083", 
+"^ot:ottId": 519058, 
+"^ot:ottTaxonName": "Phaeoacremonium mortoniae", 
 "^ot:treebaseOTUId": "Tl172191"
 }, 
 "otu160220": {
@@ -179,6 +156,8 @@
 }, 
 "otu160222": {
 "^ot:originalLabel": "Endothia gyrosa CMW 2091 USA", 
+"^ot:ottId": 5316851, 
+"^ot:ottTaxonName": "Endothia radicalis", 
 "^ot:treebaseOTUId": "Tl172197"
 }, 
 "otu160223": {
@@ -205,6 +184,8 @@
 }, 
 "otu160227": {
 "^ot:originalLabel": "Cryptodiaporthe corni AF408343", 
+"^ot:ottId": 5316813, 
+"^ot:ottTaxonName": "Apioporthe corni", 
 "^ot:treebaseOTUId": "Tl172211"
 }, 
 "otu160228": {
@@ -233,6 +214,8 @@
 }, 
 "otu160232": {
 "^ot:originalLabel": "Endothia gyrosa CMW 10442 USA", 
+"^ot:ottId": 5316851, 
+"^ot:ottTaxonName": "Endothia radicalis", 
 "^ot:treebaseOTUId": "Tl172223"
 }, 
 "otu160233": {
@@ -257,6 +240,8 @@
 }, 
 "otu160237": {
 "^ot:originalLabel": "Diaporthe decedens AF408348", 
+"^ot:ottId": 5316669, 
+"^ot:ottTaxonName": "Allantoporthe decedens", 
 "^ot:treebaseOTUId": "Tl172237"
 }, 
 "otu160238": {
@@ -361,6 +346,8 @@
 }, 
 "otu160255": {
 "^ot:originalLabel": "Cryptodiaporthe corni AR 2814 USA", 
+"^ot:ottId": 5316813, 
+"^ot:ottTaxonName": "Apioporthe corni", 
 "^ot:treebaseOTUId": "Tl31064"
 }, 
 "otu160256": {
@@ -425,6 +412,8 @@
 }, 
 "otu160266": {
 "^ot:originalLabel": "Ophiovalsa suffusa AF408376", 
+"^ot:ottId": 982558, 
+"^ot:ottTaxonName": "Cryptosporella suffusa", 
 "^ot:treebaseOTUId": "Tl31079"
 }, 
 "otu160267": {
@@ -435,6 +424,8 @@
 }, 
 "otu160268": {
 "^ot:originalLabel": "Endothia gyrosa CMW 10442", 
+"^ot:ottId": 5316851, 
+"^ot:ottTaxonName": "Endothia radicalis", 
 "^ot:treebaseOTUId": "Tl31082"
 }, 
 "otu160269": {
@@ -529,6 +520,8 @@
 }, 
 "otu160284": {
 "^ot:originalLabel": "Endothia gyrosa CMW 2091", 
+"^ot:ottId": 5316851, 
+"^ot:ottTaxonName": "Endothia radicalis", 
 "^ot:treebaseOTUId": "Tl31103"
 }, 
 "otu160285": {
@@ -607,6 +600,8 @@
 }, 
 "otu160298": {
 "^ot:originalLabel": "Leucostoma cincta AF408366", 
+"^ot:ottId": 313690, 
+"^ot:ottTaxonName": "Valsaria insitiva", 
 "^ot:treebaseOTUId": "Tl31120"
 }, 
 "otu160299": {
@@ -641,6 +636,8 @@
 }, 
 "otu160304": {
 "^ot:originalLabel": "Greeneria uvicola AF362670", 
+"^ot:ottId": 396956, 
+"^ot:ottTaxonName": "Phoma uvicola", 
 "^ot:treebaseOTUId": "Tl31130"
 }, 
 "otu160305": {
@@ -686,9 +683,15 @@
 "treeById": {
 "tree563": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "NJ, LSU", 
 "^ot:inGroupClade": "node313957", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node313954", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node313954": {
 "edge313955": {
@@ -1681,9 +1684,15 @@
 }, 
 "tree564": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "NJ, ITS + b-tub", 
 "^ot:inGroupClade": "node314099", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node314095", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node314095": {
 "edge314096": {

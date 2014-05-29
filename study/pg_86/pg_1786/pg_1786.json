@@ -19,48 +19,11 @@
 "@id": "peyotl-validator", 
 "@name": "validate_ot_nexson.py", 
 "@url": "https://github.com/OpenTreeOfLife/peyotl", 
-"@version": "0.0.3a", 
+"@version": "0.0.4a", 
 "invocation": {
-"checksPerformed": [
-"MISSING_MANDATORY_KEY", 
-"MISSING_OPTIONAL_KEY", 
-"UNRECOGNIZED_KEY", 
-"MISSING_LIST_EXPECTED", 
-"DUPLICATING_SINGLETON_KEY", 
-"REFERENCED_ID_NOT_FOUND", 
-"REPEATED_ID", 
-"REPEATED_OTU", 
-"MULTIPLE_ROOT_NODES", 
-"NO_ROOT_NODE", 
-"MULTIPLE_EDGES_FOR_NODES", 
-"CYCLE_DETECTED", 
-"DISCONNECTED_GRAPH_DETECTED", 
-"INCORRECT_ROOT_NODE_LABEL", 
-"TIP_WITHOUT_OTU", 
-"TIP_WITHOUT_OTT_ID", 
-"MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
-"NON_MONOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
-"INVALID_PROPERTY_VALUE", 
-"PROPERTY_VALUE_NOT_USEFUL", 
-"UNRECOGNIZED_PROPERTY_VALUE", 
-"MULTIPLE_TREES", 
-"UNRECOGNIZED_TAG", 
-"CONFLICTING_PROPERTY_VALUES", 
-"NO_TREES", 
-"DEPRECATED_PROPERTY", 
-"UNPARSEABLE_META", 
-"UNREACHABLE_NODE", 
-"INCORRECT_VALUE_TYPE", 
-"MISSING_CRUCIAL_CONTENT"
-], 
 "commandLine": [
 "--embed", 
-"--agent-only", 
-"-e", 
-"../mig-phyelesystem-scratch/1786/validation.json", 
-"-o", 
-"../mig-phyelesystem-scratch/1786/final.json", 
-"../mig-phyelesystem-scratch/1786/v1.2.1-1786.json"
+"--agent-only"
 ], 
 "otherProperty": [
 {
@@ -76,12 +39,19 @@
 }
 ]
 }, 
+"^ot:annotationEvents": {
+"annotation": []
+}, 
+"^ot:candidateTreeForSynthesis": [], 
 "^ot:curatorName": "Chris Owen", 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S2067"
 }, 
 "^ot:focalClade": 641030, 
 "^ot:focalCladeOTTTaxonName": "Hydrozoa", 
+"^ot:messages": {
+"message": []
+}, 
 "^ot:otusElementOrder": [
 "otus1786"
 ], 
@@ -89,8 +59,9 @@
 "^ot:studyPublication": {
 "@href": "http://dx.doi.org/10.1017/S0025315408002257"
 }, 
-"^ot:studyPublicationReference": "Cartwright P., Evans N., Dunn C., Marques A., Miglietta M., & Collins A. 2008. Phylogenetics of Hydroidolina (Cnidaria, Hydrozoa). Journal of the Marine Biological Association of the United Kingdom 88 (8): 1663-1672.", 
+"^ot:studyPublicationReference": "Cartwright, P., Evans N., Dunn C., Marques A., Miglietta M., & Collins A. 2008. Phylogenetics of Hydroidolina (Cnidaria, Hydrozoa). Journal of the Marine Biological Association of the United Kingdom 88 (8): 1663-1672.", 
 "^ot:studyYear": 2008, 
+"^ot:tag": [], 
 "^ot:treesElementOrder": [
 "trees1786"
 ], 
@@ -437,6 +408,8 @@
 }, 
 "otu278268": {
 "^ot:originalLabel": "Stephanomia amphytridis", 
+"^ot:ottId": 320482, 
+"^ot:ottTaxonName": "Halistemma amphytridis", 
 "^ot:treebaseOTUId": "Tl81719"
 }, 
 "otu278269": {
@@ -471,6 +444,8 @@
 }, 
 "otu278274": {
 "^ot:originalLabel": "Clausophyes ovata CWD106", 
+"^ot:ottId": 219163, 
+"^ot:ottTaxonName": "Kephyes ovata", 
 "^ot:treebaseOTUId": "Tl81726"
 }, 
 "otu278275": {
@@ -679,6 +654,8 @@
 }, 
 "otu278309": {
 "^ot:originalLabel": "Dipurena ophiogaster", 
+"^ot:ottId": 141204, 
+"^ot:ottTaxonName": "Stauridiosarsia ophiogaster", 
 "^ot:treebaseOTUId": "Tl81761"
 }, 
 "otu278310": {
@@ -766,10 +743,15 @@
 "treeById": {
 "tree3604": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
 "^ot:branchLengthMode": "ot:changesCount", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "MP tree", 
 "^ot:inGroupClade": "node692370", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node692347", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node692347": {
 "edge692348": {
@@ -2294,9 +2276,15 @@
 }, 
 "tree6257": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "ML 50% maj-rule", 
 "^ot:inGroupClade": "node1084004", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node1084003", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node1084003": {
 "edge1084004": {

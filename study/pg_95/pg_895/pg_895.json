@@ -19,48 +19,11 @@
 "@id": "peyotl-validator", 
 "@name": "validate_ot_nexson.py", 
 "@url": "https://github.com/OpenTreeOfLife/peyotl", 
-"@version": "0.0.3a", 
+"@version": "0.0.4a", 
 "invocation": {
-"checksPerformed": [
-"MISSING_MANDATORY_KEY", 
-"MISSING_OPTIONAL_KEY", 
-"UNRECOGNIZED_KEY", 
-"MISSING_LIST_EXPECTED", 
-"DUPLICATING_SINGLETON_KEY", 
-"REFERENCED_ID_NOT_FOUND", 
-"REPEATED_ID", 
-"REPEATED_OTU", 
-"MULTIPLE_ROOT_NODES", 
-"NO_ROOT_NODE", 
-"MULTIPLE_EDGES_FOR_NODES", 
-"CYCLE_DETECTED", 
-"DISCONNECTED_GRAPH_DETECTED", 
-"INCORRECT_ROOT_NODE_LABEL", 
-"TIP_WITHOUT_OTU", 
-"TIP_WITHOUT_OTT_ID", 
-"MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
-"NON_MONOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
-"INVALID_PROPERTY_VALUE", 
-"PROPERTY_VALUE_NOT_USEFUL", 
-"UNRECOGNIZED_PROPERTY_VALUE", 
-"MULTIPLE_TREES", 
-"UNRECOGNIZED_TAG", 
-"CONFLICTING_PROPERTY_VALUES", 
-"NO_TREES", 
-"DEPRECATED_PROPERTY", 
-"UNPARSEABLE_META", 
-"UNREACHABLE_NODE", 
-"INCORRECT_VALUE_TYPE", 
-"MISSING_CRUCIAL_CONTENT"
-], 
 "commandLine": [
 "--embed", 
-"--agent-only", 
-"-e", 
-"../mig-phyelesystem-scratch/895/validation.json", 
-"-o", 
-"../mig-phyelesystem-scratch/895/final.json", 
-"../mig-phyelesystem-scratch/895/v1.2.1-895.json"
+"--agent-only"
 ], 
 "otherProperty": [
 {
@@ -76,12 +39,17 @@
 }
 ]
 }, 
+"^ot:annotationEvents": {
+"annotation": []
+}, 
+"^ot:candidateTreeForSynthesis": [], 
 "^ot:curatorName": "Romina Gazis", 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S11546"
 }, 
-"^ot:focalClade": 1204942, 
-"^ot:focalCladeOTTTaxonName": "Clathraceae", 
+"^ot:messages": {
+"message": []
+}, 
 "^ot:otusElementOrder": [
 "otus895"
 ], 
@@ -91,6 +59,7 @@
 }, 
 "^ot:studyPublicationReference": "Cabral T.S., Marinho P.S., & Baseia I.G. 2012. Abrachium, a new genus in the Clathraceae, and Itajahya reassessed. Mycotaxon, 119: 419-429.", 
 "^ot:studyYear": 2012, 
+"^ot:tag": [], 
 "^ot:treesElementOrder": [
 "trees895"
 ], 
@@ -105,14 +74,12 @@
 }, 
 "otu203799": {
 "^ot:originalLabel": "Aseroe rubra", 
-"^ot:ottId": 1039043, 
+"^ot:ottId": 4100318, 
 "^ot:ottTaxonName": "Aseroe rubra", 
 "^ot:treebaseOTUId": "Tl536239"
 }, 
 "otu203800": {
 "^ot:originalLabel": "Protubera canescens", 
-"^ot:ottId": 82150, 
-"^ot:ottTaxonName": "Protubera canescens", 
 "^ot:treebaseOTUId": "Tl536240"
 }, 
 "otu203801": {
@@ -124,19 +91,19 @@
 "otu203802": {
 "^ot:originalLabel": "Protubera borealis", 
 "^ot:ottId": 82153, 
-"^ot:ottTaxonName": "Protubera borealis", 
+"^ot:ottTaxonName": "Protuberella borealis", 
 "^ot:treebaseOTUId": "Tl536242"
 }, 
 "otu203803": {
 "^ot:originalLabel": "Dictyophora indusiata", 
-"^ot:ottId": 986314, 
-"^ot:ottTaxonName": "Dictyophora indusiata", 
+"^ot:ottId": 3837032, 
+"^ot:ottTaxonName": "Phallus indusiatus", 
 "^ot:treebaseOTUId": "Tl536243"
 }, 
 "otu203804": {
 "^ot:originalLabel": "Aseroe floriformis", 
 "^ot:ottId": 4100325, 
-"^ot:ottTaxonName": "Asero\u00eb floriformis", 
+"^ot:ottTaxonName": "Aseroe floriformis", 
 "^ot:treebaseOTUId": "Tl536244"
 }, 
 "otu203805": {
@@ -147,8 +114,8 @@
 }, 
 "otu203806": {
 "^ot:originalLabel": "Phallus costatus", 
-"^ot:ottId": 603835, 
-"^ot:ottTaxonName": "Phallus costatus", 
+"^ot:ottId": 476942, 
+"^ot:ottTaxonName": "Morchella costata", 
 "^ot:treebaseOTUId": "Tl536246"
 }, 
 "otu203807": {
@@ -189,8 +156,8 @@
 }, 
 "otu203813": {
 "^ot:originalLabel": "Anthurus archeri", 
-"^ot:ottId": 717386, 
-"^ot:ottTaxonName": "Anthurus archeri", 
+"^ot:ottId": 5307347, 
+"^ot:ottTaxonName": "Clathrus archeri", 
 "^ot:treebaseOTUId": "Tl536253"
 }, 
 "otu203814": {
@@ -301,9 +268,15 @@
 "treeById": {
 "tree1722": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "BI, LSU + ATP6 + RPB2", 
 "^ot:inGroupClade": "node479065", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node479062", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node479062": {
 "edge479063": {

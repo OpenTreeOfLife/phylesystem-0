@@ -19,48 +19,11 @@
 "@id": "peyotl-validator", 
 "@name": "validate_ot_nexson.py", 
 "@url": "https://github.com/OpenTreeOfLife/peyotl", 
-"@version": "0.0.3a", 
+"@version": "0.0.4a", 
 "invocation": {
-"checksPerformed": [
-"MISSING_MANDATORY_KEY", 
-"MISSING_OPTIONAL_KEY", 
-"UNRECOGNIZED_KEY", 
-"MISSING_LIST_EXPECTED", 
-"DUPLICATING_SINGLETON_KEY", 
-"REFERENCED_ID_NOT_FOUND", 
-"REPEATED_ID", 
-"REPEATED_OTU", 
-"MULTIPLE_ROOT_NODES", 
-"NO_ROOT_NODE", 
-"MULTIPLE_EDGES_FOR_NODES", 
-"CYCLE_DETECTED", 
-"DISCONNECTED_GRAPH_DETECTED", 
-"INCORRECT_ROOT_NODE_LABEL", 
-"TIP_WITHOUT_OTU", 
-"TIP_WITHOUT_OTT_ID", 
-"MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
-"NON_MONOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
-"INVALID_PROPERTY_VALUE", 
-"PROPERTY_VALUE_NOT_USEFUL", 
-"UNRECOGNIZED_PROPERTY_VALUE", 
-"MULTIPLE_TREES", 
-"UNRECOGNIZED_TAG", 
-"CONFLICTING_PROPERTY_VALUES", 
-"NO_TREES", 
-"DEPRECATED_PROPERTY", 
-"UNPARSEABLE_META", 
-"UNREACHABLE_NODE", 
-"INCORRECT_VALUE_TYPE", 
-"MISSING_CRUCIAL_CONTENT"
-], 
 "commandLine": [
 "--embed", 
-"--agent-only", 
-"-e", 
-"../mig-phyelesystem-scratch/887/validation.json", 
-"-o", 
-"../mig-phyelesystem-scratch/887/final.json", 
-"../mig-phyelesystem-scratch/887/v1.2.1-887.json"
+"--agent-only"
 ], 
 "otherProperty": [
 {
@@ -76,12 +39,19 @@
 }
 ]
 }, 
+"^ot:annotationEvents": {
+"annotation": []
+}, 
+"^ot:candidateTreeForSynthesis": [], 
 "^ot:curatorName": "Romina Gazis", 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S11021"
 }, 
 "^ot:focalClade": 1039831, 
 "^ot:focalCladeOTTTaxonName": "Massaria", 
+"^ot:messages": {
+"message": []
+}, 
 "^ot:otusElementOrder": [
 "otus887"
 ], 
@@ -91,6 +61,7 @@
 }, 
 "^ot:studyPublicationReference": "Voglmayr H., & Jaklitsch W.M. 2011. Molecular data reveal high host specificity in the phylogenetically isolated genus Massaria (Ascomycota, Massariaceae). Fungal Diversity, 46(1): 133-170.", 
 "^ot:studyYear": 2011, 
+"^ot:tag": [], 
 "^ot:treesElementOrder": [
 "trees887"
 ], 
@@ -251,6 +222,8 @@
 }, 
 "otu203531": {
 "^ot:originalLabel": "Lophiotrema neoarundinaria", 
+"^ot:ottId": 5318716, 
+"^ot:ottTaxonName": "Lophiotrema neoarundinaria", 
 "^ot:treebaseOTUId": "Tl437203"
 }, 
 "otu203532": {
@@ -479,6 +452,8 @@
 }, 
 "otu203570": {
 "^ot:originalLabel": "Dothidea hippophaeos", 
+"^ot:ottId": 3717635, 
+"^ot:ottTaxonName": "Dothidea hippophaes", 
 "^ot:treebaseOTUId": "Tl437242"
 }, 
 "otu203571": {
@@ -771,9 +746,14 @@
 "treeById": {
 "tree1711": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "ML, LSU + SSU + RPB2 + EF-1", 
 "^ot:inGroupClade": "node478494", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node478493", 
+"^ot:specifiedRoot": "", 
 "^ot:tag": [
 "ML", 
 "RPB2"
@@ -1711,8 +1691,14 @@
 }, 
 "tree1712": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "MP, ITS + LSU + EF-1", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node478625", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node478625": {
 "edge478626": {
@@ -2418,9 +2404,15 @@
 }, 
 "tree5734": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "MP, ITS + LSU + EF-1 (rooted)", 
 "^ot:inGroupClade": "node983584", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node983580", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node983580": {
 "edge983581": {

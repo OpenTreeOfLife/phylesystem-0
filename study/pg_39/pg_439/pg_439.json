@@ -19,48 +19,11 @@
 "@id": "peyotl-validator", 
 "@name": "validate_ot_nexson.py", 
 "@url": "https://github.com/OpenTreeOfLife/peyotl", 
-"@version": "0.0.3a", 
+"@version": "0.0.4a", 
 "invocation": {
-"checksPerformed": [
-"MISSING_MANDATORY_KEY", 
-"MISSING_OPTIONAL_KEY", 
-"UNRECOGNIZED_KEY", 
-"MISSING_LIST_EXPECTED", 
-"DUPLICATING_SINGLETON_KEY", 
-"REFERENCED_ID_NOT_FOUND", 
-"REPEATED_ID", 
-"REPEATED_OTU", 
-"MULTIPLE_ROOT_NODES", 
-"NO_ROOT_NODE", 
-"MULTIPLE_EDGES_FOR_NODES", 
-"CYCLE_DETECTED", 
-"DISCONNECTED_GRAPH_DETECTED", 
-"INCORRECT_ROOT_NODE_LABEL", 
-"TIP_WITHOUT_OTU", 
-"TIP_WITHOUT_OTT_ID", 
-"MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
-"NON_MONOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
-"INVALID_PROPERTY_VALUE", 
-"PROPERTY_VALUE_NOT_USEFUL", 
-"UNRECOGNIZED_PROPERTY_VALUE", 
-"MULTIPLE_TREES", 
-"UNRECOGNIZED_TAG", 
-"CONFLICTING_PROPERTY_VALUES", 
-"NO_TREES", 
-"DEPRECATED_PROPERTY", 
-"UNPARSEABLE_META", 
-"UNREACHABLE_NODE", 
-"INCORRECT_VALUE_TYPE", 
-"MISSING_CRUCIAL_CONTENT"
-], 
 "commandLine": [
 "--embed", 
-"--agent-only", 
-"-e", 
-"../mig-phyelesystem-scratch/439/validation.json", 
-"-o", 
-"../mig-phyelesystem-scratch/439/final.json", 
-"../mig-phyelesystem-scratch/439/v1.2.1-439.json"
+"--agent-only"
 ], 
 "otherProperty": [
 {
@@ -73,162 +36,14 @@
 }
 ]
 }
-}, 
-{
-"@description": "Web-based interface for submitting, editing, and reviewing studies in the Open Tree of Life project.", 
-"@id": "opentree-curation-webapp", 
-"@name": "OpenTree curation webapp", 
-"@url": "https://github.com/OpenTreeOfLife/opentree", 
-"@version": "0.0.0"
 }
 ]
 }, 
 "^ot:annotationEvents": {
-"annotation": [
-{
-"@description": "Open Tree NexSON validation", 
-"@id": "peyotl-validator-event", 
-"@passedChecks": true, 
-"@preserve": false, 
-"@wasAssociatedWithAgentId": "peyotl-validator", 
-"message": [
-{
-"@code": "MISSING_OPTIONAL_KEY", 
-"@severity": "WARNING", 
-"data": [
-"^ot:ottId"
-], 
-"refersTo": {
-"@idref": [
-"otu160027", 
-"otu160046", 
-"otu160049", 
-"otu160050", 
-"otu160056"
-], 
-"@otuID": [
-"otu160027", 
-"otu160046", 
-"otu160049", 
-"otu160050", 
-"otu160056"
-], 
-"@otusID": "otus439", 
-"@top": "otus"
-}
+"annotation": []
 }, 
-{
-"@code": "UNRECOGNIZED_KEY", 
-"@severity": "WARNING", 
-"data": [
-"^ot:agents"
-], 
-"refersTo": {
-"@idref": "study", 
-"@top": "nexml"
-}
-}, 
-{
-"@code": "MISSING_OPTIONAL_KEY", 
-"@severity": "WARNING", 
-"data": [
-"^ot:studyPublication"
-], 
-"refersTo": {
-"@idref": "study", 
-"@top": "nexml"
-}
-}, 
-{
-"@code": "MISSING_OPTIONAL_KEY", 
-"@severity": "WARNING", 
-"data": [
-"^ot:branchLengthMode", 
-"^ot:branchLengthTimeUnit"
-], 
-"refersTo": {
-"@idref": "tree5514", 
-"@top": "trees", 
-"@treeID": "tree5514", 
-"@treesID": "tree5514"
-}
-}
-]
-}, 
-{
-"@dateCreated": "2014-04-07T13:49:46.979Z", 
-"@description": "Aids for mapping study OTUs to OTT taxa", 
-"@id": "otu-mapping-hints", 
-"@passedChecks": true, 
-"@preserve": true, 
-"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
-"message": [
-{
-"@code": "OTU_MAPPING_HINTS", 
-"@humanMessageType": "NONE", 
-"@severity": "INFO", 
-"data": {
-"searchContext": {
-"$": "All life"
-}, 
-"substitutions": {
-"substitution": [
-{
-"@active": false, 
-"@valid": true, 
-"new": {
-"$": ""
-}, 
-"old": {
-"$": ""
-}
-}
-]
-}
-}, 
-"refersTo": {
-"@top": {
-"$": "meta"
-}
-}
-}
-]
-}, 
-{
-"@dateCreated": "2014-04-07T13:49:46.979Z", 
-"@description": "Describes supporting data files for this study", 
-"@id": "supporting-files-metadata", 
-"@passedChecks": true, 
-"@preserve": true, 
-"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
-"message": [
-{
-"@code": "SUPPORTING_FILE_INFO", 
-"@humanMessageType": "NONE", 
-"@severity": "INFO", 
-"data": {
-"@movedToPermanentArchive": false, 
-"files": {
-"file": []
-}
-}, 
-"refersTo": {
-"@top": {
-"$": "meta"
-}
-}
-}
-]
-}
-]
-}, 
-"^ot:candidateTreeForSynthesis": {
-"candidate": []
-}, 
-"^ot:curatorName": [
-"Romina Gazis", 
-"Jonathan A Rees"
-], 
+"^ot:candidateTreeForSynthesis": [], 
+"^ot:curatorName": "Romina Gazis", 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S1519"
 }, 
@@ -237,15 +52,11 @@
 "^ot:messages": {
 "message": []
 }, 
-"^ot:notIntendedForSynthesis": false, 
 "^ot:otusElementOrder": [
 "otus439"
 ], 
 "^ot:studyId": "439", 
-"^ot:studyPublication": {
-"@href": "http://dx.doi.org/10.3852/mycologia.98.6.885"
-}, 
-"^ot:studyPublicationReference": "Redecker, Dirk, and Philipp Raab. \"Phylogeny of the Glomeromycota (arbuscular mycorrhizal fungi): recent developments and new gene markers.\" Mycologia 98.6 (2006): 885-895.", 
+"^ot:studyPublicationReference": "Redecker, Dirk, and Philipp Raab. 2006. Phylogeny of the Glomeromycota (arbuscular mycorrhizal fungi): recent developments and new gene markers. Mycologia 98 (6): 885-895.", 
 "^ot:studyYear": 2006, 
 "^ot:tag": [], 
 "^ot:treesElementOrder": [
@@ -316,6 +127,8 @@
 }, 
 "otu160027": {
 "^ot:originalLabel": "Phanerochaete chrysosporium", 
+"^ot:ottId": 5299626, 
+"^ot:ottTaxonName": "Phanerodontia chrysosporium", 
 "^ot:treebaseOTUId": "Tl170594"
 }, 
 "otu160028": {
@@ -448,6 +261,8 @@
 }, 
 "otu160050": {
 "^ot:originalLabel": "Coemansia braziliensis", 
+"^ot:ottId": 5292331, 
+"^ot:ottTaxonName": "Coemansia brasiliensis", 
 "^ot:treebaseOTUId": "Tl37574"
 }, 
 "otu160051": {
@@ -482,6 +297,8 @@
 }, 
 "otu160056": {
 "^ot:originalLabel": "Glomus etunicatum", 
+"^ot:ottId": 464858, 
+"^ot:ottTaxonName": "Claroideoglomus etunicatum", 
 "^ot:treebaseOTUId": "Tl39973"
 }, 
 "otu160057": {
@@ -598,7 +415,6 @@
 ], 
 "treeById": {
 "tree5514": {
-"@label": "Untitled (tree5514)", 
 "@xsi:type": "nex:FloatTree", 
 "^ot:branchLengthDescription": "", 
 "^ot:branchLengthMode": "", 
@@ -609,7 +425,6 @@
 "^ot:rootNodeId": "node951372", 
 "^ot:specifiedRoot": "", 
 "^ot:tag": [], 
-"^ot:unrootedTree": true, 
 "edgeBySourceId": {
 "node951372": {
 "edge951373": {
@@ -957,7 +772,6 @@
 }
 }, 
 "tree556": {
-"@label": "Untitled (tree556)", 
 "@xsi:type": "nex:FloatTree", 
 "^ot:branchLengthDescription": "", 
 "^ot:branchLengthMode": "", 
@@ -970,7 +784,6 @@
 "^ot:tag": [
 "SSU"
 ], 
-"^ot:unrootedTree": true, 
 "edgeBySourceId": {
 "node313564": {
 "edge313565": {

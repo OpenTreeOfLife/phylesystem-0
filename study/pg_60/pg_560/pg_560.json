@@ -19,48 +19,11 @@
 "@id": "peyotl-validator", 
 "@name": "validate_ot_nexson.py", 
 "@url": "https://github.com/OpenTreeOfLife/peyotl", 
-"@version": "0.0.3a", 
+"@version": "0.0.4a", 
 "invocation": {
-"checksPerformed": [
-"MISSING_MANDATORY_KEY", 
-"MISSING_OPTIONAL_KEY", 
-"UNRECOGNIZED_KEY", 
-"MISSING_LIST_EXPECTED", 
-"DUPLICATING_SINGLETON_KEY", 
-"REFERENCED_ID_NOT_FOUND", 
-"REPEATED_ID", 
-"REPEATED_OTU", 
-"MULTIPLE_ROOT_NODES", 
-"NO_ROOT_NODE", 
-"MULTIPLE_EDGES_FOR_NODES", 
-"CYCLE_DETECTED", 
-"DISCONNECTED_GRAPH_DETECTED", 
-"INCORRECT_ROOT_NODE_LABEL", 
-"TIP_WITHOUT_OTU", 
-"TIP_WITHOUT_OTT_ID", 
-"MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
-"NON_MONOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
-"INVALID_PROPERTY_VALUE", 
-"PROPERTY_VALUE_NOT_USEFUL", 
-"UNRECOGNIZED_PROPERTY_VALUE", 
-"MULTIPLE_TREES", 
-"UNRECOGNIZED_TAG", 
-"CONFLICTING_PROPERTY_VALUES", 
-"NO_TREES", 
-"DEPRECATED_PROPERTY", 
-"UNPARSEABLE_META", 
-"UNREACHABLE_NODE", 
-"INCORRECT_VALUE_TYPE", 
-"MISSING_CRUCIAL_CONTENT"
-], 
 "commandLine": [
 "--embed", 
-"--agent-only", 
-"-e", 
-"../mig-phyelesystem-scratch/560/validation.json", 
-"-o", 
-"../mig-phyelesystem-scratch/560/final.json", 
-"../mig-phyelesystem-scratch/560/v1.2.1-560.json"
+"--agent-only"
 ], 
 "otherProperty": [
 {
@@ -76,12 +39,19 @@
 }
 ]
 }, 
+"^ot:annotationEvents": {
+"annotation": []
+}, 
+"^ot:candidateTreeForSynthesis": [], 
 "^ot:curatorName": "Jiabin Deng", 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S1731"
 }, 
 "^ot:focalClade": 475211, 
 "^ot:focalCladeOTTTaxonName": "Paniceae", 
+"^ot:messages": {
+"message": []
+}, 
 "^ot:otusElementOrder": [
 "otus560"
 ], 
@@ -91,6 +61,7 @@
 }, 
 "^ot:studyPublicationReference": "Doust, A. N. , Penly, A. M., Jacobs, S. W. L., & Kellogg, E. A. 2007. Congruence, conflict, and polyploidization shown by nuclear and chloroplast markers in the monophyletic \"bristle clade\" (Paniceae, Panicoideae, Poaceae). Syst. Bot. 32: 531-544", 
 "^ot:studyYear": 2007, 
+"^ot:tag": [], 
 "^ot:treesElementOrder": [
 "trees560"
 ], 
@@ -148,7 +119,9 @@
 "^ot:ottTaxonName": "Pennisetum villosum"
 }, 
 "otu171145": {
-"^ot:originalLabel": "Pennisetum alopecuroides"
+"^ot:originalLabel": "Pennisetum alopecuroides", 
+"^ot:ottId": 338461, 
+"^ot:ottTaxonName": "Cenchrus compressus"
 }, 
 "otu171146": {
 "^ot:originalLabel": "Pseudoraphis paradoxa", 
@@ -386,10 +359,14 @@
 "^ot:ottTaxonName": "Cenchrus myosuroides"
 }, 
 "otu171193": {
-"^ot:originalLabel": "Pennisetum alopecuroides B-b"
+"^ot:originalLabel": "Pennisetum alopecuroides B-b", 
+"^ot:ottId": 338461, 
+"^ot:ottTaxonName": "Cenchrus compressus"
 }, 
 "otu171194": {
-"^ot:originalLabel": "Pennisetum alopecuroides C"
+"^ot:originalLabel": "Pennisetum alopecuroides C", 
+"^ot:ottId": 338461, 
+"^ot:ottTaxonName": "Cenchrus compressus"
 }, 
 "otu171195": {
 "^ot:originalLabel": "Pennisetum villosum F", 
@@ -397,7 +374,9 @@
 "^ot:ottTaxonName": "Pennisetum villosum"
 }, 
 "otu171196": {
-"^ot:originalLabel": "Pennisetum alopecuroides B-a"
+"^ot:originalLabel": "Pennisetum alopecuroides B-a", 
+"^ot:ottId": 338461, 
+"^ot:ottTaxonName": "Cenchrus compressus"
 }, 
 "otu171197": {
 "^ot:originalLabel": "Pennisetum flaccidum 1-C-b", 
@@ -843,8 +822,14 @@
 "treeById": {
 "tree812": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "ML", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node343160", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node343160": {
 "edge343161": {
@@ -1305,9 +1290,15 @@
 }, 
 "tree813": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "ML", 
 "^ot:inGroupClade": "node343231", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node343225", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node343225": {
 "edge343226": {
@@ -2755,8 +2746,14 @@
 }, 
 "tree814": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "ml", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node343431", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node343431": {
 "edge343432": {

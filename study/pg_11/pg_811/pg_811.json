@@ -19,48 +19,11 @@
 "@id": "peyotl-validator", 
 "@name": "validate_ot_nexson.py", 
 "@url": "https://github.com/OpenTreeOfLife/peyotl", 
-"@version": "0.0.3a", 
+"@version": "0.0.4a", 
 "invocation": {
-"checksPerformed": [
-"MISSING_MANDATORY_KEY", 
-"MISSING_OPTIONAL_KEY", 
-"UNRECOGNIZED_KEY", 
-"MISSING_LIST_EXPECTED", 
-"DUPLICATING_SINGLETON_KEY", 
-"REFERENCED_ID_NOT_FOUND", 
-"REPEATED_ID", 
-"REPEATED_OTU", 
-"MULTIPLE_ROOT_NODES", 
-"NO_ROOT_NODE", 
-"MULTIPLE_EDGES_FOR_NODES", 
-"CYCLE_DETECTED", 
-"DISCONNECTED_GRAPH_DETECTED", 
-"INCORRECT_ROOT_NODE_LABEL", 
-"TIP_WITHOUT_OTU", 
-"TIP_WITHOUT_OTT_ID", 
-"MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
-"NON_MONOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
-"INVALID_PROPERTY_VALUE", 
-"PROPERTY_VALUE_NOT_USEFUL", 
-"UNRECOGNIZED_PROPERTY_VALUE", 
-"MULTIPLE_TREES", 
-"UNRECOGNIZED_TAG", 
-"CONFLICTING_PROPERTY_VALUES", 
-"NO_TREES", 
-"DEPRECATED_PROPERTY", 
-"UNPARSEABLE_META", 
-"UNREACHABLE_NODE", 
-"INCORRECT_VALUE_TYPE", 
-"MISSING_CRUCIAL_CONTENT"
-], 
 "commandLine": [
 "--embed", 
-"--agent-only", 
-"-e", 
-"../mig-phyelesystem-scratch/811/validation.json", 
-"-o", 
-"../mig-phyelesystem-scratch/811/final.json", 
-"../mig-phyelesystem-scratch/811/v1.2.1-811.json"
+"--agent-only"
 ], 
 "otherProperty": [
 {
@@ -76,12 +39,19 @@
 }
 ]
 }, 
+"^ot:annotationEvents": {
+"annotation": []
+}, 
+"^ot:candidateTreeForSynthesis": [], 
 "^ot:curatorName": "Romina Gazis", 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S1653"
 }, 
 "^ot:focalClade": 728788, 
 "^ot:focalCladeOTTTaxonName": "Oxydothis", 
+"^ot:messages": {
+"message": []
+}, 
 "^ot:otusElementOrder": [
 "otus811"
 ], 
@@ -92,10 +62,10 @@
 "^ot:studyPublicationReference": "Hidayat I., Jeewon R., To-anun C., & Hyde K. 2006. The genus Oxydothis: New palmicolous taxa and phylogenetic relationships within the Xylariales. Fungal Diversity, 23: 159-179", 
 "^ot:studyYear": 2006, 
 "^ot:tag": [
-"MP", 
 "BI", 
 "ITS", 
-"LSU"
+"LSU", 
+"MP"
 ], 
 "^ot:treesElementOrder": [
 "trees811"
@@ -129,6 +99,8 @@
 }, 
 "otu197213": {
 "^ot:originalLabel": "Seiridium unicorne", 
+"^ot:ottId": 173690, 
+"^ot:ottTaxonName": "Lepteutypa cupressi", 
 "^ot:treebaseOTUId": "Tl180223"
 }, 
 "otu197214": {
@@ -299,6 +271,8 @@
 }, 
 "otu197242": {
 "^ot:originalLabel": "Pestalotiopsis westerdijkii", 
+"^ot:ottId": 5317555, 
+"^ot:ottTaxonName": "Pestalotiopsis westerdykiae", 
 "^ot:treebaseOTUId": "Tl32454"
 }, 
 "otu197243": {
@@ -405,6 +379,8 @@
 }, 
 "otu197260": {
 "^ot:originalLabel": "Asordaria arctica", 
+"^ot:ottId": 5316578, 
+"^ot:ottTaxonName": "Sordaria arctica", 
 "^ot:treebaseOTUId": "Tl42200"
 }, 
 "otu197261": {
@@ -452,9 +428,15 @@
 "treeById": {
 "tree1534": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "MP, LSU", 
 "^ot:inGroupClade": "node462641", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node462640", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node462640": {
 "edge462641": {
@@ -810,9 +792,14 @@
 }, 
 "tree1535": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "BI, LSU", 
 "^ot:inGroupClade": "node462693", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node462690", 
+"^ot:specifiedRoot": "", 
 "^ot:tag": [
 "BI", 
 "LSU", 
@@ -1173,8 +1160,14 @@
 }, 
 "tree1536": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "MP, LSU (bootstrap)", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node462740", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node462740": {
 "edge462741": {
@@ -1530,9 +1523,15 @@
 }, 
 "tree1537": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "MP, ITS", 
 "^ot:inGroupClade": "node462791", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node462790", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node462790": {
 "edge462791": {
@@ -2042,9 +2041,16 @@
 }, 
 "tree1538": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "MP, ITS", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node462862", 
-"^ot:tag": "delete me", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [
+"delete me"
+], 
 "edgeBySourceId": {
 "node462862": {
 "edge462863": {
@@ -2554,9 +2560,16 @@
 }, 
 "tree1539": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "MP, ITS", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node462934", 
-"^ot:tag": "delete me", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [
+"delete me"
+], 
 "edgeBySourceId": {
 "node462934": {
 "edge462935": {
@@ -3066,9 +3079,16 @@
 }, 
 "tree1540": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "MP, ITS", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node463006", 
-"^ot:tag": "delete me", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [
+"delete me"
+], 
 "edgeBySourceId": {
 "node463006": {
 "edge463007": {
@@ -3578,8 +3598,14 @@
 }, 
 "tree1541": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "MP, ITS (bootstrap)", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node463078", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node463078": {
 "edge463079": {
@@ -4089,9 +4115,14 @@
 }, 
 "tree1542": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "BI, ITS", 
 "^ot:inGroupClade": "node463153", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node463150", 
+"^ot:specifiedRoot": "", 
 "^ot:tag": [
 "BI", 
 "ITS", 
@@ -4599,9 +4630,15 @@
 }, 
 "tree1543": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "MP, LSU", 
 "^ot:inGroupClade": "node463222", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node463221", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node463221": {
 "edge463222": {

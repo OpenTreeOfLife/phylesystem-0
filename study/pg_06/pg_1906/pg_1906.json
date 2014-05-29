@@ -19,48 +19,11 @@
 "@id": "peyotl-validator", 
 "@name": "validate_ot_nexson.py", 
 "@url": "https://github.com/OpenTreeOfLife/peyotl", 
-"@version": "0.0.3a", 
+"@version": "0.0.4a", 
 "invocation": {
-"checksPerformed": [
-"MISSING_MANDATORY_KEY", 
-"MISSING_OPTIONAL_KEY", 
-"UNRECOGNIZED_KEY", 
-"MISSING_LIST_EXPECTED", 
-"DUPLICATING_SINGLETON_KEY", 
-"REFERENCED_ID_NOT_FOUND", 
-"REPEATED_ID", 
-"REPEATED_OTU", 
-"MULTIPLE_ROOT_NODES", 
-"NO_ROOT_NODE", 
-"MULTIPLE_EDGES_FOR_NODES", 
-"CYCLE_DETECTED", 
-"DISCONNECTED_GRAPH_DETECTED", 
-"INCORRECT_ROOT_NODE_LABEL", 
-"TIP_WITHOUT_OTU", 
-"TIP_WITHOUT_OTT_ID", 
-"MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
-"NON_MONOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
-"INVALID_PROPERTY_VALUE", 
-"PROPERTY_VALUE_NOT_USEFUL", 
-"UNRECOGNIZED_PROPERTY_VALUE", 
-"MULTIPLE_TREES", 
-"UNRECOGNIZED_TAG", 
-"CONFLICTING_PROPERTY_VALUES", 
-"NO_TREES", 
-"DEPRECATED_PROPERTY", 
-"UNPARSEABLE_META", 
-"UNREACHABLE_NODE", 
-"INCORRECT_VALUE_TYPE", 
-"MISSING_CRUCIAL_CONTENT"
-], 
 "commandLine": [
 "--embed", 
-"--agent-only", 
-"-e", 
-"../mig-phyelesystem-scratch/1906/validation.json", 
-"-o", 
-"../mig-phyelesystem-scratch/1906/final.json", 
-"../mig-phyelesystem-scratch/1906/v1.2.1-1906.json"
+"--agent-only"
 ], 
 "otherProperty": [
 {
@@ -76,12 +39,19 @@
 }
 ]
 }, 
+"^ot:annotationEvents": {
+"annotation": []
+}, 
+"^ot:candidateTreeForSynthesis": [], 
 "^ot:curatorName": "Chris Owen", 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S2081"
 }, 
 "^ot:focalClade": 781291, 
 "^ot:focalCladeOTTTaxonName": "Psoroptidia", 
+"^ot:messages": {
+"message": []
+}, 
 "^ot:otusElementOrder": [
 "otus1906"
 ], 
@@ -91,6 +61,7 @@
 }, 
 "^ot:studyPublicationReference": "Klimov Pavel B., & OConnor B. M. 2008. Origin and higher-level relationships of psoroptidian mites (Acari: Astigmata: Psoroptidia): Evidence from three nuclear genes. Molecular Phylogenetics and Evolution 47 (3): 1135-1156.", 
 "^ot:studyYear": 2008, 
+"^ot:tag": [], 
 "^ot:treesElementOrder": [
 "trees1906"
 ], 
@@ -315,6 +286,8 @@
 }, 
 "otu290260": {
 "^ot:originalLabel": "Ewingia coenobitae ex Coenobita US Virgin Is AD677", 
+"^ot:ottId": 596792, 
+"^ot:ottTaxonName": "Ewingia coenobitae", 
 "^ot:treebaseOTUId": "Tl83133"
 }, 
 "otu290261": {
@@ -401,6 +374,8 @@
 }, 
 "otu290275": {
 "^ot:originalLabel": "Askinasia antillarum ex Coenobita US Virgin Is AD679", 
+"^ot:ottId": 344323, 
+"^ot:ottTaxonName": "Askinasia antillarum", 
 "^ot:treebaseOTUId": "Tl83148"
 }, 
 "otu290276": {
@@ -854,10 +829,15 @@
 "treeById": {
 "tree3884": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
 "^ot:branchLengthMode": "ot:changesCount", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "Fig. 5 MP", 
 "^ot:inGroupClade": "node729880", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node729877", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node729877": {
 "edge729878": {
@@ -2613,10 +2593,15 @@
 }, 
 "tree3885": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
 "^ot:branchLengthMode": "ot:posteriorSupport", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "Fig. 6 BI", 
 "^ot:inGroupClade": "node730130", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node730127", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node730127": {
 "edge730128": {
@@ -4365,10 +4350,15 @@
 }, 
 "tree3886": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
 "^ot:branchLengthMode": "ot:changesCount", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "MP strict", 
 "^ot:inGroupClade": "node730379", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node730376", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node730376": {
 "edge730377": {
@@ -6110,10 +6100,15 @@
 }, 
 "tree3887": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
 "^ot:branchLengthMode": "ot:substitutionCount", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "Fig. S1 ML", 
 "^ot:inGroupClade": "node730625", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node730624", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node730624": {
 "edge730625": {

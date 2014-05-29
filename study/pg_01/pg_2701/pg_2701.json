@@ -19,48 +19,11 @@
 "@id": "peyotl-validator", 
 "@name": "validate_ot_nexson.py", 
 "@url": "https://github.com/OpenTreeOfLife/peyotl", 
-"@version": "0.0.3a", 
+"@version": "0.0.4a", 
 "invocation": {
-"checksPerformed": [
-"MISSING_MANDATORY_KEY", 
-"MISSING_OPTIONAL_KEY", 
-"UNRECOGNIZED_KEY", 
-"MISSING_LIST_EXPECTED", 
-"DUPLICATING_SINGLETON_KEY", 
-"REFERENCED_ID_NOT_FOUND", 
-"REPEATED_ID", 
-"REPEATED_OTU", 
-"MULTIPLE_ROOT_NODES", 
-"NO_ROOT_NODE", 
-"MULTIPLE_EDGES_FOR_NODES", 
-"CYCLE_DETECTED", 
-"DISCONNECTED_GRAPH_DETECTED", 
-"INCORRECT_ROOT_NODE_LABEL", 
-"TIP_WITHOUT_OTU", 
-"TIP_WITHOUT_OTT_ID", 
-"MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
-"NON_MONOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
-"INVALID_PROPERTY_VALUE", 
-"PROPERTY_VALUE_NOT_USEFUL", 
-"UNRECOGNIZED_PROPERTY_VALUE", 
-"MULTIPLE_TREES", 
-"UNRECOGNIZED_TAG", 
-"CONFLICTING_PROPERTY_VALUES", 
-"NO_TREES", 
-"DEPRECATED_PROPERTY", 
-"UNPARSEABLE_META", 
-"UNREACHABLE_NODE", 
-"INCORRECT_VALUE_TYPE", 
-"MISSING_CRUCIAL_CONTENT"
-], 
 "commandLine": [
 "--embed", 
-"--agent-only", 
-"-e", 
-"../mig-phyelesystem-scratch/2701/validation.json", 
-"-o", 
-"../mig-phyelesystem-scratch/2701/final.json", 
-"../mig-phyelesystem-scratch/2701/v1.2.1-2701.json"
+"--agent-only"
 ], 
 "otherProperty": [
 {
@@ -76,9 +39,16 @@
 }
 ]
 }, 
+"^ot:annotationEvents": {
+"annotation": []
+}, 
+"^ot:candidateTreeForSynthesis": [], 
 "^ot:curatorName": "Romina Gazis", 
 "^ot:focalClade": 634628, 
 "^ot:focalCladeOTTTaxonName": "Basidiomycota", 
+"^ot:messages": {
+"message": []
+}, 
 "^ot:otusElementOrder": [
 "otus2701"
 ], 
@@ -86,8 +56,8 @@
 "^ot:studyPublicationReference": "Floudas, Dimitrios, Manfred Binder, Robert Riley, Kerrie Barry, Robert A. Blanchette, Bernard Henrissat, Angel T. Mart\u00ednez et al. \"The Paleozoic origin of enzymatic lignin decomposition reconstructed from 31 fungal genomes.\" Science 336, no. 6089 (2012): 1715-1719.", 
 "^ot:studyYear": 2012, 
 "^ot:tag": [
-"genome: nucleus", 
-"BEAST"
+"BEAST", 
+"genome: nucleus"
 ], 
 "^ot:treesElementOrder": [
 "trees2701"
@@ -169,10 +139,14 @@
 "^ot:ottTaxonName": "Fomitiporia mediterranea"
 }, 
 "otu405159": {
-"^ot:originalLabel": "PHACH"
+"^ot:originalLabel": "PHACH", 
+"^ot:ottId": 5299626, 
+"^ot:ottTaxonName": "Phanerodontia chrysosporium"
 }, 
 "otu405160": {
-"^ot:originalLabel": "WOLCO"
+"^ot:originalLabel": "WOLCO", 
+"^ot:ottId": 5299874, 
+"^ot:ottTaxonName": "Wolfiporia extensa"
 }, 
 "otu405161": {
 "^ot:originalLabel": "POSPL", 
@@ -257,8 +231,14 @@
 "treeById": {
 "tree6270": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "71gene_BEAST", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node1085282", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node1085282": {
 "edge1085283": {
@@ -743,9 +723,14 @@
 }, 
 "tree6271": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "26gene_BEAST_rooted", 
 "^ot:inGroupClade": "node1085346", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node1085342", 
+"^ot:specifiedRoot": "", 
 "^ot:tag": [
 "genome", 
 "Choose me"

@@ -19,48 +19,11 @@
 "@id": "peyotl-validator", 
 "@name": "validate_ot_nexson.py", 
 "@url": "https://github.com/OpenTreeOfLife/peyotl", 
-"@version": "0.0.3a", 
+"@version": "0.0.4a", 
 "invocation": {
-"checksPerformed": [
-"MISSING_MANDATORY_KEY", 
-"MISSING_OPTIONAL_KEY", 
-"UNRECOGNIZED_KEY", 
-"MISSING_LIST_EXPECTED", 
-"DUPLICATING_SINGLETON_KEY", 
-"REFERENCED_ID_NOT_FOUND", 
-"REPEATED_ID", 
-"REPEATED_OTU", 
-"MULTIPLE_ROOT_NODES", 
-"NO_ROOT_NODE", 
-"MULTIPLE_EDGES_FOR_NODES", 
-"CYCLE_DETECTED", 
-"DISCONNECTED_GRAPH_DETECTED", 
-"INCORRECT_ROOT_NODE_LABEL", 
-"TIP_WITHOUT_OTU", 
-"TIP_WITHOUT_OTT_ID", 
-"MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
-"NON_MONOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
-"INVALID_PROPERTY_VALUE", 
-"PROPERTY_VALUE_NOT_USEFUL", 
-"UNRECOGNIZED_PROPERTY_VALUE", 
-"MULTIPLE_TREES", 
-"UNRECOGNIZED_TAG", 
-"CONFLICTING_PROPERTY_VALUES", 
-"NO_TREES", 
-"DEPRECATED_PROPERTY", 
-"UNPARSEABLE_META", 
-"UNREACHABLE_NODE", 
-"INCORRECT_VALUE_TYPE", 
-"MISSING_CRUCIAL_CONTENT"
-], 
 "commandLine": [
 "--embed", 
-"--agent-only", 
-"-e", 
-"../mig-phyelesystem-scratch/242/validation.json", 
-"-o", 
-"../mig-phyelesystem-scratch/242/final.json", 
-"../mig-phyelesystem-scratch/242/v1.2.1-242.json"
+"--agent-only"
 ], 
 "otherProperty": [
 {
@@ -76,12 +39,19 @@
 }
 ]
 }, 
+"^ot:annotationEvents": {
+"annotation": []
+}, 
+"^ot:candidateTreeForSynthesis": [], 
 "^ot:curatorName": "Romina Gazis", 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S1652"
 }, 
 "^ot:focalClade": 1051895, 
 "^ot:focalCladeOTTTaxonName": "Wallemiomycetes", 
+"^ot:messages": {
+"message": []
+}, 
 "^ot:otusElementOrder": [
 "otus242"
 ], 
@@ -91,6 +61,7 @@
 }, 
 "^ot:studyPublicationReference": "Matheny, P. Brandon, Jasmin A. Gossmann, Polona Zalar, TK Arun Kumar, and David S. Hibbett. \"Resolving the phylogenetic position of the Wallemiomycetes: an enigmatic major lineage of Basidiomycota.\" Botany 84, no. 12 (2006): 1794-1805.", 
 "^ot:studyYear": 2007, 
+"^ot:tag": [], 
 "^ot:treesElementOrder": [
 "trees242"
 ], 
@@ -206,10 +177,14 @@
 "^ot:ottTaxonName": "Hygrophoropsis aurantiaca"
 }, 
 "otu64294": {
-"^ot:originalLabel": "Fibulorhizoctonia sp"
+"^ot:originalLabel": "Fibulorhizoctonia sp", 
+"^ot:ottId": 5300658, 
+"^ot:ottTaxonName": "Fibularhizoctonia"
 }, 
 "otu64295": {
-"^ot:originalLabel": "Bondarzewia montana"
+"^ot:originalLabel": "Bondarzewia montana", 
+"^ot:ottId": 842317, 
+"^ot:ottTaxonName": "Bondarzewia mesenterica"
 }, 
 "otu64296": {
 "^ot:originalLabel": "Heterobasidion annosum", 
@@ -361,7 +336,9 @@
 "^ot:ottTaxonName": "Ustanciosporium standleyanum"
 }, 
 "otu64327": {
-"^ot:originalLabel": "Cintractia sorghivulgaris"
+"^ot:originalLabel": "Cintractia sorghivulgaris", 
+"^ot:ottId": 469132, 
+"^ot:ottTaxonName": "Sporisorium sorghi"
 }, 
 "otu64328": {
 "^ot:originalLabel": "Pseudozyma flocculosa", 
@@ -369,7 +346,9 @@
 "^ot:ottTaxonName": "Pseudozyma flocculosa"
 }, 
 "otu64329": {
-"^ot:originalLabel": "Sporisorium reilianum"
+"^ot:originalLabel": "Sporisorium reilianum", 
+"^ot:ottId": 5300833, 
+"^ot:ottTaxonName": "Sphacelotheca reiliana"
 }, 
 "otu64330": {
 "^ot:originalLabel": "Ustilago maydis", 
@@ -519,7 +498,9 @@
 "^ot:ottTaxonName": "Sphacelotheca"
 }, 
 "otu64361": {
-"^ot:originalLabel": "Rhodotorula hordea"
+"^ot:originalLabel": "Rhodotorula hordea", 
+"^ot:ottId": 4095323, 
+"^ot:ottTaxonName": "Rhodotorula graminis"
 }, 
 "otu64362": {
 "^ot:originalLabel": "Rhodotorula mucilaginosa", 
@@ -652,7 +633,9 @@
 "^ot:ottTaxonName": "Pucciniastrum goeppertianum"
 }, 
 "otu64390": {
-"^ot:originalLabel": "Gymnoconia peckiana"
+"^ot:originalLabel": "Gymnoconia peckiana", 
+"^ot:ottId": 5300922, 
+"^ot:ottTaxonName": "Arthuriomyces peckianus"
 }, 
 "otu64391": {
 "^ot:originalLabel": "Gymnosporangium juniperivirginianae", 
@@ -919,7 +902,9 @@
 "^ot:ottTaxonName": "Doassansia epilobii"
 }, 
 "otu64445": {
-"^ot:originalLabel": "Doassansia hygrophilae"
+"^ot:originalLabel": "Doassansia hygrophilae", 
+"^ot:ottId": 5307715, 
+"^ot:ottTaxonName": "Heterodoassansia hygrophilae"
 }, 
 "otu64446": {
 "^ot:originalLabel": "Doassinga callitrichis", 
@@ -1058,9 +1043,15 @@
 "treeById": {
 "tree117": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "MP, RPB1 + RPB2 + EF-1", 
 "^ot:inGroupClade": "node162708", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node162684", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node162684": {
 "edge162685": {
@@ -2326,9 +2317,15 @@
 }, 
 "tree118": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "BI, SSU + LSU + 5.8S + EF-1 + RPB1 + RPB2", 
 "^ot:inGroupClade": "node162867", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node162864", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node162864": {
 "edge162865": {
@@ -4840,9 +4837,15 @@
 }, 
 "tree5727": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "MP, EF-1 + RPB1 + RPB2 (rooted)", 
 "^ot:inGroupClade": "node982930", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node982919", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node982919": {
 "edge982920": {

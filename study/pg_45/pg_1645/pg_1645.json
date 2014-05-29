@@ -19,48 +19,11 @@
 "@id": "peyotl-validator", 
 "@name": "validate_ot_nexson.py", 
 "@url": "https://github.com/OpenTreeOfLife/peyotl", 
-"@version": "0.0.3a", 
+"@version": "0.0.4a", 
 "invocation": {
-"checksPerformed": [
-"MISSING_MANDATORY_KEY", 
-"MISSING_OPTIONAL_KEY", 
-"UNRECOGNIZED_KEY", 
-"MISSING_LIST_EXPECTED", 
-"DUPLICATING_SINGLETON_KEY", 
-"REFERENCED_ID_NOT_FOUND", 
-"REPEATED_ID", 
-"REPEATED_OTU", 
-"MULTIPLE_ROOT_NODES", 
-"NO_ROOT_NODE", 
-"MULTIPLE_EDGES_FOR_NODES", 
-"CYCLE_DETECTED", 
-"DISCONNECTED_GRAPH_DETECTED", 
-"INCORRECT_ROOT_NODE_LABEL", 
-"TIP_WITHOUT_OTU", 
-"TIP_WITHOUT_OTT_ID", 
-"MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
-"NON_MONOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
-"INVALID_PROPERTY_VALUE", 
-"PROPERTY_VALUE_NOT_USEFUL", 
-"UNRECOGNIZED_PROPERTY_VALUE", 
-"MULTIPLE_TREES", 
-"UNRECOGNIZED_TAG", 
-"CONFLICTING_PROPERTY_VALUES", 
-"NO_TREES", 
-"DEPRECATED_PROPERTY", 
-"UNPARSEABLE_META", 
-"UNREACHABLE_NODE", 
-"INCORRECT_VALUE_TYPE", 
-"MISSING_CRUCIAL_CONTENT"
-], 
 "commandLine": [
 "--embed", 
-"--agent-only", 
-"-e", 
-"../mig-phyelesystem-scratch/1645/validation.json", 
-"-o", 
-"../mig-phyelesystem-scratch/1645/final.json", 
-"../mig-phyelesystem-scratch/1645/v1.2.1-1645.json"
+"--agent-only"
 ], 
 "otherProperty": [
 {
@@ -76,12 +39,19 @@
 }
 ]
 }, 
+"^ot:annotationEvents": {
+"annotation": []
+}, 
+"^ot:candidateTreeForSynthesis": [], 
 "^ot:curatorName": "Romina Gazis", 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S11236"
 }, 
 "^ot:focalClade": 314114, 
 "^ot:focalCladeOTTTaxonName": "Letharia", 
+"^ot:messages": {
+"message": []
+}, 
 "^ot:otusElementOrder": [
 "otus1645"
 ], 
@@ -91,6 +61,7 @@
 }, 
 "^ot:studyPublicationReference": "Kroken S., & Taylor J. 2001. A gene genealogical approach to recognize phylogenetic species boundaries in the lichenized fungus Letharia. Mycologia, 93(1): 38-53.", 
 "^ot:studyYear": 2001, 
+"^ot:tag": [], 
 "^ot:treesElementOrder": [
 "trees1645"
 ], 
@@ -106,6 +77,7 @@
 "otu268366": {
 "^ot:originalLabel": "Nodobryoria oregana", 
 "^ot:ottId": 807800, 
+"^ot:ottTaxonName": "Nodobryoria oregana", 
 "^ot:treebaseOTUId": "Tl470677"
 }, 
 "otu268367": {
@@ -219,6 +191,7 @@
 "otu268385": {
 "^ot:originalLabel": "Pseudevernia furfuracea", 
 "^ot:ottId": 959711, 
+"^ot:ottTaxonName": "Pseudevernia furfuracea", 
 "^ot:treebaseOTUId": "Tl470696"
 }, 
 "otu268386": {
@@ -272,6 +245,7 @@
 "otu268394": {
 "^ot:originalLabel": "Nodobryoria abbreviata", 
 "^ot:ottId": 787540, 
+"^ot:ottTaxonName": "Nodobryoria abbreviata", 
 "^ot:treebaseOTUId": "Tl470705"
 }, 
 "otu268395": {
@@ -283,6 +257,7 @@
 "otu268396": {
 "^ot:originalLabel": "Pseudevernia consocians", 
 "^ot:ottId": 893160, 
+"^ot:ottTaxonName": "Pseudevernia consocians", 
 "^ot:treebaseOTUId": "Tl470707"
 }, 
 "otu268397": {
@@ -324,6 +299,7 @@
 "otu268403": {
 "^ot:originalLabel": "Pseudevernia intensa", 
 "^ot:ottId": 428287, 
+"^ot:ottTaxonName": "Pseudevernia intensa", 
 "^ot:treebaseOTUId": "Tl470714"
 }, 
 "otu268404": {
@@ -353,6 +329,7 @@
 "otu268408": {
 "^ot:originalLabel": "Bryoria tortuosa", 
 "^ot:ottId": 13387, 
+"^ot:ottTaxonName": "Bryoria tortuosa", 
 "^ot:treebaseOTUId": "Tl470719"
 }, 
 "otu268409": {
@@ -368,9 +345,9 @@
 "^ot:treebaseOTUId": "Tl470721"
 }, 
 "otu268411": {
-"^ot:altLabel": "Pseudevernia cladonia", 
 "^ot:originalLabel": "Pseudevernia cladoniae", 
 "^ot:ottId": 292308, 
+"^ot:ottTaxonName": "Pseudevernia cladonia", 
 "^ot:treebaseOTUId": "Tl470722"
 }, 
 "otu268412": {
@@ -451,9 +428,15 @@
 "treeById": {
 "tree3323": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "MP, ITS + SSU (intron) + 4 loci", 
 "^ot:inGroupClade": "node663170", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node663170", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node663170": {
 "edge663171": {

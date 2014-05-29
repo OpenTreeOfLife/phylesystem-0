@@ -19,48 +19,11 @@
 "@id": "peyotl-validator", 
 "@name": "validate_ot_nexson.py", 
 "@url": "https://github.com/OpenTreeOfLife/peyotl", 
-"@version": "0.0.3a", 
+"@version": "0.0.4a", 
 "invocation": {
-"checksPerformed": [
-"MISSING_MANDATORY_KEY", 
-"MISSING_OPTIONAL_KEY", 
-"UNRECOGNIZED_KEY", 
-"MISSING_LIST_EXPECTED", 
-"DUPLICATING_SINGLETON_KEY", 
-"REFERENCED_ID_NOT_FOUND", 
-"REPEATED_ID", 
-"REPEATED_OTU", 
-"MULTIPLE_ROOT_NODES", 
-"NO_ROOT_NODE", 
-"MULTIPLE_EDGES_FOR_NODES", 
-"CYCLE_DETECTED", 
-"DISCONNECTED_GRAPH_DETECTED", 
-"INCORRECT_ROOT_NODE_LABEL", 
-"TIP_WITHOUT_OTU", 
-"TIP_WITHOUT_OTT_ID", 
-"MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
-"NON_MONOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
-"INVALID_PROPERTY_VALUE", 
-"PROPERTY_VALUE_NOT_USEFUL", 
-"UNRECOGNIZED_PROPERTY_VALUE", 
-"MULTIPLE_TREES", 
-"UNRECOGNIZED_TAG", 
-"CONFLICTING_PROPERTY_VALUES", 
-"NO_TREES", 
-"DEPRECATED_PROPERTY", 
-"UNPARSEABLE_META", 
-"UNREACHABLE_NODE", 
-"INCORRECT_VALUE_TYPE", 
-"MISSING_CRUCIAL_CONTENT"
-], 
 "commandLine": [
 "--embed", 
-"--agent-only", 
-"-e", 
-"../mig-phyelesystem-scratch/790/validation.json", 
-"-o", 
-"../mig-phyelesystem-scratch/790/final.json", 
-"../mig-phyelesystem-scratch/790/v1.2.1-790.json"
+"--agent-only"
 ], 
 "otherProperty": [
 {
@@ -76,12 +39,19 @@
 }
 ]
 }, 
+"^ot:annotationEvents": {
+"annotation": []
+}, 
+"^ot:candidateTreeForSynthesis": [], 
 "^ot:curatorName": "Romina Gazis", 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S1829"
 }, 
 "^ot:focalClade": 728378, 
 "^ot:focalCladeOTTTaxonName": "Erysiphe", 
+"^ot:messages": {
+"message": []
+}, 
 "^ot:otusElementOrder": [
 "otus790"
 ], 
@@ -91,6 +61,7 @@
 }, 
 "^ot:studyPublicationReference": "Takamatsu S., Braun U., Limkaisang S., Kom-un S., Sato Y., & Cunnington J. 2007. Phylogeny and taxonomy of the oak powdery mildew Erysiphe alphitoides sensu lato. Mycological Research, 111 (7): 809-826.", 
 "^ot:studyYear": 2007, 
+"^ot:tag": [], 
 "^ot:treesElementOrder": [
 "trees790"
 ], 
@@ -507,6 +478,8 @@
 }, 
 "otu195439": {
 "^ot:originalLabel": "Erysiphe glycines  AB022397", 
+"^ot:ottId": 129269, 
+"^ot:ottTaxonName": "Erysiphe diffusa", 
 "^ot:treebaseOTUId": "Tl191036"
 }, 
 "otu195440": {
@@ -629,6 +602,8 @@
 }, 
 "otu195460": {
 "^ot:originalLabel": "Erysiphe glycines AB015934", 
+"^ot:ottId": 129269, 
+"^ot:ottTaxonName": "Erysiphe diffusa", 
 "^ot:treebaseOTUId": "Tl191057"
 }, 
 "otu195461": {
@@ -1035,6 +1010,8 @@
 }, 
 "otu195529": {
 "^ot:originalLabel": "Erysiphe glycines AB015927", 
+"^ot:ottId": 129269, 
+"^ot:ottTaxonName": "Erysiphe diffusa", 
 "^ot:treebaseOTUId": "Tl191126"
 }, 
 "otu195530": {
@@ -1142,9 +1119,15 @@
 "treeById": {
 "tree1485": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "MP, ITS", 
 "^ot:inGroupClade": "node457084", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node457083", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node457083": {
 "edge457084": {
@@ -1731,9 +1714,15 @@
 }, 
 "tree1486": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "MP, LSU", 
 "^ot:inGroupClade": "node457167", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node457166", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node457166": {
 "edge457167": {
@@ -2068,10 +2057,17 @@
 }, 
 "tree1487": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "MP, ITS", 
 "^ot:inGroupClade": "node457214", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node457213", 
-"^ot:tag": "ITS", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [
+"ITS"
+], 
 "edgeBySourceId": {
 "node457213": {
 "edge457214": {
@@ -3113,9 +3109,15 @@
 }, 
 "tree1488": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "Erysipheae, 28S", 
 "^ot:inGroupClade": "node457362", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node457361", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node457361": {
 "edge457362": {

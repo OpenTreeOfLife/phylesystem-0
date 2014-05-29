@@ -19,48 +19,11 @@
 "@id": "peyotl-validator", 
 "@name": "validate_ot_nexson.py", 
 "@url": "https://github.com/OpenTreeOfLife/peyotl", 
-"@version": "0.0.3a", 
+"@version": "0.0.4a", 
 "invocation": {
-"checksPerformed": [
-"MISSING_MANDATORY_KEY", 
-"MISSING_OPTIONAL_KEY", 
-"UNRECOGNIZED_KEY", 
-"MISSING_LIST_EXPECTED", 
-"DUPLICATING_SINGLETON_KEY", 
-"REFERENCED_ID_NOT_FOUND", 
-"REPEATED_ID", 
-"REPEATED_OTU", 
-"MULTIPLE_ROOT_NODES", 
-"NO_ROOT_NODE", 
-"MULTIPLE_EDGES_FOR_NODES", 
-"CYCLE_DETECTED", 
-"DISCONNECTED_GRAPH_DETECTED", 
-"INCORRECT_ROOT_NODE_LABEL", 
-"TIP_WITHOUT_OTU", 
-"TIP_WITHOUT_OTT_ID", 
-"MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
-"NON_MONOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
-"INVALID_PROPERTY_VALUE", 
-"PROPERTY_VALUE_NOT_USEFUL", 
-"UNRECOGNIZED_PROPERTY_VALUE", 
-"MULTIPLE_TREES", 
-"UNRECOGNIZED_TAG", 
-"CONFLICTING_PROPERTY_VALUES", 
-"NO_TREES", 
-"DEPRECATED_PROPERTY", 
-"UNPARSEABLE_META", 
-"UNREACHABLE_NODE", 
-"INCORRECT_VALUE_TYPE", 
-"MISSING_CRUCIAL_CONTENT"
-], 
 "commandLine": [
 "--embed", 
-"--agent-only", 
-"-e", 
-"../mig-phyelesystem-scratch/671/validation.json", 
-"-o", 
-"../mig-phyelesystem-scratch/671/final.json", 
-"../mig-phyelesystem-scratch/671/v1.2.1-671.json"
+"--agent-only"
 ], 
 "otherProperty": [
 {
@@ -76,12 +39,17 @@
 }
 ]
 }, 
+"^ot:annotationEvents": {
+"annotation": []
+}, 
+"^ot:candidateTreeForSynthesis": [], 
 "^ot:curatorName": "Romina Gazis", 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S1561"
 }, 
-"^ot:focalClade": 868020, 
-"^ot:focalCladeOTTTaxonName": "Phomopsis", 
+"^ot:messages": {
+"message": []
+}, 
 "^ot:otusElementOrder": [
 "otus671"
 ], 
@@ -91,6 +59,7 @@
 }, 
 "^ot:studyPublicationReference": "Janse van rensburg J., Lamprecht S., Groenewald J., Castlebury L., & Crous P. 2006. Characterisation of Phomopsis spp. associated with die-back of rooibos (Aspalathus linearis) in South Africa. Studies in Mycology, 55(1): 65-74.", 
 "^ot:studyYear": 2006, 
+"^ot:tag": [], 
 "^ot:treesElementOrder": [
 "trees671"
 ], 
@@ -99,20 +68,14 @@
 "otuById": {
 "otu183801": {
 "^ot:originalLabel": "Phomopsis sclerotioides", 
-"^ot:ottId": 197155, 
-"^ot:ottTaxonName": "Diaporthe sclerotioides", 
 "^ot:treebaseOTUId": "Tl13152"
 }, 
 "otu183802": {
 "^ot:originalLabel": "Phomopsis columnaris", 
-"^ot:ottId": 1058988, 
-"^ot:ottTaxonName": "Phomopsis columnaris", 
 "^ot:treebaseOTUId": "Tl13166"
 }, 
 "otu183803": {
 "^ot:originalLabel": "Diaporthe phaseolorum", 
-"^ot:ottId": 737678, 
-"^ot:ottTaxonName": "Diaporthe phaseolorum", 
 "^ot:treebaseOTUId": "Tl173126"
 }, 
 "otu183804": {
@@ -129,26 +92,20 @@
 }, 
 "otu183806": {
 "^ot:originalLabel": "Phomopsis longicolla U97658", 
-"^ot:ottId": 931953, 
-"^ot:ottTaxonName": "Diaporthe longicolla", 
 "^ot:treebaseOTUId": "Tl31871"
 }, 
 "otu183807": {
 "^ot:originalLabel": "Diaporthe aspalanthi AF000566", 
-"^ot:ottId": 99968, 
-"^ot:ottTaxonName": "Diaporthe aspalathi", 
+"^ot:ottId": 730425, 
+"^ot:ottTaxonName": "Diaporthe meridionalis", 
 "^ot:treebaseOTUId": "Tl31872"
 }, 
 "otu183808": {
 "^ot:originalLabel": "Phomopsis sp. 3", 
-"^ot:ottId": 712313, 
-"^ot:ottTaxonName": "Phomopsis", 
 "^ot:treebaseOTUId": "Tl31873"
 }, 
 "otu183809": {
 "^ot:originalLabel": "Diaporthe helianthi AY705842", 
-"^ot:ottId": 365526, 
-"^ot:ottTaxonName": "Diaporthe helianthi", 
 "^ot:treebaseOTUId": "Tl31874"
 }, 
 "otu183810": {
@@ -159,14 +116,10 @@
 }, 
 "otu183811": {
 "^ot:originalLabel": "Diaporthe helianthi AJ312354", 
-"^ot:ottId": 365526, 
-"^ot:ottTaxonName": "Diaporthe helianthi", 
 "^ot:treebaseOTUId": "Tl31876"
 }, 
 "otu183812": {
 "^ot:originalLabel": "Diaporthe helianthi AJ312364", 
-"^ot:ottId": 365526, 
-"^ot:ottTaxonName": "Diaporthe helianthi", 
 "^ot:treebaseOTUId": "Tl31877"
 }, 
 "otu183813": {
@@ -177,14 +130,10 @@
 }, 
 "otu183814": {
 "^ot:originalLabel": "Phomopsis sp. 9 AJ312348", 
-"^ot:ottId": 712313, 
-"^ot:ottTaxonName": "Phomopsis", 
 "^ot:treebaseOTUId": "Tl31879"
 }, 
 "otu183815": {
 "^ot:originalLabel": "Diaporthe aspalanthi CPC 5430", 
-"^ot:ottId": 99968, 
-"^ot:ottTaxonName": "Diaporthe aspalathi", 
 "^ot:treebaseOTUId": "Tl31880"
 }, 
 "otu183816": {
@@ -195,26 +144,20 @@
 }, 
 "otu183817": {
 "^ot:originalLabel": "Phomopsis cuppatea CPC 5416", 
-"^ot:ottId": 73716, 
-"^ot:ottTaxonName": "Diaporthe cuppatea", 
 "^ot:treebaseOTUId": "Tl31882"
 }, 
 "otu183818": {
 "^ot:originalLabel": "Cylindrocladiella peruviana AY793459 / AY725736", 
-"^ot:ottId": 315568, 
-"^ot:ottTaxonName": "Cylindrocladiella peruviana", 
+"^ot:ottId": 5317235, 
+"^ot:ottTaxonName": "Cylindrocladium peruvianum", 
 "^ot:treebaseOTUId": "Tl31883"
 }, 
 "otu183819": {
 "^ot:originalLabel": "Phomopsis sp. 9 CBS 117165", 
-"^ot:ottId": 712313, 
-"^ot:ottTaxonName": "Phomopsis", 
 "^ot:treebaseOTUId": "Tl31884"
 }, 
 "otu183820": {
 "^ot:originalLabel": "Phomopsis sp. 6 AY485734", 
-"^ot:ottId": 712313, 
-"^ot:ottTaxonName": "Phomopsis", 
 "^ot:treebaseOTUId": "Tl31885"
 }, 
 "otu183821": {
@@ -225,20 +168,14 @@
 }, 
 "otu183822": {
 "^ot:originalLabel": "Diaporthe ambigua CPC 5425", 
-"^ot:ottId": 263710, 
-"^ot:ottTaxonName": "Diaporthe ambigua", 
 "^ot:treebaseOTUId": "Tl31887"
 }, 
 "otu183823": {
 "^ot:originalLabel": "Diaporthe ambigua AJ458389", 
-"^ot:ottId": 263710, 
-"^ot:ottTaxonName": "Diaporthe ambigua", 
 "^ot:treebaseOTUId": "Tl31888"
 }, 
 "otu183824": {
 "^ot:originalLabel": "Diaporthe aspalanthi CBS 117168", 
-"^ot:ottId": 99968, 
-"^ot:ottTaxonName": "Diaporthe aspalathi", 
 "^ot:treebaseOTUId": "Tl31889"
 }, 
 "otu183825": {
@@ -249,32 +186,24 @@
 }, 
 "otu183826": {
 "^ot:originalLabel": "Phomopsis cuppatea CBS 117499", 
-"^ot:ottId": 73716, 
-"^ot:ottTaxonName": "Diaporthe cuppatea", 
 "^ot:treebaseOTUId": "Tl31891"
 }, 
 "otu183827": {
 "^ot:originalLabel": "Phomopsis vaccinii AF317557", 
-"^ot:ottId": 571488, 
-"^ot:ottTaxonName": "Phomopsis vaccinii", 
 "^ot:treebaseOTUId": "Tl31892"
 }, 
 "otu183828": {
 "^ot:originalLabel": "Phomopsis quercina", 
-"^ot:ottId": 1082191, 
-"^ot:ottTaxonName": "Phomopsis quercina", 
 "^ot:treebaseOTUId": "Tl31893"
 }, 
 "otu183829": {
 "^ot:originalLabel": "Diaporthe helianthi AJ312363", 
-"^ot:ottId": 365526, 
-"^ot:ottTaxonName": "Diaporthe helianthi", 
 "^ot:treebaseOTUId": "Tl31894"
 }, 
 "otu183830": {
 "^ot:originalLabel": "Diaporthe aspalanthi AF000564", 
-"^ot:ottId": 99968, 
-"^ot:ottTaxonName": "Diaporthe aspalathi", 
+"^ot:ottId": 730425, 
+"^ot:ottTaxonName": "Diaporthe meridionalis", 
 "^ot:treebaseOTUId": "Tl31895"
 }, 
 "otu183831": {
@@ -291,38 +220,28 @@
 }, 
 "otu183833": {
 "^ot:originalLabel": "Phomopsis sp. 6 AY485732", 
-"^ot:ottId": 712313, 
-"^ot:ottTaxonName": "Phomopsis", 
 "^ot:treebaseOTUId": "Tl31898"
 }, 
 "otu183834": {
 "^ot:originalLabel": "Diaporthe ambigua CBS 117170", 
-"^ot:ottId": 263710, 
-"^ot:ottTaxonName": "Diaporthe ambigua", 
 "^ot:treebaseOTUId": "Tl31899"
 }, 
 "otu183835": {
 "^ot:originalLabel": "Diaporthe ambigua CPC 5423", 
-"^ot:ottId": 263710, 
-"^ot:ottTaxonName": "Diaporthe ambigua", 
 "^ot:treebaseOTUId": "Tl31900"
 }, 
 "otu183836": {
 "^ot:originalLabel": "Diaporthe aspalanthi CBS 117500", 
-"^ot:ottId": 99968, 
-"^ot:ottTaxonName": "Diaporthe aspalathi", 
 "^ot:treebaseOTUId": "Tl31901"
 }, 
 "otu183837": {
 "^ot:originalLabel": "Diaporthe ambigua CBS 117373", 
-"^ot:ottId": 263710, 
-"^ot:ottTaxonName": "Diaporthe ambigua", 
 "^ot:treebaseOTUId": "Tl31902"
 }, 
 "otu183838": {
 "^ot:originalLabel": "Diaporthe aspalanthi AF001015", 
-"^ot:ottId": 99968, 
-"^ot:ottTaxonName": "Diaporthe aspalathi", 
+"^ot:ottId": 730425, 
+"^ot:ottTaxonName": "Diaporthe meridionalis", 
 "^ot:treebaseOTUId": "Tl31903"
 }, 
 "otu183839": {
@@ -339,86 +258,58 @@
 }, 
 "otu183841": {
 "^ot:originalLabel": "Diaporthe ambigua CBS 117371", 
-"^ot:ottId": 263710, 
-"^ot:ottTaxonName": "Diaporthe ambigua", 
 "^ot:treebaseOTUId": "Tl31906"
 }, 
 "otu183842": {
 "^ot:originalLabel": "Phomopsis magnoliae", 
-"^ot:ottId": 905739, 
-"^ot:ottTaxonName": "Phomopsis magnoliae", 
 "^ot:treebaseOTUId": "Tl31907"
 }, 
 "otu183843": {
 "^ot:originalLabel": "Diaporthe ambigua CBS 117374", 
-"^ot:ottId": 263710, 
-"^ot:ottTaxonName": "Diaporthe ambigua", 
 "^ot:treebaseOTUId": "Tl31909"
 }, 
 "otu183844": {
 "^ot:originalLabel": "Diaporthe helianthi AJ312358", 
-"^ot:ottId": 365526, 
-"^ot:ottTaxonName": "Diaporthe helianthi", 
 "^ot:treebaseOTUId": "Tl31910"
 }, 
 "otu183845": {
 "^ot:originalLabel": "Phomopsis vaccinii AF317563", 
-"^ot:ottId": 571488, 
-"^ot:ottTaxonName": "Phomopsis vaccinii", 
 "^ot:treebaseOTUId": "Tl31911"
 }, 
 "otu183846": {
 "^ot:originalLabel": "Phomopsis sp. 4", 
-"^ot:ottId": 712313, 
-"^ot:ottTaxonName": "Phomopsis", 
 "^ot:treebaseOTUId": "Tl31912"
 }, 
 "otu183847": {
 "^ot:originalLabel": "Diaporthe ambigua CPC 5419", 
-"^ot:ottId": 263710, 
-"^ot:ottTaxonName": "Diaporthe ambigua", 
 "^ot:treebaseOTUId": "Tl31913"
 }, 
 "otu183848": {
 "^ot:originalLabel": "Diaporthe ambigua CBS 117167", 
-"^ot:ottId": 263710, 
-"^ot:ottTaxonName": "Diaporthe ambigua", 
 "^ot:treebaseOTUId": "Tl31914"
 }, 
 "otu183849": {
 "^ot:originalLabel": "Phomopsis amygdali AF230755", 
-"^ot:ottId": 720670, 
-"^ot:ottTaxonName": "Diaporthe amygdali", 
 "^ot:treebaseOTUId": "Tl31915"
 }, 
 "otu183850": {
 "^ot:originalLabel": "Diaporthe aspalanthi CPC 5410", 
-"^ot:ottId": 99968, 
-"^ot:ottTaxonName": "Diaporthe aspalathi", 
 "^ot:treebaseOTUId": "Tl31916"
 }, 
 "otu183851": {
 "^ot:originalLabel": "Diaporthe ambigua CPC 5412", 
-"^ot:ottId": 263710, 
-"^ot:ottTaxonName": "Diaporthe ambigua", 
 "^ot:treebaseOTUId": "Tl31917"
 }, 
 "otu183852": {
 "^ot:originalLabel": "Diaporthe ambigua CBS 117372", 
-"^ot:ottId": 263710, 
-"^ot:ottTaxonName": "Diaporthe ambigua", 
 "^ot:treebaseOTUId": "Tl31918"
 }, 
 "otu183853": {
 "^ot:originalLabel": "Phomopsis sp. 5", 
-"^ot:ottId": 712313, 
-"^ot:ottTaxonName": "Phomopsis", 
 "^ot:treebaseOTUId": "Tl31919"
 }, 
 "otu183854": {
 "^ot:originalLabel": "Phomopsis sp. 8", 
-"^ot:ottId": 712313, 
-"^ot:ottTaxonName": "Phomopsis", 
 "^ot:treebaseOTUId": "Tl31920"
 }, 
 "otu183855": {
@@ -429,32 +320,22 @@
 }, 
 "otu183856": {
 "^ot:originalLabel": "Phomopsis sp. 9 AJ312366", 
-"^ot:ottId": 712313, 
-"^ot:ottTaxonName": "Phomopsis", 
 "^ot:treebaseOTUId": "Tl31922"
 }, 
 "otu183857": {
 "^ot:originalLabel": "Diaporthe ambigua CPC 5409", 
-"^ot:ottId": 263710, 
-"^ot:ottTaxonName": "Diaporthe ambigua", 
 "^ot:treebaseOTUId": "Tl31923"
 }, 
 "otu183858": {
 "^ot:originalLabel": "Phomopsis amygdali AF102997", 
-"^ot:ottId": 720670, 
-"^ot:ottTaxonName": "Diaporthe amygdali", 
 "^ot:treebaseOTUId": "Tl31924"
 }, 
 "otu183859": {
 "^ot:originalLabel": "Diaporthe aspalanthi CBS 117169", 
-"^ot:ottId": 99968, 
-"^ot:ottTaxonName": "Diaporthe aspalathi", 
 "^ot:treebaseOTUId": "Tl31925"
 }, 
 "otu183860": {
 "^ot:originalLabel": "Diaporthe ambigua CPC 5413", 
-"^ot:ottId": 263710, 
-"^ot:ottTaxonName": "Diaporthe ambigua", 
 "^ot:treebaseOTUId": "Tl31926"
 }, 
 "otu183861": {
@@ -471,20 +352,14 @@
 }, 
 "otu183863": {
 "^ot:originalLabel": "Phomopsis cuppatea R164AN", 
-"^ot:ottId": 73716, 
-"^ot:ottTaxonName": "Diaporthe cuppatea", 
 "^ot:treebaseOTUId": "Tl31929"
 }, 
 "otu183864": {
 "^ot:originalLabel": "Diaporthe phaseolus var. caulivora", 
-"^ot:ottId": 737678, 
-"^ot:ottTaxonName": "Diaporthe phaseolorum", 
 "^ot:treebaseOTUId": "Tl31930"
 }, 
 "otu183865": {
 "^ot:originalLabel": "Phomopsis sp. 7", 
-"^ot:ottId": 712313, 
-"^ot:ottTaxonName": "Phomopsis", 
 "^ot:treebaseOTUId": "Tl31931"
 }, 
 "otu183866": {
@@ -501,8 +376,6 @@
 }, 
 "otu183868": {
 "^ot:originalLabel": "Phomopsis longicolla AF000207", 
-"^ot:ottId": 931953, 
-"^ot:ottTaxonName": "Diaporthe longicolla", 
 "^ot:treebaseOTUId": "Tl31934"
 }, 
 "otu183869": {
@@ -513,8 +386,6 @@
 }, 
 "otu183870": {
 "^ot:originalLabel": "Diaporthe aspalanthi AF001016", 
-"^ot:ottId": 99968, 
-"^ot:ottTaxonName": "Diaporthe aspalathi", 
 "^ot:treebaseOTUId": "Tl31936"
 }, 
 "otu183871": {
@@ -525,8 +396,6 @@
 }, 
 "otu183872": {
 "^ot:originalLabel": "Diaporthe ambigua AF230768", 
-"^ot:ottId": 263710, 
-"^ot:ottTaxonName": "Diaporthe ambigua", 
 "^ot:treebaseOTUId": "Tl5131"
 }, 
 "otu183873": {
@@ -537,8 +406,6 @@
 }, 
 "otu183874": {
 "^ot:originalLabel": "Phomopsis longicolla AF000211", 
-"^ot:ottId": 931953, 
-"^ot:ottTaxonName": "Diaporthe longicolla", 
 "^ot:treebaseOTUId": "Tl5145"
 }, 
 "otu183875": {
@@ -555,8 +422,6 @@
 }, 
 "otu183877": {
 "^ot:originalLabel": "Diaporthe ambigua AF230767", 
-"^ot:ottId": 263710, 
-"^ot:ottTaxonName": "Diaporthe ambigua", 
 "^ot:treebaseOTUId": "Tl5152"
 }, 
 "otu183878": {
@@ -578,9 +443,15 @@
 "treeById": {
 "tree1199": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "MP, ITS", 
 "^ot:inGroupClade": "node422759", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node422757", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node422757": {
 "edge422758": {
@@ -1503,10 +1374,17 @@
 }, 
 "tree1200": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "MP, ITS + EF-1", 
 "^ot:inGroupClade": "node422890", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node422888", 
-"^ot:tag": "ITS", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [
+"ITS"
+], 
 "edgeBySourceId": {
 "node422888": {
 "edge422889": {

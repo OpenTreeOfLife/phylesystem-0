@@ -19,48 +19,11 @@
 "@id": "peyotl-validator", 
 "@name": "validate_ot_nexson.py", 
 "@url": "https://github.com/OpenTreeOfLife/peyotl", 
-"@version": "0.0.3a", 
+"@version": "0.0.4a", 
 "invocation": {
-"checksPerformed": [
-"MISSING_MANDATORY_KEY", 
-"MISSING_OPTIONAL_KEY", 
-"UNRECOGNIZED_KEY", 
-"MISSING_LIST_EXPECTED", 
-"DUPLICATING_SINGLETON_KEY", 
-"REFERENCED_ID_NOT_FOUND", 
-"REPEATED_ID", 
-"REPEATED_OTU", 
-"MULTIPLE_ROOT_NODES", 
-"NO_ROOT_NODE", 
-"MULTIPLE_EDGES_FOR_NODES", 
-"CYCLE_DETECTED", 
-"DISCONNECTED_GRAPH_DETECTED", 
-"INCORRECT_ROOT_NODE_LABEL", 
-"TIP_WITHOUT_OTU", 
-"TIP_WITHOUT_OTT_ID", 
-"MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
-"NON_MONOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
-"INVALID_PROPERTY_VALUE", 
-"PROPERTY_VALUE_NOT_USEFUL", 
-"UNRECOGNIZED_PROPERTY_VALUE", 
-"MULTIPLE_TREES", 
-"UNRECOGNIZED_TAG", 
-"CONFLICTING_PROPERTY_VALUES", 
-"NO_TREES", 
-"DEPRECATED_PROPERTY", 
-"UNPARSEABLE_META", 
-"UNREACHABLE_NODE", 
-"INCORRECT_VALUE_TYPE", 
-"MISSING_CRUCIAL_CONTENT"
-], 
 "commandLine": [
 "--embed", 
-"--agent-only", 
-"-e", 
-"../mig-phyelesystem-scratch/2485/validation.json", 
-"-o", 
-"../mig-phyelesystem-scratch/2485/final.json", 
-"../mig-phyelesystem-scratch/2485/v1.2.1-2485.json"
+"--agent-only"
 ], 
 "otherProperty": [
 {
@@ -76,12 +39,17 @@
 }
 ]
 }, 
+"^ot:annotationEvents": {
+"annotation": []
+}, 
+"^ot:candidateTreeForSynthesis": [], 
 "^ot:curatorName": "Romina Gazis", 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S11818"
 }, 
-"^ot:focalClade": 4763449, 
-"^ot:focalCladeOTTTaxonName": "Epichlo\u00eb", 
+"^ot:messages": {
+"message": []
+}, 
 "^ot:otusElementOrder": [
 "otus2485"
 ], 
@@ -91,6 +59,7 @@
 }, 
 "^ot:studyPublicationReference": "Oberhofer M., & Leuchtmann A. 2012. \"Genetic diversity in epichloid endophytes of Hordelymus europaeus suggests repeated host jumps and interspecific hybridizations.\" Molecular Ecology 21, no. 11: 2713-2726.", 
 "^ot:studyYear": 2012, 
+"^ot:tag": [], 
 "^ot:treesElementOrder": [
 "trees2485"
 ], 
@@ -241,8 +210,8 @@
 }, 
 "otu359297": {
 "^ot:originalLabel": "Epichloe brachyelythri AF062427", 
-"^ot:ottId": 4058922, 
-"^ot:ottTaxonName": "Epichlo\u00eb brachyelytri", 
+"^ot:ottId": 905108, 
+"^ot:ottTaxonName": "Epichloe brachyelytri", 
 "^ot:treebaseOTUId": "Tl1054425"
 }, 
 "otu359298": {
@@ -305,8 +274,6 @@
 }, 
 "otu359311": {
 "^ot:originalLabel": "Neotyphodium sp. A1 2 JF718438", 
-"^ot:ottId": 477070, 
-"^ot:ottTaxonName": "Neotyphodium sp. HeuTG-3", 
 "^ot:treebaseOTUId": "Tl1054439"
 }, 
 "otu359312": {
@@ -375,8 +342,8 @@
 }, 
 "otu359326": {
 "^ot:originalLabel": "Epichloe brachyelythri AF250736", 
-"^ot:ottId": 4058922, 
-"^ot:ottTaxonName": "Epichlo\u00eb brachyelytri", 
+"^ot:ottId": 905108, 
+"^ot:ottTaxonName": "Epichloe brachyelytri", 
 "^ot:treebaseOTUId": "Tl1054454"
 }, 
 "otu359327": {
@@ -407,8 +374,6 @@
 }, 
 "otu359332": {
 "^ot:originalLabel": "Neotyphodium sp. A1 1 JF718437", 
-"^ot:ottId": 477070, 
-"^ot:ottTaxonName": "Neotyphodium sp. HeuTG-3", 
 "^ot:treebaseOTUId": "Tl1054460"
 }, 
 "otu359333": {
@@ -433,7 +398,7 @@
 }, 
 "otu359337": {
 "^ot:originalLabel": "Epichloe clarkii AF250738", 
-"^ot:ottId": 128045, 
+"^ot:ottId": 4058905, 
 "^ot:ottTaxonName": "Epichloe clarkii", 
 "^ot:treebaseOTUId": "Tl1054465"
 }, 
@@ -555,7 +520,7 @@
 }, 
 "otu359363": {
 "^ot:originalLabel": "Epichloe clarkii AF231207", 
-"^ot:ottId": 128045, 
+"^ot:ottId": 4058905, 
 "^ot:ottTaxonName": "Epichloe clarkii", 
 "^ot:treebaseOTUId": "Tl1054491"
 }, 
@@ -681,8 +646,6 @@
 }, 
 "otu359391": {
 "^ot:originalLabel": "Neotyphodium sp. A1 1 JF718490", 
-"^ot:ottId": 477070, 
-"^ot:ottTaxonName": "Neotyphodium sp. HeuTG-3", 
 "^ot:treebaseOTUId": "Tl1054519"
 }, 
 "otu359392": {
@@ -830,9 +793,15 @@
 "treeById": {
 "tree5344": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "ML, EF-1", 
 "^ot:inGroupClade": "node924364", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node924364", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node924364": {
 "edge924365": {
@@ -1645,9 +1614,15 @@
 }, 
 "tree5345": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "ML, b-tubulin", 
 "^ot:inGroupClade": "node924465", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node924465", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node924465": {
 "edge924466": {

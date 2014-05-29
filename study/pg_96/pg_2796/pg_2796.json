@@ -19,48 +19,11 @@
 "@id": "peyotl-validator", 
 "@name": "validate_ot_nexson.py", 
 "@url": "https://github.com/OpenTreeOfLife/peyotl", 
-"@version": "0.0.3a", 
+"@version": "0.0.4a", 
 "invocation": {
-"checksPerformed": [
-"MISSING_MANDATORY_KEY", 
-"MISSING_OPTIONAL_KEY", 
-"UNRECOGNIZED_KEY", 
-"MISSING_LIST_EXPECTED", 
-"DUPLICATING_SINGLETON_KEY", 
-"REFERENCED_ID_NOT_FOUND", 
-"REPEATED_ID", 
-"REPEATED_OTU", 
-"MULTIPLE_ROOT_NODES", 
-"NO_ROOT_NODE", 
-"MULTIPLE_EDGES_FOR_NODES", 
-"CYCLE_DETECTED", 
-"DISCONNECTED_GRAPH_DETECTED", 
-"INCORRECT_ROOT_NODE_LABEL", 
-"TIP_WITHOUT_OTU", 
-"TIP_WITHOUT_OTT_ID", 
-"MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
-"NON_MONOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
-"INVALID_PROPERTY_VALUE", 
-"PROPERTY_VALUE_NOT_USEFUL", 
-"UNRECOGNIZED_PROPERTY_VALUE", 
-"MULTIPLE_TREES", 
-"UNRECOGNIZED_TAG", 
-"CONFLICTING_PROPERTY_VALUES", 
-"NO_TREES", 
-"DEPRECATED_PROPERTY", 
-"UNPARSEABLE_META", 
-"UNREACHABLE_NODE", 
-"INCORRECT_VALUE_TYPE", 
-"MISSING_CRUCIAL_CONTENT"
-], 
 "commandLine": [
 "--embed", 
-"--agent-only", 
-"-e", 
-"../mig-phyelesystem-scratch/2796/validation.json", 
-"-o", 
-"../mig-phyelesystem-scratch/2796/final.json", 
-"../mig-phyelesystem-scratch/2796/v1.2.1-2796.json"
+"--agent-only"
 ], 
 "otherProperty": [
 {
@@ -76,9 +39,16 @@
 }
 ]
 }, 
+"^ot:annotationEvents": {
+"annotation": []
+}, 
+"^ot:candidateTreeForSynthesis": [], 
 "^ot:curatorName": "Joseph Brown", 
 "^ot:focalClade": 881043, 
 "^ot:focalCladeOTTTaxonName": "Pipridae", 
+"^ot:messages": {
+"message": []
+}, 
 "^ot:otusElementOrder": [
 "otus2796"
 ], 
@@ -86,9 +56,11 @@
 "^ot:studyPublication": {
 "@href": "http://dx.doi.org/10.1016/j.ympev.2013.06.024"
 }, 
-"^ot:studyPublicationReference": "Jan I. Ohlson, Jon Fjelds\u00e5, Per G.P. Ericson. 2013. Molecular phylogeny of the manakins (Aves: Passeriformes: Pipridae), with a new classification and the description of a new genus. Molecular Phylogenetics and Evolution 69 (3): 796-804.", 
+"^ot:studyPublicationReference": "Ohlson, Jan I., Jon Fjelds\u00e5, Per G.P. Ericson. 2013. Molecular phylogeny of the manakins (Aves: Passeriformes: Pipridae), with a new classification and the description of a new genus. Molecular Phylogenetics and Evolution 69 (3): 796-804.", 
 "^ot:studyYear": 2013, 
-"^ot:tag": "ingroup added;", 
+"^ot:tag": [
+"ingroup added;"
+], 
 "^ot:treesElementOrder": [
 "trees2796"
 ], 
@@ -131,7 +103,9 @@
 "^ot:ottTaxonName": "Onychorhynchus coronatus"
 }, 
 "otu414340": {
-"^ot:originalLabel": "Piprites pileatus"
+"^ot:originalLabel": "Piprites pileatus", 
+"^ot:ottId": 32471, 
+"^ot:ottTaxonName": "Piprites pileata"
 }, 
 "otu414341": {
 "^ot:originalLabel": "Leptopogon amaurocephalus", 
@@ -185,11 +159,13 @@
 }, 
 "otu414351": {
 "^ot:originalLabel": "Chloropipo flavicapilla", 
-"^ot:ottId": 106931, 
-"^ot:ottTaxonName": "Brevibacillus sp. Ds07"
+"^ot:ottId": 3598413, 
+"^ot:ottTaxonName": "Chloropipo flavicapilla"
 }, 
 "otu414352": {
-"^ot:originalLabel": "Chloropipo unicolor"
+"^ot:originalLabel": "Chloropipo unicolor", 
+"^ot:ottId": 485120, 
+"^ot:ottTaxonName": "Xenopipo unicolor"
 }, 
 "otu414353": {
 "^ot:originalLabel": "Antilophia galeata", 
@@ -237,10 +213,14 @@
 "^ot:ottTaxonName": "Xenopipo uniformis"
 }, 
 "otu414362": {
-"^ot:originalLabel": "Chloropipo holochlora holochlora"
+"^ot:originalLabel": "Chloropipo holochlora holochlora", 
+"^ot:ottId": 5223434, 
+"^ot:ottTaxonName": "Cryptopipo holochlora holochlora"
 }, 
 "otu414363": {
-"^ot:originalLabel": "Chloropipo holochlora litae"
+"^ot:originalLabel": "Chloropipo holochlora litae", 
+"^ot:ottId": 5223433, 
+"^ot:ottTaxonName": "Cryptopipo holochlora litae"
 }, 
 "otu414364": {
 "^ot:originalLabel": "Lepidothrix serena", 
@@ -375,10 +355,15 @@
 "treeById": {
 "tree6491": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
 "^ot:branchLengthMode": "ot:substitutionCount", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "Bayesian consensus", 
 "^ot:inGroupClade": "node1121466", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node1121440", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node1121440": {
 "edge1121441": {

@@ -19,48 +19,11 @@
 "@id": "peyotl-validator", 
 "@name": "validate_ot_nexson.py", 
 "@url": "https://github.com/OpenTreeOfLife/peyotl", 
-"@version": "0.0.3a", 
+"@version": "0.0.4a", 
 "invocation": {
-"checksPerformed": [
-"MISSING_MANDATORY_KEY", 
-"MISSING_OPTIONAL_KEY", 
-"UNRECOGNIZED_KEY", 
-"MISSING_LIST_EXPECTED", 
-"DUPLICATING_SINGLETON_KEY", 
-"REFERENCED_ID_NOT_FOUND", 
-"REPEATED_ID", 
-"REPEATED_OTU", 
-"MULTIPLE_ROOT_NODES", 
-"NO_ROOT_NODE", 
-"MULTIPLE_EDGES_FOR_NODES", 
-"CYCLE_DETECTED", 
-"DISCONNECTED_GRAPH_DETECTED", 
-"INCORRECT_ROOT_NODE_LABEL", 
-"TIP_WITHOUT_OTU", 
-"TIP_WITHOUT_OTT_ID", 
-"MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
-"NON_MONOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
-"INVALID_PROPERTY_VALUE", 
-"PROPERTY_VALUE_NOT_USEFUL", 
-"UNRECOGNIZED_PROPERTY_VALUE", 
-"MULTIPLE_TREES", 
-"UNRECOGNIZED_TAG", 
-"CONFLICTING_PROPERTY_VALUES", 
-"NO_TREES", 
-"DEPRECATED_PROPERTY", 
-"UNPARSEABLE_META", 
-"UNREACHABLE_NODE", 
-"INCORRECT_VALUE_TYPE", 
-"MISSING_CRUCIAL_CONTENT"
-], 
 "commandLine": [
 "--embed", 
-"--agent-only", 
-"-e", 
-"../mig-phyelesystem-scratch/2532/validation.json", 
-"-o", 
-"../mig-phyelesystem-scratch/2532/final.json", 
-"../mig-phyelesystem-scratch/2532/v1.2.1-2532.json"
+"--agent-only"
 ], 
 "otherProperty": [
 {
@@ -76,18 +39,26 @@
 }
 ]
 }, 
+"^ot:annotationEvents": {
+"annotation": []
+}, 
+"^ot:candidateTreeForSynthesis": [], 
 "^ot:curatorName": "Romina Gazis", 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S1020"
 }, 
 "^ot:focalClade": 827790, 
 "^ot:focalCladeOTTTaxonName": "Mycosphaerellaceae", 
+"^ot:messages": {
+"message": []
+}, 
 "^ot:otusElementOrder": [
 "otus2532"
 ], 
 "^ot:studyId": "2532", 
 "^ot:studyPublicationReference": "Crous, P. W., J. Z. Groenewald, M. J. Wingfield, and A. Aptroot. \"The value of ascospore septation in separating Mycosphaerella from Sphaerulina in the Dothi-deales: a Saccardoan myth?.\" SYDOWIA-HORN- 55, no. 2 (2003): 136-152.", 
 "^ot:studyYear": 2003, 
+"^ot:tag": [], 
 "^ot:treesElementOrder": [
 "trees2532"
 ], 
@@ -204,6 +175,8 @@
 }, 
 "otu363736": {
 "^ot:originalLabel": "Microdochium sp. AF455402", 
+"^ot:ottId": 1088819, 
+"^ot:ottTaxonName": "Microdochium", 
 "^ot:treebaseOTUId": "Tl15742"
 }, 
 "otu363737": {
@@ -244,10 +217,14 @@
 }, 
 "otu363743": {
 "^ot:originalLabel": "Microdochium sp. AJ279489", 
+"^ot:ottId": 1088819, 
+"^ot:ottTaxonName": "Microdochium", 
 "^ot:treebaseOTUId": "Tl15753"
 }, 
 "otu363744": {
 "^ot:originalLabel": "Phaeoramularia dissiliens", 
+"^ot:ottId": 3720154, 
+"^ot:ottTaxonName": "Passalora dissiliens", 
 "^ot:treebaseOTUId": "Tl15756"
 }, 
 "otu363745": {
@@ -320,6 +297,8 @@
 }, 
 "otu363757": {
 "^ot:originalLabel": "Mycosphaerella crystallina", 
+"^ot:ottId": 5319577, 
+"^ot:ottTaxonName": "Mycosphaerella crystallina", 
 "^ot:treebaseOTUId": "Tl235626"
 }, 
 "otu363758": {
@@ -364,6 +343,8 @@
 }, 
 "otu363765": {
 "^ot:originalLabel": "Septoria rosae", 
+"^ot:ottId": 5319626, 
+"^ot:ottTaxonName": "Sphaerulina rehmiana", 
 "^ot:treebaseOTUId": "Tl235649"
 }, 
 "otu363766": {
@@ -374,6 +355,8 @@
 }, 
 "otu363767": {
 "^ot:originalLabel": "Mycosphaerella heimioides", 
+"^ot:ottId": 5319580, 
+"^ot:ottTaxonName": "Mycosphaerella heimioides", 
 "^ot:treebaseOTUId": "Tl235651"
 }, 
 "otu363768": {
@@ -428,6 +411,8 @@
 }, 
 "otu363777": {
 "^ot:originalLabel": "Mycosphaerella irregulariramosa", 
+"^ot:ottId": 5319579, 
+"^ot:ottTaxonName": "Mycosphaerella irregulariramosa", 
 "^ot:treebaseOTUId": "Tl235670"
 }, 
 "otu363778": {
@@ -456,6 +441,8 @@
 }, 
 "otu363782": {
 "^ot:originalLabel": "Mycosphaerella heimii", 
+"^ot:ottId": 5319613, 
+"^ot:ottTaxonName": "Mycosphaerella heimii", 
 "^ot:treebaseOTUId": "Tl235680"
 }, 
 "otu363783": {
@@ -482,9 +469,15 @@
 "treeById": {
 "tree5450": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "NJ, ITS", 
 "^ot:inGroupClade": "node935571", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node935569", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node935569": {
 "edge935570": {

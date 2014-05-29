@@ -19,48 +19,11 @@
 "@id": "peyotl-validator", 
 "@name": "validate_ot_nexson.py", 
 "@url": "https://github.com/OpenTreeOfLife/peyotl", 
-"@version": "0.0.3a", 
+"@version": "0.0.4a", 
 "invocation": {
-"checksPerformed": [
-"MISSING_MANDATORY_KEY", 
-"MISSING_OPTIONAL_KEY", 
-"UNRECOGNIZED_KEY", 
-"MISSING_LIST_EXPECTED", 
-"DUPLICATING_SINGLETON_KEY", 
-"REFERENCED_ID_NOT_FOUND", 
-"REPEATED_ID", 
-"REPEATED_OTU", 
-"MULTIPLE_ROOT_NODES", 
-"NO_ROOT_NODE", 
-"MULTIPLE_EDGES_FOR_NODES", 
-"CYCLE_DETECTED", 
-"DISCONNECTED_GRAPH_DETECTED", 
-"INCORRECT_ROOT_NODE_LABEL", 
-"TIP_WITHOUT_OTU", 
-"TIP_WITHOUT_OTT_ID", 
-"MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
-"NON_MONOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
-"INVALID_PROPERTY_VALUE", 
-"PROPERTY_VALUE_NOT_USEFUL", 
-"UNRECOGNIZED_PROPERTY_VALUE", 
-"MULTIPLE_TREES", 
-"UNRECOGNIZED_TAG", 
-"CONFLICTING_PROPERTY_VALUES", 
-"NO_TREES", 
-"DEPRECATED_PROPERTY", 
-"UNPARSEABLE_META", 
-"UNREACHABLE_NODE", 
-"INCORRECT_VALUE_TYPE", 
-"MISSING_CRUCIAL_CONTENT"
-], 
 "commandLine": [
 "--embed", 
-"--agent-only", 
-"-e", 
-"../mig-phyelesystem-scratch/2407/validation.json", 
-"-o", 
-"../mig-phyelesystem-scratch/2407/final.json", 
-"../mig-phyelesystem-scratch/2407/v1.2.1-2407.json"
+"--agent-only"
 ], 
 "otherProperty": [
 {
@@ -76,12 +39,19 @@
 }
 ]
 }, 
+"^ot:annotationEvents": {
+"annotation": []
+}, 
+"^ot:candidateTreeForSynthesis": [], 
 "^ot:curatorName": "Chris Owen", 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S1013"
 }, 
 "^ot:focalClade": 117569, 
 "^ot:focalCladeOTTTaxonName": "Bilateria", 
+"^ot:messages": {
+"message": []
+}, 
 "^ot:otusElementOrder": [
 "otus2407"
 ], 
@@ -91,6 +61,7 @@
 }, 
 "^ot:studyPublicationReference": "Anderson F., Cordoba A., and Thollesson M. 2004. Bilaterian phylogeny based on analyses of a region of the sodium-potassium ATPase alpha subunit gene. Journal of Molecular Evolution 58 (3): 252-268.", 
 "^ot:studyYear": 2004, 
+"^ot:tag": [], 
 "^ot:treesElementOrder": [
 "trees2407"
 ], 
@@ -201,6 +172,8 @@
 }, 
 "otu341890": {
 "^ot:originalLabel": "Homo sapiens", 
+"^ot:ottId": 770315, 
+"^ot:ottTaxonName": "Homo sapiens", 
 "^ot:treebaseOTUId": "Tl138872"
 }, 
 "otu341891": {
@@ -235,6 +208,8 @@
 }, 
 "otu341899": {
 "^ot:originalLabel": "Homo sapiens ATPa1", 
+"^ot:ottId": 770315, 
+"^ot:ottTaxonName": "Homo sapiens", 
 "^ot:treebaseOTUId": "Tl14669"
 }, 
 "otu341900": {
@@ -297,6 +272,8 @@
 }, 
 "otu341911": {
 "^ot:originalLabel": "Lepidochitona hartwegi", 
+"^ot:ottId": 2866728, 
+"^ot:ottTaxonName": "Lepidochitona hartwegii", 
 "^ot:treebaseOTUId": "Tl14683"
 }, 
 "otu341912": {
@@ -440,9 +417,15 @@
 "treeById": {
 "tree5076": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "Fig. 4 - Parsimony", 
 "^ot:inGroupClade": "node879426", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node879424", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node879424": {
 "edge879425": {
@@ -1148,10 +1131,17 @@
 }, 
 "tree6390": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "Fig 1 & 2 ML", 
 "^ot:inGroupClade": "node1112700", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node1112699", 
-"^ot:tag": "choose me", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [
+"choose me"
+], 
 "edgeBySourceId": {
 "node1112699": {
 "edge1112700": {

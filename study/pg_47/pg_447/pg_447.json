@@ -19,48 +19,11 @@
 "@id": "peyotl-validator", 
 "@name": "validate_ot_nexson.py", 
 "@url": "https://github.com/OpenTreeOfLife/peyotl", 
-"@version": "0.0.3a", 
+"@version": "0.0.4a", 
 "invocation": {
-"checksPerformed": [
-"MISSING_MANDATORY_KEY", 
-"MISSING_OPTIONAL_KEY", 
-"UNRECOGNIZED_KEY", 
-"MISSING_LIST_EXPECTED", 
-"DUPLICATING_SINGLETON_KEY", 
-"REFERENCED_ID_NOT_FOUND", 
-"REPEATED_ID", 
-"REPEATED_OTU", 
-"MULTIPLE_ROOT_NODES", 
-"NO_ROOT_NODE", 
-"MULTIPLE_EDGES_FOR_NODES", 
-"CYCLE_DETECTED", 
-"DISCONNECTED_GRAPH_DETECTED", 
-"INCORRECT_ROOT_NODE_LABEL", 
-"TIP_WITHOUT_OTU", 
-"TIP_WITHOUT_OTT_ID", 
-"MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
-"NON_MONOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
-"INVALID_PROPERTY_VALUE", 
-"PROPERTY_VALUE_NOT_USEFUL", 
-"UNRECOGNIZED_PROPERTY_VALUE", 
-"MULTIPLE_TREES", 
-"UNRECOGNIZED_TAG", 
-"CONFLICTING_PROPERTY_VALUES", 
-"NO_TREES", 
-"DEPRECATED_PROPERTY", 
-"UNPARSEABLE_META", 
-"UNREACHABLE_NODE", 
-"INCORRECT_VALUE_TYPE", 
-"MISSING_CRUCIAL_CONTENT"
-], 
 "commandLine": [
 "--embed", 
-"--agent-only", 
-"-e", 
-"../mig-phyelesystem-scratch/447/validation.json", 
-"-o", 
-"../mig-phyelesystem-scratch/447/final.json", 
-"../mig-phyelesystem-scratch/447/v1.2.1-447.json"
+"--agent-only"
 ], 
 "otherProperty": [
 {
@@ -76,12 +39,19 @@
 }
 ]
 }, 
+"^ot:annotationEvents": {
+"annotation": []
+}, 
+"^ot:candidateTreeForSynthesis": [], 
 "^ot:curatorName": "Romina Gazis", 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S1544"
 }, 
 "^ot:focalClade": 668676, 
 "^ot:focalCladeOTTTaxonName": "Aurapex", 
+"^ot:messages": {
+"message": []
+}, 
 "^ot:otusElementOrder": [
 "otus447"
 ], 
@@ -91,6 +61,7 @@
 }, 
 "^ot:studyPublicationReference": "Gryzenhout M., Myburg H., Rodas C., Wingfield B., & Wingfield M.J. 2006. Aurapex penicillata gen. sp. nov. from native Miconia theaezans and Tibouchina spp. in Colombia. Mycologia, 98: 105-115.", 
 "^ot:studyYear": 2006, 
+"^ot:tag": [], 
 "^ot:treesElementOrder": [
 "trees447"
 ], 
@@ -98,9 +69,9 @@
 "otus447": {
 "otuById": {
 "otu160410": {
-"^ot:altLabel": "Cryphonectria macrospora", 
 "^ot:originalLabel": "Cryphonectria macrospora CMW 10463 JAPAN", 
 "^ot:ottId": 60069, 
+"^ot:ottTaxonName": "Cryphonectria macrospora", 
 "^ot:treebaseOTUId": "Tl31044"
 }, 
 "otu160411": {
@@ -111,10 +82,14 @@
 }, 
 "otu160412": {
 "^ot:originalLabel": "Endothia gyrosa CMW 2091 USA", 
+"^ot:ottId": 5316851, 
+"^ot:ottTaxonName": "Endothia radicalis", 
 "^ot:treebaseOTUId": "Tl31063"
 }, 
 "otu160413": {
 "^ot:originalLabel": "Endothia gyrosa CMW 10442 USA", 
+"^ot:ottId": 5316851, 
+"^ot:ottTaxonName": "Endothia radicalis", 
 "^ot:treebaseOTUId": "Tl31065"
 }, 
 "otu160414": {
@@ -298,9 +273,15 @@
 "treeById": {
 "tree5576": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "MP, b-tubulin", 
 "^ot:inGroupClade": "node956004", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node956000", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node956000": {
 "edge956001": {

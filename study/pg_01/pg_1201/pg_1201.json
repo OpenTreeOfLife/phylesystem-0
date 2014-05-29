@@ -19,48 +19,11 @@
 "@id": "peyotl-validator", 
 "@name": "validate_ot_nexson.py", 
 "@url": "https://github.com/OpenTreeOfLife/peyotl", 
-"@version": "0.0.3a", 
+"@version": "0.0.4a", 
 "invocation": {
-"checksPerformed": [
-"MISSING_MANDATORY_KEY", 
-"MISSING_OPTIONAL_KEY", 
-"UNRECOGNIZED_KEY", 
-"MISSING_LIST_EXPECTED", 
-"DUPLICATING_SINGLETON_KEY", 
-"REFERENCED_ID_NOT_FOUND", 
-"REPEATED_ID", 
-"REPEATED_OTU", 
-"MULTIPLE_ROOT_NODES", 
-"NO_ROOT_NODE", 
-"MULTIPLE_EDGES_FOR_NODES", 
-"CYCLE_DETECTED", 
-"DISCONNECTED_GRAPH_DETECTED", 
-"INCORRECT_ROOT_NODE_LABEL", 
-"TIP_WITHOUT_OTU", 
-"TIP_WITHOUT_OTT_ID", 
-"MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
-"NON_MONOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
-"INVALID_PROPERTY_VALUE", 
-"PROPERTY_VALUE_NOT_USEFUL", 
-"UNRECOGNIZED_PROPERTY_VALUE", 
-"MULTIPLE_TREES", 
-"UNRECOGNIZED_TAG", 
-"CONFLICTING_PROPERTY_VALUES", 
-"NO_TREES", 
-"DEPRECATED_PROPERTY", 
-"UNPARSEABLE_META", 
-"UNREACHABLE_NODE", 
-"INCORRECT_VALUE_TYPE", 
-"MISSING_CRUCIAL_CONTENT"
-], 
 "commandLine": [
 "--embed", 
-"--agent-only", 
-"-e", 
-"../mig-phyelesystem-scratch/1201/validation.json", 
-"-o", 
-"../mig-phyelesystem-scratch/1201/final.json", 
-"../mig-phyelesystem-scratch/1201/v1.2.1-1201.json"
+"--agent-only"
 ], 
 "otherProperty": [
 {
@@ -76,9 +39,16 @@
 }
 ]
 }, 
+"^ot:annotationEvents": {
+"annotation": []
+}, 
+"^ot:candidateTreeForSynthesis": [], 
 "^ot:curatorName": "Romina Gazis", 
 "^ot:focalClade": 439373, 
 "^ot:focalCladeOTTTaxonName": "Ascomycota", 
+"^ot:messages": {
+"message": []
+}, 
 "^ot:otusElementOrder": [
 "otus1201"
 ], 
@@ -86,11 +56,11 @@
 "^ot:studyPublication": {
 "@href": "http://dx.doi.org/10.3767/003158512X652633"
 }, 
-"^ot:studyPublicationReference": "Crous, P. W., B. A. Summerell, R. G. Shivas, T. I. Burgess, C. A. Decock, L. L. Dreyer, L. L. Granke et al. \"Fungal Planet description sheets: 107-127.\" Persoonia-Molecular Phylogeny and Evolution of Fungi 28, no. 1 (2012): 138-182.", 
+"^ot:studyPublicationReference": "Crous, P. W., B. A. Summerell, R. G. Shivas, T. I. Burgess, C. A. Decock, L. L. Dreyer, L. L. Granke et al. 2012. Fungal Planet description sheets: 107-127. Persoonia-Molecular Phylogeny and Evolution of Fungi 28 (1): 138-182.", 
 "^ot:studyYear": 2012, 
 "^ot:tag": [
-"NJ", 
-"LSU"
+"LSU", 
+"NJ"
 ], 
 "^ot:treesElementOrder": [
 "trees1201"
@@ -107,13 +77,19 @@
 "^ot:ottTaxonName": "Gnomoniopsis smithogilvyi"
 }, 
 "otu231657": {
-"^ot:originalLabel": "Gnomoniopsis chamaemori EU255107"
+"^ot:originalLabel": "Gnomoniopsis chamaemori EU255107", 
+"^ot:ottId": 5316727, 
+"^ot:ottTaxonName": "Gnomonia chamaemori"
 }, 
 "otu231658": {
-"^ot:originalLabel": "Gnomonia comari EF212857"
+"^ot:originalLabel": "Gnomonia comari EF212857", 
+"^ot:ottId": 5316726, 
+"^ot:ottTaxonName": "Gnomonia comari"
 }, 
 "otu231659": {
-"^ot:originalLabel": "Endothia gyrosa DQ470972"
+"^ot:originalLabel": "Endothia gyrosa DQ470972", 
+"^ot:ottId": 5316851, 
+"^ot:ottTaxonName": "Endothia radicalis"
 }, 
 "otu231660": {
 "^ot:originalLabel": "Foliocryphia eucalypti GQ303307", 
@@ -141,7 +117,9 @@
 "^ot:ottTaxonName": "Pilidiella eucalyptorum"
 }, 
 "otu231665": {
-"^ot:originalLabel": "Pilidiella granati AF408380"
+"^ot:originalLabel": "Pilidiella granati AF408380", 
+"^ot:ottId": 228448, 
+"^ot:ottTaxonName": "Coniella granati"
 }, 
 "otu231666": {
 "^ot:originalLabel": "Chrysocrypta corymbiae CPC 19279", 
@@ -149,7 +127,9 @@
 "^ot:ottTaxonName": "Chrysocrypta corymbiae"
 }, 
 "otu231667": {
-"^ot:originalLabel": "Greeneria uvicola JN547720"
+"^ot:originalLabel": "Greeneria uvicola JN547720", 
+"^ot:ottId": 396956, 
+"^ot:ottTaxonName": "Phoma uvicola"
 }, 
 "otu231668": {
 "^ot:originalLabel": "Diaporthe eres AF362565"
@@ -274,7 +254,9 @@
 "^ot:ottTaxonName": "Camarosporium brabeji"
 }, 
 "otu231696": {
-"^ot:originalLabel": "Microdiplodia hawaiiensis DQ885897"
+"^ot:originalLabel": "Microdiplodia hawaiiensis DQ885897", 
+"^ot:ottId": 483468, 
+"^ot:ottTaxonName": "Paraconiothyrium hawaiiense"
 }, 
 "otu231697": {
 "^ot:originalLabel": "Coniothyrium nitidae EU552112", 
@@ -443,9 +425,14 @@
 "treeById": {
 "tree2423": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "NJ, LSU", 
 "^ot:inGroupClade": "node562398", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node562395", 
+"^ot:specifiedRoot": "", 
 "^ot:tag": [
 "NJ", 
 "LSU"

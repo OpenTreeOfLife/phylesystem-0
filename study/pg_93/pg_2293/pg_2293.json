@@ -19,48 +19,11 @@
 "@id": "peyotl-validator", 
 "@name": "validate_ot_nexson.py", 
 "@url": "https://github.com/OpenTreeOfLife/peyotl", 
-"@version": "0.0.3a", 
+"@version": "0.0.4a", 
 "invocation": {
-"checksPerformed": [
-"MISSING_MANDATORY_KEY", 
-"MISSING_OPTIONAL_KEY", 
-"UNRECOGNIZED_KEY", 
-"MISSING_LIST_EXPECTED", 
-"DUPLICATING_SINGLETON_KEY", 
-"REFERENCED_ID_NOT_FOUND", 
-"REPEATED_ID", 
-"REPEATED_OTU", 
-"MULTIPLE_ROOT_NODES", 
-"NO_ROOT_NODE", 
-"MULTIPLE_EDGES_FOR_NODES", 
-"CYCLE_DETECTED", 
-"DISCONNECTED_GRAPH_DETECTED", 
-"INCORRECT_ROOT_NODE_LABEL", 
-"TIP_WITHOUT_OTU", 
-"TIP_WITHOUT_OTT_ID", 
-"MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
-"NON_MONOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
-"INVALID_PROPERTY_VALUE", 
-"PROPERTY_VALUE_NOT_USEFUL", 
-"UNRECOGNIZED_PROPERTY_VALUE", 
-"MULTIPLE_TREES", 
-"UNRECOGNIZED_TAG", 
-"CONFLICTING_PROPERTY_VALUES", 
-"NO_TREES", 
-"DEPRECATED_PROPERTY", 
-"UNPARSEABLE_META", 
-"UNREACHABLE_NODE", 
-"INCORRECT_VALUE_TYPE", 
-"MISSING_CRUCIAL_CONTENT"
-], 
 "commandLine": [
 "--embed", 
-"--agent-only", 
-"-e", 
-"../mig-phyelesystem-scratch/2293/validation.json", 
-"-o", 
-"../mig-phyelesystem-scratch/2293/final.json", 
-"../mig-phyelesystem-scratch/2293/v1.2.1-2293.json"
+"--agent-only"
 ], 
 "otherProperty": [
 {
@@ -76,12 +39,19 @@
 }
 ]
 }, 
+"^ot:annotationEvents": {
+"annotation": []
+}, 
+"^ot:candidateTreeForSynthesis": [], 
 "^ot:curatorName": "Romina Gazis", 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S12670"
 }, 
 "^ot:focalClade": 908549, 
 "^ot:focalCladeOTTTaxonName": "Saccharomyces cerevisiae", 
+"^ot:messages": {
+"message": []
+}, 
 "^ot:otusElementOrder": [
 "otus2293"
 ], 
@@ -91,6 +61,7 @@
 }, 
 "^ot:studyPublicationReference": "Wang Q., Liu W., Liti G., Wang S., & Bai F. 2012. Saccharomyces cerevisiae occurs in surprisingly diverged populations in natural environments remote from human activity. Molecular Ecology, 21(22): 5404-5417.", 
 "^ot:studyYear": 2012, 
+"^ot:tag": [], 
 "^ot:treesElementOrder": [
 "trees2293"
 ], 
@@ -319,6 +290,8 @@
 }, 
 "otu327443": {
 "^ot:originalLabel": "Saccharomyces cerevisiae SK1", 
+"^ot:ottId": 908549, 
+"^ot:ottTaxonName": "Saccharomyces cerevisiae", 
 "^ot:treebaseOTUId": "Tl958978"
 }, 
 "otu327444": {
@@ -461,6 +434,8 @@
 }, 
 "otu327467": {
 "^ot:originalLabel": "Saccharomyces cerevisiae YJM978", 
+"^ot:ottId": 908549, 
+"^ot:ottTaxonName": "Saccharomyces cerevisiae", 
 "^ot:treebaseOTUId": "Tl959002"
 }, 
 "otu327468": {
@@ -531,6 +506,8 @@
 }, 
 "otu327479": {
 "^ot:originalLabel": "Saccharomyces cerevisiae YJM981", 
+"^ot:ottId": 908549, 
+"^ot:ottTaxonName": "Saccharomyces cerevisiae", 
 "^ot:treebaseOTUId": "Tl959014"
 }, 
 "otu327480": {
@@ -595,6 +572,8 @@
 }, 
 "otu327490": {
 "^ot:originalLabel": "Saccharomyces cerevisiae YJM789", 
+"^ot:ottId": 908549, 
+"^ot:ottTaxonName": "Saccharomyces cerevisiae", 
 "^ot:treebaseOTUId": "Tl959025"
 }, 
 "otu327491": {
@@ -695,6 +674,8 @@
 }, 
 "otu327507": {
 "^ot:originalLabel": "Saccharomyces cerevisiae Y9", 
+"^ot:ottId": 908549, 
+"^ot:ottTaxonName": "Saccharomyces cerevisiae", 
 "^ot:treebaseOTUId": "Tl959042"
 }, 
 "otu327508": {
@@ -705,6 +686,8 @@
 }, 
 "otu327509": {
 "^ot:originalLabel": "Saccharomyces cerevisiae YJM975", 
+"^ot:ottId": 908549, 
+"^ot:ottTaxonName": "Saccharomyces cerevisiae", 
 "^ot:treebaseOTUId": "Tl959044"
 }, 
 "otu327510": {
@@ -745,6 +728,8 @@
 }, 
 "otu327516": {
 "^ot:originalLabel": "Saccharomyces cerevisiae Y12", 
+"^ot:ottId": 908549, 
+"^ot:ottTaxonName": "Saccharomyces cerevisiae", 
 "^ot:treebaseOTUId": "Tl959051"
 }, 
 "otu327517": {
@@ -833,6 +818,8 @@
 }, 
 "otu327531": {
 "^ot:originalLabel": "Saccharomyces cerevisiae W303", 
+"^ot:ottId": 908549, 
+"^ot:ottTaxonName": "Saccharomyces cerevisiae", 
 "^ot:treebaseOTUId": "Tl959066"
 }, 
 "otu327532": {
@@ -919,8 +906,14 @@
 "treeById": {
 "tree4853": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "NJ, 9 loci + 4 intergenetic loci", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node846333", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node846333": {
 "edge846334": {

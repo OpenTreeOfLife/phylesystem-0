@@ -19,48 +19,11 @@
 "@id": "peyotl-validator", 
 "@name": "validate_ot_nexson.py", 
 "@url": "https://github.com/OpenTreeOfLife/peyotl", 
-"@version": "0.0.3a", 
+"@version": "0.0.4a", 
 "invocation": {
-"checksPerformed": [
-"MISSING_MANDATORY_KEY", 
-"MISSING_OPTIONAL_KEY", 
-"UNRECOGNIZED_KEY", 
-"MISSING_LIST_EXPECTED", 
-"DUPLICATING_SINGLETON_KEY", 
-"REFERENCED_ID_NOT_FOUND", 
-"REPEATED_ID", 
-"REPEATED_OTU", 
-"MULTIPLE_ROOT_NODES", 
-"NO_ROOT_NODE", 
-"MULTIPLE_EDGES_FOR_NODES", 
-"CYCLE_DETECTED", 
-"DISCONNECTED_GRAPH_DETECTED", 
-"INCORRECT_ROOT_NODE_LABEL", 
-"TIP_WITHOUT_OTU", 
-"TIP_WITHOUT_OTT_ID", 
-"MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
-"NON_MONOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
-"INVALID_PROPERTY_VALUE", 
-"PROPERTY_VALUE_NOT_USEFUL", 
-"UNRECOGNIZED_PROPERTY_VALUE", 
-"MULTIPLE_TREES", 
-"UNRECOGNIZED_TAG", 
-"CONFLICTING_PROPERTY_VALUES", 
-"NO_TREES", 
-"DEPRECATED_PROPERTY", 
-"UNPARSEABLE_META", 
-"UNREACHABLE_NODE", 
-"INCORRECT_VALUE_TYPE", 
-"MISSING_CRUCIAL_CONTENT"
-], 
 "commandLine": [
 "--embed", 
-"--agent-only", 
-"-e", 
-"../mig-phyelesystem-scratch/807/validation.json", 
-"-o", 
-"../mig-phyelesystem-scratch/807/final.json", 
-"../mig-phyelesystem-scratch/807/v1.2.1-807.json"
+"--agent-only"
 ], 
 "otherProperty": [
 {
@@ -76,12 +39,19 @@
 }
 ]
 }, 
+"^ot:annotationEvents": {
+"annotation": []
+}, 
+"^ot:candidateTreeForSynthesis": [], 
 "^ot:curatorName": "Romina Gazis", 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S1531"
 }, 
 "^ot:focalClade": 1051949, 
 "^ot:focalCladeOTTTaxonName": "Tubeufiaceae", 
+"^ot:messages": {
+"message": []
+}, 
 "^ot:otusElementOrder": [
 "otus807"
 ], 
@@ -147,6 +117,8 @@
 }, 
 "otu197081": {
 "^ot:originalLabel": "Dothidea ribesia", 
+"^ot:ottId": 5320161, 
+"^ot:ottTaxonName": "Dothiora ribesia", 
 "^ot:treebaseOTUId": "Tl171408"
 }, 
 "otu197082": {
@@ -217,6 +189,8 @@
 }, 
 "otu197093": {
 "^ot:originalLabel": "Trematosphaeria heterospora", 
+"^ot:ottId": 5319110, 
+"^ot:ottTaxonName": "Leptosphaeria heterospora", 
 "^ot:treebaseOTUId": "Tl171427"
 }, 
 "otu197094": {
@@ -333,6 +307,8 @@
 }, 
 "otu197113": {
 "^ot:originalLabel": "Ostropa barbara", 
+"^ot:ottId": 5318781, 
+"^ot:ottTaxonName": "Lophium barbarum", 
 "^ot:treebaseOTUId": "Tl30570"
 }, 
 "otu197114": {
@@ -402,9 +378,16 @@
 "treeById": {
 "tree1528": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "BI, LSU", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node462309", 
-"^ot:tag": "delete me", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [
+"delete me"
+], 
 "edgeBySourceId": {
 "node462309": {
 "edge462310": {
@@ -1089,9 +1072,14 @@
 }, 
 "tree5676": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "BI, LSU (rooted)", 
 "^ot:inGroupClade": "node978589", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node978588", 
+"^ot:specifiedRoot": "", 
 "^ot:tag": [
 "BI", 
 "LSU"

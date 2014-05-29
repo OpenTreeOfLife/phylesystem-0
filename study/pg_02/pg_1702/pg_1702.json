@@ -19,48 +19,11 @@
 "@id": "peyotl-validator", 
 "@name": "validate_ot_nexson.py", 
 "@url": "https://github.com/OpenTreeOfLife/peyotl", 
-"@version": "0.0.3a", 
+"@version": "0.0.4a", 
 "invocation": {
-"checksPerformed": [
-"MISSING_MANDATORY_KEY", 
-"MISSING_OPTIONAL_KEY", 
-"UNRECOGNIZED_KEY", 
-"MISSING_LIST_EXPECTED", 
-"DUPLICATING_SINGLETON_KEY", 
-"REFERENCED_ID_NOT_FOUND", 
-"REPEATED_ID", 
-"REPEATED_OTU", 
-"MULTIPLE_ROOT_NODES", 
-"NO_ROOT_NODE", 
-"MULTIPLE_EDGES_FOR_NODES", 
-"CYCLE_DETECTED", 
-"DISCONNECTED_GRAPH_DETECTED", 
-"INCORRECT_ROOT_NODE_LABEL", 
-"TIP_WITHOUT_OTU", 
-"TIP_WITHOUT_OTT_ID", 
-"MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
-"NON_MONOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
-"INVALID_PROPERTY_VALUE", 
-"PROPERTY_VALUE_NOT_USEFUL", 
-"UNRECOGNIZED_PROPERTY_VALUE", 
-"MULTIPLE_TREES", 
-"UNRECOGNIZED_TAG", 
-"CONFLICTING_PROPERTY_VALUES", 
-"NO_TREES", 
-"DEPRECATED_PROPERTY", 
-"UNPARSEABLE_META", 
-"UNREACHABLE_NODE", 
-"INCORRECT_VALUE_TYPE", 
-"MISSING_CRUCIAL_CONTENT"
-], 
 "commandLine": [
 "--embed", 
-"--agent-only", 
-"-e", 
-"../mig-phyelesystem-scratch/1702/validation.json", 
-"-o", 
-"../mig-phyelesystem-scratch/1702/final.json", 
-"../mig-phyelesystem-scratch/1702/v1.2.1-1702.json"
+"--agent-only"
 ], 
 "otherProperty": [
 {
@@ -76,12 +39,19 @@
 }
 ]
 }, 
+"^ot:annotationEvents": {
+"annotation": []
+}, 
+"^ot:candidateTreeForSynthesis": [], 
 "^ot:curatorName": "Romina Gazis", 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S616"
 }, 
 "^ot:focalClade": 555765, 
 "^ot:focalCladeOTTTaxonName": "Oomycota", 
+"^ot:messages": {
+"message": []
+}, 
 "^ot:otusElementOrder": [
 "otus1702"
 ], 
@@ -89,8 +59,9 @@
 "^ot:studyPublication": {
 "@href": "http://dx.doi.org/10.2307/3761425"
 }, 
-"^ot:studyPublicationReference": "Hudspeth D., Nadler S., & Hudspeth M. 2000. A COX2 molecular phylogeny of the Peronosporomycetes. Mycologia, 92(4): 674-684.", 
+"^ot:studyPublicationReference": "Hudspeth, D., Nadler S., & Hudspeth M. 2000. A COX2 molecular phylogeny of the Peronosporomycetes. Mycologia 92 (4): 674-684.", 
 "^ot:studyYear": 2000, 
+"^ot:tag": [], 
 "^ot:treesElementOrder": [
 "trees1702"
 ], 
@@ -121,6 +92,8 @@
 }, 
 "otu271239": {
 "^ot:originalLabel": "Plectospira", 
+"^ot:ottId": 908525, 
+"^ot:ottTaxonName": "Plectospira", 
 "^ot:treebaseOTUId": "Tl67693"
 }, 
 "otu271240": {
@@ -137,6 +110,8 @@
 }, 
 "otu271242": {
 "^ot:originalLabel": "Dictyuchus", 
+"^ot:ottId": 965752, 
+"^ot:ottTaxonName": "Dictyuchus", 
 "^ot:treebaseOTUId": "Tl67696"
 }, 
 "otu271243": {
@@ -165,10 +140,14 @@
 }, 
 "otu271247": {
 "^ot:originalLabel": "Thraustotheca", 
+"^ot:ottId": 965749, 
+"^ot:ottTaxonName": "Thraustotheca", 
 "^ot:treebaseOTUId": "Tl67701"
 }, 
 "otu271248": {
 "^ot:originalLabel": "Pythiopsis", 
+"^ot:ottId": 753707, 
+"^ot:ottTaxonName": "Pythiopsis", 
 "^ot:treebaseOTUId": "Tl67702"
 }, 
 "otu271249": {
@@ -179,6 +158,8 @@
 }, 
 "otu271250": {
 "^ot:originalLabel": "Cyanidium", 
+"^ot:ottId": 5155128, 
+"^ot:ottTaxonName": "Cyanidium", 
 "^ot:treebaseOTUId": "Tl67704"
 }, 
 "otu271251": {
@@ -189,6 +170,8 @@
 }, 
 "otu271252": {
 "^ot:originalLabel": "Leptomitus", 
+"^ot:ottId": 908531, 
+"^ot:ottTaxonName": "Leptomitus", 
 "^ot:treebaseOTUId": "Tl67706"
 }
 }
@@ -205,9 +188,15 @@
 "treeById": {
 "tree3431": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "MP, COXII", 
 "^ot:inGroupClade": "node672550", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node672547", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node672547": {
 "edge672548": {
@@ -437,9 +426,15 @@
 }, 
 "tree3432": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "MP, COXII", 
 "^ot:inGroupClade": "node672582", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node672579", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node672579": {
 "edge672580": {
@@ -669,9 +664,15 @@
 }, 
 "tree3433": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "ML, COXII", 
 "^ot:inGroupClade": "node672613", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node672611", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node672611": {
 "edge672612": {

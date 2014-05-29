@@ -19,48 +19,11 @@
 "@id": "peyotl-validator", 
 "@name": "validate_ot_nexson.py", 
 "@url": "https://github.com/OpenTreeOfLife/peyotl", 
-"@version": "0.0.3a", 
+"@version": "0.0.4a", 
 "invocation": {
-"checksPerformed": [
-"MISSING_MANDATORY_KEY", 
-"MISSING_OPTIONAL_KEY", 
-"UNRECOGNIZED_KEY", 
-"MISSING_LIST_EXPECTED", 
-"DUPLICATING_SINGLETON_KEY", 
-"REFERENCED_ID_NOT_FOUND", 
-"REPEATED_ID", 
-"REPEATED_OTU", 
-"MULTIPLE_ROOT_NODES", 
-"NO_ROOT_NODE", 
-"MULTIPLE_EDGES_FOR_NODES", 
-"CYCLE_DETECTED", 
-"DISCONNECTED_GRAPH_DETECTED", 
-"INCORRECT_ROOT_NODE_LABEL", 
-"TIP_WITHOUT_OTU", 
-"TIP_WITHOUT_OTT_ID", 
-"MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
-"NON_MONOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
-"INVALID_PROPERTY_VALUE", 
-"PROPERTY_VALUE_NOT_USEFUL", 
-"UNRECOGNIZED_PROPERTY_VALUE", 
-"MULTIPLE_TREES", 
-"UNRECOGNIZED_TAG", 
-"CONFLICTING_PROPERTY_VALUES", 
-"NO_TREES", 
-"DEPRECATED_PROPERTY", 
-"UNPARSEABLE_META", 
-"UNREACHABLE_NODE", 
-"INCORRECT_VALUE_TYPE", 
-"MISSING_CRUCIAL_CONTENT"
-], 
 "commandLine": [
 "--embed", 
-"--agent-only", 
-"-e", 
-"../mig-phyelesystem-scratch/2655/validation.json", 
-"-o", 
-"../mig-phyelesystem-scratch/2655/final.json", 
-"../mig-phyelesystem-scratch/2655/v1.2.1-2655.json"
+"--agent-only"
 ], 
 "otherProperty": [
 {
@@ -76,9 +39,16 @@
 }
 ]
 }, 
+"^ot:annotationEvents": {
+"annotation": []
+}, 
+"^ot:candidateTreeForSynthesis": [], 
 "^ot:curatorName": "Joseph Brown", 
 "^ot:focalClade": 811925, 
 "^ot:focalCladeOTTTaxonName": "Cichlidae", 
+"^ot:messages": {
+"message": []
+}, 
 "^ot:otusElementOrder": [
 "otus2655"
 ], 
@@ -86,9 +56,11 @@
 "^ot:studyPublication": {
 "@href": "http://dx.doi.org/10.1098/rspb.2013.1733"
 }, 
-"^ot:studyPublicationReference": "M. Friedman, B. P. Keck, A. Dornburg, R. I. Eytan, C. H. Martin, C. D. Hulsey, P. C. Wainwright, T. J. Near. 2013. Molecular and fossil evidence place the origin of cichlid fishes long after Gondwanan rifting. Proceedings of the Royal Society B: Biological Sciences 280(1770): 20131733", 
+"^ot:studyPublicationReference": "Friedman, M., B. P. Keck, A. Dornburg, R. I. Eytan, C. H. Martin, C. D. Hulsey, P. C. Wainwright, T. J. Near. 2013. Molecular and fossil evidence place the origin of cichlid fishes long after Gondwanan rifting. Proceedings of the Royal Society B: Biological Sciences 280 (1770): 20131733", 
 "^ot:studyYear": 2013, 
-"^ot:tag": "ingroup added", 
+"^ot:tag": [
+"ingroup added"
+], 
 "^ot:treesElementOrder": [
 "trees2655"
 ], 
@@ -394,7 +366,9 @@
 "^ot:ottTaxonName": "Plesiops melas"
 }, 
 "otu396426": {
-"^ot:originalLabel": "Congrogadus subducens"
+"^ot:originalLabel": "Congrogadus subducens", 
+"^ot:ottId": 1049970, 
+"^ot:ottTaxonName": "Congogradus subducens"
 }, 
 "otu396427": {
 "^ot:originalLabel": "Etroplus maculatus", 
@@ -502,7 +476,9 @@
 "^ot:ottTaxonName": "Hypselecara temporalis"
 }, 
 "otu396448": {
-"^ot:originalLabel": "Heros appendictulatus"
+"^ot:originalLabel": "Heros appendictulatus", 
+"^ot:ottId": 207341, 
+"^ot:ottTaxonName": "Heros efasciatus"
 }, 
 "otu396449": {
 "^ot:originalLabel": "Uaru amphiacanthoides", 
@@ -907,12 +883,17 @@
 "treeById": {
 "tree6181": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
 "^ot:branchLengthMode": "ot:time", 
 "^ot:branchLengthTimeUnit": "Myr", 
 "^ot:curatedType": "BEAST MCC tree", 
 "^ot:inGroupClade": "node1058554", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node1058430", 
-"^ot:tag": "choose me", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [
+"choose me"
+], 
 "edgeBySourceId": {
 "node1058430": {
 "edge1058431": {
@@ -3373,10 +3354,15 @@
 }, 
 "tree6182": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
 "^ot:branchLengthMode": "ot:substitutionCount", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "RAxML", 
 "^ot:inGroupClade": "node1058875", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node1058737", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node1058737": {
 "edge1058738": {

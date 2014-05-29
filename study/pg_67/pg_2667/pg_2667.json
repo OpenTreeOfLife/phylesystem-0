@@ -19,48 +19,11 @@
 "@id": "peyotl-validator", 
 "@name": "validate_ot_nexson.py", 
 "@url": "https://github.com/OpenTreeOfLife/peyotl", 
-"@version": "0.0.3a", 
+"@version": "0.0.4a", 
 "invocation": {
-"checksPerformed": [
-"MISSING_MANDATORY_KEY", 
-"MISSING_OPTIONAL_KEY", 
-"UNRECOGNIZED_KEY", 
-"MISSING_LIST_EXPECTED", 
-"DUPLICATING_SINGLETON_KEY", 
-"REFERENCED_ID_NOT_FOUND", 
-"REPEATED_ID", 
-"REPEATED_OTU", 
-"MULTIPLE_ROOT_NODES", 
-"NO_ROOT_NODE", 
-"MULTIPLE_EDGES_FOR_NODES", 
-"CYCLE_DETECTED", 
-"DISCONNECTED_GRAPH_DETECTED", 
-"INCORRECT_ROOT_NODE_LABEL", 
-"TIP_WITHOUT_OTU", 
-"TIP_WITHOUT_OTT_ID", 
-"MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
-"NON_MONOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
-"INVALID_PROPERTY_VALUE", 
-"PROPERTY_VALUE_NOT_USEFUL", 
-"UNRECOGNIZED_PROPERTY_VALUE", 
-"MULTIPLE_TREES", 
-"UNRECOGNIZED_TAG", 
-"CONFLICTING_PROPERTY_VALUES", 
-"NO_TREES", 
-"DEPRECATED_PROPERTY", 
-"UNPARSEABLE_META", 
-"UNREACHABLE_NODE", 
-"INCORRECT_VALUE_TYPE", 
-"MISSING_CRUCIAL_CONTENT"
-], 
 "commandLine": [
 "--embed", 
-"--agent-only", 
-"-e", 
-"../mig-phyelesystem-scratch/2667/validation.json", 
-"-o", 
-"../mig-phyelesystem-scratch/2667/final.json", 
-"../mig-phyelesystem-scratch/2667/v1.2.1-2667.json"
+"--agent-only"
 ], 
 "otherProperty": [
 {
@@ -76,9 +39,16 @@
 }
 ]
 }, 
+"^ot:annotationEvents": {
+"annotation": []
+}, 
+"^ot:candidateTreeForSynthesis": [], 
 "^ot:curatorName": "Chris Owen", 
 "^ot:focalClade": 592849, 
 "^ot:focalCladeOTTTaxonName": "Kiwaidae", 
+"^ot:messages": {
+"message": []
+}, 
 "^ot:otusElementOrder": [
 "otus2667"
 ], 
@@ -86,8 +56,9 @@
 "^ot:studyPublication": {
 "@href": "http://dx.doi.org/10.1098/rspb.2013.0718"
 }, 
-"^ot:studyPublicationReference": "Roterman CN, Copley JT, Linse KT, Tyler PA, Rogers AD. 2013 The biogeography of the yeti crabs (Kiwaidae) with notes on the phylogeny of the Chirostyloidea (Decapoda: Anomura). Proceedings of the Royal Society B 280: 20130718", 
+"^ot:studyPublicationReference": "Roterman, CN, Copley JT, Linse KT, Tyler PA, Rogers AD. 2013 The biogeography of the yeti crabs (Kiwaidae) with notes on the phylogeny of the Chirostyloidea (Decapoda: Anomura). Proceedings of the Royal Society B 280 (1764): 20130718", 
 "^ot:studyYear": 2013, 
+"^ot:tag": [], 
 "^ot:treesElementOrder": [
 "trees2667"
 ], 
@@ -138,12 +109,6 @@
 "^ot:originalLabel": "Gastroptychus rogeri", 
 "^ot:ottId": 850582, 
 "^ot:ottTaxonName": "Gastroptychus rogeri"
-}, 
-"otu399473": {
-"^ot:originalLabel": "Kiwa ESR F423 3"
-}, 
-"otu399474": {
-"^ot:originalLabel": "Kiwa SWIR 1a"
 }, 
 "otu399475": {
 "^ot:originalLabel": "Kiwa hirsuta", 
@@ -222,343 +187,22 @@
 "trees2667": {
 "@otus": "otus2667", 
 "^ot:treeElementOrder": [
-"tree6209", 
 "tree6211"
 ], 
 "treeById": {
-"tree6209": {
-"@xsi:type": "nex:FloatTree", 
-"^ot:curatedType": "50% maj-rule consensus tree", 
-"^ot:inGroupClade": "node1072154", 
-"^ot:rootNodeId": "node1072148", 
-"^ot:tag": [
-"choose me", 
-"ingroup added"
-], 
-"edgeBySourceId": {
-"node1072148": {
-"edge1072149": {
-"@source": "node1072148", 
-"@target": "node1072149"
-}, 
-"edge1072192": {
-"@source": "node1072148", 
-"@target": "node1072192"
-}
-}, 
-"node1072149": {
-"edge1072150": {
-"@source": "node1072149", 
-"@target": "node1072150"
-}, 
-"edge1072191": {
-"@source": "node1072149", 
-"@target": "node1072191"
-}
-}, 
-"node1072150": {
-"edge1072151": {
-"@source": "node1072150", 
-"@target": "node1072151"
-}, 
-"edge1072190": {
-"@source": "node1072150", 
-"@target": "node1072190"
-}
-}, 
-"node1072151": {
-"edge1072152": {
-"@source": "node1072151", 
-"@target": "node1072152"
-}, 
-"edge1072185": {
-"@source": "node1072151", 
-"@target": "node1072185"
-}
-}, 
-"node1072152": {
-"edge1072153": {
-"@source": "node1072152", 
-"@target": "node1072153"
-}, 
-"edge1072182": {
-"@source": "node1072152", 
-"@target": "node1072182"
-}
-}, 
-"node1072153": {
-"edge1072154": {
-"@source": "node1072153", 
-"@target": "node1072154"
-}, 
-"edge1072179": {
-"@source": "node1072153", 
-"@target": "node1072179"
-}
-}, 
-"node1072154": {
-"edge1072155": {
-"@source": "node1072154", 
-"@target": "node1072155"
-}, 
-"edge1072172": {
-"@source": "node1072154", 
-"@target": "node1072172"
-}
-}, 
-"node1072155": {
-"edge1072156": {
-"@source": "node1072155", 
-"@target": "node1072156"
-}, 
-"edge1072169": {
-"@source": "node1072155", 
-"@target": "node1072169"
-}
-}, 
-"node1072156": {
-"edge1072157": {
-"@source": "node1072156", 
-"@target": "node1072157"
-}, 
-"edge1072168": {
-"@source": "node1072156", 
-"@target": "node1072168"
-}
-}, 
-"node1072157": {
-"edge1072158": {
-"@source": "node1072157", 
-"@target": "node1072158"
-}, 
-"edge1072167": {
-"@source": "node1072157", 
-"@target": "node1072167"
-}
-}, 
-"node1072158": {
-"edge1072159": {
-"@source": "node1072158", 
-"@target": "node1072159"
-}, 
-"edge1072166": {
-"@source": "node1072158", 
-"@target": "node1072166"
-}
-}, 
-"node1072159": {
-"edge1072160": {
-"@source": "node1072159", 
-"@target": "node1072160"
-}, 
-"edge1072165": {
-"@source": "node1072159", 
-"@target": "node1072165"
-}
-}, 
-"node1072160": {
-"edge1072161": {
-"@source": "node1072160", 
-"@target": "node1072161"
-}, 
-"edge1072164": {
-"@source": "node1072160", 
-"@target": "node1072164"
-}
-}, 
-"node1072161": {
-"edge1072162": {
-"@source": "node1072161", 
-"@target": "node1072162"
-}, 
-"edge1072163": {
-"@source": "node1072161", 
-"@target": "node1072163"
-}
-}, 
-"node1072169": {
-"edge1072170": {
-"@source": "node1072169", 
-"@target": "node1072170"
-}, 
-"edge1072171": {
-"@source": "node1072169", 
-"@target": "node1072171"
-}
-}, 
-"node1072172": {
-"edge1072173": {
-"@source": "node1072172", 
-"@target": "node1072173"
-}, 
-"edge1072178": {
-"@source": "node1072172", 
-"@target": "node1072178"
-}
-}, 
-"node1072173": {
-"edge1072174": {
-"@source": "node1072173", 
-"@target": "node1072174"
-}, 
-"edge1072177": {
-"@source": "node1072173", 
-"@target": "node1072177"
-}
-}, 
-"node1072174": {
-"edge1072175": {
-"@source": "node1072174", 
-"@target": "node1072175"
-}, 
-"edge1072176": {
-"@source": "node1072174", 
-"@target": "node1072176"
-}
-}, 
-"node1072179": {
-"edge1072180": {
-"@source": "node1072179", 
-"@target": "node1072180"
-}, 
-"edge1072181": {
-"@source": "node1072179", 
-"@target": "node1072181"
-}
-}, 
-"node1072182": {
-"edge1072183": {
-"@source": "node1072182", 
-"@target": "node1072183"
-}, 
-"edge1072184": {
-"@source": "node1072182", 
-"@target": "node1072184"
-}
-}, 
-"node1072185": {
-"edge1072186": {
-"@source": "node1072185", 
-"@target": "node1072186"
-}, 
-"edge1072189": {
-"@source": "node1072185", 
-"@target": "node1072189"
-}
-}, 
-"node1072186": {
-"edge1072187": {
-"@source": "node1072186", 
-"@target": "node1072187"
-}, 
-"edge1072188": {
-"@source": "node1072186", 
-"@target": "node1072188"
-}
-}
-}, 
-"nodeById": {
-"node1072148": {
-"@root": true
-}, 
-"node1072149": {}, 
-"node1072150": {}, 
-"node1072151": {}, 
-"node1072152": {}, 
-"node1072153": {}, 
-"node1072154": {}, 
-"node1072155": {}, 
-"node1072156": {}, 
-"node1072157": {}, 
-"node1072158": {}, 
-"node1072159": {}, 
-"node1072160": {}, 
-"node1072161": {}, 
-"node1072162": {
-"@otu": "otu399464"
-}, 
-"node1072163": {
-"@otu": "otu399465"
-}, 
-"node1072164": {
-"@otu": "otu399466"
-}, 
-"node1072165": {
-"@otu": "otu399467"
-}, 
-"node1072166": {
-"@otu": "otu399468"
-}, 
-"node1072167": {
-"@otu": "otu399469"
-}, 
-"node1072168": {
-"@otu": "otu399470"
-}, 
-"node1072169": {}, 
-"node1072170": {
-"@otu": "otu399471"
-}, 
-"node1072171": {
-"@otu": "otu399472"
-}, 
-"node1072172": {}, 
-"node1072173": {}, 
-"node1072174": {}, 
-"node1072175": {
-"@otu": "otu399473"
-}, 
-"node1072176": {
-"@otu": "otu399474"
-}, 
-"node1072177": {
-"@otu": "otu399475"
-}, 
-"node1072178": {
-"@otu": "otu399476"
-}, 
-"node1072179": {}, 
-"node1072180": {
-"@otu": "otu399477"
-}, 
-"node1072181": {
-"@otu": "otu399478"
-}, 
-"node1072182": {}, 
-"node1072183": {
-"@otu": "otu399479"
-}, 
-"node1072184": {
-"@otu": "otu399480"
-}, 
-"node1072185": {}, 
-"node1072186": {}, 
-"node1072187": {
-"@otu": "otu399481"
-}, 
-"node1072188": {
-"@otu": "otu399482"
-}, 
-"node1072189": {
-"@otu": "otu399483"
-}, 
-"node1072190": {
-"@otu": "otu399484"
-}, 
-"node1072191": {
-"@otu": "otu399485"
-}, 
-"node1072192": {
-"@otu": "otu399486"
-}
-}
-}, 
 "tree6211": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "50% maj-rule consensus tree", 
 "^ot:inGroupClade": "node1072707", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node1072701", 
-"^ot:tag": "choose me", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [
+"choose me"
+], 
 "edgeBySourceId": {
 "node1072701": {
 "edge1072702": {

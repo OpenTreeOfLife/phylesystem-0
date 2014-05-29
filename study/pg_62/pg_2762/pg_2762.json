@@ -19,48 +19,11 @@
 "@id": "peyotl-validator", 
 "@name": "validate_ot_nexson.py", 
 "@url": "https://github.com/OpenTreeOfLife/peyotl", 
-"@version": "0.0.3a", 
+"@version": "0.0.4a", 
 "invocation": {
-"checksPerformed": [
-"MISSING_MANDATORY_KEY", 
-"MISSING_OPTIONAL_KEY", 
-"UNRECOGNIZED_KEY", 
-"MISSING_LIST_EXPECTED", 
-"DUPLICATING_SINGLETON_KEY", 
-"REFERENCED_ID_NOT_FOUND", 
-"REPEATED_ID", 
-"REPEATED_OTU", 
-"MULTIPLE_ROOT_NODES", 
-"NO_ROOT_NODE", 
-"MULTIPLE_EDGES_FOR_NODES", 
-"CYCLE_DETECTED", 
-"DISCONNECTED_GRAPH_DETECTED", 
-"INCORRECT_ROOT_NODE_LABEL", 
-"TIP_WITHOUT_OTU", 
-"TIP_WITHOUT_OTT_ID", 
-"MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
-"NON_MONOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
-"INVALID_PROPERTY_VALUE", 
-"PROPERTY_VALUE_NOT_USEFUL", 
-"UNRECOGNIZED_PROPERTY_VALUE", 
-"MULTIPLE_TREES", 
-"UNRECOGNIZED_TAG", 
-"CONFLICTING_PROPERTY_VALUES", 
-"NO_TREES", 
-"DEPRECATED_PROPERTY", 
-"UNPARSEABLE_META", 
-"UNREACHABLE_NODE", 
-"INCORRECT_VALUE_TYPE", 
-"MISSING_CRUCIAL_CONTENT"
-], 
 "commandLine": [
 "--embed", 
-"--agent-only", 
-"-e", 
-"../mig-phyelesystem-scratch/2762/validation.json", 
-"-o", 
-"../mig-phyelesystem-scratch/2762/final.json", 
-"../mig-phyelesystem-scratch/2762/v1.2.1-2762.json"
+"--agent-only"
 ], 
 "otherProperty": [
 {
@@ -76,7 +39,14 @@
 }
 ]
 }, 
+"^ot:annotationEvents": {
+"annotation": []
+}, 
+"^ot:candidateTreeForSynthesis": [], 
 "^ot:curatorName": "Dail Laughinghouse", 
+"^ot:messages": {
+"message": []
+}, 
 "^ot:otusElementOrder": [
 "otus2762"
 ], 
@@ -86,6 +56,7 @@
 }, 
 "^ot:studyPublicationReference": "Michelle Sait, Morag Livingstone, Ewan M Clark, Nick Wheelhouse, Lucy Spalding, Bryan Markey, Simone Magnino, Frederick A Lainson, Garry SA Myers, David Longbottom. 2014. Genome sequencing and comparative analysis of three Chlamydia pecorum strains associated with different pathogenic outcomes. BMC Genomics 15(1):23.", 
 "^ot:studyYear": 2014, 
+"^ot:tag": [], 
 "^ot:treesElementOrder": [
 "trees2762"
 ], 
@@ -99,7 +70,9 @@
 "^ot:originalLabel": "Protochlamydia amoebophila UWE25"
 }, 
 "otu411335": {
-"^ot:originalLabel": "Parachlamydia acanthamoebae UV7"
+"^ot:originalLabel": "Parachlamydia acanthamoebae UV7", 
+"^ot:ottId": 887772, 
+"^ot:ottTaxonName": "Parachlamydia acanthamoebae UV-7"
 }, 
 "otu411336": {
 "^ot:originalLabel": "Chlamydia muridarum Nigg", 
@@ -147,7 +120,9 @@
 "^ot:originalLabel": "Chlamydia psittaci C19 98"
 }, 
 "otu411349": {
-"^ot:originalLabel": "Chlamydia psittaci 6BC"
+"^ot:originalLabel": "Chlamydia psittaci 6BC", 
+"^ot:ottId": 15969, 
+"^ot:ottTaxonName": "Chlamydia psittaci 6BC"
 }, 
 "otu411350": {
 "^ot:originalLabel": "Chlamydia psittaci 01DC12", 
@@ -155,13 +130,17 @@
 "^ot:ottTaxonName": "Chlamydia psittaci 01DC12"
 }, 
 "otu411351": {
-"^ot:originalLabel": "Chlamydia psittaci RD1"
+"^ot:originalLabel": "Chlamydia psittaci RD1", 
+"^ot:ottId": 647665, 
+"^ot:ottTaxonName": "Chlamydia psittaci RD1"
 }, 
 "otu411352": {
 "^ot:originalLabel": "Chlamydia pecorum PV3056 3"
 }, 
 "otu411353": {
-"^ot:originalLabel": "Chlamydia pecorum E58"
+"^ot:originalLabel": "Chlamydia pecorum E58", 
+"^ot:ottId": 15964, 
+"^ot:ottTaxonName": "Chlamydophila pecorum E58"
 }, 
 "otu411354": {
 "^ot:originalLabel": "Chlamydia pecorum W73", 
@@ -177,13 +156,19 @@
 "^ot:originalLabel": "Chlamydia pneumoniae LPCoLN"
 }, 
 "otu411357": {
-"^ot:originalLabel": "Chlamydia pneumoniae TW183"
+"^ot:originalLabel": "Chlamydia pneumoniae TW183", 
+"^ot:ottId": 773713, 
+"^ot:ottTaxonName": "Chlamydophila pneumoniae TW-183"
 }, 
 "otu411358": {
-"^ot:originalLabel": "Chlamydia pneumoniae AR39"
+"^ot:originalLabel": "Chlamydia pneumoniae AR39", 
+"^ot:ottId": 853668, 
+"^ot:ottTaxonName": "Chlamydophila pneumoniae AR39"
 }, 
 "otu411359": {
-"^ot:originalLabel": "Chlamydia pneumoniae CWL029"
+"^ot:originalLabel": "Chlamydia pneumoniae CWL029", 
+"^ot:ottId": 853664, 
+"^ot:ottTaxonName": "Chlamydophila pneumoniae CWL029"
 }, 
 "otu411360": {
 "^ot:originalLabel": "Chlamydia pneumoniae J138"
@@ -796,9 +781,15 @@
 "treeById": {
 "tree6384": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "Ribosomal tree", 
 "^ot:inGroupClade": "node1111566", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node1111560", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node1111560": {
 "edge1111561": {
@@ -1237,8 +1228,14 @@
 }, 
 "tree6385": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "PMP AT domain tree file", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node1111615", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node1111615": {
 "edge1111616": {
@@ -3957,8 +3954,14 @@
 }, 
 "tree6386": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "Chlamydial cytotoxins tree", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node1111960", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node1111960": {
 "edge1111961": {

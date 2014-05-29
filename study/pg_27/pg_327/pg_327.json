@@ -19,48 +19,11 @@
 "@id": "peyotl-validator", 
 "@name": "validate_ot_nexson.py", 
 "@url": "https://github.com/OpenTreeOfLife/peyotl", 
-"@version": "0.0.3a", 
+"@version": "0.0.4a", 
 "invocation": {
-"checksPerformed": [
-"MISSING_MANDATORY_KEY", 
-"MISSING_OPTIONAL_KEY", 
-"UNRECOGNIZED_KEY", 
-"MISSING_LIST_EXPECTED", 
-"DUPLICATING_SINGLETON_KEY", 
-"REFERENCED_ID_NOT_FOUND", 
-"REPEATED_ID", 
-"REPEATED_OTU", 
-"MULTIPLE_ROOT_NODES", 
-"NO_ROOT_NODE", 
-"MULTIPLE_EDGES_FOR_NODES", 
-"CYCLE_DETECTED", 
-"DISCONNECTED_GRAPH_DETECTED", 
-"INCORRECT_ROOT_NODE_LABEL", 
-"TIP_WITHOUT_OTU", 
-"TIP_WITHOUT_OTT_ID", 
-"MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
-"NON_MONOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
-"INVALID_PROPERTY_VALUE", 
-"PROPERTY_VALUE_NOT_USEFUL", 
-"UNRECOGNIZED_PROPERTY_VALUE", 
-"MULTIPLE_TREES", 
-"UNRECOGNIZED_TAG", 
-"CONFLICTING_PROPERTY_VALUES", 
-"NO_TREES", 
-"DEPRECATED_PROPERTY", 
-"UNPARSEABLE_META", 
-"UNREACHABLE_NODE", 
-"INCORRECT_VALUE_TYPE", 
-"MISSING_CRUCIAL_CONTENT"
-], 
 "commandLine": [
 "--embed", 
-"--agent-only", 
-"-e", 
-"../mig-phyelesystem-scratch/327/validation.json", 
-"-o", 
-"../mig-phyelesystem-scratch/327/final.json", 
-"../mig-phyelesystem-scratch/327/v1.2.1-327.json"
+"--agent-only"
 ], 
 "otherProperty": [
 {
@@ -76,12 +39,19 @@
 }
 ]
 }, 
+"^ot:annotationEvents": {
+"annotation": []
+}, 
+"^ot:candidateTreeForSynthesis": [], 
 "^ot:curatorName": "bryan drew", 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S10299"
 }, 
 "^ot:focalClade": 309271, 
 "^ot:focalCladeOTTTaxonName": "Brassicaceae", 
+"^ot:messages": {
+"message": []
+}, 
 "^ot:otusElementOrder": [
 "otus327"
 ], 
@@ -91,6 +61,7 @@
 }, 
 "^ot:studyPublicationReference": "Warwick, S. I., Mummenhoff, K., Sauder, C. A., Koch, M. A., & Al-Shehbaz, I. A. (2010). Closing the gaps: phylogenetic relationships in the Brassicaceae based on DNA sequence data of nuclear ribosomal ITS region. Plant Systematics and Evolution, 285(3), 209-232.", 
 "^ot:studyYear": 2010, 
+"^ot:tag": [], 
 "^ot:treesElementOrder": [
 "trees327"
 ], 
@@ -231,6 +202,8 @@
 }, 
 "otu73869": {
 "^ot:originalLabel": "Ricotia cretica", 
+"^ot:ottId": 620325, 
+"^ot:ottTaxonName": "Ricotia cretica", 
 "^ot:treebaseOTUId": "Tl272444"
 }, 
 "otu73870": {
@@ -283,6 +256,8 @@
 }, 
 "otu73878": {
 "^ot:originalLabel": "Pseudosempervivum aucheri", 
+"^ot:ottId": 182234, 
+"^ot:ottTaxonName": "Cochlearia aucheri", 
 "^ot:treebaseOTUId": "Tl272453"
 }, 
 "otu73879": {
@@ -329,6 +304,8 @@
 }, 
 "otu73886": {
 "^ot:originalLabel": "Subularia monticola", 
+"^ot:ottId": 568202, 
+"^ot:ottTaxonName": "Subularia monticola", 
 "^ot:treebaseOTUId": "Tl272461"
 }, 
 "otu73887": {
@@ -435,6 +412,8 @@
 }, 
 "otu73904": {
 "^ot:originalLabel": "Ionopsidium acaule", 
+"^ot:ottId": 565083, 
+"^ot:ottTaxonName": "Cochlearia acaulis", 
 "^ot:treebaseOTUId": "Tl272479"
 }, 
 "otu73905": {
@@ -463,6 +442,8 @@
 }, 
 "otu73909": {
 "^ot:originalLabel": "Heldreichia bupleurifolia", 
+"^ot:ottId": 856367, 
+"^ot:ottTaxonName": "Heldreichia bupleurifolia", 
 "^ot:treebaseOTUId": "Tl272484"
 }, 
 "otu73910": {
@@ -545,6 +526,8 @@
 }, 
 "otu73923": {
 "^ot:originalLabel": "Aphragmus hobsonii", 
+"^ot:ottId": 413181, 
+"^ot:ottTaxonName": "Lignariella hobsonii", 
 "^ot:treebaseOTUId": "Tl272498"
 }, 
 "otu73924": {
@@ -627,6 +610,8 @@
 }, 
 "otu73937": {
 "^ot:originalLabel": "Pyconplinthus uniflora", 
+"^ot:ottId": 1043685, 
+"^ot:ottTaxonName": "Pycnoplinthus uniflorus", 
 "^ot:treebaseOTUId": "Tl272512"
 }, 
 "otu73938": {
@@ -673,6 +658,8 @@
 }, 
 "otu73945": {
 "^ot:originalLabel": "Eunomia oppositifolia", 
+"^ot:ottId": 15318, 
+"^ot:ottTaxonName": "Noccaea oppositifolia", 
 "^ot:treebaseOTUId": "Tl272520"
 }, 
 "otu73946": {
@@ -695,14 +682,20 @@
 }, 
 "otu73949": {
 "^ot:originalLabel": "Ochthodium aegyptiacum", 
+"^ot:ottId": 150108, 
+"^ot:ottTaxonName": "Ochthodium aegyptiacum", 
 "^ot:treebaseOTUId": "Tl272524"
 }, 
 "otu73950": {
 "^ot:originalLabel": "Pseudofortuynia esfandiarii", 
+"^ot:ottId": 98814, 
+"^ot:ottTaxonName": "Pseudofortuynia esfandiarii", 
 "^ot:treebaseOTUId": "Tl272525"
 }, 
 "otu73951": {
 "^ot:originalLabel": "Horwoodia dicksoniae", 
+"^ot:ottId": 724544, 
+"^ot:ottTaxonName": "Horwoodia dicksoniae", 
 "^ot:treebaseOTUId": "Tl272526"
 }, 
 "otu73952": {
@@ -743,6 +736,8 @@
 }, 
 "otu73958": {
 "^ot:originalLabel": "Dipoma iberideum", 
+"^ot:ottId": 200742, 
+"^ot:ottTaxonName": "Dipoma iberideum", 
 "^ot:treebaseOTUId": "Tl272533"
 }, 
 "otu73959": {
@@ -783,6 +778,8 @@
 }, 
 "otu73965": {
 "^ot:originalLabel": "Petrocallis pyrenaica", 
+"^ot:ottId": 686717, 
+"^ot:ottTaxonName": "Petrocallis pyrenaica", 
 "^ot:treebaseOTUId": "Tl272540"
 }, 
 "otu73966": {
@@ -857,6 +854,8 @@
 }, 
 "otu73978": {
 "^ot:originalLabel": "Conringia clavata", 
+"^ot:ottId": 288370, 
+"^ot:ottTaxonName": "Conringia perfoliata", 
 "^ot:treebaseOTUId": "Tl272553"
 }, 
 "otu73979": {
@@ -873,6 +872,8 @@
 }, 
 "otu73981": {
 "^ot:originalLabel": "Asperuginoides axillaris", 
+"^ot:ottId": 431360, 
+"^ot:ottTaxonName": "Asperuginoides axillaris", 
 "^ot:treebaseOTUId": "Tl272556"
 }, 
 "otu73982": {
@@ -895,6 +896,8 @@
 }, 
 "otu73985": {
 "^ot:originalLabel": "Lunaria redeviva", 
+"^ot:ottId": 160980, 
+"^ot:ottTaxonName": "Lunaria rediviva", 
 "^ot:treebaseOTUId": "Tl272560"
 }, 
 "otu73986": {
@@ -905,6 +908,8 @@
 }, 
 "otu73987": {
 "^ot:originalLabel": "Cleome lutea", 
+"^ot:ottId": 5145828, 
+"^ot:ottTaxonName": "Peritoma lutea", 
 "^ot:treebaseOTUId": "Tl272562"
 }, 
 "otu73988": {
@@ -957,6 +962,8 @@
 }, 
 "otu73996": {
 "^ot:originalLabel": "Chamira circaeoides", 
+"^ot:ottId": 1023207, 
+"^ot:ottTaxonName": "Chamira circaeoides", 
 "^ot:treebaseOTUId": "Tl272571"
 }, 
 "otu73997": {
@@ -1145,6 +1152,8 @@
 }, 
 "otu74028": {
 "^ot:originalLabel": "Idahoa scapigera", 
+"^ot:ottId": 961493, 
+"^ot:ottTaxonName": "Idahoa scapigera", 
 "^ot:treebaseOTUId": "Tl272603"
 }, 
 "otu74029": {
@@ -1184,8 +1193,14 @@
 "treeById": {
 "tree5186": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "ITS Tree", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node894683", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node894683": {
 "edge894684": {
@@ -3788,9 +3803,15 @@
 }, 
 "tree5187": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "ITS Tree", 
 "^ot:inGroupClade": "node895055", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node895054", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node895054": {
 "edge895055": {

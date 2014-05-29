@@ -19,48 +19,11 @@
 "@id": "peyotl-validator", 
 "@name": "validate_ot_nexson.py", 
 "@url": "https://github.com/OpenTreeOfLife/peyotl", 
-"@version": "0.0.3a", 
+"@version": "0.0.4a", 
 "invocation": {
-"checksPerformed": [
-"MISSING_MANDATORY_KEY", 
-"MISSING_OPTIONAL_KEY", 
-"UNRECOGNIZED_KEY", 
-"MISSING_LIST_EXPECTED", 
-"DUPLICATING_SINGLETON_KEY", 
-"REFERENCED_ID_NOT_FOUND", 
-"REPEATED_ID", 
-"REPEATED_OTU", 
-"MULTIPLE_ROOT_NODES", 
-"NO_ROOT_NODE", 
-"MULTIPLE_EDGES_FOR_NODES", 
-"CYCLE_DETECTED", 
-"DISCONNECTED_GRAPH_DETECTED", 
-"INCORRECT_ROOT_NODE_LABEL", 
-"TIP_WITHOUT_OTU", 
-"TIP_WITHOUT_OTT_ID", 
-"MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
-"NON_MONOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
-"INVALID_PROPERTY_VALUE", 
-"PROPERTY_VALUE_NOT_USEFUL", 
-"UNRECOGNIZED_PROPERTY_VALUE", 
-"MULTIPLE_TREES", 
-"UNRECOGNIZED_TAG", 
-"CONFLICTING_PROPERTY_VALUES", 
-"NO_TREES", 
-"DEPRECATED_PROPERTY", 
-"UNPARSEABLE_META", 
-"UNREACHABLE_NODE", 
-"INCORRECT_VALUE_TYPE", 
-"MISSING_CRUCIAL_CONTENT"
-], 
 "commandLine": [
 "--embed", 
-"--agent-only", 
-"-e", 
-"../mig-phyelesystem-scratch/533/validation.json", 
-"-o", 
-"../mig-phyelesystem-scratch/533/final.json", 
-"../mig-phyelesystem-scratch/533/v1.2.1-533.json"
+"--agent-only"
 ], 
 "otherProperty": [
 {
@@ -76,12 +39,17 @@
 }
 ]
 }, 
+"^ot:annotationEvents": {
+"annotation": []
+}, 
+"^ot:candidateTreeForSynthesis": [], 
 "^ot:curatorName": "Romina Gazis", 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S11312"
 }, 
-"^ot:focalClade": 1285575, 
-"^ot:focalCladeOTTTaxonName": "Powellomycetaceae", 
+"^ot:messages": {
+"message": []
+}, 
 "^ot:otusElementOrder": [
 "otus533"
 ], 
@@ -91,6 +59,7 @@
 }, 
 "^ot:studyPublicationReference": "Simmons D.R. 2011. Phylogeny of Powellomycetaceae fam. nov. and description of Geranomyces variabilis gen. et comb. nov. Mycologia, 103(6): 1411-1420.", 
 "^ot:studyYear": 2011, 
+"^ot:tag": [], 
 "^ot:treesElementOrder": [
 "trees533"
 ], 
@@ -105,50 +74,34 @@
 }, 
 "otu168264": {
 "^ot:originalLabel": "Geranomyces variabilis A20", 
-"^ot:ottId": 306896, 
-"^ot:ottTaxonName": "Geranomyces variabilis", 
 "^ot:treebaseOTUId": "Tl491494"
 }, 
 "otu168265": {
 "^ot:originalLabel": "Geranomyces variabilis A29", 
-"^ot:ottId": 306896, 
-"^ot:ottTaxonName": "Geranomyces variabilis", 
 "^ot:treebaseOTUId": "Tl491495"
 }, 
 "otu168266": {
 "^ot:originalLabel": "Geranomyces variabilis A17", 
-"^ot:ottId": 306896, 
-"^ot:ottTaxonName": "Geranomyces variabilis", 
 "^ot:treebaseOTUId": "Tl491496"
 }, 
 "otu168267": {
 "^ot:originalLabel": "Powellomycetaceae MP01", 
-"^ot:ottId": 1680, 
-"^ot:ottTaxonName": "Powellomycetaceae", 
 "^ot:treebaseOTUId": "Tl491497"
 }, 
 "otu168268": {
 "^ot:originalLabel": "Powellomycetaceae JEL587", 
-"^ot:ottId": 1680, 
-"^ot:ottTaxonName": "Powellomycetaceae", 
 "^ot:treebaseOTUId": "Tl491498"
 }, 
 "otu168269": {
 "^ot:originalLabel": "Geranomyces variabilis JEL559", 
-"^ot:ottId": 306896, 
-"^ot:ottTaxonName": "Geranomyces variabilis", 
 "^ot:treebaseOTUId": "Tl491499"
 }, 
 "otu168270": {
 "^ot:originalLabel": "Geranomyces variabilis JEL401", 
-"^ot:ottId": 306896, 
-"^ot:ottTaxonName": "Geranomyces variabilis", 
 "^ot:treebaseOTUId": "Tl491500"
 }, 
 "otu168271": {
 "^ot:originalLabel": "Geranomyces variabilis JEL05", 
-"^ot:ottId": 306896, 
-"^ot:ottTaxonName": "Geranomyces variabilis", 
 "^ot:treebaseOTUId": "Tl491501"
 }, 
 "otu168272": {
@@ -159,14 +112,10 @@
 }, 
 "otu168273": {
 "^ot:originalLabel": "Geranomyces variabilis AF28", 
-"^ot:ottId": 306896, 
-"^ot:ottTaxonName": "Geranomyces variabilis", 
 "^ot:treebaseOTUId": "Tl491503"
 }, 
 "otu168274": {
 "^ot:originalLabel": "Geranomyces variabilis KP31", 
-"^ot:ottId": 306896, 
-"^ot:ottTaxonName": "Geranomyces variabilis", 
 "^ot:treebaseOTUId": "Tl491504"
 }, 
 "otu168275": {
@@ -189,98 +138,66 @@
 }, 
 "otu168278": {
 "^ot:originalLabel": "Geranomyces clade JEL543", 
-"^ot:ottId": 369809, 
-"^ot:ottTaxonName": "Geranomyces", 
 "^ot:treebaseOTUId": "Tl491508"
 }, 
 "otu168279": {
 "^ot:originalLabel": "Geranomyces variabilis MP02", 
-"^ot:ottId": 306896, 
-"^ot:ottTaxonName": "Geranomyces variabilis", 
 "^ot:treebaseOTUId": "Tl491509"
 }, 
 "otu168280": {
 "^ot:originalLabel": "Geranomyces variabilis JEL567", 
-"^ot:ottId": 306896, 
-"^ot:ottTaxonName": "Geranomyces variabilis", 
 "^ot:treebaseOTUId": "Tl491510"
 }, 
 "otu168281": {
 "^ot:originalLabel": "Powellomycetaceae JEL538", 
-"^ot:ottId": 1680, 
-"^ot:ottTaxonName": "Powellomycetaceae", 
 "^ot:treebaseOTUId": "Tl491511"
 }, 
 "otu168282": {
 "^ot:originalLabel": "Powellomycetaceae JEL569", 
-"^ot:ottId": 1680, 
-"^ot:ottTaxonName": "Powellomycetaceae", 
 "^ot:treebaseOTUId": "Tl491512"
 }, 
 "otu168283": {
 "^ot:originalLabel": "Geranomyces variabilis PL96", 
-"^ot:ottId": 306896, 
-"^ot:ottTaxonName": "Geranomyces variabilis", 
 "^ot:treebaseOTUId": "Tl491513"
 }, 
 "otu168284": {
 "^ot:originalLabel": "Geranomyces variabilis MP03", 
-"^ot:ottId": 306896, 
-"^ot:ottTaxonName": "Geranomyces variabilis", 
 "^ot:treebaseOTUId": "Tl491514"
 }, 
 "otu168285": {
 "^ot:originalLabel": "Geranomyces variabilis MB4", 
-"^ot:ottId": 306896, 
-"^ot:ottTaxonName": "Geranomyces variabilis", 
 "^ot:treebaseOTUId": "Tl491515"
 }, 
 "otu168286": {
 "^ot:originalLabel": "Geranomyces variabilis JEL518", 
-"^ot:ottId": 306896, 
-"^ot:ottTaxonName": "Geranomyces variabilis", 
 "^ot:treebaseOTUId": "Tl491516"
 }, 
 "otu168287": {
 "^ot:originalLabel": "Geranomyces variabilis JEL613", 
-"^ot:ottId": 306896, 
-"^ot:ottTaxonName": "Geranomyces variabilis", 
 "^ot:treebaseOTUId": "Tl491517"
 }, 
 "otu168288": {
 "^ot:originalLabel": "Geranomyces variabilis JEL566", 
-"^ot:ottId": 306896, 
-"^ot:ottTaxonName": "Geranomyces variabilis", 
 "^ot:treebaseOTUId": "Tl491518"
 }, 
 "otu168289": {
 "^ot:originalLabel": "Geranomyces clade JEL565", 
-"^ot:ottId": 369809, 
-"^ot:ottTaxonName": "Geranomyces", 
 "^ot:treebaseOTUId": "Tl491519"
 }, 
 "otu168290": {
 "^ot:originalLabel": "Geranomyces variabilis KP27", 
-"^ot:ottId": 306896, 
-"^ot:ottTaxonName": "Geranomyces variabilis", 
 "^ot:treebaseOTUId": "Tl491520"
 }, 
 "otu168291": {
 "^ot:originalLabel": "Powellomycetaceae JEL95", 
-"^ot:ottId": 1680, 
-"^ot:ottTaxonName": "Powellomycetaceae", 
 "^ot:treebaseOTUId": "Tl491521"
 }, 
 "otu168292": {
 "^ot:originalLabel": "Geranomyces variabilis JEL542", 
-"^ot:ottId": 306896, 
-"^ot:ottTaxonName": "Geranomyces variabilis", 
 "^ot:treebaseOTUId": "Tl491522"
 }, 
 "otu168293": {
 "^ot:originalLabel": "Geranomyces variabilis JEL376", 
-"^ot:ottId": 306896, 
-"^ot:ottTaxonName": "Geranomyces variabilis", 
 "^ot:treebaseOTUId": "Tl491523"
 }, 
 "otu168294": {
@@ -291,8 +208,6 @@
 }, 
 "otu168295": {
 "^ot:originalLabel": "Geranomyces variabilis A30", 
-"^ot:ottId": 306896, 
-"^ot:ottTaxonName": "Geranomyces variabilis", 
 "^ot:treebaseOTUId": "Tl491525"
 }, 
 "otu168296": {
@@ -303,20 +218,14 @@
 }, 
 "otu168297": {
 "^ot:originalLabel": "Geranomyces variabilis PL161", 
-"^ot:ottId": 306896, 
-"^ot:ottTaxonName": "Geranomyces variabilis", 
 "^ot:treebaseOTUId": "Tl491527"
 }, 
 "otu168298": {
 "^ot:originalLabel": "Powellomycetaceae JEL588", 
-"^ot:ottId": 1680, 
-"^ot:ottTaxonName": "Powellomycetaceae", 
 "^ot:treebaseOTUId": "Tl491528"
 }, 
 "otu168299": {
 "^ot:originalLabel": "Geranomyces variabilis JEL558", 
-"^ot:ottId": 306896, 
-"^ot:ottTaxonName": "Geranomyces variabilis", 
 "^ot:treebaseOTUId": "Tl491529"
 }, 
 "otu168300": {
@@ -327,26 +236,20 @@
 }, 
 "otu168301": {
 "^ot:originalLabel": "Geranomyces variabilis A16", 
-"^ot:ottId": 306896, 
-"^ot:ottTaxonName": "Geranomyces variabilis", 
 "^ot:treebaseOTUId": "Tl491531"
 }, 
 "otu168302": {
 "^ot:originalLabel": "Powellomycetaceae JEL541", 
-"^ot:ottId": 1680, 
-"^ot:ottTaxonName": "Powellomycetaceae", 
 "^ot:treebaseOTUId": "Tl491532"
 }, 
 "otu168303": {
 "^ot:originalLabel": "Geranomyces variabilis PL154", 
-"^ot:ottId": 306896, 
-"^ot:ottTaxonName": "Geranomyces variabilis", 
 "^ot:treebaseOTUId": "Tl491533"
 }, 
 "otu168304": {
 "^ot:originalLabel": "Triparticalcar articum AFTOL696", 
-"^ot:ottId": 543914, 
-"^ot:ottTaxonName": "Triparticalcar arcticum", 
+"^ot:ottId": 845565, 
+"^ot:ottTaxonName": "Phlyctochytrium arcticum", 
 "^ot:treebaseOTUId": "Tl491534"
 }, 
 "otu168305": {
@@ -363,20 +266,14 @@
 }, 
 "otu168307": {
 "^ot:originalLabel": "Geranomyces clade PL160", 
-"^ot:ottId": 369809, 
-"^ot:ottTaxonName": "Geranomyces", 
 "^ot:treebaseOTUId": "Tl491537"
 }, 
 "otu168308": {
 "^ot:originalLabel": "Geranomyces variabilis Barr350", 
-"^ot:ottId": 306896, 
-"^ot:ottTaxonName": "Geranomyces variabilis", 
 "^ot:treebaseOTUId": "Tl491538"
 }, 
 "otu168309": {
 "^ot:originalLabel": "Geranomyces clade JEL563", 
-"^ot:ottId": 369809, 
-"^ot:ottTaxonName": "Geranomyces", 
 "^ot:treebaseOTUId": "Tl491539"
 }, 
 "otu168310": {
@@ -387,38 +284,26 @@
 }, 
 "otu168311": {
 "^ot:originalLabel": "Geranomyces variabilis PL166", 
-"^ot:ottId": 306896, 
-"^ot:ottTaxonName": "Geranomyces variabilis", 
 "^ot:treebaseOTUId": "Tl491541"
 }, 
 "otu168312": {
 "^ot:originalLabel": "Geranomyces variabilis PL142", 
-"^ot:ottId": 306896, 
-"^ot:ottTaxonName": "Geranomyces variabilis", 
 "^ot:treebaseOTUId": "Tl491542"
 }, 
 "otu168313": {
 "^ot:originalLabel": "Geranomyces variabilis JEL557", 
-"^ot:ottId": 306896, 
-"^ot:ottTaxonName": "Geranomyces variabilis", 
 "^ot:treebaseOTUId": "Tl491543"
 }, 
 "otu168314": {
 "^ot:originalLabel": "Geranomyces variabilis JEL379", 
-"^ot:ottId": 306896, 
-"^ot:ottTaxonName": "Geranomyces variabilis", 
 "^ot:treebaseOTUId": "Tl491544"
 }, 
 "otu168315": {
 "^ot:originalLabel": "Geranomyces variabilis KP08", 
-"^ot:ottId": 306896, 
-"^ot:ottTaxonName": "Geranomyces variabilis", 
 "^ot:treebaseOTUId": "Tl491545"
 }, 
 "otu168316": {
 "^ot:originalLabel": "Geranomyces variabilis JEL389", 
-"^ot:ottId": 306896, 
-"^ot:ottTaxonName": "Geranomyces variabilis", 
 "^ot:treebaseOTUId": "Tl491546"
 }
 }
@@ -433,9 +318,15 @@
 "treeById": {
 "tree766": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "BI, SSU + LSU + EF-1", 
 "^ot:inGroupClade": "node334485", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node334475", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node334475": {
 "edge334476": {

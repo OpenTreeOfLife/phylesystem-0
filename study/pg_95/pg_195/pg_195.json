@@ -19,48 +19,11 @@
 "@id": "peyotl-validator", 
 "@name": "validate_ot_nexson.py", 
 "@url": "https://github.com/OpenTreeOfLife/peyotl", 
-"@version": "0.0.3a", 
+"@version": "0.0.4a", 
 "invocation": {
-"checksPerformed": [
-"MISSING_MANDATORY_KEY", 
-"MISSING_OPTIONAL_KEY", 
-"UNRECOGNIZED_KEY", 
-"MISSING_LIST_EXPECTED", 
-"DUPLICATING_SINGLETON_KEY", 
-"REFERENCED_ID_NOT_FOUND", 
-"REPEATED_ID", 
-"REPEATED_OTU", 
-"MULTIPLE_ROOT_NODES", 
-"NO_ROOT_NODE", 
-"MULTIPLE_EDGES_FOR_NODES", 
-"CYCLE_DETECTED", 
-"DISCONNECTED_GRAPH_DETECTED", 
-"INCORRECT_ROOT_NODE_LABEL", 
-"TIP_WITHOUT_OTU", 
-"TIP_WITHOUT_OTT_ID", 
-"MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
-"NON_MONOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
-"INVALID_PROPERTY_VALUE", 
-"PROPERTY_VALUE_NOT_USEFUL", 
-"UNRECOGNIZED_PROPERTY_VALUE", 
-"MULTIPLE_TREES", 
-"UNRECOGNIZED_TAG", 
-"CONFLICTING_PROPERTY_VALUES", 
-"NO_TREES", 
-"DEPRECATED_PROPERTY", 
-"UNPARSEABLE_META", 
-"UNREACHABLE_NODE", 
-"INCORRECT_VALUE_TYPE", 
-"MISSING_CRUCIAL_CONTENT"
-], 
 "commandLine": [
 "--embed", 
-"--agent-only", 
-"-e", 
-"../mig-phyelesystem-scratch/195/validation.json", 
-"-o", 
-"../mig-phyelesystem-scratch/195/final.json", 
-"../mig-phyelesystem-scratch/195/v1.2.1-195.json"
+"--agent-only"
 ], 
 "otherProperty": [
 {
@@ -76,12 +39,19 @@
 }
 ]
 }, 
+"^ot:annotationEvents": {
+"annotation": []
+}, 
+"^ot:candidateTreeForSynthesis": [], 
 "^ot:curatorName": "William Wysocki", 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S1333"
 }, 
 "^ot:focalClade": 920911, 
 "^ot:focalCladeOTTTaxonName": "Elegia", 
+"^ot:messages": {
+"message": []
+}, 
 "^ot:otusElementOrder": [
 "otus195"
 ], 
@@ -91,6 +61,7 @@
 }, 
 "^ot:studyPublicationReference": "Moline, P. M., & Linder, H. P. (2005). Molecular phylogeny and generic delimitation in the Elegia group (Restionaceae, South Africa) based on a complete taxon sampling and four chloroplast DNA regions. Systematic botany, 30(4), 759-772.", 
 "^ot:studyYear": 2005, 
+"^ot:tag": [], 
 "^ot:treesElementOrder": [
 "trees195"
 ], 
@@ -123,6 +94,8 @@
 }, 
 "otu374304": {
 "^ot:originalLabel": "Chondropetalum ebracteatum", 
+"^ot:ottId": 3965262, 
+"^ot:ottTaxonName": "Elegia ebracteata", 
 "^ot:treebaseOTUId": "Tl18482"
 }, 
 "otu374305": {
@@ -133,14 +106,20 @@
 }, 
 "otu374306": {
 "^ot:originalLabel": "Calopsis dura", 
+"^ot:ottId": 3965109, 
+"^ot:ottTaxonName": "Restio durus", 
 "^ot:treebaseOTUId": "Tl36437"
 }, 
 "otu374307": {
 "^ot:originalLabel": "Calopsis viminea", 
+"^ot:ottId": 3965141, 
+"^ot:ottTaxonName": "Restio vimineus", 
 "^ot:treebaseOTUId": "Tl36438"
 }, 
 "otu374308": {
 "^ot:originalLabel": "Chondropetalum mucronatum", 
+"^ot:ottId": 3965254, 
+"^ot:ottTaxonName": "Elegia mucronata", 
 "^ot:treebaseOTUId": "Tl36439"
 }, 
 "otu374309": {
@@ -199,6 +178,8 @@
 }, 
 "otu374318": {
 "^ot:originalLabel": "Chondropetalum tectorum", 
+"^ot:ottId": 3965252, 
+"^ot:ottTaxonName": "Elegia tectorum", 
 "^ot:treebaseOTUId": "Tl36449"
 }, 
 "otu374319": {
@@ -305,6 +286,8 @@
 }, 
 "otu374336": {
 "^ot:originalLabel": "Dovea macrocarpa", 
+"^ot:ottId": 3965259, 
+"^ot:ottTaxonName": "Elegia macrocarpa", 
 "^ot:treebaseOTUId": "Tl36467"
 }, 
 "otu374337": {
@@ -345,6 +328,8 @@
 }, 
 "otu374343": {
 "^ot:originalLabel": "Ischyrolepis karooica", 
+"^ot:ottId": 3965100, 
+"^ot:ottTaxonName": "Restio karooicus", 
 "^ot:treebaseOTUId": "Tl36474"
 }, 
 "otu374344": {
@@ -385,6 +370,8 @@
 }, 
 "otu374350": {
 "^ot:originalLabel": "Calopsis muirii", 
+"^ot:ottId": 3965130, 
+"^ot:ottTaxonName": "Restio muirii", 
 "^ot:treebaseOTUId": "Tl36481"
 }, 
 "otu374351": {
@@ -395,6 +382,8 @@
 }, 
 "otu374352": {
 "^ot:originalLabel": "Chondropetalum aggregatum", 
+"^ot:ottId": 3965258, 
+"^ot:ottTaxonName": "Elegia aggregata", 
 "^ot:treebaseOTUId": "Tl36483"
 }, 
 "otu374353": {
@@ -417,10 +406,14 @@
 }, 
 "otu374356": {
 "^ot:originalLabel": "Chondropetalum decipiens", 
+"^ot:ottId": 3965260, 
+"^ot:ottTaxonName": "Elegia decipiens", 
 "^ot:treebaseOTUId": "Tl36487"
 }, 
 "otu374357": {
 "^ot:originalLabel": "Chondropetalum hookerianum", 
+"^ot:ottId": 3965266, 
+"^ot:ottTaxonName": "Elegia hookeriana", 
 "^ot:treebaseOTUId": "Tl36488"
 }, 
 "otu374358": {
@@ -449,6 +442,8 @@
 }, 
 "otu374362": {
 "^ot:originalLabel": "Calopsis burchellii", 
+"^ot:ottId": 3965074, 
+"^ot:ottTaxonName": "Restio albotuberculatus", 
 "^ot:treebaseOTUId": "Tl36493"
 }, 
 "otu374363": {
@@ -459,6 +454,8 @@
 }, 
 "otu374364": {
 "^ot:originalLabel": "Chondropetalum microcarpum", 
+"^ot:ottId": 3965264, 
+"^ot:ottTaxonName": "Elegia microcarpa", 
 "^ot:treebaseOTUId": "Tl36495"
 }, 
 "otu374365": {
@@ -475,10 +472,14 @@
 }, 
 "otu374367": {
 "^ot:originalLabel": "Chondropetalum rectum", 
+"^ot:ottId": 3965263, 
+"^ot:ottTaxonName": "Elegia recta", 
 "^ot:treebaseOTUId": "Tl36498"
 }, 
 "otu374368": {
 "^ot:originalLabel": "Chondropetalum deustum", 
+"^ot:ottId": 3965256, 
+"^ot:ottTaxonName": "Elegia deusta", 
 "^ot:treebaseOTUId": "Tl36499"
 }, 
 "otu374369": {
@@ -501,6 +502,8 @@
 }, 
 "otu374372": {
 "^ot:originalLabel": "Chondropetalum nudum", 
+"^ot:ottId": 3965261, 
+"^ot:ottTaxonName": "Elegia nuda", 
 "^ot:treebaseOTUId": "Tl36503"
 }, 
 "otu374373": {
@@ -515,6 +518,8 @@
 }, 
 "otu374375": {
 "^ot:originalLabel": "Chondropetalum acockii", 
+"^ot:ottId": 3965267, 
+"^ot:ottTaxonName": "Elegia acockii", 
 "^ot:treebaseOTUId": "Tl36506"
 }, 
 "otu374376": {
@@ -535,9 +540,15 @@
 "treeById": {
 "tree5735": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "Fig. 1", 
 "^ot:inGroupClade": "node983712", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node983681", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node983681": {
 "edge983682": {

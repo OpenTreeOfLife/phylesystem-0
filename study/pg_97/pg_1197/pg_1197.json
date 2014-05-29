@@ -19,48 +19,11 @@
 "@id": "peyotl-validator", 
 "@name": "validate_ot_nexson.py", 
 "@url": "https://github.com/OpenTreeOfLife/peyotl", 
-"@version": "0.0.3a", 
+"@version": "0.0.4a", 
 "invocation": {
-"checksPerformed": [
-"MISSING_MANDATORY_KEY", 
-"MISSING_OPTIONAL_KEY", 
-"UNRECOGNIZED_KEY", 
-"MISSING_LIST_EXPECTED", 
-"DUPLICATING_SINGLETON_KEY", 
-"REFERENCED_ID_NOT_FOUND", 
-"REPEATED_ID", 
-"REPEATED_OTU", 
-"MULTIPLE_ROOT_NODES", 
-"NO_ROOT_NODE", 
-"MULTIPLE_EDGES_FOR_NODES", 
-"CYCLE_DETECTED", 
-"DISCONNECTED_GRAPH_DETECTED", 
-"INCORRECT_ROOT_NODE_LABEL", 
-"TIP_WITHOUT_OTU", 
-"TIP_WITHOUT_OTT_ID", 
-"MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
-"NON_MONOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
-"INVALID_PROPERTY_VALUE", 
-"PROPERTY_VALUE_NOT_USEFUL", 
-"UNRECOGNIZED_PROPERTY_VALUE", 
-"MULTIPLE_TREES", 
-"UNRECOGNIZED_TAG", 
-"CONFLICTING_PROPERTY_VALUES", 
-"NO_TREES", 
-"DEPRECATED_PROPERTY", 
-"UNPARSEABLE_META", 
-"UNREACHABLE_NODE", 
-"INCORRECT_VALUE_TYPE", 
-"MISSING_CRUCIAL_CONTENT"
-], 
 "commandLine": [
 "--embed", 
-"--agent-only", 
-"-e", 
-"../mig-phyelesystem-scratch/1197/validation.json", 
-"-o", 
-"../mig-phyelesystem-scratch/1197/final.json", 
-"../mig-phyelesystem-scratch/1197/v1.2.1-1197.json"
+"--agent-only"
 ], 
 "otherProperty": [
 {
@@ -76,9 +39,16 @@
 }
 ]
 }, 
+"^ot:annotationEvents": {
+"annotation": []
+}, 
+"^ot:candidateTreeForSynthesis": [], 
 "^ot:curatorName": "Romina Gazis", 
 "^ot:focalClade": 41890, 
 "^ot:focalCladeOTTTaxonName": "Olpidium", 
+"^ot:messages": {
+"message": []
+}, 
 "^ot:otusElementOrder": [
 "otus1197"
 ], 
@@ -86,8 +56,9 @@
 "^ot:studyPublication": {
 "@href": "http://dx.doi.org/10.1186/1471-2148-11-331"
 }, 
-"^ot:studyPublicationReference": "Sekimoto, Satoshi, D'Ann Rochon, Jennifer E. Long, Jaclyn M. Dee, and Mary L. Berbee. \"A multigene phylogeny of Olpidium and its implications for early fungal evolution.\" BMC Evolutionary Biology 11, no. 1 (2011): 331.", 
+"^ot:studyPublicationReference": "Sekimoto, Satoshi, D'Ann Rochon, Jennifer E. Long, Jaclyn M. Dee, and Mary L. Berbee. 2011. A multigene phylogeny of Olpidium and its implications for early fungal evolution. BMC Evolutionary Biology 11 (1): 331.", 
 "^ot:studyYear": 2011, 
+"^ot:tag": [], 
 "^ot:treesElementOrder": [
 "trees1197"
 ], 
@@ -140,7 +111,9 @@
 "^ot:ottTaxonName": "Basidiobolus ranarum"
 }, 
 "otu231348": {
-"^ot:originalLabel": "Basidiobolus haptosporus"
+"^ot:originalLabel": "Basidiobolus haptosporus", 
+"^ot:ottId": 167671, 
+"^ot:ottTaxonName": "Basidiobolus ranarum"
 }, 
 "otu231349": {
 "^ot:originalLabel": "Dimargaris bacillispora", 
@@ -176,7 +149,9 @@
 "^ot:ottTaxonName": "Conidiobolus coronatus"
 }, 
 "otu231356": {
-"^ot:originalLabel": "Piptocephalis corymbifera"
+"^ot:originalLabel": "Piptocephalis corymbifera", 
+"^ot:ottId": 346211, 
+"^ot:ottTaxonName": "Piptocephalis freseniana"
 }, 
 "otu231357": {
 "^ot:originalLabel": "Rhopalomyces elegans", 
@@ -242,7 +217,9 @@
 "^ot:originalLabel": "Hyaloraphidium curvatum"
 }, 
 "otu231370": {
-"^ot:originalLabel": "Gonapodya sp JEL183"
+"^ot:originalLabel": "Gonapodya sp JEL183", 
+"^ot:ottId": 713322, 
+"^ot:ottTaxonName": "Gonapodya"
 }, 
 "otu231371": {
 "^ot:originalLabel": "Monoblepharis polymorpha", 
@@ -383,7 +360,9 @@
 "^ot:ottTaxonName": "Coprinopsis cinerea"
 }, 
 "otu231399": {
-"^ot:originalLabel": "Phanerochaete chrysosporium"
+"^ot:originalLabel": "Phanerochaete chrysosporium", 
+"^ot:ottId": 5299626, 
+"^ot:ottTaxonName": "Phanerodontia chrysosporium"
 }, 
 "otu231400": {
 "^ot:originalLabel": "Puccinia graminis", 
@@ -404,9 +383,16 @@
 "treeById": {
 "tree2417": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "ML, EF-2 + RPB2 + ACT", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node561672", 
-"^ot:tag": "delete me", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [
+"delete me"
+], 
 "edgeBySourceId": {
 "node561672": {
 "edge561673": {
@@ -1266,8 +1252,14 @@
 }, 
 "tree2418": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "Fig.3", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node561794", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node561794": {
 "edge561795": {
@@ -2106,9 +2098,15 @@
 }, 
 "tree5822": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "ML, EF-2 + RPB2 + ACT (rooted)", 
 "^ot:inGroupClade": "node993847", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node993834", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node993834": {
 "edge993835": {

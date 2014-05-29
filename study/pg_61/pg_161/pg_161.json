@@ -19,48 +19,11 @@
 "@id": "peyotl-validator", 
 "@name": "validate_ot_nexson.py", 
 "@url": "https://github.com/OpenTreeOfLife/peyotl", 
-"@version": "0.0.3a", 
+"@version": "0.0.4a", 
 "invocation": {
-"checksPerformed": [
-"MISSING_MANDATORY_KEY", 
-"MISSING_OPTIONAL_KEY", 
-"UNRECOGNIZED_KEY", 
-"MISSING_LIST_EXPECTED", 
-"DUPLICATING_SINGLETON_KEY", 
-"REFERENCED_ID_NOT_FOUND", 
-"REPEATED_ID", 
-"REPEATED_OTU", 
-"MULTIPLE_ROOT_NODES", 
-"NO_ROOT_NODE", 
-"MULTIPLE_EDGES_FOR_NODES", 
-"CYCLE_DETECTED", 
-"DISCONNECTED_GRAPH_DETECTED", 
-"INCORRECT_ROOT_NODE_LABEL", 
-"TIP_WITHOUT_OTU", 
-"TIP_WITHOUT_OTT_ID", 
-"MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
-"NON_MONOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
-"INVALID_PROPERTY_VALUE", 
-"PROPERTY_VALUE_NOT_USEFUL", 
-"UNRECOGNIZED_PROPERTY_VALUE", 
-"MULTIPLE_TREES", 
-"UNRECOGNIZED_TAG", 
-"CONFLICTING_PROPERTY_VALUES", 
-"NO_TREES", 
-"DEPRECATED_PROPERTY", 
-"UNPARSEABLE_META", 
-"UNREACHABLE_NODE", 
-"INCORRECT_VALUE_TYPE", 
-"MISSING_CRUCIAL_CONTENT"
-], 
 "commandLine": [
 "--embed", 
-"--agent-only", 
-"-e", 
-"../mig-phyelesystem-scratch/161/validation.json", 
-"-o", 
-"../mig-phyelesystem-scratch/161/final.json", 
-"../mig-phyelesystem-scratch/161/v1.2.1-161.json"
+"--agent-only"
 ], 
 "otherProperty": [
 {
@@ -76,12 +39,19 @@
 }
 ]
 }, 
+"^ot:annotationEvents": {
+"annotation": []
+}, 
+"^ot:candidateTreeForSynthesis": [], 
 "^ot:curatorName": "William Wysocki", 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S2092"
 }, 
 "^ot:focalClade": 388686, 
 "^ot:focalCladeOTTTaxonName": "Loranthaceae", 
+"^ot:messages": {
+"message": []
+}, 
 "^ot:otusElementOrder": [
 "otus161"
 ], 
@@ -91,6 +61,7 @@
 }, 
 "^ot:studyPublicationReference": "Vidal-Russell, R., & Nickrent, D. L. (2008). Evolutionary relationships in the showy mistletoe family (Loranthaceae). American Journal of Botany, 95(8), 1015-1029.", 
 "^ot:studyYear": 2008, 
+"^ot:tag": [], 
 "^ot:treesElementOrder": [
 "trees161"
 ], 
@@ -148,6 +119,7 @@
 "otu179817": {
 "^ot:originalLabel": "Schoepfia fragrans", 
 "^ot:ottId": 742520, 
+"^ot:ottTaxonName": "Schoepfia fragrans", 
 "^ot:treebaseOTUId": "Tl46042"
 }, 
 "otu179818": {
@@ -177,6 +149,7 @@
 "otu179822": {
 "^ot:originalLabel": "Spragueanella rhamnifolia", 
 "^ot:ottId": 379444, 
+"^ot:ottTaxonName": "Spragueanella rhamnifolia", 
 "^ot:treebaseOTUId": "Tl83716"
 }, 
 "otu179823": {
@@ -260,6 +233,7 @@
 "otu179836": {
 "^ot:originalLabel": "Psittacanthus schiedeanus", 
 "^ot:ottId": 561906, 
+"^ot:ottTaxonName": "Psittacanthus schiedeanus", 
 "^ot:treebaseOTUId": "Tl83730"
 }, 
 "otu179837": {
@@ -553,26 +527,31 @@
 "otu179885": {
 "^ot:originalLabel": "Psittacanthus angustifolius", 
 "^ot:ottId": 752539, 
+"^ot:ottTaxonName": "Psittacanthus angustifolius", 
 "^ot:treebaseOTUId": "Tl83779"
 }, 
 "otu179886": {
 "^ot:originalLabel": "Englerina woodfordioides", 
 "^ot:ottId": 1001860, 
+"^ot:ottTaxonName": "Englerina woodfordioides", 
 "^ot:treebaseOTUId": "Tl83780"
 }, 
 "otu179887": {
 "^ot:originalLabel": "Tapinanthus quinquangulus", 
 "^ot:ottId": 752559, 
+"^ot:ottTaxonName": "Tapinanthus quinquangulus", 
 "^ot:treebaseOTUId": "Tl83781"
 }, 
 "otu179888": {
 "^ot:originalLabel": "Helixanthera kirkii", 
 "^ot:ottId": 871029, 
+"^ot:ottTaxonName": "Helixanthera kirkii", 
 "^ot:treebaseOTUId": "Tl83782"
 }, 
 "otu179889": {
 "^ot:originalLabel": "Tristerix aphyllus", 
 "^ot:ottId": 721578, 
+"^ot:ottTaxonName": "Tristerix aphyllus", 
 "^ot:treebaseOTUId": "Tl83783"
 }
 }
@@ -589,9 +568,15 @@
 "treeById": {
 "tree1082": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "Fig. 2", 
 "^ot:inGroupClade": "node397333", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node397327", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node397327": {
 "edge397328": {
@@ -1493,9 +1478,15 @@
 }, 
 "tree1083": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "Fig. 1", 
 "^ot:inGroupClade": "node397458", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node397455", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node397455": {
 "edge397456": {
@@ -2327,9 +2318,15 @@
 }, 
 "tree1084": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "Fig. 3", 
 "^ot:inGroupClade": "node397579", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node397573", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node397573": {
 "edge397574": {

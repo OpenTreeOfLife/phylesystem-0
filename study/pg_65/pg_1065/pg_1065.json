@@ -19,48 +19,11 @@
 "@id": "peyotl-validator", 
 "@name": "validate_ot_nexson.py", 
 "@url": "https://github.com/OpenTreeOfLife/peyotl", 
-"@version": "0.0.3a", 
+"@version": "0.0.4a", 
 "invocation": {
-"checksPerformed": [
-"MISSING_MANDATORY_KEY", 
-"MISSING_OPTIONAL_KEY", 
-"UNRECOGNIZED_KEY", 
-"MISSING_LIST_EXPECTED", 
-"DUPLICATING_SINGLETON_KEY", 
-"REFERENCED_ID_NOT_FOUND", 
-"REPEATED_ID", 
-"REPEATED_OTU", 
-"MULTIPLE_ROOT_NODES", 
-"NO_ROOT_NODE", 
-"MULTIPLE_EDGES_FOR_NODES", 
-"CYCLE_DETECTED", 
-"DISCONNECTED_GRAPH_DETECTED", 
-"INCORRECT_ROOT_NODE_LABEL", 
-"TIP_WITHOUT_OTU", 
-"TIP_WITHOUT_OTT_ID", 
-"MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
-"NON_MONOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
-"INVALID_PROPERTY_VALUE", 
-"PROPERTY_VALUE_NOT_USEFUL", 
-"UNRECOGNIZED_PROPERTY_VALUE", 
-"MULTIPLE_TREES", 
-"UNRECOGNIZED_TAG", 
-"CONFLICTING_PROPERTY_VALUES", 
-"NO_TREES", 
-"DEPRECATED_PROPERTY", 
-"UNPARSEABLE_META", 
-"UNREACHABLE_NODE", 
-"INCORRECT_VALUE_TYPE", 
-"MISSING_CRUCIAL_CONTENT"
-], 
 "commandLine": [
 "--embed", 
-"--agent-only", 
-"-e", 
-"../mig-phyelesystem-scratch/1065/validation.json", 
-"-o", 
-"../mig-phyelesystem-scratch/1065/final.json", 
-"../mig-phyelesystem-scratch/1065/v1.2.1-1065.json"
+"--agent-only"
 ], 
 "otherProperty": [
 {
@@ -76,12 +39,19 @@
 }
 ]
 }, 
+"^ot:annotationEvents": {
+"annotation": []
+}, 
+"^ot:candidateTreeForSynthesis": [], 
 "^ot:curatorName": "Romina Gazis", 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S707"
 }, 
 "^ot:focalClade": 634628, 
 "^ot:focalCladeOTTTaxonName": "Basidiomycota", 
+"^ot:messages": {
+"message": []
+}, 
 "^ot:otusElementOrder": [
 "otus1065"
 ], 
@@ -91,6 +61,7 @@
 }, 
 "^ot:studyPublicationReference": "Hibbett D., Gilbert L., & Donoghue M. 2000. Evolutionary instability of ectomycorrhizal symbioses in basidiomycetes. Nature, 407: 506-508.", 
 "^ot:studyYear": 2000, 
+"^ot:tag": [], 
 "^ot:treesElementOrder": [
 "trees1065"
 ], 
@@ -213,6 +184,8 @@
 }, 
 "otu218599": {
 "^ot:originalLabel": "Botryobasidium isabellinum", 
+"^ot:ottId": 5300654, 
+"^ot:ottTaxonName": "Botryohypochnus isabellinus", 
 "^ot:treebaseOTUId": "Tl121306"
 }, 
 "otu218600": {
@@ -242,10 +215,13 @@
 "otu218604": {
 "^ot:originalLabel": "Scytinostroma portentosum", 
 "^ot:ottId": 717390, 
+"^ot:ottTaxonName": "Scytinostroma portentosum", 
 "^ot:treebaseOTUId": "Tl121311"
 }, 
 "otu218605": {
 "^ot:originalLabel": "Clavulina cristata", 
+"^ot:ottId": 3798782, 
+"^ot:ottTaxonName": "Clavulina coralloides", 
 "^ot:treebaseOTUId": "Tl121312"
 }, 
 "otu218606": {
@@ -274,6 +250,8 @@
 }, 
 "otu218610": {
 "^ot:originalLabel": "Panus rudis", 
+"^ot:ottId": 685632, 
+"^ot:ottTaxonName": "Lentinus strigosus", 
 "^ot:treebaseOTUId": "Tl121317"
 }, 
 "otu218611": {
@@ -315,6 +293,7 @@
 "otu218617": {
 "^ot:originalLabel": "Heliocybe sulcata", 
 "^ot:ottId": 685636, 
+"^ot:ottTaxonName": "Heliocybe sulcata", 
 "^ot:treebaseOTUId": "Tl121324"
 }, 
 "otu218618": {
@@ -343,6 +322,8 @@
 }, 
 "otu218622": {
 "^ot:originalLabel": "Neolentiporus maculatissimus", 
+"^ot:ottId": 802578, 
+"^ot:ottTaxonName": "Polyporus udus", 
 "^ot:treebaseOTUId": "Tl121329"
 }, 
 "otu218623": {
@@ -353,6 +334,8 @@
 }, 
 "otu218624": {
 "^ot:originalLabel": "Lentinellus omphalodes", 
+"^ot:ottId": 625340, 
+"^ot:ottTaxonName": "Lentinellus micheneri", 
 "^ot:treebaseOTUId": "Tl121331"
 }, 
 "otu218625": {
@@ -364,12 +347,13 @@
 "otu218626": {
 "^ot:originalLabel": "Sistotrema sernanderi", 
 "^ot:ottId": 755664, 
+"^ot:ottTaxonName": "Sistotrema sernanderi", 
 "^ot:treebaseOTUId": "Tl121333"
 }, 
 "otu218627": {
-"^ot:altLabel": "Albatrellus flettii", 
 "^ot:originalLabel": "Albatrellus fletti", 
 "^ot:ottId": 559246, 
+"^ot:ottTaxonName": "Albatrellus flettii", 
 "^ot:treebaseOTUId": "Tl121336"
 }, 
 "otu218628": {
@@ -380,6 +364,8 @@
 }, 
 "otu218629": {
 "^ot:originalLabel": "Bondarzewia montana", 
+"^ot:ottId": 842317, 
+"^ot:ottTaxonName": "Bondarzewia mesenterica", 
 "^ot:treebaseOTUId": "Tl121338"
 }, 
 "otu218630": {
@@ -401,9 +387,9 @@
 "^ot:treebaseOTUId": "Tl121341"
 }, 
 "otu218633": {
-"^ot:altLabel": "Tremella", 
 "^ot:originalLabel": "Tremella spp.", 
 "^ot:ottId": 391921, 
+"^ot:ottTaxonName": "Tremella", 
 "^ot:treebaseOTUId": "Tl121342"
 }, 
 "otu218634": {
@@ -527,9 +513,9 @@
 "^ot:treebaseOTUId": "Tl121365"
 }, 
 "otu218656": {
-"^ot:altLabel": "Neolentinus lepideus", 
 "^ot:originalLabel": "Neolentinus lepideus VT306N", 
 "^ot:ottId": 982765, 
+"^ot:ottTaxonName": "Neolentinus lepideus", 
 "^ot:treebaseOTUId": "Tl121366"
 }, 
 "otu218657": {
@@ -606,6 +592,8 @@
 }, 
 "otu218669": {
 "^ot:originalLabel": "Pulcherricium caeruleum", 
+"^ot:ottId": 5293089, 
+"^ot:ottTaxonName": "Byssus phosphorea", 
 "^ot:treebaseOTUId": "Tl121380"
 }, 
 "otu218670": {
@@ -615,9 +603,9 @@
 "^ot:treebaseOTUId": "Tl121381"
 }, 
 "otu218671": {
-"^ot:altLabel": "Acanthophysium", 
 "^ot:originalLabel": "Acanthophysium cerrusatus", 
 "^ot:ottId": 268711, 
+"^ot:ottTaxonName": "Acanthophysium", 
 "^ot:treebaseOTUId": "Tl121382"
 }, 
 "otu218672": {
@@ -638,6 +626,8 @@
 }, 
 "otu218675": {
 "^ot:originalLabel": "Phanerochaete chrysosporium", 
+"^ot:ottId": 5299626, 
+"^ot:ottTaxonName": "Phanerodontia chrysosporium", 
 "^ot:treebaseOTUId": "Tl121387"
 }, 
 "otu218676": {
@@ -714,6 +704,8 @@
 }, 
 "otu218688": {
 "^ot:originalLabel": "Wolfiporia cocos FPL4198", 
+"^ot:ottId": 5299874, 
+"^ot:ottTaxonName": "Wolfiporia extensa", 
 "^ot:treebaseOTUId": "Tl121400"
 }, 
 "otu218689": {
@@ -779,6 +771,7 @@
 "otu218699": {
 "^ot:originalLabel": "Gloeocystidiellum porosum", 
 "^ot:ottId": 181623, 
+"^ot:ottTaxonName": "Gloeocystidiellum porosum", 
 "^ot:treebaseOTUId": "Tl121415"
 }, 
 "otu218700": {
@@ -808,6 +801,7 @@
 "otu218704": {
 "^ot:originalLabel": "Pycnoporellus fulgens", 
 "^ot:ottId": 1051884, 
+"^ot:ottTaxonName": "Pycnoporellus fulgens", 
 "^ot:treebaseOTUId": "Tl121420"
 }, 
 "otu218705": {
@@ -861,6 +855,7 @@
 "otu218713": {
 "^ot:originalLabel": "Sparassis spathulata", 
 "^ot:ottId": 468068, 
+"^ot:ottTaxonName": "Sparassis spathulata", 
 "^ot:treebaseOTUId": "Tl121430"
 }, 
 "otu218714": {
@@ -900,18 +895,19 @@
 "otu218720": {
 "^ot:originalLabel": "Gloeophyllum sepiarium", 
 "^ot:ottId": 518288, 
+"^ot:ottTaxonName": "Gloeophyllum sepiarium", 
 "^ot:treebaseOTUId": "Tl121439"
 }, 
 "otu218721": {
-"^ot:altLabel": "Laurilia sulcata", 
 "^ot:originalLabel": "Laurilia sulcata CBS365.49", 
 "^ot:ottId": 181624, 
+"^ot:ottTaxonName": "Laurilia sulcata", 
 "^ot:treebaseOTUId": "Tl121440"
 }, 
 "otu218722": {
-"^ot:altLabel": "Merulius tremellosus", 
 "^ot:originalLabel": "Phlebia tremellosa", 
 "^ot:ottId": 659397, 
+"^ot:ottTaxonName": "Merulius tremellosus", 
 "^ot:treebaseOTUId": "Tl121441"
 }, 
 "otu218723": {
@@ -1057,6 +1053,7 @@
 "otu218747": {
 "^ot:originalLabel": "Phellodon tomentosus", 
 "^ot:ottId": 7501, 
+"^ot:ottTaxonName": "Phellodon tomentosus", 
 "^ot:treebaseOTUId": "Tl67975"
 }, 
 "otu218748": {
@@ -1082,9 +1079,9 @@
 "^ot:treebaseOTUId": "Tl67979"
 }, 
 "otu218752": {
-"^ot:altLabel": "Leucopaxillus", 
 "^ot:originalLabel": "Leucopaxillus sp", 
 "^ot:ottId": 518858, 
+"^ot:ottTaxonName": "Leucopaxillus", 
 "^ot:treebaseOTUId": "Tl67980"
 }, 
 "otu218753": {
@@ -1102,6 +1099,7 @@
 "otu218755": {
 "^ot:originalLabel": "Entoloma canescens", 
 "^ot:ottId": 926794, 
+"^ot:ottTaxonName": "Entoloma canescens", 
 "^ot:treebaseOTUId": "Tl67983"
 }, 
 "otu218756": {
@@ -1128,10 +1126,17 @@
 "treeById": {
 "tree2061": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "MP, SSU + LSU + mtSSU", 
 "^ot:inGroupClade": "node516344", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node516340", 
-"^ot:tag": "SSU", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [
+"SSU"
+], 
 "edgeBySourceId": {
 "node516340": {
 "edge516341": {

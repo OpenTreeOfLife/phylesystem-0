@@ -19,48 +19,11 @@
 "@id": "peyotl-validator", 
 "@name": "validate_ot_nexson.py", 
 "@url": "https://github.com/OpenTreeOfLife/peyotl", 
-"@version": "0.0.3a", 
+"@version": "0.0.4a", 
 "invocation": {
-"checksPerformed": [
-"MISSING_MANDATORY_KEY", 
-"MISSING_OPTIONAL_KEY", 
-"UNRECOGNIZED_KEY", 
-"MISSING_LIST_EXPECTED", 
-"DUPLICATING_SINGLETON_KEY", 
-"REFERENCED_ID_NOT_FOUND", 
-"REPEATED_ID", 
-"REPEATED_OTU", 
-"MULTIPLE_ROOT_NODES", 
-"NO_ROOT_NODE", 
-"MULTIPLE_EDGES_FOR_NODES", 
-"CYCLE_DETECTED", 
-"DISCONNECTED_GRAPH_DETECTED", 
-"INCORRECT_ROOT_NODE_LABEL", 
-"TIP_WITHOUT_OTU", 
-"TIP_WITHOUT_OTT_ID", 
-"MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
-"NON_MONOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
-"INVALID_PROPERTY_VALUE", 
-"PROPERTY_VALUE_NOT_USEFUL", 
-"UNRECOGNIZED_PROPERTY_VALUE", 
-"MULTIPLE_TREES", 
-"UNRECOGNIZED_TAG", 
-"CONFLICTING_PROPERTY_VALUES", 
-"NO_TREES", 
-"DEPRECATED_PROPERTY", 
-"UNPARSEABLE_META", 
-"UNREACHABLE_NODE", 
-"INCORRECT_VALUE_TYPE", 
-"MISSING_CRUCIAL_CONTENT"
-], 
 "commandLine": [
 "--embed", 
-"--agent-only", 
-"-e", 
-"../mig-phyelesystem-scratch/1228/validation.json", 
-"-o", 
-"../mig-phyelesystem-scratch/1228/final.json", 
-"../mig-phyelesystem-scratch/1228/v1.2.1-1228.json"
+"--agent-only"
 ], 
 "otherProperty": [
 {
@@ -76,9 +39,16 @@
 }
 ]
 }, 
+"^ot:annotationEvents": {
+"annotation": []
+}, 
+"^ot:candidateTreeForSynthesis": [], 
 "^ot:curatorName": "bryan drew", 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S10068"
+}, 
+"^ot:messages": {
+"message": []
 }, 
 "^ot:otusElementOrder": [
 "otus1228"
@@ -89,6 +59,7 @@
 }, 
 "^ot:studyPublicationReference": "Nozaki H., Maruyama S., Matsuzaki M., Nakada T., Kato S., & Misawa K. 2009. Phylogenetic positions of Glaucophyta, green plants (Archaeplastida) and Haptophyta (Chromalveolata) as deduced from slowly evolving nuclear genes. Molecular Phylogenetics and Evolution, 53(3): 872-880.", 
 "^ot:studyYear": 2009, 
+"^ot:tag": [], 
 "^ot:treesElementOrder": [
 "trees1228"
 ], 
@@ -229,8 +200,6 @@
 }, 
 "otu233929": {
 "^ot:originalLabel": "Chlorella sp. NC64A", 
-"^ot:ottId": 972588, 
-"^ot:ottTaxonName": "Chlorella sp.", 
 "^ot:treebaseOTUId": "Tl243329"
 }, 
 "otu233930": {
@@ -265,8 +234,6 @@
 }, 
 "otu233935": {
 "^ot:originalLabel": "Drosophila sp.", 
-"^ot:ottId": 4418969, 
-"^ot:ottTaxonName": "Drosophila sp.", 
 "^ot:treebaseOTUId": "Tl254086"
 }, 
 "otu233936": {
@@ -301,8 +268,6 @@
 }, 
 "otu233941": {
 "^ot:originalLabel": "Reclinomonas sp.", 
-"^ot:ottId": 429202, 
-"^ot:ottTaxonName": "Reclinomonas", 
 "^ot:treebaseOTUId": "Tl254092"
 }, 
 "otu233942": {
@@ -349,7 +314,7 @@
 }, 
 "otu233949": {
 "^ot:originalLabel": "Galdieria sp.", 
-"^ot:ottId": 332620, 
+"^ot:ottId": 5155123, 
 "^ot:ottTaxonName": "Galdieria", 
 "^ot:treebaseOTUId": "Tl254100"
 }, 
@@ -386,7 +351,7 @@
 "otu233955": {
 "^ot:originalLabel": "Haptophyceae", 
 "^ot:ottId": 151014, 
-"^ot:ottTaxonName": "Haptophyceae", 
+"^ot:ottTaxonName": "Haptophyta", 
 "^ot:treebaseOTUId": "Tl254106"
 }, 
 "otu233956": {
@@ -482,7 +447,7 @@
 "otu233971": {
 "^ot:originalLabel": "Chlamydophila pneumoniae", 
 "^ot:ottId": 324509, 
-"^ot:ottTaxonName": "Chlamydia pneumoniae", 
+"^ot:ottTaxonName": "Chlamydophila pneumoniae", 
 "^ot:treebaseOTUId": "Tl261719"
 }, 
 "otu233972": {
@@ -506,8 +471,14 @@
 "treeById": {
 "tree2474": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "Fig. 3B", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node568248", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node568248": {
 "edge568249": {
@@ -954,9 +925,15 @@
 }, 
 "tree2475": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "Fig. 1A", 
 "^ot:inGroupClade": "node568313", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node568311", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node568311": {
 "edge568312": {
@@ -1445,9 +1422,15 @@
 }, 
 "tree2476": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "Fig. 2A", 
 "^ot:inGroupClade": "node568382", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node568380", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node568380": {
 "edge568381": {
@@ -1936,8 +1919,14 @@
 }, 
 "tree2477": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "Fig. 3A", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node568449", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node568449": {
 "edge568450": {

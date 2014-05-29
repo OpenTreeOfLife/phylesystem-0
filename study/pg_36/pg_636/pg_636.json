@@ -19,48 +19,11 @@
 "@id": "peyotl-validator", 
 "@name": "validate_ot_nexson.py", 
 "@url": "https://github.com/OpenTreeOfLife/peyotl", 
-"@version": "0.0.3a", 
+"@version": "0.0.4a", 
 "invocation": {
-"checksPerformed": [
-"MISSING_MANDATORY_KEY", 
-"MISSING_OPTIONAL_KEY", 
-"UNRECOGNIZED_KEY", 
-"MISSING_LIST_EXPECTED", 
-"DUPLICATING_SINGLETON_KEY", 
-"REFERENCED_ID_NOT_FOUND", 
-"REPEATED_ID", 
-"REPEATED_OTU", 
-"MULTIPLE_ROOT_NODES", 
-"NO_ROOT_NODE", 
-"MULTIPLE_EDGES_FOR_NODES", 
-"CYCLE_DETECTED", 
-"DISCONNECTED_GRAPH_DETECTED", 
-"INCORRECT_ROOT_NODE_LABEL", 
-"TIP_WITHOUT_OTU", 
-"TIP_WITHOUT_OTT_ID", 
-"MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
-"NON_MONOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
-"INVALID_PROPERTY_VALUE", 
-"PROPERTY_VALUE_NOT_USEFUL", 
-"UNRECOGNIZED_PROPERTY_VALUE", 
-"MULTIPLE_TREES", 
-"UNRECOGNIZED_TAG", 
-"CONFLICTING_PROPERTY_VALUES", 
-"NO_TREES", 
-"DEPRECATED_PROPERTY", 
-"UNPARSEABLE_META", 
-"UNREACHABLE_NODE", 
-"INCORRECT_VALUE_TYPE", 
-"MISSING_CRUCIAL_CONTENT"
-], 
 "commandLine": [
 "--embed", 
-"--agent-only", 
-"-e", 
-"../mig-phyelesystem-scratch/636/validation.json", 
-"-o", 
-"../mig-phyelesystem-scratch/636/final.json", 
-"../mig-phyelesystem-scratch/636/v1.2.1-636.json"
+"--agent-only"
 ], 
 "otherProperty": [
 {
@@ -76,12 +39,19 @@
 }
 ]
 }, 
+"^ot:annotationEvents": {
+"annotation": []
+}, 
+"^ot:candidateTreeForSynthesis": [], 
 "^ot:curatorName": "bryan drew", 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S977"
 }, 
 "^ot:focalClade": 208036, 
 "^ot:focalCladeOTTTaxonName": "Rosaceae", 
+"^ot:messages": {
+"message": []
+}, 
 "^ot:otusElementOrder": [
 "otus636"
 ], 
@@ -91,6 +61,7 @@
 }, 
 "^ot:studyPublicationReference": "Smedmark J., Eriksson T., Evans R., & Campbell C. 2003. Ancient Allopolyploid Speciation in Geinae (Rosaceae): Evidence from Nuclear granule-Bound Starch Synthase (GBSSI) Gene Sequences. Systematic Biology, 52(3): 374-385.", 
 "^ot:studyYear": 2003, 
+"^ot:tag": [], 
 "^ot:treesElementOrder": [
 "trees636"
 ], 
@@ -99,6 +70,8 @@
 "otuById": {
 "otu179549": {
 "^ot:originalLabel": "Erythrocoma triflora 1 4", 
+"^ot:ottId": 888058, 
+"^ot:ottTaxonName": "Geum triflorum", 
 "^ot:treebaseOTUId": "Tl13285"
 }, 
 "otu179550": {
@@ -127,6 +100,8 @@
 }, 
 "otu179554": {
 "^ot:originalLabel": "Erythrocoma triflora 5 1", 
+"^ot:ottId": 888058, 
+"^ot:ottTaxonName": "Geum triflorum", 
 "^ot:treebaseOTUId": "Tl13290"
 }, 
 "otu179555": {
@@ -173,6 +148,8 @@
 }, 
 "otu179562": {
 "^ot:originalLabel": "Erythrocoma triflora 2 4", 
+"^ot:ottId": 888058, 
+"^ot:ottTaxonName": "Geum triflorum", 
 "^ot:treebaseOTUId": "Tl13299"
 }, 
 "otu179563": {
@@ -248,9 +225,15 @@
 "treeById": {
 "tree1061": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "Fig. 2", 
 "^ot:inGroupClade": "node395202", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node395198", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node395198": {
 "edge395199": {
@@ -578,9 +561,15 @@
 }, 
 "tree1062": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "Fig. 1", 
 "^ot:inGroupClade": "node395248", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node395244", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node395244": {
 "edge395245": {

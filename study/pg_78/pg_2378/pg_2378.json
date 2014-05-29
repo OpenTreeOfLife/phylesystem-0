@@ -19,48 +19,11 @@
 "@id": "peyotl-validator", 
 "@name": "validate_ot_nexson.py", 
 "@url": "https://github.com/OpenTreeOfLife/peyotl", 
-"@version": "0.0.3a", 
+"@version": "0.0.4a", 
 "invocation": {
-"checksPerformed": [
-"MISSING_MANDATORY_KEY", 
-"MISSING_OPTIONAL_KEY", 
-"UNRECOGNIZED_KEY", 
-"MISSING_LIST_EXPECTED", 
-"DUPLICATING_SINGLETON_KEY", 
-"REFERENCED_ID_NOT_FOUND", 
-"REPEATED_ID", 
-"REPEATED_OTU", 
-"MULTIPLE_ROOT_NODES", 
-"NO_ROOT_NODE", 
-"MULTIPLE_EDGES_FOR_NODES", 
-"CYCLE_DETECTED", 
-"DISCONNECTED_GRAPH_DETECTED", 
-"INCORRECT_ROOT_NODE_LABEL", 
-"TIP_WITHOUT_OTU", 
-"TIP_WITHOUT_OTT_ID", 
-"MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
-"NON_MONOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
-"INVALID_PROPERTY_VALUE", 
-"PROPERTY_VALUE_NOT_USEFUL", 
-"UNRECOGNIZED_PROPERTY_VALUE", 
-"MULTIPLE_TREES", 
-"UNRECOGNIZED_TAG", 
-"CONFLICTING_PROPERTY_VALUES", 
-"NO_TREES", 
-"DEPRECATED_PROPERTY", 
-"UNPARSEABLE_META", 
-"UNREACHABLE_NODE", 
-"INCORRECT_VALUE_TYPE", 
-"MISSING_CRUCIAL_CONTENT"
-], 
 "commandLine": [
 "--embed", 
-"--agent-only", 
-"-e", 
-"../mig-phyelesystem-scratch/2378/validation.json", 
-"-o", 
-"../mig-phyelesystem-scratch/2378/final.json", 
-"../mig-phyelesystem-scratch/2378/v1.2.1-2378.json"
+"--agent-only"
 ], 
 "otherProperty": [
 {
@@ -76,12 +39,19 @@
 }
 ]
 }, 
+"^ot:annotationEvents": {
+"annotation": []
+}, 
+"^ot:candidateTreeForSynthesis": [], 
 "^ot:curatorName": "Chris Owen", 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S10132"
 }, 
 "^ot:focalClade": 608979, 
 "^ot:focalCladeOTTTaxonName": "Iguania", 
+"^ot:messages": {
+"message": []
+}, 
 "^ot:otusElementOrder": [
 "otus2378"
 ], 
@@ -91,6 +61,7 @@
 }, 
 "^ot:studyPublicationReference": "Schulte ii J., & Moreno-roark F. 2010. Live birth among iguanian lizards predates Pleistocene-Pliocene glaciations. Proceedings of the Royal Society of London, Biological Sciences, Biology Letters 6 (2): 216-218.", 
 "^ot:studyYear": 2010, 
+"^ot:tag": [], 
 "^ot:treesElementOrder": [
 "trees2378"
 ], 
@@ -98,9 +69,9 @@
 "otus2378": {
 "otuById": {
 "otu335911": {
-"^ot:altLabel": "Anolis sabanus", 
 "^ot:originalLabel": "Anolis sabanus KN", 
 "^ot:ottId": 764431, 
+"^ot:ottTaxonName": "Anolis sabanus", 
 "^ot:treebaseOTUId": "Tl239936"
 }, 
 "otu335912": {
@@ -112,12 +83,13 @@
 "otu335913": {
 "^ot:originalLabel": "Liolaemus grosseorum", 
 "^ot:ottId": 665365, 
+"^ot:ottTaxonName": "Liolaemus grosseorum", 
 "^ot:treebaseOTUId": "Tl239938"
 }, 
 "otu335914": {
-"^ot:altLabel": "Anolis macilentus", 
 "^ot:originalLabel": "Anolis macilentus TJ", 
 "^ot:ottId": 640471, 
+"^ot:ottTaxonName": "Anolis macilentus", 
 "^ot:treebaseOTUId": "Tl239939"
 }, 
 "otu335915": {
@@ -139,9 +111,9 @@
 "^ot:treebaseOTUId": "Tl239942"
 }, 
 "otu335918": {
-"^ot:altLabel": "Anolis monticola", 
 "^ot:originalLabel": "Anolis monticola TJ", 
 "^ot:ottId": 640474, 
+"^ot:ottTaxonName": "Anolis monticola", 
 "^ot:treebaseOTUId": "Tl239943"
 }, 
 "otu335919": {
@@ -159,11 +131,13 @@
 "otu335921": {
 "^ot:originalLabel": "Liolaemus bitaeniatus", 
 "^ot:ottId": 533094, 
+"^ot:ottTaxonName": "Liolaemus bitaeniatus", 
 "^ot:treebaseOTUId": "Tl239946"
 }, 
 "otu335922": {
 "^ot:originalLabel": "Liolaemus kriegi", 
 "^ot:ottId": 83953, 
+"^ot:ottTaxonName": "Liolaemus kriegi", 
 "^ot:treebaseOTUId": "Tl239947"
 }, 
 "otu335923": {
@@ -173,14 +147,15 @@
 "^ot:treebaseOTUId": "Tl239948"
 }, 
 "otu335924": {
-"^ot:altLabel": "Anolis carpenteri", 
 "^ot:originalLabel": "Anolis carpenteri SJ REG", 
 "^ot:ottId": 901116, 
+"^ot:ottTaxonName": "Anolis carpenteri", 
 "^ot:treebaseOTUId": "Tl239949"
 }, 
 "otu335925": {
 "^ot:originalLabel": "Liolaemus poecilochromis", 
 "^ot:ottId": 407826, 
+"^ot:ottTaxonName": "Liolaemus poecilochromis", 
 "^ot:treebaseOTUId": "Tl239950"
 }, 
 "otu335926": {
@@ -190,14 +165,15 @@
 "^ot:treebaseOTUId": "Tl239951"
 }, 
 "otu335927": {
-"^ot:altLabel": "Liolaemus cf. rothi", 
 "^ot:originalLabel": "Liolaemus cf rothioldmel", 
 "^ot:ottId": 120385, 
+"^ot:ottTaxonName": "Liolaemus cf. rothi", 
 "^ot:treebaseOTUId": "Tl239952"
 }, 
 "otu335928": {
 "^ot:originalLabel": "Liolaemus zapallarensis", 
 "^ot:ottId": 391946, 
+"^ot:ottTaxonName": "Liolaemus zapallarensis", 
 "^ot:treebaseOTUId": "Tl239953"
 }, 
 "otu335929": {
@@ -207,9 +183,9 @@
 "^ot:treebaseOTUId": "Tl239954"
 }, 
 "otu335930": {
-"^ot:altLabel": "Anolis conspersus", 
 "^ot:originalLabel": "Anolis conspersus TJ", 
 "^ot:ottId": 901118, 
+"^ot:ottTaxonName": "Anolis conspersus", 
 "^ot:treebaseOTUId": "Tl239955"
 }, 
 "otu335931": {
@@ -225,9 +201,9 @@
 "^ot:treebaseOTUId": "Tl239957"
 }, 
 "otu335933": {
-"^ot:altLabel": "Liolaemus cf. silvanae", 
 "^ot:originalLabel": "Liolaemus cf silvanae", 
 "^ot:ottId": 685241, 
+"^ot:ottTaxonName": "Liolaemus cf. silvanae", 
 "^ot:treebaseOTUId": "Tl239958"
 }, 
 "otu335934": {
@@ -239,6 +215,7 @@
 "otu335935": {
 "^ot:originalLabel": "Draco spilonotus", 
 "^ot:ottId": 1091395, 
+"^ot:ottTaxonName": "Draco spilonotus", 
 "^ot:treebaseOTUId": "Tl239960"
 }, 
 "otu335936": {
@@ -248,15 +225,15 @@
 "^ot:treebaseOTUId": "Tl239961"
 }, 
 "otu335937": {
-"^ot:altLabel": "Anolis griseus", 
 "^ot:originalLabel": "Anolis griseus TJ", 
 "^ot:ottId": 245840, 
+"^ot:ottTaxonName": "Anolis griseus", 
 "^ot:treebaseOTUId": "Tl239962"
 }, 
 "otu335938": {
-"^ot:altLabel": "Anolis lionotus", 
 "^ot:originalLabel": "Anolis lionotus KN", 
 "^ot:ottId": 278643, 
+"^ot:ottTaxonName": "Anolis lionotus", 
 "^ot:treebaseOTUId": "Tl239963"
 }, 
 "otu335939": {
@@ -280,6 +257,7 @@
 "otu335942": {
 "^ot:originalLabel": "Liolaemus abaucan", 
 "^ot:ottId": 390194, 
+"^ot:ottTaxonName": "Liolaemus abaucan", 
 "^ot:treebaseOTUId": "Tl239967"
 }, 
 "otu335943": {
@@ -289,9 +267,9 @@
 "^ot:treebaseOTUId": "Tl239968"
 }, 
 "otu335944": {
-"^ot:altLabel": "Draco spilopterus", 
 "^ot:originalLabel": "Draco spilopterus Negros", 
 "^ot:ottId": 1091394, 
+"^ot:ottTaxonName": "Draco spilopterus", 
 "^ot:treebaseOTUId": "Tl239969"
 }, 
 "otu335945": {
@@ -301,9 +279,9 @@
 "^ot:treebaseOTUId": "Tl239970"
 }, 
 "otu335946": {
-"^ot:altLabel": "Liolaemus pictus", 
 "^ot:originalLabel": "Liolaemus pictus cyanogaster", 
 "^ot:ottId": 665055, 
+"^ot:ottTaxonName": "Liolaemus pictus", 
 "^ot:treebaseOTUId": "Tl239971"
 }, 
 "otu335947": {
@@ -317,9 +295,9 @@
 "^ot:treebaseOTUId": "Tl239973"
 }, 
 "otu335949": {
-"^ot:altLabel": "Liolaemus cf. pictus", 
 "^ot:originalLabel": "Liolaemus sp nigromaculatus", 
 "^ot:ottId": 889848, 
+"^ot:ottTaxonName": "Liolaemus cf. pictus", 
 "^ot:treebaseOTUId": "Tl239974"
 }, 
 "otu335950": {
@@ -329,9 +307,9 @@
 "^ot:treebaseOTUId": "Tl239975"
 }, 
 "otu335951": {
-"^ot:altLabel": "Draco sp. LSUMZ_81258", 
 "^ot:originalLabel": "Draco Luwuk", 
 "^ot:ottId": 1091387, 
+"^ot:ottTaxonName": "Draco sp. LSUMZ_81258", 
 "^ot:treebaseOTUId": "Tl239976"
 }, 
 "otu335952": {
@@ -347,9 +325,9 @@
 "^ot:treebaseOTUId": "Tl239978"
 }, 
 "otu335954": {
-"^ot:altLabel": "Anolis pulchellus", 
 "^ot:originalLabel": "Anolis pulchellus TJ", 
 "^ot:ottId": 244268, 
+"^ot:ottTaxonName": "Anolis pulchellus", 
 "^ot:treebaseOTUId": "Tl239979"
 }, 
 "otu335955": {
@@ -383,9 +361,9 @@
 "^ot:treebaseOTUId": "Tl239984"
 }, 
 "otu335960": {
-"^ot:altLabel": "Anolis isolepis", 
 "^ot:originalLabel": "Anolis isolepis TJ", 
 "^ot:ottId": 640476, 
+"^ot:ottTaxonName": "Anolis isolepis", 
 "^ot:treebaseOTUId": "Tl239985"
 }, 
 "otu335961": {
@@ -397,11 +375,13 @@
 "otu335962": {
 "^ot:originalLabel": "Liolaemus isabelae", 
 "^ot:ottId": 417561, 
+"^ot:ottTaxonName": "Liolaemus isabelae", 
 "^ot:treebaseOTUId": "Tl239987"
 }, 
 "otu335963": {
 "^ot:originalLabel": "Liolaemus curis", 
 "^ot:ottId": 417559, 
+"^ot:ottTaxonName": "Liolaemus curis", 
 "^ot:treebaseOTUId": "Tl239988"
 }, 
 "otu335964": {
@@ -411,9 +391,9 @@
 "^ot:treebaseOTUId": "Tl239989"
 }, 
 "otu335965": {
-"^ot:altLabel": "Anolis strahmi", 
 "^ot:originalLabel": "Anolis strahmi 631 REG", 
 "^ot:ottId": 1018175, 
+"^ot:ottTaxonName": "Anolis strahmi", 
 "^ot:treebaseOTUId": "Tl239990"
 }, 
 "otu335966": {
@@ -453,20 +433,21 @@
 "^ot:treebaseOTUId": "Tl239996"
 }, 
 "otu335972": {
-"^ot:altLabel": "Anolis aquaticus", 
 "^ot:originalLabel": "Anolis aquaticus KN", 
 "^ot:ottId": 1019780, 
+"^ot:ottTaxonName": "Anolis aquaticus", 
 "^ot:treebaseOTUId": "Tl239997"
 }, 
 "otu335973": {
 "^ot:originalLabel": "Draco melanopogon", 
 "^ot:ottId": 741464, 
+"^ot:ottTaxonName": "Draco melanopogon", 
 "^ot:treebaseOTUId": "Tl239998"
 }, 
 "otu335974": {
-"^ot:altLabel": "Anolis longitibialis", 
 "^ot:originalLabel": "Anolis longitibialis 6293 REG", 
 "^ot:ottId": 608633, 
+"^ot:ottTaxonName": "Anolis longitibialis", 
 "^ot:treebaseOTUId": "Tl239999"
 }, 
 "otu335975": {
@@ -476,20 +457,21 @@
 "^ot:treebaseOTUId": "Tl240000"
 }, 
 "otu335976": {
-"^ot:altLabel": "Anolis inexpectatus", 
 "^ot:originalLabel": "Anolis inexpectatus TJ", 
 "^ot:ottId": 640475, 
+"^ot:ottTaxonName": "Anolis inexpectatus", 
 "^ot:treebaseOTUId": "Tl240001"
 }, 
 "otu335977": {
-"^ot:altLabel": "Anolis rubribarbus", 
 "^ot:originalLabel": "Anolis rubribarbus 2719 JJK X", 
 "^ot:ottId": 531638, 
+"^ot:ottTaxonName": "Anolis rubribarbus", 
 "^ot:treebaseOTUId": "Tl240002"
 }, 
 "otu335978": {
 "^ot:originalLabel": "Liolaemus fitzingerii", 
 "^ot:ottId": 303445, 
+"^ot:ottTaxonName": "Liolaemus fitzingerii", 
 "^ot:treebaseOTUId": "Tl240003"
 }, 
 "otu335979": {
@@ -505,9 +487,9 @@
 "^ot:treebaseOTUId": "Tl240005"
 }, 
 "otu335981": {
-"^ot:altLabel": "Anolis bremeri", 
 "^ot:originalLabel": "Anolis bremeri 1868 REG", 
 "^ot:ottId": 1094509, 
+"^ot:ottTaxonName": "Anolis bremeri", 
 "^ot:treebaseOTUId": "Tl240006"
 }, 
 "otu335982": {
@@ -523,25 +505,27 @@
 "^ot:treebaseOTUId": "Tl240008"
 }, 
 "otu335984": {
-"^ot:altLabel": "Draco cyanopterus", 
 "^ot:originalLabel": "Draco cyanopterus Mindanao", 
 "^ot:ottId": 564916, 
+"^ot:ottTaxonName": "Draco cyanopterus", 
 "^ot:treebaseOTUId": "Tl240009"
 }, 
 "otu335985": {
 "^ot:originalLabel": "Liolaemus baguali", 
 "^ot:ottId": 7987, 
+"^ot:ottTaxonName": "Liolaemus baguali", 
 "^ot:treebaseOTUId": "Tl240010"
 }, 
 "otu335986": {
 "^ot:originalLabel": "Liolaemus occipitalis", 
 "^ot:ottId": 979215, 
+"^ot:ottTaxonName": "Liolaemus occipitalis", 
 "^ot:treebaseOTUId": "Tl240011"
 }, 
 "otu335987": {
-"^ot:altLabel": "Anolis ferreus", 
 "^ot:originalLabel": "Anolis ferreus TJ", 
 "^ot:ottId": 267878, 
+"^ot:ottTaxonName": "Anolis ferreus", 
 "^ot:treebaseOTUId": "Tl240012"
 }, 
 "otu335988": {
@@ -565,23 +549,25 @@
 "otu335991": {
 "^ot:originalLabel": "Liolaemus lutzae", 
 "^ot:ottId": 827696, 
+"^ot:ottTaxonName": "Liolaemus lutzae", 
 "^ot:treebaseOTUId": "Tl240016"
 }, 
 "otu335992": {
-"^ot:altLabel": "Anolis quercorum", 
 "^ot:originalLabel": "Anolis quercorum KN", 
 "^ot:ottId": 62050, 
+"^ot:ottTaxonName": "Anolis quercorum", 
 "^ot:treebaseOTUId": "Tl240017"
 }, 
 "otu335993": {
-"^ot:altLabel": "Anolis altitudinalis", 
 "^ot:originalLabel": "Anolis altitudinalis UW REG", 
 "^ot:ottId": 724794, 
+"^ot:ottTaxonName": "Anolis altitudinalis", 
 "^ot:treebaseOTUId": "Tl240018"
 }, 
 "otu335994": {
 "^ot:originalLabel": "Liolaemus nigroviridis", 
 "^ot:ottId": 827694, 
+"^ot:ottTaxonName": "Liolaemus nigroviridis", 
 "^ot:treebaseOTUId": "Tl240019"
 }, 
 "otu335995": {
@@ -603,9 +589,9 @@
 "^ot:treebaseOTUId": "Tl240022"
 }, 
 "otu335998": {
-"^ot:altLabel": "Draco sumatranus", 
 "^ot:originalLabel": "Draco sumatranus Sumatra", 
 "^ot:ottId": 1091389, 
+"^ot:ottTaxonName": "Draco sumatranus", 
 "^ot:treebaseOTUId": "Tl240023"
 }, 
 "otu335999": {
@@ -615,9 +601,9 @@
 "^ot:treebaseOTUId": "Tl240024"
 }, 
 "otu336000": {
-"^ot:altLabel": "Anolis homolechis", 
 "^ot:originalLabel": "Anolis homolechis 1791 REG", 
 "^ot:ottId": 67192, 
+"^ot:ottTaxonName": "Anolis homolechis", 
 "^ot:treebaseOTUId": "Tl240025"
 }, 
 "otu336001": {
@@ -629,12 +615,13 @@
 "otu336002": {
 "^ot:originalLabel": "Liolaemus monticola", 
 "^ot:ottId": 558476, 
+"^ot:ottTaxonName": "Liolaemus monticola", 
 "^ot:treebaseOTUId": "Tl240027"
 }, 
 "otu336003": {
-"^ot:altLabel": "Anolis eugenegrahami", 
 "^ot:originalLabel": "Anolis eugenegrahami TJ", 
 "^ot:ottId": 67191, 
+"^ot:ottTaxonName": "Anolis eugenegrahami", 
 "^ot:treebaseOTUId": "Tl240028"
 }, 
 "otu336004": {
@@ -644,21 +631,21 @@
 "^ot:treebaseOTUId": "Tl240029"
 }, 
 "otu336005": {
-"^ot:altLabel": "Anolis olssoni", 
 "^ot:originalLabel": "Anolis olssoni TJ99", 
 "^ot:ottId": 492041, 
+"^ot:ottTaxonName": "Anolis olssoni", 
 "^ot:treebaseOTUId": "Tl240030"
 }, 
 "otu336006": {
-"^ot:altLabel": "Anolis stratulus", 
 "^ot:originalLabel": "Anolis stratulus corrected TJ", 
 "^ot:ottId": 1018172, 
+"^ot:ottTaxonName": "Anolis stratulus", 
 "^ot:treebaseOTUId": "Tl240031"
 }, 
 "otu336007": {
-"^ot:altLabel": "Anolis chrysolepis", 
 "^ot:originalLabel": "Anolis nitens Ecuador 12543", 
 "^ot:ottId": 901110, 
+"^ot:ottTaxonName": "Anolis chrysolepis", 
 "^ot:treebaseOTUId": "Tl240032"
 }, 
 "otu336008": {
@@ -670,6 +657,7 @@
 "otu336009": {
 "^ot:originalLabel": "Liolaemus tari", 
 "^ot:ottId": 7988, 
+"^ot:ottTaxonName": "Liolaemus tari", 
 "^ot:treebaseOTUId": "Tl240034"
 }, 
 "otu336010": {
@@ -687,12 +675,13 @@
 "otu336012": {
 "^ot:originalLabel": "Liolaemus huacahuasicus", 
 "^ot:ottId": 338707, 
+"^ot:ottTaxonName": "Liolaemus huacahuasicus", 
 "^ot:treebaseOTUId": "Tl240037"
 }, 
 "otu336013": {
-"^ot:altLabel": "Liolaemus gravenhorstii", 
 "^ot:originalLabel": "Liolaemus gravenhorsti", 
 "^ot:ottId": 812654, 
+"^ot:ottTaxonName": "Liolaemus gravenhorstii", 
 "^ot:treebaseOTUId": "Tl240038"
 }, 
 "otu336014": {
@@ -710,6 +699,7 @@
 "otu336016": {
 "^ot:originalLabel": "Liolaemus quilmes", 
 "^ot:ottId": 407849, 
+"^ot:ottTaxonName": "Liolaemus quilmes", 
 "^ot:treebaseOTUId": "Tl240041"
 }, 
 "otu336017": {
@@ -729,21 +719,21 @@
 "^ot:treebaseOTUId": "Tl240044"
 }, 
 "otu336020": {
-"^ot:altLabel": "Anolis sp. SBH266328", 
 "^ot:originalLabel": "Anolis tranquillus KN", 
 "^ot:ottId": 866324, 
+"^ot:ottTaxonName": "Anolis sp. SBH266328", 
 "^ot:treebaseOTUId": "Tl240045"
 }, 
 "otu336021": {
-"^ot:altLabel": "Anolis marcanoi", 
 "^ot:originalLabel": "Anolis marcanoi 560r REG", 
 "^ot:ottId": 896644, 
+"^ot:ottTaxonName": "Anolis marcanoi", 
 "^ot:treebaseOTUId": "Tl240046"
 }, 
 "otu336022": {
-"^ot:altLabel": "Anolis haetianus", 
 "^ot:originalLabel": "Anolis haetianus SS REG", 
 "^ot:ottId": 471375, 
+"^ot:ottTaxonName": "Anolis haetianus", 
 "^ot:treebaseOTUId": "Tl240047"
 }, 
 "otu336023": {
@@ -769,9 +759,9 @@
 "^ot:treebaseOTUId": "Tl240051"
 }, 
 "otu336027": {
-"^ot:altLabel": "Anolis brevirostris", 
 "^ot:originalLabel": "Anolis brevirostris 561r REG", 
 "^ot:ottId": 967571, 
+"^ot:ottTaxonName": "Anolis brevirostris", 
 "^ot:treebaseOTUId": "Tl240052"
 }, 
 "otu336028": {
@@ -793,9 +783,9 @@
 "^ot:treebaseOTUId": "Tl240055"
 }, 
 "otu336031": {
-"^ot:altLabel": "Anolis allogus", 
 "^ot:originalLabel": "Anolis allogus 1696 REG", 
 "^ot:ottId": 901109, 
+"^ot:ottTaxonName": "Anolis allogus", 
 "^ot:treebaseOTUId": "Tl240056"
 }, 
 "otu336032": {
@@ -805,15 +795,15 @@
 "^ot:treebaseOTUId": "Tl240057"
 }, 
 "otu336033": {
-"^ot:altLabel": "Liolaemus puna", 
 "^ot:originalLabel": "Liolaemus puna walkeri", 
 "^ot:ottId": 685253, 
+"^ot:ottTaxonName": "Liolaemus puna", 
 "^ot:treebaseOTUId": "Tl240058"
 }, 
 "otu336034": {
-"^ot:altLabel": "Anolis garmani", 
 "^ot:originalLabel": "Anolis garmani DBRC TJ", 
 "^ot:ottId": 967568, 
+"^ot:ottTaxonName": "Anolis garmani", 
 "^ot:treebaseOTUId": "Tl240059"
 }, 
 "otu336035": {
@@ -829,9 +819,9 @@
 "^ot:treebaseOTUId": "Tl240061"
 }, 
 "otu336037": {
-"^ot:altLabel": "Anolis krugi", 
 "^ot:originalLabel": "Anolis krugi TJ99", 
 "^ot:ottId": 967563, 
+"^ot:ottTaxonName": "Anolis krugi", 
 "^ot:treebaseOTUId": "Tl240062"
 }, 
 "otu336038": {
@@ -847,9 +837,9 @@
 "^ot:treebaseOTUId": "Tl240064"
 }, 
 "otu336040": {
-"^ot:altLabel": "Anolis coelestinus", 
 "^ot:originalLabel": "Anolis coelestinus 614r REG", 
 "^ot:ottId": 967575, 
+"^ot:ottTaxonName": "Anolis coelestinus", 
 "^ot:treebaseOTUId": "Tl240065"
 }, 
 "otu336041": {
@@ -859,14 +849,15 @@
 "^ot:treebaseOTUId": "Tl240066"
 }, 
 "otu336042": {
-"^ot:altLabel": "Anolis poecilopus", 
 "^ot:originalLabel": "Anolis poecilopus KN", 
 "^ot:ottId": 853243, 
+"^ot:ottTaxonName": "Anolis poecilopus", 
 "^ot:treebaseOTUId": "Tl240067"
 }, 
 "otu336043": {
 "^ot:originalLabel": "Liolaemus austromendocinus", 
 "^ot:ottId": 1016189, 
+"^ot:ottTaxonName": "Liolaemus austromendocinus", 
 "^ot:treebaseOTUId": "Tl240068"
 }, 
 "otu336044": {
@@ -912,9 +903,9 @@
 "^ot:treebaseOTUId": "Tl240075"
 }, 
 "otu336051": {
-"^ot:altLabel": "Anolis marmoratus", 
 "^ot:originalLabel": "Anolis marmoratus TJ", 
 "^ot:ottId": 450222, 
+"^ot:ottTaxonName": "Anolis marmoratus", 
 "^ot:treebaseOTUId": "Tl240076"
 }, 
 "otu336052": {
@@ -946,9 +937,9 @@
 "^ot:treebaseOTUId": "Tl240081"
 }, 
 "otu336057": {
-"^ot:altLabel": "Anolis quadriocellifer", 
 "^ot:originalLabel": "Anolis quadriocellifer 1853 REG", 
 "^ot:ottId": 118838, 
+"^ot:ottTaxonName": "Anolis quadriocellifer", 
 "^ot:treebaseOTUId": "Tl240082"
 }, 
 "otu336058": {
@@ -960,22 +951,25 @@
 "otu336059": {
 "^ot:originalLabel": "Liolaemus bellii", 
 "^ot:ottId": 1016167, 
+"^ot:ottTaxonName": "Liolaemus bellii", 
 "^ot:treebaseOTUId": "Tl240084"
 }, 
 "otu336060": {
-"^ot:altLabel": "Anolis placidus", 
 "^ot:originalLabel": "Anolis placidus TJ", 
 "^ot:ottId": 640480, 
+"^ot:ottTaxonName": "Anolis placidus", 
 "^ot:treebaseOTUId": "Tl240085"
 }, 
 "otu336061": {
 "^ot:originalLabel": "Liolaemus paulinae", 
 "^ot:ottId": 812643, 
+"^ot:ottTaxonName": "Liolaemus paulinae", 
 "^ot:treebaseOTUId": "Tl240086"
 }, 
 "otu336062": {
 "^ot:originalLabel": "Liolaemus hatcheri", 
 "^ot:ottId": 7986, 
+"^ot:ottTaxonName": "Liolaemus hatcheri", 
 "^ot:treebaseOTUId": "Tl240087"
 }, 
 "otu336063": {
@@ -999,6 +993,7 @@
 "otu336066": {
 "^ot:originalLabel": "Liolaemus leopardinus", 
 "^ot:ottId": 715592, 
+"^ot:ottTaxonName": "Liolaemus leopardinus", 
 "^ot:treebaseOTUId": "Tl240091"
 }, 
 "otu336067": {
@@ -1010,6 +1005,7 @@
 "otu336068": {
 "^ot:originalLabel": "Anolis sagrei", 
 "^ot:ottId": 970153, 
+"^ot:ottTaxonName": "Anolis sagrei", 
 "^ot:treebaseOTUId": "Tl240093"
 }, 
 "otu336069": {
@@ -1021,6 +1017,7 @@
 "otu336070": {
 "^ot:originalLabel": "Liolaemus kingii", 
 "^ot:ottId": 979218, 
+"^ot:ottTaxonName": "Liolaemus kingii", 
 "^ot:treebaseOTUId": "Tl240095"
 }, 
 "otu336071": {
@@ -1036,15 +1033,15 @@
 "^ot:treebaseOTUId": "Tl240097"
 }, 
 "otu336073": {
-"^ot:altLabel": "Anolis occultus", 
 "^ot:originalLabel": "Anolis occultus 3342373 TJ99", 
 "^ot:ottId": 245838, 
+"^ot:ottTaxonName": "Anolis occultus", 
 "^ot:treebaseOTUId": "Tl240098"
 }, 
 "otu336074": {
-"^ot:altLabel": "Anolis annectens", 
 "^ot:originalLabel": "Anolis annectens 1159", 
 "^ot:ottId": 1019782, 
+"^ot:ottTaxonName": "Anolis annectens", 
 "^ot:treebaseOTUId": "Tl240099"
 }, 
 "otu336075": {
@@ -1060,9 +1057,9 @@
 "^ot:treebaseOTUId": "Tl240101"
 }, 
 "otu336077": {
-"^ot:altLabel": "Anolis bitectus", 
 "^ot:originalLabel": "Anolis bitectus KN", 
 "^ot:ottId": 494013, 
+"^ot:ottTaxonName": "Anolis bitectus", 
 "^ot:treebaseOTUId": "Tl240102"
 }, 
 "otu336078": {
@@ -1078,26 +1075,27 @@
 "^ot:treebaseOTUId": "Tl240104"
 }, 
 "otu336080": {
-"^ot:altLabel": "Anolis auratus", 
 "^ot:originalLabel": "Anolis auratus 1163", 
 "^ot:ottId": 1019771, 
+"^ot:ottTaxonName": "Anolis auratus", 
 "^ot:treebaseOTUId": "Tl240105"
 }, 
 "otu336081": {
-"^ot:altLabel": "Anolis smallwoodi", 
 "^ot:originalLabel": "Anolis smallwoodi TJ", 
 "^ot:ottId": 712472, 
+"^ot:ottTaxonName": "Anolis smallwoodi", 
 "^ot:treebaseOTUId": "Tl240106"
 }, 
 "otu336082": {
-"^ot:altLabel": "Draco quadrasi", 
 "^ot:originalLabel": "Draco quadrasi Mindoro", 
 "^ot:ottId": 564908, 
+"^ot:ottTaxonName": "Draco quadrasi", 
 "^ot:treebaseOTUId": "Tl240107"
 }, 
 "otu336083": {
 "^ot:originalLabel": "Liolaemus chacoensis", 
 "^ot:ottId": 514950, 
+"^ot:ottTaxonName": "Liolaemus chacoensis", 
 "^ot:treebaseOTUId": "Tl240108"
 }, 
 "otu336084": {
@@ -1121,17 +1119,19 @@
 "otu336087": {
 "^ot:originalLabel": "Anolis cybotes", 
 "^ot:ottId": 245845, 
+"^ot:ottTaxonName": "Anolis cybotes", 
 "^ot:treebaseOTUId": "Tl240112"
 }, 
 "otu336088": {
-"^ot:altLabel": "Anolis garridoi", 
 "^ot:originalLabel": "Anolis garridoi TJ", 
 "^ot:ottId": 67188, 
+"^ot:ottTaxonName": "Anolis garridoi", 
 "^ot:treebaseOTUId": "Tl240113"
 }, 
 "otu336089": {
 "^ot:originalLabel": "Liolaemus fuscus", 
 "^ot:ottId": 303444, 
+"^ot:ottTaxonName": "Liolaemus fuscus", 
 "^ot:treebaseOTUId": "Tl240114"
 }, 
 "otu336090": {
@@ -1141,42 +1141,45 @@
 "^ot:treebaseOTUId": "Tl240115"
 }, 
 "otu336091": {
-"^ot:altLabel": "Liolaemus zullyae", 
 "^ot:originalLabel": "Liolaemus zullyi", 
 "^ot:ottId": 1038997, 
+"^ot:ottTaxonName": "Liolaemus zullyae", 
 "^ot:treebaseOTUId": "Tl240116"
 }, 
 "otu336092": {
 "^ot:originalLabel": "Liolaemus gracilis", 
 "^ot:ottId": 303447, 
+"^ot:ottTaxonName": "Liolaemus gracilis", 
 "^ot:treebaseOTUId": "Tl240117"
 }, 
 "otu336093": {
-"^ot:altLabel": "Anolis monensis", 
 "^ot:originalLabel": "Anolis monensis TJ", 
 "^ot:ottId": 640473, 
+"^ot:ottTaxonName": "Anolis monensis", 
 "^ot:treebaseOTUId": "Tl240118"
 }, 
 "otu336094": {
 "^ot:originalLabel": "Liolaemus scapularis", 
 "^ot:ottId": 637896, 
+"^ot:ottTaxonName": "Liolaemus scapularis", 
 "^ot:treebaseOTUId": "Tl240119"
 }, 
 "otu336095": {
-"^ot:altLabel": "Anolis pogus", 
 "^ot:originalLabel": "Anolis pogus TJ", 
 "^ot:ottId": 764430, 
+"^ot:ottTaxonName": "Anolis pogus", 
 "^ot:treebaseOTUId": "Tl240120"
 }, 
 "otu336096": {
 "^ot:originalLabel": "Anolis meridionalis", 
 "^ot:ottId": 1009499, 
+"^ot:ottTaxonName": "Anolis meridionalis", 
 "^ot:treebaseOTUId": "Tl240121"
 }, 
 "otu336097": {
-"^ot:altLabel": "Anolis frenatus", 
 "^ot:originalLabel": "Anolis frenatus KN", 
 "^ot:ottId": 278649, 
+"^ot:ottTaxonName": "Anolis frenatus", 
 "^ot:treebaseOTUId": "Tl240122"
 }, 
 "otu336098": {
@@ -1194,6 +1197,7 @@
 "otu336100": {
 "^ot:originalLabel": "Liolaemus laurenti", 
 "^ot:ottId": 715576, 
+"^ot:ottTaxonName": "Liolaemus laurenti", 
 "^ot:treebaseOTUId": "Tl240125"
 }, 
 "otu336101": {
@@ -1203,15 +1207,15 @@
 "^ot:treebaseOTUId": "Tl240126"
 }, 
 "otu336102": {
-"^ot:altLabel": "Anolis baleatus", 
 "^ot:originalLabel": "Anolis baleatus TP TJ", 
 "^ot:ottId": 365393, 
+"^ot:ottTaxonName": "Anolis baleatus", 
 "^ot:treebaseOTUId": "Tl240127"
 }, 
 "otu336103": {
-"^ot:altLabel": "Anolis confusus", 
 "^ot:originalLabel": "Anolis confusus 193863 JJKX", 
 "^ot:ottId": 866267, 
+"^ot:ottTaxonName": "Anolis confusus", 
 "^ot:treebaseOTUId": "Tl240128"
 }, 
 "otu336104": {
@@ -1223,6 +1227,7 @@
 "otu336105": {
 "^ot:originalLabel": "Liolaemus bibronii", 
 "^ot:ottId": 840510, 
+"^ot:ottTaxonName": "Liolaemus bibronii", 
 "^ot:treebaseOTUId": "Tl240130"
 }, 
 "otu336106": {
@@ -1238,19 +1243,21 @@
 "^ot:treebaseOTUId": "Tl240132"
 }, 
 "otu336108": {
-"^ot:altLabel": "Anolis transversalis", 
 "^ot:originalLabel": "Anolis transversalis RW REG", 
 "^ot:ottId": 346856, 
+"^ot:ottTaxonName": "Anolis transversalis", 
 "^ot:treebaseOTUId": "Tl240133"
 }, 
 "otu336109": {
 "^ot:originalLabel": "Draco rhytisma", 
 "^ot:ottId": 1091392, 
+"^ot:ottTaxonName": "Draco rhytisma", 
 "^ot:treebaseOTUId": "Tl240134"
 }, 
 "otu336110": {
 "^ot:originalLabel": "Liolaemus famatinae", 
 "^ot:ottId": 303442, 
+"^ot:ottTaxonName": "Liolaemus famatinae", 
 "^ot:treebaseOTUId": "Tl240135"
 }, 
 "otu336111": {
@@ -1264,9 +1271,9 @@
 "^ot:treebaseOTUId": "Tl240137"
 }, 
 "otu336113": {
-"^ot:altLabel": "Draco boschmai", 
 "^ot:originalLabel": "Draco boschmai Sumba", 
 "^ot:ottId": 938893, 
+"^ot:ottTaxonName": "Draco boschmai", 
 "^ot:treebaseOTUId": "Tl240138"
 }, 
 "otu336114": {
@@ -1294,9 +1301,9 @@
 "^ot:treebaseOTUId": "Tl240142"
 }, 
 "otu336118": {
-"^ot:altLabel": "Anolis bicaorum", 
 "^ot:originalLabel": "Anolis bicaorum KN", 
 "^ot:ottId": 494011, 
+"^ot:ottTaxonName": "Anolis bicaorum", 
 "^ot:treebaseOTUId": "Tl240143"
 }, 
 "otu336119": {
@@ -1306,9 +1313,9 @@
 "^ot:treebaseOTUId": "Tl240144"
 }, 
 "otu336120": {
-"^ot:altLabel": "Draco spilopterus", 
 "^ot:originalLabel": "Draco spilopterus Bicol", 
 "^ot:ottId": 1091394, 
+"^ot:ottTaxonName": "Draco spilopterus", 
 "^ot:treebaseOTUId": "Tl240145"
 }, 
 "otu336121": {
@@ -1326,11 +1333,13 @@
 "otu336123": {
 "^ot:originalLabel": "Liolaemus archeforus", 
 "^ot:ottId": 7989, 
+"^ot:ottTaxonName": "Liolaemus archeforus", 
 "^ot:treebaseOTUId": "Tl240148"
 }, 
 "otu336124": {
 "^ot:originalLabel": "Draco bimaculatus", 
 "^ot:ottId": 938894, 
+"^ot:ottTaxonName": "Draco bimaculatus", 
 "^ot:treebaseOTUId": "Tl240149"
 }, 
 "otu336125": {
@@ -1348,12 +1357,13 @@
 "otu336127": {
 "^ot:originalLabel": "Anolis polyrhachis", 
 "^ot:ottId": 853256, 
+"^ot:ottTaxonName": "Anolis polyrhachis", 
 "^ot:treebaseOTUId": "Tl240152"
 }, 
 "otu336128": {
-"^ot:altLabel": "Anolis luciae", 
 "^ot:originalLabel": "Anolis luciae TJ99", 
 "^ot:ottId": 132734, 
+"^ot:ottTaxonName": "Anolis luciae", 
 "^ot:treebaseOTUId": "Tl240153"
 }, 
 "otu336129": {
@@ -1369,9 +1379,9 @@
 "^ot:treebaseOTUId": "Tl240155"
 }, 
 "otu336131": {
-"^ot:altLabel": "Anolis oculatus", 
 "^ot:originalLabel": "Anolis oculatus TJ", 
 "^ot:ottId": 450727, 
+"^ot:ottTaxonName": "Anolis oculatus", 
 "^ot:treebaseOTUId": "Tl240156"
 }, 
 "otu336132": {
@@ -1387,14 +1397,15 @@
 "^ot:treebaseOTUId": "Tl240158"
 }, 
 "otu336134": {
-"^ot:altLabel": "Anolis cuvieri", 
 "^ot:originalLabel": "Anolis cuvieri TJ99", 
 "^ot:ottId": 245847, 
+"^ot:ottTaxonName": "Anolis cuvieri", 
 "^ot:treebaseOTUId": "Tl240159"
 }, 
 "otu336135": {
 "^ot:originalLabel": "Anolis punctatus", 
 "^ot:ottId": 973783, 
+"^ot:ottTaxonName": "Anolis punctatus", 
 "^ot:treebaseOTUId": "Tl240160"
 }, 
 "otu336136": {
@@ -1410,9 +1421,9 @@
 "^ot:treebaseOTUId": "Tl240162"
 }, 
 "otu336138": {
-"^ot:altLabel": "Draco boschmai", 
 "^ot:originalLabel": "Draco boschmai Lembata", 
 "^ot:ottId": 938893, 
+"^ot:ottTaxonName": "Draco boschmai", 
 "^ot:treebaseOTUId": "Tl240163"
 }, 
 "otu336139": {
@@ -1428,15 +1439,15 @@
 "^ot:treebaseOTUId": "Tl240165"
 }, 
 "otu336141": {
-"^ot:altLabel": "Anolis semilineatus", 
 "^ot:originalLabel": "Anolis semilineatus TJ", 
 "^ot:ottId": 712471, 
+"^ot:ottTaxonName": "Anolis semilineatus", 
 "^ot:treebaseOTUId": "Tl240166"
 }, 
 "otu336142": {
-"^ot:altLabel": "Draco reticulatus", 
 "^ot:originalLabel": "Draco reticulatus Bohol", 
 "^ot:ottId": 1091393, 
+"^ot:ottTaxonName": "Draco reticulatus", 
 "^ot:treebaseOTUId": "Tl240167"
 }, 
 "otu336143": {
@@ -1452,49 +1463,51 @@
 "^ot:treebaseOTUId": "Tl240169"
 }, 
 "otu336145": {
-"^ot:altLabel": "Draco reticulatus", 
 "^ot:originalLabel": "Draco reticulatus Samar", 
 "^ot:ottId": 1091393, 
+"^ot:ottTaxonName": "Draco reticulatus", 
 "^ot:treebaseOTUId": "Tl240170"
 }, 
 "otu336146": {
-"^ot:altLabel": "Anolis ocelloscapularis", 
 "^ot:originalLabel": "Anolis oscelloscapularis KN", 
 "^ot:ottId": 718323, 
+"^ot:ottTaxonName": "Anolis ocelloscapularis", 
 "^ot:treebaseOTUId": "Tl240171"
 }, 
 "otu336147": {
-"^ot:altLabel": "Anolis bartschi", 
 "^ot:originalLabel": "Anolis bartschi TJ99", 
 "^ot:ottId": 441767, 
+"^ot:ottTaxonName": "Anolis bartschi", 
 "^ot:treebaseOTUId": "Tl240172"
 }, 
 "otu336148": {
-"^ot:altLabel": "Liolaemus cf. poecilochromis", 
 "^ot:originalLabel": "Liolaemus cf poecilochromus", 
 "^ot:ottId": 503682, 
+"^ot:ottTaxonName": "Liolaemus cf. poecilochromis", 
 "^ot:treebaseOTUId": "Tl240173"
 }, 
 "otu336149": {
 "^ot:originalLabel": "Liolaemus atacamensis", 
 "^ot:ottId": 571289, 
+"^ot:ottTaxonName": "Liolaemus atacamensis", 
 "^ot:treebaseOTUId": "Tl240174"
 }, 
 "otu336150": {
-"^ot:altLabel": "Anolis alumina", 
 "^ot:originalLabel": "Anolis alumina TJ", 
 "^ot:ottId": 365391, 
+"^ot:ottTaxonName": "Anolis alumina", 
 "^ot:treebaseOTUId": "Tl240175"
 }, 
 "otu336151": {
-"^ot:altLabel": "Anolis alfaroi", 
 "^ot:originalLabel": "Anolis alfaroi TJ", 
 "^ot:ottId": 941102, 
+"^ot:ottTaxonName": "Anolis alfaroi", 
 "^ot:treebaseOTUId": "Tl240176"
 }, 
 "otu336152": {
 "^ot:originalLabel": "Liolaemus buergeri", 
 "^ot:ottId": 868415, 
+"^ot:ottTaxonName": "Liolaemus buergeri", 
 "^ot:treebaseOTUId": "Tl240177"
 }, 
 "otu336153": {
@@ -1516,9 +1529,9 @@
 "^ot:treebaseOTUId": "Tl240180"
 }, 
 "otu336156": {
-"^ot:altLabel": "Anolis porcus", 
 "^ot:originalLabel": "Chamaeleolis porcus TJ", 
 "^ot:ottId": 941099, 
+"^ot:ottTaxonName": "Anolis porcus", 
 "^ot:treebaseOTUId": "Tl240181"
 }, 
 "otu336157": {
@@ -1554,6 +1567,7 @@
 "otu336162": {
 "^ot:originalLabel": "Draco maximus", 
 "^ot:ottId": 741455, 
+"^ot:ottTaxonName": "Draco maximus", 
 "^ot:treebaseOTUId": "Tl240187"
 }, 
 "otu336163": {
@@ -1563,9 +1577,9 @@
 "^ot:treebaseOTUId": "Tl240188"
 }, 
 "otu336164": {
-"^ot:altLabel": "Anolis reconditus", 
 "^ot:originalLabel": "Anolis reconditus NP", 
 "^ot:ottId": 196313, 
+"^ot:ottTaxonName": "Anolis reconditus", 
 "^ot:treebaseOTUId": "Tl240189"
 }, 
 "otu336165": {
@@ -1581,9 +1595,9 @@
 "^ot:treebaseOTUId": "Tl240191"
 }, 
 "otu336167": {
-"^ot:altLabel": "Anolis bimaculatus", 
 "^ot:originalLabel": "Anolis bimaculatus TJ99", 
 "^ot:ottId": 769056, 
+"^ot:ottTaxonName": "Anolis bimaculatus", 
 "^ot:treebaseOTUId": "Tl240192"
 }, 
 "otu336168": {
@@ -1593,9 +1607,9 @@
 "^ot:treebaseOTUId": "Tl240193"
 }, 
 "otu336169": {
-"^ot:altLabel": "Anolis brunneus", 
 "^ot:originalLabel": "Anolis brunneus OM TJ", 
 "^ot:ottId": 365397, 
+"^ot:ottTaxonName": "Anolis brunneus", 
 "^ot:treebaseOTUId": "Tl240194"
 }, 
 "otu336170": {
@@ -1611,9 +1625,9 @@
 "^ot:treebaseOTUId": "Tl240196"
 }, 
 "otu336172": {
-"^ot:altLabel": "Anolis polylepis", 
 "^ot:originalLabel": "Anolis polylepis KN", 
 "^ot:ottId": 853253, 
+"^ot:ottTaxonName": "Anolis polylepis", 
 "^ot:treebaseOTUId": "Tl240197"
 }, 
 "otu336173": {
@@ -1625,6 +1639,7 @@
 "otu336174": {
 "^ot:originalLabel": "Anolis loveridgei", 
 "^ot:ottId": 278647, 
+"^ot:ottTaxonName": "Anolis loveridgei", 
 "^ot:treebaseOTUId": "Tl240199"
 }, 
 "otu336175": {
@@ -1660,6 +1675,7 @@
 "otu336180": {
 "^ot:originalLabel": "Draco indochinensis", 
 "^ot:ottId": 564912, 
+"^ot:ottTaxonName": "Draco indochinensis", 
 "^ot:treebaseOTUId": "Tl240205"
 }, 
 "otu336181": {
@@ -1669,9 +1685,9 @@
 "^ot:treebaseOTUId": "Tl240206"
 }, 
 "otu336182": {
-"^ot:altLabel": "Anolis longiceps", 
 "^ot:originalLabel": "Anolis longiceps TJ", 
 "^ot:ottId": 640478, 
+"^ot:ottTaxonName": "Anolis longiceps", 
 "^ot:treebaseOTUId": "Tl240207"
 }, 
 "otu336183": {
@@ -1693,9 +1709,9 @@
 "^ot:treebaseOTUId": "Tl240210"
 }, 
 "otu336186": {
-"^ot:altLabel": "Draco fimbriatus", 
 "^ot:originalLabel": "Draco fimbriatus Java", 
 "^ot:ottId": 564913, 
+"^ot:ottTaxonName": "Draco fimbriatus", 
 "^ot:treebaseOTUId": "Tl240211"
 }, 
 "otu336187": {
@@ -1705,9 +1721,9 @@
 "^ot:treebaseOTUId": "Tl240212"
 }, 
 "otu336188": {
-"^ot:altLabel": "Anolis alutaceus", 
 "^ot:originalLabel": "Anolis alutaceus TJ", 
 "^ot:ottId": 769057, 
+"^ot:ottTaxonName": "Anolis alutaceus", 
 "^ot:treebaseOTUId": "Tl240213"
 }, 
 "otu336189": {
@@ -1717,9 +1733,9 @@
 "^ot:treebaseOTUId": "Tl240214"
 }, 
 "otu336190": {
-"^ot:altLabel": "Anolis nebuloides", 
 "^ot:originalLabel": "Anolis nebuloides KN", 
 "^ot:ottId": 853249, 
+"^ot:ottTaxonName": "Anolis nebuloides", 
 "^ot:treebaseOTUId": "Tl240215"
 }, 
 "otu336191": {
@@ -1753,14 +1769,15 @@
 "^ot:treebaseOTUId": "Tl240220"
 }, 
 "otu336196": {
-"^ot:altLabel": "Anolis darlingtoni", 
 "^ot:originalLabel": "Anolis darlingtoni AY367137", 
 "^ot:ottId": 245851, 
+"^ot:ottTaxonName": "Anolis darlingtoni", 
 "^ot:treebaseOTUId": "Tl240221"
 }, 
 "otu336197": {
 "^ot:originalLabel": "Liolaemus audituvelatus", 
 "^ot:ottId": 571290, 
+"^ot:ottTaxonName": "Liolaemus audituvelatus", 
 "^ot:treebaseOTUId": "Tl240222"
 }, 
 "otu336198": {
@@ -1772,11 +1789,13 @@
 "otu336199": {
 "^ot:originalLabel": "Liolaemus nigroviridis campanae", 
 "^ot:ottId": 803023, 
+"^ot:ottTaxonName": "Liolaemus nigroviridis campanae", 
 "^ot:treebaseOTUId": "Tl240224"
 }, 
 "otu336200": {
 "^ot:originalLabel": "Liolaemus reichei", 
 "^ot:ottId": 571293, 
+"^ot:ottTaxonName": "Liolaemus reichei", 
 "^ot:treebaseOTUId": "Tl240225"
 }, 
 "otu336201": {
@@ -1804,9 +1823,9 @@
 "^ot:treebaseOTUId": "Tl240229"
 }, 
 "otu336205": {
-"^ot:altLabel": "Anolis barahonae", 
 "^ot:originalLabel": "Anolis barahonae TJ99", 
 "^ot:ottId": 441768, 
+"^ot:ottTaxonName": "Anolis barahonae", 
 "^ot:treebaseOTUId": "Tl240230"
 }, 
 "otu336206": {
@@ -1816,15 +1835,15 @@
 "^ot:treebaseOTUId": "Tl240231"
 }, 
 "otu336207": {
-"^ot:altLabel": "Liolaemus chaltin", 
 "^ot:originalLabel": "Liolaemus chaltin alticolor", 
 "^ot:ottId": 685246, 
+"^ot:ottTaxonName": "Liolaemus chaltin", 
 "^ot:treebaseOTUId": "Tl240232"
 }, 
 "otu336208": {
-"^ot:altLabel": "Draco quadrasi", 
 "^ot:originalLabel": "Draco quadrasi Sibuyan", 
 "^ot:ottId": 564908, 
+"^ot:ottTaxonName": "Draco quadrasi", 
 "^ot:treebaseOTUId": "Tl240233"
 }, 
 "otu336209": {
@@ -1836,24 +1855,25 @@
 "otu336210": {
 "^ot:originalLabel": "Liolaemus petrophilus", 
 "^ot:ottId": 407831, 
+"^ot:ottTaxonName": "Liolaemus petrophilus", 
 "^ot:treebaseOTUId": "Tl240235"
 }, 
 "otu336211": {
-"^ot:altLabel": "Liolaemus pictus", 
 "^ot:originalLabel": "Liolaemus pictus Neuquen", 
 "^ot:ottId": 665055, 
+"^ot:ottTaxonName": "Liolaemus pictus", 
 "^ot:treebaseOTUId": "Tl240236"
 }, 
 "otu336212": {
-"^ot:altLabel": "Anolis pachypus", 
 "^ot:originalLabel": "Anolis pachypus 175KN", 
 "^ot:ottId": 853246, 
+"^ot:ottTaxonName": "Anolis pachypus", 
 "^ot:treebaseOTUId": "Tl240237"
 }, 
 "otu336213": {
-"^ot:altLabel": "Anolis cupreus", 
 "^ot:originalLabel": "Anolis cupreus JMS67", 
 "^ot:ottId": 760884, 
+"^ot:ottTaxonName": "Anolis cupreus", 
 "^ot:treebaseOTUId": "Tl240238"
 }, 
 "otu336214": {
@@ -1865,6 +1885,7 @@
 "otu336215": {
 "^ot:originalLabel": "Anolis paternus", 
 "^ot:ottId": 690591, 
+"^ot:ottTaxonName": "Anolis paternus", 
 "^ot:treebaseOTUId": "Tl240240"
 }, 
 "otu336216": {
@@ -1892,27 +1913,27 @@
 "^ot:treebaseOTUId": "Tl240244"
 }, 
 "otu336220": {
-"^ot:altLabel": "Anolis whitemani", 
 "^ot:originalLabel": "Anolis whitemani 469 REG", 
 "^ot:ottId": 471377, 
+"^ot:ottTaxonName": "Anolis whitemani", 
 "^ot:treebaseOTUId": "Tl240245"
 }, 
 "otu336221": {
-"^ot:altLabel": "Liolaemus andinus", 
 "^ot:originalLabel": "Liolaemus andinus 1", 
 "^ot:ottId": 533066, 
+"^ot:ottTaxonName": "Liolaemus andinus", 
 "^ot:treebaseOTUId": "Tl240246"
 }, 
 "otu336222": {
-"^ot:altLabel": "Anolis laeviventris", 
 "^ot:originalLabel": "Anolis laeviventris KN", 
 "^ot:ottId": 278645, 
+"^ot:ottTaxonName": "Anolis laeviventris", 
 "^ot:treebaseOTUId": "Tl240247"
 }, 
 "otu336223": {
-"^ot:altLabel": "Anolis argenteolus", 
 "^ot:originalLabel": "Anolis argenteolis TJ", 
 "^ot:ottId": 365394, 
+"^ot:ottTaxonName": "Anolis argenteolus", 
 "^ot:treebaseOTUId": "Tl240248"
 }, 
 "otu336224": {
@@ -1922,14 +1943,15 @@
 "^ot:treebaseOTUId": "Tl240249"
 }, 
 "otu336225": {
-"^ot:altLabel": "Anolis argillaceus", 
 "^ot:originalLabel": "Anolis argillaceus TJ", 
 "^ot:ottId": 769060, 
+"^ot:ottTaxonName": "Anolis argillaceus", 
 "^ot:treebaseOTUId": "Tl240250"
 }, 
 "otu336226": {
 "^ot:originalLabel": "Draco cornutus", 
 "^ot:ottId": 741462, 
+"^ot:ottTaxonName": "Draco cornutus", 
 "^ot:treebaseOTUId": "Tl240251"
 }, 
 "otu336227": {
@@ -1951,9 +1973,9 @@
 "^ot:treebaseOTUId": "Tl240254"
 }, 
 "otu336230": {
-"^ot:altLabel": "Anolis", 
 "^ot:originalLabel": "Anolis bigblue", 
 "^ot:ottId": 705358, 
+"^ot:ottTaxonName": "Anolis", 
 "^ot:treebaseOTUId": "Tl240255"
 }, 
 "otu336231": {
@@ -1963,9 +1985,9 @@
 "^ot:treebaseOTUId": "Tl240256"
 }, 
 "otu336232": {
-"^ot:altLabel": "Anolis ortonii", 
 "^ot:originalLabel": "Anolis ortonii Para 14444", 
 "^ot:ottId": 32964, 
+"^ot:ottTaxonName": "Anolis ortonii", 
 "^ot:treebaseOTUId": "Tl240257"
 }, 
 "otu336233": {
@@ -1987,21 +2009,21 @@
 "^ot:treebaseOTUId": "Tl240260"
 }, 
 "otu336236": {
-"^ot:altLabel": "Anolis biporcatus", 
 "^ot:originalLabel": "Anolis biporcatus RY REG", 
 "^ot:ottId": 901108, 
+"^ot:ottTaxonName": "Anolis biporcatus", 
 "^ot:treebaseOTUId": "Tl240261"
 }, 
 "otu336237": {
-"^ot:altLabel": "Anolis desechensis", 
 "^ot:originalLabel": "Anolis desachensis VA REG", 
 "^ot:ottId": 67185, 
+"^ot:ottTaxonName": "Anolis desechensis", 
 "^ot:treebaseOTUId": "Tl240262"
 }, 
 "otu336238": {
-"^ot:altLabel": "Anolis schwartzi", 
 "^ot:originalLabel": "Anolis schwartzi KN", 
 "^ot:ottId": 764436, 
+"^ot:ottTaxonName": "Anolis schwartzi", 
 "^ot:treebaseOTUId": "Tl240263"
 }, 
 "otu336239": {
@@ -2017,26 +2039,27 @@
 "^ot:treebaseOTUId": "Tl240265"
 }, 
 "otu336241": {
-"^ot:altLabel": "Anolis imias", 
 "^ot:originalLabel": "Anolis imias 191260 TJ", 
 "^ot:ottId": 901117, 
+"^ot:ottTaxonName": "Anolis imias", 
 "^ot:treebaseOTUId": "Tl240266"
 }, 
 "otu336242": {
-"^ot:altLabel": "Draco ornatus", 
 "^ot:originalLabel": "Draco ornatus Samar", 
 "^ot:ottId": 564910, 
+"^ot:ottTaxonName": "Draco ornatus", 
 "^ot:treebaseOTUId": "Tl240267"
 }, 
 "otu336243": {
 "^ot:originalLabel": "Anolis cristatellus", 
 "^ot:ottId": 769049, 
+"^ot:ottTaxonName": "Anolis cristatellus", 
 "^ot:treebaseOTUId": "Tl240268"
 }, 
 "otu336244": {
-"^ot:altLabel": "Anolis guafe", 
 "^ot:originalLabel": "Anolis guafe 2585 JJKX", 
 "^ot:ottId": 531640, 
+"^ot:ottTaxonName": "Anolis guafe", 
 "^ot:treebaseOTUId": "Tl240269"
 }, 
 "otu336245": {
@@ -2048,6 +2071,7 @@
 "otu336246": {
 "^ot:originalLabel": "Liolaemus pseudoanomalus", 
 "^ot:ottId": 979216, 
+"^ot:ottTaxonName": "Liolaemus pseudoanomalus", 
 "^ot:treebaseOTUId": "Tl240271"
 }, 
 "otu336247": {
@@ -2069,9 +2093,9 @@
 "^ot:treebaseOTUId": "Tl240274"
 }, 
 "otu336250": {
-"^ot:altLabel": "Anolis lineatopus", 
 "^ot:originalLabel": "Anolis lineatopus 11385789 TJ", 
 "^ot:ottId": 967564, 
+"^ot:ottTaxonName": "Anolis lineatopus", 
 "^ot:treebaseOTUId": "Tl240275"
 }, 
 "otu336251": {
@@ -2087,14 +2111,15 @@
 "^ot:treebaseOTUId": "Tl240277"
 }, 
 "otu336253": {
-"^ot:altLabel": "Anolis oxylophus", 
 "^ot:originalLabel": "Anolis oxylophus 11853KN", 
 "^ot:ottId": 853245, 
+"^ot:ottTaxonName": "Anolis oxylophus", 
 "^ot:treebaseOTUId": "Tl240278"
 }, 
 "otu336254": {
 "^ot:originalLabel": "Liolaemus wiegmannii", 
 "^ot:ottId": 979220, 
+"^ot:ottTaxonName": "Liolaemus wiegmannii", 
 "^ot:treebaseOTUId": "Tl240279"
 }, 
 "otu336255": {
@@ -2124,6 +2149,7 @@
 "otu336259": {
 "^ot:originalLabel": "Draco guentheri", 
 "^ot:ottId": 564911, 
+"^ot:ottTaxonName": "Draco guentheri", 
 "^ot:treebaseOTUId": "Tl240284"
 }, 
 "otu336260": {
@@ -2133,15 +2159,15 @@
 "^ot:treebaseOTUId": "Tl240285"
 }, 
 "otu336261": {
-"^ot:altLabel": "Anolis christophei", 
 "^ot:originalLabel": "Anolis christophei TJ99", 
 "^ot:ottId": 769048, 
+"^ot:ottTaxonName": "Anolis christophei", 
 "^ot:treebaseOTUId": "Tl240286"
 }, 
 "otu336262": {
-"^ot:altLabel": "Draco spilopterus", 
 "^ot:originalLabel": "Draco spilopterus Polillo", 
 "^ot:ottId": 1091394, 
+"^ot:ottTaxonName": "Draco spilopterus", 
 "^ot:treebaseOTUId": "Tl240287"
 }, 
 "otu336263": {
@@ -2151,9 +2177,9 @@
 "^ot:treebaseOTUId": "Tl240288"
 }, 
 "otu336264": {
-"^ot:altLabel": "Anolis dolichocephalus", 
 "^ot:originalLabel": "Anolis dolichocephalus TJ", 
 "^ot:ottId": 67184, 
+"^ot:ottTaxonName": "Anolis dolichocephalus", 
 "^ot:treebaseOTUId": "Tl240289"
 }, 
 "otu336265": {
@@ -2165,35 +2191,37 @@
 "otu336266": {
 "^ot:originalLabel": "Liolaemus olongasta", 
 "^ot:ottId": 827689, 
+"^ot:ottTaxonName": "Liolaemus olongasta", 
 "^ot:treebaseOTUId": "Tl240291"
 }, 
 "otu336267": {
-"^ot:altLabel": "Draco fimbriatus", 
 "^ot:originalLabel": "Draco fimbriatus Poring", 
 "^ot:ottId": 564913, 
+"^ot:ottTaxonName": "Draco fimbriatus", 
 "^ot:treebaseOTUId": "Tl240292"
 }, 
 "otu336268": {
 "^ot:originalLabel": "Liolaemus salinicola", 
 "^ot:ottId": 407807, 
+"^ot:ottTaxonName": "Liolaemus salinicola", 
 "^ot:treebaseOTUId": "Tl240293"
 }, 
 "otu336269": {
-"^ot:altLabel": "Anolis marron", 
 "^ot:originalLabel": "Anolis marron TJ", 
 "^ot:ottId": 640472, 
+"^ot:ottTaxonName": "Anolis marron", 
 "^ot:treebaseOTUId": "Tl240294"
 }, 
 "otu336270": {
-"^ot:altLabel": "Anolis microtus", 
 "^ot:originalLabel": "Anolis microtus 3342315 TJ99", 
 "^ot:ottId": 492042, 
+"^ot:ottTaxonName": "Anolis microtus", 
 "^ot:treebaseOTUId": "Tl240295"
 }, 
 "otu336271": {
-"^ot:altLabel": "Anolis valencienni", 
 "^ot:originalLabel": "Anolis valencienni DBRB TJ", 
 "^ot:ottId": 69054, 
+"^ot:ottTaxonName": "Anolis valencienni", 
 "^ot:treebaseOTUId": "Tl240296"
 }, 
 "otu336272": {
@@ -2203,9 +2231,9 @@
 "^ot:treebaseOTUId": "Tl240297"
 }, 
 "otu336273": {
-"^ot:altLabel": "Anolis loysiana", 
 "^ot:originalLabel": "Anolis loysiana TJ99", 
 "^ot:ottId": 492043, 
+"^ot:ottTaxonName": "Anolis loysiana", 
 "^ot:treebaseOTUId": "Tl240298"
 }, 
 "otu336274": {
@@ -2215,9 +2243,9 @@
 "^ot:treebaseOTUId": "Tl240299"
 }, 
 "otu336275": {
-"^ot:altLabel": "Anolis fowleri", 
 "^ot:originalLabel": "Anolis fowleri TJ", 
 "^ot:ottId": 67189, 
+"^ot:ottTaxonName": "Anolis fowleri", 
 "^ot:treebaseOTUId": "Tl240300"
 }, 
 "otu336276": {
@@ -2233,9 +2261,9 @@
 "^ot:treebaseOTUId": "Tl240302"
 }, 
 "otu336278": {
-"^ot:altLabel": "Anolis zeus", 
 "^ot:originalLabel": "Anolis zeus 13076", 
 "^ot:ottId": 966879, 
+"^ot:ottTaxonName": "Anolis zeus", 
 "^ot:treebaseOTUId": "Tl240303"
 }, 
 "otu336279": {
@@ -2259,15 +2287,19 @@
 "otu336282": {
 "^ot:originalLabel": "Liolaemus polychromus", 
 "^ot:ottId": 407818, 
+"^ot:ottTaxonName": "Liolaemus polychromus", 
 "^ot:treebaseOTUId": "Tl240307"
 }, 
 "otu336283": {
 "^ot:originalLabel": "Laudakia stellio", 
+"^ot:ottId": 913396, 
+"^ot:ottTaxonName": "Stellagama stellio", 
 "^ot:treebaseOTUId": "Tl240308"
 }, 
 "otu336284": {
 "^ot:originalLabel": "Liolaemus gallardoi", 
 "^ot:ottId": 7990, 
+"^ot:ottTaxonName": "Liolaemus gallardoi", 
 "^ot:treebaseOTUId": "Tl240309"
 }, 
 "otu336285": {
@@ -2285,6 +2317,7 @@
 "otu336287": {
 "^ot:originalLabel": "Liolaemus uspallatensis", 
 "^ot:ottId": 253236, 
+"^ot:ottTaxonName": "Liolaemus uspallatensis", 
 "^ot:treebaseOTUId": "Tl240312"
 }, 
 "otu336288": {
@@ -2296,23 +2329,25 @@
 "otu336289": {
 "^ot:originalLabel": "Liolaemus boulengeri", 
 "^ot:ottId": 533095, 
+"^ot:ottTaxonName": "Liolaemus boulengeri", 
 "^ot:treebaseOTUId": "Tl240314"
 }, 
 "otu336290": {
-"^ot:altLabel": "Anolis scriptus", 
 "^ot:originalLabel": "Anolis scriptus TJ", 
 "^ot:ottId": 118841, 
+"^ot:ottTaxonName": "Anolis scriptus", 
 "^ot:treebaseOTUId": "Tl240315"
 }, 
 "otu336291": {
-"^ot:altLabel": "Anolis cupeyalensis", 
 "^ot:originalLabel": "Anolis cupeyalensis 191155KN", 
 "^ot:ottId": 493997, 
+"^ot:ottTaxonName": "Anolis cupeyalensis", 
 "^ot:treebaseOTUId": "Tl240316"
 }, 
 "otu336292": {
 "^ot:originalLabel": "Liolaemus ceii", 
 "^ot:ottId": 979217, 
+"^ot:ottTaxonName": "Liolaemus ceii", 
 "^ot:treebaseOTUId": "Tl240317"
 }, 
 "otu336293": {
@@ -2328,9 +2363,9 @@
 "^ot:treebaseOTUId": "Tl240319"
 }, 
 "otu336295": {
-"^ot:altLabel": "Anolis gingivinus", 
 "^ot:originalLabel": "Anolis gingivinus KN", 
 "^ot:ottId": 420587, 
+"^ot:ottTaxonName": "Anolis gingivinus", 
 "^ot:treebaseOTUId": "Tl240320"
 }, 
 "otu336296": {
@@ -2340,9 +2375,9 @@
 "^ot:treebaseOTUId": "Tl240321"
 }, 
 "otu336297": {
-"^ot:altLabel": "Anolis cyanopleurus", 
 "^ot:originalLabel": "Anolis cyanopleurus KN", 
 "^ot:ottId": 278650, 
+"^ot:ottTaxonName": "Anolis cyanopleurus", 
 "^ot:treebaseOTUId": "Tl240322"
 }, 
 "otu336298": {
@@ -2364,9 +2399,9 @@
 "^ot:treebaseOTUId": "Tl240325"
 }, 
 "otu336301": {
-"^ot:altLabel": "Anolis lineatus", 
 "^ot:originalLabel": "Anolis lineatus OS REG", 
 "^ot:ottId": 492044, 
+"^ot:ottTaxonName": "Anolis lineatus", 
 "^ot:treebaseOTUId": "Tl240326"
 }, 
 "otu336302": {
@@ -2390,6 +2425,7 @@
 "otu336305": {
 "^ot:originalLabel": "Liolaemus sarmientoi", 
 "^ot:ottId": 7982, 
+"^ot:ottTaxonName": "Liolaemus sarmientoi", 
 "^ot:treebaseOTUId": "Tl240330"
 }, 
 "otu336306": {
@@ -2399,9 +2435,9 @@
 "^ot:treebaseOTUId": "Tl240331"
 }, 
 "otu336307": {
-"^ot:altLabel": "Draco spilopterus", 
 "^ot:originalLabel": "Draco spilopterus Siquijor", 
 "^ot:ottId": 1091394, 
+"^ot:ottTaxonName": "Draco spilopterus", 
 "^ot:treebaseOTUId": "Tl240332"
 }, 
 "otu336308": {
@@ -2423,9 +2459,9 @@
 "^ot:treebaseOTUId": "Tl240335"
 }, 
 "otu336311": {
-"^ot:altLabel": "Anolis allisoni", 
 "^ot:originalLabel": "Anolis allisoni PT TJ", 
 "^ot:ottId": 365392, 
+"^ot:ottTaxonName": "Anolis allisoni", 
 "^ot:treebaseOTUId": "Tl240336"
 }, 
 "otu336312": {
@@ -2447,15 +2483,15 @@
 "^ot:treebaseOTUId": "Tl240339"
 }, 
 "otu336315": {
-"^ot:altLabel": "Liolaemus tenuis punctatissimus", 
 "^ot:originalLabel": "Liolaemus tenuispunct", 
 "^ot:ottId": 1043873, 
+"^ot:ottTaxonName": "Liolaemus tenuis punctatissimus", 
 "^ot:treebaseOTUId": "Tl240340"
 }, 
 "otu336316": {
-"^ot:altLabel": "Anolis caudalis", 
 "^ot:originalLabel": "Anolis caudalis TJ", 
 "^ot:ottId": 365396, 
+"^ot:ottTaxonName": "Anolis caudalis", 
 "^ot:treebaseOTUId": "Tl240341"
 }, 
 "otu336317": {
@@ -2471,15 +2507,15 @@
 "^ot:treebaseOTUId": "Tl240343"
 }, 
 "otu336319": {
-"^ot:altLabel": "Anolis clivicola", 
 "^ot:originalLabel": "Anolis clivicola COMP", 
 "^ot:ottId": 494006, 
+"^ot:ottTaxonName": "Anolis clivicola", 
 "^ot:treebaseOTUId": "Tl240344"
 }, 
 "otu336320": {
-"^ot:altLabel": "Liolaemus escarchadosi", 
 "^ot:originalLabel": "Liolaemus escarchardosi", 
 "^ot:ottId": 872318, 
+"^ot:ottTaxonName": "Liolaemus escarchadosi", 
 "^ot:treebaseOTUId": "Tl240345"
 }, 
 "otu336321": {
@@ -2489,9 +2525,9 @@
 "^ot:treebaseOTUId": "Tl240346"
 }, 
 "otu336322": {
-"^ot:altLabel": "Anolis vermiculatus", 
 "^ot:originalLabel": "Anolis vermiculatus TJ99", 
 "^ot:ottId": 1018171, 
+"^ot:ottTaxonName": "Anolis vermiculatus", 
 "^ot:treebaseOTUId": "Tl240347"
 }, 
 "otu336323": {
@@ -2513,9 +2549,9 @@
 "^ot:treebaseOTUId": "Tl240350"
 }, 
 "otu336326": {
-"^ot:altLabel": "Draco fimbriatus", 
 "^ot:originalLabel": "Draco fimbriatus MP", 
 "^ot:ottId": 564913, 
+"^ot:ottTaxonName": "Draco fimbriatus", 
 "^ot:treebaseOTUId": "Tl240351"
 }, 
 "otu336327": {
@@ -2532,6 +2568,8 @@
 }, 
 "otu336329": {
 "^ot:originalLabel": "Laudakia caucasia", 
+"^ot:ottId": 138221, 
+"^ot:ottTaxonName": "Paralaudakia caucasia", 
 "^ot:treebaseOTUId": "Tl240354"
 }, 
 "otu336330": {
@@ -2549,6 +2587,7 @@
 "otu336332": {
 "^ot:originalLabel": "Liolaemus ornatus", 
 "^ot:ottId": 407832, 
+"^ot:ottTaxonName": "Liolaemus ornatus", 
 "^ot:treebaseOTUId": "Tl240357"
 }, 
 "otu336333": {
@@ -2564,9 +2603,9 @@
 "^ot:treebaseOTUId": "Tl240359"
 }, 
 "otu336335": {
-"^ot:altLabel": "Anolis nicefori", 
 "^ot:originalLabel": "Phenacosaurus nicefori LP REG01", 
 "^ot:ottId": 139663, 
+"^ot:ottTaxonName": "Anolis nicefori", 
 "^ot:treebaseOTUId": "Tl240360"
 }, 
 "otu336336": {
@@ -2576,14 +2615,15 @@
 "^ot:treebaseOTUId": "Tl240361"
 }, 
 "otu336337": {
-"^ot:altLabel": "Anolis trachyderma", 
 "^ot:originalLabel": "Anolis trachyderma RX REG", 
 "^ot:ottId": 196312, 
+"^ot:ottTaxonName": "Anolis trachyderma", 
 "^ot:treebaseOTUId": "Tl240362"
 }, 
 "otu336338": {
 "^ot:originalLabel": "Draco mindanensis", 
 "^ot:ottId": 564909, 
+"^ot:ottTaxonName": "Draco mindanensis", 
 "^ot:treebaseOTUId": "Tl240363"
 }, 
 "otu336339": {
@@ -2599,9 +2639,9 @@
 "^ot:treebaseOTUId": "Tl240365"
 }, 
 "otu336341": {
-"^ot:altLabel": "Anolis barbatus", 
 "^ot:originalLabel": "Chamaeleolis barbatus TJ", 
 "^ot:ottId": 149866, 
+"^ot:ottTaxonName": "Anolis barbatus", 
 "^ot:treebaseOTUId": "Tl240366"
 }, 
 "otu336342": {
@@ -2613,6 +2653,7 @@
 "otu336343": {
 "^ot:originalLabel": "Draco formosus", 
 "^ot:ottId": 564914, 
+"^ot:ottTaxonName": "Draco formosus", 
 "^ot:treebaseOTUId": "Tl240368"
 }, 
 "otu336344": {
@@ -2622,9 +2663,9 @@
 "^ot:treebaseOTUId": "Tl240369"
 }, 
 "otu336345": {
-"^ot:altLabel": "Draco timorensis", 
 "^ot:originalLabel": "Draco timoriensis Timor", 
 "^ot:ottId": 1091388, 
+"^ot:ottTaxonName": "Draco timorensis", 
 "^ot:treebaseOTUId": "Tl240370"
 }, 
 "otu336346": {
@@ -2648,17 +2689,19 @@
 "otu336349": {
 "^ot:originalLabel": "Liolaemus lineomaculatus", 
 "^ot:ottId": 827695, 
+"^ot:ottTaxonName": "Liolaemus lineomaculatus", 
 "^ot:treebaseOTUId": "Tl240374"
 }, 
 "otu336350": {
-"^ot:altLabel": "Anolis wattsi", 
 "^ot:originalLabel": "Anolis wattsi TJ99", 
 "^ot:ottId": 150501, 
+"^ot:ottTaxonName": "Anolis wattsi", 
 "^ot:treebaseOTUId": "Tl240375"
 }, 
 "otu336351": {
 "^ot:originalLabel": "Liolaemus elongatus", 
 "^ot:ottId": 303443, 
+"^ot:ottTaxonName": "Liolaemus elongatus", 
 "^ot:treebaseOTUId": "Tl240376"
 }, 
 "otu336352": {
@@ -2674,21 +2717,21 @@
 "^ot:treebaseOTUId": "Tl240378"
 }, 
 "otu336354": {
-"^ot:altLabel": "Draco boschmai", 
 "^ot:originalLabel": "Draco boschmai Flores", 
 "^ot:ottId": 938893, 
+"^ot:ottTaxonName": "Draco boschmai", 
 "^ot:treebaseOTUId": "Tl240379"
 }, 
 "otu336355": {
-"^ot:altLabel": "Anolis fuscoauratus", 
 "^ot:originalLabel": "Anolis fuscoauratus 14094", 
 "^ot:ottId": 653137, 
+"^ot:ottTaxonName": "Anolis fuscoauratus", 
 "^ot:treebaseOTUId": "Tl240380"
 }, 
 "otu336356": {
-"^ot:altLabel": "Anolis tropidogaster", 
 "^ot:originalLabel": "Anolis tropidogaster KN", 
 "^ot:ottId": 62027, 
+"^ot:ottTaxonName": "Anolis tropidogaster", 
 "^ot:treebaseOTUId": "Tl240381"
 }, 
 "otu336357": {
@@ -2700,6 +2743,7 @@
 "otu336358": {
 "^ot:originalLabel": "Draco biaro", 
 "^ot:ottId": 938895, 
+"^ot:ottTaxonName": "Draco biaro", 
 "^ot:treebaseOTUId": "Tl240383"
 }, 
 "otu336359": {
@@ -2709,9 +2753,9 @@
 "^ot:treebaseOTUId": "Tl240384"
 }, 
 "otu336360": {
-"^ot:altLabel": "Draco sumatranus", 
 "^ot:originalLabel": "Draco sumatranus Malay Pen", 
 "^ot:ottId": 1091389, 
+"^ot:ottTaxonName": "Draco sumatranus", 
 "^ot:treebaseOTUId": "Tl240385"
 }, 
 "otu336361": {
@@ -2721,9 +2765,9 @@
 "^ot:treebaseOTUId": "Tl240386"
 }, 
 "otu336362": {
-"^ot:altLabel": "Liolaemus xanthoviridis", 
 "^ot:originalLabel": "Liolaemus xanthoviridis FBC2", 
 "^ot:ottId": 338705, 
+"^ot:ottTaxonName": "Liolaemus xanthoviridis", 
 "^ot:treebaseOTUId": "Tl240387"
 }, 
 "otu336363": {
@@ -2735,6 +2779,7 @@
 "otu336364": {
 "^ot:originalLabel": "Liolaemus koslowskyi", 
 "^ot:ottId": 715579, 
+"^ot:ottTaxonName": "Liolaemus koslowskyi", 
 "^ot:treebaseOTUId": "Tl240389"
 }, 
 "otu336365": {
@@ -2784,9 +2829,9 @@
 "^ot:treebaseOTUId": "Tl240397"
 }, 
 "otu336373": {
-"^ot:altLabel": "Anolis uniformis", 
 "^ot:originalLabel": "Anolis uniformis KN", 
 "^ot:ottId": 10229, 
+"^ot:ottTaxonName": "Anolis uniformis", 
 "^ot:treebaseOTUId": "Tl240398"
 }, 
 "otu336374": {
@@ -2808,21 +2853,21 @@
 "^ot:treebaseOTUId": "Tl240401"
 }, 
 "otu336377": {
-"^ot:altLabel": "Liolaemus orientalis", 
 "^ot:originalLabel": "Liolaemus chlorostictus", 
 "^ot:ottId": 928836, 
+"^ot:ottTaxonName": "Liolaemus orientalis", 
 "^ot:treebaseOTUId": "Tl240402"
 }, 
 "otu336378": {
-"^ot:altLabel": "Anolis angusticeps", 
 "^ot:originalLabel": "Anolis angusticeps TJ99", 
 "^ot:ottId": 441762, 
+"^ot:ottTaxonName": "Anolis angusticeps", 
 "^ot:treebaseOTUId": "Tl240403"
 }, 
 "otu336379": {
-"^ot:altLabel": "Anolis websteri", 
 "^ot:originalLabel": "Anolis websteri TJ", 
 "^ot:ottId": 118842, 
+"^ot:ottTaxonName": "Anolis websteri", 
 "^ot:treebaseOTUId": "Tl240404"
 }, 
 "otu336380": {
@@ -2838,21 +2883,21 @@
 "^ot:treebaseOTUId": "Tl240406"
 }, 
 "otu336382": {
-"^ot:altLabel": "Anolis carolinensis", 
 "^ot:originalLabel": "Anolis carolinensis TJ99", 
 "^ot:ottId": 705356, 
+"^ot:ottTaxonName": "Anolis carolinensis", 
 "^ot:treebaseOTUId": "Tl240407"
 }, 
 "otu336383": {
-"^ot:altLabel": "Draco sumatranus", 
 "^ot:originalLabel": "Draco sumatranus Borneo", 
 "^ot:ottId": 1091389, 
+"^ot:ottTaxonName": "Draco sumatranus", 
 "^ot:treebaseOTUId": "Tl240408"
 }, 
 "otu336384": {
-"^ot:altLabel": "Anolis insolitus", 
 "^ot:originalLabel": "Anolis insolitus TJ99", 
 "^ot:ottId": 967570, 
+"^ot:ottTaxonName": "Anolis insolitus", 
 "^ot:treebaseOTUId": "Tl240409"
 }, 
 "otu336385": {
@@ -2864,6 +2909,7 @@
 "otu336386": {
 "^ot:originalLabel": "Liolaemus multicolor", 
 "^ot:ottId": 827692, 
+"^ot:ottTaxonName": "Liolaemus multicolor", 
 "^ot:treebaseOTUId": "Tl240411"
 }, 
 "otu336387": {
@@ -2873,9 +2919,9 @@
 "^ot:treebaseOTUId": "Tl240412"
 }, 
 "otu336388": {
-"^ot:altLabel": "Draco spilopterus", 
 "^ot:originalLabel": "Draco spilopterus Cebu", 
 "^ot:ottId": 1091394, 
+"^ot:ottTaxonName": "Draco spilopterus", 
 "^ot:treebaseOTUId": "Tl240413"
 }, 
 "otu336389": {
@@ -2885,9 +2931,9 @@
 "^ot:treebaseOTUId": "Tl240414"
 }, 
 "otu336390": {
-"^ot:altLabel": "Anolis evermanni", 
 "^ot:originalLabel": "Anolis evermanni TJ", 
 "^ot:ottId": 67190, 
+"^ot:ottTaxonName": "Anolis evermanni", 
 "^ot:treebaseOTUId": "Tl240415"
 }, 
 "otu336391": {
@@ -2909,9 +2955,9 @@
 "^ot:treebaseOTUId": "Tl240418"
 }, 
 "otu336394": {
-"^ot:altLabel": "Anolis richardii", 
 "^ot:originalLabel": "Anolis richardi TJ99", 
 "^ot:ottId": 492047, 
+"^ot:ottTaxonName": "Anolis richardii", 
 "^ot:treebaseOTUId": "Tl240419"
 }, 
 "otu336395": {
@@ -2933,27 +2979,27 @@
 "^ot:treebaseOTUId": "Tl240422"
 }, 
 "otu336398": {
-"^ot:altLabel": "Anolis ahli", 
 "^ot:originalLabel": "Anolis ahli NU 1671 REG", 
 "^ot:ottId": 441757, 
+"^ot:ottTaxonName": "Anolis ahli", 
 "^ot:treebaseOTUId": "Tl240423"
 }, 
 "otu336399": {
-"^ot:altLabel": "Anolis capito", 
 "^ot:originalLabel": "Anolis capito KN", 
 "^ot:ottId": 494015, 
+"^ot:ottTaxonName": "Anolis capito", 
 "^ot:treebaseOTUId": "Tl240424"
 }, 
 "otu336400": {
-"^ot:altLabel": "Anolis intermedius", 
 "^ot:originalLabel": "Anolis intermedius KN", 
 "^ot:ottId": 561761, 
+"^ot:ottTaxonName": "Anolis intermedius", 
 "^ot:treebaseOTUId": "Tl240425"
 }, 
 "otu336401": {
-"^ot:altLabel": "Draco blanfordii", 
 "^ot:originalLabel": "Draco blanfordii McGuire", 
 "^ot:ottId": 741458, 
+"^ot:ottTaxonName": "Draco blanfordii", 
 "^ot:treebaseOTUId": "Tl240426"
 }, 
 "otu336402": {
@@ -2963,15 +3009,15 @@
 "^ot:treebaseOTUId": "Tl240427"
 }, 
 "otu336403": {
-"^ot:altLabel": "Anolis porcatus", 
 "^ot:originalLabel": "Anolis porcatus TJ", 
 "^ot:ottId": 818462, 
+"^ot:ottTaxonName": "Anolis porcatus", 
 "^ot:treebaseOTUId": "Tl240428"
 }, 
 "otu336404": {
-"^ot:altLabel": "Anolis altae", 
 "^ot:originalLabel": "Anolis altae KN", 
 "^ot:ottId": 1019784, 
+"^ot:ottTaxonName": "Anolis altae", 
 "^ot:treebaseOTUId": "Tl240429"
 }, 
 "otu336405": {
@@ -2981,9 +3027,9 @@
 "^ot:treebaseOTUId": "Tl240430"
 }, 
 "otu336406": {
-"^ot:altLabel": "Anolis lucius", 
 "^ot:originalLabel": "Anolis lucius TJ99", 
 "^ot:ottId": 245839, 
+"^ot:ottTaxonName": "Anolis lucius", 
 "^ot:treebaseOTUId": "Tl240431"
 }, 
 "otu336407": {
@@ -2993,9 +3039,9 @@
 "^ot:treebaseOTUId": "Tl240432"
 }, 
 "otu336408": {
-"^ot:altLabel": "Anolis luteogularis", 
 "^ot:originalLabel": "Anolis luteogularis TJ99", 
 "^ot:ottId": 492045, 
+"^ot:ottTaxonName": "Anolis luteogularis", 
 "^ot:treebaseOTUId": "Tl240433"
 }, 
 "otu336409": {
@@ -3005,9 +3051,9 @@
 "^ot:treebaseOTUId": "Tl240434"
 }, 
 "otu336410": {
-"^ot:altLabel": "Anolis trinitatis", 
 "^ot:originalLabel": "Anolis trinitatus TJ", 
 "^ot:ottId": 240138, 
+"^ot:ottTaxonName": "Anolis trinitatis", 
 "^ot:treebaseOTUId": "Tl240435"
 }, 
 "otu336411": {
@@ -3025,12 +3071,13 @@
 "otu336413": {
 "^ot:originalLabel": "Anolis rejectus", 
 "^ot:ottId": 426301, 
+"^ot:ottTaxonName": "Anolis rejectus", 
 "^ot:treebaseOTUId": "Tl240438"
 }, 
 "otu336414": {
-"^ot:altLabel": "Anolis acutus", 
 "^ot:originalLabel": "Anolis acutus corrected TJ99", 
 "^ot:ottId": 441760, 
+"^ot:ottTaxonName": "Anolis acutus", 
 "^ot:treebaseOTUId": "Tl240439"
 }, 
 "otu336415": {
@@ -3046,9 +3093,9 @@
 "^ot:treebaseOTUId": "Tl240441"
 }, 
 "otu336417": {
-"^ot:altLabel": "Anolis centralis", 
 "^ot:originalLabel": "Anolis centralis TJ", 
 "^ot:ottId": 231490, 
+"^ot:ottTaxonName": "Anolis centralis", 
 "^ot:treebaseOTUId": "Tl240442"
 }, 
 "otu336418": {
@@ -3072,6 +3119,7 @@
 "otu336421": {
 "^ot:originalLabel": "Anolis distichus", 
 "^ot:ottId": 245848, 
+"^ot:ottTaxonName": "Anolis distichus", 
 "^ot:treebaseOTUId": "Tl240446"
 }, 
 "otu336422": {
@@ -3105,9 +3153,9 @@
 "^ot:treebaseOTUId": "Tl240451"
 }, 
 "otu336427": {
-"^ot:altLabel": "Anolis armouri", 
 "^ot:originalLabel": "Anolis armouri 523 REG", 
 "^ot:ottId": 471378, 
+"^ot:ottTaxonName": "Anolis armouri", 
 "^ot:treebaseOTUId": "Tl240452"
 }, 
 "otu336428": {
@@ -3117,9 +3165,9 @@
 "^ot:treebaseOTUId": "Tl240453"
 }, 
 "otu336429": {
-"^ot:altLabel": "Anolis sheplani", 
 "^ot:originalLabel": "Anolis sheplani TJ99", 
 "^ot:ottId": 1018174, 
+"^ot:ottTaxonName": "Anolis sheplani", 
 "^ot:treebaseOTUId": "Tl240454"
 }, 
 "otu336430": {
@@ -3129,9 +3177,9 @@
 "^ot:treebaseOTUId": "Tl240455"
 }, 
 "otu336431": {
-"^ot:altLabel": "Anolis gundlachi", 
 "^ot:originalLabel": "Anolis gundlachi TJ", 
 "^ot:ottId": 67193, 
+"^ot:ottTaxonName": "Anolis gundlachi", 
 "^ot:treebaseOTUId": "Tl240456"
 }, 
 "otu336432": {
@@ -3149,12 +3197,13 @@
 "otu336434": {
 "^ot:originalLabel": "Liolaemus dorbignyi", 
 "^ot:ottId": 878289, 
+"^ot:ottTaxonName": "Liolaemus dorbignyi", 
 "^ot:treebaseOTUId": "Tl240459"
 }, 
 "otu336435": {
-"^ot:altLabel": "Liolaemus darwinii", 
 "^ot:originalLabel": "Liolaemus darwinii LaRioja", 
 "^ot:ottId": 878288, 
+"^ot:ottTaxonName": "Liolaemus darwinii", 
 "^ot:treebaseOTUId": "Tl240460"
 }, 
 "otu336436": {
@@ -3184,6 +3233,7 @@
 "otu336440": {
 "^ot:originalLabel": "Liolaemus aymararum", 
 "^ot:ottId": 571291, 
+"^ot:ottTaxonName": "Liolaemus aymararum", 
 "^ot:treebaseOTUId": "Tl240465"
 }, 
 "otu336441": {
@@ -3207,6 +3257,7 @@
 "otu336444": {
 "^ot:originalLabel": "Draco beccarii", 
 "^ot:ottId": 938896, 
+"^ot:ottTaxonName": "Draco beccarii", 
 "^ot:treebaseOTUId": "Tl240469"
 }, 
 "otu336445": {
@@ -3218,6 +3269,7 @@
 "otu336446": {
 "^ot:originalLabel": "Liolaemus somuncurae", 
 "^ot:ottId": 928837, 
+"^ot:ottTaxonName": "Liolaemus somuncurae", 
 "^ot:treebaseOTUId": "Tl240471"
 }, 
 "otu336447": {
@@ -3235,12 +3287,13 @@
 "otu336449": {
 "^ot:originalLabel": "Draco taeniopterus", 
 "^ot:ottId": 217744, 
+"^ot:ottTaxonName": "Draco taeniopterus", 
 "^ot:treebaseOTUId": "Tl240474"
 }, 
 "otu336450": {
-"^ot:altLabel": "Anolis", 
 "^ot:originalLabel": "Anolis breslini AY263017", 
 "^ot:ottId": 705358, 
+"^ot:ottTaxonName": "Anolis", 
 "^ot:treebaseOTUId": "Tl240475"
 }, 
 "otu336451": {
@@ -3250,15 +3303,15 @@
 "^ot:treebaseOTUId": "Tl240476"
 }, 
 "otu336452": {
-"^ot:altLabel": "Anolis mestrei", 
 "^ot:originalLabel": "Anolis mestrei UN REG", 
 "^ot:ottId": 973785, 
+"^ot:ottTaxonName": "Anolis mestrei", 
 "^ot:treebaseOTUId": "Tl240477"
 }, 
 "otu336453": {
-"^ot:altLabel": "Anolis jubar", 
 "^ot:originalLabel": "Anolis jubar 190873 REG", 
 "^ot:ottId": 640477, 
+"^ot:ottTaxonName": "Anolis jubar", 
 "^ot:treebaseOTUId": "Tl240478"
 }, 
 "otu336454": {
@@ -3268,9 +3321,9 @@
 "^ot:treebaseOTUId": "Tl240479"
 }, 
 "otu336455": {
-"^ot:altLabel": "Anolis chamaeleonides", 
 "^ot:originalLabel": "Chamaeleolis chamaeleonides TJ99", 
 "^ot:ottId": 769051, 
+"^ot:ottTaxonName": "Anolis chamaeleonides", 
 "^ot:treebaseOTUId": "Tl240480"
 }, 
 "otu336456": {
@@ -3288,6 +3341,7 @@
 "otu336458": {
 "^ot:originalLabel": "Liolaemus schroederi", 
 "^ot:ottId": 571284, 
+"^ot:ottTaxonName": "Liolaemus schroederi", 
 "^ot:treebaseOTUId": "Tl240483"
 }, 
 "otu336459": {
@@ -3311,6 +3365,7 @@
 "otu336462": {
 "^ot:originalLabel": "Liolaemus canqueli", 
 "^ot:ottId": 338710, 
+"^ot:ottTaxonName": "Liolaemus canqueli", 
 "^ot:treebaseOTUId": "Tl240487"
 }, 
 "otu336463": {
@@ -3320,15 +3375,15 @@
 "^ot:treebaseOTUId": "Tl240488"
 }, 
 "otu336464": {
-"^ot:altLabel": "Anolis baracoae", 
 "^ot:originalLabel": "Anolis baracoe TJ", 
 "^ot:ottId": 1094511, 
+"^ot:ottTaxonName": "Anolis baracoae", 
 "^ot:treebaseOTUId": "Tl240489"
 }, 
 "otu336465": {
-"^ot:altLabel": "Anolis sminthus", 
 "^ot:originalLabel": "Anolis sminthus KN", 
 "^ot:ottId": 62029, 
+"^ot:ottTaxonName": "Anolis sminthus", 
 "^ot:treebaseOTUId": "Tl240490"
 }, 
 "otu336466": {
@@ -3342,9 +3397,9 @@
 "^ot:treebaseOTUId": "Tl240492"
 }, 
 "otu336468": {
-"^ot:altLabel": "Anolis shrevei", 
 "^ot:originalLabel": "Anolis shrevei 193297 REG", 
 "^ot:ottId": 471376, 
+"^ot:ottTaxonName": "Anolis shrevei", 
 "^ot:treebaseOTUId": "Tl240493"
 }, 
 "otu336469": {
@@ -3374,6 +3429,7 @@
 "otu336473": {
 "^ot:originalLabel": "Liolaemus rothi", 
 "^ot:ottId": 253243, 
+"^ot:ottTaxonName": "Liolaemus rothi", 
 "^ot:treebaseOTUId": "Tl240498"
 }, 
 "otu336474": {
@@ -3384,6 +3440,8 @@
 }, 
 "otu336475": {
 "^ot:originalLabel": "Leiocephalus schreibersi", 
+"^ot:ottId": 4125655, 
+"^ot:ottTaxonName": "Leiocephalus schreibersii", 
 "^ot:treebaseOTUId": "Tl240500"
 }, 
 "otu336476": {
@@ -3407,12 +3465,13 @@
 "otu336479": {
 "^ot:originalLabel": "Liolaemus fabiani", 
 "^ot:ottId": 571292, 
+"^ot:ottTaxonName": "Liolaemus fabiani", 
 "^ot:treebaseOTUId": "Tl240504"
 }, 
 "otu336480": {
-"^ot:altLabel": "Anolis poncensis", 
 "^ot:originalLabel": "Anolis poncensis TJ", 
 "^ot:ottId": 118839, 
+"^ot:ottTaxonName": "Anolis poncensis", 
 "^ot:treebaseOTUId": "Tl240505"
 }, 
 "otu336481": {
@@ -3452,9 +3511,9 @@
 "^ot:treebaseOTUId": "Tl240511"
 }, 
 "otu336487": {
-"^ot:altLabel": "Anolis woodi", 
 "^ot:originalLabel": "Anolis woodi NQ REG", 
 "^ot:ottId": 346857, 
+"^ot:ottTaxonName": "Anolis woodi", 
 "^ot:treebaseOTUId": "Tl240512"
 }, 
 "otu336488": {
@@ -3470,9 +3529,9 @@
 "^ot:treebaseOTUId": "Tl240514"
 }, 
 "otu336490": {
-"^ot:altLabel": "Liolaemus incaicus", 
 "^ot:originalLabel": "Liolaemus incaicus altic Tif51471DO", 
 "^ot:ottId": 417562, 
+"^ot:ottTaxonName": "Liolaemus incaicus", 
 "^ot:treebaseOTUId": "Tl240515"
 }, 
 "otu336491": {
@@ -3484,17 +3543,19 @@
 "otu336492": {
 "^ot:originalLabel": "Liolaemus torresi", 
 "^ot:ottId": 417577, 
+"^ot:ottTaxonName": "Liolaemus torresi", 
 "^ot:treebaseOTUId": "Tl240517"
 }, 
 "otu336493": {
-"^ot:altLabel": "Anolis lividus", 
 "^ot:originalLabel": "Anolis lividus KN", 
 "^ot:ottId": 764433, 
+"^ot:ottTaxonName": "Anolis lividus", 
 "^ot:treebaseOTUId": "Tl240518"
 }, 
 "otu336494": {
 "^ot:originalLabel": "Draco haematopogon", 
 "^ot:ottId": 741452, 
+"^ot:ottTaxonName": "Draco haematopogon", 
 "^ot:treebaseOTUId": "Tl240519"
 }, 
 "otu336495": {
@@ -3504,14 +3565,15 @@
 "^ot:treebaseOTUId": "Tl240520"
 }, 
 "otu336496": {
-"^ot:altLabel": "Draco spilopterus", 
 "^ot:originalLabel": "Draco spilopterus Maragondon", 
 "^ot:ottId": 1091394, 
+"^ot:ottTaxonName": "Draco spilopterus", 
 "^ot:treebaseOTUId": "Tl240521"
 }, 
 "otu336497": {
 "^ot:originalLabel": "Draco quinquefasciatus", 
 "^ot:ottId": 217745, 
+"^ot:ottTaxonName": "Draco quinquefasciatus", 
 "^ot:treebaseOTUId": "Tl240522"
 }, 
 "otu336498": {
@@ -3529,6 +3591,7 @@
 "otu336500": {
 "^ot:originalLabel": "Liolaemus robertmertensi", 
 "^ot:ottId": 253244, 
+"^ot:ottTaxonName": "Liolaemus robertmertensi", 
 "^ot:treebaseOTUId": "Tl240525"
 }, 
 "otu336501": {
@@ -3556,15 +3619,15 @@
 "^ot:treebaseOTUId": "Tl240529"
 }, 
 "otu336505": {
-"^ot:altLabel": "Anolis inderenae", 
 "^ot:originalLabel": "Phenacosaurus inderanae TJ", 
 "^ot:ottId": 632160, 
+"^ot:ottTaxonName": "Anolis inderenae", 
 "^ot:treebaseOTUId": "Tl240530"
 }, 
 "otu336506": {
-"^ot:altLabel": "Anolis guazuma", 
 "^ot:originalLabel": "Anolis guazuma 1640", 
 "^ot:ottId": 561764, 
+"^ot:ottTaxonName": "Anolis guazuma", 
 "^ot:treebaseOTUId": "Tl240531"
 }, 
 "otu336507": {
@@ -3574,9 +3637,9 @@
 "^ot:treebaseOTUId": "Tl240532"
 }, 
 "otu336508": {
-"^ot:altLabel": "Anolis barbouri", 
 "^ot:originalLabel": "Chamaeleolis barbouri TJ99", 
 "^ot:ottId": 769053, 
+"^ot:ottTaxonName": "Anolis barbouri", 
 "^ot:treebaseOTUId": "Tl240533"
 }, 
 "otu336509": {
@@ -3588,12 +3651,13 @@
 "otu336510": {
 "^ot:originalLabel": "Draco palawanensis", 
 "^ot:ottId": 564907, 
+"^ot:ottTaxonName": "Draco palawanensis", 
 "^ot:treebaseOTUId": "Tl240535"
 }, 
 "otu336511": {
-"^ot:altLabel": "Anolis ernestwilliamsi", 
 "^ot:originalLabel": "Anolis ernestwilliamsi REG", 
 "^ot:ottId": 67183, 
+"^ot:ottTaxonName": "Anolis ernestwilliamsi", 
 "^ot:treebaseOTUId": "Tl240536"
 }, 
 "otu336512": {
@@ -3611,6 +3675,7 @@
 "otu336514": {
 "^ot:originalLabel": "Liolaemus irregularis", 
 "^ot:ottId": 303446, 
+"^ot:ottTaxonName": "Liolaemus irregularis", 
 "^ot:treebaseOTUId": "Tl240539"
 }, 
 "otu336515": {
@@ -3622,6 +3687,7 @@
 "otu336516": {
 "^ot:originalLabel": "Liolaemus magellanicus", 
 "^ot:ottId": 558501, 
+"^ot:ottTaxonName": "Liolaemus magellanicus", 
 "^ot:treebaseOTUId": "Tl240541"
 }, 
 "otu336517": {
@@ -3631,9 +3697,9 @@
 "^ot:treebaseOTUId": "Tl240542"
 }, 
 "otu336518": {
-"^ot:altLabel": "Draco ornatus", 
 "^ot:originalLabel": "Draco ornatus Bohol", 
 "^ot:ottId": 564910, 
+"^ot:ottTaxonName": "Draco ornatus", 
 "^ot:treebaseOTUId": "Tl240543"
 }, 
 "otu336519": {
@@ -3651,23 +3717,25 @@
 "otu336521": {
 "^ot:originalLabel": "Draco maculatus", 
 "^ot:ottId": 741454, 
+"^ot:ottTaxonName": "Draco maculatus", 
 "^ot:treebaseOTUId": "Tl240546"
 }, 
 "otu336522": {
-"^ot:altLabel": "Draco spilopterus", 
 "^ot:originalLabel": "Draco spilopterus Panay", 
 "^ot:ottId": 1091394, 
+"^ot:ottTaxonName": "Draco spilopterus", 
 "^ot:treebaseOTUId": "Tl240547"
 }, 
 "otu336523": {
-"^ot:altLabel": "Draco volans", 
 "^ot:originalLabel": "Draco volans Java", 
 "^ot:ottId": 217743, 
+"^ot:ottTaxonName": "Draco volans", 
 "^ot:treebaseOTUId": "Tl240548"
 }, 
 "otu336524": {
 "^ot:originalLabel": "Liolaemus cuyanus", 
 "^ot:ottId": 868418, 
+"^ot:ottTaxonName": "Liolaemus cuyanus", 
 "^ot:treebaseOTUId": "Tl240549"
 }, 
 "otu336525": {
@@ -3683,9 +3751,9 @@
 "^ot:treebaseOTUId": "Tl240551"
 }, 
 "otu336527": {
-"^ot:altLabel": "Anolis limifrons", 
 "^ot:originalLabel": "Anolis limifrons KV REG", 
 "^ot:ottId": 245842, 
+"^ot:ottTaxonName": "Anolis limifrons", 
 "^ot:treebaseOTUId": "Tl240552"
 }, 
 "otu336528": {
@@ -3695,9 +3763,9 @@
 "^ot:treebaseOTUId": "Tl240553"
 }, 
 "otu336529": {
-"^ot:altLabel": "Anolis humilis", 
 "^ot:originalLabel": "Anolis humilis KN", 
 "^ot:ottId": 967569, 
+"^ot:ottTaxonName": "Anolis humilis", 
 "^ot:treebaseOTUId": "Tl240554"
 }, 
 "otu336530": {
@@ -3709,6 +3777,7 @@
 "otu336531": {
 "^ot:originalLabel": "Liolaemus nitidus", 
 "^ot:ottId": 827688, 
+"^ot:ottTaxonName": "Liolaemus nitidus", 
 "^ot:treebaseOTUId": "Tl240556"
 }, 
 "otu336532": {
@@ -3724,15 +3793,15 @@
 "^ot:treebaseOTUId": "Tl240558"
 }, 
 "otu336534": {
-"^ot:altLabel": "Anolis cooki", 
 "^ot:originalLabel": "Anolis cooki TJ", 
 "^ot:ottId": 67187, 
+"^ot:ottTaxonName": "Anolis cooki", 
 "^ot:treebaseOTUId": "Tl240559"
 }, 
 "otu336535": {
-"^ot:altLabel": "Anolis heterodermus", 
 "^ot:originalLabel": "Phenacosaurus heteroderma TJ", 
 "^ot:ottId": 290133, 
+"^ot:ottTaxonName": "Anolis heterodermus", 
 "^ot:treebaseOTUId": "Tl240560"
 }, 
 "otu336536": {
@@ -3748,9 +3817,9 @@
 "^ot:treebaseOTUId": "Tl240562"
 }, 
 "otu336538": {
-"^ot:altLabel": "Anolis oporinus", 
 "^ot:originalLabel": "Anolis oporinus KN", 
 "^ot:ottId": 724793, 
+"^ot:ottTaxonName": "Anolis oporinus", 
 "^ot:treebaseOTUId": "Tl240563"
 }, 
 "otu336539": {
@@ -3760,15 +3829,15 @@
 "^ot:treebaseOTUId": "Tl240564"
 }, 
 "otu336540": {
-"^ot:altLabel": "Draco cristatellus", 
 "^ot:originalLabel": "Draco cristatellus Sarawak", 
 "^ot:ottId": 564915, 
+"^ot:ottTaxonName": "Draco cristatellus", 
 "^ot:treebaseOTUId": "Tl240565"
 }, 
 "otu336541": {
-"^ot:altLabel": "Anolis grahami", 
 "^ot:originalLabel": "Anolis grahami 11385797 TJ", 
 "^ot:ottId": 245841, 
+"^ot:ottTaxonName": "Anolis grahami", 
 "^ot:treebaseOTUId": "Tl240566"
 }, 
 "otu336542": {
@@ -3790,15 +3859,15 @@
 "^ot:treebaseOTUId": "Tl240569"
 }, 
 "otu336545": {
-"^ot:altLabel": "Anolis isthmicus", 
 "^ot:originalLabel": "Anolis isthmicus KN", 
 "^ot:ottId": 426297, 
+"^ot:ottTaxonName": "Anolis isthmicus", 
 "^ot:treebaseOTUId": "Tl240570"
 }, 
 "otu336546": {
-"^ot:altLabel": "Anolis aeneus", 
 "^ot:originalLabel": "Anolis aeneus 3342321 TJ99", 
 "^ot:ottId": 441759, 
+"^ot:ottTaxonName": "Anolis aeneus", 
 "^ot:treebaseOTUId": "Tl240571"
 }, 
 "otu336547": {
@@ -3814,9 +3883,9 @@
 "^ot:treebaseOTUId": "Tl240573"
 }, 
 "otu336549": {
-"^ot:altLabel": "Anolis bahorucoensis", 
 "^ot:originalLabel": "Anolis bahorucoensis TJ99", 
 "^ot:ottId": 441761, 
+"^ot:ottTaxonName": "Anolis bahorucoensis", 
 "^ot:treebaseOTUId": "Tl240574"
 }, 
 "otu336550": {
@@ -3838,9 +3907,9 @@
 "^ot:treebaseOTUId": "Tl240577"
 }, 
 "otu336553": {
-"^ot:altLabel": "Anolis tropidonotus", 
 "^ot:originalLabel": "Anolis tropidonotus 11998KN", 
 "^ot:ottId": 10227, 
+"^ot:ottTaxonName": "Anolis tropidonotus", 
 "^ot:treebaseOTUId": "Tl240578"
 }, 
 "otu336554": {
@@ -3852,16 +3921,19 @@
 "otu336555": {
 "^ot:originalLabel": "Liolaemus albiceps", 
 "^ot:ottId": 241382, 
+"^ot:ottTaxonName": "Liolaemus albiceps", 
 "^ot:treebaseOTUId": "Tl240580"
 }, 
 "otu336556": {
 "^ot:originalLabel": "Liolaemus ruibali", 
 "^ot:ottId": 407833, 
+"^ot:ottTaxonName": "Liolaemus ruibali", 
 "^ot:treebaseOTUId": "Tl240581"
 }, 
 "otu336557": {
 "^ot:originalLabel": "Liolaemus chiliensis", 
 "^ot:ottId": 514954, 
+"^ot:ottTaxonName": "Liolaemus chiliensis", 
 "^ot:treebaseOTUId": "Tl240582"
 }, 
 "otu336558": {
@@ -3877,9 +3949,9 @@
 "^ot:treebaseOTUId": "Tl240584"
 }, 
 "otu336560": {
-"^ot:altLabel": "Anolis maynardi", 
 "^ot:originalLabel": "Anolis maynardi TJ99", 
 "^ot:ottId": 492039, 
+"^ot:ottTaxonName": "Anolis maynardi", 
 "^ot:treebaseOTUId": "Tl240585"
 }, 
 "otu336561": {
@@ -3889,26 +3961,27 @@
 "^ot:treebaseOTUId": "Tl240586"
 }, 
 "otu336562": {
-"^ot:altLabel": "Anolis nubilus", 
 "^ot:originalLabel": "Anolis nubilus 1077", 
 "^ot:ottId": 740582, 
+"^ot:ottTaxonName": "Anolis nubilus", 
 "^ot:treebaseOTUId": "Tl240587"
 }, 
 "otu336563": {
 "^ot:originalLabel": "Liolaemus molinai", 
 "^ot:ottId": 13031, 
+"^ot:ottTaxonName": "Liolaemus molinai", 
 "^ot:treebaseOTUId": "Tl240588"
 }, 
 "otu336564": {
-"^ot:altLabel": "Anolis crassulus", 
 "^ot:originalLabel": "Anolis crassulus COMP", 
 "^ot:ottId": 494007, 
+"^ot:ottTaxonName": "Anolis crassulus", 
 "^ot:treebaseOTUId": "Tl240589"
 }, 
 "otu336565": {
-"^ot:altLabel": "Anolis etheridgei", 
 "^ot:originalLabel": "Anolis etheridgei TJ99", 
 "^ot:ottId": 967567, 
+"^ot:ottTaxonName": "Anolis etheridgei", 
 "^ot:treebaseOTUId": "Tl240590"
 }, 
 "otu336566": {
@@ -3926,6 +3999,7 @@
 "otu336568": {
 "^ot:originalLabel": "Draco obscurus", 
 "^ot:ottId": 741465, 
+"^ot:ottTaxonName": "Draco obscurus", 
 "^ot:treebaseOTUId": "Tl240593"
 }, 
 "otu336569": {
@@ -3941,9 +4015,9 @@
 "^ot:treebaseOTUId": "Tl240595"
 }, 
 "otu336571": {
-"^ot:altLabel": "Anolis smaragdinus", 
 "^ot:originalLabel": "Anolis smaragdinus JZ TJ", 
 "^ot:ottId": 456208, 
+"^ot:ottTaxonName": "Anolis smaragdinus", 
 "^ot:treebaseOTUId": "Tl240596"
 }, 
 "otu336572": {
@@ -3959,9 +4033,9 @@
 "^ot:treebaseOTUId": "Tl240598"
 }, 
 "otu336574": {
-"^ot:altLabel": "Liolaemus andinus", 
 "^ot:originalLabel": "Liolaemus andinus 2", 
 "^ot:ottId": 533066, 
+"^ot:ottTaxonName": "Liolaemus andinus", 
 "^ot:treebaseOTUId": "Tl240599"
 }, 
 "otu336575": {
@@ -3973,6 +4047,7 @@
 "otu336576": {
 "^ot:originalLabel": "Liolaemus josephorum", 
 "^ot:ottId": 316639, 
+"^ot:ottTaxonName": "Liolaemus josephorum", 
 "^ot:treebaseOTUId": "Tl240601"
 }, 
 "otu336577": {
@@ -3994,9 +4069,9 @@
 "^ot:treebaseOTUId": "Tl240604"
 }, 
 "otu336580": {
-"^ot:altLabel": "Anolis sericeus", 
 "^ot:originalLabel": "Anolis sericeus 7069KN", 
 "^ot:ottId": 62031, 
+"^ot:ottTaxonName": "Anolis sericeus", 
 "^ot:treebaseOTUId": "Tl240605"
 }, 
 "otu336581": {
@@ -4012,9 +4087,9 @@
 "^ot:treebaseOTUId": "Tl240607"
 }, 
 "otu336583": {
-"^ot:altLabel": "Anolis ophiolepis", 
 "^ot:originalLabel": "Anolis ophiolepis 1802 TJ99", 
 "^ot:ottId": 818463, 
+"^ot:ottTaxonName": "Anolis ophiolepis", 
 "^ot:treebaseOTUId": "Tl240608"
 }, 
 "otu336584": {
@@ -4034,9 +4109,9 @@
 "^ot:treebaseOTUId": "Tl240611"
 }, 
 "otu336587": {
-"^ot:altLabel": "Anolis agassizi", 
 "^ot:originalLabel": "Anolis agassizi 3342325 TJ99", 
 "^ot:ottId": 352057, 
+"^ot:ottTaxonName": "Anolis agassizi", 
 "^ot:treebaseOTUId": "Tl240612"
 }, 
 "otu336588": {
@@ -4052,9 +4127,9 @@
 "^ot:treebaseOTUId": "Tl240614"
 }, 
 "otu336590": {
-"^ot:altLabel": "Anolis roquet", 
 "^ot:originalLabel": "Anolis roquet TJ", 
 "^ot:ottId": 240143, 
+"^ot:ottTaxonName": "Anolis roquet", 
 "^ot:treebaseOTUId": "Tl240615"
 }, 
 "otu336591": {
@@ -4064,9 +4139,9 @@
 "^ot:treebaseOTUId": "Tl240616"
 }, 
 "otu336592": {
-"^ot:altLabel": "Draco boschmai", 
 "^ot:originalLabel": "Draco boschmai Sumbawa", 
 "^ot:ottId": 938893, 
+"^ot:ottTaxonName": "Draco boschmai", 
 "^ot:treebaseOTUId": "Tl240617"
 }, 
 "otu336593": {
@@ -4088,15 +4163,15 @@
 "^ot:treebaseOTUId": "Tl240620"
 }, 
 "otu336596": {
-"^ot:altLabel": "Draco spilopterus", 
 "^ot:originalLabel": "Draco spilopterus Isarog", 
 "^ot:ottId": 1091394, 
+"^ot:ottTaxonName": "Draco spilopterus", 
 "^ot:treebaseOTUId": "Tl240621"
 }, 
 "otu336597": {
-"^ot:altLabel": "Anolis hendersoni", 
 "^ot:originalLabel": "Anolis hendersoni TJ", 
 "^ot:ottId": 245844, 
+"^ot:ottTaxonName": "Anolis hendersoni", 
 "^ot:treebaseOTUId": "Tl240622"
 }, 
 "otu336598": {
@@ -4126,12 +4201,13 @@
 "otu336602": {
 "^ot:originalLabel": "Liolaemus multimaculatus", 
 "^ot:ottId": 827693, 
+"^ot:ottTaxonName": "Liolaemus multimaculatus", 
 "^ot:treebaseOTUId": "Tl240627"
 }, 
 "otu336603": {
-"^ot:altLabel": "Anolis aliniger", 
 "^ot:originalLabel": "Anolis aliniger TJ99", 
 "^ot:ottId": 459161, 
+"^ot:ottTaxonName": "Anolis aliniger", 
 "^ot:treebaseOTUId": "Tl240628"
 }, 
 "otu336604": {
@@ -4143,6 +4219,7 @@
 "otu336605": {
 "^ot:originalLabel": "Liolaemus coeruleus", 
 "^ot:ottId": 868422, 
+"^ot:ottTaxonName": "Liolaemus coeruleus", 
 "^ot:treebaseOTUId": "Tl240630"
 }, 
 "otu336606": {
@@ -4158,26 +4235,27 @@
 "^ot:treebaseOTUId": "Tl240632"
 }, 
 "otu336608": {
-"^ot:altLabel": "Anolis noblei", 
 "^ot:originalLabel": "Anolis noblei TJ", 
 "^ot:ottId": 640479, 
+"^ot:ottTaxonName": "Anolis noblei", 
 "^ot:treebaseOTUId": "Tl240633"
 }, 
 "otu336609": {
 "^ot:originalLabel": "Liolaemus capillitas", 
 "^ot:ottId": 878271, 
+"^ot:ottTaxonName": "Liolaemus capillitas", 
 "^ot:treebaseOTUId": "Tl240634"
 }, 
 "otu336610": {
-"^ot:altLabel": "Anolis onca", 
 "^ot:originalLabel": "Anolis onca 1154", 
 "^ot:ottId": 853251, 
+"^ot:ottTaxonName": "Anolis onca", 
 "^ot:treebaseOTUId": "Tl240635"
 }, 
 "otu336611": {
-"^ot:altLabel": "Liolaemus riojanus", 
 "^ot:originalLabel": "Liolaemus riojanus FBC38", 
 "^ot:ottId": 338704, 
+"^ot:ottTaxonName": "Liolaemus riojanus", 
 "^ot:treebaseOTUId": "Tl240636"
 }, 
 "otu336612": {
@@ -4213,6 +4291,7 @@
 "otu336617": {
 "^ot:originalLabel": "Liolaemus stolzmanni", 
 "^ot:ottId": 338706, 
+"^ot:ottTaxonName": "Liolaemus stolzmanni", 
 "^ot:treebaseOTUId": "Tl240642"
 }, 
 "otu336618": {
@@ -4222,15 +4301,15 @@
 "^ot:treebaseOTUId": "Tl240643"
 }, 
 "otu336619": {
-"^ot:altLabel": "Anolis vanidicus", 
 "^ot:originalLabel": "Anolis vanidicus TJ", 
 "^ot:ottId": 1018173, 
+"^ot:ottTaxonName": "Anolis vanidicus", 
 "^ot:treebaseOTUId": "Tl240644"
 }, 
 "otu336620": {
-"^ot:altLabel": "Anolis singularis", 
 "^ot:originalLabel": "Anolis singularis TJ", 
 "^ot:ottId": 118840, 
+"^ot:ottTaxonName": "Anolis singularis", 
 "^ot:treebaseOTUId": "Tl240645"
 }, 
 "otu336621": {
@@ -4246,9 +4325,9 @@
 "^ot:treebaseOTUId": "Tl240647"
 }, 
 "otu336623": {
-"^ot:altLabel": "Anolis opalinus", 
 "^ot:originalLabel": "Anolis opalinus KIRI TJ", 
 "^ot:ottId": 901103, 
+"^ot:ottTaxonName": "Anolis opalinus", 
 "^ot:treebaseOTUId": "Tl240648"
 }, 
 "otu336624": {
@@ -4270,14 +4349,15 @@
 "^ot:treebaseOTUId": "Tl240651"
 }, 
 "otu336627": {
-"^ot:altLabel": "Anolis equestris", 
 "^ot:originalLabel": "Anolis equestris TJ99", 
 "^ot:ottId": 967576, 
+"^ot:ottTaxonName": "Anolis equestris", 
 "^ot:treebaseOTUId": "Tl240652"
 }, 
 "otu336628": {
 "^ot:originalLabel": "Liolaemus tenuis", 
 "^ot:ottId": 116295, 
+"^ot:ottTaxonName": "Liolaemus tenuis", 
 "^ot:treebaseOTUId": "Tl240653"
 }, 
 "otu336629": {
@@ -4287,21 +4367,21 @@
 "^ot:treebaseOTUId": "Tl240654"
 }, 
 "otu336630": {
-"^ot:altLabel": "Anolis", 
 "^ot:originalLabel": "Anolis aqbl KN", 
 "^ot:ottId": 705358, 
+"^ot:ottTaxonName": "Anolis", 
 "^ot:treebaseOTUId": "Tl240655"
 }, 
 "otu336631": {
-"^ot:altLabel": "Anolis purpurgularis", 
 "^ot:originalLabel": "Anolis purpurgularis KN", 
 "^ot:ottId": 62043, 
+"^ot:ottTaxonName": "Anolis purpurgularis", 
 "^ot:treebaseOTUId": "Tl240656"
 }, 
 "otu336632": {
-"^ot:altLabel": "Anolis lemurinus", 
 "^ot:originalLabel": "Anolis lemurinus TV REG", 
 "^ot:ottId": 901104, 
+"^ot:ottTaxonName": "Anolis lemurinus", 
 "^ot:treebaseOTUId": "Tl240657"
 }, 
 "otu336633": {
@@ -4317,14 +4397,15 @@
 "^ot:treebaseOTUId": "Tl240659"
 }, 
 "otu336635": {
-"^ot:altLabel": "Anolis chlorocyanus", 
 "^ot:originalLabel": "Anolis chlorocyanus 841r REG", 
 "^ot:ottId": 231469, 
+"^ot:ottTaxonName": "Anolis chlorocyanus", 
 "^ot:treebaseOTUId": "Tl240660"
 }, 
 "otu336636": {
 "^ot:originalLabel": "Liolaemus platei", 
 "^ot:ottId": 812653, 
+"^ot:ottTaxonName": "Liolaemus platei", 
 "^ot:treebaseOTUId": "Tl240661"
 }, 
 "otu336637": {
@@ -4342,18 +4423,19 @@
 "otu336639": {
 "^ot:originalLabel": "Draco bourouniensis", 
 "^ot:ottId": 938889, 
+"^ot:ottTaxonName": "Draco bourouniensis", 
 "^ot:treebaseOTUId": "Tl240664"
 }, 
 "otu336640": {
-"^ot:altLabel": "Anolis alayoni", 
 "^ot:originalLabel": "Anolis alayoni TJ", 
 "^ot:ottId": 941101, 
+"^ot:ottTaxonName": "Anolis alayoni", 
 "^ot:treebaseOTUId": "Tl240665"
 }, 
 "otu336641": {
-"^ot:altLabel": "Anolis utilensis", 
 "^ot:originalLabel": "Anolis utilensis KN", 
 "^ot:ottId": 966597, 
+"^ot:ottTaxonName": "Anolis utilensis", 
 "^ot:treebaseOTUId": "Tl240666"
 }, 
 "otu336642": {
@@ -4407,6 +4489,7 @@
 "otu336650": {
 "^ot:originalLabel": "Liolaemus lemniscatus", 
 "^ot:ottId": 715596, 
+"^ot:ottTaxonName": "Liolaemus lemniscatus", 
 "^ot:treebaseOTUId": "Tl240675"
 }
 }
@@ -4421,9 +4504,15 @@
 "treeById": {
 "tree4997": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "Fig. 1 sup.-ML", 
 "^ot:inGroupClade": "node866076", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node866069", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node866069": {
 "edge866070": {

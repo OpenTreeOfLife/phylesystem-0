@@ -19,48 +19,11 @@
 "@id": "peyotl-validator", 
 "@name": "validate_ot_nexson.py", 
 "@url": "https://github.com/OpenTreeOfLife/peyotl", 
-"@version": "0.0.3a", 
+"@version": "0.0.4a", 
 "invocation": {
-"checksPerformed": [
-"MISSING_MANDATORY_KEY", 
-"MISSING_OPTIONAL_KEY", 
-"UNRECOGNIZED_KEY", 
-"MISSING_LIST_EXPECTED", 
-"DUPLICATING_SINGLETON_KEY", 
-"REFERENCED_ID_NOT_FOUND", 
-"REPEATED_ID", 
-"REPEATED_OTU", 
-"MULTIPLE_ROOT_NODES", 
-"NO_ROOT_NODE", 
-"MULTIPLE_EDGES_FOR_NODES", 
-"CYCLE_DETECTED", 
-"DISCONNECTED_GRAPH_DETECTED", 
-"INCORRECT_ROOT_NODE_LABEL", 
-"TIP_WITHOUT_OTU", 
-"TIP_WITHOUT_OTT_ID", 
-"MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
-"NON_MONOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
-"INVALID_PROPERTY_VALUE", 
-"PROPERTY_VALUE_NOT_USEFUL", 
-"UNRECOGNIZED_PROPERTY_VALUE", 
-"MULTIPLE_TREES", 
-"UNRECOGNIZED_TAG", 
-"CONFLICTING_PROPERTY_VALUES", 
-"NO_TREES", 
-"DEPRECATED_PROPERTY", 
-"UNPARSEABLE_META", 
-"UNREACHABLE_NODE", 
-"INCORRECT_VALUE_TYPE", 
-"MISSING_CRUCIAL_CONTENT"
-], 
 "commandLine": [
 "--embed", 
-"--agent-only", 
-"-e", 
-"../mig-phyelesystem-scratch/2750/validation.json", 
-"-o", 
-"../mig-phyelesystem-scratch/2750/final.json", 
-"../mig-phyelesystem-scratch/2750/v1.2.1-2750.json"
+"--agent-only"
 ], 
 "otherProperty": [
 {
@@ -76,18 +39,26 @@
 }
 ]
 }, 
+"^ot:annotationEvents": {
+"annotation": []
+}, 
+"^ot:candidateTreeForSynthesis": [], 
 "^ot:curatorName": "Dail Laughinghouse", 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S10182"
 }, 
-"^ot:focalClade": 1937055, 
+"^ot:focalClade": 769061, 
 "^ot:focalCladeOTTTaxonName": "Botryococcus", 
+"^ot:messages": {
+"message": []
+}, 
 "^ot:otusElementOrder": [
 "otus2750"
 ], 
 "^ot:studyId": "2750", 
-"^ot:studyPublicationReference": "Weiss T., Johnston J., Fujisawa K., Sumimoto K., Okada S., Chappell J., & Devarenne T. 2010. Phylogenetic Placement, Genome Size, and GC-Content of the Liquid Hydrocarbon Producing Green Microalga Botryococcus Braunii var. Berkeley (Showa) (Chlorophyta). Journal of Phycology, 46(3): 534-540.", 
+"^ot:studyPublicationReference": "Weiss, T., Johnston J., Fujisawa K., Sumimoto K., Okada S., Chappell J., & Devarenne T. 2010. Phylogenetic Placement, Genome Size, and GC-Content of the Liquid Hydrocarbon Producing Green Microalga Botryococcus Braunii var. Berkeley (Showa) (Chlorophyta). Journal of Phycology 46 (3): 534-540.", 
 "^ot:studyYear": 2010, 
+"^ot:tag": [], 
 "^ot:treesElementOrder": [
 "trees2750"
 ], 
@@ -199,7 +170,7 @@
 "otu410025": {
 "^ot:originalLabel": "Muriella zofingiensis", 
 "^ot:ottId": 763872, 
-"^ot:ottTaxonName": "Muriella zofingiensis", 
+"^ot:ottTaxonName": "Chromochloris zofingiensis", 
 "^ot:treebaseOTUId": "Tl266433"
 }, 
 "otu410026": {
@@ -275,7 +246,7 @@
 "otu410038": {
 "^ot:originalLabel": "Chlorella mirabilis", 
 "^ot:ottId": 4004448, 
-"^ot:ottTaxonName": "Chlorella mirabilis", 
+"^ot:ottTaxonName": "'Chlorella' mirabilis", 
 "^ot:treebaseOTUId": "Tl266446"
 }, 
 "otu410039": {
@@ -466,6 +437,8 @@
 }, 
 "otu410070": {
 "^ot:originalLabel": "Nannochloris sp. SAG 251-2", 
+"^ot:ottId": 345687, 
+"^ot:ottTaxonName": "Nannochloris sp. SAG 251-2", 
 "^ot:treebaseOTUId": "Tl267275"
 }, 
 "otu410071": {
@@ -523,9 +496,14 @@
 "treeById": {
 "tree6354": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
 "^ot:branchLengthMode": "ot:substitutionCount", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "Fig. 2", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node1105696", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node1105696": {
 "edge1105697": {
@@ -776,9 +754,15 @@
 }, 
 "tree6355": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
 "^ot:branchLengthMode": "ot:substitutionCount", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "Fig. 1", 
+"^ot:inGroupClade": "node1105740", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node1105731", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node1105731": {
 "edge1105732": {

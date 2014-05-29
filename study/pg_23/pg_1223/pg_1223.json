@@ -19,48 +19,11 @@
 "@id": "peyotl-validator", 
 "@name": "validate_ot_nexson.py", 
 "@url": "https://github.com/OpenTreeOfLife/peyotl", 
-"@version": "0.0.3a", 
+"@version": "0.0.4a", 
 "invocation": {
-"checksPerformed": [
-"MISSING_MANDATORY_KEY", 
-"MISSING_OPTIONAL_KEY", 
-"UNRECOGNIZED_KEY", 
-"MISSING_LIST_EXPECTED", 
-"DUPLICATING_SINGLETON_KEY", 
-"REFERENCED_ID_NOT_FOUND", 
-"REPEATED_ID", 
-"REPEATED_OTU", 
-"MULTIPLE_ROOT_NODES", 
-"NO_ROOT_NODE", 
-"MULTIPLE_EDGES_FOR_NODES", 
-"CYCLE_DETECTED", 
-"DISCONNECTED_GRAPH_DETECTED", 
-"INCORRECT_ROOT_NODE_LABEL", 
-"TIP_WITHOUT_OTU", 
-"TIP_WITHOUT_OTT_ID", 
-"MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
-"NON_MONOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
-"INVALID_PROPERTY_VALUE", 
-"PROPERTY_VALUE_NOT_USEFUL", 
-"UNRECOGNIZED_PROPERTY_VALUE", 
-"MULTIPLE_TREES", 
-"UNRECOGNIZED_TAG", 
-"CONFLICTING_PROPERTY_VALUES", 
-"NO_TREES", 
-"DEPRECATED_PROPERTY", 
-"UNPARSEABLE_META", 
-"UNREACHABLE_NODE", 
-"INCORRECT_VALUE_TYPE", 
-"MISSING_CRUCIAL_CONTENT"
-], 
 "commandLine": [
 "--embed", 
-"--agent-only", 
-"-e", 
-"../mig-phyelesystem-scratch/1223/validation.json", 
-"-o", 
-"../mig-phyelesystem-scratch/1223/final.json", 
-"../mig-phyelesystem-scratch/1223/v1.2.1-1223.json"
+"--agent-only"
 ], 
 "otherProperty": [
 {
@@ -76,9 +39,16 @@
 }
 ]
 }, 
+"^ot:annotationEvents": {
+"annotation": []
+}, 
+"^ot:candidateTreeForSynthesis": [], 
 "^ot:curatorName": "bryan drew", 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S10159"
+}, 
+"^ot:messages": {
+"message": []
 }, 
 "^ot:otusElementOrder": [
 "otus1223"
@@ -89,6 +59,7 @@
 }, 
 "^ot:studyPublicationReference": "Hayama M., Nakada T., Hamaji T., & Nozaki H. 2010. Morphology, molecular phylogeny and taxonomy of Gonium maiaprilis sp. nov. (Goniaceae, Chlorophyta) from Japan. Phycologia, 49(3): 221-234.", 
 "^ot:studyYear": 2010, 
+"^ot:tag": [], 
 "^ot:treesElementOrder": [
 "trees1223"
 ], 
@@ -96,9 +67,9 @@
 "otus1223": {
 "otuById": {
 "otu233515": {
-"^ot:altLabel": "Gonium pectorale", 
 "^ot:originalLabel": "Gonium pectorale ColemanStrain16", 
 "^ot:ottId": 361837, 
+"^ot:ottTaxonName": "Gonium pectorale", 
 "^ot:treebaseOTUId": "Tl261571"
 }, 
 "otu233516": {
@@ -212,9 +183,9 @@
 "^ot:treebaseOTUId": "Tl261592"
 }, 
 "otu233537": {
-"^ot:altLabel": "Gonium multicoccum", 
 "^ot:originalLabel": "Gonium multicoccum UTEX 783", 
 "^ot:ottId": 256145, 
+"^ot:ottTaxonName": "Gonium multicoccum", 
 "^ot:treebaseOTUId": "Tl261593"
 }, 
 "otu233538": {
@@ -275,8 +246,14 @@
 "treeById": {
 "tree2465": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "Fig. 21", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node566900", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node566900": {
 "edge566901": {

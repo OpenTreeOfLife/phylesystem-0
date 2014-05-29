@@ -19,48 +19,11 @@
 "@id": "peyotl-validator", 
 "@name": "validate_ot_nexson.py", 
 "@url": "https://github.com/OpenTreeOfLife/peyotl", 
-"@version": "0.0.3a", 
+"@version": "0.0.4a", 
 "invocation": {
-"checksPerformed": [
-"MISSING_MANDATORY_KEY", 
-"MISSING_OPTIONAL_KEY", 
-"UNRECOGNIZED_KEY", 
-"MISSING_LIST_EXPECTED", 
-"DUPLICATING_SINGLETON_KEY", 
-"REFERENCED_ID_NOT_FOUND", 
-"REPEATED_ID", 
-"REPEATED_OTU", 
-"MULTIPLE_ROOT_NODES", 
-"NO_ROOT_NODE", 
-"MULTIPLE_EDGES_FOR_NODES", 
-"CYCLE_DETECTED", 
-"DISCONNECTED_GRAPH_DETECTED", 
-"INCORRECT_ROOT_NODE_LABEL", 
-"TIP_WITHOUT_OTU", 
-"TIP_WITHOUT_OTT_ID", 
-"MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
-"NON_MONOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
-"INVALID_PROPERTY_VALUE", 
-"PROPERTY_VALUE_NOT_USEFUL", 
-"UNRECOGNIZED_PROPERTY_VALUE", 
-"MULTIPLE_TREES", 
-"UNRECOGNIZED_TAG", 
-"CONFLICTING_PROPERTY_VALUES", 
-"NO_TREES", 
-"DEPRECATED_PROPERTY", 
-"UNPARSEABLE_META", 
-"UNREACHABLE_NODE", 
-"INCORRECT_VALUE_TYPE", 
-"MISSING_CRUCIAL_CONTENT"
-], 
 "commandLine": [
 "--embed", 
-"--agent-only", 
-"-e", 
-"../mig-phyelesystem-scratch/2335/validation.json", 
-"-o", 
-"../mig-phyelesystem-scratch/2335/final.json", 
-"../mig-phyelesystem-scratch/2335/v1.2.1-2335.json"
+"--agent-only"
 ], 
 "otherProperty": [
 {
@@ -76,12 +39,19 @@
 }
 ]
 }, 
+"^ot:annotationEvents": {
+"annotation": []
+}, 
+"^ot:candidateTreeForSynthesis": [], 
 "^ot:curatorName": "Chris Owen", 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S12644"
 }, 
 "^ot:focalClade": 160831, 
 "^ot:focalCladeOTTTaxonName": "Oplurus", 
+"^ot:messages": {
+"message": []
+}, 
 "^ot:otusElementOrder": [
 "otus2335"
 ], 
@@ -89,8 +59,9 @@
 "^ot:studyPublication": {
 "@href": "http://dx.doi.org/10.1111/j.1365-294X.2012.05651.x"
 }, 
-"^ot:studyPublicationReference": "Chan L.M., Choi D., Raselimanana A.P., Rakotondravony H.E., & Yoder A.D. 2012. Defining spatial and temporal patterns of phylogeographic structure in Madagascars iguanid lizards (genus Oplurus). Molecular Ecology 21: 3839-3851.", 
+"^ot:studyPublicationReference": "Chan, L.M., Choi D., Raselimanana A.P., Rakotondravony H.E., & Yoder A.D. 2012. Defining spatial and temporal patterns of phylogeographic structure in Madagascar's iguanid lizards (genus Oplurus). Molecular Ecology 21 (15): 3839-3851.", 
 "^ot:studyYear": 2012, 
+"^ot:tag": [], 
 "^ot:treesElementOrder": [
 "trees2335"
 ], 
@@ -98,9 +69,9 @@
 "otus2335": {
 "otuById": {
 "otu331018": {
-"^ot:altLabel": "Oplurus cyclurus", 
 "^ot:originalLabel": "Oplurus cyclurus HER3586b", 
 "^ot:ottId": 32961, 
+"^ot:ottTaxonName": "Oplurus cyclurus", 
 "^ot:treebaseOTUId": "Tl787331"
 }, 
 "otu331019": {
@@ -110,33 +81,33 @@
 "^ot:treebaseOTUId": "Tl787332"
 }, 
 "otu331020": {
-"^ot:altLabel": "Oplurus cuvieri", 
 "^ot:originalLabel": "Oplurus cuvieri HER3107a", 
 "^ot:ottId": 606176, 
+"^ot:ottTaxonName": "Oplurus cuvieri", 
 "^ot:treebaseOTUId": "Tl787333"
 }, 
 "otu331021": {
-"^ot:altLabel": "Oplurus cyclurus", 
 "^ot:originalLabel": "Oplurus cyclurus APR4963b", 
 "^ot:ottId": 32961, 
+"^ot:ottTaxonName": "Oplurus cyclurus", 
 "^ot:treebaseOTUId": "Tl787334"
 }, 
 "otu331022": {
-"^ot:altLabel": "Oplurus cuvieri", 
 "^ot:originalLabel": "Oplurus cuvieri APR0113a", 
 "^ot:ottId": 606176, 
+"^ot:ottTaxonName": "Oplurus cuvieri", 
 "^ot:treebaseOTUId": "Tl787335"
 }, 
 "otu331023": {
-"^ot:altLabel": "Oplurus cyclurus", 
 "^ot:originalLabel": "Oplurus cyclurus HER3377b", 
 "^ot:ottId": 32961, 
+"^ot:ottTaxonName": "Oplurus cyclurus", 
 "^ot:treebaseOTUId": "Tl787336"
 }, 
 "otu331024": {
-"^ot:altLabel": "Oplurus quadrimaculatus", 
 "^ot:originalLabel": "Oplurus quadrimaculatus APR6331a", 
 "^ot:ottId": 606179, 
+"^ot:ottTaxonName": "Oplurus quadrimaculatus", 
 "^ot:treebaseOTUId": "Tl787337"
 }, 
 "otu331025": {
@@ -146,9 +117,9 @@
 "^ot:treebaseOTUId": "Tl787338"
 }, 
 "otu331026": {
-"^ot:altLabel": "Oplurus cuvieri", 
 "^ot:originalLabel": "Oplurus cuvieri RD01244b", 
 "^ot:ottId": 606176, 
+"^ot:ottTaxonName": "Oplurus cuvieri", 
 "^ot:treebaseOTUId": "Tl787339"
 }, 
 "otu331027": {
@@ -158,21 +129,21 @@
 "^ot:treebaseOTUId": "Tl787340"
 }, 
 "otu331028": {
-"^ot:altLabel": "Oplurus grandidieri", 
 "^ot:originalLabel": "Oplurus grandidieri HER4291b", 
 "^ot:ottId": 557742, 
+"^ot:ottTaxonName": "Oplurus grandidieri", 
 "^ot:treebaseOTUId": "Tl787341"
 }, 
 "otu331029": {
-"^ot:altLabel": "Oplurus quadrimaculatus", 
 "^ot:originalLabel": "Oplurus quadrimaculatus APR6331b", 
 "^ot:ottId": 606179, 
+"^ot:ottTaxonName": "Oplurus quadrimaculatus", 
 "^ot:treebaseOTUId": "Tl787342"
 }, 
 "otu331030": {
-"^ot:altLabel": "Oplurus quadrimaculatus", 
 "^ot:originalLabel": "Oplurus quadrimaculatus HER3681b", 
 "^ot:ottId": 606179, 
+"^ot:ottTaxonName": "Oplurus quadrimaculatus", 
 "^ot:treebaseOTUId": "Tl787343"
 }, 
 "otu331031": {
@@ -182,9 +153,9 @@
 "^ot:treebaseOTUId": "Tl787344"
 }, 
 "otu331032": {
-"^ot:altLabel": "Oplurus quadrimaculatus", 
 "^ot:originalLabel": "Oplurus quadrimaculatus HER3699a", 
 "^ot:ottId": 606179, 
+"^ot:ottTaxonName": "Oplurus quadrimaculatus", 
 "^ot:treebaseOTUId": "Tl787345"
 }, 
 "otu331033": {
@@ -194,21 +165,21 @@
 "^ot:treebaseOTUId": "Tl787346"
 }, 
 "otu331034": {
-"^ot:altLabel": "Chalarodon madagascariensis", 
 "^ot:originalLabel": "Chalarodon madagascariensis APR4996b", 
 "^ot:ottId": 32979, 
+"^ot:ottTaxonName": "Chalarodon madagascariensis", 
 "^ot:treebaseOTUId": "Tl787347"
 }, 
 "otu331035": {
-"^ot:altLabel": "Oplurus grandidieri", 
 "^ot:originalLabel": "Oplurus grandidieri HER4291a", 
 "^ot:ottId": 557742, 
+"^ot:ottTaxonName": "Oplurus grandidieri", 
 "^ot:treebaseOTUId": "Tl787348"
 }, 
 "otu331036": {
-"^ot:altLabel": "Oplurus cyclurus", 
 "^ot:originalLabel": "Oplurus cyclurus APR4995b", 
 "^ot:ottId": 32961, 
+"^ot:ottTaxonName": "Oplurus cyclurus", 
 "^ot:treebaseOTUId": "Tl787349"
 }, 
 "otu331037": {
@@ -218,15 +189,15 @@
 "^ot:treebaseOTUId": "Tl787350"
 }, 
 "otu331038": {
-"^ot:altLabel": "Chalarodon madagascariensis", 
 "^ot:originalLabel": "Chalarodon madagascariensis APR2323b", 
 "^ot:ottId": 32979, 
+"^ot:ottTaxonName": "Chalarodon madagascariensis", 
 "^ot:treebaseOTUId": "Tl787351"
 }, 
 "otu331039": {
-"^ot:altLabel": "Chalarodon madagascariensis", 
 "^ot:originalLabel": "Chalarodon madagascariensis APR4830b", 
 "^ot:ottId": 32979, 
+"^ot:ottTaxonName": "Chalarodon madagascariensis", 
 "^ot:treebaseOTUId": "Tl787352"
 }, 
 "otu331040": {
@@ -236,9 +207,9 @@
 "^ot:treebaseOTUId": "Tl787353"
 }, 
 "otu331041": {
-"^ot:altLabel": "Oplurus cuvieri", 
 "^ot:originalLabel": "Oplurus cuvieri HER2901a", 
 "^ot:ottId": 606176, 
+"^ot:ottTaxonName": "Oplurus cuvieri", 
 "^ot:treebaseOTUId": "Tl787354"
 }, 
 "otu331042": {
@@ -254,15 +225,15 @@
 "^ot:treebaseOTUId": "Tl787356"
 }, 
 "otu331044": {
-"^ot:altLabel": "Oplurus cyclurus", 
 "^ot:originalLabel": "Oplurus cyclurus HER3377a", 
 "^ot:ottId": 32961, 
+"^ot:ottTaxonName": "Oplurus cyclurus", 
 "^ot:treebaseOTUId": "Tl787357"
 }, 
 "otu331045": {
-"^ot:altLabel": "Oplurus cyclurus", 
 "^ot:originalLabel": "Oplurus cyclurus APR1253a", 
 "^ot:ottId": 32961, 
+"^ot:ottTaxonName": "Oplurus cyclurus", 
 "^ot:treebaseOTUId": "Tl787358"
 }, 
 "otu331046": {
@@ -272,45 +243,45 @@
 "^ot:treebaseOTUId": "Tl787359"
 }, 
 "otu331047": {
-"^ot:altLabel": "Oplurus grandidieri", 
 "^ot:originalLabel": "Oplurus grandidieri HER4289a", 
 "^ot:ottId": 557742, 
+"^ot:ottTaxonName": "Oplurus grandidieri", 
 "^ot:treebaseOTUId": "Tl787360"
 }, 
 "otu331048": {
-"^ot:altLabel": "Oplurus cuvieri", 
 "^ot:originalLabel": "Oplurus cuvieri HER4066b", 
 "^ot:ottId": 606176, 
+"^ot:ottTaxonName": "Oplurus cuvieri", 
 "^ot:treebaseOTUId": "Tl787361"
 }, 
 "otu331049": {
-"^ot:altLabel": "Oplurus cuvieri", 
 "^ot:originalLabel": "Oplurus cuvieri APR0113b", 
 "^ot:ottId": 606176, 
+"^ot:ottTaxonName": "Oplurus cuvieri", 
 "^ot:treebaseOTUId": "Tl787362"
 }, 
 "otu331050": {
-"^ot:altLabel": "Oplurus quadrimaculatus", 
 "^ot:originalLabel": "Oplurus quadrimaculatus HER3681a", 
 "^ot:ottId": 606179, 
+"^ot:ottTaxonName": "Oplurus quadrimaculatus", 
 "^ot:treebaseOTUId": "Tl787363"
 }, 
 "otu331051": {
-"^ot:altLabel": "Oplurus cuvieri", 
 "^ot:originalLabel": "Oplurus cuvieri HER2650a", 
 "^ot:ottId": 606176, 
+"^ot:ottTaxonName": "Oplurus cuvieri", 
 "^ot:treebaseOTUId": "Tl787364"
 }, 
 "otu331052": {
-"^ot:altLabel": "Chalarodon madagascariensis", 
 "^ot:originalLabel": "Chalarodon madagascariensis APR4830a", 
 "^ot:ottId": 32979, 
+"^ot:ottTaxonName": "Chalarodon madagascariensis", 
 "^ot:treebaseOTUId": "Tl787365"
 }, 
 "otu331053": {
-"^ot:altLabel": "Oplurus cyclurus", 
 "^ot:originalLabel": "Oplurus cyclurus APR1253b", 
 "^ot:ottId": 32961, 
+"^ot:ottTaxonName": "Oplurus cyclurus", 
 "^ot:treebaseOTUId": "Tl787366"
 }, 
 "otu331054": {
@@ -320,15 +291,15 @@
 "^ot:treebaseOTUId": "Tl787367"
 }, 
 "otu331055": {
-"^ot:altLabel": "Oplurus grandidieri", 
 "^ot:originalLabel": "Oplurus grandidieri HER4290b", 
 "^ot:ottId": 557742, 
+"^ot:ottTaxonName": "Oplurus grandidieri", 
 "^ot:treebaseOTUId": "Tl787368"
 }, 
 "otu331056": {
-"^ot:altLabel": "Oplurus cuvieri", 
 "^ot:originalLabel": "Oplurus cuvieri APR6196b", 
 "^ot:ottId": 606176, 
+"^ot:ottTaxonName": "Oplurus cuvieri", 
 "^ot:treebaseOTUId": "Tl787369"
 }, 
 "otu331057": {
@@ -344,33 +315,33 @@
 "^ot:treebaseOTUId": "Tl787371"
 }, 
 "otu331059": {
-"^ot:altLabel": "Oplurus saxicola", 
 "^ot:originalLabel": "Oplurus saxicola APR5506a", 
 "^ot:ottId": 32960, 
+"^ot:ottTaxonName": "Oplurus saxicola", 
 "^ot:treebaseOTUId": "Tl787372"
 }, 
 "otu331060": {
-"^ot:altLabel": "Oplurus cyclurus", 
 "^ot:originalLabel": "Oplurus cyclurus HER3586a", 
 "^ot:ottId": 32961, 
+"^ot:ottTaxonName": "Oplurus cyclurus", 
 "^ot:treebaseOTUId": "Tl787373"
 }, 
 "otu331061": {
-"^ot:altLabel": "Chalarodon madagascariensis", 
 "^ot:originalLabel": "Chalarodon madagascariensis APR2323a", 
 "^ot:ottId": 32979, 
+"^ot:ottTaxonName": "Chalarodon madagascariensis", 
 "^ot:treebaseOTUId": "Tl787374"
 }, 
 "otu331062": {
-"^ot:altLabel": "Oplurus grandidieri", 
 "^ot:originalLabel": "Oplurus grandidieri HER4307a", 
 "^ot:ottId": 557742, 
+"^ot:ottTaxonName": "Oplurus grandidieri", 
 "^ot:treebaseOTUId": "Tl787375"
 }, 
 "otu331063": {
-"^ot:altLabel": "Oplurus cuvieri", 
 "^ot:originalLabel": "Oplurus cuvieri RD01244a", 
 "^ot:ottId": 606176, 
+"^ot:ottTaxonName": "Oplurus cuvieri", 
 "^ot:treebaseOTUId": "Tl787376"
 }, 
 "otu331064": {
@@ -392,39 +363,39 @@
 "^ot:treebaseOTUId": "Tl787379"
 }, 
 "otu331067": {
-"^ot:altLabel": "Oplurus cyclurus", 
 "^ot:originalLabel": "Oplurus cyclurus APR4963a", 
 "^ot:ottId": 32961, 
+"^ot:ottTaxonName": "Oplurus cyclurus", 
 "^ot:treebaseOTUId": "Tl787380"
 }, 
 "otu331068": {
-"^ot:altLabel": "Oplurus cyclurus", 
 "^ot:originalLabel": "Oplurus cyclurus APR4854b", 
 "^ot:ottId": 32961, 
+"^ot:ottTaxonName": "Oplurus cyclurus", 
 "^ot:treebaseOTUId": "Tl787381"
 }, 
 "otu331069": {
-"^ot:altLabel": "Oplurus fierinensis", 
 "^ot:originalLabel": "Oplurus fierinensis APR7335b", 
 "^ot:ottId": 1008298, 
+"^ot:ottTaxonName": "Oplurus fierinensis", 
 "^ot:treebaseOTUId": "Tl787382"
 }, 
 "otu331070": {
-"^ot:altLabel": "Oplurus quadrimaculatus", 
 "^ot:originalLabel": "Oplurus quadrimaculatus HER3699b", 
 "^ot:ottId": 606179, 
+"^ot:ottTaxonName": "Oplurus quadrimaculatus", 
 "^ot:treebaseOTUId": "Tl787383"
 }, 
 "otu331071": {
-"^ot:altLabel": "Oplurus grandidieri", 
 "^ot:originalLabel": "Oplurus grandidieri HER4308b", 
 "^ot:ottId": 557742, 
+"^ot:ottTaxonName": "Oplurus grandidieri", 
 "^ot:treebaseOTUId": "Tl787384"
 }, 
 "otu331072": {
-"^ot:altLabel": "Oplurus cyclurus", 
 "^ot:originalLabel": "Oplurus cyclurus APR4854a", 
 "^ot:ottId": 32961, 
+"^ot:ottTaxonName": "Oplurus cyclurus", 
 "^ot:treebaseOTUId": "Tl787385"
 }, 
 "otu331073": {
@@ -434,9 +405,9 @@
 "^ot:treebaseOTUId": "Tl787386"
 }, 
 "otu331074": {
-"^ot:altLabel": "Oplurus cuvieri", 
 "^ot:originalLabel": "Oplurus cuvieri APR7387a", 
 "^ot:ottId": 606176, 
+"^ot:ottTaxonName": "Oplurus cuvieri", 
 "^ot:treebaseOTUId": "Tl787387"
 }, 
 "otu331075": {
@@ -446,9 +417,9 @@
 "^ot:treebaseOTUId": "Tl787388"
 }, 
 "otu331076": {
-"^ot:altLabel": "Oplurus grandidieri", 
 "^ot:originalLabel": "Oplurus grandidieri HER4292a", 
 "^ot:ottId": 557742, 
+"^ot:ottTaxonName": "Oplurus grandidieri", 
 "^ot:treebaseOTUId": "Tl787389"
 }, 
 "otu331077": {
@@ -458,9 +429,9 @@
 "^ot:treebaseOTUId": "Tl787390"
 }, 
 "otu331078": {
-"^ot:altLabel": "Oplurus fierinensis", 
 "^ot:originalLabel": "Oplurus fierinensis APR7335a", 
 "^ot:ottId": 1008298, 
+"^ot:ottTaxonName": "Oplurus fierinensis", 
 "^ot:treebaseOTUId": "Tl787391"
 }, 
 "otu331079": {
@@ -476,9 +447,9 @@
 "^ot:treebaseOTUId": "Tl787393"
 }, 
 "otu331081": {
-"^ot:altLabel": "Oplurus saxicola", 
 "^ot:originalLabel": "Oplurus saxicola APR5675b", 
 "^ot:ottId": 32960, 
+"^ot:ottTaxonName": "Oplurus saxicola", 
 "^ot:treebaseOTUId": "Tl787394"
 }, 
 "otu331082": {
@@ -494,15 +465,15 @@
 "^ot:treebaseOTUId": "Tl787396"
 }, 
 "otu331084": {
-"^ot:altLabel": "Oplurus quadrimaculatus", 
 "^ot:originalLabel": "Oplurus quadrimaculatus HER3682a", 
 "^ot:ottId": 606179, 
+"^ot:ottTaxonName": "Oplurus quadrimaculatus", 
 "^ot:treebaseOTUId": "Tl787397"
 }, 
 "otu331085": {
-"^ot:altLabel": "Oplurus cyclurus", 
 "^ot:originalLabel": "Oplurus cyclurus APR5511a", 
 "^ot:ottId": 32961, 
+"^ot:ottTaxonName": "Oplurus cyclurus", 
 "^ot:treebaseOTUId": "Tl787398"
 }, 
 "otu331086": {
@@ -512,9 +483,9 @@
 "^ot:treebaseOTUId": "Tl787399"
 }, 
 "otu331087": {
-"^ot:altLabel": "Oplurus grandidieri", 
 "^ot:originalLabel": "Oplurus grandidieri HER4308a", 
 "^ot:ottId": 557742, 
+"^ot:ottTaxonName": "Oplurus grandidieri", 
 "^ot:treebaseOTUId": "Tl787400"
 }, 
 "otu331088": {
@@ -536,69 +507,69 @@
 "^ot:treebaseOTUId": "Tl787403"
 }, 
 "otu331091": {
-"^ot:altLabel": "Oplurus grandidieri", 
 "^ot:originalLabel": "Oplurus grandidieri HER4292b", 
 "^ot:ottId": 557742, 
+"^ot:ottTaxonName": "Oplurus grandidieri", 
 "^ot:treebaseOTUId": "Tl787404"
 }, 
 "otu331092": {
-"^ot:altLabel": "Oplurus cyclurus", 
 "^ot:originalLabel": "Oplurus cyclurus APR4995a", 
 "^ot:ottId": 32961, 
+"^ot:ottTaxonName": "Oplurus cyclurus", 
 "^ot:treebaseOTUId": "Tl787405"
 }, 
 "otu331093": {
-"^ot:altLabel": "Oplurus cuvieri", 
 "^ot:originalLabel": "Oplurus cuvieri HER3107b", 
 "^ot:ottId": 606176, 
+"^ot:ottTaxonName": "Oplurus cuvieri", 
 "^ot:treebaseOTUId": "Tl787406"
 }, 
 "otu331094": {
-"^ot:altLabel": "Oplurus cyclurus", 
 "^ot:originalLabel": "Oplurus cyclurus HER3466a", 
 "^ot:ottId": 32961, 
+"^ot:ottTaxonName": "Oplurus cyclurus", 
 "^ot:treebaseOTUId": "Tl787407"
 }, 
 "otu331095": {
-"^ot:altLabel": "Oplurus cuvieri", 
 "^ot:originalLabel": "Oplurus cuvieri HER4066a", 
 "^ot:ottId": 606176, 
+"^ot:ottTaxonName": "Oplurus cuvieri", 
 "^ot:treebaseOTUId": "Tl787408"
 }, 
 "otu331096": {
-"^ot:altLabel": "Oplurus cuvieri", 
 "^ot:originalLabel": "Oplurus cuvieri HER2901b", 
 "^ot:ottId": 606176, 
+"^ot:ottTaxonName": "Oplurus cuvieri", 
 "^ot:treebaseOTUId": "Tl787409"
 }, 
 "otu331097": {
-"^ot:altLabel": "Oplurus cuvieri", 
 "^ot:originalLabel": "Oplurus cuvieri APR7387b", 
 "^ot:ottId": 606176, 
+"^ot:ottTaxonName": "Oplurus cuvieri", 
 "^ot:treebaseOTUId": "Tl787410"
 }, 
 "otu331098": {
-"^ot:altLabel": "Oplurus quadrimaculatus", 
 "^ot:originalLabel": "Oplurus quadrimaculatus APR7336b", 
 "^ot:ottId": 606179, 
+"^ot:ottTaxonName": "Oplurus quadrimaculatus", 
 "^ot:treebaseOTUId": "Tl787411"
 }, 
 "otu331099": {
-"^ot:altLabel": "Oplurus quadrimaculatus", 
 "^ot:originalLabel": "Oplurus quadrimaculatus HER3682b", 
 "^ot:ottId": 606179, 
+"^ot:ottTaxonName": "Oplurus quadrimaculatus", 
 "^ot:treebaseOTUId": "Tl787412"
 }, 
 "otu331100": {
-"^ot:altLabel": "Oplurus saxicola", 
 "^ot:originalLabel": "Oplurus saxicola APR5506b", 
 "^ot:ottId": 32960, 
+"^ot:ottTaxonName": "Oplurus saxicola", 
 "^ot:treebaseOTUId": "Tl787413"
 }, 
 "otu331101": {
-"^ot:altLabel": "Oplurus saxicola", 
 "^ot:originalLabel": "Oplurus saxicola APR5675a", 
 "^ot:ottId": 32960, 
+"^ot:ottTaxonName": "Oplurus saxicola", 
 "^ot:treebaseOTUId": "Tl787414"
 }, 
 "otu331102": {
@@ -608,15 +579,15 @@
 "^ot:treebaseOTUId": "Tl787415"
 }, 
 "otu331103": {
-"^ot:altLabel": "Oplurus cyclurus", 
 "^ot:originalLabel": "Oplurus cyclurus HER3466b", 
 "^ot:ottId": 32961, 
+"^ot:ottTaxonName": "Oplurus cyclurus", 
 "^ot:treebaseOTUId": "Tl787416"
 }, 
 "otu331104": {
-"^ot:altLabel": "Chalarodon madagascariensis", 
 "^ot:originalLabel": "Chalarodon madagascariensis APR4996a", 
 "^ot:ottId": 32979, 
+"^ot:ottTaxonName": "Chalarodon madagascariensis", 
 "^ot:treebaseOTUId": "Tl787417"
 }, 
 "otu331105": {
@@ -626,27 +597,27 @@
 "^ot:treebaseOTUId": "Tl787418"
 }, 
 "otu331106": {
-"^ot:altLabel": "Oplurus cuvieri", 
 "^ot:originalLabel": "Oplurus cuvieri APR6196a", 
 "^ot:ottId": 606176, 
+"^ot:ottTaxonName": "Oplurus cuvieri", 
 "^ot:treebaseOTUId": "Tl787419"
 }, 
 "otu331107": {
-"^ot:altLabel": "Oplurus quadrimaculatus", 
 "^ot:originalLabel": "Oplurus quadrimaculatus APR7336a", 
 "^ot:ottId": 606179, 
+"^ot:ottTaxonName": "Oplurus quadrimaculatus", 
 "^ot:treebaseOTUId": "Tl787420"
 }, 
 "otu331108": {
-"^ot:altLabel": "Oplurus cyclurus", 
 "^ot:originalLabel": "Oplurus cyclurus APR5511b", 
 "^ot:ottId": 32961, 
+"^ot:ottTaxonName": "Oplurus cyclurus", 
 "^ot:treebaseOTUId": "Tl787421"
 }, 
 "otu331109": {
-"^ot:altLabel": "Oplurus grandidieri", 
 "^ot:originalLabel": "Oplurus grandidieri HER4307b", 
 "^ot:ottId": 557742, 
+"^ot:ottTaxonName": "Oplurus grandidieri", 
 "^ot:treebaseOTUId": "Tl787422"
 }, 
 "otu331110": {
@@ -656,9 +627,9 @@
 "^ot:treebaseOTUId": "Tl787423"
 }, 
 "otu331111": {
-"^ot:altLabel": "Oplurus grandidieri", 
 "^ot:originalLabel": "Oplurus grandidieri HER4290a", 
 "^ot:ottId": 557742, 
+"^ot:ottTaxonName": "Oplurus grandidieri", 
 "^ot:treebaseOTUId": "Tl787424"
 }, 
 "otu331112": {
@@ -668,15 +639,15 @@
 "^ot:treebaseOTUId": "Tl787425"
 }, 
 "otu331113": {
-"^ot:altLabel": "Oplurus grandidieri", 
 "^ot:originalLabel": "Oplurus grandidieri HER4289b", 
 "^ot:ottId": 557742, 
+"^ot:ottTaxonName": "Oplurus grandidieri", 
 "^ot:treebaseOTUId": "Tl787426"
 }, 
 "otu331114": {
-"^ot:altLabel": "Oplurus cuvieri", 
 "^ot:originalLabel": "Oplurus cuvieri HER2650b", 
 "^ot:ottId": 606176, 
+"^ot:ottTaxonName": "Oplurus cuvieri", 
 "^ot:treebaseOTUId": "Tl787427"
 }, 
 "otu331115": {
@@ -686,33 +657,33 @@
 "^ot:treebaseOTUId": "Tl787428"
 }, 
 "otu331116": {
-"^ot:altLabel": "Oplurus cyclurus", 
 "^ot:originalLabel": "Oplurus cyclurus HER3733b", 
 "^ot:ottId": 32961, 
+"^ot:ottTaxonName": "Oplurus cyclurus", 
 "^ot:treebaseOTUId": "Tl787429"
 }, 
 "otu331117": {
-"^ot:altLabel": "Oplurus cyclurus", 
 "^ot:originalLabel": "Oplurus cyclurus APR5458b", 
 "^ot:ottId": 32961, 
+"^ot:ottTaxonName": "Oplurus cyclurus", 
 "^ot:treebaseOTUId": "Tl787430"
 }, 
 "otu331118": {
-"^ot:altLabel": "Oplurus cyclurus", 
 "^ot:originalLabel": "Oplurus cyclurus HER3733a", 
 "^ot:ottId": 32961, 
+"^ot:ottTaxonName": "Oplurus cyclurus", 
 "^ot:treebaseOTUId": "Tl787431"
 }, 
 "otu331119": {
-"^ot:altLabel": "Oplurus cuvieri", 
 "^ot:originalLabel": "Oplurus cuvieri HER3123a", 
 "^ot:ottId": 606176, 
+"^ot:ottTaxonName": "Oplurus cuvieri", 
 "^ot:treebaseOTUId": "Tl787432"
 }, 
 "otu331120": {
-"^ot:altLabel": "Oplurus cuvieri", 
 "^ot:originalLabel": "Oplurus cuvieri HER4034b", 
 "^ot:ottId": 606176, 
+"^ot:ottTaxonName": "Oplurus cuvieri", 
 "^ot:treebaseOTUId": "Tl787433"
 }, 
 "otu331121": {
@@ -728,27 +699,27 @@
 "^ot:treebaseOTUId": "Tl787435"
 }, 
 "otu331123": {
-"^ot:altLabel": "Oplurus cuvieri", 
 "^ot:originalLabel": "Oplurus cuvieri HER2900a", 
 "^ot:ottId": 606176, 
+"^ot:ottTaxonName": "Oplurus cuvieri", 
 "^ot:treebaseOTUId": "Tl787436"
 }, 
 "otu331124": {
-"^ot:altLabel": "Oplurus cuvieri", 
 "^ot:originalLabel": "Oplurus cuvieri HER3123b", 
 "^ot:ottId": 606176, 
+"^ot:ottTaxonName": "Oplurus cuvieri", 
 "^ot:treebaseOTUId": "Tl787437"
 }, 
 "otu331125": {
-"^ot:altLabel": "Oplurus cyclurus", 
 "^ot:originalLabel": "Oplurus cyclurus APR5458a", 
 "^ot:ottId": 32961, 
+"^ot:ottTaxonName": "Oplurus cyclurus", 
 "^ot:treebaseOTUId": "Tl787438"
 }, 
 "otu331126": {
-"^ot:altLabel": "Oplurus cuvieri", 
 "^ot:originalLabel": "Oplurus cuvieri HER2900b", 
 "^ot:ottId": 606176, 
+"^ot:ottTaxonName": "Oplurus cuvieri", 
 "^ot:treebaseOTUId": "Tl787439"
 }, 
 "otu331127": {
@@ -764,9 +735,9 @@
 "^ot:treebaseOTUId": "Tl787441"
 }, 
 "otu331129": {
-"^ot:altLabel": "Oplurus cuvieri", 
 "^ot:originalLabel": "Oplurus cuvieri HER2781b", 
 "^ot:ottId": 606176, 
+"^ot:ottTaxonName": "Oplurus cuvieri", 
 "^ot:treebaseOTUId": "Tl787442"
 }, 
 "otu331130": {
@@ -782,15 +753,15 @@
 "^ot:treebaseOTUId": "Tl787444"
 }, 
 "otu331132": {
-"^ot:altLabel": "Oplurus cuvieri", 
 "^ot:originalLabel": "Oplurus cuvieri HER4034a", 
 "^ot:ottId": 606176, 
+"^ot:ottTaxonName": "Oplurus cuvieri", 
 "^ot:treebaseOTUId": "Tl787445"
 }, 
 "otu331133": {
-"^ot:altLabel": "Oplurus cuvieri", 
 "^ot:originalLabel": "Oplurus cuvieri HER2781a", 
 "^ot:ottId": 606176, 
+"^ot:ottTaxonName": "Oplurus cuvieri", 
 "^ot:treebaseOTUId": "Tl787446"
 }, 
 "otu331134": {
@@ -1035,10 +1006,15 @@
 "treeById": {
 "tree4922": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
 "^ot:branchLengthMode": "ot:substitutionCount", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "BI-Ocyc con", 
 "^ot:inGroupClade": "node852984", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node852984", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node852984": {
 "edge852985": {
@@ -1451,10 +1427,15 @@
 }, 
 "tree4923": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
 "^ot:branchLengthMode": "ot:substitutionCount", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "Ocuv con", 
 "^ot:inGroupClade": "node853035", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node853035", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node853035": {
 "edge853036": {
@@ -1995,11 +1976,14 @@
 }, 
 "tree6536": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
 "^ot:branchLengthMode": "ot:time", 
 "^ot:branchLengthTimeUnit": "Myr", 
 "^ot:curatedType": "Time-calibrated species tree (SubsetA ND1)", 
 "^ot:inGroupClade": "node1133410", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node1133409", 
+"^ot:specifiedRoot": "", 
 "^ot:tag": [
 "ingroup added;", 
 "Choose me"

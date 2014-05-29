@@ -19,48 +19,11 @@
 "@id": "peyotl-validator", 
 "@name": "validate_ot_nexson.py", 
 "@url": "https://github.com/OpenTreeOfLife/peyotl", 
-"@version": "0.0.3a", 
+"@version": "0.0.4a", 
 "invocation": {
-"checksPerformed": [
-"MISSING_MANDATORY_KEY", 
-"MISSING_OPTIONAL_KEY", 
-"UNRECOGNIZED_KEY", 
-"MISSING_LIST_EXPECTED", 
-"DUPLICATING_SINGLETON_KEY", 
-"REFERENCED_ID_NOT_FOUND", 
-"REPEATED_ID", 
-"REPEATED_OTU", 
-"MULTIPLE_ROOT_NODES", 
-"NO_ROOT_NODE", 
-"MULTIPLE_EDGES_FOR_NODES", 
-"CYCLE_DETECTED", 
-"DISCONNECTED_GRAPH_DETECTED", 
-"INCORRECT_ROOT_NODE_LABEL", 
-"TIP_WITHOUT_OTU", 
-"TIP_WITHOUT_OTT_ID", 
-"MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
-"NON_MONOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
-"INVALID_PROPERTY_VALUE", 
-"PROPERTY_VALUE_NOT_USEFUL", 
-"UNRECOGNIZED_PROPERTY_VALUE", 
-"MULTIPLE_TREES", 
-"UNRECOGNIZED_TAG", 
-"CONFLICTING_PROPERTY_VALUES", 
-"NO_TREES", 
-"DEPRECATED_PROPERTY", 
-"UNPARSEABLE_META", 
-"UNREACHABLE_NODE", 
-"INCORRECT_VALUE_TYPE", 
-"MISSING_CRUCIAL_CONTENT"
-], 
 "commandLine": [
 "--embed", 
-"--agent-only", 
-"-e", 
-"../mig-phyelesystem-scratch/1923/validation.json", 
-"-o", 
-"../mig-phyelesystem-scratch/1923/final.json", 
-"../mig-phyelesystem-scratch/1923/v1.2.1-1923.json"
+"--agent-only"
 ], 
 "otherProperty": [
 {
@@ -76,15 +39,23 @@
 }
 ]
 }, 
+"^ot:annotationEvents": {
+"annotation": []
+}, 
+"^ot:candidateTreeForSynthesis": [], 
 "^ot:curatorName": "Jiabin Deng", 
 "^ot:focalClade": 641461, 
 "^ot:focalCladeOTTTaxonName": "Panicoideae", 
+"^ot:messages": {
+"message": []
+}, 
 "^ot:otusElementOrder": [
 "otus1923"
 ], 
 "^ot:studyId": "1923", 
 "^ot:studyPublicationReference": "Teerawatananon, A., Jacobs, S. W. L., & Hodkinson, T. R. 2011. Phylogenetics of Panicoideae (Poaceae) based on chloroplast and nuclear DNA sequences. Telopea 13: 115-142.", 
 "^ot:studyYear": 2011, 
+"^ot:tag": [], 
 "^ot:treesElementOrder": [
 "trees1923"
 ], 
@@ -217,7 +188,9 @@
 "^ot:ottTaxonName": "Sehima nervosum"
 }, 
 "otu291900": {
-"^ot:originalLabel": "Eulaliopsis binata"
+"^ot:originalLabel": "Eulaliopsis binata", 
+"^ot:ottId": 379144, 
+"^ot:ottTaxonName": "Eulaliopsis binata"
 }, 
 "otu291901": {
 "^ot:originalLabel": "Chionachne massiei", 
@@ -300,7 +273,9 @@
 "^ot:ottTaxonName": "Capillipedium assimile"
 }, 
 "otu291917": {
-"^ot:originalLabel": "Dichanthium theinlwinii"
+"^ot:originalLabel": "Dichanthium theinlwinii", 
+"^ot:ottId": 3955165, 
+"^ot:ottTaxonName": "Dichanthium theinlwinii"
 }, 
 "otu291918": {
 "^ot:originalLabel": "Heteropogon triticeus", 
@@ -719,9 +694,15 @@
 "treeById": {
 "tree3909": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "tre", 
 "^ot:inGroupClade": "node734151", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node734141", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node734141": {
 "edge734142": {

@@ -19,48 +19,11 @@
 "@id": "peyotl-validator", 
 "@name": "validate_ot_nexson.py", 
 "@url": "https://github.com/OpenTreeOfLife/peyotl", 
-"@version": "0.0.3a", 
+"@version": "0.0.4a", 
 "invocation": {
-"checksPerformed": [
-"MISSING_MANDATORY_KEY", 
-"MISSING_OPTIONAL_KEY", 
-"UNRECOGNIZED_KEY", 
-"MISSING_LIST_EXPECTED", 
-"DUPLICATING_SINGLETON_KEY", 
-"REFERENCED_ID_NOT_FOUND", 
-"REPEATED_ID", 
-"REPEATED_OTU", 
-"MULTIPLE_ROOT_NODES", 
-"NO_ROOT_NODE", 
-"MULTIPLE_EDGES_FOR_NODES", 
-"CYCLE_DETECTED", 
-"DISCONNECTED_GRAPH_DETECTED", 
-"INCORRECT_ROOT_NODE_LABEL", 
-"TIP_WITHOUT_OTU", 
-"TIP_WITHOUT_OTT_ID", 
-"MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
-"NON_MONOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
-"INVALID_PROPERTY_VALUE", 
-"PROPERTY_VALUE_NOT_USEFUL", 
-"UNRECOGNIZED_PROPERTY_VALUE", 
-"MULTIPLE_TREES", 
-"UNRECOGNIZED_TAG", 
-"CONFLICTING_PROPERTY_VALUES", 
-"NO_TREES", 
-"DEPRECATED_PROPERTY", 
-"UNPARSEABLE_META", 
-"UNREACHABLE_NODE", 
-"INCORRECT_VALUE_TYPE", 
-"MISSING_CRUCIAL_CONTENT"
-], 
 "commandLine": [
 "--embed", 
-"--agent-only", 
-"-e", 
-"../mig-phyelesystem-scratch/2457/validation.json", 
-"-o", 
-"../mig-phyelesystem-scratch/2457/final.json", 
-"../mig-phyelesystem-scratch/2457/v1.2.1-2457.json"
+"--agent-only"
 ], 
 "otherProperty": [
 {
@@ -76,12 +39,19 @@
 }
 ]
 }, 
+"^ot:annotationEvents": {
+"annotation": []
+}, 
+"^ot:candidateTreeForSynthesis": [], 
 "^ot:curatorName": "Chris Owen", 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S964"
 }, 
 "^ot:focalClade": 608975, 
 "^ot:focalCladeOTTTaxonName": "Iguanidae", 
+"^ot:messages": {
+"message": []
+}, 
 "^ot:otusElementOrder": [
 "otus2457"
 ], 
@@ -91,6 +61,7 @@
 }, 
 "^ot:studyPublicationReference": "Schulte ii J., Valladares J., & Larson A. 2003. Phylogenetic relationships within Iguanidae using molecular and morphological data and a phylogenetic taxonomy of iguanian lizards. Herpetologica, null.", 
 "^ot:studyYear": 2003, 
+"^ot:tag": [], 
 "^ot:treesElementOrder": [
 "trees2457"
 ], 
@@ -165,6 +136,8 @@
 }, 
 "otu353321": {
 "^ot:originalLabel": "Leiocephalus schreibersi", 
+"^ot:ottId": 4125655, 
+"^ot:ottTaxonName": "Leiocephalus schreibersii", 
 "^ot:treebaseOTUId": "Tl12966"
 }, 
 "otu353322": {
@@ -532,8 +505,14 @@
 "treeById": {
 "tree5269": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "Fig. 1 MP strict consen", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node910296", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node910296": {
 "edge910297": {
@@ -966,9 +945,15 @@
 }, 
 "tree5270": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "Fig. 2 MP", 
 "^ot:inGroupClade": "node910363", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node910357", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node910357": {
 "edge910358": {
@@ -1947,9 +1932,15 @@
 }, 
 "tree5271": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "Fig. 3 MP", 
 "^ot:inGroupClade": "node910502", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node910496", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node910496": {
 "edge910497": {
@@ -2928,9 +2919,15 @@
 }, 
 "tree5272": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "Fig. 4- MP", 
 "^ot:inGroupClade": "node910640", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node910635", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node910635": {
 "edge910636": {
@@ -3328,10 +3325,17 @@
 }, 
 "tree5273": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "Fig. 5- ML", 
 "^ot:inGroupClade": "node910697", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node910691", 
-"^ot:tag": "delete me", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [
+"delete me"
+], 
 "edgeBySourceId": {
 "node910691": {
 "edge910692": {
@@ -4310,9 +4314,15 @@
 }, 
 "tree6416": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "Fig. 5 ML", 
 "^ot:inGroupClade": "node1115602", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node1115600", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node1115600": {
 "edge1115601": {

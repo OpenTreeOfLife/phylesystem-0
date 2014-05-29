@@ -19,48 +19,11 @@
 "@id": "peyotl-validator", 
 "@name": "validate_ot_nexson.py", 
 "@url": "https://github.com/OpenTreeOfLife/peyotl", 
-"@version": "0.0.3a", 
+"@version": "0.0.4a", 
 "invocation": {
-"checksPerformed": [
-"MISSING_MANDATORY_KEY", 
-"MISSING_OPTIONAL_KEY", 
-"UNRECOGNIZED_KEY", 
-"MISSING_LIST_EXPECTED", 
-"DUPLICATING_SINGLETON_KEY", 
-"REFERENCED_ID_NOT_FOUND", 
-"REPEATED_ID", 
-"REPEATED_OTU", 
-"MULTIPLE_ROOT_NODES", 
-"NO_ROOT_NODE", 
-"MULTIPLE_EDGES_FOR_NODES", 
-"CYCLE_DETECTED", 
-"DISCONNECTED_GRAPH_DETECTED", 
-"INCORRECT_ROOT_NODE_LABEL", 
-"TIP_WITHOUT_OTU", 
-"TIP_WITHOUT_OTT_ID", 
-"MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
-"NON_MONOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
-"INVALID_PROPERTY_VALUE", 
-"PROPERTY_VALUE_NOT_USEFUL", 
-"UNRECOGNIZED_PROPERTY_VALUE", 
-"MULTIPLE_TREES", 
-"UNRECOGNIZED_TAG", 
-"CONFLICTING_PROPERTY_VALUES", 
-"NO_TREES", 
-"DEPRECATED_PROPERTY", 
-"UNPARSEABLE_META", 
-"UNREACHABLE_NODE", 
-"INCORRECT_VALUE_TYPE", 
-"MISSING_CRUCIAL_CONTENT"
-], 
 "commandLine": [
 "--embed", 
-"--agent-only", 
-"-e", 
-"../mig-phyelesystem-scratch/2283/validation.json", 
-"-o", 
-"../mig-phyelesystem-scratch/2283/final.json", 
-"../mig-phyelesystem-scratch/2283/v1.2.1-2283.json"
+"--agent-only"
 ], 
 "otherProperty": [
 {
@@ -76,12 +39,19 @@
 }
 ]
 }, 
+"^ot:annotationEvents": {
+"annotation": []
+}, 
+"^ot:candidateTreeForSynthesis": [], 
 "^ot:curatorName": "Romina Gazis", 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S285"
 }, 
 "^ot:focalClade": 634628, 
 "^ot:focalCladeOTTTaxonName": "Basidiomycota", 
+"^ot:messages": {
+"message": []
+}, 
 "^ot:otusElementOrder": [
 "otus2283"
 ], 
@@ -91,6 +61,7 @@
 }, 
 "^ot:studyPublicationReference": "Hibbett D. 1996. Phylogenetic evidence for horizontal transmission of group I introns in the nuclear ribosomal DNA of mushroom-forming fungi. Molecular Biology and Evolution, 13: 903-917.", 
 "^ot:studyYear": 1996, 
+"^ot:tag": [], 
 "^ot:treesElementOrder": [
 "trees2283"
 ], 
@@ -105,6 +76,8 @@
 }, 
 "otu326875": {
 "^ot:originalLabel": "Phanerochaete chrysosporium", 
+"^ot:ottId": 5299626, 
+"^ot:ottTaxonName": "Phanerodontia chrysosporium", 
 "^ot:treebaseOTUId": "Tl110305"
 }, 
 "otu326876": {
@@ -151,6 +124,8 @@
 }, 
 "otu326883": {
 "^ot:originalLabel": "Panus rudis", 
+"^ot:ottId": 685632, 
+"^ot:ottTaxonName": "Lentinus strigosus", 
 "^ot:treebaseOTUId": "Tl110317"
 }, 
 "otu326884": {
@@ -173,10 +148,14 @@
 }, 
 "otu326887": {
 "^ot:originalLabel": "Chlorella luteoviridis", 
+"^ot:ottId": 965089, 
+"^ot:ottTaxonName": "Heterochlorella luteoviridis", 
 "^ot:treebaseOTUId": "Tl110323"
 }, 
 "otu326888": {
 "^ot:originalLabel": "Lentinellus omphalodes", 
+"^ot:ottId": 625340, 
+"^ot:ottTaxonName": "Lentinellus micheneri", 
 "^ot:treebaseOTUId": "Tl110324"
 }, 
 "otu326889": {
@@ -211,6 +190,8 @@
 }, 
 "otu326894": {
 "^ot:originalLabel": "Bondarzewia montana", 
+"^ot:ottId": 842317, 
+"^ot:ottTaxonName": "Bondarzewia mesenterica", 
 "^ot:treebaseOTUId": "Tl110331"
 }, 
 "otu326895": {
@@ -311,6 +292,8 @@
 }, 
 "otu326911": {
 "^ot:originalLabel": "Pulcherricium caeruleum", 
+"^ot:ottId": 5293089, 
+"^ot:ottTaxonName": "Byssus phosphorea", 
 "^ot:treebaseOTUId": "Tl110354"
 }, 
 "otu326912": {
@@ -375,6 +358,8 @@
 }, 
 "otu326922": {
 "^ot:originalLabel": "Hymneoscyphus ericae 25S", 
+"^ot:ottId": 5309187, 
+"^ot:ottTaxonName": "Pezoloma ericae", 
 "^ot:treebaseOTUId": "Tl34181"
 }, 
 "otu326923": {
@@ -397,6 +382,8 @@
 }, 
 "otu326926": {
 "^ot:originalLabel": "Hymenoscyphus ericae 1506", 
+"^ot:ottId": 5309187, 
+"^ot:ottTaxonName": "Pezoloma ericae", 
 "^ot:treebaseOTUId": "Tl34185"
 }, 
 "otu326927": {
@@ -461,9 +448,15 @@
 "treeById": {
 "tree4831": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "MP, SSU + mtSSU", 
 "^ot:inGroupClade": "node845097", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node845089", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node845089": {
 "edge845090": {
@@ -1043,8 +1036,14 @@
 }, 
 "tree4832": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "MP", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node845171", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node845171": {
 "edge845172": {
@@ -1260,8 +1259,14 @@
 }, 
 "tree4833": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "MP", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node845201", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node845201": {
 "edge845202": {

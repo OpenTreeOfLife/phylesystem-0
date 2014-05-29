@@ -19,48 +19,11 @@
 "@id": "peyotl-validator", 
 "@name": "validate_ot_nexson.py", 
 "@url": "https://github.com/OpenTreeOfLife/peyotl", 
-"@version": "0.0.3a", 
+"@version": "0.0.4a", 
 "invocation": {
-"checksPerformed": [
-"MISSING_MANDATORY_KEY", 
-"MISSING_OPTIONAL_KEY", 
-"UNRECOGNIZED_KEY", 
-"MISSING_LIST_EXPECTED", 
-"DUPLICATING_SINGLETON_KEY", 
-"REFERENCED_ID_NOT_FOUND", 
-"REPEATED_ID", 
-"REPEATED_OTU", 
-"MULTIPLE_ROOT_NODES", 
-"NO_ROOT_NODE", 
-"MULTIPLE_EDGES_FOR_NODES", 
-"CYCLE_DETECTED", 
-"DISCONNECTED_GRAPH_DETECTED", 
-"INCORRECT_ROOT_NODE_LABEL", 
-"TIP_WITHOUT_OTU", 
-"TIP_WITHOUT_OTT_ID", 
-"MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
-"NON_MONOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
-"INVALID_PROPERTY_VALUE", 
-"PROPERTY_VALUE_NOT_USEFUL", 
-"UNRECOGNIZED_PROPERTY_VALUE", 
-"MULTIPLE_TREES", 
-"UNRECOGNIZED_TAG", 
-"CONFLICTING_PROPERTY_VALUES", 
-"NO_TREES", 
-"DEPRECATED_PROPERTY", 
-"UNPARSEABLE_META", 
-"UNREACHABLE_NODE", 
-"INCORRECT_VALUE_TYPE", 
-"MISSING_CRUCIAL_CONTENT"
-], 
 "commandLine": [
 "--embed", 
-"--agent-only", 
-"-e", 
-"../mig-phyelesystem-scratch/2696/validation.json", 
-"-o", 
-"../mig-phyelesystem-scratch/2696/final.json", 
-"../mig-phyelesystem-scratch/2696/v1.2.1-2696.json"
+"--agent-only"
 ], 
 "otherProperty": [
 {
@@ -76,9 +39,16 @@
 }
 ]
 }, 
+"^ot:annotationEvents": {
+"annotation": []
+}, 
+"^ot:candidateTreeForSynthesis": [], 
 "^ot:curatorName": "Chris Owen", 
 "^ot:focalClade": 67816, 
 "^ot:focalCladeOTTTaxonName": "Demospongiae", 
+"^ot:messages": {
+"message": []
+}, 
 "^ot:otusElementOrder": [
 "otus2696"
 ], 
@@ -86,8 +56,9 @@
 "^ot:studyPublication": {
 "@href": "http://dx.doi.org/10.1371/journal.pone.0050437"
 }, 
-"^ot:studyPublicationReference": "Hill, M. S., Hill, A. L., Lopez, J., Peterson, K. J., Pomponi, S., Diaz, M. C., ... & Collins, A. G. (2013). Reconstruction of family-level phylogenetic relationships within Demospongiae (Porifera) using nuclear encoded housekeeping genes. PLoS ONE 8(1): e50437.", 
+"^ot:studyPublicationReference": "Hill, Malcolm S., April L. Hill, Jose Lopez, Kevin J. Peterson, Shirley Pomponi, Maria C. Diaz, Robert W. Thacker, Maja Adamska, Nicole Boury-Esnault, Paco C\u00e1rdenas, Andia Chaves-Fonnegra, Elizabeth Danka, Bre-Onna De Laine, Dawn Formica, Eduardo Hajdu, Gisele Lobo-Hajdu, Sarah Klontz, Christine C. Morrow, Jignasa Patel, Bernard Picton, Davide Pisani, Deborah Pohlmann, Niamh E. Redmond, John Reed, Stacy Richey, Ana Riesgo, Ewelina Rubin, Zach Russell, Klaus R\u00fctzler, Erik A. Sperling, Michael di Stefano, James E. Tarver, Allen G. Collins. 2013. Reconstruction of family-level phylogenetic relationships within Demospongiae (Porifera) using nuclear encoded housekeeping genes. PLoS ONE 8 (1): e50437.", 
 "^ot:studyYear": 2013, 
+"^ot:tag": [], 
 "^ot:treesElementOrder": [
 "trees2696"
 ], 
@@ -381,7 +352,9 @@
 "^ot:ottTaxonName": "Leucetta chagosensis"
 }, 
 "otu404659": {
-"^ot:originalLabel": "Clacereb"
+"^ot:originalLabel": "Clacereb", 
+"^ot:ottId": 606954, 
+"^ot:ottTaxonName": "Borojevia cerebrum"
 }, 
 "otu404660": {
 "^ot:originalLabel": "Rosnodas", 
@@ -458,10 +431,17 @@
 "treeById": {
 "tree6249": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
 "^ot:branchLengthMode": "ot:substitutionCount", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "Fig. 1 ML", 
 "^ot:inGroupClade": "node1083470", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node1083469", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [
+"rooted;"
+], 
 "edgeBySourceId": {
 "node1083469": {
 "edge1083470": {

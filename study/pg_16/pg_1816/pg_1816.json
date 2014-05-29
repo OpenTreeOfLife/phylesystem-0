@@ -19,48 +19,11 @@
 "@id": "peyotl-validator", 
 "@name": "validate_ot_nexson.py", 
 "@url": "https://github.com/OpenTreeOfLife/peyotl", 
-"@version": "0.0.3a", 
+"@version": "0.0.4a", 
 "invocation": {
-"checksPerformed": [
-"MISSING_MANDATORY_KEY", 
-"MISSING_OPTIONAL_KEY", 
-"UNRECOGNIZED_KEY", 
-"MISSING_LIST_EXPECTED", 
-"DUPLICATING_SINGLETON_KEY", 
-"REFERENCED_ID_NOT_FOUND", 
-"REPEATED_ID", 
-"REPEATED_OTU", 
-"MULTIPLE_ROOT_NODES", 
-"NO_ROOT_NODE", 
-"MULTIPLE_EDGES_FOR_NODES", 
-"CYCLE_DETECTED", 
-"DISCONNECTED_GRAPH_DETECTED", 
-"INCORRECT_ROOT_NODE_LABEL", 
-"TIP_WITHOUT_OTU", 
-"TIP_WITHOUT_OTT_ID", 
-"MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
-"NON_MONOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
-"INVALID_PROPERTY_VALUE", 
-"PROPERTY_VALUE_NOT_USEFUL", 
-"UNRECOGNIZED_PROPERTY_VALUE", 
-"MULTIPLE_TREES", 
-"UNRECOGNIZED_TAG", 
-"CONFLICTING_PROPERTY_VALUES", 
-"NO_TREES", 
-"DEPRECATED_PROPERTY", 
-"UNPARSEABLE_META", 
-"UNREACHABLE_NODE", 
-"INCORRECT_VALUE_TYPE", 
-"MISSING_CRUCIAL_CONTENT"
-], 
 "commandLine": [
 "--embed", 
-"--agent-only", 
-"-e", 
-"../mig-phyelesystem-scratch/1816/validation.json", 
-"-o", 
-"../mig-phyelesystem-scratch/1816/final.json", 
-"../mig-phyelesystem-scratch/1816/v1.2.1-1816.json"
+"--agent-only"
 ], 
 "otherProperty": [
 {
@@ -76,12 +39,19 @@
 }
 ]
 }, 
+"^ot:annotationEvents": {
+"annotation": []
+}, 
+"^ot:candidateTreeForSynthesis": [], 
 "^ot:curatorName": "Chris Owen", 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S1271"
 }, 
 "^ot:focalClade": 622916, 
 "^ot:focalCladeOTTTaxonName": "Cetartiodactyla", 
+"^ot:messages": {
+"message": []
+}, 
 "^ot:otusElementOrder": [
 "otus1816"
 ], 
@@ -91,6 +61,7 @@
 }, 
 "^ot:studyPublicationReference": "Price S., Bininda-emonds O., & Gittleman J. 2004. A complete phylogeny of the whales, dolphins and even-toed hoofed mammals (Cetartiodactyla). Biological Reviews, null.", 
 "^ot:studyYear": 2004, 
+"^ot:tag": [], 
 "^ot:treesElementOrder": [
 "trees1816"
 ], 
@@ -430,6 +401,7 @@
 "otu280562": {
 "^ot:originalLabel": "Gazella arabica", 
 "^ot:ottId": 740848, 
+"^ot:ottTaxonName": "Gazella arabica", 
 "^ot:treebaseOTUId": "Tl153476"
 }, 
 "otu280563": {
@@ -777,6 +749,7 @@
 "otu280620": {
 "^ot:originalLabel": "Hippotragus leucophaeus", 
 "^ot:ottId": 860776, 
+"^ot:ottTaxonName": "Hippotragus leucophaeus", 
 "^ot:treebaseOTUId": "Tl153578"
 }, 
 "otu280621": {
@@ -1040,6 +1013,7 @@
 "otu280664": {
 "^ot:originalLabel": "Gazella bilkis", 
 "^ot:ottId": 3611677, 
+"^ot:ottTaxonName": "Gazella bilkis", 
 "^ot:treebaseOTUId": "Tl153647"
 }, 
 "otu280665": {
@@ -1231,6 +1205,7 @@
 "otu280696": {
 "^ot:originalLabel": "Hippopotamus lemerlei", 
 "^ot:ottId": 3612012, 
+"^ot:ottTaxonName": "Hippopotamus lemerlei", 
 "^ot:treebaseOTUId": "Tl34886"
 }, 
 "otu280697": {
@@ -1246,15 +1221,15 @@
 "^ot:treebaseOTUId": "Tl34890"
 }, 
 "otu280699": {
-"^ot:altLabel": "Bubalus bubalis", 
 "^ot:originalLabel": "Bubalus mephistopheles", 
 "^ot:ottId": 641187, 
+"^ot:ottTaxonName": "Bubalus bubalis", 
 "^ot:treebaseOTUId": "Tl34894"
 }, 
 "otu280700": {
-"^ot:altLabel": "Rucervus schomburgki", 
 "^ot:originalLabel": "Cervus schomburgki", 
 "^ot:ottId": 696652, 
+"^ot:ottTaxonName": "Rucervus schomburgki", 
 "^ot:treebaseOTUId": "Tl34896"
 }, 
 "otu280701": {
@@ -1506,6 +1481,7 @@
 "otu280742": {
 "^ot:originalLabel": "Hexaprotodon madagascariensis", 
 "^ot:ottId": 3612027, 
+"^ot:ottTaxonName": "Hexaprotodon madagascariensis", 
 "^ot:treebaseOTUId": "Tl35002"
 }, 
 "otu280743": {
@@ -1671,6 +1647,7 @@
 "otu280770": {
 "^ot:originalLabel": "Gazella rufina", 
 "^ot:ottId": 3611674, 
+"^ot:ottTaxonName": "Gazella rufina", 
 "^ot:treebaseOTUId": "Tl35070"
 }, 
 "otu280771": {
@@ -1893,10 +1870,15 @@
 "treeById": {
 "tree3671": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
 "^ot:branchLengthMode": "ot:changesCount", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "Figs 1 to 4 Supertree", 
 "^ot:inGroupClade": "node700954", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node700954", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node700954": {
 "edge700955": {

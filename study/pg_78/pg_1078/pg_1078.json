@@ -19,48 +19,11 @@
 "@id": "peyotl-validator", 
 "@name": "validate_ot_nexson.py", 
 "@url": "https://github.com/OpenTreeOfLife/peyotl", 
-"@version": "0.0.3a", 
+"@version": "0.0.4a", 
 "invocation": {
-"checksPerformed": [
-"MISSING_MANDATORY_KEY", 
-"MISSING_OPTIONAL_KEY", 
-"UNRECOGNIZED_KEY", 
-"MISSING_LIST_EXPECTED", 
-"DUPLICATING_SINGLETON_KEY", 
-"REFERENCED_ID_NOT_FOUND", 
-"REPEATED_ID", 
-"REPEATED_OTU", 
-"MULTIPLE_ROOT_NODES", 
-"NO_ROOT_NODE", 
-"MULTIPLE_EDGES_FOR_NODES", 
-"CYCLE_DETECTED", 
-"DISCONNECTED_GRAPH_DETECTED", 
-"INCORRECT_ROOT_NODE_LABEL", 
-"TIP_WITHOUT_OTU", 
-"TIP_WITHOUT_OTT_ID", 
-"MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
-"NON_MONOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
-"INVALID_PROPERTY_VALUE", 
-"PROPERTY_VALUE_NOT_USEFUL", 
-"UNRECOGNIZED_PROPERTY_VALUE", 
-"MULTIPLE_TREES", 
-"UNRECOGNIZED_TAG", 
-"CONFLICTING_PROPERTY_VALUES", 
-"NO_TREES", 
-"DEPRECATED_PROPERTY", 
-"UNPARSEABLE_META", 
-"UNREACHABLE_NODE", 
-"INCORRECT_VALUE_TYPE", 
-"MISSING_CRUCIAL_CONTENT"
-], 
 "commandLine": [
 "--embed", 
-"--agent-only", 
-"-e", 
-"../mig-phyelesystem-scratch/1078/validation.json", 
-"-o", 
-"../mig-phyelesystem-scratch/1078/final.json", 
-"../mig-phyelesystem-scratch/1078/v1.2.1-1078.json"
+"--agent-only"
 ], 
 "otherProperty": [
 {
@@ -76,12 +39,19 @@
 }
 ]
 }, 
+"^ot:annotationEvents": {
+"annotation": []
+}, 
+"^ot:candidateTreeForSynthesis": [], 
 "^ot:curatorName": "Romina Gazis", 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S868"
 }, 
 "^ot:focalClade": 634628, 
 "^ot:focalCladeOTTTaxonName": "Basidiomycota", 
+"^ot:messages": {
+"message": []
+}, 
 "^ot:otusElementOrder": [
 "otus1078"
 ], 
@@ -91,6 +61,7 @@
 }, 
 "^ot:studyPublicationReference": "Maier W., Begerow D., Weifl M., & Oberwinkler F. 2003. Phylogeny of the rust fungi: an approach using nuclear large subunit ribosomal DNA sequences. Canadian Journal of Botany, 81: 12-23.", 
 "^ot:studyYear": 2003, 
+"^ot:tag": [], 
 "^ot:treesElementOrder": [
 "trees1078"
 ], 
@@ -309,6 +280,8 @@
 }, 
 "otu219759": {
 "^ot:originalLabel": "Coleosporium campanulae", 
+"^ot:ottId": 633299, 
+"^ot:ottTaxonName": "Coleosporium tussilaginis", 
 "^ot:treebaseOTUId": "Tl8103"
 }, 
 "otu219760": {
@@ -337,10 +310,14 @@
 }, 
 "otu219764": {
 "^ot:originalLabel": "Melampsora helioscopiae", 
+"^ot:ottId": 184997, 
+"^ot:ottTaxonName": "Melampsora euphorbiae", 
 "^ot:treebaseOTUId": "Tl8116"
 }, 
 "otu219765": {
 "^ot:originalLabel": "Naohidemyces vaccinii", 
+"^ot:ottId": 5301189, 
+"^ot:ottTaxonName": "Naohidemyces vacciniorum", 
 "^ot:treebaseOTUId": "Tl8118"
 }, 
 "otu219766": {
@@ -351,14 +328,20 @@
 }, 
 "otu219767": {
 "^ot:originalLabel": "Tranzschelia fusca", 
+"^ot:ottId": 5301218, 
+"^ot:ottTaxonName": "Tranzschelia anemones", 
 "^ot:treebaseOTUId": "Tl8121"
 }, 
 "otu219768": {
 "^ot:originalLabel": "Thekopsora symphyti", 
+"^ot:ottId": 5301191, 
+"^ot:ottTaxonName": "Melampsorella symphyti", 
 "^ot:treebaseOTUId": "Tl8122"
 }, 
 "otu219769": {
 "^ot:originalLabel": "Thekopsora areolata", 
+"^ot:ottId": 226454, 
+"^ot:ottTaxonName": "Pucciniastrum areolatum", 
 "^ot:treebaseOTUId": "Tl8124"
 }, 
 "otu219770": {
@@ -403,6 +386,8 @@
 }, 
 "otu219777": {
 "^ot:originalLabel": "Thekopsora guttata", 
+"^ot:ottId": 5301195, 
+"^ot:ottTaxonName": "Pucciniastrum guttatum", 
 "^ot:treebaseOTUId": "Tl8137"
 }, 
 "otu219778": {
@@ -424,9 +409,15 @@
 "treeById": {
 "tree2098": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "BI, LSU", 
 "^ot:inGroupClade": "node519828", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node519822", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node519822": {
 "edge519823": {
@@ -1118,9 +1109,15 @@
 }, 
 "tree2099": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "NJ, LSU", 
 "^ot:inGroupClade": "node519926", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node519920", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node519920": {
 "edge519921": {

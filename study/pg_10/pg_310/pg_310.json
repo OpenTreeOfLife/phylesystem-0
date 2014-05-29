@@ -19,48 +19,11 @@
 "@id": "peyotl-validator", 
 "@name": "validate_ot_nexson.py", 
 "@url": "https://github.com/OpenTreeOfLife/peyotl", 
-"@version": "0.0.3a", 
+"@version": "0.0.4a", 
 "invocation": {
-"checksPerformed": [
-"MISSING_MANDATORY_KEY", 
-"MISSING_OPTIONAL_KEY", 
-"UNRECOGNIZED_KEY", 
-"MISSING_LIST_EXPECTED", 
-"DUPLICATING_SINGLETON_KEY", 
-"REFERENCED_ID_NOT_FOUND", 
-"REPEATED_ID", 
-"REPEATED_OTU", 
-"MULTIPLE_ROOT_NODES", 
-"NO_ROOT_NODE", 
-"MULTIPLE_EDGES_FOR_NODES", 
-"CYCLE_DETECTED", 
-"DISCONNECTED_GRAPH_DETECTED", 
-"INCORRECT_ROOT_NODE_LABEL", 
-"TIP_WITHOUT_OTU", 
-"TIP_WITHOUT_OTT_ID", 
-"MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
-"NON_MONOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
-"INVALID_PROPERTY_VALUE", 
-"PROPERTY_VALUE_NOT_USEFUL", 
-"UNRECOGNIZED_PROPERTY_VALUE", 
-"MULTIPLE_TREES", 
-"UNRECOGNIZED_TAG", 
-"CONFLICTING_PROPERTY_VALUES", 
-"NO_TREES", 
-"DEPRECATED_PROPERTY", 
-"UNPARSEABLE_META", 
-"UNREACHABLE_NODE", 
-"INCORRECT_VALUE_TYPE", 
-"MISSING_CRUCIAL_CONTENT"
-], 
 "commandLine": [
 "--embed", 
-"--agent-only", 
-"-e", 
-"../mig-phyelesystem-scratch/310/validation.json", 
-"-o", 
-"../mig-phyelesystem-scratch/310/final.json", 
-"../mig-phyelesystem-scratch/310/v1.2.1-310.json"
+"--agent-only"
 ], 
 "otherProperty": [
 {
@@ -76,12 +39,19 @@
 }
 ]
 }, 
+"^ot:annotationEvents": {
+"annotation": []
+}, 
+"^ot:candidateTreeForSynthesis": [], 
 "^ot:curatorName": "Rick Ree", 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S11336"
 }, 
 "^ot:focalClade": 304358, 
 "^ot:focalCladeOTTTaxonName": "Eukaryota", 
+"^ot:messages": {
+"message": []
+}, 
 "^ot:otusElementOrder": [
 "otus310"
 ], 
@@ -89,8 +59,9 @@
 "^ot:studyPublication": {
 "@href": "http://dx.doi.org/10.1016/j.protis.2011.05.002"
 }, 
-"^ot:studyPublicationReference": "Katz L.A., Grant J.R., Parfrey L.W., Gant A., O'kelly C., Anderson O.R., Molestina R.E., and Nerad T. 2011. Subulatomonas tetraspora nov. gen. nov. sp. is a member of a previously unrecognized major clade of eukaryotes. Protist 162 (5): 762-773.", 
+"^ot:studyPublicationReference": "Katz, L.A., Grant J.R., Parfrey L.W., Gant A., O'kelly C., Anderson O.R., Molestina R.E., and Nerad T. 2011. Subulatomonas tetraspora nov. gen. nov. sp. is a member of a previously unrecognized major clade of eukaryotes. Protist 162 (5): 762-773.", 
 "^ot:studyYear": 2011, 
+"^ot:tag": [], 
 "^ot:treesElementOrder": [
 "trees310"
 ], 
@@ -147,6 +118,8 @@
 }, 
 "otu71334": {
 "^ot:originalLabel": "Bigelowiella natans", 
+"^ot:ottId": 5260606, 
+"^ot:ottTaxonName": "Bigelowiella natans", 
 "^ot:treebaseOTUId": "Tl503535"
 }, 
 "otu71335": {
@@ -211,6 +184,8 @@
 }, 
 "otu71345": {
 "^ot:originalLabel": "Allomyces macrogynus", 
+"^ot:ottId": 227743, 
+"^ot:ottTaxonName": "Allomyces macrogynus", 
 "^ot:treebaseOTUId": "Tl503547"
 }, 
 "otu71346": {
@@ -245,10 +220,14 @@
 }, 
 "otu71351": {
 "^ot:originalLabel": "Phreatamoeba balamuthi", 
+"^ot:ottId": 202902, 
+"^ot:ottTaxonName": "Mastigamoeba balamuthi", 
 "^ot:treebaseOTUId": "Tl503555"
 }, 
 "otu71352": {
 "^ot:originalLabel": "Dimorpha sp", 
+"^ot:ottId": 498209, 
+"^ot:ottTaxonName": "Astata", 
 "^ot:treebaseOTUId": "Tl503556"
 }, 
 "otu71353": {
@@ -265,10 +244,14 @@
 }, 
 "otu71355": {
 "^ot:originalLabel": "Ustilago maydis", 
+"^ot:ottId": 285447, 
+"^ot:ottTaxonName": "Ustilago maydis", 
 "^ot:treebaseOTUId": "Tl503559"
 }, 
 "otu71356": {
 "^ot:originalLabel": "Spizellomyces punctatus", 
+"^ot:ottId": 708156, 
+"^ot:ottTaxonName": "Spizellomyces punctatus", 
 "^ot:treebaseOTUId": "Tl503560"
 }, 
 "otu71357": {
@@ -369,6 +352,8 @@
 }, 
 "otu71373": {
 "^ot:originalLabel": "Breviata anathema", 
+"^ot:ottId": 4739001, 
+"^ot:ottTaxonName": "Breviata anathema", 
 "^ot:treebaseOTUId": "Tl503579"
 }, 
 "otu71374": {
@@ -379,14 +364,20 @@
 }, 
 "otu71375": {
 "^ot:originalLabel": "Phanerochaete chrysosporium", 
+"^ot:ottId": 5299626, 
+"^ot:ottTaxonName": "Phanerodontia chrysosporium", 
 "^ot:treebaseOTUId": "Tl503581"
 }, 
 "otu71376": {
 "^ot:originalLabel": "Guillardia theta", 
+"^ot:ottId": 5247740, 
+"^ot:ottTaxonName": "Guillardia theta", 
 "^ot:treebaseOTUId": "Tl503582"
 }, 
 "otu71377": {
 "^ot:originalLabel": "Candida albicans", 
+"^ot:ottId": 1034966, 
+"^ot:ottTaxonName": "Candida albicans", 
 "^ot:treebaseOTUId": "Tl503583"
 }, 
 "otu71378": {
@@ -397,6 +388,8 @@
 }, 
 "otu71379": {
 "^ot:originalLabel": "Schizosaccharomyces pombe", 
+"^ot:ottId": 990004, 
+"^ot:ottTaxonName": "Schizosaccharomyces pombe", 
 "^ot:treebaseOTUId": "Tl503585"
 }, 
 "otu71380": {
@@ -455,6 +448,8 @@
 }, 
 "otu71389": {
 "^ot:originalLabel": "Saccharomyces cerevisiae", 
+"^ot:ottId": 908549, 
+"^ot:ottTaxonName": "Saccharomyces cerevisiae", 
 "^ot:treebaseOTUId": "Tl503595"
 }, 
 "otu71390": {
@@ -559,6 +554,8 @@
 }, 
 "otu71407": {
 "^ot:originalLabel": "Homo sapiens", 
+"^ot:ottId": 770315, 
+"^ot:ottTaxonName": "Homo sapiens", 
 "^ot:treebaseOTUId": "Tl503614"
 }, 
 "otu71408": {
@@ -581,6 +578,8 @@
 }, 
 "otu71411": {
 "^ot:originalLabel": "Telonema subtilis", 
+"^ot:ottId": 4738975, 
+"^ot:ottTaxonName": "Telonema subtile", 
 "^ot:treebaseOTUId": "Tl503619"
 }, 
 "otu71412": {
@@ -619,14 +618,20 @@
 }, 
 "otu71418": {
 "^ot:originalLabel": "Arcyria denudata", 
+"^ot:ottId": 233637, 
+"^ot:ottTaxonName": "Arcyria denudata", 
 "^ot:treebaseOTUId": "Tl503626"
 }, 
 "otu71419": {
 "^ot:originalLabel": "Apusomonas proboscidea L37037", 
+"^ot:ottId": 918390, 
+"^ot:ottTaxonName": "Apusomonas proboscidea", 
 "^ot:treebaseOTUId": "Tl503627"
 }, 
 "otu71420": {
 "^ot:originalLabel": "Blastodinium navicula", 
+"^ot:ottId": 378611, 
+"^ot:ottTaxonName": "Blastodinium navicula", 
 "^ot:treebaseOTUId": "Tl503628"
 }, 
 "otu71421": {
@@ -635,10 +640,14 @@
 }, 
 "otu71422": {
 "^ot:originalLabel": "Gymnophrys cometa", 
+"^ot:ottId": 4019226, 
+"^ot:ottTaxonName": "Gymnophrys cometa", 
 "^ot:treebaseOTUId": "Tl503630"
 }, 
 "otu71423": {
 "^ot:originalLabel": "Amastigomonas debruynei AY050180", 
+"^ot:ottId": 575896, 
+"^ot:ottTaxonName": "Amastigomonas debruynei", 
 "^ot:treebaseOTUId": "Tl503631"
 }, 
 "otu71424": {
@@ -685,14 +694,20 @@
 }, 
 "otu71431": {
 "^ot:originalLabel": "Ripidomyxa sp", 
+"^ot:ottId": 705448, 
+"^ot:ottTaxonName": "Ripidomyxa", 
 "^ot:treebaseOTUId": "Tl503639"
 }, 
 "otu71432": {
 "^ot:originalLabel": "Platyamoeba stenopodia", 
+"^ot:ottId": 526384, 
+"^ot:ottTaxonName": "Stenamoeba stenopodia", 
 "^ot:treebaseOTUId": "Tl503640"
 }, 
 "otu71433": {
 "^ot:originalLabel": "Trichia persimilis", 
+"^ot:ottId": 807670, 
+"^ot:ottTaxonName": "Trichia persimilis", 
 "^ot:treebaseOTUId": "Tl503641"
 }, 
 "otu71434": {
@@ -703,6 +718,8 @@
 }, 
 "otu71435": {
 "^ot:originalLabel": "Apusomonadidae sp. mylnikovi EU349231", 
+"^ot:ottId": 415973, 
+"^ot:ottTaxonName": "Ancyromonas sigmoides", 
 "^ot:treebaseOTUId": "Tl503643"
 }, 
 "otu71436": {
@@ -741,6 +758,8 @@
 }, 
 "otu71442": {
 "^ot:originalLabel": "Boothiomyces macroporosum", 
+"^ot:ottId": 604881, 
+"^ot:ottTaxonName": "Boothiomyces macroporosum", 
 "^ot:treebaseOTUId": "Tl503650"
 }, 
 "otu71443": {
@@ -795,6 +814,8 @@
 }, 
 "otu71452": {
 "^ot:originalLabel": "Cyanophora paradoxa Gene", 
+"^ot:ottId": 878960, 
+"^ot:ottTaxonName": "Cyanophora paradoxa", 
 "^ot:treebaseOTUId": "Tl503660"
 }, 
 "otu71453": {
@@ -841,10 +862,14 @@
 }, 
 "otu71460": {
 "^ot:originalLabel": "Amastigomonas sp. Millport AY050181", 
+"^ot:ottId": 575913, 
+"^ot:ottTaxonName": "Amastigomonas sp. Millport", 
 "^ot:treebaseOTUId": "Tl503668"
 }, 
 "otu71461": {
 "^ot:originalLabel": "Amastigomonas sp AY268039", 
+"^ot:ottId": 575902, 
+"^ot:ottTaxonName": "Amastigomonas sp.", 
 "^ot:treebaseOTUId": "Tl503669"
 }, 
 "otu71462": {
@@ -931,6 +956,8 @@
 }, 
 "otu71476": {
 "^ot:originalLabel": "Micronuclearia podoventralis", 
+"^ot:ottId": 189772, 
+"^ot:ottTaxonName": "Micronuclearia podoventralis", 
 "^ot:treebaseOTUId": "Tl503684"
 }, 
 "otu71477": {
@@ -971,6 +998,8 @@
 }, 
 "otu71483": {
 "^ot:originalLabel": "Nolandella sp", 
+"^ot:ottId": 384563, 
+"^ot:ottTaxonName": "Nolandella", 
 "^ot:treebaseOTUId": "Tl503691"
 }, 
 "otu71484": {
@@ -981,6 +1010,8 @@
 }, 
 "otu71485": {
 "^ot:originalLabel": "Pessonella sp", 
+"^ot:ottId": 384570, 
+"^ot:ottTaxonName": "Pessonella", 
 "^ot:treebaseOTUId": "Tl503693"
 }, 
 "otu71486": {
@@ -1051,6 +1082,8 @@
 }, 
 "otu71497": {
 "^ot:originalLabel": "Hemidinium nasutum", 
+"^ot:ottId": 283416, 
+"^ot:ottTaxonName": "Hemidinium nasutum", 
 "^ot:treebaseOTUId": "Tl503705"
 }, 
 "otu71498": {
@@ -1061,6 +1094,8 @@
 }, 
 "otu71499": {
 "^ot:originalLabel": "Assulina seminulum", 
+"^ot:ottId": 495107, 
+"^ot:ottTaxonName": "Assulina seminulum", 
 "^ot:treebaseOTUId": "Tl503707"
 }, 
 "otu71500": {
@@ -1101,6 +1136,8 @@
 }, 
 "otu71506": {
 "^ot:originalLabel": "Nitzschia thermalis", 
+"^ot:ottId": 253199, 
+"^ot:ottTaxonName": "Nitzschia thermalis", 
 "^ot:treebaseOTUId": "Tl503714"
 }, 
 "otu71507": {
@@ -1115,6 +1152,8 @@
 }, 
 "otu71509": {
 "^ot:originalLabel": "Telonema antarcticum", 
+"^ot:ottId": 4738976, 
+"^ot:ottTaxonName": "Telonema antarcticum", 
 "^ot:treebaseOTUId": "Tl503717"
 }, 
 "otu71510": {
@@ -1163,6 +1202,8 @@
 }, 
 "otu71518": {
 "^ot:originalLabel": "Amastigomonas sp AY050179", 
+"^ot:ottId": 575902, 
+"^ot:ottTaxonName": "Amastigomonas sp.", 
 "^ot:treebaseOTUId": "Tl503726"
 }, 
 "otu71519": {
@@ -1185,6 +1226,8 @@
 }, 
 "otu71522": {
 "^ot:originalLabel": "Rhizopus microsporus", 
+"^ot:ottId": 89468, 
+"^ot:ottTaxonName": "Rhizopus microsporus", 
 "^ot:treebaseOTUId": "Tl503730"
 }, 
 "otu71523": {
@@ -1253,6 +1296,8 @@
 }, 
 "otu71534": {
 "^ot:originalLabel": "Thalassomyces fagei", 
+"^ot:ottId": 249333, 
+"^ot:ottTaxonName": "Thalassomyces fagei", 
 "^ot:treebaseOTUId": "Tl503742"
 }, 
 "otu71535": {
@@ -1269,10 +1314,14 @@
 }, 
 "otu71537": {
 "^ot:originalLabel": "Capsellina sp", 
+"^ot:ottId": 505597, 
+"^ot:ottTaxonName": "Capsellina sp. ATCC 50039", 
 "^ot:treebaseOTUId": "Tl503745"
 }, 
 "otu71538": {
 "^ot:originalLabel": "Storeatula major", 
+"^ot:ottId": 472401, 
+"^ot:ottTaxonName": "Storeatula major", 
 "^ot:treebaseOTUId": "Tl503746"
 }, 
 "otu71539": {
@@ -1307,6 +1356,8 @@
 }, 
 "otu71544": {
 "^ot:originalLabel": "Wobblia lunata", 
+"^ot:ottId": 281048, 
+"^ot:ottTaxonName": "Wobblia lunata", 
 "^ot:treebaseOTUId": "Tl503752"
 }, 
 "otu71545": {
@@ -1335,6 +1386,8 @@
 }, 
 "otu71549": {
 "^ot:originalLabel": "Nuclearia simplex", 
+"^ot:ottId": 98036, 
+"^ot:ottTaxonName": "Nuclearia simplex", 
 "^ot:treebaseOTUId": "Tl503757"
 }, 
 "otu71550": {
@@ -1345,6 +1398,8 @@
 }, 
 "otu71551": {
 "^ot:originalLabel": "Astasia curvata", 
+"^ot:ottId": 833137, 
+"^ot:ottTaxonName": "Astasia curvata", 
 "^ot:treebaseOTUId": "Tl503759"
 }, 
 "otu71552": {
@@ -1379,6 +1434,8 @@
 }, 
 "otu71557": {
 "^ot:originalLabel": "Thecamoebidae sp", 
+"^ot:ottId": 526383, 
+"^ot:ottTaxonName": "Thecamoebidae", 
 "^ot:treebaseOTUId": "Tl503765"
 }, 
 "otu71558": {
@@ -1437,6 +1494,8 @@
 }, 
 "otu71567": {
 "^ot:originalLabel": "Apusomonadidae sp. limnaEU349232", 
+"^ot:ottId": 947490, 
+"^ot:ottTaxonName": "Ancyromonas limna", 
 "^ot:treebaseOTUId": "Tl503775"
 }, 
 "otu71568": {
@@ -1447,6 +1506,8 @@
 }, 
 "otu71569": {
 "^ot:originalLabel": "Oltmannsiellopsis geminata", 
+"^ot:ottId": 48977, 
+"^ot:ottTaxonName": "Oltmannsiellopsis geminata", 
 "^ot:treebaseOTUId": "Tl503777"
 }, 
 "otu71570": {
@@ -1475,6 +1536,8 @@
 }, 
 "otu71574": {
 "^ot:originalLabel": "Monopylocystis visvesvarai", 
+"^ot:ottId": 780795, 
+"^ot:ottTaxonName": "Monopylocystis visvesvarai", 
 "^ot:treebaseOTUId": "Tl503782"
 }, 
 "otu71575": {
@@ -1491,6 +1554,8 @@
 }, 
 "otu71577": {
 "^ot:originalLabel": "Ancyromonas sigmoides AF174363", 
+"^ot:ottId": 415973, 
+"^ot:ottTaxonName": "Ancyromonas sigmoides", 
 "^ot:treebaseOTUId": "Tl503785"
 }, 
 "otu71578": {
@@ -1577,6 +1642,8 @@
 }, 
 "otu71592": {
 "^ot:originalLabel": "Diphylleia rotans", 
+"^ot:ottId": 4738988, 
+"^ot:ottTaxonName": "Diphylleia rotans", 
 "^ot:treebaseOTUId": "Tl503800"
 }, 
 "otu71593": {
@@ -1603,6 +1670,8 @@
 }, 
 "otu71597": {
 "^ot:originalLabel": "Distigma gracile", 
+"^ot:ottId": 322029, 
+"^ot:ottTaxonName": "Distigma gracile", 
 "^ot:treebaseOTUId": "Tl503805"
 }, 
 "otu71598": {
@@ -1625,6 +1694,8 @@
 }, 
 "otu71601": {
 "^ot:originalLabel": "Diplomonad ATCC50330", 
+"^ot:ottId": 614625, 
+"^ot:ottTaxonName": "Spironucleus barkhanus", 
 "^ot:treebaseOTUId": "Tl503809"
 }, 
 "otu71602": {
@@ -1641,6 +1712,8 @@
 }, 
 "otu71604": {
 "^ot:originalLabel": "Amastigomonas bermudensis AY050178", 
+"^ot:ottId": 575895, 
+"^ot:ottTaxonName": "Amastigomonas bermudensis", 
 "^ot:treebaseOTUId": "Tl503812"
 }, 
 "otu71605": {
@@ -1657,6 +1730,8 @@
 }, 
 "otu71607": {
 "^ot:originalLabel": "Monoblepharis macrandra", 
+"^ot:ottId": 77429, 
+"^ot:ottTaxonName": "Monoblepharis macrandra", 
 "^ot:treebaseOTUId": "Tl503815"
 }, 
 "otu71608": {
@@ -1695,6 +1770,8 @@
 }, 
 "otu71614": {
 "^ot:originalLabel": "Lecythium sp", 
+"^ot:ottId": 4019288, 
+"^ot:ottTaxonName": "Lecythium sp.", 
 "^ot:treebaseOTUId": "Tl503822"
 }, 
 "otu71615": {
@@ -1729,6 +1806,8 @@
 }, 
 "otu71620": {
 "^ot:originalLabel": "Reticulamoeba sp", 
+"^ot:ottId": 1078460, 
+"^ot:ottTaxonName": "Reticulamoeba", 
 "^ot:treebaseOTUId": "Tl503828"
 }, 
 "otu71621": {
@@ -1751,6 +1830,8 @@
 }, 
 "otu71624": {
 "^ot:originalLabel": "Blastocystis sp H11", 
+"^ot:ottId": 251104, 
+"^ot:ottTaxonName": "Blastocystis sp. H-11", 
 "^ot:treebaseOTUId": "Tl503832"
 }, 
 "otu71625": {
@@ -1887,6 +1968,8 @@
 }, 
 "otu71649": {
 "^ot:originalLabel": "Batrachochytrium sp", 
+"^ot:ottId": 274697, 
+"^ot:ottTaxonName": "Batrachochytrium", 
 "^ot:treebaseOTUId": "Tl503857"
 }, 
 "otu71650": {
@@ -1915,6 +1998,8 @@
 }, 
 "otu71654": {
 "^ot:originalLabel": "Clydonella sp", 
+"^ot:ottId": 223097, 
+"^ot:ottTaxonName": "Clydonella", 
 "^ot:treebaseOTUId": "Tl503862"
 }, 
 "otu71655": {
@@ -1943,6 +2028,8 @@
 }, 
 "otu71659": {
 "^ot:originalLabel": "Sainouron mikroteron", 
+"^ot:ottId": 696939, 
+"^ot:ottTaxonName": "Sainouron acronematica", 
 "^ot:treebaseOTUId": "Tl503867"
 }, 
 "otu71660": {
@@ -1971,6 +2058,8 @@
 }, 
 "otu71664": {
 "^ot:originalLabel": "Ancyromonas sigmoides AY827843", 
+"^ot:ottId": 415973, 
+"^ot:ottTaxonName": "Ancyromonas sigmoides", 
 "^ot:treebaseOTUId": "Tl503872"
 }, 
 "otu71665": {
@@ -1987,6 +2076,8 @@
 }, 
 "otu71667": {
 "^ot:originalLabel": "Acrosphaera sp", 
+"^ot:ottId": 44251, 
+"^ot:ottTaxonName": "Xylaria", 
 "^ot:treebaseOTUId": "Tl503875"
 }, 
 "otu71668": {
@@ -2011,6 +2102,8 @@
 }, 
 "otu71672": {
 "^ot:originalLabel": "Calcidiscus leptoporus", 
+"^ot:ottId": 507210, 
+"^ot:ottTaxonName": "Calcidiscus leptoporus", 
 "^ot:treebaseOTUId": "Tl503880"
 }, 
 "otu71673": {
@@ -2025,6 +2118,8 @@
 }, 
 "otu71675": {
 "^ot:originalLabel": "Amastigomonas sp 50062", 
+"^ot:ottId": 1083062, 
+"^ot:ottTaxonName": "Thecamonas trahens ATCC 50062", 
 "^ot:treebaseOTUId": "Tl503883"
 }, 
 "otu71676": {
@@ -2125,6 +2220,8 @@
 }, 
 "otu71693": {
 "^ot:originalLabel": "Picophagus flagellatus", 
+"^ot:ottId": 4029553, 
+"^ot:ottTaxonName": "Picophagus flagellatus", 
 "^ot:treebaseOTUId": "Tl503901"
 }, 
 "otu71694": {
@@ -2165,6 +2262,8 @@
 }, 
 "otu71700": {
 "^ot:originalLabel": "Mastigamoeba simplex", 
+"^ot:ottId": 958216, 
+"^ot:ottTaxonName": "Mastigamoeba simplex", 
 "^ot:treebaseOTUId": "Tl503908"
 }, 
 "otu71701": {
@@ -2213,8 +2312,8 @@
 }, 
 "otu71709": {
 "^ot:originalLabel": "Cypria reptans", 
-"^ot:ottId": 934578, 
-"^ot:ottTaxonName": "Cypria", 
+"^ot:ottId": 2962042, 
+"^ot:ottTaxonName": "Herpetocypris reptans", 
 "^ot:treebaseOTUId": "Tl503917"
 }, 
 "otu71710": {
@@ -2237,6 +2336,8 @@
 }, 
 "otu71713": {
 "^ot:originalLabel": "Glomus intraradices", 
+"^ot:ottId": 837854, 
+"^ot:ottTaxonName": "Rhizophagus intraradices", 
 "^ot:treebaseOTUId": "Tl503921"
 }, 
 "otu71714": {
@@ -2273,10 +2374,14 @@
 }, 
 "otu71720": {
 "^ot:originalLabel": "Pseudodidymium cryptomastigophorum", 
+"^ot:ottId": 790916, 
+"^ot:ottTaxonName": "Pseudodidymium cryptomastigophorum", 
 "^ot:treebaseOTUId": "Tl503928"
 }, 
 "otu71721": {
 "^ot:originalLabel": "Chlorarachnion CCMP621", 
+"^ot:ottId": 5260606, 
+"^ot:ottTaxonName": "Bigelowiella natans", 
 "^ot:treebaseOTUId": "Tl503929"
 }, 
 "otu71722": {
@@ -2329,10 +2434,14 @@
 }, 
 "otu71730": {
 "^ot:originalLabel": "Blepharisma japonicum", 
+"^ot:ottId": 703497, 
+"^ot:ottTaxonName": "Blepharisma japonicum", 
 "^ot:treebaseOTUId": "Tl503938"
 }, 
 "otu71731": {
 "^ot:originalLabel": "Ancyromonas micra strain ATCC 50267", 
+"^ot:ottId": 80833, 
+"^ot:ottTaxonName": "Planomonas micra", 
 "^ot:treebaseOTUId": "Tl503939"
 }, 
 "otu71732": {
@@ -2365,6 +2474,8 @@
 }, 
 "otu71737": {
 "^ot:originalLabel": "Thecamoeba similis", 
+"^ot:ottId": 273114, 
+"^ot:ottTaxonName": "Thecamoeba similis", 
 "^ot:treebaseOTUId": "Tl503945"
 }, 
 "otu71738": {
@@ -2387,6 +2498,8 @@
 }, 
 "otu71741": {
 "^ot:originalLabel": "Tetrapyle octacantha", 
+"^ot:ottId": 29151, 
+"^ot:ottTaxonName": "Tetrapyle octacantha", 
 "^ot:treebaseOTUId": "Tl503949"
 }, 
 "otu71742": {
@@ -2423,10 +2536,14 @@
 }, 
 "otu71748": {
 "^ot:originalLabel": "Geminella minor", 
+"^ot:ottId": 942014, 
+"^ot:ottTaxonName": "Geminella minor", 
 "^ot:treebaseOTUId": "Tl503956"
 }, 
 "otu71749": {
 "^ot:originalLabel": "Pseudodifflugia cf gracilis", 
+"^ot:ottId": 875556, 
+"^ot:ottTaxonName": "Pseudodifflugia cf. gracilis", 
 "^ot:treebaseOTUId": "Tl503957"
 }, 
 "otu71750": {
@@ -2474,9 +2591,9 @@
 "^ot:treebaseOTUId": "Tl503965"
 }, 
 "otu71758": {
-"^ot:altLabel": "Gromia oviformis", 
 "^ot:originalLabel": "Gromia oviformis2", 
 "^ot:ottId": 962362, 
+"^ot:ottTaxonName": "Gromia oviformis", 
 "^ot:treebaseOTUId": "Tl503966"
 }, 
 "otu71759": {
@@ -2499,6 +2616,8 @@
 }, 
 "otu71762": {
 "^ot:originalLabel": "Subulatomonas", 
+"^ot:ottId": 4738951, 
+"^ot:ottTaxonName": "Subulatomonas", 
 "^ot:treebaseOTUId": "Tl503970"
 }, 
 "otu71763": {
@@ -2579,6 +2698,8 @@
 }, 
 "otu71776": {
 "^ot:originalLabel": "Paravahlkampfia ustiana", 
+"^ot:ottId": 64811, 
+"^ot:ottTaxonName": "Paravahlkampfia ustiana", 
 "^ot:treebaseOTUId": "Tl503984"
 }, 
 "otu71777": {
@@ -2589,6 +2710,8 @@
 }, 
 "otu71778": {
 "^ot:originalLabel": "Styptosphaera sp", 
+"^ot:ottId": 875064, 
+"^ot:ottTaxonName": "Styptosphaera", 
 "^ot:treebaseOTUId": "Tl503986"
 }, 
 "otu71779": {
@@ -2617,6 +2740,8 @@
 }, 
 "otu71783": {
 "^ot:originalLabel": "Amastigomonas mutabilis AY050182", 
+"^ot:ottId": 575911, 
+"^ot:ottTaxonName": "Amastigomonas mutabilis", 
 "^ot:treebaseOTUId": "Tl503991"
 }, 
 "otu71784": {
@@ -2631,6 +2756,8 @@
 }, 
 "otu71786": {
 "^ot:originalLabel": "Hoplonympha sp", 
+"^ot:ottId": 1098502, 
+"^ot:ottTaxonName": "Hoplonympha", 
 "^ot:treebaseOTUId": "Tl503994"
 }, 
 "otu71787": {
@@ -2725,10 +2852,14 @@
 }, 
 "otu71803": {
 "^ot:originalLabel": "Ancyromonas sp", 
+"^ot:ottId": 415977, 
+"^ot:ottTaxonName": "Ancyromonas", 
 "^ot:treebaseOTUId": "Tl504011"
 }, 
 "otu71804": {
 "^ot:originalLabel": "Mastigamomeba sp", 
+"^ot:ottId": 563111, 
+"^ot:ottTaxonName": "Mastigamoeba", 
 "^ot:treebaseOTUId": "Tl504012"
 }, 
 "otu71805": {
@@ -2763,6 +2894,8 @@
 }, 
 "otu71811": {
 "^ot:originalLabel": "Chlamydomyxa labyrinthuloides", 
+"^ot:ottId": 381419, 
+"^ot:ottTaxonName": "Chlamydomyxa labyrinthuloides", 
 "^ot:treebaseOTUId": "Tl504019"
 }, 
 "otu71812": {
@@ -2773,6 +2906,8 @@
 }, 
 "otu71813": {
 "^ot:originalLabel": "Lingulamoeba leei", 
+"^ot:ottId": 1073746, 
+"^ot:ottTaxonName": "Lingulamoeba leei", 
 "^ot:treebaseOTUId": "Tl504021"
 }, 
 "otu71814": {
@@ -2789,6 +2924,8 @@
 }, 
 "otu71816": {
 "^ot:originalLabel": "Cholamonas cyrtodiopsidis", 
+"^ot:ottId": 879684, 
+"^ot:ottTaxonName": "Cholamonas cyrtodiopsidis", 
 "^ot:treebaseOTUId": "Tl504024"
 }, 
 "otu71817": {
@@ -2799,10 +2936,14 @@
 }, 
 "otu71818": {
 "^ot:originalLabel": "Encephalitozoon cuniculi", 
+"^ot:ottId": 537032, 
+"^ot:ottTaxonName": "Encephalitozoon cuniculi", 
 "^ot:treebaseOTUId": "Tl505105"
 }, 
 "otu71819": {
 "^ot:originalLabel": "Subulatomonas tetraspora", 
+"^ot:ottId": 4738952, 
+"^ot:ottTaxonName": "Subulatomonas tetraspora", 
 "^ot:treebaseOTUId": "Tl505106"
 }, 
 "otu71820": {
@@ -2813,18 +2954,26 @@
 }, 
 "otu71821": {
 "^ot:originalLabel": "Amastigomonas sp. ATCC 50062", 
+"^ot:ottId": 1083062, 
+"^ot:ottTaxonName": "Thecamonas trahens ATCC 50062", 
 "^ot:treebaseOTUId": "Tl505108"
 }, 
 "otu71822": {
 "^ot:originalLabel": "Amastigomonas bermudensis", 
+"^ot:ottId": 575895, 
+"^ot:ottTaxonName": "Amastigomonas bermudensis", 
 "^ot:treebaseOTUId": "Tl505109"
 }, 
 "otu71823": {
 "^ot:originalLabel": "Cyanophora paradoxa", 
+"^ot:ottId": 878960, 
+"^ot:ottTaxonName": "Cyanophora paradoxa", 
 "^ot:treebaseOTUId": "Tl505110"
 }, 
 "otu71824": {
 "^ot:originalLabel": "Planomonas micra", 
+"^ot:ottId": 80833, 
+"^ot:ottTaxonName": "Planomonas micra", 
 "^ot:treebaseOTUId": "Tl505111"
 }
 }
@@ -2841,9 +2990,14 @@
 "treeById": {
 "tree259": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
 "^ot:branchLengthMode": "ot:substitutionCount", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "TREE1", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node186917", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node186917": {
 "edge186918": {
@@ -9282,9 +9436,14 @@
 }, 
 "tree260": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
 "^ot:branchLengthMode": "ot:substitutionCount", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "Imported tree 0", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node187836", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node187836": {
 "edge187837": {
@@ -17129,9 +17288,14 @@
 }, 
 "tree261": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
 "^ot:branchLengthMode": "ot:substitutionCount", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "Imported tree 0", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node188818", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node188818": {
 "edge188819": {

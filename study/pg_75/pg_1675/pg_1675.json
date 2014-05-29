@@ -19,48 +19,11 @@
 "@id": "peyotl-validator", 
 "@name": "validate_ot_nexson.py", 
 "@url": "https://github.com/OpenTreeOfLife/peyotl", 
-"@version": "0.0.3a", 
+"@version": "0.0.4a", 
 "invocation": {
-"checksPerformed": [
-"MISSING_MANDATORY_KEY", 
-"MISSING_OPTIONAL_KEY", 
-"UNRECOGNIZED_KEY", 
-"MISSING_LIST_EXPECTED", 
-"DUPLICATING_SINGLETON_KEY", 
-"REFERENCED_ID_NOT_FOUND", 
-"REPEATED_ID", 
-"REPEATED_OTU", 
-"MULTIPLE_ROOT_NODES", 
-"NO_ROOT_NODE", 
-"MULTIPLE_EDGES_FOR_NODES", 
-"CYCLE_DETECTED", 
-"DISCONNECTED_GRAPH_DETECTED", 
-"INCORRECT_ROOT_NODE_LABEL", 
-"TIP_WITHOUT_OTU", 
-"TIP_WITHOUT_OTT_ID", 
-"MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
-"NON_MONOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
-"INVALID_PROPERTY_VALUE", 
-"PROPERTY_VALUE_NOT_USEFUL", 
-"UNRECOGNIZED_PROPERTY_VALUE", 
-"MULTIPLE_TREES", 
-"UNRECOGNIZED_TAG", 
-"CONFLICTING_PROPERTY_VALUES", 
-"NO_TREES", 
-"DEPRECATED_PROPERTY", 
-"UNPARSEABLE_META", 
-"UNREACHABLE_NODE", 
-"INCORRECT_VALUE_TYPE", 
-"MISSING_CRUCIAL_CONTENT"
-], 
 "commandLine": [
 "--embed", 
-"--agent-only", 
-"-e", 
-"../mig-phyelesystem-scratch/1675/validation.json", 
-"-o", 
-"../mig-phyelesystem-scratch/1675/final.json", 
-"../mig-phyelesystem-scratch/1675/v1.2.1-1675.json"
+"--agent-only"
 ], 
 "otherProperty": [
 {
@@ -76,12 +39,19 @@
 }
 ]
 }, 
+"^ot:annotationEvents": {
+"annotation": []
+}, 
+"^ot:candidateTreeForSynthesis": [], 
 "^ot:curatorName": "Romina Gazis", 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S400"
 }, 
 "^ot:focalClade": 1051950, 
 "^ot:focalCladeOTTTaxonName": "Herpotrichiellaceae", 
+"^ot:messages": {
+"message": []
+}, 
 "^ot:otusElementOrder": [
 "otus1675"
 ], 
@@ -91,6 +61,7 @@
 }, 
 "^ot:studyPublicationReference": "Untereiner W., & Naveaeu F. 1999. Molecular systematics of the Herpotrichiellaceae with an assessment of the phylogenetic positions of Exophiala dermatitidis and Phialophora americana. Mycologia, 91(1): 67-83.", 
 "^ot:studyYear": 1999, 
+"^ot:tag": [], 
 "^ot:treesElementOrder": [
 "trees1675"
 ], 
@@ -108,7 +79,9 @@
 "^ot:ottTaxonName": "Cladophialophora carrionii"
 }, 
 "otu270151": {
-"^ot:originalLabel": "Capronia semiimmersa MUCL 39979"
+"^ot:originalLabel": "Capronia semiimmersa MUCL 39979", 
+"^ot:ottId": 5310508, 
+"^ot:ottTaxonName": "Capronia semi-immersa"
 }, 
 "otu270152": {
 "^ot:originalLabel": "Phialophora verrucosa MUCL 1553", 
@@ -182,7 +155,9 @@
 "^ot:ottTaxonName": "Capronia parasitica"
 }, 
 "otu270167": {
-"^ot:originalLabel": "Capronia nigerimma MUCL 39954"
+"^ot:originalLabel": "Capronia nigerimma MUCL 39954", 
+"^ot:ottId": 849146, 
+"^ot:ottTaxonName": "Capronia nigerrima"
 }, 
 "otu270168": {
 "^ot:originalLabel": "Capronia fungicola ATCC 42523", 
@@ -246,7 +221,9 @@
 "^ot:ottTaxonName": "Capronia pulcherrima"
 }, 
 "otu270181": {
-"^ot:originalLabel": "Cladophialophora hachijoensis B"
+"^ot:originalLabel": "Cladophialophora hachijoensis B", 
+"^ot:ottId": 274721, 
+"^ot:ottTaxonName": "Venturia hystrioides"
 }, 
 "otu270182": {
 "^ot:originalLabel": "Capronia villosa ATCC 56206", 
@@ -282,7 +259,9 @@
 "^ot:originalLabel": "Ramichloridium epichloes CBS 36"
 }, 
 "otu270189": {
-"^ot:originalLabel": "Capronia semiimmersa MUCL 40572"
+"^ot:originalLabel": "Capronia semiimmersa MUCL 40572", 
+"^ot:ottId": 5310508, 
+"^ot:ottTaxonName": "Capronia semi-immersa"
 }, 
 "otu270190": {
 "^ot:originalLabel": "Phialophora americana MUCL40613", 
@@ -363,10 +342,17 @@
 "treeById": {
 "tree3374": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "MP, LSU", 
 "^ot:inGroupClade": "node669332", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node669331", 
-"^ot:tag": "LSU", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [
+"LSU"
+], 
 "edgeBySourceId": {
 "node669331": {
 "edge669332": {
@@ -883,9 +869,15 @@
 }, 
 "tree3375": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "MP, LSU", 
 "^ot:inGroupClade": "node669405", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node669404", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node669404": {
 "edge669405": {
@@ -1416,9 +1408,15 @@
 }, 
 "tree3376": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "MP, ITS", 
 "^ot:inGroupClade": "node669480", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node669479", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node669479": {
 "edge669480": {
@@ -1949,9 +1947,15 @@
 }, 
 "tree3377": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "MP, LSU + ITS", 
 "^ot:inGroupClade": "node669555", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node669554", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node669554": {
 "edge669555": {
@@ -2076,9 +2080,15 @@
 }, 
 "tree3378": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "MP, ITS + LSU", 
 "^ot:inGroupClade": "node669574", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node669571", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node669571": {
 "edge669572": {

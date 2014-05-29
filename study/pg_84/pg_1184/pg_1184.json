@@ -19,48 +19,11 @@
 "@id": "peyotl-validator", 
 "@name": "validate_ot_nexson.py", 
 "@url": "https://github.com/OpenTreeOfLife/peyotl", 
-"@version": "0.0.3a", 
+"@version": "0.0.4a", 
 "invocation": {
-"checksPerformed": [
-"MISSING_MANDATORY_KEY", 
-"MISSING_OPTIONAL_KEY", 
-"UNRECOGNIZED_KEY", 
-"MISSING_LIST_EXPECTED", 
-"DUPLICATING_SINGLETON_KEY", 
-"REFERENCED_ID_NOT_FOUND", 
-"REPEATED_ID", 
-"REPEATED_OTU", 
-"MULTIPLE_ROOT_NODES", 
-"NO_ROOT_NODE", 
-"MULTIPLE_EDGES_FOR_NODES", 
-"CYCLE_DETECTED", 
-"DISCONNECTED_GRAPH_DETECTED", 
-"INCORRECT_ROOT_NODE_LABEL", 
-"TIP_WITHOUT_OTU", 
-"TIP_WITHOUT_OTT_ID", 
-"MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
-"NON_MONOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
-"INVALID_PROPERTY_VALUE", 
-"PROPERTY_VALUE_NOT_USEFUL", 
-"UNRECOGNIZED_PROPERTY_VALUE", 
-"MULTIPLE_TREES", 
-"UNRECOGNIZED_TAG", 
-"CONFLICTING_PROPERTY_VALUES", 
-"NO_TREES", 
-"DEPRECATED_PROPERTY", 
-"UNPARSEABLE_META", 
-"UNREACHABLE_NODE", 
-"INCORRECT_VALUE_TYPE", 
-"MISSING_CRUCIAL_CONTENT"
-], 
 "commandLine": [
 "--embed", 
-"--agent-only", 
-"-e", 
-"../mig-phyelesystem-scratch/1184/validation.json", 
-"-o", 
-"../mig-phyelesystem-scratch/1184/final.json", 
-"../mig-phyelesystem-scratch/1184/v1.2.1-1184.json"
+"--agent-only"
 ], 
 "otherProperty": [
 {
@@ -76,9 +39,16 @@
 }
 ]
 }, 
+"^ot:annotationEvents": {
+"annotation": []
+}, 
+"^ot:candidateTreeForSynthesis": [], 
 "^ot:curatorName": "Romina Gazis", 
 "^ot:focalClade": 346120, 
 "^ot:focalCladeOTTTaxonName": "Dothideomycetes", 
+"^ot:messages": {
+"message": []
+}, 
 "^ot:otusElementOrder": [
 "otus1184"
 ], 
@@ -88,6 +58,7 @@
 }, 
 "^ot:studyPublicationReference": "Boehm, Eric WA, Conrad L. Schoch, and Joseph W. Spatafora. \"On the evolution of the< i> Hysteriaceae</i> and< i> Mytilinidiaceae</i>(< i> Pleosporomycetidae, Dothideomycetes, Ascomycota</i>) using four nuclear genes.\" Mycological research 113.4 (2009): 461-479.", 
 "^ot:studyYear": 2009, 
+"^ot:tag": [], 
 "^ot:treesElementOrder": [
 "trees1184"
 ], 
@@ -355,7 +326,9 @@
 "^ot:ottTaxonName": "Macrophomina phaseolina"
 }, 
 "otu230363": {
-"^ot:originalLabel": "Eupenicillium limosum CBS 339 97"
+"^ot:originalLabel": "Eupenicillium limosum CBS 339 97", 
+"^ot:ottId": 3755665, 
+"^ot:ottTaxonName": "Penicillium limosum"
 }, 
 "otu230364": {
 "^ot:originalLabel": "Histoplasma capsulatum genome", 
@@ -528,7 +501,9 @@
 "^ot:ottTaxonName": "Rhytidhysteron rufulum"
 }, 
 "otu230398": {
-"^ot:originalLabel": "Hysterographium pulchrum DAOM 234345"
+"^ot:originalLabel": "Hysterographium pulchrum DAOM 234345", 
+"^ot:ottId": 5319259, 
+"^ot:ottTaxonName": "Oedohysterium pulchrum"
 }, 
 "otu230399": {
 "^ot:originalLabel": "Hysterium sinense EB 0333", 
@@ -588,9 +563,15 @@
 "treeById": {
 "tree2395": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "ML, SSU + LSU + EF-1 + RPB2", 
 "^ot:inGroupClade": "node559101", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node559097", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node559097": {
 "edge559098": {
@@ -1513,9 +1494,14 @@
 }, 
 "tree2396": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "ML, SSU + LSU + EF-1 + RPB2", 
 "^ot:inGroupClade": "node559251", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node559228", 
+"^ot:specifiedRoot": "", 
 "^ot:tag": [
 "ML", 
 "EF-1"

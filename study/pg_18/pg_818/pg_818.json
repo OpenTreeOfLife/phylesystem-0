@@ -19,48 +19,11 @@
 "@id": "peyotl-validator", 
 "@name": "validate_ot_nexson.py", 
 "@url": "https://github.com/OpenTreeOfLife/peyotl", 
-"@version": "0.0.3a", 
+"@version": "0.0.4a", 
 "invocation": {
-"checksPerformed": [
-"MISSING_MANDATORY_KEY", 
-"MISSING_OPTIONAL_KEY", 
-"UNRECOGNIZED_KEY", 
-"MISSING_LIST_EXPECTED", 
-"DUPLICATING_SINGLETON_KEY", 
-"REFERENCED_ID_NOT_FOUND", 
-"REPEATED_ID", 
-"REPEATED_OTU", 
-"MULTIPLE_ROOT_NODES", 
-"NO_ROOT_NODE", 
-"MULTIPLE_EDGES_FOR_NODES", 
-"CYCLE_DETECTED", 
-"DISCONNECTED_GRAPH_DETECTED", 
-"INCORRECT_ROOT_NODE_LABEL", 
-"TIP_WITHOUT_OTU", 
-"TIP_WITHOUT_OTT_ID", 
-"MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
-"NON_MONOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
-"INVALID_PROPERTY_VALUE", 
-"PROPERTY_VALUE_NOT_USEFUL", 
-"UNRECOGNIZED_PROPERTY_VALUE", 
-"MULTIPLE_TREES", 
-"UNRECOGNIZED_TAG", 
-"CONFLICTING_PROPERTY_VALUES", 
-"NO_TREES", 
-"DEPRECATED_PROPERTY", 
-"UNPARSEABLE_META", 
-"UNREACHABLE_NODE", 
-"INCORRECT_VALUE_TYPE", 
-"MISSING_CRUCIAL_CONTENT"
-], 
 "commandLine": [
 "--embed", 
-"--agent-only", 
-"-e", 
-"../mig-phyelesystem-scratch/818/validation.json", 
-"-o", 
-"../mig-phyelesystem-scratch/818/final.json", 
-"../mig-phyelesystem-scratch/818/v1.2.1-818.json"
+"--agent-only"
 ], 
 "otherProperty": [
 {
@@ -76,12 +39,19 @@
 }
 ]
 }, 
+"^ot:annotationEvents": {
+"annotation": []
+}, 
+"^ot:candidateTreeForSynthesis": [], 
 "^ot:curatorName": "Romina Gazis", 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S1710"
 }, 
 "^ot:focalClade": 959445, 
 "^ot:focalCladeOTTTaxonName": "Lactarius", 
+"^ot:messages": {
+"message": []
+}, 
 "^ot:otusElementOrder": [
 "otus818"
 ], 
@@ -92,8 +62,8 @@
 "^ot:studyPublicationReference": "Le H., Nuytinck J., Verbeken A., Lumyong S., & Desjardin D. 2007. Lactarius in Northern Thailand: 1. Lactarius subgenus Piperites. Fungal Diversity, 24: 111-162.", 
 "^ot:studyYear": 2007, 
 "^ot:tag": [
-"ML", 
-"ITS"
+"ITS", 
+"ML"
 ], 
 "^ot:treesElementOrder": [
 "trees818"
@@ -103,6 +73,8 @@
 "otuById": {
 "otu197691": {
 "^ot:originalLabel": "Lactarius speciosus", 
+"^ot:ottId": 783967, 
+"^ot:ottTaxonName": "Lactarius romagnesii", 
 "^ot:treebaseOTUId": "Tl12041"
 }, 
 "otu197692": {
@@ -363,9 +335,14 @@
 "treeById": {
 "tree1560": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "ML, ITS", 
 "^ot:inGroupClade": "node464449", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node464448", 
+"^ot:specifiedRoot": "", 
 "^ot:tag": [
 "ML", 
 "ITS"

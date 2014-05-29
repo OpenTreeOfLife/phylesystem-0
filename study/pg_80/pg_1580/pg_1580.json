@@ -19,48 +19,11 @@
 "@id": "peyotl-validator", 
 "@name": "validate_ot_nexson.py", 
 "@url": "https://github.com/OpenTreeOfLife/peyotl", 
-"@version": "0.0.3a", 
+"@version": "0.0.4a", 
 "invocation": {
-"checksPerformed": [
-"MISSING_MANDATORY_KEY", 
-"MISSING_OPTIONAL_KEY", 
-"UNRECOGNIZED_KEY", 
-"MISSING_LIST_EXPECTED", 
-"DUPLICATING_SINGLETON_KEY", 
-"REFERENCED_ID_NOT_FOUND", 
-"REPEATED_ID", 
-"REPEATED_OTU", 
-"MULTIPLE_ROOT_NODES", 
-"NO_ROOT_NODE", 
-"MULTIPLE_EDGES_FOR_NODES", 
-"CYCLE_DETECTED", 
-"DISCONNECTED_GRAPH_DETECTED", 
-"INCORRECT_ROOT_NODE_LABEL", 
-"TIP_WITHOUT_OTU", 
-"TIP_WITHOUT_OTT_ID", 
-"MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
-"NON_MONOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
-"INVALID_PROPERTY_VALUE", 
-"PROPERTY_VALUE_NOT_USEFUL", 
-"UNRECOGNIZED_PROPERTY_VALUE", 
-"MULTIPLE_TREES", 
-"UNRECOGNIZED_TAG", 
-"CONFLICTING_PROPERTY_VALUES", 
-"NO_TREES", 
-"DEPRECATED_PROPERTY", 
-"UNPARSEABLE_META", 
-"UNREACHABLE_NODE", 
-"INCORRECT_VALUE_TYPE", 
-"MISSING_CRUCIAL_CONTENT"
-], 
 "commandLine": [
 "--embed", 
-"--agent-only", 
-"-e", 
-"../mig-phyelesystem-scratch/1580/validation.json", 
-"-o", 
-"../mig-phyelesystem-scratch/1580/final.json", 
-"../mig-phyelesystem-scratch/1580/v1.2.1-1580.json"
+"--agent-only"
 ], 
 "otherProperty": [
 {
@@ -76,9 +39,16 @@
 }
 ]
 }, 
+"^ot:annotationEvents": {
+"annotation": []
+}, 
+"^ot:candidateTreeForSynthesis": [], 
 "^ot:curatorName": "Jiabin Deng", 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S1593"
+}, 
+"^ot:messages": {
+"message": []
 }, 
 "^ot:otusElementOrder": [
 "otus1580"
@@ -89,6 +59,7 @@
 }, 
 "^ot:studyPublicationReference": "Kemler M., Goeker M., Begerow D., & Oberwinkler F. 2006. Implications of molecular characters for the phylogeny of the Microbotryaceae (Basidiomycota: Urediniomycetes). BMC Evolutionary Biology, 6: 35.", 
 "^ot:studyYear": 2006, 
+"^ot:tag": [], 
 "^ot:treesElementOrder": [
 "trees1580"
 ], 
@@ -170,7 +141,7 @@
 "otu260587": {
 "^ot:originalLabel": "Microbotryum major", 
 "^ot:ottId": 226621, 
-"^ot:ottTaxonName": "Microbotryum majus", 
+"^ot:ottTaxonName": "Microbotryum major", 
 "^ot:treebaseOTUId": "Tl63934"
 }, 
 "otu260588": {
@@ -289,8 +260,8 @@
 }, 
 "otu260607": {
 "^ot:originalLabel": "Liroa emodensis", 
-"^ot:ottId": 132983, 
-"^ot:ottTaxonName": "Liroa emodensis", 
+"^ot:ottId": 5300831, 
+"^ot:ottTaxonName": "Microbotryum emodensis", 
 "^ot:treebaseOTUId": "Tl63954"
 }, 
 "otu260608": {
@@ -573,9 +544,15 @@
 "treeById": {
 "tree3179": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "Fig. 1", 
 "^ot:inGroupClade": "node643536", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node643535", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node643535": {
 "edge643536": {
@@ -1589,8 +1566,14 @@
 }, 
 "tree3180": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "mafft phyml", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node643679", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node643679": {
 "edge643680": {
@@ -2667,8 +2650,14 @@
 }, 
 "tree3181": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "Fig. 2", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node643832", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node643832": {
 "edge643833": {
@@ -3745,8 +3734,14 @@
 }, 
 "tree3182": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "poa phyml", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node643985", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node643985": {
 "edge643986": {
@@ -4823,8 +4818,14 @@
 }, 
 "tree3183": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "phyml", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node644138", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node644138": {
 "edge644139": {

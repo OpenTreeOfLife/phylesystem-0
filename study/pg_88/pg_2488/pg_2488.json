@@ -19,48 +19,11 @@
 "@id": "peyotl-validator", 
 "@name": "validate_ot_nexson.py", 
 "@url": "https://github.com/OpenTreeOfLife/peyotl", 
-"@version": "0.0.3a", 
+"@version": "0.0.4a", 
 "invocation": {
-"checksPerformed": [
-"MISSING_MANDATORY_KEY", 
-"MISSING_OPTIONAL_KEY", 
-"UNRECOGNIZED_KEY", 
-"MISSING_LIST_EXPECTED", 
-"DUPLICATING_SINGLETON_KEY", 
-"REFERENCED_ID_NOT_FOUND", 
-"REPEATED_ID", 
-"REPEATED_OTU", 
-"MULTIPLE_ROOT_NODES", 
-"NO_ROOT_NODE", 
-"MULTIPLE_EDGES_FOR_NODES", 
-"CYCLE_DETECTED", 
-"DISCONNECTED_GRAPH_DETECTED", 
-"INCORRECT_ROOT_NODE_LABEL", 
-"TIP_WITHOUT_OTU", 
-"TIP_WITHOUT_OTT_ID", 
-"MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
-"NON_MONOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
-"INVALID_PROPERTY_VALUE", 
-"PROPERTY_VALUE_NOT_USEFUL", 
-"UNRECOGNIZED_PROPERTY_VALUE", 
-"MULTIPLE_TREES", 
-"UNRECOGNIZED_TAG", 
-"CONFLICTING_PROPERTY_VALUES", 
-"NO_TREES", 
-"DEPRECATED_PROPERTY", 
-"UNPARSEABLE_META", 
-"UNREACHABLE_NODE", 
-"INCORRECT_VALUE_TYPE", 
-"MISSING_CRUCIAL_CONTENT"
-], 
 "commandLine": [
 "--embed", 
-"--agent-only", 
-"-e", 
-"../mig-phyelesystem-scratch/2488/validation.json", 
-"-o", 
-"../mig-phyelesystem-scratch/2488/final.json", 
-"../mig-phyelesystem-scratch/2488/v1.2.1-2488.json"
+"--agent-only"
 ], 
 "otherProperty": [
 {
@@ -76,12 +39,17 @@
 }
 ]
 }, 
+"^ot:annotationEvents": {
+"annotation": []
+}, 
+"^ot:candidateTreeForSynthesis": [], 
 "^ot:curatorName": "Romina Gazis", 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S951"
 }, 
-"^ot:focalClade": 2386555, 
-"^ot:focalCladeOTTTaxonName": "Merimbla", 
+"^ot:messages": {
+"message": []
+}, 
 "^ot:otusElementOrder": [
 "otus2488"
 ], 
@@ -91,6 +59,7 @@
 }, 
 "^ot:studyPublicationReference": "Bills G., Arias R., Reyes M., & Heredia G. 2001. Merimbla humicoloides sp.nov. from conifer forest soil of Veracruz State, Mexico. Molecular Ecology, 105(10): 1273-1279.", 
 "^ot:studyYear": 2001, 
+"^ot:tag": [], 
 "^ot:treesElementOrder": [
 "trees2488"
 ], 
@@ -99,8 +68,8 @@
 "otuById": {
 "otu359657": {
 "^ot:originalLabel": "Penicillium striatosporum", 
-"^ot:ottId": 409445, 
-"^ot:ottTaxonName": "Penicillium striatisporum", 
+"^ot:ottId": 298803, 
+"^ot:ottTaxonName": "Penicillium restrictum", 
 "^ot:treebaseOTUId": "Tl12450"
 }, 
 "otu359658": {
@@ -129,14 +98,12 @@
 }, 
 "otu359662": {
 "^ot:originalLabel": "Merimbla ingelheimense GB6187", 
-"^ot:ottId": 3755314, 
-"^ot:ottTaxonName": "Merimbla ingelheimense", 
 "^ot:treebaseOTUId": "Tl12456"
 }, 
 "otu359663": {
 "^ot:originalLabel": "Eupenicillium pinetorum", 
-"^ot:ottId": 562102, 
-"^ot:ottTaxonName": "Eupenicillium pinetorum", 
+"^ot:ottId": 937354, 
+"^ot:ottTaxonName": "Penicillium velutinum", 
 "^ot:treebaseOTUId": "Tl136111"
 }, 
 "otu359664": {
@@ -160,7 +127,7 @@
 "otu359667": {
 "^ot:originalLabel": "Byssochlamys nivea", 
 "^ot:ottId": 376368, 
-"^ot:ottTaxonName": "Byssochlamys nivea", 
+"^ot:ottTaxonName": "Paecilomyces niveus", 
 "^ot:treebaseOTUId": "Tl136117"
 }, 
 "otu359668": {
@@ -172,7 +139,7 @@
 "otu359669": {
 "^ot:originalLabel": "Penicillium aculeatum", 
 "^ot:ottId": 266166, 
-"^ot:ottTaxonName": "Talaromyces aculeatus", 
+"^ot:ottTaxonName": "Penicillium aculeatum", 
 "^ot:treebaseOTUId": "Tl136123"
 }, 
 "otu359670": {
@@ -183,14 +150,14 @@
 }, 
 "otu359671": {
 "^ot:originalLabel": "Paecilomyces variotii", 
-"^ot:ottId": 465462, 
+"^ot:ottId": 653422, 
 "^ot:ottTaxonName": "Paecilomyces variotii", 
 "^ot:treebaseOTUId": "Tl4673"
 }, 
 "otu359672": {
 "^ot:originalLabel": "Neosartorya fischeri", 
 "^ot:ottId": 890962, 
-"^ot:ottTaxonName": "Neosartorya fischeri", 
+"^ot:ottTaxonName": "Aspergillus fischerianus", 
 "^ot:treebaseOTUId": "Tl4679"
 }, 
 "otu359673": {
@@ -211,8 +178,14 @@
 "treeById": {
 "tree5349": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "MP, ITS", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node925016", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node925016": {
 "edge925017": {

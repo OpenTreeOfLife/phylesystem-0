@@ -19,48 +19,11 @@
 "@id": "peyotl-validator", 
 "@name": "validate_ot_nexson.py", 
 "@url": "https://github.com/OpenTreeOfLife/peyotl", 
-"@version": "0.0.3a", 
+"@version": "0.0.4a", 
 "invocation": {
-"checksPerformed": [
-"MISSING_MANDATORY_KEY", 
-"MISSING_OPTIONAL_KEY", 
-"UNRECOGNIZED_KEY", 
-"MISSING_LIST_EXPECTED", 
-"DUPLICATING_SINGLETON_KEY", 
-"REFERENCED_ID_NOT_FOUND", 
-"REPEATED_ID", 
-"REPEATED_OTU", 
-"MULTIPLE_ROOT_NODES", 
-"NO_ROOT_NODE", 
-"MULTIPLE_EDGES_FOR_NODES", 
-"CYCLE_DETECTED", 
-"DISCONNECTED_GRAPH_DETECTED", 
-"INCORRECT_ROOT_NODE_LABEL", 
-"TIP_WITHOUT_OTU", 
-"TIP_WITHOUT_OTT_ID", 
-"MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
-"NON_MONOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
-"INVALID_PROPERTY_VALUE", 
-"PROPERTY_VALUE_NOT_USEFUL", 
-"UNRECOGNIZED_PROPERTY_VALUE", 
-"MULTIPLE_TREES", 
-"UNRECOGNIZED_TAG", 
-"CONFLICTING_PROPERTY_VALUES", 
-"NO_TREES", 
-"DEPRECATED_PROPERTY", 
-"UNPARSEABLE_META", 
-"UNREACHABLE_NODE", 
-"INCORRECT_VALUE_TYPE", 
-"MISSING_CRUCIAL_CONTENT"
-], 
 "commandLine": [
 "--embed", 
-"--agent-only", 
-"-e", 
-"../mig-phyelesystem-scratch/1237/validation.json", 
-"-o", 
-"../mig-phyelesystem-scratch/1237/final.json", 
-"../mig-phyelesystem-scratch/1237/v1.2.1-1237.json"
+"--agent-only"
 ], 
 "otherProperty": [
 {
@@ -76,9 +39,16 @@
 }
 ]
 }, 
+"^ot:annotationEvents": {
+"annotation": []
+}, 
+"^ot:candidateTreeForSynthesis": [], 
 "^ot:curatorName": "Romina Gazis", 
 "^ot:focalClade": 734904, 
 "^ot:focalCladeOTTTaxonName": "Ampelomyces", 
+"^ot:messages": {
+"message": []
+}, 
 "^ot:otusElementOrder": [
 "otus1237"
 ], 
@@ -88,6 +58,7 @@
 }, 
 "^ot:studyPublicationReference": "Kiss, Levente, Alexandra Pintye, Gabor M. Kovacs, Tuende Jankovics, Michael C. Fontaine, Nick Harvey, Xiangming Xu et al. \"Temporal isolation explains host\u2010related genetic differentiation in a group of widespread mycoparasitic fungi.\" Molecular Ecology 20, no. 7 (2011): 1492-1507.", 
 "^ot:studyYear": 2011, 
+"^ot:tag": [], 
 "^ot:treesElementOrder": [
 "trees1237"
 ], 
@@ -270,7 +241,9 @@
 "^ot:ottTaxonName": "Ampelomyces"
 }, 
 "otu234603": {
-"^ot:originalLabel": "Ampelomyces sp. AY587139"
+"^ot:originalLabel": "Ampelomyces sp. AY587139", 
+"^ot:ottId": 734904, 
+"^ot:ottTaxonName": "Ampelomyces"
 }, 
 "otu234604": {
 "^ot:originalLabel": "Ampelomyces sp. AQ10 AF035783"
@@ -620,7 +593,9 @@
 "^ot:originalLabel": "Ampelomyces sp. A104-a"
 }, 
 "otu234675": {
-"^ot:originalLabel": "Ampelomyces sp. A105"
+"^ot:originalLabel": "Ampelomyces sp. A105", 
+"^ot:ottId": 734904, 
+"^ot:ottTaxonName": "Ampelomyces"
 }, 
 "otu234676": {
 "^ot:originalLabel": "Ampelomyces sp. JY1 DQ490761", 
@@ -1017,8 +992,14 @@
 "treeById": {
 "tree2491": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "MP, ITS", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node569739", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node569739": {
 "edge569740": {

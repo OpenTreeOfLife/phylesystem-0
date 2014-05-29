@@ -19,48 +19,11 @@
 "@id": "peyotl-validator", 
 "@name": "validate_ot_nexson.py", 
 "@url": "https://github.com/OpenTreeOfLife/peyotl", 
-"@version": "0.0.3a", 
+"@version": "0.0.4a", 
 "invocation": {
-"checksPerformed": [
-"MISSING_MANDATORY_KEY", 
-"MISSING_OPTIONAL_KEY", 
-"UNRECOGNIZED_KEY", 
-"MISSING_LIST_EXPECTED", 
-"DUPLICATING_SINGLETON_KEY", 
-"REFERENCED_ID_NOT_FOUND", 
-"REPEATED_ID", 
-"REPEATED_OTU", 
-"MULTIPLE_ROOT_NODES", 
-"NO_ROOT_NODE", 
-"MULTIPLE_EDGES_FOR_NODES", 
-"CYCLE_DETECTED", 
-"DISCONNECTED_GRAPH_DETECTED", 
-"INCORRECT_ROOT_NODE_LABEL", 
-"TIP_WITHOUT_OTU", 
-"TIP_WITHOUT_OTT_ID", 
-"MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
-"NON_MONOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
-"INVALID_PROPERTY_VALUE", 
-"PROPERTY_VALUE_NOT_USEFUL", 
-"UNRECOGNIZED_PROPERTY_VALUE", 
-"MULTIPLE_TREES", 
-"UNRECOGNIZED_TAG", 
-"CONFLICTING_PROPERTY_VALUES", 
-"NO_TREES", 
-"DEPRECATED_PROPERTY", 
-"UNPARSEABLE_META", 
-"UNREACHABLE_NODE", 
-"INCORRECT_VALUE_TYPE", 
-"MISSING_CRUCIAL_CONTENT"
-], 
 "commandLine": [
 "--embed", 
-"--agent-only", 
-"-e", 
-"../mig-phyelesystem-scratch/2626/validation.json", 
-"-o", 
-"../mig-phyelesystem-scratch/2626/final.json", 
-"../mig-phyelesystem-scratch/2626/v1.2.1-2626.json"
+"--agent-only"
 ], 
 "otherProperty": [
 {
@@ -76,15 +39,23 @@
 }
 ]
 }, 
+"^ot:annotationEvents": {
+"annotation": []
+}, 
+"^ot:candidateTreeForSynthesis": [], 
 "^ot:curatorName": "bryan drew", 
 "^ot:focalClade": 317791, 
 "^ot:focalCladeOTTTaxonName": "Amaranthaceae", 
+"^ot:messages": {
+"message": []
+}, 
 "^ot:otusElementOrder": [
 "otus2626"
 ], 
 "^ot:studyId": "2626", 
 "^ot:studyPublicationReference": "M\u00fcller, K., & Borsch, T. 2005b. Phylogenetics of Amaranthaceae based on matK/trnK sequence data - evidence from parsimony, likelihood, and Bayesian analysis. Ann. Missouri Bot. Gard. 92: 66-102.", 
 "^ot:studyYear": 2005, 
+"^ot:tag": [], 
 "^ot:treesElementOrder": [
 "trees2626"
 ], 
@@ -559,7 +530,9 @@
 "^ot:ottTaxonName": "Camphorosma monspeliaca"
 }, 
 "otu392820": {
-"^ot:originalLabel": "Bassia hirsuta AC 65"
+"^ot:originalLabel": "Bassia hirsuta AC 65", 
+"^ot:ottId": 214055, 
+"^ot:ottTaxonName": "Suaeda crassifolia"
 }, 
 "otu392821": {
 "^ot:originalLabel": "Salsola kali GC", 
@@ -684,9 +657,16 @@
 "treeById": {
 "tree6141": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "ML", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node1048320", 
-"^ot:tag": "delete", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [
+"delete"
+], 
 "edgeBySourceId": {
 "node1048320": {
 "edge1048321": {
@@ -1843,9 +1823,15 @@
 }, 
 "tree6142": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "ml", 
 "^ot:inGroupClade": "node1048468", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node1048464", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node1048464": {
 "edge1048465": {

@@ -19,48 +19,11 @@
 "@id": "peyotl-validator", 
 "@name": "validate_ot_nexson.py", 
 "@url": "https://github.com/OpenTreeOfLife/peyotl", 
-"@version": "0.0.3a", 
+"@version": "0.0.4a", 
 "invocation": {
-"checksPerformed": [
-"MISSING_MANDATORY_KEY", 
-"MISSING_OPTIONAL_KEY", 
-"UNRECOGNIZED_KEY", 
-"MISSING_LIST_EXPECTED", 
-"DUPLICATING_SINGLETON_KEY", 
-"REFERENCED_ID_NOT_FOUND", 
-"REPEATED_ID", 
-"REPEATED_OTU", 
-"MULTIPLE_ROOT_NODES", 
-"NO_ROOT_NODE", 
-"MULTIPLE_EDGES_FOR_NODES", 
-"CYCLE_DETECTED", 
-"DISCONNECTED_GRAPH_DETECTED", 
-"INCORRECT_ROOT_NODE_LABEL", 
-"TIP_WITHOUT_OTU", 
-"TIP_WITHOUT_OTT_ID", 
-"MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
-"NON_MONOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
-"INVALID_PROPERTY_VALUE", 
-"PROPERTY_VALUE_NOT_USEFUL", 
-"UNRECOGNIZED_PROPERTY_VALUE", 
-"MULTIPLE_TREES", 
-"UNRECOGNIZED_TAG", 
-"CONFLICTING_PROPERTY_VALUES", 
-"NO_TREES", 
-"DEPRECATED_PROPERTY", 
-"UNPARSEABLE_META", 
-"UNREACHABLE_NODE", 
-"INCORRECT_VALUE_TYPE", 
-"MISSING_CRUCIAL_CONTENT"
-], 
 "commandLine": [
 "--embed", 
-"--agent-only", 
-"-e", 
-"../mig-phyelesystem-scratch/2688/validation.json", 
-"-o", 
-"../mig-phyelesystem-scratch/2688/final.json", 
-"../mig-phyelesystem-scratch/2688/v1.2.1-2688.json"
+"--agent-only"
 ], 
 "otherProperty": [
 {
@@ -76,9 +39,16 @@
 }
 ]
 }, 
+"^ot:annotationEvents": {
+"annotation": []
+}, 
+"^ot:candidateTreeForSynthesis": [], 
 "^ot:curatorName": "Joseph Brown", 
 "^ot:focalClade": 864593, 
 "^ot:focalCladeOTTTaxonName": "Rodentia", 
+"^ot:messages": {
+"message": []
+}, 
 "^ot:otusElementOrder": [
 "otus2688"
 ], 
@@ -86,9 +56,11 @@
 "^ot:studyPublication": {
 "@href": "http://dx.doi.org/10.1186/1471-2148-12-88"
 }, 
-"^ot:studyPublicationReference": "Pierre-Henri Fabre, Lionel Hautier, Dimitar Dimitrov, Emmanuel J P Douzery. 2012. A glimpse on the pattern of rodent diversification: a phylogenetic approach. BMC Evolutionary Biology 12 (1): 88.", 
+"^ot:studyPublicationReference": "Fabre, Pierre-Henri, Lionel Hautier, Dimitar Dimitrov, Emmanuel J P Douzery. 2012. A glimpse on the pattern of rodent diversification: a phylogenetic approach. BMC Evolutionary Biology 12 (1): 88.", 
 "^ot:studyYear": 2012, 
-"^ot:tag": "ingroup added;", 
+"^ot:tag": [
+"ingroup added;"
+], 
 "^ot:treesElementOrder": [
 "trees2688"
 ], 
@@ -151,7 +123,9 @@
 "^ot:ottTaxonName": "Chaetocauda sichuanensis"
 }, 
 "otu401712": {
-"^ot:originalLabel": "Selevinia betpakdalaensis"
+"^ot:originalLabel": "Selevinia betpakdalaensis", 
+"^ot:ottId": 3610934, 
+"^ot:ottTaxonName": "Selevinia betpakdalaensis"
 }, 
 "otu401713": {
 "^ot:originalLabel": "Glirulus japonicus", 
@@ -624,7 +598,9 @@
 "^ot:ottTaxonName": "Hylopetes phayrei"
 }, 
 "otu401807": {
-"^ot:originalLabel": "Iomys horsfieldii"
+"^ot:originalLabel": "Iomys horsfieldii", 
+"^ot:ottId": 427314, 
+"^ot:ottTaxonName": "Iomys horsfieldi"
 }, 
 "otu401808": {
 "^ot:originalLabel": "Iomys sipora", 
@@ -1817,7 +1793,9 @@
 "^ot:ottTaxonName": "Coendou pruinosus"
 }, 
 "otu402046": {
-"^ot:originalLabel": "Sphiggurus roosmalenorum"
+"^ot:originalLabel": "Sphiggurus roosmalenorum", 
+"^ot:ottId": 3609654, 
+"^ot:ottTaxonName": "Sphiggurus roosmalenorum"
 }, 
 "otu402047": {
 "^ot:originalLabel": "Sphiggurus spinosus", 
@@ -7966,7 +7944,9 @@
 "^ot:ottTaxonName": "Mus bufo"
 }, 
 "otu403277": {
-"^ot:originalLabel": "Mus mahomet"
+"^ot:originalLabel": "Mus mahomet", 
+"^ot:ottId": 403204, 
+"^ot:ottTaxonName": "Mus emesi"
 }, 
 "otu403278": {
 "^ot:originalLabel": "Mus setulosus", 
@@ -11393,11 +11373,15 @@
 "treeById": {
 "tree6240": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
 "^ot:branchLengthMode": "ot:time", 
 "^ot:branchLengthTimeUnit": "Myr", 
 "^ot:curatedType": "BEAST chronogram", 
 "^ot:inGroupClade": "node1077764", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node1077764", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node1077764": {
 "edge1077765": {

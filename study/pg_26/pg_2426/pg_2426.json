@@ -19,48 +19,11 @@
 "@id": "peyotl-validator", 
 "@name": "validate_ot_nexson.py", 
 "@url": "https://github.com/OpenTreeOfLife/peyotl", 
-"@version": "0.0.3a", 
+"@version": "0.0.4a", 
 "invocation": {
-"checksPerformed": [
-"MISSING_MANDATORY_KEY", 
-"MISSING_OPTIONAL_KEY", 
-"UNRECOGNIZED_KEY", 
-"MISSING_LIST_EXPECTED", 
-"DUPLICATING_SINGLETON_KEY", 
-"REFERENCED_ID_NOT_FOUND", 
-"REPEATED_ID", 
-"REPEATED_OTU", 
-"MULTIPLE_ROOT_NODES", 
-"NO_ROOT_NODE", 
-"MULTIPLE_EDGES_FOR_NODES", 
-"CYCLE_DETECTED", 
-"DISCONNECTED_GRAPH_DETECTED", 
-"INCORRECT_ROOT_NODE_LABEL", 
-"TIP_WITHOUT_OTU", 
-"TIP_WITHOUT_OTT_ID", 
-"MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
-"NON_MONOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
-"INVALID_PROPERTY_VALUE", 
-"PROPERTY_VALUE_NOT_USEFUL", 
-"UNRECOGNIZED_PROPERTY_VALUE", 
-"MULTIPLE_TREES", 
-"UNRECOGNIZED_TAG", 
-"CONFLICTING_PROPERTY_VALUES", 
-"NO_TREES", 
-"DEPRECATED_PROPERTY", 
-"UNPARSEABLE_META", 
-"UNREACHABLE_NODE", 
-"INCORRECT_VALUE_TYPE", 
-"MISSING_CRUCIAL_CONTENT"
-], 
 "commandLine": [
 "--embed", 
-"--agent-only", 
-"-e", 
-"../mig-phyelesystem-scratch/2426/validation.json", 
-"-o", 
-"../mig-phyelesystem-scratch/2426/final.json", 
-"../mig-phyelesystem-scratch/2426/v1.2.1-2426.json"
+"--agent-only"
 ], 
 "otherProperty": [
 {
@@ -76,12 +39,19 @@
 }
 ]
 }, 
+"^ot:annotationEvents": {
+"annotation": []
+}, 
+"^ot:candidateTreeForSynthesis": [], 
 "^ot:curatorName": "Chris Owen", 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S640"
 }, 
 "^ot:focalClade": 965954, 
 "^ot:focalCladeOTTTaxonName": "Lepidoptera", 
+"^ot:messages": {
+"message": []
+}, 
 "^ot:otusElementOrder": [
 "otus2426"
 ], 
@@ -91,6 +61,7 @@
 }, 
 "^ot:studyPublicationReference": "De Jong R., Vane-Wright R., & Ackery P. 1996. The higher classification of butterflies: problems and prospects. Entomologica Scandinavica 27 (1): 65-101.", 
 "^ot:studyYear": 1996, 
+"^ot:tag": [], 
 "^ot:treesElementOrder": [
 "trees2426"
 ], 
@@ -304,6 +275,7 @@
 "otu345777": {
 "^ot:originalLabel": "Mustilia falcipennis", 
 "^ot:ottId": 4236075, 
+"^ot:ottTaxonName": "Mustilia falcipennis", 
 "^ot:treebaseOTUId": "Tl95657"
 }, 
 "otu345778": {
@@ -314,6 +286,8 @@
 }, 
 "otu345779": {
 "^ot:originalLabel": "Rhodoneura opalinula", 
+"^ot:ottId": 3160874, 
+"^ot:ottTaxonName": "Rhodoneura opalinula", 
 "^ot:treebaseOTUId": "Tl95659"
 }, 
 "otu345780": {
@@ -331,12 +305,13 @@
 "otu345782": {
 "^ot:originalLabel": "Urania leilus", 
 "^ot:ottId": 3066986, 
+"^ot:ottTaxonName": "Urania leilus", 
 "^ot:treebaseOTUId": "Tl95662"
 }, 
 "otu345783": {
-"^ot:altLabel": "Castnia", 
 "^ot:originalLabel": "Castnia icarus", 
 "^ot:ottId": 1055006, 
+"^ot:ottTaxonName": "Castnia", 
 "^ot:treebaseOTUId": "Tl95663"
 }, 
 "otu345784": {
@@ -354,11 +329,13 @@
 "otu345786": {
 "^ot:originalLabel": "Tortrix viridana", 
 "^ot:ottId": 575683, 
+"^ot:ottTaxonName": "Tortrix viridana", 
 "^ot:treebaseOTUId": "Tl95666"
 }, 
 "otu345787": {
 "^ot:originalLabel": "Thyatira batis", 
 "^ot:ottId": 192280, 
+"^ot:ottTaxonName": "Thyatira batis", 
 "^ot:treebaseOTUId": "Tl95667"
 }, 
 "otu345788": {
@@ -392,9 +369,9 @@
 "^ot:treebaseOTUId": "Tl95672"
 }, 
 "otu345793": {
-"^ot:altLabel": "Petavia petavius", 
 "^ot:originalLabel": "Callidula petavius", 
 "^ot:ottId": 4236154, 
+"^ot:ottTaxonName": "Petavia petavius", 
 "^ot:treebaseOTUId": "Tl95673"
 }, 
 "otu345794": {
@@ -406,6 +383,7 @@
 "otu345795": {
 "^ot:originalLabel": "Poecilocampa populi", 
 "^ot:ottId": 168571, 
+"^ot:ottTaxonName": "Poecilocampa populi", 
 "^ot:treebaseOTUId": "Tl95675"
 }, 
 "otu345796": {
@@ -453,26 +431,31 @@
 "otu345803": {
 "^ot:originalLabel": "Lymantria monacha", 
 "^ot:ottId": 956407, 
+"^ot:ottTaxonName": "Lymantria monacha", 
 "^ot:treebaseOTUId": "Tl95683"
 }, 
 "otu345804": {
 "^ot:originalLabel": "Macrosoma tipulata", 
 "^ot:ottId": 296770, 
+"^ot:ottTaxonName": "Macrosoma tipulata", 
 "^ot:treebaseOTUId": "Tl95684"
 }, 
 "otu345805": {
 "^ot:originalLabel": "Othreis fullonia", 
 "^ot:ottId": 4248525, 
+"^ot:ottTaxonName": "Othreis fullonia", 
 "^ot:treebaseOTUId": "Tl95685"
 }, 
 "otu345806": {
 "^ot:originalLabel": "Thaumetopoea processionea", 
 "^ot:ottId": 3214077, 
+"^ot:ottTaxonName": "Thaumetopoea processionea", 
 "^ot:treebaseOTUId": "Tl95686"
 }, 
 "otu345807": {
 "^ot:originalLabel": "Archiearis parthenias", 
 "^ot:ottId": 795994, 
+"^ot:ottTaxonName": "Archiearis parthenias", 
 "^ot:treebaseOTUId": "Tl95687"
 }, 
 "otu345808": {
@@ -489,6 +472,8 @@
 }, 
 "otu345810": {
 "^ot:originalLabel": "Pyrrhopyge phidias", 
+"^ot:ottId": 1047428, 
+"^ot:ottTaxonName": "Pyrrhopyge zenodorus", 
 "^ot:treebaseOTUId": "Tl95690"
 }, 
 "otu345811": {
@@ -512,11 +497,13 @@
 "otu345814": {
 "^ot:originalLabel": "Crambus pascuella", 
 "^ot:ottId": 127215, 
+"^ot:ottTaxonName": "Crambus pascuella", 
 "^ot:treebaseOTUId": "Tl95694"
 }, 
 "otu345815": {
 "^ot:originalLabel": "Pyralis farinalis", 
 "^ot:ottId": 929861, 
+"^ot:ottTaxonName": "Pyralis farinalis", 
 "^ot:treebaseOTUId": "Tl95695"
 }, 
 "otu345816": {
@@ -544,9 +531,15 @@
 "treeById": {
 "tree5122": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "Fig. 4", 
 "^ot:inGroupClade": "node888368", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node888367", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node888367": {
 "edge888368": {
@@ -1273,9 +1266,15 @@
 }, 
 "tree5123": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "Fig. 5", 
 "^ot:inGroupClade": "node888471", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node888470", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node888470": {
 "edge888471": {
@@ -1995,9 +1994,15 @@
 }, 
 "tree5124": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "Fig. 6a", 
 "^ot:inGroupClade": "node888573", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node888572", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node888572": {
 "edge888573": {
@@ -2388,9 +2393,15 @@
 }, 
 "tree5125": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "Fig. 6b", 
 "^ot:inGroupClade": "node888628", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node888627", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node888627": {
 "edge888628": {

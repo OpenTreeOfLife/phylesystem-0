@@ -19,48 +19,11 @@
 "@id": "peyotl-validator", 
 "@name": "validate_ot_nexson.py", 
 "@url": "https://github.com/OpenTreeOfLife/peyotl", 
-"@version": "0.0.3a", 
+"@version": "0.0.4a", 
 "invocation": {
-"checksPerformed": [
-"MISSING_MANDATORY_KEY", 
-"MISSING_OPTIONAL_KEY", 
-"UNRECOGNIZED_KEY", 
-"MISSING_LIST_EXPECTED", 
-"DUPLICATING_SINGLETON_KEY", 
-"REFERENCED_ID_NOT_FOUND", 
-"REPEATED_ID", 
-"REPEATED_OTU", 
-"MULTIPLE_ROOT_NODES", 
-"NO_ROOT_NODE", 
-"MULTIPLE_EDGES_FOR_NODES", 
-"CYCLE_DETECTED", 
-"DISCONNECTED_GRAPH_DETECTED", 
-"INCORRECT_ROOT_NODE_LABEL", 
-"TIP_WITHOUT_OTU", 
-"TIP_WITHOUT_OTT_ID", 
-"MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
-"NON_MONOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
-"INVALID_PROPERTY_VALUE", 
-"PROPERTY_VALUE_NOT_USEFUL", 
-"UNRECOGNIZED_PROPERTY_VALUE", 
-"MULTIPLE_TREES", 
-"UNRECOGNIZED_TAG", 
-"CONFLICTING_PROPERTY_VALUES", 
-"NO_TREES", 
-"DEPRECATED_PROPERTY", 
-"UNPARSEABLE_META", 
-"UNREACHABLE_NODE", 
-"INCORRECT_VALUE_TYPE", 
-"MISSING_CRUCIAL_CONTENT"
-], 
 "commandLine": [
 "--embed", 
-"--agent-only", 
-"-e", 
-"../mig-phyelesystem-scratch/1346/validation.json", 
-"-o", 
-"../mig-phyelesystem-scratch/1346/final.json", 
-"../mig-phyelesystem-scratch/1346/v1.2.1-1346.json"
+"--agent-only"
 ], 
 "otherProperty": [
 {
@@ -76,12 +39,19 @@
 }
 ]
 }, 
+"^ot:annotationEvents": {
+"annotation": []
+}, 
+"^ot:candidateTreeForSynthesis": [], 
 "^ot:curatorName": "Chris Owen", 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S11762"
 }, 
 "^ot:focalClade": 802117, 
 "^ot:focalCladeOTTTaxonName": "Mollusca", 
+"^ot:messages": {
+"message": []
+}, 
 "^ot:otusElementOrder": [
 "otus1346"
 ], 
@@ -91,6 +61,7 @@
 }, 
 "^ot:studyPublicationReference": "Kocot K.M., Cannon J.T., Todt C., Citarella M.R., Kohn A.B., Meyer A., Santos S.R., Schander C., Moroz L.L., Lieb B., & Halanych K. 2011. Phylogenomics reveals deep molluscan relationships. Nature 477 (7365): 452\u2013456.", 
 "^ot:studyYear": 2011, 
+"^ot:tag": [], 
 "^ot:treesElementOrder": [
 "trees1346"
 ], 
@@ -160,6 +131,7 @@
 "otu243895": {
 "^ot:originalLabel": "Theodoxus fluviatilis", 
 "^ot:ottId": 738426, 
+"^ot:ottTaxonName": "Theodoxus fluviatilis", 
 "^ot:treebaseOTUId": "Tl595029"
 }, 
 "otu243896": {
@@ -391,42 +363,49 @@
 "otu243934": {
 "^ot:originalLabel": "Symbion pandora", 
 "^ot:ottId": 41146, 
+"^ot:ottTaxonName": "Symbion pandora", 
 "^ot:treebaseOTUId": "Tl595068"
 }, 
 "otu243935": {
-"^ot:altLabel": "Theodoxus fluviatilis", 
 "^ot:originalLabel": "Theodoxus fluviatilis B", 
 "^ot:ottId": 738426, 
+"^ot:ottTaxonName": "Theodoxus fluviatilis", 
 "^ot:treebaseOTUId": "Tl595069"
 }, 
 "otu243936": {
 "^ot:originalLabel": "Cerebratulus lacteus", 
 "^ot:ottId": 971433, 
+"^ot:ottTaxonName": "Cerebratulus lacteus", 
 "^ot:treebaseOTUId": "Tl595070"
 }, 
 "otu243937": {
 "^ot:originalLabel": "Nematostella vectensis", 
 "^ot:ottId": 938118, 
+"^ot:ottTaxonName": "Nematostella vectensis", 
 "^ot:treebaseOTUId": "Tl595071"
 }, 
 "otu243938": {
 "^ot:originalLabel": "Terebratalia transversa", 
 "^ot:ottId": 463351, 
+"^ot:ottTaxonName": "Terebratalia transversa", 
 "^ot:treebaseOTUId": "Tl595072"
 }, 
 "otu243939": {
 "^ot:originalLabel": "Carinoma mutabilis", 
 "^ot:ottId": 935285, 
+"^ot:ottTaxonName": "Carinoma mutabilis", 
 "^ot:treebaseOTUId": "Tl595073"
 }, 
 "otu243940": {
 "^ot:originalLabel": "Pedicellina", 
 "^ot:ottId": 362914, 
+"^ot:ottTaxonName": "Pedicellina", 
 "^ot:treebaseOTUId": "Tl595074"
 }, 
 "otu243941": {
 "^ot:originalLabel": "Barentsia elongata", 
 "^ot:ottId": 769973, 
+"^ot:ottTaxonName": "Barentsia elongata", 
 "^ot:treebaseOTUId": "Tl595075"
 }
 }
@@ -441,10 +420,15 @@
 "treeById": {
 "tree2678": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
 "^ot:branchLengthMode": "ot:substitutionCount", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "Fig. 2", 
 "^ot:inGroupClade": "node592096", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node592082", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node592082": {
 "edge592083": {

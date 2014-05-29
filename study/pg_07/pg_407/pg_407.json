@@ -19,48 +19,11 @@
 "@id": "peyotl-validator", 
 "@name": "validate_ot_nexson.py", 
 "@url": "https://github.com/OpenTreeOfLife/peyotl", 
-"@version": "0.0.3a", 
+"@version": "0.0.4a", 
 "invocation": {
-"checksPerformed": [
-"MISSING_MANDATORY_KEY", 
-"MISSING_OPTIONAL_KEY", 
-"UNRECOGNIZED_KEY", 
-"MISSING_LIST_EXPECTED", 
-"DUPLICATING_SINGLETON_KEY", 
-"REFERENCED_ID_NOT_FOUND", 
-"REPEATED_ID", 
-"REPEATED_OTU", 
-"MULTIPLE_ROOT_NODES", 
-"NO_ROOT_NODE", 
-"MULTIPLE_EDGES_FOR_NODES", 
-"CYCLE_DETECTED", 
-"DISCONNECTED_GRAPH_DETECTED", 
-"INCORRECT_ROOT_NODE_LABEL", 
-"TIP_WITHOUT_OTU", 
-"TIP_WITHOUT_OTT_ID", 
-"MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
-"NON_MONOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
-"INVALID_PROPERTY_VALUE", 
-"PROPERTY_VALUE_NOT_USEFUL", 
-"UNRECOGNIZED_PROPERTY_VALUE", 
-"MULTIPLE_TREES", 
-"UNRECOGNIZED_TAG", 
-"CONFLICTING_PROPERTY_VALUES", 
-"NO_TREES", 
-"DEPRECATED_PROPERTY", 
-"UNPARSEABLE_META", 
-"UNREACHABLE_NODE", 
-"INCORRECT_VALUE_TYPE", 
-"MISSING_CRUCIAL_CONTENT"
-], 
 "commandLine": [
 "--embed", 
-"--agent-only", 
-"-e", 
-"../mig-phyelesystem-scratch/407/validation.json", 
-"-o", 
-"../mig-phyelesystem-scratch/407/final.json", 
-"../mig-phyelesystem-scratch/407/v1.2.1-407.json"
+"--agent-only"
 ], 
 "otherProperty": [
 {
@@ -76,12 +39,19 @@
 }
 ]
 }, 
+"^ot:annotationEvents": {
+"annotation": []
+}, 
+"^ot:candidateTreeForSynthesis": [], 
 "^ot:curatorName": "Romina Gazis", 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S1335"
 }, 
 "^ot:focalClade": 250591, 
 "^ot:focalCladeOTTTaxonName": "Penicillium", 
+"^ot:messages": {
+"message": []
+}, 
 "^ot:otusElementOrder": [
 "otus407"
 ], 
@@ -91,6 +61,7 @@
 }, 
 "^ot:studyPublicationReference": "Peterson, Stephen W., Fernando E. Vega, Francisco Posada, and Chifumi Nagai. \"Penicillium coffeae, a new endophytic species isolated from a coffee plant and its phylogenetic relationship to P. fellutanum, P. thiersii and P. brocae based on parsimony analysis of multilocus DNA sequences.\" Mycologia 97, no. 3 (2005): 659-666.", 
 "^ot:studyYear": 2005, 
+"^ot:tag": [], 
 "^ot:treesElementOrder": [
 "trees407"
 ], 
@@ -105,10 +76,14 @@
 }, 
 "otu78536": {
 "^ot:originalLabel": "Penicillium charlesii", 
+"^ot:ottId": 424442, 
+"^ot:ottTaxonName": "Penicillium dierckxii", 
 "^ot:treebaseOTUId": "Tl11667"
 }, 
 "otu78537": {
 "^ot:originalLabel": "Penicillium fellutanum", 
+"^ot:ottId": 424442, 
+"^ot:ottTaxonName": "Penicillium dierckxii", 
 "^ot:treebaseOTUId": "Tl11689"
 }, 
 "otu78538": {
@@ -125,6 +100,8 @@
 }, 
 "otu78540": {
 "^ot:originalLabel": "Penicillium fellutanum var nigrocastaneum", 
+"^ot:ottId": 424442, 
+"^ot:ottTaxonName": "Penicillium dierckxii", 
 "^ot:treebaseOTUId": "Tl36520"
 }, 
 "otu78541": {
@@ -165,6 +142,8 @@
 }, 
 "otu78547": {
 "^ot:originalLabel": "Penicillium charlesii 1887", 
+"^ot:ottId": 424442, 
+"^ot:ottTaxonName": "Penicillium dierckxii", 
 "^ot:treebaseOTUId": "Tl36527"
 }, 
 "otu78548": {
@@ -205,6 +184,8 @@
 }, 
 "otu78554": {
 "^ot:originalLabel": "Penicillium indicum", 
+"^ot:ottId": 288454, 
+"^ot:ottTaxonName": "Penicillium chermesinum", 
 "^ot:treebaseOTUId": "Tl36534"
 }, 
 "otu78555": {
@@ -215,6 +196,8 @@
 }, 
 "otu78556": {
 "^ot:originalLabel": "Penicillium charlesii 778", 
+"^ot:ottId": 424442, 
+"^ot:ottTaxonName": "Penicillium dierckxii", 
 "^ot:treebaseOTUId": "Tl36536"
 }, 
 "otu78557": {
@@ -279,6 +262,8 @@
 }, 
 "otu78567": {
 "^ot:originalLabel": "Penicillium indicum 3387", 
+"^ot:ottId": 288454, 
+"^ot:ottTaxonName": "Penicillium chermesinum", 
 "^ot:treebaseOTUId": "Tl36547"
 }, 
 "otu78568": {
@@ -295,6 +280,8 @@
 }, 
 "otu78570": {
 "^ot:originalLabel": "Penicillium felllutanum 746", 
+"^ot:ottId": 424442, 
+"^ot:ottTaxonName": "Penicillium dierckxii", 
 "^ot:treebaseOTUId": "Tl36550"
 }
 }
@@ -311,9 +298,15 @@
 "treeById": {
 "tree511": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "MP, calmodulin", 
 "^ot:inGroupClade": "node207818", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node207816", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node207816": {
 "edge207817": {
@@ -424,9 +417,15 @@
 }, 
 "tree512": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "MP, EF-1", 
 "^ot:inGroupClade": "node207833", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node207831", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node207831": {
 "edge207832": {
@@ -537,9 +536,14 @@
 }, 
 "tree513": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "MP, ITS + calmodulin + EF-1", 
 "^ot:inGroupClade": "node207848", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node207846", 
+"^ot:specifiedRoot": "", 
 "^ot:tag": [
 "MP", 
 "Choose me"

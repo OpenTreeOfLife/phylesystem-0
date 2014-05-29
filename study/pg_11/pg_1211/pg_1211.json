@@ -19,48 +19,11 @@
 "@id": "peyotl-validator", 
 "@name": "validate_ot_nexson.py", 
 "@url": "https://github.com/OpenTreeOfLife/peyotl", 
-"@version": "0.0.3a", 
+"@version": "0.0.4a", 
 "invocation": {
-"checksPerformed": [
-"MISSING_MANDATORY_KEY", 
-"MISSING_OPTIONAL_KEY", 
-"UNRECOGNIZED_KEY", 
-"MISSING_LIST_EXPECTED", 
-"DUPLICATING_SINGLETON_KEY", 
-"REFERENCED_ID_NOT_FOUND", 
-"REPEATED_ID", 
-"REPEATED_OTU", 
-"MULTIPLE_ROOT_NODES", 
-"NO_ROOT_NODE", 
-"MULTIPLE_EDGES_FOR_NODES", 
-"CYCLE_DETECTED", 
-"DISCONNECTED_GRAPH_DETECTED", 
-"INCORRECT_ROOT_NODE_LABEL", 
-"TIP_WITHOUT_OTU", 
-"TIP_WITHOUT_OTT_ID", 
-"MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
-"NON_MONOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
-"INVALID_PROPERTY_VALUE", 
-"PROPERTY_VALUE_NOT_USEFUL", 
-"UNRECOGNIZED_PROPERTY_VALUE", 
-"MULTIPLE_TREES", 
-"UNRECOGNIZED_TAG", 
-"CONFLICTING_PROPERTY_VALUES", 
-"NO_TREES", 
-"DEPRECATED_PROPERTY", 
-"UNPARSEABLE_META", 
-"UNREACHABLE_NODE", 
-"INCORRECT_VALUE_TYPE", 
-"MISSING_CRUCIAL_CONTENT"
-], 
 "commandLine": [
 "--embed", 
-"--agent-only", 
-"-e", 
-"../mig-phyelesystem-scratch/1211/validation.json", 
-"-o", 
-"../mig-phyelesystem-scratch/1211/final.json", 
-"../mig-phyelesystem-scratch/1211/v1.2.1-1211.json"
+"--agent-only"
 ], 
 "otherProperty": [
 {
@@ -76,9 +39,16 @@
 }
 ]
 }, 
+"^ot:annotationEvents": {
+"annotation": []
+}, 
+"^ot:candidateTreeForSynthesis": [], 
 "^ot:curatorName": "Romina Gazis", 
 "^ot:focalClade": 961722, 
 "^ot:focalCladeOTTTaxonName": "Polyporus", 
+"^ot:messages": {
+"message": []
+}, 
 "^ot:otusElementOrder": [
 "otus1211"
 ], 
@@ -88,6 +58,7 @@
 }, 
 "^ot:studyPublicationReference": "Sotome, Kozue, Tsutomu Hattori, and Yuko Ota. \"Taxonomic study on a threatened polypore, Polyporus pseudobetulinus, and a morphologically similar species, P. subvarius.\" Mycoscience 52, no. 5 (2011): 319-326.", 
 "^ot:studyYear": 2011, 
+"^ot:tag": [], 
 "^ot:treesElementOrder": [
 "trees1211"
 ], 
@@ -163,7 +134,9 @@
 "^ot:ottTaxonName": "Polyporus subvarius"
 }, 
 "otu232546": {
-"^ot:originalLabel": "Polyporus badius"
+"^ot:originalLabel": "Polyporus badius", 
+"^ot:ottId": 5300029, 
+"^ot:ottTaxonName": "Polyporus badius"
 }, 
 "otu232547": {
 "^ot:originalLabel": "Polyporus tubaeformis", 
@@ -171,7 +144,9 @@
 "^ot:ottTaxonName": "Polyporus tubaeformis"
 }, 
 "otu232548": {
-"^ot:originalLabel": "Polyporus tenuiculus"
+"^ot:originalLabel": "Polyporus tenuiculus", 
+"^ot:ottId": 5299751, 
+"^ot:ottTaxonName": "Favolus tenuiculus"
 }, 
 "otu232549": {
 "^ot:originalLabel": "Polyporus grammocephalus WD2351", 
@@ -179,13 +154,19 @@
 "^ot:ottTaxonName": "Polyporus grammocephalus"
 }, 
 "otu232550": {
-"^ot:originalLabel": "Polyporus pseudobetulinus TRTC51022"
+"^ot:originalLabel": "Polyporus pseudobetulinus TRTC51022", 
+"^ot:ottId": 5299876, 
+"^ot:ottTaxonName": "Royoporus pseudobetulinus"
 }, 
 "otu232551": {
-"^ot:originalLabel": "Polyporus pseudobetulinus 27567"
+"^ot:originalLabel": "Polyporus pseudobetulinus 27567", 
+"^ot:ottId": 5299876, 
+"^ot:ottTaxonName": "Royoporus pseudobetulinus"
 }, 
 "otu232552": {
-"^ot:originalLabel": "Polyporus pseudobetulinus 22626"
+"^ot:originalLabel": "Polyporus pseudobetulinus 22626", 
+"^ot:ottId": 5299876, 
+"^ot:ottTaxonName": "Royoporus pseudobetulinus"
 }, 
 "otu232553": {
 "^ot:originalLabel": "Polyporus grammocephalus WD2343", 
@@ -225,10 +206,17 @@
 "treeById": {
 "tree2439": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "MP, LSU + ITS", 
 "^ot:inGroupClade": "node564364", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node564359", 
-"^ot:tag": "LSU", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [
+"LSU"
+], 
 "edgeBySourceId": {
 "node564359": {
 "edge564360": {
@@ -570,9 +558,15 @@
 }, 
 "tree2440": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "ML, LSU + ITS", 
 "^ot:inGroupClade": "node564408", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node564407", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node564407": {
 "edge564408": {

@@ -19,48 +19,11 @@
 "@id": "peyotl-validator", 
 "@name": "validate_ot_nexson.py", 
 "@url": "https://github.com/OpenTreeOfLife/peyotl", 
-"@version": "0.0.3a", 
+"@version": "0.0.4a", 
 "invocation": {
-"checksPerformed": [
-"MISSING_MANDATORY_KEY", 
-"MISSING_OPTIONAL_KEY", 
-"UNRECOGNIZED_KEY", 
-"MISSING_LIST_EXPECTED", 
-"DUPLICATING_SINGLETON_KEY", 
-"REFERENCED_ID_NOT_FOUND", 
-"REPEATED_ID", 
-"REPEATED_OTU", 
-"MULTIPLE_ROOT_NODES", 
-"NO_ROOT_NODE", 
-"MULTIPLE_EDGES_FOR_NODES", 
-"CYCLE_DETECTED", 
-"DISCONNECTED_GRAPH_DETECTED", 
-"INCORRECT_ROOT_NODE_LABEL", 
-"TIP_WITHOUT_OTU", 
-"TIP_WITHOUT_OTT_ID", 
-"MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
-"NON_MONOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
-"INVALID_PROPERTY_VALUE", 
-"PROPERTY_VALUE_NOT_USEFUL", 
-"UNRECOGNIZED_PROPERTY_VALUE", 
-"MULTIPLE_TREES", 
-"UNRECOGNIZED_TAG", 
-"CONFLICTING_PROPERTY_VALUES", 
-"NO_TREES", 
-"DEPRECATED_PROPERTY", 
-"UNPARSEABLE_META", 
-"UNREACHABLE_NODE", 
-"INCORRECT_VALUE_TYPE", 
-"MISSING_CRUCIAL_CONTENT"
-], 
 "commandLine": [
 "--embed", 
-"--agent-only", 
-"-e", 
-"../mig-phyelesystem-scratch/1011/validation.json", 
-"-o", 
-"../mig-phyelesystem-scratch/1011/final.json", 
-"../mig-phyelesystem-scratch/1011/v1.2.1-1011.json"
+"--agent-only"
 ], 
 "otherProperty": [
 {
@@ -76,9 +39,16 @@
 }
 ]
 }, 
+"^ot:annotationEvents": {
+"annotation": []
+}, 
+"^ot:candidateTreeForSynthesis": [], 
 "^ot:curatorName": "bryan drew", 
 "^ot:focalClade": 208036, 
 "^ot:focalCladeOTTTaxonName": "Rosaceae", 
+"^ot:messages": {
+"message": []
+}, 
 "^ot:otusElementOrder": [
 "otus1011"
 ], 
@@ -88,6 +58,7 @@
 }, 
 "^ot:studyPublicationReference": "Gehrke, B. [et al. 2008], Br\u00e4uchler, C., Romoleroux, K., Lundberg, M., Heubl, G., & Eriksson, T. 2008. Molecular phylogenetics of Alchemilla, Aphanes and Lachemilla (Rosaceae) inferred from plastid and nuclear intron and spacer DNA sequences, with comments on generic classification. Mol. Phyl. Evol. 47: 1030-1044.", 
 "^ot:studyYear": 2008, 
+"^ot:tag": [], 
 "^ot:treesElementOrder": [
 "trees1011"
 ], 
@@ -383,7 +354,9 @@
 "^ot:ottTaxonName": "Alchemilla aphanoides"
 }, 
 "otu213925": {
-"^ot:originalLabel": "Lachemilla vulcanica"
+"^ot:originalLabel": "Lachemilla vulcanica", 
+"^ot:ottId": 3904499, 
+"^ot:ottTaxonName": "Alchemilla vulcanica"
 }, 
 "otu213926": {
 "^ot:originalLabel": "Lachemilla angustata", 
@@ -436,7 +409,9 @@
 "^ot:ottTaxonName": "Alchemilla mandoniana"
 }, 
 "otu213936": {
-"^ot:originalLabel": "Lachemilla pinnata"
+"^ot:originalLabel": "Lachemilla pinnata", 
+"^ot:ottId": 3904375, 
+"^ot:ottTaxonName": "Alchemilla pinnata"
 }, 
 "otu213937": {
 "^ot:originalLabel": "Lachemilla tanacetifolia", 
@@ -621,8 +596,14 @@
 "treeById": {
 "tree1954": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "MP", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node504854", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node504854": {
 "edge504855": {
@@ -1787,9 +1768,15 @@
 }, 
 "tree5620": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "BI", 
 "^ot:inGroupClade": "node969927", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node969906", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node969906": {
 "edge969907": {

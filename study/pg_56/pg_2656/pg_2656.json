@@ -19,48 +19,11 @@
 "@id": "peyotl-validator", 
 "@name": "validate_ot_nexson.py", 
 "@url": "https://github.com/OpenTreeOfLife/peyotl", 
-"@version": "0.0.3a", 
+"@version": "0.0.4a", 
 "invocation": {
-"checksPerformed": [
-"MISSING_MANDATORY_KEY", 
-"MISSING_OPTIONAL_KEY", 
-"UNRECOGNIZED_KEY", 
-"MISSING_LIST_EXPECTED", 
-"DUPLICATING_SINGLETON_KEY", 
-"REFERENCED_ID_NOT_FOUND", 
-"REPEATED_ID", 
-"REPEATED_OTU", 
-"MULTIPLE_ROOT_NODES", 
-"NO_ROOT_NODE", 
-"MULTIPLE_EDGES_FOR_NODES", 
-"CYCLE_DETECTED", 
-"DISCONNECTED_GRAPH_DETECTED", 
-"INCORRECT_ROOT_NODE_LABEL", 
-"TIP_WITHOUT_OTU", 
-"TIP_WITHOUT_OTT_ID", 
-"MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
-"NON_MONOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
-"INVALID_PROPERTY_VALUE", 
-"PROPERTY_VALUE_NOT_USEFUL", 
-"UNRECOGNIZED_PROPERTY_VALUE", 
-"MULTIPLE_TREES", 
-"UNRECOGNIZED_TAG", 
-"CONFLICTING_PROPERTY_VALUES", 
-"NO_TREES", 
-"DEPRECATED_PROPERTY", 
-"UNPARSEABLE_META", 
-"UNREACHABLE_NODE", 
-"INCORRECT_VALUE_TYPE", 
-"MISSING_CRUCIAL_CONTENT"
-], 
 "commandLine": [
 "--embed", 
-"--agent-only", 
-"-e", 
-"../mig-phyelesystem-scratch/2656/validation.json", 
-"-o", 
-"../mig-phyelesystem-scratch/2656/final.json", 
-"../mig-phyelesystem-scratch/2656/v1.2.1-2656.json"
+"--agent-only"
 ], 
 "otherProperty": [
 {
@@ -76,9 +39,16 @@
 }
 ]
 }, 
+"^ot:annotationEvents": {
+"annotation": []
+}, 
+"^ot:candidateTreeForSynthesis": [], 
 "^ot:curatorName": "Joseph Brown", 
 "^ot:focalClade": 913935, 
 "^ot:focalCladeOTTTaxonName": "Primates", 
+"^ot:messages": {
+"message": []
+}, 
 "^ot:otusElementOrder": [
 "otus2656"
 ], 
@@ -86,9 +56,11 @@
 "^ot:studyPublication": {
 "@href": "http://dx.doi.org/10.1371/journal.pone.0049521"
 }, 
-"^ot:studyPublicationReference": "Mark S. Springer, Robert W. Meredith, John Gatesy, Christopher A. Emerling, Jong Park, Daniel L. Rabosky, Tanja Stadler, Cynthia Steiner, Oliver A. Ryder, Jan E. Jane\u010dka, Colleen A. Fisher, William J. Murphy. 2012. Macroevolutionary Dynamics and Historical Biogeography of Primate Diversification Inferred from a Species Supermatrix. PLoS ONE 7(11): e49521.", 
+"^ot:studyPublicationReference": "Springer, Mark S., Robert W. Meredith, John Gatesy, Christopher A. Emerling, Jong Park, Daniel L. Rabosky, Tanja Stadler, Cynthia Steiner, Oliver A. Ryder, Jan E. Jane\u010dka, Colleen A. Fisher, William J. Murphy. 2012. Macroevolutionary dynamics and historical biogeography of primate diversification inferred from a species supermatrix. PLoS ONE 7 (11): e49521.", 
 "^ot:studyYear": 2012, 
-"^ot:tag": "ingroup added;", 
+"^ot:tag": [
+"ingroup added;"
+], 
 "^ot:treesElementOrder": [
 "trees2656"
 ], 
@@ -386,7 +358,9 @@
 "^ot:ottTaxonName": "Lepilemur otto"
 }, 
 "otu396585": {
-"^ot:originalLabel": "Lepilemur grewcockorum"
+"^ot:originalLabel": "Lepilemur grewcockorum", 
+"^ot:ottId": 28538, 
+"^ot:ottTaxonName": "Lepilemur manasamody"
 }, 
 "otu396586": {
 "^ot:originalLabel": "Lepilemur edwardsi", 
@@ -459,7 +433,9 @@
 "^ot:ottTaxonName": "Lepilemur betsileo"
 }, 
 "otu396600": {
-"^ot:originalLabel": "Lepilemur jamesorum"
+"^ot:originalLabel": "Lepilemur jamesorum", 
+"^ot:ottId": 3428, 
+"^ot:ottTaxonName": "Lepilemur jamesi"
 }, 
 "otu396601": {
 "^ot:originalLabel": "Allocebus trichotis", 
@@ -1198,7 +1174,9 @@
 "^ot:ottTaxonName": "Pan paniscus"
 }, 
 "otu396753": {
-"^ot:originalLabel": "Homo sapiens"
+"^ot:originalLabel": "Homo sapiens", 
+"^ot:ottId": 770315, 
+"^ot:ottTaxonName": "Homo sapiens"
 }, 
 "otu396754": {
 "^ot:originalLabel": "Gorilla beringei", 
@@ -1943,11 +1921,15 @@
 "treeById": {
 "tree6184": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
 "^ot:branchLengthMode": "ot:time", 
 "^ot:branchLengthTimeUnit": "Myr", 
 "^ot:curatedType": "Time-calibrated, autocorrelated rates, hard-bounded constraints", 
 "^ot:inGroupClade": "node1059864", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node1059859", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node1059859": {
 "edge1059860": {
@@ -7896,12 +7878,17 @@
 }, 
 "tree6185": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
 "^ot:branchLengthMode": "ot:time", 
 "^ot:branchLengthTimeUnit": "Myr", 
 "^ot:curatedType": "Time-calibrated, autocorrelated rates, soft-bounded constraints", 
 "^ot:inGroupClade": "node1060607", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node1060602", 
-"^ot:tag": "choose me", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [
+"choose me"
+], 
 "edgeBySourceId": {
 "node1060602": {
 "edge1060603": {
@@ -13850,11 +13837,15 @@
 }, 
 "tree6186": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
 "^ot:branchLengthMode": "ot:time", 
 "^ot:branchLengthTimeUnit": "Myr", 
 "^ot:curatedType": "Time-calibrated, independent rates, hard-bounded constraints", 
 "^ot:inGroupClade": "node1061350", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node1061345", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node1061345": {
 "edge1061346": {
@@ -19803,11 +19794,15 @@
 }, 
 "tree6187": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
 "^ot:branchLengthMode": "ot:time", 
 "^ot:branchLengthTimeUnit": "Myr", 
 "^ot:curatedType": "Time-calibrated, independent rates, soft-bounded constraints", 
 "^ot:inGroupClade": "node1062093", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node1062088", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node1062088": {
 "edge1062089": {
@@ -25756,10 +25751,15 @@
 }, 
 "tree6188": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
 "^ot:branchLengthMode": "ot:substitutionCount", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "RAxML phylogram 69 nucDNA + 10 mtDNA genes", 
 "^ot:inGroupClade": "node1062836", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node1062831", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node1062831": {
 "edge1062832": {
@@ -31708,9 +31708,14 @@
 }, 
 "tree6189": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
 "^ot:branchLengthMode": "ot:substitutionCount", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "RAxML 10 mtDNA genes", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node1063574", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node1063574": {
 "edge1063575": {
@@ -37387,10 +37392,15 @@
 }, 
 "tree6190": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
 "^ot:branchLengthMode": "ot:substitutionCount", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "RAxML 69 nucDNA genes", 
 "^ot:inGroupClade": "node1064288", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node1064283", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node1064283": {
 "edge1064284": {

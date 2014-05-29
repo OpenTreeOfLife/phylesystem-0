@@ -19,48 +19,11 @@
 "@id": "peyotl-validator", 
 "@name": "validate_ot_nexson.py", 
 "@url": "https://github.com/OpenTreeOfLife/peyotl", 
-"@version": "0.0.3a", 
+"@version": "0.0.4a", 
 "invocation": {
-"checksPerformed": [
-"MISSING_MANDATORY_KEY", 
-"MISSING_OPTIONAL_KEY", 
-"UNRECOGNIZED_KEY", 
-"MISSING_LIST_EXPECTED", 
-"DUPLICATING_SINGLETON_KEY", 
-"REFERENCED_ID_NOT_FOUND", 
-"REPEATED_ID", 
-"REPEATED_OTU", 
-"MULTIPLE_ROOT_NODES", 
-"NO_ROOT_NODE", 
-"MULTIPLE_EDGES_FOR_NODES", 
-"CYCLE_DETECTED", 
-"DISCONNECTED_GRAPH_DETECTED", 
-"INCORRECT_ROOT_NODE_LABEL", 
-"TIP_WITHOUT_OTU", 
-"TIP_WITHOUT_OTT_ID", 
-"MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
-"NON_MONOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
-"INVALID_PROPERTY_VALUE", 
-"PROPERTY_VALUE_NOT_USEFUL", 
-"UNRECOGNIZED_PROPERTY_VALUE", 
-"MULTIPLE_TREES", 
-"UNRECOGNIZED_TAG", 
-"CONFLICTING_PROPERTY_VALUES", 
-"NO_TREES", 
-"DEPRECATED_PROPERTY", 
-"UNPARSEABLE_META", 
-"UNREACHABLE_NODE", 
-"INCORRECT_VALUE_TYPE", 
-"MISSING_CRUCIAL_CONTENT"
-], 
 "commandLine": [
 "--embed", 
-"--agent-only", 
-"-e", 
-"../mig-phyelesystem-scratch/1603/validation.json", 
-"-o", 
-"../mig-phyelesystem-scratch/1603/final.json", 
-"../mig-phyelesystem-scratch/1603/v1.2.1-1603.json"
+"--agent-only"
 ], 
 "otherProperty": [
 {
@@ -76,12 +39,19 @@
 }
 ]
 }, 
+"^ot:annotationEvents": {
+"annotation": []
+}, 
+"^ot:candidateTreeForSynthesis": [], 
 "^ot:curatorName": "Romina Gazis", 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S10102"
 }, 
 "^ot:focalClade": 1099024, 
 "^ot:focalCladeOTTTaxonName": "Ophiostomataceae", 
+"^ot:messages": {
+"message": []
+}, 
 "^ot:otusElementOrder": [
 "otus1603"
 ], 
@@ -91,6 +61,7 @@
 }, 
 "^ot:studyPublicationReference": "Mullineux T., & Hausner G. 2009. Evolution of rDNA ITS1 and ITS2 sequences and RNA secondary structures within members of the fungal genera Grosmannia and Leptographium. Fungal Genetics and Biology, 46(11): 855-867.", 
 "^ot:studyYear": 2009, 
+"^ot:tag": [], 
 "^ot:treesElementOrder": [
 "trees1603"
 ], 
@@ -171,6 +142,8 @@
 }, 
 "otu264748": {
 "^ot:originalLabel": "Grosmannia dryocoetis CBS376.66", 
+"^ot:ottId": 5316608, 
+"^ot:ottTaxonName": "Grosmannia dryocoetis", 
 "^ot:treebaseOTUId": "Tl256071"
 }, 
 "otu264749": {
@@ -205,6 +178,8 @@
 }, 
 "otu264754": {
 "^ot:originalLabel": "Leptographium truncatum NFRI1813.1", 
+"^ot:ottId": 4425, 
+"^ot:ottTaxonName": "Leptographium lundbergii", 
 "^ot:treebaseOTUId": "Tl256077"
 }, 
 "otu264755": {
@@ -295,6 +270,8 @@
 }, 
 "otu264770": {
 "^ot:originalLabel": "Leptographium americanum WIN.M.1456", 
+"^ot:ottId": 48430, 
+"^ot:ottTaxonName": "Grosmannia americana", 
 "^ot:treebaseOTUId": "Tl256093"
 }, 
 "otu264771": {
@@ -433,6 +410,8 @@
 }, 
 "otu264795": {
 "^ot:originalLabel": "Leptographium truncatum TOM74.29", 
+"^ot:ottId": 4425, 
+"^ot:ottTaxonName": "Leptographium lundbergii", 
 "^ot:treebaseOTUId": "Tl264509"
 }, 
 "otu264796": {
@@ -449,16 +428,20 @@
 }, 
 "otu264798": {
 "^ot:originalLabel": "Leptographium truncatum CBS929.85", 
+"^ot:ottId": 4425, 
+"^ot:ottTaxonName": "Leptographium lundbergii", 
 "^ot:treebaseOTUId": "Tl264512"
 }, 
 "otu264799": {
 "^ot:originalLabel": "Leptographium truncatum TOM86.30", 
+"^ot:ottId": 4425, 
+"^ot:ottTaxonName": "Leptographium lundbergii", 
 "^ot:treebaseOTUId": "Tl264513"
 }, 
 "otu264800": {
-"^ot:altLabel": "Ophiostomataceae", 
 "^ot:originalLabel": "taxon 70", 
 "^ot:ottId": 1099024, 
+"^ot:ottTaxonName": "Ophiostomataceae", 
 "^ot:treebaseOTUId": "Tl264514"
 }, 
 "otu264801": {
@@ -505,9 +488,15 @@
 "treeById": {
 "tree3233": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "BI, ITS", 
 "^ot:inGroupClade": "node653533", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node653529", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node653529": {
 "edge653530": {
@@ -1276,10 +1265,17 @@
 }, 
 "tree3234": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "BI, ITS-1", 
 "^ot:inGroupClade": "node653642", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node653638", 
-"^ot:tag": "BI", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [
+"BI"
+], 
 "edgeBySourceId": {
 "node653638": {
 "edge653639": {
@@ -1866,8 +1862,14 @@
 }, 
 "tree3235": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "BI, ITS-2", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node653721", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node653721": {
 "edge653722": {

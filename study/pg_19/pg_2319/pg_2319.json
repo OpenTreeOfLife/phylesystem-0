@@ -19,48 +19,11 @@
 "@id": "peyotl-validator", 
 "@name": "validate_ot_nexson.py", 
 "@url": "https://github.com/OpenTreeOfLife/peyotl", 
-"@version": "0.0.3a", 
+"@version": "0.0.4a", 
 "invocation": {
-"checksPerformed": [
-"MISSING_MANDATORY_KEY", 
-"MISSING_OPTIONAL_KEY", 
-"UNRECOGNIZED_KEY", 
-"MISSING_LIST_EXPECTED", 
-"DUPLICATING_SINGLETON_KEY", 
-"REFERENCED_ID_NOT_FOUND", 
-"REPEATED_ID", 
-"REPEATED_OTU", 
-"MULTIPLE_ROOT_NODES", 
-"NO_ROOT_NODE", 
-"MULTIPLE_EDGES_FOR_NODES", 
-"CYCLE_DETECTED", 
-"DISCONNECTED_GRAPH_DETECTED", 
-"INCORRECT_ROOT_NODE_LABEL", 
-"TIP_WITHOUT_OTU", 
-"TIP_WITHOUT_OTT_ID", 
-"MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
-"NON_MONOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
-"INVALID_PROPERTY_VALUE", 
-"PROPERTY_VALUE_NOT_USEFUL", 
-"UNRECOGNIZED_PROPERTY_VALUE", 
-"MULTIPLE_TREES", 
-"UNRECOGNIZED_TAG", 
-"CONFLICTING_PROPERTY_VALUES", 
-"NO_TREES", 
-"DEPRECATED_PROPERTY", 
-"UNPARSEABLE_META", 
-"UNREACHABLE_NODE", 
-"INCORRECT_VALUE_TYPE", 
-"MISSING_CRUCIAL_CONTENT"
-], 
 "commandLine": [
 "--embed", 
-"--agent-only", 
-"-e", 
-"../mig-phyelesystem-scratch/2319/validation.json", 
-"-o", 
-"../mig-phyelesystem-scratch/2319/final.json", 
-"../mig-phyelesystem-scratch/2319/v1.2.1-2319.json"
+"--agent-only"
 ], 
 "otherProperty": [
 {
@@ -76,12 +39,19 @@
 }
 ]
 }, 
+"^ot:annotationEvents": {
+"annotation": []
+}, 
+"^ot:candidateTreeForSynthesis": [], 
 "^ot:curatorName": "Romina Gazis", 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S979"
 }, 
 "^ot:focalClade": 524635, 
 "^ot:focalCladeOTTTaxonName": "Pythium", 
+"^ot:messages": {
+"message": []
+}, 
 "^ot:otusElementOrder": [
 "otus2319"
 ], 
@@ -91,6 +61,7 @@
 }, 
 "^ot:studyPublicationReference": "Nechwatal J., & Osswald W. 2003. Pythium montanum sp. nov., a new species from a spruce stand in the Bavarian Alps. Mycological Progress 2(1): 73\u201380, February 2003", 
 "^ot:studyYear": 2003, 
+"^ot:tag": [], 
 "^ot:treesElementOrder": [
 "trees2319"
 ], 
@@ -112,6 +83,7 @@
 "otu329547": {
 "^ot:originalLabel": "Pythium ostracodes", 
 "^ot:ottId": 1072260, 
+"^ot:ottTaxonName": "Pythium ostracodes", 
 "^ot:treebaseOTUId": "Tl137273"
 }, 
 "otu329548": {
@@ -152,6 +124,8 @@
 }, 
 "otu329554": {
 "^ot:originalLabel": "Pythium montanum", 
+"^ot:ottId": 4773, 
+"^ot:ottTaxonName": "Phytopythium montanum", 
 "^ot:treebaseOTUId": "Tl137286"
 }, 
 "otu329555": {
@@ -172,6 +146,8 @@
 }, 
 "otu329558": {
 "^ot:originalLabel": "Pythium megacarpum", 
+"^ot:ottId": 1072253, 
+"^ot:ottTaxonName": "Pythium megacarpum", 
 "^ot:treebaseOTUId": "Tl1663"
 }, 
 "otu329559": {
@@ -189,6 +165,7 @@
 "otu329561": {
 "^ot:originalLabel": "Pythium okanoganense", 
 "^ot:ottId": 375377, 
+"^ot:ottTaxonName": "Pythium okanoganense", 
 "^ot:treebaseOTUId": "Tl1670"
 }, 
 "otu329562": {
@@ -200,6 +177,7 @@
 "otu329563": {
 "^ot:originalLabel": "Pythium megalacanthum", 
 "^ot:ottId": 403975, 
+"^ot:ottTaxonName": "Pythium megalacanthum", 
 "^ot:treebaseOTUId": "Tl1673"
 }, 
 "otu329564": {
@@ -226,8 +204,14 @@
 "treeById": {
 "tree4889": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "NJ, ITS", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node849979", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node849979": {
 "edge849980": {

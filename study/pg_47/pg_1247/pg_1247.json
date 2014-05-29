@@ -19,48 +19,11 @@
 "@id": "peyotl-validator", 
 "@name": "validate_ot_nexson.py", 
 "@url": "https://github.com/OpenTreeOfLife/peyotl", 
-"@version": "0.0.3a", 
+"@version": "0.0.4a", 
 "invocation": {
-"checksPerformed": [
-"MISSING_MANDATORY_KEY", 
-"MISSING_OPTIONAL_KEY", 
-"UNRECOGNIZED_KEY", 
-"MISSING_LIST_EXPECTED", 
-"DUPLICATING_SINGLETON_KEY", 
-"REFERENCED_ID_NOT_FOUND", 
-"REPEATED_ID", 
-"REPEATED_OTU", 
-"MULTIPLE_ROOT_NODES", 
-"NO_ROOT_NODE", 
-"MULTIPLE_EDGES_FOR_NODES", 
-"CYCLE_DETECTED", 
-"DISCONNECTED_GRAPH_DETECTED", 
-"INCORRECT_ROOT_NODE_LABEL", 
-"TIP_WITHOUT_OTU", 
-"TIP_WITHOUT_OTT_ID", 
-"MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
-"NON_MONOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
-"INVALID_PROPERTY_VALUE", 
-"PROPERTY_VALUE_NOT_USEFUL", 
-"UNRECOGNIZED_PROPERTY_VALUE", 
-"MULTIPLE_TREES", 
-"UNRECOGNIZED_TAG", 
-"CONFLICTING_PROPERTY_VALUES", 
-"NO_TREES", 
-"DEPRECATED_PROPERTY", 
-"UNPARSEABLE_META", 
-"UNREACHABLE_NODE", 
-"INCORRECT_VALUE_TYPE", 
-"MISSING_CRUCIAL_CONTENT"
-], 
 "commandLine": [
 "--embed", 
-"--agent-only", 
-"-e", 
-"../mig-phyelesystem-scratch/1247/validation.json", 
-"-o", 
-"../mig-phyelesystem-scratch/1247/final.json", 
-"../mig-phyelesystem-scratch/1247/v1.2.1-1247.json"
+"--agent-only"
 ], 
 "otherProperty": [
 {
@@ -76,12 +39,17 @@
 }
 ]
 }, 
+"^ot:annotationEvents": {
+"annotation": []
+}, 
+"^ot:candidateTreeForSynthesis": [], 
 "^ot:curatorName": "bryan drew", 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S1101"
 }, 
-"^ot:focalClade": 1126924, 
-"^ot:focalCladeOTTTaxonName": "Bolbocoleon", 
+"^ot:messages": {
+"message": []
+}, 
 "^ot:otusElementOrder": [
 "otus1247"
 ], 
@@ -91,6 +59,7 @@
 }, 
 "^ot:studyPublicationReference": "O'kelly C., Bellows W., & Wysor B. 2004. Phylogenetic position of Bolbocoleon piliferum (Ulvophyceae, Chlorophyta): evidence from reproduction, zoospore and gamete ultrastructure, and SSU ribosomal RNA gene sequences. Journal of Phycology, 40(1), 209-222.", 
 "^ot:studyYear": 2004, 
+"^ot:tag": [], 
 "^ot:treesElementOrder": [
 "trees1247"
 ], 
@@ -112,6 +81,7 @@
 "otu236961": {
 "^ot:originalLabel": "Percursaria percursa", 
 "^ot:ottId": 711024, 
+"^ot:ottTaxonName": "Percursaria percursa", 
 "^ot:treebaseOTUId": "Tl142759"
 }, 
 "otu236962": {
@@ -123,12 +93,13 @@
 "otu236963": {
 "^ot:originalLabel": "Ulva californica", 
 "^ot:ottId": 855433, 
+"^ot:ottTaxonName": "Ulva californica", 
 "^ot:treebaseOTUId": "Tl142762"
 }, 
 "otu236964": {
 "^ot:originalLabel": "Acrochaete endozoica", 
 "^ot:ottId": 862057, 
-"^ot:ottTaxonName": "Acrochaete endozoica", 
+"^ot:ottTaxonName": "Ulvella endozoica", 
 "^ot:treebaseOTUId": "Tl142763"
 }, 
 "otu236965": {
@@ -140,7 +111,7 @@
 "otu236966": {
 "^ot:originalLabel": "Pseudendoclonium basilense", 
 "^ot:ottId": 189731, 
-"^ot:ottTaxonName": "Pseudendoclonium basiliense", 
+"^ot:ottTaxonName": "Hazenia basiliensis", 
 "^ot:treebaseOTUId": "Tl142766"
 }, 
 "otu236967": {
@@ -152,7 +123,7 @@
 "otu236968": {
 "^ot:originalLabel": "Acrochaete leptochaete NY1b", 
 "^ot:ottId": 862059, 
-"^ot:ottTaxonName": "Acrochaete leptochaete", 
+"^ot:ottTaxonName": "Ulvella leptochaete", 
 "^ot:treebaseOTUId": "Tl142771"
 }, 
 "otu236969": {
@@ -206,7 +177,7 @@
 "otu236977": {
 "^ot:originalLabel": "Acrochaete leptochaete MBLPoly1", 
 "^ot:ottId": 862059, 
-"^ot:ottTaxonName": "Acrochaete leptochaete", 
+"^ot:ottTaxonName": "Ulvella leptochaete", 
 "^ot:treebaseOTUId": "Tl142784"
 }, 
 "otu236978": {
@@ -230,6 +201,7 @@
 "otu236981": {
 "^ot:originalLabel": "Ulva curvata", 
 "^ot:ottId": 615769, 
+"^ot:ottTaxonName": "Ulva curvata", 
 "^ot:treebaseOTUId": "Tl142790"
 }, 
 "otu236982": {
@@ -239,14 +211,15 @@
 "^ot:treebaseOTUId": "Tl142791"
 }, 
 "otu236983": {
-"^ot:altLabel": "Bolbocoleon piliferum", 
 "^ot:originalLabel": "Bolbocoleon piliferum WAz1", 
 "^ot:ottId": 862055, 
+"^ot:ottTaxonName": "Bolbocoleon piliferum", 
 "^ot:treebaseOTUId": "Tl142793"
 }, 
 "otu236984": {
 "^ot:originalLabel": "Floydiella terrestris", 
 "^ot:ottId": 311478, 
+"^ot:ottTaxonName": "Floydiella terrestris", 
 "^ot:treebaseOTUId": "Tl142794"
 }, 
 "otu236985": {
@@ -258,7 +231,7 @@
 "otu236986": {
 "^ot:originalLabel": "Endophyton ramosum", 
 "^ot:ottId": 862061, 
-"^ot:ottTaxonName": "Acrochaete ramosa", 
+"^ot:ottTaxonName": "Ulvella ramosa", 
 "^ot:treebaseOTUId": "Tl142798"
 }, 
 "otu236987": {
@@ -304,21 +277,21 @@
 "^ot:treebaseOTUId": "Tl19357"
 }, 
 "otu236994": {
-"^ot:altLabel": "Ulva sp. WA1-3b", 
 "^ot:originalLabel": "Ulva sp. WA1 3b", 
 "^ot:ottId": 962673, 
+"^ot:ottTaxonName": "Ulva sp. WA1-3b", 
 "^ot:treebaseOTUId": "Tl19362"
 }, 
 "otu236995": {
-"^ot:altLabel": "Acrochaete repens", 
 "^ot:originalLabel": "Acrochaete repens MA1 1c2a", 
 "^ot:ottId": 962674, 
+"^ot:ottTaxonName": "Ulvella repens", 
 "^ot:treebaseOTUId": "Tl19364"
 }, 
 "otu236996": {
-"^ot:altLabel": "Bolbocoleon piliferum", 
 "^ot:originalLabel": "Bolbocoleon piliferum WA1 7b", 
 "^ot:ottId": 862055, 
+"^ot:ottTaxonName": "Bolbocoleon piliferum", 
 "^ot:treebaseOTUId": "Tl19369"
 }, 
 "otu236997": {
@@ -330,36 +303,37 @@
 "otu236998": {
 "^ot:originalLabel": "Leptosira obovata", 
 "^ot:ottId": 964573, 
+"^ot:ottTaxonName": "Leptosira obovata", 
 "^ot:treebaseOTUId": "Tl19375"
 }, 
 "otu236999": {
-"^ot:altLabel": "Acrochaete viridis", 
 "^ot:originalLabel": "Acrochaete viridis MA1 2d2", 
 "^ot:ottId": 166702, 
+"^ot:ottTaxonName": "Ulvella viridis", 
 "^ot:treebaseOTUId": "Tl19376"
 }, 
 "otu237000": {
 "^ot:originalLabel": "Acrochaete repens MA1 1a1", 
 "^ot:ottId": 962674, 
-"^ot:ottTaxonName": "Acrochaete repens", 
+"^ot:ottTaxonName": "Ulvella repens", 
 "^ot:treebaseOTUId": "Tl19379"
 }, 
 "otu237001": {
-"^ot:altLabel": "Bolbocoleon piliferum", 
 "^ot:originalLabel": "Bolbocoleon piliferum WA2 9b2a", 
 "^ot:ottId": 862055, 
+"^ot:ottTaxonName": "Bolbocoleon piliferum", 
 "^ot:treebaseOTUId": "Tl19383"
 }, 
 "otu237002": {
-"^ot:altLabel": "Bolbocoleon piliferum", 
 "^ot:originalLabel": "Bolbocoleon piliferum MA3 1b1", 
 "^ot:ottId": 862055, 
+"^ot:ottTaxonName": "Bolbocoleon piliferum", 
 "^ot:treebaseOTUId": "Tl19385"
 }, 
 "otu237003": {
 "^ot:originalLabel": "Acrochaete viridis MA1 2a1", 
 "^ot:ottId": 166702, 
-"^ot:ottTaxonName": "Acrochaete viridis", 
+"^ot:ottTaxonName": "Ulvella viridis", 
 "^ot:treebaseOTUId": "Tl19386"
 }, 
 "otu237004": {
@@ -380,9 +354,15 @@
 "treeById": {
 "tree2512": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "Figure", 
 "^ot:inGroupClade": "node574231", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node574228", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node574228": {
 "edge574229": {

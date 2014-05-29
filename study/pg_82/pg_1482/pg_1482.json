@@ -19,48 +19,11 @@
 "@id": "peyotl-validator", 
 "@name": "validate_ot_nexson.py", 
 "@url": "https://github.com/OpenTreeOfLife/peyotl", 
-"@version": "0.0.3a", 
+"@version": "0.0.4a", 
 "invocation": {
-"checksPerformed": [
-"MISSING_MANDATORY_KEY", 
-"MISSING_OPTIONAL_KEY", 
-"UNRECOGNIZED_KEY", 
-"MISSING_LIST_EXPECTED", 
-"DUPLICATING_SINGLETON_KEY", 
-"REFERENCED_ID_NOT_FOUND", 
-"REPEATED_ID", 
-"REPEATED_OTU", 
-"MULTIPLE_ROOT_NODES", 
-"NO_ROOT_NODE", 
-"MULTIPLE_EDGES_FOR_NODES", 
-"CYCLE_DETECTED", 
-"DISCONNECTED_GRAPH_DETECTED", 
-"INCORRECT_ROOT_NODE_LABEL", 
-"TIP_WITHOUT_OTU", 
-"TIP_WITHOUT_OTT_ID", 
-"MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
-"NON_MONOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
-"INVALID_PROPERTY_VALUE", 
-"PROPERTY_VALUE_NOT_USEFUL", 
-"UNRECOGNIZED_PROPERTY_VALUE", 
-"MULTIPLE_TREES", 
-"UNRECOGNIZED_TAG", 
-"CONFLICTING_PROPERTY_VALUES", 
-"NO_TREES", 
-"DEPRECATED_PROPERTY", 
-"UNPARSEABLE_META", 
-"UNREACHABLE_NODE", 
-"INCORRECT_VALUE_TYPE", 
-"MISSING_CRUCIAL_CONTENT"
-], 
 "commandLine": [
 "--embed", 
-"--agent-only", 
-"-e", 
-"../mig-phyelesystem-scratch/1482/validation.json", 
-"-o", 
-"../mig-phyelesystem-scratch/1482/final.json", 
-"../mig-phyelesystem-scratch/1482/v1.2.1-1482.json"
+"--agent-only"
 ], 
 "otherProperty": [
 {
@@ -76,12 +39,19 @@
 }
 ]
 }, 
+"^ot:annotationEvents": {
+"annotation": []
+}, 
+"^ot:candidateTreeForSynthesis": [], 
 "^ot:curatorName": "Jiabin Deng", 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S2068"
 }, 
 "^ot:focalClade": 212023, 
 "^ot:focalCladeOTTTaxonName": "Polypodium", 
+"^ot:messages": {
+"message": []
+}, 
 "^ot:otusElementOrder": [
 "otus1482"
 ], 
@@ -91,6 +61,7 @@
 }, 
 "^ot:studyPublicationReference": "Evans N., Lindner A., Raikova E., Collins A., & Cartwright P. 2008. Phylogenetic placement of the enigmatic parasite, Polypodium hydriforme, within the Phylum Cnidaria. BMC Evolutionary Biology 8(1): 139.", 
 "^ot:studyYear": 2008, 
+"^ot:tag": [], 
 "^ot:treesElementOrder": [
 "trees1482"
 ], 
@@ -129,10 +100,14 @@
 }, 
 "otu254668": {
 "^ot:originalLabel": "Saccharomyces cerevisiae", 
+"^ot:ottId": 908549, 
+"^ot:ottTaxonName": "Saccharomyces cerevisiae", 
 "^ot:treebaseOTUId": "Tl214862"
 }, 
 "otu254669": {
 "^ot:originalLabel": "Candida albicans", 
+"^ot:ottId": 1034966, 
+"^ot:ottTaxonName": "Candida albicans", 
 "^ot:treebaseOTUId": "Tl214874"
 }, 
 "otu254670": {
@@ -149,6 +124,8 @@
 }, 
 "otu254672": {
 "^ot:originalLabel": "Mucor racemosus", 
+"^ot:ottId": 363298, 
+"^ot:ottTaxonName": "Mucor racemosus", 
 "^ot:treebaseOTUId": "Tl38992"
 }, 
 "otu254673": {
@@ -177,6 +154,8 @@
 }, 
 "otu254677": {
 "^ot:originalLabel": "Tricholoma matsutake", 
+"^ot:ottId": 831066, 
+"^ot:ottTaxonName": "Tricholoma matsutake", 
 "^ot:treebaseOTUId": "Tl46729"
 }, 
 "otu254678": {
@@ -413,8 +392,6 @@
 }, 
 "otu254717": {
 "^ot:originalLabel": "Polypodium Russia Lindner", 
-"^ot:ottId": 212026, 
-"^ot:ottTaxonName": "Polypodium hydriforme", 
 "^ot:treebaseOTUId": "Tl81811"
 }, 
 "otu254718": {
@@ -761,6 +738,8 @@
 }, 
 "otu254775": {
 "^ot:originalLabel": "Dipurena ophiogaster 92472", 
+"^ot:ottId": 141204, 
+"^ot:ottTaxonName": "Stauridiosarsia ophiogaster", 
 "^ot:treebaseOTUId": "Tl81869"
 }, 
 "otu254776": {
@@ -833,6 +812,8 @@
 }, 
 "otu254788": {
 "^ot:originalLabel": "Tricho matsut", 
+"^ot:ottId": 831066, 
+"^ot:ottTaxonName": "Tricholoma matsutake", 
 "^ot:treebaseOTUId": "Tl81882"
 }, 
 "otu254789": {
@@ -861,8 +842,6 @@
 }, 
 "otu254793": {
 "^ot:originalLabel": "Polypodium NA 18s PF13", 
-"^ot:ottId": 212026, 
-"^ot:ottTaxonName": "Polypodium hydriforme", 
 "^ot:treebaseOTUId": "Tl81887"
 }, 
 "otu254794": {
@@ -935,8 +914,14 @@
 "treeById": {
 "tree2978": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "Fig. 2a", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node623492", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node623492": {
 "edge623493": {
@@ -2692,8 +2677,14 @@
 }, 
 "tree2979": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "Fig. 3B", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node623742", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node623742": {
 "edge623743": {
@@ -4435,8 +4426,14 @@
 }, 
 "tree2980": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "Fig. 2b", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node623990", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node623990": {
 "edge623991": {
@@ -6010,8 +6007,14 @@
 }, 
 "tree2981": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "Fig. 3A", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node624214", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node624214": {
 "edge624215": {
@@ -7851,9 +7854,15 @@
 }, 
 "tree5228": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "ML Fig3A - rooted", 
 "^ot:inGroupClade": "node906869", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node906868", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node906868": {
 "edge906869": {

@@ -19,48 +19,11 @@
 "@id": "peyotl-validator", 
 "@name": "validate_ot_nexson.py", 
 "@url": "https://github.com/OpenTreeOfLife/peyotl", 
-"@version": "0.0.3a", 
+"@version": "0.0.4a", 
 "invocation": {
-"checksPerformed": [
-"MISSING_MANDATORY_KEY", 
-"MISSING_OPTIONAL_KEY", 
-"UNRECOGNIZED_KEY", 
-"MISSING_LIST_EXPECTED", 
-"DUPLICATING_SINGLETON_KEY", 
-"REFERENCED_ID_NOT_FOUND", 
-"REPEATED_ID", 
-"REPEATED_OTU", 
-"MULTIPLE_ROOT_NODES", 
-"NO_ROOT_NODE", 
-"MULTIPLE_EDGES_FOR_NODES", 
-"CYCLE_DETECTED", 
-"DISCONNECTED_GRAPH_DETECTED", 
-"INCORRECT_ROOT_NODE_LABEL", 
-"TIP_WITHOUT_OTU", 
-"TIP_WITHOUT_OTT_ID", 
-"MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
-"NON_MONOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
-"INVALID_PROPERTY_VALUE", 
-"PROPERTY_VALUE_NOT_USEFUL", 
-"UNRECOGNIZED_PROPERTY_VALUE", 
-"MULTIPLE_TREES", 
-"UNRECOGNIZED_TAG", 
-"CONFLICTING_PROPERTY_VALUES", 
-"NO_TREES", 
-"DEPRECATED_PROPERTY", 
-"UNPARSEABLE_META", 
-"UNREACHABLE_NODE", 
-"INCORRECT_VALUE_TYPE", 
-"MISSING_CRUCIAL_CONTENT"
-], 
 "commandLine": [
 "--embed", 
-"--agent-only", 
-"-e", 
-"../mig-phyelesystem-scratch/1548/validation.json", 
-"-o", 
-"../mig-phyelesystem-scratch/1548/final.json", 
-"../mig-phyelesystem-scratch/1548/v1.2.1-1548.json"
+"--agent-only"
 ], 
 "otherProperty": [
 {
@@ -76,9 +39,16 @@
 }
 ]
 }, 
+"^ot:annotationEvents": {
+"annotation": []
+}, 
+"^ot:candidateTreeForSynthesis": [], 
 "^ot:curatorName": "Jiabin Deng", 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S12261"
+}, 
+"^ot:messages": {
+"message": []
 }, 
 "^ot:otusElementOrder": [
 "otus1548"
@@ -89,6 +59,7 @@
 }, 
 "^ot:studyPublicationReference": "Cusimano, N., Stadler, T., & Renner, S. S. (2012). A new method for handling missing species in diversification analysis applicable to randomly or nonrandomly sampled phylogenies. Systematic biology, 61(5), 785-792.", 
 "^ot:studyYear": 2012, 
+"^ot:tag": [], 
 "^ot:treesElementOrder": [
 "trees1548"
 ], 
@@ -212,7 +183,7 @@
 "otu258088": {
 "^ot:originalLabel": "Typhonium sp.n. H.AR.543", 
 "^ot:ottId": 410346, 
-"^ot:ottTaxonName": "Typhonium sp. Hetterscheid H.AR.543", 
+"^ot:ottTaxonName": "Typhonium sp. 5 Hetterscheid 543", 
 "^ot:treebaseOTUId": "Tl690502"
 }, 
 "otu258089": {
@@ -338,13 +309,13 @@
 "otu258109": {
 "^ot:originalLabel": "Typhonium sp.n. H.AR.555", 
 "^ot:ottId": 40374, 
-"^ot:ottTaxonName": "Typhonium sp. Hetterscheid H.AR.555", 
+"^ot:ottTaxonName": "Typhonium sp. 6 Hetterscheid 555", 
 "^ot:treebaseOTUId": "Tl690523"
 }, 
 "otu258110": {
 "^ot:originalLabel": "Typhonium corrugatum", 
 "^ot:ottId": 1054616, 
-"^ot:ottTaxonName": "Typhonium sp. NC-2010", 
+"^ot:ottTaxonName": "Typhonium sp. 'corrugatum'", 
 "^ot:treebaseOTUId": "Tl690524"
 }, 
 "otu258111": {
@@ -734,7 +705,7 @@
 "otu258175": {
 "^ot:originalLabel": "Typhonium sp.n. H.AR.532", 
 "^ot:ottId": 410345, 
-"^ot:ottTaxonName": "Typhonium sp. Hetterscheid H.AR.532", 
+"^ot:ottTaxonName": "Typhonium sp. 4 Hetterscheid 532", 
 "^ot:treebaseOTUId": "Tl690589"
 }, 
 "otu258176": {
@@ -779,9 +750,15 @@
 "treeById": {
 "tree3102": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "RaxML", 
 "^ot:inGroupClade": "node634879", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node634874", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node634874": {
 "edge634875": {

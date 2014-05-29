@@ -19,48 +19,11 @@
 "@id": "peyotl-validator", 
 "@name": "validate_ot_nexson.py", 
 "@url": "https://github.com/OpenTreeOfLife/peyotl", 
-"@version": "0.0.3a", 
+"@version": "0.0.4a", 
 "invocation": {
-"checksPerformed": [
-"MISSING_MANDATORY_KEY", 
-"MISSING_OPTIONAL_KEY", 
-"UNRECOGNIZED_KEY", 
-"MISSING_LIST_EXPECTED", 
-"DUPLICATING_SINGLETON_KEY", 
-"REFERENCED_ID_NOT_FOUND", 
-"REPEATED_ID", 
-"REPEATED_OTU", 
-"MULTIPLE_ROOT_NODES", 
-"NO_ROOT_NODE", 
-"MULTIPLE_EDGES_FOR_NODES", 
-"CYCLE_DETECTED", 
-"DISCONNECTED_GRAPH_DETECTED", 
-"INCORRECT_ROOT_NODE_LABEL", 
-"TIP_WITHOUT_OTU", 
-"TIP_WITHOUT_OTT_ID", 
-"MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
-"NON_MONOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
-"INVALID_PROPERTY_VALUE", 
-"PROPERTY_VALUE_NOT_USEFUL", 
-"UNRECOGNIZED_PROPERTY_VALUE", 
-"MULTIPLE_TREES", 
-"UNRECOGNIZED_TAG", 
-"CONFLICTING_PROPERTY_VALUES", 
-"NO_TREES", 
-"DEPRECATED_PROPERTY", 
-"UNPARSEABLE_META", 
-"UNREACHABLE_NODE", 
-"INCORRECT_VALUE_TYPE", 
-"MISSING_CRUCIAL_CONTENT"
-], 
 "commandLine": [
 "--embed", 
-"--agent-only", 
-"-e", 
-"../mig-phyelesystem-scratch/240/validation.json", 
-"-o", 
-"../mig-phyelesystem-scratch/240/final.json", 
-"../mig-phyelesystem-scratch/240/v1.2.1-240.json"
+"--agent-only"
 ], 
 "otherProperty": [
 {
@@ -76,12 +39,19 @@
 }
 ]
 }, 
+"^ot:annotationEvents": {
+"annotation": []
+}, 
+"^ot:candidateTreeForSynthesis": [], 
 "^ot:curatorName": "Romina Gazis", 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S1983"
 }, 
 "^ot:focalClade": 971709, 
 "^ot:focalCladeOTTTaxonName": "Pezizomycotina", 
+"^ot:messages": {
+"message": []
+}, 
 "^ot:otusElementOrder": [
 "otus240"
 ], 
@@ -91,6 +61,7 @@
 }, 
 "^ot:studyPublicationReference": "Spatafora, J. W., Sung, G.-H., Johnson, D., Hesse, C., O\u2019Rourke, B., Serdani, M., Spotts, R., et al. (2006). A five-gene phylogeny of Pezizomycotina. Mycologia, 98(6), 1018-28.", 
 "^ot:studyYear": 2006, 
+"^ot:tag": [], 
 "^ot:treesElementOrder": [
 "trees240"
 ], 
@@ -271,7 +242,9 @@
 "^ot:ottTaxonName": "Pleospora herbarum"
 }, 
 "otu64008": {
-"^ot:originalLabel": "Dendryphiella arenaria"
+"^ot:originalLabel": "Dendryphiella arenaria", 
+"^ot:ottId": 3796670, 
+"^ot:ottTaxonName": "Paradendryphiella arenariae"
 }, 
 "otu64009": {
 "^ot:originalLabel": "Stagonospora nodorum", 
@@ -378,7 +351,9 @@
 "^ot:ottTaxonName": "Leotia lubrica"
 }, 
 "otu64031": {
-"^ot:originalLabel": "Phacidiopycnis pyri"
+"^ot:originalLabel": "Phacidiopycnis pyri", 
+"^ot:ottId": 5316772, 
+"^ot:ottTaxonName": "Discula pyri"
 }, 
 "otu64032": {
 "^ot:originalLabel": "Bulgaria inquinans", 
@@ -489,7 +464,9 @@
 "^ot:ottTaxonName": "Amphisphaeria umbrina"
 }, 
 "otu64054": {
-"^ot:originalLabel": "Apiospora montagnei"
+"^ot:originalLabel": "Apiospora montagnei", 
+"^ot:ottId": 798498, 
+"^ot:ottTaxonName": "Apiospora montagnei"
 }, 
 "otu64055": {
 "^ot:originalLabel": "Camarops ustulinoides", 
@@ -545,7 +522,9 @@
 "^ot:ottTaxonName": "Gnomonia gnomon"
 }, 
 "otu64066": {
-"^ot:originalLabel": "Endothia gyrosa"
+"^ot:originalLabel": "Endothia gyrosa", 
+"^ot:ottId": 5316851, 
+"^ot:ottTaxonName": "Endothia radicalis"
 }, 
 "otu64067": {
 "^ot:originalLabel": "Thyridium vestitum"
@@ -561,7 +540,9 @@
 "^ot:ottTaxonName": "Lanspora coronata"
 }, 
 "otu64070": {
-"^ot:originalLabel": "Ophiostoma piliferum"
+"^ot:originalLabel": "Ophiostoma piliferum", 
+"^ot:ottId": 5316941, 
+"^ot:ottTaxonName": "Ceratocystis pilifera"
 }, 
 "otu64071": {
 "^ot:originalLabel": "Lindra thalassiae", 
@@ -625,7 +606,9 @@
 "^ot:ottTaxonName": "Haematonectria haematococca"
 }, 
 "otu64084": {
-"^ot:originalLabel": "Fusarium graminearum"
+"^ot:originalLabel": "Fusarium graminearum", 
+"^ot:ottId": 264388, 
+"^ot:ottTaxonName": "Gibberella zeae"
 }, 
 "otu64085": {
 "^ot:originalLabel": "Ophionectria trichospora", 
@@ -969,7 +952,9 @@
 "^ot:ottTaxonName": "Calostoma cinnabarinum"
 }, 
 "otu64154": {
-"^ot:originalLabel": "Strobilomyces floccopus"
+"^ot:originalLabel": "Strobilomyces floccopus", 
+"^ot:ottId": 551334, 
+"^ot:ottTaxonName": "Strobilomyces strobilaceus"
 }, 
 "otu64155": {
 "^ot:originalLabel": "Armillaria mellea", 
@@ -992,7 +977,9 @@
 "^ot:ottTaxonName": "Fomitopsis pinicola"
 }, 
 "otu64159": {
-"^ot:originalLabel": "Phanerochaete chrysosporium"
+"^ot:originalLabel": "Phanerochaete chrysosporium", 
+"^ot:ottId": 5299626, 
+"^ot:ottTaxonName": "Phanerodontia chrysosporium"
 }, 
 "otu64160": {
 "^ot:originalLabel": "Coltricia perennis", 
@@ -1024,9 +1011,15 @@
 "treeById": {
 "tree123": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "BI, SSU + LSU + EF-1 + RPB1 + RPB2", 
 "^ot:inGroupClade": "node164085", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node164043", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node164043": {
 "edge164044": {

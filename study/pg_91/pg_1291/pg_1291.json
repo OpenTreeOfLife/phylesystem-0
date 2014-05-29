@@ -19,48 +19,11 @@
 "@id": "peyotl-validator", 
 "@name": "validate_ot_nexson.py", 
 "@url": "https://github.com/OpenTreeOfLife/peyotl", 
-"@version": "0.0.3a", 
+"@version": "0.0.4a", 
 "invocation": {
-"checksPerformed": [
-"MISSING_MANDATORY_KEY", 
-"MISSING_OPTIONAL_KEY", 
-"UNRECOGNIZED_KEY", 
-"MISSING_LIST_EXPECTED", 
-"DUPLICATING_SINGLETON_KEY", 
-"REFERENCED_ID_NOT_FOUND", 
-"REPEATED_ID", 
-"REPEATED_OTU", 
-"MULTIPLE_ROOT_NODES", 
-"NO_ROOT_NODE", 
-"MULTIPLE_EDGES_FOR_NODES", 
-"CYCLE_DETECTED", 
-"DISCONNECTED_GRAPH_DETECTED", 
-"INCORRECT_ROOT_NODE_LABEL", 
-"TIP_WITHOUT_OTU", 
-"TIP_WITHOUT_OTT_ID", 
-"MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
-"NON_MONOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
-"INVALID_PROPERTY_VALUE", 
-"PROPERTY_VALUE_NOT_USEFUL", 
-"UNRECOGNIZED_PROPERTY_VALUE", 
-"MULTIPLE_TREES", 
-"UNRECOGNIZED_TAG", 
-"CONFLICTING_PROPERTY_VALUES", 
-"NO_TREES", 
-"DEPRECATED_PROPERTY", 
-"UNPARSEABLE_META", 
-"UNREACHABLE_NODE", 
-"INCORRECT_VALUE_TYPE", 
-"MISSING_CRUCIAL_CONTENT"
-], 
 "commandLine": [
 "--embed", 
-"--agent-only", 
-"-e", 
-"../mig-phyelesystem-scratch/1291/validation.json", 
-"-o", 
-"../mig-phyelesystem-scratch/1291/final.json", 
-"../mig-phyelesystem-scratch/1291/v1.2.1-1291.json"
+"--agent-only"
 ], 
 "otherProperty": [
 {
@@ -76,12 +39,17 @@
 }
 ]
 }, 
+"^ot:annotationEvents": {
+"annotation": []
+}, 
+"^ot:candidateTreeForSynthesis": [], 
 "^ot:curatorName": "Romina Gazis", 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S12343"
 }, 
-"^ot:focalClade": 1794023, 
-"^ot:focalCladeOTTTaxonName": "Dictyocatenulata", 
+"^ot:messages": {
+"message": []
+}, 
 "^ot:otusElementOrder": [
 "otus1291"
 ], 
@@ -91,6 +59,7 @@
 }, 
 "^ot:studyPublicationReference": "An K., Degawa Y., Fujihara E., Mikawa T., Ohkuma M., & Okada G. 2012. Molecular phylogenetic analyses based on the nuclear rRNA genes and the intron-exon structures of the nuSSU rRNA gene in Dictyocatenulata alba (anamorphic Ascomycota). Fungal Biology, Volume 116, Issue 11, November 2012, Pages 1134\u20131145.", 
 "^ot:studyYear": 2012, 
+"^ot:tag": [], 
 "^ot:treesElementOrder": [
 "trees1291"
 ], 
@@ -99,38 +68,28 @@
 "otuById": {
 "otu240321": {
 "^ot:originalLabel": "Dictyocatenulata alba 5359", 
-"^ot:ottId": 344873, 
-"^ot:ottTaxonName": "Dictyocatenulata alba", 
 "^ot:treebaseOTUId": "Tl709102"
 }, 
 "otu240322": {
 "^ot:originalLabel": "Dictyocatenulata alba 5360", 
-"^ot:ottId": 344873, 
-"^ot:ottTaxonName": "Dictyocatenulata alba", 
 "^ot:treebaseOTUId": "Tl709123"
 }, 
 "otu240323": {
 "^ot:originalLabel": "Dictyocatenulata alba 8401", 
-"^ot:ottId": 344873, 
-"^ot:ottTaxonName": "Dictyocatenulata alba", 
 "^ot:treebaseOTUId": "Tl709125"
 }, 
 "otu240324": {
 "^ot:originalLabel": "Dictyocatenulata alba 5358", 
-"^ot:ottId": 344873, 
-"^ot:ottTaxonName": "Dictyocatenulata alba", 
 "^ot:treebaseOTUId": "Tl709129"
 }, 
 "otu240325": {
 "^ot:originalLabel": "Dictyocatenulata alba 12918", 
-"^ot:ottId": 344873, 
-"^ot:ottTaxonName": "Dictyocatenulata alba", 
 "^ot:treebaseOTUId": "Tl709133"
 }, 
 "otu240326": {
 "^ot:originalLabel": "Trematosphaeria heterospora AY016354", 
-"^ot:ottId": 84216, 
-"^ot:ottTaxonName": "Trematosphaeria heterospora", 
+"^ot:ottId": 5319110, 
+"^ot:ottTaxonName": "Leptosphaeria heterospora", 
 "^ot:treebaseOTUId": "Tl714738"
 }, 
 "otu240327": {
@@ -190,7 +149,7 @@
 "otu240336": {
 "^ot:originalLabel": "Botryosphaeria laricina AB454207", 
 "^ot:ottId": 424451, 
-"^ot:ottTaxonName": "Botryosphaeria laricina", 
+"^ot:ottTaxonName": "Guignardia laricina", 
 "^ot:treebaseOTUId": "Tl714748"
 }, 
 "otu240337": {
@@ -201,8 +160,6 @@
 }, 
 "otu240338": {
 "^ot:originalLabel": "Microxyphium citri AY016340", 
-"^ot:ottId": 597876, 
-"^ot:ottTaxonName": "Microxyphium citri", 
 "^ot:treebaseOTUId": "Tl714750"
 }, 
 "otu240339": {
@@ -256,7 +213,7 @@
 "otu240347": {
 "^ot:originalLabel": "Berlesiella nigerrima AY541478", 
 "^ot:ottId": 849146, 
-"^ot:ottTaxonName": "Berlesiella nigerrima", 
+"^ot:ottTaxonName": "Capronia nigerrima", 
 "^ot:treebaseOTUId": "Tl714759"
 }, 
 "otu240348": {
@@ -297,8 +254,6 @@
 }, 
 "otu240354": {
 "^ot:originalLabel": "Cryomyces antarcticus GU250315", 
-"^ot:ottId": 1071089, 
-"^ot:ottTaxonName": "Cryomyces antarcticus", 
 "^ot:treebaseOTUId": "Tl714766"
 }, 
 "otu240355": {
@@ -315,8 +270,8 @@
 }, 
 "otu240357": {
 "^ot:originalLabel": "Dothidea ribesia AY016343", 
-"^ot:ottId": 295793, 
-"^ot:ottTaxonName": "Dothidea ribesia", 
+"^ot:ottId": 5320161, 
+"^ot:ottTaxonName": "Dothiora ribesia", 
 "^ot:treebaseOTUId": "Tl714769"
 }, 
 "otu240358": {
@@ -351,8 +306,6 @@
 }, 
 "otu240363": {
 "^ot:originalLabel": "Graphina peplophora DQ431930", 
-"^ot:ottId": 381549, 
-"^ot:ottTaxonName": "Graphina peplophora", 
 "^ot:treebaseOTUId": "Tl714775"
 }, 
 "otu240364": {
@@ -369,8 +322,8 @@
 }, 
 "otu240366": {
 "^ot:originalLabel": "Melanops tulasnei FJ824765", 
-"^ot:ottId": 539377, 
-"^ot:ottTaxonName": "Melanops tulasnei", 
+"^ot:ottId": 518725, 
+"^ot:ottTaxonName": "Botryosphaeria quercuum", 
 "^ot:treebaseOTUId": "Tl714778"
 }, 
 "otu240367": {
@@ -381,8 +334,8 @@
 }, 
 "otu240368": {
 "^ot:originalLabel": "Botryosphaeria melanops DQ377856", 
-"^ot:ottId": 539377, 
-"^ot:ottTaxonName": "Melanops tulasnei", 
+"^ot:ottId": 518725, 
+"^ot:ottTaxonName": "Botryosphaeria quercuum", 
 "^ot:treebaseOTUId": "Tl714780"
 }, 
 "otu240369": {
@@ -400,7 +353,7 @@
 "otu240371": {
 "^ot:originalLabel": "Coenogonium pineti AY300834", 
 "^ot:ottId": 792178, 
-"^ot:ottTaxonName": "Coenogonium pineti", 
+"^ot:ottTaxonName": "Dimerella pineti", 
 "^ot:treebaseOTUId": "Tl714783"
 }, 
 "otu240372": {
@@ -441,14 +394,12 @@
 }, 
 "otu240378": {
 "^ot:originalLabel": "Furcaspora eucalypti EF110613", 
-"^ot:ottId": 217074, 
-"^ot:ottTaxonName": "Furcaspora eucalypti", 
 "^ot:treebaseOTUId": "Tl714790"
 }, 
 "otu240379": {
 "^ot:originalLabel": "Ostropa barbara HM244773", 
-"^ot:ottId": 767384, 
-"^ot:ottTaxonName": "Ostropa barbara", 
+"^ot:ottId": 5318781, 
+"^ot:ottTaxonName": "Lophium barbarum", 
 "^ot:treebaseOTUId": "Tl714791"
 }, 
 "otu240380": {
@@ -520,7 +471,7 @@
 "otu240391": {
 "^ot:originalLabel": "Cryptodiscus pini FJ904681", 
 "^ot:ottId": 492138, 
-"^ot:ottTaxonName": "Cryptodiscus pini", 
+"^ot:ottTaxonName": "Paschelkiella pini", 
 "^ot:treebaseOTUId": "Tl714803"
 }, 
 "otu240392": {
@@ -537,8 +488,6 @@
 }, 
 "otu240394": {
 "^ot:originalLabel": "Trapeliopsis steppicus AF353574", 
-"^ot:ottId": 880221, 
-"^ot:ottTaxonName": "Trapeliopsis steppicus", 
 "^ot:treebaseOTUId": "Tl714806"
 }, 
 "otu240395": {
@@ -585,14 +534,12 @@
 }, 
 "otu240402": {
 "^ot:originalLabel": "Neosartorya stramenia EF669984", 
-"^ot:ottId": 1081050, 
-"^ot:ottTaxonName": "Neosartorya stramenia", 
+"^ot:ottId": 5310630, 
+"^ot:ottTaxonName": "Aspergillus stramenius", 
 "^ot:treebaseOTUId": "Tl714814"
 }, 
 "otu240403": {
 "^ot:originalLabel": "Sarea resinae AY590792", 
-"^ot:ottId": 596084, 
-"^ot:ottTaxonName": "Sarea resinae", 
 "^ot:treebaseOTUId": "Tl714815"
 }, 
 "otu240404": {
@@ -616,7 +563,7 @@
 "otu240407": {
 "^ot:originalLabel": "Cryptodiscus pini HM244762", 
 "^ot:ottId": 492138, 
-"^ot:ottTaxonName": "Cryptodiscus pini", 
+"^ot:ottTaxonName": "Paschelkiella pini", 
 "^ot:treebaseOTUId": "Tl714819"
 }, 
 "otu240408": {
@@ -639,8 +586,6 @@
 }, 
 "otu240411": {
 "^ot:originalLabel": "Placopsis santessonii AY212826", 
-"^ot:ottId": 258211, 
-"^ot:ottTaxonName": "Placopsis santessonii", 
 "^ot:treebaseOTUId": "Tl714823"
 }, 
 "otu240412": {
@@ -669,389 +614,382 @@
 }, 
 "otu240416": {
 "^ot:originalLabel": "Siphula georginae DQ337608", 
-"^ot:ottId": 393472, 
-"^ot:ottTaxonName": "Siphula georginae", 
+"^ot:ottId": 5315672, 
+"^ot:ottTaxonName": "Parasiphula georginae", 
 "^ot:treebaseOTUId": "Tl714828"
 }, 
 "otu240417": {
 "^ot:originalLabel": "Sarea resinae", 
-"^ot:ottId": 596084, 
 "^ot:treebaseOTUId": "Tl879214"
 }, 
 "otu240418": {
 "^ot:originalLabel": "Petractis nodispora", 
 "^ot:ottId": 457097, 
+"^ot:ottTaxonName": "Petractis nodispora", 
 "^ot:treebaseOTUId": "Tl879215"
 }, 
 "otu240419": {
 "^ot:originalLabel": "Dictyocatenulata alba", 
-"^ot:ottId": 344873, 
 "^ot:treebaseOTUId": "Tl879216"
 }, 
 "otu240420": {
 "^ot:originalLabel": "Belonia russula", 
 "^ot:ottId": 547040, 
+"^ot:ottTaxonName": "Belonia russula", 
 "^ot:treebaseOTUId": "Tl879217"
 }, 
 "otu240421": {
 "^ot:originalLabel": "Diploschistes diacapsis", 
 "^ot:ottId": 615791, 
+"^ot:ottTaxonName": "Diploschistes diacapsis", 
 "^ot:treebaseOTUId": "Tl879218"
 }, 
 "otu240422": {
 "^ot:originalLabel": "Graphis scripta", 
 "^ot:ottId": 736053, 
+"^ot:ottTaxonName": "Graphis scripta", 
 "^ot:treebaseOTUId": "Tl879219"
 }, 
 "otu240423": {
 "^ot:originalLabel": "Siphula georginae", 
-"^ot:ottId": 393472, 
 "^ot:treebaseOTUId": "Tl879220"
 }, 
 "otu240424": {
 "^ot:originalLabel": "Cryptodiscus microstomus", 
 "^ot:ottId": 492149, 
+"^ot:ottTaxonName": "Cryptodiscus microstomus", 
 "^ot:treebaseOTUId": "Tl879221"
 }, 
 "otu240425": {
-"^ot:altLabel": "Schaereria fuscocinerea", 
 "^ot:originalLabel": "Schaereria fuscocinerea ", 
 "^ot:ottId": 365637, 
+"^ot:ottTaxonName": "Schaereria fuscocinerea", 
 "^ot:treebaseOTUId": "Tl879222"
 }, 
 "otu240426": {
 "^ot:originalLabel": "Cryptodiscus pini", 
 "^ot:ottId": 492138, 
+"^ot:ottTaxonName": "Paschelkiella pini", 
 "^ot:treebaseOTUId": "Tl879223"
 }, 
 "otu240427": {
 "^ot:originalLabel": "Aspicilia berntii", 
 "^ot:ottId": 414492, 
+"^ot:ottTaxonName": "Aspicilia berntii", 
 "^ot:treebaseOTUId": "Tl879224"
 }, 
 "otu240428": {
-"^ot:altLabel": "Aspergillus glaucus", 
 "^ot:originalLabel": "Eurotium herbariorum", 
 "^ot:ottId": 560551, 
+"^ot:ottTaxonName": "Aspergillus glaucus", 
 "^ot:treebaseOTUId": "Tl879225"
 }, 
 "otu240429": {
 "^ot:originalLabel": "Aspicilia zonata", 
 "^ot:ottId": 76455, 
+"^ot:ottTaxonName": "Aspicilia zonata", 
 "^ot:treebaseOTUId": "Tl879226"
 }, 
 "otu240430": {
-"^ot:altLabel": "Dictyocatenulata alba", 
 "^ot:originalLabel": "Dictyocatenulata alba 5359 ITS", 
-"^ot:ottId": 344873, 
 "^ot:treebaseOTUId": "Tl879227"
 }, 
 "otu240431": {
-"^ot:altLabel": "Stictis urceolatum", 
 "^ot:originalLabel": "Conotrema urceolatum", 
 "^ot:ottId": 843700, 
+"^ot:ottTaxonName": "Stictis urceolatum", 
 "^ot:treebaseOTUId": "Tl879228"
 }, 
 "otu240432": {
 "^ot:originalLabel": "Dibaeis baeomyces", 
 "^ot:ottId": 444942, 
+"^ot:ottTaxonName": "Dibaeis baeomyces", 
 "^ot:treebaseOTUId": "Tl879229"
 }, 
 "otu240433": {
 "^ot:originalLabel": "Trapeliopsis steppicus", 
-"^ot:ottId": 880221, 
 "^ot:treebaseOTUId": "Tl879230"
 }, 
 "otu240434": {
 "^ot:originalLabel": "Ostropa barbara", 
-"^ot:ottId": 767384, 
 "^ot:treebaseOTUId": "Tl879231"
 }, 
 "otu240435": {
 "^ot:originalLabel": "Pertusaria albescens", 
 "^ot:ottId": 457308, 
+"^ot:ottTaxonName": "Pertusaria albescens", 
 "^ot:treebaseOTUId": "Tl879232"
 }, 
 "otu240436": {
 "^ot:originalLabel": "Baeomyces rufus", 
 "^ot:ottId": 479969, 
+"^ot:ottTaxonName": "Baeomyces rufus", 
 "^ot:treebaseOTUId": "Tl879233"
 }, 
 "otu240437": {
 "^ot:originalLabel": "Stictis brunnescens", 
 "^ot:ottId": 1052143, 
+"^ot:ottTaxonName": "Stictis brunnescens", 
 "^ot:treebaseOTUId": "Tl879234"
 }, 
 "otu240438": {
 "^ot:originalLabel": "Ochrolechia parella", 
 "^ot:ottId": 466005, 
+"^ot:ottTaxonName": "Ochrolechia parella", 
 "^ot:treebaseOTUId": "Tl879235"
 }, 
 "otu240439": {
 "^ot:originalLabel": "Placopsis santessonii", 
-"^ot:ottId": 258211, 
 "^ot:treebaseOTUId": "Tl879236"
 }, 
 "otu240440": {
 "^ot:originalLabel": "Carestiella socia", 
 "^ot:ottId": 843705, 
+"^ot:ottTaxonName": "Carestiella socia", 
 "^ot:treebaseOTUId": "Tl879237"
 }, 
 "otu240441": {
 "^ot:originalLabel": "Diploschistes muscorum", 
 "^ot:ottId": 719193, 
+"^ot:ottTaxonName": "Diploschistes muscorum", 
 "^ot:treebaseOTUId": "Tl879238"
 }, 
 "otu240442": {
 "^ot:originalLabel": "Ocellularia interponenda", 
 "^ot:ottId": 380209, 
+"^ot:ottTaxonName": "Ocellularia interponenda", 
 "^ot:treebaseOTUId": "Tl879239"
 }, 
 "otu240443": {
 "^ot:originalLabel": "Ocellularia perforata", 
 "^ot:ottId": 729676, 
+"^ot:ottTaxonName": "Ocellularia perforata", 
 "^ot:treebaseOTUId": "Tl879240"
 }, 
 "otu240444": {
-"^ot:altLabel": "Dictyocatenulata alba", 
 "^ot:originalLabel": "Dictyocatenulata alba 8401ITS", 
-"^ot:ottId": 344873, 
 "^ot:treebaseOTUId": "Tl879241"
 }, 
 "otu240445": {
-"^ot:altLabel": "Dictyocatenulata alba", 
 "^ot:originalLabel": "Dictyocatenulata alba 5360ITS", 
-"^ot:ottId": 344873, 
 "^ot:treebaseOTUId": "Tl879242"
 }, 
 "otu240446": {
-"^ot:altLabel": "Dictyocatenulata alba", 
 "^ot:originalLabel": "Dictyocatenulata alba 12918ITS", 
-"^ot:ottId": 344873, 
 "^ot:treebaseOTUId": "Tl879243"
 }, 
 "otu240447": {
 "^ot:originalLabel": "Megaspora verrucosa", 
 "^ot:ottId": 867210, 
+"^ot:ottTaxonName": "Megaspora verrucosa", 
 "^ot:treebaseOTUId": "Tl879244"
 }, 
 "otu240448": {
 "^ot:originalLabel": "Schizoxylon albescens", 
 "^ot:ottId": 446495, 
+"^ot:ottTaxonName": "Schizoxylon albescens", 
 "^ot:treebaseOTUId": "Tl879245"
 }, 
 "otu240449": {
 "^ot:originalLabel": "Neosartorya stramenia", 
-"^ot:ottId": 1081050, 
 "^ot:treebaseOTUId": "Tl879246"
 }, 
 "otu240450": {
 "^ot:originalLabel": "Cryptodiscus tabularum", 
 "^ot:ottId": 103218, 
+"^ot:ottTaxonName": "Cryptodiscus tabularum", 
 "^ot:treebaseOTUId": "Tl879247"
 }, 
 "otu240451": {
-"^ot:altLabel": "Aspicilia zonata", 
 "^ot:originalLabel": "EU057951  ", 
 "^ot:ottId": 76455, 
+"^ot:ottTaxonName": "Aspicilia zonata", 
 "^ot:treebaseOTUId": "Tl901716"
 }, 
 "otu240452": {
-"^ot:altLabel": "Fungi", 
 "^ot:originalLabel": "5358ITS   ", 
 "^ot:ottId": 352914, 
+"^ot:ottTaxonName": "Fungi", 
 "^ot:treebaseOTUId": "Tl901717"
 }, 
 "otu240453": {
-"^ot:altLabel": "Cryptodiscus microstomus", 
 "^ot:originalLabel": "FJ904676  ", 
 "^ot:ottId": 492149, 
+"^ot:ottTaxonName": "Cryptodiscus microstomus", 
 "^ot:treebaseOTUId": "Tl901718"
 }, 
 "otu240454": {
-"^ot:altLabel": "Ostropa barbara", 
 "^ot:originalLabel": "HM244773  ", 
-"^ot:ottId": 767384, 
 "^ot:treebaseOTUId": "Tl901719"
 }, 
 "otu240455": {
-"^ot:altLabel": "Petractis nodispora", 
 "^ot:originalLabel": "FJ588710  ", 
 "^ot:ottId": 457097, 
+"^ot:ottTaxonName": "Petractis nodispora", 
 "^ot:treebaseOTUId": "Tl901720"
 }, 
 "otu240456": {
-"^ot:altLabel": "Ocellularia perforata", 
 "^ot:originalLabel": "AJ508682  ", 
 "^ot:ottId": 729676, 
+"^ot:ottTaxonName": "Ocellularia perforata", 
 "^ot:treebaseOTUId": "Tl901721"
 }, 
 "otu240457": {
-"^ot:altLabel": "Baeomyces rufus", 
 "^ot:originalLabel": "AF448457  ", 
 "^ot:ottId": 479969, 
+"^ot:ottTaxonName": "Baeomyces rufus", 
 "^ot:treebaseOTUId": "Tl901722"
 }, 
 "otu240458": {
-"^ot:altLabel": "Placopsis santessonii", 
 "^ot:originalLabel": "AY212826  ", 
-"^ot:ottId": 258211, 
 "^ot:treebaseOTUId": "Tl901723"
 }, 
 "otu240459": {
-"^ot:altLabel": "Trapeliopsis steppicus", 
 "^ot:originalLabel": "AF353574  ", 
-"^ot:ottId": 880221, 
 "^ot:treebaseOTUId": "Tl901724"
 }, 
 "otu240460": {
-"^ot:altLabel": "Schizoxylon albescens", 
 "^ot:originalLabel": "DQ401144  ", 
 "^ot:ottId": 446495, 
+"^ot:ottTaxonName": "Schizoxylon albescens", 
 "^ot:treebaseOTUId": "Tl901725"
 }, 
 "otu240461": {
-"^ot:altLabel": "Graphis scripta", 
 "^ot:originalLabel": "AF229195  ", 
 "^ot:ottId": 736053, 
+"^ot:ottTaxonName": "Graphis scripta", 
 "^ot:treebaseOTUId": "Tl901726"
 }, 
 "otu240462": {
-"^ot:altLabel": "Ochrolechia parella", 
 "^ot:originalLabel": "AF329174  ", 
 "^ot:ottId": 466005, 
+"^ot:ottTaxonName": "Ochrolechia parella", 
 "^ot:treebaseOTUId": "Tl901727"
 }, 
 "otu240463": {
-"^ot:altLabel": "Cryptodiscus pini", 
 "^ot:originalLabel": "HM244762  ", 
 "^ot:ottId": 492138, 
+"^ot:ottTaxonName": "Paschelkiella pini", 
 "^ot:treebaseOTUId": "Tl901728"
 }, 
 "otu240464": {
-"^ot:altLabel": "Fungi", 
 "^ot:originalLabel": "8401ITS   ", 
 "^ot:ottId": 352914, 
+"^ot:ottTaxonName": "Fungi", 
 "^ot:treebaseOTUId": "Tl901729"
 }, 
 "otu240465": {
-"^ot:altLabel": "Neosartorya stramenia", 
 "^ot:originalLabel": "EF669984  ", 
-"^ot:ottId": 1081050, 
 "^ot:treebaseOTUId": "Tl901730"
 }, 
 "otu240466": {
-"^ot:altLabel": "Schaereria fuscocinerea", 
 "^ot:originalLabel": "AF274090  ", 
 "^ot:ottId": 365637, 
+"^ot:ottTaxonName": "Schaereria fuscocinerea", 
 "^ot:treebaseOTUId": "Tl901731"
 }, 
 "otu240467": {
-"^ot:altLabel": "Aspicilia berntii", 
 "^ot:originalLabel": "EU502747  ", 
 "^ot:ottId": 414492, 
+"^ot:ottTaxonName": "Aspicilia berntii", 
 "^ot:treebaseOTUId": "Tl901732"
 }, 
 "otu240468": {
-"^ot:altLabel": "Fungi", 
 "^ot:originalLabel": "5359ITS   ", 
 "^ot:ottId": 352914, 
+"^ot:ottTaxonName": "Fungi", 
 "^ot:treebaseOTUId": "Tl901733"
 }, 
 "otu240469": {
-"^ot:altLabel": "Fungi", 
 "^ot:originalLabel": "12918ITS  ", 
 "^ot:ottId": 352914, 
+"^ot:ottTaxonName": "Fungi", 
 "^ot:treebaseOTUId": "Tl901734"
 }, 
 "otu240470": {
-"^ot:altLabel": "Ocellularia interponenda", 
 "^ot:originalLabel": "AJ508681  ", 
 "^ot:ottId": 380209, 
+"^ot:ottTaxonName": "Ocellularia interponenda", 
 "^ot:treebaseOTUId": "Tl901735"
 }, 
 "otu240471": {
-"^ot:altLabel": "Belonia russula", 
 "^ot:originalLabel": "HM244759  ", 
 "^ot:ottId": 547040, 
+"^ot:ottTaxonName": "Belonia russula", 
 "^ot:treebaseOTUId": "Tl901736"
 }, 
 "otu240472": {
-"^ot:altLabel": "Carestiella socia", 
 "^ot:originalLabel": "AY661682  ", 
 "^ot:ottId": 843705, 
+"^ot:ottTaxonName": "Carestiella socia", 
 "^ot:treebaseOTUId": "Tl901737"
 }, 
 "otu240473": {
-"^ot:altLabel": "Cryptodiscus tabularum", 
 "^ot:originalLabel": "FJ904690  ", 
 "^ot:ottId": 103218, 
+"^ot:ottTaxonName": "Cryptodiscus tabularum", 
 "^ot:treebaseOTUId": "Tl901738"
 }, 
 "otu240474": {
-"^ot:altLabel": "Stictis brunnescens", 
 "^ot:originalLabel": "AY661688  ", 
 "^ot:ottId": 1052143, 
+"^ot:ottTaxonName": "Stictis brunnescens", 
 "^ot:treebaseOTUId": "Tl901739"
 }, 
 "otu240475": {
-"^ot:altLabel": "Diploschistes muscorum", 
 "^ot:originalLabel": "AF228319  ", 
 "^ot:ottId": 719193, 
+"^ot:ottTaxonName": "Diploschistes muscorum", 
 "^ot:treebaseOTUId": "Tl901740"
 }, 
 "otu240476": {
-"^ot:altLabel": "Siphula georginae", 
 "^ot:originalLabel": "DQ337608  ", 
-"^ot:ottId": 393472, 
 "^ot:treebaseOTUId": "Tl901741"
 }, 
 "otu240477": {
-"^ot:altLabel": "Sarea resinae", 
 "^ot:originalLabel": "AY590792  ", 
-"^ot:ottId": 596084, 
 "^ot:treebaseOTUId": "Tl901742"
 }, 
 "otu240478": {
-"^ot:altLabel": "Pertusaria albescens", 
 "^ot:originalLabel": "AF329177  ", 
 "^ot:ottId": 457308, 
+"^ot:ottTaxonName": "Pertusaria albescens", 
 "^ot:treebaseOTUId": "Tl901743"
 }, 
 "otu240479": {
-"^ot:altLabel": "Diploschistes diacapsis", 
 "^ot:originalLabel": "AF228317  ", 
 "^ot:ottId": 615791, 
+"^ot:ottTaxonName": "Diploschistes diacapsis", 
 "^ot:treebaseOTUId": "Tl901744"
 }, 
 "otu240480": {
-"^ot:altLabel": "Stictis urceolatum", 
 "^ot:originalLabel": "AY661686  ", 
 "^ot:ottId": 843700, 
+"^ot:ottTaxonName": "Stictis urceolatum", 
 "^ot:treebaseOTUId": "Tl901745"
 }, 
 "otu240481": {
-"^ot:altLabel": "Fungi", 
 "^ot:originalLabel": "5360ITS   ", 
 "^ot:ottId": 352914, 
+"^ot:ottTaxonName": "Fungi", 
 "^ot:treebaseOTUId": "Tl901746"
 }, 
 "otu240482": {
-"^ot:altLabel": "Aspergillus glaucus", 
 "^ot:originalLabel": "AY373887  ", 
 "^ot:ottId": 560551, 
+"^ot:ottTaxonName": "Aspergillus glaucus", 
 "^ot:treebaseOTUId": "Tl901747"
 }, 
 "otu240483": {
-"^ot:altLabel": "Dibaeis baeomyces", 
 "^ot:originalLabel": "DQ782844  ", 
 "^ot:ottId": 444942, 
+"^ot:ottTaxonName": "Dibaeis baeomyces", 
 "^ot:treebaseOTUId": "Tl901748"
 }, 
 "otu240484": {
-"^ot:altLabel": "Megaspora verrucosa", 
 "^ot:originalLabel": "AF332122  ", 
 "^ot:ottId": 867210, 
+"^ot:ottTaxonName": "Megaspora verrucosa", 
 "^ot:treebaseOTUId": "Tl901749"
 }
 }
@@ -1068,8 +1006,14 @@
 "treeById": {
 "tree2588": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "NJ, SSU", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node582695", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node582695": {
 "edge582696": {
@@ -1628,8 +1572,14 @@
 }, 
 "tree2589": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "NJ, LSU", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node582774", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node582774": {
 "edge582775": {
@@ -2132,8 +2082,14 @@
 }, 
 "tree2590": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "NJ, ITS", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node582845", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node582845": {
 "edge582846": {

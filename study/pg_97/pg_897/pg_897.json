@@ -19,48 +19,11 @@
 "@id": "peyotl-validator", 
 "@name": "validate_ot_nexson.py", 
 "@url": "https://github.com/OpenTreeOfLife/peyotl", 
-"@version": "0.0.3a", 
+"@version": "0.0.4a", 
 "invocation": {
-"checksPerformed": [
-"MISSING_MANDATORY_KEY", 
-"MISSING_OPTIONAL_KEY", 
-"UNRECOGNIZED_KEY", 
-"MISSING_LIST_EXPECTED", 
-"DUPLICATING_SINGLETON_KEY", 
-"REFERENCED_ID_NOT_FOUND", 
-"REPEATED_ID", 
-"REPEATED_OTU", 
-"MULTIPLE_ROOT_NODES", 
-"NO_ROOT_NODE", 
-"MULTIPLE_EDGES_FOR_NODES", 
-"CYCLE_DETECTED", 
-"DISCONNECTED_GRAPH_DETECTED", 
-"INCORRECT_ROOT_NODE_LABEL", 
-"TIP_WITHOUT_OTU", 
-"TIP_WITHOUT_OTT_ID", 
-"MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
-"NON_MONOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
-"INVALID_PROPERTY_VALUE", 
-"PROPERTY_VALUE_NOT_USEFUL", 
-"UNRECOGNIZED_PROPERTY_VALUE", 
-"MULTIPLE_TREES", 
-"UNRECOGNIZED_TAG", 
-"CONFLICTING_PROPERTY_VALUES", 
-"NO_TREES", 
-"DEPRECATED_PROPERTY", 
-"UNPARSEABLE_META", 
-"UNREACHABLE_NODE", 
-"INCORRECT_VALUE_TYPE", 
-"MISSING_CRUCIAL_CONTENT"
-], 
 "commandLine": [
 "--embed", 
-"--agent-only", 
-"-e", 
-"../mig-phyelesystem-scratch/897/validation.json", 
-"-o", 
-"../mig-phyelesystem-scratch/897/final.json", 
-"../mig-phyelesystem-scratch/897/v1.2.1-897.json"
+"--agent-only"
 ], 
 "otherProperty": [
 {
@@ -76,12 +39,19 @@
 }
 ]
 }, 
+"^ot:annotationEvents": {
+"annotation": []
+}, 
+"^ot:candidateTreeForSynthesis": [], 
 "^ot:curatorName": "bryan drew", 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S12295"
 }, 
 "^ot:focalClade": 314104, 
 "^ot:focalCladeOTTTaxonName": "Ptilimnium", 
+"^ot:messages": {
+"message": []
+}, 
 "^ot:otusElementOrder": [
 "otus897"
 ], 
@@ -89,8 +59,8 @@
 "^ot:studyPublicationReference": "Feist M.E., Downie S.R., Magee A.R., & Liu M.R. 2012. Revised generic delimitations for Oxypolis and Ptilimnium (Apiaceae) based on leaf morphology, comparative fruit anatomy, and phylogenetic analysis of nuclear rDNA ITS and cpDNA trnQ and trnK intergenic spacer sequence data. Taxon, 61(2): 402-418.", 
 "^ot:studyYear": 2012, 
 "^ot:tag": [
-"ingroup added;", 
-"cpDNA & nrDNA"
+"cpDNA & nrDNA", 
+"ingroup added;"
 ], 
 "^ot:treesElementOrder": [
 "trees897"
@@ -262,6 +232,8 @@
 }, 
 "otu203857": {
 "^ot:originalLabel": "Atrema americana 1160", 
+"^ot:ottId": 498457, 
+"^ot:ottTaxonName": "Bifora americana", 
 "^ot:treebaseOTUId": "Tl699063"
 }, 
 "otu203858": {
@@ -556,10 +528,15 @@
 "treeById": {
 "tree1725": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
 "^ot:branchLengthMode": "ot:substitutionCount", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "con 50 majrule PPV", 
 "^ot:inGroupClade": "node479290", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node479289", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node479289": {
 "edge479290": {
@@ -1468,9 +1445,15 @@
 }, 
 "tree1726": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "Strict", 
 "^ot:inGroupClade": "node479403", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node479402", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node479402": {
 "edge479403": {
@@ -2204,9 +2187,15 @@
 }, 
 "tree1727": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "Strict", 
 "^ot:inGroupClade": "node479507", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node479506", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node479506": {
 "edge479507": {
@@ -2968,9 +2957,15 @@
 }, 
 "tree1728": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "MajRule", 
 "^ot:inGroupClade": "node479615", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node479614", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node479614": {
 "edge479615": {
@@ -3753,9 +3748,15 @@
 }, 
 "tree1729": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "MajRule", 
 "^ot:inGroupClade": "node479726", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node479725", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node479725": {
 "edge479726": {

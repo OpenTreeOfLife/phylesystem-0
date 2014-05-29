@@ -19,48 +19,11 @@
 "@id": "peyotl-validator", 
 "@name": "validate_ot_nexson.py", 
 "@url": "https://github.com/OpenTreeOfLife/peyotl", 
-"@version": "0.0.3a", 
+"@version": "0.0.4a", 
 "invocation": {
-"checksPerformed": [
-"MISSING_MANDATORY_KEY", 
-"MISSING_OPTIONAL_KEY", 
-"UNRECOGNIZED_KEY", 
-"MISSING_LIST_EXPECTED", 
-"DUPLICATING_SINGLETON_KEY", 
-"REFERENCED_ID_NOT_FOUND", 
-"REPEATED_ID", 
-"REPEATED_OTU", 
-"MULTIPLE_ROOT_NODES", 
-"NO_ROOT_NODE", 
-"MULTIPLE_EDGES_FOR_NODES", 
-"CYCLE_DETECTED", 
-"DISCONNECTED_GRAPH_DETECTED", 
-"INCORRECT_ROOT_NODE_LABEL", 
-"TIP_WITHOUT_OTU", 
-"TIP_WITHOUT_OTT_ID", 
-"MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
-"NON_MONOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
-"INVALID_PROPERTY_VALUE", 
-"PROPERTY_VALUE_NOT_USEFUL", 
-"UNRECOGNIZED_PROPERTY_VALUE", 
-"MULTIPLE_TREES", 
-"UNRECOGNIZED_TAG", 
-"CONFLICTING_PROPERTY_VALUES", 
-"NO_TREES", 
-"DEPRECATED_PROPERTY", 
-"UNPARSEABLE_META", 
-"UNREACHABLE_NODE", 
-"INCORRECT_VALUE_TYPE", 
-"MISSING_CRUCIAL_CONTENT"
-], 
 "commandLine": [
 "--embed", 
-"--agent-only", 
-"-e", 
-"../mig-phyelesystem-scratch/530/validation.json", 
-"-o", 
-"../mig-phyelesystem-scratch/530/final.json", 
-"../mig-phyelesystem-scratch/530/v1.2.1-530.json"
+"--agent-only"
 ], 
 "otherProperty": [
 {
@@ -76,12 +39,17 @@
 }
 ]
 }, 
+"^ot:annotationEvents": {
+"annotation": []
+}, 
+"^ot:candidateTreeForSynthesis": [], 
 "^ot:curatorName": "Romina Gazis", 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S11298"
 }, 
-"^ot:focalClade": 1552377, 
-"^ot:focalCladeOTTTaxonName": "Endophoma", 
+"^ot:messages": {
+"message": []
+}, 
 "^ot:otusElementOrder": [
 "otus530"
 ], 
@@ -91,6 +59,7 @@
 }, 
 "^ot:studyPublicationReference": "Tsuneda A., Davey M.L., Tsuneda I., & Currah R. 2011. Endophoma, a new didymellaceous endoconidial genus from bat-cave soil. Mycologia, 103 (5): 1146-1155.", 
 "^ot:studyYear": 2011, 
+"^ot:tag": [], 
 "^ot:treesElementOrder": [
 "trees530"
 ], 
@@ -117,8 +86,6 @@
 }, 
 "otu167921": {
 "^ot:originalLabel": "Epicoccum ndophoma elongata", 
-"^ot:ottId": 412322, 
-"^ot:ottTaxonName": "Endophoma elongata", 
 "^ot:treebaseOTUId": "Tl486239"
 }, 
 "otu167922": {
@@ -159,8 +126,6 @@
 }, 
 "otu167928": {
 "^ot:originalLabel": "Stagonosporopsis andigena", 
-"^ot:ottId": 425026, 
-"^ot:ottTaxonName": "Stagonosporopsis andigena", 
 "^ot:treebaseOTUId": "Tl486246"
 }, 
 "otu167929": {
@@ -196,7 +161,7 @@
 "otu167934": {
 "^ot:originalLabel": "Peyronellaea eucalyptica", 
 "^ot:ottId": 620117, 
-"^ot:ottTaxonName": "Peyronellaea eucalyptica", 
+"^ot:ottTaxonName": "Phoma eucalyptica", 
 "^ot:treebaseOTUId": "Tl486252"
 }, 
 "otu167935": {
@@ -219,8 +184,6 @@
 }, 
 "otu167938": {
 "^ot:originalLabel": "Peyronellaea calorpreferens", 
-"^ot:ottId": 98633, 
-"^ot:ottTaxonName": "Peyronellaea calorpreferens", 
 "^ot:treebaseOTUId": "Tl486256"
 }, 
 "otu167939": {
@@ -249,8 +212,6 @@
 }, 
 "otu167943": {
 "^ot:originalLabel": "Phoma xanthina", 
-"^ot:ottId": 25543, 
-"^ot:ottTaxonName": "Phoma xanthina", 
 "^ot:treebaseOTUId": "Tl486261"
 }, 
 "otu167944": {
@@ -328,7 +289,7 @@
 "otu167956": {
 "^ot:originalLabel": "Microsphaeropsis olivacea", 
 "^ot:ottId": 429898, 
-"^ot:ottTaxonName": "Microsphaeropsis olivacea", 
+"^ot:ottTaxonName": "Coniothyrium olivaceum", 
 "^ot:treebaseOTUId": "Tl486274"
 }, 
 "otu167957": {
@@ -411,8 +372,6 @@
 }, 
 "otu167970": {
 "^ot:originalLabel": "Epicoccum sorghi", 
-"^ot:ottId": 862483, 
-"^ot:ottTaxonName": "Epicoccum sorghi", 
 "^ot:treebaseOTUId": "Tl486288"
 }, 
 "otu167971": {
@@ -469,9 +428,15 @@
 "treeById": {
 "tree762": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "ML, LSU + ITS + b-tubulin", 
 "^ot:inGroupClade": "node333693", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node333691", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node333691": {
 "edge333692": {

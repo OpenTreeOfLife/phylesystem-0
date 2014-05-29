@@ -19,48 +19,11 @@
 "@id": "peyotl-validator", 
 "@name": "validate_ot_nexson.py", 
 "@url": "https://github.com/OpenTreeOfLife/peyotl", 
-"@version": "0.0.3a", 
+"@version": "0.0.4a", 
 "invocation": {
-"checksPerformed": [
-"MISSING_MANDATORY_KEY", 
-"MISSING_OPTIONAL_KEY", 
-"UNRECOGNIZED_KEY", 
-"MISSING_LIST_EXPECTED", 
-"DUPLICATING_SINGLETON_KEY", 
-"REFERENCED_ID_NOT_FOUND", 
-"REPEATED_ID", 
-"REPEATED_OTU", 
-"MULTIPLE_ROOT_NODES", 
-"NO_ROOT_NODE", 
-"MULTIPLE_EDGES_FOR_NODES", 
-"CYCLE_DETECTED", 
-"DISCONNECTED_GRAPH_DETECTED", 
-"INCORRECT_ROOT_NODE_LABEL", 
-"TIP_WITHOUT_OTU", 
-"TIP_WITHOUT_OTT_ID", 
-"MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
-"NON_MONOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
-"INVALID_PROPERTY_VALUE", 
-"PROPERTY_VALUE_NOT_USEFUL", 
-"UNRECOGNIZED_PROPERTY_VALUE", 
-"MULTIPLE_TREES", 
-"UNRECOGNIZED_TAG", 
-"CONFLICTING_PROPERTY_VALUES", 
-"NO_TREES", 
-"DEPRECATED_PROPERTY", 
-"UNPARSEABLE_META", 
-"UNREACHABLE_NODE", 
-"INCORRECT_VALUE_TYPE", 
-"MISSING_CRUCIAL_CONTENT"
-], 
 "commandLine": [
 "--embed", 
-"--agent-only", 
-"-e", 
-"../mig-phyelesystem-scratch/1599/validation.json", 
-"-o", 
-"../mig-phyelesystem-scratch/1599/final.json", 
-"../mig-phyelesystem-scratch/1599/v1.2.1-1599.json"
+"--agent-only"
 ], 
 "otherProperty": [
 {
@@ -76,12 +39,19 @@
 }
 ]
 }, 
+"^ot:annotationEvents": {
+"annotation": []
+}, 
+"^ot:candidateTreeForSynthesis": [], 
 "^ot:curatorName": "Romina Gazis", 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S13537"
 }, 
 "^ot:focalClade": 526210, 
 "^ot:focalCladeOTTTaxonName": "Tuberaceae", 
+"^ot:messages": {
+"message": []
+}, 
 "^ot:otusElementOrder": [
 "otus1599"
 ], 
@@ -91,6 +61,7 @@
 }, 
 "^ot:studyPublicationReference": "Bonito, Gregory, Matthew E. Smith, Michael Nowak, Rosanne A. Healy, Gonzalo Guevara, Efren C\u00e1zares, Akihiko Kinoshita et al. \"Historical Biogeography and Diversification of Truffles in the Tuberaceae and Their Newly Identified Southern Hemisphere Sister Lineage.\" PloS one 8, no. 1 (2013): e52765.", 
 "^ot:studyYear": 2012, 
+"^ot:tag": [], 
 "^ot:treesElementOrder": [
 "trees1599"
 ], 
@@ -677,6 +648,8 @@
 }, 
 "otu264420": {
 "^ot:originalLabel": "Balsamia SRC395", 
+"^ot:ottId": 6916, 
+"^ot:ottTaxonName": "Balsamia", 
 "^ot:treebaseOTUId": "Tl920751"
 }, 
 "otu264421": {
@@ -747,6 +720,8 @@
 }, 
 "otu264432": {
 "^ot:originalLabel": "Balsamia SRC868", 
+"^ot:ottId": 6916, 
+"^ot:ottTaxonName": "Balsamia", 
 "^ot:treebaseOTUId": "Tl920763"
 }, 
 "otu264433": {
@@ -803,6 +778,8 @@
 }, 
 "otu264442": {
 "^ot:originalLabel": "Balsamia MES84", 
+"^ot:ottId": 6916, 
+"^ot:ottTaxonName": "Balsamia", 
 "^ot:treebaseOTUId": "Tl920773"
 }, 
 "otu264443": {
@@ -830,21 +807,21 @@
 "^ot:treebaseOTUId": "Tl920777"
 }, 
 "otu264447": {
-"^ot:altLabel": "Tuber", 
 "^ot:originalLabel": "Tuber sp33 China", 
 "^ot:ottId": 508058, 
+"^ot:ottTaxonName": "Tuber", 
 "^ot:treebaseOTUId": "Tl920778"
 }, 
 "otu264448": {
-"^ot:altLabel": "Tuber mexiusanum", 
 "^ot:originalLabel": "Tuber mexiusanum ITCV885 Mexico", 
 "^ot:ottId": 930433, 
+"^ot:ottTaxonName": "Tuber mexiusanum", 
 "^ot:treebaseOTUId": "Tl920779"
 }, 
 "otu264449": {
-"^ot:altLabel": "Nothojafnea thaxteri", 
 "^ot:originalLabel": "Nothojafnea cf thaxterii N10 Argentina", 
 "^ot:ottId": 3793843, 
+"^ot:ottTaxonName": "Nothojafnea thaxteri", 
 "^ot:treebaseOTUId": "Tl920780"
 }
 }
@@ -863,8 +840,14 @@
 "treeById": {
 "tree3221": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "ML, ITS", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node651790", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node651790": {
 "edge651791": {
@@ -2405,8 +2388,14 @@
 }, 
 "tree3222": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "ML, LSU", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node651982", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node651982": {
 "edge651983": {
@@ -3995,8 +3984,14 @@
 }, 
 "tree3223": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "ML, EF-1", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node652180", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node652180": {
 "edge652181": {
@@ -5241,8 +5236,14 @@
 }, 
 "tree3224": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "ML, RPB2", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node652335", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node652335": {
 "edge652336": {
@@ -6295,8 +6296,14 @@
 }, 
 "tree3225": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "ML, ITS + LSU + EF-1 + RPB2", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node652466", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node652466": {
 "edge652467": {

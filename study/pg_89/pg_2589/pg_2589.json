@@ -19,48 +19,11 @@
 "@id": "peyotl-validator", 
 "@name": "validate_ot_nexson.py", 
 "@url": "https://github.com/OpenTreeOfLife/peyotl", 
-"@version": "0.0.3a", 
+"@version": "0.0.4a", 
 "invocation": {
-"checksPerformed": [
-"MISSING_MANDATORY_KEY", 
-"MISSING_OPTIONAL_KEY", 
-"UNRECOGNIZED_KEY", 
-"MISSING_LIST_EXPECTED", 
-"DUPLICATING_SINGLETON_KEY", 
-"REFERENCED_ID_NOT_FOUND", 
-"REPEATED_ID", 
-"REPEATED_OTU", 
-"MULTIPLE_ROOT_NODES", 
-"NO_ROOT_NODE", 
-"MULTIPLE_EDGES_FOR_NODES", 
-"CYCLE_DETECTED", 
-"DISCONNECTED_GRAPH_DETECTED", 
-"INCORRECT_ROOT_NODE_LABEL", 
-"TIP_WITHOUT_OTU", 
-"TIP_WITHOUT_OTT_ID", 
-"MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
-"NON_MONOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
-"INVALID_PROPERTY_VALUE", 
-"PROPERTY_VALUE_NOT_USEFUL", 
-"UNRECOGNIZED_PROPERTY_VALUE", 
-"MULTIPLE_TREES", 
-"UNRECOGNIZED_TAG", 
-"CONFLICTING_PROPERTY_VALUES", 
-"NO_TREES", 
-"DEPRECATED_PROPERTY", 
-"UNPARSEABLE_META", 
-"UNREACHABLE_NODE", 
-"INCORRECT_VALUE_TYPE", 
-"MISSING_CRUCIAL_CONTENT"
-], 
 "commandLine": [
 "--embed", 
-"--agent-only", 
-"-e", 
-"../mig-phyelesystem-scratch/2589/validation.json", 
-"-o", 
-"../mig-phyelesystem-scratch/2589/final.json", 
-"../mig-phyelesystem-scratch/2589/v1.2.1-2589.json"
+"--agent-only"
 ], 
 "otherProperty": [
 {
@@ -76,9 +39,16 @@
 }
 ]
 }, 
+"^ot:annotationEvents": {
+"annotation": []
+}, 
+"^ot:candidateTreeForSynthesis": [], 
 "^ot:curatorName": "Joseph Brown", 
 "^ot:focalClade": 781784, 
 "^ot:focalCladeOTTTaxonName": "Gobioidei", 
+"^ot:messages": {
+"message": []
+}, 
 "^ot:otusElementOrder": [
 "otus2589"
 ], 
@@ -86,9 +56,11 @@
 "^ot:studyPublication": {
 "@href": "http://dx.doi.org/10.1016/j.ympev.2013.07.017"
 }, 
-"^ot:studyPublicationReference": "Ainhoa Agorreta, Diego San Mauro, Ulrich Schliewen, James L. Van Tassell, Marcelo Kova\u010di\u0107, Rafael Zardoya, Lukas R\u00fcber. 2013. Molecular phylogenetics of Gobioidei and phylogenetic placement of European gobies. Molecular Phylogenetics and Evolution", 
+"^ot:studyPublicationReference": "Agorreta, Ainhoa, Diego San Mauro, Ulrich Schliewen, James L. Van Tassell, Marcelo Kova\u010di\u0107, Rafael Zardoya, Lukas R\u00fcber. 2013. Molecular phylogenetics of Gobioidei and phylogenetic placement of European gobies. Molecular Phylogenetics and Evolution 69 (3): 619-633.", 
 "^ot:studyYear": 2013, 
-"^ot:tag": "ingroup added;", 
+"^ot:tag": [
+"ingroup added;"
+], 
 "^ot:treesElementOrder": [
 "trees2589"
 ], 
@@ -836,7 +808,9 @@
 "^ot:ottTaxonName": "Signigobius biocellatus"
 }, 
 "otu381209": {
-"^ot:originalLabel": "Valenciennea strigata"
+"^ot:originalLabel": "Valenciennea strigata", 
+"^ot:ottId": 819087, 
+"^ot:ottTaxonName": "Valenciennea strigata"
 }, 
 "otu381210": {
 "^ot:originalLabel": "Valenciennea longipinnis", 
@@ -1215,10 +1189,15 @@
 "treeById": {
 "tree6001": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
 "^ot:branchLengthMode": "ot:substitutionCount", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "MLE tree", 
 "^ot:inGroupClade": "node1019195", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node1019195", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node1019195": {
 "edge1019196": {

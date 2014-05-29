@@ -1,0 +1,182 @@
+{
+"nexml": {
+"@generator": "Phylografter nexml-json exporter", 
+"@id": "study", 
+"@nexml2json": "1.2.1", 
+"@nexmljson": "http://purl.org/opentree/nexson", 
+"@version": "0.9", 
+"@xmlns": {
+"$": "http://www.nexml.org/2009", 
+"nex": "http://www.nexml.org/2009", 
+"ot": "http://purl.org/opentree-terms#", 
+"xsd": "http://www.w3.org/2001/XMLSchema#", 
+"xsi": "http://www.w3.org/2001/XMLSchema-instance"
+}, 
+"^ot:agents": {
+"agent": [
+{
+"@description": "validator of NexSON constraints as well as constraints that would allow a study to be imported into the Open Tree of Life's phylogenetic synthesis tools", 
+"@id": "peyotl-validator", 
+"@name": "validate_ot_nexson.py", 
+"@url": "https://github.com/OpenTreeOfLife/peyotl", 
+"@version": "0.0.4a", 
+"invocation": {
+"commandLine": [
+"--embed", 
+"--agent-only"
+], 
+"otherProperty": [
+{
+"name": "pythonVersion", 
+"value": "2.7.5+"
+}, 
+{
+"name": "pythonImplementation", 
+"value": "CPython"
+}
+]
+}
+}
+]
+}, 
+"^ot:annotationEvents": {
+"annotation": []
+}, 
+"^ot:candidateTreeForSynthesis": [], 
+"^ot:curatorName": "Joseph Brown", 
+"^ot:focalClade": 541924, 
+"^ot:focalCladeOTTTaxonName": "Elephantidae", 
+"^ot:messages": {
+"message": []
+}, 
+"^ot:otusElementOrder": [
+"otus2861"
+], 
+"^ot:studyId": "2861", 
+"^ot:studyPublication": {
+"@href": "http://dx.doi.org/10.1371/journal.pbio.1000564"
+}, 
+"^ot:studyPublicationReference": "Rohland, Nadin, David Reich, Swapan Mallick, Matthias Meyer, Richard E. Green, Nicholas J. Georgiadis, Alfred L. Roca, Michael Hofreiter. 2010. Genomic DNA Sequences from Mastodon and Woolly Mammoth Reveal Deep Speciation of Forest and Savanna Elephants. PLoS Biology 8 (12): e1000564.", 
+"^ot:studyYear": 2010, 
+"^ot:tag": [], 
+"^ot:treesElementOrder": [
+"trees2861"
+], 
+"otusById": {
+"otus2861": {
+"otuById": {
+"otu426445": {
+"^ot:originalLabel": "Loxodonta africana", 
+"^ot:ottId": 541936, 
+"^ot:ottTaxonName": "Loxodonta africana"
+}, 
+"otu426446": {
+"^ot:originalLabel": "Loxodonta cyclotis", 
+"^ot:ottId": 418570, 
+"^ot:ottTaxonName": "Loxodonta cyclotis"
+}, 
+"otu426447": {
+"^ot:originalLabel": "Elephas maximus", 
+"^ot:ottId": 541928, 
+"^ot:ottTaxonName": "Elephas maximus"
+}, 
+"otu426448": {
+"^ot:originalLabel": "Mammuthus primigenius", 
+"^ot:ottId": 106258, 
+"^ot:ottTaxonName": "Mammuthus primigenius"
+}, 
+"otu426449": {
+"^ot:originalLabel": "Mammut americanum"
+}
+}
+}
+}, 
+"treesById": {
+"trees2861": {
+"@otus": "otus2861", 
+"^ot:treeElementOrder": [
+"tree6647"
+], 
+"treeById": {
+"tree6647": {
+"@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
+"^ot:curatedType": "Fig. 2 nucDNA", 
+"^ot:inGroupClade": "node1160325", 
+"^ot:outGroupEdge": "", 
+"^ot:rootNodeId": "node1160325", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
+"edgeBySourceId": {
+"node1160325": {
+"edge1160326": {
+"@source": "node1160325", 
+"@target": "node1160326"
+}, 
+"edge1160333": {
+"@source": "node1160325", 
+"@target": "node1160333"
+}
+}, 
+"node1160326": {
+"edge1160327": {
+"@source": "node1160326", 
+"@target": "node1160327"
+}, 
+"edge1160330": {
+"@source": "node1160326", 
+"@target": "node1160330"
+}
+}, 
+"node1160327": {
+"edge1160328": {
+"@source": "node1160327", 
+"@target": "node1160328"
+}, 
+"edge1160329": {
+"@source": "node1160327", 
+"@target": "node1160329"
+}
+}, 
+"node1160330": {
+"edge1160331": {
+"@source": "node1160330", 
+"@target": "node1160331"
+}, 
+"edge1160332": {
+"@source": "node1160330", 
+"@target": "node1160332"
+}
+}
+}, 
+"nodeById": {
+"node1160325": {
+"@root": true
+}, 
+"node1160326": {}, 
+"node1160327": {}, 
+"node1160328": {
+"@otu": "otu426445"
+}, 
+"node1160329": {
+"@otu": "otu426446"
+}, 
+"node1160330": {}, 
+"node1160331": {
+"@otu": "otu426447"
+}, 
+"node1160332": {
+"@otu": "otu426448"
+}, 
+"node1160333": {
+"@otu": "otu426449"
+}
+}
+}
+}
+}
+}
+}
+}

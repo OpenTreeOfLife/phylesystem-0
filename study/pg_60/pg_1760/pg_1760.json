@@ -19,48 +19,11 @@
 "@id": "peyotl-validator", 
 "@name": "validate_ot_nexson.py", 
 "@url": "https://github.com/OpenTreeOfLife/peyotl", 
-"@version": "0.0.3a", 
+"@version": "0.0.4a", 
 "invocation": {
-"checksPerformed": [
-"MISSING_MANDATORY_KEY", 
-"MISSING_OPTIONAL_KEY", 
-"UNRECOGNIZED_KEY", 
-"MISSING_LIST_EXPECTED", 
-"DUPLICATING_SINGLETON_KEY", 
-"REFERENCED_ID_NOT_FOUND", 
-"REPEATED_ID", 
-"REPEATED_OTU", 
-"MULTIPLE_ROOT_NODES", 
-"NO_ROOT_NODE", 
-"MULTIPLE_EDGES_FOR_NODES", 
-"CYCLE_DETECTED", 
-"DISCONNECTED_GRAPH_DETECTED", 
-"INCORRECT_ROOT_NODE_LABEL", 
-"TIP_WITHOUT_OTU", 
-"TIP_WITHOUT_OTT_ID", 
-"MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
-"NON_MONOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
-"INVALID_PROPERTY_VALUE", 
-"PROPERTY_VALUE_NOT_USEFUL", 
-"UNRECOGNIZED_PROPERTY_VALUE", 
-"MULTIPLE_TREES", 
-"UNRECOGNIZED_TAG", 
-"CONFLICTING_PROPERTY_VALUES", 
-"NO_TREES", 
-"DEPRECATED_PROPERTY", 
-"UNPARSEABLE_META", 
-"UNREACHABLE_NODE", 
-"INCORRECT_VALUE_TYPE", 
-"MISSING_CRUCIAL_CONTENT"
-], 
 "commandLine": [
 "--embed", 
-"--agent-only", 
-"-e", 
-"../mig-phyelesystem-scratch/1760/validation.json", 
-"-o", 
-"../mig-phyelesystem-scratch/1760/final.json", 
-"../mig-phyelesystem-scratch/1760/v1.2.1-1760.json"
+"--agent-only"
 ], 
 "otherProperty": [
 {
@@ -76,12 +39,17 @@
 }
 ]
 }, 
+"^ot:annotationEvents": {
+"annotation": []
+}, 
+"^ot:candidateTreeForSynthesis": [], 
 "^ot:curatorName": "Romina Gazis", 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S950"
 }, 
-"^ot:focalClade": 2421742, 
-"^ot:focalCladeOTTTaxonName": "Talaromyces", 
+"^ot:messages": {
+"message": []
+}, 
 "^ot:otusElementOrder": [
 "otus1760"
 ], 
@@ -91,6 +59,7 @@
 }, 
 "^ot:studyPublicationReference": "Heredia G., Reyes M., Aria R., & Bills G. 2001. Talaromyces ocotl sp. nov. and observations on T. rotundus from conifer forest soils of Veracruz State, Mexico. Mycologia, 93: 528-540.", 
 "^ot:studyYear": 2001, 
+"^ot:tag": [], 
 "^ot:treesElementOrder": [
 "trees1760"
 ], 
@@ -106,7 +75,7 @@
 "otu273991": {
 "^ot:originalLabel": "Sagenoma viride", 
 "^ot:ottId": 1015767, 
-"^ot:ottTaxonName": "Sagenoma viride", 
+"^ot:ottTaxonName": "Talaromyces viridis", 
 "^ot:treebaseOTUId": "Tl12458"
 }, 
 "otu273992": {
@@ -129,8 +98,8 @@
 }, 
 "otu273995": {
 "^ot:originalLabel": "Talaromyces gossypii", 
-"^ot:ottId": 699898, 
-"^ot:ottTaxonName": "Talaromyces gossypii", 
+"^ot:ottId": 5310734, 
+"^ot:ottTaxonName": "Penicillium gossypii", 
 "^ot:treebaseOTUId": "Tl136087"
 }, 
 "otu273996": {
@@ -159,8 +128,8 @@
 }, 
 "otu274000": {
 "^ot:originalLabel": "Talaromyces thermophilus", 
-"^ot:ottId": 73767, 
-"^ot:ottTaxonName": "Talaromyces thermophilus", 
+"^ot:ottId": 5310753, 
+"^ot:ottTaxonName": "Penicillium dupontii", 
 "^ot:treebaseOTUId": "Tl136092"
 }, 
 "otu274001": {
@@ -177,7 +146,7 @@
 }, 
 "otu274003": {
 "^ot:originalLabel": "Paecilomyces variotii", 
-"^ot:ottId": 465462, 
+"^ot:ottId": 653422, 
 "^ot:ottTaxonName": "Paecilomyces variotii", 
 "^ot:treebaseOTUId": "Tl136098"
 }, 
@@ -242,9 +211,15 @@
 "treeById": {
 "tree3546": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "MP, ITS", 
 "^ot:inGroupClade": "node680953", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node680950", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node680950": {
 "edge680951": {
@@ -516,10 +491,17 @@
 }, 
 "tree3547": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "MP, LSU (strict)", 
 "^ot:inGroupClade": "node680991", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node680988", 
-"^ot:tag": "LSU", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [
+"LSU"
+], 
 "edgeBySourceId": {
 "node680988": {
 "edge680989": {

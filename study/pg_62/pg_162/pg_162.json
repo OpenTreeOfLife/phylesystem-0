@@ -19,48 +19,11 @@
 "@id": "peyotl-validator", 
 "@name": "validate_ot_nexson.py", 
 "@url": "https://github.com/OpenTreeOfLife/peyotl", 
-"@version": "0.0.3a", 
+"@version": "0.0.4a", 
 "invocation": {
-"checksPerformed": [
-"MISSING_MANDATORY_KEY", 
-"MISSING_OPTIONAL_KEY", 
-"UNRECOGNIZED_KEY", 
-"MISSING_LIST_EXPECTED", 
-"DUPLICATING_SINGLETON_KEY", 
-"REFERENCED_ID_NOT_FOUND", 
-"REPEATED_ID", 
-"REPEATED_OTU", 
-"MULTIPLE_ROOT_NODES", 
-"NO_ROOT_NODE", 
-"MULTIPLE_EDGES_FOR_NODES", 
-"CYCLE_DETECTED", 
-"DISCONNECTED_GRAPH_DETECTED", 
-"INCORRECT_ROOT_NODE_LABEL", 
-"TIP_WITHOUT_OTU", 
-"TIP_WITHOUT_OTT_ID", 
-"MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
-"NON_MONOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
-"INVALID_PROPERTY_VALUE", 
-"PROPERTY_VALUE_NOT_USEFUL", 
-"UNRECOGNIZED_PROPERTY_VALUE", 
-"MULTIPLE_TREES", 
-"UNRECOGNIZED_TAG", 
-"CONFLICTING_PROPERTY_VALUES", 
-"NO_TREES", 
-"DEPRECATED_PROPERTY", 
-"UNPARSEABLE_META", 
-"UNREACHABLE_NODE", 
-"INCORRECT_VALUE_TYPE", 
-"MISSING_CRUCIAL_CONTENT"
-], 
 "commandLine": [
 "--embed", 
-"--agent-only", 
-"-e", 
-"../mig-phyelesystem-scratch/162/validation.json", 
-"-o", 
-"../mig-phyelesystem-scratch/162/final.json", 
-"../mig-phyelesystem-scratch/162/v1.2.1-162.json"
+"--agent-only"
 ], 
 "otherProperty": [
 {
@@ -76,12 +39,19 @@
 }
 ]
 }, 
+"^ot:annotationEvents": {
+"annotation": []
+}, 
+"^ot:candidateTreeForSynthesis": [], 
 "^ot:curatorName": "William Wysocki", 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S1440"
 }, 
 "^ot:focalClade": 376838, 
 "^ot:focalCladeOTTTaxonName": "Neillieae", 
+"^ot:messages": {
+"message": []
+}, 
 "^ot:otusElementOrder": [
 "otus162"
 ], 
@@ -91,6 +61,7 @@
 }, 
 "^ot:studyPublicationReference": "Oh S., & Potter D. 2005. Molecular phylogenetic systematics and biogeography of tribe Neillieae (Rosaceae) using DNA sequennces of cpDNA, rDNA, and LEAFy. American Journal of Botany, 92: 179-192.", 
 "^ot:studyYear": 2005, 
+"^ot:tag": [], 
 "^ot:treesElementOrder": [
 "trees162"
 ], 
@@ -465,6 +436,8 @@
 }, 
 "otu179492": {
 "^ot:originalLabel": "Lyonothamnus floribundus 050", 
+"^ot:ottId": 782143, 
+"^ot:ottTaxonName": "Lyonothamnus floribundus", 
 "^ot:treebaseOTUId": "Tl41206"
 }, 
 "otu179493": {
@@ -517,6 +490,8 @@
 }, 
 "otu179501": {
 "^ot:originalLabel": "Lyonothamnus floribudnus", 
+"^ot:ottId": 782143, 
+"^ot:ottTaxonName": "Lyonothamnus floribundus", 
 "^ot:treebaseOTUId": "Tl41215"
 }, 
 "otu179502": {
@@ -797,6 +772,8 @@
 }, 
 "otu179548": {
 "^ot:originalLabel": "Lyonothamnus floribundus", 
+"^ot:ottId": 782143, 
+"^ot:ottTaxonName": "Lyonothamnus floribundus", 
 "^ot:treebaseOTUId": "Tl41262"
 }
 }
@@ -814,8 +791,14 @@
 "treeById": {
 "tree1057": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "LEAFY", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node394891", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node394891": {
 "edge394892": {
@@ -1717,9 +1700,15 @@
 }, 
 "tree1058": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "cpDNA", 
 "^ot:inGroupClade": "node395023", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node395019", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node395019": {
 "edge395020": {
@@ -2089,9 +2078,15 @@
 }, 
 "tree1059": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "rDNA", 
 "^ot:inGroupClade": "node395075", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node395071", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node395071": {
 "edge395072": {
@@ -2475,9 +2470,15 @@
 }, 
 "tree1060": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "combined", 
 "^ot:inGroupClade": "node395129", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node395125", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node395125": {
 "edge395126": {

@@ -19,48 +19,11 @@
 "@id": "peyotl-validator", 
 "@name": "validate_ot_nexson.py", 
 "@url": "https://github.com/OpenTreeOfLife/peyotl", 
-"@version": "0.0.3a", 
+"@version": "0.0.4a", 
 "invocation": {
-"checksPerformed": [
-"MISSING_MANDATORY_KEY", 
-"MISSING_OPTIONAL_KEY", 
-"UNRECOGNIZED_KEY", 
-"MISSING_LIST_EXPECTED", 
-"DUPLICATING_SINGLETON_KEY", 
-"REFERENCED_ID_NOT_FOUND", 
-"REPEATED_ID", 
-"REPEATED_OTU", 
-"MULTIPLE_ROOT_NODES", 
-"NO_ROOT_NODE", 
-"MULTIPLE_EDGES_FOR_NODES", 
-"CYCLE_DETECTED", 
-"DISCONNECTED_GRAPH_DETECTED", 
-"INCORRECT_ROOT_NODE_LABEL", 
-"TIP_WITHOUT_OTU", 
-"TIP_WITHOUT_OTT_ID", 
-"MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
-"NON_MONOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
-"INVALID_PROPERTY_VALUE", 
-"PROPERTY_VALUE_NOT_USEFUL", 
-"UNRECOGNIZED_PROPERTY_VALUE", 
-"MULTIPLE_TREES", 
-"UNRECOGNIZED_TAG", 
-"CONFLICTING_PROPERTY_VALUES", 
-"NO_TREES", 
-"DEPRECATED_PROPERTY", 
-"UNPARSEABLE_META", 
-"UNREACHABLE_NODE", 
-"INCORRECT_VALUE_TYPE", 
-"MISSING_CRUCIAL_CONTENT"
-], 
 "commandLine": [
 "--embed", 
-"--agent-only", 
-"-e", 
-"../mig-phyelesystem-scratch/690/validation.json", 
-"-o", 
-"../mig-phyelesystem-scratch/690/final.json", 
-"../mig-phyelesystem-scratch/690/v1.2.1-690.json"
+"--agent-only"
 ], 
 "otherProperty": [
 {
@@ -76,12 +39,19 @@
 }
 ]
 }, 
+"^ot:annotationEvents": {
+"annotation": []
+}, 
+"^ot:candidateTreeForSynthesis": [], 
 "^ot:curatorName": "Romina Gazis", 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S1901"
 }, 
 "^ot:focalClade": 933838, 
 "^ot:focalCladeOTTTaxonName": "Ramichloridium", 
+"^ot:messages": {
+"message": []
+}, 
 "^ot:otusElementOrder": [
 "otus690"
 ], 
@@ -93,8 +63,8 @@
 "^ot:studyYear": 2007, 
 "^ot:tag": [
 "BI", 
-"MP", 
-"LSU"
+"LSU", 
+"MP"
 ], 
 "^ot:treesElementOrder": [
 "trees690"
@@ -188,6 +158,8 @@
 }, 
 "otu185631": {
 "^ot:originalLabel": "Mycosphaerella graminicola", 
+"^ot:ottId": 5319573, 
+"^ot:ottTaxonName": "Mycosphaerella graminicola", 
 "^ot:treebaseOTUId": "Tl196581"
 }, 
 "otu185632": {
@@ -272,10 +244,14 @@
 }, 
 "otu185646": {
 "^ot:originalLabel": "Septoria tritici", 
+"^ot:ottId": 5319978, 
+"^ot:ottTaxonName": "Septoria tritici", 
 "^ot:treebaseOTUId": "Tl3579"
 }, 
 "otu185647": {
 "^ot:originalLabel": "Ophiostoma stenoceras", 
+"^ot:ottId": 5316943, 
+"^ot:ottTaxonName": "Ceratocystis stenoceras", 
 "^ot:treebaseOTUId": "Tl377"
 }, 
 "otu185648": {
@@ -726,6 +702,8 @@
 }, 
 "otu185729": {
 "^ot:originalLabel": "Rhinocladiella anceps AF050284", 
+"^ot:ottId": 888563, 
+"^ot:ottTaxonName": "Ramichloridium anceps", 
 "^ot:treebaseOTUId": "Tl88318"
 }, 
 "otu185730": {
@@ -752,6 +730,8 @@
 }, 
 "otu185735": {
 "^ot:originalLabel": "Rhinocladiella anceps AF050285", 
+"^ot:ottId": 888563, 
+"^ot:ottTaxonName": "Ramichloridium anceps", 
 "^ot:treebaseOTUId": "Tl88324"
 }, 
 "otu185736": {
@@ -762,6 +742,8 @@
 }, 
 "otu185737": {
 "^ot:originalLabel": "Teratosphaeria readeriellophora", 
+"^ot:ottId": 5319616, 
+"^ot:ottTaxonName": "Mycosphaerella readeriellophora", 
 "^ot:treebaseOTUId": "Tl88326"
 }, 
 "otu185738": {
@@ -867,9 +849,15 @@
 "treeById": {
 "tree1239": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "MP, LSU", 
 "^ot:inGroupClade": "node427070", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node427067", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node427067": {
 "edge427068": {
@@ -2695,9 +2683,14 @@
 }, 
 "tree1240": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "BI, LSU", 
 "^ot:inGroupClade": "node427330", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node427327", 
+"^ot:specifiedRoot": "", 
 "^ot:tag": [
 "BI", 
 "LSU", 

@@ -19,48 +19,11 @@
 "@id": "peyotl-validator", 
 "@name": "validate_ot_nexson.py", 
 "@url": "https://github.com/OpenTreeOfLife/peyotl", 
-"@version": "0.0.3a", 
+"@version": "0.0.4a", 
 "invocation": {
-"checksPerformed": [
-"MISSING_MANDATORY_KEY", 
-"MISSING_OPTIONAL_KEY", 
-"UNRECOGNIZED_KEY", 
-"MISSING_LIST_EXPECTED", 
-"DUPLICATING_SINGLETON_KEY", 
-"REFERENCED_ID_NOT_FOUND", 
-"REPEATED_ID", 
-"REPEATED_OTU", 
-"MULTIPLE_ROOT_NODES", 
-"NO_ROOT_NODE", 
-"MULTIPLE_EDGES_FOR_NODES", 
-"CYCLE_DETECTED", 
-"DISCONNECTED_GRAPH_DETECTED", 
-"INCORRECT_ROOT_NODE_LABEL", 
-"TIP_WITHOUT_OTU", 
-"TIP_WITHOUT_OTT_ID", 
-"MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
-"NON_MONOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
-"INVALID_PROPERTY_VALUE", 
-"PROPERTY_VALUE_NOT_USEFUL", 
-"UNRECOGNIZED_PROPERTY_VALUE", 
-"MULTIPLE_TREES", 
-"UNRECOGNIZED_TAG", 
-"CONFLICTING_PROPERTY_VALUES", 
-"NO_TREES", 
-"DEPRECATED_PROPERTY", 
-"UNPARSEABLE_META", 
-"UNREACHABLE_NODE", 
-"INCORRECT_VALUE_TYPE", 
-"MISSING_CRUCIAL_CONTENT"
-], 
 "commandLine": [
 "--embed", 
-"--agent-only", 
-"-e", 
-"../mig-phyelesystem-scratch/1737/validation.json", 
-"-o", 
-"../mig-phyelesystem-scratch/1737/final.json", 
-"../mig-phyelesystem-scratch/1737/v1.2.1-1737.json"
+"--agent-only"
 ], 
 "otherProperty": [
 {
@@ -76,12 +39,19 @@
 }
 ]
 }, 
+"^ot:annotationEvents": {
+"annotation": []
+}, 
+"^ot:candidateTreeForSynthesis": [], 
 "^ot:curatorName": "Romina Gazis", 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S750"
 }, 
 "^ot:focalClade": 8364, 
 "^ot:focalCladeOTTTaxonName": "Agaricales", 
+"^ot:messages": {
+"message": []
+}, 
 "^ot:otusElementOrder": [
 "otus1737"
 ], 
@@ -91,6 +61,7 @@
 }, 
 "^ot:studyPublicationReference": "Krueger D., Binder M., Fischer M., & Kreisel H. 2001. The Lycoperdales. A molecular approach to the systematics of some gasteroid mushrooms. Mycologia, 93(5): 947-957.", 
 "^ot:studyYear": 2001, 
+"^ot:tag": [], 
 "^ot:treesElementOrder": [
 "trees1737"
 ], 
@@ -117,10 +88,14 @@
 }, 
 "otu272491": {
 "^ot:originalLabel": "Lycoperdon foetidum", 
+"^ot:ottId": 443839, 
+"^ot:ottTaxonName": "Lycoperdon nigrescens", 
 "^ot:treebaseOTUId": "Tl123568"
 }, 
 "otu272492": {
 "^ot:originalLabel": "Morganella subincarnata", 
+"^ot:ottId": 5304410, 
+"^ot:ottTaxonName": "Lycoperdon subincarnatum", 
 "^ot:treebaseOTUId": "Tl123569"
 }, 
 "otu272493": {
@@ -255,6 +230,8 @@
 }, 
 "otu272515": {
 "^ot:originalLabel": "Vascellum pratense", 
+"^ot:ottId": 5304398, 
+"^ot:ottTaxonName": "Lycoperdon pratense", 
 "^ot:treebaseOTUId": "Tl56965"
 }, 
 "otu272516": {
@@ -271,6 +248,8 @@
 }, 
 "otu272518": {
 "^ot:originalLabel": "Lycoperdon foetidum DA 100", 
+"^ot:ottId": 443839, 
+"^ot:ottTaxonName": "Lycoperdon nigrescens", 
 "^ot:treebaseOTUId": "Tl56969"
 }, 
 "otu272519": {
@@ -281,6 +260,8 @@
 }, 
 "otu272520": {
 "^ot:originalLabel": "Bovistella radicata", 
+"^ot:ottId": 5304396, 
+"^ot:ottTaxonName": "Lycoperdon radicatum", 
 "^ot:treebaseOTUId": "Tl56971"
 }, 
 "otu272521": {
@@ -291,6 +272,8 @@
 }, 
 "otu272522": {
 "^ot:originalLabel": "Lycoperdon foetidum DA 23", 
+"^ot:ottId": 443839, 
+"^ot:ottTaxonName": "Lycoperdon nigrescens", 
 "^ot:treebaseOTUId": "Tl56973"
 }, 
 "otu272523": {
@@ -408,10 +391,17 @@
 "treeById": {
 "tree3493": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "MP, SSU", 
 "^ot:inGroupClade": "node676073", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node676072", 
-"^ot:tag": "SSU", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [
+"SSU"
+], 
 "edgeBySourceId": {
 "node676072": {
 "edge676073": {
@@ -690,8 +680,14 @@
 }, 
 "tree3494": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "NJ, ITS (unrooted)", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node676111", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node676111": {
 "edge676112": {
@@ -1033,9 +1029,14 @@
 }, 
 "tree3495": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "MP, ITS", 
 "^ot:inGroupClade": "node676160", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node676159", 
+"^ot:specifiedRoot": "", 
 "^ot:tag": [
 "MP", 
 "Choose me"
@@ -1269,8 +1270,14 @@
 }, 
 "tree3496": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "MP, ITS (unrooted)", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node676191", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node676191": {
 "edge676192": {

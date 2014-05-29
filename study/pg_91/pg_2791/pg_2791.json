@@ -19,48 +19,11 @@
 "@id": "peyotl-validator", 
 "@name": "validate_ot_nexson.py", 
 "@url": "https://github.com/OpenTreeOfLife/peyotl", 
-"@version": "0.0.3a", 
+"@version": "0.0.4a", 
 "invocation": {
-"checksPerformed": [
-"MISSING_MANDATORY_KEY", 
-"MISSING_OPTIONAL_KEY", 
-"UNRECOGNIZED_KEY", 
-"MISSING_LIST_EXPECTED", 
-"DUPLICATING_SINGLETON_KEY", 
-"REFERENCED_ID_NOT_FOUND", 
-"REPEATED_ID", 
-"REPEATED_OTU", 
-"MULTIPLE_ROOT_NODES", 
-"NO_ROOT_NODE", 
-"MULTIPLE_EDGES_FOR_NODES", 
-"CYCLE_DETECTED", 
-"DISCONNECTED_GRAPH_DETECTED", 
-"INCORRECT_ROOT_NODE_LABEL", 
-"TIP_WITHOUT_OTU", 
-"TIP_WITHOUT_OTT_ID", 
-"MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
-"NON_MONOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
-"INVALID_PROPERTY_VALUE", 
-"PROPERTY_VALUE_NOT_USEFUL", 
-"UNRECOGNIZED_PROPERTY_VALUE", 
-"MULTIPLE_TREES", 
-"UNRECOGNIZED_TAG", 
-"CONFLICTING_PROPERTY_VALUES", 
-"NO_TREES", 
-"DEPRECATED_PROPERTY", 
-"UNPARSEABLE_META", 
-"UNREACHABLE_NODE", 
-"INCORRECT_VALUE_TYPE", 
-"MISSING_CRUCIAL_CONTENT"
-], 
 "commandLine": [
 "--embed", 
-"--agent-only", 
-"-e", 
-"../mig-phyelesystem-scratch/2791/validation.json", 
-"-o", 
-"../mig-phyelesystem-scratch/2791/final.json", 
-"../mig-phyelesystem-scratch/2791/v1.2.1-2791.json"
+"--agent-only"
 ], 
 "otherProperty": [
 {
@@ -76,9 +39,16 @@
 }
 ]
 }, 
+"^ot:annotationEvents": {
+"annotation": []
+}, 
+"^ot:candidateTreeForSynthesis": [], 
 "^ot:curatorName": "Dail Laughinghouse", 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S2016"
+}, 
+"^ot:messages": {
+"message": []
 }, 
 "^ot:otusElementOrder": [
 "otus2791"
@@ -86,6 +56,7 @@
 "^ot:studyId": "2791", 
 "^ot:studyPublicationReference": "Kellner H., Luis P., Zimdars B., Kiesel B., & Buscot F. 2008. Diversity of bacterial laccase-like multicopper oxidase genes in forest and grassland Cambisol soil samples. Soil Biology & Biochemistry, 40: 638-648.", 
 "^ot:studyYear": 2008, 
+"^ot:tag": [], 
 "^ot:treesElementOrder": [
 "trees2791"
 ], 
@@ -103,7 +74,7 @@
 "otu413937": {
 "^ot:originalLabel": "Sinorhizobium meliloti AL591784", 
 "^ot:ottId": 43952, 
-"^ot:ottTaxonName": "Sinorhizobium meliloti", 
+"^ot:ottTaxonName": "Ensifer meliloti", 
 "^ot:treebaseOTUId": "Tl77197"
 }, 
 "otu413938": {
@@ -264,8 +235,6 @@
 }, 
 "otu413975": {
 "^ot:originalLabel": "Pseudomonas aeruginosa AE004633", 
-"^ot:ottId": 491284, 
-"^ot:ottTaxonName": "Pseudomonas aeruginosa", 
 "^ot:treebaseOTUId": "Tl77235"
 }, 
 "otu413976": {
@@ -349,7 +318,7 @@
 "otu413993": {
 "^ot:originalLabel": "Agrobacterium rhizogenes", 
 "^ot:ottId": 313934, 
-"^ot:ottTaxonName": "Agrobacterium rhizogenes", 
+"^ot:ottTaxonName": "Rhizobium rhizogenes", 
 "^ot:treebaseOTUId": "Tl77253"
 }, 
 "otu413994": {
@@ -489,7 +458,7 @@
 "otu414027": {
 "^ot:originalLabel": "Mesorhizobium loti BA000012", 
 "^ot:ottId": 43939, 
-"^ot:ottTaxonName": "ATCC 33669", 
+"^ot:ottTaxonName": "Mesorhizobium loti", 
 "^ot:treebaseOTUId": "Tl77287"
 }, 
 "otu414028": {
@@ -545,7 +514,7 @@
 "otu414039": {
 "^ot:originalLabel": "Sinorhizobium meliloti AL591786", 
 "^ot:ottId": 43952, 
-"^ot:ottTaxonName": "Sinorhizobium meliloti", 
+"^ot:ottTaxonName": "Ensifer meliloti", 
 "^ot:treebaseOTUId": "Tl77299"
 }, 
 "otu414040": {
@@ -588,8 +557,6 @@
 }, 
 "otu414049": {
 "^ot:originalLabel": "Pseudomonas aeruginosa AF455751", 
-"^ot:ottId": 491284, 
-"^ot:ottTaxonName": "Pseudomonas aeruginosa", 
 "^ot:treebaseOTUId": "Tl77309"
 }, 
 "otu414050": {
@@ -682,8 +649,8 @@
 }, 
 "otu414070": {
 "^ot:originalLabel": "Escherichia coli X83541", 
-"^ot:ottId": 474506, 
-"^ot:ottTaxonName": "Escherichia/Shigella coli", 
+"^ot:ottId": 5341889, 
+"^ot:ottTaxonName": "Escherichia coli", 
 "^ot:treebaseOTUId": "Tl77330"
 }, 
 "otu414071": {
@@ -956,8 +923,14 @@
 "treeById": {
 "tree6477": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "Fig. 2", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node1119974", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node1119974": {
 "edge1119975": {

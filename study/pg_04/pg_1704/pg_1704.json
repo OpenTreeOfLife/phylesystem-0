@@ -19,48 +19,11 @@
 "@id": "peyotl-validator", 
 "@name": "validate_ot_nexson.py", 
 "@url": "https://github.com/OpenTreeOfLife/peyotl", 
-"@version": "0.0.3a", 
+"@version": "0.0.4a", 
 "invocation": {
-"checksPerformed": [
-"MISSING_MANDATORY_KEY", 
-"MISSING_OPTIONAL_KEY", 
-"UNRECOGNIZED_KEY", 
-"MISSING_LIST_EXPECTED", 
-"DUPLICATING_SINGLETON_KEY", 
-"REFERENCED_ID_NOT_FOUND", 
-"REPEATED_ID", 
-"REPEATED_OTU", 
-"MULTIPLE_ROOT_NODES", 
-"NO_ROOT_NODE", 
-"MULTIPLE_EDGES_FOR_NODES", 
-"CYCLE_DETECTED", 
-"DISCONNECTED_GRAPH_DETECTED", 
-"INCORRECT_ROOT_NODE_LABEL", 
-"TIP_WITHOUT_OTU", 
-"TIP_WITHOUT_OTT_ID", 
-"MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
-"NON_MONOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
-"INVALID_PROPERTY_VALUE", 
-"PROPERTY_VALUE_NOT_USEFUL", 
-"UNRECOGNIZED_PROPERTY_VALUE", 
-"MULTIPLE_TREES", 
-"UNRECOGNIZED_TAG", 
-"CONFLICTING_PROPERTY_VALUES", 
-"NO_TREES", 
-"DEPRECATED_PROPERTY", 
-"UNPARSEABLE_META", 
-"UNREACHABLE_NODE", 
-"INCORRECT_VALUE_TYPE", 
-"MISSING_CRUCIAL_CONTENT"
-], 
 "commandLine": [
 "--embed", 
-"--agent-only", 
-"-e", 
-"../mig-phyelesystem-scratch/1704/validation.json", 
-"-o", 
-"../mig-phyelesystem-scratch/1704/final.json", 
-"../mig-phyelesystem-scratch/1704/v1.2.1-1704.json"
+"--agent-only"
 ], 
 "otherProperty": [
 {
@@ -76,18 +39,26 @@
 }
 ]
 }, 
+"^ot:annotationEvents": {
+"annotation": []
+}, 
+"^ot:candidateTreeForSynthesis": [], 
 "^ot:curatorName": "Romina Gazis", 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S634"
 }, 
 "^ot:focalClade": 832035, 
 "^ot:focalCladeOTTTaxonName": "Dermateaceae", 
+"^ot:messages": {
+"message": []
+}, 
 "^ot:otusElementOrder": [
 "otus1704"
 ], 
 "^ot:studyId": "1704", 
 "^ot:studyPublicationReference": "Abeln E., De pagter M., & Verkley G. 2000. Phylogeny of Pezicula, Dermea and Neofabraea inferred from partial sequences of the nuclear ribosomal RNA gene cluster. Mycologia, 92(4): 685-693.", 
 "^ot:studyYear": 2000, 
+"^ot:tag": [], 
 "^ot:treesElementOrder": [
 "trees1704"
 ], 
@@ -97,6 +68,7 @@
 "otu271335": {
 "^ot:originalLabel": "Valdensinia heterodoxa", 
 "^ot:ottId": 694197, 
+"^ot:ottTaxonName": "Valdensinia heterodoxa", 
 "^ot:treebaseOTUId": "Tl118240"
 }, 
 "otu271336": {
@@ -159,6 +131,8 @@
 }, 
 "otu271346": {
 "^ot:originalLabel": "Pezicula alnicola 474.97", 
+"^ot:ottId": 5309262, 
+"^ot:ottTaxonName": "Pezicula alnicola", 
 "^ot:treebaseOTUId": "Tl67716"
 }, 
 "otu271347": {
@@ -345,6 +319,8 @@
 }, 
 "otu271378": {
 "^ot:originalLabel": "Pezicula alnicola 200.46", 
+"^ot:ottId": 5309262, 
+"^ot:ottTaxonName": "Pezicula alnicola", 
 "^ot:treebaseOTUId": "Tl67748"
 }, 
 "otu271379": {
@@ -403,12 +379,14 @@
 }, 
 "otu271388": {
 "^ot:originalLabel": "Microscypha ellisii", 
+"^ot:ottId": 5309560, 
+"^ot:ottTaxonName": "Calycina ellisii", 
 "^ot:treebaseOTUId": "Tl95495"
 }, 
 "otu271389": {
-"^ot:altLabel": "Pezicula", 
 "^ot:originalLabel": "Pezicula spec eucrita 662.96", 
 "^ot:ottId": 1018165, 
+"^ot:ottTaxonName": "Pezicula", 
 "^ot:treebaseOTUId": "Tl95496"
 }, 
 "otu271390": {
@@ -431,6 +409,8 @@
 }, 
 "otu271393": {
 "^ot:originalLabel": "Trichopezizella nidulus", 
+"^ot:ottId": 5309654, 
+"^ot:ottTaxonName": "Lasiobelonium nidulum", 
 "^ot:treebaseOTUId": "Tl95500"
 }
 }
@@ -447,9 +427,15 @@
 "treeById": {
 "tree3436": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "MP, SSU + ITS (strict)", 
 "^ot:inGroupClade": "node672821", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node672820", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node672820": {
 "edge672821": {
@@ -987,9 +973,15 @@
 }, 
 "tree3437": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "MP, SSU + ITS", 
 "^ot:inGroupClade": "node672897", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node672896", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node672896": {
 "edge672897": {
@@ -1443,8 +1435,14 @@
 }, 
 "tree3438": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "MP, ITS (unrooted)", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node672960", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node672960": {
 "edge672961": {

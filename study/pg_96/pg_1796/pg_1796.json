@@ -19,48 +19,11 @@
 "@id": "peyotl-validator", 
 "@name": "validate_ot_nexson.py", 
 "@url": "https://github.com/OpenTreeOfLife/peyotl", 
-"@version": "0.0.3a", 
+"@version": "0.0.4a", 
 "invocation": {
-"checksPerformed": [
-"MISSING_MANDATORY_KEY", 
-"MISSING_OPTIONAL_KEY", 
-"UNRECOGNIZED_KEY", 
-"MISSING_LIST_EXPECTED", 
-"DUPLICATING_SINGLETON_KEY", 
-"REFERENCED_ID_NOT_FOUND", 
-"REPEATED_ID", 
-"REPEATED_OTU", 
-"MULTIPLE_ROOT_NODES", 
-"NO_ROOT_NODE", 
-"MULTIPLE_EDGES_FOR_NODES", 
-"CYCLE_DETECTED", 
-"DISCONNECTED_GRAPH_DETECTED", 
-"INCORRECT_ROOT_NODE_LABEL", 
-"TIP_WITHOUT_OTU", 
-"TIP_WITHOUT_OTT_ID", 
-"MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
-"NON_MONOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
-"INVALID_PROPERTY_VALUE", 
-"PROPERTY_VALUE_NOT_USEFUL", 
-"UNRECOGNIZED_PROPERTY_VALUE", 
-"MULTIPLE_TREES", 
-"UNRECOGNIZED_TAG", 
-"CONFLICTING_PROPERTY_VALUES", 
-"NO_TREES", 
-"DEPRECATED_PROPERTY", 
-"UNPARSEABLE_META", 
-"UNREACHABLE_NODE", 
-"INCORRECT_VALUE_TYPE", 
-"MISSING_CRUCIAL_CONTENT"
-], 
 "commandLine": [
 "--embed", 
-"--agent-only", 
-"-e", 
-"../mig-phyelesystem-scratch/1796/validation.json", 
-"-o", 
-"../mig-phyelesystem-scratch/1796/final.json", 
-"../mig-phyelesystem-scratch/1796/v1.2.1-1796.json"
+"--agent-only"
 ], 
 "otherProperty": [
 {
@@ -76,12 +39,19 @@
 }
 ]
 }, 
+"^ot:annotationEvents": {
+"annotation": []
+}, 
+"^ot:candidateTreeForSynthesis": [], 
 "^ot:curatorName": "Chris Owen", 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S1897"
 }, 
 "^ot:focalClade": 87194, 
 "^ot:focalCladeOTTTaxonName": "Typhlatya", 
+"^ot:messages": {
+"message": []
+}, 
 "^ot:otusElementOrder": [
 "otus1796"
 ], 
@@ -89,8 +59,9 @@
 "^ot:studyPublication": {
 "@href": "http://dx.doi.org/10.111/j.1365-2699.2007.01767.x"
 }, 
-"^ot:studyPublicationReference": "Hunter R., Webb M., Iliffe T., & Bremer J. 2007. Phylogeny and historical biogeography of the cave-adapted shrimp genus Typhlatya (Atyidae) in the Caribbean Sea and western Atlantic. Journal of Biogeography, null.", 
+"^ot:studyPublicationReference": "Hunter, R., Webb M., Iliffe T., & Bremer J. 2007. Phylogeny and historical biogeography of the cave-adapted shrimp genus Typhlatya (Atyidae) in the Caribbean Sea and western Atlantic. Journal of Biogeography 35 (1): 65-75.", 
 "^ot:studyYear": 2007, 
+"^ot:tag": [], 
 "^ot:treesElementOrder": [
 "trees1796"
 ], 
@@ -343,16 +314,20 @@
 "@otus": "otus1796", 
 "^ot:treeElementOrder": [
 "tree3633", 
-"tree3634", 
 "tree6514"
 ], 
 "treeById": {
 "tree3633": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
 "^ot:branchLengthMode": "ot:substitutionCount", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "Fig. 3 ML", 
 "^ot:inGroupClade": "node696630", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node696629", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node696629": {
 "edge696630": {
@@ -776,364 +751,16 @@
 }
 }
 }, 
-"tree3634": {
-"@xsi:type": "nex:FloatTree", 
-"^ot:branchLengthMode": "ot:substitutionCount", 
-"^ot:curatedType": "Fig. 4 ML", 
-"^ot:inGroupClade": "node696690", 
-"^ot:rootNodeId": "node696689", 
-"^ot:tag": "delete me", 
-"edgeBySourceId": {
-"node696689": {
-"edge696690": {
-"@source": "node696689", 
-"@target": "node696690"
-}, 
-"edge696734": {
-"@source": "node696689", 
-"@target": "node696734"
-}, 
-"edge696737": {
-"@source": "node696689", 
-"@target": "node696737"
-}
-}, 
-"node696690": {
-"edge696691": {
-"@source": "node696690", 
-"@target": "node696691"
-}, 
-"edge696710": {
-"@source": "node696690", 
-"@target": "node696710"
-}
-}, 
-"node696691": {
-"edge696692": {
-"@source": "node696691", 
-"@target": "node696692"
-}, 
-"edge696705": {
-"@source": "node696691", 
-"@target": "node696705"
-}
-}, 
-"node696692": {
-"edge696693": {
-"@source": "node696692", 
-"@target": "node696693"
-}, 
-"edge696694": {
-"@source": "node696692", 
-"@target": "node696694"
-}
-}, 
-"node696694": {
-"edge696695": {
-"@source": "node696694", 
-"@target": "node696695"
-}, 
-"edge696700": {
-"@source": "node696694", 
-"@target": "node696700"
-}, 
-"edge696701": {
-"@source": "node696694", 
-"@target": "node696701"
-}, 
-"edge696702": {
-"@source": "node696694", 
-"@target": "node696702"
-}, 
-"edge696703": {
-"@source": "node696694", 
-"@target": "node696703"
-}, 
-"edge696704": {
-"@source": "node696694", 
-"@target": "node696704"
-}
-}, 
-"node696695": {
-"edge696696": {
-"@source": "node696695", 
-"@target": "node696696"
-}, 
-"edge696699": {
-"@source": "node696695", 
-"@target": "node696699"
-}
-}, 
-"node696696": {
-"edge696697": {
-"@source": "node696696", 
-"@target": "node696697"
-}, 
-"edge696698": {
-"@source": "node696696", 
-"@target": "node696698"
-}
-}, 
-"node696705": {
-"edge696706": {
-"@source": "node696705", 
-"@target": "node696706"
-}, 
-"edge696707": {
-"@source": "node696705", 
-"@target": "node696707"
-}
-}, 
-"node696707": {
-"edge696708": {
-"@source": "node696707", 
-"@target": "node696708"
-}, 
-"edge696709": {
-"@source": "node696707", 
-"@target": "node696709"
-}
-}, 
-"node696710": {
-"edge696711": {
-"@source": "node696710", 
-"@target": "node696711"
-}, 
-"edge696714": {
-"@source": "node696710", 
-"@target": "node696714"
-}
-}, 
-"node696711": {
-"edge696712": {
-"@source": "node696711", 
-"@target": "node696712"
-}, 
-"edge696713": {
-"@source": "node696711", 
-"@target": "node696713"
-}
-}, 
-"node696714": {
-"edge696715": {
-"@source": "node696714", 
-"@target": "node696715"
-}, 
-"edge696733": {
-"@source": "node696714", 
-"@target": "node696733"
-}
-}, 
-"node696715": {
-"edge696716": {
-"@source": "node696715", 
-"@target": "node696716"
-}, 
-"edge696731": {
-"@source": "node696715", 
-"@target": "node696731"
-}, 
-"edge696732": {
-"@source": "node696715", 
-"@target": "node696732"
-}
-}, 
-"node696716": {
-"edge696717": {
-"@source": "node696716", 
-"@target": "node696717"
-}, 
-"edge696724": {
-"@source": "node696716", 
-"@target": "node696724"
-}, 
-"edge696729": {
-"@source": "node696716", 
-"@target": "node696729"
-}, 
-"edge696730": {
-"@source": "node696716", 
-"@target": "node696730"
-}
-}, 
-"node696717": {
-"edge696718": {
-"@source": "node696717", 
-"@target": "node696718"
-}, 
-"edge696723": {
-"@source": "node696717", 
-"@target": "node696723"
-}
-}, 
-"node696718": {
-"edge696719": {
-"@source": "node696718", 
-"@target": "node696719"
-}, 
-"edge696720": {
-"@source": "node696718", 
-"@target": "node696720"
-}
-}, 
-"node696720": {
-"edge696721": {
-"@source": "node696720", 
-"@target": "node696721"
-}, 
-"edge696722": {
-"@source": "node696720", 
-"@target": "node696722"
-}
-}, 
-"node696724": {
-"edge696725": {
-"@source": "node696724", 
-"@target": "node696725"
-}, 
-"edge696728": {
-"@source": "node696724", 
-"@target": "node696728"
-}
-}, 
-"node696725": {
-"edge696726": {
-"@source": "node696725", 
-"@target": "node696726"
-}, 
-"edge696727": {
-"@source": "node696725", 
-"@target": "node696727"
-}
-}, 
-"node696734": {
-"edge696735": {
-"@source": "node696734", 
-"@target": "node696735"
-}, 
-"edge696736": {
-"@source": "node696734", 
-"@target": "node696736"
-}
-}
-}, 
-"nodeById": {
-"node696689": {
-"@root": true
-}, 
-"node696690": {}, 
-"node696691": {}, 
-"node696692": {}, 
-"node696693": {
-"@otu": "otu279090"
-}, 
-"node696694": {}, 
-"node696695": {}, 
-"node696696": {}, 
-"node696697": {
-"@otu": "otu279086"
-}, 
-"node696698": {
-"@otu": "otu279084"
-}, 
-"node696699": {
-"@otu": "otu279103"
-}, 
-"node696700": {
-"@otu": "otu279100"
-}, 
-"node696701": {
-"@otu": "otu279080"
-}, 
-"node696702": {
-"@otu": "otu279099"
-}, 
-"node696703": {
-"@otu": "otu279066"
-}, 
-"node696704": {
-"@otu": "otu279075"
-}, 
-"node696705": {}, 
-"node696706": {
-"@otu": "otu279087"
-}, 
-"node696707": {}, 
-"node696708": {
-"@otu": "otu279082"
-}, 
-"node696709": {
-"@otu": "otu279067"
-}, 
-"node696710": {}, 
-"node696711": {}, 
-"node696712": {
-"@otu": "otu279078"
-}, 
-"node696713": {
-"@otu": "otu279070"
-}, 
-"node696714": {}, 
-"node696715": {}, 
-"node696716": {}, 
-"node696717": {}, 
-"node696718": {}, 
-"node696719": {
-"@otu": "otu279072"
-}, 
-"node696720": {}, 
-"node696721": {
-"@otu": "otu279093"
-}, 
-"node696722": {
-"@otu": "otu279073"
-}, 
-"node696723": {
-"@otu": "otu279081"
-}, 
-"node696724": {}, 
-"node696725": {}, 
-"node696726": {
-"@otu": "otu279094"
-}, 
-"node696727": {
-"@otu": "otu279071"
-}, 
-"node696728": {
-"@otu": "otu279065"
-}, 
-"node696729": {
-"@otu": "otu279076"
-}, 
-"node696730": {
-"@otu": "otu279074"
-}, 
-"node696731": {
-"@otu": "otu279069"
-}, 
-"node696732": {
-"@otu": "otu279083"
-}, 
-"node696733": {
-"@otu": "otu279085"
-}, 
-"node696734": {}, 
-"node696735": {
-"@otu": "otu279102"
-}, 
-"node696736": {
-"@otu": "otu279101"
-}, 
-"node696737": {
-"@otu": "otu279068"
-}
-}
-}, 
 "tree6514": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "Fig. 4 ML", 
 "^ot:inGroupClade": "node1123835", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node1123834", 
+"^ot:specifiedRoot": "", 
 "^ot:tag": [
 "choose me", 
 "ingroup added;"

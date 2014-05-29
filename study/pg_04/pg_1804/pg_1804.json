@@ -19,48 +19,11 @@
 "@id": "peyotl-validator", 
 "@name": "validate_ot_nexson.py", 
 "@url": "https://github.com/OpenTreeOfLife/peyotl", 
-"@version": "0.0.3a", 
+"@version": "0.0.4a", 
 "invocation": {
-"checksPerformed": [
-"MISSING_MANDATORY_KEY", 
-"MISSING_OPTIONAL_KEY", 
-"UNRECOGNIZED_KEY", 
-"MISSING_LIST_EXPECTED", 
-"DUPLICATING_SINGLETON_KEY", 
-"REFERENCED_ID_NOT_FOUND", 
-"REPEATED_ID", 
-"REPEATED_OTU", 
-"MULTIPLE_ROOT_NODES", 
-"NO_ROOT_NODE", 
-"MULTIPLE_EDGES_FOR_NODES", 
-"CYCLE_DETECTED", 
-"DISCONNECTED_GRAPH_DETECTED", 
-"INCORRECT_ROOT_NODE_LABEL", 
-"TIP_WITHOUT_OTU", 
-"TIP_WITHOUT_OTT_ID", 
-"MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
-"NON_MONOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
-"INVALID_PROPERTY_VALUE", 
-"PROPERTY_VALUE_NOT_USEFUL", 
-"UNRECOGNIZED_PROPERTY_VALUE", 
-"MULTIPLE_TREES", 
-"UNRECOGNIZED_TAG", 
-"CONFLICTING_PROPERTY_VALUES", 
-"NO_TREES", 
-"DEPRECATED_PROPERTY", 
-"UNPARSEABLE_META", 
-"UNREACHABLE_NODE", 
-"INCORRECT_VALUE_TYPE", 
-"MISSING_CRUCIAL_CONTENT"
-], 
 "commandLine": [
 "--embed", 
-"--agent-only", 
-"-e", 
-"../mig-phyelesystem-scratch/1804/validation.json", 
-"-o", 
-"../mig-phyelesystem-scratch/1804/final.json", 
-"../mig-phyelesystem-scratch/1804/v1.2.1-1804.json"
+"--agent-only"
 ], 
 "otherProperty": [
 {
@@ -76,12 +39,19 @@
 }
 ]
 }, 
+"^ot:annotationEvents": {
+"annotation": []
+}, 
+"^ot:candidateTreeForSynthesis": [], 
 "^ot:curatorName": "Chris Owen", 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S11114"
 }, 
 "^ot:focalClade": 544595, 
 "^ot:focalCladeOTTTaxonName": "Amphibia", 
+"^ot:messages": {
+"message": []
+}, 
 "^ot:otusElementOrder": [
 "otus1804"
 ], 
@@ -91,6 +61,7 @@
 }, 
 "^ot:studyPublicationReference": "Pyron R.A. 2011. Divergence-Time Estimation Using Fossils as Terminal Taxa and the Origins of Lissamphibia. Systematic Biology, 60(4): 466-481.", 
 "^ot:studyYear": 2011, 
+"^ot:tag": [], 
 "^ot:treesElementOrder": [
 "trees1804"
 ], 
@@ -209,6 +180,8 @@
 }, 
 "otu279508": {
 "^ot:originalLabel": "Discoglossidae", 
+"^ot:ottId": 991545, 
+"^ot:ottTaxonName": "Discoglossidae", 
 "^ot:treebaseOTUId": "Tl613799"
 }, 
 "otu279509": {
@@ -485,10 +458,15 @@
 "treeById": {
 "tree3649": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
 "^ot:branchLengthMode": "ot:substitutionCount", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "Fig. 1 BI with morphological chars.", 
 "^ot:inGroupClade": "node698200", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node698197", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node698197": {
 "edge698198": {
@@ -1152,10 +1130,15 @@
 }, 
 "tree3650": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
 "^ot:branchLengthMode": "ot:substitutionCount", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "Fig. 2 BI with morpho chars and RAG-1", 
 "^ot:inGroupClade": "node698287", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node698284", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node698284": {
 "edge698285": {
@@ -1847,10 +1830,15 @@
 }, 
 "tree3651": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
 "^ot:branchLengthMode": "ot:substitutionCount", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "Fig. 3 BI with morph, RAG-1, extant, and extinct taxa", 
 "^ot:inGroupClade": "node698378", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node698375", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node698375": {
 "edge698376": {
@@ -2897,11 +2885,15 @@
 }, 
 "tree3652": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
 "^ot:branchLengthMode": "ot:time", 
 "^ot:branchLengthTimeUnit": "Myr", 
 "^ot:curatedType": "Fig. 4 Chronogram", 
 "^ot:inGroupClade": "node698517", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node698513", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node698513": {
 "edge698514": {
@@ -4098,11 +4090,15 @@
 }, 
 "tree3653": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
 "^ot:branchLengthMode": "ot:time", 
 "^ot:branchLengthTimeUnit": "Myr", 
 "^ot:curatedType": "TMA 2Clock Com", 
 "^ot:inGroupClade": "node698666", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node698662", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node698662": {
 "edge698663": {

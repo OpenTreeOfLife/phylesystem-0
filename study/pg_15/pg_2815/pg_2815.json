@@ -19,48 +19,11 @@
 "@id": "peyotl-validator", 
 "@name": "validate_ot_nexson.py", 
 "@url": "https://github.com/OpenTreeOfLife/peyotl", 
-"@version": "0.0.3a", 
+"@version": "0.0.4a", 
 "invocation": {
-"checksPerformed": [
-"MISSING_MANDATORY_KEY", 
-"MISSING_OPTIONAL_KEY", 
-"UNRECOGNIZED_KEY", 
-"MISSING_LIST_EXPECTED", 
-"DUPLICATING_SINGLETON_KEY", 
-"REFERENCED_ID_NOT_FOUND", 
-"REPEATED_ID", 
-"REPEATED_OTU", 
-"MULTIPLE_ROOT_NODES", 
-"NO_ROOT_NODE", 
-"MULTIPLE_EDGES_FOR_NODES", 
-"CYCLE_DETECTED", 
-"DISCONNECTED_GRAPH_DETECTED", 
-"INCORRECT_ROOT_NODE_LABEL", 
-"TIP_WITHOUT_OTU", 
-"TIP_WITHOUT_OTT_ID", 
-"MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
-"NON_MONOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
-"INVALID_PROPERTY_VALUE", 
-"PROPERTY_VALUE_NOT_USEFUL", 
-"UNRECOGNIZED_PROPERTY_VALUE", 
-"MULTIPLE_TREES", 
-"UNRECOGNIZED_TAG", 
-"CONFLICTING_PROPERTY_VALUES", 
-"NO_TREES", 
-"DEPRECATED_PROPERTY", 
-"UNPARSEABLE_META", 
-"UNREACHABLE_NODE", 
-"INCORRECT_VALUE_TYPE", 
-"MISSING_CRUCIAL_CONTENT"
-], 
 "commandLine": [
 "--embed", 
-"--agent-only", 
-"-e", 
-"../mig-phyelesystem-scratch/2815/validation.json", 
-"-o", 
-"../mig-phyelesystem-scratch/2815/final.json", 
-"../mig-phyelesystem-scratch/2815/v1.2.1-2815.json"
+"--agent-only"
 ], 
 "otherProperty": [
 {
@@ -76,9 +39,16 @@
 }
 ]
 }, 
+"^ot:annotationEvents": {
+"annotation": []
+}, 
+"^ot:candidateTreeForSynthesis": [], 
 "^ot:curatorName": "Joseph Brown", 
 "^ot:focalClade": 985906, 
 "^ot:focalCladeOTTTaxonName": "Pancrustacea", 
+"^ot:messages": {
+"message": []
+}, 
 "^ot:otusElementOrder": [
 "otus2815"
 ], 
@@ -86,8 +56,9 @@
 "^ot:studyPublication": {
 "@href": "http://dx.doi.org/10.1093/molbev/msr270"
 }, 
-"^ot:studyPublicationReference": "B. M. von Reumont, R. A. Jenner, M. A. Wills, E. Dell'Ampio, G. Pass, I. Ebersberger, B. Meyer, S. Koenemann, T. M. Iliffe, A. Stamatakis, O. Niehuis, K. Meusemann, B. Misof. 2012. Pancrustacean phylogeny in the light of new phylogenomic data: support for Remipedia as the possible sister group of Hexapoda. Molecular Biology and Evolution 29 (3): 1031-1045.", 
+"^ot:studyPublicationReference": "von Reumont, B. M., R. A. Jenner, M. A. Wills, E. Dell'Ampio, G. Pass, I. Ebersberger, B. Meyer, S. Koenemann, T. M. Iliffe, A. Stamatakis, O. Niehuis, K. Meusemann, B. Misof. 2012. Pancrustacean phylogeny in the light of new phylogenomic data: support for Remipedia as the possible sister group of Hexapoda. Molecular Biology and Evolution 29 (3): 1031-1045.", 
 "^ot:studyYear": 2012, 
+"^ot:tag": [], 
 "^ot:treesElementOrder": [
 "trees2815"
 ], 
@@ -180,7 +151,9 @@
 "^ot:ottTaxonName": "Rhipicephalus appendiculatus"
 }, 
 "otu417841": {
-"^ot:originalLabel": "Boophilus microplus"
+"^ot:originalLabel": "Boophilus microplus", 
+"^ot:ottId": 621053, 
+"^ot:ottTaxonName": "Rhipicephalus microplus"
 }, 
 "otu417842": {
 "^ot:originalLabel": "Ostracoda", 
@@ -218,7 +191,9 @@
 "^ot:ottTaxonName": "Pollicipes pollicipes"
 }, 
 "otu417849": {
-"^ot:originalLabel": "Balanus amphitrite"
+"^ot:originalLabel": "Balanus amphitrite", 
+"^ot:ottId": 186242, 
+"^ot:ottTaxonName": "Amphibalanus amphitrite"
 }, 
 "otu417850": {
 "^ot:originalLabel": "Nebalia", 
@@ -341,7 +316,9 @@
 "^ot:ottTaxonName": "Acerentomon franzi"
 }, 
 "otu417874": {
-"^ot:originalLabel": "Onychiurus arcticus"
+"^ot:originalLabel": "Onychiurus arcticus", 
+"^ot:ottId": 799602, 
+"^ot:ottTaxonName": "Megaphorura arctica"
 }, 
 "otu417875": {
 "^ot:originalLabel": "Anurida maritima", 
@@ -459,7 +436,9 @@
 "^ot:ottTaxonName": "Reticulitermes flavipes"
 }, 
 "otu417898": {
-"^ot:originalLabel": "Hodotermopsis sjoestedti"
+"^ot:originalLabel": "Hodotermopsis sjoestedti", 
+"^ot:ottId": 944978, 
+"^ot:ottTaxonName": "Hodotermopsis sjostedti"
 }, 
 "otu417899": {
 "^ot:originalLabel": "Periplaneta americana", 
@@ -550,7 +529,9 @@
 "^ot:ottTaxonName": "Danaus plexippus"
 }, 
 "otu417917": {
-"^ot:originalLabel": "Onthophagus taurus"
+"^ot:originalLabel": "Onthophagus taurus", 
+"^ot:ottId": 262810, 
+"^ot:ottTaxonName": "Onthophagus taurus"
 }, 
 "otu417918": {
 "^ot:originalLabel": "Diabrotica virgifera virgifera", 
@@ -572,11 +553,17 @@
 "treeById": {
 "tree6552": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
 "^ot:branchLengthMode": "ot:substitutionCount", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "Fig. 4 ML (2Bred matrix)", 
 "^ot:inGroupClade": "node1137028", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node1137023", 
-"^ot:tag": "ingroup added;", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [
+"ingroup added;"
+], 
 "edgeBySourceId": {
 "node1137023": {
 "edge1137024": {
@@ -1645,11 +1632,17 @@
 }, 
 "tree6553": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
 "^ot:branchLengthMode": "ot:substitutionCount", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "Fig. 2 ML (2Ared matrix)", 
 "^ot:inGroupClade": "node1137161", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node1137156", 
-"^ot:tag": "ingroup added;", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [
+"ingroup added;"
+], 
 "edgeBySourceId": {
 "node1137156": {
 "edge1137157": {
@@ -3118,11 +3111,17 @@
 }, 
 "tree6554": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
 "^ot:branchLengthMode": "ot:substitutionCount", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "Fig. 3 ML (1Bred matrix)", 
 "^ot:inGroupClade": "node1137344", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node1137339", 
-"^ot:tag": "ingroup added;", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [
+"ingroup added;"
+], 
 "edgeBySourceId": {
 "node1137339": {
 "edge1137340": {
@@ -4111,10 +4110,14 @@
 }, 
 "tree6555": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
 "^ot:branchLengthMode": "ot:substitutionCount", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "Fig. 1 ML (1Ared matrix)", 
 "^ot:inGroupClade": "node1137467", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node1137462", 
+"^ot:specifiedRoot": "", 
 "^ot:tag": [
 "ingroup added;", 
 "Choose me"

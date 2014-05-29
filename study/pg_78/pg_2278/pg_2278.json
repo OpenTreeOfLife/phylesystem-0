@@ -19,48 +19,11 @@
 "@id": "peyotl-validator", 
 "@name": "validate_ot_nexson.py", 
 "@url": "https://github.com/OpenTreeOfLife/peyotl", 
-"@version": "0.0.3a", 
+"@version": "0.0.4a", 
 "invocation": {
-"checksPerformed": [
-"MISSING_MANDATORY_KEY", 
-"MISSING_OPTIONAL_KEY", 
-"UNRECOGNIZED_KEY", 
-"MISSING_LIST_EXPECTED", 
-"DUPLICATING_SINGLETON_KEY", 
-"REFERENCED_ID_NOT_FOUND", 
-"REPEATED_ID", 
-"REPEATED_OTU", 
-"MULTIPLE_ROOT_NODES", 
-"NO_ROOT_NODE", 
-"MULTIPLE_EDGES_FOR_NODES", 
-"CYCLE_DETECTED", 
-"DISCONNECTED_GRAPH_DETECTED", 
-"INCORRECT_ROOT_NODE_LABEL", 
-"TIP_WITHOUT_OTU", 
-"TIP_WITHOUT_OTT_ID", 
-"MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
-"NON_MONOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
-"INVALID_PROPERTY_VALUE", 
-"PROPERTY_VALUE_NOT_USEFUL", 
-"UNRECOGNIZED_PROPERTY_VALUE", 
-"MULTIPLE_TREES", 
-"UNRECOGNIZED_TAG", 
-"CONFLICTING_PROPERTY_VALUES", 
-"NO_TREES", 
-"DEPRECATED_PROPERTY", 
-"UNPARSEABLE_META", 
-"UNREACHABLE_NODE", 
-"INCORRECT_VALUE_TYPE", 
-"MISSING_CRUCIAL_CONTENT"
-], 
 "commandLine": [
 "--embed", 
-"--agent-only", 
-"-e", 
-"../mig-phyelesystem-scratch/2278/validation.json", 
-"-o", 
-"../mig-phyelesystem-scratch/2278/final.json", 
-"../mig-phyelesystem-scratch/2278/v1.2.1-2278.json"
+"--agent-only"
 ], 
 "otherProperty": [
 {
@@ -76,12 +39,19 @@
 }
 ]
 }, 
+"^ot:annotationEvents": {
+"annotation": []
+}, 
+"^ot:candidateTreeForSynthesis": [], 
 "^ot:curatorName": "Romina Gazis", 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S11829"
 }, 
 "^ot:focalClade": 775740, 
 "^ot:focalCladeOTTTaxonName": "Phytophthora", 
+"^ot:messages": {
+"message": []
+}, 
 "^ot:otusElementOrder": [
 "otus2278"
 ], 
@@ -89,8 +59,9 @@
 "^ot:studyPublication": {
 "@href": "http://dx.doi.org/10.5598/imafungus.2011.02.02.07"
 }, 
-"^ot:studyPublicationReference": "Runge F., Telle S., Ploch S., Savory E., Day B., Sharma R., & Thines M. 2011. The inclusion of downy mildews in a multi-locus-dataset and its reanalysis reveals a high degree of paraphyly in Phytophthora. IMA Fungus, 2(2): 163-171.", 
+"^ot:studyPublicationReference": "Runge, F., Telle S., Ploch S., Savory E., Day B., Sharma R., & Thines M. 2011. The inclusion of downy mildews in a multi-locus-dataset and its reanalysis reveals a high degree of paraphyly in Phytophthora. IMA Fungus 2 (2): 163-171.", 
 "^ot:studyYear": 2011, 
+"^ot:tag": [], 
 "^ot:treesElementOrder": [
 "trees2278"
 ], 
@@ -99,14 +70,20 @@
 "otuById": {
 "otu326581": {
 "^ot:originalLabel": "Phytophthora sp. P10672", 
+"^ot:ottId": 775740, 
+"^ot:ottTaxonName": "Phytophthora", 
 "^ot:treebaseOTUId": "Tl595426"
 }, 
 "otu326582": {
 "^ot:originalLabel": "Phytophthora sp. P10417", 
+"^ot:ottId": 775740, 
+"^ot:ottTaxonName": "Phytophthora", 
 "^ot:treebaseOTUId": "Tl595453"
 }, 
 "otu326583": {
 "^ot:originalLabel": "Phytophthora sp. P8619", 
+"^ot:ottId": 775740, 
+"^ot:ottTaxonName": "Phytophthora", 
 "^ot:treebaseOTUId": "Tl595508"
 }, 
 "otu326584": {
@@ -117,6 +94,8 @@
 }, 
 "otu326585": {
 "^ot:originalLabel": "Hyaloperonospora arabidopsidis", 
+"^ot:ottId": 613479, 
+"^ot:ottTaxonName": "Hyaloperonospora arabidopsidis", 
 "^ot:treebaseOTUId": "Tl595528"
 }, 
 "otu326586": {
@@ -825,10 +804,17 @@
 "treeById": {
 "tree4825": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "BI, LSU", 
 "^ot:inGroupClade": "node844566", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node844562", 
-"^ot:tag": "LSU", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [
+"LSU"
+], 
 "edgeBySourceId": {
 "node844562": {
 "edge844563": {

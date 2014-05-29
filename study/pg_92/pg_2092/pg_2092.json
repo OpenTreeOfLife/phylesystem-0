@@ -19,48 +19,11 @@
 "@id": "peyotl-validator", 
 "@name": "validate_ot_nexson.py", 
 "@url": "https://github.com/OpenTreeOfLife/peyotl", 
-"@version": "0.0.3a", 
+"@version": "0.0.4a", 
 "invocation": {
-"checksPerformed": [
-"MISSING_MANDATORY_KEY", 
-"MISSING_OPTIONAL_KEY", 
-"UNRECOGNIZED_KEY", 
-"MISSING_LIST_EXPECTED", 
-"DUPLICATING_SINGLETON_KEY", 
-"REFERENCED_ID_NOT_FOUND", 
-"REPEATED_ID", 
-"REPEATED_OTU", 
-"MULTIPLE_ROOT_NODES", 
-"NO_ROOT_NODE", 
-"MULTIPLE_EDGES_FOR_NODES", 
-"CYCLE_DETECTED", 
-"DISCONNECTED_GRAPH_DETECTED", 
-"INCORRECT_ROOT_NODE_LABEL", 
-"TIP_WITHOUT_OTU", 
-"TIP_WITHOUT_OTT_ID", 
-"MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
-"NON_MONOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
-"INVALID_PROPERTY_VALUE", 
-"PROPERTY_VALUE_NOT_USEFUL", 
-"UNRECOGNIZED_PROPERTY_VALUE", 
-"MULTIPLE_TREES", 
-"UNRECOGNIZED_TAG", 
-"CONFLICTING_PROPERTY_VALUES", 
-"NO_TREES", 
-"DEPRECATED_PROPERTY", 
-"UNPARSEABLE_META", 
-"UNREACHABLE_NODE", 
-"INCORRECT_VALUE_TYPE", 
-"MISSING_CRUCIAL_CONTENT"
-], 
 "commandLine": [
 "--embed", 
-"--agent-only", 
-"-e", 
-"../mig-phyelesystem-scratch/2092/validation.json", 
-"-o", 
-"../mig-phyelesystem-scratch/2092/final.json", 
-"../mig-phyelesystem-scratch/2092/v1.2.1-2092.json"
+"--agent-only"
 ], 
 "otherProperty": [
 {
@@ -76,12 +39,19 @@
 }
 ]
 }, 
+"^ot:annotationEvents": {
+"annotation": []
+}, 
+"^ot:candidateTreeForSynthesis": [], 
 "^ot:curatorName": "Chris Owen", 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S1379"
 }, 
 "^ot:focalClade": 419936, 
 "^ot:focalCladeOTTTaxonName": "Albinaria", 
+"^ot:messages": {
+"message": []
+}, 
 "^ot:otusElementOrder": [
 "otus2092"
 ], 
@@ -89,8 +59,9 @@
 "^ot:studyPublication": {
 "@href": "http://dx.doi.org/10.1111/j.1096-3642.2005.00154.x"
 }, 
-"^ot:studyPublicationReference": "Uit de weerd D., & Gittenberger E. 2005. Towards a monophyletic genus Albinaria: the first molecular study into the phylogenetic position of eastern Albinaria species. Zoological Journal of the Linnean Society, 143: 531-542.", 
+"^ot:studyPublicationReference": "Uit de Weerd, D.R., & Gittenberger E. 2005. Towards a monophyletic genus Albinaria: the first molecular study into the phylogenetic position of eastern Albinaria species. Zoological Journal of the Linnean Society 143 (4): 531-542.", 
 "^ot:studyYear": 2005, 
+"^ot:tag": [], 
 "^ot:treesElementOrder": [
 "trees2092"
 ], 
@@ -195,8 +166,6 @@
 }, 
 "otu311890": {
 "^ot:originalLabel": "Albinaria hedenborgi", 
-"^ot:ottId": 419936, 
-"^ot:ottTaxonName": "Albinaria", 
 "^ot:treebaseOTUId": "Tl39208"
 }, 
 "otu311891": {
@@ -279,10 +248,15 @@
 "treeById": {
 "tree4333": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
 "^ot:branchLengthMode": "ot:changesCount", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "Fig. 5a MP", 
 "^ot:inGroupClade": "node793822", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node793819", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node793819": {
 "edge793820": {
@@ -617,10 +591,15 @@
 }, 
 "tree4334": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
 "^ot:branchLengthMode": "ot:changesCount", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "Fig. 5b ITS", 
 "^ot:inGroupClade": "node793870", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node793866", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node793866": {
 "edge793867": {
@@ -962,10 +941,17 @@
 }, 
 "tree4335": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "Fig. 6 MP", 
 "^ot:inGroupClade": "node793919", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node793914", 
-"^ot:tag": "choose me", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [
+"choose me"
+], 
 "edgeBySourceId": {
 "node793914": {
 "edge793915": {

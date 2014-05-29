@@ -19,48 +19,11 @@
 "@id": "peyotl-validator", 
 "@name": "validate_ot_nexson.py", 
 "@url": "https://github.com/OpenTreeOfLife/peyotl", 
-"@version": "0.0.3a", 
+"@version": "0.0.4a", 
 "invocation": {
-"checksPerformed": [
-"MISSING_MANDATORY_KEY", 
-"MISSING_OPTIONAL_KEY", 
-"UNRECOGNIZED_KEY", 
-"MISSING_LIST_EXPECTED", 
-"DUPLICATING_SINGLETON_KEY", 
-"REFERENCED_ID_NOT_FOUND", 
-"REPEATED_ID", 
-"REPEATED_OTU", 
-"MULTIPLE_ROOT_NODES", 
-"NO_ROOT_NODE", 
-"MULTIPLE_EDGES_FOR_NODES", 
-"CYCLE_DETECTED", 
-"DISCONNECTED_GRAPH_DETECTED", 
-"INCORRECT_ROOT_NODE_LABEL", 
-"TIP_WITHOUT_OTU", 
-"TIP_WITHOUT_OTT_ID", 
-"MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
-"NON_MONOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
-"INVALID_PROPERTY_VALUE", 
-"PROPERTY_VALUE_NOT_USEFUL", 
-"UNRECOGNIZED_PROPERTY_VALUE", 
-"MULTIPLE_TREES", 
-"UNRECOGNIZED_TAG", 
-"CONFLICTING_PROPERTY_VALUES", 
-"NO_TREES", 
-"DEPRECATED_PROPERTY", 
-"UNPARSEABLE_META", 
-"UNREACHABLE_NODE", 
-"INCORRECT_VALUE_TYPE", 
-"MISSING_CRUCIAL_CONTENT"
-], 
 "commandLine": [
 "--embed", 
-"--agent-only", 
-"-e", 
-"../mig-phyelesystem-scratch/2813/validation.json", 
-"-o", 
-"../mig-phyelesystem-scratch/2813/final.json", 
-"../mig-phyelesystem-scratch/2813/v1.2.1-2813.json"
+"--agent-only"
 ], 
 "otherProperty": [
 {
@@ -76,9 +39,16 @@
 }
 ]
 }, 
+"^ot:annotationEvents": {
+"annotation": []
+}, 
+"^ot:candidateTreeForSynthesis": [], 
 "^ot:curatorName": "Joseph Brown", 
 "^ot:focalClade": 816442, 
 "^ot:focalCladeOTTTaxonName": "Panarthropoda", 
+"^ot:messages": {
+"message": []
+}, 
 "^ot:otusElementOrder": [
 "otus2813"
 ], 
@@ -88,6 +58,7 @@
 }, 
 "^ot:studyPublicationReference": "O. Rota-Stabelli, L. Campbell, H. Brinkmann, G. D. Edgecombe, S. J. Longhorn, K. J. Peterson, D. Pisani, H. Philippe, M. J. Telford. 2011. A congruent solution to arthropod phylogeny: phylogenomics, microRNAs and morphology support monophyletic Mandibulata. Proceedings of the Royal Society B: Biological Sciences 278 (1703): 298-306.", 
 "^ot:studyYear": 2011, 
+"^ot:tag": [], 
 "^ot:treesElementOrder": [
 "trees2813"
 ], 
@@ -110,7 +81,9 @@
 "^ot:ottTaxonName": "Gryllus bimaculatus"
 }, 
 "otu417717": {
-"^ot:originalLabel": "Onychiurus arcticus"
+"^ot:originalLabel": "Onychiurus arcticus", 
+"^ot:ottId": 799602, 
+"^ot:ottTaxonName": "Megaphorura arctica"
 }, 
 "otu417718": {
 "^ot:originalLabel": "Folsomia candida", 
@@ -153,7 +126,9 @@
 "^ot:ottTaxonName": "Ixodes scapularis"
 }, 
 "otu417726": {
-"^ot:originalLabel": "Boophilus microplus"
+"^ot:originalLabel": "Boophilus microplus", 
+"^ot:ottId": 621053, 
+"^ot:ottTaxonName": "Rhipicephalus microplus"
 }, 
 "otu417727": {
 "^ot:originalLabel": "Acanthoscurria gomesiana", 
@@ -250,11 +225,17 @@
 "treeById": {
 "tree6550": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
 "^ot:branchLengthMode": "ot:substitutionCount", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "Fig. 1 Bayesian CAT + Gamma", 
 "^ot:inGroupClade": "node1136811", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node1136808", 
-"^ot:tag": "ingroup added;", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [
+"ingroup added;"
+], 
 "edgeBySourceId": {
 "node1136808": {
 "edge1136809": {

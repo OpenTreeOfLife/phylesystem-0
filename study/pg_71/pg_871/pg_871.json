@@ -19,48 +19,11 @@
 "@id": "peyotl-validator", 
 "@name": "validate_ot_nexson.py", 
 "@url": "https://github.com/OpenTreeOfLife/peyotl", 
-"@version": "0.0.3a", 
+"@version": "0.0.4a", 
 "invocation": {
-"checksPerformed": [
-"MISSING_MANDATORY_KEY", 
-"MISSING_OPTIONAL_KEY", 
-"UNRECOGNIZED_KEY", 
-"MISSING_LIST_EXPECTED", 
-"DUPLICATING_SINGLETON_KEY", 
-"REFERENCED_ID_NOT_FOUND", 
-"REPEATED_ID", 
-"REPEATED_OTU", 
-"MULTIPLE_ROOT_NODES", 
-"NO_ROOT_NODE", 
-"MULTIPLE_EDGES_FOR_NODES", 
-"CYCLE_DETECTED", 
-"DISCONNECTED_GRAPH_DETECTED", 
-"INCORRECT_ROOT_NODE_LABEL", 
-"TIP_WITHOUT_OTU", 
-"TIP_WITHOUT_OTT_ID", 
-"MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
-"NON_MONOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
-"INVALID_PROPERTY_VALUE", 
-"PROPERTY_VALUE_NOT_USEFUL", 
-"UNRECOGNIZED_PROPERTY_VALUE", 
-"MULTIPLE_TREES", 
-"UNRECOGNIZED_TAG", 
-"CONFLICTING_PROPERTY_VALUES", 
-"NO_TREES", 
-"DEPRECATED_PROPERTY", 
-"UNPARSEABLE_META", 
-"UNREACHABLE_NODE", 
-"INCORRECT_VALUE_TYPE", 
-"MISSING_CRUCIAL_CONTENT"
-], 
 "commandLine": [
 "--embed", 
-"--agent-only", 
-"-e", 
-"../mig-phyelesystem-scratch/871/validation.json", 
-"-o", 
-"../mig-phyelesystem-scratch/871/final.json", 
-"../mig-phyelesystem-scratch/871/v1.2.1-871.json"
+"--agent-only"
 ], 
 "otherProperty": [
 {
@@ -76,12 +39,19 @@
 }
 ]
 }, 
+"^ot:annotationEvents": {
+"annotation": []
+}, 
+"^ot:candidateTreeForSynthesis": [], 
 "^ot:curatorName": "Romina Gazis", 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S13303"
 }, 
 "^ot:focalClade": 103002, 
 "^ot:focalCladeOTTTaxonName": "Diaporthales", 
+"^ot:messages": {
+"message": []
+}, 
 "^ot:otusElementOrder": [
 "otus871"
 ], 
@@ -91,6 +61,7 @@
 }, 
 "^ot:studyPublicationReference": "Crous P.W., Summerell B., Alfenas A., Edwards J., Pascoe I.G., Porter I.J., & Groenewald J.Z. 2012. Genera of diaporthalean coelomycetes associated with leaf spots of tree hosts. Persoonia 28, 2012: 66\u201375", 
 "^ot:studyYear": 2012, 
+"^ot:tag": [], 
 "^ot:treesElementOrder": [
 "trees871"
 ], 
@@ -263,6 +234,8 @@
 }, 
 "otu202718": {
 "^ot:originalLabel": "Pilidiella granati AF408379", 
+"^ot:ottId": 228448, 
+"^ot:ottTaxonName": "Coniella granati", 
 "^ot:treebaseOTUId": "Tl869477"
 }, 
 "otu202719": {
@@ -279,6 +252,8 @@
 }, 
 "otu202721": {
 "^ot:originalLabel": "Greeneria uvicola AF362570", 
+"^ot:ottId": 396956, 
+"^ot:ottTaxonName": "Phoma uvicola", 
 "^ot:treebaseOTUId": "Tl869480"
 }, 
 "otu202722": {
@@ -289,6 +264,8 @@
 }, 
 "otu202723": {
 "^ot:originalLabel": "Melanconiella chrysostroma AF408369", 
+"^ot:ottId": 5316780, 
+"^ot:ottTaxonName": "Melanconis chrysostroma", 
 "^ot:treebaseOTUId": "Tl869482"
 }, 
 "otu202724": {
@@ -311,6 +288,8 @@
 }, 
 "otu202727": {
 "^ot:originalLabel": "Endothia gyrosa DQ470972", 
+"^ot:ottId": 5316851, 
+"^ot:ottTaxonName": "Endothia radicalis", 
 "^ot:treebaseOTUId": "Tl869486"
 }, 
 "otu202728": {
@@ -321,6 +300,8 @@
 }, 
 "otu202729": {
 "^ot:originalLabel": "Greeneria uvicola JN547723", 
+"^ot:ottId": 396956, 
+"^ot:ottTaxonName": "Phoma uvicola", 
 "^ot:treebaseOTUId": "Tl869488"
 }, 
 "otu202730": {
@@ -381,9 +362,15 @@
 "treeById": {
 "tree1674": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "MP, LSU", 
 "^ot:inGroupClade": "node476187", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node476185", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node476185": {
 "edge476186": {
@@ -802,9 +789,15 @@
 }, 
 "tree1675": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "MP, ITS", 
 "^ot:inGroupClade": "node476245", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node476244", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node476244": {
 "edge476245": {
@@ -1097,8 +1090,14 @@
 }, 
 "tree1676": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "BI, LSU", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node476285", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node476285": {
 "edge476286": {
@@ -1475,8 +1474,14 @@
 }, 
 "tree5715": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "BI, LSU (rooted)", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node981925", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node981925": {
 "edge981926": {
@@ -1853,9 +1858,15 @@
 }, 
 "tree5716": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "BI, LSU (rooted)", 
 "^ot:inGroupClade": "node981979", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node981978", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node981978": {
 "edge981979": {

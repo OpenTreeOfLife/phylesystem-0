@@ -19,48 +19,11 @@
 "@id": "peyotl-validator", 
 "@name": "validate_ot_nexson.py", 
 "@url": "https://github.com/OpenTreeOfLife/peyotl", 
-"@version": "0.0.3a", 
+"@version": "0.0.4a", 
 "invocation": {
-"checksPerformed": [
-"MISSING_MANDATORY_KEY", 
-"MISSING_OPTIONAL_KEY", 
-"UNRECOGNIZED_KEY", 
-"MISSING_LIST_EXPECTED", 
-"DUPLICATING_SINGLETON_KEY", 
-"REFERENCED_ID_NOT_FOUND", 
-"REPEATED_ID", 
-"REPEATED_OTU", 
-"MULTIPLE_ROOT_NODES", 
-"NO_ROOT_NODE", 
-"MULTIPLE_EDGES_FOR_NODES", 
-"CYCLE_DETECTED", 
-"DISCONNECTED_GRAPH_DETECTED", 
-"INCORRECT_ROOT_NODE_LABEL", 
-"TIP_WITHOUT_OTU", 
-"TIP_WITHOUT_OTT_ID", 
-"MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
-"NON_MONOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
-"INVALID_PROPERTY_VALUE", 
-"PROPERTY_VALUE_NOT_USEFUL", 
-"UNRECOGNIZED_PROPERTY_VALUE", 
-"MULTIPLE_TREES", 
-"UNRECOGNIZED_TAG", 
-"CONFLICTING_PROPERTY_VALUES", 
-"NO_TREES", 
-"DEPRECATED_PROPERTY", 
-"UNPARSEABLE_META", 
-"UNREACHABLE_NODE", 
-"INCORRECT_VALUE_TYPE", 
-"MISSING_CRUCIAL_CONTENT"
-], 
 "commandLine": [
 "--embed", 
-"--agent-only", 
-"-e", 
-"../mig-phyelesystem-scratch/1213/validation.json", 
-"-o", 
-"../mig-phyelesystem-scratch/1213/final.json", 
-"../mig-phyelesystem-scratch/1213/v1.2.1-1213.json"
+"--agent-only"
 ], 
 "otherProperty": [
 {
@@ -76,9 +39,16 @@
 }
 ]
 }, 
+"^ot:annotationEvents": {
+"annotation": []
+}, 
+"^ot:candidateTreeForSynthesis": [], 
 "^ot:curatorName": "Romina Gazis", 
 "^ot:focalClade": 812329, 
 "^ot:focalCladeOTTTaxonName": "Coniochaeta", 
+"^ot:messages": {
+"message": []
+}, 
 "^ot:otusElementOrder": [
 "otus1213"
 ], 
@@ -89,8 +59,8 @@
 "^ot:studyPublicationReference": "Raja, Huzefa A., Jacques Fournier, Carol A. Shearer, and Andrew N. Miller. \"Freshwater ascomycetes: Coniochaeta gigantospora sp. nov. based on morphological and molecular data.\" Mycoscience (2012): 1-8.", 
 "^ot:studyYear": 2012, 
 "^ot:tag": [
-"ML", 
-"LSU"
+"LSU", 
+"ML"
 ], 
 "^ot:treesElementOrder": [
 "trees1213"
@@ -169,7 +139,9 @@
 "^ot:ottTaxonName": "Coniochaeta ligniaria"
 }, 
 "otu232604": {
-"^ot:originalLabel": "Coniochaeta sp JN673041"
+"^ot:originalLabel": "Coniochaeta sp JN673041", 
+"^ot:ottId": 812329, 
+"^ot:ottTaxonName": "Coniochaeta"
 }, 
 "otu232605": {
 "^ot:originalLabel": "Coniochaeta velutina GQ154605", 
@@ -227,7 +199,9 @@
 "^ot:ottTaxonName": "Annulohypoxylon atroroseum"
 }, 
 "otu232616": {
-"^ot:originalLabel": "Rosellinia bambusae s EF489466"
+"^ot:originalLabel": "Rosellinia bambusae s EF489466", 
+"^ot:ottId": 134017, 
+"^ot:ottTaxonName": "Astrocystis bambusae"
 }, 
 "otu232617": {
 "^ot:originalLabel": "Xylaria phyllocharis AB376686", 
@@ -251,7 +225,9 @@
 "^ot:ottTaxonName": "Coniolaria murandii"
 }, 
 "otu232622": {
-"^ot:originalLabel": "Coniolariella limoniispora EF489469"
+"^ot:originalLabel": "Coniolariella limoniispora EF489469", 
+"^ot:ottId": 5317727, 
+"^ot:ottTaxonName": "Coniolariella limonispora"
 }, 
 "otu232623": {
 "^ot:originalLabel": "Coniolariella australis EF489464"
@@ -394,9 +370,16 @@
 "treeById": {
 "tree2442": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "ML, LSU (D1)", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node564520", 
-"^ot:tag": "delete me", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [
+"delete me"
+], 
 "edgeBySourceId": {
 "node564520": {
 "edge564521": {
@@ -1306,9 +1289,14 @@
 }, 
 "tree5830": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "ML, LSU (rooted)", 
 "^ot:inGroupClade": "node994935", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node994930", 
+"^ot:specifiedRoot": "", 
 "^ot:tag": [
 "ML", 
 "LSU", 

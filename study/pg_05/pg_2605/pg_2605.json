@@ -19,48 +19,11 @@
 "@id": "peyotl-validator", 
 "@name": "validate_ot_nexson.py", 
 "@url": "https://github.com/OpenTreeOfLife/peyotl", 
-"@version": "0.0.3a", 
+"@version": "0.0.4a", 
 "invocation": {
-"checksPerformed": [
-"MISSING_MANDATORY_KEY", 
-"MISSING_OPTIONAL_KEY", 
-"UNRECOGNIZED_KEY", 
-"MISSING_LIST_EXPECTED", 
-"DUPLICATING_SINGLETON_KEY", 
-"REFERENCED_ID_NOT_FOUND", 
-"REPEATED_ID", 
-"REPEATED_OTU", 
-"MULTIPLE_ROOT_NODES", 
-"NO_ROOT_NODE", 
-"MULTIPLE_EDGES_FOR_NODES", 
-"CYCLE_DETECTED", 
-"DISCONNECTED_GRAPH_DETECTED", 
-"INCORRECT_ROOT_NODE_LABEL", 
-"TIP_WITHOUT_OTU", 
-"TIP_WITHOUT_OTT_ID", 
-"MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
-"NON_MONOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
-"INVALID_PROPERTY_VALUE", 
-"PROPERTY_VALUE_NOT_USEFUL", 
-"UNRECOGNIZED_PROPERTY_VALUE", 
-"MULTIPLE_TREES", 
-"UNRECOGNIZED_TAG", 
-"CONFLICTING_PROPERTY_VALUES", 
-"NO_TREES", 
-"DEPRECATED_PROPERTY", 
-"UNPARSEABLE_META", 
-"UNREACHABLE_NODE", 
-"INCORRECT_VALUE_TYPE", 
-"MISSING_CRUCIAL_CONTENT"
-], 
 "commandLine": [
 "--embed", 
-"--agent-only", 
-"-e", 
-"../mig-phyelesystem-scratch/2605/validation.json", 
-"-o", 
-"../mig-phyelesystem-scratch/2605/final.json", 
-"../mig-phyelesystem-scratch/2605/v1.2.1-2605.json"
+"--agent-only"
 ], 
 "otherProperty": [
 {
@@ -76,12 +39,19 @@
 }
 ]
 }, 
+"^ot:annotationEvents": {
+"annotation": []
+}, 
+"^ot:candidateTreeForSynthesis": [], 
 "^ot:curatorName": "Romina Gazis", 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S13673"
 }, 
 "^ot:focalClade": 550772, 
 "^ot:focalCladeOTTTaxonName": "Aspergillus", 
+"^ot:messages": {
+"message": []
+}, 
 "^ot:otusElementOrder": [
 "otus2605"
 ], 
@@ -89,10 +59,10 @@
 "^ot:studyPublicationReference": "Hubka V., Kolarik M., Kubatova A., & Peterson S.W. 2013. Taxonomic revision of Eurotium and transfer of species to Aspergillus. Mycologia , 105(4): 912???937.", 
 "^ot:studyYear": 2013, 
 "^ot:tag": [
-"MP", 
 "benA", 
-"RPB2", 
-"caM"
+"caM", 
+"MP", 
+"RPB2"
 ], 
 "^ot:treesElementOrder": [
 "trees2605"
@@ -174,6 +144,8 @@
 }, 
 "otu388614": {
 "^ot:originalLabel": "Aspergillus halophilicus NRRL 2739", 
+"^ot:ottId": 5310650, 
+"^ot:ottTaxonName": "Aspergillus halophilicus", 
 "^ot:treebaseOTUId": "Tl952287"
 }, 
 "otu388615": {
@@ -340,6 +312,8 @@
 }, 
 "otu388642": {
 "^ot:originalLabel": "Aspergillus tonophilus NRRL 5124", 
+"^ot:ottId": 5310653, 
+"^ot:ottTaxonName": "Aspergillus tonophilus", 
 "^ot:treebaseOTUId": "Tl952315"
 }, 
 "otu388643": {
@@ -471,9 +445,14 @@
 "treeById": {
 "tree6045": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "MP, caM", 
 "^ot:inGroupClade": "node1038169", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node1038167", 
+"^ot:specifiedRoot": "", 
 "^ot:tag": [
 "MP", 
 "caM"
@@ -1316,9 +1295,14 @@
 }, 
 "tree6046": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "MP, benA", 
 "^ot:inGroupClade": "node1038288", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node1038286", 
+"^ot:specifiedRoot": "", 
 "^ot:tag": [
 "MP", 
 "benA"
@@ -2161,9 +2145,14 @@
 }, 
 "tree6047": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "MP, RPB2", 
 "^ot:inGroupClade": "node1038407", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node1038405", 
+"^ot:specifiedRoot": "", 
 "^ot:tag": [
 "MP", 
 "RPB2"
@@ -3006,9 +2995,14 @@
 }, 
 "tree6048": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "MP, combined?", 
 "^ot:inGroupClade": "node1038526", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node1038524", 
+"^ot:specifiedRoot": "", 
 "^ot:tag": [
 "benA", 
 "caM", 

@@ -19,48 +19,11 @@
 "@id": "peyotl-validator", 
 "@name": "validate_ot_nexson.py", 
 "@url": "https://github.com/OpenTreeOfLife/peyotl", 
-"@version": "0.0.3a", 
+"@version": "0.0.4a", 
 "invocation": {
-"checksPerformed": [
-"MISSING_MANDATORY_KEY", 
-"MISSING_OPTIONAL_KEY", 
-"UNRECOGNIZED_KEY", 
-"MISSING_LIST_EXPECTED", 
-"DUPLICATING_SINGLETON_KEY", 
-"REFERENCED_ID_NOT_FOUND", 
-"REPEATED_ID", 
-"REPEATED_OTU", 
-"MULTIPLE_ROOT_NODES", 
-"NO_ROOT_NODE", 
-"MULTIPLE_EDGES_FOR_NODES", 
-"CYCLE_DETECTED", 
-"DISCONNECTED_GRAPH_DETECTED", 
-"INCORRECT_ROOT_NODE_LABEL", 
-"TIP_WITHOUT_OTU", 
-"TIP_WITHOUT_OTT_ID", 
-"MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
-"NON_MONOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
-"INVALID_PROPERTY_VALUE", 
-"PROPERTY_VALUE_NOT_USEFUL", 
-"UNRECOGNIZED_PROPERTY_VALUE", 
-"MULTIPLE_TREES", 
-"UNRECOGNIZED_TAG", 
-"CONFLICTING_PROPERTY_VALUES", 
-"NO_TREES", 
-"DEPRECATED_PROPERTY", 
-"UNPARSEABLE_META", 
-"UNREACHABLE_NODE", 
-"INCORRECT_VALUE_TYPE", 
-"MISSING_CRUCIAL_CONTENT"
-], 
 "commandLine": [
 "--embed", 
-"--agent-only", 
-"-e", 
-"../mig-phyelesystem-scratch/2450/validation.json", 
-"-o", 
-"../mig-phyelesystem-scratch/2450/final.json", 
-"../mig-phyelesystem-scratch/2450/v1.2.1-2450.json"
+"--agent-only"
 ], 
 "otherProperty": [
 {
@@ -76,7 +39,14 @@
 }
 ]
 }, 
+"^ot:annotationEvents": {
+"annotation": []
+}, 
+"^ot:candidateTreeForSynthesis": [], 
 "^ot:curatorName": "Jessica Grant", 
+"^ot:messages": {
+"message": []
+}, 
 "^ot:otusElementOrder": [
 "otus2450"
 ], 
@@ -86,6 +56,7 @@
 }, 
 "^ot:studyPublicationReference": "Dongying Wu, Philip Hugenholtz, Konstantinos Mavromatis, R\u00fcdiger Pukall, Eileen Dalin, Natalia N. Ivanova, Victor Kunin, Lynne Goodwin, Martin Wu, Brian J. Tindall, Sean D. Hooper, Amrita Pati, Athanasios Lykidis, Stefan Spring, Iain J. Anderson, Patrik D\u2019haeseleer, Adam Zemla, Mitchell Singer, Alla Lapidus, Matt Nolan, Alex Copeland, Cliff Han, Feng Chen, Jan-Fang Cheng, Susan Lucas, Cheryl Kerfeld, Elke Lang, Sabine Gronow, Patrick Chain, David Bruce, Edward M. Rubin, Nikos C. Kyrpides, Hans-Peter Klenk, Jonathan A. Eisen. 2009. A phylogeny-driven genomic encyclopaedia of Bacteria and Archaea. Nature 462(7276):1056-1060.", 
 "^ot:studyYear": 2009, 
+"^ot:tag": [], 
 "^ot:treesElementOrder": [
 "trees2450"
 ], 
@@ -290,14 +261,10 @@
 "^ot:originalLabel": "Yersinia enterocolitica subsp enterocolitica 8081"
 }, 
 "otu351903": {
-"^ot:originalLabel": "Candidatus Blochmannia pennsylvanicus str BPEN", 
-"^ot:ottId": 4787859, 
-"^ot:ottTaxonName": "Candidatus Blochmannia pennsylvanicus str. BPEN"
+"^ot:originalLabel": "Candidatus Blochmannia pennsylvanicus str BPEN"
 }, 
 "otu351904": {
-"^ot:originalLabel": "Candidatus Blochmannia floridanus", 
-"^ot:ottId": 4787843, 
-"^ot:ottTaxonName": "Candidatus Blochmannia floridanus"
+"^ot:originalLabel": "Candidatus Blochmannia floridanus"
 }, 
 "otu351905": {
 "^ot:originalLabel": "Buchnera aphidicola str APS Acyrthosiphon pisum"
@@ -1184,7 +1151,9 @@
 "^ot:originalLabel": "Brucella abortus biovar 1 str 9 941"
 }, 
 "otu352101": {
-"^ot:originalLabel": "Brucella melitensis 16M"
+"^ot:originalLabel": "Brucella melitensis 16M", 
+"^ot:ottId": 953845, 
+"^ot:ottTaxonName": "Brucella melitensis bv. 1 str. 16M"
 }, 
 "otu352102": {
 "^ot:originalLabel": "Brucella ovis ATCC 25840", 
@@ -1250,7 +1219,7 @@
 "otu352115": {
 "^ot:originalLabel": "Bradyrhizobium japonicum USDA 110", 
 "^ot:ottId": 953841, 
-"^ot:ottTaxonName": "Bradyrhizobium japonicum USDA 110"
+"^ot:ottTaxonName": "Bradyrhizobium diazoefficiens USDA 110"
 }, 
 "otu352116": {
 "^ot:originalLabel": "Rhodopseudomonas palustris TIE 1", 
@@ -1506,7 +1475,9 @@
 "^ot:ottTaxonName": "Acidobacteria"
 }, 
 "otu352175": {
-"^ot:originalLabel": "Solibacter usitatus Ellin6076"
+"^ot:originalLabel": "Solibacter usitatus Ellin6076", 
+"^ot:ottId": 51461, 
+"^ot:ottTaxonName": "Candidatus Solibacter usitatus Ellin6076"
 }, 
 "otu352176": {
 "^ot:originalLabel": "Geobacter sulfurreducens PCA", 
@@ -2061,9 +2032,7 @@
 "^ot:ottTaxonName": "Mycoplasma gallisepticum str. R"
 }, 
 "otu352298": {
-"^ot:originalLabel": "Mycoplasma mycoides subsp mycoides SC str PG1", 
-"^ot:ottId": 136772, 
-"^ot:ottTaxonName": "Mycoplasma mycoides subsp. mycoides SC"
+"^ot:originalLabel": "Mycoplasma mycoides subsp mycoides SC str PG1"
 }, 
 "otu352299": {
 "^ot:originalLabel": "Mycoplasma capricolum subsp capricolum ATCC 27343", 
@@ -2915,9 +2884,7 @@
 "^ot:ottTaxonName": "Saccharopolyspora erythraea NRRL 2338"
 }, 
 "otu352490": {
-"^ot:originalLabel": "Actinosynnema mirum", 
-"^ot:ottId": 590472, 
-"^ot:ottTaxonName": "Actinosynnema mirum"
+"^ot:originalLabel": "Actinosynnema mirum"
 }, 
 "otu352491": {
 "^ot:originalLabel": "Nakamurella multipartita", 
@@ -3194,7 +3161,9 @@
 "^ot:originalLabel": "Chloroflexus aurantiacus J 10 fl"
 }, 
 "otu352557": {
-"^ot:originalLabel": "Herpetosiphon aurantiacus ATCC 23779"
+"^ot:originalLabel": "Herpetosiphon aurantiacus ATCC 23779", 
+"^ot:ottId": 187093, 
+"^ot:ottTaxonName": "Herpetosiphon aurantiacus DSM 785"
 }, 
 "otu352558": {
 "^ot:originalLabel": "Sphaerobacter thermophilus", 
@@ -3290,9 +3259,14 @@
 "treeById": {
 "tree5227": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
 "^ot:branchLengthMode": "ot:substitutionCount", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "ml tree", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node905429", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node905429": {
 "edge905430": {

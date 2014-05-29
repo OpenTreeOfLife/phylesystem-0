@@ -19,48 +19,11 @@
 "@id": "peyotl-validator", 
 "@name": "validate_ot_nexson.py", 
 "@url": "https://github.com/OpenTreeOfLife/peyotl", 
-"@version": "0.0.3a", 
+"@version": "0.0.4a", 
 "invocation": {
-"checksPerformed": [
-"MISSING_MANDATORY_KEY", 
-"MISSING_OPTIONAL_KEY", 
-"UNRECOGNIZED_KEY", 
-"MISSING_LIST_EXPECTED", 
-"DUPLICATING_SINGLETON_KEY", 
-"REFERENCED_ID_NOT_FOUND", 
-"REPEATED_ID", 
-"REPEATED_OTU", 
-"MULTIPLE_ROOT_NODES", 
-"NO_ROOT_NODE", 
-"MULTIPLE_EDGES_FOR_NODES", 
-"CYCLE_DETECTED", 
-"DISCONNECTED_GRAPH_DETECTED", 
-"INCORRECT_ROOT_NODE_LABEL", 
-"TIP_WITHOUT_OTU", 
-"TIP_WITHOUT_OTT_ID", 
-"MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
-"NON_MONOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
-"INVALID_PROPERTY_VALUE", 
-"PROPERTY_VALUE_NOT_USEFUL", 
-"UNRECOGNIZED_PROPERTY_VALUE", 
-"MULTIPLE_TREES", 
-"UNRECOGNIZED_TAG", 
-"CONFLICTING_PROPERTY_VALUES", 
-"NO_TREES", 
-"DEPRECATED_PROPERTY", 
-"UNPARSEABLE_META", 
-"UNREACHABLE_NODE", 
-"INCORRECT_VALUE_TYPE", 
-"MISSING_CRUCIAL_CONTENT"
-], 
 "commandLine": [
 "--embed", 
-"--agent-only", 
-"-e", 
-"../mig-phyelesystem-scratch/2575/validation.json", 
-"-o", 
-"../mig-phyelesystem-scratch/2575/final.json", 
-"../mig-phyelesystem-scratch/2575/v1.2.1-2575.json"
+"--agent-only"
 ], 
 "otherProperty": [
 {
@@ -76,9 +39,16 @@
 }
 ]
 }, 
+"^ot:annotationEvents": {
+"annotation": []
+}, 
+"^ot:candidateTreeForSynthesis": [], 
 "^ot:curatorName": "Joseph Brown", 
 "^ot:focalClade": 1041547, 
 "^ot:focalCladeOTTTaxonName": "Passeriformes", 
+"^ot:messages": {
+"message": []
+}, 
 "^ot:otusElementOrder": [
 "otus2575"
 ], 
@@ -86,9 +56,11 @@
 "^ot:studyPublication": {
 "@href": "http://dx.doi.org/10.1093/sysbio/sys094"
 }, 
-"^ot:studyPublicationReference": "F. K. Barker, K. J. Burns, J. Klicka, S. M. Lanyon, I. J. Lovette. 2013. Going to extremes: contrasting rates of diversification in a recent radiation of New World passerine birds. Systematic Biology 62 (2): 298-320.", 
+"^ot:studyPublicationReference": "Barker, F. K., K. J. Burns, J. Klicka, S. M. Lanyon, I. J. Lovette. 2013. Going to extremes: contrasting rates of diversification in a recent radiation of New World passerine birds. Systematic Biology 62 (2): 298-320.", 
 "^ot:studyYear": 2013, 
-"^ot:tag": "ingroup added;", 
+"^ot:tag": [
+"ingroup added;"
+], 
 "^ot:treesElementOrder": [
 "trees2575"
 ], 
@@ -186,7 +158,9 @@
 "^ot:ottTaxonName": "Arremon taciturnus"
 }, 
 "otu378926": {
-"^ot:originalLabel": "Lysurus castaneiceps"
+"^ot:originalLabel": "Lysurus castaneiceps", 
+"^ot:ottId": 938824, 
+"^ot:ottTaxonName": "Arremon castaneiceps"
 }, 
 "otu378927": {
 "^ot:originalLabel": "Buarremon brunneinucha", 
@@ -329,7 +303,9 @@
 "^ot:ottTaxonName": "Geothlypis trichas"
 }, 
 "otu378955": {
-"^ot:originalLabel": "Oporornis tolmiei"
+"^ot:originalLabel": "Oporornis tolmiei", 
+"^ot:ottId": 3597226, 
+"^ot:ottTaxonName": "Geothlypis tolmiei"
 }, 
 "otu378956": {
 "^ot:originalLabel": "Limnothlypis swainsonii", 
@@ -352,10 +328,14 @@
 "^ot:ottTaxonName": "Setophaga ruticilla"
 }, 
 "otu378960": {
-"^ot:originalLabel": "Parula americana"
+"^ot:originalLabel": "Parula americana", 
+"^ot:ottId": 3597189, 
+"^ot:ottTaxonName": "Setophaga americana"
 }, 
 "otu378961": {
-"^ot:originalLabel": "Dendroica coronata"
+"^ot:originalLabel": "Dendroica coronata", 
+"^ot:ottId": 3597200, 
+"^ot:ottTaxonName": "Setophaga coronata"
 }, 
 "otu378962": {
 "^ot:originalLabel": "Basileuterus culicivorus", 
@@ -363,7 +343,9 @@
 "^ot:ottTaxonName": "Basileuterus culicivorus"
 }, 
 "otu378963": {
-"^ot:originalLabel": "Euthlypis lachrymosa"
+"^ot:originalLabel": "Euthlypis lachrymosa", 
+"^ot:ottId": 3597220, 
+"^ot:ottTaxonName": "Basileuterus lachrymosus"
 }, 
 "otu378964": {
 "^ot:originalLabel": "Myioborus pictus", 
@@ -371,7 +353,9 @@
 "^ot:ottTaxonName": "Myioborus pictus"
 }, 
 "otu378965": {
-"^ot:originalLabel": "Wilsonia canadensis"
+"^ot:originalLabel": "Wilsonia canadensis", 
+"^ot:ottId": 3597182, 
+"^ot:ottTaxonName": "Cardellina canadensis"
 }, 
 "otu378966": {
 "^ot:originalLabel": "Cardellina rubrifrons", 
@@ -379,7 +363,9 @@
 "^ot:ottTaxonName": "Cardellina rubrifrons"
 }, 
 "otu378967": {
-"^ot:originalLabel": "Ergaticus ruber"
+"^ot:originalLabel": "Ergaticus ruber", 
+"^ot:ottId": 3597183, 
+"^ot:ottTaxonName": "Cardellina rubra"
 }, 
 "otu378968": {
 "^ot:originalLabel": "Zeledonia coronata", 
@@ -792,7 +778,9 @@
 "^ot:ottTaxonName": "Heterospingus xanthopygius"
 }, 
 "otu379050": {
-"^ot:originalLabel": "Cyanicterus cyanicterus"
+"^ot:originalLabel": "Cyanicterus cyanicterus", 
+"^ot:ottId": 3599689, 
+"^ot:ottTaxonName": "Cyanicterus cyanicterus"
 }, 
 "otu379051": {
 "^ot:originalLabel": "Nemosia pileata", 
@@ -1046,11 +1034,15 @@
 "treeById": {
 "tree5974": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
 "^ot:branchLengthMode": "ot:time", 
 "^ot:branchLengthTimeUnit": "Myr", 
 "^ot:curatedType": "MCC species tree chronogram", 
 "^ot:inGroupClade": "node1013821", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node1013813", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node1013813": {
 "edge1013814": {

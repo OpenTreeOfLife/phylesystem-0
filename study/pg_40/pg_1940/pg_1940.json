@@ -19,48 +19,11 @@
 "@id": "peyotl-validator", 
 "@name": "validate_ot_nexson.py", 
 "@url": "https://github.com/OpenTreeOfLife/peyotl", 
-"@version": "0.0.3a", 
+"@version": "0.0.4a", 
 "invocation": {
-"checksPerformed": [
-"MISSING_MANDATORY_KEY", 
-"MISSING_OPTIONAL_KEY", 
-"UNRECOGNIZED_KEY", 
-"MISSING_LIST_EXPECTED", 
-"DUPLICATING_SINGLETON_KEY", 
-"REFERENCED_ID_NOT_FOUND", 
-"REPEATED_ID", 
-"REPEATED_OTU", 
-"MULTIPLE_ROOT_NODES", 
-"NO_ROOT_NODE", 
-"MULTIPLE_EDGES_FOR_NODES", 
-"CYCLE_DETECTED", 
-"DISCONNECTED_GRAPH_DETECTED", 
-"INCORRECT_ROOT_NODE_LABEL", 
-"TIP_WITHOUT_OTU", 
-"TIP_WITHOUT_OTT_ID", 
-"MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
-"NON_MONOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
-"INVALID_PROPERTY_VALUE", 
-"PROPERTY_VALUE_NOT_USEFUL", 
-"UNRECOGNIZED_PROPERTY_VALUE", 
-"MULTIPLE_TREES", 
-"UNRECOGNIZED_TAG", 
-"CONFLICTING_PROPERTY_VALUES", 
-"NO_TREES", 
-"DEPRECATED_PROPERTY", 
-"UNPARSEABLE_META", 
-"UNREACHABLE_NODE", 
-"INCORRECT_VALUE_TYPE", 
-"MISSING_CRUCIAL_CONTENT"
-], 
 "commandLine": [
 "--embed", 
-"--agent-only", 
-"-e", 
-"../mig-phyelesystem-scratch/1940/validation.json", 
-"-o", 
-"../mig-phyelesystem-scratch/1940/final.json", 
-"../mig-phyelesystem-scratch/1940/v1.2.1-1940.json"
+"--agent-only"
 ], 
 "otherProperty": [
 {
@@ -76,12 +39,19 @@
 }
 ]
 }, 
+"^ot:annotationEvents": {
+"annotation": []
+}, 
+"^ot:candidateTreeForSynthesis": [], 
 "^ot:curatorName": "Chris Owen", 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S10691"
 }, 
 "^ot:focalClade": 34905, 
 "^ot:focalCladeOTTTaxonName": "Drosophilidae", 
+"^ot:messages": {
+"message": []
+}, 
 "^ot:otusElementOrder": [
 "otus1940"
 ], 
@@ -89,8 +59,9 @@
 "^ot:studyPublication": {
 "@href": "http://dx.doi.org/10.1017/S001667231000008X"
 }, 
-"^ot:studyPublicationReference": "Van der linde K., Houle D., Spicer G.S., & Steppan S. 2010. A supermatrix-based molecular phylogeny of the family Drosophilidae. Genetics Research, 92(01): 25-38.", 
+"^ot:studyPublicationReference": "Van der Linde, K., Houle D., Spicer G.S., & Steppan S. 2010. A supermatrix-based molecular phylogeny of the family Drosophilidae. Genetics Research 92 (1): 25-38.", 
 "^ot:studyYear": 2010, 
+"^ot:tag": [], 
 "^ot:treesElementOrder": [
 "trees1940"
 ], 
@@ -427,6 +398,8 @@
 }, 
 "otu293366": {
 "^ot:originalLabel": "Drosophila eurypeza", 
+"^ot:ottId": 93070, 
+"^ot:ottTaxonName": "Drosophila eurypeza", 
 "^ot:treebaseOTUId": "Tl387295"
 }, 
 "otu293367": {
@@ -1151,6 +1124,8 @@
 }, 
 "otu293487": {
 "^ot:originalLabel": "Drosophila soonae", 
+"^ot:ottId": 221734, 
+"^ot:ottTaxonName": "Drosophila soonae", 
 "^ot:treebaseOTUId": "Tl387416"
 }, 
 "otu293488": {
@@ -1185,10 +1160,15 @@
 "treeById": {
 "tree3942": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
 "^ot:branchLengthMode": "ot:substitutionCount", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "Bayesian supplemental", 
 "^ot:inGroupClade": "node738781", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node738769", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node738769": {
 "edge738770": {
@@ -3700,9 +3680,15 @@
 }, 
 "tree3943": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "Fig. 3", 
-"^ot:inGroupClade": "node739128", 
+"^ot:inGroupClade": "node739127", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node739127", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node739127": {
 "edge739128": {
@@ -6165,10 +6151,15 @@
 }, 
 "tree3944": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
 "^ot:branchLengthMode": "ot:changesCount", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "Strict MP", 
 "^ot:inGroupClade": "node739488", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node739478", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node739478": {
 "edge739479": {

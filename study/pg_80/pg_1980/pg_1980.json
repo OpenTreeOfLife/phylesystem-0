@@ -19,48 +19,11 @@
 "@id": "peyotl-validator", 
 "@name": "validate_ot_nexson.py", 
 "@url": "https://github.com/OpenTreeOfLife/peyotl", 
-"@version": "0.0.3a", 
+"@version": "0.0.4a", 
 "invocation": {
-"checksPerformed": [
-"MISSING_MANDATORY_KEY", 
-"MISSING_OPTIONAL_KEY", 
-"UNRECOGNIZED_KEY", 
-"MISSING_LIST_EXPECTED", 
-"DUPLICATING_SINGLETON_KEY", 
-"REFERENCED_ID_NOT_FOUND", 
-"REPEATED_ID", 
-"REPEATED_OTU", 
-"MULTIPLE_ROOT_NODES", 
-"NO_ROOT_NODE", 
-"MULTIPLE_EDGES_FOR_NODES", 
-"CYCLE_DETECTED", 
-"DISCONNECTED_GRAPH_DETECTED", 
-"INCORRECT_ROOT_NODE_LABEL", 
-"TIP_WITHOUT_OTU", 
-"TIP_WITHOUT_OTT_ID", 
-"MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
-"NON_MONOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
-"INVALID_PROPERTY_VALUE", 
-"PROPERTY_VALUE_NOT_USEFUL", 
-"UNRECOGNIZED_PROPERTY_VALUE", 
-"MULTIPLE_TREES", 
-"UNRECOGNIZED_TAG", 
-"CONFLICTING_PROPERTY_VALUES", 
-"NO_TREES", 
-"DEPRECATED_PROPERTY", 
-"UNPARSEABLE_META", 
-"UNREACHABLE_NODE", 
-"INCORRECT_VALUE_TYPE", 
-"MISSING_CRUCIAL_CONTENT"
-], 
 "commandLine": [
 "--embed", 
-"--agent-only", 
-"-e", 
-"../mig-phyelesystem-scratch/1980/validation.json", 
-"-o", 
-"../mig-phyelesystem-scratch/1980/final.json", 
-"../mig-phyelesystem-scratch/1980/v1.2.1-1980.json"
+"--agent-only"
 ], 
 "otherProperty": [
 {
@@ -76,12 +39,19 @@
 }
 ]
 }, 
+"^ot:annotationEvents": {
+"annotation": []
+}, 
+"^ot:candidateTreeForSynthesis": [], 
 "^ot:curatorName": "Chris Owen", 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S1575"
 }, 
 "^ot:focalClade": 161887, 
 "^ot:focalCladeOTTTaxonName": "Calcarea", 
+"^ot:messages": {
+"message": []
+}, 
 "^ot:otusElementOrder": [
 "otus1980"
 ], 
@@ -89,8 +59,9 @@
 "^ot:studyPublication": {
 "@href": "http://dx.doi.org/10.1016/j.ympev.2006.04.016"
 }, 
-"^ot:studyPublicationReference": "Dohrmann M., Voigt O., Erpenbeck D., & Woerheide G. 2006. Non-monophyly of most supraspecific taxa of calcareous sponges (Porifera, Calcarea) revealed by increased taxon sampling and partitioned Bayesian analysis of ribosomal DNA. Molecular Phylogenetics and Evolution 40 (3): 830-843.", 
+"^ot:studyPublicationReference": "Dohrmann, M., Voigt O., Erpenbeck D., & Woerheide G. 2006. Non-monophyly of most supraspecific taxa of calcareous sponges (Porifera, Calcarea) revealed by increased taxon sampling and partitioned Bayesian analysis of ribosomal DNA. Molecular Phylogenetics and Evolution 40 (3): 830-843.", 
 "^ot:studyYear": 2006, 
+"^ot:tag": [], 
 "^ot:treesElementOrder": [
 "trees1980"
 ], 
@@ -145,6 +116,8 @@
 }, 
 "otu297693": {
 "^ot:originalLabel": "Saccharomyces cerevisiae", 
+"^ot:ottId": 908549, 
+"^ot:ottTaxonName": "Saccharomyces cerevisiae", 
 "^ot:treebaseOTUId": "Tl174257"
 }, 
 "otu297694": {
@@ -167,10 +140,14 @@
 }, 
 "otu297697": {
 "^ot:originalLabel": "Clathrina adusta", 
+"^ot:ottId": 343343, 
+"^ot:ottTaxonName": "Ernstia adusta", 
 "^ot:treebaseOTUId": "Tl32906"
 }, 
 "otu297698": {
 "^ot:originalLabel": "Clathrina helveola", 
+"^ot:ottId": 343336, 
+"^ot:ottTaxonName": "Clathrina wistariensis", 
 "^ot:treebaseOTUId": "Tl32907"
 }, 
 "otu297699": {
@@ -241,6 +218,8 @@
 }, 
 "otu297710": {
 "^ot:originalLabel": "Clathrina cerebrum", 
+"^ot:ottId": 606954, 
+"^ot:ottTaxonName": "Borojevia cerebrum", 
 "^ot:treebaseOTUId": "Tl32920"
 }, 
 "otu297711": {
@@ -406,10 +385,15 @@
 "treeById": {
 "tree4049": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
 "^ot:branchLengthMode": "ot:substitutionCount", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "Fig. 1 BI", 
 "^ot:inGroupClade": "node754480", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node754478", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node754478": {
 "edge754479": {
@@ -1024,10 +1008,15 @@
 }, 
 "tree4050": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
 "^ot:branchLengthMode": "ot:substitutionCount", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "Fig. 2 BI", 
 "^ot:inGroupClade": "node754576", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node754565", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node754565": {
 "edge754566": {
@@ -1677,10 +1666,15 @@
 }, 
 "tree4051": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
 "^ot:branchLengthMode": "ot:substitutionCount", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "Fig. 3 BI", 
 "^ot:inGroupClade": "node754667", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node754657", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
 "edgeBySourceId": {
 "node754657": {
 "edge754658": {
@@ -2330,9 +2324,14 @@
 }, 
 "tree6254": {
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "Fig. 3 BI", 
 "^ot:inGroupClade": "node1083696", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node1083694", 
+"^ot:specifiedRoot": "", 
 "^ot:tag": [
 "Choose me", 
 "ingroup added;"

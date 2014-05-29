@@ -15,57 +15,17 @@
 "^ot:agents": {
 "agent": [
 {
-"@description": "validator of NexSON constraints as well as constraints that would allow a study to be imported into the Open Tree of Life's phylogenetic synthesis tools", 
+"@description": "Open Tree NexSON validation", 
 "@id": "peyotl-validator", 
-"@name": "validate_ot_nexson.py", 
+"@name": "api.opentreeoflife.org/validate", 
 "@url": "https://github.com/OpenTreeOfLife/peyotl", 
-"@version": "0.0.3a", 
+"@version": "0.0.4a", 
 "invocation": {
-"checksPerformed": [
-"MISSING_MANDATORY_KEY", 
-"MISSING_OPTIONAL_KEY", 
-"UNRECOGNIZED_KEY", 
-"MISSING_LIST_EXPECTED", 
-"DUPLICATING_SINGLETON_KEY", 
-"REFERENCED_ID_NOT_FOUND", 
-"REPEATED_ID", 
-"REPEATED_OTU", 
-"MULTIPLE_ROOT_NODES", 
-"NO_ROOT_NODE", 
-"MULTIPLE_EDGES_FOR_NODES", 
-"CYCLE_DETECTED", 
-"DISCONNECTED_GRAPH_DETECTED", 
-"INCORRECT_ROOT_NODE_LABEL", 
-"TIP_WITHOUT_OTU", 
-"TIP_WITHOUT_OTT_ID", 
-"MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
-"NON_MONOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
-"INVALID_PROPERTY_VALUE", 
-"PROPERTY_VALUE_NOT_USEFUL", 
-"UNRECOGNIZED_PROPERTY_VALUE", 
-"MULTIPLE_TREES", 
-"UNRECOGNIZED_TAG", 
-"CONFLICTING_PROPERTY_VALUES", 
-"NO_TREES", 
-"DEPRECATED_PROPERTY", 
-"UNPARSEABLE_META", 
-"UNREACHABLE_NODE", 
-"INCORRECT_VALUE_TYPE", 
-"MISSING_CRUCIAL_CONTENT"
-], 
-"commandLine": [
-"--embed", 
-"--agent-only", 
-"-e", 
-"../mig-phyelesystem-scratch/2346/validation.json", 
-"-o", 
-"../mig-phyelesystem-scratch/2346/final.json", 
-"../mig-phyelesystem-scratch/2346/v1.2.1-2346.json"
-], 
+"commandLine": [], 
 "otherProperty": [
 {
 "name": "pythonVersion", 
-"value": "2.7.5+"
+"value": "2.7.3"
 }, 
 {
 "name": "pythonImplementation", 
@@ -76,6 +36,9 @@
 }
 ]
 }, 
+"^ot:annotationEvents": {
+"annotation": []
+}, 
 "^ot:curatorName": "Romina Gazis", 
 "^ot:focalClade": 633302, 
 "^ot:focalCladeOTTTaxonName": "Polyporales", 
@@ -83,7 +46,10 @@
 "otus2346"
 ], 
 "^ot:studyId": "2346", 
-"^ot:studyPublicationReference": "Binder M., Justo A., Riley R., Salamov A., L\u00f3pez-Gir\u00e1ldez F., Sj\u00f6kvist E., Copeland A., Foster B., Sun H., Larsson E., Larsson K.H., Townsend J., Grigoriev I.V. & Hibbett D.S. 2013. Phylogenetic and phylogenomic overview of the Polyporales. Mycologia (in press)", 
+"^ot:studyPublication": {
+"@href": "http://dx.doi.org/10.3852/13-003"
+}, 
+"^ot:studyPublicationReference": "Binder, M., Justo A., Riley R., Salamov A., L\u00f3pez-Gir\u00e1ldez F., Sj\u00f6kvist E., Copeland A., Foster B., Sun H., Larsson E., Larsson K.H., Townsend J., Grigoriev I.V. & Hibbett D.S. 2013. Phylogenetic and phylogenomic overview of the Polyporales. Mycologia 105 (6): 1350-1373.", 
 "^ot:studyYear": 2013, 
 "^ot:treesElementOrder": [
 "trees2346"
@@ -92,1764 +58,2195 @@
 "otus2346": {
 "otuById": {
 "otu332012": {
-"^ot:originalLabel": "Ceriporiopsis subrufa"
+"@label": "Pouzaroporia subrufa", 
+"^ot:originalLabel": "Ceriporiopsis subrufa", 
+"^ot:ottId": 5299596, 
+"^ot:ottTaxonName": "Pouzaroporia subrufa"
 }, 
 "otu332013": {
+"@label": "Atraporiella neotropica", 
 "^ot:originalLabel": "Atraporiella neotropica"
 }, 
 "otu332014": {
+"@label": "Junghuhnia nitida", 
 "^ot:originalLabel": "Junghuhnia nitida", 
 "^ot:ottId": 42233, 
 "^ot:ottTaxonName": "Junghuhnia nitida"
 }, 
 "otu332015": {
+"@label": "Steccherinum ochraceum", 
 "^ot:originalLabel": "Steccherinum ochraceum", 
 "^ot:ottId": 633641, 
 "^ot:ottTaxonName": "Steccherinum ochraceum"
 }, 
 "otu332016": {
+"@label": "Antrodiella formosana", 
 "^ot:originalLabel": "Antrodiella formosana", 
 "^ot:ottId": 67482, 
 "^ot:ottTaxonName": "Antrodiella formosana"
 }, 
 "otu332017": {
-"^ot:originalLabel": "Antrodiella americana"
+"@label": "Flaviporus americanus", 
+"^ot:originalLabel": "Antrodiella americana", 
+"^ot:ottId": 5299646, 
+"^ot:ottTaxonName": "Flaviporus americanus"
 }, 
 "otu332018": {
+"@label": "Antrodiella semisupina", 
 "^ot:originalLabel": "Antrodiella semisupina", 
 "^ot:ottId": 747624, 
 "^ot:ottTaxonName": "Antrodiella semisupina"
 }, 
 "otu332019": {
+"@label": "Antrodiella pallasii", 
 "^ot:originalLabel": "Antrodiella pallasii", 
 "^ot:ottId": 244092, 
 "^ot:ottTaxonName": "Antrodiella pallasii"
 }, 
 "otu332020": {
+"@label": "Steccherinum fimbriatum", 
 "^ot:originalLabel": "Steccherinum fimbriatum", 
 "^ot:ottId": 757346, 
 "^ot:ottTaxonName": "Steccherinum fimbriatum"
 }, 
 "otu332021": {
+"@label": "Ceriporiopsis balaenae", 
 "^ot:originalLabel": "Ceriporiopsis balaenae", 
 "^ot:ottId": 112858, 
 "^ot:ottTaxonName": "Ceriporiopsis balaenae"
 }, 
 "otu332022": {
+"@label": "Ceriporiopsis consobrina", 
 "^ot:originalLabel": "Ceriporiopsis consobrina", 
 "^ot:ottId": 112892, 
 "^ot:ottTaxonName": "Ceriporiopsis consobrina"
 }, 
 "otu332023": {
-"^ot:originalLabel": "Antrodiella liebmannii"
+"@label": "Flaviporus liebmannii", 
+"^ot:originalLabel": "Antrodiella liebmannii", 
+"^ot:ottId": 684031, 
+"^ot:ottTaxonName": "Flaviporus liebmannii"
 }, 
 "otu332024": {
+"@label": "Nigroporus vinosus", 
 "^ot:originalLabel": "Nigroporus vinosus", 
 "^ot:ottId": 339755, 
 "^ot:ottTaxonName": "Nigroporus vinosus"
 }, 
 "otu332025": {
+"@label": "Xanthoporus syringae", 
 "^ot:originalLabel": "Xanthoporus syringae"
 }, 
 "otu332026": {
-"^ot:originalLabel": "Phlebia queletii"
+"@label": "Cabalodontia queletii", 
+"^ot:originalLabel": "Phlebia queletii", 
+"^ot:ottId": 5299726, 
+"^ot:ottTaxonName": "Cabalodontia queletii"
 }, 
 "otu332027": {
+"@label": "Steccherinum robustius", 
 "^ot:originalLabel": "Steccherinum robustius", 
 "^ot:ottId": 380136, 
 "^ot:ottTaxonName": "Steccherinum robustius"
 }, 
 "otu332028": {
+"@label": "Rigidoporus sanguinolentus", 
 "^ot:originalLabel": "Physisporinus sanguinolentus", 
 "^ot:ottId": 929192, 
 "^ot:ottTaxonName": "Rigidoporus sanguinolentus"
 }, 
 "otu332029": {
+"@label": "Meripilus giganteus", 
 "^ot:originalLabel": "Meripilus giganteus", 
 "^ot:ottId": 926813, 
 "^ot:ottTaxonName": "Meripilus giganteus"
 }, 
 "otu332030": {
+"@label": "Physisporinus vitreus", 
 "^ot:originalLabel": "Physisporinus vitreus", 
 "^ot:ottId": 1090307, 
 "^ot:ottTaxonName": "Physisporinus vitreus"
 }, 
 "otu332031": {
+"@label": "Rigidoporus vinctus", 
 "^ot:originalLabel": "Rigidoporus vinctus", 
 "^ot:ottId": 668091, 
 "^ot:ottTaxonName": "Rigidoporus vinctus"
 }, 
 "otu332032": {
+"@label": "Rigidoporus microporus", 
 "^ot:originalLabel": "Rigidoporus microporus", 
 "^ot:ottId": 1092244, 
 "^ot:ottTaxonName": "Rigidoporus microporus"
 }, 
 "otu332033": {
+"@label": "Climacocystis borealis", 
 "^ot:originalLabel": "Climacocystis borealis", 
 "^ot:ottId": 1013903, 
 "^ot:ottTaxonName": "Climacocystis borealis"
 }, 
 "otu332034": {
-"^ot:originalLabel": "Phlebia bresadolae"
+"@label": "Cabalodontia bresadolae", 
+"^ot:originalLabel": "Phlebia bresadolae", 
+"^ot:ottId": 5299725, 
+"^ot:ottTaxonName": "Cabalodontia bresadolae"
 }, 
 "otu332035": {
+"@label": "Diplomitoporus crustulinus", 
 "^ot:originalLabel": "Diplomitoporus crustulinus", 
 "^ot:ottId": 93286, 
 "^ot:ottTaxonName": "Diplomitoporus crustulinus"
 }, 
 "otu332036": {
+"@label": "Diplomitoporus flavescens", 
 "^ot:originalLabel": "Diplomitoporus flavescens", 
 "^ot:ottId": 96729, 
 "^ot:ottTaxonName": "Diplomitoporus flavescens"
 }, 
 "otu332037": {
+"@label": "Podoscypha venustula", 
 "^ot:originalLabel": "Podoscypha venustula", 
 "^ot:ottId": 932437, 
 "^ot:ottTaxonName": "Podoscypha venustula"
 }, 
 "otu332038": {
+"@label": "Podoscypha petalodes", 
 "^ot:originalLabel": "Podoscypha petalodes", 
 "^ot:ottId": 598128, 
 "^ot:ottTaxonName": "Podoscypha petalodes"
 }, 
 "otu332039": {
+"@label": "Podoscypha parvula", 
 "^ot:originalLabel": "Podoscypha parvula", 
 "^ot:ottId": 811596, 
 "^ot:ottTaxonName": "Podoscypha parvula"
 }, 
 "otu332040": {
+"@label": "Podoscypha multizonata", 
 "^ot:originalLabel": "Podoscypha multizonata", 
 "^ot:ottId": 956316, 
 "^ot:ottTaxonName": "Podoscypha multizonata"
 }, 
 "otu332041": {
+"@label": "Abortiporus biennis", 
 "^ot:originalLabel": "Abortiporus biennis", 
 "^ot:ottId": 540446, 
 "^ot:ottTaxonName": "Abortiporus biennis"
 }, 
 "otu332042": {
+"@label": "Hypochnicium michelii", 
 "^ot:originalLabel": "Hypochnicium michelii", 
 "^ot:ottId": 921299, 
 "^ot:ottTaxonName": "Hypochnicium michelii"
 }, 
 "otu332043": {
+"@label": "Hypochnicium cremicolor", 
 "^ot:originalLabel": "Hypochnicium cremicolor", 
 "^ot:ottId": 52712, 
 "^ot:ottTaxonName": "Hypochnicium cremicolor"
 }, 
 "otu332044": {
+"@label": "Hypochnicium eichleri", 
 "^ot:originalLabel": "Hypochnicium eichleri", 
 "^ot:ottId": 552032, 
 "^ot:ottTaxonName": "Hypochnicium eichleri"
 }, 
 "otu332045": {
+"@label": "Hypochnicium wakefieldiae", 
 "^ot:originalLabel": "Hypochnicium wakefieldiae", 
 "^ot:ottId": 625593, 
 "^ot:ottTaxonName": "Hypochnicium wakefieldiae"
 }, 
 "otu332046": {
+"@label": "Hypochnicium erikssonii", 
 "^ot:originalLabel": "Hypochnicium erikssonii", 
 "^ot:ottId": 746178, 
 "^ot:ottTaxonName": "Hypochnicium erikssonii"
 }, 
 "otu332047": {
+"@label": "Hypochnicium subrigescens", 
 "^ot:originalLabel": "Hypochnicium subrigescens", 
 "^ot:ottId": 625592, 
 "^ot:ottTaxonName": "Hypochnicium subrigescens"
 }, 
 "otu332048": {
+"@label": "Hypochnicium geogenium", 
 "^ot:originalLabel": "Hypochnicium geogenium", 
 "^ot:ottId": 552031, 
 "^ot:ottTaxonName": "Hypochnicium geogenium"
 }, 
 "otu332049": {
+"@label": "Hypochnicium polonense", 
 "^ot:originalLabel": "Hypochnicium polonense"
 }, 
 "otu332050": {
+"@label": "Bulbillomyces farinosus", 
 "^ot:originalLabel": "Bulbillomyces farinosus", 
 "^ot:ottId": 30825, 
 "^ot:ottTaxonName": "Bulbillomyces farinosus"
 }, 
 "otu332051": {
+"@label": "Hypochnicium lyndoniae", 
 "^ot:originalLabel": "Hypochnicium lyndoniae", 
 "^ot:ottId": 350514, 
 "^ot:ottTaxonName": "Hypochnicium lyndoniae"
 }, 
 "otu332052": {
-"^ot:originalLabel": "Hypochnicium karstenii"
+"@label": "Hypochnicium multiforme", 
+"^ot:originalLabel": "Hypochnicium karstenii", 
+"^ot:ottId": 5299653, 
+"^ot:ottTaxonName": "Hypochnicium multiforme"
 }, 
 "otu332053": {
+"@label": "Hyphoderma heterocystidiatum", 
 "^ot:originalLabel": "Hyphoderma heterocystidiatum"
 }, 
 "otu332054": {
+"@label": "Hyphoderma incrustatum", 
 "^ot:originalLabel": "Hyphoderma incrustatum", 
 "^ot:ottId": 676840, 
 "^ot:ottTaxonName": "Hyphoderma incrustatum"
 }, 
 "otu332055": {
+"@label": "Hyphoderma cremeoalbum", 
 "^ot:originalLabel": "Hyphoderma cremeoalbum", 
 "^ot:ottId": 222558, 
 "^ot:ottTaxonName": "Hyphoderma cremeoalbum"
 }, 
 "otu332056": {
+"@label": "Hyphoderma setigerum", 
 "^ot:originalLabel": "Hyphoderma setigerum", 
 "^ot:ottId": 134676, 
 "^ot:ottTaxonName": "Hyphoderma setigerum"
 }, 
 "otu332057": {
+"@label": "Hyphoderma definitum", 
 "^ot:originalLabel": "Hyphoderma definitum", 
 "^ot:ottId": 134674, 
 "^ot:ottTaxonName": "Hyphoderma definitum"
 }, 
 "otu332058": {
+"@label": "Hyphoderma occidentale", 
 "^ot:originalLabel": "Hyphoderma occidentale", 
 "^ot:ottId": 676837, 
 "^ot:ottTaxonName": "Hyphoderma occidentale"
 }, 
 "otu332059": {
+"@label": "Hyphoderma litschaueri", 
 "^ot:originalLabel": "Hyphoderma litschaueri", 
 "^ot:ottId": 222557, 
 "^ot:ottTaxonName": "Hyphoderma litschaueri"
 }, 
 "otu332060": {
+"@label": "Hyphoderma nemorale", 
 "^ot:originalLabel": "Hyphoderma nemorale", 
 "^ot:ottId": 676839, 
 "^ot:ottTaxonName": "Hyphoderma nemorale"
 }, 
 "otu332061": {
+"@label": "Mutatoderma mutatum", 
 "^ot:originalLabel": "Hyphoderma mutatum", 
 "^ot:ottId": 222554, 
 "^ot:ottTaxonName": "Mutatoderma mutatum"
 }, 
 "otu332062": {
+"@label": "Hyphoderma medioburiense", 
 "^ot:originalLabel": "Hyphoderma medioburiense", 
 "^ot:ottId": 222553, 
 "^ot:ottTaxonName": "Hyphoderma medioburiense"
 }, 
 "otu332063": {
+"@label": "Hyphoderma obtusum", 
 "^ot:originalLabel": "Hyphoderma obtusum", 
 "^ot:ottId": 676838, 
 "^ot:ottTaxonName": "Hyphoderma obtusum"
 }, 
 "otu332064": {
+"@label": "Hyphoderma roseocremeum", 
 "^ot:originalLabel": "Hyphoderma roseocremeum", 
 "^ot:ottId": 676845, 
 "^ot:ottTaxonName": "Hyphoderma roseocremeum"
 }, 
 "otu332065": {
+"@label": "Panus ciliatus", 
 "^ot:originalLabel": "Panus ciliatus", 
 "^ot:ottId": 1093204, 
 "^ot:ottTaxonName": "Panus ciliatus"
 }, 
 "otu332066": {
-"^ot:originalLabel": "Panus fasciatus"
+"@label": "Lentinus fasciatus", 
+"^ot:originalLabel": "Panus fasciatus", 
+"^ot:ottId": 5299806, 
+"^ot:ottTaxonName": "Lentinus fasciatus"
 }, 
 "otu332067": {
+"@label": "Panus lecomtei", 
 "^ot:originalLabel": "Panus lecomtei"
 }, 
 "otu332068": {
+"@label": "Panus rudis", 
 "^ot:originalLabel": "Panus rudis"
 }, 
 "otu332069": {
+"@label": "Panus conchatus", 
 "^ot:originalLabel": "Panus conchatus", 
 "^ot:ottId": 414777, 
 "^ot:ottTaxonName": "Panus conchatus"
 }, 
 "otu332070": {
-"^ot:originalLabel": "Panus velutinus"
+"@label": "Lentinus velutinus", 
+"^ot:originalLabel": "Panus velutinus", 
+"^ot:ottId": 685635, 
+"^ot:ottTaxonName": "Lentinus velutinus"
 }, 
 "otu332071": {
-"^ot:originalLabel": "Panus fulvus"
+"@label": "Lentinus velutinus", 
+"^ot:originalLabel": "Panus fulvus", 
+"^ot:ottId": 685635, 
+"^ot:ottTaxonName": "Lentinus velutinus"
 }, 
 "otu332072": {
+"@label": "Panus similis", 
 "^ot:originalLabel": "Panus similis", 
 "^ot:ottId": 1093202, 
 "^ot:ottTaxonName": "Panus similis"
 }, 
 "otu332073": {
+"@label": "Panus strigellus", 
 "^ot:originalLabel": "Panus strigellus", 
 "^ot:ottId": 1093203, 
 "^ot:ottTaxonName": "Panus strigellus"
 }, 
 "otu332074": {
+"@label": "Pseudolagarobasidium acaciicola", 
 "^ot:originalLabel": "Pseudolagarobasidium acaciicola", 
 "^ot:ottId": 173860, 
 "^ot:ottTaxonName": "Pseudolagarobasidium acaciicola"
 }, 
 "otu332075": {
-"^ot:originalLabel": "Pseudolagarobasidium subvinosum"
+"@label": "Radulodon subvinosus", 
+"^ot:originalLabel": "Pseudolagarobasidium subvinosum", 
+"^ot:ottId": 5299720, 
+"^ot:ottTaxonName": "Radulodon subvinosus"
 }, 
 "otu332076": {
+"@label": "Pseudolagarobasidium calcareum", 
 "^ot:originalLabel": "Pseudolagarobasidium calcareum", 
 "^ot:ottId": 745696, 
 "^ot:ottTaxonName": "Pseudolagarobasidium calcareum"
 }, 
 "otu332077": {
+"@label": "Cerrena unicolor", 
 "^ot:originalLabel": "Cerrena unicolor", 
 "^ot:ottId": 207834, 
 "^ot:ottTaxonName": "Cerrena unicolor"
 }, 
 "otu332078": {
+"@label": "Irpex consors", 
 "^ot:originalLabel": "Cerrena consors", 
 "^ot:ottId": 907830, 
 "^ot:ottTaxonName": "Irpex consors"
 }, 
 "otu332079": {
+"@label": "Cerrena aurantipora", 
 "^ot:originalLabel": "Cerrena aurantipora"
 }, 
 "otu332080": {
+"@label": "Radulodon americanus", 
 "^ot:originalLabel": "Radulodon americanus", 
 "^ot:ottId": 488371, 
 "^ot:ottTaxonName": "Radulodon americanus"
 }, 
 "otu332081": {
+"@label": "Radulodon erikssonii", 
 "^ot:originalLabel": "Radulodon erikssonii", 
 "^ot:ottId": 116798, 
 "^ot:ottTaxonName": "Radulodon erikssonii"
 }, 
 "otu332082": {
-"^ot:originalLabel": "Spongipellis pachyodon"
+"@label": "Sarcodontia pachyodon", 
+"^ot:originalLabel": "Spongipellis pachyodon", 
+"^ot:ottId": 5299677, 
+"^ot:ottTaxonName": "Sarcodontia pachyodon"
 }, 
 "otu332083": {
-"^ot:originalLabel": "Spongipellis delectans"
+"@label": "Sarcodontia delectans", 
+"^ot:originalLabel": "Spongipellis delectans", 
+"^ot:ottId": 5299676, 
+"^ot:ottTaxonName": "Sarcodontia delectans"
 }, 
 "otu332084": {
+"@label": "Spongipellis litschaueri", 
 "^ot:originalLabel": "Spongipellis litschaueri", 
 "^ot:ottId": 1046118, 
 "^ot:ottTaxonName": "Spongipellis litschaueri"
 }, 
 "otu332085": {
+"@label": "Spongipellis unicolor", 
 "^ot:originalLabel": "Spongipellis unicolor", 
 "^ot:ottId": 581160, 
 "^ot:ottTaxonName": "Spongipellis unicolor"
 }, 
 "otu332086": {
-"^ot:originalLabel": "Spongipellis spumeus"
+"@label": "Sarcodontia spumea", 
+"^ot:originalLabel": "Spongipellis spumeus", 
+"^ot:ottId": 5299678, 
+"^ot:ottTaxonName": "Sarcodontia spumea"
 }, 
 "otu332087": {
+"@label": "Lenzites elegans", 
 "^ot:originalLabel": "Trametes elegans", 
 "^ot:ottId": 151453, 
 "^ot:ottTaxonName": "Lenzites elegans"
 }, 
 "otu332088": {
+"@label": "Trametes ljubarskyi", 
 "^ot:originalLabel": "Trametes ljubarskii", 
 "^ot:ottId": 59123, 
 "^ot:ottTaxonName": "Trametes ljubarskyi"
 }, 
 "otu332089": {
+"@label": "Trametes cubensis", 
 "^ot:originalLabel": "Trametes cubensis", 
 "^ot:ottId": 25232, 
 "^ot:ottTaxonName": "Trametes cubensis"
 }, 
 "otu332090": {
+"@label": "Pycnoporus cinnabarinus", 
 "^ot:originalLabel": "Trametes cinnabarina", 
 "^ot:ottId": 715747, 
 "^ot:ottTaxonName": "Pycnoporus cinnabarinus"
 }, 
 "otu332091": {
+"@label": "Pycnoporus puniceus", 
 "^ot:originalLabel": "Trametes punicea", 
 "^ot:ottId": 228595, 
 "^ot:ottTaxonName": "Pycnoporus puniceus"
 }, 
 "otu332092": {
+"@label": "Pycnoporus sanguineus", 
 "^ot:originalLabel": "Trametes sanguinea", 
 "^ot:ottId": 365511, 
 "^ot:ottTaxonName": "Pycnoporus sanguineus"
 }, 
 "otu332093": {
+"@label": "Trametes maxima", 
 "^ot:originalLabel": "Trametes maxima", 
 "^ot:ottId": 168990, 
 "^ot:ottTaxonName": "Trametes maxima"
 }, 
 "otu332094": {
-"^ot:originalLabel": "Trametes aff maxima", 
-"^ot:ottId": 205112, 
-"^ot:ottTaxonName": "Trametes"
+"@label": "Trametes aff maxima", 
+"^ot:originalLabel": "Trametes aff maxima"
 }, 
 "otu332095": {
+"@label": "Trametes villosa", 
 "^ot:originalLabel": "Trametes villosa", 
 "^ot:ottId": 136855, 
 "^ot:ottTaxonName": "Trametes villosa"
 }, 
 "otu332096": {
+"@label": "Trametes hirsuta", 
 "^ot:originalLabel": "Trametes hirsuta", 
 "^ot:ottId": 581130, 
 "^ot:ottTaxonName": "Trametes hirsuta"
 }, 
 "otu332097": {
+"@label": "Trametes junipericola", 
 "^ot:originalLabel": "Trametes junipericola", 
 "^ot:ottId": 1090845, 
 "^ot:ottTaxonName": "Trametes junipericola"
 }, 
 "otu332098": {
+"@label": "Trametes suaveolens", 
 "^ot:originalLabel": "Trametes suaveolens", 
 "^ot:ottId": 1044752, 
 "^ot:ottTaxonName": "Trametes suaveolens"
 }, 
 "otu332099": {
+"@label": "Trametes ochracea", 
 "^ot:originalLabel": "Trametes ochracea", 
 "^ot:ottId": 301277, 
 "^ot:ottTaxonName": "Trametes ochracea"
 }, 
 "otu332100": {
+"@label": "Trametes ectypa", 
 "^ot:originalLabel": "Trametes ectypa", 
 "^ot:ottId": 792832, 
 "^ot:ottTaxonName": "Trametes ectypa"
 }, 
 "otu332101": {
+"@label": "Trametes versicolor", 
 "^ot:originalLabel": "Trametes versicolor", 
 "^ot:ottId": 581141, 
 "^ot:ottTaxonName": "Trametes versicolor"
 }, 
 "otu332102": {
+"@label": "Trametes pubescens", 
 "^ot:originalLabel": "Trametes pubescens", 
 "^ot:ottId": 359653, 
 "^ot:ottTaxonName": "Trametes pubescens"
 }, 
 "otu332103": {
-"^ot:originalLabel": "Trametes conchifer"
+"@label": "Poronidulus conchifer", 
+"^ot:originalLabel": "Trametes conchifer", 
+"^ot:ottId": 5299865, 
+"^ot:ottTaxonName": "Poronidulus conchifer"
 }, 
 "otu332104": {
+"@label": "Funalia polyzona", 
 "^ot:originalLabel": "Trametes polyzona", 
 "^ot:ottId": 950790, 
 "^ot:ottTaxonName": "Funalia polyzona"
 }, 
 "otu332105": {
+"@label": "Trametes membranacea", 
 "^ot:originalLabel": "Trametes membranacea", 
 "^ot:ottId": 128892, 
 "^ot:ottTaxonName": "Trametes membranacea"
 }, 
 "otu332106": {
+"@label": "Trametes pocas", 
 "^ot:originalLabel": "Trametes pocas", 
 "^ot:ottId": 149870, 
 "^ot:ottTaxonName": "Trametes pocas"
 }, 
 "otu332107": {
+"@label": "Trametes pavonia", 
 "^ot:originalLabel": "Trametes pavonia", 
 "^ot:ottId": 703243, 
 "^ot:ottTaxonName": "Trametes pavonia"
 }, 
 "otu332108": {
+"@label": "Lenzites betulina", 
 "^ot:originalLabel": "Trametes betulina", 
 "^ot:ottId": 343984, 
 "^ot:ottTaxonName": "Lenzites betulina"
 }, 
 "otu332109": {
+"@label": "Trametes gibbosa", 
 "^ot:originalLabel": "Trametes gibbosa", 
 "^ot:ottId": 344997, 
 "^ot:ottTaxonName": "Trametes gibbosa"
 }, 
 "otu332110": {
+"@label": "Lignosus", 
 "^ot:originalLabel": "Lignosus hainanensis", 
 "^ot:ottId": 697840, 
 "^ot:ottTaxonName": "Lignosus"
 }, 
 "otu332111": {
+"@label": "Polyporus tricholoma", 
 "^ot:originalLabel": "Polyporus tricholoma", 
 "^ot:ottId": 240630, 
 "^ot:ottTaxonName": "Polyporus tricholoma"
 }, 
 "otu332112": {
+"@label": "Lentinus tigrinus", 
 "^ot:originalLabel": "Lentinus tigrinus", 
 "^ot:ottId": 685638, 
 "^ot:ottTaxonName": "Lentinus tigrinus"
 }, 
 "otu332113": {
+"@label": "Lentinus squarrosulus", 
 "^ot:originalLabel": "Lentinus squarrosulus", 
 "^ot:ottId": 972287, 
 "^ot:ottTaxonName": "Lentinus squarrosulus"
 }, 
 "otu332114": {
+"@label": "Polyporus brumalis", 
 "^ot:originalLabel": "Polyporus brumalis", 
 "^ot:ottId": 1006004, 
 "^ot:ottTaxonName": "Polyporus brumalis"
 }, 
 "otu332115": {
+"@label": "Polyporus ciliatus", 
 "^ot:originalLabel": "Polyporus ciliatus", 
 "^ot:ottId": 787810, 
 "^ot:ottTaxonName": "Polyporus ciliatus"
 }, 
 "otu332116": {
+"@label": "Polyporus arcularius", 
 "^ot:originalLabel": "Polyporus arcularius", 
 "^ot:ottId": 343966, 
 "^ot:ottTaxonName": "Polyporus arcularius"
 }, 
 "otu332117": {
+"@label": "Polyporus rhizophilus", 
 "^ot:originalLabel": "Polyporus rhizophilus", 
 "^ot:ottId": 897896, 
 "^ot:ottTaxonName": "Polyporus rhizophilus"
 }, 
 "otu332118": {
+"@label": "Polyporus meridionalis", 
 "^ot:originalLabel": "Polyporus meridionalis", 
 "^ot:ottId": 273471, 
 "^ot:ottTaxonName": "Polyporus meridionalis"
 }, 
 "otu332119": {
+"@label": "Lentinus crinitus", 
 "^ot:originalLabel": "Lentinus crinitus", 
 "^ot:ottId": 162654, 
 "^ot:ottTaxonName": "Lentinus crinitus"
 }, 
 "otu332120": {
+"@label": "Lentinus bertieri", 
 "^ot:originalLabel": "Lentinus bertieri"
 }, 
 "otu332121": {
+"@label": "Lentinus swartzii", 
 "^ot:originalLabel": "Lentinus swartzii", 
 "^ot:ottId": 566668, 
 "^ot:ottTaxonName": "Lentinus swartzii"
 }, 
 "otu332122": {
+"@label": "Hexagonia hydnoides", 
 "^ot:originalLabel": "Hexagonia hydnoides", 
 "^ot:ottId": 746235, 
 "^ot:ottTaxonName": "Hexagonia hydnoides"
 }, 
 "otu332123": {
+"@label": "Fomitella rhodophaea", 
 "^ot:originalLabel": "Fomitopsis rhodophaea", 
 "^ot:ottId": 67480, 
 "^ot:ottTaxonName": "Fomitella rhodophaea"
 }, 
 "otu332124": {
+"@label": "Microporus xanthopus", 
 "^ot:originalLabel": "Microporus xanthopus", 
 "^ot:ottId": 56884, 
 "^ot:ottTaxonName": "Microporus xanthopus"
 }, 
 "otu332125": {
+"@label": "Microporus vernicipes", 
 "^ot:originalLabel": "Microporus vernicipes", 
 "^ot:ottId": 801662, 
 "^ot:ottTaxonName": "Microporus vernicipes"
 }, 
 "otu332126": {
+"@label": "Microporus affinis", 
 "^ot:originalLabel": "Microporus affinis", 
 "^ot:ottId": 597553, 
 "^ot:ottTaxonName": "Microporus affinis"
 }, 
 "otu332127": {
+"@label": "Earliella scabrosa", 
 "^ot:originalLabel": "Earliella scabrosa", 
 "^ot:ottId": 950798, 
 "^ot:ottTaxonName": "Earliella scabrosa"
 }, 
 "otu332128": {
+"@label": "Trametes hirta", 
 "^ot:originalLabel": "Hexagonia hirta", 
 "^ot:ottId": 950804, 
-"^ot:ottTaxonName": "Hexagonia hirta"
+"^ot:ottTaxonName": "Trametes hirta"
 }, 
 "otu332129": {
+"@label": "Hexagonia pobeguinii", 
 "^ot:originalLabel": "Hexagonia pobeguinii", 
 "^ot:ottId": 950805, 
 "^ot:ottTaxonName": "Hexagonia pobeguinii"
 }, 
 "otu332130": {
+"@label": "Fomes fomentarius", 
 "^ot:originalLabel": "Fomes fomentarius", 
 "^ot:ottId": 518286, 
 "^ot:ottTaxonName": "Fomes fomentarius"
 }, 
 "otu332131": {
+"@label": "Lignosus rhinocerus", 
 "^ot:originalLabel": "Lignosus rhinocerus", 
 "^ot:ottId": 1036932, 
 "^ot:ottTaxonName": "Lignosus rhinocerus"
 }, 
 "otu332132": {
+"@label": "Hexagonia tenuis", 
 "^ot:originalLabel": "Hexagonia tenuis", 
 "^ot:ottId": 597555, 
 "^ot:ottTaxonName": "Hexagonia tenuis"
 }, 
 "otu332133": {
-"^ot:originalLabel": "Hexagonia apiaria", 
-"^ot:ottId": 597551, 
-"^ot:ottTaxonName": "Hexagonia apiaria"
+"@label": "Hexagonia apiaria", 
+"^ot:originalLabel": "Hexagonia apiaria"
 }, 
 "otu332134": {
+"@label": "Daedaleopsis confragosa", 
 "^ot:originalLabel": "Daedaleopsis confragosa", 
 "^ot:ottId": 1077893, 
 "^ot:ottTaxonName": "Daedaleopsis confragosa"
 }, 
 "otu332135": {
-"^ot:originalLabel": "Coriolopsis sanguinaria"
+"@label": "Polyporus rugulosus", 
+"^ot:originalLabel": "Coriolopsis sanguinaria", 
+"^ot:ottId": 5299961, 
+"^ot:ottTaxonName": "Polyporus rugulosus"
 }, 
 "otu332136": {
+"@label": "Coriolopsis aspera", 
 "^ot:originalLabel": "Coriolopsis aspera", 
 "^ot:ottId": 597547, 
 "^ot:ottTaxonName": "Coriolopsis aspera"
 }, 
 "otu332137": {
+"@label": "Trametes trogii", 
 "^ot:originalLabel": "Coriolopsis trogii", 
 "^ot:ottId": 188639, 
 "^ot:ottTaxonName": "Trametes trogii"
 }, 
 "otu332138": {
+"@label": "Coriolopsis gallica", 
 "^ot:originalLabel": "Coriolopsis gallica", 
 "^ot:ottId": 241122, 
 "^ot:ottTaxonName": "Coriolopsis gallica"
 }, 
 "otu332139": {
+"@label": "Megasporoporia setulosa", 
 "^ot:originalLabel": "Megasporoporia setulosa", 
 "^ot:ottId": 567396, 
 "^ot:ottTaxonName": "Megasporoporia setulosa"
 }, 
 "otu332140": {
+"@label": "Grammothele fuligo", 
 "^ot:originalLabel": "Grammothele fuligo", 
 "^ot:ottId": 364989, 
 "^ot:ottTaxonName": "Grammothele fuligo"
 }, 
 "otu332141": {
+"@label": "Epithele macarangae", 
 "^ot:originalLabel": "Epithele macarangae", 
 "^ot:ottId": 793277, 
 "^ot:ottTaxonName": "Epithele macarangae"
 }, 
 "otu332142": {
+"@label": "Epithele typhae", 
 "^ot:originalLabel": "Epithele typhae", 
 "^ot:ottId": 39814, 
 "^ot:ottTaxonName": "Epithele typhae"
 }, 
 "otu332143": {
+"@label": "Porogramme albocincta", 
 "^ot:originalLabel": "Porogramme albocincta", 
 "^ot:ottId": 4098878, 
 "^ot:ottTaxonName": "Porogramme albocincta"
 }, 
 "otu332144": {
+"@label": "Polyporus grammocephalus", 
 "^ot:originalLabel": "Polyporus grammocephalus", 
 "^ot:ottId": 273470, 
 "^ot:ottTaxonName": "Polyporus grammocephalus"
 }, 
 "otu332145": {
+"@label": "Polyporus pseudobetulinus", 
 "^ot:originalLabel": "Polyporus pseudobetulinus"
 }, 
 "otu332146": {
-"^ot:originalLabel": "Polyporus tenuiculus"
+"@label": "Favolus tenuiculus", 
+"^ot:originalLabel": "Polyporus tenuiculus", 
+"^ot:ottId": 5299751, 
+"^ot:ottTaxonName": "Favolus tenuiculus"
 }, 
 "otu332147": {
-"^ot:originalLabel": "Polyporus alveolaris", 
-"^ot:ottId": 357070, 
-"^ot:ottTaxonName": "Neofavolus alveolaris"
+"@label": "Polyporus alveolaris", 
+"^ot:originalLabel": "Polyporus alveolaris"
 }, 
 "otu332148": {
+"@label": "Polyporus udus", 
 "^ot:originalLabel": "Polyporus udus", 
 "^ot:ottId": 802578, 
 "^ot:ottTaxonName": "Polyporus udus"
 }, 
 "otu332149": {
-"^ot:originalLabel": "Megasporoporia cavernulosa", 
-"^ot:ottId": 169068, 
-"^ot:ottTaxonName": "Megasporoporiella cavernulosa"
+"@label": "Megasporoporia cavernulosa", 
+"^ot:originalLabel": "Megasporoporia cavernulosa"
 }, 
 "otu332150": {
+"@label": "Dichomitus campestris", 
 "^ot:originalLabel": "Dichomitus campestris", 
 "^ot:ottId": 699692, 
 "^ot:ottTaxonName": "Dichomitus campestris"
 }, 
 "otu332151": {
+"@label": "Dichomitus gunnii", 
 "^ot:originalLabel": "Dichomitus gunnii"
 }, 
 "otu332152": {
-"^ot:originalLabel": "Polyporus badius"
+"@label": "Polyporus badius", 
+"^ot:originalLabel": "Polyporus badius", 
+"^ot:ottId": 5300029, 
+"^ot:ottTaxonName": "Polyporus badius"
 }, 
 "otu332153": {
+"@label": "Polyporus tubaeformis", 
 "^ot:originalLabel": "Polyporus tubiformis", 
 "^ot:ottId": 958295, 
 "^ot:ottTaxonName": "Polyporus tubaeformis"
 }, 
 "otu332154": {
+"@label": "Lentinus suavissimus", 
 "^ot:originalLabel": "Lentinus suavissimus", 
 "^ot:ottId": 336632, 
 "^ot:ottTaxonName": "Lentinus suavissimus"
 }, 
 "otu332155": {
+"@label": "Polyporus dictyopus", 
 "^ot:originalLabel": "Polyporus dictyopus", 
 "^ot:ottId": 273467, 
 "^ot:ottTaxonName": "Polyporus dictyopus"
 }, 
 "otu332156": {
+"@label": "Polyporus melanopus", 
 "^ot:originalLabel": "Polyporus melanopus", 
 "^ot:ottId": 417412, 
 "^ot:ottTaxonName": "Polyporus melanopus"
 }, 
 "otu332157": {
+"@label": "Polyporus virgatus", 
 "^ot:originalLabel": "Polyporus virgatus", 
 "^ot:ottId": 568729, 
 "^ot:ottTaxonName": "Polyporus virgatus"
 }, 
 "otu332158": {
+"@label": "Polyporus umbellatus", 
 "^ot:originalLabel": "Polyporus umbellatus", 
 "^ot:ottId": 801654, 
 "^ot:ottTaxonName": "Polyporus umbellatus"
 }, 
 "otu332159": {
+"@label": "Polyporus tuberaster", 
 "^ot:originalLabel": "Polyporus tuberaster", 
 "^ot:ottId": 972282, 
 "^ot:ottTaxonName": "Polyporus tuberaster"
 }, 
 "otu332160": {
+"@label": "Datronia scutellata", 
 "^ot:originalLabel": "Datronia scutellata", 
 "^ot:ottId": 406842, 
 "^ot:ottTaxonName": "Datronia scutellata"
 }, 
 "otu332161": {
+"@label": "Polyporus leprieurii", 
 "^ot:originalLabel": "Polyporus leprieurii", 
 "^ot:ottId": 273472, 
 "^ot:ottTaxonName": "Polyporus leprieurii"
 }, 
 "otu332162": {
+"@label": "Polyporus craterellus", 
 "^ot:originalLabel": "Polyporus craterellus", 
 "^ot:ottId": 273468, 
 "^ot:ottTaxonName": "Polyporus craterellus"
 }, 
 "otu332163": {
+"@label": "Polyporus radicatus", 
 "^ot:originalLabel": "Polyporus radicatus", 
 "^ot:ottId": 273473, 
 "^ot:ottTaxonName": "Polyporus radicatus"
 }, 
 "otu332164": {
+"@label": "Polyporus varius", 
 "^ot:originalLabel": "Polyporus varius", 
 "^ot:ottId": 1044746, 
 "^ot:ottTaxonName": "Polyporus varius"
 }, 
 "otu332165": {
+"@label": "Pseudofavolus cucullatus", 
 "^ot:originalLabel": "Pseudofavolus cucullatus"
 }, 
 "otu332166": {
+"@label": "Mycobonia flava", 
 "^ot:originalLabel": "Mycobonia flava", 
 "^ot:ottId": 273466, 
 "^ot:ottTaxonName": "Mycobonia flava"
 }, 
 "otu332167": {
+"@label": "Polyporus squamosus", 
 "^ot:originalLabel": "Polyporus squamosus", 
 "^ot:ottId": 715746, 
 "^ot:ottTaxonName": "Polyporus squamosus"
 }, 
 "otu332168": {
+"@label": "Polyporus subvarius", 
 "^ot:originalLabel": "Polyporus subvarius", 
 "^ot:ottId": 657566, 
 "^ot:ottTaxonName": "Polyporus subvarius"
 }, 
 "otu332169": {
+"@label": "Datronia mollis", 
 "^ot:originalLabel": "Datronia mollis", 
 "^ot:ottId": 1095613, 
 "^ot:ottTaxonName": "Datronia mollis"
 }, 
 "otu332170": {
+"@label": "Polyporus guianensis", 
 "^ot:originalLabel": "Polyporus guianensis", 
 "^ot:ottId": 273469, 
 "^ot:ottTaxonName": "Polyporus guianensis"
 }, 
 "otu332171": {
+"@label": "Echinochaete maximipora", 
 "^ot:originalLabel": "Echinochaete maximipora", 
 "^ot:ottId": 219271, 
 "^ot:ottTaxonName": "Echinochaete maximipora"
 }, 
 "otu332172": {
+"@label": "Echinochaete russiceps", 
 "^ot:originalLabel": "Echinochaete russiceps", 
 "^ot:ottId": 219274, 
 "^ot:ottTaxonName": "Echinochaete russiceps"
 }, 
 "otu332173": {
+"@label": "Echinochaete ruficeps", 
 "^ot:originalLabel": "Echinochaete ruficeps", 
 "^ot:ottId": 697839, 
 "^ot:ottTaxonName": "Echinochaete ruficeps"
 }, 
 "otu332174": {
+"@label": "Echinochaete brachypora", 
 "^ot:originalLabel": "Echinochaete brachypora", 
 "^ot:ottId": 847948, 
 "^ot:ottTaxonName": "Echinochaete brachypora"
 }, 
 "otu332175": {
+"@label": "Fomes ohioensis", 
 "^ot:originalLabel": "Perenniporia ohiensis", 
 "^ot:ottId": 414137, 
 "^ot:ottTaxonName": "Fomes ohioensis"
 }, 
 "otu332176": {
-"^ot:originalLabel": "Perenniporia detrita", 
-"^ot:ottId": 414130, 
-"^ot:ottTaxonName": "Perenniporia detrita"
+"@label": "Perenniporia detrita", 
+"^ot:originalLabel": "Perenniporia detrita"
 }, 
 "otu332177": {
+"@label": "Abundisporus sclerosetosus", 
 "^ot:originalLabel": "Abundisporus sclerosetosus", 
 "^ot:ottId": 414132, 
 "^ot:ottTaxonName": "Abundisporus sclerosetosus"
 }, 
 "otu332178": {
+"@label": "Abundisporus violaceus", 
 "^ot:originalLabel": "Abundisporus violaceus", 
 "^ot:ottId": 414128, 
 "^ot:ottTaxonName": "Abundisporus violaceus"
 }, 
 "otu332179": {
+"@label": "Coriolopsis", 
 "^ot:originalLabel": "Coriolopsis cf byrsina", 
 "^ot:ottId": 241125, 
 "^ot:ottTaxonName": "Coriolopsis"
 }, 
 "otu332180": {
+"@label": "Perenniporia ochroleuca", 
 "^ot:originalLabel": "Perenniporia ochroleuca", 
 "^ot:ottId": 952533, 
 "^ot:ottTaxonName": "Perenniporia ochroleuca"
 }, 
 "otu332181": {
+"@label": "Amauroderma rugosum", 
 "^ot:originalLabel": "Amauroderma rugosum", 
 "^ot:ottId": 884768, 
 "^ot:ottTaxonName": "Amauroderma rugosum"
 }, 
 "otu332182": {
+"@label": "Perenniporia japonica", 
 "^ot:originalLabel": "Perenniporia japonica", 
 "^ot:ottId": 974567, 
 "^ot:ottTaxonName": "Perenniporia japonica"
 }, 
 "otu332183": {
+"@label": "Perenniporiella neofulva", 
 "^ot:originalLabel": "Perenniporiella neofulva", 
 "^ot:ottId": 991094, 
 "^ot:ottTaxonName": "Perenniporiella neofulva"
 }, 
 "otu332184": {
+"@label": "Perenniporiella tepeitensis", 
 "^ot:originalLabel": "Perenniporiella tepeitensis"
 }, 
 "otu332185": {
+"@label": "Perenniporiella chaquenia", 
 "^ot:originalLabel": "Perenniporiella chaquenia", 
 "^ot:ottId": 991096, 
 "^ot:ottTaxonName": "Perenniporiella chaquenia"
 }, 
 "otu332186": {
+"@label": "Perenniporiella pendula", 
 "^ot:originalLabel": "Perenniporiella pendula", 
 "^ot:ottId": 991092, 
 "^ot:ottTaxonName": "Perenniporiella pendula"
 }, 
 "otu332187": {
+"@label": "Perenniporiella micropora", 
 "^ot:originalLabel": "Perenniporiella micropora", 
 "^ot:ottId": 991093, 
 "^ot:ottTaxonName": "Perenniporiella micropora"
 }, 
 "otu332188": {
+"@label": "Perenniporia rhizomorpha", 
 "^ot:originalLabel": "Perenniporia rhizomorpha", 
 "^ot:ottId": 519003, 
 "^ot:ottTaxonName": "Perenniporia rhizomorpha"
 }, 
 "otu332189": {
+"@label": "Perenniporia subacida", 
 "^ot:originalLabel": "Perenniporia subacida", 
 "^ot:ottId": 668080, 
 "^ot:ottTaxonName": "Perenniporia subacida"
 }, 
 "otu332190": {
+"@label": "Perenniporia medulla-panis", 
 "^ot:originalLabel": "Perenniporia medulla panis", 
 "^ot:ottId": 1066794, 
 "^ot:ottTaxonName": "Perenniporia medulla-panis"
 }, 
 "otu332191": {
+"@label": "Sparsitubus nelumbiformis", 
 "^ot:originalLabel": "Sparsitubus nelumbiformis", 
 "^ot:ottId": 277052, 
 "^ot:ottTaxonName": "Sparsitubus nelumbiformis"
 }, 
 "otu332192": {
+"@label": "Dichomitus squalens", 
 "^ot:originalLabel": "Dichomitus squalens", 
 "^ot:ottId": 741212, 
 "^ot:ottTaxonName": "Dichomitus squalens"
 }, 
 "otu332193": {
+"@label": "Parmastomyces corticola", 
 "^ot:originalLabel": "Perenniporia corticola", 
 "^ot:ottId": 1045400, 
 "^ot:ottTaxonName": "Parmastomyces corticola"
 }, 
 "otu332194": {
+"@label": "Perenniporia cystidiata", 
 "^ot:originalLabel": "Perenniporia cystidiata", 
 "^ot:ottId": 930625, 
 "^ot:ottTaxonName": "Perenniporia cystidiata"
 }, 
 "otu332195": {
+"@label": "Ganoderma tsugae", 
 "^ot:originalLabel": "Ganoderma tsugae"
 }, 
 "otu332196": {
+"@label": "Ganoderma australe", 
 "^ot:originalLabel": "Ganoderma australe", 
 "^ot:ottId": 413026, 
 "^ot:ottTaxonName": "Ganoderma australe"
 }, 
 "otu332197": {
+"@label": "Ganoderma lucidum", 
 "^ot:originalLabel": "Ganoderma lucidum", 
 "^ot:ottId": 60045, 
 "^ot:ottTaxonName": "Ganoderma lucidum"
 }, 
 "otu332198": {
-"^ot:originalLabel": "Ganoderma sp", 
-"^ot:ottId": 60047, 
-"^ot:ottTaxonName": "Ganoderma"
+"@label": "Ganoderma sp", 
+"^ot:originalLabel": "Ganoderma sp"
 }, 
 "otu332199": {
+"@label": "Coriolopsis", 
 "^ot:originalLabel": "Coriolopsis cf caperata", 
 "^ot:ottId": 241125, 
 "^ot:ottTaxonName": "Coriolopsis"
 }, 
 "otu332200": {
+"@label": "Pyrofomes demidoffii", 
 "^ot:originalLabel": "Pyrofomes demidoffii", 
 "^ot:ottId": 741678, 
 "^ot:ottTaxonName": "Pyrofomes demidoffii"
 }, 
 "otu332201": {
+"@label": "Donkioporia expansa", 
 "^ot:originalLabel": "Donkioporia expansa", 
 "^ot:ottId": 93763, 
 "^ot:ottTaxonName": "Donkioporia expansa"
 }, 
 "otu332202": {
+"@label": "Perenniporia fraxinea", 
 "^ot:originalLabel": "Perenniporia fraxinea", 
 "^ot:ottId": 673252, 
 "^ot:ottTaxonName": "Perenniporia fraxinea"
 }, 
 "otu332203": {
+"@label": "Vanderbylia vicina", 
 "^ot:originalLabel": "Vanderbylia vicina", 
 "^ot:ottId": 991100, 
 "^ot:ottTaxonName": "Vanderbylia vicina"
 }, 
 "otu332204": {
+"@label": "Cryptoporus volvatus", 
 "^ot:originalLabel": "Cryptoporus volvatus", 
 "^ot:ottId": 1095618, 
 "^ot:ottTaxonName": "Cryptoporus volvatus"
 }, 
 "otu332205": {
+"@label": "Pachykytospora tuberculosa", 
 "^ot:originalLabel": "Pachykytospora tuberculosa", 
 "^ot:ottId": 3803148, 
 "^ot:ottTaxonName": "Pachykytospora tuberculosa"
 }, 
 "otu332206": {
+"@label": "Dentocorticium sulphurellum", 
 "^ot:originalLabel": "Dentocorticium sulphurellum", 
 "^ot:ottId": 723274, 
 "^ot:ottTaxonName": "Dentocorticium sulphurellum"
 }, 
 "otu332207": {
+"@label": "Lopharia cinerascens", 
 "^ot:originalLabel": "Lopharia cinerascens", 
 "^ot:ottId": 902040, 
 "^ot:ottTaxonName": "Lopharia cinerascens"
 }, 
 "otu332208": {
+"@label": "Diplomitoporus overholtsii", 
 "^ot:originalLabel": "Diplomitoporus overholtsii", 
 "^ot:ottId": 950794, 
 "^ot:ottTaxonName": "Diplomitoporus overholtsii"
 }, 
 "otu332209": {
+"@label": "Grifola frondosa", 
 "^ot:originalLabel": "Grifola frondosa", 
 "^ot:ottId": 868676, 
 "^ot:ottTaxonName": "Grifola frondosa"
 }, 
 "otu332210": {
+"@label": "Grifola sordulenta", 
 "^ot:originalLabel": "Grifola sordulenta", 
 "^ot:ottId": 965906, 
 "^ot:ottTaxonName": "Grifola sordulenta"
 }, 
 "otu332211": {
+"@label": "Sebipora aquosa", 
 "^ot:originalLabel": "Sebipora aquosa", 
 "^ot:ottId": 646939, 
 "^ot:ottTaxonName": "Sebipora aquosa"
 }, 
 "otu332212": {
+"@label": "Cinereomyces lindbladii", 
 "^ot:originalLabel": "Cinereomyces lindbladii", 
 "^ot:ottId": 30827, 
 "^ot:ottTaxonName": "Cinereomyces lindbladii"
 }, 
 "otu332213": {
+"@label": "Physisporinus rivulosus", 
 "^ot:originalLabel": "Ceriporiopsis rivulosa", 
 "^ot:ottId": 531330, 
 "^ot:ottTaxonName": "Physisporinus rivulosus"
 }, 
 "otu332214": {
+"@label": "Obba valdiviana", 
 "^ot:originalLabel": "Obba valdiviana", 
 "^ot:ottId": 505999, 
 "^ot:ottTaxonName": "Obba valdiviana"
 }, 
 "otu332215": {
+"@label": "Ceriporiopsis subvermispora", 
 "^ot:originalLabel": "Ceriporiopsis subvermispora", 
 "^ot:ottId": 137093, 
 "^ot:ottTaxonName": "Ceriporiopsis subvermispora"
 }, 
 "otu332216": {
+"@label": "Skeletocutis amorpha", 
 "^ot:originalLabel": "Skeletocutis amorpha", 
 "^ot:ottId": 151260, 
 "^ot:ottTaxonName": "Skeletocutis amorpha"
 }, 
 "otu332217": {
+"@label": "Tyromyces chioneus", 
 "^ot:originalLabel": "Tyromyces chioneus", 
 "^ot:ottId": 151258, 
 "^ot:ottTaxonName": "Tyromyces chioneus"
 }, 
 "otu332218": {
+"@label": "Skeletocutis nivea", 
 "^ot:originalLabel": "Skeletocutis nivea", 
 "^ot:ottId": 151262, 
 "^ot:ottTaxonName": "Skeletocutis nivea"
 }, 
 "otu332219": {
+"@label": "Skeletocutis chrysella", 
 "^ot:originalLabel": "Skeletocutis chrysella", 
 "^ot:ottId": 845802, 
 "^ot:ottTaxonName": "Skeletocutis chrysella"
 }, 
 "otu332220": {
+"@label": "Ceriporiopsis jelicii", 
 "^ot:originalLabel": "Ceriporiopsis jelicii", 
 "^ot:ottId": 411797, 
 "^ot:ottTaxonName": "Ceriporiopsis jelicii"
 }, 
 "otu332221": {
+"@label": "Piloporia sajanensis", 
 "^ot:originalLabel": "Piloporia sajanensis", 
 "^ot:ottId": 143919, 
 "^ot:ottTaxonName": "Piloporia sajanensis"
 }, 
 "otu332222": {
+"@label": "Dacryobolus sudans", 
 "^ot:originalLabel": "Dacryobolus sudans", 
 "^ot:ottId": 619102, 
 "^ot:ottTaxonName": "Dacryobolus sudans"
 }, 
 "otu332223": {
+"@label": "Amylocystis lapponicus", 
 "^ot:originalLabel": "Amylocystis lapponica", 
 "^ot:ottId": 808191, 
 "^ot:ottTaxonName": "Amylocystis lapponicus"
 }, 
 "otu332224": {
+"@label": "Postia caesia", 
 "^ot:originalLabel": "Postia caesia", 
 "^ot:ottId": 197789, 
 "^ot:ottTaxonName": "Postia caesia"
 }, 
 "otu332225": {
+"@label": "Postia rennyi", 
 "^ot:originalLabel": "Oligoporus rennyi", 
 "^ot:ottId": 1030427, 
 "^ot:ottTaxonName": "Postia rennyi"
 }, 
 "otu332226": {
+"@label": "Postia japonica", 
 "^ot:originalLabel": "Postia japonica", 
 "^ot:ottId": 234387, 
 "^ot:ottTaxonName": "Postia japonica"
 }, 
 "otu332227": {
+"@label": "Postia leucomallella", 
 "^ot:originalLabel": "Postia leucomallela", 
 "^ot:ottId": 38318, 
 "^ot:ottTaxonName": "Postia leucomallella"
 }, 
 "otu332228": {
+"@label": "Postia tephroleuca", 
 "^ot:originalLabel": "Postia tephroleuca", 
 "^ot:ottId": 754292, 
 "^ot:ottTaxonName": "Postia tephroleuca"
 }, 
 "otu332229": {
+"@label": "Tyromyces lacteus", 
 "^ot:originalLabel": "Oligoporus lacteus", 
 "^ot:ottId": 202375, 
 "^ot:ottTaxonName": "Tyromyces lacteus"
 }, 
 "otu332230": {
+"@label": "Postia stellifera", 
 "^ot:originalLabel": "Postia stellifera", 
 "^ot:ottId": 808699, 
 "^ot:ottTaxonName": "Postia stellifera"
 }, 
 "otu332231": {
+"@label": "Auriporia aurea", 
 "^ot:originalLabel": "Auriporia aurea", 
 "^ot:ottId": 562718, 
 "^ot:ottTaxonName": "Auriporia aurea"
 }, 
 "otu332232": {
+"@label": "Parmastomyces mollissimus", 
 "^ot:originalLabel": "Parmastomyces mollissimus", 
 "^ot:ottId": 802425, 
 "^ot:ottTaxonName": "Parmastomyces mollissimus"
 }, 
 "otu332233": {
-"^ot:originalLabel": "Parmastomyces transmutans"
+"@label": "Parmastomyces mollissimus", 
+"^ot:originalLabel": "Parmastomyces transmutans", 
+"^ot:ottId": 802425, 
+"^ot:ottTaxonName": "Parmastomyces mollissimus"
 }, 
 "otu332234": {
+"@label": "Taiwanofungus camphoratus", 
 "^ot:originalLabel": "Taiwanofungus camphoratus", 
 "^ot:ottId": 252428, 
 "^ot:ottTaxonName": "Taiwanofungus camphoratus"
 }, 
 "otu332235": {
+"@label": "Taiwanofungus salmoneus", 
 "^ot:originalLabel": "Taiwanofungus salmoneus", 
 "^ot:ottId": 240739, 
 "^ot:ottTaxonName": "Taiwanofungus salmoneus"
 }, 
 "otu332236": {
+"@label": "Sparassis crispa", 
 "^ot:originalLabel": "Sparassis crispa", 
 "^ot:ottId": 118235, 
 "^ot:ottTaxonName": "Sparassis crispa"
 }, 
 "otu332237": {
-"^ot:originalLabel": "Sparassis radicata"
+"@label": "Sparassis crispa", 
+"^ot:originalLabel": "Sparassis radicata", 
+"^ot:ottId": 118235, 
+"^ot:ottTaxonName": "Sparassis crispa"
 }, 
 "otu332238": {
+"@label": "Sparassis cystidiosa", 
 "^ot:originalLabel": "Sparassis cystidiosa", 
 "^ot:ottId": 417434, 
 "^ot:ottTaxonName": "Sparassis cystidiosa"
 }, 
 "otu332239": {
+"@label": "Sparassis brevipes", 
 "^ot:originalLabel": "Sparassis brevipes", 
 "^ot:ottId": 959318, 
 "^ot:ottTaxonName": "Sparassis brevipes"
 }, 
 "otu332240": {
+"@label": "Sparassis spathulata", 
 "^ot:originalLabel": "Sparassis spathulata", 
 "^ot:ottId": 468068, 
 "^ot:ottTaxonName": "Sparassis spathulata"
 }, 
 "otu332241": {
-"^ot:originalLabel": "Wolfiporia cocos"
+"@label": "Wolfiporia extensa", 
+"^ot:originalLabel": "Wolfiporia cocos", 
+"^ot:ottId": 5299874, 
+"^ot:ottTaxonName": "Wolfiporia extensa"
 }, 
 "otu332242": {
+"@label": "Phaeolus schweinitzii", 
 "^ot:originalLabel": "Phaeolus schweinitzii", 
 "^ot:ottId": 994531, 
 "^ot:ottTaxonName": "Phaeolus schweinitzii"
 }, 
 "otu332243": {
+"@label": "Laetiporus persicinus", 
 "^ot:originalLabel": "Laetiporus persicinus", 
 "^ot:ottId": 385724, 
 "^ot:ottTaxonName": "Laetiporus persicinus"
 }, 
 "otu332244": {
+"@label": "Wolfiporia dilatohypha", 
 "^ot:originalLabel": "Wolfiporia dilatohypha", 
 "^ot:ottId": 385734, 
 "^ot:ottTaxonName": "Wolfiporia dilatohypha"
 }, 
 "otu332245": {
+"@label": "Laetiporus gilbertsonii", 
 "^ot:originalLabel": "Laetiporus gilbertsonii", 
 "^ot:ottId": 385688, 
 "^ot:ottTaxonName": "Laetiporus gilbertsonii"
 }, 
 "otu332246": {
-"^ot:originalLabel": "Laetiporus cincinnatus"
+"@label": "Laetiporus sulphureus", 
+"^ot:originalLabel": "Laetiporus cincinnatus", 
+"^ot:ottId": 343979, 
+"^ot:ottTaxonName": "Laetiporus sulphureus"
 }, 
 "otu332247": {
+"@label": "Laetiporus conifericola", 
 "^ot:originalLabel": "Laetiporus conifericola", 
 "^ot:ottId": 611949, 
 "^ot:ottTaxonName": "Laetiporus conifericola"
 }, 
 "otu332248": {
+"@label": "Laetiporus huroniensis", 
 "^ot:originalLabel": "Laetiporus huroniensis", 
 "^ot:ottId": 611948, 
 "^ot:ottTaxonName": "Laetiporus huroniensis"
 }, 
 "otu332249": {
+"@label": "Laetiporus montanus", 
 "^ot:originalLabel": "Laetiporus montanus", 
 "^ot:ottId": 214241, 
 "^ot:ottTaxonName": "Laetiporus montanus"
 }, 
 "otu332250": {
+"@label": "Laetiporus sulphureus", 
 "^ot:originalLabel": "Laetiporus sulphureus", 
 "^ot:ottId": 343979, 
 "^ot:ottTaxonName": "Laetiporus sulphureus"
 }, 
 "otu332251": {
+"@label": "Antrodia albida", 
 "^ot:originalLabel": "Antrodia albida", 
 "^ot:ottId": 151261, 
 "^ot:ottTaxonName": "Antrodia albida"
 }, 
 "otu332252": {
+"@label": "Antrodia heteromorpha", 
 "^ot:originalLabel": "Antrodia heteromorpha", 
 "^ot:ottId": 77864, 
 "^ot:ottTaxonName": "Antrodia heteromorpha"
 }, 
 "otu332253": {
+"@label": "Piptoporus quercinus", 
 "^ot:originalLabel": "Buglossoporus pulvinus", 
 "^ot:ottId": 535902, 
 "^ot:ottTaxonName": "Piptoporus quercinus"
 }, 
 "otu332254": {
-"^ot:originalLabel": "Neolentiporus maculatissimus"
+"@label": "Polyporus udus", 
+"^ot:originalLabel": "Neolentiporus maculatissimus", 
+"^ot:ottId": 802578, 
+"^ot:ottTaxonName": "Polyporus udus"
 }, 
 "otu332255": {
+"@label": "Antrodia malicola", 
 "^ot:originalLabel": "Antrodia malicola", 
 "^ot:ottId": 77865, 
 "^ot:ottTaxonName": "Antrodia malicola"
 }, 
 "otu332256": {
+"@label": "Fomitopsis cajanderi", 
 "^ot:originalLabel": "Fomitopsis cajanderi", 
 "^ot:ottId": 952520, 
 "^ot:ottTaxonName": "Fomitopsis cajanderi"
 }, 
 "otu332257": {
+"@label": "Melanoporia nigra", 
 "^ot:originalLabel": "Melanoporia nigra", 
 "^ot:ottId": 93761, 
 "^ot:ottTaxonName": "Melanoporia nigra"
 }, 
 "otu332258": {
+"@label": "Fomitopsis rosea", 
 "^ot:originalLabel": "Fomitopsis rosea", 
 "^ot:ottId": 383216, 
 "^ot:ottTaxonName": "Fomitopsis rosea"
 }, 
 "otu332259": {
+"@label": "Fomitopsis spraguei", 
 "^ot:originalLabel": "Fomitopsis spraguei", 
 "^ot:ottId": 119778, 
 "^ot:ottTaxonName": "Fomitopsis spraguei"
 }, 
 "otu332260": {
+"@label": "Antrodia variiformis", 
 "^ot:originalLabel": "Antrodia variiformis", 
 "^ot:ottId": 950795, 
 "^ot:ottTaxonName": "Antrodia variiformis"
 }, 
 "otu332261": {
+"@label": "Antrodia serialis", 
 "^ot:originalLabel": "Antrodia serialis", 
 "^ot:ottId": 425784, 
 "^ot:ottTaxonName": "Antrodia serialis"
 }, 
 "otu332262": {
+"@label": "Antrodia juniperina", 
 "^ot:originalLabel": "Antrodia juniperina", 
 "^ot:ottId": 950800, 
 "^ot:ottTaxonName": "Antrodia juniperina"
 }, 
 "otu332263": {
+"@label": "Antrodia taxa", 
 "^ot:originalLabel": "Antrodia taxa", 
 "^ot:ottId": 67485, 
 "^ot:ottTaxonName": "Antrodia taxa"
 }, 
 "otu332264": {
-"^ot:originalLabel": "Fomitopsis dochmia"
+"@label": "Daedalea dochmia", 
+"^ot:originalLabel": "Fomitopsis dochmia", 
+"^ot:ottId": 5300172, 
+"^ot:ottTaxonName": "Daedalea dochmia"
 }, 
 "otu332265": {
+"@label": "Daedalea dickinsii", 
 "^ot:originalLabel": "Daedalea dickinsii", 
 "^ot:ottId": 77856, 
 "^ot:ottTaxonName": "Daedalea dickinsii"
 }, 
 "otu332266": {
+"@label": "Polyporus eucalyptorum", 
 "^ot:originalLabel": "Piptoporus portentosus", 
 "^ot:ottId": 327082, 
 "^ot:ottTaxonName": "Polyporus eucalyptorum"
 }, 
 "otu332267": {
+"@label": "Daedalea quercina", 
 "^ot:originalLabel": "Daedalea quercina", 
 "^ot:ottId": 1095615, 
 "^ot:ottTaxonName": "Daedalea quercina"
 }, 
 "otu332268": {
+"@label": "Fomitopsis africana", 
 "^ot:originalLabel": "Fomitopsis africana", 
 "^ot:ottId": 961120, 
 "^ot:ottTaxonName": "Fomitopsis africana"
 }, 
 "otu332269": {
+"@label": "Fomitopsis feei", 
 "^ot:originalLabel": "Fomitopsis feei", 
 "^ot:ottId": 211076, 
 "^ot:ottTaxonName": "Fomitopsis feei"
 }, 
 "otu332270": {
+"@label": "Fomitopsis lilacinogilva", 
 "^ot:originalLabel": "Fomitopsis lilacinogilva", 
 "^ot:ottId": 952524, 
 "^ot:ottTaxonName": "Fomitopsis lilacinogilva"
 }, 
 "otu332271": {
+"@label": "Fomitopsis cupreorosea", 
 "^ot:originalLabel": "Fomitopsis cupreorosea", 
 "^ot:ottId": 952521, 
 "^ot:ottTaxonName": "Fomitopsis cupreorosea"
 }, 
 "otu332272": {
+"@label": "Piptoporus betulinus", 
 "^ot:originalLabel": "Piptoporus betulinus", 
 "^ot:ottId": 1044747, 
 "^ot:ottTaxonName": "Piptoporus betulinus"
 }, 
 "otu332273": {
+"@label": "Fomitopsis pinicola", 
 "^ot:originalLabel": "Fomitopsis pinicola", 
 "^ot:ottId": 417422, 
 "^ot:ottTaxonName": "Fomitopsis pinicola"
 }, 
 "otu332274": {
+"@label": "Fomitopsis ostreiformis", 
 "^ot:originalLabel": "Fomitopsis ostreiformis", 
 "^ot:ottId": 228598, 
 "^ot:ottTaxonName": "Fomitopsis ostreiformis"
 }, 
 "otu332275": {
+"@label": "Fomitopsis palustris", 
 "^ot:originalLabel": "Fomitopsis palustris", 
 "^ot:ottId": 306472, 
 "^ot:ottTaxonName": "Fomitopsis palustris"
 }, 
 "otu332276": {
+"@label": "Antrodia oleracea", 
 "^ot:originalLabel": "Antrodia oleracea", 
 "^ot:ottId": 436227, 
 "^ot:ottTaxonName": "Antrodia oleracea"
 }, 
 "otu332277": {
+"@label": "Fomes meliae", 
 "^ot:originalLabel": "Fomitopsis meliae", 
 "^ot:ottId": 535898, 
 "^ot:ottTaxonName": "Fomes meliae"
 }, 
 "otu332278": {
+"@label": "Fibroporia vaillantii", 
 "^ot:originalLabel": "Antrodia vaillantii", 
 "^ot:ottId": 69893, 
 "^ot:ottTaxonName": "Fibroporia vaillantii"
 }, 
 "otu332279": {
+"@label": "Fibroporia radiculosa", 
 "^ot:originalLabel": "Antrodia radiculosa", 
 "^ot:ottId": 884378, 
 "^ot:ottTaxonName": "Fibroporia radiculosa"
 }, 
 "otu332280": {
+"@label": "Antrodia sinuosa", 
 "^ot:originalLabel": "Antrodia sinuosa", 
 "^ot:ottId": 1042428, 
 "^ot:ottTaxonName": "Antrodia sinuosa"
 }, 
 "otu332281": {
-"^ot:originalLabel": "Antrodia odora"
+"@label": "Skeletocutis odora", 
+"^ot:originalLabel": "Antrodia odora", 
+"^ot:ottId": 696411, 
+"^ot:ottTaxonName": "Skeletocutis odora"
 }, 
 "otu332282": {
+"@label": "Antrodia carbonica", 
 "^ot:originalLabel": "Antrodia carbonica", 
 "^ot:ottId": 48322, 
 "^ot:ottTaxonName": "Antrodia carbonica"
 }, 
 "otu332283": {
-"^ot:originalLabel": "Antrodia xantha"
+"@label": "Antrodia xantha", 
+"^ot:originalLabel": "Antrodia xantha", 
+"^ot:ottId": 3802271, 
+"^ot:ottTaxonName": "Antrodia xantha"
 }, 
 "otu332284": {
+"@label": "Antrodia alpina", 
 "^ot:originalLabel": "Antrodia alpina", 
 "^ot:ottId": 436226, 
 "^ot:ottTaxonName": "Antrodia alpina"
 }, 
 "otu332285": {
+"@label": "Antrodia sordida", 
 "^ot:originalLabel": "Antrodia sordida", 
 "^ot:ottId": 67484, 
 "^ot:ottTaxonName": "Antrodia sordida"
 }, 
 "otu332286": {
+"@label": "Rhodonia placenta", 
 "^ot:originalLabel": "Postia placenta", 
 "^ot:ottId": 1069955, 
 "^ot:ottTaxonName": "Rhodonia placenta"
 }, 
 "otu332287": {
+"@label": "Fomitopsis officinalis", 
 "^ot:originalLabel": "Fomitopsis officinalis", 
 "^ot:ottId": 952534, 
 "^ot:ottTaxonName": "Fomitopsis officinalis"
 }, 
 "otu332288": {
+"@label": "Antrodia albobrunnea", 
 "^ot:originalLabel": "Antrodia albobrunnea", 
 "^ot:ottId": 427828, 
 "^ot:ottTaxonName": "Antrodia albobrunnea"
 }, 
 "otu332289": {
+"@label": "Ceraceomyces violascens", 
 "^ot:originalLabel": "Ceraceomyces violascens", 
 "^ot:ottId": 905028, 
 "^ot:ottTaxonName": "Ceraceomyces violascens"
 }, 
 "otu332290": {
-"^ot:originalLabel": "Phlebiopsis roumeguerii"
+"@label": "Phlebiopsis ravenelii", 
+"^ot:originalLabel": "Phlebiopsis roumeguerii", 
+"^ot:ottId": 5299611, 
+"^ot:ottTaxonName": "Phlebiopsis ravenelii"
 }, 
 "otu332291": {
+"@label": "Phlebiopsis himalayensis", 
 "^ot:originalLabel": "Phlebiopsis himalayensis", 
 "^ot:ottId": 1038521, 
 "^ot:ottTaxonName": "Phlebiopsis himalayensis"
 }, 
 "otu332292": {
+"@label": "Rhizochaete filamentosa", 
 "^ot:originalLabel": "Rhizochaete filamentosa", 
 "^ot:ottId": 499465, 
 "^ot:ottTaxonName": "Rhizochaete filamentosa"
 }, 
 "otu332293": {
+"@label": "Ceraceomyces sulphurinus", 
 "^ot:originalLabel": "Ceraceomyces sulphurinus", 
 "^ot:ottId": 607653, 
 "^ot:ottTaxonName": "Ceraceomyces sulphurinus"
 }, 
 "otu332294": {
+"@label": "Rhizochaete brunnea", 
 "^ot:originalLabel": "Rhizochaete brunnea", 
 "^ot:ottId": 1049193, 
 "^ot:ottTaxonName": "Rhizochaete brunnea"
 }, 
 "otu332295": {
+"@label": "Rhizochaete fouquieriae", 
 "^ot:originalLabel": "Rhizochaete fouquieriae", 
 "^ot:ottId": 218612, 
 "^ot:ottTaxonName": "Rhizochaete fouquieriae"
 }, 
 "otu332296": {
+"@label": "Rhizochaete radicata", 
 "^ot:originalLabel": "Rhizochaete radicata", 
 "^ot:ottId": 260924, 
 "^ot:ottTaxonName": "Rhizochaete radicata"
 }, 
 "otu332297": {
+"@label": "Rhizochaete americana", 
 "^ot:originalLabel": "Rhizochaete americana", 
 "^ot:ottId": 218626, 
 "^ot:ottTaxonName": "Rhizochaete americana"
 }, 
 "otu332298": {
+"@label": "Hapalopilus rutilans", 
 "^ot:originalLabel": "Hapalopilus rutilans", 
 "^ot:ottId": 1076032, 
 "^ot:ottTaxonName": "Hapalopilus rutilans"
 }, 
 "otu332299": {
+"@label": "Phlebia unica", 
 "^ot:originalLabel": "Phlebia unica", 
 "^ot:ottId": 956310, 
 "^ot:ottTaxonName": "Phlebia unica"
 }, 
 "otu332300": {
+"@label": "Phanerochaete lutea", 
 "^ot:originalLabel": "Phanerochaete lutea", 
 "^ot:ottId": 198189, 
 "^ot:ottTaxonName": "Phanerochaete lutea"
 }, 
 "otu332301": {
-"^ot:originalLabel": "Phanerochaete flavidoalba"
+"@label": "Phlebiopsis flavidoalba", 
+"^ot:originalLabel": "Phanerochaete flavidoalba", 
+"^ot:ottId": 242821, 
+"^ot:ottTaxonName": "Phlebiopsis flavidoalba"
 }, 
 "otu332302": {
+"@label": "Phlebiopsis flavidoalba", 
 "^ot:originalLabel": "Phlebiopsis flavidoalba", 
 "^ot:ottId": 242821, 
 "^ot:ottTaxonName": "Phlebiopsis flavidoalba"
 }, 
 "otu332303": {
+"@label": "Phanerochaete lamprocystidiata", 
 "^ot:originalLabel": "Phanerochaete lamprocystidiata"
 }, 
 "otu332304": {
+"@label": "Porostereum crassum", 
 "^ot:originalLabel": "Phanerochaete crassa", 
 "^ot:ottId": 237733, 
 "^ot:ottTaxonName": "Porostereum crassum"
 }, 
 "otu332305": {
+"@label": "Phanerochaete laxa", 
 "^ot:originalLabel": "Phanerochaete laxa"
 }, 
 "otu332306": {
+"@label": "Phanerochaete brunneocystidiata", 
 "^ot:originalLabel": "Phanerochaete brunneocystidiata"
 }, 
 "otu332307": {
+"@label": "Phanerochaete brunnea", 
 "^ot:originalLabel": "Phanerochaete brunnea", 
 "^ot:ottId": 830786, 
 "^ot:ottTaxonName": "Phanerochaete brunnea"
 }, 
 "otu332308": {
+"@label": "Phanerochaete taiwaniana", 
 "^ot:originalLabel": "Phanerochaete taiwaniana", 
 "^ot:ottId": 736976, 
 "^ot:ottTaxonName": "Phanerochaete taiwaniana"
 }, 
 "otu332309": {
+"@label": "Phanerochaete aculeata", 
 "^ot:originalLabel": "Phanerochaete aculeata", 
 "^ot:ottId": 772153, 
 "^ot:ottTaxonName": "Phanerochaete aculeata"
 }, 
 "otu332310": {
+"@label": "Phanerochaete canolutea", 
 "^ot:originalLabel": "Phanerochaete canolutea"
 }, 
 "otu332311": {
+"@label": "Phanerochaete argillacea", 
 "^ot:originalLabel": "Phanerochaete argillacea", 
 "^ot:ottId": 198184, 
 "^ot:ottTaxonName": "Phanerochaete argillacea"
 }, 
 "otu332312": {
+"@label": "Phanerochaete velutina", 
 "^ot:originalLabel": "Phanerochaete velutina", 
 "^ot:ottId": 662208, 
 "^ot:ottTaxonName": "Phanerochaete velutina"
 }, 
 "otu332313": {
+"@label": "Phanerochaete sordida", 
 "^ot:originalLabel": "Phanerochaete sordida", 
 "^ot:ottId": 151810, 
 "^ot:ottTaxonName": "Phanerochaete sordida"
 }, 
 "otu332314": {
-"^ot:originalLabel": "Phanerochaete chrysosporium"
+"@label": "Phanerodontia chrysosporium", 
+"^ot:originalLabel": "Phanerochaete chrysosporium", 
+"^ot:ottId": 5299626, 
+"^ot:ottTaxonName": "Phanerodontia chrysosporium"
 }, 
 "otu332315": {
+"@label": "Phanerochaete parmastoi", 
 "^ot:originalLabel": "Phanerochaete parmastoi", 
 "^ot:ottId": 1038530, 
 "^ot:ottTaxonName": "Phanerochaete parmastoi"
 }, 
 "otu332316": {
+"@label": "Phanerochaete stereoides", 
 "^ot:originalLabel": "Phanerochaete stereoides", 
 "^ot:ottId": 830763, 
 "^ot:ottTaxonName": "Phanerochaete stereoides"
 }, 
 "otu332317": {
+"@label": "Phanerochaete sanguinea", 
 "^ot:originalLabel": "Phanerochaete sanguinea", 
 "^ot:ottId": 82393, 
 "^ot:ottTaxonName": "Phanerochaete sanguinea"
 }, 
 "otu332318": {
+"@label": "Phanerochaete affinis", 
 "^ot:originalLabel": "Phanerochaete affinis", 
 "^ot:ottId": 956312, 
 "^ot:ottTaxonName": "Phanerochaete affinis"
 }, 
 "otu332319": {
+"@label": "Phanerochaete deflectens", 
 "^ot:originalLabel": "Phanerochaete deflectens", 
 "^ot:ottId": 198178, 
 "^ot:ottTaxonName": "Phanerochaete deflectens"
 }, 
 "otu332320": {
+"@label": "Phanerochaete carnosa", 
 "^ot:originalLabel": "Phanerochaete carnosa", 
 "^ot:ottId": 835564, 
 "^ot:ottTaxonName": "Phanerochaete carnosa"
 }, 
 "otu332321": {
+"@label": "Phanerochaete calotricha", 
 "^ot:originalLabel": "Phanerochaete calotricha", 
 "^ot:ottId": 12394, 
 "^ot:ottTaxonName": "Phanerochaete calotricha"
 }, 
 "otu332322": {
+"@label": "Phlebia firma", 
 "^ot:originalLabel": "Phlebia firma", 
 "^ot:ottId": 956309, 
 "^ot:ottTaxonName": "Phlebia firma"
 }, 
 "otu332323": {
+"@label": "Phlebia lilascens", 
 "^ot:originalLabel": "Phlebia lilascens", 
 "^ot:ottId": 137312, 
 "^ot:ottTaxonName": "Phlebia lilascens"
 }, 
 "otu332324": {
-"^ot:originalLabel": "Phlebia deflectens"
+"@label": "Phanerochaete deflectens", 
+"^ot:originalLabel": "Phlebia deflectens", 
+"^ot:ottId": 198178, 
+"^ot:ottTaxonName": "Phanerochaete deflectens"
 }, 
 "otu332325": {
+"@label": "Pulcherricium caeruleum", 
 "^ot:originalLabel": "Pulcherricium caeruleum"
 }, 
 "otu332326": {
+"@label": "Hyphodermella corrugata", 
 "^ot:originalLabel": "Hyphodermella corrugata", 
 "^ot:ottId": 330735, 
 "^ot:ottTaxonName": "Hyphodermella corrugata"
 }, 
 "otu332327": {
+"@label": "Bjerkandera adusta", 
 "^ot:originalLabel": "Bjerkandera adusta", 
 "^ot:ottId": 8349, 
 "^ot:ottTaxonName": "Bjerkandera adusta"
 }, 
 "otu332328": {
+"@label": "Porostereum spadiceum", 
 "^ot:originalLabel": "Porostereum spadiceum", 
 "^ot:ottId": 735612, 
 "^ot:ottTaxonName": "Porostereum spadiceum"
 }, 
 "otu332329": {
+"@label": "Candelabrochaete africana", 
 "^ot:originalLabel": "Candelabrochaete africana", 
 "^ot:ottId": 284561, 
 "^ot:ottTaxonName": "Candelabrochaete africana"
 }, 
 "otu332330": {
+"@label": "Gloeoporus taxicola", 
 "^ot:originalLabel": "Gloeoporus taxicola", 
 "^ot:ottId": 42236, 
 "^ot:ottTaxonName": "Gloeoporus taxicola"
 }, 
 "otu332331": {
+"@label": "Phanerochaete ginnsii", 
 "^ot:originalLabel": "Phanerochaete ginnsii"
 }, 
 "otu332332": {
+"@label": "Ceriporia viridans", 
 "^ot:originalLabel": "Ceriporia viridans", 
 "^ot:ottId": 569045, 
 "^ot:ottTaxonName": "Ceriporia viridans"
 }, 
 "otu332333": {
+"@label": "Candelabrochaete septocystidia", 
 "^ot:originalLabel": "Candelabrochaete septocystidia"
 }, 
 "otu332334": {
+"@label": "Ceriporia purpurea", 
 "^ot:originalLabel": "Ceriporia purpurea", 
 "^ot:ottId": 569044, 
 "^ot:ottTaxonName": "Ceriporia purpurea"
 }, 
 "otu332335": {
+"@label": "Ceriporia tarda", 
 "^ot:originalLabel": "Ceriporia tarda", 
 "^ot:ottId": 662220, 
 "^ot:ottTaxonName": "Ceriporia tarda"
 }, 
 "otu332336": {
+"@label": "Leptoporus mollis", 
 "^ot:originalLabel": "Leptoporus mollis", 
 "^ot:ottId": 674282, 
 "^ot:ottTaxonName": "Leptoporus mollis"
 }, 
 "otu332337": {
+"@label": "Ceriporia reticulata", 
 "^ot:originalLabel": "Ceriporia reticulata", 
 "^ot:ottId": 531325, 
 "^ot:ottTaxonName": "Ceriporia reticulata"
 }, 
 "otu332338": {
+"@label": "Phanerochaete angustocystidiata", 
 "^ot:originalLabel": "Phanerochaete angustocystidiata", 
 "^ot:ottId": 233883, 
 "^ot:ottTaxonName": "Phanerochaete angustocystidiata"
 }, 
 "otu332339": {
+"@label": "Phanerochaete intertexta", 
 "^ot:originalLabel": "Phanerochaete intertexta", 
 "^ot:ottId": 198174, 
 "^ot:ottTaxonName": "Phanerochaete intertexta"
 }, 
 "otu332340": {
+"@label": "Phanerochaete leptoderma", 
 "^ot:originalLabel": "Phanerochaete leptoderma", 
 "^ot:ottId": 198191, 
 "^ot:ottTaxonName": "Phanerochaete leptoderma"
 }, 
 "otu332341": {
+"@label": "Radulodon aneirinus", 
 "^ot:originalLabel": "Ceriporiopsis aneirina", 
 "^ot:ottId": 662198, 
 "^ot:ottTaxonName": "Radulodon aneirinus"
 }, 
 "otu332342": {
+"@label": "Ceriporiopsis resinascens", 
 "^ot:originalLabel": "Ceriporiopsis resinascens", 
 "^ot:ottId": 531328, 
 "^ot:ottTaxonName": "Ceriporiopsis resinascens"
 }, 
 "otu332343": {
+"@label": "Trametopsis cervina", 
 "^ot:originalLabel": "Trametopsis cervina", 
 "^ot:ottId": 792733, 
 "^ot:ottTaxonName": "Trametopsis cervina"
 }, 
 "otu332344": {
+"@label": "Byssomerulius corium", 
 "^ot:originalLabel": "Byssomerulius corium", 
 "^ot:ottId": 975879, 
 "^ot:ottTaxonName": "Byssomerulius corium"
 }, 
 "otu332345": {
+"@label": "Phlebia nitidula", 
 "^ot:originalLabel": "Phlebia nitidula", 
 "^ot:ottId": 659395, 
 "^ot:ottTaxonName": "Phlebia nitidula"
 }, 
 "otu332346": {
-"^ot:originalLabel": "Phlebia albomellea"
+"@label": "Auriculariopsis albomellea", 
+"^ot:originalLabel": "Phlebia albomellea", 
+"^ot:ottId": 5306209, 
+"^ot:ottTaxonName": "Auriculariopsis albomellea"
 }, 
 "otu332347": {
+"@label": "Phanerochaete tropica", 
 "^ot:originalLabel": "Phanerochaete tropica", 
 "^ot:ottId": 1038523, 
 "^ot:ottTaxonName": "Phanerochaete tropica"
 }, 
 "otu332348": {
+"@label": "Phanerochaete tuberculata", 
 "^ot:originalLabel": "Phanerochaete tuberculata", 
 "^ot:ottId": 835565, 
 "^ot:ottTaxonName": "Phanerochaete tuberculata"
 }, 
 "otu332349": {
+"@label": "Hydnopolyporus fimbriatus", 
 "^ot:originalLabel": "Hydnopolyporus fimbriatus", 
 "^ot:ottId": 462740, 
 "^ot:ottTaxonName": "Hydnopolyporus fimbriatus"
 }, 
 "otu332350": {
+"@label": "Ceriporia lacerata", 
 "^ot:originalLabel": "Ceriporia lacerata", 
 "^ot:ottId": 662199, 
 "^ot:ottTaxonName": "Ceriporia lacerata"
 }, 
 "otu332351": {
+"@label": "Irpex lacteus", 
 "^ot:originalLabel": "Irpex lacteus", 
 "^ot:ottId": 60033, 
 "^ot:ottTaxonName": "Irpex lacteus"
 }, 
 "otu332352": {
+"@label": "Ceraceomyces eludens", 
 "^ot:originalLabel": "Ceraceomyces eludens", 
 "^ot:ottId": 373782, 
 "^ot:ottTaxonName": "Ceraceomyces eludens"
 }, 
 "otu332353": {
+"@label": "Ceraceomyces microsporus", 
 "^ot:originalLabel": "Ceraceomyces microsporus", 
 "^ot:ottId": 373783, 
 "^ot:ottTaxonName": "Ceraceomyces microsporus"
 }, 
 "otu332354": {
+"@label": "Ceraceomyces serpens", 
 "^ot:originalLabel": "Ceraceomyces serpens", 
 "^ot:ottId": 373784, 
 "^ot:ottTaxonName": "Ceraceomyces serpens"
 }, 
 "otu332355": {
+"@label": "Gloeoporus dichrous", 
 "^ot:originalLabel": "Gloeoporus dichrous", 
 "^ot:ottId": 49989, 
 "^ot:ottTaxonName": "Gloeoporus dichrous"
 }, 
 "otu332356": {
+"@label": "Gloeoporus pannocinctus", 
 "^ot:originalLabel": "Gelatoporia pannocincta", 
 "^ot:ottId": 606666, 
 "^ot:ottTaxonName": "Gloeoporus pannocinctus"
 }, 
 "otu332357": {
+"@label": "Phlebia brevispora", 
 "^ot:originalLabel": "Phlebia brevispora", 
 "^ot:ottId": 662201, 
 "^ot:ottTaxonName": "Phlebia brevispora"
 }, 
 "otu332358": {
+"@label": "Mycoaciella bispora", 
 "^ot:originalLabel": "Mycoaciella bispora", 
 "^ot:ottId": 204708, 
 "^ot:ottTaxonName": "Mycoaciella bispora"
 }, 
 "otu332359": {
-"^ot:originalLabel": "Phlebia chrysocreas"
+"@label": "Crustodontia chrysocreas", 
+"^ot:originalLabel": "Phlebia chrysocreas", 
+"^ot:ottId": 4099848, 
+"^ot:ottTaxonName": "Crustodontia chrysocreas"
 }, 
 "otu332360": {
-"^ot:originalLabel": "Phlebia uda"
+"@label": "Mycoacia uda", 
+"^ot:originalLabel": "Phlebia uda", 
+"^ot:ottId": 82390, 
+"^ot:ottTaxonName": "Mycoacia uda"
 }, 
 "otu332361": {
+"@label": "Phlebia subochracea", 
 "^ot:originalLabel": "Phlebia subochracea", 
 "^ot:ottId": 659400, 
 "^ot:ottTaxonName": "Phlebia subochracea"
 }, 
 "otu332362": {
+"@label": "Phanerochaete subglobosa", 
 "^ot:originalLabel": "Phanerochaete subglobosa", 
 "^ot:ottId": 1038527, 
 "^ot:ottTaxonName": "Phanerochaete subglobosa"
 }, 
 "otu332363": {
+"@label": "Ceriporiopsis guidella", 
 "^ot:originalLabel": "Ceriporiopsis guidella", 
 "^ot:ottId": 18510, 
 "^ot:ottTaxonName": "Ceriporiopsis guidella"
 }, 
 "otu332364": {
+"@label": "Scopuloides hydnoides", 
 "^ot:originalLabel": "Scopuloides hydnoides", 
 "^ot:ottId": 604160, 
 "^ot:ottTaxonName": "Scopuloides hydnoides"
 }, 
 "otu332365": {
+"@label": "Phanerochaete odontoidea", 
 "^ot:originalLabel": "Phanerochaete odontoidea", 
 "^ot:ottId": 1038532, 
 "^ot:ottTaxonName": "Phanerochaete odontoidea"
 }, 
 "otu332366": {
+"@label": "Phanerochaete subodontoidea", 
 "^ot:originalLabel": "Phanerochaete subodontoidea"
 }, 
 "otu332367": {
+"@label": "Ceriporiopsis gilvescens", 
 "^ot:originalLabel": "Ceriporiopsis gilvescens", 
 "^ot:ottId": 621730, 
 "^ot:ottTaxonName": "Ceriporiopsis gilvescens"
 }, 
 "otu332368": {
+"@label": "Mycoacia nothofagi", 
 "^ot:originalLabel": "Mycoacia nothofagi", 
 "^ot:ottId": 1095026, 
 "^ot:ottTaxonName": "Mycoacia nothofagi"
 }, 
 "otu332369": {
+"@label": "Mycoacia fuscoatra", 
 "^ot:originalLabel": "Mycoacia fuscoatra", 
 "^ot:ottId": 116757, 
 "^ot:ottTaxonName": "Mycoacia fuscoatra"
 }, 
 "otu332370": {
+"@label": "Phlebia subserialis", 
 "^ot:originalLabel": "Phlebia subserialis", 
 "^ot:ottId": 659396, 
 "^ot:ottTaxonName": "Phlebia subserialis"
 }, 
 "otu332371": {
+"@label": "Phlebia livida", 
 "^ot:originalLabel": "Phlebia livida", 
 "^ot:ottId": 659394, 
 "^ot:ottTaxonName": "Phlebia livida"
 }, 
 "otu332372": {
+"@label": "Mycoacia aurea", 
 "^ot:originalLabel": "Mycoacia aurea", 
 "^ot:ottId": 644126, 
 "^ot:ottTaxonName": "Mycoacia aurea"
 }, 
 "otu332373": {
+"@label": "Merulius tremellosus", 
 "^ot:originalLabel": "Phlebia tremellosa", 
 "^ot:ottId": 659397, 
 "^ot:ottTaxonName": "Merulius tremellosus"
 }, 
 "otu332374": {
-"^ot:originalLabel": "Phlebia setulosa"
+"@label": "Hyphodontia setulosa", 
+"^ot:originalLabel": "Phlebia setulosa", 
+"^ot:ottId": 5300249, 
+"^ot:ottTaxonName": "Hyphodontia setulosa"
 }, 
 "otu332375": {
+"@label": "Phlebia acerina", 
 "^ot:originalLabel": "Phlebia acerina", 
 "^ot:ottId": 137306, 
 "^ot:ottTaxonName": "Phlebia acerina"
 }, 
 "otu332376": {
+"@label": "Phlebia rufa", 
 "^ot:originalLabel": "Phlebia rufa", 
 "^ot:ottId": 659393, 
 "^ot:ottTaxonName": "Phlebia rufa"
 }, 
 "otu332377": {
+"@label": "Phlebia radiata", 
 "^ot:originalLabel": "Phlebia radiata", 
 "^ot:ottId": 633296, 
 "^ot:ottTaxonName": "Phlebia radiata"
 }, 
 "otu332378": {
+"@label": "Aurantiporus fissilis", 
 "^ot:originalLabel": "Tyromyces fissilis", 
 "^ot:ottId": 893999, 
 "^ot:ottTaxonName": "Aurantiporus fissilis"
 }, 
 "otu332379": {
+"@label": "Aurantiopileus mayanensis", 
 "^ot:originalLabel": "Aurantiopileus mayanensis"
 }, 
 "otu332380": {
+"@label": "Scopuloides rimosa", 
 "^ot:originalLabel": "Scopuloides rimosa", 
 "^ot:ottId": 1038535, 
 "^ot:ottTaxonName": "Scopuloides rimosa"
 }, 
 "otu332381": {
+"@label": "Climacodon septentrionalis", 
 "^ot:originalLabel": "Climacodon septentrionalis", 
 "^ot:ottId": 284555, 
 "^ot:ottTaxonName": "Climacodon septentrionalis"
 }, 
 "otu332382": {
-"^ot:originalLabel": "Phlebia centrifuga"
+"@label": "Phlebia mellea", 
+"^ot:originalLabel": "Phlebia centrifuga", 
+"^ot:ottId": 5299673, 
+"^ot:ottTaxonName": "Phlebia mellea"
 }, 
 "otu332383": {
+"@label": "Ischnoderma resinosum", 
 "^ot:originalLabel": "Ischnoderma resinosum", 
 "^ot:ottId": 847952, 
 "^ot:ottTaxonName": "Ischnoderma resinosum"
 }, 
 "otu332384": {
+"@label": "Ischnoderma benzoinum", 
 "^ot:originalLabel": "Ischnoderma benzoinum", 
 "^ot:ottId": 900590, 
 "^ot:ottTaxonName": "Ischnoderma benzoinum"
 }, 
 "otu332385": {
+"@label": "Stereum hirsutum", 
 "^ot:originalLabel": "Stereum hirsutum", 
 "^ot:ottId": 943200, 
 "^ot:ottTaxonName": "Stereum hirsutum"
 }, 
 "otu332386": {
+"@label": "Heterobasidion annosum", 
 "^ot:originalLabel": "Heterobasidion annosum", 
 "^ot:ottId": 1072058, 
 "^ot:ottTaxonName": "Heterobasidion annosum"
@@ -1872,8 +2269,7 @@
 "^ot:rootNodeId": "node855332", 
 "^ot:tag": [
 "RPB2", 
-"SSU", 
-"LSU"
+"SSU"
 ], 
 "edgeBySourceId": {
 "node855332": {

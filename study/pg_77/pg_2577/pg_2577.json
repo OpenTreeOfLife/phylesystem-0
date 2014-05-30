@@ -36,19 +36,96 @@
 }
 ]
 }
+}, 
+{
+"@description": "Web-based interface for submitting, editing, and reviewing studies in the Open Tree of Life project.", 
+"@id": "opentree-curation-webapp", 
+"@name": "OpenTree curation webapp", 
+"@url": "https://github.com/OpenTreeOfLife/opentree", 
+"@version": "0.0.0"
 }
 ]
 }, 
 "^ot:annotationEvents": {
-"annotation": []
+"annotation": [
+{
+"@dateCreated": "2014-05-30T21:47:10.958Z", 
+"@description": "Aids for mapping study OTUs to OTT taxa", 
+"@id": "otu-mapping-hints", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "OTU_MAPPING_HINTS", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"searchContext": {
+"$": "All life"
+}, 
+"substitutions": {
+"substitution": [
+{
+"@active": false, 
+"@valid": true, 
+"new": {
+"$": ""
+}, 
+"old": {
+"$": ""
+}
+}
+]
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}, 
+{
+"@dateCreated": "2014-05-30T21:47:10.958Z", 
+"@description": "Describes supporting data files for this study", 
+"@id": "supporting-files-metadata", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "SUPPORTING_FILE_INFO", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"@movedToPermanentArchive": false, 
+"files": {
+"file": []
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}
+]
 }, 
 "^ot:candidateTreeForSynthesis": [], 
-"^ot:curatorName": "Joseph Brown", 
+"^ot:curatorName": [
+"Joseph Brown", 
+"Jim Allman"
+], 
 "^ot:focalClade": 837585, 
 "^ot:focalCladeOTTTaxonName": "Galliformes", 
 "^ot:messages": {
 "message": []
 }, 
+"^ot:notIntendedForSynthesis": false, 
 "^ot:otusElementOrder": [
 "otus2577"
 ], 
@@ -68,9 +145,7 @@
 "otus2577": {
 "otuById": {
 "otu379693": {
-"^ot:originalLabel": "Alectura lathami", 
-"^ot:ottId": 570956, 
-"^ot:ottTaxonName": "Alectura lathami"
+"^ot:originalLabel": "Alectura lathami"
 }, 
 "otu379694": {
 "^ot:originalLabel": "Leipoa ocellata", 
@@ -78,9 +153,7 @@
 "^ot:ottTaxonName": "Leipoa ocellata"
 }, 
 "otu379695": {
-"^ot:originalLabel": "Megapodius layardi", 
-"^ot:ottId": 227314, 
-"^ot:ottTaxonName": "Megapodius layardi"
+"^ot:originalLabel": "Megapodius layardi"
 }, 
 "otu379696": {
 "^ot:originalLabel": "Megapodius eremita", 
@@ -298,9 +371,8 @@
 "^ot:ottTaxonName": "Tetrastes bonasia"
 }, 
 "otu379739": {
-"^ot:originalLabel": "Tetrastes sewerzowi", 
-"^ot:ottId": 3596073, 
-"^ot:ottTaxonName": "Tetrastes sewerzowi"
+"^ot:altLabel": "TXX", 
+"^ot:originalLabel": "Tetrastes sewerzowi"
 }, 
 "otu379740": {
 "^ot:originalLabel": "Bonasa umbellus", 
@@ -538,6 +610,7 @@
 ], 
 "treeById": {
 "tree5980": {
+"@label": "Untitled (tree5980)", 
 "@xsi:type": "nex:FloatTree", 
 "^ot:branchLengthDescription": "", 
 "^ot:branchLengthMode": "ot:substitutionCount", 
@@ -548,6 +621,7 @@
 "^ot:rootNodeId": "node1015919", 
 "^ot:specifiedRoot": "", 
 "^ot:tag": [], 
+"^ot:unrootedTree": true, 
 "edgeBySourceId": {
 "node1015919": {
 "edge1015920": {

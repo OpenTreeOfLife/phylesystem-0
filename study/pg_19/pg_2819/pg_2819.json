@@ -36,14 +36,90 @@
 }
 ]
 }
+}, 
+{
+"@description": "Web-based interface for submitting, editing, and reviewing studies in the Open Tree of Life project.", 
+"@id": "opentree-curation-webapp", 
+"@name": "OpenTree curation webapp", 
+"@url": "https://github.com/OpenTreeOfLife/opentree", 
+"@version": "0.0.0"
 }
 ]
 }, 
 "^ot:annotationEvents": {
-"annotation": []
+"annotation": [
+{
+"@dateCreated": "2014-05-31T17:13:07.541Z", 
+"@description": "Aids for mapping study OTUs to OTT taxa", 
+"@id": "otu-mapping-hints", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "OTU_MAPPING_HINTS", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"searchContext": {
+"$": "All life"
+}, 
+"substitutions": {
+"substitution": [
+{
+"@active": false, 
+"@valid": true, 
+"new": {
+"$": ""
+}, 
+"old": {
+"$": ""
+}
+}
+]
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}, 
+{
+"@dateCreated": "2014-05-31T17:13:07.541Z", 
+"@description": "Describes supporting data files for this study", 
+"@id": "supporting-files-metadata", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "SUPPORTING_FILE_INFO", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"@movedToPermanentArchive": false, 
+"files": {
+"file": []
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}
+]
 }, 
 "^ot:candidateTreeForSynthesis": [], 
-"^ot:curatorName": "Romina Gazis", 
+"^ot:curatorName": [
+"Romina Gazis", 
+"Jim Allman"
+], 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S14151"
 }, 
@@ -52,17 +128,22 @@
 "^ot:messages": {
 "message": []
 }, 
+"^ot:notIntendedForSynthesis": false, 
 "^ot:otusElementOrder": [
 "otus2819"
 ], 
 "^ot:studyId": "2819", 
+"^ot:studyPublication": {
+"@href": ""
+}, 
 "^ot:studyPublicationReference": "Mbenoun M., Wingfield M.J., Begoude boyogueno A., Wingfield B.D., & Roux J. 2014. Molecular phylogenetic analyses reveal three new Ceratocystis species and provide evidence for geographic differentiation of the genus in Africa. Mycological Progress, .", 
 "^ot:studyYear": 2014, 
 "^ot:tag": [
 "B-tub", 
 "EF-1", 
 "ITS", 
-"MP"
+"MP", 
+"test-ADD"
 ], 
 "^ot:treesElementOrder": [
 "trees2819"
@@ -753,73 +834,76 @@
 ], 
 "treeById": {
 "tree6564": {
+"@label": "Untitled (tree6564)", 
 "@xsi:type": "nex:FloatTree", 
 "^ot:branchLengthDescription": "", 
-"^ot:branchLengthMode": "", 
 "^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "MP, ITS + EF-1 + b-tubulin", 
 "^ot:inGroupClade": "node1139432", 
 "^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node1139431", 
 "^ot:specifiedRoot": "", 
-"^ot:tag": [], 
+"^ot:tag": [
+"Test-TREE,"
+], 
+"^ot:unrootedTree": true, 
 "edgeBySourceId": {
 "node1139431": {
 "edge1139432": {
-"@length": 3.0, 
+"@length": 3, 
 "@source": "node1139431", 
 "@target": "node1139432"
 }, 
 "edge1139459": {
-"@length": 14.0, 
+"@length": 14, 
 "@source": "node1139431", 
 "@target": "node1139459"
 }
 }, 
 "node1139432": {
 "edge1139433": {
-"@length": 11.0, 
+"@length": 11, 
 "@source": "node1139432", 
 "@target": "node1139433"
 }, 
 "edge1139452": {
-"@length": 8.0, 
+"@length": 8, 
 "@source": "node1139432", 
 "@target": "node1139452"
 }
 }, 
 "node1139433": {
 "edge1139434": {
-"@length": 2.0, 
+"@length": 2, 
 "@source": "node1139433", 
 "@target": "node1139434"
 }, 
 "edge1139447": {
-"@length": 2.0, 
+"@length": 2, 
 "@source": "node1139433", 
 "@target": "node1139447"
 }
 }, 
 "node1139434": {
 "edge1139435": {
-"@length": 1.0, 
+"@length": 1, 
 "@source": "node1139434", 
 "@target": "node1139435"
 }, 
 "edge1139444": {
-"@length": 7.0, 
+"@length": 7, 
 "@source": "node1139434", 
 "@target": "node1139444"
 }
 }, 
 "node1139435": {
 "edge1139436": {
-"@length": 3.0, 
+"@length": 3, 
 "@source": "node1139435", 
 "@target": "node1139436"
 }, 
 "edge1139441": {
-"@length": 8.0, 
+"@length": 8, 
 "@source": "node1139435", 
 "@target": "node1139441"
 }
@@ -882,12 +966,12 @@
 }, 
 "node1139452": {
 "edge1139453": {
-"@length": 4.0, 
+"@length": 4, 
 "@source": "node1139452", 
 "@target": "node1139453"
 }, 
 "edge1139456": {
-"@length": 2.0, 
+"@length": 2, 
 "@source": "node1139452", 
 "@target": "node1139456"
 }
@@ -915,69 +999,109 @@
 }, 
 "nodeById": {
 "node1139431": {
-"@root": true
+"@root": true, 
+"labelType": "node id"
 }, 
-"node1139432": {}, 
-"node1139433": {}, 
-"node1139434": {}, 
-"node1139435": {}, 
-"node1139436": {}, 
+"node1139432": {
+"labelType": "node id"
+}, 
+"node1139433": {
+"labelType": "node id"
+}, 
+"node1139434": {
+"labelType": "node id"
+}, 
+"node1139435": {
+"labelType": "node id"
+}, 
+"node1139436": {
+"labelType": "node id"
+}, 
 "node1139437": {
-"@otu": "otu418591"
+"@otu": "otu418591", 
+"labelType": "original label"
 }, 
 "node1139438": {
-"@otu": "otu418569"
+"@otu": "otu418569", 
+"labelType": "original label"
 }, 
 "node1139439": {
-"@otu": "otu418525"
+"@otu": "otu418525", 
+"labelType": "original label"
 }, 
 "node1139440": {
-"@otu": "otu418588"
+"@otu": "otu418588", 
+"labelType": "original label"
 }, 
-"node1139441": {}, 
+"node1139441": {
+"labelType": "node id"
+}, 
 "node1139442": {
-"@otu": "otu418529"
+"@otu": "otu418529", 
+"labelType": "mapped label"
 }, 
 "node1139443": {
-"@otu": "otu418578"
+"@otu": "otu418578", 
+"labelType": "mapped label"
 }, 
-"node1139444": {}, 
+"node1139444": {
+"labelType": "node id"
+}, 
 "node1139445": {
-"@otu": "otu418562"
+"@otu": "otu418562", 
+"labelType": "mapped label"
 }, 
 "node1139446": {
-"@otu": "otu418589"
+"@otu": "otu418589", 
+"labelType": "mapped label"
 }, 
-"node1139447": {}, 
+"node1139447": {
+"labelType": "node id"
+}, 
 "node1139448": {
-"@otu": "otu418556"
+"@otu": "otu418556", 
+"labelType": "original label"
 }, 
 "node1139449": {
-"@otu": "otu418558"
+"@otu": "otu418558", 
+"labelType": "original label"
 }, 
 "node1139450": {
-"@otu": "otu418561"
+"@otu": "otu418561", 
+"labelType": "original label"
 }, 
 "node1139451": {
-"@otu": "otu418592"
+"@otu": "otu418592", 
+"labelType": "original label"
 }, 
-"node1139452": {}, 
-"node1139453": {}, 
+"node1139452": {
+"labelType": "node id"
+}, 
+"node1139453": {
+"labelType": "node id"
+}, 
 "node1139454": {
-"@otu": "otu418573"
+"@otu": "otu418573", 
+"labelType": "mapped label"
 }, 
 "node1139455": {
-"@otu": "otu418564"
+"@otu": "otu418564", 
+"labelType": "mapped label"
 }, 
-"node1139456": {}, 
+"node1139456": {
+"labelType": "node id"
+}, 
 "node1139457": {
-"@otu": "otu418577"
+"@otu": "otu418577", 
+"labelType": "mapped label"
 }, 
 "node1139458": {
-"@otu": "otu418528"
+"@otu": "otu418528", 
+"labelType": "mapped label"
 }, 
 "node1139459": {
-"@otu": "otu418566"
+"@otu": "otu418566", 
+"labelType": "mapped label"
 }
 }
 }

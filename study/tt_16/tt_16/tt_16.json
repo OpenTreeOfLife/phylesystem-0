@@ -116,6 +116,20 @@
 "$": "tree1"
 }
 ]
+}, 
+{
+"@filename": "PASTED.tre", 
+"@size": 49, 
+"@type": "newick", 
+"@url": "/curator/download/supporting_files.doc.9c013709fad49718.5041535445442e747265.tre", 
+"description": {
+"$": "Source data for tree 'tree2'"
+}, 
+"sourceForTree": [
+{
+"$": "tree2"
+}
+]
 }
 ]
 }
@@ -160,13 +174,24 @@
 "otus1": {
 "otuById": {
 "otu1": {
-"^ot:originalLabel": "Gorilla gorilla"
+"^ot:originalLabel": "Gorilla gorilla", 
+"^ot:ottId": 417965, 
+"^ot:ottTaxonName": "Gorilla gorilla"
 }, 
 "otu2": {
-"^ot:originalLabel": "Homo sapiens"
+"^ot:originalLabel": "Homo sapiens", 
+"^ot:ottId": 770315, 
+"^ot:ottTaxonName": "Homo sapiens"
 }, 
 "otu3": {
-"^ot:originalLabel": "Pan paniscus"
+"^ot:originalLabel": "Pan paniscus", 
+"^ot:ottId": 158484, 
+"^ot:ottTaxonName": "Pan paniscus"
+}, 
+"otu6": {
+"^ot:originalLabel": "Pan troglodytes", 
+"^ot:ottId": 417950, 
+"^ot:ottTaxonName": "Pan troglodytes"
 }
 }
 }
@@ -175,7 +200,8 @@
 "trees1": {
 "@otus": "otus1", 
 "^ot:treeElementOrder": [
-"tree1"
+"tree1", 
+"tree2"
 ], 
 "treeById": {
 "tree1": {
@@ -228,6 +254,59 @@
 }, 
 "node5": {
 "@otu": "otu3"
+}
+}
+}, 
+"tree2": {
+"@label": "Untitled (tree2)", 
+"@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
+"^ot:curatedType": "", 
+"^ot:inGroupClade": "", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
+"^ot:outGroupEdge": "", 
+"^ot:rootNodeId": "node6", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
+"^ot:unrootedTree": true, 
+"edgeBySourceId": {
+"node6": {
+"edge5": {
+"@source": "node6", 
+"@target": "node7"
+}, 
+"edge6": {
+"@source": "node6", 
+"@target": "node8"
+}
+}, 
+"node8": {
+"edge7": {
+"@source": "node8", 
+"@target": "node9"
+}, 
+"edge8": {
+"@source": "node8", 
+"@target": "node10"
+}
+}
+}, 
+"nodeById": {
+"node10": {
+"@otu": "otu6"
+}, 
+"node6": {
+"@root": true
+}, 
+"node7": {
+"@otu": "otu1"
+}, 
+"node8": {}, 
+"node9": {
+"@otu": "otu2"
 }
 }
 }

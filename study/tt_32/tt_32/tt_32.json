@@ -102,7 +102,22 @@
 "data": {
 "@movedToPermanentArchive": false, 
 "files": {
-"file": []
+"file": [
+{
+"@filename": "blephorus.tre", 
+"@size": 41, 
+"@type": "newick", 
+"@url": "/curator/download/supporting_files.doc.8f9877b0565353b2.626c6570686f7275732e747265.tre", 
+"description": {
+"$": "Source data for tree(s) 'tree2'"
+}, 
+"sourceForTree": [
+{
+"$": "tree2"
+}
+]
+}
+]
 }
 }, 
 "refersTo": {
@@ -116,7 +131,7 @@
 ]
 }, 
 "^ot:candidateTreeForSynthesis": [], 
-"^ot:comment": "Notes", 
+"^ot:comment": "Notes on this Blephorus study", 
 "^ot:curatorName": [
 "Jonathan A Rees"
 ], 
@@ -147,14 +162,86 @@
 }, 
 "otusById": {
 "otus1": {
-"otuById": {}
+"otuById": {
+"otu2": {
+"^ot:originalLabel": "Hyla aurea", 
+"^ot:ottId": 3619927, 
+"^ot:ottTaxonName": "Hyla aurea"
+}, 
+"otu3": {
+"^ot:originalLabel": "Hyla bicolor"
+}, 
+"otu4": {
+"^ot:originalLabel": "Hyla baderi"
+}
+}
 }
 }, 
 "treesById": {
 "trees1": {
 "@otus": "otus1", 
-"^ot:treeElementOrder": [], 
-"treeById": {}
+"^ot:treeElementOrder": [
+"tree2"
+], 
+"treeById": {
+"tree2": {
+"@label": "Untitled (tree2)", 
+"@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "ot:undefined", 
+"^ot:branchLengthTimeUnit": "Myr", 
+"^ot:inGroupClade": "node2", 
+"^ot:inferenceMethods": [
+"Bayesian inference"
+], 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
+"^ot:outGroupEdge": "", 
+"^ot:rootNodeId": "node2", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
+"^ot:treeDescription": "This is a really good tree", 
+"^ot:treeType": "species tree", 
+"^ot:unrootedTree": true, 
+"edgeBySourceId": {
+"node2": {
+"edge2": {
+"@source": "node2", 
+"@target": "node3"
+}, 
+"edge5": {
+"@source": "node2", 
+"@target": "node6"
+}
+}, 
+"node3": {
+"edge3": {
+"@source": "node3", 
+"@target": "node4"
+}, 
+"edge4": {
+"@source": "node3", 
+"@target": "node5"
+}
+}
+}, 
+"nodeById": {
+"node2": {
+"@root": true
+}, 
+"node3": {}, 
+"node4": {
+"@otu": "otu2"
+}, 
+"node5": {
+"@otu": "otu3"
+}, 
+"node6": {
+"@otu": "otu4"
+}
+}
+}
+}
 }
 }
 }

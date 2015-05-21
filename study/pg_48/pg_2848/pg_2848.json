@@ -36,14 +36,102 @@
 }
 ]
 }
+}, 
+{
+"@description": "Web-based interface for submitting, editing, and reviewing studies in the Open Tree of Life project.", 
+"@id": "opentree-curation-webapp", 
+"@name": "OpenTree curation webapp", 
+"@url": "https://github.com/OpenTreeOfLife/opentree", 
+"@version": "0.0.0"
 }
 ]
 }, 
 "^ot:annotationEvents": {
-"annotation": []
+"annotation": [
+{
+"@dateCreated": "2015-05-21T17:43:02.289Z", 
+"@description": "Aids for mapping study OTUs to OTT taxa", 
+"@id": "otu-mapping-hints", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "OTU_MAPPING_HINTS", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"searchContext": {
+"$": "All life"
+}, 
+"substitutions": {
+"substitution": [
+{
+"@active": false, 
+"@valid": true, 
+"new": {
+"$": ""
+}, 
+"old": {
+"$": ""
+}
+}, 
+{
+"@active": true, 
+"@valid": true, 
+"new": {
+"$": ""
+}, 
+"old": {
+"$": "GLURS(.*)\\s*$"
+}
+}
+]
+}, 
+"useFuzzyMatching": true
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}, 
+{
+"@dateCreated": "2015-05-21T17:43:02.289Z", 
+"@description": "Describes supporting data files for this study", 
+"@id": "supporting-files-metadata", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "SUPPORTING_FILE_INFO", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"@movedToPermanentArchive": false, 
+"files": {
+"file": []
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}
+]
 }, 
 "^ot:candidateTreeForSynthesis": [], 
-"^ot:curatorName": "Dail Laughinghouse", 
+"^ot:comment": "", 
+"^ot:curatorName": [
+"Dail Laughinghouse", 
+"Jim Allman"
+], 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S15306"
 }, 
@@ -52,6 +140,7 @@
 "^ot:messages": {
 "message": []
 }, 
+"^ot:notIntendedForSynthesis": false, 
 "^ot:otusElementOrder": [
 "otus2848"
 ], 
@@ -69,10 +158,12 @@
 "otus2848": {
 "otuById": {
 "otu423645": {
+"^ot:altLabel": "Cupriavidus metallidurans ", 
 "^ot:originalLabel": "Cupriavidus metallidurans GLURS be", 
 "^ot:treebaseOTUId": "Tl1385309"
 }, 
 "otu423646": {
+"^ot:altLabel": "Desulfohalobium retbaense ", 
 "^ot:originalLabel": "Desulfohalobium retbaense GLURS de", 
 "^ot:treebaseOTUId": "Tl1385310"
 }, 
@@ -83,6 +174,7 @@
 "^ot:treebaseOTUId": "Tl1385311"
 }, 
 "otu423648": {
+"^ot:altLabel": "Cyanothece sp. ", 
 "^ot:originalLabel": "Cyanothece sp. GLURS cy", 
 "^ot:treebaseOTUId": "Tl1385312"
 }, 
@@ -93,6 +185,7 @@
 "^ot:treebaseOTUId": "Tl1385313"
 }, 
 "otu423650": {
+"^ot:altLabel": "Acinetobacter sp. ", 
 "^ot:originalLabel": "Acinetobacter sp. GLURS ga", 
 "^ot:treebaseOTUId": "Tl1385314"
 }, 
@@ -5501,15 +5594,22 @@
 ], 
 "treeById": {
 "tree6612": {
+"@label": "Untitled (tree6612)", 
 "@xsi:type": "nex:FloatTree", 
 "^ot:branchLengthDescription": "", 
 "^ot:branchLengthMode": "", 
 "^ot:branchLengthTimeUnit": "", 
-"^ot:curatedType": "Fig. 5", 
+"^ot:inGroupClade": "", 
+"^ot:inferenceMethods": [], 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
 "^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node1153956", 
 "^ot:specifiedRoot": "", 
 "^ot:tag": [], 
+"^ot:treeDescription": "Fig. 5", 
+"^ot:treeType": "", 
+"^ot:unrootedTree": true, 
 "edgeBySourceId": {
 "node1153956": {
 "edge1153957": {
@@ -7757,15 +7857,22 @@
 }
 }, 
 "tree6613": {
+"@label": "Untitled (tree6613)", 
 "@xsi:type": "nex:FloatTree", 
 "^ot:branchLengthDescription": "", 
 "^ot:branchLengthMode": "", 
 "^ot:branchLengthTimeUnit": "", 
-"^ot:curatedType": "Fig. 6", 
+"^ot:inGroupClade": "", 
+"^ot:inferenceMethods": [], 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
 "^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node1154237", 
 "^ot:specifiedRoot": "", 
 "^ot:tag": [], 
+"^ot:treeDescription": "Fig. 6", 
+"^ot:treeType": "", 
+"^ot:unrootedTree": true, 
 "edgeBySourceId": {
 "node1154237": {
 "edge1154238": {
@@ -10879,15 +10986,22 @@
 }
 }, 
 "tree6614": {
+"@label": "Untitled (tree6614)", 
 "@xsi:type": "nex:FloatTree", 
 "^ot:branchLengthDescription": "", 
 "^ot:branchLengthMode": "", 
 "^ot:branchLengthTimeUnit": "", 
-"^ot:curatedType": "Fig. 4b", 
+"^ot:inGroupClade": "", 
+"^ot:inferenceMethods": [], 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
 "^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node1154627", 
 "^ot:specifiedRoot": "", 
 "^ot:tag": [], 
+"^ot:treeDescription": "Fig. 4b", 
+"^ot:treeType": "", 
+"^ot:unrootedTree": true, 
 "edgeBySourceId": {
 "node1154627": {
 "edge1154628": {

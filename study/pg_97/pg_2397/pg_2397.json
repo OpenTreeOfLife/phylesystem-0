@@ -36,19 +36,98 @@
 }
 ]
 }
+}, 
+{
+"@description": "Web-based interface for submitting, editing, and reviewing studies in the Open Tree of Life project.", 
+"@id": "opentree-curation-webapp", 
+"@name": "OpenTree curation webapp", 
+"@url": "https://github.com/OpenTreeOfLife/opentree", 
+"@version": "0.0.0"
 }
 ]
 }, 
 "^ot:annotationEvents": {
-"annotation": []
+"annotation": [
+{
+"@dateCreated": "2016-02-11T21:16:34.441Z", 
+"@description": "Aids for mapping study OTUs to OTT taxa", 
+"@id": "otu-mapping-hints", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "OTU_MAPPING_HINTS", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"searchContext": {
+"$": "All life"
+}, 
+"substitutions": {
+"substitution": [
+{
+"@active": false, 
+"@valid": true, 
+"new": {
+"$": ""
+}, 
+"old": {
+"$": ""
+}
+}
+]
+}, 
+"useFuzzyMatching": false
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}, 
+{
+"@dateCreated": "2016-02-11T21:16:34.441Z", 
+"@description": "Describes supporting data files for this study", 
+"@id": "supporting-files-metadata", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "SUPPORTING_FILE_INFO", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"@movedToPermanentArchive": false, 
+"files": {
+"file": []
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}
+]
 }, 
 "^ot:candidateTreeForSynthesis": [], 
-"^ot:curatorName": "Laura Katz", 
+"^ot:comment": "", 
+"^ot:curatorName": [
+"Laura Katz", 
+"Benjamin Redelings"
+], 
+"^ot:dataDeposit": {
+"@href": ""
+}, 
 "^ot:focalClade": 93302, 
 "^ot:focalCladeOTTTaxonName": "cellular organisms", 
-"^ot:messages": {
-"message": []
-}, 
+"^ot:notIntendedForSynthesis": false, 
 "^ot:otusElementOrder": [
 "otus2397"
 ], 
@@ -164,7 +243,9 @@
 "^ot:ottTaxonName": "Clostridium acetobutylicum"
 }, 
 "otu339323": {
-"^ot:originalLabel": "Synechocystis sp."
+"^ot:originalLabel": "Synechocystis sp.", 
+"^ot:ottId": 319255, 
+"^ot:ottTaxonName": "Synechocystis"
 }, 
 "otu339324": {
 "^ot:originalLabel": "Treponema pallidum", 
@@ -292,23 +373,22 @@
 ], 
 "treeById": {
 "tree5034": {
+"@label": "Untitled (tree5034)", 
 "@xsi:type": "nex:FloatTree", 
 "^ot:branchLengthDescription": "", 
-"^ot:branchLengthMode": "", 
-"^ot:branchLengthTimeUnit": "", 
+"^ot:branchLengthMode": "ot:undefined", 
+"^ot:branchLengthTimeUnit": "Myr", 
 "^ot:curatedType": "Fig 1a", 
-"^ot:inGroupClade": "node874439", 
+"^ot:inGroupClade": "tree5034_ROOT", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
 "^ot:outGroupEdge": "", 
-"^ot:rootNodeId": "node874439", 
-"^ot:specifiedRoot": "", 
+"^ot:rootNodeId": "tree5034_ROOT", 
+"^ot:specifiedRoot": "tree5034_ROOT", 
 "^ot:tag": [], 
+"^ot:unrootedTree": true, 
 "edgeBySourceId": {
 "node874439": {
-"edge874440": {
-"@length": 0.0203924, 
-"@source": "node874439", 
-"@target": "node874440"
-}, 
 "edge874503": {
 "@length": 0.0407419, 
 "@source": "node874439", 
@@ -321,10 +401,10 @@
 }
 }, 
 "node874440": {
-"edge874441": {
-"@length": 0.0152464, 
+"edge874440": {
+"@length": 0.0203924, 
 "@source": "node874440", 
-"@target": "node874441"
+"@target": "node874439"
 }, 
 "edge874502": {
 "@length": 0.156567, 
@@ -333,10 +413,10 @@
 }
 }, 
 "node874441": {
-"edge874442": {
-"@length": 0.0627327, 
+"edge874441": {
+"@length": 0.0152464, 
 "@source": "node874441", 
-"@target": "node874442"
+"@target": "node874440"
 }, 
 "edge874497": {
 "@length": 0.0239931, 
@@ -345,10 +425,10 @@
 }
 }, 
 "node874442": {
-"edge874443": {
-"@length": 0.0327039, 
+"edge874442": {
+"@length": 0.0627327, 
 "@source": "node874442", 
-"@target": "node874443"
+"@target": "node874441"
 }, 
 "edge874496": {
 "@length": 0.147061, 
@@ -357,10 +437,10 @@
 }
 }, 
 "node874443": {
-"edge874444": {
-"@length": 0.0224039, 
+"edge874443": {
+"@length": 0.0327039, 
 "@source": "node874443", 
-"@target": "node874444"
+"@target": "node874442"
 }, 
 "edge874495": {
 "@length": 0.16745, 
@@ -369,10 +449,10 @@
 }
 }, 
 "node874444": {
-"edge874445": {
-"@length": 0.02081, 
+"edge874444": {
+"@length": 0.0224039, 
 "@source": "node874444", 
-"@target": "node874445"
+"@target": "node874443"
 }, 
 "edge874492": {
 "@length": 0.309915, 
@@ -381,15 +461,15 @@
 }
 }, 
 "node874445": {
+"edge874445": {
+"@length": 0.02081, 
+"@source": "node874445", 
+"@target": "node874444"
+}, 
 "edge874446": {
 "@length": 0.461493, 
 "@source": "node874445", 
 "@target": "node874446"
-}, 
-"edge874465": {
-"@length": 0.053968, 
-"@source": "node874445", 
-"@target": "node874465"
 }
 }, 
 "node874446": {
@@ -501,15 +581,15 @@
 }
 }, 
 "node874465": {
+"edge874465": {
+"@length": 0.053968, 
+"@source": "node874465", 
+"@target": "node874445"
+}, 
 "edge874466": {
 "@length": 0.0420663, 
 "@source": "node874465", 
 "@target": "node874466"
-}, 
-"edge874477": {
-"@length": 0.483759, 
-"@source": "node874465", 
-"@target": "node874477"
 }
 }, 
 "node874466": {
@@ -715,12 +795,21 @@
 "@source": "node874505", 
 "@target": "node874507"
 }
+}, 
+"tree5034_ROOT": {
+"edge874477": {
+"@length": 0.483759, 
+"@source": "tree5034_ROOT", 
+"@target": "node874477"
+}, 
+"tree5034_ROOT_EDGE": {
+"@source": "tree5034_ROOT", 
+"@target": "node874465"
+}
 }
 }, 
 "nodeById": {
-"node874439": {
-"@root": true
-}, 
+"node874439": {}, 
 "node874440": {}, 
 "node874441": {}, 
 "node874442": {}, 
@@ -861,20 +950,27 @@
 }, 
 "node874508": {
 "@otu": "otu339338"
+}, 
+"tree5034_ROOT": {
+"@root": true
 }
 }
 }, 
 "tree5035": {
+"@label": "Untitled (tree5035)", 
 "@xsi:type": "nex:FloatTree", 
 "^ot:branchLengthDescription": "", 
-"^ot:branchLengthMode": "", 
-"^ot:branchLengthTimeUnit": "", 
+"^ot:branchLengthMode": "ot:undefined", 
+"^ot:branchLengthTimeUnit": "Myr", 
 "^ot:curatedType": "Fig 1b", 
-"^ot:inGroupClade": "node874509", 
+"^ot:inGroupClade": "tree5035_ROOT", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
 "^ot:outGroupEdge": "", 
-"^ot:rootNodeId": "node874509", 
-"^ot:specifiedRoot": "", 
+"^ot:rootNodeId": "tree5035_ROOT", 
+"^ot:specifiedRoot": "tree5035_ROOT", 
 "^ot:tag": [], 
+"^ot:unrootedTree": true, 
 "edgeBySourceId": {
 "node874509": {
 "edge874510": {
@@ -886,35 +982,30 @@
 "@length": 0.258147, 
 "@source": "node874509", 
 "@target": "node874511"
-}, 
-"edge874512": {
-"@length": 0.0625284, 
-"@source": "node874509", 
-"@target": "node874512"
 }
 }, 
 "node874512": {
+"edge874512": {
+"@length": 0.0625284, 
+"@source": "node874512", 
+"@target": "node874509"
+}, 
 "edge874513": {
 "@length": 0.209212, 
 "@source": "node874512", 
 "@target": "node874513"
-}, 
-"edge874514": {
-"@length": 0.0185541, 
-"@source": "node874512", 
-"@target": "node874514"
 }
 }, 
 "node874514": {
+"edge874514": {
+"@length": 0.0185541, 
+"@source": "node874514", 
+"@target": "node874512"
+}, 
 "edge874515": {
 "@length": 0.0397152, 
 "@source": "node874514", 
 "@target": "node874515"
-}, 
-"edge874520": {
-"@length": 0.0256034, 
-"@source": "node874514", 
-"@target": "node874520"
 }
 }, 
 "node874515": {
@@ -942,15 +1033,15 @@
 }
 }, 
 "node874520": {
+"edge874520": {
+"@length": 0.0256034, 
+"@source": "node874520", 
+"@target": "node874514"
+}, 
 "edge874521": {
 "@length": 0.0326476, 
 "@source": "node874520", 
 "@target": "node874521"
-}, 
-"edge874524": {
-"@length": 0.484761, 
-"@source": "node874520", 
-"@target": "node874524"
 }
 }, 
 "node874521": {
@@ -1240,12 +1331,21 @@
 "@source": "node874568", 
 "@target": "node874570"
 }
+}, 
+"tree5035_ROOT": {
+"edge874524": {
+"@length": 0.484761, 
+"@source": "tree5035_ROOT", 
+"@target": "node874524"
+}, 
+"tree5035_ROOT_EDGE": {
+"@source": "tree5035_ROOT", 
+"@target": "node874520"
+}
 }
 }, 
 "nodeById": {
-"node874509": {
-"@root": true
-}, 
+"node874509": {}, 
 "node874510": {
 "@otu": "otu339325"
 }, 
@@ -1370,20 +1470,27 @@
 }, 
 "node874570": {
 "@otu": "otu339338"
+}, 
+"tree5035_ROOT": {
+"@root": true
 }
 }
 }, 
 "tree5036": {
+"@label": "Untitled (tree5036)", 
 "@xsi:type": "nex:FloatTree", 
 "^ot:branchLengthDescription": "", 
-"^ot:branchLengthMode": "", 
-"^ot:branchLengthTimeUnit": "", 
+"^ot:branchLengthMode": "ot:undefined", 
+"^ot:branchLengthTimeUnit": "Myr", 
 "^ot:curatedType": "Fig 1c: NDRH_NDCH tree", 
-"^ot:inGroupClade": "node874571", 
+"^ot:inGroupClade": "tree5036_ROOT", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
 "^ot:outGroupEdge": "", 
-"^ot:rootNodeId": "node874571", 
-"^ot:specifiedRoot": "", 
+"^ot:rootNodeId": "tree5036_ROOT", 
+"^ot:specifiedRoot": "tree5036_ROOT", 
 "^ot:tag": [], 
+"^ot:unrootedTree": true, 
 "edgeBySourceId": {
 "node874571": {
 "edge874572": {
@@ -1395,23 +1502,18 @@
 "@length": 0.0791805, 
 "@source": "node874571", 
 "@target": "node874573"
-}, 
-"edge874574": {
-"@length": 0.0155105, 
-"@source": "node874571", 
-"@target": "node874574"
 }
 }, 
 "node874574": {
+"edge874574": {
+"@length": 0.0155105, 
+"@source": "node874574", 
+"@target": "node874571"
+}, 
 "edge874575": {
 "@length": 0.0161709, 
 "@source": "node874574", 
 "@target": "node874575"
-}, 
-"edge874578": {
-"@length": 0.0493849, 
-"@source": "node874574", 
-"@target": "node874578"
 }
 }, 
 "node874575": {
@@ -1427,15 +1529,15 @@
 }
 }, 
 "node874578": {
+"edge874578": {
+"@length": 0.0493849, 
+"@source": "node874578", 
+"@target": "node874574"
+}, 
 "edge874579": {
 "@length": 0.0325668, 
 "@source": "node874578", 
 "@target": "node874579"
-}, 
-"edge874582": {
-"@length": 0.0251754, 
-"@source": "node874578", 
-"@target": "node874582"
 }
 }, 
 "node874579": {
@@ -1451,58 +1553,58 @@
 }
 }, 
 "node874582": {
+"edge874582": {
+"@length": 0.0251754, 
+"@source": "node874582", 
+"@target": "node874578"
+}, 
 "edge874583": {
 "@length": 0.321555, 
 "@source": "node874582", 
 "@target": "node874583"
-}, 
-"edge874584": {
-"@length": 0.0345914, 
-"@source": "node874582", 
-"@target": "node874584"
 }
 }, 
 "node874584": {
+"edge874584": {
+"@length": 0.0345914, 
+"@source": "node874584", 
+"@target": "node874582"
+}, 
 "edge874585": {
 "@length": 0.261995, 
 "@source": "node874584", 
 "@target": "node874585"
-}, 
-"edge874586": {
-"@length": 0.0607961, 
-"@source": "node874584", 
-"@target": "node874586"
 }
 }, 
 "node874586": {
+"edge874586": {
+"@length": 0.0607961, 
+"@source": "node874586", 
+"@target": "node874584"
+}, 
 "edge874587": {
 "@length": 0.326846, 
 "@source": "node874586", 
 "@target": "node874587"
-}, 
-"edge874588": {
-"@length": 0.0925272, 
-"@source": "node874586", 
-"@target": "node874588"
 }
 }, 
 "node874588": {
+"edge874588": {
+"@length": 0.0925272, 
+"@source": "node874588", 
+"@target": "node874586"
+}, 
 "edge874589": {
 "@length": 0.412788, 
 "@source": "node874588", 
 "@target": "node874589"
-}, 
-"edge874590": {
-"@length": 0.429494, 
-"@source": "node874588", 
-"@target": "node874590"
 }
 }, 
 "node874590": {
-"edge874591": {
-"@length": 0.0505825, 
+"edge874590": {
+"@length": 0.429494, 
 "@source": "node874590", 
-"@target": "node874591"
+"@target": "node874588"
 }, 
 "edge874618": {
 "@length": 0.0235138, 
@@ -1511,15 +1613,15 @@
 }
 }, 
 "node874591": {
+"edge874591": {
+"@length": 0.0505825, 
+"@source": "node874591", 
+"@target": "node874590"
+}, 
 "edge874592": {
 "@length": 0.037497, 
 "@source": "node874591", 
 "@target": "node874592"
-}, 
-"edge874603": {
-"@length": 0.489671, 
-"@source": "node874591", 
-"@target": "node874603"
 }
 }, 
 "node874592": {
@@ -1797,12 +1899,21 @@
 "@source": "node874636", 
 "@target": "node874638"
 }
+}, 
+"tree5036_ROOT": {
+"edge874603": {
+"@length": 0.489671, 
+"@source": "tree5036_ROOT", 
+"@target": "node874603"
+}, 
+"tree5036_ROOT_EDGE": {
+"@source": "tree5036_ROOT", 
+"@target": "node874591"
+}
 }
 }, 
 "nodeById": {
-"node874571": {
-"@root": true
-}, 
+"node874571": {}, 
 "node874572": {
 "@otu": "otu339305"
 }, 
@@ -1943,20 +2054,27 @@
 }, 
 "node874640": {
 "@otu": "otu339338"
+}, 
+"tree5036_ROOT": {
+"@root": true
 }
 }
 }, 
 "tree5037": {
+"@label": "Untitled (tree5037)", 
 "@xsi:type": "nex:FloatTree", 
 "^ot:branchLengthDescription": "", 
-"^ot:branchLengthMode": "", 
-"^ot:branchLengthTimeUnit": "", 
+"^ot:branchLengthMode": "ot:undefined", 
+"^ot:branchLengthTimeUnit": "Myr", 
 "^ot:curatedType": "Fig 1d Cat tree", 
-"^ot:inGroupClade": "node874641", 
+"^ot:inGroupClade": "tree5037_ROOT", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
 "^ot:outGroupEdge": "", 
-"^ot:rootNodeId": "node874641", 
-"^ot:specifiedRoot": "", 
+"^ot:rootNodeId": "tree5037_ROOT", 
+"^ot:specifiedRoot": "tree5037_ROOT", 
 "^ot:tag": [], 
+"^ot:unrootedTree": true, 
 "edgeBySourceId": {
 "node874641": {
 "edge874642": {
@@ -1968,11 +2086,6 @@
 "@length": 0.013468, 
 "@source": "node874641", 
 "@target": "node874643"
-}, 
-"edge874646": {
-"@length": 0.007685, 
-"@source": "node874641", 
-"@target": "node874646"
 }
 }, 
 "node874643": {
@@ -1988,39 +2101,39 @@
 }
 }, 
 "node874646": {
+"edge874646": {
+"@length": 0.007685, 
+"@source": "node874646", 
+"@target": "node874641"
+}, 
 "edge874647": {
 "@length": 0.04058, 
 "@source": "node874646", 
 "@target": "node874647"
-}, 
-"edge874648": {
-"@length": 0.010025, 
-"@source": "node874646", 
-"@target": "node874648"
 }
 }, 
 "node874648": {
+"edge874648": {
+"@length": 0.010025, 
+"@source": "node874648", 
+"@target": "node874646"
+}, 
 "edge874649": {
 "@length": 0.178667, 
 "@source": "node874648", 
 "@target": "node874649"
-}, 
-"edge874650": {
-"@length": 0.018606, 
-"@source": "node874648", 
-"@target": "node874650"
 }
 }, 
 "node874650": {
+"edge874650": {
+"@length": 0.018606, 
+"@source": "node874650", 
+"@target": "node874648"
+}, 
 "edge874651": {
 "@length": 0.024211, 
 "@source": "node874650", 
 "@target": "node874651"
-}, 
-"edge874656": {
-"@length": 0.036755, 
-"@source": "node874650", 
-"@target": "node874656"
 }
 }, 
 "node874651": {
@@ -2048,10 +2161,10 @@
 }
 }, 
 "node874656": {
-"edge874657": {
-"@length": 0.15731, 
+"edge874656": {
+"@length": 0.036755, 
 "@source": "node874656", 
-"@target": "node874657"
+"@target": "node874650"
 }, 
 "edge874684": {
 "@length": 0.027579, 
@@ -2060,34 +2173,34 @@
 }
 }, 
 "node874657": {
+"edge874657": {
+"@length": 0.15731, 
+"@source": "node874657", 
+"@target": "node874656"
+}, 
 "edge874658": {
 "@length": 0.079035, 
 "@source": "node874657", 
 "@target": "node874658"
-}, 
-"edge874659": {
-"@length": 0.030419, 
-"@source": "node874657", 
-"@target": "node874659"
 }
 }, 
 "node874659": {
+"edge874659": {
+"@length": 0.030419, 
+"@source": "node874659", 
+"@target": "node874657"
+}, 
 "edge874660": {
 "@length": 0.214198, 
 "@source": "node874659", 
 "@target": "node874660"
-}, 
-"edge874661": {
-"@length": 0.017725, 
-"@source": "node874659", 
-"@target": "node874661"
 }
 }, 
 "node874661": {
-"edge874662": {
-"@length": 0.068869, 
+"edge874661": {
+"@length": 0.017725, 
 "@source": "node874661", 
-"@target": "node874662"
+"@target": "node874659"
 }, 
 "edge874679": {
 "@length": 0.059686, 
@@ -2096,15 +2209,15 @@
 }
 }, 
 "node874662": {
+"edge874662": {
+"@length": 0.068869, 
+"@source": "node874662", 
+"@target": "node874661"
+}, 
 "edge874663": {
 "@length": 0.059234, 
 "@source": "node874662", 
 "@target": "node874663"
-}, 
-"edge874664": {
-"@length": 0.942782, 
-"@source": "node874662", 
-"@target": "node874664"
 }
 }, 
 "node874664": {
@@ -2356,12 +2469,21 @@
 "@source": "node874705", 
 "@target": "node874707"
 }
+}, 
+"tree5037_ROOT": {
+"edge874664": {
+"@length": 0.942782, 
+"@source": "tree5037_ROOT", 
+"@target": "node874664"
+}, 
+"tree5037_ROOT_EDGE": {
+"@source": "tree5037_ROOT", 
+"@target": "node874662"
+}
 }
 }, 
 "nodeById": {
-"node874641": {
-"@root": true
-}, 
+"node874641": {}, 
 "node874642": {
 "@otu": "otu339338"
 }, 
@@ -2500,20 +2622,27 @@
 }, 
 "node874708": {
 "@otu": "otu339303"
+}, 
+"tree5037_ROOT": {
+"@root": true
 }
 }
 }, 
 "tree5038": {
+"@label": "Untitled (tree5038)", 
 "@xsi:type": "nex:FloatTree", 
 "^ot:branchLengthDescription": "", 
-"^ot:branchLengthMode": "", 
-"^ot:branchLengthTimeUnit": "", 
+"^ot:branchLengthMode": "ot:undefined", 
+"^ot:branchLengthTimeUnit": "Myr", 
 "^ot:curatedType": "Fig 2a Cat tree", 
-"^ot:inGroupClade": "node874709", 
+"^ot:inGroupClade": "tree5038_ROOT", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
 "^ot:outGroupEdge": "", 
-"^ot:rootNodeId": "node874709", 
-"^ot:specifiedRoot": "", 
+"^ot:rootNodeId": "tree5038_ROOT", 
+"^ot:specifiedRoot": "tree5038_ROOT", 
 "^ot:tag": [], 
+"^ot:unrootedTree": true, 
 "edgeBySourceId": {
 "node874709": {
 "edge874710": {
@@ -2525,23 +2654,18 @@
 "@length": 0.148018, 
 "@source": "node874709", 
 "@target": "node874711"
-}, 
-"edge874712": {
-"@length": 0.034909, 
-"@source": "node874709", 
-"@target": "node874712"
 }
 }, 
 "node874712": {
+"edge874712": {
+"@length": 0.034909, 
+"@source": "node874712", 
+"@target": "node874709"
+}, 
 "edge874713": {
 "@length": 0.038497, 
 "@source": "node874712", 
 "@target": "node874713"
-}, 
-"edge874716": {
-"@length": 0.021832, 
-"@source": "node874712", 
-"@target": "node874716"
 }
 }, 
 "node874713": {
@@ -2557,27 +2681,27 @@
 }
 }, 
 "node874716": {
+"edge874716": {
+"@length": 0.021832, 
+"@source": "node874716", 
+"@target": "node874712"
+}, 
 "edge874717": {
 "@length": 0.204832, 
 "@source": "node874716", 
 "@target": "node874717"
-}, 
-"edge874718": {
-"@length": 0.089686, 
-"@source": "node874716", 
-"@target": "node874718"
 }
 }, 
 "node874718": {
+"edge874718": {
+"@length": 0.089686, 
+"@source": "node874718", 
+"@target": "node874716"
+}, 
 "edge874719": {
 "@length": 0.093517, 
 "@source": "node874718", 
 "@target": "node874719"
-}, 
-"edge874724": {
-"@length": 0.05616, 
-"@source": "node874718", 
-"@target": "node874724"
 }
 }, 
 "node874719": {
@@ -2605,15 +2729,15 @@
 }
 }, 
 "node874724": {
+"edge874724": {
+"@length": 0.05616, 
+"@source": "node874724", 
+"@target": "node874718"
+}, 
 "edge874725": {
 "@length": 0.108306, 
 "@source": "node874724", 
 "@target": "node874725"
-}, 
-"edge874732": {
-"@length": 0.045317, 
-"@source": "node874724", 
-"@target": "node874732"
 }
 }, 
 "node874725": {
@@ -2653,10 +2777,10 @@
 }
 }, 
 "node874732": {
-"edge874733": {
-"@length": 0.093565, 
+"edge874732": {
+"@length": 0.045317, 
 "@source": "node874732", 
-"@target": "node874733"
+"@target": "node874724"
 }, 
 "edge874759": {
 "@length": 0.050829, 
@@ -2665,22 +2789,22 @@
 }
 }, 
 "node874733": {
+"edge874733": {
+"@length": 0.093565, 
+"@source": "node874733", 
+"@target": "node874732"
+}, 
 "edge874734": {
 "@length": 0.170281, 
 "@source": "node874733", 
 "@target": "node874734"
-}, 
-"edge874735": {
-"@length": 0.03855, 
-"@source": "node874733", 
-"@target": "node874735"
 }
 }, 
 "node874735": {
-"edge874736": {
-"@length": 2.72149, 
+"edge874735": {
+"@length": 0.03855, 
 "@source": "node874735", 
-"@target": "node874736"
+"@target": "node874733"
 }, 
 "edge874750": {
 "@length": 0.032644, 
@@ -2932,12 +3056,21 @@
 "@source": "node874777", 
 "@target": "node874779"
 }
+}, 
+"tree5038_ROOT": {
+"edge874736": {
+"@length": 2.72149, 
+"@source": "tree5038_ROOT", 
+"@target": "node874736"
+}, 
+"tree5038_ROOT_EDGE": {
+"@source": "tree5038_ROOT", 
+"@target": "node874735"
+}
 }
 }, 
 "nodeById": {
-"node874709": {
-"@root": true
-}, 
+"node874709": {}, 
 "node874710": {
 "@otu": "otu339338"
 }, 
@@ -3081,20 +3214,27 @@
 }, 
 "node874779": {
 "@otu": "otu339303"
+}, 
+"tree5038_ROOT": {
+"@root": true
 }
 }
 }, 
 "tree5039": {
+"@label": "Untitled (tree5039)", 
 "@xsi:type": "nex:FloatTree", 
 "^ot:branchLengthDescription": "", 
-"^ot:branchLengthMode": "", 
-"^ot:branchLengthTimeUnit": "", 
+"^ot:branchLengthMode": "ot:undefined", 
+"^ot:branchLengthTimeUnit": "Myr", 
 "^ot:curatedType": "Fig 2b 63 cat tree", 
-"^ot:inGroupClade": "node874780", 
+"^ot:inGroupClade": "tree5039_ROOT", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
 "^ot:outGroupEdge": "", 
-"^ot:rootNodeId": "node874780", 
-"^ot:specifiedRoot": "", 
+"^ot:rootNodeId": "tree5039_ROOT", 
+"^ot:specifiedRoot": "tree5039_ROOT", 
 "^ot:tag": [], 
+"^ot:unrootedTree": true, 
 "edgeBySourceId": {
 "node874780": {
 "edge874781": {
@@ -3106,59 +3246,54 @@
 "@length": 0.450998, 
 "@source": "node874780", 
 "@target": "node874782"
-}, 
-"edge874783": {
-"@length": 0.08788, 
-"@source": "node874780", 
-"@target": "node874783"
 }
 }, 
 "node874783": {
+"edge874783": {
+"@length": 0.08788, 
+"@source": "node874783", 
+"@target": "node874780"
+}, 
 "edge874784": {
 "@length": 0.783208, 
 "@source": "node874783", 
 "@target": "node874784"
-}, 
-"edge874785": {
-"@length": 0.112757, 
-"@source": "node874783", 
-"@target": "node874785"
 }
 }, 
 "node874785": {
+"edge874785": {
+"@length": 0.112757, 
+"@source": "node874785", 
+"@target": "node874783"
+}, 
 "edge874786": {
 "@length": 0.412284, 
 "@source": "node874785", 
 "@target": "node874786"
-}, 
-"edge874787": {
-"@length": 0.04389, 
-"@source": "node874785", 
-"@target": "node874787"
 }
 }, 
 "node874787": {
+"edge874787": {
+"@length": 0.04389, 
+"@source": "node874787", 
+"@target": "node874785"
+}, 
 "edge874788": {
 "@length": 0.348965, 
 "@source": "node874787", 
 "@target": "node874788"
-}, 
-"edge874789": {
-"@length": 0.090741, 
-"@source": "node874787", 
-"@target": "node874789"
 }
 }, 
 "node874789": {
+"edge874789": {
+"@length": 0.090741, 
+"@source": "node874789", 
+"@target": "node874787"
+}, 
 "edge874790": {
 "@length": 0.309442, 
 "@source": "node874789", 
 "@target": "node874790"
-}, 
-"edge874791": {
-"@length": 0.106186, 
-"@source": "node874789", 
-"@target": "node874791"
 }
 }, 
 "node874791": {
@@ -3436,12 +3571,21 @@
 "@source": "node874835", 
 "@target": "node874837"
 }
+}, 
+"tree5039_ROOT": {
+"edge874791": {
+"@length": 0.106186, 
+"@source": "tree5039_ROOT", 
+"@target": "node874789"
+}, 
+"tree5039_ROOT_EDGE": {
+"@source": "tree5039_ROOT", 
+"@target": "node874791"
+}
 }
 }, 
 "nodeById": {
-"node874780": {
-"@root": true
-}, 
+"node874780": {}, 
 "node874781": {
 "@otu": "otu339313"
 }, 
@@ -3558,6 +3702,9 @@
 }, 
 "node874837": {
 "@otu": "otu339338"
+}, 
+"tree5039_ROOT": {
+"@root": true
 }
 }
 }

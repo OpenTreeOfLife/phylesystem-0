@@ -51,22 +51,109 @@
 }
 ]
 }
+}, 
+{
+"@description": "Web-based interface for submitting, editing, and reviewing studies in the Open Tree of Life project.", 
+"@id": "opentree-curation-webapp", 
+"@name": "OpenTree curation webapp", 
+"@url": "https://github.com/OpenTreeOfLife/opentree", 
+"@version": "0.0.0"
 }
 ]
 }, 
 "^ot:annotationEvents": {
-"annotation": []
+"annotation": [
+{
+"@dateCreated": "2016-10-10T14:34:27.838Z", 
+"@description": "Aids for mapping study OTUs to OTT taxa", 
+"@id": "otu-mapping-hints", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "OTU_MAPPING_HINTS", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"searchContext": {
+"$": "All life"
 }, 
-"^ot:curatorName": "Jim Allman", 
+"substitutions": {
+"substitution": [
+{
+"@active": false, 
+"@valid": true, 
+"new": {
+"$": ""
+}, 
+"old": {
+"$": ""
+}
+}
+]
+}, 
+"useFuzzyMatching": false
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}, 
+{
+"@dateCreated": "2016-10-10T14:34:27.838Z", 
+"@description": "Describes supporting data files for this study", 
+"@id": "supporting-files-metadata", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "SUPPORTING_FILE_INFO", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"@movedToPermanentArchive": false, 
+"files": {
+"file": []
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}
+]
+}, 
+"^ot:comment": "This is Jim's test study for curation-app review.", 
+"^ot:curatorName": [
+"Jim Allman"
+], 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S15822"
 }, 
+"^ot:focalClade": 563165, 
+"^ot:focalCladeOTTTaxonName": "Felis", 
 "^ot:otusElementOrder": [
 "Tls38246"
 ], 
 "^ot:studyId": "tt_192", 
-"^ot:studyPublicationReference": "Walters-conte K.B., Johnson D.L., Johnson W.E., O'brien S., & Pecon-slattery J. 2014. The Dynamic Proliferation of CanSINEs Mirrors the Complex Evolution of Feliforms. BMC Evolutionary Biology, .", 
+"^ot:studyPublication": {
+"@href": "http://dx.doi.org/10.1186/1471-2148-14-137"
+}, 
+"^ot:studyPublicationReference": "Walters-conte K.B., Johnson D.L., Johnson W.E., O'brien S., & Pecon-slattery J. 2014. The Dynamic Proliferation of CanSINEs Mirrors the Complex Evolution of Feliforms. BMC Evolutionary Biology.", 
 "^ot:studyYear": 2014, 
+"^ot:tag": [
+"cats", 
+"CanSINEs", 
+"feliforms"
+], 
 "^ot:taxonLinkPrefixes": {
 "@ubio": "http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:", 
 "@uniprot": "http://purl.uniprot.org/taxonomy/"
@@ -645,7 +732,19 @@
 "Tr75512": {
 "@label": "tree 1", 
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
+"^ot:candidateForSynthesis": "ot:notReviewed", 
+"^ot:curatedType": "", 
+"^ot:inGroupClade": "", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "Tn11764867", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
+"^ot:unrootedTree": true, 
 "^tb:kind.tree": "Species Tree", 
 "^tb:ntax.tree": 89, 
 "^tb:quality.tree": "Unrated", 
@@ -943,17 +1042,17 @@
 "@target": "Tn11764882"
 }, 
 "edge66877": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn11764884", 
 "@target": "Tn11764911"
 }, 
 "edge66879": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn11764884", 
 "@target": "Tn11764822"
 }, 
 "edge66881": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn11764884", 
 "@target": "Tn11764829"
 }, 
@@ -968,7 +1067,7 @@
 "@target": "Tn11764899"
 }, 
 "edge66887": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn11764884", 
 "@target": "Tn11764823"
 }, 
@@ -1008,7 +1107,7 @@
 "@target": "Tn11764830"
 }, 
 "edge66903": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn11764884", 
 "@target": "Tn11764848"
 }, 

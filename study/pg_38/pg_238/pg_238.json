@@ -36,14 +36,92 @@
 }
 ]
 }
+}, 
+{
+"@description": "Web-based interface for submitting, editing, and reviewing studies in the Open Tree of Life project.", 
+"@id": "opentree-curation-webapp", 
+"@name": "OpenTree curation webapp", 
+"@url": "https://github.com/OpenTreeOfLife/opentree", 
+"@version": "0.0.0"
 }
 ]
 }, 
 "^ot:annotationEvents": {
-"annotation": []
+"annotation": [
+{
+"@dateCreated": "2015-03-05T23:00:06.537Z", 
+"@description": "Aids for mapping study OTUs to OTT taxa", 
+"@id": "otu-mapping-hints", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "OTU_MAPPING_HINTS", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"searchContext": {
+"$": "All life"
+}, 
+"substitutions": {
+"substitution": [
+{
+"@active": false, 
+"@valid": true, 
+"new": {
+"$": ""
+}, 
+"old": {
+"$": ""
+}
+}
+]
+}, 
+"useFuzzyMatching": false
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}, 
+{
+"@dateCreated": "2015-03-05T23:00:06.537Z", 
+"@description": "Describes supporting data files for this study", 
+"@id": "supporting-files-metadata", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "SUPPORTING_FILE_INFO", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"@movedToPermanentArchive": false, 
+"files": {
+"file": []
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}
+]
 }, 
 "^ot:candidateTreeForSynthesis": [], 
-"^ot:curatorName": "Romina Gazis", 
+"^ot:comment": "", 
+"^ot:curatorName": [
+"Romina Gazis", 
+"rgazis"
+], 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S2137"
 }, 
@@ -52,6 +130,7 @@
 "^ot:messages": {
 "message": []
 }, 
+"^ot:notIntendedForSynthesis": false, 
 "^ot:otusElementOrder": [
 "otus238"
 ], 
@@ -99,7 +178,9 @@
 "^ot:ottTaxonName": "Coltricia perennis"
 }, 
 "otu63094": {
-"^ot:originalLabel": "Cotylidia sp"
+"^ot:originalLabel": "Cotylidia sp", 
+"^ot:ottId": 811601, 
+"^ot:ottTaxonName": "Cotylidia"
 }, 
 "otu63095": {
 "^ot:originalLabel": "Phanerochaete chrysosporium", 
@@ -147,7 +228,9 @@
 "^ot:ottTaxonName": "Yarrowia lipolytica"
 }, 
 "otu63104": {
-"^ot:originalLabel": "Zygoascus steatolyticus"
+"^ot:originalLabel": "Zygoascus steatolyticus", 
+"^ot:ottId": 904300, 
+"^ot:ottTaxonName": "Zygoascus steatolyticus"
 }, 
 "otu63105": {
 "^ot:originalLabel": "Metschnikowia bicuspidata", 
@@ -200,7 +283,9 @@
 "^ot:ottTaxonName": "Kluyveromyces lactis"
 }, 
 "otu63115": {
-"^ot:originalLabel": "Saccharomyces castellii"
+"^ot:originalLabel": "Saccharomyces castellii", 
+"^ot:ottId": 1059907, 
+"^ot:ottTaxonName": "Naumovozyma castellii"
 }, 
 "otu63116": {
 "^ot:originalLabel": "Saccharomyces cerevisiae", 
@@ -278,7 +363,9 @@
 "^ot:ottTaxonName": "Diatrype disciformis"
 }, 
 "otu63131": {
-"^ot:originalLabel": "Seynesia erumpens"
+"^ot:originalLabel": "Seynesia erumpens", 
+"^ot:ottId": 3738802, 
+"^ot:ottTaxonName": "Astrosphaeriella erumpens"
 }, 
 "otu63132": {
 "^ot:originalLabel": "Graphostroma platystoma", 
@@ -371,10 +458,14 @@
 "^ot:ottTaxonName": "Calosphaeria pulchella"
 }, 
 "otu63150": {
-"^ot:originalLabel": "Valsa ambiens"
+"^ot:originalLabel": "Valsa ambiens", 
+"^ot:ottId": 822584, 
+"^ot:ottTaxonName": "Valsa ambiens"
 }, 
 "otu63151": {
-"^ot:originalLabel": "Leucostoma niveum"
+"^ot:originalLabel": "Leucostoma niveum", 
+"^ot:ottId": 305248, 
+"^ot:ottTaxonName": "Valsa nivea"
 }, 
 "otu63152": {
 "^ot:originalLabel": "Valsella salicis", 
@@ -387,10 +478,14 @@
 "^ot:ottTaxonName": "Mazzantia napelli"
 }, 
 "otu63154": {
-"^ot:originalLabel": "Diaporthe eres"
+"^ot:originalLabel": "Diaporthe eres", 
+"^ot:ottId": 855272, 
+"^ot:ottTaxonName": "Phomopsis velata"
 }, 
 "otu63155": {
-"^ot:originalLabel": "Diaporthe phaseolorum"
+"^ot:originalLabel": "Diaporthe phaseolorum", 
+"^ot:ottId": 737678, 
+"^ot:ottTaxonName": "Phomopsis phaseoli"
 }, 
 "otu63156": {
 "^ot:originalLabel": "Cryptosporella hypodermia", 
@@ -418,7 +513,9 @@
 "^ot:ottTaxonName": "Diaporthe aesculi"
 }, 
 "otu63161": {
-"^ot:originalLabel": "Melanconis marginalis"
+"^ot:originalLabel": "Melanconis marginalis", 
+"^ot:ottId": 1082189, 
+"^ot:ottTaxonName": "Melanconis alni"
 }, 
 "otu63162": {
 "^ot:originalLabel": "Melanconis stilbostoma", 
@@ -481,7 +578,9 @@
 "^ot:ottTaxonName": "Ceratocystis stenoceras"
 }, 
 "otu63174": {
-"^ot:originalLabel": "Thyridium vestitum"
+"^ot:originalLabel": "Thyridium vestitum", 
+"^ot:ottId": 5298733, 
+"^ot:ottTaxonName": "Mycothyridium vestitum"
 }, 
 "otu63175": {
 "^ot:originalLabel": "Annulusmagnus triseptatus", 
@@ -524,10 +623,14 @@
 "^ot:ottTaxonName": "Lindra thalassiae"
 }, 
 "otu63183": {
-"^ot:originalLabel": "Torpedospora radiata"
+"^ot:originalLabel": "Torpedospora radiata", 
+"^ot:ottId": 54448, 
+"^ot:ottTaxonName": "Torpedospora radiata"
 }, 
 "otu63184": {
-"^ot:originalLabel": "Etheirophora unijubata"
+"^ot:originalLabel": "Etheirophora unijubata", 
+"^ot:ottId": 825005, 
+"^ot:ottTaxonName": "Etheirophora unijubata"
 }, 
 "otu63185": {
 "^ot:originalLabel": "Chaetosphaerella phaeostroma", 
@@ -565,7 +668,9 @@
 "^ot:ottTaxonName": "Ophionectria trichospora"
 }, 
 "otu63192": {
-"^ot:originalLabel": "Pseudonectria rousseliana"
+"^ot:originalLabel": "Pseudonectria rousseliana", 
+"^ot:ottId": 282351, 
+"^ot:ottTaxonName": "Pseudonectria buxi"
 }, 
 "otu63193": {
 "^ot:originalLabel": "Gibberella zeae", 
@@ -638,7 +743,9 @@
 "^ot:ottTaxonName": "Hypocrea americana"
 }, 
 "otu63207": {
-"^ot:originalLabel": "Hypocrea lutea"
+"^ot:originalLabel": "Hypocrea lutea", 
+"^ot:ottId": 935193, 
+"^ot:ottTaxonName": "Hypocrea lutea"
 }, 
 "otu63208": {
 "^ot:originalLabel": "Emericellopsis maritima", 
@@ -761,7 +868,9 @@
 "^ot:ottTaxonName": "Halosphaeria appendiculata"
 }, 
 "otu63232": {
-"^ot:originalLabel": "Graphium sp"
+"^ot:originalLabel": "Graphium sp", 
+"^ot:ottId": 871245, 
+"^ot:ottTaxonName": "Graphium"
 }, 
 "otu63233": {
 "^ot:originalLabel": "Petriella setifera", 
@@ -894,7 +1003,9 @@
 "^ot:ottTaxonName": "Leotiomycetes"
 }, 
 "otu63259": {
-"^ot:originalLabel": "Connersia rilstonii"
+"^ot:originalLabel": "Connersia rilstonii", 
+"^ot:ottId": 803415, 
+"^ot:ottTaxonName": "Connersia rilstonii"
 }, 
 "otu63260": {
 "^ot:originalLabel": "Erysiphe glycines", 
@@ -912,7 +1023,9 @@
 "^ot:ottTaxonName": "Cyttaria darwinii"
 }, 
 "otu63263": {
-"^ot:originalLabel": "Chlorociboria aeruginosa"
+"^ot:originalLabel": "Chlorociboria aeruginosa", 
+"^ot:ottId": 694200, 
+"^ot:ottTaxonName": "Chlorociboria aeruginosa"
 }, 
 "otu63264": {
 "^ot:originalLabel": "Vibrissea truncorum", 
@@ -950,16 +1063,24 @@
 "^ot:ottTaxonName": "Thelebolus caninus"
 }, 
 "otu63271": {
-"^ot:originalLabel": "Pseudeurotium zonatum"
+"^ot:originalLabel": "Pseudeurotium zonatum", 
+"^ot:ottId": 784460, 
+"^ot:ottTaxonName": "Pseudeurotium hygrophilum"
 }, 
 "otu63272": {
-"^ot:originalLabel": "Leuconeurospora pulcherrima"
+"^ot:originalLabel": "Leuconeurospora pulcherrima", 
+"^ot:ottId": 279843, 
+"^ot:ottTaxonName": "Leuconeurospora pulcherrima"
 }, 
 "otu63273": {
-"^ot:originalLabel": "Naemacyclus fimbriatus"
+"^ot:originalLabel": "Naemacyclus fimbriatus", 
+"^ot:ottId": 94193, 
+"^ot:ottTaxonName": "Naemacyclus fimbriatus"
 }, 
 "otu63274": {
-"^ot:originalLabel": "Cyclaneusma minus"
+"^ot:originalLabel": "Cyclaneusma minus", 
+"^ot:ottId": 866309, 
+"^ot:ottTaxonName": "Cyclaneusma minus"
 }, 
 "otu63275": {
 "^ot:originalLabel": "Candelariella reflexa", 
@@ -972,13 +1093,19 @@
 "^ot:ottTaxonName": "Candelariella terrigena"
 }, 
 "otu63277": {
-"^ot:originalLabel": "Symbiotaphrina kochii"
+"^ot:originalLabel": "Symbiotaphrina kochii", 
+"^ot:ottId": 513429, 
+"^ot:ottTaxonName": "Symbiotaphrina kochii"
 }, 
 "otu63278": {
-"^ot:originalLabel": "Hyphozyma lignicola"
+"^ot:originalLabel": "Hyphozyma lignicola", 
+"^ot:ottId": 699522, 
+"^ot:ottTaxonName": "Hyphozyma lignicola"
 }, 
 "otu63279": {
-"^ot:originalLabel": "Symbiotaphrina buchneri"
+"^ot:originalLabel": "Symbiotaphrina buchneri", 
+"^ot:ottId": 896616, 
+"^ot:ottTaxonName": "Symbiotaphrina buchneri"
 }, 
 "otu63280": {
 "^ot:originalLabel": "Myriangium duriaei", 
@@ -991,7 +1118,9 @@
 "^ot:ottTaxonName": "Elsinoe veneta"
 }, 
 "otu63282": {
-"^ot:originalLabel": "Elsinoe centrolobi"
+"^ot:originalLabel": "Elsinoe centrolobi", 
+"^ot:ottId": 1027807, 
+"^ot:ottTaxonName": "Elsinoe centrolobi"
 }, 
 "otu63283": {
 "^ot:originalLabel": "Elsinoe phaseoli", 
@@ -1139,7 +1268,9 @@
 "^ot:ottTaxonName": "Lophiostoma arundinis"
 }, 
 "otu63312": {
-"^ot:originalLabel": "Lophiostoma crenatum"
+"^ot:originalLabel": "Lophiostoma crenatum", 
+"^ot:ottId": 5485980, 
+"^ot:ottTaxonName": "Lophiostoma crenatum"
 }, 
 "otu63313": {
 "^ot:originalLabel": "Preussia terricola", 
@@ -1312,7 +1443,9 @@
 "^ot:ottTaxonName": "Trematosphaeria pertusa"
 }, 
 "otu63347": {
-"^ot:originalLabel": "Herpotrichia juniperi"
+"^ot:originalLabel": "Herpotrichia juniperi", 
+"^ot:ottId": 659817, 
+"^ot:ottTaxonName": "Herpotrichia pinetorum"
 }, 
 "otu63348": {
 "^ot:originalLabel": "Trypethelium eluteriae", 
@@ -1350,7 +1483,9 @@
 "^ot:ottTaxonName": "Botryosphaeria stevensii"
 }, 
 "otu63355": {
-"^ot:originalLabel": "Botryosphaeria tsugae"
+"^ot:originalLabel": "Botryosphaeria tsugae", 
+"^ot:ottId": 5311464, 
+"^ot:ottTaxonName": "Diplodia tsugae"
 }, 
 "otu63356": {
 "^ot:originalLabel": "Botryosphaeria viticola", 
@@ -1378,13 +1513,19 @@
 "^ot:ottTaxonName": "Venturia inaequalis"
 }, 
 "otu63361": {
-"^ot:originalLabel": "Tyrannosorus pinicola"
+"^ot:originalLabel": "Tyrannosorus pinicola", 
+"^ot:ottId": 580431, 
+"^ot:ottTaxonName": "Tyrannosorus pinicola"
 }, 
 "otu63362": {
-"^ot:originalLabel": "Kirschsteiniothelia aethiops 2"
+"^ot:originalLabel": "Kirschsteiniothelia aethiops 2", 
+"^ot:ottId": 295798, 
+"^ot:ottTaxonName": "Kirschsteiniothelia aethiops"
 }, 
 "otu63363": {
-"^ot:originalLabel": "Kirschsteiniothelia aethiops 1"
+"^ot:originalLabel": "Kirschsteiniothelia aethiops 1", 
+"^ot:ottId": 295798, 
+"^ot:ottTaxonName": "Kirschsteiniothelia aethiops"
 }, 
 "otu63364": {
 "^ot:originalLabel": "Hysteropatella clavispora cf", 
@@ -1662,7 +1803,9 @@
 "^ot:ottTaxonName": "Pertusaria hemisphaerica"
 }, 
 "otu63419": {
-"^ot:originalLabel": "Trapelia glebosa"
+"^ot:originalLabel": "Trapelia glebosa", 
+"^ot:ottId": 933402, 
+"^ot:ottTaxonName": "Trapelia"
 }, 
 "otu63420": {
 "^ot:originalLabel": "Diploschistes ocellatus", 
@@ -1800,7 +1943,9 @@
 "^ot:ottTaxonName": "Ceramothyrium carniolicum"
 }, 
 "otu63447": {
-"^ot:originalLabel": "Sarcinomyces petricola"
+"^ot:originalLabel": "Sarcinomyces petricola", 
+"^ot:ottId": 158875, 
+"^ot:ottTaxonName": "Sarcinomyces petricola"
 }, 
 "otu63448": {
 "^ot:originalLabel": "Glyphium elatum", 
@@ -1983,10 +2128,14 @@
 "^ot:ottTaxonName": "Sarcosphaera coronaria"
 }, 
 "otu63484": {
-"^ot:originalLabel": "Pachyella babingtonii"
+"^ot:originalLabel": "Pachyella babingtonii", 
+"^ot:ottId": 5303104, 
+"^ot:ottTaxonName": "Adelphella babingtonii"
 }, 
 "otu63485": {
-"^ot:originalLabel": "Plicaria leiocarpa"
+"^ot:originalLabel": "Plicaria leiocarpa", 
+"^ot:ottId": 233405, 
+"^ot:ottTaxonName": "Plicaria endocarpoides"
 }, 
 "otu63486": {
 "^ot:originalLabel": "Saccobolus dilutellus", 
@@ -2180,16 +2329,20 @@
 ], 
 "treeById": {
 "tree109": {
+"@label": "Untitled (tree109)", 
 "@xsi:type": "nex:FloatTree", 
 "^ot:branchLengthDescription": "", 
 "^ot:branchLengthMode": "", 
 "^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "ML, SSU + LSU + EF-1 + RPB1 + RPB2 +mtSSU", 
 "^ot:inGroupClade": "node158467", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
 "^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node158439", 
 "^ot:specifiedRoot": "", 
 "^ot:tag": [], 
+"^ot:unrootedTree": true, 
 "edgeBySourceId": {
 "node158439": {
 "edge158440": {
@@ -8263,16 +8416,20 @@
 }
 }, 
 "tree110": {
+"@label": "Untitled (tree110)", 
 "@xsi:type": "nex:FloatTree", 
 "^ot:branchLengthDescription": "", 
 "^ot:branchLengthMode": "", 
 "^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "ML, SSU + LSU + EF-1 + RPB1 + RPB2 +mtSSU", 
 "^ot:inGroupClade": "node159334", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
 "^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node159306", 
 "^ot:specifiedRoot": "", 
 "^ot:tag": [], 
+"^ot:unrootedTree": true, 
 "edgeBySourceId": {
 "node159306": {
 "edge159307": {

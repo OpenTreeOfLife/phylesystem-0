@@ -36,22 +36,99 @@
 }
 ]
 }
+}, 
+{
+"@description": "Web-based interface for submitting, editing, and reviewing studies in the Open Tree of Life project.", 
+"@id": "opentree-curation-webapp", 
+"@name": "OpenTree curation webapp", 
+"@url": "https://github.com/OpenTreeOfLife/opentree", 
+"@version": "0.0.0"
 }
 ]
 }, 
 "^ot:annotationEvents": {
-"annotation": []
+"annotation": [
+{
+"@dateCreated": "2015-09-30T18:24:21.257Z", 
+"@description": "Aids for mapping study OTUs to OTT taxa", 
+"@id": "otu-mapping-hints", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "OTU_MAPPING_HINTS", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"searchContext": {
+"$": "All life"
 }, 
-"^ot:candidateTreeForSynthesis": [], 
-"^ot:curatorName": "Romina Gazis", 
+"substitutions": {
+"substitution": [
+{
+"@active": false, 
+"@valid": true, 
+"new": {
+"$": ""
+}, 
+"old": {
+"$": ""
+}
+}
+]
+}, 
+"useFuzzyMatching": false
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}, 
+{
+"@dateCreated": "2015-09-30T18:24:21.257Z", 
+"@description": "Describes supporting data files for this study", 
+"@id": "supporting-files-metadata", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "SUPPORTING_FILE_INFO", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"@movedToPermanentArchive": false, 
+"files": {
+"file": []
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}
+]
+}, 
+"^ot:candidateTreeForSynthesis": [
+"tree4697"
+], 
+"^ot:comment": "", 
+"^ot:curatorName": [
+"Romina Gazis"
+], 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S560"
 }, 
 "^ot:focalClade": 728371, 
 "^ot:focalCladeOTTTaxonName": "Hypocreales", 
-"^ot:messages": {
-"message": []
-}, 
+"^ot:notIntendedForSynthesis": false, 
 "^ot:otusElementOrder": [
 "otus2222"
 ], 
@@ -65,6 +142,10 @@
 "^ot:treesElementOrder": [
 "trees2222"
 ], 
+"^xhtml:license": {
+"@href": "http://creativecommons.org/publicdomain/zero/1.0/", 
+"@name": "CC0"
+}, 
 "otusById": {
 "otus2222": {
 "otuById": {
@@ -160,6 +241,8 @@
 }, 
 "otu322406": {
 "^ot:originalLabel": "Hypocrea lutea", 
+"^ot:ottId": 935193, 
+"^ot:ottTaxonName": "Hypocrea lutea", 
 "^ot:treebaseOTUId": "Tl114620"
 }, 
 "otu322407": {
@@ -170,6 +253,8 @@
 }, 
 "otu322408": {
 "^ot:originalLabel": "Verticimonosporium diffractum", 
+"^ot:ottId": 837230, 
+"^ot:ottTaxonName": "Verticimonosporium diffractum", 
 "^ot:treebaseOTUId": "Tl114624"
 }, 
 "otu322409": {
@@ -288,6 +373,8 @@
 }, 
 "otu322428": {
 "^ot:originalLabel": "Verticimonosporium ellipticum", 
+"^ot:ottId": 837232, 
+"^ot:ottTaxonName": "Verticimonosporium ellipticum", 
 "^ot:treebaseOTUId": "Tl53873"
 }, 
 "otu322429": {
@@ -358,6 +445,8 @@
 }, 
 "otu322440": {
 "^ot:originalLabel": "Sphaerostilbella sp TFC97.169", 
+"^ot:ottId": 935179, 
+"^ot:ottTaxonName": "Sphaerostilbella", 
 "^ot:treebaseOTUId": "Tl53886"
 }, 
 "otu322441": {
@@ -404,6 +493,8 @@
 }, 
 "otu322448": {
 "^ot:originalLabel": "Sphaerostilbella sp GJS82.40", 
+"^ot:ottId": 935179, 
+"^ot:ottTaxonName": "Sphaerostilbella", 
 "^ot:treebaseOTUId": "Tl53894"
 }, 
 "otu322449": {
@@ -433,16 +524,22 @@
 ], 
 "treeById": {
 "tree4697": {
+"@label": "MP, LSU", 
 "@xsi:type": "nex:FloatTree", 
 "^ot:branchLengthDescription": "", 
-"^ot:branchLengthMode": "", 
-"^ot:branchLengthTimeUnit": "", 
-"^ot:curatedType": "MP, LSU", 
+"^ot:branchLengthMode": "ot:changesCount", 
+"^ot:branchLengthTimeUnit": "Myr", 
+"^ot:curatedType": "Maximum parsimony ", 
 "^ot:inGroupClade": "node829092", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
 "^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node829089", 
-"^ot:specifiedRoot": "", 
-"^ot:tag": [], 
+"^ot:specifiedRoot": "node829089", 
+"^ot:tag": [
+"LSU"
+], 
+"^ot:unrootedTree": false, 
 "edgeBySourceId": {
 "node829089": {
 "edge829090": {
@@ -806,10 +903,12 @@
 "node829102": {}, 
 "node829103": {}, 
 "node829104": {
-"@otu": "otu322434"
+"@otu": "otu322434", 
+"^ot:isTaxonExemplar": true
 }, 
 "node829105": {
-"@otu": "otu322449"
+"@otu": "otu322449", 
+"^ot:isTaxonExemplar": false
 }, 
 "node829106": {
 "@otu": "otu322403"
@@ -822,10 +921,12 @@
 }, 
 "node829109": {}, 
 "node829110": {
-"@otu": "otu322436"
+"@otu": "otu322436", 
+"^ot:isTaxonExemplar": true
 }, 
 "node829111": {
-"@otu": "otu322441"
+"@otu": "otu322441", 
+"^ot:isTaxonExemplar": false
 }, 
 "node829112": {
 "@otu": "otu322435"
@@ -843,33 +944,40 @@
 }, 
 "node829120": {}, 
 "node829121": {
-"@otu": "otu322437"
+"@otu": "otu322437", 
+"^ot:isTaxonExemplar": true
 }, 
 "node829122": {
-"@otu": "otu322443"
+"@otu": "otu322443", 
+"^ot:isTaxonExemplar": false
 }, 
 "node829123": {
-"@otu": "otu322447"
+"@otu": "otu322447", 
+"^ot:isTaxonExemplar": false
 }, 
 "node829124": {
 "@otu": "otu322431"
 }, 
 "node829125": {}, 
 "node829126": {
-"@otu": "otu322439"
+"@otu": "otu322439", 
+"^ot:isTaxonExemplar": true
 }, 
 "node829127": {
-"@otu": "otu322450"
+"@otu": "otu322450", 
+"^ot:isTaxonExemplar": false
 }, 
 "node829128": {
 "@otu": "otu322417"
 }, 
 "node829129": {}, 
 "node829130": {
-"@otu": "otu322432"
+"@otu": "otu322432", 
+"^ot:isTaxonExemplar": true
 }, 
 "node829131": {
-"@otu": "otu322444"
+"@otu": "otu322444", 
+"^ot:isTaxonExemplar": false
 }, 
 "node829132": {}, 
 "node829133": {
@@ -881,10 +989,12 @@
 "node829135": {}, 
 "node829136": {}, 
 "node829137": {
-"@otu": "otu322442"
+"@otu": "otu322442", 
+"^ot:isTaxonExemplar": true
 }, 
 "node829138": {
-"@otu": "otu322446"
+"@otu": "otu322446", 
+"^ot:isTaxonExemplar": false
 }, 
 "node829139": {}, 
 "node829140": {
@@ -903,17 +1013,21 @@
 "@otu": "otu322421"
 }, 
 "node829147": {
-"@otu": "otu322448"
+"@otu": "otu322448", 
+"^ot:isTaxonExemplar": true
 }, 
 "node829148": {
-"@otu": "otu322440"
+"@otu": "otu322440", 
+"^ot:isTaxonExemplar": false
 }, 
 "node829149": {}, 
 "node829150": {
-"@otu": "otu322445"
+"@otu": "otu322445", 
+"^ot:isTaxonExemplar": true
 }, 
 "node829151": {
-"@otu": "otu322423"
+"@otu": "otu322423", 
+"^ot:isTaxonExemplar": false
 }, 
 "node829152": {
 "@otu": "otu322424"
@@ -937,16 +1051,20 @@
 }
 }, 
 "tree4698": {
+"@label": "Untitled (tree4698)", 
 "@xsi:type": "nex:FloatTree", 
 "^ot:branchLengthDescription": "", 
 "^ot:branchLengthMode": "", 
 "^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "MP, LSU", 
 "^ot:inGroupClade": "node829163", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
 "^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node829159", 
 "^ot:specifiedRoot": "", 
 "^ot:tag": [], 
+"^ot:unrootedTree": true, 
 "edgeBySourceId": {
 "node829159": {
 "edge829160": {
@@ -1378,16 +1496,20 @@
 }
 }, 
 "tree4699": {
+"@label": "Untitled (tree4699)", 
 "@xsi:type": "nex:FloatTree", 
 "^ot:branchLengthDescription": "", 
 "^ot:branchLengthMode": "", 
 "^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "MP, LSU (strict)", 
 "^ot:inGroupClade": "node829223", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
 "^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node829220", 
 "^ot:specifiedRoot": "", 
 "^ot:tag": [], 
+"^ot:unrootedTree": true, 
 "edgeBySourceId": {
 "node829220": {
 "edge829221": {
@@ -1791,15 +1913,20 @@
 }
 }, 
 "tree4700": {
+"@label": "Untitled (tree4700)", 
 "@xsi:type": "nex:FloatTree", 
 "^ot:branchLengthDescription": "", 
 "^ot:branchLengthMode": "", 
 "^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "MP, LSU (strict)", 
+"^ot:inGroupClade": "", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
 "^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node829277", 
 "^ot:specifiedRoot": "", 
 "^ot:tag": [], 
+"^ot:unrootedTree": true, 
 "edgeBySourceId": {
 "node829277": {
 "edge829278": {
@@ -2357,12 +2484,15 @@
 }
 }, 
 "tree4701": {
+"@label": "Untitled (tree4701)", 
 "@xsi:type": "nex:FloatTree", 
 "^ot:branchLengthDescription": "", 
 "^ot:branchLengthMode": "", 
 "^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "ML, LSU", 
 "^ot:inGroupClade": "node829360", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
 "^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node829356", 
 "^ot:specifiedRoot": "", 
@@ -2370,6 +2500,7 @@
 "ML", 
 "LSU"
 ], 
+"^ot:unrootedTree": true, 
 "edgeBySourceId": {
 "node829356": {
 "edge829357": {

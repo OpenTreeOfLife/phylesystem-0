@@ -15,16 +15,13 @@
 "^ot:agents": {
 "agent": [
 {
-"@description": "validator of NexSON constraints as well as constraints that would allow a study to be imported into the Open Tree of Life's phylogenetic synthesis tools", 
+"@description": "Open Tree NexSON validation", 
 "@id": "peyotl-validator", 
-"@name": "validate_ot_nexson.py", 
+"@name": "api.opentreeoflife.org/validate", 
 "@url": "https://github.com/OpenTreeOfLife/peyotl", 
 "@version": "0.0.4a", 
 "invocation": {
-"commandLine": [
-"--embed", 
-"--agent-only"
-], 
+"commandLine": [], 
 "otherProperty": [
 {
 "name": "pythonVersion", 
@@ -36,19 +33,108 @@
 }
 ]
 }
+}, 
+{
+"@description": "Web-based interface for submitting, editing, and reviewing studies in the Open Tree of Life project.", 
+"@id": "opentree-curation-webapp", 
+"@name": "OpenTree curation webapp", 
+"@url": "https://github.com/OpenTreeOfLife/opentree", 
+"@version": "0.0.0"
 }
 ]
 }, 
 "^ot:annotationEvents": {
-"annotation": []
+"annotation": [
+{
+"@dateCreated": "2014-07-25T01:44:36.948Z", 
+"@description": "Aids for mapping study OTUs to OTT taxa", 
+"@id": "otu-mapping-hints", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "OTU_MAPPING_HINTS", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"searchContext": {
+"$": "Bacteria"
 }, 
-"^ot:candidateTreeForSynthesis": [], 
-"^ot:curatorName": "Dail Laughinghouse", 
+"substitutions": {
+"substitution": [
+{
+"@active": false, 
+"@valid": true, 
+"new": {
+"$": ""
+}, 
+"old": {
+"$": ""
+}
+}, 
+{
+"@active": true, 
+"@valid": true, 
+"new": {
+"$": ""
+}, 
+"old": {
+"$": "^(\\w*)\\s+\\b"
+}
+}
+]
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}, 
+{
+"@dateCreated": "2014-07-25T01:44:36.948Z", 
+"@description": "Describes supporting data files for this study", 
+"@id": "supporting-files-metadata", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "SUPPORTING_FILE_INFO", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"@movedToPermanentArchive": false, 
+"files": {
+"file": []
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}
+]
+}, 
+"^ot:candidateTreeForSynthesis": [
+"tree6700"
+], 
+"^ot:comment": "", 
+"^ot:curatorName": [
+"Dail Laughinghouse"
+], 
+"^ot:dataDeposit": {
+"@href": ""
+}, 
 "^ot:focalClade": 225495, 
 "^ot:focalCladeOTTTaxonName": "Cyanobacteria", 
-"^ot:messages": {
-"message": []
-}, 
+"^ot:notIntendedForSynthesis": false, 
 "^ot:otusElementOrder": [
 "otus2892"
 ], 
@@ -56,7 +142,7 @@
 "^ot:studyPublication": {
 "@href": "http://dx.doi.org/10.1111/j.1462-2920.2012.02830.x"
 }, 
-"^ot:studyPublicationReference": "Janaina Rigonato, Angela D. Kent, Danillo O. Alvarenga, Fernando D. Andreote, Raphael M. Beirigo, Pablo Vidal-Torrado, Marli F. Fiore. 2013. Drivers of cyanobacterial diversity and community composition in mangrove soils in south-east Brazil. Environmental Microbiology 15(4):1103-1114.", 
+"^ot:studyPublicationReference": "Janaina Rigonato, Angela D. Kent, Danillo O. Alvarenga, Fernando D. Andreote, Raphael M. Beirigo, Pablo Vidal-Torrado, Marli F. Fiore, 2013, 'Drivers of cyanobacterial diversity and community composition in mangrove soils in south-east Brazil', Environmental Microbiology, vol. 15, no. 4, pp. 1103-1114", 
 "^ot:studyYear": 2013, 
 "^ot:tag": [], 
 "^ot:treesElementOrder": [
@@ -66,7 +152,9 @@
 "otus2892": {
 "otuById": {
 "otu428660": {
-"^ot:originalLabel": "OTU51 Gloeothece"
+"^ot:originalLabel": "OTU51 Gloeothece", 
+"^ot:ottId": 878840, 
+"^ot:ottTaxonName": "Gloeothece"
 }, 
 "otu428661": {
 "^ot:originalLabel": "AB067577 Gloeothece sp. KO11DG", 
@@ -84,13 +172,19 @@
 "^ot:ottTaxonName": "Cyanothece sp. SKTU126"
 }, 
 "otu428664": {
-"^ot:originalLabel": "AB546733cyanobacterium endosymbiont of Epithemia"
+"^ot:originalLabel": "AB546733cyanobacterium endosymbiont of Epithemia", 
+"^ot:ottId": 4774297, 
+"^ot:ottTaxonName": "cyanobacterium endosymbiont of Epithemia turgida isolate ETSB Lake Yunoko"
 }, 
 "otu428665": {
-"^ot:originalLabel": "OTU30 Cyanothece"
+"^ot:originalLabel": "OTU30 Cyanothece", 
+"^ot:ottId": 608245, 
+"^ot:ottTaxonName": "Cyanothece"
 }, 
 "otu428666": {
-"^ot:originalLabel": "AB546730 cyanobacterium endosymbiont of Rhopalodia"
+"^ot:originalLabel": "AB546730 cyanobacterium endosymbiont of Rhopalodia", 
+"^ot:ottId": 4774357, 
+"^ot:ottTaxonName": "cyanobacterium endosymbiont of Rhopalodia gibba"
 }, 
 "otu428667": {
 "^ot:originalLabel": "AF132771 Cyanothece sp. ATCC 51142", 
@@ -98,7 +192,9 @@
 "^ot:ottTaxonName": "Cyanothece sp. ATCC 51142"
 }, 
 "otu428668": {
-"^ot:originalLabel": "OTU53 Cyanothece"
+"^ot:originalLabel": "OTU53 Cyanothece", 
+"^ot:ottId": 608245, 
+"^ot:ottTaxonName": "Cyanothece"
 }, 
 "otu428669": {
 "^ot:originalLabel": "AY620238 Cyanothece sp. WH 8902", 
@@ -106,7 +202,9 @@
 "^ot:ottTaxonName": "Cyanothece sp. WH 8902"
 }, 
 "otu428670": {
-"^ot:originalLabel": "OTU62 Aphanocapsa "
+"^ot:originalLabel": "OTU62 Aphanocapsa ", 
+"^ot:ottId": 225532, 
+"^ot:ottTaxonName": "Aphanocapsa"
 }, 
 "otu428671": {
 "^ot:originalLabel": "EU249123 Aphanocapsa sp. HBC6", 
@@ -114,19 +212,27 @@
 "^ot:ottTaxonName": "Aphanocapsa sp. HBC6"
 }, 
 "otu428672": {
-"^ot:originalLabel": "OTU85 Chroococcidiopsis"
+"^ot:originalLabel": "OTU85 Chroococcidiopsis", 
+"^ot:ottId": 1088767, 
+"^ot:ottTaxonName": "Chroococcidiopsis"
 }, 
 "otu428673": {
 "^ot:originalLabel": "OTU37 uc"
 }, 
 "otu428674": {
-"^ot:originalLabel": "OTU54 Chroococcales"
+"^ot:originalLabel": "OTU54 Chroococcales", 
+"^ot:ottId": 225543, 
+"^ot:ottTaxonName": "Chroococcales"
 }, 
 "otu428675": {
-"^ot:originalLabel": "OTU38 Xenococcus "
+"^ot:originalLabel": "OTU38 Xenococcus ", 
+"^ot:ottId": 1071384, 
+"^ot:ottTaxonName": "Xenococcus"
 }, 
 "otu428676": {
-"^ot:originalLabel": "DQ058845 uncultured Xenococcus sp."
+"^ot:originalLabel": "DQ058845 uncultured Xenococcus sp.", 
+"^ot:ottId": 5164233, 
+"^ot:ottTaxonName": "uncultured Xenococcus sp."
 }, 
 "otu428677": {
 "^ot:originalLabel": "DQ058859 Xenococcus sp. SCyano35", 
@@ -137,7 +243,9 @@
 "^ot:originalLabel": "DQ058845 Uncultured Xenococcus sp. clone Sc51"
 }, 
 "otu428679": {
-"^ot:originalLabel": "OTU89 Chroococcus"
+"^ot:originalLabel": "OTU89 Chroococcus", 
+"^ot:ottId": 562813, 
+"^ot:ottTaxonName": "Chroococcus"
 }, 
 "otu428680": {
 "^ot:originalLabel": "DQ058856 Chroococcus sp. SCyano24", 
@@ -154,16 +262,22 @@
 "^ot:originalLabel": "OTU79 UC"
 }, 
 "otu428684": {
-"^ot:originalLabel": "OTU94 Chroococcales"
+"^ot:originalLabel": "OTU94 Chroococcales", 
+"^ot:ottId": 225543, 
+"^ot:ottTaxonName": "Chroococcales"
 }, 
 "otu428685": {
 "^ot:originalLabel": "OTU83 UC"
 }, 
 "otu428686": {
-"^ot:originalLabel": "AF420444 Oscillatoria spongeliae 520bg"
+"^ot:originalLabel": "AF420444 Oscillatoria spongeliae 520bg", 
+"^ot:ottId": 370232, 
+"^ot:ottTaxonName": "Oscillatoria spongeliae"
 }, 
 "otu428687": {
-"^ot:originalLabel": "OTU49 Leptolyngbya"
+"^ot:originalLabel": "OTU49 Leptolyngbya", 
+"^ot:ottId": 757914, 
+"^ot:ottTaxonName": "Leptolyngbya"
 }, 
 "otu428688": {
 "^ot:originalLabel": "HM018677 Nodosilinea epilithica str. Kovacik 1998/7", 
@@ -192,7 +306,9 @@
 "^ot:originalLabel": "EU071483 Uncultured Leptolyngbya sp. clone EHFS1 S05b"
 }, 
 "otu428694": {
-"^ot:originalLabel": "OTU61 Leptolyngbya "
+"^ot:originalLabel": "OTU61 Leptolyngbya ", 
+"^ot:ottId": 757914, 
+"^ot:ottTaxonName": "Leptolyngbya"
 }, 
 "otu428695": {
 "^ot:originalLabel": "EF088338 Limnothrix sp. CENA110", 
@@ -200,7 +316,9 @@
 "^ot:ottTaxonName": "Limnothrix sp. CENA110"
 }, 
 "otu428696": {
-"^ot:originalLabel": "Z82775 Cyanothece aeruginosa"
+"^ot:originalLabel": "Z82775 Cyanothece aeruginosa", 
+"^ot:ottId": 636229, 
+"^ot:ottTaxonName": "Cyanothece aeruginosa"
 }, 
 "otu428697": {
 "^ot:originalLabel": "AY493578 Phormidium pristleyi ANT.LH52.4", 
@@ -216,7 +334,9 @@
 "^ot:originalLabel": "JN825328 UC mexico alk lake"
 }, 
 "otu428700": {
-"^ot:originalLabel": "OTU91 Phormidium"
+"^ot:originalLabel": "OTU91 Phormidium", 
+"^ot:ottId": 534128, 
+"^ot:ottTaxonName": "Phormidium"
 }, 
 "otu428701": {
 "^ot:originalLabel": "Z82794 Phormidium sp. NIVACYA 202"
@@ -257,7 +377,9 @@
 "^ot:ottTaxonName": "Arthronema gygaxiana UTCC 393"
 }, 
 "otu428709": {
-"^ot:originalLabel": "U022730 Calothrix sp. KVSF5"
+"^ot:originalLabel": "U022730 Calothrix sp. KVSF5", 
+"^ot:ottId": 319012, 
+"^ot:ottTaxonName": "Calothrix sp. KVSF5"
 }, 
 "otu428710": {
 "^ot:originalLabel": "DQ786166 Leptolyngbya sp. LLi18", 
@@ -285,7 +407,9 @@
 "^ot:ottTaxonName": "Tolypothrix sp. HA4266-MV1"
 }, 
 "otu428715": {
-"^ot:originalLabel": "AY493596 Coleodesmium sp. ANT.L52B.5"
+"^ot:originalLabel": "AY493596 Coleodesmium sp. ANT.L52B.5", 
+"^ot:ottId": 695777, 
+"^ot:ottTaxonName": "Coleodesmium sp. ANT.L52B.5"
 }, 
 "otu428716": {
 "^ot:originalLabel": "DQ897365 Cylindrospermum sp. A1345", 
@@ -293,7 +417,9 @@
 "^ot:ottTaxonName": "Cylindrospermum sp. A1345"
 }, 
 "otu428717": {
-"^ot:originalLabel": "AB074503 Nostoc linckia"
+"^ot:originalLabel": "AB074503 Nostoc linckia", 
+"^ot:ottId": 702899, 
+"^ot:ottTaxonName": "Nostoc linckia"
 }, 
 "otu428718": {
 "^ot:originalLabel": "AM711543 Nostoc sp. Cam2S01", 
@@ -306,7 +432,9 @@
 "^ot:ottTaxonName": "Tolypothrix sp. IAM M-259"
 }, 
 "otu428720": {
-"^ot:originalLabel": "OTU31 Nostoc"
+"^ot:originalLabel": "OTU31 Nostoc", 
+"^ot:ottId": 893787, 
+"^ot:ottTaxonName": "Nostoc"
 }, 
 "otu428721": {
 "^ot:originalLabel": "OTU16aNABAENA"
@@ -335,16 +463,22 @@
 "^ot:originalLabel": "OTU32 AnabaenaTolypothrix"
 }, 
 "otu428727": {
-"^ot:originalLabel": "OTU4 Prochlorococcus"
+"^ot:originalLabel": "OTU4 Prochlorococcus", 
+"^ot:ottId": 771085, 
+"^ot:ottTaxonName": "Prochlorococcus"
 }, 
 "otu428728": {
-"^ot:originalLabel": "OTU52 Prochlorococcus"
+"^ot:originalLabel": "OTU52 Prochlorococcus", 
+"^ot:ottId": 771085, 
+"^ot:ottTaxonName": "Prochlorococcus"
 }, 
 "otu428729": {
 "^ot:originalLabel": "EU361194 uncultured Prochlorococcus sp."
 }, 
 "otu428730": {
-"^ot:originalLabel": "OTU28 Prochlorococcus"
+"^ot:originalLabel": "OTU28 Prochlorococcus", 
+"^ot:ottId": 771085, 
+"^ot:ottTaxonName": "Prochlorococcus"
 }, 
 "otu428731": {
 "^ot:originalLabel": "AY711259 uncultured Prochlorococcus sp."
@@ -356,7 +490,9 @@
 "^ot:originalLabel": "OTU68 UC"
 }, 
 "otu428734": {
-"^ot:originalLabel": "OTU19 Synechococcus"
+"^ot:originalLabel": "OTU19 Synechococcus", 
+"^ot:ottId": 269054, 
+"^ot:ottTaxonName": "Synechococcus"
 }, 
 "otu428735": {
 "^ot:originalLabel": "AY172810 Synechococcus sp. Oli31", 
@@ -369,10 +505,14 @@
 "^ot:ottTaxonName": "Synechococcus sp. Eum14"
 }, 
 "otu428737": {
-"^ot:originalLabel": "OTU26 Prochlorococcus"
+"^ot:originalLabel": "OTU26 Prochlorococcus", 
+"^ot:ottId": 771085, 
+"^ot:ottTaxonName": "Prochlorococcus"
 }, 
 "otu428738": {
-"^ot:originalLabel": "OTU40 Prochlorococcus"
+"^ot:originalLabel": "OTU40 Prochlorococcus", 
+"^ot:ottId": 771085, 
+"^ot:ottTaxonName": "Prochlorococcus"
 }, 
 "otu428739": {
 "^ot:originalLabel": "OTU17"
@@ -381,16 +521,24 @@
 "^ot:originalLabel": "OTU73Synechococcus"
 }, 
 "otu428741": {
-"^ot:originalLabel": "OTU69 Prochlorococcus"
+"^ot:originalLabel": "OTU69 Prochlorococcus", 
+"^ot:ottId": 771085, 
+"^ot:ottTaxonName": "Prochlorococcus"
 }, 
 "otu428742": {
-"^ot:originalLabel": "OTU71 Prochlorococcus"
+"^ot:originalLabel": "OTU71 Prochlorococcus", 
+"^ot:ottId": 771085, 
+"^ot:ottTaxonName": "Prochlorococcus"
 }, 
 "otu428743": {
-"^ot:originalLabel": "OTU39 Synechococcus"
+"^ot:originalLabel": "OTU39 Synechococcus", 
+"^ot:ottId": 269054, 
+"^ot:ottTaxonName": "Synechococcus"
 }, 
 "otu428744": {
-"^ot:originalLabel": "OTU46 Chroococcales"
+"^ot:originalLabel": "OTU46 Chroococcales", 
+"^ot:ottId": 225543, 
+"^ot:ottTaxonName": "Chroococcales"
 }, 
 "otu428745": {
 "^ot:originalLabel": "OTU8 SynechococcusCyanobium"
@@ -433,7 +581,9 @@
 "^ot:originalLabel": "OTU5 ProchlorococcusSynechococcus"
 }, 
 "otu428755": {
-"^ot:originalLabel": "OTU14 Prochlorococcus"
+"^ot:originalLabel": "OTU14 Prochlorococcus", 
+"^ot:ottId": 771085, 
+"^ot:ottTaxonName": "Prochlorococcus"
 }, 
 "otu428756": {
 "^ot:originalLabel": "OTU72 UC"
@@ -520,19 +670,27 @@
 "^ot:originalLabel": "FJ967932 UC shoreline michigan"
 }, 
 "otu428784": {
-"^ot:originalLabel": "OTU65 Oscillatoria "
+"^ot:originalLabel": "OTU65 Oscillatoria ", 
+"^ot:ottId": 843522, 
+"^ot:ottTaxonName": "Oscillatoria"
 }, 
 "otu428785": {
-"^ot:originalLabel": "OTU33 Phormidium "
+"^ot:originalLabel": "OTU33 Phormidium ", 
+"^ot:ottId": 534128, 
+"^ot:ottTaxonName": "Phormidium"
 }, 
 "otu428786": {
 "^ot:originalLabel": "OTU55 uc "
 }, 
 "otu428787": {
-"^ot:originalLabel": "OTU21 Limnothrix"
+"^ot:originalLabel": "OTU21 Limnothrix", 
+"^ot:ottId": 704067, 
+"^ot:ottTaxonName": "Limnothrix"
 }, 
 "otu428788": {
-"^ot:originalLabel": "OTU10 Arthronema"
+"^ot:originalLabel": "OTU10 Arthronema", 
+"^ot:ottId": 6860, 
+"^ot:ottTaxonName": "Arthronema"
 }, 
 "otu428789": {
 "^ot:originalLabel": "OTU74Arthronema"
@@ -541,25 +699,35 @@
 "^ot:originalLabel": "OTU90 UC"
 }, 
 "otu428791": {
-"^ot:originalLabel": "OTU56 Limnothrix "
+"^ot:originalLabel": "OTU56 Limnothrix ", 
+"^ot:ottId": 704067, 
+"^ot:ottTaxonName": "Limnothrix"
 }, 
 "otu428792": {
-"^ot:originalLabel": "OTU76 Leptolyngbya"
+"^ot:originalLabel": "OTU76 Leptolyngbya", 
+"^ot:ottId": 757914, 
+"^ot:ottTaxonName": "Leptolyngbya"
 }, 
 "otu428793": {
-"^ot:originalLabel": "OTU97 Leptolyngbya"
+"^ot:originalLabel": "OTU97 Leptolyngbya", 
+"^ot:ottId": 757914, 
+"^ot:ottTaxonName": "Leptolyngbya"
 }, 
 "otu428794": {
 "^ot:originalLabel": "OTU60UC "
 }, 
 "otu428795": {
-"^ot:originalLabel": "OTU66 Synechococcus "
+"^ot:originalLabel": "OTU66 Synechococcus ", 
+"^ot:ottId": 269054, 
+"^ot:ottTaxonName": "Synechococcus"
 }, 
 "otu428796": {
 "^ot:originalLabel": "OTU63 uc "
 }, 
 "otu428797": {
-"^ot:originalLabel": "OTU75 Limnothrix"
+"^ot:originalLabel": "OTU75 Limnothrix", 
+"^ot:ottId": 704067, 
+"^ot:ottTaxonName": "Limnothrix"
 }, 
 "otu428798": {
 "^ot:originalLabel": "OTU92 UC"
@@ -595,7 +763,9 @@
 "^ot:originalLabel": "OTU18 UC"
 }, 
 "otu428809": {
-"^ot:originalLabel": "OTU70 Tychonema"
+"^ot:originalLabel": "OTU70 Tychonema", 
+"^ot:ottId": 814710, 
+"^ot:ottTaxonName": "Tychonema"
 }, 
 "otu428810": {
 "^ot:originalLabel": "OTU24UC"
@@ -670,15 +840,20 @@
 ], 
 "treeById": {
 "tree6700": {
+"@label": "Untitled (tree6700)", 
 "@xsi:type": "nex:FloatTree", 
 "^ot:branchLengthDescription": "", 
-"^ot:branchLengthMode": "", 
-"^ot:branchLengthTimeUnit": "", 
-"^ot:curatedType": "Bayesian", 
+"^ot:branchLengthMode": "ot:substitutionCount", 
+"^ot:branchLengthTimeUnit": "Myr", 
+"^ot:curatedType": "Bayesian inference ", 
+"^ot:inGroupClade": "node1166069", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
 "^ot:outGroupEdge": "", 
-"^ot:rootNodeId": "node1166069", 
-"^ot:specifiedRoot": "", 
+"^ot:rootNodeId": "tree6700_ROOT", 
+"^ot:specifiedRoot": "tree6700_ROOT", 
 "^ot:tag": [], 
+"^ot:unrootedTree": false, 
 "edgeBySourceId": {
 "node1166069": {
 "edge1166070": {
@@ -690,11 +865,6 @@
 "@length": 0.02578959, 
 "@source": "node1166069", 
 "@target": "node1166399"
-}, 
-"edge1166406": {
-"@length": 0.14868091, 
-"@source": "node1166069", 
-"@target": "node1166406"
 }
 }, 
 "node1166070": {
@@ -2674,12 +2844,21 @@
 "@source": "node1166403", 
 "@target": "node1166405"
 }
+}, 
+"tree6700_ROOT": {
+"edge1166406": {
+"@length": 0.14868091, 
+"@source": "tree6700_ROOT", 
+"@target": "node1166406"
+}, 
+"tree6700_ROOT_EDGE": {
+"@source": "tree6700_ROOT", 
+"@target": "node1166069"
+}
 }
 }, 
 "nodeById": {
-"node1166069": {
-"@root": true
-}, 
+"node1166069": {}, 
 "node1166070": {}, 
 "node1166071": {}, 
 "node1166072": {}, 
@@ -2717,7 +2896,8 @@
 }, 
 "node1166095": {}, 
 "node1166096": {
-"@otu": "otu428665"
+"@otu": "otu428665", 
+"^ot:isTaxonExemplar": false
 }, 
 "node1166097": {
 "@otu": "otu428666"
@@ -2728,7 +2908,8 @@
 }, 
 "node1166100": {}, 
 "node1166101": {
-"@otu": "otu428668"
+"@otu": "otu428668", 
+"^ot:isTaxonExemplar": true
 }, 
 "node1166102": {
 "@otu": "otu428669"
@@ -2870,10 +3051,12 @@
 "@otu": "otu428704"
 }, 
 "node1166169": {
-"@otu": "otu428705"
+"@otu": "otu428705", 
+"^ot:isTaxonExemplar": false
 }, 
 "node1166170": {
-"@otu": "otu428706"
+"@otu": "otu428706", 
+"^ot:isTaxonExemplar": true
 }, 
 "node1166171": {
 "@otu": "otu428707"
@@ -2963,7 +3146,8 @@
 "node1166216": {}, 
 "node1166217": {}, 
 "node1166218": {
-"@otu": "otu428727"
+"@otu": "otu428727", 
+"^ot:isTaxonExemplar": true
 }, 
 "node1166219": {
 "@otu": "otu428728"
@@ -2972,7 +3156,8 @@
 "@otu": "otu428729"
 }, 
 "node1166221": {
-"@otu": "otu428730"
+"@otu": "otu428730", 
+"^ot:isTaxonExemplar": false
 }, 
 "node1166222": {
 "@otu": "otu428731"
@@ -2998,7 +3183,8 @@
 "@otu": "otu428737"
 }, 
 "node1166231": {
-"@otu": "otu428738"
+"@otu": "otu428738", 
+"^ot:isTaxonExemplar": false
 }, 
 "node1166232": {}, 
 "node1166233": {}, 
@@ -3356,6 +3542,9 @@
 }, 
 "node1166406": {
 "@otu": "otu428829"
+}, 
+"tree6700_ROOT": {
+"@root": true
 }
 }
 }

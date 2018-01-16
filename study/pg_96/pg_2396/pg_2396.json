@@ -36,22 +36,100 @@
 }
 ]
 }
+}, 
+{
+"@description": "Web-based interface for submitting, editing, and reviewing studies in the Open Tree of Life project.", 
+"@id": "opentree-curation-webapp", 
+"@name": "OpenTree curation webapp", 
+"@url": "https://github.com/OpenTreeOfLife/opentree", 
+"@version": "0.0.0"
 }
 ]
 }, 
 "^ot:annotationEvents": {
-"annotation": []
+"annotation": [
+{
+"@dateCreated": "2016-09-02T14:47:50.573Z", 
+"@description": "Aids for mapping study OTUs to OTT taxa", 
+"@id": "otu-mapping-hints", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "OTU_MAPPING_HINTS", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"searchContext": {
+"$": "Animals"
 }, 
-"^ot:candidateTreeForSynthesis": [], 
-"^ot:curatorName": "Chris Owen", 
+"substitutions": {
+"substitution": [
+{
+"@active": false, 
+"@valid": true, 
+"new": {
+"$": ""
+}, 
+"old": {
+"$": ""
+}
+}
+]
+}, 
+"useFuzzyMatching": false
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}, 
+{
+"@dateCreated": "2016-09-02T14:47:50.573Z", 
+"@description": "Describes supporting data files for this study", 
+"@id": "supporting-files-metadata", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "SUPPORTING_FILE_INFO", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"@movedToPermanentArchive": false, 
+"files": {
+"file": []
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}
+]
+}, 
+"^ot:candidateTreeForSynthesis": [
+"tree5031"
+], 
+"^ot:comment": "", 
+"^ot:curatorName": [
+"Chris Owen", 
+"Joseph W. Brown"
+], 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S10436"
 }, 
 "^ot:focalClade": 691846, 
 "^ot:focalCladeOTTTaxonName": "Metazoa", 
-"^ot:messages": {
-"message": []
-}, 
+"^ot:notIntendedForSynthesis": false, 
 "^ot:otusElementOrder": [
 "otus2396"
 ], 
@@ -148,6 +226,8 @@
 }, 
 "otu339268": {
 "^ot:originalLabel": "Acropora millepora", 
+"^ot:ottId": 3675115, 
+"^ot:ottTaxonName": "Acropora millepora", 
 "^ot:treebaseOTUId": "Tl436286"
 }, 
 "otu339269": {
@@ -366,16 +446,19 @@
 ], 
 "treeById": {
 "tree5031": {
+"@label": "Fig. 1B (CAT-BP)", 
 "@xsi:type": "nex:FloatTree", 
 "^ot:branchLengthDescription": "", 
-"^ot:branchLengthMode": "", 
-"^ot:branchLengthTimeUnit": "", 
-"^ot:curatedType": "Fig. 1B- BI", 
-"^ot:inGroupClade": "node874064", 
+"^ot:branchLengthMode": "ot:substitutionCount", 
+"^ot:curatedType": "Bayesian inference ", 
+"^ot:inGroupClade": "tree5031_ROOT", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
 "^ot:outGroupEdge": "", 
-"^ot:rootNodeId": "node874064", 
-"^ot:specifiedRoot": "", 
+"^ot:rootNodeId": "tree5031_ROOT", 
+"^ot:specifiedRoot": "tree5031_ROOT", 
 "^ot:tag": [], 
+"^ot:unrootedTree": false, 
 "edgeBySourceId": {
 "node874064": {
 "edge874065": {
@@ -387,23 +470,18 @@
 "@length": 0.15883, 
 "@source": "node874064", 
 "@target": "node874066"
-}, 
-"edge874067": {
-"@length": 0.061012, 
-"@source": "node874064", 
-"@target": "node874067"
 }
 }, 
 "node874067": {
+"edge874067": {
+"@length": 0.061012, 
+"@source": "node874067", 
+"@target": "node874064"
+}, 
 "edge874068": {
 "@length": 0.516123, 
 "@source": "node874067", 
 "@target": "node874068"
-}, 
-"edge874069": {
-"@length": 0.133701, 
-"@source": "node874067", 
-"@target": "node874069"
 }
 }, 
 "node874069": {
@@ -933,12 +1011,21 @@
 "@source": "node874154", 
 "@target": "node874156"
 }
+}, 
+"tree5031_ROOT": {
+"edge874069": {
+"@length": 0.133701, 
+"@source": "tree5031_ROOT", 
+"@target": "node874069"
+}, 
+"tree5031_ROOT_EDGE": {
+"@source": "tree5031_ROOT", 
+"@target": "node874067"
+}
 }
 }, 
 "nodeById": {
-"node874064": {
-"@root": true
-}, 
+"node874064": {}, 
 "node874065": {
 "@otu": "otu339268"
 }, 
@@ -1127,20 +1214,26 @@
 }, 
 "node874157": {
 "@otu": "otu339290"
+}, 
+"tree5031_ROOT": {
+"@root": true
 }
 }
 }, 
 "tree6383": {
+"@label": "Fig 1A (CAT)", 
 "@xsi:type": "nex:FloatTree", 
 "^ot:branchLengthDescription": "", 
 "^ot:branchLengthMode": "ot:substitutionCount", 
-"^ot:branchLengthTimeUnit": "", 
-"^ot:curatedType": "Fig 1A-BI", 
-"^ot:inGroupClade": "node1111466", 
+"^ot:curatedType": "Bayesian inference ", 
+"^ot:inGroupClade": "node1111465", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
 "^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node1111465", 
-"^ot:specifiedRoot": "", 
+"^ot:specifiedRoot": "node1111465", 
 "^ot:tag": [], 
+"^ot:unrootedTree": false, 
 "edgeBySourceId": {
 "node1111465": {
 "edge1111466": {

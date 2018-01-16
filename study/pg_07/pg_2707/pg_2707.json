@@ -36,19 +36,102 @@
 }
 ]
 }
+}, 
+{
+"@description": "Web-based interface for submitting, editing, and reviewing studies in the Open Tree of Life project.", 
+"@id": "opentree-curation-webapp", 
+"@name": "OpenTree curation webapp", 
+"@url": "https://github.com/OpenTreeOfLife/opentree", 
+"@version": "0.0.0"
 }
 ]
 }, 
 "^ot:annotationEvents": {
-"annotation": []
+"annotation": [
+{
+"@dateCreated": "2014-07-01T14:47:51.878Z", 
+"@description": "Aids for mapping study OTUs to OTT taxa", 
+"@id": "otu-mapping-hints", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "OTU_MAPPING_HINTS", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"searchContext": {
+"$": "Birds"
 }, 
-"^ot:candidateTreeForSynthesis": [], 
-"^ot:curatorName": "Joseph Brown", 
+"substitutions": {
+"substitution": [
+{
+"@active": false, 
+"@valid": true, 
+"new": {
+"$": ""
+}, 
+"old": {
+"$": ""
+}
+}
+]
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}, 
+{
+"@dateCreated": "2014-07-01T14:47:51.878Z", 
+"@description": "Describes supporting data files for this study", 
+"@id": "supporting-files-metadata", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "SUPPORTING_FILE_INFO", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"@movedToPermanentArchive": false, 
+"files": {
+"file": []
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}
+]
+}, 
+"^ot:candidateTreeForSynthesis": [
+"tree6281"
+], 
+"^ot:comment": "", 
+"^ot:curatorName": [
+"Joseph Brown", 
+"Joseph W. Brown"
+], 
+"^ot:dataDeposit": {
+"@href": ""
+}, 
 "^ot:focalClade": 640561, 
 "^ot:focalCladeOTTTaxonName": "Icteridae", 
 "^ot:messages": {
 "message": []
 }, 
+"^ot:notIntendedForSynthesis": false, 
 "^ot:otusElementOrder": [
 "otus2707"
 ], 
@@ -93,7 +176,9 @@
 "^ot:ottTaxonName": "Chrysomus icterocephalus"
 }, 
 "otu405492": {
-"^ot:originalLabel": "Agelasticus xanthophthalmus"
+"^ot:originalLabel": "Agelasticus xanthophthalmus", 
+"^ot:ottId": 498750, 
+"^ot:ottTaxonName": "Agelaius xanthophthalmus"
 }, 
 "otu405493": {
 "^ot:originalLabel": "Agelasticus cyanopus", 
@@ -166,7 +251,9 @@
 "^ot:ottTaxonName": "Quiscalus major"
 }, 
 "otu405507": {
-"^ot:originalLabel": "Quiscalus mexicanus E"
+"^ot:originalLabel": "Quiscalus mexicanus E", 
+"^ot:ottId": 743411, 
+"^ot:ottTaxonName": "Quiscalus mexicanus"
 }, 
 "otu405508": {
 "^ot:originalLabel": "Quiscalus palustris", 
@@ -174,7 +261,9 @@
 "^ot:ottTaxonName": "Quiscalus palustris"
 }, 
 "otu405509": {
-"^ot:originalLabel": "Quiscalus mexicanus W"
+"^ot:originalLabel": "Quiscalus mexicanus W", 
+"^ot:ottId": 743411, 
+"^ot:ottTaxonName": "Quiscalus mexicanus"
 }, 
 "otu405510": {
 "^ot:originalLabel": "Quiscalus niger", 
@@ -570,10 +659,14 @@
 "^ot:ottTaxonName": "Cacicus melanicterus"
 }, 
 "otu405589": {
-"^ot:originalLabel": "Amblycercus holosericeus S"
+"^ot:originalLabel": "Amblycercus holosericeus S", 
+"^ot:ottId": 858282, 
+"^ot:ottTaxonName": "Amblycercus holosericeus"
 }, 
 "otu405590": {
-"^ot:originalLabel": "Amblycercus holosericeus N"
+"^ot:originalLabel": "Amblycercus holosericeus N", 
+"^ot:ottId": 858282, 
+"^ot:ottTaxonName": "Amblycercus holosericeus"
 }, 
 "otu405591": {
 "^ot:originalLabel": "Sturnella loyca", 
@@ -656,18 +749,22 @@
 ], 
 "treeById": {
 "tree6281": {
+"@label": "ML majority-rule bootstrap consensus", 
 "@xsi:type": "nex:FloatTree", 
 "^ot:branchLengthDescription": "", 
 "^ot:branchLengthMode": "ot:substitutionCount", 
 "^ot:branchLengthTimeUnit": "", 
-"^ot:curatedType": "ML majority-rule bootstrap consensus", 
+"^ot:curatedType": "Maximum likelihood ", 
 "^ot:inGroupClade": "node1086380", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
 "^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node1086379", 
-"^ot:specifiedRoot": "", 
+"^ot:specifiedRoot": "node1086379", 
 "^ot:tag": [
 "Choose me"
 ], 
+"^ot:unrootedTree": false, 
 "edgeBySourceId": {
 "node1086379": {
 "edge1086380": {
@@ -2489,10 +2586,12 @@
 }, 
 "node1086585": {}, 
 "node1086586": {
-"@otu": "otu405589"
+"@otu": "otu405589", 
+"^ot:isTaxonExemplar": true
 }, 
 "node1086587": {
-"@otu": "otu405590"
+"@otu": "otu405590", 
+"^ot:isTaxonExemplar": false
 }, 
 "node1086588": {}, 
 "node1086589": {}, 
@@ -2519,10 +2618,12 @@
 "node1086600": {}, 
 "node1086601": {}, 
 "node1086602": {
-"@otu": "otu405596"
+"@otu": "otu405596", 
+"^ot:isTaxonExemplar": true
 }, 
 "node1086603": {
-"@otu": "otu405597"
+"@otu": "otu405597", 
+"^ot:isTaxonExemplar": false
 }, 
 "node1086604": {
 "@otu": "otu405598"

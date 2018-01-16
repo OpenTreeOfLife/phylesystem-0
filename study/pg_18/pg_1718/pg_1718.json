@@ -36,20 +36,98 @@
 }
 ]
 }
+}, 
+{
+"@description": "Web-based interface for submitting, editing, and reviewing studies in the Open Tree of Life project.", 
+"@id": "opentree-curation-webapp", 
+"@name": "OpenTree curation webapp", 
+"@url": "https://github.com/OpenTreeOfLife/opentree", 
+"@version": "0.0.0"
 }
 ]
 }, 
 "^ot:annotationEvents": {
-"annotation": []
+"annotation": [
+{
+"@dateCreated": "2015-09-28T21:12:30.907Z", 
+"@description": "Aids for mapping study OTUs to OTT taxa", 
+"@id": "otu-mapping-hints", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "OTU_MAPPING_HINTS", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"searchContext": {
+"$": "All life"
 }, 
-"^ot:candidateTreeForSynthesis": [], 
-"^ot:curatorName": "Romina Gazis", 
+"substitutions": {
+"substitution": [
+{
+"@active": false, 
+"@valid": true, 
+"new": {
+"$": ""
+}, 
+"old": {
+"$": ""
+}
+}
+]
+}, 
+"useFuzzyMatching": false
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}, 
+{
+"@dateCreated": "2015-09-28T21:12:30.907Z", 
+"@description": "Describes supporting data files for this study", 
+"@id": "supporting-files-metadata", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "SUPPORTING_FILE_INFO", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"@movedToPermanentArchive": false, 
+"files": {
+"file": []
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}
+]
+}, 
+"^ot:candidateTreeForSynthesis": [
+"tree3460"
+], 
+"^ot:comment": "", 
+"^ot:curatorName": [
+"Romina Gazis"
+], 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S687"
 }, 
-"^ot:messages": {
-"message": []
-}, 
+"^ot:focalCladeOTTTaxonName": "", 
+"^ot:notIntendedForSynthesis": false, 
 "^ot:otusElementOrder": [
 "otus1718"
 ], 
@@ -63,6 +141,10 @@
 "^ot:treesElementOrder": [
 "trees1718"
 ], 
+"^xhtml:license": {
+"@href": "http://creativecommons.org/publicdomain/zero/1.0/", 
+"@name": "CC0"
+}, 
 "otusById": {
 "otus1718": {
 "otuById": {
@@ -173,18 +255,23 @@
 ], 
 "treeById": {
 "tree3460": {
+"@label": "NJ-ITS phylogeny", 
 "@xsi:type": "nex:FloatTree", 
 "^ot:branchLengthDescription": "", 
-"^ot:branchLengthMode": "", 
-"^ot:branchLengthTimeUnit": "", 
-"^ot:curatedType": "NJ, ITS", 
+"^ot:branchLengthMode": "ot:changesCount", 
+"^ot:branchLengthTimeUnit": "Myr", 
+"^ot:curatedType": "Neighbor-joining ", 
 "^ot:inGroupClade": "node674331", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
 "^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node674330", 
-"^ot:specifiedRoot": "", 
+"^ot:specifiedRoot": "node674330", 
 "^ot:tag": [
-"NJ"
+"NJ", 
+"ITS"
 ], 
+"^ot:unrootedTree": false, 
 "edgeBySourceId": {
 "node674330": {
 "edge674331": {
@@ -355,20 +442,25 @@
 "@otu": "otu271855"
 }, 
 "node674342": {
-"@otu": "otu271854"
+"@otu": "otu271854", 
+"^ot:isTaxonExemplar": true
 }, 
 "node674343": {
-"@otu": "otu271856"
+"@otu": "otu271856", 
+"^ot:isTaxonExemplar": false
 }, 
 "node674344": {
-"@otu": "otu271865"
+"@otu": "otu271865", 
+"^ot:isTaxonExemplar": true
 }, 
 "node674345": {}, 
 "node674346": {
-"@otu": "otu271858"
+"@otu": "otu271858", 
+"^ot:isTaxonExemplar": true
 }, 
 "node674347": {
-"@otu": "otu271862"
+"@otu": "otu271862", 
+"^ot:isTaxonExemplar": false
 }, 
 "node674348": {
 "@otu": "otu271867"
@@ -379,13 +471,16 @@
 "node674350": {}, 
 "node674351": {}, 
 "node674352": {
-"@otu": "otu271853"
+"@otu": "otu271853", 
+"^ot:isTaxonExemplar": false
 }, 
 "node674353": {
-"@otu": "otu271860"
+"@otu": "otu271860", 
+"^ot:isTaxonExemplar": false
 }, 
 "node674354": {
-"@otu": "otu271864"
+"@otu": "otu271864", 
+"^ot:isTaxonExemplar": true
 }, 
 "node674355": {
 "@otu": "otu271863"

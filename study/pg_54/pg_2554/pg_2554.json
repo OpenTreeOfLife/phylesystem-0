@@ -36,27 +36,118 @@
 }
 ]
 }
+}, 
+{
+"@description": "Web-based interface for submitting, editing, and reviewing studies in the Open Tree of Life project.", 
+"@id": "opentree-curation-webapp", 
+"@name": "OpenTree curation webapp", 
+"@url": "https://github.com/OpenTreeOfLife/opentree", 
+"@version": "0.0.0"
 }
 ]
 }, 
 "^ot:annotationEvents": {
-"annotation": []
+"annotation": [
+{
+"@dateCreated": "2016-01-28T18:46:44.520Z", 
+"@description": "Aids for mapping study OTUs to OTT taxa", 
+"@id": "otu-mapping-hints", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "OTU_MAPPING_HINTS", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"searchContext": {
+"$": "Bacteria"
 }, 
-"^ot:candidateTreeForSynthesis": [], 
-"^ot:curatorName": "Laura Katz", 
+"substitutions": {
+"substitution": [
+{
+"@active": false, 
+"@valid": true, 
+"new": {
+"$": ""
+}, 
+"old": {
+"$": ""
+}
+}, 
+{
+"@active": false, 
+"@valid": true, 
+"new": {
+"$": ""
+}, 
+"old": {
+"$": "\\b\\s+(\\w*)$"
+}
+}
+]
+}, 
+"useFuzzyMatching": false
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}, 
+{
+"@dateCreated": "2016-01-28T18:46:44.520Z", 
+"@description": "Describes supporting data files for this study", 
+"@id": "supporting-files-metadata", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "SUPPORTING_FILE_INFO", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"@movedToPermanentArchive": false, 
+"files": {
+"file": []
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}
+]
+}, 
+"^ot:candidateTreeForSynthesis": [
+"tree5580"
+], 
+"^ot:comment": "", 
+"^ot:curatorName": [
+"Laura Katz", 
+"Dail Laughinghouse"
+], 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S14246"
 }, 
 "^ot:focalClade": 843528, 
 "^ot:focalCladeOTTTaxonName": "Oscillatoriales", 
-"^ot:messages": {
-"message": []
-}, 
+"^ot:notIntendedForSynthesis": false, 
 "^ot:otusElementOrder": [
 "otus2554"
 ], 
 "^ot:studyId": "pg_2554", 
-"^ot:studyPublicationReference": "Engene N., & Paul V.J. 2013. Five Chemically Rich Species of Tropical Marine Cyanobacteria of the Genus Tropicimarinus Gen. Nov. (Oscillatoriales, Cyanobacteria). Journal of Phycology, .", 
+"^ot:studyPublication": {
+"@href": "http://dx.doi.org/10.1111/jpy.12115"
+}, 
+"^ot:studyPublicationReference": "Niclas Engene, Valerie J. Paul, Tara Byrum, William H. Gerwick, Andrea Thor, Mark H. Ellisman, 2013, ' Five chemically rich species of tropical marine cyanobacteria of the genus Okeania gen. nov. (Oscillatoriales, Cyanoprokaryota) ', Journal of Phycology, vol. 49, no. 6, pp. 1095-1106", 
 "^ot:studyYear": 2013, 
 "^ot:tag": [], 
 "^ot:treesElementOrder": [
@@ -73,10 +164,14 @@
 }, 
 "otu368845": {
 "^ot:originalLabel": "Tropicimarinus erythrofloccus FFP12 1 KC207934", 
+"^ot:ottId": 5376669, 
+"^ot:ottTaxonName": "Okeania erythroflocculosa", 
 "^ot:treebaseOTUId": "Tl1098771"
 }, 
 "otu368846": {
 "^ot:originalLabel": "Tropicimarinus erythrofloccus FFP12 7 KC986930", 
+"^ot:ottId": 5376669, 
+"^ot:ottTaxonName": "Okeania erythroflocculosa", 
 "^ot:treebaseOTUId": "Tl1098772"
 }, 
 "otu368847": {
@@ -103,6 +198,8 @@
 }, 
 "otu368851": {
 "^ot:originalLabel": "Tropicimarinus plumacii NAC8 54 GU724207", 
+"^ot:ottId": 5376668, 
+"^ot:ottTaxonName": "Okeania plumata", 
 "^ot:treebaseOTUId": "Tl1098777"
 }, 
 "otu368852": {
@@ -117,6 +214,8 @@
 }, 
 "otu368854": {
 "^ot:originalLabel": "Tropicimarinus plumacii FK12 27 KC986935", 
+"^ot:ottId": 5376668, 
+"^ot:ottTaxonName": "Okeania plumata", 
 "^ot:treebaseOTUId": "Tl1098780"
 }, 
 "otu368855": {
@@ -133,6 +232,8 @@
 }, 
 "otu368857": {
 "^ot:originalLabel": "Coleofasciculus chthonoplastes NCR EF654039", 
+"^ot:ottId": 716746, 
+"^ot:ottTaxonName": "Coleofasciculus chthonoplastes NCR", 
 "^ot:treebaseOTUId": "Tl1098783"
 }, 
 "otu368858": {
@@ -143,12 +244,12 @@
 }, 
 "otu368859": {
 "^ot:originalLabel": "Lyngbya hieronymusii AB045906", 
+"^ot:ottId": 704075, 
+"^ot:ottTaxonName": "Limnoraphis hieronymusii", 
 "^ot:treebaseOTUId": "Tl1098785"
 }, 
 "otu368860": {
 "^ot:originalLabel": "Lyngbya cf confervoides VP0401 AY599507", 
-"^ot:ottId": 648250, 
-"^ot:ottTaxonName": "Lyngbya confervoides", 
 "^ot:treebaseOTUId": "Tl1098786"
 }, 
 "otu368861": {
@@ -159,12 +260,14 @@
 }, 
 "otu368862": {
 "^ot:originalLabel": "Moorea producta JHB FJ151521", 
+"^ot:ottId": 659831, 
+"^ot:ottTaxonName": "Moorea producens", 
 "^ot:treebaseOTUId": "Tl1098788"
 }, 
 "otu368863": {
 "^ot:originalLabel": "Nostoc punctiforme PCC 73102 NC010628", 
-"^ot:ottId": 782567, 
-"^ot:ottTaxonName": "Nostoc punctiforme", 
+"^ot:ottId": 134995, 
+"^ot:ottTaxonName": "Nostoc punctiforme PCC 73102", 
 "^ot:treebaseOTUId": "Tl1098789"
 }, 
 "otu368864": {
@@ -185,20 +288,24 @@
 }, 
 "otu368867": {
 "^ot:originalLabel": "Gloeobacter violaceus PCC 7421 NC005125", 
+"^ot:ottId": 37488, 
+"^ot:ottTaxonName": "Gloeobacter violaceus PCC 7421", 
 "^ot:treebaseOTUId": "Tl1098793"
 }, 
 "otu368868": {
 "^ot:originalLabel": "Coleofasciculus chthonoplastes PCC 7420 ABRS00000000", 
+"^ot:ottId": 535073, 
+"^ot:ottTaxonName": "Coleofasciculus chthonoplastes PCC 7420", 
 "^ot:treebaseOTUId": "Tl1098794"
 }, 
 "otu368869": {
 "^ot:originalLabel": "Moorea bouillonii PNG5198 FJ041298", 
+"^ot:ottId": 648245, 
+"^ot:ottTaxonName": "Moorea bouillonii", 
 "^ot:treebaseOTUId": "Tl1098795"
 }, 
 "otu368870": {
 "^ot:originalLabel": "Lyngbya aestuarii PCC 8106 AJ000714", 
-"^ot:ottId": 945417, 
-"^ot:ottTaxonName": "Lyngbya aestuarii", 
 "^ot:treebaseOTUId": "Tl1098796"
 }, 
 "otu368871": {
@@ -211,8 +318,8 @@
 }, 
 "otu368873": {
 "^ot:originalLabel": "Oscillatoria sancta PCC 7515 AB039015", 
-"^ot:ottId": 602180, 
-"^ot:ottTaxonName": "Oscillatoria sancta", 
+"^ot:ottId": 719451, 
+"^ot:ottTaxonName": "Oscillatoria sancta PCC 7515", 
 "^ot:treebaseOTUId": "Tl1098799"
 }, 
 "otu368874": {
@@ -237,12 +344,12 @@
 }, 
 "otu368878": {
 "^ot:originalLabel": "Tropicimarinus plumacii FK12 4 KC986933", 
+"^ot:ottId": 5376668, 
+"^ot:ottTaxonName": "Okeania plumata", 
 "^ot:treebaseOTUId": "Tl1098804"
 }, 
 "otu368879": {
 "^ot:originalLabel": "Trichodesmium havanum F345 AF518770", 
-"^ot:ottId": 633252, 
-"^ot:ottTaxonName": "Trichodesmium havanum", 
 "^ot:treebaseOTUId": "Tl1098805"
 }, 
 "otu368880": {
@@ -252,9 +359,8 @@
 "^ot:treebaseOTUId": "Tl1098806"
 }, 
 "otu368881": {
+"^ot:altLabel": "Phormidium autumnale SAG 3590", 
 "^ot:originalLabel": "Phormidium autumnale SAG 3590 EF654081", 
-"^ot:ottId": 535663, 
-"^ot:ottTaxonName": "Phormidium autumnale", 
 "^ot:treebaseOTUId": "Tl1098807"
 }, 
 "otu368882": {
@@ -270,6 +376,7 @@
 "^ot:treebaseOTUId": "Tl1098809"
 }, 
 "otu368884": {
+"^ot:altLabel": "okeania plumata", 
 "^ot:originalLabel": "Tropicimarinus plumacii NAB11 47 KC196267", 
 "^ot:treebaseOTUId": "Tl1098810"
 }, 
@@ -281,16 +388,19 @@
 }, 
 "otu368886": {
 "^ot:originalLabel": "Synechococcus elongatus PCC 6301 NC006576", 
+"^ot:ottId": 761880, 
+"^ot:ottTaxonName": "Synechococcus elongatus PCC 6301", 
 "^ot:treebaseOTUId": "Tl1098812"
 }, 
 "otu368887": {
+"^ot:altLabel": "okeania plumata", 
 "^ot:originalLabel": "Tropicimarinus plumacii BCBC12 21 KC986934", 
 "^ot:treebaseOTUId": "Tl1098813"
 }, 
 "otu368888": {
 "^ot:originalLabel": "Trichodesmium erythraeum IMS101 NC008312", 
-"^ot:ottId": 197000, 
-"^ot:ottTaxonName": "Trichodesmium erythraeum", 
+"^ot:ottId": 340510, 
+"^ot:ottTaxonName": "Trichodesmium erythraeum IMS101", 
 "^ot:treebaseOTUId": "Tl1098814"
 }, 
 "otu368889": {
@@ -307,36 +417,39 @@
 }, 
 "otu368891": {
 "^ot:originalLabel": "Lyngbya wollei SG JQ282906", 
-"^ot:ottId": 156984, 
-"^ot:ottTaxonName": "Lyngbya wollei", 
+"^ot:ottId": 267938, 
+"^ot:ottTaxonName": "Lyngbya wollei SG", 
 "^ot:treebaseOTUId": "Tl1098817"
 }, 
 "otu368892": {
+"^ot:altLabel": "Symploca sp PCC8002", 
 "^ot:originalLabel": "Symploca sp PCC8002 AB039021", 
 "^ot:treebaseOTUId": "Tl1098818"
 }, 
 "otu368893": {
 "^ot:originalLabel": "Microcoleus vaginatus CNP3KK2 EF654064", 
-"^ot:ottId": 648313, 
-"^ot:ottTaxonName": "Microcoleus vaginatus", 
 "^ot:treebaseOTUId": "Tl1098819"
 }, 
 "otu368894": {
 "^ot:originalLabel": "Symploca atlantica CCY9617 GQ402026", 
-"^ot:ottId": 508944, 
-"^ot:ottTaxonName": "Symploca atlantica", 
+"^ot:ottId": 1081044, 
+"^ot:ottTaxonName": "Symploca atlantica CCY9617", 
 "^ot:treebaseOTUId": "Tl1098820"
 }, 
 "otu368895": {
+"^ot:altLabel": "okeania verber", 
 "^ot:originalLabel": "Tropicimarinus verber FK12 17 KC196268", 
 "^ot:treebaseOTUId": "Tl1098821"
 }, 
 "otu368896": {
+"^ot:altLabel": "okeania villus", 
 "^ot:originalLabel": "Tropicimarinus villus PAB 21 JUN 10 2 KC986937", 
 "^ot:treebaseOTUId": "Tl1098822"
 }, 
 "otu368897": {
 "^ot:originalLabel": "Synechococcus elongatus PCC 7942 NC007604", 
+"^ot:ottId": 319258, 
+"^ot:ottTaxonName": "Synechococcus elongatus PCC 7942", 
 "^ot:treebaseOTUId": "Tl1098823"
 }, 
 "otu368898": {
@@ -361,8 +474,6 @@
 }, 
 "otu368902": {
 "^ot:originalLabel": "Lyngbya wollei Carmichael Alabama EU439567", 
-"^ot:ottId": 156984, 
-"^ot:ottTaxonName": "Lyngbya wollei", 
 "^ot:treebaseOTUId": "Tl1098828"
 }, 
 "otu368903": {
@@ -383,8 +494,6 @@
 }, 
 "otu368906": {
 "^ot:originalLabel": "Microcoleus vaginatus SNM1KK1 EF654077", 
-"^ot:ottId": 648313, 
-"^ot:ottTaxonName": "Microcoleus vaginatus", 
 "^ot:treebaseOTUId": "Tl1098832"
 }, 
 "otu368907": {
@@ -444,6 +553,7 @@
 "^ot:treebaseOTUId": "Tl1098844"
 }, 
 "otu368919": {
+"^ot:altLabel": "Trichodesmium sp l00688", 
 "^ot:originalLabel": "Trichodesmium sp L00688", 
 "^ot:treebaseOTUId": "Tl1098845"
 }, 
@@ -461,8 +571,8 @@
 }, 
 "otu368923": {
 "^ot:originalLabel": "Oscillatoria sancta PCC 7515 AY768418", 
-"^ot:ottId": 602180, 
-"^ot:ottTaxonName": "Oscillatoria sancta", 
+"^ot:ottId": 719451, 
+"^ot:ottTaxonName": "Oscillatoria sancta PCC 7515", 
 "^ot:treebaseOTUId": "Tl1098849"
 }, 
 "otu368924": {
@@ -503,8 +613,8 @@
 }, 
 "otu368932": {
 "^ot:originalLabel": "Trichodesmium erythraeum IMS101 AF399647", 
-"^ot:ottId": 197000, 
-"^ot:ottTaxonName": "Trichodesmium erythraeum", 
+"^ot:ottId": 340510, 
+"^ot:ottTaxonName": "Trichodesmium erythraeum IMS101", 
 "^ot:treebaseOTUId": "Tl1098858"
 }, 
 "otu368933": {
@@ -557,17 +667,14 @@
 }, 
 "otu368944": {
 "^ot:originalLabel": "Trichodesmium erythraeum Z 9 AF399646", 
-"^ot:ottId": 197000, 
-"^ot:ottTaxonName": "Trichodesmium erythraeum", 
 "^ot:treebaseOTUId": "Tl1098870"
 }, 
 "otu368945": {
 "^ot:originalLabel": "Oscillatoria sancta SAG 74 79 EU196675", 
-"^ot:ottId": 602180, 
-"^ot:ottTaxonName": "Oscillatoria sancta", 
 "^ot:treebaseOTUId": "Tl1098871"
 }, 
 "otu368946": {
+"^ot:altLabel": "okeania plumata", 
 "^ot:originalLabel": "Tropicimarinus plumacii NAC8 46 KC992977", 
 "^ot:treebaseOTUId": "Tl1098872"
 }, 
@@ -579,8 +686,8 @@
 }, 
 "otu368948": {
 "^ot:originalLabel": "Oscillatoria sancta PCC 7515 EF178272", 
-"^ot:ottId": 602180, 
-"^ot:ottTaxonName": "Oscillatoria sancta", 
+"^ot:ottId": 719451, 
+"^ot:ottTaxonName": "Oscillatoria sancta PCC 7515", 
 "^ot:treebaseOTUId": "Tl1098874"
 }, 
 "otu368949": {
@@ -606,23 +713,22 @@
 ], 
 "treeById": {
 "tree5580": {
+"@label": "Untitled (tree5580)", 
 "@xsi:type": "nex:FloatTree", 
 "^ot:branchLengthDescription": "", 
-"^ot:branchLengthMode": "", 
-"^ot:branchLengthTimeUnit": "", 
+"^ot:branchLengthMode": "ot:undefined", 
+"^ot:branchLengthTimeUnit": "Myr", 
 "^ot:curatedType": "Like Fig. 3", 
 "^ot:inGroupClade": "node956297", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
 "^ot:outGroupEdge": "", 
-"^ot:rootNodeId": "node956291", 
-"^ot:specifiedRoot": "", 
+"^ot:rootNodeId": "node956294", 
+"^ot:specifiedRoot": "node956294", 
 "^ot:tag": [], 
+"^ot:unrootedTree": false, 
 "edgeBySourceId": {
 "node956291": {
-"edge956292": {
-"@length": 0.03404124, 
-"@source": "node956291", 
-"@target": "node956292"
-}, 
 "edge956297": {
 "@length": 0.03404124, 
 "@source": "node956291", 
@@ -630,18 +736,23 @@
 }
 }, 
 "node956292": {
+"edge956292": {
+"@length": 0.03404124, 
+"@source": "node956292", 
+"@target": "node956291"
+}, 
 "edge956293": {
 "@length": 0.01668922, 
 "@source": "node956292", 
 "@target": "node956293"
-}, 
-"edge956294": {
-"@length": 0.04296755, 
-"@source": "node956292", 
-"@target": "node956294"
 }
 }, 
 "node956294": {
+"edge956294": {
+"@length": 0.04296755, 
+"@source": "node956294", 
+"@target": "node956292"
+}, 
 "edge956295": {
 "@length": 0.00937815, 
 "@source": "node956294", 
@@ -1410,14 +1521,14 @@
 }
 }, 
 "nodeById": {
-"node956291": {
-"@root": true
-}, 
+"node956291": {}, 
 "node956292": {}, 
 "node956293": {
 "@otu": "otu368880"
 }, 
-"node956294": {}, 
+"node956294": {
+"@root": true
+}, 
 "node956295": {
 "@otu": "otu368863"
 }, 
@@ -1465,10 +1576,12 @@
 "node956317": {}, 
 "node956318": {}, 
 "node956319": {
-"@otu": "otu368891"
+"@otu": "otu368891", 
+"^ot:isTaxonExemplar": true
 }, 
 "node956320": {
-"@otu": "otu368902"
+"@otu": "otu368902", 
+"^ot:isTaxonExemplar": false
 }, 
 "node956321": {}, 
 "node956322": {}, 
@@ -1567,10 +1680,12 @@
 }, 
 "node956368": {}, 
 "node956369": {
-"@otu": "otu368893"
+"@otu": "otu368893", 
+"^ot:isTaxonExemplar": true
 }, 
 "node956370": {
-"@otu": "otu368906"
+"@otu": "otu368906", 
+"^ot:isTaxonExemplar": false
 }, 
 "node956371": {}, 
 "node956372": {
@@ -1580,14 +1695,16 @@
 "node956374": {}, 
 "node956375": {}, 
 "node956376": {
-"@otu": "otu368899"
+"@otu": "otu368899", 
+"^ot:isTaxonExemplar": false
 }, 
 "node956377": {}, 
 "node956378": {
 "@otu": "otu368883"
 }, 
 "node956379": {
-"@otu": "otu368864"
+"@otu": "otu368864", 
+"^ot:isTaxonExemplar": true
 }, 
 "node956380": {}, 
 "node956381": {}, 
@@ -1628,14 +1745,16 @@
 "node956398": {}, 
 "node956399": {}, 
 "node956400": {
-"@otu": "otu368845"
+"@otu": "otu368845", 
+"^ot:isTaxonExemplar": false
 }, 
 "node956401": {}, 
 "node956402": {
 "@otu": "otu368903"
 }, 
 "node956403": {
-"@otu": "otu368846"
+"@otu": "otu368846", 
+"^ot:isTaxonExemplar": true
 }, 
 "node956404": {}, 
 "node956405": {
@@ -1651,10 +1770,12 @@
 "node956409": {}, 
 "node956410": {}, 
 "node956411": {
-"@otu": "otu368854"
+"@otu": "otu368854", 
+"^ot:isTaxonExemplar": false
 }, 
 "node956412": {
-"@otu": "otu368878"
+"@otu": "otu368878", 
+"^ot:isTaxonExemplar": true
 }, 
 "node956413": {}, 
 "node956414": {
@@ -1666,7 +1787,8 @@
 }, 
 "node956417": {}, 
 "node956418": {
-"@otu": "otu368851"
+"@otu": "otu368851", 
+"^ot:isTaxonExemplar": false
 }, 
 "node956419": {}, 
 "node956420": {
@@ -1682,15 +1804,20 @@
 }
 }, 
 "tree5581": {
+"@label": "Untitled (tree5581)", 
 "@xsi:type": "nex:FloatTree", 
 "^ot:branchLengthDescription": "", 
 "^ot:branchLengthMode": "", 
 "^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "PAUP 1", 
+"^ot:inGroupClade": "", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
 "^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node956424", 
 "^ot:specifiedRoot": "", 
 "^ot:tag": [], 
+"^ot:unrootedTree": true, 
 "edgeBySourceId": {
 "node956424": {
 "edge956425": {
@@ -1989,15 +2116,20 @@
 }
 }, 
 "tree5582": {
+"@label": "Untitled (tree5582)", 
 "@xsi:type": "nex:FloatTree", 
 "^ot:branchLengthDescription": "", 
 "^ot:branchLengthMode": "", 
 "^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "PAUP 1", 
+"^ot:inGroupClade": "", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
 "^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node956461", 
 "^ot:specifiedRoot": "", 
 "^ot:tag": [], 
+"^ot:unrootedTree": true, 
 "edgeBySourceId": {
 "node956461": {
 "edge956462": {

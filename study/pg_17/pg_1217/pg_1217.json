@@ -36,22 +36,100 @@
 }
 ]
 }
+}, 
+{
+"@description": "Web-based interface for submitting, editing, and reviewing studies in the Open Tree of Life project.", 
+"@id": "opentree-curation-webapp", 
+"@name": "OpenTree curation webapp", 
+"@url": "https://github.com/OpenTreeOfLife/opentree", 
+"@version": "0.0.0"
 }
 ]
 }, 
 "^ot:annotationEvents": {
-"annotation": []
+"annotation": [
+{
+"@dateCreated": "2016-02-23T11:54:53.961Z", 
+"@description": "Aids for mapping study OTUs to OTT taxa", 
+"@id": "otu-mapping-hints", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "OTU_MAPPING_HINTS", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"searchContext": {
+"$": "Animals"
 }, 
-"^ot:candidateTreeForSynthesis": [], 
-"^ot:curatorName": "bryan drew", 
+"substitutions": {
+"substitution": [
+{
+"@active": false, 
+"@valid": true, 
+"new": {
+"$": ""
+}, 
+"old": {
+"$": ""
+}
+}
+]
+}, 
+"useFuzzyMatching": false
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}, 
+{
+"@dateCreated": "2016-02-23T11:54:53.961Z", 
+"@description": "Describes supporting data files for this study", 
+"@id": "supporting-files-metadata", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "SUPPORTING_FILE_INFO", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"@movedToPermanentArchive": false, 
+"files": {
+"file": []
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}
+]
+}, 
+"^ot:candidateTreeForSynthesis": [
+"tree2455"
+], 
+"^ot:comment": "", 
+"^ot:curatorName": [
+"bryan drew", 
+"Joseph W. Brown"
+], 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S12329"
 }, 
 "^ot:focalClade": 125642, 
 "^ot:focalCladeOTTTaxonName": "Chordata", 
-"^ot:messages": {
-"message": []
-}, 
+"^ot:notIntendedForSynthesis": false, 
 "^ot:otusElementOrder": [
 "otus1217"
 ], 
@@ -59,7 +137,7 @@
 "^ot:studyPublication": {
 "@href": "http://dx.doi.org/10.1002/dvg.20450"
 }, 
-"^ot:studyPublicationReference": "Delsuc, F., Tsagkogeorga G., Lartillot N., & Philippe H. 2008. Additional molecular\r\nsupport for the new chordate phylogeny. Genesis, 46: 592-604.", 
+"^ot:studyPublicationReference": "Delsuc, Fr\u00e9d\u00e9ric, Georgia Tsagkogeorga, Nicolas Lartillot, andHerv\u00e9 Philippe. 2008. Additional molecular\nsupport for the new chordate phylogeny. Genesis 46 (11): 592-604.", 
 "^ot:studyYear": 2008, 
 "^ot:tag": [], 
 "^ot:treesElementOrder": [
@@ -84,7 +162,9 @@
 "^ot:ottTaxonName": "Suberites domuncula"
 }, 
 "otu233177": {
-"^ot:originalLabel": "Acropora millepora"
+"^ot:originalLabel": "Acropora millepora", 
+"^ot:ottId": 3675115, 
+"^ot:ottTaxonName": "Acropora millepora"
 }, 
 "otu233178": {
 "^ot:originalLabel": "Nematostella vectensis", 
@@ -332,16 +412,20 @@
 ], 
 "treeById": {
 "tree2455": {
+"@label": "Fig. 2b (CAT+G)", 
 "@xsi:type": "nex:FloatTree", 
 "^ot:branchLengthDescription": "", 
-"^ot:branchLengthMode": "", 
-"^ot:branchLengthTimeUnit": "", 
-"^ot:curatedType": "Bayesian", 
-"^ot:inGroupClade": "node566161", 
+"^ot:branchLengthMode": "ot:undefined", 
+"^ot:branchLengthTimeUnit": "Myr", 
+"^ot:curatedType": "Bayesian inference ", 
+"^ot:inGroupClade": "node566171", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
 "^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node566155", 
-"^ot:specifiedRoot": "", 
+"^ot:specifiedRoot": "node566155", 
 "^ot:tag": [], 
+"^ot:unrootedTree": false, 
 "edgeBySourceId": {
 "node566155": {
 "edge566156": {
@@ -357,588 +441,588 @@
 }, 
 "node566156": {
 "edge566157": {
-"@length": 27642.0, 
+"@length": 27642, 
 "@source": "node566156", 
 "@target": "node566157"
 }, 
 "edge566158": {
-"@length": 25311.0, 
+"@length": 25311, 
 "@source": "node566156", 
 "@target": "node566158"
 }
 }, 
 "node566158": {
 "edge566159": {
-"@length": 14606.0, 
+"@length": 14606, 
 "@source": "node566158", 
 "@target": "node566159"
 }, 
 "edge566160": {
-"@length": 13250.0, 
+"@length": 13250, 
 "@source": "node566158", 
 "@target": "node566160"
 }
 }, 
 "node566161": {
 "edge566162": {
-"@length": 21300.0, 
+"@length": 21300, 
 "@source": "node566161", 
 "@target": "node566162"
 }, 
 "edge566171": {
-"@length": 21665.0, 
+"@length": 21665, 
 "@source": "node566161", 
 "@target": "node566171"
 }
 }, 
 "node566162": {
 "edge566163": {
-"@length": 30509.0, 
+"@length": 30509, 
 "@source": "node566162", 
 "@target": "node566163"
 }, 
 "edge566166": {
-"@length": 57075.0, 
+"@length": 57075, 
 "@source": "node566162", 
 "@target": "node566166"
 }
 }, 
 "node566163": {
 "edge566164": {
-"@length": 21003.0, 
+"@length": 21003, 
 "@source": "node566163", 
 "@target": "node566164"
 }, 
 "edge566165": {
-"@length": 36345.0, 
+"@length": 36345, 
 "@source": "node566163", 
 "@target": "node566165"
 }
 }, 
 "node566166": {
 "edge566167": {
-"@length": 6538.0, 
+"@length": 6538, 
 "@source": "node566166", 
 "@target": "node566167"
 }, 
 "edge566168": {
-"@length": 4735.0, 
+"@length": 4735, 
 "@source": "node566166", 
 "@target": "node566168"
 }
 }, 
 "node566168": {
 "edge566169": {
-"@length": 16071.0, 
+"@length": 16071, 
 "@source": "node566168", 
 "@target": "node566169"
 }, 
 "edge566170": {
-"@length": 18046.0, 
+"@length": 18046, 
 "@source": "node566168", 
 "@target": "node566170"
 }
 }, 
 "node566171": {
 "edge566172": {
-"@length": 13885.0, 
+"@length": 13885, 
 "@source": "node566171", 
 "@target": "node566172"
 }, 
 "edge566207": {
-"@length": 11206.0, 
+"@length": 11206, 
 "@source": "node566171", 
 "@target": "node566207"
 }
 }, 
 "node566172": {
 "edge566173": {
-"@length": 49456.0, 
+"@length": 49456, 
 "@source": "node566172", 
 "@target": "node566173"
 }, 
 "edge566174": {
-"@length": 20525.0, 
+"@length": 20525, 
 "@source": "node566172", 
 "@target": "node566174"
 }
 }, 
 "node566174": {
 "edge566175": {
-"@length": 39434.0, 
+"@length": 39434, 
 "@source": "node566174", 
 "@target": "node566175"
 }, 
 "edge566186": {
-"@length": 25363.0, 
+"@length": 25363, 
 "@source": "node566174", 
 "@target": "node566186"
 }
 }, 
 "node566175": {
 "edge566176": {
-"@length": 111800.0, 
+"@length": 111800, 
 "@source": "node566175", 
 "@target": "node566176"
 }, 
 "edge566177": {
-"@length": 29452.0, 
+"@length": 29452, 
 "@source": "node566175", 
 "@target": "node566177"
 }
 }, 
 "node566177": {
 "edge566178": {
-"@length": 29258.0, 
+"@length": 29258, 
 "@source": "node566177", 
 "@target": "node566178"
 }, 
 "edge566181": {
-"@length": 32286.0, 
+"@length": 32286, 
 "@source": "node566177", 
 "@target": "node566181"
 }
 }, 
 "node566178": {
 "edge566179": {
-"@length": 22600.0, 
+"@length": 22600, 
 "@source": "node566178", 
 "@target": "node566179"
 }, 
 "edge566180": {
-"@length": 25195.0, 
+"@length": 25195, 
 "@source": "node566178", 
 "@target": "node566180"
 }
 }, 
 "node566181": {
 "edge566182": {
-"@length": 13246.0, 
+"@length": 13246, 
 "@source": "node566181", 
 "@target": "node566182"
 }, 
 "edge566183": {
-"@length": 5591.0, 
+"@length": 5591, 
 "@source": "node566181", 
 "@target": "node566183"
 }
 }, 
 "node566183": {
 "edge566184": {
-"@length": 15319.0, 
+"@length": 15319, 
 "@source": "node566183", 
 "@target": "node566184"
 }, 
 "edge566185": {
-"@length": 16459.0, 
+"@length": 16459, 
 "@source": "node566183", 
 "@target": "node566185"
 }
 }, 
 "node566186": {
 "edge566187": {
-"@length": 26830.0, 
+"@length": 26830, 
 "@source": "node566186", 
 "@target": "node566187"
 }, 
 "edge566190": {
-"@length": 15674.0, 
+"@length": 15674, 
 "@source": "node566186", 
 "@target": "node566190"
 }
 }, 
 "node566187": {
 "edge566188": {
-"@length": 23665.0, 
+"@length": 23665, 
 "@source": "node566187", 
 "@target": "node566188"
 }, 
 "edge566189": {
-"@length": 14389.0, 
+"@length": 14389, 
 "@source": "node566187", 
 "@target": "node566189"
 }
 }, 
 "node566190": {
 "edge566191": {
-"@length": 14828.0, 
+"@length": 14828, 
 "@source": "node566190", 
 "@target": "node566191"
 }, 
 "edge566194": {
-"@length": 5942.0, 
+"@length": 5942, 
 "@source": "node566190", 
 "@target": "node566194"
 }
 }, 
 "node566191": {
 "edge566192": {
-"@length": 3686.0, 
+"@length": 3686, 
 "@source": "node566191", 
 "@target": "node566192"
 }, 
 "edge566193": {
-"@length": 3605.0, 
+"@length": 3605, 
 "@source": "node566191", 
 "@target": "node566193"
 }
 }, 
 "node566194": {
 "edge566195": {
-"@length": 15611.0, 
+"@length": 15611, 
 "@source": "node566194", 
 "@target": "node566195"
 }, 
 "edge566198": {
-"@length": 9470.0, 
+"@length": 9470, 
 "@source": "node566194", 
 "@target": "node566198"
 }
 }, 
 "node566195": {
 "edge566196": {
-"@length": 12014.0, 
+"@length": 12014, 
 "@source": "node566195", 
 "@target": "node566196"
 }, 
 "edge566197": {
-"@length": 17358.0, 
+"@length": 17358, 
 "@source": "node566195", 
 "@target": "node566197"
 }
 }, 
 "node566198": {
 "edge566199": {
-"@length": 9368.0, 
+"@length": 9368, 
 "@source": "node566198", 
 "@target": "node566199"
 }, 
 "edge566202": {
-"@length": 9203.0, 
+"@length": 9203, 
 "@source": "node566198", 
 "@target": "node566202"
 }
 }, 
 "node566199": {
 "edge566200": {
-"@length": 13726.0, 
+"@length": 13726, 
 "@source": "node566199", 
 "@target": "node566200"
 }, 
 "edge566201": {
-"@length": 10869.0, 
+"@length": 10869, 
 "@source": "node566199", 
 "@target": "node566201"
 }
 }, 
 "node566202": {
 "edge566203": {
-"@length": 10541.0, 
+"@length": 10541, 
 "@source": "node566202", 
 "@target": "node566203"
 }, 
 "edge566204": {
-"@length": 8427.0, 
+"@length": 8427, 
 "@source": "node566202", 
 "@target": "node566204"
 }
 }, 
 "node566204": {
 "edge566205": {
-"@length": 7169.0, 
+"@length": 7169, 
 "@source": "node566204", 
 "@target": "node566205"
 }, 
 "edge566206": {
-"@length": 8412.0, 
+"@length": 8412, 
 "@source": "node566204", 
 "@target": "node566206"
 }
 }, 
 "node566207": {
 "edge566208": {
-"@length": 22212.0, 
+"@length": 22212, 
 "@source": "node566207", 
 "@target": "node566208"
 }, 
 "edge566221": {
-"@length": 16684.0, 
+"@length": 16684, 
 "@source": "node566207", 
 "@target": "node566221"
 }
 }, 
 "node566208": {
 "edge566209": {
-"@length": 24442.0, 
+"@length": 24442, 
 "@source": "node566208", 
 "@target": "node566209"
 }, 
 "edge566210": {
-"@length": 6986.0, 
+"@length": 6986, 
 "@source": "node566208", 
 "@target": "node566210"
 }
 }, 
 "node566210": {
 "edge566211": {
-"@length": 39734.0, 
+"@length": 39734, 
 "@source": "node566210", 
 "@target": "node566211"
 }, 
 "edge566212": {
-"@length": 34925.0, 
+"@length": 34925, 
 "@source": "node566210", 
 "@target": "node566212"
 }
 }, 
 "node566212": {
 "edge566213": {
-"@length": 10404.0, 
+"@length": 10404, 
 "@source": "node566212", 
 "@target": "node566213"
 }, 
 "edge566214": {
-"@length": 4050.0, 
+"@length": 4050, 
 "@source": "node566212", 
 "@target": "node566214"
 }
 }, 
 "node566214": {
 "edge566215": {
-"@length": 18058.0, 
+"@length": 18058, 
 "@source": "node566214", 
 "@target": "node566215"
 }, 
 "edge566218": {
-"@length": 18437.0, 
+"@length": 18437, 
 "@source": "node566214", 
 "@target": "node566218"
 }
 }, 
 "node566215": {
 "edge566216": {
-"@length": 961.0, 
+"@length": 961, 
 "@source": "node566215", 
 "@target": "node566216"
 }, 
 "edge566217": {
-"@length": 1448.0, 
+"@length": 1448, 
 "@source": "node566215", 
 "@target": "node566217"
 }
 }, 
 "node566218": {
 "edge566219": {
-"@length": 8155.0, 
+"@length": 8155, 
 "@source": "node566218", 
 "@target": "node566219"
 }, 
 "edge566220": {
-"@length": 8906.0, 
+"@length": 8906, 
 "@source": "node566218", 
 "@target": "node566220"
 }
 }, 
 "node566221": {
 "edge566222": {
-"@length": 21093.0, 
+"@length": 21093, 
 "@source": "node566221", 
 "@target": "node566222"
 }, 
 "edge566223": {
-"@length": 3654.0, 
+"@length": 3654, 
 "@source": "node566221", 
 "@target": "node566223"
 }
 }, 
 "node566223": {
 "edge566224": {
-"@length": 25770.0, 
+"@length": 25770, 
 "@source": "node566223", 
 "@target": "node566224"
 }, 
 "edge566239": {
-"@length": 20668.0, 
+"@length": 20668, 
 "@source": "node566223", 
 "@target": "node566239"
 }
 }, 
 "node566224": {
 "edge566225": {
-"@length": 47363.0, 
+"@length": 47363, 
 "@source": "node566224", 
 "@target": "node566225"
 }, 
 "edge566228": {
-"@length": 25123.0, 
+"@length": 25123, 
 "@source": "node566224", 
 "@target": "node566228"
 }
 }, 
 "node566225": {
 "edge566226": {
-"@length": 14204.0, 
+"@length": 14204, 
 "@source": "node566225", 
 "@target": "node566226"
 }, 
 "edge566227": {
-"@length": 15172.0, 
+"@length": 15172, 
 "@source": "node566225", 
 "@target": "node566227"
 }
 }, 
 "node566228": {
 "edge566229": {
-"@length": 35501.0, 
+"@length": 35501, 
 "@source": "node566228", 
 "@target": "node566229"
 }, 
 "edge566230": {
-"@length": 9816.0, 
+"@length": 9816, 
 "@source": "node566228", 
 "@target": "node566230"
 }
 }, 
 "node566230": {
 "edge566231": {
-"@length": 54405.0, 
+"@length": 54405, 
 "@source": "node566230", 
 "@target": "node566231"
 }, 
 "edge566232": {
-"@length": 29664.0, 
+"@length": 29664, 
 "@source": "node566230", 
 "@target": "node566232"
 }
 }, 
 "node566232": {
 "edge566233": {
-"@length": 48718.0, 
+"@length": 48718, 
 "@source": "node566232", 
 "@target": "node566233"
 }, 
 "edge566234": {
-"@length": 21367.0, 
+"@length": 21367, 
 "@source": "node566232", 
 "@target": "node566234"
 }
 }, 
 "node566234": {
 "edge566235": {
-"@length": 43694.0, 
+"@length": 43694, 
 "@source": "node566234", 
 "@target": "node566235"
 }, 
 "edge566236": {
-"@length": 23067.0, 
+"@length": 23067, 
 "@source": "node566234", 
 "@target": "node566236"
 }
 }, 
 "node566236": {
 "edge566237": {
-"@length": 49409.0, 
+"@length": 49409, 
 "@source": "node566236", 
 "@target": "node566237"
 }, 
 "edge566238": {
-"@length": 36966.0, 
+"@length": 36966, 
 "@source": "node566236", 
 "@target": "node566238"
 }
 }, 
 "node566239": {
 "edge566240": {
-"@length": 26226.0, 
+"@length": 26226, 
 "@source": "node566239", 
 "@target": "node566240"
 }, 
 "edge566247": {
-"@length": 22337.0, 
+"@length": 22337, 
 "@source": "node566239", 
 "@target": "node566247"
 }
 }, 
 "node566240": {
 "edge566241": {
-"@length": 13599.0, 
+"@length": 13599, 
 "@source": "node566240", 
 "@target": "node566241"
 }, 
 "edge566242": {
-"@length": 6908.0, 
+"@length": 6908, 
 "@source": "node566240", 
 "@target": "node566242"
 }
 }, 
 "node566242": {
 "edge566243": {
-"@length": 37251.0, 
+"@length": 37251, 
 "@source": "node566242", 
 "@target": "node566243"
 }, 
 "edge566244": {
-"@length": 40603.0, 
+"@length": 40603, 
 "@source": "node566242", 
 "@target": "node566244"
 }
 }, 
 "node566244": {
 "edge566245": {
-"@length": 14787.0, 
+"@length": 14787, 
 "@source": "node566244", 
 "@target": "node566245"
 }, 
 "edge566246": {
-"@length": 14131.0, 
+"@length": 14131, 
 "@source": "node566244", 
 "@target": "node566246"
 }
 }, 
 "node566247": {
 "edge566248": {
-"@length": 31890.0, 
+"@length": 31890, 
 "@source": "node566247", 
 "@target": "node566248"
 }, 
 "edge566249": {
-"@length": 12445.0, 
+"@length": 12445, 
 "@source": "node566247", 
 "@target": "node566249"
 }
 }, 
 "node566249": {
 "edge566250": {
-"@length": 18485.0, 
+"@length": 18485, 
 "@source": "node566249", 
 "@target": "node566250"
 }, 
 "edge566253": {
-"@length": 18642.0, 
+"@length": 18642, 
 "@source": "node566249", 
 "@target": "node566253"
 }
 }, 
 "node566250": {
 "edge566251": {
-"@length": 29151.0, 
+"@length": 29151, 
 "@source": "node566250", 
 "@target": "node566251"
 }, 
 "edge566252": {
-"@length": 31824.0, 
+"@length": 31824, 
 "@source": "node566250", 
 "@target": "node566252"
 }
 }, 
 "node566253": {
 "edge566254": {
-"@length": 11504.0, 
+"@length": 11504, 
 "@source": "node566253", 
 "@target": "node566254"
 }, 
 "edge566255": {
-"@length": 13548.0, 
+"@length": 13548, 
 "@source": "node566253", 
 "@target": "node566255"
 }

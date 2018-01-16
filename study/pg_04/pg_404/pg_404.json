@@ -33,18 +33,99 @@
 }
 ]
 }
+}, 
+{
+"@description": "Web-based interface for submitting, editing, and reviewing studies in the Open Tree of Life project.", 
+"@id": "opentree-curation-webapp", 
+"@name": "OpenTree curation webapp", 
+"@url": "https://github.com/OpenTreeOfLife/opentree", 
+"@version": "0.0.0"
 }
 ]
 }, 
 "^ot:annotationEvents": {
-"annotation": []
+"annotation": [
+{
+"@dateCreated": "2015-09-29T21:00:44.857Z", 
+"@description": "Aids for mapping study OTUs to OTT taxa", 
+"@id": "otu-mapping-hints", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "OTU_MAPPING_HINTS", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"searchContext": {
+"$": "All life"
 }, 
-"^ot:curatorName": "Romina Gazis", 
+"substitutions": {
+"substitution": [
+{
+"@active": false, 
+"@valid": true, 
+"new": {
+"$": ""
+}, 
+"old": {
+"$": ""
+}
+}
+]
+}, 
+"useFuzzyMatching": false
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}, 
+{
+"@dateCreated": "2015-09-29T21:00:44.857Z", 
+"@description": "Describes supporting data files for this study", 
+"@id": "supporting-files-metadata", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "SUPPORTING_FILE_INFO", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"@movedToPermanentArchive": false, 
+"files": {
+"file": []
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}
+]
+}, 
+"^ot:candidateTreeForSynthesis": [
+"tree505"
+], 
+"^ot:comment": "", 
+"^ot:curatorName": [
+"Romina Gazis"
+], 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S1316"
 }, 
 "^ot:focalClade": 776513, 
 "^ot:focalCladeOTTTaxonName": "Nalanthamala psidii", 
+"^ot:notIntendedForSynthesis": false, 
 "^ot:otusElementOrder": [
 "otus404"
 ], 
@@ -54,9 +135,14 @@
 }, 
 "^ot:studyPublicationReference": "Schroers, H-J., M. M. Geldenhuis, Michael J. Wingfield, M. H. Schoeman, Y-F. Yen, W-C. Shen, and B. D. Wingfield. \"Classification of the guava wilt fungus Myxosporium psidii, the palm pathogen Gliocladium vermoesenii and the persimmon wilt fungus Acremonium diospyri in Nalanthamala.\" Mycologia 97, no. 2 (2005): 375-395.", 
 "^ot:studyYear": 2005, 
+"^ot:tag": [], 
 "^ot:treesElementOrder": [
 "trees404"
 ], 
+"^xhtml:license": {
+"@href": "http://creativecommons.org/publicdomain/zero/1.0/", 
+"@name": "CC0"
+}, 
 "otusById": {
 "otus404": {
 "otuById": {
@@ -92,6 +178,8 @@
 }, 
 "otu78379": {
 "^ot:originalLabel": "Hypocrea lutea", 
+"^ot:ottId": 935193, 
+"^ot:ottTaxonName": "Hypocrea lutea", 
 "^ot:treebaseOTUId": "Tl156979"
 }, 
 "otu78380": {
@@ -502,10 +590,22 @@
 ], 
 "treeById": {
 "tree505": {
+"@label": "FIG. 1. One of seven equally parsimonious phylograms inferred from partial LSU rDNA sequences", 
 "@xsi:type": "nex:FloatTree", 
-"^ot:curatedType": "MP, LSU", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "ot:changesCount", 
+"^ot:branchLengthTimeUnit": "Myr", 
+"^ot:curatedType": "Maximum parsimony ", 
 "^ot:inGroupClade": "node207330", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node207327", 
+"^ot:specifiedRoot": "node207327", 
+"^ot:tag": [
+"LSU"
+], 
+"^ot:unrootedTree": false, 
 "edgeBySourceId": {
 "node207327": {
 "edge207328": {
@@ -1116,10 +1216,12 @@
 }, 
 "node207372": {}, 
 "node207373": {
-"@otu": "otu78402"
+"@otu": "otu78402", 
+"^ot:isTaxonExemplar": true
 }, 
 "node207374": {
-"@otu": "otu78375"
+"@otu": "otu78375", 
+"^ot:isTaxonExemplar": false
 }, 
 "node207375": {}, 
 "node207376": {}, 
@@ -1238,14 +1340,22 @@
 }
 }, 
 "tree506": {
+"@label": "FIG. 2. One of three equally parsimonious phylograms inferred from the combined ITS1, 5.8S, ITS2 ribosomal DNA (ITS rDNA), partial LSU of the rDNA and partial \u03b2-tubulin dataset.", 
 "@xsi:type": "nex:FloatTree", 
-"^ot:curatedType": "MP, ITS + LSU + b-tubulin", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "ot:changesCount", 
+"^ot:branchLengthTimeUnit": "Myr", 
+"^ot:curatedType": "Maximum parsimony ", 
 "^ot:inGroupClade": "node207434", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node207431", 
+"^ot:specifiedRoot": "node207431", 
 "^ot:tag": [
-"LSU", 
-"ITS"
+"ITS + LSU + b-tubulin"
 ], 
+"^ot:unrootedTree": false, 
 "edgeBySourceId": {
 "node207431": {
 "edge207432": {
@@ -1454,31 +1564,40 @@
 "node207441": {}, 
 "node207442": {}, 
 "node207443": {
-"@otu": "otu78433"
+"@otu": "otu78433", 
+"^ot:isTaxonExemplar": false
 }, 
 "node207444": {
-"@otu": "otu78434"
+"@otu": "otu78434", 
+"^ot:isTaxonExemplar": false
 }, 
 "node207445": {
-"@otu": "otu78435"
+"@otu": "otu78435", 
+"^ot:isTaxonExemplar": false
 }, 
 "node207446": {
-"@otu": "otu78429"
+"@otu": "otu78429", 
+"^ot:isTaxonExemplar": false
 }, 
 "node207447": {
-"@otu": "otu78437"
+"@otu": "otu78437", 
+"^ot:isTaxonExemplar": false
 }, 
 "node207448": {
-"@otu": "otu78442"
+"@otu": "otu78442", 
+"^ot:isTaxonExemplar": false
 }, 
 "node207449": {
-"@otu": "otu78430"
+"@otu": "otu78430", 
+"^ot:isTaxonExemplar": false
 }, 
 "node207450": {
-"@otu": "otu78426"
+"@otu": "otu78426", 
+"^ot:isTaxonExemplar": false
 }, 
 "node207451": {
-"@otu": "otu78441"
+"@otu": "otu78441", 
+"^ot:isTaxonExemplar": true
 }, 
 "node207452": {
 "@otu": "otu78403"
@@ -1493,32 +1612,40 @@
 "node207458": {}, 
 "node207459": {}, 
 "node207460": {
-"@otu": "otu78440"
+"@otu": "otu78440", 
+"^ot:isTaxonExemplar": false
 }, 
 "node207461": {
-"@otu": "otu78438"
+"@otu": "otu78438", 
+"^ot:isTaxonExemplar": false
 }, 
 "node207462": {
-"@otu": "otu78439"
+"@otu": "otu78439", 
+"^ot:isTaxonExemplar": false
 }, 
 "node207463": {
-"@otu": "otu78427"
+"@otu": "otu78427", 
+"^ot:isTaxonExemplar": false
 }, 
 "node207464": {
-"@otu": "otu78436"
+"@otu": "otu78436", 
+"^ot:isTaxonExemplar": false
 }, 
 "node207465": {
-"@otu": "otu78432"
+"@otu": "otu78432", 
+"^ot:isTaxonExemplar": true
 }, 
 "node207466": {
 "@otu": "otu78425"
 }, 
 "node207467": {}, 
 "node207468": {
-"@otu": "otu78431"
+"@otu": "otu78431", 
+"^ot:isTaxonExemplar": true
 }, 
 "node207469": {
-"@otu": "otu78428"
+"@otu": "otu78428", 
+"^ot:isTaxonExemplar": false
 }
 }
 }

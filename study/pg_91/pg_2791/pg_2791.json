@@ -36,25 +36,109 @@
 }
 ]
 }
+}, 
+{
+"@description": "Web-based interface for submitting, editing, and reviewing studies in the Open Tree of Life project.", 
+"@id": "opentree-curation-webapp", 
+"@name": "OpenTree curation webapp", 
+"@url": "https://github.com/OpenTreeOfLife/opentree", 
+"@version": "0.0.0"
 }
 ]
 }, 
 "^ot:annotationEvents": {
-"annotation": []
+"annotation": [
+{
+"@dateCreated": "2014-07-17T20:44:06.367Z", 
+"@description": "Aids for mapping study OTUs to OTT taxa", 
+"@id": "otu-mapping-hints", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "OTU_MAPPING_HINTS", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"searchContext": {
+"$": "All life"
 }, 
-"^ot:candidateTreeForSynthesis": [], 
-"^ot:curatorName": "Dail Laughinghouse", 
+"substitutions": {
+"substitution": [
+{
+"@active": false, 
+"@valid": true, 
+"new": {
+"$": ""
+}, 
+"old": {
+"$": ""
+}
+}
+]
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}, 
+{
+"@dateCreated": "2014-07-17T20:44:06.367Z", 
+"@description": "Describes supporting data files for this study", 
+"@id": "supporting-files-metadata", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "SUPPORTING_FILE_INFO", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"@movedToPermanentArchive": false, 
+"files": {
+"file": []
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}
+]
+}, 
+"^ot:candidateTreeForSynthesis": [
+"tree6477"
+], 
+"^ot:comment": "", 
+"^ot:curatorName": [
+"Dail Laughinghouse"
+], 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S2016"
 }, 
+"^ot:focalClade": 844192, 
+"^ot:focalCladeOTTTaxonName": "Bacteria (domain in cellular organisms)", 
 "^ot:messages": {
 "message": []
 }, 
+"^ot:notIntendedForSynthesis": false, 
 "^ot:otusElementOrder": [
 "otus2791"
 ], 
 "^ot:studyId": "pg_2791", 
-"^ot:studyPublicationReference": "Kellner H., Luis P., Zimdars B., Kiesel B., & Buscot F. 2008. Diversity of bacterial laccase-like multicopper oxidase genes in forest and grassland Cambisol soil samples. Soil Biology & Biochemistry, 40: 638-648.", 
+"^ot:studyPublication": {
+"@href": "http://dx.doi.org/10.1016/j.soilbio.2007.09.013"
+}, 
+"^ot:studyPublicationReference": "Harald Kellner, Patricia Luis, Bettina Zimdars, B\u00e4rbel Kiesel, Fran\u00e7ois Buscot, 2008, 'Diversity of bacterial laccase-like multicopper oxidase genes in forest and grassland Cambisol soil samples', Soil Biology and Biochemistry, vol. 40, no. 3, pp. 638-648", 
 "^ot:studyYear": 2008, 
 "^ot:tag": [], 
 "^ot:treesElementOrder": [
@@ -922,15 +1006,17 @@
 ], 
 "treeById": {
 "tree6477": {
+"@label": "Untitled (tree6477)", 
 "@xsi:type": "nex:FloatTree", 
 "^ot:branchLengthDescription": "", 
-"^ot:branchLengthMode": "", 
 "^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "Fig. 2", 
+"^ot:inGroupClade": "node1120035", 
 "^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node1119974", 
-"^ot:specifiedRoot": "", 
+"^ot:specifiedRoot": "node1119974", 
 "^ot:tag": [], 
+"^ot:unrootedTree": false, 
 "edgeBySourceId": {
 "node1119974": {
 "edge1119975": {
@@ -3112,10 +3198,12 @@
 "@otu": "otu413999"
 }, 
 "node1120099": {
-"@otu": "otu414069"
+"@otu": "otu414069", 
+"^ot:isTaxonExemplar": true
 }, 
 "node1120100": {
-"@otu": "otu413952"
+"@otu": "otu413952", 
+"^ot:isTaxonExemplar": false
 }, 
 "node1120101": {}, 
 "node1120102": {}, 
@@ -3364,10 +3452,12 @@
 "node1120223": {}, 
 "node1120224": {}, 
 "node1120225": {
-"@otu": "otu414032"
+"@otu": "otu414032", 
+"^ot:isTaxonExemplar": true
 }, 
 "node1120226": {
-"@otu": "otu413981"
+"@otu": "otu413981", 
+"^ot:isTaxonExemplar": false
 }, 
 "node1120227": {
 "@otu": "otu414076"
@@ -3382,13 +3472,16 @@
 "node1120231": {}, 
 "node1120232": {}, 
 "node1120233": {
-"@otu": "otu413985"
+"@otu": "otu413985", 
+"^ot:isTaxonExemplar": true
 }, 
 "node1120234": {
-"@otu": "otu414107"
+"@otu": "otu414107", 
+"^ot:isTaxonExemplar": false
 }, 
 "node1120235": {
-"@otu": "otu414122"
+"@otu": "otu414122", 
+"^ot:isTaxonExemplar": false
 }, 
 "node1120236": {}, 
 "node1120237": {
@@ -3495,16 +3588,20 @@
 "@otu": "otu413993"
 }, 
 "node1120288": {
-"@otu": "otu414129"
+"@otu": "otu414129", 
+"^ot:isTaxonExemplar": false
 }, 
 "node1120289": {
-"@otu": "otu414041"
+"@otu": "otu414041", 
+"^ot:isTaxonExemplar": true
 }, 
 "node1120290": {
-"@otu": "otu414117"
+"@otu": "otu414117", 
+"^ot:isTaxonExemplar": false
 }, 
 "node1120291": {
-"@otu": "otu413937"
+"@otu": "otu413937", 
+"^ot:isTaxonExemplar": false
 }, 
 "node1120292": {
 "@otu": "otu414126"
@@ -3565,10 +3662,12 @@
 }, 
 "node1120323": {}, 
 "node1120324": {
-"@otu": "otu414078"
+"@otu": "otu414078", 
+"^ot:isTaxonExemplar": true
 }, 
 "node1120325": {
-"@otu": "otu414039"
+"@otu": "otu414039", 
+"^ot:isTaxonExemplar": true
 }, 
 "node1120326": {}, 
 "node1120327": {

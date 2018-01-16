@@ -33,18 +33,99 @@
 }
 ]
 }
+}, 
+{
+"@description": "Web-based interface for submitting, editing, and reviewing studies in the Open Tree of Life project.", 
+"@id": "opentree-curation-webapp", 
+"@name": "OpenTree curation webapp", 
+"@url": "https://github.com/OpenTreeOfLife/opentree", 
+"@version": "0.0.0"
 }
 ]
 }, 
 "^ot:annotationEvents": {
-"annotation": []
+"annotation": [
+{
+"@dateCreated": "2015-09-28T21:01:22.215Z", 
+"@description": "Aids for mapping study OTUs to OTT taxa", 
+"@id": "otu-mapping-hints", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "OTU_MAPPING_HINTS", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"searchContext": {
+"$": "All life"
 }, 
-"^ot:curatorName": "Romina Gazis", 
+"substitutions": {
+"substitution": [
+{
+"@active": false, 
+"@valid": true, 
+"new": {
+"$": ""
+}, 
+"old": {
+"$": ""
+}
+}
+]
+}, 
+"useFuzzyMatching": true
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}, 
+{
+"@dateCreated": "2015-09-28T21:01:22.215Z", 
+"@description": "Describes supporting data files for this study", 
+"@id": "supporting-files-metadata", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "SUPPORTING_FILE_INFO", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"@movedToPermanentArchive": false, 
+"files": {
+"file": []
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}
+]
+}, 
+"^ot:candidateTreeForSynthesis": [
+"tree5551"
+], 
+"^ot:comment": "", 
+"^ot:curatorName": [
+"Romina Gazis"
+], 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S996"
 }, 
 "^ot:focalClade": 838968, 
 "^ot:focalCladeOTTTaxonName": "Fusarium", 
+"^ot:notIntendedForSynthesis": false, 
 "^ot:otusElementOrder": [
 "otus361"
 ], 
@@ -54,9 +135,14 @@
 }, 
 "^ot:studyPublicationReference": "Skovgaard K., Rosendahl S., O'donnell K., & Nirenberg H. 2003. Fusarium commune is a new species identified by morphological and molecular phylogenetic data. Mycologia, 95(4): 630-636.", 
 "^ot:studyYear": 2003, 
+"^ot:tag": [], 
 "^ot:treesElementOrder": [
 "trees361"
 ], 
+"^xhtml:license": {
+"@href": "http://creativecommons.org/publicdomain/zero/1.0/", 
+"@name": "CC0"
+}, 
 "otusById": {
 "otus361": {
 "otuById": {
@@ -128,6 +214,8 @@
 }, 
 "otu75846": {
 "^ot:originalLabel": "Fusarium verticilioides", 
+"^ot:ottId": 736624, 
+"^ot:ottTaxonName": "Fusarium verticillioides", 
 "^ot:treebaseOTUId": "Tl13958"
 }, 
 "otu75847": {
@@ -210,6 +298,8 @@
 }, 
 "otu75860": {
 "^ot:originalLabel": "Fusarium subglutinans", 
+"^ot:ottId": 5317102, 
+"^ot:ottTaxonName": "Gibberella fujikuroi", 
 "^ot:treebaseOTUId": "Tl13981"
 }
 }
@@ -223,10 +313,22 @@
 ], 
 "treeById": {
 "tree5551": {
+"@label": "FIG. 7. Single most-parsimonious phylogram based on the combined analysis of EF-1\u03b1 and mtSSU rDNA gene sequences. Bootstrap frequencies from 1000 replications are given above nodes. Consistency index = 0.80, retention index = 0.89, tree length = 285.", 
 "@xsi:type": "nex:FloatTree", 
-"^ot:curatedType": "MP, mtSSU + EF-1 (rooted)", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "ot:changesCount", 
+"^ot:branchLengthTimeUnit": "Myr", 
+"^ot:curatedType": "Maximum parsimony ", 
 "^ot:inGroupClade": "node954509", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node954508", 
+"^ot:specifiedRoot": "node954508", 
+"^ot:tag": [
+"mtSSU + EF-1"
+], 
+"^ot:unrootedTree": false, 
 "edgeBySourceId": {
 "node954508": {
 "edge954509": {
@@ -415,10 +517,12 @@
 "node954510": {}, 
 "node954511": {}, 
 "node954512": {
-"@otu": "otu75849"
+"@otu": "otu75849", 
+"^ot:isTaxonExemplar": true
 }, 
 "node954513": {
-"@otu": "otu75841"
+"@otu": "otu75841", 
+"^ot:isTaxonExemplar": false
 }, 
 "node954514": {
 "@otu": "otu75857"
@@ -439,64 +543,83 @@
 "node954522": {}, 
 "node954523": {}, 
 "node954524": {
-"@otu": "otu75840"
+"@otu": "otu75840", 
+"^ot:isTaxonExemplar": false
 }, 
 "node954525": {}, 
 "node954526": {
-"@otu": "otu75839"
+"@otu": "otu75839", 
+"^ot:isTaxonExemplar": false
 }, 
 "node954527": {
-"@otu": "otu75852"
+"@otu": "otu75852", 
+"^ot:isTaxonExemplar": false
 }, 
 "node954528": {
-"@otu": "otu75843"
+"@otu": "otu75843", 
+"^ot:isTaxonExemplar": true
 }, 
 "node954529": {}, 
 "node954530": {}, 
 "node954531": {
-"@otu": "otu75845"
+"@otu": "otu75845", 
+"^ot:isTaxonExemplar": false
 }, 
 "node954532": {
-"@otu": "otu75854"
+"@otu": "otu75854", 
+"^ot:isTaxonExemplar": false
 }, 
 "node954533": {
-"@otu": "otu75837"
+"@otu": "otu75837", 
+"^ot:isTaxonExemplar": false
 }, 
 "node954534": {
-"@otu": "otu75850"
+"@otu": "otu75850", 
+"^ot:isTaxonExemplar": false
 }, 
 "node954535": {
-"@otu": "otu75842"
+"@otu": "otu75842", 
+"^ot:isTaxonExemplar": false
 }, 
 "node954536": {
-"@otu": "otu75856"
+"@otu": "otu75856", 
+"^ot:isTaxonExemplar": false
 }, 
 "node954537": {
-"@otu": "otu75847"
+"@otu": "otu75847", 
+"^ot:isTaxonExemplar": false
 }, 
 "node954538": {
-"@otu": "otu75851"
+"@otu": "otu75851", 
+"^ot:isTaxonExemplar": false
 }, 
 "node954539": {
-"@otu": "otu75855"
+"@otu": "otu75855", 
+"^ot:isTaxonExemplar": false
 }, 
 "node954540": {
-"@otu": "otu75859"
+"@otu": "otu75859", 
+"^ot:isTaxonExemplar": false
 }, 
 "node954541": {
-"@otu": "otu75838"
+"@otu": "otu75838", 
+"^ot:isTaxonExemplar": false
 }, 
 "node954542": {
-"@otu": "otu75836"
+"@otu": "otu75836", 
+"^ot:isTaxonExemplar": false
 }, 
 "node954543": {
-"@otu": "otu75858"
+"@otu": "otu75858", 
+"^ot:isTaxonExemplar": false
 }, 
 "node954544": {
-"@otu": "otu75835"
+"@otu": "otu75835", 
+"^ot:isTaxonExemplar": false
 }, 
 "node954545": {
-"@otu": "otu75848"
+"@otu": "otu75848", 
+"^ot:isTaxonExemplar": true
 }, 
 "node954546": {
 "@otu": "otu75844"

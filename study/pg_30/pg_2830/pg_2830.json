@@ -36,14 +36,93 @@
 }
 ]
 }
+}, 
+{
+"@description": "Web-based interface for submitting, editing, and reviewing studies in the Open Tree of Life project.", 
+"@id": "opentree-curation-webapp", 
+"@name": "OpenTree curation webapp", 
+"@url": "https://github.com/OpenTreeOfLife/opentree", 
+"@version": "0.0.0"
 }
 ]
 }, 
 "^ot:annotationEvents": {
-"annotation": []
+"annotation": [
+{
+"@dateCreated": "2014-08-22T19:17:38.951Z", 
+"@description": "Aids for mapping study OTUs to OTT taxa", 
+"@id": "otu-mapping-hints", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "OTU_MAPPING_HINTS", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"searchContext": {
+"$": "All life"
 }, 
-"^ot:candidateTreeForSynthesis": [], 
-"^ot:curatorName": "Stephen Smith", 
+"substitutions": {
+"substitution": [
+{
+"@active": false, 
+"@valid": true, 
+"new": {
+"$": ""
+}, 
+"old": {
+"$": ""
+}
+}
+]
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}, 
+{
+"@dateCreated": "2014-08-22T19:17:38.951Z", 
+"@description": "Describes supporting data files for this study", 
+"@id": "supporting-files-metadata", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "SUPPORTING_FILE_INFO", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"@movedToPermanentArchive": false, 
+"files": {
+"file": []
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}
+]
+}, 
+"^ot:candidateTreeForSynthesis": [
+"tree6583"
+], 
+"^ot:comment": "", 
+"^ot:curatorName": [
+"Stephen Smith", 
+"Joseph W. Brown"
+], 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S1161"
 }, 
@@ -52,12 +131,16 @@
 "^ot:messages": {
 "message": []
 }, 
+"^ot:notIntendedForSynthesis": false, 
 "^ot:otusElementOrder": [
 "otus2830"
 ], 
 "^ot:studyId": "pg_2830", 
-"^ot:studyPublicationReference": "Mitchell A., & Wen J. 2004. Phylogeny and Biogeography of Brassaiopsis (Araliaceae), based on phylogenetic analysis of nuclear (ITS and 5S-NTS) DNA sequences. Systematic Botany, null.", 
-"^ot:studyYear": 2004, 
+"^ot:studyPublication": {
+"@href": "http://dx.doi.org/10.1600/036364405775097761"
+}, 
+"^ot:studyPublicationReference": "Mitchell, Anthony, Jun Wen. 2005. Phylogeny of Brassaiopsis (Araliaceae) in Asia Based on Nuclear ITS and 5S-NTS DNA Sequences. Systematic Botany 30 (4): 872-886", 
+"^ot:studyYear": 2005, 
 "^ot:tag": [], 
 "^ot:treesElementOrder": [
 "trees2830"
@@ -1558,15 +1641,18 @@
 ], 
 "treeById": {
 "tree6581": {
+"@label": "Untitled (tree6581)", 
 "@xsi:type": "nex:FloatTree", 
 "^ot:branchLengthDescription": "", 
 "^ot:branchLengthMode": "", 
 "^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "ITS big", 
+"^ot:inGroupClade": "", 
 "^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node1144475", 
 "^ot:specifiedRoot": "", 
 "^ot:tag": [], 
+"^ot:unrootedTree": true, 
 "edgeBySourceId": {
 "node1144475": {
 "edge1144476": {
@@ -2390,15 +2476,18 @@
 }
 }, 
 "tree6582": {
+"@label": "Untitled (tree6582)", 
 "@xsi:type": "nex:FloatTree", 
 "^ot:branchLengthDescription": "", 
 "^ot:branchLengthMode": "", 
 "^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "5S", 
+"^ot:inGroupClade": "", 
 "^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node1144592", 
 "^ot:specifiedRoot": "", 
 "^ot:tag": [], 
+"^ot:unrootedTree": true, 
 "edgeBySourceId": {
 "node1144592": {
 "edge1144593": {
@@ -4461,6 +4550,7 @@
 }
 }, 
 "tree6583": {
+"@label": "Untitled (tree6583)", 
 "@xsi:type": "nex:FloatTree", 
 "^ot:branchLengthDescription": "", 
 "^ot:branchLengthMode": "", 
@@ -4469,8 +4559,9 @@
 "^ot:inGroupClade": "node1144890", 
 "^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node1144886", 
-"^ot:specifiedRoot": "", 
+"^ot:specifiedRoot": "node1144886", 
 "^ot:tag": [], 
+"^ot:unrootedTree": false, 
 "edgeBySourceId": {
 "node1144886": {
 "edge1144887": {

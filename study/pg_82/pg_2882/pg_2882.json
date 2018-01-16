@@ -15,16 +15,13 @@
 "^ot:agents": {
 "agent": [
 {
-"@description": "validator of NexSON constraints as well as constraints that would allow a study to be imported into the Open Tree of Life's phylogenetic synthesis tools", 
+"@description": "Open Tree NexSON validation", 
 "@id": "peyotl-validator", 
-"@name": "validate_ot_nexson.py", 
+"@name": "api.opentreeoflife.org/validate", 
 "@url": "https://github.com/OpenTreeOfLife/peyotl", 
 "@version": "0.0.4a", 
 "invocation": {
-"commandLine": [
-"--embed", 
-"--agent-only"
-], 
+"commandLine": [], 
 "otherProperty": [
 {
 "name": "pythonVersion", 
@@ -36,14 +33,112 @@
 }
 ]
 }
+}, 
+{
+"@description": "Web-based interface for submitting, editing, and reviewing studies in the Open Tree of Life project.", 
+"@id": "opentree-curation-webapp", 
+"@name": "OpenTree curation webapp", 
+"@url": "https://github.com/OpenTreeOfLife/opentree", 
+"@version": "0.0.0"
 }
 ]
 }, 
 "^ot:annotationEvents": {
-"annotation": []
+"annotation": [
+{
+"@dateCreated": "2014-06-13T15:18:27.875Z", 
+"@description": "Aids for mapping study OTUs to OTT taxa", 
+"@id": "otu-mapping-hints", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "OTU_MAPPING_HINTS", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"searchContext": {
+"$": "Bacteria"
 }, 
-"^ot:candidateTreeForSynthesis": [], 
-"^ot:curatorName": "Dail Laughinghouse", 
+"substitutions": {
+"substitution": [
+{
+"@active": false, 
+"@valid": true, 
+"new": {
+"$": ""
+}, 
+"old": {
+"$": ""
+}
+}, 
+{
+"@active": true, 
+"@valid": true, 
+"new": {
+"$": ""
+}, 
+"old": {
+"$": "\\b\\s+(\\w*)$"
+}
+}, 
+{
+"@active": false, 
+"@valid": true, 
+"new": {
+"$": ""
+}, 
+"old": {
+"$": "\\b\\s+(\\w*)$"
+}
+}
+]
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}, 
+{
+"@dateCreated": "2014-06-13T15:18:27.875Z", 
+"@description": "Describes supporting data files for this study", 
+"@id": "supporting-files-metadata", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "SUPPORTING_FILE_INFO", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"@movedToPermanentArchive": false, 
+"files": {
+"file": []
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}
+]
+}, 
+"^ot:candidateTreeForSynthesis": [
+"tree6682"
+], 
+"^ot:comment": "", 
+"^ot:curatorName": [
+"Dail Laughinghouse"
+], 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S15537"
 }, 
@@ -52,6 +147,7 @@
 "^ot:messages": {
 "message": []
 }, 
+"^ot:notIntendedForSynthesis": false, 
 "^ot:otusElementOrder": [
 "otus2882"
 ], 
@@ -59,7 +155,7 @@
 "^ot:studyPublication": {
 "@href": "http://dx.doi.org/10.1186/1471-2164-15-270"
 }, 
-"^ot:studyPublicationReference": "Mendum T.A., Schuenemann V.J., Roffey S., Taylor G.M., Wu H., Singh P., Tucker K., Hinds J., Cole S., Kierzek A.M., Nieselt K., Krause J., & Stewart G.R. 2014. Mycobacterium leprae genomes from a British medieval leprosy hospital: towards understanding an ancient epidemic. BMC Genomics, .", 
+"^ot:studyPublicationReference": "Tom A Mendum, Verena J Schuenemann, Simon Roffey, G Taylor, Huihai Wu, Pushpendra Singh, Katie Tucker, Jason Hinds, Stewart T Cole, Andrzej M Kierzek, Kay Nieselt, Johannes Krause, Graham R Stewart, 2014, 'Mycobacterium leprae genomes from a British medieval leprosy hospital: towards understanding an ancient epidemic', BMC Genomics, vol. 15, no. 1, p. 270", 
 "^ot:studyYear": 2014, 
 "^ot:tag": [], 
 "^ot:treesElementOrder": [
@@ -76,8 +172,8 @@
 }, 
 "otu428292": {
 "^ot:originalLabel": "Mycobacterium leprae TN", 
-"^ot:ottId": 795267, 
-"^ot:ottTaxonName": "Mycobacterium leprae TN", 
+"^ot:ottId": 310506, 
+"^ot:ottTaxonName": "Mycobacterium leprae", 
 "^ot:treebaseOTUId": "Tl1441106"
 }, 
 "otu428293": {
@@ -112,8 +208,8 @@
 }, 
 "otu428298": {
 "^ot:originalLabel": "Mycobacterium leprae Br4923", 
-"^ot:ottId": 74212, 
-"^ot:ottTaxonName": "Mycobacterium leprae Br4923", 
+"^ot:ottId": 310506, 
+"^ot:ottTaxonName": "Mycobacterium leprae", 
 "^ot:treebaseOTUId": "Tl1441112"
 }, 
 "otu428299": {
@@ -184,15 +280,20 @@
 ], 
 "treeById": {
 "tree6682": {
+"@label": "Untitled (tree6682)", 
 "@xsi:type": "nex:FloatTree", 
 "^ot:branchLengthDescription": "", 
-"^ot:branchLengthMode": "", 
+"^ot:branchLengthMode": "ot:substitutionCount", 
 "^ot:branchLengthTimeUnit": "", 
-"^ot:curatedType": "ML", 
+"^ot:curatedType": "Maximum likelihood ", 
+"^ot:inGroupClade": "node1165207", 
 "^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node1165207", 
-"^ot:specifiedRoot": "", 
-"^ot:tag": [], 
+"^ot:specifiedRoot": "node1165207", 
+"^ot:tag": [
+"Choose me"
+], 
+"^ot:unrootedTree": false, 
 "edgeBySourceId": {
 "node1165207": {
 "edge1165208": {
@@ -393,82 +494,102 @@
 }, 
 "node1165208": {}, 
 "node1165209": {
-"@otu": "otu428294"
+"@otu": "otu428294", 
+"^ot:isTaxonExemplar": false
 }, 
 "node1165210": {
-"@otu": "otu428306"
+"@otu": "otu428306", 
+"^ot:isTaxonExemplar": false
 }, 
 "node1165211": {}, 
 "node1165212": {}, 
 "node1165213": {
-"@otu": "otu428307"
+"@otu": "otu428307", 
+"^ot:isTaxonExemplar": false
 }, 
 "node1165214": {}, 
 "node1165215": {
-"@otu": "otu428298"
+"@otu": "otu428298", 
+"^ot:isTaxonExemplar": false
 }, 
 "node1165216": {
-"@otu": "otu428304"
+"@otu": "otu428304", 
+"^ot:isTaxonExemplar": false
 }, 
 "node1165217": {}, 
 "node1165218": {}, 
 "node1165219": {
-"@otu": "otu428305"
+"@otu": "otu428305", 
+"^ot:isTaxonExemplar": true
 }, 
 "node1165220": {}, 
 "node1165221": {
-"@otu": "otu428300"
+"@otu": "otu428300", 
+"^ot:isTaxonExemplar": false
 }, 
 "node1165222": {
-"@otu": "otu428296"
+"@otu": "otu428296", 
+"^ot:isTaxonExemplar": false
 }, 
 "node1165223": {}, 
 "node1165224": {}, 
 "node1165225": {
-"@otu": "otu428293"
+"@otu": "otu428293", 
+"^ot:isTaxonExemplar": false
 }, 
 "node1165226": {}, 
 "node1165227": {
-"@otu": "otu428302"
+"@otu": "otu428302", 
+"^ot:isTaxonExemplar": false
 }, 
 "node1165228": {}, 
 "node1165229": {
-"@otu": "otu428291"
+"@otu": "otu428291", 
+"^ot:isTaxonExemplar": false
 }, 
 "node1165230": {
-"@otu": "otu428292"
+"@otu": "otu428292", 
+"^ot:isTaxonExemplar": false
 }, 
 "node1165231": {}, 
 "node1165232": {
-"@otu": "otu428295"
+"@otu": "otu428295", 
+"^ot:isTaxonExemplar": false
 }, 
 "node1165233": {}, 
 "node1165234": {
-"@otu": "otu428303"
+"@otu": "otu428303", 
+"^ot:isTaxonExemplar": false
 }, 
 "node1165235": {}, 
 "node1165236": {
-"@otu": "otu428297"
+"@otu": "otu428297", 
+"^ot:isTaxonExemplar": false
 }, 
 "node1165237": {}, 
 "node1165238": {
-"@otu": "otu428299"
+"@otu": "otu428299", 
+"^ot:isTaxonExemplar": false
 }, 
 "node1165239": {
-"@otu": "otu428301"
+"@otu": "otu428301", 
+"^ot:isTaxonExemplar": false
 }
 }
 }, 
 "tree6683": {
+"@label": "Untitled (tree6683)", 
 "@xsi:type": "nex:FloatTree", 
 "^ot:branchLengthDescription": "", 
-"^ot:branchLengthMode": "", 
+"^ot:branchLengthMode": "ot:substitutionCount", 
 "^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "NJ", 
+"^ot:inGroupClade": "", 
 "^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node1165240", 
 "^ot:specifiedRoot": "", 
 "^ot:tag": [], 
+"^ot:unrootedTree": true, 
 "edgeBySourceId": {
 "node1165240": {
 "edge1165241": {
@@ -736,15 +857,18 @@
 }
 }, 
 "tree6684": {
+"@label": "Untitled (tree6684)", 
 "@xsi:type": "nex:FloatTree", 
 "^ot:branchLengthDescription": "", 
-"^ot:branchLengthMode": "", 
+"^ot:branchLengthMode": "ot:substitutionCount", 
 "^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "ME", 
+"^ot:inGroupClade": "", 
 "^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node1165273", 
 "^ot:specifiedRoot": "", 
 "^ot:tag": [], 
+"^ot:unrootedTree": true, 
 "edgeBySourceId": {
 "node1165273": {
 "edge1165274": {
@@ -1012,15 +1136,18 @@
 }
 }, 
 "tree6685": {
+"@label": "Untitled (tree6685)", 
 "@xsi:type": "nex:FloatTree", 
 "^ot:branchLengthDescription": "", 
 "^ot:branchLengthMode": "", 
 "^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "MP", 
+"^ot:inGroupClade": "", 
 "^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node1165306", 
 "^ot:specifiedRoot": "", 
 "^ot:tag": [], 
+"^ot:unrootedTree": true, 
 "edgeBySourceId": {
 "node1165306": {
 "edge1165307": {

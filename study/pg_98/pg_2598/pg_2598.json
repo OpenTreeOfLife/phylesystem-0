@@ -36,23 +36,109 @@
 }
 ]
 }
+}, 
+{
+"@description": "Web-based interface for submitting, editing, and reviewing studies in the Open Tree of Life project.", 
+"@id": "opentree-curation-webapp", 
+"@name": "OpenTree curation webapp", 
+"@url": "https://github.com/OpenTreeOfLife/opentree", 
+"@version": "0.0.0"
 }
 ]
 }, 
 "^ot:annotationEvents": {
-"annotation": []
+"annotation": [
+{
+"@dateCreated": "2014-07-28T13:11:03.953Z", 
+"@description": "Aids for mapping study OTUs to OTT taxa", 
+"@id": "otu-mapping-hints", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "OTU_MAPPING_HINTS", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"searchContext": {
+"$": "All life"
 }, 
-"^ot:candidateTreeForSynthesis": [], 
-"^ot:curatorName": "bryan drew", 
+"substitutions": {
+"substitution": [
+{
+"@active": false, 
+"@valid": true, 
+"new": {
+"$": ""
+}, 
+"old": {
+"$": ""
+}
+}
+]
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}, 
+{
+"@dateCreated": "2014-07-28T13:11:03.953Z", 
+"@description": "Describes supporting data files for this study", 
+"@id": "supporting-files-metadata", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "SUPPORTING_FILE_INFO", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"@movedToPermanentArchive": false, 
+"files": {
+"file": []
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}
+]
+}, 
+"^ot:candidateTreeForSynthesis": [
+"tree6020"
+], 
+"^ot:comment": "", 
+"^ot:curatorName": [
+"bryan drew", 
+"Jonathan A Rees"
+], 
+"^ot:dataDeposit": {
+"@href": ""
+}, 
 "^ot:focalClade": 147029, 
 "^ot:focalCladeOTTTaxonName": "Boraginaceae", 
 "^ot:messages": {
 "message": []
 }, 
+"^ot:notIntendedForSynthesis": false, 
 "^ot:otusElementOrder": [
 "otus2598"
 ], 
 "^ot:studyId": "pg_2598", 
+"^ot:studyPublication": {
+"@href": "http://dx.doi.org/10.1600/036364412x648715"
+}, 
 "^ot:studyPublicationReference": "Nazaire, M., & Hufford, L. 2012. A broad phylogenetic analysis of Boraginaceae: Implications for the relationships of Mertensia. Syst. Bot. 37: 758-783.", 
 "^ot:studyYear": 2012, 
 "^ot:tag": [
@@ -1115,6 +1201,7 @@
 ], 
 "treeById": {
 "tree6020": {
+"@label": "Untitled (tree6020)", 
 "@xsi:type": "nex:FloatTree", 
 "^ot:branchLengthDescription": "", 
 "^ot:branchLengthMode": "ot:substitutionCount", 
@@ -1123,8 +1210,9 @@
 "^ot:inGroupClade": "node1030538", 
 "^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node1030516", 
-"^ot:specifiedRoot": "", 
+"^ot:specifiedRoot": "node1030516", 
 "^ot:tag": [], 
+"^ot:unrootedTree": false, 
 "edgeBySourceId": {
 "node1030516": {
 "edge1030517": {
@@ -3881,10 +3969,12 @@
 }, 
 "node1030649": {}, 
 "node1030650": {
-"@otu": "otu386233"
+"@otu": "otu386233", 
+"^ot:isTaxonExemplar": true
 }, 
 "node1030651": {
-"@otu": "otu386234"
+"@otu": "otu386234", 
+"^ot:isTaxonExemplar": false
 }, 
 "node1030652": {}, 
 "node1030653": {
@@ -3947,10 +4037,12 @@
 "node1030682": {}, 
 "node1030683": {}, 
 "node1030684": {
-"@otu": "otu386249"
+"@otu": "otu386249", 
+"^ot:isTaxonExemplar": true
 }, 
 "node1030685": {
-"@otu": "otu386250"
+"@otu": "otu386250", 
+"^ot:isTaxonExemplar": false
 }, 
 "node1030686": {}, 
 "node1030687": {}, 

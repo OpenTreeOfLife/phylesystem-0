@@ -36,19 +36,100 @@
 }
 ]
 }
+}, 
+{
+"@description": "Web-based interface for submitting, editing, and reviewing studies in the Open Tree of Life project.", 
+"@id": "opentree-curation-webapp", 
+"@name": "OpenTree curation webapp", 
+"@url": "https://github.com/OpenTreeOfLife/opentree", 
+"@version": "0.0.0"
 }
 ]
 }, 
 "^ot:annotationEvents": {
-"annotation": []
+"annotation": [
+{
+"@dateCreated": "2016-07-13T21:02:09.044Z", 
+"@description": "Aids for mapping study OTUs to OTT taxa", 
+"@id": "otu-mapping-hints", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "OTU_MAPPING_HINTS", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"searchContext": {
+"$": "Birds"
 }, 
-"^ot:candidateTreeForSynthesis": [], 
-"^ot:curatorName": "Joseph Brown", 
+"substitutions": {
+"substitution": [
+{
+"@active": false, 
+"@valid": true, 
+"new": {
+"$": ""
+}, 
+"old": {
+"$": ""
+}
+}
+]
+}, 
+"useFuzzyMatching": false
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}, 
+{
+"@dateCreated": "2016-07-13T21:02:09.044Z", 
+"@description": "Describes supporting data files for this study", 
+"@id": "supporting-files-metadata", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "SUPPORTING_FILE_INFO", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"@movedToPermanentArchive": false, 
+"files": {
+"file": []
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}
+]
+}, 
+"^ot:candidateTreeForSynthesis": [
+"tree6192"
+], 
+"^ot:comment": "", 
+"^ot:curatorName": [
+"Joseph Brown", 
+"Joseph W. Brown"
+], 
+"^ot:dataDeposit": {
+"@href": ""
+}, 
 "^ot:focalClade": 810751, 
 "^ot:focalCladeOTTTaxonName": "Trochilidae", 
-"^ot:messages": {
-"message": []
-}, 
+"^ot:notIntendedForSynthesis": false, 
 "^ot:otusElementOrder": [
 "otus2658"
 ], 
@@ -898,16 +979,19 @@
 ], 
 "treeById": {
 "tree6192": {
+"@label": "Fig. 2 (6B partition analysis)", 
 "@xsi:type": "nex:FloatTree", 
 "^ot:branchLengthDescription": "", 
-"^ot:branchLengthMode": "", 
-"^ot:branchLengthTimeUnit": "", 
-"^ot:curatedType": "Bayesian consensus", 
+"^ot:branchLengthMode": "ot:undefined", 
+"^ot:curatedType": "Bayesian inference ", 
 "^ot:inGroupClade": "node1064919", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
 "^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node1064903", 
-"^ot:specifiedRoot": "", 
+"^ot:specifiedRoot": "node1064903", 
 "^ot:tag": [], 
+"^ot:unrootedTree": false, 
 "edgeBySourceId": {
 "node1064903": {
 "edge1064904": {
@@ -3109,10 +3193,12 @@
 "node1065200": {}, 
 "node1065201": {}, 
 "node1065202": {
-"@otu": "otu397115"
+"@otu": "otu397115", 
+"^ot:isTaxonExemplar": true
 }, 
 "node1065203": {
-"@otu": "otu397116"
+"@otu": "otu397116", 
+"^ot:isTaxonExemplar": false
 }, 
 "node1065204": {
 "@otu": "otu397117"

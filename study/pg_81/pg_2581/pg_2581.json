@@ -36,14 +36,93 @@
 }
 ]
 }
+}, 
+{
+"@description": "Web-based interface for submitting, editing, and reviewing studies in the Open Tree of Life project.", 
+"@id": "opentree-curation-webapp", 
+"@name": "OpenTree curation webapp", 
+"@url": "https://github.com/OpenTreeOfLife/opentree", 
+"@version": "0.0.0"
 }
 ]
 }, 
 "^ot:annotationEvents": {
-"annotation": []
+"annotation": [
+{
+"@dateCreated": "2014-08-18T20:44:25.429Z", 
+"@description": "Aids for mapping study OTUs to OTT taxa", 
+"@id": "otu-mapping-hints", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "OTU_MAPPING_HINTS", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"searchContext": {
+"$": "All life"
 }, 
-"^ot:candidateTreeForSynthesis": [], 
-"^ot:curatorName": "Chris Owen", 
+"substitutions": {
+"substitution": [
+{
+"@active": false, 
+"@valid": true, 
+"new": {
+"$": ""
+}, 
+"old": {
+"$": ""
+}
+}
+]
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}, 
+{
+"@dateCreated": "2014-08-18T20:44:25.429Z", 
+"@description": "Describes supporting data files for this study", 
+"@id": "supporting-files-metadata", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "SUPPORTING_FILE_INFO", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"@movedToPermanentArchive": false, 
+"files": {
+"file": []
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}
+]
+}, 
+"^ot:candidateTreeForSynthesis": [
+"tree5987"
+], 
+"^ot:comment": "test comment", 
+"^ot:curatorName": [
+"Chris Owen", 
+"Joseph W. Brown"
+], 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S1158"
 }, 
@@ -52,6 +131,7 @@
 "^ot:messages": {
 "message": []
 }, 
+"^ot:notIntendedForSynthesis": false, 
 "^ot:otusElementOrder": [
 "otus2581"
 ], 
@@ -407,16 +487,19 @@
 ], 
 "treeById": {
 "tree5987": {
+"@label": "Fig 3. MP strict consensus", 
 "@xsi:type": "nex:FloatTree", 
 "^ot:branchLengthDescription": "", 
-"^ot:branchLengthMode": "", 
 "^ot:branchLengthTimeUnit": "", 
-"^ot:curatedType": "Fig 3. MP strict consensus", 
+"^ot:curatedType": "Maximum parsimony ", 
 "^ot:inGroupClade": "node1016229", 
+"^ot:nearestTaxonMRCAName": "Membracidae", 
+"^ot:nearestTaxonMRCAOttId": "638494", 
 "^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node1016226", 
-"^ot:specifiedRoot": "", 
+"^ot:specifiedRoot": "node1016226", 
 "^ot:tag": [], 
+"^ot:unrootedTree": false, 
 "edgeBySourceId": {
 "node1016226": {
 "edge1016227": {
@@ -424,7 +507,7 @@
 "@target": "node1016227"
 }, 
 "edge1016352": {
-"@length": 15.0, 
+"@length": 15, 
 "@source": "node1016226", 
 "@target": "node1016352"
 }
@@ -435,7 +518,7 @@
 "@target": "node1016228"
 }, 
 "edge1016351": {
-"@length": 14.0, 
+"@length": 14, 
 "@source": "node1016227", 
 "@target": "node1016351"
 }
@@ -446,7 +529,7 @@
 "@target": "node1016229"
 }, 
 "edge1016346": {
-"@length": 11.0, 
+"@length": 11, 
 "@source": "node1016228", 
 "@target": "node1016346"
 }
@@ -467,7 +550,7 @@
 "@target": "node1016231"
 }, 
 "edge1016312": {
-"@length": 11.0, 
+"@length": 11, 
 "@source": "node1016230", 
 "@target": "node1016312"
 }

@@ -15,16 +15,13 @@
 "^ot:agents": {
 "agent": [
 {
-"@description": "validator of NexSON constraints as well as constraints that would allow a study to be imported into the Open Tree of Life's phylogenetic synthesis tools", 
+"@description": "Open Tree NexSON validation", 
 "@id": "peyotl-validator", 
-"@name": "validate_ot_nexson.py", 
+"@name": "api.opentreeoflife.org/validate", 
 "@url": "https://github.com/OpenTreeOfLife/peyotl", 
 "@version": "0.0.4a", 
 "invocation": {
-"commandLine": [
-"--embed", 
-"--agent-only"
-], 
+"commandLine": [], 
 "otherProperty": [
 {
 "name": "pythonVersion", 
@@ -36,29 +33,110 @@
 }
 ]
 }
+}, 
+{
+"@description": "Web-based interface for submitting, editing, and reviewing studies in the Open Tree of Life project.", 
+"@id": "opentree-curation-webapp", 
+"@name": "OpenTree curation webapp", 
+"@url": "https://github.com/OpenTreeOfLife/opentree", 
+"@version": "0.0.0"
 }
 ]
 }, 
 "^ot:annotationEvents": {
-"annotation": []
+"annotation": [
+{
+"@dateCreated": "2014-07-28T18:14:28.736Z", 
+"@description": "Aids for mapping study OTUs to OTT taxa", 
+"@id": "otu-mapping-hints", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "OTU_MAPPING_HINTS", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"searchContext": {
+"$": "All life"
 }, 
-"^ot:candidateTreeForSynthesis": [], 
-"^ot:curatorName": "Dail Laughinghouse", 
+"substitutions": {
+"substitution": [
+{
+"@active": false, 
+"@valid": true, 
+"new": {
+"$": ""
+}, 
+"old": {
+"$": ""
+}
+}
+]
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}, 
+{
+"@dateCreated": "2014-07-28T18:14:28.736Z", 
+"@description": "Describes supporting data files for this study", 
+"@id": "supporting-files-metadata", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "SUPPORTING_FILE_INFO", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"@movedToPermanentArchive": false, 
+"files": {
+"file": []
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}
+]
+}, 
+"^ot:candidateTreeForSynthesis": [
+"tree6375"
+], 
+"^ot:comment": "", 
+"^ot:curatorName": [
+"Dail Laughinghouse"
+], 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S13997"
 }, 
 "^ot:focalClade": 621380, 
 "^ot:focalCladeOTTTaxonName": "Dinophyceae", 
-"^ot:messages": {
-"message": []
-}, 
+"^ot:notIntendedForSynthesis": false, 
 "^ot:otusElementOrder": [
 "otus2760"
 ], 
 "^ot:studyId": "pg_2760", 
-"^ot:studyPublicationReference": "Bachvaroff, T.R., Gornik S.G., Concepcion G.T., Waller R.F., Mendez G.S., Lippmeier J.C., & Delwiche C. 2013. Dinoflagellate phylogeny revisited:  Using ribosomal proteins to  resolve deep branching dinoflagellate clades. Molecular Phylogentics and Evolution 70: 314-322.", 
-"^ot:studyYear": 2013, 
-"^ot:tag": [], 
+"^ot:studyPublication": {
+"@href": "http://dx.doi.org/10.1016/j.ympev.2013.10.007"
+}, 
+"^ot:studyPublicationReference": "Tsvetan R. Bachvaroff, Sebastian G. Gornik, Gregory T. Concepcion, Ross F. Waller, Gregory S. Mendez, J. Casey Lippmeier, Charles F. Delwiche, 2014, 'Dinoflagellate phylogeny revisited: Using ribosomal proteins to resolve deep branching dinoflagellate clades', Molecular Phylogenetics and Evolution, vol. 70, pp. 314-322", 
+"^ot:studyYear": 2014, 
+"^ot:tag": [
+"need strain info"
+], 
 "^ot:treesElementOrder": [
 "trees2760"
 ], 
@@ -85,8 +163,6 @@
 }, 
 "otu411260": {
 "^ot:originalLabel": "Symbiodinium sp. CassKB8 ex Cassiopeia sp.", 
-"^ot:ottId": 274335, 
-"^ot:ottTaxonName": "Symbiodinium sp.", 
 "^ot:treebaseOTUId": "Tl1053636"
 }, 
 "otu411261": {
@@ -109,6 +185,8 @@
 }, 
 "otu411264": {
 "^ot:originalLabel": "Prorocentrum sp.", 
+"^ot:ottId": 797787, 
+"^ot:ottTaxonName": "Prorocentrum", 
 "^ot:treebaseOTUId": "Tl1053641"
 }, 
 "otu411265": {
@@ -179,7 +257,7 @@
 }, 
 "otu411276": {
 "^ot:originalLabel": "Pythium ultimum", 
-"^ot:ottId": 504918, 
+"^ot:ottId": 5296619, 
 "^ot:ottTaxonName": "Pythium ultimum", 
 "^ot:treebaseOTUId": "Tl1053654"
 }, 
@@ -310,9 +388,8 @@
 "^ot:treebaseOTUId": "Tl1053680"
 }, 
 "otu411298": {
+"^ot:altLabel": "Alexandrium tamarense CCMP1598", 
 "^ot:originalLabel": "Alexandrium tamarense CCMP1598EST", 
-"^ot:ottId": 643105, 
-"^ot:ottTaxonName": "Alexandrium tamarense", 
 "^ot:treebaseOTUId": "Tl1053681"
 }, 
 "otu411299": {
@@ -493,14 +570,10 @@
 }, 
 "otu411329": {
 "^ot:originalLabel": "Amoebophrya ex K. veneficum", 
-"^ot:ottId": 9042, 
-"^ot:ottTaxonName": "Amoebophrya", 
 "^ot:treebaseOTUId": "Tl1121687"
 }, 
 "otu411330": {
 "^ot:originalLabel": "Alexandrium tamarense CCMP1598", 
-"^ot:ottId": 643105, 
-"^ot:ottTaxonName": "Alexandrium tamarense", 
 "^ot:treebaseOTUId": "Tl1121688"
 }, 
 "otu411331": {
@@ -511,8 +584,6 @@
 }, 
 "otu411332": {
 "^ot:originalLabel": "Amoebophrya ex A. sanguineum", 
-"^ot:ottId": 9042, 
-"^ot:ottTaxonName": "Amoebophrya", 
 "^ot:treebaseOTUId": "Tl1121691"
 }
 }
@@ -526,34 +597,33 @@
 ], 
 "treeById": {
 "tree6375": {
+"@label": "Untitled (tree6375)", 
 "@xsi:type": "nex:FloatTree", 
 "^ot:branchLengthDescription": "", 
 "^ot:branchLengthMode": "ot:substitutionCount", 
-"^ot:branchLengthTimeUnit": "", 
-"^ot:curatedType": "tree 1", 
-"^ot:inGroupClade": "node1109269", 
+"^ot:branchLengthTimeUnit": "Myr", 
+"^ot:curatedType": "Maximum likelihood ", 
+"^ot:inGroupClade": "node1109259", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
 "^ot:outGroupEdge": "", 
-"^ot:rootNodeId": "node1109192", 
-"^ot:specifiedRoot": "", 
+"^ot:rootNodeId": "tree6375_ROOT", 
+"^ot:specifiedRoot": "tree6375_ROOT", 
 "^ot:tag": [], 
+"^ot:unrootedTree": false, 
 "edgeBySourceId": {
 "node1109192": {
 "edge1109193": {
 "@length": 0.31476415443057365, 
 "@source": "node1109192", 
 "@target": "node1109193"
-}, 
-"edge1109194": {
-"@length": 0.31476415443057365, 
-"@source": "node1109192", 
-"@target": "node1109194"
 }
 }, 
 "node1109194": {
-"edge1109195": {
-"@length": 0.07184378100019302, 
+"edge1109194": {
+"@length": 0.31476415443057365, 
 "@source": "node1109194", 
-"@target": "node1109195"
+"@target": "node1109192"
 }, 
 "edge1109242": {
 "@length": 0.1522297703441647, 
@@ -1431,12 +1501,21 @@
 "@source": "node1109339", 
 "@target": "node1109341"
 }
+}, 
+"tree6375_ROOT": {
+"edge1109195": {
+"@length": 0.07184378100019302, 
+"@source": "tree6375_ROOT", 
+"@target": "node1109195"
+}, 
+"tree6375_ROOT_EDGE": {
+"@source": "tree6375_ROOT", 
+"@target": "node1109194"
+}
 }
 }, 
 "nodeById": {
-"node1109192": {
-"@root": true
-}, 
+"node1109192": {}, 
 "node1109193": {
 "@otu": "otu411261"
 }, 
@@ -1584,10 +1663,12 @@
 }, 
 "node1109266": {}, 
 "node1109267": {
-"@otu": "otu411332"
+"@otu": "otu411332", 
+"^ot:isTaxonExemplar": true
 }, 
 "node1109268": {
-"@otu": "otu411329"
+"@otu": "otu411329", 
+"^ot:isTaxonExemplar": false
 }, 
 "node1109269": {}, 
 "node1109270": {
@@ -1616,10 +1697,12 @@
 }, 
 "node1109282": {}, 
 "node1109283": {
-"@otu": "otu411260"
+"@otu": "otu411260", 
+"^ot:isTaxonExemplar": true
 }, 
 "node1109284": {
-"@otu": "otu411315"
+"@otu": "otu411315", 
+"^ot:isTaxonExemplar": false
 }, 
 "node1109285": {}, 
 "node1109286": {}, 
@@ -1735,6 +1818,9 @@
 }, 
 "node1109341": {
 "@otu": "otu411267"
+}, 
+"tree6375_ROOT": {
+"@root": true
 }
 }
 }

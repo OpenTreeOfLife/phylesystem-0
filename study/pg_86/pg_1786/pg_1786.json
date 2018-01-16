@@ -36,22 +36,100 @@
 }
 ]
 }
+}, 
+{
+"@description": "Web-based interface for submitting, editing, and reviewing studies in the Open Tree of Life project.", 
+"@id": "opentree-curation-webapp", 
+"@name": "OpenTree curation webapp", 
+"@url": "https://github.com/OpenTreeOfLife/opentree", 
+"@version": "0.0.0"
 }
 ]
 }, 
 "^ot:annotationEvents": {
-"annotation": []
+"annotation": [
+{
+"@dateCreated": "2016-10-20T15:59:29.658Z", 
+"@description": "Aids for mapping study OTUs to OTT taxa", 
+"@id": "otu-mapping-hints", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "OTU_MAPPING_HINTS", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"searchContext": {
+"$": "Cnidarians"
 }, 
-"^ot:candidateTreeForSynthesis": [], 
-"^ot:curatorName": "Chris Owen", 
+"substitutions": {
+"substitution": [
+{
+"@active": false, 
+"@valid": true, 
+"new": {
+"$": ""
+}, 
+"old": {
+"$": ""
+}
+}
+]
+}, 
+"useFuzzyMatching": false
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}, 
+{
+"@dateCreated": "2016-10-20T15:59:29.658Z", 
+"@description": "Describes supporting data files for this study", 
+"@id": "supporting-files-metadata", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "SUPPORTING_FILE_INFO", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"@movedToPermanentArchive": false, 
+"files": {
+"file": []
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}
+]
+}, 
+"^ot:candidateTreeForSynthesis": [
+"tree6257"
+], 
+"^ot:comment": "", 
+"^ot:curatorName": [
+"Chris Owen", 
+"pcart"
+], 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S2067"
 }, 
-"^ot:focalClade": 641030, 
-"^ot:focalCladeOTTTaxonName": "Hydrozoa", 
-"^ot:messages": {
-"message": []
-}, 
+"^ot:focalClade": 444336, 
+"^ot:focalCladeOTTTaxonName": "Hydroidolina", 
+"^ot:notIntendedForSynthesis": false, 
 "^ot:otusElementOrder": [
 "otus1786"
 ], 
@@ -65,6 +143,10 @@
 "^ot:treesElementOrder": [
 "trees1786"
 ], 
+"^xhtml:license": {
+"@href": "http://creativecommons.org/publicdomain/zero/1.0/", 
+"@name": "CC0"
+}, 
 "otusById": {
 "otus1786": {
 "otuById": {
@@ -226,6 +308,8 @@
 }, 
 "otu278237": {
 "^ot:originalLabel": "Tetraplatia volitans", 
+"^ot:ottId": 3681083, 
+"^ot:ottTaxonName": "Tetraplatia volitans", 
 "^ot:treebaseOTUId": "Tl24934"
 }, 
 "otu278238": {
@@ -332,6 +416,8 @@
 }, 
 "otu278255": {
 "^ot:originalLabel": "Brinckmannia hexactinellidophila", 
+"^ot:ottId": 4712577, 
+"^ot:ottTaxonName": "Brinckmannia hexactinellidophila", 
 "^ot:treebaseOTUId": "Tl81706"
 }, 
 "otu278256": {
@@ -742,25 +828,25 @@
 ], 
 "treeById": {
 "tree3604": {
+"@label": "Untitled (tree3604)", 
 "@xsi:type": "nex:FloatTree", 
 "^ot:branchLengthDescription": "", 
 "^ot:branchLengthMode": "ot:changesCount", 
 "^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "MP tree", 
 "^ot:inGroupClade": "node692370", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
 "^ot:outGroupEdge": "", 
-"^ot:rootNodeId": "node692347", 
-"^ot:specifiedRoot": "", 
+"^ot:rootNodeId": "tree3604_ROOT", 
+"^ot:specifiedRoot": "tree3604_ROOT", 
 "^ot:tag": [], 
+"^ot:unrootedTree": true, 
 "edgeBySourceId": {
 "node692347": {
 "edge692348": {
 "@source": "node692347", 
 "@target": "node692348"
-}, 
-"edge692370": {
-"@source": "node692347", 
-"@target": "node692370"
 }, 
 "edge692563": {
 "@source": "node692347", 
@@ -1828,12 +1914,20 @@
 "@source": "node692559", 
 "@target": "node692561"
 }
+}, 
+"tree3604_ROOT": {
+"edge692370": {
+"@source": "tree3604_ROOT", 
+"@target": "node692370"
+}, 
+"tree3604_ROOT_EDGE": {
+"@source": "tree3604_ROOT", 
+"@target": "node692347"
+}
 }
 }, 
 "nodeById": {
-"node692347": {
-"@root": true
-}, 
+"node692347": {}, 
 "node692348": {}, 
 "node692349": {}, 
 "node692350": {}, 
@@ -2271,26 +2365,28 @@
 }, 
 "node692563": {
 "@otu": "otu278310"
+}, 
+"tree3604_ROOT": {
+"@root": true
 }
 }
 }, 
 "tree6257": {
+"@label": "ML - Hydroidolina (tree6257)", 
 "@xsi:type": "nex:FloatTree", 
 "^ot:branchLengthDescription": "", 
-"^ot:branchLengthMode": "", 
-"^ot:branchLengthTimeUnit": "", 
+"^ot:branchLengthMode": "ot:undefined", 
 "^ot:curatedType": "ML 50% maj-rule", 
 "^ot:inGroupClade": "node1084004", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
 "^ot:outGroupEdge": "", 
-"^ot:rootNodeId": "node1084003", 
-"^ot:specifiedRoot": "", 
+"^ot:rootNodeId": "tree6257_ROOT", 
+"^ot:specifiedRoot": "tree6257_ROOT", 
 "^ot:tag": [], 
+"^ot:unrootedTree": false, 
 "edgeBySourceId": {
 "node1084003": {
-"edge1084004": {
-"@source": "node1084003", 
-"@target": "node1084004"
-}, 
 "edge1084197": {
 "@source": "node1084003", 
 "@target": "node1084197"
@@ -3367,12 +3463,20 @@
 "@source": "node1084216", 
 "@target": "node1084218"
 }
+}, 
+"tree6257_ROOT": {
+"edge1084004": {
+"@source": "tree6257_ROOT", 
+"@target": "node1084004"
+}, 
+"tree6257_ROOT_EDGE": {
+"@source": "tree6257_ROOT", 
+"@target": "node1084003"
+}
 }
 }, 
 "nodeById": {
-"node1084003": {
-"@root": true
-}, 
+"node1084003": {}, 
 "node1084004": {}, 
 "node1084005": {}, 
 "node1084006": {}, 
@@ -3811,6 +3915,9 @@
 }, 
 "node1084220": {
 "@otu": "otu278310"
+}, 
+"tree6257_ROOT": {
+"@root": true
 }
 }
 }

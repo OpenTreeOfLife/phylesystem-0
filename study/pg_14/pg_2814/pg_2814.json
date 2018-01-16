@@ -36,19 +36,102 @@
 }
 ]
 }
+}, 
+{
+"@description": "Web-based interface for submitting, editing, and reviewing studies in the Open Tree of Life project.", 
+"@id": "opentree-curation-webapp", 
+"@name": "OpenTree curation webapp", 
+"@url": "https://github.com/OpenTreeOfLife/opentree", 
+"@version": "0.0.0"
 }
 ]
 }, 
 "^ot:annotationEvents": {
-"annotation": []
+"annotation": [
+{
+"@dateCreated": "2014-07-25T17:18:05.610Z", 
+"@description": "Aids for mapping study OTUs to OTT taxa", 
+"@id": "otu-mapping-hints", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "OTU_MAPPING_HINTS", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"searchContext": {
+"$": "Animals"
 }, 
-"^ot:candidateTreeForSynthesis": [], 
-"^ot:curatorName": "Joseph Brown", 
+"substitutions": {
+"substitution": [
+{
+"@active": false, 
+"@valid": true, 
+"new": {
+"$": ""
+}, 
+"old": {
+"$": ""
+}
+}
+]
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}, 
+{
+"@dateCreated": "2014-07-25T17:18:05.610Z", 
+"@description": "Describes supporting data files for this study", 
+"@id": "supporting-files-metadata", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "SUPPORTING_FILE_INFO", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"@movedToPermanentArchive": false, 
+"files": {
+"file": []
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}
+]
+}, 
+"^ot:candidateTreeForSynthesis": [
+"tree6551"
+], 
+"^ot:comment": "Can't get Hanseniella to map, even though it is in OTT.", 
+"^ot:curatorName": [
+"Joseph Brown", 
+"Joseph W. Brown"
+], 
+"^ot:dataDeposit": {
+"@href": ""
+}, 
 "^ot:focalClade": 985906, 
 "^ot:focalCladeOTTTaxonName": "Pancrustacea", 
 "^ot:messages": {
 "message": []
 }, 
+"^ot:notIntendedForSynthesis": false, 
 "^ot:otusElementOrder": [
 "otus2814"
 ], 
@@ -136,7 +219,9 @@
 "^ot:ottTaxonName": "Machiloides banksi"
 }, 
 "otu417758": {
-"^ot:originalLabel": "Tomocerus sp."
+"^ot:originalLabel": "Tomocerus sp.", 
+"^ot:ottId": 792398, 
+"^ot:ottTaxonName": "Tomocerus"
 }, 
 "otu417759": {
 "^ot:originalLabel": "Orchesella imitari", 
@@ -174,7 +259,9 @@
 "^ot:ottTaxonName": "Daphnia magna"
 }, 
 "otu417766": {
-"^ot:originalLabel": "Lynceus sp."
+"^ot:originalLabel": "Lynceus sp.", 
+"^ot:ottId": 950551, 
+"^ot:ottTaxonName": "Lynceus"
 }, 
 "otu417767": {
 "^ot:originalLabel": "Triops longicaudatus", 
@@ -267,7 +354,9 @@
 "^ot:ottTaxonName": "Derocheilocaris typicus"
 }, 
 "otu417785": {
-"^ot:originalLabel": "Argulus sp."
+"^ot:originalLabel": "Argulus sp.", 
+"^ot:ottId": 628405, 
+"^ot:ottTaxonName": "Argulus"
 }, 
 "otu417786": {
 "^ot:originalLabel": "Armillifer armillatus", 
@@ -300,7 +389,9 @@
 "^ot:ottTaxonName": "Polyxenus fasciculatus"
 }, 
 "otu417792": {
-"^ot:originalLabel": "Scutigerella sp."
+"^ot:originalLabel": "Scutigerella sp.", 
+"^ot:ottId": 177532, 
+"^ot:ottTaxonName": "Scutigerella"
 }, 
 "otu417793": {
 "^ot:originalLabel": "Hanseniella sp."
@@ -371,7 +462,9 @@
 "^ot:ottTaxonName": "Leiobunum verrucosum"
 }, 
 "otu417807": {
-"^ot:originalLabel": "Amblyomma sp."
+"^ot:originalLabel": "Amblyomma sp.", 
+"^ot:ottId": 621052, 
+"^ot:ottTaxonName": "Amblyomma"
 }, 
 "otu417808": {
 "^ot:originalLabel": "Eremocosta gigasella", 
@@ -409,7 +502,9 @@
 "^ot:ottTaxonName": "Endeis laevis"
 }, 
 "otu417815": {
-"^ot:originalLabel": "Colossendeis sp."
+"^ot:originalLabel": "Colossendeis sp.", 
+"^ot:ottId": 1077187, 
+"^ot:ottTaxonName": "Colossendeis"
 }, 
 "otu417816": {
 "^ot:originalLabel": "Tanystylum orbiculare", 
@@ -437,7 +532,9 @@
 "^ot:ottTaxonName": "Euperipatoides rowelli"
 }, 
 "otu417821": {
-"^ot:originalLabel": "Peripatus sp."
+"^ot:originalLabel": "Peripatus sp.", 
+"^ot:ottId": 235493, 
+"^ot:ottTaxonName": "Peripatus"
 }, 
 "otu417822": {
 "^ot:originalLabel": "Thulinius stephaniae", 
@@ -460,18 +557,18 @@
 ], 
 "treeById": {
 "tree6551": {
+"@label": "Fig. S1 aaCAT tree", 
 "@xsi:type": "nex:FloatTree", 
 "^ot:branchLengthDescription": "", 
 "^ot:branchLengthMode": "ot:substitutionCount", 
 "^ot:branchLengthTimeUnit": "", 
-"^ot:curatedType": "Fig. S1 aaCAT tree", 
+"^ot:curatedType": "Bayesian inference ", 
 "^ot:inGroupClade": "node1136868", 
 "^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node1136867", 
-"^ot:specifiedRoot": "", 
-"^ot:tag": [
-"ingroup added;"
-], 
+"^ot:specifiedRoot": "node1136867", 
+"^ot:tag": [], 
+"^ot:unrootedTree": false, 
 "edgeBySourceId": {
 "node1136867": {
 "edge1136868": {

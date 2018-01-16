@@ -36,14 +36,93 @@
 }
 ]
 }
+}, 
+{
+"@description": "Web-based interface for submitting, editing, and reviewing studies in the Open Tree of Life project.", 
+"@id": "opentree-curation-webapp", 
+"@name": "OpenTree curation webapp", 
+"@url": "https://github.com/OpenTreeOfLife/opentree", 
+"@version": "0.0.0"
 }
 ]
 }, 
 "^ot:annotationEvents": {
-"annotation": []
+"annotation": [
+{
+"@dateCreated": "2014-07-23T19:32:08.794Z", 
+"@description": "Aids for mapping study OTUs to OTT taxa", 
+"@id": "otu-mapping-hints", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "OTU_MAPPING_HINTS", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"searchContext": {
+"$": "All life"
 }, 
-"^ot:candidateTreeForSynthesis": [], 
-"^ot:curatorName": "Laura Katz", 
+"substitutions": {
+"substitution": [
+{
+"@active": false, 
+"@valid": true, 
+"new": {
+"$": ""
+}, 
+"old": {
+"$": ""
+}
+}
+]
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}, 
+{
+"@dateCreated": "2014-07-23T19:32:08.794Z", 
+"@description": "Describes supporting data files for this study", 
+"@id": "supporting-files-metadata", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "SUPPORTING_FILE_INFO", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"@movedToPermanentArchive": false, 
+"files": {
+"file": []
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}
+]
+}, 
+"^ot:candidateTreeForSynthesis": [
+"tree5040"
+], 
+"^ot:comment": "Tree was incorrectly rooted. Fixed 23 July 2014 (JWB).", 
+"^ot:curatorName": [
+"Laura Katz", 
+"Joseph W. Brown"
+], 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S10965"
 }, 
@@ -52,6 +131,7 @@
 "^ot:messages": {
 "message": []
 }, 
+"^ot:notIntendedForSynthesis": false, 
 "^ot:otusElementOrder": [
 "otus2398"
 ], 
@@ -59,7 +139,7 @@
 "^ot:studyPublication": {
 "@href": "http://dx.doi.org/10.1038/nature08656"
 }, 
-"^ot:studyPublicationReference": "Wu D., Hugenholtz P., Mavromatis K., Pukall R., Dalin E., Ivanova N.N., Kunin V., Goodwin L., Wu M., Tindall B.J., Hooper S.D., Pati A., Lykidis A., Spring S., Anderson I.J., D?haeseleer P., Zemla A., Singer M., Lapidus A., Nolan M., Copeland A., Chen F., Cheng J., Lucas S., Kerfeld C., Lang E., Gronow S., Chain P., Bruce D., Rubin E.M., Kyrpides N.C., Klenk H., & Eisen J.A. 2009. A phylogeny-driven genomic encyclopaedia of Bacteria and Archaea. Nature, 462(7276): 1056-1060.", 
+"^ot:studyPublicationReference": "Wu D., Hugenholtz P., Mavromatis K., Pukall R., Dalin E., Ivanova N.N., Kunin V., Goodwin L., Wu M., Tindall B.J., Hooper S.D., Pati A., Lykidis A., Spring S., Anderson I.J., D'haeseleer P., Zemla A., Singer M., Lapidus A., Nolan M., Copeland A., Chen F., Cheng J., Lucas S., Kerfeld C., Lang E., Gronow S., Chain P., Bruce D., Rubin E.M., Kyrpides N.C., Klenk H., Eisen J.A. 2009. A phylogeny-driven genomic encyclopaedia of Bacteria and Archaea. Nature 462 (7276): 1056-1060.", 
 "^ot:studyYear": 2009, 
 "^ot:tag": [], 
 "^ot:treesElementOrder": [
@@ -1362,6 +1442,8 @@
 }, 
 "otu339562": {
 "^ot:originalLabel": "Synechocystis sp. PCC 6803", 
+"^ot:ottId": 5341975, 
+"^ot:ottTaxonName": "Synechocystis sp. PCC 6803 (species in order Chroococcales)", 
 "^ot:treebaseOTUId": "Tl428218"
 }, 
 "otu339563": {
@@ -4208,6 +4290,8 @@
 }, 
 "otu340037": {
 "^ot:originalLabel": "Actinosynnema mirum", 
+"^ot:ottId": 5255629, 
+"^ot:ottTaxonName": "Actinosynnema mirum (species silva:D85475 in Pseudonocardiales)", 
 "^ot:treebaseOTUId": "Tl428693"
 }, 
 "otu340038": {
@@ -4389,23 +4473,20 @@
 ], 
 "treeById": {
 "tree5040": {
+"@label": "phyml", 
 "@xsi:type": "nex:FloatTree", 
 "^ot:branchLengthDescription": "", 
-"^ot:branchLengthMode": "", 
+"^ot:branchLengthMode": "ot:substitutionCount", 
 "^ot:branchLengthTimeUnit": "", 
-"^ot:curatedType": "phyml", 
-"^ot:inGroupClade": "node874838", 
+"^ot:curatedType": "Maximum likelihood ", 
+"^ot:inGroupClade": "tree5040_ROOT", 
 "^ot:outGroupEdge": "", 
-"^ot:rootNodeId": "node874838", 
-"^ot:specifiedRoot": "", 
+"^ot:rootNodeId": "tree5040_ROOT", 
+"^ot:specifiedRoot": "tree5040_ROOT", 
 "^ot:tag": [], 
+"^ot:unrootedTree": false, 
 "edgeBySourceId": {
 "node874838": {
-"edge874839": {
-"@length": 0.1212895, 
-"@source": "node874838", 
-"@target": "node874839"
-}, 
 "edge876274": {
 "@length": 0.1212895, 
 "@source": "node874838", 
@@ -4413,10 +4494,10 @@
 }
 }, 
 "node874839": {
-"edge874840": {
-"@length": 0.287154, 
+"edge874839": {
+"@length": 0.1212895, 
 "@source": "node874839", 
-"@target": "node874840"
+"@target": "node874838"
 }, 
 "edge876267": {
 "@length": 0.12529, 
@@ -12915,12 +12996,21 @@
 "@source": "node876274", 
 "@target": "node876276"
 }
+}, 
+"tree5040_ROOT": {
+"edge874840": {
+"@length": 0.287154, 
+"@source": "tree5040_ROOT", 
+"@target": "node874840"
+}, 
+"tree5040_ROOT_EDGE": {
+"@source": "tree5040_ROOT", 
+"@target": "node874839"
+}
 }
 }, 
 "nodeById": {
-"node874838": {
-"@root": true
-}, 
+"node874838": {}, 
 "node874839": {}, 
 "node874840": {}, 
 "node874841": {}, 
@@ -15798,6 +15888,9 @@
 }, 
 "node876276": {
 "@otu": "otu339810"
+}, 
+"tree5040_ROOT": {
+"@root": true
 }
 }
 }

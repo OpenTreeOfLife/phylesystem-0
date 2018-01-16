@@ -36,14 +36,94 @@
 }
 ]
 }
+}, 
+{
+"@description": "Web-based interface for submitting, editing, and reviewing studies in the Open Tree of Life project.", 
+"@id": "opentree-curation-webapp", 
+"@name": "OpenTree curation webapp", 
+"@url": "https://github.com/OpenTreeOfLife/opentree", 
+"@version": "0.0.0"
 }
 ]
 }, 
 "^ot:annotationEvents": {
-"annotation": []
+"annotation": [
+{
+"@dateCreated": "2015-09-09T13:48:02.375Z", 
+"@description": "Aids for mapping study OTUs to OTT taxa", 
+"@id": "otu-mapping-hints", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "OTU_MAPPING_HINTS", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"searchContext": {
+"$": "All life"
 }, 
-"^ot:candidateTreeForSynthesis": [], 
-"^ot:curatorName": "bryan drew", 
+"substitutions": {
+"substitution": [
+{
+"@active": false, 
+"@valid": true, 
+"new": {
+"$": ""
+}, 
+"old": {
+"$": ""
+}
+}
+]
+}, 
+"useFuzzyMatching": false
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}, 
+{
+"@dateCreated": "2015-09-09T13:48:02.375Z", 
+"@description": "Describes supporting data files for this study", 
+"@id": "supporting-files-metadata", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "SUPPORTING_FILE_INFO", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"@movedToPermanentArchive": false, 
+"files": {
+"file": []
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}
+]
+}, 
+"^ot:candidateTreeForSynthesis": [
+"tree5928"
+], 
+"^ot:comment": "These trees (from TreeBASE)do not appear in the paper (the paper uses ML, not NJ or MP). The ML trees from the paper is quite resolved, but we do not have them. I am contacting the author.", 
+"^ot:curatorName": [
+"bryan drew", 
+"Joseph W. Brown"
+], 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S13453"
 }, 
@@ -52,6 +132,7 @@
 "^ot:messages": {
 "message": []
 }, 
+"^ot:notIntendedForSynthesis": false, 
 "^ot:otusElementOrder": [
 "otus2046"
 ], 
@@ -59,7 +140,7 @@
 "^ot:studyPublication": {
 "@href": "http://dx.doi.org/10.1111/jpy.12039"
 }, 
-"^ot:studyPublicationReference": "Bock, C., Luo, W., Kusber, W. H., Hegewald, E., Pa\u017eoutov\u00e1, M., & Krienitz, L. (2013). Classification of Crucigenoid Algae: Phylogenetic Position of the Reinstated Genus Lemmermannia, Tetrastrum spp. Crucigenia tetrapedia, and C. lauterbornii (Trebouxiophyceae, Chlorophyta) 1. Journal of Phycology. 49:329\u2013339", 
+"^ot:studyPublicationReference": "Bock, Christina, Wei Luo, Wolf-Henning Kusber, Eberhard Hegewald, Marie Pa\u017eoutov\u00e1, Lothar Krienitz. 2013. Classification of crucigenoid algae: phylogenetic position of the reinstated genus Lemmermannia, Tetrastrum spp. Crucigenia tetrapedia, and C. lauterbornii (Trebouxiophyceae, Chlorophyta). Journal of Phycology 49 (2): 329-339", 
 "^ot:studyYear": 2013, 
 "^ot:tag": [], 
 "^ot:treesElementOrder": [
@@ -466,19 +547,24 @@
 ], 
 "treeById": {
 "tree4215": {
+"@label": "Untitled (tree4215)", 
 "@xsi:type": "nex:FloatTree", 
 "^ot:branchLengthDescription": "", 
 "^ot:branchLengthMode": "", 
 "^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "18S-ITS Chlorellaceae NJ boot", 
+"^ot:inGroupClade": "", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
 "^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node783537", 
 "^ot:specifiedRoot": "", 
 "^ot:tag": [], 
+"^ot:unrootedTree": true, 
 "edgeBySourceId": {
 "node783537": {
 "edge783538": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "node783537", 
 "@target": "node783538"
 }, 
@@ -488,7 +574,7 @@
 "@target": "node783539"
 }, 
 "edge783589": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "node783537", 
 "@target": "node783589"
 }
@@ -500,22 +586,22 @@
 "@target": "node783540"
 }, 
 "edge783543": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "node783539", 
 "@target": "node783543"
 }, 
 "edge783544": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "node783539", 
 "@target": "node783544"
 }, 
 "edge783545": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "node783539", 
 "@target": "node783545"
 }, 
 "edge783548": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "node783539", 
 "@target": "node783548"
 }, 
@@ -525,7 +611,7 @@
 "@target": "node783549"
 }, 
 "edge783554": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "node783539", 
 "@target": "node783554"
 }, 
@@ -535,12 +621,12 @@
 "@target": "node783555"
 }, 
 "edge783565": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "node783539", 
 "@target": "node783565"
 }, 
 "edge783568": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "node783539", 
 "@target": "node783568"
 }, 
@@ -550,104 +636,104 @@
 "@target": "node783571"
 }, 
 "edge783574": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "node783539", 
 "@target": "node783574"
 }, 
 "edge783577": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "node783539", 
 "@target": "node783577"
 }, 
 "edge783580": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "node783539", 
 "@target": "node783580"
 }, 
 "edge783581": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "node783539", 
 "@target": "node783581"
 }, 
 "edge783584": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "node783539", 
 "@target": "node783584"
 }
 }, 
 "node783540": {
 "edge783541": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "node783540", 
 "@target": "node783541"
 }, 
 "edge783542": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "node783540", 
 "@target": "node783542"
 }
 }, 
 "node783545": {
 "edge783546": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "node783545", 
 "@target": "node783546"
 }, 
 "edge783547": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "node783545", 
 "@target": "node783547"
 }
 }, 
 "node783549": {
 "edge783550": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "node783549", 
 "@target": "node783550"
 }, 
 "edge783553": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "node783549", 
 "@target": "node783553"
 }
 }, 
 "node783550": {
 "edge783551": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "node783550", 
 "@target": "node783551"
 }, 
 "edge783552": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "node783550", 
 "@target": "node783552"
 }
 }, 
 "node783555": {
 "edge783556": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "node783555", 
 "@target": "node783556"
 }, 
 "edge783563": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "node783555", 
 "@target": "node783563"
 }, 
 "edge783564": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "node783555", 
 "@target": "node783564"
 }
 }, 
 "node783556": {
 "edge783557": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "node783556", 
 "@target": "node783557"
 }, 
 "edge783562": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "node783556", 
 "@target": "node783562"
 }
@@ -659,115 +745,115 @@
 "@target": "node783558"
 }, 
 "edge783561": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "node783557", 
 "@target": "node783561"
 }
 }, 
 "node783558": {
 "edge783559": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "node783558", 
 "@target": "node783559"
 }, 
 "edge783560": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "node783558", 
 "@target": "node783560"
 }
 }, 
 "node783565": {
 "edge783566": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "node783565", 
 "@target": "node783566"
 }, 
 "edge783567": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "node783565", 
 "@target": "node783567"
 }
 }, 
 "node783568": {
 "edge783569": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "node783568", 
 "@target": "node783569"
 }, 
 "edge783570": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "node783568", 
 "@target": "node783570"
 }
 }, 
 "node783571": {
 "edge783572": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "node783571", 
 "@target": "node783572"
 }, 
 "edge783573": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "node783571", 
 "@target": "node783573"
 }
 }, 
 "node783574": {
 "edge783575": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "node783574", 
 "@target": "node783575"
 }, 
 "edge783576": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "node783574", 
 "@target": "node783576"
 }
 }, 
 "node783577": {
 "edge783578": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "node783577", 
 "@target": "node783578"
 }, 
 "edge783579": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "node783577", 
 "@target": "node783579"
 }
 }, 
 "node783581": {
 "edge783582": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "node783581", 
 "@target": "node783582"
 }, 
 "edge783583": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "node783581", 
 "@target": "node783583"
 }
 }, 
 "node783584": {
 "edge783585": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "node783584", 
 "@target": "node783585"
 }, 
 "edge783588": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "node783584", 
 "@target": "node783588"
 }
 }, 
 "node783585": {
 "edge783586": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "node783585", 
 "@target": "node783586"
 }, 
 "edge783587": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "node783585", 
 "@target": "node783587"
 }
@@ -786,7 +872,7 @@
 }, 
 "node783590": {
 "edge783591": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "node783590", 
 "@target": "node783591"
 }, 
@@ -796,17 +882,17 @@
 "@target": "node783592"
 }, 
 "edge783595": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "node783590", 
 "@target": "node783595"
 }, 
 "edge783596": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "node783590", 
 "@target": "node783596"
 }, 
 "edge783601": {
-"@length": 82.0, 
+"@length": 82, 
 "@source": "node783590", 
 "@target": "node783601"
 }, 
@@ -816,39 +902,39 @@
 "@target": "node783608"
 }, 
 "edge783621": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "node783590", 
 "@target": "node783621"
 }, 
 "edge783624": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "node783590", 
 "@target": "node783624"
 }, 
 "edge783625": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "node783590", 
 "@target": "node783625"
 }, 
 "edge783628": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "node783590", 
 "@target": "node783628"
 }, 
 "edge783631": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "node783590", 
 "@target": "node783631"
 }
 }, 
 "node783592": {
 "edge783593": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "node783592", 
 "@target": "node783593"
 }, 
 "edge783594": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "node783592", 
 "@target": "node783594"
 }
@@ -860,26 +946,26 @@
 "@target": "node783597"
 }, 
 "edge783600": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "node783596", 
 "@target": "node783600"
 }
 }, 
 "node783597": {
 "edge783598": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "node783597", 
 "@target": "node783598"
 }, 
 "edge783599": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "node783597", 
 "@target": "node783599"
 }
 }, 
 "node783601": {
 "edge783602": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "node783601", 
 "@target": "node783602"
 }, 
@@ -891,31 +977,31 @@
 }, 
 "node783603": {
 "edge783604": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "node783603", 
 "@target": "node783604"
 }, 
 "edge783607": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "node783603", 
 "@target": "node783607"
 }
 }, 
 "node783604": {
 "edge783605": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "node783604", 
 "@target": "node783605"
 }, 
 "edge783606": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "node783604", 
 "@target": "node783606"
 }
 }, 
 "node783608": {
 "edge783609": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "node783608", 
 "@target": "node783609"
 }, 
@@ -927,12 +1013,12 @@
 }, 
 "node783609": {
 "edge783610": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "node783609", 
 "@target": "node783610"
 }, 
 "edge783611": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "node783609", 
 "@target": "node783611"
 }
@@ -944,14 +1030,14 @@
 "@target": "node783613"
 }, 
 "edge783620": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "node783612", 
 "@target": "node783620"
 }
 }, 
 "node783613": {
 "edge783614": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "node783613", 
 "@target": "node783614"
 }, 
@@ -963,72 +1049,72 @@
 }, 
 "node783614": {
 "edge783615": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "node783614", 
 "@target": "node783615"
 }, 
 "edge783616": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "node783614", 
 "@target": "node783616"
 }
 }, 
 "node783617": {
 "edge783618": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "node783617", 
 "@target": "node783618"
 }, 
 "edge783619": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "node783617", 
 "@target": "node783619"
 }
 }, 
 "node783621": {
 "edge783622": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "node783621", 
 "@target": "node783622"
 }, 
 "edge783623": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "node783621", 
 "@target": "node783623"
 }
 }, 
 "node783625": {
 "edge783626": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "node783625", 
 "@target": "node783626"
 }, 
 "edge783627": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "node783625", 
 "@target": "node783627"
 }
 }, 
 "node783628": {
 "edge783629": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "node783628", 
 "@target": "node783629"
 }, 
 "edge783630": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "node783628", 
 "@target": "node783630"
 }
 }, 
 "node783631": {
 "edge783632": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "node783631", 
 "@target": "node783632"
 }, 
 "edge783633": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "node783631", 
 "@target": "node783633"
 }
@@ -1040,19 +1126,19 @@
 "@target": "node783635"
 }, 
 "edge783638": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "node783634", 
 "@target": "node783638"
 }
 }, 
 "node783635": {
 "edge783636": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "node783635", 
 "@target": "node783636"
 }, 
 "edge783637": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "node783635", 
 "@target": "node783637"
 }
@@ -1294,29 +1380,34 @@
 }
 }, 
 "tree4216": {
+"@label": "Untitled (tree4216)", 
 "@xsi:type": "nex:FloatTree", 
 "^ot:branchLengthDescription": "", 
 "^ot:branchLengthMode": "", 
 "^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "18S-ITS Chlorellaceae MP bootstrap", 
+"^ot:inGroupClade": "", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
 "^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node783639", 
 "^ot:specifiedRoot": "", 
 "^ot:tag": [], 
+"^ot:unrootedTree": true, 
 "edgeBySourceId": {
 "node783639": {
 "edge783640": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "node783639", 
 "@target": "node783640"
 }, 
 "edge783641": {
-"@length": 91.0, 
+"@length": 91, 
 "@source": "node783639", 
 "@target": "node783641"
 }, 
 "edge783692": {
-"@length": 99.0, 
+"@length": 99, 
 "@source": "node783639", 
 "@target": "node783692"
 }
@@ -1328,7 +1419,7 @@
 "@target": "node783642"
 }, 
 "edge783689": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "node783641", 
 "@target": "node783689"
 }
@@ -1340,32 +1431,32 @@
 "@target": "node783643"
 }, 
 "edge783646": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "node783642", 
 "@target": "node783646"
 }, 
 "edge783647": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "node783642", 
 "@target": "node783647"
 }, 
 "edge783648": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "node783642", 
 "@target": "node783648"
 }, 
 "edge783651": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "node783642", 
 "@target": "node783651"
 }, 
 "edge783652": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "node783642", 
 "@target": "node783652"
 }, 
 "edge783655": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "node783642", 
 "@target": "node783655"
 }, 
@@ -1375,17 +1466,17 @@
 "@target": "node783656"
 }, 
 "edge783667": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "node783642", 
 "@target": "node783667"
 }, 
 "edge783668": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "node783642", 
 "@target": "node783668"
 }, 
 "edge783671": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "node783642", 
 "@target": "node783671"
 }, 
@@ -1395,58 +1486,58 @@
 "@target": "node783674"
 }, 
 "edge783677": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "node783642", 
 "@target": "node783677"
 }, 
 "edge783680": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "node783642", 
 "@target": "node783680"
 }, 
 "edge783681": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "node783642", 
 "@target": "node783681"
 }, 
 "edge783684": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "node783642", 
 "@target": "node783684"
 }
 }, 
 "node783643": {
 "edge783644": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "node783643", 
 "@target": "node783644"
 }, 
 "edge783645": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "node783643", 
 "@target": "node783645"
 }
 }, 
 "node783648": {
 "edge783649": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "node783648", 
 "@target": "node783649"
 }, 
 "edge783650": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "node783648", 
 "@target": "node783650"
 }
 }, 
 "node783652": {
 "edge783653": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "node783652", 
 "@target": "node783653"
 }, 
 "edge783654": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "node783652", 
 "@target": "node783654"
 }
@@ -1458,7 +1549,7 @@
 "@target": "node783657"
 }, 
 "edge783666": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "node783656", 
 "@target": "node783666"
 }
@@ -1470,19 +1561,19 @@
 "@target": "node783658"
 }, 
 "edge783665": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "node783657", 
 "@target": "node783665"
 }
 }, 
 "node783658": {
 "edge783659": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "node783658", 
 "@target": "node783659"
 }, 
 "edge783664": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "node783658", 
 "@target": "node783664"
 }
@@ -1494,115 +1585,115 @@
 "@target": "node783660"
 }, 
 "edge783663": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "node783659", 
 "@target": "node783663"
 }
 }, 
 "node783660": {
 "edge783661": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "node783660", 
 "@target": "node783661"
 }, 
 "edge783662": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "node783660", 
 "@target": "node783662"
 }
 }, 
 "node783668": {
 "edge783669": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "node783668", 
 "@target": "node783669"
 }, 
 "edge783670": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "node783668", 
 "@target": "node783670"
 }
 }, 
 "node783671": {
 "edge783672": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "node783671", 
 "@target": "node783672"
 }, 
 "edge783673": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "node783671", 
 "@target": "node783673"
 }
 }, 
 "node783674": {
 "edge783675": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "node783674", 
 "@target": "node783675"
 }, 
 "edge783676": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "node783674", 
 "@target": "node783676"
 }
 }, 
 "node783677": {
 "edge783678": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "node783677", 
 "@target": "node783678"
 }, 
 "edge783679": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "node783677", 
 "@target": "node783679"
 }
 }, 
 "node783681": {
 "edge783682": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "node783681", 
 "@target": "node783682"
 }, 
 "edge783683": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "node783681", 
 "@target": "node783683"
 }
 }, 
 "node783684": {
 "edge783685": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "node783684", 
 "@target": "node783685"
 }, 
 "edge783688": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "node783684", 
 "@target": "node783688"
 }
 }, 
 "node783685": {
 "edge783686": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "node783685", 
 "@target": "node783686"
 }, 
 "edge783687": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "node783685", 
 "@target": "node783687"
 }
 }, 
 "node783689": {
 "edge783690": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "node783689", 
 "@target": "node783690"
 }, 
 "edge783691": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "node783689", 
 "@target": "node783691"
 }
@@ -1614,17 +1705,17 @@
 "@target": "node783693"
 }, 
 "edge783700": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "node783692", 
 "@target": "node783700"
 }, 
 "edge783705": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "node783692", 
 "@target": "node783705"
 }, 
 "edge783706": {
-"@length": 97.0, 
+"@length": 97, 
 "@source": "node783692", 
 "@target": "node783706"
 }, 
@@ -1634,44 +1725,44 @@
 "@target": "node783711"
 }, 
 "edge783724": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "node783692", 
 "@target": "node783724"
 }, 
 "edge783727": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "node783692", 
 "@target": "node783727"
 }, 
 "edge783728": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "node783692", 
 "@target": "node783728"
 }, 
 "edge783731": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "node783692", 
 "@target": "node783731"
 }, 
 "edge783734": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "node783692", 
 "@target": "node783734"
 }, 
 "edge783737": {
-"@length": 75.0, 
+"@length": 75, 
 "@source": "node783692", 
 "@target": "node783737"
 }, 
 "edge783740": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "node783692", 
 "@target": "node783740"
 }
 }, 
 "node783693": {
 "edge783694": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "node783693", 
 "@target": "node783694"
 }, 
@@ -1683,24 +1774,24 @@
 }, 
 "node783695": {
 "edge783696": {
-"@length": 97.0, 
+"@length": 97, 
 "@source": "node783695", 
 "@target": "node783696"
 }, 
 "edge783699": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "node783695", 
 "@target": "node783699"
 }
 }, 
 "node783696": {
 "edge783697": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "node783696", 
 "@target": "node783697"
 }, 
 "edge783698": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "node783696", 
 "@target": "node783698"
 }
@@ -1712,19 +1803,19 @@
 "@target": "node783701"
 }, 
 "edge783704": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "node783700", 
 "@target": "node783704"
 }
 }, 
 "node783701": {
 "edge783702": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "node783701", 
 "@target": "node783702"
 }, 
 "edge783703": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "node783701", 
 "@target": "node783703"
 }
@@ -1736,26 +1827,26 @@
 "@target": "node783707"
 }, 
 "edge783710": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "node783706", 
 "@target": "node783710"
 }
 }, 
 "node783707": {
 "edge783708": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "node783707", 
 "@target": "node783708"
 }, 
 "edge783709": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "node783707", 
 "@target": "node783709"
 }
 }, 
 "node783711": {
 "edge783712": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "node783711", 
 "@target": "node783712"
 }, 
@@ -1767,12 +1858,12 @@
 }, 
 "node783712": {
 "edge783713": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "node783712", 
 "@target": "node783713"
 }, 
 "edge783714": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "node783712", 
 "@target": "node783714"
 }
@@ -1784,14 +1875,14 @@
 "@target": "node783716"
 }, 
 "edge783723": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "node783715", 
 "@target": "node783723"
 }
 }, 
 "node783716": {
 "edge783717": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "node783716", 
 "@target": "node783717"
 }, 
@@ -1803,84 +1894,84 @@
 }, 
 "node783717": {
 "edge783718": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "node783717", 
 "@target": "node783718"
 }, 
 "edge783719": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "node783717", 
 "@target": "node783719"
 }
 }, 
 "node783720": {
 "edge783721": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "node783720", 
 "@target": "node783721"
 }, 
 "edge783722": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "node783720", 
 "@target": "node783722"
 }
 }, 
 "node783724": {
 "edge783725": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "node783724", 
 "@target": "node783725"
 }, 
 "edge783726": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "node783724", 
 "@target": "node783726"
 }
 }, 
 "node783728": {
 "edge783729": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "node783728", 
 "@target": "node783729"
 }, 
 "edge783730": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "node783728", 
 "@target": "node783730"
 }
 }, 
 "node783731": {
 "edge783732": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "node783731", 
 "@target": "node783732"
 }, 
 "edge783733": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "node783731", 
 "@target": "node783733"
 }
 }, 
 "node783734": {
 "edge783735": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "node783734", 
 "@target": "node783735"
 }, 
 "edge783736": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "node783734", 
 "@target": "node783736"
 }
 }, 
 "node783737": {
 "edge783738": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "node783737", 
 "@target": "node783738"
 }, 
 "edge783739": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "node783737", 
 "@target": "node783739"
 }
@@ -2122,25 +2213,29 @@
 }
 }, 
 "tree5928": {
+"@label": "Untitled (tree5928)", 
 "@xsi:type": "nex:FloatTree", 
 "^ot:branchLengthDescription": "", 
 "^ot:branchLengthMode": "ot:bootstrapValues", 
 "^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "18S-ITS Chlorellaceae NJ boot", 
 "^ot:inGroupClade": "node1006080", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
 "^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node1006079", 
-"^ot:specifiedRoot": "", 
+"^ot:specifiedRoot": "node1006079", 
 "^ot:tag": [], 
+"^ot:unrootedTree": false, 
 "edgeBySourceId": {
 "node1006079": {
 "edge1006080": {
-"@length": 50.0, 
+"@length": 50, 
 "@source": "node1006079", 
 "@target": "node1006080"
 }, 
 "edge1006181": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "node1006079", 
 "@target": "node1006181"
 }
@@ -2152,7 +2247,7 @@
 "@target": "node1006081"
 }, 
 "edge1006131": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "node1006080", 
 "@target": "node1006131"
 }
@@ -2164,22 +2259,22 @@
 "@target": "node1006082"
 }, 
 "edge1006085": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "node1006081", 
 "@target": "node1006085"
 }, 
 "edge1006086": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "node1006081", 
 "@target": "node1006086"
 }, 
 "edge1006087": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "node1006081", 
 "@target": "node1006087"
 }, 
 "edge1006090": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "node1006081", 
 "@target": "node1006090"
 }, 
@@ -2189,7 +2284,7 @@
 "@target": "node1006091"
 }, 
 "edge1006096": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "node1006081", 
 "@target": "node1006096"
 }, 
@@ -2199,12 +2294,12 @@
 "@target": "node1006097"
 }, 
 "edge1006107": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "node1006081", 
 "@target": "node1006107"
 }, 
 "edge1006110": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "node1006081", 
 "@target": "node1006110"
 }, 
@@ -2214,104 +2309,104 @@
 "@target": "node1006113"
 }, 
 "edge1006116": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "node1006081", 
 "@target": "node1006116"
 }, 
 "edge1006119": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "node1006081", 
 "@target": "node1006119"
 }, 
 "edge1006122": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "node1006081", 
 "@target": "node1006122"
 }, 
 "edge1006123": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "node1006081", 
 "@target": "node1006123"
 }, 
 "edge1006126": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "node1006081", 
 "@target": "node1006126"
 }
 }, 
 "node1006082": {
 "edge1006083": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "node1006082", 
 "@target": "node1006083"
 }, 
 "edge1006084": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "node1006082", 
 "@target": "node1006084"
 }
 }, 
 "node1006087": {
 "edge1006088": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "node1006087", 
 "@target": "node1006088"
 }, 
 "edge1006089": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "node1006087", 
 "@target": "node1006089"
 }
 }, 
 "node1006091": {
 "edge1006092": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "node1006091", 
 "@target": "node1006092"
 }, 
 "edge1006095": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "node1006091", 
 "@target": "node1006095"
 }
 }, 
 "node1006092": {
 "edge1006093": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "node1006092", 
 "@target": "node1006093"
 }, 
 "edge1006094": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "node1006092", 
 "@target": "node1006094"
 }
 }, 
 "node1006097": {
 "edge1006098": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "node1006097", 
 "@target": "node1006098"
 }, 
 "edge1006105": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "node1006097", 
 "@target": "node1006105"
 }, 
 "edge1006106": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "node1006097", 
 "@target": "node1006106"
 }
 }, 
 "node1006098": {
 "edge1006099": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "node1006098", 
 "@target": "node1006099"
 }, 
 "edge1006104": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "node1006098", 
 "@target": "node1006104"
 }
@@ -2323,7 +2418,7 @@
 "@target": "node1006100"
 }, 
 "edge1006103": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "node1006099", 
 "@target": "node1006103"
 }
@@ -2342,24 +2437,24 @@
 }, 
 "node1006107": {
 "edge1006108": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "node1006107", 
 "@target": "node1006108"
 }, 
 "edge1006109": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "node1006107", 
 "@target": "node1006109"
 }
 }, 
 "node1006110": {
 "edge1006111": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "node1006110", 
 "@target": "node1006111"
 }, 
 "edge1006112": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "node1006110", 
 "@target": "node1006112"
 }
@@ -2378,60 +2473,60 @@
 }, 
 "node1006116": {
 "edge1006117": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "node1006116", 
 "@target": "node1006117"
 }, 
 "edge1006118": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "node1006116", 
 "@target": "node1006118"
 }
 }, 
 "node1006119": {
 "edge1006120": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "node1006119", 
 "@target": "node1006120"
 }, 
 "edge1006121": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "node1006119", 
 "@target": "node1006121"
 }
 }, 
 "node1006123": {
 "edge1006124": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "node1006123", 
 "@target": "node1006124"
 }, 
 "edge1006125": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "node1006123", 
 "@target": "node1006125"
 }
 }, 
 "node1006126": {
 "edge1006127": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "node1006126", 
 "@target": "node1006127"
 }, 
 "edge1006130": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "node1006126", 
 "@target": "node1006130"
 }
 }, 
 "node1006127": {
 "edge1006128": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "node1006127", 
 "@target": "node1006128"
 }, 
 "edge1006129": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "node1006127", 
 "@target": "node1006129"
 }
@@ -2450,7 +2545,7 @@
 }, 
 "node1006132": {
 "edge1006133": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "node1006132", 
 "@target": "node1006133"
 }, 
@@ -2460,17 +2555,17 @@
 "@target": "node1006134"
 }, 
 "edge1006137": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "node1006132", 
 "@target": "node1006137"
 }, 
 "edge1006138": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "node1006132", 
 "@target": "node1006138"
 }, 
 "edge1006143": {
-"@length": 82.0, 
+"@length": 82, 
 "@source": "node1006132", 
 "@target": "node1006143"
 }, 
@@ -2480,39 +2575,39 @@
 "@target": "node1006150"
 }, 
 "edge1006163": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "node1006132", 
 "@target": "node1006163"
 }, 
 "edge1006166": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "node1006132", 
 "@target": "node1006166"
 }, 
 "edge1006167": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "node1006132", 
 "@target": "node1006167"
 }, 
 "edge1006170": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "node1006132", 
 "@target": "node1006170"
 }, 
 "edge1006173": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "node1006132", 
 "@target": "node1006173"
 }
 }, 
 "node1006134": {
 "edge1006135": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "node1006134", 
 "@target": "node1006135"
 }, 
 "edge1006136": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "node1006134", 
 "@target": "node1006136"
 }
@@ -2524,26 +2619,26 @@
 "@target": "node1006139"
 }, 
 "edge1006142": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "node1006138", 
 "@target": "node1006142"
 }
 }, 
 "node1006139": {
 "edge1006140": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "node1006139", 
 "@target": "node1006140"
 }, 
 "edge1006141": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "node1006139", 
 "@target": "node1006141"
 }
 }, 
 "node1006143": {
 "edge1006144": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "node1006143", 
 "@target": "node1006144"
 }, 
@@ -2555,12 +2650,12 @@
 }, 
 "node1006145": {
 "edge1006146": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "node1006145", 
 "@target": "node1006146"
 }, 
 "edge1006149": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "node1006145", 
 "@target": "node1006149"
 }
@@ -2579,7 +2674,7 @@
 }, 
 "node1006150": {
 "edge1006151": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "node1006150", 
 "@target": "node1006151"
 }, 
@@ -2591,12 +2686,12 @@
 }, 
 "node1006151": {
 "edge1006152": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "node1006151", 
 "@target": "node1006152"
 }, 
 "edge1006153": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "node1006151", 
 "@target": "node1006153"
 }
@@ -2608,14 +2703,14 @@
 "@target": "node1006155"
 }, 
 "edge1006162": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "node1006154", 
 "@target": "node1006162"
 }
 }, 
 "node1006155": {
 "edge1006156": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "node1006155", 
 "@target": "node1006156"
 }, 
@@ -2627,72 +2722,72 @@
 }, 
 "node1006156": {
 "edge1006157": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "node1006156", 
 "@target": "node1006157"
 }, 
 "edge1006158": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "node1006156", 
 "@target": "node1006158"
 }
 }, 
 "node1006159": {
 "edge1006160": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "node1006159", 
 "@target": "node1006160"
 }, 
 "edge1006161": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "node1006159", 
 "@target": "node1006161"
 }
 }, 
 "node1006163": {
 "edge1006164": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "node1006163", 
 "@target": "node1006164"
 }, 
 "edge1006165": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "node1006163", 
 "@target": "node1006165"
 }
 }, 
 "node1006167": {
 "edge1006168": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "node1006167", 
 "@target": "node1006168"
 }, 
 "edge1006169": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "node1006167", 
 "@target": "node1006169"
 }
 }, 
 "node1006170": {
 "edge1006171": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "node1006170", 
 "@target": "node1006171"
 }, 
 "edge1006172": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "node1006170", 
 "@target": "node1006172"
 }
 }, 
 "node1006173": {
 "edge1006174": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "node1006173", 
 "@target": "node1006174"
 }, 
 "edge1006175": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "node1006173", 
 "@target": "node1006175"
 }
@@ -2704,19 +2799,19 @@
 "@target": "node1006177"
 }, 
 "edge1006180": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "node1006176", 
 "@target": "node1006180"
 }
 }, 
 "node1006177": {
 "edge1006178": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "node1006177", 
 "@target": "node1006178"
 }, 
 "edge1006179": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "node1006177", 
 "@target": "node1006179"
 }
@@ -2789,10 +2884,12 @@
 }, 
 "node1006107": {}, 
 "node1006108": {
-"@otu": "otu308451"
+"@otu": "otu308451", 
+"^ot:isTaxonExemplar": true
 }, 
 "node1006109": {
-"@otu": "otu308489"
+"@otu": "otu308489", 
+"^ot:isTaxonExemplar": false
 }, 
 "node1006110": {}, 
 "node1006111": {
@@ -2817,10 +2914,12 @@
 }, 
 "node1006119": {}, 
 "node1006120": {
-"@otu": "otu308464"
+"@otu": "otu308464", 
+"^ot:isTaxonExemplar": true
 }, 
 "node1006121": {
-"@otu": "otu308440"
+"@otu": "otu308440", 
+"^ot:isTaxonExemplar": false
 }, 
 "node1006122": {
 "@otu": "otu308477"
@@ -2887,10 +2986,12 @@
 "node1006150": {}, 
 "node1006151": {}, 
 "node1006152": {
-"@otu": "otu308468"
+"@otu": "otu308468", 
+"^ot:isTaxonExemplar": true
 }, 
 "node1006153": {
-"@otu": "otu308462"
+"@otu": "otu308462", 
+"^ot:isTaxonExemplar": false
 }, 
 "node1006154": {}, 
 "node1006155": {}, 
@@ -2913,27 +3014,33 @@
 }, 
 "node1006163": {}, 
 "node1006164": {
-"@otu": "otu308439"
+"@otu": "otu308439", 
+"^ot:isTaxonExemplar": true
 }, 
 "node1006165": {
-"@otu": "otu308430"
+"@otu": "otu308430", 
+"^ot:isTaxonExemplar": false
 }, 
 "node1006166": {
 "@otu": "otu308455"
 }, 
 "node1006167": {}, 
 "node1006168": {
-"@otu": "otu308466"
+"@otu": "otu308466", 
+"^ot:isTaxonExemplar": true
 }, 
 "node1006169": {
-"@otu": "otu308479"
+"@otu": "otu308479", 
+"^ot:isTaxonExemplar": false
 }, 
 "node1006170": {}, 
 "node1006171": {
-"@otu": "otu308461"
+"@otu": "otu308461", 
+"^ot:isTaxonExemplar": true
 }, 
 "node1006172": {
-"@otu": "otu308474"
+"@otu": "otu308474", 
+"^ot:isTaxonExemplar": false
 }, 
 "node1006173": {}, 
 "node1006174": {
@@ -2959,37 +3066,41 @@
 }
 }, 
 "tree5929": {
+"@label": "Untitled (tree5929)", 
 "@xsi:type": "nex:FloatTree", 
 "^ot:branchLengthDescription": "", 
 "^ot:branchLengthMode": "", 
 "^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "18S-ITS Chlorellaceae MP bootstrap", 
 "^ot:inGroupClade": "node1006183", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
 "^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node1006182", 
 "^ot:specifiedRoot": "", 
 "^ot:tag": [], 
+"^ot:unrootedTree": true, 
 "edgeBySourceId": {
 "node1006182": {
 "edge1006183": {
-"@length": 50.0, 
+"@length": 50, 
 "@source": "node1006182", 
 "@target": "node1006183"
 }, 
 "edge1006284": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "node1006182", 
 "@target": "node1006284"
 }
 }, 
 "node1006183": {
 "edge1006184": {
-"@length": 91.0, 
+"@length": 91, 
 "@source": "node1006183", 
 "@target": "node1006184"
 }, 
 "edge1006235": {
-"@length": 99.0, 
+"@length": 99, 
 "@source": "node1006183", 
 "@target": "node1006235"
 }
@@ -3001,7 +3112,7 @@
 "@target": "node1006185"
 }, 
 "edge1006232": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "node1006184", 
 "@target": "node1006232"
 }
@@ -3013,32 +3124,32 @@
 "@target": "node1006186"
 }, 
 "edge1006189": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "node1006185", 
 "@target": "node1006189"
 }, 
 "edge1006190": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "node1006185", 
 "@target": "node1006190"
 }, 
 "edge1006191": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "node1006185", 
 "@target": "node1006191"
 }, 
 "edge1006194": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "node1006185", 
 "@target": "node1006194"
 }, 
 "edge1006195": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "node1006185", 
 "@target": "node1006195"
 }, 
 "edge1006198": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "node1006185", 
 "@target": "node1006198"
 }, 
@@ -3048,17 +3159,17 @@
 "@target": "node1006199"
 }, 
 "edge1006210": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "node1006185", 
 "@target": "node1006210"
 }, 
 "edge1006211": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "node1006185", 
 "@target": "node1006211"
 }, 
 "edge1006214": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "node1006185", 
 "@target": "node1006214"
 }, 
@@ -3068,58 +3179,58 @@
 "@target": "node1006217"
 }, 
 "edge1006220": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "node1006185", 
 "@target": "node1006220"
 }, 
 "edge1006223": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "node1006185", 
 "@target": "node1006223"
 }, 
 "edge1006224": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "node1006185", 
 "@target": "node1006224"
 }, 
 "edge1006227": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "node1006185", 
 "@target": "node1006227"
 }
 }, 
 "node1006186": {
 "edge1006187": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "node1006186", 
 "@target": "node1006187"
 }, 
 "edge1006188": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "node1006186", 
 "@target": "node1006188"
 }
 }, 
 "node1006191": {
 "edge1006192": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "node1006191", 
 "@target": "node1006192"
 }, 
 "edge1006193": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "node1006191", 
 "@target": "node1006193"
 }
 }, 
 "node1006195": {
 "edge1006196": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "node1006195", 
 "@target": "node1006196"
 }, 
 "edge1006197": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "node1006195", 
 "@target": "node1006197"
 }
@@ -3131,7 +3242,7 @@
 "@target": "node1006200"
 }, 
 "edge1006209": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "node1006199", 
 "@target": "node1006209"
 }
@@ -3143,19 +3254,19 @@
 "@target": "node1006201"
 }, 
 "edge1006208": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "node1006200", 
 "@target": "node1006208"
 }
 }, 
 "node1006201": {
 "edge1006202": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "node1006201", 
 "@target": "node1006202"
 }, 
 "edge1006207": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "node1006201", 
 "@target": "node1006207"
 }
@@ -3174,108 +3285,108 @@
 }, 
 "node1006203": {
 "edge1006204": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "node1006203", 
 "@target": "node1006204"
 }, 
 "edge1006205": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "node1006203", 
 "@target": "node1006205"
 }
 }, 
 "node1006211": {
 "edge1006212": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "node1006211", 
 "@target": "node1006212"
 }, 
 "edge1006213": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "node1006211", 
 "@target": "node1006213"
 }
 }, 
 "node1006214": {
 "edge1006215": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "node1006214", 
 "@target": "node1006215"
 }, 
 "edge1006216": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "node1006214", 
 "@target": "node1006216"
 }
 }, 
 "node1006217": {
 "edge1006218": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "node1006217", 
 "@target": "node1006218"
 }, 
 "edge1006219": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "node1006217", 
 "@target": "node1006219"
 }
 }, 
 "node1006220": {
 "edge1006221": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "node1006220", 
 "@target": "node1006221"
 }, 
 "edge1006222": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "node1006220", 
 "@target": "node1006222"
 }
 }, 
 "node1006224": {
 "edge1006225": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "node1006224", 
 "@target": "node1006225"
 }, 
 "edge1006226": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "node1006224", 
 "@target": "node1006226"
 }
 }, 
 "node1006227": {
 "edge1006228": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "node1006227", 
 "@target": "node1006228"
 }, 
 "edge1006231": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "node1006227", 
 "@target": "node1006231"
 }
 }, 
 "node1006228": {
 "edge1006229": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "node1006228", 
 "@target": "node1006229"
 }, 
 "edge1006230": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "node1006228", 
 "@target": "node1006230"
 }
 }, 
 "node1006232": {
 "edge1006233": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "node1006232", 
 "@target": "node1006233"
 }, 
 "edge1006234": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "node1006232", 
 "@target": "node1006234"
 }
@@ -3287,17 +3398,17 @@
 "@target": "node1006236"
 }, 
 "edge1006243": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "node1006235", 
 "@target": "node1006243"
 }, 
 "edge1006248": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "node1006235", 
 "@target": "node1006248"
 }, 
 "edge1006249": {
-"@length": 97.0, 
+"@length": 97, 
 "@source": "node1006235", 
 "@target": "node1006249"
 }, 
@@ -3307,44 +3418,44 @@
 "@target": "node1006254"
 }, 
 "edge1006267": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "node1006235", 
 "@target": "node1006267"
 }, 
 "edge1006270": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "node1006235", 
 "@target": "node1006270"
 }, 
 "edge1006271": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "node1006235", 
 "@target": "node1006271"
 }, 
 "edge1006274": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "node1006235", 
 "@target": "node1006274"
 }, 
 "edge1006277": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "node1006235", 
 "@target": "node1006277"
 }, 
 "edge1006280": {
-"@length": 75.0, 
+"@length": 75, 
 "@source": "node1006235", 
 "@target": "node1006280"
 }, 
 "edge1006283": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "node1006235", 
 "@target": "node1006283"
 }
 }, 
 "node1006236": {
 "edge1006237": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "node1006236", 
 "@target": "node1006237"
 }, 
@@ -3356,24 +3467,24 @@
 }, 
 "node1006238": {
 "edge1006239": {
-"@length": 97.0, 
+"@length": 97, 
 "@source": "node1006238", 
 "@target": "node1006239"
 }, 
 "edge1006242": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "node1006238", 
 "@target": "node1006242"
 }
 }, 
 "node1006239": {
 "edge1006240": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "node1006239", 
 "@target": "node1006240"
 }, 
 "edge1006241": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "node1006239", 
 "@target": "node1006241"
 }
@@ -3385,19 +3496,19 @@
 "@target": "node1006244"
 }, 
 "edge1006247": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "node1006243", 
 "@target": "node1006247"
 }
 }, 
 "node1006244": {
 "edge1006245": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "node1006244", 
 "@target": "node1006245"
 }, 
 "edge1006246": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "node1006244", 
 "@target": "node1006246"
 }
@@ -3409,26 +3520,26 @@
 "@target": "node1006250"
 }, 
 "edge1006253": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "node1006249", 
 "@target": "node1006253"
 }
 }, 
 "node1006250": {
 "edge1006251": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "node1006250", 
 "@target": "node1006251"
 }, 
 "edge1006252": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "node1006250", 
 "@target": "node1006252"
 }
 }, 
 "node1006254": {
 "edge1006255": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "node1006254", 
 "@target": "node1006255"
 }, 
@@ -3440,12 +3551,12 @@
 }, 
 "node1006255": {
 "edge1006256": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "node1006255", 
 "@target": "node1006256"
 }, 
 "edge1006257": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "node1006255", 
 "@target": "node1006257"
 }
@@ -3457,14 +3568,14 @@
 "@target": "node1006259"
 }, 
 "edge1006266": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "node1006258", 
 "@target": "node1006266"
 }
 }, 
 "node1006259": {
 "edge1006260": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "node1006259", 
 "@target": "node1006260"
 }, 
@@ -3476,84 +3587,84 @@
 }, 
 "node1006260": {
 "edge1006261": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "node1006260", 
 "@target": "node1006261"
 }, 
 "edge1006262": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "node1006260", 
 "@target": "node1006262"
 }
 }, 
 "node1006263": {
 "edge1006264": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "node1006263", 
 "@target": "node1006264"
 }, 
 "edge1006265": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "node1006263", 
 "@target": "node1006265"
 }
 }, 
 "node1006267": {
 "edge1006268": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "node1006267", 
 "@target": "node1006268"
 }, 
 "edge1006269": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "node1006267", 
 "@target": "node1006269"
 }
 }, 
 "node1006271": {
 "edge1006272": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "node1006271", 
 "@target": "node1006272"
 }, 
 "edge1006273": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "node1006271", 
 "@target": "node1006273"
 }
 }, 
 "node1006274": {
 "edge1006275": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "node1006274", 
 "@target": "node1006275"
 }, 
 "edge1006276": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "node1006274", 
 "@target": "node1006276"
 }
 }, 
 "node1006277": {
 "edge1006278": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "node1006277", 
 "@target": "node1006278"
 }, 
 "edge1006279": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "node1006277", 
 "@target": "node1006279"
 }
 }, 
 "node1006280": {
 "edge1006281": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "node1006280", 
 "@target": "node1006281"
 }, 
 "edge1006282": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "node1006280", 
 "@target": "node1006282"
 }

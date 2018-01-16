@@ -15,16 +15,13 @@
 "^ot:agents": {
 "agent": [
 {
-"@description": "validator of NexSON constraints as well as constraints that would allow a study to be imported into the Open Tree of Life's phylogenetic synthesis tools", 
+"@description": "Open Tree NexSON validation", 
 "@id": "peyotl-validator", 
-"@name": "validate_ot_nexson.py", 
+"@name": "api.opentreeoflife.org/validate", 
 "@url": "https://github.com/OpenTreeOfLife/peyotl", 
 "@version": "0.0.4a", 
 "invocation": {
-"commandLine": [
-"--embed", 
-"--agent-only"
-], 
+"commandLine": [], 
 "otherProperty": [
 {
 "name": "pythonVersion", 
@@ -36,14 +33,94 @@
 }
 ]
 }
+}, 
+{
+"@description": "Web-based interface for submitting, editing, and reviewing studies in the Open Tree of Life project.", 
+"@id": "opentree-curation-webapp", 
+"@name": "OpenTree curation webapp", 
+"@url": "https://github.com/OpenTreeOfLife/opentree", 
+"@version": "0.0.0"
 }
 ]
 }, 
 "^ot:annotationEvents": {
-"annotation": []
+"annotation": [
+{
+"@dateCreated": "2014-06-24T20:50:57.374Z", 
+"@description": "Aids for mapping study OTUs to OTT taxa", 
+"@id": "otu-mapping-hints", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "OTU_MAPPING_HINTS", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"searchContext": {
+"$": "All life"
 }, 
-"^ot:candidateTreeForSynthesis": [], 
-"^ot:curatorName": "bryan drew", 
+"substitutions": {
+"substitution": [
+{
+"@active": false, 
+"@valid": true, 
+"new": {
+"$": ""
+}, 
+"old": {
+"$": ""
+}
+}
+]
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}, 
+{
+"@dateCreated": "2014-06-24T20:50:57.374Z", 
+"@description": "Describes supporting data files for this study", 
+"@id": "supporting-files-metadata", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "SUPPORTING_FILE_INFO", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"@movedToPermanentArchive": false, 
+"files": {
+"file": []
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}
+]
+}, 
+"^ot:candidateTreeForSynthesis": [
+"tree2114", 
+"tree2115"
+], 
+"^ot:comment": "", 
+"^ot:curatorName": [
+"bryan drew", 
+"Stephen Smith"
+], 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S2146"
 }, 
@@ -52,6 +129,7 @@
 "^ot:messages": {
 "message": []
 }, 
+"^ot:notIntendedForSynthesis": false, 
 "^ot:otusElementOrder": [
 "otus1087"
 ], 
@@ -159,7 +237,9 @@
 "^ot:ottTaxonName": "Vigna radiata"
 }, 
 "otu221028": {
-"^ot:originalLabel": "Phaseolus trilobatus 126"
+"^ot:originalLabel": "Phaseolus trilobatus 126", 
+"^ot:ottId": 178670, 
+"^ot:ottTaxonName": "Vigna trilobata"
 }, 
 "otu221029": {
 "^ot:originalLabel": "Vigna unguiculata 27", 
@@ -242,9 +322,7 @@
 "^ot:ottTaxonName": "Cajanus cajan"
 }, 
 "otu221045": {
-"^ot:originalLabel": "Atylosia lineata 80", 
-"^ot:ottId": 4437030, 
-"^ot:ottTaxonName": "Atomosia lineata"
+"^ot:originalLabel": "Atylosia lineata 80"
 }, 
 "otu221046": {
 "^ot:originalLabel": "Bolusafra bituminosa 120", 
@@ -653,16 +731,17 @@
 ], 
 "treeById": {
 "tree2114": {
+"@label": "Untitled (tree2114)", 
 "@xsi:type": "nex:FloatTree", 
 "^ot:branchLengthDescription": "", 
-"^ot:branchLengthMode": "", 
 "^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "MP Strict consensus tree", 
 "^ot:inGroupClade": "node524579", 
 "^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node524577", 
-"^ot:specifiedRoot": "", 
+"^ot:specifiedRoot": "node524577", 
 "^ot:tag": [], 
+"^ot:unrootedTree": false, 
 "edgeBySourceId": {
 "node524577": {
 "edge524578": {
@@ -1661,6 +1740,7 @@
 }
 }, 
 "tree2115": {
+"@label": "Untitled (tree2115)", 
 "@xsi:type": "nex:FloatTree", 
 "^ot:branchLengthDescription": "", 
 "^ot:branchLengthMode": "", 
@@ -1669,8 +1749,9 @@
 "^ot:inGroupClade": "node524727", 
 "^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node524719", 
-"^ot:specifiedRoot": "", 
+"^ot:specifiedRoot": "node524719", 
 "^ot:tag": [], 
+"^ot:unrootedTree": false, 
 "edgeBySourceId": {
 "node524719": {
 "edge524720": {

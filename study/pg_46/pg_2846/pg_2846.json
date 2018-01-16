@@ -15,16 +15,13 @@
 "^ot:agents": {
 "agent": [
 {
-"@description": "validator of NexSON constraints as well as constraints that would allow a study to be imported into the Open Tree of Life's phylogenetic synthesis tools", 
+"@description": "Open Tree NexSON validation", 
 "@id": "peyotl-validator", 
-"@name": "validate_ot_nexson.py", 
+"@name": "api.opentreeoflife.org/validate", 
 "@url": "https://github.com/OpenTreeOfLife/peyotl", 
 "@version": "0.0.4a", 
 "invocation": {
-"commandLine": [
-"--embed", 
-"--agent-only"
-], 
+"commandLine": [], 
 "otherProperty": [
 {
 "name": "pythonVersion", 
@@ -36,14 +33,112 @@
 }
 ]
 }
+}, 
+{
+"@description": "Web-based interface for submitting, editing, and reviewing studies in the Open Tree of Life project.", 
+"@id": "opentree-curation-webapp", 
+"@name": "OpenTree curation webapp", 
+"@url": "https://github.com/OpenTreeOfLife/opentree", 
+"@version": "0.0.0"
 }
 ]
 }, 
 "^ot:annotationEvents": {
-"annotation": []
+"annotation": [
+{
+"@dateCreated": "2014-07-27T18:40:54.632Z", 
+"@description": "Aids for mapping study OTUs to OTT taxa", 
+"@id": "otu-mapping-hints", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "OTU_MAPPING_HINTS", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"searchContext": {
+"$": "All life"
 }, 
-"^ot:candidateTreeForSynthesis": [], 
-"^ot:curatorName": "Dail Laughinghouse", 
+"substitutions": {
+"substitution": [
+{
+"@active": true, 
+"@valid": true, 
+"new": {
+"$": ""
+}, 
+"old": {
+"$": "OTU"
+}
+}, 
+{
+"@active": true, 
+"@valid": true, 
+"new": {
+"$": ""
+}, 
+"old": {
+"$": "\\b\\s+(\\w*)$"
+}
+}, 
+{
+"@active": true, 
+"@valid": true, 
+"new": {
+"$": ""
+}, 
+"old": {
+"$": "\\bsp.*$"
+}
+}
+]
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}, 
+{
+"@dateCreated": "2014-07-27T18:40:54.632Z", 
+"@description": "Describes supporting data files for this study", 
+"@id": "supporting-files-metadata", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "SUPPORTING_FILE_INFO", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"@movedToPermanentArchive": false, 
+"files": {
+"file": []
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}
+]
+}, 
+"^ot:candidateTreeForSynthesis": [
+"tree6608"
+], 
+"^ot:comment": "", 
+"^ot:curatorName": [
+"Dail Laughinghouse"
+], 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S15139"
 }, 
@@ -52,6 +147,7 @@
 "^ot:messages": {
 "message": []
 }, 
+"^ot:notIntendedForSynthesis": false, 
 "^ot:otusElementOrder": [
 "otus2846"
 ], 
@@ -59,7 +155,7 @@
 "^ot:studyPublication": {
 "@href": "http://dx.doi.org/10.1186/1471-2180-14-43"
 }, 
-"^ot:studyPublicationReference": "Becker, A.A., Hesta M., Hollants J., Janssens G.P., & Huys G. 2014. Phylogenetic analysis of faecal microbiota from captive cheetahs reveals underrepresentation of Bacteroidetes and Bifidobacteriaceae. BMC Microbiology, 14(43).", 
+"^ot:studyPublicationReference": "Anne AMJ Becker, Myriam Hesta, Joke Hollants, Geert PJ Janssens, Geert Huys, 2014, 'Phylogenetic analysis of faecal microbiota from captive cheetahs reveals underrepresentation of Bacteroidetes and Bifidobacteriaceae', BMC Microbiology, vol. 14, no. 1, p. 43", 
 "^ot:studyYear": 2014, 
 "^ot:tag": [], 
 "^ot:treesElementOrder": [
@@ -320,6 +416,8 @@
 }, 
 "otu423531": {
 "^ot:originalLabel": "Fusobacteria sp. OTU 45", 
+"^ot:ottId": 984929, 
+"^ot:ottTaxonName": "Fusobacteria", 
 "^ot:treebaseOTUId": "Tl1411757"
 }, 
 "otu423532": {
@@ -332,6 +430,8 @@
 }, 
 "otu423534": {
 "^ot:originalLabel": "Streptococcaceae sp. OTU 27", 
+"^ot:ottId": 175916, 
+"^ot:ottTaxonName": "Streptococcaceae", 
 "^ot:treebaseOTUId": "Tl1411760"
 }, 
 "otu423535": {
@@ -364,6 +464,8 @@
 }, 
 "otu423542": {
 "^ot:originalLabel": "Lactobacillaceae sp. OTU 16", 
+"^ot:ottId": 445856, 
+"^ot:ottTaxonName": "Lactobacillaceae", 
 "^ot:treebaseOTUId": "Tl1411768"
 }, 
 "otu423543": {
@@ -444,18 +546,26 @@
 }, 
 "otu423562": {
 "^ot:originalLabel": "Enterococcaceae sp. OTU 24", 
+"^ot:ottId": 910233, 
+"^ot:ottTaxonName": "Enterococcaceae", 
 "^ot:treebaseOTUId": "Tl1411788"
 }, 
 "otu423563": {
 "^ot:originalLabel": "Lactobacillaceae sp. OTU 26", 
+"^ot:ottId": 445856, 
+"^ot:ottTaxonName": "Lactobacillaceae", 
 "^ot:treebaseOTUId": "Tl1411789"
 }, 
 "otu423564": {
 "^ot:originalLabel": "Erysipelotrichales sp. OTU 41", 
+"^ot:ottId": 5341755, 
+"^ot:ottTaxonName": "Erysipelotrichaceae (family ncbi:128827 in class Erysipelotrichia)", 
 "^ot:treebaseOTUId": "Tl1411790"
 }, 
 "otu423565": {
 "^ot:originalLabel": "Lactobacillaceae sp. OTU 42", 
+"^ot:ottId": 445856, 
+"^ot:ottTaxonName": "Lactobacillaceae", 
 "^ot:treebaseOTUId": "Tl1411791"
 }, 
 "otu423566": {
@@ -476,6 +586,8 @@
 }, 
 "otu423570": {
 "^ot:originalLabel": "Enterococcaceae sp. OTU 25", 
+"^ot:ottId": 910233, 
+"^ot:ottTaxonName": "Enterococcaceae", 
 "^ot:treebaseOTUId": "Tl1411796"
 }, 
 "otu423571": {
@@ -484,10 +596,14 @@
 }, 
 "otu423572": {
 "^ot:originalLabel": "Eubacteriaceae sp. OTU 04", 
+"^ot:ottId": 16703, 
+"^ot:ottTaxonName": "Eubacteriaceae", 
 "^ot:treebaseOTUId": "Tl1411798"
 }, 
 "otu423573": {
 "^ot:originalLabel": "Lactobacillaceae sp. OTU 15", 
+"^ot:ottId": 445856, 
+"^ot:ottTaxonName": "Lactobacillaceae", 
 "^ot:treebaseOTUId": "Tl1411799"
 }, 
 "otu423574": {
@@ -517,16 +633,18 @@
 ], 
 "treeById": {
 "tree6608": {
+"@label": "Untitled (tree6608)", 
 "@xsi:type": "nex:FloatTree", 
 "^ot:branchLengthDescription": "", 
-"^ot:branchLengthMode": "", 
+"^ot:branchLengthMode": "ot:substitutionCount", 
 "^ot:branchLengthTimeUnit": "", 
-"^ot:curatedType": "Fig. 2", 
+"^ot:curatedType": "Neighbor-joining ", 
 "^ot:inGroupClade": "node1153383", 
 "^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node1153379", 
-"^ot:specifiedRoot": "", 
+"^ot:specifiedRoot": "node1153379", 
 "^ot:tag": [], 
+"^ot:unrootedTree": false, 
 "edgeBySourceId": {
 "node1153379": {
 "edge1153380": {
@@ -1903,11 +2021,13 @@
 "@otu": "otu423507"
 }, 
 "node1153534": {
-"@otu": "otu423565"
+"@otu": "otu423565", 
+"^ot:isTaxonExemplar": true
 }, 
 "node1153535": {}, 
 "node1153536": {
-"@otu": "otu423563"
+"@otu": "otu423563", 
+"^ot:isTaxonExemplar": false
 }, 
 "node1153537": {
 "@otu": "otu423498"
@@ -1919,11 +2039,13 @@
 "@otu": "otu423517"
 }, 
 "node1153542": {
-"@otu": "otu423542"
+"@otu": "otu423542", 
+"^ot:isTaxonExemplar": false
 }, 
 "node1153543": {}, 
 "node1153544": {
-"@otu": "otu423573"
+"@otu": "otu423573", 
+"^ot:isTaxonExemplar": false
 }, 
 "node1153545": {
 "@otu": "otu423523"
@@ -1931,7 +2053,8 @@
 "node1153546": {}, 
 "node1153547": {}, 
 "node1153548": {
-"@otu": "otu423570"
+"@otu": "otu423570", 
+"^ot:isTaxonExemplar": true
 }, 
 "node1153549": {
 "@otu": "otu423513"
@@ -1942,7 +2065,8 @@
 "@otu": "otu423508"
 }, 
 "node1153553": {
-"@otu": "otu423562"
+"@otu": "otu423562", 
+"^ot:isTaxonExemplar": false
 }, 
 "node1153554": {}, 
 "node1153555": {

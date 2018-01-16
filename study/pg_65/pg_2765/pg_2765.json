@@ -36,14 +36,92 @@
 }
 ]
 }
+}, 
+{
+"@description": "Web-based interface for submitting, editing, and reviewing studies in the Open Tree of Life project.", 
+"@id": "opentree-curation-webapp", 
+"@name": "OpenTree curation webapp", 
+"@url": "https://github.com/OpenTreeOfLife/opentree", 
+"@version": "0.0.0"
 }
 ]
 }, 
 "^ot:annotationEvents": {
-"annotation": []
+"annotation": [
+{
+"@dateCreated": "2014-07-26T13:47:58.546Z", 
+"@description": "Aids for mapping study OTUs to OTT taxa", 
+"@id": "otu-mapping-hints", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "OTU_MAPPING_HINTS", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"searchContext": {
+"$": "All life"
 }, 
-"^ot:candidateTreeForSynthesis": [], 
-"^ot:curatorName": "Dail Laughinghouse", 
+"substitutions": {
+"substitution": [
+{
+"@active": false, 
+"@valid": true, 
+"new": {
+"$": ""
+}, 
+"old": {
+"$": ""
+}
+}
+]
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}, 
+{
+"@dateCreated": "2014-07-26T13:47:58.545Z", 
+"@description": "Describes supporting data files for this study", 
+"@id": "supporting-files-metadata", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "SUPPORTING_FILE_INFO", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"@movedToPermanentArchive": false, 
+"files": {
+"file": []
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}
+]
+}, 
+"^ot:candidateTreeForSynthesis": [
+"tree6399"
+], 
+"^ot:comment": "", 
+"^ot:curatorName": [
+"Dail Laughinghouse"
+], 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S855"
 }, 
@@ -52,11 +130,15 @@
 "^ot:messages": {
 "message": []
 }, 
+"^ot:notIntendedForSynthesis": false, 
 "^ot:otusElementOrder": [
 "otus2765"
 ], 
 "^ot:studyId": "pg_2765", 
-"^ot:studyPublicationReference": "Taylor D., Ishikane C., & Haney R. 2002. The systematics of Holarctic bosminids and a revision that reconciles molecular and morphological evolution. Limnology and Oceanography, 47(5): 1486-1495.", 
+"^ot:studyPublication": {
+"@href": "http://dx.doi.org/10.4319/lo.2002.47.5.1486"
+}, 
+"^ot:studyPublicationReference": "Derek J. Taylor, Christine R. Ishikane, Robert A. Haney, 2002, 'The systematics of Holarctic bosminids and a revision that reconciles molecular and morphological evolution', Limnology and Oceanography, vol. 47, no. 5, pp. 1486-1495", 
 "^ot:studyYear": 2002, 
 "^ot:tag": [], 
 "^ot:treesElementOrder": [
@@ -208,15 +290,18 @@
 ], 
 "treeById": {
 "tree6399": {
+"@label": "Untitled (tree6399)", 
 "@xsi:type": "nex:FloatTree", 
 "^ot:branchLengthDescription": "", 
 "^ot:branchLengthMode": "ot:substitutionCount", 
 "^ot:branchLengthTimeUnit": "", 
-"^ot:curatedType": "Fig. 4", 
+"^ot:curatedType": "Maximum likelihood ", 
+"^ot:inGroupClade": "node1113417", 
 "^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node1113417", 
-"^ot:specifiedRoot": "", 
+"^ot:specifiedRoot": "node1113417", 
 "^ot:tag": [], 
+"^ot:unrootedTree": false, 
 "edgeBySourceId": {
 "node1113417": {
 "edge1113418": {
@@ -408,31 +493,39 @@
 "node1113420": {}, 
 "node1113421": {}, 
 "node1113422": {
-"@otu": "otu411837"
+"@otu": "otu411837", 
+"^ot:isTaxonExemplar": true
 }, 
 "node1113423": {}, 
 "node1113424": {
-"@otu": "otu411838"
+"@otu": "otu411838", 
+"^ot:isTaxonExemplar": false
 }, 
 "node1113425": {
-"@otu": "otu411840"
+"@otu": "otu411840", 
+"^ot:isTaxonExemplar": false
 }, 
 "node1113426": {
-"@otu": "otu411841"
+"@otu": "otu411841", 
+"^ot:isTaxonExemplar": false
 }, 
 "node1113427": {}, 
 "node1113428": {}, 
 "node1113429": {
-"@otu": "otu411843"
+"@otu": "otu411843", 
+"^ot:isTaxonExemplar": true
 }, 
 "node1113430": {
-"@otu": "otu411845"
+"@otu": "otu411845", 
+"^ot:isTaxonExemplar": false
 }, 
 "node1113431": {
-"@otu": "otu411850"
+"@otu": "otu411850", 
+"^ot:isTaxonExemplar": false
 }, 
 "node1113432": {
-"@otu": "otu411852"
+"@otu": "otu411852", 
+"^ot:isTaxonExemplar": false
 }, 
 "node1113433": {}, 
 "node1113434": {
@@ -449,20 +542,25 @@
 "node1113439": {}, 
 "node1113440": {}, 
 "node1113441": {
-"@otu": "otu411842"
+"@otu": "otu411842", 
+"^ot:isTaxonExemplar": true
 }, 
 "node1113442": {
-"@otu": "otu411849"
+"@otu": "otu411849", 
+"^ot:isTaxonExemplar": false
 }, 
 "node1113443": {
-"@otu": "otu411846"
+"@otu": "otu411846", 
+"^ot:isTaxonExemplar": false
 }, 
 "node1113444": {}, 
 "node1113445": {
-"@otu": "otu411835"
+"@otu": "otu411835", 
+"^ot:isTaxonExemplar": true
 }, 
 "node1113446": {
-"@otu": "otu411839"
+"@otu": "otu411839", 
+"^ot:isTaxonExemplar": false
 }, 
 "node1113447": {
 "@otu": "otu411848"
@@ -470,13 +568,16 @@
 "node1113448": {}, 
 "node1113449": {}, 
 "node1113450": {
-"@otu": "otu411851"
+"@otu": "otu411851", 
+"^ot:isTaxonExemplar": true
 }, 
 "node1113451": {
-"@otu": "otu411854"
+"@otu": "otu411854", 
+"^ot:isTaxonExemplar": false
 }, 
 "node1113452": {
-"@otu": "otu411856"
+"@otu": "otu411856", 
+"^ot:isTaxonExemplar": false
 }, 
 "node1113453": {
 "@otu": "otu411844"

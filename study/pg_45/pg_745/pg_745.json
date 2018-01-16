@@ -36,20 +36,109 @@
 }
 ]
 }
+}, 
+{
+"@description": "Web-based interface for submitting, editing, and reviewing studies in the Open Tree of Life project.", 
+"@id": "opentree-curation-webapp", 
+"@name": "OpenTree curation webapp", 
+"@url": "https://github.com/OpenTreeOfLife/opentree", 
+"@version": "0.0.0"
 }
 ]
 }, 
 "^ot:annotationEvents": {
-"annotation": []
+"annotation": [
+{
+"@dateCreated": "2015-09-29T20:31:52.365Z", 
+"@description": "Aids for mapping study OTUs to OTT taxa", 
+"@id": "otu-mapping-hints", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "OTU_MAPPING_HINTS", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"searchContext": {
+"$": "All life"
 }, 
-"^ot:candidateTreeForSynthesis": [], 
-"^ot:curatorName": "Romina Gazis", 
+"substitutions": {
+"substitution": [
+{
+"@active": false, 
+"@valid": true, 
+"new": {
+"$": ""
+}, 
+"old": {
+"$": ""
+}
+}, 
+{
+"@active": true, 
+"@valid": true, 
+"new": {
+"$": "$1"
+}, 
+"old": {
+"$": "^(\\S*\\s+\\S*).*"
+}
+}
+]
+}, 
+"useFuzzyMatching": true
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}, 
+{
+"@dateCreated": "2015-09-29T20:31:52.365Z", 
+"@description": "Describes supporting data files for this study", 
+"@id": "supporting-files-metadata", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "SUPPORTING_FILE_INFO", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"@movedToPermanentArchive": false, 
+"files": {
+"file": []
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}
+]
+}, 
+"^ot:candidateTreeForSynthesis": [
+"tree1360"
+], 
+"^ot:comment": "", 
+"^ot:curatorName": [
+"Romina Gazis"
+], 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S862"
 }, 
-"^ot:messages": {
-"message": []
-}, 
+"^ot:focalClade": 939829, 
+"^ot:focalCladeOTTTaxonName": "Trichoderma harzianum (species in family Hypocreaceae)", 
+"^ot:notIntendedForSynthesis": false, 
 "^ot:otusElementOrder": [
 "otus745"
 ], 
@@ -59,19 +148,29 @@
 }, 
 "^ot:studyPublicationReference": "Chaverri P., Castlebury L., Samuels G., & Geiser D. 2003. Multilocus phylogenetic structure in the Trichoderma harzianum/Hypocrea lixii complex. Molecular Phylogenetics and Evolution, 27(2): 302-313.", 
 "^ot:studyYear": 2003, 
-"^ot:tag": [], 
+"^ot:tag": [
+"species complex"
+], 
 "^ot:treesElementOrder": [
 "trees745"
 ], 
+"^xhtml:license": {
+"@href": "http://creativecommons.org/publicdomain/zero/1.0/", 
+"@name": "CC0"
+}, 
 "otusById": {
 "otus745": {
 "otuById": {
 "otu191159": {
 "^ot:originalLabel": "Trichoderma aggressivum CBS100525", 
+"^ot:ottId": 151293, 
+"^ot:ottTaxonName": "Trichoderma aggressivum", 
 "^ot:treebaseOTUId": "Tl130697"
 }, 
 "otu191160": {
 "^ot:originalLabel": "Trichoderma aggressivum DAOM222156", 
+"^ot:ottId": 151293, 
+"^ot:ottTaxonName": "Trichoderma aggressivum", 
 "^ot:treebaseOTUId": "Tl130716"
 }, 
 "otu191161": {
@@ -288,16 +387,20 @@
 ], 
 "treeById": {
 "tree1355": {
+"@label": "Untitled (tree1355)", 
 "@xsi:type": "nex:FloatTree", 
 "^ot:branchLengthDescription": "", 
 "^ot:branchLengthMode": "", 
 "^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "MP, ITS1", 
 "^ot:inGroupClade": "node444133", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
 "^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node444129", 
 "^ot:specifiedRoot": "", 
 "^ot:tag": [], 
+"^ot:unrootedTree": true, 
 "edgeBySourceId": {
 "node444129": {
 "edge444130": {
@@ -729,16 +832,20 @@
 }
 }, 
 "tree1356": {
+"@label": "Untitled (tree1356)", 
 "@xsi:type": "nex:FloatTree", 
 "^ot:branchLengthDescription": "", 
 "^ot:branchLengthMode": "", 
 "^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "MP, ITS1+ITS2", 
 "^ot:inGroupClade": "node444194", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
 "^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node444190", 
 "^ot:specifiedRoot": "", 
 "^ot:tag": [], 
+"^ot:unrootedTree": true, 
 "edgeBySourceId": {
 "node444190": {
 "edge444191": {
@@ -1009,16 +1116,20 @@
 }
 }, 
 "tree1357": {
+"@label": "Untitled (tree1357)", 
 "@xsi:type": "nex:FloatTree", 
 "^ot:branchLengthDescription": "", 
 "^ot:branchLengthMode": "", 
 "^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "MP, actin", 
 "^ot:inGroupClade": "node444232", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
 "^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node444228", 
 "^ot:specifiedRoot": "", 
 "^ot:tag": [], 
+"^ot:unrootedTree": true, 
 "edgeBySourceId": {
 "node444228": {
 "edge444229": {
@@ -1401,16 +1512,20 @@
 }
 }, 
 "tree1358": {
+"@label": "Untitled (tree1358)", 
 "@xsi:type": "nex:FloatTree", 
 "^ot:branchLengthDescription": "", 
 "^ot:branchLengthMode": "", 
 "^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "MP, calmodulin", 
 "^ot:inGroupClade": "node444286", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
 "^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node444282", 
 "^ot:specifiedRoot": "", 
 "^ot:tag": [], 
+"^ot:unrootedTree": true, 
 "edgeBySourceId": {
 "node444282": {
 "edge444283": {
@@ -1842,16 +1957,20 @@
 }
 }, 
 "tree1359": {
+"@label": "Untitled (tree1359)", 
 "@xsi:type": "nex:FloatTree", 
 "^ot:branchLengthDescription": "", 
 "^ot:branchLengthMode": "", 
 "^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "MP, EF-1", 
 "^ot:inGroupClade": "node444347", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
 "^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node444343", 
 "^ot:specifiedRoot": "", 
 "^ot:tag": [], 
+"^ot:unrootedTree": true, 
 "edgeBySourceId": {
 "node444343": {
 "edge444344": {
@@ -2318,35 +2437,37 @@
 }
 }, 
 "tree1360": {
+"@label": "MP, ITS + EF-1 + actin + calmodulin", 
 "@xsi:type": "nex:FloatTree", 
 "^ot:branchLengthDescription": "", 
-"^ot:branchLengthMode": "", 
-"^ot:branchLengthTimeUnit": "", 
+"^ot:branchLengthMode": "ot:undefined", 
+"^ot:branchLengthTimeUnit": "Myr", 
 "^ot:curatedType": "MP, ITS + EF-1 + actin + calmodulin", 
 "^ot:inGroupClade": "node444413", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
 "^ot:outGroupEdge": "", 
-"^ot:rootNodeId": "node444409", 
-"^ot:specifiedRoot": "", 
-"^ot:tag": [], 
+"^ot:rootNodeId": "tree1360_ROOT", 
+"^ot:specifiedRoot": "tree1360_ROOT", 
+"^ot:tag": [
+"ITS + EF-1 + actin + calmodulin"
+], 
+"^ot:unrootedTree": true, 
 "edgeBySourceId": {
 "node444409": {
 "edge444410": {
 "@source": "node444409", 
 "@target": "node444410"
-}, 
-"edge444411": {
-"@source": "node444409", 
-"@target": "node444411"
 }
 }, 
 "node444411": {
+"edge444411": {
+"@source": "node444411", 
+"@target": "node444409"
+}, 
 "edge444412": {
 "@source": "node444411", 
 "@target": "node444412"
-}, 
-"edge444413": {
-"@source": "node444411", 
-"@target": "node444413"
 }
 }, 
 "node444413": {
@@ -2650,37 +2771,52 @@
 "@source": "node444471", 
 "@target": "node444473"
 }
+}, 
+"tree1360_ROOT": {
+"edge444413": {
+"@source": "tree1360_ROOT", 
+"@target": "node444413"
+}, 
+"tree1360_ROOT_EDGE": {
+"@source": "tree1360_ROOT", 
+"@target": "node444411"
+}
 }
 }, 
 "nodeById": {
-"node444409": {
-"@root": true
-}, 
+"node444409": {}, 
 "node444410": {
-"@otu": "otu191159"
+"@otu": "otu191159", 
+"^ot:isTaxonExemplar": false
 }, 
 "node444411": {}, 
 "node444412": {
-"@otu": "otu191160"
+"@otu": "otu191160", 
+"^ot:isTaxonExemplar": true
 }, 
 "node444413": {}, 
 "node444414": {}, 
 "node444415": {}, 
 "node444416": {}, 
 "node444417": {
-"@otu": "otu191191"
+"@otu": "otu191191", 
+"^ot:isTaxonExemplar": false
 }, 
 "node444418": {
-"@otu": "otu191193"
+"@otu": "otu191193", 
+"^ot:isTaxonExemplar": false
 }, 
 "node444419": {
-"@otu": "otu191167"
+"@otu": "otu191167", 
+"^ot:isTaxonExemplar": false
 }, 
 "node444420": {
-"@otu": "otu191172"
+"@otu": "otu191172", 
+"^ot:isTaxonExemplar": false
 }, 
 "node444421": {
-"@otu": "otu191162"
+"@otu": "otu191162", 
+"^ot:isTaxonExemplar": true
 }, 
 "node444422": {}, 
 "node444423": {}, 
@@ -2689,46 +2825,58 @@
 "node444426": {}, 
 "node444427": {}, 
 "node444428": {
-"@otu": "otu191161"
+"@otu": "otu191161", 
+"^ot:isTaxonExemplar": false
 }, 
 "node444429": {
-"@otu": "otu191166"
+"@otu": "otu191166", 
+"^ot:isTaxonExemplar": false
 }, 
 "node444430": {
-"@otu": "otu191175"
+"@otu": "otu191175", 
+"^ot:isTaxonExemplar": false
 }, 
 "node444431": {}, 
 "node444432": {}, 
 "node444433": {}, 
 "node444434": {
-"@otu": "otu191189"
+"@otu": "otu191189", 
+"^ot:isTaxonExemplar": false
 }, 
 "node444435": {
-"@otu": "otu191169"
+"@otu": "otu191169", 
+"^ot:isTaxonExemplar": false
 }, 
 "node444436": {
-"@otu": "otu191188"
+"@otu": "otu191188", 
+"^ot:isTaxonExemplar": false
 }, 
 "node444437": {
-"@otu": "otu191179"
+"@otu": "otu191179", 
+"^ot:isTaxonExemplar": false
 }, 
 "node444438": {
-"@otu": "otu191165"
+"@otu": "otu191165", 
+"^ot:isTaxonExemplar": false
 }, 
 "node444439": {}, 
 "node444440": {}, 
 "node444441": {
-"@otu": "otu191192"
+"@otu": "otu191192", 
+"^ot:isTaxonExemplar": false
 }, 
 "node444442": {
-"@otu": "otu191174"
+"@otu": "otu191174", 
+"^ot:isTaxonExemplar": false
 }, 
 "node444443": {}, 
 "node444444": {
-"@otu": "otu191171"
+"@otu": "otu191171", 
+"^ot:isTaxonExemplar": false
 }, 
 "node444445": {
-"@otu": "otu191164"
+"@otu": "otu191164", 
+"^ot:isTaxonExemplar": false
 }, 
 "node444446": {}, 
 "node444447": {}, 
@@ -2737,59 +2885,78 @@
 "node444450": {}, 
 "node444451": {}, 
 "node444452": {
-"@otu": "otu191183"
+"@otu": "otu191183", 
+"^ot:isTaxonExemplar": false
 }, 
 "node444453": {}, 
 "node444454": {
-"@otu": "otu191190"
+"@otu": "otu191190", 
+"^ot:isTaxonExemplar": false
 }, 
 "node444455": {
-"@otu": "otu191182"
+"@otu": "otu191182", 
+"^ot:isTaxonExemplar": false
 }, 
 "node444456": {
-"@otu": "otu191186"
+"@otu": "otu191186", 
+"^ot:isTaxonExemplar": false
 }, 
 "node444457": {}, 
 "node444458": {
-"@otu": "otu191170"
+"@otu": "otu191170", 
+"^ot:isTaxonExemplar": false
 }, 
 "node444459": {
-"@otu": "otu191176"
+"@otu": "otu191176", 
+"^ot:isTaxonExemplar": false
 }, 
 "node444460": {
-"@otu": "otu191163"
+"@otu": "otu191163", 
+"^ot:isTaxonExemplar": false
 }, 
 "node444461": {}, 
 "node444462": {}, 
 "node444463": {
-"@otu": "otu191177"
+"@otu": "otu191177", 
+"^ot:isTaxonExemplar": false
 }, 
 "node444464": {
-"@otu": "otu191184"
+"@otu": "otu191184", 
+"^ot:isTaxonExemplar": false
 }, 
 "node444465": {}, 
 "node444466": {
-"@otu": "otu191187"
+"@otu": "otu191187", 
+"^ot:isTaxonExemplar": false
 }, 
 "node444467": {
-"@otu": "otu191181"
+"@otu": "otu191181", 
+"^ot:isTaxonExemplar": false
 }, 
 "node444468": {
-"@otu": "otu191168"
+"@otu": "otu191168", 
+"^ot:isTaxonExemplar": false
 }, 
 "node444469": {
-"@otu": "otu191178"
+"@otu": "otu191178", 
+"^ot:isTaxonExemplar": false
 }, 
 "node444470": {}, 
 "node444471": {}, 
 "node444472": {
-"@otu": "otu191185"
+"@otu": "otu191185", 
+"^ot:isTaxonExemplar": false
 }, 
 "node444473": {
-"@otu": "otu191173"
+"@otu": "otu191173", 
+"^ot:isTaxonExemplar": false
 }, 
 "node444474": {
-"@otu": "otu191180"
+"@otu": "otu191180", 
+"^ot:isTaxonExemplar": false
+}, 
+"tree1360_ROOT": {
+"@root": true
 }
 }
 }

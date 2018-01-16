@@ -36,32 +36,117 @@
 }
 ]
 }
+}, 
+{
+"@description": "Web-based interface for submitting, editing, and reviewing studies in the Open Tree of Life project.", 
+"@id": "opentree-curation-webapp", 
+"@name": "OpenTree curation webapp", 
+"@url": "https://github.com/OpenTreeOfLife/opentree", 
+"@version": "0.0.0"
 }
 ]
 }, 
 "^ot:annotationEvents": {
-"annotation": []
+"annotation": [
+{
+"@dateCreated": "2017-04-30T20:25:55.382Z", 
+"@description": "Aids for mapping study OTUs to OTT taxa", 
+"@id": "otu-mapping-hints", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "OTU_MAPPING_HINTS", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"searchContext": {
+"$": "Animals"
+}, 
+"substitutions": {
+"substitution": [
+{
+"@active": false, 
+"@valid": true, 
+"new": {
+"$": ""
+}, 
+"old": {
+"$": ""
+}
+}
+]
+}, 
+"useFuzzyMatching": false
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}, 
+{
+"@dateCreated": "2017-04-30T20:25:55.382Z", 
+"@description": "Describes supporting data files for this study", 
+"@id": "supporting-files-metadata", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "SUPPORTING_FILE_INFO", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"@movedToPermanentArchive": false, 
+"files": {
+"file": []
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}
+]
 }, 
 "^ot:candidateTreeForSynthesis": [], 
-"^ot:curatorName": "Chris Owen", 
+"^ot:comment": "", 
+"^ot:curatorName": [
+"Chris Owen", 
+"bobthacker"
+], 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S12795"
 }, 
 "^ot:focalClade": 1007163, 
 "^ot:focalCladeOTTTaxonName": "Rossellidae", 
-"^ot:messages": {
-"message": []
-}, 
 "^ot:otusElementOrder": [
 "otus2017"
 ], 
 "^ot:studyId": "pg_2017", 
+"^ot:studyPublication": {
+"@href": "http://dx.doi.org/10.11646/zootaxa.3383.1.1"
+}, 
 "^ot:studyPublicationReference": "Dohrmann, M., Goecke C., Reed J., & Janussen D. 2012. Integrative taxonomy justifies a new genus, Nodastrella gen. nov., for North Atlantic \"Rossella\" species (Porifera: Hexactinellida: Rossellidae). Zootaxa 3383: 1-13.", 
 "^ot:studyYear": 2012, 
-"^ot:tag": [], 
+"^ot:tag": [
+"porifera", 
+"sponge"
+], 
 "^ot:treesElementOrder": [
 "trees2017"
 ], 
+"^xhtml:license": {
+"@href": "http://creativecommons.org/publicdomain/zero/1.0/", 
+"@name": "CC0"
+}, 
 "otusById": {
 "otus2017": {
 "otuById": {
@@ -190,16 +275,20 @@
 ], 
 "treeById": {
 "tree4156": {
+"@label": "ML Rossellidae (tree4156)", 
 "@xsi:type": "nex:FloatTree", 
 "^ot:branchLengthDescription": "", 
 "^ot:branchLengthMode": "ot:substitutionCount", 
-"^ot:branchLengthTimeUnit": "", 
-"^ot:curatedType": "tree 1 ML", 
+"^ot:curatedType": "Maximum likelihood ", 
 "^ot:inGroupClade": "node772414", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
 "^ot:outGroupEdge": "", 
+"^ot:reasonsToExcludeFromSynthesis": [], 
 "^ot:rootNodeId": "node772413", 
-"^ot:specifiedRoot": "", 
+"^ot:specifiedRoot": "node772413", 
 "^ot:tag": [], 
+"^ot:unrootedTree": false, 
 "edgeBySourceId": {
 "node772413": {
 "edge772414": {

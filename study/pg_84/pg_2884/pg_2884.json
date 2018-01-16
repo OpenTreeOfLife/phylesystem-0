@@ -15,16 +15,13 @@
 "^ot:agents": {
 "agent": [
 {
-"@description": "validator of NexSON constraints as well as constraints that would allow a study to be imported into the Open Tree of Life's phylogenetic synthesis tools", 
+"@description": "Open Tree NexSON validation", 
 "@id": "peyotl-validator", 
-"@name": "validate_ot_nexson.py", 
+"@name": "api.opentreeoflife.org/validate", 
 "@url": "https://github.com/OpenTreeOfLife/peyotl", 
 "@version": "0.0.4a", 
 "invocation": {
-"commandLine": [
-"--embed", 
-"--agent-only"
-], 
+"commandLine": [], 
 "otherProperty": [
 {
 "name": "pythonVersion", 
@@ -36,14 +33,112 @@
 }
 ]
 }
+}, 
+{
+"@description": "Web-based interface for submitting, editing, and reviewing studies in the Open Tree of Life project.", 
+"@id": "opentree-curation-webapp", 
+"@name": "OpenTree curation webapp", 
+"@url": "https://github.com/OpenTreeOfLife/opentree", 
+"@version": "0.0.0"
 }
 ]
 }, 
 "^ot:annotationEvents": {
-"annotation": []
+"annotation": [
+{
+"@dateCreated": "2014-07-25T02:22:50.283Z", 
+"@description": "Aids for mapping study OTUs to OTT taxa", 
+"@id": "otu-mapping-hints", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "OTU_MAPPING_HINTS", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"searchContext": {
+"$": "All life"
 }, 
-"^ot:candidateTreeForSynthesis": [], 
-"^ot:curatorName": "Dail Laughinghouse", 
+"substitutions": {
+"substitution": [
+{
+"@active": false, 
+"@valid": true, 
+"new": {
+"$": ""
+}, 
+"old": {
+"$": ""
+}
+}, 
+{
+"@active": false, 
+"@valid": true, 
+"new": {
+"$": ""
+}, 
+"old": {
+"$": "\\b\\s+(\\w*)$"
+}
+}, 
+{
+"@active": false, 
+"@valid": true, 
+"new": {
+"$": ""
+}, 
+"old": {
+"$": "\\b\\s+(\\w*)$"
+}
+}
+]
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}, 
+{
+"@dateCreated": "2014-07-25T02:22:50.283Z", 
+"@description": "Describes supporting data files for this study", 
+"@id": "supporting-files-metadata", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "SUPPORTING_FILE_INFO", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"@movedToPermanentArchive": false, 
+"files": {
+"file": []
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}
+]
+}, 
+"^ot:candidateTreeForSynthesis": [
+"tree6688"
+], 
+"^ot:comment": "", 
+"^ot:curatorName": [
+"Dail Laughinghouse"
+], 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S15632"
 }, 
@@ -52,11 +147,15 @@
 "^ot:messages": {
 "message": []
 }, 
+"^ot:notIntendedForSynthesis": false, 
 "^ot:otusElementOrder": [
 "otus2884"
 ], 
 "^ot:studyId": "pg_2884", 
-"^ot:studyPublicationReference": "Sassi M., & Drancourt M. 2014. Genome analysis reveals three genomospecies in Mycobacterium abscessus. BMC Genomics, .", 
+"^ot:studyPublication": {
+"@href": "http://dx.doi.org/10.1186/1471-2164-15-359"
+}, 
+"^ot:studyPublicationReference": "Mohamed Sassi, Michel Drancourt, 2014, 'Genome analysis reveals three genomospecies in Mycobacterium abscessus', BMC Genomics, vol. 15, no. 1, p. 359", 
 "^ot:studyYear": 2014, 
 "^ot:tag": [], 
 "^ot:treesElementOrder": [
@@ -100,6 +199,7 @@
 "^ot:treebaseOTUId": "Tl1453198"
 }, 
 "otu428353": {
+"^ot:altLabel": "Mycobacterium massiliense", 
 "^ot:originalLabel": "Mycobacterium massiliense T", 
 "^ot:treebaseOTUId": "Tl1453199"
 }, 
@@ -110,6 +210,7 @@
 "^ot:treebaseOTUId": "Tl1453200"
 }, 
 "otu428355": {
+"^ot:altLabel": "Mycobacterium bolletii", 
 "^ot:originalLabel": "Mycobacterium bolletii T", 
 "^ot:treebaseOTUId": "Tl1453201"
 }, 
@@ -152,15 +253,18 @@
 ], 
 "treeById": {
 "tree6688": {
+"@label": "Untitled (tree6688)", 
 "@xsi:type": "nex:FloatTree", 
 "^ot:branchLengthDescription": "", 
-"^ot:branchLengthMode": "", 
+"^ot:branchLengthMode": "ot:substitutionCount", 
 "^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "Fig. 1C", 
+"^ot:inGroupClade": "node1165415", 
 "^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node1165415", 
-"^ot:specifiedRoot": "", 
+"^ot:specifiedRoot": "node1165415", 
 "^ot:tag": [], 
+"^ot:unrootedTree": false, 
 "edgeBySourceId": {
 "node1165415": {
 "edge1165416": {

@@ -15,16 +15,13 @@
 "^ot:agents": {
 "agent": [
 {
-"@description": "validator of NexSON constraints as well as constraints that would allow a study to be imported into the Open Tree of Life's phylogenetic synthesis tools", 
+"@description": "Open Tree NexSON validation", 
 "@id": "peyotl-validator", 
-"@name": "validate_ot_nexson.py", 
+"@name": "api.opentreeoflife.org/validate", 
 "@url": "https://github.com/OpenTreeOfLife/peyotl", 
 "@version": "0.0.4a", 
 "invocation": {
-"commandLine": [
-"--embed", 
-"--agent-only"
-], 
+"commandLine": [], 
 "otherProperty": [
 {
 "name": "pythonVersion", 
@@ -36,14 +33,90 @@
 }
 ]
 }
+}, 
+{
+"@description": "Web-based interface for submitting, editing, and reviewing studies in the Open Tree of Life project.", 
+"@id": "opentree-curation-webapp", 
+"@name": "OpenTree curation webapp", 
+"@url": "https://github.com/OpenTreeOfLife/opentree", 
+"@version": "0.0.0"
 }
 ]
 }, 
 "^ot:annotationEvents": {
-"annotation": []
+"annotation": [
+{
+"@dateCreated": "2014-07-28T20:49:24.100Z", 
+"@description": "Aids for mapping study OTUs to OTT taxa", 
+"@id": "otu-mapping-hints", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "OTU_MAPPING_HINTS", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"searchContext": {
+"$": "All life"
+}, 
+"substitutions": {
+"substitution": [
+{
+"@active": false, 
+"@valid": true, 
+"new": {
+"$": ""
+}, 
+"old": {
+"$": ""
+}
+}
+]
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}, 
+{
+"@dateCreated": "2014-07-28T20:49:24.100Z", 
+"@description": "Describes supporting data files for this study", 
+"@id": "supporting-files-metadata", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "SUPPORTING_FILE_INFO", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"@movedToPermanentArchive": false, 
+"files": {
+"file": []
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}
+]
 }, 
 "^ot:candidateTreeForSynthesis": [], 
-"^ot:curatorName": "Dail Laughinghouse", 
+"^ot:comment": "", 
+"^ot:curatorName": [
+"Dail Laughinghouse"
+], 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S11009"
 }, 
@@ -52,6 +125,7 @@
 "^ot:messages": {
 "message": []
 }, 
+"^ot:notIntendedForSynthesis": true, 
 "^ot:otusElementOrder": [
 "otus2772"
 ], 
@@ -59,7 +133,7 @@
 "^ot:studyPublication": {
 "@href": "http://dx.doi.org/10.1186/1471-2148-11-125"
 }, 
-"^ot:studyPublicationReference": "Alverson, A., Beszteri B., Julius M.L., & Theriot E.C. 2011. The model marine diatom Thalassiosira pseudonana likely descended from a freshwater ancestor in the genus Cyclotella. BMC Evolutionary Biology 11:125.", 
+"^ot:studyPublicationReference": "Alverson, A.J., B. Beszteri, M.L. Julius, and E.C. Theriot. 2011. The model marine diatom Thalassiosira pseudonana likely descended from a freshwater ancestor in the genus Cyclotella. BMC Evolutionary Biology 11: 125.", 
 "^ot:studyYear": 2011, 
 "^ot:tag": [], 
 "^ot:treesElementOrder": [
@@ -70,14 +144,20 @@
 "otuById": {
 "otu412250": {
 "^ot:originalLabel": "Thalassiosira californica", 
+"^ot:ottId": 2811570, 
+"^ot:ottTaxonName": "Thalassiosira californica", 
 "^ot:treebaseOTUId": "Tl435866"
 }, 
 "otu412251": {
 "^ot:originalLabel": "Thalassiosira praeyabei", 
+"^ot:ottId": 2811572, 
+"^ot:ottTaxonName": "Thalassiosira praeyabei", 
 "^ot:treebaseOTUId": "Tl435867"
 }, 
 "otu412252": {
 "^ot:originalLabel": "Thalassiosira perispinosa", 
+"^ot:ottId": 2811633, 
+"^ot:ottTaxonName": "Thalassiosira perispinosa", 
 "^ot:treebaseOTUId": "Tl435868"
 }, 
 "otu412253": {
@@ -88,6 +168,8 @@
 }, 
 "otu412254": {
 "^ot:originalLabel": "Thalassiosira temperei", 
+"^ot:ottId": 2811608, 
+"^ot:ottTaxonName": "Thalassiosira temperei", 
 "^ot:treebaseOTUId": "Tl435870"
 }, 
 "otu412255": {
@@ -106,6 +188,8 @@
 }, 
 "otu412258": {
 "^ot:originalLabel": "Thalassiosira flexuosa", 
+"^ot:ottId": 2811533, 
+"^ot:ottTaxonName": "Thalassiosira flexuosa", 
 "^ot:treebaseOTUId": "Tl435874"
 }, 
 "otu412259": {
@@ -116,14 +200,20 @@
 }, 
 "otu412260": {
 "^ot:originalLabel": "Thalassiosira grunowii", 
+"^ot:ottId": 2811577, 
+"^ot:ottTaxonName": "Thalassiosira grunowii", 
 "^ot:treebaseOTUId": "Tl435876"
 }, 
 "otu412261": {
 "^ot:originalLabel": "Thalassiosira brunii", 
+"^ot:ottId": 2811552, 
+"^ot:ottTaxonName": "Thalassiosira brunii", 
 "^ot:treebaseOTUId": "Tl435877"
 }, 
 "otu412262": {
 "^ot:originalLabel": "Thalassiosira sp. A", 
+"^ot:ottId": 588926, 
+"^ot:ottTaxonName": "Thalassospira sp. A", 
 "^ot:treebaseOTUId": "Tl435878"
 }, 
 "otu412263": {
@@ -132,6 +222,8 @@
 }, 
 "otu412264": {
 "^ot:originalLabel": "Thalassiosira transitoria", 
+"^ot:ottId": 2811595, 
+"^ot:ottTaxonName": "Thalassiosira transitoria", 
 "^ot:treebaseOTUId": "Tl435880"
 }, 
 "otu412265": {
@@ -142,6 +234,8 @@
 }, 
 "otu412266": {
 "^ot:originalLabel": "Thalassiosira lacustris", 
+"^ot:ottId": 2811586, 
+"^ot:ottTaxonName": "Thalassiosira lacustris", 
 "^ot:treebaseOTUId": "Tl435882"
 }, 
 "otu412267": {
@@ -152,6 +246,8 @@
 }, 
 "otu412268": {
 "^ot:originalLabel": "Thalassiosira elliptipora", 
+"^ot:ottId": 2811602, 
+"^ot:ottTaxonName": "Thalassiosira elliptipora", 
 "^ot:treebaseOTUId": "Tl435884"
 }, 
 "otu412269": {
@@ -160,14 +256,20 @@
 }, 
 "otu412270": {
 "^ot:originalLabel": "Thalassiosira kanayae", 
+"^ot:ottId": 2811606, 
+"^ot:ottTaxonName": "Thalassiosira kanayae", 
 "^ot:treebaseOTUId": "Tl435886"
 }, 
 "otu412271": {
 "^ot:originalLabel": "Thalassiosira hyperborea", 
+"^ot:ottId": 2811599, 
+"^ot:ottTaxonName": "Thalassiosira hyperborea", 
 "^ot:treebaseOTUId": "Tl435887"
 }, 
 "otu412272": {
 "^ot:originalLabel": "Thalassiosira yabei", 
+"^ot:ottId": 2811560, 
+"^ot:ottTaxonName": "Thalassiosira yabei", 
 "^ot:treebaseOTUId": "Tl435888"
 }, 
 "otu412273": {
@@ -176,6 +278,8 @@
 }, 
 "otu412274": {
 "^ot:originalLabel": "Thalassiosira cedarkeyensis", 
+"^ot:ottId": 2811646, 
+"^ot:ottTaxonName": "Thalassiosira cedarkeyensis", 
 "^ot:treebaseOTUId": "Tl435890"
 }
 }
@@ -196,34 +300,33 @@
 ], 
 "treeById": {
 "tree6420": {
+"@label": "Untitled (tree6420)", 
 "@xsi:type": "nex:FloatTree", 
 "^ot:branchLengthDescription": "", 
 "^ot:branchLengthMode": "ot:substitutionCount", 
 "^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "PAUP 2", 
+"^ot:inGroupClade": "", 
 "^ot:outGroupEdge": "", 
-"^ot:rootNodeId": "node1115855", 
-"^ot:specifiedRoot": "", 
+"^ot:rootNodeId": "tree6420_ROOT", 
+"^ot:specifiedRoot": "tree6420_ROOT", 
 "^ot:tag": [], 
+"^ot:unrootedTree": true, 
 "edgeBySourceId": {
 "node1115855": {
 "edge1115856": {
 "@source": "node1115855", 
 "@target": "node1115856"
-}, 
-"edge1115857": {
-"@source": "node1115855", 
-"@target": "node1115857"
 }
 }, 
 "node1115857": {
+"edge1115857": {
+"@source": "node1115857", 
+"@target": "node1115855"
+}, 
 "edge1115858": {
 "@source": "node1115857", 
 "@target": "node1115858"
-}, 
-"edge1115896": {
-"@source": "node1115857", 
-"@target": "node1115896"
 }
 }, 
 "node1115858": {
@@ -411,9 +514,9 @@
 }
 }, 
 "node1115896": {
-"edge1115897": {
+"edge1115896": {
 "@source": "node1115896", 
-"@target": "node1115897"
+"@target": "node1115857"
 }, 
 "edge1115902": {
 "@source": "node1115896", 
@@ -421,9 +524,9 @@
 }
 }, 
 "node1115897": {
-"edge1115898": {
+"edge1115897": {
 "@source": "node1115897", 
-"@target": "node1115898"
+"@target": "node1115896"
 }, 
 "edge1115901": {
 "@source": "node1115897", 
@@ -431,20 +534,28 @@
 }
 }, 
 "node1115898": {
+"edge1115898": {
+"@source": "node1115898", 
+"@target": "node1115897"
+}, 
 "edge1115899": {
 "@source": "node1115898", 
 "@target": "node1115899"
+}
 }, 
+"tree6420_ROOT": {
 "edge1115900": {
-"@source": "node1115898", 
+"@source": "tree6420_ROOT", 
 "@target": "node1115900"
+}, 
+"tree6420_ROOT_EDGE": {
+"@source": "tree6420_ROOT", 
+"@target": "node1115898"
 }
 }
 }, 
 "nodeById": {
-"node1115855": {
-"@root": true
-}, 
+"node1115855": {}, 
 "node1115856": {
 "@otu": "otu412267"
 }, 
@@ -541,19 +652,25 @@
 }, 
 "node1115902": {
 "@otu": "otu412257"
+}, 
+"tree6420_ROOT": {
+"@root": true
 }
 }
 }, 
 "tree6421": {
+"@label": "Untitled (tree6421)", 
 "@xsi:type": "nex:FloatTree", 
 "^ot:branchLengthDescription": "", 
 "^ot:branchLengthMode": "ot:substitutionCount", 
 "^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "PAUP 1", 
+"^ot:inGroupClade": "", 
 "^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node1115903", 
 "^ot:specifiedRoot": "", 
 "^ot:tag": [], 
+"^ot:unrootedTree": true, 
 "edgeBySourceId": {
 "node1115903": {
 "edge1115904": {
@@ -887,15 +1004,18 @@
 }
 }, 
 "tree6422": {
+"@label": "Untitled (tree6422)", 
 "@xsi:type": "nex:FloatTree", 
 "^ot:branchLengthDescription": "", 
 "^ot:branchLengthMode": "ot:substitutionCount", 
 "^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "PAUP 8", 
+"^ot:inGroupClade": "", 
 "^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node1115950", 
 "^ot:specifiedRoot": "", 
 "^ot:tag": [], 
+"^ot:unrootedTree": true, 
 "edgeBySourceId": {
 "node1115950": {
 "edge1115951": {
@@ -1229,15 +1349,18 @@
 }
 }, 
 "tree6423": {
+"@label": "Untitled (tree6423)", 
 "@xsi:type": "nex:FloatTree", 
 "^ot:branchLengthDescription": "", 
 "^ot:branchLengthMode": "ot:substitutionCount", 
 "^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "PAUP 7", 
+"^ot:inGroupClade": "", 
 "^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node1115997", 
 "^ot:specifiedRoot": "", 
 "^ot:tag": [], 
+"^ot:unrootedTree": true, 
 "edgeBySourceId": {
 "node1115997": {
 "edge1115998": {
@@ -1564,15 +1687,18 @@
 }
 }, 
 "tree6424": {
+"@label": "Untitled (tree6424)", 
 "@xsi:type": "nex:FloatTree", 
 "^ot:branchLengthDescription": "", 
 "^ot:branchLengthMode": "ot:substitutionCount", 
 "^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "PAUP 5", 
+"^ot:inGroupClade": "", 
 "^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node1116043", 
 "^ot:specifiedRoot": "", 
 "^ot:tag": [], 
+"^ot:unrootedTree": true, 
 "edgeBySourceId": {
 "node1116043": {
 "edge1116044": {
@@ -1899,15 +2025,18 @@
 }
 }, 
 "tree6425": {
+"@label": "Untitled (tree6425)", 
 "@xsi:type": "nex:FloatTree", 
 "^ot:branchLengthDescription": "", 
 "^ot:branchLengthMode": "ot:substitutionCount", 
 "^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "PAUP 6", 
+"^ot:inGroupClade": "", 
 "^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node1116089", 
 "^ot:specifiedRoot": "", 
 "^ot:tag": [], 
+"^ot:unrootedTree": true, 
 "edgeBySourceId": {
 "node1116089": {
 "edge1116090": {
@@ -2241,15 +2370,18 @@
 }
 }, 
 "tree6426": {
+"@label": "Untitled (tree6426)", 
 "@xsi:type": "nex:FloatTree", 
 "^ot:branchLengthDescription": "", 
 "^ot:branchLengthMode": "ot:substitutionCount", 
 "^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "PAUP 3", 
+"^ot:inGroupClade": "", 
 "^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node1116136", 
 "^ot:specifiedRoot": "", 
 "^ot:tag": [], 
+"^ot:unrootedTree": true, 
 "edgeBySourceId": {
 "node1116136": {
 "edge1116137": {
@@ -2583,15 +2715,18 @@
 }
 }, 
 "tree6427": {
+"@label": "Untitled (tree6427)", 
 "@xsi:type": "nex:FloatTree", 
 "^ot:branchLengthDescription": "", 
 "^ot:branchLengthMode": "ot:substitutionCount", 
 "^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "PAUP 4", 
+"^ot:inGroupClade": "", 
 "^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node1116183", 
 "^ot:specifiedRoot": "", 
 "^ot:tag": [], 
+"^ot:unrootedTree": true, 
 "edgeBySourceId": {
 "node1116183": {
 "edge1116184": {

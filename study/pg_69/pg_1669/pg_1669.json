@@ -36,22 +36,109 @@
 }
 ]
 }
+}, 
+{
+"@description": "Web-based interface for submitting, editing, and reviewing studies in the Open Tree of Life project.", 
+"@id": "opentree-curation-webapp", 
+"@name": "OpenTree curation webapp", 
+"@url": "https://github.com/OpenTreeOfLife/opentree", 
+"@version": "0.0.0"
 }
 ]
 }, 
 "^ot:annotationEvents": {
-"annotation": []
+"annotation": [
+{
+"@dateCreated": "2015-09-28T18:55:14.658Z", 
+"@description": "Aids for mapping study OTUs to OTT taxa", 
+"@id": "otu-mapping-hints", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "OTU_MAPPING_HINTS", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"searchContext": {
+"$": "All life"
 }, 
-"^ot:candidateTreeForSynthesis": [], 
-"^ot:curatorName": "Romina Gazis", 
+"substitutions": {
+"substitution": [
+{
+"@active": false, 
+"@valid": true, 
+"new": {
+"$": ""
+}, 
+"old": {
+"$": ""
+}
+}, 
+{
+"@active": true, 
+"@valid": true, 
+"new": {
+"$": "$1"
+}, 
+"old": {
+"$": "^(\\S*\\s+\\S*).*"
+}
+}
+]
+}, 
+"useFuzzyMatching": true
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}, 
+{
+"@dateCreated": "2015-09-28T18:55:14.658Z", 
+"@description": "Describes supporting data files for this study", 
+"@id": "supporting-files-metadata", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "SUPPORTING_FILE_INFO", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"@movedToPermanentArchive": false, 
+"files": {
+"file": []
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}
+]
+}, 
+"^ot:candidateTreeForSynthesis": [
+"tree5902"
+], 
+"^ot:comment": "", 
+"^ot:curatorName": [
+"Romina Gazis"
+], 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S344"
 }, 
 "^ot:focalClade": 908827, 
 "^ot:focalCladeOTTTaxonName": "Epichloe", 
-"^ot:messages": {
-"message": []
-}, 
+"^ot:notIntendedForSynthesis": false, 
 "^ot:otusElementOrder": [
 "otus1669"
 ], 
@@ -65,6 +152,10 @@
 "^ot:treesElementOrder": [
 "trees1669"
 ], 
+"^xhtml:license": {
+"@href": "http://creativecommons.org/publicdomain/zero/1.0/", 
+"@name": "CC0"
+}, 
 "otusById": {
 "otus1669": {
 "otuById": {
@@ -190,6 +281,8 @@
 }, 
 "otu269984": {
 "^ot:originalLabel": "Epichloe clarkii 90168", 
+"^ot:ottId": 4058905, 
+"^ot:ottTaxonName": "Epichloe clarkii", 
 "^ot:treebaseOTUId": "Tl23963"
 }, 
 "otu269985": {
@@ -224,6 +317,8 @@
 }, 
 "otu269990": {
 "^ot:originalLabel": "Epichloe clarkii 200741", 
+"^ot:ottId": 4058905, 
+"^ot:ottTaxonName": "Epichloe clarkii", 
 "^ot:treebaseOTUId": "Tl23971"
 }, 
 "otu269991": {
@@ -245,16 +340,20 @@
 ], 
 "treeById": {
 "tree3364": {
+"@label": "Untitled (tree3364)", 
 "@xsi:type": "nex:FloatTree", 
 "^ot:branchLengthDescription": "", 
 "^ot:branchLengthMode": "", 
 "^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "MP, b-tubulin", 
 "^ot:inGroupClade": "node668841", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
 "^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node668841", 
 "^ot:specifiedRoot": "", 
 "^ot:tag": [], 
+"^ot:unrootedTree": true, 
 "edgeBySourceId": {
 "node668841": {
 "edge668842": {
@@ -595,18 +694,22 @@
 }
 }, 
 "tree3365": {
+"@label": "Untitled (tree3365)", 
 "@xsi:type": "nex:FloatTree", 
 "^ot:branchLengthDescription": "", 
 "^ot:branchLengthMode": "", 
 "^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "NJ, b-tubulin", 
 "^ot:inGroupClade": "node668890", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
 "^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node668889", 
 "^ot:specifiedRoot": "", 
 "^ot:tag": [
 "NJ"
 ], 
+"^ot:unrootedTree": true, 
 "edgeBySourceId": {
 "node668889": {
 "edge668890": {
@@ -996,27 +1099,27 @@
 }
 }, 
 "tree5902": {
+"@label": "Fig.8. MP, b-tubulin phylogeny", 
 "@xsi:type": "nex:FloatTree", 
 "^ot:branchLengthDescription": "", 
-"^ot:branchLengthMode": "", 
-"^ot:branchLengthTimeUnit": "", 
-"^ot:curatedType": "MP, b-tubulin (rooted)", 
-"^ot:inGroupClade": "node1003273", 
+"^ot:branchLengthMode": "ot:changesCount", 
+"^ot:branchLengthTimeUnit": "Myr", 
+"^ot:curatedType": "Maximum parsimony ", 
+"^ot:inGroupClade": "node1003272", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
 "^ot:outGroupEdge": "", 
-"^ot:rootNodeId": "node1003272", 
-"^ot:specifiedRoot": "", 
+"^ot:rootNodeId": "node1003317", 
+"^ot:specifiedRoot": "node1003317", 
 "^ot:tag": [
 "b-tub"
 ], 
+"^ot:unrootedTree": false, 
 "edgeBySourceId": {
 "node1003272": {
 "edge1003273": {
 "@source": "node1003272", 
 "@target": "node1003273"
-}, 
-"edge1003317": {
-"@source": "node1003272", 
-"@target": "node1003317"
 }
 }, 
 "node1003273": {
@@ -1234,6 +1337,10 @@
 }
 }, 
 "node1003317": {
+"edge1003317": {
+"@source": "node1003317", 
+"@target": "node1003272"
+}, 
 "edge1003318": {
 "@source": "node1003317", 
 "@target": "node1003318"
@@ -1245,60 +1352,71 @@
 }
 }, 
 "nodeById": {
-"node1003272": {
-"@root": true
-}, 
+"node1003272": {}, 
 "node1003273": {}, 
 "node1003274": {}, 
 "node1003275": {}, 
 "node1003276": {}, 
 "node1003277": {}, 
 "node1003278": {
-"@otu": "otu269982"
+"@otu": "otu269982", 
+"^ot:isTaxonExemplar": true
 }, 
 "node1003279": {
-"@otu": "otu269987"
+"@otu": "otu269987", 
+"^ot:isTaxonExemplar": false
 }, 
 "node1003280": {}, 
 "node1003281": {
-"@otu": "otu269966"
+"@otu": "otu269966", 
+"^ot:isTaxonExemplar": true
 }, 
 "node1003282": {
-"@otu": "otu269981"
+"@otu": "otu269981", 
+"^ot:isTaxonExemplar": false
 }, 
 "node1003283": {}, 
 "node1003284": {}, 
 "node1003285": {
-"@otu": "otu269968"
+"@otu": "otu269968", 
+"^ot:isTaxonExemplar": false
 }, 
 "node1003286": {
-"@otu": "otu269976"
+"@otu": "otu269976", 
+"^ot:isTaxonExemplar": false
 }, 
 "node1003287": {
-"@otu": "otu269988"
+"@otu": "otu269988", 
+"^ot:isTaxonExemplar": true
 }, 
 "node1003288": {}, 
 "node1003289": {}, 
 "node1003290": {
-"@otu": "otu269980"
+"@otu": "otu269980", 
+"^ot:isTaxonExemplar": true
 }, 
 "node1003291": {
-"@otu": "otu269970"
+"@otu": "otu269970", 
+"^ot:isTaxonExemplar": false
 }, 
 "node1003292": {}, 
 "node1003293": {}, 
 "node1003294": {
-"@otu": "otu269985"
+"@otu": "otu269985", 
+"^ot:isTaxonExemplar": true
 }, 
 "node1003295": {
-"@otu": "otu269971"
+"@otu": "otu269971", 
+"^ot:isTaxonExemplar": false
 }, 
 "node1003296": {}, 
 "node1003297": {
-"@otu": "otu269973"
+"@otu": "otu269973", 
+"^ot:isTaxonExemplar": true
 }, 
 "node1003298": {
-"@otu": "otu269977"
+"@otu": "otu269977", 
+"^ot:isTaxonExemplar": false
 }, 
 "node1003299": {}, 
 "node1003300": {}, 
@@ -1307,43 +1425,57 @@
 "node1003303": {}, 
 "node1003304": {}, 
 "node1003305": {
-"@otu": "otu269990"
+"@otu": "otu269990", 
+"^ot:isTaxonExemplar": true
 }, 
 "node1003306": {
-"@otu": "otu269984"
+"@otu": "otu269984", 
+"^ot:isTaxonExemplar": false
 }, 
 "node1003307": {
-"@otu": "otu269965"
+"@otu": "otu269965", 
+"^ot:isTaxonExemplar": false
 }, 
 "node1003308": {
-"@otu": "otu269972"
+"@otu": "otu269972", 
+"^ot:isTaxonExemplar": true
 }, 
 "node1003309": {}, 
 "node1003310": {
-"@otu": "otu269967"
+"@otu": "otu269967", 
+"^ot:isTaxonExemplar": false
 }, 
 "node1003311": {
-"@otu": "otu269983"
+"@otu": "otu269983", 
+"^ot:isTaxonExemplar": false
 }, 
 "node1003312": {
-"@otu": "otu269974"
+"@otu": "otu269974", 
+"^ot:isTaxonExemplar": true
 }, 
 "node1003313": {}, 
 "node1003314": {
-"@otu": "otu269978"
+"@otu": "otu269978", 
+"^ot:isTaxonExemplar": false
 }, 
 "node1003315": {
-"@otu": "otu269975"
+"@otu": "otu269975", 
+"^ot:isTaxonExemplar": false
 }, 
 "node1003316": {
-"@otu": "otu269969"
+"@otu": "otu269969", 
+"^ot:isTaxonExemplar": false
 }, 
-"node1003317": {}, 
+"node1003317": {
+"@root": true
+}, 
 "node1003318": {
-"@otu": "otu269986"
+"@otu": "otu269986", 
+"^ot:isTaxonExemplar": true
 }, 
 "node1003319": {
-"@otu": "otu269991"
+"@otu": "otu269991", 
+"^ot:isTaxonExemplar": false
 }
 }
 }

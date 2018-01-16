@@ -1,11 +1,12 @@
 {
 "nexml": {
 "@generator": "org.nexml.model.impl.DocumentImpl", 
-"@id": "S12586", 
+"@id": "S13930", 
 "@nexml2json": "1.2.1", 
 "@version": "0.9", 
 "@xmlns": {
 "$": "http://www.nexml.org/2009", 
+"DwC": "http://rs.tdwg.org/dwc/terms/", 
 "dc": "http://purl.org/dc/elements/1.1/", 
 "dcterms": "http://purl.org/dc/terms/", 
 "nex": "http://www.nexml.org/2009", 
@@ -18,22 +19,24 @@
 "xsi": "http://www.w3.org/2001/XMLSchema-instance"
 }, 
 "^dc:contributor": [
-"Roux J.", 
-"Wingfield M.J.", 
-"Chen S."
+"Mcleod A.", 
+"Langenhoven S.D.", 
+"Botha W.J.", 
+"Huisman L.", 
+"Spies C.F.", 
+"Pretorius M.C.", 
+"Meitz-hopkins J.C."
 ], 
-"^dc:creator": "Chen S., Wingfield M.J., & Roux J.", 
-"^dc:date": "2013-12-05", 
-"^dc:publisher": "Fungal Diversity", 
+"^dc:creator": "Meitz-hopkins J.C., Pretorius M.C., Spies C.F., Huisman L., Botha W.J., Langenhoven S.D., & Mcleod A.", 
+"^dc:date": "2013-02-28", 
+"^dc:publisher": "European Journal of Plant Pathology", 
 "^dc:subject": [
-"Western Cape", 
-"Tree pathogens", 
-"Pathogenicity tests", 
-"Myrtaceae", 
-"Fungal phylogenetics"
+"branch cancer", 
+"Phytophthora ITS clade 6", 
+"root rot"
 ], 
-"^dc:title": "Novel genus and species of Cryphonectriaceae associated with cankers on native Metrosideros angustifolia trees in South Africa", 
-"^dcterms:bibliographicCitation": "Chen S., Wingfield M.J., & Roux J. 2012. Novel genus and species of Cryphonectriaceae associated with cankers on native Metrosideros angustifolia trees in South Africa. Fungal Diversity, .", 
+"^dc:title": "Phytophthora species distribution in South African citrus production regions", 
+"^dcterms:bibliographicCitation": "Meitz-hopkins J.C., Pretorius M.C., Spies C.F., Huisman L., Botha W.J., Langenhoven S.D., & Mcleod A. 2013. Phytophthora species distribution in South African citrus production regions. European Journal of Plant Pathology, .", 
 "^ot:agents": {
 "agent": [
 {
@@ -55,5179 +58,2706 @@
 }
 ]
 }
+}, 
+{
+"@description": "Web-based interface for submitting, editing, and reviewing studies in the Open Tree of Life project.", 
+"@id": "opentree-curation-webapp", 
+"@name": "OpenTree curation webapp", 
+"@url": "https://github.com/OpenTreeOfLife/opentree", 
+"@version": "0.0.0"
 }
 ]
 }, 
 "^ot:annotationEvents": {
-"annotation": []
+"annotation": [
+{
+"@dateCreated": "2014-06-30T01:15:30.902Z", 
+"@description": "Aids for mapping study OTUs to OTT taxa", 
+"@id": "otu-mapping-hints", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "OTU_MAPPING_HINTS", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"searchContext": {
+"$": "All life"
 }, 
-"^ot:curatorName": "Mark T. Holder", 
+"substitutions": {
+"substitution": [
+{
+"@active": true, 
+"@valid": true, 
+"new": {
+"$": ""
+}, 
+"old": {
+"$": "taxon"
+}
+}, 
+{
+"@active": true, 
+"@valid": true, 
+"new": {
+"$": ""
+}, 
+"old": {
+"$": "voucher"
+}
+}, 
+{
+"@active": true, 
+"@valid": true, 
+"new": {
+"$": ""
+}, 
+"old": {
+"$": "\\b\\s+(\\w*)$"
+}
+}
+]
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}, 
+{
+"@dateCreated": "2014-06-30T01:15:30.902Z", 
+"@description": "Describes supporting data files for this study", 
+"@id": "supporting-files-metadata", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "SUPPORTING_FILE_INFO", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"@movedToPermanentArchive": false, 
+"files": {
+"file": []
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}
+]
+}, 
+"^ot:candidateTreeForSynthesis": [
+"Tr61320"
+], 
+"^ot:comment": "", 
+"^ot:curatorName": [
+"Dail Laughinghouse"
+], 
 "^ot:dataDeposit": {
-"@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S12586"
+"@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S13930"
 }, 
+"^ot:focalClade": 775740, 
+"^ot:focalCladeOTTTaxonName": "Phytophthora", 
+"^ot:messages": {
+"message": []
+}, 
+"^ot:notIntendedForSynthesis": false, 
 "^ot:otusElementOrder": [
-"Tls25171"
+"Tls29902"
 ], 
 "^ot:studyId": "ot_48", 
-"^ot:studyPublicationReference": "Chen S., Wingfield M.J., & Roux J. 2012. Novel genus and species of Cryphonectriaceae associated with cankers on native Metrosideros angustifolia trees in South Africa. Fungal Diversity, .", 
-"^ot:studyYear": 2012, 
+"^ot:studyPublication": {
+"@href": "http://dx.doi.org/10.1007/s10658-013-0346-9"
+}, 
+"^ot:studyPublicationReference": "J. C. Meitz-Hopkins, M. C. Pretorius, C. F. J. Spies, L. Huisman, W. J. Botha, S. D. Langenhoven, A. McLeod, 2014, 'Phytophthora species distribution in South African citrus production regions', European Journal of Plant Pathology, vol. 138, no. 4, pp. 733-749", 
+"^ot:studyYear": 2014, 
+"^ot:tag": [], 
 "^ot:taxonLinkPrefixes": {
 "@ubio": "http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:", 
 "@uniprot": "http://purl.uniprot.org/taxonomy/"
 }, 
 "^ot:treesElementOrder": [
-"Tb16914"
+"Tb20394"
 ], 
-"^prism:creationDate": "2012-04-01", 
-"^prism:modificationDate": "2013-12-05", 
-"^prism:publicationDate": "2012", 
-"^prism:publicationName": "Fungal Diversity", 
+"^prism:creationDate": "2013-02-18", 
+"^prism:modificationDate": "2013-02-28", 
+"^prism:publicationDate": "2013", 
+"^prism:publicationName": "European Journal of Plant Pathology", 
 "^prism:section": "Study", 
-"^skos:changeNote": "Generated on Thu Aug 14 03:08:10 EDT 2014", 
-"^skos:historyNote": "Mapped from TreeBASE schema using org.cipres.treebase.domain.nexus.nexml.NexmlDocumentWriter@8dbed1d $Rev: 1060 $", 
-"^tb:identifier.study": "12586", 
-"^tb:title.study": "Novel genus and species of Cryphonectriaceae associated with cankers on native Metrosideros angustifolia trees in South Africa", 
+"^skos:changeNote": "Generated on Sun Jun 29 21:14:22 EDT 2014", 
+"^skos:historyNote": "Mapped from TreeBASE schema using org.cipres.treebase.domain.nexus.nexml.NexmlDocumentWriter@3c4a01da $Rev: 1060 $", 
+"^tb:identifier.study": "13930", 
+"^tb:title.study": "Phytophthora species distribution in South African citrus production regions", 
 "^xhtml:license": {
 "@href": "http://creativecommons.org/publicdomain/zero/1.0/"
 }, 
 "otusById": {
-"Tls25171": {
-"@label": "Untitled Taxa Block", 
-"^skos:historyNote": "Mapped from TreeBASE schema using org.cipres.treebase.domain.nexus.nexml.NexmlOTUWriter@796a7ef7 $Rev: 1040 $", 
+"Tls29902": {
+"@label": "Taxa", 
+"^skos:historyNote": "Mapped from TreeBASE schema using org.cipres.treebase.domain.nexus.nexml.NexmlOTUWriter@1e7149d3 $Rev: 1040 $", 
 "otuById": {
-"Tl741759": {
-"^ot:altLabel": "Coniella fragariae", 
-"^ot:originalLabel": "Coniella fragariae AF408391", 
-"^ot:taxonLink": {
-"@tb:identifier.taxon": 6827, 
-"@tb:identifier.taxonVariant": 16559, 
-"@ubio": "3191493", 
-"@uniprot": "172191"
-}, 
-"^skos:prefLabel": "Pilidiella eucalyptorum"
-}, 
-"Tl741760": {
-"^ot:originalLabel": "Holocryphia metrosiderosi CMW37333"
-}, 
-"Tl741761": {
-"^ot:altLabel": "Chrysoporthe cubensis", 
-"^ot:originalLabel": "Chrysoporthe cubensis AF408338", 
-"^ot:taxonLink": {
-"@tb:identifier.taxon": 6069, 
-"@tb:identifier.taxonVariant": 14623, 
-"@ubio": "5981323", 
-"@uniprot": "305400"
-}
-}, 
-"Tl741762": {
-"^ot:altLabel": "Gnomonia gnomon", 
-"^ot:originalLabel": "Gnomonia gnomon AF408361", 
-"^ot:taxonLink": {
-"@tb:identifier.taxon": 12365, 
-"@tb:identifier.taxonVariant": 29359, 
-"@ubio": "3035901", 
-"@uniprot": "187234"
-}
-}, 
-"Tl741763": {
-"^ot:altLabel": "Amphilogia gyrosa", 
-"^ot:originalLabel": "Amphilogia gyrosa CMW10469", 
-"^ot:taxonLink": {
-"@tb:identifier.taxon": 35037, 
-"@tb:identifier.taxonVariant": 81117, 
-"@ubio": "9732802", 
-"@uniprot": "114682"
-}
-}, 
-"Tl741764": {
-"^ot:originalLabel": "Celoporthe indonesiensis CMW10781"
-}, 
-"Tl741765": {
-"^ot:originalLabel": "Holocryphia sp CMW10011"
-}, 
-"Tl741766": {
-"^ot:originalLabel": "Holocryphia longiconidia CMW37335"
-}, 
-"Tl741767": {
-"^ot:originalLabel": "Atersuperfici longiparaphysata CMW37322"
-}, 
-"Tl741768": {
-"^ot:altLabel": "Harknessia hawaiiensis", 
-"^ot:originalLabel": "Harknessia hawaiiensis AY720823", 
-"^ot:taxonLink": {
-"@tb:identifier.taxon": 12978, 
-"@tb:identifier.taxonVariant": 30692, 
-"@ubio": "3156351", 
-"@uniprot": "308549"
-}
-}, 
-"Tl741769": {
-"^ot:originalLabel": "Atersuperfici longiparaphysata CMW37324"
-}, 
-"Tl741770": {
-"^ot:altLabel": "Togninia minima", 
-"^ot:originalLabel": "Togninia minima AY761082", 
-"^ot:taxonLink": {
-"@tb:identifier.taxon": 29176, 
-"@tb:identifier.taxonVariant": 67980, 
-"@ubio": "3089735", 
-"@uniprot": "223192"
-}
-}, 
-"Tl741771": {
-"^ot:originalLabel": "Holocryphia sp CMW6249"
-}, 
-"Tl741772": {
-"^ot:altLabel": "Harknessia eucalypti", 
-"^ot:originalLabel": "Harknessia eucalypti AF408363", 
-"^ot:taxonLink": {
-"@tb:identifier.taxon": 12974, 
-"@tb:identifier.taxonVariant": 30686, 
-"@ubio": "3118254", 
-"@uniprot": "187249"
-}
-}, 
-"Tl741773": {
-"^ot:originalLabel": "Immersiporthe knoxdaviesiana CMW37318"
-}, 
-"Tl741774": {
-"^ot:altLabel": "Cryphonectria radicalis", 
-"^ot:originalLabel": "Cryphonectria radicalis CMW10455", 
-"^ot:taxonLink": {
-"@tb:identifier.taxon": 7571, 
-"@tb:identifier.taxonVariant": 18290, 
-"@ubio": "3192162", 
-"@uniprot": "40262"
-}
-}, 
-"Tl741775": {
-"^ot:altLabel": "Holocryphia eucalypti", 
-"^ot:originalLabel": "Holocryphia eucalypti CMW7036", 
-"^ot:taxonLink": {
-"@tb:identifier.taxon": 7566, 
-"@tb:identifier.taxonVariant": 113177, 
-"@ubio": "10200787", 
-"@uniprot": "179777"
-}
-}, 
-"Tl741776": {
-"^ot:altLabel": "Holocryphia eucalypti", 
-"^ot:originalLabel": "Holocryphia eucalypti CMW14545", 
-"^ot:taxonLink": {
-"@tb:identifier.taxon": 7566, 
-"@tb:identifier.taxonVariant": 113177, 
-"@ubio": "10200787", 
-"@uniprot": "179777"
-}
-}, 
-"Tl741777": {
-"^ot:originalLabel": "Holocryphia sp CMW10016"
-}, 
-"Tl741778": {
-"^ot:originalLabel": "Holocryphia sp CMW10021"
-}, 
-"Tl741779": {
-"^ot:altLabel": "Togninia fraxinopennsylvanica", 
-"^ot:originalLabel": "Togninia fraxinopennsylvanica AY761083", 
-"^ot:taxonLink": {
-"@tb:identifier.taxon": 29175, 
-"@tb:identifier.taxonVariant": 67978, 
-"@ubio": "5958886", 
-"@uniprot": "93811"
-}
-}, 
-"Tl741780": {
-"^ot:originalLabel": "Holocryphia longiconidia CMW37334"
-}, 
-"Tl741781": {
-"^ot:altLabel": "Aurapex penicillata", 
-"^ot:originalLabel": "Aurapex penicillata CMW11295", 
-"^ot:taxonLink": {
-"@tb:identifier.taxon": 35046, 
-"@tb:identifier.taxonVariant": 81131, 
-"@ubio": "5972694", 
-"@uniprot": "224451"
-}
-}, 
-"Tl741782": {
-"^ot:originalLabel": "Holocryphia metrosiderosi CMW37328"
-}, 
-"Tl741783": {
-"^ot:originalLabel": "Immersiporthe knoxdaviesiana CMW37315"
-}, 
-"Tl741784": {
-"^ot:altLabel": "Chrysoporthe cubensis", 
-"^ot:originalLabel": "Chrysoporthe cubensis CMW10453", 
-"^ot:taxonLink": {
-"@tb:identifier.taxon": 6069, 
-"@tb:identifier.taxonVariant": 14623, 
-"@ubio": "5981323", 
-"@uniprot": "305400"
-}
-}, 
-"Tl741785": {
-"^ot:altLabel": "Ursicollum fallax", 
-"^ot:originalLabel": "Ursicollum fallax CMW18119", 
-"^ot:taxonLink": {
-"@tb:identifier.taxon": 326134, 
-"@tb:identifier.taxonVariant": 367829, 
-"@ubio": "10303804", 
-"@uniprot": "373512"
-}
-}, 
-"Tl741786": {
-"^ot:originalLabel": "Holocryphia longiascospora CMW11690"
-}, 
-"Tl741787": {
-"^ot:originalLabel": "Atersuperfici longiparaphysata CMW37325"
-}, 
-"Tl741788": {
-"^ot:originalLabel": "Atersuperfici longiparaphysata CMW37323"
-}, 
-"Tl741789": {
-"^ot:altLabel": "Endothia gyrosa", 
-"^ot:originalLabel": "Endothia gyrosa CMW2091", 
-"^ot:taxonLink": {
-"@tb:identifier.taxon": 10040, 
-"@tb:identifier.taxonVariant": 24005, 
-"@ubio": "1620948", 
-"@uniprot": "40263"
-}
-}, 
-"Tl741790": {
-"^ot:originalLabel": "Micrithia havanensis CMW11299"
-}, 
-"Tl741791": {
-"^ot:originalLabel": "Aurifilum marmelostoma CMW28288"
-}, 
-"Tl741792": {
-"^ot:altLabel": "Endothia gyrosa", 
-"^ot:originalLabel": "Endothia gyrosa AF362555", 
-"^ot:taxonLink": {
-"@tb:identifier.taxon": 10040, 
-"@tb:identifier.taxonVariant": 24005, 
-"@ubio": "1620948", 
-"@uniprot": "40263"
-}
-}, 
-"Tl741793": {
-"^ot:originalLabel": "Atersuperfici longiparaphysata CMW37320"
-}, 
-"Tl741794": {
-"^ot:originalLabel": "Cryphonectria decipiens CMW10436"
-}, 
-"Tl741795": {
-"^ot:altLabel": "Phragmoporthe conformis", 
-"^ot:originalLabel": "Phragmoporthe conformis AF408377", 
-"^ot:taxonLink": {
-"@tb:identifier.taxon": 21952, 
-"@tb:identifier.taxonVariant": 51055, 
-"@ubio": "3172348", 
-"@uniprot": "187263"
-}
-}, 
-"Tl741796": {
-"^ot:originalLabel": "Holocryphia longiascospora CMW11689"
-}, 
-"Tl741797": {
-"^ot:altLabel": "Plagiostoma euphorbiae", 
-"^ot:originalLabel": "Plagiostoma euphorbiae AF408382", 
-"^ot:taxonLink": {
-"@tb:identifier.taxon": 22646, 
-"@tb:identifier.taxonVariant": 52820, 
-"@ubio": "3109178", 
-"@uniprot": "148338"
-}
-}, 
-"Tl741798": {
-"^ot:altLabel": "Chrysoporthe austroafricana", 
-"^ot:originalLabel": "Chrysoporthe austroafricana CMW62", 
-"^ot:taxonLink": {
-"@tb:identifier.taxon": 6068, 
-"@tb:identifier.taxonVariant": 14622, 
-"@ubio": "5985271", 
-"@uniprot": "354353"
-}
-}, 
-"Tl741799": {
-"^ot:originalLabel": "Holocryphia metrosiderosi CMW37888"
-}, 
-"Tl741800": {
-"^ot:originalLabel": "Holocryphia sp CMW6246"
-}, 
-"Tl741801": {
-"^ot:originalLabel": "Holocryphia metrosiderosi CMW37326"
-}, 
-"Tl741802": {
-"^ot:originalLabel": "Holocryphia sp CMW10015"
-}, 
-"Tl741803": {
-"^ot:altLabel": "Endothia gyrosa", 
-"^ot:originalLabel": "Endothia gyrosa CMW10442", 
-"^ot:taxonLink": {
-"@tb:identifier.taxon": 10040, 
-"@tb:identifier.taxonVariant": 24005, 
-"@ubio": "1620948", 
-"@uniprot": "40263"
-}
-}, 
-"Tl741804": {
-"^ot:originalLabel": "Immersiporthe knoxdaviesiana CMW37314 LSU"
-}, 
-"Tl741805": {
-"^ot:originalLabel": "Holocryphia metrosiderosi CMW37341"
-}, 
-"Tl741806": {
-"^ot:altLabel": "Cryptodiaporthe corni", 
-"^ot:originalLabel": "Cryptodiaporthe corni AF277133", 
-"^ot:taxonLink": {
-"@tb:identifier.taxon": 7603, 
-"@tb:identifier.taxonVariant": 18341, 
-"@ubio": "3169169", 
-"@uniprot": "148327"
-}
-}, 
-"Tl741807": {
-"^ot:altLabel": "Amphilogia gyrosa", 
-"^ot:originalLabel": "Amphilogia gyrosa CMW10470", 
-"^ot:taxonLink": {
-"@tb:identifier.taxon": 35037, 
-"@tb:identifier.taxonVariant": 81117, 
-"@ubio": "9732802", 
-"@uniprot": "114682"
-}
-}, 
-"Tl741808": {
-"^ot:altLabel": "Melanconis stilbostoma", 
-"^ot:originalLabel": "Melanconis stilbostoma AF408374", 
-"^ot:taxonLink": {
-"@tb:identifier.taxon": 17211, 
-"@tb:identifier.taxonVariant": 40303, 
-"@ubio": "3138777", 
-"@uniprot": "172185"
-}
-}, 
-"Tl741809": {
-"^ot:originalLabel": "Holocryphia sp CMW10729"
-}, 
-"Tl741810": {
-"^ot:altLabel": "Chrysoporthe cubensis", 
-"^ot:originalLabel": "Chrysoporthe cubensis CMW8758", 
-"^ot:taxonLink": {
-"@tb:identifier.taxon": 6069, 
-"@tb:identifier.taxonVariant": 14623, 
-"@ubio": "5981323", 
-"@uniprot": "305400"
-}
-}, 
-"Tl741811": {
-"^ot:originalLabel": "Cryptometrion aestuescens CMW18790", 
-"^ot:taxonLink": {
-"@tb:identifier.taxon": 545058, 
-"@tb:identifier.taxonVariant": 722698
-}
-}, 
-"Tl741812": {
-"^ot:originalLabel": "Holocryphia metrosiderosi CMW37331"
-}, 
-"Tl741813": {
-"^ot:altLabel": "Melanconis marginalis", 
-"^ot:originalLabel": "Melanconis marginalis AF408373", 
-"^ot:taxonLink": {
-"@tb:identifier.taxon": 17210, 
-"@tb:identifier.taxonVariant": 40301, 
-"@ubio": "3158778", 
-"@uniprot": "148318"
-}
-}, 
-"Tl741814": {
-"^ot:originalLabel": "Latruncella aurorae CMW28274"
-}, 
-"Tl741815": {
-"^ot:altLabel": "Aurapex penicillata", 
-"^ot:originalLabel": "Aurapex penicillata CMW10030", 
-"^ot:taxonLink": {
-"@tb:identifier.taxon": 35046, 
-"@tb:identifier.taxonVariant": 81131, 
-"@ubio": "5972694", 
-"@uniprot": "224451"
-}
-}, 
-"Tl741816": {
-"^ot:altLabel": "Cryphonectria macrospora", 
-"^ot:originalLabel": "Cryphonectria macrospora CMW10914", 
-"^ot:taxonLink": {
-"@tb:identifier.taxon": 7568, 
-"@tb:identifier.taxonVariant": 18284, 
-"@ubio": "3192160", 
-"@uniprot": "179775"
-}
-}, 
-"Tl741817": {
-"^ot:altLabel": "Diaporthe fibrosa", 
-"^ot:originalLabel": "Diaporthe fibrosa AF408351", 
-"^ot:taxonLink": {
-"@tb:identifier.taxon": 8890, 
-"@tb:identifier.taxonVariant": 21403, 
-"@ubio": "1449190", 
-"@uniprot": "187229"
-}
-}, 
-"Tl741818": {
-"^ot:originalLabel": "Holocryphia longiascospora CMW37337"
-}, 
-"Tl741819": {
-"^ot:originalLabel": "Micrithia havanensis CMW11300"
-}, 
-"Tl741820": {
-"^ot:originalLabel": "Cryptometrion aestuescens CMW18793", 
-"^ot:taxonLink": {
-"@tb:identifier.taxon": 545058, 
-"@tb:identifier.taxonVariant": 722698
-}
-}, 
-"Tl741821": {
-"^ot:altLabel": "Cryptodiaporthe aesculi", 
-"^ot:originalLabel": "Cryptodiaporthe aesculi AF408342", 
-"^ot:taxonLink": {
-"@tb:identifier.taxon": 7602, 
-"@tb:identifier.taxonVariant": 18340, 
-"@ubio": "3059611", 
-"@uniprot": "187222"
-}
-}, 
-"Tl741822": {
-"^ot:altLabel": "Holocryphia eucalypti", 
-"^ot:originalLabel": "Holocryphia eucalypti CMW7033", 
-"^ot:taxonLink": {
-"@tb:identifier.taxon": 7566, 
-"@tb:identifier.taxonVariant": 113177, 
-"@ubio": "10200787", 
-"@uniprot": "179777"
-}
-}, 
-"Tl741823": {
-"^ot:altLabel": "Valsella salicis", 
-"^ot:originalLabel": "Valsella salicis AF408389", 
-"^ot:taxonLink": {
-"@tb:identifier.taxon": 30443, 
-"@tb:identifier.taxonVariant": 71024, 
-"@ubio": "3080457", 
-"@uniprot": "187245"
-}
-}, 
-"Tl741824": {
-"^ot:altLabel": "Leucostoma cincta", 
-"^ot:originalLabel": "Leucostoma cincta AF408366", 
-"^ot:taxonLink": {
-"@tb:identifier.taxon": 15863, 
-"@tb:identifier.taxonVariant": 37192, 
-"@ubio": "3035576", 
-"@uniprot": "105485"
-}, 
-"^skos:prefLabel": "Leucostoma cinctum"
-}, 
-"Tl741825": {
-"^ot:originalLabel": "Holocryphia longiascospora CMW37338"
-}, 
-"Tl741826": {
-"^ot:altLabel": "Schizoparme straminea", 
-"^ot:originalLabel": "Schizoparme straminea AF362569", 
-"^ot:taxonLink": {
-"@tb:identifier.taxon": 26374, 
-"@tb:identifier.taxonVariant": 61631, 
-"@ubio": "3164188", 
-"@uniprot": "172187"
-}
-}, 
-"Tl741827": {
-"^ot:altLabel": "Cryphonectria parasitica", 
-"^ot:originalLabel": "Cryphonectria parasitica CMW7048", 
-"^ot:taxonLink": {
-"@tb:identifier.taxon": 7570, 
-"@tb:identifier.taxonVariant": 18287, 
-"@ubio": "3872340", 
-"@uniprot": "5116"
-}
-}, 
-"Tl741828": {
-"^ot:originalLabel": "Cryphonectria japonica CMW10527"
-}, 
-"Tl741829": {
-"^ot:altLabel": "Diaporthe eres", 
-"^ot:originalLabel": "Diaporthe eres AF408350", 
-"^ot:taxonLink": {
-"@tb:identifier.taxon": 8889, 
-"@tb:identifier.taxonVariant": 21402, 
-"@ubio": "3079478", 
-"@uniprot": "83184"
-}
-}, 
-"Tl741830": {
-"^ot:originalLabel": "Holocryphia longiconidia CMW37336"
-}, 
-"Tl741831": {
-"^ot:originalLabel": "Celoporthe eucalypti CMW26900"
-}, 
-"Tl741832": {
-"^ot:originalLabel": "Latruncella aurorae CMW28276"
-}, 
-"Tl741833": {
-"^ot:originalLabel": "Holocryphia metrosiderosi CMW37327"
-}, 
-"Tl741834": {
-"^ot:originalLabel": "Holocryphia sp CMW10017"
-}, 
-"Tl741835": {
-"^ot:altLabel": "Wuestneia eucalyptorum", 
-"^ot:originalLabel": "Wuestneia eucalyptorum AY720840", 
-"^ot:taxonLink": {
-"@tb:identifier.taxon": 35041, 
-"@tb:identifier.taxonVariant": 81121, 
-"@ubio": "3232185"
-}
-}, 
-"Tl741836": {
-"^ot:altLabel": "Phaeoacremonium aleophilum", 
-"^ot:originalLabel": "Phaeoacremonium aleophilum AY249088", 
-"^ot:taxonLink": {
-"@tb:identifier.taxon": 21499, 
-"@tb:identifier.taxonVariant": 50017, 
-"@ubio": "3264023", 
-"@uniprot": "65417"
-}
+"Tl1049976": {
+"^ot:altLabel": "Phytophthora  Sisuluriver ", 
+"^ot:originalLabel": "Phytophthora taxon Sisuluriver CWM37995 JX272356"
 }, 
-"Tl741837": {
-"^ot:originalLabel": "Holocryphia metrosiderosi CMW37340"
+"Tl1049977": {
+"^ot:originalLabel": "Phytophthora taxon walnut IMI389735 AF541910"
 }, 
-"Tl741838": {
-"^ot:altLabel": "Pilidiella castaneicola", 
-"^ot:originalLabel": "Pilidiella castaneicola AF408378", 
-"^ot:taxonLink": {
-"@tb:identifier.taxon": 22354, 
-"@tb:identifier.taxonVariant": 52019, 
-"@ubio": "3184352", 
-"@uniprot": "187252"
-}
+"Tl1049978": {
+"^ot:altLabel": "Phytophthora personii ", 
+"^ot:originalLabel": "Phytophthora personii WPC P11555"
 }, 
-"Tl741839": {
-"^ot:altLabel": "Cryptodiaporthe corni", 
-"^ot:originalLabel": "Cryptodiaporthe corni CMW10526", 
+"Tl1049979": {
+"^ot:originalLabel": "Phytophthora gonapodyides IMI389723 AF541889", 
+"^ot:ottId": 23193, 
+"^ot:ottTaxonName": "Phytophthora gonapodyides", 
 "^ot:taxonLink": {
-"@tb:identifier.taxon": 7603, 
-"@tb:identifier.taxonVariant": 18341, 
-"@ubio": "3169169", 
-"@uniprot": "148327"
+"@tb:identifier.taxon": 617541, 
+"@tb:identifier.taxonVariant": 826600, 
+"@ubio": "1266656", 
+"@uniprot": "78237"
 }
 }, 
-"Tl741840": {
-"^ot:originalLabel": "Celoporthe guangdongensis CMW12750"
-}, 
-"Tl741841": {
-"^ot:originalLabel": "Celoporthe sysygii CMW34023"
-}, 
-"Tl741842": {
-"^ot:altLabel": "Cryphonectria radicalis", 
-"^ot:originalLabel": "Cryphonectria radicalis CMW10477", 
+"Tl1049980": {
+"^ot:originalLabel": "Phytophthora humicola WPC P6701 GU259464", 
+"^ot:ottId": 88466, 
+"^ot:ottTaxonName": "Phytophthora humicola", 
 "^ot:taxonLink": {
-"@tb:identifier.taxon": 7571, 
-"@tb:identifier.taxonVariant": 18290, 
-"@ubio": "3192162", 
-"@uniprot": "40262"
+"@tb:identifier.taxon": 617540, 
+"@tb:identifier.taxonVariant": 826783, 
+"@ubio": "3022860", 
+"@uniprot": "129352"
 }
 }, 
-"Tl741843": {
-"^ot:altLabel": "Celoporthe dispersa", 
-"^ot:originalLabel": "Celoporthe dispersa CMW9976", 
+"Tl1049981": {
+"^ot:originalLabel": "Phytophthora pinifolia CBS122924 EU725805", 
+"^ot:ottId": 920999, 
+"^ot:ottTaxonName": "Phytophthora pinifolia", 
 "^ot:taxonLink": {
-"@tb:identifier.taxon": 204484, 
-"@tb:identifier.taxonVariant": 274107, 
-"@ubio": "10221436", 
-"@uniprot": "224443"
+"@tb:identifier.taxon": 476049, 
+"@tb:identifier.taxonVariant": 631183
 }
-}, 
-"Tl741844": {
-"^ot:originalLabel": "Holocryphia metrosiderosi CMW37339"
 }, 
-"Tl741845": {
-"^ot:originalLabel": "Holocryphia metrosiderosi CMW37329"
-}, 
-"Tl741846": {
-"^ot:altLabel": "Cryphonectria parasitica", 
-"^ot:originalLabel": "Cryphonectria parasitica AF277132", 
+"Tl1049982": {
+"^ot:originalLabel": "Phytophthora megasperma DDS3432 HQ012949", 
+"^ot:ottId": 775722, 
+"^ot:ottTaxonName": "Phytophthora megasperma", 
 "^ot:taxonLink": {
-"@tb:identifier.taxon": 7570, 
-"@tb:identifier.taxonVariant": 18287, 
-"@ubio": "3872340", 
-"@uniprot": "5116"
+"@tb:identifier.taxon": 22285, 
+"@tb:identifier.taxonVariant": 51853, 
+"@ubio": "3158893", 
+"@uniprot": "4788"
 }
-}, 
-"Tl741847": {
-"^ot:originalLabel": "Holocryphia metrosiderosi CMW37342"
-}, 
-"Tl741848": {
-"^ot:originalLabel": "Aurifilum marmelostoma CMW28285"
 }, 
-"Tl741849": {
-"^ot:originalLabel": "Holocryphia sp CMW10010"
+"Tl1049983": {
+"^ot:originalLabel": "Phytophthora gibbosa VHS22008 HQ012936", 
+"^ot:ottId": 460097, 
+"^ot:ottTaxonName": "Phytophthora gibbosa"
 }, 
-"Tl741850": {
-"^ot:originalLabel": "Cryphonectria japonica CMW10528"
+"Tl1049984": {
+"^ot:altLabel": "Phytophthora  Sisuluriver ", 
+"^ot:originalLabel": "Phytophthora taxon Sisuluriver CWM37889 JX272355"
 }, 
-"Tl741851": {
-"^ot:originalLabel": "Atersuperfici longiparaphysata CMW37321"
+"Tl1049985": {
+"^ot:altLabel": "Phytophthora  PgChlamydo ", 
+"^ot:originalLabel": "Phytophthora taxon PgChlamydo VHS6595 EU301159"
 }, 
-"Tl741852": {
-"^ot:altLabel": "Coniella australiensis", 
-"^ot:originalLabel": "Coniella australiensis AF408336", 
+"Tl1049986": {
+"^ot:originalLabel": "Phytophthora sulawesiensis P6306 FJ801912", 
+"^ot:ottId": 787168, 
+"^ot:ottTaxonName": "Phytophthora sulawesiensis", 
 "^ot:taxonLink": {
-"@tb:identifier.taxon": 6826, 
-"@tb:identifier.taxonVariant": 16556, 
-"@ubio": "3177354", 
-"@uniprot": "187246"
+"@tb:identifier.taxon": 384605, 
+"@tb:identifier.taxonVariant": 526368
 }
 }, 
-"Tl741853": {
-"^ot:originalLabel": "Holocryphia metrosiderosi CMW37332"
+"Tl1049987": {
+"^ot:altLabel": "Phytophthora  cranberry ", 
+"^ot:originalLabel": "Phytophthora taxon cranberry WPCP1410 AY964102"
 }, 
-"Tl741854": {
-"^ot:altLabel": "Holocryphia eucalypti", 
-"^ot:originalLabel": "Holocryphia eucalypti CMW7035", 
-"^ot:taxonLink": {
-"@tb:identifier.taxon": 7566, 
-"@tb:identifier.taxonVariant": 113177, 
-"@ubio": "10200787", 
-"@uniprot": "179777"
-}
+"Tl1049988": {
+"^ot:originalLabel": "Phytophthora taxon rosacearum HSA2529 HQ012962", 
+"^ot:ottId": 677241, 
+"^ot:ottTaxonName": "Phytophthora rosacearum"
 }, 
-"Tl741855": {
-"^ot:originalLabel": "Holocryphia metrosiderosi CMW37887"
+"Tl1049989": {
+"^ot:altLabel": "Phytophthora personii ", 
+"^ot:originalLabel": "Phytophthora personii VHS14801 EU301169"
 }, 
-"Tl741856": {
-"^ot:altLabel": "Rostraureum tropicale", 
-"^ot:originalLabel": "Rostraureum tropicale CMW9972", 
-"^ot:taxonLink": {
-"@tb:identifier.taxon": 35038, 
-"@tb:identifier.taxonVariant": 81118, 
-"@ubio": "5972313", 
-"@uniprot": "220453"
-}
+"Tl1049990": {
+"^ot:originalLabel": "Phytophthora fluvialis VHS17350 EU593261", 
+"^ot:ottId": 692904, 
+"^ot:ottTaxonName": "Phytophthora fluvialis"
 }, 
-"Tl741857": {
-"^ot:originalLabel": "Celoporthe eucalypti CMW26908"
+"Tl1049991": {
+"^ot:altLabel": "Phytophthora  kwongan", 
+"^ot:originalLabel": "Phytophthora taxon kwongan HSA2313 HQ012961"
 }, 
-"Tl741858": {
-"^ot:altLabel": "Holocryphia eucalypti", 
-"^ot:originalLabel": "Holocryphia eucalypti CMW7033 ITS", 
-"^ot:taxonLink": {
-"@tb:identifier.taxon": 7566, 
-"@tb:identifier.taxonVariant": 113177, 
-"@ubio": "10200787", 
-"@uniprot": "179777"
-}
+"Tl1049992": {
+"^ot:originalLabel": "Phytophthora thermophila CBS127954 EU301155", 
+"^ot:ottId": 460107, 
+"^ot:ottTaxonName": "Phytophthora thermophila"
+}, 
+"Tl1049993": {
+"^ot:altLabel": "Phytophthora  paludosa ", 
+"^ot:originalLabel": "Phytophthora taxon paludosa MUCC765 HQ012953"
+}, 
+"Tl1049994": {
+"^ot:altLabel": "Phytophthora  oaksoil ", 
+"^ot:originalLabel": "Phytophthora taxon oaksoil P11652 FJ801622"
+}, 
+"Tl1049995": {
+"^ot:originalLabel": "Phytophthora megasperma WPC6820A437 GU259494", 
+"^ot:ottId": 775722, 
+"^ot:ottTaxonName": "Phytophthora megasperma", 
+"^ot:taxonLink": {
+"@tb:identifier.taxon": 22285, 
+"@tb:identifier.taxonVariant": 51853, 
+"@ubio": "3158893", 
+"@uniprot": "4788"
+}
 }, 
-"Tl741892": {
-"^ot:originalLabel": "Holocryphia metrosiderosi CMW37326 ACT BT21 CAL ITS TEF"
+"Tl1049996": {
+"^ot:originalLabel": "Phytophthora thermophila MUCC764 HQ012950", 
+"^ot:ottId": 460107, 
+"^ot:ottTaxonName": "Phytophthora thermophila"
+}, 
+"Tl1049997": {
+"^ot:altLabel": "Phytophthora  kwongan ", 
+"^ot:originalLabel": "Phytophthora taxon kwongan IMI329669 EU593265"
+}, 
+"Tl1049998": {
+"^ot:originalLabel": "Phytophthora taxon raspberry RAS1 HQ01296"
+}, 
+"Tl1049999": {
+"^ot:originalLabel": "Phytophthora lacustris HSA1959 HQ012956", 
+"^ot:ottId": 626100, 
+"^ot:ottTaxonName": "Phytophthora lacustris"
+}, 
+"Tl1050000": {
+"^ot:originalLabel": "Phytophthora litoralis MUCC763 HQ012947", 
+"^ot:ottId": 357787, 
+"^ot:ottTaxonName": "Phytophthora litoralis"
+}, 
+"Tl1050001": {
+"^ot:originalLabel": "Phytophthora taxon PgChlamydo DDS3753 EU301160"
+}, 
+"Tl1050002": {
+"^ot:originalLabel": "Phytophthora humicola Like MUCC768 HQ012959", 
+"^ot:ottId": 88466, 
+"^ot:ottTaxonName": "Phytophthora humicola", 
+"^ot:taxonLink": {
+"@tb:identifier.taxon": 617540, 
+"@tb:identifier.taxonVariant": 826783, 
+"@ubio": "3022860", 
+"@uniprot": "129352"
+}
+}, 
+"Tl1050003": {
+"^ot:originalLabel": "Phytophthora bilorbang CBS161653 JQ256377", 
+"^ot:ottId": 798197, 
+"^ot:ottTaxonName": "Phytophthora bilorbang"
+}, 
+"Tl1050004": {
+"^ot:originalLabel": "Phytophthora litoralis CBS127953 HQ012948", 
+"^ot:ottId": 357787, 
+"^ot:ottTaxonName": "Phytophthora litoralis"
+}, 
+"Tl1050005": {
+"^ot:originalLabel": "Phytophthora gregata VHS21992 HQ012943", 
+"^ot:ottId": 460101, 
+"^ot:ottTaxonName": "Phytophthora gregata"
+}, 
+"Tl1050006": {
+"^ot:originalLabel": "Phytophthora borealis AKWA58 1 0708 HM004232", 
+"^ot:ottId": 53956, 
+"^ot:ottTaxonName": "Phytophthora borealis"
+}, 
+"Tl1050007": {
+"^ot:originalLabel": "Phytophthora asparagi WPC P10690 FJ801481", 
+"^ot:ottId": 610547, 
+"^ot:ottTaxonName": "Phytophthora asparagi"
+}, 
+"Tl1050008": {
+"^ot:originalLabel": "Phytophthora cinnamomi WPC P2159", 
+"^ot:ottId": 775735, 
+"^ot:ottTaxonName": "Phytophthora cinnamomi", 
+"^ot:taxonLink": {
+"@tb:identifier.taxon": 22257, 
+"@tb:identifier.taxonVariant": 51792, 
+"@ubio": "3152472", 
+"@uniprot": "4785"
+}
+}, 
+"Tl1050009": {
+"^ot:originalLabel": "Phytophthora inundata IMI389750 AF541912", 
+"^ot:ottId": 572665, 
+"^ot:ottTaxonName": "Phytophthora inundata", 
+"^ot:taxonLink": {
+"@tb:identifier.taxon": 22278, 
+"@tb:identifier.taxonVariant": 51839, 
+"@ubio": "3996363", 
+"@uniprot": "244122"
+}
+}, 
+"Tl1050010": {
+"^ot:originalLabel": "Phytophthora gonapodyides voucher CBS113346 HQ643236", 
+"^ot:ottId": 23193, 
+"^ot:ottTaxonName": "Phytophthora gonapodyides"
+}, 
+"Tl1050011": {
+"^ot:originalLabel": "Phytophthora sp aff taxon Sisuluriver STE U7389"
+}, 
+"Tl1050012": {
+"^ot:originalLabel": "Phytophthora taxon rosacearum HSA2530 HQ012963", 
+"^ot:ottId": 677241, 
+"^ot:ottTaxonName": "Phytophthora rosacearum"
 }, 
-"Tl741893": {
-"^ot:originalLabel": "Holocryphia metrosiderosi CMW37326 BT21"
+"Tl1050013": {
+"^ot:originalLabel": "Phytophthora sp WPC P10369 GU258600"
 }, 
-"Tl741894": {
-"^ot:altLabel": "Holocryphia eucalypti", 
-"^ot:originalLabel": "Holocryphia eucalypti CMW7033 BT21", 
-"^ot:taxonLink": {
-"@tb:identifier.taxon": 7566, 
-"@tb:identifier.taxonVariant": 113177, 
-"@ubio": "10200787", 
-"@uniprot": "179777"
-}
+"Tl1050014": {
+"^ot:originalLabel": "Phytophthora amnicola DH228 JQ029956", 
+"^ot:ottId": 18110, 
+"^ot:ottTaxonName": "Phytophthora amnicola"
 }, 
-"Tl741895": {
-"^ot:originalLabel": "Holocryphia metrosiderosi CMW37326 CAL"
+"Tl1050015": {
+"^ot:originalLabel": "Phytophthora gemini CBS123381 FJ217680", 
+"^ot:ottId": 807550, 
+"^ot:ottTaxonName": "Phytophthora gemini"
+}, 
+"Tl1050016": {
+"^ot:originalLabel": "Phytophthora riparia VI 3 100B9F HM004225", 
+"^ot:ottId": 53952, 
+"^ot:ottTaxonName": "Phytophthora riparia"
+}, 
+"Tl1050017": {
+"^ot:originalLabel": "Phytophthora gregata CBS127952 HQ012942", 
+"^ot:ottId": 460101, 
+"^ot:ottTaxonName": "Phytophthora gregata"
 }, 
-"Tl741896": {
-"^ot:altLabel": "Holocryphia eucalypti", 
-"^ot:originalLabel": "Holocryphia eucalypti CMW7033 ACT", 
+"Tl1050018": {
+"^ot:originalLabel": "Phytophthora humicola WPC P6702 FJ801938", 
+"^ot:ottId": 88466, 
+"^ot:ottTaxonName": "Phytophthora humicola", 
 "^ot:taxonLink": {
-"@tb:identifier.taxon": 7566, 
-"@tb:identifier.taxonVariant": 113177, 
-"@ubio": "10200787", 
-"@uniprot": "179777"
+"@tb:identifier.taxon": 617540, 
+"@tb:identifier.taxonVariant": 826783, 
+"@ubio": "3022860", 
+"@uniprot": "129352"
 }
 }, 
-"Tl741897": {
-"^ot:originalLabel": "Holocryphia metrosiderosi CMW37326 TEF"
+"Tl1050019": {
+"^ot:originalLabel": "Phytophthora sp aff taxon Sisuluriver STE U7390"
 }, 
-"Tl741898": {
-"^ot:originalLabel": "Cryphonectria japonica CMW13742"
+"Tl1050020": {
+"^ot:originalLabel": "Phytophthora gibbosa CBS127951 HQ012933", 
+"^ot:ottId": 460097, 
+"^ot:ottTaxonName": "Phytophthora gibbosa"
 }, 
-"Tl741899": {
-"^ot:originalLabel": "Immersiporthe knoxdaviesiana CMW37314 5.8sBTexon"
+"Tl1050021": {
+"^ot:altLabel": "Phytophthora  hungarica ", 
+"^ot:originalLabel": "Phytophthora taxon hungarica UASWS0318 EF522141"
 }, 
-"Tl741900": {
-"^ot:originalLabel": "Chrysoporthe deuterocubensis CMW 8651"
+"Tl1050022": {
+"^ot:originalLabel": "Phytophthora fluvialis CBS129424 JF701436", 
+"^ot:ottId": 692904, 
+"^ot:ottTaxonName": "Phytophthora fluvialis"
 }, 
-"Tl741901": {
-"^ot:originalLabel": "Cryphonectria decipiensCMW10436"
-}, 
-"Tl741902": {
-"^ot:altLabel": "Diaporthe ambigua", 
-"^ot:originalLabel": "Diaporthe ambigua CMW5288", 
+"Tl1050023": {
+"^ot:originalLabel": "Phytophthora asparagi VHS17644 EU301168", 
+"^ot:ottId": 610547, 
+"^ot:ottTaxonName": "Phytophthora asparagi", 
 "^ot:taxonLink": {
-"@tb:identifier.taxon": 8884, 
-"@tb:identifier.taxonVariant": 21392, 
-"@ubio": "3097777", 
-"@uniprot": "73123"
+"@tb:identifier.taxon": 524483, 
+"@tb:identifier.taxonVariant": 695743
 }
 }, 
-"Tl741903": {
-"^ot:altLabel": "Microthia havanensis", 
-"^ot:originalLabel": "Microthia havanensis CMW11301", 
+"Tl1050024": {
+"^ot:originalLabel": "Phytophthora sinensis P1475 EU079750", 
+"^ot:ottId": 662693, 
+"^ot:ottTaxonName": "Phytophthora sinensis", 
 "^ot:taxonLink": {
-"@tb:identifier.taxon": 7567, 
-"@tb:identifier.taxonVariant": 113178, 
-"@ubio": "10141238", 
-"@uniprot": "40261"
+"@tb:identifier.taxon": 617542, 
+"@tb:identifier.taxonVariant": 826601, 
+"@ubio": "1143530", 
+"@uniprot": "129361"
 }
 }, 
-"Tl741904": {
-"^ot:altLabel": "Chrysoporthe austroafricana", 
-"^ot:originalLabel": "Chrysoporthe austroafricana CMW2113", 
-"^ot:taxonLink": {
-"@tb:identifier.taxon": 6068, 
-"@tb:identifier.taxonVariant": 14622, 
-"@ubio": "5985271", 
-"@uniprot": "354353"
-}
+"Tl1050025": {
+"^ot:originalLabel": "Phytophthora gemini CBS268 85 FJ217679", 
+"^ot:ottId": 807550, 
+"^ot:ottTaxonName": "Phytophthora gemini"
 }, 
-"Tl741905": {
-"^ot:altLabel": "Cryptodiaporthe corni", 
-"^ot:originalLabel": "Cryptodiaporthe corni AR2814", 
-"^ot:taxonLink": {
-"@tb:identifier.taxon": 7603, 
-"@tb:identifier.taxonVariant": 18341, 
-"@ubio": "3169169", 
-"@uniprot": "148327"
-}
+"Tl1050026": {
+"^ot:originalLabel": "Phytophthora taxon forestsoil IMI389747 AF541908"
 }, 
-"Tl741906": {
-"^ot:altLabel": "Chrysoporthe doradensis", 
-"^ot:originalLabel": "Chrysoporthe doradensis CMW11287", 
-"^ot:taxonLink": {
-"@tb:identifier.taxon": 47756, 
-"@tb:identifier.taxonVariant": 111729, 
-"@ubio": "5985269", 
-"@uniprot": "354109"
-}
+"Tl1050027": {
+"^ot:altLabel": "Phytophthora  raspberry ", 
+"^ot:originalLabel": "Phytophthora taxon raspberry IMI389746 AF541905"
 }, 
-"Tl741907": {
-"^ot:altLabel": "Cryphonectria radicalis", 
-"^ot:originalLabel": "Cryphonectria radicalis CMW13754", 
-"^ot:taxonLink": {
-"@tb:identifier.taxon": 7571, 
-"@tb:identifier.taxonVariant": 18290, 
-"@ubio": "3192162", 
-"@uniprot": "40262"
-}
+"Tl1050028": {
+"^ot:originalLabel": "Phytophthora plurivora CBS 124092", 
+"^ot:ottId": 1089387, 
+"^ot:ottTaxonName": "Phytophthora plurivora"
 }, 
-"Tl741908": {
-"^ot:altLabel": "Diaporthe ambigua", 
-"^ot:originalLabel": "Diaporthe ambigua CMW5587", 
+"Tl1050029": {
+"^ot:originalLabel": "Phytophthora multivora WAC13200", 
+"^ot:ottId": 648173, 
+"^ot:ottTaxonName": "Phytophthora multivora", 
 "^ot:taxonLink": {
-"@tb:identifier.taxon": 8884, 
-"@tb:identifier.taxonVariant": 21392, 
-"@ubio": "3097777", 
-"@uniprot": "73123"
+"@tb:identifier.taxon": 516544, 
+"@tb:identifier.taxonVariant": 685198
 }
 }, 
-"Tl741909": {
-"^ot:altLabel": "Cryphonectria parasitica", 
-"^ot:originalLabel": "Cryphonectria parasitica CMW13749", 
+"Tl1050030": {
+"^ot:originalLabel": "Phytophthora capsici PD 00009", 
+"^ot:ottId": 5279506, 
+"^ot:ottTaxonName": "Phytophthora capsici (species ncbi:4784 in Stramenopiles)", 
 "^ot:taxonLink": {
-"@tb:identifier.taxon": 7570, 
-"@tb:identifier.taxonVariant": 18287, 
-"@ubio": "3872340", 
-"@uniprot": "5116"
+"@tb:identifier.taxon": 22256, 
+"@tb:identifier.taxonVariant": 51790, 
+"@ubio": "3151703", 
+"@uniprot": "4784"
 }
 }, 
-"Tl741910": {
-"^ot:originalLabel": "Cryphonectria decipiensCMW10484"
-}, 
-"Tl741911": {
-"^ot:altLabel": "Microthia havanensis", 
-"^ot:originalLabel": "Microthia havanensis CMW14550", 
+"Tl1050031": {
+"^ot:originalLabel": "Phytophthora citricola 33H8", 
+"^ot:ottId": 152480, 
+"^ot:ottTaxonName": "Phytophthora citricola", 
 "^ot:taxonLink": {
-"@tb:identifier.taxon": 7567, 
-"@tb:identifier.taxonVariant": 113178, 
-"@ubio": "10141238", 
-"@uniprot": "40261"
+"@tb:identifier.taxon": 617544, 
+"@tb:identifier.taxonVariant": 826603, 
+"@ubio": "1273339", 
+"@uniprot": "53984"
 }
 }, 
-"Tl741912": {
-"^ot:altLabel": "Chrysoporthe cubensis", 
-"^ot:originalLabel": "Chrysoporthe cubensis CMW10639", 
+"Tl1050032": {
+"^ot:originalLabel": "Phytophthora citricola CBS 295 29", 
+"^ot:ottId": 152480, 
+"^ot:ottTaxonName": "Phytophthora citricola", 
 "^ot:taxonLink": {
-"@tb:identifier.taxon": 6069, 
-"@tb:identifier.taxonVariant": 14623, 
-"@ubio": "5981323", 
-"@uniprot": "305400"
+"@tb:identifier.taxon": 617544, 
+"@tb:identifier.taxonVariant": 826784, 
+"@ubio": "3152527", 
+"@uniprot": "53984"
 }
 }, 
-"Tl741913": {
-"^ot:altLabel": "Ursicollum fallax", 
-"^ot:originalLabel": "Ursicollum fallax CMW18115", 
+"Tl1050033": {
+"^ot:originalLabel": "Phytophthora ilicis PD 00133 FJ801887", 
+"^ot:ottId": 103294, 
+"^ot:ottTaxonName": "Phytophthora ilicis", 
 "^ot:taxonLink": {
-"@tb:identifier.taxon": 326134, 
-"@tb:identifier.taxonVariant": 367829, 
-"@ubio": "10303804", 
-"@uniprot": "373512"
+"@tb:identifier.taxon": 22274, 
+"@tb:identifier.taxonVariant": 51830, 
+"@ubio": "3184327", 
+"@uniprot": "89335"
 }
-}, 
-"Tl741914": {
-"^ot:originalLabel": "Cryphonectria japonica CMW13747"
-}, 
-"Tl741915": {
-"^ot:originalLabel": "Chrysoporthe hodgesiana CMW 10641"
 }, 
-"Tl741916": {
-"^ot:altLabel": "Chrysoporthe inopina", 
-"^ot:originalLabel": "Chrysoporthe inopina CMW12727", 
+"Tl1050034": {
+"^ot:originalLabel": "Phytophthora meadii PD 00135", 
+"^ot:ottId": 130119, 
+"^ot:ottTaxonName": "Phytophthora meadii", 
 "^ot:taxonLink": {
-"@tb:identifier.taxon": 326133, 
-"@tb:identifier.taxonVariant": 367827, 
-"@ubio": "10303802", 
-"@uniprot": "373511"
+"@tb:identifier.taxon": 178762, 
+"@tb:identifier.taxonVariant": 252166, 
+"@ubio": "3036062", 
+"@uniprot": "192975"
 }
 }, 
-"Tl741917": {
-"^ot:altLabel": "Rostraureum tropicale", 
-"^ot:originalLabel": "Rostraureum tropicale CMW9971", 
-"^ot:taxonLink": {
-"@tb:identifier.taxon": 35038, 
-"@tb:identifier.taxonVariant": 81118, 
-"@ubio": "5972313", 
-"@uniprot": "220453"
-}
+"Tl1050035": {
+"^ot:originalLabel": "Phytophthora multivora CBS 124094", 
+"^ot:ottId": 648173, 
+"^ot:ottTaxonName": "Phytophthora multivora"
 }, 
-"Tl741918": {
-"^ot:altLabel": "Chrysoporthe cubensis", 
-"^ot:originalLabel": "Chrysoporthe cubensis CMW10669", 
+"Tl1050036": {
+"^ot:originalLabel": "Phytophthora multivesiculata PD 00001", 
+"^ot:ottId": 88501, 
+"^ot:ottTaxonName": "Phytophthora multivesiculata", 
 "^ot:taxonLink": {
-"@tb:identifier.taxon": 6069, 
-"@tb:identifier.taxonVariant": 14623, 
-"@ubio": "5981323", 
-"@uniprot": "305400"
+"@tb:identifier.taxon": 22288, 
+"@tb:identifier.taxonVariant": 51859, 
+"@ubio": "3284004", 
+"@uniprot": "129357"
 }
 }, 
-"Tl741919": {
-"^ot:originalLabel": "Chrysoporthe hodgesiana CMW 10625"
+"Tl1050037": {
+"^ot:originalLabel": "Phytophthora plurivora CBS 124089", 
+"^ot:ottId": 1089387, 
+"^ot:ottTaxonName": "Phytophthora plurivora"
 }, 
-"Tl741920": {
-"^ot:altLabel": "Chrysoporthe inopina", 
-"^ot:originalLabel": "Chrysoporthe inopina CMW12729", 
+"Tl1050038": {
+"^ot:originalLabel": "Phytophthora quercina PD 00035 GU258820", 
+"^ot:ottId": 23194, 
+"^ot:ottTaxonName": "Phytophthora quercina", 
 "^ot:taxonLink": {
-"@tb:identifier.taxon": 326133, 
-"@tb:identifier.taxonVariant": 367827, 
-"@ubio": "10303802", 
-"@uniprot": "373511"
+"@tb:identifier.taxon": 22299, 
+"@tb:identifier.taxonVariant": 51880, 
+"@ubio": "1452620", 
+"@uniprot": "78236"
 }
 }, 
-"Tl741921": {
-"^ot:altLabel": "Rostraureum tropicale", 
-"^ot:originalLabel": "Rostraureum tropicale CMW10796", 
+"Tl1050039": {
+"^ot:originalLabel": "Phytophthora multivora STEU7388", 
+"^ot:ottId": 648173, 
+"^ot:ottTaxonName": "Phytophthora multivora", 
 "^ot:taxonLink": {
-"@tb:identifier.taxon": 35038, 
-"@tb:identifier.taxonVariant": 81118, 
-"@ubio": "5972313", 
-"@uniprot": "220453"
+"@tb:identifier.taxon": 516544, 
+"@tb:identifier.taxonVariant": 685198
 }
 }, 
-"Tl741922": {
-"^ot:altLabel": "Celoporthe dispersa", 
-"^ot:originalLabel": "Celoporthe dispersa CMW9978", 
+"Tl1050040": {
+"^ot:originalLabel": "Phytophthora citrophthora PD 00024", 
+"^ot:ottId": 252699, 
+"^ot:ottTaxonName": "Phytophthora citrophthora", 
 "^ot:taxonLink": {
-"@tb:identifier.taxon": 204484, 
-"@tb:identifier.taxonVariant": 274107, 
-"@ubio": "10221436", 
-"@uniprot": "224443"
+"@tb:identifier.taxon": 22259, 
+"@tb:identifier.taxonVariant": 51796, 
+"@ubio": "3145785", 
+"@uniprot": "4793"
 }
 }, 
-"Tl741923": {
-"^ot:altLabel": "Chrysoporthe doradensis", 
-"^ot:originalLabel": "Chrysoporthe doradensis CMW11286", 
+"Tl1050041": {
+"^ot:originalLabel": "Phytophthora bisheria PD 00066", 
+"^ot:ottId": 466152, 
+"^ot:ottTaxonName": "Phytophthora bisheria", 
 "^ot:taxonLink": {
-"@tb:identifier.taxon": 47756, 
-"@tb:identifier.taxonVariant": 111729, 
-"@ubio": "5985269", 
-"@uniprot": "354109"
+"@tb:identifier.taxon": 174603, 
+"@tb:identifier.taxonVariant": 248421, 
+"@ubio": "5968394", 
+"@uniprot": "187986"
 }
 }, 
-"Tl741924": {
-"^ot:altLabel": "Cryphonectria macrospora", 
-"^ot:originalLabel": "Cryphonectria macrospora CMW10463", 
+"Tl1050042": {
+"^ot:originalLabel": "Phytophthora tropicalis PD 00152", 
+"^ot:ottId": 757305, 
+"^ot:ottTaxonName": "Phytophthora tropicalis", 
 "^ot:taxonLink": {
-"@tb:identifier.taxon": 7568, 
-"@tb:identifier.taxonVariant": 18284, 
-"@ubio": "3192160", 
-"@uniprot": "179775"
+"@tb:identifier.taxon": 38679, 
+"@tb:identifier.taxonVariant": 89551, 
+"@ubio": "3284575", 
+"@uniprot": "137729"
 }
-}, 
-"Tl741925": {
-"^ot:originalLabel": "Celoporthe syzygii CMW24912"
 }, 
-"Tl741926": {
-"^ot:altLabel": "Aurapex penicillata", 
-"^ot:originalLabel": "Aurapex penicillata CMW10035", 
+"Tl1050043": {
+"^ot:originalLabel": "Phytophthora botryosa PD 00144", 
+"^ot:ottId": 609883, 
+"^ot:ottTaxonName": "Phytophthora botryosa", 
 "^ot:taxonLink": {
-"@tb:identifier.taxon": 35046, 
-"@tb:identifier.taxonVariant": 81131, 
-"@ubio": "5972694", 
-"@uniprot": "224451"
+"@tb:identifier.taxon": 22251, 
+"@tb:identifier.taxonVariant": 51780, 
+"@ubio": "3214421", 
+"@uniprot": "129348"
 }
 }, 
-"Tl741927": {
-"^ot:originalLabel": "Celoporthe syzygii CMW34023"
-}, 
-"Tl741928": {
-"^ot:originalLabel": "Latruncella aurorae CMW28275"
-}, 
-"Tl741929": {
-"^ot:altLabel": "Chrysoporthe austroafricana", 
-"^ot:originalLabel": "Chrysoporthe austroafricana CMW9327", 
+"Tl1050044": {
+"^ot:originalLabel": "Phytophthora colocasiae PD 00139", 
+"^ot:ottId": 88463, 
+"^ot:ottTaxonName": "Phytophthora colocasiae", 
 "^ot:taxonLink": {
-"@tb:identifier.taxon": 6068, 
-"@tb:identifier.taxonVariant": 14622, 
-"@ubio": "5985271", 
-"@uniprot": "354353"
+"@tb:identifier.taxon": 22261, 
+"@tb:identifier.taxonVariant": 51801, 
+"@ubio": "3129699", 
+"@uniprot": "129350"
 }
-}, 
-"Tl741930": {
-"^ot:originalLabel": "Chrysoporthe deuterocubensis CMW 11290"
 }
 }
 }
 }, 
 "treesById": {
-"Tb16914": {
-"@label": "6 ITS Holocryphia Metrosideros", 
-"@otus": "Tls25171", 
+"Tb20394": {
+"@label": "final ITS pars1", 
+"@otus": "Tls29902", 
 "^ot:treeElementOrder": [
-"Tr52143", 
-"Tr52142", 
-"Tr52148", 
-"Tr52150", 
-"Tr52149", 
-"Tr52145", 
-"Tr52146", 
-"Tr52144"
+"Tr61320", 
+"Tr61322", 
+"Tr61323", 
+"Tr61321"
 ], 
-"^skos:historyNote": "Mapped from TreeBASE schema using org.cipres.treebase.domain.nexus.nexml.NexmlTreeBlockWriter@263f0275 $Rev: 1040 $", 
+"^skos:historyNote": "Mapped from TreeBASE schema using org.cipres.treebase.domain.nexus.nexml.NexmlTreeBlockWriter@4c59cead $Rev: 1040 $", 
 "treeById": {
-"Tr52142": {
-"@label": "Fig. 1", 
+"Tr61320": {
+"@label": "PAUP 1", 
 "@xsi:type": "nex:FloatTree", 
-"^ot:rootNodeId": "Tn8898208", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthTimeUnit": "", 
+"^ot:curatedType": "", 
+"^ot:inGroupClade": "", 
+"^ot:outGroupEdge": "", 
+"^ot:rootNodeId": "Tn9850298", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
+"^ot:unrootedTree": true, 
 "^tb:kind.tree": "Species Tree", 
-"^tb:ntax.tree": 98, 
+"^tb:ntax.tree": 52, 
 "^tb:quality.tree": "Unrated", 
 "^tb:type.tree": "Single", 
 "edgeBySourceId": {
-"Tn8898204": {
-"edge22743": {
-"@source": "Tn8898204", 
-"@target": "Tn8898272"
+"Tn9850235": {
+"edge25456": {
+"@length": 11, 
+"@source": "Tn9850235", 
+"@target": "Tn9850306"
 }, 
-"edge22745": {
-"@source": "Tn8898204", 
-"@target": "Tn8898236"
+"edge25476": {
+"@length": 20, 
+"@source": "Tn9850235", 
+"@target": "Tn9850242"
 }
 }, 
-"Tn8898207": {
-"edge22673": {
-"@source": "Tn8898207", 
-"@target": "Tn8898259"
+"Tn9850236": {
+"edge25634": {
+"@length": 6, 
+"@source": "Tn9850236", 
+"@target": "Tn9850258"
 }, 
-"edge22691": {
-"@source": "Tn8898207", 
-"@target": "Tn8898221"
-}, 
-"edge22693": {
-"@source": "Tn8898207", 
-"@target": "Tn8898323"
-}, 
-"edge22695": {
-"@source": "Tn8898207", 
-"@target": "Tn8898218"
-}, 
-"edge22697": {
-"@source": "Tn8898207", 
-"@target": "Tn8898296"
-}, 
-"edge22699": {
-"@source": "Tn8898207", 
-"@target": "Tn8898304"
-}, 
-"edge22701": {
-"@source": "Tn8898207", 
-"@target": "Tn8898269"
-}, 
-"edge22703": {
-"@source": "Tn8898207", 
-"@target": "Tn8898211"
-}, 
-"edge22705": {
-"@source": "Tn8898207", 
-"@target": "Tn8898333"
-}, 
-"edge22707": {
-"@source": "Tn8898207", 
-"@target": "Tn8898210"
-}, 
-"edge22709": {
-"@source": "Tn8898207", 
-"@target": "Tn8898308"
-}, 
-"edge22711": {
-"@source": "Tn8898207", 
-"@target": "Tn8898285"
-}, 
-"edge22713": {
-"@source": "Tn8898207", 
-"@target": "Tn8898286"
-}, 
-"edge22715": {
-"@source": "Tn8898207", 
-"@target": "Tn8898265"
-}, 
-"edge22717": {
-"@source": "Tn8898207", 
-"@target": "Tn8898331"
-}, 
-"edge22719": {
-"@source": "Tn8898207", 
-"@target": "Tn8898231"
-}, 
-"edge22721": {
-"@source": "Tn8898207", 
-"@target": "Tn8898203"
-}, 
-"edge22723": {
-"@source": "Tn8898207", 
-"@target": "Tn8898321"
-}, 
-"edge22725": {
-"@source": "Tn8898207", 
-"@target": "Tn8898336"
-}, 
-"edge22727": {
-"@source": "Tn8898207", 
-"@target": "Tn8898220"
-}, 
-"edge22729": {
-"@source": "Tn8898207", 
-"@target": "Tn8898266"
-}, 
-"edge22731": {
-"@source": "Tn8898207", 
-"@target": "Tn8898253"
-}, 
-"edge22733": {
-"@source": "Tn8898207", 
-"@target": "Tn8898340"
-}, 
-"edge22735": {
-"@source": "Tn8898207", 
-"@target": "Tn8898248"
-}, 
-"edge22737": {
-"@source": "Tn8898207", 
-"@target": "Tn8898262"
-}, 
-"edge22739": {
-"@source": "Tn8898207", 
-"@target": "Tn8898339"
+"edge25636": {
+"@length": 16, 
+"@source": "Tn9850236", 
+"@target": "Tn9850239"
 }
 }, 
-"Tn8898208": {
-"edge22543": {
-"@length": 0.5, 
-"@source": "Tn8898208", 
-"@target": "Tn8898225"
+"Tn9850239": {
+"edge25638": {
+"@length": 0, 
+"@source": "Tn9850239", 
+"@target": "Tn9850284"
 }, 
-"edge22817": {
-"@length": 0.5, 
-"@source": "Tn8898208", 
-"@target": "Tn8898243"
+"edge25640": {
+"@length": 1, 
+"@source": "Tn9850239", 
+"@target": "Tn9850255"
 }
 }, 
-"Tn8898212": {
-"edge22565": {
-"@source": "Tn8898212", 
-"@target": "Tn8898249"
+"Tn9850242": {
+"edge25478": {
+"@length": 27, 
+"@source": "Tn9850242", 
+"@target": "Tn9850283"
 }, 
-"edge22567": {
-"@source": "Tn8898212", 
-"@target": "Tn8898324"
-}, 
-"edge22569": {
-"@source": "Tn8898212", 
-"@target": "Tn8898224"
-}, 
-"edge22571": {
-"@source": "Tn8898212", 
-"@target": "Tn8898235"
+"edge25480": {
+"@length": 11, 
+"@source": "Tn9850242", 
+"@target": "Tn9850292"
 }
 }, 
-"Tn8898213": {
-"edge22547": {
-"@source": "Tn8898213", 
-"@target": "Tn8898241"
+"Tn9850243": {
+"edge25564": {
+"@length": 0, 
+"@source": "Tn9850243", 
+"@target": "Tn9850320"
 }, 
-"edge22753": {
-"@source": "Tn8898213", 
-"@target": "Tn8898313"
+"edge25566": {
+"@length": 2, 
+"@source": "Tn9850243", 
+"@target": "Tn9850280"
+}, 
+"edge25568": {
+"@length": 1, 
+"@source": "Tn9850243", 
+"@target": "Tn9850326"
 }
 }, 
-"Tn8898214": {
-"edge22665": {
-"@source": "Tn8898214", 
-"@target": "Tn8898341"
+"Tn9850244": {
+"edge25626": {
+"@length": 3, 
+"@source": "Tn9850244", 
+"@target": "Tn9850245"
 }, 
-"edge22667": {
-"@source": "Tn8898214", 
-"@target": "Tn8898329"
+"edge25632": {
+"@length": 2, 
+"@source": "Tn9850244", 
+"@target": "Tn9850236"
 }
 }, 
-"Tn8898225": {
-"edge22545": {
-"@source": "Tn8898225", 
-"@target": "Tn8898213"
+"Tn9850245": {
+"edge25628": {
+"@length": 1, 
+"@source": "Tn9850245", 
+"@target": "Tn9850290"
 }, 
-"edge22803": {
-"@source": "Tn8898225", 
-"@target": "Tn8898337"
+"edge25630": {
+"@length": 1, 
+"@source": "Tn9850245", 
+"@target": "Tn9850259"
 }
 }, 
-"Tn8898229": {
-"edge22761": {
-"@source": "Tn8898229", 
-"@target": "Tn8898209"
+"Tn9850246": {
+"edge25610": {
+"@length": 4, 
+"@source": "Tn9850246", 
+"@target": "Tn9850253"
 }, 
-"edge22763": {
-"@source": "Tn8898229", 
-"@target": "Tn8898312"
+"edge25616": {
+"@length": 8, 
+"@source": "Tn9850246", 
+"@target": "Tn9850300"
 }
 }, 
-"Tn8898241": {
-"edge22549": {
-"@source": "Tn8898241", 
-"@target": "Tn8898288"
+"Tn9850250": {
+"edge25508": {
+"@length": 3, 
+"@source": "Tn9850250", 
+"@target": "Tn9850313"
 }, 
-"edge22561": {
-"@source": "Tn8898241", 
-"@target": "Tn8898344"
+"edge25510": {
+"@length": 3, 
+"@source": "Tn9850250", 
+"@target": "Tn9850301"
 }
 }, 
-"Tn8898243": {
-"edge22819": {
-"@source": "Tn8898243", 
-"@target": "Tn8898284"
+"Tn9850251": {
+"edge25534": {
+"@length": 2, 
+"@source": "Tn9850251", 
+"@target": "Tn9850265"
 }, 
-"edge22825": {
-"@source": "Tn8898243", 
-"@target": "Tn8898234"
+"edge25536": {
+"@length": 1, 
+"@source": "Tn9850251", 
+"@target": "Tn9850275"
 }
 }, 
-"Tn8898246": {
-"edge22651": {
-"@source": "Tn8898246", 
-"@target": "Tn8898237"
+"Tn9850252": {
+"edge25472": {
+"@length": 0, 
+"@source": "Tn9850252", 
+"@target": "Tn9850299"
 }, 
-"edge22653": {
-"@source": "Tn8898246", 
-"@target": "Tn8898238"
-}, 
-"edge22655": {
-"@source": "Tn8898246", 
-"@target": "Tn8898345"
-}, 
-"edge22657": {
-"@source": "Tn8898246", 
-"@target": "Tn8898228"
-}, 
-"edge22659": {
-"@source": "Tn8898246", 
-"@target": "Tn8898223"
-}, 
-"edge22661": {
-"@source": "Tn8898246", 
-"@target": "Tn8898274"
-}, 
-"edge22663": {
-"@source": "Tn8898246", 
-"@target": "Tn8898214"
-}, 
-"edge22669": {
-"@source": "Tn8898246", 
-"@target": "Tn8898258"
+"edge25474": {
+"@length": 0, 
+"@source": "Tn9850252", 
+"@target": "Tn9850234"
 }
 }, 
-"Tn8898254": {
-"edge22645": {
-"@source": "Tn8898254", 
-"@target": "Tn8898277"
+"Tn9850253": {
+"edge25612": {
+"@length": 0, 
+"@source": "Tn9850253", 
+"@target": "Tn9850310"
 }, 
-"edge22647": {
-"@source": "Tn8898254", 
-"@target": "Tn8898251"
+"edge25614": {
+"@length": 1, 
+"@source": "Tn9850253", 
+"@target": "Tn9850329"
 }
 }, 
-"Tn8898258": {
-"edge22671": {
-"@source": "Tn8898258", 
-"@target": "Tn8898207"
+"Tn9850256": {
+"edge25572": {
+"@length": 0, 
+"@source": "Tn9850256", 
+"@target": "Tn9850323"
 }, 
-"edge22741": {
-"@source": "Tn8898258", 
-"@target": "Tn8898204"
+"edge25574": {
+"@length": 1, 
+"@source": "Tn9850256", 
+"@target": "Tn9850240"
 }
 }, 
-"Tn8898259": {
-"edge22675": {
-"@source": "Tn8898259", 
-"@target": "Tn8898319"
+"Tn9850260": {
+"edge25584": {
+"@length": 1, 
+"@source": "Tn9850260", 
+"@target": "Tn9850324"
 }, 
-"edge22677": {
-"@source": "Tn8898259", 
-"@target": "Tn8898233"
+"edge25586": {
+"@length": 1, 
+"@source": "Tn9850260", 
+"@target": "Tn9850315"
 }, 
-"edge22679": {
-"@source": "Tn8898259", 
-"@target": "Tn8898315"
-}, 
-"edge22681": {
-"@source": "Tn8898259", 
-"@target": "Tn8898294"
-}, 
-"edge22683": {
-"@source": "Tn8898259", 
-"@target": "Tn8898267"
-}, 
-"edge22685": {
-"@source": "Tn8898259", 
-"@target": "Tn8898318"
-}, 
-"edge22687": {
-"@source": "Tn8898259", 
-"@target": "Tn8898256"
-}, 
-"edge22689": {
-"@source": "Tn8898259", 
-"@target": "Tn8898325"
+"edge25600": {
+"@length": 5, 
+"@source": "Tn9850260", 
+"@target": "Tn9850281"
 }
 }, 
-"Tn8898260": {
-"edge22603": {
-"@source": "Tn8898260", 
-"@target": "Tn8898297"
+"Tn9850262": {
+"edge25502": {
+"@length": 3, 
+"@source": "Tn9850262", 
+"@target": "Tn9850294"
 }, 
-"edge22625": {
-"@source": "Tn8898260", 
-"@target": "Tn8898307"
+"edge25504": {
+"@length": 2, 
+"@source": "Tn9850262", 
+"@target": "Tn9850287"
+}, 
+"edge25506": {
+"@length": 1, 
+"@source": "Tn9850262", 
+"@target": "Tn9850250"
 }
 }, 
-"Tn8898261": {
-"edge22641": {
-"@source": "Tn8898261", 
-"@target": "Tn8898303"
+"Tn9850266": {
+"edge25620": {
+"@length": 1, 
+"@source": "Tn9850266", 
+"@target": "Tn9850322"
 }, 
-"edge22643": {
-"@source": "Tn8898261", 
-"@target": "Tn8898254"
+"edge25622": {
+"@length": 0, 
+"@source": "Tn9850266", 
+"@target": "Tn9850254"
 }
 }, 
-"Tn8898270": {
-"edge22783": {
-"@source": "Tn8898270", 
-"@target": "Tn8898205"
+"Tn9850267": {
+"edge25450": {
+"@length": 30, 
+"@source": "Tn9850267", 
+"@target": "Tn9850291"
 }, 
-"edge22785": {
-"@source": "Tn8898270", 
-"@target": "Tn8898226"
+"edge25452": {
+"@length": 42, 
+"@source": "Tn9850267", 
+"@target": "Tn9850271"
 }
 }, 
-"Tn8898271": {
-"edge22553": {
-"@source": "Tn8898271", 
-"@target": "Tn8898227"
+"Tn9850272": {
+"edge25490": {
+"@length": 13, 
+"@source": "Tn9850272", 
+"@target": "Tn9850314"
 }, 
-"edge22555": {
-"@source": "Tn8898271", 
-"@target": "Tn8898342"
+"edge25542": {
+"@length": 3, 
+"@source": "Tn9850272", 
+"@target": "Tn9850273"
 }
 }, 
-"Tn8898275": {
-"edge22633": {
-"@source": "Tn8898275", 
-"@target": "Tn8898283"
+"Tn9850273": {
+"edge25544": {
+"@length": 5, 
+"@source": "Tn9850273", 
+"@target": "Tn9850282"
 }, 
-"edge22747": {
-"@source": "Tn8898275", 
-"@target": "Tn8898300"
+"edge25550": {
+"@length": 1, 
+"@source": "Tn9850273", 
+"@target": "Tn9850303"
 }
 }, 
-"Tn8898278": {
-"edge22769": {
-"@source": "Tn8898278", 
-"@target": "Tn8898309"
+"Tn9850275": {
+"edge25538": {
+"@length": 2, 
+"@source": "Tn9850275", 
+"@target": "Tn9850269"
 }, 
-"edge22775": {
-"@source": "Tn8898278", 
-"@target": "Tn8898338"
+"edge25540": {
+"@length": 0, 
+"@source": "Tn9850275", 
+"@target": "Tn9850327"
 }
 }, 
-"Tn8898279": {
-"edge22793": {
-"@source": "Tn8898279", 
-"@target": "Tn8898206"
+"Tn9850276": {
+"edge25466": {
+"@length": 2, 
+"@source": "Tn9850276", 
+"@target": "Tn9850263"
 }, 
-"edge22795": {
-"@source": "Tn8898279", 
-"@target": "Tn8898216"
+"edge25468": {
+"@length": 0, 
+"@source": "Tn9850276", 
+"@target": "Tn9850270"
+}, 
+"edge25470": {
+"@length": 5, 
+"@source": "Tn9850276", 
+"@target": "Tn9850252"
 }
 }, 
-"Tn8898280": {
-"edge22781": {
-"@source": "Tn8898280", 
-"@target": "Tn8898270"
+"Tn9850277": {
+"edge25484": {
+"@length": 3, 
+"@source": "Tn9850277", 
+"@target": "Tn9850325"
 }, 
-"edge22787": {
-"@source": "Tn8898280", 
-"@target": "Tn8898242"
+"edge25486": {
+"@length": 3, 
+"@source": "Tn9850277", 
+"@target": "Tn9850330"
 }
 }, 
-"Tn8898283": {
-"edge22635": {
-"@source": "Tn8898283", 
-"@target": "Tn8898247"
+"Tn9850278": {
+"edge25522": {
+"@length": 9, 
+"@source": "Tn9850278", 
+"@target": "Tn9850288"
 }, 
-"edge22637": {
-"@source": "Tn8898283", 
-"@target": "Tn8898219"
-}, 
-"edge22639": {
-"@source": "Tn8898283", 
-"@target": "Tn8898261"
-}, 
-"edge22649": {
-"@source": "Tn8898283", 
-"@target": "Tn8898246"
+"edge25528": {
+"@length": 4, 
+"@source": "Tn9850278", 
+"@target": "Tn9850289"
 }
 }, 
-"Tn8898284": {
-"edge22821": {
-"@source": "Tn8898284", 
-"@target": "Tn8898317"
+"Tn9850279": {
+"edge25556": {
+"@length": 7, 
+"@source": "Tn9850279", 
+"@target": "Tn9850297"
 }, 
-"edge22823": {
-"@source": "Tn8898284", 
-"@target": "Tn8898276"
+"edge25558": {
+"@length": 5, 
+"@source": "Tn9850279", 
+"@target": "Tn9850305"
 }
 }, 
-"Tn8898287": {
-"edge22607": {
-"@source": "Tn8898287", 
-"@target": "Tn8898257"
+"Tn9850281": {
+"edge25602": {
+"@length": 5, 
+"@source": "Tn9850281", 
+"@target": "Tn9850318"
 }, 
-"edge22609": {
-"@source": "Tn8898287", 
-"@target": "Tn8898217"
-}, 
-"edge22611": {
-"@source": "Tn8898287", 
-"@target": "Tn8898292"
-}, 
-"edge22613": {
-"@source": "Tn8898287", 
-"@target": "Tn8898299"
-}, 
-"edge22615": {
-"@source": "Tn8898287", 
-"@target": "Tn8898320"
+"edge25608": {
+"@length": 2, 
+"@source": "Tn9850281", 
+"@target": "Tn9850246"
 }
 }, 
-"Tn8898288": {
-"edge22551": {
-"@source": "Tn8898288", 
-"@target": "Tn8898271"
+"Tn9850282": {
+"edge25546": {
+"@length": 0, 
+"@source": "Tn9850282", 
+"@target": "Tn9850316"
 }, 
-"edge22557": {
-"@source": "Tn8898288", 
-"@target": "Tn8898298"
-}, 
-"edge22559": {
-"@source": "Tn8898288", 
-"@target": "Tn8898215"
+"edge25548": {
+"@length": 1, 
+"@source": "Tn9850282", 
+"@target": "Tn9850248"
 }
 }, 
-"Tn8898293": {
-"edge22767": {
-"@source": "Tn8898293", 
-"@target": "Tn8898278"
+"Tn9850286": {
+"edge25496": {
+"@length": 0, 
+"@source": "Tn9850286", 
+"@target": "Tn9850261"
 }, 
-"edge22797": {
-"@source": "Tn8898293", 
-"@target": "Tn8898322"
+"edge25498": {
+"@length": 0, 
+"@source": "Tn9850286", 
+"@target": "Tn9850247"
 }
 }, 
-"Tn8898295": {
-"edge22575": {
-"@source": "Tn8898295", 
-"@target": "Tn8898263"
+"Tn9850288": {
+"edge25524": {
+"@length": 1, 
+"@source": "Tn9850288", 
+"@target": "Tn9850311"
 }, 
-"edge22577": {
-"@source": "Tn8898295", 
-"@target": "Tn8898282"
-}, 
-"edge22579": {
-"@source": "Tn8898295", 
-"@target": "Tn8898316"
-}, 
-"edge22581": {
-"@source": "Tn8898295", 
-"@target": "Tn8898310"
+"edge25526": {
+"@length": 0, 
+"@source": "Tn9850288", 
+"@target": "Tn9850257"
 }
 }, 
-"Tn8898297": {
-"edge22605": {
-"@source": "Tn8898297", 
-"@target": "Tn8898287"
+"Tn9850289": {
+"edge25530": {
+"@length": 0, 
+"@source": "Tn9850289", 
+"@target": "Tn9850237"
 }, 
-"edge22617": {
-"@source": "Tn8898297", 
-"@target": "Tn8898327"
+"edge25532": {
+"@length": 2, 
+"@source": "Tn9850289", 
+"@target": "Tn9850251"
 }
 }, 
-"Tn8898300": {
-"edge22749": {
-"@source": "Tn8898300", 
-"@target": "Tn8898232"
+"Tn9850292": {
+"edge25482": {
+"@length": 4, 
+"@source": "Tn9850292", 
+"@target": "Tn9850277"
 }, 
-"edge22751": {
-"@source": "Tn8898300", 
-"@target": "Tn8898240"
+"edge25488": {
+"@length": 3, 
+"@source": "Tn9850292", 
+"@target": "Tn9850272"
 }
 }, 
-"Tn8898301": {
-"edge22591": {
-"@source": "Tn8898301", 
-"@target": "Tn8898255"
+"Tn9850293": {
+"edge25516": {
+"@length": 0, 
+"@source": "Tn9850293", 
+"@target": "Tn9850241"
 }, 
-"edge22593": {
-"@source": "Tn8898301", 
-"@target": "Tn8898314"
+"edge25518": {
+"@length": 0, 
+"@source": "Tn9850293", 
+"@target": "Tn9850238"
 }
 }, 
-"Tn8898302": {
-"edge22779": {
-"@source": "Tn8898302", 
-"@target": "Tn8898280"
+"Tn9850298": {
+"edge25448": {
+"@length": 18, 
+"@source": "Tn9850298", 
+"@target": "Tn9850267"
 }, 
-"edge22789": {
-"@source": "Tn8898302", 
-"@target": "Tn8898289"
+"edge25454": {
+"@length": 33, 
+"@source": "Tn9850298", 
+"@target": "Tn9850235"
 }
 }, 
-"Tn8898306": {
-"edge22807": {
-"@source": "Tn8898306", 
-"@target": "Tn8898239"
+"Tn9850300": {
+"edge25618": {
+"@length": 2, 
+"@source": "Tn9850300", 
+"@target": "Tn9850266"
 }, 
-"edge22809": {
-"@source": "Tn8898306", 
-"@target": "Tn8898335"
+"edge25624": {
+"@length": 2, 
+"@source": "Tn9850300", 
+"@target": "Tn9850244"
 }
 }, 
-"Tn8898307": {
-"edge22627": {
-"@source": "Tn8898307", 
-"@target": "Tn8898273"
+"Tn9850302": {
+"edge25494": {
+"@length": 10, 
+"@source": "Tn9850302", 
+"@target": "Tn9850286"
 }, 
-"edge22629": {
-"@source": "Tn8898307", 
-"@target": "Tn8898245"
+"edge25500": {
+"@length": 2, 
+"@source": "Tn9850302", 
+"@target": "Tn9850262"
 }
 }, 
-"Tn8898309": {
-"edge22771": {
-"@source": "Tn8898309", 
-"@target": "Tn8898268"
+"Tn9850303": {
+"edge25552": {
+"@length": 2, 
+"@source": "Tn9850303", 
+"@target": "Tn9850304"
 }, 
-"edge22773": {
-"@source": "Tn8898309", 
-"@target": "Tn8898330"
+"edge25554": {
+"@length": 6, 
+"@source": "Tn9850303", 
+"@target": "Tn9850279"
+}, 
+"edge25582": {
+"@length": 3, 
+"@source": "Tn9850303", 
+"@target": "Tn9850260"
 }
 }, 
-"Tn8898310": {
-"edge22583": {
-"@length": 2.0, 
-"@source": "Tn8898310", 
-"@target": "Tn8898264"
+"Tn9850305": {
+"edge25560": {
+"@length": 7, 
+"@source": "Tn9850305", 
+"@target": "Tn9850274"
 }, 
-"edge22585": {
-"@source": "Tn8898310", 
-"@target": "Tn8898244"
-}, 
-"edge22587": {
-"@source": "Tn8898310", 
-"@target": "Tn8898343"
-}, 
-"edge22589": {
-"@source": "Tn8898310", 
-"@target": "Tn8898301"
-}, 
-"edge22595": {
-"@source": "Tn8898310", 
-"@target": "Tn8898326"
-}, 
-"edge22601": {
-"@source": "Tn8898310", 
-"@target": "Tn8898260"
-}, 
-"edge22631": {
-"@source": "Tn8898310", 
-"@target": "Tn8898275"
+"edge25562": {
+"@length": 3, 
+"@source": "Tn9850305", 
+"@target": "Tn9850243"
 }
 }, 
-"Tn8898313": {
-"edge22755": {
-"@source": "Tn8898313", 
-"@target": "Tn8898328"
+"Tn9850306": {
+"edge25458": {
+"@length": 11, 
+"@source": "Tn9850306", 
+"@target": "Tn9850307"
 }, 
-"edge22765": {
-"@source": "Tn8898313", 
-"@target": "Tn8898293"
+"edge25464": {
+"@length": 9, 
+"@source": "Tn9850306", 
+"@target": "Tn9850276"
 }
 }, 
-"Tn8898322": {
-"edge22799": {
-"@source": "Tn8898322", 
-"@target": "Tn8898291"
+"Tn9850307": {
+"edge25460": {
+"@length": 1, 
+"@source": "Tn9850307", 
+"@target": "Tn9850328"
 }, 
-"edge22801": {
-"@source": "Tn8898322", 
-"@target": "Tn8898230"
+"edge25462": {
+"@length": 1, 
+"@source": "Tn9850307", 
+"@target": "Tn9850285"
 }
 }, 
-"Tn8898326": {
-"edge22597": {
-"@source": "Tn8898326", 
-"@target": "Tn8898305"
+"Tn9850308": {
+"edge25514": {
+"@length": 7, 
+"@source": "Tn9850308", 
+"@target": "Tn9850293"
 }, 
-"edge22599": {
-"@source": "Tn8898326", 
-"@target": "Tn8898252"
+"edge25520": {
+"@length": 5, 
+"@source": "Tn9850308", 
+"@target": "Tn9850278"
 }
 }, 
-"Tn8898327": {
-"edge22619": {
-"@source": "Tn8898327", 
-"@target": "Tn8898222"
+"Tn9850312": {
+"edge25578": {
+"@length": 0, 
+"@source": "Tn9850312", 
+"@target": "Tn9850295"
 }, 
-"edge22621": {
-"@source": "Tn8898327", 
-"@target": "Tn8898281"
-}, 
-"edge22623": {
-"@source": "Tn8898327", 
-"@target": "Tn8898334"
+"edge25580": {
+"@length": 1, 
+"@source": "Tn9850312", 
+"@target": "Tn9850317"
 }
 }, 
-"Tn8898328": {
-"edge22757": {
-"@source": "Tn8898328", 
-"@target": "Tn8898290"
+"Tn9850314": {
+"edge25492": {
+"@length": 8, 
+"@source": "Tn9850314", 
+"@target": "Tn9850302"
 }, 
-"edge22759": {
-"@source": "Tn8898328", 
-"@target": "Tn8898229"
+"edge25512": {
+"@length": 7, 
+"@source": "Tn9850314", 
+"@target": "Tn9850308"
 }
 }, 
-"Tn8898332": {
-"edge22813": {
-"@source": "Tn8898332", 
-"@target": "Tn8898250"
+"Tn9850315": {
+"edge25588": {
+"@length": 1, 
+"@source": "Tn9850315", 
+"@target": "Tn9850249"
 }, 
-"edge22815": {
-"@source": "Tn8898332", 
-"@target": "Tn8898311"
+"edge25590": {
+"@length": 1, 
+"@source": "Tn9850315", 
+"@target": "Tn9850319"
 }
 }, 
-"Tn8898337": {
-"edge22805": {
-"@source": "Tn8898337", 
-"@target": "Tn8898306"
+"Tn9850318": {
+"edge25604": {
+"@length": 0, 
+"@source": "Tn9850318", 
+"@target": "Tn9850331"
 }, 
-"edge22811": {
-"@source": "Tn8898337", 
-"@target": "Tn8898332"
+"edge25606": {
+"@length": 1, 
+"@source": "Tn9850318", 
+"@target": "Tn9850268"
 }
 }, 
-"Tn8898338": {
-"edge22777": {
-"@source": "Tn8898338", 
-"@target": "Tn8898302"
+"Tn9850319": {
+"edge25592": {
+"@length": 12, 
+"@source": "Tn9850319", 
+"@target": "Tn9850264"
 }, 
-"edge22791": {
-"@source": "Tn8898338", 
-"@target": "Tn8898279"
+"edge25594": {
+"@length": 1, 
+"@source": "Tn9850319", 
+"@target": "Tn9850321"
 }
 }, 
-"Tn8898344": {
-"edge22563": {
-"@source": "Tn8898344", 
-"@target": "Tn8898212"
+"Tn9850321": {
+"edge25596": {
+"@length": 1, 
+"@source": "Tn9850321", 
+"@target": "Tn9850296"
 }, 
-"edge22573": {
-"@source": "Tn8898344", 
-"@target": "Tn8898295"
+"edge25598": {
+"@length": 1, 
+"@source": "Tn9850321", 
+"@target": "Tn9850309"
+}
+}, 
+"Tn9850326": {
+"edge25570": {
+"@length": 3, 
+"@source": "Tn9850326", 
+"@target": "Tn9850256"
+}, 
+"edge25576": {
+"@length": 2, 
+"@source": "Tn9850326", 
+"@target": "Tn9850312"
 }
 }
 }, 
 "nodeById": {
-"Tn8898203": {
-"@otu": "Tl741844"
+"Tn9850234": {
+"@otu": "Tl1050019"
 }, 
-"Tn8898204": {}, 
-"Tn8898205": {
-"@otu": "Tl741797"
+"Tn9850235": {}, 
+"Tn9850236": {}, 
+"Tn9850237": {
+"@otu": "Tl1050009"
 }, 
-"Tn8898206": {
-"@otu": "Tl741808"
+"Tn9850238": {
+"@otu": "Tl1050025", 
+"^ot:isTaxonExemplar": false
 }, 
-"Tn8898207": {}, 
-"Tn8898208": {
+"Tn9850239": {}, 
+"Tn9850240": {
+"@otu": "Tl1049983", 
+"^ot:isTaxonExemplar": false
+}, 
+"Tn9850241": {
+"@otu": "Tl1050015", 
+"^ot:isTaxonExemplar": true
+}, 
+"Tn9850242": {}, 
+"Tn9850243": {}, 
+"Tn9850244": {}, 
+"Tn9850245": {}, 
+"Tn9850246": {}, 
+"Tn9850247": {
+"@otu": "Tl1049977"
+}, 
+"Tn9850248": {
+"@otu": "Tl1049994"
+}, 
+"Tn9850249": {
+"@otu": "Tl1050006"
+}, 
+"Tn9850250": {}, 
+"Tn9850251": {}, 
+"Tn9850252": {}, 
+"Tn9850253": {}, 
+"Tn9850254": {
+"@otu": "Tl1050000", 
+"^ot:isTaxonExemplar": false
+}, 
+"Tn9850255": {
+"@otu": "Tl1049990", 
+"^ot:isTaxonExemplar": false
+}, 
+"Tn9850256": {}, 
+"Tn9850257": {
+"@otu": "Tl1049978"
+}, 
+"Tn9850258": {
+"@otu": "Tl1050014"
+}, 
+"Tn9850259": {
+"@otu": "Tl1049996", 
+"^ot:isTaxonExemplar": false
+}, 
+"Tn9850260": {}, 
+"Tn9850261": {
+"@otu": "Tl1050013"
+}, 
+"Tn9850262": {}, 
+"Tn9850263": {
+"@otu": "Tl1049984"
+}, 
+"Tn9850264": {
+"@otu": "Tl1049981"
+}, 
+"Tn9850265": {
+"@label": "Phytophthora humicola like MUCC768 HQ012959", 
+"@otu": "Tl1050002", 
+"^ot:isTaxonExemplar": true
+}, 
+"Tn9850266": {}, 
+"Tn9850267": {}, 
+"Tn9850268": {
+"@otu": "Tl1049995", 
+"^ot:isTaxonExemplar": false
+}, 
+"Tn9850269": {
+"@otu": "Tl1049980", 
+"^ot:isTaxonExemplar": false
+}, 
+"Tn9850270": {
+"@otu": "Tl1049976"
+}, 
+"Tn9850271": {
+"@otu": "Tl1050024"
+}, 
+"Tn9850272": {}, 
+"Tn9850273": {}, 
+"Tn9850274": {
+"@otu": "Tl1049993"
+}, 
+"Tn9850275": {}, 
+"Tn9850276": {}, 
+"Tn9850277": {}, 
+"Tn9850278": {}, 
+"Tn9850279": {}, 
+"Tn9850280": {
+"@otu": "Tl1049998"
+}, 
+"Tn9850281": {}, 
+"Tn9850282": {}, 
+"Tn9850283": {
+"@otu": "Tl1049986"
+}, 
+"Tn9850284": {
+"@otu": "Tl1050022", 
+"^ot:isTaxonExemplar": true
+}, 
+"Tn9850285": {
+"@otu": "Tl1050007", 
+"^ot:isTaxonExemplar": false
+}, 
+"Tn9850286": {}, 
+"Tn9850287": {
+"@otu": "Tl1049997"
+}, 
+"Tn9850288": {}, 
+"Tn9850289": {}, 
+"Tn9850290": {
+"@otu": "Tl1049992", 
+"^ot:isTaxonExemplar": true
+}, 
+"Tn9850291": {
+"@otu": "Tl1050008"
+}, 
+"Tn9850292": {}, 
+"Tn9850293": {}, 
+"Tn9850294": {
+"@otu": "Tl1049991"
+}, 
+"Tn9850295": {
+"@otu": "Tl1050017", 
+"^ot:isTaxonExemplar": true
+}, 
+"Tn9850296": {
+"@otu": "Tl1050001"
+}, 
+"Tn9850297": {
+"@otu": "Tl1049987"
+}, 
+"Tn9850298": {
 "@root": true
 }, 
-"Tn8898209": {
-"@otu": "Tl741768"
-}, 
-"Tn8898210": {
-"@otu": "Tl741800"
-}, 
-"Tn8898211": {
-"@otu": "Tl741809"
-}, 
-"Tn8898212": {}, 
-"Tn8898213": {}, 
-"Tn8898214": {}, 
-"Tn8898215": {
-"@otu": "Tl741848"
-}, 
-"Tn8898216": {
-"@otu": "Tl741813"
-}, 
-"Tn8898217": {
-"@otu": "Tl741841"
-}, 
-"Tn8898218": {
-"@otu": "Tl741777"
-}, 
-"Tn8898219": {
-"@otu": "Tl741846"
-}, 
-"Tn8898220": {
-"@otu": "Tl741812"
-}, 
-"Tn8898221": {
-"@otu": "Tl741778"
-}, 
-"Tn8898222": {
-"@otu": "Tl741789"
-}, 
-"Tn8898223": {
-"@otu": "Tl741769"
-}, 
-"Tn8898224": {
-"@otu": "Tl741784"
-}, 
-"Tn8898225": {}, 
-"Tn8898226": {
-"@otu": "Tl741821"
-}, 
-"Tn8898227": {
-"@otu": "Tl741814"
-}, 
-"Tn8898228": {
-"@otu": "Tl741788"
-}, 
-"Tn8898229": {}, 
-"Tn8898230": {
-"@otu": "Tl741829"
-}, 
-"Tn8898231": {
-"@otu": "Tl741837"
-}, 
-"Tn8898232": {
-"@otu": "Tl741763"
-}, 
-"Tn8898233": {
-"@otu": "Tl741854"
-}, 
-"Tn8898234": {
-"@otu": "Tl741836"
-}, 
-"Tn8898235": {
-"@otu": "Tl741761"
-}, 
-"Tn8898236": {
-"@otu": "Tl741820"
-}, 
-"Tn8898237": {
-"@otu": "Tl741793"
-}, 
-"Tn8898238": {
-"@otu": "Tl741851"
-}, 
-"Tn8898239": {
-"@otu": "Tl741759"
-}, 
-"Tn8898240": {
-"@otu": "Tl741807"
-}, 
-"Tn8898241": {}, 
-"Tn8898242": {
-"@otu": "Tl741762"
-}, 
-"Tn8898243": {}, 
-"Tn8898244": {
-"@otu": "Tl741783"
-}, 
-"Tn8898245": {
-"@otu": "Tl741806"
-}, 
-"Tn8898246": {}, 
-"Tn8898247": {
-"@otu": "Tl741827"
-}, 
-"Tn8898248": {
-"@otu": "Tl741782"
-}, 
-"Tn8898249": {
-"@otu": "Tl741798"
-}, 
-"Tn8898250": {
-"@otu": "Tl741826"
-}, 
-"Tn8898251": {
-"@otu": "Tl741842"
-}, 
-"Tn8898252": {
-"@otu": "Tl741785"
-}, 
-"Tn8898253": {
-"@otu": "Tl741855"
-}, 
-"Tn8898254": {}, 
-"Tn8898255": {
-"@otu": "Tl741790"
-}, 
-"Tn8898256": {
-"@otu": "Tl741796"
-}, 
-"Tn8898257": {
-"@otu": "Tl741764"
-}, 
-"Tn8898258": {}, 
-"Tn8898259": {}, 
-"Tn8898260": {}, 
-"Tn8898261": {}, 
-"Tn8898262": {
-"@otu": "Tl741833"
-}, 
-"Tn8898263": {
-"@otu": "Tl741816"
-}, 
-"Tn8898264": {
-"@otu": "Tl741804"
-}, 
-"Tn8898265": {
-"@otu": "Tl741847"
-}, 
-"Tn8898266": {
-"@otu": "Tl741799"
-}, 
-"Tn8898267": {
-"@otu": "Tl741818"
-}, 
-"Tn8898268": {
-"@otu": "Tl741823"
-}, 
-"Tn8898269": {
-"@otu": "Tl741849"
-}, 
-"Tn8898270": {}, 
-"Tn8898271": {}, 
-"Tn8898272": {
-"@otu": "Tl741811"
-}, 
-"Tn8898273": {
-"@otu": "Tl741839"
-}, 
-"Tn8898274": {
-"@otu": "Tl741787"
-}, 
-"Tn8898275": {}, 
-"Tn8898276": {
-"@otu": "Tl741779"
-}, 
-"Tn8898277": {
-"@otu": "Tl741774"
-}, 
-"Tn8898278": {}, 
-"Tn8898279": {}, 
-"Tn8898280": {}, 
-"Tn8898281": {
-"@otu": "Tl741792"
-}, 
-"Tn8898282": {
-"@otu": "Tl741828"
-}, 
-"Tn8898283": {}, 
-"Tn8898284": {}, 
-"Tn8898285": {
-"@otu": "Tl741766"
-}, 
-"Tn8898286": {
-"@otu": "Tl741780"
-}, 
-"Tn8898287": {}, 
-"Tn8898288": {}, 
-"Tn8898289": {
-"@otu": "Tl741795"
-}, 
-"Tn8898290": {
-"@otu": "Tl741772"
-}, 
-"Tn8898291": {
-"@otu": "Tl741817"
-}, 
-"Tn8898292": {
-"@otu": "Tl741831"
-}, 
-"Tn8898293": {}, 
-"Tn8898294": {
-"@otu": "Tl741776"
-}, 
-"Tn8898295": {}, 
-"Tn8898296": {
-"@otu": "Tl741802"
-}, 
-"Tn8898297": {}, 
-"Tn8898298": {
-"@otu": "Tl741791"
-}, 
-"Tn8898299": {
-"@otu": "Tl741840"
-}, 
-"Tn8898300": {}, 
-"Tn8898301": {}, 
-"Tn8898302": {}, 
-"Tn8898303": {
-"@otu": "Tl741794"
-}, 
-"Tn8898304": {
-"@otu": "Tl741765"
-}, 
-"Tn8898305": {
-"@otu": "Tl741856"
-}, 
-"Tn8898306": {}, 
-"Tn8898307": {}, 
-"Tn8898308": {
-"@otu": "Tl741830"
-}, 
-"Tn8898309": {}, 
-"Tn8898310": {}, 
-"Tn8898311": {
-"@otu": "Tl741838"
-}, 
-"Tn8898312": {
-"@otu": "Tl741835"
-}, 
-"Tn8898313": {}, 
-"Tn8898314": {
-"@otu": "Tl741819"
-}, 
-"Tn8898315": {
-"@otu": "Tl741775"
-}, 
-"Tn8898316": {
-"@otu": "Tl741850"
-}, 
-"Tn8898317": {
-"@otu": "Tl741770"
-}, 
-"Tn8898318": {
-"@otu": "Tl741825"
-}, 
-"Tn8898319": {
-"@otu": "Tl741822"
-}, 
-"Tn8898320": {
-"@otu": "Tl741843"
-}, 
-"Tn8898321": {
-"@otu": "Tl741760"
-}, 
-"Tn8898322": {}, 
-"Tn8898323": {
-"@otu": "Tl741834"
-}, 
-"Tn8898324": {
-"@otu": "Tl741810"
-}, 
-"Tn8898325": {
-"@otu": "Tl741786"
-}, 
-"Tn8898326": {}, 
-"Tn8898327": {}, 
-"Tn8898328": {}, 
-"Tn8898329": {
-"@otu": "Tl741781"
-}, 
-"Tn8898330": {
-"@otu": "Tl741824"
-}, 
-"Tn8898331": {
-"@otu": "Tl741805"
-}, 
-"Tn8898332": {}, 
-"Tn8898333": {
-"@otu": "Tl741771"
-}, 
-"Tn8898334": {
-"@otu": "Tl741803"
-}, 
-"Tn8898335": {
-"@otu": "Tl741852"
-}, 
-"Tn8898336": {
-"@otu": "Tl741853"
-}, 
-"Tn8898337": {}, 
-"Tn8898338": {}, 
-"Tn8898339": {
-"@otu": "Tl741801"
-}, 
-"Tn8898340": {
-"@otu": "Tl741845"
-}, 
-"Tn8898341": {
-"@otu": "Tl741815"
-}, 
-"Tn8898342": {
-"@otu": "Tl741832"
-}, 
-"Tn8898343": {
-"@otu": "Tl741773"
-}, 
-"Tn8898344": {}, 
-"Tn8898345": {
-"@otu": "Tl741767"
+"Tn9850299": {
+"@otu": "Tl1050011"
+}, 
+"Tn9850300": {}, 
+"Tn9850301": {
+"@otu": "Tl1050012", 
+"^ot:isTaxonExemplar": false
+}, 
+"Tn9850302": {}, 
+"Tn9850303": {}, 
+"Tn9850304": {
+"@otu": "Tl1050026"
+}, 
+"Tn9850305": {}, 
+"Tn9850306": {}, 
+"Tn9850307": {}, 
+"Tn9850308": {}, 
+"Tn9850309": {
+"@otu": "Tl1049985"
+}, 
+"Tn9850310": {
+"@otu": "Tl1049979"
+}, 
+"Tn9850311": {
+"@otu": "Tl1049989"
+}, 
+"Tn9850312": {}, 
+"Tn9850313": {
+"@otu": "Tl1049988", 
+"^ot:isTaxonExemplar": true
+}, 
+"Tn9850314": {}, 
+"Tn9850315": {}, 
+"Tn9850316": {
+"@otu": "Tl1050003"
+}, 
+"Tn9850317": {
+"@otu": "Tl1050005", 
+"^ot:isTaxonExemplar": false
+}, 
+"Tn9850318": {}, 
+"Tn9850319": {}, 
+"Tn9850320": {
+"@otu": "Tl1050027"
+}, 
+"Tn9850321": {}, 
+"Tn9850322": {
+"@otu": "Tl1050004", 
+"^ot:isTaxonExemplar": true
+}, 
+"Tn9850323": {
+"@otu": "Tl1050020", 
+"^ot:isTaxonExemplar": true
+}, 
+"Tn9850324": {
+"@otu": "Tl1050021"
+}, 
+"Tn9850325": {
+"@otu": "Tl1049999"
+}, 
+"Tn9850326": {}, 
+"Tn9850327": {
+"@otu": "Tl1050018", 
+"^ot:isTaxonExemplar": false
+}, 
+"Tn9850328": {
+"@otu": "Tl1050023", 
+"^ot:isTaxonExemplar": true
+}, 
+"Tn9850329": {
+"@otu": "Tl1050010"
+}, 
+"Tn9850330": {
+"@otu": "Tl1050016"
+}, 
+"Tn9850331": {
+"@otu": "Tl1049982", 
+"^ot:isTaxonExemplar": true
 }
 }
 }, 
-"Tr52143": {
-"@label": "Fig. 3d", 
+"Tr61321": {
+"@label": "PAUP 1", 
 "@xsi:type": "nex:FloatTree", 
-"^ot:rootNodeId": "Tn8898534", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
+"^ot:curatedType": "", 
+"^ot:inGroupClade": "", 
+"^ot:outGroupEdge": "", 
+"^ot:rootNodeId": "Tn9850399", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
+"^ot:unrootedTree": true, 
 "^tb:kind.tree": "Species Tree", 
-"^tb:ntax.tree": 35, 
+"^tb:ntax.tree": 52, 
 "^tb:quality.tree": "Unrated", 
 "^tb:type.tree": "Single", 
 "edgeBySourceId": {
-"Tn8898506": {
-"edge22517": {
-"@source": "Tn8898506", 
-"@target": "Tn8898530"
+"Tn9850333": {
+"edge25820": {
+"@source": "Tn9850333", 
+"@target": "Tn9850362"
 }, 
-"edge22519": {
-"@source": "Tn8898506", 
-"@target": "Tn8898514"
-}, 
-"edge22521": {
-"@source": "Tn8898506", 
-"@target": "Tn8898519"
-}, 
-"edge22523": {
-"@source": "Tn8898506", 
-"@target": "Tn8898544"
+"edge25822": {
+"@source": "Tn9850333", 
+"@target": "Tn9850347"
 }
 }, 
-"Tn8898513": {
-"edge22529": {
-"@source": "Tn8898513", 
-"@target": "Tn8898527"
+"Tn9850335": {
+"edge25864": {
+"@source": "Tn9850335", 
+"@target": "Tn9850356"
 }, 
-"edge22531": {
-"@source": "Tn8898513", 
-"@target": "Tn8898546"
+"edge25866": {
+"@source": "Tn9850335", 
+"@target": "Tn9850348"
 }
 }, 
-"Tn8898515": {
-"edge22503": {
-"@source": "Tn8898515", 
-"@target": "Tn8898516"
+"Tn9850337": {
+"edge25856": {
+"@source": "Tn9850337", 
+"@target": "Tn9850342"
 }, 
-"edge22515": {
-"@source": "Tn8898515", 
-"@target": "Tn8898506"
+"edge25858": {
+"@source": "Tn9850337", 
+"@target": "Tn9850365"
 }
 }, 
-"Tn8898516": {
-"edge22505": {
-"@source": "Tn8898516", 
-"@target": "Tn8898531"
+"Tn9850341": {
+"edge25872": {
+"@source": "Tn9850341", 
+"@target": "Tn9850361"
 }, 
-"edge22513": {
-"@source": "Tn8898516", 
-"@target": "Tn8898536"
+"edge25874": {
+"@source": "Tn9850341", 
+"@target": "Tn9850338"
 }
 }, 
-"Tn8898517": {
-"edge22469": {
-"@source": "Tn8898517", 
-"@target": "Tn8898542"
+"Tn9850345": {
+"edge25936": {
+"@source": "Tn9850345", 
+"@target": "Tn9850404"
 }, 
-"edge22471": {
-"@source": "Tn8898517", 
-"@target": "Tn8898550"
-}, 
-"edge22473": {
-"@source": "Tn8898517", 
-"@target": "Tn8898509"
-}, 
-"edge22475": {
-"@source": "Tn8898517", 
-"@target": "Tn8898553"
-}, 
-"edge22477": {
-"@source": "Tn8898517", 
-"@target": "Tn8898541"
-}, 
-"edge22479": {
-"@source": "Tn8898517", 
-"@target": "Tn8898524"
-}, 
-"edge22481": {
-"@source": "Tn8898517", 
-"@target": "Tn8898512"
+"edge25938": {
+"@source": "Tn9850345", 
+"@target": "Tn9850339"
 }
 }, 
-"Tn8898521": {
-"edge22501": {
-"@source": "Tn8898521", 
-"@target": "Tn8898515"
+"Tn9850346": {
+"edge25826": {
+"@source": "Tn9850346", 
+"@target": "Tn9850395"
 }, 
-"edge22525": {
-"@source": "Tn8898521", 
-"@target": "Tn8898522"
+"edge25828": {
+"@source": "Tn9850346", 
+"@target": "Tn9850352"
 }
 }, 
-"Tn8898526": {
-"edge22435": {
-"@source": "Tn8898526", 
-"@target": "Tn8898551"
+"Tn9850351": {
+"edge25966": {
+"@source": "Tn9850351", 
+"@target": "Tn9850368"
 }, 
-"edge22499": {
-"@source": "Tn8898526", 
-"@target": "Tn8898521"
+"edge25968": {
+"@source": "Tn9850351", 
+"@target": "Tn9850419"
 }
 }, 
-"Tn8898529": {
-"edge22447": {
-"@length": 2.0, 
-"@source": "Tn8898529", 
-"@target": "Tn8898555"
+"Tn9850352": {
+"edge25830": {
+"@source": "Tn9850352", 
+"@target": "Tn9850366"
 }, 
-"edge22449": {
-"@source": "Tn8898529", 
-"@target": "Tn8898549"
-}, 
-"edge22451": {
-"@source": "Tn8898529", 
-"@target": "Tn8898525"
-}, 
-"edge22453": {
-"@source": "Tn8898529", 
-"@target": "Tn8898528"
-}, 
-"edge22455": {
-"@source": "Tn8898529", 
-"@target": "Tn8898556"
+"edge25836": {
+"@source": "Tn9850352", 
+"@target": "Tn9850390"
 }
 }, 
-"Tn8898531": {
-"edge22507": {
-"@source": "Tn8898531", 
-"@target": "Tn8898535"
+"Tn9850353": {
+"edge25878": {
+"@source": "Tn9850353", 
+"@target": "Tn9850385"
 }, 
-"edge22509": {
-"@source": "Tn8898531", 
-"@target": "Tn8898510"
-}, 
-"edge22511": {
-"@source": "Tn8898531", 
-"@target": "Tn8898533"
+"edge25880": {
+"@source": "Tn9850353", 
+"@target": "Tn9850363"
 }
 }, 
-"Tn8898532": {
-"edge22445": {
-"@source": "Tn8898532", 
-"@target": "Tn8898529"
+"Tn9850354": {
+"edge25892": {
+"@source": "Tn9850354", 
+"@target": "Tn9850355"
 }, 
-"edge22465": {
-"@source": "Tn8898532", 
-"@target": "Tn8898552"
+"edge25894": {
+"@source": "Tn9850354", 
+"@target": "Tn9850388"
+}, 
+"edge25896": {
+"@source": "Tn9850354", 
+"@target": "Tn9850343"
+}, 
+"edge25898": {
+"@source": "Tn9850354", 
+"@target": "Tn9850360"
+}, 
+"edge25900": {
+"@source": "Tn9850354", 
+"@target": "Tn9850403"
+}, 
+"edge25906": {
+"@source": "Tn9850354", 
+"@target": "Tn9850359"
+}, 
+"edge25912": {
+"@source": "Tn9850354", 
+"@target": "Tn9850370"
+}, 
+"edge25918": {
+"@source": "Tn9850354", 
+"@target": "Tn9850398"
+}, 
+"edge25924": {
+"@source": "Tn9850354", 
+"@target": "Tn9850402"
+}, 
+"edge25946": {
+"@source": "Tn9850354", 
+"@target": "Tn9850408"
 }
 }, 
-"Tn8898534": {
-"edge22433": {
-"@length": 0.5, 
-"@source": "Tn8898534", 
-"@target": "Tn8898526"
+"Tn9850359": {
+"edge25908": {
+"@source": "Tn9850359", 
+"@target": "Tn9850380"
 }, 
-"edge22527": {
-"@length": 0.5, 
-"@source": "Tn8898534", 
-"@target": "Tn8898513"
+"edge25910": {
+"@source": "Tn9850359", 
+"@target": "Tn9850412"
 }
 }, 
-"Tn8898543": {
-"edge22487": {
-"@source": "Tn8898543", 
-"@target": "Tn8898540"
+"Tn9850363": {
+"edge25882": {
+"@source": "Tn9850363", 
+"@target": "Tn9850334"
 }, 
-"edge22489": {
-"@source": "Tn8898543", 
-"@target": "Tn8898507"
+"edge25884": {
+"@source": "Tn9850363", 
+"@target": "Tn9850384"
 }
 }, 
-"Tn8898547": {
-"edge22485": {
-"@source": "Tn8898547", 
-"@target": "Tn8898543"
+"Tn9850366": {
+"edge25832": {
+"@source": "Tn9850366", 
+"@target": "Tn9850418"
 }, 
-"edge22491": {
-"@source": "Tn8898547", 
-"@target": "Tn8898554"
-}, 
-"edge22493": {
-"@source": "Tn8898547", 
-"@target": "Tn8898538"
-}, 
-"edge22495": {
-"@source": "Tn8898547", 
-"@target": "Tn8898508"
-}, 
-"edge22497": {
-"@source": "Tn8898547", 
-"@target": "Tn8898545"
+"edge25834": {
+"@source": "Tn9850366", 
+"@target": "Tn9850349"
 }
 }, 
-"Tn8898551": {
-"edge22437": {
-"@source": "Tn8898551", 
-"@target": "Tn8898518"
+"Tn9850370": {
+"edge25914": {
+"@source": "Tn9850370", 
+"@target": "Tn9850391"
 }, 
-"edge22439": {
-"@source": "Tn8898551", 
-"@target": "Tn8898520"
-}, 
-"edge22441": {
-"@source": "Tn8898551", 
-"@target": "Tn8898511"
-}, 
-"edge22443": {
-"@source": "Tn8898551", 
-"@target": "Tn8898532"
+"edge25916": {
+"@source": "Tn9850370", 
+"@target": "Tn9850350"
 }
 }, 
-"Tn8898552": {
-"edge22467": {
-"@source": "Tn8898552", 
-"@target": "Tn8898517"
+"Tn9850373": {
+"edge25870": {
+"@source": "Tn9850373", 
+"@target": "Tn9850341"
 }, 
-"edge22483": {
-"@source": "Tn8898552", 
-"@target": "Tn8898547"
+"edge25876": {
+"@source": "Tn9850373", 
+"@target": "Tn9850353"
 }
 }, 
-"Tn8898556": {
-"edge22457": {
-"@source": "Tn8898556", 
-"@target": "Tn8898537"
+"Tn9850374": {
+"edge25842": {
+"@source": "Tn9850374", 
+"@target": "Tn9850389"
 }, 
-"edge22459": {
-"@source": "Tn8898556", 
-"@target": "Tn8898523"
+"edge25848": {
+"@source": "Tn9850374", 
+"@target": "Tn9850400"
+}
 }, 
-"edge22461": {
-"@source": "Tn8898556", 
-"@target": "Tn8898539"
+"Tn9850375": {
+"edge25930": {
+"@source": "Tn9850375", 
+"@target": "Tn9850397"
 }, 
-"edge22463": {
-"@source": "Tn8898556", 
-"@target": "Tn8898548"
+"edge25932": {
+"@source": "Tn9850375", 
+"@target": "Tn9850413"
+}
+}, 
+"Tn9850377": {
+"edge25952": {
+"@source": "Tn9850377", 
+"@target": "Tn9850379"
+}, 
+"edge25954": {
+"@source": "Tn9850377", 
+"@target": "Tn9850411"
+}, 
+"edge25956": {
+"@source": "Tn9850377", 
+"@target": "Tn9850340"
+}, 
+"edge25958": {
+"@source": "Tn9850377", 
+"@target": "Tn9850381"
+}, 
+"edge25964": {
+"@source": "Tn9850377", 
+"@target": "Tn9850351"
+}
+}, 
+"Tn9850378": {
+"edge25808": {
+"@source": "Tn9850378", 
+"@target": "Tn9850386"
+}, 
+"edge25810": {
+"@source": "Tn9850378", 
+"@target": "Tn9850376"
+}
+}, 
+"Tn9850381": {
+"edge25960": {
+"@source": "Tn9850381", 
+"@target": "Tn9850393"
+}, 
+"edge25962": {
+"@source": "Tn9850381", 
+"@target": "Tn9850369"
+}
+}, 
+"Tn9850382": {
+"edge25798": {
+"@source": "Tn9850382", 
+"@target": "Tn9850396"
+}, 
+"edge25800": {
+"@source": "Tn9850382", 
+"@target": "Tn9850392"
+}
+}, 
+"Tn9850384": {
+"edge25886": {
+"@source": "Tn9850384", 
+"@target": "Tn9850371"
+}, 
+"edge25888": {
+"@source": "Tn9850384", 
+"@target": "Tn9850409"
+}
+}, 
+"Tn9850387": {
+"edge25814": {
+"@source": "Tn9850387", 
+"@target": "Tn9850357"
+}, 
+"edge25816": {
+"@source": "Tn9850387", 
+"@target": "Tn9850416"
+}, 
+"edge25818": {
+"@source": "Tn9850387", 
+"@target": "Tn9850333"
+}
+}, 
+"Tn9850389": {
+"edge25844": {
+"@source": "Tn9850389", 
+"@target": "Tn9850394"
+}, 
+"edge25846": {
+"@source": "Tn9850389", 
+"@target": "Tn9850372"
+}
+}, 
+"Tn9850390": {
+"edge25838": {
+"@source": "Tn9850390", 
+"@target": "Tn9850406"
+}, 
+"edge25890": {
+"@source": "Tn9850390", 
+"@target": "Tn9850354"
+}
+}, 
+"Tn9850398": {
+"edge25920": {
+"@source": "Tn9850398", 
+"@target": "Tn9850364"
+}, 
+"edge25922": {
+"@source": "Tn9850398", 
+"@target": "Tn9850415"
+}
+}, 
+"Tn9850399": {
+"edge25796": {
+"@source": "Tn9850399", 
+"@target": "Tn9850382"
+}, 
+"edge25802": {
+"@source": "Tn9850399", 
+"@target": "Tn9850417"
+}
+}, 
+"Tn9850400": {
+"edge25850": {
+"@source": "Tn9850400", 
+"@target": "Tn9850367"
+}, 
+"edge25852": {
+"@source": "Tn9850400", 
+"@target": "Tn9850383"
+}, 
+"edge25854": {
+"@source": "Tn9850400", 
+"@target": "Tn9850337"
+}
+}, 
+"Tn9850401": {
+"edge25806": {
+"@source": "Tn9850401", 
+"@target": "Tn9850378"
+}, 
+"edge25812": {
+"@source": "Tn9850401", 
+"@target": "Tn9850387"
+}
+}, 
+"Tn9850402": {
+"edge25926": {
+"@source": "Tn9850402", 
+"@target": "Tn9850336"
+}, 
+"edge25928": {
+"@source": "Tn9850402", 
+"@target": "Tn9850375"
+}, 
+"edge25934": {
+"@source": "Tn9850402", 
+"@target": "Tn9850345"
+}, 
+"edge25940": {
+"@source": "Tn9850402", 
+"@target": "Tn9850407"
+}
+}, 
+"Tn9850403": {
+"edge25902": {
+"@source": "Tn9850403", 
+"@target": "Tn9850344"
+}, 
+"edge25904": {
+"@source": "Tn9850403", 
+"@target": "Tn9850405"
+}
+}, 
+"Tn9850406": {
+"edge25840": {
+"@source": "Tn9850406", 
+"@target": "Tn9850374"
+}, 
+"edge25860": {
+"@source": "Tn9850406", 
+"@target": "Tn9850410"
+}
+}, 
+"Tn9850407": {
+"edge25942": {
+"@source": "Tn9850407", 
+"@target": "Tn9850358"
+}, 
+"edge25944": {
+"@source": "Tn9850407", 
+"@target": "Tn9850414"
+}
+}, 
+"Tn9850408": {
+"edge25948": {
+"@source": "Tn9850408", 
+"@target": "Tn9850332"
+}, 
+"edge25950": {
+"@source": "Tn9850408", 
+"@target": "Tn9850377"
+}
+}, 
+"Tn9850410": {
+"edge25862": {
+"@source": "Tn9850410", 
+"@target": "Tn9850335"
+}, 
+"edge25868": {
+"@source": "Tn9850410", 
+"@target": "Tn9850373"
+}
+}, 
+"Tn9850417": {
+"edge25804": {
+"@source": "Tn9850417", 
+"@target": "Tn9850401"
+}, 
+"edge25824": {
+"@source": "Tn9850417", 
+"@target": "Tn9850346"
 }
 }
 }, 
 "nodeById": {
-"Tn8898506": {}, 
-"Tn8898507": {
-"@otu": "Tl741760"
+"Tn9850332": {
+"@otu": "Tl1049987"
 }, 
-"Tn8898508": {
-"@otu": "Tl741837"
+"Tn9850333": {
+"@label": "99"
 }, 
-"Tn8898509": {
-"@otu": "Tl741782"
+"Tn9850334": {
+"@label": "Phytophthora humicola like MUCC768 HQ012959", 
+"@otu": "Tl1050002"
 }, 
-"Tn8898510": {
-"@otu": "Tl741771"
+"Tn9850335": {
+"@label": "100"
 }, 
-"Tn8898511": {
-"@otu": "Tl741830"
+"Tn9850336": {
+"@otu": "Tl1050014"
 }, 
-"Tn8898512": {
-"@otu": "Tl741812"
+"Tn9850337": {}, 
+"Tn9850338": {
+"@otu": "Tl1049978"
 }, 
-"Tn8898513": {}, 
-"Tn8898514": {
-"@otu": "Tl741765"
+"Tn9850339": {
+"@otu": "Tl1050000"
 }, 
-"Tn8898515": {}, 
-"Tn8898516": {}, 
-"Tn8898517": {}, 
-"Tn8898518": {
-"@otu": "Tl741780"
+"Tn9850340": {
+"@otu": "Tl1049998"
 }, 
-"Tn8898519": {
-"@otu": "Tl741777"
+"Tn9850341": {
+"@label": "100"
 }, 
-"Tn8898520": {
-"@otu": "Tl741766"
+"Tn9850342": {
+"@otu": "Tl1049988"
 }, 
-"Tn8898521": {}, 
-"Tn8898522": {
-"@otu": "Tl741802"
+"Tn9850343": {
+"@otu": "Tl1050026"
 }, 
-"Tn8898523": {
-"@otu": "Tl741825"
+"Tn9850344": {
+"@otu": "Tl1050003"
 }, 
-"Tn8898524": {
-"@otu": "Tl741799"
+"Tn9850345": {
+"@label": "94"
 }, 
-"Tn8898525": {
-"@otu": "Tl741775"
+"Tn9850346": {
+"@label": "100"
 }, 
-"Tn8898526": {}, 
-"Tn8898527": {
-"@otu": "Tl741831"
+"Tn9850347": {
+"@otu": "Tl1050019"
 }, 
-"Tn8898528": {
-"@otu": "Tl741776"
+"Tn9850348": {
+"@otu": "Tl1050025"
 }, 
-"Tn8898529": {}, 
-"Tn8898530": {
-"@otu": "Tl741849"
+"Tn9850349": {
+"@otu": "Tl1050016"
 }, 
-"Tn8898531": {}, 
-"Tn8898532": {}, 
-"Tn8898533": {
-"@otu": "Tl741778"
+"Tn9850350": {
+"@otu": "Tl1049995"
 }, 
-"Tn8898534": {
+"Tn9850351": {
+"@label": "82"
+}, 
+"Tn9850352": {
+"@label": "96"
+}, 
+"Tn9850353": {
+"@label": "95"
+}, 
+"Tn9850354": {
+"@label": "80"
+}, 
+"Tn9850355": {
+"@otu": "Tl1050006"
+}, 
+"Tn9850356": {
+"@otu": "Tl1050015"
+}, 
+"Tn9850357": {
+"@otu": "Tl1049984"
+}, 
+"Tn9850358": {
+"@otu": "Tl1049992"
+}, 
+"Tn9850359": {
+"@label": "90"
+}, 
+"Tn9850360": {
+"@otu": "Tl1050021"
+}, 
+"Tn9850361": {
+"@otu": "Tl1049989"
+}, 
+"Tn9850362": {
+"@otu": "Tl1050011"
+}, 
+"Tn9850363": {
+"@label": "86"
+}, 
+"Tn9850364": {
+"@otu": "Tl1050001"
+}, 
+"Tn9850365": {
+"@otu": "Tl1050012"
+}, 
+"Tn9850366": {
+"@label": "96"
+}, 
+"Tn9850367": {
+"@otu": "Tl1049991"
+}, 
+"Tn9850368": {
+"@otu": "Tl1050017"
+}, 
+"Tn9850369": {
+"@otu": "Tl1049983"
+}, 
+"Tn9850370": {
+"@label": "100"
+}, 
+"Tn9850371": {
+"@otu": "Tl1049980"
+}, 
+"Tn9850372": {
+"@otu": "Tl1049977"
+}, 
+"Tn9850373": {
+"@label": "81"
+}, 
+"Tn9850374": {
+"@label": "98"
+}, 
+"Tn9850375": {
+"@label": "100"
+}, 
+"Tn9850376": {
+"@otu": "Tl1050007"
+}, 
+"Tn9850377": {
+"@label": "75"
+}, 
+"Tn9850378": {
+"@label": "100"
+}, 
+"Tn9850379": {
+"@otu": "Tl1049993"
+}, 
+"Tn9850380": {
+"@otu": "Tl1049979"
+}, 
+"Tn9850381": {
+"@label": "89"
+}, 
+"Tn9850382": {}, 
+"Tn9850383": {
+"@otu": "Tl1049997"
+}, 
+"Tn9850384": {
+"@label": "62"
+}, 
+"Tn9850385": {
+"@otu": "Tl1050009"
+}, 
+"Tn9850386": {
+"@otu": "Tl1050023"
+}, 
+"Tn9850387": {
+"@label": "98"
+}, 
+"Tn9850388": {
+"@otu": "Tl1049981"
+}, 
+"Tn9850389": {
+"@label": "100"
+}, 
+"Tn9850390": {
+"@label": "60"
+}, 
+"Tn9850391": {
+"@otu": "Tl1049982"
+}, 
+"Tn9850392": {
+"@otu": "Tl1050024"
+}, 
+"Tn9850393": {
+"@otu": "Tl1050020"
+}, 
+"Tn9850394": {
+"@otu": "Tl1050013"
+}, 
+"Tn9850395": {
+"@otu": "Tl1049986"
+}, 
+"Tn9850396": {
+"@otu": "Tl1050008"
+}, 
+"Tn9850397": {
+"@otu": "Tl1050022"
+}, 
+"Tn9850398": {
+"@label": "61"
+}, 
+"Tn9850399": {
 "@root": true
 }, 
-"Tn8898535": {
-"@otu": "Tl741800"
+"Tn9850400": {
+"@label": "66"
 }, 
-"Tn8898536": {
-"@otu": "Tl741809"
+"Tn9850401": {
+"@label": "99"
 }, 
-"Tn8898537": {
-"@otu": "Tl741818"
+"Tn9850402": {
+"@label": "95"
 }, 
-"Tn8898538": {
-"@otu": "Tl741805"
+"Tn9850403": {
+"@label": "98"
 }, 
-"Tn8898539": {
-"@otu": "Tl741796"
+"Tn9850404": {
+"@otu": "Tl1050004"
 }, 
-"Tn8898540": {
-"@otu": "Tl741853"
+"Tn9850405": {
+"@otu": "Tl1049994"
 }, 
-"Tn8898541": {
-"@otu": "Tl741855"
+"Tn9850406": {
+"@label": "99"
 }, 
-"Tn8898542": {
-"@otu": "Tl741801"
+"Tn9850407": {
+"@label": "77"
 }, 
-"Tn8898543": {}, 
-"Tn8898544": {
-"@otu": "Tl741834"
+"Tn9850408": {
+"@label": "75"
 }, 
-"Tn8898545": {
-"@otu": "Tl741844"
+"Tn9850409": {
+"@otu": "Tl1050018"
 }, 
-"Tn8898546": {
-"@otu": "Tl741857"
+"Tn9850410": {
+"@label": "82"
 }, 
-"Tn8898547": {}, 
-"Tn8898548": {
-"@otu": "Tl741786"
+"Tn9850411": {
+"@otu": "Tl1050027"
 }, 
-"Tn8898549": {
-"@otu": "Tl741854"
+"Tn9850412": {
+"@otu": "Tl1050010"
 }, 
-"Tn8898550": {
-"@otu": "Tl741833"
+"Tn9850413": {
+"@otu": "Tl1049990"
 }, 
-"Tn8898551": {}, 
-"Tn8898552": {}, 
-"Tn8898553": {
-"@otu": "Tl741845"
+"Tn9850414": {
+"@otu": "Tl1049996"
 }, 
-"Tn8898554": {
-"@otu": "Tl741847"
+"Tn9850415": {
+"@otu": "Tl1049985"
 }, 
-"Tn8898555": {
-"@otu": "Tl741858"
+"Tn9850416": {
+"@otu": "Tl1049976"
 }, 
-"Tn8898556": {}
+"Tn9850417": {
+"@label": "100"
+}, 
+"Tn9850418": {
+"@otu": "Tl1049999"
+}, 
+"Tn9850419": {
+"@otu": "Tl1050005"
+}
 }
 }, 
-"Tr52144": {
-"@label": "Fig. 3f", 
+"Tr61322": {
+"@label": "PAUP 1", 
 "@xsi:type": "nex:FloatTree", 
-"^ot:rootNodeId": "Tn8898141", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
+"^ot:curatedType": "", 
+"^ot:inGroupClade": "", 
+"^ot:outGroupEdge": "", 
+"^ot:rootNodeId": "Tn9850434", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
+"^ot:unrootedTree": true, 
 "^tb:kind.tree": "Species Tree", 
-"^tb:ntax.tree": 35, 
+"^tb:ntax.tree": 17, 
 "^tb:quality.tree": "Unrated", 
 "^tb:type.tree": "Single", 
 "edgeBySourceId": {
-"Tn8898099": {
-"edge23579": {
-"@source": "Tn8898099", 
-"@target": "Tn8898134"
+"Tn9850422": {
+"edge25668": {
+"@source": "Tn9850422", 
+"@target": "Tn9850430"
 }, 
-"edge23581": {
-"@source": "Tn8898099", 
-"@target": "Tn8898120"
-}, 
-"edge23583": {
-"@source": "Tn8898099", 
-"@target": "Tn8898116"
-}, 
-"edge23585": {
-"@source": "Tn8898099", 
-"@target": "Tn8898117"
+"edge25688": {
+"@source": "Tn9850422", 
+"@target": "Tn9850442"
 }
 }, 
-"Tn8898103": {
-"edge23653": {
-"@source": "Tn8898103", 
-"@target": "Tn8898147"
+"Tn9850424": {
+"edge25664": {
+"@source": "Tn9850424", 
+"@target": "Tn9850425"
 }, 
-"edge23655": {
-"@source": "Tn8898103", 
-"@target": "Tn8898102"
+"edge25666": {
+"@source": "Tn9850424", 
+"@target": "Tn9850422"
 }
 }, 
-"Tn8898105": {
-"edge23591": {
-"@source": "Tn8898105", 
-"@target": "Tn8898122"
+"Tn9850426": {
+"edge25672": {
+"@source": "Tn9850426", 
+"@target": "Tn9850449"
 }, 
-"edge23599": {
-"@source": "Tn8898105", 
-"@target": "Tn8898140"
+"edge25674": {
+"@source": "Tn9850426", 
+"@target": "Tn9850435"
 }
 }, 
-"Tn8898106": {
-"edge23605": {
-"@source": "Tn8898106", 
-"@target": "Tn8898143"
+"Tn9850427": {
+"edge25702": {
+"@source": "Tn9850427", 
+"@target": "Tn9850450"
 }, 
-"edge23607": {
-"@source": "Tn8898106", 
-"@target": "Tn8898126"
+"edge25708": {
+"@source": "Tn9850427", 
+"@target": "Tn9850439"
 }
 }, 
-"Tn8898109": {
-"edge23627": {
-"@source": "Tn8898109", 
-"@target": "Tn8898127"
+"Tn9850428": {
+"edge25692": {
+"@source": "Tn9850428", 
+"@target": "Tn9850436"
 }, 
-"edge23643": {
-"@source": "Tn8898109", 
-"@target": "Tn8898151"
-}, 
-"edge23645": {
-"@source": "Tn8898109", 
-"@target": "Tn8898131"
-}, 
-"edge23647": {
-"@source": "Tn8898109", 
-"@target": "Tn8898113"
-}, 
-"edge23649": {
-"@source": "Tn8898109", 
-"@target": "Tn8898123"
+"edge25694": {
+"@source": "Tn9850428", 
+"@target": "Tn9850432"
 }
 }, 
-"Tn8898112": {
-"edge23555": {
-"@source": "Tn8898112", 
-"@target": "Tn8898152"
+"Tn9850429": {
+"edge25660": {
+"@source": "Tn9850429", 
+"@target": "Tn9850437"
 }, 
-"edge23563": {
-"@source": "Tn8898112", 
-"@target": "Tn8898136"
+"edge25662": {
+"@source": "Tn9850429", 
+"@target": "Tn9850424"
 }
 }, 
-"Tn8898115": {
-"edge23553": {
-"@source": "Tn8898115", 
-"@target": "Tn8898112"
+"Tn9850430": {
+"edge25670": {
+"@source": "Tn9850430", 
+"@target": "Tn9850426"
 }, 
-"edge23617": {
-"@source": "Tn8898115", 
-"@target": "Tn8898142"
+"edge25676": {
+"@source": "Tn9850430", 
+"@target": "Tn9850441"
 }
 }, 
-"Tn8898122": {
-"edge23593": {
-"@source": "Tn8898122", 
-"@target": "Tn8898107"
+"Tn9850431": {
+"edge25654": {
+"@source": "Tn9850431", 
+"@target": "Tn9850438"
 }, 
-"edge23595": {
-"@source": "Tn8898122", 
-"@target": "Tn8898119"
-}, 
-"edge23597": {
-"@source": "Tn8898122", 
-"@target": "Tn8898149"
+"edge25656": {
+"@source": "Tn9850431", 
+"@target": "Tn9850447"
 }
 }, 
-"Tn8898124": {
-"edge23569": {
-"@source": "Tn8898124", 
-"@target": "Tn8898129"
+"Tn9850432": {
+"edge25696": {
+"@source": "Tn9850432", 
+"@target": "Tn9850423"
 }, 
-"edge23571": {
-"@source": "Tn8898124", 
-"@target": "Tn8898150"
-}, 
-"edge23573": {
-"@source": "Tn8898124", 
-"@target": "Tn8898104"
-}, 
-"edge23575": {
-"@source": "Tn8898124", 
-"@target": "Tn8898121"
+"edge25698": {
+"@source": "Tn9850432", 
+"@target": "Tn9850451"
 }
 }, 
-"Tn8898127": {
-"edge23629": {
-"@length": 2.0, 
-"@source": "Tn8898127", 
-"@target": "Tn8898132"
+"Tn9850433": {
+"edge25684": {
+"@source": "Tn9850433", 
+"@target": "Tn9850448"
 }, 
-"edge23631": {
-"@source": "Tn8898127", 
-"@target": "Tn8898111"
-}, 
-"edge23633": {
-"@source": "Tn8898127", 
-"@target": "Tn8898137"
-}, 
-"edge23635": {
-"@source": "Tn8898127", 
-"@target": "Tn8898100"
-}, 
-"edge23637": {
-"@source": "Tn8898127", 
-"@target": "Tn8898114"
-}, 
-"edge23639": {
-"@source": "Tn8898127", 
-"@target": "Tn8898146"
-}, 
-"edge23641": {
-"@source": "Tn8898127", 
-"@target": "Tn8898108"
+"edge25686": {
+"@source": "Tn9850433", 
+"@target": "Tn9850421"
 }
 }, 
-"Tn8898128": {
-"edge23567": {
-"@source": "Tn8898128", 
-"@target": "Tn8898124"
+"Tn9850434": {
+"edge25652": {
+"@source": "Tn9850434", 
+"@target": "Tn9850431"
 }, 
-"edge23577": {
-"@source": "Tn8898128", 
-"@target": "Tn8898099"
+"edge25658": {
+"@source": "Tn9850434", 
+"@target": "Tn9850429"
 }
 }, 
-"Tn8898136": {
-"edge23565": {
-"@source": "Tn8898136", 
-"@target": "Tn8898128"
+"Tn9850439": {
+"edge25710": {
+"@source": "Tn9850439", 
+"@target": "Tn9850446"
 }, 
-"edge23587": {
-"@source": "Tn8898136", 
-"@target": "Tn8898148"
+"edge25712": {
+"@source": "Tn9850439", 
+"@target": "Tn9850420"
 }
 }, 
-"Tn8898138": {
-"edge23603": {
-"@source": "Tn8898138", 
-"@target": "Tn8898106"
+"Tn9850441": {
+"edge25678": {
+"@source": "Tn9850441", 
+"@target": "Tn9850440"
 }, 
-"edge23609": {
-"@source": "Tn8898138", 
-"@target": "Tn8898101"
+"edge25680": {
+"@source": "Tn9850441", 
+"@target": "Tn9850443"
 }, 
-"edge23611": {
-"@source": "Tn8898138", 
-"@target": "Tn8898135"
+"edge25682": {
+"@source": "Tn9850441", 
+"@target": "Tn9850433"
 }
 }, 
-"Tn8898140": {
-"edge23601": {
-"@source": "Tn8898140", 
-"@target": "Tn8898138"
+"Tn9850442": {
+"edge25690": {
+"@source": "Tn9850442", 
+"@target": "Tn9850428"
 }, 
-"edge23613": {
-"@source": "Tn8898140", 
-"@target": "Tn8898125"
+"edge25700": {
+"@source": "Tn9850442", 
+"@target": "Tn9850427"
 }
 }, 
-"Tn8898141": {
-"edge23551": {
-"@length": 0.5, 
-"@source": "Tn8898141", 
-"@target": "Tn8898115"
+"Tn9850450": {
+"edge25704": {
+"@source": "Tn9850450", 
+"@target": "Tn9850444"
 }, 
-"edge23651": {
-"@length": 0.5, 
-"@source": "Tn8898141", 
-"@target": "Tn8898103"
-}
-}, 
-"Tn8898142": {
-"edge23619": {
-"@source": "Tn8898142", 
-"@target": "Tn8898145"
-}, 
-"edge23625": {
-"@source": "Tn8898142", 
-"@target": "Tn8898109"
-}
-}, 
-"Tn8898145": {
-"edge23621": {
-"@source": "Tn8898145", 
-"@target": "Tn8898133"
-}, 
-"edge23623": {
-"@source": "Tn8898145", 
-"@target": "Tn8898130"
-}
-}, 
-"Tn8898148": {
-"edge23589": {
-"@source": "Tn8898148", 
-"@target": "Tn8898105"
-}, 
-"edge23615": {
-"@source": "Tn8898148", 
-"@target": "Tn8898118"
-}
-}, 
-"Tn8898152": {
-"edge23557": {
-"@source": "Tn8898152", 
-"@target": "Tn8898110"
-}, 
-"edge23559": {
-"@source": "Tn8898152", 
-"@target": "Tn8898139"
-}, 
-"edge23561": {
-"@source": "Tn8898152", 
-"@target": "Tn8898144"
+"edge25706": {
+"@source": "Tn9850450", 
+"@target": "Tn9850445"
 }
 }
 }, 
 "nodeById": {
-"Tn8898099": {}, 
-"Tn8898100": {
-"@otu": "Tl741845"
+"Tn9850420": {
+"@otu": "Tl1050028"
 }, 
-"Tn8898101": {
-"@otu": "Tl741834"
+"Tn9850421": {
+"@otu": "Tl1050040"
 }, 
-"Tn8898102": {
-"@otu": "Tl741857"
+"Tn9850422": {
+"@label": "100"
 }, 
-"Tn8898103": {}, 
-"Tn8898104": {
-"@otu": "Tl741796"
+"Tn9850423": {
+"@otu": "Tl1050035"
 }, 
-"Tn8898105": {}, 
-"Tn8898106": {}, 
-"Tn8898107": {
-"@otu": "Tl741800"
+"Tn9850424": {
+"@label": "66"
 }, 
-"Tn8898108": {
-"@otu": "Tl741812"
+"Tn9850425": {
+"@otu": "Tl1050036"
 }, 
-"Tn8898109": {}, 
-"Tn8898110": {
-"@otu": "Tl741780"
+"Tn9850426": {
+"@label": "100"
 }, 
-"Tn8898111": {
-"@otu": "Tl741833"
+"Tn9850427": {
+"@label": "100"
 }, 
-"Tn8898112": {}, 
-"Tn8898113": {
-"@otu": "Tl741837"
+"Tn9850428": {
+"@label": "100"
 }, 
-"Tn8898114": {
-"@otu": "Tl741855"
+"Tn9850429": {
+"@label": "67"
 }, 
-"Tn8898115": {}, 
-"Tn8898116": {
-"@otu": "Tl741775"
+"Tn9850430": {
+"@label": "76"
 }, 
-"Tn8898117": {
-"@otu": "Tl741776"
+"Tn9850431": {
+"@label": "0"
 }, 
-"Tn8898118": {
-"@otu": "Tl741809"
+"Tn9850432": {
+"@label": "62"
 }, 
-"Tn8898119": {
-"@otu": "Tl741771"
+"Tn9850433": {
+"@label": "54"
 }, 
-"Tn8898120": {
-"@otu": "Tl741854"
-}, 
-"Tn8898121": {
-"@otu": "Tl741786"
-}, 
-"Tn8898122": {}, 
-"Tn8898123": {
-"@otu": "Tl741844"
-}, 
-"Tn8898124": {}, 
-"Tn8898125": {
-"@otu": "Tl741802"
-}, 
-"Tn8898126": {
-"@otu": "Tl741777"
-}, 
-"Tn8898127": {}, 
-"Tn8898128": {}, 
-"Tn8898129": {
-"@otu": "Tl741818"
-}, 
-"Tn8898130": {
-"@otu": "Tl741760"
-}, 
-"Tn8898131": {
-"@otu": "Tl741805"
-}, 
-"Tn8898132": {
-"@otu": "Tl741892"
-}, 
-"Tn8898133": {
-"@otu": "Tl741853"
-}, 
-"Tn8898134": {
-"@otu": "Tl741822"
-}, 
-"Tn8898135": {
-"@otu": "Tl741765"
-}, 
-"Tn8898136": {}, 
-"Tn8898137": {
-"@otu": "Tl741782"
-}, 
-"Tn8898138": {}, 
-"Tn8898139": {
-"@otu": "Tl741766"
-}, 
-"Tn8898140": {}, 
-"Tn8898141": {
+"Tn9850434": {
+"@label": "0", 
 "@root": true
 }, 
-"Tn8898142": {}, 
-"Tn8898143": {
-"@otu": "Tl741849"
+"Tn9850435": {
+"@otu": "Tl1050042"
 }, 
-"Tn8898144": {
-"@otu": "Tl741830"
+"Tn9850436": {
+"@otu": "Tl1050039"
 }, 
-"Tn8898145": {}, 
-"Tn8898146": {
-"@otu": "Tl741799"
+"Tn9850437": {
+"@otu": "Tl1050041"
 }, 
-"Tn8898147": {
-"@otu": "Tl741831"
+"Tn9850438": {
+"@otu": "Tl1050033"
 }, 
-"Tn8898148": {}, 
-"Tn8898149": {
-"@otu": "Tl741778"
+"Tn9850439": {
+"@label": "84"
 }, 
-"Tn8898150": {
-"@otu": "Tl741825"
+"Tn9850440": {
+"@otu": "Tl1050044"
 }, 
-"Tn8898151": {
-"@otu": "Tl741847"
+"Tn9850441": {
+"@label": "100"
 }, 
-"Tn8898152": {}
+"Tn9850442": {
+"@label": "81"
+}, 
+"Tn9850443": {
+"@otu": "Tl1050034"
+}, 
+"Tn9850444": {
+"@otu": "Tl1050031"
+}, 
+"Tn9850445": {
+"@otu": "Tl1050032"
+}, 
+"Tn9850446": {
+"@otu": "Tl1050037"
+}, 
+"Tn9850447": {
+"@otu": "Tl1050038"
+}, 
+"Tn9850448": {
+"@otu": "Tl1050043"
+}, 
+"Tn9850449": {
+"@otu": "Tl1050030"
+}, 
+"Tn9850450": {
+"@label": "63"
+}, 
+"Tn9850451": {
+"@otu": "Tl1050029"
+}
 }
 }, 
-"Tr52145": {
-"@label": "Fig. 3b", 
+"Tr61323": {
+"@label": "PAUP 1", 
 "@xsi:type": "nex:FloatTree", 
-"^ot:rootNodeId": "Tn8898443", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
+"^ot:curatedType": "", 
+"^ot:inGroupClade": "", 
+"^ot:outGroupEdge": "", 
+"^ot:rootNodeId": "Tn9850471", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
+"^ot:unrootedTree": true, 
 "^tb:kind.tree": "Species Tree", 
-"^tb:ntax.tree": 35, 
+"^tb:ntax.tree": 17, 
 "^tb:quality.tree": "Unrated", 
 "^tb:type.tree": "Single", 
 "edgeBySourceId": {
-"Tn8898416": {
-"edge23345": {
-"@source": "Tn8898416", 
-"@target": "Tn8898421"
+"Tn9850452": {
+"edge25740": {
+"@source": "Tn9850452", 
+"@target": "Tn9850467"
 }, 
-"edge23401": {
-"@source": "Tn8898416", 
-"@target": "Tn8898436"
+"edge25760": {
+"@source": "Tn9850452", 
+"@target": "Tn9850463"
 }
 }, 
-"Tn8898417": {
-"edge23359": {
-"@source": "Tn8898417", 
-"@target": "Tn8898444"
+"Tn9850455": {
+"edge25776": {
+"@source": "Tn9850455", 
+"@target": "Tn9850481"
 }, 
-"edge23369": {
-"@source": "Tn8898417", 
-"@target": "Tn8898440"
+"edge25778": {
+"@source": "Tn9850455", 
+"@target": "Tn9850465"
 }
 }, 
-"Tn8898421": {
-"edge23347": {
-"@source": "Tn8898421", 
-"@target": "Tn8898433"
+"Tn9850457": {
+"edge25736": {
+"@source": "Tn9850457", 
+"@target": "Tn9850470"
 }, 
-"edge23355": {
-"@source": "Tn8898421", 
-"@target": "Tn8898434"
+"edge25738": {
+"@source": "Tn9850457", 
+"@target": "Tn9850452"
 }
 }, 
-"Tn8898424": {
-"edge23381": {
-"@source": "Tn8898424", 
-"@target": "Tn8898441"
+"Tn9850461": {
+"edge25732": {
+"@source": "Tn9850461", 
+"@target": "Tn9850482"
 }, 
-"edge23399": {
-"@source": "Tn8898424", 
-"@target": "Tn8898414"
+"edge25734": {
+"@source": "Tn9850461", 
+"@target": "Tn9850457"
 }
 }, 
-"Tn8898433": {
-"edge23349": {
-"@source": "Tn8898433", 
-"@target": "Tn8898437"
+"Tn9850463": {
+"edge25762": {
+"@source": "Tn9850463", 
+"@target": "Tn9850466"
 }, 
-"edge23351": {
-"@source": "Tn8898433", 
-"@target": "Tn8898435"
-}, 
-"edge23353": {
-"@source": "Tn8898433", 
-"@target": "Tn8898422"
+"edge25772": {
+"@source": "Tn9850463", 
+"@target": "Tn9850477"
 }
 }, 
-"Tn8898434": {
-"edge23357": {
-"@source": "Tn8898434", 
-"@target": "Tn8898417"
+"Tn9850464": {
+"edge25744": {
+"@source": "Tn9850464", 
+"@target": "Tn9850459"
 }, 
-"edge23379": {
-"@source": "Tn8898434", 
-"@target": "Tn8898424"
+"edge25746": {
+"@source": "Tn9850464", 
+"@target": "Tn9850460"
 }
 }, 
-"Tn8898436": {
-"edge23403": {
-"@length": 2.0, 
-"@source": "Tn8898436", 
-"@target": "Tn8898450"
+"Tn9850466": {
+"edge25764": {
+"@source": "Tn9850466", 
+"@target": "Tn9850458"
 }, 
-"edge23405": {
-"@source": "Tn8898436", 
-"@target": "Tn8898415"
-}, 
-"edge23407": {
-"@source": "Tn8898436", 
-"@target": "Tn8898454"
-}, 
-"edge23409": {
-"@source": "Tn8898436", 
-"@target": "Tn8898420"
-}, 
-"edge23411": {
-"@source": "Tn8898436", 
-"@target": "Tn8898430"
-}, 
-"edge23413": {
-"@source": "Tn8898436", 
-"@target": "Tn8898411"
-}, 
-"edge23415": {
-"@source": "Tn8898436", 
-"@target": "Tn8898452"
-}, 
-"edge23417": {
-"@source": "Tn8898436", 
-"@target": "Tn8898425"
-}, 
-"edge23419": {
-"@source": "Tn8898436", 
-"@target": "Tn8898427"
-}, 
-"edge23421": {
-"@source": "Tn8898436", 
-"@target": "Tn8898455"
-}, 
-"edge23423": {
-"@source": "Tn8898436", 
-"@target": "Tn8898431"
-}, 
-"edge23425": {
-"@source": "Tn8898436", 
-"@target": "Tn8898449"
-}, 
-"edge23427": {
-"@source": "Tn8898436", 
-"@target": "Tn8898451"
+"edge25766": {
+"@source": "Tn9850466", 
+"@target": "Tn9850469"
 }
 }, 
-"Tn8898440": {
-"edge23371": {
-"@source": "Tn8898440", 
-"@target": "Tn8898438"
+"Tn9850467": {
+"edge25742": {
+"@source": "Tn9850467", 
+"@target": "Tn9850464"
 }, 
-"edge23373": {
-"@source": "Tn8898440", 
-"@target": "Tn8898419"
-}, 
-"edge23375": {
-"@source": "Tn8898440", 
-"@target": "Tn8898456"
-}, 
-"edge23377": {
-"@source": "Tn8898440", 
-"@target": "Tn8898428"
+"edge25748": {
+"@source": "Tn9850467", 
+"@target": "Tn9850472"
 }
 }, 
-"Tn8898441": {
-"edge23383": {
-"@source": "Tn8898441", 
-"@target": "Tn8898445"
+"Tn9850469": {
+"edge25768": {
+"@source": "Tn9850469", 
+"@target": "Tn9850462"
 }, 
-"edge23385": {
-"@source": "Tn8898441", 
-"@target": "Tn8898429"
-}, 
-"edge23387": {
-"@source": "Tn8898441", 
-"@target": "Tn8898423"
-}, 
-"edge23389": {
-"@source": "Tn8898441", 
-"@target": "Tn8898453"
-}, 
-"edge23391": {
-"@source": "Tn8898441", 
-"@target": "Tn8898412"
-}, 
-"edge23393": {
-"@source": "Tn8898441", 
-"@target": "Tn8898410"
-}, 
-"edge23395": {
-"@source": "Tn8898441", 
-"@target": "Tn8898442"
-}, 
-"edge23397": {
-"@source": "Tn8898441", 
-"@target": "Tn8898426"
+"edge25770": {
+"@source": "Tn9850469", 
+"@target": "Tn9850453"
 }
 }, 
-"Tn8898443": {
-"edge23343": {
-"@length": 0.5, 
-"@source": "Tn8898443", 
-"@target": "Tn8898416"
+"Tn9850471": {
+"edge25724": {
+"@source": "Tn9850471", 
+"@target": "Tn9850476"
 }, 
-"edge23429": {
-"@length": 0.5, 
-"@source": "Tn8898443", 
-"@target": "Tn8898447"
+"edge25726": {
+"@source": "Tn9850471", 
+"@target": "Tn9850478"
 }
 }, 
-"Tn8898444": {
-"edge23361": {
-"@source": "Tn8898444", 
-"@target": "Tn8898418"
+"Tn9850472": {
+"edge25750": {
+"@source": "Tn9850472", 
+"@target": "Tn9850468"
 }, 
-"edge23363": {
-"@source": "Tn8898444", 
-"@target": "Tn8898439"
+"edge25752": {
+"@source": "Tn9850472", 
+"@target": "Tn9850454"
 }, 
-"edge23365": {
-"@source": "Tn8898444", 
-"@target": "Tn8898432"
-}, 
-"edge23367": {
-"@source": "Tn8898444", 
-"@target": "Tn8898413"
+"edge25754": {
+"@source": "Tn9850472", 
+"@target": "Tn9850480"
 }
 }, 
-"Tn8898447": {
-"edge23431": {
-"@source": "Tn8898447", 
-"@target": "Tn8898448"
+"Tn9850477": {
+"edge25774": {
+"@source": "Tn9850477", 
+"@target": "Tn9850455"
 }, 
-"edge23433": {
-"@source": "Tn8898447", 
-"@target": "Tn8898446"
+"edge25780": {
+"@source": "Tn9850477", 
+"@target": "Tn9850483"
+}
+}, 
+"Tn9850478": {
+"edge25728": {
+"@source": "Tn9850478", 
+"@target": "Tn9850473"
+}, 
+"edge25730": {
+"@source": "Tn9850478", 
+"@target": "Tn9850461"
+}
+}, 
+"Tn9850480": {
+"edge25756": {
+"@source": "Tn9850480", 
+"@target": "Tn9850456"
+}, 
+"edge25758": {
+"@source": "Tn9850480", 
+"@target": "Tn9850474"
+}
+}, 
+"Tn9850483": {
+"edge25782": {
+"@source": "Tn9850483", 
+"@target": "Tn9850479"
+}, 
+"edge25784": {
+"@source": "Tn9850483", 
+"@target": "Tn9850475"
 }
 }
 }, 
 "nodeById": {
-"Tn8898410": {
-"@otu": "Tl741777"
+"Tn9850452": {
+"@label": "100"
 }, 
-"Tn8898411": {
-"@otu": "Tl741799"
+"Tn9850453": {
+"@otu": "Tl1050029"
 }, 
-"Tn8898412": {
-"@otu": "Tl741765"
+"Tn9850454": {
+"@otu": "Tl1050034"
 }, 
-"Tn8898413": {
-"@otu": "Tl741786"
+"Tn9850455": {
+"@label": "64"
 }, 
-"Tn8898414": {
-"@otu": "Tl741802"
+"Tn9850456": {
+"@otu": "Tl1050043"
 }, 
-"Tn8898415": {
-"@otu": "Tl741833"
+"Tn9850457": {
+"@label": "65"
 }, 
-"Tn8898416": {}, 
-"Tn8898417": {}, 
-"Tn8898418": {
-"@otu": "Tl741818"
+"Tn9850458": {
+"@otu": "Tl1050039"
 }, 
-"Tn8898419": {
-"@otu": "Tl741854"
+"Tn9850459": {
+"@otu": "Tl1050030"
 }, 
-"Tn8898420": {
-"@otu": "Tl741845"
+"Tn9850460": {
+"@otu": "Tl1050042"
 }, 
-"Tn8898421": {}, 
-"Tn8898422": {
-"@otu": "Tl741830"
+"Tn9850461": {
+"@label": "71"
 }, 
-"Tn8898423": {
-"@otu": "Tl741809"
+"Tn9850462": {
+"@otu": "Tl1050035"
 }, 
-"Tn8898424": {}, 
-"Tn8898425": {
-"@otu": "Tl741853"
+"Tn9850463": {
+"@label": "80"
 }, 
-"Tn8898426": {
-"@otu": "Tl741778"
+"Tn9850464": {
+"@label": "100"
 }, 
-"Tn8898427": {
-"@otu": "Tl741760"
+"Tn9850465": {
+"@otu": "Tl1050032"
 }, 
-"Tn8898428": {
-"@otu": "Tl741776"
+"Tn9850466": {
+"@label": "100"
 }, 
-"Tn8898429": {
-"@otu": "Tl741771"
+"Tn9850467": {
+"@label": "77"
 }, 
-"Tn8898430": {
-"@otu": "Tl741855"
+"Tn9850468": {
+"@otu": "Tl1050044"
 }, 
-"Tn8898431": {
-"@otu": "Tl741837"
+"Tn9850469": {
+"@label": "62"
 }, 
-"Tn8898432": {
-"@otu": "Tl741796"
+"Tn9850470": {
+"@otu": "Tl1050036"
 }, 
-"Tn8898433": {}, 
-"Tn8898434": {}, 
-"Tn8898435": {
-"@otu": "Tl741766"
-}, 
-"Tn8898436": {}, 
-"Tn8898437": {
-"@otu": "Tl741780"
-}, 
-"Tn8898438": {
-"@otu": "Tl741894"
-}, 
-"Tn8898439": {
-"@otu": "Tl741825"
-}, 
-"Tn8898440": {}, 
-"Tn8898441": {}, 
-"Tn8898442": {
-"@otu": "Tl741834"
-}, 
-"Tn8898443": {
+"Tn9850471": {
+"@label": "0", 
 "@root": true
 }, 
-"Tn8898444": {}, 
-"Tn8898445": {
-"@otu": "Tl741800"
+"Tn9850472": {
+"@label": "100"
 }, 
-"Tn8898446": {
-"@otu": "Tl741857"
+"Tn9850473": {
+"@otu": "Tl1050033"
 }, 
-"Tn8898447": {}, 
-"Tn8898448": {
-"@otu": "Tl741831"
+"Tn9850474": {
+"@otu": "Tl1050040"
 }, 
-"Tn8898449": {
-"@otu": "Tl741805"
+"Tn9850475": {
+"@otu": "Tl1050028"
 }, 
-"Tn8898450": {
-"@otu": "Tl741893"
+"Tn9850476": {
+"@otu": "Tl1050038"
 }, 
-"Tn8898451": {
-"@otu": "Tl741847"
+"Tn9850477": {
+"@label": "99"
 }, 
-"Tn8898452": {
-"@otu": "Tl741812"
+"Tn9850478": {
+"@label": "100"
 }, 
-"Tn8898453": {
-"@otu": "Tl741849"
+"Tn9850479": {
+"@otu": "Tl1050037"
 }, 
-"Tn8898454": {
-"@otu": "Tl741782"
+"Tn9850480": {
+"@label": "54"
 }, 
-"Tn8898455": {
-"@otu": "Tl741844"
+"Tn9850481": {
+"@otu": "Tl1050031"
 }, 
-"Tn8898456": {
-"@otu": "Tl741775"
-}
-}
-}, 
-"Tr52146": {
-"@label": "Fig. 3c", 
-"@xsi:type": "nex:FloatTree", 
-"^ot:rootNodeId": "Tn8898488", 
-"^tb:kind.tree": "Species Tree", 
-"^tb:ntax.tree": 35, 
-"^tb:quality.tree": "Unrated", 
-"^tb:type.tree": "Single", 
-"edgeBySourceId": {
-"Tn8898458": {
-"edge23507": {
-"@source": "Tn8898458", 
-"@target": "Tn8898477"
-}, 
-"edge23525": {
-"@source": "Tn8898458", 
-"@target": "Tn8898505"
-}
-}, 
-"Tn8898462": {
-"edge23497": {
-"@source": "Tn8898462", 
-"@target": "Tn8898467"
-}, 
-"edge23499": {
-"@source": "Tn8898462", 
-"@target": "Tn8898500"
-}, 
-"edge23501": {
-"@source": "Tn8898462", 
-"@target": "Tn8898495"
-}, 
-"edge23503": {
-"@source": "Tn8898462", 
-"@target": "Tn8898475"
-}
-}, 
-"Tn8898463": {
-"edge23453": {
-"@source": "Tn8898463", 
-"@target": "Tn8898496"
-}, 
-"edge23455": {
-"@source": "Tn8898463", 
-"@target": "Tn8898484"
-}
-}, 
-"Tn8898464": {
-"edge23537": {
-"@source": "Tn8898464", 
-"@target": "Tn8898498"
-}, 
-"edge23539": {
-"@source": "Tn8898464", 
-"@target": "Tn8898478"
-}
-}, 
-"Tn8898470": {
-"edge23451": {
-"@source": "Tn8898470", 
-"@target": "Tn8898463"
-}, 
-"edge23457": {
-"@source": "Tn8898470", 
-"@target": "Tn8898474"
-}
-}, 
-"Tn8898473": {
-"edge23483": {
-"@source": "Tn8898473", 
-"@target": "Tn8898485"
-}, 
-"edge23505": {
-"@source": "Tn8898473", 
-"@target": "Tn8898458"
-}
-}, 
-"Tn8898474": {
-"edge23459": {
-"@length": 2.0, 
-"@source": "Tn8898474", 
-"@target": "Tn8898501"
-}, 
-"edge23461": {
-"@source": "Tn8898474", 
-"@target": "Tn8898468"
-}, 
-"edge23463": {
-"@source": "Tn8898474", 
-"@target": "Tn8898476"
-}, 
-"edge23465": {
-"@source": "Tn8898474", 
-"@target": "Tn8898491"
-}, 
-"edge23467": {
-"@source": "Tn8898474", 
-"@target": "Tn8898489"
-}, 
-"edge23469": {
-"@source": "Tn8898474", 
-"@target": "Tn8898480"
-}, 
-"edge23471": {
-"@source": "Tn8898474", 
-"@target": "Tn8898472"
-}, 
-"edge23473": {
-"@source": "Tn8898474", 
-"@target": "Tn8898499"
-}, 
-"edge23475": {
-"@source": "Tn8898474", 
-"@target": "Tn8898471"
-}, 
-"edge23477": {
-"@source": "Tn8898474", 
-"@target": "Tn8898469"
-}, 
-"edge23479": {
-"@source": "Tn8898474", 
-"@target": "Tn8898486"
-}
-}, 
-"Tn8898477": {
-"edge23509": {
-"@source": "Tn8898477", 
-"@target": "Tn8898466"
-}, 
-"edge23511": {
-"@source": "Tn8898477", 
-"@target": "Tn8898481"
-}, 
-"edge23513": {
-"@source": "Tn8898477", 
-"@target": "Tn8898494"
-}, 
-"edge23515": {
-"@source": "Tn8898477", 
-"@target": "Tn8898502"
-}, 
-"edge23517": {
-"@source": "Tn8898477", 
-"@target": "Tn8898487"
-}, 
-"edge23519": {
-"@source": "Tn8898477", 
-"@target": "Tn8898503"
-}, 
-"edge23521": {
-"@source": "Tn8898477", 
-"@target": "Tn8898457"
-}, 
-"edge23523": {
-"@source": "Tn8898477", 
-"@target": "Tn8898493"
-}
-}, 
-"Tn8898479": {
-"edge23487": {
-"@source": "Tn8898479", 
-"@target": "Tn8898461"
-}, 
-"edge23489": {
-"@source": "Tn8898479", 
-"@target": "Tn8898459"
-}, 
-"edge23491": {
-"@source": "Tn8898479", 
-"@target": "Tn8898482"
-}, 
-"edge23493": {
-"@source": "Tn8898479", 
-"@target": "Tn8898483"
-}
-}, 
-"Tn8898485": {
-"edge23485": {
-"@source": "Tn8898485", 
-"@target": "Tn8898479"
-}, 
-"edge23495": {
-"@source": "Tn8898485", 
-"@target": "Tn8898462"
-}
-}, 
-"Tn8898488": {
-"edge23445": {
-"@length": 0.5, 
-"@source": "Tn8898488", 
-"@target": "Tn8898490"
-}, 
-"edge23535": {
-"@length": 0.5, 
-"@source": "Tn8898488", 
-"@target": "Tn8898464"
-}
-}, 
-"Tn8898490": {
-"edge23447": {
-"@source": "Tn8898490", 
-"@target": "Tn8898497"
-}, 
-"edge23527": {
-"@source": "Tn8898490", 
-"@target": "Tn8898492"
-}
-}, 
-"Tn8898492": {
-"edge23529": {
-"@source": "Tn8898492", 
-"@target": "Tn8898504"
-}, 
-"edge23531": {
-"@source": "Tn8898492", 
-"@target": "Tn8898460"
-}, 
-"edge23533": {
-"@source": "Tn8898492", 
-"@target": "Tn8898465"
-}
-}, 
-"Tn8898497": {
-"edge23449": {
-"@source": "Tn8898497", 
-"@target": "Tn8898470"
-}, 
-"edge23481": {
-"@source": "Tn8898497", 
-"@target": "Tn8898473"
-}
-}
-}, 
-"nodeById": {
-"Tn8898457": {
-"@otu": "Tl741834"
-}, 
-"Tn8898458": {}, 
-"Tn8898459": {
-"@otu": "Tl741825"
-}, 
-"Tn8898460": {
-"@otu": "Tl741766"
-}, 
-"Tn8898461": {
-"@otu": "Tl741818"
-}, 
-"Tn8898462": {}, 
-"Tn8898463": {}, 
-"Tn8898464": {}, 
-"Tn8898465": {
-"@otu": "Tl741830"
-}, 
-"Tn8898466": {
-"@otu": "Tl741800"
-}, 
-"Tn8898467": {
-"@otu": "Tl741822"
-}, 
-"Tn8898468": {
-"@otu": "Tl741833"
-}, 
-"Tn8898469": {
-"@otu": "Tl741805"
-}, 
-"Tn8898470": {}, 
-"Tn8898471": {
-"@otu": "Tl741837"
-}, 
-"Tn8898472": {
-"@otu": "Tl741812"
-}, 
-"Tn8898473": {}, 
-"Tn8898474": {}, 
-"Tn8898475": {
-"@otu": "Tl741776"
-}, 
-"Tn8898476": {
-"@otu": "Tl741782"
-}, 
-"Tn8898477": {}, 
-"Tn8898478": {
-"@otu": "Tl741857"
-}, 
-"Tn8898479": {}, 
-"Tn8898480": {
-"@otu": "Tl741799"
-}, 
-"Tn8898481": {
-"@otu": "Tl741771"
-}, 
-"Tn8898482": {
-"@otu": "Tl741796"
-}, 
-"Tn8898483": {
-"@otu": "Tl741786"
-}, 
-"Tn8898484": {
-"@otu": "Tl741760"
-}, 
-"Tn8898485": {}, 
-"Tn8898486": {
-"@otu": "Tl741847"
-}, 
-"Tn8898487": {
-"@otu": "Tl741802"
-}, 
-"Tn8898488": {
-"@root": true
-}, 
-"Tn8898489": {
-"@otu": "Tl741855"
-}, 
-"Tn8898490": {}, 
-"Tn8898491": {
-"@otu": "Tl741845"
-}, 
-"Tn8898492": {}, 
-"Tn8898493": {
-"@otu": "Tl741778"
-}, 
-"Tn8898494": {
-"@otu": "Tl741849"
-}, 
-"Tn8898495": {
-"@otu": "Tl741775"
-}, 
-"Tn8898496": {
-"@otu": "Tl741853"
-}, 
-"Tn8898497": {}, 
-"Tn8898498": {
-"@otu": "Tl741831"
-}, 
-"Tn8898499": {
-"@otu": "Tl741844"
-}, 
-"Tn8898500": {
-"@otu": "Tl741854"
-}, 
-"Tn8898501": {
-"@otu": "Tl741895"
-}, 
-"Tn8898502": {
-"@otu": "Tl741765"
-}, 
-"Tn8898503": {
-"@otu": "Tl741777"
-}, 
-"Tn8898504": {
-"@otu": "Tl741780"
-}, 
-"Tn8898505": {
-"@otu": "Tl741809"
-}
-}
-}, 
-"Tr52148": {
-"@label": "Fig. 3a", 
-"@xsi:type": "nex:FloatTree", 
-"^ot:rootNodeId": "Tn8898381", 
-"^tb:kind.tree": "Species Tree", 
-"^tb:ntax.tree": 35, 
-"^tb:quality.tree": "Unrated", 
-"^tb:type.tree": "Single", 
-"edgeBySourceId": {
-"Tn8898353": {
-"edge22903": {
-"@length": 2.0, 
-"@source": "Tn8898353", 
-"@target": "Tn8898370"
-}, 
-"edge22905": {
-"@source": "Tn8898353", 
-"@target": "Tn8898383"
-}, 
-"edge22907": {
-"@source": "Tn8898353", 
-"@target": "Tn8898368"
-}, 
-"edge22909": {
-"@source": "Tn8898353", 
-"@target": "Tn8898356"
-}
-}, 
-"Tn8898357": {
-"edge22873": {
-"@source": "Tn8898357", 
-"@target": "Tn8898351"
-}, 
-"edge22875": {
-"@source": "Tn8898357", 
-"@target": "Tn8898347"
-}, 
-"edge22877": {
-"@source": "Tn8898357", 
-"@target": "Tn8898363"
-}
-}, 
-"Tn8898364": {
-"edge22883": {
-"@source": "Tn8898364", 
-"@target": "Tn8898387"
-}, 
-"edge22885": {
-"@source": "Tn8898364", 
-"@target": "Tn8898371"
-}, 
-"edge22887": {
-"@source": "Tn8898364", 
-"@target": "Tn8898374"
-}, 
-"edge22889": {
-"@source": "Tn8898364", 
-"@target": "Tn8898360"
-}, 
-"edge22891": {
-"@source": "Tn8898364", 
-"@target": "Tn8898380"
-}, 
-"edge22893": {
-"@source": "Tn8898364", 
-"@target": "Tn8898349"
-}, 
-"edge22895": {
-"@source": "Tn8898364", 
-"@target": "Tn8898379"
-}, 
-"edge22897": {
-"@source": "Tn8898364", 
-"@target": "Tn8898382"
-}
-}, 
-"Tn8898365": {
-"edge22845": {
-"@source": "Tn8898365", 
-"@target": "Tn8898346"
-}, 
-"edge22847": {
-"@source": "Tn8898365", 
-"@target": "Tn8898355"
-}, 
-"edge22849": {
-"@source": "Tn8898365", 
-"@target": "Tn8898350"
-}, 
-"edge22851": {
-"@source": "Tn8898365", 
-"@target": "Tn8898385"
-}, 
-"edge22853": {
-"@source": "Tn8898365", 
-"@target": "Tn8898367"
-}, 
-"edge22855": {
-"@source": "Tn8898365", 
-"@target": "Tn8898362"
-}, 
-"edge22857": {
-"@source": "Tn8898365", 
-"@target": "Tn8898369"
-}, 
-"edge22859": {
-"@source": "Tn8898365", 
-"@target": "Tn8898352"
-}, 
-"edge22861": {
-"@source": "Tn8898365", 
-"@target": "Tn8898390"
-}, 
-"edge22863": {
-"@source": "Tn8898365", 
-"@target": "Tn8898372"
-}, 
-"edge22865": {
-"@source": "Tn8898365", 
-"@target": "Tn8898358"
-}, 
-"edge22867": {
-"@source": "Tn8898365", 
-"@target": "Tn8898361"
-}, 
-"edge22869": {
-"@source": "Tn8898365", 
-"@target": "Tn8898348"
-}
-}, 
-"Tn8898375": {
-"edge22881": {
-"@source": "Tn8898375", 
-"@target": "Tn8898364"
-}, 
-"edge22899": {
-"@source": "Tn8898375", 
-"@target": "Tn8898384"
-}
-}, 
-"Tn8898378": {
-"edge22841": {
-"@source": "Tn8898378", 
-"@target": "Tn8898388"
-}, 
-"edge22879": {
-"@source": "Tn8898378", 
-"@target": "Tn8898375"
-}
-}, 
-"Tn8898381": {
-"edge22837": {
-"@length": 0.5, 
-"@source": "Tn8898381", 
-"@target": "Tn8898386"
-}, 
-"edge22919": {
-"@length": 0.5, 
-"@source": "Tn8898381", 
-"@target": "Tn8898389"
-}
-}, 
-"Tn8898386": {
-"edge22839": {
-"@source": "Tn8898386", 
-"@target": "Tn8898378"
-}, 
-"edge22901": {
-"@source": "Tn8898386", 
-"@target": "Tn8898353"
-}, 
-"edge22911": {
-"@source": "Tn8898386", 
-"@target": "Tn8898359"
-}, 
-"edge22913": {
-"@source": "Tn8898386", 
-"@target": "Tn8898377"
-}, 
-"edge22915": {
-"@source": "Tn8898386", 
-"@target": "Tn8898373"
-}, 
-"edge22917": {
-"@source": "Tn8898386", 
-"@target": "Tn8898354"
-}
-}, 
-"Tn8898388": {
-"edge22843": {
-"@source": "Tn8898388", 
-"@target": "Tn8898365"
-}, 
-"edge22871": {
-"@source": "Tn8898388", 
-"@target": "Tn8898357"
-}
-}, 
-"Tn8898389": {
-"edge22921": {
-"@source": "Tn8898389", 
-"@target": "Tn8898376"
-}, 
-"edge22923": {
-"@source": "Tn8898389", 
-"@target": "Tn8898366"
-}
-}
-}, 
-"nodeById": {
-"Tn8898346": {
-"@otu": "Tl741801"
-}, 
-"Tn8898347": {
-"@otu": "Tl741766"
-}, 
-"Tn8898348": {
-"@otu": "Tl741847"
-}, 
-"Tn8898349": {
-"@otu": "Tl741777"
-}, 
-"Tn8898350": {
-"@otu": "Tl741782"
-}, 
-"Tn8898351": {
-"@otu": "Tl741780"
-}, 
-"Tn8898352": {
-"@otu": "Tl741853"
-}, 
-"Tn8898353": {}, 
-"Tn8898354": {
-"@otu": "Tl741818"
-}, 
-"Tn8898355": {
-"@otu": "Tl741833"
-}, 
-"Tn8898356": {
-"@otu": "Tl741776"
-}, 
-"Tn8898357": {}, 
-"Tn8898358": {
-"@otu": "Tl741837"
-}, 
-"Tn8898359": {
-"@otu": "Tl741786"
-}, 
-"Tn8898360": {
-"@otu": "Tl741765"
-}, 
-"Tn8898361": {
-"@otu": "Tl741805"
-}, 
-"Tn8898362": {
-"@otu": "Tl741799"
-}, 
-"Tn8898363": {
-"@otu": "Tl741830"
-}, 
-"Tn8898364": {}, 
-"Tn8898365": {}, 
-"Tn8898366": {
-"@otu": "Tl741857"
-}, 
-"Tn8898367": {
-"@otu": "Tl741855"
-}, 
-"Tn8898368": {
-"@otu": "Tl741775"
-}, 
-"Tn8898369": {
-"@otu": "Tl741812"
-}, 
-"Tn8898370": {
-"@otu": "Tl741896"
-}, 
-"Tn8898371": {
-"@otu": "Tl741771"
-}, 
-"Tn8898372": {
-"@otu": "Tl741844"
-}, 
-"Tn8898373": {
-"@otu": "Tl741825"
-}, 
-"Tn8898374": {
-"@otu": "Tl741849"
-}, 
-"Tn8898375": {}, 
-"Tn8898376": {
-"@otu": "Tl741831"
-}, 
-"Tn8898377": {
-"@otu": "Tl741796"
-}, 
-"Tn8898378": {}, 
-"Tn8898379": {
-"@otu": "Tl741834"
-}, 
-"Tn8898380": {
-"@otu": "Tl741802"
-}, 
-"Tn8898381": {
-"@root": true
-}, 
-"Tn8898382": {
-"@otu": "Tl741778"
-}, 
-"Tn8898383": {
-"@otu": "Tl741854"
-}, 
-"Tn8898384": {
-"@otu": "Tl741809"
-}, 
-"Tn8898385": {
-"@otu": "Tl741845"
-}, 
-"Tn8898386": {}, 
-"Tn8898387": {
-"@otu": "Tl741800"
-}, 
-"Tn8898388": {}, 
-"Tn8898389": {}, 
-"Tn8898390": {
-"@otu": "Tl741760"
-}
-}
-}, 
-"Tr52149": {
-"@label": "Fig. 3e", 
-"@xsi:type": "nex:FloatTree", 
-"^ot:rootNodeId": "Tn8898599", 
-"^tb:kind.tree": "Species Tree", 
-"^tb:ntax.tree": 35, 
-"^tb:quality.tree": "Unrated", 
-"^tb:type.tree": "Single", 
-"edgeBySourceId": {
-"Tn8898563": {
-"edge23283": {
-"@source": "Tn8898563", 
-"@target": "Tn8898593"
-}, 
-"edge23285": {
-"@source": "Tn8898563", 
-"@target": "Tn8898579"
-}
-}, 
-"Tn8898564": {
-"edge23329": {
-"@source": "Tn8898564", 
-"@target": "Tn8898577"
-}, 
-"edge23331": {
-"@source": "Tn8898564", 
-"@target": "Tn8898559"
-}
-}, 
-"Tn8898566": {
-"edge23243": {
-"@source": "Tn8898566", 
-"@target": "Tn8898581"
-}, 
-"edge23265": {
-"@source": "Tn8898566", 
-"@target": "Tn8898602"
-}
-}, 
-"Tn8898575": {
-"edge23241": {
-"@source": "Tn8898575", 
-"@target": "Tn8898566"
-}, 
-"edge23289": {
-"@source": "Tn8898575", 
-"@target": "Tn8898588"
-}
-}, 
-"Tn8898576": {
-"edge23301": {
-"@length": 2.0, 
-"@source": "Tn8898576", 
-"@target": "Tn8898589"
-}, 
-"edge23303": {
-"@source": "Tn8898576", 
-"@target": "Tn8898592"
-}, 
-"edge23305": {
-"@source": "Tn8898576", 
-"@target": "Tn8898574"
-}, 
-"edge23307": {
-"@source": "Tn8898576", 
-"@target": "Tn8898596"
-}, 
-"edge23309": {
-"@source": "Tn8898576", 
-"@target": "Tn8898590"
-}, 
-"edge23311": {
-"@source": "Tn8898576", 
-"@target": "Tn8898570"
-}, 
-"edge23313": {
-"@source": "Tn8898576", 
-"@target": "Tn8898604"
-}, 
-"edge23315": {
-"@source": "Tn8898576", 
-"@target": "Tn8898578"
-}, 
-"edge23317": {
-"@source": "Tn8898576", 
-"@target": "Tn8898569"
-}, 
-"edge23319": {
-"@source": "Tn8898576", 
-"@target": "Tn8898600"
-}, 
-"edge23321": {
-"@source": "Tn8898576", 
-"@target": "Tn8898582"
-}, 
-"edge23323": {
-"@source": "Tn8898576", 
-"@target": "Tn8898573"
-}, 
-"edge23325": {
-"@source": "Tn8898576", 
-"@target": "Tn8898594"
-}
-}, 
-"Tn8898580": {
-"edge23293": {
-"@source": "Tn8898580", 
-"@target": "Tn8898560"
-}, 
-"edge23295": {
-"@source": "Tn8898580", 
-"@target": "Tn8898567"
-}, 
-"edge23297": {
-"@source": "Tn8898580", 
-"@target": "Tn8898603"
-}
-}, 
-"Tn8898581": {
-"edge23245": {
-"@source": "Tn8898581", 
-"@target": "Tn8898586"
-}, 
-"edge23255": {
-"@source": "Tn8898581", 
-"@target": "Tn8898587"
-}
-}, 
-"Tn8898586": {
-"edge23247": {
-"@source": "Tn8898586", 
-"@target": "Tn8898565"
-}, 
-"edge23249": {
-"@source": "Tn8898586", 
-"@target": "Tn8898561"
-}, 
-"edge23251": {
-"@source": "Tn8898586", 
-"@target": "Tn8898595"
-}, 
-"edge23253": {
-"@source": "Tn8898586", 
-"@target": "Tn8898557"
-}
-}, 
-"Tn8898587": {
-"edge23257": {
-"@source": "Tn8898587", 
-"@target": "Tn8898584"
-}, 
-"edge23259": {
-"@source": "Tn8898587", 
-"@target": "Tn8898562"
-}, 
-"edge23261": {
-"@source": "Tn8898587", 
-"@target": "Tn8898568"
-}, 
-"edge23263": {
-"@source": "Tn8898587", 
-"@target": "Tn8898583"
-}
-}, 
-"Tn8898588": {
-"edge23291": {
-"@source": "Tn8898588", 
-"@target": "Tn8898580"
-}, 
-"edge23299": {
-"@source": "Tn8898588", 
-"@target": "Tn8898576"
-}
-}, 
-"Tn8898591": {
-"edge23269": {
-"@source": "Tn8898591", 
-"@target": "Tn8898572"
-}, 
-"edge23271": {
-"@source": "Tn8898591", 
-"@target": "Tn8898585"
-}, 
-"edge23273": {
-"@source": "Tn8898591", 
-"@target": "Tn8898597"
-}, 
-"edge23275": {
-"@source": "Tn8898591", 
-"@target": "Tn8898601"
-}, 
-"edge23277": {
-"@source": "Tn8898591", 
-"@target": "Tn8898558"
-}, 
-"edge23279": {
-"@source": "Tn8898591", 
-"@target": "Tn8898571"
-}, 
-"edge23281": {
-"@source": "Tn8898591", 
-"@target": "Tn8898563"
-}
-}, 
-"Tn8898599": {
-"edge23239": {
-"@length": 0.5, 
-"@source": "Tn8898599", 
-"@target": "Tn8898575"
-}, 
-"edge23327": {
-"@length": 0.5, 
-"@source": "Tn8898599", 
-"@target": "Tn8898564"
-}
-}, 
-"Tn8898602": {
-"edge23267": {
-"@source": "Tn8898602", 
-"@target": "Tn8898591"
-}, 
-"edge23287": {
-"@source": "Tn8898602", 
-"@target": "Tn8898598"
-}
-}
-}, 
-"nodeById": {
-"Tn8898557": {
-"@otu": "Tl741786"
-}, 
-"Tn8898558": {
-"@otu": "Tl741834"
-}, 
-"Tn8898559": {
-"@otu": "Tl741857"
-}, 
-"Tn8898560": {
-"@otu": "Tl741780"
-}, 
-"Tn8898561": {
-"@otu": "Tl741825"
-}, 
-"Tn8898562": {
-"@otu": "Tl741854"
-}, 
-"Tn8898563": {}, 
-"Tn8898564": {}, 
-"Tn8898565": {
-"@otu": "Tl741818"
-}, 
-"Tn8898566": {}, 
-"Tn8898567": {
-"@otu": "Tl741766"
-}, 
-"Tn8898568": {
-"@otu": "Tl741775"
-}, 
-"Tn8898569": {
-"@otu": "Tl741760"
-}, 
-"Tn8898570": {
-"@otu": "Tl741799"
-}, 
-"Tn8898571": {
-"@otu": "Tl741778"
-}, 
-"Tn8898572": {
-"@otu": "Tl741800"
-}, 
-"Tn8898573": {
-"@otu": "Tl741805"
-}, 
-"Tn8898574": {
-"@otu": "Tl741782"
-}, 
-"Tn8898575": {}, 
-"Tn8898576": {}, 
-"Tn8898577": {
-"@otu": "Tl741831"
-}, 
-"Tn8898578": {
-"@otu": "Tl741853"
-}, 
-"Tn8898579": {
-"@otu": "Tl741777"
-}, 
-"Tn8898580": {}, 
-"Tn8898581": {}, 
-"Tn8898582": {
-"@otu": "Tl741837"
-}, 
-"Tn8898583": {
-"@otu": "Tl741776"
-}, 
-"Tn8898584": {
-"@otu": "Tl741822"
-}, 
-"Tn8898585": {
-"@otu": "Tl741771"
-}, 
-"Tn8898586": {}, 
-"Tn8898587": {}, 
-"Tn8898588": {}, 
-"Tn8898589": {
-"@otu": "Tl741897"
-}, 
-"Tn8898590": {
-"@otu": "Tl741855"
-}, 
-"Tn8898591": {}, 
-"Tn8898592": {
-"@otu": "Tl741833"
-}, 
-"Tn8898593": {
-"@otu": "Tl741849"
-}, 
-"Tn8898594": {
-"@otu": "Tl741847"
-}, 
-"Tn8898595": {
-"@otu": "Tl741796"
-}, 
-"Tn8898596": {
-"@otu": "Tl741845"
-}, 
-"Tn8898597": {
-"@otu": "Tl741765"
-}, 
-"Tn8898598": {
-"@otu": "Tl741809"
-}, 
-"Tn8898599": {
-"@root": true
-}, 
-"Tn8898600": {
-"@otu": "Tl741844"
-}, 
-"Tn8898601": {
-"@otu": "Tl741802"
-}, 
-"Tn8898602": {}, 
-"Tn8898603": {
-"@otu": "Tl741830"
-}, 
-"Tn8898604": {
-"@otu": "Tl741812"
-}
-}
-}, 
-"Tr52150": {
-"@label": "Fig. 2", 
-"@xsi:type": "nex:FloatTree", 
-"^ot:rootNodeId": "Tn8898633", 
-"^tb:kind.tree": "Species Tree", 
-"^tb:ntax.tree": 94, 
-"^tb:quality.tree": "Unrated", 
-"^tb:type.tree": "Single", 
-"edgeBySourceId": {
-"Tn8898605": {
-"edge23175": {
-"@source": "Tn8898605", 
-"@target": "Tn8898623"
-}, 
-"edge23177": {
-"@source": "Tn8898605", 
-"@target": "Tn8898666"
-}
-}, 
-"Tn8898610": {
-"edge23009": {
-"@source": "Tn8898610", 
-"@target": "Tn8898745"
-}, 
-"edge23011": {
-"@source": "Tn8898610", 
-"@target": "Tn8898640"
-}, 
-"edge23013": {
-"@source": "Tn8898610", 
-"@target": "Tn8898681"
-}, 
-"edge23015": {
-"@source": "Tn8898610", 
-"@target": "Tn8898698"
-}
-}, 
-"Tn8898611": {
-"edge23049": {
-"@source": "Tn8898611", 
-"@target": "Tn8898660"
-}, 
-"edge23051": {
-"@source": "Tn8898611", 
-"@target": "Tn8898733"
-}
-}, 
-"Tn8898617": {
-"edge23117": {
-"@source": "Tn8898617", 
-"@target": "Tn8898697"
-}, 
-"edge23123": {
-"@source": "Tn8898617", 
-"@target": "Tn8898676"
-}
-}, 
-"Tn8898619": {
-"edge22945": {
-"@source": "Tn8898619", 
-"@target": "Tn8898703"
-}, 
-"edge23053": {
-"@source": "Tn8898619", 
-"@target": "Tn8898720"
-}
-}, 
-"Tn8898627": {
-"edge23185": {
-"@source": "Tn8898627", 
-"@target": "Tn8898695"
-}, 
-"edge23191": {
-"@source": "Tn8898627", 
-"@target": "Tn8898725"
-}
-}, 
-"Tn8898629": {
-"edge23195": {
-"@source": "Tn8898629", 
-"@target": "Tn8898692"
-}, 
-"edge23201": {
-"@source": "Tn8898629", 
-"@target": "Tn8898649"
-}
-}, 
-"Tn8898632": {
-"edge23161": {
-"@source": "Tn8898632", 
-"@target": "Tn8898701"
-}, 
-"edge23163": {
-"@source": "Tn8898632", 
-"@target": "Tn8898656"
-}
-}, 
-"Tn8898633": {
-"edge22935": {
-"@length": 0.5, 
-"@source": "Tn8898633", 
-"@target": "Tn8898742"
-}, 
-"edge23223": {
-"@length": 0.5, 
-"@source": "Tn8898633", 
-"@target": "Tn8898721"
-}
-}, 
-"Tn8898638": {
-"edge23173": {
-"@source": "Tn8898638", 
-"@target": "Tn8898605"
-}, 
-"edge23179": {
-"@source": "Tn8898638", 
-"@target": "Tn8898704"
-}
-}, 
-"Tn8898641": {
-"edge23087": {
-"@source": "Tn8898641", 
-"@target": "Tn8898750"
-}, 
-"edge23101": {
-"@source": "Tn8898641", 
-"@target": "Tn8898691"
-}, 
-"edge23115": {
-"@source": "Tn8898641", 
-"@target": "Tn8898617"
-}
-}, 
-"Tn8898649": {
-"edge23203": {
-"@source": "Tn8898649", 
-"@target": "Tn8898607"
-}, 
-"edge23205": {
-"@source": "Tn8898649", 
-"@target": "Tn8898645"
-}
+"Tn9850482": {
+"@otu": "Tl1050041"
 }, 
-"Tn8898651": {
-"edge22999": {
-"@source": "Tn8898651", 
-"@target": "Tn8898634"
-}, 
-"edge23001": {
-"@source": "Tn8898651", 
-"@target": "Tn8898671"
-}, 
-"edge23003": {
-"@source": "Tn8898651", 
-"@target": "Tn8898626"
-}, 
-"edge23005": {
-"@source": "Tn8898651", 
-"@target": "Tn8898618"
-}
-}, 
-"Tn8898652": {
-"edge23215": {
-"@source": "Tn8898652", 
-"@target": "Tn8898746"
-}, 
-"edge23217": {
-"@source": "Tn8898652", 
-"@target": "Tn8898658"
-}
-}, 
-"Tn8898653": {
-"edge23143": {
-"@source": "Tn8898653", 
-"@target": "Tn8898699"
-}, 
-"edge23149": {
-"@source": "Tn8898653", 
-"@target": "Tn8898708"
-}
-}, 
-"Tn8898659": {
-"edge23137": {
-"@source": "Tn8898659", 
-"@target": "Tn8898747"
-}, 
-"edge23139": {
-"@source": "Tn8898659", 
-"@target": "Tn8898622"
-}
-}, 
-"Tn8898661": {
-"edge23075": {
-"@source": "Tn8898661", 
-"@target": "Tn8898650"
-}, 
-"edge23077": {
-"@source": "Tn8898661", 
-"@target": "Tn8898709"
-}
-}, 
-"Tn8898663": {
-"edge23081": {
-"@source": "Tn8898663", 
-"@target": "Tn8898665"
-}, 
-"edge23083": {
-"@source": "Tn8898663", 
-"@target": "Tn8898664"
-}
-}, 
-"Tn8898672": {
-"edge23059": {
-"@source": "Tn8898672", 
-"@target": "Tn8898717"
-}, 
-"edge23061": {
-"@source": "Tn8898672", 
-"@target": "Tn8898662"
-}, 
-"edge23063": {
-"@source": "Tn8898672", 
-"@target": "Tn8898723"
-}
-}, 
-"Tn8898673": {
-"edge22965": {
-"@source": "Tn8898673", 
-"@target": "Tn8898715"
-}, 
-"edge22967": {
-"@source": "Tn8898673", 
-"@target": "Tn8898727"
-}, 
-"edge22969": {
-"@source": "Tn8898673", 
-"@target": "Tn8898675"
-}, 
-"edge22971": {
-"@source": "Tn8898673", 
-"@target": "Tn8898606"
-}, 
-"edge22973": {
-"@source": "Tn8898673", 
-"@target": "Tn8898683"
-}, 
-"edge22975": {
-"@source": "Tn8898673", 
-"@target": "Tn8898642"
-}, 
-"edge22977": {
-"@source": "Tn8898673", 
-"@target": "Tn8898678"
-}, 
-"edge22979": {
-"@source": "Tn8898673", 
-"@target": "Tn8898682"
-}, 
-"edge22981": {
-"@source": "Tn8898673", 
-"@target": "Tn8898635"
-}, 
-"edge22983": {
-"@source": "Tn8898673", 
-"@target": "Tn8898647"
-}, 
-"edge22985": {
-"@source": "Tn8898673", 
-"@target": "Tn8898732"
-}, 
-"edge22987": {
-"@source": "Tn8898673", 
-"@target": "Tn8898614"
-}, 
-"edge22989": {
-"@source": "Tn8898673", 
-"@target": "Tn8898639"
-}, 
-"edge22991": {
-"@source": "Tn8898673", 
-"@target": "Tn8898744"
-}, 
-"edge22993": {
-"@source": "Tn8898673", 
-"@target": "Tn8898741"
-}, 
-"edge22995": {
-"@source": "Tn8898673", 
-"@target": "Tn8898636"
-}, 
-"edge22997": {
-"@source": "Tn8898673", 
-"@target": "Tn8898651"
-}, 
-"edge23007": {
-"@source": "Tn8898673", 
-"@target": "Tn8898610"
-}, 
-"edge23017": {
-"@source": "Tn8898673", 
-"@target": "Tn8898711"
-}
-}, 
-"Tn8898676": {
-"edge23125": {
-"@source": "Tn8898676", 
-"@target": "Tn8898643"
-}, 
-"edge23127": {
-"@source": "Tn8898676", 
-"@target": "Tn8898705"
-}, 
-"edge23129": {
-"@source": "Tn8898676", 
-"@target": "Tn8898687"
-}, 
-"edge23135": {
-"@source": "Tn8898676", 
-"@target": "Tn8898659"
-}
-}, 
-"Tn8898684": {
-"edge22941": {
-"@source": "Tn8898684", 
-"@target": "Tn8898689"
-}, 
-"edge23157": {
-"@source": "Tn8898684", 
-"@target": "Tn8898734"
-}
-}, 
-"Tn8898685": {
-"edge23209": {
-"@source": "Tn8898685", 
-"@target": "Tn8898631"
-}, 
-"edge23211": {
-"@source": "Tn8898685", 
-"@target": "Tn8898728"
-}
-}, 
-"Tn8898687": {
-"edge23131": {
-"@source": "Tn8898687", 
-"@target": "Tn8898625"
-}, 
-"edge23133": {
-"@source": "Tn8898687", 
-"@target": "Tn8898751"
-}
-}, 
-"Tn8898689": {
-"edge22943": {
-"@source": "Tn8898689", 
-"@target": "Tn8898619"
-}, 
-"edge23085": {
-"@source": "Tn8898689", 
-"@target": "Tn8898641"
-}, 
-"edge23141": {
-"@source": "Tn8898689", 
-"@target": "Tn8898653"
-}
-}, 
-"Tn8898690": {
-"edge23043": {
-"@source": "Tn8898690", 
-"@target": "Tn8898693"
-}, 
-"edge23045": {
-"@source": "Tn8898690", 
-"@target": "Tn8898655"
-}
-}, 
-"Tn8898691": {
-"edge23103": {
-"@source": "Tn8898691", 
-"@target": "Tn8898749"
-}, 
-"edge23109": {
-"@source": "Tn8898691", 
-"@target": "Tn8898710"
-}
-}, 
-"Tn8898692": {
-"edge23197": {
-"@source": "Tn8898692", 
-"@target": "Tn8898696"
-}, 
-"edge23199": {
-"@source": "Tn8898692", 
-"@target": "Tn8898616"
-}
-}, 
-"Tn8898694": {
-"edge22939": {
-"@source": "Tn8898694", 
-"@target": "Tn8898684"
-}, 
-"edge23171": {
-"@source": "Tn8898694", 
-"@target": "Tn8898638"
-}
-}, 
-"Tn8898695": {
-"edge23187": {
-"@source": "Tn8898695", 
-"@target": "Tn8898654"
-}, 
-"edge23189": {
-"@source": "Tn8898695", 
-"@target": "Tn8898637"
-}
-}, 
-"Tn8898697": {
-"edge23119": {
-"@source": "Tn8898697", 
-"@target": "Tn8898613"
-}, 
-"edge23121": {
-"@source": "Tn8898697", 
-"@target": "Tn8898679"
-}
-}, 
-"Tn8898699": {
-"edge23145": {
-"@source": "Tn8898699", 
-"@target": "Tn8898646"
-}, 
-"edge23147": {
-"@source": "Tn8898699", 
-"@target": "Tn8898624"
-}
-}, 
-"Tn8898702": {
-"edge23097": {
-"@source": "Tn8898702", 
-"@target": "Tn8898716"
-}, 
-"edge23099": {
-"@source": "Tn8898702", 
-"@target": "Tn8898735"
-}
-}, 
-"Tn8898703": {
-"edge22947": {
-"@source": "Tn8898703", 
-"@target": "Tn8898737"
-}, 
-"edge23039": {
-"@source": "Tn8898703", 
-"@target": "Tn8898743"
-}
-}, 
-"Tn8898708": {
-"edge23151": {
-"@length": 2.0, 
-"@source": "Tn8898708", 
-"@target": "Tn8898686"
-}, 
-"edge23153": {
-"@source": "Tn8898708", 
-"@target": "Tn8898620"
-}, 
-"edge23155": {
-"@source": "Tn8898708", 
-"@target": "Tn8898668"
-}
-}, 
-"Tn8898710": {
-"edge23111": {
-"@source": "Tn8898710", 
-"@target": "Tn8898669"
-}, 
-"edge23113": {
-"@source": "Tn8898710", 
-"@target": "Tn8898608"
-}
-}, 
-"Tn8898711": {
-"edge23019": {
-"@source": "Tn8898711", 
-"@target": "Tn8898739"
-}, 
-"edge23037": {
-"@source": "Tn8898711", 
-"@target": "Tn8898609"
-}
-}, 
-"Tn8898712": {
-"edge23183": {
-"@source": "Tn8898712", 
-"@target": "Tn8898627"
-}, 
-"edge23213": {
-"@source": "Tn8898712", 
-"@target": "Tn8898652"
-}, 
-"edge23219": {
-"@source": "Tn8898712", 
-"@target": "Tn8898648"
-}, 
-"edge23221": {
-"@source": "Tn8898712", 
-"@target": "Tn8898714"
-}
-}, 
-"Tn8898720": {
-"edge23055": {
-"@source": "Tn8898720", 
-"@target": "Tn8898726"
-}, 
-"edge23071": {
-"@source": "Tn8898720", 
-"@target": "Tn8898738"
-}
-}, 
-"Tn8898721": {
-"edge23225": {
-"@source": "Tn8898721", 
-"@target": "Tn8898670"
-}, 
-"edge23227": {
-"@source": "Tn8898721", 
-"@target": "Tn8898621"
-}
-}, 
-"Tn8898724": {
-"edge23167": {
-"@source": "Tn8898724", 
-"@target": "Tn8898612"
-}, 
-"edge23169": {
-"@source": "Tn8898724", 
-"@target": "Tn8898707"
-}
-}, 
-"Tn8898725": {
-"edge23193": {
-"@source": "Tn8898725", 
-"@target": "Tn8898629"
-}, 
-"edge23207": {
-"@source": "Tn8898725", 
-"@target": "Tn8898685"
-}
-}, 
-"Tn8898726": {
-"edge23057": {
-"@source": "Tn8898726", 
-"@target": "Tn8898672"
-}, 
-"edge23065": {
-"@source": "Tn8898726", 
-"@target": "Tn8898736"
-}
-}, 
-"Tn8898734": {
-"edge23159": {
-"@source": "Tn8898734", 
-"@target": "Tn8898632"
-}, 
-"edge23165": {
-"@source": "Tn8898734", 
-"@target": "Tn8898724"
-}
-}, 
-"Tn8898736": {
-"edge23067": {
-"@source": "Tn8898736", 
-"@target": "Tn8898680"
-}, 
-"edge23069": {
-"@source": "Tn8898736", 
-"@target": "Tn8898657"
-}
-}, 
-"Tn8898737": {
-"edge22949": {
-"@source": "Tn8898737", 
-"@target": "Tn8898748"
-}, 
-"edge22963": {
-"@source": "Tn8898737", 
-"@target": "Tn8898673"
-}
-}, 
-"Tn8898738": {
-"edge23073": {
-"@source": "Tn8898738", 
-"@target": "Tn8898661"
-}, 
-"edge23079": {
-"@source": "Tn8898738", 
-"@target": "Tn8898663"
-}
-}, 
-"Tn8898739": {
-"edge23021": {
-"@source": "Tn8898739", 
-"@target": "Tn8898731"
-}, 
-"edge23023": {
-"@source": "Tn8898739", 
-"@target": "Tn8898700"
-}, 
-"edge23025": {
-"@source": "Tn8898739", 
-"@target": "Tn8898730"
-}, 
-"edge23027": {
-"@source": "Tn8898739", 
-"@target": "Tn8898713"
-}, 
-"edge23029": {
-"@source": "Tn8898739", 
-"@target": "Tn8898628"
-}, 
-"edge23031": {
-"@source": "Tn8898739", 
-"@target": "Tn8898719"
-}, 
-"edge23033": {
-"@source": "Tn8898739", 
-"@target": "Tn8898729"
-}, 
-"edge23035": {
-"@source": "Tn8898739", 
-"@target": "Tn8898718"
-}
-}, 
-"Tn8898742": {
-"edge22937": {
-"@source": "Tn8898742", 
-"@target": "Tn8898694"
-}, 
-"edge23181": {
-"@source": "Tn8898742", 
-"@target": "Tn8898712"
-}
-}, 
-"Tn8898743": {
-"edge23041": {
-"@source": "Tn8898743", 
-"@target": "Tn8898690"
-}, 
-"edge23047": {
-"@source": "Tn8898743", 
-"@target": "Tn8898611"
-}
-}, 
-"Tn8898748": {
-"edge22951": {
-"@source": "Tn8898748", 
-"@target": "Tn8898667"
-}, 
-"edge22953": {
-"@source": "Tn8898748", 
-"@target": "Tn8898615"
-}, 
-"edge22955": {
-"@source": "Tn8898748", 
-"@target": "Tn8898677"
-}, 
-"edge22957": {
-"@source": "Tn8898748", 
-"@target": "Tn8898644"
-}, 
-"edge22959": {
-"@source": "Tn8898748", 
-"@target": "Tn8898740"
-}, 
-"edge22961": {
-"@source": "Tn8898748", 
-"@target": "Tn8898630"
-}
-}, 
-"Tn8898749": {
-"edge23105": {
-"@source": "Tn8898749", 
-"@target": "Tn8898722"
-}, 
-"edge23107": {
-"@source": "Tn8898749", 
-"@target": "Tn8898674"
-}
-}, 
-"Tn8898750": {
-"edge23089": {
-"@source": "Tn8898750", 
-"@target": "Tn8898752"
-}, 
-"edge23095": {
-"@source": "Tn8898750", 
-"@target": "Tn8898702"
-}
-}, 
-"Tn8898752": {
-"edge23091": {
-"@source": "Tn8898752", 
-"@target": "Tn8898706"
-}, 
-"edge23093": {
-"@source": "Tn8898752", 
-"@target": "Tn8898688"
+"Tn9850483": {
+"@label": "86"
 }
-}
-}, 
-"nodeById": {
-"Tn8898605": {}, 
-"Tn8898606": {
-"@otu": "Tl741845"
-}, 
-"Tn8898607": {
-"@otu": "Tl741916"
-}, 
-"Tn8898608": {
-"@otu": "Tl741814"
-}, 
-"Tn8898609": {
-"@otu": "Tl741802"
-}, 
-"Tn8898610": {}, 
-"Tn8898611": {}, 
-"Tn8898612": {
-"@otu": "Tl741763"
-}, 
-"Tn8898613": {
-"@otu": "Tl741843"
-}, 
-"Tn8898614": {
-"@otu": "Tl741805"
-}, 
-"Tn8898615": {
-"@otu": "Tl741851"
-}, 
-"Tn8898616": {
-"@otu": "Tl741923"
-}, 
-"Tn8898617": {}, 
-"Tn8898618": {
-"@otu": "Tl741786"
-}, 
-"Tn8898619": {}, 
-"Tn8898620": {
-"@otu": "Tl741783"
-}, 
-"Tn8898621": {
-"@otu": "Tl741908"
-}, 
-"Tn8898622": {
-"@otu": "Tl741857"
-}, 
-"Tn8898623": {
-"@otu": "Tl741789"
-}, 
-"Tn8898624": {
-"@otu": "Tl741903"
-}, 
-"Tn8898625": {
-"@otu": "Tl741925"
-}, 
-"Tn8898626": {
-"@otu": "Tl741796"
-}, 
-"Tn8898627": {}, 
-"Tn8898628": {
-"@otu": "Tl741849"
-}, 
-"Tn8898629": {}, 
-"Tn8898630": {
-"@otu": "Tl741787"
-}, 
-"Tn8898631": {
-"@otu": "Tl741900"
-}, 
-"Tn8898632": {}, 
-"Tn8898633": {
-"@root": true
-}, 
-"Tn8898634": {
-"@otu": "Tl741818"
-}, 
-"Tn8898635": {
-"@otu": "Tl741760"
-}, 
-"Tn8898636": {
-"@otu": "Tl741830"
-}, 
-"Tn8898637": {
-"@otu": "Tl741918"
-}, 
-"Tn8898638": {}, 
-"Tn8898639": {
-"@otu": "Tl741847"
-}, 
-"Tn8898640": {
-"@otu": "Tl741854"
-}, 
-"Tn8898641": {}, 
-"Tn8898642": {
-"@otu": "Tl741799"
-}, 
-"Tn8898643": {
-"@otu": "Tl741764"
-}, 
-"Tn8898644": {
-"@otu": "Tl741788"
-}, 
-"Tn8898645": {
-"@otu": "Tl741920"
-}, 
-"Tn8898646": {
-"@otu": "Tl741911"
-}, 
-"Tn8898647": {
-"@otu": "Tl741844"
-}, 
-"Tn8898648": {
-"@otu": "Tl741904"
-}, 
-"Tn8898649": {}, 
-"Tn8898650": {
-"@otu": "Tl741914"
-}, 
-"Tn8898651": {}, 
-"Tn8898652": {}, 
-"Tn8898653": {}, 
-"Tn8898654": {
-"@otu": "Tl741912"
-}, 
-"Tn8898655": {
-"@otu": "Tl741827"
-}, 
-"Tn8898656": {
-"@otu": "Tl741921"
-}, 
-"Tn8898657": {
-"@otu": "Tl741910"
-}, 
-"Tn8898658": {
-"@otu": "Tl741919"
-}, 
-"Tn8898659": {}, 
-"Tn8898660": {
-"@otu": "Tl741811"
-}, 
-"Tn8898661": {}, 
-"Tn8898662": {
-"@otu": "Tl741842"
-}, 
-"Tn8898663": {}, 
-"Tn8898664": {
-"@otu": "Tl741816"
-}, 
-"Tn8898665": {
-"@otu": "Tl741924"
-}, 
-"Tn8898666": {
-"@otu": "Tl741803"
-}, 
-"Tn8898667": {
-"@otu": "Tl741793"
-}, 
-"Tn8898668": {
-"@otu": "Tl741773"
-}, 
-"Tn8898669": {
-"@otu": "Tl741928"
-}, 
-"Tn8898670": {
-"@otu": "Tl741902"
-}, 
-"Tn8898671": {
-"@otu": "Tl741825"
-}, 
-"Tn8898672": {}, 
-"Tn8898673": {}, 
-"Tn8898674": {
-"@otu": "Tl741791"
-}, 
-"Tn8898675": {
-"@otu": "Tl741782"
-}, 
-"Tn8898676": {}, 
-"Tn8898677": {
-"@otu": "Tl741767"
-}, 
-"Tn8898678": {
-"@otu": "Tl741812"
-}, 
-"Tn8898679": {
-"@otu": "Tl741922"
-}, 
-"Tn8898680": {
-"@otu": "Tl741901"
-}, 
-"Tn8898681": {
-"@otu": "Tl741775"
-}, 
-"Tn8898682": {
-"@otu": "Tl741853"
-}, 
-"Tn8898683": {
-"@otu": "Tl741855"
-}, 
-"Tn8898684": {}, 
-"Tn8898685": {}, 
-"Tn8898686": {
-"@otu": "Tl741899"
-}, 
-"Tn8898687": {}, 
-"Tn8898688": {
-"@otu": "Tl741913"
-}, 
-"Tn8898689": {}, 
-"Tn8898690": {}, 
-"Tn8898691": {}, 
-"Tn8898692": {}, 
-"Tn8898693": {
-"@otu": "Tl741909"
-}, 
-"Tn8898694": {}, 
-"Tn8898695": {}, 
-"Tn8898696": {
-"@otu": "Tl741906"
-}, 
-"Tn8898697": {}, 
-"Tn8898698": {
-"@otu": "Tl741776"
-}, 
-"Tn8898699": {}, 
-"Tn8898700": {
-"@otu": "Tl741771"
-}, 
-"Tn8898701": {
-"@otu": "Tl741917"
-}, 
-"Tn8898702": {}, 
-"Tn8898703": {}, 
-"Tn8898704": {
-"@otu": "Tl741905"
-}, 
-"Tn8898705": {
-"@otu": "Tl741840"
-}, 
-"Tn8898706": {
-"@otu": "Tl741785"
-}, 
-"Tn8898707": {
-"@otu": "Tl741807"
-}, 
-"Tn8898708": {}, 
-"Tn8898709": {
-"@otu": "Tl741898"
-}, 
-"Tn8898710": {}, 
-"Tn8898711": {}, 
-"Tn8898712": {}, 
-"Tn8898713": {
-"@otu": "Tl741809"
-}, 
-"Tn8898714": {
-"@otu": "Tl741929"
-}, 
-"Tn8898715": {
-"@otu": "Tl741801"
-}, 
-"Tn8898716": {
-"@otu": "Tl741815"
-}, 
-"Tn8898717": {
-"@otu": "Tl741774"
-}, 
-"Tn8898718": {
-"@otu": "Tl741778"
-}, 
-"Tn8898719": {
-"@otu": "Tl741765"
-}, 
-"Tn8898720": {}, 
-"Tn8898721": {}, 
-"Tn8898722": {
-"@otu": "Tl741848"
-}, 
-"Tn8898723": {
-"@otu": "Tl741907"
-}, 
-"Tn8898724": {}, 
-"Tn8898725": {}, 
-"Tn8898726": {}, 
-"Tn8898727": {
-"@otu": "Tl741833"
-}, 
-"Tn8898728": {
-"@otu": "Tl741930"
-}, 
-"Tn8898729": {
-"@otu": "Tl741777"
-}, 
-"Tn8898730": {
-"@otu": "Tl741834"
-}, 
-"Tn8898731": {
-"@otu": "Tl741800"
-}, 
-"Tn8898732": {
-"@otu": "Tl741837"
-}, 
-"Tn8898733": {
-"@otu": "Tl741820"
-}, 
-"Tn8898734": {}, 
-"Tn8898735": {
-"@otu": "Tl741926"
-}, 
-"Tn8898736": {}, 
-"Tn8898737": {}, 
-"Tn8898738": {}, 
-"Tn8898739": {}, 
-"Tn8898740": {
-"@otu": "Tl741769"
-}, 
-"Tn8898741": {
-"@otu": "Tl741766"
-}, 
-"Tn8898742": {}, 
-"Tn8898743": {}, 
-"Tn8898744": {
-"@otu": "Tl741780"
-}, 
-"Tn8898745": {
-"@otu": "Tl741822"
-}, 
-"Tn8898746": {
-"@otu": "Tl741915"
-}, 
-"Tn8898747": {
-"@otu": "Tl741831"
-}, 
-"Tn8898748": {}, 
-"Tn8898749": {}, 
-"Tn8898750": {}, 
-"Tn8898751": {
-"@otu": "Tl741927"
-}, 
-"Tn8898752": {}
 }
 }
 }

@@ -36,14 +36,93 @@
 }
 ]
 }
+}, 
+{
+"@description": "Web-based interface for submitting, editing, and reviewing studies in the Open Tree of Life project.", 
+"@id": "opentree-curation-webapp", 
+"@name": "OpenTree curation webapp", 
+"@url": "https://github.com/OpenTreeOfLife/opentree", 
+"@version": "0.0.0"
 }
 ]
 }, 
 "^ot:annotationEvents": {
-"annotation": []
+"annotation": [
+{
+"@dateCreated": "2014-08-09T23:52:46.127Z", 
+"@description": "Aids for mapping study OTUs to OTT taxa", 
+"@id": "otu-mapping-hints", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "OTU_MAPPING_HINTS", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"searchContext": {
+"$": "Birds"
 }, 
-"^ot:candidateTreeForSynthesis": [], 
-"^ot:curatorName": "Chris Owen", 
+"substitutions": {
+"substitution": [
+{
+"@active": false, 
+"@valid": true, 
+"new": {
+"$": ""
+}, 
+"old": {
+"$": ""
+}
+}
+]
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}, 
+{
+"@dateCreated": "2014-08-09T23:52:46.127Z", 
+"@description": "Describes supporting data files for this study", 
+"@id": "supporting-files-metadata", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "SUPPORTING_FILE_INFO", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"@movedToPermanentArchive": false, 
+"files": {
+"file": []
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}
+]
+}, 
+"^ot:candidateTreeForSynthesis": [
+"tree4912"
+], 
+"^ot:comment": "", 
+"^ot:curatorName": [
+"Chris Owen", 
+"Joseph W. Brown"
+], 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S11505"
 }, 
@@ -52,6 +131,7 @@
 "^ot:messages": {
 "message": []
 }, 
+"^ot:notIntendedForSynthesis": false, 
 "^ot:otusElementOrder": [
 "otus2332"
 ], 
@@ -214,6 +294,8 @@
 }, 
 "otu330945": {
 "^ot:originalLabel": "Chamaea fasciata", 
+"^ot:ottId": 3599833, 
+"^ot:ottTaxonName": "Chamaea fasciata", 
 "^ot:treebaseOTUId": "Tl533140"
 }, 
 "otu330946": {
@@ -290,6 +372,8 @@
 }, 
 "otu330958": {
 "^ot:originalLabel": "Sylvia dohrni", 
+"^ot:ottId": 328260, 
+"^ot:ottTaxonName": "Horizorhinus dohrni", 
 "^ot:treebaseOTUId": "Tl533153"
 }, 
 "otu330959": {
@@ -351,18 +435,20 @@
 ], 
 "treeById": {
 "tree4912": {
+"@label": "Fig. 2", 
 "@xsi:type": "nex:FloatTree", 
 "^ot:branchLengthDescription": "", 
 "^ot:branchLengthMode": "ot:substitutionCount", 
 "^ot:branchLengthTimeUnit": "", 
-"^ot:curatedType": "ML-PAUP 1", 
+"^ot:curatedType": "Maximum likelihood ", 
 "^ot:inGroupClade": "node852508", 
+"^ot:nearestTaxonMRCAName": "Passeriformes", 
+"^ot:nearestTaxonMRCAOttId": "1041547", 
 "^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node852500", 
-"^ot:specifiedRoot": "", 
-"^ot:tag": [
-"ingroup added;"
-], 
+"^ot:specifiedRoot": "node852500", 
+"^ot:tag": [], 
+"^ot:unrootedTree": false, 
 "edgeBySourceId": {
 "node852500": {
 "edge852501": {
@@ -934,10 +1020,12 @@
 }, 
 "node852514": {}, 
 "node852515": {
-"@otu": "otu330965"
+"@otu": "otu330965", 
+"^ot:isTaxonExemplar": true
 }, 
 "node852516": {
-"@otu": "otu330948"
+"@otu": "otu330948", 
+"^ot:isTaxonExemplar": false
 }, 
 "node852517": {}, 
 "node852518": {
@@ -957,43 +1045,53 @@
 "node852524": {}, 
 "node852525": {}, 
 "node852526": {
-"@otu": "otu330961"
+"@otu": "otu330961", 
+"^ot:isTaxonExemplar": true
 }, 
 "node852527": {
-"@otu": "otu330940"
+"@otu": "otu330940", 
+"^ot:isTaxonExemplar": false
 }, 
 "node852528": {}, 
 "node852529": {}, 
 "node852530": {}, 
 "node852531": {
-"@otu": "otu330924"
+"@otu": "otu330924", 
+"^ot:isTaxonExemplar": true
 }, 
 "node852532": {
-"@otu": "otu330963"
+"@otu": "otu330963", 
+"^ot:isTaxonExemplar": false
 }, 
 "node852533": {}, 
 "node852534": {}, 
 "node852535": {}, 
 "node852536": {
-"@otu": "otu330954"
+"@otu": "otu330954", 
+"^ot:isTaxonExemplar": true
 }, 
 "node852537": {
-"@otu": "otu330944"
+"@otu": "otu330944", 
+"^ot:isTaxonExemplar": false
 }, 
 "node852538": {}, 
 "node852539": {}, 
 "node852540": {
-"@otu": "otu330953"
+"@otu": "otu330953", 
+"^ot:isTaxonExemplar": true
 }, 
 "node852541": {
-"@otu": "otu330935"
+"@otu": "otu330935", 
+"^ot:isTaxonExemplar": false
 }, 
 "node852542": {}, 
 "node852543": {
-"@otu": "otu330939"
+"@otu": "otu330939", 
+"^ot:isTaxonExemplar": true
 }, 
 "node852544": {
-"@otu": "otu330930"
+"@otu": "otu330930", 
+"^ot:isTaxonExemplar": false
 }, 
 "node852545": {}, 
 "node852546": {}, 
@@ -1038,25 +1136,31 @@
 "node852565": {}, 
 "node852566": {}, 
 "node852567": {
-"@otu": "otu330952"
+"@otu": "otu330952", 
+"^ot:isTaxonExemplar": true
 }, 
 "node852568": {
-"@otu": "otu330931"
+"@otu": "otu330931", 
+"^ot:isTaxonExemplar": false
 }, 
 "node852569": {}, 
 "node852570": {}, 
 "node852571": {
-"@otu": "otu330927"
+"@otu": "otu330927", 
+"^ot:isTaxonExemplar": true
 }, 
 "node852572": {
-"@otu": "otu330933"
+"@otu": "otu330933", 
+"^ot:isTaxonExemplar": false
 }, 
 "node852573": {}, 
 "node852574": {
-"@otu": "otu330943"
+"@otu": "otu330943", 
+"^ot:isTaxonExemplar": true
 }, 
 "node852575": {
-"@otu": "otu330932"
+"@otu": "otu330932", 
+"^ot:isTaxonExemplar": false
 }, 
 "node852576": {}, 
 "node852577": {}, 

@@ -36,19 +36,100 @@
 }
 ]
 }
+}, 
+{
+"@description": "Web-based interface for submitting, editing, and reviewing studies in the Open Tree of Life project.", 
+"@id": "opentree-curation-webapp", 
+"@name": "OpenTree curation webapp", 
+"@url": "https://github.com/OpenTreeOfLife/opentree", 
+"@version": "0.0.0"
 }
 ]
 }, 
 "^ot:annotationEvents": {
-"annotation": []
+"annotation": [
+{
+"@dateCreated": "2016-10-25T16:17:58.110Z", 
+"@description": "Aids for mapping study OTUs to OTT taxa", 
+"@id": "otu-mapping-hints", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "OTU_MAPPING_HINTS", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"searchContext": {
+"$": "Mammals"
 }, 
-"^ot:candidateTreeForSynthesis": [], 
-"^ot:curatorName": "Joseph Brown", 
+"substitutions": {
+"substitution": [
+{
+"@active": false, 
+"@valid": true, 
+"new": {
+"$": ""
+}, 
+"old": {
+"$": ""
+}
+}
+]
+}, 
+"useFuzzyMatching": false
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}, 
+{
+"@dateCreated": "2016-10-25T16:17:58.109Z", 
+"@description": "Describes supporting data files for this study", 
+"@id": "supporting-files-metadata", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "SUPPORTING_FILE_INFO", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"@movedToPermanentArchive": false, 
+"files": {
+"file": []
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}
+]
+}, 
+"^ot:candidateTreeForSynthesis": [
+"tree6240"
+], 
+"^ot:comment": "", 
+"^ot:curatorName": [
+"Joseph Brown", 
+"Joseph W. Brown"
+], 
+"^ot:dataDeposit": {
+"@href": ""
+}, 
 "^ot:focalClade": 864593, 
 "^ot:focalCladeOTTTaxonName": "Rodentia", 
-"^ot:messages": {
-"message": []
-}, 
+"^ot:notIntendedForSynthesis": false, 
 "^ot:otusElementOrder": [
 "otus2688"
 ], 
@@ -4713,7 +4794,9 @@
 "^ot:ottTaxonName": "Megaoryzomys curioi"
 }, 
 "otu402630": {
-"^ot:originalLabel": "Noronhomys vespuccii"
+"^ot:originalLabel": "Noronhomys vespuccii", 
+"^ot:ottId": 4941006, 
+"^ot:ottTaxonName": "Noronhomys vespuccii"
 }, 
 "otu402631": {
 "^ot:originalLabel": "Oryzomys bolivaris", 
@@ -7786,7 +7869,9 @@
 "^ot:ottTaxonName": "Tokudaia muenninki"
 }, 
 "otu403245": {
-"^ot:originalLabel": "Rhagamys orthodon"
+"^ot:originalLabel": "Rhagamys orthodon", 
+"^ot:ottId": 3610308, 
+"^ot:ottTaxonName": "Rhagamys orthodon"
 }, 
 "otu403246": {
 "^ot:originalLabel": "Apodemus alpicola", 
@@ -8349,7 +8434,9 @@
 "^ot:ottTaxonName": "Lamottemys okuensis"
 }, 
 "otu403358": {
-"^ot:originalLabel": "Malpaisomys insularis"
+"^ot:originalLabel": "Malpaisomys insularis", 
+"^ot:ottId": 3611197, 
+"^ot:ottTaxonName": "Malpaisomys insularis"
 }, 
 "otu403359": {
 "^ot:originalLabel": "Tryphomys adustus", 
@@ -11372,16 +11459,20 @@
 ], 
 "treeById": {
 "tree6240": {
+"@label": "Untitled (tree6240)", 
 "@xsi:type": "nex:FloatTree", 
 "^ot:branchLengthDescription": "", 
 "^ot:branchLengthMode": "ot:time", 
 "^ot:branchLengthTimeUnit": "Myr", 
 "^ot:curatedType": "BEAST chronogram", 
 "^ot:inGroupClade": "node1077764", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
 "^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node1077764", 
-"^ot:specifiedRoot": "", 
+"^ot:specifiedRoot": "node1077764", 
 "^ot:tag": [], 
+"^ot:unrootedTree": false, 
 "edgeBySourceId": {
 "node1077764": {
 "edge1077765": {
@@ -12654,7 +12745,7 @@
 "@target": "node1077981"
 }, 
 "edge1078009": {
-"@length": 1.0, 
+"@length": 1, 
 "@source": "node1077980", 
 "@target": "node1078009"
 }
@@ -16768,7 +16859,7 @@
 "@target": "node1078674"
 }, 
 "edge1078675": {
-"@length": 2.0, 
+"@length": 2, 
 "@source": "node1078673", 
 "@target": "node1078675"
 }
@@ -21298,12 +21389,12 @@
 }, 
 "node1079463": {
 "edge1079464": {
-"@length": 3.0, 
+"@length": 3, 
 "@source": "node1079463", 
 "@target": "node1079464"
 }, 
 "edge1079465": {
-"@length": 3.0, 
+"@length": 3, 
 "@source": "node1079463", 
 "@target": "node1079465"
 }
@@ -29492,7 +29583,7 @@
 "@target": "node1080900"
 }, 
 "edge1080911": {
-"@length": 1.0, 
+"@length": 1, 
 "@source": "node1080899", 
 "@target": "node1080911"
 }
@@ -36019,10 +36110,12 @@
 }, 
 "node1079391": {}, 
 "node1079392": {
-"@otu": "otu402660"
+"@otu": "otu402660", 
+"^ot:isTaxonExemplar": true
 }, 
 "node1079393": {
-"@otu": "otu402661"
+"@otu": "otu402661", 
+"^ot:isTaxonExemplar": false
 }, 
 "node1079394": {}, 
 "node1079395": {

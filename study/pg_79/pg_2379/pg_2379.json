@@ -36,14 +36,103 @@
 }
 ]
 }
+}, 
+{
+"@description": "Web-based interface for submitting, editing, and reviewing studies in the Open Tree of Life project.", 
+"@id": "opentree-curation-webapp", 
+"@name": "OpenTree curation webapp", 
+"@url": "https://github.com/OpenTreeOfLife/opentree", 
+"@version": "0.0.0"
 }
 ]
 }, 
 "^ot:annotationEvents": {
-"annotation": []
+"annotation": [
+{
+"@dateCreated": "2015-08-28T19:12:19.082Z", 
+"@description": "Aids for mapping study OTUs to OTT taxa", 
+"@id": "otu-mapping-hints", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "OTU_MAPPING_HINTS", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"searchContext": {
+"$": "All life"
 }, 
-"^ot:candidateTreeForSynthesis": [], 
-"^ot:curatorName": "Romina Gazis", 
+"substitutions": {
+"substitution": [
+{
+"@active": false, 
+"@valid": true, 
+"new": {
+"$": ""
+}, 
+"old": {
+"$": ""
+}
+}, 
+{
+"@active": true, 
+"@valid": true, 
+"new": {
+"$": ""
+}, 
+"old": {
+"$": "\\b\\s+(\\w*)$"
+}
+}
+]
+}, 
+"useFuzzyMatching": false
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}, 
+{
+"@dateCreated": "2015-08-28T19:12:19.082Z", 
+"@description": "Describes supporting data files for this study", 
+"@id": "supporting-files-metadata", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "SUPPORTING_FILE_INFO", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"@movedToPermanentArchive": false, 
+"files": {
+"file": []
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}
+]
+}, 
+"^ot:candidateTreeForSynthesis": [
+"tree6003"
+], 
+"^ot:comment": "", 
+"^ot:curatorName": [
+"Romina Gazis"
+], 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S12760"
 }, 
@@ -52,6 +141,7 @@
 "^ot:messages": {
 "message": []
 }, 
+"^ot:notIntendedForSynthesis": false, 
 "^ot:otusElementOrder": [
 "otus2379"
 ], 
@@ -127,6 +217,8 @@
 }, 
 "otu336660": {
 "^ot:originalLabel": "Dacrymyces pinacearum AB472718", 
+"^ot:ottId": 5436621, 
+"^ot:ottTaxonName": "Dacrymyces pinacearum", 
 "^ot:treebaseOTUId": "Tl884226"
 }, 
 "otu336661": {
@@ -401,6 +493,8 @@
 }, 
 "otu336706": {
 "^ot:originalLabel": "Dacrymyces subarcticus AB472727", 
+"^ot:ottId": 5436619, 
+"^ot:ottTaxonName": "Dacrymyces subarcticus", 
 "^ot:treebaseOTUId": "Tl884272"
 }, 
 "otu336707": {
@@ -555,6 +649,8 @@
 }, 
 "otu336732": {
 "^ot:originalLabel": "Dacrymyces subarcticus AB472736", 
+"^ot:ottId": 5436619, 
+"^ot:ottTaxonName": "Dacrymyces subarcticus", 
 "^ot:treebaseOTUId": "Tl884298"
 }, 
 "otu336733": {
@@ -689,11 +785,15 @@
 ], 
 "treeById": {
 "tree4998": {
+"@label": "Untitled (tree4998)", 
 "@xsi:type": "nex:FloatTree", 
 "^ot:branchLengthDescription": "", 
 "^ot:branchLengthMode": "", 
 "^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "ML, LSU", 
+"^ot:inGroupClade": "", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
 "^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node866882", 
 "^ot:specifiedRoot": "", 
@@ -702,6 +802,7 @@
 "LSU", 
 "delete me"
 ], 
+"^ot:unrootedTree": true, 
 "edgeBySourceId": {
 "node866882": {
 "edge866883": {
@@ -2314,12 +2415,15 @@
 }
 }, 
 "tree6003": {
+"@label": "Untitled (tree6003)", 
 "@xsi:type": "nex:FloatTree", 
 "^ot:branchLengthDescription": "", 
-"^ot:branchLengthMode": "", 
-"^ot:branchLengthTimeUnit": "", 
+"^ot:branchLengthMode": "ot:undefined", 
+"^ot:branchLengthTimeUnit": "Myr", 
 "^ot:curatedType": "ML, LSU (rooted)", 
 "^ot:inGroupClade": "node1020180", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
 "^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node1020179", 
 "^ot:specifiedRoot": "", 
@@ -2327,6 +2431,7 @@
 "ML", 
 "LSU"
 ], 
+"^ot:unrootedTree": true, 
 "edgeBySourceId": {
 "node1020179": {
 "edge1020180": {

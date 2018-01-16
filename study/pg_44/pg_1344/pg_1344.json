@@ -36,22 +36,100 @@
 }
 ]
 }
+}, 
+{
+"@description": "Web-based interface for submitting, editing, and reviewing studies in the Open Tree of Life project.", 
+"@id": "opentree-curation-webapp", 
+"@name": "OpenTree curation webapp", 
+"@url": "https://github.com/OpenTreeOfLife/opentree", 
+"@version": "0.0.0"
 }
 ]
 }, 
 "^ot:annotationEvents": {
-"annotation": []
+"annotation": [
+{
+"@dateCreated": "2016-09-02T14:57:47.725Z", 
+"@description": "Aids for mapping study OTUs to OTT taxa", 
+"@id": "otu-mapping-hints", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "OTU_MAPPING_HINTS", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"searchContext": {
+"$": "All life"
 }, 
-"^ot:candidateTreeForSynthesis": [], 
-"^ot:curatorName": "Chris Owen", 
+"substitutions": {
+"substitution": [
+{
+"@active": false, 
+"@valid": true, 
+"new": {
+"$": ""
+}, 
+"old": {
+"$": ""
+}
+}
+]
+}, 
+"useFuzzyMatching": true
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}, 
+{
+"@dateCreated": "2016-09-02T14:57:47.725Z", 
+"@description": "Describes supporting data files for this study", 
+"@id": "supporting-files-metadata", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "SUPPORTING_FILE_INFO", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"@movedToPermanentArchive": false, 
+"files": {
+"file": []
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}
+]
+}, 
+"^ot:candidateTreeForSynthesis": [
+"tree2675"
+], 
+"^ot:comment": "", 
+"^ot:curatorName": [
+"Chris Owen", 
+"Joseph W. Brown"
+], 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S13690"
 }, 
 "^ot:focalClade": 691846, 
 "^ot:focalCladeOTTTaxonName": "Metazoa", 
-"^ot:messages": {
-"message": []
-}, 
+"^ot:notIntendedForSynthesis": false, 
 "^ot:otusElementOrder": [
 "otus1344"
 ], 
@@ -59,7 +137,7 @@
 "^ot:studyPublication": {
 "@href": "http://dx.doi.org/10.1371/journal.pone.0054576"
 }, 
-"^ot:studyPublicationReference": "Nesnidal M., Helmkampf M., Bruchhaus I., El-matbouli M., & Hausdorf B. 2013. Agent of Whirling Disease Meets Orphan Worm: Phylogenomic Analyses Firmly Place Myxozoa in Cnidaria. PLoS ONE 8 (1): e54576.", 
+"^ot:studyPublicationReference": "Nesnidal, Maximilian P., Matrin Helmkampf, Iris Bruchhaus, Mansour El-matbouli, Bernhard Hausdorf. 2013. Agent of Whirling Disease Meets Orphan Worm: Phylogenomic Analyses Firmly Place Myxozoa in Cnidaria. PLoS ONE 8 (1): e54576.", 
 "^ot:studyYear": 2013, 
 "^ot:tag": [], 
 "^ot:treesElementOrder": [
@@ -82,7 +160,7 @@
 }, 
 "otu243781": {
 "^ot:originalLabel": "Myxobolus", 
-"^ot:ottId": 978532, 
+"^ot:ottId": 5348248, 
 "^ot:ottTaxonName": "Myxobolus", 
 "^ot:treebaseOTUId": "Tl951859"
 }, 
@@ -113,13 +191,13 @@
 "otu243786": {
 "^ot:originalLabel": "Amoebidium", 
 "^ot:ottId": 463508, 
-"^ot:ottTaxonName": "Amoebidium", 
+"^ot:ottTaxonName": "Amoebidium (merged with Ichthyophonidae)", 
 "^ot:treebaseOTUId": "Tl951864"
 }, 
 "otu243787": {
 "^ot:originalLabel": "Cyanea", 
 "^ot:ottId": 152136, 
-"^ot:ottTaxonName": "Cyanea", 
+"^ot:ottTaxonName": "Cyanea (genus in phylum Cnidaria)", 
 "^ot:treebaseOTUId": "Tl951865"
 }, 
 "otu243788": {
@@ -143,7 +221,7 @@
 "otu243791": {
 "^ot:originalLabel": "Branchiostoma", 
 "^ot:ottId": 176550, 
-"^ot:ottTaxonName": "Branchiostoma", 
+"^ot:ottTaxonName": "Branchiostoma (genus in Deuterostomia)", 
 "^ot:treebaseOTUId": "Tl951869"
 }, 
 "otu243792": {
@@ -185,7 +263,7 @@
 "otu243798": {
 "^ot:originalLabel": "Pedicellina", 
 "^ot:ottId": 362914, 
-"^ot:ottTaxonName": "Pedicellina", 
+"^ot:ottTaxonName": "Pedicellina (genus in Lophotrochozoa)", 
 "^ot:treebaseOTUId": "Tl951876"
 }, 
 "otu243799": {
@@ -215,7 +293,7 @@
 "otu243803": {
 "^ot:originalLabel": "Ixodes", 
 "^ot:ottId": 435915, 
-"^ot:ottTaxonName": "Ixodes", 
+"^ot:ottTaxonName": "Ixodes (genus in Protostomia)", 
 "^ot:treebaseOTUId": "Tl951881"
 }, 
 "otu243804": {
@@ -226,6 +304,8 @@
 }, 
 "otu243805": {
 "^ot:originalLabel": "Acropora", 
+"^ot:ottId": 712401, 
+"^ot:ottTaxonName": "Acropora", 
 "^ot:treebaseOTUId": "Tl951883"
 }, 
 "otu243806": {
@@ -314,14 +394,14 @@
 }, 
 "otu243820": {
 "^ot:originalLabel": "Reniera", 
-"^ot:ottId": 4939135, 
-"^ot:ottTaxonName": "Reniera", 
+"^ot:ottId": 981297, 
+"^ot:ottTaxonName": "Amphimedon", 
 "^ot:treebaseOTUId": "Tl951898"
 }, 
 "otu243821": {
 "^ot:originalLabel": "Clytia", 
 "^ot:ottId": 274816, 
-"^ot:ottTaxonName": "Clytia", 
+"^ot:ottTaxonName": "Clytia (genus in phylum Cnidaria)", 
 "^ot:treebaseOTUId": "Tl951899"
 }, 
 "otu243822": {
@@ -393,7 +473,7 @@
 "otu243833": {
 "^ot:originalLabel": "Sphaeroforma", 
 "^ot:ottId": 5248824, 
-"^ot:ottTaxonName": "Sphaeroforma", 
+"^ot:ottTaxonName": "Sphaeroforma (merged with Pseudoperkinsus)", 
 "^ot:treebaseOTUId": "Tl951911"
 }, 
 "otu243834": {
@@ -419,16 +499,19 @@
 ], 
 "treeById": {
 "tree2675": {
+"@label": "Fig. 1", 
 "@xsi:type": "nex:FloatTree", 
 "^ot:branchLengthDescription": "", 
 "^ot:branchLengthMode": "ot:substitutionCount", 
-"^ot:branchLengthTimeUnit": "", 
-"^ot:curatedType": "ML Fig. 1", 
+"^ot:curatedType": "Maximum likelihood ", 
 "^ot:inGroupClade": "node591779", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
 "^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node591776", 
-"^ot:specifiedRoot": "", 
+"^ot:specifiedRoot": "node591776", 
 "^ot:tag": [], 
+"^ot:unrootedTree": false, 
 "edgeBySourceId": {
 "node591776": {
 "edge591777": {

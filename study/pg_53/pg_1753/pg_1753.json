@@ -36,22 +36,109 @@
 }
 ]
 }
+}, 
+{
+"@description": "Web-based interface for submitting, editing, and reviewing studies in the Open Tree of Life project.", 
+"@id": "opentree-curation-webapp", 
+"@name": "OpenTree curation webapp", 
+"@url": "https://github.com/OpenTreeOfLife/opentree", 
+"@version": "0.0.0"
 }
 ]
 }, 
 "^ot:annotationEvents": {
-"annotation": []
+"annotation": [
+{
+"@dateCreated": "2015-09-30T17:17:12.471Z", 
+"@description": "Aids for mapping study OTUs to OTT taxa", 
+"@id": "otu-mapping-hints", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "OTU_MAPPING_HINTS", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"searchContext": {
+"$": "All life"
 }, 
-"^ot:candidateTreeForSynthesis": [], 
-"^ot:curatorName": "Romina Gazis", 
+"substitutions": {
+"substitution": [
+{
+"@active": false, 
+"@valid": true, 
+"new": {
+"$": ""
+}, 
+"old": {
+"$": ""
+}
+}, 
+{
+"@active": true, 
+"@valid": true, 
+"new": {
+"$": "$1"
+}, 
+"old": {
+"$": "^(\\S*\\s+\\S*).*"
+}
+}
+]
+}, 
+"useFuzzyMatching": true
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}, 
+{
+"@dateCreated": "2015-09-30T17:17:12.471Z", 
+"@description": "Describes supporting data files for this study", 
+"@id": "supporting-files-metadata", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "SUPPORTING_FILE_INFO", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"@movedToPermanentArchive": false, 
+"files": {
+"file": []
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}
+]
+}, 
+"^ot:candidateTreeForSynthesis": [
+"tree3531"
+], 
+"^ot:comment": "", 
+"^ot:curatorName": [
+"Romina Gazis"
+], 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S857"
 }, 
 "^ot:focalClade": 359501, 
 "^ot:focalCladeOTTTaxonName": "Hypocrea", 
-"^ot:messages": {
-"message": []
-}, 
+"^ot:notIntendedForSynthesis": false, 
 "^ot:otusElementOrder": [
 "otus1753"
 ], 
@@ -65,11 +152,17 @@
 "^ot:treesElementOrder": [
 "trees1753"
 ], 
+"^xhtml:license": {
+"@href": "http://creativecommons.org/publicdomain/zero/1.0/", 
+"@name": "CC0"
+}, 
 "otusById": {
 "otus1753": {
 "otuById": {
 "otu273774": {
 "^ot:originalLabel": "Hypocrea nigricans GJS98.183", 
+"^ot:ottId": 844033, 
+"^ot:ottTaxonName": "Hypocrea nigricans", 
 "^ot:treebaseOTUId": "Tl7787"
 }, 
 "otu273775": {
@@ -120,16 +213,20 @@
 ], 
 "treeById": {
 "tree3530": {
+"@label": "MP, ITS", 
 "@xsi:type": "nex:FloatTree", 
 "^ot:branchLengthDescription": "", 
-"^ot:branchLengthMode": "", 
-"^ot:branchLengthTimeUnit": "", 
-"^ot:curatedType": "MP, ITS", 
+"^ot:branchLengthMode": "ot:undefined", 
+"^ot:branchLengthTimeUnit": "Myr", 
+"^ot:curatedType": "Maximum parsimony ", 
 "^ot:inGroupClade": "node680309", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
 "^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node680308", 
-"^ot:specifiedRoot": "", 
+"^ot:specifiedRoot": "node680308", 
 "^ot:tag": [], 
+"^ot:unrootedTree": false, 
 "edgeBySourceId": {
 "node680308": {
 "edge680309": {
@@ -204,16 +301,22 @@
 }
 }, 
 "tree3531": {
+"@label": "MP, EF-1", 
 "@xsi:type": "nex:FloatTree", 
 "^ot:branchLengthDescription": "", 
-"^ot:branchLengthMode": "", 
-"^ot:branchLengthTimeUnit": "", 
-"^ot:curatedType": "MP, EF-1", 
+"^ot:branchLengthMode": "ot:changesCount", 
+"^ot:branchLengthTimeUnit": "Myr", 
+"^ot:curatedType": "Maximum parsimony ", 
 "^ot:inGroupClade": "node680319", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
 "^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node680318", 
-"^ot:specifiedRoot": "", 
-"^ot:tag": [], 
+"^ot:specifiedRoot": "node680318", 
+"^ot:tag": [
+"EF-1"
+], 
+"^ot:unrootedTree": false, 
 "edgeBySourceId": {
 "node680318": {
 "edge680319": {
@@ -286,19 +389,24 @@
 "node680322": {}, 
 "node680323": {}, 
 "node680324": {
-"@otu": "otu273776"
+"@otu": "otu273776", 
+"^ot:isTaxonExemplar": false
 }, 
 "node680325": {
-"@otu": "otu273775"
+"@otu": "otu273775", 
+"^ot:isTaxonExemplar": false
 }, 
 "node680326": {
-"@otu": "otu273780"
+"@otu": "otu273780", 
+"^ot:isTaxonExemplar": false
 }, 
 "node680327": {
-"@otu": "otu273778"
+"@otu": "otu273778", 
+"^ot:isTaxonExemplar": false
 }, 
 "node680328": {
-"@otu": "otu273779"
+"@otu": "otu273779", 
+"^ot:isTaxonExemplar": true
 }, 
 "node680329": {
 "@otu": "otu273774"

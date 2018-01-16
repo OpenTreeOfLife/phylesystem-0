@@ -15,16 +15,13 @@
 "^ot:agents": {
 "agent": [
 {
-"@description": "validator of NexSON constraints as well as constraints that would allow a study to be imported into the Open Tree of Life's phylogenetic synthesis tools", 
+"@description": "Open Tree NexSON validation", 
 "@id": "peyotl-validator", 
-"@name": "validate_ot_nexson.py", 
+"@name": "api.opentreeoflife.org/validate", 
 "@url": "https://github.com/OpenTreeOfLife/peyotl", 
 "@version": "0.0.4a", 
 "invocation": {
-"commandLine": [
-"--embed", 
-"--agent-only"
-], 
+"commandLine": [], 
 "otherProperty": [
 {
 "name": "pythonVersion", 
@@ -36,14 +33,93 @@
 }
 ]
 }
+}, 
+{
+"@description": "Web-based interface for submitting, editing, and reviewing studies in the Open Tree of Life project.", 
+"@id": "opentree-curation-webapp", 
+"@name": "OpenTree curation webapp", 
+"@url": "https://github.com/OpenTreeOfLife/opentree", 
+"@version": "0.0.0"
 }
 ]
 }, 
 "^ot:annotationEvents": {
-"annotation": []
+"annotation": [
+{
+"@dateCreated": "2014-08-15T19:10:48.756Z", 
+"@description": "Aids for mapping study OTUs to OTT taxa", 
+"@id": "otu-mapping-hints", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "OTU_MAPPING_HINTS", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"searchContext": {
+"$": "Nematodes"
 }, 
-"^ot:candidateTreeForSynthesis": [], 
-"^ot:curatorName": "Chris Owen", 
+"substitutions": {
+"substitution": [
+{
+"@active": false, 
+"@valid": true, 
+"new": {
+"$": ""
+}, 
+"old": {
+"$": ""
+}
+}
+]
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}, 
+{
+"@dateCreated": "2014-08-15T19:10:48.756Z", 
+"@description": "Describes supporting data files for this study", 
+"@id": "supporting-files-metadata", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "SUPPORTING_FILE_INFO", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"@movedToPermanentArchive": false, 
+"files": {
+"file": []
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}
+]
+}, 
+"^ot:candidateTreeForSynthesis": [
+"tree5117"
+], 
+"^ot:comment": "", 
+"^ot:curatorName": [
+"Chris Owen", 
+"Joseph W. Brown"
+], 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S407"
 }, 
@@ -52,6 +128,7 @@
 "^ot:messages": {
 "message": []
 }, 
+"^ot:notIntendedForSynthesis": false, 
 "^ot:otusElementOrder": [
 "otus2422"
 ], 
@@ -59,7 +136,7 @@
 "^ot:studyPublication": {
 "@href": "http://dx.doi.org/10.1006/mpev.1998.0514"
 }, 
-"^ot:studyPublicationReference": "Nadler S., & Hudspeth D. 1998. Ribosomal DNA and phylogeny of the Ascaridoidea (Nemata: Secernentea): implications for morphological evolution and classification. Molecular Phylogenetics and Evolution 10 (2): 221-236.", 
+"^ot:studyPublicationReference": "Nadler, S., and D. Hudspeth. 1998. Ribosomal DNA and phylogeny of the Ascaridoidea (Nemata: Secernentea): implications for morphological evolution and classification. Molecular Phylogenetics and Evolution 10 (2): 221-236.", 
 "^ot:studyYear": 1998, 
 "^ot:tag": [], 
 "^ot:treesElementOrder": [
@@ -190,6 +267,8 @@
 }, 
 "otu345595": {
 "^ot:originalLabel": "Anisakis sp.", 
+"^ot:ottId": 870365, 
+"^ot:ottTaxonName": "Anisakis", 
 "^ot:treebaseOTUId": "Tl53231"
 }, 
 "otu345596": {
@@ -225,9 +304,9 @@
 ], 
 "treeById": {
 "tree5113": {
+"@label": "Untitled (tree5113)", 
 "@xsi:type": "nex:FloatTree", 
 "^ot:branchLengthDescription": "", 
-"^ot:branchLengthMode": "", 
 "^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "Fig. 1-MP", 
 "^ot:inGroupClade": "node887910", 
@@ -235,6 +314,7 @@
 "^ot:rootNodeId": "node887906", 
 "^ot:specifiedRoot": "", 
 "^ot:tag": [], 
+"^ot:unrootedTree": true, 
 "edgeBySourceId": {
 "node887906": {
 "edge887907": {
@@ -484,6 +564,7 @@
 }
 }, 
 "tree5114": {
+"@label": "Untitled (tree5114)", 
 "@xsi:type": "nex:FloatTree", 
 "^ot:branchLengthDescription": "", 
 "^ot:branchLengthMode": "", 
@@ -494,6 +575,7 @@
 "^ot:rootNodeId": "node887941", 
 "^ot:specifiedRoot": "", 
 "^ot:tag": [], 
+"^ot:unrootedTree": true, 
 "edgeBySourceId": {
 "node887941": {
 "edge887942": {
@@ -701,16 +783,19 @@
 }
 }, 
 "tree5115": {
+"@label": "Untitled (tree5115)", 
 "@xsi:type": "nex:FloatTree", 
 "^ot:branchLengthDescription": "", 
-"^ot:branchLengthMode": "", 
 "^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "Fig. 3-ML strict consen", 
 "^ot:inGroupClade": "node887974", 
+"^ot:nearestTaxonMRCAName": "Ascaridoidea", 
+"^ot:nearestTaxonMRCAOttId": "210097", 
 "^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node887970", 
 "^ot:specifiedRoot": "", 
 "^ot:tag": [], 
+"^ot:unrootedTree": true, 
 "edgeBySourceId": {
 "node887970": {
 "edge887971": {
@@ -981,6 +1066,7 @@
 }
 }, 
 "tree5116": {
+"@label": "Untitled (tree5116)", 
 "@xsi:type": "nex:FloatTree", 
 "^ot:branchLengthDescription": "", 
 "^ot:branchLengthMode": "", 
@@ -991,6 +1077,7 @@
 "^ot:rootNodeId": "node888008", 
 "^ot:specifiedRoot": "", 
 "^ot:tag": [], 
+"^ot:unrootedTree": true, 
 "edgeBySourceId": {
 "node888008": {
 "edge888009": {
@@ -1261,16 +1348,19 @@
 }
 }, 
 "tree5117": {
+"@label": "Fig. 6", 
 "@xsi:type": "nex:FloatTree", 
 "^ot:branchLengthDescription": "", 
-"^ot:branchLengthMode": "", 
 "^ot:branchLengthTimeUnit": "", 
-"^ot:curatedType": "Fig. 6-ML", 
+"^ot:curatedType": "Maximum likelihood ", 
 "^ot:inGroupClade": "node888048", 
+"^ot:nearestTaxonMRCAName": "Ascaridoidea", 
+"^ot:nearestTaxonMRCAOttId": "210097", 
 "^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node888046", 
-"^ot:specifiedRoot": "", 
+"^ot:specifiedRoot": "node888046", 
 "^ot:tag": [], 
+"^ot:unrootedTree": false, 
 "edgeBySourceId": {
 "node888046": {
 "edge888047": {
@@ -1539,10 +1629,12 @@
 "node888076": {}, 
 "node888077": {}, 
 "node888078": {
-"@otu": "otu345597"
+"@otu": "otu345597", 
+"^ot:isTaxonExemplar": true
 }, 
 "node888079": {
-"@otu": "otu345598"
+"@otu": "otu345598", 
+"^ot:isTaxonExemplar": false
 }, 
 "node888080": {}, 
 "node888081": {

@@ -36,14 +36,92 @@
 }
 ]
 }
+}, 
+{
+"@description": "Web-based interface for submitting, editing, and reviewing studies in the Open Tree of Life project.", 
+"@id": "opentree-curation-webapp", 
+"@name": "OpenTree curation webapp", 
+"@url": "https://github.com/OpenTreeOfLife/opentree", 
+"@version": "0.0.0"
 }
 ]
 }, 
 "^ot:annotationEvents": {
-"annotation": []
+"annotation": [
+{
+"@dateCreated": "2014-07-26T22:42:06.205Z", 
+"@description": "Aids for mapping study OTUs to OTT taxa", 
+"@id": "otu-mapping-hints", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "OTU_MAPPING_HINTS", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"searchContext": {
+"$": "All life"
 }, 
-"^ot:candidateTreeForSynthesis": [], 
-"^ot:curatorName": "Dail Laughinghouse", 
+"substitutions": {
+"substitution": [
+{
+"@active": false, 
+"@valid": true, 
+"new": {
+"$": ""
+}, 
+"old": {
+"$": ""
+}
+}
+]
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}, 
+{
+"@dateCreated": "2014-07-26T22:42:06.205Z", 
+"@description": "Describes supporting data files for this study", 
+"@id": "supporting-files-metadata", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "SUPPORTING_FILE_INFO", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"@movedToPermanentArchive": false, 
+"files": {
+"file": []
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}
+]
+}, 
+"^ot:candidateTreeForSynthesis": [
+"tree6697"
+], 
+"^ot:comment": "", 
+"^ot:curatorName": [
+"Dail Laughinghouse"
+], 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S14994"
 }, 
@@ -52,12 +130,16 @@
 "^ot:messages": {
 "message": []
 }, 
+"^ot:notIntendedForSynthesis": false, 
 "^ot:otusElementOrder": [
 "otus2888"
 ], 
 "^ot:studyId": "pg_2888", 
-"^ot:studyPublicationReference": "Althabegoiti M.J., Ormeno-orrillo E., Lozano L., Torres tejerizo G., Rogel M.A., & Martinez-romero E. 2013. Characterization of Rhizobium grahamii extrachromosomal replicons and their transfer among rhizobia. BMC Microbiology, .", 
-"^ot:studyYear": 2013, 
+"^ot:studyPublication": {
+"@href": "http://dx.doi.org/10.1186/1471-2180-14-6"
+}, 
+"^ot:studyPublicationReference": "Mar\u00eda Althabegoiti, Ernesto Orme\u00f1o-Orrillo, Luis Lozano, Gonzalo Torres Tejerizo, Marco Rogel, Jaime Mora, Esperanza Mart\u00ednez-Romero, 2014, 'Characterization of Rhizobium grahamii extrachromosomal replicons and their transfer among rhizobia', BMC Microbiology, vol. 14, no. 1, p. 6", 
+"^ot:studyYear": 2014, 
 "^ot:tag": [], 
 "^ot:treesElementOrder": [
 "trees2888"
@@ -268,15 +350,17 @@
 ], 
 "treeById": {
 "tree6697": {
+"@label": "Untitled (tree6697)", 
 "@xsi:type": "nex:FloatTree", 
 "^ot:branchLengthDescription": "", 
-"^ot:branchLengthMode": "", 
 "^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "Imported tree 0", 
+"^ot:inGroupClade": "node1165719", 
 "^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node1165719", 
-"^ot:specifiedRoot": "", 
+"^ot:specifiedRoot": "node1165719", 
 "^ot:tag": [], 
+"^ot:unrootedTree": false, 
 "edgeBySourceId": {
 "node1165719": {
 "edge1165720": {
@@ -659,7 +743,8 @@
 "node1165721": {}, 
 "node1165722": {}, 
 "node1165723": {
-"@otu": "otu428507"
+"@otu": "otu428507", 
+"^ot:isTaxonExemplar": true
 }, 
 "node1165724": {
 "@otu": "otu428488"
@@ -678,7 +763,8 @@
 "node1165730": {}, 
 "node1165731": {}, 
 "node1165732": {
-"@otu": "otu428504"
+"@otu": "otu428504", 
+"^ot:isTaxonExemplar": false
 }, 
 "node1165733": {
 "@otu": "otu428485"
@@ -686,7 +772,8 @@
 "node1165734": {}, 
 "node1165735": {}, 
 "node1165736": {
-"@otu": "otu428489"
+"@otu": "otu428489", 
+"^ot:isTaxonExemplar": false
 }, 
 "node1165737": {
 "@otu": "otu428483"
@@ -709,7 +796,8 @@
 "node1165745": {}, 
 "node1165746": {}, 
 "node1165747": {
-"@otu": "otu428513"
+"@otu": "otu428513", 
+"^ot:isTaxonExemplar": false
 }, 
 "node1165748": {}, 
 "node1165749": {
@@ -721,7 +809,8 @@
 "node1165751": {}, 
 "node1165752": {}, 
 "node1165753": {
-"@otu": "otu428512"
+"@otu": "otu428512", 
+"^ot:isTaxonExemplar": false
 }, 
 "node1165754": {
 "@otu": "otu428494"
@@ -737,7 +826,8 @@
 }, 
 "node1165760": {}, 
 "node1165761": {
-"@otu": "otu428492"
+"@otu": "otu428492", 
+"^ot:isTaxonExemplar": false
 }, 
 "node1165762": {
 "@otu": "otu428497"
@@ -745,7 +835,8 @@
 "node1165763": {}, 
 "node1165764": {}, 
 "node1165765": {
-"@otu": "otu428502"
+"@otu": "otu428502", 
+"^ot:isTaxonExemplar": false
 }, 
 "node1165766": {}, 
 "node1165767": {

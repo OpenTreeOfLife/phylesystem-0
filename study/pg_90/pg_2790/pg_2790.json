@@ -36,27 +36,109 @@
 }
 ]
 }
+}, 
+{
+"@description": "Web-based interface for submitting, editing, and reviewing studies in the Open Tree of Life project.", 
+"@id": "opentree-curation-webapp", 
+"@name": "OpenTree curation webapp", 
+"@url": "https://github.com/OpenTreeOfLife/opentree", 
+"@version": "0.0.0"
 }
 ]
 }, 
 "^ot:annotationEvents": {
-"annotation": []
+"annotation": [
+{
+"@dateCreated": "2014-07-26T22:37:47.450Z", 
+"@description": "Aids for mapping study OTUs to OTT taxa", 
+"@id": "otu-mapping-hints", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "OTU_MAPPING_HINTS", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"searchContext": {
+"$": "All life"
 }, 
-"^ot:candidateTreeForSynthesis": [], 
-"^ot:curatorName": "Dail Laughinghouse", 
+"substitutions": {
+"substitution": [
+{
+"@active": false, 
+"@valid": true, 
+"new": {
+"$": ""
+}, 
+"old": {
+"$": ""
+}
+}
+]
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}, 
+{
+"@dateCreated": "2014-07-26T22:37:47.449Z", 
+"@description": "Describes supporting data files for this study", 
+"@id": "supporting-files-metadata", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "SUPPORTING_FILE_INFO", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"@movedToPermanentArchive": false, 
+"files": {
+"file": []
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}
+]
+}, 
+"^ot:candidateTreeForSynthesis": [
+"tree6476"
+], 
+"^ot:comment": "", 
+"^ot:curatorName": [
+"Dail Laughinghouse"
+], 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S1676"
 }, 
-"^ot:focalClade": 5252327, 
-"^ot:focalCladeOTTTaxonName": "Moraxella bovoculi", 
+"^ot:focalClade": 656696, 
+"^ot:focalCladeOTTTaxonName": "Moraxella", 
 "^ot:messages": {
 "message": []
 }, 
+"^ot:notIntendedForSynthesis": false, 
 "^ot:otusElementOrder": [
 "otus2790"
 ], 
 "^ot:studyId": "pg_2790", 
-"^ot:studyPublicationReference": "Angelos J., Spinks P., Ball L., & George L. 2007. Moraxella bovoculi sp. nov., isolated from calves with infectious bovine keratoconjunctivitis. International Journal of Systematic and Evolutionary Microbiology, 57(4): 789-795.", 
+"^ot:studyPublication": {
+"@href": "http://dx.doi.org/10.1099/ijs.0.64333-0"
+}, 
+"^ot:studyPublicationReference": "J. A. Angelos, P. Q. Spinks, L. M. Ball, L. W. George, 2007, 'Moraxella bovoculi sp. nov., isolated from calves with infectious bovine keratoconjunctivitis', INTERNATIONAL JOURNAL OF SYSTEMATIC AND EVOLUTIONARY MICROBIOLOGY, vol. 57, no. 4, pp. 789-795", 
 "^ot:studyYear": 2007, 
 "^ot:tag": [], 
 "^ot:treesElementOrder": [
@@ -264,15 +346,17 @@
 ], 
 "treeById": {
 "tree6474": {
+"@label": "Untitled (tree6474)", 
 "@xsi:type": "nex:FloatTree", 
 "^ot:branchLengthDescription": "", 
-"^ot:branchLengthMode": "", 
 "^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "Fig. 1b", 
+"^ot:inGroupClade": "", 
 "^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node1119905", 
 "^ot:specifiedRoot": "", 
 "^ot:tag": [], 
+"^ot:unrootedTree": true, 
 "edgeBySourceId": {
 "node1119905": {
 "edge1119906": {
@@ -340,15 +424,17 @@
 }
 }, 
 "tree6475": {
+"@label": "Untitled (tree6475)", 
 "@xsi:type": "nex:FloatTree", 
 "^ot:branchLengthDescription": "", 
-"^ot:branchLengthMode": "", 
 "^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "Amino Acid Tree", 
+"^ot:inGroupClade": "", 
 "^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node1119914", 
 "^ot:specifiedRoot": "", 
 "^ot:tag": [], 
+"^ot:unrootedTree": true, 
 "edgeBySourceId": {
 "node1119914": {
 "edge1119915": {
@@ -416,15 +502,17 @@
 }
 }, 
 "tree6476": {
+"@label": "Untitled (tree6476)", 
 "@xsi:type": "nex:FloatTree", 
 "^ot:branchLengthDescription": "", 
-"^ot:branchLengthMode": "", 
 "^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "Fig. 1a", 
+"^ot:inGroupClade": "node1119929", 
 "^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node1119923", 
-"^ot:specifiedRoot": "", 
+"^ot:specifiedRoot": "node1119923", 
 "^ot:tag": [], 
+"^ot:unrootedTree": false, 
 "edgeBySourceId": {
 "node1119923": {
 "edge1119924": {
@@ -716,17 +804,20 @@
 "@otu": "otu413909"
 }, 
 "node1119944": {
-"@otu": "otu413922"
+"@otu": "otu413922", 
+"^ot:isTaxonExemplar": true
 }, 
 "node1119945": {
 "@otu": "otu413907"
 }, 
 "node1119946": {}, 
 "node1119947": {
-"@otu": "otu413929"
+"@otu": "otu413929", 
+"^ot:isTaxonExemplar": true
 }, 
 "node1119948": {
-"@otu": "otu413912"
+"@otu": "otu413912", 
+"^ot:isTaxonExemplar": false
 }, 
 "node1119949": {}, 
 "node1119950": {}, 
@@ -736,34 +827,42 @@
 "@otu": "otu413927"
 }, 
 "node1119954": {
-"@otu": "otu413926"
+"@otu": "otu413926", 
+"^ot:isTaxonExemplar": true
 }, 
 "node1119955": {
 "@otu": "otu413905"
 }, 
 "node1119956": {
-"@otu": "otu413928"
+"@otu": "otu413928", 
+"^ot:isTaxonExemplar": false
 }, 
 "node1119957": {
-"@otu": "otu413908"
+"@otu": "otu413908", 
+"^ot:isTaxonExemplar": false
 }, 
 "node1119958": {
-"@otu": "otu413925"
+"@otu": "otu413925", 
+"^ot:isTaxonExemplar": true
 }, 
 "node1119959": {
-"@otu": "otu413930"
+"@otu": "otu413930", 
+"^ot:isTaxonExemplar": false
 }, 
 "node1119960": {}, 
 "node1119961": {}, 
 "node1119962": {
-"@otu": "otu413911"
+"@otu": "otu413911", 
+"^ot:isTaxonExemplar": false
 }, 
 "node1119963": {}, 
 "node1119964": {
-"@otu": "otu413915"
+"@otu": "otu413915", 
+"^ot:isTaxonExemplar": true
 }, 
 "node1119965": {
-"@otu": "otu413918"
+"@otu": "otu413918", 
+"^ot:isTaxonExemplar": false
 }, 
 "node1119966": {}, 
 "node1119967": {
@@ -771,14 +870,17 @@
 }, 
 "node1119968": {}, 
 "node1119969": {
-"@otu": "otu413919"
+"@otu": "otu413919", 
+"^ot:isTaxonExemplar": true
 }, 
 "node1119970": {}, 
 "node1119971": {
-"@otu": "otu413917"
+"@otu": "otu413917", 
+"^ot:isTaxonExemplar": false
 }, 
 "node1119972": {
-"@otu": "otu413914"
+"@otu": "otu413914", 
+"^ot:isTaxonExemplar": false
 }, 
 "node1119973": {
 "@otu": "otu413910"

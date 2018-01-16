@@ -36,22 +36,99 @@
 }
 ]
 }
+}, 
+{
+"@description": "Web-based interface for submitting, editing, and reviewing studies in the Open Tree of Life project.", 
+"@id": "opentree-curation-webapp", 
+"@name": "OpenTree curation webapp", 
+"@url": "https://github.com/OpenTreeOfLife/opentree", 
+"@version": "0.0.0"
 }
 ]
 }, 
 "^ot:annotationEvents": {
-"annotation": []
+"annotation": [
+{
+"@dateCreated": "2017-07-03T18:46:39.835Z", 
+"@description": "Aids for mapping study OTUs to OTT taxa", 
+"@id": "otu-mapping-hints", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "OTU_MAPPING_HINTS", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"searchContext": {
+"$": "Rosids"
 }, 
-"^ot:candidateTreeForSynthesis": [], 
-"^ot:curatorName": "bryan drew", 
+"substitutions": {
+"substitution": [
+{
+"@active": false, 
+"@valid": true, 
+"new": {
+"$": ""
+}, 
+"old": {
+"$": ""
+}
+}
+]
+}, 
+"useFuzzyMatching": false
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}, 
+{
+"@dateCreated": "2017-07-03T18:46:39.835Z", 
+"@description": "Describes supporting data files for this study", 
+"@id": "supporting-files-metadata", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "SUPPORTING_FILE_INFO", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"@movedToPermanentArchive": false, 
+"files": {
+"file": []
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}
+]
+}, 
+"^ot:candidateTreeForSynthesis": [
+"tree201"
+], 
+"^ot:comment": "", 
+"^ot:curatorName": [
+"bryan drew", 
+"acaciamulga"
+], 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S11700"
 }, 
 "^ot:focalClade": 452610, 
 "^ot:focalCladeOTTTaxonName": "Mimosa", 
-"^ot:messages": {
-"message": []
-}, 
 "^ot:otusElementOrder": [
 "otus293"
 ], 
@@ -1570,16 +1647,24 @@
 ], 
 "treeById": {
 "tree200": {
+"@label": "SI Fig Parsimony tree", 
 "@xsi:type": "nex:FloatTree", 
 "^ot:branchLengthDescription": "", 
 "^ot:branchLengthMode": "ot:substitutionCount", 
-"^ot:branchLengthTimeUnit": "", 
-"^ot:curatedType": "one of the most parsimonious trees", 
+"^ot:curatedType": "Maximum parsimony ", 
 "^ot:inGroupClade": "node177046", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
 "^ot:outGroupEdge": "", 
+"^ot:reasonsToExcludeFromSynthesis": [
+{
+"$": "Bayesian tree is included"
+}
+], 
 "^ot:rootNodeId": "node177020", 
-"^ot:specifiedRoot": "", 
+"^ot:specifiedRoot": "node177020", 
 "^ot:tag": [], 
+"^ot:unrootedTree": false, 
 "edgeBySourceId": {
 "node177020": {
 "edge177021": {
@@ -5140,16 +5225,20 @@
 }
 }, 
 "tree201": {
+"@label": "Fig 1 Bayesian tree", 
 "@xsi:type": "nex:FloatTree", 
 "^ot:branchLengthDescription": "", 
-"^ot:branchLengthMode": "", 
-"^ot:branchLengthTimeUnit": "", 
-"^ot:curatedType": "BI?", 
+"^ot:branchLengthMode": "ot:undefined", 
+"^ot:curatedType": "Bayesian inference ", 
 "^ot:inGroupClade": "node177503", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
 "^ot:outGroupEdge": "", 
+"^ot:reasonsToExcludeFromSynthesis": [], 
 "^ot:rootNodeId": "node177478", 
-"^ot:specifiedRoot": "", 
+"^ot:specifiedRoot": "node177478", 
 "^ot:tag": [], 
+"^ot:unrootedTree": false, 
 "edgeBySourceId": {
 "node177478": {
 "edge177479": {
@@ -7444,10 +7533,12 @@
 "node177528": {}, 
 "node177529": {}, 
 "node177530": {
-"@otu": "otu69450"
+"@otu": "otu69450", 
+"^ot:isTaxonExemplar": true
 }, 
 "node177531": {
-"@otu": "otu69449"
+"@otu": "otu69449", 
+"^ot:isTaxonExemplar": false
 }, 
 "node177532": {}, 
 "node177533": {}, 
@@ -7463,10 +7554,12 @@
 "@otu": "otu69454"
 }, 
 "node177539": {
-"@otu": "otu69455"
+"@otu": "otu69455", 
+"^ot:isTaxonExemplar": false
 }, 
 "node177540": {
-"@otu": "otu69451"
+"@otu": "otu69451", 
+"^ot:isTaxonExemplar": true
 }, 
 "node177541": {
 "@otu": "otu69446"
@@ -7501,7 +7594,8 @@
 "node177553": {}, 
 "node177554": {}, 
 "node177555": {
-"@otu": "otu69492"
+"@otu": "otu69492", 
+"^ot:isTaxonExemplar": false
 }, 
 "node177556": {
 "@otu": "otu69494"
@@ -7529,7 +7623,8 @@
 "@otu": "otu69481"
 }, 
 "node177565": {
-"@otu": "otu69466"
+"@otu": "otu69466", 
+"^ot:isTaxonExemplar": true
 }, 
 "node177566": {
 "@otu": "otu69480"
@@ -7559,7 +7654,8 @@
 "@otu": "otu69465"
 }, 
 "node177575": {
-"@otu": "otu69490"
+"@otu": "otu69490", 
+"^ot:isTaxonExemplar": true
 }, 
 "node177576": {
 "@otu": "otu69479"
@@ -7568,7 +7664,8 @@
 "@otu": "otu69483"
 }, 
 "node177578": {
-"@otu": "otu69489"
+"@otu": "otu69489", 
+"^ot:isTaxonExemplar": false
 }, 
 "node177579": {
 "@otu": "otu69484"
@@ -7672,7 +7769,8 @@
 "@otu": "otu69696"
 }, 
 "node177628": {
-"@otu": "otu69697"
+"@otu": "otu69697", 
+"^ot:isTaxonExemplar": false
 }, 
 "node177629": {}, 
 "node177630": {}, 
@@ -7684,10 +7782,12 @@
 "@otu": "otu69705"
 }, 
 "node177634": {
-"@otu": "otu69703"
+"@otu": "otu69703", 
+"^ot:isTaxonExemplar": false
 }, 
 "node177635": {
-"@otu": "otu69704"
+"@otu": "otu69704", 
+"^ot:isTaxonExemplar": true
 }, 
 "node177636": {}, 
 "node177637": {
@@ -7734,7 +7834,8 @@
 "node177654": {}, 
 "node177655": {}, 
 "node177656": {
-"@otu": "otu69685"
+"@otu": "otu69685", 
+"^ot:isTaxonExemplar": true
 }, 
 "node177657": {
 "@otu": "otu69683"
@@ -7744,7 +7845,8 @@
 "@otu": "otu69686"
 }, 
 "node177660": {
-"@otu": "otu69684"
+"@otu": "otu69684", 
+"^ot:isTaxonExemplar": false
 }, 
 "node177661": {
 "@otu": "otu69687"
@@ -7764,10 +7866,12 @@
 "node177666": {}, 
 "node177667": {}, 
 "node177668": {
-"@otu": "otu69679"
+"@otu": "otu69679", 
+"^ot:isTaxonExemplar": true
 }, 
 "node177669": {
-"@otu": "otu69680"
+"@otu": "otu69680", 
+"^ot:isTaxonExemplar": false
 }, 
 "node177670": {}, 
 "node177671": {
@@ -7777,7 +7881,8 @@
 "@otu": "otu69681"
 }, 
 "node177673": {
-"@otu": "otu69698"
+"@otu": "otu69698", 
+"^ot:isTaxonExemplar": true
 }, 
 "node177674": {
 "@otu": "otu69666"
@@ -7840,10 +7945,12 @@
 "@otu": "otu69716"
 }, 
 "node177702": {
-"@otu": "otu69714"
+"@otu": "otu69714", 
+"^ot:isTaxonExemplar": false
 }, 
 "node177703": {
-"@otu": "otu69713"
+"@otu": "otu69713", 
+"^ot:isTaxonExemplar": true
 }, 
 "node177704": {
 "@otu": "otu69711"
@@ -7919,10 +8026,12 @@
 }, 
 "node177734": {}, 
 "node177735": {
-"@otu": "otu69648"
+"@otu": "otu69648", 
+"^ot:isTaxonExemplar": true
 }, 
 "node177736": {
-"@otu": "otu69647"
+"@otu": "otu69647", 
+"^ot:isTaxonExemplar": false
 }, 
 "node177737": {}, 
 "node177738": {
@@ -7961,10 +8070,12 @@
 "@otu": "otu69594"
 }, 
 "node177753": {
-"@otu": "otu69592"
+"@otu": "otu69592", 
+"^ot:isTaxonExemplar": true
 }, 
 "node177754": {
-"@otu": "otu69593"
+"@otu": "otu69593", 
+"^ot:isTaxonExemplar": false
 }, 
 "node177755": {
 "@otu": "otu69595"
@@ -8016,10 +8127,12 @@
 }, 
 "node177777": {}, 
 "node177778": {
-"@otu": "otu69613"
+"@otu": "otu69613", 
+"^ot:isTaxonExemplar": true
 }, 
 "node177779": {
-"@otu": "otu69614"
+"@otu": "otu69614", 
+"^ot:isTaxonExemplar": false
 }, 
 "node177780": {}, 
 "node177781": {}, 
@@ -8080,7 +8193,8 @@
 "node177806": {}, 
 "node177807": {}, 
 "node177808": {
-"@otu": "otu69564"
+"@otu": "otu69564", 
+"^ot:isTaxonExemplar": false
 }, 
 "node177809": {
 "@otu": "otu69563"
@@ -8100,7 +8214,8 @@
 "@otu": "otu69570"
 }, 
 "node177816": {
-"@otu": "otu69566"
+"@otu": "otu69566", 
+"^ot:isTaxonExemplar": true
 }, 
 "node177817": {}, 
 "node177818": {}, 
@@ -8114,7 +8229,8 @@
 "@otu": "otu69574"
 }, 
 "node177822": {
-"@otu": "otu69573"
+"@otu": "otu69573", 
+"^ot:isTaxonExemplar": false
 }, 
 "node177823": {
 "@otu": "otu69589"
@@ -8166,7 +8282,8 @@
 "@otu": "otu69584"
 }, 
 "node177840": {
-"@otu": "otu69572"
+"@otu": "otu69572", 
+"^ot:isTaxonExemplar": true
 }, 
 "node177841": {
 "@otu": "otu69562"
@@ -8232,24 +8349,28 @@
 "node177868": {}, 
 "node177869": {}, 
 "node177870": {
-"@otu": "otu69535"
+"@otu": "otu69535", 
+"^ot:isTaxonExemplar": true
 }, 
 "node177871": {
-"@otu": "otu69536"
+"@otu": "otu69536", 
+"^ot:isTaxonExemplar": false
 }, 
 "node177872": {}, 
 "node177873": {
 "@otu": "otu69539"
 }, 
 "node177874": {
-"@otu": "otu69538"
+"@otu": "otu69538", 
+"^ot:isTaxonExemplar": false
 }, 
 "node177875": {
 "@otu": "otu69537"
 }, 
 "node177876": {}, 
 "node177877": {
-"@otu": "otu69541"
+"@otu": "otu69541", 
+"^ot:isTaxonExemplar": true
 }, 
 "node177878": {
 "@otu": "otu69540"
@@ -8363,10 +8484,12 @@
 }, 
 "node177926": {}, 
 "node177927": {
-"@otu": "otu69502"
+"@otu": "otu69502", 
+"^ot:isTaxonExemplar": true
 }, 
 "node177928": {
-"@otu": "otu69501"
+"@otu": "otu69501", 
+"^ot:isTaxonExemplar": false
 }, 
 "node177929": {}, 
 "node177930": {

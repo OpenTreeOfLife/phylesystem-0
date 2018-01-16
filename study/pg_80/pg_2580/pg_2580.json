@@ -36,22 +36,100 @@
 }
 ]
 }
+}, 
+{
+"@description": "Web-based interface for submitting, editing, and reviewing studies in the Open Tree of Life project.", 
+"@id": "opentree-curation-webapp", 
+"@name": "OpenTree curation webapp", 
+"@url": "https://github.com/OpenTreeOfLife/opentree", 
+"@version": "0.0.0"
 }
 ]
 }, 
 "^ot:annotationEvents": {
-"annotation": []
+"annotation": [
+{
+"@dateCreated": "2015-12-09T20:38:53.611Z", 
+"@description": "Aids for mapping study OTUs to OTT taxa", 
+"@id": "otu-mapping-hints", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "OTU_MAPPING_HINTS", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"searchContext": {
+"$": "All life"
 }, 
-"^ot:candidateTreeForSynthesis": [], 
-"^ot:curatorName": "Chris Owen", 
+"substitutions": {
+"substitution": [
+{
+"@active": false, 
+"@valid": true, 
+"new": {
+"$": ""
+}, 
+"old": {
+"$": ""
+}
+}
+]
+}, 
+"useFuzzyMatching": false
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}, 
+{
+"@dateCreated": "2015-12-09T20:38:53.611Z", 
+"@description": "Describes supporting data files for this study", 
+"@id": "supporting-files-metadata", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "SUPPORTING_FILE_INFO", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"@movedToPermanentArchive": false, 
+"files": {
+"file": []
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}
+]
+}, 
+"^ot:candidateTreeForSynthesis": [
+"tree5986"
+], 
+"^ot:comment": "", 
+"^ot:curatorName": [
+"Chris Owen", 
+"Joseph W. Brown"
+], 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S12891"
 }, 
 "^ot:focalClade": 81443, 
 "^ot:focalCladeOTTTaxonName": "Palaeognathae", 
-"^ot:messages": {
-"message": []
-}, 
+"^ot:notIntendedForSynthesis": false, 
 "^ot:otusElementOrder": [
 "otus2580"
 ], 
@@ -59,7 +137,7 @@
 "^ot:studyPublication": {
 "@href": "http://dx.doi.org/10.1093/sysbio/sys067"
 }, 
-"^ot:studyPublicationReference": "Smith J.V., Braun E., & Kimball R. 2013. Ratite non-monophyly: independent evidence from 40 novel loci. Systematic Biology 62 (1): 35-49.", 
+"^ot:studyPublicationReference": "Smith, JordanV., Edward L. Braun, Rebecca T. Kimball. 2013. Ratite non-monophyly: independent evidence from 40 novel loci. Systematic Biology 62 (1): 35-49.", 
 "^ot:studyYear": 2013, 
 "^ot:tag": [], 
 "^ot:treesElementOrder": [
@@ -89,10 +167,14 @@
 "^ot:ottTaxonName": "Eudromia elegans"
 }, 
 "otu379818": {
-"^ot:originalLabel": "Emeus crassus"
+"^ot:originalLabel": "Emeus crassus", 
+"^ot:ottId": 576651, 
+"^ot:ottTaxonName": "Emeus crassus"
 }, 
 "otu379819": {
-"^ot:originalLabel": "Anomalopteryx didiformis"
+"^ot:originalLabel": "Anomalopteryx didiformis", 
+"^ot:ottId": 816665, 
+"^ot:ottTaxonName": "Anomalopteryx didiformis"
 }, 
 "otu379820": {
 "^ot:originalLabel": "Dinornis giganteus", 
@@ -171,16 +253,20 @@
 ], 
 "treeById": {
 "tree5985": {
+"@label": "Fig. 2 ML", 
 "@xsi:type": "nex:FloatTree", 
 "^ot:branchLengthDescription": "", 
 "^ot:branchLengthMode": "ot:substitutionCount", 
-"^ot:branchLengthTimeUnit": "", 
-"^ot:curatedType": "ML phylogram", 
+"^ot:branchLengthTimeUnit": "Myr", 
+"^ot:curatedType": "Maximum likelihood ", 
 "^ot:inGroupClade": "node1016172", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
 "^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node1016171", 
-"^ot:specifiedRoot": "", 
+"^ot:specifiedRoot": "node1016171", 
 "^ot:tag": [], 
+"^ot:unrootedTree": false, 
 "edgeBySourceId": {
 "node1016171": {
 "edge1016172": {
@@ -472,18 +558,20 @@
 }
 }, 
 "tree5986": {
+"@label": "Bucky species tree", 
 "@xsi:type": "nex:FloatTree", 
 "^ot:branchLengthDescription": "", 
-"^ot:branchLengthMode": "", 
-"^ot:branchLengthTimeUnit": "", 
-"^ot:curatedType": "Bucky species tree", 
+"^ot:branchLengthMode": "ot:undefined", 
+"^ot:branchLengthTimeUnit": "Myr", 
+"^ot:curatedType": "concordance tree", 
 "^ot:inGroupClade": "node1016208", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
 "^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node1016207", 
-"^ot:specifiedRoot": "", 
-"^ot:tag": [
-"choose me"
-], 
+"^ot:specifiedRoot": "node1016207", 
+"^ot:tag": [], 
+"^ot:unrootedTree": false, 
 "edgeBySourceId": {
 "node1016207": {
 "edge1016208": {

@@ -1,0 +1,960 @@
+{
+"nexml": {
+"@about": "#study", 
+"@generator": "Open Tree API", 
+"@id": "study", 
+"@nexml2json": "1.2.1", 
+"@nexmljson": "http://purl.org/opentree/nexson", 
+"@version": "0.9", 
+"@xmlns": {
+"$": "http://www.nexml.org/2009", 
+"nex": "http://www.nexml.org/2009", 
+"ot": "http://purl.org/opentree-terms#", 
+"xhtml": "http://www.w3.org/1999/xhtml/vocab#", 
+"xsd": "http://www.w3.org/2001/XMLSchema#", 
+"xsi": "http://www.w3.org/2001/XMLSchema-instance"
+}, 
+"^ot:agents": {
+"agent": [
+{
+"@description": "Open Tree NexSON validation", 
+"@id": "peyotl-validator", 
+"@name": "api.opentreeoflife.org/validate", 
+"@url": "https://github.com/OpenTreeOfLife/peyotl", 
+"@version": "0.0.4a", 
+"invocation": {
+"commandLine": [], 
+"otherProperty": [
+{
+"name": "pythonVersion", 
+"value": "2.7.9"
+}, 
+{
+"name": "pythonImplementation", 
+"value": "CPython"
+}
+]
+}
+}, 
+{
+"@description": "Web-based interface for submitting, editing, and reviewing studies in the Open Tree of Life project.", 
+"@id": "opentree-curation-webapp", 
+"@name": "OpenTree curation webapp", 
+"@url": "https://github.com/OpenTreeOfLife/opentree", 
+"@version": "0.0.0"
+}
+]
+}, 
+"^ot:annotationEvents": {
+"annotation": [
+{
+"@dateCreated": "2016-03-17T16:45:25.723Z", 
+"@description": "Aids for mapping study OTUs to OTT taxa", 
+"@id": "otu-mapping-hints", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "OTU_MAPPING_HINTS", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"searchContext": {
+"$": "All life"
+}, 
+"substitutions": {
+"substitution": [
+{
+"@active": true, 
+"@valid": true, 
+"new": {
+"$": "Liotelphusa gageii"
+}, 
+"old": {
+"$": "Liothelphusa gagei"
+}
+}
+]
+}, 
+"useFuzzyMatching": false
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}, 
+{
+"@dateCreated": "2016-03-17T16:45:25.723Z", 
+"@description": "Describes supporting data files for this study", 
+"@id": "supporting-files-metadata", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "SUPPORTING_FILE_INFO", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"@movedToPermanentArchive": false, 
+"files": {
+"file": [
+{
+"@filename": "GecarcinucidaetreeKlaus2014.newick", 
+"@size": 1175, 
+"@type": "newick", 
+"@url": "/curator/download/supporting_files.doc.a3e20b661b9e3ab0.476563617263696e756369646165747265654b6c617573323031342e6e657769636b.txt", 
+"description": {
+"$": "Source data for tree(s) 'tree1'"
+}, 
+"sourceForTree": [
+{
+"$": "tree1"
+}
+]
+}
+]
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}
+]
+}, 
+"^ot:candidateTreeForSynthesis": [
+"tree1"
+], 
+"^ot:comment": "Incorporatin Fig 1 phylogeny based on a single molecular locus (16S) with multiple individuals per species collapsed into a single representative. Tree redraw in Mesquite.", 
+"^ot:curatorName": [
+"federicaspani"
+], 
+"^ot:dataDeposit": {
+"@href": ""
+}, 
+"^ot:focalClade": 178271, 
+"^ot:focalCladeOTTTaxonName": "Gecarcinucidae", 
+"^ot:notIntendedForSynthesis": false, 
+"^ot:otusElementOrder": [
+"otus1"
+], 
+"^ot:studyId": "ot_670", 
+"^ot:studyPublication": {
+"@href": "http://dx.doi.org/10.1111/zsc.12078"
+}, 
+"^ot:studyPublicationReference": "Sebastian Klaus, Katrina Fernandez, Darren C. J. Yeo, 2014, 'Phylogeny of the freshwater crabs of the Western Ghats (Brachyura, Gecarcinucidae)', Zoologica Scripta, vol. 43, no. 6, pp. 651-660", 
+"^ot:studyYear": 2014, 
+"^ot:tag": [], 
+"^ot:treesElementOrder": [
+"trees1"
+], 
+"otusById": {
+"otus1": {
+"otuById": {
+"otu1": {
+"^ot:originalLabel": "Potamon fluviatile", 
+"^ot:ottId": 190470, 
+"^ot:ottTaxonName": "Potamon fluviatile"
+}, 
+"otu10": {
+"^ot:originalLabel": "Thaksinthelphusa yongchindaratae", 
+"^ot:ottId": 439698, 
+"^ot:ottTaxonName": "Thaksinthelphusa yongchindaratae"
+}, 
+"otu11": {
+"^ot:originalLabel": "Phricothelphusa sirindhorn", 
+"^ot:ottId": 540224, 
+"^ot:ottTaxonName": "Phricotelphusa sirindhorn"
+}, 
+"otu12": {
+"^ot:originalLabel": "Phricothelphusa limula", 
+"^ot:ottId": 511642, 
+"^ot:ottTaxonName": "Phricothelphusa limula"
+}, 
+"otu13": {
+"^ot:originalLabel": "Phricothelphusa amnicola", 
+"^ot:ottId": 540214, 
+"^ot:ottTaxonName": "Phricotelphusa amnicola"
+}, 
+"otu14": {
+"^ot:originalLabel": "Phricothelphusa hockpingi", 
+"^ot:ottId": 540226, 
+"^ot:ottTaxonName": "Phricotelphusa hockpingi"
+}, 
+"otu15": {
+"^ot:originalLabel": "Phricothelphusa gracilipes", 
+"^ot:ottId": 540212, 
+"^ot:ottTaxonName": "Phricotelphusa gracilipes"
+}, 
+"otu16": {
+"^ot:originalLabel": "Snaha escheri", 
+"^ot:ottId": 1034166, 
+"^ot:ottTaxonName": "Snaha escheri"
+}, 
+"otu17": {
+"^ot:originalLabel": "Cylindrothelphusa steniops", 
+"^ot:ottId": 4666919, 
+"^ot:ottTaxonName": "Cylindrothelphusa steniops"
+}, 
+"otu18": {
+"^ot:originalLabel": "Vanni deepta", 
+"^ot:ottId": 2977576, 
+"^ot:ottTaxonName": "Vanni deepta"
+}, 
+"otu19": {
+"^ot:originalLabel": "Vanni travancoriana", 
+"^ot:ottId": 2977575, 
+"^ot:ottTaxonName": "Vanni travancorica"
+}, 
+"otu2": {
+"^ot:originalLabel": "Potamon persicum", 
+"^ot:ottId": 395287, 
+"^ot:ottTaxonName": "Potamon persicum"
+}, 
+"otu20": {
+"^ot:originalLabel": "Vanni malabarica", 
+"^ot:ottId": 1016209, 
+"^ot:ottTaxonName": "Vanni malabarica"
+}, 
+"otu21": {
+"^ot:originalLabel": "Vela virupa", 
+"^ot:ottId": 4666925, 
+"^ot:ottTaxonName": "Vela virupa"
+}, 
+"otu22": {
+"^ot:originalLabel": "Baratha pushta", 
+"^ot:ottId": 4666889, 
+"^ot:ottTaxonName": "Baratha pushta"
+}, 
+"otu23": {
+"^ot:originalLabel": "Bartha peena", 
+"^ot:ottId": 4666888, 
+"^ot:ottTaxonName": "Baratha peena"
+}, 
+"otu24": {
+"^ot:originalLabel": "Lamella lamellifrons", 
+"^ot:ottId": 4666877, 
+"^ot:ottTaxonName": "Lamella lamellifrons"
+}, 
+"otu25": {
+"^ot:originalLabel": "Travancoriana charu", 
+"^ot:ottId": 4666832, 
+"^ot:ottTaxonName": "Travancoriana charu"
+}, 
+"otu26": {
+"^ot:originalLabel": "Travancoriana pollicaris", 
+"^ot:ottId": 558140, 
+"^ot:ottTaxonName": "Travancoriana pollicaris"
+}, 
+"otu27": {
+"^ot:originalLabel": "Gubernatoriana gubernatoris", 
+"^ot:ottId": 1050432, 
+"^ot:ottTaxonName": "Gubernatoriana gubernatoris"
+}, 
+"otu28": {
+"^ot:originalLabel": "Gubernatoriana basalticola"
+}, 
+"otu29": {
+"^ot:originalLabel": "Pilarta anuka", 
+"^ot:ottId": 4666875, 
+"^ot:ottTaxonName": "Pilarta anuka"
+}, 
+"otu3": {
+"^ot:originalLabel": "Potamonautes perlatus", 
+"^ot:ottId": 976318, 
+"^ot:ottTaxonName": "Potamonautes perlatus"
+}, 
+"otu30": {
+"^ot:originalLabel": "Gecarcinucus jaquemonti", 
+"^ot:ottId": 352184, 
+"^ot:ottTaxonName": "Gecarcinucus jacquemontii"
+}, 
+"otu31": {
+"^ot:originalLabel": "Maydelliathelphusa edentula", 
+"^ot:ottId": 907690, 
+"^ot:ottTaxonName": "Maydelliathelphusa edentula"
+}, 
+"otu32": {
+"^ot:originalLabel": "Maydelliathelphusa lugubris", 
+"^ot:ottId": 1066583, 
+"^ot:ottTaxonName": "Maydelliathelphusa lugubris"
+}, 
+"otu33": {
+"^ot:originalLabel": "Sodhiana blanfordi"
+}, 
+"otu34": {
+"^ot:originalLabel": "Sartoriana spinigera", 
+"^ot:ottId": 622896, 
+"^ot:ottTaxonName": "Sartoriana spinigera"
+}, 
+"otu35": {
+"^ot:originalLabel": "Barytelphusa cunicularis", 
+"^ot:ottId": 904279, 
+"^ot:ottTaxonName": "Barytelphusa cunicularis"
+}, 
+"otu36": {
+"^ot:originalLabel": "Ceylonthelphusa kandambyi", 
+"^ot:ottId": 854350, 
+"^ot:ottTaxonName": "Ceylonthelphusa kandambyi"
+}, 
+"otu37": {
+"^ot:originalLabel": "Oziothelphusa ceylonensis", 
+"^ot:ottId": 379139, 
+"^ot:ottTaxonName": "Oziothelphusa ceylonensis"
+}, 
+"otu4": {
+"^ot:originalLabel": "Potamonautes niloticus", 
+"^ot:ottId": 1058747, 
+"^ot:ottTaxonName": "Potamonautes niloticus"
+}, 
+"otu5": {
+"^ot:originalLabel": "Platythelphusa armata", 
+"^ot:ottId": 482209, 
+"^ot:ottTaxonName": "Platythelphusa armata"
+}, 
+"otu6": {
+"^ot:originalLabel": "Travancoriana schirnerae", 
+"^ot:ottId": 904282, 
+"^ot:ottTaxonName": "Travancoriana schirnerae"
+}, 
+"otu7": {
+"^ot:originalLabel": "Vanni nilgiriense", 
+"^ot:ottId": 558136, 
+"^ot:ottTaxonName": "Vanni nilgiriensis"
+}, 
+"otu8": {
+"^ot:originalLabel": "Lepidothelphusa cogneti", 
+"^ot:ottId": 1066575, 
+"^ot:ottTaxonName": "Lepidothelphusa cognetti"
+}, 
+"otu9": {
+"^ot:originalLabel": "Liothelphusa gagei", 
+"^ot:ottId": 1066578, 
+"^ot:ottTaxonName": "Liotelphusa gageii"
+}
+}
+}
+}, 
+"treesById": {
+"trees1": {
+"@otus": "otus1", 
+"^ot:treeElementOrder": [
+"tree1"
+], 
+"treeById": {
+"tree1": {
+"@label": "GecarcinucidaeBayestreeFig1", 
+"@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "no branch length", 
+"^ot:branchLengthMode": "ot:other", 
+"^ot:branchLengthTimeUnit": "Myr", 
+"^ot:curatedType": "Bayesian inference ", 
+"^ot:inGroupClade": "node11", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
+"^ot:outGroupEdge": "", 
+"^ot:rootNodeId": "node1", 
+"^ot:specifiedRoot": "node1", 
+"^ot:tag": [
+"Gecarcinucidaetree"
+], 
+"^ot:unrootedTree": false, 
+"edgeBySourceId": {
+"node1": {
+"edge1": {
+"@length": 9, 
+"@source": "node1", 
+"@target": "node2"
+}, 
+"edge10": {
+"@length": 1, 
+"@source": "node1", 
+"@target": "node11"
+}
+}, 
+"node11": {
+"edge11": {
+"@length": 11, 
+"@source": "node11", 
+"@target": "node12"
+}, 
+"edge12": {
+"@length": 1, 
+"@source": "node11", 
+"@target": "node13"
+}
+}, 
+"node13": {
+"edge13": {
+"@length": 10, 
+"@source": "node13", 
+"@target": "node14"
+}, 
+"edge14": {
+"@length": 1, 
+"@source": "node13", 
+"@target": "node15"
+}
+}, 
+"node15": {
+"edge15": {
+"@length": 2, 
+"@source": "node15", 
+"@target": "node16"
+}, 
+"edge30": {
+"@length": 1, 
+"@source": "node15", 
+"@target": "node31"
+}
+}, 
+"node16": {
+"edge16": {
+"@length": 7, 
+"@source": "node16", 
+"@target": "node17"
+}, 
+"edge17": {
+"@length": 1, 
+"@source": "node16", 
+"@target": "node18"
+}
+}, 
+"node18": {
+"edge18": {
+"@length": 6, 
+"@source": "node18", 
+"@target": "node19"
+}, 
+"edge19": {
+"@length": 1, 
+"@source": "node18", 
+"@target": "node20"
+}
+}, 
+"node2": {
+"edge2": {
+"@length": 2, 
+"@source": "node2", 
+"@target": "node3"
+}, 
+"edge5": {
+"@length": 1, 
+"@source": "node2", 
+"@target": "node6"
+}
+}, 
+"node20": {
+"edge20": {
+"@length": 5, 
+"@source": "node20", 
+"@target": "node21"
+}, 
+"edge21": {
+"@length": 1, 
+"@source": "node20", 
+"@target": "node22"
+}
+}, 
+"node22": {
+"edge22": {
+"@length": 4, 
+"@source": "node22", 
+"@target": "node23"
+}, 
+"edge23": {
+"@length": 1, 
+"@source": "node22", 
+"@target": "node24"
+}
+}, 
+"node24": {
+"edge24": {
+"@length": 3, 
+"@source": "node24", 
+"@target": "node25"
+}, 
+"edge25": {
+"@length": 1, 
+"@source": "node24", 
+"@target": "node26"
+}
+}, 
+"node26": {
+"edge26": {
+"@length": 2, 
+"@source": "node26", 
+"@target": "node27"
+}, 
+"edge27": {
+"@length": 1, 
+"@source": "node26", 
+"@target": "node28"
+}
+}, 
+"node28": {
+"edge28": {
+"@length": 1, 
+"@source": "node28", 
+"@target": "node29"
+}, 
+"edge29": {
+"@length": 1, 
+"@source": "node28", 
+"@target": "node30"
+}
+}, 
+"node3": {
+"edge3": {
+"@length": 1, 
+"@source": "node3", 
+"@target": "node4"
+}, 
+"edge4": {
+"@length": 1, 
+"@source": "node3", 
+"@target": "node5"
+}
+}, 
+"node31": {
+"edge31": {
+"@length": 1, 
+"@source": "node31", 
+"@target": "node32"
+}, 
+"edge70": {
+"@length": 7, 
+"@source": "node31", 
+"@target": "node71"
+}
+}, 
+"node32": {
+"edge32": {
+"@length": 1, 
+"@source": "node32", 
+"@target": "node33"
+}, 
+"edge47": {
+"@length": 1, 
+"@source": "node32", 
+"@target": "node48"
+}
+}, 
+"node33": {
+"edge33": {
+"@length": 6, 
+"@source": "node33", 
+"@target": "node34"
+}, 
+"edge34": {
+"@length": 1, 
+"@source": "node33", 
+"@target": "node35"
+}
+}, 
+"node35": {
+"edge35": {
+"@length": 5, 
+"@source": "node35", 
+"@target": "node36"
+}, 
+"edge36": {
+"@length": 1, 
+"@source": "node35", 
+"@target": "node37"
+}
+}, 
+"node37": {
+"edge37": {
+"@length": 3, 
+"@source": "node37", 
+"@target": "node38"
+}, 
+"edge40": {
+"@length": 1, 
+"@source": "node37", 
+"@target": "node41"
+}
+}, 
+"node38": {
+"edge38": {
+"@length": 1, 
+"@source": "node38", 
+"@target": "node39"
+}, 
+"edge39": {
+"@length": 1, 
+"@source": "node38", 
+"@target": "node40"
+}
+}, 
+"node41": {
+"edge41": {
+"@length": 3, 
+"@source": "node41", 
+"@target": "node42"
+}, 
+"edge42": {
+"@length": 1, 
+"@source": "node41", 
+"@target": "node43"
+}
+}, 
+"node43": {
+"edge43": {
+"@length": 2, 
+"@source": "node43", 
+"@target": "node44"
+}, 
+"edge44": {
+"@length": 1, 
+"@source": "node43", 
+"@target": "node45"
+}
+}, 
+"node45": {
+"edge45": {
+"@length": 1, 
+"@source": "node45", 
+"@target": "node46"
+}, 
+"edge46": {
+"@length": 1, 
+"@source": "node45", 
+"@target": "node47"
+}
+}, 
+"node48": {
+"edge48": {
+"@length": 3, 
+"@source": "node48", 
+"@target": "node49"
+}, 
+"edge57": {
+"@length": 1, 
+"@source": "node48", 
+"@target": "node58"
+}
+}, 
+"node49": {
+"edge49": {
+"@length": 1, 
+"@source": "node49", 
+"@target": "node50"
+}, 
+"edge54": {
+"@length": 2, 
+"@source": "node49", 
+"@target": "node55"
+}
+}, 
+"node50": {
+"edge50": {
+"@length": 2, 
+"@source": "node50", 
+"@target": "node51"
+}, 
+"edge51": {
+"@length": 1, 
+"@source": "node50", 
+"@target": "node52"
+}
+}, 
+"node52": {
+"edge52": {
+"@length": 1, 
+"@source": "node52", 
+"@target": "node53"
+}, 
+"edge53": {
+"@length": 1, 
+"@source": "node52", 
+"@target": "node54"
+}
+}, 
+"node55": {
+"edge55": {
+"@length": 1, 
+"@source": "node55", 
+"@target": "node56"
+}, 
+"edge56": {
+"@length": 1, 
+"@source": "node55", 
+"@target": "node57"
+}
+}, 
+"node58": {
+"edge58": {
+"@length": 5, 
+"@source": "node58", 
+"@target": "node59"
+}, 
+"edge59": {
+"@length": 1, 
+"@source": "node58", 
+"@target": "node60"
+}
+}, 
+"node6": {
+"edge6": {
+"@length": 2, 
+"@source": "node6", 
+"@target": "node7"
+}, 
+"edge7": {
+"@length": 1, 
+"@source": "node6", 
+"@target": "node8"
+}
+}, 
+"node60": {
+"edge60": {
+"@length": 4, 
+"@source": "node60", 
+"@target": "node61"
+}, 
+"edge61": {
+"@length": 1, 
+"@source": "node60", 
+"@target": "node62"
+}
+}, 
+"node62": {
+"edge62": {
+"@length": 2, 
+"@source": "node62", 
+"@target": "node63"
+}, 
+"edge65": {
+"@length": 1, 
+"@source": "node62", 
+"@target": "node66"
+}
+}, 
+"node63": {
+"edge63": {
+"@length": 1, 
+"@source": "node63", 
+"@target": "node64"
+}, 
+"edge64": {
+"@length": 1, 
+"@source": "node63", 
+"@target": "node65"
+}
+}, 
+"node66": {
+"edge66": {
+"@length": 1, 
+"@source": "node66", 
+"@target": "node67"
+}, 
+"edge69": {
+"@length": 2, 
+"@source": "node66", 
+"@target": "node70"
+}
+}, 
+"node67": {
+"edge67": {
+"@length": 1, 
+"@source": "node67", 
+"@target": "node68"
+}, 
+"edge68": {
+"@length": 1, 
+"@source": "node67", 
+"@target": "node69"
+}
+}, 
+"node71": {
+"edge71": {
+"@length": 1, 
+"@source": "node71", 
+"@target": "node72"
+}, 
+"edge72": {
+"@length": 1, 
+"@source": "node71", 
+"@target": "node73"
+}
+}, 
+"node8": {
+"edge8": {
+"@length": 1, 
+"@source": "node8", 
+"@target": "node9"
+}, 
+"edge9": {
+"@length": 1, 
+"@source": "node8", 
+"@target": "node10"
+}
+}
+}, 
+"nodeById": {
+"node1": {
+"@root": true
+}, 
+"node10": {
+"@otu": "otu5"
+}, 
+"node11": {}, 
+"node12": {
+"@otu": "otu6"
+}, 
+"node13": {}, 
+"node14": {
+"@otu": "otu7"
+}, 
+"node15": {}, 
+"node16": {}, 
+"node17": {
+"@otu": "otu8"
+}, 
+"node18": {}, 
+"node19": {
+"@otu": "otu9"
+}, 
+"node2": {}, 
+"node20": {}, 
+"node21": {
+"@otu": "otu10"
+}, 
+"node22": {}, 
+"node23": {
+"@otu": "otu11"
+}, 
+"node24": {}, 
+"node25": {
+"@otu": "otu12"
+}, 
+"node26": {}, 
+"node27": {
+"@otu": "otu13"
+}, 
+"node28": {}, 
+"node29": {
+"@otu": "otu14"
+}, 
+"node3": {}, 
+"node30": {
+"@otu": "otu15"
+}, 
+"node31": {}, 
+"node32": {}, 
+"node33": {}, 
+"node34": {
+"@otu": "otu16"
+}, 
+"node35": {}, 
+"node36": {
+"@otu": "otu17"
+}, 
+"node37": {}, 
+"node38": {}, 
+"node39": {
+"@otu": "otu18"
+}, 
+"node4": {
+"@otu": "otu1"
+}, 
+"node40": {
+"@otu": "otu19"
+}, 
+"node41": {}, 
+"node42": {
+"@otu": "otu20"
+}, 
+"node43": {}, 
+"node44": {
+"@otu": "otu21"
+}, 
+"node45": {}, 
+"node46": {
+"@otu": "otu22"
+}, 
+"node47": {
+"@otu": "otu23"
+}, 
+"node48": {}, 
+"node49": {}, 
+"node5": {
+"@otu": "otu2"
+}, 
+"node50": {}, 
+"node51": {
+"@otu": "otu24"
+}, 
+"node52": {}, 
+"node53": {
+"@otu": "otu25"
+}, 
+"node54": {
+"@otu": "otu26"
+}, 
+"node55": {}, 
+"node56": {
+"@otu": "otu27"
+}, 
+"node57": {
+"@otu": "otu28"
+}, 
+"node58": {}, 
+"node59": {
+"@otu": "otu29"
+}, 
+"node6": {}, 
+"node60": {}, 
+"node61": {
+"@otu": "otu30"
+}, 
+"node62": {}, 
+"node63": {}, 
+"node64": {
+"@otu": "otu31"
+}, 
+"node65": {
+"@otu": "otu32"
+}, 
+"node66": {}, 
+"node67": {}, 
+"node68": {
+"@otu": "otu33"
+}, 
+"node69": {
+"@otu": "otu34"
+}, 
+"node7": {
+"@otu": "otu3"
+}, 
+"node70": {
+"@otu": "otu35"
+}, 
+"node71": {}, 
+"node72": {
+"@otu": "otu36"
+}, 
+"node73": {
+"@otu": "otu37"
+}, 
+"node8": {}, 
+"node9": {
+"@otu": "otu4"
+}
+}
+}
+}
+}
+}
+}
+}

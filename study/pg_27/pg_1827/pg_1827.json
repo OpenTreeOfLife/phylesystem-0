@@ -36,26 +36,107 @@
 }
 ]
 }
+}, 
+{
+"@description": "Web-based interface for submitting, editing, and reviewing studies in the Open Tree of Life project.", 
+"@id": "opentree-curation-webapp", 
+"@name": "OpenTree curation webapp", 
+"@url": "https://github.com/OpenTreeOfLife/opentree", 
+"@version": "0.0.0"
 }
 ]
 }, 
 "^ot:annotationEvents": {
-"annotation": []
+"annotation": [
+{
+"@dateCreated": "2016-02-21T21:54:58.211Z", 
+"@description": "Aids for mapping study OTUs to OTT taxa", 
+"@id": "otu-mapping-hints", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "OTU_MAPPING_HINTS", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"searchContext": {
+"$": "Vertebrates"
 }, 
-"^ot:candidateTreeForSynthesis": [], 
-"^ot:curatorName": "Chris Owen", 
+"substitutions": {
+"substitution": [
+{
+"@active": false, 
+"@valid": true, 
+"new": {
+"$": ""
+}, 
+"old": {
+"$": ""
+}
+}
+]
+}, 
+"useFuzzyMatching": false
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}, 
+{
+"@dateCreated": "2016-02-21T21:54:58.211Z", 
+"@description": "Describes supporting data files for this study", 
+"@id": "supporting-files-metadata", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "SUPPORTING_FILE_INFO", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"@movedToPermanentArchive": false, 
+"files": {
+"file": []
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}
+]
+}, 
+"^ot:candidateTreeForSynthesis": [
+"tree3687"
+], 
+"^ot:comment": "", 
+"^ot:curatorName": [
+"Chris Owen", 
+"Brian Sidlauskas"
+], 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S12906"
 }, 
 "^ot:focalClade": 609233, 
 "^ot:focalCladeOTTTaxonName": "Ariidae", 
-"^ot:messages": {
-"message": []
-}, 
+"^ot:notIntendedForSynthesis": false, 
 "^ot:otusElementOrder": [
 "otus1827"
 ], 
 "^ot:studyId": "pg_1827", 
+"^ot:studyPublication": {
+"@href": "http://search.informit.com.au/documentSummary;dn=057273049071593;res=IELHSS"
+}, 
 "^ot:studyPublicationReference": "Kailola P. 2004. A phylogenetic exploration of the catfish family Ariidae (Otophysi: Siluriformes). The Beagle, Records of the Museums and Art Galleries of the Northern Territory, 20: 87-166.", 
 "^ot:studyYear": 2004, 
 "^ot:tag": [], 
@@ -241,6 +322,8 @@
 }, 
 "otu281706": {
 "^ot:originalLabel": "Arius caerulescens", 
+"^ot:ottId": 195737, 
+"^ot:ottTaxonName": "Sciades guatemalensis", 
 "^ot:treebaseOTUId": "Tl829265"
 }, 
 "otu281707": {
@@ -449,8 +532,8 @@
 }, 
 "otu281741": {
 "^ot:originalLabel": "Arius fuerthii", 
-"^ot:ottId": 206067, 
-"^ot:ottTaxonName": "Cathorops aff. fuerthii STRI-5726", 
+"^ot:ottId": 922478, 
+"^ot:ottTaxonName": "Cathorops fuerthii", 
 "^ot:treebaseOTUId": "Tl829300"
 }, 
 "otu281742": {
@@ -815,6 +898,8 @@
 }, 
 "otu281802": {
 "^ot:originalLabel": "Galeichthys azureus", 
+"^ot:ottId": 195737, 
+"^ot:ottTaxonName": "Sciades guatemalensis", 
 "^ot:treebaseOTUId": "Tl829361"
 }, 
 "otu281803": {
@@ -1083,8 +1168,8 @@
 }, 
 "otu281847": {
 "^ot:originalLabel": "Guiritinga barbus", 
-"^ot:ottId": 4138577, 
-"^ot:ottTaxonName": "Guiritinga barbus", 
+"^ot:ottId": 516569, 
+"^ot:ottTaxonName": "Genidens barbus", 
 "^ot:treebaseOTUId": "Tl829406"
 }, 
 "otu281848": {
@@ -1113,6 +1198,8 @@
 }, 
 "otu281852": {
 "^ot:originalLabel": "Galeichthys eigenmanni", 
+"^ot:ottId": 704267, 
+"^ot:ottTaxonName": "Sciades seemanni", 
 "^ot:treebaseOTUId": "Tl829411"
 }, 
 "otu281853": {
@@ -1171,6 +1258,8 @@
 }, 
 "otu281862": {
 "^ot:originalLabel": "Galeichthys gilberti", 
+"^ot:ottId": 704267, 
+"^ot:ottTaxonName": "Sciades seemanni", 
 "^ot:treebaseOTUId": "Tl829421"
 }, 
 "otu281863": {
@@ -1469,12 +1558,14 @@
 }, 
 "otu281912": {
 "^ot:originalLabel": "Arius assimilis", 
+"^ot:ottId": 47720, 
+"^ot:ottTaxonName": "Sciades assimilis", 
 "^ot:treebaseOTUId": "Tl829471"
 }, 
 "otu281913": {
 "^ot:originalLabel": "Guiritinga planifrons", 
-"^ot:ottId": 4138577, 
-"^ot:ottTaxonName": "Guiritinga barbus", 
+"^ot:ottId": 516578, 
+"^ot:ottTaxonName": "Genidens planifrons", 
 "^ot:treebaseOTUId": "Tl829472"
 }, 
 "otu281914": {
@@ -1554,21 +1645,22 @@
 ], 
 "treeById": {
 "tree3687": {
+"@label": "Fig 15 Strict Consensus", 
 "@xsi:type": "nex:FloatTree", 
 "^ot:branchLengthDescription": "", 
 "^ot:branchLengthMode": "ot:changesCount", 
-"^ot:branchLengthTimeUnit": "", 
-"^ot:curatedType": "Fig. 15A-B Combined+", 
+"^ot:branchLengthTimeUnit": "Myr", 
+"^ot:curatedType": "Maximum parsimony ", 
+"^ot:inGroupClade": "node703430", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
 "^ot:outGroupEdge": "", 
-"^ot:rootNodeId": "node703383", 
-"^ot:specifiedRoot": "", 
+"^ot:rootNodeId": "tree3687_ROOT", 
+"^ot:specifiedRoot": "tree3687_ROOT", 
 "^ot:tag": [], 
+"^ot:unrootedTree": false, 
 "edgeBySourceId": {
 "node703383": {
-"edge703384": {
-"@source": "node703383", 
-"@target": "node703384"
-}, 
 "edge703429": {
 "@source": "node703383", 
 "@target": "node703429"
@@ -1579,9 +1671,9 @@
 }
 }, 
 "node703384": {
-"edge703385": {
+"edge703384": {
 "@source": "node703384", 
-"@target": "node703385"
+"@target": "node703383"
 }, 
 "edge703428": {
 "@source": "node703384", 
@@ -1589,9 +1681,9 @@
 }
 }, 
 "node703385": {
-"edge703386": {
+"edge703385": {
 "@source": "node703385", 
-"@target": "node703386"
+"@target": "node703384"
 }, 
 "edge703427": {
 "@source": "node703385", 
@@ -1599,9 +1691,9 @@
 }
 }, 
 "node703386": {
-"edge703387": {
+"edge703386": {
 "@source": "node703386", 
-"@target": "node703387"
+"@target": "node703385"
 }, 
 "edge703426": {
 "@source": "node703386", 
@@ -1609,9 +1701,9 @@
 }
 }, 
 "node703387": {
-"edge703388": {
+"edge703387": {
 "@source": "node703387", 
-"@target": "node703388"
+"@target": "node703386"
 }, 
 "edge703425": {
 "@source": "node703387", 
@@ -1619,9 +1711,9 @@
 }
 }, 
 "node703388": {
-"edge703389": {
+"edge703388": {
 "@source": "node703388", 
-"@target": "node703389"
+"@target": "node703387"
 }, 
 "edge703424": {
 "@source": "node703388", 
@@ -1629,9 +1721,9 @@
 }
 }, 
 "node703389": {
-"edge703390": {
+"edge703389": {
 "@source": "node703389", 
-"@target": "node703390"
+"@target": "node703388"
 }, 
 "edge703423": {
 "@source": "node703389", 
@@ -1639,13 +1731,13 @@
 }
 }, 
 "node703390": {
+"edge703390": {
+"@source": "node703390", 
+"@target": "node703389"
+}, 
 "edge703391": {
 "@source": "node703390", 
 "@target": "node703391"
-}, 
-"edge703420": {
-"@source": "node703390", 
-"@target": "node703420"
 }
 }, 
 "node703391": {
@@ -1789,13 +1881,13 @@
 }
 }, 
 "node703420": {
+"edge703420": {
+"@source": "node703420", 
+"@target": "node703390"
+}, 
 "edge703421": {
 "@source": "node703420", 
 "@target": "node703421"
-}, 
-"edge703422": {
-"@source": "node703420", 
-"@target": "node703422"
 }
 }, 
 "node703430": {
@@ -2249,12 +2341,20 @@
 "@source": "node703518", 
 "@target": "node703520"
 }
+}, 
+"tree3687_ROOT": {
+"edge703422": {
+"@source": "tree3687_ROOT", 
+"@target": "node703422"
+}, 
+"tree3687_ROOT_EDGE": {
+"@source": "tree3687_ROOT", 
+"@target": "node703420"
+}
 }
 }, 
 "nodeById": {
-"node703383": {
-"@root": true
-}, 
+"node703383": {}, 
 "node703384": {}, 
 "node703385": {}, 
 "node703386": {}, 
@@ -2550,6 +2650,9 @@
 }, 
 "node703523": {
 "@otu": "otu281886"
+}, 
+"tree3687_ROOT": {
+"@root": true
 }
 }
 }

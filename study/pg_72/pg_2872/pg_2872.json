@@ -36,19 +36,102 @@
 }
 ]
 }
+}, 
+{
+"@description": "Web-based interface for submitting, editing, and reviewing studies in the Open Tree of Life project.", 
+"@id": "opentree-curation-webapp", 
+"@name": "OpenTree curation webapp", 
+"@url": "https://github.com/OpenTreeOfLife/opentree", 
+"@version": "0.0.0"
 }
 ]
 }, 
 "^ot:annotationEvents": {
-"annotation": []
+"annotation": [
+{
+"@dateCreated": "2014-07-31T22:07:39.055Z", 
+"@description": "Aids for mapping study OTUs to OTT taxa", 
+"@id": "otu-mapping-hints", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "OTU_MAPPING_HINTS", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"searchContext": {
+"$": "All life"
 }, 
-"^ot:candidateTreeForSynthesis": [], 
-"^ot:curatorName": "Joseph Brown", 
+"substitutions": {
+"substitution": [
+{
+"@active": false, 
+"@valid": true, 
+"new": {
+"$": ""
+}, 
+"old": {
+"$": ""
+}
+}
+]
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}, 
+{
+"@dateCreated": "2014-07-31T22:07:39.055Z", 
+"@description": "Describes supporting data files for this study", 
+"@id": "supporting-files-metadata", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "SUPPORTING_FILE_INFO", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"@movedToPermanentArchive": false, 
+"files": {
+"file": []
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}
+]
+}, 
+"^ot:candidateTreeForSynthesis": [
+"tree6665"
+], 
+"^ot:comment": "", 
+"^ot:curatorName": [
+"Joseph Brown", 
+"Joseph W. Brown"
+], 
+"^ot:dataDeposit": {
+"@href": ""
+}, 
 "^ot:focalClade": 275127, 
 "^ot:focalCladeOTTTaxonName": "Caprimulgidae", 
 "^ot:messages": {
 "message": []
 }, 
+"^ot:notIntendedForSynthesis": false, 
 "^ot:otusElementOrder": [
 "otus2872"
 ], 
@@ -436,16 +519,17 @@
 ], 
 "treeById": {
 "tree6665": {
+"@label": "Fig. 2", 
 "@xsi:type": "nex:FloatTree", 
 "^ot:branchLengthDescription": "", 
-"^ot:branchLengthMode": "", 
 "^ot:branchLengthTimeUnit": "", 
-"^ot:curatedType": "Fig. 2 ML", 
+"^ot:curatedType": "Maximum likelihood ", 
 "^ot:inGroupClade": "node1161976", 
 "^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node1161973", 
-"^ot:specifiedRoot": "", 
+"^ot:specifiedRoot": "node1161973", 
 "^ot:tag": [], 
+"^ot:unrootedTree": false, 
 "edgeBySourceId": {
 "node1161973": {
 "edge1161974": {
@@ -1180,19 +1264,23 @@
 }, 
 "node1161990": {}, 
 "node1161991": {
-"@otu": "otu427046"
+"@otu": "otu427046", 
+"^ot:isTaxonExemplar": true
 }, 
 "node1161992": {
-"@otu": "otu427047"
+"@otu": "otu427047", 
+"^ot:isTaxonExemplar": false
 }, 
 "node1161993": {}, 
 "node1161994": {}, 
 "node1161995": {}, 
 "node1161996": {
-"@otu": "otu427048"
+"@otu": "otu427048", 
+"^ot:isTaxonExemplar": true
 }, 
 "node1161997": {
-"@otu": "otu427049"
+"@otu": "otu427049", 
+"^ot:isTaxonExemplar": false
 }, 
 "node1161998": {
 "@otu": "otu427050"
@@ -1217,10 +1305,12 @@
 }, 
 "node1162007": {}, 
 "node1162008": {
-"@otu": "otu427056"
+"@otu": "otu427056", 
+"^ot:isTaxonExemplar": true
 }, 
 "node1162009": {
-"@otu": "otu427057"
+"@otu": "otu427057", 
+"^ot:isTaxonExemplar": false
 }, 
 "node1162010": {
 "@otu": "otu427058"
@@ -1286,20 +1376,24 @@
 "node1162041": {}, 
 "node1162042": {}, 
 "node1162043": {
-"@otu": "otu427073"
+"@otu": "otu427073", 
+"^ot:isTaxonExemplar": true
 }, 
 "node1162044": {
-"@otu": "otu427074"
+"@otu": "otu427074", 
+"^ot:isTaxonExemplar": false
 }, 
 "node1162045": {
 "@otu": "otu427075"
 }, 
 "node1162046": {}, 
 "node1162047": {
-"@otu": "otu427076"
+"@otu": "otu427076", 
+"^ot:isTaxonExemplar": true
 }, 
 "node1162048": {
-"@otu": "otu427077"
+"@otu": "otu427077", 
+"^ot:isTaxonExemplar": false
 }, 
 "node1162049": {}, 
 "node1162050": {}, 
@@ -1366,17 +1460,21 @@
 }, 
 "node1162082": {}, 
 "node1162083": {
-"@otu": "otu427093"
+"@otu": "otu427093", 
+"^ot:isTaxonExemplar": true
 }, 
 "node1162084": {
-"@otu": "otu427094"
+"@otu": "otu427094", 
+"^ot:isTaxonExemplar": false
 }, 
 "node1162085": {}, 
 "node1162086": {
-"@otu": "otu427095"
+"@otu": "otu427095", 
+"^ot:isTaxonExemplar": true
 }, 
 "node1162087": {
-"@otu": "otu427096"
+"@otu": "otu427096", 
+"^ot:isTaxonExemplar": false
 }, 
 "node1162088": {}, 
 "node1162089": {}, 

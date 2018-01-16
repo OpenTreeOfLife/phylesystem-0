@@ -36,22 +36,109 @@
 }
 ]
 }
+}, 
+{
+"@description": "Web-based interface for submitting, editing, and reviewing studies in the Open Tree of Life project.", 
+"@id": "opentree-curation-webapp", 
+"@name": "OpenTree curation webapp", 
+"@url": "https://github.com/OpenTreeOfLife/opentree", 
+"@version": "0.0.0"
 }
 ]
 }, 
 "^ot:annotationEvents": {
-"annotation": []
+"annotation": [
+{
+"@dateCreated": "2015-09-29T20:56:37.678Z", 
+"@description": "Aids for mapping study OTUs to OTT taxa", 
+"@id": "otu-mapping-hints", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "OTU_MAPPING_HINTS", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"searchContext": {
+"$": "All life"
 }, 
-"^ot:candidateTreeForSynthesis": [], 
-"^ot:curatorName": "Romina Gazis", 
+"substitutions": {
+"substitution": [
+{
+"@active": false, 
+"@valid": true, 
+"new": {
+"$": ""
+}, 
+"old": {
+"$": ""
+}
+}, 
+{
+"@active": true, 
+"@valid": true, 
+"new": {
+"$": "$1"
+}, 
+"old": {
+"$": "^(\\S*\\s+\\S*).*"
+}
+}
+]
+}, 
+"useFuzzyMatching": true
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}, 
+{
+"@dateCreated": "2015-09-29T20:56:37.678Z", 
+"@description": "Describes supporting data files for this study", 
+"@id": "supporting-files-metadata", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "SUPPORTING_FILE_INFO", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"@movedToPermanentArchive": false, 
+"files": {
+"file": []
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}
+]
+}, 
+"^ot:candidateTreeForSynthesis": [
+"tree1932"
+], 
+"^ot:comment": "", 
+"^ot:curatorName": [
+"Romina Gazis"
+], 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S2082"
 }, 
 "^ot:focalClade": 563752, 
 "^ot:focalCladeOTTTaxonName": "Shiraia", 
-"^ot:messages": {
-"message": []
-}, 
+"^ot:notIntendedForSynthesis": false, 
 "^ot:otusElementOrder": [
 "otus990"
 ], 
@@ -65,6 +152,10 @@
 "^ot:treesElementOrder": [
 "trees990"
 ], 
+"^xhtml:license": {
+"@href": "http://creativecommons.org/publicdomain/zero/1.0/", 
+"@name": "CC0"
+}, 
 "otusById": {
 "otus990": {
 "otuById": {
@@ -190,6 +281,8 @@
 }, 
 "otu210166": {
 "^ot:originalLabel": "Septoria tritici AJ300330", 
+"^ot:ottId": 5319573, 
+"^ot:ottTaxonName": "Mycosphaerella graminicola", 
 "^ot:treebaseOTUId": "Tl83235"
 }, 
 "otu210167": {
@@ -428,6 +521,8 @@
 }, 
 "otu210206": {
 "^ot:originalLabel": "Leptospora rubella DQ195792", 
+"^ot:ottId": 139335, 
+"^ot:ottTaxonName": "Leptospora rubella", 
 "^ot:treebaseOTUId": "Tl83275"
 }, 
 "otu210207": {
@@ -450,6 +545,8 @@
 }, 
 "otu210210": {
 "^ot:originalLabel": "Leptosphaeria macrospora DQ384092", 
+"^ot:ottId": 842111, 
+"^ot:ottTaxonName": "Paraleptosphaeria macrospora", 
 "^ot:treebaseOTUId": "Tl83280"
 }, 
 "otu210211": {
@@ -495,16 +592,20 @@
 ], 
 "treeById": {
 "tree1931": {
+"@label": "Untitled (tree1931)", 
 "@xsi:type": "nex:FloatTree", 
 "^ot:branchLengthDescription": "", 
 "^ot:branchLengthMode": "", 
 "^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "MP, LSU", 
 "^ot:inGroupClade": "node498371", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
 "^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node498369", 
 "^ot:specifiedRoot": "", 
 "^ot:tag": [], 
+"^ot:unrootedTree": true, 
 "edgeBySourceId": {
 "node498369": {
 "edge498370": {
@@ -1034,18 +1135,23 @@
 }
 }, 
 "tree1932": {
+"@label": "Fig. 2. Parsimony tree of bamboo isolates based on 385 bp of internal transcribed space (ITS)1\u20135.8S-ITS2 rDNA gene sequences.", 
 "@xsi:type": "nex:FloatTree", 
 "^ot:branchLengthDescription": "", 
-"^ot:branchLengthMode": "", 
-"^ot:branchLengthTimeUnit": "", 
-"^ot:curatedType": "MP, ITS", 
+"^ot:branchLengthMode": "ot:changesCount", 
+"^ot:branchLengthTimeUnit": "Myr", 
+"^ot:curatedType": "Maximum parsimony ", 
 "^ot:inGroupClade": "node498445", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
 "^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node498444", 
-"^ot:specifiedRoot": "", 
+"^ot:specifiedRoot": "node498444", 
 "^ot:tag": [
-"Choose me"
+"Choose me", 
+"ITS"
 ], 
+"^ot:unrootedTree": false, 
 "edgeBySourceId": {
 "node498444": {
 "edge498445": {
@@ -1494,85 +1600,110 @@
 "node498464": {}, 
 "node498465": {}, 
 "node498466": {
-"@otu": "otu210179"
+"@otu": "otu210179", 
+"^ot:isTaxonExemplar": false
 }, 
 "node498467": {
-"@otu": "otu210185"
+"@otu": "otu210185", 
+"^ot:isTaxonExemplar": false
 }, 
 "node498468": {
-"@otu": "otu210154"
+"@otu": "otu210154", 
+"^ot:isTaxonExemplar": false
 }, 
 "node498469": {
-"@otu": "otu210187"
+"@otu": "otu210187", 
+"^ot:isTaxonExemplar": false
 }, 
 "node498470": {
-"@otu": "otu210155"
+"@otu": "otu210155", 
+"^ot:isTaxonExemplar": false
 }, 
 "node498471": {
-"@otu": "otu210159"
+"@otu": "otu210159", 
+"^ot:isTaxonExemplar": false
 }, 
 "node498472": {
-"@otu": "otu210158"
+"@otu": "otu210158", 
+"^ot:isTaxonExemplar": false
 }, 
 "node498473": {
-"@otu": "otu210181"
+"@otu": "otu210181", 
+"^ot:isTaxonExemplar": false
 }, 
 "node498474": {
-"@otu": "otu210168"
+"@otu": "otu210168", 
+"^ot:isTaxonExemplar": false
 }, 
 "node498475": {
-"@otu": "otu210171"
+"@otu": "otu210171", 
+"^ot:isTaxonExemplar": false
 }, 
 "node498476": {
-"@otu": "otu210193"
+"@otu": "otu210193", 
+"^ot:isTaxonExemplar": false
 }, 
 "node498477": {
-"@otu": "otu210169"
+"@otu": "otu210169", 
+"^ot:isTaxonExemplar": false
 }, 
 "node498478": {
-"@otu": "otu210178"
+"@otu": "otu210178", 
+"^ot:isTaxonExemplar": false
 }, 
 "node498479": {
-"@otu": "otu210190"
+"@otu": "otu210190", 
+"^ot:isTaxonExemplar": false
 }, 
 "node498480": {
-"@otu": "otu210184"
+"@otu": "otu210184", 
+"^ot:isTaxonExemplar": false
 }, 
 "node498481": {
-"@otu": "otu210176"
+"@otu": "otu210176", 
+"^ot:isTaxonExemplar": false
 }, 
 "node498482": {
-"@otu": "otu210164"
+"@otu": "otu210164", 
+"^ot:isTaxonExemplar": true
 }, 
 "node498483": {}, 
 "node498484": {
-"@otu": "otu210182"
+"@otu": "otu210182", 
+"^ot:isTaxonExemplar": true
 }, 
 "node498485": {}, 
 "node498486": {
-"@otu": "otu210156"
+"@otu": "otu210156", 
+"^ot:isTaxonExemplar": false
 }, 
 "node498487": {}, 
 "node498488": {
-"@otu": "otu210165"
+"@otu": "otu210165", 
+"^ot:isTaxonExemplar": false
 }, 
 "node498489": {}, 
 "node498490": {
-"@otu": "otu210186"
+"@otu": "otu210186", 
+"^ot:isTaxonExemplar": false
 }, 
 "node498491": {
-"@otu": "otu210175"
+"@otu": "otu210175", 
+"^ot:isTaxonExemplar": false
 }, 
 "node498492": {}, 
 "node498493": {
-"@otu": "otu210174"
+"@otu": "otu210174", 
+"^ot:isTaxonExemplar": false
 }, 
 "node498494": {}, 
 "node498495": {
-"@otu": "otu210170"
+"@otu": "otu210170", 
+"^ot:isTaxonExemplar": false
 }, 
 "node498496": {
-"@otu": "otu210188"
+"@otu": "otu210188", 
+"^ot:isTaxonExemplar": false
 }, 
 "node498497": {}, 
 "node498498": {
@@ -1637,24 +1768,30 @@
 }, 
 "node498526": {}, 
 "node498527": {
-"@otu": "otu210157"
+"@otu": "otu210157", 
+"^ot:isTaxonExemplar": true
 }, 
 "node498528": {
-"@otu": "otu210166"
+"@otu": "otu210166", 
+"^ot:isTaxonExemplar": false
 }
 }
 }, 
 "tree1933": {
+"@label": "Untitled (tree1933)", 
 "@xsi:type": "nex:FloatTree", 
 "^ot:branchLengthDescription": "", 
 "^ot:branchLengthMode": "", 
 "^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "MP, b-tubulin", 
 "^ot:inGroupClade": "node498530", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
 "^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node498529", 
 "^ot:specifiedRoot": "", 
 "^ot:tag": [], 
+"^ot:unrootedTree": true, 
 "edgeBySourceId": {
 "node498529": {
 "edge498530": {

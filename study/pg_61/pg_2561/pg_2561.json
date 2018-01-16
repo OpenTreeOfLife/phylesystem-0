@@ -36,14 +36,93 @@
 }
 ]
 }
+}, 
+{
+"@description": "Web-based interface for submitting, editing, and reviewing studies in the Open Tree of Life project.", 
+"@id": "opentree-curation-webapp", 
+"@name": "OpenTree curation webapp", 
+"@url": "https://github.com/OpenTreeOfLife/opentree", 
+"@version": "0.0.0"
 }
 ]
 }, 
 "^ot:annotationEvents": {
-"annotation": []
+"annotation": [
+{
+"@dateCreated": "2014-07-17T18:52:59.122Z", 
+"@description": "Aids for mapping study OTUs to OTT taxa", 
+"@id": "otu-mapping-hints", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "OTU_MAPPING_HINTS", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"searchContext": {
+"$": "All life"
 }, 
-"^ot:candidateTreeForSynthesis": [], 
-"^ot:curatorName": "Laura Katz", 
+"substitutions": {
+"substitution": [
+{
+"@active": false, 
+"@valid": true, 
+"new": {
+"$": ""
+}, 
+"old": {
+"$": ""
+}
+}
+]
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}, 
+{
+"@dateCreated": "2014-07-17T18:52:59.122Z", 
+"@description": "Describes supporting data files for this study", 
+"@id": "supporting-files-metadata", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "SUPPORTING_FILE_INFO", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"@movedToPermanentArchive": false, 
+"files": {
+"file": []
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}
+]
+}, 
+"^ot:candidateTreeForSynthesis": [
+"tree5690"
+], 
+"^ot:comment": "", 
+"^ot:curatorName": [
+"Laura Katz", 
+"Dail Laughinghouse"
+], 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S1186"
 }, 
@@ -52,6 +131,7 @@
 "^ot:messages": {
 "message": []
 }, 
+"^ot:notIntendedForSynthesis": false, 
 "^ot:otusElementOrder": [
 "otus2561"
 ], 
@@ -59,7 +139,7 @@
 "^ot:studyPublication": {
 "@href": "http://dx.doi.org/10.1111/j.1529-8817.2004.03160.x"
 }, 
-"^ot:studyPublicationReference": "Cho, G., Lee S., & Boo S. 2004. A new brown algal order, Ishigeales (Phaeophyceae), established on the basis of plastid protein-coding rbcL, psaA, and psbA region comparisons. Journal of Phycology 40 (5): 921-936.", 
+"^ot:studyPublicationReference": "Ga Youn Cho, Sang Hee Lee, Sung Min Boo, 2004, 'A NEW BROWN ALGAL ORDER, ISHIGEALES (PHAEOPHYCEAE), ESTABLISHED ON THE BASIS OF PLASTID PROTEIN-CODING rbcL, psaA, AND psbA REGION COMPARISONS1', Journal of Phycology, vol. 40, no. 5, pp. 921-936", 
 "^ot:studyYear": 2004, 
 "^ot:tag": [], 
 "^ot:treesElementOrder": [
@@ -364,6 +444,8 @@
 }, 
 "otu373149": {
 "^ot:originalLabel": "Ectocarpus sp.", 
+"^ot:ottId": 48626, 
+"^ot:ottTaxonName": "Ectocarpus", 
 "^ot:treebaseOTUId": "Tl3392"
 }, 
 "otu373150": {
@@ -428,6 +510,8 @@
 }, 
 "otu373160": {
 "^ot:originalLabel": "Coelocladia arctica", 
+"^ot:ottId": 2837792, 
+"^ot:ottTaxonName": "Chondrocladia arctica", 
 "^ot:treebaseOTUId": "Tl60805"
 }, 
 "otu373161": {
@@ -516,15 +600,18 @@
 ], 
 "treeById": {
 "tree5688": {
+"@label": "Untitled (tree5688)", 
 "@xsi:type": "nex:FloatTree", 
 "^ot:branchLengthDescription": "", 
 "^ot:branchLengthMode": "", 
 "^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "Fig. 4", 
+"^ot:inGroupClade": "", 
 "^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node979727", 
 "^ot:specifiedRoot": "", 
 "^ot:tag": [], 
+"^ot:unrootedTree": true, 
 "edgeBySourceId": {
 "node979727": {
 "edge979728": {
@@ -1054,15 +1141,18 @@
 }
 }, 
 "tree5689": {
+"@label": "Untitled (tree5689)", 
 "@xsi:type": "nex:FloatTree", 
 "^ot:branchLengthDescription": "", 
 "^ot:branchLengthMode": "", 
 "^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "Fig. 2", 
+"^ot:inGroupClade": "", 
 "^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node979802", 
 "^ot:specifiedRoot": "", 
 "^ot:tag": [], 
+"^ot:unrootedTree": true, 
 "edgeBySourceId": {
 "node979802": {
 "edge979803": {
@@ -1592,15 +1682,17 @@
 }
 }, 
 "tree5690": {
+"@label": "Untitled (tree5690)", 
 "@xsi:type": "nex:FloatTree", 
 "^ot:branchLengthDescription": "", 
-"^ot:branchLengthMode": "", 
 "^ot:branchLengthTimeUnit": "", 
-"^ot:curatedType": "Fig. 1", 
+"^ot:curatedType": "Maximum likelihood ", 
+"^ot:inGroupClade": "node979883", 
 "^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node979877", 
-"^ot:specifiedRoot": "", 
+"^ot:specifiedRoot": "node979877", 
 "^ot:tag": [], 
+"^ot:unrootedTree": false, 
 "edgeBySourceId": {
 "node979877": {
 "edge979878": {
@@ -2526,10 +2618,12 @@
 }, 
 "node979993": {}, 
 "node979994": {
-"@otu": "otu373165"
+"@otu": "otu373165", 
+"^ot:isTaxonExemplar": true
 }, 
 "node979995": {
-"@otu": "otu373168"
+"@otu": "otu373168", 
+"^ot:isTaxonExemplar": false
 }, 
 "node979996": {}, 
 "node979997": {
@@ -2560,17 +2654,21 @@
 "node980008": {}, 
 "node980009": {}, 
 "node980010": {
-"@otu": "otu373152"
+"@otu": "otu373152", 
+"^ot:isTaxonExemplar": true
 }, 
 "node980011": {
-"@otu": "otu373143"
+"@otu": "otu373143", 
+"^ot:isTaxonExemplar": false
 }, 
 "node980012": {}, 
 "node980013": {
-"@otu": "otu373148"
+"@otu": "otu373148", 
+"^ot:isTaxonExemplar": true
 }, 
 "node980014": {
-"@otu": "otu373156"
+"@otu": "otu373156", 
+"^ot:isTaxonExemplar": false
 }, 
 "node980015": {
 "@otu": "otu373103"
@@ -2578,15 +2676,18 @@
 }
 }, 
 "tree5691": {
+"@label": "Untitled (tree5691)", 
 "@xsi:type": "nex:FloatTree", 
 "^ot:branchLengthDescription": "", 
 "^ot:branchLengthMode": "", 
 "^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "Fig. 3", 
+"^ot:inGroupClade": "", 
 "^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node980016", 
 "^ot:specifiedRoot": "", 
 "^ot:tag": [], 
+"^ot:unrootedTree": true, 
 "edgeBySourceId": {
 "node980016": {
 "edge980017": {

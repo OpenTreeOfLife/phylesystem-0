@@ -36,14 +36,92 @@
 }
 ]
 }
+}, 
+{
+"@description": "Web-based interface for submitting, editing, and reviewing studies in the Open Tree of Life project.", 
+"@id": "opentree-curation-webapp", 
+"@name": "OpenTree curation webapp", 
+"@url": "https://github.com/OpenTreeOfLife/opentree", 
+"@version": "0.0.0"
 }
 ]
 }, 
 "^ot:annotationEvents": {
-"annotation": []
+"annotation": [
+{
+"@dateCreated": "2014-07-17T19:32:14.764Z", 
+"@description": "Aids for mapping study OTUs to OTT taxa", 
+"@id": "otu-mapping-hints", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "OTU_MAPPING_HINTS", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"searchContext": {
+"$": "All life"
 }, 
-"^ot:candidateTreeForSynthesis": [], 
-"^ot:curatorName": "Dail Laughinghouse", 
+"substitutions": {
+"substitution": [
+{
+"@active": false, 
+"@valid": true, 
+"new": {
+"$": ""
+}, 
+"old": {
+"$": ""
+}
+}
+]
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}, 
+{
+"@dateCreated": "2014-07-17T19:32:14.764Z", 
+"@description": "Describes supporting data files for this study", 
+"@id": "supporting-files-metadata", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "SUPPORTING_FILE_INFO", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"@movedToPermanentArchive": false, 
+"files": {
+"file": []
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}
+]
+}, 
+"^ot:candidateTreeForSynthesis": [
+"tree6349"
+], 
+"^ot:comment": "", 
+"^ot:curatorName": [
+"Dail Laughinghouse"
+], 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S1405"
 }, 
@@ -52,6 +130,7 @@
 "^ot:messages": {
 "message": []
 }, 
+"^ot:notIntendedForSynthesis": false, 
 "^ot:otusElementOrder": [
 "otus2747"
 ], 
@@ -59,7 +138,7 @@
 "^ot:studyPublication": {
 "@href": "http://dx.doi.org/10.1007/s10750-005-0883-0"
 }, 
-"^ot:studyPublicationReference": "Uwai, S., Yotsukura N., Serisawa Y., Muraoka D., Hiraoka M., & Kogame K. 2006. Intraspecific genetic diversity of Undaria pinnatifida in Japan, based on the mitochondrial cox3 gene and the ITS1 of nrDNA. Hydrobiologia 553: 345-356.", 
+"^ot:studyPublicationReference": "S. Uwai, N. Yotsukura, Y. Serisawa, D. Muraoka, M. Hiraoka, K. Kogame, 2006, 'Intraspecific Genetic Diversity of Undaria pinnatifida in Japan, based on the Mitochondrial cox3 Gene and the ITS1 of nrDNA', Hydrobiologia, vol. 553, no. 1, pp. 345-356", 
 "^ot:studyYear": 2006, 
 "^ot:tag": [], 
 "^ot:treesElementOrder": [
@@ -398,31 +477,29 @@
 ], 
 "treeById": {
 "tree6349": {
+"@label": "Untitled (tree6349)", 
 "@xsi:type": "nex:FloatTree", 
 "^ot:branchLengthDescription": "", 
 "^ot:branchLengthMode": "ot:substitutionCount", 
 "^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "Fig. 3", 
-"^ot:inGroupClade": "node1105449", 
+"^ot:inGroupClade": "node1105457", 
 "^ot:outGroupEdge": "", 
-"^ot:rootNodeId": "node1105447", 
-"^ot:specifiedRoot": "", 
+"^ot:rootNodeId": "tree6349_ROOT", 
+"^ot:specifiedRoot": "tree6349_ROOT", 
 "^ot:tag": [], 
+"^ot:unrootedTree": false, 
 "edgeBySourceId": {
 "node1105447": {
 "edge1105448": {
 "@source": "node1105447", 
 "@target": "node1105448"
-}, 
-"edge1105449": {
-"@source": "node1105447", 
-"@target": "node1105449"
 }
 }, 
 "node1105449": {
-"edge1105450": {
+"edge1105449": {
 "@source": "node1105449", 
-"@target": "node1105450"
+"@target": "node1105447"
 }, 
 "edge1105465": {
 "@source": "node1105449", 
@@ -430,9 +507,9 @@
 }
 }, 
 "node1105450": {
-"edge1105451": {
+"edge1105450": {
 "@source": "node1105450", 
-"@target": "node1105451"
+"@target": "node1105449"
 }, 
 "edge1105460": {
 "@source": "node1105450", 
@@ -440,13 +517,13 @@
 }
 }, 
 "node1105451": {
+"edge1105451": {
+"@source": "node1105451", 
+"@target": "node1105450"
+}, 
 "edge1105452": {
 "@source": "node1105451", 
 "@target": "node1105452"
-}, 
-"edge1105457": {
-"@source": "node1105451", 
-"@target": "node1105457"
 }
 }, 
 "node1105452": {
@@ -470,13 +547,13 @@
 }
 }, 
 "node1105457": {
+"edge1105457": {
+"@source": "node1105457", 
+"@target": "node1105451"
+}, 
 "edge1105458": {
 "@source": "node1105457", 
 "@target": "node1105458"
-}, 
-"edge1105459": {
-"@source": "node1105457", 
-"@target": "node1105459"
 }
 }, 
 "node1105460": {
@@ -498,14 +575,23 @@
 "@source": "node1105461", 
 "@target": "node1105463"
 }
+}, 
+"tree6349_ROOT": {
+"edge1105459": {
+"@source": "tree6349_ROOT", 
+"@target": "node1105459"
+}, 
+"tree6349_ROOT_EDGE": {
+"@source": "tree6349_ROOT", 
+"@target": "node1105457"
+}
 }
 }, 
 "nodeById": {
-"node1105447": {
-"@root": true
-}, 
+"node1105447": {}, 
 "node1105448": {
-"@otu": "otu409853"
+"@otu": "otu409853", 
+"^ot:isTaxonExemplar": false
 }, 
 "node1105449": {}, 
 "node1105450": {}, 
@@ -513,17 +599,21 @@
 "node1105452": {}, 
 "node1105453": {}, 
 "node1105454": {
-"@otu": "otu409854"
+"@otu": "otu409854", 
+"^ot:isTaxonExemplar": true
 }, 
 "node1105455": {
-"@otu": "otu409858"
+"@otu": "otu409858", 
+"^ot:isTaxonExemplar": false
 }, 
 "node1105456": {
-"@otu": "otu409859"
+"@otu": "otu409859", 
+"^ot:isTaxonExemplar": false
 }, 
 "node1105457": {}, 
 "node1105458": {
-"@otu": "otu409861"
+"@otu": "otu409861", 
+"^ot:isTaxonExemplar": false
 }, 
 "node1105459": {
 "@otu": "otu409852"
@@ -531,20 +621,28 @@
 "node1105460": {}, 
 "node1105461": {}, 
 "node1105462": {
-"@otu": "otu409855"
+"@otu": "otu409855", 
+"^ot:isTaxonExemplar": false
 }, 
 "node1105463": {
-"@otu": "otu409856"
+"@otu": "otu409856", 
+"^ot:isTaxonExemplar": false
 }, 
 "node1105464": {
-"@otu": "otu409857"
+"@otu": "otu409857", 
+"^ot:isTaxonExemplar": false
 }, 
 "node1105465": {
-"@otu": "otu409860"
+"@otu": "otu409860", 
+"^ot:isTaxonExemplar": false
+}, 
+"tree6349_ROOT": {
+"@root": true
 }
 }
 }, 
 "tree6350": {
+"@label": "Untitled (tree6350)", 
 "@xsi:type": "nex:FloatTree", 
 "^ot:branchLengthDescription": "", 
 "^ot:branchLengthMode": "ot:substitutionCount", 
@@ -555,6 +653,7 @@
 "^ot:rootNodeId": "node1105466", 
 "^ot:specifiedRoot": "", 
 "^ot:tag": [], 
+"^ot:unrootedTree": true, 
 "edgeBySourceId": {
 "node1105466": {
 "edge1105467": {

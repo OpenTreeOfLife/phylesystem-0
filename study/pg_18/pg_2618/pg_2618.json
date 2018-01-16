@@ -15,16 +15,13 @@
 "^ot:agents": {
 "agent": [
 {
-"@description": "validator of NexSON constraints as well as constraints that would allow a study to be imported into the Open Tree of Life's phylogenetic synthesis tools", 
+"@description": "Open Tree NexSON validation", 
 "@id": "peyotl-validator", 
-"@name": "validate_ot_nexson.py", 
+"@name": "api.opentreeoflife.org/validate", 
 "@url": "https://github.com/OpenTreeOfLife/peyotl", 
 "@version": "0.0.4a", 
 "invocation": {
-"commandLine": [
-"--embed", 
-"--agent-only"
-], 
+"commandLine": [], 
 "otherProperty": [
 {
 "name": "pythonVersion", 
@@ -36,14 +33,93 @@
 }
 ]
 }
+}, 
+{
+"@description": "Web-based interface for submitting, editing, and reviewing studies in the Open Tree of Life project.", 
+"@id": "opentree-curation-webapp", 
+"@name": "OpenTree curation webapp", 
+"@url": "https://github.com/OpenTreeOfLife/opentree", 
+"@version": "0.0.0"
 }
 ]
 }, 
 "^ot:annotationEvents": {
-"annotation": []
+"annotation": [
+{
+"@dateCreated": "2014-07-28T18:57:53.016Z", 
+"@description": "Aids for mapping study OTUs to OTT taxa", 
+"@id": "otu-mapping-hints", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "OTU_MAPPING_HINTS", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"searchContext": {
+"$": "All life"
 }, 
-"^ot:candidateTreeForSynthesis": [], 
-"^ot:curatorName": "Laura Katz", 
+"substitutions": {
+"substitution": [
+{
+"@active": false, 
+"@valid": true, 
+"new": {
+"$": ""
+}, 
+"old": {
+"$": ""
+}
+}
+]
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}, 
+{
+"@dateCreated": "2014-07-28T18:57:53.016Z", 
+"@description": "Describes supporting data files for this study", 
+"@id": "supporting-files-metadata", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "SUPPORTING_FILE_INFO", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"@movedToPermanentArchive": false, 
+"files": {
+"file": []
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}
+]
+}, 
+"^ot:candidateTreeForSynthesis": [
+"tree6130"
+], 
+"^ot:comment": "", 
+"^ot:curatorName": [
+"Laura Katz", 
+"Dail Laughinghouse"
+], 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S11241"
 }, 
@@ -52,11 +128,15 @@
 "^ot:messages": {
 "message": []
 }, 
+"^ot:notIntendedForSynthesis": false, 
 "^ot:otusElementOrder": [
 "otus2618"
 ], 
 "^ot:studyId": "pg_2618", 
-"^ot:studyPublicationReference": "Craveiro S.C., Calado A.J., Daugbjerg N., Hansen G., & Moestrup ?. 2011. Ultrastructure and LSU rDNA-based Phylogeny of Peridinium lomnickii and Description of Chimonodinium gen. nov. (Dinophyceae). Protist, .", 
+"^ot:studyPublication": {
+"@href": "http://dx.doi.org/10.1016/j.protis.2011.03.003"
+}, 
+"^ot:studyPublicationReference": "Sandra C. Craveiro, Ant\u00f3nio J. Calado, Niels Daugbjerg, Gert Hansen, \u00d8jvind Moestrup, 2011, 'Ultrastructure and LSU rDNA-based Phylogeny of Peridinium lomnickii and Description of Chimonodinium gen. nov. (Dinophyceae)', Protist, vol. 162, no. 4, pp. 590-615", 
 "^ot:studyYear": 2011, 
 "^ot:tag": [], 
 "^ot:treesElementOrder": [
@@ -85,6 +165,8 @@
 }, 
 "otu392067": {
 "^ot:originalLabel": "Tyrannodinium berolinense", 
+"^ot:ottId": 866729, 
+"^ot:ottTaxonName": "Tyrannodinium berolinense", 
 "^ot:treebaseOTUId": "Tl472148"
 }, 
 "otu392068": {
@@ -113,6 +195,8 @@
 }, 
 "otu392072": {
 "^ot:originalLabel": "Baldinia anauniensis", 
+"^ot:ottId": 4036333, 
+"^ot:ottTaxonName": "Baldinia anauniensis", 
 "^ot:treebaseOTUId": "Tl472153"
 }, 
 "otu392073": {
@@ -233,6 +317,8 @@
 }, 
 "otu392093": {
 "^ot:originalLabel": "Borghiella tenuissima", 
+"^ot:ottId": 4038281, 
+"^ot:ottTaxonName": "Borghiella tenuissima", 
 "^ot:treebaseOTUId": "Tl472174"
 }, 
 "otu392094": {
@@ -399,6 +485,8 @@
 }, 
 "otu392121": {
 "^ot:originalLabel": "Peridiniella catenata", 
+"^ot:ottId": 4035177, 
+"^ot:ottTaxonName": "Peridiniella catenata", 
 "^ot:treebaseOTUId": "Tl472202"
 }, 
 "otu392122": {
@@ -425,26 +513,24 @@
 ], 
 "treeById": {
 "tree6129": {
+"@label": "Untitled (tree6129)", 
 "@xsi:type": "nex:FloatTree", 
 "^ot:branchLengthDescription": "", 
 "^ot:branchLengthMode": "", 
 "^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "Unrooted tree", 
+"^ot:inGroupClade": "", 
 "^ot:outGroupEdge": "", 
-"^ot:rootNodeId": "node1046707", 
-"^ot:specifiedRoot": "", 
+"^ot:rootNodeId": "tree6129_ROOT", 
+"^ot:specifiedRoot": "tree6129_ROOT", 
 "^ot:tag": [], 
+"^ot:unrootedTree": true, 
 "edgeBySourceId": {
 "node1046707": {
 "edge1046708": {
 "@length": 0.0698075, 
 "@source": "node1046707", 
 "@target": "node1046708"
-}, 
-"edge1046711": {
-"@length": 0.0698075, 
-"@source": "node1046707", 
-"@target": "node1046711"
 }
 }, 
 "node1046708": {
@@ -460,22 +546,22 @@
 }
 }, 
 "node1046711": {
+"edge1046711": {
+"@length": 0.0698075, 
+"@source": "node1046711", 
+"@target": "node1046707"
+}, 
 "edge1046712": {
 "@length": 0.058075, 
 "@source": "node1046711", 
 "@target": "node1046712"
-}, 
-"edge1046713": {
-"@length": 0.019888, 
-"@source": "node1046711", 
-"@target": "node1046713"
 }
 }, 
 "node1046713": {
-"edge1046714": {
-"@length": 0.017406, 
+"edge1046713": {
+"@length": 0.019888, 
 "@source": "node1046713", 
-"@target": "node1046714"
+"@target": "node1046711"
 }, 
 "edge1046717": {
 "@length": 0.023785, 
@@ -484,10 +570,10 @@
 }
 }, 
 "node1046714": {
-"edge1046715": {
-"@length": 0.122477, 
+"edge1046714": {
+"@length": 0.017406, 
 "@source": "node1046714", 
-"@target": "node1046715"
+"@target": "node1046713"
 }, 
 "edge1046716": {
 "@length": 0.096267, 
@@ -590,12 +676,21 @@
 "@source": "node1046731", 
 "@target": "node1046733"
 }
+}, 
+"tree6129_ROOT": {
+"edge1046715": {
+"@length": 0.122477, 
+"@source": "tree6129_ROOT", 
+"@target": "node1046715"
+}, 
+"tree6129_ROOT_EDGE": {
+"@source": "tree6129_ROOT", 
+"@target": "node1046714"
+}
 }
 }, 
 "nodeById": {
-"node1046707": {
-"@root": true
-}, 
+"node1046707": {}, 
 "node1046708": {}, 
 "node1046709": {
 "@otu": "otu392080"
@@ -649,26 +744,26 @@
 }, 
 "node1046733": {
 "@otu": "otu392095"
+}, 
+"tree6129_ROOT": {
+"@root": true
 }
 }
 }, 
 "tree6130": {
+"@label": "Untitled (tree6130)", 
 "@xsi:type": "nex:FloatTree", 
 "^ot:branchLengthDescription": "", 
-"^ot:branchLengthMode": "", 
 "^ot:branchLengthTimeUnit": "", 
-"^ot:curatedType": "Rooted tree", 
+"^ot:curatedType": "Bayesian inference ", 
+"^ot:inGroupClade": "node1046754", 
 "^ot:outGroupEdge": "", 
-"^ot:rootNodeId": "node1046734", 
-"^ot:specifiedRoot": "", 
+"^ot:rootNodeId": "tree6130_ROOT", 
+"^ot:specifiedRoot": "tree6130_ROOT", 
 "^ot:tag": [], 
+"^ot:unrootedTree": false, 
 "edgeBySourceId": {
 "node1046734": {
-"edge1046735": {
-"@length": 0.1340985, 
-"@source": "node1046734", 
-"@target": "node1046735"
-}, 
 "edge1046742": {
 "@length": 0.1340985, 
 "@source": "node1046734", 
@@ -676,10 +771,10 @@
 }
 }, 
 "node1046735": {
-"edge1046736": {
-"@length": 0.01874, 
+"edge1046735": {
+"@length": 0.1340985, 
 "@source": "node1046735", 
-"@target": "node1046736"
+"@target": "node1046734"
 }, 
 "edge1046739": {
 "@length": 0.217411, 
@@ -688,10 +783,10 @@
 }
 }, 
 "node1046736": {
-"edge1046737": {
-"@length": 0.407032, 
+"edge1046736": {
+"@length": 0.01874, 
 "@source": "node1046736", 
-"@target": "node1046737"
+"@target": "node1046735"
 }, 
 "edge1046738": {
 "@length": 0.256571, 
@@ -1357,12 +1452,21 @@
 "@source": "node1046850", 
 "@target": "node1046852"
 }
+}, 
+"tree6130_ROOT": {
+"edge1046737": {
+"@length": 0.407032, 
+"@source": "tree6130_ROOT", 
+"@target": "node1046737"
+}, 
+"tree6130_ROOT_EDGE": {
+"@source": "tree6130_ROOT", 
+"@target": "node1046736"
+}
 }
 }, 
 "nodeById": {
-"node1046734": {
-"@root": true
-}, 
+"node1046734": {}, 
 "node1046735": {}, 
 "node1046736": {}, 
 "node1046737": {
@@ -1588,7 +1692,8 @@
 }, 
 "node1046846": {}, 
 "node1046847": {
-"@otu": "otu392114"
+"@otu": "otu392114", 
+"^ot:isTaxonExemplar": true
 }, 
 "node1046848": {}, 
 "node1046849": {
@@ -1596,10 +1701,14 @@
 }, 
 "node1046850": {}, 
 "node1046851": {
-"@otu": "otu392099"
+"@otu": "otu392099", 
+"^ot:isTaxonExemplar": false
 }, 
 "node1046852": {
 "@otu": "otu392104"
+}, 
+"tree6130_ROOT": {
+"@root": true
 }
 }
 }

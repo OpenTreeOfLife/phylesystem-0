@@ -33,18 +33,99 @@
 }
 ]
 }
+}, 
+{
+"@description": "Web-based interface for submitting, editing, and reviewing studies in the Open Tree of Life project.", 
+"@id": "opentree-curation-webapp", 
+"@name": "OpenTree curation webapp", 
+"@url": "https://github.com/OpenTreeOfLife/opentree", 
+"@version": "0.0.0"
 }
 ]
 }, 
 "^ot:annotationEvents": {
-"annotation": []
+"annotation": [
+{
+"@dateCreated": "2015-09-30T16:23:01.618Z", 
+"@description": "Aids for mapping study OTUs to OTT taxa", 
+"@id": "otu-mapping-hints", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "OTU_MAPPING_HINTS", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"searchContext": {
+"$": "All life"
 }, 
-"^ot:curatorName": "Romina Gazis", 
+"substitutions": {
+"substitution": [
+{
+"@active": false, 
+"@valid": true, 
+"new": {
+"$": ""
+}, 
+"old": {
+"$": ""
+}
+}
+]
+}, 
+"useFuzzyMatching": false
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}, 
+{
+"@dateCreated": "2015-09-30T16:23:01.618Z", 
+"@description": "Describes supporting data files for this study", 
+"@id": "supporting-files-metadata", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "SUPPORTING_FILE_INFO", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"@movedToPermanentArchive": false, 
+"files": {
+"file": []
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}
+]
+}, 
+"^ot:candidateTreeForSynthesis": [
+"tree546"
+], 
+"^ot:comment": "", 
+"^ot:curatorName": [
+"Romina Gazis"
+], 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S1385"
 }, 
 "^ot:focalClade": 261674, 
 "^ot:focalCladeOTTTaxonName": "Regiocrella", 
+"^ot:notIntendedForSynthesis": false, 
 "^ot:otusElementOrder": [
 "otus432"
 ], 
@@ -54,9 +135,14 @@
 }, 
 "^ot:studyPublicationReference": "Chaverri, Priscila, Joseph F. Bischoff, Harry C. Evans, and Kathie T. Hodge. \"Regiocrella, a new entomopathogenic genus with a pycnidial anamorph and its phylogenetic placement in the Clavicipitaceae.\" Mycologia 97, no. 6 (2005): 1225-1237.", 
 "^ot:studyYear": 2005, 
+"^ot:tag": [], 
 "^ot:treesElementOrder": [
 "trees432"
 ], 
+"^xhtml:license": {
+"@href": "http://creativecommons.org/publicdomain/zero/1.0/", 
+"@name": "CC0"
+}, 
 "otusById": {
 "otus432": {
 "otuById": {
@@ -86,6 +172,8 @@
 }, 
 "otu87678": {
 "^ot:originalLabel": "Hypocrea lutea", 
+"^ot:ottId": 935193, 
+"^ot:ottTaxonName": "Hypocrea lutea", 
 "^ot:treebaseOTUId": "Tl160970"
 }, 
 "otu87679": {
@@ -120,6 +208,8 @@
 }, 
 "otu87684": {
 "^ot:originalLabel": "Hypocrea rufa", 
+"^ot:ottId": 939823, 
+"^ot:ottTaxonName": "Hypocrea rufa", 
 "^ot:treebaseOTUId": "Tl160981"
 }, 
 "otu87685": {
@@ -223,10 +313,22 @@
 ], 
 "treeById": {
 "tree546": {
+"@label": "FIG. 1. Relationships of representative clavicipitaceous genera based on Bayesian inference (50% majority rule consensus tree of the combined LSU, TEF, and RPB1 data sets).", 
 "@xsi:type": "nex:FloatTree", 
-"^ot:curatedType": "BI, LSU + RPB1 + EF-1", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "ot:changesCount", 
+"^ot:branchLengthTimeUnit": "Myr", 
+"^ot:curatedType": "Bayesian inference ", 
 "^ot:inGroupClade": "node226490", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node226487", 
+"^ot:specifiedRoot": "node226487", 
+"^ot:tag": [
+"LSU + RPB1 + EF-1"
+], 
+"^ot:unrootedTree": false, 
 "edgeBySourceId": {
 "node226487": {
 "edge226488": {
@@ -494,7 +596,8 @@
 }, 
 "node226495": {}, 
 "node226496": {
-"@otu": "otu87692"
+"@otu": "otu87692", 
+"^ot:isTaxonExemplar": true
 }, 
 "node226497": {}, 
 "node226498": {
@@ -537,7 +640,8 @@
 }, 
 "node226516": {}, 
 "node226517": {
-"@otu": "otu87693"
+"@otu": "otu87693", 
+"^ot:isTaxonExemplar": false
 }, 
 "node226518": {}, 
 "node226519": {}, 

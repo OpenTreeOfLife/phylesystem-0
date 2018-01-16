@@ -36,22 +36,109 @@
 }
 ]
 }
+}, 
+{
+"@description": "Web-based interface for submitting, editing, and reviewing studies in the Open Tree of Life project.", 
+"@id": "opentree-curation-webapp", 
+"@name": "OpenTree curation webapp", 
+"@url": "https://github.com/OpenTreeOfLife/opentree", 
+"@version": "0.0.0"
 }
 ]
 }, 
 "^ot:annotationEvents": {
-"annotation": []
+"annotation": [
+{
+"@dateCreated": "2015-09-28T17:39:00.018Z", 
+"@description": "Aids for mapping study OTUs to OTT taxa", 
+"@id": "otu-mapping-hints", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "OTU_MAPPING_HINTS", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"searchContext": {
+"$": "All life"
 }, 
-"^ot:candidateTreeForSynthesis": [], 
-"^ot:curatorName": "Romina Gazis", 
+"substitutions": {
+"substitution": [
+{
+"@active": false, 
+"@valid": true, 
+"new": {
+"$": ""
+}, 
+"old": {
+"$": ""
+}
+}, 
+{
+"@active": true, 
+"@valid": true, 
+"new": {
+"$": "$1"
+}, 
+"old": {
+"$": "^(\\S*\\s+\\S*).*"
+}
+}
+]
+}, 
+"useFuzzyMatching": true
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}, 
+{
+"@dateCreated": "2015-09-28T17:39:00.018Z", 
+"@description": "Describes supporting data files for this study", 
+"@id": "supporting-files-metadata", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "SUPPORTING_FILE_INFO", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"@movedToPermanentArchive": false, 
+"files": {
+"file": []
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}
+]
+}, 
+"^ot:candidateTreeForSynthesis": [
+"tree743"
+], 
+"^ot:comment": "", 
+"^ot:curatorName": [
+"Romina Gazis"
+], 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S10749"
 }, 
 "^ot:focalClade": 838968, 
 "^ot:focalCladeOTTTaxonName": "Fusarium", 
-"^ot:messages": {
-"message": []
-}, 
+"^ot:notIntendedForSynthesis": false, 
 "^ot:otusElementOrder": [
 "otus525"
 ], 
@@ -65,6 +152,10 @@
 "^ot:treesElementOrder": [
 "trees525"
 ], 
+"^xhtml:license": {
+"@href": "http://creativecommons.org/publicdomain/zero/1.0/", 
+"@name": "CC0"
+}, 
 "otusById": {
 "otus525": {
 "otuById": {
@@ -142,6 +233,8 @@
 }, 
 "otu167238": {
 "^ot:originalLabel": "Fusarium subglutinans MUCL 52468", 
+"^ot:ottId": 5317102, 
+"^ot:ottTaxonName": "Gibberella fujikuroi", 
 "^ot:treebaseOTUId": "Tl396466"
 }, 
 "otu167239": {
@@ -176,6 +269,8 @@
 }, 
 "otu167244": {
 "^ot:originalLabel": "Fusarium verticillioides", 
+"^ot:ottId": 736624, 
+"^ot:ottTaxonName": "Fusarium verticillioides", 
 "^ot:treebaseOTUId": "Tl396472"
 }, 
 "otu167245": {
@@ -216,6 +311,8 @@
 }, 
 "otu167251": {
 "^ot:originalLabel": "Fusarium subglutinans", 
+"^ot:ottId": 5317102, 
+"^ot:ottTaxonName": "Gibberella fujikuroi", 
 "^ot:treebaseOTUId": "Tl396479"
 }, 
 "otu167252": {
@@ -238,6 +335,8 @@
 }, 
 "otu167255": {
 "^ot:originalLabel": "Fusarium nygamai", 
+"^ot:ottId": 5495351, 
+"^ot:ottTaxonName": "Fusarium nygamai", 
 "^ot:treebaseOTUId": "Tl396483"
 }, 
 "otu167256": {
@@ -335,19 +434,24 @@
 ], 
 "treeById": {
 "tree743": {
+"@label": "FIG. 2. Bayesian inference tree based on partial sequences of \u03b2-tubulin (\u2212lnL = 1753.49) and EF-1\u03b1 (\u2212lnL = 3244.22) loci.", 
 "@xsi:type": "nex:FloatTree", 
 "^ot:branchLengthDescription": "", 
-"^ot:branchLengthMode": "", 
-"^ot:branchLengthTimeUnit": "", 
-"^ot:curatedType": "BI, b-tubulin + EF-1", 
+"^ot:branchLengthMode": "ot:changesCount", 
+"^ot:branchLengthTimeUnit": "Myr", 
+"^ot:curatedType": "Bayesian inference ", 
 "^ot:inGroupClade": "node332260", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
 "^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node332257", 
-"^ot:specifiedRoot": "", 
+"^ot:specifiedRoot": "node332257", 
 "^ot:tag": [
 "BI", 
-"b-tub"
+"b-tub", 
+"EF-1"
 ], 
+"^ot:unrootedTree": false, 
 "edgeBySourceId": {
 "node332257": {
 "edge332258": {
@@ -836,29 +940,37 @@
 "node332266": {}, 
 "node332267": {}, 
 "node332268": {
-"@otu": "otu167239"
+"@otu": "otu167239", 
+"^ot:isTaxonExemplar": false
 }, 
 "node332269": {
-"@otu": "otu167268"
+"@otu": "otu167268", 
+"^ot:isTaxonExemplar": false
 }, 
 "node332270": {
-"@otu": "otu167236"
+"@otu": "otu167236", 
+"^ot:isTaxonExemplar": false
 }, 
 "node332271": {
-"@otu": "otu167247"
+"@otu": "otu167247", 
+"^ot:isTaxonExemplar": false
 }, 
 "node332272": {
-"@otu": "otu167254"
+"@otu": "otu167254", 
+"^ot:isTaxonExemplar": false
 }, 
 "node332273": {}, 
 "node332274": {
-"@otu": "otu167258"
+"@otu": "otu167258", 
+"^ot:isTaxonExemplar": false
 }, 
 "node332275": {
-"@otu": "otu167233"
+"@otu": "otu167233", 
+"^ot:isTaxonExemplar": false
 }, 
 "node332276": {
-"@otu": "otu167235"
+"@otu": "otu167235", 
+"^ot:isTaxonExemplar": true
 }, 
 "node332277": {
 "@otu": "otu167243"
@@ -867,10 +979,12 @@
 "node332279": {}, 
 "node332280": {}, 
 "node332281": {
-"@otu": "otu167251"
+"@otu": "otu167251", 
+"^ot:isTaxonExemplar": true
 }, 
 "node332282": {
-"@otu": "otu167238"
+"@otu": "otu167238", 
+"^ot:isTaxonExemplar": false
 }, 
 "node332283": {}, 
 "node332284": {

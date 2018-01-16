@@ -36,22 +36,101 @@
 }
 ]
 }
+}, 
+{
+"@description": "Web-based interface for submitting, editing, and reviewing studies in the Open Tree of Life project.", 
+"@id": "opentree-curation-webapp", 
+"@name": "OpenTree curation webapp", 
+"@url": "https://github.com/OpenTreeOfLife/opentree", 
+"@version": "0.0.0"
 }
 ]
 }, 
 "^ot:annotationEvents": {
-"annotation": []
+"annotation": [
+{
+"@dateCreated": "2015-09-19T14:10:00.981Z", 
+"@description": "Aids for mapping study OTUs to OTT taxa", 
+"@id": "otu-mapping-hints", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "OTU_MAPPING_HINTS", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"searchContext": {
+"$": "Tetrapods"
 }, 
-"^ot:candidateTreeForSynthesis": [], 
-"^ot:curatorName": "Chris Owen", 
+"substitutions": {
+"substitution": [
+{
+"@active": false, 
+"@valid": true, 
+"new": {
+"$": ""
+}, 
+"old": {
+"$": ""
+}
+}
+]
+}, 
+"useFuzzyMatching": false
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}, 
+{
+"@dateCreated": "2015-09-19T14:10:00.980Z", 
+"@description": "Describes supporting data files for this study", 
+"@id": "supporting-files-metadata", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "SUPPORTING_FILE_INFO", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"@movedToPermanentArchive": false, 
+"files": {
+"file": []
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}
+]
+}, 
+"^ot:candidateTreeForSynthesis": [
+"tree3231"
+], 
+"^ot:comment": "Looks like the Fig 2 tree from TreeBASE doesn't match the Figure in the article. See [https://github.com/OpenTreeOfLife/feedback/issues/89]() . Emailed authors re:discrepancy. ", 
+"^ot:curatorName": [
+"Chris Owen", 
+"Karen Cranston", 
+"Joseph W. Brown"
+], 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S12186"
 }, 
 "^ot:focalClade": 913935, 
 "^ot:focalCladeOTTTaxonName": "Primates", 
-"^ot:messages": {
-"message": []
-}, 
+"^ot:notIntendedForSynthesis": false, 
 "^ot:otusElementOrder": [
 "otus1600"
 ], 
@@ -430,6 +509,8 @@
 }, 
 "otu264534": {
 "^ot:originalLabel": "Tarsius bancanus TBA 1", 
+"^ot:ottId": 339050, 
+"^ot:ottTaxonName": "Tarsius bancanus", 
 "^ot:treebaseOTUId": "Tl677579"
 }, 
 "otu264535": {
@@ -476,6 +557,8 @@
 }, 
 "otu264542": {
 "^ot:originalLabel": "Tarsius syrichta TSY 1", 
+"^ot:ottId": 339031, 
+"^ot:ottTaxonName": "Tarsius syrichta", 
 "^ot:treebaseOTUId": "Tl677587"
 }, 
 "otu264543": {
@@ -1221,16 +1304,20 @@
 ], 
 "treeById": {
 "tree3231": {
+"@label": "Garli ML tree", 
 "@xsi:type": "nex:FloatTree", 
 "^ot:branchLengthDescription": "", 
 "^ot:branchLengthMode": "ot:substitutionCount", 
-"^ot:branchLengthTimeUnit": "", 
-"^ot:curatedType": "Garli ML tree", 
-"^ot:inGroupClade": "node653017", 
+"^ot:branchLengthTimeUnit": "Myr", 
+"^ot:curatedType": "Maximum likelihood ", 
+"^ot:inGroupClade": "node653018", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
 "^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node653015", 
-"^ot:specifiedRoot": "", 
+"^ot:specifiedRoot": "node653015", 
 "^ot:tag": [], 
+"^ot:unrootedTree": false, 
 "edgeBySourceId": {
 "node653015": {
 "edge653016": {
@@ -4179,10 +4266,12 @@
 "node653350": {}, 
 "node653351": {}, 
 "node653352": {
-"@otu": "otu264509"
+"@otu": "otu264509", 
+"^ot:isTaxonExemplar": true
 }, 
 "node653353": {
-"@otu": "otu264636"
+"@otu": "otu264636", 
+"^ot:isTaxonExemplar": false
 }, 
 "node653354": {
 "@otu": "otu264476"

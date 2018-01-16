@@ -36,20 +36,108 @@
 }
 ]
 }
+}, 
+{
+"@description": "Web-based interface for submitting, editing, and reviewing studies in the Open Tree of Life project.", 
+"@id": "opentree-curation-webapp", 
+"@name": "OpenTree curation webapp", 
+"@url": "https://github.com/OpenTreeOfLife/opentree", 
+"@version": "0.0.0"
 }
 ]
 }, 
 "^ot:annotationEvents": {
-"annotation": []
+"annotation": [
+{
+"@dateCreated": "2015-09-24T14:08:12.944Z", 
+"@description": "Aids for mapping study OTUs to OTT taxa", 
+"@id": "otu-mapping-hints", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "OTU_MAPPING_HINTS", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"searchContext": {
+"$": "All life"
 }, 
-"^ot:candidateTreeForSynthesis": [], 
-"^ot:curatorName": "Romina Gazis", 
+"substitutions": {
+"substitution": [
+{
+"@active": false, 
+"@valid": true, 
+"new": {
+"$": ""
+}, 
+"old": {
+"$": ""
+}
+}, 
+{
+"@active": true, 
+"@valid": true, 
+"new": {
+"$": "$1"
+}, 
+"old": {
+"$": "^(\\S*\\s+\\S*).*"
+}
+}
+]
+}, 
+"useFuzzyMatching": true
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}, 
+{
+"@dateCreated": "2015-09-24T14:08:12.943Z", 
+"@description": "Describes supporting data files for this study", 
+"@id": "supporting-files-metadata", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "SUPPORTING_FILE_INFO", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"@movedToPermanentArchive": false, 
+"files": {
+"file": []
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}
+]
+}, 
+"^ot:candidateTreeForSynthesis": [
+"tree761"
+], 
+"^ot:comment": "", 
+"^ot:curatorName": [
+"Romina Gazis"
+], 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S11183"
 }, 
-"^ot:messages": {
-"message": []
-}, 
+"^ot:focalCladeOTTTaxonName": "", 
+"^ot:notIntendedForSynthesis": false, 
 "^ot:otusElementOrder": [
 "otus529"
 ], 
@@ -63,6 +151,10 @@
 "^ot:treesElementOrder": [
 "trees529"
 ], 
+"^xhtml:license": {
+"@href": "http://creativecommons.org/publicdomain/zero/1.0/", 
+"@name": "CC0"
+}, 
 "otusById": {
 "otus529": {
 "otuById": {
@@ -122,6 +214,8 @@
 }, 
 "otu167858": {
 "^ot:originalLabel": "Periglandula ipomoeae IasaredF01 HQ702612", 
+"^ot:ottId": 747979, 
+"^ot:ottTaxonName": "Periglandula ipomoeae", 
 "^ot:treebaseOTUId": "Tl462563"
 }, 
 "otu167859": {
@@ -210,6 +304,8 @@
 }, 
 "otu167873": {
 "^ot:originalLabel": "Verticillium catenulatum AY555910", 
+"^ot:ottId": 55994, 
+"^ot:ottTaxonName": "Metacordyceps chlamydosporia", 
 "^ot:treebaseOTUId": "Tl462578"
 }, 
 "otu167874": {
@@ -238,10 +334,14 @@
 }, 
 "otu167878": {
 "^ot:originalLabel": "Periglandula turbinae TcorF01 HQ702610", 
+"^ot:ottId": 4927865, 
+"^ot:ottTaxonName": "Periglandula turbinae", 
 "^ot:treebaseOTUId": "Tl462583"
 }, 
 "otu167879": {
 "^ot:originalLabel": "Periglandula ipomoeae IasaF13 HQ702611", 
+"^ot:ottId": 747979, 
+"^ot:ottTaxonName": "Periglandula ipomoeae", 
 "^ot:treebaseOTUId": "Tl462584"
 }, 
 "otu167880": {
@@ -294,14 +394,20 @@
 }, 
 "otu167888": {
 "^ot:originalLabel": "Periglandula turbinae TcorF01 HQ702604", 
+"^ot:ottId": 4927865, 
+"^ot:ottTaxonName": "Periglandula turbinae", 
 "^ot:treebaseOTUId": "Tl462593"
 }, 
 "otu167889": {
 "^ot:originalLabel": "Periglandula ipomoeae IasaF13 HQ702605", 
+"^ot:ottId": 747979, 
+"^ot:ottTaxonName": "Periglandula ipomoeae", 
 "^ot:treebaseOTUId": "Tl462594"
 }, 
 "otu167890": {
 "^ot:originalLabel": "Periglandula ipomoeae IasaredF01 HQ702606", 
+"^ot:ottId": 747979, 
+"^ot:ottTaxonName": "Periglandula ipomoeae", 
 "^ot:treebaseOTUId": "Tl462595"
 }, 
 "otu167891": {
@@ -360,6 +466,8 @@
 }, 
 "otu167900": {
 "^ot:originalLabel": "Periglandula ipomoeae IasaredF01 HQ702615", 
+"^ot:ottId": 747979, 
+"^ot:ottTaxonName": "Periglandula ipomoeae", 
 "^ot:treebaseOTUId": "Tl467758"
 }, 
 "otu167901": {
@@ -382,6 +490,8 @@
 }, 
 "otu167904": {
 "^ot:originalLabel": "Periglandula ipomoeae IasaF13 HQ702614", 
+"^ot:ottId": 747979, 
+"^ot:ottTaxonName": "Periglandula ipomoeae", 
 "^ot:treebaseOTUId": "Tl467762"
 }, 
 "otu167905": {
@@ -404,6 +514,8 @@
 }, 
 "otu167908": {
 "^ot:originalLabel": "Pseudonectria rousseliana AY489598", 
+"^ot:ottId": 282351, 
+"^ot:ottTaxonName": "Pseudonectria buxi", 
 "^ot:treebaseOTUId": "Tl467766"
 }, 
 "otu167909": {
@@ -450,10 +562,14 @@
 }, 
 "otu167916": {
 "^ot:originalLabel": "Hypocrea lutea AY489592", 
+"^ot:ottId": 935193, 
+"^ot:ottTaxonName": "Hypocrea lutea", 
 "^ot:treebaseOTUId": "Tl467774"
 }, 
 "otu167917": {
 "^ot:originalLabel": "Periglandula turbinae TcorF01 HQ702613", 
+"^ot:ottId": 4927865, 
+"^ot:ottTaxonName": "Periglandula turbinae", 
 "^ot:treebaseOTUId": "Tl467775"
 }
 }
@@ -463,360 +579,25 @@
 "trees529": {
 "@otus": "otus529", 
 "^ot:treeElementOrder": [
-"tree759", 
 "tree760", 
 "tree761"
 ], 
 "treeById": {
-"tree759": {
-"@xsi:type": "nex:FloatTree", 
-"^ot:branchLengthDescription": "", 
-"^ot:branchLengthMode": "", 
-"^ot:branchLengthTimeUnit": "", 
-"^ot:curatedType": "ML, atp6", 
-"^ot:outGroupEdge": "", 
-"^ot:rootNodeId": "node333556", 
-"^ot:specifiedRoot": "", 
-"^ot:tag": [], 
-"edgeBySourceId": {
-"node333556": {
-"edge333557": {
-"@length": 0.4724, 
-"@source": "node333556", 
-"@target": "node333557"
-}, 
-"edge333558": {
-"@length": 0.00096, 
-"@source": "node333556", 
-"@target": "node333558"
-}
-}, 
-"node333558": {
-"edge333559": {
-"@length": 0.0426, 
-"@source": "node333558", 
-"@target": "node333559"
-}, 
-"edge333596": {
-"@length": 0.1328, 
-"@source": "node333558", 
-"@target": "node333596"
-}
-}, 
-"node333559": {
-"edge333560": {
-"@length": 0.03853, 
-"@source": "node333559", 
-"@target": "node333560"
-}, 
-"edge333593": {
-"@length": 0.01592, 
-"@source": "node333559", 
-"@target": "node333593"
-}
-}, 
-"node333560": {
-"edge333561": {
-"@length": 0.1469, 
-"@source": "node333560", 
-"@target": "node333561"
-}, 
-"edge333562": {
-"@length": 0.02513, 
-"@source": "node333560", 
-"@target": "node333562"
-}
-}, 
-"node333562": {
-"edge333563": {
-"@length": 0.06953, 
-"@source": "node333562", 
-"@target": "node333563"
-}, 
-"edge333564": {
-"@length": 0.03356, 
-"@source": "node333562", 
-"@target": "node333564"
-}
-}, 
-"node333564": {
-"edge333565": {
-"@length": 0.0429, 
-"@source": "node333564", 
-"@target": "node333565"
-}, 
-"edge333588": {
-"@length": 0.03665, 
-"@source": "node333564", 
-"@target": "node333588"
-}
-}, 
-"node333565": {
-"edge333566": {
-"@length": 0.1066, 
-"@source": "node333565", 
-"@target": "node333566"
-}, 
-"edge333567": {
-"@length": 0.01357, 
-"@source": "node333565", 
-"@target": "node333567"
-}
-}, 
-"node333567": {
-"edge333568": {
-"@length": 0.1864, 
-"@source": "node333567", 
-"@target": "node333568"
-}, 
-"edge333573": {
-"@length": 0.08139, 
-"@source": "node333567", 
-"@target": "node333573"
-}
-}, 
-"node333568": {
-"edge333569": {
-"@length": 0.00105, 
-"@source": "node333568", 
-"@target": "node333569"
-}, 
-"edge333570": {
-"@length": 0.0615, 
-"@source": "node333568", 
-"@target": "node333570"
-}
-}, 
-"node333570": {
-"edge333571": {
-"@length": 0.0272, 
-"@source": "node333570", 
-"@target": "node333571"
-}, 
-"edge333572": {
-"@length": 0.01412, 
-"@source": "node333570", 
-"@target": "node333572"
-}
-}, 
-"node333573": {
-"edge333574": {
-"@length": 0.00953, 
-"@source": "node333573", 
-"@target": "node333574"
-}, 
-"edge333587": {
-"@length": 0.02047, 
-"@source": "node333573", 
-"@target": "node333587"
-}
-}, 
-"node333574": {
-"edge333575": {
-"@length": 0.0175, 
-"@source": "node333574", 
-"@target": "node333575"
-}, 
-"edge333576": {
-"@length": 0.00719, 
-"@source": "node333574", 
-"@target": "node333576"
-}
-}, 
-"node333576": {
-"edge333577": {
-"@length": 0.00336, 
-"@source": "node333576", 
-"@target": "node333577"
-}, 
-"edge333584": {
-"@length": 0.00869, 
-"@source": "node333576", 
-"@target": "node333584"
-}
-}, 
-"node333577": {
-"edge333578": {
-"@length": 0.00175, 
-"@source": "node333577", 
-"@target": "node333578"
-}, 
-"edge333583": {
-"@length": 0.04303, 
-"@source": "node333577", 
-"@target": "node333583"
-}
-}, 
-"node333578": {
-"edge333579": {
-"@length": 0.00128, 
-"@source": "node333578", 
-"@target": "node333579"
-}, 
-"edge333582": {
-"@length": 0.0159, 
-"@source": "node333578", 
-"@target": "node333582"
-}
-}, 
-"node333579": {
-"edge333580": {
-"@source": "node333579", 
-"@target": "node333580"
-}, 
-"edge333581": {
-"@source": "node333579", 
-"@target": "node333581"
-}
-}, 
-"node333584": {
-"edge333585": {
-"@length": 0.1642, 
-"@source": "node333584", 
-"@target": "node333585"
-}, 
-"edge333586": {
-"@length": 0.02233, 
-"@source": "node333584", 
-"@target": "node333586"
-}
-}, 
-"node333588": {
-"edge333589": {
-"@length": 0.01442, 
-"@source": "node333588", 
-"@target": "node333589"
-}, 
-"edge333592": {
-"@length": 0.04671, 
-"@source": "node333588", 
-"@target": "node333592"
-}
-}, 
-"node333589": {
-"edge333590": {
-"@length": 0.0026, 
-"@source": "node333589", 
-"@target": "node333590"
-}, 
-"edge333591": {
-"@length": 0.02999, 
-"@source": "node333589", 
-"@target": "node333591"
-}
-}, 
-"node333593": {
-"edge333594": {
-"@length": 0.05616, 
-"@source": "node333593", 
-"@target": "node333594"
-}, 
-"edge333595": {
-"@length": 0.05708, 
-"@source": "node333593", 
-"@target": "node333595"
-}
-}
-}, 
-"nodeById": {
-"node333556": {
-"@root": true
-}, 
-"node333557": {
-"@otu": "otu167903"
-}, 
-"node333558": {}, 
-"node333559": {}, 
-"node333560": {}, 
-"node333561": {
-"@otu": "otu167906"
-}, 
-"node333562": {}, 
-"node333563": {
-"@otu": "otu167916"
-}, 
-"node333564": {}, 
-"node333565": {}, 
-"node333566": {
-"@otu": "otu167899"
-}, 
-"node333567": {}, 
-"node333568": {}, 
-"node333569": {
-"@otu": "otu167902"
-}, 
-"node333570": {}, 
-"node333571": {
-"@otu": "otu167914"
-}, 
-"node333572": {
-"@otu": "otu167911"
-}, 
-"node333573": {}, 
-"node333574": {}, 
-"node333575": {
-"@otu": "otu167907"
-}, 
-"node333576": {}, 
-"node333577": {}, 
-"node333578": {}, 
-"node333579": {}, 
-"node333580": {
-"@otu": "otu167900"
-}, 
-"node333581": {
-"@otu": "otu167904"
-}, 
-"node333582": {
-"@otu": "otu167917"
-}, 
-"node333583": {
-"@otu": "otu167915"
-}, 
-"node333584": {}, 
-"node333585": {
-"@otu": "otu167905"
-}, 
-"node333586": {
-"@otu": "otu167913"
-}, 
-"node333587": {
-"@otu": "otu167909"
-}, 
-"node333588": {}, 
-"node333589": {}, 
-"node333590": {
-"@otu": "otu167912"
-}, 
-"node333591": {
-"@otu": "otu167901"
-}, 
-"node333592": {
-"@otu": "otu167898"
-}, 
-"node333593": {}, 
-"node333594": {
-"@otu": "otu167908"
-}, 
-"node333595": {
-"@otu": "otu167897"
-}, 
-"node333596": {
-"@otu": "otu167910"
-}
-}
-}, 
 "tree760": {
+"@label": "Untitled (tree760)", 
 "@xsi:type": "nex:FloatTree", 
 "^ot:branchLengthDescription": "", 
-"^ot:branchLengthMode": "", 
-"^ot:branchLengthTimeUnit": "", 
+"^ot:branchLengthMode": "ot:undefined", 
+"^ot:branchLengthTimeUnit": "Myr", 
 "^ot:curatedType": "ML, b-tubulin", 
 "^ot:inGroupClade": "node333607", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
 "^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node333597", 
 "^ot:specifiedRoot": "", 
 "^ot:tag": [], 
+"^ot:unrootedTree": true, 
 "edgeBySourceId": {
 "node333597": {
 "edge333598": {
@@ -1048,16 +829,22 @@
 }
 }, 
 "tree761": {
+"@label": "Fig. 5. Maximum likelihood phylogeny inferred from alignment of rpbA sequences for Periglandula species, representatives of Hypocreales. Midpoint root is at the left edge. Values indicated at nodes are aLTR support values.", 
 "@xsi:type": "nex:FloatTree", 
 "^ot:branchLengthDescription": "", 
-"^ot:branchLengthMode": "", 
-"^ot:branchLengthTimeUnit": "", 
-"^ot:curatedType": "ML, RPBA", 
+"^ot:branchLengthMode": "ot:undefined", 
+"^ot:branchLengthTimeUnit": "Myr", 
+"^ot:curatedType": "Maximum likelihood ", 
 "^ot:inGroupClade": "node333627", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
 "^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node333626", 
-"^ot:specifiedRoot": "", 
-"^ot:tag": [], 
+"^ot:specifiedRoot": "node333626", 
+"^ot:tag": [
+"RPB2"
+], 
+"^ot:unrootedTree": false, 
 "edgeBySourceId": {
 "node333626": {
 "edge333627": {
@@ -1514,10 +1301,12 @@
 "node333661": {}, 
 "node333662": {}, 
 "node333663": {
-"@otu": "otu167879"
+"@otu": "otu167879", 
+"^ot:isTaxonExemplar": true
 }, 
 "node333664": {
-"@otu": "otu167858"
+"@otu": "otu167858", 
+"^ot:isTaxonExemplar": false
 }, 
 "node333665": {
 "@otu": "otu167878"

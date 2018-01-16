@@ -36,19 +36,99 @@
 }
 ]
 }
+}, 
+{
+"@description": "Web-based interface for submitting, editing, and reviewing studies in the Open Tree of Life project.", 
+"@id": "opentree-curation-webapp", 
+"@name": "OpenTree curation webapp", 
+"@url": "https://github.com/OpenTreeOfLife/opentree", 
+"@version": "0.0.0"
 }
 ]
 }, 
 "^ot:annotationEvents": {
-"annotation": []
+"annotation": [
+{
+"@dateCreated": "2014-07-01T16:47:06.545Z", 
+"@description": "Aids for mapping study OTUs to OTT taxa", 
+"@id": "otu-mapping-hints", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "OTU_MAPPING_HINTS", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"searchContext": {
+"$": "Birds"
 }, 
-"^ot:candidateTreeForSynthesis": [], 
-"^ot:curatorName": "Joseph Brown", 
+"substitutions": {
+"substitution": [
+{
+"@active": false, 
+"@valid": true, 
+"new": {
+"$": ""
+}, 
+"old": {
+"$": ""
+}
+}
+]
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}, 
+{
+"@dateCreated": "2014-07-01T16:47:06.545Z", 
+"@description": "Describes supporting data files for this study", 
+"@id": "supporting-files-metadata", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "SUPPORTING_FILE_INFO", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"@movedToPermanentArchive": false, 
+"files": {
+"file": []
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}
+]
+}, 
+"^ot:candidateTreeForSynthesis": [
+"tree6024"
+], 
+"^ot:comment": "Many duplicated taxa between Basileuterus and Myiothlypis. (JWB)", 
+"^ot:curatorName": [
+"Joseph Brown", 
+"Joseph W. Brown"
+], 
+"^ot:dataDeposit": {
+"@href": ""
+}, 
 "^ot:focalClade": 3599390, 
 "^ot:focalCladeOTTTaxonName": "Parulidae", 
-"^ot:messages": {
-"message": []
-}, 
+"^ot:notIntendedForSynthesis": false, 
 "^ot:otusElementOrder": [
 "otus2591"
 ], 
@@ -652,16 +732,20 @@
 ], 
 "treeById": {
 "tree6008": {
+"@label": "MrBayes MCC tree", 
 "@xsi:type": "nex:FloatTree", 
 "^ot:branchLengthDescription": "", 
 "^ot:branchLengthMode": "ot:substitutionCount", 
-"^ot:branchLengthTimeUnit": "", 
-"^ot:curatedType": "MrBayes MCC tree", 
+"^ot:branchLengthTimeUnit": "Myr", 
+"^ot:curatedType": "Bayesian inference ", 
 "^ot:inGroupClade": "node1020866", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
 "^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node1020850", 
-"^ot:specifiedRoot": "", 
+"^ot:specifiedRoot": "node1020850", 
 "^ot:tag": [], 
+"^ot:unrootedTree": false, 
 "edgeBySourceId": {
 "node1020850": {
 "edge1020851": {
@@ -2137,10 +2221,12 @@
 "node1020925": {}, 
 "node1020926": {}, 
 "node1020927": {
-"@otu": "otu381439"
+"@otu": "otu381439", 
+"^ot:isTaxonExemplar": true
 }, 
 "node1020928": {
-"@otu": "otu381440"
+"@otu": "otu381440", 
+"^ot:isTaxonExemplar": false
 }, 
 "node1020929": {
 "@otu": "otu381441"
@@ -2157,10 +2243,12 @@
 }, 
 "node1020934": {}, 
 "node1020935": {
-"@otu": "otu381445"
+"@otu": "otu381445", 
+"^ot:isTaxonExemplar": true
 }, 
 "node1020936": {
-"@otu": "otu381446"
+"@otu": "otu381446", 
+"^ot:isTaxonExemplar": false
 }, 
 "node1020937": {}, 
 "node1020938": {}, 
@@ -2449,16 +2537,20 @@
 }
 }, 
 "tree6024": {
+"@label": "r8s chronogram", 
 "@xsi:type": "nex:FloatTree", 
 "^ot:branchLengthDescription": "", 
 "^ot:branchLengthMode": "ot:time", 
 "^ot:branchLengthTimeUnit": "Myr", 
 "^ot:curatedType": "r8s", 
 "^ot:inGroupClade": "node1032151", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
 "^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node1032150", 
 "^ot:specifiedRoot": "", 
 "^ot:tag": [], 
+"^ot:unrootedTree": true, 
 "edgeBySourceId": {
 "node1032150": {
 "edge1032151": {
@@ -3969,10 +4061,12 @@
 "node1032225": {}, 
 "node1032226": {}, 
 "node1032227": {
-"@otu": "otu381440"
+"@otu": "otu381440", 
+"^ot:isTaxonExemplar": true
 }, 
 "node1032228": {
-"@otu": "otu381439"
+"@otu": "otu381439", 
+"^ot:isTaxonExemplar": false
 }, 
 "node1032229": {
 "@otu": "otu381441"
@@ -3989,10 +4083,12 @@
 }, 
 "node1032234": {}, 
 "node1032235": {
-"@otu": "otu381445"
+"@otu": "otu381445", 
+"^ot:isTaxonExemplar": true
 }, 
 "node1032236": {
-"@otu": "otu381446"
+"@otu": "otu381446", 
+"^ot:isTaxonExemplar": false
 }, 
 "node1032237": {}, 
 "node1032238": {}, 

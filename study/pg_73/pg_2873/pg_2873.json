@@ -36,19 +36,102 @@
 }
 ]
 }
+}, 
+{
+"@description": "Web-based interface for submitting, editing, and reviewing studies in the Open Tree of Life project.", 
+"@id": "opentree-curation-webapp", 
+"@name": "OpenTree curation webapp", 
+"@url": "https://github.com/OpenTreeOfLife/opentree", 
+"@version": "0.0.0"
 }
 ]
 }, 
 "^ot:annotationEvents": {
-"annotation": []
+"annotation": [
+{
+"@dateCreated": "2014-07-29T16:21:23.109Z", 
+"@description": "Aids for mapping study OTUs to OTT taxa", 
+"@id": "otu-mapping-hints", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "OTU_MAPPING_HINTS", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"searchContext": {
+"$": "Birds"
 }, 
-"^ot:candidateTreeForSynthesis": [], 
-"^ot:curatorName": "Joseph Brown", 
+"substitutions": {
+"substitution": [
+{
+"@active": false, 
+"@valid": true, 
+"new": {
+"$": ""
+}, 
+"old": {
+"$": ""
+}
+}
+]
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}, 
+{
+"@dateCreated": "2014-07-29T16:21:23.109Z", 
+"@description": "Describes supporting data files for this study", 
+"@id": "supporting-files-metadata", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "SUPPORTING_FILE_INFO", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"@movedToPermanentArchive": false, 
+"files": {
+"file": []
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}
+]
+}, 
+"^ot:candidateTreeForSynthesis": [
+"tree6666"
+], 
+"^ot:comment": "", 
+"^ot:curatorName": [
+"Joseph Brown", 
+"Joseph W. Brown"
+], 
+"^ot:dataDeposit": {
+"@href": ""
+}, 
 "^ot:focalClade": 467879, 
 "^ot:focalCladeOTTTaxonName": "Certhia", 
 "^ot:messages": {
 "message": []
 }, 
+"^ot:notIntendedForSynthesis": false, 
 "^ot:otusElementOrder": [
 "otus2873"
 ], 
@@ -131,25 +214,24 @@
 ], 
 "treeById": {
 "tree6666": {
+"@label": "Fig. 1", 
 "@xsi:type": "nex:FloatTree", 
 "^ot:branchLengthDescription": "", 
-"^ot:branchLengthMode": "", 
 "^ot:branchLengthTimeUnit": "", 
-"^ot:curatedType": "Fig. 1 ML", 
-"^ot:inGroupClade": "node1162116", 
+"^ot:curatedType": "Maximum likelihood ", 
+"^ot:inGroupClade": "node1162115", 
+"^ot:nearestTaxonMRCAName": "Certhia", 
+"^ot:nearestTaxonMRCAOttId": "467879", 
 "^ot:outGroupEdge": "", 
-"^ot:rootNodeId": "node1162115", 
-"^ot:specifiedRoot": "", 
+"^ot:rootNodeId": "tree6666_ROOT", 
+"^ot:specifiedRoot": "tree6666_ROOT", 
 "^ot:tag": [], 
+"^ot:unrootedTree": false, 
 "edgeBySourceId": {
 "node1162115": {
 "edge1162116": {
 "@source": "node1162115", 
 "@target": "node1162116"
-}, 
-"edge1162132": {
-"@source": "node1162115", 
-"@target": "node1162132"
 }
 }, 
 "node1162116": {
@@ -235,12 +317,20 @@
 "@source": "node1162132", 
 "@target": "node1162134"
 }
+}, 
+"tree6666_ROOT": {
+"edge1162132": {
+"@source": "tree6666_ROOT", 
+"@target": "node1162115"
+}, 
+"tree6666_ROOT_EDGE": {
+"@source": "tree6666_ROOT", 
+"@target": "node1162132"
+}
 }
 }, 
 "nodeById": {
-"node1162115": {
-"@root": true
-}, 
+"node1162115": {}, 
 "node1162116": {}, 
 "node1162117": {}, 
 "node1162118": {}, 
@@ -281,6 +371,9 @@
 }, 
 "node1162134": {
 "@otu": "otu427125"
+}, 
+"tree6666_ROOT": {
+"@root": true
 }
 }
 }

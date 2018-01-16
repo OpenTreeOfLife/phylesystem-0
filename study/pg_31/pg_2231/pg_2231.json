@@ -36,22 +36,109 @@
 }
 ]
 }
+}, 
+{
+"@description": "Web-based interface for submitting, editing, and reviewing studies in the Open Tree of Life project.", 
+"@id": "opentree-curation-webapp", 
+"@name": "OpenTree curation webapp", 
+"@url": "https://github.com/OpenTreeOfLife/opentree", 
+"@version": "0.0.0"
 }
 ]
 }, 
 "^ot:annotationEvents": {
-"annotation": []
+"annotation": [
+{
+"@dateCreated": "2015-09-29T14:57:51.286Z", 
+"@description": "Aids for mapping study OTUs to OTT taxa", 
+"@id": "otu-mapping-hints", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "OTU_MAPPING_HINTS", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"searchContext": {
+"$": "All life"
 }, 
-"^ot:candidateTreeForSynthesis": [], 
-"^ot:curatorName": "Romina Gazis", 
+"substitutions": {
+"substitution": [
+{
+"@active": false, 
+"@valid": true, 
+"new": {
+"$": ""
+}, 
+"old": {
+"$": ""
+}
+}, 
+{
+"@active": true, 
+"@valid": true, 
+"new": {
+"$": "$1"
+}, 
+"old": {
+"$": "^(\\S*\\s+\\S*).*"
+}
+}
+]
+}, 
+"useFuzzyMatching": true
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}, 
+{
+"@dateCreated": "2015-09-29T14:57:51.286Z", 
+"@description": "Describes supporting data files for this study", 
+"@id": "supporting-files-metadata", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "SUPPORTING_FILE_INFO", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"@movedToPermanentArchive": false, 
+"files": {
+"file": []
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}
+]
+}, 
+"^ot:candidateTreeForSynthesis": [
+"tree4713"
+], 
+"^ot:comment": "", 
+"^ot:curatorName": [
+"Romina Gazis"
+], 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S10217"
 }, 
 "^ot:focalClade": 352914, 
 "^ot:focalCladeOTTTaxonName": "Fungi", 
-"^ot:messages": {
-"message": []
-}, 
+"^ot:notIntendedForSynthesis": true, 
 "^ot:otusElementOrder": [
 "otus2231"
 ], 
@@ -61,10 +148,17 @@
 }, 
 "^ot:studyPublicationReference": "Bushley K., & Turgeon B. 2010. Phylogenomics reveals subfamilies of fungal nonribosomal peptide synthetases and their evolutionary relationships. BMC Evolutionary Biology, 10(26).", 
 "^ot:studyYear": 2010, 
-"^ot:tag": [], 
+"^ot:tag": [
+"gene tree", 
+"multiple copies"
+], 
 "^ot:treesElementOrder": [
 "trees2231"
 ], 
+"^xhtml:license": {
+"@href": "http://creativecommons.org/publicdomain/zero/1.0/", 
+"@name": "CC0"
+}, 
 "otusById": {
 "otus2231": {
 "otuById": {
@@ -118,6 +212,8 @@
 }, 
 "otu323008": {
 "^ot:originalLabel": "Aspergillus nidulans ACVS AN2621.4 A1 3", 
+"^ot:ottId": 5459582, 
+"^ot:ottTaxonName": "Aspergillus nidulans", 
 "^ot:treebaseOTUId": "Tl273764"
 }, 
 "otu323009": {
@@ -128,6 +224,8 @@
 }, 
 "otu323010": {
 "^ot:originalLabel": "Nostoc sp. NcpA AAO23333.1 A3 3", 
+"^ot:ottId": 893787, 
+"^ot:ottTaxonName": "Nostoc", 
 "^ot:treebaseOTUId": "Tl273766"
 }, 
 "otu323011": {
@@ -150,6 +248,8 @@
 }, 
 "otu323014": {
 "^ot:originalLabel": "Aspergillus nidulans AN1242.4 A4 4", 
+"^ot:ottId": 5459582, 
+"^ot:ottTaxonName": "Aspergillus nidulans", 
 "^ot:treebaseOTUId": "Tl273770"
 }, 
 "otu323015": {
@@ -160,6 +260,8 @@
 }, 
 "otu323016": {
 "^ot:originalLabel": "Fusarium graminearum NPS6 FGSG03747.3 A1 1", 
+"^ot:ottId": 264388, 
+"^ot:ottTaxonName": "Gibberella zeae", 
 "^ot:treebaseOTUId": "Tl273772"
 }, 
 "otu323017": {
@@ -200,6 +302,8 @@
 }, 
 "otu323023": {
 "^ot:originalLabel": "Fusarium graminearum FGSG02394.3 A1 2", 
+"^ot:ottId": 264388, 
+"^ot:ottTaxonName": "Gibberella zeae", 
 "^ot:treebaseOTUId": "Tl273779"
 }, 
 "otu323024": {
@@ -300,10 +404,14 @@
 }, 
 "otu323040": {
 "^ot:originalLabel": "Fusarium graminearum FG13783.3 A2 7", 
+"^ot:ottId": 264388, 
+"^ot:ottTaxonName": "Gibberella zeae", 
 "^ot:treebaseOTUId": "Tl273796"
 }, 
 "otu323041": {
 "^ot:originalLabel": "Nostoc sp. NcpA AAO23333.1 A1 3", 
+"^ot:ottId": 893787, 
+"^ot:ottTaxonName": "Nostoc", 
 "^ot:treebaseOTUId": "Tl273797"
 }, 
 "otu323042": {
@@ -314,6 +422,8 @@
 }, 
 "otu323043": {
 "^ot:originalLabel": "Aspergillus nidulans ACVS AN2621.4 A2 3", 
+"^ot:ottId": 5459582, 
+"^ot:ottTaxonName": "Aspergillus nidulans", 
 "^ot:treebaseOTUId": "Tl273799"
 }, 
 "otu323044": {
@@ -360,6 +470,8 @@
 }, 
 "otu323051": {
 "^ot:originalLabel": "Nostoc sp. NcpA AAO23333.1 A2 3", 
+"^ot:ottId": 893787, 
+"^ot:ottTaxonName": "Nostoc", 
 "^ot:treebaseOTUId": "Tl273807"
 }, 
 "otu323052": {
@@ -400,6 +512,8 @@
 }, 
 "otu323058": {
 "^ot:originalLabel": "Fusarium graminearum AAR FGSG06041.3 A1 1", 
+"^ot:ottId": 264388, 
+"^ot:ottTaxonName": "Gibberella zeae", 
 "^ot:treebaseOTUId": "Tl273814"
 }, 
 "otu323059": {
@@ -476,6 +590,8 @@
 }, 
 "otu323071": {
 "^ot:originalLabel": "Pseudomonsa aeruginosa PvdL AAG05812.1 A2 3", 
+"^ot:ottId": 5342023, 
+"^ot:ottTaxonName": "Pseudomonas aeruginosa", 
 "^ot:treebaseOTUId": "Tl273827"
 }, 
 "otu323072": {
@@ -546,6 +662,8 @@
 }, 
 "otu323083": {
 "^ot:originalLabel": "Pseudomonsa aeruginosa PvdL AAG05812.1 A3 3", 
+"^ot:ottId": 5342023, 
+"^ot:ottTaxonName": "Pseudomonas aeruginosa", 
 "^ot:treebaseOTUId": "Tl273839"
 }, 
 "otu323084": {
@@ -556,6 +674,8 @@
 }, 
 "otu323085": {
 "^ot:originalLabel": "Trichoderma reesii Trire2 58285 A1 1", 
+"^ot:ottId": 500701, 
+"^ot:ottTaxonName": "Trichoderma reesei", 
 "^ot:treebaseOTUId": "Tl273841"
 }, 
 "otu323086": {
@@ -566,6 +686,8 @@
 }, 
 "otu323087": {
 "^ot:originalLabel": "Esterichia coli EntF AAA92015.1 A1 1", 
+"^ot:ottId": 5251867, 
+"^ot:ottTaxonName": "Escherichia coli", 
 "^ot:treebaseOTUId": "Tl273843"
 }, 
 "otu323088": {
@@ -576,6 +698,8 @@
 }, 
 "otu323089": {
 "^ot:originalLabel": "Fusarium graminearum FGSG05372.3 A1 3", 
+"^ot:ottId": 264388, 
+"^ot:ottTaxonName": "Gibberella zeae", 
 "^ot:treebaseOTUId": "Tl273845"
 }, 
 "otu323090": {
@@ -610,10 +734,14 @@
 }, 
 "otu323095": {
 "^ot:originalLabel": "Aspergillus nidulans AN1242.4 A2 4", 
+"^ot:ottId": 5459582, 
+"^ot:ottTaxonName": "Aspergillus nidulans", 
 "^ot:treebaseOTUId": "Tl273851"
 }, 
 "otu323096": {
 "^ot:originalLabel": "Fusarium graminearum FGSG05372.3 A2 3", 
+"^ot:ottId": 264388, 
+"^ot:ottTaxonName": "Gibberella zeae", 
 "^ot:treebaseOTUId": "Tl273852"
 }, 
 "otu323097": {
@@ -636,14 +764,20 @@
 }, 
 "otu323100": {
 "^ot:originalLabel": "Aspergillus nidulans SidC AN0607.4 A1 3", 
+"^ot:ottId": 5459582, 
+"^ot:ottTaxonName": "Aspergillus nidulans", 
 "^ot:treebaseOTUId": "Tl273856"
 }, 
 "otu323101": {
 "^ot:originalLabel": "Fusarium graminearum CPS1 FGSG06631.3 A1 2", 
+"^ot:ottId": 264388, 
+"^ot:ottTaxonName": "Gibberella zeae", 
 "^ot:treebaseOTUId": "Tl273857"
 }, 
 "otu323102": {
 "^ot:originalLabel": "Aspergillus nidulans AN1242.4 A1 4", 
+"^ot:ottId": 5459582, 
+"^ot:ottTaxonName": "Aspergillus nidulans", 
 "^ot:treebaseOTUId": "Tl273858"
 }, 
 "otu323103": {
@@ -666,6 +800,8 @@
 }, 
 "otu323106": {
 "^ot:originalLabel": "Pseudomonsa aeruginosa PvdI AAX16297.1 A1 4", 
+"^ot:ottId": 5342023, 
+"^ot:ottTaxonName": "Pseudomonas aeruginosa", 
 "^ot:treebaseOTUId": "Tl273862"
 }, 
 "otu323107": {
@@ -682,6 +818,8 @@
 }, 
 "otu323109": {
 "^ot:originalLabel": "Fusarium graminearum FG13783.3 A1 7", 
+"^ot:ottId": 264388, 
+"^ot:ottTaxonName": "Gibberella zeae", 
 "^ot:treebaseOTUId": "Tl273865"
 }, 
 "otu323110": {
@@ -704,6 +842,8 @@
 }, 
 "otu323113": {
 "^ot:originalLabel": "Epichloe festuca PerA BAE06845.1 A2 2", 
+"^ot:ottId": 137209, 
+"^ot:ottTaxonName": "Epichloe festucae", 
 "^ot:treebaseOTUId": "Tl273869"
 }, 
 "otu323114": {
@@ -738,6 +878,8 @@
 }, 
 "otu323119": {
 "^ot:originalLabel": "Fusarium graminearum FGSG05372.3 A3 3", 
+"^ot:ottId": 264388, 
+"^ot:ottTaxonName": "Gibberella zeae", 
 "^ot:treebaseOTUId": "Tl273875"
 }, 
 "otu323120": {
@@ -748,6 +890,8 @@
 }, 
 "otu323121": {
 "^ot:originalLabel": "Fusarium graminearum OCHRA FGSG10617.3 A1 1", 
+"^ot:ottId": 264388, 
+"^ot:ottTaxonName": "Gibberella zeae", 
 "^ot:treebaseOTUId": "Tl273877"
 }, 
 "otu323122": {
@@ -806,6 +950,8 @@
 }, 
 "otu323131": {
 "^ot:originalLabel": "Fusarium graminearum FGSG03245.3 A1 1", 
+"^ot:ottId": 264388, 
+"^ot:ottTaxonName": "Gibberella zeae", 
 "^ot:treebaseOTUId": "Tl273887"
 }, 
 "otu323132": {
@@ -822,6 +968,8 @@
 }, 
 "otu323134": {
 "^ot:originalLabel": "Pspeudomonas aeruginosa PchE AAD55800.1 A1 1", 
+"^ot:ottId": 5342023, 
+"^ot:ottTaxonName": "Pseudomonas aeruginosa", 
 "^ot:treebaseOTUId": "Tl273890"
 }, 
 "otu323135": {
@@ -856,6 +1004,8 @@
 }, 
 "otu323140": {
 "^ot:originalLabel": "Pseudomonsa aeruginosa PvdI AAX16297.1 A3 4", 
+"^ot:ottId": 5342023, 
+"^ot:ottTaxonName": "Pseudomonas aeruginosa", 
 "^ot:treebaseOTUId": "Tl273896"
 }, 
 "otu323141": {
@@ -956,6 +1106,8 @@
 }, 
 "otu323157": {
 "^ot:originalLabel": "Aspergillus nidulans AN10576.4 A1 1", 
+"^ot:ottId": 5459582, 
+"^ot:ottTaxonName": "Aspergillus nidulans", 
 "^ot:treebaseOTUId": "Tl273913"
 }, 
 "otu323158": {
@@ -978,6 +1130,8 @@
 }, 
 "otu323161": {
 "^ot:originalLabel": "Aspergillus nidulans SidC AN0607.4 A3 3", 
+"^ot:ottId": 5459582, 
+"^ot:ottTaxonName": "Aspergillus nidulans", 
 "^ot:treebaseOTUId": "Tl273917"
 }, 
 "otu323162": {
@@ -988,6 +1142,8 @@
 }, 
 "otu323163": {
 "^ot:originalLabel": "Fusarium graminearum FG13783.3 A7 7", 
+"^ot:ottId": 264388, 
+"^ot:ottTaxonName": "Gibberella zeae", 
 "^ot:treebaseOTUId": "Tl273919"
 }, 
 "otu323164": {
@@ -1010,6 +1166,8 @@
 }, 
 "otu323167": {
 "^ot:originalLabel": "Fusarium graminearum CPS1 FGSG06631.3 A2 2", 
+"^ot:ottId": 264388, 
+"^ot:ottTaxonName": "Gibberella zeae", 
 "^ot:treebaseOTUId": "Tl273923"
 }, 
 "otu323168": {
@@ -1020,6 +1178,8 @@
 }, 
 "otu323169": {
 "^ot:originalLabel": "Aspergillus nidulans SidC AN0607.4 A2 3", 
+"^ot:ottId": 5459582, 
+"^ot:ottTaxonName": "Aspergillus nidulans", 
 "^ot:treebaseOTUId": "Tl273925"
 }, 
 "otu323170": {
@@ -1030,6 +1190,8 @@
 }, 
 "otu323171": {
 "^ot:originalLabel": "Fusarium graminearum FGSG11989.3 A1 1", 
+"^ot:ottId": 264388, 
+"^ot:ottTaxonName": "Gibberella zeae", 
 "^ot:treebaseOTUId": "Tl273927"
 }, 
 "otu323172": {
@@ -1040,6 +1202,8 @@
 }, 
 "otu323173": {
 "^ot:originalLabel": "Fusarium graminearum FG13783.3 A4 7", 
+"^ot:ottId": 264388, 
+"^ot:ottTaxonName": "Gibberella zeae", 
 "^ot:treebaseOTUId": "Tl273929"
 }, 
 "otu323174": {
@@ -1050,6 +1214,8 @@
 }, 
 "otu323175": {
 "^ot:originalLabel": "Pseudomonsa aeruginosa PvdI AAX16297.1 A2 4", 
+"^ot:ottId": 5342023, 
+"^ot:ottTaxonName": "Pseudomonas aeruginosa", 
 "^ot:treebaseOTUId": "Tl273931"
 }, 
 "otu323176": {
@@ -1156,6 +1322,8 @@
 }, 
 "otu323193": {
 "^ot:originalLabel": "Pseudomonsa aeruginosa PvdL AAG05812.1 A1 3", 
+"^ot:ottId": 5342023, 
+"^ot:ottTaxonName": "Pseudomonas aeruginosa", 
 "^ot:treebaseOTUId": "Tl273949"
 }, 
 "otu323194": {
@@ -1196,6 +1364,8 @@
 }, 
 "otu323200": {
 "^ot:originalLabel": "Fusarium graminearum FGSG11294.3 A1 1", 
+"^ot:ottId": 264388, 
+"^ot:ottTaxonName": "Gibberella zeae", 
 "^ot:treebaseOTUId": "Tl273956"
 }, 
 "otu323201": {
@@ -1212,6 +1382,8 @@
 }, 
 "otu323203": {
 "^ot:originalLabel": "Fusarium graminearum FG13783.3 A3 7", 
+"^ot:ottId": 264388, 
+"^ot:ottTaxonName": "Gibberella zeae", 
 "^ot:treebaseOTUId": "Tl273959"
 }, 
 "otu323204": {
@@ -1276,10 +1448,14 @@
 }, 
 "otu323214": {
 "^ot:originalLabel": "Esterichia coli ACOAS NP 756916.1 A1 1", 
+"^ot:ottId": 5251867, 
+"^ot:ottTaxonName": "Escherichia coli", 
 "^ot:treebaseOTUId": "Tl273970"
 }, 
 "otu323215": {
 "^ot:originalLabel": "Ustilago maydis AAR UM01697.1 A1 1", 
+"^ot:ottId": 285447, 
+"^ot:ottTaxonName": "Ustilago maydis", 
 "^ot:treebaseOTUId": "Tl273971"
 }, 
 "otu323216": {
@@ -1296,6 +1472,8 @@
 }, 
 "otu323218": {
 "^ot:originalLabel": "Fusarium graminearUstilago maydis NPS10 FGSG06507.3 A1 1", 
+"^ot:ottId": 5317128, 
+"^ot:ottTaxonName": "Fusarium graminum", 
 "^ot:treebaseOTUId": "Tl273974"
 }, 
 "otu323219": {
@@ -1312,6 +1490,8 @@
 }, 
 "otu323221": {
 "^ot:originalLabel": "Aspergillus nidulans AN1242.4 A3 4", 
+"^ot:ottId": 5459582, 
+"^ot:ottTaxonName": "Aspergillus nidulans", 
 "^ot:treebaseOTUId": "Tl273977"
 }, 
 "otu323222": {
@@ -1412,18 +1592,26 @@
 }, 
 "otu323238": {
 "^ot:originalLabel": "Fusarium graminearum FGSG11026.3 A2 3", 
+"^ot:ottId": 264388, 
+"^ot:ottTaxonName": "Gibberella zeae", 
 "^ot:treebaseOTUId": "Tl273994"
 }, 
 "otu323239": {
 "^ot:originalLabel": "Pseudomonsa aeruginosa PvdI AAX16297.1 A4 4", 
+"^ot:ottId": 5342023, 
+"^ot:ottTaxonName": "Pseudomonas aeruginosa", 
 "^ot:treebaseOTUId": "Tl273995"
 }, 
 "otu323240": {
 "^ot:originalLabel": "Ppseudomonas aeruginosa PchF AAD55801.1 A1 1", 
+"^ot:ottId": 5342023, 
+"^ot:ottTaxonName": "Pseudomonas aeruginosa", 
 "^ot:treebaseOTUId": "Tl273996"
 }, 
 "otu323241": {
 "^ot:originalLabel": "Aspergillus nidulans AN9226.4 A1 2", 
+"^ot:ottId": 5459582, 
+"^ot:ottTaxonName": "Aspergillus nidulans", 
 "^ot:treebaseOTUId": "Tl273997"
 }, 
 "otu323242": {
@@ -1434,10 +1622,14 @@
 }, 
 "otu323243": {
 "^ot:originalLabel": "Fusarium graminearum FGSG11026.3 A3 3", 
+"^ot:ottId": 264388, 
+"^ot:ottTaxonName": "Gibberella zeae", 
 "^ot:treebaseOTUId": "Tl273999"
 }, 
 "otu323244": {
 "^ot:originalLabel": "Fusarium graminearum FG13783.3 A6 7", 
+"^ot:ottId": 264388, 
+"^ot:ottTaxonName": "Gibberella zeae", 
 "^ot:treebaseOTUId": "Tl274000"
 }, 
 "otu323245": {
@@ -1466,6 +1658,8 @@
 }, 
 "otu323249": {
 "^ot:originalLabel": "Aspergillus nidulans AN8105.4 A1 1", 
+"^ot:ottId": 5459582, 
+"^ot:ottTaxonName": "Aspergillus nidulans", 
 "^ot:treebaseOTUId": "Tl274005"
 }, 
 "otu323250": {
@@ -1512,6 +1706,8 @@
 }, 
 "otu323257": {
 "^ot:originalLabel": "Aspergillus nidulans ACVS AN2621.4 A3 3", 
+"^ot:ottId": 5459582, 
+"^ot:ottTaxonName": "Aspergillus nidulans", 
 "^ot:treebaseOTUId": "Tl274013"
 }, 
 "otu323258": {
@@ -1534,10 +1730,14 @@
 }, 
 "otu323261": {
 "^ot:originalLabel": "Fusarium graminearum FG13783.3 A5 7", 
+"^ot:ottId": 264388, 
+"^ot:ottTaxonName": "Gibberella zeae", 
 "^ot:treebaseOTUId": "Tl274017"
 }, 
 "otu323262": {
 "^ot:originalLabel": "Fusarium graminearum FGSG11026.3 A1 3", 
+"^ot:ottId": 264388, 
+"^ot:ottTaxonName": "Gibberella zeae", 
 "^ot:treebaseOTUId": "Tl274018"
 }, 
 "otu323263": {
@@ -1578,6 +1778,8 @@
 }, 
 "otu323269": {
 "^ot:originalLabel": "Aspergillus nidulans AN9226.4 A2 2", 
+"^ot:ottId": 5459582, 
+"^ot:ottTaxonName": "Aspergillus nidulans", 
 "^ot:treebaseOTUId": "Tl274025"
 }, 
 "otu323270": {
@@ -1600,6 +1802,8 @@
 }, 
 "otu323273": {
 "^ot:originalLabel": "Fusarium graminearum FGSG02394.3 A2 2", 
+"^ot:ottId": 264388, 
+"^ot:ottTaxonName": "Gibberella zeae", 
 "^ot:treebaseOTUId": "Tl274029"
 }, 
 "otu323274": {
@@ -1610,6 +1814,8 @@
 }, 
 "otu323275": {
 "^ot:originalLabel": "Aspergillus nidulans AN0016.4 A4 4", 
+"^ot:ottId": 5459582, 
+"^ot:ottTaxonName": "Aspergillus nidulans", 
 "^ot:treebaseOTUId": "Tl275151"
 }, 
 "otu323276": {
@@ -1626,10 +1832,14 @@
 }, 
 "otu323278": {
 "^ot:originalLabel": "Trichoderma reesii Trire2 24586 A1 2", 
+"^ot:ottId": 500701, 
+"^ot:ottTaxonName": "Trichoderma reesei", 
 "^ot:treebaseOTUId": "Tl275154"
 }, 
 "otu323279": {
 "^ot:originalLabel": "Pseudomonas aeruginosa PvdI AAX16297.1 A4 4", 
+"^ot:ottId": 5342023, 
+"^ot:ottTaxonName": "Pseudomonas aeruginosa", 
 "^ot:treebaseOTUId": "Tl275155"
 }, 
 "otu323280": {
@@ -1646,6 +1856,8 @@
 }, 
 "otu323282": {
 "^ot:originalLabel": "Pseudomonas aeruginosa PvdJ AAG05788.2 A1 2", 
+"^ot:ottId": 5342023, 
+"^ot:ottTaxonName": "Pseudomonas aeruginosa", 
 "^ot:treebaseOTUId": "Tl275158"
 }, 
 "otu323283": {
@@ -1668,6 +1880,8 @@
 }, 
 "otu323286": {
 "^ot:originalLabel": "Aspergillus nidulans AN8433.4 A1 1", 
+"^ot:ottId": 5459582, 
+"^ot:ottTaxonName": "Aspergillus nidulans", 
 "^ot:treebaseOTUId": "Tl275162"
 }, 
 "otu323287": {
@@ -1696,10 +1910,14 @@
 }, 
 "otu323291": {
 "^ot:originalLabel": "Aspergillus nidulans AN9243.4 A1 1", 
+"^ot:ottId": 5459582, 
+"^ot:ottTaxonName": "Aspergillus nidulans", 
 "^ot:treebaseOTUId": "Tl275167"
 }, 
 "otu323292": {
 "^ot:originalLabel": "Trichoderma reesii Trire2 23171 A2 20", 
+"^ot:ottId": 500701, 
+"^ot:ottTaxonName": "Trichoderma reesei", 
 "^ot:treebaseOTUId": "Tl275168"
 }, 
 "otu323293": {
@@ -1716,6 +1934,8 @@
 }, 
 "otu323295": {
 "^ot:originalLabel": "Pseudomonas aeruginosa PvdL AAG05812.1 A1 3", 
+"^ot:ottId": 5342023, 
+"^ot:ottTaxonName": "Pseudomonas aeruginosa", 
 "^ot:treebaseOTUId": "Tl275171"
 }, 
 "otu323296": {
@@ -1732,26 +1952,38 @@
 }, 
 "otu323298": {
 "^ot:originalLabel": "Nostoc sp. Ncpb AAO23334.1 A2 4", 
+"^ot:ottId": 893787, 
+"^ot:ottTaxonName": "Nostoc", 
 "^ot:treebaseOTUId": "Tl275174"
 }, 
 "otu323299": {
 "^ot:originalLabel": "Trichoderma reesii NPS10 Trire2 81014 A1 1", 
+"^ot:ottId": 500701, 
+"^ot:ottTaxonName": "Trichoderma reesei", 
 "^ot:treebaseOTUId": "Tl275175"
 }, 
 "otu323300": {
 "^ot:originalLabel": "Pseudomonas aeruginosa PvdD AAX16295.1 A2 2", 
+"^ot:ottId": 5342023, 
+"^ot:ottTaxonName": "Pseudomonas aeruginosa", 
 "^ot:treebaseOTUId": "Tl275176"
 }, 
 "otu323301": {
 "^ot:originalLabel": "Trichoderma reesii Trire2 68204 A1 1", 
+"^ot:ottId": 500701, 
+"^ot:ottTaxonName": "Trichoderma reesei", 
 "^ot:treebaseOTUId": "Tl275177"
 }, 
 "otu323302": {
 "^ot:originalLabel": "Fusarium graminearum FGSG11395.3 A1 2", 
+"^ot:ottId": 264388, 
+"^ot:ottTaxonName": "Gibberella zeae", 
 "^ot:treebaseOTUId": "Tl275178"
 }, 
 "otu323303": {
 "^ot:originalLabel": "Trichoderma reesii Trire2 59315 A1 1", 
+"^ot:ottId": 500701, 
+"^ot:ottTaxonName": "Trichoderma reesei", 
 "^ot:treebaseOTUId": "Tl275179"
 }, 
 "otu323304": {
@@ -1762,6 +1994,8 @@
 }, 
 "otu323305": {
 "^ot:originalLabel": "Trichoderma reesii Trire2 123786 A12 14", 
+"^ot:ottId": 500701, 
+"^ot:ottTaxonName": "Trichoderma reesei", 
 "^ot:treebaseOTUId": "Tl275181"
 }, 
 "otu323306": {
@@ -1778,10 +2012,14 @@
 }, 
 "otu323308": {
 "^ot:originalLabel": "Fusarium graminearum FGSG13783.3 A4 7", 
+"^ot:ottId": 264388, 
+"^ot:ottTaxonName": "Gibberella zeae", 
 "^ot:treebaseOTUId": "Tl275184"
 }, 
 "otu323309": {
 "^ot:originalLabel": "Aspergillus nidulans AN2545.4 A5 5", 
+"^ot:ottId": 5459582, 
+"^ot:ottTaxonName": "Aspergillus nidulans", 
 "^ot:treebaseOTUId": "Tl275185"
 }, 
 "otu323310": {
@@ -1810,6 +2048,8 @@
 }, 
 "otu323314": {
 "^ot:originalLabel": "Fusarium graminearum FG00042.2 A3 7", 
+"^ot:ottId": 264388, 
+"^ot:ottTaxonName": "Gibberella zeae", 
 "^ot:treebaseOTUId": "Tl275190"
 }, 
 "otu323315": {
@@ -1874,18 +2114,26 @@
 }, 
 "otu323325": {
 "^ot:originalLabel": "Fusarium graminearum FG00042.2 A6 7", 
+"^ot:ottId": 264388, 
+"^ot:ottTaxonName": "Gibberella zeae", 
 "^ot:treebaseOTUId": "Tl275201"
 }, 
 "otu323326": {
 "^ot:originalLabel": "Pseudomonas aeruginosa PvdL AAG05812.1 A2 3", 
+"^ot:ottId": 5342023, 
+"^ot:ottTaxonName": "Pseudomonas aeruginosa", 
 "^ot:treebaseOTUId": "Tl275202"
 }, 
 "otu323327": {
 "^ot:originalLabel": "Trichoderma reesii Trire2 23171 A9 20", 
+"^ot:ottId": 500701, 
+"^ot:ottTaxonName": "Trichoderma reesei", 
 "^ot:treebaseOTUId": "Tl275203"
 }, 
 "otu323328": {
 "^ot:originalLabel": "Fusarium graminearum FGSG13878.3 A7 8", 
+"^ot:ottId": 264388, 
+"^ot:ottTaxonName": "Gibberella zeae", 
 "^ot:treebaseOTUId": "Tl275204"
 }, 
 "otu323329": {
@@ -1896,6 +2144,8 @@
 }, 
 "otu323330": {
 "^ot:originalLabel": "Trichoderma reesii Trire2 123786 A7 14", 
+"^ot:ottId": 500701, 
+"^ot:ottTaxonName": "Trichoderma reesei", 
 "^ot:treebaseOTUId": "Tl275206"
 }, 
 "otu323331": {
@@ -1918,10 +2168,14 @@
 }, 
 "otu323334": {
 "^ot:originalLabel": "Aspergillus nidulans AN2545.4 A4 5", 
+"^ot:ottId": 5459582, 
+"^ot:ottTaxonName": "Aspergillus nidulans", 
 "^ot:treebaseOTUId": "Tl275210"
 }, 
 "otu323335": {
 "^ot:originalLabel": "Fusarium graminearum FGSG08209.3 A2 3", 
+"^ot:ottId": 264388, 
+"^ot:ottTaxonName": "Gibberella zeae", 
 "^ot:treebaseOTUId": "Tl275211"
 }, 
 "otu323336": {
@@ -1950,42 +2204,62 @@
 }, 
 "otu323340": {
 "^ot:originalLabel": "Pseudomonas aeruginosa PvdL AAG05812.1 A3 3", 
+"^ot:ottId": 5342023, 
+"^ot:ottTaxonName": "Pseudomonas aeruginosa", 
 "^ot:treebaseOTUId": "Tl275216"
 }, 
 "otu323341": {
 "^ot:originalLabel": "Trichoderma reesii NPS6 Trire2 71005 A1 1", 
+"^ot:ottId": 500701, 
+"^ot:ottTaxonName": "Trichoderma reesei", 
 "^ot:treebaseOTUId": "Tl275217"
 }, 
 "otu323342": {
 "^ot:originalLabel": "Aspergillus nidulans AN0016.4 A2 4", 
+"^ot:ottId": 5459582, 
+"^ot:ottTaxonName": "Aspergillus nidulans", 
 "^ot:treebaseOTUId": "Tl275218"
 }, 
 "otu323343": {
 "^ot:originalLabel": "Trichoderma reesii Trire2 60458 A1 2", 
+"^ot:ottId": 500701, 
+"^ot:ottTaxonName": "Trichoderma reesei", 
 "^ot:treebaseOTUId": "Tl275219"
 }, 
 "otu323344": {
 "^ot:originalLabel": "Fusarium graminearum FGSG00042.3 A2 7", 
+"^ot:ottId": 264388, 
+"^ot:ottTaxonName": "Gibberella zeae", 
 "^ot:treebaseOTUId": "Tl275220"
 }, 
 "otu323345": {
 "^ot:originalLabel": "Aspergillus nidulans AN0016.4 A3 4", 
+"^ot:ottId": 5459582, 
+"^ot:ottTaxonName": "Aspergillus nidulans", 
 "^ot:treebaseOTUId": "Tl275221"
 }, 
 "otu323346": {
 "^ot:originalLabel": "Aspergillus nidulans NPS10 AN5318.4 A1 1", 
+"^ot:ottId": 5459582, 
+"^ot:ottTaxonName": "Aspergillus nidulans", 
 "^ot:treebaseOTUId": "Tl275222"
 }, 
 "otu323347": {
 "^ot:originalLabel": "Fusarium graminearum FGSG08209.3 A1 3", 
+"^ot:ottId": 264388, 
+"^ot:ottTaxonName": "Gibberella zeae", 
 "^ot:treebaseOTUId": "Tl275223"
 }, 
 "otu323348": {
 "^ot:originalLabel": "Pseudomonas aeruginosa PchE AAD55800.1 A1 1", 
+"^ot:ottId": 5342023, 
+"^ot:ottTaxonName": "Pseudomonas aeruginosa", 
 "^ot:treebaseOTUId": "Tl275224"
 }, 
 "otu323349": {
 "^ot:originalLabel": "Fusarium graminearum FGSG02315.3 A3 5", 
+"^ot:ottId": 264388, 
+"^ot:ottTaxonName": "Gibberella zeae", 
 "^ot:treebaseOTUId": "Tl275225"
 }, 
 "otu323350": {
@@ -1996,6 +2270,8 @@
 }, 
 "otu323351": {
 "^ot:originalLabel": "Trichoderma reesii Trire2 23171 A3 20", 
+"^ot:ottId": 500701, 
+"^ot:ottTaxonName": "Trichoderma reesei", 
 "^ot:treebaseOTUId": "Tl275227"
 }, 
 "otu323352": {
@@ -2006,6 +2282,8 @@
 }, 
 "otu323353": {
 "^ot:originalLabel": "Fusarium graminearum FG00042.2 A1 7", 
+"^ot:ottId": 264388, 
+"^ot:ottTaxonName": "Gibberella zeae", 
 "^ot:treebaseOTUId": "Tl275229"
 }, 
 "otu323354": {
@@ -2052,6 +2330,8 @@
 }, 
 "otu323361": {
 "^ot:originalLabel": "Fusarium graminearum FGSG02315.3 A1 5", 
+"^ot:ottId": 264388, 
+"^ot:ottTaxonName": "Gibberella zeae", 
 "^ot:treebaseOTUId": "Tl275237"
 }, 
 "otu323362": {
@@ -2062,10 +2342,14 @@
 }, 
 "otu323363": {
 "^ot:originalLabel": "Trichoderma reesii Trire2 23171 A4 20", 
+"^ot:ottId": 500701, 
+"^ot:ottTaxonName": "Trichoderma reesei", 
 "^ot:treebaseOTUId": "Tl275239"
 }, 
 "otu323364": {
 "^ot:originalLabel": "Fusarium graminearum FGSG10523.3 A1 1", 
+"^ot:ottId": 264388, 
+"^ot:ottTaxonName": "Gibberella zeae", 
 "^ot:treebaseOTUId": "Tl275240"
 }, 
 "otu323365": {
@@ -2076,10 +2360,14 @@
 }, 
 "otu323366": {
 "^ot:originalLabel": "Aspergillus nidulans AN7884.4 A2 6", 
+"^ot:ottId": 5459582, 
+"^ot:ottTaxonName": "Aspergillus nidulans", 
 "^ot:treebaseOTUId": "Tl275242"
 }, 
 "otu323367": {
 "^ot:originalLabel": "Trichoderma reesii Trire2 123786 A9 14", 
+"^ot:ottId": 500701, 
+"^ot:ottTaxonName": "Trichoderma reesei", 
 "^ot:treebaseOTUId": "Tl275243"
 }, 
 "otu323368": {
@@ -2108,14 +2396,20 @@
 }, 
 "otu323372": {
 "^ot:originalLabel": "Fusarium graminearum FGSG10702.3 A1 1", 
+"^ot:ottId": 264388, 
+"^ot:ottTaxonName": "Gibberella zeae", 
 "^ot:treebaseOTUId": "Tl275248"
 }, 
 "otu323373": {
 "^ot:originalLabel": "Fusarium graminearum FGSG13878.3 A3 8", 
+"^ot:ottId": 264388, 
+"^ot:ottTaxonName": "Gibberella zeae", 
 "^ot:treebaseOTUId": "Tl275249"
 }, 
 "otu323374": {
 "^ot:originalLabel": "Trichoderma reesii Trire2 69946 A1 3", 
+"^ot:ottId": 500701, 
+"^ot:ottTaxonName": "Trichoderma reesei", 
 "^ot:treebaseOTUId": "Tl275250"
 }, 
 "otu323375": {
@@ -2130,6 +2424,8 @@
 }, 
 "otu323377": {
 "^ot:originalLabel": "Trichoderma reesii Trire2 23171 A5 20", 
+"^ot:ottId": 500701, 
+"^ot:ottTaxonName": "Trichoderma reesei", 
 "^ot:treebaseOTUId": "Tl275253"
 }, 
 "otu323378": {
@@ -2146,6 +2442,8 @@
 }, 
 "otu323380": {
 "^ot:originalLabel": "Fusarium graminearum FGSG11395.3 A2 2", 
+"^ot:ottId": 264388, 
+"^ot:ottTaxonName": "Gibberella zeae", 
 "^ot:treebaseOTUId": "Tl275256"
 }, 
 "otu323381": {
@@ -2162,6 +2460,8 @@
 }, 
 "otu323383": {
 "^ot:originalLabel": "Escherichia coli ACOAS NP 756916.1 A1 1", 
+"^ot:ottId": 5251867, 
+"^ot:ottTaxonName": "Escherichia coli", 
 "^ot:treebaseOTUId": "Tl275259"
 }, 
 "otu323384": {
@@ -2184,6 +2484,8 @@
 }, 
 "otu323387": {
 "^ot:originalLabel": "Pseudomonas aeruginosa PvdI AAX16297.1 A2 4", 
+"^ot:ottId": 5342023, 
+"^ot:ottTaxonName": "Pseudomonas aeruginosa", 
 "^ot:treebaseOTUId": "Tl275263"
 }, 
 "otu323388": {
@@ -2194,14 +2496,20 @@
 }, 
 "otu323389": {
 "^ot:originalLabel": "Fusarium graminearum FG00042.2 A5 7", 
+"^ot:ottId": 264388, 
+"^ot:ottTaxonName": "Gibberella zeae", 
 "^ot:treebaseOTUId": "Tl275265"
 }, 
 "otu323390": {
 "^ot:originalLabel": "Fusarium graminearum FGSG13878.3 A5 8", 
+"^ot:ottId": 264388, 
+"^ot:ottTaxonName": "Gibberella zeae", 
 "^ot:treebaseOTUId": "Tl275266"
 }, 
 "otu323391": {
 "^ot:originalLabel": "Fusarium graminearum FGSG07798.3 A1 1", 
+"^ot:ottId": 264388, 
+"^ot:ottTaxonName": "Gibberella zeae", 
 "^ot:treebaseOTUId": "Tl275267"
 }, 
 "otu323392": {
@@ -2230,10 +2538,14 @@
 }, 
 "otu323396": {
 "^ot:originalLabel": "Aspergillus nidulans NPS6 AN6236.4 A1 1", 
+"^ot:ottId": 5459582, 
+"^ot:ottTaxonName": "Aspergillus nidulans", 
 "^ot:treebaseOTUId": "Tl275272"
 }, 
 "otu323397": {
 "^ot:originalLabel": "Fusarium graminearum FGSG13878.3 A1 8", 
+"^ot:ottId": 264388, 
+"^ot:ottTaxonName": "Gibberella zeae", 
 "^ot:treebaseOTUId": "Tl275273"
 }, 
 "otu323398": {
@@ -2256,6 +2568,8 @@
 }, 
 "otu323401": {
 "^ot:originalLabel": "Trichoderma reesii Trire2 123786 A3 14", 
+"^ot:ottId": 500701, 
+"^ot:ottTaxonName": "Trichoderma reesei", 
 "^ot:treebaseOTUId": "Tl275277"
 }, 
 "otu323402": {
@@ -2308,6 +2622,8 @@
 }, 
 "otu323410": {
 "^ot:originalLabel": "Fusarium graminearum ACL FGSG03589.3 A1 1", 
+"^ot:ottId": 264388, 
+"^ot:ottTaxonName": "Gibberella zeae", 
 "^ot:treebaseOTUId": "Tl275286"
 }, 
 "otu323411": {
@@ -2390,6 +2706,8 @@
 }, 
 "otu323424": {
 "^ot:originalLabel": "Nostoc sp. NcpA AA023333.1 A1 3", 
+"^ot:ottId": 893787, 
+"^ot:ottTaxonName": "Nostoc", 
 "^ot:treebaseOTUId": "Tl275300"
 }, 
 "otu323425": {
@@ -2400,6 +2718,8 @@
 }, 
 "otu323426": {
 "^ot:originalLabel": "Aspergillus nidulans AN3495.4 A1 1", 
+"^ot:ottId": 5459582, 
+"^ot:ottTaxonName": "Aspergillus nidulans", 
 "^ot:treebaseOTUId": "Tl275302"
 }, 
 "otu323427": {
@@ -2416,6 +2736,8 @@
 }, 
 "otu323429": {
 "^ot:originalLabel": "Trichoderma reesii Trire2 23171 A10 20", 
+"^ot:ottId": 500701, 
+"^ot:ottTaxonName": "Trichoderma reesei", 
 "^ot:treebaseOTUId": "Tl275305"
 }, 
 "otu323430": {
@@ -2432,10 +2754,14 @@
 }, 
 "otu323432": {
 "^ot:originalLabel": "Aspergillus nidulans AN7884.4 A3 6", 
+"^ot:ottId": 5459582, 
+"^ot:ottTaxonName": "Aspergillus nidulans", 
 "^ot:treebaseOTUId": "Tl275308"
 }, 
 "otu323433": {
 "^ot:originalLabel": "Pseudomonas aeruginosa PvdI AAX16297.1 A1 4", 
+"^ot:ottId": 5342023, 
+"^ot:ottTaxonName": "Pseudomonas aeruginosa", 
 "^ot:treebaseOTUId": "Tl275309"
 }, 
 "otu323434": {
@@ -2482,6 +2808,8 @@
 }, 
 "otu323441": {
 "^ot:originalLabel": "Trichoderma reesii Trire2 123786 A5 14", 
+"^ot:ottId": 500701, 
+"^ot:ottTaxonName": "Trichoderma reesei", 
 "^ot:treebaseOTUId": "Tl275317"
 }, 
 "otu323442": {
@@ -2540,10 +2868,14 @@
 }, 
 "otu323451": {
 "^ot:originalLabel": "Pseudomonas aeruginosa PvdI AAX16297.1 A3 4", 
+"^ot:ottId": 5342023, 
+"^ot:ottTaxonName": "Pseudomonas aeruginosa", 
 "^ot:treebaseOTUId": "Tl275327"
 }, 
 "otu323452": {
 "^ot:originalLabel": "Fusarium graminearum FGSG13878.3 A2 8", 
+"^ot:ottId": 264388, 
+"^ot:ottTaxonName": "Gibberella zeae", 
 "^ot:treebaseOTUId": "Tl275328"
 }, 
 "otu323453": {
@@ -2554,6 +2886,8 @@
 }, 
 "otu323454": {
 "^ot:originalLabel": "Trichoderma reesii Trire2 123786 A1 14", 
+"^ot:ottId": 500701, 
+"^ot:ottTaxonName": "Trichoderma reesei", 
 "^ot:treebaseOTUId": "Tl275330"
 }, 
 "otu323455": {
@@ -2576,6 +2910,8 @@
 }, 
 "otu323458": {
 "^ot:originalLabel": "Trichoderma reesii Trire2 23171 A7 20", 
+"^ot:ottId": 500701, 
+"^ot:ottTaxonName": "Trichoderma reesei", 
 "^ot:treebaseOTUId": "Tl275334"
 }, 
 "otu323459": {
@@ -2586,6 +2922,8 @@
 }, 
 "otu323460": {
 "^ot:originalLabel": "Trichoderma reesii Trire2 123786 A8 14", 
+"^ot:ottId": 500701, 
+"^ot:ottTaxonName": "Trichoderma reesei", 
 "^ot:treebaseOTUId": "Tl275336"
 }, 
 "otu323461": {
@@ -2602,6 +2940,8 @@
 }, 
 "otu323463": {
 "^ot:originalLabel": "Trichoderma reesii Trire2 123786 A10 14", 
+"^ot:ottId": 500701, 
+"^ot:ottTaxonName": "Trichoderma reesei", 
 "^ot:treebaseOTUId": "Tl275339"
 }, 
 "otu323464": {
@@ -2618,14 +2958,20 @@
 }, 
 "otu323466": {
 "^ot:originalLabel": "Trichoderma reesii Trire2 24586 A2 2", 
+"^ot:ottId": 500701, 
+"^ot:ottTaxonName": "Trichoderma reesei", 
 "^ot:treebaseOTUId": "Tl275342"
 }, 
 "otu323467": {
 "^ot:originalLabel": "Aspergillus nidulans AN3496.4 A2 2", 
+"^ot:ottId": 5459582, 
+"^ot:ottTaxonName": "Aspergillus nidulans", 
 "^ot:treebaseOTUId": "Tl275343"
 }, 
 "otu323468": {
 "^ot:originalLabel": "Fusarium graminearum FGSG02315.3 A4 5", 
+"^ot:ottId": 264388, 
+"^ot:ottTaxonName": "Gibberella zeae", 
 "^ot:treebaseOTUId": "Tl275344"
 }, 
 "otu323469": {
@@ -2636,10 +2982,14 @@
 }, 
 "otu323470": {
 "^ot:originalLabel": "Fusarium graminearum FGSG10990.3 A1 1", 
+"^ot:ottId": 264388, 
+"^ot:ottTaxonName": "Gibberella zeae", 
 "^ot:treebaseOTUId": "Tl275346"
 }, 
 "otu323471": {
 "^ot:originalLabel": "Trichoderma reesii Trire2 23171 A1 20", 
+"^ot:ottId": 500701, 
+"^ot:ottTaxonName": "Trichoderma reesei", 
 "^ot:treebaseOTUId": "Tl275347"
 }, 
 "otu323472": {
@@ -2650,6 +3000,8 @@
 }, 
 "otu323473": {
 "^ot:originalLabel": "Fusarium graminearum FGSG13783.3 A7 7", 
+"^ot:ottId": 264388, 
+"^ot:ottTaxonName": "Gibberella zeae", 
 "^ot:treebaseOTUId": "Tl275349"
 }, 
 "otu323474": {
@@ -2684,6 +3036,8 @@
 }, 
 "otu323479": {
 "^ot:originalLabel": "Trichoderma reesii Trire2 23171 A19 20", 
+"^ot:ottId": 500701, 
+"^ot:ottTaxonName": "Trichoderma reesei", 
 "^ot:treebaseOTUId": "Tl275355"
 }, 
 "otu323480": {
@@ -2694,10 +3048,14 @@
 }, 
 "otu323481": {
 "^ot:originalLabel": "Aspergillus nidulans AN0016.4 A1 4", 
+"^ot:ottId": 5459582, 
+"^ot:ottTaxonName": "Aspergillus nidulans", 
 "^ot:treebaseOTUId": "Tl275357"
 }, 
 "otu323482": {
 "^ot:originalLabel": "Aspergillus nidulans AN7884.4 A4 6", 
+"^ot:ottId": 5459582, 
+"^ot:ottTaxonName": "Aspergillus nidulans", 
 "^ot:treebaseOTUId": "Tl275358"
 }, 
 "otu323483": {
@@ -2720,6 +3078,8 @@
 }, 
 "otu323486": {
 "^ot:originalLabel": "Nostoc sp. Ncpb AAO23334.1 A1 4", 
+"^ot:ottId": 893787, 
+"^ot:ottTaxonName": "Nostoc", 
 "^ot:treebaseOTUId": "Tl275362"
 }, 
 "otu323487": {
@@ -2742,14 +3102,20 @@
 }, 
 "otu323490": {
 "^ot:originalLabel": "Trichoderma reesii Trire2 123786 A14 14", 
+"^ot:ottId": 500701, 
+"^ot:ottTaxonName": "Trichoderma reesei", 
 "^ot:treebaseOTUId": "Tl275366"
 }, 
 "otu323491": {
 "^ot:originalLabel": "Trichoderma reesii Trire2 23171 A18 20", 
+"^ot:ottId": 500701, 
+"^ot:ottTaxonName": "Trichoderma reesei", 
 "^ot:treebaseOTUId": "Tl275367"
 }, 
 "otu323492": {
 "^ot:originalLabel": "Escherichia coli EntF AAA92015.1 A1 1", 
+"^ot:ottId": 5251867, 
+"^ot:ottTaxonName": "Escherichia coli", 
 "^ot:treebaseOTUId": "Tl275368"
 }, 
 "otu323493": {
@@ -2766,14 +3132,20 @@
 }, 
 "otu323495": {
 "^ot:originalLabel": "Aspergillus nidulans AN9244.4 A2 2", 
+"^ot:ottId": 5459582, 
+"^ot:ottTaxonName": "Aspergillus nidulans", 
 "^ot:treebaseOTUId": "Tl275371"
 }, 
 "otu323496": {
 "^ot:originalLabel": "Aspergillus nidulans AN7884.4 A1 6", 
+"^ot:ottId": 5459582, 
+"^ot:ottTaxonName": "Aspergillus nidulans", 
 "^ot:treebaseOTUId": "Tl275372"
 }, 
 "otu323497": {
 "^ot:originalLabel": "Fusarium graminearum FG00042.2 A4 7", 
+"^ot:ottId": 264388, 
+"^ot:ottTaxonName": "Gibberella zeae", 
 "^ot:treebaseOTUId": "Tl275373"
 }, 
 "otu323498": {
@@ -2784,14 +3156,20 @@
 }, 
 "otu323499": {
 "^ot:originalLabel": "Trichoderma reesii Trire2 69946 A2 3", 
+"^ot:ottId": 500701, 
+"^ot:ottTaxonName": "Trichoderma reesei", 
 "^ot:treebaseOTUId": "Tl275375"
 }, 
 "otu323500": {
 "^ot:originalLabel": "Fusarium graminearum FGSG13783.3 A3 7", 
+"^ot:ottId": 264388, 
+"^ot:ottTaxonName": "Gibberella zeae", 
 "^ot:treebaseOTUId": "Tl275376"
 }, 
 "otu323501": {
 "^ot:originalLabel": "Trichoderma reesii Trire2 23171 A11 20", 
+"^ot:ottId": 500701, 
+"^ot:ottTaxonName": "Trichoderma reesei", 
 "^ot:treebaseOTUId": "Tl275377"
 }, 
 "otu323502": {
@@ -2832,10 +3210,14 @@
 }, 
 "otu323508": {
 "^ot:originalLabel": "Trichoderma reesii Trire2 23171 A6 20", 
+"^ot:ottId": 500701, 
+"^ot:ottTaxonName": "Trichoderma reesei", 
 "^ot:treebaseOTUId": "Tl275384"
 }, 
 "otu323509": {
 "^ot:originalLabel": "Fusarium graminearum FGSG13878.3 A4 8", 
+"^ot:ottId": 264388, 
+"^ot:ottTaxonName": "Gibberella zeae", 
 "^ot:treebaseOTUId": "Tl275385"
 }, 
 "otu323510": {
@@ -2852,6 +3234,8 @@
 }, 
 "otu323512": {
 "^ot:originalLabel": "Trichoderma reesii Trire2 23171 A20 20", 
+"^ot:ottId": 500701, 
+"^ot:ottTaxonName": "Trichoderma reesei", 
 "^ot:treebaseOTUId": "Tl275388"
 }, 
 "otu323513": {
@@ -2862,6 +3246,8 @@
 }, 
 "otu323514": {
 "^ot:originalLabel": "Trichoderma reesii Trire2 123786 A2 14", 
+"^ot:ottId": 500701, 
+"^ot:ottTaxonName": "Trichoderma reesei", 
 "^ot:treebaseOTUId": "Tl275390"
 }, 
 "otu323515": {
@@ -2872,10 +3258,14 @@
 }, 
 "otu323516": {
 "^ot:originalLabel": "Pseudomonas aeruginosa PvdJ AAG05788.2 A2 2", 
+"^ot:ottId": 5342023, 
+"^ot:ottTaxonName": "Pseudomonas aeruginosa", 
 "^ot:treebaseOTUId": "Tl275392"
 }, 
 "otu323517": {
 "^ot:originalLabel": "Trichoderma reesii Trire2 23171 A8 20", 
+"^ot:ottId": 500701, 
+"^ot:ottTaxonName": "Trichoderma reesei", 
 "^ot:treebaseOTUId": "Tl275393"
 }, 
 "otu323518": {
@@ -2892,10 +3282,14 @@
 }, 
 "otu323520": {
 "^ot:originalLabel": "Aspergillus nidulans AN7884.4 A6 6", 
+"^ot:ottId": 5459582, 
+"^ot:ottTaxonName": "Aspergillus nidulans", 
 "^ot:treebaseOTUId": "Tl275396"
 }, 
 "otu323521": {
 "^ot:originalLabel": "Trichoderma reesii Trire2 23171 A12 20", 
+"^ot:ottId": 500701, 
+"^ot:ottTaxonName": "Trichoderma reesei", 
 "^ot:treebaseOTUId": "Tl275397"
 }, 
 "otu323522": {
@@ -2936,14 +3330,20 @@
 }, 
 "otu323528": {
 "^ot:originalLabel": "Trichoderma reesii Trire2 123786 A6 14", 
+"^ot:ottId": 500701, 
+"^ot:ottTaxonName": "Trichoderma reesei", 
 "^ot:treebaseOTUId": "Tl275404"
 }, 
 "otu323529": {
 "^ot:originalLabel": "Aspergillus nidulans AN2545.4 A1 5", 
+"^ot:ottId": 5459582, 
+"^ot:ottTaxonName": "Aspergillus nidulans", 
 "^ot:treebaseOTUId": "Tl275405"
 }, 
 "otu323530": {
 "^ot:originalLabel": "Fusarium graminearum FGSG13153.3 A1 1", 
+"^ot:ottId": 264388, 
+"^ot:ottTaxonName": "Gibberella zeae", 
 "^ot:treebaseOTUId": "Tl275406"
 }, 
 "otu323531": {
@@ -2954,6 +3354,8 @@
 }, 
 "otu323532": {
 "^ot:originalLabel": "Trichoderma reesii Trire2 23171 A13 20", 
+"^ot:ottId": 500701, 
+"^ot:ottTaxonName": "Trichoderma reesei", 
 "^ot:treebaseOTUId": "Tl275408"
 }, 
 "otu323533": {
@@ -2970,6 +3372,8 @@
 }, 
 "otu323535": {
 "^ot:originalLabel": "Trichoderma reesii Trire2 60458 A2 2", 
+"^ot:ottId": 500701, 
+"^ot:ottTaxonName": "Trichoderma reesei", 
 "^ot:treebaseOTUId": "Tl275411"
 }, 
 "otu323536": {
@@ -2980,30 +3384,44 @@
 }, 
 "otu323537": {
 "^ot:originalLabel": "Trichoderma reesii Trire2 60751 A1 1", 
+"^ot:ottId": 500701, 
+"^ot:ottTaxonName": "Trichoderma reesei", 
 "^ot:treebaseOTUId": "Tl275413"
 }, 
 "otu323538": {
 "^ot:originalLabel": "Aspergillus nidulans AN2545.4 A3 5", 
+"^ot:ottId": 5459582, 
+"^ot:ottTaxonName": "Aspergillus nidulans", 
 "^ot:treebaseOTUId": "Tl275414"
 }, 
 "otu323539": {
 "^ot:originalLabel": "Pseudomonas aeruginosa PvdD AAX16295.1 A1 2", 
+"^ot:ottId": 5342023, 
+"^ot:ottTaxonName": "Pseudomonas aeruginosa", 
 "^ot:treebaseOTUId": "Tl275415"
 }, 
 "otu323540": {
 "^ot:originalLabel": "Trichoderma reesii Trire2 23171 A16 20", 
+"^ot:ottId": 500701, 
+"^ot:ottTaxonName": "Trichoderma reesei", 
 "^ot:treebaseOTUId": "Tl275416"
 }, 
 "otu323541": {
 "^ot:originalLabel": "Fusarium graminearum FGSG02315.3 A5 5", 
+"^ot:ottId": 264388, 
+"^ot:ottTaxonName": "Gibberella zeae", 
 "^ot:treebaseOTUId": "Tl275417"
 }, 
 "otu323542": {
 "^ot:originalLabel": "Fusarium graminearum FGSG02315.3 A2 5", 
+"^ot:ottId": 264388, 
+"^ot:ottTaxonName": "Gibberella zeae", 
 "^ot:treebaseOTUId": "Tl275418"
 }, 
 "otu323543": {
 "^ot:originalLabel": "Aspergillus nidulans AN2545.4 A2 5", 
+"^ot:ottId": 5459582, 
+"^ot:ottTaxonName": "Aspergillus nidulans", 
 "^ot:treebaseOTUId": "Tl275419"
 }, 
 "otu323544": {
@@ -3014,6 +3432,8 @@
 }, 
 "otu323545": {
 "^ot:originalLabel": "Trichoderma reesii Trire2 23171 A17 20", 
+"^ot:ottId": 500701, 
+"^ot:ottTaxonName": "Trichoderma reesei", 
 "^ot:treebaseOTUId": "Tl275421"
 }, 
 "otu323546": {
@@ -3036,6 +3456,8 @@
 }, 
 "otu323549": {
 "^ot:originalLabel": "Trichoderma reesii Trire2 23171 A14 20", 
+"^ot:ottId": 500701, 
+"^ot:ottTaxonName": "Trichoderma reesei", 
 "^ot:treebaseOTUId": "Tl275425"
 }, 
 "otu323550": {
@@ -3046,6 +3468,8 @@
 }, 
 "otu323551": {
 "^ot:originalLabel": "Trichoderma reesii Trire2 123786 A13 14", 
+"^ot:ottId": 500701, 
+"^ot:ottTaxonName": "Trichoderma reesei", 
 "^ot:treebaseOTUId": "Tl275427"
 }, 
 "otu323552": {
@@ -3056,10 +3480,14 @@
 }, 
 "otu323553": {
 "^ot:originalLabel": "Pseudomonas aeruginosa PchF AAD55801.1 A1 1", 
+"^ot:ottId": 5342023, 
+"^ot:ottTaxonName": "Pseudomonas aeruginosa", 
 "^ot:treebaseOTUId": "Tl275429"
 }, 
 "otu323554": {
 "^ot:originalLabel": "Trichoderma reesii Trire2 123786 A4 14", 
+"^ot:ottId": 500701, 
+"^ot:ottTaxonName": "Trichoderma reesei", 
 "^ot:treebaseOTUId": "Tl275430"
 }, 
 "otu323555": {
@@ -3106,6 +3534,8 @@
 }, 
 "otu323562": {
 "^ot:originalLabel": "Fusarium graminearum FGSG13878.3 A6 8", 
+"^ot:ottId": 264388, 
+"^ot:ottTaxonName": "Gibberella zeae", 
 "^ot:treebaseOTUId": "Tl275438"
 }, 
 "otu323563": {
@@ -3134,6 +3564,8 @@
 }, 
 "otu323567": {
 "^ot:originalLabel": "Fusarium graminearum FGSG08209.3 A3 3", 
+"^ot:ottId": 264388, 
+"^ot:ottTaxonName": "Gibberella zeae", 
 "^ot:treebaseOTUId": "Tl275443"
 }, 
 "otu323568": {
@@ -3174,6 +3606,8 @@
 }, 
 "otu323574": {
 "^ot:originalLabel": "Fusarium graminearum NPS10 FGSG06507.3 A1 1", 
+"^ot:ottId": 264388, 
+"^ot:ottTaxonName": "Gibberella zeae", 
 "^ot:treebaseOTUId": "Tl275450"
 }, 
 "otu323575": {
@@ -3202,10 +3636,14 @@
 }, 
 "otu323579": {
 "^ot:originalLabel": "Trichoderma reesii Trire2 123786 A11 14", 
+"^ot:ottId": 500701, 
+"^ot:ottTaxonName": "Trichoderma reesei", 
 "^ot:treebaseOTUId": "Tl275455"
 }, 
 "otu323580": {
 "^ot:originalLabel": "Aspergillus nidulans AN7884.4 A5 6", 
+"^ot:ottId": 5459582, 
+"^ot:ottTaxonName": "Aspergillus nidulans", 
 "^ot:treebaseOTUId": "Tl275456"
 }, 
 "otu323581": {
@@ -3228,6 +3666,8 @@
 }, 
 "otu323584": {
 "^ot:originalLabel": "Aspergillus nidulans AN9129.4 A1 1", 
+"^ot:ottId": 5459582, 
+"^ot:ottTaxonName": "Aspergillus nidulans", 
 "^ot:treebaseOTUId": "Tl275460"
 }, 
 "otu323585": {
@@ -3238,14 +3678,20 @@
 }, 
 "otu323586": {
 "^ot:originalLabel": "Trichoderma reesii Trire2 69946 A3 3", 
+"^ot:ottId": 500701, 
+"^ot:ottTaxonName": "Trichoderma reesei", 
 "^ot:treebaseOTUId": "Tl275462"
 }, 
 "otu323587": {
 "^ot:originalLabel": "Fusarium graminearum FGSG13878.3 A8 8", 
+"^ot:ottId": 264388, 
+"^ot:ottTaxonName": "Gibberella zeae", 
 "^ot:treebaseOTUId": "Tl275463"
 }, 
 "otu323588": {
 "^ot:originalLabel": "Fusarium graminearum FGSG13783.3 A5 7", 
+"^ot:ottId": 264388, 
+"^ot:ottTaxonName": "Gibberella zeae", 
 "^ot:treebaseOTUId": "Tl275464"
 }, 
 "otu323589": {
@@ -3286,10 +3732,14 @@
 }, 
 "otu323595": {
 "^ot:originalLabel": "Trichoderma reesii Trire2 23171 A15 20", 
+"^ot:ottId": 500701, 
+"^ot:ottTaxonName": "Trichoderma reesei", 
 "^ot:treebaseOTUId": "Tl275471"
 }, 
 "otu323596": {
 "^ot:originalLabel": "Aspergillus nidulans AN9244.4 A1 2", 
+"^ot:ottId": 5459582, 
+"^ot:ottTaxonName": "Aspergillus nidulans", 
 "^ot:treebaseOTUId": "Tl275472"
 }, 
 "otu323597": {
@@ -3300,6 +3750,8 @@
 }, 
 "otu323598": {
 "^ot:originalLabel": "Fusarium graminearum FGSG01680.3 A1 1", 
+"^ot:ottId": 264388, 
+"^ot:ottTaxonName": "Gibberella zeae", 
 "^ot:treebaseOTUId": "Tl275474"
 }, 
 "otu323599": {
@@ -3316,6 +3768,8 @@
 }, 
 "otu323601": {
 "^ot:originalLabel": "Trichoderma reesii NPS6 Trire2 67189 A1 1", 
+"^ot:ottId": 500701, 
+"^ot:ottTaxonName": "Trichoderma reesei", 
 "^ot:treebaseOTUId": "Tl275477"
 }, 
 "otu323602": {
@@ -3332,10 +3786,14 @@
 }, 
 "otu323604": {
 "^ot:originalLabel": "Fusarium graminearum FGSG13783.3 A6 7", 
+"^ot:ottId": 264388, 
+"^ot:ottTaxonName": "Gibberella zeae", 
 "^ot:treebaseOTUId": "Tl275480"
 }, 
 "otu323605": {
 "^ot:originalLabel": "Fusarium graminearum FG00042.2 A7 7", 
+"^ot:ottId": 264388, 
+"^ot:ottTaxonName": "Gibberella zeae", 
 "^ot:treebaseOTUId": "Tl275481"
 }, 
 "otu323606": {
@@ -3389,15 +3847,20 @@
 ], 
 "treeById": {
 "tree4712": {
+"@label": "Untitled (tree4712)", 
 "@xsi:type": "nex:FloatTree", 
 "^ot:branchLengthDescription": "", 
 "^ot:branchLengthMode": "", 
 "^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "ML, (Additional_File6B)", 
+"^ot:inGroupClade": "", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
 "^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node830569", 
 "^ot:specifiedRoot": "", 
 "^ot:tag": [], 
+"^ot:unrootedTree": true, 
 "edgeBySourceId": {
 "node830569": {
 "edge830570": {
@@ -7231,15 +7694,20 @@
 }
 }, 
 "tree4713": {
+"@label": "Untitled (tree4713)", 
 "@xsi:type": "nex:FloatTree", 
 "^ot:branchLengthDescription": "", 
-"^ot:branchLengthMode": "", 
-"^ot:branchLengthTimeUnit": "", 
+"^ot:branchLengthMode": "ot:undefined", 
+"^ot:branchLengthTimeUnit": "Myr", 
 "^ot:curatedType": "ML, full AMP dataset", 
+"^ot:inGroupClade": "", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
 "^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node831116", 
 "^ot:specifiedRoot": "", 
 "^ot:tag": [], 
+"^ot:unrootedTree": true, 
 "edgeBySourceId": {
 "node831116": {
 "edge831117": {
@@ -10799,10 +11267,12 @@
 "node831473": {}, 
 "node831474": {}, 
 "node831475": {
-"@otu": "otu323194"
+"@otu": "otu323194", 
+"^ot:isTaxonExemplar": true
 }, 
 "node831476": {
-"@otu": "otu323113"
+"@otu": "otu323113", 
+"^ot:isTaxonExemplar": false
 }, 
 "node831477": {}, 
 "node831478": {}, 
@@ -11227,15 +11697,20 @@
 }
 }, 
 "tree4714": {
+"@label": "Untitled (tree4714)", 
 "@xsi:type": "nex:FloatTree", 
 "^ot:branchLengthDescription": "", 
 "^ot:branchLengthMode": "", 
 "^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "ML, reduced NRPS AMP domain (Additional_File7C)", 
+"^ot:inGroupClade": "", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
 "^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node831685", 
 "^ot:specifiedRoot": "", 
 "^ot:tag": [], 
+"^ot:unrootedTree": true, 
 "edgeBySourceId": {
 "node831685": {
 "edge831686": {
@@ -15069,15 +15544,20 @@
 }
 }, 
 "tree4715": {
+"@label": "Untitled (tree4715)", 
 "@xsi:type": "nex:FloatTree", 
 "^ot:branchLengthDescription": "", 
 "^ot:branchLengthMode": "", 
 "^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "ML, reduced NRPS AMP domain (Additional_File7A)", 
+"^ot:inGroupClade": "", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
 "^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node832232", 
 "^ot:specifiedRoot": "", 
 "^ot:tag": [], 
+"^ot:unrootedTree": true, 
 "edgeBySourceId": {
 "node832232": {
 "edge832233": {
@@ -18911,15 +19391,20 @@
 }
 }, 
 "tree4716": {
+"@label": "Untitled (tree4716)", 
 "@xsi:type": "nex:FloatTree", 
 "^ot:branchLengthDescription": "", 
 "^ot:branchLengthMode": "", 
 "^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "ML, reduced NRPS AMP domain (Additional_File7B)", 
+"^ot:inGroupClade": "", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
 "^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node832779", 
 "^ot:specifiedRoot": "", 
 "^ot:tag": [], 
+"^ot:unrootedTree": true, 
 "edgeBySourceId": {
 "node832779": {
 "edge832780": {

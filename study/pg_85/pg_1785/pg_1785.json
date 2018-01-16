@@ -36,22 +36,100 @@
 }
 ]
 }
+}, 
+{
+"@description": "Web-based interface for submitting, editing, and reviewing studies in the Open Tree of Life project.", 
+"@id": "opentree-curation-webapp", 
+"@name": "OpenTree curation webapp", 
+"@url": "https://github.com/OpenTreeOfLife/opentree", 
+"@version": "0.0.0"
 }
 ]
 }, 
 "^ot:annotationEvents": {
-"annotation": []
+"annotation": [
+{
+"@dateCreated": "2016-10-18T08:17:09.814Z", 
+"@description": "Aids for mapping study OTUs to OTT taxa", 
+"@id": "otu-mapping-hints", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "OTU_MAPPING_HINTS", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"searchContext": {
+"$": "Cnidarians"
 }, 
-"^ot:candidateTreeForSynthesis": [], 
-"^ot:curatorName": "Chris Owen", 
+"substitutions": {
+"substitution": [
+{
+"@active": false, 
+"@valid": true, 
+"new": {
+"$": ""
+}, 
+"old": {
+"$": ""
+}
+}
+]
+}, 
+"useFuzzyMatching": false
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}, 
+{
+"@dateCreated": "2016-10-18T08:17:09.814Z", 
+"@description": "Describes supporting data files for this study", 
+"@id": "supporting-files-metadata", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "SUPPORTING_FILE_INFO", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"@movedToPermanentArchive": false, 
+"files": {
+"file": []
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}
+]
+}, 
+"^ot:candidateTreeForSynthesis": [
+"tree6248"
+], 
+"^ot:comment": "", 
+"^ot:curatorName": [
+"Chris Owen", 
+"L-Leclere"
+], 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S10096"
 }, 
-"^ot:focalClade": 981800, 
-"^ot:focalCladeOTTTaxonName": "Leptomedusae", 
-"^ot:messages": {
-"message": []
-}, 
+"^ot:focalClade": 1010196, 
+"^ot:focalCladeOTTTaxonName": "Leptothecata", 
+"^ot:notIntendedForSynthesis": false, 
 "^ot:otusElementOrder": [
 "otus1785"
 ], 
@@ -59,12 +137,16 @@
 "^ot:studyPublication": {
 "@href": "http://dx.doi.org/10.1093/sysbio/syp044"
 }, 
-"^ot:studyPublicationReference": "Leclere L., Schuchert P., Cruaud C., Couloux A., & Manuel M. 2009. Molecular phylogenetics of Thecata (Hydrozoa, Cnidaria) reveals long-term maintenance of life history traits despite high frequency of recent character changes. Systematic Biology 58 (5): 509-526.", 
+"^ot:studyPublicationReference": "Lucas Leclere, Peter Schuchert, Corinne Cruaud , Arnaud Couloux, Michael Manuel, 2009. Molecular phylogenetics of Thecata (Hydrozoa, Cnidaria) reveals long-term maintenance of life history traits despite high frequency of recent character changes. Systematic Biology 58 (5): 509-526.", 
 "^ot:studyYear": 2009, 
 "^ot:tag": [], 
 "^ot:treesElementOrder": [
 "trees1785"
 ], 
+"^xhtml:license": {
+"@href": "http://creativecommons.org/publicdomain/zero/1.0/", 
+"@name": "CC0"
+}, 
 "otusById": {
 "otus1785": {
 "otuById": {
@@ -526,6 +608,8 @@
 }, 
 "otu278117": {
 "^ot:originalLabel": "Obelia sp", 
+"^ot:ottId": 329822, 
+"^ot:ottTaxonName": "Obelia", 
 "^ot:treebaseOTUId": "Tl241849"
 }, 
 "otu278118": {
@@ -985,22 +1069,22 @@
 ], 
 "treeById": {
 "tree3602": {
+"@label": "Leptothecata fig2 ML 28S", 
 "@xsi:type": "nex:FloatTree", 
 "^ot:branchLengthDescription": "", 
-"^ot:branchLengthMode": "", 
+"^ot:branchLengthMode": "ot:undefined", 
 "^ot:branchLengthTimeUnit": "", 
-"^ot:curatedType": "Fig. 2 ML 28S PhyML", 
-"^ot:inGroupClade": "node691863", 
+"^ot:curatedType": "Maximum likelihood ", 
+"^ot:inGroupClade": "node691957", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
 "^ot:outGroupEdge": "", 
-"^ot:rootNodeId": "node691863", 
-"^ot:specifiedRoot": "", 
+"^ot:rootNodeId": "tree3602_ROOT", 
+"^ot:specifiedRoot": "tree3602_ROOT", 
 "^ot:tag": [], 
+"^ot:unrootedTree": false, 
 "edgeBySourceId": {
 "node691863": {
-"edge691864": {
-"@source": "node691863", 
-"@target": "node691864"
-}, 
 "edge692077": {
 "@source": "node691863", 
 "@target": "node692077"
@@ -1011,9 +1095,9 @@
 }
 }, 
 "node691864": {
-"edge691865": {
+"edge691864": {
 "@source": "node691864", 
-"@target": "node691865"
+"@target": "node691863"
 }, 
 "edge692076": {
 "@source": "node691864", 
@@ -1021,9 +1105,9 @@
 }
 }, 
 "node691865": {
-"edge691866": {
+"edge691865": {
 "@source": "node691865", 
-"@target": "node691866"
+"@target": "node691864"
 }, 
 "edge692075": {
 "@source": "node691865", 
@@ -1031,9 +1115,9 @@
 }
 }, 
 "node691866": {
-"edge691867": {
+"edge691866": {
 "@source": "node691866", 
-"@target": "node691867"
+"@target": "node691865"
 }, 
 "edge692074": {
 "@source": "node691866", 
@@ -1041,9 +1125,9 @@
 }
 }, 
 "node691867": {
-"edge691868": {
+"edge691867": {
 "@source": "node691867", 
-"@target": "node691868"
+"@target": "node691866"
 }, 
 "edge692073": {
 "@source": "node691867", 
@@ -1051,9 +1135,9 @@
 }
 }, 
 "node691868": {
-"edge691869": {
+"edge691868": {
 "@source": "node691868", 
-"@target": "node691869"
+"@target": "node691867"
 }, 
 "edge692072": {
 "@source": "node691868", 
@@ -1061,9 +1145,9 @@
 }
 }, 
 "node691869": {
-"edge691870": {
+"edge691869": {
 "@source": "node691869", 
-"@target": "node691870"
+"@target": "node691868"
 }, 
 "edge692067": {
 "@source": "node691869", 
@@ -1071,9 +1155,9 @@
 }
 }, 
 "node691870": {
-"edge691871": {
+"edge691870": {
 "@source": "node691870", 
-"@target": "node691871"
+"@target": "node691869"
 }, 
 "edge692064": {
 "@source": "node691870", 
@@ -1081,9 +1165,9 @@
 }
 }, 
 "node691871": {
-"edge691872": {
+"edge691871": {
 "@source": "node691871", 
-"@target": "node691872"
+"@target": "node691870"
 }, 
 "edge692057": {
 "@source": "node691871", 
@@ -1091,9 +1175,9 @@
 }
 }, 
 "node691872": {
-"edge691873": {
+"edge691872": {
 "@source": "node691872", 
-"@target": "node691873"
+"@target": "node691871"
 }, 
 "edge692040": {
 "@source": "node691872", 
@@ -1101,13 +1185,13 @@
 }
 }, 
 "node691873": {
+"edge691873": {
+"@source": "node691873", 
+"@target": "node691872"
+}, 
 "edge691874": {
 "@source": "node691873", 
 "@target": "node691874"
-}, 
-"edge691895": {
-"@source": "node691873", 
-"@target": "node691895"
 }
 }, 
 "node691874": {
@@ -1211,13 +1295,13 @@
 }
 }, 
 "node691895": {
+"edge691895": {
+"@source": "node691895", 
+"@target": "node691873"
+}, 
 "edge691896": {
 "@source": "node691895", 
 "@target": "node691896"
-}, 
-"edge691931": {
-"@source": "node691895", 
-"@target": "node691931"
 }
 }, 
 "node691896": {
@@ -1391,13 +1475,13 @@
 }
 }, 
 "node691931": {
+"edge691931": {
+"@source": "node691931", 
+"@target": "node691895"
+}, 
 "edge691932": {
 "@source": "node691931", 
 "@target": "node691932"
-}, 
-"edge691945": {
-"@source": "node691931", 
-"@target": "node691945"
 }
 }, 
 "node691932": {
@@ -1461,13 +1545,13 @@
 }
 }, 
 "node691945": {
+"edge691945": {
+"@source": "node691945", 
+"@target": "node691931"
+}, 
 "edge691946": {
 "@source": "node691945", 
 "@target": "node691946"
-}, 
-"edge691955": {
-"@source": "node691945", 
-"@target": "node691955"
 }
 }, 
 "node691946": {
@@ -1511,9 +1595,9 @@
 }
 }, 
 "node691955": {
-"edge691956": {
+"edge691955": {
 "@source": "node691955", 
-"@target": "node691956"
+"@target": "node691945"
 }, 
 "edge691991": {
 "@source": "node691955", 
@@ -1521,9 +1605,9 @@
 }
 }, 
 "node691956": {
-"edge691957": {
+"edge691956": {
 "@source": "node691956", 
-"@target": "node691957"
+"@target": "node691955"
 }, 
 "edge691988": {
 "@source": "node691956", 
@@ -1531,9 +1615,9 @@
 }
 }, 
 "node691957": {
-"edge691958": {
+"edge691957": {
 "@source": "node691957", 
-"@target": "node691958"
+"@target": "node691956"
 }, 
 "edge691987": {
 "@source": "node691957", 
@@ -1541,9 +1625,9 @@
 }
 }, 
 "node691958": {
-"edge691959": {
+"edge691958": {
 "@source": "node691958", 
-"@target": "node691959"
+"@target": "node691957"
 }, 
 "edge691980": {
 "@source": "node691958", 
@@ -1551,9 +1635,9 @@
 }
 }, 
 "node691959": {
-"edge691960": {
+"edge691959": {
 "@source": "node691959", 
-"@target": "node691960"
+"@target": "node691958"
 }, 
 "edge691977": {
 "@source": "node691959", 
@@ -1561,13 +1645,13 @@
 }
 }, 
 "node691960": {
+"edge691960": {
+"@source": "node691960", 
+"@target": "node691959"
+}, 
 "edge691961": {
 "@source": "node691960", 
 "@target": "node691961"
-}, 
-"edge691964": {
-"@source": "node691960", 
-"@target": "node691964"
 }
 }, 
 "node691961": {
@@ -1581,9 +1665,9 @@
 }
 }, 
 "node691964": {
-"edge691965": {
+"edge691964": {
 "@source": "node691964", 
-"@target": "node691965"
+"@target": "node691960"
 }, 
 "edge691974": {
 "@source": "node691964", 
@@ -2069,12 +2153,20 @@
 "@source": "node692068", 
 "@target": "node692070"
 }
+}, 
+"tree3602_ROOT": {
+"edge691965": {
+"@source": "tree3602_ROOT", 
+"@target": "node691965"
+}, 
+"tree3602_ROOT_EDGE": {
+"@source": "tree3602_ROOT", 
+"@target": "node691964"
+}
 }
 }, 
 "nodeById": {
-"node691863": {
-"@root": true
-}, 
+"node691863": {}, 
 "node691864": {}, 
 "node691865": {}, 
 "node691866": {}, 
@@ -2507,20 +2599,27 @@
 }, 
 "node692078": {
 "@otu": "otu278154"
+}, 
+"tree3602_ROOT": {
+"@root": true
 }
 }
 }, 
 "tree5629": {
+"@label": "Leptothecata fig1 ML 18S", 
 "@xsi:type": "nex:FloatTree", 
 "^ot:branchLengthDescription": "", 
-"^ot:branchLengthMode": "", 
+"^ot:branchLengthMode": "ot:substitutionCount", 
 "^ot:branchLengthTimeUnit": "", 
-"^ot:curatedType": "Fig. 1 ML 18S PhyML", 
+"^ot:curatedType": "Maximum likelihood ", 
 "^ot:inGroupClade": "node970537", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
 "^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node970536", 
-"^ot:specifiedRoot": "", 
+"^ot:specifiedRoot": "node970536", 
 "^ot:tag": [], 
+"^ot:unrootedTree": false, 
 "edgeBySourceId": {
 "node970536": {
 "edge970537": {
@@ -4535,19 +4634,23 @@
 }
 }, 
 "tree6248": {
+"@label": "Leptothecata fig3 16s18s28s ML", 
 "@xsi:type": "nex:FloatTree", 
 "^ot:branchLengthDescription": "", 
-"^ot:branchLengthMode": "", 
+"^ot:branchLengthMode": "ot:undefined", 
 "^ot:branchLengthTimeUnit": "", 
-"^ot:curatedType": "Fig 3. 16S, 18S, 28S, PhyML", 
+"^ot:curatedType": "Maximum likelihood ", 
 "^ot:inGroupClade": "node1083201", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
 "^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node1083200", 
-"^ot:specifiedRoot": "", 
+"^ot:specifiedRoot": "node1083200", 
 "^ot:tag": [
 "ingroup added;", 
 "Choose me"
 ], 
+"^ot:unrootedTree": false, 
 "edgeBySourceId": {
 "node1083200": {
 "edge1083201": {
@@ -5924,10 +6027,12 @@
 "@otu": "otu278154"
 }, 
 "node1083222": {
-"@otu": "otu278091"
+"@otu": "otu278091", 
+"^ot:isTaxonExemplar": true
 }, 
 "node1083223": {
-"@otu": "otu278080"
+"@otu": "otu278080", 
+"^ot:isTaxonExemplar": false
 }, 
 "node1083224": {
 "@otu": "otu278054"

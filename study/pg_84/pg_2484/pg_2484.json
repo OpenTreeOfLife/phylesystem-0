@@ -15,16 +15,13 @@
 "^ot:agents": {
 "agent": [
 {
-"@description": "validator of NexSON constraints as well as constraints that would allow a study to be imported into the Open Tree of Life's phylogenetic synthesis tools", 
+"@description": "Open Tree NexSON validation", 
 "@id": "peyotl-validator", 
-"@name": "validate_ot_nexson.py", 
+"@name": "api.opentreeoflife.org/validate", 
 "@url": "https://github.com/OpenTreeOfLife/peyotl", 
 "@version": "0.0.4a", 
 "invocation": {
-"commandLine": [
-"--embed", 
-"--agent-only"
-], 
+"commandLine": [], 
 "otherProperty": [
 {
 "name": "pythonVersion", 
@@ -42,7 +39,9 @@
 "^ot:annotationEvents": {
 "annotation": []
 }, 
-"^ot:candidateTreeForSynthesis": [], 
+"^ot:candidateTreeForSynthesis": [
+"tree6607"
+], 
 "^ot:curatorName": "Angela Oliverio", 
 "^ot:focalClade": 1064655, 
 "^ot:focalCladeOTTTaxonName": "Amoebozoa", 
@@ -56,7 +55,7 @@
 "^ot:studyPublication": {
 "@href": "http://dx.doi.org/10.1371/journal.pone.0022780"
 }, 
-"^ot:studyPublicationReference": "Lahr, DJG, J Grant, T Nguyen, JH Lin, LA Katz. 2011. Comprehensive phylogenetic reconstruction of Amoebozoa based on concatenated analyses of SSU-rDNA and actin genes. Plos One 6.", 
+"^ot:studyPublicationReference": "Lahr, D.J.G., J. Grant, T. Nguyen, J.H. Lin, L.A. Katz. 2011. Comprehensive phylogenetic reconstruction of Amoebozoa based on concatenated analyses of SSU-rDNA and actin genes. PLoS ONE 6 (7): e22780.", 
 "^ot:studyYear": 2011, 
 "^ot:tag": [], 
 "^ot:treesElementOrder": [
@@ -580,9 +579,7 @@
 "^ot:ottTaxonName": "Amoebozoa sp. 4168"
 }, 
 "otu359525": {
-"^ot:originalLabel": "Protostelium mycophagum", 
-"^ot:ottId": 996251, 
-"^ot:ottTaxonName": "Protostelium mycophagum"
+"^ot:originalLabel": "Protostelium mycophagum"
 }, 
 "otu359526": {
 "^ot:originalLabel": "Protostelium okumukumu", 
@@ -735,9 +732,7 @@
 "^ot:ottTaxonName": "Gocevia fonbrunei"
 }, 
 "otu359556": {
-"^ot:originalLabel": "Endostelium zonatum", 
-"^ot:ottId": 229624, 
-"^ot:ottTaxonName": "Endostelium zonatum"
+"^ot:originalLabel": "Endostelium zonatum"
 }, 
 "otu359557": {
 "^ot:originalLabel": "Cochliopodium spl", 
@@ -2989,14 +2984,15 @@
 "tree6607": {
 "@xsi:type": "nex:FloatTree", 
 "^ot:branchLengthDescription": "", 
-"^ot:branchLengthMode": "", 
+"^ot:branchLengthMode": "ot:substitutionCount", 
 "^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "tree_rooted", 
 "^ot:inGroupClade": "node1153122", 
 "^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node1153102", 
-"^ot:specifiedRoot": "", 
+"^ot:specifiedRoot": "node1153102", 
 "^ot:tag": [], 
+"^ot:unrootedTree": false, 
 "edgeBySourceId": {
 "node1153102": {
 "edge1153103": {

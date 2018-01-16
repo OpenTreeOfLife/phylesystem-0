@@ -36,22 +36,100 @@
 }
 ]
 }
+}, 
+{
+"@description": "Web-based interface for submitting, editing, and reviewing studies in the Open Tree of Life project.", 
+"@id": "opentree-curation-webapp", 
+"@name": "OpenTree curation webapp", 
+"@url": "https://github.com/OpenTreeOfLife/opentree", 
+"@version": "0.0.0"
 }
 ]
 }, 
 "^ot:annotationEvents": {
-"annotation": []
+"annotation": [
+{
+"@dateCreated": "2015-12-09T22:24:54.455Z", 
+"@description": "Aids for mapping study OTUs to OTT taxa", 
+"@id": "otu-mapping-hints", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "OTU_MAPPING_HINTS", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"searchContext": {
+"$": "Tetrapods"
 }, 
-"^ot:candidateTreeForSynthesis": [], 
-"^ot:curatorName": "Chris Owen", 
+"substitutions": {
+"substitution": [
+{
+"@active": false, 
+"@valid": true, 
+"new": {
+"$": ""
+}, 
+"old": {
+"$": ""
+}
+}
+]
+}, 
+"useFuzzyMatching": false
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}, 
+{
+"@dateCreated": "2015-12-09T22:24:54.455Z", 
+"@description": "Describes supporting data files for this study", 
+"@id": "supporting-files-metadata", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "SUPPORTING_FILE_INFO", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"@movedToPermanentArchive": false, 
+"files": {
+"file": []
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}
+]
+}, 
+"^ot:candidateTreeForSynthesis": [
+"tree6406"
+], 
+"^ot:comment": "", 
+"^ot:curatorName": [
+"Chris Owen", 
+"Joseph W. Brown"
+], 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S10164"
 }, 
 "^ot:focalClade": 639666, 
 "^ot:focalCladeOTTTaxonName": "Testudines", 
-"^ot:messages": {
-"message": []
-}, 
+"^ot:notIntendedForSynthesis": false, 
 "^ot:otusElementOrder": [
 "otus2447"
 ], 
@@ -59,7 +137,7 @@
 "^ot:studyPublication": {
 "@href": "http://dx.doi.org/10.1016/j.ympev.2009.11.005"
 }, 
-"^ot:studyPublicationReference": "Barley A., Spinks P., Thomson R., & Shaffer H. 2010. Fourteen nuclear genes provide phylogenetic resolution for difficult nodes in the turtle tree of life. Molecular Phylogenetics and Evolution 55 (3): 1189-1194.", 
+"^ot:studyPublicationReference": "Barley, Anthony J., Phillip Q. Spinks, Robert C. Thomson, H. Bradley Shaffer. 2010. Fourteen nuclear genes provide phylogenetic resolution for difficult nodes in the turtle tree of life. Molecular Phylogenetics and Evolution 55 (3): 1189-1194.", 
 "^ot:studyYear": 2010, 
 "^ot:tag": [], 
 "^ot:treesElementOrder": [
@@ -202,21 +280,24 @@
 "@otus": "otus2447", 
 "^ot:treeElementOrder": [
 "tree5221", 
-"tree5222", 
 "tree6406"
 ], 
 "treeById": {
 "tree5221": {
+"@label": "Fig. 2a Bayesian", 
 "@xsi:type": "nex:FloatTree", 
 "^ot:branchLengthDescription": "", 
-"^ot:branchLengthMode": "", 
-"^ot:branchLengthTimeUnit": "", 
-"^ot:curatedType": "Concatenated Dataset Tree", 
+"^ot:branchLengthMode": "ot:undefined", 
+"^ot:branchLengthTimeUnit": "Myr", 
+"^ot:curatedType": "Bayesian inference ", 
 "^ot:inGroupClade": "node897745", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
 "^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node897742", 
-"^ot:specifiedRoot": "", 
+"^ot:specifiedRoot": "node897742", 
 "^ot:tag": [], 
+"^ot:unrootedTree": false, 
 "edgeBySourceId": {
 "node897742": {
 "edge897743": {
@@ -500,306 +581,21 @@
 }
 }
 }, 
-"tree5222": {
-"@xsi:type": "nex:FloatTree", 
-"^ot:branchLengthDescription": "", 
-"^ot:branchLengthMode": "", 
-"^ot:branchLengthTimeUnit": "", 
-"^ot:curatedType": "BEST con tree", 
-"^ot:inGroupClade": "node897784", 
-"^ot:outGroupEdge": "", 
-"^ot:rootNodeId": "node897782", 
-"^ot:specifiedRoot": "", 
-"^ot:tag": [
-"delete me"
-], 
-"edgeBySourceId": {
-"node897782": {
-"edge897783": {
-"@source": "node897782", 
-"@target": "node897783"
-}, 
-"edge897784": {
-"@source": "node897782", 
-"@target": "node897784"
-}
-}, 
-"node897784": {
-"edge897785": {
-"@source": "node897784", 
-"@target": "node897785"
-}, 
-"edge897816": {
-"@source": "node897784", 
-"@target": "node897816"
-}
-}, 
-"node897785": {
-"edge897786": {
-"@source": "node897785", 
-"@target": "node897786"
-}, 
-"edge897815": {
-"@source": "node897785", 
-"@target": "node897815"
-}
-}, 
-"node897786": {
-"edge897787": {
-"@source": "node897786", 
-"@target": "node897787"
-}, 
-"edge897804": {
-"@source": "node897786", 
-"@target": "node897804"
-}
-}, 
-"node897787": {
-"edge897788": {
-"@source": "node897787", 
-"@target": "node897788"
-}, 
-"edge897799": {
-"@source": "node897787", 
-"@target": "node897799"
-}
-}, 
-"node897788": {
-"edge897789": {
-"@source": "node897788", 
-"@target": "node897789"
-}, 
-"edge897794": {
-"@source": "node897788", 
-"@target": "node897794"
-}
-}, 
-"node897789": {
-"edge897790": {
-"@source": "node897789", 
-"@target": "node897790"
-}, 
-"edge897791": {
-"@source": "node897789", 
-"@target": "node897791"
-}
-}, 
-"node897791": {
-"edge897792": {
-"@source": "node897791", 
-"@target": "node897792"
-}, 
-"edge897793": {
-"@source": "node897791", 
-"@target": "node897793"
-}
-}, 
-"node897794": {
-"edge897795": {
-"@source": "node897794", 
-"@target": "node897795"
-}, 
-"edge897796": {
-"@source": "node897794", 
-"@target": "node897796"
-}
-}, 
-"node897796": {
-"edge897797": {
-"@source": "node897796", 
-"@target": "node897797"
-}, 
-"edge897798": {
-"@source": "node897796", 
-"@target": "node897798"
-}
-}, 
-"node897799": {
-"edge897800": {
-"@source": "node897799", 
-"@target": "node897800"
-}, 
-"edge897803": {
-"@source": "node897799", 
-"@target": "node897803"
-}
-}, 
-"node897800": {
-"edge897801": {
-"@source": "node897800", 
-"@target": "node897801"
-}, 
-"edge897802": {
-"@source": "node897800", 
-"@target": "node897802"
-}
-}, 
-"node897804": {
-"edge897805": {
-"@source": "node897804", 
-"@target": "node897805"
-}, 
-"edge897808": {
-"@source": "node897804", 
-"@target": "node897808"
-}
-}, 
-"node897805": {
-"edge897806": {
-"@source": "node897805", 
-"@target": "node897806"
-}, 
-"edge897807": {
-"@source": "node897805", 
-"@target": "node897807"
-}
-}, 
-"node897808": {
-"edge897809": {
-"@source": "node897808", 
-"@target": "node897809"
-}, 
-"edge897812": {
-"@source": "node897808", 
-"@target": "node897812"
-}
-}, 
-"node897809": {
-"edge897810": {
-"@source": "node897809", 
-"@target": "node897810"
-}, 
-"edge897811": {
-"@source": "node897809", 
-"@target": "node897811"
-}
-}, 
-"node897812": {
-"edge897813": {
-"@source": "node897812", 
-"@target": "node897813"
-}, 
-"edge897814": {
-"@source": "node897812", 
-"@target": "node897814"
-}
-}, 
-"node897816": {
-"edge897817": {
-"@source": "node897816", 
-"@target": "node897817"
-}, 
-"edge897818": {
-"@source": "node897816", 
-"@target": "node897818"
-}
-}, 
-"node897818": {
-"edge897819": {
-"@source": "node897818", 
-"@target": "node897819"
-}, 
-"edge897820": {
-"@source": "node897818", 
-"@target": "node897820"
-}
-}
-}, 
-"nodeById": {
-"node897782": {
-"@root": true
-}, 
-"node897783": {
-"@otu": "otu348088"
-}, 
-"node897784": {}, 
-"node897785": {}, 
-"node897786": {}, 
-"node897787": {}, 
-"node897788": {}, 
-"node897789": {}, 
-"node897790": {
-"@otu": "otu348090"
-}, 
-"node897791": {}, 
-"node897792": {
-"@otu": "otu348073"
-}, 
-"node897793": {
-"@otu": "otu348091"
-}, 
-"node897794": {}, 
-"node897795": {
-"@otu": "otu348092"
-}, 
-"node897796": {}, 
-"node897797": {
-"@otu": "otu348081"
-}, 
-"node897798": {
-"@otu": "otu348093"
-}, 
-"node897799": {}, 
-"node897800": {}, 
-"node897801": {
-"@otu": "otu348075"
-}, 
-"node897802": {
-"@otu": "otu348082"
-}, 
-"node897803": {
-"@otu": "otu348089"
-}, 
-"node897804": {}, 
-"node897805": {}, 
-"node897806": {
-"@otu": "otu348085"
-}, 
-"node897807": {
-"@otu": "otu348079"
-}, 
-"node897808": {}, 
-"node897809": {}, 
-"node897810": {
-"@otu": "otu348084"
-}, 
-"node897811": {
-"@otu": "otu348080"
-}, 
-"node897812": {}, 
-"node897813": {
-"@otu": "otu348083"
-}, 
-"node897814": {
-"@otu": "otu348076"
-}, 
-"node897815": {
-"@otu": "otu348077"
-}, 
-"node897816": {}, 
-"node897817": {
-"@otu": "otu348086"
-}, 
-"node897818": {}, 
-"node897819": {
-"@otu": "otu348078"
-}, 
-"node897820": {
-"@otu": "otu348074"
-}
-}
-}, 
 "tree6406": {
+"@label": "Fig. 2b BEST (species tree) consensus", 
 "@xsi:type": "nex:FloatTree", 
 "^ot:branchLengthDescription": "", 
-"^ot:branchLengthMode": "", 
-"^ot:branchLengthTimeUnit": "", 
-"^ot:curatedType": "BEST con tree", 
+"^ot:branchLengthMode": "ot:undefined", 
+"^ot:branchLengthTimeUnit": "Myr", 
+"^ot:curatedType": "BEST (species tree)", 
 "^ot:inGroupClade": "node1114600", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
 "^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node1114599", 
-"^ot:specifiedRoot": "", 
+"^ot:specifiedRoot": "node1114599", 
 "^ot:tag": [], 
+"^ot:unrootedTree": false, 
 "edgeBySourceId": {
 "node1114599": {
 "edge1114600": {

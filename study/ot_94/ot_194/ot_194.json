@@ -1,0 +1,336 @@
+{
+"nexml": {
+"@about": "#study", 
+"@generator": "Open Tree API", 
+"@id": "study", 
+"@nexml2json": "1.2.1", 
+"@nexmljson": "http://purl.org/opentree/nexson", 
+"@version": "0.9", 
+"@xmlns": {
+"$": "http://www.nexml.org/2009", 
+"nex": "http://www.nexml.org/2009", 
+"ot": "http://purl.org/opentree-terms#", 
+"xhtml": "http://www.w3.org/1999/xhtml/vocab#", 
+"xsd": "http://www.w3.org/2001/XMLSchema#", 
+"xsi": "http://www.w3.org/2001/XMLSchema-instance"
+}, 
+"^ot:agents": {
+"agent": [
+{
+"@description": "Open Tree NexSON validation", 
+"@id": "peyotl-validator", 
+"@name": "api.opentreeoflife.org/validate", 
+"@url": "https://github.com/OpenTreeOfLife/peyotl", 
+"@version": "0.0.4a", 
+"invocation": {
+"commandLine": [], 
+"otherProperty": [
+{
+"name": "pythonVersion", 
+"value": "2.7.3"
+}, 
+{
+"name": "pythonImplementation", 
+"value": "CPython"
+}
+]
+}
+}, 
+{
+"@description": "Web-based interface for submitting, editing, and reviewing studies in the Open Tree of Life project.", 
+"@id": "opentree-curation-webapp", 
+"@name": "OpenTree curation webapp", 
+"@url": "https://github.com/OpenTreeOfLife/opentree", 
+"@version": "0.0.0"
+}
+]
+}, 
+"^ot:annotationEvents": {
+"annotation": [
+{
+"@dateCreated": "2014-08-18T18:31:14.887Z", 
+"@description": "Aids for mapping study OTUs to OTT taxa", 
+"@id": "otu-mapping-hints", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "OTU_MAPPING_HINTS", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"searchContext": {
+"$": "All life"
+}, 
+"substitutions": {
+"substitution": [
+{
+"@active": false, 
+"@valid": true, 
+"new": {
+"$": ""
+}, 
+"old": {
+"$": ""
+}
+}
+]
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}, 
+{
+"@dateCreated": "2014-08-18T18:31:14.887Z", 
+"@description": "Describes supporting data files for this study", 
+"@id": "supporting-files-metadata", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "SUPPORTING_FILE_INFO", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"@movedToPermanentArchive": false, 
+"files": {
+"file": [
+{
+"@filename": "Buhay_2007_edited.tre", 
+"@size": "", 
+"@type": "newick", 
+"@url": "", 
+"description": {
+"$": "phyml tree; newick"
+}, 
+"sourceForTree": [
+{
+"$": "tree1"
+}
+]
+}, 
+{
+"@filename": "<content provided as a string in a \"content\" rather than a file upload>", 
+"@size": "", 
+"@type": "newick", 
+"@url": "", 
+"description": {
+"$": ""
+}, 
+"sourceForTree": [
+{
+"$": "tree2"
+}
+]
+}
+]
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}
+]
+}, 
+"^ot:candidateTreeForSynthesis": [
+"tree2"
+], 
+"^ot:comment": "", 
+"^ot:curatorName": [
+"chris-owen", 
+"Joseph W. Brown"
+], 
+"^ot:dataDeposit": {
+"@href": ""
+}, 
+"^ot:focalClade": 876591, 
+"^ot:focalCladeOTTTaxonName": "Cambarus", 
+"^ot:messages": {
+"message": []
+}, 
+"^ot:notIntendedForSynthesis": false, 
+"^ot:otusElementOrder": [
+"otus1"
+], 
+"^ot:studyId": "ot_194", 
+"^ot:studyPublication": {
+"@href": "http://dx.doi.org/10.1016/j.ympev.2006.07.014"
+}, 
+"^ot:studyPublicationReference": "Jennifer E. Buhay, Gerald Moni, Nathaniel Mann, Keith A. Crandall, 2007, 'Molecular taxonomy in the dark: Evolutionary history, phylogeography, and diversity of cave crayfish in the subgenus Aviticambarus, genus Cambarus', Molecular Phylogenetics and Evolution, vol. 42, no. 2, pp. 435-448", 
+"^ot:studyYear": 2007, 
+"^ot:tag": [
+"crayfish"
+], 
+"^ot:treesElementOrder": [
+"trees1"
+], 
+"^xhtml:license": {
+"@href": "http://creativecommons.org/publicdomain/zero/1.0/"
+}, 
+"otusById": {
+"otus1": {
+"otuById": {
+"otu1": {
+"^ot:originalLabel": "Cambarus hamulatus", 
+"^ot:ottId": 1013834, 
+"^ot:ottTaxonName": "Cambarus hamulatus"
+}, 
+"otu2": {
+"^ot:originalLabel": "Cambarus jonesi", 
+"^ot:ottId": 1083975, 
+"^ot:ottTaxonName": "Cambarus jonesi"
+}, 
+"otu3": {
+"^ot:originalLabel": "Cambarus gentryi", 
+"^ot:ottId": 194210, 
+"^ot:ottTaxonName": "Cambarus gentryi"
+}, 
+"otu4": {
+"^ot:originalLabel": "Cambarus brachydactylus", 
+"^ot:ottId": 299060, 
+"^ot:ottTaxonName": "Cambarus brachydactylus"
+}, 
+"otu5": {
+"^ot:originalLabel": "Cambarus friaufi", 
+"^ot:ottId": 1013806, 
+"^ot:ottTaxonName": "Cambarus friaufi"
+}
+}
+}
+}, 
+"treesById": {
+"trees1": {
+"@otus": "otus1", 
+"^ot:treeElementOrder": [
+"tree2"
+], 
+"treeById": {
+"tree2": {
+"@label": "PhyML_tree", 
+"@xsi:type": "nex:FloatTree", 
+"^ot:MRCAName": "Cambarus", 
+"^ot:MRCAOttId": "876591", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "ot:undefined", 
+"^ot:branchLengthTimeUnit": "Myr", 
+"^ot:curatedType": "Maximum likelihood ", 
+"^ot:inGroupClade": "node11", 
+"^ot:messages": {
+"message": [
+{
+"@code": "SUPPORTING_FILE_INFO", 
+"@humanMessageType": "NONE", 
+"@id": "messageu7d11093e-a937-48bb-aa5b-f07bce1aa4ed", 
+"@severity": "INFO", 
+"@wasGeneratedBy": "opentree.2nexml", 
+"data": {
+"@movedToPermanentArchive": false, 
+"files": {
+"file": [
+{
+"@filename": "<content provided as a string in a \"content\" rather than a file upload>", 
+"@size": 122, 
+"@sourceForTree": "tree2", 
+"@type": "newick", 
+"@url": "/curator/default/to_nexson?output=input&uploadid=u7d11093e-a937-48bb-aa5b-f07bce1aa4ed", 
+"description": {
+"$": "Source data for tree 'tree2'"
+}
+}
+]
+}
+}
+}
+]
+}, 
+"^ot:nearestTaxonMRCAName": "Cambarus", 
+"^ot:nearestTaxonMRCAOttId": "876591", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
+"^ot:outGroupEdge": "", 
+"^ot:rootNodeId": "node10", 
+"^ot:specifiedRoot": "node10", 
+"^ot:tag": [], 
+"^ot:unrootedTree": false, 
+"edgeBySourceId": {
+"node10": {
+"edge14": {
+"@source": "node10", 
+"@target": "node16"
+}, 
+"edge9": {
+"@source": "node10", 
+"@target": "node11"
+}
+}, 
+"node11": {
+"edge10": {
+"@source": "node11", 
+"@target": "node12"
+}, 
+"edge13": {
+"@source": "node11", 
+"@target": "node15"
+}
+}, 
+"node12": {
+"edge11": {
+"@source": "node12", 
+"@target": "node13"
+}, 
+"edge12": {
+"@source": "node12", 
+"@target": "node14"
+}
+}, 
+"node16": {
+"edge15": {
+"@source": "node16", 
+"@target": "node17"
+}, 
+"edge16": {
+"@source": "node16", 
+"@target": "node18"
+}
+}
+}, 
+"nodeById": {
+"node10": {
+"@root": true
+}, 
+"node11": {}, 
+"node12": {}, 
+"node13": {
+"@otu": "otu1"
+}, 
+"node14": {
+"@otu": "otu2"
+}, 
+"node15": {
+"@otu": "otu3"
+}, 
+"node16": {}, 
+"node17": {
+"@otu": "otu4"
+}, 
+"node18": {
+"@otu": "otu5"
+}
+}
+}
+}
+}
+}
+}
+}

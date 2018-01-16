@@ -36,19 +36,102 @@
 }
 ]
 }
+}, 
+{
+"@description": "Web-based interface for submitting, editing, and reviewing studies in the Open Tree of Life project.", 
+"@id": "opentree-curation-webapp", 
+"@name": "OpenTree curation webapp", 
+"@url": "https://github.com/OpenTreeOfLife/opentree", 
+"@version": "0.0.0"
 }
 ]
 }, 
 "^ot:annotationEvents": {
-"annotation": []
+"annotation": [
+{
+"@dateCreated": "2014-07-29T15:55:32.016Z", 
+"@description": "Aids for mapping study OTUs to OTT taxa", 
+"@id": "otu-mapping-hints", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "OTU_MAPPING_HINTS", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"searchContext": {
+"$": "Birds"
 }, 
-"^ot:candidateTreeForSynthesis": [], 
-"^ot:curatorName": "Joseph Brown", 
+"substitutions": {
+"substitution": [
+{
+"@active": false, 
+"@valid": true, 
+"new": {
+"$": ""
+}, 
+"old": {
+"$": ""
+}
+}
+]
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}, 
+{
+"@dateCreated": "2014-07-29T15:55:32.016Z", 
+"@description": "Describes supporting data files for this study", 
+"@id": "supporting-files-metadata", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "SUPPORTING_FILE_INFO", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"@movedToPermanentArchive": false, 
+"files": {
+"file": []
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}
+]
+}, 
+"^ot:candidateTreeForSynthesis": [
+"tree6667"
+], 
+"^ot:comment": "", 
+"^ot:curatorName": [
+"Joseph Brown", 
+"Joseph W. Brown"
+], 
+"^ot:dataDeposit": {
+"@href": ""
+}, 
 "^ot:focalClade": 711863, 
 "^ot:focalCladeOTTTaxonName": "Carpodacus", 
 "^ot:messages": {
 "message": []
 }, 
+"^ot:notIntendedForSynthesis": false, 
 "^ot:otusElementOrder": [
 "otus2874"
 ], 
@@ -66,7 +149,9 @@
 "otus2874": {
 "otuById": {
 "otu427126": {
-"^ot:originalLabel": "Carpodacus thura dubius"
+"^ot:originalLabel": "Carpodacus thura dubius", 
+"^ot:ottId": 3597376, 
+"^ot:ottTaxonName": "Carpodacus dubius"
 }, 
 "otu427127": {
 "^ot:originalLabel": "Carpodacus thura thura", 
@@ -104,7 +189,9 @@
 "^ot:ottTaxonName": "Carpodacus rubicilla"
 }, 
 "otu427134": {
-"^ot:originalLabel": "Carpodacus rubicilla severtzovi"
+"^ot:originalLabel": "Carpodacus rubicilla severtzovi", 
+"^ot:ottId": 3597380, 
+"^ot:ottTaxonName": "Carpodacus severtzovi"
 }, 
 "otu427135": {
 "^ot:originalLabel": "Carpodacus rubicilloides", 
@@ -142,7 +229,9 @@
 "^ot:ottTaxonName": "Carpodacus rodopeplus"
 }, 
 "otu427142": {
-"^ot:originalLabel": "Carpodacus rodopeplus verreauxii"
+"^ot:originalLabel": "Carpodacus rodopeplus verreauxii", 
+"^ot:ottId": 3597378, 
+"^ot:ottTaxonName": "Carpodacus verreauxii"
 }, 
 "otu427143": {
 "^ot:originalLabel": "Carpodacus rodochroa", 
@@ -163,7 +252,9 @@
 "^ot:ottTaxonName": "Carpodacus eos"
 }, 
 "otu427147": {
-"^ot:originalLabel": "Carpodacus pulcherrimus davidianus"
+"^ot:originalLabel": "Carpodacus pulcherrimus davidianus", 
+"^ot:ottId": 3597375, 
+"^ot:ottTaxonName": "Carpodacus davidianus"
 }, 
 "otu427148": {
 "^ot:originalLabel": "Carpodacus pulcherrimus pulcherrimus", 
@@ -236,16 +327,19 @@
 ], 
 "treeById": {
 "tree6667": {
+"@label": "Fig. 1", 
 "@xsi:type": "nex:FloatTree", 
 "^ot:branchLengthDescription": "", 
-"^ot:branchLengthMode": "", 
 "^ot:branchLengthTimeUnit": "", 
-"^ot:curatedType": "Fig. 1 Bayesian (topology)", 
+"^ot:curatedType": "Bayesian inference ", 
 "^ot:inGroupClade": "node1162138", 
+"^ot:nearestTaxonMRCAName": "Fringillidae", 
+"^ot:nearestTaxonMRCAOttId": "839319", 
 "^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node1162135", 
-"^ot:specifiedRoot": "", 
+"^ot:specifiedRoot": "node1162135", 
 "^ot:tag": [], 
+"^ot:unrootedTree": false, 
 "edgeBySourceId": {
 "node1162135": {
 "edge1162136": {
@@ -633,10 +727,12 @@
 }, 
 "node1162163": {}, 
 "node1162164": {
-"@otu": "otu427137"
+"@otu": "otu427137", 
+"^ot:isTaxonExemplar": true
 }, 
 "node1162165": {
-"@otu": "otu427138"
+"@otu": "otu427138", 
+"^ot:isTaxonExemplar": false
 }, 
 "node1162166": {}, 
 "node1162167": {}, 

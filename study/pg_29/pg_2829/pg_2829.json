@@ -36,19 +36,102 @@
 }
 ]
 }
+}, 
+{
+"@description": "Web-based interface for submitting, editing, and reviewing studies in the Open Tree of Life project.", 
+"@id": "opentree-curation-webapp", 
+"@name": "OpenTree curation webapp", 
+"@url": "https://github.com/OpenTreeOfLife/opentree", 
+"@version": "0.0.0"
 }
 ]
 }, 
 "^ot:annotationEvents": {
-"annotation": []
+"annotation": [
+{
+"@dateCreated": "2014-06-27T16:14:09.802Z", 
+"@description": "Aids for mapping study OTUs to OTT taxa", 
+"@id": "otu-mapping-hints", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "OTU_MAPPING_HINTS", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"searchContext": {
+"$": "Birds"
 }, 
-"^ot:candidateTreeForSynthesis": [], 
-"^ot:curatorName": "Joseph Brown", 
+"substitutions": {
+"substitution": [
+{
+"@active": false, 
+"@valid": true, 
+"new": {
+"$": ""
+}, 
+"old": {
+"$": ""
+}
+}
+]
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}, 
+{
+"@dateCreated": "2014-06-27T16:14:09.802Z", 
+"@description": "Describes supporting data files for this study", 
+"@id": "supporting-files-metadata", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "SUPPORTING_FILE_INFO", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"@movedToPermanentArchive": false, 
+"files": {
+"file": []
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}
+]
+}, 
+"^ot:candidateTreeForSynthesis": [
+"tree6579"
+], 
+"^ot:comment": "", 
+"^ot:curatorName": [
+"Joseph Brown", 
+"Joseph W. Brown"
+], 
+"^ot:dataDeposit": {
+"@href": ""
+}, 
 "^ot:focalClade": 3599416, 
 "^ot:focalCladeOTTTaxonName": "Thraupidae", 
 "^ot:messages": {
 "message": []
 }, 
+"^ot:notIntendedForSynthesis": false, 
 "^ot:otusElementOrder": [
 "otus2829"
 ], 
@@ -256,7 +339,9 @@
 "^ot:ottTaxonName": "Chrysothlypis salmoni"
 }, 
 "otu420246": {
-"^ot:originalLabel": "Hemithraupis ruficapilla"
+"^ot:originalLabel": "Hemithraupis ruficapilla", 
+"^ot:ottId": 4947628, 
+"^ot:ottTaxonName": "Hemithraupis ruficapilla (species in family Fringillidae)"
 }, 
 "otu420247": {
 "^ot:originalLabel": "Hemithraupis guira", 
@@ -1179,7 +1264,9 @@
 "^ot:ottTaxonName": "Sicalis columbiana"
 }, 
 "otu420431": {
-"^ot:originalLabel": "Sicalis luteiventris"
+"^ot:originalLabel": "Sicalis luteiventris", 
+"^ot:ottId": 5561116, 
+"^ot:ottTaxonName": "Sicalis luteiventris"
 }, 
 "otu420432": {
 "^ot:originalLabel": "Sicalis luteola", 
@@ -1867,16 +1954,18 @@
 ], 
 "treeById": {
 "tree6579": {
+"@label": "Fig. 1 MCC", 
 "@xsi:type": "nex:FloatTree", 
 "^ot:branchLengthDescription": "", 
 "^ot:branchLengthMode": "ot:time", 
 "^ot:branchLengthTimeUnit": "Myr", 
-"^ot:curatedType": "Fig. 1 MCC", 
+"^ot:curatedType": "Bayesian inference ", 
 "^ot:inGroupClade": "node1143603", 
 "^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node1143595", 
-"^ot:specifiedRoot": "", 
+"^ot:specifiedRoot": "node1143595", 
 "^ot:tag": [], 
+"^ot:unrootedTree": false, 
 "edgeBySourceId": {
 "node1143595": {
 "edge1143596": {
@@ -6692,10 +6781,12 @@
 "node1143854": {}, 
 "node1143855": {}, 
 "node1143856": {
-"@otu": "otu420334"
+"@otu": "otu420334", 
+"^ot:isTaxonExemplar": true
 }, 
 "node1143857": {
-"@otu": "otu420335"
+"@otu": "otu420335", 
+"^ot:isTaxonExemplar": false
 }, 
 "node1143858": {}, 
 "node1143859": {

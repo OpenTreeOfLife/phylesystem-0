@@ -36,22 +36,109 @@
 }
 ]
 }
+}, 
+{
+"@description": "Web-based interface for submitting, editing, and reviewing studies in the Open Tree of Life project.", 
+"@id": "opentree-curation-webapp", 
+"@name": "OpenTree curation webapp", 
+"@url": "https://github.com/OpenTreeOfLife/opentree", 
+"@version": "0.0.0"
 }
 ]
 }, 
 "^ot:annotationEvents": {
-"annotation": []
+"annotation": [
+{
+"@dateCreated": "2015-09-29T16:06:20.415Z", 
+"@description": "Aids for mapping study OTUs to OTT taxa", 
+"@id": "otu-mapping-hints", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "OTU_MAPPING_HINTS", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"searchContext": {
+"$": "All life"
 }, 
-"^ot:candidateTreeForSynthesis": [], 
-"^ot:curatorName": "Romina Gazis", 
+"substitutions": {
+"substitution": [
+{
+"@active": false, 
+"@valid": true, 
+"new": {
+"$": ""
+}, 
+"old": {
+"$": ""
+}
+}, 
+{
+"@active": true, 
+"@valid": true, 
+"new": {
+"$": "$1"
+}, 
+"old": {
+"$": "^(\\S*\\s+\\S*).*"
+}
+}
+]
+}, 
+"useFuzzyMatching": true
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}, 
+{
+"@dateCreated": "2015-09-29T16:06:20.414Z", 
+"@description": "Describes supporting data files for this study", 
+"@id": "supporting-files-metadata", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "SUPPORTING_FILE_INFO", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"@movedToPermanentArchive": false, 
+"files": {
+"file": []
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}
+]
+}, 
+"^ot:candidateTreeForSynthesis": [
+"tree1703"
+], 
+"^ot:comment": "", 
+"^ot:curatorName": [
+"Romina Gazis"
+], 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S1040"
 }, 
 "^ot:focalClade": 931273, 
 "^ot:focalCladeOTTTaxonName": "Restionaceae", 
-"^ot:messages": {
-"message": []
-}, 
+"^ot:notIntendedForSynthesis": false, 
 "^ot:otusElementOrder": [
 "otus883"
 ], 
@@ -65,11 +152,17 @@
 "^ot:treesElementOrder": [
 "trees883"
 ], 
+"^xhtml:license": {
+"@href": "http://creativecommons.org/publicdomain/zero/1.0/", 
+"@name": "CC0"
+}, 
 "otusById": {
 "otus883": {
 "otuById": {
 "otu203335": {
 "^ot:originalLabel": "Trichoderma viride", 
+"^ot:ottId": 939823, 
+"^ot:ottTaxonName": "Hypocrea rufa", 
 "^ot:treebaseOTUId": "Tl13199"
 }, 
 "otu203336": {
@@ -98,6 +191,8 @@
 }, 
 "otu203340": {
 "^ot:originalLabel": "Parasarcopodium caeratocaryi", 
+"^ot:ottId": 536143, 
+"^ot:ottTaxonName": "Parasarcopodium ceratocaryi", 
 "^ot:treebaseOTUId": "Tl16459"
 }, 
 "otu203341": {
@@ -150,6 +245,8 @@
 }, 
 "otu203349": {
 "^ot:originalLabel": "Diaporthe phaseolorum", 
+"^ot:ottId": 737678, 
+"^ot:ottTaxonName": "Phomopsis phaseoli", 
 "^ot:treebaseOTUId": "Tl236612"
 }, 
 "otu203350": {
@@ -178,6 +275,8 @@
 }, 
 "otu203354": {
 "^ot:originalLabel": "Hypocrea lutea", 
+"^ot:ottId": 935193, 
+"^ot:ottTaxonName": "Hypocrea lutea", 
 "^ot:treebaseOTUId": "Tl236620"
 }, 
 "otu203355": {
@@ -287,17 +386,23 @@
 ], 
 "treeById": {
 "tree1703": {
+"@label": "Fig. 1: Neighbor-joining tree obtained from LSU sequence data. Bootstrap supports from 1000 replicates are shown at the nodes. The tree was rooted to Hypocrea schweinitzii AY283549 and Gliocladium viride AY283547", 
 "@xsi:type": "nex:FloatTree", 
 "^ot:branchLengthDescription": "", 
-"^ot:branchLengthMode": "", 
-"^ot:branchLengthTimeUnit": "", 
-"^ot:curatedType": "NJ, LSU", 
+"^ot:branchLengthMode": "ot:changesCount", 
+"^ot:branchLengthTimeUnit": "Myr", 
+"^ot:curatedType": "Neighbor-joining ", 
+"^ot:inGroupClade": "node478132", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
 "^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node478129", 
-"^ot:specifiedRoot": "", 
+"^ot:specifiedRoot": "node478129", 
 "^ot:tag": [
-"topology differs from figure"
+"topology differs from figure", 
+"LSU"
 ], 
+"^ot:unrootedTree": false, 
 "edgeBySourceId": {
 "node478129": {
 "edge478130": {
@@ -729,10 +834,12 @@
 }, 
 "node478181": {}, 
 "node478182": {
-"@otu": "otu203347"
+"@otu": "otu203347", 
+"^ot:isTaxonExemplar": true
 }, 
 "node478183": {
-"@otu": "otu203336"
+"@otu": "otu203336", 
+"^ot:isTaxonExemplar": false
 }, 
 "node478184": {
 "@otu": "otu203353"
@@ -756,10 +863,12 @@
 }, 
 "node478192": {}, 
 "node478193": {
-"@otu": "otu203341"
+"@otu": "otu203341", 
+"^ot:isTaxonExemplar": true
 }, 
 "node478194": {
-"@otu": "otu203337"
+"@otu": "otu203337", 
+"^ot:isTaxonExemplar": false
 }
 }
 }

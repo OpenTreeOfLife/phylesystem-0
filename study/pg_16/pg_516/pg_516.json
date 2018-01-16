@@ -15,16 +15,13 @@
 "^ot:agents": {
 "agent": [
 {
-"@description": "validator of NexSON constraints as well as constraints that would allow a study to be imported into the Open Tree of Life's phylogenetic synthesis tools", 
+"@description": "Open Tree NexSON validation", 
 "@id": "peyotl-validator", 
-"@name": "validate_ot_nexson.py", 
+"@name": "api.opentreeoflife.org/validate", 
 "@url": "https://github.com/OpenTreeOfLife/peyotl", 
 "@version": "0.0.4a", 
 "invocation": {
-"commandLine": [
-"--embed", 
-"--agent-only"
-], 
+"commandLine": [], 
 "otherProperty": [
 {
 "name": "pythonVersion", 
@@ -36,22 +33,99 @@
 }
 ]
 }
+}, 
+{
+"@description": "Web-based interface for submitting, editing, and reviewing studies in the Open Tree of Life project.", 
+"@id": "opentree-curation-webapp", 
+"@name": "OpenTree curation webapp", 
+"@url": "https://github.com/OpenTreeOfLife/opentree", 
+"@version": "0.0.0"
 }
 ]
 }, 
 "^ot:annotationEvents": {
-"annotation": []
+"annotation": [
+{
+"@dateCreated": "2015-09-30T17:23:27.148Z", 
+"@description": "Aids for mapping study OTUs to OTT taxa", 
+"@id": "otu-mapping-hints", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "OTU_MAPPING_HINTS", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"searchContext": {
+"$": "All life"
 }, 
-"^ot:candidateTreeForSynthesis": [], 
-"^ot:curatorName": "Romina Gazis", 
+"substitutions": {
+"substitution": [
+{
+"@active": false, 
+"@valid": true, 
+"new": {
+"$": ""
+}, 
+"old": {
+"$": ""
+}
+}
+]
+}, 
+"useFuzzyMatching": false
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}, 
+{
+"@dateCreated": "2015-09-30T17:23:27.148Z", 
+"@description": "Describes supporting data files for this study", 
+"@id": "supporting-files-metadata", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "SUPPORTING_FILE_INFO", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"@movedToPermanentArchive": false, 
+"files": {
+"file": []
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}
+]
+}, 
+"^ot:candidateTreeForSynthesis": [
+"tree728"
+], 
+"^ot:comment": "", 
+"^ot:curatorName": [
+"Romina Gazis"
+], 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S10590"
 }, 
 "^ot:focalClade": 104185, 
 "^ot:focalCladeOTTTaxonName": "Nectriaceae", 
-"^ot:messages": {
-"message": []
-}, 
+"^ot:notIntendedForSynthesis": false, 
 "^ot:otusElementOrder": [
 "otus516"
 ], 
@@ -65,15 +139,23 @@
 "^ot:treesElementOrder": [
 "trees516"
 ], 
+"^xhtml:license": {
+"@href": "http://creativecommons.org/publicdomain/zero/1.0/", 
+"@name": "CC0"
+}, 
 "otusById": {
 "otus516": {
 "otuById": {
 "otu166772": {
 "^ot:originalLabel": "Hypocrea rufa", 
+"^ot:ottId": 939823, 
+"^ot:ottTaxonName": "Hypocrea rufa", 
 "^ot:treebaseOTUId": "Tl390213"
 }, 
 "otu166773": {
 "^ot:originalLabel": "Nectria berolinensis", 
+"^ot:ottId": 1032304, 
+"^ot:ottTaxonName": "Thyronectria berolinensis", 
 "^ot:treebaseOTUId": "Tl390214"
 }, 
 "otu166774": {
@@ -168,10 +250,14 @@
 }, 
 "otu166789": {
 "^ot:originalLabel": "Nectria coryli", 
+"^ot:ottId": 873091, 
+"^ot:ottTaxonName": "Pleonectria coryli", 
 "^ot:treebaseOTUId": "Tl390230"
 }, 
 "otu166790": {
 "^ot:originalLabel": "Nectria lamyi", 
+"^ot:ottId": 1032320, 
+"^ot:ottTaxonName": "Thyronectria lamyi", 
 "^ot:treebaseOTUId": "Tl390231"
 }, 
 "otu166791": {
@@ -182,6 +268,8 @@
 }, 
 "otu166792": {
 "^ot:originalLabel": "Pseudonectria rousseliana", 
+"^ot:ottId": 282351, 
+"^ot:ottTaxonName": "Pseudonectria buxi", 
 "^ot:treebaseOTUId": "Tl390233"
 }, 
 "otu166793": {
@@ -207,21 +295,25 @@
 ], 
 "treeById": {
 "tree728": {
+"@label": "FIG. 1. Phylogram of the best ML tree (lnL 5 221091.24) revealed by RAxML from an analysis of the combined LSU-ITS-rpb2-tef1 matrix of selected Hypocreales, showing the phylogenetic position of Nectria eustromatica within Nectria sensu stricto.", 
 "@xsi:type": "nex:FloatTree", 
 "^ot:branchLengthDescription": "", 
-"^ot:branchLengthMode": "", 
-"^ot:branchLengthTimeUnit": "", 
-"^ot:curatedType": "ML, LSU + ITS + RPB2 + EF-1", 
+"^ot:branchLengthMode": "ot:changesCount", 
+"^ot:branchLengthTimeUnit": "Myr", 
+"^ot:curatedType": "Maximum likelihood ", 
 "^ot:inGroupClade": "node330877", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
 "^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node330873", 
-"^ot:specifiedRoot": "", 
+"^ot:specifiedRoot": "node330873", 
 "^ot:tag": [
 "LSU", 
 "ITS", 
 "RPB2", 
 "EF-1"
 ], 
+"^ot:unrootedTree": false, 
 "edgeBySourceId": {
 "node330873": {
 "edge330874": {
@@ -472,10 +564,12 @@
 }, 
 "node330886": {}, 
 "node330887": {
-"@otu": "otu166793"
+"@otu": "otu166793", 
+"^ot:isTaxonExemplar": true
 }, 
 "node330888": {
-"@otu": "otu166781"
+"@otu": "otu166781", 
+"^ot:isTaxonExemplar": false
 }, 
 "node330889": {}, 
 "node330890": {}, 

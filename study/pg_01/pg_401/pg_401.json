@@ -33,18 +33,99 @@
 }
 ]
 }
+}, 
+{
+"@description": "Web-based interface for submitting, editing, and reviewing studies in the Open Tree of Life project.", 
+"@id": "opentree-curation-webapp", 
+"@name": "OpenTree curation webapp", 
+"@url": "https://github.com/OpenTreeOfLife/opentree", 
+"@version": "0.0.0"
 }
 ]
 }, 
 "^ot:annotationEvents": {
-"annotation": []
+"annotation": [
+{
+"@dateCreated": "2015-09-30T16:13:47.583Z", 
+"@description": "Aids for mapping study OTUs to OTT taxa", 
+"@id": "otu-mapping-hints", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "OTU_MAPPING_HINTS", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"searchContext": {
+"$": "All life"
 }, 
-"^ot:curatorName": "Romina Gazis", 
+"substitutions": {
+"substitution": [
+{
+"@active": false, 
+"@valid": true, 
+"new": {
+"$": ""
+}, 
+"old": {
+"$": ""
+}
+}
+]
+}, 
+"useFuzzyMatching": false
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}, 
+{
+"@dateCreated": "2015-09-30T16:13:47.582Z", 
+"@description": "Describes supporting data files for this study", 
+"@id": "supporting-files-metadata", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "SUPPORTING_FILE_INFO", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"@movedToPermanentArchive": false, 
+"files": {
+"file": []
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}
+]
+}, 
+"^ot:candidateTreeForSynthesis": [
+"tree5569"
+], 
+"^ot:comment": "", 
+"^ot:curatorName": [
+"Romina Gazis"
+], 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S1202"
 }, 
 "^ot:focalClade": 994462, 
 "^ot:focalCladeOTTTaxonName": "Podocrella", 
+"^ot:notIntendedForSynthesis": false, 
 "^ot:otusElementOrder": [
 "otus401"
 ], 
@@ -52,11 +133,16 @@
 "^ot:studyPublication": {
 "@href": "http://dx.doi.org/10.3852/mycologia.97.2.433"
 }, 
-"^ot:studyPublicationReference": "Chaverri, Priscila, Gary J. Samuels, and Kathie T. Hodge. \"The genus Podocrella and its nematode-killing anamorph Harposporium.\" Mycologia 97.2 (2005): 433-443.", 
-"^ot:studyYear": 2004, 
+"^ot:studyPublicationReference": "P. Chaverri, G. J. Samuels, K. T. Hodge, 2005, 'The genus Podocrella and its nematode-killing anamorph Harposporium', Mycologia, vol. 97, no. 2, pp. 433-443.", 
+"^ot:studyYear": 2005, 
+"^ot:tag": [], 
 "^ot:treesElementOrder": [
 "trees401"
 ], 
+"^xhtml:license": {
+"@href": "http://creativecommons.org/publicdomain/zero/1.0/", 
+"@name": "CC0"
+}, 
 "otusById": {
 "otus401": {
 "otuById": {
@@ -80,6 +166,8 @@
 }, 
 "otu78320": {
 "^ot:originalLabel": "Paecilomyces tenuipes", 
+"^ot:ottId": 898318, 
+"^ot:ottTaxonName": "Cordyceps polyarthra", 
 "^ot:treebaseOTUId": "Tl149264"
 }, 
 "otu78321": {
@@ -267,10 +355,22 @@
 ], 
 "treeById": {
 "tree5569": {
+"@label": "FIG. 1. LSU cladogram with the best log-likelihood (\u2212 3320.83) obtained in the Bayesian analysis.", 
 "@xsi:type": "nex:FloatTree", 
-"^ot:curatedType": "BI, LSU (rooted)", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "ot:changesCount", 
+"^ot:branchLengthTimeUnit": "Myr", 
+"^ot:curatedType": "Bayesian inference ", 
 "^ot:inGroupClade": "node955565", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node955563", 
+"^ot:specifiedRoot": "node955563", 
+"^ot:tag": [
+"LSU"
+], 
+"^ot:unrootedTree": false, 
 "edgeBySourceId": {
 "node955563": {
 "edge955564": {
@@ -598,7 +698,8 @@
 "node955572": {}, 
 "node955573": {}, 
 "node955574": {
-"@otu": "otu78322"
+"@otu": "otu78322", 
+"^ot:isTaxonExemplar": true
 }, 
 "node955575": {}, 
 "node955576": {
@@ -610,10 +711,12 @@
 "node955578": {}, 
 "node955579": {}, 
 "node955580": {
-"@otu": "otu78336"
+"@otu": "otu78336", 
+"^ot:isTaxonExemplar": false
 }, 
 "node955581": {
-"@otu": "otu78335"
+"@otu": "otu78335", 
+"^ot:isTaxonExemplar": false
 }, 
 "node955582": {
 "@otu": "otu78334"
@@ -657,16 +760,19 @@
 "node955601": {}, 
 "node955602": {}, 
 "node955603": {
-"@otu": "otu78323"
+"@otu": "otu78323", 
+"^ot:isTaxonExemplar": true
 }, 
 "node955604": {
-"@otu": "otu78347"
+"@otu": "otu78347", 
+"^ot:isTaxonExemplar": false
 }, 
 "node955605": {
 "@otu": "otu78346"
 }, 
 "node955606": {
-"@otu": "otu78343"
+"@otu": "otu78343", 
+"^ot:isTaxonExemplar": false
 }, 
 "node955607": {
 "@otu": "otu78317"
@@ -676,7 +782,8 @@
 }, 
 "node955609": {}, 
 "node955610": {
-"@otu": "otu78339"
+"@otu": "otu78339", 
+"^ot:isTaxonExemplar": true
 }, 
 "node955611": {
 "@otu": "otu78329"

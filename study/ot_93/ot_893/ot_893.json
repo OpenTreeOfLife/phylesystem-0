@@ -1,0 +1,796 @@
+{
+"nexml": {
+"@about": "#study", 
+"@generator": "Open Tree API", 
+"@id": "study", 
+"@nexml2json": "1.2.1", 
+"@nexmljson": "http://purl.org/opentree/nexson", 
+"@version": "0.9", 
+"@xmlns": {
+"$": "http://www.nexml.org/2009", 
+"nex": "http://www.nexml.org/2009", 
+"ot": "http://purl.org/opentree-terms#", 
+"xhtml": "http://www.w3.org/1999/xhtml/vocab#", 
+"xsd": "http://www.w3.org/2001/XMLSchema#", 
+"xsi": "http://www.w3.org/2001/XMLSchema-instance"
+}, 
+"^ot:agents": {
+"agent": [
+{
+"@description": "Open Tree NexSON validation", 
+"@id": "peyotl-validator", 
+"@name": "api.opentreeoflife.org/validate", 
+"@url": "https://github.com/OpenTreeOfLife/peyotl", 
+"@version": "0.0.4a", 
+"invocation": {
+"commandLine": [], 
+"otherProperty": [
+{
+"name": "pythonVersion", 
+"value": "2.7.9"
+}, 
+{
+"name": "pythonImplementation", 
+"value": "CPython"
+}
+]
+}
+}, 
+{
+"@description": "Web-based interface for submitting, editing, and reviewing studies in the Open Tree of Life project.", 
+"@id": "opentree-curation-webapp", 
+"@name": "OpenTree curation webapp", 
+"@url": "https://github.com/OpenTreeOfLife/opentree", 
+"@version": "0.0.0"
+}
+]
+}, 
+"^ot:annotationEvents": {
+"annotation": [
+{
+"@dateCreated": "2016-10-11T18:32:18.590Z", 
+"@description": "Aids for mapping study OTUs to OTT taxa", 
+"@id": "otu-mapping-hints", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "OTU_MAPPING_HINTS", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"searchContext": {
+"$": "Arthropods"
+}, 
+"substitutions": {
+"substitution": [
+{
+"@active": false, 
+"@valid": true, 
+"new": {
+"$": " "
+}, 
+"old": {
+"$": "."
+}
+}
+]
+}, 
+"useFuzzyMatching": true
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}, 
+{
+"@dateCreated": "2016-10-11T18:32:18.590Z", 
+"@description": "Describes supporting data files for this study", 
+"@id": "supporting-files-metadata", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "SUPPORTING_FILE_INFO", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"@movedToPermanentArchive": false, 
+"files": {
+"file": [
+{
+"@filename": "species_tree_1000burnin.tre", 
+"@size": 51304, 
+"@type": "nexus", 
+"@url": "/curator/download/supporting_files.doc.b5ef0550b4b5fe72.737065636965735f747265655f313030306275726e696e2e747265.tre", 
+"description": {
+"$": "Source data for tree(s) 'tree2'"
+}, 
+"sourceForTree": [
+{
+"$": "tree2"
+}
+]
+}
+]
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}
+]
+}, 
+"^ot:candidateTreeForSynthesis": [
+"tree2"
+], 
+"^ot:comment": "", 
+"^ot:curatorName": [
+"Christine Ewers-Saucedo"
+], 
+"^ot:dataDeposit": {
+"@href": ""
+}, 
+"^ot:focalClade": 808057, 
+"^ot:focalCladeOTTTaxonName": "Calappidae", 
+"^ot:notIntendedForSynthesis": false, 
+"^ot:otusElementOrder": [
+"otus1"
+], 
+"^ot:studyId": "ot_893", 
+"^ot:studyPublication": {
+"@href": "http://dx.doi.org/10.1163/1937240x-00002479"
+}, 
+"^ot:studyPublicationReference": "Christine Ewers-Saucedo, Reinhold Hanel, Dirk Brandis, John P. Wares, 2016, 'Evolution of male copulatory organs in box crabs (Decapoda: Eubrachyura: Calappidae De Haan, 1833)', Journal of Crustacean Biology", 
+"^ot:studyYear": 2016, 
+"^ot:tag": [], 
+"^ot:treesElementOrder": [
+"trees1"
+], 
+"^xhtml:license": {
+"@href": "http://creativecommons.org/publicdomain/zero/1.0/"
+}, 
+"otusById": {
+"otus1": {
+"otuById": {
+"otu10": {
+"^ot:originalLabel": "Calappa.flammea", 
+"^ot:ottId": 2977757, 
+"^ot:ottTaxonName": "Calappa flammea"
+}, 
+"otu11": {
+"^ot:originalLabel": "Calappa.gallus", 
+"^ot:ottId": 828429, 
+"^ot:ottTaxonName": "Calappa gallus"
+}, 
+"otu12": {
+"^ot:originalLabel": "Calappa.granulata", 
+"^ot:ottId": 1003871, 
+"^ot:ottTaxonName": "Calappa granulata"
+}, 
+"otu13": {
+"^ot:originalLabel": "Calappa.hepatica", 
+"^ot:ottId": 828427, 
+"^ot:ottTaxonName": "Calappa hepatica"
+}, 
+"otu14": {
+"^ot:originalLabel": "Calappa.japonica", 
+"^ot:ottId": 2977772, 
+"^ot:ottTaxonName": "Calappa japonica"
+}, 
+"otu15": {
+"^ot:originalLabel": "Calappa.ocellata", 
+"^ot:ottId": 2977754, 
+"^ot:ottTaxonName": "Calappa ocellata"
+}, 
+"otu16": {
+"^ot:originalLabel": "Calappa.pelii", 
+"^ot:ottId": 2977775, 
+"^ot:ottTaxonName": "Calappa pelii"
+}, 
+"otu17": {
+"^ot:originalLabel": "Calappa.philargius", 
+"^ot:ottId": 828434, 
+"^ot:ottTaxonName": "Calappa philargius"
+}, 
+"otu18": {
+"^ot:originalLabel": "Calappa.pokipoki", 
+"^ot:ottId": 2977778, 
+"^ot:ottTaxonName": "Calappa pokipoki"
+}, 
+"otu19": {
+"^ot:originalLabel": "Calappa.rubroguttata", 
+"^ot:ottId": 2977768, 
+"^ot:ottTaxonName": "Calappa rubroguttata"
+}, 
+"otu2": {
+"^ot:originalLabel": "Acanthocarpus.alexandri", 
+"^ot:ottId": 2977783, 
+"^ot:ottTaxonName": "Acanthocarpus alexandri"
+}, 
+"otu20": {
+"^ot:originalLabel": "Calappa.sulcata", 
+"^ot:ottId": 2977774, 
+"^ot:ottTaxonName": "Calappa sulcata"
+}, 
+"otu21": {
+"^ot:originalLabel": "Calappa.woodmasoni", 
+"^ot:ottId": 2977766, 
+"^ot:ottTaxonName": "Calappa woodmasoni"
+}, 
+"otu22": {
+"^ot:originalLabel": "Calappula.saussurei", 
+"^ot:ottId": 4668237, 
+"^ot:ottTaxonName": "Calappula saussurei"
+}, 
+"otu23": {
+"^ot:originalLabel": "Calappula.tortugae", 
+"^ot:ottId": 2977752, 
+"^ot:ottTaxonName": "Calappa tortugae"
+}, 
+"otu24": {
+"^ot:originalLabel": "Callinectes.sapidus", 
+"^ot:ottId": 182906, 
+"^ot:ottTaxonName": "Callinectes sapidus"
+}, 
+"otu25": {
+"^ot:originalLabel": "Carcinus.maenas", 
+"^ot:ottId": 1089892, 
+"^ot:ottTaxonName": "Carcinus maenas"
+}, 
+"otu26": {
+"^ot:originalLabel": "Cryptosoma.cristatum", 
+"^ot:ottId": 2977805, 
+"^ot:ottTaxonName": "Cryptosoma cristatum"
+}, 
+"otu27": {
+"^ot:originalLabel": "Cycloes.granulosa", 
+"^ot:ottId": 918463, 
+"^ot:ottTaxonName": "Cycloes granulosa"
+}, 
+"otu28": {
+"^ot:originalLabel": "Mursia.cristiata", 
+"^ot:ottId": 2977729, 
+"^ot:ottTaxonName": "Mursia cristiata"
+}, 
+"otu29": {
+"^ot:originalLabel": "Paracyclois.atlantis", 
+"^ot:ottId": 2977786, 
+"^ot:ottTaxonName": "Paracyclois atlantis"
+}, 
+"otu3": {
+"^ot:originalLabel": "Acanthocarpus.bispinosus", 
+"^ot:ottId": 2977803, 
+"^ot:ottTaxonName": "Acanthocarpus bispinosus"
+}, 
+"otu30": {
+"^ot:originalLabel": "Platymera.gaudichaudii", 
+"^ot:ottId": 2977781, 
+"^ot:ottTaxonName": "Platymera gaudichaudii"
+}, 
+"otu4": {
+"^ot:originalLabel": "Acanthocarpus.brevispinis", 
+"^ot:ottId": 2977793, 
+"^ot:ottTaxonName": "Acanthocarpus brevispinis"
+}, 
+"otu5": {
+"^ot:originalLabel": "Acanthocarpus.delsolari", 
+"^ot:ottId": 2977796, 
+"^ot:ottTaxonName": "Acanthocarpus delsolari"
+}, 
+"otu6": {
+"^ot:originalLabel": "Calappa.calappa", 
+"^ot:ottId": 828431, 
+"^ot:ottTaxonName": "Calappa calappa"
+}, 
+"otu7": {
+"^ot:originalLabel": "Calappa.cinerea", 
+"^ot:ottId": 2977780, 
+"^ot:ottTaxonName": "Calappa cinerea"
+}, 
+"otu8": {
+"^ot:originalLabel": "Calappa.clypeata", 
+"^ot:ottId": 828430, 
+"^ot:ottTaxonName": "Calappa clypeata"
+}, 
+"otu9": {
+"^ot:originalLabel": "Calappa.convexa", 
+"^ot:ottId": 2977779, 
+"^ot:ottTaxonName": "Calappa convexa"
+}
+}
+}
+}, 
+"treesById": {
+"trees1": {
+"@otus": "otus1", 
+"^ot:treeElementOrder": [
+"tree2"
+], 
+"treeById": {
+"tree2": {
+"@label": "TREE1", 
+"@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "ot:substitutionCount", 
+"^ot:curatedType": "Bayesian inference ", 
+"^ot:inGroupClade": "node3", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
+"^ot:outGroupEdge": "", 
+"^ot:rootNodeId": "node2", 
+"^ot:specifiedRoot": "node2", 
+"^ot:tag": [], 
+"^ot:unrootedTree": false, 
+"edgeBySourceId": {
+"node10": {
+"edge10": {
+"@length": 0.038493, 
+"@source": "node10", 
+"@target": "node11"
+}, 
+"edge13": {
+"@length": 0.056321, 
+"@source": "node10", 
+"@target": "node14"
+}
+}, 
+"node11": {
+"edge11": {
+"@length": 0.017828, 
+"@source": "node11", 
+"@target": "node12"
+}, 
+"edge12": {
+"@length": 0.017828, 
+"@source": "node11", 
+"@target": "node13"
+}
+}, 
+"node15": {
+"edge15": {
+"@length": 0.013604, 
+"@source": "node15", 
+"@target": "node16"
+}, 
+"edge20": {
+"@length": 0.043992, 
+"@source": "node15", 
+"@target": "node21"
+}
+}, 
+"node16": {
+"edge16": {
+"@length": 0.019686, 
+"@source": "node16", 
+"@target": "node17"
+}, 
+"edge19": {
+"@length": 0.030388, 
+"@source": "node16", 
+"@target": "node20"
+}
+}, 
+"node17": {
+"edge17": {
+"@length": 0.010703, 
+"@source": "node17", 
+"@target": "node18"
+}, 
+"edge18": {
+"@length": 0.010703, 
+"@source": "node17", 
+"@target": "node19"
+}
+}, 
+"node2": {
+"edge2": {
+"@length": 0.037191, 
+"@source": "node2", 
+"@target": "node3"
+}, 
+"edge55": {
+"@length": 0.034441, 
+"@source": "node2", 
+"@target": "node56"
+}
+}, 
+"node22": {
+"edge22": {
+"@length": 0.012741, 
+"@source": "node22", 
+"@target": "node23"
+}, 
+"edge45": {
+"@length": 0.124602, 
+"@source": "node22", 
+"@target": "node46"
+}
+}, 
+"node23": {
+"edge23": {
+"@length": 0.00749, 
+"@source": "node23", 
+"@target": "node24"
+}, 
+"edge42": {
+"@length": 0.099447, 
+"@source": "node23", 
+"@target": "node43"
+}
+}, 
+"node24": {
+"edge24": {
+"@length": 0.032586, 
+"@source": "node24", 
+"@target": "node25"
+}, 
+"edge27": {
+"@length": 0.027846, 
+"@source": "node24", 
+"@target": "node28"
+}
+}, 
+"node25": {
+"edge25": {
+"@length": 0.093764, 
+"@source": "node25", 
+"@target": "node26"
+}, 
+"edge26": {
+"@length": 0.093764, 
+"@source": "node25", 
+"@target": "node27"
+}
+}, 
+"node28": {
+"edge28": {
+"@length": 0.077905, 
+"@source": "node28", 
+"@target": "node29"
+}, 
+"edge35": {
+"@length": 0.018123, 
+"@source": "node28", 
+"@target": "node36"
+}
+}, 
+"node29": {
+"edge29": {
+"@length": 0.018407, 
+"@source": "node29", 
+"@target": "node30"
+}, 
+"edge34": {
+"@length": 0.0206, 
+"@source": "node29", 
+"@target": "node35"
+}
+}, 
+"node3": {
+"edge3": {
+"@length": 0.03955, 
+"@source": "node3", 
+"@target": "node4"
+}, 
+"edge52": {
+"@length": 0.14315, 
+"@source": "node3", 
+"@target": "node53"
+}
+}, 
+"node30": {
+"edge30": {
+"@length": 0.002193, 
+"@source": "node30", 
+"@target": "node31"
+}, 
+"edge31": {
+"@length": 0.001479, 
+"@source": "node30", 
+"@target": "node32"
+}
+}, 
+"node32": {
+"edge32": {
+"@length": 0.000714, 
+"@source": "node32", 
+"@target": "node33"
+}, 
+"edge33": {
+"@length": 0.000714, 
+"@source": "node32", 
+"@target": "node34"
+}
+}, 
+"node36": {
+"edge36": {
+"@length": 0.04415, 
+"@source": "node36", 
+"@target": "node37"
+}, 
+"edge41": {
+"@length": 0.080382, 
+"@source": "node36", 
+"@target": "node42"
+}
+}, 
+"node37": {
+"edge37": {
+"@length": 0.024831, 
+"@source": "node37", 
+"@target": "node38"
+}, 
+"edge40": {
+"@length": 0.036232, 
+"@source": "node37", 
+"@target": "node41"
+}
+}, 
+"node38": {
+"edge38": {
+"@length": 0.011401, 
+"@source": "node38", 
+"@target": "node39"
+}, 
+"edge39": {
+"@length": 0.011401, 
+"@source": "node38", 
+"@target": "node40"
+}
+}, 
+"node4": {
+"edge21": {
+"@length": 0.061283, 
+"@source": "node4", 
+"@target": "node22"
+}, 
+"edge4": {
+"@length": 0.049684, 
+"@source": "node4", 
+"@target": "node5"
+}
+}, 
+"node43": {
+"edge43": {
+"@length": 0.034394, 
+"@source": "node43", 
+"@target": "node44"
+}, 
+"edge44": {
+"@length": 0.034394, 
+"@source": "node43", 
+"@target": "node45"
+}
+}, 
+"node46": {
+"edge46": {
+"@length": 0.017972, 
+"@source": "node46", 
+"@target": "node47"
+}, 
+"edge49": {
+"@length": 0.021393, 
+"@source": "node46", 
+"@target": "node50"
+}
+}, 
+"node47": {
+"edge47": {
+"@length": 0.004009, 
+"@source": "node47", 
+"@target": "node48"
+}, 
+"edge48": {
+"@length": 0.004009, 
+"@source": "node47", 
+"@target": "node49"
+}
+}, 
+"node5": {
+"edge5": {
+"@length": 0.114609, 
+"@source": "node5", 
+"@target": "node6"
+}, 
+"edge8": {
+"@length": 0.050627, 
+"@source": "node5", 
+"@target": "node9"
+}
+}, 
+"node50": {
+"edge50": {
+"@length": 0.000587, 
+"@source": "node50", 
+"@target": "node51"
+}, 
+"edge51": {
+"@length": 0.000587, 
+"@source": "node50", 
+"@target": "node52"
+}
+}, 
+"node53": {
+"edge53": {
+"@length": 0.104265, 
+"@source": "node53", 
+"@target": "node54"
+}, 
+"edge54": {
+"@length": 0.104265, 
+"@source": "node53", 
+"@target": "node55"
+}
+}, 
+"node56": {
+"edge56": {
+"@length": 0.250165, 
+"@source": "node56", 
+"@target": "node57"
+}, 
+"edge57": {
+"@length": 0.250165, 
+"@source": "node56", 
+"@target": "node58"
+}
+}, 
+"node6": {
+"edge6": {
+"@length": 0.043573, 
+"@source": "node6", 
+"@target": "node7"
+}, 
+"edge7": {
+"@length": 0.043573, 
+"@source": "node6", 
+"@target": "node8"
+}
+}, 
+"node9": {
+"edge14": {
+"@length": 0.063562, 
+"@source": "node9", 
+"@target": "node15"
+}, 
+"edge9": {
+"@length": 0.051233, 
+"@source": "node9", 
+"@target": "node10"
+}
+}
+}, 
+"nodeById": {
+"node10": {}, 
+"node11": {}, 
+"node12": {
+"@otu": "otu22"
+}, 
+"node13": {
+"@otu": "otu23"
+}, 
+"node14": {
+"@otu": "otu29"
+}, 
+"node15": {}, 
+"node16": {}, 
+"node17": {}, 
+"node18": {
+"@otu": "otu4"
+}, 
+"node19": {
+"@otu": "otu3"
+}, 
+"node2": {
+"@root": true
+}, 
+"node20": {
+"@otu": "otu2"
+}, 
+"node21": {
+"@otu": "otu5"
+}, 
+"node22": {}, 
+"node23": {}, 
+"node24": {}, 
+"node25": {}, 
+"node26": {
+"@otu": "otu14"
+}, 
+"node27": {
+"@otu": "otu6"
+}, 
+"node28": {}, 
+"node29": {}, 
+"node3": {}, 
+"node30": {}, 
+"node31": {
+"@otu": "otu9"
+}, 
+"node32": {}, 
+"node33": {
+"@otu": "otu7"
+}, 
+"node34": {
+"@otu": "otu10"
+}, 
+"node35": {
+"@otu": "otu15"
+}, 
+"node36": {}, 
+"node37": {}, 
+"node38": {}, 
+"node39": {
+"@otu": "otu16"
+}, 
+"node4": {}, 
+"node40": {
+"@otu": "otu12"
+}, 
+"node41": {
+"@otu": "otu19"
+}, 
+"node42": {
+"@otu": "otu20"
+}, 
+"node43": {}, 
+"node44": {
+"@otu": "otu11"
+}, 
+"node45": {
+"@otu": "otu18"
+}, 
+"node46": {}, 
+"node47": {}, 
+"node48": {
+"@otu": "otu17"
+}, 
+"node49": {
+"@otu": "otu8"
+}, 
+"node5": {}, 
+"node50": {}, 
+"node51": {
+"@otu": "otu13"
+}, 
+"node52": {
+"@otu": "otu21"
+}, 
+"node53": {}, 
+"node54": {
+"@otu": "otu26"
+}, 
+"node55": {
+"@otu": "otu27"
+}, 
+"node56": {}, 
+"node57": {
+"@otu": "otu24"
+}, 
+"node58": {
+"@otu": "otu25"
+}, 
+"node6": {}, 
+"node7": {
+"@otu": "otu28"
+}, 
+"node8": {
+"@otu": "otu30"
+}, 
+"node9": {}
+}
+}
+}
+}
+}
+}
+}

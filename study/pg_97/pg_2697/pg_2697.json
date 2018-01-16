@@ -36,35 +36,128 @@
 }
 ]
 }
+}, 
+{
+"@description": "Web-based interface for submitting, editing, and reviewing studies in the Open Tree of Life project.", 
+"@id": "opentree-curation-webapp", 
+"@name": "OpenTree curation webapp", 
+"@url": "https://github.com/OpenTreeOfLife/opentree", 
+"@version": "0.0.0"
 }
 ]
 }, 
 "^ot:annotationEvents": {
-"annotation": []
+"annotation": [
+{
+"@dateCreated": "2015-09-28T17:25:57.167Z", 
+"@description": "Aids for mapping study OTUs to OTT taxa", 
+"@id": "otu-mapping-hints", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "OTU_MAPPING_HINTS", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"searchContext": {
+"$": "All life"
 }, 
-"^ot:candidateTreeForSynthesis": [], 
-"^ot:curatorName": "Romina Gazis", 
+"substitutions": {
+"substitution": [
+{
+"@active": false, 
+"@valid": true, 
+"new": {
+"$": ""
+}, 
+"old": {
+"$": ""
+}
+}, 
+{
+"@active": true, 
+"@valid": true, 
+"new": {
+"$": "$1"
+}, 
+"old": {
+"$": "^(\\S*\\s+\\S*).*"
+}
+}
+]
+}, 
+"useFuzzyMatching": true
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}, 
+{
+"@dateCreated": "2015-09-28T17:25:57.166Z", 
+"@description": "Describes supporting data files for this study", 
+"@id": "supporting-files-metadata", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "SUPPORTING_FILE_INFO", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"@movedToPermanentArchive": false, 
+"files": {
+"file": []
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}
+]
+}, 
+"^ot:candidateTreeForSynthesis": [
+"tree6262"
+], 
+"^ot:comment": "", 
+"^ot:curatorName": [
+"Romina Gazis"
+], 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S13754"
 }, 
 "^ot:focalClade": 838969, 
 "^ot:focalCladeOTTTaxonName": "Fusarium oxysporum", 
-"^ot:messages": {
-"message": []
-}, 
+"^ot:notIntendedForSynthesis": false, 
 "^ot:otusElementOrder": [
 "otus2697"
 ], 
 "^ot:studyId": "pg_2697", 
-"^ot:studyPublicationReference": "Covey P.A., Hanson M., Kuwitzky B., & Webb K. 2013. Multilocus analysis using fungal pathogenicity genes to describe Fusarium oxysporum from Sugar Beet. Phytopathology, .", 
-"^ot:studyYear": 2013, 
+"^ot:studyPublication": {
+"@href": "http://dx.doi.org/10.1094/phyto-09-13-0248-r"
+}, 
+"^ot:studyPublicationReference": "Paul A. Covey, Brett Kuwitzky, Mia Hanson, Kimberly Webb, 2014, 'Multilocus analysis using putative fungal effectors to describe a population of Fusarium oxysporum from sugar beet', Phytopathology, p. 140206091749008", 
+"^ot:studyYear": 2014, 
 "^ot:tag": [
-"pdf not found", 
 "population study"
 ], 
 "^ot:treesElementOrder": [
 "trees2697"
 ], 
+"^xhtml:license": {
+"@href": "http://creativecommons.org/publicdomain/zero/1.0/", 
+"@name": "CC0"
+}, 
 "otusById": {
 "otus2697": {
 "otuById": {
@@ -88,6 +181,8 @@
 }, 
 "otu404701": {
 "^ot:originalLabel": "Fusarium graminearum PH-1 Sge1", 
+"^ot:ottId": 264388, 
+"^ot:ottTaxonName": "Gibberella zeae", 
 "^ot:treebaseOTUId": "Tl964061"
 }, 
 "otu404702": {
@@ -200,6 +295,8 @@
 }, 
 "otu404720": {
 "^ot:originalLabel": "Fusarium verticillioides Strain 7600 Sge1", 
+"^ot:ottId": 736624, 
+"^ot:ottTaxonName": "Fusarium verticillioides", 
 "^ot:treebaseOTUId": "Tl964080"
 }, 
 "otu404721": {
@@ -630,6 +727,8 @@
 }, 
 "otu404792": {
 "^ot:originalLabel": "Fusarium verticillioides Strain 7600 Tef1-a", 
+"^ot:ottId": 736624, 
+"^ot:ottTaxonName": "Fusarium verticillioides", 
 "^ot:treebaseOTUId": "Tl971362"
 }, 
 "otu404793": {
@@ -724,6 +823,8 @@
 }, 
 "otu404808": {
 "^ot:originalLabel": "Fusarium graminearum PH-1 Tef1-a", 
+"^ot:ottId": 264388, 
+"^ot:ottTaxonName": "Gibberella zeae", 
 "^ot:treebaseOTUId": "Tl971378"
 }, 
 "otu404809": {
@@ -818,15 +919,20 @@
 ], 
 "treeById": {
 "tree6260": {
+"@label": "Untitled (tree6260)", 
 "@xsi:type": "nex:FloatTree", 
 "^ot:branchLengthDescription": "", 
 "^ot:branchLengthMode": "", 
 "^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "PelD MrBayes Tree", 
+"^ot:inGroupClade": "", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
 "^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node1084247", 
 "^ot:specifiedRoot": "", 
 "^ot:tag": [], 
+"^ot:unrootedTree": true, 
 "edgeBySourceId": {
 "node1084247": {
 "edge1084248": {
@@ -1014,15 +1120,20 @@
 }
 }, 
 "tree6261": {
+"@label": "Untitled (tree6261)", 
 "@xsi:type": "nex:FloatTree", 
 "^ot:branchLengthDescription": "", 
 "^ot:branchLengthMode": "", 
 "^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "Prt1 MrBayes Tree", 
+"^ot:inGroupClade": "", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
 "^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node1084270", 
 "^ot:specifiedRoot": "", 
 "^ot:tag": [], 
+"^ot:unrootedTree": true, 
 "edgeBySourceId": {
 "node1084270": {
 "edge1084271": {
@@ -1274,15 +1385,22 @@
 }
 }, 
 "tree6262": {
+"@label": "Ef-1 bayesian phylogeny- not shown in pub", 
 "@xsi:type": "nex:FloatTree", 
 "^ot:branchLengthDescription": "", 
-"^ot:branchLengthMode": "", 
-"^ot:branchLengthTimeUnit": "", 
-"^ot:curatedType": "Tef1-a Mr Bayes Tree", 
+"^ot:branchLengthMode": "ot:changesCount", 
+"^ot:branchLengthTimeUnit": "Myr", 
+"^ot:curatedType": "Bayesian inference ", 
+"^ot:inGroupClade": "node1084303", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
 "^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node1084301", 
-"^ot:specifiedRoot": "", 
-"^ot:tag": [], 
+"^ot:specifiedRoot": "node1084301", 
+"^ot:tag": [
+"EF-1"
+], 
+"^ot:unrootedTree": false, 
 "edgeBySourceId": {
 "node1084301": {
 "edge1084302": {
@@ -1675,162 +1793,210 @@
 }, 
 "node1084308": {}, 
 "node1084309": {
-"@otu": "otu404804"
+"@otu": "otu404804", 
+"^ot:isTaxonExemplar": false
 }, 
 "node1084310": {
-"@otu": "otu404780"
+"@otu": "otu404780", 
+"^ot:isTaxonExemplar": false
 }, 
 "node1084311": {}, 
 "node1084312": {
-"@otu": "otu404777"
+"@otu": "otu404777", 
+"^ot:isTaxonExemplar": false
 }, 
 "node1084313": {
-"@otu": "otu404816"
+"@otu": "otu404816", 
+"^ot:isTaxonExemplar": false
 }, 
 "node1084314": {
-"@otu": "otu404799"
+"@otu": "otu404799", 
+"^ot:isTaxonExemplar": false
 }, 
 "node1084315": {
-"@otu": "otu404818"
+"@otu": "otu404818", 
+"^ot:isTaxonExemplar": false
 }, 
 "node1084316": {
-"@otu": "otu404788"
+"@otu": "otu404788", 
+"^ot:isTaxonExemplar": false
 }, 
 "node1084317": {}, 
 "node1084318": {}, 
 "node1084319": {
-"@otu": "otu404781"
+"@otu": "otu404781", 
+"^ot:isTaxonExemplar": true
 }, 
 "node1084320": {
-"@otu": "otu404794"
+"@otu": "otu404794", 
+"^ot:isTaxonExemplar": false
 }, 
 "node1084321": {}, 
 "node1084322": {}, 
 "node1084323": {
-"@otu": "otu404797"
+"@otu": "otu404797", 
+"^ot:isTaxonExemplar": false
 }, 
 "node1084324": {
-"@otu": "otu404795"
+"@otu": "otu404795", 
+"^ot:isTaxonExemplar": false
 }, 
 "node1084325": {
-"@otu": "otu404810"
+"@otu": "otu404810", 
+"^ot:isTaxonExemplar": false
 }, 
 "node1084326": {
-"@otu": "otu404779"
+"@otu": "otu404779", 
+"^ot:isTaxonExemplar": false
 }, 
 "node1084327": {
-"@otu": "otu404778"
+"@otu": "otu404778", 
+"^ot:isTaxonExemplar": false
 }, 
 "node1084328": {
-"@otu": "otu404819"
+"@otu": "otu404819", 
+"^ot:isTaxonExemplar": false
 }, 
 "node1084329": {
-"@otu": "otu404803"
+"@otu": "otu404803", 
+"^ot:isTaxonExemplar": false
 }, 
 "node1084330": {
-"@otu": "otu404783"
+"@otu": "otu404783", 
+"^ot:isTaxonExemplar": true
 }, 
 "node1084331": {}, 
 "node1084332": {
-"@otu": "otu404789"
+"@otu": "otu404789", 
+"^ot:isTaxonExemplar": false
 }, 
 "node1084333": {
-"@otu": "otu404796"
+"@otu": "otu404796", 
+"^ot:isTaxonExemplar": false
 }, 
 "node1084334": {}, 
 "node1084335": {
-"@otu": "otu404812"
+"@otu": "otu404812", 
+"^ot:isTaxonExemplar": false
 }, 
 "node1084336": {}, 
 "node1084337": {
-"@otu": "otu404809"
+"@otu": "otu404809", 
+"^ot:isTaxonExemplar": false
 }, 
 "node1084338": {
-"@otu": "otu404820"
+"@otu": "otu404820", 
+"^ot:isTaxonExemplar": false
 }, 
 "node1084339": {
-"@otu": "otu404787"
+"@otu": "otu404787", 
+"^ot:isTaxonExemplar": false
 }, 
 "node1084340": {
-"@otu": "otu404814"
+"@otu": "otu404814", 
+"^ot:isTaxonExemplar": false
 }, 
 "node1084341": {}, 
 "node1084342": {
-"@otu": "otu404811"
+"@otu": "otu404811", 
+"^ot:isTaxonExemplar": false
 }, 
 "node1084343": {}, 
 "node1084344": {
-"@otu": "otu404813"
+"@otu": "otu404813", 
+"^ot:isTaxonExemplar": false
 }, 
 "node1084345": {
-"@otu": "otu404801"
+"@otu": "otu404801", 
+"^ot:isTaxonExemplar": false
 }, 
 "node1084346": {}, 
 "node1084347": {
-"@otu": "otu404793"
+"@otu": "otu404793", 
+"^ot:isTaxonExemplar": false
 }, 
 "node1084348": {
-"@otu": "otu404817"
+"@otu": "otu404817", 
+"^ot:isTaxonExemplar": false
 }, 
 "node1084349": {}, 
 "node1084350": {
-"@otu": "otu404807"
+"@otu": "otu404807", 
+"^ot:isTaxonExemplar": false
 }, 
 "node1084351": {}, 
 "node1084352": {
-"@otu": "otu404784"
+"@otu": "otu404784", 
+"^ot:isTaxonExemplar": false
 }, 
 "node1084353": {
-"@otu": "otu404776"
+"@otu": "otu404776", 
+"^ot:isTaxonExemplar": false
 }, 
 "node1084354": {
-"@otu": "otu404786"
+"@otu": "otu404786", 
+"^ot:isTaxonExemplar": false
 }, 
 "node1084355": {
-"@otu": "otu404798"
+"@otu": "otu404798", 
+"^ot:isTaxonExemplar": false
 }, 
 "node1084356": {}, 
 "node1084357": {
-"@otu": "otu404821"
+"@otu": "otu404821", 
+"^ot:isTaxonExemplar": false
 }, 
 "node1084358": {}, 
 "node1084359": {
-"@otu": "otu404815"
+"@otu": "otu404815", 
+"^ot:isTaxonExemplar": false
 }, 
 "node1084360": {
-"@otu": "otu404782"
+"@otu": "otu404782", 
+"^ot:isTaxonExemplar": false
 }, 
 "node1084361": {
-"@otu": "otu404802"
+"@otu": "otu404802", 
+"^ot:isTaxonExemplar": false
 }, 
 "node1084362": {
-"@otu": "otu404785"
+"@otu": "otu404785", 
+"^ot:isTaxonExemplar": false
 }, 
 "node1084363": {}, 
 "node1084364": {
-"@otu": "otu404791"
+"@otu": "otu404791", 
+"^ot:isTaxonExemplar": false
 }, 
 "node1084365": {
-"@otu": "otu404805"
+"@otu": "otu404805", 
+"^ot:isTaxonExemplar": false
 }, 
 "node1084366": {
-"@otu": "otu404806"
+"@otu": "otu404806", 
+"^ot:isTaxonExemplar": false
 }, 
 "node1084367": {
-"@otu": "otu404800"
+"@otu": "otu404800", 
+"^ot:isTaxonExemplar": false
 }
 }
 }, 
 "tree6263": {
+"@label": "Untitled (tree6263)", 
 "@xsi:type": "nex:FloatTree", 
 "^ot:branchLengthDescription": "", 
 "^ot:branchLengthMode": "", 
 "^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "Sge1 MrBayes Tree", 
+"^ot:inGroupClade": "", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
 "^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node1084368", 
 "^ot:specifiedRoot": "", 
 "^ot:tag": [], 
+"^ot:unrootedTree": true, 
 "edgeBySourceId": {
 "node1084368": {
 "edge1084369": {

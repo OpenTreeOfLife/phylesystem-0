@@ -1,0 +1,292 @@
+{
+"nexml": {
+"@about": "#study", 
+"@generator": "Open Tree API", 
+"@id": "study", 
+"@nexml2json": "1.2.1", 
+"@nexmljson": "http://purl.org/opentree/nexson", 
+"@version": "0.9", 
+"@xmlns": {
+"$": "http://www.nexml.org/2009", 
+"nex": "http://www.nexml.org/2009", 
+"ot": "http://purl.org/opentree-terms#", 
+"xhtml": "http://www.w3.org/1999/xhtml/vocab#", 
+"xsd": "http://www.w3.org/2001/XMLSchema#", 
+"xsi": "http://www.w3.org/2001/XMLSchema-instance"
+}, 
+"^ot:agents": {
+"agent": [
+{
+"@description": "Open Tree NexSON validation", 
+"@id": "peyotl-validator", 
+"@name": "api.opentreeoflife.org/validate", 
+"@url": "https://github.com/OpenTreeOfLife/peyotl", 
+"@version": "0.0.4a", 
+"invocation": {
+"commandLine": [], 
+"otherProperty": [
+{
+"name": "pythonVersion", 
+"value": "2.7.9"
+}, 
+{
+"name": "pythonImplementation", 
+"value": "CPython"
+}
+]
+}
+}, 
+{
+"@description": "Web-based interface for submitting, editing, and reviewing studies in the Open Tree of Life project.", 
+"@id": "opentree-curation-webapp", 
+"@name": "OpenTree curation webapp", 
+"@url": "https://github.com/OpenTreeOfLife/opentree", 
+"@version": "0.0.0"
+}
+]
+}, 
+"^ot:annotationEvents": {
+"annotation": [
+{
+"@dateCreated": "2016-03-18T17:02:48.037Z", 
+"@description": "Aids for mapping study OTUs to OTT taxa", 
+"@id": "otu-mapping-hints", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "OTU_MAPPING_HINTS", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"searchContext": {
+"$": "All life"
+}, 
+"substitutions": {
+"substitution": [
+{
+"@active": false, 
+"@valid": true, 
+"new": {
+"$": ""
+}, 
+"old": {
+"$": ""
+}
+}
+]
+}, 
+"useFuzzyMatching": false
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}, 
+{
+"@dateCreated": "2016-03-18T17:02:48.037Z", 
+"@description": "Describes supporting data files for this study", 
+"@id": "supporting-files-metadata", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "SUPPORTING_FILE_INFO", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"@movedToPermanentArchive": false, 
+"files": {
+"file": [
+{
+"@filename": "ScyllatreeNaim2012.Newick", 
+"@size": 131, 
+"@type": "newick", 
+"@url": "/curator/download/supporting_files.doc.be2a401b83c58cc0.5363796c6c61747265654e61696d323031322e4e657769636b.txt", 
+"description": {
+"$": "Source data for tree(s) 'tree1'"
+}, 
+"sourceForTree": [
+{
+"$": "tree1"
+}
+]
+}
+]
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}
+]
+}, 
+"^ot:candidateTreeForSynthesis": [
+"tree1"
+], 
+"^ot:comment": "Incorporating Fig 3 phylogeny based on COI partial sequences. Tree redraw in Mesquite.", 
+"^ot:curatorName": [
+"federicaspani"
+], 
+"^ot:dataDeposit": {
+"@href": ""
+}, 
+"^ot:focalClade": 182918, 
+"^ot:focalCladeOTTTaxonName": "Scylla", 
+"^ot:notIntendedForSynthesis": false, 
+"^ot:otusElementOrder": [
+"otus1"
+], 
+"^ot:studyId": "ot_676", 
+"^ot:studyPublication": {
+"@href": "http://cdn.intechopen.com/pdfs-wm/39906.pdf"
+}, 
+"^ot:studyPublicationReference": "Naim, Darlina Md, Hurul Adila-Aida Mohamad Rosly, and Siti Azizah Mohd. Assessment of PhylogeneticInter-Relationships in Mud Crab Genus Scylla (Portunidae) Based on Mitochondrial DNA Sequence. INTECH Open Access Publisher, 2012.", 
+"^ot:studyYear": 2012, 
+"^ot:tag": [], 
+"^ot:treesElementOrder": [
+"trees1"
+], 
+"otusById": {
+"otus1": {
+"otuById": {
+"otu1": {
+"^ot:originalLabel": "Scylla tranquebarica", 
+"^ot:ottId": 1084544, 
+"^ot:ottTaxonName": "Scylla tranquebarica"
+}, 
+"otu2": {
+"^ot:originalLabel": "Scylla paramamosain", 
+"^ot:ottId": 1084541, 
+"^ot:ottTaxonName": "Scylla paramamosain"
+}, 
+"otu3": {
+"^ot:originalLabel": "Scylla serrata", 
+"^ot:ottId": 182912, 
+"^ot:ottTaxonName": "Scylla serrata"
+}, 
+"otu4": {
+"^ot:originalLabel": "Scylla olivacea", 
+"^ot:ottId": 1084538, 
+"^ot:ottTaxonName": "Scylla olivacea"
+}, 
+"otu5": {
+"^ot:originalLabel": "Portunus pelagicus", 
+"^ot:ottId": 599991, 
+"^ot:ottTaxonName": "Portunus pelagicus"
+}
+}
+}
+}, 
+"treesById": {
+"trees1": {
+"@otus": "otus1", 
+"^ot:treeElementOrder": [
+"tree1"
+], 
+"treeById": {
+"tree1": {
+"@label": "ScyllaMLtreeFig3", 
+"@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "no branch length", 
+"^ot:branchLengthMode": "ot:other", 
+"^ot:branchLengthTimeUnit": "Myr", 
+"^ot:curatedType": "Maximum likelihood ", 
+"^ot:inGroupClade": "node2", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
+"^ot:outGroupEdge": "", 
+"^ot:rootNodeId": "node1", 
+"^ot:specifiedRoot": "node1", 
+"^ot:tag": [
+"Scyllatree"
+], 
+"^ot:unrootedTree": false, 
+"edgeBySourceId": {
+"node1": {
+"edge1": {
+"@length": 1, 
+"@source": "node1", 
+"@target": "node2"
+}, 
+"edge6": {
+"@length": 2, 
+"@source": "node1", 
+"@target": "node7"
+}
+}, 
+"node2": {
+"edge2": {
+"@length": 1, 
+"@source": "node2", 
+"@target": "node3"
+}, 
+"edge5": {
+"@length": 2, 
+"@source": "node2", 
+"@target": "node6"
+}
+}, 
+"node3": {
+"edge3": {
+"@length": 1, 
+"@source": "node3", 
+"@target": "node4"
+}, 
+"edge4": {
+"@length": 1, 
+"@source": "node3", 
+"@target": "node5"
+}
+}, 
+"node7": {
+"edge7": {
+"@length": 1, 
+"@source": "node7", 
+"@target": "node8"
+}, 
+"edge8": {
+"@length": 1, 
+"@source": "node7", 
+"@target": "node9"
+}
+}
+}, 
+"nodeById": {
+"node1": {
+"@root": true
+}, 
+"node2": {}, 
+"node3": {}, 
+"node4": {
+"@otu": "otu1"
+}, 
+"node5": {
+"@otu": "otu2"
+}, 
+"node6": {
+"@otu": "otu3"
+}, 
+"node7": {}, 
+"node8": {
+"@otu": "otu4"
+}, 
+"node9": {
+"@otu": "otu5"
+}
+}
+}
+}
+}
+}
+}
+}

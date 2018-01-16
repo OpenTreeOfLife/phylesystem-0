@@ -36,32 +36,126 @@
 }
 ]
 }
+}, 
+{
+"@description": "Web-based interface for submitting, editing, and reviewing studies in the Open Tree of Life project.", 
+"@id": "opentree-curation-webapp", 
+"@name": "OpenTree curation webapp", 
+"@url": "https://github.com/OpenTreeOfLife/opentree", 
+"@version": "0.0.0"
 }
 ]
 }, 
 "^ot:annotationEvents": {
-"annotation": []
+"annotation": [
+{
+"@dateCreated": "2015-09-29T19:56:30.281Z", 
+"@description": "Aids for mapping study OTUs to OTT taxa", 
+"@id": "otu-mapping-hints", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "OTU_MAPPING_HINTS", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"searchContext": {
+"$": "All life"
 }, 
-"^ot:candidateTreeForSynthesis": [], 
-"^ot:curatorName": "Romina Gazis", 
+"substitutions": {
+"substitution": [
+{
+"@active": false, 
+"@valid": true, 
+"new": {
+"$": ""
+}, 
+"old": {
+"$": ""
+}
+}, 
+{
+"@active": true, 
+"@valid": true, 
+"new": {
+"$": "$1"
+}, 
+"old": {
+"$": "^(\\S*\\s+\\S*).*"
+}
+}
+]
+}, 
+"useFuzzyMatching": true
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}, 
+{
+"@dateCreated": "2015-09-29T19:56:30.281Z", 
+"@description": "Describes supporting data files for this study", 
+"@id": "supporting-files-metadata", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "SUPPORTING_FILE_INFO", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"@movedToPermanentArchive": false, 
+"files": {
+"file": []
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}
+]
+}, 
+"^ot:candidateTreeForSynthesis": [
+"tree4667"
+], 
+"^ot:comment": "", 
+"^ot:curatorName": [
+"Romina Gazis"
+], 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S1345"
 }, 
 "^ot:focalClade": 354187, 
 "^ot:focalCladeOTTTaxonName": "Cylindrocladiella", 
-"^ot:messages": {
-"message": []
-}, 
+"^ot:notIntendedForSynthesis": false, 
 "^ot:otusElementOrder": [
 "otus2206"
 ], 
 "^ot:studyId": "pg_2206", 
-"^ot:studyPublicationReference": "Van Coller, G. J., S. Denman, J. Z. Groenewald, S. C. Lamprecht, and P. W. Crous. \"Characterisation and pathogenicity of Cylindrocladiella spp. associated with root and cutting rot symptoms of grapevines in nurseries.\" Australasian Plant Pathology 34, no. 4 (2005): 489-498.", 
+"^ot:studyPublication": {
+"@href": "http://dx.doi.org/10.1071/ap05058"
+}, 
+"^ot:studyPublicationReference": "G. J. van Coller, S. Denman, J. Z. Groenewald, S. C. Lamprecht, P. W. Crous, 2005, ' Characterisation and pathogenicity of Cylindrocladiella spp. associated with root and cutting rot symptoms of grapevines in nurseries ', Australasian Plant Pathology, vol. 34, no. 4, p. 489", 
 "^ot:studyYear": 2005, 
 "^ot:tag": [], 
 "^ot:treesElementOrder": [
 "trees2206"
 ], 
+"^xhtml:license": {
+"@href": "http://creativecommons.org/publicdomain/zero/1.0/", 
+"@name": "CC0"
+}, 
 "otusById": {
 "otus2206": {
 "otuById": {
@@ -79,6 +173,8 @@
 }, 
 "otu320650": {
 "^ot:originalLabel": "Cylindrocladiella microcylindrica STE-U 10451", 
+"^ot:ottId": 5317082, 
+"^ot:ottTaxonName": "Nectricladiella viticola", 
 "^ot:treebaseOTUId": "Tl37205"
 }, 
 "otu320651": {
@@ -137,6 +233,8 @@
 }, 
 "otu320660": {
 "^ot:originalLabel": "Cylindrocladiella microcylindrica ATCC 38571", 
+"^ot:ottId": 5317082, 
+"^ot:ottTaxonName": "Nectricladiella viticola", 
 "^ot:treebaseOTUId": "Tl37215"
 }, 
 "otu320661": {
@@ -273,6 +371,8 @@
 }, 
 "otu320683": {
 "^ot:originalLabel": "Cylindrocladiella microcylindrica STE-U 10452", 
+"^ot:ottId": 5317082, 
+"^ot:ottTaxonName": "Nectricladiella viticola", 
 "^ot:treebaseOTUId": "Tl37238"
 }, 
 "otu320684": {
@@ -334,19 +434,23 @@
 ], 
 "treeById": {
 "tree4667": {
+"@label": "Fig. 1. One of 16 most parsimonious trees obtained from the combined ITS, \u03b2-tubulin and histone sequence data (TL=993 steps, CI=0.802, RI=0.951, RC=0.762).", 
 "@xsi:type": "nex:FloatTree", 
 "^ot:branchLengthDescription": "", 
-"^ot:branchLengthMode": "", 
-"^ot:branchLengthTimeUnit": "", 
-"^ot:curatedType": "MP, ITS + b-tubulin + histone", 
+"^ot:branchLengthMode": "ot:changesCount", 
+"^ot:branchLengthTimeUnit": "Myr", 
+"^ot:curatedType": "Maximum parsimony ", 
 "^ot:inGroupClade": "node825187", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
 "^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node825183", 
-"^ot:specifiedRoot": "", 
+"^ot:specifiedRoot": "node825183", 
 "^ot:tag": [
 "MP", 
-"b-tub"
+"\u03b2-tubulin and histone"
 ], 
+"^ot:unrootedTree": false, 
 "edgeBySourceId": {
 "node825183": {
 "edge825184": {
@@ -689,10 +793,12 @@
 }, 
 "node825184": {}, 
 "node825185": {
-"@otu": "otu320691"
+"@otu": "otu320691", 
+"^ot:isTaxonExemplar": true
 }, 
 "node825186": {
-"@otu": "otu320648"
+"@otu": "otu320648", 
+"^ot:isTaxonExemplar": false
 }, 
 "node825187": {}, 
 "node825188": {}, 
@@ -700,77 +806,99 @@
 "node825190": {}, 
 "node825191": {}, 
 "node825192": {
-"@otu": "otu320655"
+"@otu": "otu320655", 
+"^ot:isTaxonExemplar": true
 }, 
 "node825193": {
-"@otu": "otu320686"
+"@otu": "otu320686", 
+"^ot:isTaxonExemplar": false
 }, 
 "node825194": {}, 
 "node825195": {}, 
 "node825196": {
-"@otu": "otu320660"
+"@otu": "otu320660", 
+"^ot:isTaxonExemplar": false
 }, 
 "node825197": {
-"@otu": "otu320650"
+"@otu": "otu320650", 
+"^ot:isTaxonExemplar": false
 }, 
 "node825198": {
-"@otu": "otu320683"
+"@otu": "otu320683", 
+"^ot:isTaxonExemplar": true
 }, 
 "node825199": {}, 
 "node825200": {}, 
 "node825201": {
-"@otu": "otu320659"
+"@otu": "otu320659", 
+"^ot:isTaxonExemplar": false
 }, 
 "node825202": {
-"@otu": "otu320673"
+"@otu": "otu320673", 
+"^ot:isTaxonExemplar": false
 }, 
 "node825203": {
-"@otu": "otu320689"
+"@otu": "otu320689", 
+"^ot:isTaxonExemplar": false
 }, 
 "node825204": {
-"@otu": "otu320677"
+"@otu": "otu320677", 
+"^ot:isTaxonExemplar": false
 }, 
 "node825205": {
-"@otu": "otu320651"
+"@otu": "otu320651", 
+"^ot:isTaxonExemplar": false
 }, 
 "node825206": {
-"@otu": "otu320678"
+"@otu": "otu320678", 
+"^ot:isTaxonExemplar": false
 }, 
 "node825207": {
-"@otu": "otu320674"
+"@otu": "otu320674", 
+"^ot:isTaxonExemplar": false
 }, 
 "node825208": {
-"@otu": "otu320657"
+"@otu": "otu320657", 
+"^ot:isTaxonExemplar": false
 }, 
 "node825209": {
-"@otu": "otu320667"
+"@otu": "otu320667", 
+"^ot:isTaxonExemplar": false
 }, 
 "node825210": {
-"@otu": "otu320669"
+"@otu": "otu320669", 
+"^ot:isTaxonExemplar": false
 }, 
 "node825211": {}, 
 "node825212": {
-"@otu": "otu320664"
+"@otu": "otu320664", 
+"^ot:isTaxonExemplar": false
 }, 
 "node825213": {
-"@otu": "otu320688"
+"@otu": "otu320688", 
+"^ot:isTaxonExemplar": false
 }, 
 "node825214": {
-"@otu": "otu320671"
+"@otu": "otu320671", 
+"^ot:isTaxonExemplar": false
 }, 
 "node825215": {
-"@otu": "otu320658"
+"@otu": "otu320658", 
+"^ot:isTaxonExemplar": false
 }, 
 "node825216": {
-"@otu": "otu320661"
+"@otu": "otu320661", 
+"^ot:isTaxonExemplar": true
 }, 
 "node825217": {}, 
 "node825218": {}, 
 "node825219": {
-"@otu": "otu320654"
+"@otu": "otu320654", 
+"^ot:isTaxonExemplar": true
 }, 
 "node825220": {
-"@otu": "otu320649"
+"@otu": "otu320649", 
+"^ot:isTaxonExemplar": false
 }, 
 "node825221": {
 "@otu": "otu320668"
@@ -780,70 +908,89 @@
 "node825224": {}, 
 "node825225": {}, 
 "node825226": {
-"@otu": "otu320652"
+"@otu": "otu320652", 
+"^ot:isTaxonExemplar": false
 }, 
 "node825227": {
-"@otu": "otu320680"
+"@otu": "otu320680", 
+"^ot:isTaxonExemplar": true
 }, 
 "node825228": {}, 
 "node825229": {}, 
 "node825230": {
-"@otu": "otu320676"
+"@otu": "otu320676", 
+"^ot:isTaxonExemplar": true
 }, 
 "node825231": {
-"@otu": "otu320679"
+"@otu": "otu320679", 
+"^ot:isTaxonExemplar": false
 }, 
 "node825232": {}, 
 "node825233": {
-"@otu": "otu320653"
+"@otu": "otu320653", 
+"^ot:isTaxonExemplar": false
 }, 
 "node825234": {}, 
 "node825235": {
-"@otu": "otu320685"
+"@otu": "otu320685", 
+"^ot:isTaxonExemplar": true
 }, 
 "node825236": {
-"@otu": "otu320665"
+"@otu": "otu320665", 
+"^ot:isTaxonExemplar": false
 }, 
 "node825237": {}, 
 "node825238": {
-"@otu": "otu320684"
+"@otu": "otu320684", 
+"^ot:isTaxonExemplar": true
 }, 
 "node825239": {}, 
 "node825240": {
-"@otu": "otu320662"
+"@otu": "otu320662", 
+"^ot:isTaxonExemplar": false
 }, 
 "node825241": {
-"@otu": "otu320656"
+"@otu": "otu320656", 
+"^ot:isTaxonExemplar": false
 }, 
 "node825242": {
-"@otu": "otu320675"
+"@otu": "otu320675", 
+"^ot:isTaxonExemplar": false
 }, 
 "node825243": {
-"@otu": "otu320672"
+"@otu": "otu320672", 
+"^ot:isTaxonExemplar": false
 }, 
 "node825244": {
-"@otu": "otu320681"
+"@otu": "otu320681", 
+"^ot:isTaxonExemplar": false
 }, 
 "node825245": {
-"@otu": "otu320670"
+"@otu": "otu320670", 
+"^ot:isTaxonExemplar": false
 }, 
 "node825246": {
-"@otu": "otu320687"
+"@otu": "otu320687", 
+"^ot:isTaxonExemplar": false
 }, 
 "node825247": {}, 
 "node825248": {}, 
 "node825249": {
-"@otu": "otu320682"
+"@otu": "otu320682", 
+"^ot:isTaxonExemplar": false
 }, 
 "node825250": {}, 
 "node825251": {
-"@otu": "otu320666"
+"@otu": "otu320666", 
+"^ot:isTaxonExemplar": false
 }, 
 "node825252": {
-"@otu": "otu320690"
+"@otu": "otu320690", 
+"^ot:isTaxonExemplar": false
 }, 
 "node825253": {
-"@otu": "otu320663"
+"@otu": "otu320663", 
+"^ot:isTaxonExemplar": true
 }
 }
 }

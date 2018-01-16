@@ -36,22 +36,109 @@
 }
 ]
 }
+}, 
+{
+"@description": "Web-based interface for submitting, editing, and reviewing studies in the Open Tree of Life project.", 
+"@id": "opentree-curation-webapp", 
+"@name": "OpenTree curation webapp", 
+"@url": "https://github.com/OpenTreeOfLife/opentree", 
+"@version": "0.0.0"
 }
 ]
 }, 
 "^ot:annotationEvents": {
-"annotation": []
+"annotation": [
+{
+"@dateCreated": "2015-09-29T14:27:56.127Z", 
+"@description": "Aids for mapping study OTUs to OTT taxa", 
+"@id": "otu-mapping-hints", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "OTU_MAPPING_HINTS", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"searchContext": {
+"$": "All life"
 }, 
-"^ot:candidateTreeForSynthesis": [], 
-"^ot:curatorName": "Romina Gazis", 
+"substitutions": {
+"substitution": [
+{
+"@active": false, 
+"@valid": true, 
+"new": {
+"$": ""
+}, 
+"old": {
+"$": ""
+}
+}, 
+{
+"@active": true, 
+"@valid": true, 
+"new": {
+"$": "$1"
+}, 
+"old": {
+"$": "^(\\S*\\s+\\S*).*"
+}
+}
+]
+}, 
+"useFuzzyMatching": true
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}, 
+{
+"@dateCreated": "2015-09-29T14:27:56.127Z", 
+"@description": "Describes supporting data files for this study", 
+"@id": "supporting-files-metadata", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "SUPPORTING_FILE_INFO", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"@movedToPermanentArchive": false, 
+"files": {
+"file": []
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}
+]
+}, 
+"^ot:candidateTreeForSynthesis": [
+"tree4883"
+], 
+"^ot:comment": "", 
+"^ot:curatorName": [
+"Romina Gazis"
+], 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S2076"
 }, 
 "^ot:focalClade": 728373, 
 "^ot:focalCladeOTTTaxonName": "Gibberella", 
-"^ot:messages": {
-"message": []
-}, 
+"^ot:notIntendedForSynthesis": false, 
 "^ot:otusElementOrder": [
 "otus2314"
 ], 
@@ -65,31 +152,47 @@
 "^ot:treesElementOrder": [
 "trees2314"
 ], 
+"^xhtml:license": {
+"@href": "http://creativecommons.org/publicdomain/zero/1.0/", 
+"@name": "CC0"
+}, 
 "otusById": {
 "otus2314": {
 "otuById": {
 "otu329228": {
 "^ot:originalLabel": "Fusarium graminearum Fgw190", 
+"^ot:ottId": 264388, 
+"^ot:ottTaxonName": "Gibberella zeae", 
 "^ot:treebaseOTUId": "Tl82657"
 }, 
 "otu329229": {
 "^ot:originalLabel": "Fusarium graminearum Fgp38", 
+"^ot:ottId": 264388, 
+"^ot:ottTaxonName": "Gibberella zeae", 
 "^ot:treebaseOTUId": "Tl82658"
 }, 
 "otu329230": {
 "^ot:originalLabel": "Fusarium graminearum Fgw136", 
+"^ot:ottId": 264388, 
+"^ot:ottTaxonName": "Gibberella zeae", 
 "^ot:treebaseOTUId": "Tl82659"
 }, 
 "otu329231": {
 "^ot:originalLabel": "Fusarium graminearum Fgw195", 
+"^ot:ottId": 264388, 
+"^ot:ottTaxonName": "Gibberella zeae", 
 "^ot:treebaseOTUId": "Tl82660"
 }, 
 "otu329232": {
 "^ot:originalLabel": "Fusarium graminearum Fgs2", 
+"^ot:ottId": 264388, 
+"^ot:ottTaxonName": "Gibberella zeae", 
 "^ot:treebaseOTUId": "Tl82661"
 }, 
 "otu329233": {
 "^ot:originalLabel": "Fusarium graminearum Fgw115", 
+"^ot:ottId": 264388, 
+"^ot:ottTaxonName": "Gibberella zeae", 
 "^ot:treebaseOTUId": "Tl82662"
 }, 
 "otu329234": {
@@ -112,10 +215,14 @@
 }, 
 "otu329237": {
 "^ot:originalLabel": "Fusarium graminearum Fgw158", 
+"^ot:ottId": 264388, 
+"^ot:ottTaxonName": "Gibberella zeae", 
 "^ot:treebaseOTUId": "Tl82666"
 }, 
 "otu329238": {
 "^ot:originalLabel": "Fusarium graminearum Fgw155", 
+"^ot:ottId": 264388, 
+"^ot:ottTaxonName": "Gibberella zeae", 
 "^ot:treebaseOTUId": "Tl82667"
 }, 
 "otu329239": {
@@ -126,10 +233,14 @@
 }, 
 "otu329240": {
 "^ot:originalLabel": "Fusarium pseudograminearum NRRL28334", 
+"^ot:ottId": 3702216, 
+"^ot:ottTaxonName": "Gibberella coronicola", 
 "^ot:treebaseOTUId": "Tl82669"
 }, 
 "otu329241": {
 "^ot:originalLabel": "Fusarium graminearum Fgs4", 
+"^ot:ottId": 264388, 
+"^ot:ottTaxonName": "Gibberella zeae", 
 "^ot:treebaseOTUId": "Tl82670"
 }, 
 "otu329242": {
@@ -140,6 +251,8 @@
 }, 
 "otu329243": {
 "^ot:originalLabel": "Fusarium graminearum Fgs9", 
+"^ot:ottId": 264388, 
+"^ot:ottTaxonName": "Gibberella zeae", 
 "^ot:treebaseOTUId": "Tl82672"
 }, 
 "otu329244": {
@@ -150,6 +263,8 @@
 }, 
 "otu329245": {
 "^ot:originalLabel": "Fusarium graminearum Fgw133", 
+"^ot:ottId": 264388, 
+"^ot:ottTaxonName": "Gibberella zeae", 
 "^ot:treebaseOTUId": "Tl82674"
 }, 
 "otu329246": {
@@ -166,10 +281,14 @@
 }, 
 "otu329248": {
 "^ot:originalLabel": "Fusarium graminearum Fgp21", 
+"^ot:ottId": 264388, 
+"^ot:ottTaxonName": "Gibberella zeae", 
 "^ot:treebaseOTUId": "Tl82677"
 }, 
 "otu329249": {
 "^ot:originalLabel": "Fusarium graminearum Fgw77", 
+"^ot:ottId": 264388, 
+"^ot:ottTaxonName": "Gibberella zeae", 
 "^ot:treebaseOTUId": "Tl82678"
 }, 
 "otu329250": {
@@ -186,10 +305,14 @@
 }, 
 "otu329252": {
 "^ot:originalLabel": "Fusarium graminearum Fgw228", 
+"^ot:ottId": 264388, 
+"^ot:ottTaxonName": "Gibberella zeae", 
 "^ot:treebaseOTUId": "Tl82681"
 }, 
 "otu329253": {
 "^ot:originalLabel": "Fusarium graminearum Fgw51", 
+"^ot:ottId": 264388, 
+"^ot:ottTaxonName": "Gibberella zeae", 
 "^ot:treebaseOTUId": "Tl82682"
 }, 
 "otu329254": {
@@ -218,18 +341,26 @@
 }, 
 "otu329258": {
 "^ot:originalLabel": "Fusarium graminearum Fgp24", 
+"^ot:ottId": 264388, 
+"^ot:ottTaxonName": "Gibberella zeae", 
 "^ot:treebaseOTUId": "Tl82687"
 }, 
 "otu329259": {
 "^ot:originalLabel": "Fusarium graminearum Fgw62", 
+"^ot:ottId": 264388, 
+"^ot:ottTaxonName": "Gibberella zeae", 
 "^ot:treebaseOTUId": "Tl82688"
 }, 
 "otu329260": {
 "^ot:originalLabel": "Fusarium graminearum Fgp39", 
+"^ot:ottId": 264388, 
+"^ot:ottTaxonName": "Gibberella zeae", 
 "^ot:treebaseOTUId": "Tl82689"
 }, 
 "otu329261": {
 "^ot:originalLabel": "Fusarium graminearum Fgw90", 
+"^ot:ottId": 264388, 
+"^ot:ottTaxonName": "Gibberella zeae", 
 "^ot:treebaseOTUId": "Tl82690"
 }, 
 "otu329262": {
@@ -240,6 +371,8 @@
 }, 
 "otu329263": {
 "^ot:originalLabel": "Fusarium graminearum Fgb9", 
+"^ot:ottId": 264388, 
+"^ot:ottTaxonName": "Gibberella zeae", 
 "^ot:treebaseOTUId": "Tl82692"
 }, 
 "otu329264": {
@@ -256,6 +389,8 @@
 }, 
 "otu329266": {
 "^ot:originalLabel": "Fusarium pseudograminearum NRRL28338", 
+"^ot:ottId": 3702216, 
+"^ot:ottTaxonName": "Gibberella coronicola", 
 "^ot:treebaseOTUId": "Tl82695"
 }, 
 "otu329267": {
@@ -266,10 +401,14 @@
 }, 
 "otu329268": {
 "^ot:originalLabel": "Fusarium graminearum Fgp23", 
+"^ot:ottId": 264388, 
+"^ot:ottTaxonName": "Gibberella zeae", 
 "^ot:treebaseOTUId": "Tl82697"
 }, 
 "otu329269": {
 "^ot:originalLabel": "Fusarium graminearum Fgw121", 
+"^ot:ottId": 264388, 
+"^ot:ottTaxonName": "Gibberella zeae", 
 "^ot:treebaseOTUId": "Tl82698"
 }, 
 "otu329270": {
@@ -298,10 +437,14 @@
 }, 
 "otu329274": {
 "^ot:originalLabel": "Fusarium graminearum Fgw187", 
+"^ot:ottId": 264388, 
+"^ot:ottTaxonName": "Gibberella zeae", 
 "^ot:treebaseOTUId": "Tl82703"
 }, 
 "otu329275": {
 "^ot:originalLabel": "Fusarium graminearum Fgs3", 
+"^ot:ottId": 264388, 
+"^ot:ottTaxonName": "Gibberella zeae", 
 "^ot:treebaseOTUId": "Tl82704"
 }, 
 "otu329276": {
@@ -312,10 +455,14 @@
 }, 
 "otu329277": {
 "^ot:originalLabel": "Fusarium graminearum Fgw166", 
+"^ot:ottId": 264388, 
+"^ot:ottTaxonName": "Gibberella zeae", 
 "^ot:treebaseOTUId": "Tl82706"
 }, 
 "otu329278": {
 "^ot:originalLabel": "Fusarium graminearum Fgb20", 
+"^ot:ottId": 264388, 
+"^ot:ottTaxonName": "Gibberella zeae", 
 "^ot:treebaseOTUId": "Tl82707"
 }, 
 "otu329279": {
@@ -326,6 +473,8 @@
 }, 
 "otu329280": {
 "^ot:originalLabel": "Fusarium graminearum Fgb25", 
+"^ot:ottId": 264388, 
+"^ot:ottTaxonName": "Gibberella zeae", 
 "^ot:treebaseOTUId": "Tl82709"
 }, 
 "otu329281": {
@@ -336,6 +485,8 @@
 }, 
 "otu329282": {
 "^ot:originalLabel": "Fusarium graminearum Fgw199", 
+"^ot:ottId": 264388, 
+"^ot:ottTaxonName": "Gibberella zeae", 
 "^ot:treebaseOTUId": "Tl82711"
 }, 
 "otu329283": {
@@ -346,10 +497,14 @@
 }, 
 "otu329284": {
 "^ot:originalLabel": "Fusarium graminearum Fgw37", 
+"^ot:ottId": 264388, 
+"^ot:ottTaxonName": "Gibberella zeae", 
 "^ot:treebaseOTUId": "Tl82713"
 }, 
 "otu329285": {
 "^ot:originalLabel": "Fusarium graminearum Fgw79", 
+"^ot:ottId": 264388, 
+"^ot:ottTaxonName": "Gibberella zeae", 
 "^ot:treebaseOTUId": "Tl82714"
 }, 
 "otu329286": {
@@ -360,10 +515,14 @@
 }, 
 "otu329287": {
 "^ot:originalLabel": "Fusarium graminearum Fgb7", 
+"^ot:ottId": 264388, 
+"^ot:ottTaxonName": "Gibberella zeae", 
 "^ot:treebaseOTUId": "Tl82716"
 }, 
 "otu329288": {
 "^ot:originalLabel": "Fusarium graminearum Fgs5", 
+"^ot:ottId": 264388, 
+"^ot:ottTaxonName": "Gibberella zeae", 
 "^ot:treebaseOTUId": "Tl82717"
 }, 
 "otu329289": {
@@ -390,18 +549,22 @@
 ], 
 "treeById": {
 "tree4882": {
+"@label": "A, Phylogram generated using sequence from phosphate permease gene", 
 "@xsi:type": "nex:FloatTree", 
 "^ot:branchLengthDescription": "", 
-"^ot:branchLengthMode": "", 
-"^ot:branchLengthTimeUnit": "", 
-"^ot:curatedType": "MP, phosphate permease gene + EF-1", 
+"^ot:branchLengthMode": "ot:substitutionCount", 
+"^ot:branchLengthTimeUnit": "Myr", 
+"^ot:curatedType": "Maximum parsimony ", 
 "^ot:inGroupClade": "node849148", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
 "^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node849145", 
-"^ot:specifiedRoot": "", 
+"^ot:specifiedRoot": "node849145", 
 "^ot:tag": [
-"MP"
+"phosphate permease gene"
 ], 
+"^ot:unrootedTree": false, 
 "edgeBySourceId": {
 "node849145": {
 "edge849146": {
@@ -759,10 +922,12 @@
 "@root": true
 }, 
 "node849146": {
-"@otu": "otu329236"
+"@otu": "otu329236", 
+"^ot:isTaxonExemplar": true
 }, 
 "node849147": {
-"@otu": "otu329257"
+"@otu": "otu329257", 
+"^ot:isTaxonExemplar": false
 }, 
 "node849148": {}, 
 "node849149": {}, 
@@ -770,48 +935,61 @@
 "node849151": {}, 
 "node849152": {}, 
 "node849153": {
-"@otu": "otu329244"
+"@otu": "otu329244", 
+"^ot:isTaxonExemplar": true
 }, 
 "node849154": {
-"@otu": "otu329250"
+"@otu": "otu329250", 
+"^ot:isTaxonExemplar": false
 }, 
 "node849155": {}, 
 "node849156": {}, 
 "node849157": {
-"@otu": "otu329290"
+"@otu": "otu329290", 
+"^ot:isTaxonExemplar": true
 }, 
 "node849158": {
-"@otu": "otu329265"
+"@otu": "otu329265", 
+"^ot:isTaxonExemplar": false
 }, 
 "node849159": {}, 
 "node849160": {
-"@otu": "otu329247"
+"@otu": "otu329247", 
+"^ot:isTaxonExemplar": true
 }, 
 "node849161": {
-"@otu": "otu329270"
+"@otu": "otu329270", 
+"^ot:isTaxonExemplar": false
 }, 
 "node849162": {
-"@otu": "otu329283"
+"@otu": "otu329283", 
+"^ot:isTaxonExemplar": true
 }, 
 "node849163": {
-"@otu": "otu329239"
+"@otu": "otu329239", 
+"^ot:isTaxonExemplar": false
 }, 
 "node849164": {}, 
 "node849165": {
-"@otu": "otu329276"
+"@otu": "otu329276", 
+"^ot:isTaxonExemplar": true
 }, 
 "node849166": {
-"@otu": "otu329256"
+"@otu": "otu329256", 
+"^ot:isTaxonExemplar": false
 }, 
 "node849167": {}, 
 "node849168": {
-"@otu": "otu329255"
+"@otu": "otu329255", 
+"^ot:isTaxonExemplar": true
 }, 
 "node849169": {
-"@otu": "otu329262"
+"@otu": "otu329262", 
+"^ot:isTaxonExemplar": false
 }, 
 "node849170": {
-"@otu": "otu329272"
+"@otu": "otu329272", 
+"^ot:isTaxonExemplar": false
 }, 
 "node849171": {}, 
 "node849172": {}, 
@@ -934,48 +1112,63 @@
 "@otu": "otu329251"
 }, 
 "node849213": {
-"@otu": "otu329279"
+"@otu": "otu329279", 
+"^ot:isTaxonExemplar": true
 }, 
 "node849214": {
-"@otu": "otu329273"
+"@otu": "otu329273", 
+"^ot:isTaxonExemplar": false
 }, 
 "node849215": {
-"@otu": "otu329254"
+"@otu": "otu329254", 
+"^ot:isTaxonExemplar": false
 }, 
 "node849216": {}, 
 "node849217": {
-"@otu": "otu329235"
+"@otu": "otu329235", 
+"^ot:isTaxonExemplar": true
 }, 
 "node849218": {
-"@otu": "otu329246"
+"@otu": "otu329246", 
+"^ot:isTaxonExemplar": false
 }, 
 "node849219": {}, 
 "node849220": {
-"@otu": "otu329240"
+"@otu": "otu329240", 
+"^ot:isTaxonExemplar": true
 }, 
 "node849221": {
-"@otu": "otu329266"
+"@otu": "otu329266", 
+"^ot:isTaxonExemplar": false
 }, 
 "node849222": {}, 
 "node849223": {
-"@otu": "otu329234"
+"@otu": "otu329234", 
+"^ot:isTaxonExemplar": true
 }, 
 "node849224": {
-"@otu": "otu329289"
+"@otu": "otu329289", 
+"^ot:isTaxonExemplar": false
 }
 }
 }, 
 "tree4883": {
+"@label": "Fig. 1. Maximum parsimony phylogram of Gibberella zeae (anamorph: Fusarium graminearum) strains from this study and strains of Fusarium spp. from O\u2019Donnell et al. (45,46) generated using sequences of translation elongation factor-1\u03b1 (EF1T \u00d7 EF2T) genes.", 
 "@xsi:type": "nex:FloatTree", 
 "^ot:branchLengthDescription": "", 
-"^ot:branchLengthMode": "", 
-"^ot:branchLengthTimeUnit": "", 
-"^ot:curatedType": "MP, EF-1", 
+"^ot:branchLengthMode": "ot:changesCount", 
+"^ot:branchLengthTimeUnit": "Myr", 
+"^ot:curatedType": "Maximum parsimony ", 
 "^ot:inGroupClade": "node849232", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
 "^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node849225", 
-"^ot:specifiedRoot": "", 
-"^ot:tag": [], 
+"^ot:specifiedRoot": "node849225", 
+"^ot:tag": [
+"EF-1"
+], 
+"^ot:unrootedTree": false, 
 "edgeBySourceId": {
 "node849225": {
 "edge849226": {
@@ -1327,208 +1520,271 @@
 "@root": true
 }, 
 "node849226": {
-"@otu": "otu329234"
+"@otu": "otu329234", 
+"^ot:isTaxonExemplar": false
 }, 
 "node849227": {
-"@otu": "otu329289"
+"@otu": "otu329289", 
+"^ot:isTaxonExemplar": true
 }, 
 "node849228": {}, 
 "node849229": {}, 
 "node849230": {
-"@otu": "otu329236"
+"@otu": "otu329236", 
+"^ot:isTaxonExemplar": false
 }, 
 "node849231": {
-"@otu": "otu329257"
+"@otu": "otu329257", 
+"^ot:isTaxonExemplar": true
 }, 
 "node849232": {}, 
 "node849233": {}, 
 "node849234": {}, 
 "node849235": {
-"@otu": "otu329283"
+"@otu": "otu329283", 
+"^ot:isTaxonExemplar": false
 }, 
 "node849236": {
-"@otu": "otu329239"
+"@otu": "otu329239", 
+"^ot:isTaxonExemplar": true
 }, 
 "node849237": {}, 
 "node849238": {
-"@otu": "otu329247"
+"@otu": "otu329247", 
+"^ot:isTaxonExemplar": false
 }, 
 "node849239": {
-"@otu": "otu329270"
+"@otu": "otu329270", 
+"^ot:isTaxonExemplar": true
 }, 
 "node849240": {}, 
 "node849241": {
-"@otu": "otu329244"
+"@otu": "otu329244", 
+"^ot:isTaxonExemplar": false
 }, 
 "node849242": {
-"@otu": "otu329250"
+"@otu": "otu329250", 
+"^ot:isTaxonExemplar": true
 }, 
 "node849243": {}, 
 "node849244": {
-"@otu": "otu329290"
+"@otu": "otu329290", 
+"^ot:isTaxonExemplar": false
 }, 
 "node849245": {
-"@otu": "otu329265"
+"@otu": "otu329265", 
+"^ot:isTaxonExemplar": true
 }, 
 "node849246": {}, 
 "node849247": {}, 
 "node849248": {
-"@otu": "otu329268"
+"@otu": "otu329268", 
+"^ot:isTaxonExemplar": false
 }, 
 "node849249": {
-"@otu": "otu329288"
+"@otu": "otu329288", 
+"^ot:isTaxonExemplar": false
 }, 
 "node849250": {
-"@otu": "otu329243"
+"@otu": "otu329243", 
+"^ot:isTaxonExemplar": false
 }, 
 "node849251": {
-"@otu": "otu329237"
+"@otu": "otu329237", 
+"^ot:isTaxonExemplar": false
 }, 
 "node849252": {
-"@otu": "otu329259"
+"@otu": "otu329259", 
+"^ot:isTaxonExemplar": false
 }, 
 "node849253": {
-"@otu": "otu329245"
+"@otu": "otu329245", 
+"^ot:isTaxonExemplar": false
 }, 
 "node849254": {
-"@otu": "otu329230"
+"@otu": "otu329230", 
+"^ot:isTaxonExemplar": false
 }, 
 "node849255": {
-"@otu": "otu329274"
+"@otu": "otu329274", 
+"^ot:isTaxonExemplar": false
 }, 
 "node849256": {
-"@otu": "otu329228"
+"@otu": "otu329228", 
+"^ot:isTaxonExemplar": false
 }, 
 "node849257": {
-"@otu": "otu329284"
+"@otu": "otu329284", 
+"^ot:isTaxonExemplar": false
 }, 
 "node849258": {
-"@otu": "otu329233"
+"@otu": "otu329233", 
+"^ot:isTaxonExemplar": false
 }, 
 "node849259": {
-"@otu": "otu329238"
+"@otu": "otu329238", 
+"^ot:isTaxonExemplar": false
 }, 
 "node849260": {
-"@otu": "otu329242"
+"@otu": "otu329242", 
+"^ot:isTaxonExemplar": false
 }, 
 "node849261": {
-"@otu": "otu329251"
+"@otu": "otu329251", 
+"^ot:isTaxonExemplar": false
 }, 
 "node849262": {
-"@otu": "otu329263"
+"@otu": "otu329263", 
+"^ot:isTaxonExemplar": false
 }, 
 "node849263": {
-"@otu": "otu329280"
+"@otu": "otu329280", 
+"^ot:isTaxonExemplar": false
 }, 
 "node849264": {
-"@otu": "otu329285"
+"@otu": "otu329285", 
+"^ot:isTaxonExemplar": false
 }, 
 "node849265": {
-"@otu": "otu329286"
+"@otu": "otu329286", 
+"^ot:isTaxonExemplar": false
 }, 
 "node849266": {
-"@otu": "otu329231"
+"@otu": "otu329231", 
+"^ot:isTaxonExemplar": false
 }, 
 "node849267": {
-"@otu": "otu329287"
+"@otu": "otu329287", 
+"^ot:isTaxonExemplar": false
 }, 
 "node849268": {
-"@otu": "otu329278"
+"@otu": "otu329278", 
+"^ot:isTaxonExemplar": false
 }, 
 "node849269": {
-"@otu": "otu329248"
+"@otu": "otu329248", 
+"^ot:isTaxonExemplar": false
 }, 
 "node849270": {
-"@otu": "otu329260"
+"@otu": "otu329260", 
+"^ot:isTaxonExemplar": false
 }, 
 "node849271": {
-"@otu": "otu329281"
+"@otu": "otu329281", 
+"^ot:isTaxonExemplar": false
 }, 
 "node849272": {
-"@otu": "otu329271"
+"@otu": "otu329271", 
+"^ot:isTaxonExemplar": false
 }, 
 "node849273": {
-"@otu": "otu329267"
+"@otu": "otu329267", 
+"^ot:isTaxonExemplar": false
 }, 
 "node849274": {
-"@otu": "otu329252"
+"@otu": "otu329252", 
+"^ot:isTaxonExemplar": false
 }, 
 "node849275": {}, 
 "node849276": {
-"@otu": "otu329275"
+"@otu": "otu329275", 
+"^ot:isTaxonExemplar": false
 }, 
 "node849277": {
-"@otu": "otu329277"
+"@otu": "otu329277", 
+"^ot:isTaxonExemplar": false
 }, 
 "node849278": {
-"@otu": "otu329253"
+"@otu": "otu329253", 
+"^ot:isTaxonExemplar": false
 }, 
 "node849279": {
-"@otu": "otu329269"
+"@otu": "otu329269", 
+"^ot:isTaxonExemplar": false
 }, 
 "node849280": {
-"@otu": "otu329264"
+"@otu": "otu329264", 
+"^ot:isTaxonExemplar": false
 }, 
 "node849281": {
-"@otu": "otu329229"
+"@otu": "otu329229", 
+"^ot:isTaxonExemplar": false
 }, 
 "node849282": {
-"@otu": "otu329282"
+"@otu": "otu329282", 
+"^ot:isTaxonExemplar": false
 }, 
 "node849283": {
-"@otu": "otu329249"
+"@otu": "otu329249", 
+"^ot:isTaxonExemplar": false
 }, 
 "node849284": {
-"@otu": "otu329258"
+"@otu": "otu329258", 
+"^ot:isTaxonExemplar": false
 }, 
 "node849285": {
-"@otu": "otu329261"
+"@otu": "otu329261", 
+"^ot:isTaxonExemplar": false
 }, 
 "node849286": {
-"@otu": "otu329232"
+"@otu": "otu329232", 
+"^ot:isTaxonExemplar": false
 }, 
 "node849287": {
-"@otu": "otu329241"
+"@otu": "otu329241", 
+"^ot:isTaxonExemplar": true
 }, 
 "node849288": {
-"@otu": "otu329276"
+"@otu": "otu329276", 
+"^ot:isTaxonExemplar": false
 }, 
 "node849289": {
-"@otu": "otu329256"
+"@otu": "otu329256", 
+"^ot:isTaxonExemplar": true
 }, 
 "node849290": {}, 
 "node849291": {
-"@otu": "otu329279"
+"@otu": "otu329279", 
+"^ot:isTaxonExemplar": false
 }, 
 "node849292": {
-"@otu": "otu329273"
+"@otu": "otu329273", 
+"^ot:isTaxonExemplar": false
 }, 
 "node849293": {
-"@otu": "otu329254"
+"@otu": "otu329254", 
+"^ot:isTaxonExemplar": true
 }, 
 "node849294": {}, 
 "node849295": {
-"@otu": "otu329272"
+"@otu": "otu329272", 
+"^ot:isTaxonExemplar": false
 }, 
 "node849296": {
-"@otu": "otu329255"
+"@otu": "otu329255", 
+"^ot:isTaxonExemplar": false
 }, 
 "node849297": {
-"@otu": "otu329262"
+"@otu": "otu329262", 
+"^ot:isTaxonExemplar": true
 }, 
 "node849298": {}, 
 "node849299": {
-"@otu": "otu329235"
+"@otu": "otu329235", 
+"^ot:isTaxonExemplar": false
 }, 
 "node849300": {
-"@otu": "otu329246"
+"@otu": "otu329246", 
+"^ot:isTaxonExemplar": true
 }, 
 "node849301": {}, 
 "node849302": {
-"@otu": "otu329240"
+"@otu": "otu329240", 
+"^ot:isTaxonExemplar": false
 }, 
 "node849303": {
-"@otu": "otu329266"
+"@otu": "otu329266", 
+"^ot:isTaxonExemplar": true
 }
 }
 }

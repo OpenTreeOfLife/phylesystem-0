@@ -36,22 +36,100 @@
 }
 ]
 }
+}, 
+{
+"@description": "Web-based interface for submitting, editing, and reviewing studies in the Open Tree of Life project.", 
+"@id": "opentree-curation-webapp", 
+"@name": "OpenTree curation webapp", 
+"@url": "https://github.com/OpenTreeOfLife/opentree", 
+"@version": "0.0.0"
 }
 ]
 }, 
 "^ot:annotationEvents": {
-"annotation": []
+"annotation": [
+{
+"@dateCreated": "2016-07-13T21:17:45.248Z", 
+"@description": "Aids for mapping study OTUs to OTT taxa", 
+"@id": "otu-mapping-hints", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "OTU_MAPPING_HINTS", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"searchContext": {
+"$": "Birds"
 }, 
-"^ot:candidateTreeForSynthesis": [], 
-"^ot:curatorName": "Chris Owen", 
+"substitutions": {
+"substitution": [
+{
+"@active": false, 
+"@valid": true, 
+"new": {
+"$": ""
+}, 
+"old": {
+"$": ""
+}
+}
+]
+}, 
+"useFuzzyMatching": false
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}, 
+{
+"@dateCreated": "2016-07-13T21:17:45.248Z", 
+"@description": "Describes supporting data files for this study", 
+"@id": "supporting-files-metadata", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "SUPPORTING_FILE_INFO", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"@movedToPermanentArchive": false, 
+"files": {
+"file": []
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}
+]
+}, 
+"^ot:candidateTreeForSynthesis": [
+"tree4360"
+], 
+"^ot:comment": "", 
+"^ot:curatorName": [
+"Chris Owen", 
+"Joseph W. Brown"
+], 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S11933"
 }, 
 "^ot:focalClade": 1041547, 
 "^ot:focalCladeOTTTaxonName": "Passeriformes", 
-"^ot:messages": {
-"message": []
-}, 
+"^ot:notIntendedForSynthesis": false, 
 "^ot:otusElementOrder": [
 "otus2105"
 ], 
@@ -59,7 +137,7 @@
 "^ot:studyPublication": {
 "@href": "http://dx.doi.org/10.1206/0003-0082(2006)3511[1:ANSOBF]2.0.CO;2"
 }, 
-"^ot:studyPublicationReference": "Lecroy M., and Barker F. K. 2006. New species of bush-warbler from Bougainville Island and a monophyletic origin for southwest Pacific Cettia. American Museum Novitates 3511: 1-20.", 
+"^ot:studyPublicationReference": "Lecroy, Mary, F. Keith Barker. 2006. New species of bush-warbler from Bougainville Island and a monophyletic origin for southwest Pacific Cettia. American Museum Novitates 3511: 1-20.", 
 "^ot:studyYear": 2006, 
 "^ot:tag": [], 
 "^ot:treesElementOrder": [
@@ -223,16 +301,20 @@
 ], 
 "treeById": {
 "tree4360": {
+"@label": "Fig. 7", 
 "@xsi:type": "nex:FloatTree", 
 "^ot:branchLengthDescription": "", 
 "^ot:branchLengthMode": "ot:substitutionCount", 
 "^ot:branchLengthTimeUnit": "", 
-"^ot:curatedType": "Fig. 7", 
+"^ot:curatedType": "Maximum likelihood ", 
 "^ot:inGroupClade": "node795770", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
 "^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node795763", 
-"^ot:specifiedRoot": "", 
+"^ot:specifiedRoot": "node795763", 
 "^ot:tag": [], 
+"^ot:unrootedTree": false, 
 "edgeBySourceId": {
 "node795763": {
 "edge795764": {
@@ -485,29 +567,36 @@
 "node795765": {}, 
 "node795766": {}, 
 "node795767": {
-"@otu": "otu312416"
+"@otu": "otu312416", 
+"^ot:isTaxonExemplar": true
 }, 
 "node795768": {
-"@otu": "otu312409"
+"@otu": "otu312409", 
+"^ot:isTaxonExemplar": false
 }, 
 "node795769": {
-"@otu": "otu312414"
+"@otu": "otu312414", 
+"^ot:isTaxonExemplar": false
 }, 
 "node795770": {}, 
 "node795771": {}, 
 "node795772": {}, 
 "node795773": {}, 
 "node795774": {
-"@otu": "otu312401"
+"@otu": "otu312401", 
+"^ot:isTaxonExemplar": true
 }, 
 "node795775": {
-"@otu": "otu312420"
+"@otu": "otu312420", 
+"^ot:isTaxonExemplar": false
 }, 
 "node795776": {
-"@otu": "otu312400"
+"@otu": "otu312400", 
+"^ot:isTaxonExemplar": false
 }, 
 "node795777": {
-"@otu": "otu312403"
+"@otu": "otu312403", 
+"^ot:isTaxonExemplar": false
 }, 
 "node795778": {}, 
 "node795779": {
@@ -517,27 +606,34 @@
 "node795781": {}, 
 "node795782": {}, 
 "node795783": {
-"@otu": "otu312418"
+"@otu": "otu312418", 
+"^ot:isTaxonExemplar": true
 }, 
 "node795784": {
-"@otu": "otu312406"
+"@otu": "otu312406", 
+"^ot:isTaxonExemplar": false
 }, 
 "node795785": {}, 
 "node795786": {
-"@otu": "otu312412"
+"@otu": "otu312412", 
+"^ot:isTaxonExemplar": false
 }, 
 "node795787": {}, 
 "node795788": {
-"@otu": "otu312410"
+"@otu": "otu312410", 
+"^ot:isTaxonExemplar": false
 }, 
 "node795789": {
-"@otu": "otu312398"
+"@otu": "otu312398", 
+"^ot:isTaxonExemplar": false
 }, 
 "node795790": {
-"@otu": "otu312408"
+"@otu": "otu312408", 
+"^ot:isTaxonExemplar": false
 }, 
 "node795791": {
-"@otu": "otu312405"
+"@otu": "otu312405", 
+"^ot:isTaxonExemplar": false
 }, 
 "node795792": {}, 
 "node795793": {}, 
@@ -547,24 +643,30 @@
 }, 
 "node795796": {}, 
 "node795797": {
-"@otu": "otu312419"
+"@otu": "otu312419", 
+"^ot:isTaxonExemplar": true
 }, 
 "node795798": {
-"@otu": "otu312413"
+"@otu": "otu312413", 
+"^ot:isTaxonExemplar": false
 }, 
 "node795799": {}, 
 "node795800": {
-"@otu": "otu312407"
+"@otu": "otu312407", 
+"^ot:isTaxonExemplar": true
 }, 
 "node795801": {
-"@otu": "otu312417"
+"@otu": "otu312417", 
+"^ot:isTaxonExemplar": false
 }, 
 "node795802": {}, 
 "node795803": {
-"@otu": "otu312399"
+"@otu": "otu312399", 
+"^ot:isTaxonExemplar": true
 }, 
 "node795804": {
-"@otu": "otu312415"
+"@otu": "otu312415", 
+"^ot:isTaxonExemplar": false
 }, 
 "node795805": {
 "@otu": "otu312411"

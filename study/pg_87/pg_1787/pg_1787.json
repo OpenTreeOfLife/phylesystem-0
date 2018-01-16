@@ -36,22 +36,120 @@
 }
 ]
 }
+}, 
+{
+"@description": "Web-based interface for submitting, editing, and reviewing studies in the Open Tree of Life project.", 
+"@id": "opentree-curation-webapp", 
+"@name": "OpenTree curation webapp", 
+"@url": "https://github.com/OpenTreeOfLife/opentree", 
+"@version": "0.0.0"
 }
 ]
 }, 
 "^ot:annotationEvents": {
-"annotation": []
+"annotation": [
+{
+"@dateCreated": "2016-10-22T11:25:48.725Z", 
+"@description": "Aids for mapping study OTUs to OTT taxa", 
+"@id": "otu-mapping-hints", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "OTU_MAPPING_HINTS", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"searchContext": {
+"$": "Cnidarians"
 }, 
-"^ot:candidateTreeForSynthesis": [], 
-"^ot:curatorName": "Chris Owen", 
+"substitutions": {
+"substitution": [
+{
+"@active": false, 
+"@valid": true, 
+"new": {
+"$": ""
+}, 
+"old": {
+"$": ""
+}
+}, 
+{
+"@active": false, 
+"@valid": true, 
+"new": {
+"$": ""
+}, 
+"old": {
+"$": ""
+}
+}, 
+{
+"@active": true, 
+"@valid": true, 
+"new": {
+"$": "$1"
+}, 
+"old": {
+"$": "^(\\S*\\s+\\S*).*"
+}
+}
+]
+}, 
+"useFuzzyMatching": false
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}, 
+{
+"@dateCreated": "2016-10-22T11:25:48.725Z", 
+"@description": "Describes supporting data files for this study", 
+"@id": "supporting-files-metadata", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "SUPPORTING_FILE_INFO", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"@movedToPermanentArchive": false, 
+"files": {
+"file": []
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}
+]
+}, 
+"^ot:candidateTreeForSynthesis": [
+"tree3606"
+], 
+"^ot:comment": "", 
+"^ot:curatorName": [
+"Chris Owen", 
+"Tesserazoa"
+], 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S1448"
 }, 
 "^ot:focalClade": 641033, 
 "^ot:focalCladeOTTTaxonName": "Cnidaria", 
-"^ot:messages": {
-"message": []
-}, 
+"^ot:notIntendedForSynthesis": false, 
 "^ot:otusElementOrder": [
 "otus1787"
 ], 
@@ -59,12 +157,16 @@
 "^ot:studyPublication": {
 "@href": "http://dx.doi.org/10.1080/10635150500433615"
 }, 
-"^ot:studyPublicationReference": "Collins A., Schuchert P., Marques A., Jankowski T., Medina M., & Schierwater B. 2005. Medusozoan phylogeny and character evolution clarified by new large and small subunit rDNA data and an assessment of the utility of phylogenetic mixture models. Systematic Biology, 55(1): 97-115.", 
-"^ot:studyYear": 2005, 
+"^ot:studyPublicationReference": "Collins A., Schuchert P., Marques A., Jankowski T., Medina M., & Schierwater B. 2006. Medusozoan phylogeny and character evolution clarified by new large and small subunit rDNA data and an assessment of the utility of phylogenetic mixture models. Systematic Biology, 55(1): 97-115.", 
+"^ot:studyYear": 2006, 
 "^ot:tag": [], 
 "^ot:treesElementOrder": [
 "trees1787"
 ], 
+"^xhtml:license": {
+"@href": "http://creativecommons.org/publicdomain/zero/1.0/", 
+"@name": "CC0"
+}, 
 "otusById": {
 "otus1787": {
 "otuById": {
@@ -250,10 +352,14 @@
 }, 
 "otu278352": {
 "^ot:originalLabel": "Darwin carybdeid-AGC-2001", 
+"^ot:ottId": 1051577, 
+"^ot:ottTaxonName": "Gerongia rifkinae", 
 "^ot:treebaseOTUId": "Tl164832"
 }, 
 "otu278353": {
 "^ot:originalLabel": "Darwin carybdeid-sp-AGC-2001", 
+"^ot:ottId": 1051577, 
+"^ot:ottTaxonName": "Gerongia rifkinae", 
 "^ot:treebaseOTUId": "Tl164833"
 }, 
 "otu278354": {
@@ -432,6 +538,8 @@
 }, 
 "otu278383": {
 "^ot:originalLabel": "Xenia sp", 
+"^ot:ottId": 30967, 
+"^ot:ottTaxonName": "Xenia (genus in phylum Cnidaria)", 
 "^ot:treebaseOTUId": "Tl24848"
 }, 
 "otu278384": {
@@ -442,6 +550,8 @@
 }, 
 "otu278385": {
 "^ot:originalLabel": "Obelia sp", 
+"^ot:ottId": 329822, 
+"^ot:ottTaxonName": "Obelia", 
 "^ot:treebaseOTUId": "Tl24852"
 }, 
 "otu278386": {
@@ -452,6 +562,8 @@
 }, 
 "otu278387": {
 "^ot:originalLabel": "Parazoanthus sp", 
+"^ot:ottId": 302325, 
+"^ot:ottTaxonName": "Parazoanthus", 
 "^ot:treebaseOTUId": "Tl24856"
 }, 
 "otu278388": {
@@ -504,6 +616,8 @@
 }, 
 "otu278396": {
 "^ot:originalLabel": "Rhizostome sp-AGC-2005", 
+"^ot:ottId": 650298, 
+"^ot:ottTaxonName": "Phyllorhiza punctata", 
 "^ot:treebaseOTUId": "Tl24868"
 }, 
 "otu278397": {
@@ -580,6 +694,8 @@
 }, 
 "otu278409": {
 "^ot:originalLabel": "Bathypathes sp", 
+"^ot:ottId": 539875, 
+"^ot:ottTaxonName": "Bathypathes", 
 "^ot:treebaseOTUId": "Tl24886"
 }, 
 "otu278410": {
@@ -614,6 +730,8 @@
 }, 
 "otu278415": {
 "^ot:originalLabel": "Telestula sp", 
+"^ot:ottId": 552148, 
+"^ot:ottTaxonName": "Telestula", 
 "^ot:treebaseOTUId": "Tl24897"
 }, 
 "otu278416": {
@@ -660,6 +778,8 @@
 }, 
 "otu278423": {
 "^ot:originalLabel": "Discosoma sp", 
+"^ot:ottId": 287082, 
+"^ot:ottTaxonName": "Discosoma", 
 "^ot:treebaseOTUId": "Tl24907"
 }, 
 "otu278424": {
@@ -772,6 +892,8 @@
 }, 
 "otu278442": {
 "^ot:originalLabel": "Corynactis sp", 
+"^ot:ottId": 5281611, 
+"^ot:ottTaxonName": "Corynactis", 
 "^ot:treebaseOTUId": "Tl24929"
 }, 
 "otu278443": {
@@ -811,16 +933,19 @@
 ], 
 "treeById": {
 "tree3605": {
+"@label": "LSU ML (tree3605)", 
 "@xsi:type": "nex:FloatTree", 
 "^ot:branchLengthDescription": "", 
 "^ot:branchLengthMode": "ot:changesCount", 
-"^ot:branchLengthTimeUnit": "", 
-"^ot:curatedType": "Fig. 2 ML large subunit", 
+"^ot:curatedType": "Maximum likelihood ", 
 "^ot:inGroupClade": "node692568", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
 "^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node692564", 
-"^ot:specifiedRoot": "", 
+"^ot:specifiedRoot": "node692564", 
 "^ot:tag": [], 
+"^ot:unrootedTree": false, 
 "edgeBySourceId": {
 "node692564": {
 "edge692565": {
@@ -1280,16 +1405,19 @@
 }
 }, 
 "tree3606": {
+"@label": "LSU & SSU Combined (tree3606)", 
 "@xsi:type": "nex:FloatTree", 
 "^ot:branchLengthDescription": "", 
 "^ot:branchLengthMode": "ot:changesCount", 
-"^ot:branchLengthTimeUnit": "", 
-"^ot:curatedType": "Fig. 4 ML LSU and SSU", 
+"^ot:curatedType": "Maximum likelihood ", 
 "^ot:inGroupClade": "node692633", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
 "^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node692629", 
-"^ot:specifiedRoot": "", 
+"^ot:specifiedRoot": "node692629", 
 "^ot:tag": [], 
+"^ot:unrootedTree": false, 
 "edgeBySourceId": {
 "node692629": {
 "edge692630": {
@@ -1721,16 +1849,19 @@
 }
 }, 
 "tree3607": {
+"@label": "SSU MP (tree3607)", 
 "@xsi:type": "nex:FloatTree", 
 "^ot:branchLengthDescription": "", 
 "^ot:branchLengthMode": "ot:changesCount", 
-"^ot:branchLengthTimeUnit": "", 
-"^ot:curatedType": "Fig. 3 MP SSU", 
+"^ot:curatedType": "Maximum parsimony ", 
 "^ot:inGroupClade": "node692691", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
 "^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node692690", 
-"^ot:specifiedRoot": "", 
+"^ot:specifiedRoot": "node692690", 
 "^ot:tag": [], 
+"^ot:unrootedTree": false, 
 "edgeBySourceId": {
 "node692690": {
 "edge692691": {

@@ -15,16 +15,13 @@
 "^ot:agents": {
 "agent": [
 {
-"@description": "validator of NexSON constraints as well as constraints that would allow a study to be imported into the Open Tree of Life's phylogenetic synthesis tools", 
+"@description": "Open Tree NexSON validation", 
 "@id": "peyotl-validator", 
-"@name": "validate_ot_nexson.py", 
+"@name": "api.opentreeoflife.org/validate", 
 "@url": "https://github.com/OpenTreeOfLife/peyotl", 
 "@version": "0.0.4a", 
 "invocation": {
-"commandLine": [
-"--embed", 
-"--agent-only"
-], 
+"commandLine": [], 
 "otherProperty": [
 {
 "name": "pythonVersion", 
@@ -36,19 +33,100 @@
 }
 ]
 }
+}, 
+{
+"@description": "Web-based interface for submitting, editing, and reviewing studies in the Open Tree of Life project.", 
+"@id": "opentree-curation-webapp", 
+"@name": "OpenTree curation webapp", 
+"@url": "https://github.com/OpenTreeOfLife/opentree", 
+"@version": "0.0.0"
 }
 ]
 }, 
 "^ot:annotationEvents": {
-"annotation": []
+"annotation": [
+{
+"@dateCreated": "2014-07-15T20:25:53.289Z", 
+"@description": "Aids for mapping study OTUs to OTT taxa", 
+"@id": "otu-mapping-hints", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "OTU_MAPPING_HINTS", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"searchContext": {
+"$": "SAR group"
 }, 
-"^ot:candidateTreeForSynthesis": [], 
-"^ot:curatorName": "Joseph Brown", 
+"substitutions": {
+"substitution": [
+{
+"@active": false, 
+"@valid": true, 
+"new": {
+"$": ""
+}, 
+"old": {
+"$": ""
+}
+}
+]
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}, 
+{
+"@dateCreated": "2014-07-15T20:25:53.289Z", 
+"@description": "Describes supporting data files for this study", 
+"@id": "supporting-files-metadata", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "SUPPORTING_FILE_INFO", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"@movedToPermanentArchive": false, 
+"files": {
+"file": []
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}
+]
+}, 
+"^ot:candidateTreeForSynthesis": [
+"tree6676"
+], 
+"^ot:comment": "", 
+"^ot:curatorName": [
+"Joseph Brown", 
+"Joseph W. Brown", 
+"Dail Laughinghouse"
+], 
+"^ot:dataDeposit": {
+"@href": ""
+}, 
 "^ot:focalClade": 266745, 
 "^ot:focalCladeOTTTaxonName": "Stramenopiles", 
-"^ot:messages": {
-"message": []
-}, 
+"^ot:notIntendedForSynthesis": false, 
 "^ot:otusElementOrder": [
 "otus2880"
 ], 
@@ -56,12 +134,16 @@
 "^ot:studyPublication": {
 "@href": "http://dx.doi.org/10.1371/journal.pone.0012759"
 }, 
-"^ot:studyPublicationReference": "Brown, Joseph W., Ulf Sorhannus. 2010. A molecular genetic timescale for the diversification of autotrophic stramenopiles (Ochrophyta): substantive underestimation of putative fossil ages. PLoS ONE 5 (9): e12759.", 
+"^ot:studyPublicationReference": "Brown, Joseph W., Ulf Sorhannus. 2010. A molecular genetic timescale for the diversification of autotrophic stramenopiles (Ochrophyta): substantive underestimation of putative fossil ages. PLoS ONE 5 (9): e12759", 
 "^ot:studyYear": 2010, 
 "^ot:tag": [], 
 "^ot:treesElementOrder": [
 "trees2880"
 ], 
+"^xhtml:license": {
+"@href": "http://creativecommons.org/publicdomain/zero/1.0/", 
+"@name": "CC0"
+}, 
 "otusById": {
 "otus2880": {
 "otuById": {
@@ -472,6 +554,7 @@
 "^ot:ottTaxonName": "Paraphysomonas imperforata"
 }, 
 "otu428024": {
+"^ot:altLabel": "Monas", 
 "^ot:originalLabel": "Monas sp."
 }, 
 "otu428025": {
@@ -745,16 +828,20 @@
 ], 
 "treeById": {
 "tree6676": {
+"@label": "Fig. 1", 
 "@xsi:type": "nex:FloatTree", 
 "^ot:branchLengthDescription": "", 
 "^ot:branchLengthMode": "ot:substitutionCount", 
-"^ot:branchLengthTimeUnit": "", 
-"^ot:curatedType": "Fig. 1 Bayesian", 
+"^ot:branchLengthTimeUnit": "Myr", 
+"^ot:curatedType": "Bayesian inference ", 
 "^ot:inGroupClade": "node1164121", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
 "^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node1164069", 
-"^ot:specifiedRoot": "", 
+"^ot:specifiedRoot": "node1164069", 
 "^ot:tag": [], 
+"^ot:unrootedTree": false, 
 "edgeBySourceId": {
 "node1164069": {
 "edge1164070": {
@@ -2512,11 +2599,13 @@
 }, 
 "node1164141": {}, 
 "node1164142": {
-"@otu": "otu427977"
+"@otu": "otu427977", 
+"^ot:isTaxonExemplar": true
 }, 
 "node1164143": {}, 
 "node1164144": {
-"@otu": "otu427978"
+"@otu": "otu427978", 
+"^ot:isTaxonExemplar": false
 }, 
 "node1164145": {}, 
 "node1164146": {
@@ -2580,18 +2669,22 @@
 "node1164174": {}, 
 "node1164175": {}, 
 "node1164176": {
-"@otu": "otu427994"
+"@otu": "otu427994", 
+"^ot:isTaxonExemplar": true
 }, 
 "node1164177": {
-"@otu": "otu427995"
+"@otu": "otu427995", 
+"^ot:isTaxonExemplar": false
 }, 
 "node1164178": {}, 
 "node1164179": {}, 
 "node1164180": {
-"@otu": "otu427996"
+"@otu": "otu427996", 
+"^ot:isTaxonExemplar": true
 }, 
 "node1164181": {
-"@otu": "otu427997"
+"@otu": "otu427997", 
+"^ot:isTaxonExemplar": false
 }, 
 "node1164182": {}, 
 "node1164183": {
@@ -2599,10 +2692,12 @@
 }, 
 "node1164184": {}, 
 "node1164185": {
-"@otu": "otu427999"
+"@otu": "otu427999", 
+"^ot:isTaxonExemplar": true
 }, 
 "node1164186": {
-"@otu": "otu428000"
+"@otu": "otu428000", 
+"^ot:isTaxonExemplar": false
 }, 
 "node1164187": {}, 
 "node1164188": {}, 
@@ -2655,10 +2750,12 @@
 }, 
 "node1164212": {}, 
 "node1164213": {
-"@otu": "otu428013"
+"@otu": "otu428013", 
+"^ot:isTaxonExemplar": true
 }, 
 "node1164214": {
-"@otu": "otu428014"
+"@otu": "otu428014", 
+"^ot:isTaxonExemplar": false
 }, 
 "node1164215": {}, 
 "node1164216": {}, 

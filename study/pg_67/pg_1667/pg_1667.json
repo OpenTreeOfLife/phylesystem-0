@@ -36,22 +36,109 @@
 }
 ]
 }
+}, 
+{
+"@description": "Web-based interface for submitting, editing, and reviewing studies in the Open Tree of Life project.", 
+"@id": "opentree-curation-webapp", 
+"@name": "OpenTree curation webapp", 
+"@url": "https://github.com/OpenTreeOfLife/opentree", 
+"@version": "0.0.0"
 }
 ]
 }, 
 "^ot:annotationEvents": {
-"annotation": []
+"annotation": [
+{
+"@dateCreated": "2015-09-28T16:27:05.218Z", 
+"@description": "Aids for mapping study OTUs to OTT taxa", 
+"@id": "otu-mapping-hints", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "OTU_MAPPING_HINTS", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"searchContext": {
+"$": "All life"
 }, 
-"^ot:candidateTreeForSynthesis": [], 
-"^ot:curatorName": "Romina Gazis", 
+"substitutions": {
+"substitution": [
+{
+"@active": false, 
+"@valid": true, 
+"new": {
+"$": ""
+}, 
+"old": {
+"$": ""
+}
+}, 
+{
+"@active": true, 
+"@valid": true, 
+"new": {
+"$": "$1"
+}, 
+"old": {
+"$": "^(\\S*\\s+\\S*).*"
+}
+}
+]
+}, 
+"useFuzzyMatching": true
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}, 
+{
+"@dateCreated": "2015-09-28T16:27:05.218Z", 
+"@description": "Describes supporting data files for this study", 
+"@id": "supporting-files-metadata", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "SUPPORTING_FILE_INFO", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"@movedToPermanentArchive": false, 
+"files": {
+"file": []
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}
+]
+}, 
+"^ot:candidateTreeForSynthesis": [
+"tree3362"
+], 
+"^ot:comment": "", 
+"^ot:curatorName": [
+"Romina Gazis"
+], 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S320"
 }, 
 "^ot:focalClade": 939829, 
 "^ot:focalCladeOTTTaxonName": "Hypocrea lixii", 
-"^ot:messages": {
-"message": []
-}, 
+"^ot:notIntendedForSynthesis": true, 
 "^ot:otusElementOrder": [
 "otus1667"
 ], 
@@ -65,11 +152,17 @@
 "^ot:treesElementOrder": [
 "trees1667"
 ], 
+"^xhtml:license": {
+"@href": "http://creativecommons.org/publicdomain/zero/1.0/", 
+"@name": "CC0"
+}, 
 "otusById": {
 "otus1667": {
 "otuById": {
 "otu269914": {
 "^ot:originalLabel": "Trichoderma inhamatum CBS273.78", 
+"^ot:ottId": 237873, 
+"^ot:ottTaxonName": "Trichoderma inhamatum", 
 "^ot:treebaseOTUId": "Tl111228"
 }, 
 "otu269915": {
@@ -80,6 +173,8 @@
 }, 
 "otu269916": {
 "^ot:originalLabel": "Trichoderma longibrachiatum CBS816.68", 
+"^ot:ottId": 939814, 
+"^ot:ottTaxonName": "Trichoderma longibrachiatum", 
 "^ot:treebaseOTUId": "Tl33383"
 }, 
 "otu269917": {
@@ -90,6 +185,8 @@
 }, 
 "otu269918": {
 "^ot:originalLabel": "Trichoderma viride CBS240.63", 
+"^ot:ottId": 939823, 
+"^ot:ottTaxonName": "Hypocrea rufa", 
 "^ot:treebaseOTUId": "Tl33385"
 }, 
 "otu269919": {
@@ -121,16 +218,22 @@
 ], 
 "treeById": {
 "tree3362": {
+"@label": "MP- ITS ", 
 "@xsi:type": "nex:FloatTree", 
 "^ot:branchLengthDescription": "", 
-"^ot:branchLengthMode": "", 
-"^ot:branchLengthTimeUnit": "", 
-"^ot:curatedType": "MP, ITS1", 
+"^ot:branchLengthMode": "ot:changesCount", 
+"^ot:branchLengthTimeUnit": "Myr", 
+"^ot:curatedType": "Maximum parsimony ", 
 "^ot:inGroupClade": "node668749", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
 "^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node668747", 
-"^ot:specifiedRoot": "", 
-"^ot:tag": [], 
+"^ot:specifiedRoot": "node668747", 
+"^ot:tag": [
+"ITS"
+], 
+"^ot:unrootedTree": false, 
 "edgeBySourceId": {
 "node668747": {
 "edge668748": {
@@ -201,27 +304,32 @@
 "node668749": {}, 
 "node668750": {}, 
 "node668751": {
-"@otu": "otu269915"
+"@otu": "otu269915", 
+"^ot:isTaxonExemplar": true
 }, 
 "node668752": {}, 
 "node668753": {
 "@otu": "otu269914"
 }, 
 "node668754": {
-"@otu": "otu269919"
+"@otu": "otu269919", 
+"^ot:isTaxonExemplar": false
 }, 
 "node668755": {
-"@otu": "otu269920"
+"@otu": "otu269920", 
+"^ot:isTaxonExemplar": false
 }, 
 "node668756": {}, 
 "node668757": {
 "@otu": "otu269918"
 }, 
 "node668758": {
-"@otu": "otu269921"
+"@otu": "otu269921", 
+"^ot:isTaxonExemplar": false
 }, 
 "node668759": {
-"@otu": "otu269917"
+"@otu": "otu269917", 
+"^ot:isTaxonExemplar": false
 }
 }
 }

@@ -36,32 +36,116 @@
 }
 ]
 }
+}, 
+{
+"@description": "Web-based interface for submitting, editing, and reviewing studies in the Open Tree of Life project.", 
+"@id": "opentree-curation-webapp", 
+"@name": "OpenTree curation webapp", 
+"@url": "https://github.com/OpenTreeOfLife/opentree", 
+"@version": "0.0.0"
 }
 ]
 }, 
 "^ot:annotationEvents": {
-"annotation": []
+"annotation": [
+{
+"@dateCreated": "2015-10-01T14:11:32.690Z", 
+"@description": "Aids for mapping study OTUs to OTT taxa", 
+"@id": "otu-mapping-hints", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "OTU_MAPPING_HINTS", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"searchContext": {
+"$": "All life"
 }, 
-"^ot:candidateTreeForSynthesis": [], 
-"^ot:curatorName": "Romina Gazis", 
+"substitutions": {
+"substitution": [
+{
+"@active": false, 
+"@valid": true, 
+"new": {
+"$": ""
+}, 
+"old": {
+"$": ""
+}
+}
+]
+}, 
+"useFuzzyMatching": false
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}, 
+{
+"@dateCreated": "2015-10-01T14:11:32.690Z", 
+"@description": "Describes supporting data files for this study", 
+"@id": "supporting-files-metadata", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "SUPPORTING_FILE_INFO", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"@movedToPermanentArchive": false, 
+"files": {
+"file": []
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}
+]
+}, 
+"^ot:candidateTreeForSynthesis": [
+"tree3297"
+], 
+"^ot:comment": "", 
+"^ot:curatorName": [
+"Romina Gazis"
+], 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S2019"
 }, 
 "^ot:focalClade": 848130, 
 "^ot:focalCladeOTTTaxonName": "Hydropisphaera", 
-"^ot:messages": {
-"message": []
-}, 
+"^ot:notIntendedForSynthesis": false, 
 "^ot:otusElementOrder": [
 "otus1631"
 ], 
 "^ot:studyId": "pg_1631", 
-"^ot:studyPublicationReference": "Rossman A., Farr D., Platas G., & Newcombe G. 2008. Hydropisphaera fungicola Rossman, Farr & Newcombe, sp. nov. Fungal Planet, 24.", 
+"^ot:studyPublication": {
+"@href": ""
+}, 
+"^ot:studyPublicationReference": "Farr, David, and Gonzales-MERCK Platas. \"Hydropisphaera fungicola Rossman, Farr & Newcombe, sp. nov.\" Fungal Planet 24 (2008): 1-2.", 
 "^ot:studyYear": 2008, 
 "^ot:tag": [], 
 "^ot:treesElementOrder": [
 "trees1631"
 ], 
+"^xhtml:license": {
+"@href": "http://creativecommons.org/publicdomain/zero/1.0/", 
+"@name": "CC0"
+}, 
 "otusById": {
 "otus1631": {
 "otuById": {
@@ -166,31 +250,33 @@
 ], 
 "treeById": {
 "tree3297": {
+"@label": "Phylogenetic tree placing Hydropisphaera fungicola in the Hydropisphaera close to the type species H. peziza. The tree results from a Bayesian analysis based on Markov chain Monte Carlo (MCMC) approach using MrBayes 3.01.", 
 "@xsi:type": "nex:FloatTree", 
 "^ot:branchLengthDescription": "", 
-"^ot:branchLengthMode": "", 
-"^ot:branchLengthTimeUnit": "", 
-"^ot:curatedType": "BI, LSU", 
+"^ot:branchLengthMode": "ot:changesCount", 
+"^ot:branchLengthTimeUnit": "Myr", 
+"^ot:curatedType": "Bayesian inference ", 
 "^ot:inGroupClade": "node659978", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
 "^ot:outGroupEdge": "", 
-"^ot:rootNodeId": "node659975", 
-"^ot:specifiedRoot": "", 
-"^ot:tag": [], 
+"^ot:rootNodeId": "tree3297_ROOT", 
+"^ot:specifiedRoot": "tree3297_ROOT", 
+"^ot:tag": [
+"LSU"
+], 
+"^ot:unrootedTree": false, 
 "edgeBySourceId": {
 "node659975": {
 "edge659976": {
 "@source": "node659975", 
 "@target": "node659976"
-}, 
-"edge659977": {
-"@source": "node659975", 
-"@target": "node659977"
 }
 }, 
 "node659977": {
-"edge659978": {
+"edge659977": {
 "@source": "node659977", 
-"@target": "node659978"
+"@target": "node659975"
 }, 
 "edge660001": {
 "@source": "node659977", 
@@ -316,12 +402,20 @@
 "@source": "node660001", 
 "@target": "node660003"
 }
+}, 
+"tree3297_ROOT": {
+"edge659978": {
+"@source": "tree3297_ROOT", 
+"@target": "node659978"
+}, 
+"tree3297_ROOT_EDGE": {
+"@source": "tree3297_ROOT", 
+"@target": "node659977"
+}
 }
 }, 
 "nodeById": {
-"node659975": {
-"@root": true
-}, 
+"node659975": {}, 
 "node659976": {
 "@otu": "otu267037"
 }, 
@@ -330,10 +424,12 @@
 "node659979": {}, 
 "node659980": {}, 
 "node659981": {
-"@otu": "otu267027"
+"@otu": "otu267027", 
+"^ot:isTaxonExemplar": true
 }, 
 "node659982": {
-"@otu": "otu267028"
+"@otu": "otu267028", 
+"^ot:isTaxonExemplar": false
 }, 
 "node659983": {
 "@otu": "otu267031"
@@ -343,10 +439,12 @@
 "node659986": {}, 
 "node659987": {}, 
 "node659988": {
-"@otu": "otu267032"
+"@otu": "otu267032", 
+"^ot:isTaxonExemplar": true
 }, 
 "node659989": {
-"@otu": "otu267039"
+"@otu": "otu267039", 
+"^ot:isTaxonExemplar": false
 }, 
 "node659990": {}, 
 "node659991": {
@@ -375,10 +473,15 @@
 }, 
 "node660001": {}, 
 "node660002": {
-"@otu": "otu267041"
+"@otu": "otu267041", 
+"^ot:isTaxonExemplar": true
 }, 
 "node660003": {
-"@otu": "otu267038"
+"@otu": "otu267038", 
+"^ot:isTaxonExemplar": false
+}, 
+"tree3297_ROOT": {
+"@root": true
 }
 }
 }

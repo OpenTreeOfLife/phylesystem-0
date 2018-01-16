@@ -36,22 +36,100 @@
 }
 ]
 }
+}, 
+{
+"@description": "Web-based interface for submitting, editing, and reviewing studies in the Open Tree of Life project.", 
+"@id": "opentree-curation-webapp", 
+"@name": "OpenTree curation webapp", 
+"@url": "https://github.com/OpenTreeOfLife/opentree", 
+"@version": "0.0.0"
 }
 ]
 }, 
 "^ot:annotationEvents": {
-"annotation": []
+"annotation": [
+{
+"@dateCreated": "2016-11-11T17:01:01.393Z", 
+"@description": "Aids for mapping study OTUs to OTT taxa", 
+"@id": "otu-mapping-hints", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "OTU_MAPPING_HINTS", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"searchContext": {
+"$": "All life"
 }, 
-"^ot:candidateTreeForSynthesis": [], 
-"^ot:curatorName": "alex taylor", 
+"substitutions": {
+"substitution": [
+{
+"@active": false, 
+"@valid": true, 
+"new": {
+"$": ""
+}, 
+"old": {
+"$": ""
+}
+}
+]
+}, 
+"useFuzzyMatching": false
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}, 
+{
+"@dateCreated": "2016-11-11T17:01:01.393Z", 
+"@description": "Describes supporting data files for this study", 
+"@id": "supporting-files-metadata", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "SUPPORTING_FILE_INFO", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"@movedToPermanentArchive": false, 
+"files": {
+"file": []
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}
+]
+}, 
+"^ot:candidateTreeForSynthesis": [
+"tree111"
+], 
+"^ot:comment": "", 
+"^ot:curatorName": [
+"alex taylor", 
+"Joseph W. Brown"
+], 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S10562"
 }, 
 "^ot:focalClade": 304358, 
 "^ot:focalCladeOTTTaxonName": "Eukaryota", 
-"^ot:messages": {
-"message": []
-}, 
+"^ot:notIntendedForSynthesis": false, 
 "^ot:otusElementOrder": [
 "otus239"
 ], 
@@ -280,6 +358,8 @@
 }, 
 "otu63557": {
 "^ot:originalLabel": "Pleurostomum flabellatum", 
+"^ot:ottId": 4023183, 
+"^ot:ottTaxonName": "Pleurostomum flabellatum", 
 "^ot:treebaseOTUId": "Tl307303"
 }, 
 "otu63558": {
@@ -828,6 +908,8 @@
 }, 
 "otu63649": {
 "^ot:originalLabel": "Heteramoeba clara", 
+"^ot:ottId": 4023206, 
+"^ot:ottTaxonName": "Heteramoeba clara", 
 "^ot:treebaseOTUId": "Tl307395"
 }, 
 "otu63650": {
@@ -904,6 +986,8 @@
 }, 
 "otu63662": {
 "^ot:originalLabel": "Allomyces macrogynus ATCC 38327", 
+"^ot:ottId": 67172, 
+"^ot:ottTaxonName": "Allomyces macrogynus ATCC 38327", 
 "^ot:treebaseOTUId": "Tl307408"
 }, 
 "otu63663": {
@@ -956,6 +1040,8 @@
 }, 
 "otu63671": {
 "^ot:originalLabel": "Reticulomyxa filosa", 
+"^ot:ottId": 434296, 
+"^ot:ottTaxonName": "Reticulomyxa filosa", 
 "^ot:treebaseOTUId": "Tl307417"
 }, 
 "otu63672": {
@@ -1676,6 +1762,8 @@
 }, 
 "otu63792": {
 "^ot:originalLabel": "Mikrocytos mackini", 
+"^ot:ottId": 4738970, 
+"^ot:ottTaxonName": "Mikrocytos mackini", 
 "^ot:treebaseOTUId": "Tl307538"
 }, 
 "otu63793": {
@@ -2248,6 +2336,8 @@
 }, 
 "otu63888": {
 "^ot:originalLabel": "Sappinia pedata", 
+"^ot:ottId": 299182, 
+"^ot:ottTaxonName": "Sappinia pedata", 
 "^ot:treebaseOTUId": "Tl307634"
 }, 
 "otu63889": {
@@ -2764,15 +2854,19 @@
 ], 
 "treeById": {
 "tree111": {
+"@label": "Fig. 1 (16 all)", 
 "@xsi:type": "nex:FloatTree", 
 "^ot:branchLengthDescription": "", 
 "^ot:branchLengthMode": "ot:substitutionCount", 
-"^ot:branchLengthTimeUnit": "", 
-"^ot:curatedType": "16 all", 
+"^ot:curatedType": "Maximum likelihood ", 
+"^ot:inGroupClade": "node160173", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
 "^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node160173", 
 "^ot:specifiedRoot": "", 
 "^ot:tag": [], 
+"^ot:unrootedTree": true, 
 "edgeBySourceId": {
 "node160173": {
 "edge160174": {
@@ -9976,16 +10070,20 @@
 }
 }, 
 "tree112": {
+"@label": "Untitled (tree112)", 
 "@xsi:type": "nex:FloatTree", 
 "^ot:branchLengthDescription": "", 
 "^ot:branchLengthMode": "ot:substitutionCount", 
 "^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "15 all", 
 "^ot:inGroupClade": "node161073", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
 "^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node161073", 
 "^ot:specifiedRoot": "", 
 "^ot:tag": [], 
+"^ot:unrootedTree": true, 
 "edgeBySourceId": {
 "node161073": {
 "edge161074": {

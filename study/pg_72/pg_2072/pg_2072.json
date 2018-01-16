@@ -36,14 +36,91 @@
 }
 ]
 }
+}, 
+{
+"@description": "Web-based interface for submitting, editing, and reviewing studies in the Open Tree of Life project.", 
+"@id": "opentree-curation-webapp", 
+"@name": "OpenTree curation webapp", 
+"@url": "https://github.com/OpenTreeOfLife/opentree", 
+"@version": "0.0.0"
 }
 ]
 }, 
 "^ot:annotationEvents": {
-"annotation": []
+"annotation": [
+{
+"@dateCreated": "2014-08-15T18:50:00.170Z", 
+"@description": "Aids for mapping study OTUs to OTT taxa", 
+"@id": "otu-mapping-hints", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "OTU_MAPPING_HINTS", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"searchContext": {
+"$": "All life"
+}, 
+"substitutions": {
+"substitution": [
+{
+"@active": false, 
+"@valid": true, 
+"new": {
+"$": ""
+}, 
+"old": {
+"$": ""
+}
+}
+]
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}, 
+{
+"@dateCreated": "2014-08-15T18:50:00.170Z", 
+"@description": "Describes supporting data files for this study", 
+"@id": "supporting-files-metadata", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "SUPPORTING_FILE_INFO", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"@movedToPermanentArchive": false, 
+"files": {
+"file": []
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}
+]
 }, 
 "^ot:candidateTreeForSynthesis": [], 
-"^ot:curatorName": "Chris Owen", 
+"^ot:comment": "Tree names do not match to existing figure names. Tree structures do not seem to match any from the paper. (JWB).", 
+"^ot:curatorName": [
+"Chris Owen", 
+"Joseph W. Brown"
+], 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S1109"
 }, 
@@ -52,6 +129,7 @@
 "^ot:messages": {
 "message": []
 }, 
+"^ot:notIntendedForSynthesis": false, 
 "^ot:otusElementOrder": [
 "otus2072"
 ], 
@@ -59,7 +137,7 @@
 "^ot:studyPublication": {
 "@href": "http://dx.doi.org/10.1016/j.ympev.2007.02.006"
 }, 
-"^ot:studyPublicationReference": "Weimin Y., Giblin-davis R., Braasch H., Morris K., & Thomas W. 2007. Phylogenetic relationships among Bursaphelenchus species (Nematoda: Parasitaphelenchidae) inferred from nuclear ribosomal and mitochondrial DNA sequence. Molecular Phylogenetics and Evolution 43 (3): 1185-1197.", 
+"^ot:studyPublicationReference": "Weimin, Y., Giblin-davis R., Braasch H., Morris K., & Thomas W. 2007. Phylogenetic relationships among Bursaphelenchus species (Nematoda: Parasitaphelenchidae) inferred from nuclear ribosomal and mitochondrial DNA sequence. Molecular Phylogenetics and Evolution 43 (3): 1185-1197.", 
 "^ot:studyYear": 2007, 
 "^ot:tag": [], 
 "^ot:treesElementOrder": [
@@ -118,8 +196,6 @@
 }, 
 "otu310588": {
 "^ot:originalLabel": "Bursaphelenchus sp. ex Rhynchophorus palmarum", 
-"^ot:ottId": 1093859, 
-"^ot:ottTaxonName": "Bursaphelenchus", 
 "^ot:treebaseOTUId": "Tl2780"
 }, 
 "otu310589": {
@@ -166,8 +242,6 @@
 }, 
 "otu310596": {
 "^ot:originalLabel": "Bursaphelenchus sp. ex Halictidae", 
-"^ot:ottId": 1093859, 
-"^ot:ottTaxonName": "Bursaphelenchus", 
 "^ot:treebaseOTUId": "Tl2788"
 }, 
 "otu310597": {
@@ -286,8 +360,6 @@
 }, 
 "otu310616": {
 "^ot:originalLabel": "Bursaphelenchus sp. ex Carpophilus humeralis", 
-"^ot:ottId": 1093859, 
-"^ot:ottTaxonName": "Bursaphelenchus", 
 "^ot:treebaseOTUId": "Tl2808"
 }, 
 "otu310617": {
@@ -345,9 +417,9 @@
 ], 
 "treeById": {
 "tree4265": {
+"@label": "Untitled (tree4265)", 
 "@xsi:type": "nex:FloatTree", 
 "^ot:branchLengthDescription": "", 
-"^ot:branchLengthMode": "", 
 "^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "Fig. 2a", 
 "^ot:inGroupClade": "node789282", 
@@ -355,6 +427,7 @@
 "^ot:rootNodeId": "node789281", 
 "^ot:specifiedRoot": "", 
 "^ot:tag": [], 
+"^ot:unrootedTree": true, 
 "edgeBySourceId": {
 "node789281": {
 "edge789282": {
@@ -870,9 +943,9 @@
 }
 }, 
 "tree4266": {
+"@label": "Untitled (tree4266)", 
 "@xsi:type": "nex:FloatTree", 
 "^ot:branchLengthDescription": "", 
-"^ot:branchLengthMode": "", 
 "^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "Fig. 1a", 
 "^ot:inGroupClade": "node789355", 
@@ -880,6 +953,7 @@
 "^ot:rootNodeId": "node789354", 
 "^ot:specifiedRoot": "", 
 "^ot:tag": [], 
+"^ot:unrootedTree": true, 
 "edgeBySourceId": {
 "node789354": {
 "edge789355": {
@@ -1255,6 +1329,7 @@
 }
 }, 
 "tree4267": {
+"@label": "Untitled (tree4267)", 
 "@xsi:type": "nex:FloatTree", 
 "^ot:branchLengthDescription": "", 
 "^ot:branchLengthMode": "", 
@@ -1265,6 +1340,7 @@
 "^ot:rootNodeId": "node789407", 
 "^ot:specifiedRoot": "", 
 "^ot:tag": [], 
+"^ot:unrootedTree": true, 
 "edgeBySourceId": {
 "node789407": {
 "edge789408": {
@@ -1332,9 +1408,9 @@
 }
 }, 
 "tree4268": {
+"@label": "Untitled (tree4268)", 
 "@xsi:type": "nex:FloatTree", 
 "^ot:branchLengthDescription": "", 
-"^ot:branchLengthMode": "", 
 "^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "Fig. 4b", 
 "^ot:inGroupClade": "node789416", 
@@ -1342,6 +1418,7 @@
 "^ot:rootNodeId": "node789416", 
 "^ot:specifiedRoot": "", 
 "^ot:tag": [], 
+"^ot:unrootedTree": true, 
 "edgeBySourceId": {
 "node789416": {
 "edge789417": {
@@ -1479,9 +1556,9 @@
 }
 }, 
 "tree4269": {
+"@label": "Untitled (tree4269)", 
 "@xsi:type": "nex:FloatTree", 
 "^ot:branchLengthDescription": "", 
-"^ot:branchLengthMode": "", 
 "^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "Fig. 1b", 
 "^ot:inGroupClade": "node789436", 
@@ -1489,6 +1566,7 @@
 "^ot:rootNodeId": "node789435", 
 "^ot:specifiedRoot": "", 
 "^ot:tag": [], 
+"^ot:unrootedTree": true, 
 "edgeBySourceId": {
 "node789435": {
 "edge789436": {
@@ -2004,9 +2082,9 @@
 }
 }, 
 "tree4270": {
+"@label": "Untitled (tree4270)", 
 "@xsi:type": "nex:FloatTree", 
 "^ot:branchLengthDescription": "", 
-"^ot:branchLengthMode": "", 
 "^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "Fig. 4a", 
 "^ot:inGroupClade": "node789508", 
@@ -2014,6 +2092,7 @@
 "^ot:rootNodeId": "node789508", 
 "^ot:specifiedRoot": "", 
 "^ot:tag": [], 
+"^ot:unrootedTree": true, 
 "edgeBySourceId": {
 "node789508": {
 "edge789509": {
@@ -2165,9 +2244,9 @@
 }
 }, 
 "tree4271": {
+"@label": "Untitled (tree4271)", 
 "@xsi:type": "nex:FloatTree", 
 "^ot:branchLengthDescription": "", 
-"^ot:branchLengthMode": "", 
 "^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "Fig. 3", 
 "^ot:inGroupClade": "node789530", 
@@ -2175,6 +2254,7 @@
 "^ot:rootNodeId": "node789529", 
 "^ot:specifiedRoot": "", 
 "^ot:tag": [], 
+"^ot:unrootedTree": true, 
 "edgeBySourceId": {
 "node789529": {
 "edge789530": {
@@ -2550,9 +2630,9 @@
 }
 }, 
 "tree4272": {
+"@label": "Untitled (tree4272)", 
 "@xsi:type": "nex:FloatTree", 
 "^ot:branchLengthDescription": "", 
-"^ot:branchLengthMode": "", 
 "^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "Fig. 4d", 
 "^ot:inGroupClade": "node789582", 
@@ -2560,6 +2640,7 @@
 "^ot:rootNodeId": "node789582", 
 "^ot:specifiedRoot": "", 
 "^ot:tag": [], 
+"^ot:unrootedTree": true, 
 "edgeBySourceId": {
 "node789582": {
 "edge789583": {
@@ -2627,9 +2708,9 @@
 }
 }, 
 "tree4273": {
+"@label": "Untitled (tree4273)", 
 "@xsi:type": "nex:FloatTree", 
 "^ot:branchLengthDescription": "", 
-"^ot:branchLengthMode": "", 
 "^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "Fig. 2b", 
 "^ot:inGroupClade": "node789592", 
@@ -2637,6 +2718,7 @@
 "^ot:rootNodeId": "node789591", 
 "^ot:specifiedRoot": "", 
 "^ot:tag": [], 
+"^ot:unrootedTree": true, 
 "edgeBySourceId": {
 "node789591": {
 "edge789592": {

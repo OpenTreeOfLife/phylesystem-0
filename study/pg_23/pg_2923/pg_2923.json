@@ -33,24 +33,120 @@
 }
 ]
 }
+}, 
+{
+"@description": "Web-based interface for submitting, editing, and reviewing studies in the Open Tree of Life project.", 
+"@id": "opentree-curation-webapp", 
+"@name": "OpenTree curation webapp", 
+"@url": "https://github.com/OpenTreeOfLife/opentree", 
+"@version": "0.0.0"
 }
 ]
 }, 
 "^ot:annotationEvents": {
-"annotation": []
+"annotation": [
+{
+"@dateCreated": "2014-06-12T16:54:06.855Z", 
+"@description": "Aids for mapping study OTUs to OTT taxa", 
+"@id": "otu-mapping-hints", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "OTU_MAPPING_HINTS", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"searchContext": {
+"$": "Arthropods"
 }, 
-"^ot:curatorName": "Christine Ewers", 
+"substitutions": {
+"substitution": [
+{
+"@active": false, 
+"@valid": true, 
+"new": {
+"$": ""
+}, 
+"old": {
+"$": ""
+}
+}
+]
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}, 
+{
+"@dateCreated": "2014-06-12T16:54:06.855Z", 
+"@description": "Describes supporting data files for this study", 
+"@id": "supporting-files-metadata", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "SUPPORTING_FILE_INFO", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"@movedToPermanentArchive": false, 
+"files": {
+"file": []
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}
+]
+}, 
+"^ot:candidateTreeForSynthesis": [
+"tree6751"
+], 
+"^ot:comment": "Can't find publication (27 June 2014; JWB).\nAdd publication metadata (10 April 2015; CLO)", 
+"^ot:curatorName": [
+"Christine Ewers", 
+"Joseph W. Brown", 
+"chris-owen", 
+"Christine Ewers-Saucedo"
+], 
+"^ot:dataDeposit": {
+"@href": ""
+}, 
 "^ot:focalClade": 463195, 
 "^ot:focalCladeOTTTaxonName": "Sessilia", 
+"^ot:notIntendedForSynthesis": false, 
 "^ot:otusElementOrder": [
 "otus2923"
 ], 
 "^ot:studyId": "pg_2923", 
-"^ot:studyPublicationReference": "Marcos Perez-Losada; Jens T Hoeg; Noa Simon-Blecher; Yair Achituv; Diana Jones; Keith A Crandall 2014. Molecular phylogeny, systematics and morphological evolution of the acorn barnacles (Thoracica: Sessilia: Balanomorpha).", 
+"^ot:studyPublication": {
+"@href": "http://dx.doi.org/10.1016/j.ympev.2014.09.013"
+}, 
+"^ot:studyPublicationReference": "P\u00e9rez-Losada, M., H\u00f8eg, J. T., Simon-Blecher, N., Achituv, Y., Jones, D., & Crandall, K. A. (2014). Molecular phylogeny, systematics and morphological evolution of the acorn barnacles (Thoracica: Sessilia: Balanomorpha). Molecular phylogenetics and evolution, 81, 147-158.", 
 "^ot:studyYear": 2014, 
+"^ot:tag": [
+"barnacles"
+], 
 "^ot:treesElementOrder": [
 "trees2923"
 ], 
+"^xhtml:license": {
+"@href": "http://creativecommons.org/publicdomain/zero/1.0/", 
+"@name": "CC0"
+}, 
 "otusById": {
 "otus2923": {
 "otuById": {
@@ -214,7 +310,9 @@
 "^ot:ottTaxonName": "Microeuraphia withersi"
 }, 
 "otu432507": {
-"^ot:originalLabel": "Jehlius cirratus"
+"^ot:originalLabel": "Jehlius cirratus", 
+"^ot:ottId": 898715, 
+"^ot:ottTaxonName": "Jehlius cirratus"
 }, 
 "otu432508": {
 "^ot:originalLabel": "Chthamalus bisinuatus", 
@@ -512,9 +610,7 @@
 "^ot:ottTaxonName": "Nobia grandis"
 }, 
 "otu432571": {
-"^ot:originalLabel": "Nobia sp.", 
-"^ot:ottId": 472036, 
-"^ot:ottTaxonName": "Nobia"
+"^ot:originalLabel": "Nobia sp."
 }, 
 "otu432572": {
 "^ot:originalLabel": "Nobia grandis 1", 
@@ -537,7 +633,9 @@
 "^ot:ottTaxonName": "Galkinia indica"
 }, 
 "otu432576": {
-"^ot:originalLabel": "Hiroa stubbingsi"
+"^ot:originalLabel": "Hiroa stubbingsi", 
+"^ot:ottId": 588438, 
+"^ot:ottTaxonName": "Hiroa stubbingsi"
 }, 
 "otu432577": {
 "^ot:originalLabel": "Darwiniella conjugatum 1", 
@@ -773,11 +871,20 @@
 ], 
 "treeById": {
 "tree6751": {
+"@label": "Bayesian", 
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
 "^ot:branchLengthMode": "ot:substitutionCount", 
-"^ot:curatedType": "Bayesian", 
+"^ot:branchLengthTimeUnit": "Myr", 
+"^ot:curatedType": "Bayesian inference ", 
 "^ot:inGroupClade": "node1174628", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node1174628", 
+"^ot:specifiedRoot": "node1174628", 
+"^ot:tag": [], 
+"^ot:unrootedTree": false, 
 "edgeBySourceId": {
 "node1174628": {
 "edge1174629": {
@@ -2844,10 +2951,12 @@
 "node1174728": {}, 
 "node1174729": {}, 
 "node1174730": {
-"@otu": "otu432521"
+"@otu": "otu432521", 
+"^ot:isTaxonExemplar": true
 }, 
 "node1174731": {
-"@otu": "otu432522"
+"@otu": "otu432522", 
+"^ot:isTaxonExemplar": false
 }, 
 "node1174732": {}, 
 "node1174733": {
@@ -2920,18 +3029,22 @@
 "node1174766": {}, 
 "node1174767": {}, 
 "node1174768": {
-"@otu": "otu432540"
+"@otu": "otu432540", 
+"^ot:isTaxonExemplar": true
 }, 
 "node1174769": {
-"@otu": "otu432541"
+"@otu": "otu432541", 
+"^ot:isTaxonExemplar": false
 }, 
 "node1174770": {}, 
 "node1174771": {
-"@otu": "otu432542"
+"@otu": "otu432542", 
+"^ot:isTaxonExemplar": true
 }, 
 "node1174772": {}, 
 "node1174773": {
-"@otu": "otu432543"
+"@otu": "otu432543", 
+"^ot:isTaxonExemplar": false
 }, 
 "node1174774": {}, 
 "node1174775": {
@@ -2944,10 +3057,12 @@
 "node1174778": {}, 
 "node1174779": {}, 
 "node1174780": {
-"@otu": "otu432546"
+"@otu": "otu432546", 
+"^ot:isTaxonExemplar": true
 }, 
 "node1174781": {
-"@otu": "otu432547"
+"@otu": "otu432547", 
+"^ot:isTaxonExemplar": false
 }, 
 "node1174782": {}, 
 "node1174783": {
@@ -3016,10 +3131,12 @@
 "node1174814": {}, 
 "node1174815": {}, 
 "node1174816": {
-"@otu": "otu432564"
+"@otu": "otu432564", 
+"^ot:isTaxonExemplar": true
 }, 
 "node1174817": {
-"@otu": "otu432565"
+"@otu": "otu432565", 
+"^ot:isTaxonExemplar": false
 }, 
 "node1174818": {}, 
 "node1174819": {}, 
@@ -3039,22 +3156,26 @@
 "node1174825": {}, 
 "node1174826": {}, 
 "node1174827": {
-"@otu": "otu432570"
+"@otu": "otu432570", 
+"^ot:isTaxonExemplar": true
 }, 
 "node1174828": {}, 
 "node1174829": {
 "@otu": "otu432571"
 }, 
 "node1174830": {
-"@otu": "otu432572"
+"@otu": "otu432572", 
+"^ot:isTaxonExemplar": false
 }, 
 "node1174831": {}, 
 "node1174832": {}, 
 "node1174833": {
-"@otu": "otu432573"
+"@otu": "otu432573", 
+"^ot:isTaxonExemplar": true
 }, 
 "node1174834": {
-"@otu": "otu432574"
+"@otu": "otu432574", 
+"^ot:isTaxonExemplar": false
 }, 
 "node1174835": {}, 
 "node1174836": {}, 
@@ -3067,14 +3188,16 @@
 }, 
 "node1174840": {}, 
 "node1174841": {
-"@otu": "otu432577"
+"@otu": "otu432577", 
+"^ot:isTaxonExemplar": true
 }, 
 "node1174842": {}, 
 "node1174843": {
 "@otu": "otu432578"
 }, 
 "node1174844": {
-"@otu": "otu432579"
+"@otu": "otu432579", 
+"^ot:isTaxonExemplar": false
 }, 
 "node1174845": {}, 
 "node1174846": {}, 

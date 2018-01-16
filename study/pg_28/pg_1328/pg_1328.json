@@ -36,17 +36,108 @@
 }
 ]
 }
+}, 
+{
+"@description": "Web-based interface for submitting, editing, and reviewing studies in the Open Tree of Life project.", 
+"@id": "opentree-curation-webapp", 
+"@name": "OpenTree curation webapp", 
+"@url": "https://github.com/OpenTreeOfLife/opentree", 
+"@version": "0.0.0"
 }
 ]
 }, 
 "^ot:annotationEvents": {
-"annotation": []
+"annotation": [
+{
+"@dateCreated": "2015-09-30T18:18:44.728Z", 
+"@description": "Aids for mapping study OTUs to OTT taxa", 
+"@id": "otu-mapping-hints", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "OTU_MAPPING_HINTS", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"searchContext": {
+"$": "All life"
 }, 
-"^ot:candidateTreeForSynthesis": [], 
-"^ot:curatorName": "Romina Gazis", 
-"^ot:messages": {
-"message": []
+"substitutions": {
+"substitution": [
+{
+"@active": false, 
+"@valid": true, 
+"new": {
+"$": ""
 }, 
+"old": {
+"$": ""
+}
+}, 
+{
+"@active": true, 
+"@valid": true, 
+"new": {
+"$": "$1"
+}, 
+"old": {
+"$": "^(\\S*\\s+\\S*).*"
+}
+}
+]
+}, 
+"useFuzzyMatching": true
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}, 
+{
+"@dateCreated": "2015-09-30T18:18:44.728Z", 
+"@description": "Describes supporting data files for this study", 
+"@id": "supporting-files-metadata", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "SUPPORTING_FILE_INFO", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"@movedToPermanentArchive": false, 
+"files": {
+"file": []
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}
+]
+}, 
+"^ot:candidateTreeForSynthesis": [
+"tree5855"
+], 
+"^ot:comment": "", 
+"^ot:curatorName": [
+"Romina Gazis"
+], 
+"^ot:dataDeposit": {
+"@href": ""
+}, 
+"^ot:focalCladeOTTTaxonName": "", 
+"^ot:notIntendedForSynthesis": false, 
 "^ot:otusElementOrder": [
 "otus1328"
 ], 
@@ -60,17 +151,27 @@
 "^ot:treesElementOrder": [
 "trees1328"
 ], 
+"^xhtml:license": {
+"@href": "http://creativecommons.org/publicdomain/zero/1.0/", 
+"@name": "CC0"
+}, 
 "otusById": {
 "otus1328": {
 "otuById": {
 "otu242889": {
-"^ot:originalLabel": "Epichloe baconii As"
+"^ot:originalLabel": "Epichloe baconii As", 
+"^ot:ottId": 128044, 
+"^ot:ottTaxonName": "Epichloe baconii"
 }, 
 "otu242890": {
-"^ot:originalLabel": "Epichloe baconii Cv"
+"^ot:originalLabel": "Epichloe baconii Cv", 
+"^ot:ottId": 128044, 
+"^ot:ottTaxonName": "Epichloe baconii"
 }, 
 "otu242891": {
-"^ot:originalLabel": "Epichloe amarillans So"
+"^ot:originalLabel": "Epichloe amarillans So", 
+"^ot:ottId": 369201, 
+"^ot:ottTaxonName": "Epichloe amarillans"
 }, 
 "otu242892": {
 "^ot:originalLabel": "Neotyphodium x canadensium CWR5 copy1", 
@@ -83,13 +184,19 @@
 "^ot:ottTaxonName": "Neotyphodium"
 }, 
 "otu242894": {
-"^ot:originalLabel": "Epichloe amarillans Ap"
+"^ot:originalLabel": "Epichloe amarillans Ap", 
+"^ot:ottId": 369201, 
+"^ot:ottTaxonName": "Epichloe amarillans"
 }, 
 "otu242895": {
-"^ot:originalLabel": "Epichloe glyceriae Gs"
+"^ot:originalLabel": "Epichloe glyceriae Gs", 
+"^ot:ottId": 89725, 
+"^ot:ottTaxonName": "Epichloe glyceriae"
 }, 
 "otu242896": {
-"^ot:originalLabel": "Epichloe glyceriae Gs2"
+"^ot:originalLabel": "Epichloe glyceriae Gs2", 
+"^ot:ottId": 89725, 
+"^ot:ottTaxonName": "Epichloe glyceriae"
 }, 
 "otu242897": {
 "^ot:originalLabel": "Epichloe elymi Em", 
@@ -117,7 +224,9 @@
 "^ot:ottTaxonName": "Epichloe yangzii"
 }, 
 "otu242902": {
-"^ot:originalLabel": "Epichloe bromicola Be"
+"^ot:originalLabel": "Epichloe bromicola Be", 
+"^ot:ottId": 905106, 
+"^ot:ottTaxonName": "Epichloe bromicola"
 }, 
 "otu242903": {
 "^ot:originalLabel": "Epichloe clarkii Hl", 
@@ -135,7 +244,9 @@
 "^ot:ottTaxonName": "Epichloe typhina"
 }, 
 "otu242906": {
-"^ot:originalLabel": "Epichloe sylvatica Bs"
+"^ot:originalLabel": "Epichloe sylvatica Bs", 
+"^ot:ottId": 380242, 
+"^ot:ottTaxonName": "Epichloe sylvatica"
 }, 
 "otu242907": {
 "^ot:originalLabel": "Epichloe typhina Pn", 
@@ -148,10 +259,14 @@
 "^ot:ottTaxonName": "Epichloe typhina"
 }, 
 "otu242909": {
-"^ot:originalLabel": "Epichloe brachyelytri Bee"
+"^ot:originalLabel": "Epichloe brachyelytri Bee", 
+"^ot:ottId": 905108, 
+"^ot:ottTaxonName": "Epichloe brachyelytri"
 }, 
 "otu242910": {
-"^ot:originalLabel": "Epichloe brachyelytri Bee2"
+"^ot:originalLabel": "Epichloe brachyelytri Bee2", 
+"^ot:ottId": 905108, 
+"^ot:ottTaxonName": "Epichloe brachyelytri"
 }, 
 "otu242911": {
 "^ot:originalLabel": "Epichloe festucae Frr", 
@@ -165,335 +280,26 @@
 "trees1328": {
 "@otus": "otus1328", 
 "^ot:treeElementOrder": [
-"tree2647", 
 "tree5855"
 ], 
 "treeById": {
-"tree2647": {
-"@xsi:type": "nex:FloatTree", 
-"^ot:branchLengthDescription": "", 
-"^ot:branchLengthMode": "", 
-"^ot:branchLengthTimeUnit": "", 
-"^ot:curatedType": "MP, EF-1", 
-"^ot:outGroupEdge": "", 
-"^ot:rootNodeId": "node589166", 
-"^ot:specifiedRoot": "", 
-"^ot:tag": [], 
-"edgeBySourceId": {
-"node589166": {
-"edge589167": {
-"@source": "node589166", 
-"@target": "node589167"
-}, 
-"edge589168": {
-"@source": "node589166", 
-"@target": "node589168"
-}
-}, 
-"node589168": {
-"edge589169": {
-"@source": "node589168", 
-"@target": "node589169"
-}, 
-"edge589170": {
-"@source": "node589168", 
-"@target": "node589170"
-}
-}, 
-"node589170": {
-"edge589171": {
-"@source": "node589170", 
-"@target": "node589171"
-}, 
-"edge589208": {
-"@source": "node589170", 
-"@target": "node589208"
-}
-}, 
-"node589171": {
-"edge589172": {
-"@source": "node589171", 
-"@target": "node589172"
-}, 
-"edge589178": {
-"@source": "node589171", 
-"@target": "node589178"
-}
-}, 
-"node589172": {
-"edge589173": {
-"@source": "node589172", 
-"@target": "node589173"
-}, 
-"edge589177": {
-"@source": "node589172", 
-"@target": "node589177"
-}
-}, 
-"node589173": {
-"edge589174": {
-"@source": "node589173", 
-"@target": "node589174"
-}, 
-"edge589175": {
-"@source": "node589173", 
-"@target": "node589175"
-}, 
-"edge589176": {
-"@source": "node589173", 
-"@target": "node589176"
-}
-}, 
-"node589178": {
-"edge589179": {
-"@source": "node589178", 
-"@target": "node589179"
-}, 
-"edge589193": {
-"@source": "node589178", 
-"@target": "node589193"
-}
-}, 
-"node589179": {
-"edge589180": {
-"@source": "node589179", 
-"@target": "node589180"
-}, 
-"edge589183": {
-"@source": "node589179", 
-"@target": "node589183"
-}
-}, 
-"node589180": {
-"edge589181": {
-"@source": "node589180", 
-"@target": "node589181"
-}, 
-"edge589182": {
-"@source": "node589180", 
-"@target": "node589182"
-}
-}, 
-"node589183": {
-"edge589184": {
-"@source": "node589183", 
-"@target": "node589184"
-}, 
-"edge589188": {
-"@source": "node589183", 
-"@target": "node589188"
-}
-}, 
-"node589184": {
-"edge589185": {
-"@source": "node589184", 
-"@target": "node589185"
-}, 
-"edge589186": {
-"@source": "node589184", 
-"@target": "node589186"
-}, 
-"edge589187": {
-"@source": "node589184", 
-"@target": "node589187"
-}
-}, 
-"node589188": {
-"edge589189": {
-"@source": "node589188", 
-"@target": "node589189"
-}, 
-"edge589192": {
-"@source": "node589188", 
-"@target": "node589192"
-}
-}, 
-"node589189": {
-"edge589190": {
-"@source": "node589189", 
-"@target": "node589190"
-}, 
-"edge589191": {
-"@source": "node589189", 
-"@target": "node589191"
-}
-}, 
-"node589193": {
-"edge589194": {
-"@source": "node589193", 
-"@target": "node589194"
-}, 
-"edge589205": {
-"@source": "node589193", 
-"@target": "node589205"
-}
-}, 
-"node589194": {
-"edge589195": {
-"@source": "node589194", 
-"@target": "node589195"
-}, 
-"edge589202": {
-"@source": "node589194", 
-"@target": "node589202"
-}
-}, 
-"node589195": {
-"edge589196": {
-"@source": "node589195", 
-"@target": "node589196"
-}, 
-"edge589201": {
-"@source": "node589195", 
-"@target": "node589201"
-}
-}, 
-"node589196": {
-"edge589197": {
-"@source": "node589196", 
-"@target": "node589197"
-}, 
-"edge589200": {
-"@source": "node589196", 
-"@target": "node589200"
-}
-}, 
-"node589197": {
-"edge589198": {
-"@source": "node589197", 
-"@target": "node589198"
-}, 
-"edge589199": {
-"@source": "node589197", 
-"@target": "node589199"
-}
-}, 
-"node589202": {
-"edge589203": {
-"@source": "node589202", 
-"@target": "node589203"
-}, 
-"edge589204": {
-"@source": "node589202", 
-"@target": "node589204"
-}
-}, 
-"node589205": {
-"edge589206": {
-"@source": "node589205", 
-"@target": "node589206"
-}, 
-"edge589207": {
-"@source": "node589205", 
-"@target": "node589207"
-}
-}
-}, 
-"nodeById": {
-"node589166": {
-"@root": true
-}, 
-"node589167": {
-"@otu": "otu242889"
-}, 
-"node589168": {}, 
-"node589169": {
-"@otu": "otu242890"
-}, 
-"node589170": {}, 
-"node589171": {}, 
-"node589172": {}, 
-"node589173": {}, 
-"node589174": {
-"@otu": "otu242891"
-}, 
-"node589175": {
-"@otu": "otu242892"
-}, 
-"node589176": {
-"@otu": "otu242893"
-}, 
-"node589177": {
-"@otu": "otu242894"
-}, 
-"node589178": {}, 
-"node589179": {}, 
-"node589180": {}, 
-"node589181": {
-"@otu": "otu242895"
-}, 
-"node589182": {
-"@otu": "otu242896"
-}, 
-"node589183": {}, 
-"node589184": {}, 
-"node589185": {
-"@otu": "otu242897"
-}, 
-"node589186": {
-"@otu": "otu242898"
-}, 
-"node589187": {
-"@otu": "otu242899"
-}, 
-"node589188": {}, 
-"node589189": {}, 
-"node589190": {
-"@otu": "otu242900"
-}, 
-"node589191": {
-"@otu": "otu242901"
-}, 
-"node589192": {
-"@otu": "otu242902"
-}, 
-"node589193": {}, 
-"node589194": {}, 
-"node589195": {}, 
-"node589196": {}, 
-"node589197": {}, 
-"node589198": {
-"@otu": "otu242903"
-}, 
-"node589199": {
-"@otu": "otu242904"
-}, 
-"node589200": {
-"@otu": "otu242905"
-}, 
-"node589201": {
-"@otu": "otu242906"
-}, 
-"node589202": {}, 
-"node589203": {
-"@otu": "otu242907"
-}, 
-"node589204": {
-"@otu": "otu242908"
-}, 
-"node589205": {}, 
-"node589206": {
-"@otu": "otu242909"
-}, 
-"node589207": {
-"@otu": "otu242910"
-}, 
-"node589208": {
-"@otu": "otu242911"
-}
-}
-}, 
 "tree5855": {
+"@label": "Fig. 2 Phylogeny derived from maximum parsimony (MP) analysis of introns 1\u20134 of the tefA gene from representative haploid Epichlo\u00eb species and copies obtained from E. canadensis isolated from Elymus canadensis.", 
 "@xsi:type": "nex:FloatTree", 
 "^ot:branchLengthDescription": "", 
-"^ot:branchLengthMode": "", 
-"^ot:branchLengthTimeUnit": "", 
-"^ot:curatedType": "MP, EF-1 (rooted)", 
+"^ot:branchLengthMode": "ot:changesCount", 
+"^ot:branchLengthTimeUnit": "Myr", 
+"^ot:curatedType": "Maximum parsimony ", 
 "^ot:inGroupClade": "node998328", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
 "^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node998328", 
-"^ot:specifiedRoot": "", 
-"^ot:tag": [], 
+"^ot:specifiedRoot": "node998328", 
+"^ot:tag": [
+"EF-1"
+], 
+"^ot:unrootedTree": false, 
 "edgeBySourceId": {
 "node998328": {
 "edge998329": {
@@ -711,38 +517,47 @@
 "node998329": {}, 
 "node998330": {}, 
 "node998331": {
-"@otu": "otu242909"
+"@otu": "otu242909", 
+"^ot:isTaxonExemplar": true
 }, 
 "node998332": {
-"@otu": "otu242910"
+"@otu": "otu242910", 
+"^ot:isTaxonExemplar": false
 }, 
 "node998333": {}, 
 "node998334": {}, 
 "node998335": {}, 
 "node998336": {
-"@otu": "otu242895"
+"@otu": "otu242895", 
+"^ot:isTaxonExemplar": true
 }, 
 "node998337": {
-"@otu": "otu242896"
+"@otu": "otu242896", 
+"^ot:isTaxonExemplar": false
 }, 
 "node998338": {}, 
 "node998339": {}, 
 "node998340": {
-"@otu": "otu242897"
+"@otu": "otu242897", 
+"^ot:isTaxonExemplar": true
 }, 
 "node998341": {
-"@otu": "otu242898"
+"@otu": "otu242898", 
+"^ot:isTaxonExemplar": false
 }, 
 "node998342": {
-"@otu": "otu242899"
+"@otu": "otu242899", 
+"^ot:isTaxonExemplar": true
 }, 
 "node998343": {}, 
 "node998344": {}, 
 "node998345": {
-"@otu": "otu242900"
+"@otu": "otu242900", 
+"^ot:isTaxonExemplar": true
 }, 
 "node998346": {
-"@otu": "otu242901"
+"@otu": "otu242901", 
+"^ot:isTaxonExemplar": false
 }, 
 "node998347": {
 "@otu": "otu242902"
@@ -751,16 +566,20 @@
 "node998349": {}, 
 "node998350": {}, 
 "node998351": {
-"@otu": "otu242891"
+"@otu": "otu242891", 
+"^ot:isTaxonExemplar": false
 }, 
 "node998352": {
-"@otu": "otu242892"
+"@otu": "otu242892", 
+"^ot:isTaxonExemplar": false
 }, 
 "node998353": {
-"@otu": "otu242893"
+"@otu": "otu242893", 
+"^ot:isTaxonExemplar": false
 }, 
 "node998354": {
-"@otu": "otu242894"
+"@otu": "otu242894", 
+"^ot:isTaxonExemplar": true
 }, 
 "node998355": {}, 
 "node998356": {
@@ -768,10 +587,12 @@
 }, 
 "node998357": {}, 
 "node998358": {
-"@otu": "otu242890"
+"@otu": "otu242890", 
+"^ot:isTaxonExemplar": true
 }, 
 "node998359": {
-"@otu": "otu242889"
+"@otu": "otu242889", 
+"^ot:isTaxonExemplar": false
 }, 
 "node998360": {}, 
 "node998361": {}, 
@@ -781,20 +602,24 @@
 "@otu": "otu242903"
 }, 
 "node998365": {
-"@otu": "otu242904"
+"@otu": "otu242904", 
+"^ot:isTaxonExemplar": false
 }, 
 "node998366": {
-"@otu": "otu242905"
+"@otu": "otu242905", 
+"^ot:isTaxonExemplar": false
 }, 
 "node998367": {
 "@otu": "otu242906"
 }, 
 "node998368": {}, 
 "node998369": {
-"@otu": "otu242907"
+"@otu": "otu242907", 
+"^ot:isTaxonExemplar": true
 }, 
 "node998370": {
-"@otu": "otu242908"
+"@otu": "otu242908", 
+"^ot:isTaxonExemplar": false
 }
 }
 }

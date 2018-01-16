@@ -36,22 +36,109 @@
 }
 ]
 }
+}, 
+{
+"@description": "Web-based interface for submitting, editing, and reviewing studies in the Open Tree of Life project.", 
+"@id": "opentree-curation-webapp", 
+"@name": "OpenTree curation webapp", 
+"@url": "https://github.com/OpenTreeOfLife/opentree", 
+"@version": "0.0.0"
 }
 ]
 }, 
 "^ot:annotationEvents": {
-"annotation": []
+"annotation": [
+{
+"@dateCreated": "2015-09-28T20:58:04.850Z", 
+"@description": "Aids for mapping study OTUs to OTT taxa", 
+"@id": "otu-mapping-hints", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "OTU_MAPPING_HINTS", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"searchContext": {
+"$": "All life"
 }, 
-"^ot:candidateTreeForSynthesis": [], 
-"^ot:curatorName": "Romina Gazis", 
+"substitutions": {
+"substitution": [
+{
+"@active": false, 
+"@valid": true, 
+"new": {
+"$": ""
+}, 
+"old": {
+"$": ""
+}
+}, 
+{
+"@active": true, 
+"@valid": true, 
+"new": {
+"$": "$1"
+}, 
+"old": {
+"$": "^(\\S*\\s+\\S*).*"
+}
+}
+]
+}, 
+"useFuzzyMatching": true
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}, 
+{
+"@dateCreated": "2015-09-28T20:58:04.850Z", 
+"@description": "Describes supporting data files for this study", 
+"@id": "supporting-files-metadata", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "SUPPORTING_FILE_INFO", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"@movedToPermanentArchive": false, 
+"files": {
+"file": []
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}
+]
+}, 
+"^ot:candidateTreeForSynthesis": [
+"tree1707"
+], 
+"^ot:comment": "", 
+"^ot:curatorName": [
+"Romina Gazis"
+], 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S10979"
 }, 
-"^ot:focalClade": 346120, 
-"^ot:focalCladeOTTTaxonName": "Dothideomycetes", 
-"^ot:messages": {
-"message": []
-}, 
+"^ot:focalClade": 153813, 
+"^ot:focalCladeOTTTaxonName": "Sordariales", 
+"^ot:notIntendedForSynthesis": false, 
 "^ot:otusElementOrder": [
 "otus886"
 ], 
@@ -65,6 +152,10 @@
 "^ot:treesElementOrder": [
 "trees886"
 ], 
+"^xhtml:license": {
+"@href": "http://creativecommons.org/publicdomain/zero/1.0/", 
+"@name": "CC0"
+}, 
 "otusById": {
 "otus886": {
 "otuById": {
@@ -94,6 +185,8 @@
 }, 
 "otu203451": {
 "^ot:originalLabel": "Scleroramularia henaniensis CPC 16104", 
+"^ot:ottId": 1082794, 
+"^ot:ottTaxonName": "Scleroramularia henaniensis", 
 "^ot:treebaseOTUId": "Tl430117"
 }, 
 "otu203452": {
@@ -110,6 +203,8 @@
 }, 
 "otu203454": {
 "^ot:originalLabel": "Scleroramularia henaniensis CPC 18167", 
+"^ot:ottId": 1082794, 
+"^ot:ottTaxonName": "Scleroramularia henaniensis", 
 "^ot:treebaseOTUId": "Tl430120"
 }, 
 "otu203455": {
@@ -120,10 +215,14 @@
 }, 
 "otu203456": {
 "^ot:originalLabel": "Scleroramularia henaniensis CPC 16106", 
+"^ot:ottId": 1082794, 
+"^ot:ottTaxonName": "Scleroramularia henaniensis", 
 "^ot:treebaseOTUId": "Tl430122"
 }, 
 "otu203457": {
 "^ot:originalLabel": "Ramularia pratensis var. pratensis", 
+"^ot:ottId": 265791, 
+"^ot:ottTaxonName": "Ramularia pratensis", 
 "^ot:treebaseOTUId": "Tl430123"
 }, 
 "otu203458": {
@@ -134,6 +233,8 @@
 }, 
 "otu203459": {
 "^ot:originalLabel": "Dichomera eucalypti", 
+"^ot:ottId": 5311509, 
+"^ot:ottTaxonName": "Neofusicoccum eucalypti", 
 "^ot:treebaseOTUId": "Tl430125"
 }, 
 "otu203460": {
@@ -420,18 +521,22 @@
 ], 
 "treeById": {
 "tree1707": {
+"@label": "Untitled (tree1707)", 
 "@xsi:type": "nex:FloatTree", 
 "^ot:branchLengthDescription": "", 
-"^ot:branchLengthMode": "", 
-"^ot:branchLengthTimeUnit": "", 
+"^ot:branchLengthMode": "ot:undefined", 
+"^ot:branchLengthTimeUnit": "Myr", 
 "^ot:curatedType": "MP, LSU", 
 "^ot:inGroupClade": "node478336", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
 "^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node478334", 
 "^ot:specifiedRoot": "", 
 "^ot:tag": [
 "LSU"
 ], 
+"^ot:unrootedTree": true, 
 "edgeBySourceId": {
 "node478334": {
 "edge478335": {
@@ -942,37 +1047,46 @@
 "node478340": {}, 
 "node478341": {}, 
 "node478342": {
-"@otu": "otu203454"
+"@otu": "otu203454", 
+"^ot:isTaxonExemplar": true
 }, 
 "node478343": {
-"@otu": "otu203451"
+"@otu": "otu203451", 
+"^ot:isTaxonExemplar": false
 }, 
 "node478344": {
 "@otu": "otu203449"
 }, 
 "node478345": {
-"@otu": "otu203456"
+"@otu": "otu203456", 
+"^ot:isTaxonExemplar": false
 }, 
 "node478346": {
-"@otu": "otu203496"
+"@otu": "otu203496", 
+"^ot:isTaxonExemplar": true
 }, 
 "node478347": {
-"@otu": "otu203488"
+"@otu": "otu203488", 
+"^ot:isTaxonExemplar": false
 }, 
 "node478348": {
-"@otu": "otu203450"
+"@otu": "otu203450", 
+"^ot:isTaxonExemplar": true
 }, 
 "node478349": {
-"@otu": "otu203452"
+"@otu": "otu203452", 
+"^ot:isTaxonExemplar": false
 }, 
 "node478350": {
 "@otu": "otu203448"
 }, 
 "node478351": {
-"@otu": "otu203455"
+"@otu": "otu203455", 
+"^ot:isTaxonExemplar": true
 }, 
 "node478352": {
-"@otu": "otu203453"
+"@otu": "otu203453", 
+"^ot:isTaxonExemplar": false
 }, 
 "node478353": {}, 
 "node478354": {}, 
@@ -1150,16 +1264,20 @@
 }
 }, 
 "tree1708": {
+"@label": "Untitled (tree1708)", 
 "@xsi:type": "nex:FloatTree", 
 "^ot:branchLengthDescription": "", 
-"^ot:branchLengthMode": "", 
-"^ot:branchLengthTimeUnit": "", 
+"^ot:branchLengthMode": "ot:undefined", 
+"^ot:branchLengthTimeUnit": "Myr", 
 "^ot:curatedType": "MP, ITS + EF-1", 
 "^ot:inGroupClade": "node478437", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
 "^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node478436", 
 "^ot:specifiedRoot": "", 
 "^ot:tag": [], 
+"^ot:unrootedTree": true, 
 "edgeBySourceId": {
 "node478436": {
 "edge478437": {
@@ -1297,16 +1415,20 @@
 }
 }, 
 "tree1709": {
+"@label": "Untitled (tree1709)", 
 "@xsi:type": "nex:FloatTree", 
 "^ot:branchLengthDescription": "", 
 "^ot:branchLengthMode": "", 
 "^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "MP, ITS", 
 "^ot:inGroupClade": "node478456", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
 "^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node478455", 
 "^ot:specifiedRoot": "", 
 "^ot:tag": [], 
+"^ot:unrootedTree": true, 
 "edgeBySourceId": {
 "node478455": {
 "edge478456": {
@@ -1444,16 +1566,20 @@
 }
 }, 
 "tree1710": {
+"@label": "Untitled (tree1710)", 
 "@xsi:type": "nex:FloatTree", 
 "^ot:branchLengthDescription": "", 
 "^ot:branchLengthMode": "", 
 "^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "MP, EF-1", 
 "^ot:inGroupClade": "node478475", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
 "^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node478474", 
 "^ot:specifiedRoot": "", 
 "^ot:tag": [], 
+"^ot:unrootedTree": true, 
 "edgeBySourceId": {
 "node478474": {
 "edge478475": {

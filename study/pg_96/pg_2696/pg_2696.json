@@ -36,19 +36,97 @@
 }
 ]
 }
+}, 
+{
+"@description": "Web-based interface for submitting, editing, and reviewing studies in the Open Tree of Life project.", 
+"@id": "opentree-curation-webapp", 
+"@name": "OpenTree curation webapp", 
+"@url": "https://github.com/OpenTreeOfLife/opentree", 
+"@version": "0.0.0"
 }
 ]
 }, 
 "^ot:annotationEvents": {
-"annotation": []
+"annotation": [
+{
+"@dateCreated": "2017-04-30T20:47:41.714Z", 
+"@description": "Aids for mapping study OTUs to OTT taxa", 
+"@id": "otu-mapping-hints", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "OTU_MAPPING_HINTS", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"searchContext": {
+"$": "Animals"
+}, 
+"substitutions": {
+"substitution": [
+{
+"@active": false, 
+"@valid": true, 
+"new": {
+"$": ""
+}, 
+"old": {
+"$": ""
+}
+}
+]
+}, 
+"useFuzzyMatching": false
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}, 
+{
+"@dateCreated": "2017-04-30T20:47:41.714Z", 
+"@description": "Describes supporting data files for this study", 
+"@id": "supporting-files-metadata", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "SUPPORTING_FILE_INFO", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"@movedToPermanentArchive": false, 
+"files": {
+"file": []
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}
+]
 }, 
 "^ot:candidateTreeForSynthesis": [], 
-"^ot:curatorName": "Chris Owen", 
+"^ot:comment": "From RWThacker: This study did not yield a well resolved phylogeny. I do not think it should be used in the OTOL synthetic tree.", 
+"^ot:curatorName": [
+"Chris Owen", 
+"bobthacker"
+], 
+"^ot:dataDeposit": {
+"@href": ""
+}, 
 "^ot:focalClade": 67816, 
 "^ot:focalCladeOTTTaxonName": "Demospongiae", 
-"^ot:messages": {
-"message": []
-}, 
 "^ot:otusElementOrder": [
 "otus2696"
 ], 
@@ -62,6 +140,10 @@
 "^ot:treesElementOrder": [
 "trees2696"
 ], 
+"^xhtml:license": {
+"@href": "http://creativecommons.org/publicdomain/zero/1.0/", 
+"@name": "CC0"
+}, 
 "otusById": {
 "otus2696": {
 "otuById": {
@@ -430,18 +512,27 @@
 ], 
 "treeById": {
 "tree6249": {
+"@label": "Untitled (tree6249)", 
 "@xsi:type": "nex:FloatTree", 
 "^ot:branchLengthDescription": "", 
 "^ot:branchLengthMode": "ot:substitutionCount", 
 "^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "Fig. 1 ML", 
 "^ot:inGroupClade": "node1083470", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
 "^ot:outGroupEdge": "", 
+"^ot:reasonsToExcludeFromSynthesis": [
+{
+"$": "This tree is poorly resolved compared to the 18S and 28S trees from PorToL, which contain the same taxa."
+}
+], 
 "^ot:rootNodeId": "node1083469", 
 "^ot:specifiedRoot": "", 
 "^ot:tag": [
 "rooted;"
 ], 
+"^ot:unrootedTree": true, 
 "edgeBySourceId": {
 "node1083469": {
 "edge1083470": {
@@ -1354,10 +1445,12 @@
 "node1083499": {}, 
 "node1083500": {}, 
 "node1083501": {
-"@otu": "otu404612"
+"@otu": "otu404612", 
+"^ot:isTaxonExemplar": true
 }, 
 "node1083502": {
-"@otu": "otu404613"
+"@otu": "otu404613", 
+"^ot:isTaxonExemplar": false
 }, 
 "node1083503": {
 "@otu": "otu404614"
@@ -1460,10 +1553,12 @@
 "node1083551": {}, 
 "node1083552": {}, 
 "node1083553": {
-"@otu": "otu404639"
+"@otu": "otu404639", 
+"^ot:isTaxonExemplar": true
 }, 
 "node1083554": {
-"@otu": "otu404640"
+"@otu": "otu404640", 
+"^ot:isTaxonExemplar": false
 }, 
 "node1083555": {
 "@otu": "otu404641"
@@ -1474,10 +1569,12 @@
 "node1083557": {}, 
 "node1083558": {}, 
 "node1083559": {
-"@otu": "otu404643"
+"@otu": "otu404643", 
+"^ot:isTaxonExemplar": true
 }, 
 "node1083560": {
-"@otu": "otu404644"
+"@otu": "otu404644", 
+"^ot:isTaxonExemplar": false
 }, 
 "node1083561": {
 "@otu": "otu404645"

@@ -36,22 +36,99 @@
 }
 ]
 }
+}, 
+{
+"@description": "Web-based interface for submitting, editing, and reviewing studies in the Open Tree of Life project.", 
+"@id": "opentree-curation-webapp", 
+"@name": "OpenTree curation webapp", 
+"@url": "https://github.com/OpenTreeOfLife/opentree", 
+"@version": "0.0.0"
 }
 ]
 }, 
 "^ot:annotationEvents": {
-"annotation": []
+"annotation": [
+{
+"@dateCreated": "2015-09-30T17:21:31.121Z", 
+"@description": "Aids for mapping study OTUs to OTT taxa", 
+"@id": "otu-mapping-hints", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "OTU_MAPPING_HINTS", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"searchContext": {
+"$": "All life"
 }, 
-"^ot:candidateTreeForSynthesis": [], 
-"^ot:curatorName": "Romina Gazis", 
+"substitutions": {
+"substitution": [
+{
+"@active": false, 
+"@valid": true, 
+"new": {
+"$": ""
+}, 
+"old": {
+"$": ""
+}
+}
+]
+}, 
+"useFuzzyMatching": false
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}, 
+{
+"@dateCreated": "2015-09-30T17:21:31.121Z", 
+"@description": "Describes supporting data files for this study", 
+"@id": "supporting-files-metadata", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "SUPPORTING_FILE_INFO", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"@movedToPermanentArchive": false, 
+"files": {
+"file": []
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}
+]
+}, 
+"^ot:candidateTreeForSynthesis": [
+"tree3529"
+], 
+"^ot:comment": "", 
+"^ot:curatorName": [
+"Romina Gazis"
+], 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S846"
 }, 
 "^ot:focalClade": 708974, 
 "^ot:focalCladeOTTTaxonName": "Mycosphaerella", 
-"^ot:messages": {
-"message": []
-}, 
+"^ot:notIntendedForSynthesis": false, 
 "^ot:otusElementOrder": [
 "otus1752"
 ], 
@@ -65,6 +142,10 @@
 "^ot:treesElementOrder": [
 "trees1752"
 ], 
+"^xhtml:license": {
+"@href": "http://creativecommons.org/publicdomain/zero/1.0/", 
+"@name": "CC0"
+}, 
 "otusById": {
 "otus1752": {
 "otuById": {
@@ -100,6 +181,8 @@
 }, 
 "otu273696": {
 "^ot:originalLabel": "Stigmina platani", 
+"^ot:ottId": 200807, 
+"^ot:ottTaxonName": "Stigmina platani", 
 "^ot:treebaseOTUId": "Tl129766"
 }, 
 "otu273697": {
@@ -152,6 +235,8 @@
 }, 
 "otu273705": {
 "^ot:originalLabel": "Passalora arachidicola", 
+"^ot:ottId": 532102, 
+"^ot:ottTaxonName": "Cercospora arachidicola", 
 "^ot:treebaseOTUId": "Tl129799"
 }, 
 "otu273706": {
@@ -318,6 +403,8 @@
 }, 
 "otu273733": {
 "^ot:originalLabel": "Phaeoramularia saururi", 
+"^ot:ottId": 3720308, 
+"^ot:ottTaxonName": "Passalora saururi", 
 "^ot:treebaseOTUId": "Tl56707"
 }, 
 "otu273734": {
@@ -571,16 +658,22 @@
 ], 
 "treeById": {
 "tree3529": {
+"@label": "MP, ITS", 
 "@xsi:type": "nex:FloatTree", 
 "^ot:branchLengthDescription": "", 
-"^ot:branchLengthMode": "", 
-"^ot:branchLengthTimeUnit": "", 
-"^ot:curatedType": "MP, ITS", 
+"^ot:branchLengthMode": "ot:changesCount", 
+"^ot:branchLengthTimeUnit": "Myr", 
+"^ot:curatedType": "Maximum parsimony ", 
 "^ot:inGroupClade": "node680148", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
 "^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node680147", 
-"^ot:specifiedRoot": "", 
-"^ot:tag": [], 
+"^ot:specifiedRoot": "node680147", 
+"^ot:tag": [
+"ITS"
+], 
+"^ot:unrootedTree": false, 
 "edgeBySourceId": {
 "node680147": {
 "edge680148": {
@@ -1408,25 +1501,31 @@
 "node680164": {}, 
 "node680165": {}, 
 "node680166": {
-"@otu": "otu273744"
+"@otu": "otu273744", 
+"^ot:isTaxonExemplar": true
 }, 
 "node680167": {
-"@otu": "otu273766"
+"@otu": "otu273766", 
+"^ot:isTaxonExemplar": false
 }, 
 "node680168": {}, 
 "node680169": {}, 
 "node680170": {
-"@otu": "otu273759"
+"@otu": "otu273759", 
+"^ot:isTaxonExemplar": false
 }, 
 "node680171": {
-"@otu": "otu273768"
+"@otu": "otu273768", 
+"^ot:isTaxonExemplar": false
 }, 
 "node680172": {
-"@otu": "otu273752"
+"@otu": "otu273752", 
+"^ot:isTaxonExemplar": true
 }, 
 "node680173": {}, 
 "node680174": {
-"@otu": "otu273734"
+"@otu": "otu273734", 
+"^ot:isTaxonExemplar": true
 }, 
 "node680175": {}, 
 "node680176": {}, 
@@ -1465,7 +1564,8 @@
 "@otu": "otu273772"
 }, 
 "node680193": {
-"@otu": "otu273729"
+"@otu": "otu273729", 
+"^ot:isTaxonExemplar": false
 }, 
 "node680194": {}, 
 "node680195": {
@@ -1535,10 +1635,12 @@
 }, 
 "node680226": {}, 
 "node680227": {
-"@otu": "otu273722"
+"@otu": "otu273722", 
+"^ot:isTaxonExemplar": true
 }, 
 "node680228": {
-"@otu": "otu273719"
+"@otu": "otu273719", 
+"^ot:isTaxonExemplar": false
 }, 
 "node680229": {}, 
 "node680230": {}, 
@@ -1553,10 +1655,12 @@
 "node680235": {}, 
 "node680236": {}, 
 "node680237": {
-"@otu": "otu273764"
+"@otu": "otu273764", 
+"^ot:isTaxonExemplar": true
 }, 
 "node680238": {
-"@otu": "otu273750"
+"@otu": "otu273750", 
+"^ot:isTaxonExemplar": false
 }, 
 "node680239": {
 "@otu": "otu273754"
@@ -1566,10 +1670,12 @@
 }, 
 "node680241": {}, 
 "node680242": {
-"@otu": "otu273721"
+"@otu": "otu273721", 
+"^ot:isTaxonExemplar": true
 }, 
 "node680243": {
-"@otu": "otu273758"
+"@otu": "otu273758", 
+"^ot:isTaxonExemplar": false
 }, 
 "node680244": {}, 
 "node680245": {}, 
@@ -1581,10 +1687,12 @@
 }, 
 "node680248": {}, 
 "node680249": {
-"@otu": "otu273725"
+"@otu": "otu273725", 
+"^ot:isTaxonExemplar": true
 }, 
 "node680250": {
-"@otu": "otu273739"
+"@otu": "otu273739", 
+"^ot:isTaxonExemplar": false
 }, 
 "node680251": {}, 
 "node680252": {}, 
@@ -1594,11 +1702,13 @@
 "node680256": {}, 
 "node680257": {}, 
 "node680258": {
-"@otu": "otu273751"
+"@otu": "otu273751", 
+"^ot:isTaxonExemplar": false
 }, 
 "node680259": {}, 
 "node680260": {
-"@otu": "otu273755"
+"@otu": "otu273755", 
+"^ot:isTaxonExemplar": true
 }, 
 "node680261": {}, 
 "node680262": {
@@ -1617,10 +1727,12 @@
 "@otu": "otu273727"
 }, 
 "node680267": {
-"@otu": "otu273767"
+"@otu": "otu273767", 
+"^ot:isTaxonExemplar": false
 }, 
 "node680268": {
-"@otu": "otu273724"
+"@otu": "otu273724", 
+"^ot:isTaxonExemplar": true
 }, 
 "node680269": {
 "@otu": "otu273745"
@@ -1635,10 +1747,12 @@
 "node680273": {}, 
 "node680274": {}, 
 "node680275": {
-"@otu": "otu273743"
+"@otu": "otu273743", 
+"^ot:isTaxonExemplar": true
 }, 
 "node680276": {
-"@otu": "otu273731"
+"@otu": "otu273731", 
+"^ot:isTaxonExemplar": false
 }, 
 "node680277": {
 "@otu": "otu273742"
@@ -1662,16 +1776,20 @@
 "node680286": {}, 
 "node680287": {}, 
 "node680288": {
-"@otu": "otu273718"
+"@otu": "otu273718", 
+"^ot:isTaxonExemplar": false
 }, 
 "node680289": {
-"@otu": "otu273736"
+"@otu": "otu273736", 
+"^ot:isTaxonExemplar": false
 }, 
 "node680290": {
-"@otu": "otu273732"
+"@otu": "otu273732", 
+"^ot:isTaxonExemplar": false
 }, 
 "node680291": {
-"@otu": "otu273720"
+"@otu": "otu273720", 
+"^ot:isTaxonExemplar": true
 }, 
 "node680292": {
 "@otu": "otu273707"
@@ -1680,11 +1798,13 @@
 "node680294": {}, 
 "node680295": {}, 
 "node680296": {
-"@otu": "otu273741"
+"@otu": "otu273741", 
+"^ot:isTaxonExemplar": true
 }, 
 "node680297": {}, 
 "node680298": {
-"@otu": "otu273762"
+"@otu": "otu273762", 
+"^ot:isTaxonExemplar": false
 }, 
 "node680299": {
 "@otu": "otu273699"

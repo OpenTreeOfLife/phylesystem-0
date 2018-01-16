@@ -36,20 +36,103 @@
 }
 ]
 }
+}, 
+{
+"@description": "Web-based interface for submitting, editing, and reviewing studies in the Open Tree of Life project.", 
+"@id": "opentree-curation-webapp", 
+"@name": "OpenTree curation webapp", 
+"@url": "https://github.com/OpenTreeOfLife/opentree", 
+"@version": "0.0.0"
 }
 ]
 }, 
 "^ot:annotationEvents": {
-"annotation": []
+"annotation": [
+{
+"@dateCreated": "2015-01-28T16:50:25.826Z", 
+"@description": "Aids for mapping study OTUs to OTT taxa", 
+"@id": "otu-mapping-hints", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "OTU_MAPPING_HINTS", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"searchContext": {
+"$": "All life"
 }, 
-"^ot:candidateTreeForSynthesis": [], 
-"^ot:curatorName": "Chris Owen", 
+"substitutions": {
+"substitution": [
+{
+"@active": false, 
+"@valid": true, 
+"new": {
+"$": ""
+}, 
+"old": {
+"$": ""
+}
+}
+]
+}, 
+"useFuzzyMatching": false
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}, 
+{
+"@dateCreated": "2015-01-28T16:50:25.826Z", 
+"@description": "Describes supporting data files for this study", 
+"@id": "supporting-files-metadata", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "SUPPORTING_FILE_INFO", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"@movedToPermanentArchive": false, 
+"files": {
+"file": []
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}
+]
+}, 
+"^ot:candidateTreeForSynthesis": [
+"tree6231"
+], 
+"^ot:comment": "", 
+"^ot:curatorName": [
+"Chris Owen", 
+"Karen Cranston"
+], 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S2376"
 }, 
+"^ot:focalClade": 827263, 
+"^ot:focalCladeOTTTaxonName": "Caniformia", 
 "^ot:messages": {
 "message": []
 }, 
+"^ot:notIntendedForSynthesis": false, 
 "^ot:otusElementOrder": [
 "otus1646"
 ], 
@@ -294,16 +377,20 @@
 ], 
 "treeById": {
 "tree6231": {
+"@label": "Untitled (tree6231)", 
 "@xsi:type": "nex:FloatTree", 
 "^ot:branchLengthDescription": "", 
 "^ot:branchLengthMode": "ot:time", 
 "^ot:branchLengthTimeUnit": "Myr", 
 "^ot:curatedType": "supertree - best dates", 
 "^ot:inGroupClade": "node1076520", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
 "^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node1076518", 
-"^ot:specifiedRoot": "", 
+"^ot:specifiedRoot": "node1076518", 
 "^ot:tag": [], 
+"^ot:unrootedTree": false, 
 "edgeBySourceId": {
 "node1076518": {
 "edge1076519": {
@@ -331,12 +418,12 @@
 }, 
 "node1076520": {
 "edge1076521": {
-"@length": 5.0, 
+"@length": 5, 
 "@source": "node1076520", 
 "@target": "node1076521"
 }, 
 "edge1076550": {
-"@length": 7.0, 
+"@length": 7, 
 "@source": "node1076520", 
 "@target": "node1076550"
 }
@@ -348,7 +435,7 @@
 "@target": "node1076522"
 }, 
 "edge1076549": {
-"@length": 18.0, 
+"@length": 18, 
 "@source": "node1076521", 
 "@target": "node1076549"
 }
@@ -511,7 +598,7 @@
 }, 
 "node1076550": {
 "edge1076551": {
-"@length": 3.0, 
+"@length": 3, 
 "@source": "node1076550", 
 "@target": "node1076551"
 }, 
@@ -528,7 +615,7 @@
 "@target": "node1076552"
 }, 
 "edge1076569": {
-"@length": 13.0, 
+"@length": 13, 
 "@source": "node1076551", 
 "@target": "node1076569"
 }
@@ -576,7 +663,7 @@
 "@target": "node1076557"
 }, 
 "edge1076562": {
-"@length": 1.0, 
+"@length": 1, 
 "@source": "node1076556", 
 "@target": "node1076562"
 }
@@ -708,7 +795,7 @@
 "@target": "node1076583"
 }, 
 "edge1076584": {
-"@length": 5.0, 
+"@length": 5, 
 "@source": "node1076582", 
 "@target": "node1076584"
 }
@@ -875,16 +962,20 @@
 }
 }, 
 "tree6232": {
+"@label": "Untitled (tree6232)", 
 "@xsi:type": "nex:FloatTree", 
 "^ot:branchLengthDescription": "", 
 "^ot:branchLengthMode": "ot:time", 
 "^ot:branchLengthTimeUnit": "Myr", 
 "^ot:curatedType": "supertree - lower dates", 
 "^ot:inGroupClade": "node1076591", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
 "^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node1076589", 
 "^ot:specifiedRoot": "", 
 "^ot:tag": [], 
+"^ot:unrootedTree": true, 
 "edgeBySourceId": {
 "node1076589": {
 "edge1076590": {
@@ -912,7 +1003,7 @@
 }, 
 "node1076591": {
 "edge1076592": {
-"@length": 5.0, 
+"@length": 5, 
 "@source": "node1076591", 
 "@target": "node1076592"
 }, 
@@ -941,7 +1032,7 @@
 "@target": "node1076594"
 }, 
 "edge1076619": {
-"@length": 6.0, 
+"@length": 6, 
 "@source": "node1076593", 
 "@target": "node1076619"
 }
@@ -984,7 +1075,7 @@
 }, 
 "node1076597": {
 "edge1076598": {
-"@length": 1.0, 
+"@length": 1, 
 "@source": "node1076597", 
 "@target": "node1076598"
 }, 
@@ -1092,7 +1183,7 @@
 }, 
 "node1076621": {
 "edge1076622": {
-"@length": 3.0, 
+"@length": 3, 
 "@source": "node1076621", 
 "@target": "node1076622"
 }, 
@@ -1128,7 +1219,7 @@
 }, 
 "node1076625": {
 "edge1076626": {
-"@length": 4.0, 
+"@length": 4, 
 "@source": "node1076625", 
 "@target": "node1076626"
 }, 
@@ -1289,7 +1380,7 @@
 "@target": "node1076654"
 }, 
 "edge1076655": {
-"@length": 5.0, 
+"@length": 5, 
 "@source": "node1076653", 
 "@target": "node1076655"
 }
@@ -1456,16 +1547,20 @@
 }
 }, 
 "tree6233": {
+"@label": "Untitled (tree6233)", 
 "@xsi:type": "nex:FloatTree", 
 "^ot:branchLengthDescription": "", 
 "^ot:branchLengthMode": "ot:time", 
 "^ot:branchLengthTimeUnit": "Myr", 
 "^ot:curatedType": "supertree - upper dates", 
 "^ot:inGroupClade": "node1076662", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
 "^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node1076660", 
 "^ot:specifiedRoot": "", 
 "^ot:tag": [], 
+"^ot:unrootedTree": true, 
 "edgeBySourceId": {
 "node1076660": {
 "edge1076661": {
@@ -1493,7 +1588,7 @@
 }, 
 "node1076662": {
 "edge1076663": {
-"@length": 5.0, 
+"@length": 5, 
 "@source": "node1076662", 
 "@target": "node1076663"
 }, 
@@ -1546,7 +1641,7 @@
 "@target": "node1076667"
 }, 
 "edge1076686": {
-"@length": 1.0, 
+"@length": 1, 
 "@source": "node1076666", 
 "@target": "node1076686"
 }
@@ -1685,7 +1780,7 @@
 }, 
 "node1076693": {
 "edge1076694": {
-"@length": 6.0, 
+"@length": 6, 
 "@source": "node1076693", 
 "@target": "node1076694"
 }, 
@@ -1757,12 +1852,12 @@
 }, 
 "node1076700": {
 "edge1076701": {
-"@length": 2.0, 
+"@length": 2, 
 "@source": "node1076700", 
 "@target": "node1076701"
 }, 
 "edge1076702": {
-"@length": 2.0, 
+"@length": 2, 
 "@source": "node1076700", 
 "@target": "node1076702"
 }
@@ -1798,7 +1893,7 @@
 "@target": "node1076713"
 }, 
 "edge1076724": {
-"@length": 2.0, 
+"@length": 2, 
 "@source": "node1076712", 
 "@target": "node1076724"
 }
@@ -1853,12 +1948,12 @@
 }, 
 "node1076721": {
 "edge1076722": {
-"@length": 4.0, 
+"@length": 4, 
 "@source": "node1076721", 
 "@target": "node1076722"
 }, 
 "edge1076723": {
-"@length": 4.0, 
+"@length": 4, 
 "@source": "node1076721", 
 "@target": "node1076723"
 }

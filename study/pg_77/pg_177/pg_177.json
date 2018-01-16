@@ -36,22 +36,100 @@
 }
 ]
 }
+}, 
+{
+"@description": "Web-based interface for submitting, editing, and reviewing studies in the Open Tree of Life project.", 
+"@id": "opentree-curation-webapp", 
+"@name": "OpenTree curation webapp", 
+"@url": "https://github.com/OpenTreeOfLife/opentree", 
+"@version": "0.0.0"
 }
 ]
 }, 
 "^ot:annotationEvents": {
-"annotation": []
+"annotation": [
+{
+"@dateCreated": "2015-10-09T19:06:06.765Z", 
+"@description": "Aids for mapping study OTUs to OTT taxa", 
+"@id": "otu-mapping-hints", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "OTU_MAPPING_HINTS", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"searchContext": {
+"$": "All life"
 }, 
-"^ot:candidateTreeForSynthesis": [], 
-"^ot:curatorName": "William Wysocki", 
+"substitutions": {
+"substitution": [
+{
+"@active": false, 
+"@valid": true, 
+"new": {
+"$": ""
+}, 
+"old": {
+"$": ""
+}
+}
+]
+}, 
+"useFuzzyMatching": false
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}, 
+{
+"@dateCreated": "2015-10-09T19:06:06.765Z", 
+"@description": "Describes supporting data files for this study", 
+"@id": "supporting-files-metadata", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "SUPPORTING_FILE_INFO", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"@movedToPermanentArchive": false, 
+"files": {
+"file": []
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}
+]
+}, 
+"^ot:candidateTreeForSynthesis": [
+"tree452"
+], 
+"^ot:comment": "", 
+"^ot:curatorName": [
+"William Wysocki", 
+"Joseph W. Brown"
+], 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S11087"
 }, 
 "^ot:focalClade": 584111, 
 "^ot:focalCladeOTTTaxonName": "Cactaceae", 
-"^ot:messages": {
-"message": []
-}, 
+"^ot:notIntendedForSynthesis": false, 
 "^ot:otusElementOrder": [
 "otus177"
 ], 
@@ -59,8 +137,8 @@
 "^ot:studyPublication": {
 "@href": "http://dx.doi.org/10.3732/ajb.1000129"
 }, 
-"^ot:studyPublicationReference": "Hern\u00e1ndez-hern\u00e1ndez T., Hern\u00e1ndez H.M., De-nova J., Puente R., Eguiarte L.E., & Magall\u00f3n S. 2011. Phylogenetic Relationships and Evolution of Growth Form in Cactaceae (Caryophyllales, Eudicotyledoneae). American Journal of Botany, 98: 44-61.", 
-"^ot:studyYear": 2011, 
+"^ot:studyPublicationReference": "Hernandez-Hernandez, T., H. M. Hernandez, J. A. De-Nova, R. Puente, L. E. Eguiarte, S. Magallon. 2010. Phylogenetic relationships and evolution of growth form in Cactaceae (Caryophyllales, Eudicotyledoneae). American Journal of Botany 98 (1): 44-61", 
+"^ot:studyYear": 2010, 
 "^ot:tag": [], 
 "^ot:treesElementOrder": [
 "trees177"
@@ -1209,16 +1287,20 @@
 ], 
 "treeById": {
 "tree452": {
+"@label": "MLE", 
 "@xsi:type": "nex:FloatTree", 
 "^ot:branchLengthDescription": "", 
 "^ot:branchLengthMode": "ot:substitutionCount", 
-"^ot:branchLengthTimeUnit": "", 
-"^ot:curatedType": "ML best tree", 
+"^ot:branchLengthTimeUnit": "Myr", 
+"^ot:curatedType": "Maximum likelihood ", 
 "^ot:inGroupClade": "node203042", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
 "^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node202814", 
-"^ot:specifiedRoot": "", 
+"^ot:specifiedRoot": "node202814", 
 "^ot:tag": [], 
+"^ot:unrootedTree": false, 
 "edgeBySourceId": {
 "node202814": {
 "edge202815": {
@@ -3953,10 +4035,12 @@
 }, 
 "node202832": {}, 
 "node202833": {
-"@otu": "otu76785"
+"@otu": "otu76785", 
+"^ot:isTaxonExemplar": true
 }, 
 "node202834": {
-"@otu": "otu76786"
+"@otu": "otu76786", 
+"^ot:isTaxonExemplar": false
 }, 
 "node202835": {}, 
 "node202836": {}, 

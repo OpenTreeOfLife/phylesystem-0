@@ -36,29 +36,129 @@
 }
 ]
 }
+}, 
+{
+"@description": "Web-based interface for submitting, editing, and reviewing studies in the Open Tree of Life project.", 
+"@id": "opentree-curation-webapp", 
+"@name": "OpenTree curation webapp", 
+"@url": "https://github.com/OpenTreeOfLife/opentree", 
+"@version": "0.0.0"
 }
 ]
 }, 
 "^ot:annotationEvents": {
-"annotation": []
+"annotation": [
+{
+"@dateCreated": "2015-09-30T17:42:41.701Z", 
+"@description": "Aids for mapping study OTUs to OTT taxa", 
+"@id": "otu-mapping-hints", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "OTU_MAPPING_HINTS", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"searchContext": {
+"$": "Ascomycetes"
 }, 
-"^ot:candidateTreeForSynthesis": [], 
-"^ot:curatorName": "Romina Gazis", 
+"substitutions": {
+"substitution": [
+{
+"@active": false, 
+"@valid": true, 
+"new": {
+"$": ""
+}, 
+"old": {
+"$": ""
+}
+}, 
+{
+"@active": true, 
+"@valid": true, 
+"new": {
+"$": "$1"
+}, 
+"old": {
+"$": "^(\\S*\\s+\\S*).*"
+}
+}
+]
+}, 
+"useFuzzyMatching": true
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}, 
+{
+"@dateCreated": "2015-09-30T17:42:41.701Z", 
+"@description": "Describes supporting data files for this study", 
+"@id": "supporting-files-metadata", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "SUPPORTING_FILE_INFO", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"@movedToPermanentArchive": false, 
+"files": {
+"file": []
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}
+]
+}, 
+"^ot:candidateTreeForSynthesis": [
+"tree3245"
+], 
+"^ot:comment": "I'm pretty sure the correct article is this one:\n\n10.3852/mycologia.98.4.560\n\nDifferent author list, different journal, but I'm pretty sure it's the intended article, as no article with the given description seems to exist.\n", 
+"^ot:curatorName": [
+"Romina Gazis", 
+"Jonathan A Rees"
+], 
+"^ot:dataDeposit": {
+"@href": ""
+}, 
 "^ot:focalClade": 380242, 
 "^ot:focalCladeOTTTaxonName": "Epichloe sylvatica", 
-"^ot:messages": {
-"message": []
-}, 
+"^ot:notIntendedForSynthesis": false, 
 "^ot:otusElementOrder": [
 "otus1609"
 ], 
 "^ot:studyId": "pg_1609", 
+"^ot:studyPublication": {
+"@href": ""
+}, 
 "^ot:studyPublicationReference": "Ji Y. 2012. Propose of a New Variety of Epichloe sylvatica in Native Brachypodium sylvaticum (Huds.) P. Beauv. Grown in Huangshan. Mycology: An International Journal on Fungal Biology, .", 
 "^ot:studyYear": 2012, 
-"^ot:tag": [], 
+"^ot:tag": [
+"publication not found"
+], 
 "^ot:treesElementOrder": [
 "trees1609"
 ], 
+"^xhtml:license": {
+"@href": "http://creativecommons.org/publicdomain/zero/1.0/", 
+"@name": "CC0"
+}, 
 "otusById": {
 "otus1609": {
 "otuById": {
@@ -83,7 +183,9 @@
 "^ot:ottTaxonName": "Epichloe festucae"
 }, 
 "otu265169": {
-"^ot:originalLabel": "Epichloe amarillans AF231191"
+"^ot:originalLabel": "Epichloe amarillans AF231191", 
+"^ot:ottId": 369201, 
+"^ot:ottTaxonName": "Epichloe amarillans"
 }, 
 "otu265170": {
 "^ot:originalLabel": "Epichloe amarillans AF457506", 
@@ -156,13 +258,19 @@
 "^ot:ottTaxonName": "Epichloe typhina"
 }, 
 "otu265184": {
-"^ot:originalLabel": "Epichloe sylvatica var. huangshanense Brhs6914"
+"^ot:originalLabel": "Epichloe sylvatica var. huangshanense Brhs6914", 
+"^ot:ottId": 380242, 
+"^ot:ottTaxonName": "Epichloe sylvatica"
 }, 
 "otu265185": {
-"^ot:originalLabel": "Epichloe sylvatica var. huangshanense Brhs8101"
+"^ot:originalLabel": "Epichloe sylvatica var. huangshanense Brhs8101", 
+"^ot:ottId": 380242, 
+"^ot:ottTaxonName": "Epichloe sylvatica"
 }, 
 "otu265186": {
-"^ot:originalLabel": "Epichloe sylvatica var. huangshanense Brhs6710"
+"^ot:originalLabel": "Epichloe sylvatica var. huangshanense Brhs6710", 
+"^ot:ottId": 380242, 
+"^ot:ottTaxonName": "Epichloe sylvatica"
 }, 
 "otu265187": {
 "^ot:originalLabel": "Epichloe sylvatica AF231218", 
@@ -245,13 +353,19 @@
 "^ot:ottTaxonName": "Epichloe elymi"
 }, 
 "otu265203": {
-"^ot:originalLabel": "Epichloe glyceriae L78275"
+"^ot:originalLabel": "Epichloe glyceriae L78275", 
+"^ot:ottId": 89725, 
+"^ot:ottTaxonName": "Epichloe glyceriae"
 }, 
 "otu265204": {
-"^ot:originalLabel": "Epichloe glyceriae L78276"
+"^ot:originalLabel": "Epichloe glyceriae L78276", 
+"^ot:ottId": 89725, 
+"^ot:ottTaxonName": "Epichloe glyceriae"
 }, 
 "otu265205": {
-"^ot:originalLabel": "Epichloe amarillans L06958"
+"^ot:originalLabel": "Epichloe amarillans L06958", 
+"^ot:ottId": 369201, 
+"^ot:ottTaxonName": "Epichloe amarillans"
 }, 
 "otu265206": {
 "^ot:originalLabel": "Epichloe amarillans AF457467", 
@@ -259,13 +373,19 @@
 "^ot:ottTaxonName": "Epichloe amarillans"
 }, 
 "otu265207": {
-"^ot:originalLabel": "Epichloe baconii L06961"
+"^ot:originalLabel": "Epichloe baconii L06961", 
+"^ot:ottId": 128044, 
+"^ot:ottTaxonName": "Epichloe baconii"
 }, 
 "otu265208": {
-"^ot:originalLabel": "Epichloe baconii L78279"
+"^ot:originalLabel": "Epichloe baconii L78279", 
+"^ot:ottId": 128044, 
+"^ot:ottTaxonName": "Epichloe baconii"
 }, 
 "otu265209": {
-"^ot:originalLabel": "Epichloe baconii L78270"
+"^ot:originalLabel": "Epichloe baconii L78270", 
+"^ot:ottId": 128044, 
+"^ot:ottTaxonName": "Epichloe baconii"
 }, 
 "otu265210": {
 "^ot:originalLabel": "Epichloe festucae AF250746", 
@@ -273,13 +393,19 @@
 "^ot:ottTaxonName": "Epichloe festucae"
 }, 
 "otu265211": {
-"^ot:originalLabel": "Epichloe festucae L78286"
+"^ot:originalLabel": "Epichloe festucae L78286", 
+"^ot:ottId": 137209, 
+"^ot:ottTaxonName": "Epichloe festucae"
 }, 
 "otu265212": {
-"^ot:originalLabel": "Epichloe brachyelytri AF250736"
+"^ot:originalLabel": "Epichloe brachyelytri AF250736", 
+"^ot:ottId": 905108, 
+"^ot:ottTaxonName": "Epichloe brachyelytri"
 }, 
 "otu265213": {
-"^ot:originalLabel": "Epichloe brachyelytri AF062427"
+"^ot:originalLabel": "Epichloe brachyelytri AF062427", 
+"^ot:ottId": 905108, 
+"^ot:ottTaxonName": "Epichloe brachyelytri"
 }, 
 "otu265214": {
 "^ot:originalLabel": "Epichloe typhina AF062429", 
@@ -287,28 +413,44 @@
 "^ot:ottTaxonName": "Epichloe typhina"
 }, 
 "otu265215": {
-"^ot:originalLabel": "Epichloe typhina L78284"
+"^ot:originalLabel": "Epichloe typhina L78284", 
+"^ot:ottId": 103011, 
+"^ot:ottTaxonName": "Epichloe typhina"
 }, 
 "otu265216": {
-"^ot:originalLabel": "Epichloe sylvatica L78278"
+"^ot:originalLabel": "Epichloe sylvatica L78278", 
+"^ot:ottId": 380242, 
+"^ot:ottTaxonName": "Epichloe sylvatica"
 }, 
 "otu265217": {
-"^ot:originalLabel": "Epichloe sylvatica L78291"
+"^ot:originalLabel": "Epichloe sylvatica L78291", 
+"^ot:ottId": 380242, 
+"^ot:ottTaxonName": "Epichloe sylvatica"
 }, 
 "otu265218": {
-"^ot:originalLabel": "Epichloe typhina L78292"
+"^ot:originalLabel": "Epichloe typhina L78292", 
+"^ot:ottId": 103011, 
+"^ot:ottTaxonName": "Epichloe typhina"
 }, 
 "otu265219": {
-"^ot:originalLabel": "Epichloe typhina L78274"
+"^ot:originalLabel": "Epichloe typhina L78274", 
+"^ot:ottId": 103011, 
+"^ot:ottTaxonName": "Epichloe typhina"
 }, 
 "otu265220": {
-"^ot:originalLabel": "Epichloe typhina L78288"
+"^ot:originalLabel": "Epichloe typhina L78288", 
+"^ot:ottId": 103011, 
+"^ot:ottTaxonName": "Epichloe typhina"
 }, 
 "otu265221": {
-"^ot:originalLabel": "Epichloe typhina L78280"
+"^ot:originalLabel": "Epichloe typhina L78280", 
+"^ot:ottId": 103011, 
+"^ot:ottTaxonName": "Epichloe typhina"
 }, 
 "otu265222": {
-"^ot:originalLabel": "Epichloe typhina L78285"
+"^ot:originalLabel": "Epichloe typhina L78285", 
+"^ot:ottId": 103011, 
+"^ot:ottTaxonName": "Epichloe typhina"
 }, 
 "otu265223": {
 "^ot:originalLabel": "Epichloe typhina AF250752", 
@@ -337,15 +479,22 @@
 ], 
 "treeById": {
 "tree3245": {
+"@label": "MP, EF", 
 "@xsi:type": "nex:FloatTree", 
 "^ot:branchLengthDescription": "", 
-"^ot:branchLengthMode": "", 
-"^ot:branchLengthTimeUnit": "", 
-"^ot:curatedType": "MP, EF-1", 
+"^ot:branchLengthMode": "ot:changesCount", 
+"^ot:branchLengthTimeUnit": "Myr", 
+"^ot:curatedType": "Maximum parsimony ", 
+"^ot:inGroupClade": "node654418", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
 "^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node654418", 
-"^ot:specifiedRoot": "", 
-"^ot:tag": [], 
+"^ot:specifiedRoot": "node654418", 
+"^ot:tag": [
+"EF-1"
+], 
+"^ot:unrootedTree": true, 
 "edgeBySourceId": {
 "node654418": {
 "edge654419": {
@@ -657,135 +806,172 @@
 "node654423": {}, 
 "node654424": {}, 
 "node654425": {
-"@otu": "otu265165"
+"@otu": "otu265165", 
+"^ot:isTaxonExemplar": false
 }, 
 "node654426": {
-"@otu": "otu265166"
+"@otu": "otu265166", 
+"^ot:isTaxonExemplar": true
 }, 
 "node654427": {}, 
 "node654428": {
-"@otu": "otu265167"
+"@otu": "otu265167", 
+"^ot:isTaxonExemplar": true
 }, 
 "node654429": {
-"@otu": "otu265168"
+"@otu": "otu265168", 
+"^ot:isTaxonExemplar": false
 }, 
 "node654430": {}, 
 "node654431": {
-"@otu": "otu265169"
+"@otu": "otu265169", 
+"^ot:isTaxonExemplar": true
 }, 
 "node654432": {
-"@otu": "otu265170"
+"@otu": "otu265170", 
+"^ot:isTaxonExemplar": false
 }, 
 "node654433": {
-"@otu": "otu265171"
+"@otu": "otu265171", 
+"^ot:isTaxonExemplar": false
 }, 
 "node654434": {}, 
 "node654435": {
-"@otu": "otu265172"
+"@otu": "otu265172", 
+"^ot:isTaxonExemplar": true
 }, 
 "node654436": {
-"@otu": "otu265173"
+"@otu": "otu265173", 
+"^ot:isTaxonExemplar": false
 }, 
 "node654437": {}, 
 "node654438": {}, 
 "node654439": {
-"@otu": "otu265174"
+"@otu": "otu265174", 
+"^ot:isTaxonExemplar": true
 }, 
 "node654440": {
-"@otu": "otu265175"
+"@otu": "otu265175", 
+"^ot:isTaxonExemplar": false
 }, 
 "node654441": {}, 
 "node654442": {}, 
 "node654443": {
-"@otu": "otu265176"
+"@otu": "otu265176", 
+"^ot:isTaxonExemplar": true
 }, 
 "node654444": {
-"@otu": "otu265177"
+"@otu": "otu265177", 
+"^ot:isTaxonExemplar": false
 }, 
 "node654445": {}, 
 "node654446": {}, 
 "node654447": {
-"@otu": "otu265178"
+"@otu": "otu265178", 
+"^ot:isTaxonExemplar": true
 }, 
 "node654448": {
-"@otu": "otu265179"
+"@otu": "otu265179", 
+"^ot:isTaxonExemplar": false
 }, 
 "node654449": {}, 
 "node654450": {
-"@otu": "otu265180"
+"@otu": "otu265180", 
+"^ot:isTaxonExemplar": true
 }, 
 "node654451": {
-"@otu": "otu265181"
+"@otu": "otu265181", 
+"^ot:isTaxonExemplar": false
 }, 
 "node654452": {}, 
 "node654453": {}, 
 "node654454": {
-"@otu": "otu265182"
+"@otu": "otu265182", 
+"^ot:isTaxonExemplar": false
 }, 
 "node654455": {
-"@otu": "otu265183"
+"@otu": "otu265183", 
+"^ot:isTaxonExemplar": false
 }, 
 "node654456": {}, 
 "node654457": {}, 
 "node654458": {}, 
 "node654459": {}, 
 "node654460": {
-"@otu": "otu265184"
+"@otu": "otu265184", 
+"^ot:isTaxonExemplar": false
 }, 
 "node654461": {
-"@otu": "otu265185"
+"@otu": "otu265185", 
+"^ot:isTaxonExemplar": false
 }, 
 "node654462": {
-"@otu": "otu265186"
+"@otu": "otu265186", 
+"^ot:isTaxonExemplar": true
 }, 
 "node654463": {}, 
 "node654464": {
-"@otu": "otu265187"
+"@otu": "otu265187", 
+"^ot:isTaxonExemplar": false
 }, 
 "node654465": {
-"@otu": "otu265188"
+"@otu": "otu265188", 
+"^ot:isTaxonExemplar": false
 }, 
 "node654466": {
-"@otu": "otu265189"
+"@otu": "otu265189", 
+"^ot:isTaxonExemplar": false
 }, 
 "node654467": {}, 
 "node654468": {}, 
 "node654469": {
-"@otu": "otu265190"
+"@otu": "otu265190", 
+"^ot:isTaxonExemplar": true
 }, 
 "node654470": {
-"@otu": "otu265191"
+"@otu": "otu265191", 
+"^ot:isTaxonExemplar": false
 }, 
 "node654471": {}, 
 "node654472": {}, 
 "node654473": {
-"@otu": "otu265192"
+"@otu": "otu265192", 
+"^ot:isTaxonExemplar": false
 }, 
 "node654474": {
-"@otu": "otu265193"
+"@otu": "otu265193", 
+"^ot:isTaxonExemplar": true
 }, 
 "node654475": {}, 
 "node654476": {
-"@otu": "otu265194"
+"@otu": "otu265194", 
+"^ot:isTaxonExemplar": false
 }, 
 "node654477": {
-"@otu": "otu265195"
+"@otu": "otu265195", 
+"^ot:isTaxonExemplar": false
 }, 
 "node654478": {
-"@otu": "otu265196"
+"@otu": "otu265196", 
+"^ot:isTaxonExemplar": false
 }
 }
 }, 
 "tree3246": {
+"@label": "Untitled (tree3246)", 
 "@xsi:type": "nex:FloatTree", 
 "^ot:branchLengthDescription": "", 
 "^ot:branchLengthMode": "", 
 "^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "MP, b-tubulin", 
+"^ot:inGroupClade": "", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
 "^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node654479", 
 "^ot:specifiedRoot": "", 
 "^ot:tag": [], 
+"^ot:unrootedTree": true, 
 "edgeBySourceId": {
 "node654479": {
 "edge654480": {

@@ -36,22 +36,97 @@
 }
 ]
 }
+}, 
+{
+"@description": "Web-based interface for submitting, editing, and reviewing studies in the Open Tree of Life project.", 
+"@id": "opentree-curation-webapp", 
+"@name": "OpenTree curation webapp", 
+"@url": "https://github.com/OpenTreeOfLife/opentree", 
+"@version": "0.0.0"
 }
 ]
 }, 
 "^ot:annotationEvents": {
-"annotation": []
+"annotation": [
+{
+"@dateCreated": "2017-08-24T17:57:55.927Z", 
+"@description": "Aids for mapping study OTUs to OTT taxa", 
+"@id": "otu-mapping-hints", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "OTU_MAPPING_HINTS", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"searchContext": {
+"$": "Nematodes"
+}, 
+"substitutions": {
+"substitution": [
+{
+"@active": false, 
+"@valid": true, 
+"new": {
+"$": ""
+}, 
+"old": {
+"$": ""
+}
+}
+]
+}, 
+"useFuzzyMatching": false
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}, 
+{
+"@dateCreated": "2017-08-24T17:57:55.927Z", 
+"@description": "Describes supporting data files for this study", 
+"@id": "supporting-files-metadata", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "SUPPORTING_FILE_INFO", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"@movedToPermanentArchive": false, 
+"files": {
+"file": []
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}
+]
 }, 
 "^ot:candidateTreeForSynthesis": [], 
-"^ot:curatorName": "Chris Owen", 
+"^ot:comment": "", 
+"^ot:curatorName": [
+"Chris Owen", 
+"Benjamin Redelings"
+], 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S1185"
 }, 
 "^ot:focalClade": 395055, 
 "^ot:focalCladeOTTTaxonName": "Caenorhabditis", 
-"^ot:messages": {
-"message": []
-}, 
 "^ot:otusElementOrder": [
 "otus2089"
 ], 
@@ -158,16 +233,20 @@
 ], 
 "treeById": {
 "tree4326": {
+"@label": "Untitled (tree4326)", 
 "@xsi:type": "nex:FloatTree", 
 "^ot:branchLengthDescription": "", 
 "^ot:branchLengthMode": "ot:changesCount", 
-"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "Fig. 1 MP", 
 "^ot:inGroupClade": "node793517", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
 "^ot:outGroupEdge": "", 
+"^ot:reasonsToExcludeFromSynthesis": [], 
 "^ot:rootNodeId": "node793515", 
-"^ot:specifiedRoot": "", 
+"^ot:specifiedRoot": "node793515", 
 "^ot:tag": [], 
+"^ot:unrootedTree": false, 
 "edgeBySourceId": {
 "node793515": {
 "edge793516": {
@@ -361,16 +440,24 @@
 }
 }, 
 "tree4327": {
+"@label": "Untitled (tree4327)", 
 "@xsi:type": "nex:FloatTree", 
 "^ot:branchLengthDescription": "", 
 "^ot:branchLengthMode": "ot:changesCount", 
-"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "Alternative Tree", 
 "^ot:inGroupClade": "node793544", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
 "^ot:outGroupEdge": "", 
+"^ot:reasonsToExcludeFromSynthesis": [
+{
+"$": "The other tree in the study might be is probably better."
+}
+], 
 "^ot:rootNodeId": "node793542", 
-"^ot:specifiedRoot": "", 
+"^ot:specifiedRoot": "node793542", 
 "^ot:tag": [], 
+"^ot:unrootedTree": false, 
 "edgeBySourceId": {
 "node793542": {
 "edge793543": {

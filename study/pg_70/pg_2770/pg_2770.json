@@ -15,16 +15,13 @@
 "^ot:agents": {
 "agent": [
 {
-"@description": "validator of NexSON constraints as well as constraints that would allow a study to be imported into the Open Tree of Life's phylogenetic synthesis tools", 
+"@description": "Open Tree NexSON validation", 
 "@id": "peyotl-validator", 
-"@name": "validate_ot_nexson.py", 
+"@name": "api.opentreeoflife.org/validate", 
 "@url": "https://github.com/OpenTreeOfLife/peyotl", 
 "@version": "0.0.4a", 
 "invocation": {
-"commandLine": [
-"--embed", 
-"--agent-only"
-], 
+"commandLine": [], 
 "otherProperty": [
 {
 "name": "pythonVersion", 
@@ -36,19 +33,98 @@
 }
 ]
 }
+}, 
+{
+"@description": "Web-based interface for submitting, editing, and reviewing studies in the Open Tree of Life project.", 
+"@id": "opentree-curation-webapp", 
+"@name": "OpenTree curation webapp", 
+"@url": "https://github.com/OpenTreeOfLife/opentree", 
+"@version": "0.0.0"
 }
 ]
 }, 
 "^ot:annotationEvents": {
-"annotation": []
+"annotation": [
+{
+"@dateCreated": "2014-07-26T01:01:25.146Z", 
+"@description": "Aids for mapping study OTUs to OTT taxa", 
+"@id": "otu-mapping-hints", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "OTU_MAPPING_HINTS", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"searchContext": {
+"$": "SAR group"
 }, 
-"^ot:candidateTreeForSynthesis": [], 
-"^ot:curatorName": "Dail Laughinghouse", 
+"substitutions": {
+"substitution": [
+{
+"@active": false, 
+"@valid": true, 
+"new": {
+"$": ""
+}, 
+"old": {
+"$": ""
+}
+}
+]
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}, 
+{
+"@dateCreated": "2014-07-26T01:01:25.146Z", 
+"@description": "Describes supporting data files for this study", 
+"@id": "supporting-files-metadata", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "SUPPORTING_FILE_INFO", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"@movedToPermanentArchive": false, 
+"files": {
+"file": []
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}
+]
+}, 
+"^ot:candidateTreeForSynthesis": [
+"tree6417"
+], 
+"^ot:comment": "", 
+"^ot:curatorName": [
+"Dail Laughinghouse", 
+"Benjamin Redelings"
+], 
+"^ot:dataDeposit": {
+"@href": ""
+}, 
 "^ot:focalClade": 724399, 
 "^ot:focalCladeOTTTaxonName": "Plasmodium", 
-"^ot:messages": {
-"message": []
-}, 
 "^ot:otusElementOrder": [
 "otus2770"
 ], 
@@ -56,7 +132,7 @@
 "^ot:studyPublication": {
 "@href": "http://dx.doi.org/10.1371/journal.ppat.1000446"
 }, 
-"^ot:studyPublicationReference": "Benjamin Ollomo, Patrick Durand, Franck Prugnolle, Emmanuel Douzery, C\u00e9line Arnathau, Dieudonn\u00e9 Nkoghe, Eric Leroy, Fran\u00e7ois Renaud. 2009. A New Malaria Agent in African Hominids. PLoS Pathogens 5(5):e1000446.", 
+"^ot:studyPublicationReference": "Benjamin Ollomo, Patrick Durand, Franck Prugnolle, Emmanuel Douzery, Celine Arnathau, Dieudonne Nkoghe, Eric Leroy, Francois Renaud, 2009, 'A New Malaria Agent in African Hominids', PLoS Pathogens, vol. 5, no. 5, p. e1000446", 
 "^ot:studyYear": 2009, 
 "^ot:tag": [], 
 "^ot:treesElementOrder": [
@@ -164,15 +240,21 @@
 ], 
 "treeById": {
 "tree6417": {
+"@label": "Untitled (tree6417)", 
 "@xsi:type": "nex:FloatTree", 
 "^ot:branchLengthDescription": "", 
-"^ot:branchLengthMode": "", 
+"^ot:branchLengthMode": "ot:substitutionCount", 
 "^ot:branchLengthTimeUnit": "", 
-"^ot:curatedType": "ML", 
+"^ot:curatedType": "Maximum likelihood ", 
+"^ot:inGroupClade": "node1115740", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
 "^ot:outGroupEdge": "", 
+"^ot:reasonsToExcludeFromSynthesis": [], 
 "^ot:rootNodeId": "node1115739", 
-"^ot:specifiedRoot": "", 
+"^ot:specifiedRoot": "node1115739", 
 "^ot:tag": [], 
+"^ot:unrootedTree": false, 
 "edgeBySourceId": {
 "node1115739": {
 "edge1115740": {

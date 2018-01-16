@@ -36,14 +36,104 @@
 }
 ]
 }
+}, 
+{
+"@description": "Web-based interface for submitting, editing, and reviewing studies in the Open Tree of Life project.", 
+"@id": "opentree-curation-webapp", 
+"@name": "OpenTree curation webapp", 
+"@url": "https://github.com/OpenTreeOfLife/opentree", 
+"@version": "0.0.0"
 }
 ]
 }, 
 "^ot:annotationEvents": {
-"annotation": []
+"annotation": [
+{
+"@dateCreated": "2015-01-06T17:58:49.924Z", 
+"@description": "Aids for mapping study OTUs to OTT taxa", 
+"@id": "otu-mapping-hints", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "OTU_MAPPING_HINTS", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"searchContext": {
+"$": "All life"
 }, 
-"^ot:candidateTreeForSynthesis": [], 
-"^ot:curatorName": "Romina Gazis", 
+"substitutions": {
+"substitution": [
+{
+"@active": true, 
+"@valid": true, 
+"new": {
+"$": ""
+}, 
+"old": {
+"$": "\\b\\s+(\\w*)$"
+}
+}, 
+{
+"@active": true, 
+"@valid": true, 
+"new": {
+"$": ""
+}, 
+"old": {
+"$": "\\b\\s+(\\w*)$"
+}
+}
+]
+}, 
+"useFuzzyMatching": true
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}, 
+{
+"@dateCreated": "2015-01-06T17:58:49.924Z", 
+"@description": "Describes supporting data files for this study", 
+"@id": "supporting-files-metadata", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "SUPPORTING_FILE_INFO", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"@movedToPermanentArchive": false, 
+"files": {
+"file": []
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}
+]
+}, 
+"^ot:candidateTreeForSynthesis": [
+"tree1247"
+], 
+"^ot:comment": "", 
+"^ot:curatorName": [
+"Romina Gazis", 
+"rgazis"
+], 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S10262"
 }, 
@@ -52,6 +142,7 @@
 "^ot:messages": {
 "message": []
 }, 
+"^ot:notIntendedForSynthesis": false, 
 "^ot:otusElementOrder": [
 "otus694"
 ], 
@@ -61,7 +152,10 @@
 }, 
 "^ot:studyPublicationReference": "Zhang Y., Schoch C.L., Fournier J., Crous P., De gruyter J., Woudenberg J., Hirayama K., Tanaka K., Pointing S., Spatafora J., & Hyde K. 2009. Multi-locus phylogeny of Pleosporales: a taxonomic, ecological and evolutionary re-evaluation. Studies in Mycology, 64(1): 85-1025.", 
 "^ot:studyYear": 2009, 
-"^ot:tag": [], 
+"^ot:tag": [
+"multilocus", 
+"ML"
+], 
 "^ot:treesElementOrder": [
 "trees694"
 ], 
@@ -100,10 +194,14 @@
 }, 
 "otu186431": {
 "^ot:originalLabel": "Phoma radicina CBS 111 79", 
+"^ot:ottId": 253464, 
+"^ot:ottTaxonName": "Paraphoma radicina", 
 "^ot:treebaseOTUId": "Tl268222"
 }, 
 "otu186432": {
 "^ot:originalLabel": "Neottiosporina paspali CBS 331 37", 
+"^ot:ottId": 1079263, 
+"^ot:ottTaxonName": "Neottiosporina paspali", 
 "^ot:treebaseOTUId": "Tl268223"
 }, 
 "otu186433": {
@@ -120,6 +218,8 @@
 }, 
 "otu186435": {
 "^ot:originalLabel": "Thyridaria rubronotata CBS 419 85", 
+"^ot:ottId": 43683, 
+"^ot:ottTaxonName": "Thyridaria rubronotata", 
 "^ot:treebaseOTUId": "Tl268228"
 }, 
 "otu186436": {
@@ -226,6 +326,8 @@
 }, 
 "otu186453": {
 "^ot:originalLabel": "Monascostroma innumerosum CBS 345 50", 
+"^ot:ottId": 5319072, 
+"^ot:ottTaxonName": "Stagonospora innumerosa", 
 "^ot:treebaseOTUId": "Tl268295"
 }, 
 "otu186454": {
@@ -278,6 +380,8 @@
 }, 
 "otu186462": {
 "^ot:originalLabel": "Roussoellopsis sp MAFF 239638", 
+"^ot:ottId": 1095106, 
+"^ot:ottTaxonName": "Roussoellopsis", 
 "^ot:treebaseOTUId": "Tl268337"
 }, 
 "otu186463": {
@@ -294,6 +398,8 @@
 }, 
 "otu186465": {
 "^ot:originalLabel": "Chaetosphaeronema hispidulum CBS 216 75", 
+"^ot:ottId": 1049011, 
+"^ot:ottTaxonName": "Chaetosphaeronema hispidulum", 
 "^ot:treebaseOTUId": "Tl268347"
 }, 
 "otu186466": {
@@ -400,6 +506,8 @@
 }, 
 "otu186483": {
 "^ot:originalLabel": "Beverwykella pulmonaria CBS 283 53", 
+"^ot:ottId": 895429, 
+"^ot:ottTaxonName": "Beverwykella pulmonaria", 
 "^ot:treebaseOTUId": "Tl268395"
 }, 
 "otu186484": {
@@ -446,6 +554,8 @@
 }, 
 "otu186491": {
 "^ot:originalLabel": "Phaeosclera dematioides CBS 157 81", 
+"^ot:ottId": 887985, 
+"^ot:ottTaxonName": "Phaeosclera dematioides", 
 "^ot:treebaseOTUId": "Tl268418"
 }, 
 "otu186492": {
@@ -546,6 +656,8 @@
 }, 
 "otu186508": {
 "^ot:originalLabel": "Leptosphaeria dryadis CBS 643 86", 
+"^ot:ottId": 5319112, 
+"^ot:ottTaxonName": "Leptosphaeria dryadis", 
 "^ot:treebaseOTUId": "Tl268461"
 }, 
 "otu186509": {
@@ -598,6 +710,8 @@
 }, 
 "otu186517": {
 "^ot:originalLabel": "Phoma heteromorphospora CBS 115 96", 
+"^ot:ottId": 5311102, 
+"^ot:ottTaxonName": "Phoma heteromorphospora", 
 "^ot:treebaseOTUId": "Tl268500"
 }, 
 "otu186518": {
@@ -638,6 +752,8 @@
 }, 
 "otu186524": {
 "^ot:originalLabel": "Botryosphaeria tsugae CBS 418 64", 
+"^ot:ottId": 5311464, 
+"^ot:ottTaxonName": "Diplodia tsugae", 
 "^ot:treebaseOTUId": "Tl268523"
 }, 
 "otu186525": {
@@ -666,6 +782,8 @@
 }, 
 "otu186529": {
 "^ot:originalLabel": "Dothidea hippophaes CBS 188 58", 
+"^ot:ottId": 3717635, 
+"^ot:ottTaxonName": "Dothidea hippophaes", 
 "^ot:treebaseOTUId": "Tl268537"
 }, 
 "otu186530": {
@@ -682,6 +800,8 @@
 }, 
 "otu186532": {
 "^ot:originalLabel": "Lophiostoma crenatum CBS 629 86", 
+"^ot:ottId": 5485980, 
+"^ot:ottTaxonName": "Lophiostoma crenatum", 
 "^ot:treebaseOTUId": "Tl268551"
 }, 
 "otu186533": {
@@ -722,6 +842,8 @@
 }, 
 "otu186539": {
 "^ot:originalLabel": "Platychora ulmi CBS 361 52", 
+"^ot:ottId": 3742503, 
+"^ot:ottTaxonName": "Dothidella ulmi", 
 "^ot:treebaseOTUId": "Tl274351"
 }, 
 "otu186540": {
@@ -798,6 +920,8 @@
 }, 
 "otu186552": {
 "^ot:originalLabel": "Lophiostoma macrostomoides CBS 123097", 
+"^ot:ottId": 808975, 
+"^ot:ottTaxonName": "Thyridaria macrostomoides", 
 "^ot:treebaseOTUId": "Tl274364"
 }, 
 "otu186553": {
@@ -964,6 +1088,8 @@
 }, 
 "otu186580": {
 "^ot:originalLabel": "Torula herbarum CBS 379 58", 
+"^ot:ottId": 902112, 
+"^ot:ottTaxonName": "Torula herbarum", 
 "^ot:treebaseOTUId": "Tl274392"
 }, 
 "otu186581": {
@@ -1010,6 +1136,8 @@
 }, 
 "otu186588": {
 "^ot:originalLabel": "Herpotrichia juniperi CBS 200 31", 
+"^ot:ottId": 659817, 
+"^ot:ottTaxonName": "Herpotrichia pinetorum", 
 "^ot:treebaseOTUId": "Tl274400"
 }, 
 "otu186589": {
@@ -1071,16 +1199,20 @@
 ], 
 "treeById": {
 "tree1247": {
+"@label": "Figure 1 (tree1247)", 
 "@xsi:type": "nex:FloatTree", 
 "^ot:branchLengthDescription": "", 
-"^ot:branchLengthMode": "", 
-"^ot:branchLengthTimeUnit": "", 
+"^ot:branchLengthMode": "ot:undefined", 
+"^ot:branchLengthTimeUnit": "Myr", 
 "^ot:curatedType": "ML, SSU + LSU + RPB1 + RPB2 + EF-1", 
 "^ot:inGroupClade": "node429464", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
 "^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node429449", 
 "^ot:specifiedRoot": "", 
 "^ot:tag": [], 
+"^ot:unrootedTree": true, 
 "edgeBySourceId": {
 "node429449": {
 "edge429450": {

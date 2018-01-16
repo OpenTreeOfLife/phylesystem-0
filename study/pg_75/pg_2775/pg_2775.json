@@ -36,14 +36,92 @@
 }
 ]
 }
+}, 
+{
+"@description": "Web-based interface for submitting, editing, and reviewing studies in the Open Tree of Life project.", 
+"@id": "opentree-curation-webapp", 
+"@name": "OpenTree curation webapp", 
+"@url": "https://github.com/OpenTreeOfLife/opentree", 
+"@version": "0.0.0"
 }
 ]
 }, 
 "^ot:annotationEvents": {
-"annotation": []
+"annotation": [
+{
+"@dateCreated": "2014-07-27T18:54:27.806Z", 
+"@description": "Aids for mapping study OTUs to OTT taxa", 
+"@id": "otu-mapping-hints", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "OTU_MAPPING_HINTS", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"searchContext": {
+"$": "All life"
 }, 
-"^ot:candidateTreeForSynthesis": [], 
-"^ot:curatorName": "Dail Laughinghouse", 
+"substitutions": {
+"substitution": [
+{
+"@active": false, 
+"@valid": true, 
+"new": {
+"$": ""
+}, 
+"old": {
+"$": ""
+}
+}
+]
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}, 
+{
+"@dateCreated": "2014-07-27T18:54:27.806Z", 
+"@description": "Describes supporting data files for this study", 
+"@id": "supporting-files-metadata", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "SUPPORTING_FILE_INFO", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"@movedToPermanentArchive": false, 
+"files": {
+"file": []
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}
+]
+}, 
+"^ot:candidateTreeForSynthesis": [
+"tree6432"
+], 
+"^ot:comment": "", 
+"^ot:curatorName": [
+"Dail Laughinghouse"
+], 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S2071"
 }, 
@@ -52,11 +130,15 @@
 "^ot:messages": {
 "message": []
 }, 
+"^ot:notIntendedForSynthesis": false, 
 "^ot:otusElementOrder": [
 "otus2775"
 ], 
 "^ot:studyId": "pg_2775", 
-"^ot:studyPublicationReference": "Marshall W., Celio G., Mclaughlin D., & Berbee M. 2008. Multiple isolations of a culturable, motile Ichthyosporean (Mesomycetozoa, Opisthokonta), Creolimax fragrantissima n. gen., n. sp., from marine invertebrate digestive tracts. Protist, null.", 
+"^ot:studyPublication": {
+"@href": "http://dx.doi.org/10.1016/j.protis.2008.03.003"
+}, 
+"^ot:studyPublicationReference": "Wyth L. Marshall, Gail Celio, David J. McLaughlin, Mary L. Berbee, 2008, 'Multiple Isolations of a Culturable, Motile Ichthyosporean (Mesomycetozoa, Opisthokonta), Creolimax fragrantissima n. gen., n. sp., from Marine Invertebrate Digestive Tracts', Protist, vol. 159, no. 3, pp. 415-433", 
 "^ot:studyYear": 2008, 
 "^ot:tag": [], 
 "^ot:treesElementOrder": [
@@ -143,6 +225,8 @@
 }, 
 "otu412600": {
 "^ot:originalLabel": "Paramoebidium sp", 
+"^ot:ottId": 1008797, 
+"^ot:ottTaxonName": "Paramoebidium", 
 "^ot:treebaseOTUId": "Tl82247"
 }, 
 "otu412601": {
@@ -243,6 +327,8 @@
 }, 
 "otu412619": {
 "^ot:originalLabel": "Spizellomycete sp", 
+"^ot:ottId": 319494, 
+"^ot:ottTaxonName": "Spizellomyces", 
 "^ot:treebaseOTUId": "Tl82266"
 }, 
 "otu412620": {
@@ -265,6 +351,8 @@
 }, 
 "otu412623": {
 "^ot:originalLabel": "Enterobryus sp SPA10C6", 
+"^ot:ottId": 128772, 
+"^ot:ottTaxonName": "Enterobryus", 
 "^ot:treebaseOTUId": "Tl82270"
 }, 
 "otu412624": {
@@ -307,6 +395,8 @@
 }, 
 "otu412631": {
 "^ot:originalLabel": "Enterobryus sp MA11C1", 
+"^ot:ottId": 128772, 
+"^ot:ottTaxonName": "Enterobryus", 
 "^ot:treebaseOTUId": "Tl82278"
 }, 
 "otu412632": {
@@ -386,6 +476,7 @@
 "^ot:treebaseOTUId": "Tl82294"
 }, 
 "otu412648": {
+"^ot:altLabel": "Taeniellopsis", 
 "^ot:originalLabel": "Taeniellopsis sp", 
 "^ot:treebaseOTUId": "Tl82295"
 }, 
@@ -424,15 +515,18 @@
 ], 
 "treeById": {
 "tree6430": {
+"@label": "Untitled (tree6430)", 
 "@xsi:type": "nex:FloatTree", 
 "^ot:branchLengthDescription": "", 
 "^ot:branchLengthMode": "", 
 "^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "Fig. 2 - 1.1", 
+"^ot:inGroupClade": "", 
 "^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node1116422", 
 "^ot:specifiedRoot": "", 
 "^ot:tag": [], 
+"^ot:unrootedTree": true, 
 "edgeBySourceId": {
 "node1116422": {
 "edge1116423": {
@@ -1053,15 +1147,18 @@
 }
 }, 
 "tree6431": {
+"@label": "Untitled (tree6431)", 
 "@xsi:type": "nex:FloatTree", 
 "^ot:branchLengthDescription": "", 
 "^ot:branchLengthMode": "", 
 "^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "Fig. 2 - 2", 
+"^ot:inGroupClade": "", 
 "^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node1116510", 
 "^ot:specifiedRoot": "", 
 "^ot:tag": [], 
+"^ot:unrootedTree": true, 
 "edgeBySourceId": {
 "node1116510": {
 "edge1116511": {
@@ -1689,15 +1786,17 @@
 }
 }, 
 "tree6432": {
+"@label": "Untitled (tree6432)", 
 "@xsi:type": "nex:FloatTree", 
 "^ot:branchLengthDescription": "", 
-"^ot:branchLengthMode": "", 
 "^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "Fig. 1", 
+"^ot:inGroupClade": "node1116601", 
 "^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node1116599", 
-"^ot:specifiedRoot": "", 
+"^ot:specifiedRoot": "node1116599", 
 "^ot:tag": [], 
+"^ot:unrootedTree": false, 
 "edgeBySourceId": {
 "node1116599": {
 "edge1116600": {
@@ -2229,17 +2328,21 @@
 "@otu": "otu412615"
 }, 
 "node1116646": {
-"@otu": "otu412631"
+"@otu": "otu412631", 
+"^ot:isTaxonExemplar": true
 }, 
 "node1116647": {
-"@otu": "otu412623"
+"@otu": "otu412623", 
+"^ot:isTaxonExemplar": false
 }, 
 "node1116648": {}, 
 "node1116649": {
-"@otu": "otu412602"
+"@otu": "otu412602", 
+"^ot:isTaxonExemplar": true
 }, 
 "node1116650": {
-"@otu": "otu412621"
+"@otu": "otu412621", 
+"^ot:isTaxonExemplar": false
 }, 
 "node1116651": {}, 
 "node1116652": {

@@ -15,16 +15,13 @@
 "^ot:agents": {
 "agent": [
 {
-"@description": "validator of NexSON constraints as well as constraints that would allow a study to be imported into the Open Tree of Life's phylogenetic synthesis tools", 
+"@description": "Open Tree NexSON validation", 
 "@id": "peyotl-validator", 
-"@name": "validate_ot_nexson.py", 
+"@name": "api.opentreeoflife.org/validate", 
 "@url": "https://github.com/OpenTreeOfLife/peyotl", 
 "@version": "0.0.4a", 
 "invocation": {
-"commandLine": [
-"--embed", 
-"--agent-only"
-], 
+"commandLine": [], 
 "otherProperty": [
 {
 "name": "pythonVersion", 
@@ -36,22 +33,101 @@
 }
 ]
 }
+}, 
+{
+"@description": "Web-based interface for submitting, editing, and reviewing studies in the Open Tree of Life project.", 
+"@id": "opentree-curation-webapp", 
+"@name": "OpenTree curation webapp", 
+"@url": "https://github.com/OpenTreeOfLife/opentree", 
+"@version": "0.0.0"
 }
 ]
 }, 
 "^ot:annotationEvents": {
-"annotation": []
+"annotation": [
+{
+"@dateCreated": "2014-07-26T00:48:21.416Z", 
+"@description": "Aids for mapping study OTUs to OTT taxa", 
+"@id": "otu-mapping-hints", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "OTU_MAPPING_HINTS", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"searchContext": {
+"$": "All life"
 }, 
-"^ot:candidateTreeForSynthesis": [], 
-"^ot:curatorName": "Dail Laughinghouse", 
+"substitutions": {
+"substitution": [
+{
+"@active": false, 
+"@valid": true, 
+"new": {
+"$": ""
+}, 
+"old": {
+"$": ""
+}
+}
+]
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}, 
+{
+"@dateCreated": "2014-07-26T00:48:21.416Z", 
+"@description": "Describes supporting data files for this study", 
+"@id": "supporting-files-metadata", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "SUPPORTING_FILE_INFO", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"@movedToPermanentArchive": false, 
+"files": {
+"file": []
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}
+]
+}, 
+"^ot:candidateTreeForSynthesis": [
+"tree6343"
+], 
+"^ot:comment": "", 
+"^ot:curatorName": [
+"Dail Laughinghouse"
+], 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S1086"
 }, 
-"^ot:focalClade": 621380, 
-"^ot:focalCladeOTTTaxonName": "Dinophyceae", 
+"^ot:focalClade": 668221, 
+"^ot:focalCladeOTTTaxonName": "Karenia (genus in family Kareniaceae)", 
 "^ot:messages": {
 "message": []
 }, 
+"^ot:notIntendedForSynthesis": false, 
 "^ot:otusElementOrder": [
 "otus2744"
 ], 
@@ -59,8 +135,8 @@
 "^ot:studyPublication": {
 "@href": "http://dx.doi.org/10.1111/j.0022-3646.2004.02-149.x"
 }, 
-"^ot:studyPublicationReference": "Haywood, A., Steidinger K., Truby E., Bergquist P., Bergquist P., Adamson J., & Mackenzie L. 2003. Comparative morphology and molecular phylogenetic analyses of three new species of the genus Karenia (Dinophyceae) from New Zealand. Journal of Phycology 40 (1): 165-179.", 
-"^ot:studyYear": 2003, 
+"^ot:studyPublicationReference": "Allison J. Haywood, Karen A. Steidinger, Earnest W. Truby, Patricia R. Bergquist, Peter L. Bergquist, Janet Adamson, Lincoln Mackenzie, 2004, 'COMPARATIVE MORPHOLOGY AND MOLECULAR PHYLOGENETIC ANALYSIS OF THREE NEW SPECIES OF THE GENUS KARENIA (DINOPHYCEAE) FROM NEW ZEALAND1', Journal of Phycology, vol. 40, no. 1, pp. 165-179", 
+"^ot:studyYear": 2004, 
 "^ot:tag": [], 
 "^ot:treesElementOrder": [
 "trees2744"
@@ -177,16 +253,17 @@
 ], 
 "treeById": {
 "tree6343": {
+"@label": "Untitled (tree6343)", 
 "@xsi:type": "nex:FloatTree", 
 "^ot:branchLengthDescription": "", 
-"^ot:branchLengthMode": "ot:substitutionCount", 
 "^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "Fig. 7", 
 "^ot:inGroupClade": "node1105046", 
 "^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node1105045", 
-"^ot:specifiedRoot": "", 
+"^ot:specifiedRoot": "node1105045", 
 "^ot:tag": [], 
+"^ot:unrootedTree": false, 
 "edgeBySourceId": {
 "node1105045": {
 "edge1105046": {
@@ -336,22 +413,28 @@
 "node1105050": {}, 
 "node1105051": {}, 
 "node1105052": {
-"@otu": "otu409728"
+"@otu": "otu409728", 
+"^ot:isTaxonExemplar": true
 }, 
 "node1105053": {
-"@otu": "otu409741"
+"@otu": "otu409741", 
+"^ot:isTaxonExemplar": false
 }, 
 "node1105054": {
-"@otu": "otu409734"
+"@otu": "otu409734", 
+"^ot:isTaxonExemplar": false
 }, 
 "node1105055": {
-"@otu": "otu409739"
+"@otu": "otu409739", 
+"^ot:isTaxonExemplar": false
 }, 
 "node1105056": {
-"@otu": "otu409731"
+"@otu": "otu409731", 
+"^ot:isTaxonExemplar": false
 }, 
 "node1105057": {
-"@otu": "otu409737"
+"@otu": "otu409737", 
+"^ot:isTaxonExemplar": false
 }, 
 "node1105058": {}, 
 "node1105059": {

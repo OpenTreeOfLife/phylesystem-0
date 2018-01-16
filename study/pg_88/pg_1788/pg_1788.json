@@ -33,18 +33,100 @@
 }
 ]
 }
+}, 
+{
+"@description": "Web-based interface for submitting, editing, and reviewing studies in the Open Tree of Life project.", 
+"@id": "opentree-curation-webapp", 
+"@name": "OpenTree curation webapp", 
+"@url": "https://github.com/OpenTreeOfLife/opentree", 
+"@version": "0.0.0"
 }
 ]
 }, 
 "^ot:annotationEvents": {
-"annotation": []
+"annotation": [
+{
+"@dateCreated": "2016-10-21T21:18:48.105Z", 
+"@description": "Aids for mapping study OTUs to OTT taxa", 
+"@id": "otu-mapping-hints", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "OTU_MAPPING_HINTS", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"searchContext": {
+"$": "Cnidarians"
 }, 
-"^ot:curatorName": "Chris Owen", 
+"substitutions": {
+"substitution": [
+{
+"@active": false, 
+"@valid": true, 
+"new": {
+"$": ""
+}, 
+"old": {
+"$": ""
+}
+}
+]
+}, 
+"useFuzzyMatching": false
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}, 
+{
+"@dateCreated": "2016-10-21T21:18:48.105Z", 
+"@description": "Describes supporting data files for this study", 
+"@id": "supporting-files-metadata", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "SUPPORTING_FILE_INFO", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"@movedToPermanentArchive": false, 
+"files": {
+"file": []
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}
+]
+}, 
+"^ot:candidateTreeForSynthesis": [
+"tree6534"
+], 
+"^ot:comment": "", 
+"^ot:curatorName": [
+"Chris Owen", 
+"Tesserazoa"
+], 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S9968"
 }, 
 "^ot:focalClade": 5005171, 
 "^ot:focalCladeOTTTaxonName": "Siphonophora", 
+"^ot:notIntendedForSynthesis": false, 
 "^ot:otusElementOrder": [
 "otus1788"
 ], 
@@ -54,6 +136,7 @@
 }, 
 "^ot:studyPublicationReference": "Dunn, C., Pugh P., & Haddock S. 2005. Molecular phylogenetics of the Siphonophora (Cnidaria), with implications for the evolution of functional specialization. Systematic Biology 54 (6): 916-935.", 
 "^ot:studyYear": 2005, 
+"^ot:tag": [], 
 "^ot:treesElementOrder": [
 "trees1788"
 ], 
@@ -411,9 +494,20 @@
 ], 
 "treeById": {
 "tree3608": {
+"@label": "Untitled (tree3608)", 
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "Fig. 5a ML 16S", 
+"^ot:inGroupClade": "", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node692895", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
+"^ot:unrootedTree": true, 
 "edgeBySourceId": {
 "node692895": {
 "edge692896": {
@@ -1181,10 +1275,20 @@
 }
 }, 
 "tree3609": {
+"@label": "Untitled (tree3609)", 
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
 "^ot:branchLengthMode": "ot:substitutionCount", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "Fig. 5b ML 18S", 
+"^ot:inGroupClade": "", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node693004", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
+"^ot:unrootedTree": true, 
 "edgeBySourceId": {
 "node693004": {
 "edge693005": {
@@ -1840,29 +1944,35 @@
 }
 }, 
 "tree3610": {
+"@label": "Untitled (tree3610)", 
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
 "^ot:branchLengthMode": "ot:posteriorSupport", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "Fig. 6 BI 16S and 18S", 
-"^ot:rootNodeId": "node693097", 
+"^ot:inGroupClade": "node693129", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
+"^ot:outGroupEdge": "", 
+"^ot:rootNodeId": "node693130", 
+"^ot:specifiedRoot": "node693130", 
+"^ot:tag": [], 
+"^ot:unrootedTree": false, 
 "edgeBySourceId": {
 "node693097": {
 "edge693098": {
 "@source": "node693097", 
 "@target": "node693098"
-}, 
-"edge693099": {
-"@source": "node693097", 
-"@target": "node693099"
 }
 }, 
 "node693099": {
+"edge693099": {
+"@source": "node693099", 
+"@target": "node693097"
+}, 
 "edge693100": {
 "@source": "node693099", 
 "@target": "node693100"
-}, 
-"edge693109": {
-"@source": "node693099", 
-"@target": "node693109"
 }
 }, 
 "node693100": {
@@ -1906,13 +2016,13 @@
 }
 }, 
 "node693109": {
+"edge693109": {
+"@source": "node693109", 
+"@target": "node693099"
+}, 
 "edge693110": {
 "@source": "node693109", 
 "@target": "node693110"
-}, 
-"edge693115": {
-"@source": "node693109", 
-"@target": "node693115"
 }
 }, 
 "node693110": {
@@ -1936,13 +2046,13 @@
 }
 }, 
 "node693115": {
+"edge693115": {
+"@source": "node693115", 
+"@target": "node693109"
+}, 
 "edge693116": {
 "@source": "node693115", 
 "@target": "node693116"
-}, 
-"edge693119": {
-"@source": "node693115", 
-"@target": "node693119"
 }
 }, 
 "node693116": {
@@ -1956,9 +2066,9 @@
 }
 }, 
 "node693119": {
-"edge693120": {
+"edge693119": {
 "@source": "node693119", 
-"@target": "node693120"
+"@target": "node693115"
 }, 
 "edge693189": {
 "@source": "node693119", 
@@ -1966,9 +2076,9 @@
 }
 }, 
 "node693120": {
-"edge693121": {
+"edge693120": {
 "@source": "node693120", 
-"@target": "node693121"
+"@target": "node693119"
 }, 
 "edge693142": {
 "@source": "node693120", 
@@ -1996,13 +2106,13 @@
 }
 }, 
 "node693121": {
+"edge693121": {
+"@source": "node693121", 
+"@target": "node693120"
+}, 
 "edge693122": {
 "@source": "node693121", 
 "@target": "node693122"
-}, 
-"edge693129": {
-"@source": "node693121", 
-"@target": "node693129"
 }
 }, 
 "node693122": {
@@ -2036,9 +2146,9 @@
 }
 }, 
 "node693129": {
-"edge693130": {
+"edge693129": {
 "@source": "node693129", 
-"@target": "node693130"
+"@target": "node693121"
 }, 
 "edge693137": {
 "@source": "node693129", 
@@ -2046,6 +2156,10 @@
 }
 }, 
 "node693130": {
+"edge693130": {
+"@source": "node693130", 
+"@target": "node693129"
+}, 
 "edge693131": {
 "@source": "node693130", 
 "@target": "node693131"
@@ -2361,9 +2475,7 @@
 }
 }, 
 "nodeById": {
-"node693097": {
-"@root": true
-}, 
+"node693097": {}, 
 "node693098": {
 "@otu": "otu278484"
 }, 
@@ -2426,7 +2538,9 @@
 "@otu": "otu278480"
 }, 
 "node693129": {}, 
-"node693130": {}, 
+"node693130": {
+"@root": true
+}, 
 "node693131": {}, 
 "node693132": {
 "@otu": "otu278448"
@@ -2583,10 +2697,20 @@
 }
 }, 
 "tree5637": {
+"@label": "Untitled (tree5637)", 
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "Fig. 5a ML 16S", 
 "^ot:inGroupClade": "node972445", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node972444", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
+"^ot:unrootedTree": true, 
 "edgeBySourceId": {
 "node972444": {
 "edge972445": {
@@ -3003,7 +3127,7 @@
 "@target": "node972523"
 }, 
 "edge972532": {
-"@length": 2.0, 
+"@length": 2, 
 "@source": "node972522", 
 "@target": "node972532"
 }
@@ -3356,9 +3480,20 @@
 }
 }, 
 "tree5638": {
+"@label": "Untitled (tree5638)", 
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "Fig. 5b ML 18S", 
+"^ot:inGroupClade": "", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node972553", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
+"^ot:unrootedTree": true, 
 "edgeBySourceId": {
 "node972553": {
 "edge972554": {
@@ -3473,7 +3608,7 @@
 "@target": "node972569"
 }, 
 "edge972570": {
-"@length": 2.0, 
+"@length": 2, 
 "@source": "node972562", 
 "@target": "node972570"
 }
@@ -4016,10 +4151,20 @@
 }
 }, 
 "tree5639": {
+"@label": "Untitled (tree5639)", 
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "Fig. 5b ML 18S", 
 "^ot:inGroupClade": "node972647", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node972646", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
+"^ot:unrootedTree": true, 
 "edgeBySourceId": {
 "node972646": {
 "edge972647": {
@@ -4144,7 +4289,7 @@
 "@target": "node972663"
 }, 
 "edge972664": {
-"@length": 2.0, 
+"@length": 2, 
 "@source": "node972656", 
 "@target": "node972664"
 }
@@ -4677,19 +4822,24 @@
 }
 }, 
 "tree6534": {
+"@label": "Untitled (tree6534)", 
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "ot:undefined", 
 "^ot:curatedType": "Fig. 6 Bayesian consensus (16S + 18S)", 
-"^ot:inGroupClade": "node1133290", 
-"^ot:rootNodeId": "node1133289", 
+"^ot:inGroupClade": "node1133387", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
+"^ot:outGroupEdge": "", 
+"^ot:rootNodeId": "tree6534_ROOT", 
+"^ot:specifiedRoot": "tree6534_ROOT", 
+"^ot:tag": [], 
+"^ot:unrootedTree": false, 
 "edgeBySourceId": {
 "node1133289": {
 "edge1133290": {
 "@source": "node1133289", 
 "@target": "node1133290"
-}, 
-"edge1133387": {
-"@source": "node1133289", 
-"@target": "node1133387"
 }
 }, 
 "node1133290": {
@@ -5167,13 +5317,13 @@
 }
 }, 
 "node1133387": {
+"edge1133387": {
+"@source": "node1133387", 
+"@target": "node1133289"
+}, 
 "edge1133388": {
 "@source": "node1133387", 
 "@target": "node1133388"
-}, 
-"edge1133393": {
-"@source": "node1133387", 
-"@target": "node1133393"
 }
 }, 
 "node1133388": {
@@ -5195,12 +5345,20 @@
 "@source": "node1133389", 
 "@target": "node1133391"
 }
+}, 
+"tree6534_ROOT": {
+"edge1133393": {
+"@source": "tree6534_ROOT", 
+"@target": "node1133393"
+}, 
+"tree6534_ROOT_EDGE": {
+"@source": "tree6534_ROOT", 
+"@target": "node1133387"
+}
 }
 }, 
 "nodeById": {
-"node1133289": {
-"@root": true
-}, 
+"node1133289": {}, 
 "node1133290": {}, 
 "node1133291": {}, 
 "node1133292": {}, 
@@ -5214,10 +5372,12 @@
 "node1133300": {}, 
 "node1133301": {}, 
 "node1133302": {
-"@otu": "otu278458"
+"@otu": "otu278458", 
+"^ot:isTaxonExemplar": true
 }, 
 "node1133303": {
-"@otu": "otu278456"
+"@otu": "otu278456", 
+"^ot:isTaxonExemplar": false
 }, 
 "node1133304": {
 "@otu": "otu278451"
@@ -5254,10 +5414,12 @@
 "node1133318": {}, 
 "node1133319": {}, 
 "node1133320": {
-"@otu": "otu278476"
+"@otu": "otu278476", 
+"^ot:isTaxonExemplar": true
 }, 
 "node1133321": {
-"@otu": "otu278477"
+"@otu": "otu278477", 
+"^ot:isTaxonExemplar": false
 }, 
 "node1133322": {
 "@otu": "otu278462"
@@ -5294,20 +5456,24 @@
 "node1133338": {}, 
 "node1133339": {}, 
 "node1133340": {
-"@otu": "otu278449"
+"@otu": "otu278449", 
+"^ot:isTaxonExemplar": true
 }, 
 "node1133341": {
-"@otu": "otu278490"
+"@otu": "otu278490", 
+"^ot:isTaxonExemplar": false
 }, 
 "node1133342": {
 "@otu": "otu278486"
 }, 
 "node1133343": {}, 
 "node1133344": {
-"@otu": "otu278457"
+"@otu": "otu278457", 
+"^ot:isTaxonExemplar": true
 }, 
 "node1133345": {
-"@otu": "otu278481"
+"@otu": "otu278481", 
+"^ot:isTaxonExemplar": false
 }, 
 "node1133346": {
 "@otu": "otu278484"
@@ -5315,20 +5481,25 @@
 "node1133347": {}, 
 "node1133348": {}, 
 "node1133349": {
-"@otu": "otu278479"
+"@otu": "otu278479", 
+"^ot:isTaxonExemplar": true
 }, 
 "node1133350": {
-"@otu": "otu278487"
+"@otu": "otu278487", 
+"^ot:isTaxonExemplar": false
 }, 
 "node1133351": {
-"@otu": "otu278489"
+"@otu": "otu278489", 
+"^ot:isTaxonExemplar": false
 }, 
 "node1133352": {}, 
 "node1133353": {
-"@otu": "otu278474"
+"@otu": "otu278474", 
+"^ot:isTaxonExemplar": true
 }, 
 "node1133354": {
-"@otu": "otu278501"
+"@otu": "otu278501", 
+"^ot:isTaxonExemplar": false
 }, 
 "node1133355": {}, 
 "node1133356": {}, 
@@ -5336,13 +5507,16 @@
 "node1133358": {}, 
 "node1133359": {}, 
 "node1133360": {
-"@otu": "otu278450"
+"@otu": "otu278450", 
+"^ot:isTaxonExemplar": true
 }, 
 "node1133361": {
-"@otu": "otu278495"
+"@otu": "otu278495", 
+"^ot:isTaxonExemplar": false
 }, 
 "node1133362": {
-"@otu": "otu278468"
+"@otu": "otu278468", 
+"^ot:isTaxonExemplar": false
 }, 
 "node1133363": {}, 
 "node1133364": {
@@ -5416,6 +5590,9 @@
 }, 
 "node1133393": {
 "@otu": "otu278485"
+}, 
+"tree6534_ROOT": {
+"@root": true
 }
 }
 }

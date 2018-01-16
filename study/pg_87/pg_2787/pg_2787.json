@@ -15,16 +15,13 @@
 "^ot:agents": {
 "agent": [
 {
-"@description": "validator of NexSON constraints as well as constraints that would allow a study to be imported into the Open Tree of Life's phylogenetic synthesis tools", 
+"@description": "Open Tree NexSON validation", 
 "@id": "peyotl-validator", 
-"@name": "validate_ot_nexson.py", 
+"@name": "api.opentreeoflife.org/validate", 
 "@url": "https://github.com/OpenTreeOfLife/peyotl", 
 "@version": "0.0.4a", 
 "invocation": {
-"commandLine": [
-"--embed", 
-"--agent-only"
-], 
+"commandLine": [], 
 "otherProperty": [
 {
 "name": "pythonVersion", 
@@ -36,14 +33,92 @@
 }
 ]
 }
+}, 
+{
+"@description": "Web-based interface for submitting, editing, and reviewing studies in the Open Tree of Life project.", 
+"@id": "opentree-curation-webapp", 
+"@name": "OpenTree curation webapp", 
+"@url": "https://github.com/OpenTreeOfLife/opentree", 
+"@version": "0.0.0"
 }
 ]
 }, 
 "^ot:annotationEvents": {
-"annotation": []
+"annotation": [
+{
+"@dateCreated": "2014-07-18T20:54:31.286Z", 
+"@description": "Aids for mapping study OTUs to OTT taxa", 
+"@id": "otu-mapping-hints", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "OTU_MAPPING_HINTS", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"searchContext": {
+"$": "All life"
 }, 
-"^ot:candidateTreeForSynthesis": [], 
-"^ot:curatorName": "Dail Laughinghouse", 
+"substitutions": {
+"substitution": [
+{
+"@active": false, 
+"@valid": true, 
+"new": {
+"$": ""
+}, 
+"old": {
+"$": ""
+}
+}
+]
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}, 
+{
+"@dateCreated": "2014-07-18T20:54:31.286Z", 
+"@description": "Describes supporting data files for this study", 
+"@id": "supporting-files-metadata", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "SUPPORTING_FILE_INFO", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"@movedToPermanentArchive": false, 
+"files": {
+"file": []
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}
+]
+}, 
+"^ot:candidateTreeForSynthesis": [
+"tree6704"
+], 
+"^ot:comment": "", 
+"^ot:curatorName": [
+"Dail Laughinghouse"
+], 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S14407"
 }, 
@@ -52,12 +127,16 @@
 "^ot:messages": {
 "message": []
 }, 
+"^ot:notIntendedForSynthesis": false, 
 "^ot:otusElementOrder": [
 "otus2787"
 ], 
 "^ot:studyId": "pg_2787", 
-"^ot:studyPublicationReference": "Fory P., Triplett L.R., Ballen C., Duitama J., Aricapa M., Abello J., Prado G., Correa F., Hamilton J., Leach J., Tohme J., & Mosquera G. 2013. Comparative analysis of two emerging rice seed pathogens. Phytopathology, .", 
-"^ot:studyYear": 2013, 
+"^ot:studyPublication": {
+"@href": "http://dx.doi.org/10.1094/phyto-07-13-0186-r"
+}, 
+"^ot:studyPublicationReference": "P. A. Fory, L. Triplett, C. Ballen, J. F. Abello, J. Duitama, M. G. Aricapa, G. A. Prado, F. Correa, J. Hamilton, J. E. Leach, J. Tohme, G. M. Mosquera, 2014, 'Comparative Analysis of Two Emerging Rice Seed Bacterial Pathogens', Phytopathology, vol. 104, no. 5, pp. 436-444", 
+"^ot:studyYear": 2014, 
 "^ot:tag": [], 
 "^ot:treesElementOrder": [
 "trees2787"
@@ -174,9 +253,8 @@
 "^ot:treebaseOTUId": "Tl1294545"
 }, 
 "otu413623": {
+"^ot:altLabel": "Ralstonia eutroph", 
 "^ot:originalLabel": "Ralstonia eutropha YP 841946", 
-"^ot:ottId": 443680, 
-"^ot:ottTaxonName": "Ralstonia eutropha H850", 
 "^ot:treebaseOTUId": "Tl1294546"
 }, 
 "otu413624": {
@@ -298,16 +376,18 @@
 ], 
 "treeById": {
 "tree6704": {
+"@label": "Untitled (tree6704)", 
 "@xsi:type": "nex:FloatTree", 
 "^ot:branchLengthDescription": "", 
-"^ot:branchLengthMode": "", 
+"^ot:branchLengthMode": "ot:substitutionCount", 
 "^ot:branchLengthTimeUnit": "", 
-"^ot:curatedType": "rooted BA", 
+"^ot:curatedType": "Bayesian inference ", 
 "^ot:inGroupClade": "node1167110", 
 "^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node1167108", 
-"^ot:specifiedRoot": "", 
+"^ot:specifiedRoot": "node1167108", 
 "^ot:tag": [], 
+"^ot:unrootedTree": false, 
 "edgeBySourceId": {
 "node1167108": {
 "edge1167109": {
@@ -725,30 +805,37 @@
 "node1167110": {}, 
 "node1167111": {}, 
 "node1167112": {
-"@otu": "otu413619"
+"@otu": "otu413619", 
+"^ot:isTaxonExemplar": false
 }, 
 "node1167113": {
-"@otu": "otu413640"
+"@otu": "otu413640", 
+"^ot:isTaxonExemplar": false
 }, 
 "node1167114": {}, 
 "node1167115": {}, 
 "node1167116": {
-"@otu": "otu413630"
+"@otu": "otu413630", 
+"^ot:isTaxonExemplar": false
 }, 
 "node1167117": {}, 
 "node1167118": {
-"@otu": "otu413617"
+"@otu": "otu413617", 
+"^ot:isTaxonExemplar": true
 }, 
 "node1167119": {}, 
 "node1167120": {
-"@otu": "otu413636"
+"@otu": "otu413636", 
+"^ot:isTaxonExemplar": false
 }, 
 "node1167121": {}, 
 "node1167122": {
-"@otu": "otu413606"
+"@otu": "otu413606", 
+"^ot:isTaxonExemplar": false
 }, 
 "node1167123": {
-"@otu": "otu413629"
+"@otu": "otu413629", 
+"^ot:isTaxonExemplar": false
 }, 
 "node1167124": {}, 
 "node1167125": {
@@ -762,73 +849,91 @@
 }, 
 "node1167130": {}, 
 "node1167131": {
-"@otu": "otu413612"
+"@otu": "otu413612", 
+"^ot:isTaxonExemplar": false
 }, 
 "node1167132": {}, 
 "node1167133": {
-"@otu": "otu413616"
+"@otu": "otu413616", 
+"^ot:isTaxonExemplar": false
 }, 
 "node1167134": {}, 
 "node1167135": {
-"@otu": "otu413611"
+"@otu": "otu413611", 
+"^ot:isTaxonExemplar": false
 }, 
 "node1167136": {
-"@otu": "otu413621"
+"@otu": "otu413621", 
+"^ot:isTaxonExemplar": false
 }, 
 "node1167137": {}, 
 "node1167138": {}, 
 "node1167139": {
-"@otu": "otu413607"
+"@otu": "otu413607", 
+"^ot:isTaxonExemplar": false
 }, 
 "node1167140": {
-"@otu": "otu413625"
+"@otu": "otu413625", 
+"^ot:isTaxonExemplar": false
 }, 
 "node1167141": {}, 
 "node1167142": {}, 
 "node1167143": {
-"@otu": "otu413633"
+"@otu": "otu413633", 
+"^ot:isTaxonExemplar": false
 }, 
 "node1167144": {
-"@otu": "otu413634"
+"@otu": "otu413634", 
+"^ot:isTaxonExemplar": false
 }, 
 "node1167145": {}, 
 "node1167146": {
-"@otu": "otu413609"
+"@otu": "otu413609", 
+"^ot:isTaxonExemplar": false
 }, 
 "node1167147": {}, 
 "node1167148": {
-"@otu": "otu413639"
+"@otu": "otu413639", 
+"^ot:isTaxonExemplar": false
 }, 
 "node1167149": {}, 
 "node1167150": {
-"@otu": "otu413618"
+"@otu": "otu413618", 
+"^ot:isTaxonExemplar": false
 }, 
 "node1167151": {
-"@otu": "otu413620"
+"@otu": "otu413620", 
+"^ot:isTaxonExemplar": false
 }, 
 "node1167152": {}, 
 "node1167153": {}, 
 "node1167154": {
-"@otu": "otu413613"
+"@otu": "otu413613", 
+"^ot:isTaxonExemplar": false
 }, 
 "node1167155": {
-"@otu": "otu413614"
+"@otu": "otu413614", 
+"^ot:isTaxonExemplar": false
 }, 
 "node1167156": {}, 
 "node1167157": {}, 
 "node1167158": {}, 
 "node1167159": {
-"@otu": "otu413638"
+"@otu": "otu413638", 
+"^ot:isTaxonExemplar": true
 }, 
 "node1167160": {
-"@otu": "otu413610"
+"@otu": "otu413610", 
+"^ot:isTaxonExemplar": false
 }, 
 "node1167161": {}, 
 "node1167162": {
-"@otu": "otu413641"
+"@otu": "otu413641", 
+"^ot:isTaxonExemplar": false
 }, 
 "node1167163": {
-"@otu": "otu413631"
+"@otu": "otu413631", 
+"^ot:isTaxonExemplar": true
 }, 
 "node1167164": {}, 
 "node1167165": {}, 
@@ -837,33 +942,41 @@
 }, 
 "node1167167": {}, 
 "node1167168": {
-"@otu": "otu413626"
+"@otu": "otu413626", 
+"^ot:isTaxonExemplar": false
 }, 
 "node1167169": {
-"@otu": "otu413605"
+"@otu": "otu413605", 
+"^ot:isTaxonExemplar": false
 }, 
 "node1167170": {}, 
 "node1167171": {}, 
 "node1167172": {
-"@otu": "otu413628"
+"@otu": "otu413628", 
+"^ot:isTaxonExemplar": false
 }, 
 "node1167173": {
-"@otu": "otu413627"
+"@otu": "otu413627", 
+"^ot:isTaxonExemplar": true
 }, 
 "node1167174": {}, 
 "node1167175": {
-"@otu": "otu413637"
+"@otu": "otu413637", 
+"^ot:isTaxonExemplar": false
 }, 
 "node1167176": {}, 
 "node1167177": {
-"@otu": "otu413615"
+"@otu": "otu413615", 
+"^ot:isTaxonExemplar": false
 }, 
 "node1167178": {}, 
 "node1167179": {
-"@otu": "otu413632"
+"@otu": "otu413632", 
+"^ot:isTaxonExemplar": false
 }, 
 "node1167180": {
-"@otu": "otu413608"
+"@otu": "otu413608", 
+"^ot:isTaxonExemplar": false
 }
 }
 }

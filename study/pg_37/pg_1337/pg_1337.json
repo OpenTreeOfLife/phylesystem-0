@@ -36,14 +36,93 @@
 }
 ]
 }
+}, 
+{
+"@description": "Web-based interface for submitting, editing, and reviewing studies in the Open Tree of Life project.", 
+"@id": "opentree-curation-webapp", 
+"@name": "OpenTree curation webapp", 
+"@url": "https://github.com/OpenTreeOfLife/opentree", 
+"@version": "0.0.0"
 }
 ]
 }, 
 "^ot:annotationEvents": {
-"annotation": []
+"annotation": [
+{
+"@dateCreated": "2014-08-18T18:08:53.618Z", 
+"@description": "Aids for mapping study OTUs to OTT taxa", 
+"@id": "otu-mapping-hints", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "OTU_MAPPING_HINTS", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"searchContext": {
+"$": "Insects"
 }, 
-"^ot:candidateTreeForSynthesis": [], 
-"^ot:curatorName": "Chris Owen", 
+"substitutions": {
+"substitution": [
+{
+"@active": false, 
+"@valid": true, 
+"new": {
+"$": ""
+}, 
+"old": {
+"$": ""
+}
+}
+]
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}, 
+{
+"@dateCreated": "2014-08-18T18:08:53.618Z", 
+"@description": "Describes supporting data files for this study", 
+"@id": "supporting-files-metadata", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "SUPPORTING_FILE_INFO", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"@movedToPermanentArchive": false, 
+"files": {
+"file": []
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}
+]
+}, 
+"^ot:candidateTreeForSynthesis": [
+"tree6167"
+], 
+"^ot:comment": "", 
+"^ot:curatorName": [
+"Chris Owen", 
+"Joseph W. Brown"
+], 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S10107"
 }, 
@@ -52,6 +131,7 @@
 "^ot:messages": {
 "message": []
 }, 
+"^ot:notIntendedForSynthesis": false, 
 "^ot:otusElementOrder": [
 "otus1337"
 ], 
@@ -74,7 +154,9 @@
 "^ot:ottTaxonName": "Mengenilla sp. BMW-2009"
 }, 
 "otu243519": {
-"^ot:originalLabel": "Halictophagidae sp"
+"^ot:originalLabel": "Halictophagidae sp", 
+"^ot:ottId": 812941, 
+"^ot:ottTaxonName": "Halictophagidae"
 }, 
 "otu243520": {
 "^ot:originalLabel": "Tribolium castaneum", 
@@ -137,7 +219,9 @@
 "^ot:ottTaxonName": "Boreus brumalis"
 }, 
 "otu243532": {
-"^ot:originalLabel": "Autralobittacus sp"
+"^ot:originalLabel": "Autralobittacus sp", 
+"^ot:ottId": 3429339, 
+"^ot:ottTaxonName": "Anomalobittacus"
 }, 
 "otu243533": {
 "^ot:originalLabel": "Ctenocephalides felis", 
@@ -216,490 +300,23 @@
 "trees1337": {
 "@otus": "otus1337", 
 "^ot:treeElementOrder": [
-"tree2662", 
 "tree6167"
 ], 
 "treeById": {
-"tree2662": {
-"@xsi:type": "nex:FloatTree", 
-"^ot:branchLengthDescription": "", 
-"^ot:branchLengthMode": "", 
-"^ot:branchLengthTimeUnit": "", 
-"^ot:curatedType": "delete", 
-"^ot:inGroupClade": "node590966", 
-"^ot:outGroupEdge": "", 
-"^ot:rootNodeId": "node590964", 
-"^ot:specifiedRoot": "", 
-"^ot:tag": [], 
-"edgeBySourceId": {
-"node590964": {
-"edge590965": {
-"@length": 1.0, 
-"@source": "node590964", 
-"@target": "node590965"
-}, 
-"edge591020": {
-"@length": 11.0, 
-"@source": "node590964", 
-"@target": "node591020"
-}
-}, 
-"node590965": {
-"edge590966": {
-"@length": 1.0, 
-"@source": "node590965", 
-"@target": "node590966"
-}, 
-"edge591019": {
-"@length": 10.0, 
-"@source": "node590965", 
-"@target": "node591019"
-}
-}, 
-"node590966": {
-"edge590967": {
-"@length": 1.0, 
-"@source": "node590966", 
-"@target": "node590967"
-}, 
-"edge591014": {
-"@length": 7.0, 
-"@source": "node590966", 
-"@target": "node591014"
-}
-}, 
-"node590967": {
-"edge590968": {
-"@length": 4.0, 
-"@source": "node590967", 
-"@target": "node590968"
-}, 
-"edge590985": {
-"@length": 1.0, 
-"@source": "node590967", 
-"@target": "node590985"
-}
-}, 
-"node590968": {
-"edge590969": {
-"@length": 2.0, 
-"@source": "node590968", 
-"@target": "node590969"
-}, 
-"edge590976": {
-"@length": 1.0, 
-"@source": "node590968", 
-"@target": "node590976"
-}
-}, 
-"node590969": {
-"edge590970": {
-"@length": 1.0, 
-"@source": "node590969", 
-"@target": "node590970"
-}, 
-"edge590973": {
-"@length": 1.0, 
-"@source": "node590969", 
-"@target": "node590973"
-}
-}, 
-"node590970": {
-"edge590971": {
-"@length": 1.0, 
-"@source": "node590970", 
-"@target": "node590971"
-}, 
-"edge590972": {
-"@length": 1.0, 
-"@source": "node590970", 
-"@target": "node590972"
-}
-}, 
-"node590973": {
-"edge590974": {
-"@length": 1.0, 
-"@source": "node590973", 
-"@target": "node590974"
-}, 
-"edge590975": {
-"@length": 1.0, 
-"@source": "node590973", 
-"@target": "node590975"
-}
-}, 
-"node590976": {
-"edge590977": {
-"@length": 1.0, 
-"@source": "node590976", 
-"@target": "node590977"
-}, 
-"edge590982": {
-"@length": 2.0, 
-"@source": "node590976", 
-"@target": "node590982"
-}
-}, 
-"node590977": {
-"edge590978": {
-"@length": 1.0, 
-"@source": "node590977", 
-"@target": "node590978"
-}, 
-"edge590981": {
-"@length": 2.0, 
-"@source": "node590977", 
-"@target": "node590981"
-}
-}, 
-"node590978": {
-"edge590979": {
-"@length": 1.0, 
-"@source": "node590978", 
-"@target": "node590979"
-}, 
-"edge590980": {
-"@length": 1.0, 
-"@source": "node590978", 
-"@target": "node590980"
-}
-}, 
-"node590982": {
-"edge590983": {
-"@length": 1.0, 
-"@source": "node590982", 
-"@target": "node590983"
-}, 
-"edge590984": {
-"@length": 1.0, 
-"@source": "node590982", 
-"@target": "node590984"
-}
-}, 
-"node590985": {
-"edge590986": {
-"@length": 1.0, 
-"@source": "node590985", 
-"@target": "node590986"
-}, 
-"edge591009": {
-"@length": 5.0, 
-"@source": "node590985", 
-"@target": "node591009"
-}
-}, 
-"node590986": {
-"edge590987": {
-"@length": 1.0, 
-"@source": "node590986", 
-"@target": "node590987"
-}, 
-"edge591002": {
-"@length": 3.0, 
-"@source": "node590986", 
-"@target": "node591002"
-}
-}, 
-"node590987": {
-"edge590988": {
-"@length": 1.0, 
-"@source": "node590987", 
-"@target": "node590988"
-}, 
-"edge590999": {
-"@length": 4.0, 
-"@source": "node590987", 
-"@target": "node590999"
-}
-}, 
-"node590988": {
-"edge590989": {
-"@length": 1.0, 
-"@source": "node590988", 
-"@target": "node590989"
-}, 
-"edge590998": {
-"@length": 4.0, 
-"@source": "node590988", 
-"@target": "node590998"
-}
-}, 
-"node590989": {
-"edge590990": {
-"@length": 1.0, 
-"@source": "node590989", 
-"@target": "node590990"
-}, 
-"edge590995": {
-"@length": 2.0, 
-"@source": "node590989", 
-"@target": "node590995"
-}
-}, 
-"node590990": {
-"edge590991": {
-"@length": 1.0, 
-"@source": "node590990", 
-"@target": "node590991"
-}, 
-"edge590994": {
-"@length": 2.0, 
-"@source": "node590990", 
-"@target": "node590994"
-}
-}, 
-"node590991": {
-"edge590992": {
-"@length": 1.0, 
-"@source": "node590991", 
-"@target": "node590992"
-}, 
-"edge590993": {
-"@length": 1.0, 
-"@source": "node590991", 
-"@target": "node590993"
-}
-}, 
-"node590995": {
-"edge590996": {
-"@length": 1.0, 
-"@source": "node590995", 
-"@target": "node590996"
-}, 
-"edge590997": {
-"@length": 1.0, 
-"@source": "node590995", 
-"@target": "node590997"
-}
-}, 
-"node590999": {
-"edge591000": {
-"@length": 1.0, 
-"@source": "node590999", 
-"@target": "node591000"
-}, 
-"edge591001": {
-"@length": 1.0, 
-"@source": "node590999", 
-"@target": "node591001"
-}
-}, 
-"node591002": {
-"edge591003": {
-"@length": 3.0, 
-"@source": "node591002", 
-"@target": "node591003"
-}, 
-"edge591004": {
-"@length": 1.0, 
-"@source": "node591002", 
-"@target": "node591004"
-}
-}, 
-"node591004": {
-"edge591005": {
-"@length": 2.0, 
-"@source": "node591004", 
-"@target": "node591005"
-}, 
-"edge591006": {
-"@length": 1.0, 
-"@source": "node591004", 
-"@target": "node591006"
-}
-}, 
-"node591006": {
-"edge591007": {
-"@length": 1.0, 
-"@source": "node591006", 
-"@target": "node591007"
-}, 
-"edge591008": {
-"@length": 1.0, 
-"@source": "node591006", 
-"@target": "node591008"
-}
-}, 
-"node591009": {
-"edge591010": {
-"@length": 1.0, 
-"@source": "node591009", 
-"@target": "node591010"
-}, 
-"edge591013": {
-"@length": 2.0, 
-"@source": "node591009", 
-"@target": "node591013"
-}
-}, 
-"node591010": {
-"edge591011": {
-"@length": 1.0, 
-"@source": "node591010", 
-"@target": "node591011"
-}, 
-"edge591012": {
-"@length": 1.0, 
-"@source": "node591010", 
-"@target": "node591012"
-}
-}, 
-"node591014": {
-"edge591015": {
-"@length": 2.0, 
-"@source": "node591014", 
-"@target": "node591015"
-}, 
-"edge591016": {
-"@length": 1.0, 
-"@source": "node591014", 
-"@target": "node591016"
-}
-}, 
-"node591016": {
-"edge591017": {
-"@length": 1.0, 
-"@source": "node591016", 
-"@target": "node591017"
-}, 
-"edge591018": {
-"@length": 1.0, 
-"@source": "node591016", 
-"@target": "node591018"
-}
-}
-}, 
-"nodeById": {
-"node590964": {
-"@root": true
-}, 
-"node590965": {}, 
-"node590966": {}, 
-"node590967": {}, 
-"node590968": {}, 
-"node590969": {}, 
-"node590970": {}, 
-"node590971": {
-"@otu": "otu243518"
-}, 
-"node590972": {
-"@otu": "otu243519"
-}, 
-"node590973": {}, 
-"node590974": {
-"@otu": "otu243520"
-}, 
-"node590975": {
-"@otu": "otu243521"
-}, 
-"node590976": {}, 
-"node590977": {}, 
-"node590978": {}, 
-"node590979": {
-"@otu": "otu243522"
-}, 
-"node590980": {
-"@otu": "otu243523"
-}, 
-"node590981": {
-"@otu": "otu243524"
-}, 
-"node590982": {}, 
-"node590983": {
-"@otu": "otu243525"
-}, 
-"node590984": {
-"@otu": "otu243526"
-}, 
-"node590985": {}, 
-"node590986": {}, 
-"node590987": {}, 
-"node590988": {}, 
-"node590989": {}, 
-"node590990": {}, 
-"node590991": {}, 
-"node590992": {
-"@otu": "otu243527"
-}, 
-"node590993": {
-"@otu": "otu243528"
-}, 
-"node590994": {
-"@otu": "otu243529"
-}, 
-"node590995": {}, 
-"node590996": {
-"@otu": "otu243530"
-}, 
-"node590997": {
-"@otu": "otu243531"
-}, 
-"node590998": {
-"@otu": "otu243532"
-}, 
-"node590999": {}, 
-"node591000": {
-"@otu": "otu243533"
-}, 
-"node591001": {
-"@otu": "otu243534"
-}, 
-"node591002": {}, 
-"node591003": {
-"@otu": "otu243535"
-}, 
-"node591004": {}, 
-"node591005": {
-"@otu": "otu243536"
-}, 
-"node591006": {}, 
-"node591007": {
-"@otu": "otu243537"
-}, 
-"node591008": {
-"@otu": "otu243538"
-}, 
-"node591009": {}, 
-"node591010": {}, 
-"node591011": {
-"@otu": "otu243539"
-}, 
-"node591012": {
-"@otu": "otu243540"
-}, 
-"node591013": {
-"@otu": "otu243541"
-}, 
-"node591014": {}, 
-"node591015": {
-"@otu": "otu243542"
-}, 
-"node591016": {}, 
-"node591017": {
-"@otu": "otu243543"
-}, 
-"node591018": {
-"@otu": "otu243544"
-}, 
-"node591019": {
-"@otu": "otu243545"
-}, 
-"node591020": {
-"@otu": "otu243546"
-}
-}
-}, 
 "tree6167": {
+"@label": "ML+Bayesian topology", 
 "@xsi:type": "nex:FloatTree", 
 "^ot:branchLengthDescription": "", 
-"^ot:branchLengthMode": "", 
 "^ot:branchLengthTimeUnit": "", 
-"^ot:curatedType": "ML and Bayesian topology", 
+"^ot:curatedType": "Maximum likelihood ", 
 "^ot:inGroupClade": "node1053349", 
+"^ot:nearestTaxonMRCAName": "Endopterygota", 
+"^ot:nearestTaxonMRCAOttId": "1082885", 
 "^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node1053345", 
-"^ot:specifiedRoot": "", 
+"^ot:specifiedRoot": "node1053345", 
 "^ot:tag": [], 
+"^ot:unrootedTree": false, 
 "edgeBySourceId": {
 "node1053345": {
 "edge1053346": {

@@ -15,16 +15,13 @@
 "^ot:agents": {
 "agent": [
 {
-"@description": "validator of NexSON constraints as well as constraints that would allow a study to be imported into the Open Tree of Life's phylogenetic synthesis tools", 
+"@description": "Open Tree NexSON validation", 
 "@id": "peyotl-validator", 
-"@name": "validate_ot_nexson.py", 
+"@name": "api.opentreeoflife.org/validate", 
 "@url": "https://github.com/OpenTreeOfLife/peyotl", 
 "@version": "0.0.4a", 
 "invocation": {
-"commandLine": [
-"--embed", 
-"--agent-only"
-], 
+"commandLine": [], 
 "otherProperty": [
 {
 "name": "pythonVersion", 
@@ -49,7 +46,7 @@
 "^ot:annotationEvents": {
 "annotation": [
 {
-"@dateCreated": "2015-07-25T22:49:34.052Z", 
+"@dateCreated": "2014-07-26T22:14:46.047Z", 
 "@description": "Aids for mapping study OTUs to OTT taxa", 
 "@id": "otu-mapping-hints", 
 "@passedChecks": true, 
@@ -77,8 +74,7 @@
 }
 }
 ]
-}, 
-"useFuzzyMatching": false
+}
 }, 
 "refersTo": {
 "@top": {
@@ -89,7 +85,7 @@
 ]
 }, 
 {
-"@dateCreated": "2015-07-25T22:49:34.052Z", 
+"@dateCreated": "2014-07-26T22:14:46.047Z", 
 "@description": "Describes supporting data files for this study", 
 "@id": "supporting-files-metadata", 
 "@passedChecks": true, 
@@ -116,20 +112,18 @@
 }
 ]
 }, 
-"^ot:candidateTreeForSynthesis": [], 
+"^ot:candidateTreeForSynthesis": [
+"tree6694"
+], 
 "^ot:comment": "", 
 "^ot:curatorName": [
-"Dail Laughinghouse", 
-"Jim Allman"
+"Dail Laughinghouse"
 ], 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S14909"
 }, 
 "^ot:focalClade": 5246131, 
 "^ot:focalCladeOTTTaxonName": "Holozoa", 
-"^ot:messages": {
-"message": []
-}, 
 "^ot:notIntendedForSynthesis": false, 
 "^ot:otusElementOrder": [
 "otus2886"
@@ -138,7 +132,7 @@
 "^ot:studyPublication": {
 "@href": "http://dx.doi.org/10.1016/j.ympev.2014.03.005"
 }, 
-"^ot:studyPublicationReference": "Scheel B.M., & Hausdorf B. 2014. Dynamic evolution of mitochondrial ribosomal proteins in Holozoa. Molecular Phylogenetics and Evolution, 76: 67-74.", 
+"^ot:studyPublicationReference": "Bettina M. Scheel, Bernhard Hausdorf, 2014, 'Dynamic evolution of mitochondrial ribosomal proteins in Holozoa', Molecular Phylogenetics and Evolution, vol. 76, pp. 67-74", 
 "^ot:studyYear": 2014, 
 "^ot:tag": [], 
 "^ot:treesElementOrder": [
@@ -215,6 +209,8 @@
 }, 
 "otu428409": {
 "^ot:originalLabel": "Acropora digitifera", 
+"^ot:ottId": 366634, 
+"^ot:ottTaxonName": "Acropora digitifera", 
 "^ot:treebaseOTUId": "Tl1274089"
 }, 
 "otu428410": {
@@ -237,6 +233,8 @@
 }, 
 "otu428413": {
 "^ot:originalLabel": "Hydra magnipapillata", 
+"^ot:ottId": 861536, 
+"^ot:ottTaxonName": "Hydra vulgaris", 
 "^ot:treebaseOTUId": "Tl1274093"
 }, 
 "otu428414": {
@@ -289,6 +287,8 @@
 }, 
 "otu428422": {
 "^ot:originalLabel": "Salpingoeca rosetta", 
+"^ot:ottId": 1002450, 
+"^ot:ottTaxonName": "Salpingoeca sp. ATCC 50818", 
 "^ot:treebaseOTUId": "Tl1274102"
 }
 }
@@ -308,16 +308,16 @@
 "^ot:branchLengthDescription": "", 
 "^ot:branchLengthMode": "", 
 "^ot:branchLengthTimeUnit": "", 
+"^ot:curatedType": "Fig. 2B Bayesian topology", 
 "^ot:inGroupClade": "", 
-"^ot:inferenceMethods": [], 
 "^ot:nodeLabelMode": "", 
 "^ot:nodeLabelTimeUnit": "", 
 "^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node1165511", 
 "^ot:specifiedRoot": "", 
-"^ot:tag": [], 
-"^ot:treeDescription": "PHYLIP 1+", 
-"^ot:treeType": "", 
+"^ot:tag": [
+"Choose me"
+], 
 "^ot:unrootedTree": true, 
 "edgeBySourceId": {
 "node1165511": {
@@ -714,22 +714,20 @@
 }
 }, 
 "tree6694": {
-"@label": "Test tree title", 
+"@label": "Fig 2A (tree6694)", 
 "@xsi:type": "nex:FloatTree", 
 "^ot:branchLengthDescription": "", 
-"^ot:branchLengthMode": "ot:undefined", 
-"^ot:branchLengthTimeUnit": "Myr", 
-"^ot:inGroupClade": "", 
-"^ot:inferenceMethods": [], 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
+"^ot:curatedType": "Maximum likelihood ", 
+"^ot:inGroupClade": "node1165564", 
 "^ot:nodeLabelMode": "", 
 "^ot:nodeLabelTimeUnit": "", 
 "^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node1165560", 
-"^ot:specifiedRoot": "", 
+"^ot:specifiedRoot": "node1165560", 
 "^ot:tag": [], 
-"^ot:treeDescription": "PHYLIP 1+", 
-"^ot:treeType": "", 
-"^ot:unrootedTree": true, 
+"^ot:unrootedTree": false, 
 "edgeBySourceId": {
 "node1165560": {
 "edge1165561": {

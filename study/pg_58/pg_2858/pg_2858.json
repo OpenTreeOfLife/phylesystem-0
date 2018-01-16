@@ -36,14 +36,93 @@
 }
 ]
 }
+}, 
+{
+"@description": "Web-based interface for submitting, editing, and reviewing studies in the Open Tree of Life project.", 
+"@id": "opentree-curation-webapp", 
+"@name": "OpenTree curation webapp", 
+"@url": "https://github.com/OpenTreeOfLife/opentree", 
+"@version": "0.0.0"
 }
 ]
 }, 
 "^ot:annotationEvents": {
-"annotation": []
+"annotation": [
+{
+"@dateCreated": "2014-07-01T16:52:44.129Z", 
+"@description": "Aids for mapping study OTUs to OTT taxa", 
+"@id": "otu-mapping-hints", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "OTU_MAPPING_HINTS", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"searchContext": {
+"$": "Birds"
 }, 
-"^ot:candidateTreeForSynthesis": [], 
-"^ot:curatorName": "Joseph Brown", 
+"substitutions": {
+"substitution": [
+{
+"@active": false, 
+"@valid": true, 
+"new": {
+"$": ""
+}, 
+"old": {
+"$": ""
+}
+}
+]
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}, 
+{
+"@dateCreated": "2014-07-01T16:52:44.129Z", 
+"@description": "Describes supporting data files for this study", 
+"@id": "supporting-files-metadata", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "SUPPORTING_FILE_INFO", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"@movedToPermanentArchive": false, 
+"files": {
+"file": []
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}
+]
+}, 
+"^ot:candidateTreeForSynthesis": [
+"tree6642"
+], 
+"^ot:comment": "", 
+"^ot:curatorName": [
+"Joseph Brown", 
+"Joseph W. Brown"
+], 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S1993"
 }, 
@@ -52,6 +131,7 @@
 "^ot:messages": {
 "message": []
 }, 
+"^ot:notIntendedForSynthesis": false, 
 "^ot:otusElementOrder": [
 "otus2858"
 ], 
@@ -249,7 +329,9 @@
 "^ot:ottTaxonName": "Turdus kessleri"
 }, 
 "otu425689": {
-"^ot:originalLabel": "Turdus merula maximus"
+"^ot:originalLabel": "Turdus merula maximus", 
+"^ot:ottId": 168082, 
+"^ot:ottTaxonName": "Turdus maximus"
 }, 
 "otu425690": {
 "^ot:originalLabel": "Turdus celaenops", 
@@ -427,7 +509,9 @@
 "^ot:ottTaxonName": "Turdus tephronotus"
 }, 
 "otu425725": {
-"^ot:originalLabel": "Turdus olivaceus ludoviciae"
+"^ot:originalLabel": "Turdus olivaceus ludoviciae", 
+"^ot:ottId": 845767, 
+"^ot:ottTaxonName": "Turdus ludoviciae"
 }, 
 "otu425726": {
 "^ot:originalLabel": "Turdus merula mandarinus"
@@ -633,16 +717,18 @@
 ], 
 "treeById": {
 "tree6642": {
+"@label": "Bayesian", 
 "@xsi:type": "nex:FloatTree", 
 "^ot:branchLengthDescription": "", 
 "^ot:branchLengthMode": "", 
 "^ot:branchLengthTimeUnit": "", 
-"^ot:curatedType": "Bayesian", 
+"^ot:curatedType": "Bayesian inference ", 
 "^ot:inGroupClade": "node1158829", 
 "^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node1158802", 
-"^ot:specifiedRoot": "", 
+"^ot:specifiedRoot": "node1158802", 
 "^ot:tag": [], 
+"^ot:unrootedTree": false, 
 "edgeBySourceId": {
 "node1158802": {
 "edge1158803": {
@@ -1746,10 +1832,12 @@
 "node1158835": {}, 
 "node1158836": {}, 
 "node1158837": {
-"@otu": "otu425665"
+"@otu": "otu425665", 
+"^ot:isTaxonExemplar": true
 }, 
 "node1158838": {
-"@otu": "otu425666"
+"@otu": "otu425666", 
+"^ot:isTaxonExemplar": false
 }, 
 "node1158839": {}, 
 "node1158840": {}, 
@@ -1919,13 +2007,16 @@
 }, 
 "node1158921": {}, 
 "node1158922": {
-"@otu": "otu425709"
+"@otu": "otu425709", 
+"^ot:isTaxonExemplar": true
 }, 
 "node1158923": {
-"@otu": "otu425710"
+"@otu": "otu425710", 
+"^ot:isTaxonExemplar": false
 }, 
 "node1158924": {
-"@otu": "otu425711"
+"@otu": "otu425711", 
+"^ot:isTaxonExemplar": false
 }, 
 "node1158925": {
 "@otu": "otu425712"
@@ -2040,18 +2131,22 @@
 }, 
 "node1158976": {}, 
 "node1158977": {
-"@otu": "otu425742"
+"@otu": "otu425742", 
+"^ot:isTaxonExemplar": true
 }, 
 "node1158978": {
-"@otu": "otu425743"
+"@otu": "otu425743", 
+"^ot:isTaxonExemplar": false
 }, 
 "node1158979": {}, 
 "node1158980": {}, 
 "node1158981": {
-"@otu": "otu425744"
+"@otu": "otu425744", 
+"^ot:isTaxonExemplar": true
 }, 
 "node1158982": {
-"@otu": "otu425745"
+"@otu": "otu425745", 
+"^ot:isTaxonExemplar": false
 }, 
 "node1158983": {}, 
 "node1158984": {

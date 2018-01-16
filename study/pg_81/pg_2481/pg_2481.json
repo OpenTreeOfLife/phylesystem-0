@@ -36,32 +36,126 @@
 }
 ]
 }
+}, 
+{
+"@description": "Web-based interface for submitting, editing, and reviewing studies in the Open Tree of Life project.", 
+"@id": "opentree-curation-webapp", 
+"@name": "OpenTree curation webapp", 
+"@url": "https://github.com/OpenTreeOfLife/opentree", 
+"@version": "0.0.0"
 }
 ]
 }, 
 "^ot:annotationEvents": {
-"annotation": []
+"annotation": [
+{
+"@dateCreated": "2015-09-29T15:42:02.273Z", 
+"@description": "Aids for mapping study OTUs to OTT taxa", 
+"@id": "otu-mapping-hints", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "OTU_MAPPING_HINTS", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"searchContext": {
+"$": "All life"
 }, 
-"^ot:candidateTreeForSynthesis": [], 
-"^ot:curatorName": "Romina Gazis", 
+"substitutions": {
+"substitution": [
+{
+"@active": false, 
+"@valid": true, 
+"new": {
+"$": ""
+}, 
+"old": {
+"$": ""
+}
+}, 
+{
+"@active": true, 
+"@valid": true, 
+"new": {
+"$": "$1"
+}, 
+"old": {
+"$": "^(\\S*\\s+\\S*).*"
+}
+}
+]
+}, 
+"useFuzzyMatching": true
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}, 
+{
+"@dateCreated": "2015-09-29T15:42:02.273Z", 
+"@description": "Describes supporting data files for this study", 
+"@id": "supporting-files-metadata", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "SUPPORTING_FILE_INFO", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"@movedToPermanentArchive": false, 
+"files": {
+"file": []
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}
+]
+}, 
+"^ot:candidateTreeForSynthesis": [
+"tree5339"
+], 
+"^ot:comment": "", 
+"^ot:curatorName": [
+"Romina Gazis"
+], 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S13437"
 }, 
 "^ot:focalClade": 788384, 
 "^ot:focalCladeOTTTaxonName": "Calonectria", 
-"^ot:messages": {
-"message": []
-}, 
+"^ot:notIntendedForSynthesis": false, 
 "^ot:otusElementOrder": [
 "otus2481"
 ], 
 "^ot:studyId": "pg_2481", 
-"^ot:studyPublicationReference": "Mausse sitoe S.N., Chen S., Wingfield M.J., & Roux J. 2012. Calonectria mossambicensis S. Ma?sse-Sitoe, S.F. Chen & Jol. Roux, sp. nov. Fungal Planet, .", 
-"^ot:studyYear": 2012, 
+"^ot:studyPublication": {
+"@href": "http://dx.doi.org/10.3767/003158513x675925"
+}, 
+"^ot:studyPublicationReference": "P. W. Crous, M. J. Wingfield, J. Guarro, R. Cheewangkoon, M. van der Bank, W. J. Swart, A. M. Stchigel, J. F. Cano-Lira, J. Roux, H. Madrid, U. Damm, A. R. Wood, L. A. Shuttleworth, C. S. Hodges, M. Munster, M. de Jes\u00fas Y\u00e1\u00f1ez-Morales, L. Z\u00fa\u00f1iga-Estrada, E. M. Cruywagen, G. S. De Hoog, C. Silvera, J. Najafzadeh, E. M. Davison, P. J. N. Davison, M. D. Barrett, R. L. Barrett, D. S. Manamgoda, A. M. Minnis, N. M. Kleczewski, S. L. Flory, L. A. Castlebury, K. Clay, K. D. Hyde, S. N. D. Ma\u00fasse-Sitoe, Shuaifei Chen, C. Lechat, M. Hairaud, L. Lesage-Meessen, J. Paw\u0142owska, M. Wilk, A. \u015aliwi\u0144ska-Wyrzychowska, M. M\u0119trak, M. Wrzosek, D. Pavlic-Zupanc, H. M. Maleme, B. Slippers, W. P. Mac Cormack, D. I. Archuby, N. J. Gr\u00fcnwald, M. T. Teller\u00eda, M. Due\u00f1as, M. P. Mart\u00edn, S. Marincowitz, Z. W. de Beer, C. A. Perez, J. Gen\u00e9, Y. Marin-Felix, J. Z. Groenewald, 2013, 'Fungal Planet description sheets: 154\u2013213', Persoonia - Molecular Phylogeny and Evolution of Fungi, vol. 31, no. 1, pp. 188-296", 
+"^ot:studyYear": 2013, 
 "^ot:tag": [], 
 "^ot:treesElementOrder": [
 "trees2481"
 ], 
+"^xhtml:license": {
+"@href": "http://creativecommons.org/publicdomain/zero/1.0/", 
+"@name": "CC0"
+}, 
 "otusById": {
 "otus2481": {
 "otuById": {
@@ -115,14 +209,10 @@
 }, 
 "otu359041": {
 "^ot:originalLabel": "Calonectria mossambicensis CMW38040", 
-"^ot:ottId": 788384, 
-"^ot:ottTaxonName": "Calonectria", 
 "^ot:treebaseOTUId": "Tl909577"
 }, 
 "otu359042": {
 "^ot:originalLabel": "Calonectria mossambicensis CMW36327", 
-"^ot:ottId": 788384, 
-"^ot:ottTaxonName": "Calonectria", 
 "^ot:treebaseOTUId": "Tl909578"
 }, 
 "otu359043": {
@@ -139,8 +229,6 @@
 }, 
 "otu359045": {
 "^ot:originalLabel": "Calonectria mossambicensis CMW36331", 
-"^ot:ottId": 788384, 
-"^ot:ottTaxonName": "Calonectria", 
 "^ot:treebaseOTUId": "Tl909581"
 }, 
 "otu359046": {
@@ -180,25 +268,30 @@
 "trees2481": {
 "@otus": "otus2481", 
 "^ot:treeElementOrder": [
-"tree5339", 
-"tree5340"
+"tree5339"
 ], 
 "treeById": {
 "tree5339": {
+"@label": "MP, ITS + EF-1 + CAL + HIS", 
 "@xsi:type": "nex:FloatTree", 
 "^ot:branchLengthDescription": "", 
-"^ot:branchLengthMode": "", 
-"^ot:branchLengthTimeUnit": "", 
-"^ot:curatedType": "MP, ITS + EF-1 + CAL + HIS", 
+"^ot:branchLengthMode": "ot:changesCount", 
+"^ot:branchLengthTimeUnit": "Myr", 
+"^ot:curatedType": "Maximum parsimony ", 
 "^ot:inGroupClade": "node923947", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
 "^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node923943", 
-"^ot:specifiedRoot": "", 
-"^ot:tag": [], 
+"^ot:specifiedRoot": "node923943", 
+"^ot:tag": [
+"ITS + EF-1 + CAL + HIS"
+], 
+"^ot:unrootedTree": false, 
 "edgeBySourceId": {
 "node923943": {
 "edge923944": {
-"@length": 14.0, 
+"@length": 14, 
 "@source": "node923943", 
 "@target": "node923944"
 }, 
@@ -219,12 +312,12 @@
 }, 
 "node923947": {
 "edge923948": {
-"@length": 17.0, 
+"@length": 17, 
 "@source": "node923947", 
 "@target": "node923948"
 }, 
 "edge923951": {
-"@length": 10.0, 
+"@length": 10, 
 "@source": "node923947", 
 "@target": "node923951"
 }
@@ -241,24 +334,24 @@
 }, 
 "node923951": {
 "edge923952": {
-"@length": 15.0, 
+"@length": 15, 
 "@source": "node923951", 
 "@target": "node923952"
 }, 
 "edge923959": {
-"@length": 26.0, 
+"@length": 26, 
 "@source": "node923951", 
 "@target": "node923959"
 }
 }, 
 "node923952": {
 "edge923953": {
-"@length": 20.0, 
+"@length": 20, 
 "@source": "node923952", 
 "@target": "node923953"
 }, 
 "edge923956": {
-"@length": 3.0, 
+"@length": 3, 
 "@source": "node923952", 
 "@target": "node923956"
 }
@@ -279,24 +372,24 @@
 "@target": "node923957"
 }, 
 "edge923958": {
-"@length": 2.0, 
+"@length": 2, 
 "@source": "node923956", 
 "@target": "node923958"
 }
 }, 
 "node923959": {
 "edge923960": {
-"@length": 4.0, 
+"@length": 4, 
 "@source": "node923959", 
 "@target": "node923960"
 }, 
 "edge923963": {
-"@length": 3.0, 
+"@length": 3, 
 "@source": "node923959", 
 "@target": "node923963"
 }, 
 "edge923966": {
-"@length": 3.0, 
+"@length": 3, 
 "@source": "node923959", 
 "@target": "node923966"
 }
@@ -331,14 +424,14 @@
 "@target": "node923968"
 }, 
 "edge923969": {
-"@length": 2.0, 
+"@length": 2, 
 "@source": "node923966", 
 "@target": "node923969"
 }
 }, 
 "node923969": {
 "edge923970": {
-"@length": 4.0, 
+"@length": 4, 
 "@source": "node923969", 
 "@target": "node923970"
 }, 
@@ -362,321 +455,87 @@
 }, 
 "node923944": {}, 
 "node923945": {
-"@otu": "otu359039"
+"@otu": "otu359039", 
+"^ot:isTaxonExemplar": true
 }, 
 "node923946": {
-"@otu": "otu359040"
+"@otu": "otu359040", 
+"^ot:isTaxonExemplar": false
 }, 
 "node923947": {}, 
 "node923948": {}, 
 "node923949": {
-"@otu": "otu359037"
+"@otu": "otu359037", 
+"^ot:isTaxonExemplar": true
 }, 
 "node923950": {
-"@otu": "otu359035"
+"@otu": "otu359035", 
+"^ot:isTaxonExemplar": false
 }, 
 "node923951": {}, 
 "node923952": {}, 
 "node923953": {}, 
 "node923954": {
-"@otu": "otu359050"
+"@otu": "otu359050", 
+"^ot:isTaxonExemplar": true
 }, 
 "node923955": {
-"@otu": "otu359036"
+"@otu": "otu359036", 
+"^ot:isTaxonExemplar": false
 }, 
 "node923956": {}, 
 "node923957": {
-"@otu": "otu359043"
+"@otu": "otu359043", 
+"^ot:isTaxonExemplar": true
 }, 
 "node923958": {
-"@otu": "otu359047"
+"@otu": "otu359047", 
+"^ot:isTaxonExemplar": false
 }, 
 "node923959": {}, 
 "node923960": {}, 
 "node923961": {
-"@otu": "otu359044"
+"@otu": "otu359044", 
+"^ot:isTaxonExemplar": true
 }, 
 "node923962": {
-"@otu": "otu359033"
+"@otu": "otu359033", 
+"^ot:isTaxonExemplar": false
 }, 
 "node923963": {}, 
 "node923964": {
-"@otu": "otu359034"
+"@otu": "otu359034", 
+"^ot:isTaxonExemplar": true
 }, 
 "node923965": {
-"@otu": "otu359048"
+"@otu": "otu359048", 
+"^ot:isTaxonExemplar": false
 }, 
 "node923966": {}, 
 "node923967": {
-"@otu": "otu359049"
+"@otu": "otu359049", 
+"^ot:isTaxonExemplar": true
 }, 
 "node923968": {
-"@otu": "otu359046"
+"@otu": "otu359046", 
+"^ot:isTaxonExemplar": false
 }, 
 "node923969": {}, 
 "node923970": {
-"@otu": "otu359045"
+"@otu": "otu359045", 
+"^ot:isTaxonExemplar": true
 }, 
 "node923971": {
-"@otu": "otu359038"
+"@otu": "otu359038", 
+"^ot:isTaxonExemplar": false
 }, 
 "node923972": {
-"@otu": "otu359042"
+"@otu": "otu359042", 
+"^ot:isTaxonExemplar": false
 }, 
 "node923973": {
-"@otu": "otu359041"
-}
-}
-}, 
-"tree5340": {
-"@xsi:type": "nex:FloatTree", 
-"^ot:branchLengthDescription": "", 
-"^ot:branchLengthMode": "", 
-"^ot:branchLengthTimeUnit": "", 
-"^ot:curatedType": "ML, ITS + EF-1 + CAL + HIS", 
-"^ot:inGroupClade": "node923978", 
-"^ot:outGroupEdge": "", 
-"^ot:rootNodeId": "node923974", 
-"^ot:specifiedRoot": "", 
-"^ot:tag": [], 
-"edgeBySourceId": {
-"node923974": {
-"edge923975": {
-"@length": 14.0, 
-"@source": "node923974", 
-"@target": "node923975"
-}, 
-"edge923978": {
-"@source": "node923974", 
-"@target": "node923978"
-}
-}, 
-"node923975": {
-"edge923976": {
-"@source": "node923975", 
-"@target": "node923976"
-}, 
-"edge923977": {
-"@source": "node923975", 
-"@target": "node923977"
-}
-}, 
-"node923978": {
-"edge923979": {
-"@length": 17.0, 
-"@source": "node923978", 
-"@target": "node923979"
-}, 
-"edge923982": {
-"@length": 11.0, 
-"@source": "node923978", 
-"@target": "node923982"
-}
-}, 
-"node923979": {
-"edge923980": {
-"@source": "node923979", 
-"@target": "node923980"
-}, 
-"edge923981": {
-"@source": "node923979", 
-"@target": "node923981"
-}
-}, 
-"node923982": {
-"edge923983": {
-"@length": 14.0, 
-"@source": "node923982", 
-"@target": "node923983"
-}, 
-"edge923990": {
-"@length": 26.0, 
-"@source": "node923982", 
-"@target": "node923990"
-}
-}, 
-"node923983": {
-"edge923984": {
-"@length": 20.0, 
-"@source": "node923983", 
-"@target": "node923984"
-}, 
-"edge923987": {
-"@length": 3.0, 
-"@source": "node923983", 
-"@target": "node923987"
-}
-}, 
-"node923984": {
-"edge923985": {
-"@source": "node923984", 
-"@target": "node923985"
-}, 
-"edge923986": {
-"@source": "node923984", 
-"@target": "node923986"
-}
-}, 
-"node923987": {
-"edge923988": {
-"@source": "node923987", 
-"@target": "node923988"
-}, 
-"edge923989": {
-"@length": 2.0, 
-"@source": "node923987", 
-"@target": "node923989"
-}
-}, 
-"node923990": {
-"edge923991": {
-"@length": 3.0, 
-"@source": "node923990", 
-"@target": "node923991"
-}, 
-"edge923994": {
-"@length": 1.0, 
-"@source": "node923990", 
-"@target": "node923994"
-}
-}, 
-"node923991": {
-"edge923992": {
-"@source": "node923991", 
-"@target": "node923992"
-}, 
-"edge923993": {
-"@source": "node923991", 
-"@target": "node923993"
-}
-}, 
-"node923994": {
-"edge923995": {
-"@length": 3.0, 
-"@source": "node923994", 
-"@target": "node923995"
-}, 
-"edge923998": {
-"@length": 3.0, 
-"@source": "node923994", 
-"@target": "node923998"
-}
-}, 
-"node923995": {
-"edge923996": {
-"@source": "node923995", 
-"@target": "node923996"
-}, 
-"edge923997": {
-"@source": "node923995", 
-"@target": "node923997"
-}
-}, 
-"node923998": {
-"edge923999": {
-"@source": "node923998", 
-"@target": "node923999"
-}, 
-"edge924000": {
-"@source": "node923998", 
-"@target": "node924000"
-}, 
-"edge924001": {
-"@length": 2.0, 
-"@source": "node923998", 
-"@target": "node924001"
-}
-}, 
-"node924001": {
-"edge924002": {
-"@length": 4.0, 
-"@source": "node924001", 
-"@target": "node924002"
-}, 
-"edge924003": {
-"@source": "node924001", 
-"@target": "node924003"
-}, 
-"edge924004": {
-"@source": "node924001", 
-"@target": "node924004"
-}, 
-"edge924005": {
-"@source": "node924001", 
-"@target": "node924005"
-}
-}
-}, 
-"nodeById": {
-"node923974": {
-"@root": true
-}, 
-"node923975": {}, 
-"node923976": {
-"@otu": "otu359039"
-}, 
-"node923977": {
-"@otu": "otu359040"
-}, 
-"node923978": {}, 
-"node923979": {}, 
-"node923980": {
-"@otu": "otu359037"
-}, 
-"node923981": {
-"@otu": "otu359035"
-}, 
-"node923982": {}, 
-"node923983": {}, 
-"node923984": {}, 
-"node923985": {
-"@otu": "otu359050"
-}, 
-"node923986": {
-"@otu": "otu359036"
-}, 
-"node923987": {}, 
-"node923988": {
-"@otu": "otu359043"
-}, 
-"node923989": {
-"@otu": "otu359047"
-}, 
-"node923990": {}, 
-"node923991": {}, 
-"node923992": {
-"@otu": "otu359044"
-}, 
-"node923993": {
-"@otu": "otu359033"
-}, 
-"node923994": {}, 
-"node923995": {}, 
-"node923996": {
-"@otu": "otu359034"
-}, 
-"node923997": {
-"@otu": "otu359048"
-}, 
-"node923998": {}, 
-"node923999": {
-"@otu": "otu359049"
-}, 
-"node924000": {
-"@otu": "otu359046"
-}, 
-"node924001": {}, 
-"node924002": {
-"@otu": "otu359045"
-}, 
-"node924003": {
-"@otu": "otu359038"
-}, 
-"node924004": {
-"@otu": "otu359042"
-}, 
-"node924005": {
-"@otu": "otu359041"
+"@otu": "otu359041", 
+"^ot:isTaxonExemplar": false
 }
 }
 }

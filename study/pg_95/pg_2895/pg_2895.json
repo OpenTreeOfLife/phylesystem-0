@@ -15,16 +15,13 @@
 "^ot:agents": {
 "agent": [
 {
-"@description": "validator of NexSON constraints as well as constraints that would allow a study to be imported into the Open Tree of Life's phylogenetic synthesis tools", 
+"@description": "Open Tree NexSON validation", 
 "@id": "peyotl-validator", 
-"@name": "validate_ot_nexson.py", 
+"@name": "api.opentreeoflife.org/validate", 
 "@url": "https://github.com/OpenTreeOfLife/peyotl", 
 "@version": "0.0.4a", 
 "invocation": {
-"commandLine": [
-"--embed", 
-"--agent-only"
-], 
+"commandLine": [], 
 "otherProperty": [
 {
 "name": "pythonVersion", 
@@ -36,19 +33,101 @@
 }
 ]
 }
+}, 
+{
+"@description": "Web-based interface for submitting, editing, and reviewing studies in the Open Tree of Life project.", 
+"@id": "opentree-curation-webapp", 
+"@name": "OpenTree curation webapp", 
+"@url": "https://github.com/OpenTreeOfLife/opentree", 
+"@version": "0.0.0"
 }
 ]
 }, 
 "^ot:annotationEvents": {
-"annotation": []
+"annotation": [
+{
+"@dateCreated": "2014-07-27T12:46:39.060Z", 
+"@description": "Aids for mapping study OTUs to OTT taxa", 
+"@id": "otu-mapping-hints", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "OTU_MAPPING_HINTS", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"searchContext": {
+"$": "All life"
 }, 
-"^ot:candidateTreeForSynthesis": [], 
-"^ot:curatorName": "Dail Laughinghouse", 
+"substitutions": {
+"substitution": [
+{
+"@active": false, 
+"@valid": true, 
+"new": {
+"$": ""
+}, 
+"old": {
+"$": ""
+}
+}
+]
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}, 
+{
+"@dateCreated": "2014-07-27T12:46:39.060Z", 
+"@description": "Describes supporting data files for this study", 
+"@id": "supporting-files-metadata", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "SUPPORTING_FILE_INFO", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"@movedToPermanentArchive": false, 
+"files": {
+"file": []
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}
+]
+}, 
+"^ot:candidateTreeForSynthesis": [
+"tree6706"
+], 
+"^ot:comment": "", 
+"^ot:curatorName": [
+"Dail Laughinghouse"
+], 
+"^ot:dataDeposit": {
+"@href": ""
+}, 
 "^ot:focalClade": 844192, 
 "^ot:focalCladeOTTTaxonName": "Bacteria", 
 "^ot:messages": {
 "message": []
 }, 
+"^ot:notIntendedForSynthesis": false, 
 "^ot:otusElementOrder": [
 "otus2895"
 ], 
@@ -56,7 +135,7 @@
 "^ot:studyPublication": {
 "@href": "http://dx.doi.org/10.1186/1471-2164-15-169"
 }, 
-"^ot:studyPublicationReference": "Katrine L Whiteson, David Hernandez, Vladimir Lazarevic, Nadia Gaia, Laurent Farinelli, Patrice Fran\u00e7ois, Paola Pilo, Joachim Frey, Jacques Schrenzel. 2014. A genomic perspective on a new bacterial genus and species from the Alcaligenaceae family, Basilea psittacipulmonis. BMC Genomics 15(1):169.", 
+"^ot:studyPublicationReference": "Katrine L Whiteson, David Hernandez, Vladimir Lazarevic, Nadia Gaia, Laurent Farinelli, Patrice Fran\u00e7ois, Paola Pilo, Joachim Frey, Jacques Schrenzel, 2014, 'A genomic perspective on a new bacterial genus and species from the Alcaligenaceae family, Basilea psittacipulmonis', BMC Genomics, vol. 15, no. 1, p. 169", 
 "^ot:studyYear": 2014, 
 "^ot:tag": [], 
 "^ot:treesElementOrder": [
@@ -91,6 +170,7 @@
 "^ot:ottTaxonName": "Castellaniella defragrans"
 }, 
 "otu429222": {
+"^ot:altLabel": "Eiseniicola composti", 
 "^ot:originalLabel": "Eiseniicola composti YC06271 T"
 }, 
 "otu429223": {
@@ -217,16 +297,18 @@
 ], 
 "treeById": {
 "tree6706": {
+"@label": "Untitled (tree6706)", 
 "@xsi:type": "nex:FloatTree", 
 "^ot:branchLengthDescription": "", 
-"^ot:branchLengthMode": "", 
+"^ot:branchLengthMode": "ot:substitutionCount", 
 "^ot:branchLengthTimeUnit": "", 
-"^ot:curatedType": "ML", 
-"^ot:inGroupClade": "node1167261", 
+"^ot:curatedType": "Maximum likelihood ", 
+"^ot:inGroupClade": "node1167262", 
 "^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node1167260", 
-"^ot:specifiedRoot": "", 
+"^ot:specifiedRoot": "node1167260", 
 "^ot:tag": [], 
+"^ot:unrootedTree": false, 
 "edgeBySourceId": {
 "node1167260": {
 "edge1167261": {
@@ -590,9 +672,10 @@
 }
 }, 
 "tree6707": {
+"@label": "Untitled (tree6707)", 
 "@xsi:type": "nex:FloatTree", 
 "^ot:branchLengthDescription": "", 
-"^ot:branchLengthMode": "", 
+"^ot:branchLengthMode": "ot:substitutionCount", 
 "^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "rpob", 
 "^ot:inGroupClade": "node1167306", 
@@ -600,6 +683,7 @@
 "^ot:rootNodeId": "node1167305", 
 "^ot:specifiedRoot": "", 
 "^ot:tag": [], 
+"^ot:unrootedTree": true, 
 "edgeBySourceId": {
 "node1167305": {
 "edge1167306": {

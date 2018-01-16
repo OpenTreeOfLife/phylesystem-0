@@ -36,22 +36,109 @@
 }
 ]
 }
+}, 
+{
+"@description": "Web-based interface for submitting, editing, and reviewing studies in the Open Tree of Life project.", 
+"@id": "opentree-curation-webapp", 
+"@name": "OpenTree curation webapp", 
+"@url": "https://github.com/OpenTreeOfLife/opentree", 
+"@version": "0.0.0"
 }
 ]
 }, 
 "^ot:annotationEvents": {
-"annotation": []
+"annotation": [
+{
+"@dateCreated": "2015-09-29T20:35:36.214Z", 
+"@description": "Aids for mapping study OTUs to OTT taxa", 
+"@id": "otu-mapping-hints", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "OTU_MAPPING_HINTS", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"searchContext": {
+"$": "All life"
 }, 
-"^ot:candidateTreeForSynthesis": [], 
-"^ot:curatorName": "Romina Gazis", 
+"substitutions": {
+"substitution": [
+{
+"@active": false, 
+"@valid": true, 
+"new": {
+"$": ""
+}, 
+"old": {
+"$": ""
+}
+}, 
+{
+"@active": true, 
+"@valid": true, 
+"new": {
+"$": "$1"
+}, 
+"old": {
+"$": "^(\\S*\\s+\\S*).*"
+}
+}
+]
+}, 
+"useFuzzyMatching": true
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}, 
+{
+"@dateCreated": "2015-09-29T20:35:36.214Z", 
+"@description": "Describes supporting data files for this study", 
+"@id": "supporting-files-metadata", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "SUPPORTING_FILE_INFO", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"@movedToPermanentArchive": false, 
+"files": {
+"file": []
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}
+]
+}, 
+"^ot:candidateTreeForSynthesis": [
+"tree5310"
+], 
+"^ot:comment": "", 
+"^ot:curatorName": [
+"Romina Gazis"
+], 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S1627"
 }, 
 "^ot:focalClade": 969668, 
 "^ot:focalCladeOTTTaxonName": "Clavicipitaceae", 
-"^ot:messages": {
-"message": []
-}, 
+"^ot:notIntendedForSynthesis": false, 
 "^ot:otusElementOrder": [
 "otus2468"
 ], 
@@ -65,6 +152,10 @@
 "^ot:treesElementOrder": [
 "trees2468"
 ], 
+"^xhtml:license": {
+"@href": "http://creativecommons.org/publicdomain/zero/1.0/", 
+"@name": "CC0"
+}, 
 "otusById": {
 "otus2468": {
 "otuById": {
@@ -178,6 +269,8 @@
 }, 
 "otu358377": {
 "^ot:originalLabel": "Paecilomyces nostocoides", 
+"^ot:ottId": 691851, 
+"^ot:ottTaxonName": "Purpureocillium lilacinum", 
 "^ot:treebaseOTUId": "Tl61140"
 }, 
 "otu358378": {
@@ -194,10 +287,14 @@
 }, 
 "otu358380": {
 "^ot:originalLabel": "Verticillium fungicola flavidum", 
+"^ot:ottId": 234364, 
+"^ot:ottTaxonName": "Lecanicillium fungicola", 
 "^ot:treebaseOTUId": "Tl67606"
 }, 
 "otu358381": {
 "^ot:originalLabel": "Pochonia suchlasporia suchlasporia", 
+"^ot:ottId": 1090054, 
+"^ot:ottTaxonName": "Pochonia suchlasporia", 
 "^ot:treebaseOTUId": "Tl67607"
 }, 
 "otu358382": {
@@ -274,6 +371,8 @@
 }, 
 "otu358394": {
 "^ot:originalLabel": "Verticillium fungicola fungicola", 
+"^ot:ottId": 234364, 
+"^ot:ottTaxonName": "Lecanicillium fungicola", 
 "^ot:treebaseOTUId": "Tl67620"
 }, 
 "otu358395": {
@@ -296,10 +395,14 @@
 }, 
 "otu358398": {
 "^ot:originalLabel": "Verticillium fungicola aleophilum", 
+"^ot:ottId": 234364, 
+"^ot:ottTaxonName": "Lecanicillium fungicola", 
 "^ot:treebaseOTUId": "Tl67624"
 }, 
 "otu358399": {
 "^ot:originalLabel": "Pochonia suchlasporia catenata", 
+"^ot:ottId": 1090054, 
+"^ot:ottTaxonName": "Pochonia suchlasporia", 
 "^ot:treebaseOTUId": "Tl67626"
 }, 
 "otu358400": {
@@ -339,16 +442,20 @@
 ], 
 "treeById": {
 "tree5308": {
+"@label": "Untitled (tree5308)", 
 "@xsi:type": "nex:FloatTree", 
 "^ot:branchLengthDescription": "", 
 "^ot:branchLengthMode": "", 
 "^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "NJ, SSU", 
 "^ot:inGroupClade": "node922195", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
 "^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node922194", 
 "^ot:specifiedRoot": "", 
 "^ot:tag": [], 
+"^ot:unrootedTree": true, 
 "edgeBySourceId": {
 "node922194": {
 "edge922195": {
@@ -815,16 +922,20 @@
 }
 }, 
 "tree5309": {
+"@label": "Untitled (tree5309)", 
 "@xsi:type": "nex:FloatTree", 
 "^ot:branchLengthDescription": "", 
 "^ot:branchLengthMode": "", 
 "^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "NJ, MAT1-1", 
 "^ot:inGroupClade": "node922261", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
 "^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node922260", 
 "^ot:specifiedRoot": "", 
 "^ot:tag": [], 
+"^ot:unrootedTree": true, 
 "edgeBySourceId": {
 "node922260": {
 "edge922261": {
@@ -1109,16 +1220,22 @@
 }
 }, 
 "tree5310": {
+"@label": "Figure 3 Phylogenetic tree of MAT1-2-1 obtained by neighbor-joining analysis. Phylogenetic analysis was carried out on the basis of 160 unambiguously aligned positions of MAT1-2-1.", 
 "@xsi:type": "nex:FloatTree", 
 "^ot:branchLengthDescription": "", 
-"^ot:branchLengthMode": "", 
-"^ot:branchLengthTimeUnit": "", 
-"^ot:curatedType": "NJ, MAT1-2", 
+"^ot:branchLengthMode": "ot:changesCount", 
+"^ot:branchLengthTimeUnit": "Myr", 
+"^ot:curatedType": "Neighbor-joining ", 
 "^ot:inGroupClade": "node922301", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
 "^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node922300", 
-"^ot:specifiedRoot": "", 
-"^ot:tag": [], 
+"^ot:specifiedRoot": "node922300", 
+"^ot:tag": [
+"MAT1-2-1"
+], 
+"^ot:unrootedTree": false, 
 "edgeBySourceId": {
 "node922300": {
 "edge922301": {
@@ -1412,10 +1529,12 @@
 }, 
 "node922322": {}, 
 "node922323": {
-"@otu": "otu358398"
+"@otu": "otu358398", 
+"^ot:isTaxonExemplar": true
 }, 
 "node922324": {
-"@otu": "otu358394"
+"@otu": "otu358394", 
+"^ot:isTaxonExemplar": false
 }, 
 "node922325": {
 "@otu": "otu358378"
@@ -1436,10 +1555,12 @@
 }, 
 "node922332": {}, 
 "node922333": {
-"@otu": "otu358376"
+"@otu": "otu358376", 
+"^ot:isTaxonExemplar": true
 }, 
 "node922334": {
-"@otu": "otu358377"
+"@otu": "otu358377", 
+"^ot:isTaxonExemplar": false
 }, 
 "node922335": {}, 
 "node922336": {}, 

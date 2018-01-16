@@ -36,26 +36,107 @@
 }
 ]
 }
+}, 
+{
+"@description": "Web-based interface for submitting, editing, and reviewing studies in the Open Tree of Life project.", 
+"@id": "opentree-curation-webapp", 
+"@name": "OpenTree curation webapp", 
+"@url": "https://github.com/OpenTreeOfLife/opentree", 
+"@version": "0.0.0"
 }
 ]
 }, 
 "^ot:annotationEvents": {
-"annotation": []
+"annotation": [
+{
+"@dateCreated": "2016-09-27T20:05:48.043Z", 
+"@description": "Aids for mapping study OTUs to OTT taxa", 
+"@id": "otu-mapping-hints", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "OTU_MAPPING_HINTS", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"searchContext": {
+"$": "Asterids"
 }, 
-"^ot:candidateTreeForSynthesis": [], 
-"^ot:curatorName": "Stephen Smith", 
+"substitutions": {
+"substitution": [
+{
+"@active": false, 
+"@valid": true, 
+"new": {
+"$": ""
+}, 
+"old": {
+"$": ""
+}
+}
+]
+}, 
+"useFuzzyMatching": false
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}, 
+{
+"@dateCreated": "2016-09-27T20:05:48.043Z", 
+"@description": "Describes supporting data files for this study", 
+"@id": "supporting-files-metadata", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "SUPPORTING_FILE_INFO", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"@movedToPermanentArchive": false, 
+"files": {
+"file": []
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}
+]
+}, 
+"^ot:candidateTreeForSynthesis": [
+"tree6577"
+], 
+"^ot:comment": "", 
+"^ot:curatorName": [
+"Stephen Smith", 
+"Jonathan A Rees"
+], 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S1091"
 }, 
 "^ot:focalClade": 727571, 
 "^ot:focalCladeOTTTaxonName": "Ilex", 
-"^ot:messages": {
-"message": []
-}, 
+"^ot:notIntendedForSynthesis": false, 
 "^ot:otusElementOrder": [
 "otus2827"
 ], 
 "^ot:studyId": "pg_2827", 
+"^ot:studyPublication": {
+"@href": "http://dx.doi.org/10.3732/ajb.92.2.352"
+}, 
 "^ot:studyPublicationReference": "Gottlieb A., Giberti G., & Poggio L. 2003. Molecular analyses of the genus Ilex (Aquifoliaceae) in southern South America, evidence from AFLP and ITS sequence data. American Journal of Botany, null.", 
 "^ot:studyYear": 2003, 
 "^ot:tag": [], 
@@ -365,15 +446,20 @@
 ], 
 "treeById": {
 "tree6576": {
+"@label": "Untitled (tree6576)", 
 "@xsi:type": "nex:FloatTree", 
 "^ot:branchLengthDescription": "", 
 "^ot:branchLengthMode": "", 
 "^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "MajRule", 
+"^ot:inGroupClade": "", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
 "^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node1143238", 
 "^ot:specifiedRoot": "", 
 "^ot:tag": [], 
+"^ot:unrootedTree": true, 
 "edgeBySourceId": {
 "node1143238": {
 "edge1143239": {
@@ -980,16 +1066,20 @@
 }
 }, 
 "tree6577": {
+"@label": "Untitled (tree6577)", 
 "@xsi:type": "nex:FloatTree", 
 "^ot:branchLengthDescription": "", 
 "^ot:branchLengthMode": "", 
 "^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "Majority rule consensus rooted", 
 "^ot:inGroupClade": "node1143328", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
 "^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node1143324", 
-"^ot:specifiedRoot": "", 
+"^ot:specifiedRoot": "node1143324", 
 "^ot:tag": [], 
+"^ot:unrootedTree": false, 
 "edgeBySourceId": {
 "node1143324": {
 "edge1143325": {
@@ -1007,7 +1097,7 @@
 "@target": "node1143326"
 }, 
 "edge1143327": {
-"@length": 2.0, 
+"@length": 2, 
 "@source": "node1143325", 
 "@target": "node1143327"
 }

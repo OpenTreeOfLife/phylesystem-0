@@ -36,22 +36,100 @@
 }
 ]
 }
+}, 
+{
+"@description": "Web-based interface for submitting, editing, and reviewing studies in the Open Tree of Life project.", 
+"@id": "opentree-curation-webapp", 
+"@name": "OpenTree curation webapp", 
+"@url": "https://github.com/OpenTreeOfLife/opentree", 
+"@version": "0.0.0"
 }
 ]
 }, 
 "^ot:annotationEvents": {
-"annotation": []
+"annotation": [
+{
+"@dateCreated": "2016-02-21T20:59:28.719Z", 
+"@description": "Aids for mapping study OTUs to OTT taxa", 
+"@id": "otu-mapping-hints", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "OTU_MAPPING_HINTS", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"searchContext": {
+"$": "Vertebrates"
 }, 
-"^ot:candidateTreeForSynthesis": [], 
-"^ot:curatorName": "Chris Owen", 
+"substitutions": {
+"substitution": [
+{
+"@active": false, 
+"@valid": true, 
+"new": {
+"$": ""
+}, 
+"old": {
+"$": ""
+}
+}
+]
+}, 
+"useFuzzyMatching": false
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}, 
+{
+"@dateCreated": "2016-02-21T20:59:28.719Z", 
+"@description": "Describes supporting data files for this study", 
+"@id": "supporting-files-metadata", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "SUPPORTING_FILE_INFO", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"@movedToPermanentArchive": false, 
+"files": {
+"file": []
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}
+]
+}, 
+"^ot:candidateTreeForSynthesis": [
+"tree3796"
+], 
+"^ot:comment": "", 
+"^ot:curatorName": [
+"Chris Owen", 
+"Brian Sidlauskas"
+], 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S12929"
 }, 
 "^ot:focalClade": 178211, 
 "^ot:focalCladeOTTTaxonName": "Anostomidae", 
-"^ot:messages": {
-"message": []
-}, 
+"^ot:notIntendedForSynthesis": false, 
 "^ot:otusElementOrder": [
 "otus1879"
 ], 
@@ -65,11 +143,17 @@
 "^ot:treesElementOrder": [
 "trees1879"
 ], 
+"^xhtml:license": {
+"@href": "http://creativecommons.org/publicdomain/zero/1.0/", 
+"@name": "CC0"
+}, 
 "otusById": {
 "otus1879": {
 "otuById": {
 "otu287215": {
 "^ot:originalLabel": "Leporinus cf. fasciatus", 
+"^ot:ottId": 178212, 
+"^ot:ottTaxonName": "Leporinus", 
 "^ot:treebaseOTUId": "Tl841366"
 }, 
 "otu287216": {
@@ -278,6 +362,8 @@
 }, 
 "otu287250": {
 "^ot:originalLabel": "Caenotropus maculosus", 
+"^ot:ottId": 3624604, 
+"^ot:ottTaxonName": "Caenotropus maculosus", 
 "^ot:treebaseOTUId": "Tl841401"
 }, 
 "otu287251": {
@@ -288,10 +374,14 @@
 }, 
 "otu287252": {
 "^ot:originalLabel": "Leporinus cf. ecuadorensis", 
+"^ot:ottId": 178212, 
+"^ot:ottTaxonName": "Leporinus", 
 "^ot:treebaseOTUId": "Tl841403"
 }, 
 "otu287253": {
 "^ot:originalLabel": "Leporinus cf. moralesi", 
+"^ot:ottId": 703867, 
+"^ot:ottTaxonName": "Leporinus taeniatus", 
 "^ot:treebaseOTUId": "Tl841404"
 }, 
 "otu287254": {
@@ -326,6 +416,8 @@
 }, 
 "otu287259": {
 "^ot:originalLabel": "Leporinus cf. niceforoi", 
+"^ot:ottId": 178212, 
+"^ot:ottTaxonName": "Leporinus", 
 "^ot:treebaseOTUId": "Tl841410"
 }, 
 "otu287260": {
@@ -396,6 +488,8 @@
 }, 
 "otu287271": {
 "^ot:originalLabel": "Caenotropus mestomorgmatos", 
+"^ot:ottId": 3624602, 
+"^ot:ottTaxonName": "Caenotropus mestomorgmatos", 
 "^ot:treebaseOTUId": "Tl841422"
 }, 
 "otu287272": {
@@ -429,16 +523,20 @@
 ], 
 "treeById": {
 "tree3796": {
+"@label": "Fig 5 strict consensus", 
 "@xsi:type": "nex:FloatTree", 
 "^ot:branchLengthDescription": "", 
 "^ot:branchLengthMode": "ot:changesCount", 
-"^ot:branchLengthTimeUnit": "", 
-"^ot:curatedType": "Fig. 5 MP", 
+"^ot:branchLengthTimeUnit": "Myr", 
+"^ot:curatedType": "Maximum parsimony ", 
 "^ot:inGroupClade": "node719515", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
 "^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node719488", 
-"^ot:specifiedRoot": "", 
+"^ot:specifiedRoot": "node719488", 
 "^ot:tag": [], 
+"^ot:unrootedTree": false, 
 "edgeBySourceId": {
 "node719488": {
 "edge719489": {
@@ -1024,7 +1122,8 @@
 "@otu": "otu287242"
 }, 
 "node719531": {
-"@otu": "otu287252"
+"@otu": "otu287252", 
+"^ot:isTaxonExemplar": false
 }, 
 "node719532": {
 "@otu": "otu287262"
@@ -1033,7 +1132,8 @@
 "@otu": "otu287253"
 }, 
 "node719534": {
-"@otu": "otu287259"
+"@otu": "otu287259", 
+"^ot:isTaxonExemplar": false
 }, 
 "node719535": {
 "@otu": "otu287245"
@@ -1050,7 +1150,8 @@
 "@otu": "otu287229"
 }, 
 "node719541": {
-"@otu": "otu287215"
+"@otu": "otu287215", 
+"^ot:isTaxonExemplar": true
 }, 
 "node719542": {}, 
 "node719543": {
@@ -1157,16 +1258,20 @@
 }
 }, 
 "tree3797": {
+"@label": "Fig 6 Majority Rule Consensus", 
 "@xsi:type": "nex:FloatTree", 
 "^ot:branchLengthDescription": "", 
 "^ot:branchLengthMode": "ot:changesCount", 
-"^ot:branchLengthTimeUnit": "", 
-"^ot:curatedType": "Fig. 6 MP", 
+"^ot:branchLengthTimeUnit": "Myr", 
+"^ot:curatedType": "Maximum parsimony ", 
 "^ot:inGroupClade": "node719618", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
 "^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node719590", 
-"^ot:specifiedRoot": "", 
+"^ot:specifiedRoot": "node719590", 
 "^ot:tag": [], 
+"^ot:unrootedTree": false, 
 "edgeBySourceId": {
 "node719590": {
 "edge719591": {
@@ -1941,16 +2046,20 @@
 }
 }, 
 "tree3798": {
+"@label": "Fig 7 ingroup only", 
 "@xsi:type": "nex:FloatTree", 
 "^ot:branchLengthDescription": "", 
 "^ot:branchLengthMode": "ot:changesCount", 
-"^ot:branchLengthTimeUnit": "", 
+"^ot:branchLengthTimeUnit": "Myr", 
 "^ot:curatedType": "Fig. 7 MP", 
 "^ot:inGroupClade": "node719700", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
 "^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node719700", 
-"^ot:specifiedRoot": "", 
+"^ot:specifiedRoot": "node719700", 
 "^ot:tag": [], 
+"^ot:unrootedTree": false, 
 "edgeBySourceId": {
 "node719700": {
 "edge719701": {

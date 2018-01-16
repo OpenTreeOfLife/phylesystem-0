@@ -36,25 +36,111 @@
 }
 ]
 }
+}, 
+{
+"@description": "Web-based interface for submitting, editing, and reviewing studies in the Open Tree of Life project.", 
+"@id": "opentree-curation-webapp", 
+"@name": "OpenTree curation webapp", 
+"@url": "https://github.com/OpenTreeOfLife/opentree", 
+"@version": "0.0.0"
 }
 ]
 }, 
 "^ot:annotationEvents": {
-"annotation": []
+"annotation": [
+{
+"@dateCreated": "2014-07-15T18:59:18.077Z", 
+"@description": "Aids for mapping study OTUs to OTT taxa", 
+"@id": "otu-mapping-hints", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "OTU_MAPPING_HINTS", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"searchContext": {
+"$": "All life"
 }, 
-"^ot:candidateTreeForSynthesis": [], 
-"^ot:curatorName": "Cameah Wood", 
+"substitutions": {
+"substitution": [
+{
+"@active": false, 
+"@valid": true, 
+"new": {
+"$": ""
+}, 
+"old": {
+"$": ""
+}
+}
+]
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}, 
+{
+"@dateCreated": "2014-07-15T18:59:18.077Z", 
+"@description": "Describes supporting data files for this study", 
+"@id": "supporting-files-metadata", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "SUPPORTING_FILE_INFO", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"@movedToPermanentArchive": false, 
+"files": {
+"file": []
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}
+]
+}, 
+"^ot:candidateTreeForSynthesis": [
+"tree6428"
+], 
+"^ot:comment": "", 
+"^ot:curatorName": [
+"Cameah Wood", 
+"Dail Laughinghouse", 
+"Joseph W. Brown"
+], 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S370"
 }, 
+"^ot:focalClade": 996421, 
+"^ot:focalCladeOTTTaxonName": "Archaea (domain in cellular organisms)", 
 "^ot:messages": {
 "message": []
 }, 
+"^ot:notIntendedForSynthesis": false, 
 "^ot:otusElementOrder": [
 "otus2731"
 ], 
 "^ot:studyId": "pg_2731", 
-"^ot:studyPublicationReference": "Barns S., Delwiche C., Palmer J., & Pace N. 1996. Perspectives on archaeal diversity, thermophily and monophyly from environmental rRNA sequences. Proceedings of the National Academy of Sciences of the United States of America, 93: 9188-9193.", 
+"^ot:studyPublication": {
+"@href": "http://dx.doi.org/10.1073/pnas.93.17.9188"
+}, 
+"^ot:studyPublicationReference": "Barns, S. M., C. F. Delwiche, J. D. Palmer, N. R. Pace. 1996. Perspectives on archaeal diversity, thermophily and monophyly from environmental rRNA sequences. Proceedings of the National Academy of Sciences 93 (17): 9188-9193.", 
 "^ot:studyYear": 1996, 
 "^ot:tag": [], 
 "^ot:treesElementOrder": [
@@ -65,6 +151,8 @@
 "otuById": {
 "otu412275": {
 "^ot:originalLabel": "Escherichia coli", 
+"^ot:ottId": 5341889, 
+"^ot:ottTaxonName": "Escherichia coli (species in family Enterobacteriaceae)", 
 "^ot:treebaseOTUId": "Tl112600"
 }, 
 "otu412276": {
@@ -397,8 +485,6 @@
 }, 
 "otu412334": {
 "^ot:originalLabel": "Methanococcus janneschii", 
-"^ot:ottId": 565122, 
-"^ot:ottTaxonName": "Methanococcus", 
 "^ot:treebaseOTUId": "Tl52240"
 }, 
 "otu412335": {
@@ -436,24 +522,23 @@
 ], 
 "treeById": {
 "tree6428": {
+"@label": "Fig. 2", 
 "@xsi:type": "nex:FloatTree", 
 "^ot:branchLengthDescription": "", 
 "^ot:branchLengthMode": "ot:substitutionCount", 
 "^ot:branchLengthTimeUnit": "", 
-"^ot:curatedType": "Fig. 2", 
+"^ot:curatedType": "Maximum likelihood ", 
+"^ot:inGroupClade": "node1116311", 
 "^ot:outGroupEdge": "", 
-"^ot:rootNodeId": "node1116231", 
-"^ot:specifiedRoot": "", 
+"^ot:rootNodeId": "tree6428_ROOT", 
+"^ot:specifiedRoot": "tree6428_ROOT", 
 "^ot:tag": [], 
+"^ot:unrootedTree": false, 
 "edgeBySourceId": {
 "node1116231": {
 "edge1116232": {
 "@source": "node1116231", 
 "@target": "node1116232"
-}, 
-"edge1116271": {
-"@source": "node1116231", 
-"@target": "node1116271"
 }
 }, 
 "node1116232": {
@@ -1075,12 +1160,20 @@
 "@source": "node1116355", 
 "@target": "node1116357"
 }
+}, 
+"tree6428_ROOT": {
+"edge1116271": {
+"@source": "tree6428_ROOT", 
+"@target": "node1116231"
+}, 
+"tree6428_ROOT_EDGE": {
+"@source": "tree6428_ROOT", 
+"@target": "node1116271"
+}
 }
 }, 
 "nodeById": {
-"node1116231": {
-"@root": true
-}, 
+"node1116231": {}, 
 "node1116232": {}, 
 "node1116233": {
 "@otu": "otu412282"
@@ -1334,6 +1427,9 @@
 }, 
 "node1116357": {
 "@otu": "otu412334"
+}, 
+"tree6428_ROOT": {
+"@root": true
 }
 }
 }

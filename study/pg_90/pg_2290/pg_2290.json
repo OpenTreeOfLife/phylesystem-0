@@ -36,30 +36,107 @@
 }
 ]
 }
+}, 
+{
+"@description": "Web-based interface for submitting, editing, and reviewing studies in the Open Tree of Life project.", 
+"@id": "opentree-curation-webapp", 
+"@name": "OpenTree curation webapp", 
+"@url": "https://github.com/OpenTreeOfLife/opentree", 
+"@version": "0.0.0"
 }
 ]
 }, 
 "^ot:annotationEvents": {
-"annotation": []
+"annotation": [
+{
+"@dateCreated": "2015-09-30T16:07:45.216Z", 
+"@description": "Aids for mapping study OTUs to OTT taxa", 
+"@id": "otu-mapping-hints", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "OTU_MAPPING_HINTS", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"searchContext": {
+"$": "All life"
 }, 
-"^ot:candidateTreeForSynthesis": [], 
-"^ot:curatorName": "Romina Gazis", 
+"substitutions": {
+"substitution": [
+{
+"@active": false, 
+"@valid": true, 
+"new": {
+"$": ""
+}, 
+"old": {
+"$": ""
+}
+}
+]
+}, 
+"useFuzzyMatching": false
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}, 
+{
+"@dateCreated": "2015-09-30T16:07:45.216Z", 
+"@description": "Describes supporting data files for this study", 
+"@id": "supporting-files-metadata", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "SUPPORTING_FILE_INFO", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"@movedToPermanentArchive": false, 
+"files": {
+"file": []
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}
+]
+}, 
+"^ot:candidateTreeForSynthesis": [
+"tree4850"
+], 
+"^ot:comment": "", 
+"^ot:curatorName": [
+"Romina Gazis"
+], 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S563"
 }, 
 "^ot:focalClade": 888947, 
 "^ot:focalCladeOTTTaxonName": "Metarhizium", 
-"^ot:messages": {
-"message": []
-}, 
+"^ot:notIntendedForSynthesis": false, 
 "^ot:otusElementOrder": [
 "otus2290"
 ], 
 "^ot:studyId": "pg_2290", 
 "^ot:studyPublication": {
-"@href": "http://dx.doi.org/10.1017/S0953756299001756"
+"@href": "http://dx.doi.org/10.1017/s0953756299001756"
 }, 
-"^ot:studyPublicationReference": "Driver F., Milner R., & Trueman J. 2000. A taxonomic revision of Metarhizium based on a phylogenetic analysis of ribosomal DNA sequence data. Molecular Ecology, 104 (2): 134-150.", 
+"^ot:studyPublicationReference": "Felice Driver, Richard J. Milner, John W.H. Trueman, 2000, 'A taxonomic revision of Metarhizium based on a phylogenetic analysis of rDNA sequence data', Mycological Research, vol. 104, no. 2, pp. 134-150", 
 "^ot:studyYear": 2000, 
 "^ot:tag": [
 "ITS", 
@@ -68,6 +145,10 @@
 "^ot:treesElementOrder": [
 "trees2290"
 ], 
+"^xhtml:license": {
+"@href": "http://creativecommons.org/publicdomain/zero/1.0/", 
+"@name": "CC0"
+}, 
 "otusById": {
 "otus2290": {
 "otuById": {
@@ -145,6 +226,8 @@
 }, 
 "otu327197": {
 "^ot:originalLabel": "Gliocladium sp. FI-442", 
+"^ot:ottId": 360649, 
+"^ot:ottTaxonName": "Gliocladium", 
 "^ot:treebaseOTUId": "Tl53976"
 }, 
 "otu327198": {
@@ -320,19 +403,23 @@
 ], 
 "treeById": {
 "tree4850": {
+"@label": "Fig. 1. The strict consensus most parsimonious tree of the whole ITS1 and ITS2 region data sets of Metarhizium spp. and outgroups.", 
 "@xsi:type": "nex:FloatTree", 
 "^ot:branchLengthDescription": "", 
-"^ot:branchLengthMode": "", 
-"^ot:branchLengthTimeUnit": "", 
-"^ot:curatedType": "MP, ITS", 
+"^ot:branchLengthMode": "ot:changesCount", 
+"^ot:branchLengthTimeUnit": "Myr", 
+"^ot:curatedType": "Maximum parsimony ", 
 "^ot:inGroupClade": "node846101", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
 "^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node846099", 
-"^ot:specifiedRoot": "", 
+"^ot:specifiedRoot": "node846099", 
 "^ot:tag": [
 "MP", 
 "ITS"
 ], 
+"^ot:unrootedTree": false, 
 "edgeBySourceId": {
 "node846099": {
 "edge846100": {
@@ -615,137 +702,176 @@
 "node846101": {}, 
 "node846102": {}, 
 "node846103": {
-"@otu": "otu327190"
+"@otu": "otu327190", 
+"^ot:isTaxonExemplar": true
 }, 
 "node846104": {
-"@otu": "otu327197"
+"@otu": "otu327197", 
+"^ot:isTaxonExemplar": false
 }, 
 "node846105": {}, 
 "node846106": {
-"@otu": "otu327191"
+"@otu": "otu327191", 
+"^ot:isTaxonExemplar": false
 }, 
 "node846107": {}, 
 "node846108": {
-"@otu": "otu327188"
+"@otu": "otu327188", 
+"^ot:isTaxonExemplar": false
 }, 
 "node846109": {
-"@otu": "otu327207"
+"@otu": "otu327207", 
+"^ot:isTaxonExemplar": false
 }, 
 "node846110": {}, 
 "node846111": {
-"@otu": "otu327213"
+"@otu": "otu327213", 
+"^ot:isTaxonExemplar": false
 }, 
 "node846112": {
-"@otu": "otu327196"
+"@otu": "otu327196", 
+"^ot:isTaxonExemplar": false
 }, 
 "node846113": {
-"@otu": "otu327194"
+"@otu": "otu327194", 
+"^ot:isTaxonExemplar": false
 }, 
 "node846114": {}, 
 "node846115": {
-"@otu": "otu327189"
+"@otu": "otu327189", 
+"^ot:isTaxonExemplar": true
 }, 
 "node846116": {}, 
 "node846117": {
-"@otu": "otu327199"
+"@otu": "otu327199", 
+"^ot:isTaxonExemplar": false
 }, 
 "node846118": {
-"@otu": "otu327217"
+"@otu": "otu327217", 
+"^ot:isTaxonExemplar": false
 }, 
 "node846119": {}, 
 "node846120": {}, 
 "node846121": {
-"@otu": "otu327209"
+"@otu": "otu327209", 
+"^ot:isTaxonExemplar": false
 }, 
 "node846122": {
-"@otu": "otu327203"
+"@otu": "otu327203", 
+"^ot:isTaxonExemplar": false
 }, 
 "node846123": {
-"@otu": "otu327185"
+"@otu": "otu327185", 
+"^ot:isTaxonExemplar": false
 }, 
 "node846124": {
-"@otu": "otu327216"
+"@otu": "otu327216", 
+"^ot:isTaxonExemplar": false
 }, 
 "node846125": {}, 
 "node846126": {}, 
 "node846127": {
-"@otu": "otu327195"
+"@otu": "otu327195", 
+"^ot:isTaxonExemplar": true
 }, 
 "node846128": {}, 
 "node846129": {
-"@otu": "otu327206"
+"@otu": "otu327206", 
+"^ot:isTaxonExemplar": false
 }, 
 "node846130": {
-"@otu": "otu327205"
+"@otu": "otu327205", 
+"^ot:isTaxonExemplar": false
 }, 
 "node846131": {}, 
 "node846132": {}, 
 "node846133": {
-"@otu": "otu327201"
+"@otu": "otu327201", 
+"^ot:isTaxonExemplar": false
 }, 
 "node846134": {
-"@otu": "otu327192"
+"@otu": "otu327192", 
+"^ot:isTaxonExemplar": false
 }, 
 "node846135": {}, 
 "node846136": {}, 
 "node846137": {
-"@otu": "otu327214"
+"@otu": "otu327214", 
+"^ot:isTaxonExemplar": false
 }, 
 "node846138": {
-"@otu": "otu327219"
+"@otu": "otu327219", 
+"^ot:isTaxonExemplar": false
 }, 
 "node846139": {}, 
 "node846140": {
-"@otu": "otu327218"
+"@otu": "otu327218", 
+"^ot:isTaxonExemplar": false
 }, 
 "node846141": {
-"@otu": "otu327198"
+"@otu": "otu327198", 
+"^ot:isTaxonExemplar": false
 }, 
 "node846142": {
-"@otu": "otu327193"
+"@otu": "otu327193", 
+"^ot:isTaxonExemplar": false
 }, 
 "node846143": {
-"@otu": "otu327186"
+"@otu": "otu327186", 
+"^ot:isTaxonExemplar": false
 }, 
 "node846144": {
-"@otu": "otu327204"
+"@otu": "otu327204", 
+"^ot:isTaxonExemplar": false
 }, 
 "node846145": {}, 
 "node846146": {
-"@otu": "otu327187"
+"@otu": "otu327187", 
+"^ot:isTaxonExemplar": false
 }, 
 "node846147": {
-"@otu": "otu327221"
+"@otu": "otu327221", 
+"^ot:isTaxonExemplar": false
 }, 
 "node846148": {
-"@otu": "otu327211"
+"@otu": "otu327211", 
+"^ot:isTaxonExemplar": false
 }, 
 "node846149": {
-"@otu": "otu327208"
+"@otu": "otu327208", 
+"^ot:isTaxonExemplar": false
 }, 
 "node846150": {
-"@otu": "otu327210"
+"@otu": "otu327210", 
+"^ot:isTaxonExemplar": false
 }, 
 "node846151": {
-"@otu": "otu327222"
+"@otu": "otu327222", 
+"^ot:isTaxonExemplar": false
 }, 
 "node846152": {
-"@otu": "otu327220"
+"@otu": "otu327220", 
+"^ot:isTaxonExemplar": false
 }, 
 "node846153": {
-"@otu": "otu327212"
+"@otu": "otu327212", 
+"^ot:isTaxonExemplar": false
 }, 
 "node846154": {
-"@otu": "otu327202"
+"@otu": "otu327202", 
+"^ot:isTaxonExemplar": false
 }, 
 "node846155": {
-"@otu": "otu327200"
+"@otu": "otu327200", 
+"^ot:isTaxonExemplar": false
 }, 
 "node846156": {
-"@otu": "otu327223"
+"@otu": "otu327223", 
+"^ot:isTaxonExemplar": false
 }, 
 "node846157": {
-"@otu": "otu327224"
+"@otu": "otu327224", 
+"^ot:isTaxonExemplar": false
 }
 }
 }

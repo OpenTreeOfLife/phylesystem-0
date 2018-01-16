@@ -15,16 +15,13 @@
 "^ot:agents": {
 "agent": [
 {
-"@description": "validator of NexSON constraints as well as constraints that would allow a study to be imported into the Open Tree of Life's phylogenetic synthesis tools", 
+"@description": "Open Tree NexSON validation", 
 "@id": "peyotl-validator", 
-"@name": "validate_ot_nexson.py", 
+"@name": "api.opentreeoflife.org/validate", 
 "@url": "https://github.com/OpenTreeOfLife/peyotl", 
 "@version": "0.0.4a", 
 "invocation": {
-"commandLine": [
-"--embed", 
-"--agent-only"
-], 
+"commandLine": [], 
 "otherProperty": [
 {
 "name": "pythonVersion", 
@@ -36,14 +33,92 @@
 }
 ]
 }
+}, 
+{
+"@description": "Web-based interface for submitting, editing, and reviewing studies in the Open Tree of Life project.", 
+"@id": "opentree-curation-webapp", 
+"@name": "OpenTree curation webapp", 
+"@url": "https://github.com/OpenTreeOfLife/opentree", 
+"@version": "0.0.0"
 }
 ]
 }, 
 "^ot:annotationEvents": {
-"annotation": []
+"annotation": [
+{
+"@dateCreated": "2014-07-26T23:07:10.086Z", 
+"@description": "Aids for mapping study OTUs to OTT taxa", 
+"@id": "otu-mapping-hints", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "OTU_MAPPING_HINTS", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"searchContext": {
+"$": "All life"
 }, 
-"^ot:candidateTreeForSynthesis": [], 
-"^ot:curatorName": "Dail Laughinghouse", 
+"substitutions": {
+"substitution": [
+{
+"@active": false, 
+"@valid": true, 
+"new": {
+"$": ""
+}, 
+"old": {
+"$": ""
+}
+}
+]
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}, 
+{
+"@dateCreated": "2014-07-26T23:07:10.086Z", 
+"@description": "Describes supporting data files for this study", 
+"@id": "supporting-files-metadata", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "SUPPORTING_FILE_INFO", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"@movedToPermanentArchive": false, 
+"files": {
+"file": []
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}
+]
+}, 
+"^ot:candidateTreeForSynthesis": [
+"tree6686"
+], 
+"^ot:comment": "", 
+"^ot:curatorName": [
+"Dail Laughinghouse"
+], 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S14636"
 }, 
@@ -52,6 +127,7 @@
 "^ot:messages": {
 "message": []
 }, 
+"^ot:notIntendedForSynthesis": false, 
 "^ot:otusElementOrder": [
 "otus2883"
 ], 
@@ -59,7 +135,7 @@
 "^ot:studyPublication": {
 "@href": "http://dx.doi.org/10.1007/s10658-013-0300-x"
 }, 
-"^ot:studyPublicationReference": "Gillis A., Rodriguez M., & Santana M.A. 2014. Serratia marcescens associated with bell pepper (Capsicum annuum L.) soft-rot disease under greenhouse conditions. European Journal of Plant Pathology, 138(1): 1-8.", 
+"^ot:studyPublicationReference": "Annika Gillis, Margarita Rodr\u00edguez, Mar\u00eda A. Santana, 2014, 'Serratia marcescens associated with bell pepper (Capsicum annuum L.) soft-rot disease under greenhouse conditions', European Journal of Plant Pathology, vol. 138, no. 1, pp. 1-8", 
 "^ot:studyYear": 2014, 
 "^ot:tag": [], 
 "^ot:treesElementOrder": [
@@ -314,16 +390,17 @@
 ], 
 "treeById": {
 "tree6686": {
+"@label": "Untitled (tree6686)", 
 "@xsi:type": "nex:FloatTree", 
 "^ot:branchLengthDescription": "", 
-"^ot:branchLengthMode": "", 
 "^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "gyrB", 
 "^ot:inGroupClade": "node1165340", 
 "^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node1165339", 
-"^ot:specifiedRoot": "", 
+"^ot:specifiedRoot": "node1165339", 
 "^ot:tag": [], 
+"^ot:unrootedTree": false, 
 "edgeBySourceId": {
 "node1165339": {
 "edge1165340": {
@@ -640,26 +717,33 @@
 "node1165347": {}, 
 "node1165348": {}, 
 "node1165349": {
-"@otu": "otu428308"
+"@otu": "otu428308", 
+"^ot:isTaxonExemplar": false
 }, 
 "node1165350": {
-"@otu": "otu428319"
+"@otu": "otu428319", 
+"^ot:isTaxonExemplar": false
 }, 
 "node1165351": {
-"@otu": "otu428321"
+"@otu": "otu428321", 
+"^ot:isTaxonExemplar": false
 }, 
 "node1165352": {
-"@otu": "otu428327"
+"@otu": "otu428327", 
+"^ot:isTaxonExemplar": false
 }, 
 "node1165353": {}, 
 "node1165354": {
-"@otu": "otu428313"
+"@otu": "otu428313", 
+"^ot:isTaxonExemplar": true
 }, 
 "node1165355": {
-"@otu": "otu428333"
+"@otu": "otu428333", 
+"^ot:isTaxonExemplar": false
 }, 
 "node1165356": {
-"@otu": "otu428339"
+"@otu": "otu428339", 
+"^ot:isTaxonExemplar": false
 }, 
 "node1165357": {}, 
 "node1165358": {}, 
@@ -671,63 +755,79 @@
 }, 
 "node1165361": {}, 
 "node1165362": {
-"@otu": "otu428336"
+"@otu": "otu428336", 
+"^ot:isTaxonExemplar": true
 }, 
 "node1165363": {
-"@otu": "otu428309"
+"@otu": "otu428309", 
+"^ot:isTaxonExemplar": false
 }, 
 "node1165364": {}, 
 "node1165365": {
-"@otu": "otu428312"
+"@otu": "otu428312", 
+"^ot:isTaxonExemplar": false
 }, 
 "node1165366": {}, 
 "node1165367": {
-"@otu": "otu428310"
+"@otu": "otu428310", 
+"^ot:isTaxonExemplar": false
 }, 
 "node1165368": {}, 
 "node1165369": {
-"@otu": "otu428311"
+"@otu": "otu428311", 
+"^ot:isTaxonExemplar": true
 }, 
 "node1165370": {}, 
 "node1165371": {
-"@otu": "otu428325"
+"@otu": "otu428325", 
+"^ot:isTaxonExemplar": false
 }, 
 "node1165372": {
-"@otu": "otu428326"
+"@otu": "otu428326", 
+"^ot:isTaxonExemplar": false
 }, 
 "node1165373": {}, 
 "node1165374": {}, 
 "node1165375": {
-"@otu": "otu428334"
+"@otu": "otu428334", 
+"^ot:isTaxonExemplar": false
 }, 
 "node1165376": {
-"@otu": "otu428328"
+"@otu": "otu428328", 
+"^ot:isTaxonExemplar": true
 }, 
 "node1165377": {}, 
 "node1165378": {
-"@otu": "otu428318"
+"@otu": "otu428318", 
+"^ot:isTaxonExemplar": false
 }, 
 "node1165379": {}, 
 "node1165380": {
-"@otu": "otu428317"
+"@otu": "otu428317", 
+"^ot:isTaxonExemplar": false
 }, 
 "node1165381": {
-"@otu": "otu428341"
+"@otu": "otu428341", 
+"^ot:isTaxonExemplar": false
 }, 
 "node1165382": {}, 
 "node1165383": {}, 
 "node1165384": {
-"@otu": "otu428324"
+"@otu": "otu428324", 
+"^ot:isTaxonExemplar": true
 }, 
 "node1165385": {
-"@otu": "otu428329"
+"@otu": "otu428329", 
+"^ot:isTaxonExemplar": false
 }, 
 "node1165386": {}, 
 "node1165387": {
-"@otu": "otu428330"
+"@otu": "otu428330", 
+"^ot:isTaxonExemplar": true
 }, 
 "node1165388": {
-"@otu": "otu428346"
+"@otu": "otu428346", 
+"^ot:isTaxonExemplar": false
 }, 
 "node1165389": {
 "@otu": "otu428345"
@@ -735,15 +835,18 @@
 }
 }, 
 "tree6687": {
+"@label": "Untitled (tree6687)", 
 "@xsi:type": "nex:FloatTree", 
 "^ot:branchLengthDescription": "", 
 "^ot:branchLengthMode": "", 
 "^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "groES-groEL", 
+"^ot:inGroupClade": "", 
 "^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node1165390", 
 "^ot:specifiedRoot": "", 
 "^ot:tag": [], 
+"^ot:unrootedTree": true, 
 "edgeBySourceId": {
 "node1165390": {
 "edge1165391": {

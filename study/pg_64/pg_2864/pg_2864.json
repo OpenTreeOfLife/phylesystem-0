@@ -36,23 +36,110 @@
 }
 ]
 }
+}, 
+{
+"@description": "Web-based interface for submitting, editing, and reviewing studies in the Open Tree of Life project.", 
+"@id": "opentree-curation-webapp", 
+"@name": "OpenTree curation webapp", 
+"@url": "https://github.com/OpenTreeOfLife/opentree", 
+"@version": "0.0.0"
 }
 ]
 }, 
 "^ot:annotationEvents": {
-"annotation": []
+"annotation": [
+{
+"@dateCreated": "2014-07-20T17:23:37.442Z", 
+"@description": "Aids for mapping study OTUs to OTT taxa", 
+"@id": "otu-mapping-hints", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "OTU_MAPPING_HINTS", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"searchContext": {
+"$": "All life"
 }, 
-"^ot:candidateTreeForSynthesis": [], 
-"^ot:curatorName": "Joseph Brown", 
+"substitutions": {
+"substitution": [
+{
+"@active": false, 
+"@valid": true, 
+"new": {
+"$": ""
+}, 
+"old": {
+"$": ""
+}
+}
+]
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}, 
+{
+"@dateCreated": "2014-07-20T17:23:37.442Z", 
+"@description": "Describes supporting data files for this study", 
+"@id": "supporting-files-metadata", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "SUPPORTING_FILE_INFO", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"@movedToPermanentArchive": false, 
+"files": {
+"file": []
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}
+]
+}, 
+"^ot:candidateTreeForSynthesis": [
+"tree6651"
+], 
+"^ot:comment": "", 
+"^ot:curatorName": [
+"Joseph Brown", 
+"Jonathan A Rees", 
+"Joseph W. Brown"
+], 
+"^ot:dataDeposit": {
+"@href": ""
+}, 
 "^ot:focalClade": 480119, 
 "^ot:focalCladeOTTTaxonName": "Platalea", 
 "^ot:messages": {
 "message": []
 }, 
+"^ot:notIntendedForSynthesis": false, 
 "^ot:otusElementOrder": [
 "otus2864"
 ], 
 "^ot:studyId": "pg_2864", 
+"^ot:studyPublication": {
+"@href": "http://www.mapress.com/zootaxa/2010/f/z02603p060f.pdf"
+}, 
 "^ot:studyPublicationReference": "Chesser, R. Terry, Carol K. L. Yeung, Cheng-Te Yao, Xiu-Hua Tian, Shou-Hsien Li. 2010. Molecular phylogeny of the spoonbills (Aves: Threskiornithidae) based on mitochondrial DNA. Zootaxa 2603: 53-60.", 
 "^ot:studyYear": 2010, 
 "^ot:tag": [], 
@@ -153,18 +240,19 @@
 ], 
 "treeById": {
 "tree6651": {
+"@label": "Fig. 2", 
 "@xsi:type": "nex:FloatTree", 
 "^ot:branchLengthDescription": "", 
-"^ot:branchLengthMode": "", 
 "^ot:branchLengthTimeUnit": "", 
-"^ot:curatedType": "Fig. 2 Bayesian", 
+"^ot:curatedType": "Bayesian inference ", 
 "^ot:inGroupClade": "node1160787", 
 "^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node1160783", 
-"^ot:specifiedRoot": "", 
+"^ot:specifiedRoot": "node1160783", 
 "^ot:tag": [
 "ingroup added;"
 ], 
+"^ot:unrootedTree": false, 
 "edgeBySourceId": {
 "node1160783": {
 "edge1160784": {
@@ -323,10 +411,12 @@
 "node1160789": {}, 
 "node1160790": {}, 
 "node1160791": {
-"@otu": "otu426600"
+"@otu": "otu426600", 
+"^ot:isTaxonExemplar": true
 }, 
 "node1160792": {
-"@otu": "otu426601"
+"@otu": "otu426601", 
+"^ot:isTaxonExemplar": false
 }, 
 "node1160793": {
 "@otu": "otu426602"
@@ -334,17 +424,21 @@
 "node1160794": {}, 
 "node1160795": {}, 
 "node1160796": {
-"@otu": "otu426603"
+"@otu": "otu426603", 
+"^ot:isTaxonExemplar": true
 }, 
 "node1160797": {
-"@otu": "otu426604"
+"@otu": "otu426604", 
+"^ot:isTaxonExemplar": false
 }, 
 "node1160798": {}, 
 "node1160799": {
-"@otu": "otu426605"
+"@otu": "otu426605", 
+"^ot:isTaxonExemplar": true
 }, 
 "node1160800": {
-"@otu": "otu426606"
+"@otu": "otu426606", 
+"^ot:isTaxonExemplar": false
 }, 
 "node1160801": {
 "@otu": "otu426607"
@@ -352,10 +446,12 @@
 "node1160802": {}, 
 "node1160803": {}, 
 "node1160804": {
-"@otu": "otu426608"
+"@otu": "otu426608", 
+"^ot:isTaxonExemplar": true
 }, 
 "node1160805": {
-"@otu": "otu426609"
+"@otu": "otu426609", 
+"^ot:isTaxonExemplar": false
 }, 
 "node1160806": {
 "@otu": "otu426610"

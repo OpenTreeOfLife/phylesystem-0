@@ -15,16 +15,13 @@
 "^ot:agents": {
 "agent": [
 {
-"@description": "validator of NexSON constraints as well as constraints that would allow a study to be imported into the Open Tree of Life's phylogenetic synthesis tools", 
+"@description": "Open Tree NexSON validation", 
 "@id": "peyotl-validator", 
-"@name": "validate_ot_nexson.py", 
+"@name": "api.opentreeoflife.org/validate", 
 "@url": "https://github.com/OpenTreeOfLife/peyotl", 
 "@version": "0.0.4a", 
 "invocation": {
-"commandLine": [
-"--embed", 
-"--agent-only"
-], 
+"commandLine": [], 
 "otherProperty": [
 {
 "name": "pythonVersion", 
@@ -36,14 +33,93 @@
 }
 ]
 }
+}, 
+{
+"@description": "Web-based interface for submitting, editing, and reviewing studies in the Open Tree of Life project.", 
+"@id": "opentree-curation-webapp", 
+"@name": "OpenTree curation webapp", 
+"@url": "https://github.com/OpenTreeOfLife/opentree", 
+"@version": "0.0.0"
 }
 ]
 }, 
 "^ot:annotationEvents": {
-"annotation": []
+"annotation": [
+{
+"@dateCreated": "2014-06-26T15:03:26.815Z", 
+"@description": "Aids for mapping study OTUs to OTT taxa", 
+"@id": "otu-mapping-hints", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "OTU_MAPPING_HINTS", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"searchContext": {
+"$": "All life"
 }, 
-"^ot:candidateTreeForSynthesis": [], 
-"^ot:curatorName": "Dail Laughinghouse", 
+"substitutions": {
+"substitution": [
+{
+"@active": false, 
+"@valid": true, 
+"new": {
+"$": ""
+}, 
+"old": {
+"$": ""
+}
+}
+]
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}, 
+{
+"@dateCreated": "2014-06-26T15:03:26.815Z", 
+"@description": "Describes supporting data files for this study", 
+"@id": "supporting-files-metadata", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "SUPPORTING_FILE_INFO", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"@movedToPermanentArchive": false, 
+"files": {
+"file": []
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}
+]
+}, 
+"^ot:candidateTreeForSynthesis": [
+"tree6705"
+], 
+"^ot:comment": "", 
+"^ot:curatorName": [
+"Dail Laughinghouse", 
+"kfoney"
+], 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S11903"
 }, 
@@ -52,12 +128,16 @@
 "^ot:messages": {
 "message": []
 }, 
+"^ot:notIntendedForSynthesis": false, 
 "^ot:otusElementOrder": [
 "otus2793"
 ], 
 "^ot:studyId": "pg_2793", 
-"^ot:studyPublicationReference": "Ota S. 2011. Ultrastructure and molecular phylogeny of thaumatomonads (Cercozoa) with emphasis on Thaumatomastix salina from Oslofjorden, Norway. Protist, xx(xx): xx.", 
-"^ot:studyYear": 2011, 
+"^ot:studyPublication": {
+"@href": "http://dx.doi.org/10.1016/j.protis.2011.10.007"
+}, 
+"^ot:studyPublicationReference": "Shuhei Ota, Wenche Eikrem, Bente Edvardsen, 2012, 'Ultrastructure and Molecular Phylogeny of Thaumatomonads (Cercozoa) with Emphasis on Thaumatomastix salina from Oslofjorden, Norway', Protist, vol. 163, no. 4, pp. 560-573", 
+"^ot:studyYear": 2012, 
 "^ot:tag": [], 
 "^ot:treesElementOrder": [
 "trees2793"
@@ -117,8 +197,6 @@
 }, 
 "otu414188": {
 "^ot:originalLabel": "Clautriavia biflagellata FJ919772", 
-"^ot:ottId": 717445, 
-"^ot:ottTaxonName": "Phallus", 
 "^ot:treebaseOTUId": "Tl620907"
 }, 
 "otu414189": {
@@ -309,15 +387,17 @@
 ], 
 "treeById": {
 "tree6479": {
+"@label": "Untitled (tree6479)", 
 "@xsi:type": "nex:FloatTree", 
 "^ot:branchLengthDescription": "", 
-"^ot:branchLengthMode": "", 
 "^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "Fig. 6", 
+"^ot:inGroupClade": "", 
 "^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node1120459", 
 "^ot:specifiedRoot": "", 
 "^ot:tag": [], 
+"^ot:unrootedTree": true, 
 "edgeBySourceId": {
 "node1120459": {
 "edge1120460": {
@@ -945,16 +1025,20 @@
 }
 }, 
 "tree6705": {
+"@label": "Untitled (tree6705)", 
 "@xsi:type": "nex:FloatTree", 
 "^ot:branchLengthDescription": "", 
-"^ot:branchLengthMode": "", 
+"^ot:branchLengthMode": "ot:substitutionCount", 
 "^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "ML", 
 "^ot:inGroupClade": "node1167195", 
 "^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node1167181", 
-"^ot:specifiedRoot": "", 
-"^ot:tag": [], 
+"^ot:specifiedRoot": "node1167181", 
+"^ot:tag": [
+"Choose me"
+], 
+"^ot:unrootedTree": false, 
 "edgeBySourceId": {
 "node1167181": {
 "edge1167182": {
@@ -1488,13 +1572,16 @@
 "node1167214": {}, 
 "node1167215": {}, 
 "node1167216": {
-"@otu": "otu414186"
+"@otu": "otu414186", 
+"^ot:isTaxonExemplar": false
 }, 
 "node1167217": {
-"@otu": "otu414217"
+"@otu": "otu414217", 
+"^ot:isTaxonExemplar": true
 }, 
 "node1167218": {
-"@otu": "otu414205"
+"@otu": "otu414205", 
+"^ot:isTaxonExemplar": false
 }, 
 "node1167219": {}, 
 "node1167220": {
@@ -1551,11 +1638,13 @@
 }, 
 "node1167246": {}, 
 "node1167247": {
-"@otu": "otu414216"
+"@otu": "otu414216", 
+"^ot:isTaxonExemplar": true
 }, 
 "node1167248": {}, 
 "node1167249": {
-"@otu": "otu414204"
+"@otu": "otu414204", 
+"^ot:isTaxonExemplar": true
 }, 
 "node1167250": {
 "@otu": "otu414187"
@@ -1567,14 +1656,16 @@
 "node1167253": {}, 
 "node1167254": {}, 
 "node1167255": {
-"@otu": "otu414198"
+"@otu": "otu414198", 
+"^ot:isTaxonExemplar": false
 }, 
 "node1167256": {}, 
 "node1167257": {
 "@otu": "otu414181"
 }, 
 "node1167258": {
-"@otu": "otu414218"
+"@otu": "otu414218", 
+"^ot:isTaxonExemplar": false
 }, 
 "node1167259": {
 "@otu": "otu414209"

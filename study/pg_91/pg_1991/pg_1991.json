@@ -36,22 +36,98 @@
 }
 ]
 }
+}, 
+{
+"@description": "Web-based interface for submitting, editing, and reviewing studies in the Open Tree of Life project.", 
+"@id": "opentree-curation-webapp", 
+"@name": "OpenTree curation webapp", 
+"@url": "https://github.com/OpenTreeOfLife/opentree", 
+"@version": "0.0.0"
 }
 ]
 }, 
 "^ot:annotationEvents": {
-"annotation": []
+"annotation": [
+{
+"@dateCreated": "2016-10-25T18:26:53.150Z", 
+"@description": "Aids for mapping study OTUs to OTT taxa", 
+"@id": "otu-mapping-hints", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "OTU_MAPPING_HINTS", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"searchContext": {
+"$": "Arachnides"
+}, 
+"substitutions": {
+"substitution": [
+{
+"@active": false, 
+"@valid": true, 
+"new": {
+"$": ""
+}, 
+"old": {
+"$": ""
+}
+}
+]
+}, 
+"useFuzzyMatching": false
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}, 
+{
+"@dateCreated": "2016-10-25T18:26:53.150Z", 
+"@description": "Describes supporting data files for this study", 
+"@id": "supporting-files-metadata", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "SUPPORTING_FILE_INFO", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"@movedToPermanentArchive": false, 
+"files": {
+"file": []
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}
+]
 }, 
 "^ot:candidateTreeForSynthesis": [], 
-"^ot:curatorName": "Chris Owen", 
+"^ot:comment": "", 
+"^ot:curatorName": [
+"Chris Owen", 
+"Joseph W. Brown"
+], 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S10740"
 }, 
 "^ot:focalClade": 633406, 
 "^ot:focalCladeOTTTaxonName": "Myrmekiaphila", 
-"^ot:messages": {
-"message": []
-}, 
+"^ot:notIntendedForSynthesis": false, 
 "^ot:otusElementOrder": [
 "otus1991"
 ], 
@@ -59,7 +135,7 @@
 "^ot:studyPublication": {
 "@href": "http://dx.doi.org/10.1371/journal.pone.0012744"
 }, 
-"^ot:studyPublicationReference": "Bailey A.L., Brewer M.S., Hendrixson B., & Bond J. 2010. Phylogeny and Classification of the Trapdoor Spider Genus Myrmekiaphila (Araneae: Cyrtaucheniidae): An Integrative Approach to evaluating taxonomic hypothesis. PLoS One, 5(9): e12744.", 
+"^ot:studyPublicationReference": "Bailey, Ashley L., Michael S. Brewer, Brent E. Hendrixson, Jason E. Bond. 2010. Phylogeny and Classification of the Trapdoor Spider Genus Myrmekiaphila: An Integrative Approach to Evaluating Taxonomic Hypotheses. PLoS ONE 5 (9): e12744", 
 "^ot:studyYear": 2010, 
 "^ot:tag": [], 
 "^ot:treesElementOrder": [
@@ -363,16 +439,20 @@
 ], 
 "treeById": {
 "tree4079": {
+"@label": "Myr12S16S Final", 
 "@xsi:type": "nex:FloatTree", 
 "^ot:branchLengthDescription": "", 
 "^ot:branchLengthMode": "ot:substitutionCount", 
 "^ot:branchLengthTimeUnit": "", 
-"^ot:curatedType": "Myr12S16S Final", 
+"^ot:curatedType": "Bayesian inference ", 
 "^ot:inGroupClade": "node759678", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
 "^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node759675", 
-"^ot:specifiedRoot": "", 
+"^ot:specifiedRoot": "node759675", 
 "^ot:tag": [], 
+"^ot:unrootedTree": false, 
 "edgeBySourceId": {
 "node759675": {
 "edge759676": {
@@ -1024,16 +1104,20 @@
 }
 }, 
 "tree4080": {
+"@label": "Myrmek192fin Final", 
 "@xsi:type": "nex:FloatTree", 
 "^ot:branchLengthDescription": "", 
-"^ot:branchLengthMode": "ot:time", 
+"^ot:branchLengthMode": "ot:substitutionCount", 
 "^ot:branchLengthTimeUnit": "Myr", 
-"^ot:curatedType": "Myrmek192fin Final", 
+"^ot:curatedType": "Bayesian inference ", 
 "^ot:inGroupClade": "node759759", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
 "^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node759756", 
-"^ot:specifiedRoot": "", 
+"^ot:specifiedRoot": "node759756", 
 "^ot:tag": [], 
+"^ot:unrootedTree": false, 
 "edgeBySourceId": {
 "node759756": {
 "edge759757": {
@@ -1557,16 +1641,20 @@
 }
 }, 
 "tree4081": {
+"@label": "MyrConcat Final", 
 "@xsi:type": "nex:FloatTree", 
 "^ot:branchLengthDescription": "", 
-"^ot:branchLengthMode": "ot:time", 
+"^ot:branchLengthMode": "ot:substitutionCount", 
 "^ot:branchLengthTimeUnit": "Myr", 
-"^ot:curatedType": "MyrConcat Final", 
+"^ot:curatedType": "Bayesian inference ", 
 "^ot:inGroupClade": "node759824", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
 "^ot:outGroupEdge": "", 
-"^ot:rootNodeId": "node759821", 
-"^ot:specifiedRoot": "", 
+"^ot:rootNodeId": "tree4081_ROOT", 
+"^ot:specifiedRoot": "tree4081_ROOT", 
 "^ot:tag": [], 
+"^ot:unrootedTree": false, 
 "edgeBySourceId": {
 "node759821": {
 "edge759822": {
@@ -1578,11 +1666,6 @@
 "@length": 1.184832, 
 "@source": "node759821", 
 "@target": "node759823"
-}, 
-"edge759824": {
-"@length": 1.155454, 
-"@source": "node759821", 
-"@target": "node759824"
 }
 }, 
 "node759824": {
@@ -2070,12 +2153,21 @@
 "@source": "node759903", 
 "@target": "node759905"
 }
+}, 
+"tree4081_ROOT": {
+"edge759824": {
+"@length": 1.155454, 
+"@source": "tree4081_ROOT", 
+"@target": "node759824"
+}, 
+"tree4081_ROOT_EDGE": {
+"@source": "tree4081_ROOT", 
+"@target": "node759821"
+}
 }
 }, 
 "nodeById": {
-"node759821": {
-"@root": true
-}, 
+"node759821": {}, 
 "node759822": {
 "@otu": "otu299327"
 }, 
@@ -2254,6 +2346,9 @@
 }, 
 "node759906": {
 "@otu": "otu299337"
+}, 
+"tree4081_ROOT": {
+"@root": true
 }
 }
 }

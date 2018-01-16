@@ -36,14 +36,92 @@
 }
 ]
 }
+}, 
+{
+"@description": "Web-based interface for submitting, editing, and reviewing studies in the Open Tree of Life project.", 
+"@id": "opentree-curation-webapp", 
+"@name": "OpenTree curation webapp", 
+"@url": "https://github.com/OpenTreeOfLife/opentree", 
+"@version": "0.0.0"
 }
 ]
 }, 
 "^ot:annotationEvents": {
-"annotation": []
+"annotation": [
+{
+"@dateCreated": "2014-07-10T02:52:29.630Z", 
+"@description": "Aids for mapping study OTUs to OTT taxa", 
+"@id": "otu-mapping-hints", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "OTU_MAPPING_HINTS", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"searchContext": {
+"$": "All life"
 }, 
-"^ot:candidateTreeForSynthesis": [], 
-"^ot:curatorName": "Dail Laughinghouse", 
+"substitutions": {
+"substitution": [
+{
+"@active": false, 
+"@valid": true, 
+"new": {
+"$": ""
+}, 
+"old": {
+"$": ""
+}
+}
+]
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}, 
+{
+"@dateCreated": "2014-07-10T02:52:29.630Z", 
+"@description": "Describes supporting data files for this study", 
+"@id": "supporting-files-metadata", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "SUPPORTING_FILE_INFO", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"@movedToPermanentArchive": false, 
+"files": {
+"file": []
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}
+]
+}, 
+"^ot:candidateTreeForSynthesis": [
+"tree6433"
+], 
+"^ot:comment": "", 
+"^ot:curatorName": [
+"Dail Laughinghouse"
+], 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S10293"
 }, 
@@ -52,11 +130,15 @@
 "^ot:messages": {
 "message": []
 }, 
+"^ot:notIntendedForSynthesis": false, 
 "^ot:otusElementOrder": [
 "otus2776"
 ], 
 "^ot:studyId": "pg_2776", 
-"^ot:studyPublicationReference": "Linton E., Karnkowska-ishikawa A., Kim J., Shin W., Bennett M., Kwiatowski J., Zakry&#347; B., & Triemer R. 2010. Reconstructing euglenoid evolutionary relationships using three genes: nuclear SSU and LSU, and chloroplast 16S rDNA sequences and the description of Euglenaria  gen. nov. (Euglenophyta). Protist, .", 
+"^ot:studyPublication": {
+"@href": "http://dx.doi.org/10.1016/j.protis.2010.02.002"
+}, 
+"^ot:studyPublicationReference": "Eric W. Linton, Anna Karnkowska-Ishikawa, Jong Im Kim, Woongghi Shin, Mathew S. Bennett, Jan Kwiatowski, Bo\u017cena Zakry\u015b, Richard E. Triemer, 2010, 'Reconstructing Euglenoid Evolutionary Relationships using Three Genes: Nuclear SSU and LSU, and Chloroplast SSU rDNA Sequences and the Description of Euglenaria gen. nov. (Euglenophyta)', Protist, vol. 161, no. 4, pp. 603-619", 
 "^ot:studyYear": 2010, 
 "^ot:tag": [], 
 "^ot:treesElementOrder": [
@@ -79,6 +161,8 @@
 }, 
 "otu412656": {
 "^ot:originalLabel": "Phacus ankylonoton", 
+"^ot:ottId": 5157096, 
+"^ot:ottTaxonName": "Phacus ankylonoton (species in family Euglenaceae)", 
 "^ot:treebaseOTUId": "Tl276283"
 }, 
 "otu412657": {
@@ -199,6 +283,8 @@
 }, 
 "otu412677": {
 "^ot:originalLabel": "Stronbomonas verrucosa", 
+"^ot:ottId": 81375, 
+"^ot:ottTaxonName": "Strombomonas verrucosa", 
 "^ot:treebaseOTUId": "Tl276304"
 }, 
 "otu412678": {
@@ -429,6 +515,8 @@
 }, 
 "otu412716": {
 "^ot:originalLabel": "Cryptoglena skuja", 
+"^ot:ottId": 402235, 
+"^ot:ottTaxonName": "Cryptoglena skujae", 
 "^ot:treebaseOTUId": "Tl276343"
 }, 
 "otu412717": {
@@ -556,15 +644,17 @@
 ], 
 "treeById": {
 "tree6433": {
+"@label": "Untitled (tree6433)", 
 "@xsi:type": "nex:FloatTree", 
 "^ot:branchLengthDescription": "", 
-"^ot:branchLengthMode": "", 
 "^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "Fig. 2", 
+"^ot:inGroupClade": "node1116689", 
 "^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node1116688", 
 "^ot:specifiedRoot": "", 
 "^ot:tag": [], 
+"^ot:unrootedTree": true, 
 "edgeBySourceId": {
 "node1116688": {
 "edge1116689": {
@@ -1424,20 +1514,24 @@
 "node1116711": {}, 
 "node1116712": {}, 
 "node1116713": {
-"@otu": "otu412691"
+"@otu": "otu412691", 
+"^ot:isTaxonExemplar": true
 }, 
 "node1116714": {
-"@otu": "otu412725"
+"@otu": "otu412725", 
+"^ot:isTaxonExemplar": false
 }, 
 "node1116715": {}, 
 "node1116716": {}, 
 "node1116717": {}, 
 "node1116718": {}, 
 "node1116719": {
-"@otu": "otu412690"
+"@otu": "otu412690", 
+"^ot:isTaxonExemplar": true
 }, 
 "node1116720": {
-"@otu": "otu412668"
+"@otu": "otu412668", 
+"^ot:isTaxonExemplar": false
 }, 
 "node1116721": {
 "@otu": "otu412697"
@@ -1450,10 +1544,12 @@
 "node1116725": {}, 
 "node1116726": {}, 
 "node1116727": {
-"@otu": "otu412700"
+"@otu": "otu412700", 
+"^ot:isTaxonExemplar": true
 }, 
 "node1116728": {
-"@otu": "otu412676"
+"@otu": "otu412676", 
+"^ot:isTaxonExemplar": false
 }, 
 "node1116729": {
 "@otu": "otu412660"
@@ -1509,13 +1605,16 @@
 "node1116754": {}, 
 "node1116755": {}, 
 "node1116756": {
-"@otu": "otu412713"
+"@otu": "otu412713", 
+"^ot:isTaxonExemplar": true
 }, 
 "node1116757": {
-"@otu": "otu412682"
+"@otu": "otu412682", 
+"^ot:isTaxonExemplar": false
 }, 
 "node1116758": {
-"@otu": "otu412683"
+"@otu": "otu412683", 
+"^ot:isTaxonExemplar": false
 }, 
 "node1116759": {
 "@otu": "otu412714"

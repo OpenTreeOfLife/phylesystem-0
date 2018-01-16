@@ -36,14 +36,91 @@
 }
 ]
 }
+}, 
+{
+"@description": "Web-based interface for submitting, editing, and reviewing studies in the Open Tree of Life project.", 
+"@id": "opentree-curation-webapp", 
+"@name": "OpenTree curation webapp", 
+"@url": "https://github.com/OpenTreeOfLife/opentree", 
+"@version": "0.0.0"
 }
 ]
 }, 
 "^ot:annotationEvents": {
-"annotation": []
+"annotation": [
+{
+"@dateCreated": "2014-07-08T15:35:14.300Z", 
+"@description": "Aids for mapping study OTUs to OTT taxa", 
+"@id": "otu-mapping-hints", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "OTU_MAPPING_HINTS", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"searchContext": {
+"$": "All life"
+}, 
+"substitutions": {
+"substitution": [
+{
+"@active": false, 
+"@valid": true, 
+"new": {
+"$": ""
+}, 
+"old": {
+"$": ""
+}
+}
+]
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}, 
+{
+"@dateCreated": "2014-07-08T15:35:14.300Z", 
+"@description": "Describes supporting data files for this study", 
+"@id": "supporting-files-metadata", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "SUPPORTING_FILE_INFO", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"@movedToPermanentArchive": false, 
+"files": {
+"file": []
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}
+]
 }, 
 "^ot:candidateTreeForSynthesis": [], 
-"^ot:curatorName": "Romina Gazis", 
+"^ot:comment": "", 
+"^ot:curatorName": [
+"Romina Gazis", 
+"Stephen Smith"
+], 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S1998"
 }, 
@@ -52,6 +129,7 @@
 "^ot:messages": {
 "message": []
 }, 
+"^ot:notIntendedForSynthesis": false, 
 "^ot:otusElementOrder": [
 "otus474"
 ], 
@@ -70,8 +148,6 @@
 "otuById": {
 "otu162443": {
 "^ot:originalLabel": "Laetiporus sp GDL-1", 
-"^ot:ottId": 868675, 
-"^ot:ottTaxonName": "Laetiporus", 
 "^ot:treebaseOTUId": "Tl88497"
 }, 
 "otu162444": {
@@ -204,8 +280,6 @@
 }, 
 "otu162466": {
 "^ot:originalLabel": "Laetiporus sp PR-914", 
-"^ot:ottId": 868675, 
-"^ot:ottTaxonName": "Laetiporus", 
 "^ot:treebaseOTUId": "Tl88520"
 }, 
 "otu162467": {
@@ -250,8 +324,6 @@
 }, 
 "otu162474": {
 "^ot:originalLabel": "Laetiporus sp EUC-1", 
-"^ot:ottId": 868675, 
-"^ot:ottTaxonName": "Laetiporus", 
 "^ot:treebaseOTUId": "Tl88528"
 }, 
 "otu162475": {
@@ -292,8 +364,6 @@
 }, 
 "otu162481": {
 "^ot:originalLabel": "Laetiporus sp KOA-1", 
-"^ot:ottId": 868675, 
-"^ot:ottTaxonName": "Laetiporus", 
 "^ot:treebaseOTUId": "Tl88535"
 }, 
 "otu162482": {
@@ -328,14 +398,10 @@
 }, 
 "otu162487": {
 "^ot:originalLabel": "Laetiporus sp. PR-914", 
-"^ot:ottId": 868675, 
-"^ot:ottTaxonName": "Laetiporus", 
 "^ot:treebaseOTUId": "Tl91634"
 }, 
 "otu162488": {
 "^ot:originalLabel": "Laetiporus sp. GDL-1", 
-"^ot:ottId": 868675, 
-"^ot:ottTaxonName": "Laetiporus", 
 "^ot:treebaseOTUId": "Tl91635"
 }, 
 "otu162489": {
@@ -514,6 +580,7 @@
 ], 
 "treeById": {
 "tree5593": {
+"@label": "Untitled (tree5593)", 
 "@xsi:type": "nex:FloatTree", 
 "^ot:branchLengthDescription": "", 
 "^ot:branchLengthMode": "", 
@@ -524,6 +591,7 @@
 "^ot:rootNodeId": "node966595", 
 "^ot:specifiedRoot": "", 
 "^ot:tag": [], 
+"^ot:unrootedTree": true, 
 "edgeBySourceId": {
 "node966595": {
 "edge966596": {
@@ -1179,15 +1247,18 @@
 }
 }, 
 "tree625": {
+"@label": "Untitled (tree625)", 
 "@xsi:type": "nex:FloatTree", 
 "^ot:branchLengthDescription": "", 
 "^ot:branchLengthMode": "", 
 "^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "MP, LSU", 
+"^ot:inGroupClade": "", 
 "^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node318466", 
 "^ot:specifiedRoot": "", 
 "^ot:tag": [], 
+"^ot:unrootedTree": true, 
 "edgeBySourceId": {
 "node318466": {
 "edge318467": {
@@ -1843,6 +1914,7 @@
 }
 }, 
 "tree626": {
+"@label": "Untitled (tree626)", 
 "@xsi:type": "nex:FloatTree", 
 "^ot:branchLengthDescription": "", 
 "^ot:branchLengthMode": "", 
@@ -1853,6 +1925,7 @@
 "^ot:rootNodeId": "node318559", 
 "^ot:specifiedRoot": "", 
 "^ot:tag": [], 
+"^ot:unrootedTree": true, 
 "edgeBySourceId": {
 "node318559": {
 "edge318560": {
@@ -2368,6 +2441,7 @@
 }
 }, 
 "tree627": {
+"@label": "Untitled (tree627)", 
 "@xsi:type": "nex:FloatTree", 
 "^ot:branchLengthDescription": "", 
 "^ot:branchLengthMode": "", 
@@ -2382,6 +2456,7 @@
 "LSU", 
 "Choose me"
 ], 
+"^ot:unrootedTree": true, 
 "edgeBySourceId": {
 "node318632": {
 "edge318633": {

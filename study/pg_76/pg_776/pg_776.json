@@ -36,22 +36,109 @@
 }
 ]
 }
+}, 
+{
+"@description": "Web-based interface for submitting, editing, and reviewing studies in the Open Tree of Life project.", 
+"@id": "opentree-curation-webapp", 
+"@name": "OpenTree curation webapp", 
+"@url": "https://github.com/OpenTreeOfLife/opentree", 
+"@version": "0.0.0"
 }
 ]
 }, 
 "^ot:annotationEvents": {
-"annotation": []
+"annotation": [
+{
+"@dateCreated": "2015-09-28T16:30:28.492Z", 
+"@description": "Aids for mapping study OTUs to OTT taxa", 
+"@id": "otu-mapping-hints", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "OTU_MAPPING_HINTS", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"searchContext": {
+"$": "All life"
 }, 
-"^ot:candidateTreeForSynthesis": [], 
-"^ot:curatorName": "Romina Gazis", 
+"substitutions": {
+"substitution": [
+{
+"@active": false, 
+"@valid": true, 
+"new": {
+"$": ""
+}, 
+"old": {
+"$": ""
+}
+}, 
+{
+"@active": true, 
+"@valid": true, 
+"new": {
+"$": "$1"
+}, 
+"old": {
+"$": "^(\\S*\\s+\\S*).*"
+}
+}
+]
+}, 
+"useFuzzyMatching": true
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}, 
+{
+"@dateCreated": "2015-09-28T16:30:28.492Z", 
+"@description": "Describes supporting data files for this study", 
+"@id": "supporting-files-metadata", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "SUPPORTING_FILE_INFO", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"@movedToPermanentArchive": false, 
+"files": {
+"file": []
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}
+]
+}, 
+"^ot:candidateTreeForSynthesis": [
+"tree5653"
+], 
+"^ot:comment": "", 
+"^ot:curatorName": [
+"Romina Gazis"
+], 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S1305"
 }, 
 "^ot:focalClade": 838968, 
 "^ot:focalCladeOTTTaxonName": "Fusarium", 
-"^ot:messages": {
-"message": []
-}, 
+"^ot:notIntendedForSynthesis": false, 
 "^ot:otusElementOrder": [
 "otus776"
 ], 
@@ -65,6 +152,10 @@
 "^ot:treesElementOrder": [
 "trees776"
 ], 
+"^xhtml:license": {
+"@href": "http://creativecommons.org/publicdomain/zero/1.0/", 
+"@name": "CC0"
+}, 
 "otusById": {
 "otus776": {
 "otuById": {
@@ -262,10 +353,14 @@
 }, 
 "otu194343": {
 "^ot:originalLabel": "Fusarium pseudograminearum 01", 
+"^ot:ottId": 3702216, 
+"^ot:ottTaxonName": "Gibberella coronicola", 
 "^ot:treebaseOTUId": "Tl66382"
 }, 
 "otu194344": {
 "^ot:originalLabel": "Fusarium pseudograminearum 04", 
+"^ot:ottId": 3702216, 
+"^ot:ottTaxonName": "Gibberella coronicola", 
 "^ot:treebaseOTUId": "Tl66383"
 }, 
 "otu194345": {
@@ -312,6 +407,8 @@
 }, 
 "otu194352": {
 "^ot:originalLabel": "Fusarium pseudograminearum 02", 
+"^ot:ottId": 3702216, 
+"^ot:ottTaxonName": "Gibberella coronicola", 
 "^ot:treebaseOTUId": "Tl66391"
 }, 
 "otu194353": {
@@ -358,6 +455,8 @@
 }, 
 "otu194360": {
 "^ot:originalLabel": "Fusarium pseudograminearum 03", 
+"^ot:ottId": 3702216, 
+"^ot:ottTaxonName": "Gibberella coronicola", 
 "^ot:treebaseOTUId": "Tl66399"
 }, 
 "otu194361": {
@@ -535,15 +634,20 @@
 ], 
 "treeById": {
 "tree1446": {
+"@label": "Untitled (tree1446)", 
 "@xsi:type": "nex:FloatTree", 
 "^ot:branchLengthDescription": "", 
 "^ot:branchLengthMode": "", 
 "^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "MP, EF-1", 
+"^ot:inGroupClade": "", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
 "^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node454504", 
 "^ot:specifiedRoot": "", 
 "^ot:tag": [], 
+"^ot:unrootedTree": true, 
 "edgeBySourceId": {
 "node454504": {
 "edge454505": {
@@ -884,16 +988,20 @@
 }
 }, 
 "tree1447": {
+"@label": "Untitled (tree1447)", 
 "@xsi:type": "nex:FloatTree", 
 "^ot:branchLengthDescription": "", 
 "^ot:branchLengthMode": "", 
 "^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "MP, EF-1", 
 "^ot:inGroupClade": "node454562", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
 "^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node454552", 
 "^ot:specifiedRoot": "", 
 "^ot:tag": [], 
+"^ot:unrootedTree": true, 
 "edgeBySourceId": {
 "node454552": {
 "edge454553": {
@@ -1507,16 +1615,22 @@
 }
 }, 
 "tree5653": {
+"@label": "Fig. 1. The Bootstrap tree of the moniliformin producing species of this study based on maximum parsimony analysis with sequence data aligned by manual adjustments and simple indel coding with Gapcoder. The terminal names represent haplotypes.", 
 "@xsi:type": "nex:FloatTree", 
 "^ot:branchLengthDescription": "", 
-"^ot:branchLengthMode": "", 
-"^ot:branchLengthTimeUnit": "", 
-"^ot:curatedType": "MP, EF-1 (rooted)", 
+"^ot:branchLengthMode": "ot:changesCount", 
+"^ot:branchLengthTimeUnit": "Myr", 
+"^ot:curatedType": "Maximum parsimony ", 
 "^ot:inGroupClade": "node975360", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
 "^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node975359", 
-"^ot:specifiedRoot": "", 
-"^ot:tag": [], 
+"^ot:specifiedRoot": "node975359", 
+"^ot:tag": [
+"EF-1"
+], 
+"^ot:unrootedTree": false, 
 "edgeBySourceId": {
 "node975359": {
 "edge975360": {
@@ -1754,105 +1868,134 @@
 "node975362": {}, 
 "node975363": {}, 
 "node975364": {
-"@otu": "otu194368"
+"@otu": "otu194368", 
+"^ot:isTaxonExemplar": false
 }, 
 "node975365": {
-"@otu": "otu194366"
+"@otu": "otu194366", 
+"^ot:isTaxonExemplar": false
 }, 
 "node975366": {
-"@otu": "otu194376"
+"@otu": "otu194376", 
+"^ot:isTaxonExemplar": false
 }, 
 "node975367": {
-"@otu": "otu194382"
+"@otu": "otu194382", 
+"^ot:isTaxonExemplar": true
 }, 
 "node975368": {}, 
 "node975369": {
-"@otu": "otu194381"
+"@otu": "otu194381", 
+"^ot:isTaxonExemplar": false
 }, 
 "node975370": {
-"@otu": "otu194367"
+"@otu": "otu194367", 
+"^ot:isTaxonExemplar": false
 }, 
 "node975371": {
-"@otu": "otu194370"
+"@otu": "otu194370", 
+"^ot:isTaxonExemplar": true
 }, 
 "node975372": {
-"@otu": "otu194380"
+"@otu": "otu194380", 
+"^ot:isTaxonExemplar": false
 }, 
 "node975373": {
-"@otu": "otu194373"
+"@otu": "otu194373", 
+"^ot:isTaxonExemplar": false
 }, 
 "node975374": {
-"@otu": "otu194385"
+"@otu": "otu194385", 
+"^ot:isTaxonExemplar": true
 }, 
 "node975375": {}, 
 "node975376": {
-"@otu": "otu194374"
+"@otu": "otu194374", 
+"^ot:isTaxonExemplar": false
 }, 
 "node975377": {
-"@otu": "otu194387"
+"@otu": "otu194387", 
+"^ot:isTaxonExemplar": false
 }, 
 "node975378": {}, 
 "node975379": {}, 
 "node975380": {}, 
 "node975381": {
-"@otu": "otu194372"
+"@otu": "otu194372", 
+"^ot:isTaxonExemplar": true
 }, 
 "node975382": {}, 
 "node975383": {
-"@otu": "otu194364"
+"@otu": "otu194364", 
+"^ot:isTaxonExemplar": false
 }, 
 "node975384": {
-"@otu": "otu194386"
+"@otu": "otu194386", 
+"^ot:isTaxonExemplar": false
 }, 
 "node975385": {}, 
 "node975386": {
-"@otu": "otu194375"
+"@otu": "otu194375", 
+"^ot:isTaxonExemplar": false
 }, 
 "node975387": {
-"@otu": "otu194371"
+"@otu": "otu194371", 
+"^ot:isTaxonExemplar": false
 }, 
 "node975388": {}, 
 "node975389": {
-"@otu": "otu194365"
+"@otu": "otu194365", 
+"^ot:isTaxonExemplar": false
 }, 
 "node975390": {}, 
 "node975391": {
-"@otu": "otu194377"
+"@otu": "otu194377", 
+"^ot:isTaxonExemplar": false
 }, 
 "node975392": {}, 
 "node975393": {}, 
 "node975394": {
-"@otu": "otu194379"
+"@otu": "otu194379", 
+"^ot:isTaxonExemplar": false
 }, 
 "node975395": {
-"@otu": "otu194378"
+"@otu": "otu194378", 
+"^ot:isTaxonExemplar": false
 }, 
 "node975396": {}, 
 "node975397": {
-"@otu": "otu194384"
+"@otu": "otu194384", 
+"^ot:isTaxonExemplar": false
 }, 
 "node975398": {
-"@otu": "otu194369"
+"@otu": "otu194369", 
+"^ot:isTaxonExemplar": false
 }, 
 "node975399": {
-"@otu": "otu194383"
+"@otu": "otu194383", 
+"^ot:isTaxonExemplar": true
 }, 
 "node975400": {}, 
 "node975401": {
-"@otu": "otu194322"
+"@otu": "otu194322", 
+"^ot:isTaxonExemplar": false
 }, 
 "node975402": {
-"@otu": "otu194345"
+"@otu": "otu194345", 
+"^ot:isTaxonExemplar": false
 }, 
 "node975403": {}, 
 "node975404": {
-"@otu": "otu194318"
+"@otu": "otu194318", 
+"^ot:isTaxonExemplar": false
 }, 
 "node975405": {
-"@otu": "otu194327"
+"@otu": "otu194327", 
+"^ot:isTaxonExemplar": false
 }, 
 "node975406": {
-"@otu": "otu194358"
+"@otu": "otu194358", 
+"^ot:isTaxonExemplar": true
 }
 }
 }

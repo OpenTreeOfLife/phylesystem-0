@@ -36,19 +36,102 @@
 }
 ]
 }
+}, 
+{
+"@description": "Web-based interface for submitting, editing, and reviewing studies in the Open Tree of Life project.", 
+"@id": "opentree-curation-webapp", 
+"@name": "OpenTree curation webapp", 
+"@url": "https://github.com/OpenTreeOfLife/opentree", 
+"@version": "0.0.0"
 }
 ]
 }, 
 "^ot:annotationEvents": {
-"annotation": []
+"annotation": [
+{
+"@dateCreated": "2014-06-27T14:45:27.576Z", 
+"@description": "Aids for mapping study OTUs to OTT taxa", 
+"@id": "otu-mapping-hints", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "OTU_MAPPING_HINTS", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"searchContext": {
+"$": "Mammals"
 }, 
-"^ot:candidateTreeForSynthesis": [], 
-"^ot:curatorName": "Joseph Brown", 
+"substitutions": {
+"substitution": [
+{
+"@active": false, 
+"@valid": true, 
+"new": {
+"$": ""
+}, 
+"old": {
+"$": ""
+}
+}
+]
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}, 
+{
+"@dateCreated": "2014-06-27T14:45:27.576Z", 
+"@description": "Describes supporting data files for this study", 
+"@id": "supporting-files-metadata", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "SUPPORTING_FILE_INFO", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"@movedToPermanentArchive": false, 
+"files": {
+"file": []
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}
+]
+}, 
+"^ot:candidateTreeForSynthesis": [
+"tree6545"
+], 
+"^ot:comment": "", 
+"^ot:curatorName": [
+"Joseph Brown", 
+"Joseph W. Brown"
+], 
+"^ot:dataDeposit": {
+"@href": ""
+}, 
 "^ot:focalClade": 244265, 
 "^ot:focalCladeOTTTaxonName": "Mammalia", 
 "^ot:messages": {
 "message": []
 }, 
+"^ot:notIntendedForSynthesis": false, 
 "^ot:otusElementOrder": [
 "otus2812"
 ], 
@@ -56,7 +139,7 @@
 "^ot:studyPublication": {
 "@href": "http://dx.doi.org/10.1111/j.1558-5646.2011.01558.x"
 }, 
-"^ot:studyPublicationReference": "Nicolas Lartillot, Fr\u00e9d\u00e9ric Delsuc. 2012. Joint reconstruction of divergence times and life-history evolution in placental mammals using a phylogenetic covariance model. Evolution 66 (6): 1773-1787.", 
+"^ot:studyPublicationReference": "Lartillot, Nicolas, Fr\u00e9d\u00e9ric Delsuc. 2012. Joint reconstruction of divergence times and life-history evolution in placental mammals using a phylogenetic covariance model. Evolution 66 (6): 1773-1787.", 
 "^ot:studyYear": 2012, 
 "^ot:tag": [
 "ingroup added;"
@@ -143,7 +226,9 @@
 "^ot:ottTaxonName": "Megaderma"
 }, 
 "otu417651": {
-"^ot:originalLabel": "Pteropus"
+"^ot:originalLabel": "Pteropus", 
+"^ot:ottId": 813030, 
+"^ot:ottTaxonName": "Pteropus (genus in subfamily Pteropodinae)"
 }, 
 "otu417652": {
 "^ot:originalLabel": "Rousettus", 
@@ -216,7 +301,9 @@
 "^ot:ottTaxonName": "Talpa"
 }, 
 "otu417666": {
-"^ot:originalLabel": "Tarsius"
+"^ot:originalLabel": "Tarsius", 
+"^ot:ottId": 339047, 
+"^ot:ottTaxonName": "Tarsius"
 }, 
 "otu417667": {
 "^ot:originalLabel": "Callithrix", 
@@ -309,7 +396,9 @@
 "^ot:ottTaxonName": "Rattus"
 }, 
 "otu417685": {
-"^ot:originalLabel": "Hystrix"
+"^ot:originalLabel": "Hystrix", 
+"^ot:ottId": 220325, 
+"^ot:ottTaxonName": "Hystrix (genus in family Hystricidae)"
 }, 
 "otu417686": {
 "^ot:originalLabel": "Erethizon", 
@@ -367,7 +456,9 @@
 "^ot:ottTaxonName": "Amblysomus"
 }, 
 "otu417697": {
-"^ot:originalLabel": "Echinops"
+"^ot:originalLabel": "Echinops", 
+"^ot:ottId": 222356, 
+"^ot:ottTaxonName": "Echinops (genus in subfamily Tenrecinae)"
 }, 
 "otu417698": {
 "^ot:originalLabel": "Elephantulus", 
@@ -461,18 +552,19 @@
 ], 
 "treeById": {
 "tree6545": {
+"@label": "Bayesian Covariance (78 mammals)", 
 "@xsi:type": "nex:FloatTree", 
 "^ot:branchLengthDescription": "", 
-"^ot:branchLengthMode": "", 
 "^ot:branchLengthTimeUnit": "", 
-"^ot:curatedType": "Covariance (78 mammals)", 
+"^ot:curatedType": "Bayesian inference ", 
 "^ot:inGroupClade": "node1135818", 
 "^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node1135815", 
-"^ot:specifiedRoot": "", 
+"^ot:specifiedRoot": "node1135815", 
 "^ot:tag": [
 "Choose me"
 ], 
+"^ot:unrootedTree": false, 
 "edgeBySourceId": {
 "node1135815": {
 "edge1135816": {
@@ -1562,16 +1654,17 @@
 }
 }, 
 "tree6546": {
+"@label": "Bayesian Covariance (73 placentals)", 
 "@xsi:type": "nex:FloatTree", 
 "^ot:branchLengthDescription": "", 
-"^ot:branchLengthMode": "", 
 "^ot:branchLengthTimeUnit": "", 
-"^ot:curatedType": "Covariance (73 placentals)", 
+"^ot:curatedType": "Bayesian inference ", 
 "^ot:inGroupClade": "node1135970", 
 "^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node1135970", 
-"^ot:specifiedRoot": "", 
+"^ot:specifiedRoot": "node1135970", 
 "^ot:tag": [], 
+"^ot:unrootedTree": false, 
 "edgeBySourceId": {
 "node1135970": {
 "edge1135971": {

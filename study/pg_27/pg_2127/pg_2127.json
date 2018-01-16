@@ -36,14 +36,94 @@
 }
 ]
 }
+}, 
+{
+"@description": "Web-based interface for submitting, editing, and reviewing studies in the Open Tree of Life project.", 
+"@id": "opentree-curation-webapp", 
+"@name": "OpenTree curation webapp", 
+"@url": "https://github.com/OpenTreeOfLife/opentree", 
+"@version": "0.0.0"
 }
 ]
 }, 
 "^ot:annotationEvents": {
-"annotation": []
+"annotation": [
+{
+"@dateCreated": "2014-10-07T13:01:07.784Z", 
+"@description": "Aids for mapping study OTUs to OTT taxa", 
+"@id": "otu-mapping-hints", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "OTU_MAPPING_HINTS", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"searchContext": {
+"$": "All life"
 }, 
-"^ot:candidateTreeForSynthesis": [], 
-"^ot:curatorName": "bryan drew", 
+"substitutions": {
+"substitution": [
+{
+"@active": false, 
+"@valid": true, 
+"new": {
+"$": ""
+}, 
+"old": {
+"$": ""
+}
+}
+]
+}, 
+"useFuzzyMatching": false
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}, 
+{
+"@dateCreated": "2014-10-07T13:01:07.784Z", 
+"@description": "Describes supporting data files for this study", 
+"@id": "supporting-files-metadata", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "SUPPORTING_FILE_INFO", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"@movedToPermanentArchive": false, 
+"files": {
+"file": []
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}
+]
+}, 
+"^ot:candidateTreeForSynthesis": [
+"tree4426"
+], 
+"^ot:comment": "", 
+"^ot:curatorName": [
+"bryan drew", 
+"Jonathan A Rees"
+], 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S12754"
 }, 
@@ -52,10 +132,14 @@
 "^ot:messages": {
 "message": []
 }, 
+"^ot:notIntendedForSynthesis": false, 
 "^ot:otusElementOrder": [
 "otus2127"
 ], 
 "^ot:studyId": "pg_2127", 
+"^ot:studyPublication": {
+"@href": "http://dx.doi.org/10.3732/ajb.1200276"
+}, 
 "^ot:studyPublicationReference": "Cardoso D.B., Queiroz L.P., Cavalcante de lima H., Suganuma E., Van den berg C., & Lavin M. 2013. A molecular phylogeny of the Vataireoid legumes underscores floral evolvability that is general to many early-branching papilionoid lineages. American Journal of Botany, 100(2): 403-421.", 
 "^ot:studyYear": 2013, 
 "^ot:tag": [], 
@@ -504,16 +588,20 @@
 ], 
 "treeById": {
 "tree4424": {
+"@label": "Untitled (tree4424)", 
 "@xsi:type": "nex:FloatTree", 
 "^ot:branchLengthDescription": "", 
 "^ot:branchLengthMode": "", 
 "^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "Fig. 1", 
 "^ot:inGroupClade": "node802320", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
 "^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node802308", 
 "^ot:specifiedRoot": "", 
 "^ot:tag": [], 
+"^ot:unrootedTree": true, 
 "edgeBySourceId": {
 "node802308": {
 "edge802309": {
@@ -1485,16 +1573,20 @@
 }
 }, 
 "tree4425": {
+"@label": "Untitled (tree4425)", 
 "@xsi:type": "nex:FloatTree", 
 "^ot:branchLengthDescription": "", 
 "^ot:branchLengthMode": "", 
 "^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "Fig. S", 
 "^ot:inGroupClade": "node802443", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
 "^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node802429", 
 "^ot:specifiedRoot": "", 
 "^ot:tag": [], 
+"^ot:unrootedTree": true, 
 "edgeBySourceId": {
 "node802429": {
 "edge802430": {
@@ -2586,16 +2678,20 @@
 }
 }, 
 "tree4426": {
+"@label": "Untitled (tree4426)", 
 "@xsi:type": "nex:FloatTree", 
 "^ot:branchLengthDescription": "", 
 "^ot:branchLengthMode": "", 
 "^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "Fig. 2", 
 "^ot:inGroupClade": "node802581", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
 "^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node802565", 
-"^ot:specifiedRoot": "", 
+"^ot:specifiedRoot": "node802565", 
 "^ot:tag": [], 
+"^ot:unrootedTree": false, 
 "edgeBySourceId": {
 "node802565": {
 "edge802566": {
@@ -3209,10 +3305,12 @@
 }, 
 "node802571": {}, 
 "node802572": {
-"@otu": "otu314011"
+"@otu": "otu314011", 
+"^ot:isTaxonExemplar": true
 }, 
 "node802573": {
-"@otu": "otu314043"
+"@otu": "otu314043", 
+"^ot:isTaxonExemplar": false
 }, 
 "node802574": {}, 
 "node802575": {
@@ -3250,21 +3348,26 @@
 }, 
 "node802592": {}, 
 "node802593": {
-"@otu": "otu314012"
+"@otu": "otu314012", 
+"^ot:isTaxonExemplar": true
 }, 
 "node802594": {
-"@otu": "otu313999"
+"@otu": "otu313999", 
+"^ot:isTaxonExemplar": false
 }, 
 "node802595": {
-"@otu": "otu314027"
+"@otu": "otu314027", 
+"^ot:isTaxonExemplar": false
 }, 
 "node802596": {}, 
 "node802597": {}, 
 "node802598": {
-"@otu": "otu314055"
+"@otu": "otu314055", 
+"^ot:isTaxonExemplar": true
 }, 
 "node802599": {
-"@otu": "otu314023"
+"@otu": "otu314023", 
+"^ot:isTaxonExemplar": false
 }, 
 "node802600": {}, 
 "node802601": {
@@ -3280,10 +3383,12 @@
 "node802605": {}, 
 "node802606": {}, 
 "node802607": {
-"@otu": "otu314001"
+"@otu": "otu314001", 
+"^ot:isTaxonExemplar": true
 }, 
 "node802608": {
-"@otu": "otu314031"
+"@otu": "otu314031", 
+"^ot:isTaxonExemplar": false
 }, 
 "node802609": {}, 
 "node802610": {
@@ -3306,10 +3411,12 @@
 }, 
 "node802618": {}, 
 "node802619": {
-"@otu": "otu314051"
+"@otu": "otu314051", 
+"^ot:isTaxonExemplar": true
 }, 
 "node802620": {
-"@otu": "otu314016"
+"@otu": "otu314016", 
+"^ot:isTaxonExemplar": false
 }, 
 "node802621": {}, 
 "node802622": {}, 
@@ -3348,13 +3455,16 @@
 }, 
 "node802636": {}, 
 "node802637": {
-"@otu": "otu314041"
+"@otu": "otu314041", 
+"^ot:isTaxonExemplar": true
 }, 
 "node802638": {
-"@otu": "otu314065"
+"@otu": "otu314065", 
+"^ot:isTaxonExemplar": false
 }, 
 "node802639": {
-"@otu": "otu314017"
+"@otu": "otu314017", 
+"^ot:isTaxonExemplar": false
 }, 
 "node802640": {
 "@otu": "otu314029"
@@ -3390,17 +3500,21 @@
 }, 
 "node802654": {}, 
 "node802655": {
-"@otu": "otu314064"
+"@otu": "otu314064", 
+"^ot:isTaxonExemplar": true
 }, 
 "node802656": {
-"@otu": "otu314060"
+"@otu": "otu314060", 
+"^ot:isTaxonExemplar": false
 }, 
 "node802657": {}, 
 "node802658": {
-"@otu": "otu314063"
+"@otu": "otu314063", 
+"^ot:isTaxonExemplar": true
 }, 
 "node802659": {
-"@otu": "otu314021"
+"@otu": "otu314021", 
+"^ot:isTaxonExemplar": false
 }, 
 "node802660": {}, 
 "node802661": {}, 
@@ -3419,10 +3533,12 @@
 }, 
 "node802667": {}, 
 "node802668": {
-"@otu": "otu314036"
+"@otu": "otu314036", 
+"^ot:isTaxonExemplar": true
 }, 
 "node802669": {
-"@otu": "otu314032"
+"@otu": "otu314032", 
+"^ot:isTaxonExemplar": false
 }, 
 "node802670": {
 "@otu": "otu314050"
@@ -3457,10 +3573,12 @@
 }, 
 "node802685": {}, 
 "node802686": {
-"@otu": "otu314004"
+"@otu": "otu314004", 
+"^ot:isTaxonExemplar": true
 }, 
 "node802687": {
-"@otu": "otu314067"
+"@otu": "otu314067", 
+"^ot:isTaxonExemplar": false
 }, 
 "node802688": {
 "@otu": "otu314048"

@@ -36,22 +36,99 @@
 }
 ]
 }
+}, 
+{
+"@description": "Web-based interface for submitting, editing, and reviewing studies in the Open Tree of Life project.", 
+"@id": "opentree-curation-webapp", 
+"@name": "OpenTree curation webapp", 
+"@url": "https://github.com/OpenTreeOfLife/opentree", 
+"@version": "0.0.0"
 }
 ]
 }, 
 "^ot:annotationEvents": {
-"annotation": []
+"annotation": [
+{
+"@dateCreated": "2015-09-28T17:51:59.526Z", 
+"@description": "Aids for mapping study OTUs to OTT taxa", 
+"@id": "otu-mapping-hints", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "OTU_MAPPING_HINTS", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"searchContext": {
+"$": "All life"
 }, 
-"^ot:candidateTreeForSynthesis": [], 
-"^ot:curatorName": "Romina Gazis", 
+"substitutions": {
+"substitution": [
+{
+"@active": false, 
+"@valid": true, 
+"new": {
+"$": ""
+}, 
+"old": {
+"$": ""
+}
+}
+]
+}, 
+"useFuzzyMatching": false
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}, 
+{
+"@dateCreated": "2015-09-28T17:51:59.525Z", 
+"@description": "Describes supporting data files for this study", 
+"@id": "supporting-files-metadata", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "SUPPORTING_FILE_INFO", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"@movedToPermanentArchive": false, 
+"files": {
+"file": []
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}
+]
+}, 
+"^ot:candidateTreeForSynthesis": [
+"tree4823"
+], 
+"^ot:comment": "", 
+"^ot:curatorName": [
+"Romina Gazis"
+], 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S10939"
 }, 
 "^ot:focalClade": 788384, 
 "^ot:focalCladeOTTTaxonName": "Calonectria", 
-"^ot:messages": {
-"message": []
-}, 
+"^ot:notIntendedForSynthesis": false, 
 "^ot:otusElementOrder": [
 "otus2276"
 ], 
@@ -65,6 +142,10 @@
 "^ot:treesElementOrder": [
 "trees2276"
 ], 
+"^xhtml:license": {
+"@href": "http://creativecommons.org/publicdomain/zero/1.0/", 
+"@name": "CC0"
+}, 
 "otusById": {
 "otus2276": {
 "otuById": {
@@ -271,16 +352,22 @@
 ], 
 "treeById": {
 "tree4823": {
+"@label": "Fig1.Single most parsimonious trees obtained from a heuristic search with 100 random taxon additions of the \u03b2-tubulin sequence alignment. The scale bar shows 10 changes and bootstrap support values from 1000 replicates are shown at the nodes. The tree was rooted to Cylindrocladiella lageniformis ", 
 "@xsi:type": "nex:FloatTree", 
 "^ot:branchLengthDescription": "", 
-"^ot:branchLengthMode": "", 
-"^ot:branchLengthTimeUnit": "", 
-"^ot:curatedType": "MP, b-tubulin", 
+"^ot:branchLengthMode": "ot:changesCount", 
+"^ot:branchLengthTimeUnit": "Myr", 
+"^ot:curatedType": "Maximum parsimony ", 
 "^ot:inGroupClade": "node844435", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
 "^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node844434", 
-"^ot:specifiedRoot": "", 
-"^ot:tag": [], 
+"^ot:specifiedRoot": "node844434", 
+"^ot:tag": [
+"b-tubulin"
+], 
+"^ot:unrootedTree": false, 
 "edgeBySourceId": {
 "node844434": {
 "edge844435": {
@@ -538,101 +625,127 @@
 "node844439": {}, 
 "node844440": {}, 
 "node844441": {
-"@otu": "otu326512"
+"@otu": "otu326512", 
+"^ot:isTaxonExemplar": false
 }, 
 "node844442": {}, 
 "node844443": {
-"@otu": "otu326522"
+"@otu": "otu326522", 
+"^ot:isTaxonExemplar": false
 }, 
 "node844444": {
-"@otu": "otu326518"
+"@otu": "otu326518", 
+"^ot:isTaxonExemplar": false
 }, 
 "node844445": {
-"@otu": "otu326527"
+"@otu": "otu326527", 
+"^ot:isTaxonExemplar": false
 }, 
 "node844446": {
-"@otu": "otu326513"
+"@otu": "otu326513", 
+"^ot:isTaxonExemplar": false
 }, 
 "node844447": {
-"@otu": "otu326504"
+"@otu": "otu326504", 
+"^ot:isTaxonExemplar": true
 }, 
 "node844448": {
 "@otu": "otu326506"
 }, 
 "node844449": {}, 
 "node844450": {
-"@otu": "otu326529"
+"@otu": "otu326529", 
+"^ot:isTaxonExemplar": true
 }, 
 "node844451": {
-"@otu": "otu326524"
+"@otu": "otu326524", 
+"^ot:isTaxonExemplar": false
 }, 
 "node844452": {
 "@otu": "otu326515"
 }, 
 "node844453": {}, 
 "node844454": {
-"@otu": "otu326528"
+"@otu": "otu326528", 
+"^ot:isTaxonExemplar": true
 }, 
 "node844455": {}, 
 "node844456": {
-"@otu": "otu326510"
+"@otu": "otu326510", 
+"^ot:isTaxonExemplar": false
 }, 
 "node844457": {
-"@otu": "otu326517"
+"@otu": "otu326517", 
+"^ot:isTaxonExemplar": false
 }, 
 "node844458": {}, 
 "node844459": {}, 
 "node844460": {}, 
 "node844461": {}, 
 "node844462": {
-"@otu": "otu326523"
+"@otu": "otu326523", 
+"^ot:isTaxonExemplar": false
 }, 
 "node844463": {
-"@otu": "otu326525"
+"@otu": "otu326525", 
+"^ot:isTaxonExemplar": false
 }, 
 "node844464": {
-"@otu": "otu326530"
+"@otu": "otu326530", 
+"^ot:isTaxonExemplar": false
 }, 
 "node844465": {
-"@otu": "otu326516"
+"@otu": "otu326516", 
+"^ot:isTaxonExemplar": false
 }, 
 "node844466": {
-"@otu": "otu326534"
+"@otu": "otu326534", 
+"^ot:isTaxonExemplar": false
 }, 
 "node844467": {
-"@otu": "otu326520"
+"@otu": "otu326520", 
+"^ot:isTaxonExemplar": false
 }, 
 "node844468": {
-"@otu": "otu326505"
+"@otu": "otu326505", 
+"^ot:isTaxonExemplar": false
 }, 
 "node844469": {
-"@otu": "otu326509"
+"@otu": "otu326509", 
+"^ot:isTaxonExemplar": true
 }, 
 "node844470": {}, 
 "node844471": {
-"@otu": "otu326514"
+"@otu": "otu326514", 
+"^ot:isTaxonExemplar": false
 }, 
 "node844472": {
-"@otu": "otu326533"
+"@otu": "otu326533", 
+"^ot:isTaxonExemplar": false
 }, 
 "node844473": {
-"@otu": "otu326531"
+"@otu": "otu326531", 
+"^ot:isTaxonExemplar": false
 }, 
 "node844474": {}, 
 "node844475": {}, 
 "node844476": {}, 
 "node844477": {
-"@otu": "otu326526"
+"@otu": "otu326526", 
+"^ot:isTaxonExemplar": true
 }, 
 "node844478": {
-"@otu": "otu326521"
+"@otu": "otu326521", 
+"^ot:isTaxonExemplar": false
 }, 
 "node844479": {}, 
 "node844480": {
-"@otu": "otu326519"
+"@otu": "otu326519", 
+"^ot:isTaxonExemplar": true
 }, 
 "node844481": {
-"@otu": "otu326507"
+"@otu": "otu326507", 
+"^ot:isTaxonExemplar": false
 }, 
 "node844482": {
 "@otu": "otu326508"
@@ -641,7 +754,8 @@
 "@otu": "otu326532"
 }, 
 "node844484": {
-"@otu": "otu326511"
+"@otu": "otu326511", 
+"^ot:isTaxonExemplar": false
 }, 
 "node844485": {
 "@otu": "otu326503"

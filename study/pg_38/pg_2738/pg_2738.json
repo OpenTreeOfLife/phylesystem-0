@@ -15,16 +15,13 @@
 "^ot:agents": {
 "agent": [
 {
-"@description": "validator of NexSON constraints as well as constraints that would allow a study to be imported into the Open Tree of Life's phylogenetic synthesis tools", 
+"@description": "Open Tree NexSON validation", 
 "@id": "peyotl-validator", 
-"@name": "validate_ot_nexson.py", 
+"@name": "api.opentreeoflife.org/validate", 
 "@url": "https://github.com/OpenTreeOfLife/peyotl", 
 "@version": "0.0.4a", 
 "invocation": {
-"commandLine": [
-"--embed", 
-"--agent-only"
-], 
+"commandLine": [], 
 "otherProperty": [
 {
 "name": "pythonVersion", 
@@ -49,7 +46,7 @@
 "^ot:annotationEvents": {
 "annotation": [
 {
-"@dateCreated": "2016-02-16T19:07:40.166Z", 
+"@dateCreated": "2014-07-27T12:35:38.142Z", 
 "@description": "Aids for mapping study OTUs to OTT taxa", 
 "@id": "otu-mapping-hints", 
 "@passedChecks": true, 
@@ -62,7 +59,7 @@
 "@severity": "INFO", 
 "data": {
 "searchContext": {
-"$": "ERROR"
+"$": "Bacteria"
 }, 
 "substitutions": {
 "substitution": [
@@ -77,8 +74,7 @@
 }
 }
 ]
-}, 
-"useFuzzyMatching": false
+}
 }, 
 "refersTo": {
 "@top": {
@@ -89,7 +85,7 @@
 ]
 }, 
 {
-"@dateCreated": "2016-02-16T19:07:40.166Z", 
+"@dateCreated": "2014-07-27T12:35:38.142Z", 
 "@description": "Describes supporting data files for this study", 
 "@id": "supporting-files-metadata", 
 "@passedChecks": true, 
@@ -116,11 +112,14 @@
 }
 ]
 }, 
-"^ot:candidateTreeForSynthesis": [], 
+"^ot:candidateTreeForSynthesis": [
+"tree6324", 
+"tree6323"
+], 
 "^ot:comment": "", 
 "^ot:curatorName": [
 "Dail Laughinghouse", 
-"Benjamin Redelings"
+"Joseph W. Brown"
 ], 
 "^ot:dataDeposit": {
 "@href": ""
@@ -133,14 +132,18 @@
 ], 
 "^ot:studyId": "pg_2738", 
 "^ot:studyPublication": {
-"@href": ""
+"@href": "http://www.fottea.cz/_contents/F12-2-2012-12.pdf"
 }, 
-"^ot:studyPublicationReference": "Hedy J. Kling, H. Dail Laughinghouse IV, Jan \u0160marda, Ji\u0159\u00ed Kom\u00e1rek, Judy \r\nAcreman, Karl Bruun, Sue B. Watson & Feng Chen. 2012  A new red colonial Pseudanabaena (Cyanoprokaryota, Oscillatoriales) from North American large lakes. Fottea, Olomouc, 12(2): 327\u2013339.", 
+"^ot:studyPublicationReference": "Kling, Hedy J., H. Dail Laughinghouse IV, Jan \u0160marda, Ji\u0159\u00ed Kom\u00e1rek, Judy \nAcreman, Karl Bruun, Sue B. Watson & Feng Chen. 2012.  A new red colonial Pseudanabaena (Cyanoprokaryota, Oscillatoriales) from North American large lakes. Fottea, Olomouc, 12 (2): 327\u2013339.", 
 "^ot:studyYear": 2012, 
 "^ot:tag": [], 
 "^ot:treesElementOrder": [
 "trees2738"
 ], 
+"^xhtml:license": {
+"@href": "http://creativecommons.org/publicdomain/zero/1.0/", 
+"@name": "CC0"
+}, 
 "otusById": {
 "otus2738": {
 "otuById": {
@@ -591,20 +594,19 @@
 ], 
 "treeById": {
 "tree6323": {
-"@label": "Untitled (tree6323)", 
+"@label": "Fig. 6 (16S)", 
 "@xsi:type": "nex:FloatTree", 
 "^ot:branchLengthDescription": "", 
 "^ot:branchLengthMode": "ot:substitutionCount", 
-"^ot:branchLengthTimeUnit": "", 
-"^ot:curatedType": "Figure 6", 
+"^ot:curatedType": "Bayesian inference ", 
 "^ot:inGroupClade": "node1098494", 
 "^ot:nodeLabelMode": "", 
 "^ot:nodeLabelTimeUnit": "", 
 "^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node1098493", 
-"^ot:specifiedRoot": "", 
+"^ot:specifiedRoot": "node1098493", 
 "^ot:tag": [], 
-"^ot:unrootedTree": true, 
+"^ot:unrootedTree": false, 
 "edgeBySourceId": {
 "node1098493": {
 "edge1098494": {
@@ -1296,22 +1298,26 @@
 }
 }, 
 "tree6324": {
-"@label": "Untitled (tree6324)", 
+"@label": "Fig. 7 (ITS)", 
 "@xsi:type": "nex:FloatTree", 
 "^ot:branchLengthDescription": "", 
 "^ot:branchLengthMode": "ot:substitutionCount", 
-"^ot:branchLengthTimeUnit": "Myr", 
-"^ot:curatedType": "Fig. 7", 
-"^ot:inGroupClade": "tree6324_ROOT", 
+"^ot:curatedType": "Maximum likelihood ", 
+"^ot:inGroupClade": "node1098580", 
 "^ot:nodeLabelMode": "", 
 "^ot:nodeLabelTimeUnit": "", 
 "^ot:outGroupEdge": "", 
-"^ot:rootNodeId": "tree6324_ROOT", 
-"^ot:specifiedRoot": "tree6324_ROOT", 
+"^ot:rootNodeId": "node1098579", 
+"^ot:specifiedRoot": "node1098579", 
 "^ot:tag": [], 
-"^ot:unrootedTree": true, 
+"^ot:unrootedTree": false, 
 "edgeBySourceId": {
 "node1098579": {
+"edge1098580": {
+"@length": 0.0543981, 
+"@source": "node1098579", 
+"@target": "node1098580"
+}, 
 "edge1098655": {
 "@length": 0.23872613, 
 "@source": "node1098579", 
@@ -1324,10 +1330,10 @@
 }
 }, 
 "node1098580": {
-"edge1098580": {
-"@length": 0.0543981, 
+"edge1098581": {
+"@length": 0.01525096, 
 "@source": "node1098580", 
-"@target": "node1098579"
+"@target": "node1098581"
 }, 
 "edge1098652": {
 "@length": 0.23162518, 
@@ -1336,10 +1342,10 @@
 }
 }, 
 "node1098581": {
-"edge1098581": {
-"@length": 0.01525096, 
+"edge1098582": {
+"@length": 0.00368135, 
 "@source": "node1098581", 
-"@target": "node1098580"
+"@target": "node1098582"
 }, 
 "edge1098643": {
 "@length": 0.03513429, 
@@ -1348,10 +1354,10 @@
 }
 }, 
 "node1098582": {
-"edge1098582": {
-"@length": 0.00368135, 
+"edge1098583": {
+"@length": 0.05654862, 
 "@source": "node1098582", 
-"@target": "node1098581"
+"@target": "node1098583"
 }, 
 "edge1098630": {
 "@length": 0.04450166, 
@@ -1360,10 +1366,10 @@
 }
 }, 
 "node1098583": {
-"edge1098583": {
-"@length": 0.05654862, 
+"edge1098584": {
+"@length": 0.00779689, 
 "@source": "node1098583", 
-"@target": "node1098582"
+"@target": "node1098584"
 }, 
 "edge1098629": {
 "@length": 0.23784033, 
@@ -1372,10 +1378,10 @@
 }
 }, 
 "node1098584": {
-"edge1098584": {
-"@length": 0.00779689, 
+"edge1098585": {
+"@length": 0.29979771, 
 "@source": "node1098584", 
-"@target": "node1098583"
+"@target": "node1098585"
 }, 
 "edge1098626": {
 "@length": 0.0591259, 
@@ -1773,21 +1779,12 @@
 "@source": "node1098655", 
 "@target": "node1098657"
 }
-}, 
-"tree6324_ROOT": {
-"edge1098585": {
-"@length": 0.29979771, 
-"@source": "tree6324_ROOT", 
-"@target": "node1098585"
-}, 
-"tree6324_ROOT_EDGE": {
-"@source": "tree6324_ROOT", 
-"@target": "node1098584"
-}
 }
 }, 
 "nodeById": {
-"node1098579": {}, 
+"node1098579": {
+"@root": true
+}, 
 "node1098580": {}, 
 "node1098581": {}, 
 "node1098582": {}, 
@@ -1897,10 +1894,12 @@
 "node1098634": {}, 
 "node1098635": {}, 
 "node1098636": {
-"@otu": "otu408198"
+"@otu": "otu408198", 
+"^ot:isTaxonExemplar": true
 }, 
 "node1098637": {
-"@otu": "otu408199"
+"@otu": "otu408199", 
+"^ot:isTaxonExemplar": false
 }, 
 "node1098638": {}, 
 "node1098639": {
@@ -1948,9 +1947,6 @@
 }, 
 "node1098658": {
 "@otu": "otu408212"
-}, 
-"tree6324_ROOT": {
-"@root": true
 }
 }
 }

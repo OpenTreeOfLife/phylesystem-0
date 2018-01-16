@@ -36,20 +36,99 @@
 }
 ]
 }
+}, 
+{
+"@description": "Web-based interface for submitting, editing, and reviewing studies in the Open Tree of Life project.", 
+"@id": "opentree-curation-webapp", 
+"@name": "OpenTree curation webapp", 
+"@url": "https://github.com/OpenTreeOfLife/opentree", 
+"@version": "0.0.0"
 }
 ]
 }, 
 "^ot:annotationEvents": {
-"annotation": []
+"annotation": [
+{
+"@dateCreated": "2015-12-09T21:09:09.416Z", 
+"@description": "Aids for mapping study OTUs to OTT taxa", 
+"@id": "otu-mapping-hints", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "OTU_MAPPING_HINTS", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"searchContext": {
+"$": "Birds"
 }, 
-"^ot:candidateTreeForSynthesis": [], 
-"^ot:curatorName": "Chris Owen", 
+"substitutions": {
+"substitution": [
+{
+"@active": false, 
+"@valid": true, 
+"new": {
+"$": ""
+}, 
+"old": {
+"$": ""
+}
+}
+]
+}, 
+"useFuzzyMatching": false
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}, 
+{
+"@dateCreated": "2015-12-09T21:09:09.416Z", 
+"@description": "Describes supporting data files for this study", 
+"@id": "supporting-files-metadata", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "SUPPORTING_FILE_INFO", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"@movedToPermanentArchive": false, 
+"files": {
+"file": []
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}
+]
+}, 
+"^ot:candidateTreeForSynthesis": [
+"tree6023"
+], 
+"^ot:comment": "", 
+"^ot:curatorName": [
+"Chris Owen", 
+"Joseph W. Brown"
+], 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S10770"
 }, 
-"^ot:messages": {
-"message": []
-}, 
+"^ot:focalCladeOTTTaxonName": "", 
+"^ot:notIntendedForSynthesis": false, 
 "^ot:otusElementOrder": [
 "otus2419"
 ], 
@@ -57,7 +136,7 @@
 "^ot:studyPublication": {
 "@href": "http://dx.doi.org/10.1038/nature09705"
 }, 
-"^ot:studyPublicationReference": "Thuiller W., Lavergne S., Roquet C., Boulangeat I., Lafourcade B., & Araujo M.B. 2011. Consequences of climate change on the tree of life in Europe. Nature 470 (7335): 531-534.", 
+"^ot:studyPublicationReference": "Thuiller, Wilfried, S\u00e9bastien Lavergne, Cristina Roquet, Isabelle Boulangeat, Bruno Lafourcade, Miguel. B. Araujo. 2011. Consequences of climate change on the tree of life in Europe. Nature 470 (7335): 531-534.", 
 "^ot:studyYear": 2011, 
 "^ot:tag": [], 
 "^ot:treesElementOrder": [
@@ -3804,6 +3883,8 @@
 }, 
 "otu344070": {
 "^ot:originalLabel": "Regulus ignicapillus", 
+"^ot:ottId": 3599741, 
+"^ot:ottTaxonName": "Regulus ignicapilla", 
 "^ot:treebaseOTUId": "Tl473692"
 }, 
 "otu344071": {
@@ -3838,6 +3919,8 @@
 }, 
 "otu344076": {
 "^ot:originalLabel": "Regulus regulus", 
+"^ot:ottId": 3599889, 
+"^ot:ottTaxonName": "Regulus regulus", 
 "^ot:treebaseOTUId": "Tl473698"
 }, 
 "otu344077": {
@@ -4160,6 +4243,8 @@
 }, 
 "otu344130": {
 "^ot:originalLabel": "Panurus biarmicus", 
+"^ot:ottId": 3599884, 
+"^ot:ottTaxonName": "Panurus biarmicus", 
 "^ot:treebaseOTUId": "Tl473752"
 }, 
 "otu344131": {
@@ -4770,6 +4855,8 @@
 }, 
 "otu344232": {
 "^ot:originalLabel": "Parus caeruleus", 
+"^ot:ottId": 746120, 
+"^ot:ottTaxonName": "Cyanistes caeruleus", 
 "^ot:treebaseOTUId": "Tl473854"
 }, 
 "otu344233": {
@@ -4910,15 +4997,20 @@
 ], 
 "treeById": {
 "tree5107": {
+"@label": "Untitled (tree5107)", 
 "@xsi:type": "nex:FloatTree", 
 "^ot:branchLengthDescription": "", 
 "^ot:branchLengthMode": "ot:substitutionCount", 
 "^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "Atlas Flora Europaea-ML", 
+"^ot:inGroupClade": "", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
 "^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node885216", 
 "^ot:specifiedRoot": "", 
 "^ot:tag": [], 
+"^ot:unrootedTree": true, 
 "edgeBySourceId": {
 "node885216": {
 "edge885217": {
@@ -10962,16 +11054,20 @@
 }
 }, 
 "tree6023": {
+"@label": "Aves ML", 
 "@xsi:type": "nex:FloatTree", 
 "^ot:branchLengthDescription": "", 
 "^ot:branchLengthMode": "ot:substitutionCount", 
-"^ot:branchLengthTimeUnit": "", 
-"^ot:curatedType": "Aves ML", 
+"^ot:branchLengthTimeUnit": "Myr", 
+"^ot:curatedType": "Maximum likelihood ", 
 "^ot:inGroupClade": "node1031295", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
 "^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node1031294", 
-"^ot:specifiedRoot": "", 
+"^ot:specifiedRoot": "node1031294", 
 "^ot:tag": [], 
+"^ot:unrootedTree": false, 
 "edgeBySourceId": {
 "node1031294": {
 "edge1031295": {

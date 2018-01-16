@@ -36,14 +36,92 @@
 }
 ]
 }
+}, 
+{
+"@description": "Web-based interface for submitting, editing, and reviewing studies in the Open Tree of Life project.", 
+"@id": "opentree-curation-webapp", 
+"@name": "OpenTree curation webapp", 
+"@url": "https://github.com/OpenTreeOfLife/opentree", 
+"@version": "0.0.0"
 }
 ]
 }, 
 "^ot:annotationEvents": {
-"annotation": []
+"annotation": [
+{
+"@dateCreated": "2014-06-12T04:04:20.664Z", 
+"@description": "Aids for mapping study OTUs to OTT taxa", 
+"@id": "otu-mapping-hints", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "OTU_MAPPING_HINTS", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"searchContext": {
+"$": "All life"
 }, 
-"^ot:candidateTreeForSynthesis": [], 
-"^ot:curatorName": "Rick Ree", 
+"substitutions": {
+"substitution": [
+{
+"@active": false, 
+"@valid": true, 
+"new": {
+"$": ""
+}, 
+"old": {
+"$": ""
+}
+}
+]
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}, 
+{
+"@dateCreated": "2014-06-12T04:04:20.664Z", 
+"@description": "Describes supporting data files for this study", 
+"@id": "supporting-files-metadata", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "SUPPORTING_FILE_INFO", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"@movedToPermanentArchive": false, 
+"files": {
+"file": []
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}
+]
+}, 
+"^ot:candidateTreeForSynthesis": [
+"tree1"
+], 
+"^ot:curatorName": [
+"Rick Ree", 
+"Mark T. Holder"
+], 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S10149"
 }, 
@@ -52,16 +130,19 @@
 "^ot:messages": {
 "message": []
 }, 
+"^ot:notIntendedForSynthesis": false, 
 "^ot:otusElementOrder": [
 "otus9"
 ], 
-"^ot:studyId": "pg_9", 
+"^ot:studyId": "pg_09", 
 "^ot:studyPublication": {
 "@href": "http://dx.doi.org/10.1600/036364410791638306"
 }, 
 "^ot:studyPublicationReference": "Tank, David C., and Michael J. Donoghue. 2010. Phylogeny and Phylogenetic Nomenclature of the Campanulidae based on an Expanded Sample of Genes and Taxa. Systematic Botany 35, no. 2 (6): 425-441. doi:10.1600/036364410791638306.", 
 "^ot:studyYear": 2010, 
-"^ot:tag": [], 
+"^ot:tag": [
+"testtag"
+], 
 "^ot:treesElementOrder": [
 "trees9"
 ], 
@@ -715,6 +796,7 @@
 ], 
 "treeById": {
 "tree1": {
+"@label": "Untitled (tree1)", 
 "@xsi:type": "nex:FloatTree", 
 "^ot:branchLengthDescription": "", 
 "^ot:branchLengthMode": "ot:substitutionCount", 
@@ -723,8 +805,9 @@
 "^ot:inGroupClade": "node3", 
 "^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node1", 
-"^ot:specifiedRoot": "", 
+"^ot:specifiedRoot": "node1", 
 "^ot:tag": [], 
+"^ot:unrootedTree": false, 
 "edgeBySourceId": {
 "node1": {
 "edge2": {
@@ -2736,1524 +2819,1527 @@
 }
 }, 
 "tree2": {
+"@label": "Untitled (tree2)", 
 "@xsi:type": "nex:FloatTree", 
 "^ot:branchLengthDescription": "", 
 "^ot:branchLengthMode": "ot:substitutionCount", 
 "^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "ML bootstrap consensus", 
+"^ot:inGroupClade": "", 
 "^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node252", 
 "^ot:specifiedRoot": "", 
 "^ot:tag": [], 
+"^ot:unrootedTree": true, 
 "edgeBySourceId": {
 "node252": {
 "edge253": {
-"@length": 1.0, 
+"@length": 1, 
 "@source": "node252", 
 "@target": "node253"
 }, 
 "edge504": {
-"@length": 20.0, 
+"@length": 20, 
 "@source": "node252", 
 "@target": "node504"
 }
 }, 
 "node253": {
 "edge254": {
-"@length": 1.0, 
+"@length": 1, 
 "@source": "node253", 
 "@target": "node254"
 }, 
 "edge497": {
-"@length": 17.0, 
+"@length": 17, 
 "@source": "node253", 
 "@target": "node497"
 }
 }, 
 "node254": {
 "edge255": {
-"@length": 1.0, 
+"@length": 1, 
 "@source": "node254", 
 "@target": "node255"
 }, 
 "edge480": {
-"@length": 14.0, 
+"@length": 14, 
 "@source": "node254", 
 "@target": "node480"
 }
 }, 
 "node255": {
 "edge256": {
-"@length": 1.0, 
+"@length": 1, 
 "@source": "node255", 
 "@target": "node256"
 }, 
 "edge401": {
-"@length": 5.0, 
+"@length": 5, 
 "@source": "node255", 
 "@target": "node401"
 }
 }, 
 "node256": {
 "edge257": {
-"@length": 1.0, 
+"@length": 1, 
 "@source": "node256", 
 "@target": "node257"
 }, 
 "edge388": {
-"@length": 10.0, 
+"@length": 10, 
 "@source": "node256", 
 "@target": "node388"
 }
 }, 
 "node257": {
 "edge258": {
-"@length": 1.0, 
+"@length": 1, 
 "@source": "node257", 
 "@target": "node258"
 }, 
 "edge381": {
-"@length": 13.0, 
+"@length": 13, 
 "@source": "node257", 
 "@target": "node381"
 }
 }, 
 "node258": {
 "edge259": {
-"@length": 3.0, 
+"@length": 3, 
 "@source": "node258", 
 "@target": "node259"
 }, 
 "edge324": {
-"@length": 1.0, 
+"@length": 1, 
 "@source": "node258", 
 "@target": "node324"
 }
 }, 
 "node259": {
 "edge260": {
-"@length": 1.0, 
+"@length": 1, 
 "@source": "node259", 
 "@target": "node260"
 }, 
 "edge319": {
-"@length": 9.0, 
+"@length": 9, 
 "@source": "node259", 
 "@target": "node319"
 }
 }, 
 "node260": {
 "edge261": {
-"@length": 1.0, 
+"@length": 1, 
 "@source": "node260", 
 "@target": "node261"
 }, 
 "edge310": {
-"@length": 6.0, 
+"@length": 6, 
 "@source": "node260", 
 "@target": "node310"
 }
 }, 
 "node261": {
 "edge262": {
-"@length": 1.0, 
+"@length": 1, 
 "@source": "node261", 
 "@target": "node262"
 }, 
 "edge307": {
-"@length": 8.0, 
+"@length": 8, 
 "@source": "node261", 
 "@target": "node307"
 }
 }, 
 "node262": {
 "edge263": {
-"@length": 1.0, 
+"@length": 1, 
 "@source": "node262", 
 "@target": "node263"
 }, 
 "edge298": {
-"@length": 4.0, 
+"@length": 4, 
 "@source": "node262", 
 "@target": "node298"
 }
 }, 
 "node263": {
 "edge264": {
-"@length": 1.0, 
+"@length": 1, 
 "@source": "node263", 
 "@target": "node264"
 }, 
 "edge291": {
-"@length": 4.0, 
+"@length": 4, 
 "@source": "node263", 
 "@target": "node291"
 }
 }, 
 "node264": {
 "edge265": {
-"@length": 1.0, 
+"@length": 1, 
 "@source": "node264", 
 "@target": "node265"
 }, 
 "edge284": {
-"@length": 3.0, 
+"@length": 3, 
 "@source": "node264", 
 "@target": "node284"
 }
 }, 
 "node265": {
 "edge266": {
-"@length": 1.0, 
+"@length": 1, 
 "@source": "node265", 
 "@target": "node266"
 }, 
 "edge277": {
-"@length": 2.0, 
+"@length": 2, 
 "@source": "node265", 
 "@target": "node277"
 }
 }, 
 "node266": {
 "edge267": {
-"@length": 1.0, 
+"@length": 1, 
 "@source": "node266", 
 "@target": "node267"
 }, 
 "edge276": {
-"@length": 4.0, 
+"@length": 4, 
 "@source": "node266", 
 "@target": "node276"
 }
 }, 
 "node267": {
 "edge268": {
-"@length": 1.0, 
+"@length": 1, 
 "@source": "node267", 
 "@target": "node268"
 }, 
 "edge275": {
-"@length": 3.0, 
+"@length": 3, 
 "@source": "node267", 
 "@target": "node275"
 }
 }, 
 "node268": {
 "edge269": {
-"@length": 1.0, 
+"@length": 1, 
 "@source": "node268", 
 "@target": "node269"
 }, 
 "edge272": {
-"@length": 1.0, 
+"@length": 1, 
 "@source": "node268", 
 "@target": "node272"
 }
 }, 
 "node269": {
 "edge270": {
-"@length": 1.0, 
+"@length": 1, 
 "@source": "node269", 
 "@target": "node270"
 }, 
 "edge271": {
-"@length": 1.0, 
+"@length": 1, 
 "@source": "node269", 
 "@target": "node271"
 }
 }, 
 "node272": {
 "edge273": {
-"@length": 1.0, 
+"@length": 1, 
 "@source": "node272", 
 "@target": "node273"
 }, 
 "edge274": {
-"@length": 1.0, 
+"@length": 1, 
 "@source": "node272", 
 "@target": "node274"
 }
 }, 
 "node277": {
 "edge278": {
-"@length": 1.0, 
+"@length": 1, 
 "@source": "node277", 
 "@target": "node278"
 }, 
 "edge283": {
-"@length": 3.0, 
+"@length": 3, 
 "@source": "node277", 
 "@target": "node283"
 }
 }, 
 "node278": {
 "edge279": {
-"@length": 1.0, 
+"@length": 1, 
 "@source": "node278", 
 "@target": "node279"
 }, 
 "edge282": {
-"@length": 2.0, 
+"@length": 2, 
 "@source": "node278", 
 "@target": "node282"
 }
 }, 
 "node279": {
 "edge280": {
-"@length": 1.0, 
+"@length": 1, 
 "@source": "node279", 
 "@target": "node280"
 }, 
 "edge281": {
-"@length": 1.0, 
+"@length": 1, 
 "@source": "node279", 
 "@target": "node281"
 }
 }, 
 "node284": {
 "edge285": {
-"@length": 1.0, 
+"@length": 1, 
 "@source": "node284", 
 "@target": "node285"
 }, 
 "edge290": {
-"@length": 3.0, 
+"@length": 3, 
 "@source": "node284", 
 "@target": "node290"
 }
 }, 
 "node285": {
 "edge286": {
-"@length": 1.0, 
+"@length": 1, 
 "@source": "node285", 
 "@target": "node286"
 }, 
 "edge289": {
-"@length": 2.0, 
+"@length": 2, 
 "@source": "node285", 
 "@target": "node289"
 }
 }, 
 "node286": {
 "edge287": {
-"@length": 1.0, 
+"@length": 1, 
 "@source": "node286", 
 "@target": "node287"
 }, 
 "edge288": {
-"@length": 1.0, 
+"@length": 1, 
 "@source": "node286", 
 "@target": "node288"
 }
 }, 
 "node291": {
 "edge292": {
-"@length": 1.0, 
+"@length": 1, 
 "@source": "node291", 
 "@target": "node292"
 }, 
 "edge297": {
-"@length": 3.0, 
+"@length": 3, 
 "@source": "node291", 
 "@target": "node297"
 }
 }, 
 "node292": {
 "edge293": {
-"@length": 1.0, 
+"@length": 1, 
 "@source": "node292", 
 "@target": "node293"
 }, 
 "edge296": {
-"@length": 2.0, 
+"@length": 2, 
 "@source": "node292", 
 "@target": "node296"
 }
 }, 
 "node293": {
 "edge294": {
-"@length": 1.0, 
+"@length": 1, 
 "@source": "node293", 
 "@target": "node294"
 }, 
 "edge295": {
-"@length": 1.0, 
+"@length": 1, 
 "@source": "node293", 
 "@target": "node295"
 }
 }, 
 "node298": {
 "edge299": {
-"@length": 1.0, 
+"@length": 1, 
 "@source": "node298", 
 "@target": "node299"
 }, 
 "edge306": {
-"@length": 4.0, 
+"@length": 4, 
 "@source": "node298", 
 "@target": "node306"
 }
 }, 
 "node299": {
 "edge300": {
-"@length": 1.0, 
+"@length": 1, 
 "@source": "node299", 
 "@target": "node300"
 }, 
 "edge305": {
-"@length": 3.0, 
+"@length": 3, 
 "@source": "node299", 
 "@target": "node305"
 }
 }, 
 "node300": {
 "edge301": {
-"@length": 1.0, 
+"@length": 1, 
 "@source": "node300", 
 "@target": "node301"
 }, 
 "edge304": {
-"@length": 2.0, 
+"@length": 2, 
 "@source": "node300", 
 "@target": "node304"
 }
 }, 
 "node301": {
 "edge302": {
-"@length": 1.0, 
+"@length": 1, 
 "@source": "node301", 
 "@target": "node302"
 }, 
 "edge303": {
-"@length": 1.0, 
+"@length": 1, 
 "@source": "node301", 
 "@target": "node303"
 }
 }, 
 "node307": {
 "edge308": {
-"@length": 1.0, 
+"@length": 1, 
 "@source": "node307", 
 "@target": "node308"
 }, 
 "edge309": {
-"@length": 1.0, 
+"@length": 1, 
 "@source": "node307", 
 "@target": "node309"
 }
 }, 
 "node310": {
 "edge311": {
-"@length": 1.0, 
+"@length": 1, 
 "@source": "node310", 
 "@target": "node311"
 }, 
 "edge318": {
-"@length": 4.0, 
+"@length": 4, 
 "@source": "node310", 
 "@target": "node318"
 }
 }, 
 "node311": {
 "edge312": {
-"@length": 1.0, 
+"@length": 1, 
 "@source": "node311", 
 "@target": "node312"
 }, 
 "edge317": {
-"@length": 3.0, 
+"@length": 3, 
 "@source": "node311", 
 "@target": "node317"
 }
 }, 
 "node312": {
 "edge313": {
-"@length": 1.0, 
+"@length": 1, 
 "@source": "node312", 
 "@target": "node313"
 }, 
 "edge316": {
-"@length": 2.0, 
+"@length": 2, 
 "@source": "node312", 
 "@target": "node316"
 }
 }, 
 "node313": {
 "edge314": {
-"@length": 1.0, 
+"@length": 1, 
 "@source": "node313", 
 "@target": "node314"
 }, 
 "edge315": {
-"@length": 1.0, 
+"@length": 1, 
 "@source": "node313", 
 "@target": "node315"
 }
 }, 
 "node319": {
 "edge320": {
-"@length": 1.0, 
+"@length": 1, 
 "@source": "node319", 
 "@target": "node320"
 }, 
 "edge323": {
-"@length": 2.0, 
+"@length": 2, 
 "@source": "node319", 
 "@target": "node323"
 }
 }, 
 "node320": {
 "edge321": {
-"@length": 1.0, 
+"@length": 1, 
 "@source": "node320", 
 "@target": "node321"
 }, 
 "edge322": {
-"@length": 1.0, 
+"@length": 1, 
 "@source": "node320", 
 "@target": "node322"
 }
 }, 
 "node324": {
 "edge325": {
-"@length": 1.0, 
+"@length": 1, 
 "@source": "node324", 
 "@target": "node325"
 }, 
 "edge380": {
-"@length": 13.0, 
+"@length": 13, 
 "@source": "node324", 
 "@target": "node380"
 }
 }, 
 "node325": {
 "edge326": {
-"@length": 1.0, 
+"@length": 1, 
 "@source": "node325", 
 "@target": "node326"
 }, 
 "edge375": {
-"@length": 10.0, 
+"@length": 10, 
 "@source": "node325", 
 "@target": "node375"
 }
 }, 
 "node326": {
 "edge327": {
-"@length": 1.0, 
+"@length": 1, 
 "@source": "node326", 
 "@target": "node327"
 }, 
 "edge374": {
-"@length": 11.0, 
+"@length": 11, 
 "@source": "node326", 
 "@target": "node374"
 }
 }, 
 "node327": {
 "edge328": {
-"@length": 1.0, 
+"@length": 1, 
 "@source": "node327", 
 "@target": "node328"
 }, 
 "edge371": {
-"@length": 9.0, 
+"@length": 9, 
 "@source": "node327", 
 "@target": "node371"
 }
 }, 
 "node328": {
 "edge329": {
-"@length": 1.0, 
+"@length": 1, 
 "@source": "node328", 
 "@target": "node329"
 }, 
 "edge352": {
-"@length": 3.0, 
+"@length": 3, 
 "@source": "node328", 
 "@target": "node352"
 }
 }, 
 "node329": {
 "edge330": {
-"@length": 1.0, 
+"@length": 1, 
 "@source": "node329", 
 "@target": "node330"
 }, 
 "edge349": {
-"@length": 7.0, 
+"@length": 7, 
 "@source": "node329", 
 "@target": "node349"
 }
 }, 
 "node330": {
 "edge331": {
-"@length": 1.0, 
+"@length": 1, 
 "@source": "node330", 
 "@target": "node331"
 }, 
 "edge346": {
-"@length": 6.0, 
+"@length": 6, 
 "@source": "node330", 
 "@target": "node346"
 }
 }, 
 "node331": {
 "edge332": {
-"@length": 1.0, 
+"@length": 1, 
 "@source": "node331", 
 "@target": "node332"
 }, 
 "edge345": {
-"@length": 6.0, 
+"@length": 6, 
 "@source": "node331", 
 "@target": "node345"
 }
 }, 
 "node332": {
 "edge333": {
-"@length": 1.0, 
+"@length": 1, 
 "@source": "node332", 
 "@target": "node333"
 }, 
 "edge342": {
-"@length": 4.0, 
+"@length": 4, 
 "@source": "node332", 
 "@target": "node342"
 }
 }, 
 "node333": {
 "edge334": {
-"@length": 1.0, 
+"@length": 1, 
 "@source": "node333", 
 "@target": "node334"
 }, 
 "edge341": {
-"@length": 4.0, 
+"@length": 4, 
 "@source": "node333", 
 "@target": "node341"
 }
 }, 
 "node334": {
 "edge335": {
-"@length": 1.0, 
+"@length": 1, 
 "@source": "node334", 
 "@target": "node335"
 }, 
 "edge340": {
-"@length": 3.0, 
+"@length": 3, 
 "@source": "node334", 
 "@target": "node340"
 }
 }, 
 "node335": {
 "edge336": {
-"@length": 1.0, 
+"@length": 1, 
 "@source": "node335", 
 "@target": "node336"
 }, 
 "edge339": {
-"@length": 2.0, 
+"@length": 2, 
 "@source": "node335", 
 "@target": "node339"
 }
 }, 
 "node336": {
 "edge337": {
-"@length": 1.0, 
+"@length": 1, 
 "@source": "node336", 
 "@target": "node337"
 }, 
 "edge338": {
-"@length": 1.0, 
+"@length": 1, 
 "@source": "node336", 
 "@target": "node338"
 }
 }, 
 "node342": {
 "edge343": {
-"@length": 1.0, 
+"@length": 1, 
 "@source": "node342", 
 "@target": "node343"
 }, 
 "edge344": {
-"@length": 1.0, 
+"@length": 1, 
 "@source": "node342", 
 "@target": "node344"
 }
 }, 
 "node346": {
 "edge347": {
-"@length": 1.0, 
+"@length": 1, 
 "@source": "node346", 
 "@target": "node347"
 }, 
 "edge348": {
-"@length": 1.0, 
+"@length": 1, 
 "@source": "node346", 
 "@target": "node348"
 }
 }, 
 "node349": {
 "edge350": {
-"@length": 1.0, 
+"@length": 1, 
 "@source": "node349", 
 "@target": "node350"
 }, 
 "edge351": {
-"@length": 1.0, 
+"@length": 1, 
 "@source": "node349", 
 "@target": "node351"
 }
 }, 
 "node352": {
 "edge353": {
-"@length": 1.0, 
+"@length": 1, 
 "@source": "node352", 
 "@target": "node353"
 }, 
 "edge370": {
-"@length": 6.0, 
+"@length": 6, 
 "@source": "node352", 
 "@target": "node370"
 }
 }, 
 "node353": {
 "edge354": {
-"@length": 1.0, 
+"@length": 1, 
 "@source": "node353", 
 "@target": "node354"
 }, 
 "edge367": {
-"@length": 4.0, 
+"@length": 4, 
 "@source": "node353", 
 "@target": "node367"
 }
 }, 
 "node354": {
 "edge355": {
-"@length": 1.0, 
+"@length": 1, 
 "@source": "node354", 
 "@target": "node355"
 }, 
 "edge366": {
-"@length": 4.0, 
+"@length": 4, 
 "@source": "node354", 
 "@target": "node366"
 }
 }, 
 "node355": {
 "edge356": {
-"@length": 1.0, 
+"@length": 1, 
 "@source": "node355", 
 "@target": "node356"
 }, 
 "edge361": {
-"@length": 1.0, 
+"@length": 1, 
 "@source": "node355", 
 "@target": "node361"
 }
 }, 
 "node356": {
 "edge357": {
-"@length": 1.0, 
+"@length": 1, 
 "@source": "node356", 
 "@target": "node357"
 }, 
 "edge360": {
-"@length": 2.0, 
+"@length": 2, 
 "@source": "node356", 
 "@target": "node360"
 }
 }, 
 "node357": {
 "edge358": {
-"@length": 1.0, 
+"@length": 1, 
 "@source": "node357", 
 "@target": "node358"
 }, 
 "edge359": {
-"@length": 1.0, 
+"@length": 1, 
 "@source": "node357", 
 "@target": "node359"
 }
 }, 
 "node361": {
 "edge362": {
-"@length": 1.0, 
+"@length": 1, 
 "@source": "node361", 
 "@target": "node362"
 }, 
 "edge365": {
-"@length": 2.0, 
+"@length": 2, 
 "@source": "node361", 
 "@target": "node365"
 }
 }, 
 "node362": {
 "edge363": {
-"@length": 1.0, 
+"@length": 1, 
 "@source": "node362", 
 "@target": "node363"
 }, 
 "edge364": {
-"@length": 1.0, 
+"@length": 1, 
 "@source": "node362", 
 "@target": "node364"
 }
 }, 
 "node367": {
 "edge368": {
-"@length": 1.0, 
+"@length": 1, 
 "@source": "node367", 
 "@target": "node368"
 }, 
 "edge369": {
-"@length": 1.0, 
+"@length": 1, 
 "@source": "node367", 
 "@target": "node369"
 }
 }, 
 "node371": {
 "edge372": {
-"@length": 1.0, 
+"@length": 1, 
 "@source": "node371", 
 "@target": "node372"
 }, 
 "edge373": {
-"@length": 1.0, 
+"@length": 1, 
 "@source": "node371", 
 "@target": "node373"
 }
 }, 
 "node375": {
 "edge376": {
-"@length": 1.0, 
+"@length": 1, 
 "@source": "node375", 
 "@target": "node376"
 }, 
 "edge379": {
-"@length": 2.0, 
+"@length": 2, 
 "@source": "node375", 
 "@target": "node379"
 }
 }, 
 "node376": {
 "edge377": {
-"@length": 1.0, 
+"@length": 1, 
 "@source": "node376", 
 "@target": "node377"
 }, 
 "edge378": {
-"@length": 1.0, 
+"@length": 1, 
 "@source": "node376", 
 "@target": "node378"
 }
 }, 
 "node381": {
 "edge382": {
-"@length": 1.0, 
+"@length": 1, 
 "@source": "node381", 
 "@target": "node382"
 }, 
 "edge385": {
-"@length": 1.0, 
+"@length": 1, 
 "@source": "node381", 
 "@target": "node385"
 }
 }, 
 "node382": {
 "edge383": {
-"@length": 1.0, 
+"@length": 1, 
 "@source": "node382", 
 "@target": "node383"
 }, 
 "edge384": {
-"@length": 1.0, 
+"@length": 1, 
 "@source": "node382", 
 "@target": "node384"
 }
 }, 
 "node385": {
 "edge386": {
-"@length": 1.0, 
+"@length": 1, 
 "@source": "node385", 
 "@target": "node386"
 }, 
 "edge387": {
-"@length": 1.0, 
+"@length": 1, 
 "@source": "node385", 
 "@target": "node387"
 }
 }, 
 "node388": {
 "edge389": {
-"@length": 1.0, 
+"@length": 1, 
 "@source": "node388", 
 "@target": "node389"
 }, 
 "edge400": {
-"@length": 6.0, 
+"@length": 6, 
 "@source": "node388", 
 "@target": "node400"
 }
 }, 
 "node389": {
 "edge390": {
-"@length": 1.0, 
+"@length": 1, 
 "@source": "node389", 
 "@target": "node390"
 }, 
 "edge399": {
-"@length": 5.0, 
+"@length": 5, 
 "@source": "node389", 
 "@target": "node399"
 }
 }, 
 "node390": {
 "edge391": {
-"@length": 1.0, 
+"@length": 1, 
 "@source": "node390", 
 "@target": "node391"
 }, 
 "edge398": {
-"@length": 4.0, 
+"@length": 4, 
 "@source": "node390", 
 "@target": "node398"
 }
 }, 
 "node391": {
 "edge392": {
-"@length": 1.0, 
+"@length": 1, 
 "@source": "node391", 
 "@target": "node392"
 }, 
 "edge397": {
-"@length": 3.0, 
+"@length": 3, 
 "@source": "node391", 
 "@target": "node397"
 }
 }, 
 "node392": {
 "edge393": {
-"@length": 1.0, 
+"@length": 1, 
 "@source": "node392", 
 "@target": "node393"
 }, 
 "edge396": {
-"@length": 2.0, 
+"@length": 2, 
 "@source": "node392", 
 "@target": "node396"
 }
 }, 
 "node393": {
 "edge394": {
-"@length": 1.0, 
+"@length": 1, 
 "@source": "node393", 
 "@target": "node394"
 }, 
 "edge395": {
-"@length": 1.0, 
+"@length": 1, 
 "@source": "node393", 
 "@target": "node395"
 }
 }, 
 "node401": {
 "edge402": {
-"@length": 1.0, 
+"@length": 1, 
 "@source": "node401", 
 "@target": "node402"
 }, 
 "edge461": {
-"@length": 8.0, 
+"@length": 8, 
 "@source": "node401", 
 "@target": "node461"
 }
 }, 
 "node402": {
 "edge403": {
-"@length": 1.0, 
+"@length": 1, 
 "@source": "node402", 
 "@target": "node403"
 }, 
 "edge460": {
-"@length": 11.0, 
+"@length": 11, 
 "@source": "node402", 
 "@target": "node460"
 }
 }, 
 "node403": {
 "edge404": {
-"@length": 1.0, 
+"@length": 1, 
 "@source": "node403", 
 "@target": "node404"
 }, 
 "edge447": {
-"@length": 6.0, 
+"@length": 6, 
 "@source": "node403", 
 "@target": "node447"
 }
 }, 
 "node404": {
 "edge405": {
-"@length": 1.0, 
+"@length": 1, 
 "@source": "node404", 
 "@target": "node405"
 }, 
 "edge442": {
-"@length": 7.0, 
+"@length": 7, 
 "@source": "node404", 
 "@target": "node442"
 }
 }, 
 "node405": {
 "edge406": {
-"@length": 1.0, 
+"@length": 1, 
 "@source": "node405", 
 "@target": "node406"
 }, 
 "edge435": {
-"@length": 6.0, 
+"@length": 6, 
 "@source": "node405", 
 "@target": "node435"
 }
 }, 
 "node406": {
 "edge407": {
-"@length": 1.0, 
+"@length": 1, 
 "@source": "node406", 
 "@target": "node407"
 }, 
 "edge430": {
-"@length": 5.0, 
+"@length": 5, 
 "@source": "node406", 
 "@target": "node430"
 }
 }, 
 "node407": {
 "edge408": {
-"@length": 1.0, 
+"@length": 1, 
 "@source": "node407", 
 "@target": "node408"
 }, 
 "edge425": {
-"@length": 4.0, 
+"@length": 4, 
 "@source": "node407", 
 "@target": "node425"
 }
 }, 
 "node408": {
 "edge409": {
-"@length": 1.0, 
+"@length": 1, 
 "@source": "node408", 
 "@target": "node409"
 }, 
 "edge424": {
-"@length": 5.0, 
+"@length": 5, 
 "@source": "node408", 
 "@target": "node424"
 }
 }, 
 "node409": {
 "edge410": {
-"@length": 1.0, 
+"@length": 1, 
 "@source": "node409", 
 "@target": "node410"
 }, 
 "edge421": {
-"@length": 3.0, 
+"@length": 3, 
 "@source": "node409", 
 "@target": "node421"
 }
 }, 
 "node410": {
 "edge411": {
-"@length": 1.0, 
+"@length": 1, 
 "@source": "node410", 
 "@target": "node411"
 }, 
 "edge416": {
-"@length": 1.0, 
+"@length": 1, 
 "@source": "node410", 
 "@target": "node416"
 }
 }, 
 "node411": {
 "edge412": {
-"@length": 1.0, 
+"@length": 1, 
 "@source": "node411", 
 "@target": "node412"
 }, 
 "edge415": {
-"@length": 2.0, 
+"@length": 2, 
 "@source": "node411", 
 "@target": "node415"
 }
 }, 
 "node412": {
 "edge413": {
-"@length": 1.0, 
+"@length": 1, 
 "@source": "node412", 
 "@target": "node413"
 }, 
 "edge414": {
-"@length": 1.0, 
+"@length": 1, 
 "@source": "node412", 
 "@target": "node414"
 }
 }, 
 "node416": {
 "edge417": {
-"@length": 1.0, 
+"@length": 1, 
 "@source": "node416", 
 "@target": "node417"
 }, 
 "edge420": {
-"@length": 2.0, 
+"@length": 2, 
 "@source": "node416", 
 "@target": "node420"
 }
 }, 
 "node417": {
 "edge418": {
-"@length": 1.0, 
+"@length": 1, 
 "@source": "node417", 
 "@target": "node418"
 }, 
 "edge419": {
-"@length": 1.0, 
+"@length": 1, 
 "@source": "node417", 
 "@target": "node419"
 }
 }, 
 "node421": {
 "edge422": {
-"@length": 1.0, 
+"@length": 1, 
 "@source": "node421", 
 "@target": "node422"
 }, 
 "edge423": {
-"@length": 1.0, 
+"@length": 1, 
 "@source": "node421", 
 "@target": "node423"
 }
 }, 
 "node425": {
 "edge426": {
-"@length": 1.0, 
+"@length": 1, 
 "@source": "node425", 
 "@target": "node426"
 }, 
 "edge429": {
-"@length": 2.0, 
+"@length": 2, 
 "@source": "node425", 
 "@target": "node429"
 }
 }, 
 "node426": {
 "edge427": {
-"@length": 1.0, 
+"@length": 1, 
 "@source": "node426", 
 "@target": "node427"
 }, 
 "edge428": {
-"@length": 1.0, 
+"@length": 1, 
 "@source": "node426", 
 "@target": "node428"
 }
 }, 
 "node430": {
 "edge431": {
-"@length": 1.0, 
+"@length": 1, 
 "@source": "node430", 
 "@target": "node431"
 }, 
 "edge434": {
-"@length": 2.0, 
+"@length": 2, 
 "@source": "node430", 
 "@target": "node434"
 }
 }, 
 "node431": {
 "edge432": {
-"@length": 1.0, 
+"@length": 1, 
 "@source": "node431", 
 "@target": "node432"
 }, 
 "edge433": {
-"@length": 1.0, 
+"@length": 1, 
 "@source": "node431", 
 "@target": "node433"
 }
 }, 
 "node435": {
 "edge436": {
-"@length": 1.0, 
+"@length": 1, 
 "@source": "node435", 
 "@target": "node436"
 }, 
 "edge439": {
-"@length": 1.0, 
+"@length": 1, 
 "@source": "node435", 
 "@target": "node439"
 }
 }, 
 "node436": {
 "edge437": {
-"@length": 1.0, 
+"@length": 1, 
 "@source": "node436", 
 "@target": "node437"
 }, 
 "edge438": {
-"@length": 1.0, 
+"@length": 1, 
 "@source": "node436", 
 "@target": "node438"
 }
 }, 
 "node439": {
 "edge440": {
-"@length": 1.0, 
+"@length": 1, 
 "@source": "node439", 
 "@target": "node440"
 }, 
 "edge441": {
-"@length": 1.0, 
+"@length": 1, 
 "@source": "node439", 
 "@target": "node441"
 }
 }, 
 "node442": {
 "edge443": {
-"@length": 1.0, 
+"@length": 1, 
 "@source": "node442", 
 "@target": "node443"
 }, 
 "edge446": {
-"@length": 2.0, 
+"@length": 2, 
 "@source": "node442", 
 "@target": "node446"
 }
 }, 
 "node443": {
 "edge444": {
-"@length": 1.0, 
+"@length": 1, 
 "@source": "node443", 
 "@target": "node444"
 }, 
 "edge445": {
-"@length": 1.0, 
+"@length": 1, 
 "@source": "node443", 
 "@target": "node445"
 }
 }, 
 "node447": {
 "edge448": {
-"@length": 1.0, 
+"@length": 1, 
 "@source": "node447", 
 "@target": "node448"
 }, 
 "edge455": {
-"@length": 2.0, 
+"@length": 2, 
 "@source": "node447", 
 "@target": "node455"
 }
 }, 
 "node448": {
 "edge449": {
-"@length": 1.0, 
+"@length": 1, 
 "@source": "node448", 
 "@target": "node449"
 }, 
 "edge454": {
-"@length": 3.0, 
+"@length": 3, 
 "@source": "node448", 
 "@target": "node454"
 }
 }, 
 "node449": {
 "edge450": {
-"@length": 1.0, 
+"@length": 1, 
 "@source": "node449", 
 "@target": "node450"
 }, 
 "edge453": {
-"@length": 2.0, 
+"@length": 2, 
 "@source": "node449", 
 "@target": "node453"
 }
 }, 
 "node450": {
 "edge451": {
-"@length": 1.0, 
+"@length": 1, 
 "@source": "node450", 
 "@target": "node451"
 }, 
 "edge452": {
-"@length": 1.0, 
+"@length": 1, 
 "@source": "node450", 
 "@target": "node452"
 }
 }, 
 "node455": {
 "edge456": {
-"@length": 1.0, 
+"@length": 1, 
 "@source": "node455", 
 "@target": "node456"
 }, 
 "edge459": {
-"@length": 2.0, 
+"@length": 2, 
 "@source": "node455", 
 "@target": "node459"
 }
 }, 
 "node456": {
 "edge457": {
-"@length": 1.0, 
+"@length": 1, 
 "@source": "node456", 
 "@target": "node457"
 }, 
 "edge458": {
-"@length": 1.0, 
+"@length": 1, 
 "@source": "node456", 
 "@target": "node458"
 }
 }, 
 "node461": {
 "edge462": {
-"@length": 1.0, 
+"@length": 1, 
 "@source": "node461", 
 "@target": "node462"
 }, 
 "edge473": {
-"@length": 1.0, 
+"@length": 1, 
 "@source": "node461", 
 "@target": "node473"
 }
 }, 
 "node462": {
 "edge463": {
-"@length": 1.0, 
+"@length": 1, 
 "@source": "node462", 
 "@target": "node463"
 }, 
 "edge468": {
-"@length": 1.0, 
+"@length": 1, 
 "@source": "node462", 
 "@target": "node468"
 }
 }, 
 "node463": {
 "edge464": {
-"@length": 1.0, 
+"@length": 1, 
 "@source": "node463", 
 "@target": "node464"
 }, 
 "edge467": {
-"@length": 2.0, 
+"@length": 2, 
 "@source": "node463", 
 "@target": "node467"
 }
 }, 
 "node464": {
 "edge465": {
-"@length": 1.0, 
+"@length": 1, 
 "@source": "node464", 
 "@target": "node465"
 }, 
 "edge466": {
-"@length": 1.0, 
+"@length": 1, 
 "@source": "node464", 
 "@target": "node466"
 }
 }, 
 "node468": {
 "edge469": {
-"@length": 1.0, 
+"@length": 1, 
 "@source": "node468", 
 "@target": "node469"
 }, 
 "edge472": {
-"@length": 2.0, 
+"@length": 2, 
 "@source": "node468", 
 "@target": "node472"
 }
 }, 
 "node469": {
 "edge470": {
-"@length": 1.0, 
+"@length": 1, 
 "@source": "node469", 
 "@target": "node470"
 }, 
 "edge471": {
-"@length": 1.0, 
+"@length": 1, 
 "@source": "node469", 
 "@target": "node471"
 }
 }, 
 "node473": {
 "edge474": {
-"@length": 1.0, 
+"@length": 1, 
 "@source": "node473", 
 "@target": "node474"
 }, 
 "edge479": {
-"@length": 3.0, 
+"@length": 3, 
 "@source": "node473", 
 "@target": "node479"
 }
 }, 
 "node474": {
 "edge475": {
-"@length": 1.0, 
+"@length": 1, 
 "@source": "node474", 
 "@target": "node475"
 }, 
 "edge478": {
-"@length": 2.0, 
+"@length": 2, 
 "@source": "node474", 
 "@target": "node478"
 }
 }, 
 "node475": {
 "edge476": {
-"@length": 1.0, 
+"@length": 1, 
 "@source": "node475", 
 "@target": "node476"
 }, 
 "edge477": {
-"@length": 1.0, 
+"@length": 1, 
 "@source": "node475", 
 "@target": "node477"
 }
 }, 
 "node480": {
 "edge481": {
-"@length": 1.0, 
+"@length": 1, 
 "@source": "node480", 
 "@target": "node481"
 }, 
 "edge492": {
-"@length": 2.0, 
+"@length": 2, 
 "@source": "node480", 
 "@target": "node492"
 }
 }, 
 "node481": {
 "edge482": {
-"@length": 1.0, 
+"@length": 1, 
 "@source": "node481", 
 "@target": "node482"
 }, 
 "edge487": {
-"@length": 1.0, 
+"@length": 1, 
 "@source": "node481", 
 "@target": "node487"
 }
 }, 
 "node482": {
 "edge483": {
-"@length": 1.0, 
+"@length": 1, 
 "@source": "node482", 
 "@target": "node483"
 }, 
 "edge486": {
-"@length": 2.0, 
+"@length": 2, 
 "@source": "node482", 
 "@target": "node486"
 }
 }, 
 "node483": {
 "edge484": {
-"@length": 1.0, 
+"@length": 1, 
 "@source": "node483", 
 "@target": "node484"
 }, 
 "edge485": {
-"@length": 1.0, 
+"@length": 1, 
 "@source": "node483", 
 "@target": "node485"
 }
 }, 
 "node487": {
 "edge488": {
-"@length": 1.0, 
+"@length": 1, 
 "@source": "node487", 
 "@target": "node488"
 }, 
 "edge491": {
-"@length": 2.0, 
+"@length": 2, 
 "@source": "node487", 
 "@target": "node491"
 }
 }, 
 "node488": {
 "edge489": {
-"@length": 1.0, 
+"@length": 1, 
 "@source": "node488", 
 "@target": "node489"
 }, 
 "edge490": {
-"@length": 1.0, 
+"@length": 1, 
 "@source": "node488", 
 "@target": "node490"
 }
 }, 
 "node492": {
 "edge493": {
-"@length": 1.0, 
+"@length": 1, 
 "@source": "node492", 
 "@target": "node493"
 }, 
 "edge496": {
-"@length": 2.0, 
+"@length": 2, 
 "@source": "node492", 
 "@target": "node496"
 }
 }, 
 "node493": {
 "edge494": {
-"@length": 1.0, 
+"@length": 1, 
 "@source": "node493", 
 "@target": "node494"
 }, 
 "edge495": {
-"@length": 1.0, 
+"@length": 1, 
 "@source": "node493", 
 "@target": "node495"
 }
 }, 
 "node497": {
 "edge498": {
-"@length": 1.0, 
+"@length": 1, 
 "@source": "node497", 
 "@target": "node498"
 }, 
 "edge501": {
-"@length": 1.0, 
+"@length": 1, 
 "@source": "node497", 
 "@target": "node501"
 }
 }, 
 "node498": {
 "edge499": {
-"@length": 1.0, 
+"@length": 1, 
 "@source": "node498", 
 "@target": "node499"
 }, 
 "edge500": {
-"@length": 1.0, 
+"@length": 1, 
 "@source": "node498", 
 "@target": "node500"
 }
 }, 
 "node501": {
 "edge502": {
-"@length": 1.0, 
+"@length": 1, 
 "@source": "node501", 
 "@target": "node502"
 }, 
 "edge503": {
-"@length": 1.0, 
+"@length": 1, 
 "@source": "node501", 
 "@target": "node503"
 }

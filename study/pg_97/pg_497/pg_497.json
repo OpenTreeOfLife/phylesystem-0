@@ -36,14 +36,94 @@
 }
 ]
 }
+}, 
+{
+"@description": "Web-based interface for submitting, editing, and reviewing studies in the Open Tree of Life project.", 
+"@id": "opentree-curation-webapp", 
+"@name": "OpenTree curation webapp", 
+"@url": "https://github.com/OpenTreeOfLife/opentree", 
+"@version": "0.0.0"
 }
 ]
 }, 
 "^ot:annotationEvents": {
-"annotation": []
+"annotation": [
+{
+"@dateCreated": "2015-01-07T16:33:05.585Z", 
+"@description": "Aids for mapping study OTUs to OTT taxa", 
+"@id": "otu-mapping-hints", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "OTU_MAPPING_HINTS", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"searchContext": {
+"$": "All life"
 }, 
-"^ot:candidateTreeForSynthesis": [], 
-"^ot:curatorName": "Romina Gazis", 
+"substitutions": {
+"substitution": [
+{
+"@active": false, 
+"@valid": true, 
+"new": {
+"$": ""
+}, 
+"old": {
+"$": ""
+}
+}
+]
+}, 
+"useFuzzyMatching": false
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}, 
+{
+"@dateCreated": "2015-01-07T16:33:05.585Z", 
+"@description": "Describes supporting data files for this study", 
+"@id": "supporting-files-metadata", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "SUPPORTING_FILE_INFO", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"@movedToPermanentArchive": false, 
+"files": {
+"file": []
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}
+]
+}, 
+"^ot:candidateTreeForSynthesis": [
+"tree675"
+], 
+"^ot:comment": "", 
+"^ot:curatorName": [
+"Romina Gazis", 
+"rgazis"
+], 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S10461"
 }, 
@@ -52,6 +132,7 @@
 "^ot:messages": {
 "message": []
 }, 
+"^ot:notIntendedForSynthesis": false, 
 "^ot:otusElementOrder": [
 "otus497"
 ], 
@@ -124,6 +205,8 @@
 }, 
 "otu164394": {
 "^ot:originalLabel": "Glomus africanum sp nov clone 01", 
+"^ot:ottId": 296444, 
+"^ot:ottTaxonName": "Funneliformis africanum", 
 "^ot:treebaseOTUId": "Tl294174"
 }, 
 "otu164395": {
@@ -212,6 +295,8 @@
 }, 
 "otu164409": {
 "^ot:originalLabel": "Glomus africanum sp nov clone 10", 
+"^ot:ottId": 296444, 
+"^ot:ottTaxonName": "Funneliformis africanum", 
 "^ot:treebaseOTUId": "Tl294189"
 }, 
 "otu164410": {
@@ -501,16 +586,20 @@
 ], 
 "treeById": {
 "tree675": {
+"@label": "Untitled (tree675)", 
 "@xsi:type": "nex:FloatTree", 
 "^ot:branchLengthDescription": "", 
-"^ot:branchLengthMode": "", 
-"^ot:branchLengthTimeUnit": "", 
+"^ot:branchLengthMode": "ot:undefined", 
+"^ot:branchLengthTimeUnit": "Myr", 
 "^ot:curatedType": "NJ, SSU", 
 "^ot:inGroupClade": "node323395", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
 "^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node323392", 
 "^ot:specifiedRoot": "", 
 "^ot:tag": [], 
+"^ot:unrootedTree": true, 
 "edgeBySourceId": {
 "node323392": {
 "edge323393": {
@@ -1443,10 +1532,12 @@
 }, 
 "node323451": {}, 
 "node323452": {
-"@otu": "otu164417"
+"@otu": "otu164417", 
+"^ot:isTaxonExemplar": true
 }, 
 "node323453": {
-"@otu": "otu164424"
+"@otu": "otu164424", 
+"^ot:isTaxonExemplar": false
 }, 
 "node323454": {}, 
 "node323455": {

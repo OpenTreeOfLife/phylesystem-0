@@ -36,19 +36,102 @@
 }
 ]
 }
+}, 
+{
+"@description": "Web-based interface for submitting, editing, and reviewing studies in the Open Tree of Life project.", 
+"@id": "opentree-curation-webapp", 
+"@name": "OpenTree curation webapp", 
+"@url": "https://github.com/OpenTreeOfLife/opentree", 
+"@version": "0.0.0"
 }
 ]
 }, 
 "^ot:annotationEvents": {
-"annotation": []
+"annotation": [
+{
+"@dateCreated": "2014-06-29T11:57:33.901Z", 
+"@description": "Aids for mapping study OTUs to OTT taxa", 
+"@id": "otu-mapping-hints", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "OTU_MAPPING_HINTS", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"searchContext": {
+"$": "Mammals"
 }, 
-"^ot:candidateTreeForSynthesis": [], 
-"^ot:curatorName": "Joseph Brown", 
+"substitutions": {
+"substitution": [
+{
+"@active": false, 
+"@valid": true, 
+"new": {
+"$": ""
+}, 
+"old": {
+"$": ""
+}
+}
+]
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}, 
+{
+"@dateCreated": "2014-06-29T11:57:33.901Z", 
+"@description": "Describes supporting data files for this study", 
+"@id": "supporting-files-metadata", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "SUPPORTING_FILE_INFO", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"@movedToPermanentArchive": false, 
+"files": {
+"file": []
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}
+]
+}, 
+"^ot:candidateTreeForSynthesis": [
+"tree6185"
+], 
+"^ot:comment": "\"Alouatta nigerrima\" seems to be missing from OTT, despite being a good species (e.g. http://www.iucnredlist.org/details/136332/0)", 
+"^ot:curatorName": [
+"Joseph Brown", 
+"Joseph W. Brown"
+], 
+"^ot:dataDeposit": {
+"@href": ""
+}, 
 "^ot:focalClade": 913935, 
 "^ot:focalCladeOTTTaxonName": "Primates", 
 "^ot:messages": {
 "message": []
 }, 
+"^ot:notIntendedForSynthesis": false, 
 "^ot:otusElementOrder": [
 "otus2656"
 ], 
@@ -658,25 +741,39 @@
 "^ot:ottTaxonName": "Propithecus verreauxi"
 }, 
 "otu396647": {
-"^ot:originalLabel": "Tarsius dentatus"
+"^ot:originalLabel": "Tarsius dentatus", 
+"^ot:ottId": 712758, 
+"^ot:ottTaxonName": "Tarsius dentatus"
 }, 
 "otu396648": {
-"^ot:originalLabel": "Tarsius wallacei"
+"^ot:originalLabel": "Tarsius wallacei", 
+"^ot:ottId": 234367, 
+"^ot:ottTaxonName": "Tarsius wallacei"
 }, 
 "otu396649": {
-"^ot:originalLabel": "Tarsius tarsier"
+"^ot:originalLabel": "Tarsius tarsier", 
+"^ot:ottId": 721280, 
+"^ot:ottTaxonName": "Tarsius tarsier"
 }, 
 "otu396650": {
-"^ot:originalLabel": "Tarsius sangirensis"
+"^ot:originalLabel": "Tarsius sangirensis", 
+"^ot:ottId": 49187, 
+"^ot:ottTaxonName": "Tarsius sangirensis"
 }, 
 "otu396651": {
-"^ot:originalLabel": "Tarsius lariang"
+"^ot:originalLabel": "Tarsius lariang", 
+"^ot:ottId": 318683, 
+"^ot:ottTaxonName": "Tarsius lariang"
 }, 
 "otu396652": {
-"^ot:originalLabel": "Tarsius bancanus"
+"^ot:originalLabel": "Tarsius bancanus", 
+"^ot:ottId": 339050, 
+"^ot:ottTaxonName": "Tarsius bancanus"
 }, 
 "otu396653": {
-"^ot:originalLabel": "Tarsius syrichta"
+"^ot:originalLabel": "Tarsius syrichta", 
+"^ot:ottId": 339031, 
+"^ot:ottTaxonName": "Tarsius syrichta"
 }, 
 "otu396654": {
 "^ot:originalLabel": "Cacajao calvus", 
@@ -809,9 +906,7 @@
 "^ot:ottTaxonName": "Alouatta sara"
 }, 
 "otu396680": {
-"^ot:originalLabel": "Alouatta nigerrima", 
-"^ot:ottId": 1058654, 
-"^ot:ottTaxonName": "Alouatta belzebul"
+"^ot:originalLabel": "Alouatta nigerrima"
 }, 
 "otu396681": {
 "^ot:originalLabel": "Alouatta seniculus", 
@@ -1920,6 +2015,7 @@
 ], 
 "treeById": {
 "tree6184": {
+"@label": "Untitled (tree6184)", 
 "@xsi:type": "nex:FloatTree", 
 "^ot:branchLengthDescription": "", 
 "^ot:branchLengthMode": "ot:time", 
@@ -1930,6 +2026,7 @@
 "^ot:rootNodeId": "node1059859", 
 "^ot:specifiedRoot": "", 
 "^ot:tag": [], 
+"^ot:unrootedTree": true, 
 "edgeBySourceId": {
 "node1059859": {
 "edge1059860": {
@@ -7877,18 +7974,20 @@
 }
 }, 
 "tree6185": {
+"@label": "Time-calibrated, autocorrelated rates, soft-bounded constraints", 
 "@xsi:type": "nex:FloatTree", 
 "^ot:branchLengthDescription": "", 
 "^ot:branchLengthMode": "ot:time", 
 "^ot:branchLengthTimeUnit": "Myr", 
-"^ot:curatedType": "Time-calibrated, autocorrelated rates, soft-bounded constraints", 
+"^ot:curatedType": "Bayesian inference ", 
 "^ot:inGroupClade": "node1060607", 
 "^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node1060602", 
-"^ot:specifiedRoot": "", 
+"^ot:specifiedRoot": "node1060602", 
 "^ot:tag": [
 "choose me"
 ], 
+"^ot:unrootedTree": false, 
 "edgeBySourceId": {
 "node1060602": {
 "edge1060603": {
@@ -13836,6 +13935,7 @@
 }
 }, 
 "tree6186": {
+"@label": "Untitled (tree6186)", 
 "@xsi:type": "nex:FloatTree", 
 "^ot:branchLengthDescription": "", 
 "^ot:branchLengthMode": "ot:time", 
@@ -13846,6 +13946,7 @@
 "^ot:rootNodeId": "node1061345", 
 "^ot:specifiedRoot": "", 
 "^ot:tag": [], 
+"^ot:unrootedTree": true, 
 "edgeBySourceId": {
 "node1061345": {
 "edge1061346": {
@@ -19793,6 +19894,7 @@
 }
 }, 
 "tree6187": {
+"@label": "Untitled (tree6187)", 
 "@xsi:type": "nex:FloatTree", 
 "^ot:branchLengthDescription": "", 
 "^ot:branchLengthMode": "ot:time", 
@@ -19803,6 +19905,7 @@
 "^ot:rootNodeId": "node1062088", 
 "^ot:specifiedRoot": "", 
 "^ot:tag": [], 
+"^ot:unrootedTree": true, 
 "edgeBySourceId": {
 "node1062088": {
 "edge1062089": {
@@ -25750,6 +25853,7 @@
 }
 }, 
 "tree6188": {
+"@label": "Untitled (tree6188)", 
 "@xsi:type": "nex:FloatTree", 
 "^ot:branchLengthDescription": "", 
 "^ot:branchLengthMode": "ot:substitutionCount", 
@@ -25760,6 +25864,7 @@
 "^ot:rootNodeId": "node1062831", 
 "^ot:specifiedRoot": "", 
 "^ot:tag": [], 
+"^ot:unrootedTree": true, 
 "edgeBySourceId": {
 "node1062831": {
 "edge1062832": {
@@ -31707,15 +31812,18 @@
 }
 }, 
 "tree6189": {
+"@label": "Untitled (tree6189)", 
 "@xsi:type": "nex:FloatTree", 
 "^ot:branchLengthDescription": "", 
 "^ot:branchLengthMode": "ot:substitutionCount", 
 "^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "RAxML 10 mtDNA genes", 
+"^ot:inGroupClade": "", 
 "^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node1063574", 
 "^ot:specifiedRoot": "", 
 "^ot:tag": [], 
+"^ot:unrootedTree": true, 
 "edgeBySourceId": {
 "node1063574": {
 "edge1063575": {
@@ -37391,6 +37499,7 @@
 }
 }, 
 "tree6190": {
+"@label": "Untitled (tree6190)", 
 "@xsi:type": "nex:FloatTree", 
 "^ot:branchLengthDescription": "", 
 "^ot:branchLengthMode": "ot:substitutionCount", 
@@ -37401,6 +37510,7 @@
 "^ot:rootNodeId": "node1064283", 
 "^ot:specifiedRoot": "", 
 "^ot:tag": [], 
+"^ot:unrootedTree": true, 
 "edgeBySourceId": {
 "node1064283": {
 "edge1064284": {

@@ -36,22 +36,109 @@
 }
 ]
 }
+}, 
+{
+"@description": "Web-based interface for submitting, editing, and reviewing studies in the Open Tree of Life project.", 
+"@id": "opentree-curation-webapp", 
+"@name": "OpenTree curation webapp", 
+"@url": "https://github.com/OpenTreeOfLife/opentree", 
+"@version": "0.0.0"
 }
 ]
 }, 
 "^ot:annotationEvents": {
-"annotation": []
+"annotation": [
+{
+"@dateCreated": "2015-09-30T16:38:34.541Z", 
+"@description": "Aids for mapping study OTUs to OTT taxa", 
+"@id": "otu-mapping-hints", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "OTU_MAPPING_HINTS", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"searchContext": {
+"$": "All life"
 }, 
-"^ot:candidateTreeForSynthesis": [], 
-"^ot:curatorName": "Romina Gazis", 
+"substitutions": {
+"substitution": [
+{
+"@active": false, 
+"@valid": true, 
+"new": {
+"$": ""
+}, 
+"old": {
+"$": ""
+}
+}, 
+{
+"@active": true, 
+"@valid": true, 
+"new": {
+"$": "$1"
+}, 
+"old": {
+"$": "^(\\S*\\s+\\S*).*"
+}
+}
+]
+}, 
+"useFuzzyMatching": true
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}, 
+{
+"@dateCreated": "2015-09-30T16:38:34.541Z", 
+"@description": "Describes supporting data files for this study", 
+"@id": "supporting-files-metadata", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "SUPPORTING_FILE_INFO", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"@movedToPermanentArchive": false, 
+"files": {
+"file": []
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}
+]
+}, 
+"^ot:candidateTreeForSynthesis": [
+"tree3539"
+], 
+"^ot:comment": "", 
+"^ot:curatorName": [
+"Romina Gazis"
+], 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S938"
 }, 
 "^ot:focalClade": 838968, 
 "^ot:focalCladeOTTTaxonName": "Fusarium", 
-"^ot:messages": {
-"message": []
-}, 
+"^ot:notIntendedForSynthesis": false, 
 "^ot:otusElementOrder": [
 "otus1757"
 ], 
@@ -65,6 +152,10 @@
 "^ot:treesElementOrder": [
 "trees1757"
 ], 
+"^xhtml:license": {
+"@href": "http://creativecommons.org/publicdomain/zero/1.0/", 
+"@name": "CC0"
+}, 
 "otusById": {
 "otus1757": {
 "otuById": {
@@ -76,22 +167,32 @@
 }, 
 "otu273897": {
 "^ot:originalLabel": "Fusarium solani f. sp. glycines 1", 
+"^ot:ottId": 743045, 
+"^ot:ottTaxonName": "Haematonectria haematococca", 
 "^ot:treebaseOTUId": "Tl12058"
 }, 
 "otu273898": {
 "^ot:originalLabel": "Neocosmospora africana", 
+"^ot:ottId": 716780, 
+"^ot:ottTaxonName": "Fusarium neocosmosporiellum", 
 "^ot:treebaseOTUId": "Tl12059"
 }, 
 "otu273899": {
 "^ot:originalLabel": "Fusarium solani f. sp. cucurbitae MP V 2", 
+"^ot:ottId": 743045, 
+"^ot:ottTaxonName": "Haematonectria haematococca", 
 "^ot:treebaseOTUId": "Tl12060"
 }, 
 "otu273900": {
 "^ot:originalLabel": "Fusarium solani f. sp. xanthoxyli MP IV 1", 
+"^ot:ottId": 743045, 
+"^ot:ottTaxonName": "Haematonectria haematococca", 
 "^ot:treebaseOTUId": "Tl12061"
 }, 
 "otu273901": {
 "^ot:originalLabel": "Fusarium solani f. sp. glycines 2", 
+"^ot:ottId": 743045, 
+"^ot:ottTaxonName": "Haematonectria haematococca", 
 "^ot:treebaseOTUId": "Tl12062"
 }, 
 "otu273902": {
@@ -102,6 +203,8 @@
 }, 
 "otu273903": {
 "^ot:originalLabel": "Fusarium solani f. sp. cucurbitae MP I 1", 
+"^ot:ottId": 743045, 
+"^ot:ottTaxonName": "Haematonectria haematococca", 
 "^ot:treebaseOTUId": "Tl12064"
 }, 
 "otu273904": {
@@ -112,6 +215,8 @@
 }, 
 "otu273905": {
 "^ot:originalLabel": "Fusarium solani f. sp. cucurbitae MP I 2", 
+"^ot:ottId": 743045, 
+"^ot:ottTaxonName": "Haematonectria haematococca", 
 "^ot:treebaseOTUId": "Tl12066"
 }, 
 "otu273906": {
@@ -122,10 +227,14 @@
 }, 
 "otu273907": {
 "^ot:originalLabel": "Fusarium solani f. sp. robiniae MP VII 1", 
+"^ot:ottId": 743045, 
+"^ot:ottTaxonName": "Haematonectria haematococca", 
 "^ot:treebaseOTUId": "Tl12068"
 }, 
 "otu273908": {
 "^ot:originalLabel": "Fusarium solani f. sp. batatas MP II 2", 
+"^ot:ottId": 743045, 
+"^ot:ottTaxonName": "Haematonectria haematococca", 
 "^ot:treebaseOTUId": "Tl12069"
 }, 
 "otu273909": {
@@ -136,18 +245,26 @@
 }, 
 "otu273910": {
 "^ot:originalLabel": "Fusarium solani f. sp. robiniae MP VII 2", 
+"^ot:ottId": 743045, 
+"^ot:ottTaxonName": "Haematonectria haematococca", 
 "^ot:treebaseOTUId": "Tl12071"
 }, 
 "otu273911": {
 "^ot:originalLabel": "Fusarium solani f. sp. phaseoli 1", 
+"^ot:ottId": 743045, 
+"^ot:ottTaxonName": "Haematonectria haematococca", 
 "^ot:treebaseOTUId": "Tl12072"
 }, 
 "otu273912": {
 "^ot:originalLabel": "Fusarium solani f. sp. pisi MP VI 1", 
+"^ot:ottId": 743045, 
+"^ot:ottTaxonName": "Haematonectria haematococca", 
 "^ot:treebaseOTUId": "Tl12073"
 }, 
 "otu273913": {
 "^ot:originalLabel": "Fusarium solani f. sp. xanthoxyli MP IV 2", 
+"^ot:ottId": 743045, 
+"^ot:ottTaxonName": "Haematonectria haematococca", 
 "^ot:treebaseOTUId": "Tl12074"
 }, 
 "otu273914": {
@@ -164,6 +281,8 @@
 }, 
 "otu273916": {
 "^ot:originalLabel": "Fusarium solani f. sp. batatas MP II 1", 
+"^ot:ottId": 743045, 
+"^ot:ottTaxonName": "Haematonectria haematococca", 
 "^ot:treebaseOTUId": "Tl12077"
 }, 
 "otu273917": {
@@ -186,18 +305,26 @@
 }, 
 "otu273920": {
 "^ot:originalLabel": "Fusarium solani f. sp. pisi MP VI 2", 
+"^ot:ottId": 743045, 
+"^ot:ottTaxonName": "Haematonectria haematococca", 
 "^ot:treebaseOTUId": "Tl12081"
 }, 
 "otu273921": {
 "^ot:originalLabel": "Fusarium solani f. sp. phaseoli 2", 
+"^ot:ottId": 743045, 
+"^ot:ottTaxonName": "Haematonectria haematococca", 
 "^ot:treebaseOTUId": "Tl12082"
 }, 
 "otu273922": {
 "^ot:originalLabel": "Fusarium solani f. sp. cucurbitae MP V 1", 
+"^ot:ottId": 743045, 
+"^ot:ottTaxonName": "Haematonectria haematococca", 
 "^ot:treebaseOTUId": "Tl12083"
 }, 
 "otu273923": {
 "^ot:originalLabel": "Fusarium solani f. sp. mori MP III 2", 
+"^ot:ottId": 743045, 
+"^ot:ottTaxonName": "Haematonectria haematococca", 
 "^ot:treebaseOTUId": "Tl12084"
 }, 
 "otu273924": {
@@ -208,6 +335,8 @@
 }, 
 "otu273925": {
 "^ot:originalLabel": "Fusarium solnai f. sp. mori MP III 1", 
+"^ot:ottId": 743045, 
+"^ot:ottTaxonName": "Haematonectria haematococca", 
 "^ot:treebaseOTUId": "Tl12086"
 }, 
 "otu273926": {
@@ -218,6 +347,8 @@
 }, 
 "otu273927": {
 "^ot:originalLabel": "Fusarium solani f. sp. piperus", 
+"^ot:ottId": 743045, 
+"^ot:ottTaxonName": "Haematonectria haematococca", 
 "^ot:treebaseOTUId": "Tl135629"
 }, 
 "otu273928": {
@@ -240,6 +371,8 @@
 }, 
 "otu273931": {
 "^ot:originalLabel": "Fusarium ambrosium", 
+"^ot:ottId": 3789195, 
+"^ot:ottTaxonName": "Dactylella ambrosia", 
 "^ot:treebaseOTUId": "Tl135651"
 }
 }
@@ -253,18 +386,23 @@
 ], 
 "treeById": {
 "tree3539": {
+"@label": "MP, LSU", 
 "@xsi:type": "nex:FloatTree", 
 "^ot:branchLengthDescription": "", 
-"^ot:branchLengthMode": "", 
-"^ot:branchLengthTimeUnit": "", 
-"^ot:curatedType": "MP, LSU", 
+"^ot:branchLengthMode": "ot:substitutionCount", 
+"^ot:branchLengthTimeUnit": "Myr", 
+"^ot:curatedType": "Maximum parsimony ", 
 "^ot:inGroupClade": "node680673", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
 "^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node680672", 
-"^ot:specifiedRoot": "", 
+"^ot:specifiedRoot": "node680672", 
 "^ot:tag": [
-"MP"
+"MP", 
+"LSU"
 ], 
+"^ot:unrootedTree": false, 
 "edgeBySourceId": {
 "node680672": {
 "edge680673": {

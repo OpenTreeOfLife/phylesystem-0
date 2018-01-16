@@ -36,19 +36,100 @@
 }
 ]
 }
+}, 
+{
+"@description": "Web-based interface for submitting, editing, and reviewing studies in the Open Tree of Life project.", 
+"@id": "opentree-curation-webapp", 
+"@name": "OpenTree curation webapp", 
+"@url": "https://github.com/OpenTreeOfLife/opentree", 
+"@version": "0.0.0"
 }
 ]
 }, 
 "^ot:annotationEvents": {
-"annotation": []
+"annotation": [
+{
+"@dateCreated": "2016-11-11T16:17:32.491Z", 
+"@description": "Aids for mapping study OTUs to OTT taxa", 
+"@id": "otu-mapping-hints", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "OTU_MAPPING_HINTS", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"searchContext": {
+"$": "Seed plants"
 }, 
-"^ot:candidateTreeForSynthesis": [], 
-"^ot:curatorName": "Rick Ree", 
+"substitutions": {
+"substitution": [
+{
+"@active": false, 
+"@valid": true, 
+"new": {
+"$": ""
+}, 
+"old": {
+"$": ""
+}
+}
+]
+}, 
+"useFuzzyMatching": false
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}, 
+{
+"@dateCreated": "2016-11-11T16:17:32.491Z", 
+"@description": "Describes supporting data files for this study", 
+"@id": "supporting-files-metadata", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "SUPPORTING_FILE_INFO", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"@movedToPermanentArchive": false, 
+"files": {
+"file": []
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}
+]
+}, 
+"^ot:candidateTreeForSynthesis": [
+"tree15"
+], 
+"^ot:comment": "", 
+"^ot:curatorName": [
+"Rick Ree", 
+"Joseph W. Brown"
+], 
+"^ot:dataDeposit": {
+"@href": ""
+}, 
 "^ot:focalClade": 99252, 
 "^ot:focalCladeOTTTaxonName": "Magnoliophyta", 
-"^ot:messages": {
-"message": []
-}, 
+"^ot:notIntendedForSynthesis": false, 
 "^ot:otusElementOrder": [
 "otus25"
 ], 
@@ -1097,8 +1178,8 @@
 }, 
 "otu1909": {
 "^ot:originalLabel": "Phyllanthus", 
-"^ot:ottId": 11415, 
-"^ot:ottTaxonName": "Phyllanthus"
+"^ot:ottId": 5509975, 
+"^ot:ottTaxonName": "Phyllanthus (genus in kingdom Archaeplastida)"
 }, 
 "otu1910": {
 "^ot:originalLabel": "Reinwardtia", 
@@ -1977,50 +2058,49 @@
 ], 
 "treeById": {
 "tree15": {
+"@label": "Fig. 2 (ML bootstrap consensus (356 taxa))", 
 "@xsi:type": "nex:FloatTree", 
 "^ot:branchLengthDescription": "", 
 "^ot:branchLengthMode": "ot:substitutionCount", 
-"^ot:branchLengthTimeUnit": "", 
-"^ot:curatedType": "ML bootstrap consensus (356 taxa)", 
+"^ot:curatedType": "Maximum likelihood ", 
+"^ot:inGroupClade": "node4404", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
 "^ot:outGroupEdge": "", 
-"^ot:rootNodeId": "node4392", 
-"^ot:specifiedRoot": "", 
+"^ot:rootNodeId": "tree15_ROOT", 
+"^ot:specifiedRoot": "tree15_ROOT", 
 "^ot:tag": [], 
+"^ot:unrootedTree": false, 
 "edgeBySourceId": {
 "node4392": {
 "edge4393": {
 "@length": 0.00709961, 
 "@source": "node4392", 
 "@target": "node4393"
-}, 
-"edge4394": {
-"@length": 0.00709961, 
-"@source": "node4392", 
-"@target": "node4394"
 }
 }, 
 "node4394": {
+"edge4394": {
+"@length": 0.00709961, 
+"@source": "node4394", 
+"@target": "node4392"
+}, 
 "edge4395": {
 "@length": 0.0324645, 
 "@source": "node4394", 
 "@target": "node4395"
-}, 
-"edge4396": {
-"@length": 0.0389575, 
-"@source": "node4394", 
-"@target": "node4396"
 }
 }, 
 "node4396": {
+"edge4396": {
+"@length": 0.0389575, 
+"@source": "node4396", 
+"@target": "node4394"
+}, 
 "edge4397": {
 "@length": 0.0235524, 
 "@source": "node4396", 
 "@target": "node4397"
-}, 
-"edge4404": {
-"@length": 0.172002, 
-"@source": "node4396", 
-"@target": "node4404"
 }
 }, 
 "node4397": {
@@ -6246,12 +6326,21 @@
 "@source": "node5100", 
 "@target": "node5102"
 }
+}, 
+"tree15_ROOT": {
+"edge4404": {
+"@length": 0.172002, 
+"@source": "tree15_ROOT", 
+"@target": "node4404"
+}, 
+"tree15_ROOT_EDGE": {
+"@source": "tree15_ROOT", 
+"@target": "node4396"
+}
 }
 }, 
 "nodeById": {
-"node4392": {
-"@root": true
-}, 
+"node4392": {}, 
 "node4393": {
 "@otu": "otu1703"
 }, 
@@ -7673,55 +7762,57 @@
 }, 
 "node5102": {
 "@otu": "otu2082"
+}, 
+"tree15_ROOT": {
+"@root": true
 }
 }
 }, 
 "tree16": {
+"@label": "Fig. S2 (ML bootstrap consensus (380 taxa))", 
 "@xsi:type": "nex:FloatTree", 
 "^ot:branchLengthDescription": "", 
 "^ot:branchLengthMode": "ot:substitutionCount", 
 "^ot:branchLengthTimeUnit": "", 
-"^ot:curatedType": "ML bootstrap consensus (380 taxa)", 
+"^ot:curatedType": "Maximum likelihood ", 
 "^ot:inGroupClade": "node5119", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
 "^ot:outGroupEdge": "", 
-"^ot:rootNodeId": "node5103", 
-"^ot:specifiedRoot": "", 
+"^ot:rootNodeId": "tree16_ROOT", 
+"^ot:specifiedRoot": "tree16_ROOT", 
 "^ot:tag": [], 
+"^ot:unrootedTree": false, 
 "edgeBySourceId": {
 "node5103": {
 "edge5104": {
 "@length": 0.00727872, 
 "@source": "node5103", 
 "@target": "node5104"
-}, 
-"edge5105": {
-"@length": 0.00727872, 
-"@source": "node5103", 
-"@target": "node5105"
 }
 }, 
 "node5105": {
+"edge5105": {
+"@length": 0.00727872, 
+"@source": "node5105", 
+"@target": "node5103"
+}, 
 "edge5106": {
 "@length": 0.0312158, 
 "@source": "node5105", 
 "@target": "node5106"
-}, 
-"edge5107": {
-"@length": 0.0385659, 
-"@source": "node5105", 
-"@target": "node5107"
 }
 }, 
 "node5107": {
+"edge5107": {
+"@length": 0.0385659, 
+"@source": "node5107", 
+"@target": "node5105"
+}, 
 "edge5108": {
 "@length": 0.022218, 
 "@source": "node5107", 
 "@target": "node5108"
-}, 
-"edge5119": {
-"@length": 0.171046, 
-"@source": "node5107", 
-"@target": "node5119"
 }
 }, 
 "node5108": {
@@ -12235,12 +12326,21 @@
 "@source": "node5859", 
 "@target": "node5861"
 }
+}, 
+"tree16_ROOT": {
+"edge5119": {
+"@length": 0.171046, 
+"@source": "tree16_ROOT", 
+"@target": "node5119"
+}, 
+"tree16_ROOT_EDGE": {
+"@source": "tree16_ROOT", 
+"@target": "node5107"
+}
 }
 }, 
 "nodeById": {
-"node5103": {
-"@root": true
-}, 
+"node5103": {}, 
 "node5104": {
 "@otu": "otu1703"
 }, 
@@ -13758,6 +13858,9 @@
 }, 
 "node5861": {
 "@otu": "otu2082"
+}, 
+"tree16_ROOT": {
+"@root": true
 }
 }
 }

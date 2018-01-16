@@ -1,0 +1,1525 @@
+{
+"nexml": {
+"@about": "#study", 
+"@generator": "Open Tree API", 
+"@id": "study", 
+"@nexml2json": "1.2.1", 
+"@nexmljson": "http://purl.org/opentree/nexson", 
+"@version": "0.9", 
+"@xmlns": {
+"$": "http://www.nexml.org/2009", 
+"nex": "http://www.nexml.org/2009", 
+"ot": "http://purl.org/opentree-terms#", 
+"xhtml": "http://www.w3.org/1999/xhtml/vocab#", 
+"xsd": "http://www.w3.org/2001/XMLSchema#", 
+"xsi": "http://www.w3.org/2001/XMLSchema-instance"
+}, 
+"^ot:agents": {
+"agent": [
+{
+"@description": "Open Tree NexSON validation", 
+"@id": "peyotl-validator", 
+"@name": "api.opentreeoflife.org/validate", 
+"@url": "https://github.com/OpenTreeOfLife/peyotl", 
+"@version": "0.0.4a", 
+"invocation": {
+"commandLine": [], 
+"otherProperty": [
+{
+"name": "pythonVersion", 
+"value": "2.7.3"
+}, 
+{
+"name": "pythonImplementation", 
+"value": "CPython"
+}
+]
+}
+}, 
+{
+"@description": "Web-based interface for submitting, editing, and reviewing studies in the Open Tree of Life project.", 
+"@id": "opentree-curation-webapp", 
+"@name": "OpenTree curation webapp", 
+"@url": "https://github.com/OpenTreeOfLife/opentree", 
+"@version": "0.0.0"
+}
+]
+}, 
+"^ot:annotationEvents": {
+"annotation": [
+{
+"@dateCreated": "2014-07-15T20:18:48.110Z", 
+"@description": "Aids for mapping study OTUs to OTT taxa", 
+"@id": "otu-mapping-hints", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "OTU_MAPPING_HINTS", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"searchContext": {
+"$": "All life"
+}, 
+"substitutions": {
+"substitution": [
+{
+"@active": true, 
+"@valid": true, 
+"new": {
+"$": " "
+}, 
+"old": {
+"$": "sp."
+}
+}, 
+{
+"@active": true, 
+"@valid": true, 
+"new": {
+"$": ""
+}, 
+"old": {
+"$": "\\bsp(\\.|\\b)"
+}
+}, 
+{
+"@active": false, 
+"@valid": true, 
+"new": {
+"$": ""
+}, 
+"old": {
+"$": "^(\\w*)\\s+\\b"
+}
+}
+]
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}, 
+{
+"@dateCreated": "2014-07-15T20:18:48.110Z", 
+"@description": "Describes supporting data files for this study", 
+"@id": "supporting-files-metadata", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "SUPPORTING_FILE_INFO", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"@movedToPermanentArchive": false, 
+"files": {
+"file": [
+{
+"@filename": "<content provided as a string in a \"content\" rather than a file upload>", 
+"@size": "", 
+"@type": "newick", 
+"@url": "", 
+"description": {
+"$": ""
+}, 
+"sourceForTree": [
+{
+"$": "tree1"
+}
+]
+}, 
+{
+"@filename": "<content provided as a string in a \"content\" rather than a file upload>", 
+"@size": "", 
+"@type": "newick", 
+"@url": "", 
+"description": {
+"$": ""
+}, 
+"sourceForTree": [
+{
+"$": "tree2"
+}
+]
+}
+]
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}
+]
+}, 
+"^ot:candidateTreeForSynthesis": [
+"tree2"
+], 
+"^ot:comment": "", 
+"^ot:curatorName": [
+"Kayla Foney", 
+"Dail Laughinghouse"
+], 
+"^ot:dataDeposit": {
+"@href": ""
+}, 
+"^ot:focalClade": 928704, 
+"^ot:focalCladeOTTTaxonName": "Dinophysis acuta", 
+"^ot:messages": {
+"message": []
+}, 
+"^ot:notIntendedForSynthesis": false, 
+"^ot:otusElementOrder": [
+"otus1"
+], 
+"^ot:studyId": "ot_92", 
+"^ot:studyPublication": {
+"@href": "http://dx.doi.org/10.1016/j.hal.2014.03.003"
+}, 
+"^ot:studyPublicationReference": "Nicol\u00e1s Raho, David Ja\u00e9n, Luz Mam\u00e1n, Pilar Rial, Irma Mar\u00edn, 2014, 'psbA based molecular analysis of cross-feeding experiments suggests that Dinophysis acuta does not harbour permanent plastids', Harmful Algae, vol. 35, pp. 20-28", 
+"^ot:studyYear": 2014, 
+"^ot:tag": [], 
+"^ot:treesElementOrder": [
+"trees1"
+], 
+"^xhtml:license": {
+"@href": "http://creativecommons.org/publicdomain/zero/1.0/"
+}, 
+"otusById": {
+"otus1": {
+"otuById": {
+"otu1": {
+"^ot:originalLabel": "AB376284 Dinophysis infundibulus", 
+"^ot:ottId": 757713, 
+"^ot:ottTaxonName": "Dinophysis infundibula"
+}, 
+"otu10": {
+"^ot:originalLabel": "HQ681255 Dinophysis acuta DMCRY1VH2", 
+"^ot:ottId": 928704, 
+"^ot:ottTaxonName": "Dinophysis acuta"
+}, 
+"otu11": {
+"^ot:originalLabel": "HQ681256 Dinophysis acuta DMCRY6V", 
+"^ot:ottId": 928704, 
+"^ot:ottTaxonName": "Dinophysis acuta"
+}, 
+"otu12": {
+"^ot:originalLabel": "HQ681257 Teleaulx amphioxeia", 
+"^ot:ottId": 277748, 
+"^ot:ottTaxonName": "Teleaulax"
+}, 
+"otu13": {
+"^ot:originalLabel": "HQ681258 Myrionecta rubra MCRY1V", 
+"^ot:ottId": 182632, 
+"^ot:ottTaxonName": "Myrionecta rubra"
+}, 
+"otu14": {
+"^ot:originalLabel": "HQ681260 Myrionecta rubra MCRY6V", 
+"^ot:ottId": 182632, 
+"^ot:ottTaxonName": "Myrionecta rubra"
+}, 
+"otu15": {
+"^ot:originalLabel": "HQ681261 Myrionecta rubra MT", 
+"^ot:ottId": 182632, 
+"^ot:ottTaxonName": "Myrionecta rubra"
+}, 
+"otu16": {
+"^ot:altLabel": "Dinophysis acuta DMT", 
+"^ot:originalLabel": "HQ681262 Dinophysis acuta DMT"
+}, 
+"otu17": {
+"^ot:originalLabel": "HQ681263 Dinophysis acuta DMCRY1V", 
+"^ot:ottId": 928704, 
+"^ot:ottTaxonName": "Dinophysis acuta"
+}, 
+"otu18": {
+"^ot:altLabel": " Dinophysis acuta DMTH", 
+"^ot:originalLabel": "HQ681264 Dinophysis acuta DMTH"
+}, 
+"otu19": {
+"^ot:originalLabel": "Acuta gracilisPSBA clon28 buena"
+}, 
+"otu2": {
+"^ot:originalLabel": "AB471796 Teleaulax amphioxeia", 
+"^ot:ottId": 277747, 
+"^ot:ottTaxonName": "Teleaulax amphioxeia"
+}, 
+"otu20": {
+"^ot:originalLabel": "clon45 buena acutahuelvaconGracilis"
+}, 
+"otu21": {
+"^ot:originalLabel": "Gracilis contig de las 3 juntas Hecho en DNAbaser reversed", 
+"^ot:ottId": 186238, 
+"^ot:ottTaxonName": "Teleaulax gracilis"
+}, 
+"otu22": {
+"^ot:originalLabel": "Mesodinium gracilisPSBA clon 11 buena", 
+"^ot:ottId": 1030745, 
+"^ot:ottTaxonName": "Mesodinium rubrum"
+}, 
+"otu23": {
+"^ot:originalLabel": "AB471794 Teleaulax acuta", 
+"^ot:ottId": 898530, 
+"^ot:ottTaxonName": "Teleaulax acuta"
+}, 
+"otu24": {
+"^ot:originalLabel": "AB471795 Dinophysis acuminata", 
+"^ot:ottId": 575941, 
+"^ot:ottTaxonName": "Dinophysis acuminata"
+}, 
+"otu25": {
+"^ot:originalLabel": "EF151017 Geminigera cryophila", 
+"^ot:ottId": 492487, 
+"^ot:ottTaxonName": "Geminigera cryophila"
+}, 
+"otu26": {
+"^ot:originalLabel": "AY119749 Chroomonas", 
+"^ot:ottId": 414521, 
+"^ot:ottTaxonName": "Chroomonas sp. SAG 980-1"
+}, 
+"otu27": {
+"^ot:originalLabel": "HQ681266_Hemiselmis_sp._CRY6V", 
+"^ot:ottId": 663911, 
+"^ot:ottTaxonName": "Hemiselmis sp. NR-2011"
+}, 
+"otu28": {
+"^ot:originalLabel": "HQ681267_Falcomonas_sp._CRY1V", 
+"^ot:ottId": 663906, 
+"^ot:ottTaxonName": "Falcomonas sp. NR-2011"
+}, 
+"otu29": {
+"^ot:originalLabel": "AY119751 Rhodomonas abbreviata", 
+"^ot:ottId": 492542, 
+"^ot:ottTaxonName": "Rhodomonas abbreviata"
+}, 
+"otu3": {
+"^ot:originalLabel": "AF530395 Dinophysis acuta", 
+"^ot:ottId": 928704, 
+"^ot:ottTaxonName": "Dinophysis acuta"
+}, 
+"otu30": {
+"^ot:originalLabel": "AY119750 Pyrenomonas helgolandii", 
+"^ot:ottId": 375993, 
+"^ot:ottTaxonName": "Pyrenomonas helgolandii"
+}, 
+"otu31": {
+"^ot:originalLabel": "AF041468 Guillardia theta  reversed", 
+"^ot:ottId": 5247740, 
+"^ot:ottTaxonName": "Guillardia theta"
+}, 
+"otu32": {
+"^ot:originalLabel": "U53128 Rhodomonas abbreviata", 
+"^ot:ottId": 492542, 
+"^ot:ottTaxonName": "Rhodomonas abbreviata"
+}, 
+"otu33": {
+"^ot:originalLabel": "HM126532 Rhodomonas salina", 
+"^ot:ottId": 153405, 
+"^ot:ottTaxonName": "Rhodomonas salina"
+}, 
+"otu34": {
+"^ot:originalLabel": "AF508274 Rhodomonas maculata", 
+"^ot:ottId": 324249, 
+"^ot:ottTaxonName": "Rhodomonas maculata"
+}, 
+"otu35": {
+"^ot:originalLabel": "EU926158 Rhodomonas salina", 
+"^ot:ottId": 153405, 
+"^ot:ottTaxonName": "Rhodomonas salina"
+}, 
+"otu36": {
+"^ot:originalLabel": "HM126535_Rhodomonas_sp.", 
+"^ot:ottId": 819647, 
+"^ot:ottTaxonName": "Rhodomonas sp. K-1488"
+}, 
+"otu37": {
+"^ot:originalLabel": "AJ007285 Proteomonas sulcata", 
+"^ot:ottId": 801153, 
+"^ot:ottTaxonName": "Proteomonas sulcata"
+}, 
+"otu38": {
+"^ot:originalLabel": "HM126536 Proteomonas sulcata", 
+"^ot:ottId": 801153, 
+"^ot:ottTaxonName": "Proteomonas sulcata"
+}, 
+"otu39": {
+"^ot:originalLabel": "AF143943 Falcomonas daucoide", 
+"^ot:ottId": 579548, 
+"^ot:ottTaxonName": "Falcomonas daucoides"
+}, 
+"otu4": {
+"^ot:originalLabel": "AF530396 Dinophysis norvegica", 
+"^ot:ottId": 468290, 
+"^ot:ottTaxonName": "Dinophysis norvegica"
+}, 
+"otu40": {
+"^ot:originalLabel": "AJ007277_Chroomonas_sp.", 
+"^ot:ottId": 414525, 
+"^ot:ottTaxonName": "Chroomonas sp. M1312"
+}, 
+"otu41": {
+"^ot:originalLabel": "AM901354 Hemiselmis cryptochromatica", 
+"^ot:ottId": 824458, 
+"^ot:ottTaxonName": "Hemiselmis cryptochromatica"
+}, 
+"otu42": {
+"^ot:originalLabel": "AM901353 Hemiselmis andersenii", 
+"^ot:ottId": 801159, 
+"^ot:ottTaxonName": "Hemiselmis"
+}, 
+"otu43": {
+"^ot:originalLabel": "AJ007283 Hemiselmis rufescens", 
+"^ot:ottId": 801161, 
+"^ot:ottTaxonName": "Hemiselmis rufescens"
+}, 
+"otu44": {
+"^ot:altLabel": "Hemiselmis andersenii", 
+"^ot:originalLabel": "AM901350 Hemiselmis andersenii"
+}, 
+"otu45": {
+"^ot:originalLabel": "Consenso 2B2 F4F5F6"
+}, 
+"otu46": {
+"^ot:originalLabel": "AJ007282 Hemiselmis brunnescens", 
+"^ot:ottId": 801160, 
+"^ot:ottTaxonName": "Hemiselmis brunnescens"
+}, 
+"otu47": {
+"^ot:originalLabel": "AM901349 Hemiselmis rufescens"
+}, 
+"otu48": {
+"^ot:originalLabel": "AM901352 Hemiselmis pacifica", 
+"^ot:ottId": 7623, 
+"^ot:ottTaxonName": "Hemiselmis pacifica"
+}, 
+"otu49": {
+"^ot:originalLabel": "AJ007284 Hemiselmis virescens", 
+"^ot:ottId": 801162, 
+"^ot:ottTaxonName": "Hemiselmis virescens"
+}, 
+"otu5": {
+"^ot:originalLabel": "AY141194 Dinophysis norvegica", 
+"^ot:ottId": 468290, 
+"^ot:ottTaxonName": "Dinophysis norvegica"
+}, 
+"otu50": {
+"^ot:originalLabel": "HM126533 Hemiselmis tepida", 
+"^ot:ottId": 299988, 
+"^ot:ottTaxonName": "Hemiselmis tepida"
+}, 
+"otu51": {
+"^ot:originalLabel": "AF143944 Plagiomonas amylosa", 
+"^ot:ottId": 58645, 
+"^ot:ottTaxonName": "Plagiomonas amylosa"
+}, 
+"otu52": {
+"^ot:originalLabel": "Concenso 1A1 NR567"
+}, 
+"otu53": {
+"^ot:altLabel": "Cryptophyceae sp. CCMP2045", 
+"^ot:originalLabel": "GQ375264_Cryptophyceae_sp._CCMP2045"
+}, 
+"otu54": {
+"^ot:originalLabel": "GQ375265_Cryptophyceae_sp._CCMP2293", 
+"^ot:ottId": 4029343, 
+"^ot:ottTaxonName": "Chrysophyceae sp. CCMP2296"
+}, 
+"otu55": {
+"^ot:originalLabel": "AF508272 Plagioselmis prolonga", 
+"^ot:ottId": 435980, 
+"^ot:ottTaxonName": "Plagioselmis prolonga"
+}, 
+"otu56": {
+"^ot:originalLabel": "Consenso Teleaulx E4F1E6"
+}, 
+"otu57": {
+"^ot:originalLabel": "AB364287 Teleaulax amphioxeia", 
+"^ot:ottId": 277747, 
+"^ot:ottTaxonName": "Teleaulax amphioxeia"
+}, 
+"otu58": {
+"^ot:altLabel": "Teleaulax amphioxeia", 
+"^ot:originalLabel": "AJ007287 Teleaulax amphioxeia"
+}, 
+"otu59": {
+"^ot:originalLabel": "JQ966996 Teleaulax gracilis", 
+"^ot:ottId": 186238, 
+"^ot:ottTaxonName": "Teleaulax gracilis"
+}, 
+"otu6": {
+"^ot:originalLabel": "AY453068 Teleaulax amphioxeia", 
+"^ot:ottId": 277747, 
+"^ot:ottTaxonName": "Teleaulax amphioxeia"
+}, 
+"otu60": {
+"^ot:originalLabel": "JQ966994 Teleaulax gracilis", 
+"^ot:ottId": 186238, 
+"^ot:ottTaxonName": "Teleaulax gracilis"
+}, 
+"otu61": {
+"^ot:originalLabel": "JQ966995 Teleaulax gracilis", 
+"^ot:ottId": 186238, 
+"^ot:ottTaxonName": "Teleaulax gracilis"
+}, 
+"otu62": {
+"^ot:originalLabel": "HM126531 Teleaulax acuta", 
+"^ot:ottId": 898530, 
+"^ot:ottTaxonName": "Teleaulax acuta"
+}, 
+"otu63": {
+"^ot:originalLabel": "AB471786 Teleaulax acuta", 
+"^ot:ottId": 898530, 
+"^ot:ottTaxonName": "Teleaulax acuta"
+}, 
+"otu64": {
+"^ot:originalLabel": "AF508275 Teleaulax acuta", 
+"^ot:ottId": 898530, 
+"^ot:ottTaxonName": "Teleaulax acuta"
+}, 
+"otu65": {
+"^ot:originalLabel": "U53124 Geminigera cryophila", 
+"^ot:ottId": 492487, 
+"^ot:ottTaxonName": "Geminigera cryophila"
+}, 
+"otu66": {
+"^ot:originalLabel": "AB058366Geminigera cryophila", 
+"^ot:ottId": 492487, 
+"^ot:ottTaxonName": "Geminigera cryophila"
+}, 
+"otu67": {
+"^ot:originalLabel": "DQ452091 Geminigera cryophila", 
+"^ot:ottId": 492487, 
+"^ot:ottTaxonName": "Geminigera cryophila"
+}, 
+"otu68": {
+"^ot:originalLabel": "EF195738_Cryptophyta_sp._CR-MAL04", 
+"^ot:ottId": 4739107, 
+"^ot:ottTaxonName": "Cryptophyta sp. CR-MAL03"
+}, 
+"otu69": {
+"^ot:originalLabel": "FM876311 Plagioselmis nannoplanctica", 
+"^ot:ottId": 450095, 
+"^ot:ottTaxonName": "Plagioselmis nannoplanctica"
+}, 
+"otu7": {
+"^ot:originalLabel": "clon57 buena acutahuelvaconGracilis reversed"
+}, 
+"otu70": {
+"^ot:originalLabel": "X57162 Guillardia theta", 
+"^ot:ottId": 5247740, 
+"^ot:ottTaxonName": "Guillardia theta"
+}, 
+"otu8": {
+"^ot:altLabel": "Myrionecta rubra", 
+"^ot:originalLabel": "EU123325 Myrionecta rubra strain MR MAL01"
+}, 
+"otu9": {
+"^ot:originalLabel": "EU123327 Dinophysis caudata", 
+"^ot:ottId": 35058, 
+"^ot:ottTaxonName": "Dinophysis caudata"
+}
+}
+}
+}, 
+"treesById": {
+"trees1": {
+"@otus": "otus1", 
+"^ot:treeElementOrder": [
+"tree1", 
+"tree2"
+], 
+"treeById": {
+"tree1": {
+"@label": "psbA", 
+"@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
+"^ot:curatedType": "", 
+"^ot:inGroupClade": "", 
+"^ot:messages": {
+"message": [
+{
+"@code": "SUPPORTING_FILE_INFO", 
+"@humanMessageType": "NONE", 
+"@id": "messageu7e99645f-0716-447b-8251-7655f5c7e983", 
+"@severity": "INFO", 
+"@wasGeneratedBy": "opentree.2nexml", 
+"data": {
+"@movedToPermanentArchive": false, 
+"files": {
+"file": [
+{
+"@filename": "<content provided as a string in a \"content\" rather than a file upload>", 
+"@size": 1429, 
+"@sourceForTree": "tree1", 
+"@type": "newick", 
+"@url": "/curator/default/to_nexson?output=input&uploadid=u7e99645f-0716-447b-8251-7655f5c7e983", 
+"description": {
+"$": "Source data for tree 'tree1'"
+}
+}
+]
+}
+}
+}
+]
+}, 
+"^ot:outGroupEdge": "", 
+"^ot:rootNodeId": "node1", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
+"^ot:unrootedTree": true, 
+"edgeBySourceId": {
+"node1": {
+"edge1": {
+"@length": 0.016847, 
+"@source": "node1", 
+"@target": "node2"
+}, 
+"edge42": {
+"@length": 0.067387, 
+"@source": "node1", 
+"@target": "node43"
+}
+}, 
+"node2": {
+"edge2": {
+"@length": 0.008301, 
+"@source": "node2", 
+"@target": "node3"
+}, 
+"edge41": {
+"@length": 0.015838, 
+"@source": "node2", 
+"@target": "node42"
+}
+}, 
+"node28": {
+"edge28": {
+"@length": 0, 
+"@source": "node28", 
+"@target": "node29"
+}, 
+"edge29": {
+"@length": 0, 
+"@source": "node28", 
+"@target": "node30"
+}, 
+"edge30": {
+"@length": 0, 
+"@source": "node28", 
+"@target": "node31"
+}, 
+"edge31": {
+"@length": 0, 
+"@source": "node28", 
+"@target": "node32"
+}
+}, 
+"node3": {
+"edge3": {
+"@length": 0.016322, 
+"@source": "node3", 
+"@target": "node4"
+}, 
+"edge40": {
+"@length": 0.022819, 
+"@source": "node3", 
+"@target": "node41"
+}
+}, 
+"node34": {
+"edge34": {
+"@length": 0.009379, 
+"@source": "node34", 
+"@target": "node35"
+}, 
+"edge35": {
+"@length": 0.015537, 
+"@source": "node34", 
+"@target": "node36"
+}
+}, 
+"node37": {
+"edge37": {
+"@length": 0.090464, 
+"@source": "node37", 
+"@target": "node38"
+}, 
+"edge38": {
+"@length": 0.010935, 
+"@source": "node37", 
+"@target": "node39"
+}
+}, 
+"node4": {
+"edge39": {
+"@length": 0.039012, 
+"@source": "node4", 
+"@target": "node40"
+}, 
+"edge4": {
+"@length": 0.011395, 
+"@source": "node4", 
+"@target": "node5"
+}
+}, 
+"node5": {
+"edge36": {
+"@length": 0.02676, 
+"@source": "node5", 
+"@target": "node37"
+}, 
+"edge5": {
+"@length": 0.033342, 
+"@source": "node5", 
+"@target": "node6"
+}
+}, 
+"node6": {
+"edge33": {
+"@length": 0.006129, 
+"@source": "node6", 
+"@target": "node34"
+}, 
+"edge6": {
+"@length": 0.009896, 
+"@source": "node6", 
+"@target": "node7"
+}
+}, 
+"node7": {
+"edge32": {
+"@length": 0.001583, 
+"@source": "node7", 
+"@target": "node33"
+}, 
+"edge7": {
+"@length": 0.006957, 
+"@source": "node7", 
+"@target": "node8"
+}
+}, 
+"node8": {
+"edge27": {
+"@length": 0.004305, 
+"@source": "node8", 
+"@target": "node28"
+}, 
+"edge8": {
+"@length": 0.005788, 
+"@source": "node8", 
+"@target": "node9"
+}
+}, 
+"node9": {
+"edge10": {
+"@length": 0, 
+"@source": "node9", 
+"@target": "node11"
+}, 
+"edge11": {
+"@length": 0, 
+"@source": "node9", 
+"@target": "node12"
+}, 
+"edge12": {
+"@length": 0.001383, 
+"@source": "node9", 
+"@target": "node13"
+}, 
+"edge13": {
+"@length": 0, 
+"@source": "node9", 
+"@target": "node14"
+}, 
+"edge14": {
+"@length": 0, 
+"@source": "node9", 
+"@target": "node15"
+}, 
+"edge15": {
+"@length": 0, 
+"@source": "node9", 
+"@target": "node16"
+}, 
+"edge16": {
+"@length": 0, 
+"@source": "node9", 
+"@target": "node17"
+}, 
+"edge17": {
+"@length": 0.007054, 
+"@source": "node9", 
+"@target": "node18"
+}, 
+"edge18": {
+"@length": 0, 
+"@source": "node9", 
+"@target": "node19"
+}, 
+"edge19": {
+"@length": 0.001383, 
+"@source": "node9", 
+"@target": "node20"
+}, 
+"edge20": {
+"@length": 0, 
+"@source": "node9", 
+"@target": "node21"
+}, 
+"edge21": {
+"@length": 0.001385, 
+"@source": "node9", 
+"@target": "node22"
+}, 
+"edge22": {
+"@length": 0, 
+"@source": "node9", 
+"@target": "node23"
+}, 
+"edge23": {
+"@length": 0, 
+"@source": "node9", 
+"@target": "node24"
+}, 
+"edge24": {
+"@length": 0, 
+"@source": "node9", 
+"@target": "node25"
+}, 
+"edge25": {
+"@length": 0, 
+"@source": "node9", 
+"@target": "node26"
+}, 
+"edge26": {
+"@length": 0, 
+"@source": "node9", 
+"@target": "node27"
+}, 
+"edge9": {
+"@length": 0, 
+"@source": "node9", 
+"@target": "node10"
+}
+}
+}, 
+"nodeById": {
+"node1": {
+"@root": true
+}, 
+"node10": {
+"@otu": "otu1"
+}, 
+"node11": {
+"@otu": "otu2"
+}, 
+"node12": {
+"@otu": "otu3"
+}, 
+"node13": {
+"@otu": "otu4"
+}, 
+"node14": {
+"@otu": "otu5"
+}, 
+"node15": {
+"@otu": "otu6"
+}, 
+"node16": {
+"@otu": "otu7"
+}, 
+"node17": {
+"@otu": "otu8"
+}, 
+"node18": {
+"@otu": "otu9"
+}, 
+"node19": {
+"@otu": "otu10"
+}, 
+"node2": {}, 
+"node20": {
+"@otu": "otu11"
+}, 
+"node21": {
+"@otu": "otu12"
+}, 
+"node22": {
+"@otu": "otu13"
+}, 
+"node23": {
+"@otu": "otu14"
+}, 
+"node24": {
+"@otu": "otu15"
+}, 
+"node25": {
+"@otu": "otu16"
+}, 
+"node26": {
+"@otu": "otu17"
+}, 
+"node27": {
+"@otu": "otu18"
+}, 
+"node28": {}, 
+"node29": {
+"@otu": "otu19"
+}, 
+"node3": {}, 
+"node30": {
+"@otu": "otu20"
+}, 
+"node31": {
+"@otu": "otu21"
+}, 
+"node32": {
+"@otu": "otu22"
+}, 
+"node33": {
+"@otu": "otu23"
+}, 
+"node34": {}, 
+"node35": {
+"@otu": "otu24"
+}, 
+"node36": {
+"@otu": "otu25"
+}, 
+"node37": {}, 
+"node38": {
+"@otu": "otu26"
+}, 
+"node39": {
+"@otu": "otu27"
+}, 
+"node4": {}, 
+"node40": {
+"@otu": "otu28"
+}, 
+"node41": {
+"@otu": "otu29"
+}, 
+"node42": {
+"@otu": "otu30"
+}, 
+"node43": {
+"@otu": "otu31"
+}, 
+"node5": {}, 
+"node6": {}, 
+"node7": {}, 
+"node8": {}, 
+"node9": {}
+}
+}, 
+"tree2": {
+"@label": "18S", 
+"@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthTimeUnit": "", 
+"^ot:curatedType": "", 
+"^ot:inGroupClade": "node45", 
+"^ot:messages": {
+"message": [
+{
+"@code": "SUPPORTING_FILE_INFO", 
+"@humanMessageType": "NONE", 
+"@id": "messageufd3dc29c-5861-4ff9-af34-5de4ea39209d", 
+"@severity": "INFO", 
+"@wasGeneratedBy": "opentree.2nexml", 
+"data": {
+"@movedToPermanentArchive": false, 
+"files": {
+"file": [
+{
+"@filename": "<content provided as a string in a \"content\" rather than a file upload>", 
+"@size": 1836, 
+"@sourceForTree": "tree2", 
+"@type": "newick", 
+"@url": "/curator/default/to_nexson?output=input&uploadid=ufd3dc29c-5861-4ff9-af34-5de4ea39209d", 
+"description": {
+"$": "Source data for tree 'tree2'"
+}
+}
+]
+}
+}
+}
+]
+}, 
+"^ot:outGroupEdge": "", 
+"^ot:rootNodeId": "node44", 
+"^ot:specifiedRoot": "node44", 
+"^ot:tag": [], 
+"^ot:unrootedTree": false, 
+"edgeBySourceId": {
+"node100": {
+"edge100": {
+"@length": 0, 
+"@source": "node100", 
+"@target": "node102"
+}, 
+"edge101": {
+"@length": 0, 
+"@source": "node100", 
+"@target": "node103"
+}, 
+"edge99": {
+"@length": 0.001313, 
+"@source": "node100", 
+"@target": "node101"
+}
+}, 
+"node104": {
+"edge103": {
+"@length": 0.000712, 
+"@source": "node104", 
+"@target": "node105"
+}, 
+"edge104": {
+"@length": 0, 
+"@source": "node104", 
+"@target": "node106"
+}, 
+"edge105": {
+"@length": 0, 
+"@source": "node104", 
+"@target": "node107"
+}
+}, 
+"node44": {
+"edge108": {
+"@length": 0.04922, 
+"@source": "node44", 
+"@target": "node110"
+}, 
+"edge43": {
+"@length": 0.012305, 
+"@source": "node44", 
+"@target": "node45"
+}
+}, 
+"node45": {
+"edge44": {
+"@length": 0.009017, 
+"@source": "node45", 
+"@target": "node46"
+}, 
+"edge83": {
+"@length": 0.024021, 
+"@source": "node45", 
+"@target": "node85"
+}
+}, 
+"node46": {
+"edge45": {
+"@length": 0.004253, 
+"@source": "node46", 
+"@target": "node47"
+}, 
+"edge78": {
+"@length": 0.005104, 
+"@source": "node46", 
+"@target": "node80"
+}
+}, 
+"node47": {
+"edge46": {
+"@length": 0.069356, 
+"@source": "node47", 
+"@target": "node48"
+}, 
+"edge53": {
+"@length": 0.002855, 
+"@source": "node47", 
+"@target": "node55"
+}
+}, 
+"node48": {
+"edge47": {
+"@length": 0.005773, 
+"@source": "node48", 
+"@target": "node49"
+}, 
+"edge48": {
+"@length": 0.009287, 
+"@source": "node48", 
+"@target": "node50"
+}
+}, 
+"node50": {
+"edge49": {
+"@length": 0, 
+"@source": "node50", 
+"@target": "node51"
+}, 
+"edge50": {
+"@length": 0, 
+"@source": "node50", 
+"@target": "node52"
+}, 
+"edge51": {
+"@length": 0, 
+"@source": "node50", 
+"@target": "node53"
+}, 
+"edge52": {
+"@length": 0, 
+"@source": "node50", 
+"@target": "node54"
+}
+}, 
+"node55": {
+"edge54": {
+"@length": 0.004017, 
+"@source": "node55", 
+"@target": "node56"
+}, 
+"edge59": {
+"@length": 0.012076, 
+"@source": "node55", 
+"@target": "node61"
+}
+}, 
+"node56": {
+"edge55": {
+"@length": 0.036704, 
+"@source": "node56", 
+"@target": "node57"
+}, 
+"edge58": {
+"@length": 0.000891, 
+"@source": "node56", 
+"@target": "node60"
+}
+}, 
+"node57": {
+"edge56": {
+"@length": 0, 
+"@source": "node57", 
+"@target": "node58"
+}, 
+"edge57": {
+"@length": 0, 
+"@source": "node57", 
+"@target": "node59"
+}
+}, 
+"node61": {
+"edge60": {
+"@length": 0.011593, 
+"@source": "node61", 
+"@target": "node62"
+}, 
+"edge61": {
+"@length": 0.007655, 
+"@source": "node61", 
+"@target": "node63"
+}
+}, 
+"node63": {
+"edge62": {
+"@length": 0.008281, 
+"@source": "node63", 
+"@target": "node64"
+}, 
+"edge63": {
+"@length": 0.005961, 
+"@source": "node63", 
+"@target": "node65"
+}
+}, 
+"node65": {
+"edge64": {
+"@length": 0.001665, 
+"@source": "node65", 
+"@target": "node66"
+}, 
+"edge77": {
+"@length": 0.001564, 
+"@source": "node65", 
+"@target": "node79"
+}
+}, 
+"node66": {
+"edge65": {
+"@length": 0.000608, 
+"@source": "node66", 
+"@target": "node67"
+}, 
+"edge74": {
+"@length": 0.007179, 
+"@source": "node66", 
+"@target": "node76"
+}, 
+"edge75": {
+"@length": 0, 
+"@source": "node66", 
+"@target": "node77"
+}, 
+"edge76": {
+"@length": 0, 
+"@source": "node66", 
+"@target": "node78"
+}
+}, 
+"node67": {
+"edge66": {
+"@length": 0.005982, 
+"@source": "node67", 
+"@target": "node68"
+}, 
+"edge70": {
+"@length": 0.001314, 
+"@source": "node67", 
+"@target": "node72"
+}
+}, 
+"node68": {
+"edge67": {
+"@length": 0.000642, 
+"@source": "node68", 
+"@target": "node69"
+}, 
+"edge68": {
+"@length": 0, 
+"@source": "node68", 
+"@target": "node70"
+}, 
+"edge69": {
+"@length": 0, 
+"@source": "node68", 
+"@target": "node71"
+}
+}, 
+"node72": {
+"edge71": {
+"@length": 0.000638, 
+"@source": "node72", 
+"@target": "node73"
+}, 
+"edge72": {
+"@length": 0, 
+"@source": "node72", 
+"@target": "node74"
+}, 
+"edge73": {
+"@length": 0, 
+"@source": "node72", 
+"@target": "node75"
+}
+}, 
+"node80": {
+"edge79": {
+"@length": 0, 
+"@source": "node80", 
+"@target": "node81"
+}, 
+"edge80": {
+"@length": 0.00064, 
+"@source": "node80", 
+"@target": "node82"
+}
+}, 
+"node82": {
+"edge81": {
+"@length": 0, 
+"@source": "node82", 
+"@target": "node83"
+}, 
+"edge82": {
+"@length": 0, 
+"@source": "node82", 
+"@target": "node84"
+}
+}, 
+"node85": {
+"edge107": {
+"@length": 0.02675, 
+"@source": "node85", 
+"@target": "node109"
+}, 
+"edge84": {
+"@length": 0.002069, 
+"@source": "node85", 
+"@target": "node86"
+}
+}, 
+"node86": {
+"edge85": {
+"@length": 0.018855, 
+"@source": "node86", 
+"@target": "node87"
+}, 
+"edge91": {
+"@length": 0.007313, 
+"@source": "node86", 
+"@target": "node93"
+}
+}, 
+"node87": {
+"edge86": {
+"@length": 0, 
+"@source": "node87", 
+"@target": "node88"
+}, 
+"edge87": {
+"@length": 0.008252, 
+"@source": "node87", 
+"@target": "node89"
+}
+}, 
+"node89": {
+"edge88": {
+"@length": 0, 
+"@source": "node89", 
+"@target": "node90"
+}, 
+"edge89": {
+"@length": 0, 
+"@source": "node89", 
+"@target": "node91"
+}, 
+"edge90": {
+"@length": 0.002672, 
+"@source": "node89", 
+"@target": "node92"
+}
+}, 
+"node93": {
+"edge106": {
+"@length": 0.011537, 
+"@source": "node93", 
+"@target": "node108"
+}, 
+"edge92": {
+"@length": 0.000795, 
+"@source": "node93", 
+"@target": "node94"
+}
+}, 
+"node94": {
+"edge102": {
+"@length": 0.007292, 
+"@source": "node94", 
+"@target": "node104"
+}, 
+"edge93": {
+"@length": 0.006284, 
+"@source": "node94", 
+"@target": "node95"
+}, 
+"edge98": {
+"@length": 0.010329, 
+"@source": "node94", 
+"@target": "node100"
+}
+}, 
+"node95": {
+"edge94": {
+"@length": 0.016473, 
+"@source": "node95", 
+"@target": "node96"
+}, 
+"edge95": {
+"@length": 0.007272, 
+"@source": "node95", 
+"@target": "node97"
+}
+}, 
+"node97": {
+"edge96": {
+"@length": 0, 
+"@source": "node97", 
+"@target": "node98"
+}, 
+"edge97": {
+"@length": 0, 
+"@source": "node97", 
+"@target": "node99"
+}
+}
+}, 
+"nodeById": {
+"node100": {}, 
+"node101": {
+"@otu": "otu62", 
+"^ot:isTaxonExemplar": true
+}, 
+"node102": {
+"@otu": "otu63", 
+"^ot:isTaxonExemplar": false
+}, 
+"node103": {
+"@otu": "otu64", 
+"^ot:isTaxonExemplar": false
+}, 
+"node104": {}, 
+"node105": {
+"@otu": "otu65", 
+"^ot:isTaxonExemplar": false
+}, 
+"node106": {
+"@otu": "otu66", 
+"^ot:isTaxonExemplar": true
+}, 
+"node107": {
+"@otu": "otu67", 
+"^ot:isTaxonExemplar": false
+}, 
+"node108": {
+"@otu": "otu68"
+}, 
+"node109": {
+"@otu": "otu69"
+}, 
+"node110": {
+"@otu": "otu70"
+}, 
+"node44": {
+"@root": true
+}, 
+"node45": {}, 
+"node46": {}, 
+"node47": {}, 
+"node48": {}, 
+"node49": {
+"@otu": "otu32"
+}, 
+"node50": {}, 
+"node51": {
+"@otu": "otu33", 
+"^ot:isTaxonExemplar": true
+}, 
+"node52": {
+"@otu": "otu34"
+}, 
+"node53": {
+"@otu": "otu35", 
+"^ot:isTaxonExemplar": false
+}, 
+"node54": {
+"@otu": "otu36"
+}, 
+"node55": {}, 
+"node56": {}, 
+"node57": {}, 
+"node58": {
+"@otu": "otu37", 
+"^ot:isTaxonExemplar": false
+}, 
+"node59": {
+"@otu": "otu38", 
+"^ot:isTaxonExemplar": true
+}, 
+"node60": {
+"@otu": "otu39"
+}, 
+"node61": {}, 
+"node62": {
+"@otu": "otu40"
+}, 
+"node63": {}, 
+"node64": {
+"@otu": "otu41"
+}, 
+"node65": {}, 
+"node66": {}, 
+"node67": {}, 
+"node68": {}, 
+"node69": {
+"@otu": "otu42"
+}, 
+"node70": {
+"@otu": "otu43"
+}, 
+"node71": {
+"@otu": "otu44"
+}, 
+"node72": {}, 
+"node73": {
+"@otu": "otu45"
+}, 
+"node74": {
+"@otu": "otu46"
+}, 
+"node75": {
+"@otu": "otu47"
+}, 
+"node76": {
+"@otu": "otu48"
+}, 
+"node77": {
+"@otu": "otu49"
+}, 
+"node78": {
+"@otu": "otu50"
+}, 
+"node79": {
+"@otu": "otu51"
+}, 
+"node80": {}, 
+"node81": {
+"@otu": "otu52"
+}, 
+"node82": {}, 
+"node83": {
+"@otu": "otu53"
+}, 
+"node84": {
+"@otu": "otu54"
+}, 
+"node85": {}, 
+"node86": {}, 
+"node87": {}, 
+"node88": {
+"@otu": "otu55"
+}, 
+"node89": {}, 
+"node90": {
+"@otu": "otu56"
+}, 
+"node91": {
+"@otu": "otu57"
+}, 
+"node92": {
+"@otu": "otu58"
+}, 
+"node93": {}, 
+"node94": {}, 
+"node95": {}, 
+"node96": {
+"@otu": "otu59", 
+"^ot:isTaxonExemplar": false
+}, 
+"node97": {}, 
+"node98": {
+"@otu": "otu60", 
+"^ot:isTaxonExemplar": true
+}, 
+"node99": {
+"@otu": "otu61", 
+"^ot:isTaxonExemplar": false
+}
+}
+}
+}
+}
+}
+}
+}

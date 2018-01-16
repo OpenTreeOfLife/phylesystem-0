@@ -36,30 +36,129 @@
 }
 ]
 }
+}, 
+{
+"@description": "Web-based interface for submitting, editing, and reviewing studies in the Open Tree of Life project.", 
+"@id": "opentree-curation-webapp", 
+"@name": "OpenTree curation webapp", 
+"@url": "https://github.com/OpenTreeOfLife/opentree", 
+"@version": "0.0.0"
 }
 ]
 }, 
 "^ot:annotationEvents": {
-"annotation": []
+"annotation": [
+{
+"@dateCreated": "2015-09-29T15:31:21.195Z", 
+"@description": "Aids for mapping study OTUs to OTT taxa", 
+"@id": "otu-mapping-hints", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "OTU_MAPPING_HINTS", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"searchContext": {
+"$": "Ascomycetes"
 }, 
-"^ot:candidateTreeForSynthesis": [], 
-"^ot:curatorName": "Romina Gazis", 
+"substitutions": {
+"substitution": [
+{
+"@active": false, 
+"@valid": true, 
+"new": {
+"$": ""
+}, 
+"old": {
+"$": ""
+}
+}, 
+{
+"@active": true, 
+"@valid": true, 
+"new": {
+"$": "$1"
+}, 
+"old": {
+"$": "^(\\S*\\s+\\S*).*"
+}
+}
+]
+}, 
+"useFuzzyMatching": true
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}, 
+{
+"@dateCreated": "2015-09-29T15:31:21.195Z", 
+"@description": "Describes supporting data files for this study", 
+"@id": "supporting-files-metadata", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "SUPPORTING_FILE_INFO", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"@movedToPermanentArchive": false, 
+"files": {
+"file": []
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}
+]
+}, 
+"^ot:candidateTreeForSynthesis": [
+"tree5347"
+], 
+"^ot:comment": "Couldn't find an article with that exact title, but the following (different journal) is very close, and I bet it's the correct reference:\n\nhttp://dx.doi.org/10.1111/1574-6941.12393\n\nInterspecific hybridization and bioactive alkaloid variation increases diversity in endophytic Epichlo\u00eb species of Bromus laevipes\nNikki D. Charlton, Kelly D. Craven, Michelle E. Afkhami, Bradley A. Hall, Sita R. Ghimire, Carolyn A. Young\nFEMS Microbiology Ecology 2014", 
+"^ot:curatorName": [
+"Romina Gazis", 
+"Jonathan A Rees"
+], 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S13399"
 }, 
-"^ot:messages": {
-"message": []
-}, 
+"^ot:focalClade": 908827, 
+"^ot:focalCladeOTTTaxonName": "Epichloe", 
+"^ot:notIntendedForSynthesis": false, 
 "^ot:otusElementOrder": [
 "otus2486"
 ], 
 "^ot:studyId": "pg_2486", 
+"^ot:studyPublication": {
+"@href": ""
+}, 
 "^ot:studyPublicationReference": "Charlton N., Craven K., Afkhami M., Hall B., Swoboda G., Ghimire S.R., & Young C. 2012. Genetic diversity in epichloid endophytes of Bromus laevipes provides evidence for independent hybridization events. Molecular Ecology, .", 
 "^ot:studyYear": 2012, 
-"^ot:tag": [], 
+"^ot:tag": [
+"pdf not found"
+], 
 "^ot:treesElementOrder": [
 "trees2486"
 ], 
+"^xhtml:license": {
+"@href": "http://creativecommons.org/publicdomain/zero/1.0/", 
+"@name": "CC0"
+}, 
 "otusById": {
 "otus2486": {
 "otuById": {
@@ -101,6 +200,8 @@
 }, 
 "otu359566": {
 "^ot:originalLabel": "Epichloe clarkii  Hl", 
+"^ot:ottId": 4058905, 
+"^ot:ottTaxonName": "Epichloe clarkii", 
 "^ot:treebaseOTUId": "Tl900732"
 }, 
 "otu359567": {
@@ -171,6 +272,8 @@
 }, 
 "otu359578": {
 "^ot:originalLabel": "Epichloe yangzii  Rk", 
+"^ot:ottId": 4058914, 
+"^ot:ottTaxonName": "Epichloe yangzii", 
 "^ot:treebaseOTUId": "Tl900744"
 }, 
 "otu359579": {
@@ -301,6 +404,8 @@
 }, 
 "otu359600": {
 "^ot:originalLabel": "Epichloe yangzii  Rk2", 
+"^ot:ottId": 4058914, 
+"^ot:ottTaxonName": "Epichloe yangzii", 
 "^ot:treebaseOTUId": "Tl900766"
 }, 
 "otu359601": {
@@ -317,6 +422,8 @@
 }, 
 "otu359603": {
 "^ot:originalLabel": "Neotyphodium schardlii  Ca 2", 
+"^ot:ottId": 4927906, 
+"^ot:ottTaxonName": "Neotyphodium x schardlii", 
 "^ot:treebaseOTUId": "Tl900769"
 }, 
 "otu359604": {
@@ -327,6 +434,8 @@
 }, 
 "otu359605": {
 "^ot:originalLabel": "Neotyphodium schardlii  Ca", 
+"^ot:ottId": 4927906, 
+"^ot:ottTaxonName": "Neotyphodium x schardlii", 
 "^ot:treebaseOTUId": "Tl900771"
 }, 
 "otu359606": {
@@ -568,16 +677,22 @@
 ], 
 "treeById": {
 "tree5347": {
+"@label": "ML, EF-1 + b-tubulin", 
 "@xsi:type": "nex:FloatTree", 
 "^ot:branchLengthDescription": "", 
-"^ot:branchLengthMode": "", 
-"^ot:branchLengthTimeUnit": "", 
-"^ot:curatedType": "ML, EF-1 + b-tubulin", 
+"^ot:branchLengthMode": "ot:changesCount", 
+"^ot:branchLengthTimeUnit": "Myr", 
+"^ot:curatedType": "Maximum likelihood ", 
 "^ot:inGroupClade": "node924856", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
 "^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node924854", 
-"^ot:specifiedRoot": "", 
-"^ot:tag": [], 
+"^ot:specifiedRoot": "node924854", 
+"^ot:tag": [
+"ML, EF-1 + b-tubulin"
+], 
+"^ot:unrootedTree": false, 
 "edgeBySourceId": {
 "node924854": {
 "edge924855": {
@@ -1235,38 +1350,48 @@
 "@root": true
 }, 
 "node924855": {
-"@otu": "otu359595"
+"@otu": "otu359595", 
+"^ot:isTaxonExemplar": false
 }, 
 "node924856": {}, 
 "node924857": {}, 
 "node924858": {}, 
 "node924859": {}, 
 "node924860": {
-"@otu": "otu359567"
+"@otu": "otu359567", 
+"^ot:isTaxonExemplar": false
 }, 
 "node924861": {
-"@otu": "otu359629"
+"@otu": "otu359629", 
+"^ot:isTaxonExemplar": false
 }, 
 "node924862": {
-"@otu": "otu359603"
+"@otu": "otu359603", 
+"^ot:isTaxonExemplar": true
 }, 
 "node924863": {
-"@otu": "otu359639"
+"@otu": "otu359639", 
+"^ot:isTaxonExemplar": false
 }, 
 "node924864": {
-"@otu": "otu359586"
+"@otu": "otu359586", 
+"^ot:isTaxonExemplar": true
 }, 
 "node924865": {
-"@otu": "otu359564"
+"@otu": "otu359564", 
+"^ot:isTaxonExemplar": false
 }, 
 "node924866": {
-"@otu": "otu359573"
+"@otu": "otu359573", 
+"^ot:isTaxonExemplar": false
 }, 
 "node924867": {
-"@otu": "otu359594"
+"@otu": "otu359594", 
+"^ot:isTaxonExemplar": false
 }, 
 "node924868": {
-"@otu": "otu359619"
+"@otu": "otu359619", 
+"^ot:isTaxonExemplar": false
 }, 
 "node924869": {}, 
 "node924870": {}, 
@@ -1279,13 +1404,16 @@
 "node924877": {}, 
 "node924878": {}, 
 "node924879": {
-"@otu": "otu359597"
+"@otu": "otu359597", 
+"^ot:isTaxonExemplar": false
 }, 
 "node924880": {
-"@otu": "otu359627"
+"@otu": "otu359627", 
+"^ot:isTaxonExemplar": false
 }, 
 "node924881": {
-"@otu": "otu359612"
+"@otu": "otu359612", 
+"^ot:isTaxonExemplar": false
 }, 
 "node924882": {}, 
 "node924883": {}, 
@@ -1293,16 +1421,20 @@
 "@otu": "otu359574"
 }, 
 "node924885": {
-"@otu": "otu359591"
+"@otu": "otu359591", 
+"^ot:isTaxonExemplar": false
 }, 
 "node924886": {
-"@otu": "otu359584"
+"@otu": "otu359584", 
+"^ot:isTaxonExemplar": false
 }, 
 "node924887": {
-"@otu": "otu359641"
+"@otu": "otu359641", 
+"^ot:isTaxonExemplar": false
 }, 
 "node924888": {
-"@otu": "otu359617"
+"@otu": "otu359617", 
+"^ot:isTaxonExemplar": false
 }, 
 "node924889": {}, 
 "node924890": {}, 
@@ -1312,34 +1444,43 @@
 }, 
 "node924893": {}, 
 "node924894": {
-"@otu": "otu359578"
+"@otu": "otu359578", 
+"^ot:isTaxonExemplar": true
 }, 
 "node924895": {
-"@otu": "otu359600"
+"@otu": "otu359600", 
+"^ot:isTaxonExemplar": false
 }, 
 "node924896": {
-"@otu": "otu359604"
+"@otu": "otu359604", 
+"^ot:isTaxonExemplar": true
 }, 
 "node924897": {}, 
 "node924898": {
-"@otu": "otu359590"
+"@otu": "otu359590", 
+"^ot:isTaxonExemplar": true
 }, 
 "node924899": {
-"@otu": "otu359631"
+"@otu": "otu359631", 
+"^ot:isTaxonExemplar": false
 }, 
 "node924900": {}, 
 "node924901": {
-"@otu": "otu359562"
+"@otu": "otu359562", 
+"^ot:isTaxonExemplar": true
 }, 
 "node924902": {
-"@otu": "otu359580"
+"@otu": "otu359580", 
+"^ot:isTaxonExemplar": false
 }, 
 "node924903": {}, 
 "node924904": {
-"@otu": "otu359581"
+"@otu": "otu359581", 
+"^ot:isTaxonExemplar": true
 }, 
 "node924905": {
-"@otu": "otu359615"
+"@otu": "otu359615", 
+"^ot:isTaxonExemplar": false
 }, 
 "node924906": {}, 
 "node924907": {}, 
@@ -1347,196 +1488,249 @@
 "node924909": {}, 
 "node924910": {}, 
 "node924911": {
-"@otu": "otu359609"
+"@otu": "otu359609", 
+"^ot:isTaxonExemplar": false
 }, 
 "node924912": {
-"@otu": "otu359561"
+"@otu": "otu359561", 
+"^ot:isTaxonExemplar": false
 }, 
 "node924913": {
-"@otu": "otu359623"
+"@otu": "otu359623", 
+"^ot:isTaxonExemplar": false
 }, 
 "node924914": {
-"@otu": "otu359577"
+"@otu": "otu359577", 
+"^ot:isTaxonExemplar": false
 }, 
 "node924915": {
-"@otu": "otu359583"
+"@otu": "otu359583", 
+"^ot:isTaxonExemplar": false
 }, 
 "node924916": {
-"@otu": "otu359588"
+"@otu": "otu359588", 
+"^ot:isTaxonExemplar": false
 }, 
 "node924917": {}, 
 "node924918": {}, 
 "node924919": {}, 
 "node924920": {}, 
 "node924921": {
-"@otu": "otu359637"
+"@otu": "otu359637", 
+"^ot:isTaxonExemplar": false
 }, 
 "node924922": {
-"@otu": "otu359596"
+"@otu": "otu359596", 
+"^ot:isTaxonExemplar": true
 }, 
 "node924923": {}, 
 "node924924": {}, 
 "node924925": {
-"@otu": "otu359636"
+"@otu": "otu359636", 
+"^ot:isTaxonExemplar": false
 }, 
 "node924926": {
-"@otu": "otu359563"
+"@otu": "otu359563", 
+"^ot:isTaxonExemplar": false
 }, 
 "node924927": {
-"@otu": "otu359633"
+"@otu": "otu359633", 
+"^ot:isTaxonExemplar": false
 }, 
 "node924928": {
-"@otu": "otu359593"
+"@otu": "otu359593", 
+"^ot:isTaxonExemplar": false
 }, 
 "node924929": {
-"@otu": "otu359569"
+"@otu": "otu359569", 
+"^ot:isTaxonExemplar": false
 }, 
 "node924930": {
-"@otu": "otu359632"
+"@otu": "otu359632", 
+"^ot:isTaxonExemplar": true
 }, 
 "node924931": {}, 
 "node924932": {}, 
 "node924933": {
-"@otu": "otu359630"
+"@otu": "otu359630", 
+"^ot:isTaxonExemplar": false
 }, 
 "node924934": {
-"@otu": "otu359585"
+"@otu": "otu359585", 
+"^ot:isTaxonExemplar": false
 }, 
 "node924935": {}, 
 "node924936": {
-"@otu": "otu359634"
+"@otu": "otu359634", 
+"^ot:isTaxonExemplar": false
 }, 
 "node924937": {
-"@otu": "otu359610"
+"@otu": "otu359610", 
+"^ot:isTaxonExemplar": false
 }, 
 "node924938": {}, 
 "node924939": {
-"@otu": "otu359601"
+"@otu": "otu359601", 
+"^ot:isTaxonExemplar": false
 }, 
 "node924940": {
-"@otu": "otu359614"
+"@otu": "otu359614", 
+"^ot:isTaxonExemplar": false
 }, 
 "node924941": {
-"@otu": "otu359607"
+"@otu": "otu359607", 
+"^ot:isTaxonExemplar": false
 }, 
 "node924942": {}, 
 "node924943": {
-"@otu": "otu359643"
+"@otu": "otu359643", 
+"^ot:isTaxonExemplar": true
 }, 
 "node924944": {
-"@otu": "otu359575"
+"@otu": "otu359575", 
+"^ot:isTaxonExemplar": false
 }, 
 "node924945": {
-"@otu": "otu359622"
+"@otu": "otu359622", 
+"^ot:isTaxonExemplar": false
 }, 
 "node924946": {
-"@otu": "otu359642"
+"@otu": "otu359642", 
+"^ot:isTaxonExemplar": false
 }, 
 "node924947": {
-"@otu": "otu359592"
+"@otu": "otu359592", 
+"^ot:isTaxonExemplar": false
 }, 
 "node924948": {
-"@otu": "otu359589"
+"@otu": "otu359589", 
+"^ot:isTaxonExemplar": false
 }, 
 "node924949": {}, 
 "node924950": {
-"@otu": "otu359579"
+"@otu": "otu359579", 
+"^ot:isTaxonExemplar": false
 }, 
 "node924951": {
-"@otu": "otu359616"
+"@otu": "otu359616", 
+"^ot:isTaxonExemplar": true
 }, 
 "node924952": {
-"@otu": "otu359570"
+"@otu": "otu359570", 
+"^ot:isTaxonExemplar": false
 }, 
 "node924953": {
-"@otu": "otu359624"
+"@otu": "otu359624", 
+"^ot:isTaxonExemplar": false
 }, 
 "node924954": {
-"@otu": "otu359560"
+"@otu": "otu359560", 
+"^ot:isTaxonExemplar": false
 }, 
 "node924955": {
-"@otu": "otu359582"
+"@otu": "otu359582", 
+"^ot:isTaxonExemplar": false
 }, 
 "node924956": {}, 
 "node924957": {}, 
 "node924958": {}, 
 "node924959": {}, 
 "node924960": {
-"@otu": "otu359608"
+"@otu": "otu359608", 
+"^ot:isTaxonExemplar": false
 }, 
 "node924961": {
-"@otu": "otu359576"
+"@otu": "otu359576", 
+"^ot:isTaxonExemplar": false
 }, 
 "node924962": {
-"@otu": "otu359587"
+"@otu": "otu359587", 
+"^ot:isTaxonExemplar": false
 }, 
 "node924963": {}, 
 "node924964": {}, 
 "node924965": {
-"@otu": "otu359565"
+"@otu": "otu359565", 
+"^ot:isTaxonExemplar": false
 }, 
 "node924966": {
-"@otu": "otu359638"
+"@otu": "otu359638", 
+"^ot:isTaxonExemplar": false
 }, 
 "node924967": {}, 
 "node924968": {}, 
 "node924969": {
-"@otu": "otu359606"
+"@otu": "otu359606", 
+"^ot:isTaxonExemplar": false
 }, 
 "node924970": {
 "@otu": "otu359566"
 }, 
 "node924971": {
-"@otu": "otu359620"
+"@otu": "otu359620", 
+"^ot:isTaxonExemplar": false
 }, 
 "node924972": {}, 
 "node924973": {
-"@otu": "otu359635"
+"@otu": "otu359635", 
+"^ot:isTaxonExemplar": false
 }, 
 "node924974": {
 "@otu": "otu359599"
 }, 
 "node924975": {}, 
 "node924976": {
-"@otu": "otu359628"
+"@otu": "otu359628", 
+"^ot:isTaxonExemplar": false
 }, 
 "node924977": {
-"@otu": "otu359605"
+"@otu": "otu359605", 
+"^ot:isTaxonExemplar": false
 }, 
 "node924978": {
-"@otu": "otu359613"
+"@otu": "otu359613", 
+"^ot:isTaxonExemplar": false
 }, 
 "node924979": {}, 
 "node924980": {
-"@otu": "otu359568"
+"@otu": "otu359568", 
+"^ot:isTaxonExemplar": false
 }, 
 "node924981": {
-"@otu": "otu359640"
+"@otu": "otu359640", 
+"^ot:isTaxonExemplar": false
 }, 
 "node924982": {
-"@otu": "otu359626"
+"@otu": "otu359626", 
+"^ot:isTaxonExemplar": true
 }, 
 "node924983": {
 "@otu": "otu359602"
 }, 
 "node924984": {}, 
 "node924985": {
-"@otu": "otu359625"
+"@otu": "otu359625", 
+"^ot:isTaxonExemplar": false
 }, 
 "node924986": {
-"@otu": "otu359611"
+"@otu": "otu359611", 
+"^ot:isTaxonExemplar": false
 }, 
 "node924987": {
-"@otu": "otu359621"
+"@otu": "otu359621", 
+"^ot:isTaxonExemplar": false
 }, 
 "node924988": {
-"@otu": "otu359598"
+"@otu": "otu359598", 
+"^ot:isTaxonExemplar": true
 }, 
 "node924989": {
-"@otu": "otu359572"
+"@otu": "otu359572", 
+"^ot:isTaxonExemplar": true
 }, 
 "node924990": {
-"@otu": "otu359571"
+"@otu": "otu359571", 
+"^ot:isTaxonExemplar": true
 }
 }
 }

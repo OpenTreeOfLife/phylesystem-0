@@ -36,22 +36,109 @@
 }
 ]
 }
+}, 
+{
+"@description": "Web-based interface for submitting, editing, and reviewing studies in the Open Tree of Life project.", 
+"@id": "opentree-curation-webapp", 
+"@name": "OpenTree curation webapp", 
+"@url": "https://github.com/OpenTreeOfLife/opentree", 
+"@version": "0.0.0"
 }
 ]
 }, 
 "^ot:annotationEvents": {
-"annotation": []
+"annotation": [
+{
+"@dateCreated": "2015-10-01T14:57:22.069Z", 
+"@description": "Aids for mapping study OTUs to OTT taxa", 
+"@id": "otu-mapping-hints", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "OTU_MAPPING_HINTS", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"searchContext": {
+"$": "All life"
 }, 
-"^ot:candidateTreeForSynthesis": [], 
-"^ot:curatorName": "Romina Gazis", 
+"substitutions": {
+"substitution": [
+{
+"@active": false, 
+"@valid": true, 
+"new": {
+"$": ""
+}, 
+"old": {
+"$": ""
+}
+}, 
+{
+"@active": true, 
+"@valid": true, 
+"new": {
+"$": "$1"
+}, 
+"old": {
+"$": "^(\\S*\\s+\\S*).*"
+}
+}
+]
+}, 
+"useFuzzyMatching": true
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}, 
+{
+"@dateCreated": "2015-10-01T14:57:22.069Z", 
+"@description": "Describes supporting data files for this study", 
+"@id": "supporting-files-metadata", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "SUPPORTING_FILE_INFO", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"@movedToPermanentArchive": false, 
+"files": {
+"file": []
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}
+]
+}, 
+"^ot:candidateTreeForSynthesis": [
+"tree5770"
+], 
+"^ot:comment": "", 
+"^ot:curatorName": [
+"Romina Gazis"
+], 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S11502"
 }, 
 "^ot:focalClade": 838968, 
 "^ot:focalCladeOTTTaxonName": "Fusarium", 
-"^ot:messages": {
-"message": []
-}, 
+"^ot:notIntendedForSynthesis": false, 
 "^ot:otusElementOrder": [
 "otus1052"
 ], 
@@ -65,6 +152,10 @@
 "^ot:treesElementOrder": [
 "trees1052"
 ], 
+"^xhtml:license": {
+"@href": "http://creativecommons.org/publicdomain/zero/1.0/", 
+"@name": "CC0"
+}, 
 "otusById": {
 "otus1052": {
 "otuById": {
@@ -136,6 +227,8 @@
 }, 
 "otu217005": {
 "^ot:originalLabel": "Fusarium phaseoli NRRL 22276", 
+"^ot:ottId": 5481506, 
+"^ot:ottTaxonName": "Fusarium solani f.sp. phaseoli", 
 "^ot:treebaseOTUId": "Tl530323"
 }, 
 "otu217006": {
@@ -170,6 +263,8 @@
 }, 
 "otu217011": {
 "^ot:originalLabel": "Fusarium phaseoli NRRL 31156", 
+"^ot:ottId": 5481506, 
+"^ot:ottTaxonName": "Fusarium solani f.sp. phaseoli", 
 "^ot:treebaseOTUId": "Tl530329"
 }, 
 "otu217012": {
@@ -251,335 +346,26 @@
 "trees1052": {
 "@otus": "otus1052", 
 "^ot:treeElementOrder": [
-"tree2012", 
 "tree5770"
 ], 
 "treeById": {
-"tree2012": {
-"@xsi:type": "nex:FloatTree", 
-"^ot:branchLengthDescription": "", 
-"^ot:branchLengthMode": "", 
-"^ot:branchLengthTimeUnit": "", 
-"^ot:curatedType": "MP, IGS", 
-"^ot:outGroupEdge": "", 
-"^ot:rootNodeId": "node511527", 
-"^ot:specifiedRoot": "", 
-"^ot:tag": [], 
-"edgeBySourceId": {
-"node511527": {
-"edge511528": {
-"@source": "node511527", 
-"@target": "node511528"
-}, 
-"edge511529": {
-"@source": "node511527", 
-"@target": "node511529"
-}
-}, 
-"node511529": {
-"edge511530": {
-"@source": "node511529", 
-"@target": "node511530"
-}, 
-"edge511531": {
-"@source": "node511529", 
-"@target": "node511531"
-}, 
-"edge511532": {
-"@source": "node511529", 
-"@target": "node511532"
-}, 
-"edge511533": {
-"@source": "node511529", 
-"@target": "node511533"
-}, 
-"edge511534": {
-"@source": "node511529", 
-"@target": "node511534"
-}
-}, 
-"node511534": {
-"edge511535": {
-"@source": "node511534", 
-"@target": "node511535"
-}, 
-"edge511561": {
-"@source": "node511534", 
-"@target": "node511561"
-}
-}, 
-"node511535": {
-"edge511536": {
-"@source": "node511535", 
-"@target": "node511536"
-}, 
-"edge511554": {
-"@source": "node511535", 
-"@target": "node511554"
-}
-}, 
-"node511536": {
-"edge511537": {
-"@source": "node511536", 
-"@target": "node511537"
-}, 
-"edge511549": {
-"@source": "node511536", 
-"@target": "node511549"
-}
-}, 
-"node511537": {
-"edge511538": {
-"@source": "node511537", 
-"@target": "node511538"
-}, 
-"edge511541": {
-"@source": "node511537", 
-"@target": "node511541"
-}
-}, 
-"node511538": {
-"edge511539": {
-"@source": "node511538", 
-"@target": "node511539"
-}, 
-"edge511540": {
-"@source": "node511538", 
-"@target": "node511540"
-}
-}, 
-"node511541": {
-"edge511542": {
-"@source": "node511541", 
-"@target": "node511542"
-}, 
-"edge511548": {
-"@source": "node511541", 
-"@target": "node511548"
-}
-}, 
-"node511542": {
-"edge511543": {
-"@source": "node511542", 
-"@target": "node511543"
-}, 
-"edge511544": {
-"@source": "node511542", 
-"@target": "node511544"
-}, 
-"edge511547": {
-"@source": "node511542", 
-"@target": "node511547"
-}
-}, 
-"node511544": {
-"edge511545": {
-"@source": "node511544", 
-"@target": "node511545"
-}, 
-"edge511546": {
-"@source": "node511544", 
-"@target": "node511546"
-}
-}, 
-"node511549": {
-"edge511550": {
-"@source": "node511549", 
-"@target": "node511550"
-}, 
-"edge511551": {
-"@source": "node511549", 
-"@target": "node511551"
-}, 
-"edge511552": {
-"@source": "node511549", 
-"@target": "node511552"
-}, 
-"edge511553": {
-"@source": "node511549", 
-"@target": "node511553"
-}
-}, 
-"node511554": {
-"edge511555": {
-"@source": "node511554", 
-"@target": "node511555"
-}, 
-"edge511556": {
-"@source": "node511554", 
-"@target": "node511556"
-}, 
-"edge511557": {
-"@source": "node511554", 
-"@target": "node511557"
-}, 
-"edge511558": {
-"@source": "node511554", 
-"@target": "node511558"
-}, 
-"edge511559": {
-"@source": "node511554", 
-"@target": "node511559"
-}, 
-"edge511560": {
-"@source": "node511554", 
-"@target": "node511560"
-}
-}, 
-"node511561": {
-"edge511562": {
-"@source": "node511561", 
-"@target": "node511562"
-}, 
-"edge511563": {
-"@source": "node511561", 
-"@target": "node511563"
-}, 
-"edge511564": {
-"@source": "node511561", 
-"@target": "node511564"
-}, 
-"edge511565": {
-"@source": "node511561", 
-"@target": "node511565"
-}, 
-"edge511566": {
-"@source": "node511561", 
-"@target": "node511566"
-}, 
-"edge511567": {
-"@source": "node511561", 
-"@target": "node511567"
-}, 
-"edge511568": {
-"@source": "node511561", 
-"@target": "node511568"
-}, 
-"edge511569": {
-"@source": "node511561", 
-"@target": "node511569"
-}
-}
-}, 
-"nodeById": {
-"node511527": {
-"@root": true
-}, 
-"node511528": {
-"@otu": "otu217017"
-}, 
-"node511529": {}, 
-"node511530": {
-"@otu": "otu216994"
-}, 
-"node511531": {
-"@otu": "otu217016"
-}, 
-"node511532": {
-"@otu": "otu216998"
-}, 
-"node511533": {
-"@otu": "otu217023"
-}, 
-"node511534": {}, 
-"node511535": {}, 
-"node511536": {}, 
-"node511537": {}, 
-"node511538": {}, 
-"node511539": {
-"@otu": "otu217005"
-}, 
-"node511540": {
-"@otu": "otu217011"
-}, 
-"node511541": {}, 
-"node511542": {}, 
-"node511543": {
-"@otu": "otu217012"
-}, 
-"node511544": {}, 
-"node511545": {
-"@otu": "otu217021"
-}, 
-"node511546": {
-"@otu": "otu217010"
-}, 
-"node511547": {
-"@otu": "otu217015"
-}, 
-"node511548": {
-"@otu": "otu216997"
-}, 
-"node511549": {}, 
-"node511550": {
-"@otu": "otu216995"
-}, 
-"node511551": {
-"@otu": "otu216996"
-}, 
-"node511552": {
-"@otu": "otu217019"
-}, 
-"node511553": {
-"@otu": "otu217013"
-}, 
-"node511554": {}, 
-"node511555": {
-"@otu": "otu217002"
-}, 
-"node511556": {
-"@otu": "otu217001"
-}, 
-"node511557": {
-"@otu": "otu217003"
-}, 
-"node511558": {
-"@otu": "otu217014"
-}, 
-"node511559": {
-"@otu": "otu217006"
-}, 
-"node511560": {
-"@otu": "otu217004"
-}, 
-"node511561": {}, 
-"node511562": {
-"@otu": "otu217020"
-}, 
-"node511563": {
-"@otu": "otu217009"
-}, 
-"node511564": {
-"@otu": "otu216999"
-}, 
-"node511565": {
-"@otu": "otu217022"
-}, 
-"node511566": {
-"@otu": "otu217007"
-}, 
-"node511567": {
-"@otu": "otu217000"
-}, 
-"node511568": {
-"@otu": "otu217018"
-}, 
-"node511569": {
-"@otu": "otu217008"
-}
-}
-}, 
 "tree5770": {
+"@label": "Fig 24. MP, IGS + locus 44", 
 "@xsi:type": "nex:FloatTree", 
 "^ot:branchLengthDescription": "", 
-"^ot:branchLengthMode": "", 
-"^ot:branchLengthTimeUnit": "", 
-"^ot:curatedType": "MP, IGS (rooted)", 
-"^ot:inGroupClade": "node986597", 
+"^ot:branchLengthMode": "ot:changesCount", 
+"^ot:branchLengthTimeUnit": "Myr", 
+"^ot:curatedType": "Maximum parsimony ", 
+"^ot:inGroupClade": "node986598", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
 "^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node986597", 
-"^ot:specifiedRoot": "", 
-"^ot:tag": [], 
+"^ot:specifiedRoot": "node986597", 
+"^ot:tag": [
+"IGS"
+], 
+"^ot:unrootedTree": false, 
 "edgeBySourceId": {
 "node986597": {
 "edge986598": {
@@ -746,7 +532,7 @@
 "@target": "node986631"
 }, 
 "edge986632": {
-"@length": 2.0, 
+"@length": 2, 
 "@source": "node986627", 
 "@target": "node986632"
 }
@@ -787,102 +573,132 @@
 "node986600": {}, 
 "node986601": {}, 
 "node986602": {
-"@otu": "otu217005"
+"@otu": "otu217005", 
+"^ot:isTaxonExemplar": true
 }, 
 "node986603": {
-"@otu": "otu217011"
+"@otu": "otu217011", 
+"^ot:isTaxonExemplar": false
 }, 
 "node986604": {}, 
 "node986605": {}, 
 "node986606": {
-"@otu": "otu217012"
+"@otu": "otu217012", 
+"^ot:isTaxonExemplar": false
 }, 
 "node986607": {}, 
 "node986608": {
-"@otu": "otu217021"
+"@otu": "otu217021", 
+"^ot:isTaxonExemplar": false
 }, 
 "node986609": {
-"@otu": "otu217010"
+"@otu": "otu217010", 
+"^ot:isTaxonExemplar": false
 }, 
 "node986610": {
-"@otu": "otu217015"
+"@otu": "otu217015", 
+"^ot:isTaxonExemplar": false
 }, 
 "node986611": {
-"@otu": "otu216997"
+"@otu": "otu216997", 
+"^ot:isTaxonExemplar": true
 }, 
 "node986612": {}, 
 "node986613": {
-"@otu": "otu216995"
+"@otu": "otu216995", 
+"^ot:isTaxonExemplar": true
 }, 
 "node986614": {
-"@otu": "otu216996"
+"@otu": "otu216996", 
+"^ot:isTaxonExemplar": false
 }, 
 "node986615": {
-"@otu": "otu217019"
+"@otu": "otu217019", 
+"^ot:isTaxonExemplar": false
 }, 
 "node986616": {
-"@otu": "otu217013"
+"@otu": "otu217013", 
+"^ot:isTaxonExemplar": false
 }, 
 "node986617": {}, 
 "node986618": {}, 
 "node986619": {
-"@otu": "otu217020"
+"@otu": "otu217020", 
+"^ot:isTaxonExemplar": true
 }, 
 "node986620": {
-"@otu": "otu217009"
+"@otu": "otu217009", 
+"^ot:isTaxonExemplar": false
 }, 
 "node986621": {
-"@otu": "otu216999"
+"@otu": "otu216999", 
+"^ot:isTaxonExemplar": false
 }, 
 "node986622": {
-"@otu": "otu217022"
+"@otu": "otu217022", 
+"^ot:isTaxonExemplar": false
 }, 
 "node986623": {
-"@otu": "otu217007"
+"@otu": "otu217007", 
+"^ot:isTaxonExemplar": false
 }, 
 "node986624": {
-"@otu": "otu217000"
+"@otu": "otu217000", 
+"^ot:isTaxonExemplar": false
 }, 
 "node986625": {
-"@otu": "otu217018"
+"@otu": "otu217018", 
+"^ot:isTaxonExemplar": false
 }, 
 "node986626": {
-"@otu": "otu217008"
+"@otu": "otu217008", 
+"^ot:isTaxonExemplar": false
 }, 
 "node986627": {}, 
 "node986628": {
-"@otu": "otu216994"
+"@otu": "otu216994", 
+"^ot:isTaxonExemplar": true
 }, 
 "node986629": {
-"@otu": "otu217016"
+"@otu": "otu217016", 
+"^ot:isTaxonExemplar": false
 }, 
 "node986630": {
-"@otu": "otu216998"
+"@otu": "otu216998", 
+"^ot:isTaxonExemplar": false
 }, 
 "node986631": {
-"@otu": "otu217023"
+"@otu": "otu217023", 
+"^ot:isTaxonExemplar": false
 }, 
 "node986632": {
-"@otu": "otu217017"
+"@otu": "otu217017", 
+"^ot:isTaxonExemplar": false
 }, 
 "node986633": {}, 
 "node986634": {
-"@otu": "otu217002"
+"@otu": "otu217002", 
+"^ot:isTaxonExemplar": true
 }, 
 "node986635": {
-"@otu": "otu217001"
+"@otu": "otu217001", 
+"^ot:isTaxonExemplar": false
 }, 
 "node986636": {
-"@otu": "otu217003"
+"@otu": "otu217003", 
+"^ot:isTaxonExemplar": false
 }, 
 "node986637": {
-"@otu": "otu217014"
+"@otu": "otu217014", 
+"^ot:isTaxonExemplar": false
 }, 
 "node986638": {
-"@otu": "otu217006"
+"@otu": "otu217006", 
+"^ot:isTaxonExemplar": false
 }, 
 "node986639": {
-"@otu": "otu217004"
+"@otu": "otu217004", 
+"^ot:isTaxonExemplar": false
 }
 }
 }

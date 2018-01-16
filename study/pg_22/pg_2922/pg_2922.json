@@ -33,15 +33,112 @@
 }
 ]
 }
+}, 
+{
+"@description": "Web-based interface for submitting, editing, and reviewing studies in the Open Tree of Life project.", 
+"@id": "opentree-curation-webapp", 
+"@name": "OpenTree curation webapp", 
+"@url": "https://github.com/OpenTreeOfLife/opentree", 
+"@version": "0.0.0"
 }
 ]
 }, 
 "^ot:annotationEvents": {
-"annotation": []
+"annotation": [
+{
+"@dateCreated": "2014-07-10T18:00:54.888Z", 
+"@description": "Aids for mapping study OTUs to OTT taxa", 
+"@id": "otu-mapping-hints", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "OTU_MAPPING_HINTS", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"searchContext": {
+"$": "Arthropods"
 }, 
-"^ot:curatorName": "Christine Ewers", 
+"substitutions": {
+"substitution": [
+{
+"@active": false, 
+"@valid": true, 
+"new": {
+"$": ""
+}, 
+"old": {
+"$": ""
+}
+}, 
+{
+"@active": false, 
+"@valid": true, 
+"new": {
+"$": "$1"
+}, 
+"old": {
+"$": "^(\\S*\\s+\\S*).*"
+}
+}
+]
+}, 
+"useFuzzyMatching": true
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}, 
+{
+"@dateCreated": "2014-07-10T18:00:54.888Z", 
+"@description": "Describes supporting data files for this study", 
+"@id": "supporting-files-metadata", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "SUPPORTING_FILE_INFO", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"@movedToPermanentArchive": false, 
+"files": {
+"file": []
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}
+]
+}, 
+"^ot:candidateTreeForSynthesis": [
+"tree6752"
+], 
+"^ot:comment": "", 
+"^ot:curatorName": [
+"Christine Ewers", 
+"chris-owen", 
+"Joseph W. Brown", 
+"Christine Ewers-Saucedo"
+], 
+"^ot:dataDeposit": {
+"@href": ""
+}, 
 "^ot:focalClade": 580066, 
 "^ot:focalCladeOTTTaxonName": "Thoracica", 
+"^ot:notIntendedForSynthesis": false, 
 "^ot:otusElementOrder": [
 "otus2922"
 ], 
@@ -49,11 +146,16 @@
 "^ot:studyPublication": {
 "@href": "http://dx.doi.org/10.1016/j.dsr.2012.11.006"
 }, 
-"^ot:studyPublicationReference": "Katrin Linse, Jennifer A. Jackson, Elaine Fitzcharles, Chester J. Sands, John S. Buckeridge. 2013. Phylogenetic position of Antarctic Scalpelliformes (Crustacea: Cirripedia: Thoracica). Deep Sea Research Part I: Oceanographic Research Papers 73:99-116.", 
+"^ot:studyPublicationReference": "Linse, Katrin, Jennifer A. Jackson, Elaine Fitzcharles, Chester J. Sands, John S. Buckeridge. 2013. Phylogenetic position of Antarctic Scalpelliformes (Crustacea: Cirripedia: Thoracica). Deep Sea Research Part I: Oceanographic Research Papers 73:99-116.", 
 "^ot:studyYear": 2013, 
+"^ot:tag": [], 
 "^ot:treesElementOrder": [
 "trees2922"
 ], 
+"^xhtml:license": {
+"@href": "http://creativecommons.org/publicdomain/zero/1.0/", 
+"@name": "CC0"
+}, 
 "otusById": {
 "otus2922": {
 "otuById": {
@@ -300,10 +402,14 @@
 "^ot:ottTaxonName": "Leucolepas longa"
 }, 
 "otu432445": {
-"^ot:originalLabel": "Neolepas rapanuii pedunculata EU082309"
+"^ot:originalLabel": "Neolepas rapanuii pedunculata EU082309", 
+"^ot:ottId": 497528, 
+"^ot:ottTaxonName": "Neolepas rapanuii"
 }, 
 "otu432446": {
-"^ot:originalLabel": "Neolepas zevinae pedunculata EU082310"
+"^ot:originalLabel": "Neolepas zevinae pedunculata EU082310", 
+"^ot:ottId": 534480, 
+"^ot:ottTaxonName": "Neolepas zevinae"
 }, 
 "otu432448": {
 "^ot:originalLabel": "Neoverruca brachylepadoformis sessilia EU082317", 
@@ -404,7 +510,9 @@
 "^ot:originalLabel": "Lithotrya sp EU082302"
 }, 
 "otu432629": {
-"^ot:originalLabel": "Jehlius cirratus AY520611"
+"^ot:originalLabel": "Jehlius cirratus AY520611", 
+"^ot:ottId": 898715, 
+"^ot:ottTaxonName": "Jehlius cirratus"
 }, 
 "otu432630": {
 "^ot:originalLabel": "Calantica sp EU082304"
@@ -428,28 +536,44 @@
 "^ot:originalLabel": "Altiverruca sp EU082300"
 }, 
 "otu432637": {
-"^ot:originalLabel": "Lithotrya sp KACb00393"
+"^ot:originalLabel": "Lithotrya sp KACb00393", 
+"^ot:ottId": 902089, 
+"^ot:ottTaxonName": "Lithotrya sp. KACb00393"
 }, 
 "otu432638": {
-"^ot:originalLabel": "Calantica sp KACb00087"
+"^ot:originalLabel": "Calantica sp KACb00087", 
+"^ot:ottId": 807580, 
+"^ot:ottTaxonName": "Calantica sp. KACb00087"
 }, 
 "otu432639": {
-"^ot:originalLabel": "Volcanolepas sp KACb00419"
+"^ot:originalLabel": "Volcanolepas sp KACb00419", 
+"^ot:ottId": 889214, 
+"^ot:ottTaxonName": "Vulcanolepas sp. KACb00419"
 }, 
 "otu432640": {
-"^ot:originalLabel": "Neoverruca sp KACb00361"
+"^ot:originalLabel": "Neoverruca sp KACb00361", 
+"^ot:ottId": 902066, 
+"^ot:ottTaxonName": "Neoverruca sp. KACb00361"
 }, 
 "otu432641": {
-"^ot:originalLabel": "Heteralepadomorpha sp KACb00398"
+"^ot:originalLabel": "Heteralepadomorpha sp KACb00398", 
+"^ot:ottId": 4678524, 
+"^ot:ottTaxonName": "Heteralepadomorpha sp. KACb00398"
 }, 
 "otu432642": {
-"^ot:originalLabel": "Octolasmis sp KACb00064"
+"^ot:originalLabel": "Octolasmis sp KACb00064", 
+"^ot:ottId": 333800, 
+"^ot:ottTaxonName": "Octolasmis sp. KACb00064"
 }, 
 "otu432643": {
-"^ot:originalLabel": "Rostratoverruca sp KACb00435"
+"^ot:originalLabel": "Rostratoverruca sp KACb00435", 
+"^ot:ottId": 750636, 
+"^ot:ottTaxonName": "Rostratoverruca sp. KACb00435"
 }, 
 "otu432644": {
-"^ot:originalLabel": "Altiverruca sp KACb00436"
+"^ot:originalLabel": "Altiverruca sp KACb00436", 
+"^ot:ottId": 442411, 
+"^ot:ottTaxonName": "Altiverruca sp. KACb00436"
 }
 }
 }
@@ -463,11 +587,20 @@
 ], 
 "treeById": {
 "tree6752": {
+"@label": "Fig. 5", 
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
 "^ot:branchLengthMode": "ot:substitutionCount", 
-"^ot:curatedType": "Maximum likelihood (ML) bootstrapping", 
-"^ot:inGroupClade": "node1174940", 
+"^ot:branchLengthTimeUnit": "Myr", 
+"^ot:curatedType": "Bayesian inference ", 
+"^ot:inGroupClade": "node1175010", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node1174939", 
+"^ot:specifiedRoot": "node1174939", 
+"^ot:tag": [], 
+"^ot:unrootedTree": false, 
 "edgeBySourceId": {
 "node1174939": {
 "edge1174940": {
@@ -1495,23 +1628,29 @@
 "node1175015": {}, 
 "node1175016": {}, 
 "node1175017": {
-"@otu": "otu432428"
+"@otu": "otu432428", 
+"^ot:isTaxonExemplar": true
 }, 
 "node1175018": {
-"@otu": "otu432429"
+"@otu": "otu432429", 
+"^ot:isTaxonExemplar": false
 }, 
 "node1175019": {
-"@otu": "otu432430"
+"@otu": "otu432430", 
+"^ot:isTaxonExemplar": false
 }, 
 "node1175020": {
-"@otu": "otu432431"
+"@otu": "otu432431", 
+"^ot:isTaxonExemplar": false
 }, 
 "node1175021": {}, 
 "node1175022": {
-"@otu": "otu432432"
+"@otu": "otu432432", 
+"^ot:isTaxonExemplar": true
 }, 
 "node1175023": {
-"@otu": "otu432433"
+"@otu": "otu432433", 
+"^ot:isTaxonExemplar": false
 }, 
 "node1175024": {
 "@otu": "otu432434"
@@ -1655,10 +1794,20 @@
 }
 }, 
 "tree6753": {
+"@label": "Maximum likelihood tree with unknown taxa", 
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
 "^ot:branchLengthMode": "ot:substitutionCount", 
+"^ot:branchLengthTimeUnit": "Myr", 
 "^ot:curatedType": "Maximum likelihood (ML) bootstrapping", 
+"^ot:inGroupClade": "node1175088", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node1175087", 
+"^ot:specifiedRoot": "node1175087", 
+"^ot:tag": [], 
+"^ot:unrootedTree": false, 
 "edgeBySourceId": {
 "node1175087": {
 "edge1175088": {

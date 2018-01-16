@@ -33,25 +33,126 @@
 }
 ]
 }
+}, 
+{
+"@description": "Web-based interface for submitting, editing, and reviewing studies in the Open Tree of Life project.", 
+"@id": "opentree-curation-webapp", 
+"@name": "OpenTree curation webapp", 
+"@url": "https://github.com/OpenTreeOfLife/opentree", 
+"@version": "0.0.0"
 }
 ]
 }, 
 "^ot:annotationEvents": {
-"annotation": []
+"annotation": [
+{
+"@dateCreated": "2015-10-01T15:31:18.549Z", 
+"@description": "Aids for mapping study OTUs to OTT taxa", 
+"@id": "otu-mapping-hints", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "OTU_MAPPING_HINTS", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"searchContext": {
+"$": "All life"
 }, 
-"^ot:curatorName": "Romina Gazis", 
+"substitutions": {
+"substitution": [
+{
+"@active": false, 
+"@valid": true, 
+"new": {
+"$": ""
+}, 
+"old": {
+"$": ""
+}
+}, 
+{
+"@active": true, 
+"@valid": true, 
+"new": {
+"$": "$1"
+}, 
+"old": {
+"$": "^(\\S*\\s+\\S*).*"
+}
+}
+]
+}, 
+"useFuzzyMatching": true
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}, 
+{
+"@dateCreated": "2015-10-01T15:31:18.549Z", 
+"@description": "Describes supporting data files for this study", 
+"@id": "supporting-files-metadata", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "SUPPORTING_FILE_INFO", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"@movedToPermanentArchive": false, 
+"files": {
+"file": []
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}
+]
+}, 
+"^ot:candidateTreeForSynthesis": [
+"tree3298"
+], 
+"^ot:comment": "", 
+"^ot:curatorName": [
+"Romina Gazis"
+], 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S2093"
 }, 
+"^ot:focalClade": 346552, 
+"^ot:focalCladeOTTTaxonName": "Ciliochorella", 
+"^ot:notIntendedForSynthesis": false, 
 "^ot:otusElementOrder": [
 "otus1632"
 ], 
 "^ot:studyId": "pg_1632", 
+"^ot:studyPublication": {
+"@href": "http://agris.fao.org/agris-search/search.do?recordID=JP2009002876"
+}, 
 "^ot:studyPublicationReference": "Endo M., Hatakeyama S., Harada Y., & Tanaka K. 2008. Description of a coelomycete Ciliochorella castaneae newly found in Japan, and notes on the distribution and phylogeny of Ciliochorella. Nippon Kingakukai Kaiho, v. 49(2) p. 115-120", 
 "^ot:studyYear": 2008, 
+"^ot:tag": [], 
 "^ot:treesElementOrder": [
 "trees1632"
 ], 
+"^xhtml:license": {
+"@href": "http://creativecommons.org/publicdomain/zero/1.0/", 
+"@name": "CC0"
+}, 
 "otusById": {
 "otus1632": {
 "otuById": {
@@ -69,6 +170,8 @@
 }, 
 "otu267044": {
 "^ot:originalLabel": "Pestalotiopsis bicilia AF382356", 
+"^ot:ottId": 1019302, 
+"^ot:ottTaxonName": "Pestalotiopsis bicilia", 
 "^ot:treebaseOTUId": "Tl28925"
 }, 
 "otu267045": {
@@ -145,6 +248,8 @@
 }, 
 "otu267057": {
 "^ot:originalLabel": "Truncatella sp. AF382382", 
+"^ot:ottId": 1019275, 
+"^ot:ottTaxonName": "Truncatella", 
 "^ot:treebaseOTUId": "Tl83785"
 }, 
 "otu267058": {
@@ -209,10 +314,14 @@
 }, 
 "otu267068": {
 "^ot:originalLabel": "Diaporthe phaseolorum U47830", 
+"^ot:ottId": 737678, 
+"^ot:ottTaxonName": "Phomopsis phaseoli", 
 "^ot:treebaseOTUId": "Tl83796"
 }, 
 "otu267069": {
 "^ot:originalLabel": "Ciliochorella castaneae AB433277", 
+"^ot:ottId": 346553, 
+"^ot:ottTaxonName": "Ciliochorella castaneae", 
 "^ot:treebaseOTUId": "Tl83797"
 }, 
 "otu267070": {
@@ -223,6 +332,8 @@
 }, 
 "otu267071": {
 "^ot:originalLabel": "Ciliochorella castaneae AB433278", 
+"^ot:ottId": 346553, 
+"^ot:ottTaxonName": "Ciliochorella castaneae", 
 "^ot:treebaseOTUId": "Tl83799"
 }, 
 "otu267072": {
@@ -278,10 +389,20 @@
 ], 
 "treeById": {
 "tree3298": {
+"@label": "LSU phylogeny", 
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "ot:undefined", 
+"^ot:branchLengthTimeUnit": "Myr", 
 "^ot:curatedType": "LSU", 
 "^ot:inGroupClade": "node660009", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node660004", 
+"^ot:specifiedRoot": "node660004", 
+"^ot:tag": [], 
+"^ot:unrootedTree": false, 
 "edgeBySourceId": {
 "node660004": {
 "edge660005": {
@@ -690,17 +811,21 @@
 }, 
 "node660027": {}, 
 "node660028": {
-"@otu": "otu267078"
+"@otu": "otu267078", 
+"^ot:isTaxonExemplar": true
 }, 
 "node660029": {
-"@otu": "otu267058"
+"@otu": "otu267058", 
+"^ot:isTaxonExemplar": false
 }, 
 "node660030": {}, 
 "node660031": {
-"@otu": "otu267071"
+"@otu": "otu267071", 
+"^ot:isTaxonExemplar": true
 }, 
 "node660032": {
-"@otu": "otu267069"
+"@otu": "otu267069", 
+"^ot:isTaxonExemplar": false
 }, 
 "node660033": {}, 
 "node660034": {}, 
@@ -712,7 +837,8 @@
 }, 
 "node660037": {}, 
 "node660038": {
-"@otu": "otu267052"
+"@otu": "otu267052", 
+"^ot:isTaxonExemplar": true
 }, 
 "node660039": {}, 
 "node660040": {
@@ -720,14 +846,16 @@
 }, 
 "node660041": {}, 
 "node660042": {
-"@otu": "otu267064"
+"@otu": "otu267064", 
+"^ot:isTaxonExemplar": false
 }, 
 "node660043": {}, 
 "node660044": {
 "@otu": "otu267061"
 }, 
 "node660045": {
-"@otu": "otu267070"
+"@otu": "otu267070", 
+"^ot:isTaxonExemplar": false
 }, 
 "node660046": {}, 
 "node660047": {

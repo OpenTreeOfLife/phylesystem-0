@@ -33,13 +33,94 @@
 }
 ]
 }
+}, 
+{
+"@description": "Web-based interface for submitting, editing, and reviewing studies in the Open Tree of Life project.", 
+"@id": "opentree-curation-webapp", 
+"@name": "OpenTree curation webapp", 
+"@url": "https://github.com/OpenTreeOfLife/opentree", 
+"@version": "0.0.0"
 }
 ]
 }, 
 "^ot:annotationEvents": {
-"annotation": []
+"annotation": [
+{
+"@dateCreated": "2017-05-03T15:06:11.940Z", 
+"@description": "Aids for mapping study OTUs to OTT taxa", 
+"@id": "otu-mapping-hints", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "OTU_MAPPING_HINTS", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"searchContext": {
+"$": "All life"
 }, 
-"^ot:curatorName": "Chris Owen", 
+"substitutions": {
+"substitution": [
+{
+"@active": false, 
+"@valid": true, 
+"new": {
+"$": ""
+}, 
+"old": {
+"$": ""
+}
+}
+]
+}, 
+"useFuzzyMatching": false
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}, 
+{
+"@dateCreated": "2017-05-03T15:06:11.940Z", 
+"@description": "Describes supporting data files for this study", 
+"@id": "supporting-files-metadata", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "SUPPORTING_FILE_INFO", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"@movedToPermanentArchive": false, 
+"files": {
+"file": []
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}
+]
+}, 
+"^ot:candidateTreeForSynthesis": [
+"tree6255"
+], 
+"^ot:comment": "", 
+"^ot:curatorName": [
+"Chris Owen", 
+"bobthacker"
+], 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S2236"
 }, 
@@ -54,9 +135,17 @@
 }, 
 "^ot:studyPublicationReference": "Dohrmann, M., Janussen D., Reitner J., Collins A., and Woerheide G. 2009. Phylogeny of glass sponges (Porifera, Hexactinellida): monophyly of Lyssacinosida and position of additional taxa. Molecular Phylogenetics and Evolution 57 (3): 388-405.", 
 "^ot:studyYear": 2009, 
+"^ot:tag": [
+"sponge", 
+"porifera"
+], 
 "^ot:treesElementOrder": [
 "trees1343"
 ], 
+"^xhtml:license": {
+"@href": "http://creativecommons.org/publicdomain/zero/1.0/", 
+"@name": "CC0"
+}, 
 "otusById": {
 "otus1343": {
 "otuById": {
@@ -430,10 +519,20 @@
 ], 
 "treeById": {
 "tree2674": {
+"@label": "Untitled (tree2674)", 
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "ot:undefined", 
 "^ot:curatedType": "Fig. 1A", 
 "^ot:inGroupClade": "node591690", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
+"^ot:outGroupEdge": "", 
+"^ot:reasonsToExcludeFromSynthesis": [], 
 "^ot:rootNodeId": "node591657", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
+"^ot:unrootedTree": true, 
 "edgeBySourceId": {
 "node591657": {
 "edge591658": {
@@ -1271,10 +1370,21 @@
 }
 }, 
 "tree6255": {
+"@label": "Untitled (tree6255)", 
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "Fig. 2 BI 50% consensus tree", 
 "^ot:inGroupClade": "node1083792", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
+"^ot:outGroupEdge": "", 
+"^ot:reasonsToExcludeFromSynthesis": [], 
 "^ot:rootNodeId": "node1083787", 
+"^ot:specifiedRoot": "node1083787", 
+"^ot:tag": [], 
+"^ot:unrootedTree": false, 
 "edgeBySourceId": {
 "node1083787": {
 "edge1083788": {
@@ -1901,10 +2011,12 @@
 "node1083807": {}, 
 "node1083808": {}, 
 "node1083809": {
-"@otu": "otu243732"
+"@otu": "otu243732", 
+"^ot:isTaxonExemplar": true
 }, 
 "node1083810": {
-"@otu": "otu243767"
+"@otu": "otu243767", 
+"^ot:isTaxonExemplar": false
 }, 
 "node1083811": {
 "@otu": "otu243777"

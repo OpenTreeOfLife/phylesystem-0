@@ -66,13 +66,53 @@
 "substitutions": {
 "substitution": [
 {
-"@active": false, 
+"@active": true, 
+"@valid": true, 
+"new": {
+"$": " "
+}, 
+"old": {
+"$": "_"
+}
+}, 
+{
+"@active": true, 
 "@valid": true, 
 "new": {
 "$": ""
 }, 
 "old": {
+"$": "^(\\S*)\\s+\\b"
+}
+}, 
+{
+"@active": true, 
+"@valid": true, 
+"new": {
 "$": ""
+}, 
+"old": {
+"$": "\\b\\s+(\\S*)$"
+}
+}, 
+{
+"@active": true, 
+"@valid": true, 
+"new": {
+"$": " "
+}, 
+"old": {
+"$": "_"
+}
+}, 
+{
+"@active": true, 
+"@valid": true, 
+"new": {
+"$": " "
+}, 
+"old": {
+"$": "_"
 }
 }
 ]
@@ -102,7 +142,22 @@
 "data": {
 "@movedToPermanentArchive": false, 
 "files": {
-"file": []
+"file": [
+{
+"@filename": "190213_ML_tree_genome_exemplars_16S.new", 
+"@size": 543, 
+"@type": "newick", 
+"@url": "/curator/download/supporting_files.doc.92423d3b176bfb09.3139303231335f4d4c5f747265655f67656e6f6d655f6578656d706c6172735f3136532e6e6577.new", 
+"description": {
+"$": "Source data for tree(s) 'tree1'"
+}, 
+"sourceForTree": [
+{
+"$": "tree1"
+}
+]
+}
+]
 }
 }, 
 "refersTo": {
@@ -138,14 +193,193 @@
 ], 
 "otusById": {
 "otus1": {
-"otuById": {}
+"otuById": {
+"otu1": {
+"^ot:originalLabel": "KY077294"
+}, 
+"otu2": {
+"^ot:originalLabel": "B001NatAq_Alatinidae_sp_Japan (reversed)"
+}, 
+"otu3": {
+"^ot:originalLabel": "AGC0191 Alatinidae non-marsupialis Lab"
+}, 
+"otu4": {
+"^ot:originalLabel": "196CassiopeiaxamPan"
+}, 
+"otu5": {
+"^ot:originalLabel": "AGC18-065_Aurelia Mutsu _16S"
+}, 
+"otu6": {
+"^ot:originalLabel": "AGC18-066_Chrysaora chesapeakei 15M _16S"
+}, 
+"otu7": {
+"^ot:originalLabel": "AGC18-070_Chrysaora achlyos _16S", 
+"^ot:ottId": 3680247, 
+"^ot:ottTaxonName": "Chrysaora achlyos"
+}, 
+"otu8": {
+"^ot:originalLabel": "AGC18-074_Chrysaora fuscencens  _16S"
+}
+}
 }
 }, 
 "treesById": {
 "trees1": {
 "@otus": "otus1", 
-"^ot:treeElementOrder": [], 
-"treeById": {}
+"^ot:treeElementOrder": [
+"tree1"
+], 
+"treeById": {
+"tree1": {
+"@label": "Untitled (tree1)", 
+"@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
+"^ot:candidateForSynthesis": "ot:notReviewed", 
+"^ot:curatedType": "", 
+"^ot:inGroupClade": "", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
+"^ot:outGroupEdge": "", 
+"^ot:reasonsToExcludeFromSynthesis": [], 
+"^ot:rootNodeId": "node1", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
+"^ot:unrootedTree": true, 
+"edgeBySourceId": {
+"node1": {
+"edge1": {
+"@length": 0.300085, 
+"@source": "node1", 
+"@target": "node2"
+}, 
+"edge2": {
+"@length": 0.300085, 
+"@source": "node1", 
+"@target": "node3"
+}
+}, 
+"node11": {
+"edge11": {
+"@length": 0.143844, 
+"@source": "node11", 
+"@target": "node12"
+}, 
+"edge12": {
+"@length": 0.105875, 
+"@source": "node11", 
+"@target": "node13"
+}
+}, 
+"node13": {
+"edge13": {
+"@length": 0.02025, 
+"@source": "node13", 
+"@target": "node14"
+}, 
+"edge14": {
+"@length": 0.026698, 
+"@source": "node13", 
+"@target": "node15"
+}
+}, 
+"node3": {
+"edge3": {
+"@length": 0.876039, 
+"@source": "node3", 
+"@target": "node4"
+}, 
+"edge6": {
+"@length": 0.255996, 
+"@source": "node3", 
+"@target": "node7"
+}
+}, 
+"node4": {
+"edge4": {
+"@length": 0.201816, 
+"@source": "node4", 
+"@target": "node5"
+}, 
+"edge5": {
+"@length": 0.11152, 
+"@source": "node4", 
+"@target": "node6"
+}
+}, 
+"node7": {
+"edge7": {
+"@length": 0.239216, 
+"@source": "node7", 
+"@target": "node8"
+}, 
+"edge8": {
+"@length": 0.053007, 
+"@source": "node7", 
+"@target": "node9"
+}
+}, 
+"node9": {
+"edge10": {
+"@length": 0.111793, 
+"@source": "node9", 
+"@target": "node11"
+}, 
+"edge9": {
+"@length": 0.285074, 
+"@source": "node9", 
+"@target": "node10"
+}
+}
+}, 
+"nodeById": {
+"node1": {
+"@root": true
+}, 
+"node10": {
+"@otu": "otu5"
+}, 
+"node11": {
+"@label": "1.0"
+}, 
+"node12": {
+"@otu": "otu6"
+}, 
+"node13": {
+"@label": "1.0"
+}, 
+"node14": {
+"@otu": "otu7"
+}, 
+"node15": {
+"@otu": "otu8"
+}, 
+"node2": {
+"@otu": "otu1"
+}, 
+"node3": {}, 
+"node4": {
+"@label": "1.0"
+}, 
+"node5": {
+"@otu": "otu2"
+}, 
+"node6": {
+"@otu": "otu3"
+}, 
+"node7": {
+"@label": "1.0"
+}, 
+"node8": {
+"@otu": "otu4"
+}, 
+"node9": {
+"@label": "0.998"
+}
+}
+}
+}
 }
 }
 }

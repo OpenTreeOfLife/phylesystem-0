@@ -61,7 +61,7 @@
 "@severity": "INFO", 
 "data": {
 "searchContext": {
-"$": "Fungi"
+"$": "Ascomycetes"
 }, 
 "substitutions": {
 "substitution": [
@@ -885,21 +885,16 @@
 "^ot:nodeLabelTimeUnit": "", 
 "^ot:outGroupEdge": "", 
 "^ot:reasonsToExcludeFromSynthesis": [], 
-"^ot:rootNodeId": "node1", 
-"^ot:specifiedRoot": "", 
+"^ot:rootNodeId": "tree1_ROOT", 
+"^ot:specifiedRoot": "tree1_ROOT", 
 "^ot:tag": [], 
-"^ot:unrootedTree": true, 
+"^ot:unrootedTree": false, 
 "edgeBySourceId": {
 "node1": {
 "edge1": {
 "@length": 0.145227, 
 "@source": "node1", 
 "@target": "node2"
-}, 
-"edge32": {
-"@length": 0.034003, 
-"@source": "node1", 
-"@target": "node33"
 }, 
 "edge321": {
 "@length": 0.572033, 
@@ -1784,10 +1779,10 @@
 }
 }, 
 "node235": {
-"edge235": {
-"@length": 0.017512, 
+"edge234": {
+"@length": 0.005165, 
 "@source": "node235", 
-"@target": "node236"
+"@target": "node93"
 }, 
 "edge298": {
 "@length": 0.025811, 
@@ -1796,15 +1791,15 @@
 }
 }, 
 "node236": {
+"edge235": {
+"@length": 0.017512, 
+"@source": "node236", 
+"@target": "node235"
+}, 
 "edge236": {
 "@length": 0.025582, 
 "@source": "node236", 
 "@target": "node237"
-}, 
-"edge279": {
-"@length": 0.038918, 
-"@source": "node236", 
-"@target": "node280"
 }
 }, 
 "node237": {
@@ -2084,10 +2079,10 @@
 }
 }, 
 "node280": {
-"edge280": {
-"@length": 0.689731, 
+"edge279": {
+"@length": 0.038918, 
 "@source": "node280", 
-"@target": "node281"
+"@target": "node236"
 }, 
 "edge281": {
 "@length": 0.059265, 
@@ -2341,22 +2336,22 @@
 "@source": "node33", 
 "@target": "node307"
 }, 
-"edge33": {
-"@length": 0.068858, 
+"edge32": {
+"@length": 0.034003, 
 "@source": "node33", 
-"@target": "node34"
+"@target": "node1"
 }
 }, 
 "node34": {
+"edge33": {
+"@length": 0.068858, 
+"@source": "node34", 
+"@target": "node33"
+}, 
 "edge34": {
 "@length": 0.00739, 
 "@source": "node34", 
 "@target": "node35"
-}, 
-"edge45": {
-"@length": 0.010408, 
-"@source": "node34", 
-"@target": "node46"
 }
 }, 
 "node35": {
@@ -2432,15 +2427,15 @@
 }
 }, 
 "node46": {
+"edge45": {
+"@length": 0.010408, 
+"@source": "node46", 
+"@target": "node34"
+}, 
 "edge46": {
 "@length": 0.007696, 
 "@source": "node46", 
 "@target": "node47"
-}, 
-"edge49": {
-"@length": 0.004966, 
-"@source": "node46", 
-"@target": "node50"
 }
 }, 
 "node47": {
@@ -2468,15 +2463,15 @@
 }
 }, 
 "node50": {
+"edge49": {
+"@length": 0.004966, 
+"@source": "node50", 
+"@target": "node46"
+}, 
 "edge50": {
 "@length": 0.008173, 
 "@source": "node50", 
 "@target": "node51"
-}, 
-"edge61": {
-"@length": 0.002437, 
-"@source": "node50", 
-"@target": "node62"
 }
 }, 
 "node51": {
@@ -2545,22 +2540,22 @@
 "@source": "node62", 
 "@target": "node302"
 }, 
-"edge62": {
-"@length": 0.017086, 
+"edge61": {
+"@length": 0.002437, 
 "@source": "node62", 
-"@target": "node63"
+"@target": "node50"
 }
 }, 
 "node63": {
+"edge62": {
+"@length": 0.017086, 
+"@source": "node63", 
+"@target": "node62"
+}, 
 "edge63": {
 "@length": 0.011525, 
 "@source": "node63", 
 "@target": "node64"
-}, 
-"edge92": {
-"@length": 0.003858, 
-"@source": "node63", 
-"@target": "node93"
 }
 }, 
 "node64": {
@@ -2744,10 +2739,10 @@
 }
 }, 
 "node93": {
-"edge234": {
-"@length": 0.005165, 
+"edge92": {
+"@length": 0.003858, 
 "@source": "node93", 
-"@target": "node235"
+"@target": "node63"
 }, 
 "edge93": {
 "@length": 0.011819, 
@@ -2814,12 +2809,21 @@
 "@source": "node99", 
 "@target": "node100"
 }
+}, 
+"tree1_ROOT": {
+"edge280": {
+"@length": 0.689731, 
+"@source": "tree1_ROOT", 
+"@target": "node281"
+}, 
+"tree1_ROOT_EDGE": {
+"@source": "tree1_ROOT", 
+"@target": "node280"
+}
 }
 }, 
 "nodeById": {
-"node1": {
-"@root": true
-}, 
+"node1": {}, 
 "node10": {}, 
 "node100": {
 "@otu": "otu47"
@@ -3464,7 +3468,10 @@
 "@otu": "otu46"
 }, 
 "node98": {}, 
-"node99": {}
+"node99": {}, 
+"tree1_ROOT": {
+"@root": true
+}
 }, 
 "rootedge": [
 {
